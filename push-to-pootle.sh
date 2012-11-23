@@ -7,7 +7,7 @@ langs=$*
 user=pootlesync
 server=pootle.locamotion.org
 local_copy=.pootle_phases_tmp
-phaselist=firefox.phaselist
+phaselist=
 manage_command="/var/www/sites/$instance/src/pootle/manage.py"
 manage_py_verbosity=2
 precommand=". /var/www/sites/mozilla/env/bin/activate;"
@@ -46,14 +46,26 @@ fi
 for lang in $langs
 do
 	rm -rf $local_copy/$lang
-	cat $phaselist | while read phase file
-	do
+	if [ -f "$phaselist" ]; then
+		cat $phaselist | while read phase file
+		do
+			if [ $lang == "pot" -o $lang == "templates" ]; then
+				file=${file}t
+			fi
+			mkdir -p $local_copy/$lang/$phase/$(dirname $file)
+			cp -p $lang/$file $local_copy/$lang/$phase/$file
+		done
+	else
 		if [ $lang == "pot" -o $lang == "templates" ]; then
-			file=${file}t
-		fi
-		mkdir -p $local_copy/$lang/$phase/$(dirname $file)
-		cp -p $lang/$file $local_copy/$lang/$phase/$file
-	done
+			find $lang -name "*.pot"
+		else
+			find $lang -name "*.po"
+		fi | while read file
+		do
+			mkdir -p $local_copy/$lang/$(dirname $file)
+			cp -p $file $local_copy/$lang/$file
+		done
+	fi
 done
 
 
