@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-23 16:09+0100\n"
+"POT-Creation-Date: 2012-11-27 13:05+0100\n"
 "PO-Revision-Date: 2012-11-27 09:19+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,16 +12,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.9.1-pre\n"
 "X-Accelerator-Marker: &\n"
 "X-POOTLE-MTIME: 1354007970.0\n"
 
 #: addNewNumber
-msgid "Add New Number"
+#, fuzzy
+msgid "Add new number"
 msgstr "Ychwanegu Rhif Newydd"
 
 #: addToExistingContact
-msgid "Add to Existing Contact"
+#, fuzzy
+msgid "Add to existing contact"
 msgstr "Ychwanegu at Gysylltiad Presennol"
 
 #: all
@@ -45,9 +47,9 @@ msgstr "Mae'r Modd Awyren ymlaen"
 msgid "Call log"
 msgstr "Cofnod galwadau"
 
-#: calling
-msgid "Calling"
-msgstr "Galw"
+#: connecting
+msgid "Connecting"
+msgstr ""
 
 #: camera-a11y-button.aria-label
 msgid "Hang Up"
@@ -57,12 +59,57 @@ msgstr "Gorffen"
 msgid "Cancel"
 msgstr "Diddymu"
 
+#: cf-async
+msgid "Asynchronous: {{ async }}\n"
+msgstr ""
+
+#: cf-data
+msgid "Data: {{ data }}\n"
+msgstr ""
+
+#: cf-error
+msgid "An error occurred while retrieving call forwarding status"
+msgstr ""
+
+#: cf-fax
+msgid "FAX: {{ fax }}\n"
+msgstr ""
+
+#: cf-inactive
+msgid "Inactive"
+msgstr ""
+
+#: cf-packet
+msgid "Packet: {{ packet }}\n"
+msgstr ""
+
+#: cf-pad
+msgid "PAD: {{ pad }}\n"
+msgstr ""
+
+#: cf-sms
+msgid "SMS: {{ sms }}\n"
+msgstr ""
+
+#: cf-status
+msgid "Call forwarding status\n"
+msgstr ""
+
+#: cf-sync
+msgid "Synchronous: {{ sync }}\n"
+msgstr ""
+
+#: cf-voice
+msgid "Voice: {{ voice }}\n"
+msgstr ""
+
 #: confirm-deletion
 msgid "Clear selected calls?"
 msgstr "Clirio'r galwadau hyn?"
 
 #: createNewContact
-msgid "Create New Contact"
+#, fuzzy
+msgid "Create new contact"
 msgstr "Creu Cysylltiad Newydd"
 
 #: delete
@@ -74,6 +121,8 @@ msgid "Deselect all"
 msgstr "Dad-ddewis popeth"
 
 #: edit-selected
+#, fuzzy
+msgctxt "edit-selected"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
@@ -143,6 +192,18 @@ msgstr "Collwyd"
 msgid "Missed call"
 msgstr "Galwad collwyd"
 
+#: mmi-error
+msgid "An error occurred while sending the message"
+msgstr ""
+
+#: mmi-session-expired
+msgid "Session expired"
+msgstr ""
+
+#: mmi-successfully-sent
+msgid "Message successfully sent"
+msgstr ""
+
 #: no-logs-msg-1
 msgid "No calls recorded"
 msgstr "Heb gofnodi galwad"
@@ -168,11 +229,12 @@ msgid "Today"
 msgstr "Heddiw"
 
 #: unknown
-msgid "Unknown"
-msgstr "Anhysbys"
+msgid "Unknown number"
+msgstr ""
 
 #: unlock-a11y-button.aria-label
-msgid "Pickup"
+#, fuzzy
+msgid "Pick up"
 msgstr "Pigo i fyny"
 
 #: yesterday
@@ -184,29 +246,73 @@ msgid "USSD"
 msgstr "USSD"
 
 #: sending
-msgid "Sending..."
-msgstr "Anfon..."
+msgid "Sending…"
+msgstr ""
 
 #: ussd-services
 msgid "{{ operator }} services"
 msgstr "Gwasanaethau {{ operator }}"
 
 #: type-your-response.placeholder
-msgid "Type your response..."
+#, fuzzy
+msgid "Type your response…"
 msgstr "Teipio eich ymateb..."
 
 #: clear-all-text
 msgid "Clear all text"
 msgstr "Clirio'r holl destun"
 
-#: message-successfully-sent
-msgid "MESSAGE SUCCESSFULLY SENT"
-msgstr "NEGES WEDI EI ANFON YN LLWYDDIANNUS"
+#. ## LOCALIZATION NOTE: contactNameWithOthers is displayed for missed calls when the number is associated with more than one contact.  {{ name }} is the name of the first contact.
+#. ## LOCALIZATION NOTE: case `zero` is never used, no need to translate it.
+#: contactNameWithOthers
+#, fuzzy
+msgctxt "contactNameWithOthers"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
 
-#: ussd-server-error
-msgid "THERE WAS AN ERROR IN THE COMMUNICATION, PLEASE TRY IT AGAIN LATER"
-msgstr "BU GWALL WRTH GYFATHREBU, CEISIWCH ETO"
+#: contactNameWithOthers[zero]
+msgid "{{ name }}…"
+msgstr ""
 
-#: lineContactName
-msgid "{{ name }}... or {{ n }} other"
+#: contactNameWithOthers[one]
+msgid "{{ name }}… or one other"
+msgstr ""
+
+#: contactNameWithOthers[two]
+#, fuzzy
+msgctxt "contactNameWithOthers[two]"
+msgid "{{ name }}… or {{ n }} other"
 msgstr "{{ name }}... neu {{ n }} arall"
+
+#: contactNameWithOthers[few]
+#, fuzzy
+msgctxt "contactNameWithOthers[few]"
+msgid "{{ name }}… or {{ n }} other"
+msgstr "{{ name }}... neu {{ n }} arall"
+
+#: contactNameWithOthers[many]
+#, fuzzy
+msgctxt "contactNameWithOthers[many]"
+msgid "{{ name }}… or {{ n }} other"
+msgstr "{{ name }}... neu {{ n }} arall"
+
+#: contactNameWithOthers[other]
+#, fuzzy
+msgctxt "contactNameWithOthers[other]"
+msgid "{{ name }}… or {{ n }} other"
+msgstr "{{ name }}... neu {{ n }} arall"
+
+#~ msgid "Calling"
+#~ msgstr "Galw"
+
+#~ msgid "Unknown"
+#~ msgstr "Anhysbys"
+
+#~ msgid "Sending..."
+#~ msgstr "Anfon..."
+
+#~ msgid "MESSAGE SUCCESSFULLY SENT"
+#~ msgstr "NEGES WEDI EI ANFON YN LLWYDDIANNUS"
+
+#~ msgid "THERE WAS AN ERROR IN THE COMMUNICATION, PLEASE TRY IT AGAIN LATER"
+#~ msgstr "BU GWALL WRTH GYFATHREBU, CEISIWCH ETO"
