@@ -1,9 +1,9 @@
-#. extracted from gaia/locales/en-US/apps/communications/dialer/dialer.properties
+#. extracted from locales/en-US/apps/communications/dialer/dialer.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-18 01:05+0800\n"
+"POT-Creation-Date: 2012-11-27 13:05+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,11 +14,11 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 
 #: addNewNumber
-msgid "Add New Number"
+msgid "Add new number"
 msgstr ""
 
 #: addToExistingContact
-msgid "Add to Existing Contact"
+msgid "Add to existing contact"
 msgstr ""
 
 #: all
@@ -42,8 +42,8 @@ msgstr ""
 msgid "Call log"
 msgstr ""
 
-#: calling
-msgid "Calling"
+#: connecting
+msgid "Connecting"
 msgstr ""
 
 #: camera-a11y-button.aria-label
@@ -54,12 +54,56 @@ msgstr ""
 msgid "Cancel"
 msgstr ""
 
+#: cf-async
+msgid "Asynchronous: {{ async }}\n"
+msgstr ""
+
+#: cf-data
+msgid "Data: {{ data }}\n"
+msgstr ""
+
+#: cf-error
+msgid "An error occurred while retrieving call forwarding status"
+msgstr ""
+
+#: cf-fax
+msgid "FAX: {{ fax }}\n"
+msgstr ""
+
+#: cf-inactive
+msgid "Inactive"
+msgstr ""
+
+#: cf-packet
+msgid "Packet: {{ packet }}\n"
+msgstr ""
+
+#: cf-pad
+msgid "PAD: {{ pad }}\n"
+msgstr ""
+
+#: cf-sms
+msgid "SMS: {{ sms }}\n"
+msgstr ""
+
+#: cf-status
+msgid "Call forwarding status\n"
+msgstr ""
+
+#: cf-sync
+msgid "Synchronous: {{ sync }}\n"
+msgstr ""
+
+#: cf-voice
+msgid "Voice: {{ voice }}\n"
+msgstr ""
+
 #: confirm-deletion
 msgid "Clear selected calls?"
 msgstr ""
 
 #: createNewContact
-msgid "Create New Contact"
+msgid "Create new contact"
 msgstr ""
 
 #: delete
@@ -71,6 +115,7 @@ msgid "Deselect all"
 msgstr ""
 
 #: edit-selected
+msgctxt "edit-selected"
 msgid "{[ plural(n) ]}"
 msgstr ""
 
@@ -140,6 +185,18 @@ msgstr ""
 msgid "Missed call"
 msgstr ""
 
+#: mmi-error
+msgid "An error occurred while sending the message"
+msgstr ""
+
+#: mmi-session-expired
+msgid "Session expired"
+msgstr ""
+
+#: mmi-successfully-sent
+msgid "Message successfully sent"
+msgstr ""
+
 #: no-logs-msg-1
 msgid "No calls recorded"
 msgstr ""
@@ -165,11 +222,11 @@ msgid "Today"
 msgstr ""
 
 #: unknown
-msgid "Unknown"
+msgid "Unknown number"
 msgstr ""
 
 #: unlock-a11y-button.aria-label
-msgid "Pickup"
+msgid "Pick up"
 msgstr ""
 
 #: yesterday
@@ -181,7 +238,7 @@ msgid "USSD"
 msgstr ""
 
 #: sending
-msgid "Sending..."
+msgid "Sending…"
 msgstr ""
 
 #: ussd-services
@@ -189,21 +246,44 @@ msgid "{{ operator }} services"
 msgstr ""
 
 #: type-your-response.placeholder
-msgid "Type your response..."
+msgid "Type your response…"
 msgstr ""
 
 #: clear-all-text
 msgid "Clear all text"
 msgstr ""
 
-#: message-successfully-sent
-msgid "MESSAGE SUCCESSFULLY SENT"
+#. ## LOCALIZATION NOTE: contactNameWithOthers is displayed for missed calls when the number is associated with more than one contact.  {{ name }} is the name of the first contact.
+#. ## LOCALIZATION NOTE: case `zero` is never used, no need to translate it.
+#: contactNameWithOthers
+msgctxt "contactNameWithOthers"
+msgid "{[ plural(n) ]}"
 msgstr ""
 
-#: ussd-server-error
-msgid "THERE WAS AN ERROR IN THE COMMUNICATION, PLEASE TRY IT AGAIN LATER"
+#: contactNameWithOthers[zero]
+msgid "{{ name }}…"
 msgstr ""
 
-#: lineContactName
-msgid "{{ name }}... or {{ n }} other"
+#: contactNameWithOthers[one]
+msgid "{{ name }}… or one other"
+msgstr ""
+
+#: contactNameWithOthers[two]
+msgctxt "contactNameWithOthers[two]"
+msgid "{{ name }}… or {{ n }} other"
+msgstr ""
+
+#: contactNameWithOthers[few]
+msgctxt "contactNameWithOthers[few]"
+msgid "{{ name }}… or {{ n }} other"
+msgstr ""
+
+#: contactNameWithOthers[many]
+msgctxt "contactNameWithOthers[many]"
+msgid "{{ name }}… or {{ n }} other"
+msgstr ""
+
+#: contactNameWithOthers[other]
+msgctxt "contactNameWithOthers[other]"
+msgid "{{ name }}… or {{ n }} other"
 msgstr ""
