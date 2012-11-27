@@ -1,9 +1,9 @@
-#. extracted from en-US/apps/email/email.properties, ko/apps/email/email.properties
+#. extracted from locales/en-US/apps/email/email.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-18 18:11+0800\n"
+"POT-Creation-Date: 2012-11-27 13:05+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,16 +18,19 @@ msgid "Mail"
 msgstr "메일"
 
 #: setup-empty-account-prompt
+#, fuzzy
 msgid ""
-"You are not setup to send or receive email. Would you like to do that now?"
+"You are not set up to send or receive email. Would you like to do that now?"
 msgstr "이메일을 보내거나 받을 설정이 되어있지 않습니다. 지금 하시겠습니까?"
 
 #: setup-pick-service
-msgid "To send and receive email, you will need to setup an account."
+#, fuzzy
+msgid "To send and receive email, you will need to set up an account."
 msgstr "계정을 설정하면 이메일을 보내고 받을 수 있습니다."
 
 #: setup-account-header
-msgid "New Mail Account Setup"
+#, fuzzy
+msgid "New mail account setup"
 msgstr "새 메일 계정 설정"
 
 #: setup-info-header
@@ -35,15 +38,18 @@ msgid "Your login information"
 msgstr "로그인 정보"
 
 #: setup-hotmail-account
-msgid "Hotmail Account"
+#, fuzzy
+msgid "Hotmail account"
 msgstr "Hotmail 계정"
 
 #: setup-gmail-account
-msgid "Gmail Account"
+#, fuzzy
+msgid "Gmail account"
 msgstr "Gmail 계정"
 
 #: setup-other-email
-msgid "Other Email"
+#, fuzzy
+msgid "Other email"
 msgstr "다른 이메일"
 
 #: setup-info-name-placeholder
@@ -51,7 +57,8 @@ msgid "Name"
 msgstr "이름"
 
 #: setup-info-email-placeholder
-msgid "Email Address"
+#, fuzzy
+msgid "Email address"
 msgstr "이메일 주소"
 
 #: setup-info-password-placeholder
@@ -65,15 +72,16 @@ msgid "Next"
 msgstr "다음"
 
 #: setup-progress-wait
-msgid "Please wait while I setup your account"
-msgstr "계정을 설정하는 동안 기다리십시오."
+msgid "Please wait while your account is set up"
+msgstr ""
 
 #: setup-completed-header
 msgid "Mail account setup"
 msgstr "메일 계정 설정"
 
 #: setup-completed-label
-msgid "All Done!"
+#, fuzzy
+msgid "All done!"
 msgstr "모두 완료!"
 
 #: setup-add-another-account
@@ -96,28 +104,47 @@ msgstr "사용자가 계정을 만들 허가를 받지 않았다고 서버에서
 msgid "An unknown error occurred"
 msgstr "알 수 없는 오류 발생"
 
+#: setup-error-needs-app-pass
+msgid ""
+"You must use an application specific password for two-factor Gmail accounts"
+msgstr ""
+
+#: setup-error-imap-disabled
+msgid "You must enable IMAP for your Gmail account"
+msgstr ""
+
 #: setup-manual-config
-msgid "Manually setup account"
+#, fuzzy
+msgid "Manually set up account"
 msgstr "수동으로 계정 설정"
 
 #: setup-manual-config-header
-msgid "Manual Setup"
+#, fuzzy
+msgid "Manual setup"
 msgstr "수동 설정"
 
 #: setup-manual-account-type
-msgid "Account Type"
-msgstr "계정 종류"
+#, fuzzy
+msgctxt "setup-manual-account-type"
+msgid "Account type"
+msgstr "계정 형식"
 
 #: setup-manual-imap-header
-msgid "IMAP Settings"
+#, fuzzy
+msgctxt "setup-manual-imap-header"
+msgid "IMAP settings"
 msgstr "IMAP 설정"
 
 #: setup-manual-smtp-header
-msgid "SMTP Settings"
+#, fuzzy
+msgctxt "setup-manual-smtp-header"
+msgid "SMTP settings"
 msgstr "SMTP 설정"
 
 #: setup-manual-activesync-header
-msgid "ActiveSync Settings"
+#, fuzzy
+msgctxt "setup-manual-activesync-header"
+msgid "ActiveSync settings"
 msgstr "ActiveSync 설정"
 
 #: setup-manual-next
@@ -148,19 +175,46 @@ msgid "Username"
 msgstr "사용자명"
 
 #: setup-bad-password-header
-msgid "Bad Password!"
+#, fuzzy
+msgid "Bad password!"
 msgstr "틀린 암호!"
 
 #: setup-bad-password
-msgid "We could not login to the server.  Maybe your password is wrong?"
+#, fuzzy
+msgid "We could not sign in to the server. Maybe your password is wrong?"
 msgstr "서버에 로그인을 하지 못했습니다. 올바른 암호입니까?"
 
 #: setup-fix-password
 msgid "Retry with new password"
 msgstr "새 암호로 재시도"
 
+#: setup-gmail-twofactor-header
+msgid "Two-Factor Enabled"
+msgstr ""
+
+#: setup-gmail-twofactor-message
+msgid "You need to enter an application-specific password below."
+msgstr ""
+
+#: setup-gmail-twofactor-fix
+msgid "Use application password"
+msgstr ""
+
+#: setup-gmail-imap-header
+msgid "IMAP Disabled"
+msgstr ""
+
+#: setup-gmail-imap-message
+msgid "You must enable IMAP on your Gmail account "
+msgstr ""
+
+#: setup-gmail-imap-retry
+msgid "Retry"
+msgstr ""
+
 #: settings-main-header
-msgid "Mail Settings"
+#, fuzzy
+msgid "Mail settings"
 msgstr "메일 설정"
 
 #: settings-close
@@ -177,12 +231,32 @@ msgid "Accounts"
 msgstr "계정"
 
 #: settings-account-add
-msgid "Add Account"
+#, fuzzy
+msgid "Add account"
 msgstr "계정 추가"
 
 #: settings-account-delete
-msgid "Delete Account"
+#, fuzzy
+msgid "Delete account"
 msgstr "계정 삭제"
+
+#: settings-account-delete-prompt
+msgid ""
+"Are you sure you want to delete your {{account}} mail account? You will have "
+"to re-download your mail if you re-create the account."
+msgstr ""
+
+#: settings-account-delete-cancel
+#, fuzzy
+msgctxt "settings-account-delete-cancel"
+msgid "Cancel"
+msgstr "취소"
+
+#: settings-account-delete-confirm
+#, fuzzy
+msgctxt "settings-account-delete-confirm"
+msgid "Delete"
+msgstr "삭제"
 
 #: settings-about-section
 msgid "About"
@@ -241,6 +315,8 @@ msgid "Default account"
 msgstr "기본 계정"
 
 #: settings-account-type
+#, fuzzy
+msgctxt "settings-account-type"
 msgid "Account type"
 msgstr "계정 형식"
 
@@ -253,14 +329,20 @@ msgid "Synchronize"
 msgstr "동기화"
 
 #: settings-activesync-label
+#, fuzzy
+msgctxt "settings-activesync-label"
 msgid "ActiveSync settings"
 msgstr "ActiveSync 설정"
 
 #: settings-imap-label
+#, fuzzy
+msgctxt "settings-imap-label"
 msgid "IMAP settings"
 msgstr "IMAP 설정"
 
 #: settings-smtp-label
+#, fuzzy
+msgctxt "settings-smtp-label"
 msgid "SMTP settings"
 msgstr "SMTP 설정"
 
@@ -283,13 +365,22 @@ msgctxt "settings-password"
 msgid "Password"
 msgstr "암호"
 
+#: settings-new-password
+msgid "New password"
+msgstr ""
+
 #: settings-save
 msgid "Save"
 msgstr "저장"
 
 #: settings-password-empty
-msgid "Password should not be empty!"
+#, fuzzy
+msgid "Password field should not be empty"
 msgstr "암호란은 비어있으면 안됩니다!"
+
+#: settings-synchronize-auto
+msgid "Automatic"
+msgstr ""
 
 #: settings-synchronize-one-day
 msgid "1 day"
@@ -310,14 +401,6 @@ msgstr "2주"
 #: settings-synchronize-one-month
 msgid "1 month"
 msgstr "한 달"
-
-#: settings-synchronize-three-months
-msgid "3 months"
-msgstr "3달"
-
-#: settings-synchronize-six-months
-msgid "6 months"
-msgstr "6달"
 
 #: settings-synchronize-all
 msgid "All messages"
@@ -345,20 +428,20 @@ msgstr "받는 사람"
 
 #: envelope-cc
 msgctxt "envelope-cc"
-msgid "cc"
-msgstr "참조"
+msgid "Cc"
+msgstr ""
 
 #: envelope-bcc
-msgctxt "envelope-bcc"
-msgid "bcc"
-msgstr "숨은 참조"
+msgid "Bcc"
+msgstr ""
 
 #: reader-header
 msgid "Read"
 msgstr "읽음"
 
 #: compose-header
-msgid "Compose Message"
+#, fuzzy
+msgid "Compose message"
 msgstr "메시지 쓰기"
 
 #: compose-send
@@ -371,12 +454,12 @@ msgid "To"
 msgstr "받는 사람"
 
 #: compose-cc
-msgctxt "compose-cc"
+#, fuzzy
 msgid "cc"
 msgstr "참조"
 
 #: compose-bcc
-msgctxt "compose-bcc"
+#, fuzzy
 msgid "bcc"
 msgstr "숨은 참조"
 
@@ -384,6 +467,34 @@ msgstr "숨은 참조"
 msgctxt "compose-subject"
 msgid "Subject"
 msgstr "제목"
+
+#: compose-discard-message
+msgid "Discard email?"
+msgstr ""
+
+#: compose-discard-confirm
+msgid "Discard"
+msgstr ""
+
+#: compose-sending-message
+msgid "Sending email"
+msgstr ""
+
+#: compose-send-message-failed
+msgid "Sending email failed"
+msgstr ""
+
+#: dialog-button-ok
+msgid "OK"
+msgstr ""
+
+#: attachment-size-kib
+msgid "{{kilobytes}}K"
+msgstr ""
+
+#: message-attachment-view.textContent
+msgid "View"
+msgstr ""
 
 #: message-edit-menu-star
 msgid "Star"
@@ -394,11 +505,13 @@ msgid "Unstar"
 msgstr "별표 지우기"
 
 #: message-edit-menu-mark-read
-msgid "Mark as Read"
+#, fuzzy
+msgid "Mark as read"
 msgstr "읽은 메일로 표시"
 
 #: message-edit-menu-mark-unread
-msgid "Mark as Unread"
+#, fuzzy
+msgid "Mark as unread"
 msgstr "읽지 않은 메일로 표시"
 
 #: message-edit-menu-move
@@ -406,6 +519,8 @@ msgid "Move"
 msgstr "이동"
 
 #: message-edit-menu-delete
+#, fuzzy
+msgctxt "message-edit-menu-delete"
 msgid "Delete"
 msgstr "삭제"
 
@@ -423,10 +538,8 @@ msgid "Edit"
 msgstr "편집"
 
 #: message-multiedit-header[one]
+#, fuzzy
 msgctxt "message-multiedit-header[one]"
-"message-multiedit-header[one]"
-"message-multiedit-header[one]"
-"message-multiedit-header[one]"
 msgid "{{ n }} selected"
 msgstr "한 통 선택됨"
 
@@ -449,6 +562,10 @@ msgstr "{{ n }}통 선택됨"
 msgctxt "message-multiedit-header[other]"
 msgid "{{ n }} selected"
 msgstr "{{ n }}통 선택됨"
+
+#: browse-to-url-prompt
+msgid "Browse to URL?: {{ url }}"
+msgstr ""
 
 #: message-download-images
 msgctxt "message-download-images"
@@ -484,6 +601,8 @@ msgid "Show external images"
 msgstr "외부 이미지 보이기"
 
 #: message-multiedit-cancel
+#, fuzzy
+msgctxt "message-multiedit-cancel"
 msgid "Cancel"
 msgstr "취소"
 
@@ -497,9 +616,8 @@ msgid "Delete this email message?"
 msgstr "이 이메일 메시지를 삭제하시겠습니까?"
 
 #: message-multiedit-delete-confirm[two]
+#, fuzzy
 msgctxt "message-multiedit-delete-confirm[two]"
-"message-multiedit-delete-confirm[two]"
-"message-multiedit-delete-confirm[two]"
 msgid "Delete {{ n }} email messages?"
 msgstr "이메일 메시지 두 통을 삭제하시겠습니까?"
 
@@ -546,7 +664,8 @@ msgid "Search Mail"
 msgstr "메일 검색"
 
 #: message-search-cancel-accessible
-msgid "cancel search"
+#, fuzzy
+msgid "Cancel search"
 msgstr "검색 취소"
 
 #: messages-syncing
@@ -558,8 +677,13 @@ msgid "Load more messages from server"
 msgstr "서버에서 메시지 더 읽어오기"
 
 #: messages-folder-empty
-msgid "No Mail in this Folder"
+#, fuzzy
+msgid "No mail in this Folder"
 msgstr "메일이 없는 폴더"
+
+#: messages-search-empty
+msgid "No matches in locally cached messages"
+msgstr ""
 
 #: messages-folder-select
 msgid "Select folder"
@@ -582,7 +706,8 @@ msgid "{name} wrote"
 msgstr "{name} 씀"
 
 #: forward-original-message
-msgid "Original Message"
+#, fuzzy
+msgid "Original message"
 msgstr "원본 메시지"
 
 #: forward-header-subject
@@ -600,7 +725,8 @@ msgid "From"
 msgstr "보낸 사람"
 
 #: forward-header-reply-to
-msgid "Reply-To"
+#, fuzzy
+msgid "Reply to"
 msgstr "회신 주소"
 
 #: forward-header-to
@@ -609,8 +735,43 @@ msgid "To"
 msgstr "받는 사람"
 
 #: forward-header-cc
-msgid "CC"
-msgstr "참조"
+msgctxt "forward-header-cc"
+msgid "Cc"
+msgstr ""
+
+#. # Localized folder names for IMAP servers.  Because the IMAP standard did not
+#. # originally specify a way to express meta-data about folders, folders may be
+#. # named in English to express their purpose.  Then e-mail clients (or webmail
+#. # interfaces) localize these values.  We do this too, following in the
+#. # footsteps of Thunderbird.
+#: folder-inbox
+msgid "Inbox"
+msgstr ""
+
+#: folder-sent
+#, fuzzy
+msgid "Sent"
+msgstr "보내기"
+
+#: folder-drafts
+msgid "Drafts"
+msgstr ""
+
+#: folder-trash
+msgid "Trash"
+msgstr ""
+
+#: folder-queue
+msgid "Unsent"
+msgstr ""
+
+#: folder-junk
+msgid "Junk"
+msgstr ""
+
+#: folder-archives
+msgid "Archives"
+msgstr ""
 
 #: toaster-undo
 msgid "Undo"
@@ -629,7 +790,27 @@ msgstr "{[ plural(n) ]}"
 msgid "1 message flag set"
 msgstr "메시지 한 개를 표시함"
 
+#: toaster-message-star[two]
+#, fuzzy
+msgctxt "toaster-message-star[two]"
+msgid "{{ n }} messages flag set"
+msgstr "메시지 {{ n }}개를 표시함"
+
+#: toaster-message-star[few]
+#, fuzzy
+msgctxt "toaster-message-star[few]"
+msgid "{{ n }} messages flag set"
+msgstr "메시지 {{ n }}개를 표시함"
+
+#: toaster-message-star[many]
+#, fuzzy
+msgctxt "toaster-message-star[many]"
+msgid "{{ n }} messages flag set"
+msgstr "메시지 {{ n }}개를 표시함"
+
 #: toaster-message-star[other]
+#, fuzzy
+msgctxt "toaster-message-star[other]"
 msgid "{{ n }} messages flag set"
 msgstr "메시지 {{ n }}개를 표시함"
 
@@ -642,7 +823,27 @@ msgstr "{[ plural(n) ]}"
 msgid "1 message flag removed"
 msgstr "메시지 한 개의 표시를 삭제함"
 
+#: toaster-message-unstar[two]
+#, fuzzy
+msgctxt "toaster-message-unstar[two]"
+msgid "{{ n }} messages flag removed"
+msgstr "메시지 {{ n }}개의 표시를 삭제함"
+
+#: toaster-message-unstar[few]
+#, fuzzy
+msgctxt "toaster-message-unstar[few]"
+msgid "{{ n }} messages flag removed"
+msgstr "메시지 {{ n }}개의 표시를 삭제함"
+
+#: toaster-message-unstar[many]
+#, fuzzy
+msgctxt "toaster-message-unstar[many]"
+msgid "{{ n }} messages flag removed"
+msgstr "메시지 {{ n }}개의 표시를 삭제함"
+
 #: toaster-message-unstar[other]
+#, fuzzy
+msgctxt "toaster-message-unstar[other]"
 msgid "{{ n }} messages flag removed"
 msgstr "메시지 {{ n }}개의 표시를 삭제함"
 
@@ -655,7 +856,27 @@ msgstr "{[ plural(n) ]}"
 msgid "1 message marked as read"
 msgstr "메시지 한 개를 읽은 것으로 표시함"
 
+#: toaster-message-read[two]
+#, fuzzy
+msgctxt "toaster-message-read[two]"
+msgid "{{ n }} messages marked as read"
+msgstr "메시지 {{ n }}개를 읽은 것으로 표시함"
+
+#: toaster-message-read[few]
+#, fuzzy
+msgctxt "toaster-message-read[few]"
+msgid "{{ n }} messages marked as read"
+msgstr "메시지 {{ n }}개를 읽은 것으로 표시함"
+
+#: toaster-message-read[many]
+#, fuzzy
+msgctxt "toaster-message-read[many]"
+msgid "{{ n }} messages marked as read"
+msgstr "메시지 {{ n }}개를 읽은 것으로 표시함"
+
 #: toaster-message-read[other]
+#, fuzzy
+msgctxt "toaster-message-read[other]"
 msgid "{{ n }} messages marked as read"
 msgstr "메시지 {{ n }}개를 읽은 것으로 표시함"
 
@@ -668,7 +889,27 @@ msgstr "{[ plural(n) ]}"
 msgid "1 message marked as unread"
 msgstr "메시지 한 개를 읽지 않은 것으로 표시함"
 
+#: toaster-message-unread[two]
+#, fuzzy
+msgctxt "toaster-message-unread[two]"
+msgid "{{ n }} messages marked as unread"
+msgstr "메시지 {{ n }}개를 읽지 않은 것으로 표시함"
+
+#: toaster-message-unread[few]
+#, fuzzy
+msgctxt "toaster-message-unread[few]"
+msgid "{{ n }} messages marked as unread"
+msgstr "메시지 {{ n }}개를 읽지 않은 것으로 표시함"
+
+#: toaster-message-unread[many]
+#, fuzzy
+msgctxt "toaster-message-unread[many]"
+msgid "{{ n }} messages marked as unread"
+msgstr "메시지 {{ n }}개를 읽지 않은 것으로 표시함"
+
 #: toaster-message-unread[other]
+#, fuzzy
+msgctxt "toaster-message-unread[other]"
 msgid "{{ n }} messages marked as unread"
 msgstr "메시지 {{ n }}개를 읽지 않은 것으로 표시함"
 
@@ -681,7 +922,27 @@ msgstr "{[ plural(n) ]}"
 msgid "1 message moved"
 msgstr "메시지 한 개 옮김"
 
+#: toaster-message-move[two]
+#, fuzzy
+msgctxt "toaster-message-move[two]"
+msgid "{{ n }} messages moved"
+msgstr "메시지 {{ n }}개 옮김"
+
+#: toaster-message-move[few]
+#, fuzzy
+msgctxt "toaster-message-move[few]"
+msgid "{{ n }} messages moved"
+msgstr "메시지 {{ n }}개 옮김"
+
+#: toaster-message-move[many]
+#, fuzzy
+msgctxt "toaster-message-move[many]"
+msgid "{{ n }} messages moved"
+msgstr "메시지 {{ n }}개 옮김"
+
 #: toaster-message-move[other]
+#, fuzzy
+msgctxt "toaster-message-move[other]"
 msgid "{{ n }} messages moved"
 msgstr "메시지 {{ n }}개 옮김"
 
@@ -694,10 +955,62 @@ msgstr "{[ plural(n) ]}"
 msgid "1 message deleted"
 msgstr "메시지 한 개 삭제함"
 
+#: toaster-message-delete[two]
+#, fuzzy
+msgctxt "toaster-message-delete[two]"
+msgid "{{ n }} messages deleted"
+msgstr "메시지 {{ n }}개 삭제함"
+
+#: toaster-message-delete[few]
+#, fuzzy
+msgctxt "toaster-message-delete[few]"
+msgid "{{ n }} messages deleted"
+msgstr "메시지 {{ n }}개 삭제함"
+
+#: toaster-message-delete[many]
+#, fuzzy
+msgctxt "toaster-message-delete[many]"
+msgid "{{ n }} messages deleted"
+msgstr "메시지 {{ n }}개 삭제함"
+
 #: toaster-message-delete[other]
+#, fuzzy
+msgctxt "toaster-message-delete[other]"
 msgid "{{ n }} messages deleted"
 msgstr "메시지 {{ n }}개 삭제함"
 
 #: form-clear-input
 msgid "Remove text"
 msgstr "글 지우기"
+
+#~ msgid "Please wait while I setup your account"
+#~ msgstr "계정을 설정하는 동안 기다리십시오."
+
+#~ msgid "Account Type"
+#~ msgstr "계정 종류"
+
+#~ msgid "IMAP Settings"
+#~ msgstr "IMAP 설정"
+
+#~ msgid "SMTP Settings"
+#~ msgstr "SMTP 설정"
+
+#~ msgid "ActiveSync Settings"
+#~ msgstr "ActiveSync 설정"
+
+#~ msgid "3 months"
+#~ msgstr "3달"
+
+#~ msgid "6 months"
+#~ msgstr "6달"
+
+#~ msgctxt "compose-cc"
+#~ msgid "cc"
+#~ msgstr "참조"
+
+#~ msgctxt "compose-bcc"
+#~ msgid "bcc"
+#~ msgstr "숨은 참조"
+
+#~ msgid "CC"
+#~ msgstr "참조"
