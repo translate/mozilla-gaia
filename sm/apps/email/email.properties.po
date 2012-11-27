@@ -1,9 +1,9 @@
-#. extracted from gaia/locales/en-US/apps/email/email.properties
+#. extracted from locales/en-US/apps/email/email.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-18 01:05+0800\n"
+"POT-Creation-Date: 2012-11-27 13:05+0100\n"
 "PO-Revision-Date: 2012-11-26 11:19+0000\n"
 "Last-Translator: Chris <edresources@bickersc.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.9.1-pre\n"
 "X-Accelerator-Marker: &\n"
 "X-POOTLE-MTIME: 1353928752.0\n"
 
@@ -22,31 +22,34 @@ msgstr "Imeli"
 
 #: setup-empty-account-prompt
 msgid ""
-"You are not setup to send or receive email. Would you like to do that now?"
+"You are not set up to send or receive email. Would you like to do that now?"
 msgstr ""
 
 #: setup-pick-service
-msgid "To send and receive email, you will need to setup an account."
+msgid "To send and receive email, you will need to set up an account."
 msgstr ""
 
 #: setup-account-header
-msgid "New Mail Account Setup"
-msgstr ""
+#, fuzzy
+msgid "New mail account setup"
+msgstr "Fa'atūlagaga Imeli account"
 
 #: setup-info-header
 msgid "Your login information"
 msgstr "Lou fa'amatalaga saini-totonu"
 
 #: setup-hotmail-account
-msgid "Hotmail Account"
+msgid "Hotmail account"
 msgstr ""
 
 #: setup-gmail-account
-msgid "Gmail Account"
+#, fuzzy
+msgid "Gmail account"
 msgstr "Gmail Account"
 
 #: setup-other-email
-msgid "Other Email"
+#, fuzzy
+msgid "Other email"
 msgstr "Isi Imeli"
 
 #: setup-info-name-placeholder
@@ -54,7 +57,8 @@ msgid "Name"
 msgstr "Igoa"
 
 #: setup-info-email-placeholder
-msgid "Email Address"
+#, fuzzy
+msgid "Email address"
 msgstr "Imeli"
 
 #: setup-info-password-placeholder
@@ -68,7 +72,7 @@ msgid "Next"
 msgstr "Soso'o"
 
 #: setup-progress-wait
-msgid "Please wait while I setup your account"
+msgid "Please wait while your account is set up"
 msgstr ""
 
 #: setup-completed-header
@@ -76,7 +80,8 @@ msgid "Mail account setup"
 msgstr "Fa'atūlagaga Imeli account"
 
 #: setup-completed-label
-msgid "All Done!"
+#, fuzzy
+msgid "All done!"
 msgstr "'Uma Lava!"
 
 #: setup-add-another-account
@@ -99,28 +104,47 @@ msgstr ""
 msgid "An unknown error occurred"
 msgstr "Sesē lē iloa"
 
+#: setup-error-needs-app-pass
+msgid ""
+"You must use an application specific password for two-factor Gmail accounts"
+msgstr ""
+
+#: setup-error-imap-disabled
+msgid "You must enable IMAP for your Gmail account"
+msgstr ""
+
 #: setup-manual-config
-msgid "Manually setup account"
+#, fuzzy
+msgid "Manually set up account"
 msgstr "Fa'atūlagaga account fai-lima"
 
 #: setup-manual-config-header
-msgid "Manual Setup"
+#, fuzzy
+msgid "Manual setup"
 msgstr "Fa'atūlagaga fai-lima"
 
 #: setup-manual-account-type
-msgid "Account Type"
-msgstr "Account Itu'āiga"
+#, fuzzy
+msgctxt "setup-manual-account-type"
+msgid "Account type"
+msgstr "Account itu'āiga"
 
 #: setup-manual-imap-header
-msgid "IMAP Settings"
+#, fuzzy
+msgctxt "setup-manual-imap-header"
+msgid "IMAP settings"
 msgstr "Fa'atonutonu IMAP"
 
 #: setup-manual-smtp-header
-msgid "SMTP Settings"
+#, fuzzy
+msgctxt "setup-manual-smtp-header"
+msgid "SMTP settings"
 msgstr "Fa'atonutonu SMTP"
 
 #: setup-manual-activesync-header
-msgid "ActiveSync Settings"
+#, fuzzy
+msgctxt "setup-manual-activesync-header"
+msgid "ActiveSync settings"
 msgstr "Fa'atonutonu ActiveSync"
 
 #: setup-manual-next
@@ -151,19 +175,46 @@ msgid "Username"
 msgstr "Igoa-fai"
 
 #: setup-bad-password-header
-msgid "Bad Password!"
+#, fuzzy
+msgid "Bad password!"
 msgstr "'Upulilo e leaga!"
 
 #: setup-bad-password
-msgid "We could not login to the server.  Maybe your password is wrong?"
+#, fuzzy
+msgid "We could not sign in to the server. Maybe your password is wrong?"
 msgstr "E lē mafai ona saini i le server.  Sesē i le 'upulilo?"
 
 #: setup-fix-password
 msgid "Retry with new password"
 msgstr "Toe taumafai ma le 'upulilo fou"
 
+#: setup-gmail-twofactor-header
+msgid "Two-Factor Enabled"
+msgstr ""
+
+#: setup-gmail-twofactor-message
+msgid "You need to enter an application-specific password below."
+msgstr ""
+
+#: setup-gmail-twofactor-fix
+msgid "Use application password"
+msgstr ""
+
+#: setup-gmail-imap-header
+msgid "IMAP Disabled"
+msgstr ""
+
+#: setup-gmail-imap-message
+msgid "You must enable IMAP on your Gmail account "
+msgstr ""
+
+#: setup-gmail-imap-retry
+msgid "Retry"
+msgstr ""
+
 #: settings-main-header
-msgid "Mail Settings"
+#, fuzzy
+msgid "Mail settings"
 msgstr "Fa'atonutonu o Imeli"
 
 #: settings-close
@@ -180,12 +231,32 @@ msgid "Accounts"
 msgstr "Accounts"
 
 #: settings-account-add
-msgid "Add Account"
+#, fuzzy
+msgid "Add account"
 msgstr "Fa'aopoopo Account"
 
 #: settings-account-delete
-msgid "Delete Account"
+#, fuzzy
+msgid "Delete account"
 msgstr "Tia'i Account"
+
+#: settings-account-delete-prompt
+msgid ""
+"Are you sure you want to delete your {{account}} mail account? You will have "
+"to re-download your mail if you re-create the account."
+msgstr ""
+
+#: settings-account-delete-cancel
+#, fuzzy
+msgctxt "settings-account-delete-cancel"
+msgid "Cancel"
+msgstr "Sōloia"
+
+#: settings-account-delete-confirm
+#, fuzzy
+msgctxt "settings-account-delete-confirm"
+msgid "Delete"
+msgstr "Tia'i"
 
 #: settings-about-section
 msgid "About"
@@ -244,6 +315,8 @@ msgid "Default account"
 msgstr "Account fa'atonutonu-māsani"
 
 #: settings-account-type
+#, fuzzy
+msgctxt "settings-account-type"
 msgid "Account type"
 msgstr "Account itu'āiga"
 
@@ -256,14 +329,20 @@ msgid "Synchronize"
 msgstr "Tu'ufa'atasia"
 
 #: settings-activesync-label
+#, fuzzy
+msgctxt "settings-activesync-label"
 msgid "ActiveSync settings"
 msgstr "Fa'atonutonu ActiveSync"
 
 #: settings-imap-label
+#, fuzzy
+msgctxt "settings-imap-label"
 msgid "IMAP settings"
 msgstr "Fa'atonutonu IMAP"
 
 #: settings-smtp-label
+#, fuzzy
+msgctxt "settings-smtp-label"
 msgid "SMTP settings"
 msgstr "Fa'atonutonu SMTP"
 
@@ -286,12 +365,20 @@ msgctxt "settings-password"
 msgid "Password"
 msgstr "'Upulilo"
 
+#: settings-new-password
+msgid "New password"
+msgstr ""
+
 #: settings-save
 msgid "Save"
 msgstr "Teu"
 
 #: settings-password-empty
-msgid "Password should not be empty!"
+msgid "Password field should not be empty"
+msgstr ""
+
+#: settings-synchronize-auto
+msgid "Automatic"
 msgstr ""
 
 #: settings-synchronize-one-day
@@ -313,14 +400,6 @@ msgstr "2 vaiaso"
 #: settings-synchronize-one-month
 msgid "1 month"
 msgstr "1 māsina"
-
-#: settings-synchronize-three-months
-msgid "3 months"
-msgstr "3 māsina"
-
-#: settings-synchronize-six-months
-msgid "6 months"
-msgstr "6 māsina"
 
 #: settings-synchronize-all
 msgid "All messages"
@@ -348,20 +427,19 @@ msgstr "Mo"
 
 #: envelope-cc
 msgctxt "envelope-cc"
-msgid "cc"
-msgstr "cc"
+msgid "Cc"
+msgstr ""
 
 #: envelope-bcc
-msgctxt "envelope-bcc"
-msgid "bcc"
-msgstr "bcc"
+msgid "Bcc"
+msgstr ""
 
 #: reader-header
 msgid "Read"
 msgstr "Faitau"
 
 #: compose-header
-msgid "Compose Message"
+msgid "Compose message"
 msgstr ""
 
 #: compose-send
@@ -374,12 +452,12 @@ msgid "To"
 msgstr "Mai"
 
 #: compose-cc
-msgctxt "compose-cc"
+#, fuzzy
 msgid "cc"
 msgstr "cc"
 
 #: compose-bcc
-msgctxt "compose-bcc"
+#, fuzzy
 msgid "bcc"
 msgstr "bcc"
 
@@ -387,6 +465,34 @@ msgstr "bcc"
 msgctxt "compose-subject"
 msgid "Subject"
 msgstr "Ulutala"
+
+#: compose-discard-message
+msgid "Discard email?"
+msgstr ""
+
+#: compose-discard-confirm
+msgid "Discard"
+msgstr ""
+
+#: compose-sending-message
+msgid "Sending email"
+msgstr ""
+
+#: compose-send-message-failed
+msgid "Sending email failed"
+msgstr ""
+
+#: dialog-button-ok
+msgid "OK"
+msgstr ""
+
+#: attachment-size-kib
+msgid "{{kilobytes}}K"
+msgstr ""
+
+#: message-attachment-view.textContent
+msgid "View"
+msgstr ""
 
 #: message-edit-menu-star
 msgid "Star"
@@ -397,11 +503,11 @@ msgid "Unstar"
 msgstr "'Ave'ese Fetū"
 
 #: message-edit-menu-mark-read
-msgid "Mark as Read"
+msgid "Mark as read"
 msgstr ""
 
 #: message-edit-menu-mark-unread
-msgid "Mark as Unread"
+msgid "Mark as unread"
 msgstr ""
 
 #: message-edit-menu-move
@@ -409,6 +515,8 @@ msgid "Move"
 msgstr "'Ave"
 
 #: message-edit-menu-delete
+#, fuzzy
+msgctxt "message-edit-menu-delete"
 msgid "Delete"
 msgstr "Tia'i"
 
@@ -446,8 +554,13 @@ msgid "{{ n }} selected"
 msgstr "{{ n }} filifiliina"
 
 #: message-multiedit-header[other]
+#, fuzzy
 msgctxt "message-multiedit-header[other]"
 msgid "{{ n }} selected"
+msgstr "{{ n }} filifiliina"
+
+#: browse-to-url-prompt
+msgid "Browse to URL?: {{ url }}"
 msgstr ""
 
 #: message-download-images
@@ -484,6 +597,8 @@ msgid "Show external images"
 msgstr ""
 
 #: message-multiedit-cancel
+#, fuzzy
+msgctxt "message-multiedit-cancel"
 msgid "Cancel"
 msgstr "Sōloia"
 
@@ -544,7 +659,8 @@ msgid "Search Mail"
 msgstr "Su'e Imeli"
 
 #: message-search-cancel-accessible
-msgid "cancel search"
+#, fuzzy
+msgid "Cancel search"
 msgstr "sōloia le su'e"
 
 #: messages-syncing
@@ -556,8 +672,13 @@ msgid "Load more messages from server"
 msgstr "La'u isi fe'au mai le server"
 
 #: messages-folder-empty
-msgid "No Mail in this Folder"
+#, fuzzy
+msgid "No mail in this Folder"
 msgstr "Leai se Imeli i lenei pusa-faila"
+
+#: messages-search-empty
+msgid "No matches in locally cached messages"
+msgstr ""
 
 #: messages-folder-select
 msgid "Select folder"
@@ -580,7 +701,8 @@ msgid "{name} wrote"
 msgstr "{name} tusia"
 
 #: forward-original-message
-msgid "Original Message"
+#, fuzzy
+msgid "Original message"
 msgstr "Fe'au Muamua"
 
 #: forward-header-subject
@@ -598,7 +720,7 @@ msgid "From"
 msgstr "Mai"
 
 #: forward-header-reply-to
-msgid "Reply-To"
+msgid "Reply to"
 msgstr ""
 
 #: forward-header-to
@@ -607,8 +729,43 @@ msgid "To"
 msgstr "Mo"
 
 #: forward-header-cc
-msgid "CC"
-msgstr "CC"
+msgctxt "forward-header-cc"
+msgid "Cc"
+msgstr ""
+
+#. # Localized folder names for IMAP servers.  Because the IMAP standard did not
+#. # originally specify a way to express meta-data about folders, folders may be
+#. # named in English to express their purpose.  Then e-mail clients (or webmail
+#. # interfaces) localize these values.  We do this too, following in the
+#. # footsteps of Thunderbird.
+#: folder-inbox
+msgid "Inbox"
+msgstr ""
+
+#: folder-sent
+#, fuzzy
+msgid "Sent"
+msgstr "Lafo"
+
+#: folder-drafts
+msgid "Drafts"
+msgstr ""
+
+#: folder-trash
+msgid "Trash"
+msgstr ""
+
+#: folder-queue
+msgid "Unsent"
+msgstr ""
+
+#: folder-junk
+msgid "Junk"
+msgstr ""
+
+#: folder-archives
+msgid "Archives"
+msgstr ""
 
 #: toaster-undo
 msgid "Undo"
@@ -627,7 +784,23 @@ msgstr "{[ plural(n) ]}"
 msgid "1 message flag set"
 msgstr ""
 
+#: toaster-message-star[two]
+msgctxt "toaster-message-star[two]"
+msgid "{{ n }} messages flag set"
+msgstr ""
+
+#: toaster-message-star[few]
+msgctxt "toaster-message-star[few]"
+msgid "{{ n }} messages flag set"
+msgstr ""
+
+#: toaster-message-star[many]
+msgctxt "toaster-message-star[many]"
+msgid "{{ n }} messages flag set"
+msgstr ""
+
 #: toaster-message-star[other]
+msgctxt "toaster-message-star[other]"
 msgid "{{ n }} messages flag set"
 msgstr ""
 
@@ -640,7 +813,23 @@ msgstr "{[ plural(n) ]}"
 msgid "1 message flag removed"
 msgstr ""
 
+#: toaster-message-unstar[two]
+msgctxt "toaster-message-unstar[two]"
+msgid "{{ n }} messages flag removed"
+msgstr ""
+
+#: toaster-message-unstar[few]
+msgctxt "toaster-message-unstar[few]"
+msgid "{{ n }} messages flag removed"
+msgstr ""
+
+#: toaster-message-unstar[many]
+msgctxt "toaster-message-unstar[many]"
+msgid "{{ n }} messages flag removed"
+msgstr ""
+
 #: toaster-message-unstar[other]
+msgctxt "toaster-message-unstar[other]"
 msgid "{{ n }} messages flag removed"
 msgstr ""
 
@@ -653,7 +842,23 @@ msgstr "{[ plural(n) ]}"
 msgid "1 message marked as read"
 msgstr ""
 
+#: toaster-message-read[two]
+msgctxt "toaster-message-read[two]"
+msgid "{{ n }} messages marked as read"
+msgstr ""
+
+#: toaster-message-read[few]
+msgctxt "toaster-message-read[few]"
+msgid "{{ n }} messages marked as read"
+msgstr ""
+
+#: toaster-message-read[many]
+msgctxt "toaster-message-read[many]"
+msgid "{{ n }} messages marked as read"
+msgstr ""
+
 #: toaster-message-read[other]
+msgctxt "toaster-message-read[other]"
 msgid "{{ n }} messages marked as read"
 msgstr ""
 
@@ -666,7 +871,23 @@ msgstr "{[ plural(n) ]}"
 msgid "1 message marked as unread"
 msgstr ""
 
+#: toaster-message-unread[two]
+msgctxt "toaster-message-unread[two]"
+msgid "{{ n }} messages marked as unread"
+msgstr ""
+
+#: toaster-message-unread[few]
+msgctxt "toaster-message-unread[few]"
+msgid "{{ n }} messages marked as unread"
+msgstr ""
+
+#: toaster-message-unread[many]
+msgctxt "toaster-message-unread[many]"
+msgid "{{ n }} messages marked as unread"
+msgstr ""
+
 #: toaster-message-unread[other]
+msgctxt "toaster-message-unread[other]"
 msgid "{{ n }} messages marked as unread"
 msgstr ""
 
@@ -679,7 +900,23 @@ msgstr "{[ plural(n) ]}"
 msgid "1 message moved"
 msgstr ""
 
+#: toaster-message-move[two]
+msgctxt "toaster-message-move[two]"
+msgid "{{ n }} messages moved"
+msgstr ""
+
+#: toaster-message-move[few]
+msgctxt "toaster-message-move[few]"
+msgid "{{ n }} messages moved"
+msgstr ""
+
+#: toaster-message-move[many]
+msgctxt "toaster-message-move[many]"
+msgid "{{ n }} messages moved"
+msgstr ""
+
 #: toaster-message-move[other]
+msgctxt "toaster-message-move[other]"
 msgid "{{ n }} messages moved"
 msgstr ""
 
@@ -692,10 +929,55 @@ msgstr "{[ plural(n) ]}"
 msgid "1 message deleted"
 msgstr ""
 
+#: toaster-message-delete[two]
+msgctxt "toaster-message-delete[two]"
+msgid "{{ n }} messages deleted"
+msgstr ""
+
+#: toaster-message-delete[few]
+msgctxt "toaster-message-delete[few]"
+msgid "{{ n }} messages deleted"
+msgstr ""
+
+#: toaster-message-delete[many]
+msgctxt "toaster-message-delete[many]"
+msgid "{{ n }} messages deleted"
+msgstr ""
+
 #: toaster-message-delete[other]
+msgctxt "toaster-message-delete[other]"
 msgid "{{ n }} messages deleted"
 msgstr ""
 
 #: form-clear-input
 msgid "Remove text"
 msgstr "'Ave'ese tusitā"
+
+#~ msgid "Account Type"
+#~ msgstr "Account Itu'āiga"
+
+#~ msgid "IMAP Settings"
+#~ msgstr "Fa'atonutonu IMAP"
+
+#~ msgid "SMTP Settings"
+#~ msgstr "Fa'atonutonu SMTP"
+
+#~ msgid "ActiveSync Settings"
+#~ msgstr "Fa'atonutonu ActiveSync"
+
+#~ msgid "3 months"
+#~ msgstr "3 māsina"
+
+#~ msgid "6 months"
+#~ msgstr "6 māsina"
+
+#~ msgctxt "compose-cc"
+#~ msgid "cc"
+#~ msgstr "cc"
+
+#~ msgctxt "compose-bcc"
+#~ msgid "bcc"
+#~ msgstr "bcc"
+
+#~ msgid "CC"
+#~ msgstr "CC"
