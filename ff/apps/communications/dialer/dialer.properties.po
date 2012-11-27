@@ -1,10 +1,10 @@
 # Ibrahima SARR <ibrahima.sarr@pulaagu.com>, 2012.
-#. extracted from gaia/locales/en-US/apps/communications/dialer/dialer.properties
+#. extracted from locales/en-US/apps/communications/dialer/dialer.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-18 01:05+0800\n"
+"POT-Creation-Date: 2012-11-27 13:05+0100\n"
 "PO-Revision-Date: 2012-11-21 21:16+0200\n"
 "Last-Translator: Ibrahima SARR <ibrahima.sarr@pulaagu.com>\n"
 "Language-Team: FULA LOCALIZATION\n"
@@ -12,16 +12,18 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Translate Toolkit 1.9.1-pre\n"
 "X-Accelerator-Marker: &\n"
 "X-Project-Style: mozilla\n"
 
 #: addNewNumber
-msgid "Add New Number"
+#, fuzzy
+msgid "Add new number"
 msgstr "Ɓeydu tonngoode"
 
 #: addToExistingContact
-msgid "Add to Existing Contact"
+#, fuzzy
+msgid "Add to existing contact"
 msgstr "Ɓeydu e jokkondiral goodngal"
 
 #: all
@@ -45,9 +47,9 @@ msgstr "Mbayka Ndiwoowa ena hurmi"
 msgid "Call log"
 msgstr "Aslol noddaali"
 
-#: calling
-msgid "Calling"
-msgstr "Nana nodda"
+#: connecting
+msgid "Connecting"
+msgstr ""
 
 #: camera-a11y-button.aria-label
 msgid "Hang Up"
@@ -57,12 +59,57 @@ msgstr "Korsu"
 msgid "Cancel"
 msgstr "Haaytu"
 
+#: cf-async
+msgid "Asynchronous: {{ async }}\n"
+msgstr ""
+
+#: cf-data
+msgid "Data: {{ data }}\n"
+msgstr ""
+
+#: cf-error
+msgid "An error occurred while retrieving call forwarding status"
+msgstr ""
+
+#: cf-fax
+msgid "FAX: {{ fax }}\n"
+msgstr ""
+
+#: cf-inactive
+msgid "Inactive"
+msgstr ""
+
+#: cf-packet
+msgid "Packet: {{ packet }}\n"
+msgstr ""
+
+#: cf-pad
+msgid "PAD: {{ pad }}\n"
+msgstr ""
+
+#: cf-sms
+msgid "SMS: {{ sms }}\n"
+msgstr ""
+
+#: cf-status
+msgid "Call forwarding status\n"
+msgstr ""
+
+#: cf-sync
+msgid "Synchronous: {{ sync }}\n"
+msgstr ""
+
+#: cf-voice
+msgid "Voice: {{ voice }}\n"
+msgstr ""
+
 #: confirm-deletion
 msgid "Clear selected calls?"
 msgstr "Momtu noddaali labaaɗi?"
 
 #: createNewContact
-msgid "Create New Contact"
+#, fuzzy
+msgid "Create new contact"
 msgstr "Sos Jokkondiral Kesal"
 
 #: delete
@@ -74,6 +121,8 @@ msgid "Deselect all"
 msgstr "Labto fof"
 
 #: edit-selected
+#, fuzzy
+msgctxt "edit-selected"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
@@ -143,6 +192,18 @@ msgstr "Luutaaɗi"
 msgid "Missed call"
 msgstr "Noddaango Luutaango"
 
+#: mmi-error
+msgid "An error occurred while sending the message"
+msgstr ""
+
+#: mmi-session-expired
+msgid "Session expired"
+msgstr ""
+
+#: mmi-successfully-sent
+msgid "Message successfully sent"
+msgstr ""
+
 #: no-logs-msg-1
 msgid "No calls recorded"
 msgstr "Alaa noddaali teskaa"
@@ -168,11 +229,12 @@ msgid "Today"
 msgstr "Hannde"
 
 #: unknown
-msgid "Unknown"
-msgstr "Anndaaka"
+msgid "Unknown number"
+msgstr ""
 
 #: unlock-a11y-button.aria-label
-msgid "Pickup"
+#, fuzzy
+msgid "Pick up"
 msgstr "Ƴeftu"
 
 #: yesterday
@@ -184,29 +246,73 @@ msgid "USSD"
 msgstr "USSD"
 
 #: sending
-msgid "Sending..."
-msgstr "Nana neldaa..."
+msgid "Sending…"
+msgstr ""
 
 #: ussd-services
 msgid "{{ operator }} services"
 msgstr "Carwe {{ operator }}"
 
 #: type-your-response.placeholder
-msgid "Type your response..."
+#, fuzzy
+msgid "Type your response…"
 msgstr "Tappu jaabawol maa..."
 
 #: clear-all-text
 msgid "Clear all text"
 msgstr "Momtu binndi fof"
 
-#: message-successfully-sent
-msgid "MESSAGE SUCCESSFULLY SENT"
-msgstr "ƁATAKUTU NELDIRAAMA NO HAANIRTA"
+#. ## LOCALIZATION NOTE: contactNameWithOthers is displayed for missed calls when the number is associated with more than one contact.  {{ name }} is the name of the first contact.
+#. ## LOCALIZATION NOTE: case `zero` is never used, no need to translate it.
+#: contactNameWithOthers
+#, fuzzy
+msgctxt "contactNameWithOthers"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
 
-#: ussd-server-error
-msgid "THERE WAS AN ERROR IN THE COMMUNICATION, PLEASE TRY IT AGAIN LATER"
-msgstr "JOKKONDIRAL NGAL WAƊII CAƊEELE, TIIƊNO FUƊƊITO ƊOOE ƁOOYDE"
+#: contactNameWithOthers[zero]
+msgid "{{ name }}…"
+msgstr ""
 
-#: lineContactName
-msgid "{{ name }}... or {{ n }} other"
+#: contactNameWithOthers[one]
+msgid "{{ name }}… or one other"
+msgstr ""
+
+#: contactNameWithOthers[two]
+#, fuzzy
+msgctxt "contactNameWithOthers[two]"
+msgid "{{ name }}… or {{ n }} other"
 msgstr "{{ name }}... walla {{ n }} woɗnde"
+
+#: contactNameWithOthers[few]
+#, fuzzy
+msgctxt "contactNameWithOthers[few]"
+msgid "{{ name }}… or {{ n }} other"
+msgstr "{{ name }}... walla {{ n }} woɗnde"
+
+#: contactNameWithOthers[many]
+#, fuzzy
+msgctxt "contactNameWithOthers[many]"
+msgid "{{ name }}… or {{ n }} other"
+msgstr "{{ name }}... walla {{ n }} woɗnde"
+
+#: contactNameWithOthers[other]
+#, fuzzy
+msgctxt "contactNameWithOthers[other]"
+msgid "{{ name }}… or {{ n }} other"
+msgstr "{{ name }}... walla {{ n }} woɗnde"
+
+#~ msgid "Calling"
+#~ msgstr "Nana nodda"
+
+#~ msgid "Unknown"
+#~ msgstr "Anndaaka"
+
+#~ msgid "Sending..."
+#~ msgstr "Nana neldaa..."
+
+#~ msgid "MESSAGE SUCCESSFULLY SENT"
+#~ msgstr "ƁATAKUTU NELDIRAAMA NO HAANIRTA"
+
+#~ msgid "THERE WAS AN ERROR IN THE COMMUNICATION, PLEASE TRY IT AGAIN LATER"
+#~ msgstr "JOKKONDIRAL NGAL WAƊII CAƊEELE, TIIƊNO FUƊƊITO ƊOOE ƁOOYDE"
