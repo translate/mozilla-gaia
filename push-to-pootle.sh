@@ -8,7 +8,7 @@ user=pootlesync
 server=pootle.locamotion.org
 local_copy=.pootle_phases_tmp
 phaselist=
-manage_command="/var/www/sites/$instance/src/pootle/manage.py"
+manage_command="/var/www/sites/$instance/src/manage.py"
 manage_py_verbosity=2
 precommand=". /var/www/sites/mozilla/env/bin/activate;"
 
@@ -62,8 +62,8 @@ do
 			find $lang -name "*.po"
 		fi | while read file
 		do
-			mkdir -p $local_copy/$lang/$(dirname $file)
-			cp -p $file $local_copy/$lang/$file
+			mkdir -p $local_copy/$(dirname $file)
+			cp -p $file $local_copy/$file
 		done
 	fi
 done
