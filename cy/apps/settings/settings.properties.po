@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-27 14:28+0100\n"
+"POT-Creation-Date: 2012-12-14 01:41+0100\n"
 "PO-Revision-Date: 2012-12-04 09:30+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,8 +12,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.9.1-pre\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1354613413.0\n"
 
 #: settings
@@ -33,6 +34,8 @@ msgid "Enabled"
 msgstr "Galluogwyd"
 
 #: disabled
+#, fuzzy
+msgctxt "disabled"
 msgid "Disabled"
 msgstr "Anablwyd"
 
@@ -340,6 +343,69 @@ msgstr "Diddymu WPS"
 msgid "Failed to cancel WPS"
 msgstr "Methu diddymu WPS"
 
+#. # Connectivity :: Call
+#: callSettings
+msgid "Call Settings"
+msgstr ""
+
+#: callWaiting
+msgid "Call waiting"
+msgstr "Galwad yn disgwyl"
+
+#: callForwarding
+msgid "Call forwarding"
+msgstr ""
+
+#: callForwardingUnconditional
+msgid "Always forward"
+msgstr ""
+
+#: callForwardingMobileBusy
+msgid "Forward when busy"
+msgstr ""
+
+#: callForwardingNoReply
+msgid "Forward when unanswered"
+msgstr ""
+
+#: callForwardingNotReachable
+msgid "Forward when unreachable"
+msgstr ""
+
+#: callForwardingGetting
+msgid "Getting network info…"
+msgstr ""
+
+#: callForwardingQueryError
+msgid "Error in query"
+msgstr ""
+
+#: callForwardingForwardingVoiceTo
+msgid "Voice calls to"
+msgstr ""
+
+#: callForwardingNotForwarding
+#, fuzzy
+msgctxt "callForwardingNotForwarding"
+msgid "Disabled"
+msgstr "Anablwyd"
+
+#: cf-alwaysUseThisNumber
+msgid "Always use this number"
+msgstr ""
+
+#: cf-numberWhenUnreachable
+msgid "Number when unreachable"
+msgstr ""
+
+#: cf-numberWhenUnanswered
+msgid "Number when unanswered"
+msgstr ""
+
+#: cf-numberWhenBusy
+msgid "Number when busy"
+msgstr ""
+
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
 msgid "Cellular & Data"
@@ -348,10 +414,6 @@ msgstr "Cellog a Data"
 #: dataNetwork
 msgid "Carrier"
 msgstr "Darparwr"
-
-#: callWaiting
-msgid "Call waiting"
-msgstr "Galwad yn disgwyl"
 
 #: dataConnectivity
 msgid "Data"
@@ -430,8 +492,13 @@ msgstr "Cysylltwyd"
 msgid "APN"
 msgstr "APN"
 
-#: apnSettings
-msgid "APN settings"
+#: dataSettings
+msgid "Data settings"
+msgstr ""
+
+#: suplSettings
+#, fuzzy
+msgid "A-GPS settings"
 msgstr "Gosodiadau APN"
 
 #: mmsSettings
@@ -650,8 +717,9 @@ msgid "Unable to connect devices"
 msgstr "Methu cysylltu dyfeisiau"
 
 #: error-connect-msg
+#, fuzzy
 msgid ""
-"Check that the device you're trying to connect with is still in range and "
+"Check that the device you’re trying to connect with is still in range and "
 "has Bluetooth turned on."
 msgstr ""
 "Gwiriwch fod y ddyfais rydych yn ceisio cysylltu iddi o fewn gafael a bod "
@@ -729,6 +797,19 @@ msgstr "Gosodiadau Man Poeth"
 msgid "SSID network name"
 msgstr "Enw rhwydwaith SSID"
 
+#: hotspot-open
+#, fuzzy
+msgid "open"
+msgstr "Agor"
+
+#: hotspot-wpa-psk
+msgid "WPA (TKIP)"
+msgstr ""
+
+#: hotspot-wpa2-psk
+msgid "WPA2 (AES)"
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Personalization
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -749,9 +830,17 @@ msgstr "Neges"
 msgid "Volume"
 msgstr "Swn"
 
+#: tones
+msgid "Tones"
+msgstr ""
+
 #: select-tone
 msgid "Select a tone"
 msgstr "Dewis tôn"
+
+#: ringer
+msgid "Ringer"
+msgstr ""
 
 #: ring-tones
 msgid "Ringtones"
@@ -761,29 +850,9 @@ msgstr "Tonau Canu"
 msgid "Alert tones"
 msgstr "Tonau rhybudd"
 
-#: classic
-msgid "Classic"
-msgstr "Clasurol"
-
-#: oldSchool
-msgid "Old School"
-msgstr "Hen Deip"
-
-#: lowBit
-msgid "Low bit"
-msgstr "Did isel"
-
-#: beep
-msgid "Beep beep"
-msgstr "Bîp bîp"
-
 #: volume-and-tones
 msgid "Volume & Tones"
 msgstr "Sain a Thonau"
-
-#: call
-msgid "Call"
-msgstr "Galw"
 
 #: other-sounds
 msgid "Other sounds"
@@ -805,17 +874,9 @@ msgstr "Caead camera"
 msgid "Alarm"
 msgstr "Larwm"
 
-#: normal-sound
-msgid "Normal"
-msgstr "Normal"
-
-#: content-sound
-msgid "Content"
-msgstr "Cynnwys"
-
-#: notification-sound
-msgid "Notification"
-msgstr "Hysbysiadau"
+#: ringer-and-notification-sound
+msgid "Ringer & Notifications"
+msgstr ""
 
 #: voice-sound
 msgid "Voice"
@@ -1135,8 +1196,9 @@ msgstr "Cyfringod cyfredol"
 msgid "Passcode is incorrect"
 msgstr "Cyfringod anghywir"
 
-#: passcode-dont-match
-msgid "Passcode doesn't match. Try again."
+#: passcode-doesnt-match
+#, fuzzy
+msgid "Passcode doesn’t match. Try again."
 msgstr "Nid yw'r cyfringodau'n cydweddu. Ceisiwch eto."
 
 #: passcode
@@ -1358,9 +1420,9 @@ msgstr "Dyfais"
 msgid "Storage"
 msgstr "Storfa"
 
-#: helpAndFeedback
-msgid "Help & Feedback"
-msgstr "Cymorth ac Adborth"
+#: help
+msgid "Help"
+msgstr ""
 
 #. # Device :: Information
 #: deviceInfo
@@ -1501,18 +1563,19 @@ msgid "Network is offline. Will check again when the network is online."
 msgstr "Mae'r rhwydwaith all-lein. Gwirio eto pan fydd y rhwydwaith ar-lein"
 
 #: already-latest-version
-msgid "This is already the latest version of Firefox OS"
-msgstr "Hwn yw'r fersiwn diweddaraf o Firefox OS"
+msgid "This is already the latest version of {{brandShortName}}"
+msgstr ""
 
-#: aboutFirefoxOS
-msgid "About Firefox OS"
-msgstr "Ynghylch Firefox OS"
+#: aboutBrowserOS
+msgid "About {{brandShortName}}"
+msgstr ""
 
-#: firefox-os-desc
+#: browser-os-desc
+#, fuzzy
 msgid ""
-"Firefox OS is the free and open source operating system from Mozilla. Our "
-"mission is to promote openness, innovation and opportunity by keeping the "
-"power of the Web in your hands."
+"{{brandShortName}} is the free and open source operating system from "
+"Mozilla. Our mission is to promote openness, innovation and opportunity by "
+"keeping the power of the Web in your hands."
 msgstr ""
 "Mae Firefox OS yn system weithredu rydd a rhad gan Mozilla. Ein hamcan yw "
 "hyrwyddo bod yn agored, bod yn dyfeisgar a darparu cyfle drwy gadw grym y We "
@@ -1527,8 +1590,9 @@ msgid "Reset Phone"
 msgstr "Ailosod y Ffôn"
 
 #: reset-warning-1
+#, fuzzy
 msgid ""
-"CAUTION: Resetting will erase all your data, including any apps you've "
+"CAUTION: Resetting will erase all your data, including any apps you’ve "
 "purchased."
 msgstr ""
 "RHYBUDD: Bydd ailosod yn dileu eich holl ddata, gan gynnwys unrhyw apiau "
@@ -1542,26 +1606,30 @@ msgstr ""
 "Bydd y ffôn yn cael ei adfer i'w gyflwr ffatri. Ni bydd dim o'ch gosodiadau "
 "na'ch data'n cael ei gadw."
 
-#. # Localization note: the licensing* strings below aren’t ready for translation yet.
-#: about-your-rights
-msgid "About your rights"
-msgstr "Eich hawliau"
+#. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
+#: your-rights
+msgid "Your Rights"
+msgstr ""
 
-#: about-your-rights2-0
+#: about-your-rights-0
+#, fuzzy
 msgid ""
-"Firefox OS is built on free and open source software by a community of "
-"thousands from all over the world. There are a few things you should know:"
+"{{brandShortName}} is built on free and open source software by a community "
+"of thousands from all over the world. There are a few things you should "
+"know:"
 msgstr ""
 "Mae Mozilla Firefox yn feddalwedd rhydd a rhad, wedi ei adeiladu gan gymuned "
 "o filoedd o ar draws y byd. Mae yna rhai pethau y dylech eu gwybod:"
 
-#: about-your-rights2-1
+#: about-your-rights-1
+#, fuzzy
 msgid ""
-"Firefox OS is made available to you under the terms of several open source "
-"licenses including the Mozilla Public License. A device running Firefox OS "
-"may also contain proprietary software from third parties. Any code provided "
-"under open licenses give you the right to modify the source code and "
-"distribute your modified versions as long as you comply with their terms."
+"{{brandShortName}} is made available to you under the terms of several open "
+"source licenses including the Mozilla Public License. A device running "
+"{{brandShortName}} may also contain proprietary software from third parties. "
+"Any code provided under open licenses give you the right to modify the "
+"source code and distribute your modified versions as long as you comply with "
+"their terms."
 msgstr ""
 "Mae Firefox OS yn cael ei ddarparu o dan amodau nifer o drwyddedau cod "
 "agored gan gynnwys y Mozilla Public License. Gall dyfais sy'n rhedeg Firefox "
@@ -1570,35 +1638,49 @@ msgstr ""
 "chi i newid y cod ffynhonnell a dosbarthu'r cod rydych wedi ei newid cyn "
 "belled â'ch bod yn cydymffurfio a'u hamodau."
 
-#: about-your-rights2-2
+#: about-your-rights-2
+#, fuzzy
 msgid ""
 "You are not granted any trademark rights or licenses to the trademarks of "
 "the Mozilla Foundation or any party, including without limitation the "
-"Firefox name or logo."
+"{{brandShortName}} name or logo."
 msgstr ""
 "Nid ydych yn derbyn unrhyw hawliau nod masnachu na thrwyddedau i nod masnach "
 "y Mozilla Foundation neu unrhyw barti, gan gynnwys y Mozilla Foundation heb "
 "gyfyngiadau i enw na logo Firefox."
 
-#: about-your-rights2-3
+#: about-your-rights-3
+#, fuzzy
 msgid ""
-"Some features in Firefox OS, such as the Crash Reporter, give you the option "
-"to provide feedback to Mozilla. By choosing to submit feedback, you give "
-"Mozilla permission to use the feedback to improve its products, to publish "
-"the feedback on its websites, and to distribute the feedback."
+"Some features in {{brandShortName}}, such as the Crash Reporter, give you "
+"the option to provide feedback to Mozilla. By choosing to submit feedback, "
+"you give Mozilla permission to use the feedback to improve its products, to "
+"publish the feedback on its websites, and to distribute the feedback."
 msgstr ""
 "Mae rhai nodweddion o fewn Firefox, megis yr Adroddwr Chwalfa yn rhoi "
 "caniatâd i chi roi adborth i Mozilla. Drwy ddewis i rannu adborth, rydych yn "
 "rhoi hawl i Mozilla i ddefnyddio adborth i wella ei gynnyrch, cyhoeddi'r "
 "adborth ar ei wefannau ac i ddosbarthu'r adborth."
 
-#: about-your-privacy
-msgid "About your privacy"
-msgstr "Eich Preifatrwydd"
+#: about-legal-info
+msgid "Legal Information"
+msgstr ""
 
-#: about-licensing
-msgid "Licensing"
-msgstr "Trwyddedu"
+#: open-source-notices
+msgid "Open Source Notices"
+msgstr ""
+
+#: about-mozilla
+msgid "Mozilla"
+msgstr ""
+
+#: about-other
+msgid "Other"
+msgstr ""
+
+#: your-privacy
+msgid "Your Privacy"
+msgstr ""
 
 #: licensing-1
 msgid ""
@@ -1817,19 +1899,24 @@ msgstr "Gwrthdroi lliwiau"
 msgid "Screen reader"
 msgstr "Darllenydd sgrin"
 
-#. # Device :: Improve Firefox OS
-#: improveFirefoxOS
-msgid "Improve Firefox OS"
-msgstr "Gwella Firefox OS"
+#. # Device :: Improve Browser OS
+#: improveBrowserOS
+msgid "Improve {{brandShortName}}"
+msgstr ""
+
+#: sendMozillaFeedback
+msgid "Send Mozilla Feedback"
+msgstr ""
 
 #: performanceData
 msgid "Performance data"
 msgstr "Data perfformiad"
 
-#: performanceDataInfo
+#: performanceDataInfo2
+#, fuzzy
 msgid ""
-"Make Firefox OS faster and easier to use by sharing information over Wi-Fi "
-"about your phone’s performance."
+"Make {{brandShortName}} faster and easier to use by sharing information over "
+"Wi-Fi about your phone’s performance."
 msgstr ""
 "Gwnewch Firefox OS yn gynt a haws ei ddefnyddio drwy rannu gwybodaeth dros y "
 "diwyfr am berfformiad eich ffôn."
@@ -1863,8 +1950,8 @@ msgstr "Peidio byth anfon adroddiad"
 msgid "Ask me when a crash occurs"
 msgstr "Gofyn pan fydd chwalfa wedi digwydd"
 
-#. # Device :: Improve Firefox OS :: Crash Reports
-#. # Localization note (crash-reports-description-*): These strings are also included in system.properties
+#. # Device :: Improve Browser OS :: Crash Reports
+#. # LOCALIZATION NOTE (crash-reports-description-*): these strings are also included in system.properties
 #: crash-reports-description-1
 msgid ""
 "A crash report contains some details about the crash and your device, as "
@@ -1883,7 +1970,7 @@ msgstr ""
 "deipio mewn ffurflenni a chynnwys negeseuon agored, hanes pori diweddar, neu "
 "geoleoliad ap agored."
 
-#. # Localization note (crash-reports-description-3-*): These strings are a paragraph, with a "privacy policy"
+#. # LOCALIZATION NOTE (crash-reports-description-3-*): these strings are a paragraph, with a "privacy policy"
 #. # link in the middle. Include trailing spaces as needed.
 #: crash-reports-description-3-start
 msgid ""
@@ -1906,17 +1993,45 @@ msgstr ""
 msgid "Online support:"
 msgstr "Cefnogaeth ar-lein:"
 
-#: online-support-link
-msgid "www.telefonica.com"
-msgstr "www.telefonica.com"
+#. # LOCALIZATION NOTE (online-support.href): this is the URL for the online support page.
+#: online-support.href
+msgid ""
+"http://www.vivo.com.br/portalweb/appmanager/env/web?_nfls=false&_nfpb=true&_"
+"pageLabel=vcAtendMovelBook&WT.ac=portal.atendimento.movel"
+msgstr ""
+
+#. # LOCALIZATION NOTE (online-support-link-text): This text will appear as a link.
+#: online-support-link-text
+msgid "Vivo"
+msgstr ""
 
 #: call-support
 msgid "Call support:"
 msgstr "Cefnogaeth galwad:"
 
-#: call-support-number
-msgid "+1 650-903-0800"
-msgstr "+1 650-903-0800"
+#. # LOCALIZATION NOTE (call-support-link-1): this text will appear as a link.
+#: call-support-link-1
+msgid "*8486"
+msgstr ""
+
+#. # LOCALIZATION NOTE (call-support-link-1.href): include the "tel:" protocol before the call support
+#. # number so that it will open in the dialer app.
+#: call-support-link-1.href
+msgid "tel:*8486"
+msgstr ""
+
+#. # LOCALIZATION NOTE: if your locale only has one support phone number, leave the next 3 strings empty.
+#: call-support-link-2
+msgid "1058"
+msgstr ""
+
+#: call-support-link-2.href
+msgid "tel:1058"
+msgstr ""
+
+#: call-support-link-or
+msgid "or"
+msgstr ""
 
 #: user-guide
 msgid "User guide"
@@ -1931,9 +2046,60 @@ msgstr "Rhaglenni cerdyn SIM ddim ar gael."
 msgid "SIM toolkit"
 msgstr "Blwch offer SIM"
 
-msgctxt "gitInfo"
-msgid "Git commit info"
-msgstr "Gwyb. cyflwyno i Git"
+#~ msgid "Classic"
+#~ msgstr "Clasurol"
+
+#~ msgid "Old School"
+#~ msgstr "Hen Deip"
+
+#~ msgid "Low bit"
+#~ msgstr "Did isel"
+
+#~ msgid "Beep beep"
+#~ msgstr "Bîp bîp"
+
+#~ msgid "Call"
+#~ msgstr "Galw"
+
+#~ msgid "Normal"
+#~ msgstr "Normal"
+
+#~ msgid "Content"
+#~ msgstr "Cynnwys"
+
+#~ msgid "Notification"
+#~ msgstr "Hysbysiadau"
+
+#~ msgid "Help & Feedback"
+#~ msgstr "Cymorth ac Adborth"
+
+#~ msgid "This is already the latest version of Firefox OS"
+#~ msgstr "Hwn yw'r fersiwn diweddaraf o Firefox OS"
+
+#~ msgid "About Firefox OS"
+#~ msgstr "Ynghylch Firefox OS"
+
+#~ msgid "About your rights"
+#~ msgstr "Eich hawliau"
+
+#~ msgid "About your privacy"
+#~ msgstr "Eich Preifatrwydd"
+
+#~ msgid "Licensing"
+#~ msgstr "Trwyddedu"
+
+#~ msgid "Improve Firefox OS"
+#~ msgstr "Gwella Firefox OS"
+
+#~ msgid "www.telefonica.com"
+#~ msgstr "www.telefonica.com"
+
+#~ msgid "+1 650-903-0800"
+#~ msgstr "+1 650-903-0800"
+
+#~ msgctxt "gitInfo"
+#~ msgid "Git commit info"
+#~ msgstr "Gwyb. cyflwyno i Git"
 
 #~ msgctxt "fullStatus-connectingfailed"
 #~ msgid "connection failed."

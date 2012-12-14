@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-27 13:23+0100\n"
+"POT-Creation-Date: 2012-12-14 01:41+0100\n"
 "PO-Revision-Date: 2012-12-04 09:19+0000\n"
 "Last-Translator: Piseth <piseth.kheng@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,8 +12,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.9.1-pre\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1354612780.0\n"
 
 #: settings
@@ -33,6 +34,7 @@ msgid "Enabled"
 msgstr ""
 
 #: disabled
+msgctxt "disabled"
 msgid "Disabled"
 msgstr ""
 
@@ -340,6 +342,68 @@ msgstr ""
 msgid "Failed to cancel WPS"
 msgstr ""
 
+#. # Connectivity :: Call
+#: callSettings
+msgid "Call Settings"
+msgstr ""
+
+#: callWaiting
+msgid "Call waiting"
+msgstr ""
+
+#: callForwarding
+msgid "Call forwarding"
+msgstr ""
+
+#: callForwardingUnconditional
+msgid "Always forward"
+msgstr ""
+
+#: callForwardingMobileBusy
+msgid "Forward when busy"
+msgstr ""
+
+#: callForwardingNoReply
+msgid "Forward when unanswered"
+msgstr ""
+
+#: callForwardingNotReachable
+msgid "Forward when unreachable"
+msgstr ""
+
+#: callForwardingGetting
+msgid "Getting network info…"
+msgstr ""
+
+#: callForwardingQueryError
+msgid "Error in query"
+msgstr ""
+
+#: callForwardingForwardingVoiceTo
+msgid "Voice calls to"
+msgstr ""
+
+#: callForwardingNotForwarding
+msgctxt "callForwardingNotForwarding"
+msgid "Disabled"
+msgstr ""
+
+#: cf-alwaysUseThisNumber
+msgid "Always use this number"
+msgstr ""
+
+#: cf-numberWhenUnreachable
+msgid "Number when unreachable"
+msgstr ""
+
+#: cf-numberWhenUnanswered
+msgid "Number when unanswered"
+msgstr ""
+
+#: cf-numberWhenBusy
+msgid "Number when busy"
+msgstr ""
+
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
 msgid "Cellular & Data"
@@ -347,10 +411,6 @@ msgstr ""
 
 #: dataNetwork
 msgid "Carrier"
-msgstr ""
-
-#: callWaiting
-msgid "Call waiting"
 msgstr ""
 
 #: dataConnectivity
@@ -426,8 +486,12 @@ msgstr ""
 msgid "APN"
 msgstr ""
 
-#: apnSettings
-msgid "APN settings"
+#: dataSettings
+msgid "Data settings"
+msgstr ""
+
+#: suplSettings
+msgid "A-GPS settings"
 msgstr ""
 
 #: mmsSettings
@@ -641,7 +705,7 @@ msgstr ""
 
 #: error-connect-msg
 msgid ""
-"Check that the device you're trying to connect with is still in range and "
+"Check that the device you’re trying to connect with is still in range and "
 "has Bluetooth turned on."
 msgstr ""
 
@@ -713,6 +777,18 @@ msgstr ""
 msgid "SSID network name"
 msgstr ""
 
+#: hotspot-open
+msgid "open"
+msgstr ""
+
+#: hotspot-wpa-psk
+msgid "WPA (TKIP)"
+msgstr ""
+
+#: hotspot-wpa2-psk
+msgid "WPA2 (AES)"
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Personalization
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -733,8 +809,16 @@ msgstr "សារ"
 msgid "Volume"
 msgstr ""
 
+#: tones
+msgid "Tones"
+msgstr ""
+
 #: select-tone
 msgid "Select a tone"
+msgstr ""
+
+#: ringer
+msgid "Ringer"
 msgstr ""
 
 #: ring-tones
@@ -745,28 +829,8 @@ msgstr ""
 msgid "Alert tones"
 msgstr ""
 
-#: classic
-msgid "Classic"
-msgstr ""
-
-#: oldSchool
-msgid "Old School"
-msgstr ""
-
-#: lowBit
-msgid "Low bit"
-msgstr ""
-
-#: beep
-msgid "Beep beep"
-msgstr ""
-
 #: volume-and-tones
 msgid "Volume & Tones"
-msgstr ""
-
-#: call
-msgid "Call"
 msgstr ""
 
 #: other-sounds
@@ -789,16 +853,8 @@ msgstr ""
 msgid "Alarm"
 msgstr ""
 
-#: normal-sound
-msgid "Normal"
-msgstr ""
-
-#: content-sound
-msgid "Content"
-msgstr ""
-
-#: notification-sound
-msgid "Notification"
+#: ringer-and-notification-sound
+msgid "Ringer & Notifications"
 msgstr ""
 
 #: voice-sound
@@ -1119,8 +1175,8 @@ msgstr ""
 msgid "Passcode is incorrect"
 msgstr ""
 
-#: passcode-dont-match
-msgid "Passcode doesn't match. Try again."
+#: passcode-doesnt-match
+msgid "Passcode doesn’t match. Try again."
 msgstr ""
 
 #: passcode
@@ -1321,8 +1377,8 @@ msgstr ""
 msgid "Storage"
 msgstr ""
 
-#: helpAndFeedback
-msgid "Help & Feedback"
+#: help
+msgid "Help"
 msgstr ""
 
 #. # Device :: Information
@@ -1463,18 +1519,18 @@ msgid "Network is offline. Will check again when the network is online."
 msgstr ""
 
 #: already-latest-version
-msgid "This is already the latest version of Firefox OS"
+msgid "This is already the latest version of {{brandShortName}}"
 msgstr ""
 
-#: aboutFirefoxOS
-msgid "About Firefox OS"
+#: aboutBrowserOS
+msgid "About {{brandShortName}}"
 msgstr ""
 
-#: firefox-os-desc
+#: browser-os-desc
 msgid ""
-"Firefox OS is the free and open source operating system from Mozilla. Our "
-"mission is to promote openness, innovation and opportunity by keeping the "
-"power of the Web in your hands."
+"{{brandShortName}} is the free and open source operating system from "
+"Mozilla. Our mission is to promote openness, innovation and opportunity by "
+"keeping the power of the Web in your hands."
 msgstr ""
 
 #: learn-more
@@ -1487,7 +1543,7 @@ msgstr ""
 
 #: reset-warning-1
 msgid ""
-"CAUTION: Resetting will erase all your data, including any apps you've "
+"CAUTION: Resetting will erase all your data, including any apps you’ve "
 "purchased."
 msgstr ""
 
@@ -1497,47 +1553,61 @@ msgid ""
 "or data will be saved."
 msgstr ""
 
-#. # Localization note: the licensing* strings below aren’t ready for translation yet.
-#: about-your-rights
-msgid "About your rights"
+#. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
+#: your-rights
+msgid "Your Rights"
 msgstr ""
 
-#: about-your-rights2-0
+#: about-your-rights-0
 msgid ""
-"Firefox OS is built on free and open source software by a community of "
-"thousands from all over the world. There are a few things you should know:"
+"{{brandShortName}} is built on free and open source software by a community "
+"of thousands from all over the world. There are a few things you should "
+"know:"
 msgstr ""
 
-#: about-your-rights2-1
+#: about-your-rights-1
 msgid ""
-"Firefox OS is made available to you under the terms of several open source "
-"licenses including the Mozilla Public License. A device running Firefox OS "
-"may also contain proprietary software from third parties. Any code provided "
-"under open licenses give you the right to modify the source code and "
-"distribute your modified versions as long as you comply with their terms."
+"{{brandShortName}} is made available to you under the terms of several open "
+"source licenses including the Mozilla Public License. A device running "
+"{{brandShortName}} may also contain proprietary software from third parties. "
+"Any code provided under open licenses give you the right to modify the "
+"source code and distribute your modified versions as long as you comply with "
+"their terms."
 msgstr ""
 
-#: about-your-rights2-2
+#: about-your-rights-2
 msgid ""
 "You are not granted any trademark rights or licenses to the trademarks of "
 "the Mozilla Foundation or any party, including without limitation the "
-"Firefox name or logo."
+"{{brandShortName}} name or logo."
 msgstr ""
 
-#: about-your-rights2-3
+#: about-your-rights-3
 msgid ""
-"Some features in Firefox OS, such as the Crash Reporter, give you the option "
-"to provide feedback to Mozilla. By choosing to submit feedback, you give "
-"Mozilla permission to use the feedback to improve its products, to publish "
-"the feedback on its websites, and to distribute the feedback."
+"Some features in {{brandShortName}}, such as the Crash Reporter, give you "
+"the option to provide feedback to Mozilla. By choosing to submit feedback, "
+"you give Mozilla permission to use the feedback to improve its products, to "
+"publish the feedback on its websites, and to distribute the feedback."
 msgstr ""
 
-#: about-your-privacy
-msgid "About your privacy"
+#: about-legal-info
+msgid "Legal Information"
 msgstr ""
 
-#: about-licensing
-msgid "Licensing"
+#: open-source-notices
+msgid "Open Source Notices"
+msgstr ""
+
+#: about-mozilla
+msgid "Mozilla"
+msgstr ""
+
+#: about-other
+msgid "Other"
+msgstr ""
+
+#: your-privacy
+msgid "Your Privacy"
 msgstr ""
 
 #: licensing-1
@@ -1740,19 +1810,23 @@ msgstr ""
 msgid "Screen reader"
 msgstr ""
 
-#. # Device :: Improve Firefox OS
-#: improveFirefoxOS
-msgid "Improve Firefox OS"
+#. # Device :: Improve Browser OS
+#: improveBrowserOS
+msgid "Improve {{brandShortName}}"
+msgstr ""
+
+#: sendMozillaFeedback
+msgid "Send Mozilla Feedback"
 msgstr ""
 
 #: performanceData
 msgid "Performance data"
 msgstr ""
 
-#: performanceDataInfo
+#: performanceDataInfo2
 msgid ""
-"Make Firefox OS faster and easier to use by sharing information over Wi-Fi "
-"about your phone’s performance."
+"Make {{brandShortName}} faster and easier to use by sharing information over "
+"Wi-Fi about your phone’s performance."
 msgstr ""
 
 #: sharePerformanceData
@@ -1781,8 +1855,8 @@ msgstr ""
 msgid "Ask me when a crash occurs"
 msgstr ""
 
-#. # Device :: Improve Firefox OS :: Crash Reports
-#. # Localization note (crash-reports-description-*): These strings are also included in system.properties
+#. # Device :: Improve Browser OS :: Crash Reports
+#. # LOCALIZATION NOTE (crash-reports-description-*): these strings are also included in system.properties
 #: crash-reports-description-1
 msgid ""
 "A crash report contains some details about the crash and your device, as "
@@ -1796,7 +1870,7 @@ msgid ""
 "by an open app."
 msgstr ""
 
-#. # Localization note (crash-reports-description-3-*): These strings are a paragraph, with a "privacy policy"
+#. # LOCALIZATION NOTE (crash-reports-description-3-*): these strings are a paragraph, with a "privacy policy"
 #. # link in the middle. Include trailing spaces as needed.
 #: crash-reports-description-3-start
 msgid ""
@@ -1817,16 +1891,44 @@ msgstr ""
 msgid "Online support:"
 msgstr ""
 
-#: online-support-link
-msgid "www.telefonica.com"
+#. # LOCALIZATION NOTE (online-support.href): this is the URL for the online support page.
+#: online-support.href
+msgid ""
+"http://www.vivo.com.br/portalweb/appmanager/env/web?_nfls=false&_nfpb=true&_"
+"pageLabel=vcAtendMovelBook&WT.ac=portal.atendimento.movel"
+msgstr ""
+
+#. # LOCALIZATION NOTE (online-support-link-text): This text will appear as a link.
+#: online-support-link-text
+msgid "Vivo"
 msgstr ""
 
 #: call-support
 msgid "Call support:"
 msgstr ""
 
-#: call-support-number
-msgid "+1 650-903-0800"
+#. # LOCALIZATION NOTE (call-support-link-1): this text will appear as a link.
+#: call-support-link-1
+msgid "*8486"
+msgstr ""
+
+#. # LOCALIZATION NOTE (call-support-link-1.href): include the "tel:" protocol before the call support
+#. # number so that it will open in the dialer app.
+#: call-support-link-1.href
+msgid "tel:*8486"
+msgstr ""
+
+#. # LOCALIZATION NOTE: if your locale only has one support phone number, leave the next 3 strings empty.
+#: call-support-link-2
+msgid "1058"
+msgstr ""
+
+#: call-support-link-2.href
+msgid "tel:1058"
+msgstr ""
+
+#: call-support-link-or
+msgid "or"
 msgstr ""
 
 #: user-guide

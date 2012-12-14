@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-27 13:05+0100\n"
+"POT-Creation-Date: 2012-12-14 01:41+0100\n"
 "PO-Revision-Date: 2012-12-10 01:12+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -14,10 +14,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.9.1-pre\n"
 "X-Accelerator-Marker: &\n"
-"X-POOTLE-MTIME: 1355101927.0\n"
+"X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
+"X-POOTLE-MTIME: 1355101927.0\n"
 
 #: setup-app-name-header
 msgid "Mail"
@@ -209,6 +210,8 @@ msgid "You must enable IMAP on your Gmail account "
 msgstr "Feumaidh tu IMAP a chur an comas sa chunntas Gmail agad "
 
 #: setup-gmail-imap-retry
+#, fuzzy
+msgctxt "setup-gmail-imap-retry"
 msgid "Retry"
 msgstr "Feuch ris a-rithist"
 
@@ -683,6 +686,14 @@ msgstr "Freagair"
 msgid "Folders"
 msgstr "Pasgain"
 
+#: account-last-synced-label
+msgid "Last sync: "
+msgstr ""
+
+#: account-never-synced
+msgid "Never"
+msgstr ""
+
 #: reply-quoting-wrote
 msgid "{name} wrote"
 msgstr "Sgrìobh {name}"
@@ -691,6 +702,11 @@ msgstr "Sgrìobh {name}"
 msgid "Original message"
 msgstr "An teachdaireachd thùsail"
 
+#. # L10n note: These are the labels we use when displaying the envelope info for a
+#. # message that is forwarded inline.  While automatic recovery of this
+#. # information by clients is made difficult by these strings regularly being
+#. # localized, we attempt to remain consistent with apps such as Thunderbird for
+#. # at least English.
 #: forward-header-subject
 msgctxt "forward-header-subject"
 msgid "Subject"
@@ -705,8 +721,10 @@ msgctxt "forward-header-from"
 msgid "From"
 msgstr "O"
 
+#. # This really wants to have the dash in it for consistency with Thunderbird
 #: forward-header-reply-to
-msgid "Reply to"
+#, fuzzy
+msgid "Reply-To"
 msgstr "Freagairt gu"
 
 #: forward-header-to
@@ -757,7 +775,9 @@ msgid "Undo"
 msgstr "Neo-dhèan"
 
 #: toaster-retry
-msgid "Try again"
+#, fuzzy
+msgctxt "toaster-retry"
+msgid "Retry"
 msgstr "Feuch ris a-rithist"
 
 #: toaster-message-star
@@ -935,9 +955,16 @@ msgctxt "toaster-message-delete[other]"
 msgid "{{ n }} messages deleted"
 msgstr "Sguab thu às {{ n }} teachdaireachd"
 
+#: toaster-retryable-syncfailed
+msgid "Unable to connect to server"
+msgstr ""
+
 #: form-clear-input
 msgid "Remove text"
 msgstr "Thoir air falbh an teacsa"
+
+#~ msgid "Try again"
+#~ msgstr "Feuch ris a-rithist"
 
 #~ msgid "Please wait while I setup your account"
 #~ msgstr "Fuirich ort fhad 's a shuidhicheas mu an cunntas agad"

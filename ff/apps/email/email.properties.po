@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-27 13:05+0100\n"
+"POT-Creation-Date: 2012-12-14 01:41+0100\n"
 "PO-Revision-Date: 2012-11-28 15:34+0200\n"
 "Last-Translator: Ibrahima SARR <ibrahima.sarr@pulaagu.com>\n"
 "Language-Team: FULA LOCALIZATION\n"
@@ -12,8 +12,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Translate Toolkit 1.9.1-pre\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
 
 #: setup-app-name-header
@@ -199,6 +200,8 @@ msgid "You must enable IMAP on your Gmail account "
 msgstr "Maa kurminaa IMAP e konte maa Gmail "
 
 #: setup-gmail-imap-retry
+#, fuzzy
+msgctxt "setup-gmail-imap-retry"
 msgid "Retry"
 msgstr "Eto goɗngol"
 
@@ -672,6 +675,14 @@ msgstr "Jaabo"
 msgid "Folders"
 msgstr "Dunnge"
 
+#: account-last-synced-label
+msgid "Last sync: "
+msgstr ""
+
+#: account-never-synced
+msgid "Never"
+msgstr ""
+
 #: reply-quoting-wrote
 msgid "{name} wrote"
 msgstr "{name} winndiino"
@@ -680,6 +691,11 @@ msgstr "{name} winndiino"
 msgid "Original message"
 msgstr "Ɓatakuure asliire"
 
+#. # L10n note: These are the labels we use when displaying the envelope info for a
+#. # message that is forwarded inline.  While automatic recovery of this
+#. # information by clients is made difficult by these strings regularly being
+#. # localized, we attempt to remain consistent with apps such as Thunderbird for
+#. # at least English.
 #: forward-header-subject
 msgctxt "forward-header-subject"
 msgid "Subject"
@@ -694,8 +710,10 @@ msgctxt "forward-header-from"
 msgid "From"
 msgstr "Iwde"
 
+#. # This really wants to have the dash in it for consistency with Thunderbird
 #: forward-header-reply-to
-msgid "Reply to"
+#, fuzzy
+msgid "Reply-To"
 msgstr "Jaabo"
 
 #: forward-header-to
@@ -746,8 +764,10 @@ msgid "Undo"
 msgstr "Firtu"
 
 #: toaster-retry
-msgid "Try again"
-msgstr "Fuɗɗito"
+#, fuzzy
+msgctxt "toaster-retry"
+msgid "Retry"
+msgstr "Eto goɗngol"
 
 #: toaster-message-star
 msgctxt "toaster-message-star"
@@ -923,9 +943,16 @@ msgctxt "toaster-message-delete[other]"
 msgid "{{ n }} messages deleted"
 msgstr "ɓatakuuje {{ n }} momtaama"
 
+#: toaster-retryable-syncfailed
+msgid "Unable to connect to server"
+msgstr ""
+
 #: form-clear-input
 msgid "Remove text"
 msgstr "Momtu binndol"
+
+#~ msgid "Try again"
+#~ msgstr "Fuɗɗito"
 
 #~ msgid "Please wait while I setup your account"
 #~ msgstr "Tiiɗno sabbo tuma konte maa teeltetee"

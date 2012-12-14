@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-27 13:05+0100\n"
+"POT-Creation-Date: 2012-12-14 01:41+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,6 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 1.9.1-pre\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #: setup-app-name-header
 msgid "Mail"
@@ -194,6 +195,7 @@ msgid "You must enable IMAP on your Gmail account "
 msgstr ""
 
 #: setup-gmail-imap-retry
+msgctxt "setup-gmail-imap-retry"
 msgid "Retry"
 msgstr ""
 
@@ -665,6 +667,14 @@ msgstr ""
 msgid "Folders"
 msgstr ""
 
+#: account-last-synced-label
+msgid "Last sync: "
+msgstr ""
+
+#: account-never-synced
+msgid "Never"
+msgstr ""
+
 #: reply-quoting-wrote
 msgid "{name} wrote"
 msgstr ""
@@ -673,6 +683,11 @@ msgstr ""
 msgid "Original message"
 msgstr ""
 
+#. # L10n note: These are the labels we use when displaying the envelope info for a
+#. # message that is forwarded inline.  While automatic recovery of this
+#. # information by clients is made difficult by these strings regularly being
+#. # localized, we attempt to remain consistent with apps such as Thunderbird for
+#. # at least English.
 #: forward-header-subject
 msgctxt "forward-header-subject"
 msgid "Subject"
@@ -687,8 +702,9 @@ msgctxt "forward-header-from"
 msgid "From"
 msgstr ""
 
+#. # This really wants to have the dash in it for consistency with Thunderbird
 #: forward-header-reply-to
-msgid "Reply to"
+msgid "Reply-To"
 msgstr ""
 
 #: forward-header-to
@@ -739,7 +755,8 @@ msgid "Undo"
 msgstr ""
 
 #: toaster-retry
-msgid "Try again"
+msgctxt "toaster-retry"
+msgid "Retry"
 msgstr ""
 
 #: toaster-message-star
@@ -914,6 +931,10 @@ msgstr ""
 #: toaster-message-delete[other]
 msgctxt "toaster-message-delete[other]"
 msgid "{{ n }} messages deleted"
+msgstr ""
+
+#: toaster-retryable-syncfailed
+msgid "Unable to connect to server"
 msgstr ""
 
 #: form-clear-input
