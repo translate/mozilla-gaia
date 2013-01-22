@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-14 01:41+0100\n"
+"POT-Creation-Date: 2013-01-21 23:37+0100\n"
 "PO-Revision-Date: 2012-12-14 15:28+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1355498896.0\n"
@@ -29,19 +29,6 @@ msgstr "Ychwanegu at gysylltiad presennol"
 msgid "All"
 msgstr "Popeth"
 
-#: callAirplaneModeMessage
-msgid "To make a call you need to disable airplane mode in settings."
-msgstr "I wneud galwad rhaid analluogi'r modd awyren yn y gosodiadau."
-
-#: callAirplaneModeBtnOk
-msgctxt "callAirplaneModeBtnOk"
-msgid "OK"
-msgstr "Iawn"
-
-#: callAirplaneModeTitle
-msgid "Airplane Mode is on"
-msgstr "Mae'r Modd Awyren ymlaen"
-
 #: callLog
 msgid "Call log"
 msgstr "Cofnod galwadau"
@@ -49,10 +36,6 @@ msgstr "Cofnod galwadau"
 #: connecting
 msgid "Connecting"
 msgstr "Cysylltu"
-
-#: camera-a11y-button.aria-label
-msgid "Hang Up"
-msgstr "Gorffen"
 
 #: cancel
 msgid "Cancel"
@@ -154,23 +137,6 @@ msgstr "Dewis {{ n }}"
 msgid "Edit"
 msgstr "Golygu"
 
-#: emergencyDialogBodyBadNumber
-msgid "To make a call, the phone must be connected to a network."
-msgstr "I wneud galwad, rhaid i'r ffon fod wedi ei gysylltu a rhwydwaith."
-
-#: emergencyDialogBodyDeviceNotAccepted
-msgid "Emergency calls are not allowed by the network."
-msgstr "Nid yw'r rhwydwaith yn caniatáu galwadau argyfwng."
-
-#: emergencyDialogBtnOk
-msgctxt "emergencyDialogBtnOk"
-msgid "OK"
-msgstr "Iawn"
-
-#: emergencyDialogTitle
-msgid "No network connection"
-msgstr "Dim cysylltiad rhwydwaith"
-
 #: from
 msgid "From {{sender}}"
 msgstr "Oddi wrth {{sender}}"
@@ -231,10 +197,6 @@ msgstr "Heddiw"
 msgid "Unknown number"
 msgstr "Rhif anhysbys"
 
-#: unlock-a11y-button.aria-label
-msgid "Pick up"
-msgstr "Pigo i fyny"
-
 #: yesterday
 msgid "Yesterday"
 msgstr "Ddoe"
@@ -264,44 +226,109 @@ msgstr "Clirio'r holl destun"
 msgid "Call"
 msgstr "Galw"
 
-#. ## LOCALIZATION NOTE: contactNameWithOthers is displayed for missed calls when the number is associated with more than one contact.  {{ name }} is the name of the first contact.
+#. ## LOCALIZATION NOTE: these labels aren't displayed but they're used for acessibility
+#: hangup-a11y-button.aria-label
+msgid "Hang Up"
+msgstr "Gorffen"
+
+#: pickup-a11y-button.aria-label
+msgid "Pick up"
+msgstr "Pigo i fyny"
+
+#. ## LOCALIZATION NOTE: contactNameWithOthers is displayed for missed calls when the number is associated with more than one contact.
 #. ## LOCALIZATION NOTE: case `zero` is never used, no need to translate it.
-#: contactNameWithOthers
-msgctxt "contactNameWithOthers"
+#: contactNameWithOthersSuffix
+#, fuzzy
+msgctxt "contactNameWithOthersSuffix"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: contactNameWithOthers[zero]
-msgid "{{ name }}…"
-msgstr "{{ name }}…"
+#: contactNameWithOthersSuffix[one]
+msgctxt "contactNameWithOthersSuffix[one]"
+msgid "or {{ n }} other"
+msgstr ""
 
-#: contactNameWithOthers[one]
-msgid "{{ name }}… or one other"
-msgstr "{{ name }}… neu un arall"
+#: contactNameWithOthersSuffix[two]
+msgctxt "contactNameWithOthersSuffix[two]"
+msgid "or {{ n }} other"
+msgstr ""
 
-#: contactNameWithOthers[two]
-msgctxt "contactNameWithOthers[two]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{ name }}... neu {{ n }} arall"
+#: contactNameWithOthersSuffix[few]
+msgctxt "contactNameWithOthersSuffix[few]"
+msgid "or {{ n }} other"
+msgstr ""
 
-#: contactNameWithOthers[few]
-msgctxt "contactNameWithOthers[few]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{ name }}... neu {{ n }} arall"
+#: contactNameWithOthersSuffix[many]
+msgctxt "contactNameWithOthersSuffix[many]"
+msgid "or {{ n }} other"
+msgstr ""
 
-#: contactNameWithOthers[many]
-msgctxt "contactNameWithOthers[many]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{ name }}... neu {{ n }} arall"
-
-#: contactNameWithOthers[other]
-msgctxt "contactNameWithOthers[other]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{ name }}... neu {{ n }} arall"
+#: contactNameWithOthersSuffix[other]
+msgctxt "contactNameWithOthersSuffix[other]"
+msgid "or {{ n }} other"
+msgstr ""
 
 #: settings
 msgid "Settings"
 msgstr "Gosodiadau"
+
+#. #Call duration units
+#: callDurationMinutes
+msgid "{{ m }}:{{ s }}"
+msgstr ""
+
+#: callDurationHours
+msgid "{{ h }}:{{ m }}:{{ s}}"
+msgstr ""
+
+#~ msgid "To make a call you need to disable airplane mode in settings."
+#~ msgstr "I wneud galwad rhaid analluogi'r modd awyren yn y gosodiadau."
+
+#~ msgctxt "callAirplaneModeBtnOk"
+#~ msgid "OK"
+#~ msgstr "Iawn"
+
+#~ msgid "Airplane Mode is on"
+#~ msgstr "Mae'r Modd Awyren ymlaen"
+
+#~ msgid "To make a call, the phone must be connected to a network."
+#~ msgstr "I wneud galwad, rhaid i'r ffon fod wedi ei gysylltu a rhwydwaith."
+
+#~ msgid "Emergency calls are not allowed by the network."
+#~ msgstr "Nid yw'r rhwydwaith yn caniatáu galwadau argyfwng."
+
+#~ msgctxt "emergencyDialogBtnOk"
+#~ msgid "OK"
+#~ msgstr "Iawn"
+
+#~ msgid "No network connection"
+#~ msgstr "Dim cysylltiad rhwydwaith"
+
+#~ msgctxt "contactNameWithOthers"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgid "{{ name }}…"
+#~ msgstr "{{ name }}…"
+
+#~ msgid "{{ name }}… or one other"
+#~ msgstr "{{ name }}… neu un arall"
+
+#~ msgctxt "contactNameWithOthers[two]"
+#~ msgid "{{ name }}… or {{ n }} other"
+#~ msgstr "{{ name }}... neu {{ n }} arall"
+
+#~ msgctxt "contactNameWithOthers[few]"
+#~ msgid "{{ name }}… or {{ n }} other"
+#~ msgstr "{{ name }}... neu {{ n }} arall"
+
+#~ msgctxt "contactNameWithOthers[many]"
+#~ msgid "{{ name }}… or {{ n }} other"
+#~ msgstr "{{ name }}... neu {{ n }} arall"
+
+#~ msgctxt "contactNameWithOthers[other]"
+#~ msgid "{{ name }}… or {{ n }} other"
+#~ msgstr "{{ name }}... neu {{ n }} arall"
 
 #~ msgid "To make a call, disable Airplane Mode."
 #~ msgstr "I wneud galwad diffoddwch y Modd Awyren."

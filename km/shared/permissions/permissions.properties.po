@@ -1,9 +1,20 @@
+#. # LOCALIZATION NOTE
+#. # For each permission there are three strings:
+#. #
+#. #   * the permission name, displayed in the Settings app
+#. #   *-appRequest = displayed in a dialog box when an app requires a permission
+#. #   *-webRequest = displayed in a dialog box when a web site requires a permission
+#. #
+#. # The two latter strings are identical in English but might require a more
+#. # specific phrasing in your locale. Note that permission dialogs will display
+#. # two buttons: “Allow” and “Deny”.
+#. #
 #. extracted from locales/en-US/shared/permissions/permissions.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-14 01:41+0100\n"
+"POT-Creation-Date: 2013-01-21 23:37+0100\n"
 "PO-Revision-Date: 2012-12-17 15:02+0000\n"
 "Last-Translator: Piseth <piseth.kheng@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,168 +23,212 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1355756529.0\n"
 
-#: alarm
-msgid "Alarm"
-msgstr "សំឡេង​រោទ៍"
-
-#: alarms
-msgid "Alarms"
-msgstr "សំឡេង​រោទ៍"
-
-#: attention
-msgid "Attention screen"
-msgstr "អេក្រង់​​ចាប់​អារម្មណ័"
-
-#: background
-msgctxt "background"
-msgid "Background service"
-msgstr "សេវាកម្ម​ផ្ទៃ​ខាងក្រោយ"
-
-#: backgroundservice
-msgctxt "backgroundservice"
-msgid "Background service"
-msgstr "សេវាកម្ម​ផ្ទៃ​ខាងក្រោយ"
-
-#: bluetooth
-msgid "Bluetooth"
-msgstr "ប៊្លូធូស"
-
-#: browser
-msgid "Browser"
-msgstr "កម្មវិធី​អ៊ីនធឺណិត"
-
-#: camera
-msgctxt "camera"
-msgid "Camera"
-msgstr "កាមេរ៉ា"
-
-#: contacts
+#: perm-contacts
 msgid "Contacts"
 msgstr "ទំនាក់ទំនង"
 
-#: content-camera
-msgctxt "content-camera"
-msgid "Camera"
-msgstr "កាមេរ៉ា"
+#: perm-contacts-appRequest
+msgid "{{app}} would like to access your contact list."
+msgstr ""
 
-#: deprecated-hwvideo
-msgid "Deprecated HWVideo"
-msgstr "វីដេអូHW​ដែល​បដិសេធ"
+#: perm-contacts-webRequest
+msgid "{{site}} would like to access your contact list."
+msgstr ""
 
-#: desktop-notification
+#: perm-desktop-notification
 msgid "Notifications"
 msgstr "ការ​ជូនដំណឹង"
 
-#: device-storage:apps
-msgid "Apps storage"
-msgstr "កន្លែង​ផ្ទុក​កម្មវិធី"
+#: perm-desktop-notification-appRequest
+msgid "{{app}} would like to display notifications."
+msgstr ""
 
-#: device-storage:music
-msgid "Music storage"
+#: perm-desktop-notification-webRequest
+msgid "{{site}} would like to display notifications."
+msgstr ""
+
+#: perm-device-storage-music
+#, fuzzy
+msgid "Music Storage"
 msgstr "កន្លែង​ផ្ទុក​តន្ត្រី"
 
-#: device-storage:pictures
-msgid "Pictures storage"
-msgstr "កន្លែង​ផ្ទុក​រូបភាព"
+#: perm-device-storage-music-appRequest
+msgid "{{app}} would like to access your music."
+msgstr ""
 
-#: device-storage:videos
-msgid "Videos"
-msgstr "វីដេអូ"
+#: perm-device-storage-music-webRequest
+msgid "{{site}} would like to access your music."
+msgstr ""
 
-#: embed-apps
-msgid "Embed apps"
-msgstr "កម្មវិធី​ដែល​​បាន​បង្កប់"
+#: perm-device-storage-pictures
+msgid "Image Storage"
+msgstr ""
 
-#: fmradio
-msgctxt "fmradio"
+#: perm-device-storage-pictures-appRequest
+msgid "{{app}} would like to access your images."
+msgstr ""
+
+#: perm-device-storage-pictures-webRequest
+msgid "{{site}} would like to access your images."
+msgstr ""
+
+#: perm-device-storage-sdcard
+msgid "Memory Card Storage"
+msgstr ""
+
+#: perm-device-storage-sdcard-appRequest
+msgid "{{app}} would like to access your memory card."
+msgstr ""
+
+#: perm-device-storage-sdcard-webRequest
+msgid "{{site}} would like to access your memory card."
+msgstr ""
+
+#: perm-device-storage-videos
+msgid "Video Storage"
+msgstr ""
+
+#: perm-device-storage-videos-appRequest
+msgid "{{app}} would like to access your videos."
+msgstr ""
+
+#: perm-device-storage-videos-webRequest
+msgid "{{site}} would like to access your videos."
+msgstr ""
+
+#: perm-fmradio
+#, fuzzy
 msgid "FM Radio"
 msgstr "វិទ្យុ FM"
 
-#: geolocation
+#: perm-fmradio-appRequest
+msgid "{{app}} would like to use the FM Radio."
+msgstr ""
+
+#: perm-fmradio-webRequest
+msgid "{{site}} would like to use the FM Radio."
+msgstr ""
+
+#: perm-geolocation
 msgid "Geolocation"
 msgstr "ទីតាំង​ភូមិសាស្ដ្រ"
 
-#: idle
-msgid "Idle"
-msgstr "នៅ​ស្ងៀម"
+#: perm-geolocation-appRequest
+msgid "{{app}} would like to know your location."
+msgstr ""
 
-#: mobileconnection
-msgid "Mobile connection"
-msgstr "ការ​ភ្ជាប់​ទូរស័ព្ទ​ចល័ត"
+#: perm-geolocation-webRequest
+msgid "{{site}} would like to know your location."
+msgstr ""
 
-#: mozApps
-msgid "Apps"
-msgstr "កម្មវិធី"
+#~ msgid "Alarm"
+#~ msgstr "សំឡេង​រោទ៍"
 
-#: mozFM
-msgctxt "mozFM"
-msgid "FM Radio"
-msgstr "វិទ្យុ FM"
+#~ msgid "Alarms"
+#~ msgstr "សំឡេង​រោទ៍"
 
-#: network-event
-msgid "Network events"
-msgstr "ព្រឹត្តិការណ៍​បណ្ដាញ"
+#~ msgid "Attention screen"
+#~ msgstr "អេក្រង់​​ចាប់​អារម្មណ័"
 
-#: networkstats-manager
-msgid "Network usage"
-msgstr "ការ​ប្រើប្រាស់​បណ្ដាញ"
+#~ msgctxt "background"
+#~ msgid "Background service"
+#~ msgstr "សេវាកម្ម​ផ្ទៃ​ខាងក្រោយ"
 
-#: permissions
-msgid "Permissions management"
-msgstr "ការ​គ្រប់គ្រង​សិទ្ធិ​អនុញ្ញាត"
+#~ msgctxt "backgroundservice"
+#~ msgid "Background service"
+#~ msgstr "សេវាកម្ម​ផ្ទៃ​ខាងក្រោយ"
 
-#: power
-msgid "Power"
-msgstr "ថាមពល"
+#~ msgid "Bluetooth"
+#~ msgstr "ប៊្លូធូស"
 
-#: settings
-msgid "Settings management"
-msgstr "គ្រប់គ្រងការកំណត់"
+#~ msgid "Browser"
+#~ msgstr "កម្មវិធី​អ៊ីនធឺណិត"
 
-#: sms
-msgid "SMS"
-msgstr "SMS"
+#~ msgctxt "camera"
+#~ msgid "Camera"
+#~ msgstr "កាមេរ៉ា"
 
-#: storage
-msgid "Storage"
-msgstr "កន្លែង​ផ្ទុក"
+#~ msgctxt "content-camera"
+#~ msgid "Camera"
+#~ msgstr "កាមេរ៉ា"
 
-#: systemXHR
-msgid "System XHR"
-msgstr "ប្រព័ន្ធ XHR"
+#~ msgid "Deprecated HWVideo"
+#~ msgstr "វីដេអូHW​ដែល​បដិសេធ"
 
-#: tcp-socket
-msgid "TCP socket"
-msgstr "រន្ធ TCP"
+#~ msgid "Apps storage"
+#~ msgstr "កន្លែង​ផ្ទុក​កម្មវិធី"
 
-#: telephony
-msgid "Telephony"
-msgstr "ទូរស័ព្ទ"
+#~ msgid "Pictures storage"
+#~ msgstr "កន្លែង​ផ្ទុក​រូបភាព"
 
-#: time
-msgid "Time"
-msgstr "ពេលវេលា"
+#~ msgid "Videos"
+#~ msgstr "វីដេអូ"
 
-#: voicemail
-msgid "Voicemail"
-msgstr "សារ​ជា​សំឡេង"
+#~ msgid "Embed apps"
+#~ msgstr "កម្មវិធី​ដែល​​បាន​បង្កប់"
 
-#: webapps-manage
-msgid "Apps management"
-msgstr "ការ​គ្រប់គ្រង​កម្មវិធី"
+#~ msgid "Idle"
+#~ msgstr "នៅ​ស្ងៀម"
 
-#: wifi-manage
-msgid "Wi-Fi management"
-msgstr "ការ​គ្រប់គ្រង Wi-Fi"
+#~ msgid "Mobile connection"
+#~ msgstr "ការ​ភ្ជាប់​ទូរស័ព្ទ​ចល័ត"
 
-#: wifi
-msgid "Wi-Fi"
-msgstr "Wi-Fi"
+#~ msgid "Apps"
+#~ msgstr "កម្មវិធី"
+
+#~ msgctxt "mozFM"
+#~ msgid "FM Radio"
+#~ msgstr "វិទ្យុ FM"
+
+#~ msgid "Network events"
+#~ msgstr "ព្រឹត្តិការណ៍​បណ្ដាញ"
+
+#~ msgid "Network usage"
+#~ msgstr "ការ​ប្រើប្រាស់​បណ្ដាញ"
+
+#~ msgid "Permissions management"
+#~ msgstr "ការ​គ្រប់គ្រង​សិទ្ធិ​អនុញ្ញាត"
+
+#~ msgid "Power"
+#~ msgstr "ថាមពល"
+
+#~ msgid "Settings management"
+#~ msgstr "គ្រប់គ្រងការកំណត់"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "Storage"
+#~ msgstr "កន្លែង​ផ្ទុក"
+
+#~ msgid "System XHR"
+#~ msgstr "ប្រព័ន្ធ XHR"
+
+#~ msgid "TCP socket"
+#~ msgstr "រន្ធ TCP"
+
+#~ msgid "Telephony"
+#~ msgstr "ទូរស័ព្ទ"
+
+#~ msgid "Time"
+#~ msgstr "ពេលវេលា"
+
+#~ msgid "Voicemail"
+#~ msgstr "សារ​ជា​សំឡេង"
+
+#~ msgid "Apps management"
+#~ msgstr "ការ​គ្រប់គ្រង​កម្មវិធី"
+
+#~ msgid "Wi-Fi management"
+#~ msgstr "ការ​គ្រប់គ្រង Wi-Fi"
+
+#~ msgid "Wi-Fi"
+#~ msgstr "Wi-Fi"
 
 #~ msgctxt "mozBluetooth"
 #~ msgid "Bluetooth"

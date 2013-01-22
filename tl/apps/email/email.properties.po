@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-14 01:41+0100\n"
+"POT-Creation-Date: 2013-01-21 23:37+0100\n"
 "PO-Revision-Date: 2013-01-04 16:51+0000\n"
 "Last-Translator: Joel <joel.m.encinas@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1357318276.0\n"
@@ -33,36 +33,40 @@ msgid "To send and receive email, you will need to set up an account."
 msgstr ""
 "Para makapagpadala at makatanggap ng email, kailangang gumawa ng account."
 
-#: setup-account-header
-msgid "New mail account setup"
-msgstr "Setup para sa bagong mail account"
+#. # Title of the account setup card where the user enters their display name,
+#. # e-mail address, and password.
+#: setup-account-header3
+msgid "New account"
+msgstr ""
 
 #: setup-info-header
 msgid "Your login information"
 msgstr "Ang iyong login information"
 
-#: setup-hotmail-account
-msgid "Hotmail account"
-msgstr "Account sa Hotmail"
-
-#: setup-gmail-account
-msgid "Gmail account"
-msgstr "Account sa Gmail"
-
-#: setup-other-email
-msgid "Other email"
-msgstr "Ibang email"
-
-#: setup-info-name-placeholder
-msgid "Name"
-msgstr "Pangalan"
-
-#: setup-info-email-placeholder
-msgid "Email address"
+#. # The placeholder for the display name of the user that will be displayed in the
+#. # account setup screen input box for the display name until they enter any text
+#. # in the box.  When you send an e-mail, the "From" header contains the user's
+#. # display name ("John Doe") as well as the e-mail address
+#. # ("john.doe@example.com").  In the future this input box will be labeled, but
+#. # it is currently unlabeled because of screen real estate concerns.
+#: setup-info-name.placeholder
+msgid "Your name"
 msgstr ""
 
-#: setup-info-password-placeholder
-msgctxt "setup-info-password-placeholder"
+#. # The placeholder for the user's e-mail address that will be displayed in the
+#. # account setup screen input box for the e-mail address until they enter any
+#. # text in the box.  The value will be used to configure the e-mail account.
+#: setup-info-email.placeholder
+msgid "someone@example.com"
+msgstr ""
+
+#. # The placeholder for the user's password that will be displayed in the account
+#. # setup screen input box for the password until they enter any text in the box.
+#. # The value will be used to configure the e-mail account and saved for future
+#. # usage.
+#: setup-info-password.placeholder
+#, fuzzy
+msgctxt "setup-info-password.placeholder"
 msgid "Password"
 msgstr "Salitang-susi"
 
@@ -76,8 +80,9 @@ msgid "Please wait while your account is set up"
 msgstr "Pahintay habang nag-set up ang iyong account"
 
 #: setup-completed-header
+#, fuzzy
 msgid "Mail account setup"
-msgstr ""
+msgstr "Setup para sa bagong mail account"
 
 #: setup-completed-label
 msgid "All done!"
@@ -91,32 +96,110 @@ msgstr "Magdagadag ng isa pang account"
 msgid "Continue to Mail"
 msgstr "Tumuloy sa Mail"
 
-#: setup-error-bad-user-or-pass
-msgid "Invalid username or password"
-msgstr "Maling username o password"
+#. # The error for when the user tries to create an account without a network
+#. # connection active.
+#: setup-error-offline
+msgid "This device is currently offline. Connect to a network and try again."
+msgstr ""
 
+#. # The error for either a bad username or a bad password.  For security reasons,
+#. # servers try not to distinguish between the two which is why we also cannot
+#. # tell them apart either.  Also, if the user made a typo, they could have made
+#. # it in either place.
+#: setup-error-bad-user-or-pass2
+msgid "Invalid username or password. Check for typos."
+msgstr ""
+
+#. # The error for a user having the correct username and password, but the mail
+#. # server explicitly indicates they don't have permission to talk to the mail
+#. # server.  This is currently only expected from ActiveSync servers; situations
+#. # like gmail over IMAP indicating that IMAP is disabled for the account or
+#. # domain have their own error code: setup-error-imap-disabled.
 #: setup-error-not-authorized
 msgid "The server said you're not authorized to create an account"
 msgstr ""
 
-#: setup-error-unknown
-msgid "An unknown error occurred"
-msgstr "May pagkakamaling nangyari"
+#. # The fallback error; if we don't have a better error, we report this.
+#: setup-error-unknown2
+msgid ""
+"An unknown error occurred. Check your network connection or try the manual "
+"configuration option."
+msgstr ""
 
+#. # The error for Gmail accounts where 2-factor authentication (where you receive
+#. # a text message on your phone or run a special app) is enabled, and so the
+#. # user needs to create and use an application specific password to allow us to
+#. # talk to the server.
 #: setup-error-needs-app-pass
 msgid ""
 "You must use an application specific password for two-factor Gmail accounts"
 msgstr ""
 
+#. # The error for Gmail accounts where IMAP is not enabled.  This can occur
+#. # for individual users where they have disabled IMAP from the settings UI.
+#. # This can also occur for apps-for-domains where the domain is not configured
+#. # to support IMAP.
 #: setup-error-imap-disabled
+#, fuzzy
 msgid "You must enable IMAP for your Gmail account"
+msgstr "Kailangan mo ma-enable ang IMAP ng Gmail account mo"
+
+#. # The error for when we are able to contact a server that should be the mail
+#. # server but we are unable to establish a secure connection.
+#: setup-error-bad-security
+msgid ""
+"Unable to establish a secure connection with \"{{server}}\". There may be a "
+"problem with your network or the server."
 msgstr ""
 
-#: setup-manual-config
-msgid "Manually set up account"
+#. # The error for when we try to contact a server but see no indication of a
+#. # response before we give up because of a timeout.
+#: setup-error-unresponsive-server
+msgid ""
+"Unable to establish a connection with \"{{server}}\". There may be a problem "
+"with the network."
+msgstr ""
+
+#. # The error for when we able to establish a (secure) connection with the server,
+#. # but there is some type of failure talking to the server that isn't covered by
+#. # other errors.  Hopefully this is just a temporary problem on the server, but
+#. # it could also be a fundamental incompatibility between our software and the
+#. # server's software.
+#: setup-error-server-problem
+msgid "There is a problem with the server \"{{server}}\". Try again later."
+msgstr ""
+
+#. # The error for when we are trying to figure out the right server settings for
+#. # an account based on the e-mail address the user typed in during configuration,
+#. # but we can't find the right settings.  This is either because the user made a
+#. # typo and so we are looking for configuration data that does not exist, there
+#. # were network failures trying to look the information up, or the information is
+#. # not available.
+#: setup-error-no-config-info
+msgid ""
+"Unable to automatically configure your account. Correct your e-mail address "
+"or try the manual configuration option."
+msgstr ""
+
+#. # The error for when the user is trying to set up an account with a server that
+#. # currently indicates it is offline for maintenance.
+#: setup-error-server-maintenance
+msgid "The server \"{{server}}\" is offline for maintenance. Try again later."
+msgstr ""
+
+#: setup-manual-prompt
+msgid ""
+"Touch \"next\" to continue, or, if you know all of your server's details, you "
+"can manually set up the account:"
+msgstr ""
+
+#: setup-manual-config2
+msgctxt "setup-manual-config2"
+msgid "Manual setup"
 msgstr ""
 
 #: setup-manual-config-header
+msgctxt "setup-manual-config-header"
 msgid "Manual setup"
 msgstr ""
 
@@ -141,9 +224,10 @@ msgid "ActiveSync settings"
 msgstr ""
 
 #: setup-manual-next
+#, fuzzy
 msgctxt "setup-manual-next"
 msgid "Next"
-msgstr ""
+msgstr "Susunod"
 
 #: setup-manual-socket
 msgid "Socket Type"
@@ -153,17 +237,17 @@ msgstr ""
 msgid "SSL"
 msgstr ""
 
-#: setup-manual-hostname-placeholder
-msgctxt "setup-manual-hostname-placeholder"
+#: setup-manual-hostname.placeholder
+msgctxt "setup-manual-hostname.placeholder"
 msgid "Hostname"
 msgstr ""
 
-#: setup-manual-port-placeholder
+#: setup-manual-port.placeholder
 msgid "Port Number"
 msgstr ""
 
-#: setup-manual-username-placeholder
-msgctxt "setup-manual-username-placeholder"
+#: setup-manual-username.placeholder
+msgctxt "setup-manual-username.placeholder"
 msgid "Username"
 msgstr ""
 
@@ -173,6 +257,10 @@ msgstr ""
 
 #: setup-bad-password
 msgid "We could not sign in to the server. Maybe your password is wrong?"
+msgstr ""
+
+#: setup-new-password.placeholder
+msgid "New password"
 msgstr ""
 
 #: setup-fix-password
@@ -208,10 +296,6 @@ msgstr "Subukan muli"
 #: settings-main-header
 msgid "Mail settings"
 msgstr "settings ng Mail"
-
-#: settings-close
-msgid "Close"
-msgstr ""
 
 #: settings-done
 msgid "Done"
@@ -348,13 +432,10 @@ msgid "Username"
 msgstr ""
 
 #: settings-password
+#, fuzzy
 msgctxt "settings-password"
 msgid "Password"
-msgstr ""
-
-#: settings-new-password
-msgid "New password"
-msgstr ""
+msgstr "Salitang-susi"
 
 #: settings-save
 msgid "Save"
@@ -403,19 +484,22 @@ msgid "Accounts"
 msgstr ""
 
 #: envelope-from
+#, fuzzy
 msgctxt "envelope-from"
 msgid "From"
-msgstr ""
+msgstr "Mula kay"
 
 #: envelope-to
+#, fuzzy
 msgctxt "envelope-to"
 msgid "To"
-msgstr ""
+msgstr "Para kay"
 
 #: envelope-cc
+#, fuzzy
 msgctxt "envelope-cc"
 msgid "Cc"
-msgstr ""
+msgstr "Kopya kay"
 
 #: envelope-bcc
 msgid "Bcc"
@@ -478,6 +562,10 @@ msgstr ""
 #: message-attachment-view.textContent
 msgid "View"
 msgstr "Tingnan"
+
+#: message-no-subject
+msgid "(no subject)"
+msgstr ""
 
 #: message-edit-menu-star
 msgid "Star"
@@ -552,13 +640,15 @@ msgid "{[ plural(n) ]}"
 msgstr ""
 
 #: message-download-images[one]
+#, fuzzy
 msgid "This email contains one image. Click to download."
-msgstr ""
+msgstr "May lamang ng mga {{ n }} litrato. I-click para i-download."
 
 #: message-download-images[two]
+#, fuzzy
 msgctxt "message-download-images[two]"
 msgid "This email contains {{ n }} images. Click to download."
-msgstr ""
+msgstr "May lamang ng mga {{ n }} litrato. I-click para i-download."
 
 #: message-download-images[few]
 msgctxt "message-download-images[few]"
@@ -566,14 +656,16 @@ msgid "This email contains {{ n }} images. Click to download."
 msgstr "May lamang ng mga {{ n }} litrato. I-click para i-download."
 
 #: message-download-images[many]
+#, fuzzy
 msgctxt "message-download-images[many]"
 msgid "This email contains {{ n }} images. Click to download."
-msgstr ""
+msgstr "May lamang ng mga {{ n }} litrato. I-click para i-download."
 
 #: message-download-images[other]
+#, fuzzy
 msgctxt "message-download-images[other]"
 msgid "This email contains {{ n }} images. Click to download."
-msgstr ""
+msgstr "May lamang ng mga {{ n }} litrato. I-click para i-download."
 
 #: message-show-external-images
 msgid "Show external images"
@@ -590,8 +682,9 @@ msgid "{[ plural(n) ]}"
 msgstr ""
 
 #: message-multiedit-delete-confirm[one]
+#, fuzzy
 msgid "Delete this email message?"
-msgstr ""
+msgstr "Burahin ang email message?"
 
 #: message-multiedit-delete-confirm[two]
 msgctxt "message-multiedit-delete-confirm[two]"
@@ -614,14 +707,16 @@ msgid "Delete {{ n }} email messages?"
 msgstr ""
 
 #: message-search-from
+#, fuzzy
 msgctxt "message-search-from"
 msgid "From"
-msgstr ""
+msgstr "Mula kay"
 
 #: message-search-to
+#, fuzzy
 msgctxt "message-search-to"
 msgid "To"
-msgstr ""
+msgstr "Para kay"
 
 #: message-search-subject
 msgctxt "message-search-subject"
@@ -807,24 +902,28 @@ msgid "1 message flag removed"
 msgstr ""
 
 #: toaster-message-unstar[two]
+#, fuzzy
 msgctxt "toaster-message-unstar[two]"
 msgid "{{ n }} messages flag removed"
-msgstr ""
+msgstr "{{ n }} mensaheng binura"
 
 #: toaster-message-unstar[few]
+#, fuzzy
 msgctxt "toaster-message-unstar[few]"
 msgid "{{ n }} messages flag removed"
-msgstr ""
+msgstr "{{ n }} mensaheng binura"
 
 #: toaster-message-unstar[many]
+#, fuzzy
 msgctxt "toaster-message-unstar[many]"
 msgid "{{ n }} messages flag removed"
-msgstr ""
+msgstr "{{ n }} mensaheng binura"
 
 #: toaster-message-unstar[other]
+#, fuzzy
 msgctxt "toaster-message-unstar[other]"
 msgid "{{ n }} messages flag removed"
-msgstr ""
+msgstr "{{ n }} mensaheng binura"
 
 #: toaster-message-read
 msgctxt "toaster-message-read"
@@ -894,24 +993,28 @@ msgid "1 message moved"
 msgstr ""
 
 #: toaster-message-move[two]
+#, fuzzy
 msgctxt "toaster-message-move[two]"
 msgid "{{ n }} messages moved"
-msgstr ""
+msgstr "{{ n }} mensaheng binura"
 
 #: toaster-message-move[few]
+#, fuzzy
 msgctxt "toaster-message-move[few]"
 msgid "{{ n }} messages moved"
-msgstr ""
+msgstr "{{ n }} mensaheng binura"
 
 #: toaster-message-move[many]
+#, fuzzy
 msgctxt "toaster-message-move[many]"
 msgid "{{ n }} messages moved"
-msgstr ""
+msgstr "{{ n }} mensaheng binura"
 
 #: toaster-message-move[other]
+#, fuzzy
 msgctxt "toaster-message-move[other]"
 msgid "{{ n }} messages moved"
-msgstr ""
+msgstr "{{ n }} mensaheng binura"
 
 #: toaster-message-delete
 msgctxt "toaster-message-delete"
@@ -928,14 +1031,16 @@ msgid "{{ n }} messages deleted"
 msgstr "{{ n }} mensaheng binura"
 
 #: toaster-message-delete[few]
+#, fuzzy
 msgctxt "toaster-message-delete[few]"
 msgid "{{ n }} messages deleted"
-msgstr ""
+msgstr "{{ n }} mensaheng binura"
 
 #: toaster-message-delete[many]
+#, fuzzy
 msgctxt "toaster-message-delete[many]"
 msgid "{{ n }} messages deleted"
-msgstr ""
+msgstr "{{ n }} mensaheng binura"
 
 #: toaster-message-delete[other]
 msgctxt "toaster-message-delete[other]"
@@ -949,3 +1054,21 @@ msgstr "Hindi makakonekta sa server"
 #: form-clear-input
 msgid "Remove text"
 msgstr "Tanggalin ang text"
+
+#~ msgid "Hotmail account"
+#~ msgstr "Account sa Hotmail"
+
+#~ msgid "Gmail account"
+#~ msgstr "Account sa Gmail"
+
+#~ msgid "Other email"
+#~ msgstr "Ibang email"
+
+#~ msgid "Name"
+#~ msgstr "Pangalan"
+
+#~ msgid "Invalid username or password"
+#~ msgstr "Maling username o password"
+
+#~ msgid "An unknown error occurred"
+#~ msgstr "May pagkakamaling nangyari"

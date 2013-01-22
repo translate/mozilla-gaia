@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-14 01:41+0100\n"
+"POT-Creation-Date: 2013-01-21 23:37+0100\n"
 "PO-Revision-Date: 2012-12-30 15:09+0000\n"
 "Last-Translator: Piseth <piseth.kheng@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1356880171.0\n"
@@ -30,36 +30,40 @@ msgstr "អ្នក​មិន​បាន​កំណត់​ការ​ផ
 msgid "To send and receive email, you will need to set up an account."
 msgstr "ដើម្បី​ផ្ញើ និង​ទទួល​អ៊ីមែល អ្នក​​ត្រូវ​បង្កើត​គណនី​មួយ។"
 
-#: setup-account-header
-msgid "New mail account setup"
-msgstr "ការ​បង្កើត​គណនី​អ៊ីមែល​ថ្មី"
+#. # Title of the account setup card where the user enters their display name,
+#. # e-mail address, and password.
+#: setup-account-header3
+msgid "New account"
+msgstr ""
 
 #: setup-info-header
 msgid "Your login information"
 msgstr "ព័ត៌មាន​ការ​ចូល​របស់​អ្នក"
 
-#: setup-hotmail-account
-msgid "Hotmail account"
-msgstr "គណនី Hotmail"
+#. # The placeholder for the display name of the user that will be displayed in the
+#. # account setup screen input box for the display name until they enter any text
+#. # in the box.  When you send an e-mail, the "From" header contains the user's
+#. # display name ("John Doe") as well as the e-mail address
+#. # ("john.doe@example.com").  In the future this input box will be labeled, but
+#. # it is currently unlabeled because of screen real estate concerns.
+#: setup-info-name.placeholder
+msgid "Your name"
+msgstr ""
 
-#: setup-gmail-account
-msgid "Gmail account"
-msgstr "គណនី Gmail"
+#. # The placeholder for the user's e-mail address that will be displayed in the
+#. # account setup screen input box for the e-mail address until they enter any
+#. # text in the box.  The value will be used to configure the e-mail account.
+#: setup-info-email.placeholder
+msgid "someone@example.com"
+msgstr ""
 
-#: setup-other-email
-msgid "Other email"
-msgstr "អ៊ីមែល​ផ្សេងៗ"
-
-#: setup-info-name-placeholder
-msgid "Name"
-msgstr "ឈ្មោះ"
-
-#: setup-info-email-placeholder
-msgid "Email address"
-msgstr "អាសយដ្ឋាន​អ៊ីមែល"
-
-#: setup-info-password-placeholder
-msgctxt "setup-info-password-placeholder"
+#. # The placeholder for the user's password that will be displayed in the account
+#. # setup screen input box for the password until they enter any text in the box.
+#. # The value will be used to configure the e-mail account and saved for future
+#. # usage.
+#: setup-info-password.placeholder
+#, fuzzy
+msgctxt "setup-info-password.placeholder"
 msgid "Password"
 msgstr "ពាក្យ​សម្ងាត់"
 
@@ -88,18 +92,40 @@ msgstr "បន្ថែម​គណនី​ផ្សេង"
 msgid "Continue to Mail"
 msgstr "បន្ត​​ទៅ​​អ៊ីមែល"
 
-#: setup-error-bad-user-or-pass
-msgid "Invalid username or password"
-msgstr "ឈ្មោះ​អ្នក​ប្រើ ឬ​ពាក្យ​សម្ងាត់​មិន​ត្រឹមត្រូវ"
+#. # The error for when the user tries to create an account without a network
+#. # connection active.
+#: setup-error-offline
+msgid "This device is currently offline. Connect to a network and try again."
+msgstr ""
 
+#. # The error for either a bad username or a bad password.  For security reasons,
+#. # servers try not to distinguish between the two which is why we also cannot
+#. # tell them apart either.  Also, if the user made a typo, they could have made
+#. # it in either place.
+#: setup-error-bad-user-or-pass2
+msgid "Invalid username or password. Check for typos."
+msgstr ""
+
+#. # The error for a user having the correct username and password, but the mail
+#. # server explicitly indicates they don't have permission to talk to the mail
+#. # server.  This is currently only expected from ActiveSync servers; situations
+#. # like gmail over IMAP indicating that IMAP is disabled for the account or
+#. # domain have their own error code: setup-error-imap-disabled.
 #: setup-error-not-authorized
 msgid "The server said you're not authorized to create an account"
 msgstr "ម៉ាស៊ីន​មេ​ប្រាប់​ថា​អ្នក​មិន​ត្រូវ​បាន​​អនុញ្ញាត​ឲ្យ​បង្កើត​គណណី​ទេ"
 
-#: setup-error-unknown
-msgid "An unknown error occurred"
-msgstr "មាន​កំហុស​មិន​ស្គាល់​បាន​កើត​ឡើង"
+#. # The fallback error; if we don't have a better error, we report this.
+#: setup-error-unknown2
+msgid ""
+"An unknown error occurred. Check your network connection or try the manual "
+"configuration option."
+msgstr ""
 
+#. # The error for Gmail accounts where 2-factor authentication (where you receive
+#. # a text message on your phone or run a special app) is enabled, and so the
+#. # user needs to create and use an application specific password to allow us to
+#. # talk to the server.
 #: setup-error-needs-app-pass
 msgid ""
 "You must use an application specific password for two-factor Gmail accounts"
@@ -107,15 +133,72 @@ msgstr ""
 "អ្នក​ត្រូវតែ​ប្រើ​ពាក្យ​សម្ងាត់​តាម​កម្មវិធី​ជាក់​លាក់​សម្រាប់​គណនី Gmail "
 "ដែល​មាន​ពីរ​កត្តា"
 
+#. # The error for Gmail accounts where IMAP is not enabled.  This can occur
+#. # for individual users where they have disabled IMAP from the settings UI.
+#. # This can also occur for apps-for-domains where the domain is not configured
+#. # to support IMAP.
 #: setup-error-imap-disabled
 msgid "You must enable IMAP for your Gmail account"
 msgstr "អ្នក​ត្រូវតែ​បើក IMAP សម្រាប់​គណនី Gmail របស់​អ្នក"
 
-#: setup-manual-config
-msgid "Manually set up account"
-msgstr "ការ​បង្កើត​គណនី​ដោយ​ដៃ"
+#. # The error for when we are able to contact a server that should be the mail
+#. # server but we are unable to establish a secure connection.
+#: setup-error-bad-security
+msgid ""
+"Unable to establish a secure connection with \"{{server}}\". There may be a "
+"problem with your network or the server."
+msgstr ""
+
+#. # The error for when we try to contact a server but see no indication of a
+#. # response before we give up because of a timeout.
+#: setup-error-unresponsive-server
+msgid ""
+"Unable to establish a connection with \"{{server}}\". There may be a problem "
+"with the network."
+msgstr ""
+
+#. # The error for when we able to establish a (secure) connection with the server,
+#. # but there is some type of failure talking to the server that isn't covered by
+#. # other errors.  Hopefully this is just a temporary problem on the server, but
+#. # it could also be a fundamental incompatibility between our software and the
+#. # server's software.
+#: setup-error-server-problem
+msgid "There is a problem with the server \"{{server}}\". Try again later."
+msgstr ""
+
+#. # The error for when we are trying to figure out the right server settings for
+#. # an account based on the e-mail address the user typed in during configuration,
+#. # but we can't find the right settings.  This is either because the user made a
+#. # typo and so we are looking for configuration data that does not exist, there
+#. # were network failures trying to look the information up, or the information is
+#. # not available.
+#: setup-error-no-config-info
+msgid ""
+"Unable to automatically configure your account. Correct your e-mail address "
+"or try the manual configuration option."
+msgstr ""
+
+#. # The error for when the user is trying to set up an account with a server that
+#. # currently indicates it is offline for maintenance.
+#: setup-error-server-maintenance
+msgid "The server \"{{server}}\" is offline for maintenance. Try again later."
+msgstr ""
+
+#: setup-manual-prompt
+msgid ""
+"Touch \"next\" to continue, or, if you know all of your server's details, you "
+"can manually set up the account:"
+msgstr ""
+
+#: setup-manual-config2
+#, fuzzy
+msgctxt "setup-manual-config2"
+msgid "Manual setup"
+msgstr "ការ​បង្កើត​ដោយ​ដៃ"
 
 #: setup-manual-config-header
+#, fuzzy
+msgctxt "setup-manual-config-header"
 msgid "Manual setup"
 msgstr "ការ​បង្កើត​ដោយ​ដៃ"
 
@@ -152,17 +235,19 @@ msgstr "ប្រភេទ​រន្ធ"
 msgid "SSL"
 msgstr "SSL"
 
-#: setup-manual-hostname-placeholder
-msgctxt "setup-manual-hostname-placeholder"
+#: setup-manual-hostname.placeholder
+#, fuzzy
+msgctxt "setup-manual-hostname.placeholder"
 msgid "Hostname"
 msgstr "ឈ្មោះ​ម៉ាស៊ីន​បង្ហោះ"
 
-#: setup-manual-port-placeholder
+#: setup-manual-port.placeholder
 msgid "Port Number"
 msgstr "លេខ​ច្រក"
 
-#: setup-manual-username-placeholder
-msgctxt "setup-manual-username-placeholder"
+#: setup-manual-username.placeholder
+#, fuzzy
+msgctxt "setup-manual-username.placeholder"
 msgid "Username"
 msgstr "ឈ្មោះ​អ្នក​ប្រើ"
 
@@ -175,6 +260,10 @@ msgid "We could not sign in to the server. Maybe your password is wrong?"
 msgstr ""
 "យើង​មិន​អាច​ចូល​ទៅ​កាន់​ម៉ាស៊ីន​មេ​បាន​ទេ។ "
 "ប្រហែល​ពាក្យ​សម្ងាត់​របស់​អ្នក​មិន​ត្រឹមត្រូវ?"
+
+#: setup-new-password.placeholder
+msgid "New password"
+msgstr "ពាក្យ​សម្ងាត់​ថ្មី"
 
 #: setup-fix-password
 msgid "Retry with new password"
@@ -208,10 +297,6 @@ msgstr "ព្យាយាម​ម្តង​ទៀត"
 #: settings-main-header
 msgid "Mail settings"
 msgstr "ការ​កំណត់​សំបុត្រ"
-
-#: settings-close
-msgid "Close"
-msgstr "បិទ"
 
 #: settings-done
 msgid "Done"
@@ -351,10 +436,6 @@ msgctxt "settings-password"
 msgid "Password"
 msgstr "ពាក្យ​សម្ងាត់"
 
-#: settings-new-password
-msgid "New password"
-msgstr "ពាក្យ​សម្ងាត់​ថ្មី"
-
 #: settings-save
 msgid "Save"
 msgstr "រក្សា​​ទុក"
@@ -477,6 +558,10 @@ msgstr "{{kilobytes}}K"
 #: message-attachment-view.textContent
 msgid "View"
 msgstr "មើល"
+
+#: message-no-subject
+msgid "(no subject)"
+msgstr ""
 
 #: message-edit-menu-star
 msgid "Star"
@@ -948,3 +1033,33 @@ msgstr "មិន​អាច​ភ្ជាប់​ទៅ​កាន់​ម
 #: form-clear-input
 msgid "Remove text"
 msgstr "យក​អត្ថបទ​ចេញ"
+
+#~ msgid "New mail account setup"
+#~ msgstr "ការ​បង្កើត​គណនី​អ៊ីមែល​ថ្មី"
+
+#~ msgid "Hotmail account"
+#~ msgstr "គណនី Hotmail"
+
+#~ msgid "Gmail account"
+#~ msgstr "គណនី Gmail"
+
+#~ msgid "Other email"
+#~ msgstr "អ៊ីមែល​ផ្សេងៗ"
+
+#~ msgid "Name"
+#~ msgstr "ឈ្មោះ"
+
+#~ msgid "Email address"
+#~ msgstr "អាសយដ្ឋាន​អ៊ីមែល"
+
+#~ msgid "Invalid username or password"
+#~ msgstr "ឈ្មោះ​អ្នក​ប្រើ ឬ​ពាក្យ​សម្ងាត់​មិន​ត្រឹមត្រូវ"
+
+#~ msgid "An unknown error occurred"
+#~ msgstr "មាន​កំហុស​មិន​ស្គាល់​បាន​កើត​ឡើង"
+
+#~ msgid "Manually set up account"
+#~ msgstr "ការ​បង្កើត​គណនី​ដោយ​ដៃ"
+
+#~ msgid "Close"
+#~ msgstr "បិទ"

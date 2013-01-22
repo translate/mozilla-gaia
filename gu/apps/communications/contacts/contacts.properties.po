@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-27 13:05+0100\n"
+"POT-Creation-Date: 2013-01-21 23:37+0100\n"
 "PO-Revision-Date: 2012-12-25 06:18+0000\n"
 "Last-Translator: siddharthvithlani <siddharth.vithlani@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,8 +12,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1356416318.0\n"
 
 #: add
@@ -48,6 +49,10 @@ msgstr "બરાબર"
 msgid "Update"
 msgstr "સુધારો"
 
+#: retry
+msgid "Retry"
+msgstr ""
+
 #. # Menus and dialog strings
 #: contacts
 msgid "Contacts"
@@ -59,6 +64,11 @@ msgstr "સંપર્કને ઉમેરો"
 
 #: deleteContact
 msgid "Delete contact"
+msgstr "સંપર્ક કાઢી નાંખો (_D)"
+
+#: selectContact
+#, fuzzy
+msgid "Select contact"
 msgstr "સંપર્ક કાઢી નાંખો (_D)"
 
 #: editContact
@@ -336,37 +346,45 @@ msgstr "સીમ કાર્ડ ના સંપર્કો ને સ્ટ�
 msgid "Could not import contacts from SIM"
 msgstr "સીમ કાર્ડ ના સંપર્કો ને સ્ટોરે કરી શક્યા નથી "
 
-#: simContacts-imported2
+#: simContacts-imported3
 msgid "{[ plural(n) ]}"
 msgstr ""
 
-#: simContacts-imported2[zero]
-msgid "No contacts imported"
-msgstr "સંપર્કો નો આયાત થયો નથી "
+#: simContacts-imported3[zero]
+msgid "No contacts detected on SIM to import"
+msgstr ""
 
-#: simContacts-imported2[one]
+#: simContacts-imported3[one]
 msgid "Imported one contact"
 msgstr "એક સંપર્ક નો આયાત કર્યો છે "
 
-#: simContacts-imported2[two]
-msgctxt "simContacts-imported2[two]"
+#: simContacts-imported3[two]
+#, fuzzy
+msgctxt "simContacts-imported3[two]"
 msgid "Imported {{n}} contacts"
 msgstr "આયાતી {{n}} સંપર્કો"
 
-#: simContacts-imported2[few]
-msgctxt "simContacts-imported2[few]"
+#: simContacts-imported3[few]
+#, fuzzy
+msgctxt "simContacts-imported3[few]"
 msgid "Imported {{n}} contacts"
 msgstr "આયાતી {{n}} સંપર્કો"
 
-#: simContacts-imported2[many]
-msgctxt "simContacts-imported2[many]"
+#: simContacts-imported3[many]
+#, fuzzy
+msgctxt "simContacts-imported3[many]"
 msgid "Imported {{n}} contacts"
-msgstr "સિમ કાર્ડ માંથી {{n}} સંપર્કો નો આયાત કર્યો છે "
+msgstr "આયાતી {{n}} સંપર્કો"
 
-#: simContacts-imported2[other]
-msgctxt "simContacts-imported2[other]"
+#: simContacts-imported3[other]
+#, fuzzy
+msgctxt "simContacts-imported3[other]"
 msgid "Imported {{n}} contacts"
-msgstr "સિમ કાર્ડ માંથી {{n}} સંપર્કો નો આયાત કર્યો છે "
+msgstr "આયાતી {{n}} સંપર્કો"
+
+#: noSimMsg
+msgid "To import contacts insert or unlock your SIM card"
+msgstr ""
 
 #. # Social networks
 #: social-network
@@ -441,6 +459,10 @@ msgctxt "facebook-import-msg[other]"
 msgid "{{imported}}/{{total}} friends imported"
 msgstr ""
 
+#: otherAccount
+msgid "Other accounts"
+msgstr ""
+
 #. # value selector
 #: select_mobile
 msgid "Select mobile"
@@ -459,9 +481,9 @@ msgstr "પાછળ ના નામ પ્રમાણે ગોઠવો "
 msgid "Import from SIM"
 msgstr "સીમ માં આયાત કરો "
 
-#: importFb
-msgid "Import from Facebook"
-msgstr "ફેસબુક માંથી આયાત કરો "
+#: fbUpdateFriends
+msgid "Update imported friends"
+msgstr ""
 
 #: cleaningFbData
 msgid "Removing Facebook data"
@@ -474,6 +496,18 @@ msgstr "ફેસબુક માંથી બહાર નીકળી રહ�
 #: cleanFbConfirmMsg
 msgid "Remove all Facebook data?"
 msgstr "ફેસબુક ની બધી માહિતી ને કાઢી નાખવી છે ?"
+
+#: renewPwdMsg
+msgid "Your password in Facebook has changed. Please, update it."
+msgstr ""
+
+#: noConnection
+msgid "To import Facebook friends connect to Wi-Fi or data network"
+msgstr ""
+
+#: notEnabledYet
+msgid "Not enabled yet"
+msgstr ""
 
 #. # No contacts
 #: create-new
@@ -491,3 +525,21 @@ msgstr "સંપર્કો નથી "
 #: start-adding
 msgid "Start adding them now"
 msgstr "સંપર્કો ને ઉમેરવાનું શરુ કરો "
+
+#~ msgid "No contacts imported"
+#~ msgstr "સંપર્કો નો આયાત થયો નથી "
+
+#~ msgctxt "simContacts-imported2[few]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "આયાતી {{n}} સંપર્કો"
+
+#~ msgctxt "simContacts-imported2[many]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "સિમ કાર્ડ માંથી {{n}} સંપર્કો નો આયાત કર્યો છે "
+
+#~ msgctxt "simContacts-imported2[other]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "સિમ કાર્ડ માંથી {{n}} સંપર્કો નો આયાત કર્યો છે "
+
+#~ msgid "Import from Facebook"
+#~ msgstr "ફેસબુક માંથી આયાત કરો "

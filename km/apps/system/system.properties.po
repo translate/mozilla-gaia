@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-14 01:41+0100\n"
+"POT-Creation-Date: 2013-01-22 00:09+0100\n"
 "PO-Revision-Date: 2013-01-14 15:10+0000\n"
 "Last-Translator: Piseth <piseth.kheng@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1358176241.0\n"
@@ -54,21 +54,21 @@ msgstr "{{operator}} (Roaming)"
 msgid "Emergency calls only"
 msgstr "បាន​តែ​ការ​ហៅ​បន្ទាន់​ប៉ុណ្ណោះ"
 
-#: emergencyCallsOnlyNoSIM
-msgid "Emergency calls only (no SIM)"
-msgstr "បាន​តែ​ការ​ហៅ​បន្ទាន់ (គ្មាន SIM)"
+#: emergencyCallsOnly-noSIM
+msgid "(no SIM)"
+msgstr ""
 
-#: emergencyCallsOnlyPinRequired
-msgid "Emergency calls only (SIM PIN required)"
-msgstr "បាន​តែ​ការ​ហៅ​បន្ទាន់ (ត្រូវការ SIM PIN)"
+#: emergencyCallsOnly-pinRequired
+msgid "(SIM PIN required)"
+msgstr ""
 
-#: emergencyCallsOnlyPukRequired
-msgid "Emergency calls only (SIM PUK required)"
-msgstr "បាន​តែ​ការ​ហៅ​បន្ទាន់ (ត្រូវការ SIM PUK)"
+#: emergencyCallsOnly-pukRequired
+msgid "(SIM PUK required)"
+msgstr ""
 
-#: emergencyCallsOnlyNetworkLocked
-msgid "Emergency calls only (network locked)"
-msgstr "បាន​តែ​ការ​ហៅ​បន្ទាន់ (បាន​បិទ​បណ្ដាញ)"
+#: emergencyCallsOnly-networkLocked
+msgid "(network locked)"
+msgstr ""
 
 #: enterPIN
 msgid "Enter PIN"
@@ -170,10 +170,8 @@ msgid "Power off"
 msgstr "បិទ​ម៉ាស៊ីន"
 
 #. # permissions
-#: permission-ask
-msgid "{{app}} would like to require your {{permission}}"
-msgstr "{{app}} ចង់​ទាមទារ {{permission}} របស់​អ្នក"
-
+#. # LOCALIZATION NOTE: this is displayed in a permission request dialog box,
+#. # see shared/permissions/permissions.properties for more context.
 #: yes
 msgid "Yes"
 msgstr "បាទ/ចាស"
@@ -220,23 +218,41 @@ msgid "kB"
 msgstr "គីឡូបៃ"
 
 #: MB
+#, fuzzy
+msgctxt "MB"
 msgid "MB"
 msgstr "MB"
 
 #: GB
+#, fuzzy
+msgctxt "GB"
 msgid "GB"
 msgstr "GB"
 
 #: TB
+#, fuzzy
+msgctxt "TB"
 msgid "TB"
 msgstr "TB"
 
 #: PB
+#, fuzzy
+msgctxt "PB"
 msgid "PB"
 msgstr "PB"
 
-#: download-stopped2
+#: app-install-generic-error
 msgid "{{ appName }} download stopped"
+msgstr "ការ​ទាញយក {{ appName }} បាន​ឈប់"
+
+#: app-install-download-failed
+#, fuzzy
+msgid "{{ appName }} download failed"
+msgstr "ការ​ទាញយក {{ appName }} បាន​ឈប់"
+
+#: app-install-install-failed
+#, fuzzy
+msgid "{{ appName }} install failed"
 msgstr "ការ​ទាញយក {{ appName }} បាន​ឈប់"
 
 #: cancelling-will-not-refund
@@ -287,6 +303,10 @@ msgstr ""
 "មិន​មាន​ទំហំ​គ្រប់គ្រាន់​ដើម្បី​ដំឡើង​កម្មវិធី​នេះ។ "
 "បង្កើន​ទំហំ​ទំនេរ​ដោយ​លុប​កម្មវិធី ឬ​ព័ត៌មាន​ចាស់ៗ "
 "និង​ព្យាយាម​ដំឡើង​ម្ដង​ទៀត​ពី​ប្រភព​ដើម។"
+
+#: app-install-success
+msgid "{{ appName }} installed"
+msgstr ""
 
 #. # update manager
 #: later
@@ -342,32 +362,39 @@ msgstr "តើ​អ្នក​ប្រាកដ​ជា​ចង់​បោ
 msgid "There was an error while downloading the updates."
 msgstr "មាន​កំហុស​​ខណៈពេល​កំពុង​ទាញយក​បច្ចុប្បន្នភាព។"
 
-#: updatesAvailableMessage
-msgctxt "updatesAvailableMessage"
+#: updateAvailableInfo
+#, fuzzy
+msgctxt "updateAvailableInfo"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: updatesAvailableMessage[one]
-msgid "{{ n }} update available. <span>Tap to download.</span>"
+#: updateAvailableInfo[one]
+#, fuzzy
+msgid "{{ n }} update available. <span>Tap for more info.</span>"
 msgstr "មាន​បច្ចុប្បន្នភាព {{ n }} ។ <span>ចុច​ដើម្បី​ទាញយក</span>"
 
-#: updatesAvailableMessage[two]
-msgctxt "updatesAvailableMessage[two]"
-msgid "{{ n }} updates available. <span>Tap to download.</span>"
+#: updateAvailableInfo[two]
+#, fuzzy
+msgctxt "updateAvailableInfo[two]"
+msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "មាន​បច្ចុប្បន្នភាព {{ n }} ។ <span>ចុច​ដើម្បី​ទាញយក</span>"
 
-#: updatesAvailableMessage[few]
-msgid "{{ u }} updates available. <span>Tap to download.</span>"
+#: updateAvailableInfo[few]
+#, fuzzy
+msgctxt "updateAvailableInfo[few]"
+msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "មាន​បច្ចុប្បន្នភាព {{ n }} ។ <span>ចុច​ដើម្បី​ទាញយក</span>"
 
-#: updatesAvailableMessage[many]
-msgctxt "updatesAvailableMessage[many]"
-msgid "{{ n }} updates available. <span>Tap to download.</span>"
+#: updateAvailableInfo[many]
+#, fuzzy
+msgctxt "updateAvailableInfo[many]"
+msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "មាន​បច្ចុប្បន្នភាព {{ n }} ។ <span>ចុច​ដើម្បី​ទាញយក</span>"
 
-#: updatesAvailableMessage[other]
-msgctxt "updatesAvailableMessage[other]"
-msgid "{{ n }} updates available. <span>Tap to download.</span>"
+#: updateAvailableInfo[other]
+#, fuzzy
+msgctxt "updateAvailableInfo[other]"
+msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "មាន​បច្ចុប្បន្នភាព {{ n }} ។ <span>ចុច​ដើម្បី​ទាញយក</span>"
 
 #: numberOfUpdates
@@ -406,6 +433,22 @@ msgstr "បច្ចុប្បន្នភាព​ប្រព័ន្ធ"
 #: required
 msgid "Required"
 msgstr "ទាមទារ"
+
+#: uncompressingMessage
+msgid "Uncompressing… <span>This can take a few minutes.</span>"
+msgstr ""
+
+#: downloadNoWifiWarning
+msgid ""
+"Wi-Fi unavailable. Updating over current connection may incur additional "
+"charges."
+msgstr ""
+
+#: downloadEdgeWarning
+msgid ""
+"Wi-Fi unavailable. Updating over current connection will block incoming "
+"calls, and may incur additional charges."
+msgstr ""
 
 #. # screenshots
 #: screenshotSaved
@@ -663,12 +706,64 @@ msgid "Receiving Bluetooth transfer.."
 msgstr ""
 
 #: acceptFileTransfer
+#, fuzzy
 msgid "Accept Bluetooth file transfer?"
+msgstr "បោះបង់​ការ​ផ្ទេរ​ឯកសារ​តាម​ប៊ូធូស?"
+
+#: wantToReceiveFile
+#, fuzzy
+msgid "{{deviceName}} would like to transfer {{fileName}} ({{fileSize}})."
+msgstr "{{deviceName}} ចង់​ផ្ទេរ {{fileName}} ({{fileSize}}បៃ)។"
+
+#: byteUnit-B
+#, fuzzy
+msgid "Bytes"
+msgstr "បៃ"
+
+#: byteUnit-KB
+msgid "KB"
 msgstr ""
 
-#: wantToReceive
-msgid "{{deviceName}} would like to transfer {{fileName}} ({{fileSize}}byte)."
-msgstr "{{deviceName}} ចង់​ផ្ទេរ {{fileName}} ({{fileSize}}បៃ)។"
+#: byteUnit-MB
+#, fuzzy
+msgctxt "byteUnit-MB"
+msgid "MB"
+msgstr "MB"
+
+#: byteUnit-GB
+#, fuzzy
+msgctxt "byteUnit-GB"
+msgid "GB"
+msgstr "GB"
+
+#: byteUnit-TB
+#, fuzzy
+msgctxt "byteUnit-TB"
+msgid "TB"
+msgstr "TB"
+
+#: byteUnit-PB
+#, fuzzy
+msgctxt "byteUnit-PB"
+msgid "PB"
+msgstr "PB"
+
+#: byteUnit-EB
+msgid "EB"
+msgstr ""
+
+#: byteUnit-ZB
+msgid "ZB"
+msgstr ""
+
+#: byteUnit-YB
+msgid "YB"
+msgstr ""
+
+#. # Localization note (fileSize*): The string is a float.
+#: fileSize
+msgid "{{size}} {{unit}}"
+msgstr ""
 
 #: deny
 msgid "Deny"
@@ -683,6 +778,7 @@ msgid "Cancel Bluetooth file transfer?"
 msgstr "បោះបង់​ការ​ផ្ទេរ​ឯកសារ​តាម​ប៊ូធូស?"
 
 #: continue
+#, fuzzy
 msgid "Continue"
 msgstr "បន្ត"
 
@@ -777,6 +873,10 @@ msgstr ""
 msgid "PUK code"
 msgstr ""
 
+#: nckCode
+msgid "NCK code"
+msgstr ""
+
 #: whatIsSimPin
 msgid "What is a SIM PIN?"
 msgstr ""
@@ -804,6 +904,10 @@ msgstr ""
 msgid "Enter PUK code"
 msgstr ""
 
+#: nckTitle
+msgid "Enter NCK code"
+msgstr ""
+
 #: newpinTitle
 msgid "New PIN"
 msgstr ""
@@ -813,9 +917,10 @@ msgid "The PIN was incorrect."
 msgstr ""
 
 #: pinAttemptMsg
+#, fuzzy
 msgctxt "pinAttemptMsg"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: pinAttemptMsg[one]
 msgid "one last try."
@@ -887,3 +992,125 @@ msgstr ""
 #: newPinErrorMsg
 msgid "PINs don’t match."
 msgstr ""
+
+#: nckErrorMsg
+msgid "The NCK code is incorrect."
+msgstr ""
+
+#: nckAttemptMsg
+msgid ""
+"Network depersonalization request failure. You have {{n}} tries left to "
+"enter the correct code. Refer to your device documentation or contact your "
+"carrier for more information."
+msgstr ""
+
+#: nckLastChanceMsg
+msgid ""
+"Network depersonalization request failure. Last chance to enter the correct "
+"NCK code. Refer to your device documentation or contact your carrier for "
+"more information."
+msgstr ""
+
+#. # Activity selection menu titles
+#: activity-pick
+msgid "Select from:"
+msgstr ""
+
+#: activity-view
+msgid "View with:"
+msgstr ""
+
+#: activity-test
+msgid "Test with:"
+msgstr ""
+
+#: activity-share
+msgid "Share with:"
+msgstr ""
+
+#: activity-new
+msgid "Create with:"
+msgstr ""
+
+#: activity-open
+msgid "Open with:"
+msgstr ""
+
+#: activity-save-bookmark
+msgid "Bookmark to:"
+msgstr ""
+
+#: activity-record
+msgid "Record from:"
+msgstr ""
+
+#: activity-browse
+msgid "Browse with:"
+msgstr ""
+
+#: activity-configure
+msgid "Configure with:"
+msgstr ""
+
+#: activity-dial
+msgid "Dial from:"
+msgstr ""
+
+#. # Persona dialog and Identity
+#: persona-signin
+#, fuzzy
+msgid "Sign In"
+msgstr "ចូល"
+
+#. # Payment dialog
+#: payment-flow
+msgid "Purchase"
+msgstr ""
+
+#. # Remote Debugger Connection Dialog
+#: remoteDebuggerMessage
+msgid ""
+"An incoming request to permit remote debugging connection was detected. "
+"Allow connection?"
+msgstr ""
+
+#. # fullscreen permission
+#. # LOCALIZATION NOTE {{origin}} is the origin of the site which has requested fullscreen, e.g. http://example.com is now fullscreen. It includes protocol + hostname.
+#: fullscreen-request
+msgid "{{origin}} is now fullscreen."
+msgstr ""
+
+#, fuzzy
+#~ msgctxt "continue"
+#~ msgid "Continue"
+#~ msgstr "បន្ត"
+
+#~ msgid "Emergency calls only (no SIM)"
+#~ msgstr "បាន​តែ​ការ​ហៅ​បន្ទាន់ (គ្មាន SIM)"
+
+#~ msgid "Emergency calls only (SIM PIN required)"
+#~ msgstr "បាន​តែ​ការ​ហៅ​បន្ទាន់ (ត្រូវការ SIM PIN)"
+
+#~ msgid "Emergency calls only (SIM PUK required)"
+#~ msgstr "បាន​តែ​ការ​ហៅ​បន្ទាន់ (ត្រូវការ SIM PUK)"
+
+#~ msgid "Emergency calls only (network locked)"
+#~ msgstr "បាន​តែ​ការ​ហៅ​បន្ទាន់ (បាន​បិទ​បណ្ដាញ)"
+
+#~ msgid "{{app}} would like to require your {{permission}}"
+#~ msgstr "{{app}} ចង់​ទាមទារ {{permission}} របស់​អ្នក"
+
+#~ msgctxt "updatesAvailableMessage"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgid "{{ u }} updates available. <span>Tap to download.</span>"
+#~ msgstr "មាន​បច្ចុប្បន្នភាព {{ n }} ។ <span>ចុច​ដើម្បី​ទាញយក</span>"
+
+#~ msgctxt "updatesAvailableMessage[many]"
+#~ msgid "{{ n }} updates available. <span>Tap to download.</span>"
+#~ msgstr "មាន​បច្ចុប្បន្នភាព {{ n }} ។ <span>ចុច​ដើម្បី​ទាញយក</span>"
+
+#~ msgctxt "updatesAvailableMessage[other]"
+#~ msgid "{{ n }} updates available. <span>Tap to download.</span>"
+#~ msgstr "មាន​បច្ចុប្បន្នភាព {{ n }} ។ <span>ចុច​ដើម្បី​ទាញយក</span>"

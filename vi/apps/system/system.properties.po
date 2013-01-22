@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-14 01:41+0100\n"
+"POT-Creation-Date: 2013-01-22 00:09+0100\n"
 "PO-Revision-Date: 2012-12-27 05:46+0000\n"
 "Last-Translator: ngoc1414 <dgminhngoc@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1356587194.0\n"
@@ -54,21 +54,21 @@ msgstr "{{operator}} (Roaming)"
 msgid "Emergency calls only"
 msgstr "Chỉ gọi khi khẩn cấp"
 
-#: emergencyCallsOnlyNoSIM
-msgid "Emergency calls only (no SIM)"
-msgstr "Chỉ gọi khi khẩn cấp (không có SIM)"
+#: emergencyCallsOnly-noSIM
+msgid "(no SIM)"
+msgstr ""
 
-#: emergencyCallsOnlyPinRequired
-msgid "Emergency calls only (SIM PIN required)"
-msgstr "chỉ gọi khi khẩn cấp (yêu cầu mã PIN)"
+#: emergencyCallsOnly-pinRequired
+msgid "(SIM PIN required)"
+msgstr ""
 
-#: emergencyCallsOnlyPukRequired
-msgid "Emergency calls only (SIM PUK required)"
-msgstr "Chỉ gọi khi khẩn cấp (yêu cầu SIM PUK)"
+#: emergencyCallsOnly-pukRequired
+msgid "(SIM PUK required)"
+msgstr ""
 
-#: emergencyCallsOnlyNetworkLocked
-msgid "Emergency calls only (network locked)"
-msgstr "Chỉ gọi khi khẩn cấp (mạng bị khóa)"
+#: emergencyCallsOnly-networkLocked
+msgid "(network locked)"
+msgstr ""
 
 #: enterPIN
 msgid "Enter PIN"
@@ -170,10 +170,8 @@ msgid "Power off"
 msgstr "Tắt nguồn"
 
 #. # permissions
-#: permission-ask
-msgid "{{app}} would like to require your {{permission}}"
-msgstr "{{app}} đòi hỏi quyền {{permission}} của bạn"
-
+#. # LOCALIZATION NOTE: this is displayed in a permission request dialog box,
+#. # see shared/permissions/permissions.properties for more context.
 #: yes
 msgid "Yes"
 msgstr "Đồng ý"
@@ -220,23 +218,41 @@ msgid "kB"
 msgstr "kB"
 
 #: MB
+#, fuzzy
+msgctxt "MB"
 msgid "MB"
 msgstr "MB"
 
 #: GB
+#, fuzzy
+msgctxt "GB"
 msgid "GB"
 msgstr "GB"
 
 #: TB
+#, fuzzy
+msgctxt "TB"
 msgid "TB"
 msgstr "TB"
 
 #: PB
+#, fuzzy
+msgctxt "PB"
 msgid "PB"
 msgstr "PB"
 
-#: download-stopped2
+#: app-install-generic-error
 msgid "{{ appName }} download stopped"
+msgstr "Việc tải {{ appName }}đã dừng lại"
+
+#: app-install-download-failed
+#, fuzzy
+msgid "{{ appName }} download failed"
+msgstr "Việc tải {{ appName }}đã dừng lại"
+
+#: app-install-install-failed
+#, fuzzy
+msgid "{{ appName }} install failed"
 msgstr "Việc tải {{ appName }}đã dừng lại"
 
 #: cancelling-will-not-refund
@@ -287,6 +303,10 @@ msgstr ""
 "Không đủ không gian trống để cài đặt ứng dụng này. Hãy giải phóng bộ nhớ "
 "bằng việc xóa các ứng dụng hoặc các tệp đa phương tiện cũ, hoặc thử cài lại "
 "từ mã nguồn gốc."
+
+#: app-install-success
+msgid "{{ appName }} installed"
+msgstr ""
 
 #. # update manager
 #: later
@@ -342,33 +362,40 @@ msgstr "Bạn có chắc muốn hủy tất cả dữ liệu đang tải về?"
 msgid "There was an error while downloading the updates."
 msgstr "Có lỗi xảy ra khi đang tải các gói cập nhật."
 
-#: updatesAvailableMessage
-msgctxt "updatesAvailableMessage"
+#: updateAvailableInfo
+#, fuzzy
+msgctxt "updateAvailableInfo"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: updatesAvailableMessage[one]
-msgid "{{ n }} update available. <span>Tap to download.</span>"
+#: updateAvailableInfo[one]
+#, fuzzy
+msgid "{{ n }} update available. <span>Tap for more info.</span>"
 msgstr "{{ n }}cập nhập mới. <span> Bấm để tải xuống.</span>"
 
-#: updatesAvailableMessage[two]
-msgctxt "updatesAvailableMessage[two]"
-msgid "{{ n }} updates available. <span>Tap to download.</span>"
+#: updateAvailableInfo[two]
+#, fuzzy
+msgctxt "updateAvailableInfo[two]"
+msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "{{ n }} cập nhật phù hợp. <span> Chọn để tải xuống.</span>"
 
-#: updatesAvailableMessage[few]
-msgid "{{ u }} updates available. <span>Tap to download.</span>"
-msgstr "{{ u }}cập nhập mới. <span> Bấm để tải xuống.</span>"
+#: updateAvailableInfo[few]
+#, fuzzy
+msgctxt "updateAvailableInfo[few]"
+msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+msgstr "{{ n }} cập nhật phù hợp. <span> Chọn để tải xuống.</span>"
 
-#: updatesAvailableMessage[many]
-msgctxt "updatesAvailableMessage[many]"
-msgid "{{ n }} updates available. <span>Tap to download.</span>"
-msgstr "{{ n }}cập nhập mới. <span> Bấm để tải xuống.</span>"
+#: updateAvailableInfo[many]
+#, fuzzy
+msgctxt "updateAvailableInfo[many]"
+msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+msgstr "{{ n }} cập nhật phù hợp. <span> Chọn để tải xuống.</span>"
 
-#: updatesAvailableMessage[other]
-msgctxt "updatesAvailableMessage[other]"
-msgid "{{ n }} updates available. <span>Tap to download.</span>"
-msgstr "{{ n }}cập nhập mới. <span> Bấm để tải xuống.</span>"
+#: updateAvailableInfo[other]
+#, fuzzy
+msgctxt "updateAvailableInfo[other]"
+msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+msgstr "{{ n }} cập nhật phù hợp. <span> Chọn để tải xuống.</span>"
 
 #: numberOfUpdates
 msgctxt "numberOfUpdates"
@@ -406,6 +433,22 @@ msgstr "Cập nhật hệ thống"
 #: required
 msgid "Required"
 msgstr "Cần thiết"
+
+#: uncompressingMessage
+msgid "Uncompressing… <span>This can take a few minutes.</span>"
+msgstr ""
+
+#: downloadNoWifiWarning
+msgid ""
+"Wi-Fi unavailable. Updating over current connection may incur additional "
+"charges."
+msgstr ""
+
+#: downloadEdgeWarning
+msgid ""
+"Wi-Fi unavailable. Updating over current connection will block incoming "
+"calls, and may incur additional charges."
+msgstr ""
 
 #. # screenshots
 #: screenshotSaved
@@ -667,9 +710,60 @@ msgstr "Đang nhận dữ liệu từ Bluetooth.."
 msgid "Accept Bluetooth file transfer?"
 msgstr "Cho phép chuyển tệp qua Bluetooth?"
 
-#: wantToReceive
-msgid "{{deviceName}} would like to transfer {{fileName}} ({{fileSize}}byte)."
+#: wantToReceiveFile
+#, fuzzy
+msgid "{{deviceName}} would like to transfer {{fileName}} ({{fileSize}})."
 msgstr "{{deviceName}} muốn gửi tệp {{fileName}} ({{fileSize}}byte)"
+
+#: byteUnit-B
+#, fuzzy
+msgid "Bytes"
+msgstr "bytes"
+
+#: byteUnit-KB
+msgid "KB"
+msgstr ""
+
+#: byteUnit-MB
+#, fuzzy
+msgctxt "byteUnit-MB"
+msgid "MB"
+msgstr "MB"
+
+#: byteUnit-GB
+#, fuzzy
+msgctxt "byteUnit-GB"
+msgid "GB"
+msgstr "GB"
+
+#: byteUnit-TB
+#, fuzzy
+msgctxt "byteUnit-TB"
+msgid "TB"
+msgstr "TB"
+
+#: byteUnit-PB
+#, fuzzy
+msgctxt "byteUnit-PB"
+msgid "PB"
+msgstr "PB"
+
+#: byteUnit-EB
+msgid "EB"
+msgstr ""
+
+#: byteUnit-ZB
+msgid "ZB"
+msgstr ""
+
+#: byteUnit-YB
+msgid "YB"
+msgstr ""
+
+#. # Localization note (fileSize*): The string is a float.
+#: fileSize
+msgid "{{size}} {{unit}}"
+msgstr ""
 
 #: deny
 msgid "Deny"
@@ -684,6 +778,7 @@ msgid "Cancel Bluetooth file transfer?"
 msgstr "Hủy chuyển tiếp file?"
 
 #: continue
+#, fuzzy
 msgid "Continue"
 msgstr "Tiếp tục"
 
@@ -780,6 +875,11 @@ msgstr "SIM PIN"
 msgid "PUK code"
 msgstr "Mã PUK"
 
+#: nckCode
+#, fuzzy
+msgid "NCK code"
+msgstr "Mã PUK"
+
 #: whatIsSimPin
 msgid "What is a SIM PIN?"
 msgstr "SIM PIN là gì?"
@@ -810,6 +910,11 @@ msgstr "Nhập mã SIM PIN"
 msgid "Enter PUK code"
 msgstr "Nhập mã PUK"
 
+#: nckTitle
+#, fuzzy
+msgid "Enter NCK code"
+msgstr "Nhập mã PUK"
+
 #: newpinTitle
 msgid "New PIN"
 msgstr "Mã PIN mới"
@@ -819,9 +924,10 @@ msgid "The PIN was incorrect."
 msgstr "Sai mã PIN"
 
 #: pinAttemptMsg
+#, fuzzy
 msgctxt "pinAttemptMsg"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: pinAttemptMsg[one]
 msgid "one last try."
@@ -903,3 +1009,126 @@ msgstr "Xác nhận mã PIN mới"
 #: newPinErrorMsg
 msgid "PINs don’t match."
 msgstr "mã PIN không đúng."
+
+#: nckErrorMsg
+#, fuzzy
+msgid "The NCK code is incorrect."
+msgstr "Mã PUK không hợp lệ."
+
+#: nckAttemptMsg
+msgid ""
+"Network depersonalization request failure. You have {{n}} tries left to "
+"enter the correct code. Refer to your device documentation or contact your "
+"carrier for more information."
+msgstr ""
+
+#: nckLastChanceMsg
+msgid ""
+"Network depersonalization request failure. Last chance to enter the correct "
+"NCK code. Refer to your device documentation or contact your carrier for "
+"more information."
+msgstr ""
+
+#. # Activity selection menu titles
+#: activity-pick
+msgid "Select from:"
+msgstr ""
+
+#: activity-view
+msgid "View with:"
+msgstr ""
+
+#: activity-test
+msgid "Test with:"
+msgstr ""
+
+#: activity-share
+msgid "Share with:"
+msgstr ""
+
+#: activity-new
+msgid "Create with:"
+msgstr ""
+
+#: activity-open
+msgid "Open with:"
+msgstr ""
+
+#: activity-save-bookmark
+msgid "Bookmark to:"
+msgstr ""
+
+#: activity-record
+msgid "Record from:"
+msgstr ""
+
+#: activity-browse
+msgid "Browse with:"
+msgstr ""
+
+#: activity-configure
+msgid "Configure with:"
+msgstr ""
+
+#: activity-dial
+msgid "Dial from:"
+msgstr ""
+
+#. # Persona dialog and Identity
+#: persona-signin
+#, fuzzy
+msgid "Sign In"
+msgstr "Đăng nhập"
+
+#. # Payment dialog
+#: payment-flow
+msgid "Purchase"
+msgstr ""
+
+#. # Remote Debugger Connection Dialog
+#: remoteDebuggerMessage
+msgid ""
+"An incoming request to permit remote debugging connection was detected. "
+"Allow connection?"
+msgstr ""
+
+#. # fullscreen permission
+#. # LOCALIZATION NOTE {{origin}} is the origin of the site which has requested fullscreen, e.g. http://example.com is now fullscreen. It includes protocol + hostname.
+#: fullscreen-request
+msgid "{{origin}} is now fullscreen."
+msgstr ""
+
+#, fuzzy
+#~ msgctxt "continue"
+#~ msgid "Continue"
+#~ msgstr "Tiếp tục"
+
+#~ msgid "Emergency calls only (no SIM)"
+#~ msgstr "Chỉ gọi khi khẩn cấp (không có SIM)"
+
+#~ msgid "Emergency calls only (SIM PIN required)"
+#~ msgstr "chỉ gọi khi khẩn cấp (yêu cầu mã PIN)"
+
+#~ msgid "Emergency calls only (SIM PUK required)"
+#~ msgstr "Chỉ gọi khi khẩn cấp (yêu cầu SIM PUK)"
+
+#~ msgid "Emergency calls only (network locked)"
+#~ msgstr "Chỉ gọi khi khẩn cấp (mạng bị khóa)"
+
+#~ msgid "{{app}} would like to require your {{permission}}"
+#~ msgstr "{{app}} đòi hỏi quyền {{permission}} của bạn"
+
+#~ msgctxt "updatesAvailableMessage"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgid "{{ u }} updates available. <span>Tap to download.</span>"
+#~ msgstr "{{ u }}cập nhập mới. <span> Bấm để tải xuống.</span>"
+
+#~ msgctxt "updatesAvailableMessage[many]"
+#~ msgid "{{ n }} updates available. <span>Tap to download.</span>"
+#~ msgstr "{{ n }}cập nhập mới. <span> Bấm để tải xuống.</span>"
+
+#~ msgctxt "updatesAvailableMessage[other]"
+#~ msgid "{{ n }} updates available. <span>Tap to download.</span>"
+#~ msgstr "{{ n }}cập nhập mới. <span> Bấm để tải xuống.</span>"

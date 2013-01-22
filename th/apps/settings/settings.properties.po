@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-27 13:23+0100\n"
+"POT-Creation-Date: 2013-01-22 00:09+0100\n"
 "PO-Revision-Date: 2012-11-18 07:24+0000\n"
 "Last-Translator: chegings <chengings@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,8 +12,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.9.1-pre\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1353223479.0\n"
 
 #: settings
@@ -33,6 +34,7 @@ msgid "Enabled"
 msgstr ""
 
 #: disabled
+msgctxt "disabled"
 msgid "Disabled"
 msgstr ""
 
@@ -71,6 +73,10 @@ msgstr ""
 #: done
 msgid "Done"
 msgstr "เสร็จสิ้น"
+
+#: set
+msgid "Set"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Connectivity
@@ -341,6 +347,78 @@ msgstr ""
 msgid "Failed to cancel WPS"
 msgstr ""
 
+#. # Connectivity :: Call
+#: callSettings
+msgid "Call Settings"
+msgstr ""
+
+#: callWaiting
+msgid "Call waiting"
+msgstr ""
+
+#: callForwarding
+msgid "Call forwarding"
+msgstr ""
+
+#: callForwardingUnconditional
+msgid "Always forward"
+msgstr ""
+
+#: callForwardingMobileBusy
+msgid "Forward when busy"
+msgstr ""
+
+#: callForwardingNoReply
+msgid "Forward when unanswered"
+msgstr ""
+
+#: callForwardingNotReachable
+msgid "Forward when unreachable"
+msgstr ""
+
+#: callForwardingRequesting
+msgid "Requesting network info…"
+msgstr ""
+
+#: callForwardingQueryError
+msgid "Error in query"
+msgstr ""
+
+#: callForwardingForwardingVoiceTo
+msgid "Voice calls to"
+msgstr ""
+
+#: callForwardingNotForwarding
+msgctxt "callForwardingNotForwarding"
+msgid "Disabled"
+msgstr ""
+
+#: confirmCallWaitingTitle
+msgid "Unable to confirm call waiting preferences"
+msgstr ""
+
+#: confirmCallWaitingDesc
+msgid ""
+"The device is currently unable to communicate with the carrier. Try setting "
+"the preference again."
+msgstr ""
+
+#: cf-alwaysUseThisNumber
+msgid "Always use this number"
+msgstr ""
+
+#: cf-numberWhenUnreachable
+msgid "Number when unreachable"
+msgstr ""
+
+#: cf-numberWhenUnanswered
+msgid "Number when unanswered"
+msgstr ""
+
+#: cf-numberWhenBusy
+msgid "Number when busy"
+msgstr ""
+
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
 msgid "Cellular & Data"
@@ -348,10 +426,6 @@ msgstr ""
 
 #: dataNetwork
 msgid "Carrier"
-msgstr ""
-
-#: callWaiting
-msgid "Call waiting"
 msgstr ""
 
 #: dataConnectivity
@@ -427,8 +501,12 @@ msgstr ""
 msgid "APN"
 msgstr ""
 
-#: apnSettings
-msgid "APN settings"
+#: dataSettings
+msgid "Data settings"
+msgstr ""
+
+#: suplSettings
+msgid "A-GPS settings"
 msgstr ""
 
 #: mmsSettings
@@ -636,13 +714,17 @@ msgstr ""
 msgid "Unable to pair with the device. Check that the PIN is correct."
 msgstr ""
 
+#: error-pair-toofast
+msgid "Unable to pair with the device. Too many requests."
+msgstr ""
+
 #: error-connect-title
 msgid "Unable to connect devices"
 msgstr ""
 
 #: error-connect-msg
 msgid ""
-"Check that the device you're trying to connect with is still in range and "
+"Check that the device you’re trying to connect with is still in range and "
 "has Bluetooth turned on."
 msgstr ""
 
@@ -714,6 +796,18 @@ msgstr ""
 msgid "SSID network name"
 msgstr ""
 
+#: hotspot-open
+msgid "open"
+msgstr ""
+
+#: hotspot-wpa-psk
+msgid "WPA (TKIP)"
+msgstr ""
+
+#: hotspot-wpa2-psk
+msgid "WPA2 (AES)"
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Personalization
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -735,8 +829,16 @@ msgstr "ข้อความ"
 msgid "Volume"
 msgstr ""
 
+#: tones
+msgid "Tones"
+msgstr ""
+
 #: select-tone
 msgid "Select a tone"
+msgstr ""
+
+#: ringer
+msgid "Ringer"
 msgstr ""
 
 #: ring-tones
@@ -747,28 +849,8 @@ msgstr ""
 msgid "Alert tones"
 msgstr ""
 
-#: classic
-msgid "Classic"
-msgstr ""
-
-#: oldSchool
-msgid "Old School"
-msgstr ""
-
-#: lowBit
-msgid "Low bit"
-msgstr ""
-
-#: beep
-msgid "Beep beep"
-msgstr ""
-
 #: volume-and-tones
 msgid "Volume & Tones"
-msgstr ""
-
-#: call
-msgid "Call"
 msgstr ""
 
 #: other-sounds
@@ -791,16 +873,8 @@ msgstr ""
 msgid "Alarm"
 msgstr ""
 
-#: normal-sound
-msgid "Normal"
-msgstr ""
-
-#: content-sound
-msgid "Content"
-msgstr ""
-
-#: notification-sound
-msgid "Notification"
+#: ringer-and-notification-sound
+msgid "Ringer & Notifications"
 msgstr ""
 
 #: voice-sound
@@ -905,6 +979,10 @@ msgstr "ภาษา"
 
 #: region
 msgid "Region"
+msgstr ""
+
+#: sample-format
+msgid "Sample Format"
 msgstr ""
 
 #. # see http://www.cplusplus.com/reference/clibrary/ctime/strftime/
@@ -1121,8 +1199,8 @@ msgstr ""
 msgid "Passcode is incorrect"
 msgstr ""
 
-#: passcode-dont-match
-msgid "Passcode doesn't match. Try again."
+#: passcode-doesnt-match
+msgid "Passcode doesn’t match. Try again."
 msgstr ""
 
 #: passcode
@@ -1213,32 +1291,32 @@ msgstr ""
 msgid "The PIN was incorrect."
 msgstr ""
 
-#: pinAttemptMsg
-msgctxt "pinAttemptMsg"
+#: pinAttemptMsg2
+msgctxt "pinAttemptMsg2"
 msgid "{[ plural(n) ]}"
 msgstr ""
 
-#: pinAttemptMsg[one]
-msgid "one last try."
+#: pinAttemptMsg2[one]
+msgid "Last chance."
 msgstr ""
 
-#: pinAttemptMsg[two]
-msgctxt "pinAttemptMsg[two]"
+#: pinAttemptMsg2[two]
+msgctxt "pinAttemptMsg2[two]"
 msgid "{{n}} tries left."
 msgstr ""
 
-#: pinAttemptMsg[few]
-msgctxt "pinAttemptMsg[few]"
+#: pinAttemptMsg2[few]
+msgctxt "pinAttemptMsg2[few]"
 msgid "{{n}} tries left."
 msgstr ""
 
-#: pinAttemptMsg[many]
-msgctxt "pinAttemptMsg[many]"
+#: pinAttemptMsg2[many]
+msgctxt "pinAttemptMsg2[many]"
 msgid "{{n}} tries left."
 msgstr ""
 
-#: pinAttemptMsg[other]
-msgctxt "pinAttemptMsg[other]"
+#: pinAttemptMsg2[other]
+msgctxt "pinAttemptMsg2[other]"
 msgid "{{n}} tries left."
 msgstr ""
 
@@ -1263,7 +1341,7 @@ msgstr ""
 msgid "The PUK code is incorrect."
 msgstr ""
 
-#: pukAttemptMsg
+#: pukAttemptMsg2
 msgid ""
 "You have {{n}} tries left to enter the correct code before this SIM card "
 "will be permanently unusable. Refer to your SIM card documentation or "
@@ -1323,13 +1401,26 @@ msgstr ""
 msgid "Storage"
 msgstr ""
 
-#: helpAndFeedback
-msgid "Help & Feedback"
+#: help
+msgctxt "help"
+msgid "Help"
 msgstr ""
 
 #. # Device :: Information
 #: deviceInfo
 msgid "Device information"
+msgstr ""
+
+#: deviceInfo-IMEI
+msgid "IMEI"
+msgstr ""
+
+#: deviceInfo-ICCID
+msgid "ICCID"
+msgstr ""
+
+#: deviceInfo-MSISDN
+msgid "Phone number"
 msgstr ""
 
 #: developer
@@ -1364,14 +1455,6 @@ msgstr ""
 msgid "Log slow animations"
 msgstr ""
 
-#: dev-mode
-msgid "Developer mode"
-msgstr ""
-
-#: oop-disabled
-msgid "Disable out-of-process"
-msgstr ""
-
 #: remote-debugging
 msgid "Remote debugging"
 msgstr ""
@@ -1382,6 +1465,10 @@ msgstr ""
 
 #: ttl-monitor
 msgid "Show time to load"
+msgstr ""
+
+#: console-enabled
+msgid "Console enabled"
 msgstr ""
 
 #: model-name
@@ -1465,18 +1552,22 @@ msgid "Network is offline. Will check again when the network is online."
 msgstr ""
 
 #: already-latest-version
-msgid "This is already the latest version of Firefox OS"
+msgid "This is already the latest version of {{brandShortName}}"
 msgstr ""
 
-#: aboutFirefoxOS
-msgid "About Firefox OS"
+#: check-error
+msgid "There was an error when checking for updates."
 msgstr ""
 
-#: firefox-os-desc
+#: aboutBrowserOS
+msgid "About {{brandShortName}}"
+msgstr ""
+
+#: browser-os-desc
 msgid ""
-"Firefox OS is the free and open source operating system from Mozilla. Our "
-"mission is to promote openness, innovation and opportunity by keeping the "
-"power of the Web in your hands."
+"{{brandShortName}} is the free and open source operating system from "
+"Mozilla. Our mission is to promote openness, innovation and opportunity by "
+"keeping the power of the Web in your hands."
 msgstr ""
 
 #: learn-more
@@ -1489,7 +1580,7 @@ msgstr ""
 
 #: reset-warning-1
 msgid ""
-"CAUTION: Resetting will erase all your data, including any apps you've "
+"CAUTION: Resetting will erase all your data, including any apps you’ve "
 "purchased."
 msgstr ""
 
@@ -1499,47 +1590,61 @@ msgid ""
 "or data will be saved."
 msgstr ""
 
-#. # Localization note: the licensing* strings below aren’t ready for translation yet.
-#: about-your-rights
-msgid "About your rights"
+#. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
+#: your-rights
+msgid "Your Rights"
 msgstr ""
 
-#: about-your-rights2-0
+#: about-your-rights-0
 msgid ""
-"Firefox OS is built on free and open source software by a community of "
-"thousands from all over the world. There are a few things you should know:"
+"{{brandShortName}} is built on free and open source software by a community "
+"of thousands from all over the world. There are a few things you should "
+"know:"
 msgstr ""
 
-#: about-your-rights2-1
+#: about-your-rights-1
 msgid ""
-"Firefox OS is made available to you under the terms of several open source "
-"licenses including the Mozilla Public License. A device running Firefox OS "
-"may also contain proprietary software from third parties. Any code provided "
-"under open licenses give you the right to modify the source code and "
-"distribute your modified versions as long as you comply with their terms."
+"{{brandShortName}} is made available to you under the terms of several open "
+"source licenses including the Mozilla Public License. A device running "
+"{{brandShortName}} may also contain proprietary software from third parties. "
+"Any code provided under open licenses give you the right to modify the "
+"source code and distribute your modified versions as long as you comply with "
+"their terms."
 msgstr ""
 
-#: about-your-rights2-2
+#: about-your-rights-2
 msgid ""
 "You are not granted any trademark rights or licenses to the trademarks of "
 "the Mozilla Foundation or any party, including without limitation the "
-"Firefox name or logo."
+"{{brandShortName}} name or logo."
 msgstr ""
 
-#: about-your-rights2-3
+#: about-your-rights-3
 msgid ""
-"Some features in Firefox OS, such as the Crash Reporter, give you the option "
-"to provide feedback to Mozilla. By choosing to submit feedback, you give "
-"Mozilla permission to use the feedback to improve its products, to publish "
-"the feedback on its websites, and to distribute the feedback."
+"Some features in {{brandShortName}}, such as the Crash Reporter, give you "
+"the option to provide feedback to Mozilla. By choosing to submit feedback, "
+"you give Mozilla permission to use the feedback to improve its products, to "
+"publish the feedback on its websites, and to distribute the feedback."
 msgstr ""
 
-#: about-your-privacy
-msgid "About your privacy"
+#: about-legal-info
+msgid "Legal Information"
 msgstr ""
 
-#: about-licensing
-msgid "Licensing"
+#: open-source-notices
+msgid "Open Source Notices"
+msgstr ""
+
+#: about-mozilla
+msgid "Mozilla"
+msgstr ""
+
+#: about-other
+msgid "Other"
+msgstr ""
+
+#: your-privacy
+msgid "Your Privacy"
 msgstr ""
 
 #: licensing-1
@@ -1586,8 +1691,8 @@ msgstr ""
 msgid "Device storage"
 msgstr ""
 
-#: umsEnabled
-msgid "USB mass storage enabled"
+#: usbMassStorage
+msgid "USB mass storage"
 msgstr ""
 
 #: umsUnplugToDisable
@@ -1598,44 +1703,62 @@ msgstr ""
 msgid "Application storage"
 msgstr ""
 
-#: size-B
-msgid "{{size}} B"
+#: byteUnit-B
+msgid "B"
 msgstr ""
 
-#: size-KB
-msgid "{{size}} KB"
+#: byteUnit-KB
+msgid "KB"
 msgstr ""
 
-#: size-MB
-msgid "{{size}} MB"
+#: byteUnit-MB
+msgid "MB"
 msgstr ""
 
-#: size-GB
-msgid "{{size}} GB"
+#: byteUnit-GB
+msgid "GB"
 msgstr ""
 
-#: size-TB
-msgid "{{size}} TB"
+#: byteUnit-TB
+msgid "TB"
 msgstr ""
 
-#: available-size-B
-msgid "{{size}} B available"
+#: storageSize
+msgid "{{size}} {{unit}}"
 msgstr ""
 
-#: available-size-KB
-msgid "{{size}} KB available"
+#: availableSize
+msgid "{[ plural(size) ]}"
 msgstr ""
 
-#: available-size-MB
-msgid "{{size}} MB available"
+#: availableSize[zero]
+msgctxt "availableSize[zero]"
+msgid "{{size}} {{unit}} available"
 msgstr ""
 
-#: available-size-GB
-msgid "{{size}} GB available"
+#: availableSize[one]
+msgctxt "availableSize[one]"
+msgid "{{size}} {{unit}} available"
 msgstr ""
 
-#: available-size-TB
-msgid "{{size}} TB available"
+#: availableSize[two]
+msgctxt "availableSize[two]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
+
+#: availableSize[few]
+msgctxt "availableSize[few]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
+
+#: availableSize[many]
+msgctxt "availableSize[many]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
+
+#: availableSize[other]
+msgctxt "availableSize[other]"
+msgid "{{size}} {{unit}} available"
 msgstr ""
 
 #: apps-total-space
@@ -1742,9 +1865,13 @@ msgstr ""
 msgid "Screen reader"
 msgstr ""
 
-#. # Device :: Improve Firefox OS
-#: improveFirefoxOS
-msgid "Improve Firefox OS"
+#. # Device :: Improve Browser OS
+#: improveBrowserOS
+msgid "Improve {{brandShortName}}"
+msgstr ""
+
+#: sendMozillaFeedback
+msgid "Send Mozilla Feedback"
 msgstr ""
 
 #: performanceData
@@ -1752,9 +1879,7 @@ msgid "Performance data"
 msgstr ""
 
 #: performanceDataInfo
-msgid ""
-"Make Firefox OS faster and easier to use by sharing information over Wi-Fi "
-"about your phone’s performance."
+msgid "Help us improve {{brandShortName}} by sharing data about your phone."
 msgstr ""
 
 #: sharePerformanceData
@@ -1783,8 +1908,8 @@ msgstr ""
 msgid "Ask me when a crash occurs"
 msgstr ""
 
-#. # Device :: Improve Firefox OS :: Crash Reports
-#. # Localization note (crash-reports-description-*): These strings are also included in system.properties
+#. # Device :: Improve Browser OS :: Crash Reports
+#. # LOCALIZATION NOTE (crash-reports-description-*): these strings are also included in system.properties
 #: crash-reports-description-1
 msgid ""
 "A crash report contains some details about the crash and your device, as "
@@ -1798,12 +1923,12 @@ msgid ""
 "by an open app."
 msgstr ""
 
-#. # Localization note (crash-reports-description-3-*): These strings are a paragraph, with a "privacy policy"
+#. # LOCALIZATION NOTE (crash-reports-description-3-*): these strings are a paragraph, with a "privacy policy"
 #. # link in the middle. Include trailing spaces as needed.
 #: crash-reports-description-3-start
 msgid ""
 "We use crash reports to try to fix problems and improve our products. We "
-"handle your information as we describe in our "
+"handle your information as we describe in our"
 msgstr ""
 
 #: crash-reports-description-3-privacy
@@ -1819,16 +1944,12 @@ msgstr ""
 msgid "Online support:"
 msgstr ""
 
-#: online-support-link
-msgid "www.telefonica.com"
-msgstr ""
-
 #: call-support
 msgid "Call support:"
 msgstr ""
 
-#: call-support-number
-msgid "+1 650-903-0800"
+#: call-support-numbers
+msgid "{{link1}} or {{link2}}"
 msgstr ""
 
 #: user-guide
@@ -1836,10 +1957,19 @@ msgid "User guide"
 msgstr ""
 
 #. # Device :: SIM toolkit
-#: stkAppsNotAvailable
-msgid "SIM card applications not available."
+#: operatorServices
+msgid "Operator Services"
 msgstr ""
 
-#: simToolkit
-msgid "SIM toolkit"
+#: operatorServices-help
+msgctxt "operatorServices-help"
+msgid "Help"
+msgstr ""
+
+#: operatorServices-helpmenu
+msgid "Help menu"
+msgstr ""
+
+#: operatorService-invalid-url
+msgid "Cannot access the URL"
 msgstr ""

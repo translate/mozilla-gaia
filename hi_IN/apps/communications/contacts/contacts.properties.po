@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-27 13:05+0100\n"
+"POT-Creation-Date: 2013-01-21 23:37+0100\n"
 "PO-Revision-Date: 2013-01-01 10:49+0000\n"
 "Last-Translator: Komal <mahakjn774@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,8 +11,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1357037386.0\n"
 
 #: add
@@ -47,6 +48,10 @@ msgstr "ठीक"
 msgid "Update"
 msgstr "अद्यतन"
 
+#: retry
+msgid "Retry"
+msgstr ""
+
 #. # Menus and dialog strings
 #: contacts
 msgid "Contacts"
@@ -58,6 +63,11 @@ msgstr "सम्पर्क जोड़ें"
 
 #: deleteContact
 msgid "Delete contact"
+msgstr "संपर्क मिटाएँ "
+
+#: selectContact
+#, fuzzy
+msgid "Select contact"
 msgstr "संपर्क मिटाएँ "
 
 #: editContact
@@ -335,36 +345,44 @@ msgstr "सिम संपर्क संग्रह करना"
 msgid "Could not import contacts from SIM"
 msgstr "सिम से कॉन्टेक्ट्स इम्पोर्ट नहीं कर सका"
 
-#: simContacts-imported2
+#: simContacts-imported3
 msgid "{[ plural(n) ]}"
 msgstr ""
 
-#: simContacts-imported2[zero]
-msgid "No contacts imported"
-msgstr "कोई कॉन्टेक्ट्स इम्पोर्ट नहीं "
+#: simContacts-imported3[zero]
+msgid "No contacts detected on SIM to import"
+msgstr ""
 
-#: simContacts-imported2[one]
+#: simContacts-imported3[one]
 msgid "Imported one contact"
 msgstr "एक संपर्क इम्पोर्ट"
 
-#: simContacts-imported2[two]
-msgctxt "simContacts-imported2[two]"
+#: simContacts-imported3[two]
+#, fuzzy
+msgctxt "simContacts-imported3[two]"
 msgid "Imported {{n}} contacts"
 msgstr "इम्पोर्टेड संपर्क"
 
-#: simContacts-imported2[few]
-msgctxt "simContacts-imported2[few]"
+#: simContacts-imported3[few]
+#, fuzzy
+msgctxt "simContacts-imported3[few]"
 msgid "Imported {{n}} contacts"
 msgstr "इम्पोर्टेड संपर्क"
 
-#: simContacts-imported2[many]
-msgctxt "simContacts-imported2[many]"
+#: simContacts-imported3[many]
+#, fuzzy
+msgctxt "simContacts-imported3[many]"
 msgid "Imported {{n}} contacts"
-msgstr ""
+msgstr "इम्पोर्टेड संपर्क"
 
-#: simContacts-imported2[other]
-msgctxt "simContacts-imported2[other]"
+#: simContacts-imported3[other]
+#, fuzzy
+msgctxt "simContacts-imported3[other]"
 msgid "Imported {{n}} contacts"
+msgstr "इम्पोर्टेड संपर्क"
+
+#: noSimMsg
+msgid "To import contacts insert or unlock your SIM card"
 msgstr ""
 
 #. # Social networks
@@ -426,18 +444,25 @@ msgid "{{imported}}/{{total}} friends imported"
 msgstr "दोस्त इम्पोर्टेड"
 
 #: facebook-import-msg[few]
+#, fuzzy
 msgctxt "facebook-import-msg[few]"
 msgid "{{imported}}/{{total}} friends imported"
-msgstr ""
+msgstr "दोस्त इम्पोर्टेड"
 
 #: facebook-import-msg[many]
+#, fuzzy
 msgctxt "facebook-import-msg[many]"
 msgid "{{imported}}/{{total}} friends imported"
-msgstr ""
+msgstr "दोस्त इम्पोर्टेड"
 
 #: facebook-import-msg[other]
+#, fuzzy
 msgctxt "facebook-import-msg[other]"
 msgid "{{imported}}/{{total}} friends imported"
+msgstr "दोस्त इम्पोर्टेड"
+
+#: otherAccount
+msgid "Other accounts"
 msgstr ""
 
 #. # value selector
@@ -458,9 +483,9 @@ msgstr "अंतिम नाम से आदेश"
 msgid "Import from SIM"
 msgstr "इम्पोर्ट सिम से"
 
-#: importFb
-msgid "Import from Facebook"
-msgstr "फेसबुक से इम्पोर्ट"
+#: fbUpdateFriends
+msgid "Update imported friends"
+msgstr ""
 
 #: cleaningFbData
 msgid "Removing Facebook data"
@@ -473,6 +498,18 @@ msgstr "फ़ेसबुक से बाहर"
 #: cleanFbConfirmMsg
 msgid "Remove all Facebook data?"
 msgstr "सभी फेसबुक डेटा मिटाएँ?"
+
+#: renewPwdMsg
+msgid "Your password in Facebook has changed. Please, update it."
+msgstr ""
+
+#: noConnection
+msgid "To import Facebook friends connect to Wi-Fi or data network"
+msgstr ""
+
+#: notEnabledYet
+msgid "Not enabled yet"
+msgstr ""
 
 #. # No contacts
 #: create-new
@@ -490,3 +527,13 @@ msgstr "कोई संपर्क नहीं"
 #: start-adding
 msgid "Start adding them now"
 msgstr "उन्हें अब जोड़ना प्रारंभ"
+
+#~ msgid "No contacts imported"
+#~ msgstr "कोई कॉन्टेक्ट्स इम्पोर्ट नहीं "
+
+#~ msgctxt "simContacts-imported2[few]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "इम्पोर्टेड संपर्क"
+
+#~ msgid "Import from Facebook"
+#~ msgstr "फेसबुक से इम्पोर्ट"

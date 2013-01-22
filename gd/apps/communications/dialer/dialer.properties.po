@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-14 01:41+0100\n"
+"POT-Creation-Date: 2013-01-21 23:37+0100\n"
 "PO-Revision-Date: 2013-01-01 19:14+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -32,21 +32,6 @@ msgstr "Cuir ri neach-aithne làithreach"
 msgid "All"
 msgstr "Na h-uile"
 
-#: callAirplaneModeMessage
-msgid "To make a call you need to disable airplane mode in settings."
-msgstr ""
-"Feumaidh tu am modh itealain a chur à comas sna roghainnean mus urrainn dhut "
-"fòn a chur."
-
-#: callAirplaneModeBtnOk
-msgctxt "callAirplaneModeBtnOk"
-msgid "OK"
-msgstr "Ceart ma-thà"
-
-#: callAirplaneModeTitle
-msgid "Airplane Mode is on"
-msgstr "Tha am modh itealain air"
-
 #: callLog
 msgid "Call log"
 msgstr "Loga nan gairmean"
@@ -54,10 +39,6 @@ msgstr "Loga nan gairmean"
 #: connecting
 msgid "Connecting"
 msgstr "A' dèanamh ceangal"
-
-#: camera-a11y-button.aria-label
-msgid "Hang Up"
-msgstr "Cuir sìos am fòn"
 
 #: cancel
 msgid "Cancel"
@@ -161,24 +142,6 @@ msgstr "Thagh thu {{ n }}"
 msgid "Edit"
 msgstr "Deasaich"
 
-#: emergencyDialogBodyBadNumber
-msgid "To make a call, the phone must be connected to a network."
-msgstr ""
-"Feumaidh am fòn a bhith ceangailte ri lìonra mus urrainn dhut fòn a chur."
-
-#: emergencyDialogBodyDeviceNotAccepted
-msgid "Emergency calls are not allowed by the network."
-msgstr "Chan eil gairmean èiginn ceadaichte air an lìonra seo."
-
-#: emergencyDialogBtnOk
-msgctxt "emergencyDialogBtnOk"
-msgid "OK"
-msgstr "Ceart ma-thà"
-
-#: emergencyDialogTitle
-msgid "No network connection"
-msgstr "Chan eil ceangal lìonraidh ann"
-
 #: from
 msgid "From {{sender}}"
 msgstr "O {{sender}}"
@@ -239,10 +202,6 @@ msgstr "An-diugh"
 msgid "Unknown number"
 msgstr "Àireamh neo-aithnichte"
 
-#: unlock-a11y-button.aria-label
-msgid "Pick up"
-msgstr "Tog e"
-
 #: yesterday
 msgid "Yesterday"
 msgstr "An-dè"
@@ -272,44 +231,112 @@ msgstr "Falamhaich an teacsa air fad"
 msgid "Call"
 msgstr "Cuir fòn"
 
-#. ## LOCALIZATION NOTE: contactNameWithOthers is displayed for missed calls when the number is associated with more than one contact.  {{ name }} is the name of the first contact.
+#. ## LOCALIZATION NOTE: these labels aren't displayed but they're used for acessibility
+#: hangup-a11y-button.aria-label
+msgid "Hang Up"
+msgstr "Cuir sìos am fòn"
+
+#: pickup-a11y-button.aria-label
+msgid "Pick up"
+msgstr "Tog e"
+
+#. ## LOCALIZATION NOTE: contactNameWithOthers is displayed for missed calls when the number is associated with more than one contact.
 #. ## LOCALIZATION NOTE: case `zero` is never used, no need to translate it.
-#: contactNameWithOthers
-msgctxt "contactNameWithOthers"
+#: contactNameWithOthersSuffix
+#, fuzzy
+msgctxt "contactNameWithOthersSuffix"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: contactNameWithOthers[zero]
-msgid "{{ name }}…"
-msgstr "{{ name }}…"
+#: contactNameWithOthersSuffix[one]
+msgctxt "contactNameWithOthersSuffix[one]"
+msgid "or {{ n }} other"
+msgstr ""
 
-#: contactNameWithOthers[one]
-msgid "{{ name }}… or one other"
-msgstr "{{ name }}… no aonan eile"
+#: contactNameWithOthersSuffix[two]
+msgctxt "contactNameWithOthersSuffix[two]"
+msgid "or {{ n }} other"
+msgstr ""
 
-#: contactNameWithOthers[two]
-msgctxt "contactNameWithOthers[two]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{ name }}... no {{ n }} eile"
+#: contactNameWithOthersSuffix[few]
+msgctxt "contactNameWithOthersSuffix[few]"
+msgid "or {{ n }} other"
+msgstr ""
 
-#: contactNameWithOthers[few]
-msgctxt "contactNameWithOthers[few]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{ name }}... no {{ n }} eile"
+#: contactNameWithOthersSuffix[many]
+msgctxt "contactNameWithOthersSuffix[many]"
+msgid "or {{ n }} other"
+msgstr ""
 
-#: contactNameWithOthers[many]
-msgctxt "contactNameWithOthers[many]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{ name }}... no {{ n }} eile"
-
-#: contactNameWithOthers[other]
-msgctxt "contactNameWithOthers[other]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{ name }}... no {{ n }} eile"
+#: contactNameWithOthersSuffix[other]
+msgctxt "contactNameWithOthersSuffix[other]"
+msgid "or {{ n }} other"
+msgstr ""
 
 #: settings
 msgid "Settings"
 msgstr "Roghainnean"
+
+#. #Call duration units
+#: callDurationMinutes
+msgid "{{ m }}:{{ s }}"
+msgstr ""
+
+#: callDurationHours
+msgid "{{ h }}:{{ m }}:{{ s}}"
+msgstr ""
+
+#~ msgid "To make a call you need to disable airplane mode in settings."
+#~ msgstr ""
+#~ "Feumaidh tu am modh itealain a chur à comas sna roghainnean mus urrainn dhut "
+#~ "fòn a chur."
+
+#~ msgctxt "callAirplaneModeBtnOk"
+#~ msgid "OK"
+#~ msgstr "Ceart ma-thà"
+
+#~ msgid "Airplane Mode is on"
+#~ msgstr "Tha am modh itealain air"
+
+#~ msgid "To make a call, the phone must be connected to a network."
+#~ msgstr ""
+#~ "Feumaidh am fòn a bhith ceangailte ri lìonra mus urrainn dhut fòn a chur."
+
+#~ msgid "Emergency calls are not allowed by the network."
+#~ msgstr "Chan eil gairmean èiginn ceadaichte air an lìonra seo."
+
+#~ msgctxt "emergencyDialogBtnOk"
+#~ msgid "OK"
+#~ msgstr "Ceart ma-thà"
+
+#~ msgid "No network connection"
+#~ msgstr "Chan eil ceangal lìonraidh ann"
+
+#~ msgctxt "contactNameWithOthers"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgid "{{ name }}…"
+#~ msgstr "{{ name }}…"
+
+#~ msgid "{{ name }}… or one other"
+#~ msgstr "{{ name }}… no aonan eile"
+
+#~ msgctxt "contactNameWithOthers[two]"
+#~ msgid "{{ name }}… or {{ n }} other"
+#~ msgstr "{{ name }}... no {{ n }} eile"
+
+#~ msgctxt "contactNameWithOthers[few]"
+#~ msgid "{{ name }}… or {{ n }} other"
+#~ msgstr "{{ name }}... no {{ n }} eile"
+
+#~ msgctxt "contactNameWithOthers[many]"
+#~ msgid "{{ name }}… or {{ n }} other"
+#~ msgstr "{{ name }}... no {{ n }} eile"
+
+#~ msgctxt "contactNameWithOthers[other]"
+#~ msgid "{{ name }}… or {{ n }} other"
+#~ msgstr "{{ name }}... no {{ n }} eile"
 
 #~ msgid "To make a call, disable Airplane Mode."
 #~ msgstr "Cuir à comas am modh itealain gus fòn a chur."

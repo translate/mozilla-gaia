@@ -1,9 +1,20 @@
+#. # LOCALIZATION NOTE
+#. # For each permission there are three strings:
+#. #
+#. #   * the permission name, displayed in the Settings app
+#. #   *-appRequest = displayed in a dialog box when an app requires a permission
+#. #   *-webRequest = displayed in a dialog box when a web site requires a permission
+#. #
+#. # The two latter strings are identical in English but might require a more
+#. # specific phrasing in your locale. Note that permission dialogs will display
+#. # two buttons: “Allow” and “Deny”.
+#. #
 #. extracted from locales/en-US/shared/permissions/permissions.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-14 01:41+0100\n"
+"POT-Creation-Date: 2013-01-21 23:37+0100\n"
 "PO-Revision-Date: 2012-11-29 01:40+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,169 +24,213 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Translate Toolkit 1.9.1-pre\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1354153245.0\n"
 
-#: alarm
-msgid "Alarm"
-msgstr "Caismeachd"
-
-#: alarms
-msgid "Alarms"
-msgstr "Caismeachdan"
-
-#: attention
-msgid "Attention screen"
-msgstr "Sgrìn na h-aire"
-
-#: background
-msgctxt "background"
-msgid "Background service"
-msgstr "Seirbheis sa chùlaibh"
-
-#: backgroundservice
-msgctxt "backgroundservice"
-msgid "Background service"
-msgstr "Seirbheis sa chùlaibh"
-
-#: bluetooth
-#, fuzzy
-msgid "Bluetooth"
-msgstr "Bluetooth"
-
-#: browser
-msgid "Browser"
-msgstr "Brabhsair"
-
-#: camera
-msgctxt "camera"
-msgid "Camera"
-msgstr "Camara"
-
-#: contacts
+#: perm-contacts
 msgid "Contacts"
 msgstr "Luchd-aithne"
 
-#: content-camera
-msgctxt "content-camera"
-msgid "Camera"
-msgstr "Camara"
+#: perm-contacts-appRequest
+msgid "{{app}} would like to access your contact list."
+msgstr ""
 
-#: deprecated-hwvideo
-msgid "Deprecated HWVideo"
-msgstr "HWVideo nach molar tuilleadh"
+#: perm-contacts-webRequest
+msgid "{{site}} would like to access your contact list."
+msgstr ""
 
-#: desktop-notification
+#: perm-desktop-notification
 msgid "Notifications"
 msgstr "Brathan"
 
-#: device-storage:apps
-msgid "Apps storage"
-msgstr "Stòras nan aplacaidean"
+#: perm-desktop-notification-appRequest
+msgid "{{app}} would like to display notifications."
+msgstr ""
 
-#: device-storage:music
-msgid "Music storage"
+#: perm-desktop-notification-webRequest
+msgid "{{site}} would like to display notifications."
+msgstr ""
+
+#: perm-device-storage-music
+#, fuzzy
+msgid "Music Storage"
 msgstr "Stòras a' chiùil"
 
-#: device-storage:pictures
-msgid "Pictures storage"
-msgstr "Stòras nan dealbhan"
+#: perm-device-storage-music-appRequest
+msgid "{{app}} would like to access your music."
+msgstr ""
 
-#: device-storage:videos
-msgid "Videos"
-msgstr "Videothan"
+#: perm-device-storage-music-webRequest
+msgid "{{site}} would like to access your music."
+msgstr ""
 
-#: embed-apps
-msgid "Embed apps"
-msgstr "Leabaich na h-aplacaidean"
+#: perm-device-storage-pictures
+msgid "Image Storage"
+msgstr ""
 
-#: fmradio
-msgctxt "fmradio"
+#: perm-device-storage-pictures-appRequest
+msgid "{{app}} would like to access your images."
+msgstr ""
+
+#: perm-device-storage-pictures-webRequest
+msgid "{{site}} would like to access your images."
+msgstr ""
+
+#: perm-device-storage-sdcard
+msgid "Memory Card Storage"
+msgstr ""
+
+#: perm-device-storage-sdcard-appRequest
+msgid "{{app}} would like to access your memory card."
+msgstr ""
+
+#: perm-device-storage-sdcard-webRequest
+msgid "{{site}} would like to access your memory card."
+msgstr ""
+
+#: perm-device-storage-videos
+msgid "Video Storage"
+msgstr ""
+
+#: perm-device-storage-videos-appRequest
+msgid "{{app}} would like to access your videos."
+msgstr ""
+
+#: perm-device-storage-videos-webRequest
+msgid "{{site}} would like to access your videos."
+msgstr ""
+
+#: perm-fmradio
+#, fuzzy
 msgid "FM Radio"
 msgstr "Rèidio FM"
 
-#: geolocation
+#: perm-fmradio-appRequest
+msgid "{{app}} would like to use the FM Radio."
+msgstr ""
+
+#: perm-fmradio-webRequest
+msgid "{{site}} would like to use the FM Radio."
+msgstr ""
+
+#: perm-geolocation
 msgid "Geolocation"
 msgstr "Geò-lorgadh"
 
-#: idle
-msgid "Idle"
-msgstr "'Na thàmh"
+#: perm-geolocation-appRequest
+msgid "{{app}} would like to know your location."
+msgstr ""
 
-#: mobileconnection
-msgid "Mobile connection"
-msgstr "Ceangal mobile"
+#: perm-geolocation-webRequest
+msgid "{{site}} would like to know your location."
+msgstr ""
 
-#: mozApps
-msgid "Apps"
-msgstr "Aplacaidean"
+#~ msgid "Alarm"
+#~ msgstr "Caismeachd"
 
-#: mozFM
-msgctxt "mozFM"
-msgid "FM Radio"
-msgstr "Rèidio FM"
+#~ msgid "Alarms"
+#~ msgstr "Caismeachdan"
 
-#: network-event
-msgid "Network events"
-msgstr "Tachartasan lìonraidh"
+#~ msgid "Attention screen"
+#~ msgstr "Sgrìn na h-aire"
 
-#: networkstats-manager
-msgid "Network usage"
-msgstr "Cleachdadh an lìonraidh"
+#~ msgctxt "background"
+#~ msgid "Background service"
+#~ msgstr "Seirbheis sa chùlaibh"
 
-#: permissions
-msgid "Permissions management"
-msgstr "Manaidsear nan ceadan"
+#~ msgctxt "backgroundservice"
+#~ msgid "Background service"
+#~ msgstr "Seirbheis sa chùlaibh"
 
-#: power
-msgid "Power"
-msgstr "Cumhachd"
+#, fuzzy
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth"
 
-#: settings
-msgid "Settings management"
-msgstr "Stiùireadh nan roghainnean"
+#~ msgid "Browser"
+#~ msgstr "Brabhsair"
 
-#: sms
-msgid "SMS"
-msgstr "SMS"
+#~ msgctxt "camera"
+#~ msgid "Camera"
+#~ msgstr "Camara"
 
-#: storage
-msgid "Storage"
-msgstr "Stòras"
+#~ msgctxt "content-camera"
+#~ msgid "Camera"
+#~ msgstr "Camara"
 
-#: systemXHR
-msgid "System XHR"
-msgstr "XHR an t-siostaim"
+#~ msgid "Deprecated HWVideo"
+#~ msgstr "HWVideo nach molar tuilleadh"
 
-#: tcp-socket
-msgid "TCP socket"
-msgstr "Socaid TCP"
+#~ msgid "Apps storage"
+#~ msgstr "Stòras nan aplacaidean"
 
-#: telephony
-msgid "Telephony"
-msgstr "Fònadh"
+#~ msgid "Pictures storage"
+#~ msgstr "Stòras nan dealbhan"
 
-#: time
-msgid "Time"
-msgstr "Àm"
+#~ msgid "Videos"
+#~ msgstr "Videothan"
 
-#: voicemail
-msgid "Voicemail"
-msgstr "Post-gutha"
+#~ msgid "Embed apps"
+#~ msgstr "Leabaich na h-aplacaidean"
 
-#: webapps-manage
-msgid "Apps management"
-msgstr "Stiùireadh nan aplacaidean"
+#~ msgid "Idle"
+#~ msgstr "'Na thàmh"
 
-#: wifi-manage
-msgid "Wi-Fi management"
-msgstr "Stiùireadh WiFi"
+#~ msgid "Mobile connection"
+#~ msgstr "Ceangal mobile"
 
-#: wifi
-msgid "Wi-Fi"
-msgstr "WiFi"
+#~ msgid "Apps"
+#~ msgstr "Aplacaidean"
+
+#~ msgctxt "mozFM"
+#~ msgid "FM Radio"
+#~ msgstr "Rèidio FM"
+
+#~ msgid "Network events"
+#~ msgstr "Tachartasan lìonraidh"
+
+#~ msgid "Network usage"
+#~ msgstr "Cleachdadh an lìonraidh"
+
+#~ msgid "Permissions management"
+#~ msgstr "Manaidsear nan ceadan"
+
+#~ msgid "Power"
+#~ msgstr "Cumhachd"
+
+#~ msgid "Settings management"
+#~ msgstr "Stiùireadh nan roghainnean"
+
+#~ msgid "SMS"
+#~ msgstr "SMS"
+
+#~ msgid "Storage"
+#~ msgstr "Stòras"
+
+#~ msgid "System XHR"
+#~ msgstr "XHR an t-siostaim"
+
+#~ msgid "TCP socket"
+#~ msgstr "Socaid TCP"
+
+#~ msgid "Telephony"
+#~ msgstr "Fònadh"
+
+#~ msgid "Time"
+#~ msgstr "Àm"
+
+#~ msgid "Voicemail"
+#~ msgstr "Post-gutha"
+
+#~ msgid "Apps management"
+#~ msgstr "Stiùireadh nan aplacaidean"
+
+#~ msgid "Wi-Fi management"
+#~ msgstr "Stiùireadh WiFi"
+
+#~ msgid "Wi-Fi"
+#~ msgstr "WiFi"
 
 #~ msgctxt "mozBluetooth"
 #~ msgid "Bluetooth"

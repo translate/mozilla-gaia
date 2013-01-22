@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-27 13:05+0100\n"
+"POT-Creation-Date: 2013-01-21 23:37+0100\n"
 "PO-Revision-Date: 2012-12-24 14:45+0000\n"
 "Last-Translator: siddharthvithlani <siddharth.vithlani@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,8 +12,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1356360313.0\n"
 
 #: setup-app-name-header
@@ -29,36 +30,40 @@ msgstr ""
 msgid "To send and receive email, you will need to set up an account."
 msgstr ""
 
-#: setup-account-header
-msgid "New mail account setup"
+#. # Title of the account setup card where the user enters their display name,
+#. # e-mail address, and password.
+#: setup-account-header3
+msgid "New account"
 msgstr ""
 
 #: setup-info-header
 msgid "Your login information"
 msgstr ""
 
-#: setup-hotmail-account
-msgid "Hotmail account"
+#. # The placeholder for the display name of the user that will be displayed in the
+#. # account setup screen input box for the display name until they enter any text
+#. # in the box.  When you send an e-mail, the "From" header contains the user's
+#. # display name ("John Doe") as well as the e-mail address
+#. # ("john.doe@example.com").  In the future this input box will be labeled, but
+#. # it is currently unlabeled because of screen real estate concerns.
+#: setup-info-name.placeholder
+msgid "Your name"
 msgstr ""
 
-#: setup-gmail-account
-msgid "Gmail account"
+#. # The placeholder for the user's e-mail address that will be displayed in the
+#. # account setup screen input box for the e-mail address until they enter any
+#. # text in the box.  The value will be used to configure the e-mail account.
+#: setup-info-email.placeholder
+msgid "someone@example.com"
 msgstr ""
 
-#: setup-other-email
-msgid "Other email"
-msgstr ""
-
-#: setup-info-name-placeholder
-msgid "Name"
-msgstr ""
-
-#: setup-info-email-placeholder
-msgid "Email address"
-msgstr ""
-
-#: setup-info-password-placeholder
-msgctxt "setup-info-password-placeholder"
+#. # The placeholder for the user's password that will be displayed in the account
+#. # setup screen input box for the password until they enter any text in the box.
+#. # The value will be used to configure the e-mail account and saved for future
+#. # usage.
+#: setup-info-password.placeholder
+#, fuzzy
+msgctxt "setup-info-password.placeholder"
 msgid "Password"
 msgstr "પાસવર્ડ"
 
@@ -87,32 +92,109 @@ msgstr "નવા ખાતાને ઉમેરો"
 msgid "Continue to Mail"
 msgstr "મેઇલ પર ચાલુ રાખો"
 
-#: setup-error-bad-user-or-pass
-msgid "Invalid username or password"
-msgstr "અમાન્ય વપરાશકર્તાનામ અથવા પાસવર્ડ છે "
+#. # The error for when the user tries to create an account without a network
+#. # connection active.
+#: setup-error-offline
+msgid "This device is currently offline. Connect to a network and try again."
+msgstr ""
 
+#. # The error for either a bad username or a bad password.  For security reasons,
+#. # servers try not to distinguish between the two which is why we also cannot
+#. # tell them apart either.  Also, if the user made a typo, they could have made
+#. # it in either place.
+#: setup-error-bad-user-or-pass2
+msgid "Invalid username or password. Check for typos."
+msgstr ""
+
+#. # The error for a user having the correct username and password, but the mail
+#. # server explicitly indicates they don't have permission to talk to the mail
+#. # server.  This is currently only expected from ActiveSync servers; situations
+#. # like gmail over IMAP indicating that IMAP is disabled for the account or
+#. # domain have their own error code: setup-error-imap-disabled.
 #: setup-error-not-authorized
 msgid "The server said you're not authorized to create an account"
 msgstr "સર્વર જણાવ્યું હતું કે તમે એક એકાઉન્ટ બનાવવા માટે અધિકૃત નથી."
 
-#: setup-error-unknown
-msgid "An unknown error occurred"
+#. # The fallback error; if we don't have a better error, we report this.
+#: setup-error-unknown2
+msgid ""
+"An unknown error occurred. Check your network connection or try the manual "
+"configuration option."
 msgstr ""
 
+#. # The error for Gmail accounts where 2-factor authentication (where you receive
+#. # a text message on your phone or run a special app) is enabled, and so the
+#. # user needs to create and use an application specific password to allow us to
+#. # talk to the server.
 #: setup-error-needs-app-pass
 msgid ""
 "You must use an application specific password for two-factor Gmail accounts"
 msgstr ""
 
+#. # The error for Gmail accounts where IMAP is not enabled.  This can occur
+#. # for individual users where they have disabled IMAP from the settings UI.
+#. # This can also occur for apps-for-domains where the domain is not configured
+#. # to support IMAP.
 #: setup-error-imap-disabled
 msgid "You must enable IMAP for your Gmail account"
 msgstr ""
 
-#: setup-manual-config
-msgid "Manually set up account"
+#. # The error for when we are able to contact a server that should be the mail
+#. # server but we are unable to establish a secure connection.
+#: setup-error-bad-security
+msgid ""
+"Unable to establish a secure connection with \"{{server}}\". There may be a "
+"problem with your network or the server."
+msgstr ""
+
+#. # The error for when we try to contact a server but see no indication of a
+#. # response before we give up because of a timeout.
+#: setup-error-unresponsive-server
+msgid ""
+"Unable to establish a connection with \"{{server}}\". There may be a problem "
+"with the network."
+msgstr ""
+
+#. # The error for when we able to establish a (secure) connection with the server,
+#. # but there is some type of failure talking to the server that isn't covered by
+#. # other errors.  Hopefully this is just a temporary problem on the server, but
+#. # it could also be a fundamental incompatibility between our software and the
+#. # server's software.
+#: setup-error-server-problem
+msgid "There is a problem with the server \"{{server}}\". Try again later."
+msgstr ""
+
+#. # The error for when we are trying to figure out the right server settings for
+#. # an account based on the e-mail address the user typed in during configuration,
+#. # but we can't find the right settings.  This is either because the user made a
+#. # typo and so we are looking for configuration data that does not exist, there
+#. # were network failures trying to look the information up, or the information is
+#. # not available.
+#: setup-error-no-config-info
+msgid ""
+"Unable to automatically configure your account. Correct your e-mail address "
+"or try the manual configuration option."
+msgstr ""
+
+#. # The error for when the user is trying to set up an account with a server that
+#. # currently indicates it is offline for maintenance.
+#: setup-error-server-maintenance
+msgid "The server \"{{server}}\" is offline for maintenance. Try again later."
+msgstr ""
+
+#: setup-manual-prompt
+msgid ""
+"Touch \"next\" to continue, or, if you know all of your server's details, you "
+"can manually set up the account:"
+msgstr ""
+
+#: setup-manual-config2
+msgctxt "setup-manual-config2"
+msgid "Manual setup"
 msgstr ""
 
 #: setup-manual-config-header
+msgctxt "setup-manual-config-header"
 msgid "Manual setup"
 msgstr ""
 
@@ -149,17 +231,18 @@ msgstr ""
 msgid "SSL"
 msgstr ""
 
-#: setup-manual-hostname-placeholder
-msgctxt "setup-manual-hostname-placeholder"
+#: setup-manual-hostname.placeholder
+msgctxt "setup-manual-hostname.placeholder"
 msgid "Hostname"
 msgstr ""
 
-#: setup-manual-port-placeholder
+#: setup-manual-port.placeholder
 msgid "Port Number"
 msgstr ""
 
-#: setup-manual-username-placeholder
-msgctxt "setup-manual-username-placeholder"
+#: setup-manual-username.placeholder
+#, fuzzy
+msgctxt "setup-manual-username.placeholder"
 msgid "Username"
 msgstr "વપરાશકર્તાનુ નામ"
 
@@ -170,6 +253,10 @@ msgstr "ખોટો પાસવર્ડ"
 #: setup-bad-password
 msgid "We could not sign in to the server. Maybe your password is wrong?"
 msgstr ""
+
+#: setup-new-password.placeholder
+msgid "New password"
+msgstr "નવો પાસવર્ડ"
 
 #: setup-fix-password
 msgid "Retry with new password"
@@ -196,16 +283,13 @@ msgid "You must enable IMAP on your Gmail account "
 msgstr ""
 
 #: setup-gmail-imap-retry
+msgctxt "setup-gmail-imap-retry"
 msgid "Retry"
 msgstr ""
 
 #: settings-main-header
 msgid "Mail settings"
 msgstr "ઈ-મેઈલ સુયોજનો"
-
-#: settings-close
-msgid "Close"
-msgstr "બંધ કરો"
 
 #: settings-done
 msgid "Done"
@@ -287,8 +371,9 @@ msgid "30 minutes"
 msgstr "૩૦ મિનિટો"
 
 #: settings-check-60min
+#, fuzzy
 msgid "60 minutes"
-msgstr ""
+msgstr "૧૦ મિનિટો"
 
 #: settings-check-manual
 msgid "Manually"
@@ -345,10 +430,6 @@ msgctxt "settings-password"
 msgid "Password"
 msgstr "પાસવર્ડ"
 
-#: settings-new-password
-msgid "New password"
-msgstr "નવો પાસવર્ડ"
-
 #: settings-save
 msgid "Save"
 msgstr "સંગ્રહ કરો"
@@ -386,29 +467,34 @@ msgid "All messages"
 msgstr ""
 
 #: accounts-header
+#, fuzzy
 msgctxt "accounts-header"
 msgid "Accounts"
-msgstr ""
+msgstr "ખાતાઓ"
 
 #: accounts-button
+#, fuzzy
 msgctxt "accounts-button"
 msgid "Accounts"
-msgstr ""
+msgstr "ખાતાઓ"
 
 #: envelope-from
+#, fuzzy
 msgctxt "envelope-from"
 msgid "From"
-msgstr ""
+msgstr "પ્રતિ"
 
 #: envelope-to
+#, fuzzy
 msgctxt "envelope-to"
 msgid "To"
-msgstr ""
+msgstr "પ્રતિ"
 
 #: envelope-cc
+#, fuzzy
 msgctxt "envelope-cc"
 msgid "Cc"
-msgstr ""
+msgstr "ને પણ"
 
 #: envelope-bcc
 msgid "Bcc"
@@ -470,6 +556,10 @@ msgstr ""
 
 #: message-attachment-view.textContent
 msgid "View"
+msgstr ""
+
+#: message-no-subject
+msgid "(no subject)"
 msgstr ""
 
 #: message-edit-menu-star
@@ -545,13 +635,15 @@ msgid "{[ plural(n) ]}"
 msgstr ""
 
 #: message-download-images[one]
+#, fuzzy
 msgid "This email contains one image. Click to download."
-msgstr ""
+msgstr "આ ઇમેઇલ {{n}} છબીઓ સમાવે છે. ડાઉનલોડ કરવા માટે ક્લિક કરો."
 
 #: message-download-images[two]
+#, fuzzy
 msgctxt "message-download-images[two]"
 msgid "This email contains {{ n }} images. Click to download."
-msgstr ""
+msgstr "આ ઇમેઇલ {{n}} છબીઓ સમાવે છે. ડાઉનલોડ કરવા માટે ક્લિક કરો."
 
 #: message-download-images[few]
 msgctxt "message-download-images[few]"
@@ -592,34 +684,40 @@ msgid "Delete {{ n }} email messages?"
 msgstr "કાઢી નાંખો {{n}} ઇમેઇલ સંદેશાઓ?"
 
 #: message-multiedit-delete-confirm[few]
+#, fuzzy
 msgctxt "message-multiedit-delete-confirm[few]"
 msgid "Delete {{ n }} email messages?"
-msgstr ""
+msgstr "કાઢી નાંખો {{n}} ઇમેઇલ સંદેશાઓ?"
 
 #: message-multiedit-delete-confirm[many]
+#, fuzzy
 msgctxt "message-multiedit-delete-confirm[many]"
 msgid "Delete {{ n }} email messages?"
-msgstr ""
+msgstr "કાઢી નાંખો {{n}} ઇમેઇલ સંદેશાઓ?"
 
 #: message-multiedit-delete-confirm[other]
+#, fuzzy
 msgctxt "message-multiedit-delete-confirm[other]"
 msgid "Delete {{ n }} email messages?"
-msgstr ""
+msgstr "કાઢી નાંખો {{n}} ઇમેઇલ સંદેશાઓ?"
 
 #: message-search-from
+#, fuzzy
 msgctxt "message-search-from"
 msgid "From"
-msgstr ""
+msgstr "પ્રતિ"
 
 #: message-search-to
+#, fuzzy
 msgctxt "message-search-to"
 msgid "To"
-msgstr ""
+msgstr "પ્રતિ"
 
 #: message-search-subject
+#, fuzzy
 msgctxt "message-search-subject"
 msgid "Subject"
-msgstr ""
+msgstr "વિષય"
 
 #: message-search-body
 msgid "Body"
@@ -669,6 +767,14 @@ msgstr ""
 msgid "Folders"
 msgstr ""
 
+#: account-last-synced-label
+msgid "Last sync: "
+msgstr ""
+
+#: account-never-synced
+msgid "Never"
+msgstr ""
+
 #: reply-quoting-wrote
 msgid "{name} wrote"
 msgstr ""
@@ -677,10 +783,16 @@ msgstr ""
 msgid "Original message"
 msgstr ""
 
+#. # L10n note: These are the labels we use when displaying the envelope info for a
+#. # message that is forwarded inline.  While automatic recovery of this
+#. # information by clients is made difficult by these strings regularly being
+#. # localized, we attempt to remain consistent with apps such as Thunderbird for
+#. # at least English.
 #: forward-header-subject
+#, fuzzy
 msgctxt "forward-header-subject"
 msgid "Subject"
-msgstr ""
+msgstr "વિષય"
 
 #: forward-header-date
 msgid "Date"
@@ -691,8 +803,10 @@ msgctxt "forward-header-from"
 msgid "From"
 msgstr "પ્રતિ"
 
+#. # This really wants to have the dash in it for consistency with Thunderbird
 #: forward-header-reply-to
-msgid "Reply to"
+#, fuzzy
+msgid "Reply-To"
 msgstr "ને જવાબ આપો"
 
 #: forward-header-to
@@ -743,8 +857,9 @@ msgid "Undo"
 msgstr "પાછું લાવો"
 
 #: toaster-retry
-msgid "Try again"
-msgstr "ફરીથી પ્રયત્ન કરો"
+msgctxt "toaster-retry"
+msgid "Retry"
+msgstr ""
 
 #: toaster-message-star
 msgctxt "toaster-message-star"
@@ -814,24 +929,28 @@ msgid "1 message marked as read"
 msgstr "૧ સંદેશ વાચ્યા તરીકે ચિહ્નિત કરો "
 
 #: toaster-message-read[two]
+#, fuzzy
 msgctxt "toaster-message-read[two]"
 msgid "{{ n }} messages marked as read"
-msgstr ""
+msgstr "{{N}} સંદેશાઓ ન વાંચેલા તરીકે ચિહ્નિત કરો "
 
 #: toaster-message-read[few]
+#, fuzzy
 msgctxt "toaster-message-read[few]"
 msgid "{{ n }} messages marked as read"
-msgstr ""
+msgstr "{{N}} સંદેશાઓ ન વાંચેલા તરીકે ચિહ્નિત કરો "
 
 #: toaster-message-read[many]
+#, fuzzy
 msgctxt "toaster-message-read[many]"
 msgid "{{ n }} messages marked as read"
-msgstr ""
+msgstr "{{N}} સંદેશાઓ ન વાંચેલા તરીકે ચિહ્નિત કરો "
 
 #: toaster-message-read[other]
+#, fuzzy
 msgctxt "toaster-message-read[other]"
 msgid "{{ n }} messages marked as read"
-msgstr ""
+msgstr "{{N}} સંદેશાઓ ન વાંચેલા તરીકે ચિહ્નિત કરો "
 
 #: toaster-message-unread
 msgctxt "toaster-message-unread"
@@ -839,13 +958,15 @@ msgid "{[ plural(n) ]}"
 msgstr ""
 
 #: toaster-message-unread[one]
+#, fuzzy
 msgid "1 message marked as unread"
-msgstr ""
+msgstr "૧ સંદેશ વાચ્યા તરીકે ચિહ્નિત કરો "
 
 #: toaster-message-unread[two]
+#, fuzzy
 msgctxt "toaster-message-unread[two]"
 msgid "{{ n }} messages marked as unread"
-msgstr ""
+msgstr "{{N}} સંદેશાઓ ન વાંચેલા તરીકે ચિહ્નિત કરો "
 
 #: toaster-message-unread[few]
 msgctxt "toaster-message-unread[few]"
@@ -920,6 +1041,19 @@ msgctxt "toaster-message-delete[other]"
 msgid "{{ n }} messages deleted"
 msgstr ""
 
+#: toaster-retryable-syncfailed
+msgid "Unable to connect to server"
+msgstr ""
+
 #: form-clear-input
 msgid "Remove text"
 msgstr "લખાણ દૂર કરો"
+
+#~ msgid "Invalid username or password"
+#~ msgstr "અમાન્ય વપરાશકર્તાનામ અથવા પાસવર્ડ છે "
+
+#~ msgid "Close"
+#~ msgstr "બંધ કરો"
+
+#~ msgid "Try again"
+#~ msgstr "ફરીથી પ્રયત્ન કરો"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-14 01:41+0100\n"
+"POT-Creation-Date: 2013-01-21 23:37+0100\n"
 "PO-Revision-Date: 2012-12-31 19:17+0000\n"
 "Last-Translator: Avash <avashmulmi@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1356981420.0\n"
@@ -29,19 +29,6 @@ msgstr "अवस्थित सम्पर्कमा थप्नुहो�
 msgid "All"
 msgstr "सबै"
 
-#: callAirplaneModeMessage
-msgid "To make a call you need to disable airplane mode in settings."
-msgstr "कल गर्नको लागि तपाईँले उडान शैली अक्षम पार्नुपर्छ।"
-
-#: callAirplaneModeBtnOk
-msgctxt "callAirplaneModeBtnOk"
-msgid "OK"
-msgstr "ठीक छ"
-
-#: callAirplaneModeTitle
-msgid "Airplane Mode is on"
-msgstr "उडान शैली खुला छ"
-
 #: callLog
 msgid "Call log"
 msgstr "कल लग"
@@ -49,10 +36,6 @@ msgstr "कल लग"
 #: connecting
 msgid "Connecting"
 msgstr "जडान हुँदैछ"
-
-#: camera-a11y-button.aria-label
-msgid "Hang Up"
-msgstr "ह्याङ अप"
 
 #: cancel
 msgid "Cancel"
@@ -154,23 +137,6 @@ msgstr "{{ n }} वटा चयन गरिएको"
 msgid "Edit"
 msgstr "सम्पादन गर्नुहोस्"
 
-#: emergencyDialogBodyBadNumber
-msgid "To make a call, the phone must be connected to a network."
-msgstr "कल गर्नका लागि, फोन सञ्जालसँग जडित हुनुपर्दछ।"
-
-#: emergencyDialogBodyDeviceNotAccepted
-msgid "Emergency calls are not allowed by the network."
-msgstr "सञ्जालले आपतकालिन कलहरुलाई अनुमति दिएको छैन।"
-
-#: emergencyDialogBtnOk
-msgctxt "emergencyDialogBtnOk"
-msgid "OK"
-msgstr "ठीक छ"
-
-#: emergencyDialogTitle
-msgid "No network connection"
-msgstr "सञ्जाल जडान छैन"
-
 #: from
 msgid "From {{sender}}"
 msgstr "{{sender}}बाट"
@@ -231,10 +197,6 @@ msgstr "आज"
 msgid "Unknown number"
 msgstr "अज्ञात अंक"
 
-#: unlock-a11y-button.aria-label
-msgid "Pick up"
-msgstr "उठानोउस"
-
 #: yesterday
 msgid "Yesterday"
 msgstr "हिजो"
@@ -264,41 +226,106 @@ msgstr "सबै पाठ मेटाउनुहोस्"
 msgid "Call"
 msgstr "कल गर्नुहोस्"
 
-#. ## LOCALIZATION NOTE: contactNameWithOthers is displayed for missed calls when the number is associated with more than one contact.  {{ name }} is the name of the first contact.
+#. ## LOCALIZATION NOTE: these labels aren't displayed but they're used for acessibility
+#: hangup-a11y-button.aria-label
+msgid "Hang Up"
+msgstr "ह्याङ अप"
+
+#: pickup-a11y-button.aria-label
+msgid "Pick up"
+msgstr "उठानोउस"
+
+#. ## LOCALIZATION NOTE: contactNameWithOthers is displayed for missed calls when the number is associated with more than one contact.
 #. ## LOCALIZATION NOTE: case `zero` is never used, no need to translate it.
-#: contactNameWithOthers
-msgctxt "contactNameWithOthers"
+#: contactNameWithOthersSuffix
+#, fuzzy
+msgctxt "contactNameWithOthersSuffix"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: contactNameWithOthers[zero]
-msgid "{{ name }}…"
-msgstr "{{ name }}…"
+#: contactNameWithOthersSuffix[one]
+msgctxt "contactNameWithOthersSuffix[one]"
+msgid "or {{ n }} other"
+msgstr ""
 
-#: contactNameWithOthers[one]
-msgid "{{ name }}… or one other"
-msgstr "{{ name }}… वा एक अर्को"
+#: contactNameWithOthersSuffix[two]
+msgctxt "contactNameWithOthersSuffix[two]"
+msgid "or {{ n }} other"
+msgstr ""
 
-#: contactNameWithOthers[two]
-msgctxt "contactNameWithOthers[two]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{ name }}…वा {{ n }} अर्को"
+#: contactNameWithOthersSuffix[few]
+msgctxt "contactNameWithOthersSuffix[few]"
+msgid "or {{ n }} other"
+msgstr ""
 
-#: contactNameWithOthers[few]
-msgctxt "contactNameWithOthers[few]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{ name }}…वा {{ n }} अर्को"
+#: contactNameWithOthersSuffix[many]
+msgctxt "contactNameWithOthersSuffix[many]"
+msgid "or {{ n }} other"
+msgstr ""
 
-#: contactNameWithOthers[many]
-msgctxt "contactNameWithOthers[many]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{ name }}…वा {{ n }} अर्को"
-
-#: contactNameWithOthers[other]
-msgctxt "contactNameWithOthers[other]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{ name }}…वा {{ n }} अर्को"
+#: contactNameWithOthersSuffix[other]
+msgctxt "contactNameWithOthersSuffix[other]"
+msgid "or {{ n }} other"
+msgstr ""
 
 #: settings
 msgid "Settings"
 msgstr "सेटिङहरू"
+
+#. #Call duration units
+#: callDurationMinutes
+msgid "{{ m }}:{{ s }}"
+msgstr ""
+
+#: callDurationHours
+msgid "{{ h }}:{{ m }}:{{ s}}"
+msgstr ""
+
+#~ msgid "To make a call you need to disable airplane mode in settings."
+#~ msgstr "कल गर्नको लागि तपाईँले उडान शैली अक्षम पार्नुपर्छ।"
+
+#~ msgctxt "callAirplaneModeBtnOk"
+#~ msgid "OK"
+#~ msgstr "ठीक छ"
+
+#~ msgid "Airplane Mode is on"
+#~ msgstr "उडान शैली खुला छ"
+
+#~ msgid "To make a call, the phone must be connected to a network."
+#~ msgstr "कल गर्नका लागि, फोन सञ्जालसँग जडित हुनुपर्दछ।"
+
+#~ msgid "Emergency calls are not allowed by the network."
+#~ msgstr "सञ्जालले आपतकालिन कलहरुलाई अनुमति दिएको छैन।"
+
+#~ msgctxt "emergencyDialogBtnOk"
+#~ msgid "OK"
+#~ msgstr "ठीक छ"
+
+#~ msgid "No network connection"
+#~ msgstr "सञ्जाल जडान छैन"
+
+#~ msgctxt "contactNameWithOthers"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgid "{{ name }}…"
+#~ msgstr "{{ name }}…"
+
+#~ msgid "{{ name }}… or one other"
+#~ msgstr "{{ name }}… वा एक अर्को"
+
+#~ msgctxt "contactNameWithOthers[two]"
+#~ msgid "{{ name }}… or {{ n }} other"
+#~ msgstr "{{ name }}…वा {{ n }} अर्को"
+
+#~ msgctxt "contactNameWithOthers[few]"
+#~ msgid "{{ name }}… or {{ n }} other"
+#~ msgstr "{{ name }}…वा {{ n }} अर्को"
+
+#~ msgctxt "contactNameWithOthers[many]"
+#~ msgid "{{ name }}… or {{ n }} other"
+#~ msgstr "{{ name }}…वा {{ n }} अर्को"
+
+#~ msgctxt "contactNameWithOthers[other]"
+#~ msgid "{{ name }}… or {{ n }} other"
+#~ msgstr "{{ name }}…वा {{ n }} अर्को"

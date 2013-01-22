@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-14 01:41+0100\n"
+"POT-Creation-Date: 2013-01-21 23:37+0100\n"
 "PO-Revision-Date: 2013-01-04 13:53+0200\n"
 "Last-Translator: Ibrahima SARR <ibrahima.sarr@pulaagu.com>\n"
 "Language-Team: FULA LOCALIZATION\n"
@@ -12,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -29,19 +29,6 @@ msgstr "Ɓeydu e jokkondiral goodngal"
 msgid "All"
 msgstr "Fof"
 
-#: callAirplaneModeMessage
-msgid "To make a call you need to disable airplane mode in settings."
-msgstr "Ngam noddude, alaa e sago ndaaƴaa mbayka ndiwoowa to teelte toh."
-
-#: callAirplaneModeBtnOk
-msgctxt "callAirplaneModeBtnOk"
-msgid "OK"
-msgstr "OK"
-
-#: callAirplaneModeTitle
-msgid "Airplane Mode is on"
-msgstr "Mbayka Ndiwoowa ena hurmi"
-
 #: callLog
 msgid "Call log"
 msgstr "Aslol noddaali"
@@ -49,10 +36,6 @@ msgstr "Aslol noddaali"
 #: connecting
 msgid "Connecting"
 msgstr "Nana seŋoo"
-
-#: camera-a11y-button.aria-label
-msgid "Hang Up"
-msgstr "Korsu"
 
 #: cancel
 msgid "Cancel"
@@ -154,23 +137,6 @@ msgstr "{{ n }} labaama"
 msgid "Edit"
 msgstr "Taƴto"
 
-#: emergencyDialogBodyBadNumber
-msgid "To make a call, the phone must be connected to a network."
-msgstr "Ngam noddude, cinndel ngel ena foti seŋaade e resoo."
-
-#: emergencyDialogBodyDeviceNotAccepted
-msgid "Emergency calls are not allowed by the network."
-msgstr "Noddaali keñoraaɗi njamiraaka e resoo oo."
-
-#: emergencyDialogBtnOk
-msgctxt "emergencyDialogBtnOk"
-msgid "OK"
-msgstr "OK"
-
-#: emergencyDialogTitle
-msgid "No network connection"
-msgstr "Alaa ceŋol resoo"
-
 #: from
 msgid "From {{sender}}"
 msgstr "Ummoraade to {{sender}}"
@@ -231,10 +197,6 @@ msgstr "Hannde"
 msgid "Unknown number"
 msgstr "Tonngoode anndaaka"
 
-#: unlock-a11y-button.aria-label
-msgid "Pick up"
-msgstr "Ƴeftu"
-
 #: yesterday
 msgid "Yesterday"
 msgstr "Haŋki"
@@ -264,44 +226,109 @@ msgstr "Momtu binndi fof"
 msgid "Call"
 msgstr "Noddu"
 
-#. ## LOCALIZATION NOTE: contactNameWithOthers is displayed for missed calls when the number is associated with more than one contact.  {{ name }} is the name of the first contact.
+#. ## LOCALIZATION NOTE: these labels aren't displayed but they're used for acessibility
+#: hangup-a11y-button.aria-label
+msgid "Hang Up"
+msgstr "Korsu"
+
+#: pickup-a11y-button.aria-label
+msgid "Pick up"
+msgstr "Ƴeftu"
+
+#. ## LOCALIZATION NOTE: contactNameWithOthers is displayed for missed calls when the number is associated with more than one contact.
 #. ## LOCALIZATION NOTE: case `zero` is never used, no need to translate it.
-#: contactNameWithOthers
-msgctxt "contactNameWithOthers"
+#: contactNameWithOthersSuffix
+#, fuzzy
+msgctxt "contactNameWithOthersSuffix"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: contactNameWithOthers[zero]
-msgid "{{ name }}…"
-msgstr "{{ name }}…"
+#: contactNameWithOthersSuffix[one]
+msgctxt "contactNameWithOthersSuffix[one]"
+msgid "or {{ n }} other"
+msgstr ""
 
-#: contactNameWithOthers[one]
-msgid "{{ name }}… or one other"
-msgstr "{{ name }}… walla gooto goɗɗo"
+#: contactNameWithOthersSuffix[two]
+msgctxt "contactNameWithOthersSuffix[two]"
+msgid "or {{ n }} other"
+msgstr ""
 
-#: contactNameWithOthers[two]
-msgctxt "contactNameWithOthers[two]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{ name }}… walla {{ n }} woɗnde"
+#: contactNameWithOthersSuffix[few]
+msgctxt "contactNameWithOthersSuffix[few]"
+msgid "or {{ n }} other"
+msgstr ""
 
-#: contactNameWithOthers[few]
-msgctxt "contactNameWithOthers[few]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{ name }}… walla {{ n }} woɗnde"
+#: contactNameWithOthersSuffix[many]
+msgctxt "contactNameWithOthersSuffix[many]"
+msgid "or {{ n }} other"
+msgstr ""
 
-#: contactNameWithOthers[many]
-msgctxt "contactNameWithOthers[many]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{ name }}… walla {{ n }} woɗnde"
-
-#: contactNameWithOthers[other]
-msgctxt "contactNameWithOthers[other]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{ name }}… walla {{ n }} woɗnde"
+#: contactNameWithOthersSuffix[other]
+msgctxt "contactNameWithOthersSuffix[other]"
+msgid "or {{ n }} other"
+msgstr ""
 
 #: settings
 msgid "Settings"
 msgstr "Teelte"
+
+#. #Call duration units
+#: callDurationMinutes
+msgid "{{ m }}:{{ s }}"
+msgstr ""
+
+#: callDurationHours
+msgid "{{ h }}:{{ m }}:{{ s}}"
+msgstr ""
+
+#~ msgid "To make a call you need to disable airplane mode in settings."
+#~ msgstr "Ngam noddude, alaa e sago ndaaƴaa mbayka ndiwoowa to teelte toh."
+
+#~ msgctxt "callAirplaneModeBtnOk"
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "Airplane Mode is on"
+#~ msgstr "Mbayka Ndiwoowa ena hurmi"
+
+#~ msgid "To make a call, the phone must be connected to a network."
+#~ msgstr "Ngam noddude, cinndel ngel ena foti seŋaade e resoo."
+
+#~ msgid "Emergency calls are not allowed by the network."
+#~ msgstr "Noddaali keñoraaɗi njamiraaka e resoo oo."
+
+#~ msgctxt "emergencyDialogBtnOk"
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "No network connection"
+#~ msgstr "Alaa ceŋol resoo"
+
+#~ msgctxt "contactNameWithOthers"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgid "{{ name }}…"
+#~ msgstr "{{ name }}…"
+
+#~ msgid "{{ name }}… or one other"
+#~ msgstr "{{ name }}… walla gooto goɗɗo"
+
+#~ msgctxt "contactNameWithOthers[two]"
+#~ msgid "{{ name }}… or {{ n }} other"
+#~ msgstr "{{ name }}… walla {{ n }} woɗnde"
+
+#~ msgctxt "contactNameWithOthers[few]"
+#~ msgid "{{ name }}… or {{ n }} other"
+#~ msgstr "{{ name }}… walla {{ n }} woɗnde"
+
+#~ msgctxt "contactNameWithOthers[many]"
+#~ msgid "{{ name }}… or {{ n }} other"
+#~ msgstr "{{ name }}… walla {{ n }} woɗnde"
+
+#~ msgctxt "contactNameWithOthers[other]"
+#~ msgid "{{ name }}… or {{ n }} other"
+#~ msgstr "{{ name }}… walla {{ n }} woɗnde"
 
 #~ msgid "To make a call, disable Airplane Mode."
 #~ msgstr "Ngam noddude, daaƴtu Mbayka Ndiwoowa."

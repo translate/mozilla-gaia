@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-14 01:41+0100\n"
+"POT-Creation-Date: 2013-01-21 23:37+0100\n"
 "PO-Revision-Date: 2013-01-16 11:23+0000\n"
 "Last-Translator: romi <romihardiyanto@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1358335391.0\n"
@@ -29,19 +29,6 @@ msgstr "Tambahkan ke kontak yang sudah ada"
 msgid "All"
 msgstr "Semua"
 
-#: callAirplaneModeMessage
-msgid "To make a call you need to disable airplane mode in settings."
-msgstr "Untuk melakukan panggilan, matikan mode pesawat lewat setelan."
-
-#: callAirplaneModeBtnOk
-msgctxt "callAirplaneModeBtnOk"
-msgid "OK"
-msgstr "Oke"
-
-#: callAirplaneModeTitle
-msgid "Airplane Mode is on"
-msgstr "Mode Pesawat aktif"
-
 #: callLog
 msgid "Call log"
 msgstr "Catatan panggilan"
@@ -49,10 +36,6 @@ msgstr "Catatan panggilan"
 #: connecting
 msgid "Connecting"
 msgstr "Menghubungkan"
-
-#: camera-a11y-button.aria-label
-msgid "Hang Up"
-msgstr "Akhiri"
 
 #: cancel
 msgid "Cancel"
@@ -154,23 +137,6 @@ msgstr "{{ n }} dipilih"
 msgid "Edit"
 msgstr "Edit"
 
-#: emergencyDialogBodyBadNumber
-msgid "To make a call, the phone must be connected to a network."
-msgstr "Untuk lakukan panggilan, telepon harus terhubung ke jaringan."
-
-#: emergencyDialogBodyDeviceNotAccepted
-msgid "Emergency calls are not allowed by the network."
-msgstr "Panggilan darurat tidak diperbolehkan oleh jaringan."
-
-#: emergencyDialogBtnOk
-msgctxt "emergencyDialogBtnOk"
-msgid "OK"
-msgstr "Oke"
-
-#: emergencyDialogTitle
-msgid "No network connection"
-msgstr "Tidak ada sambungan jaringan"
-
 #: from
 msgid "From {{sender}}"
 msgstr "Dari {{sender}}"
@@ -231,10 +197,6 @@ msgstr "Hari ini"
 msgid "Unknown number"
 msgstr "Nomor tidak dikenal"
 
-#: unlock-a11y-button.aria-label
-msgid "Pick up"
-msgstr "Terima"
-
 #: yesterday
 msgid "Yesterday"
 msgstr "Kemarin"
@@ -264,44 +226,109 @@ msgstr "Hapus semua teks"
 msgid "Call"
 msgstr "Panggil"
 
-#. ## LOCALIZATION NOTE: contactNameWithOthers is displayed for missed calls when the number is associated with more than one contact.  {{ name }} is the name of the first contact.
+#. ## LOCALIZATION NOTE: these labels aren't displayed but they're used for acessibility
+#: hangup-a11y-button.aria-label
+msgid "Hang Up"
+msgstr "Akhiri"
+
+#: pickup-a11y-button.aria-label
+msgid "Pick up"
+msgstr "Terima"
+
+#. ## LOCALIZATION NOTE: contactNameWithOthers is displayed for missed calls when the number is associated with more than one contact.
 #. ## LOCALIZATION NOTE: case `zero` is never used, no need to translate it.
-#: contactNameWithOthers
-msgctxt "contactNameWithOthers"
+#: contactNameWithOthersSuffix
+#, fuzzy
+msgctxt "contactNameWithOthersSuffix"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: contactNameWithOthers[zero]
-msgid "{{ name }}…"
-msgstr "{{ name }}…"
+#: contactNameWithOthersSuffix[one]
+msgctxt "contactNameWithOthersSuffix[one]"
+msgid "or {{ n }} other"
+msgstr ""
 
-#: contactNameWithOthers[one]
-msgid "{{ name }}… or one other"
-msgstr "{{ name }}… atau satu lainnya"
+#: contactNameWithOthersSuffix[two]
+msgctxt "contactNameWithOthersSuffix[two]"
+msgid "or {{ n }} other"
+msgstr ""
 
-#: contactNameWithOthers[two]
-msgctxt "contactNameWithOthers[two]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{ name }}… atau {{ n }} lainnya"
+#: contactNameWithOthersSuffix[few]
+msgctxt "contactNameWithOthersSuffix[few]"
+msgid "or {{ n }} other"
+msgstr ""
 
-#: contactNameWithOthers[few]
-msgctxt "contactNameWithOthers[few]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{ name }}… atau {{ n }} lainnya"
+#: contactNameWithOthersSuffix[many]
+msgctxt "contactNameWithOthersSuffix[many]"
+msgid "or {{ n }} other"
+msgstr ""
 
-#: contactNameWithOthers[many]
-msgctxt "contactNameWithOthers[many]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{ name }}… atau {{ n }} lainnya"
-
-#: contactNameWithOthers[other]
-msgctxt "contactNameWithOthers[other]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{ name }}… atau {{ n }} lainnya"
+#: contactNameWithOthersSuffix[other]
+msgctxt "contactNameWithOthersSuffix[other]"
+msgid "or {{ n }} other"
+msgstr ""
 
 #: settings
 msgid "Settings"
 msgstr "Setelan"
+
+#. #Call duration units
+#: callDurationMinutes
+msgid "{{ m }}:{{ s }}"
+msgstr ""
+
+#: callDurationHours
+msgid "{{ h }}:{{ m }}:{{ s}}"
+msgstr ""
+
+#~ msgid "To make a call you need to disable airplane mode in settings."
+#~ msgstr "Untuk melakukan panggilan, matikan mode pesawat lewat setelan."
+
+#~ msgctxt "callAirplaneModeBtnOk"
+#~ msgid "OK"
+#~ msgstr "Oke"
+
+#~ msgid "Airplane Mode is on"
+#~ msgstr "Mode Pesawat aktif"
+
+#~ msgid "To make a call, the phone must be connected to a network."
+#~ msgstr "Untuk lakukan panggilan, telepon harus terhubung ke jaringan."
+
+#~ msgid "Emergency calls are not allowed by the network."
+#~ msgstr "Panggilan darurat tidak diperbolehkan oleh jaringan."
+
+#~ msgctxt "emergencyDialogBtnOk"
+#~ msgid "OK"
+#~ msgstr "Oke"
+
+#~ msgid "No network connection"
+#~ msgstr "Tidak ada sambungan jaringan"
+
+#~ msgctxt "contactNameWithOthers"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgid "{{ name }}…"
+#~ msgstr "{{ name }}…"
+
+#~ msgid "{{ name }}… or one other"
+#~ msgstr "{{ name }}… atau satu lainnya"
+
+#~ msgctxt "contactNameWithOthers[two]"
+#~ msgid "{{ name }}… or {{ n }} other"
+#~ msgstr "{{ name }}… atau {{ n }} lainnya"
+
+#~ msgctxt "contactNameWithOthers[few]"
+#~ msgid "{{ name }}… or {{ n }} other"
+#~ msgstr "{{ name }}… atau {{ n }} lainnya"
+
+#~ msgctxt "contactNameWithOthers[many]"
+#~ msgid "{{ name }}… or {{ n }} other"
+#~ msgstr "{{ name }}… atau {{ n }} lainnya"
+
+#~ msgctxt "contactNameWithOthers[other]"
+#~ msgid "{{ name }}… or {{ n }} other"
+#~ msgstr "{{ name }}… atau {{ n }} lainnya"
 
 #~ msgid "To make a call, disable Airplane Mode."
 #~ msgstr "Untuk lakukan panggilan, matikan Mode Pesawat."

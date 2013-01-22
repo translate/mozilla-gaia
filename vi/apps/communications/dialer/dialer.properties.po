@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-14 01:41+0100\n"
+"POT-Creation-Date: 2013-01-21 23:37+0100\n"
 "PO-Revision-Date: 2013-01-04 10:42+0000\n"
 "Last-Translator: ngoc1414 <dgminhngoc@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1357296121.0\n"
@@ -29,19 +29,6 @@ msgstr "Thêm vào liên hệ đã tồn tại"
 msgid "All"
 msgstr "Tất cả"
 
-#: callAirplaneModeMessage
-msgid "To make a call you need to disable airplane mode in settings."
-msgstr "Để thực hiện cuộc gọi bạn cần tắt chế độ máy bay trong phần Cài đặt."
-
-#: callAirplaneModeBtnOk
-msgctxt "callAirplaneModeBtnOk"
-msgid "OK"
-msgstr "OK"
-
-#: callAirplaneModeTitle
-msgid "Airplane Mode is on"
-msgstr "Chế độ máy bay đang được bật"
-
 #: callLog
 msgid "Call log"
 msgstr "Nhật ký cuộc gọi"
@@ -49,10 +36,6 @@ msgstr "Nhật ký cuộc gọi"
 #: connecting
 msgid "Connecting"
 msgstr "Đang kết nối"
-
-#: camera-a11y-button.aria-label
-msgid "Hang Up"
-msgstr "Ngừng cuộc gọi"
 
 #: cancel
 msgid "Cancel"
@@ -126,14 +109,16 @@ msgid "{[ plural(n) ]}"
 msgstr ""
 
 #: edit-selected[one]
+#, fuzzy
 msgctxt "edit-selected[one]"
 msgid "{{ n }} selected"
-msgstr ""
+msgstr "{{n}} được chọn"
 
 #: edit-selected[two]
+#, fuzzy
 msgctxt "edit-selected[two]"
 msgid "{{ n }} selected"
-msgstr ""
+msgstr "{{n}} được chọn"
 
 #: edit-selected[few]
 msgctxt "edit-selected[few]"
@@ -153,23 +138,6 @@ msgstr "{{ n }} mục được lựa chọn"
 #: edit
 msgid "Edit"
 msgstr "Sửa"
-
-#: emergencyDialogBodyBadNumber
-msgid "To make a call, the phone must be connected to a network."
-msgstr "Để thực hiện cuộc gọi, điện thoại phải kết nối vào mạng."
-
-#: emergencyDialogBodyDeviceNotAccepted
-msgid "Emergency calls are not allowed by the network."
-msgstr "Cuộc gọi khẩn cấp không được cho phép bởi mạng điện thoại."
-
-#: emergencyDialogBtnOk
-msgctxt "emergencyDialogBtnOk"
-msgid "OK"
-msgstr "Đồng ý"
-
-#: emergencyDialogTitle
-msgid "No network connection"
-msgstr "Không có kết nối mạng"
 
 #: from
 msgid "From {{sender}}"
@@ -231,10 +199,6 @@ msgstr "Hôm nay"
 msgid "Unknown number"
 msgstr "Không rõ số"
 
-#: unlock-a11y-button.aria-label
-msgid "Pick up"
-msgstr ""
-
 #: yesterday
 msgid "Yesterday"
 msgstr "Hôm qua"
@@ -264,41 +228,98 @@ msgstr "Xóa toàn bộ văn bản"
 msgid "Call"
 msgstr "Gọi"
 
-#. ## LOCALIZATION NOTE: contactNameWithOthers is displayed for missed calls when the number is associated with more than one contact.  {{ name }} is the name of the first contact.
+#. ## LOCALIZATION NOTE: these labels aren't displayed but they're used for acessibility
+#: hangup-a11y-button.aria-label
+msgid "Hang Up"
+msgstr "Ngừng cuộc gọi"
+
+#: pickup-a11y-button.aria-label
+msgid "Pick up"
+msgstr ""
+
+#. ## LOCALIZATION NOTE: contactNameWithOthers is displayed for missed calls when the number is associated with more than one contact.
 #. ## LOCALIZATION NOTE: case `zero` is never used, no need to translate it.
-#: contactNameWithOthers
-msgctxt "contactNameWithOthers"
+#: contactNameWithOthersSuffix
+msgctxt "contactNameWithOthersSuffix"
 msgid "{[ plural(n) ]}"
 msgstr ""
 
-#: contactNameWithOthers[zero]
-msgid "{{ name }}…"
+#: contactNameWithOthersSuffix[one]
+msgctxt "contactNameWithOthersSuffix[one]"
+msgid "or {{ n }} other"
 msgstr ""
 
-#: contactNameWithOthers[one]
-msgid "{{ name }}… or one other"
-msgstr "{{name}} ...hoặc người khác"
+#: contactNameWithOthersSuffix[two]
+msgctxt "contactNameWithOthersSuffix[two]"
+msgid "or {{ n }} other"
+msgstr ""
 
-#: contactNameWithOthers[two]
-msgctxt "contactNameWithOthers[two]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{name}} ...hoặc {{n}}người khác"
+#: contactNameWithOthersSuffix[few]
+msgctxt "contactNameWithOthersSuffix[few]"
+msgid "or {{ n }} other"
+msgstr ""
 
-#: contactNameWithOthers[few]
-msgctxt "contactNameWithOthers[few]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{name}} ...hoặc {{n}}người khác"
+#: contactNameWithOthersSuffix[many]
+msgctxt "contactNameWithOthersSuffix[many]"
+msgid "or {{ n }} other"
+msgstr ""
 
-#: contactNameWithOthers[many]
-msgctxt "contactNameWithOthers[many]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{name}} ...hoặc {{n}}người khác"
-
-#: contactNameWithOthers[other]
-msgctxt "contactNameWithOthers[other]"
-msgid "{{ name }}… or {{ n }} other"
-msgstr "{{ name }}... hoặc {{ n }} người khác"
+#: contactNameWithOthersSuffix[other]
+msgctxt "contactNameWithOthersSuffix[other]"
+msgid "or {{ n }} other"
+msgstr ""
 
 #: settings
 msgid "Settings"
 msgstr "Cài đặt"
+
+#. #Call duration units
+#: callDurationMinutes
+msgid "{{ m }}:{{ s }}"
+msgstr ""
+
+#: callDurationHours
+msgid "{{ h }}:{{ m }}:{{ s}}"
+msgstr ""
+
+#~ msgid "To make a call you need to disable airplane mode in settings."
+#~ msgstr "Để thực hiện cuộc gọi bạn cần tắt chế độ máy bay trong phần Cài đặt."
+
+#~ msgctxt "callAirplaneModeBtnOk"
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "Airplane Mode is on"
+#~ msgstr "Chế độ máy bay đang được bật"
+
+#~ msgid "To make a call, the phone must be connected to a network."
+#~ msgstr "Để thực hiện cuộc gọi, điện thoại phải kết nối vào mạng."
+
+#~ msgid "Emergency calls are not allowed by the network."
+#~ msgstr "Cuộc gọi khẩn cấp không được cho phép bởi mạng điện thoại."
+
+#~ msgctxt "emergencyDialogBtnOk"
+#~ msgid "OK"
+#~ msgstr "Đồng ý"
+
+#~ msgid "No network connection"
+#~ msgstr "Không có kết nối mạng"
+
+#~ msgid "{{ name }}… or one other"
+#~ msgstr "{{name}} ...hoặc người khác"
+
+#~ msgctxt "contactNameWithOthers[two]"
+#~ msgid "{{ name }}… or {{ n }} other"
+#~ msgstr "{{name}} ...hoặc {{n}}người khác"
+
+#~ msgctxt "contactNameWithOthers[few]"
+#~ msgid "{{ name }}… or {{ n }} other"
+#~ msgstr "{{name}} ...hoặc {{n}}người khác"
+
+#~ msgctxt "contactNameWithOthers[many]"
+#~ msgid "{{ name }}… or {{ n }} other"
+#~ msgstr "{{name}} ...hoặc {{n}}người khác"
+
+#~ msgctxt "contactNameWithOthers[other]"
+#~ msgid "{{ name }}… or {{ n }} other"
+#~ msgstr "{{ name }}... hoặc {{ n }} người khác"

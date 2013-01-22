@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-14 01:41+0100\n"
+"POT-Creation-Date: 2013-01-22 00:09+0100\n"
 "PO-Revision-Date: 2013-01-01 21:00+0100\n"
 "Last-Translator: Michael Bauer <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3;\n"
-"X-Generator: Virtaal 0.7.1-beta1\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -76,6 +76,10 @@ msgstr "Paidhrich"
 #: done
 msgid "Done"
 msgstr "Deiseil"
+
+#: set
+msgid "Set"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Connectivity
@@ -374,8 +378,9 @@ msgstr "Sìn air adhart mur eil freagairt ann"
 msgid "Forward when unreachable"
 msgstr "Sìn air adhart mura gabh a ruigsinn"
 
-#: callForwardingGetting
-msgid "Getting network info…"
+#: callForwardingRequesting
+#, fuzzy
+msgid "Requesting network info…"
 msgstr "A' faighinn fiosrachadh mun lìonra…"
 
 #: callForwardingQueryError
@@ -390,6 +395,16 @@ msgstr "Gairmean gutha gu"
 msgctxt "callForwardingNotForwarding"
 msgid "Disabled"
 msgstr "À comas"
+
+#: confirmCallWaitingTitle
+msgid "Unable to confirm call waiting preferences"
+msgstr ""
+
+#: confirmCallWaitingDesc
+msgid ""
+"The device is currently unable to communicate with the carrier. Try setting "
+"the preference again."
+msgstr ""
 
 #: cf-alwaysUseThisNumber
 msgid "Always use this number"
@@ -721,6 +736,10 @@ msgstr ""
 "Cha ghabh na h-uidheaman a phaidhreachadh. Dèan cinnteach gu bheil am PIN "
 "ceart."
 
+#: error-pair-toofast
+msgid "Unable to pair with the device. Too many requests."
+msgstr ""
+
 #: error-connect-title
 msgid "Unable to connect devices"
 msgstr "Cha ghabh na h-uidheaman a cheangal"
@@ -990,6 +1009,10 @@ msgstr "Cànan"
 #: region
 msgid "Region"
 msgstr "Sgeama ionadail"
+
+#: sample-format
+msgid "Sample Format"
+msgstr ""
 
 #. # see http://www.cplusplus.com/reference/clibrary/ctime/strftime/
 #: longDateFormat
@@ -1302,34 +1325,39 @@ msgstr "PIN ùr"
 msgid "The PIN was incorrect."
 msgstr "Bha am PIN cearr."
 
-#: pinAttemptMsg
-msgctxt "pinAttemptMsg"
+#: pinAttemptMsg2
+#, fuzzy
+msgctxt "pinAttemptMsg2"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: pinAttemptMsg[one]
-msgid "one last try."
-msgstr "aon turas air fhàgail."
+#: pinAttemptMsg2[one]
+msgid "Last chance."
+msgstr ""
 
-#: pinAttemptMsg[two]
-msgctxt "pinAttemptMsg[two]"
+#: pinAttemptMsg2[two]
+#, fuzzy
+msgctxt "pinAttemptMsg2[two]"
 msgid "{{n}} tries left."
 msgstr "{{n}} thuras air fhàgail."
 
-#: pinAttemptMsg[few]
-msgctxt "pinAttemptMsg[few]"
+#: pinAttemptMsg2[few]
+#, fuzzy
+msgctxt "pinAttemptMsg2[few]"
 msgid "{{n}} tries left."
-msgstr "{{n}} tursan air fhàgail."
+msgstr "{{n}} thuras air fhàgail."
 
-#: pinAttemptMsg[many]
-msgctxt "pinAttemptMsg[many]"
+#: pinAttemptMsg2[many]
+#, fuzzy
+msgctxt "pinAttemptMsg2[many]"
 msgid "{{n}} tries left."
-msgstr "{{n}} turas air fhàgail."
+msgstr "{{n}} thuras air fhàgail."
 
-#: pinAttemptMsg[other]
-msgctxt "pinAttemptMsg[other]"
+#: pinAttemptMsg2[other]
+#, fuzzy
+msgctxt "pinAttemptMsg2[other]"
 msgid "{{n}} tries left."
-msgstr "{{n}} turas air fhàgail."
+msgstr "{{n}} thuras air fhàgail."
 
 #: pinLastChanceMsg
 msgid ""
@@ -1358,7 +1386,7 @@ msgstr ""
 msgid "The PUK code is incorrect."
 msgstr "Tha an còd PUK cearr."
 
-#: pukAttemptMsg
+#: pukAttemptMsg2
 msgid ""
 "You have {{n}} tries left to enter the correct code before this SIM card "
 "will be permanently unusable. Refer to your SIM card documentation or "
@@ -1433,6 +1461,8 @@ msgid "Storage"
 msgstr "Stòras"
 
 #: help
+#, fuzzy
+msgctxt "help"
 msgid "Help"
 msgstr "Cobhair"
 
@@ -1440,6 +1470,18 @@ msgstr "Cobhair"
 #: deviceInfo
 msgid "Device information"
 msgstr "Fiosrachadh mun uidheam"
+
+#: deviceInfo-IMEI
+msgid "IMEI"
+msgstr ""
+
+#: deviceInfo-ICCID
+msgid "ICCID"
+msgstr ""
+
+#: deviceInfo-MSISDN
+msgid "Phone number"
+msgstr ""
 
 #: developer
 msgid "Developer"
@@ -1473,14 +1515,6 @@ msgstr "Dèan flash air an raon ath-pheantaichte"
 msgid "Log slow animations"
 msgstr "Logaich beòthachaidhean slaodach"
 
-#: dev-mode
-msgid "Developer mode"
-msgstr "Modh an luchd-leasachaidh"
-
-#: oop-disabled
-msgid "Disable out-of-process"
-msgstr "Cuir Out-Of-Process à comas"
-
 #: remote-debugging
 msgid "Remote debugging"
 msgstr "Debugging cèin"
@@ -1492,6 +1526,10 @@ msgstr "Seall às-chur WiFi ann an adb"
 #: ttl-monitor
 msgid "Show time to load"
 msgstr "Seall dè cho fad 's a thug a luchdadh"
+
+#: console-enabled
+msgid "Console enabled"
+msgstr ""
 
 #: model-name
 msgid "Model"
@@ -1530,6 +1568,7 @@ msgid "More Information"
 msgstr "Barrachd fiosrachaidh"
 
 #: gitInfo
+#, fuzzy
 msgid "Git commit info"
 msgstr "Fiosrachadh Git commit"
 
@@ -1578,6 +1617,10 @@ msgstr ""
 #: already-latest-version
 msgid "This is already the latest version of {{brandShortName}}"
 msgstr "Seo an tionndadh as ùire de {{brandShortName}}"
+
+#: check-error
+msgid "There was an error when checking for updates."
+msgstr ""
 
 #: aboutBrowserOS
 msgid "About {{brandShortName}}"
@@ -1747,9 +1790,9 @@ msgstr "Cha deach aplacaid sam bith mar sin a lorg"
 msgid "Device storage"
 msgstr "Stòras an uidheim"
 
-#: umsEnabled
-msgid "USB mass storage enabled"
-msgstr "Tha mòr-stòras USB an comas"
+#: usbMassStorage
+msgid "USB mass storage"
+msgstr ""
 
 #: umsUnplugToDisable
 msgid "Unplug USB cable to disable"
@@ -1759,45 +1802,64 @@ msgstr "Thoir às an càball USB gus a chur à comas"
 msgid "Application storage"
 msgstr "Stòras na h-aplacaid"
 
-#: size-B
-msgid "{{size}} B"
-msgstr "{{size}} B"
+#: byteUnit-B
+msgid "B"
+msgstr ""
 
-#: size-KB
-msgid "{{size}} KB"
-msgstr "{{size}} KB"
+#: byteUnit-KB
+msgid "KB"
+msgstr ""
 
-#: size-MB
-msgid "{{size}} MB"
-msgstr "{{size}} MB"
+#: byteUnit-MB
+msgid "MB"
+msgstr ""
 
-#: size-GB
-msgid "{{size}} GB"
-msgstr "{{size}} GB"
+#: byteUnit-GB
+msgid "GB"
+msgstr ""
 
-#: size-TB
-msgid "{{size}} TB"
-msgstr "{{size}} TB"
+#: byteUnit-TB
+msgid "TB"
+msgstr ""
 
-#: available-size-B
-msgid "{{size}} B available"
-msgstr "{{size}} B ri làimh"
+#: storageSize
+msgid "{{size}} {{unit}}"
+msgstr ""
 
-#: available-size-KB
-msgid "{{size}} KB available"
-msgstr "{{size}} KB ri làimh"
+#: availableSize
+#, fuzzy
+msgid "{[ plural(size) ]}"
+msgstr "{[ plural(n) ]}"
 
-#: available-size-MB
-msgid "{{size}} MB available"
-msgstr "{{size}} MB ri làimh"
+#: availableSize[zero]
+msgctxt "availableSize[zero]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
 
-#: available-size-GB
-msgid "{{size}} GB available"
-msgstr "{{size}} GB ri làimh"
+#: availableSize[one]
+msgctxt "availableSize[one]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
 
-#: available-size-TB
-msgid "{{size}} TB available"
-msgstr "{{size}} TB ri làimh"
+#: availableSize[two]
+msgctxt "availableSize[two]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
+
+#: availableSize[few]
+msgctxt "availableSize[few]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
+
+#: availableSize[many]
+msgctxt "availableSize[many]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
+
+#: availableSize[other]
+msgctxt "availableSize[other]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
 
 #: apps-total-space
 msgid "Total space"
@@ -1921,13 +1983,9 @@ msgstr "Cuir fiosrachadh gu Mozilla"
 msgid "Performance data"
 msgstr "Dàta dèanadais"
 
-#: performanceDataInfo2
-msgid ""
-"Make {{brandShortName}} faster and easier to use by sharing information over "
-"Wi-Fi about your phone’s performance."
+#: performanceDataInfo
+msgid "Help us improve {{brandShortName}} by sharing data about your phone."
 msgstr ""
-"Cuidich leinn a' cur piseach air luaths is soirbheachd {{brandShortName}} is "
-"tu a' cur thugainn fiosrachadh air dèanadas an fhòn agad."
 
 #: sharePerformanceData
 msgid "Submit performance data"
@@ -1982,9 +2040,10 @@ msgstr ""
 #. # LOCALIZATION NOTE (crash-reports-description-3-*): these strings are a paragraph, with a "privacy policy"
 #. # link in the middle. Include trailing spaces as needed.
 #: crash-reports-description-3-start
+#, fuzzy
 msgid ""
 "We use crash reports to try to fix problems and improve our products. We "
-"handle your information as we describe in our "
+"handle your information as we describe in our"
 msgstr ""
 "Cleachdaidh sinn aithisgean tuislidh gus duilgheadasan a rèiteachadh is "
 "piseach a thoirt air a' bhathar againn. Làimhsichidh sinn am fiosrachadh "
@@ -2003,60 +2062,137 @@ msgstr "."
 msgid "Online support:"
 msgstr "Taic air loidhne:"
 
-#. # LOCALIZATION NOTE (online-support.href): this is the URL for the online support page.
-#: online-support.href
-msgid ""
-"http://www.vivo.com.br/portalweb/appmanager/env/web?_nfls=false&_nfpb=true&_"
-"pageLabel=vcAtendMovelBook&WT.ac=portal.atendimento.movel"
-msgstr ""
-"http://www.vivo.com.br/portalweb/appmanager/env/web?_nfls=false&_nfpb=true&_"
-"pageLabel=vcAtendMovelBook&WT.ac=portal.atendimento.movel"
-
-#. # LOCALIZATION NOTE (online-support-link-text): This text will appear as a link.
-#: online-support-link-text
-msgid "Vivo"
-msgstr "Vivo"
-
 #: call-support
 msgid "Call support:"
 msgstr "Cuir fòn gun sgioba taice:"
 
-#. # LOCALIZATION NOTE (call-support-link-1): this text will appear as a link.
-#: call-support-link-1
-msgid "*8486"
-msgstr "*8486"
-
-#. # LOCALIZATION NOTE (call-support-link-1.href): include the "tel:" protocol before the call support
-#. # number so that it will open in the dialer app.
-#: call-support-link-1.href
-msgid "tel:*8486"
-msgstr "tel:*8486"
-
-#. # LOCALIZATION NOTE: if your locale only has one support phone number, leave the next 3 strings empty.
-#: call-support-link-2
-msgid "1058"
-msgstr "1058"
-
-#: call-support-link-2.href
-msgid "tel:1058"
-msgstr "tel:1058"
-
-#: call-support-link-or
-msgid "or"
-msgstr "no"
+#: call-support-numbers
+msgid "{{link1}} or {{link2}}"
+msgstr ""
 
 #: user-guide
 msgid "User guide"
 msgstr "Stiùireadh a' chleachdaiche"
 
 #. # Device :: SIM toolkit
-#: stkAppsNotAvailable
-msgid "SIM card applications not available."
-msgstr "Chan eil aplacaidean airson na cairt SIM ri fhaighinn."
+#: operatorServices
+msgid "Operator Services"
+msgstr ""
 
-#: simToolkit
-msgid "SIM toolkit"
-msgstr "Acainnean SIM"
+#: operatorServices-help
+#, fuzzy
+msgctxt "operatorServices-help"
+msgid "Help"
+msgstr "Cobhair"
+
+#: operatorServices-helpmenu
+msgid "Help menu"
+msgstr ""
+
+#: operatorService-invalid-url
+msgid "Cannot access the URL"
+msgstr ""
+
+#, fuzzy
+#~ msgctxt "gitInfo"
+#~ msgid "Git commit info"
+#~ msgstr "Fiosrachadh Git commit"
+
+#~ msgctxt "pinAttemptMsg"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgid "one last try."
+#~ msgstr "aon turas air fhàgail."
+
+#~ msgctxt "pinAttemptMsg[few]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} tursan air fhàgail."
+
+#~ msgctxt "pinAttemptMsg[many]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} turas air fhàgail."
+
+#~ msgctxt "pinAttemptMsg[other]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} turas air fhàgail."
+
+#~ msgid "Developer mode"
+#~ msgstr "Modh an luchd-leasachaidh"
+
+#~ msgid "Disable out-of-process"
+#~ msgstr "Cuir Out-Of-Process à comas"
+
+#~ msgid "USB mass storage enabled"
+#~ msgstr "Tha mòr-stòras USB an comas"
+
+#~ msgid "{{size}} B"
+#~ msgstr "{{size}} B"
+
+#~ msgid "{{size}} KB"
+#~ msgstr "{{size}} KB"
+
+#~ msgid "{{size}} MB"
+#~ msgstr "{{size}} MB"
+
+#~ msgid "{{size}} GB"
+#~ msgstr "{{size}} GB"
+
+#~ msgid "{{size}} TB"
+#~ msgstr "{{size}} TB"
+
+#~ msgid "{{size}} B available"
+#~ msgstr "{{size}} B ri làimh"
+
+#~ msgid "{{size}} KB available"
+#~ msgstr "{{size}} KB ri làimh"
+
+#~ msgid "{{size}} MB available"
+#~ msgstr "{{size}} MB ri làimh"
+
+#~ msgid "{{size}} GB available"
+#~ msgstr "{{size}} GB ri làimh"
+
+#~ msgid "{{size}} TB available"
+#~ msgstr "{{size}} TB ri làimh"
+
+#~ msgid ""
+#~ "Make {{brandShortName}} faster and easier to use by sharing information over "
+#~ "Wi-Fi about your phone’s performance."
+#~ msgstr ""
+#~ "Cuidich leinn a' cur piseach air luaths is soirbheachd {{brandShortName}} is "
+#~ "tu a' cur thugainn fiosrachadh air dèanadas an fhòn agad."
+
+#~ msgid ""
+#~ "http://www.vivo.com.br/portalweb/appmanager/env/web?_nfls=false&_nfpb=true&_"
+#~ "pageLabel=vcAtendMovelBook&WT.ac=portal.atendimento.movel"
+#~ msgstr ""
+#~ "http://www.vivo.com.br/portalweb/appmanager/env/web?_nfls=false&_nfpb=true&_"
+#~ "pageLabel=vcAtendMovelBook&WT.ac=portal.atendimento.movel"
+
+#~ msgid "Vivo"
+#~ msgstr "Vivo"
+
+#~ msgid "*8486"
+#~ msgstr "*8486"
+
+#~ msgid "tel:*8486"
+#~ msgstr "tel:*8486"
+
+#~ msgid "1058"
+#~ msgstr "1058"
+
+#~ msgid "tel:1058"
+#~ msgstr "tel:1058"
+
+#~ msgid "or"
+#~ msgstr "no"
+
+#~ msgid "SIM card applications not available."
+#~ msgstr "Chan eil aplacaidean airson na cairt SIM ri fhaighinn."
+
+#~ msgid "SIM toolkit"
+#~ msgstr "Acainnean SIM"
 
 #~ msgid "Classic"
 #~ msgstr "Clasaigeach"

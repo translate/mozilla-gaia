@@ -1,17 +1,18 @@
-#. extracted from locales/en-US/apps/communications/dialer/dialer.properties, locales/fr/apps/communications/dialer/dialer.properties
+#. extracted from locales/en-US/apps/communications/dialer/dialer.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-27 18:00+0100\n"
+"POT-Creation-Date: 2013-01-21 23:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.9.1-pre\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #: addNewNumber
 msgid "Add new number"
@@ -25,19 +26,6 @@ msgstr "Ajouter à un contact existant"
 msgid "All"
 msgstr "Tous"
 
-#: callAirplaneModeBody
-msgid "To make a call, disable Airplane Mode."
-msgstr "Afin de passer un appel, désactivez le mode avion."
-
-#: callAirplaneModeBtnOk
-msgctxt "callAirplaneModeBtnOk"
-msgid "OK"
-msgstr "OK"
-
-#: callAirplaneModeTitle
-msgid "Airplane Mode is on"
-msgstr "Mode avion activé"
-
 #: callLog
 msgid "Call log"
 msgstr "Journal d’appels"
@@ -46,14 +34,12 @@ msgstr "Journal d’appels"
 msgid "Connecting"
 msgstr ""
 
-#: camera-a11y-button.aria-label
-msgid "Hang Up"
-msgstr "Raccrocher"
-
 #: cancel
 msgid "Cancel"
 msgstr "Annuler"
 
+#. ## LOCALIZATION NOTE cf-async, cf-data, cf-fax, cf-packet, cf-pad, cf-sms, cf-sync and cf-voice are the service the call forwarding is activate/inactive for.
+#. ## LOCALIZATION NOTE Its variables might be a phone number or cf-inactive.
 #: cf-async
 msgid "Asynchronous: {{ async }}\n"
 msgstr ""
@@ -120,10 +106,8 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: edit-selected[one]
+#, fuzzy
 msgctxt "edit-selected[one]"
-"edit-selected[one]"
-"edit-selected[one]"
-"edit-selected[one]"
 msgid "{{ n }} selected"
 msgstr "{{ n }} sélectionné"
 
@@ -150,23 +134,6 @@ msgstr "{{ n }} sélectionnés"
 #: edit
 msgid "Edit"
 msgstr "Modifier"
-
-#: emergencyDialogBodyBadNumber
-msgid "To make a call, the phone must be connected to a network."
-msgstr "Afin d’appeler, vous devez d’abord avoir du réseau"
-
-#: emergencyDialogBodyDeviceNotAccepted
-msgid "Emergency calls are not allowed by the network."
-msgstr "Appels d’urgence non autorisés par le réseau"
-
-#: emergencyDialogBtnOk
-msgctxt "emergencyDialogBtnOk"
-msgid "OK"
-msgstr "OK"
-
-#: emergencyDialogTitle
-msgid "No network connection"
-msgstr "Pas de réseau"
 
 #: from
 msgid "From {{sender}}"
@@ -228,10 +195,6 @@ msgstr "Aujourd’hui"
 msgid "Unknown number"
 msgstr "Inconnu"
 
-#: unlock-a11y-button.aria-label
-msgid "Pick up"
-msgstr "Répondre"
-
 #: yesterday
 msgid "Yesterday"
 msgstr "Hier"
@@ -256,37 +219,85 @@ msgstr "Saisissez votre réponse…"
 msgid "Clear all text"
 msgstr "Effacer tout le texte"
 
-#. ## LOCALIZATION NOTE: contactNameWithOthers is displayed for missed calls when the number is associated with more than one contact.  {{ name }} is the name of the first contact.
+#. ## LOCALIZATION NOTE 'call' is an action verb
+#: call
+msgid "Call"
+msgstr ""
+
+#. ## LOCALIZATION NOTE: these labels aren't displayed but they're used for acessibility
+#: hangup-a11y-button.aria-label
+msgid "Hang Up"
+msgstr "Raccrocher"
+
+#: pickup-a11y-button.aria-label
+msgid "Pick up"
+msgstr "Répondre"
+
+#. ## LOCALIZATION NOTE: contactNameWithOthers is displayed for missed calls when the number is associated with more than one contact.
 #. ## LOCALIZATION NOTE: case `zero` is never used, no need to translate it.
-#: contactNameWithOthers
-msgctxt "contactNameWithOthers"
+#: contactNameWithOthersSuffix
+#, fuzzy
+msgctxt "contactNameWithOthersSuffix"
 msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: contactNameWithOthersSuffix[one]
+msgctxt "contactNameWithOthersSuffix[one]"
+msgid "or {{ n }} other"
 msgstr ""
 
-#: contactNameWithOthers[zero]
-msgid "{{ name }}…"
+#: contactNameWithOthersSuffix[two]
+msgctxt "contactNameWithOthersSuffix[two]"
+msgid "or {{ n }} other"
 msgstr ""
 
-#: contactNameWithOthers[one]
-msgid "{{ name }}… or one other"
+#: contactNameWithOthersSuffix[few]
+msgctxt "contactNameWithOthersSuffix[few]"
+msgid "or {{ n }} other"
 msgstr ""
 
-#: contactNameWithOthers[two]
-msgctxt "contactNameWithOthers[two]"
-msgid "{{ name }}… or {{ n }} other"
+#: contactNameWithOthersSuffix[many]
+msgctxt "contactNameWithOthersSuffix[many]"
+msgid "or {{ n }} other"
 msgstr ""
 
-#: contactNameWithOthers[few]
-msgctxt "contactNameWithOthers[few]"
-msgid "{{ name }}… or {{ n }} other"
+#: contactNameWithOthersSuffix[other]
+msgctxt "contactNameWithOthersSuffix[other]"
+msgid "or {{ n }} other"
 msgstr ""
 
-#: contactNameWithOthers[many]
-msgctxt "contactNameWithOthers[many]"
-msgid "{{ name }}… or {{ n }} other"
+#: settings
+msgid "Settings"
 msgstr ""
 
-#: contactNameWithOthers[other]
-msgctxt "contactNameWithOthers[other]"
-msgid "{{ name }}… or {{ n }} other"
+#. #Call duration units
+#: callDurationMinutes
+msgid "{{ m }}:{{ s }}"
 msgstr ""
+
+#: callDurationHours
+msgid "{{ h }}:{{ m }}:{{ s}}"
+msgstr ""
+
+#~ msgid "To make a call, disable Airplane Mode."
+#~ msgstr "Afin de passer un appel, désactivez le mode avion."
+
+#~ msgctxt "callAirplaneModeBtnOk"
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "Airplane Mode is on"
+#~ msgstr "Mode avion activé"
+
+#~ msgid "To make a call, the phone must be connected to a network."
+#~ msgstr "Afin d’appeler, vous devez d’abord avoir du réseau"
+
+#~ msgid "Emergency calls are not allowed by the network."
+#~ msgstr "Appels d’urgence non autorisés par le réseau"
+
+#~ msgctxt "emergencyDialogBtnOk"
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "No network connection"
+#~ msgstr "Pas de réseau"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-27 13:05+0100\n"
+"POT-Creation-Date: 2013-01-21 23:37+0100\n"
 "PO-Revision-Date: 2013-01-01 12:13+0000\n"
 "Last-Translator: Komal <mahakjn774@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,8 +11,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1357042392.0\n"
 
 #: addNewNumber
@@ -27,19 +28,6 @@ msgstr ""
 msgid "All"
 msgstr ""
 
-#: callAirplaneModeBody
-msgid "To make a call, disable Airplane Mode."
-msgstr ""
-
-#: callAirplaneModeBtnOk
-msgctxt "callAirplaneModeBtnOk"
-msgid "OK"
-msgstr "ठीक"
-
-#: callAirplaneModeTitle
-msgid "Airplane Mode is on"
-msgstr "एयरप्लेन मोड चालू है "
-
 #: callLog
 msgid "Call log"
 msgstr "कॉल रोजनामचा"
@@ -48,14 +36,12 @@ msgstr "कॉल रोजनामचा"
 msgid "Connecting"
 msgstr "जोड़ रहा है"
 
-#: camera-a11y-button.aria-label
-msgid "Hang Up"
-msgstr "हैंग अप"
-
 #: cancel
 msgid "Cancel"
 msgstr "रद्द करें"
 
+#. ## LOCALIZATION NOTE cf-async, cf-data, cf-fax, cf-packet, cf-pad, cf-sms, cf-sync and cf-voice are the service the call forwarding is activate/inactive for.
+#. ## LOCALIZATION NOTE Its variables might be a phone number or cf-inactive.
 #: cf-async
 msgid "Asynchronous: {{ async }}\n"
 msgstr "अतुल्यकाली"
@@ -93,8 +79,9 @@ msgid "Call forwarding status\n"
 msgstr ""
 
 #: cf-sync
+#, fuzzy
 msgid "Synchronous: {{ sync }}\n"
-msgstr ""
+msgstr "अतुल्यकाली"
 
 #: cf-voice
 msgid "Voice: {{ voice }}\n"
@@ -132,9 +119,10 @@ msgid "{{ n }} selected"
 msgstr "चुनें"
 
 #: edit-selected[few]
+#, fuzzy
 msgctxt "edit-selected[few]"
 msgid "{{ n }} selected"
-msgstr ""
+msgstr "चुनें"
 
 #: edit-selected[many]
 msgctxt "edit-selected[many]"
@@ -148,23 +136,6 @@ msgstr "चुनें"
 
 #: edit
 msgid "Edit"
-msgstr ""
-
-#: emergencyDialogBodyBadNumber
-msgid "To make a call, the phone must be connected to a network."
-msgstr ""
-
-#: emergencyDialogBodyDeviceNotAccepted
-msgid "Emergency calls are not allowed by the network."
-msgstr ""
-
-#: emergencyDialogBtnOk
-msgctxt "emergencyDialogBtnOk"
-msgid "OK"
-msgstr ""
-
-#: emergencyDialogTitle
-msgid "No network connection"
 msgstr ""
 
 #: from
@@ -227,10 +198,6 @@ msgstr ""
 msgid "Unknown number"
 msgstr ""
 
-#: unlock-a11y-button.aria-label
-msgid "Pick up"
-msgstr ""
-
 #: yesterday
 msgid "Yesterday"
 msgstr ""
@@ -255,37 +222,68 @@ msgstr "अपनी प्रतिक्रिया टाइप करें
 msgid "Clear all text"
 msgstr "क्लियर करें सार टेक्स्ट"
 
-#. ## LOCALIZATION NOTE: contactNameWithOthers is displayed for missed calls when the number is associated with more than one contact.  {{ name }} is the name of the first contact.
+#. ## LOCALIZATION NOTE 'call' is an action verb
+#: call
+msgid "Call"
+msgstr ""
+
+#. ## LOCALIZATION NOTE: these labels aren't displayed but they're used for acessibility
+#: hangup-a11y-button.aria-label
+msgid "Hang Up"
+msgstr "हैंग अप"
+
+#: pickup-a11y-button.aria-label
+msgid "Pick up"
+msgstr ""
+
+#. ## LOCALIZATION NOTE: contactNameWithOthers is displayed for missed calls when the number is associated with more than one contact.
 #. ## LOCALIZATION NOTE: case `zero` is never used, no need to translate it.
-#: contactNameWithOthers
-msgctxt "contactNameWithOthers"
+#: contactNameWithOthersSuffix
+msgctxt "contactNameWithOthersSuffix"
 msgid "{[ plural(n) ]}"
 msgstr ""
 
-#: contactNameWithOthers[zero]
-msgid "{{ name }}…"
+#: contactNameWithOthersSuffix[one]
+msgctxt "contactNameWithOthersSuffix[one]"
+msgid "or {{ n }} other"
 msgstr ""
 
-#: contactNameWithOthers[one]
-msgid "{{ name }}… or one other"
+#: contactNameWithOthersSuffix[two]
+msgctxt "contactNameWithOthersSuffix[two]"
+msgid "or {{ n }} other"
 msgstr ""
 
-#: contactNameWithOthers[two]
-msgctxt "contactNameWithOthers[two]"
-msgid "{{ name }}… or {{ n }} other"
+#: contactNameWithOthersSuffix[few]
+msgctxt "contactNameWithOthersSuffix[few]"
+msgid "or {{ n }} other"
 msgstr ""
 
-#: contactNameWithOthers[few]
-msgctxt "contactNameWithOthers[few]"
-msgid "{{ name }}… or {{ n }} other"
+#: contactNameWithOthersSuffix[many]
+msgctxt "contactNameWithOthersSuffix[many]"
+msgid "or {{ n }} other"
 msgstr ""
 
-#: contactNameWithOthers[many]
-msgctxt "contactNameWithOthers[many]"
-msgid "{{ name }}… or {{ n }} other"
+#: contactNameWithOthersSuffix[other]
+msgctxt "contactNameWithOthersSuffix[other]"
+msgid "or {{ n }} other"
 msgstr ""
 
-#: contactNameWithOthers[other]
-msgctxt "contactNameWithOthers[other]"
-msgid "{{ name }}… or {{ n }} other"
+#: settings
+msgid "Settings"
 msgstr ""
+
+#. #Call duration units
+#: callDurationMinutes
+msgid "{{ m }}:{{ s }}"
+msgstr ""
+
+#: callDurationHours
+msgid "{{ h }}:{{ m }}:{{ s}}"
+msgstr ""
+
+#~ msgctxt "callAirplaneModeBtnOk"
+#~ msgid "OK"
+#~ msgstr "ठीक"
+
+#~ msgid "Airplane Mode is on"
+#~ msgstr "एयरप्लेन मोड चालू है "

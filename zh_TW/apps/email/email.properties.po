@@ -1,17 +1,18 @@
-#. extracted from locales/en-US/apps/email/email.properties, locales/zh-TW/apps/email/email.properties
+#. extracted from locales/en-US/apps/email/email.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-27 17:34+0100\n"
+"POT-Creation-Date: 2013-01-21 23:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.9.1-pre\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #: setup-app-name-header
 msgid "Mail"
@@ -26,36 +27,40 @@ msgstr "您還沒有設定好傳送或接收電子郵件的方式。想要現在
 msgid "To send and receive email, you will need to set up an account."
 msgstr "您需要設定好帳號才能收發電子郵件。"
 
-#: setup-account-header
-msgid "New mail account setup"
-msgstr "設定新電子郵件帳號"
+#. # Title of the account setup card where the user enters their display name,
+#. # e-mail address, and password.
+#: setup-account-header3
+msgid "New account"
+msgstr ""
 
 #: setup-info-header
 msgid "Your login information"
 msgstr "您的登入資訊"
 
-#: setup-hotmail-account
-msgid "Hotmail account"
-msgstr "Hotmail 帳號"
+#. # The placeholder for the display name of the user that will be displayed in the
+#. # account setup screen input box for the display name until they enter any text
+#. # in the box.  When you send an e-mail, the "From" header contains the user's
+#. # display name ("John Doe") as well as the e-mail address
+#. # ("john.doe@example.com").  In the future this input box will be labeled, but
+#. # it is currently unlabeled because of screen real estate concerns.
+#: setup-info-name.placeholder
+msgid "Your name"
+msgstr ""
 
-#: setup-gmail-account
-msgid "Gmail account"
-msgstr "Gmail 帳號"
+#. # The placeholder for the user's e-mail address that will be displayed in the
+#. # account setup screen input box for the e-mail address until they enter any
+#. # text in the box.  The value will be used to configure the e-mail account.
+#: setup-info-email.placeholder
+msgid "someone@example.com"
+msgstr ""
 
-#: setup-other-email
-msgid "Other email"
-msgstr "其他電子郵件帳號"
-
-#: setup-info-name-placeholder
-msgid "Name"
-msgstr "姓名"
-
-#: setup-info-email-placeholder
-msgid "Email address"
-msgstr "Email 位址"
-
-#: setup-info-password-placeholder
-msgctxt "setup-info-password-placeholder"
+#. # The placeholder for the user's password that will be displayed in the account
+#. # setup screen input box for the password until they enter any text in the box.
+#. # The value will be used to configure the e-mail account and saved for future
+#. # usage.
+#: setup-info-password.placeholder
+#, fuzzy
+msgctxt "setup-info-password.placeholder"
 msgid "Password"
 msgstr "密碼"
 
@@ -84,32 +89,111 @@ msgstr "新增其他帳號"
 msgid "Continue to Mail"
 msgstr "繼續到郵件程式"
 
-#: setup-error-bad-user-or-pass
-msgid "Invalid username or password"
-msgstr "無效的使用者名稱或密碼"
+#. # The error for when the user tries to create an account without a network
+#. # connection active.
+#: setup-error-offline
+msgid "This device is currently offline. Connect to a network and try again."
+msgstr ""
 
+#. # The error for either a bad username or a bad password.  For security reasons,
+#. # servers try not to distinguish between the two which is why we also cannot
+#. # tell them apart either.  Also, if the user made a typo, they could have made
+#. # it in either place.
+#: setup-error-bad-user-or-pass2
+msgid "Invalid username or password. Check for typos."
+msgstr ""
+
+#. # The error for a user having the correct username and password, but the mail
+#. # server explicitly indicates they don't have permission to talk to the mail
+#. # server.  This is currently only expected from ActiveSync servers; situations
+#. # like gmail over IMAP indicating that IMAP is disabled for the account or
+#. # domain have their own error code: setup-error-imap-disabled.
 #: setup-error-not-authorized
 msgid "The server said you're not authorized to create an account"
 msgstr "伺服器回應您未被授權建立帳號"
 
-#: setup-error-unknown
-msgid "An unknown error occurred"
-msgstr "發生未知錯誤"
+#. # The fallback error; if we don't have a better error, we report this.
+#: setup-error-unknown2
+msgid ""
+"An unknown error occurred. Check your network connection or try the manual "
+"configuration option."
+msgstr ""
 
+#. # The error for Gmail accounts where 2-factor authentication (where you receive
+#. # a text message on your phone or run a special app) is enabled, and so the
+#. # user needs to create and use an application specific password to allow us to
+#. # talk to the server.
 #: setup-error-needs-app-pass
 msgid ""
 "You must use an application specific password for two-factor Gmail accounts"
 msgstr ""
 
+#. # The error for Gmail accounts where IMAP is not enabled.  This can occur
+#. # for individual users where they have disabled IMAP from the settings UI.
+#. # This can also occur for apps-for-domains where the domain is not configured
+#. # to support IMAP.
 #: setup-error-imap-disabled
 msgid "You must enable IMAP for your Gmail account"
 msgstr ""
 
-#: setup-manual-config
-msgid "Manually set up account"
-msgstr "手動設定帳號"
+#. # The error for when we are able to contact a server that should be the mail
+#. # server but we are unable to establish a secure connection.
+#: setup-error-bad-security
+msgid ""
+"Unable to establish a secure connection with \"{{server}}\". There may be a "
+"problem with your network or the server."
+msgstr ""
+
+#. # The error for when we try to contact a server but see no indication of a
+#. # response before we give up because of a timeout.
+#: setup-error-unresponsive-server
+msgid ""
+"Unable to establish a connection with \"{{server}}\". There may be a problem "
+"with the network."
+msgstr ""
+
+#. # The error for when we able to establish a (secure) connection with the server,
+#. # but there is some type of failure talking to the server that isn't covered by
+#. # other errors.  Hopefully this is just a temporary problem on the server, but
+#. # it could also be a fundamental incompatibility between our software and the
+#. # server's software.
+#: setup-error-server-problem
+msgid "There is a problem with the server \"{{server}}\". Try again later."
+msgstr ""
+
+#. # The error for when we are trying to figure out the right server settings for
+#. # an account based on the e-mail address the user typed in during configuration,
+#. # but we can't find the right settings.  This is either because the user made a
+#. # typo and so we are looking for configuration data that does not exist, there
+#. # were network failures trying to look the information up, or the information is
+#. # not available.
+#: setup-error-no-config-info
+msgid ""
+"Unable to automatically configure your account. Correct your e-mail address "
+"or try the manual configuration option."
+msgstr ""
+
+#. # The error for when the user is trying to set up an account with a server that
+#. # currently indicates it is offline for maintenance.
+#: setup-error-server-maintenance
+msgid "The server \"{{server}}\" is offline for maintenance. Try again later."
+msgstr ""
+
+#: setup-manual-prompt
+msgid ""
+"Touch \"next\" to continue, or, if you know all of your server's details, you "
+"can manually set up the account:"
+msgstr ""
+
+#: setup-manual-config2
+#, fuzzy
+msgctxt "setup-manual-config2"
+msgid "Manual setup"
+msgstr "手動設定"
 
 #: setup-manual-config-header
+#, fuzzy
+msgctxt "setup-manual-config-header"
 msgid "Manual setup"
 msgstr "手動設定"
 
@@ -146,17 +230,19 @@ msgstr "Socket 類型"
 msgid "SSL"
 msgstr "SSL"
 
-#: setup-manual-hostname-placeholder
-msgctxt "setup-manual-hostname-placeholder"
+#: setup-manual-hostname.placeholder
+#, fuzzy
+msgctxt "setup-manual-hostname.placeholder"
 msgid "Hostname"
 msgstr "主機名稱"
 
-#: setup-manual-port-placeholder
+#: setup-manual-port.placeholder
 msgid "Port Number"
 msgstr "Port 號碼"
 
-#: setup-manual-username-placeholder
-msgctxt "setup-manual-username-placeholder"
+#: setup-manual-username.placeholder
+#, fuzzy
+msgctxt "setup-manual-username.placeholder"
 msgid "Username"
 msgstr "使用者名稱"
 
@@ -167,6 +253,10 @@ msgstr "密碼錯誤！"
 #: setup-bad-password
 msgid "We could not sign in to the server. Maybe your password is wrong?"
 msgstr "我們無法登入至伺服器。也許您的密碼錯了？"
+
+#: setup-new-password.placeholder
+msgid "New password"
+msgstr ""
 
 #: setup-fix-password
 msgid "Retry with new password"
@@ -193,16 +283,13 @@ msgid "You must enable IMAP on your Gmail account "
 msgstr ""
 
 #: setup-gmail-imap-retry
+msgctxt "setup-gmail-imap-retry"
 msgid "Retry"
 msgstr ""
 
 #: settings-main-header
 msgid "Mail settings"
 msgstr "郵件設定"
-
-#: settings-close
-msgid "Close"
-msgstr "關閉"
 
 #: settings-done
 msgid "Done"
@@ -228,14 +315,16 @@ msgid ""
 msgstr ""
 
 #: settings-account-delete-cancel
+#, fuzzy
 msgctxt "settings-account-delete-cancel"
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #: settings-account-delete-confirm
+#, fuzzy
 msgctxt "settings-account-delete-confirm"
 msgid "Delete"
-msgstr ""
+msgstr "刪除"
 
 #: settings-about-section
 msgid "About"
@@ -340,10 +429,6 @@ msgctxt "settings-password"
 msgid "Password"
 msgstr "密碼"
 
-#: settings-new-password
-msgid "New password"
-msgstr ""
-
 #: settings-save
 msgid "Save"
 msgstr "儲存"
@@ -391,15 +476,14 @@ msgid "Accounts"
 msgstr "帳號"
 
 #: envelope-from
+#, fuzzy
 msgctxt "envelope-from"
-"envelope-from"
 msgid "From"
 msgstr "寄件者"
 
 #: envelope-to
+#, fuzzy
 msgctxt "envelope-to"
-"envelope-to"
-"envelope-to"
 msgid "To"
 msgstr "收件者"
 
@@ -468,6 +552,10 @@ msgstr ""
 
 #: message-attachment-view.textContent
 msgid "View"
+msgstr ""
+
+#: message-no-subject
+msgid "(no subject)"
 msgstr ""
 
 #: message-edit-menu-star
@@ -667,6 +755,14 @@ msgstr "回覆"
 msgid "Folders"
 msgstr "資料夾"
 
+#: account-last-synced-label
+msgid "Last sync: "
+msgstr ""
+
+#: account-never-synced
+msgid "Never"
+msgstr ""
+
 #: reply-quoting-wrote
 msgid "{name} wrote"
 msgstr "{name} 提道"
@@ -675,6 +771,11 @@ msgstr "{name} 提道"
 msgid "Original message"
 msgstr "原始訊息"
 
+#. # L10n note: These are the labels we use when displaying the envelope info for a
+#. # message that is forwarded inline.  While automatic recovery of this
+#. # information by clients is made difficult by these strings regularly being
+#. # localized, we attempt to remain consistent with apps such as Thunderbird for
+#. # at least English.
 #: forward-header-subject
 msgctxt "forward-header-subject"
 msgid "Subject"
@@ -689,8 +790,10 @@ msgctxt "forward-header-from"
 msgid "From"
 msgstr "寄件者"
 
+#. # This really wants to have the dash in it for consistency with Thunderbird
 #: forward-header-reply-to
-msgid "Reply to"
+#, fuzzy
+msgid "Reply-To"
 msgstr "回函位址"
 
 #: forward-header-to
@@ -713,8 +816,9 @@ msgid "Inbox"
 msgstr ""
 
 #: folder-sent
+#, fuzzy
 msgid "Sent"
-msgstr ""
+msgstr "傳送"
 
 #: folder-drafts
 msgid "Drafts"
@@ -741,8 +845,9 @@ msgid "Undo"
 msgstr "復原"
 
 #: toaster-retry
-msgid "Try again"
-msgstr "重試"
+msgctxt "toaster-retry"
+msgid "Retry"
+msgstr ""
 
 #: toaster-message-star
 msgctxt "toaster-message-star"
@@ -754,19 +859,22 @@ msgid "1 message flag set"
 msgstr "已為一封訊息加上標示"
 
 #: toaster-message-star[two]
+#, fuzzy
 msgctxt "toaster-message-star[two]"
 msgid "{{ n }} messages flag set"
-msgstr ""
+msgstr "已為 {{ n }} 封訊息加上標示"
 
 #: toaster-message-star[few]
+#, fuzzy
 msgctxt "toaster-message-star[few]"
 msgid "{{ n }} messages flag set"
-msgstr ""
+msgstr "已為 {{ n }} 封訊息加上標示"
 
 #: toaster-message-star[many]
+#, fuzzy
 msgctxt "toaster-message-star[many]"
 msgid "{{ n }} messages flag set"
-msgstr ""
+msgstr "已為 {{ n }} 封訊息加上標示"
 
 #: toaster-message-star[other]
 msgctxt "toaster-message-star[other]"
@@ -783,19 +891,22 @@ msgid "1 message flag removed"
 msgstr "已為一封訊息移除標示"
 
 #: toaster-message-unstar[two]
+#, fuzzy
 msgctxt "toaster-message-unstar[two]"
 msgid "{{ n }} messages flag removed"
-msgstr ""
+msgstr "已為 {{ n }} 封訊息移除標示"
 
 #: toaster-message-unstar[few]
+#, fuzzy
 msgctxt "toaster-message-unstar[few]"
 msgid "{{ n }} messages flag removed"
-msgstr ""
+msgstr "已為 {{ n }} 封訊息移除標示"
 
 #: toaster-message-unstar[many]
+#, fuzzy
 msgctxt "toaster-message-unstar[many]"
 msgid "{{ n }} messages flag removed"
-msgstr ""
+msgstr "已為 {{ n }} 封訊息移除標示"
 
 #: toaster-message-unstar[other]
 msgctxt "toaster-message-unstar[other]"
@@ -812,19 +923,22 @@ msgid "1 message marked as read"
 msgstr "已將一封訊息標為已讀"
 
 #: toaster-message-read[two]
+#, fuzzy
 msgctxt "toaster-message-read[two]"
 msgid "{{ n }} messages marked as read"
-msgstr ""
+msgstr "已將 {{ n }} 封訊息標為已讀"
 
 #: toaster-message-read[few]
+#, fuzzy
 msgctxt "toaster-message-read[few]"
 msgid "{{ n }} messages marked as read"
-msgstr ""
+msgstr "已將 {{ n }} 封訊息標為已讀"
 
 #: toaster-message-read[many]
+#, fuzzy
 msgctxt "toaster-message-read[many]"
 msgid "{{ n }} messages marked as read"
-msgstr ""
+msgstr "已將 {{ n }} 封訊息標為已讀"
 
 #: toaster-message-read[other]
 msgctxt "toaster-message-read[other]"
@@ -841,19 +955,22 @@ msgid "1 message marked as unread"
 msgstr "已將一封訊息標為未讀"
 
 #: toaster-message-unread[two]
+#, fuzzy
 msgctxt "toaster-message-unread[two]"
 msgid "{{ n }} messages marked as unread"
-msgstr ""
+msgstr "已將 {{ n }} 封訊息標為未讀"
 
 #: toaster-message-unread[few]
+#, fuzzy
 msgctxt "toaster-message-unread[few]"
 msgid "{{ n }} messages marked as unread"
-msgstr ""
+msgstr "已將 {{ n }} 封訊息標為未讀"
 
 #: toaster-message-unread[many]
+#, fuzzy
 msgctxt "toaster-message-unread[many]"
 msgid "{{ n }} messages marked as unread"
-msgstr ""
+msgstr "已將 {{ n }} 封訊息標為未讀"
 
 #: toaster-message-unread[other]
 msgctxt "toaster-message-unread[other]"
@@ -870,19 +987,22 @@ msgid "1 message moved"
 msgstr "已移動一封訊息"
 
 #: toaster-message-move[two]
+#, fuzzy
 msgctxt "toaster-message-move[two]"
 msgid "{{ n }} messages moved"
-msgstr ""
+msgstr "已移動 {{ n }} 封訊息"
 
 #: toaster-message-move[few]
+#, fuzzy
 msgctxt "toaster-message-move[few]"
 msgid "{{ n }} messages moved"
-msgstr ""
+msgstr "已移動 {{ n }} 封訊息"
 
 #: toaster-message-move[many]
+#, fuzzy
 msgctxt "toaster-message-move[many]"
 msgid "{{ n }} messages moved"
-msgstr ""
+msgstr "已移動 {{ n }} 封訊息"
 
 #: toaster-message-move[other]
 msgctxt "toaster-message-move[other]"
@@ -899,25 +1019,65 @@ msgid "1 message deleted"
 msgstr "已刪除一封訊息"
 
 #: toaster-message-delete[two]
+#, fuzzy
 msgctxt "toaster-message-delete[two]"
 msgid "{{ n }} messages deleted"
-msgstr ""
+msgstr "已刪除 {{ n }} 封訊息"
 
 #: toaster-message-delete[few]
+#, fuzzy
 msgctxt "toaster-message-delete[few]"
 msgid "{{ n }} messages deleted"
-msgstr ""
+msgstr "已刪除 {{ n }} 封訊息"
 
 #: toaster-message-delete[many]
+#, fuzzy
 msgctxt "toaster-message-delete[many]"
 msgid "{{ n }} messages deleted"
-msgstr ""
+msgstr "已刪除 {{ n }} 封訊息"
 
 #: toaster-message-delete[other]
 msgctxt "toaster-message-delete[other]"
 msgid "{{ n }} messages deleted"
 msgstr "已刪除 {{ n }} 封訊息"
 
+#: toaster-retryable-syncfailed
+msgid "Unable to connect to server"
+msgstr ""
+
 #: form-clear-input
 msgid "Remove text"
 msgstr "移除文字"
+
+#~ msgid "New mail account setup"
+#~ msgstr "設定新電子郵件帳號"
+
+#~ msgid "Hotmail account"
+#~ msgstr "Hotmail 帳號"
+
+#~ msgid "Gmail account"
+#~ msgstr "Gmail 帳號"
+
+#~ msgid "Other email"
+#~ msgstr "其他電子郵件帳號"
+
+#~ msgid "Name"
+#~ msgstr "姓名"
+
+#~ msgid "Email address"
+#~ msgstr "Email 位址"
+
+#~ msgid "Invalid username or password"
+#~ msgstr "無效的使用者名稱或密碼"
+
+#~ msgid "An unknown error occurred"
+#~ msgstr "發生未知錯誤"
+
+#~ msgid "Manually set up account"
+#~ msgstr "手動設定帳號"
+
+#~ msgid "Close"
+#~ msgstr "關閉"
+
+#~ msgid "Try again"
+#~ msgstr "重試"

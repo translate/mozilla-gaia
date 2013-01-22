@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-14 01:41+0100\n"
+"POT-Creation-Date: 2013-01-22 00:09+0100\n"
 "PO-Revision-Date: 2013-01-04 12:50+0200\n"
 "Last-Translator: Ibrahima SARR <ibrahima.sarr@pulaagu.com>\n"
 "Language-Team: FULA LOCALIZATION\n"
@@ -12,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -74,6 +74,10 @@ msgstr "Seŋondir"
 #: done
 msgid "Done"
 msgstr "Gasii"
+
+#: set
+msgid "Set"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Connectivity
@@ -372,8 +376,9 @@ msgstr "Ɓennin so jaabaaka"
 msgid "Forward when unreachable"
 msgstr "Ɓennin so heɓotaako"
 
-#: callForwardingGetting
-msgid "Getting network info…"
+#: callForwardingRequesting
+#, fuzzy
+msgid "Requesting network info…"
 msgstr "Nana heɓa humpito resoo…"
 
 #: callForwardingQueryError
@@ -388,6 +393,16 @@ msgstr "Noddaali daande to"
 msgctxt "callForwardingNotForwarding"
 msgid "Disabled"
 msgstr "Daaƴaaɗo"
+
+#: confirmCallWaitingTitle
+msgid "Unable to confirm call waiting preferences"
+msgstr ""
+
+#: confirmCallWaitingDesc
+msgid ""
+"The device is currently unable to communicate with the carrier. Try setting "
+"the preference again."
+msgstr ""
 
 #: cf-alwaysUseThisNumber
 msgid "Always use this number"
@@ -710,6 +725,10 @@ msgstr "Horiima seŋondirde kaɓirɗi"
 msgid "Unable to pair with the device. Check that the PIN is correct."
 msgstr "Horiima seŋondirde e kaɓirgol ngol. Ƴeewto so PIN oo ena moƴƴi."
 
+#: error-pair-toofast
+msgid "Unable to pair with the device. Too many requests."
+msgstr ""
+
 #: error-connect-title
 msgid "Unable to connect devices"
 msgstr "Horiima seŋde saɓirɗi"
@@ -977,6 +996,10 @@ msgstr "Ɗemngal"
 #: region
 msgid "Region"
 msgstr "Diiwaan"
+
+#: sample-format
+msgid "Sample Format"
+msgstr ""
 
 #. # see http://www.cplusplus.com/reference/clibrary/ctime/strftime/
 #: longDateFormat
@@ -1289,32 +1312,37 @@ msgstr "Kod PIN keso"
 msgid "The PIN was incorrect."
 msgstr "Kod PIN oo moƴƴaani."
 
-#: pinAttemptMsg
-msgctxt "pinAttemptMsg"
+#: pinAttemptMsg2
+#, fuzzy
+msgctxt "pinAttemptMsg2"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: pinAttemptMsg[one]
-msgid "one last try."
-msgstr "etannde wootere heddii."
+#: pinAttemptMsg2[one]
+msgid "Last chance."
+msgstr ""
 
-#: pinAttemptMsg[two]
-msgctxt "pinAttemptMsg[two]"
+#: pinAttemptMsg2[two]
+#, fuzzy
+msgctxt "pinAttemptMsg2[two]"
 msgid "{{n}} tries left."
 msgstr "etanɗe {{n}} keddii."
 
-#: pinAttemptMsg[few]
-msgctxt "pinAttemptMsg[few]"
+#: pinAttemptMsg2[few]
+#, fuzzy
+msgctxt "pinAttemptMsg2[few]"
 msgid "{{n}} tries left."
 msgstr "etanɗe {{n}} keddii."
 
-#: pinAttemptMsg[many]
-msgctxt "pinAttemptMsg[many]"
+#: pinAttemptMsg2[many]
+#, fuzzy
+msgctxt "pinAttemptMsg2[many]"
 msgid "{{n}} tries left."
 msgstr "etanɗe {{n}} keddii."
 
-#: pinAttemptMsg[other]
-msgctxt "pinAttemptMsg[other]"
+#: pinAttemptMsg2[other]
+#, fuzzy
+msgctxt "pinAttemptMsg2[other]"
 msgid "{{n}} tries left."
 msgstr "etanɗe {{n}} keddii."
 
@@ -1344,7 +1372,7 @@ msgstr ""
 msgid "The PUK code is incorrect."
 msgstr "Kod PUK oo moƴƴaani."
 
-#: pukAttemptMsg
+#: pukAttemptMsg2
 msgid ""
 "You have {{n}} tries left to enter the correct code before this SIM card "
 "will be permanently unusable. Refer to your SIM card documentation or "
@@ -1417,6 +1445,8 @@ msgid "Storage"
 msgstr "Ndesgu"
 
 #: help
+#, fuzzy
+msgctxt "help"
 msgid "Help"
 msgstr "Ballal"
 
@@ -1424,6 +1454,18 @@ msgstr "Ballal"
 #: deviceInfo
 msgid "Device information"
 msgstr "Humpito kaɓirgol"
+
+#: deviceInfo-IMEI
+msgid "IMEI"
+msgstr ""
+
+#: deviceInfo-ICCID
+msgid "ICCID"
+msgstr ""
+
+#: deviceInfo-MSISDN
+msgid "Phone number"
+msgstr ""
 
 #: developer
 msgid "Developer"
@@ -1457,14 +1499,6 @@ msgstr "Nokku mo Flash goobtii"
 msgid "Log slow animations"
 msgstr "Logo jirwitte leelɗe"
 
-#: dev-mode
-msgid "Developer mode"
-msgstr "Mbayka topaajo"
-
-#: oop-disabled
-msgid "Disable out-of-process"
-msgstr "Daaƴ out-of-process"
-
 #: remote-debugging
 msgid "Remote debugging"
 msgstr "Buggitagol goɗɗungol"
@@ -1476,6 +1510,10 @@ msgstr "Jaltal Wifi e adb"
 #: ttl-monitor
 msgid "Show time to load"
 msgstr "Hollu ko heddii e lowwaade"
+
+#: console-enabled
+msgid "Console enabled"
+msgstr ""
 
 #: model-name
 msgid "Model"
@@ -1514,6 +1552,7 @@ msgid "More Information"
 msgstr "Ɓeydu Humpito"
 
 #: gitInfo
+#, fuzzy
 msgid "Git commit info"
 msgstr "Humpito naatnugol Git"
 
@@ -1560,6 +1599,10 @@ msgstr "Resoo ko ceŋtiiɗo. Maa yiylo kadi tuma nde resoo seŋiima."
 #: already-latest-version
 msgid "This is already the latest version of {{brandShortName}}"
 msgstr "Ɗuum ko yamre sakkitiinde {{brandShortName}} kisa"
+
+#: check-error
+msgid "There was an error when checking for updates."
+msgstr ""
 
 #: aboutBrowserOS
 msgid "About {{brandShortName}}"
@@ -1724,9 +1767,9 @@ msgstr "Alaa jaaɓngal kuutorgol gadanol yiytaa"
 msgid "Device storage"
 msgstr "Ndesgu kaɓirgol"
 
-#: umsEnabled
-msgid "USB mass storage enabled"
-msgstr "Ndesgu USB keewngu hurminaama"
+#: usbMassStorage
+msgid "USB mass storage"
+msgstr ""
 
 #: umsUnplugToDisable
 msgid "Unplug USB cable to disable"
@@ -1736,45 +1779,64 @@ msgstr "Seŋtu Kaabal USB ngal ngam daaƴde"
 msgid "Application storage"
 msgstr "Ndesgu jaaɓnirgal"
 
-#: size-B
-msgid "{{size}} B"
-msgstr "{{size}} B"
+#: byteUnit-B
+msgid "B"
+msgstr ""
 
-#: size-KB
-msgid "{{size}} KB"
-msgstr "{{size}} KB"
+#: byteUnit-KB
+msgid "KB"
+msgstr ""
 
-#: size-MB
-msgid "{{size}} MB"
-msgstr "{{size}} MB"
+#: byteUnit-MB
+msgid "MB"
+msgstr ""
 
-#: size-GB
-msgid "{{size}} GB"
-msgstr "{{size}} GB"
+#: byteUnit-GB
+msgid "GB"
+msgstr ""
 
-#: size-TB
-msgid "{{size}} TB"
-msgstr "{{size}} TB"
+#: byteUnit-TB
+msgid "TB"
+msgstr ""
 
-#: available-size-B
-msgid "{{size}} B available"
-msgstr "{{size}} B ena keddii"
+#: storageSize
+msgid "{{size}} {{unit}}"
+msgstr ""
 
-#: available-size-KB
-msgid "{{size}} KB available"
-msgstr "{{size}} KB ena keddii"
+#: availableSize
+#, fuzzy
+msgid "{[ plural(size) ]}"
+msgstr "{[ plural(n) ]}"
 
-#: available-size-MB
-msgid "{{size}} MB available"
-msgstr "{{size}} MB ena keddii"
+#: availableSize[zero]
+msgctxt "availableSize[zero]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
 
-#: available-size-GB
-msgid "{{size}} GB available"
-msgstr "{{size}} GB ena keddii"
+#: availableSize[one]
+msgctxt "availableSize[one]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
 
-#: available-size-TB
-msgid "{{size}} TB available"
-msgstr "{{size}} TB ena keddii"
+#: availableSize[two]
+msgctxt "availableSize[two]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
+
+#: availableSize[few]
+msgctxt "availableSize[few]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
+
+#: availableSize[many]
+msgctxt "availableSize[many]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
+
+#: availableSize[other]
+msgctxt "availableSize[other]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
 
 #: apps-total-space
 msgid "Total space"
@@ -1898,13 +1960,9 @@ msgstr "Neldu Mozilla Duttine"
 msgid "Performance data"
 msgstr "Keɓe moƴƴugol"
 
-#: performanceDataInfo2
-msgid ""
-"Make {{brandShortName}} faster and easier to use by sharing information over "
-"Wi-Fi about your phone’s performance."
+#: performanceDataInfo
+msgid "Help us improve {{brandShortName}} by sharing data about your phone."
 msgstr ""
-"Waɗ haa {{brandShortName}} ɓeydoo yaawde e weeɓde huutoraade so "
-"wostondireede humpito e Wifi baɗte no cinndel maa woori."
 
 #: sharePerformanceData
 msgid "Submit performance data"
@@ -1957,9 +2015,10 @@ msgstr ""
 #. # LOCALIZATION NOTE (crash-reports-description-3-*): these strings are a paragraph, with a "privacy policy"
 #. # link in the middle. Include trailing spaces as needed.
 #: crash-reports-description-3-start
+#, fuzzy
 msgid ""
 "We use crash reports to try to fix problems and improve our products. We "
-"handle your information as we describe in our "
+"handle your information as we describe in our"
 msgstr ""
 "Min kuutorto jaŋtooje kooke ɗee ngam ñawndude caɗe tee ɓeydude kaɓirɗe ɗee "
 "moƴƴude. Mi kuutortoo humpito maa ko no min ciforii e "
@@ -1977,60 +2036,137 @@ msgstr "."
 msgid "Online support:"
 msgstr "Wallitorde e enternet:"
 
-#. # LOCALIZATION NOTE (online-support.href): this is the URL for the online support page.
-#: online-support.href
-msgid ""
-"http://www.vivo.com.br/portalweb/appmanager/env/web?_nfls=false&_nfpb=true&_"
-"pageLabel=vcAtendMovelBook&WT.ac=portal.atendimento.movel"
-msgstr ""
-"http://www.vivo.com.br/portalweb/appmanager/env/web?_nfls=false&_nfpb=true&_"
-"pageLabel=vcAtendMovelBook&WT.ac=portal.atendimento.movel"
-
-#. # LOCALIZATION NOTE (online-support-link-text): This text will appear as a link.
-#: online-support-link-text
-msgid "Vivo"
-msgstr "Vivo"
-
 #: call-support
 msgid "Call support:"
 msgstr "Noddu wallitorde:"
 
-#. # LOCALIZATION NOTE (call-support-link-1): this text will appear as a link.
-#: call-support-link-1
-msgid "*8486"
-msgstr "*8486"
-
-#. # LOCALIZATION NOTE (call-support-link-1.href): include the "tel:" protocol before the call support
-#. # number so that it will open in the dialer app.
-#: call-support-link-1.href
-msgid "tel:*8486"
-msgstr "tel:*8486"
-
-#. # LOCALIZATION NOTE: if your locale only has one support phone number, leave the next 3 strings empty.
-#: call-support-link-2
-msgid "1058"
-msgstr "1058"
-
-#: call-support-link-2.href
-msgid "tel:1058"
-msgstr "tel:1058"
-
-#: call-support-link-or
-msgid "or"
-msgstr "walla"
+#: call-support-numbers
+msgid "{{link1}} or {{link2}}"
+msgstr ""
 
 #: user-guide
 msgid "User guide"
 msgstr "Famminorde kuutoro"
 
 #. # Device :: SIM toolkit
-#: stkAppsNotAvailable
-msgid "SIM card applications not available."
-msgstr "Jaaɓnirɗe kartal SIM ngoodaani."
+#: operatorServices
+msgid "Operator Services"
+msgstr ""
 
-#: simToolkit
-msgid "SIM toolkit"
-msgstr "Kaɓirɗe SIM"
+#: operatorServices-help
+#, fuzzy
+msgctxt "operatorServices-help"
+msgid "Help"
+msgstr "Ballal"
+
+#: operatorServices-helpmenu
+msgid "Help menu"
+msgstr ""
+
+#: operatorService-invalid-url
+msgid "Cannot access the URL"
+msgstr ""
+
+#, fuzzy
+#~ msgctxt "gitInfo"
+#~ msgid "Git commit info"
+#~ msgstr "Humpito naatnugol Git"
+
+#~ msgctxt "pinAttemptMsg"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgid "one last try."
+#~ msgstr "etannde wootere heddii."
+
+#~ msgctxt "pinAttemptMsg[few]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "etanɗe {{n}} keddii."
+
+#~ msgctxt "pinAttemptMsg[many]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "etanɗe {{n}} keddii."
+
+#~ msgctxt "pinAttemptMsg[other]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "etanɗe {{n}} keddii."
+
+#~ msgid "Developer mode"
+#~ msgstr "Mbayka topaajo"
+
+#~ msgid "Disable out-of-process"
+#~ msgstr "Daaƴ out-of-process"
+
+#~ msgid "USB mass storage enabled"
+#~ msgstr "Ndesgu USB keewngu hurminaama"
+
+#~ msgid "{{size}} B"
+#~ msgstr "{{size}} B"
+
+#~ msgid "{{size}} KB"
+#~ msgstr "{{size}} KB"
+
+#~ msgid "{{size}} MB"
+#~ msgstr "{{size}} MB"
+
+#~ msgid "{{size}} GB"
+#~ msgstr "{{size}} GB"
+
+#~ msgid "{{size}} TB"
+#~ msgstr "{{size}} TB"
+
+#~ msgid "{{size}} B available"
+#~ msgstr "{{size}} B ena keddii"
+
+#~ msgid "{{size}} KB available"
+#~ msgstr "{{size}} KB ena keddii"
+
+#~ msgid "{{size}} MB available"
+#~ msgstr "{{size}} MB ena keddii"
+
+#~ msgid "{{size}} GB available"
+#~ msgstr "{{size}} GB ena keddii"
+
+#~ msgid "{{size}} TB available"
+#~ msgstr "{{size}} TB ena keddii"
+
+#~ msgid ""
+#~ "Make {{brandShortName}} faster and easier to use by sharing information over "
+#~ "Wi-Fi about your phone’s performance."
+#~ msgstr ""
+#~ "Waɗ haa {{brandShortName}} ɓeydoo yaawde e weeɓde huutoraade so "
+#~ "wostondireede humpito e Wifi baɗte no cinndel maa woori."
+
+#~ msgid ""
+#~ "http://www.vivo.com.br/portalweb/appmanager/env/web?_nfls=false&_nfpb=true&_"
+#~ "pageLabel=vcAtendMovelBook&WT.ac=portal.atendimento.movel"
+#~ msgstr ""
+#~ "http://www.vivo.com.br/portalweb/appmanager/env/web?_nfls=false&_nfpb=true&_"
+#~ "pageLabel=vcAtendMovelBook&WT.ac=portal.atendimento.movel"
+
+#~ msgid "Vivo"
+#~ msgstr "Vivo"
+
+#~ msgid "*8486"
+#~ msgstr "*8486"
+
+#~ msgid "tel:*8486"
+#~ msgstr "tel:*8486"
+
+#~ msgid "1058"
+#~ msgstr "1058"
+
+#~ msgid "tel:1058"
+#~ msgstr "tel:1058"
+
+#~ msgid "or"
+#~ msgstr "walla"
+
+#~ msgid "SIM card applications not available."
+#~ msgstr "Jaaɓnirɗe kartal SIM ngoodaani."
+
+#~ msgid "SIM toolkit"
+#~ msgstr "Kaɓirɗe SIM"
 
 #~ msgid "Classic"
 #~ msgstr "Gaadanteejo"

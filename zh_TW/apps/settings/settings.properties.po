@@ -1,17 +1,18 @@
-#. extracted from locales/en-US/apps/settings/settings.properties, locales/zh-TW/apps/settings/settings.properties
+#. extracted from locales/en-US/apps/settings/settings.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-27 17:34+0100\n"
+"POT-Creation-Date: 2013-01-22 00:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.9.1-pre\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #: settings
 msgid "Settings"
@@ -30,6 +31,8 @@ msgid "Enabled"
 msgstr "啟用"
 
 #: disabled
+#, fuzzy
+msgctxt "disabled"
 msgid "Disabled"
 msgstr "停用"
 
@@ -69,7 +72,13 @@ msgstr "配對"
 msgid "Done"
 msgstr "完成"
 
-#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=## Connectivity#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#: set
+msgid "Set"
+msgstr ""
+
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#. # Connectivity
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #: networkAndConnectivity
 msgid "Network & Connectivity"
 msgstr "網路連線"
@@ -150,8 +159,8 @@ msgid "Obtaining an IP address…"
 msgstr "正在取得 IP 地址…"
 
 #: shortStatus-connected
+#, fuzzy
 msgctxt "shortStatus-connected"
-"shortStatus-connected"
 msgid "Connected"
 msgstr "已連線。"
 
@@ -268,8 +277,9 @@ msgid "No networks found"
 msgstr ""
 
 #: noKnownNetworks
+#, fuzzy
 msgid "No known networks"
-msgstr ""
+msgstr "已知網路"
 
 #. # Connectivity :: Wi-Fi :: WPS
 #: wps
@@ -336,6 +346,79 @@ msgstr "取消 WPS"
 msgid "Failed to cancel WPS"
 msgstr "WPS 取消失敗"
 
+#. # Connectivity :: Call
+#: callSettings
+msgid "Call Settings"
+msgstr ""
+
+#: callWaiting
+msgid "Call waiting"
+msgstr "來電等待"
+
+#: callForwarding
+msgid "Call forwarding"
+msgstr ""
+
+#: callForwardingUnconditional
+msgid "Always forward"
+msgstr ""
+
+#: callForwardingMobileBusy
+msgid "Forward when busy"
+msgstr ""
+
+#: callForwardingNoReply
+msgid "Forward when unanswered"
+msgstr ""
+
+#: callForwardingNotReachable
+msgid "Forward when unreachable"
+msgstr ""
+
+#: callForwardingRequesting
+msgid "Requesting network info…"
+msgstr ""
+
+#: callForwardingQueryError
+msgid "Error in query"
+msgstr ""
+
+#: callForwardingForwardingVoiceTo
+msgid "Voice calls to"
+msgstr ""
+
+#: callForwardingNotForwarding
+#, fuzzy
+msgctxt "callForwardingNotForwarding"
+msgid "Disabled"
+msgstr "停用"
+
+#: confirmCallWaitingTitle
+msgid "Unable to confirm call waiting preferences"
+msgstr ""
+
+#: confirmCallWaitingDesc
+msgid ""
+"The device is currently unable to communicate with the carrier. Try setting "
+"the preference again."
+msgstr ""
+
+#: cf-alwaysUseThisNumber
+msgid "Always use this number"
+msgstr ""
+
+#: cf-numberWhenUnreachable
+msgid "Number when unreachable"
+msgstr ""
+
+#: cf-numberWhenUnanswered
+msgid "Number when unanswered"
+msgstr ""
+
+#: cf-numberWhenBusy
+msgid "Number when busy"
+msgstr ""
+
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
 msgid "Cellular & Data"
@@ -344,10 +427,6 @@ msgstr "通話與數據連線"
 #: dataNetwork
 msgid "Carrier"
 msgstr "營運商"
-
-#: callWaiting
-msgid "Call waiting"
-msgstr "來電等待"
 
 #: dataConnectivity
 msgid "Data"
@@ -422,8 +501,13 @@ msgstr "已連線"
 msgid "APN"
 msgstr "APN"
 
-#: apnSettings
-msgid "APN settings"
+#: dataSettings
+msgid "Data settings"
+msgstr ""
+
+#: suplSettings
+#, fuzzy
+msgid "A-GPS settings"
 msgstr "APN 選項"
 
 #: mmsSettings
@@ -488,9 +572,10 @@ msgid "Turned off"
 msgstr "已關閉"
 
 #: bt-status-paired
+#, fuzzy
 msgctxt "bt-status-paired"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: bt-status-paired[zero]
 msgid "{{name}}"
@@ -631,13 +716,18 @@ msgstr "無法與裝置配對"
 msgid "Unable to pair with the device. Check that the PIN is correct."
 msgstr "無法與裝置配對。請確定 PIN 正確。"
 
+#: error-pair-toofast
+msgid "Unable to pair with the device. Too many requests."
+msgstr ""
+
 #: error-connect-title
 msgid "Unable to connect devices"
 msgstr "無法連線到裝置"
 
 #: error-connect-msg
+#, fuzzy
 msgid ""
-"Check that the device you're trying to connect with is still in range and "
+"Check that the device you’re trying to connect with is still in range and "
 "has Bluetooth turned on."
 msgstr "請確定您想要連線到的裝置還在附近，藍牙也仍然開啟。"
 
@@ -709,7 +799,22 @@ msgstr "熱點選項"
 msgid "SSID network name"
 msgstr "SSID 網路名稱"
 
-#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=## Personalization#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#: hotspot-open
+#, fuzzy
+msgid "open"
+msgstr "開放"
+
+#: hotspot-wpa-psk
+msgid "WPA (TKIP)"
+msgstr ""
+
+#: hotspot-wpa2-psk
+msgid "WPA2 (AES)"
+msgstr ""
+
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#. # Personalization
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #: personalization
 msgid "Personalization"
 msgstr "個人化"
@@ -727,9 +832,17 @@ msgstr "訊息"
 msgid "Volume"
 msgstr "音量"
 
+#: tones
+msgid "Tones"
+msgstr ""
+
 #: select-tone
 msgid "Select a tone"
 msgstr "選擇鈴聲"
+
+#: ringer
+msgid "Ringer"
+msgstr ""
 
 #: ring-tones
 msgid "Ringtones"
@@ -739,29 +852,9 @@ msgstr "鈴聲"
 msgid "Alert tones"
 msgstr "警示音效"
 
-#: classic
-msgid "Classic"
-msgstr "Classic"
-
-#: oldSchool
-msgid "Old School"
-msgstr "Old School"
-
-#: lowBit
-msgid "Low bit"
-msgstr "Low Bit"
-
-#: beep
-msgid "Beep beep"
-msgstr "嗶嗶聲"
-
 #: volume-and-tones
 msgid "Volume & Tones"
 msgstr "音量與音效"
-
-#: call
-msgid "Call"
-msgstr "撥號"
 
 #: other-sounds
 msgid "Other sounds"
@@ -783,16 +876,8 @@ msgstr ""
 msgid "Alarm"
 msgstr ""
 
-#: normal-sound
-msgid "Normal"
-msgstr ""
-
-#: content-sound
-msgid "Content"
-msgstr ""
-
-#: notification-sound
-msgid "Notification"
+#: ringer-and-notification-sound
+msgid "Ringer & Notifications"
 msgstr ""
 
 #: voice-sound
@@ -899,6 +984,10 @@ msgstr "語言"
 msgid "Region"
 msgstr "區域"
 
+#: sample-format
+msgid "Sample Format"
+msgstr ""
+
 #. # see http://www.cplusplus.com/reference/clibrary/ctime/strftime/
 #: longDateFormat
 msgid "%A, %B %d, %Y"
@@ -997,7 +1086,9 @@ msgstr "簡體中文"
 msgid "Pinyin"
 msgstr "拼音"
 
-#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=## Accounts (N/A)#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#. # Accounts (N/A)
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #: accounts
 msgid "Accounts"
 msgstr "帳號"
@@ -1010,7 +1101,9 @@ msgstr "Persona"
 msgid "Mail"
 msgstr "郵件"
 
-#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=## Security#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#. # Security
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #: privacyAndSecurity
 msgid "Privacy & Security"
 msgstr ""
@@ -1109,8 +1202,9 @@ msgstr "目前的 Passcode"
 msgid "Passcode is incorrect"
 msgstr "Passcode 不正確。"
 
-#: passcode-dont-match
-msgid "Passcode doesn't match. Try again."
+#: passcode-doesnt-match
+#, fuzzy
+msgid "Passcode doesn’t match. Try again."
 msgstr "輸入的 Passcode 不相同。請再試一次。"
 
 #: passcode
@@ -1201,32 +1295,37 @@ msgstr "設定 PIN"
 msgid "The PIN was incorrect."
 msgstr "PIN 不正確"
 
-#: pinAttemptMsg
-msgctxt "pinAttemptMsg"
+#: pinAttemptMsg2
+#, fuzzy
+msgctxt "pinAttemptMsg2"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: pinAttemptMsg[one]
-msgid "one last try."
-msgstr "最後一次機會。"
-
-#: pinAttemptMsg[two]
-msgctxt "pinAttemptMsg[two]"
-msgid "{{n}} tries left."
+#: pinAttemptMsg2[one]
+msgid "Last chance."
 msgstr ""
 
-#: pinAttemptMsg[few]
-msgctxt "pinAttemptMsg[few]"
+#: pinAttemptMsg2[two]
+#, fuzzy
+msgctxt "pinAttemptMsg2[two]"
 msgid "{{n}} tries left."
-msgstr ""
+msgstr "還有 {{n}} 次機會。"
 
-#: pinAttemptMsg[many]
-msgctxt "pinAttemptMsg[many]"
+#: pinAttemptMsg2[few]
+#, fuzzy
+msgctxt "pinAttemptMsg2[few]"
 msgid "{{n}} tries left."
-msgstr ""
+msgstr "還有 {{n}} 次機會。"
 
-#: pinAttemptMsg[other]
-msgctxt "pinAttemptMsg[other]"
+#: pinAttemptMsg2[many]
+#, fuzzy
+msgctxt "pinAttemptMsg2[many]"
+msgid "{{n}} tries left."
+msgstr "還有 {{n}} 次機會。"
+
+#: pinAttemptMsg2[other]
+#, fuzzy
+msgctxt "pinAttemptMsg2[other]"
 msgid "{{n}} tries left."
 msgstr "還有 {{n}} 次機會。"
 
@@ -1251,7 +1350,7 @@ msgstr "您必須輸入 SIM 卡的 PUK 碼。若需更多資訊，請參考您�
 msgid "The PUK code is incorrect."
 msgstr "PUK 碼不正確。"
 
-#: pukAttemptMsg
+#: pukAttemptMsg2
 msgid ""
 "You have {{n}} tries left to enter the correct code before this SIM card "
 "will be permanently unusable. Refer to your SIM card documentation or "
@@ -1303,7 +1402,9 @@ msgid ""
 "of shopping carts, location information or sign-in information."
 msgstr "開啟「不要追蹤我」不會影響您登入網站的功能，也不會讓您的裝置自動忘記您的個人隱私資訊 — 諸如購物車、位置資訊，以及登入資訊。"
 
-#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=## Device#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#. # Device
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #: device
 msgid "Device"
 msgstr "裝置"
@@ -1312,14 +1413,27 @@ msgstr "裝置"
 msgid "Storage"
 msgstr "儲存空間"
 
-#: helpAndFeedback
-msgid "Help & Feedback"
-msgstr "說明與意見回饋"
+#: help
+msgctxt "help"
+msgid "Help"
+msgstr ""
 
 #. # Device :: Information
 #: deviceInfo
 msgid "Device information"
 msgstr "裝置資訊"
+
+#: deviceInfo-IMEI
+msgid "IMEI"
+msgstr ""
+
+#: deviceInfo-ICCID
+msgid "ICCID"
+msgstr ""
+
+#: deviceInfo-MSISDN
+msgid "Phone number"
+msgstr ""
 
 #: developer
 msgid "Developer"
@@ -1353,14 +1467,6 @@ msgstr "閃爍重繪區域"
 msgid "Log slow animations"
 msgstr "紀錄慢速動畫"
 
-#: dev-mode
-msgid "Developer mode"
-msgstr "開發者模式"
-
-#: oop-disabled
-msgid "Disable out-of-process"
-msgstr "停用 Out-Of-Process"
-
 #: remote-debugging
 msgid "Remote debugging"
 msgstr ""
@@ -1372,6 +1478,10 @@ msgstr ""
 #: ttl-monitor
 msgid "Show time to load"
 msgstr "顯示載入時間"
+
+#: console-enabled
+msgid "Console enabled"
+msgstr ""
 
 #: model-name
 msgid "Model"
@@ -1410,6 +1520,7 @@ msgid "More Information"
 msgstr "更多資訊"
 
 #: gitInfo
+#, fuzzy
 msgid "Git commit info"
 msgstr "Git commit info"
 
@@ -1454,18 +1565,23 @@ msgid "Network is offline. Will check again when the network is online."
 msgstr "網路已離線，將會在下次上線時再次檢查"
 
 #: already-latest-version
-msgid "This is already the latest version of Firefox OS"
-msgstr "這已經是最新版的 Firefox OS"
+msgid "This is already the latest version of {{brandShortName}}"
+msgstr ""
 
-#: aboutFirefoxOS
-msgid "About Firefox OS"
-msgstr "關於 Firefox OS"
+#: check-error
+msgid "There was an error when checking for updates."
+msgstr ""
 
-#: firefox-os-desc
+#: aboutBrowserOS
+msgid "About {{brandShortName}}"
+msgstr ""
+
+#: browser-os-desc
+#, fuzzy
 msgid ""
-"Firefox OS is the free and open source operating system from Mozilla. Our "
-"mission is to promote openness, innovation and opportunity by keeping the "
-"power of the Web in your hands."
+"{{brandShortName}} is the free and open source operating system from "
+"Mozilla. Our mission is to promote openness, innovation and opportunity by "
+"keeping the power of the Web in your hands."
 msgstr "Firefox OS 是由 Mozilla 所打造，自由且開放的作業系統。我們的使命是推廣開放、創新，以及讓網路的威力保留在你我手中的機會。"
 
 #: learn-more
@@ -1477,8 +1593,9 @@ msgid "Reset Phone"
 msgstr "重設手機"
 
 #: reset-warning-1
+#, fuzzy
 msgid ""
-"CAUTION: Resetting will erase all your data, including any apps you've "
+"CAUTION: Resetting will erase all your data, including any apps you’ve "
 "purchased."
 msgstr "警告: 重設手機將會清除您所有的資料，包含您購買過的所有程式。"
 
@@ -1488,47 +1605,61 @@ msgid ""
 "or data will be saved."
 msgstr "手機將會回復到出廠狀態，您的設定與資料都不會被保留。"
 
-#. # Localization note: the licensing* strings below aren’t ready for translation yet.
-#: about-your-rights
-msgid "About your rights"
-msgstr "關於您的權利"
-
-#: about-your-rights2-0
-msgid ""
-"Firefox OS is built on free and open source software by a community of "
-"thousands from all over the world. There are a few things you should know:"
+#. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
+#: your-rights
+msgid "Your Rights"
 msgstr ""
 
-#: about-your-rights2-1
+#: about-your-rights-0
 msgid ""
-"Firefox OS is made available to you under the terms of several open source "
-"licenses including the Mozilla Public License. A device running Firefox OS "
-"may also contain proprietary software from third parties. Any code provided "
-"under open licenses give you the right to modify the source code and "
-"distribute your modified versions as long as you comply with their terms."
+"{{brandShortName}} is built on free and open source software by a community "
+"of thousands from all over the world. There are a few things you should "
+"know:"
 msgstr ""
 
-#: about-your-rights2-2
+#: about-your-rights-1
+msgid ""
+"{{brandShortName}} is made available to you under the terms of several open "
+"source licenses including the Mozilla Public License. A device running "
+"{{brandShortName}} may also contain proprietary software from third parties. "
+"Any code provided under open licenses give you the right to modify the "
+"source code and distribute your modified versions as long as you comply with "
+"their terms."
+msgstr ""
+
+#: about-your-rights-2
 msgid ""
 "You are not granted any trademark rights or licenses to the trademarks of "
 "the Mozilla Foundation or any party, including without limitation the "
-"Firefox name or logo."
+"{{brandShortName}} name or logo."
 msgstr ""
 
-#: about-your-rights2-3
+#: about-your-rights-3
 msgid ""
-"Some features in Firefox OS, such as the Crash Reporter, give you the option "
-"to provide feedback to Mozilla. By choosing to submit feedback, you give "
-"Mozilla permission to use the feedback to improve its products, to publish "
-"the feedback on its websites, and to distribute the feedback."
+"Some features in {{brandShortName}}, such as the Crash Reporter, give you "
+"the option to provide feedback to Mozilla. By choosing to submit feedback, "
+"you give Mozilla permission to use the feedback to improve its products, to "
+"publish the feedback on its websites, and to distribute the feedback."
 msgstr ""
 
-#: about-your-privacy
-msgid "About your privacy"
-msgstr "關於您的隱私"
+#: about-legal-info
+msgid "Legal Information"
+msgstr ""
 
-#: about-licensing
-msgid "Licensing"
+#: open-source-notices
+msgid "Open Source Notices"
+msgstr ""
+
+#: about-mozilla
+msgid "Mozilla"
+msgstr ""
+
+#: about-other
+msgid "Other"
+msgstr ""
+
+#: your-privacy
+msgid "Your Privacy"
 msgstr ""
 
 #: licensing-1
@@ -1578,9 +1709,9 @@ msgstr ""
 msgid "Device storage"
 msgstr "裝置儲存空間"
 
-#: umsEnabled
-msgid "USB mass storage enabled"
-msgstr "USB 大量儲存空間已啟用"
+#: usbMassStorage
+msgid "USB mass storage"
+msgstr ""
 
 #: umsUnplugToDisable
 msgid "Unplug USB cable to disable"
@@ -1590,45 +1721,64 @@ msgstr "拔除 USB 纜線以停用"
 msgid "Application storage"
 msgstr "應用程式儲存空間"
 
-#: size-B
-msgid "{{size}} B"
-msgstr "{{size}} B"
+#: byteUnit-B
+msgid "B"
+msgstr ""
 
-#: size-KB
-msgid "{{size}} KB"
-msgstr "{{size}} KB"
+#: byteUnit-KB
+msgid "KB"
+msgstr ""
 
-#: size-MB
-msgid "{{size}} MB"
-msgstr "{{size}} MB"
+#: byteUnit-MB
+msgid "MB"
+msgstr ""
 
-#: size-GB
-msgid "{{size}} GB"
-msgstr "{{size}} GB"
+#: byteUnit-GB
+msgid "GB"
+msgstr ""
 
-#: size-TB
-msgid "{{size}} TB"
-msgstr "{{size}} TB"
+#: byteUnit-TB
+msgid "TB"
+msgstr ""
 
-#: available-size-B
-msgid "{{size}} B available"
-msgstr "{{size}} 位元組可用"
+#: storageSize
+msgid "{{size}} {{unit}}"
+msgstr ""
 
-#: available-size-KB
-msgid "{{size}} KB available"
-msgstr "{{size}} KB 可用"
+#: availableSize
+#, fuzzy
+msgid "{[ plural(size) ]}"
+msgstr "{[ plural(n) ]}"
 
-#: available-size-MB
-msgid "{{size}} MB available"
-msgstr "{{size}} MB 可用"
+#: availableSize[zero]
+msgctxt "availableSize[zero]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
 
-#: available-size-GB
-msgid "{{size}} GB available"
-msgstr "{{size}} GB 可用"
+#: availableSize[one]
+msgctxt "availableSize[one]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
 
-#: available-size-TB
-msgid "{{size}} TB available"
-msgstr "{{size}} TB 可用"
+#: availableSize[two]
+msgctxt "availableSize[two]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
+
+#: availableSize[few]
+msgctxt "availableSize[few]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
+
+#: availableSize[many]
+msgctxt "availableSize[many]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
+
+#: availableSize[other]
+msgctxt "availableSize[other]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
 
 #: apps-total-space
 msgid "Total space"
@@ -1734,9 +1884,13 @@ msgstr "反轉色彩"
 msgid "Screen reader"
 msgstr "螢幕閱讀器"
 
-#. # Device :: Improve Firefox OS
-#: improveFirefoxOS
-msgid "Improve Firefox OS"
+#. # Device :: Improve Browser OS
+#: improveBrowserOS
+msgid "Improve {{brandShortName}}"
+msgstr ""
+
+#: sendMozillaFeedback
+msgid "Send Mozilla Feedback"
 msgstr ""
 
 #: performanceData
@@ -1744,9 +1898,7 @@ msgid "Performance data"
 msgstr ""
 
 #: performanceDataInfo
-msgid ""
-"Make Firefox OS faster and easier to use by sharing information over Wi-Fi "
-"about your phone’s performance."
+msgid "Help us improve {{brandShortName}} by sharing data about your phone."
 msgstr ""
 
 #: sharePerformanceData
@@ -1775,8 +1927,8 @@ msgstr ""
 msgid "Ask me when a crash occurs"
 msgstr ""
 
-#. # Device :: Improve Firefox OS :: Crash Reports
-#. # Localization note (crash-reports-description-*): These strings are also included in system.properties
+#. # Device :: Improve Browser OS :: Crash Reports
+#. # LOCALIZATION NOTE (crash-reports-description-*): these strings are also included in system.properties
 #: crash-reports-description-1
 msgid ""
 "A crash report contains some details about the crash and your device, as "
@@ -1790,12 +1942,12 @@ msgid ""
 "by an open app."
 msgstr ""
 
-#. # Localization note (crash-reports-description-3-*): These strings are a paragraph, with a "privacy policy"
+#. # LOCALIZATION NOTE (crash-reports-description-3-*): these strings are a paragraph, with a "privacy policy"
 #. # link in the middle. Include trailing spaces as needed.
 #: crash-reports-description-3-start
 msgid ""
 "We use crash reports to try to fix problems and improve our products. We "
-"handle your information as we describe in our "
+"handle your information as we describe in our"
 msgstr ""
 
 #: crash-reports-description-3-privacy
@@ -1811,27 +1963,129 @@ msgstr ""
 msgid "Online support:"
 msgstr "線上支援:"
 
-#: online-support-link
-msgid "www.telefonica.com"
-msgstr "www.telefonica.com"
-
 #: call-support
 msgid "Call support:"
 msgstr "撥打技術支援電話:"
 
-#: call-support-number
-msgid "+1 650-903-0800"
-msgstr "+1 650-903-0800"
+#: call-support-numbers
+msgid "{{link1}} or {{link2}}"
+msgstr ""
 
 #: user-guide
 msgid "User guide"
 msgstr "使用者指南"
 
 #. # Device :: SIM toolkit
-#: stkAppsNotAvailable
-msgid "SIM card applications not available."
-msgstr "無法使用 SIM 卡應用程式。"
+#: operatorServices
+msgid "Operator Services"
+msgstr ""
 
-#: simToolkit
-msgid "SIM toolkit"
-msgstr "SIM Toolkit"
+#: operatorServices-help
+msgctxt "operatorServices-help"
+msgid "Help"
+msgstr ""
+
+#: operatorServices-helpmenu
+msgid "Help menu"
+msgstr ""
+
+#: operatorService-invalid-url
+msgid "Cannot access the URL"
+msgstr ""
+
+#, fuzzy
+#~ msgctxt "gitInfo"
+#~ msgid "Git commit info"
+#~ msgstr "Git commit info"
+
+#~ msgid "Classic"
+#~ msgstr "Classic"
+
+#~ msgid "Old School"
+#~ msgstr "Old School"
+
+#~ msgid "Low bit"
+#~ msgstr "Low Bit"
+
+#~ msgid "Beep beep"
+#~ msgstr "嗶嗶聲"
+
+#~ msgid "Call"
+#~ msgstr "撥號"
+
+#~ msgctxt "pinAttemptMsg"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgid "one last try."
+#~ msgstr "最後一次機會。"
+
+#~ msgctxt "pinAttemptMsg[other]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "還有 {{n}} 次機會。"
+
+#~ msgid "Help & Feedback"
+#~ msgstr "說明與意見回饋"
+
+#~ msgid "Developer mode"
+#~ msgstr "開發者模式"
+
+#~ msgid "Disable out-of-process"
+#~ msgstr "停用 Out-Of-Process"
+
+#~ msgid "This is already the latest version of Firefox OS"
+#~ msgstr "這已經是最新版的 Firefox OS"
+
+#~ msgid "About Firefox OS"
+#~ msgstr "關於 Firefox OS"
+
+#~ msgid "About your rights"
+#~ msgstr "關於您的權利"
+
+#~ msgid "About your privacy"
+#~ msgstr "關於您的隱私"
+
+#~ msgid "USB mass storage enabled"
+#~ msgstr "USB 大量儲存空間已啟用"
+
+#~ msgid "{{size}} B"
+#~ msgstr "{{size}} B"
+
+#~ msgid "{{size}} KB"
+#~ msgstr "{{size}} KB"
+
+#~ msgid "{{size}} MB"
+#~ msgstr "{{size}} MB"
+
+#~ msgid "{{size}} GB"
+#~ msgstr "{{size}} GB"
+
+#~ msgid "{{size}} TB"
+#~ msgstr "{{size}} TB"
+
+#~ msgid "{{size}} B available"
+#~ msgstr "{{size}} 位元組可用"
+
+#~ msgid "{{size}} KB available"
+#~ msgstr "{{size}} KB 可用"
+
+#~ msgid "{{size}} MB available"
+#~ msgstr "{{size}} MB 可用"
+
+#~ msgid "{{size}} GB available"
+#~ msgstr "{{size}} GB 可用"
+
+#~ msgid "{{size}} TB available"
+#~ msgstr "{{size}} TB 可用"
+
+#~ msgid "www.telefonica.com"
+#~ msgstr "www.telefonica.com"
+
+#~ msgid "+1 650-903-0800"
+#~ msgstr "+1 650-903-0800"
+
+#~ msgid "SIM card applications not available."
+#~ msgstr "無法使用 SIM 卡應用程式。"
+
+#~ msgid "SIM toolkit"
+#~ msgstr "SIM Toolkit"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-14 01:41+0100\n"
+"POT-Creation-Date: 2013-01-22 00:09+0100\n"
 "PO-Revision-Date: 2013-01-16 11:22+0000\n"
 "Last-Translator: romi <romihardiyanto@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1358335374.0\n"
@@ -73,6 +73,10 @@ msgstr "Pasangkan"
 #: done
 msgid "Done"
 msgstr "Selesai"
+
+#: set
+msgid "Set"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Connectivity
@@ -371,8 +375,9 @@ msgstr "Alihkan jika tidak dijawab"
 msgid "Forward when unreachable"
 msgstr "Teruskan saat tidak terjangkau"
 
-#: callForwardingGetting
-msgid "Getting network info…"
+#: callForwardingRequesting
+#, fuzzy
+msgid "Requesting network info…"
 msgstr "Mendapatkan informasi jaringan…"
 
 #: callForwardingQueryError
@@ -387,6 +392,16 @@ msgstr "Panggilan suara ke"
 msgctxt "callForwardingNotForwarding"
 msgid "Disabled"
 msgstr "Nonaktif"
+
+#: confirmCallWaitingTitle
+msgid "Unable to confirm call waiting preferences"
+msgstr ""
+
+#: confirmCallWaitingDesc
+msgid ""
+"The device is currently unable to communicate with the carrier. Try setting "
+"the preference again."
+msgstr ""
 
 #: cf-alwaysUseThisNumber
 msgid "Always use this number"
@@ -714,6 +729,10 @@ msgstr "Gagal memasangkan perangkat"
 msgid "Unable to pair with the device. Check that the PIN is correct."
 msgstr "Gagal memasangkan perangkat. Periksa PIN-nya."
 
+#: error-pair-toofast
+msgid "Unable to pair with the device. Too many requests."
+msgstr ""
+
 #: error-connect-title
 msgid "Unable to connect devices"
 msgstr "Gagal menyambungkan perangkat"
@@ -983,6 +1002,10 @@ msgstr "Bahasa"
 #: region
 msgid "Region"
 msgstr "Wilayah"
+
+#: sample-format
+msgid "Sample Format"
+msgstr ""
 
 #. # see http://www.cplusplus.com/reference/clibrary/ctime/strftime/
 #: longDateFormat
@@ -1294,34 +1317,39 @@ msgstr "PIN baru"
 msgid "The PIN was incorrect."
 msgstr "PIN salah."
 
-#: pinAttemptMsg
-msgctxt "pinAttemptMsg"
+#: pinAttemptMsg2
+#, fuzzy
+msgctxt "pinAttemptMsg2"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: pinAttemptMsg[one]
-msgid "one last try."
-msgstr "kesempatan terakhir."
+#: pinAttemptMsg2[one]
+msgid "Last chance."
+msgstr ""
 
-#: pinAttemptMsg[two]
-msgctxt "pinAttemptMsg[two]"
+#: pinAttemptMsg2[two]
+#, fuzzy
+msgctxt "pinAttemptMsg2[two]"
 msgid "{{n}} tries left."
 msgstr "Tinggal {{n}} kesempatan lagi."
 
-#: pinAttemptMsg[few]
-msgctxt "pinAttemptMsg[few]"
+#: pinAttemptMsg2[few]
+#, fuzzy
+msgctxt "pinAttemptMsg2[few]"
 msgid "{{n}} tries left."
 msgstr "Tinggal {{n}} kesempatan lagi."
 
-#: pinAttemptMsg[many]
-msgctxt "pinAttemptMsg[many]"
+#: pinAttemptMsg2[many]
+#, fuzzy
+msgctxt "pinAttemptMsg2[many]"
 msgid "{{n}} tries left."
-msgstr "Tinggal {{n}} lagi."
+msgstr "Tinggal {{n}} kesempatan lagi."
 
-#: pinAttemptMsg[other]
-msgctxt "pinAttemptMsg[other]"
+#: pinAttemptMsg2[other]
+#, fuzzy
+msgctxt "pinAttemptMsg2[other]"
 msgid "{{n}} tries left."
-msgstr "Tinggal {{n}} lagi."
+msgstr "Tinggal {{n}} kesempatan lagi."
 
 #: pinLastChanceMsg
 msgid ""
@@ -1349,7 +1377,7 @@ msgstr ""
 msgid "The PUK code is incorrect."
 msgstr "Kode PUK salah."
 
-#: pukAttemptMsg
+#: pukAttemptMsg2
 msgid ""
 "You have {{n}} tries left to enter the correct code before this SIM card "
 "will be permanently unusable. Refer to your SIM card documentation or "
@@ -1424,6 +1452,8 @@ msgid "Storage"
 msgstr "Penyimpanan"
 
 #: help
+#, fuzzy
+msgctxt "help"
 msgid "Help"
 msgstr "Bantuan"
 
@@ -1431,6 +1461,18 @@ msgstr "Bantuan"
 #: deviceInfo
 msgid "Device information"
 msgstr "Informasi perangkat"
+
+#: deviceInfo-IMEI
+msgid "IMEI"
+msgstr ""
+
+#: deviceInfo-ICCID
+msgid "ICCID"
+msgstr ""
+
+#: deviceInfo-MSISDN
+msgid "Phone number"
+msgstr ""
 
 #: developer
 msgid "Developer"
@@ -1464,14 +1506,6 @@ msgstr "Kilaskan area yang digambar ulang"
 msgid "Log slow animations"
 msgstr "Catat animasi yang lambar"
 
-#: dev-mode
-msgid "Developer mode"
-msgstr "Mode pengembang"
-
-#: oop-disabled
-msgid "Disable out-of-process"
-msgstr "Nonaktifkan out-of-process"
-
 #: remote-debugging
 msgid "Remote debugging"
 msgstr "Debug daring"
@@ -1483,6 +1517,10 @@ msgstr "Keluaran Wi-Fi pada adb"
 #: ttl-monitor
 msgid "Show time to load"
 msgstr "Tampilkan waktu pemuatan"
+
+#: console-enabled
+msgid "Console enabled"
+msgstr ""
 
 #: model-name
 msgid "Model"
@@ -1521,6 +1559,7 @@ msgid "More Information"
 msgstr "Informasi Lanjut"
 
 #: gitInfo
+#, fuzzy
 msgid "Git commit info"
 msgstr "Info versi git"
 
@@ -1567,6 +1606,10 @@ msgstr "Di luar jaringan. Akan diperiksa kembali saat berada dalam jaringan."
 #: already-latest-version
 msgid "This is already the latest version of {{brandShortName}}"
 msgstr "Versi {{brandShortName}} sudah yang terbaru"
+
+#: check-error
+msgid "There was an error when checking for updates."
+msgstr ""
 
 #: aboutBrowserOS
 msgid "About {{brandShortName}}"
@@ -1734,9 +1777,9 @@ msgstr "Tidak ada waktu pemakaian pertama aplikasi ditemukan"
 msgid "Device storage"
 msgstr "Penyimpanan perangkat"
 
-#: umsEnabled
-msgid "USB mass storage enabled"
-msgstr "Penyimpanan USB diaktifkan"
+#: usbMassStorage
+msgid "USB mass storage"
+msgstr ""
 
 #: umsUnplugToDisable
 msgid "Unplug USB cable to disable"
@@ -1746,45 +1789,64 @@ msgstr "Cabut kabel USB untuk menonaktifkan"
 msgid "Application storage"
 msgstr "Penyimpanan aplikasi"
 
-#: size-B
-msgid "{{size}} B"
-msgstr "{{size}} B"
+#: byteUnit-B
+msgid "B"
+msgstr ""
 
-#: size-KB
-msgid "{{size}} KB"
-msgstr "{{size}} KB"
+#: byteUnit-KB
+msgid "KB"
+msgstr ""
 
-#: size-MB
-msgid "{{size}} MB"
-msgstr "{{size}} MB"
+#: byteUnit-MB
+msgid "MB"
+msgstr ""
 
-#: size-GB
-msgid "{{size}} GB"
-msgstr "{{size}} GB"
+#: byteUnit-GB
+msgid "GB"
+msgstr ""
 
-#: size-TB
-msgid "{{size}} TB"
-msgstr "{{size}} TB"
+#: byteUnit-TB
+msgid "TB"
+msgstr ""
 
-#: available-size-B
-msgid "{{size}} B available"
-msgstr "{{size}} B tersedia"
+#: storageSize
+msgid "{{size}} {{unit}}"
+msgstr ""
 
-#: available-size-KB
-msgid "{{size}} KB available"
-msgstr "{{size}} KB tersedia"
+#: availableSize
+#, fuzzy
+msgid "{[ plural(size) ]}"
+msgstr "{[ plural(n) ]}"
 
-#: available-size-MB
-msgid "{{size}} MB available"
-msgstr "{{size}} MB tersedia"
+#: availableSize[zero]
+msgctxt "availableSize[zero]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
 
-#: available-size-GB
-msgid "{{size}} GB available"
-msgstr "{{size}} GB tersedia"
+#: availableSize[one]
+msgctxt "availableSize[one]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
 
-#: available-size-TB
-msgid "{{size}} TB available"
-msgstr "{{size}} TB tersedia"
+#: availableSize[two]
+msgctxt "availableSize[two]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
+
+#: availableSize[few]
+msgctxt "availableSize[few]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
+
+#: availableSize[many]
+msgctxt "availableSize[many]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
+
+#: availableSize[other]
+msgctxt "availableSize[other]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
 
 #: apps-total-space
 msgid "Total space"
@@ -1908,13 +1970,9 @@ msgstr "Kirim Saran ke Mozilla"
 msgid "Performance data"
 msgstr "Data kinerja"
 
-#: performanceDataInfo2
-msgid ""
-"Make {{brandShortName}} faster and easier to use by sharing information over "
-"Wi-Fi about your phone’s performance."
+#: performanceDataInfo
+msgid "Help us improve {{brandShortName}} by sharing data about your phone."
 msgstr ""
-"Sempurnakan {{brandShortName}} agar lebih cepat dan mudah untuk digunakan "
-"dengan berbagi data kinerja ponsel Anda lewat Wi-Fi."
 
 #: sharePerformanceData
 msgid "Submit performance data"
@@ -1967,9 +2025,10 @@ msgstr ""
 #. # LOCALIZATION NOTE (crash-reports-description-3-*): these strings are a paragraph, with a "privacy policy"
 #. # link in the middle. Include trailing spaces as needed.
 #: crash-reports-description-3-start
+#, fuzzy
 msgid ""
 "We use crash reports to try to fix problems and improve our products. We "
-"handle your information as we describe in our "
+"handle your information as we describe in our"
 msgstr ""
 "Kami menggunakan laporan crash untuk mencoba mengatasi masalah dan "
 "menyempurnakan produk kamai. Kami menangangi informasi Anda seperti yang "
@@ -1988,60 +2047,137 @@ msgstr "."
 msgid "Online support:"
 msgstr "Layanan dukungan daring:"
 
-#. # LOCALIZATION NOTE (online-support.href): this is the URL for the online support page.
-#: online-support.href
-msgid ""
-"http://www.vivo.com.br/portalweb/appmanager/env/web?_nfls=false&_nfpb=true&_"
-"pageLabel=vcAtendMovelBook&WT.ac=portal.atendimento.movel"
-msgstr ""
-"http://www.vivo.com.br/portalweb/appmanager/env/web?_nfls=false&_nfpb=true&_"
-"pageLabel=vcAtendMovelBook&WT.ac=portal.atendimento.movel"
-
-#. # LOCALIZATION NOTE (online-support-link-text): This text will appear as a link.
-#: online-support-link-text
-msgid "Vivo"
-msgstr "Vivo"
-
 #: call-support
 msgid "Call support:"
 msgstr "Layanan pelangganan:"
 
-#. # LOCALIZATION NOTE (call-support-link-1): this text will appear as a link.
-#: call-support-link-1
-msgid "*8486"
-msgstr "*8486"
-
-#. # LOCALIZATION NOTE (call-support-link-1.href): include the "tel:" protocol before the call support
-#. # number so that it will open in the dialer app.
-#: call-support-link-1.href
-msgid "tel:*8486"
-msgstr "tel:*8486"
-
-#. # LOCALIZATION NOTE: if your locale only has one support phone number, leave the next 3 strings empty.
-#: call-support-link-2
-msgid "1058"
-msgstr "1058"
-
-#: call-support-link-2.href
-msgid "tel:1058"
-msgstr "tel:1058"
-
-#: call-support-link-or
-msgid "or"
-msgstr "atau"
+#: call-support-numbers
+msgid "{{link1}} or {{link2}}"
+msgstr ""
 
 #: user-guide
 msgid "User guide"
 msgstr "Panduan Pengguna"
 
 #. # Device :: SIM toolkit
-#: stkAppsNotAvailable
-msgid "SIM card applications not available."
-msgstr "Aplikasi kartu SIM tidak tersedia."
+#: operatorServices
+msgid "Operator Services"
+msgstr ""
 
-#: simToolkit
-msgid "SIM toolkit"
-msgstr "Toolkit SIM"
+#: operatorServices-help
+#, fuzzy
+msgctxt "operatorServices-help"
+msgid "Help"
+msgstr "Bantuan"
+
+#: operatorServices-helpmenu
+msgid "Help menu"
+msgstr ""
+
+#: operatorService-invalid-url
+msgid "Cannot access the URL"
+msgstr ""
+
+#, fuzzy
+#~ msgctxt "gitInfo"
+#~ msgid "Git commit info"
+#~ msgstr "Info versi git"
+
+#~ msgctxt "pinAttemptMsg"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgid "one last try."
+#~ msgstr "kesempatan terakhir."
+
+#~ msgctxt "pinAttemptMsg[few]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "Tinggal {{n}} kesempatan lagi."
+
+#~ msgctxt "pinAttemptMsg[many]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "Tinggal {{n}} lagi."
+
+#~ msgctxt "pinAttemptMsg[other]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "Tinggal {{n}} lagi."
+
+#~ msgid "Developer mode"
+#~ msgstr "Mode pengembang"
+
+#~ msgid "Disable out-of-process"
+#~ msgstr "Nonaktifkan out-of-process"
+
+#~ msgid "USB mass storage enabled"
+#~ msgstr "Penyimpanan USB diaktifkan"
+
+#~ msgid "{{size}} B"
+#~ msgstr "{{size}} B"
+
+#~ msgid "{{size}} KB"
+#~ msgstr "{{size}} KB"
+
+#~ msgid "{{size}} MB"
+#~ msgstr "{{size}} MB"
+
+#~ msgid "{{size}} GB"
+#~ msgstr "{{size}} GB"
+
+#~ msgid "{{size}} TB"
+#~ msgstr "{{size}} TB"
+
+#~ msgid "{{size}} B available"
+#~ msgstr "{{size}} B tersedia"
+
+#~ msgid "{{size}} KB available"
+#~ msgstr "{{size}} KB tersedia"
+
+#~ msgid "{{size}} MB available"
+#~ msgstr "{{size}} MB tersedia"
+
+#~ msgid "{{size}} GB available"
+#~ msgstr "{{size}} GB tersedia"
+
+#~ msgid "{{size}} TB available"
+#~ msgstr "{{size}} TB tersedia"
+
+#~ msgid ""
+#~ "Make {{brandShortName}} faster and easier to use by sharing information over "
+#~ "Wi-Fi about your phone’s performance."
+#~ msgstr ""
+#~ "Sempurnakan {{brandShortName}} agar lebih cepat dan mudah untuk digunakan "
+#~ "dengan berbagi data kinerja ponsel Anda lewat Wi-Fi."
+
+#~ msgid ""
+#~ "http://www.vivo.com.br/portalweb/appmanager/env/web?_nfls=false&_nfpb=true&_"
+#~ "pageLabel=vcAtendMovelBook&WT.ac=portal.atendimento.movel"
+#~ msgstr ""
+#~ "http://www.vivo.com.br/portalweb/appmanager/env/web?_nfls=false&_nfpb=true&_"
+#~ "pageLabel=vcAtendMovelBook&WT.ac=portal.atendimento.movel"
+
+#~ msgid "Vivo"
+#~ msgstr "Vivo"
+
+#~ msgid "*8486"
+#~ msgstr "*8486"
+
+#~ msgid "tel:*8486"
+#~ msgstr "tel:*8486"
+
+#~ msgid "1058"
+#~ msgstr "1058"
+
+#~ msgid "tel:1058"
+#~ msgstr "tel:1058"
+
+#~ msgid "or"
+#~ msgstr "atau"
+
+#~ msgid "SIM card applications not available."
+#~ msgstr "Aplikasi kartu SIM tidak tersedia."
+
+#~ msgid "SIM toolkit"
+#~ msgstr "Toolkit SIM"
 
 #~ msgid "Call"
 #~ msgstr "Panggilan"

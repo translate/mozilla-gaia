@@ -1,12 +1,12 @@
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#. # PIN Code
+#. # Unlock Codes
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. extracted from locales/en-US/apps/communications/ftu/ftu.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-27 13:46+0100\n"
+"POT-Creation-Date: 2013-01-22 00:14+0100\n"
 "PO-Revision-Date: 2013-01-01 13:07+0000\n"
 "Last-Translator: Komal <mahakjn774@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,20 +14,134 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1357045651.0\n"
 
-#: pincode
-msgid "PIN code"
+#: pincode2
+msgid "Enter PIN code"
 msgstr ""
 
 #: type_pin
-msgid "Type your pin code"
+msgid "Type your PIN code"
 msgstr ""
 
-#: done
-msgid "Done"
+#: send
+msgid "Send"
+msgstr ""
+
+#: pinValidation
+msgid "PIN must have between 4 and 8 characters."
+msgstr ""
+
+#: pinErrorMsg
+msgid "The PIN was incorrect."
+msgstr ""
+
+#: pinAttemptMsg2
+msgctxt "pinAttemptMsg2"
+msgid "{[ plural(n) ]}"
+msgstr ""
+
+#: pinAttemptMsg2[one]
+msgctxt "pinAttemptMsg2[one]"
+msgid "Last chance."
+msgstr ""
+
+#: pinAttemptMsg2[two]
+msgctxt "pinAttemptMsg2[two]"
+msgid "{{n}} tries left."
+msgstr ""
+
+#: pinAttemptMsg2[few]
+msgctxt "pinAttemptMsg2[few]"
+msgid "{{n}} tries left."
+msgstr ""
+
+#: pinAttemptMsg2[many]
+msgctxt "pinAttemptMsg2[many]"
+msgid "{{n}} tries left."
+msgstr ""
+
+#: pinAttemptMsg2[other]
+msgctxt "pinAttemptMsg2[other]"
+msgid "{{n}} tries left."
+msgstr ""
+
+#: pinLastChanceMsg
+msgid ""
+"This is your last chance to enter the correct PIN. Otherwise, you must enter "
+"the PUK code to use this SIM card."
+msgstr ""
+
+#: pukcode
+msgid "Enter PUK code"
+msgstr ""
+
+#: type_puk
+msgid "PUK code"
+msgstr ""
+
+#: create_newpin
+msgid "Create new PIN (4 to 8 digits)"
+msgstr ""
+
+#: confirm_newpin
+msgid "Confirm new PIN"
+msgstr ""
+
+#: simLocked
+msgid "The SIM card is locked"
+msgstr ""
+
+#: pukError
+msgid ""
+"You must enter the Personal Unlocking Key (PUK) Code for the SIM card. Refer "
+"to your SIM card documentation or contact your carrier for more "
+"information."
+msgstr ""
+
+#: pukErrorMsg
+msgid "The PUK was incorrect"
+msgstr ""
+
+#: pukAttemptMsg
+msgctxt "pukAttemptMsg"
+msgid "{[ plural(n) ]}"
+msgstr ""
+
+#: pukAttemptMsg[one]
+msgctxt "pukAttemptMsg[one]"
+msgid "Last chance."
+msgstr ""
+
+#: pukAttemptMsg[two]
+msgctxt "pukAttemptMsg[two]"
+msgid "{{n}} tries left."
+msgstr ""
+
+#: pukAttemptMsg[few]
+msgctxt "pukAttemptMsg[few]"
+msgid "{{n}} tries left."
+msgstr ""
+
+#: pukAttemptMsg[many]
+msgctxt "pukAttemptMsg[many]"
+msgid "{{n}} tries left."
+msgstr ""
+
+#: pukAttemptMsg[other]
+msgctxt "pukAttemptMsg[other]"
+msgid "{{n}} tries left."
+msgstr ""
+
+#: pukValidation
+msgid "PUK code must have exactly 8 characters."
+msgstr ""
+
+#: newpinConfirmation
+msgid "PINs don’t match"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -109,10 +223,12 @@ msgid "Enable Data"
 msgstr "डेटा सक्रिय करें"
 
 #: dataConnectionInfo
+#, fuzzy
 msgid ""
 "Enabling data connection now will allow you to set up your phone without a "
-"WiFi connection. You may also enable it later on in Settings. Just make sure "
-"you have a data plan with your carrier to avoid potentially hefty charges."
+"Wi-Fi connection. You may also enable it later on in Settings. Just make "
+"sure you have a data plan with your carrier to avoid potentially hefty "
+"charges."
 msgstr ""
 "सक्रिय डेटा कनेक्शन अब आपके फ़ोन कनेक्शन को बिना वाई फाई कनेक्शन के सेटअप "
 "करने के लिए आपको अनुमति देगा, आप इसे बाद में भी सक्रिय कर सकते हैं, इसके "
@@ -167,11 +283,27 @@ msgid "Open"
 msgstr ""
 
 #: identity
+msgctxt "identity"
+msgid "User"
+msgstr ""
+
+#: identityInput.placeholder
+msgctxt "identityInput.placeholder"
 msgid "User"
 msgstr ""
 
 #: password
+msgctxt "password"
 msgid "Password"
+msgstr ""
+
+#: passwordInput.placeholder
+msgctxt "passwordInput.placeholder"
+msgid "Password"
+msgstr ""
+
+#: showPassword
+msgid "Show Password"
 msgstr ""
 
 #: refresh
@@ -218,77 +350,22 @@ msgstr "बदलें"
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Import contacts
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: simContacts-import
-msgid "Import SIM contacts"
-msgstr "सिम कॉन्टेक्ट्स इम्पोर्ट "
-
-#: simContacts-importing
-msgid "Importing SIM contacts…"
-msgstr "सिम कॉन्टेक्ट्स को इम्पोर्ट किया जा रहा है "
-
-#: simContacts-reading
-msgid "Reading from SIM card…"
-msgstr "सिम कार्ड से पढ़ा जा रहा है "
-
-#: simContacts-storing
-msgid "Storing SIM contacts…"
-msgstr ""
-
-#: simContacts-error
-msgid "Could not import contacts from SIM"
-msgstr ""
-
-#: simContacts-imported2
-msgid "{[ plural(n) ]}"
-msgstr ""
-
-#: simContacts-imported2[zero]
-msgid "No contacts imported"
-msgstr ""
-
-#: simContacts-imported2[one]
-msgid "Imported one contact"
-msgstr ""
-
-#: simContacts-imported2[two]
-msgctxt "simContacts-imported2[two]"
-msgid "Imported {{n}} contacts"
-msgstr ""
-
-#: simContacts-imported2[few]
-msgctxt "simContacts-imported2[few]"
-msgid "Imported {{n}} contacts"
-msgstr ""
-
-#: simContacts-imported2[many]
-msgctxt "simContacts-imported2[many]"
-msgid "Imported {{n}} contacts"
-msgstr ""
-
-#: simContacts-imported2[other]
-msgctxt "simContacts-imported2[other]"
-msgid "Imported {{n}} contacts"
-msgstr ""
-
-#: importContacts
-msgid "Import contacts"
+#: importContacts2
+#, fuzzy
+msgid "Import contacts from"
 msgstr "कॉन्टेक्ट्स इम्पोर्ट"
 
-#: importSim
-msgid "Import from SIM"
-msgstr "सिम से इम्पोर्ट"
+#: importSim2
+msgid "SIM card"
+msgstr ""
 
-#: importFb
-msgid "Import from Facebook"
-msgstr "फेसबुक से इम्पोर्ट "
+#: importFb2
+msgid "Facebook"
+msgstr ""
 
 #: fb-checking
 msgid "… checking"
 msgstr "जाँच की जा रही है"
-
-#: facebook-stats
-msgid "{{imported}}/{{total}} friends imported"
-msgstr ""
 
 #: notImportedYet
 msgid "Not imported yet"
@@ -298,13 +375,19 @@ msgstr "अभी तक लागू नहीं हैं."
 msgid "Other accounts"
 msgstr "अन्य खाता"
 
+#: mobile
+msgid "Mobile"
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # About your rights
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #: about-your-rights-0
+#, fuzzy
 msgid ""
-"Mozilla Firefox is free and open source software, built by a community of "
-"thousands from all over the world. There are a few things you should know:"
+"{{brandShortName}} is built on free and open source software by a community "
+"of thousands from all over the world. There are a few things you should "
+"know:"
 msgstr ""
 "मोज़िला फ़ायरफ़ॉक्स स्वतंत्र और खुला स्रोत सॉफ्टवेयर है, यह दुनिया भर से "
 "हजारो समुदायों द्वारा बनाया गया है |यहाँ कुछ चीज़े है जो आपको पता होना चाहिए "
@@ -312,100 +395,179 @@ msgstr ""
 
 #: about-your-rights-1
 msgid ""
-"Firefox is made available to you under the terms of the Mozilla Public "
-"License. This means you may use, copy and distribute Firefox to others. You "
-"are also welcome to modify the source code of Firefox as you want to meet "
-"your needs. The Mozilla Public License also gives you the right to "
-"distribute your modified versions."
+"{{brandShortName}} is made available to you under the terms of several open "
+"source licenses including the Mozilla Public License. A device running "
+"{{brandShortName}} may also contain proprietary software from third parties. "
+"Any code provided under open licenses give you the right to modify the "
+"source code and distribute your modified versions as long as you comply with "
+"their terms."
 msgstr ""
-"फ़ायरफ़ॉक्स आप के लिए, मोज़िला पब्लिक लाइसेंस की शर्तों के तहत उपलब्ध किया "
-"जाता है, इसका मतलब है कि यह आपके उपयोग करने के लिए है, आप कॉपी कर सकते हैं "
-"और दूसरों को फायरफॉक्स वितरित भी कर सकते हो, आपका भी स्वागत है फायरफॉक्स के "
-"स्त्रोत कोड को संशोधित करने के लिए जैसा की आप अपनी जरूरत के मुताबिक करना "
-"चाहते हो, मोज़िला पब्लिक लाइसेंस आपको, आपके द्वारा संशोधित किये गए प्रारूप "
-"के वितरण का भी अधिकार देता है |"
 
 #: about-your-rights-2
 msgid ""
 "You are not granted any trademark rights or licenses to the trademarks of "
-"the Mozilla Foundation or any party, including without Temporary Text "
-"limitation the Firefox name or logo. Additional information on trademarks "
-"may be found only here."
+"the Mozilla Foundation or any party, including without limitation the "
+"{{brandShortName}} name or logo."
 msgstr ""
 
 #: about-your-rights-3
 msgid ""
-"Some features in Firefox, such as the Crash Reporter, give you the  option "
-"to provide feedback to Mozilla. By choosing to submit feedback, you give "
-"Mozilla permission to use the feedback to improve its products, to publish "
-"the feedback on its websites and to distribute the feedback."
+"Some features in {{brandShortName}}, such as the Crash Reporter, give you "
+"the option to provide feedback to Mozilla. By choosing to submit feedback, "
+"you give Mozilla permission to use the feedback to improve its products, to "
+"publish the feedback on its websites, and to distribute the feedback."
+msgstr ""
+
+#: about-other
+msgid "Other"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#. # Firefox privacy
+#. # Sharing Performance Data
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: welcomeFirefox
+#: sharing-performance-data
+msgid "Sharing Performance Data"
+msgstr ""
+
+#: telemetry-sends
 msgid ""
-"Welcome to Firefox OS, the free and open source operating system from "
-"Mozilla. Our mission is to promote openness, innovation and opportunity by "
-"keeping the power of the Web in your hands."
+"Telemetry sends Mozilla data about performance, hardware, configurations and "
+"customizations in your {{brandShortName}} device. We use this to make our "
+"products better, faster and more responsive."
+msgstr ""
+
+#: learn-more-at
+msgid "Learn more at"
+msgstr ""
+
+#: external-telemetry.title
+msgid "Telemetry"
+msgstr ""
+
+#: learn-about-information
+msgid "Learn how Mozilla handles your information at"
+msgstr ""
+
+#: external-privacy.title
+msgid "Privacy"
+msgstr ""
+
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#. # OS privacy
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#: welcomeBrowser
+msgid ""
+"Welcome to {{brandShortName}}, the free and open source operating system "
+"from Mozilla. Our mission is to promote openness, innovation and opportunity "
+"by keeping the power of the Web in your hands."
 msgstr ""
 
 #: learnHow
 msgid "Learn how Mozilla handles your information in our"
 msgstr ""
 
-#: aboutYourRights
-msgid "About Your Rights"
+#: privacyPolicy
+msgid "privacy policy"
 msgstr ""
 
-#: aboutYourPrivacy
-msgid "About Your Privacy"
+#: privacyPolicy.title
+msgid "Privacy policy"
 msgstr ""
 
-#: mozillaCommunity
+#: aboutBrowser
+msgid "About {{brandShortName}}"
+msgstr ""
+
+#: aboutYourPrivacy2
+msgid "Your Privacy"
+msgstr ""
+
+#: mozillaCommunity2
 msgid ""
-"When you use Firefox OS, you become part of a global community helping to "
-"build a brighter future for the Web. If you’d like to know more about the "
-"Mozilla community, our other products and events near you, please enter your "
-"email address below."
+"When you use {{brandShortName}}, you become part of a global community "
+"helping to build a brighter future for the Web. If you’d like to know more "
+"about the Mozilla community, our other products and events near you, please "
+"enter your email address below."
 msgstr ""
 
 #: collaborate
 msgid ""
-"I want to help make Firefox OS faster and easier to use by sharing "
-"information about my phone's performance. Learn more."
+"I want to help improve {{brandShortName}} by sharing data about my phone."
 msgstr ""
 
-#: emailAddress
+#: learnMore
+msgid "Learn more."
+msgstr ""
+
+#: emailAddress.placeholder
 msgid "Email address"
 msgstr ""
 
-#: firefoxPrivacyChoices
-msgid "Firefox Privacy Choices"
-msgstr "फायरफॉक्स गोपनीयता विकल्प"
+#: email-successfully-added
+msgid "Email successfully added"
+msgstr ""
+
+#: email-loading
+msgid "Saving your email…"
+msgstr ""
+
+#: browserPrivacyChoices
+msgid "{{brandShortName}} Privacy Choices"
+msgstr ""
+
+#: privacy-b2g
+msgctxt "privacy-b2g"
+msgid "{{brandShortName}}"
+msgstr ""
+
+#: privacy-b2g.title
+msgctxt "privacy-b2g.title"
+msgid "{{brandShortName}}"
+msgstr ""
+
+#: privacy-marketplace
+msgid "Marketplace"
+msgstr ""
+
+#. # please don't translate the brand name
+#: privacy-marketplace.title
+msgid "{{privacy-marketplace}}"
+msgstr ""
+
+#: privacy-e-me
+msgid "everything.me"
+msgstr ""
+
+#. # please don't translate the brand name
+#: privacy-e-me.title
+msgid "{{privacy-e-me}}"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Navigation bar
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: back
-msgid "back"
+#: navbar-back
+#, fuzzy
+msgid "Back"
 msgstr "पीछे"
 
-#: next
-msgid "next"
+#: navbar-next
+#, fuzzy
+msgid "Next"
 msgstr "अगला"
 
-#: join
-msgid "join"
+#: navbar-join
+#, fuzzy
+msgid "Join"
 msgstr "जोड़ें"
 
 #: skip
+#, fuzzy
 msgid "Skip"
 msgstr "छोड़ें "
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#. # Welcome firefox
+#. # Welcome OS
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #: thatsIt
 msgid "That's it!"
@@ -439,46 +601,117 @@ msgstr ""
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Tutorial
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: step1
-msgid "Find any application by swiping left to right."
+#: tutorial-step1
+msgid "Swipe from right to left to browse your apps."
 msgstr ""
 
-#: step2
+#: tutorial-step2
+msgid "Swipe from left to right to discover new apps."
+msgstr ""
+
+#: tutorial-step3
+msgid "Tap and hold on an icon to delete or move it."
+msgstr ""
+
+#: tutorial-step4
 msgid ""
-"Pressing and holding an application icon let's you organize and delete "
-"applications."
+"Swipe down to access recent notifications, credit information and settings."
 msgstr ""
 
-#: step3
+#: tutorial-step5
+msgid "Tap and hold the home button to browse and close recent apps."
+msgstr ""
+
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#. # Offline Error Dialog
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#: offline-dialog-title
+msgid "You must be connected to the Internet to view the page."
+msgstr ""
+
+#: offline-dialog-text
 msgid ""
-"Drag your most commonly used applications into the dock for quick access."
+"Please go back and connect to the Internet. You can also view the page later "
+"from Settings or by entering {{url}} in any browser."
 msgstr ""
 
-#: step4
-msgid "Swiping down the status bar reveals notiﬁcations and utilities."
+#: OK
+msgid "OK"
 msgstr ""
 
-#: step5
-msgid "The utility tray gives you quick access to notiﬁcations."
-msgstr "ट्रे उपयोगिता सूचनाओं को शीघ्रता से ऐक्सेस करने देती है"
-
-#: step6
-msgid "See your accounts credit, phone and data use."
-msgstr "अपने खातो का क्रेडिट फ़ोन और डाटा उपयोग देखिये"
-
-#: step7
-msgid "Quick access settings."
-msgstr "त्वरित ऐक्सेस सेटिंग"
-
-#: step8
-msgid "Switch tasks quickly by pressing and holding the home button."
-msgstr ""
-"कार्य को जल्दी से बदलने के लिए होम बटन को होल्ड करके एवं प्रेस करके रखें"
-
-#: step9
-msgid "Swipe left and right to navigate, tap to switch applications."
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#. # Newsletter Error Dialogs
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#: offline-newsletter-dialog-title
+msgid "You must be connected to the Internet to subscribe to the newsletter."
 msgstr ""
 
-#: step10
-msgid "Swipe a application away to close it."
-msgstr "एक एप्लीकेशन को दूर से स्वाइप करने क लिए इसे बंद करें"
+#: offline-newsletter-dialog-text
+msgid "Please go back and connect to the Internet."
+msgstr ""
+
+#: invalid-email-dialog-title
+msgid "Your email is not valid"
+msgstr ""
+
+#: invalid-email-dialog-text
+msgid "Please go back and correct your entry."
+msgstr ""
+
+#, fuzzy
+#~ msgctxt "skip"
+#~ msgid "Skip"
+#~ msgstr "छोड़ें "
+
+#, fuzzy
+#~ msgctxt "navbar-join"
+#~ msgid "Join"
+#~ msgstr "जोड़ें"
+
+#~ msgid "Import SIM contacts"
+#~ msgstr "सिम कॉन्टेक्ट्स इम्पोर्ट "
+
+#~ msgid "Importing SIM contacts…"
+#~ msgstr "सिम कॉन्टेक्ट्स को इम्पोर्ट किया जा रहा है "
+
+#~ msgid "Reading from SIM card…"
+#~ msgstr "सिम कार्ड से पढ़ा जा रहा है "
+
+#~ msgid "Import from SIM"
+#~ msgstr "सिम से इम्पोर्ट"
+
+#~ msgid "Import from Facebook"
+#~ msgstr "फेसबुक से इम्पोर्ट "
+
+#~ msgid ""
+#~ "Firefox is made available to you under the terms of the Mozilla Public "
+#~ "License. This means you may use, copy and distribute Firefox to others. You "
+#~ "are also welcome to modify the source code of Firefox as you want to meet "
+#~ "your needs. The Mozilla Public License also gives you the right to "
+#~ "distribute your modified versions."
+#~ msgstr ""
+#~ "फ़ायरफ़ॉक्स आप के लिए, मोज़िला पब्लिक लाइसेंस की शर्तों के तहत उपलब्ध किया "
+#~ "जाता है, इसका मतलब है कि यह आपके उपयोग करने के लिए है, आप कॉपी कर सकते हैं "
+#~ "और दूसरों को फायरफॉक्स वितरित भी कर सकते हो, आपका भी स्वागत है फायरफॉक्स के "
+#~ "स्त्रोत कोड को संशोधित करने के लिए जैसा की आप अपनी जरूरत के मुताबिक करना "
+#~ "चाहते हो, मोज़िला पब्लिक लाइसेंस आपको, आपके द्वारा संशोधित किये गए प्रारूप "
+#~ "के वितरण का भी अधिकार देता है |"
+
+#~ msgid "Firefox Privacy Choices"
+#~ msgstr "फायरफॉक्स गोपनीयता विकल्प"
+
+#~ msgid "The utility tray gives you quick access to notiﬁcations."
+#~ msgstr "ट्रे उपयोगिता सूचनाओं को शीघ्रता से ऐक्सेस करने देती है"
+
+#~ msgid "See your accounts credit, phone and data use."
+#~ msgstr "अपने खातो का क्रेडिट फ़ोन और डाटा उपयोग देखिये"
+
+#~ msgid "Quick access settings."
+#~ msgstr "त्वरित ऐक्सेस सेटिंग"
+
+#~ msgid "Switch tasks quickly by pressing and holding the home button."
+#~ msgstr ""
+#~ "कार्य को जल्दी से बदलने के लिए होम बटन को होल्ड करके एवं प्रेस करके रखें"
+
+#~ msgid "Swipe a application away to close it."
+#~ msgstr "एक एप्लीकेशन को दूर से स्वाइप करने क लिए इसे बंद करें"
