@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-22 00:09+0100\n"
-"PO-Revision-Date: 2013-01-15 04:49+0000\n"
-"Last-Translator: TuandZendF <newvalue92@gmail.com>\n"
+"POT-Creation-Date: 2013-01-28 09:46+0200\n"
+"PO-Revision-Date: 2013-03-02 11:28+0000\n"
+"Last-Translator: Hakuna <jackychun1393@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1358225389.0\n"
+"X-POOTLE-MTIME: 1362223696.0\n"
 
 #: settings
 msgid "Settings"
@@ -60,7 +60,7 @@ msgstr "Thôi"
 
 #: close
 msgid "Close"
-msgstr "Hủy bỏ"
+msgstr "Đóng"
 
 #: back
 msgid "Back"
@@ -76,12 +76,13 @@ msgstr "Hoàn tất"
 
 #: set
 msgid "Set"
-msgstr ""
+msgstr "Đặt"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Connectivity
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #: networkAndConnectivity
+#, fuzzy
 msgid "Network & Connectivity"
 msgstr "Mạng"
 
@@ -105,7 +106,7 @@ msgstr "Bật Wi-Fi để hiển thị các mạng quanh đây."
 
 #: availableNetworks
 msgid "Available networks"
-msgstr "Các mạng quanh đây"
+msgstr "Các mạng sẵn sàng"
 
 #: knownNetworks
 msgid "Known networks"
@@ -359,24 +360,43 @@ msgstr "Chờ cuộc gọi"
 msgid "Call forwarding"
 msgstr "Chuyển tiếp cuộc gọi"
 
+#: callForwardingForward
+msgid "Forward"
+msgstr ""
+
 #: callForwardingUnconditional
 msgid "Always forward"
 msgstr "Luôn chuyển tiếp"
+
+#: callForwardingUnconditionalShort
+msgid "Always"
+msgstr ""
 
 #: callForwardingMobileBusy
 msgid "Forward when busy"
 msgstr "Chuyển tiếp khi bận"
 
+#: callForwardingMobileBusyShort
+msgid "When busy"
+msgstr ""
+
 #: callForwardingNoReply
 msgid "Forward when unanswered"
 msgstr "Chuyển tiếp khi không trả lời"
+
+#: callForwardingNoReplyShort
+msgid "When unanswered"
+msgstr ""
 
 #: callForwardingNotReachable
 msgid "Forward when unreachable"
 msgstr "Chuyển tiếp khi không liên lạc được"
 
+#: callForwardingNotReachableShort
+msgid "When unreachable"
+msgstr ""
+
 #: callForwardingRequesting
-#, fuzzy
 msgid "Requesting network info…"
 msgstr "Đang tìm thông tin về mạng..."
 
@@ -394,14 +414,17 @@ msgid "Disabled"
 msgstr "Tắt"
 
 #: confirmCallWaitingTitle
+#, fuzzy
 msgid "Unable to confirm call waiting preferences"
-msgstr ""
+msgstr "Không thể xác nhận tính năng cuộc gọi chờ"
 
 #: confirmCallWaitingDesc
 msgid ""
 "The device is currently unable to communicate with the carrier. Try setting "
 "the preference again."
 msgstr ""
+"Thiết bị hiện không thể kết nối tới nhà cung cấp mạng. Hãy thử thiết lập các "
+"ưu tiên một lần nữa."
 
 #: cf-alwaysUseThisNumber
 msgid "Always use this number"
@@ -426,7 +449,7 @@ msgstr "Mạng điện thoại và dữ liệu"
 
 #: dataNetwork
 msgid "Carrier"
-msgstr "Nhà mạng"
+msgstr "Nhà cung cấp dịch vụ"
 
 #: dataConnectivity
 msgid "Data"
@@ -438,7 +461,7 @@ msgstr "Kết nối dữ liệu"
 
 #: dataRoaming
 msgid "Data roaming"
-msgstr "Dữ liệu roaming"
+msgstr "Dữ liệu chuyển vùng"
 
 #: dataRoaming-enabled
 msgid ""
@@ -726,7 +749,7 @@ msgstr "Không thể ghép đôi với thiết bị. Vui lòng kiểm tra lại 
 
 #: error-pair-toofast
 msgid "Unable to pair with the device. Too many requests."
-msgstr ""
+msgstr "Không thể kết nối với thiết bị do có quá nhiều yêu cầu."
 
 #: error-connect-title
 msgid "Unable to connect devices"
@@ -994,8 +1017,9 @@ msgid "Region"
 msgstr "Vùng miền"
 
 #: sample-format
+#, fuzzy
 msgid "Sample Format"
-msgstr ""
+msgstr "Định dạng mẫu"
 
 #. # see http://www.cplusplus.com/reference/clibrary/ctime/strftime/
 #: longDateFormat
@@ -1104,7 +1128,7 @@ msgstr "Tài khoản"
 
 #: persona
 msgid "Persona"
-msgstr "Persona"
+msgstr "Cá nhân"
 
 #: mail
 msgid "Mail"
@@ -1165,6 +1189,25 @@ msgstr "Gỡ bỏ ứng dụng"
 #: uninstallConfirm
 msgid "Are you sure you want to uninstall {{ app }}?"
 msgstr "Bạn có chắc muốn gỡ bỏ {{app}} không?"
+
+#. # Bookmarks/Everything.me app data
+#: clearBookmarkAppsData
+msgid "Clear bookmarks data"
+msgstr ""
+
+#: confirmClearBookmarkAppsDataTitle
+msgid "Clear private data from bookmarks?"
+msgstr ""
+
+#: confirmClearBookmarkAppsDataDesc
+msgid ""
+"This clears private data from bookmarks that have been added to the home "
+"screen. This cannot be undone."
+msgstr ""
+
+#: clear
+msgid "Clear"
+msgstr ""
 
 #. # Security :: Phone Lock
 #: phone
@@ -1310,29 +1353,26 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: pinAttemptMsg2[one]
+#, fuzzy
 msgid "Last chance."
-msgstr ""
+msgstr "Lần thử cuối cùng."
 
 #: pinAttemptMsg2[two]
-#, fuzzy
 msgctxt "pinAttemptMsg2[two]"
 msgid "{{n}} tries left."
 msgstr "Còn {{n}} lần thử."
 
 #: pinAttemptMsg2[few]
-#, fuzzy
 msgctxt "pinAttemptMsg2[few]"
 msgid "{{n}} tries left."
 msgstr "Còn {{n}} lần thử."
 
 #: pinAttemptMsg2[many]
-#, fuzzy
 msgctxt "pinAttemptMsg2[many]"
 msgid "{{n}} tries left."
 msgstr "Còn {{n}} lần thử."
 
 #: pinAttemptMsg2[other]
-#, fuzzy
 msgctxt "pinAttemptMsg2[other]"
 msgid "{{n}} tries left."
 msgstr "Còn {{n}} lần thử."
@@ -1355,6 +1395,9 @@ msgid ""
 "to your SIM card documentation or contact your carrier for more "
 "information."
 msgstr ""
+"Bạn phải nhập mã Personal Unlocking Key (PUK) cho thẻ SIM. Hãy tham khảo "
+"hướng dẫn sử dụng thẻ SIM của bạn hoặc liên hệ với nhà cung cấp dịch vụ của "
+"bạn để biết thêm thông tin."
 
 #: pukErrorMsg
 msgid "The PUK code is incorrect."
@@ -1417,9 +1460,9 @@ msgid ""
 "cause your device to forget your private information, such as the contents "
 "of shopping carts, location information or sign-in information."
 msgstr ""
-"Việc bật tính năng Bỏ theo dõi sẽ không ảnh hưởng đến khả năng đăng nhập vào "
-"các trang Web hoặc khiến thiết bị bạn quên thông tin cá nhân của bạn, như "
-"là nội dung của việc mua giỏ hàng, thông tin vị trí hoặc thông tin đăng "
+"Việc bật tính năng Không Theo Dõi sẽ không ảnh hưởng đến khả năng đăng nhập "
+"vào các trang Web hoặc khiến thiết bị bạn quên thông tin cá nhân của bạn, "
+"như là nội dung của việc mua giỏ hàng, thông tin vị trí hoặc thông tin đăng "
 "nhập."
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -1434,7 +1477,6 @@ msgid "Storage"
 msgstr "Lưu trữ"
 
 #: help
-#, fuzzy
 msgctxt "help"
 msgid "Help"
 msgstr "Trợ giúp"
@@ -1446,15 +1488,15 @@ msgstr "Thông tin thiết bị"
 
 #: deviceInfo-IMEI
 msgid "IMEI"
-msgstr ""
+msgstr "IMEI"
 
 #: deviceInfo-ICCID
 msgid "ICCID"
-msgstr ""
+msgstr "ICCID:"
 
 #: deviceInfo-MSISDN
 msgid "Phone number"
-msgstr ""
+msgstr "Số điện thoại"
 
 #: developer
 msgid "Developer"
@@ -1514,15 +1556,15 @@ msgstr "Phiên bản hệ điều hành"
 
 #: firmware_revision
 msgid "Firmware revision"
-msgstr "Firmware sử đổi"
+msgstr "Phiên bản firmware"
 
 #: hardware_revision
 msgid "Hardware revision"
-msgstr "Bản sửa đổi phần cứng"
+msgstr "Phiên bản phần cứng"
 
 #: platform_version
 msgid "Platform version"
-msgstr "Bản sửa đổi hệ điều hành"
+msgstr "Phiên bản hệ điều hành"
 
 #: build-id
 msgid "Build Identifier"
@@ -1591,7 +1633,7 @@ msgstr "Đây là phiên bản mới nhất của {{brandShortName}}"
 
 #: check-error
 msgid "There was an error when checking for updates."
-msgstr ""
+msgstr "Có lỗi khi kiểm tra các bản cập nhật."
 
 #: aboutBrowserOS
 msgid "About {{brandShortName}}"
@@ -1723,6 +1765,7 @@ msgstr ""
 "hết chúng đều tuân theo giấy phép Mozilla Public License 2.0 (MPL)."
 
 #: licensing-3
+#, fuzzy
 msgid ""
 "The remainder of the software that is not under the Mozilla Public License "
 "2.0 MPL is available under one of a variety of other licenses. Those that "
@@ -1731,22 +1774,30 @@ msgid ""
 "or more of the licenses listed here, depending on the exact product and "
 "version you choose.)"
 msgstr ""
+"Phần còn lại của các phần mềm đó không phải là theo Giấy phép Công cộng "
+"Mozilla 2,0 MPL được phát hành theo một trong một loạt các giấy phép khác. "
+"Những yêu cầu sinh sản của các văn bản giấy phép phân phối có được đưa ra "
+"dưới đây. (Lưu ý: Bản sao của sản phẩm này có thể chứa mã được bao phủ bởi "
+"một hoặc nhiều giấy phép được liệt kê ở đây, tùy thuộc vào sản phẩm và phiên "
+"bản chính xác mà bạn chọn.)"
 
 #: licensing-MPL
 msgid "Mozilla Public License 2.0"
-msgstr ""
+msgstr "Mozilla Public License 2.0"
 
 #: licensing-Apache
 msgid "Apache License 2.0"
-msgstr ""
+msgstr "Apache License 2.0"
 
 #: launch-ftu
+#, fuzzy
 msgid "Launch first time use"
-msgstr ""
+msgstr "Lần sử dụng đầu tiên"
 
 #: no-ftu
+#, fuzzy
 msgid "No first time use app found"
-msgstr ""
+msgstr "Không tìm thấy lần sử dụng đầu tiên"
 
 #. # Device :: Device storage
 #: deviceStorage
@@ -1754,8 +1805,9 @@ msgid "Device storage"
 msgstr "Kho lưu trữ thiết bị"
 
 #: usbMassStorage
+#, fuzzy
 msgid "USB mass storage"
-msgstr ""
+msgstr "Bộ nhớ USB"
 
 #: umsUnplugToDisable
 msgid "Unplug USB cable to disable"
@@ -1767,62 +1819,61 @@ msgstr "Kho lưu trữ ứng dụng"
 
 #: byteUnit-B
 msgid "B"
-msgstr ""
+msgstr "B"
 
 #: byteUnit-KB
 msgid "KB"
-msgstr ""
+msgstr "KB"
 
 #: byteUnit-MB
 msgid "MB"
-msgstr ""
+msgstr "MB"
 
 #: byteUnit-GB
 msgid "GB"
-msgstr ""
+msgstr "GB"
 
 #: byteUnit-TB
 msgid "TB"
-msgstr ""
+msgstr "TB"
 
 #: storageSize
 msgid "{{size}} {{unit}}"
-msgstr ""
+msgstr "{{size}} {{unit}}"
 
 #: availableSize
-#, fuzzy
 msgid "{[ plural(size) ]}"
-msgstr "{[ plural(n) ]}"
+msgstr "{[ plural(size) ]}"
 
 #: availableSize[zero]
 msgctxt "availableSize[zero]"
 msgid "{{size}} {{unit}} available"
-msgstr ""
+msgstr "{{size}} {{unit}} sẵn dùng"
 
 #: availableSize[one]
 msgctxt "availableSize[one]"
 msgid "{{size}} {{unit}} available"
-msgstr ""
+msgstr "{{size}} {{unit}} sẵn dùng"
 
 #: availableSize[two]
 msgctxt "availableSize[two]"
 msgid "{{size}} {{unit}} available"
-msgstr ""
+msgstr "{{size}} {{unit}} sẵn dùng"
 
 #: availableSize[few]
 msgctxt "availableSize[few]"
 msgid "{{size}} {{unit}} available"
-msgstr ""
+msgstr "{{size}} {{unit}} sẵn dùng"
 
 #: availableSize[many]
 msgctxt "availableSize[many]"
 msgid "{{size}} {{unit}} available"
-msgstr ""
+msgstr "{{size}} {{unit}} sẵn dùng"
 
 #: availableSize[other]
 msgctxt "availableSize[other]"
 msgid "{{size}} {{unit}} available"
-msgstr ""
+msgstr "{{size}} {{unit}} sẵn dùng"
 
 #: apps-total-space
 msgid "Total space"
@@ -1930,30 +1981,32 @@ msgid "Invert colors"
 msgstr "Đảo màu"
 
 #: screenReader
+#, fuzzy
 msgid "Screen reader"
-msgstr ""
+msgstr "Trình đọc màn hình"
 
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
-#, fuzzy
 msgid "Improve {{brandShortName}}"
-msgstr "Thông tin về {{brandShortName}}"
+msgstr "Cải thiện {{brandShortName}}"
 
 #: sendMozillaFeedback
 msgid "Send Mozilla Feedback"
-msgstr "Gửi Mozilla phản hồi"
+msgstr "Gửi phản hồi cho Mozilla"
 
 #: performanceData
 msgid "Performance data"
-msgstr ""
+msgstr "Dữ liệu về hiệu suất hệ thống"
 
 #: performanceDataInfo
 msgid "Help us improve {{brandShortName}} by sharing data about your phone."
 msgstr ""
+"Giúp chúng tôi cải thiện {{brandShortName}} bằng cách gửi thông tin về điện "
+"thoại của bạn."
 
 #: sharePerformanceData
 msgid "Submit performance data"
-msgstr "Xác nhật thông tin hiệu năng"
+msgstr "Gửi thông tin hiệu suất hệ thống"
 
 #: crashReports
 msgid "Crash reports"
@@ -2006,19 +2059,22 @@ msgid ""
 "We use crash reports to try to fix problems and improve our products. We "
 "handle your information as we describe in our"
 msgstr ""
+"Chúng tôi sử dụng báo cáo sự cố cố gắng để sửa chữa các vấn đề và cải tiến "
+"sản phẩm của chúng tôi. Chúng tôi sẽ xử lý thông tin của bạn như chúng tôi "
+"đã mô tả."
 
 #: crash-reports-description-3-privacy
 msgid "privacy policy"
-msgstr ""
+msgstr "Chính sách sự riêng tư"
 
 #: crash-reports-description-3-end
 msgid "."
-msgstr ""
+msgstr "."
 
 #. # Device :: Help
 #: online-support
 msgid "Online support:"
-msgstr ""
+msgstr "Hỗ trợ trực tuyến:"
 
 #: call-support
 msgid "Call support:"
@@ -2026,30 +2082,30 @@ msgstr "Hỗ trợ cuộc gọi:"
 
 #: call-support-numbers
 msgid "{{link1}} or {{link2}}"
-msgstr ""
+msgstr "{{link1}} hoặc {{link2}}"
 
 #: user-guide
 msgid "User guide"
-msgstr "Hướng dẫn người dùng"
+msgstr "Hướng dẫn sử dụng"
 
 #. # Device :: SIM toolkit
 #: operatorServices
 msgid "Operator Services"
-msgstr ""
+msgstr "Nhà cung cấp mạng"
 
 #: operatorServices-help
-#, fuzzy
 msgctxt "operatorServices-help"
 msgid "Help"
 msgstr "Trợ giúp"
 
 #: operatorServices-helpmenu
+#, fuzzy
 msgid "Help menu"
-msgstr ""
+msgstr "Trình đơn Trợ giúp"
 
 #: operatorService-invalid-url
 msgid "Cannot access the URL"
-msgstr ""
+msgstr "Không thể mở URL"
 
 #, fuzzy
 #~ msgctxt "gitInfo"

@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-01-21 23:37+0100\n"
-"PO-Revision-Date: 2013-01-04 16:51+0000\n"
+"PO-Revision-Date: 2013-02-20 15:43+0000\n"
 "Last-Translator: Joel <joel.m.encinas@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: tl\n"
@@ -15,29 +15,29 @@ msgstr ""
 "X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1357318276.0\n"
+"X-POOTLE-MTIME: 1361375024.0\n"
 
 #: setup-app-name-header
 msgid "Mail"
-msgstr ""
+msgstr "Liham"
 
 #: setup-empty-account-prompt
 msgid ""
 "You are not set up to send or receive email. Would you like to do that now?"
 msgstr ""
-"Hindi ka naka set up para maka-send o maka-receive ng email. Gusto mo ba "
-"i-set up ngayon?"
+"Hindi nakaayos upang tumanggap o makapagpadala ng email. Gusto mo bang gawin "
+"iyan ngayon?"
 
 #: setup-pick-service
 msgid "To send and receive email, you will need to set up an account."
 msgstr ""
-"Para makapagpadala at makatanggap ng email, kailangang gumawa ng account."
+"Upang makapagpadala at makatanggap ng email, kailangang gumawa ng account."
 
 #. # Title of the account setup card where the user enters their display name,
 #. # e-mail address, and password.
 #: setup-account-header3
 msgid "New account"
-msgstr ""
+msgstr "Bagong account"
 
 #: setup-info-header
 msgid "Your login information"
@@ -51,7 +51,7 @@ msgstr "Ang iyong login information"
 #. # it is currently unlabeled because of screen real estate concerns.
 #: setup-info-name.placeholder
 msgid "Your name"
-msgstr ""
+msgstr "Ang iyong pangalan"
 
 #. # The placeholder for the user's e-mail address that will be displayed in the
 #. # account setup screen input box for the e-mail address until they enter any
@@ -77,7 +77,7 @@ msgstr "Susunod"
 
 #: setup-progress-wait
 msgid "Please wait while your account is set up"
-msgstr "Pahintay habang nag-set up ang iyong account"
+msgstr "Saglit lamang at isinasaayos ang iyong account."
 
 #: setup-completed-header
 #, fuzzy
@@ -100,7 +100,7 @@ msgstr "Tumuloy sa Mail"
 #. # connection active.
 #: setup-error-offline
 msgid "This device is currently offline. Connect to a network and try again."
-msgstr ""
+msgstr "Offline ang aparatong ito. Kumonekta sa network at subukin muli."
 
 #. # The error for either a bad username or a bad password.  For security reasons,
 #. # servers try not to distinguish between the two which is why we also cannot
@@ -108,7 +108,7 @@ msgstr ""
 #. # it in either place.
 #: setup-error-bad-user-or-pass2
 msgid "Invalid username or password. Check for typos."
-msgstr ""
+msgstr "Mali ang username o password. Baka mali ang iyong pagbaybay."
 
 #. # The error for a user having the correct username and password, but the mail
 #. # server explicitly indicates they don't have permission to talk to the mail
@@ -117,7 +117,7 @@ msgstr ""
 #. # domain have their own error code: setup-error-imap-disabled.
 #: setup-error-not-authorized
 msgid "The server said you're not authorized to create an account"
-msgstr ""
+msgstr "Ayon sa server, ikaw ay hindi pinapayagang gumawa ng account."
 
 #. # The fallback error; if we don't have a better error, we report this.
 #: setup-error-unknown2
@@ -125,6 +125,8 @@ msgid ""
 "An unknown error occurred. Check your network connection or try the manual "
 "configuration option."
 msgstr ""
+"Hindi mabatid na poagkakamali. Tingnan ang koneksyon ng iyong network o "
+"subukan ang manual na pagsasaayos."
 
 #. # The error for Gmail accounts where 2-factor authentication (where you receive
 #. # a text message on your phone or run a special app) is enabled, and so the
@@ -140,9 +142,8 @@ msgstr ""
 #. # This can also occur for apps-for-domains where the domain is not configured
 #. # to support IMAP.
 #: setup-error-imap-disabled
-#, fuzzy
 msgid "You must enable IMAP for your Gmail account"
-msgstr "Kailangan mo ma-enable ang IMAP ng Gmail account mo"
+msgstr "Paganahin ang IMAP para sa iyong account sa Gmail."
 
 #. # The error for when we are able to contact a server that should be the mail
 #. # server but we are unable to establish a secure connection.
@@ -151,14 +152,19 @@ msgid ""
 "Unable to establish a secure connection with \"{{server}}\". There may be a "
 "problem with your network or the server."
 msgstr ""
+"Hindi makakuha ng maayos na kuneksyon mula sa \"{{server}}\". Maaaring "
+"mayroong problema sa network o sa server."
 
 #. # The error for when we try to contact a server but see no indication of a
 #. # response before we give up because of a timeout.
 #: setup-error-unresponsive-server
+#, fuzzy
 msgid ""
 "Unable to establish a connection with \"{{server}}\". There may be a problem "
 "with the network."
 msgstr ""
+"Hindi makakuha ng maayos na kuneksyon mula sa \"{{server}}\". Maaaring "
+"mayroong problema sa network o sa server."
 
 #. # The error for when we able to establish a (secure) connection with the server,
 #. # but there is some type of failure talking to the server that isn't covered by
@@ -167,7 +173,7 @@ msgstr ""
 #. # server's software.
 #: setup-error-server-problem
 msgid "There is a problem with the server \"{{server}}\". Try again later."
-msgstr ""
+msgstr "Mayroong problema sa server \"{{server}}\". Subukang muli mamaya."
 
 #. # The error for when we are trying to figure out the right server settings for
 #. # an account based on the e-mail address the user typed in during configuration,
@@ -206,17 +212,18 @@ msgstr ""
 #: setup-manual-account-type
 msgctxt "setup-manual-account-type"
 msgid "Account type"
-msgstr ""
+msgstr "Uri ng account"
 
 #: setup-manual-imap-header
 msgctxt "setup-manual-imap-header"
 msgid "IMAP settings"
-msgstr ""
+msgstr "Settings na IMAP"
 
 #: setup-manual-smtp-header
+#, fuzzy
 msgctxt "setup-manual-smtp-header"
 msgid "SMTP settings"
-msgstr ""
+msgstr "Settings na IMAP"
 
 #: setup-manual-activesync-header
 msgctxt "setup-manual-activesync-header"
@@ -249,15 +256,15 @@ msgstr ""
 #: setup-manual-username.placeholder
 msgctxt "setup-manual-username.placeholder"
 msgid "Username"
-msgstr ""
+msgstr "Username"
 
 #: setup-bad-password-header
 msgid "Bad password!"
-msgstr ""
+msgstr "Hindi kaaya-ayang password!"
 
 #: setup-bad-password
 msgid "We could not sign in to the server. Maybe your password is wrong?"
-msgstr ""
+msgstr "Hindi makalagda sa server. Maaring mali ang iyong password."
 
 #: setup-new-password.placeholder
 msgid "New password"
@@ -390,9 +397,10 @@ msgid "Default account"
 msgstr ""
 
 #: settings-account-type
+#, fuzzy
 msgctxt "settings-account-type"
 msgid "Account type"
-msgstr ""
+msgstr "Uri ng account"
 
 #: settings-account-credentials
 msgid "Credentials"
@@ -408,14 +416,16 @@ msgid "ActiveSync settings"
 msgstr ""
 
 #: settings-imap-label
+#, fuzzy
 msgctxt "settings-imap-label"
 msgid "IMAP settings"
-msgstr ""
+msgstr "Settings na IMAP"
 
 #: settings-smtp-label
+#, fuzzy
 msgctxt "settings-smtp-label"
 msgid "SMTP settings"
-msgstr ""
+msgstr "Settings na IMAP"
 
 #: settings-hostname
 msgctxt "settings-hostname"
@@ -427,9 +437,10 @@ msgid "Port"
 msgstr ""
 
 #: settings-username
+#, fuzzy
 msgctxt "settings-username"
 msgid "Username"
-msgstr ""
+msgstr "Username"
 
 #: settings-password
 #, fuzzy
@@ -873,24 +884,28 @@ msgid "1 message flag set"
 msgstr ""
 
 #: toaster-message-star[two]
+#, fuzzy
 msgctxt "toaster-message-star[two]"
 msgid "{{ n }} messages flag set"
-msgstr ""
+msgstr "{{ n }} mensaheng binura"
 
 #: toaster-message-star[few]
+#, fuzzy
 msgctxt "toaster-message-star[few]"
 msgid "{{ n }} messages flag set"
-msgstr ""
+msgstr "{{ n }} mensaheng binura"
 
 #: toaster-message-star[many]
+#, fuzzy
 msgctxt "toaster-message-star[many]"
 msgid "{{ n }} messages flag set"
-msgstr ""
+msgstr "{{ n }} mensaheng binura"
 
 #: toaster-message-star[other]
+#, fuzzy
 msgctxt "toaster-message-star[other]"
 msgid "{{ n }} messages flag set"
-msgstr ""
+msgstr "{{ n }} mensaheng binura"
 
 #: toaster-message-unstar
 msgctxt "toaster-message-unstar"
