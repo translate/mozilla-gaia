@@ -1,9 +1,9 @@
-#. extracted from locales/en-US/apps/system/system.properties
+#. extracted from ./apps/system/system.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-09 00:56+0100\n"
+"POT-Creation-Date: 2013-05-08 10:22+0100\n"
 "PO-Revision-Date: 2013-05-02 14:55+0000\n"
 "Last-Translator: Selim <selim@sum.lu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1367506539.0\n"
@@ -54,6 +54,10 @@ msgstr "{{operator}} (Dolaşımda)"
 msgid "Emergency calls only"
 msgstr "Yalnızca acil aramalar"
 
+#: emergencyCallsOnly-unknownSIMState
+msgid "(unknown SIM state)"
+msgstr ""
+
 #: emergencyCallsOnly-noSIM
 msgid "(no SIM)"
 msgstr "(SIM yok)"
@@ -69,6 +73,14 @@ msgstr "(SIM PUK'u gerekli)"
 #: emergencyCallsOnly-networkLocked
 msgid "(network locked)"
 msgstr "(şebeke kilitli)"
+
+#: emergencyCallsOnly-serviceProviderLocked
+msgid "(service provider locked)"
+msgstr ""
+
+#: emergencyCallsOnly-corporateLocked
+msgid "(corporate locked)"
+msgstr ""
 
 #: enterPIN
 msgid "Enter PIN"
@@ -461,8 +473,8 @@ msgstr "Güncellemeler veri şebekesi üzerinden indirilsin mi?"
 #: downloadUpdatesViaDataConnectionMessage
 msgid ""
 "Updates are downloaded via data connection when Wi-Fi is not available. When "
-"using data connection, phone calls may be blocked and additional charges may "
-"also apply."
+"using data connection, phone calls may be blocked and additional charges "
+"may also apply."
 msgstr ""
 "Wi-Fi kullanılamadığında güncellemeler veri şebekesi üzerinden indirilir. "
 "Veri şebekesi kullanılırken telefon görüşmeleri engellenebilir ve ek "
@@ -727,8 +739,15 @@ msgstr "Bluetooth dosya aktarımı kabul edilsin mi?"
 
 #: wantToReceiveFile
 msgid "{{deviceName}} would like to transfer {{fileName}} ({{fileSize}})."
+msgstr "{{deviceName}}, {{fileName}} ({{fileSize}}) dosyasını aktarmak istiyor."
+
+#: notification-fileTransfer-title
+msgid "Receive file?"
 msgstr ""
-"{{deviceName}}, {{fileName}} ({{fileSize}}) dosyasını aktarmak istiyor."
+
+#: notification-fileTransfer-description
+msgid "File incoming from another device"
+msgstr ""
 
 #: byteUnit-B
 msgid "Bytes"
@@ -803,29 +822,25 @@ msgstr "tamamlandı"
 msgid "failed"
 msgstr "başarısız oldu"
 
-#: transferFinished-sendingCompletedTitle
-msgid "Bluetooth sending file complete"
-msgstr "Bluetooth dosya gönderimi tamamlandı"
+#: transferFinished-sentSuccessful-title
+msgid "File sent"
+msgstr ""
 
-#: transferFinished-receivedCompletedTitle
-msgid "Bluetooth received file ready to open"
-msgstr "Bluetooth ile alınan dosya açılmaya hazır"
+#: transferFinished-receivedSuccessful-title
+msgid "File received"
+msgstr ""
 
-#: transferFinished-sendingFailedTitle
-msgid "Bluetooth sending file failed"
-msgstr "Bluetooth dosya gönderimi başarısız oldu"
+#: transferFinished-sentFailed-title
+msgid "File could not be sent"
+msgstr ""
 
-#: transferFinished-receivedFailedTitle
-msgid "Bluetooth received a file it can not open"
-msgstr "Bluetooth, açamadığı bir dosya aldı"
+#: transferFinished-receivedFailed-title
+msgid "File could not be received"
+msgstr ""
 
-#: transferFinished-completedBody
-msgid "Transfer completed"
-msgstr "Aktarım tamamlandı"
-
-#: transferFinished-failedBody
-msgid "Transfer failed"
-msgstr "Aktarım başarısız oldu"
+#: unknown-file
+msgid "Unknown file"
+msgstr ""
 
 #: unknown-device
 msgid "Unknown device"
@@ -888,6 +903,16 @@ msgstr "PUK kodu"
 msgid "NCK code"
 msgstr "NCK kodu"
 
+#: cckCode
+#, fuzzy
+msgid "CCK code"
+msgstr "NCK kodu"
+
+#: spckCode
+#, fuzzy
+msgid "SPCK code"
+msgstr "PUK kodu"
+
 #: whatIsSimPin
 msgid "What is a SIM PIN?"
 msgstr "SIM PIN'i nedir?"
@@ -922,6 +947,16 @@ msgstr "PUK kodunu girin"
 #: nckTitle
 msgid "Enter NCK code"
 msgstr "NCK kodunu girin"
+
+#: cckTitle
+#, fuzzy
+msgid "Enter CCK code"
+msgstr "NCK kodunu girin"
+
+#: spckTitle
+#, fuzzy
+msgid "Enter SPCK code"
+msgstr "PUK kodunu girin"
 
 #: newpinTitle
 msgid "New PIN"
@@ -975,7 +1010,8 @@ msgstr "SIM kart kilitli."
 #: enterPukMsg
 msgid ""
 "You must enter the Personal Unlocking Key (PUK) code for the SIM card. Refer "
-"to your SIM card documentation or contact your carrier for more information."
+"to your SIM card documentation or contact your carrier for more "
+"information."
 msgstr ""
 "SIM kartınızın Kişisel Kilit Açma Anahtarı'nı (PUK) girmelisiniz. Daha fazla "
 "bilgi için SIM kartınızın belgelerine bakın veya operatörünüzle irtibata "
@@ -1115,3 +1151,21 @@ msgstr "{{origin}} şimdi tam ekran."
 #: captive-wifi-available
 msgid "The network {{networkName}} was found. Join network?"
 msgstr "{{networkName}} ağı bulundu. Ağa katılınsın mı?"
+
+#~ msgid "Bluetooth sending file complete"
+#~ msgstr "Bluetooth dosya gönderimi tamamlandı"
+
+#~ msgid "Bluetooth received file ready to open"
+#~ msgstr "Bluetooth ile alınan dosya açılmaya hazır"
+
+#~ msgid "Bluetooth sending file failed"
+#~ msgstr "Bluetooth dosya gönderimi başarısız oldu"
+
+#~ msgid "Bluetooth received a file it can not open"
+#~ msgstr "Bluetooth, açamadığı bir dosya aldı"
+
+#~ msgid "Transfer completed"
+#~ msgstr "Aktarım tamamlandı"
+
+#~ msgid "Transfer failed"
+#~ msgstr "Aktarım başarısız oldu"
