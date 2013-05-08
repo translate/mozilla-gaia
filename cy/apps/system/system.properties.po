@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-09 00:56+0100\n"
+"POT-Creation-Date: 2013-05-08 10:06+0100\n"
 "PO-Revision-Date: 2013-05-02 20:19+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Pootle 2.5.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1367525971.0\n"
@@ -54,6 +54,10 @@ msgstr "{{operator}} (Crwydro)"
 msgid "Emergency calls only"
 msgstr "Galwadau brys yn unig"
 
+#: emergencyCallsOnly-unknownSIMState
+msgid "(unknown SIM state)"
+msgstr ""
+
 #: emergencyCallsOnly-noSIM
 msgid "(no SIM)"
 msgstr "(dim SIM)"
@@ -69,6 +73,14 @@ msgstr "(Angen PUK SIM)"
 #: emergencyCallsOnly-networkLocked
 msgid "(network locked)"
 msgstr "(rhwydwaith cloedig)"
+
+#: emergencyCallsOnly-serviceProviderLocked
+msgid "(service provider locked)"
+msgstr ""
+
+#: emergencyCallsOnly-corporateLocked
+msgid "(corporate locked)"
+msgstr ""
 
 #: enterPIN
 msgid "Enter PIN"
@@ -331,8 +343,8 @@ msgstr "Nid Nawr"
 #: downloadingUpdateMessage
 msgid "Downloading updates… <span>{{ progress }} downloaded.</span>"
 msgstr ""
-"Llwytho diweddariadau i lawr… <span>{{ progress }} wedi llwytho i lawr.</"
-"span>"
+"Llwytho diweddariadau i lawr… <span>{{ progress }} wedi llwytho i "
+"lawr.</span>"
 
 #: downloadingAppMessage
 msgid "Downloading {{ appName }}"
@@ -463,8 +475,8 @@ msgstr "Llwytho diweddariadau i lawr drwy'r cysylltiad data?"
 #: downloadUpdatesViaDataConnectionMessage
 msgid ""
 "Updates are downloaded via data connection when Wi-Fi is not available. When "
-"using data connection, phone calls may be blocked and additional charges may "
-"also apply."
+"using data connection, phone calls may be blocked and additional charges "
+"may also apply."
 msgstr ""
 "Mae diweddariadau yn cael eu llwytho i lawr drwy gysylltiad data pan nad "
 "yw'r diwyfr ar gael. Wrth ddefnyddio'r cysylltiad data, gall galwadau gael "
@@ -731,6 +743,14 @@ msgstr "Derbyn trosglwyddiad ffeil Bluetooth?"
 msgid "{{deviceName}} would like to transfer {{fileName}} ({{fileSize}})."
 msgstr "Hoffai {{deviceName}} drosglwyddo {{fileName}} ({{fileSize}})."
 
+#: notification-fileTransfer-title
+msgid "Receive file?"
+msgstr ""
+
+#: notification-fileTransfer-description
+msgid "File incoming from another device"
+msgstr ""
+
 #: byteUnit-B
 msgid "Bytes"
 msgstr "Beitiau"
@@ -804,29 +824,26 @@ msgstr "wedi ei gwblhau"
 msgid "failed"
 msgstr "wedi methu"
 
-#: transferFinished-sendingCompletedTitle
-msgid "Bluetooth sending file complete"
-msgstr "Anfon ffeil drwy Bluetooth wedi ei gwblhau"
+#: transferFinished-sentSuccessful-title
+msgid "File sent"
+msgstr ""
 
-#: transferFinished-receivedCompletedTitle
-msgid "Bluetooth received file ready to open"
-msgstr "Mae Bluetooth wedi derbyn ffeil sy'n barod i'w hagor"
+#: transferFinished-receivedSuccessful-title
+msgid "File received"
+msgstr ""
 
-#: transferFinished-sendingFailedTitle
-msgid "Bluetooth sending file failed"
-msgstr "Methodd Bluetooth ag anfon ffeil"
+#: transferFinished-sentFailed-title
+msgid "File could not be sent"
+msgstr ""
 
-#: transferFinished-receivedFailedTitle
-msgid "Bluetooth received a file it can not open"
-msgstr "Derbyniodd Bluetooth ffeil nad yw'n gallu ei hagor"
+#: transferFinished-receivedFailed-title
+msgid "File could not be received"
+msgstr ""
 
-#: transferFinished-completedBody
-msgid "Transfer completed"
-msgstr "Trosglwyddiad wedi ei gwblhau"
-
-#: transferFinished-failedBody
-msgid "Transfer failed"
-msgstr "Methodd y trosglwyddo"
+#: unknown-file
+#, fuzzy
+msgid "Unknown file"
+msgstr "Teitl anhysbys"
 
 #: unknown-device
 msgid "Unknown device"
@@ -889,6 +906,16 @@ msgstr "Cod PUK"
 msgid "NCK code"
 msgstr "Cod NCK"
 
+#: cckCode
+#, fuzzy
+msgid "CCK code"
+msgstr "Cod NCK"
+
+#: spckCode
+#, fuzzy
+msgid "SPCK code"
+msgstr "Cod PUK"
+
 #: whatIsSimPin
 msgid "What is a SIM PIN?"
 msgstr "Beth yw PIN y SIM?"
@@ -924,6 +951,16 @@ msgstr "Cynigwch cod y PUK"
 #: nckTitle
 msgid "Enter NCK code"
 msgstr "Rhowch god NCK"
+
+#: cckTitle
+#, fuzzy
+msgid "Enter CCK code"
+msgstr "Rhowch god NCK"
+
+#: spckTitle
+#, fuzzy
+msgid "Enter SPCK code"
+msgstr "Cynigwch cod y PUK"
 
 #: newpinTitle
 msgid "New PIN"
@@ -977,7 +1014,8 @@ msgstr "Mae'r cerdyn SIM wedi ei gloi."
 #: enterPukMsg
 msgid ""
 "You must enter the Personal Unlocking Key (PUK) code for the SIM card. Refer "
-"to your SIM card documentation or contact your carrier for more information."
+"to your SIM card documentation or contact your carrier for more "
+"information."
 msgstr ""
 "Rhaid cynnig y cod Allwedd Datgloi Personol (PUK) ar gyfer y cerdyn SIM. "
 "Darllenwch y wybodaeth am eich cerdyn SIM neu gysylltwch â'ch darparwr am "
@@ -1117,6 +1155,24 @@ msgstr "{{origin}} nawr yn sgrin lawn."
 #: captive-wifi-available
 msgid "The network {{networkName}} was found. Join network?"
 msgstr "Wedi canfod rhwydwaith {{networkName}}. Ymuno â'r rhwydwaith?"
+
+#~ msgid "Bluetooth sending file complete"
+#~ msgstr "Anfon ffeil drwy Bluetooth wedi ei gwblhau"
+
+#~ msgid "Bluetooth received file ready to open"
+#~ msgstr "Mae Bluetooth wedi derbyn ffeil sy'n barod i'w hagor"
+
+#~ msgid "Bluetooth sending file failed"
+#~ msgstr "Methodd Bluetooth ag anfon ffeil"
+
+#~ msgid "Bluetooth received a file it can not open"
+#~ msgstr "Derbyniodd Bluetooth ffeil nad yw'n gallu ei hagor"
+
+#~ msgid "Transfer completed"
+#~ msgstr "Trosglwyddiad wedi ei gwblhau"
+
+#~ msgid "Transfer failed"
+#~ msgstr "Methodd y trosglwyddo"
 
 #~ msgid ""
 #~ "Wi-Fi unavailable. Updating over current connection will block incoming "
