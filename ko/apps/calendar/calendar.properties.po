@@ -1,16 +1,16 @@
-#. extracted from locales/en-US/apps/calendar/calendar.properties
+#. extracted from ./apps/calendar/calendar.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-21 23:37+0100\n"
+"POT-Creation-Date: 2013-05-08 10:22+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
@@ -39,6 +39,16 @@ msgstr "확인"
 msgid "Done"
 msgstr "완료"
 
+#: events
+#, fuzzy
+msgid "Events"
+msgstr "이벤트"
+
+#: allday-events
+#, fuzzy
+msgid "All-day Events"
+msgstr "전일 이벤트"
+
 #. # time view selector
 #: show-today
 msgid "Today"
@@ -62,6 +72,7 @@ msgid "Settings"
 msgstr "설정"
 
 #: settings-hide
+#, fuzzy
 msgid "Hide settings"
 msgstr "설정 숨기기"
 
@@ -71,6 +82,7 @@ msgid "Add an account"
 msgstr "계정 추가"
 
 #: new-event
+#, fuzzy
 msgid "Add event"
 msgstr "이벤트 추가"
 
@@ -93,11 +105,13 @@ msgid "Calendars"
 msgstr "캘린더"
 
 #: advanced-settings
+#, fuzzy
 msgctxt "advanced-settings"
 msgid "Calendar settings"
 msgstr "캘린더 설정"
 
 #: advanced-settings-header
+#, fuzzy
 msgctxt "advanced-settings-header"
 msgid "Calendar settings"
 msgstr "캘린더 설정"
@@ -105,6 +119,10 @@ msgstr "캘린더 설정"
 #: advanced-settings-personalization
 msgid "Personalization"
 msgstr "개인화"
+
+#: advanced-settings-reminders
+msgid "Reminders"
+msgstr ""
 
 #. # create account
 #: field-user.placeholder
@@ -121,7 +139,7 @@ msgstr "URL"
 
 #: modify-account-setting-up
 msgid "Please wait while your account is set up"
-msgstr "계정이 설정되는 동안 기다려 주십시오."
+msgstr ""
 
 #. # presets
 #: preset-caldav
@@ -137,6 +155,7 @@ msgid "Google"
 msgstr "Google"
 
 #: preset-local
+#, fuzzy
 msgctxt "preset-local"
 msgid "Offline calendar"
 msgstr "오프라인 캘린더"
@@ -148,6 +167,7 @@ msgid "Mozilla Zimbra"
 msgstr "Mozilla Zimbra"
 
 #: calendar-local
+#, fuzzy
 msgctxt "calendar-local"
 msgid "Offline calendar"
 msgstr "오프라인 캘린더"
@@ -166,35 +186,43 @@ msgid "Notes"
 msgstr "메모"
 
 #: event-is-allday
+#, fuzzy
 msgid "All day event?"
 msgstr "전일 이벤트"
 
 #: event-start-date.placeholder
+#, fuzzy
 msgid "Start date"
 msgstr "시작일"
 
 #: event-end-date.placeholder
+#, fuzzy
 msgid "End date"
 msgstr "종료일"
 
 #: event-start-time.placeholder
+#, fuzzy
 msgid "Start time"
 msgstr "시작 시간"
 
 #: event-end-time.placeholder
+#, fuzzy
 msgid "End time"
 msgstr "종료 시간"
 
 #: event-delete
+#, fuzzy
 msgid "Delete event"
 msgstr "이벤트 삭제"
 
 #. # remove account
 #: remove-account-data
+#, fuzzy
 msgid "Remove local data"
 msgstr "로컬 데이터 삭제"
 
 #: remove-account-dialog
+#, fuzzy
 msgid "Remove account"
 msgstr "계정 삭제"
 
@@ -202,7 +230,9 @@ msgstr "계정 삭제"
 msgid ""
 "Removing this account will also remove your local copy of associated "
 "calendars and events."
-msgstr "이 계정을 삭제하면 로컬에 복사되어 있는 연결된 캘린더와 이벤트도 같이 삭제됩니다."
+msgstr ""
+"이 계정을 삭제하면 로컬에 복사되어 있는 연결된 캘린더와 이벤트도 같이 삭제됩"
+"니다."
 
 #. # sync
 #: sync-frequency
@@ -225,19 +255,435 @@ msgstr "30분"
 msgid "Each hour"
 msgstr "매 시간마다"
 
+#. # alarms for event view/edit
+#: none
+#, fuzzy
+msgid "None"
+msgstr "완료"
+
+#: remind-me
+msgid "Remind me"
+msgstr ""
+
+#: alarm-at-event-standard
+msgid "At time of event"
+msgstr ""
+
+#: alarm-at-event-allday
+msgid "On day of event"
+msgstr ""
+
 #. # alarms
-#: alarm-starting
+#: alarm-start-notice
+#, fuzzy
+msgid "{{title}} starting {{distance}}"
+msgstr "{{title}}이 {{distance}} 안에 시작"
+
+#: alarm-started-notice
 msgid "{{title}} started {{distance}}"
 msgstr "{{title}}이 {{distance}} 전에 시작"
 
-#: alarm-started
-msgid "{{title}} starting in {{distance}}"
-msgstr "{{title}}이 {{distance}} 안에 시작"
+#. # relative times (before/after)
+#: minutes-before
+msgctxt "minutes-before"
+msgid "{[ plural(value) ]}"
+msgstr ""
+
+#: minutes-before[zero]
+msgid "0 minutes before"
+msgstr ""
+
+#: minutes-before[one]
+msgid "1 minute before"
+msgstr ""
+
+#: minutes-before[two]
+msgctxt "minutes-before[two]"
+msgid "{{value}} minutes before"
+msgstr ""
+
+#: minutes-before[few]
+msgctxt "minutes-before[few]"
+msgid "{{value}} minutes before"
+msgstr ""
+
+#: minutes-before[many]
+msgctxt "minutes-before[many]"
+msgid "{{value}} minutes before"
+msgstr ""
+
+#: minutes-before[other]
+msgctxt "minutes-before[other]"
+msgid "{{value}} minutes before"
+msgstr ""
+
+#: hours-before
+msgctxt "hours-before"
+msgid "{[ plural(value) ]}"
+msgstr ""
+
+#: hours-before[zero]
+msgid "0 hours before"
+msgstr ""
+
+#: hours-before[one]
+msgid "1 hour before"
+msgstr ""
+
+#: hours-before[two]
+msgctxt "hours-before[two]"
+msgid "{{value}} hours before"
+msgstr ""
+
+#: hours-before[few]
+msgctxt "hours-before[few]"
+msgid "{{value}} hours before"
+msgstr ""
+
+#: hours-before[many]
+msgctxt "hours-before[many]"
+msgid "{{value}} hours before"
+msgstr ""
+
+#: hours-before[other]
+msgctxt "hours-before[other]"
+msgid "{{value}} hours before"
+msgstr ""
+
+#: days-before
+msgctxt "days-before"
+msgid "{[ plural(value) ]}"
+msgstr ""
+
+#: days-before[zero]
+msgid "0 days before"
+msgstr ""
+
+#: days-before[one]
+msgid "1 day before"
+msgstr ""
+
+#: days-before[two]
+msgctxt "days-before[two]"
+msgid "{{value}} days before"
+msgstr ""
+
+#: days-before[few]
+msgctxt "days-before[few]"
+msgid "{{value}} days before"
+msgstr ""
+
+#: days-before[many]
+msgctxt "days-before[many]"
+msgid "{{value}} days before"
+msgstr ""
+
+#: days-before[other]
+msgctxt "days-before[other]"
+msgid "{{value}} days before"
+msgstr ""
+
+#: weeks-before
+msgctxt "weeks-before"
+msgid "{[ plural(value) ]}"
+msgstr ""
+
+#: weeks-before[zero]
+msgid "0 weeks before"
+msgstr ""
+
+#: weeks-before[one]
+msgid "1 week before"
+msgstr ""
+
+#: weeks-before[two]
+msgctxt "weeks-before[two]"
+msgid "{{value}} weeks before"
+msgstr ""
+
+#: weeks-before[few]
+msgctxt "weeks-before[few]"
+msgid "{{value}} weeks before"
+msgstr ""
+
+#: weeks-before[many]
+msgctxt "weeks-before[many]"
+msgid "{{value}} weeks before"
+msgstr ""
+
+#: weeks-before[other]
+msgctxt "weeks-before[other]"
+msgid "{{value}} weeks before"
+msgstr ""
+
+#: months-before
+msgctxt "months-before"
+msgid "{[ plural(value) ]}"
+msgstr ""
+
+#: months-before[zero]
+msgid "0 months before"
+msgstr ""
+
+#: months-before[one]
+msgid "1 month before"
+msgstr ""
+
+#: months-before[two]
+msgctxt "months-before[two]"
+msgid "{{value}} months before"
+msgstr ""
+
+#: months-before[few]
+msgctxt "months-before[few]"
+msgid "{{value}} months before"
+msgstr ""
+
+#: months-before[many]
+msgctxt "months-before[many]"
+msgid "{{value}} months before"
+msgstr ""
+
+#: months-before[other]
+msgctxt "months-before[other]"
+msgid "{{value}} months before"
+msgstr ""
+
+#: years-before
+msgctxt "years-before"
+msgid "{[ plural(value) ]}"
+msgstr ""
+
+#: years-before[zero]
+msgid "0 years before"
+msgstr ""
+
+#: years-before[one]
+msgid "1 year before"
+msgstr ""
+
+#: years-before[two]
+msgctxt "years-before[two]"
+msgid "{{value}} years before"
+msgstr ""
+
+#: years-before[few]
+msgctxt "years-before[few]"
+msgid "{{value}} years before"
+msgstr ""
+
+#: years-before[many]
+msgctxt "years-before[many]"
+msgid "{{value}} years before"
+msgstr ""
+
+#: years-before[other]
+msgctxt "years-before[other]"
+msgid "{{value}} years before"
+msgstr ""
+
+#: minutes-after
+msgctxt "minutes-after"
+msgid "{[ plural(value) ]}"
+msgstr ""
+
+#: minutes-after[zero]
+msgid "0 minutes after"
+msgstr ""
+
+#: minutes-after[one]
+msgid "1 minute after"
+msgstr ""
+
+#: minutes-after[two]
+msgctxt "minutes-after[two]"
+msgid "{{value}} minutes after"
+msgstr ""
+
+#: minutes-after[few]
+msgctxt "minutes-after[few]"
+msgid "{{value}} minutes after"
+msgstr ""
+
+#: minutes-after[many]
+msgctxt "minutes-after[many]"
+msgid "{{value}} minutes after"
+msgstr ""
+
+#: minutes-after[other]
+msgctxt "minutes-after[other]"
+msgid "{{value}} minutes after"
+msgstr ""
+
+#: hours-after
+msgctxt "hours-after"
+msgid "{[ plural(value) ]}"
+msgstr ""
+
+#: hours-after[zero]
+msgid "0 hours after"
+msgstr ""
+
+#: hours-after[one]
+msgid "1 hour after"
+msgstr ""
+
+#: hours-after[two]
+msgctxt "hours-after[two]"
+msgid "{{value}} hours after"
+msgstr ""
+
+#: hours-after[few]
+msgctxt "hours-after[few]"
+msgid "{{value}} hours after"
+msgstr ""
+
+#: hours-after[many]
+msgctxt "hours-after[many]"
+msgid "{{value}} hours after"
+msgstr ""
+
+#: hours-after[other]
+msgctxt "hours-after[other]"
+msgid "{{value}} hours after"
+msgstr ""
+
+#: days-after
+msgctxt "days-after"
+msgid "{[ plural(value) ]}"
+msgstr ""
+
+#: days-after[zero]
+msgid "0 days after"
+msgstr ""
+
+#: days-after[one]
+msgid "1 day after"
+msgstr ""
+
+#: days-after[two]
+msgctxt "days-after[two]"
+msgid "{{value}} days after"
+msgstr ""
+
+#: days-after[few]
+msgctxt "days-after[few]"
+msgid "{{value}} days after"
+msgstr ""
+
+#: days-after[many]
+msgctxt "days-after[many]"
+msgid "{{value}} days after"
+msgstr ""
+
+#: days-after[other]
+msgctxt "days-after[other]"
+msgid "{{value}} days after"
+msgstr ""
+
+#: weeks-after
+msgctxt "weeks-after"
+msgid "{[ plural(value) ]}"
+msgstr ""
+
+#: weeks-after[zero]
+msgid "0 weeks after"
+msgstr ""
+
+#: weeks-after[one]
+msgid "1 week after"
+msgstr ""
+
+#: weeks-after[two]
+msgctxt "weeks-after[two]"
+msgid "{{value}} weeks after"
+msgstr ""
+
+#: weeks-after[few]
+msgctxt "weeks-after[few]"
+msgid "{{value}} weeks after"
+msgstr ""
+
+#: weeks-after[many]
+msgctxt "weeks-after[many]"
+msgid "{{value}} weeks after"
+msgstr ""
+
+#: weeks-after[other]
+msgctxt "weeks-after[other]"
+msgid "{{value}} weeks after"
+msgstr ""
+
+#: months-after
+msgctxt "months-after"
+msgid "{[ plural(value) ]}"
+msgstr ""
+
+#: months-after[zero]
+msgid "0 months after"
+msgstr ""
+
+#: months-after[one]
+msgid "1 month after"
+msgstr ""
+
+#: months-after[two]
+msgctxt "months-after[two]"
+msgid "{{value}} months after"
+msgstr ""
+
+#: months-after[few]
+msgctxt "months-after[few]"
+msgid "{{value}} months after"
+msgstr ""
+
+#: months-after[many]
+msgctxt "months-after[many]"
+msgid "{{value}} months after"
+msgstr ""
+
+#: months-after[other]
+msgctxt "months-after[other]"
+msgid "{{value}} months after"
+msgstr ""
+
+#: years-after
+msgctxt "years-after"
+msgid "{[ plural(value) ]}"
+msgstr ""
+
+#: years-after[zero]
+msgid "0 years after"
+msgstr ""
+
+#: years-after[one]
+msgid "1 year after"
+msgstr ""
+
+#: years-after[two]
+msgctxt "years-after[two]"
+msgid "{{value}} years after"
+msgstr ""
+
+#: years-after[few]
+msgctxt "years-after[few]"
+msgid "{{value}} years after"
+msgstr ""
+
+#: years-after[many]
+msgctxt "years-after[many]"
+msgid "{{value}} years after"
+msgstr ""
+
+#: years-after[other]
+msgctxt "years-after[other]"
+msgid "{{value}} years after"
+msgstr ""
 
 #. # Date formatting details (http://pubs.opengroup.org/onlinepubs/007908799/xsh/strftime.html)
 #: agenda-date-format
 msgid "%A %e %B %Y"
-msgstr "%Y년 %B %e일 %A"
+msgstr ""
 
 #: hour-format
 msgid "%I %p"
@@ -245,44 +691,56 @@ msgstr "%I %p"
 
 #: hour-allday
 msgid "All Day"
-msgstr "종일"
+msgstr ""
 
 #. # Default header used in month view / week view
 #: month-view-header-format
 msgid "%B %Y"
-msgstr "%Y년 %B"
+msgstr ""
 
 #. # In week view when displaying multiple months (weeks that span months).
 #: single-month-view-header-format
 msgid "%B "
-msgstr "%B "
+msgstr ""
 
 #. # Header format used for in the day view.
 #: day-view-header-format
 msgid "%A %B %e"
-msgstr "%B %e일 %A"
+msgstr ""
 
 #. #errors
 #: error-start-after-end
 msgid "End date must come after start date"
-msgstr "종료일은 시작일보다 나중이어야 함"
+msgstr ""
 
 #: error-unauthenticated
 msgid "Wrong login and/or password"
-msgstr "잘못된 아이디나 암호"
+msgstr ""
 
 #: error-no-url
 msgid "No connection. Check your Wi-Fi and try again."
-msgstr "연결할 수 없습니다. Wi-Fi를 확인하고 다시 시도해 보십시오."
+msgstr ""
 
 #: error-internal-server-error
 msgid "Server error. Check your login and try again."
-msgstr "내부 서버 오류입니다. 로그인을 확인하고 다시 시도해 보십시오."
+msgstr ""
 
 #: error-default
 msgid "Something is wrong. Try again later."
-msgstr "알 수 없는 오류입니다. 나중에 다시 시도해 보십시오."
+msgstr ""
 
 #: error-offline
 msgid "No connection. Check your network configuration and try again."
-msgstr "연결된 네트워크가 없습니다. 네트워크 설정을 확인해 보시고 다시 시도해 보십시오."
+msgstr ""
+
+#: error-account-exist
+msgid "This account already exists."
+msgstr ""
+
+#~ msgctxt "advanced-settings-header"
+#~ msgid "Calendar Settings"
+#~ msgstr "캘린더 설정"
+
+#~ msgctxt "calendar-local"
+#~ msgid "Offline Calendar"
+#~ msgstr "오프라인 캘린더"

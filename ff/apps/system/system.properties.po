@@ -1,10 +1,10 @@
 # Ibrahima SARR <ibrahima.sarr@pulaagu.com>, 2012, 2013.
-#. extracted from locales/en-US/apps/system/system.properties
+#. extracted from ./apps/system/system.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-09 00:56+0100\n"
+"POT-Creation-Date: 2013-05-08 10:22+0100\n"
 "PO-Revision-Date: 2013-01-04 13:34+0200\n"
 "Last-Translator: Ibrahima SARR <ibrahima.sarr@pulaagu.com>\n"
 "Language-Team: FULA LOCALIZATION\n"
@@ -12,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -55,6 +55,10 @@ msgstr "{{operator}} (Rooming)"
 msgid "Emergency calls only"
 msgstr "Noddaali keñoraaɗi tan"
 
+#: emergencyCallsOnly-unknownSIMState
+msgid "(unknown SIM state)"
+msgstr ""
+
 #: emergencyCallsOnly-noSIM
 msgid "(no SIM)"
 msgstr ""
@@ -69,6 +73,14 @@ msgstr ""
 
 #: emergencyCallsOnly-networkLocked
 msgid "(network locked)"
+msgstr ""
+
+#: emergencyCallsOnly-serviceProviderLocked
+msgid "(service provider locked)"
+msgstr ""
+
+#: emergencyCallsOnly-corporateLocked
+msgid "(corporate locked)"
 msgstr ""
 
 #: enterPIN
@@ -302,8 +314,8 @@ msgid ""
 "apps or media, and try installing again from the original source."
 msgstr ""
 "Boowal ndesgu ena ŋakki ngam aafde ngal jaaɓngal. Momtu jaaɓɗe walla mejaaje "
-"booyɗe ngam ɓeydude boowal, kadi eto-ɗaa aafde goɗngol iwde e sewnde "
-"asliire ndee."
+"booyɗe ngam ɓeydude boowal, kadi eto-ɗaa aafde goɗngol iwde e sewnde asliire "
+"ndee."
 
 #: app-install-success
 #, fuzzy
@@ -472,8 +484,8 @@ msgstr ""
 #: downloadUpdatesViaDataConnectionMessage
 msgid ""
 "Updates are downloaded via data connection when Wi-Fi is not available. When "
-"using data connection, phone calls may be blocked and additional charges "
-"may also apply."
+"using data connection, phone calls may be blocked and additional charges may "
+"also apply."
 msgstr ""
 
 #. # screenshots
@@ -565,8 +577,8 @@ msgid ""
 "{{name}} requires a network connection. Turn off airplane mode from Settings "
 "and connect to a Wi-Fi or mobile data network."
 msgstr ""
-"{{name}} ena naamnii ceŋagol e resoo. Ñif mbayka ndiwoowa e Teelte kisa "
-"ceŋo-ɗaa e Wifi walla resoo keɓe cinndel."
+"{{name}} ena naamnii ceŋagol e resoo. Ñif mbayka ndiwoowa e Teelte kisa ceŋo-"
+"ɗaa e Wifi walla resoo keɓe cinndel."
 
 #: network-connection-unavailable
 msgid "Network connection unavailable"
@@ -739,6 +751,14 @@ msgstr "Jaɓ egginol fiilde Bluutuus?"
 msgid "{{deviceName}} would like to transfer {{fileName}} ({{fileSize}})."
 msgstr "{{deviceName}} ena yiɗi egginde {{fileName}} ({{fileSize}}bite)."
 
+#: notification-fileTransfer-title
+msgid "Receive file?"
+msgstr ""
+
+#: notification-fileTransfer-description
+msgid "File incoming from another device"
+msgstr ""
+
 #: byteUnit-B
 #, fuzzy
 msgid "Bytes"
@@ -817,29 +837,25 @@ msgstr "timmii"
 msgid "failed"
 msgstr "woorii"
 
-#: transferFinished-sendingCompletedTitle
-msgid "Bluetooth sending file complete"
-msgstr "Neldugol fiilde e Bluutuus timmii"
+#: transferFinished-sentSuccessful-title
+msgid "File sent"
+msgstr ""
 
-#: transferFinished-receivedCompletedTitle
-msgid "Bluetooth received file ready to open"
-msgstr "Bluutuus heɓii fiilde hebiinde udditeede"
+#: transferFinished-receivedSuccessful-title
+msgid "File received"
+msgstr ""
 
-#: transferFinished-sendingFailedTitle
-msgid "Bluetooth sending file failed"
-msgstr "Neldugol fiilde e Bluutuus woorii"
+#: transferFinished-sentFailed-title
+msgid "File could not be sent"
+msgstr ""
 
-#: transferFinished-receivedFailedTitle
-msgid "Bluetooth received a file it can not open"
-msgstr "Bluutuus heɓii fiilde horiinde udditeede"
+#: transferFinished-receivedFailed-title
+msgid "File could not be received"
+msgstr ""
 
-#: transferFinished-completedBody
-msgid "Transfer completed"
-msgstr "Eggingol timminaama"
-
-#: transferFinished-failedBody
-msgid "Transfer failed"
-msgstr "Eggingol woorii"
+#: unknown-file
+msgid "Unknown file"
+msgstr ""
 
 #: unknown-device
 msgid "Unknown device"
@@ -903,6 +919,16 @@ msgstr "Kod PUK"
 msgid "NCK code"
 msgstr "Kod PUK"
 
+#: cckCode
+#, fuzzy
+msgid "CCK code"
+msgstr "Kod PUK"
+
+#: spckCode
+#, fuzzy
+msgid "SPCK code"
+msgstr "Kod PUK"
+
 #: whatIsSimPin
 msgid "What is a SIM PIN?"
 msgstr "Ko woni PIN kartal SIM?"
@@ -938,6 +964,16 @@ msgstr "Naatnu kod PUK"
 #: nckTitle
 #, fuzzy
 msgid "Enter NCK code"
+msgstr "Naatnu kod PUK"
+
+#: cckTitle
+#, fuzzy
+msgid "Enter CCK code"
+msgstr "Naatnu kod PUK"
+
+#: spckTitle
+#, fuzzy
+msgid "Enter SPCK code"
 msgstr "Naatnu kod PUK"
 
 #: newpinTitle
@@ -992,8 +1028,7 @@ msgstr "Kartal SIM ngal daaƴaama."
 #: enterPukMsg
 msgid ""
 "You must enter the Personal Unlocking Key (PUK) code for the SIM card. Refer "
-"to your SIM card documentation or contact your carrier for more "
-"information."
+"to your SIM card documentation or contact your carrier for more information."
 msgstr ""
 "Alaa e sago naatnaa Kod Daaƴtirɗo Keeriiɗo kartal SIM ngal (PUK). Rutto e "
 "kaayitaaji garduɗi e kartal maa SIM walla jokkondir e carwinoowo maa ngam "
@@ -1127,6 +1162,24 @@ msgstr ""
 #: captive-wifi-available
 msgid "The network {{networkName}} was found. Join network?"
 msgstr ""
+
+#~ msgid "Bluetooth sending file complete"
+#~ msgstr "Neldugol fiilde e Bluutuus timmii"
+
+#~ msgid "Bluetooth received file ready to open"
+#~ msgstr "Bluutuus heɓii fiilde hebiinde udditeede"
+
+#~ msgid "Bluetooth sending file failed"
+#~ msgstr "Neldugol fiilde e Bluutuus woorii"
+
+#~ msgid "Bluetooth received a file it can not open"
+#~ msgstr "Bluutuus heɓii fiilde horiinde udditeede"
+
+#~ msgid "Transfer completed"
+#~ msgstr "Eggingol timminaama"
+
+#~ msgid "Transfer failed"
+#~ msgstr "Eggingol woorii"
 
 #~ msgid "Emergency calls only (no SIM)"
 #~ msgstr "Noddaali keñoraaɗi tan (alaa SIM)"
