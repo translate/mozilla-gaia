@@ -1,12 +1,12 @@
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Unlock Codes
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#. extracted from locales/en-US/apps/communications/ftu/ftu.properties
+#. extracted from ./apps/communications/ftu/ftu.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-10 05:58-0700\n"
+"POT-Creation-Date: 2013-05-08 10:22+0100\n"
 "PO-Revision-Date: 2013-03-09 10:14+0000\n"
 "Last-Translator: Hakuna <jackychun1393@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,12 +28,42 @@ msgstr "Nhập mã PIN"
 msgid "Type your PIN code"
 msgstr "Nhập mã PIN của bạn"
 
+#: type_nck
+#, fuzzy
+msgid "Type your NCK code"
+msgstr "Nhập mã PIN của bạn"
+
+#: type_cck
+#, fuzzy
+msgid "Type your CCK code"
+msgstr "Nhập mã PIN của bạn"
+
+#: type_spck
+#, fuzzy
+msgid "Type your SPCK code"
+msgstr "Nhập mã PIN của bạn"
+
 #: send
 msgid "Send"
 msgstr "Gửi"
 
 #: pinValidation
 msgid "PIN must have between 4 and 8 characters."
+msgstr "Mã PIN phải có từ 4 đến 8 kí tự"
+
+#: nckValidation
+#, fuzzy
+msgid "NCK must have between 8 and 16 characters."
+msgstr "Mã PIN phải có từ 4 đến 8 kí tự"
+
+#: cckValidation
+#, fuzzy
+msgid "CCK must have between 8 and 16 characters."
+msgstr "Mã PIN phải có từ 4 đến 8 kí tự"
+
+#: spckValidation
+#, fuzzy
+msgid "SPCK must have between 8 and 16 characters."
 msgstr "Mã PIN phải có từ 4 đến 8 kí tự"
 
 #: pinErrorMsg
@@ -82,6 +112,21 @@ msgstr ""
 msgid "Enter PUK code"
 msgstr "Nhập mã PUK"
 
+#: nckcode
+#, fuzzy
+msgid "Enter NCK code"
+msgstr "Nhập mã PUK"
+
+#: cckcode
+#, fuzzy
+msgid "Enter CCK code"
+msgstr "Nhập mã PUK"
+
+#: spckcode
+#, fuzzy
+msgid "Enter SPCK code"
+msgstr "Nhập mã PUK"
+
 #: type_puk
 msgid "PUK code"
 msgstr "Mã PUK:"
@@ -101,8 +146,7 @@ msgstr "Thẻ SIM đã bị khóa"
 #: pukError
 msgid ""
 "You must enter the Personal Unlocking Key (PUK) Code for the SIM card. Refer "
-"to your SIM card documentation or contact your carrier for more "
-"information."
+"to your SIM card documentation or contact your carrier for more information."
 msgstr ""
 "Bạn phải nhập Personal Unlocking Key (PUK) cho thẻ SIM. Hãy tham khảo hướng "
 "dẫn sử dụng SIM của bạn hoặc liên hệ với nhà cung cấp dịch vụ của bạn để "
@@ -252,6 +296,14 @@ msgstr "Cảnh báo"
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
 
+#: scanningNetworks
+msgid "Scanning for networks"
+msgstr ""
+
+#: selectNetwork
+msgid "Select a network"
+msgstr ""
+
 #: shortStatus-connecting
 msgid "Connecting…"
 msgstr "Đang kết nối..."
@@ -316,9 +368,9 @@ msgstr "Hiện mật khẩu"
 msgid "Refresh"
 msgstr "Làm mới"
 
-#: noWifiFound
-msgid "No networks found"
-msgstr "Không tìm thấy mạng"
+#: noWifiFound2
+msgid "We could not find any wireless network"
+msgstr ""
 
 #: join
 #, fuzzy
@@ -374,6 +426,14 @@ msgstr "Thẻ SIM"
 msgid "Facebook"
 msgstr "Facebook"
 
+#: importLive
+msgid "Windows Live"
+msgstr ""
+
+#: importGmail
+msgid "Gmail"
+msgstr ""
+
 #: fb-checking
 msgid "… checking"
 msgstr "... kiểm tra"
@@ -400,8 +460,7 @@ msgstr ""
 #: about-your-rights-0
 msgid ""
 "{{brandShortName}} is built on free and open source software by a community "
-"of thousands from all over the world. There are a few things you should "
-"know:"
+"of thousands from all over the world. There are a few things you should know:"
 msgstr ""
 "{{branShortName}} là một phần mềm nguồn mở, được xây dựng bởi một cộng đồng "
 "hàng nghìn thành viên trên toàn thế giới. Có một vài điều bạn nên biết:"
@@ -691,6 +750,9 @@ msgstr "Địa chỉ email không đúng"
 msgid "Please go back and correct your entry."
 msgstr "Làm ơn quay lại và nhập nội dung của bạn"
 
+#~ msgid "No networks found"
+#~ msgstr "Không tìm thấy mạng"
+
 #~ msgid "Import contacts from"
 #~ msgstr "Nhập liên lạc từ"
 
@@ -746,33 +808,34 @@ msgstr "Làm ơn quay lại và nhập nội dung của bạn"
 #~ msgstr "{{imported}}/{{total}} bạn đã được thêm"
 
 #~ msgid ""
-#~ "{{brandShortName}} is made available to you under the terms of the Mozilla "
-#~ "Public License. This means you may use, copy and distribute "
-#~ "{{brandShortName}} to others. You are also welcome to modify the source code "
-#~ "of {{brandShortName}} as you want to meet your needs. The Mozilla Public "
-#~ "License also gives you the right to distribute your modified versions."
+#~ "{{brandShortName}} is made available to you under the terms of the "
+#~ "Mozilla Public License. This means you may use, copy and distribute "
+#~ "{{brandShortName}} to others. You are also welcome to modify the source "
+#~ "code of {{brandShortName}} as you want to meet your needs. The Mozilla "
+#~ "Public License also gives you the right to distribute your modified "
+#~ "versions."
 #~ msgstr ""
-#~ "{{brandShortName}} được cung cấp cho bạn theo các điều khoản của giấy phép "
-#~ "Mozilla Public License. Điều này có nghĩa bạn có thể sử dụng, sao chép và "
-#~ "phân phối {{brandShortName}} tời những người khác. Bạn cũng sẽ luôn được "
-#~ "chào đón để tùy chỉnh mã nguồn của {{brandShortName}} như bạn muốn để phù "
-#~ "hợp với yêu cầu của bạn. Giấy phép Mozilla Public License cũng cho bạn quyền "
-#~ "phân phối phiên bạn đã chỉnh sửa."
+#~ "{{brandShortName}} được cung cấp cho bạn theo các điều khoản của giấy "
+#~ "phép Mozilla Public License. Điều này có nghĩa bạn có thể sử dụng, sao "
+#~ "chép và phân phối {{brandShortName}} tời những người khác. Bạn cũng sẽ "
+#~ "luôn được chào đón để tùy chỉnh mã nguồn của {{brandShortName}} như bạn "
+#~ "muốn để phù hợp với yêu cầu của bạn. Giấy phép Mozilla Public License "
+#~ "cũng cho bạn quyền phân phối phiên bạn đã chỉnh sửa."
 
 #~ msgid ""
 #~ "Telemetry allows you to send Mozilla more detailed information about "
-#~ "performance, hardware, usage and customizations in your {{brandShortName}} "
-#~ "device. We use this information to make our products better, faster and more "
-#~ "responsive."
+#~ "performance, hardware, usage and customizations in your "
+#~ "{{brandShortName}} device. We use this information to make our products "
+#~ "better, faster and more responsive."
 #~ msgstr ""
 #~ "Đo lường từ xa cho phép bạn gửi Mozilla thêm nhiều thông tin chi tiết về "
 #~ "hiệu năng, phần cứng, cách sử dụng và tùy chỉnh trong thiết bị "
-#~ "{{brandShortName}} của bạn. Chúng tôi sử dụng thông tin này để làm sản phẩm "
-#~ "của chúng tôi tốt hơn, nhanh hơn và tương tác tốt hơn."
+#~ "{{brandShortName}} của bạn. Chúng tôi sử dụng thông tin này để làm sản "
+#~ "phẩm của chúng tôi tốt hơn, nhanh hơn và tương tác tốt hơn."
 
 #~ msgid ""
-#~ "I want to help make {{brandShortName}} faster and easier to use by sharing "
-#~ "information about my phone's performance."
+#~ "I want to help make {{brandShortName}} faster and easier to use by "
+#~ "sharing information about my phone's performance."
 #~ msgstr ""
 #~ "Tôi muốn giúp đỡ để cho {{brandShortName}} nhanh hơn và dễ dùng hơn bằng "
 #~ "việc chia sẻ thông tin về hiệu năng của chiếc điện thoại của mình"
@@ -795,7 +858,8 @@ msgstr "Làm ơn quay lại và nhập nội dung của bạn"
 #~ msgstr "Trượt xuống thanh trạng thái để xem thông báo và các công cụ."
 
 #~ msgid "The utility tray gives you quick access to notifications."
-#~ msgstr "Thanh công công cụ cho phép bạn nhanh chóng truy cập tới các thông báo."
+#~ msgstr ""
+#~ "Thanh công công cụ cho phép bạn nhanh chóng truy cập tới các thông báo."
 
 #~ msgid "See your accounts credit, phone and data use."
 #~ msgstr "Xem các tài khoản tín dụng, điện thoại và dữ liệu sử dụng của bạn."

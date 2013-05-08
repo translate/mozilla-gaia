@@ -1,9 +1,9 @@
-#. extracted from locales/en-US/apps/system/system.properties
+#. extracted from ./apps/system/system.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-09 00:56+0100\n"
+"POT-Creation-Date: 2013-05-08 10:22+0100\n"
 "PO-Revision-Date: 2013-03-02 11:27+0000\n"
 "Last-Translator: Hakuna <jackychun1393@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1362223665.0\n"
@@ -54,6 +54,10 @@ msgstr "{{operator}} (Roaming)"
 msgid "Emergency calls only"
 msgstr "Chỉ gọi khi khẩn cấp"
 
+#: emergencyCallsOnly-unknownSIMState
+msgid "(unknown SIM state)"
+msgstr ""
+
 #: emergencyCallsOnly-noSIM
 msgid "(no SIM)"
 msgstr "(Không có thẻ SIM)"
@@ -69,6 +73,14 @@ msgstr "(Nhập mã PUK là bắt buộc) "
 #: emergencyCallsOnly-networkLocked
 msgid "(network locked)"
 msgstr "(mạng đã bị khóa)"
+
+#: emergencyCallsOnly-serviceProviderLocked
+msgid "(service provider locked)"
+msgstr ""
+
+#: emergencyCallsOnly-corporateLocked
+msgid "(corporate locked)"
+msgstr ""
 
 #: enterPIN
 msgid "Enter PIN"
@@ -459,8 +471,8 @@ msgstr ""
 #: downloadUpdatesViaDataConnectionMessage
 msgid ""
 "Updates are downloaded via data connection when Wi-Fi is not available. When "
-"using data connection, phone calls may be blocked and additional charges "
-"may also apply."
+"using data connection, phone calls may be blocked and additional charges may "
+"also apply."
 msgstr ""
 
 #. # screenshots
@@ -727,6 +739,14 @@ msgstr "Cho phép chuyển tệp qua Bluetooth?"
 msgid "{{deviceName}} would like to transfer {{fileName}} ({{fileSize}})."
 msgstr "{{deviceName}} muốn gửi tệp {{fileName}} ({{fileSize}}byte)"
 
+#: notification-fileTransfer-title
+msgid "Receive file?"
+msgstr ""
+
+#: notification-fileTransfer-description
+msgid "File incoming from another device"
+msgstr ""
+
 #: byteUnit-B
 msgid "Bytes"
 msgstr "bytes"
@@ -800,29 +820,25 @@ msgstr "hoàn tất"
 msgid "failed"
 msgstr "thất bại"
 
-#: transferFinished-sendingCompletedTitle
-msgid "Bluetooth sending file complete"
-msgstr "Gửi tệp qua Bluetooth thành công"
+#: transferFinished-sentSuccessful-title
+msgid "File sent"
+msgstr ""
 
-#: transferFinished-receivedCompletedTitle
-msgid "Bluetooth received file ready to open"
-msgstr "Tệp nhận được đã sẵn sàng để mở"
+#: transferFinished-receivedSuccessful-title
+msgid "File received"
+msgstr ""
 
-#: transferFinished-sendingFailedTitle
-msgid "Bluetooth sending file failed"
-msgstr "Gửi tệp qua Bluetooth thất bại"
+#: transferFinished-sentFailed-title
+msgid "File could not be sent"
+msgstr ""
 
-#: transferFinished-receivedFailedTitle
-msgid "Bluetooth received a file it can not open"
-msgstr "Bluetooth đã nhận được một tệp mà không thể mở được"
+#: transferFinished-receivedFailed-title
+msgid "File could not be received"
+msgstr ""
 
-#: transferFinished-completedBody
-msgid "Transfer completed"
-msgstr "Chuyển dữ liệu thành công"
-
-#: transferFinished-failedBody
-msgid "Transfer failed"
-msgstr "Chuyển dữ liệu thất bại"
+#: unknown-file
+msgid "Unknown file"
+msgstr ""
 
 #: unknown-device
 msgid "Unknown device"
@@ -886,6 +902,16 @@ msgstr "Mã PUK"
 msgid "NCK code"
 msgstr "Mã PUK"
 
+#: cckCode
+#, fuzzy
+msgid "CCK code"
+msgstr "Mã PUK"
+
+#: spckCode
+#, fuzzy
+msgid "SPCK code"
+msgstr "Mã PUK"
+
 #: whatIsSimPin
 msgid "What is a SIM PIN?"
 msgstr "SIM PIN là gì?"
@@ -919,6 +945,16 @@ msgstr "Nhập mã PUK"
 #: nckTitle
 #, fuzzy
 msgid "Enter NCK code"
+msgstr "Nhập mã PUK"
+
+#: cckTitle
+#, fuzzy
+msgid "Enter CCK code"
+msgstr "Nhập mã PUK"
+
+#: spckTitle
+#, fuzzy
+msgid "Enter SPCK code"
 msgstr "Nhập mã PUK"
 
 #: newpinTitle
@@ -974,8 +1010,7 @@ msgstr "Thẻ SIM đã bị khóa."
 #: enterPukMsg
 msgid ""
 "You must enter the Personal Unlocking Key (PUK) code for the SIM card. Refer "
-"to your SIM card documentation or contact your carrier for more "
-"information."
+"to your SIM card documentation or contact your carrier for more information."
 msgstr ""
 "Bạn phải nhập Mã Mở Khóa Cá Nhân (PUK) cho thẻ SIM. Xem tài liệu thẻ SIM của "
 "bạn hoặc liên hệ tới nhà mạng để biết thêm thông tin."
@@ -1120,12 +1155,30 @@ msgstr "{{origin}} đang toàn màn hình"
 msgid "The network {{networkName}} was found. Join network?"
 msgstr ""
 
+#~ msgid "Bluetooth sending file complete"
+#~ msgstr "Gửi tệp qua Bluetooth thành công"
+
+#~ msgid "Bluetooth received file ready to open"
+#~ msgstr "Tệp nhận được đã sẵn sàng để mở"
+
+#~ msgid "Bluetooth sending file failed"
+#~ msgstr "Gửi tệp qua Bluetooth thất bại"
+
+#~ msgid "Bluetooth received a file it can not open"
+#~ msgstr "Bluetooth đã nhận được một tệp mà không thể mở được"
+
+#~ msgid "Transfer completed"
+#~ msgstr "Chuyển dữ liệu thành công"
+
+#~ msgid "Transfer failed"
+#~ msgstr "Chuyển dữ liệu thất bại"
+
 #~ msgid ""
 #~ "Wi-Fi unavailable. Updating over current connection will block incoming "
 #~ "calls, and may incur additional charges."
 #~ msgstr ""
-#~ "Wi-Fi hiện không có sẵn. Việc cập nhật qua kết nối hiện tại sẽ chặn cuộc gọi "
-#~ "đến, và có thể làm bạn phải chịu phí bổ sung."
+#~ "Wi-Fi hiện không có sẵn. Việc cập nhật qua kết nối hiện tại sẽ chặn cuộc "
+#~ "gọi đến, và có thể làm bạn phải chịu phí bổ sung."
 
 #~ msgid "Battery low"
 #~ msgstr "Pin yếu"
