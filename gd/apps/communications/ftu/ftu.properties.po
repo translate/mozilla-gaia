@@ -2,12 +2,12 @@
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Unlock Codes
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#. extracted from locales/en-US/apps/communications/ftu/ftu.properties
+#. extracted from ./apps/communications/ftu/ftu.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-10 05:58-0700\n"
+"POT-Creation-Date: 2013-05-08 10:22+0100\n"
 "PO-Revision-Date: 2013-04-18 23:13+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -31,12 +31,42 @@ msgstr "Cuir a-steach an còd PIN"
 msgid "Type your PIN code"
 msgstr "Cuir a-steach an còd PIN agad"
 
+#: type_nck
+#, fuzzy
+msgid "Type your NCK code"
+msgstr "Cuir a-steach an còd PIN agad"
+
+#: type_cck
+#, fuzzy
+msgid "Type your CCK code"
+msgstr "Cuir a-steach an còd PIN agad"
+
+#: type_spck
+#, fuzzy
+msgid "Type your SPCK code"
+msgstr "Cuir a-steach an còd PIN agad"
+
 #: send
 msgid "Send"
 msgstr "Cuir"
 
 #: pinValidation
 msgid "PIN must have between 4 and 8 characters."
+msgstr "Feumaidh am PIN a bhith eadar 4 is 8 àireamhan a dh'fhaid."
+
+#: nckValidation
+#, fuzzy
+msgid "NCK must have between 8 and 16 characters."
+msgstr "Feumaidh am PIN a bhith eadar 4 is 8 àireamhan a dh'fhaid."
+
+#: cckValidation
+#, fuzzy
+msgid "CCK must have between 8 and 16 characters."
+msgstr "Feumaidh am PIN a bhith eadar 4 is 8 àireamhan a dh'fhaid."
+
+#: spckValidation
+#, fuzzy
+msgid "SPCK must have between 8 and 16 characters."
 msgstr "Feumaidh am PIN a bhith eadar 4 is 8 àireamhan a dh'fhaid."
 
 #: pinErrorMsg
@@ -86,6 +116,21 @@ msgstr ""
 msgid "Enter PUK code"
 msgstr "Cuir a-steach an còd PUK"
 
+#: nckcode
+#, fuzzy
+msgid "Enter NCK code"
+msgstr "Cuir a-steach an còd PUK"
+
+#: cckcode
+#, fuzzy
+msgid "Enter CCK code"
+msgstr "Cuir a-steach an còd PUK"
+
+#: spckcode
+#, fuzzy
+msgid "Enter SPCK code"
+msgstr "Cuir a-steach an còd PUK"
+
 #: type_puk
 msgid "PUK code"
 msgstr "Còd PUK"
@@ -105,11 +150,12 @@ msgstr "Tha a' chairt SIM glaiste"
 #: pukError
 msgid ""
 "You must enter the Personal Unlocking Key (PUK) Code for the SIM card. Refer "
-"to your SIM card documentation or contact your carrier for more information."
+"to your SIM card documentation or contact your carrier for more "
+"information."
 msgstr ""
-"Feumaidh tu am Personal Unlocking Key (PUK) airson na cairt SIM a chur a-"
-"steach. Thoir sùil air an fhiosrachadh a thàinig leis a' chairt SIM agad no "
-"cuir fios gun ghiùlanair agad."
+"Feumaidh tu am Personal Unlocking Key (PUK) airson na cairt SIM a chur "
+"a-steach. Thoir sùil air an fhiosrachadh a thàinig leis a' chairt SIM agad "
+"no cuir fios gun ghiùlanair agad."
 
 #: pukErrorMsg
 msgid "The PUK was incorrect"
@@ -254,6 +300,14 @@ msgstr "Rabhadh"
 msgid "Wi-Fi"
 msgstr "WiFi"
 
+#: scanningNetworks
+msgid "Scanning for networks"
+msgstr ""
+
+#: selectNetwork
+msgid "Select a network"
+msgstr ""
+
 #: shortStatus-connecting
 msgid "Connecting…"
 msgstr "A' dèanamh ceangal…"
@@ -318,9 +372,9 @@ msgstr "Seall am facal-faire"
 msgid "Refresh"
 msgstr "Ath-nuadhaich"
 
-#: noWifiFound
-msgid "No networks found"
-msgstr "Cha deach lìonra sam bith a lorg"
+#: noWifiFound2
+msgid "We could not find any wireless network"
+msgstr ""
 
 #: join
 msgctxt "join"
@@ -375,6 +429,14 @@ msgstr "Cairt SIM"
 msgid "Facebook"
 msgstr "Facebook"
 
+#: importLive
+msgid "Windows Live"
+msgstr ""
+
+#: importGmail
+msgid "Gmail"
+msgstr ""
+
 #: fb-checking
 msgid "… checking"
 msgstr "… 'ga sgrùdadh"
@@ -403,7 +465,8 @@ msgstr ""
 #: about-your-rights-0
 msgid ""
 "{{brandShortName}} is built on free and open source software by a community "
-"of thousands from all over the world. There are a few things you should know:"
+"of thousands from all over the world. There are a few things you should "
+"know:"
 msgstr ""
 "Tha {{brandShortName}} stèidhichte air bathar-bog a tha saor an-asgaidh agus "
 "le còd fosgailte a chaidh a dhealbhadh leis na mìltean a dhaoine air feadh "
@@ -528,8 +591,8 @@ msgstr ""
 "Ma chleachdas tu {{brandShortName}}, bidh thu a' gabhail pàirt ann an "
 "coimhearsnachd eadar-nàiseanta a tha ag obair còmhla gus piseach a thoirt "
 "air an lìon. Ma tha thu ag iarraidh barrachd fiosrachaidh mu choimhearsnachd "
-"Mozilla, am bathar air fad againn no tachartasan faisg ort, cuir a-steach an "
-"seòladh puist-d agad gu h-ìosal."
+"Mozilla, am bathar air fad againn no tachartasan faisg ort, cuir a-steach "
+"an seòladh puist-d agad gu h-ìosal."
 
 #: collaborate
 msgid ""
@@ -686,8 +749,8 @@ msgid ""
 "from Settings or by entering {{url}} in any browser."
 msgstr ""
 "Rach air ais is ceangail ris an eadar-lìon. 'S urrainn dhut coimhead air an "
-"duilleag uaireigin eile cuideachd o na roghainnean no ma chuireas tu a-"
-"steach {{url}} ann am brabhsair sam bith."
+"duilleag uaireigin eile cuideachd o na roghainnean no ma chuireas tu "
+"a-steach {{url}} ann am brabhsair sam bith."
 
 #: OK
 msgid "OK"
@@ -713,6 +776,9 @@ msgstr "Chan e post-d dligheach a tha seo"
 #: invalid-email-dialog-text
 msgid "Please go back and correct your entry."
 msgstr "Rach air ais is cuir ceart e."
+
+#~ msgid "No networks found"
+#~ msgstr "Cha deach lìonra sam bith a lorg"
 
 #~ msgid "Import contacts from"
 #~ msgstr "Ion-phortaich luchd-aithne o"
