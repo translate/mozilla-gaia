@@ -9,18 +9,18 @@ do
 	log_info "Building: $lang"
 	if [ "$lang" == "templates" ]; then
 		# Update en-US
-		(cd build/locales/en-US; hg pull; hg update)
+		(cd $base_dir/build/locales/en-US; hg pull; hg update)
 		
 		# Make new template files
-		rm $(find templates -name "*.pot")
-		(cd build/locales/en-US; moz2po $verbosity --exclude=".hgtags" --exclude="*.diff" -P . $translation_dir/templates)
+		rm $(find $translation_dir/templates -name "*.pot")
+		(cd $base_dir/build/locales/en-US; moz2po $verbosity --exclude=".hgtags" --exclude="*.diff" -P . $translation_dir/templates)
 	else
 		polang=$(get_language_pootle $lang)
 		mozlang=$(get_language_upstream $lang)
 		# update against templates
 		pot2po $verbosity -t $translation_dir/$polang $translation_dir/templates $translation_dir/$polang
 		# new locale files
-		po2moz $verbosity --exclude="obsolete" -t build/locales/en-US $translation_dir/$polang build/locales/$mozlang
+		po2moz $verbosity --exclude="obsolete" -t $base_dir/build/locales/en-US $translation_dir/$polang $base_dir/build/locales/$mozlang
 	fi
 done
 
