@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
-"PO-Revision-Date: 2013-05-02 14:55+0000\n"
-"Last-Translator: Selim <selim@sum.lu>\n"
+"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"PO-Revision-Date: 2013-06-14 12:08+0000\n"
+"Last-Translator: cebeci88 <servet.cebeci@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1367506539.0\n"
+"X-POOTLE-MTIME: 1371211707.000000\n"
 
 #: ok
 msgid "OK"
@@ -56,7 +56,7 @@ msgstr "Yalnızca acil aramalar"
 
 #: emergencyCallsOnly-unknownSIMState
 msgid "(unknown SIM state)"
-msgstr ""
+msgstr "(bilinmeyen SIM durumu)"
 
 #: emergencyCallsOnly-noSIM
 msgid "(no SIM)"
@@ -76,7 +76,7 @@ msgstr "(şebeke kilitli)"
 
 #: emergencyCallsOnly-serviceProviderLocked
 msgid "(service provider locked)"
-msgstr ""
+msgstr "(servis sağlayıcı kilidi)"
 
 #: emergencyCallsOnly-corporateLocked
 msgid "(corporate locked)"
@@ -502,11 +502,6 @@ msgid "Not enough space on memory card"
 msgstr "Bellek kartında yeterli alan yok"
 
 #. # lock screen
-#. # Note: the space between "security" and "code" is non-break space in Unicode
-#: enter-security-code
-msgid "Enter security code"
-msgstr "Güvenlik kodunu girin"
-
 #: emergency-call-button
 msgctxt "emergency-call-button"
 msgid "Emergency Call"
@@ -684,9 +679,10 @@ msgstr ""
 #. # Localization note (crash-reports-description-3-*): These strings are a paragraph, with a "privacy policy"
 #. # link in the middle. Include trailing spaces as needed.
 #: crash-reports-description-3-start
+#, fuzzy
 msgid ""
 "We use crash reports to try to fix problems and improve our products. We "
-"handle your information as we describe in our "
+"handle your information as we describe in our"
 msgstr ""
 "Çökme raporlarını sorunları düzeltmek ve ürünlerimizi geliştirmek için "
 "kullanıyoruz. Bilgilerinizi "
@@ -744,11 +740,11 @@ msgstr ""
 
 #: notification-fileTransfer-title
 msgid "Receive file?"
-msgstr ""
+msgstr "Dosya alınsın mı?"
 
 #: notification-fileTransfer-description
 msgid "File incoming from another device"
-msgstr ""
+msgstr "Başka bir aygıttan dosya alınıyor"
 
 #: byteUnit-B
 msgid "Bytes"
@@ -825,23 +821,23 @@ msgstr "başarısız oldu"
 
 #: transferFinished-sentSuccessful-title
 msgid "File sent"
-msgstr ""
+msgstr "Dosya gönderildi"
 
 #: transferFinished-receivedSuccessful-title
 msgid "File received"
-msgstr ""
+msgstr "Dosya alındı"
 
 #: transferFinished-sentFailed-title
 msgid "File could not be sent"
-msgstr ""
+msgstr "Dosya gönderilemedi"
 
 #: transferFinished-receivedFailed-title
 msgid "File could not be received"
-msgstr ""
+msgstr "Dosya alınamadı"
 
 #: unknown-file
 msgid "Unknown file"
-msgstr ""
+msgstr "Bilinmeyen dosya"
 
 #: unknown-device
 msgid "Unknown device"
@@ -905,14 +901,12 @@ msgid "NCK code"
 msgstr "NCK kodu"
 
 #: cckCode
-#, fuzzy
 msgid "CCK code"
-msgstr "NCK kodu"
+msgstr "CCK kodu"
 
 #: spckCode
-#, fuzzy
 msgid "SPCK code"
-msgstr "PUK kodu"
+msgstr "SPCK kodu"
 
 #: whatIsSimPin
 msgid "What is a SIM PIN?"
@@ -950,51 +944,93 @@ msgid "Enter NCK code"
 msgstr "NCK kodunu girin"
 
 #: cckTitle
-#, fuzzy
 msgid "Enter CCK code"
-msgstr "NCK kodunu girin"
+msgstr "CCK kodunu girin"
 
 #: spckTitle
-#, fuzzy
 msgid "Enter SPCK code"
-msgstr "PUK kodunu girin"
+msgstr "SPCK kodunu girin"
 
 #: newpinTitle
 msgid "New PIN"
 msgstr "Yeni PIN"
 
+#: inputCodeRetriesLeft
+#, fuzzy
+msgctxt "inputCodeRetriesLeft"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: inputCodeRetriesLeft[one]
+msgid "last try."
+msgstr "son hakkınız."
+
+#: inputCodeRetriesLeft[two]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[two]"
+msgid "{{n}} tries left."
+msgstr "{{n}} deneme kaldı."
+
+#: inputCodeRetriesLeft[few]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[few]"
+msgid "{{n}} tries left."
+msgstr "{{n}} deneme kaldı."
+
+#: inputCodeRetriesLeft[many]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[many]"
+msgid "{{n}} tries left."
+msgstr "{{n}} deneme kaldı."
+
+#: inputCodeRetriesLeft[other]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[other]"
+msgid "{{n}} tries left."
+msgstr "{{n}} deneme kaldı."
+
 #: pinErrorMsg
 msgid "The PIN was incorrect."
 msgstr "PIN yanlış."
 
-#: pinAttemptMsg
-msgctxt "pinAttemptMsg"
+#: pinAttemptMsg2
+#, fuzzy
+msgctxt "pinAttemptMsg2"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: pinAttemptMsg[one]
-msgid "one last try."
-msgstr "son deneme."
+#: pinAttemptMsg2[one]
+msgid ""
+"You have one try left to enter the correct code before locking the SIM card."
+msgstr ""
 
-#: pinAttemptMsg[two]
-msgctxt "pinAttemptMsg[two]"
-msgid "{{n}} tries left."
-msgstr "{{n}} deneme kaldı."
+#: pinAttemptMsg2[two]
+msgctxt "pinAttemptMsg2[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
-#: pinAttemptMsg[few]
-msgctxt "pinAttemptMsg[few]"
-msgid "{{n}} tries left."
-msgstr "{{n}} deneme kaldı."
+#: pinAttemptMsg2[few]
+msgctxt "pinAttemptMsg2[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
-#: pinAttemptMsg[many]
-msgctxt "pinAttemptMsg[many]"
-msgid "{{n}} tries left."
-msgstr "{{n}} deneme kaldı."
+#: pinAttemptMsg2[many]
+msgctxt "pinAttemptMsg2[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
-#: pinAttemptMsg[other]
-msgctxt "pinAttemptMsg[other]"
-msgid "{{n}} tries left."
-msgstr "{{n}} deneme kaldı."
+#: pinAttemptMsg2[other]
+msgctxt "pinAttemptMsg2[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
 #: pinLastChanceMsg
 msgid ""
@@ -1021,7 +1057,62 @@ msgstr ""
 msgid "The PUK code is incorrect."
 msgstr "PUK kodu yanlış."
 
-#: pukAttemptMsg
+#: pukAttemptMsg2
+#, fuzzy
+msgctxt "pukAttemptMsg2"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: pukAttemptMsg2[one]
+#, fuzzy
+msgid ""
+"You have one try left to enter the correct code before this SIM card will be "
+"permanently unusable. Refer to your SIM card documentation or contact your "
+"carrier for more information."
+msgstr ""
+"Bu SIM kart kalıcı olarak kullanılamaz hâle gelmeden önce doğru kodu "
+"girmeniz için {{n}} hakkınız kaldı. Daha fazla bilgi için SIM kartınızın "
+"belgelerine başvurun veya operatörünüzle iletişime geçin."
+
+#: pukAttemptMsg2[two]
+#, fuzzy
+msgctxt "pukAttemptMsg2[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Bu SIM kart kalıcı olarak kullanılamaz hâle gelmeden önce doğru kodu "
+"girmeniz için {{n}} hakkınız kaldı. Daha fazla bilgi için SIM kartınızın "
+"belgelerine başvurun veya operatörünüzle iletişime geçin."
+
+#: pukAttemptMsg2[few]
+#, fuzzy
+msgctxt "pukAttemptMsg2[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Bu SIM kart kalıcı olarak kullanılamaz hâle gelmeden önce doğru kodu "
+"girmeniz için {{n}} hakkınız kaldı. Daha fazla bilgi için SIM kartınızın "
+"belgelerine başvurun veya operatörünüzle iletişime geçin."
+
+#: pukAttemptMsg2[many]
+#, fuzzy
+msgctxt "pukAttemptMsg2[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Bu SIM kart kalıcı olarak kullanılamaz hâle gelmeden önce doğru kodu "
+"girmeniz için {{n}} hakkınız kaldı. Daha fazla bilgi için SIM kartınızın "
+"belgelerine başvurun veya operatörünüzle iletişime geçin."
+
+#: pukAttemptMsg2[other]
+#, fuzzy
+msgctxt "pukAttemptMsg2[other]"
 msgid ""
 "You have {{n}} tries left to enter the correct code before this SIM card "
 "will be permanently unusable. Refer to your SIM card documentation or "
@@ -1057,7 +1148,62 @@ msgstr "PIN'ler uyuşmuyor."
 msgid "The NCK code is incorrect."
 msgstr "NCK kodu yanlış."
 
-#: nckAttemptMsg
+#: nckAttemptMsg2
+#, fuzzy
+msgctxt "nckAttemptMsg2"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: nckAttemptMsg2[one]
+#, fuzzy
+msgid ""
+"Network depersonalization request failure. You have one try left to enter "
+"the correct code. Refer to your device documentation or contact your carrier "
+"for more information."
+msgstr ""
+"Şebeke kişiselleştirmesini kaldırma isteği başarısız oldu. Doğru kodu girmek "
+"için {{n}} hakkınız kaldı. Daha fazla bilgi için aygıt belgelerinize bakın "
+"veya operatörünüzle iletişime geçin."
+
+#: nckAttemptMsg2[two]
+#, fuzzy
+msgctxt "nckAttemptMsg2[two]"
+msgid ""
+"Network depersonalization request failure. You have {{n}} tries left to "
+"enter the correct code. Refer to your device documentation or contact your "
+"carrier for more information."
+msgstr ""
+"Şebeke kişiselleştirmesini kaldırma isteği başarısız oldu. Doğru kodu girmek "
+"için {{n}} hakkınız kaldı. Daha fazla bilgi için aygıt belgelerinize bakın "
+"veya operatörünüzle iletişime geçin."
+
+#: nckAttemptMsg2[few]
+#, fuzzy
+msgctxt "nckAttemptMsg2[few]"
+msgid ""
+"Network depersonalization request failure. You have {{n}} tries left to "
+"enter the correct code. Refer to your device documentation or contact your "
+"carrier for more information."
+msgstr ""
+"Şebeke kişiselleştirmesini kaldırma isteği başarısız oldu. Doğru kodu girmek "
+"için {{n}} hakkınız kaldı. Daha fazla bilgi için aygıt belgelerinize bakın "
+"veya operatörünüzle iletişime geçin."
+
+#: nckAttemptMsg2[many]
+#, fuzzy
+msgctxt "nckAttemptMsg2[many]"
+msgid ""
+"Network depersonalization request failure. You have {{n}} tries left to "
+"enter the correct code. Refer to your device documentation or contact your "
+"carrier for more information."
+msgstr ""
+"Şebeke kişiselleştirmesini kaldırma isteği başarısız oldu. Doğru kodu girmek "
+"için {{n}} hakkınız kaldı. Daha fazla bilgi için aygıt belgelerinize bakın "
+"veya operatörünüzle iletişime geçin."
+
+#: nckAttemptMsg2[other]
+#, fuzzy
+msgctxt "nckAttemptMsg2[other]"
 msgid ""
 "Network depersonalization request failure. You have {{n}} tries left to "
 "enter the correct code. Refer to your device documentation or contact your "
@@ -1151,6 +1297,93 @@ msgstr "{{origin}} şimdi tam ekran."
 #: captive-wifi-available
 msgid "The network {{networkName}} was found. Join network?"
 msgstr "{{networkName}} ağı bulundu. Ağa katılınsın mı?"
+
+#. # [CE] Volume warning toast
+#: ceWarningtitle
+msgid "Volume warning"
+msgstr "Ses düzeyi uyarısı"
+
+#: ceWarningcontent
+msgid ""
+"To prevent possible hearing damage, do not listen at high volume levels for "
+"long periods."
+msgstr ""
+
+#. #power saving mode
+#: notification-powersaving-mode-on-title
+msgid "Power Saving Mode"
+msgstr "Güç Tasarrufu Modu"
+
+#: notification-powersaving-mode-on-description
+msgid "Power saving mode is on."
+msgstr "Güç tasarrufu modu açık."
+
+#. # Low device storage
+#: low-device-storage
+msgid "Device space low.\n"
+msgstr ""
+
+#. # LOCALIZATION NOTE {{value}} is the amount of remaining free space expressed
+#. # in the corresponding unit ({{unit}}), which is one of the byteUnit-* strings
+#. # of this same file.
+#: free-space
+msgid "{[ plural(value) ]}"
+msgstr "{[ plural(value) ]}"
+
+#: free-space[zero]
+msgid "No remaining free space."
+msgstr "Boş alan kalmadı."
+
+#: free-space[one]
+msgctxt "free-space[one]"
+msgid "Less than {{value}} {{unit}} remaining."
+msgstr ""
+
+#: free-space[two]
+msgctxt "free-space[two]"
+msgid "Less than {{value}} {{unit}} remaining."
+msgstr ""
+
+#: free-space[few]
+msgctxt "free-space[few]"
+msgid "Less than {{value}} {{unit}} remaining."
+msgstr ""
+
+#: free-space[many]
+msgctxt "free-space[many]"
+msgid "Less than {{value}} {{unit}} remaining."
+msgstr ""
+
+#: free-space[other]
+msgctxt "free-space[other]"
+msgid "Less than {{value}} {{unit}} remaining."
+msgstr ""
+
+#: unknown-free-space
+msgid "Unknown remaining space."
+msgstr ""
+
+#~ msgid "Enter security code"
+#~ msgstr "Güvenlik kodunu girin"
+
+#~ msgctxt "pinAttemptMsg"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgid "one last try."
+#~ msgstr "son deneme."
+
+#~ msgctxt "pinAttemptMsg[few]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} deneme kaldı."
+
+#~ msgctxt "pinAttemptMsg[many]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} deneme kaldı."
+
+#~ msgctxt "pinAttemptMsg[other]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} deneme kaldı."
 
 #~ msgid "Bluetooth sending file complete"
 #~ msgstr "Bluetooth dosya gönderimi tamamlandı"

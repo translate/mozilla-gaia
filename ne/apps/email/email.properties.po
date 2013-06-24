@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
-"PO-Revision-Date: 2013-05-26 16:08+0000\n"
+"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"PO-Revision-Date: 2013-06-03 21:48+0000\n"
 "Last-Translator: Benjamin <benpokharel@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ne\n"
@@ -12,10 +12,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1369584501.0\n"
+"X-POOTLE-MTIME: 1370296103.000000\n"
 
 #: setup-app-name-header
 msgid "Mail"
@@ -186,6 +186,11 @@ msgstr ""
 #: setup-error-server-maintenance
 msgid "The server \"{{server}}\" is offline for maintenance. Try again later."
 msgstr "यस सरभर \"{{server}}\" सुधार्नका लागि अफलाइन छ | पछि पुन प्रयास गर्नुहोस् |"
+
+#. # The error when the user trying to register a duplicate account
+#: setup-error-account-already-exists
+msgid "This account is already configured."
+msgstr "यो खाता पाहिले नै कन्फिगर छ।"
 
 #: setup-manual-config2
 msgctxt "setup-manual-config2"
@@ -575,6 +580,25 @@ msgstr "इमेल पठाउँदै"
 msgid "Sending email failed"
 msgstr "इमेल पठाउन असफल भयो"
 
+#: composer-attachment-large
+msgid "Attachment too large"
+msgstr "संलग्न धेरै ठुलो भयो"
+
+#: composer-attachments-large
+msgid "Attachments too large"
+msgstr "संलग्नहरु धेरै ठूला भए"
+
+#: compose-attchment-size-exceeded
+msgid "The selected attachment is too large to send with this message."
+msgstr "चयन गरिएको संलग्न यस सन्देशमा पठाउन धेरै ठूलो छ।"
+
+#: compose-attchments-size-exceeded
+msgid ""
+"The selected attachments are too large to send with this message. Try "
+"selecting fewer files."
+msgstr ""
+"चयन गरिएका संलग्नहरु यस सन्देशमा पठाउन धेरै ठूला छन्। कम फाइलहरु चयन गर्न खोज्नुहोस्।"
+
 #: dialog-button-ok
 msgid "OK"
 msgstr "ठीक छ"
@@ -619,6 +643,10 @@ msgstr "मेट्नुहोस्"
 #: message-edit-delete-confirm
 msgid "Delete email message?"
 msgstr "इमेल सन्देश मेट्नुहुन्छ?"
+
+#: message-send-attachment-disabled-confirm
+msgid "Attachments can not be forwarded."
+msgstr "संलग्नहरु फरवार्ड गर्न साकिदैन।"
 
 #: message-multiedit-header
 msgctxt "message-multiedit-header"
@@ -1082,6 +1110,38 @@ msgstr "पाठ हटाउनुहोस्"
 #: confirm-dialog-title
 msgid "Confirmation"
 msgstr "पुष्टि गर्नुहोस्"
+
+#. # new-emails refers to the text shown on a notification that users
+#. # get when they receive new, unread email. The ui component that utilizes
+#. # this lives in apps/email/js/message_list_topbar.js.
+#: new-emails
+msgctxt "new-emails"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: new-emails[one]
+msgid "1 New Email"
+msgstr "१ नयाँ इमेल"
+
+#: new-emails[two]
+msgctxt "new-emails[two]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} वटा नयाँ इमेलहरु"
+
+#: new-emails[few]
+msgctxt "new-emails[few]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} वटा नयाँ इमेलहरु"
+
+#: new-emails[many]
+msgctxt "new-emails[many]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} वटा नयाँ इमेलहरु"
+
+#: new-emails[other]
+msgctxt "new-emails[other]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} वटा नयाँ इमेलहरु"
 
 #~ msgid "Please wait while your account is set up"
 #~ msgstr "कृपया प्रतिक्षा गर्नुहोस् तपाईको खाता स्थापना हुदैछ"

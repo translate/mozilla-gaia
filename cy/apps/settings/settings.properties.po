@@ -1,10 +1,10 @@
-#. extracted from locales/en-US/apps/settings/settings.properties
+#. extracted from ./apps/settings/settings.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:06+0100\n"
-"PO-Revision-Date: 2013-05-09 19:50+0000\n"
+"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"PO-Revision-Date: 2013-06-18 13:02+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: cy\n"
@@ -12,10 +12,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Pootle 2.5.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1368129028.0\n"
+"X-POOTLE-MTIME: 1371560568.000000\n"
 
 #: settings
 msgid "Settings"
@@ -101,9 +101,9 @@ msgstr "Rhwydwaith a Chysylltu"
 msgid "Airplane mode"
 msgstr "Modd awyren"
 
-#: gps
-msgid "GPS"
-msgstr "GPS"
+#: geolocation
+msgid "Geolocation"
+msgstr "Geoleoliad"
 
 #. # Connectivity :: Wi-Fi
 #: wifi
@@ -558,9 +558,21 @@ msgstr "Gosodiadau data"
 msgid "A-GPS settings"
 msgstr "Gosodiadau A-GPS"
 
-#: mmsSettings
-msgid "MMS settings"
-msgstr "Gosodiadau MMS"
+#: messageSettings
+msgid "Message settings"
+msgstr "Gosodiadau Negeseuon"
+
+#: apnSettings
+msgid "APN settings"
+msgstr "Gosodiadau APN"
+
+#: text-message-confirmation
+msgid "Text message confirmation"
+msgstr "Cadarnhad neges testun"
+
+#: mmsTitle
+msgid "Multimedia messaging (MMS)"
+msgstr "Negesu Amlgyfrwng (MMS)"
 
 #: mmsport
 msgid "MMS port"
@@ -573,6 +585,34 @@ msgstr "Dirprwy MMS"
 #: mmsc
 msgid "MMSC"
 msgstr "MMSC"
+
+#: auto-retrieve
+msgid "Auto retrieve"
+msgstr "Adalw awtomatig"
+
+#: auto-retrieve-details
+msgid "Automatically retieve messages"
+msgstr "Adalw negeseuon yn awtomatig"
+
+#: manual-retrieve
+msgid "Off"
+msgstr "Diffodd"
+
+#: auto-roaming-retrieve
+msgid "On with roaming"
+msgstr "Ymlaen gyda chrwydro"
+
+#: auto-no-roaming-retrieve
+msgid "On without roaming"
+msgstr "Ymlaen heb grwydro"
+
+#: delivery-reports
+msgid "Delivery reports"
+msgstr "Adroddiadau trosglwyddo"
+
+#: delivery-reports-details
+msgid "Request notication of delivery for each text message sent"
+msgstr "Gofyn am hysbysiad trosglwyddo pob neges testun anfonwyd"
 
 #: autoConfigure
 msgid "Auto-configure"
@@ -613,6 +653,28 @@ msgid ""
 msgstr ""
 "Yn ddibynnol ar eich cytundeb gwasanaeth, gall gostau ychwanegol gael eu "
 "gosod am ddata pan fyddwch mewn ardal crwydro."
+
+#: state-unknown
+msgid "Unknown state"
+msgstr "Cyflwr anhysbys"
+
+#: state-available
+msgid "Available"
+msgstr "Ar gael"
+
+#: state-connected
+msgctxt "state-connected"
+msgid "Connected"
+msgstr "Cysylltwyd"
+
+#: state-current
+msgctxt "state-current"
+msgid "Connected"
+msgstr "Cysylltwyd"
+
+#: state-forbidden
+msgid "Forbidden"
+msgstr "Gwaharddedig"
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
@@ -1297,8 +1359,8 @@ msgid "Create"
 msgstr "Creu"
 
 #: create-passcode
-msgid "Create a passcode"
-msgstr "Creu cyfringod"
+msgid "Create a Passcode"
+msgstr "Creu Cyfringod"
 
 #: enter-passcode
 msgid "Enter passcode"
@@ -1325,8 +1387,8 @@ msgid "Passcode"
 msgstr "Cyfringod"
 
 #: confirm-passcode
-msgid "Confirm passcode"
-msgstr "Cadarnhau cyfringod"
+msgid "Confirm Passcode"
+msgstr "Cadarnhau Cyfringod"
 
 #: immediately
 msgid "Immediately"
@@ -1436,34 +1498,77 @@ msgstr "PIN Newydd"
 msgid "The PIN was incorrect."
 msgstr "Mae'r PIN yn anghywir."
 
-#: pinAttemptMsg2
-msgctxt "pinAttemptMsg2"
+#: inputCodeRetriesLeft
+msgctxt "inputCodeRetriesLeft"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: pinAttemptMsg2[one]
-msgid "Last chance."
-msgstr "Cyfle olaf."
+#: inputCodeRetriesLeft[one]
+msgid "last try."
+msgstr "cais olaf."
 
-#: pinAttemptMsg2[two]
-msgctxt "pinAttemptMsg2[two]"
+#: inputCodeRetriesLeft[two]
+msgctxt "inputCodeRetriesLeft[two]"
 msgid "{{n}} tries left."
 msgstr "{{n}} tro ar ôl."
 
-#: pinAttemptMsg2[few]
-msgctxt "pinAttemptMsg2[few]"
+#: inputCodeRetriesLeft[few]
+msgctxt "inputCodeRetriesLeft[few]"
 msgid "{{n}} tries left."
 msgstr "{{n}} tro ar ôl."
 
-#: pinAttemptMsg2[many]
-msgctxt "pinAttemptMsg2[many]"
+#: inputCodeRetriesLeft[many]
+msgctxt "inputCodeRetriesLeft[many]"
 msgid "{{n}} tries left."
 msgstr "{{n}} tro ar ôl."
 
-#: pinAttemptMsg2[other]
-msgctxt "pinAttemptMsg2[other]"
+#: inputCodeRetriesLeft[other]
+msgctxt "inputCodeRetriesLeft[other]"
 msgid "{{n}} tries left."
 msgstr "{{n}} tro ar ôl."
+
+#: pinAttemptMsg3
+msgctxt "pinAttemptMsg3"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: pinAttemptMsg3[one]
+msgid ""
+"You have one try left to enter the correct code before locking the SIM card."
+msgstr ""
+"Dim ond un cynnig sydd ar ôl i gyflwyno'r cod cywir cyn cloi'r cerdyn SIM."
+
+#: pinAttemptMsg3[two]
+msgctxt "pinAttemptMsg3[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+"Dim ond {{n}} cynnig sydd ar ôl i gyflwyno'r cod cywir cyn cloi'r cerdyn SIM."
+
+#: pinAttemptMsg3[few]
+msgctxt "pinAttemptMsg3[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+"Dim ond {{n}} cynnig sydd ar ôl i gyflwyno'r cod cywir cyn cloi'r cerdyn SIM."
+
+#: pinAttemptMsg3[many]
+msgctxt "pinAttemptMsg3[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+"Dim ond {{n}} cynnig sydd ar ôl i gyflwyno'r cod cywir cyn cloi'r cerdyn SIM."
+
+#: pinAttemptMsg3[other]
+msgctxt "pinAttemptMsg3[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+"Dim ond {{n}} cynnig sydd ar ôl i gyflwyno'r cod cywir cyn cloi'r cerdyn SIM."
 
 #: pinLastChanceMsg
 msgid ""
@@ -1490,7 +1595,56 @@ msgstr ""
 msgid "The PUK code is incorrect."
 msgstr "Mae'r cod PUK yn anghywir."
 
-#: pukAttemptMsg2
+#: pukAttemptMsg3
+msgctxt "pukAttemptMsg3"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: pukAttemptMsg3[one]
+msgid ""
+"You have one try left to enter the correct code before this SIM card will be "
+"permanently unusable. Refer to your SIM card documentation or contact your "
+"carrier for more information."
+msgstr ""
+"Mae gennych un tro ar ôl i gynnig y cod cywir cyn bydd y SIM y cael ei atal "
+"yn barhaol. Darllenwch y wybodaeth ddaeth gyda'r cerdyn SIM neu gysylltu "
+"â'ch darparwr am wybodaeth bellach."
+
+#: pukAttemptMsg3[two]
+msgctxt "pukAttemptMsg3[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Mae gennych {{n}} tro ar ôl i gynnig y cod cywir cyn bydd y SIM y cael ei "
+"atal yn barhaol. Darllenwch y wybodaeth ddaeth gyda'r cerdyn SIM neu "
+"gysylltu â'ch darparwr am wybodaeth bellach."
+
+#: pukAttemptMsg3[few]
+msgctxt "pukAttemptMsg3[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Mae gennych {{n}} tro ar ôl i gynnig y cod cywir cyn bydd y SIM y cael ei "
+"atal yn barhaol. Darllenwch y wybodaeth ddaeth gyda'r cerdyn SIM neu "
+"gysylltu â'ch darparwr am wybodaeth bellach."
+
+#: pukAttemptMsg3[many]
+msgctxt "pukAttemptMsg3[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Mae gennych {{n}} tro ar ôl i gynnig y cod cywir cyn bydd y SIM y cael ei "
+"atal yn barhaol. Darllenwch y wybodaeth ddaeth gyda'r cerdyn SIM neu "
+"gysylltu â'ch darparwr am wybodaeth bellach."
+
+#: pukAttemptMsg3[other]
+msgctxt "pukAttemptMsg3[other]"
 msgid ""
 "You have {{n}} tries left to enter the correct code before this SIM card "
 "will be permanently unusable. Refer to your SIM card documentation or "
@@ -1564,15 +1718,220 @@ msgstr ""
 "cartiau siopa, gwybodaeth lleoliad na gwybodaeth mewngofnodi."
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#. # Storage
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#: storage
+msgid "Storage"
+msgstr "Storfa"
+
+#: enableUSBStorage
+msgid "Enable USB storage"
+msgstr "Galluogi storfa USB"
+
+#. # Storage :: Application storage
+#: deviceStorage
+msgid "Device storage"
+msgstr "Storfa dyfais"
+
+#: usbMassStorage
+msgid "USB mass storage"
+msgstr "Storfa más USB"
+
+#: umsUnplugToDisable
+msgid "Unplug USB cable to disable"
+msgstr "Datblygio cebl USB i'w analluogi"
+
+#: appStorage
+msgid "Application storage"
+msgstr "Storfa rhaglen"
+
+#: byteUnit-B
+msgid "B"
+msgstr "B"
+
+#: byteUnit-KB
+msgid "KB"
+msgstr "KB"
+
+#: byteUnit-MB
+msgid "MB"
+msgstr "MB"
+
+#: byteUnit-GB
+msgid "GB"
+msgstr "GB"
+
+#: byteUnit-TB
+msgid "TB"
+msgstr "TB"
+
+#: storageSize
+msgid "{{size}} {{unit}}"
+msgstr "{{size}} {{unit}}"
+
+#: availableSize
+msgid "{[ plural(size) ]}"
+msgstr "{[ plural(size) ]}"
+
+#: availableSize[zero]
+msgctxt "availableSize[zero]"
+msgid "{{size}} {{unit}} available"
+msgstr "{{size}} {{unit}} ar gael"
+
+#: availableSize[one]
+msgctxt "availableSize[one]"
+msgid "{{size}} {{unit}} available"
+msgstr "{{size}} {{unit}} ar gael"
+
+#: availableSize[two]
+msgctxt "availableSize[two]"
+msgid "{{size}} {{unit}} available"
+msgstr "{{size}} {{unit}} ar gael"
+
+#: availableSize[few]
+msgctxt "availableSize[few]"
+msgid "{{size}} {{unit}} available"
+msgstr "{{size}} {{unit}} ar gael"
+
+#: availableSize[many]
+msgctxt "availableSize[many]"
+msgid "{{size}} {{unit}} available"
+msgstr "{{size}} {{unit}} ar gael"
+
+#: availableSize[other]
+msgctxt "availableSize[other]"
+msgid "{{size}} {{unit}} available"
+msgstr "{{size}} {{unit}} ar gael"
+
+#: apps-total-space
+msgid "Total space"
+msgstr "Cyfanswm gofod"
+
+#: apps-used-space
+msgid "Used"
+msgstr "Defnyddiwyd"
+
+#: apps-free-space
+msgid "Left"
+msgstr "Ar gael"
+
+#: media-storage-details
+msgid ""
+"Photos, videos and music are stored on the SD card. See media storage for "
+"details."
+msgstr ""
+"Mae lluniau, fideos, a cherddoriaeth yn cael eu cadw ar y cerdyn SD. Gw. "
+"storio cyfrwng am fanylion."
+
+#: ums-shared-volumes
+msgid "{{list}} shared"
+msgstr "Rhannu {{list}}"
+
+#. # Storage :: Media storage
+#: mediaStorage
+msgid "Media storage"
+msgstr "Storio cyfrwng"
+
+#: internalStorage
+msgctxt "internalStorage"
+msgid "Internal Storage"
+msgstr "Storio Mewnol"
+
+#: storage-name-0
+msgctxt "storage-name-0"
+msgid "Internal Storage"
+msgstr "Storio Mewnol"
+
+#: storage-name-1
+msgid "SD Card Storage"
+msgstr "Storfa Cerdyn SD"
+
+#: storage-name-2
+msgid "SD Card Storage 2"
+msgstr "Storfa Cerdyn SD 2"
+
+#: short-storage-name-0
+msgid "Internal"
+msgstr "Mewnol"
+
+#: short-storage-name-1
+msgid "SD Card"
+msgstr "Cerdyn SD"
+
+#: short-storage-name-2
+msgid "SD Card 2"
+msgstr "Cerdyn SD 2"
+
+#: music-space
+msgid "Music"
+msgstr "Cerddoriaeth"
+
+#: pictures-space
+msgid "Pictures"
+msgstr "Lluniau"
+
+#: videos-space
+msgid "Movies"
+msgstr "Ffilmiau"
+
+#: left-space
+msgctxt "left-space"
+msgid "Space left"
+msgstr "Lle ar ôl"
+
+#: free-space
+msgctxt "free-space"
+msgid "Space left"
+msgstr "Lle ar ôl"
+
+#: size-not-available
+msgid "Not available"
+msgstr "Dim ar gael"
+
+#: no-storage
+msgid "No storage found"
+msgstr "Heb ganfod storfa"
+
+#: advanced
+msgid "Advanced"
+msgstr "Uwch"
+
+#: turn-on-ums-confirm
+msgid ""
+"Turning on Enable USB storage allows another computer or device connected "
+"using USB to access files on this phone."
+msgstr ""
+"Mae cychwyn Galluogi storio ar USB yn caniatáu i gyfrifiadur arall neu "
+"ddyfais wedi ei gysylltu drwy USB i gael mynediad i ffeiliau ar y ffôn."
+
+#: default-media-location
+msgid "Default media location"
+msgstr "Lleoliad cyfryngau arferol"
+
+#: default-media-location-msg
+msgid "Choose where photos, videos, music and downloads are stored by default."
+msgstr "Dewiswch lle i gadw lluniau, fideos, cerddoriaeth a llwythi fel arfer."
+
+#: change-default-location-confirm
+msgid ""
+"Changing the default media storage volume will effect where photos, videos, "
+"downloads and other media will be saved to by default. Existing data will "
+"remain in its current location."
+msgstr ""
+"Bydd newid y man cadw cyfrwng arferol yn effeithio lle mae lluniau, fideos, "
+"llwythi a chyfrwng eraill yn cael eu cadw fel arfer. Bydd data cyfredol yn "
+"aros lle y mae."
+
+#: share-using-usb
+msgid "Share using USB"
+msgstr "Rhannu drwy USB"
+
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Device
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #: device
 msgid "Device"
 msgstr "Dyfais"
-
-#: storage
-msgid "Storage"
-msgstr "Storfa"
 
 #: help
 msgctxt "help"
@@ -1817,7 +2176,7 @@ msgid ""
 "publish the feedback on its websites, and to distribute the feedback."
 msgstr ""
 "Mae rhai nodweddion o fewn {{brandShortName}}, megis yr Adroddwr Chwalfa yn "
-"rhoi caniatâd i chi roi adborth i Mozilla. Drwy ddewis i rannu adborth, "
+"rhoi caniatâd i chi gyflwyno adborth i Mozilla. Drwy ddewis i rannu adborth, "
 "rydych yn rhoi hawl i Mozilla i ddefnyddio adborth i wella ei gynnyrch, "
 "cyhoeddi'r adborth ar ei wefannau ac i ddosbarthu'r adborth."
 
@@ -1896,134 +2255,6 @@ msgstr "Cychwyn defnydd cyntaf"
 msgid "No first time use app found"
 msgstr "Heb ganfod apiau tro cyntaf"
 
-#. # Device :: Device storage
-#: deviceStorage
-msgid "Device storage"
-msgstr "Storfa dyfais"
-
-#: usbMassStorage
-msgid "USB mass storage"
-msgstr "Storfa más USB"
-
-#: umsUnplugToDisable
-msgid "Unplug USB cable to disable"
-msgstr "Datblygio cebl USB i'w analluogi"
-
-#: appStorage
-msgid "Application storage"
-msgstr "Storfa rhaglen"
-
-#: byteUnit-B
-msgid "B"
-msgstr "B"
-
-#: byteUnit-KB
-msgid "KB"
-msgstr "KB"
-
-#: byteUnit-MB
-msgid "MB"
-msgstr "MB"
-
-#: byteUnit-GB
-msgid "GB"
-msgstr "GB"
-
-#: byteUnit-TB
-msgid "TB"
-msgstr "TB"
-
-#: storageSize
-msgid "{{size}} {{unit}}"
-msgstr "{{size}} {{unit}}"
-
-#: availableSize
-msgid "{[ plural(size) ]}"
-msgstr "{[ plural(size) ]}"
-
-#: availableSize[zero]
-msgctxt "availableSize[zero]"
-msgid "{{size}} {{unit}} available"
-msgstr "{{size}} {{unit}} ar gael"
-
-#: availableSize[one]
-msgctxt "availableSize[one]"
-msgid "{{size}} {{unit}} available"
-msgstr "{{size}} {{unit}} ar gael"
-
-#: availableSize[two]
-msgctxt "availableSize[two]"
-msgid "{{size}} {{unit}} available"
-msgstr "{{size}} {{unit}} ar gael"
-
-#: availableSize[few]
-msgctxt "availableSize[few]"
-msgid "{{size}} {{unit}} available"
-msgstr "{{size}} {{unit}} ar gael"
-
-#: availableSize[many]
-msgctxt "availableSize[many]"
-msgid "{{size}} {{unit}} available"
-msgstr "{{size}} {{unit}} ar gael"
-
-#: availableSize[other]
-msgctxt "availableSize[other]"
-msgid "{{size}} {{unit}} available"
-msgstr "{{size}} {{unit}} ar gael"
-
-#: apps-total-space
-msgid "Total space"
-msgstr "Cyfanswm gofod"
-
-#: apps-used-space
-msgid "Used"
-msgstr "Defnyddiwyd"
-
-#: apps-free-space
-msgid "Left"
-msgstr "Ar gael"
-
-#: media-storage-details
-msgid ""
-"Photos, videos and music are stored on the SD card. See media storage for "
-"details."
-msgstr ""
-"Mae lluniau, fideos, a cherddoriaeth yn cael eu cadw ar y cerdyn SD. Gw. "
-"storio cyfrwng am fanylion."
-
-#. # Device :: Media storage
-#: mediaStorage
-msgid "Media storage"
-msgstr "Storio cyfrwng"
-
-#: music-space
-msgid "Music"
-msgstr "Cerddoriaeth"
-
-#: pictures-space
-msgid "Pictures"
-msgstr "Lluniau"
-
-#: videos-space
-msgid "Movies"
-msgstr "Ffilmiau"
-
-#: left-space
-msgid "Space left"
-msgstr "Lle ar ôl"
-
-#: size-not-available
-msgid "Not available"
-msgstr "Dim ar gael"
-
-#: no-storage
-msgid "No storage found"
-msgstr "Heb ganfod storfa"
-
-#: advanced
-msgid "Advanced"
-msgstr "Uwch"
-
 #. # Device :: Battery
 #: battery
 msgid "Battery"
@@ -2053,15 +2284,15 @@ msgstr "Modd arbed pŵer"
 msgid "{{level}}% battery left"
 msgstr "{{level}}% batri ar ôl"
 
-#: powerSave-expl
+#: powerSave-explanation
 msgid ""
-"Turning on power save mode turns off the phone’s data, Bluetooth and GPS "
-"connections to extend battery life. You can still turn these services back "
-"on manually."
+"Turning on power save mode turns off the phone’s data, Bluetooth and "
+"Geolocation connections to extend battery life. You can still turn these "
+"services back on manually."
 msgstr ""
-"Mae cychwyn modd arbed pŵer yn diffodd cysylltiad Data, Bluetooth a GPS y "
-"ffôn er mwyn estyn bywyd y batri. Mae modd ailgychwyn y gwasanaethau hyn "
-"gyda llaw."
+"Mae cychwyn modd arbed pŵer yn diffodd cysylltiad Data, Bluetooth a "
+"Geoleoliad y ffôn er mwyn estyn bywyd y batri. Mae modd ailgychwyn y "
+"gwasanaethau hyn gyda llaw."
 
 #: turnOnAuto
 msgid "Turn on automatically"
@@ -2122,9 +2353,9 @@ msgstr "Anfon adroddiad bob tro"
 msgid "Never send a report"
 msgstr "Peidio byth anfon adroddiad"
 
-#: askToSendReport
-msgid "Ask me when a crash occurs"
-msgstr "Gofyn pan fydd chwalfa wedi digwydd"
+#: askToSendReport2
+msgid "Ask each time"
+msgstr "Gofyn pob tro"
 
 #. # Device :: Improve Browser OS :: Crash Reports
 #. # LOCALIZATION NOTE (crash-reports-description-*): these strings are also included in system.properties
@@ -2214,6 +2445,34 @@ msgstr "Rhaglenni cerdyn SIM ddim ar gael."
 #: simToolkit
 msgid "SIM toolkit"
 msgstr "Blwch offer SIM"
+
+#~ msgid "GPS"
+#~ msgstr "GPS"
+
+#~ msgid "MMS settings"
+#~ msgstr "Gosodiadau MMS"
+
+#~ msgctxt "pinAttemptMsg2"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgid "Last chance."
+#~ msgstr "Cyfle olaf."
+
+#~ msgctxt "pinAttemptMsg2[few]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} tro ar ôl."
+
+#~ msgctxt "pinAttemptMsg2[many]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} tro ar ôl."
+
+#~ msgctxt "pinAttemptMsg2[other]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} tro ar ôl."
+
+#~ msgid "Ask me when a crash occurs"
+#~ msgstr "Gofyn pan fydd chwalfa wedi digwydd"
 
 #, fuzzy
 #~ msgctxt "gitInfo"

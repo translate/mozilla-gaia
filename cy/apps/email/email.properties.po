@@ -1,10 +1,10 @@
-#. extracted from locales/en-US/apps/email/email.properties
+#. extracted from ./apps/email/email.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:06+0100\n"
-"PO-Revision-Date: 2013-05-09 19:33+0000\n"
+"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"PO-Revision-Date: 2013-06-17 20:29+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: cy\n"
@@ -12,10 +12,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Pootle 2.5.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1368128024.0\n"
+"X-POOTLE-MTIME: 1371500981.000000\n"
 
 #: setup-app-name-header
 msgid "Mail"
@@ -194,6 +194,11 @@ msgstr ""
 msgid "The server \"{{server}}\" is offline for maintenance. Try again later."
 msgstr ""
 "Mae'r gweinydd \"{{server}}\" all-lein ac yn cael ei drwsio. Ceisiwch eto."
+
+#. # The error when the user trying to register a duplicate account
+#: setup-error-account-already-exists
+msgid "This account is already configured."
+msgstr "Mae'r cyfrif hwn eisoes wedi ei ffurfweddu."
 
 #: setup-manual-config2
 msgctxt "setup-manual-config2"
@@ -584,6 +589,26 @@ msgstr "Anfon e-bost"
 msgid "Sending email failed"
 msgstr "Methodd anfon e-bost"
 
+#: composer-attachment-large
+msgid "Attachment too large"
+msgstr "Mae'r atodiad yn rhy fawr"
+
+#: composer-attachments-large
+msgid "Attachments too large"
+msgstr "Mae'r atodiad yn rhy fawr"
+
+#: compose-attchment-size-exceeded
+msgid "The selected attachment is too large to send with this message."
+msgstr "Mae'r atodiad hwn yn rhy fawr i'w anfon gyda'r neges hon."
+
+#: compose-attchments-size-exceeded
+msgid ""
+"The selected attachments are too large to send with this message. Try "
+"selecting fewer files."
+msgstr ""
+"Mae'r atodiadau hyn yn rhy fawr i'w anfon gyda'r neges hon. Ceisiwch anfon "
+"llai o ffeiliau."
+
 #: dialog-button-ok
 msgid "OK"
 msgstr "Iawn"
@@ -628,6 +653,10 @@ msgstr "Dileu"
 #: message-edit-delete-confirm
 msgid "Delete email message?"
 msgstr "Dileu neges e-bost?"
+
+#: message-send-attachment-disabled-confirm
+msgid "Attachments can not be forwarded."
+msgstr "Nid oes modd anfon yr atodiadau hyn ymlaen."
 
 #: message-multiedit-header
 msgctxt "message-multiedit-header"
@@ -1091,6 +1120,38 @@ msgstr "Tynnu testun"
 #: confirm-dialog-title
 msgid "Confirmation"
 msgstr "Cadarnhad"
+
+#. # new-emails refers to the text shown on a notification that users
+#. # get when they receive new, unread email. The ui component that utilizes
+#. # this lives in apps/email/js/message_list_topbar.js.
+#: new-emails
+msgctxt "new-emails"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: new-emails[one]
+msgid "1 New Email"
+msgstr "1 E-bost Newydd"
+
+#: new-emails[two]
+msgctxt "new-emails[two]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} E-bost Newydd"
+
+#: new-emails[few]
+msgctxt "new-emails[few]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} E-bost Newydd"
+
+#: new-emails[many]
+msgctxt "new-emails[many]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} E-bost Newydd"
+
+#: new-emails[other]
+msgctxt "new-emails[other]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} E-bost Newydd"
 
 #~ msgid "Please wait while your account is set up"
 #~ msgstr "Arhoswch tra bod eich cyfrif yn cael ei greu"

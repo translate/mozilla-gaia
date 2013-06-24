@@ -1,10 +1,10 @@
-#. extracted from locales/en-US/apps/sms/sms.properties
+#. extracted from ./apps/sms/sms.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:06+0100\n"
-"PO-Revision-Date: 2013-05-09 19:07+0000\n"
+"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"PO-Revision-Date: 2013-06-18 12:58+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: cy\n"
@@ -12,10 +12,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Pootle 2.5.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1368126464.0\n"
+"X-POOTLE-MTIME: 1371560332.000000\n"
 
 #. # Headers
 #: messages
@@ -26,38 +26,40 @@ msgstr "Negeseuon"
 msgid "Edit messages"
 msgstr "Golygu negeseuon"
 
-#: others
-msgctxt "others"
+#. # Contact title
+#: thread-header-text
+msgctxt "thread-header-text"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: others[zero]
-msgid "{{name}} and no others"
-msgstr "{{name}} a neb arall"
+#: thread-header-text[zero]
+msgid "{{name}}"
+msgstr "{{name}}"
 
-#: others[one]
-msgid "{{name}} and {{n}} other"
-msgstr "{{name}} a {{n}} eraill"
+#: thread-header-text[one]
+msgctxt "thread-header-text[one]"
+msgid "{{name}} (+{{n}})"
+msgstr "{{name}} (+{{n}})"
 
-#: others[two]
-msgctxt "others[two]"
-msgid "{{name}} and {{n}} others"
-msgstr "{{name}} a {{n}} eraill"
+#: thread-header-text[two]
+msgctxt "thread-header-text[two]"
+msgid "{{name}} (+{{n}})"
+msgstr "{{name}} (+{{n}})"
 
-#: others[few]
-msgctxt "others[few]"
-msgid "{{name}} and {{n}} others"
-msgstr "{{name}} a {{n}} eraill"
+#: thread-header-text[few]
+msgctxt "thread-header-text[few]"
+msgid "{{name}} (+{{n}})"
+msgstr "{{name}} (+{{n}})"
 
-#: others[many]
-msgctxt "others[many]"
-msgid "{{name}} and {{n}} others"
-msgstr "{{name}} a {{n}} eraill"
+#: thread-header-text[many]
+msgctxt "thread-header-text[many]"
+msgid "{{name}} (+{{n}})"
+msgstr "{{name}} (+{{n}})"
 
-#: others[other]
-msgctxt "others[other]"
-msgid "{{name}} and {{n}} others"
-msgstr "{{name}} a {{n}} eraill"
+#: thread-header-text[other]
+msgctxt "thread-header-text[other]"
+msgid "{{name}} (+{{n}})"
+msgstr "{{name}} (+{{n}})"
 
 #. # Edit Mode
 #: edit
@@ -131,6 +133,10 @@ msgid "{{n}} selected"
 msgstr "Dewis {{n}}"
 
 #. # New Message
+#: to
+msgid "To:"
+msgstr "At:"
+
 #: send
 msgid "Send"
 msgstr "Anfon"
@@ -149,13 +155,70 @@ msgctxt "composeMessage.placeholder"
 msgid "Message"
 msgstr "Neges"
 
+#: converted-to-mms
+msgid "Converting to multimedia message."
+msgstr "Trosi i neges amlgyfrwng."
+
+#: converted-to-sms
+msgid "Converting to text message."
+msgstr "Trosi i neges testun."
+
+#: messages-max-length-text
+msgid "You've reached the maximum length."
+msgstr "Rydych wedi cyrraedd terfyn yr hyd."
+
+#: messages-exceeded-length-text
+msgid ""
+"You've exceeded the maximum length. Remove special characters or shorten the "
+"message to send it."
+msgstr ""
+"Rydych wedi cyrraedd terfyn yr hyd. Tynnwch nodau arbennig neu gwtogi'r "
+"neges i'w hanfon."
+
 #: newMessage
 msgid "New message"
 msgstr "Neges newydd"
 
-#: messages-max-length-notice
-msgid "You've reached the maximum length for an SMS."
-msgstr "Rydych wedi cyrraedd terfyn hyd SMS."
+#: recipient
+msgctxt "recipient"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: recipient[one]
+msgid "{{n}} recipient"
+msgstr "{{n}} derbynnydd"
+
+#: recipient[two]
+msgctxt "recipient[two]"
+msgid "{{n}} recipients"
+msgstr "{{n}} derbynnydd"
+
+#: recipient[few]
+msgctxt "recipient[few]"
+msgid "{{n}} recipients"
+msgstr "{{n}} derbynnydd"
+
+#: recipient[many]
+msgctxt "recipient[many]"
+msgid "{{n}} recipients"
+msgstr "{{n}} derbynnydd"
+
+#: recipient[other]
+msgctxt "recipient[other]"
+msgid "{{n}} recipients"
+msgstr "{{n}} derbynnydd"
+
+#: recipientRemoval
+msgid "Do you want to remove {{recipient}} from the recipients list?'"
+msgstr "Hoffech chi dynnu {{recipient}} o'r rhestr derbynwyr?'"
+
+#: attachmentSize
+msgid "{{n}} kB"
+msgstr "{{n}} kB"
+
+#: attachmentOpenError
+msgid "There is no application available to open this file type."
+msgstr "Nid oes rhaglen ar gael i agor ffeil o'r math yma."
 
 #. # Search functionality
 #: search
@@ -221,6 +284,34 @@ msgctxt "sendAirplaneModeBtnOk"
 msgid "OK"
 msgstr "Iawn"
 
+#: deleted-sms
+msgid "This message has already been deleted."
+msgstr "Mae'r neges hon eisoes wedi ei dileu."
+
+#: view-attachment
+msgid "View"
+msgstr "Golwg"
+
+#: remove-attachment
+msgid "Remove {{type}}"
+msgstr "Tynnu {{type}}"
+
+#: replace-attachment
+msgid "Replace {{type}}"
+msgstr "Amnewid {{type}}"
+
+#: attachment-type-image
+msgid "image"
+msgstr "delwedd"
+
+#: attachment-type-audio
+msgid "audio"
+msgstr "sain"
+
+#: attachment-type-video
+msgid "video"
+msgstr "fideo"
+
 #. # Labels for contact fields
 #: mobile
 msgid "Mobile"
@@ -279,6 +370,53 @@ msgstr "Creu cysylltiad newydd"
 #: call
 msgid "Call"
 msgstr "Galw"
+
+#. # MMS message
+#: mms-message
+msgid "MMS message"
+msgstr "Neges MMS"
+
+#: notDownloaded-title
+msgid "Message is not downloaded yet."
+msgstr "Neges heb ei llwytho i lawr eto."
+
+#: not-downloaded-mms
+msgid "I have sent you a file. It will be available until {{date}}"
+msgstr "Rwyf wedi anfon ffeil atoch. Bydd ar gael tan {{date}}"
+
+#: expired-mms
+msgid "Sorry, message cannot be downloaded as it expired on {{date}}"
+msgstr "Nid oedd modd llwytho'r neges i lawr, daeth i ben ar {{date}}"
+
+#: download
+msgid "download"
+msgstr "llwytho i lawr"
+
+#: downloading
+msgid "downloading"
+msgstr "llwytho i lawr"
+
+#~ msgid "{{name}} and no others"
+#~ msgstr "{{name}} a neb arall"
+
+#~ msgid "{{name}} and {{n}} other"
+#~ msgstr "{{name}} a {{n}} eraill"
+
+#~ msgctxt "others[two]"
+#~ msgid "{{name}} and {{n}} others"
+#~ msgstr "{{name}} a {{n}} eraill"
+
+#~ msgctxt "others[few]"
+#~ msgid "{{name}} and {{n}} others"
+#~ msgstr "{{name}} a {{n}} eraill"
+
+#~ msgctxt "others[many]"
+#~ msgid "{{name}} and {{n}} others"
+#~ msgstr "{{name}} a {{n}} eraill"
+
+#~ msgctxt "others[other]"
+#~ msgid "{{name}} and {{n}} others"
+#~ msgstr "{{name}} a {{n}} eraill"
 
 #~ msgid "No results returned"
 #~ msgstr "Heb ddychwelyd canlyniad"

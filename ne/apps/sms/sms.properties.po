@@ -3,19 +3,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
-"PO-Revision-Date: 2013-05-26 16:14+0000\n"
-"Last-Translator: Benjamin <benpokharel@gmail.com>\n"
+"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"PO-Revision-Date: 2013-06-19 03:50+0000\n"
+"Last-Translator: Bansaj <bansajpradhan@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ne\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1369584898.0\n"
+"X-POOTLE-MTIME: 1371613832.000000\n"
 
 #. # Headers
 #: messages
@@ -26,38 +26,40 @@ msgstr "सन्देशहरू"
 msgid "Edit messages"
 msgstr "सन्देशहरु सम्पादन गर्नुहोस्"
 
-#: others
-msgctxt "others"
+#. # Contact title
+#: thread-header-text
+msgctxt "thread-header-text"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: others[zero]
-msgid "{{name}} and no others"
-msgstr "{{name}} मात्र"
+#: thread-header-text[zero]
+msgid "{{name}}"
+msgstr "{{name}}"
 
-#: others[one]
-msgid "{{name}} and {{n}} other"
-msgstr "{{name}} र अरु {{n}}"
+#: thread-header-text[one]
+msgctxt "thread-header-text[one]"
+msgid "{{name}} (+{{n}})"
+msgstr "{{name}} (+{{n}})"
 
-#: others[two]
-msgctxt "others[two]"
-msgid "{{name}} and {{n}} others"
-msgstr "{{name}} र अरु {{n}}"
+#: thread-header-text[two]
+msgctxt "thread-header-text[two]"
+msgid "{{name}} (+{{n}})"
+msgstr "{{name}} (+{{n}})"
 
-#: others[few]
-msgctxt "others[few]"
-msgid "{{name}} and {{n}} others"
-msgstr "{{name}} र अरु {{n}}"
+#: thread-header-text[few]
+msgctxt "thread-header-text[few]"
+msgid "{{name}} (+{{n}})"
+msgstr "{{name}} (+{{n}})"
 
-#: others[many]
-msgctxt "others[many]"
-msgid "{{name}} and {{n}} others"
-msgstr "{{name}} र अरु {{n}}"
+#: thread-header-text[many]
+msgctxt "thread-header-text[many]"
+msgid "{{name}} (+{{n}})"
+msgstr "{{name}} (+{{n}})"
 
-#: others[other]
-msgctxt "others[other]"
-msgid "{{name}} and {{n}} others"
-msgstr "{{name}} र अरु {{n}}"
+#: thread-header-text[other]
+msgctxt "thread-header-text[other]"
+msgid "{{name}} (+{{n}})"
+msgstr "{{name}} (+{{n}})"
 
 #. # Edit Mode
 #: edit
@@ -131,6 +133,10 @@ msgid "{{n}} selected"
 msgstr "{{n}} चयन गरिएको"
 
 #. # New Message
+#: to
+msgid "To:"
+msgstr "लागि:"
+
 #: send
 msgid "Send"
 msgstr "पठाउनुहोस्"
@@ -149,13 +155,70 @@ msgctxt "composeMessage.placeholder"
 msgid "Message"
 msgstr "सन्देश"
 
+#: converted-to-mms
+msgid "Converting to multimedia message."
+msgstr "मल्टिमिडिया सन्देशमा रूपान्तरण गरिदै।"
+
+#: converted-to-sms
+msgid "Converting to text message."
+msgstr "पाठ सन्देशमा रूपान्तरण गरिदै।"
+
+#: messages-max-length-text
+msgid "You've reached the maximum length."
+msgstr "तपाईं अधिकतम लम्बाइमा पुग्नुभएको छ।"
+
+#: messages-exceeded-length-text
+msgid ""
+"You've exceeded the maximum length. Remove special characters or shorten the "
+"message to send it."
+msgstr ""
+"तपाईंले अधिकतम लम्बाइमा नाग्नुभएको छ।सन्देश पठाउनका लागि विशेष क्यारेक्टर हटाउनुहोस् वा "
+"सन्देश छोटो बनाउनुहोस्।"
+
 #: newMessage
 msgid "New message"
 msgstr "नयाँ सन्देश"
 
-#: messages-max-length-notice
-msgid "You've reached the maximum length for an SMS."
-msgstr "तपाईंले एउटा SMSका लागि अधिकतम लम्बाइ पुग्नुभएको छ।"
+#: recipient
+msgctxt "recipient"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: recipient[one]
+msgid "{{n}} recipient"
+msgstr "{{n}} प्रापक"
+
+#: recipient[two]
+msgctxt "recipient[two]"
+msgid "{{n}} recipients"
+msgstr "{{n}} प्रापकहरु"
+
+#: recipient[few]
+msgctxt "recipient[few]"
+msgid "{{n}} recipients"
+msgstr "{{n}} प्रापकहरु"
+
+#: recipient[many]
+msgctxt "recipient[many]"
+msgid "{{n}} recipients"
+msgstr "{{n}} प्रापकहरु"
+
+#: recipient[other]
+msgctxt "recipient[other]"
+msgid "{{n}} recipients"
+msgstr "{{n}} प्रापकहरु"
+
+#: recipientRemoval
+msgid "Do you want to remove {{recipient}} from the recipients list?'"
+msgstr "के तपाईँ प्रापकहरुको सूचीबाट {{recipient}}लाई हटाउन चाहानुहुन्छ?'"
+
+#: attachmentSize
+msgid "{{n}} kB"
+msgstr "{{n}} kB"
+
+#: attachmentOpenError
+msgid "There is no application available to open this file type."
+msgstr "यो फाइल प्रकार खोल्नका लागि कुनै पनि एप्लिकेसन उपलब्ध छैन।"
 
 #. # Search functionality
 #: search
@@ -221,6 +284,34 @@ msgctxt "sendAirplaneModeBtnOk"
 msgid "OK"
 msgstr "ठीक छ"
 
+#: deleted-sms
+msgid "This message has already been deleted."
+msgstr "यस सन्देश पहिल्यै नै मेटाइएको छ।"
+
+#: view-attachment
+msgid "View"
+msgstr "दृश्य"
+
+#: remove-attachment
+msgid "Remove {{type}}"
+msgstr "हटाउनुहोस् {{प्रकर}}"
+
+#: replace-attachment
+msgid "Replace {{type}}"
+msgstr "बदल्नुहोस् {{प्रकर}}"
+
+#: attachment-type-image
+msgid "image"
+msgstr "छवि"
+
+#: attachment-type-audio
+msgid "audio"
+msgstr "अडियो"
+
+#: attachment-type-video
+msgid "video"
+msgstr "भिडियो"
+
 #. # Labels for contact fields
 #: mobile
 msgid "Mobile"
@@ -279,6 +370,55 @@ msgstr "नयाँ सम्पर्क सिर्जना गर्नु
 #: call
 msgid "Call"
 msgstr "कल"
+
+#. # MMS message
+#: mms-message
+msgid "MMS message"
+msgstr "MMS सन्देश"
+
+#: notDownloaded-title
+msgid "Message is not downloaded yet."
+msgstr "सन्देश अझै डाउनलोड भएेको छैन।"
+
+#: not-downloaded-mms
+msgid "I have sent you a file. It will be available until {{date}}"
+msgstr "मैले तिमीलाई फाइल पठाएको छु।यो {{मिती}}सम्म उपलब्ध हुन्छ"
+
+#: expired-mms
+msgid "Sorry, message cannot be downloaded as it expired on {{date}}"
+msgstr ""
+"माफ गर्नुहोस्, सन्देश डाउनलोड गर्न मिलेन किनकि सन्देशको समयावधि {{मिती}} समाप्ति भएको "
+"थियो"
+
+#: download
+msgid "download"
+msgstr "डाउनलोड"
+
+#: downloading
+msgid "downloading"
+msgstr "डाउनलोड हुँदैछ"
+
+#~ msgid "{{name}} and no others"
+#~ msgstr "{{name}} मात्र"
+
+#~ msgid "{{name}} and {{n}} other"
+#~ msgstr "{{name}} र अरु {{n}}"
+
+#~ msgctxt "others[two]"
+#~ msgid "{{name}} and {{n}} others"
+#~ msgstr "{{name}} र अरु {{n}}"
+
+#~ msgctxt "others[few]"
+#~ msgid "{{name}} and {{n}} others"
+#~ msgstr "{{name}} र अरु {{n}}"
+
+#~ msgctxt "others[many]"
+#~ msgid "{{name}} and {{n}} others"
+#~ msgstr "{{name}} र अरु {{n}}"
+
+#~ msgctxt "others[other]"
+#~ msgid "{{name}} and {{n}} others"
+#~ msgstr "{{name}} र अरु {{n}}"
 
 #~ msgid "No results returned"
 #~ msgstr "कुनै नतिजा फेला परेन"

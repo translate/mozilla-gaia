@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
-"PO-Revision-Date: 2013-05-09 15:59+0000\n"
+"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"PO-Revision-Date: 2013-06-11 15:06+0000\n"
 "Last-Translator: Piseth <piseth.kheng@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: km\n"
@@ -12,10 +12,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1368115187.0\n"
+"X-POOTLE-MTIME: 1370963194.000000\n"
 
 #. # Headers
 #: messages
@@ -26,38 +26,40 @@ msgstr "សារ"
 msgid "Edit messages"
 msgstr "កែសម្រួល​សារ"
 
-#: others
-msgctxt "others"
+#. # Contact title
+#: thread-header-text
+msgctxt "thread-header-text"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: others[zero]
-msgid "{{name}} and no others"
-msgstr "{{name}} និង​គ្មាន​អ្នក​ផ្សេង"
+#: thread-header-text[zero]
+msgid "{{name}}"
+msgstr "{{name}}"
 
-#: others[one]
-msgid "{{name}} and {{n}} other"
-msgstr "{{name}} និង {{n}} នាក់​ផ្សេង"
+#: thread-header-text[one]
+msgctxt "thread-header-text[one]"
+msgid "{{name}} (+{{n}})"
+msgstr "{{name}} (+{{n}})"
 
-#: others[two]
-msgctxt "others[two]"
-msgid "{{name}} and {{n}} others"
-msgstr "{{name}} និង {{n}} នាក់​ផ្សេង"
+#: thread-header-text[two]
+msgctxt "thread-header-text[two]"
+msgid "{{name}} (+{{n}})"
+msgstr "{{name}} (+{{n}})"
 
-#: others[few]
-msgctxt "others[few]"
-msgid "{{name}} and {{n}} others"
-msgstr "{{name}} និង {{n}} នាក់​ផ្សេង"
+#: thread-header-text[few]
+msgctxt "thread-header-text[few]"
+msgid "{{name}} (+{{n}})"
+msgstr "{{name}} (+{{n}})"
 
-#: others[many]
-msgctxt "others[many]"
-msgid "{{name}} and {{n}} others"
-msgstr "{{name}} និង {{n}} នាក់​ផ្សេង"
+#: thread-header-text[many]
+msgctxt "thread-header-text[many]"
+msgid "{{name}} (+{{n}})"
+msgstr "{{name}} (+{{n}})"
 
-#: others[other]
-msgctxt "others[other]"
-msgid "{{name}} and {{n}} others"
-msgstr "{{name}} និង {{n}} នាក់​ផ្សេង"
+#: thread-header-text[other]
+msgctxt "thread-header-text[other]"
+msgid "{{name}} (+{{n}})"
+msgstr "{{name}} (+{{n}})"
 
 #. # Edit Mode
 #: edit
@@ -131,6 +133,10 @@ msgid "{{n}} selected"
 msgstr "បាន​ជ្រើស {{n}}"
 
 #. # New Message
+#: to
+msgid "To:"
+msgstr "ជូន​ចំពោះ៖"
+
 #: send
 msgid "Send"
 msgstr "ផ្ញើ"
@@ -149,13 +155,68 @@ msgctxt "composeMessage.placeholder"
 msgid "Message"
 msgstr "សារ"
 
+#: converted-to-mms
+msgid "Converting to multimedia message."
+msgstr "​បម្លែង​ទៅ​ជា​សារ​ពហុ​ព័ត៌មាន។"
+
+#: converted-to-sms
+msgid "Converting to text message."
+msgstr "បម្លែង​ទៅ​ជា​សារ​អត្ថបទ។"
+
+#: messages-max-length-text
+msgid "You've reached the maximum length."
+msgstr "អ្នក​​ឈាន​ដល់​ប្រវែង​អតិបរិមា​​ហើយ។"
+
+#: messages-exceeded-length-text
+msgid ""
+"You've exceeded the maximum length. Remove special characters or shorten the "
+"message to send it."
+msgstr "អ្នក​បាន​ហួស​ប្រវែង​អតិបរមា​ហើយ។ យក​ចេញ​តួអក្សរ​ពិសេស ឬ​ធ្វើ​សារ​ឲ្យ​ខ្លី​ជាង​នេះ"
+
 #: newMessage
 msgid "New message"
 msgstr "សារ​ថ្មី"
 
-#: messages-max-length-notice
-msgid "You've reached the maximum length for an SMS."
-msgstr "អ្នក​​ឈាន​ដល់​ប្រវែង​អតិបរិមា​សម្រាប់​សា​ខ្លី​​នេះ។"
+#: recipient
+msgctxt "recipient"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: recipient[one]
+msgid "{{n}} recipient"
+msgstr "អ្នក​ទទួល {{n}}"
+
+#: recipient[two]
+msgctxt "recipient[two]"
+msgid "{{n}} recipients"
+msgstr "អ្នក​ទទួល {{n}}"
+
+#: recipient[few]
+msgctxt "recipient[few]"
+msgid "{{n}} recipients"
+msgstr "អ្នក​ទទួល {{n}}"
+
+#: recipient[many]
+msgctxt "recipient[many]"
+msgid "{{n}} recipients"
+msgstr "អ្នក​ទទួល {{n}}"
+
+#: recipient[other]
+msgctxt "recipient[other]"
+msgid "{{n}} recipients"
+msgstr "អ្នក​ទទួល {{n}}"
+
+#: recipientRemoval
+msgid "Do you want to remove {{recipient}} from the recipients list?'"
+msgstr "តើ​អ្នក​ចង់​លុប​ {{recipient}} ចេញ​ពី​បញ្ជី​អ្នក​ទទួល​ឬ?"
+
+#: attachmentSize
+msgid "{{n}} kB"
+msgstr "{{n}} kB"
+
+#: attachmentOpenError
+msgid "There is no application available to open this file type."
+msgstr "មិន​មាន​កម្មវិធី​អាច​ប្រើ​ដើម្បី​បើក​ឯកសារ​នេះ​បាន​ទេ។"
 
 #. # Search functionality
 #: search
@@ -221,6 +282,34 @@ msgctxt "sendAirplaneModeBtnOk"
 msgid "OK"
 msgstr "យល់​ព្រម"
 
+#: deleted-sms
+msgid "This message has already been deleted."
+msgstr "បាន​លុប​សារ​នេះ​រួច​ហើយ។"
+
+#: view-attachment
+msgid "View"
+msgstr "មើល"
+
+#: remove-attachment
+msgid "Remove {{type}}"
+msgstr "យកចេញ {{type}}"
+
+#: replace-attachment
+msgid "Replace {{type}}"
+msgstr "ជំនួស {{type}}"
+
+#: attachment-type-image
+msgid "image"
+msgstr "រូបភាព"
+
+#: attachment-type-audio
+msgid "audio"
+msgstr "អូឌីយ៉ូ"
+
+#: attachment-type-video
+msgid "video"
+msgstr "វីដេអូ"
+
 #. # Labels for contact fields
 #: mobile
 msgid "Mobile"
@@ -279,6 +368,53 @@ msgstr "បង្កើត​ទំនាក់ទំនង​ថ្មី"
 #: call
 msgid "Call"
 msgstr "ហៅ"
+
+#. # MMS message
+#: mms-message
+msgid "MMS message"
+msgstr "សារ MMS"
+
+#: notDownloaded-title
+msgid "Message is not downloaded yet."
+msgstr "មិន​ទាន់​ទាញ​យក​សារ​នៅ​ឡើយ​ទេ។"
+
+#: not-downloaded-mms
+msgid "I have sent you a file. It will be available until {{date}}"
+msgstr "ខ្ញុំ​បាន​ផ្ញើ​​ឯកសារ​មួយ​ឲ្យ​អ្នក។ វា​នឹង​មាន​រហូត​ដល់ {{date}}"
+
+#: expired-mms
+msgid "Sorry, message cannot be downloaded as it expired on {{date}}"
+msgstr "សូម​អភ័យទោស មិន​អាច​ទាញ​យក​សារ​​ដោយ​សារ​វា​​ផុត​កំណត់​កាល​ពី​ {{date}}"
+
+#: download
+msgid "download"
+msgstr "ទាញ​យក"
+
+#: downloading
+msgid "downloading"
+msgstr "ការ​ទាញយក"
+
+#~ msgid "{{name}} and no others"
+#~ msgstr "{{name}} និង​គ្មាន​អ្នក​ផ្សេង"
+
+#~ msgid "{{name}} and {{n}} other"
+#~ msgstr "{{name}} និង {{n}} នាក់​ផ្សេង"
+
+#~ msgctxt "others[two]"
+#~ msgid "{{name}} and {{n}} others"
+#~ msgstr "{{name}} និង {{n}} នាក់​ផ្សេង"
+
+#~ msgctxt "others[few]"
+#~ msgid "{{name}} and {{n}} others"
+#~ msgstr "{{name}} និង {{n}} នាក់​ផ្សេង"
+
+#~ msgctxt "others[many]"
+#~ msgid "{{name}} and {{n}} others"
+#~ msgstr "{{name}} និង {{n}} នាក់​ផ្សេង"
+
+#~ msgctxt "others[other]"
+#~ msgid "{{name}} and {{n}} others"
+#~ msgstr "{{name}} និង {{n}} នាក់​ផ្សេង"
 
 #~ msgid "No results returned"
 #~ msgstr "មិន​បាន​បង្ហាញ​លទ្ធផល"

@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
-"PO-Revision-Date: 2013-05-31 13:12+0000\n"
+"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"PO-Revision-Date: 2013-06-23 10:39+0000\n"
 "Last-Translator: Benny <bennychandra@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: id\n"
@@ -12,10 +12,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1370005958.000000\n"
+"X-POOTLE-MTIME: 1371983941.000000\n"
 
 #: setup-app-name-header
 msgid "Mail"
@@ -25,7 +25,7 @@ msgstr "Surat"
 msgid ""
 "You are not set up to send or receive email. Would you like to do that now?"
 msgstr ""
-"Anda tidak siap untuk mengirim atau menerima email. Ingin menyiapkannya "
+"Anda tidak siap untuk mengirim atau menerima surel. Ingin menyiapkannya "
 "sekarang?"
 
 #: setup-pick-service
@@ -79,7 +79,7 @@ msgstr ""
 
 #: setup-completed-header
 msgid "Mail account setup"
-msgstr "Persiapan akun email"
+msgstr "Penataan akun surel"
 
 #: setup-completed-label
 msgid "All done!"
@@ -149,8 +149,8 @@ msgid ""
 "Unable to establish a secure connection with \"{{server}}\". There may be a "
 "problem with your network or the server."
 msgstr ""
-"Tidak dapat membuat sambungan aman dengan \\ \"{{server}} \". Mungkin "
-"adamasalah dengan jaringan atau server. "
+"Tidak dapat membuat sambungan aman dengan \\ \"{{server}} \". Mungkin ada "
+"masalah dengan jaringan atau server. "
 
 #. # The error for when we try to contact a server but see no indication of a
 #. # response before we give up because of a timeout.
@@ -159,8 +159,8 @@ msgid ""
 "Unable to establish a connection with \"{{server}}\". There may be a problem "
 "with the network."
 msgstr ""
-"Tidak dapat membuat sambungan dengan \" {{server}} \\ \"Mungkin ada "
-"masalahdengan jaringan."
+"Tak dapat membuat sambungan dengan \"{{server}}\". Mungkin ada masalah "
+"dengan jaringan."
 
 #. # The error for when we able to establish a (secure) connection with the server,
 #. # but there is some type of failure talking to the server that isn't covered by
@@ -169,7 +169,7 @@ msgstr ""
 #. # server's software.
 #: setup-error-server-problem
 msgid "There is a problem with the server \"{{server}}\". Try again later."
-msgstr "Ada masalah dengan server \" {{server}} \\ \". Coba lagi nanti."
+msgstr "Ada masalah dengan server \"{{server}}\". Nanti coba lagi."
 
 #. # The error for when we are trying to figure out the right server settings for
 #. # an account based on the e-mail address the user typed in during configuration,
@@ -182,15 +182,20 @@ msgid ""
 "Unable to automatically configure your account. Correct your e-mail address "
 "or try the manual configuration option."
 msgstr ""
-"Tidak dapat secara otomatis mengkonfigurasi akun Anda. Koreksi alamat email "
-"Andaatau mencoba opsi konfigurasi manual."
+"Tidak dapat secara otomatis mengkonfigurasi akun Anda. Koreksi alamat surel "
+"Anda atau coba opsi konfigurasi manual."
 
 #. # The error for when the user is trying to set up an account with a server that
 #. # currently indicates it is offline for maintenance.
 #: setup-error-server-maintenance
 msgid "The server \"{{server}}\" is offline for maintenance. Try again later."
 msgstr ""
-"Server \\ \"{{server}} \" sedang offline untuk pemeliharaan. Coba lagi nanti."
+"Server \"{{server}}\" sedang luring untuk pemeliharaan. Nanti coba lagi."
+
+#. # The error when the user trying to register a duplicate account
+#: setup-error-account-already-exists
+msgid "This account is already configured."
+msgstr ""
 
 #: setup-manual-config2
 #, fuzzy
@@ -258,7 +263,7 @@ msgstr "Sandi salah!"
 
 #: setup-bad-password
 msgid "We could not sign in to the server. Maybe your password is wrong?"
-msgstr "Kami tidak dapat memasukkan Anda ke server. Apakah sandinya salah?"
+msgstr "Kami tidak dapat memasukkan Anda ke server. Mungkin sandinya salah?"
 
 #: setup-new-password.placeholder
 msgid "New password"
@@ -319,8 +324,8 @@ msgid ""
 "Are you sure you want to delete your {{account}} mail account? You will have "
 "to re-download your mail if you re-create the account."
 msgstr ""
-"Yakin ingin menghapus akun email {{account}}? Anda harus mengunduh ulang "
-"emailnya jika membuat ulang akun tersebut."
+"Yakin ingin menghapus akun surel {{account}}? Anda harus mengunduh ulang "
+"surelnya jika membuat ulang akun tersebut."
 
 #: settings-account-delete-cancel
 msgctxt "settings-account-delete-cancel"
@@ -354,7 +359,7 @@ msgstr "Unduh lampiran"
 
 #: settings-notify-mail
 msgid "Notify of new mail"
-msgstr "Beri tahu email baru"
+msgstr "Beri tahu surel baru"
 
 #: settings-check-3min
 msgid "3 minutes"
@@ -542,7 +547,7 @@ msgstr "{{ n }} lampiran"
 #: compose-attachments[two]
 msgctxt "compose-attachments[two]"
 msgid "{{ n }} attachments"
-msgstr ""
+msgstr "{{ n }} lampiran"
 
 #: compose-attachments[few]
 msgctxt "compose-attachments[few]"
@@ -570,7 +575,7 @@ msgstr ""
 
 #: compose-discard-message
 msgid "Discard email?"
-msgstr "Buang email?"
+msgstr "Buang surel?"
 
 #: compose-discard-confirm
 msgid "Discard"
@@ -583,6 +588,24 @@ msgstr "Mengirim surel"
 #: compose-send-message-failed
 msgid "Sending email failed"
 msgstr "Gagal mengirim surel"
+
+#: composer-attachment-large
+msgid "Attachment too large"
+msgstr "Lampiran terlalu besar"
+
+#: composer-attachments-large
+msgid "Attachments too large"
+msgstr "Lampiran terlalu besar"
+
+#: compose-attchment-size-exceeded
+msgid "The selected attachment is too large to send with this message."
+msgstr "Lampiran yang dipilih terlalu besar untuk dikirim bersama pesan ini."
+
+#: compose-attchments-size-exceeded
+msgid ""
+"The selected attachments are too large to send with this message. Try "
+"selecting fewer files."
+msgstr ""
 
 #: dialog-button-ok
 msgid "OK"
@@ -627,7 +650,11 @@ msgstr "Hapus"
 
 #: message-edit-delete-confirm
 msgid "Delete email message?"
-msgstr "Hapus pesan email?"
+msgstr "Hapus pesan surel?"
+
+#: message-send-attachment-disabled-confirm
+msgid "Attachments can not be forwarded."
+msgstr ""
 
 #: message-multiedit-header
 msgctxt "message-multiedit-header"
@@ -1091,6 +1118,38 @@ msgstr "Hapus teks"
 #: confirm-dialog-title
 msgid "Confirmation"
 msgstr "Konfirmasi"
+
+#. # new-emails refers to the text shown on a notification that users
+#. # get when they receive new, unread email. The ui component that utilizes
+#. # this lives in apps/email/js/message_list_topbar.js.
+#: new-emails
+msgctxt "new-emails"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: new-emails[one]
+msgid "1 New Email"
+msgstr "1 Surel Baru"
+
+#: new-emails[two]
+msgctxt "new-emails[two]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} Surel Baru"
+
+#: new-emails[few]
+msgctxt "new-emails[few]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} Surel Baru"
+
+#: new-emails[many]
+msgctxt "new-emails[many]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} Surel Baru"
+
+#: new-emails[other]
+msgctxt "new-emails[other]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} Surel baru"
 
 #~ msgid "Please wait while your account is set up"
 #~ msgstr "Mohon tunggu, akun Anda sedang disiapkan"

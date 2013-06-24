@@ -3,19 +3,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
-"PO-Revision-Date: 2013-05-26 16:56+0000\n"
-"Last-Translator: Benjamin <benpokharel@gmail.com>\n"
+"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"PO-Revision-Date: 2013-06-19 06:18+0000\n"
+"Last-Translator: Bansaj <bansajpradhan@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ne\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1369587383.0\n"
+"X-POOTLE-MTIME: 1371622720.000000\n"
 
 #: settings
 msgid "Settings"
@@ -101,9 +101,9 @@ msgstr "सञ्जाल र जडान"
 msgid "Airplane mode"
 msgstr "उडान शैली"
 
-#: gps
-msgid "GPS"
-msgstr "GPS"
+#: geolocation
+msgid "Geolocation"
+msgstr "भू-स्थान"
 
 #. # Connectivity :: Wi-Fi
 #: wifi
@@ -555,9 +555,21 @@ msgstr "डाटा सेटिङहरू"
 msgid "A-GPS settings"
 msgstr "A-GPS सेटिङहरू"
 
-#: mmsSettings
-msgid "MMS settings"
-msgstr "MMS सेटिङहरू"
+#: messageSettings
+msgid "Message settings"
+msgstr "सन्देश सेटिङहरू"
+
+#: apnSettings
+msgid "APN settings"
+msgstr "APN सेटिङहरू"
+
+#: text-message-confirmation
+msgid "Text message confirmation"
+msgstr "पाठ सन्देशको लागि यकीन"
+
+#: mmsTitle
+msgid "Multimedia messaging (MMS)"
+msgstr "मल्टिमिडिया सन्देश (MMS)"
 
 #: mmsport
 msgid "MMS port"
@@ -570,6 +582,34 @@ msgstr "MMS प्रोक्सी"
 #: mmsc
 msgid "MMSC"
 msgstr "MMSC"
+
+#: auto-retrieve
+msgid "Auto retrieve"
+msgstr "स्वत: प्राप्ती"
+
+#: auto-retrieve-details
+msgid "Automatically retieve messages"
+msgstr "स्वत: सन्देशहरु प्राप्त गर्नुहोस्"
+
+#: manual-retrieve
+msgid "Off"
+msgstr "बन्द"
+
+#: auto-roaming-retrieve
+msgid "On with roaming"
+msgstr "रोमीङसंग चालू गरियो"
+
+#: auto-no-roaming-retrieve
+msgid "On without roaming"
+msgstr "रोमीङ बिना चालू गरियो"
+
+#: delivery-reports
+msgid "Delivery reports"
+msgstr "हस्तान्तरण प्रतिवेदनहरु"
+
+#: delivery-reports-details
+msgid "Request notication of delivery for each text message sent"
+msgstr "प्रत्येक पठाईएका सन्देशका लागि अधिसूचना हस्तान्तरणका अनुरोध गर्नुहोस्"
 
 #: autoConfigure
 msgid "Auto-configure"
@@ -589,7 +629,7 @@ msgstr "(आफ्नै सेटिङहरू)"
 
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
-msgstr "डाटा जडान खोल्नुहोस्?"
+msgstr "डाटा जडान खोल्न चाहानुहुन्छ?"
 
 #: dataConnection-warning-message
 msgid ""
@@ -609,6 +649,28 @@ msgid ""
 "you are in a roaming area."
 msgstr ""
 "तपाईको सेवा सम्झौता अनुसार रोमिङ्ग क्षेत्रमा हुदा डाटाका लागि अतिरिक्त शुल्क लाग्न सक्छ |"
+
+#: state-unknown
+msgid "Unknown state"
+msgstr "अज्ञात स्थिति"
+
+#: state-available
+msgid "Available"
+msgstr "उपलब्ध"
+
+#: state-connected
+msgctxt "state-connected"
+msgid "Connected"
+msgstr "जडान भयो"
+
+#: state-current
+msgctxt "state-current"
+msgid "Connected"
+msgstr "जडान भयो"
+
+#: state-forbidden
+msgid "Forbidden"
+msgstr "निषेधित"
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
@@ -1292,7 +1354,7 @@ msgid "Create"
 msgstr "सृजना गर्नुहोस्"
 
 #: create-passcode
-msgid "Create a passcode"
+msgid "Create a Passcode"
 msgstr "पासकोड सृजना गर्नुहोस्"
 
 #: enter-passcode
@@ -1320,7 +1382,7 @@ msgid "Passcode"
 msgstr "पासकोड"
 
 #: confirm-passcode
-msgid "Confirm passcode"
+msgid "Confirm Passcode"
 msgstr "पासवर्ड यकिन गर्नुहोस्"
 
 #: immediately
@@ -1429,34 +1491,74 @@ msgstr "नयाँ PIN"
 msgid "The PIN was incorrect."
 msgstr "PIN गलत रहेछ।"
 
-#: pinAttemptMsg2
-msgctxt "pinAttemptMsg2"
+#: inputCodeRetriesLeft
+msgctxt "inputCodeRetriesLeft"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: pinAttemptMsg2[one]
-msgid "Last chance."
-msgstr "अन्तिम मौका।"
+#: inputCodeRetriesLeft[one]
+msgid "last try."
+msgstr "अन्तिम प्रयास।"
 
-#: pinAttemptMsg2[two]
-msgctxt "pinAttemptMsg2[two]"
-msgid "{{n}} tries left."
-msgstr "{{n}} वटा प्रयास बाँकी।"
-
-#: pinAttemptMsg2[few]
-msgctxt "pinAttemptMsg2[few]"
+#: inputCodeRetriesLeft[two]
+msgctxt "inputCodeRetriesLeft[two]"
 msgid "{{n}} tries left."
 msgstr "{{n}} वटा प्रयासहरु बाँकी।"
 
-#: pinAttemptMsg2[many]
-msgctxt "pinAttemptMsg2[many]"
+#: inputCodeRetriesLeft[few]
+msgctxt "inputCodeRetriesLeft[few]"
 msgid "{{n}} tries left."
-msgstr "{{n}} वटा प्रयास बाँकी।"
+msgstr "{{n}} वटा प्रयासहरु बाँकी।"
 
-#: pinAttemptMsg2[other]
-msgctxt "pinAttemptMsg2[other]"
+#: inputCodeRetriesLeft[many]
+msgctxt "inputCodeRetriesLeft[many]"
 msgid "{{n}} tries left."
-msgstr "{{n}} वटा प्रयास बाँकी।"
+msgstr "{{n}} वटा प्रयासहरु बाँकी।"
+
+#: inputCodeRetriesLeft[other]
+msgctxt "inputCodeRetriesLeft[other]"
+msgid "{{n}} tries left."
+msgstr "{{n}} वटा प्रयासहरु बाँकी।"
+
+#: pinAttemptMsg3
+msgctxt "pinAttemptMsg3"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: pinAttemptMsg3[one]
+msgid ""
+"You have one try left to enter the correct code before locking the SIM card."
+msgstr "तपाईँसँग सिम कार्ड बन्द हुनु अघी ठिक कोड प्रविष्ट गर्न एक कोसिस बाँकी छ।"
+
+#: pinAttemptMsg3[two]
+msgctxt "pinAttemptMsg3[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr "तपाईँसँग सिम कार्ड बन्द हुनु अघी ठिक कोड प्रविष्ट गर्न {{n}} कोसिस बाँकी छ।"
+
+#: pinAttemptMsg3[few]
+msgctxt "pinAttemptMsg3[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr "तपाईँसँग सिम कार्ड बन्द हुनु अघी ठिक कोड प्रविष्ट गर्न {{n}} कोसिस बाँकी छ।"
+
+#: pinAttemptMsg3[many]
+msgctxt "pinAttemptMsg3[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+"सिम कार्ड ताल्चा लाग्नु अगाडि तपाईँसँग {{n}} सहि कोड प्रविष्ट गर्ने कोसिस बाँकि छ ।"
+
+#: pinAttemptMsg3[other]
+msgctxt "pinAttemptMsg3[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+"सिम कार्ड ताल्चा लाग्नु अगाडि तपाईँसँग {{n}} सहि कोड प्रविष्ट गर्ने कोसिस बाँकि छ ।"
 
 #: pinLastChanceMsg
 msgid ""
@@ -1483,15 +1585,64 @@ msgstr ""
 msgid "The PUK code is incorrect."
 msgstr "PUK कोड गलत छ।"
 
-#: pukAttemptMsg2
+#: pukAttemptMsg3
+msgctxt "pukAttemptMsg3"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: pukAttemptMsg3[one]
+msgid ""
+"You have one try left to enter the correct code before this SIM card will be "
+"permanently unusable. Refer to your SIM card documentation or contact your "
+"carrier for more information."
+msgstr ""
+"सिम कार्ड स्थायी रुपमा काम नलाग्ने हुन अगाडि तपाईँसँग एउटा सहि कोड प्रविष्ट गर्ने कोसिस "
+"बाँकि छ । अझ जानकारीका लागि तपाईँको सिम कार्डको मिसिलिकरणबाट सल्लाह लिनुहोस् वा "
+"तपाईँको वाहकसँग सम्पर्क राख्नुहोस्।"
+
+#: pukAttemptMsg3[two]
+msgctxt "pukAttemptMsg3[two]"
 msgid ""
 "You have {{n}} tries left to enter the correct code before this SIM card "
 "will be permanently unusable. Refer to your SIM card documentation or "
 "contact your carrier for more information."
 msgstr ""
-"सिम कार्ड  स्थायी रुपमा काम नलाग्ने हुन तपाईसंग {{n}}  सहि कोड प्रविष्ट गर्ने कोसिस "
-"बाँकि छ । तपाईको SIM कार्डको डकुमेन्टबाट सल्लाह लिनुहोस् वा जानकारीका लागि तपाईको "
-"वाहकसँग सम्पर्क राख्नुहोस्।"
+"सिम कार्ड स्थायी रुपमा काम नलाग्ने हुन अगाडि तपाईँसँग एउटा सहि कोड प्रविष्ट गर्ने कोसिस "
+"बाँकि छ । अझ जानकारीका लागि तपाईँको सिम कार्डको मिसिलिकरणबाट सल्लाह लिनुहोस् वा "
+"तपाईँको वाहकसँग सम्पर्क राख्नुहोस्।"
+
+#: pukAttemptMsg3[few]
+msgctxt "pukAttemptMsg3[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"सिम कार्ड स्थायी रुपमा काम नलाग्ने हुन अगाडि तपाईँसँग एउटा सहि कोड प्रविष्ट गर्ने कोसिस "
+"बाँकि छ । अझ जानकारीका लागि तपाईँको सिम कार्डको मिसिलिकरणबाट सल्लाह लिनुहोस् वा "
+"तपाईँको वाहकसँग सम्पर्क राख्नुहोस्।"
+
+#: pukAttemptMsg3[many]
+msgctxt "pukAttemptMsg3[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"सिम कार्ड स्थायी रुपमा काम नलाग्ने हुनु अगाडि तपाईँसँग {{n}} सहि कोड प्रविष्ट गर्ने कोसिस "
+"बाँकि छ । थप जानकारीका लागि आफ्नो यन्त्रको कागजत हेर्नुहोस् वा तपाईँको यन्त्र वाहकसँग "
+"सम्पर्क राख्नुहोस्।"
+
+#: pukAttemptMsg3[other]
+msgctxt "pukAttemptMsg3[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"सिम कार्ड स्थायी रुपमा काम नलाग्ने हुनु अगाडि तपाईँसँग {{n}} सहि कोड प्रविष्ट गर्ने कोसिस "
+"बाँकि छ । थप जानकारीका लागि आफ्नो यन्त्रको कागजत हेर्नुहोस् वा तपाईँको यन्त्र वाहकसँग "
+"सम्पर्क राख्नुहोस्।"
 
 #: pukLastChanceMsg
 msgid ""
@@ -1556,15 +1707,220 @@ msgstr ""
 "स्थानको जानकारी वा साइन-इन जानकारीहरु, भूलाउँछ।"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#. # Storage
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#: storage
+msgid "Storage"
+msgstr "भण्डारण"
+
+#: enableUSBStorage
+msgid "Enable USB storage"
+msgstr "USB भण्डार सक्षम पार्नुहोस्"
+
+#. # Storage :: Application storage
+#: deviceStorage
+msgid "Device storage"
+msgstr "उपकरण भण्डार"
+
+#: usbMassStorage
+msgid "USB mass storage"
+msgstr "USB सामूहिक भण्डार"
+
+#: umsUnplugToDisable
+msgid "Unplug USB cable to disable"
+msgstr "अक्षम पार्नलाई USB तार छुटाउनुहोस्"
+
+#: appStorage
+msgid "Application storage"
+msgstr "एप्लिकेसन भण्डारन "
+
+#: byteUnit-B
+msgid "B"
+msgstr "B"
+
+#: byteUnit-KB
+msgid "KB"
+msgstr "KB"
+
+#: byteUnit-MB
+msgid "MB"
+msgstr "MB"
+
+#: byteUnit-GB
+msgid "GB"
+msgstr "GB"
+
+#: byteUnit-TB
+msgid "TB"
+msgstr "TB"
+
+#: storageSize
+msgid "{{size}} {{unit}}"
+msgstr "{{size}} {{unit}}"
+
+#: availableSize
+msgid "{[ plural(size) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: availableSize[zero]
+msgctxt "availableSize[zero]"
+msgid "{{size}} {{unit}} available"
+msgstr "उपलब्ध {{size}} {{unit}}"
+
+#: availableSize[one]
+msgctxt "availableSize[one]"
+msgid "{{size}} {{unit}} available"
+msgstr "{{size}} {{unit}} उपलब्ध"
+
+#: availableSize[two]
+msgctxt "availableSize[two]"
+msgid "{{size}} {{unit}} available"
+msgstr "{{size}} {{unit}} उपलब्ध"
+
+#: availableSize[few]
+msgctxt "availableSize[few]"
+msgid "{{size}} {{unit}} available"
+msgstr "{{size}} {{unit}} उपलब्ध"
+
+#: availableSize[many]
+msgctxt "availableSize[many]"
+msgid "{{size}} {{unit}} available"
+msgstr "{{size}} {{unit}} उपलब्ध"
+
+#: availableSize[other]
+msgctxt "availableSize[other]"
+msgid "{{size}} {{unit}} available"
+msgstr "{{size}} {{unit}} उपलब्ध"
+
+#: apps-total-space
+msgid "Total space"
+msgstr "जम्मा स्थान"
+
+#: apps-used-space
+msgid "Used"
+msgstr "प्रयोग भएको"
+
+#: apps-free-space
+msgid "Left"
+msgstr "बाँकी"
+
+#: media-storage-details
+msgid ""
+"Photos, videos and music are stored on the SD card. See media storage for "
+"details."
+msgstr ""
+"फोटो, भिडियो र सङ्गितहरु SD कार्डमा भण्डार गरिएको छ | थप जानकारीका लागि साधन "
+"भण्डार हेर्नुहोस् |"
+
+#: ums-shared-volumes
+msgid "{{list}} shared"
+msgstr "{{list}} साझेदारी गरियो"
+
+#. # Storage :: Media storage
+#: mediaStorage
+msgid "Media storage"
+msgstr "साधन भण्डार"
+
+#: internalStorage
+msgctxt "internalStorage"
+msgid "Internal Storage"
+msgstr "आन्तरिक भण्डारण"
+
+#: storage-name-0
+msgctxt "storage-name-0"
+msgid "Internal Storage"
+msgstr "आन्तरिक भण्डारण"
+
+#: storage-name-1
+msgid "SD Card Storage"
+msgstr "SD कार्ड भण्डार"
+
+#: storage-name-2
+msgid "SD Card Storage 2"
+msgstr "SD कार्ड भण्डार २"
+
+#: short-storage-name-0
+msgid "Internal"
+msgstr "आन्तरिक"
+
+#: short-storage-name-1
+msgid "SD Card"
+msgstr "SD कार्ड"
+
+#: short-storage-name-2
+msgid "SD Card 2"
+msgstr "SD कार्ड २"
+
+#: music-space
+msgid "Music"
+msgstr "संगीत"
+
+#: pictures-space
+msgid "Pictures"
+msgstr "तस्विरहरु"
+
+#: videos-space
+msgid "Movies"
+msgstr "फिल्महरु"
+
+#: left-space
+msgctxt "left-space"
+msgid "Space left"
+msgstr "बाँकी खाली स्थान"
+
+#: free-space
+msgctxt "free-space"
+msgid "Space left"
+msgstr "बाँकी खाली स्थान"
+
+#: size-not-available
+msgid "Not available"
+msgstr "उपलब्ध छैन"
+
+#: no-storage
+msgid "No storage found"
+msgstr "कुनै भण्डार भेटिएन"
+
+#: advanced
+msgid "Advanced"
+msgstr "आधुनिक"
+
+#: turn-on-ums-confirm
+msgid ""
+"Turning on Enable USB storage allows another computer or device connected "
+"using USB to access files on this phone."
+msgstr ""
+"USB भण्डार सक्षम पारेमा अन्य USBमा जडान भएका कम्प्युटर वा यन्त्रलाई यस फोनमा फाइलहरुको "
+"पहुँच हुनेछ।"
+
+#: default-media-location
+msgid "Default media location"
+msgstr "पूर्वनिर्धारित मिडिया स्थान"
+
+#: default-media-location-msg
+msgid "Choose where photos, videos, music and downloads are stored by default."
+msgstr "फोटो, भिडियो, सङ्गित र डाउनलोडहारु भएको पूर्वनिर्धारित स्थान चयन गर्नुहोस्।"
+
+#: change-default-location-confirm
+msgid ""
+"Changing the default media storage volume will effect where photos, videos, "
+"downloads and other media will be saved to by default. Existing data will "
+"remain in its current location."
+msgstr ""
+"पूर्वनिर्धारित मिडिया भण्डार स्थान परिवर्तन गरेमा फोटो, भिडियो, सङ्गित, डाउनलोड र "
+"अन्य मिडियालाई पूर्वनिर्धारित स्थानमा बचत गर्नमा असर पर्नेछ। पहिल्यै अवस्थित भएका "
+"डाटाहरु आफ्नै हालको क्षेत्रमा हुनेछन्।"
+
+#: share-using-usb
+msgid "Share using USB"
+msgstr "USB प्रयोग गरेर  साझा गर्नुहोस्"
+
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Device
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #: device
 msgid "Device"
 msgstr "यन्त्र"
-
-#: storage
-msgid "Storage"
-msgstr "भण्डारण"
 
 #: help
 msgctxt "help"
@@ -1879,134 +2235,6 @@ msgstr "पहिले पटक चलाउने सुरु"
 msgid "No first time use app found"
 msgstr "पहिलो चोटि चलाउने भएको एप भेटिएन"
 
-#. # Device :: Device storage
-#: deviceStorage
-msgid "Device storage"
-msgstr "उपकरण भण्डार"
-
-#: usbMassStorage
-msgid "USB mass storage"
-msgstr "USB सामूहिक भण्डार"
-
-#: umsUnplugToDisable
-msgid "Unplug USB cable to disable"
-msgstr "अक्षम पार्नलाई USB तार छुटाउनुहोस्"
-
-#: appStorage
-msgid "Application storage"
-msgstr "एप्लिकेसन भण्डारन "
-
-#: byteUnit-B
-msgid "B"
-msgstr "B"
-
-#: byteUnit-KB
-msgid "KB"
-msgstr "KB"
-
-#: byteUnit-MB
-msgid "MB"
-msgstr "MB"
-
-#: byteUnit-GB
-msgid "GB"
-msgstr "GB"
-
-#: byteUnit-TB
-msgid "TB"
-msgstr "TB"
-
-#: storageSize
-msgid "{{size}} {{unit}}"
-msgstr "{{size}} {{unit}}"
-
-#: availableSize
-msgid "{[ plural(size) ]}"
-msgstr "{[ plural(n) ]}"
-
-#: availableSize[zero]
-msgctxt "availableSize[zero]"
-msgid "{{size}} {{unit}} available"
-msgstr "उपलब्ध {{size}} {{unit}}"
-
-#: availableSize[one]
-msgctxt "availableSize[one]"
-msgid "{{size}} {{unit}} available"
-msgstr "{{size}} {{unit}} उपलब्ध"
-
-#: availableSize[two]
-msgctxt "availableSize[two]"
-msgid "{{size}} {{unit}} available"
-msgstr "{{size}} {{unit}} उपलब्ध"
-
-#: availableSize[few]
-msgctxt "availableSize[few]"
-msgid "{{size}} {{unit}} available"
-msgstr "{{size}} {{unit}} उपलब्ध"
-
-#: availableSize[many]
-msgctxt "availableSize[many]"
-msgid "{{size}} {{unit}} available"
-msgstr "{{size}} {{unit}} उपलब्ध"
-
-#: availableSize[other]
-msgctxt "availableSize[other]"
-msgid "{{size}} {{unit}} available"
-msgstr "{{size}} {{unit}} उपलब्ध"
-
-#: apps-total-space
-msgid "Total space"
-msgstr "जम्मा स्थान"
-
-#: apps-used-space
-msgid "Used"
-msgstr "प्रयोग भएको"
-
-#: apps-free-space
-msgid "Left"
-msgstr "बाँकी"
-
-#: media-storage-details
-msgid ""
-"Photos, videos and music are stored on the SD card. See media storage for "
-"details."
-msgstr ""
-"फोटो, भिडियो र सङ्गितहरु SD कार्डमा भण्डार गरिएको छ | थप जानकारीका लागि साधन "
-"भण्डार हेर्नुहोस् |"
-
-#. # Device :: Media storage
-#: mediaStorage
-msgid "Media storage"
-msgstr "साधन भण्डार"
-
-#: music-space
-msgid "Music"
-msgstr "संगीत"
-
-#: pictures-space
-msgid "Pictures"
-msgstr "तस्विरहरु"
-
-#: videos-space
-msgid "Movies"
-msgstr "फिल्महरु"
-
-#: left-space
-msgid "Space left"
-msgstr "बाँकी स्थान"
-
-#: size-not-available
-msgid "Not available"
-msgstr "उपलब्ध छैन"
-
-#: no-storage
-msgid "No storage found"
-msgstr "कुनै भण्डार भेटिएन"
-
-#: advanced
-msgid "Advanced"
-msgstr "आधुनिक"
-
 #. # Device :: Battery
 #: battery
 msgid "Battery"
@@ -2036,14 +2264,14 @@ msgstr "पावर बचत मोड"
 msgid "{{level}}% battery left"
 msgstr "{{level}}% ब्याटरी बाँकी"
 
-#: powerSave-expl
+#: powerSave-explanation
 msgid ""
-"Turning on power save mode turns off the phone’s data, Bluetooth and GPS "
-"connections to extend battery life. You can still turn these services back "
-"on manually."
+"Turning on power save mode turns off the phone’s data, Bluetooth and "
+"Geolocation connections to extend battery life. You can still turn these "
+"services back on manually."
 msgstr ""
-"शक्ति शैली अन गरेमा फोनको ब्याटरी जीवन बढाउन डाटा, ब्लुटुथ र GPS जडानहरु बन्द गरिनेछ | "
-"तपाईले यी सेवाहरु आफैँ पछि अन गर्न सक्नुहुन्छ |"
+"शक्ति शैली चालू गरेमा फोनको ब्याटरी जीवन बढाउन डाटा, ब्लुटुथ र GPS जडानहरु बन्द गरिनेछ। "
+"तपाईले यी सेवाहरु आफै पछि चालू गर्न सक्नुहुन्छ।"
 
 #: turnOnAuto
 msgid "Turn on automatically"
@@ -2105,9 +2333,9 @@ msgstr "सधैँ प्रतिवेदन पठाउनुहोस्"
 msgid "Never send a report"
 msgstr "कहिलेपनि प्रतिवेदन नपठाउनुहोस्"
 
-#: askToSendReport
-msgid "Ask me when a crash occurs"
-msgstr "क्र्यास हुदाँ मलाई सोध्नुहोस्"
+#: askToSendReport2
+msgid "Ask each time"
+msgstr "हरेक पटक सोध्नुहोस्"
 
 #. # Device :: Improve Browser OS :: Crash Reports
 #. # LOCALIZATION NOTE (crash-reports-description-*): these strings are also included in system.properties
@@ -2196,6 +2424,34 @@ msgstr "सिम कार्डका एप्लिकेसनहरु उ
 #: simToolkit
 msgid "SIM toolkit"
 msgstr "SIM टुलकिट"
+
+#~ msgid "GPS"
+#~ msgstr "GPS"
+
+#~ msgid "MMS settings"
+#~ msgstr "MMS सेटिङहरू"
+
+#~ msgctxt "pinAttemptMsg2"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgid "Last chance."
+#~ msgstr "अन्तिम मौका।"
+
+#~ msgctxt "pinAttemptMsg2[few]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} वटा प्रयासहरु बाँकी।"
+
+#~ msgctxt "pinAttemptMsg2[many]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} वटा प्रयास बाँकी।"
+
+#~ msgctxt "pinAttemptMsg2[other]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} वटा प्रयास बाँकी।"
+
+#~ msgid "Ask me when a crash occurs"
+#~ msgstr "क्र्यास हुदाँ मलाई सोध्नुहोस्"
 
 #, fuzzy
 #~ msgctxt "gitInfo"

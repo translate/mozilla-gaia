@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
-"PO-Revision-Date: 2013-05-03 08:28+0000\n"
-"Last-Translator: Selim <selim@sum.lu>\n"
+"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"PO-Revision-Date: 2013-06-14 12:01+0000\n"
+"Last-Translator: cebeci88 <servet.cebeci@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1367569685.0\n"
+"X-POOTLE-MTIME: 1371211316.000000\n"
 
 #: setup-app-name-header
 msgid "Mail"
@@ -195,6 +195,11 @@ msgstr ""
 "\"{{server}}\" sunucusu bakım nedeniyle çevrimdışı. Daha sonra tekrar "
 "deneyin."
 
+#. # The error when the user trying to register a duplicate account
+#: setup-error-account-already-exists
+msgid "This account is already configured."
+msgstr "Bu hesap zaten yapılandırılmış."
+
 #: setup-manual-config2
 msgctxt "setup-manual-config2"
 msgid "Manual setup"
@@ -294,9 +299,8 @@ msgid "Retry"
 msgstr "Tekrar dene"
 
 #: settings-main-header
-#, fuzzy
 msgid "Mail Settings"
-msgstr "Posta ayarları"
+msgstr "Posta Ayarları"
 
 #: settings-done
 msgid "Done"
@@ -308,9 +312,8 @@ msgid "Accounts"
 msgstr "Hesaplar"
 
 #: settings-account-add
-#, fuzzy
 msgid "Add Account"
-msgstr "Hesap ekle"
+msgstr "Hesap Ekle"
 
 #: settings-account-delete
 msgid "Delete account"
@@ -357,7 +360,7 @@ msgstr "Ekleri indir"
 
 #: settings-notify-mail
 msgid "Notify of new mail"
-msgstr "Yeei postaları bildir"
+msgstr "Yeni postaları bildir"
 
 #: settings-check-3min
 msgid "3 minutes"
@@ -568,7 +571,7 @@ msgstr "Konu"
 
 #: compose-draft-save
 msgid "Save to Local Drafts"
-msgstr ""
+msgstr "Yerel Taslaklar'a kaydet"
 
 #: compose-discard-message
 msgid "Discard email?"
@@ -585,6 +588,24 @@ msgstr "E-posta gönderiliyor"
 #: compose-send-message-failed
 msgid "Sending email failed"
 msgstr "E-posta gönderimi başarısız"
+
+#: composer-attachment-large
+msgid "Attachment too large"
+msgstr "Ek çok büyük"
+
+#: composer-attachments-large
+msgid "Attachments too large"
+msgstr "Ekler çok büyük"
+
+#: compose-attchment-size-exceeded
+msgid "The selected attachment is too large to send with this message."
+msgstr ""
+
+#: compose-attchments-size-exceeded
+msgid ""
+"The selected attachments are too large to send with this message. Try "
+"selecting fewer files."
+msgstr ""
 
 #: dialog-button-ok
 msgid "OK"
@@ -630,6 +651,10 @@ msgstr "Sil"
 #: message-edit-delete-confirm
 msgid "Delete email message?"
 msgstr "E-posta iletisi silinsin mi?"
+
+#: message-send-attachment-disabled-confirm
+msgid "Attachments can not be forwarded."
+msgstr ""
 
 #: message-multiedit-header
 msgctxt "message-multiedit-header"
@@ -897,7 +922,7 @@ msgstr "Arşiv"
 
 #: folder-localdrafts
 msgid "Local Drafts"
-msgstr ""
+msgstr "Yerel Taslaklar"
 
 #: toaster-undo
 msgid "Undo"
@@ -1093,6 +1118,39 @@ msgstr "Metni kaldır"
 #: confirm-dialog-title
 msgid "Confirmation"
 msgstr "Onay"
+
+#. # new-emails refers to the text shown on a notification that users
+#. # get when they receive new, unread email. The ui component that utilizes
+#. # this lives in apps/email/js/message_list_topbar.js.
+#: new-emails
+#, fuzzy
+msgctxt "new-emails"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: new-emails[one]
+msgid "1 New Email"
+msgstr ""
+
+#: new-emails[two]
+msgctxt "new-emails[two]"
+msgid "{{ n }} New Emails"
+msgstr ""
+
+#: new-emails[few]
+msgctxt "new-emails[few]"
+msgid "{{ n }} New Emails"
+msgstr ""
+
+#: new-emails[many]
+msgctxt "new-emails[many]"
+msgid "{{ n }} New Emails"
+msgstr ""
+
+#: new-emails[other]
+msgctxt "new-emails[other]"
+msgid "{{ n }} New Emails"
+msgstr ""
 
 #~ msgid "Please wait while your account is set up"
 #~ msgstr "Hesabınız kurulurken lütfen bekleyin"
