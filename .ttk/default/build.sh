@@ -3,20 +3,19 @@
 source ttk.inc.sh
 
 langs=$(which_langs $*)
-release=$(git rev-parse --abbrev-ref HEAD)
 
-if [ x$release == x"master" ]; then
-	release=""
+if [ -z "$release" ]; then
 	mozilla_repository=http://hg.mozilla.org/gaia-l10n
 else
-	mozilla_repository=http://hg.mozilla.org/releases/gaia-l10n/$release
+	mozrelease="v$(echo $release | tr '.' '_')"
+	mozilla_repository=http://hg.mozilla.org/releases/gaia-l10n/$mozrelease
 fi
 
 function update_hg_repo()
 {
 	(
-	mkdir -p $base_dir/build/locales/$release
-	cd $base_dir/build/locales/$release
+	mkdir -p $base_dir/build/locales/$mozrelease
+	cd $base_dir/build/locales/$mozrelease
 	if [ -d $mozlang ]; then
 		cd $mozlang;
 		hg pull;
@@ -38,7 +37,7 @@ do
 		
 		# Make new template files
 		rm $(find $translation_dir/$polang -name "*.pot")
-		(cd $base_dir/build/locales/$release/$mozlang; moz2po $verbosity --exclude=".hgtags" --exclude="*.diff" -P . $translation_dir/$polang)
+		(cd $base_dir/build/locales/$mozrelease/$mozlang; moz2po $verbosity --exclude=".hgtags" --exclude="*.diff" -P . $translation_dir/$polang)
 	else
 		polang=$(get_language_pootle $lang)
 		mozlang=$(get_language_upstream $lang)
@@ -46,7 +45,7 @@ do
 		# update against templates
 		pot2po $verbosity -t $translation_dir/$polang $translation_dir/templates $translation_dir/$polang
 		# new locale files
-		po2moz $verbosity --exclude="obsolete" -t $base_dir/build/locales/$release/en-US $translation_dir/$polang $base_dir/build/locales/$release/$mozlang
+		po2moz $verbosity --exclude="obsolete" -t $base_dir/build/locales/$mozrelease/en-US $translation_dir/$polang $base_dir/build/locales/$mozrelease/$mozlang
 	fi
 done
 
