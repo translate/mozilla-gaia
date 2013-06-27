@@ -5,8 +5,10 @@ source ttk.inc.sh
 langs=$(which_langs $*)
 
 if [ -z "$release" ]; then
+	git checkout master
 	mozilla_repository=http://hg.mozilla.org/gaia-l10n
 else
+	git checkout $release
 	mozrelease="v$(echo $release | tr '.' '_')"
 	mozilla_repository=http://hg.mozilla.org/releases/gaia-l10n/$mozrelease
 fi
