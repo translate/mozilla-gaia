@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
+"POT-Creation-Date: 2013-07-02 18:16+0200\n"
 "PO-Revision-Date: 2013-05-10 14:15+0200\n"
 "Last-Translator: Ibrahima SARR <ibrahima.sarr@pulaagu.com>\n"
 "Language-Team: FULA LOCALIZATION\n"
@@ -12,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -74,14 +74,6 @@ msgstr "(PUK SIM ena waɗɗii)"
 #: emergencyCallsOnly-networkLocked
 msgid "(network locked)"
 msgstr "(resoo ko cokaaɗo)"
-
-#: emergencyCallsOnly-serviceProviderLocked
-msgid "(service provider locked)"
-msgstr "(operatoor ko cokaaɗo)"
-
-#: emergencyCallsOnly-corporateLocked
-msgid "(corporate locked)"
-msgstr "(entarpriis ko cokaaɗo)"
 
 #: enterPIN
 msgid "Enter PIN"
@@ -193,6 +185,11 @@ msgstr "Eey"
 msgid "No"
 msgstr "Alaa"
 
+#: deny
+#, fuzzy
+msgid "Don't allow"
+msgstr "Hoto Yamir"
+
 #: allow
 msgid "Allow"
 msgstr "Yamir"
@@ -286,6 +283,12 @@ msgstr "Haaytin Aafgol"
 msgid "Resume"
 msgstr "Jokku"
 
+#: continue
+#, fuzzy
+msgctxt "continue"
+msgid "Continue"
+msgstr "Jokku"
+
 #: stopDownloading
 msgid "Stop downloading {{ app }}?"
 msgstr "Dartin aawtagol {{ app }}?"
@@ -308,8 +311,8 @@ msgid ""
 "apps or media, and try installing again from the original source."
 msgstr ""
 "Boowal ndesgu ena ŋakki ngam aafde ngal jaaɓngal. Momtu jaaɓɗe walla mejaaje "
-"booyɗe ngam ɓeydude boowal, kadi eto-ɗaa aafde goɗngol iwde e sewnde asliire "
-"ndee."
+"booyɗe ngam ɓeydude boowal, kadi eto-ɗaa aafde goɗngol iwde e sewnde "
+"asliire ndee."
 
 #: app-install-success
 msgid "{{ appName }} installed"
@@ -472,8 +475,8 @@ msgstr "Rewnu aawtagol kesɗitine e ceŋol keɓe?"
 #: downloadUpdatesViaDataConnectionMessage
 msgid ""
 "Updates are downloaded via data connection when Wi-Fi is not available. When "
-"using data connection, phone calls may be blocked and additional charges may "
-"also apply."
+"using data connection, phone calls may be blocked and additional charges "
+"may also apply."
 msgstr ""
 "Aawtagol kesɗitine rewata ko e ceŋol keɓe so Wifi heɓotaako. So ceŋol keɓe "
 "ena huutoree, noddaali cinndel ena mbaawi waasde ɓennude tee fere goɗɗe "
@@ -566,8 +569,8 @@ msgid ""
 "{{name}} requires a network connection. Turn off airplane mode from Settings "
 "and connect to a Wi-Fi or mobile data network."
 msgstr ""
-"{{name}} ena naamnii ceŋagol e resoo. Ñif mbayka ndiwoowa e Teelte kisa ceŋo-"
-"ɗaa e Wifi walla resoo keɓe cinndel."
+"{{name}} ena naamnii ceŋagol e resoo. Ñif mbayka ndiwoowa e Teelte kisa "
+"ceŋo-ɗaa e Wifi walla resoo keɓe cinndel."
 
 #: network-connection-unavailable
 msgid "Network connection unavailable"
@@ -682,9 +685,10 @@ msgstr ""
 #. # Localization note (crash-reports-description-3-*): These strings are a paragraph, with a "privacy policy"
 #. # link in the middle. Include trailing spaces as needed.
 #: crash-reports-description-3-start
+#, fuzzy
 msgid ""
 "We use crash reports to try to fix problems and improve our products. We "
-"handle your information as we describe in our "
+"handle your information as we describe in our"
 msgstr ""
 "Min kuutorto jaŋtooje kooke ɗee ngam ñawndude caɗe tee ɓeydude kaɓirɗe ɗee "
 "moƴƴude. Mi kuutortoo humpito maa ko no min ciforii e "
@@ -738,14 +742,6 @@ msgstr "Jaɓ egginol fiilde Bluutuus?"
 #: wantToReceiveFile
 msgid "{{deviceName}} would like to transfer {{fileName}} ({{fileSize}})."
 msgstr "{{deviceName}} ena yiɗi egginde {{fileName}} ({{fileSize}})."
-
-#: notification-fileTransfer-title
-msgid "Receive file?"
-msgstr "Jaɓɓin fiilde?"
-
-#: notification-fileTransfer-description
-msgid "File incoming from another device"
-msgstr "Fiilde ummiinde e keɓirgol goɗngol"
 
 #: byteUnit-B
 msgid "Bytes"
@@ -805,6 +801,8 @@ msgid "Cancel Bluetooth file transfer?"
 msgstr "Haaytin egginol fiilde Bluutuus?"
 
 #: continue
+#, fuzzy
+msgctxt "continue"
 msgid "Continue"
 msgstr "Jokku"
 
@@ -820,25 +818,29 @@ msgstr "timmii"
 msgid "failed"
 msgstr "woorii"
 
-#: transferFinished-sentSuccessful-title
-msgid "File sent"
-msgstr "Fiilde neldaama"
+#: transferFinished-sendingCompletedTitle
+msgid "Bluetooth sending file complete"
+msgstr "Neldugol fiilde e Bluutuus timmii"
 
-#: transferFinished-receivedSuccessful-title
-msgid "File received"
-msgstr "Fiilde heɓaama"
+#: transferFinished-receivedCompletedTitle
+msgid "Bluetooth received file ready to open"
+msgstr "Bluutuus heɓii fiilde hebiinde udditeede"
 
-#: transferFinished-sentFailed-title
-msgid "File could not be sent"
-msgstr "Fiilde horiima neldeede"
+#: transferFinished-sendingFailedTitle
+msgid "Bluetooth sending file failed"
+msgstr "Neldugol fiilde e Bluutuus woorii"
 
-#: transferFinished-receivedFailed-title
-msgid "File could not be received"
-msgstr "Fiilde horiima jaɓɓineede"
+#: transferFinished-receivedFailedTitle
+msgid "Bluetooth received a file it can not open"
+msgstr "Bluutuus heɓii fiilde horiinde udditeede"
 
-#: unknown-file
-msgid "Unknown file"
-msgstr "Fiilde anndaaka"
+#: transferFinished-completedBody
+msgid "Transfer completed"
+msgstr "Eggingol timminaama"
+
+#: transferFinished-failedBody
+msgid "Transfer failed"
+msgstr "Eggingol woorii"
 
 #: unknown-device
 msgid "Unknown device"
@@ -901,14 +903,6 @@ msgstr "Kod PUK"
 msgid "NCK code"
 msgstr "Kod NCK"
 
-#: cckCode
-msgid "CCK code"
-msgstr "Kod CCK"
-
-#: spckCode
-msgid "SPCK code"
-msgstr "Kod SPCK"
-
 #: whatIsSimPin
 msgid "What is a SIM PIN?"
 msgstr "Ko woni PIN kartal SIM?"
@@ -945,50 +939,86 @@ msgstr "Naatnu kod PUK"
 msgid "Enter NCK code"
 msgstr "Naatnu kod NCK"
 
-#: cckTitle
-msgid "Enter CCK code"
-msgstr "Naatnu kod CCK"
-
-#: spckTitle
-msgid "Enter SPCK code"
-msgstr "Naatnu kod SPCK"
-
 #: newpinTitle
 msgid "New PIN"
 msgstr "Kod PIN keso"
+
+#: inputCodeRetriesLeft
+#, fuzzy
+msgctxt "inputCodeRetriesLeft"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: inputCodeRetriesLeft[one]
+msgid "last try."
+msgstr ""
+
+#: inputCodeRetriesLeft[two]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[two]"
+msgid "{{n}} tries left."
+msgstr "etanɗe {{n}} keddii."
+
+#: inputCodeRetriesLeft[few]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[few]"
+msgid "{{n}} tries left."
+msgstr "etanɗe {{n}} keddii."
+
+#: inputCodeRetriesLeft[many]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[many]"
+msgid "{{n}} tries left."
+msgstr "etanɗe {{n}} keddii."
+
+#: inputCodeRetriesLeft[other]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[other]"
+msgid "{{n}} tries left."
+msgstr "etanɗe {{n}} keddii."
 
 #: pinErrorMsg
 msgid "The PIN was incorrect."
 msgstr "Kod PIN oo moƴƴaani."
 
-#: pinAttemptMsg
-msgctxt "pinAttemptMsg"
+#: pinAttemptMsg2
+#, fuzzy
+msgctxt "pinAttemptMsg2"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: pinAttemptMsg[one]
-msgid "one last try."
-msgstr "etannde wootere heddii."
+#: pinAttemptMsg2[one]
+msgid ""
+"You have one try left to enter the correct code before locking the SIM card."
+msgstr ""
 
-#: pinAttemptMsg[two]
-msgctxt "pinAttemptMsg[two]"
-msgid "{{n}} tries left."
-msgstr "etanɗe {{n}} keddii."
+#: pinAttemptMsg2[two]
+msgctxt "pinAttemptMsg2[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
-#: pinAttemptMsg[few]
-msgctxt "pinAttemptMsg[few]"
-msgid "{{n}} tries left."
-msgstr "etanɗe {{n}} keddii."
+#: pinAttemptMsg2[few]
+msgctxt "pinAttemptMsg2[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
-#: pinAttemptMsg[many]
-msgctxt "pinAttemptMsg[many]"
-msgid "{{n}} tries left."
-msgstr "etanɗe {{n}} keddii."
+#: pinAttemptMsg2[many]
+msgctxt "pinAttemptMsg2[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
-#: pinAttemptMsg[other]
-msgctxt "pinAttemptMsg[other]"
-msgid "{{n}} tries left."
-msgstr "etanɗe {{n}} keddii."
+#: pinAttemptMsg2[other]
+msgctxt "pinAttemptMsg2[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
 #: pinLastChanceMsg
 msgid ""
@@ -1005,7 +1035,8 @@ msgstr "Kartal SIM ngal daaƴaama."
 #: enterPukMsg
 msgid ""
 "You must enter the Personal Unlocking Key (PUK) code for the SIM card. Refer "
-"to your SIM card documentation or contact your carrier for more information."
+"to your SIM card documentation or contact your carrier for more "
+"information."
 msgstr ""
 "Alaa e sago naatnaa Kod Daaƴtirɗo Keeriiɗo kartal SIM ngal (PUK). Rutto e "
 "kaayitaaji garduɗi e kartal maa SIM walla jokkondir e carwinoowo maa ngam "
@@ -1015,7 +1046,62 @@ msgstr ""
 msgid "The PUK code is incorrect."
 msgstr "Kod PUK oo moƴƴaani."
 
-#: pukAttemptMsg
+#: pukAttemptMsg2
+#, fuzzy
+msgctxt "pukAttemptMsg2"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: pukAttemptMsg2[one]
+#, fuzzy
+msgid ""
+"You have one try left to enter the correct code before this SIM card will be "
+"permanently unusable. Refer to your SIM card documentation or contact your "
+"carrier for more information."
+msgstr ""
+"Aɗa heddoraa etanɗe {{n}} ngam naatnude kod moƴƴo hade ngal kartal SIM bonde "
+"haa badaa. Rutto e kaayitaaji garduɗi e kartal maa SIM walla jokkondir e "
+"carwinoowo maa ngam ɓeydude humpito."
+
+#: pukAttemptMsg2[two]
+#, fuzzy
+msgctxt "pukAttemptMsg2[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Aɗa heddoraa etanɗe {{n}} ngam naatnude kod moƴƴo hade ngal kartal SIM bonde "
+"haa badaa. Rutto e kaayitaaji garduɗi e kartal maa SIM walla jokkondir e "
+"carwinoowo maa ngam ɓeydude humpito."
+
+#: pukAttemptMsg2[few]
+#, fuzzy
+msgctxt "pukAttemptMsg2[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Aɗa heddoraa etanɗe {{n}} ngam naatnude kod moƴƴo hade ngal kartal SIM bonde "
+"haa badaa. Rutto e kaayitaaji garduɗi e kartal maa SIM walla jokkondir e "
+"carwinoowo maa ngam ɓeydude humpito."
+
+#: pukAttemptMsg2[many]
+#, fuzzy
+msgctxt "pukAttemptMsg2[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Aɗa heddoraa etanɗe {{n}} ngam naatnude kod moƴƴo hade ngal kartal SIM bonde "
+"haa badaa. Rutto e kaayitaaji garduɗi e kartal maa SIM walla jokkondir e "
+"carwinoowo maa ngam ɓeydude humpito."
+
+#: pukAttemptMsg2[other]
+#, fuzzy
+msgctxt "pukAttemptMsg2[other]"
 msgid ""
 "You have {{n}} tries left to enter the correct code before this SIM card "
 "will be permanently unusable. Refer to your SIM card documentation or "
@@ -1051,7 +1137,62 @@ msgstr "Kodduuji PIN ɗii nanndaani."
 msgid "The NCK code is incorrect."
 msgstr "Kod NCK oo moƴƴaani."
 
-#: nckAttemptMsg
+#: nckAttemptMsg2
+#, fuzzy
+msgctxt "nckAttemptMsg2"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: nckAttemptMsg2[one]
+#, fuzzy
+msgid ""
+"Network depersonalization request failure. You have one try left to enter "
+"the correct code. Refer to your device documentation or contact your carrier "
+"for more information."
+msgstr ""
+"Goorol ɗaɓɓitannde ittugol keertine resoo. Aɗa heddoraa etanɗe {{n}} ngam "
+"naatnude kod moƴƴo oo. Ƴeew e famminorde kaɓirgol maa walla jokkondir e "
+"operatoor maa ngam ɓeudude humpito."
+
+#: nckAttemptMsg2[two]
+#, fuzzy
+msgctxt "nckAttemptMsg2[two]"
+msgid ""
+"Network depersonalization request failure. You have {{n}} tries left to "
+"enter the correct code. Refer to your device documentation or contact your "
+"carrier for more information."
+msgstr ""
+"Goorol ɗaɓɓitannde ittugol keertine resoo. Aɗa heddoraa etanɗe {{n}} ngam "
+"naatnude kod moƴƴo oo. Ƴeew e famminorde kaɓirgol maa walla jokkondir e "
+"operatoor maa ngam ɓeudude humpito."
+
+#: nckAttemptMsg2[few]
+#, fuzzy
+msgctxt "nckAttemptMsg2[few]"
+msgid ""
+"Network depersonalization request failure. You have {{n}} tries left to "
+"enter the correct code. Refer to your device documentation or contact your "
+"carrier for more information."
+msgstr ""
+"Goorol ɗaɓɓitannde ittugol keertine resoo. Aɗa heddoraa etanɗe {{n}} ngam "
+"naatnude kod moƴƴo oo. Ƴeew e famminorde kaɓirgol maa walla jokkondir e "
+"operatoor maa ngam ɓeudude humpito."
+
+#: nckAttemptMsg2[many]
+#, fuzzy
+msgctxt "nckAttemptMsg2[many]"
+msgid ""
+"Network depersonalization request failure. You have {{n}} tries left to "
+"enter the correct code. Refer to your device documentation or contact your "
+"carrier for more information."
+msgstr ""
+"Goorol ɗaɓɓitannde ittugol keertine resoo. Aɗa heddoraa etanɗe {{n}} ngam "
+"naatnude kod moƴƴo oo. Ƴeew e famminorde kaɓirgol maa walla jokkondir e "
+"operatoor maa ngam ɓeudude humpito."
+
+#: nckAttemptMsg2[other]
+#, fuzzy
+msgctxt "nckAttemptMsg2[other]"
 msgid ""
 "Network depersonalization request failure. You have {{n}} tries left to "
 "enter the correct code. Refer to your device documentation or contact your "
@@ -1068,8 +1209,8 @@ msgid ""
 "more information."
 msgstr ""
 "Goorol ɗaɓɓitannde ittugol keertine resoo. Fartaŋŋe wattan ngam naatnude kod "
-"NCK moƴƴo oo. Ƴeew e famminorde kaɓirgol maa walla jokkondir e operatoor maa "
-"ngam ɓeudude humpito."
+"NCK moƴƴo oo. Ƴeew e famminorde kaɓirgol maa walla jokkondir e operatoor "
+"maa ngam ɓeudude humpito."
 
 #. # Activity selection menu titles
 #: activity-pick
@@ -1146,23 +1287,128 @@ msgstr "{{origin}} wonaa e njaajeendi yaynirde."
 msgid "The network {{networkName}} was found. Join network?"
 msgstr "Resoo {{networkName}} yiytaama. Naat e resoo?"
 
-#~ msgid "Bluetooth sending file complete"
-#~ msgstr "Neldugol fiilde e Bluutuus timmii"
+#. # [CE] Volume warning toast
+#: ceWarningtitle
+msgid "Volume warning"
+msgstr ""
 
-#~ msgid "Bluetooth received file ready to open"
-#~ msgstr "Bluutuus heɓii fiilde hebiinde udditeede"
+#: ceWarningcontent
+msgid ""
+"To prevent possible hearing damage, do not listen at hight volume levels for "
+"long periods."
+msgstr ""
 
-#~ msgid "Bluetooth sending file failed"
-#~ msgstr "Neldugol fiilde e Bluutuus woorii"
+#. #power saving mode
+#: notification-powersaving-mode-on-title
+msgid "Power Saving Mode"
+msgstr ""
 
-#~ msgid "Bluetooth received a file it can not open"
-#~ msgstr "Bluutuus heɓii fiilde horiinde udditeede"
+#: notification-powersaving-mode-on-description
+msgid "Power saving mode is on."
+msgstr ""
 
-#~ msgid "Transfer completed"
-#~ msgstr "Eggingol timminaama"
+#. # Low device storage
+#: low-device-storage
+msgid "Device space low.\n"
+msgstr ""
 
-#~ msgid "Transfer failed"
-#~ msgstr "Eggingol woorii"
+#. # LOCALIZATION NOTE {{value}} is the amount of remaining free space expressed
+#. # in the corresponding unit ({{unit}}), which is one of the byteUnit-* strings
+#. # of this same file.
+#: free-space
+msgid "{[ plural(value) ]}"
+msgstr ""
+
+#: free-space[zero]
+msgid "No remaining free space."
+msgstr ""
+
+#: free-space[one]
+msgctxt "free-space[one]"
+msgid "Less than {{value}} {{unit}} remaining."
+msgstr ""
+
+#: free-space[two]
+msgctxt "free-space[two]"
+msgid "Less than {{value}} {{unit}} remaining."
+msgstr ""
+
+#: free-space[few]
+msgctxt "free-space[few]"
+msgid "Less than {{value}} {{unit}} remaining."
+msgstr ""
+
+#: free-space[many]
+msgctxt "free-space[many]"
+msgid "Less than {{value}} {{unit}} remaining."
+msgstr ""
+
+#: free-space[other]
+msgctxt "free-space[other]"
+msgid "Less than {{value}} {{unit}} remaining."
+msgstr ""
+
+#: unknown-free-space
+msgid "Unknown remaining space."
+msgstr ""
+
+#~ msgid "(service provider locked)"
+#~ msgstr "(operatoor ko cokaaɗo)"
+
+#~ msgid "(corporate locked)"
+#~ msgstr "(entarpriis ko cokaaɗo)"
+
+#~ msgid "Receive file?"
+#~ msgstr "Jaɓɓin fiilde?"
+
+#~ msgid "File incoming from another device"
+#~ msgstr "Fiilde ummiinde e keɓirgol goɗngol"
+
+#~ msgid "File sent"
+#~ msgstr "Fiilde neldaama"
+
+#~ msgid "File received"
+#~ msgstr "Fiilde heɓaama"
+
+#~ msgid "File could not be sent"
+#~ msgstr "Fiilde horiima neldeede"
+
+#~ msgid "File could not be received"
+#~ msgstr "Fiilde horiima jaɓɓineede"
+
+#~ msgid "Unknown file"
+#~ msgstr "Fiilde anndaaka"
+
+#~ msgid "CCK code"
+#~ msgstr "Kod CCK"
+
+#~ msgid "SPCK code"
+#~ msgstr "Kod SPCK"
+
+#~ msgid "Enter CCK code"
+#~ msgstr "Naatnu kod CCK"
+
+#~ msgid "Enter SPCK code"
+#~ msgstr "Naatnu kod SPCK"
+
+#~ msgctxt "pinAttemptMsg"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgid "one last try."
+#~ msgstr "etannde wootere heddii."
+
+#~ msgctxt "pinAttemptMsg[few]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "etanɗe {{n}} keddii."
+
+#~ msgctxt "pinAttemptMsg[many]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "etanɗe {{n}} keddii."
+
+#~ msgctxt "pinAttemptMsg[other]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "etanɗe {{n}} keddii."
 
 #~ msgid "Emergency calls only (no SIM)"
 #~ msgstr "Noddaali keñoraaɗi tan (alaa SIM)"
@@ -1238,9 +1484,6 @@ msgstr "Resoo {{networkName}} yiytaama. Naat e resoo?"
 #~ msgctxt "no"
 #~ msgid "Cancel"
 #~ msgstr "Haaytu"
-
-#~ msgid "Don't Allow"
-#~ msgstr "Hoto Yamir"
 
 #~ msgid "Applying update…"
 #~ msgstr "Nana jammina ksɗitinal…"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
+"POT-Creation-Date: 2013-07-02 18:16+0200\n"
 "PO-Revision-Date: 2013-05-03 08:13+0000\n"
 "Last-Translator: Selim <selim@sum.lu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,45 +28,11 @@ msgstr "PIN kodunu girin"
 msgid "Type your PIN code"
 msgstr "PIN kodunuzu yazın"
 
-#: type_nck
-#, fuzzy
-msgid "Type your NCK code"
-msgstr "PIN kodunuzu yazın"
-
-#: type_cck
-#, fuzzy
-msgid "Type your CCK code"
-msgstr "PIN kodunuzu yazın"
-
-#: type_spck
-#, fuzzy
-msgid "Type your SPCK code"
-msgstr "PIN kodunuzu yazın"
-
-#: send
-msgid "Send"
-msgstr "Gönder"
-
 #: pinValidation
 msgid "PIN must have between 4 and 8 characters."
 msgstr "PIN uzunluğu 4 ile 8 karakter arasında olmalıdır."
 
-#: nckValidation
-#, fuzzy
-msgid "NCK must have between 8 and 16 characters."
-msgstr "PIN uzunluğu 4 ile 8 karakter arasında olmalıdır."
-
-#: cckValidation
-#, fuzzy
-msgid "CCK must have between 8 and 16 characters."
-msgstr "PIN uzunluğu 4 ile 8 karakter arasında olmalıdır."
-
-#: spckValidation
-#, fuzzy
-msgid "SPCK must have between 8 and 16 characters."
-msgstr "PIN uzunluğu 4 ile 8 karakter arasında olmalıdır."
-
-#: pinErrorMsg
+#: pinError
 msgid "The PIN was incorrect."
 msgstr "PIN yanlış."
 
@@ -76,29 +42,37 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: pinAttemptMsg2[one]
-msgctxt "pinAttemptMsg2[one]"
-msgid "Last chance."
-msgstr "Son şansınız."
+msgid ""
+"You have one try left to enter the correct code before locking the SIM card."
+msgstr ""
 
 #: pinAttemptMsg2[two]
 msgctxt "pinAttemptMsg2[two]"
-msgid "{{n}} tries left."
-msgstr "{{n}} hakkınız kaldı."
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
 #: pinAttemptMsg2[few]
 msgctxt "pinAttemptMsg2[few]"
-msgid "{{n}} tries left."
-msgstr "{{n}} hakkınız kaldı."
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
 #: pinAttemptMsg2[many]
 msgctxt "pinAttemptMsg2[many]"
-msgid "{{n}} tries left."
-msgstr "{{n}} hakkınız kaldı."
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
 #: pinAttemptMsg2[other]
 msgctxt "pinAttemptMsg2[other]"
-msgid "{{n}} tries left."
-msgstr "{{n}} hakkınız kaldı."
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
 #: pinLastChanceMsg
 msgid ""
@@ -112,24 +86,79 @@ msgstr ""
 msgid "Enter PUK code"
 msgstr "PUK kodunu girin"
 
-#: nckcode
-#, fuzzy
-msgid "Enter NCK code"
-msgstr "PUK kodunu girin"
-
-#: cckcode
-#, fuzzy
-msgid "Enter CCK code"
-msgstr "PUK kodunu girin"
-
-#: spckcode
-#, fuzzy
-msgid "Enter SPCK code"
-msgstr "PUK kodunu girin"
-
 #: type_puk
 msgid "PUK code"
 msgstr "PUK kodu"
+
+#: pukValidation
+msgid "PUK code must have exactly 8 characters."
+msgstr "PUK kodu tam olarak 8 basamaklı olmalıdır."
+
+#: pukInfo
+msgid ""
+"You must enter the Personal Unlocking Key (PUK) Code for the SIM card. Refer "
+"to your SIM card documentation or contact your carrier for more "
+"information."
+msgstr ""
+"SIM kartınızın Kişisel Kilit Açma Anahtarı (PUK) kodunu girmelisiniz. Daha "
+"fazla bilgi için SIM kartınızın belgelerine bakın veya operatörünüzle "
+"iletişime geçin."
+
+#: pukError
+#, fuzzy
+msgid "The PUK was incorrect."
+msgstr "PUK yanlış"
+
+#: pukAttemptMsg2
+#, fuzzy
+msgctxt "pukAttemptMsg2"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: pukAttemptMsg2[one]
+msgid ""
+"You have one try left to enter the correct code before this SIM card will be "
+"permanently unusable. Refer to your SIM card documentation or contact your "
+"carrier for more information."
+msgstr ""
+
+#: pukAttemptMsg2[two]
+msgctxt "pukAttemptMsg2[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+
+#: pukAttemptMsg2[few]
+msgctxt "pukAttemptMsg2[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+
+#: pukAttemptMsg2[many]
+msgctxt "pukAttemptMsg2[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+
+#: pukAttemptMsg2[other]
+msgctxt "pukAttemptMsg2[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+
+#: pukLastChanceMsg
+msgid ""
+"This is your last chance to enter the correct PUK code. Your SIM card will "
+"be permanently unusable if you enter in the wrong PUK code."
+msgstr ""
 
 #: create_newpin
 msgid "Create new PIN (4 to 8 digits)"
@@ -139,60 +168,57 @@ msgstr "Yeni PIN'i oluşturun (4-8 basamaklı)"
 msgid "Confirm new PIN"
 msgstr "Yeni PIN'i onaylayın"
 
+#: newpinConfirmation
+msgid "PINs don’t match"
+msgstr "PIN'ler uyuşmuyor"
+
+#: skip
+#, fuzzy
+msgctxt "skip"
+msgid "Skip"
+msgstr "Atla"
+
+#: send
+msgid "Send"
+msgstr "Gönder"
+
 #: simLocked
 msgid "The SIM card is locked"
 msgstr "SIM kartı kilitlendi"
 
-#: pukError
-msgid ""
-"You must enter the Personal Unlocking Key (PUK) Code for the SIM card. Refer "
-"to your SIM card documentation or contact your carrier for more information."
-msgstr ""
-"SIM kartınızın Kişisel Kilit Açma Anahtarı (PUK) kodunu girmelisiniz. Daha "
-"fazla bilgi için SIM kartınızın belgelerine bakın veya operatörünüzle "
-"iletişime geçin."
-
-#: pukErrorMsg
-msgid "The PUK was incorrect"
-msgstr "PUK yanlış"
-
-#: pukAttemptMsg
-msgctxt "pukAttemptMsg"
+#: inputCodeRetriesLeft
+#, fuzzy
+msgctxt "inputCodeRetriesLeft"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: pukAttemptMsg[one]
-msgctxt "pukAttemptMsg[one]"
-msgid "Last chance."
-msgstr "Son şansınız."
+#: inputCodeRetriesLeft[one]
+msgid "last try."
+msgstr ""
 
-#: pukAttemptMsg[two]
-msgctxt "pukAttemptMsg[two]"
+#: inputCodeRetriesLeft[two]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[two]"
 msgid "{{n}} tries left."
 msgstr "{{n}} hakkınız kaldı."
 
-#: pukAttemptMsg[few]
-msgctxt "pukAttemptMsg[few]"
+#: inputCodeRetriesLeft[few]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[few]"
 msgid "{{n}} tries left."
 msgstr "{{n}} hakkınız kaldı."
 
-#: pukAttemptMsg[many]
-msgctxt "pukAttemptMsg[many]"
+#: inputCodeRetriesLeft[many]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[many]"
 msgid "{{n}} tries left."
 msgstr "{{n}} hakkınız kaldı."
 
-#: pukAttemptMsg[other]
-msgctxt "pukAttemptMsg[other]"
+#: inputCodeRetriesLeft[other]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[other]"
 msgid "{{n}} tries left."
 msgstr "{{n}} hakkınız kaldı."
-
-#: pukValidation
-msgid "PUK code must have exactly 8 characters."
-msgstr "PUK kodu tam olarak 8 basamaklı olmalıdır."
-
-#: newpinConfirmation
-msgid "PINs don’t match"
-msgstr "PIN'ler uyuşmuyor"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Language
@@ -295,14 +321,6 @@ msgstr "Uyarı"
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
 
-#: scanningNetworks
-msgid "Scanning for networks"
-msgstr ""
-
-#: selectNetwork
-msgid "Select a network"
-msgstr ""
-
 #: shortStatus-connecting
 msgid "Connecting…"
 msgstr "Bağlanıyor…"
@@ -367,9 +385,9 @@ msgstr "Parolayı Göster"
 msgid "Refresh"
 msgstr "Yenile"
 
-#: noWifiFound2
-msgid "We could not find any wireless network"
-msgstr ""
+#: noWifiFound
+msgid "No networks found"
+msgstr "Hiç ağ bulunamadı"
 
 #: join
 msgctxt "join"
@@ -424,14 +442,6 @@ msgstr "SIM kartı"
 msgid "Facebook"
 msgstr "Facebook"
 
-#: importLive
-msgid "Windows Live"
-msgstr ""
-
-#: importGmail
-msgid "Gmail"
-msgstr ""
-
 #: fb-checking
 msgid "… checking"
 msgstr "… kontrol ediliyor"
@@ -460,7 +470,8 @@ msgstr ""
 #: about-your-rights-0
 msgid ""
 "{{brandShortName}} is built on free and open source software by a community "
-"of thousands from all over the world. There are a few things you should know:"
+"of thousands from all over the world. There are a few things you should "
+"know:"
 msgstr ""
 "{{brandShortName}} tüm dünyadan binlerce kişilik bir topluluk tarafından "
 "özgür ve açık kaynaklı yazılımlarla inşa edilmiştir. Bilmeniz gereken bir "
@@ -659,6 +670,8 @@ msgid "Join"
 msgstr "Katıl"
 
 #: skip
+#, fuzzy
+msgctxt "skip"
 msgid "Skip"
 msgstr "Atla"
 
@@ -760,5 +773,78 @@ msgstr "E-posta adresiniz geçerli değil"
 msgid "Please go back and correct your entry."
 msgstr "Lütfen geri dönün ve girişinizi düzeltin."
 
-#~ msgid "No networks found"
-#~ msgstr "Hiç ağ bulunamadı"
+#, fuzzy
+#~ msgid "Type your NCK code"
+#~ msgstr "PIN kodunuzu yazın"
+
+#, fuzzy
+#~ msgid "Type your CCK code"
+#~ msgstr "PIN kodunuzu yazın"
+
+#, fuzzy
+#~ msgid "Type your SPCK code"
+#~ msgstr "PIN kodunuzu yazın"
+
+#, fuzzy
+#~ msgid "NCK must have between 8 and 16 characters."
+#~ msgstr "PIN uzunluğu 4 ile 8 karakter arasında olmalıdır."
+
+#, fuzzy
+#~ msgid "CCK must have between 8 and 16 characters."
+#~ msgstr "PIN uzunluğu 4 ile 8 karakter arasında olmalıdır."
+
+#, fuzzy
+#~ msgid "SPCK must have between 8 and 16 characters."
+#~ msgstr "PIN uzunluğu 4 ile 8 karakter arasında olmalıdır."
+
+#~ msgctxt "pinAttemptMsg2[one]"
+#~ msgid "Last chance."
+#~ msgstr "Son şansınız."
+
+#~ msgctxt "pinAttemptMsg2[few]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} hakkınız kaldı."
+
+#~ msgctxt "pinAttemptMsg2[many]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} hakkınız kaldı."
+
+#~ msgctxt "pinAttemptMsg2[other]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} hakkınız kaldı."
+
+#, fuzzy
+#~ msgid "Enter NCK code"
+#~ msgstr "PUK kodunu girin"
+
+#, fuzzy
+#~ msgid "Enter CCK code"
+#~ msgstr "PUK kodunu girin"
+
+#, fuzzy
+#~ msgid "Enter SPCK code"
+#~ msgstr "PUK kodunu girin"
+
+#~ msgctxt "pukAttemptMsg"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "pukAttemptMsg[one]"
+#~ msgid "Last chance."
+#~ msgstr "Son şansınız."
+
+#~ msgctxt "pukAttemptMsg[two]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} hakkınız kaldı."
+
+#~ msgctxt "pukAttemptMsg[few]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} hakkınız kaldı."
+
+#~ msgctxt "pukAttemptMsg[many]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} hakkınız kaldı."
+
+#~ msgctxt "pukAttemptMsg[other]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} hakkınız kaldı."

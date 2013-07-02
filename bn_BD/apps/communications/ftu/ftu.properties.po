@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
+"POT-Creation-Date: 2013-07-02 18:16+0200\n"
 "PO-Revision-Date: 2013-03-12 11:11+0000\n"
 "Last-Translator: Istiaque  <istiaqueahamed@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,45 +27,11 @@ msgstr "পিন কোড প্রবেশ করুন"
 msgid "Type your PIN code"
 msgstr "আপনার পিন কোড লিখুন"
 
-#: type_nck
-#, fuzzy
-msgid "Type your NCK code"
-msgstr "আপনার পিন কোড লিখুন"
-
-#: type_cck
-#, fuzzy
-msgid "Type your CCK code"
-msgstr "আপনার পিন কোড লিখুন"
-
-#: type_spck
-#, fuzzy
-msgid "Type your SPCK code"
-msgstr "আপনার পিন কোড লিখুন"
-
-#: send
-msgid "Send"
-msgstr "পাঠান"
-
 #: pinValidation
 msgid "PIN must have between 4 and 8 characters."
 msgstr "পিন অবশ্যই ৪ থেকে ৮ অক্ষরের হতে হবে।"
 
-#: nckValidation
-#, fuzzy
-msgid "NCK must have between 8 and 16 characters."
-msgstr "পিন অবশ্যই ৪ থেকে ৮ অক্ষরের হতে হবে।"
-
-#: cckValidation
-#, fuzzy
-msgid "CCK must have between 8 and 16 characters."
-msgstr "পিন অবশ্যই ৪ থেকে ৮ অক্ষরের হতে হবে।"
-
-#: spckValidation
-#, fuzzy
-msgid "SPCK must have between 8 and 16 characters."
-msgstr "পিন অবশ্যই ৪ থেকে ৮ অক্ষরের হতে হবে।"
-
-#: pinErrorMsg
+#: pinError
 msgid "The PIN was incorrect."
 msgstr "পিন ভুল।"
 
@@ -75,60 +41,122 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: pinAttemptMsg2[one]
-msgctxt "pinAttemptMsg2[one]"
-msgid "Last chance."
-msgstr "শেষ সুযোগ।"
+msgid ""
+"You have one try left to enter the correct code before locking the SIM card."
+msgstr ""
 
 #: pinAttemptMsg2[two]
 msgctxt "pinAttemptMsg2[two]"
-msgid "{{n}} tries left."
-msgstr "{{n}} বার চেষ্টা বাকি আছে।"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
 #: pinAttemptMsg2[few]
 msgctxt "pinAttemptMsg2[few]"
-msgid "{{n}} tries left."
-msgstr "{{n}} বার চেষ্টা বাকি আছে।"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
 #: pinAttemptMsg2[many]
 msgctxt "pinAttemptMsg2[many]"
-msgid "{{n}} tries left."
-msgstr "{{n}} বার চেষ্টা বাকি আছে।"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
 #: pinAttemptMsg2[other]
 msgctxt "pinAttemptMsg2[other]"
-msgid "{{n}} tries left."
-msgstr "{{n}} বার চেষ্টা বাকি আছে।"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
 #: pinLastChanceMsg
 msgid ""
 "This is your last chance to enter the correct PIN. Otherwise, you must enter "
 "the PUK code to use this SIM card."
 msgstr ""
-"আপনার সঠিক PIN দেওয়ার এটাই শেষ সুযোগ। অন্যথায়, এই সিম কার্ড ব্যবহার করতে আপনাকে "
-"PUK কোড দিতে হবে।"
+"আপনার সঠিক PIN দেওয়ার এটাই শেষ সুযোগ। অন্যথায়, এই সিম কার্ড ব্যবহার করতে "
+"আপনাকে PUK কোড দিতে হবে।"
 
 #: pukcode
 msgid "Enter PUK code"
 msgstr "PUK কোড দিন"
 
-#: nckcode
-#, fuzzy
-msgid "Enter NCK code"
-msgstr "PUK কোড দিন"
-
-#: cckcode
-#, fuzzy
-msgid "Enter CCK code"
-msgstr "PUK কোড দিন"
-
-#: spckcode
-#, fuzzy
-msgid "Enter SPCK code"
-msgstr "PUK কোড দিন"
-
 #: type_puk
 msgid "PUK code"
 msgstr "PUK কোড"
+
+#: pukValidation
+msgid "PUK code must have exactly 8 characters."
+msgstr "PUK কোড অবশ্যই ৮ অক্ষরের হতে হবে।"
+
+#: pukInfo
+msgid ""
+"You must enter the Personal Unlocking Key (PUK) Code for the SIM card. Refer "
+"to your SIM card documentation or contact your carrier for more "
+"information."
+msgstr ""
+"আপনাকে অবশ্যই সিম কার্ডের Personal Unlocking Key (PUK) কোড প্রবেশ করাতে হবে। "
+"সিম কার্ডের তথ্যগুলো দেখুন বা মোবাইল অপারেটর এর সাথে যোগাযোগ করুন।"
+
+#: pukError
+#, fuzzy
+msgid "The PUK was incorrect."
+msgstr "PUK কোডটি ভুল"
+
+#: pukAttemptMsg2
+#, fuzzy
+msgctxt "pukAttemptMsg2"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: pukAttemptMsg2[one]
+msgid ""
+"You have one try left to enter the correct code before this SIM card will be "
+"permanently unusable. Refer to your SIM card documentation or contact your "
+"carrier for more information."
+msgstr ""
+
+#: pukAttemptMsg2[two]
+msgctxt "pukAttemptMsg2[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+
+#: pukAttemptMsg2[few]
+msgctxt "pukAttemptMsg2[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+
+#: pukAttemptMsg2[many]
+msgctxt "pukAttemptMsg2[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+
+#: pukAttemptMsg2[other]
+msgctxt "pukAttemptMsg2[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+
+#: pukLastChanceMsg
+msgid ""
+"This is your last chance to enter the correct PUK code. Your SIM card will "
+"be permanently unusable if you enter in the wrong PUK code."
+msgstr ""
 
 #: create_newpin
 msgid "Create new PIN (4 to 8 digits)"
@@ -138,59 +166,57 @@ msgstr "নুতুন PIN তৈরি করুন (৪ থেকে ৮ স�
 msgid "Confirm new PIN"
 msgstr "নতুন PIN নিশ্চিত করুন"
 
+#: newpinConfirmation
+msgid "PINs don’t match"
+msgstr "PIN গুলো মিলছে না"
+
+#: skip
+#, fuzzy
+msgctxt "skip"
+msgid "Skip"
+msgstr "এড়িয়ে যান"
+
+#: send
+msgid "Send"
+msgstr "পাঠান"
+
 #: simLocked
 msgid "The SIM card is locked"
 msgstr "সিম কার্ডটি তালাবদ্ধ করা হয়েছে"
 
-#: pukError
-msgid ""
-"You must enter the Personal Unlocking Key (PUK) Code for the SIM card. Refer "
-"to your SIM card documentation or contact your carrier for more information."
-msgstr ""
-"আপনাকে অবশ্যই সিম কার্ডের Personal Unlocking Key (PUK) কোড প্রবেশ করাতে হবে। "
-"সিম কার্ডের তথ্যগুলো দেখুন বা মোবাইল অপারেটর এর সাথে যোগাযোগ করুন।"
-
-#: pukErrorMsg
-msgid "The PUK was incorrect"
-msgstr "PUK কোডটি ভুল"
-
-#: pukAttemptMsg
-msgctxt "pukAttemptMsg"
+#: inputCodeRetriesLeft
+#, fuzzy
+msgctxt "inputCodeRetriesLeft"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: pukAttemptMsg[one]
-msgctxt "pukAttemptMsg[one]"
-msgid "Last chance."
-msgstr "শেষ সুযোগ।"
+#: inputCodeRetriesLeft[one]
+msgid "last try."
+msgstr ""
 
-#: pukAttemptMsg[two]
-msgctxt "pukAttemptMsg[two]"
+#: inputCodeRetriesLeft[two]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[two]"
 msgid "{{n}} tries left."
-msgstr "{{n}} বার সুযোগ বাকী।"
+msgstr "{{n}} বার চেষ্টা বাকি আছে।"
 
-#: pukAttemptMsg[few]
-msgctxt "pukAttemptMsg[few]"
+#: inputCodeRetriesLeft[few]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[few]"
 msgid "{{n}} tries left."
-msgstr "{{n}} বার সুযোগ বাকী।"
+msgstr "{{n}} বার চেষ্টা বাকি আছে।"
 
-#: pukAttemptMsg[many]
-msgctxt "pukAttemptMsg[many]"
+#: inputCodeRetriesLeft[many]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[many]"
 msgid "{{n}} tries left."
-msgstr "{{n}} বার সুযোগ বাকী।"
+msgstr "{{n}} বার চেষ্টা বাকি আছে।"
 
-#: pukAttemptMsg[other]
-msgctxt "pukAttemptMsg[other]"
+#: inputCodeRetriesLeft[other]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[other]"
 msgid "{{n}} tries left."
-msgstr "{{n}} বার সুযোগ বাকী।"
-
-#: pukValidation
-msgid "PUK code must have exactly 8 characters."
-msgstr "PUK কোড অবশ্যই ৮ অক্ষরের হতে হবে।"
-
-#: newpinConfirmation
-msgid "PINs don’t match"
-msgstr "PIN গুলো মিলছে না"
+msgstr "{{n}} বার চেষ্টা বাকি আছে।"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Language
@@ -289,14 +315,6 @@ msgstr "সতর্কতা"
 msgid "Wi-Fi"
 msgstr "ওয়াই-ফাই"
 
-#: scanningNetworks
-msgid "Scanning for networks"
-msgstr ""
-
-#: selectNetwork
-msgid "Select a network"
-msgstr ""
-
 #: shortStatus-connecting
 msgid "Connecting…"
 msgstr "সংযুক্ত হচ্ছে..."
@@ -361,9 +379,9 @@ msgstr "পাসওয়ার্ড প্রদর্শন"
 msgid "Refresh"
 msgstr "রিফ্রেশ করুন"
 
-#: noWifiFound2
-msgid "We could not find any wireless network"
-msgstr ""
+#: noWifiFound
+msgid "No networks found"
+msgstr "কোন নেটওয়ার্ক পাওয়া যায়নি"
 
 #: join
 #, fuzzy
@@ -420,14 +438,6 @@ msgstr "সিম কার্ড"
 msgid "Facebook"
 msgstr "ফেসবুক"
 
-#: importLive
-msgid "Windows Live"
-msgstr ""
-
-#: importGmail
-msgid "Gmail"
-msgstr ""
-
 #: fb-checking
 msgid "… checking"
 msgstr "...পরীক্ষা করা হচ্ছে"
@@ -454,7 +464,8 @@ msgstr ""
 #: about-your-rights-0
 msgid ""
 "{{brandShortName}} is built on free and open source software by a community "
-"of thousands from all over the world. There are a few things you should know:"
+"of thousands from all over the world. There are a few things you should "
+"know:"
 msgstr ""
 "&brandFullName; মুক্ত এবং ওপেনসোর্স সফটওয়্যার থেকে সারা বিশ্বের হাজার হাজার "
 "মানুষের সমবেত প্রচেষ্টায় তৈরি হয়েছে। এ সম্পর্কে কিছু জিনিস আপনার জানা দরকার:"
@@ -468,11 +479,11 @@ msgid ""
 "source code and distribute your modified versions as long as you comply with "
 "their terms."
 msgstr ""
-"{{brandShortName}} মোজিলা পাবলিক লাইসেন্স সহ অন্যান্য মুক্ত লাইসেন্স এর আওতায় "
-"আপনার কাছে এসেছে। {{brandShortName}} সহ একটি যন্ত্র অন্য কারো প্রোপাইটরী "
-"সফটওয়্যার যুক্ত হতে পারে। আপনি যদি তাদের শর্ত মেনে চলেন তাহলে মুক্ত লাইসেন্স এর "
-"আওতাধীন কোড আপনাকে সোর্স কোড পরিবর্তন ও আপনার পরিবর্তিত সংস্করন বিতরনের অধিকার "
-"দেয়।"
+"{{brandShortName}} মোজিলা পাবলিক লাইসেন্স সহ অন্যান্য মুক্ত লাইসেন্স এর "
+"আওতায় আপনার কাছে এসেছে। {{brandShortName}} সহ একটি যন্ত্র অন্য কারো "
+"প্রোপাইটরী সফটওয়্যার যুক্ত হতে পারে। আপনি যদি তাদের শর্ত মেনে চলেন তাহলে "
+"মুক্ত লাইসেন্স এর আওতাধীন কোড আপনাকে সোর্স কোড পরিবর্তন ও আপনার পরিবর্তিত "
+"সংস্করন বিতরনের অধিকার দেয়।"
 
 #: about-your-rights-2
 msgid ""
@@ -634,6 +645,8 @@ msgid "Join"
 msgstr "যোগ দিন"
 
 #: skip
+#, fuzzy
+msgctxt "skip"
 msgid "Skip"
 msgstr "এড়িয়ে যান"
 
@@ -705,8 +718,8 @@ msgid ""
 "Please go back and connect to the Internet. You can also view the page later "
 "from Settings or by entering {{url}} in any browser."
 msgstr ""
-"অনুগ্রহ করে পিছনে ফেরত যান এবং ইন্টারনেট সংযুক্ত করুন। আপনি এই পৃষ্ঠা আবার পরে "
-"সেটিংস থেকে অথবা ব্রাউজারে {{url}} দিয়ে দেখতে পারবেন।"
+"অনুগ্রহ করে পিছনে ফেরত যান এবং ইন্টারনেট সংযুক্ত করুন। আপনি এই পৃষ্ঠা আবার "
+"পরে সেটিংস থেকে অথবা ব্রাউজারে {{url}} দিয়ে দেখতে পারবেন।"
 
 #: OK
 msgid "OK"
@@ -731,8 +744,81 @@ msgstr "আপনার ইমেইল এড্রেস সঠিক নয়"
 msgid "Please go back and correct your entry."
 msgstr "অনুগ্রহ করে পিছনে যান এবং আপনার লেখা সঠিক করুন।"
 
-#~ msgid "No networks found"
-#~ msgstr "কোন নেটওয়ার্ক পাওয়া যায়নি"
+#, fuzzy
+#~ msgid "Type your NCK code"
+#~ msgstr "আপনার পিন কোড লিখুন"
+
+#, fuzzy
+#~ msgid "Type your CCK code"
+#~ msgstr "আপনার পিন কোড লিখুন"
+
+#, fuzzy
+#~ msgid "Type your SPCK code"
+#~ msgstr "আপনার পিন কোড লিখুন"
+
+#, fuzzy
+#~ msgid "NCK must have between 8 and 16 characters."
+#~ msgstr "পিন অবশ্যই ৪ থেকে ৮ অক্ষরের হতে হবে।"
+
+#, fuzzy
+#~ msgid "CCK must have between 8 and 16 characters."
+#~ msgstr "পিন অবশ্যই ৪ থেকে ৮ অক্ষরের হতে হবে।"
+
+#, fuzzy
+#~ msgid "SPCK must have between 8 and 16 characters."
+#~ msgstr "পিন অবশ্যই ৪ থেকে ৮ অক্ষরের হতে হবে।"
+
+#~ msgctxt "pinAttemptMsg2[one]"
+#~ msgid "Last chance."
+#~ msgstr "শেষ সুযোগ।"
+
+#~ msgctxt "pinAttemptMsg2[few]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} বার চেষ্টা বাকি আছে।"
+
+#~ msgctxt "pinAttemptMsg2[many]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} বার চেষ্টা বাকি আছে।"
+
+#~ msgctxt "pinAttemptMsg2[other]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} বার চেষ্টা বাকি আছে।"
+
+#, fuzzy
+#~ msgid "Enter NCK code"
+#~ msgstr "PUK কোড দিন"
+
+#, fuzzy
+#~ msgid "Enter CCK code"
+#~ msgstr "PUK কোড দিন"
+
+#, fuzzy
+#~ msgid "Enter SPCK code"
+#~ msgstr "PUK কোড দিন"
+
+#~ msgctxt "pukAttemptMsg"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "pukAttemptMsg[one]"
+#~ msgid "Last chance."
+#~ msgstr "শেষ সুযোগ।"
+
+#~ msgctxt "pukAttemptMsg[two]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} বার সুযোগ বাকী।"
+
+#~ msgctxt "pukAttemptMsg[few]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} বার সুযোগ বাকী।"
+
+#~ msgctxt "pukAttemptMsg[many]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} বার সুযোগ বাকী।"
+
+#~ msgctxt "pukAttemptMsg[other]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} বার সুযোগ বাকী।"
 
 #~ msgid "Done"
 #~ msgstr "হয়ে গেছে"

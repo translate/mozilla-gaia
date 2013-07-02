@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
+"POT-Creation-Date: 2013-07-02 18:16+0200\n"
 "PO-Revision-Date: 2013-03-02 11:28+0000\n"
 "Last-Translator: Hakuna <jackychun1393@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -817,8 +817,7 @@ msgstr "Hủy kết nối tới thiết bị?"
 msgid ""
 "You are currently connected to this device. Unpairing will also disconnect "
 "from it."
-msgstr ""
-"Bạn giờ đang kết nối tới thiết bị này. Việc hủy sẽ ngắt kết nối tới nó."
+msgstr "Bạn giờ đang kết nối tới thiết bị này. Việc hủy sẽ ngắt kết nối tới nó."
 
 #. # Connectivity :: Internet Sharing
 #: internetSharing
@@ -950,10 +949,6 @@ msgstr "Mở khóa màn hình"
 #: camera-shutter
 msgid "Camera shutter"
 msgstr "Tiếng chụp ảnh"
-
-#: sent-message
-msgid "Sent Message"
-msgstr ""
 
 #: alarm-sound
 msgid "Alarm"
@@ -1174,10 +1169,6 @@ msgstr "Pinyin"
 msgid "Polish"
 msgstr ""
 
-#: serbian-latin
-msgid "Serbian (Latin)"
-msgstr ""
-
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Accounts (N/A)
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -1329,44 +1320,17 @@ msgstr "Xác nhận mã truyền"
 msgid "Immediately"
 msgstr "Ngay"
 
-#: after-five-seconds
-msgid "After 5 seconds"
-msgstr ""
-
-#: after-fifteen-seconds
-msgid "After 15 seconds"
-msgstr ""
-
-#: after-thirty-seconds
-msgid "After 30 seconds"
-msgstr ""
-
 #: after-one-minute
 msgid "After 1 minute"
 msgstr "Sau 1 phút"
-
-#: after-two-minutes
-#, fuzzy
-msgid "After 2 minutes"
-msgstr "Sau 5 phút"
 
 #: after-five-minutes
 msgid "After 5 minutes"
 msgstr "Sau 5 phút"
 
-#: after-ten-minutes
-#, fuzzy
-msgid "After 10 minutes"
-msgstr "Sau 15 phút"
-
 #: after-fifteen-minutes
 msgid "After 15 minutes"
 msgstr "Sau 15 phút"
-
-#: after-thirty-minutes
-#, fuzzy
-msgid "After 30 minutes"
-msgstr "Sau 5 phút"
 
 #: after-one-hour
 msgid "After 1 hour"
@@ -1432,36 +1396,78 @@ msgstr "Mã PIN mới"
 msgid "The PIN was incorrect."
 msgstr "Mã PIN không đúng."
 
-#: pinAttemptMsg2
+#: inputCodeRetriesLeft
 #, fuzzy
-msgctxt "pinAttemptMsg2"
+msgctxt "inputCodeRetriesLeft"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: pinAttemptMsg2[one]
+#: inputCodeRetriesLeft[one]
+msgid "last try."
+msgstr ""
+
+#: inputCodeRetriesLeft[two]
 #, fuzzy
-msgid "Last chance."
-msgstr "Lần thử cuối cùng."
-
-#: pinAttemptMsg2[two]
-msgctxt "pinAttemptMsg2[two]"
+msgctxt "inputCodeRetriesLeft[two]"
 msgid "{{n}} tries left."
 msgstr "Còn {{n}} lần thử."
 
-#: pinAttemptMsg2[few]
-msgctxt "pinAttemptMsg2[few]"
+#: inputCodeRetriesLeft[few]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[few]"
 msgid "{{n}} tries left."
 msgstr "Còn {{n}} lần thử."
 
-#: pinAttemptMsg2[many]
-msgctxt "pinAttemptMsg2[many]"
+#: inputCodeRetriesLeft[many]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[many]"
 msgid "{{n}} tries left."
 msgstr "Còn {{n}} lần thử."
 
-#: pinAttemptMsg2[other]
-msgctxt "pinAttemptMsg2[other]"
+#: inputCodeRetriesLeft[other]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[other]"
 msgid "{{n}} tries left."
 msgstr "Còn {{n}} lần thử."
+
+#: pinAttemptMsg3
+#, fuzzy
+msgctxt "pinAttemptMsg3"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: pinAttemptMsg3[one]
+msgid ""
+"You have one try left to enter the correct code before locking the SIM card."
+msgstr ""
+
+#: pinAttemptMsg3[two]
+msgctxt "pinAttemptMsg3[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+
+#: pinAttemptMsg3[few]
+msgctxt "pinAttemptMsg3[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+
+#: pinAttemptMsg3[many]
+msgctxt "pinAttemptMsg3[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+
+#: pinAttemptMsg3[other]
+msgctxt "pinAttemptMsg3[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
 #: pinLastChanceMsg
 msgid ""
@@ -1478,7 +1484,8 @@ msgstr "Thẻ SIM đã bị khóa."
 #: enterPukMsg
 msgid ""
 "You must enter the Personal Unlocking Key (PUK) code for the SIM card. Refer "
-"to your SIM card documentation or contact your carrier for more information."
+"to your SIM card documentation or contact your carrier for more "
+"information."
 msgstr ""
 "Bạn phải nhập mã Personal Unlocking Key (PUK) cho thẻ SIM. Hãy tham khảo "
 "hướng dẫn sử dụng thẻ SIM của bạn hoặc liên hệ với nhà cung cấp dịch vụ của "
@@ -1488,7 +1495,62 @@ msgstr ""
 msgid "The PUK code is incorrect."
 msgstr "Mã PUK không đúng."
 
-#: pukAttemptMsg2
+#: pukAttemptMsg3
+#, fuzzy
+msgctxt "pukAttemptMsg3"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: pukAttemptMsg3[one]
+#, fuzzy
+msgid ""
+"You have one try left to enter the correct code before this SIM card will be "
+"permanently unusable. Refer to your SIM card documentation or contact your "
+"carrier for more information."
+msgstr ""
+"Bạn còn {{n}} lần thử để nhập mã chính xác trước khi thẻ SIM bị khóa vĩnh "
+"viễn. Xem tài liệu về thẻ SIM hoặc liên hệ với nhà mạng để biết thêm thông "
+"tin."
+
+#: pukAttemptMsg3[two]
+#, fuzzy
+msgctxt "pukAttemptMsg3[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Bạn còn {{n}} lần thử để nhập mã chính xác trước khi thẻ SIM bị khóa vĩnh "
+"viễn. Xem tài liệu về thẻ SIM hoặc liên hệ với nhà mạng để biết thêm thông "
+"tin."
+
+#: pukAttemptMsg3[few]
+#, fuzzy
+msgctxt "pukAttemptMsg3[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Bạn còn {{n}} lần thử để nhập mã chính xác trước khi thẻ SIM bị khóa vĩnh "
+"viễn. Xem tài liệu về thẻ SIM hoặc liên hệ với nhà mạng để biết thêm thông "
+"tin."
+
+#: pukAttemptMsg3[many]
+#, fuzzy
+msgctxt "pukAttemptMsg3[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Bạn còn {{n}} lần thử để nhập mã chính xác trước khi thẻ SIM bị khóa vĩnh "
+"viễn. Xem tài liệu về thẻ SIM hoặc liên hệ với nhà mạng để biết thêm thông "
+"tin."
+
+#: pukAttemptMsg3[other]
+#, fuzzy
+msgctxt "pukAttemptMsg3[other]"
 msgid ""
 "You have {{n}} tries left to enter the correct code before this SIM card "
 "will be permanently unusable. Refer to your SIM card documentation or "
@@ -1595,6 +1657,12 @@ msgstr "ICCID:"
 msgid "Phone number"
 msgstr "Số điện thoại"
 
+#: gitInfo
+#, fuzzy
+msgctxt "gitInfo"
+msgid "Git commit info"
+msgstr "thông tin Git commit"
+
 #: developer
 msgid "Developer"
 msgstr "Nhà phát triển"
@@ -1681,6 +1749,7 @@ msgstr "Thông tin thêm"
 
 #: gitInfo
 #, fuzzy
+msgctxt "gitInfo"
 msgid "Git commit info"
 msgstr "thông tin Git commit"
 
@@ -1777,7 +1846,8 @@ msgstr "Quyền của bạn"
 #: about-your-rights-0
 msgid ""
 "{{brandShortName}} is built on free and open source software by a community "
-"of thousands from all over the world. There are a few things you should know:"
+"of thousands from all over the world. There are a few things you should "
+"know:"
 msgstr ""
 "{{brandShortName}} được xây dựng trên nền tảng phần mềm nguồn mở miễn phí "
 "bởi một cộng đồng hàng nghìn thành viên trên toàn thế giới. Chúng tôi có một "
@@ -2224,9 +2294,37 @@ msgid "SIM toolkit"
 msgstr ""
 
 #, fuzzy
-#~ msgctxt "gitInfo"
-#~ msgid "Git commit info"
-#~ msgstr "thông tin Git commit"
+#~ msgid "After 2 minutes"
+#~ msgstr "Sau 5 phút"
+
+#, fuzzy
+#~ msgid "After 10 minutes"
+#~ msgstr "Sau 15 phút"
+
+#, fuzzy
+#~ msgid "After 30 minutes"
+#~ msgstr "Sau 5 phút"
+
+#, fuzzy
+#~ msgctxt "pinAttemptMsg2"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#, fuzzy
+#~ msgid "Last chance."
+#~ msgstr "Lần thử cuối cùng."
+
+#~ msgctxt "pinAttemptMsg2[few]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "Còn {{n}} lần thử."
+
+#~ msgctxt "pinAttemptMsg2[many]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "Còn {{n}} lần thử."
+
+#~ msgctxt "pinAttemptMsg2[other]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "Còn {{n}} lần thử."
 
 #~ msgctxt "pinAttemptMsg"
 #~ msgid "{[ plural(n) ]}"

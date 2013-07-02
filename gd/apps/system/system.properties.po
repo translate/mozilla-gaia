@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
+"POT-Creation-Date: 2013-07-02 18:16+0200\n"
 "PO-Revision-Date: 2013-05-17 00:27+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -76,14 +76,6 @@ msgstr "(Feum air SIM PUK)"
 #: emergencyCallsOnly-networkLocked
 msgid "(network locked)"
 msgstr "(lìonra glaiste)"
-
-#: emergencyCallsOnly-serviceProviderLocked
-msgid "(service provider locked)"
-msgstr "(tha solaraiche na seirbheise glaiste)"
-
-#: emergencyCallsOnly-corporateLocked
-msgid "(corporate locked)"
-msgstr "(glas corporaid)"
 
 #: enterPIN
 msgid "Enter PIN"
@@ -195,6 +187,11 @@ msgstr "Tha"
 msgid "No"
 msgstr "Chan eil"
 
+#: deny
+#, fuzzy
+msgid "Don't allow"
+msgstr "Na ceadaich"
+
 #: allow
 msgid "Allow"
 msgstr "Ceadaich"
@@ -289,6 +286,12 @@ msgstr "Sguir dhen stàladh"
 msgid "Resume"
 msgstr "Lean air"
 
+#: continue
+#, fuzzy
+msgctxt "continue"
+msgid "Continue"
+msgstr "Lean air adhart"
+
 #: stopDownloading
 msgid "Stop downloading {{ app }}?"
 msgstr "A bheil thu airson sgur de luchdadh a-nuas {{ app }}?"
@@ -347,8 +350,8 @@ msgstr "Chan ann an-dràsta"
 #: downloadingUpdateMessage
 msgid "Downloading updates… <span>{{ progress }} downloaded.</span>"
 msgstr ""
-"A' luchdadh a-nuas nan ùrachaidhean… <span>{{ progress }} air a luchdadh a-"
-"nuas.</span>"
+"A' luchdadh a-nuas nan ùrachaidhean… <span>{{ progress }} air a luchdadh "
+"a-nuas.</span>"
 
 #: downloadingAppMessage
 msgid "Downloading {{ appName }}"
@@ -372,8 +375,7 @@ msgstr "Sguir dhen a h-uile luchdadh a-nuas"
 
 #: wantToCancelAll
 msgid "Are you sure you want to cancel all downloads?"
-msgstr ""
-"A bheil thu cinnteach gu bheil thu airson sgur de gach luchdadh a-nuas?"
+msgstr "A bheil thu cinnteach gu bheil thu airson sgur de gach luchdadh a-nuas?"
 
 #: downloadError
 msgid "There was an error while downloading the updates."
@@ -387,36 +389,36 @@ msgstr "{[ plural(n) ]}"
 #: updateAvailableInfo[one]
 msgid "{{ n }} update available. <span>Tap for more info.</span>"
 msgstr ""
-"Tha {{ n }} ùrachadh ri fhaighinn. <span>Thoir gnogag gus a luchdadh a-nuas."
-"</span>"
+"Tha {{ n }} ùrachadh ri fhaighinn. <span>Thoir gnogag gus a luchdadh "
+"a-nuas.</span>"
 
 #: updateAvailableInfo[two]
 msgctxt "updateAvailableInfo[two]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr ""
-"Tha {{ n }} ùrachadh ri fhaighinn. <span>Thoir gnogag gus a luchdadh a-nuas."
-"</span>"
+"Tha {{ n }} ùrachadh ri fhaighinn. <span>Thoir gnogag gus a luchdadh "
+"a-nuas.</span>"
 
 #: updateAvailableInfo[few]
 msgctxt "updateAvailableInfo[few]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr ""
-"Tha {{ n }} ùrachaidhean ri fhaighinn. <span>Thoir gnogag gus a luchdadh a-"
-"nuas.</span>"
+"Tha {{ n }} ùrachaidhean ri fhaighinn. <span>Thoir gnogag gus a luchdadh "
+"a-nuas.</span>"
 
 #: updateAvailableInfo[many]
 msgctxt "updateAvailableInfo[many]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr ""
-"Tha {{ n }} ùrachadh ri fhaighinn. <span>Thoir gnogag gus a luchdadh a-nuas."
-"</span>"
+"Tha {{ n }} ùrachadh ri fhaighinn. <span>Thoir gnogag gus a luchdadh "
+"a-nuas.</span>"
 
 #: updateAvailableInfo[other]
 msgctxt "updateAvailableInfo[other]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr ""
-"Tha {{ n }} ùrachadh ri fhaighinn. <span>Thoir gnogag gus a luchdadh a-nuas."
-"</span>"
+"Tha {{ n }} ùrachadh ri fhaighinn. <span>Thoir gnogag gus a luchdadh "
+"a-nuas.</span>"
 
 #: numberOfUpdates
 msgctxt "numberOfUpdates"
@@ -494,8 +496,8 @@ msgstr ""
 #: downloadUpdatesViaDataConnectionMessage
 msgid ""
 "Updates are downloaded via data connection when Wi-Fi is not available. When "
-"using data connection, phone calls may be blocked and additional charges may "
-"also apply."
+"using data connection, phone calls may be blocked and additional charges "
+"may also apply."
 msgstr ""
 "Thèid ùrachaidhean a luchdadh a-nuas air ceangal dàta mur eil WiFi ann. "
 "Nuair a bhios tu air ceangal dàta, dh'fhaoidte gum bi casg air gairmean fòn "
@@ -707,9 +709,10 @@ msgstr ""
 #. # Localization note (crash-reports-description-3-*): These strings are a paragraph, with a "privacy policy"
 #. # link in the middle. Include trailing spaces as needed.
 #: crash-reports-description-3-start
+#, fuzzy
 msgid ""
 "We use crash reports to try to fix problems and improve our products. We "
-"handle your information as we describe in our "
+"handle your information as we describe in our"
 msgstr ""
 "Cleachdaidh sinn aithisgean tuislidh gus duilgheadasan a rèiteachadh is "
 "piseach a thoirt air a' bhathar againn. Làimhsichidh sinn am fiosrachadh "
@@ -764,14 +767,6 @@ msgstr "An gabh sinn ris an tar-chur faidhle Bluetooth?"
 #: wantToReceiveFile
 msgid "{{deviceName}} would like to transfer {{fileName}} ({{fileSize}})."
 msgstr "Bu toigh le {{deviceName}} {{fileName}} ({{fileSize}}) a chur thugad."
-
-#: notification-fileTransfer-title
-msgid "Receive file?"
-msgstr "A bheil thu airson gabhail ris?"
-
-#: notification-fileTransfer-description
-msgid "File incoming from another device"
-msgstr "Tha faidhle a' tighinn a-steach o uidheam eile"
 
 #: byteUnit-B
 msgid "Bytes"
@@ -831,6 +826,8 @@ msgid "Cancel Bluetooth file transfer?"
 msgstr "A bheil thu airson sgur dhen tar-chur fhaidhle Bluetooth?"
 
 #: continue
+#, fuzzy
+msgctxt "continue"
 msgid "Continue"
 msgstr "Lean air adhart"
 
@@ -846,25 +843,29 @@ msgstr "deiseil"
 msgid "failed"
 msgstr "air fàilligeadh"
 
-#: transferFinished-sentSuccessful-title
-msgid "File sent"
-msgstr "Chaidh am faidhle a chur"
+#: transferFinished-sendingCompletedTitle
+msgid "Bluetooth sending file complete"
+msgstr "Tha Bluetooth deiseil le cur an fhaidhle"
 
-#: transferFinished-receivedSuccessful-title
-msgid "File received"
-msgstr "Faidhle air fhaighinn"
+#: transferFinished-receivedCompletedTitle
+msgid "Bluetooth received file ready to open"
+msgstr "Tha am faidhle a fhuair thu air Bluetooth deiseil ri fhosgladh"
 
-#: transferFinished-sentFailed-title
-msgid "File could not be sent"
-msgstr "Cha b' urrainn dhuinn am faidhle a chur"
+#: transferFinished-sendingFailedTitle
+msgid "Bluetooth sending file failed"
+msgstr "Dh'fhàillig cur an fhaidhle le Bluetooth"
 
-#: transferFinished-receivedFailed-title
-msgid "File could not be received"
-msgstr "Cha b' urrainn dhuinn am faidhle fhaighinn"
+#: transferFinished-receivedFailedTitle
+msgid "Bluetooth received a file it can not open"
+msgstr "Fhuair Bluetooth faidhle nach urrainn dha fhosgladh"
 
-#: unknown-file
-msgid "Unknown file"
-msgstr "Faidhle neo-aithnichte"
+#: transferFinished-completedBody
+msgid "Transfer completed"
+msgstr "Tha an tar-chur deiseil"
+
+#: transferFinished-failedBody
+msgid "Transfer failed"
+msgstr "Dh'fhàillig an tar-chur"
 
 #: unknown-device
 msgid "Unknown device"
@@ -928,14 +929,6 @@ msgstr "Còd PUK"
 msgid "NCK code"
 msgstr "Còd NCK"
 
-#: cckCode
-msgid "CCK code"
-msgstr "Còd CCK"
-
-#: spckCode
-msgid "SPCK code"
-msgstr "Còd SPCK"
-
 #: whatIsSimPin
 msgid "What is a SIM PIN?"
 msgstr "Dè th' ann am PIN an t-SIM?"
@@ -953,8 +946,8 @@ msgstr ""
 #: simPinIntro2
 msgid "A SIM PIN is not the same as the passcode used to unlock the device."
 msgstr ""
-"Chan eil PIN an t-SIM agus an còd-faire (a bheir a' ghlas far an uidheim) co-"
-"ionnann."
+"Chan eil PIN an t-SIM agus an còd-faire (a bheir a' ghlas far an uidheim) "
+"co-ionnann."
 
 #: changeSimPin
 msgid "Change PIN"
@@ -972,50 +965,86 @@ msgstr "Cuir a-steach am PUK"
 msgid "Enter NCK code"
 msgstr "Cuir a-steach an còd NCK"
 
-#: cckTitle
-msgid "Enter CCK code"
-msgstr "Cuir a-steach an còd CCK"
-
-#: spckTitle
-msgid "Enter SPCK code"
-msgstr "Cuir a-steach am SPCK"
-
 #: newpinTitle
 msgid "New PIN"
 msgstr "PIN ùr"
+
+#: inputCodeRetriesLeft
+#, fuzzy
+msgctxt "inputCodeRetriesLeft"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: inputCodeRetriesLeft[one]
+msgid "last try."
+msgstr ""
+
+#: inputCodeRetriesLeft[two]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[two]"
+msgid "{{n}} tries left."
+msgstr "{{n}} thuras air fhàgail."
+
+#: inputCodeRetriesLeft[few]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[few]"
+msgid "{{n}} tries left."
+msgstr "{{n}} thuras air fhàgail."
+
+#: inputCodeRetriesLeft[many]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[many]"
+msgid "{{n}} tries left."
+msgstr "{{n}} thuras air fhàgail."
+
+#: inputCodeRetriesLeft[other]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[other]"
+msgid "{{n}} tries left."
+msgstr "{{n}} thuras air fhàgail."
 
 #: pinErrorMsg
 msgid "The PIN was incorrect."
 msgstr "Bha am PIN cearr."
 
-#: pinAttemptMsg
-msgctxt "pinAttemptMsg"
+#: pinAttemptMsg2
+#, fuzzy
+msgctxt "pinAttemptMsg2"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: pinAttemptMsg[one]
-msgid "one last try."
-msgstr "aon turas air fhàgail."
+#: pinAttemptMsg2[one]
+msgid ""
+"You have one try left to enter the correct code before locking the SIM card."
+msgstr ""
 
-#: pinAttemptMsg[two]
-msgctxt "pinAttemptMsg[two]"
-msgid "{{n}} tries left."
-msgstr "{{n}} thuras air fhàgail."
+#: pinAttemptMsg2[two]
+msgctxt "pinAttemptMsg2[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
-#: pinAttemptMsg[few]
-msgctxt "pinAttemptMsg[few]"
-msgid "{{n}} tries left."
-msgstr "{{n}} tursan air fhàgail."
+#: pinAttemptMsg2[few]
+msgctxt "pinAttemptMsg2[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
-#: pinAttemptMsg[many]
-msgctxt "pinAttemptMsg[many]"
-msgid "{{n}} tries left."
-msgstr "{{n}} turas air fhàgail."
+#: pinAttemptMsg2[many]
+msgctxt "pinAttemptMsg2[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
-#: pinAttemptMsg[other]
-msgctxt "pinAttemptMsg[other]"
-msgid "{{n}} tries left."
-msgstr "{{n}} turas air fhàgail."
+#: pinAttemptMsg2[other]
+msgctxt "pinAttemptMsg2[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
 #: pinLastChanceMsg
 msgid ""
@@ -1033,7 +1062,8 @@ msgstr "Tha a' chairt SIM glaiste."
 #: enterPukMsg
 msgid ""
 "You must enter the Personal Unlocking Key (PUK) code for the SIM card. Refer "
-"to your SIM card documentation or contact your carrier for more information."
+"to your SIM card documentation or contact your carrier for more "
+"information."
 msgstr ""
 "Feumaidh tu an còd Personal Unlocking Key (PUK) airson na cairt SIM seo a "
 "chur a-steach. Thoir sùil air an fhiosrachadh a fhuair thu an cois na cairt "
@@ -1043,7 +1073,62 @@ msgstr ""
 msgid "The PUK code is incorrect."
 msgstr "Tha an còd PUK cearr."
 
-#: pukAttemptMsg
+#: pukAttemptMsg2
+#, fuzzy
+msgctxt "pukAttemptMsg2"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: pukAttemptMsg2[one]
+#, fuzzy
+msgid ""
+"You have one try left to enter the correct code before this SIM card will be "
+"permanently unusable. Refer to your SIM card documentation or contact your "
+"carrier for more information."
+msgstr ""
+"Tha {{n}} cothrom eile agad an còd ceart a chur a-steach mus bi a' chairt "
+"SIM seo gun fheum gu sìorraidh bràth. Thoir sùil air an fhiosrachadh a "
+"fhuair thu an cois na cairt SIM no bruidhinn ris a' ghiùlanair agad."
+
+#: pukAttemptMsg2[two]
+#, fuzzy
+msgctxt "pukAttemptMsg2[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Tha {{n}} cothrom eile agad an còd ceart a chur a-steach mus bi a' chairt "
+"SIM seo gun fheum gu sìorraidh bràth. Thoir sùil air an fhiosrachadh a "
+"fhuair thu an cois na cairt SIM no bruidhinn ris a' ghiùlanair agad."
+
+#: pukAttemptMsg2[few]
+#, fuzzy
+msgctxt "pukAttemptMsg2[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Tha {{n}} cothrom eile agad an còd ceart a chur a-steach mus bi a' chairt "
+"SIM seo gun fheum gu sìorraidh bràth. Thoir sùil air an fhiosrachadh a "
+"fhuair thu an cois na cairt SIM no bruidhinn ris a' ghiùlanair agad."
+
+#: pukAttemptMsg2[many]
+#, fuzzy
+msgctxt "pukAttemptMsg2[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Tha {{n}} cothrom eile agad an còd ceart a chur a-steach mus bi a' chairt "
+"SIM seo gun fheum gu sìorraidh bràth. Thoir sùil air an fhiosrachadh a "
+"fhuair thu an cois na cairt SIM no bruidhinn ris a' ghiùlanair agad."
+
+#: pukAttemptMsg2[other]
+#, fuzzy
+msgctxt "pukAttemptMsg2[other]"
 msgid ""
 "You have {{n}} tries left to enter the correct code before this SIM card "
 "will be permanently unusable. Refer to your SIM card documentation or "
@@ -1060,9 +1145,9 @@ msgid ""
 "documentation or contact your carrier for more information."
 msgstr ""
 "Tha aon chothrom eile agad an còd PUK ceart a chur a-steach. Bidh a' chairt "
-"SIM seo gun fheum gu sìorraidh bràth ma chuireas tu còd PUK cearr a-steach a-"
-"rithist. Thoir sùil air an fhiosrachadh a fhuair thu an cois na cairt SIM no "
-"bruidhinn ris a' ghiùlanair agad."
+"SIM seo gun fheum gu sìorraidh bràth ma chuireas tu còd PUK cearr a-steach "
+"a-rithist. Thoir sùil air an fhiosrachadh a fhuair thu an cois na cairt SIM "
+"no bruidhinn ris a' ghiùlanair agad."
 
 #: newSimPinMsg
 msgid "Create PIN (must contain 4 to 8 digits)"
@@ -1080,7 +1165,66 @@ msgstr "Chan eil an dà PIN co-ionnann."
 msgid "The NCK code is incorrect."
 msgstr "Tha an còd NCK cearr."
 
-#: nckAttemptMsg
+#: nckAttemptMsg2
+#, fuzzy
+msgctxt "nckAttemptMsg2"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: nckAttemptMsg2[one]
+#, fuzzy
+msgid ""
+"Network depersonalization request failure. You have one try left to enter "
+"the correct code. Refer to your device documentation or contact your carrier "
+"for more information."
+msgstr ""
+"Dh'fhàillig d' iarrtas airson Network Depersonalization. 'S urrainn dhut "
+"feuchainn ris a' chòd cheart a chur a-steach {{n}} turais fhathast. Thoir "
+"sùil air an fhiosrachadh a thàinig an cois an uidheim agad no cuir fios gun "
+"ghiùlanair agad."
+
+#: nckAttemptMsg2[two]
+#, fuzzy
+msgctxt "nckAttemptMsg2[two]"
+msgid ""
+"Network depersonalization request failure. You have {{n}} tries left to "
+"enter the correct code. Refer to your device documentation or contact your "
+"carrier for more information."
+msgstr ""
+"Dh'fhàillig d' iarrtas airson Network Depersonalization. 'S urrainn dhut "
+"feuchainn ris a' chòd cheart a chur a-steach {{n}} turais fhathast. Thoir "
+"sùil air an fhiosrachadh a thàinig an cois an uidheim agad no cuir fios gun "
+"ghiùlanair agad."
+
+#: nckAttemptMsg2[few]
+#, fuzzy
+msgctxt "nckAttemptMsg2[few]"
+msgid ""
+"Network depersonalization request failure. You have {{n}} tries left to "
+"enter the correct code. Refer to your device documentation or contact your "
+"carrier for more information."
+msgstr ""
+"Dh'fhàillig d' iarrtas airson Network Depersonalization. 'S urrainn dhut "
+"feuchainn ris a' chòd cheart a chur a-steach {{n}} turais fhathast. Thoir "
+"sùil air an fhiosrachadh a thàinig an cois an uidheim agad no cuir fios gun "
+"ghiùlanair agad."
+
+#: nckAttemptMsg2[many]
+#, fuzzy
+msgctxt "nckAttemptMsg2[many]"
+msgid ""
+"Network depersonalization request failure. You have {{n}} tries left to "
+"enter the correct code. Refer to your device documentation or contact your "
+"carrier for more information."
+msgstr ""
+"Dh'fhàillig d' iarrtas airson Network Depersonalization. 'S urrainn dhut "
+"feuchainn ris a' chòd cheart a chur a-steach {{n}} turais fhathast. Thoir "
+"sùil air an fhiosrachadh a thàinig an cois an uidheim agad no cuir fios gun "
+"ghiùlanair agad."
+
+#: nckAttemptMsg2[other]
+#, fuzzy
+msgctxt "nckAttemptMsg2[other]"
 msgid ""
 "Network depersonalization request failure. You have {{n}} tries left to "
 "enter the correct code. Refer to your device documentation or contact your "
@@ -1178,23 +1322,128 @@ msgid "The network {{networkName}} was found. Join network?"
 msgstr ""
 "Chaidh an lìonra {{networkName}} a lorg. A bheil thu airson ceangal ris?"
 
-#~ msgid "Bluetooth sending file complete"
-#~ msgstr "Tha Bluetooth deiseil le cur an fhaidhle"
+#. # [CE] Volume warning toast
+#: ceWarningtitle
+msgid "Volume warning"
+msgstr ""
 
-#~ msgid "Bluetooth received file ready to open"
-#~ msgstr "Tha am faidhle a fhuair thu air Bluetooth deiseil ri fhosgladh"
+#: ceWarningcontent
+msgid ""
+"To prevent possible hearing damage, do not listen at hight volume levels for "
+"long periods."
+msgstr ""
 
-#~ msgid "Bluetooth sending file failed"
-#~ msgstr "Dh'fhàillig cur an fhaidhle le Bluetooth"
+#. #power saving mode
+#: notification-powersaving-mode-on-title
+msgid "Power Saving Mode"
+msgstr ""
 
-#~ msgid "Bluetooth received a file it can not open"
-#~ msgstr "Fhuair Bluetooth faidhle nach urrainn dha fhosgladh"
+#: notification-powersaving-mode-on-description
+msgid "Power saving mode is on."
+msgstr ""
 
-#~ msgid "Transfer completed"
-#~ msgstr "Tha an tar-chur deiseil"
+#. # Low device storage
+#: low-device-storage
+msgid "Device space low.\n"
+msgstr ""
 
-#~ msgid "Transfer failed"
-#~ msgstr "Dh'fhàillig an tar-chur"
+#. # LOCALIZATION NOTE {{value}} is the amount of remaining free space expressed
+#. # in the corresponding unit ({{unit}}), which is one of the byteUnit-* strings
+#. # of this same file.
+#: free-space
+msgid "{[ plural(value) ]}"
+msgstr ""
+
+#: free-space[zero]
+msgid "No remaining free space."
+msgstr ""
+
+#: free-space[one]
+msgctxt "free-space[one]"
+msgid "Less than {{value}} {{unit}} remaining."
+msgstr ""
+
+#: free-space[two]
+msgctxt "free-space[two]"
+msgid "Less than {{value}} {{unit}} remaining."
+msgstr ""
+
+#: free-space[few]
+msgctxt "free-space[few]"
+msgid "Less than {{value}} {{unit}} remaining."
+msgstr ""
+
+#: free-space[many]
+msgctxt "free-space[many]"
+msgid "Less than {{value}} {{unit}} remaining."
+msgstr ""
+
+#: free-space[other]
+msgctxt "free-space[other]"
+msgid "Less than {{value}} {{unit}} remaining."
+msgstr ""
+
+#: unknown-free-space
+msgid "Unknown remaining space."
+msgstr ""
+
+#~ msgid "(service provider locked)"
+#~ msgstr "(tha solaraiche na seirbheise glaiste)"
+
+#~ msgid "(corporate locked)"
+#~ msgstr "(glas corporaid)"
+
+#~ msgid "Receive file?"
+#~ msgstr "A bheil thu airson gabhail ris?"
+
+#~ msgid "File incoming from another device"
+#~ msgstr "Tha faidhle a' tighinn a-steach o uidheam eile"
+
+#~ msgid "File sent"
+#~ msgstr "Chaidh am faidhle a chur"
+
+#~ msgid "File received"
+#~ msgstr "Faidhle air fhaighinn"
+
+#~ msgid "File could not be sent"
+#~ msgstr "Cha b' urrainn dhuinn am faidhle a chur"
+
+#~ msgid "File could not be received"
+#~ msgstr "Cha b' urrainn dhuinn am faidhle fhaighinn"
+
+#~ msgid "Unknown file"
+#~ msgstr "Faidhle neo-aithnichte"
+
+#~ msgid "CCK code"
+#~ msgstr "Còd CCK"
+
+#~ msgid "SPCK code"
+#~ msgstr "Còd SPCK"
+
+#~ msgid "Enter CCK code"
+#~ msgstr "Cuir a-steach an còd CCK"
+
+#~ msgid "Enter SPCK code"
+#~ msgstr "Cuir a-steach am SPCK"
+
+#~ msgctxt "pinAttemptMsg"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgid "one last try."
+#~ msgstr "aon turas air fhàgail."
+
+#~ msgctxt "pinAttemptMsg[few]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} tursan air fhàgail."
+
+#~ msgctxt "pinAttemptMsg[many]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} turas air fhàgail."
+
+#~ msgctxt "pinAttemptMsg[other]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} turas air fhàgail."
 
 #~ msgid ""
 #~ "Wi-Fi unavailable. Updating over current connection will block incoming "
@@ -1208,15 +1457,6 @@ msgstr ""
 
 #~ msgid "Battery full"
 #~ msgstr "Tha am bataraidh làn"
-
-#, fuzzy
-#~ msgid "Don't allow"
-#~ msgstr "Na ceadaich"
-
-#, fuzzy
-#~ msgctxt "continue"
-#~ msgid "Continue"
-#~ msgstr "Lean air adhart"
 
 #~ msgid "Emergency calls only (no SIM)"
 #~ msgstr "Gairmean èiginneach a-mhàin (gun SIM)"

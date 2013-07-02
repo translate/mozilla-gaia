@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
+"POT-Creation-Date: 2013-07-02 18:16+0200\n"
 "PO-Revision-Date: 2013-03-09 10:14+0000\n"
 "Last-Translator: Hakuna <jackychun1393@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,45 +28,11 @@ msgstr "Nhập mã PIN"
 msgid "Type your PIN code"
 msgstr "Nhập mã PIN của bạn"
 
-#: type_nck
-#, fuzzy
-msgid "Type your NCK code"
-msgstr "Nhập mã PIN của bạn"
-
-#: type_cck
-#, fuzzy
-msgid "Type your CCK code"
-msgstr "Nhập mã PIN của bạn"
-
-#: type_spck
-#, fuzzy
-msgid "Type your SPCK code"
-msgstr "Nhập mã PIN của bạn"
-
-#: send
-msgid "Send"
-msgstr "Gửi"
-
 #: pinValidation
 msgid "PIN must have between 4 and 8 characters."
 msgstr "Mã PIN phải có từ 4 đến 8 kí tự"
 
-#: nckValidation
-#, fuzzy
-msgid "NCK must have between 8 and 16 characters."
-msgstr "Mã PIN phải có từ 4 đến 8 kí tự"
-
-#: cckValidation
-#, fuzzy
-msgid "CCK must have between 8 and 16 characters."
-msgstr "Mã PIN phải có từ 4 đến 8 kí tự"
-
-#: spckValidation
-#, fuzzy
-msgid "SPCK must have between 8 and 16 characters."
-msgstr "Mã PIN phải có từ 4 đến 8 kí tự"
-
-#: pinErrorMsg
+#: pinError
 msgid "The PIN was incorrect."
 msgstr "Mã PIN không chính xác."
 
@@ -76,29 +42,37 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: pinAttemptMsg2[one]
-msgctxt "pinAttemptMsg2[one]"
-msgid "Last chance."
-msgstr "Lẩn sửa cuối cùng"
+msgid ""
+"You have one try left to enter the correct code before locking the SIM card."
+msgstr ""
 
 #: pinAttemptMsg2[two]
 msgctxt "pinAttemptMsg2[two]"
-msgid "{{n}} tries left."
-msgstr "Còn {{n}} lần thử."
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
 #: pinAttemptMsg2[few]
 msgctxt "pinAttemptMsg2[few]"
-msgid "{{n}} tries left."
-msgstr "Còn {{n}} lần thử."
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
 #: pinAttemptMsg2[many]
 msgctxt "pinAttemptMsg2[many]"
-msgid "{{n}} tries left."
-msgstr "Còn {{n}} lần thử."
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
 #: pinAttemptMsg2[other]
 msgctxt "pinAttemptMsg2[other]"
-msgid "{{n}} tries left."
-msgstr "Còn {{n}} lần thử."
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
 #: pinLastChanceMsg
 msgid ""
@@ -112,24 +86,79 @@ msgstr ""
 msgid "Enter PUK code"
 msgstr "Nhập mã PUK"
 
-#: nckcode
-#, fuzzy
-msgid "Enter NCK code"
-msgstr "Nhập mã PUK"
-
-#: cckcode
-#, fuzzy
-msgid "Enter CCK code"
-msgstr "Nhập mã PUK"
-
-#: spckcode
-#, fuzzy
-msgid "Enter SPCK code"
-msgstr "Nhập mã PUK"
-
 #: type_puk
 msgid "PUK code"
 msgstr "Mã PUK:"
+
+#: pukValidation
+msgid "PUK code must have exactly 8 characters."
+msgstr "Mã PUK phải có 8 ký tự."
+
+#: pukInfo
+msgid ""
+"You must enter the Personal Unlocking Key (PUK) Code for the SIM card. Refer "
+"to your SIM card documentation or contact your carrier for more "
+"information."
+msgstr ""
+"Bạn phải nhập Personal Unlocking Key (PUK) cho thẻ SIM. Hãy tham khảo hướng "
+"dẫn sử dụng SIM của bạn hoặc liên hệ với nhà cung cấp dịch vụ của bạn để "
+"biết thêm thông tin."
+
+#: pukError
+#, fuzzy
+msgid "The PUK was incorrect."
+msgstr "PUK không đúng"
+
+#: pukAttemptMsg2
+#, fuzzy
+msgctxt "pukAttemptMsg2"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: pukAttemptMsg2[one]
+msgid ""
+"You have one try left to enter the correct code before this SIM card will be "
+"permanently unusable. Refer to your SIM card documentation or contact your "
+"carrier for more information."
+msgstr ""
+
+#: pukAttemptMsg2[two]
+msgctxt "pukAttemptMsg2[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+
+#: pukAttemptMsg2[few]
+msgctxt "pukAttemptMsg2[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+
+#: pukAttemptMsg2[many]
+msgctxt "pukAttemptMsg2[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+
+#: pukAttemptMsg2[other]
+msgctxt "pukAttemptMsg2[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+
+#: pukLastChanceMsg
+msgid ""
+"This is your last chance to enter the correct PUK code. Your SIM card will "
+"be permanently unusable if you enter in the wrong PUK code."
+msgstr ""
 
 #: create_newpin
 msgid "Create new PIN (4 to 8 digits)"
@@ -139,61 +168,57 @@ msgstr "Tạo mã PIN mới (4 đến 8 kí tự)"
 msgid "Confirm new PIN"
 msgstr "Xác nhận mã PIN"
 
+#: newpinConfirmation
+msgid "PINs don’t match"
+msgstr "PIN không đúng"
+
+#: skip
+#, fuzzy
+msgctxt "skip"
+msgid "Skip"
+msgstr "Bỏ qua"
+
+#: send
+msgid "Send"
+msgstr "Gửi"
+
 #: simLocked
 msgid "The SIM card is locked"
 msgstr "Thẻ SIM đã bị khóa"
 
-#: pukError
-msgid ""
-"You must enter the Personal Unlocking Key (PUK) Code for the SIM card. Refer "
-"to your SIM card documentation or contact your carrier for more information."
-msgstr ""
-"Bạn phải nhập Personal Unlocking Key (PUK) cho thẻ SIM. Hãy tham khảo hướng "
-"dẫn sử dụng SIM của bạn hoặc liên hệ với nhà cung cấp dịch vụ của bạn để "
-"biết thêm thông tin."
-
-#: pukErrorMsg
-msgid "The PUK was incorrect"
-msgstr "PUK không đúng"
-
-#: pukAttemptMsg
-msgctxt "pukAttemptMsg"
+#: inputCodeRetriesLeft
+#, fuzzy
+msgctxt "inputCodeRetriesLeft"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: pukAttemptMsg[one]
+#: inputCodeRetriesLeft[one]
+msgid "last try."
+msgstr ""
+
+#: inputCodeRetriesLeft[two]
 #, fuzzy
-msgctxt "pukAttemptMsg[one]"
-msgid "Last chance."
-msgstr "Lần sửa cuối cùng"
-
-#: pukAttemptMsg[two]
-msgctxt "pukAttemptMsg[two]"
+msgctxt "inputCodeRetriesLeft[two]"
 msgid "{{n}} tries left."
 msgstr "Còn {{n}} lần thử."
 
-#: pukAttemptMsg[few]
-msgctxt "pukAttemptMsg[few]"
+#: inputCodeRetriesLeft[few]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[few]"
 msgid "{{n}} tries left."
 msgstr "Còn {{n}} lần thử."
 
-#: pukAttemptMsg[many]
-msgctxt "pukAttemptMsg[many]"
+#: inputCodeRetriesLeft[many]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[many]"
 msgid "{{n}} tries left."
 msgstr "Còn {{n}} lần thử."
 
-#: pukAttemptMsg[other]
-msgctxt "pukAttemptMsg[other]"
+#: inputCodeRetriesLeft[other]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[other]"
 msgid "{{n}} tries left."
 msgstr "Còn {{n}} lần thử."
-
-#: pukValidation
-msgid "PUK code must have exactly 8 characters."
-msgstr "Mã PUK phải có 8 ký tự."
-
-#: newpinConfirmation
-msgid "PINs don’t match"
-msgstr "PIN không đúng"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Language
@@ -296,14 +321,6 @@ msgstr "Cảnh báo"
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
 
-#: scanningNetworks
-msgid "Scanning for networks"
-msgstr ""
-
-#: selectNetwork
-msgid "Select a network"
-msgstr ""
-
 #: shortStatus-connecting
 msgid "Connecting…"
 msgstr "Đang kết nối..."
@@ -368,9 +385,9 @@ msgstr "Hiện mật khẩu"
 msgid "Refresh"
 msgstr "Làm mới"
 
-#: noWifiFound2
-msgid "We could not find any wireless network"
-msgstr ""
+#: noWifiFound
+msgid "No networks found"
+msgstr "Không tìm thấy mạng"
 
 #: join
 #, fuzzy
@@ -426,14 +443,6 @@ msgstr "Thẻ SIM"
 msgid "Facebook"
 msgstr "Facebook"
 
-#: importLive
-msgid "Windows Live"
-msgstr ""
-
-#: importGmail
-msgid "Gmail"
-msgstr ""
-
 #: fb-checking
 msgid "… checking"
 msgstr "... kiểm tra"
@@ -460,7 +469,8 @@ msgstr ""
 #: about-your-rights-0
 msgid ""
 "{{brandShortName}} is built on free and open source software by a community "
-"of thousands from all over the world. There are a few things you should know:"
+"of thousands from all over the world. There are a few things you should "
+"know:"
 msgstr ""
 "{{branShortName}} là một phần mềm nguồn mở, được xây dựng bởi một cộng đồng "
 "hàng nghìn thành viên trên toàn thế giới. Có một vài điều bạn nên biết:"
@@ -651,6 +661,8 @@ msgid "Join"
 msgstr "Ghép nối"
 
 #: skip
+#, fuzzy
+msgctxt "skip"
 msgid "Skip"
 msgstr "Bỏ qua"
 
@@ -750,16 +762,85 @@ msgstr "Địa chỉ email không đúng"
 msgid "Please go back and correct your entry."
 msgstr "Làm ơn quay lại và nhập nội dung của bạn"
 
-#~ msgid "No networks found"
-#~ msgstr "Không tìm thấy mạng"
+#, fuzzy
+#~ msgid "Type your NCK code"
+#~ msgstr "Nhập mã PIN của bạn"
+
+#, fuzzy
+#~ msgid "Type your CCK code"
+#~ msgstr "Nhập mã PIN của bạn"
+
+#, fuzzy
+#~ msgid "Type your SPCK code"
+#~ msgstr "Nhập mã PIN của bạn"
+
+#, fuzzy
+#~ msgid "NCK must have between 8 and 16 characters."
+#~ msgstr "Mã PIN phải có từ 4 đến 8 kí tự"
+
+#, fuzzy
+#~ msgid "CCK must have between 8 and 16 characters."
+#~ msgstr "Mã PIN phải có từ 4 đến 8 kí tự"
+
+#, fuzzy
+#~ msgid "SPCK must have between 8 and 16 characters."
+#~ msgstr "Mã PIN phải có từ 4 đến 8 kí tự"
+
+#~ msgctxt "pinAttemptMsg2[one]"
+#~ msgid "Last chance."
+#~ msgstr "Lẩn sửa cuối cùng"
+
+#~ msgctxt "pinAttemptMsg2[few]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "Còn {{n}} lần thử."
+
+#~ msgctxt "pinAttemptMsg2[many]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "Còn {{n}} lần thử."
+
+#~ msgctxt "pinAttemptMsg2[other]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "Còn {{n}} lần thử."
+
+#, fuzzy
+#~ msgid "Enter NCK code"
+#~ msgstr "Nhập mã PUK"
+
+#, fuzzy
+#~ msgid "Enter CCK code"
+#~ msgstr "Nhập mã PUK"
+
+#, fuzzy
+#~ msgid "Enter SPCK code"
+#~ msgstr "Nhập mã PUK"
+
+#~ msgctxt "pukAttemptMsg"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#, fuzzy
+#~ msgctxt "pukAttemptMsg[one]"
+#~ msgid "Last chance."
+#~ msgstr "Lần sửa cuối cùng"
+
+#~ msgctxt "pukAttemptMsg[two]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "Còn {{n}} lần thử."
+
+#~ msgctxt "pukAttemptMsg[few]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "Còn {{n}} lần thử."
+
+#~ msgctxt "pukAttemptMsg[many]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "Còn {{n}} lần thử."
+
+#~ msgctxt "pukAttemptMsg[other]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "Còn {{n}} lần thử."
 
 #~ msgid "Import contacts from"
 #~ msgstr "Nhập liên lạc từ"
-
-#, fuzzy
-#~ msgctxt "skip"
-#~ msgid "Skip"
-#~ msgstr "Bỏ qua"
 
 #~ msgid "Done"
 #~ msgstr "Hoàn tất"

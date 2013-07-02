@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
+"POT-Creation-Date: 2013-07-02 18:16+0200\n"
 "PO-Revision-Date: 2013-01-03 15:29+0000\n"
 "Last-Translator: Joel <joel.m.encinas@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,14 +72,6 @@ msgstr ""
 
 #: emergencyCallsOnly-networkLocked
 msgid "(network locked)"
-msgstr ""
-
-#: emergencyCallsOnly-serviceProviderLocked
-msgid "(service provider locked)"
-msgstr ""
-
-#: emergencyCallsOnly-corporateLocked
-msgid "(corporate locked)"
 msgstr ""
 
 #: enterPIN
@@ -192,6 +184,10 @@ msgstr ""
 msgid "No"
 msgstr ""
 
+#: deny
+msgid "Don't allow"
+msgstr ""
+
 #: allow
 msgid "Allow"
 msgstr ""
@@ -281,6 +277,11 @@ msgstr ""
 
 #: resume
 msgid "Resume"
+msgstr ""
+
+#: continue
+msgctxt "continue"
+msgid "Continue"
 msgstr ""
 
 #: stopDownloading
@@ -464,8 +465,8 @@ msgstr ""
 #: downloadUpdatesViaDataConnectionMessage
 msgid ""
 "Updates are downloaded via data connection when Wi-Fi is not available. When "
-"using data connection, phone calls may be blocked and additional charges may "
-"also apply."
+"using data connection, phone calls may be blocked and additional charges "
+"may also apply."
 msgstr ""
 
 #. # screenshots
@@ -661,7 +662,7 @@ msgstr ""
 #: crash-reports-description-3-start
 msgid ""
 "We use crash reports to try to fix problems and improve our products. We "
-"handle your information as we describe in our "
+"handle your information as we describe in our"
 msgstr ""
 
 #: crash-reports-description-3-privacy
@@ -712,14 +713,6 @@ msgstr ""
 
 #: wantToReceiveFile
 msgid "{{deviceName}} would like to transfer {{fileName}} ({{fileSize}})."
-msgstr ""
-
-#: notification-fileTransfer-title
-msgid "Receive file?"
-msgstr ""
-
-#: notification-fileTransfer-description
-msgid "File incoming from another device"
 msgstr ""
 
 #: byteUnit-B
@@ -780,6 +773,7 @@ msgid "Cancel Bluetooth file transfer?"
 msgstr ""
 
 #: continue
+msgctxt "continue"
 msgid "Continue"
 msgstr ""
 
@@ -795,25 +789,29 @@ msgstr ""
 msgid "failed"
 msgstr ""
 
-#: transferFinished-sentSuccessful-title
-msgid "File sent"
+#: transferFinished-sendingCompletedTitle
+msgid "Bluetooth sending file complete"
 msgstr ""
 
-#: transferFinished-receivedSuccessful-title
-msgid "File received"
+#: transferFinished-receivedCompletedTitle
+msgid "Bluetooth received file ready to open"
 msgstr ""
 
-#: transferFinished-sentFailed-title
-msgid "File could not be sent"
+#: transferFinished-sendingFailedTitle
+msgid "Bluetooth sending file failed"
 msgstr ""
 
-#: transferFinished-receivedFailed-title
-msgid "File could not be received"
+#: transferFinished-receivedFailedTitle
+msgid "Bluetooth received a file it can not open"
 msgstr ""
 
-#: unknown-file
-msgid "Unknown file"
-msgstr ""
+#: transferFinished-completedBody
+msgid "Transfer completed"
+msgstr "Paglilipat ay tapos na"
+
+#: transferFinished-failedBody
+msgid "Transfer failed"
+msgstr "Hindi nailipat"
 
 #: unknown-device
 msgid "Unknown device"
@@ -876,14 +874,6 @@ msgstr ""
 msgid "NCK code"
 msgstr ""
 
-#: cckCode
-msgid "CCK code"
-msgstr ""
-
-#: spckCode
-msgid "SPCK code"
-msgstr ""
-
 #: whatIsSimPin
 msgid "What is a SIM PIN?"
 msgstr "Ano ang PIN ng SIM?"
@@ -915,49 +905,79 @@ msgstr ""
 msgid "Enter NCK code"
 msgstr ""
 
-#: cckTitle
-msgid "Enter CCK code"
-msgstr ""
-
-#: spckTitle
-msgid "Enter SPCK code"
-msgstr ""
-
 #: newpinTitle
 msgid "New PIN"
 msgstr "Bagong PIN"
+
+#: inputCodeRetriesLeft
+msgctxt "inputCodeRetriesLeft"
+msgid "{[ plural(n) ]}"
+msgstr ""
+
+#: inputCodeRetriesLeft[one]
+msgid "last try."
+msgstr ""
+
+#: inputCodeRetriesLeft[two]
+msgctxt "inputCodeRetriesLeft[two]"
+msgid "{{n}} tries left."
+msgstr ""
+
+#: inputCodeRetriesLeft[few]
+msgctxt "inputCodeRetriesLeft[few]"
+msgid "{{n}} tries left."
+msgstr ""
+
+#: inputCodeRetriesLeft[many]
+msgctxt "inputCodeRetriesLeft[many]"
+msgid "{{n}} tries left."
+msgstr ""
+
+#: inputCodeRetriesLeft[other]
+msgctxt "inputCodeRetriesLeft[other]"
+msgid "{{n}} tries left."
+msgstr ""
 
 #: pinErrorMsg
 msgid "The PIN was incorrect."
 msgstr "Mali ang PIN."
 
-#: pinAttemptMsg
-msgctxt "pinAttemptMsg"
+#: pinAttemptMsg2
+msgctxt "pinAttemptMsg2"
 msgid "{[ plural(n) ]}"
 msgstr ""
 
-#: pinAttemptMsg[one]
-msgid "one last try."
-msgstr "subukan sa panghuling pagkakataon"
-
-#: pinAttemptMsg[two]
-msgctxt "pinAttemptMsg[two]"
-msgid "{{n}} tries left."
+#: pinAttemptMsg2[one]
+msgid ""
+"You have one try left to enter the correct code before locking the SIM card."
 msgstr ""
 
-#: pinAttemptMsg[few]
-msgctxt "pinAttemptMsg[few]"
-msgid "{{n}} tries left."
+#: pinAttemptMsg2[two]
+msgctxt "pinAttemptMsg2[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
 msgstr ""
 
-#: pinAttemptMsg[many]
-msgctxt "pinAttemptMsg[many]"
-msgid "{{n}} tries left."
+#: pinAttemptMsg2[few]
+msgctxt "pinAttemptMsg2[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
 msgstr ""
 
-#: pinAttemptMsg[other]
-msgctxt "pinAttemptMsg[other]"
-msgid "{{n}} tries left."
+#: pinAttemptMsg2[many]
+msgctxt "pinAttemptMsg2[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+
+#: pinAttemptMsg2[other]
+msgctxt "pinAttemptMsg2[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
 msgstr ""
 
 #: pinLastChanceMsg
@@ -973,14 +993,52 @@ msgstr "Nakasara ang SIM card."
 #: enterPukMsg
 msgid ""
 "You must enter the Personal Unlocking Key (PUK) code for the SIM card. Refer "
-"to your SIM card documentation or contact your carrier for more information."
+"to your SIM card documentation or contact your carrier for more "
+"information."
 msgstr ""
 
 #: pukErrorMsg
 msgid "The PUK code is incorrect."
 msgstr "Mali ang PUK code."
 
-#: pukAttemptMsg
+#: pukAttemptMsg2
+msgctxt "pukAttemptMsg2"
+msgid "{[ plural(n) ]}"
+msgstr ""
+
+#: pukAttemptMsg2[one]
+msgid ""
+"You have one try left to enter the correct code before this SIM card will be "
+"permanently unusable. Refer to your SIM card documentation or contact your "
+"carrier for more information."
+msgstr ""
+
+#: pukAttemptMsg2[two]
+msgctxt "pukAttemptMsg2[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+
+#: pukAttemptMsg2[few]
+msgctxt "pukAttemptMsg2[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+
+#: pukAttemptMsg2[many]
+msgctxt "pukAttemptMsg2[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+
+#: pukAttemptMsg2[other]
+msgctxt "pukAttemptMsg2[other]"
 msgid ""
 "You have {{n}} tries left to enter the correct code before this SIM card "
 "will be permanently unusable. Refer to your SIM card documentation or "
@@ -1011,7 +1069,44 @@ msgstr "Hindi magkapareho ang PIN."
 msgid "The NCK code is incorrect."
 msgstr "Mali ang PUK code."
 
-#: nckAttemptMsg
+#: nckAttemptMsg2
+msgctxt "nckAttemptMsg2"
+msgid "{[ plural(n) ]}"
+msgstr ""
+
+#: nckAttemptMsg2[one]
+msgid ""
+"Network depersonalization request failure. You have one try left to enter "
+"the correct code. Refer to your device documentation or contact your carrier "
+"for more information."
+msgstr ""
+
+#: nckAttemptMsg2[two]
+msgctxt "nckAttemptMsg2[two]"
+msgid ""
+"Network depersonalization request failure. You have {{n}} tries left to "
+"enter the correct code. Refer to your device documentation or contact your "
+"carrier for more information."
+msgstr ""
+
+#: nckAttemptMsg2[few]
+msgctxt "nckAttemptMsg2[few]"
+msgid ""
+"Network depersonalization request failure. You have {{n}} tries left to "
+"enter the correct code. Refer to your device documentation or contact your "
+"carrier for more information."
+msgstr ""
+
+#: nckAttemptMsg2[many]
+msgctxt "nckAttemptMsg2[many]"
+msgid ""
+"Network depersonalization request failure. You have {{n}} tries left to "
+"enter the correct code. Refer to your device documentation or contact your "
+"carrier for more information."
+msgstr ""
+
+#: nckAttemptMsg2[other]
+msgctxt "nckAttemptMsg2[other]"
 msgid ""
 "Network depersonalization request failure. You have {{n}} tries left to "
 "enter the correct code. Refer to your device documentation or contact your "
@@ -1098,8 +1193,70 @@ msgstr ""
 msgid "The network {{networkName}} was found. Join network?"
 msgstr ""
 
-#~ msgid "Transfer completed"
-#~ msgstr "Paglilipat ay tapos na"
+#. # [CE] Volume warning toast
+#: ceWarningtitle
+msgid "Volume warning"
+msgstr ""
 
-#~ msgid "Transfer failed"
-#~ msgstr "Hindi nailipat"
+#: ceWarningcontent
+msgid ""
+"To prevent possible hearing damage, do not listen at hight volume levels for "
+"long periods."
+msgstr ""
+
+#. #power saving mode
+#: notification-powersaving-mode-on-title
+msgid "Power Saving Mode"
+msgstr ""
+
+#: notification-powersaving-mode-on-description
+msgid "Power saving mode is on."
+msgstr ""
+
+#. # Low device storage
+#: low-device-storage
+msgid "Device space low.\n"
+msgstr ""
+
+#. # LOCALIZATION NOTE {{value}} is the amount of remaining free space expressed
+#. # in the corresponding unit ({{unit}}), which is one of the byteUnit-* strings
+#. # of this same file.
+#: free-space
+msgid "{[ plural(value) ]}"
+msgstr ""
+
+#: free-space[zero]
+msgid "No remaining free space."
+msgstr ""
+
+#: free-space[one]
+msgctxt "free-space[one]"
+msgid "Less than {{value}} {{unit}} remaining."
+msgstr ""
+
+#: free-space[two]
+msgctxt "free-space[two]"
+msgid "Less than {{value}} {{unit}} remaining."
+msgstr ""
+
+#: free-space[few]
+msgctxt "free-space[few]"
+msgid "Less than {{value}} {{unit}} remaining."
+msgstr ""
+
+#: free-space[many]
+msgctxt "free-space[many]"
+msgid "Less than {{value}} {{unit}} remaining."
+msgstr ""
+
+#: free-space[other]
+msgctxt "free-space[other]"
+msgid "Less than {{value}} {{unit}} remaining."
+msgstr ""
+
+#: unknown-free-space
+msgid "Unknown remaining space."
+msgstr ""
+
+#~ msgid "one last try."
+#~ msgstr "subukan sa panghuling pagkakataon"

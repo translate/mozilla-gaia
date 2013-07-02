@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
+"POT-Creation-Date: 2013-07-02 18:16+0200\n"
 "PO-Revision-Date: 2013-01-21 21:00+0000\n"
 "Last-Translator: Fahmi <ryuzaki_l@y7mail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,39 +28,11 @@ msgstr ""
 msgid "Type your PIN code"
 msgstr ""
 
-#: type_nck
-msgid "Type your NCK code"
-msgstr ""
-
-#: type_cck
-msgid "Type your CCK code"
-msgstr ""
-
-#: type_spck
-msgid "Type your SPCK code"
-msgstr ""
-
-#: send
-msgid "Send"
-msgstr ""
-
 #: pinValidation
 msgid "PIN must have between 4 and 8 characters."
 msgstr ""
 
-#: nckValidation
-msgid "NCK must have between 8 and 16 characters."
-msgstr ""
-
-#: cckValidation
-msgid "CCK must have between 8 and 16 characters."
-msgstr ""
-
-#: spckValidation
-msgid "SPCK must have between 8 and 16 characters."
-msgstr ""
-
-#: pinErrorMsg
+#: pinError
 msgid "The PIN was incorrect."
 msgstr ""
 
@@ -70,28 +42,36 @@ msgid "{[ plural(n) ]}"
 msgstr ""
 
 #: pinAttemptMsg2[one]
-msgctxt "pinAttemptMsg2[one]"
-msgid "Last chance."
+msgid ""
+"You have one try left to enter the correct code before locking the SIM card."
 msgstr ""
 
 #: pinAttemptMsg2[two]
 msgctxt "pinAttemptMsg2[two]"
-msgid "{{n}} tries left."
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
 msgstr ""
 
 #: pinAttemptMsg2[few]
 msgctxt "pinAttemptMsg2[few]"
-msgid "{{n}} tries left."
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
 msgstr ""
 
 #: pinAttemptMsg2[many]
 msgctxt "pinAttemptMsg2[many]"
-msgid "{{n}} tries left."
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
 msgstr ""
 
 #: pinAttemptMsg2[other]
 msgctxt "pinAttemptMsg2[other]"
-msgid "{{n}} tries left."
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
 msgstr ""
 
 #: pinLastChanceMsg
@@ -104,20 +84,73 @@ msgstr ""
 msgid "Enter PUK code"
 msgstr ""
 
-#: nckcode
-msgid "Enter NCK code"
-msgstr ""
-
-#: cckcode
-msgid "Enter CCK code"
-msgstr ""
-
-#: spckcode
-msgid "Enter SPCK code"
-msgstr ""
-
 #: type_puk
 msgid "PUK code"
+msgstr ""
+
+#: pukValidation
+msgid "PUK code must have exactly 8 characters."
+msgstr ""
+
+#: pukInfo
+msgid ""
+"You must enter the Personal Unlocking Key (PUK) Code for the SIM card. Refer "
+"to your SIM card documentation or contact your carrier for more "
+"information."
+msgstr ""
+
+#: pukError
+msgid "The PUK was incorrect."
+msgstr ""
+
+#: pukAttemptMsg2
+msgctxt "pukAttemptMsg2"
+msgid "{[ plural(n) ]}"
+msgstr ""
+
+#: pukAttemptMsg2[one]
+msgid ""
+"You have one try left to enter the correct code before this SIM card will be "
+"permanently unusable. Refer to your SIM card documentation or contact your "
+"carrier for more information."
+msgstr ""
+
+#: pukAttemptMsg2[two]
+msgctxt "pukAttemptMsg2[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+
+#: pukAttemptMsg2[few]
+msgctxt "pukAttemptMsg2[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+
+#: pukAttemptMsg2[many]
+msgctxt "pukAttemptMsg2[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+
+#: pukAttemptMsg2[other]
+msgctxt "pukAttemptMsg2[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+
+#: pukLastChanceMsg
+msgid ""
+"This is your last chance to enter the correct PUK code. Your SIM card will "
+"be permanently unusable if you enter in the wrong PUK code."
 msgstr ""
 
 #: create_newpin
@@ -128,56 +161,50 @@ msgstr ""
 msgid "Confirm new PIN"
 msgstr ""
 
+#: newpinConfirmation
+msgid "PINs don’t match"
+msgstr ""
+
+#: skip
+msgctxt "skip"
+msgid "Skip"
+msgstr ""
+
+#: send
+msgid "Send"
+msgstr ""
+
 #: simLocked
 msgid "The SIM card is locked"
 msgstr ""
 
-#: pukError
-msgid ""
-"You must enter the Personal Unlocking Key (PUK) Code for the SIM card. Refer "
-"to your SIM card documentation or contact your carrier for more information."
-msgstr ""
-
-#: pukErrorMsg
-msgid "The PUK was incorrect"
-msgstr ""
-
-#: pukAttemptMsg
-msgctxt "pukAttemptMsg"
+#: inputCodeRetriesLeft
+msgctxt "inputCodeRetriesLeft"
 msgid "{[ plural(n) ]}"
 msgstr ""
 
-#: pukAttemptMsg[one]
-msgctxt "pukAttemptMsg[one]"
-msgid "Last chance."
+#: inputCodeRetriesLeft[one]
+msgid "last try."
 msgstr ""
 
-#: pukAttemptMsg[two]
-msgctxt "pukAttemptMsg[two]"
+#: inputCodeRetriesLeft[two]
+msgctxt "inputCodeRetriesLeft[two]"
 msgid "{{n}} tries left."
 msgstr ""
 
-#: pukAttemptMsg[few]
-msgctxt "pukAttemptMsg[few]"
+#: inputCodeRetriesLeft[few]
+msgctxt "inputCodeRetriesLeft[few]"
 msgid "{{n}} tries left."
 msgstr ""
 
-#: pukAttemptMsg[many]
-msgctxt "pukAttemptMsg[many]"
+#: inputCodeRetriesLeft[many]
+msgctxt "inputCodeRetriesLeft[many]"
 msgid "{{n}} tries left."
 msgstr ""
 
-#: pukAttemptMsg[other]
-msgctxt "pukAttemptMsg[other]"
+#: inputCodeRetriesLeft[other]
+msgctxt "inputCodeRetriesLeft[other]"
 msgid "{{n}} tries left."
-msgstr ""
-
-#: pukValidation
-msgid "PUK code must have exactly 8 characters."
-msgstr ""
-
-#: newpinConfirmation
-msgid "PINs don’t match"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -277,14 +304,6 @@ msgstr ""
 msgid "Wi-Fi"
 msgstr ""
 
-#: scanningNetworks
-msgid "Scanning for networks"
-msgstr ""
-
-#: selectNetwork
-msgid "Select a network"
-msgstr ""
-
 #: shortStatus-connecting
 msgid "Connecting…"
 msgstr "Menyambung..."
@@ -349,8 +368,8 @@ msgstr ""
 msgid "Refresh"
 msgstr ""
 
-#: noWifiFound2
-msgid "We could not find any wireless network"
+#: noWifiFound
+msgid "No networks found"
 msgstr ""
 
 #: join
@@ -408,14 +427,6 @@ msgstr ""
 msgid "Facebook"
 msgstr ""
 
-#: importLive
-msgid "Windows Live"
-msgstr ""
-
-#: importGmail
-msgid "Gmail"
-msgstr ""
-
 #: fb-checking
 msgid "… checking"
 msgstr ""
@@ -442,7 +453,8 @@ msgstr ""
 #: about-your-rights-0
 msgid ""
 "{{brandShortName}} is built on free and open source software by a community "
-"of thousands from all over the world. There are a few things you should know:"
+"of thousands from all over the world. There are a few things you should "
+"know:"
 msgstr ""
 
 #: about-your-rights-1
@@ -612,6 +624,7 @@ msgid "Join"
 msgstr ""
 
 #: skip
+msgctxt "skip"
 msgid "Skip"
 msgstr ""
 

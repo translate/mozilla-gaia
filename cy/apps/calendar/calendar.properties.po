@@ -1,9 +1,9 @@
-#. extracted from locales/en-US/apps/calendar/calendar.properties
+#. extracted from ./apps/calendar/calendar.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:06+0100\n"
+"POT-Creation-Date: 2013-07-02 18:16+0200\n"
 "PO-Revision-Date: 2013-05-09 19:53+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Pootle 2.5.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1368129186.0\n"
@@ -41,14 +41,6 @@ msgstr "Cadarnhau"
 #: done
 msgid "Done"
 msgstr "Gorffen"
-
-#: events
-msgid "Events"
-msgstr "Digwyddiad"
-
-#: allday-events
-msgid "All-day Events"
-msgstr "Digwyddiad Drwy'r Dydd"
 
 #. # time view selector
 #: show-today
@@ -117,10 +109,6 @@ msgstr "Gosodiadau calendr"
 msgid "Personalization"
 msgstr "Personoli"
 
-#: advanced-settings-reminders
-msgid "Reminders"
-msgstr "Atgoffwyr"
-
 #. # create account
 #: field-user.placeholder
 msgid "Username"
@@ -137,6 +125,14 @@ msgstr "URL"
 #: modify-account-setting-up
 msgid "Please wait while your account is set up"
 msgstr "Arhoswch tra bod eich cyfrif yn cael ei greu"
+
+#: modify-account-unable-to-sync
+msgid "Unable to sync"
+msgstr ""
+
+#: modify-account-sign-in
+msgid "Sign in"
+msgstr ""
 
 #. # presets
 #: preset-caldav
@@ -242,428 +238,15 @@ msgstr "30 mun"
 msgid "Each hour"
 msgstr "Pob awr"
 
-#. # alarms for event view/edit
-#: none
-msgid "None"
-msgstr "Dim"
-
-#: remind-me
-msgid "Remind me"
-msgstr "Atgoffa fi"
-
-#: alarm-at-event-standard
-msgid "At time of event"
-msgstr "Ar amser y digwyddiad"
-
-#: alarm-at-event-allday
-msgid "On day of event"
-msgstr "Ar ddiwrnod y digwyddiad"
-
 #. # alarms
-#: alarm-start-notice
-msgid "{{title}} starting {{distance}}"
-msgstr "{{title}} i gychwyn {{distance}}"
-
-#: alarm-started-notice
+#: alarm-starting
 msgid "{{title}} started {{distance}}"
 msgstr "Cychwynnodd {{title}} ymhen {{distance}}"
 
-#. # relative times (before/after)
-#: minutes-before
-msgctxt "minutes-before"
-msgid "{[ plural(value) ]}"
-msgstr "{[ plural(size) ]}"
-
-#: minutes-before[zero]
-msgid "0 minutes before"
-msgstr "0 munud cyn"
-
-#: minutes-before[one]
-msgid "1 minute before"
-msgstr "1 munud cyn"
-
-#: minutes-before[two]
-msgctxt "minutes-before[two]"
-msgid "{{value}} minutes before"
-msgstr "{{value}} munud cyn"
-
-#: minutes-before[few]
-msgctxt "minutes-before[few]"
-msgid "{{value}} minutes before"
-msgstr "{{value}} munud cyn"
-
-#: minutes-before[many]
-msgctxt "minutes-before[many]"
-msgid "{{value}} minutes before"
-msgstr "{{value}} munud cyn"
-
-#: minutes-before[other]
-msgctxt "minutes-before[other]"
-msgid "{{value}} minutes before"
-msgstr "{{value}} munud cyn"
-
-#: hours-before
-msgctxt "hours-before"
-msgid "{[ plural(value) ]}"
-msgstr "{[ plural(value) ]}"
-
-#: hours-before[zero]
-msgid "0 hours before"
-msgstr "0 awr cyn"
-
-#: hours-before[one]
-msgid "1 hour before"
-msgstr "1 awr cyn"
-
-#: hours-before[two]
-msgctxt "hours-before[two]"
-msgid "{{value}} hours before"
-msgstr "{{value}} awr cyn"
-
-#: hours-before[few]
-msgctxt "hours-before[few]"
-msgid "{{value}} hours before"
-msgstr "{{value}} awr ynghynt"
-
-#: hours-before[many]
-msgctxt "hours-before[many]"
-msgid "{{value}} hours before"
-msgstr "{{value}} awr ynghynt"
-
-#: hours-before[other]
-msgctxt "hours-before[other]"
-msgid "{{value}} hours before"
-msgstr "{{value}} awr ynghynt"
-
-#: days-before
-msgctxt "days-before"
-msgid "{[ plural(value) ]}"
-msgstr "{[ plural(size) ]}"
-
-#: days-before[zero]
-msgid "0 days before"
-msgstr "0 diwrnod ynghynt"
-
-#: days-before[one]
-msgid "1 day before"
-msgstr "1 diwrnod ynghynt"
-
-#: days-before[two]
-msgctxt "days-before[two]"
-msgid "{{value}} days before"
-msgstr "{{value}} diwrnod ynghynt"
-
-#: days-before[few]
-msgctxt "days-before[few]"
-msgid "{{value}} days before"
-msgstr "{{value}} diwrnod ynghynt"
-
-#: days-before[many]
-msgctxt "days-before[many]"
-msgid "{{value}} days before"
-msgstr "{{value}} diwrnod ynghynt"
-
-#: days-before[other]
-msgctxt "days-before[other]"
-msgid "{{value}} days before"
-msgstr "{{value}} diwrnod cyn"
-
-#: weeks-before
-msgctxt "weeks-before"
-msgid "{[ plural(value) ]}"
-msgstr "{[ plural(value) ]}"
-
-#: weeks-before[zero]
-msgid "0 weeks before"
-msgstr "0 wythnos cyn"
-
-#: weeks-before[one]
-msgid "1 week before"
-msgstr "1 wythnos cyn"
-
-#: weeks-before[two]
-msgctxt "weeks-before[two]"
-msgid "{{value}} weeks before"
-msgstr "{{value}} wythnos cyn"
-
-#: weeks-before[few]
-msgctxt "weeks-before[few]"
-msgid "{{value}} weeks before"
-msgstr "{{value}} wythnos cyn"
-
-#: weeks-before[many]
-msgctxt "weeks-before[many]"
-msgid "{{value}} weeks before"
-msgstr "{{value}} wythnos cyn"
-
-#: weeks-before[other]
-msgctxt "weeks-before[other]"
-msgid "{{value}} weeks before"
-msgstr "{{value}} wythnos cyn"
-
-#: months-before
-msgctxt "months-before"
-msgid "{[ plural(value) ]}"
-msgstr "{[ plural(value) ]}"
-
-#: months-before[zero]
-msgid "0 months before"
-msgstr "0 mis ynghynt"
-
-#: months-before[one]
-msgid "1 month before"
-msgstr "1 mis ynghynt"
-
-#: months-before[two]
-msgctxt "months-before[two]"
-msgid "{{value}} months before"
-msgstr "{{value}} mis ynghynt"
-
-#: months-before[few]
-msgctxt "months-before[few]"
-msgid "{{value}} months before"
-msgstr "{{value}} mis ynghynt"
-
-#: months-before[many]
-msgctxt "months-before[many]"
-msgid "{{value}} months before"
-msgstr "{{value}} mis ynghynt"
-
-#: months-before[other]
-msgctxt "months-before[other]"
-msgid "{{value}} months before"
-msgstr "{{value}} mis ynghynt"
-
-#: years-before
-msgctxt "years-before"
-msgid "{[ plural(value) ]}"
-msgstr "{[ plural(value) ]}"
-
-#: years-before[zero]
-msgid "0 years before"
-msgstr "0 blwyddyn ynghynt"
-
-#: years-before[one]
-msgid "1 year before"
-msgstr "1 blwyddyn ynghynt"
-
-#: years-before[two]
-msgctxt "years-before[two]"
-msgid "{{value}} years before"
-msgstr "{{value}} blynyddoedd ynghynt"
-
-#: years-before[few]
-msgctxt "years-before[few]"
-msgid "{{value}} years before"
-msgstr "{{value}} blynyddoedd ynghynt"
-
-#: years-before[many]
-msgctxt "years-before[many]"
-msgid "{{value}} years before"
-msgstr "{{value}} blynyddoedd ynghynt"
-
-#: years-before[other]
-msgctxt "years-before[other]"
-msgid "{{value}} years before"
-msgstr "{{value}} blynyddoedd ynghynt"
-
-#: minutes-after
-msgctxt "minutes-after"
-msgid "{[ plural(value) ]}"
-msgstr "{[ plural(value) ]}"
-
-#: minutes-after[zero]
-msgid "0 minutes after"
-msgstr "0 munud wedyn"
-
-#: minutes-after[one]
-msgid "1 minute after"
-msgstr "1 munud wedyn"
-
-#: minutes-after[two]
-msgctxt "minutes-after[two]"
-msgid "{{value}} minutes after"
-msgstr "{{value}} munud wedyn"
-
-#: minutes-after[few]
-msgctxt "minutes-after[few]"
-msgid "{{value}} minutes after"
-msgstr "{{value}} munud wedyn"
-
-#: minutes-after[many]
-msgctxt "minutes-after[many]"
-msgid "{{value}} minutes after"
-msgstr "{{value}} munud wedyn"
-
-#: minutes-after[other]
-msgctxt "minutes-after[other]"
-msgid "{{value}} minutes after"
-msgstr "{{value}} munud wedyn"
-
-#: hours-after
-msgctxt "hours-after"
-msgid "{[ plural(value) ]}"
-msgstr "{[ plural(value) ]}"
-
-#: hours-after[zero]
-msgid "0 hours after"
-msgstr "0 awr wedyn"
-
-#: hours-after[one]
-msgid "1 hour after"
-msgstr "1 awr wedyn"
-
-#: hours-after[two]
-msgctxt "hours-after[two]"
-msgid "{{value}} hours after"
-msgstr "{{value}} awr wedyn"
-
-#: hours-after[few]
-msgctxt "hours-after[few]"
-msgid "{{value}} hours after"
-msgstr "{{value}} awr wedyn"
-
-#: hours-after[many]
-msgctxt "hours-after[many]"
-msgid "{{value}} hours after"
-msgstr "{{value}} awr wedyn"
-
-#: hours-after[other]
-msgctxt "hours-after[other]"
-msgid "{{value}} hours after"
-msgstr "{{value}} awr wedyn"
-
-#: days-after
-msgctxt "days-after"
-msgid "{[ plural(value) ]}"
-msgstr "{[ plural(value) ]}"
-
-#: days-after[zero]
-msgid "0 days after"
-msgstr "0 diwrnod wedi"
-
-#: days-after[one]
-msgid "1 day after"
-msgstr "1 diwrnod wedi"
-
-#: days-after[two]
-msgctxt "days-after[two]"
-msgid "{{value}} days after"
-msgstr "{{value}} diwrnod wedi"
-
-#: days-after[few]
-msgctxt "days-after[few]"
-msgid "{{value}} days after"
-msgstr "{{value}} diwrnod wedi"
-
-#: days-after[many]
-msgctxt "days-after[many]"
-msgid "{{value}} days after"
-msgstr "{{value}} diwrnod wedi"
-
-#: days-after[other]
-msgctxt "days-after[other]"
-msgid "{{value}} days after"
-msgstr "{{value}} diwrnod wedi"
-
-#: weeks-after
-msgctxt "weeks-after"
-msgid "{[ plural(value) ]}"
-msgstr "{[ plural(value) ]}"
-
-#: weeks-after[zero]
-msgid "0 weeks after"
-msgstr "0 wythnos wedi"
-
-#: weeks-after[one]
-msgid "1 week after"
-msgstr "1 wythnos wedyn"
-
-#: weeks-after[two]
-msgctxt "weeks-after[two]"
-msgid "{{value}} weeks after"
-msgstr "{{value}} wythnos wedyn"
-
-#: weeks-after[few]
-msgctxt "weeks-after[few]"
-msgid "{{value}} weeks after"
-msgstr "{{value}} wythnos wedyn"
-
-#: weeks-after[many]
-msgctxt "weeks-after[many]"
-msgid "{{value}} weeks after"
-msgstr "{{value}} wythnos wedyn"
-
-#: weeks-after[other]
-msgctxt "weeks-after[other]"
-msgid "{{value}} weeks after"
-msgstr "{{value}} wythnos wedyn"
-
-#: months-after
-msgctxt "months-after"
-msgid "{[ plural(value) ]}"
-msgstr "{[ plural(value) ]}"
-
-#: months-after[zero]
-msgid "0 months after"
-msgstr "0 mis wedyn"
-
-#: months-after[one]
-msgid "1 month after"
-msgstr "1 mis wedyn"
-
-#: months-after[two]
-msgctxt "months-after[two]"
-msgid "{{value}} months after"
-msgstr "{{value}} mis wedyn"
-
-#: months-after[few]
-msgctxt "months-after[few]"
-msgid "{{value}} months after"
-msgstr "{{value}} mis wedyn"
-
-#: months-after[many]
-msgctxt "months-after[many]"
-msgid "{{value}} months after"
-msgstr "{{value}} mis wedyn"
-
-#: months-after[other]
-msgctxt "months-after[other]"
-msgid "{{value}} months after"
-msgstr "{{value}} mis wedyn"
-
-#: years-after
-msgctxt "years-after"
-msgid "{[ plural(value) ]}"
-msgstr "{[ plural(value) ]}"
-
-#: years-after[zero]
-msgid "0 years after"
-msgstr "0 blwyddyn wedyn"
-
-#: years-after[one]
-msgid "1 year after"
-msgstr "1 flwyddyn wedyn"
-
-#: years-after[two]
-msgctxt "years-after[two]"
-msgid "{{value}} years after"
-msgstr "{{value}} blwyddyn wedyn"
-
-#: years-after[few]
-msgctxt "years-after[few]"
-msgid "{{value}} years after"
-msgstr "{{value}} blwyddyn wedyn"
-
-#: years-after[many]
-msgctxt "years-after[many]"
-msgid "{{value}} years after"
-msgstr "{{value}} blwyddyn wedyn"
-
-#: years-after[other]
-msgctxt "years-after[other]"
-msgid "{{value}} years after"
-msgstr "{{value}} blwyddyn wedyn"
+#: alarm-started
+#, fuzzy
+msgid "{{title}} starting in {{distance}}"
+msgstr "{{title}} i gychwyn {{distance}}"
 
 #. # Date formatting details (http://pubs.opengroup.org/onlinepubs/007908799/xsh/strftime.html)
 #: agenda-date-format
@@ -718,9 +301,350 @@ msgstr "Mae rhywbeth o'i le. Ceisiwch eto."
 msgid "No connection. Check your network configuration and try again."
 msgstr "Dim cysylltiad. Gwiriwch eich ffurfweddiad rhwydwaith a cheisio eto."
 
-#: error-account-exist
-msgid "This account already exists."
-msgstr "Mae'r cyfri'n bodoli eisoes."
+#. # notification errors
+#: notification-error-sync-title
+msgid "Calendar sync error"
+msgstr ""
+
+#: notification-error-sync-description
+msgid "Tap for more info"
+msgstr ""
+
+#~ msgid "Events"
+#~ msgstr "Digwyddiad"
+
+#~ msgid "All-day Events"
+#~ msgstr "Digwyddiad Drwy'r Dydd"
+
+#~ msgid "Reminders"
+#~ msgstr "Atgoffwyr"
+
+#~ msgid "None"
+#~ msgstr "Dim"
+
+#~ msgid "Remind me"
+#~ msgstr "Atgoffa fi"
+
+#~ msgid "At time of event"
+#~ msgstr "Ar amser y digwyddiad"
+
+#~ msgid "On day of event"
+#~ msgstr "Ar ddiwrnod y digwyddiad"
+
+#~ msgctxt "minutes-before"
+#~ msgid "{[ plural(value) ]}"
+#~ msgstr "{[ plural(size) ]}"
+
+#~ msgid "0 minutes before"
+#~ msgstr "0 munud cyn"
+
+#~ msgid "1 minute before"
+#~ msgstr "1 munud cyn"
+
+#~ msgctxt "minutes-before[two]"
+#~ msgid "{{value}} minutes before"
+#~ msgstr "{{value}} munud cyn"
+
+#~ msgctxt "minutes-before[few]"
+#~ msgid "{{value}} minutes before"
+#~ msgstr "{{value}} munud cyn"
+
+#~ msgctxt "minutes-before[many]"
+#~ msgid "{{value}} minutes before"
+#~ msgstr "{{value}} munud cyn"
+
+#~ msgctxt "minutes-before[other]"
+#~ msgid "{{value}} minutes before"
+#~ msgstr "{{value}} munud cyn"
+
+#~ msgctxt "hours-before"
+#~ msgid "{[ plural(value) ]}"
+#~ msgstr "{[ plural(value) ]}"
+
+#~ msgid "0 hours before"
+#~ msgstr "0 awr cyn"
+
+#~ msgid "1 hour before"
+#~ msgstr "1 awr cyn"
+
+#~ msgctxt "hours-before[two]"
+#~ msgid "{{value}} hours before"
+#~ msgstr "{{value}} awr cyn"
+
+#~ msgctxt "hours-before[few]"
+#~ msgid "{{value}} hours before"
+#~ msgstr "{{value}} awr ynghynt"
+
+#~ msgctxt "hours-before[many]"
+#~ msgid "{{value}} hours before"
+#~ msgstr "{{value}} awr ynghynt"
+
+#~ msgctxt "hours-before[other]"
+#~ msgid "{{value}} hours before"
+#~ msgstr "{{value}} awr ynghynt"
+
+#~ msgctxt "days-before"
+#~ msgid "{[ plural(value) ]}"
+#~ msgstr "{[ plural(size) ]}"
+
+#~ msgid "0 days before"
+#~ msgstr "0 diwrnod ynghynt"
+
+#~ msgid "1 day before"
+#~ msgstr "1 diwrnod ynghynt"
+
+#~ msgctxt "days-before[two]"
+#~ msgid "{{value}} days before"
+#~ msgstr "{{value}} diwrnod ynghynt"
+
+#~ msgctxt "days-before[few]"
+#~ msgid "{{value}} days before"
+#~ msgstr "{{value}} diwrnod ynghynt"
+
+#~ msgctxt "days-before[many]"
+#~ msgid "{{value}} days before"
+#~ msgstr "{{value}} diwrnod ynghynt"
+
+#~ msgctxt "days-before[other]"
+#~ msgid "{{value}} days before"
+#~ msgstr "{{value}} diwrnod cyn"
+
+#~ msgctxt "weeks-before"
+#~ msgid "{[ plural(value) ]}"
+#~ msgstr "{[ plural(value) ]}"
+
+#~ msgid "0 weeks before"
+#~ msgstr "0 wythnos cyn"
+
+#~ msgid "1 week before"
+#~ msgstr "1 wythnos cyn"
+
+#~ msgctxt "weeks-before[two]"
+#~ msgid "{{value}} weeks before"
+#~ msgstr "{{value}} wythnos cyn"
+
+#~ msgctxt "weeks-before[few]"
+#~ msgid "{{value}} weeks before"
+#~ msgstr "{{value}} wythnos cyn"
+
+#~ msgctxt "weeks-before[many]"
+#~ msgid "{{value}} weeks before"
+#~ msgstr "{{value}} wythnos cyn"
+
+#~ msgctxt "weeks-before[other]"
+#~ msgid "{{value}} weeks before"
+#~ msgstr "{{value}} wythnos cyn"
+
+#~ msgctxt "months-before"
+#~ msgid "{[ plural(value) ]}"
+#~ msgstr "{[ plural(value) ]}"
+
+#~ msgid "0 months before"
+#~ msgstr "0 mis ynghynt"
+
+#~ msgid "1 month before"
+#~ msgstr "1 mis ynghynt"
+
+#~ msgctxt "months-before[two]"
+#~ msgid "{{value}} months before"
+#~ msgstr "{{value}} mis ynghynt"
+
+#~ msgctxt "months-before[few]"
+#~ msgid "{{value}} months before"
+#~ msgstr "{{value}} mis ynghynt"
+
+#~ msgctxt "months-before[many]"
+#~ msgid "{{value}} months before"
+#~ msgstr "{{value}} mis ynghynt"
+
+#~ msgctxt "months-before[other]"
+#~ msgid "{{value}} months before"
+#~ msgstr "{{value}} mis ynghynt"
+
+#~ msgctxt "years-before"
+#~ msgid "{[ plural(value) ]}"
+#~ msgstr "{[ plural(value) ]}"
+
+#~ msgid "0 years before"
+#~ msgstr "0 blwyddyn ynghynt"
+
+#~ msgid "1 year before"
+#~ msgstr "1 blwyddyn ynghynt"
+
+#~ msgctxt "years-before[two]"
+#~ msgid "{{value}} years before"
+#~ msgstr "{{value}} blynyddoedd ynghynt"
+
+#~ msgctxt "years-before[few]"
+#~ msgid "{{value}} years before"
+#~ msgstr "{{value}} blynyddoedd ynghynt"
+
+#~ msgctxt "years-before[many]"
+#~ msgid "{{value}} years before"
+#~ msgstr "{{value}} blynyddoedd ynghynt"
+
+#~ msgctxt "years-before[other]"
+#~ msgid "{{value}} years before"
+#~ msgstr "{{value}} blynyddoedd ynghynt"
+
+#~ msgctxt "minutes-after"
+#~ msgid "{[ plural(value) ]}"
+#~ msgstr "{[ plural(value) ]}"
+
+#~ msgid "0 minutes after"
+#~ msgstr "0 munud wedyn"
+
+#~ msgid "1 minute after"
+#~ msgstr "1 munud wedyn"
+
+#~ msgctxt "minutes-after[two]"
+#~ msgid "{{value}} minutes after"
+#~ msgstr "{{value}} munud wedyn"
+
+#~ msgctxt "minutes-after[few]"
+#~ msgid "{{value}} minutes after"
+#~ msgstr "{{value}} munud wedyn"
+
+#~ msgctxt "minutes-after[many]"
+#~ msgid "{{value}} minutes after"
+#~ msgstr "{{value}} munud wedyn"
+
+#~ msgctxt "minutes-after[other]"
+#~ msgid "{{value}} minutes after"
+#~ msgstr "{{value}} munud wedyn"
+
+#~ msgctxt "hours-after"
+#~ msgid "{[ plural(value) ]}"
+#~ msgstr "{[ plural(value) ]}"
+
+#~ msgid "0 hours after"
+#~ msgstr "0 awr wedyn"
+
+#~ msgid "1 hour after"
+#~ msgstr "1 awr wedyn"
+
+#~ msgctxt "hours-after[two]"
+#~ msgid "{{value}} hours after"
+#~ msgstr "{{value}} awr wedyn"
+
+#~ msgctxt "hours-after[few]"
+#~ msgid "{{value}} hours after"
+#~ msgstr "{{value}} awr wedyn"
+
+#~ msgctxt "hours-after[many]"
+#~ msgid "{{value}} hours after"
+#~ msgstr "{{value}} awr wedyn"
+
+#~ msgctxt "hours-after[other]"
+#~ msgid "{{value}} hours after"
+#~ msgstr "{{value}} awr wedyn"
+
+#~ msgctxt "days-after"
+#~ msgid "{[ plural(value) ]}"
+#~ msgstr "{[ plural(value) ]}"
+
+#~ msgid "0 days after"
+#~ msgstr "0 diwrnod wedi"
+
+#~ msgid "1 day after"
+#~ msgstr "1 diwrnod wedi"
+
+#~ msgctxt "days-after[two]"
+#~ msgid "{{value}} days after"
+#~ msgstr "{{value}} diwrnod wedi"
+
+#~ msgctxt "days-after[few]"
+#~ msgid "{{value}} days after"
+#~ msgstr "{{value}} diwrnod wedi"
+
+#~ msgctxt "days-after[many]"
+#~ msgid "{{value}} days after"
+#~ msgstr "{{value}} diwrnod wedi"
+
+#~ msgctxt "days-after[other]"
+#~ msgid "{{value}} days after"
+#~ msgstr "{{value}} diwrnod wedi"
+
+#~ msgctxt "weeks-after"
+#~ msgid "{[ plural(value) ]}"
+#~ msgstr "{[ plural(value) ]}"
+
+#~ msgid "0 weeks after"
+#~ msgstr "0 wythnos wedi"
+
+#~ msgid "1 week after"
+#~ msgstr "1 wythnos wedyn"
+
+#~ msgctxt "weeks-after[two]"
+#~ msgid "{{value}} weeks after"
+#~ msgstr "{{value}} wythnos wedyn"
+
+#~ msgctxt "weeks-after[few]"
+#~ msgid "{{value}} weeks after"
+#~ msgstr "{{value}} wythnos wedyn"
+
+#~ msgctxt "weeks-after[many]"
+#~ msgid "{{value}} weeks after"
+#~ msgstr "{{value}} wythnos wedyn"
+
+#~ msgctxt "weeks-after[other]"
+#~ msgid "{{value}} weeks after"
+#~ msgstr "{{value}} wythnos wedyn"
+
+#~ msgctxt "months-after"
+#~ msgid "{[ plural(value) ]}"
+#~ msgstr "{[ plural(value) ]}"
+
+#~ msgid "0 months after"
+#~ msgstr "0 mis wedyn"
+
+#~ msgid "1 month after"
+#~ msgstr "1 mis wedyn"
+
+#~ msgctxt "months-after[two]"
+#~ msgid "{{value}} months after"
+#~ msgstr "{{value}} mis wedyn"
+
+#~ msgctxt "months-after[few]"
+#~ msgid "{{value}} months after"
+#~ msgstr "{{value}} mis wedyn"
+
+#~ msgctxt "months-after[many]"
+#~ msgid "{{value}} months after"
+#~ msgstr "{{value}} mis wedyn"
+
+#~ msgctxt "months-after[other]"
+#~ msgid "{{value}} months after"
+#~ msgstr "{{value}} mis wedyn"
+
+#~ msgctxt "years-after"
+#~ msgid "{[ plural(value) ]}"
+#~ msgstr "{[ plural(value) ]}"
+
+#~ msgid "0 years after"
+#~ msgstr "0 blwyddyn wedyn"
+
+#~ msgid "1 year after"
+#~ msgstr "1 flwyddyn wedyn"
+
+#~ msgctxt "years-after[two]"
+#~ msgid "{{value}} years after"
+#~ msgstr "{{value}} blwyddyn wedyn"
+
+#~ msgctxt "years-after[few]"
+#~ msgid "{{value}} years after"
+#~ msgstr "{{value}} blwyddyn wedyn"
+
+#~ msgctxt "years-after[many]"
+#~ msgid "{{value}} years after"
+#~ msgstr "{{value}} blwyddyn wedyn"
+
+#~ msgctxt "years-after[other]"
+#~ msgid "{{value}} years after"
+#~ msgstr "{{value}} blwyddyn wedyn"
+
+#~ msgid "This account already exists."
+#~ msgstr "Mae'r cyfri'n bodoli eisoes."
 
 #~ msgctxt "advanced-settings-header"
 #~ msgid "Calendar Settings"

@@ -1,9 +1,9 @@
-#. extracted from locales/en-US/apps/system/system.properties
+#. extracted from ./apps/system/system.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:06+0100\n"
+"POT-Creation-Date: 2013-07-02 18:16+0200\n"
 "PO-Revision-Date: 2013-05-09 19:35+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Pootle 2.5.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1368128131.0\n"
@@ -73,14 +73,6 @@ msgstr "(Angen PUK SIM)"
 #: emergencyCallsOnly-networkLocked
 msgid "(network locked)"
 msgstr "(rhwydwaith cloedig)"
-
-#: emergencyCallsOnly-serviceProviderLocked
-msgid "(service provider locked)"
-msgstr "(clowyd gan y darparwr gwasanaeth)"
-
-#: emergencyCallsOnly-corporateLocked
-msgid "(corporate locked)"
-msgstr "(clo corfforaethol)"
 
 #: enterPIN
 msgid "Enter PIN"
@@ -192,6 +184,10 @@ msgstr "Iawn"
 msgid "No"
 msgstr "Na"
 
+#: deny
+msgid "Don't allow"
+msgstr "Peidio caniatáu"
+
 #: allow
 msgid "Allow"
 msgstr "Caniatáu"
@@ -286,6 +282,12 @@ msgstr "Diddymu Gosodiad"
 msgid "Resume"
 msgstr "Ailgychwyn"
 
+#: continue
+#, fuzzy
+msgctxt "continue"
+msgid "Continue"
+msgstr "Parhau"
+
 #: stopDownloading
 msgid "Stop downloading {{ app }}?"
 msgstr "Atal llwytho i lawr {{ app }}?"
@@ -343,8 +345,8 @@ msgstr "Nid Nawr"
 #: downloadingUpdateMessage
 msgid "Downloading updates… <span>{{ progress }} downloaded.</span>"
 msgstr ""
-"Llwytho diweddariadau i lawr… <span>{{ progress }} wedi llwytho i lawr.</"
-"span>"
+"Llwytho diweddariadau i lawr… <span>{{ progress }} wedi llwytho i "
+"lawr.</span>"
 
 #: downloadingAppMessage
 msgid "Downloading {{ appName }}"
@@ -475,8 +477,8 @@ msgstr "Llwytho diweddariadau i lawr drwy'r cysylltiad data?"
 #: downloadUpdatesViaDataConnectionMessage
 msgid ""
 "Updates are downloaded via data connection when Wi-Fi is not available. When "
-"using data connection, phone calls may be blocked and additional charges may "
-"also apply."
+"using data connection, phone calls may be blocked and additional charges "
+"may also apply."
 msgstr ""
 "Mae diweddariadau yn cael eu llwytho i lawr drwy gysylltiad data pan nad "
 "yw'r diwyfr ar gael. Wrth ddefnyddio'r cysylltiad data, gall galwadau gael "
@@ -686,9 +688,10 @@ msgstr ""
 #. # Localization note (crash-reports-description-3-*): These strings are a paragraph, with a "privacy policy"
 #. # link in the middle. Include trailing spaces as needed.
 #: crash-reports-description-3-start
+#, fuzzy
 msgid ""
 "We use crash reports to try to fix problems and improve our products. We "
-"handle your information as we describe in our "
+"handle your information as we describe in our"
 msgstr ""
 "Rydym yn defnyddio adroddiadau chwalu i geisio datrys problemau a gwella ein "
 "cynnyrch. Rydym yn trin eich gwybodaeth yn ôl y disgrifiad yn ein "
@@ -742,14 +745,6 @@ msgstr "Derbyn trosglwyddiad ffeil Bluetooth?"
 #: wantToReceiveFile
 msgid "{{deviceName}} would like to transfer {{fileName}} ({{fileSize}})."
 msgstr "Hoffai {{deviceName}} drosglwyddo {{fileName}} ({{fileSize}})."
-
-#: notification-fileTransfer-title
-msgid "Receive file?"
-msgstr "Derbyn y ffeil?"
-
-#: notification-fileTransfer-description
-msgid "File incoming from another device"
-msgstr "Ffeil yn cyrraedd o ddyfais arall"
 
 #: byteUnit-B
 msgid "Bytes"
@@ -809,6 +804,8 @@ msgid "Cancel Bluetooth file transfer?"
 msgstr "Diddymu trosglwyddo ffeil Bluetooth?"
 
 #: continue
+#, fuzzy
+msgctxt "continue"
 msgid "Continue"
 msgstr "Parhau"
 
@@ -824,25 +821,29 @@ msgstr "wedi ei gwblhau"
 msgid "failed"
 msgstr "wedi methu"
 
-#: transferFinished-sentSuccessful-title
-msgid "File sent"
-msgstr "Anfonwyd ffeil"
+#: transferFinished-sendingCompletedTitle
+msgid "Bluetooth sending file complete"
+msgstr "Anfon ffeil drwy Bluetooth wedi ei gwblhau"
 
-#: transferFinished-receivedSuccessful-title
-msgid "File received"
-msgstr "Derbyniwyd ffeil"
+#: transferFinished-receivedCompletedTitle
+msgid "Bluetooth received file ready to open"
+msgstr "Mae Bluetooth wedi derbyn ffeil sy'n barod i'w hagor"
 
-#: transferFinished-sentFailed-title
-msgid "File could not be sent"
-msgstr "Methu anfon ffeil"
+#: transferFinished-sendingFailedTitle
+msgid "Bluetooth sending file failed"
+msgstr "Methodd Bluetooth ag anfon ffeil"
 
-#: transferFinished-receivedFailed-title
-msgid "File could not be received"
-msgstr "Methu derbyn ffeil"
+#: transferFinished-receivedFailedTitle
+msgid "Bluetooth received a file it can not open"
+msgstr "Derbyniodd Bluetooth ffeil nad yw'n gallu ei hagor"
 
-#: unknown-file
-msgid "Unknown file"
-msgstr "Ffeil anhysbys"
+#: transferFinished-completedBody
+msgid "Transfer completed"
+msgstr "Trosglwyddiad wedi ei gwblhau"
+
+#: transferFinished-failedBody
+msgid "Transfer failed"
+msgstr "Methodd y trosglwyddo"
 
 #: unknown-device
 msgid "Unknown device"
@@ -905,14 +906,6 @@ msgstr "Cod PUK"
 msgid "NCK code"
 msgstr "Cod NCK"
 
-#: cckCode
-msgid "CCK code"
-msgstr "Cod CCK"
-
-#: spckCode
-msgid "SPCK code"
-msgstr "Cod SPCK"
-
 #: whatIsSimPin
 msgid "What is a SIM PIN?"
 msgstr "Beth yw PIN y SIM?"
@@ -949,50 +942,86 @@ msgstr "Cynigwch cod y PUK"
 msgid "Enter NCK code"
 msgstr "Rhowch god NCK"
 
-#: cckTitle
-msgid "Enter CCK code"
-msgstr "Rhowch god CCK"
-
-#: spckTitle
-msgid "Enter SPCK code"
-msgstr "Cynigwch cod y SPCK"
-
 #: newpinTitle
 msgid "New PIN"
 msgstr "PIN newydd"
+
+#: inputCodeRetriesLeft
+#, fuzzy
+msgctxt "inputCodeRetriesLeft"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: inputCodeRetriesLeft[one]
+msgid "last try."
+msgstr ""
+
+#: inputCodeRetriesLeft[two]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[two]"
+msgid "{{n}} tries left."
+msgstr "{{n}} cynnig ar ôl."
+
+#: inputCodeRetriesLeft[few]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[few]"
+msgid "{{n}} tries left."
+msgstr "{{n}} cynnig ar ôl."
+
+#: inputCodeRetriesLeft[many]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[many]"
+msgid "{{n}} tries left."
+msgstr "{{n}} cynnig ar ôl."
+
+#: inputCodeRetriesLeft[other]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[other]"
+msgid "{{n}} tries left."
+msgstr "{{n}} cynnig ar ôl."
 
 #: pinErrorMsg
 msgid "The PIN was incorrect."
 msgstr "Roedd y PIN yn anghywir."
 
-#: pinAttemptMsg
-msgctxt "pinAttemptMsg"
+#: pinAttemptMsg2
+#, fuzzy
+msgctxt "pinAttemptMsg2"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: pinAttemptMsg[one]
-msgid "one last try."
-msgstr "un tro olaf."
+#: pinAttemptMsg2[one]
+msgid ""
+"You have one try left to enter the correct code before locking the SIM card."
+msgstr ""
 
-#: pinAttemptMsg[two]
-msgctxt "pinAttemptMsg[two]"
-msgid "{{n}} tries left."
-msgstr "{{n}} cynnig ar ôl."
+#: pinAttemptMsg2[two]
+msgctxt "pinAttemptMsg2[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
-#: pinAttemptMsg[few]
-msgctxt "pinAttemptMsg[few]"
-msgid "{{n}} tries left."
-msgstr "{{n}} cynnig ar ôl."
+#: pinAttemptMsg2[few]
+msgctxt "pinAttemptMsg2[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
-#: pinAttemptMsg[many]
-msgctxt "pinAttemptMsg[many]"
-msgid "{{n}} tries left."
-msgstr "{{n}} cynnig ar ôl."
+#: pinAttemptMsg2[many]
+msgctxt "pinAttemptMsg2[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
-#: pinAttemptMsg[other]
-msgctxt "pinAttemptMsg[other]"
-msgid "{{n}} tries left."
-msgstr "{{n}} cynnig ar ôl."
+#: pinAttemptMsg2[other]
+msgctxt "pinAttemptMsg2[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
 #: pinLastChanceMsg
 msgid ""
@@ -1009,7 +1038,8 @@ msgstr "Mae'r cerdyn SIM wedi ei gloi."
 #: enterPukMsg
 msgid ""
 "You must enter the Personal Unlocking Key (PUK) code for the SIM card. Refer "
-"to your SIM card documentation or contact your carrier for more information."
+"to your SIM card documentation or contact your carrier for more "
+"information."
 msgstr ""
 "Rhaid cynnig y cod Allwedd Datgloi Personol (PUK) ar gyfer y cerdyn SIM. "
 "Darllenwch y wybodaeth am eich cerdyn SIM neu gysylltwch â'ch darparwr am "
@@ -1019,7 +1049,62 @@ msgstr ""
 msgid "The PUK code is incorrect."
 msgstr "Mae'r cod PUK yn anghywir."
 
-#: pukAttemptMsg
+#: pukAttemptMsg2
+#, fuzzy
+msgctxt "pukAttemptMsg2"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: pukAttemptMsg2[one]
+#, fuzzy
+msgid ""
+"You have one try left to enter the correct code before this SIM card will be "
+"permanently unusable. Refer to your SIM card documentation or contact your "
+"carrier for more information."
+msgstr ""
+"Mae gennych {{n}} cynnig ar ôl i gyflwyno'r cod cywir cyn na fydd modd "
+"defnyddio'r cerdyn SIM yma byth eto. Darllenwch y wybodaeth am eich cerdyn "
+"SIM neu gysylltwch â'ch darparwr am ragor o wybodaeth."
+
+#: pukAttemptMsg2[two]
+#, fuzzy
+msgctxt "pukAttemptMsg2[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Mae gennych {{n}} cynnig ar ôl i gyflwyno'r cod cywir cyn na fydd modd "
+"defnyddio'r cerdyn SIM yma byth eto. Darllenwch y wybodaeth am eich cerdyn "
+"SIM neu gysylltwch â'ch darparwr am ragor o wybodaeth."
+
+#: pukAttemptMsg2[few]
+#, fuzzy
+msgctxt "pukAttemptMsg2[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Mae gennych {{n}} cynnig ar ôl i gyflwyno'r cod cywir cyn na fydd modd "
+"defnyddio'r cerdyn SIM yma byth eto. Darllenwch y wybodaeth am eich cerdyn "
+"SIM neu gysylltwch â'ch darparwr am ragor o wybodaeth."
+
+#: pukAttemptMsg2[many]
+#, fuzzy
+msgctxt "pukAttemptMsg2[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Mae gennych {{n}} cynnig ar ôl i gyflwyno'r cod cywir cyn na fydd modd "
+"defnyddio'r cerdyn SIM yma byth eto. Darllenwch y wybodaeth am eich cerdyn "
+"SIM neu gysylltwch â'ch darparwr am ragor o wybodaeth."
+
+#: pukAttemptMsg2[other]
+#, fuzzy
+msgctxt "pukAttemptMsg2[other]"
 msgid ""
 "You have {{n}} tries left to enter the correct code before this SIM card "
 "will be permanently unusable. Refer to your SIM card documentation or "
@@ -1055,7 +1140,62 @@ msgstr "Nid yw'r PIN yn cydweddu."
 msgid "The NCK code is incorrect."
 msgstr "Mae'r cod NCK yn anghywir."
 
-#: nckAttemptMsg
+#: nckAttemptMsg2
+#, fuzzy
+msgctxt "nckAttemptMsg2"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: nckAttemptMsg2[one]
+#, fuzzy
+msgid ""
+"Network depersonalization request failure. You have one try left to enter "
+"the correct code. Refer to your device documentation or contact your carrier "
+"for more information."
+msgstr ""
+"Methodd y cais am ddabersonoleiddi rhwydwaith. Mae gennych {{n}} tro ar ôl i "
+"roi'r cod cywir. Darllenwch ddogfennaeth eich dyfais neu cysylltwch â'ch "
+"darparwr am ragor o wybodaeth."
+
+#: nckAttemptMsg2[two]
+#, fuzzy
+msgctxt "nckAttemptMsg2[two]"
+msgid ""
+"Network depersonalization request failure. You have {{n}} tries left to "
+"enter the correct code. Refer to your device documentation or contact your "
+"carrier for more information."
+msgstr ""
+"Methodd y cais am ddabersonoleiddi rhwydwaith. Mae gennych {{n}} tro ar ôl i "
+"roi'r cod cywir. Darllenwch ddogfennaeth eich dyfais neu cysylltwch â'ch "
+"darparwr am ragor o wybodaeth."
+
+#: nckAttemptMsg2[few]
+#, fuzzy
+msgctxt "nckAttemptMsg2[few]"
+msgid ""
+"Network depersonalization request failure. You have {{n}} tries left to "
+"enter the correct code. Refer to your device documentation or contact your "
+"carrier for more information."
+msgstr ""
+"Methodd y cais am ddabersonoleiddi rhwydwaith. Mae gennych {{n}} tro ar ôl i "
+"roi'r cod cywir. Darllenwch ddogfennaeth eich dyfais neu cysylltwch â'ch "
+"darparwr am ragor o wybodaeth."
+
+#: nckAttemptMsg2[many]
+#, fuzzy
+msgctxt "nckAttemptMsg2[many]"
+msgid ""
+"Network depersonalization request failure. You have {{n}} tries left to "
+"enter the correct code. Refer to your device documentation or contact your "
+"carrier for more information."
+msgstr ""
+"Methodd y cais am ddabersonoleiddi rhwydwaith. Mae gennych {{n}} tro ar ôl i "
+"roi'r cod cywir. Darllenwch ddogfennaeth eich dyfais neu cysylltwch â'ch "
+"darparwr am ragor o wybodaeth."
+
+#: nckAttemptMsg2[other]
+#, fuzzy
+msgctxt "nckAttemptMsg2[other]"
 msgid ""
 "Network depersonalization request failure. You have {{n}} tries left to "
 "enter the correct code. Refer to your device documentation or contact your "
@@ -1150,23 +1290,128 @@ msgstr "{{origin}} nawr yn sgrin lawn."
 msgid "The network {{networkName}} was found. Join network?"
 msgstr "Wedi canfod rhwydwaith {{networkName}}. Ymuno â'r rhwydwaith?"
 
-#~ msgid "Bluetooth sending file complete"
-#~ msgstr "Anfon ffeil drwy Bluetooth wedi ei gwblhau"
+#. # [CE] Volume warning toast
+#: ceWarningtitle
+msgid "Volume warning"
+msgstr ""
 
-#~ msgid "Bluetooth received file ready to open"
-#~ msgstr "Mae Bluetooth wedi derbyn ffeil sy'n barod i'w hagor"
+#: ceWarningcontent
+msgid ""
+"To prevent possible hearing damage, do not listen at hight volume levels for "
+"long periods."
+msgstr ""
 
-#~ msgid "Bluetooth sending file failed"
-#~ msgstr "Methodd Bluetooth ag anfon ffeil"
+#. #power saving mode
+#: notification-powersaving-mode-on-title
+msgid "Power Saving Mode"
+msgstr ""
 
-#~ msgid "Bluetooth received a file it can not open"
-#~ msgstr "Derbyniodd Bluetooth ffeil nad yw'n gallu ei hagor"
+#: notification-powersaving-mode-on-description
+msgid "Power saving mode is on."
+msgstr ""
 
-#~ msgid "Transfer completed"
-#~ msgstr "Trosglwyddiad wedi ei gwblhau"
+#. # Low device storage
+#: low-device-storage
+msgid "Device space low.\n"
+msgstr ""
 
-#~ msgid "Transfer failed"
-#~ msgstr "Methodd y trosglwyddo"
+#. # LOCALIZATION NOTE {{value}} is the amount of remaining free space expressed
+#. # in the corresponding unit ({{unit}}), which is one of the byteUnit-* strings
+#. # of this same file.
+#: free-space
+msgid "{[ plural(value) ]}"
+msgstr ""
+
+#: free-space[zero]
+msgid "No remaining free space."
+msgstr ""
+
+#: free-space[one]
+msgctxt "free-space[one]"
+msgid "Less than {{value}} {{unit}} remaining."
+msgstr ""
+
+#: free-space[two]
+msgctxt "free-space[two]"
+msgid "Less than {{value}} {{unit}} remaining."
+msgstr ""
+
+#: free-space[few]
+msgctxt "free-space[few]"
+msgid "Less than {{value}} {{unit}} remaining."
+msgstr ""
+
+#: free-space[many]
+msgctxt "free-space[many]"
+msgid "Less than {{value}} {{unit}} remaining."
+msgstr ""
+
+#: free-space[other]
+msgctxt "free-space[other]"
+msgid "Less than {{value}} {{unit}} remaining."
+msgstr ""
+
+#: unknown-free-space
+msgid "Unknown remaining space."
+msgstr ""
+
+#~ msgid "(service provider locked)"
+#~ msgstr "(clowyd gan y darparwr gwasanaeth)"
+
+#~ msgid "(corporate locked)"
+#~ msgstr "(clo corfforaethol)"
+
+#~ msgid "Receive file?"
+#~ msgstr "Derbyn y ffeil?"
+
+#~ msgid "File incoming from another device"
+#~ msgstr "Ffeil yn cyrraedd o ddyfais arall"
+
+#~ msgid "File sent"
+#~ msgstr "Anfonwyd ffeil"
+
+#~ msgid "File received"
+#~ msgstr "Derbyniwyd ffeil"
+
+#~ msgid "File could not be sent"
+#~ msgstr "Methu anfon ffeil"
+
+#~ msgid "File could not be received"
+#~ msgstr "Methu derbyn ffeil"
+
+#~ msgid "Unknown file"
+#~ msgstr "Ffeil anhysbys"
+
+#~ msgid "CCK code"
+#~ msgstr "Cod CCK"
+
+#~ msgid "SPCK code"
+#~ msgstr "Cod SPCK"
+
+#~ msgid "Enter CCK code"
+#~ msgstr "Rhowch god CCK"
+
+#~ msgid "Enter SPCK code"
+#~ msgstr "Cynigwch cod y SPCK"
+
+#~ msgctxt "pinAttemptMsg"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgid "one last try."
+#~ msgstr "un tro olaf."
+
+#~ msgctxt "pinAttemptMsg[few]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} cynnig ar ôl."
+
+#~ msgctxt "pinAttemptMsg[many]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} cynnig ar ôl."
+
+#~ msgctxt "pinAttemptMsg[other]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} cynnig ar ôl."
 
 #~ msgid ""
 #~ "Wi-Fi unavailable. Updating over current connection will block incoming "
@@ -1180,14 +1425,6 @@ msgstr "Wedi canfod rhwydwaith {{networkName}}. Ymuno â'r rhwydwaith?"
 
 #~ msgid "Battery full"
 #~ msgstr "Batri'n llawn"
-
-#~ msgid "Don't allow"
-#~ msgstr "Peidio caniatáu"
-
-#, fuzzy
-#~ msgctxt "continue"
-#~ msgid "Continue"
-#~ msgstr "Parhau"
 
 #~ msgid "Emergency calls only (no SIM)"
 #~ msgstr "Galwadau brys yn unig (dim SIM)"
