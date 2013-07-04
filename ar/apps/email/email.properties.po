@@ -1,0 +1,1075 @@
+#. extracted from ./apps/email/email.properties
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-02 18:16+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+"X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
+
+#: setup-app-name-header
+msgid "Mail"
+msgstr "بريد"
+
+#: setup-empty-account-prompt
+msgid ""
+"You are not set up to send or receive email. Would you like to do that now?"
+msgstr ""
+"أنت غير مٌعدّ لإرسال أو استقبال البريد الإلكتروني. ترغب في القيام بذلك الآن ؟"
+
+#: setup-pick-service
+msgid "To send and receive email, you will need to set up an account."
+msgstr "لإرسال واستقبال البريد الإلكتروني، تحتاج لإعداد حساب."
+
+#. # Title of the account setup card where the user enters their display name,
+#. # e-mail address, and password.
+#: setup-account-header3
+msgid "New account"
+msgstr "حساب جديد"
+
+#: setup-info-header
+msgid "Your login information"
+msgstr "معلوماتك لتسجيل الدخول"
+
+#. # The placeholder for the display name of the user that will be displayed in the
+#. # account setup screen input box for the display name until they enter any text
+#. # in the box.  When you send an e-mail, the "From" header contains the user's
+#. # display name ("John Doe") as well as the e-mail address
+#. # ("john.doe@example.com").  In the future this input box will be labeled, but
+#. # it is currently unlabeled because of screen real estate concerns.
+#: setup-info-name.placeholder
+msgid "Your name"
+msgstr "اسمك"
+
+#. # The placeholder for the user's e-mail address that will be displayed in the
+#. # account setup screen input box for the e-mail address until they enter any
+#. # text in the box.  The value will be used to configure the e-mail account.
+#: setup-info-email.placeholder
+msgid "someone@example.com"
+msgstr "someone@example.com"
+
+#. # The placeholder for the user's password that will be displayed in the account
+#. # setup screen input box for the password until they enter any text in the box.
+#. # The value will be used to configure the e-mail account and saved for future
+#. # usage.
+#: setup-info-password.placeholder
+msgctxt "setup-info-password.placeholder"
+msgid "Password"
+msgstr "كلمة السِّر"
+
+#: setup-info-next
+msgctxt "setup-info-next"
+msgid "Next"
+msgstr "التالي"
+
+#: setup-progress-wait
+msgid "Please wait while your account is set up"
+msgstr ""
+
+#: setup-completed-header
+msgid "Mail account setup"
+msgstr "إعداد حساب بريد"
+
+#: setup-completed-label
+msgid "All done!"
+msgstr "تم!"
+
+#: setup-add-another-account
+msgid "Add another account"
+msgstr "إضافة حساب آخر"
+
+#: setup-show-mail
+msgid "Continue to Mail"
+msgstr "المواصلة للبريد"
+
+#. # The error for when the user tries to create an account without a network
+#. # connection active.
+#: setup-error-offline
+msgid "This device is currently offline. Connect to a network and try again."
+msgstr "الجهاز حاليا غير متصل. اتصل بالشبكة وحاول مرة اخرى."
+
+#. # The error for either a bad username or a bad password.  For security reasons,
+#. # servers try not to distinguish between the two which is why we also cannot
+#. # tell them apart either.  Also, if the user made a typo, they could have made
+#. # it in either place.
+#: setup-error-bad-user-or-pass2
+msgid "Invalid username or password. Check for typos."
+msgstr "اسم المستخدم وكلمة السِّر غير معرّفة"
+
+#. # The error for a user having the correct username and password, but the mail
+#. # server explicitly indicates they don't have permission to talk to the mail
+#. # server.  This is currently only expected from ActiveSync servers; situations
+#. # like gmail over IMAP indicating that IMAP is disabled for the account or
+#. # domain have their own error code: setup-error-imap-disabled.
+#: setup-error-not-authorized
+msgid "The server said you're not authorized to create an account"
+msgstr "غير مصرح لك بإنشاء اسم مستخدم"
+
+#. # The fallback error; if we don't have a better error, we report this.
+#: setup-error-unknown2
+msgid ""
+"An unknown error occurred. Check your network connection or try the manual "
+"configuration option."
+msgstr ""
+"حدث خطأ غير معروف. تحقق من اتصال الشبكة أو حاول باستخدام خيار الاعداد اليدوي."
+
+#. # The error for Gmail accounts where 2-factor authentication (where you receive
+#. # a text message on your phone or run a special app) is enabled, and so the
+#. # user needs to create and use an application specific password to allow us to
+#. # talk to the server.
+#: setup-error-needs-app-pass
+msgid ""
+"You must use an application specific password for two-factor Gmail accounts"
+msgstr ""
+"يتوجب عليك استخدام كلمة السّر الخاصة بالتطبيق لحسابات two-factor الخاصة "
+"بالجيميل"
+
+#. # The error for Gmail accounts where IMAP is not enabled.  This can occur
+#. # for individual users where they have disabled IMAP from the settings UI.
+#. # This can also occur for apps-for-domains where the domain is not configured
+#. # to support IMAP.
+#: setup-error-imap-disabled
+msgid "You must enable IMAP for your Gmail account"
+msgstr "يجب عليك تفعيل الـ IMAP في حساب الجيميل الخاص بك"
+
+#. # The error for when we are able to contact a server that should be the mail
+#. # server but we are unable to establish a secure connection.
+#: setup-error-bad-security
+msgid ""
+"Unable to establish a secure connection with \"{{server}}\". There may be a "
+"problem with your network or the server."
+msgstr ""
+"غير قادر على تأسيس اتصال آمن مع \"{{server}}\". قد تكون هناك مشكلة مع الشبكة "
+"أو الخادم."
+
+#. # The error for when we try to contact a server but see no indication of a
+#. # response before we give up because of a timeout.
+#: setup-error-unresponsive-server
+msgid ""
+"Unable to establish a connection with \"{{server}}\". There may be a problem "
+"with the network."
+msgstr ""
+"غير قادر على تأسيس اتصال مع \"{{server}}\".  قد تكون هناك مشكلة مع الشبكة.."
+
+#. # The error for when we able to establish a (secure) connection with the server,
+#. # but there is some type of failure talking to the server that isn't covered by
+#. # other errors.  Hopefully this is just a temporary problem on the server, but
+#. # it could also be a fundamental incompatibility between our software and the
+#. # server's software.
+#: setup-error-server-problem
+msgid "There is a problem with the server \"{{server}}\". Try again later."
+msgstr "يوجد مشكلة مع الخادم \"{{server}}\". حاول مرة اخرى لاحقا."
+
+#. # The error for when we are trying to figure out the right server settings for
+#. # an account based on the e-mail address the user typed in during configuration,
+#. # but we can't find the right settings.  This is either because the user made a
+#. # typo and so we are looking for configuration data that does not exist, there
+#. # were network failures trying to look the information up, or the information is
+#. # not available.
+#: setup-error-no-config-info
+msgid ""
+"Unable to automatically configure your account. Correct your e-mail address "
+"or try the manual configuration option."
+msgstr ""
+"غير قادر على إعداد حسابك تلقائيا. صحح بريدك الالكتروني أو حاول باستخدام خيار "
+"الاعداد اليدوي."
+
+#. # The error for when the user is trying to set up an account with a server that
+#. # currently indicates it is offline for maintenance.
+#: setup-error-server-maintenance
+msgid "The server \"{{server}}\" is offline for maintenance. Try again later."
+msgstr "الخادم \"{{server}}\" غير متصل للصيانة. حاول مرة اخرى لاحقا."
+
+#: setup-manual-config2
+msgctxt "setup-manual-config2"
+msgid "Manual setup"
+msgstr "اعداد يدوي"
+
+#: setup-manual-config-header
+msgctxt "setup-manual-config-header"
+msgid "Manual setup"
+msgstr "إعداد يدوي"
+
+#: setup-manual-account-type
+msgctxt "setup-manual-account-type"
+msgid "Account type"
+msgstr "نوع الحساب"
+
+#: setup-manual-imap-header
+msgctxt "setup-manual-imap-header"
+msgid "IMAP settings"
+msgstr "إعدادات IMAP"
+
+#: setup-manual-smtp-header
+msgctxt "setup-manual-smtp-header"
+msgid "SMTP settings"
+msgstr "إعدادات SMTP"
+
+#: setup-manual-activesync-header
+msgctxt "setup-manual-activesync-header"
+msgid "ActiveSync settings"
+msgstr "إعدادات ActiveSync"
+
+#: setup-manual-next
+msgctxt "setup-manual-next"
+msgid "Next"
+msgstr "التالي"
+
+#: setup-manual-socket
+msgid "Socket Type"
+msgstr "نوع المقبس"
+
+#: setup-manual-socket-ssl
+msgid "SSL"
+msgstr "SSL"
+
+#: setup-manual-hostname.placeholder
+msgctxt "setup-manual-hostname.placeholder"
+msgid "Hostname"
+msgstr "اسم المضيف"
+
+#: setup-manual-port.placeholder
+msgid "Port Number"
+msgstr "رقم المنفذ"
+
+#: setup-manual-username.placeholder
+msgctxt "setup-manual-username.placeholder"
+msgid "Username"
+msgstr "اسم المستخدم"
+
+#: setup-bad-password-header
+msgid "Bad password!"
+msgstr "كلمة سرّ خاطئة"
+
+#: setup-bad-password
+msgid "We could not sign in to the server. Maybe your password is wrong?"
+msgstr "لا يمكننا تسجيل الدخول إلى الخادم. قد تكون كلمة السِّر خاطئة؟"
+
+#: setup-new-password.placeholder
+msgid "New password"
+msgstr "كلمة سِر جديدة"
+
+#: setup-fix-password
+msgid "Retry with new password"
+msgstr "حاول بكلمة سرّ جديدة"
+
+#: setup-gmail-twofactor-header
+msgid "Two-Factor Enabled"
+msgstr "تم تفعيل Two-Factor"
+
+#: setup-gmail-twofactor-message
+msgid "You need to enter an application-specific password below."
+msgstr "أدخل كلمة السّر الخاصة بالتطبيق أدناه"
+
+#: setup-gmail-twofactor-fix
+msgid "Use application password"
+msgstr "استخدم كلمة السّر الخاصة بالتطبيق"
+
+#: setup-gmail-imap-header
+msgid "IMAP Disabled"
+msgstr "IMAP معطّل"
+
+#: setup-gmail-imap-message
+msgid "You must enable IMAP on your Gmail account "
+msgstr "يجب تفعيل  IMAP في حساب الجيميل الخاص بك "
+
+#: setup-gmail-imap-retry
+msgctxt "setup-gmail-imap-retry"
+msgid "Retry"
+msgstr "محاولة مرة أخرى"
+
+#: settings-main-header
+#, fuzzy
+msgid "Mail settings"
+msgstr "إعدادات البريد"
+
+#: settings-done
+msgid "Done"
+msgstr "تم"
+
+#: settings-account-section
+msgctxt "settings-account-section"
+msgid "Accounts"
+msgstr "حسابات"
+
+#: settings-account-add
+#, fuzzy
+msgid "Add account"
+msgstr "أضف حسابا"
+
+#: settings-account-delete
+msgid "Delete account"
+msgstr "حذف حساب"
+
+#: settings-account-delete-prompt
+msgid ""
+"Are you sure you want to delete your {{account}} mail account? You will have "
+"to re-download your mail if you re-create the account."
+msgstr ""
+"هل أنت متأكد من حذف حساب البريد الخاص بك {{account}}؟ يتوجب عليك إعادة تنزيل "
+"بريدك اذا تم إعادة إنشاءه مرة أخرى."
+
+#: settings-account-delete-cancel
+msgctxt "settings-account-delete-cancel"
+msgid "Cancel"
+msgstr "ألغِ"
+
+#: settings-account-delete-confirm
+msgctxt "settings-account-delete-confirm"
+msgid "Delete"
+msgstr "حذف"
+
+#: settings-about-section
+msgid "About"
+msgstr "عن"
+
+#: settings-general-section
+msgid "General settings"
+msgstr "إعدادات عامة"
+
+#: settings-check-mail
+msgid "Check mail"
+msgstr "التحقق من البريد"
+
+#: settings-show-images
+msgid "Always show images"
+msgstr "إعرض الصور دائما"
+
+#: settings-download-attachments
+msgid "Download attachments"
+msgstr "تنزيل المرفقات"
+
+#: settings-notify-mail
+msgid "Notify of new mail"
+msgstr "تنبيه للرسائل جديدة"
+
+#: settings-check-3min
+msgid "3 minutes"
+msgstr "3 دقائق"
+
+#: settings-check-5min
+msgid "5 minutes"
+msgstr "خمس دقائق"
+
+#: settings-check-10min
+msgid "10 minutes"
+msgstr "عشر دقائق"
+
+#: settings-check-15min
+msgid "15 minutes"
+msgstr "15 دقيقة"
+
+#: settings-check-30min
+msgid "30 minutes"
+msgstr "٣٠ دقيقة"
+
+#: settings-check-60min
+msgid "60 minutes"
+msgstr "٦٠ دقيقة"
+
+#: settings-check-manual
+msgid "Manually"
+msgstr "يدوياُ"
+
+#: settings-default-account
+msgid "Default account"
+msgstr "حساب افتراضي"
+
+#: settings-account-type
+msgctxt "settings-account-type"
+msgid "Account type"
+msgstr "نوع الحساب"
+
+#: settings-account-credentials
+msgid "Credentials"
+msgstr "بيانات الاعتماد"
+
+#: settings-account-synchronize
+msgid "Synchronize"
+msgstr "مزامنة"
+
+#: settings-activesync-label
+msgctxt "settings-activesync-label"
+msgid "ActiveSync settings"
+msgstr "إعدادات ActiveSync "
+
+#: settings-imap-label
+msgctxt "settings-imap-label"
+msgid "IMAP settings"
+msgstr "إعدادات IMAP "
+
+#: settings-smtp-label
+msgctxt "settings-smtp-label"
+msgid "SMTP settings"
+msgstr "إعدادات SMTP "
+
+#: settings-hostname
+msgctxt "settings-hostname"
+msgid "Hostname"
+msgstr "اسم المضيف"
+
+#: settings-port
+msgid "Port"
+msgstr "المنفذ"
+
+#: settings-username
+msgctxt "settings-username"
+msgid "Username"
+msgstr "اسم المستخدم"
+
+#: settings-password
+msgctxt "settings-password"
+msgid "Password"
+msgstr "كلمة السِّر"
+
+#: settings-save
+msgid "Save"
+msgstr "حفظ"
+
+#: settings-password-empty
+msgid "Password field should not be empty"
+msgstr "لا يجب أن تكون كلمة السِّر فارغة"
+
+#: settings-synchronize-auto
+msgid "Automatic"
+msgstr "تلقائي"
+
+#: settings-synchronize-one-day
+msgid "1 day"
+msgstr "يوم واحد"
+
+#: settings-synchronize-three-days
+msgid "3 days"
+msgstr "3 أيام"
+
+#: settings-synchronize-one-week
+msgid "1 week"
+msgstr "أسبوع واحد"
+
+#: settings-synchronize-two-weeks
+msgid "2 weeks"
+msgstr "أسبوعان"
+
+#: settings-synchronize-one-month
+msgid "1 month"
+msgstr "شهر واحد"
+
+#: settings-synchronize-all
+msgid "All messages"
+msgstr "كل الرسائل"
+
+#: accounts-header
+msgctxt "accounts-header"
+msgid "Accounts"
+msgstr "حسابات"
+
+#: accounts-button
+msgctxt "accounts-button"
+msgid "Accounts"
+msgstr "حسابات"
+
+#: envelope-from
+msgctxt "envelope-from"
+msgid "From"
+msgstr "من"
+
+#: envelope-to
+msgctxt "envelope-to"
+msgid "To"
+msgstr "إلى"
+
+#: envelope-cc
+msgctxt "envelope-cc"
+msgid "Cc"
+msgstr "cc"
+
+#: envelope-bcc
+msgid "Bcc"
+msgstr "bcc"
+
+#: reader-header
+msgid "Read"
+msgstr "قراءة"
+
+#: compose-header
+msgid "Compose message"
+msgstr "إنشاء رسالة"
+
+#: compose-send
+msgid "Send"
+msgstr "إرسال"
+
+#: compose-to
+msgctxt "compose-to"
+msgid "To"
+msgstr "إلى"
+
+#: compose-cc
+msgid "cc"
+msgstr "cc"
+
+#: compose-bcc
+msgid "bcc"
+msgstr "bcc"
+
+#: compose-attachments
+msgctxt "compose-attachments"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: compose-attachments[zero]
+msgid "Attachments"
+msgstr "مرففات"
+
+#: compose-attachments[one]
+msgid "{{ n }} attachment"
+msgstr "{{ n }} مرفق"
+
+#: compose-attachments[two]
+msgctxt "compose-attachments[two]"
+msgid "{{ n }} attachments"
+msgstr "{{ n }} مرفق"
+
+#: compose-attachments[few]
+msgctxt "compose-attachments[few]"
+msgid "{{ n }} attachments"
+msgstr "{{ n }} مرفق"
+
+#: compose-attachments[many]
+msgctxt "compose-attachments[many]"
+msgid "{{ n }} attachments"
+msgstr "{{ n }} مرفق"
+
+#: compose-attachments[other]
+msgctxt "compose-attachments[other]"
+msgid "{{ n }} attachments"
+msgstr "{{ n }} مرفق"
+
+#: compose-subject
+msgctxt "compose-subject"
+msgid "Subject"
+msgstr "الموضوع"
+
+#: compose-discard-message
+msgid "Discard email?"
+msgstr "تجاهل البريد الإلكتروني؟"
+
+#: compose-discard-confirm
+msgid "Discard"
+msgstr "تجاهل"
+
+#: compose-sending-message
+msgid "Sending email"
+msgstr "جارِ إرسال البريد الالكتروني"
+
+#: compose-send-message-failed
+msgid "Sending email failed"
+msgstr "تعذر إرسال البريد الالكتروني"
+
+#: dialog-button-ok
+msgid "OK"
+msgstr "موافق"
+
+#: attachment-size-kib
+msgid "{{kilobytes}}K"
+msgstr "{{kilobytes}}K"
+
+#: message-attachment-view.textContent
+msgid "View"
+msgstr "عرض"
+
+#: message-no-subject
+msgid "(no subject)"
+msgstr "(بلا موضوع)"
+
+#: message-edit-menu-star
+msgid "Star"
+msgstr "ميزها بنجمة"
+
+#: message-edit-menu-unstar
+msgid "Unstar"
+msgstr "إلغاء التمييز بنجمة"
+
+#: message-edit-menu-mark-read
+msgid "Mark as read"
+msgstr "جعل الرسالة كمقروءة"
+
+#: message-edit-menu-mark-unread
+msgid "Mark as unread"
+msgstr "جعل الرسالة كغير مقروءة"
+
+#: message-edit-menu-move
+msgid "Move"
+msgstr "نقل"
+
+#: message-edit-menu-delete
+msgctxt "message-edit-menu-delete"
+msgid "Delete"
+msgstr "حذف"
+
+#: message-edit-delete-confirm
+msgid "Delete email message?"
+msgstr "حذف الرسالة؟"
+
+#: message-multiedit-header
+msgctxt "message-multiedit-header"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: message-multiedit-header[zero]
+msgid "Edit"
+msgstr "تعديل"
+
+#: message-multiedit-header[one]
+msgctxt "message-multiedit-header[one]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} مُختارة"
+
+#: message-multiedit-header[two]
+msgctxt "message-multiedit-header[two]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} مُختارة"
+
+#: message-multiedit-header[few]
+msgctxt "message-multiedit-header[few]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} مُختارة"
+
+#: message-multiedit-header[many]
+msgctxt "message-multiedit-header[many]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} مُختارة"
+
+#: message-multiedit-header[other]
+msgctxt "message-multiedit-header[other]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} مُختارة"
+
+#: browse-to-url-prompt
+msgid "Browse to URL?: {{ url }}"
+msgstr "تصفَّح إلى العنوان؟: {{ url }}"
+
+#: message-download-images
+msgctxt "message-download-images"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: message-download-images[one]
+msgid "This email contains one image. Click to download."
+msgstr "هذه الرسالة تحوي صورة واحدة، اضغط لتحميلها."
+
+#: message-download-images[two]
+msgctxt "message-download-images[two]"
+msgid "This email contains {{ n }} images. Click to download."
+msgstr "هذه الرسالة تحوي {{ n }} صور، اضغط لتحميلها."
+
+#: message-download-images[few]
+msgctxt "message-download-images[few]"
+msgid "This email contains {{ n }} images. Click to download."
+msgstr "هذه الرسالة تحوي {{ n }} صور، اضغط لتحميلها."
+
+#: message-download-images[many]
+msgctxt "message-download-images[many]"
+msgid "This email contains {{ n }} images. Click to download."
+msgstr "هذه الرسالة تحوي {{ n }} صور، اضغط لتحميلها."
+
+#: message-download-images[other]
+msgctxt "message-download-images[other]"
+msgid "This email contains {{ n }} images. Click to download."
+msgstr "هذه الرسالة تحوي {{ n }} صور، اضغط لتحميلها."
+
+#: message-show-external-images
+msgid "Show external images"
+msgstr "عرض الصور الخارجية"
+
+#: message-multiedit-cancel
+msgctxt "message-multiedit-cancel"
+msgid "Cancel"
+msgstr "إلغاء"
+
+#: message-multiedit-delete-confirm
+msgctxt "message-multiedit-delete-confirm"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: message-multiedit-delete-confirm[one]
+msgid "Delete this email message?"
+msgstr "هل تريد حذف هذه الرسالة؟"
+
+#: message-multiedit-delete-confirm[two]
+#, fuzzy
+msgctxt "message-multiedit-delete-confirm[two]"
+msgid "Delete {{ n }} email messages?"
+msgstr "هل تريد حذف {{ n }} رسائل؟"
+
+#: message-multiedit-delete-confirm[few]
+msgctxt "message-multiedit-delete-confirm[few]"
+msgid "Delete {{ n }} email messages?"
+msgstr "هل تريد حذف {{ n }} رسالة؟"
+
+#: message-multiedit-delete-confirm[many]
+msgctxt "message-multiedit-delete-confirm[many]"
+msgid "Delete {{ n }} email messages?"
+msgstr "حذف  {{ n }} رسائل؟"
+
+#: message-multiedit-delete-confirm[other]
+msgctxt "message-multiedit-delete-confirm[other]"
+msgid "Delete {{ n }} email messages?"
+msgstr "حذف  {{ n }} رسالة؟"
+
+#: message-search-from
+msgctxt "message-search-from"
+msgid "From"
+msgstr "من"
+
+#: message-search-to
+msgctxt "message-search-to"
+msgid "To"
+msgstr "إلى"
+
+#: message-search-subject
+msgctxt "message-search-subject"
+msgid "Subject"
+msgstr "الموضوع"
+
+#: message-search-body
+msgid "Body"
+msgstr "الرسالة"
+
+#: message-search-all
+msgid "All"
+msgstr "الكل"
+
+#: message-search-input.placeholder
+msgid "Search Mail"
+msgstr "إبجث في البريد"
+
+#: message-search-cancel-accessible
+msgid "Cancel search"
+msgstr "ألغِ البحث"
+
+#: messages-syncing
+msgid "Loading messages"
+msgstr "جارِ تحميل الرسائل"
+
+#: messages-sync-more
+msgid "Load more messages from server"
+msgstr "تحميل المزيد من الرسائل من الخادم"
+
+#: messages-folder-empty
+msgid "No mail in this Folder"
+msgstr "لا توجد رسائل في هذا المجلد"
+
+#: messages-search-empty
+msgid "No matches in locally cached messages"
+msgstr "لم يتم العثور على نتائج في الرسائل المخزنة محليا"
+
+#: messages-folder-select
+msgid "Select folder"
+msgstr "اختر مجلد"
+
+#: message-contact-menu-view
+msgid "View contact"
+msgstr "عرض الإسم"
+
+#: message-contact-menu-reply
+msgid "Reply"
+msgstr "الرد"
+
+#: folder-list-header
+msgid "Folders"
+msgstr "مجلدات"
+
+#: account-last-synced-label
+msgid "Last sync: "
+msgstr "آخر تزامن:"
+
+#: account-never-synced
+msgid "Never"
+msgstr "أبداً"
+
+#. # LOCALIZATION NOTE: do not translate {name}
+#: reply-quoting-wrote
+msgid "{name} wrote"
+msgstr "كتب {name } "
+
+#: forward-original-message
+msgid "Original message"
+msgstr "الرسالة الأصلية"
+
+#. # L10n note: These are the labels we use when displaying the envelope info for a
+#. # message that is forwarded inline.  While automatic recovery of this
+#. # information by clients is made difficult by these strings regularly being
+#. # localized, we attempt to remain consistent with apps such as Thunderbird for
+#. # at least English.
+#: forward-header-subject
+msgctxt "forward-header-subject"
+msgid "Subject"
+msgstr "الموضوع"
+
+#: forward-header-date
+msgid "Date"
+msgstr "تاريخ"
+
+#: forward-header-from
+msgctxt "forward-header-from"
+msgid "From"
+msgstr "من"
+
+#. # This really wants to have the dash in it for consistency with Thunderbird
+#: forward-header-reply-to
+msgid "Reply-To"
+msgstr "رد على"
+
+#: forward-header-to
+msgctxt "forward-header-to"
+msgid "To"
+msgstr "إلى"
+
+#: forward-header-cc
+msgctxt "forward-header-cc"
+msgid "Cc"
+msgstr "CC"
+
+#. # Localized folder names for IMAP servers.  Because the IMAP standard did not
+#. # originally specify a way to express meta-data about folders, folders may be
+#. # named in English to express their purpose.  Then e-mail clients (or webmail
+#. # interfaces) localize these values.  We do this too, following in the
+#. # footsteps of Thunderbird.
+#: folder-inbox
+msgid "Inbox"
+msgstr "الوارد"
+
+#: folder-sent
+msgid "Sent"
+msgstr "المرسل"
+
+#: folder-drafts
+msgid "Drafts"
+msgstr "المسودات"
+
+#: folder-trash
+msgid "Trash"
+msgstr "المهملات"
+
+#: folder-queue
+msgid "Unsent"
+msgstr "غير مُرسَل"
+
+#: folder-junk
+msgid "Junk"
+msgstr "غير مرغوب به"
+
+#: folder-archives
+msgid "Archives"
+msgstr "الأرشيف"
+
+#: toaster-undo
+msgid "Undo"
+msgstr "تراجع"
+
+#: toaster-retry
+msgctxt "toaster-retry"
+msgid "Retry"
+msgstr "حاول مرة أخرى"
+
+#: toaster-message-star
+msgctxt "toaster-message-star"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-star[one]
+msgid "1 message flag set"
+msgstr "وضع علامة على رسالة واحدة"
+
+#: toaster-message-star[two]
+msgctxt "toaster-message-star[two]"
+msgid "{{ n }} messages flag set"
+msgstr "وضع علامة على {{ n }} رسالة"
+
+#: toaster-message-star[few]
+msgctxt "toaster-message-star[few]"
+msgid "{{ n }} messages flag set"
+msgstr "وضع علامة على {{ n }} رسالة"
+
+#: toaster-message-star[many]
+msgctxt "toaster-message-star[many]"
+msgid "{{ n }} messages flag set"
+msgstr "وضع علامة على {{ n }} رسالة"
+
+#: toaster-message-star[other]
+msgctxt "toaster-message-star[other]"
+msgid "{{ n }} messages flag set"
+msgstr "وضع علامة على {{ n }} رسالة"
+
+#: toaster-message-unstar
+msgctxt "toaster-message-unstar"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-unstar[one]
+msgid "1 message flag removed"
+msgstr "حذف العلامة من رسالة واحدة"
+
+#: toaster-message-unstar[two]
+msgctxt "toaster-message-unstar[two]"
+msgid "{{ n }} messages flag removed"
+msgstr "تم حذف {{ n }} علامة"
+
+#: toaster-message-unstar[few]
+msgctxt "toaster-message-unstar[few]"
+msgid "{{ n }} messages flag removed"
+msgstr "تم حذف {{ n }} علامة"
+
+#: toaster-message-unstar[many]
+msgctxt "toaster-message-unstar[many]"
+msgid "{{ n }} messages flag removed"
+msgstr "تم حذف {{ n }} علامة"
+
+#: toaster-message-unstar[other]
+msgctxt "toaster-message-unstar[other]"
+msgid "{{ n }} messages flag removed"
+msgstr "حذف العلامة عن علامة "
+
+#: toaster-message-read
+msgctxt "toaster-message-read"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-read[one]
+msgid "1 message marked as read"
+msgstr "رسالة واحدة مُعلّمة كمقروءة"
+
+#: toaster-message-read[two]
+#, fuzzy
+msgctxt "toaster-message-read[two]"
+msgid "{{ n }} messages marked as read"
+msgstr "تم تعليم{{ n }} رسالة كمقروءة"
+
+#: toaster-message-read[few]
+msgctxt "toaster-message-read[few]"
+msgid "{{ n }} messages marked as read"
+msgstr "تم تعليم {{ n }} رسالة كمقروءة"
+
+#: toaster-message-read[many]
+msgctxt "toaster-message-read[many]"
+msgid "{{ n }} messages marked as read"
+msgstr "تم تعليم {{ n }} رسالة كمقروءة"
+
+#: toaster-message-read[other]
+msgctxt "toaster-message-read[other]"
+msgid "{{ n }} messages marked as read"
+msgstr "{{ n }} رسالة مُعلّمة كمقروءة"
+
+#: toaster-message-unread
+msgctxt "toaster-message-unread"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-unread[one]
+msgid "1 message marked as unread"
+msgstr "رسالة واحدة مُعلّمة كغيرمقروءة"
+
+#: toaster-message-unread[two]
+msgctxt "toaster-message-unread[two]"
+msgid "{{ n }} messages marked as unread"
+msgstr "تم تعليم {{ n }} رسالة كغير مقروءة"
+
+#: toaster-message-unread[few]
+msgctxt "toaster-message-unread[few]"
+msgid "{{ n }} messages marked as unread"
+msgstr "تم تعليم {{ n }} رسالة كغير مقروءة"
+
+#: toaster-message-unread[many]
+msgctxt "toaster-message-unread[many]"
+msgid "{{ n }} messages marked as unread"
+msgstr "تم تعليم {{ n }} رسالة كغير مقروءة"
+
+#: toaster-message-unread[other]
+msgctxt "toaster-message-unread[other]"
+msgid "{{ n }} messages marked as unread"
+msgstr "{{ n }} رسالة مُعلّمة كغير مقروءة"
+
+#: toaster-message-move
+msgctxt "toaster-message-move"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-move[one]
+msgid "1 message moved"
+msgstr "رسالة واحدة منقولة"
+
+#: toaster-message-move[two]
+msgctxt "toaster-message-move[two]"
+msgid "{{ n }} messages moved"
+msgstr "تم نقل {{ n }} رسالة"
+
+#: toaster-message-move[few]
+msgctxt "toaster-message-move[few]"
+msgid "{{ n }} messages moved"
+msgstr "تم نقل {{ n }} رسالة"
+
+#: toaster-message-move[many]
+msgctxt "toaster-message-move[many]"
+msgid "{{ n }} messages moved"
+msgstr "تم نقل {{ n }} رسالة"
+
+#: toaster-message-move[other]
+msgctxt "toaster-message-move[other]"
+msgid "{{ n }} messages moved"
+msgstr "{{ n }} رسالة منقولة"
+
+#: toaster-message-delete
+msgctxt "toaster-message-delete"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-delete[one]
+msgid "1 message deleted"
+msgstr "رسالة واحدة محذوفة"
+
+#: toaster-message-delete[two]
+msgctxt "toaster-message-delete[two]"
+msgid "{{ n }} messages deleted"
+msgstr "تم حذف {{ n }} رسالة"
+
+#: toaster-message-delete[few]
+msgctxt "toaster-message-delete[few]"
+msgid "{{ n }} messages deleted"
+msgstr "تم حذف {{ n }} رسالة"
+
+#: toaster-message-delete[many]
+msgctxt "toaster-message-delete[many]"
+msgid "{{ n }} messages deleted"
+msgstr "تم حذف {{ n }} رسالة"
+
+#: toaster-message-delete[other]
+msgctxt "toaster-message-delete[other]"
+msgid "{{ n }} messages deleted"
+msgstr "{{ n }} رسالة محذوفة"
+
+#: toaster-retryable-syncfailed
+msgid "Unable to connect to server"
+msgstr "فشل الإتصال مع الخادم"
+
+#: form-clear-input
+msgid "Remove text"
+msgstr "إحذف النص"
+
+#: confirm-dialog-title
+msgid "Confirmation"
+msgstr "تأكيد"
+
+#~ msgid "Add to existing contact"
+#~ msgstr "إضافة إلى جهة اتصال موجوده"
+
+#~ msgctxt "new-emails"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
