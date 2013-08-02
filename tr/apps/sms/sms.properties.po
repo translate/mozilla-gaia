@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"POT-Creation-Date: 2013-08-02 12:33+0100\n"
 "PO-Revision-Date: 2013-07-13 20:25+0000\n"
 "Last-Translator: Selim <selim@sum.lu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1373747148.000000\n"
@@ -63,6 +63,8 @@ msgstr "{{name}} (+{{n}})"
 
 #. # Edit Mode
 #: edit
+#, fuzzy
+msgctxt "edit"
 msgid "Edit"
 msgstr "Düzenle"
 
@@ -150,8 +152,9 @@ msgctxt "message"
 msgid "Message"
 msgstr "Mesaj"
 
-#: composeMessage.placeholder
-msgctxt "composeMessage.placeholder"
+#: composeMessage.dataset.placeholder
+#, fuzzy
+msgctxt "composeMessage.dataset.placeholder"
 msgid "Message"
 msgstr "Mesaj"
 
@@ -177,6 +180,11 @@ msgstr ""
 
 #: newMessage
 msgid "New message"
+msgstr "Yeni mesaj"
+
+#: sendMessage
+#, fuzzy
+msgid "Send message"
 msgstr "Yeni mesaj"
 
 #: recipient
@@ -208,17 +216,54 @@ msgctxt "recipient[other]"
 msgid "{{n}} recipients"
 msgstr "{{n}} alıcı"
 
-#: recipientRemoval
-msgid "Do you want to remove {{recipient}} from the recipients list?'"
-msgstr "{{recipient}} alıcı listesinden çıkarılsın mı?"
-
 #: attachmentSize
 msgid "{{n}} kB"
+msgstr "{{n}} kB"
+
+#: attachmentSizeMB
+#, fuzzy
+msgid "{{n}} MB"
 msgstr "{{n}} kB"
 
 #: attachmentOpenError
 msgid "There is no application available to open this file type."
 msgstr "Bu dosya türünü açabilecek bir uygulama mevcut değil."
+
+#. # Dialog to disambiguate in a new message
+#: remove
+msgid "Remove"
+msgstr ""
+
+#. # Group participants
+#: participant
+#, fuzzy
+msgctxt "participant"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: participant[one]
+msgid "{{n}} participant"
+msgstr ""
+
+#: participant[two]
+msgctxt "participant[two]"
+msgid "{{n}} participants"
+msgstr ""
+
+#: participant[few]
+msgctxt "participant[few]"
+msgid "{{n}} participants"
+msgstr ""
+
+#: participant[many]
+msgctxt "participant[many]"
+msgid "{{n}} participants"
+msgstr ""
+
+#: participant[other]
+msgctxt "participant[other]"
+msgid "{{n}} participants"
+msgstr ""
 
 #. # Search functionality
 #: search
@@ -271,6 +316,20 @@ msgctxt "sendGeneralErrorBtnOk"
 msgid "OK"
 msgstr "Tamam"
 
+#: sendNoSimCardTitle
+msgid "Sim card error"
+msgstr ""
+
+#: sendNoSimCardBody
+msgid "No SIM card."
+msgstr ""
+
+#: sendNoSimCardBtnOk
+#, fuzzy
+msgctxt "sendNoSimCardBtnOk"
+msgid "OK"
+msgstr "Tamam"
+
 #: sendAirplaneModeTitle
 msgid "Airplane mode activated"
 msgstr "Uçak modu etkinleştirildi"
@@ -311,6 +370,26 @@ msgstr "ses"
 #: attachment-type-video
 msgid "video"
 msgstr "video"
+
+#: unsent-message-title
+msgid "Unsent Message"
+msgstr ""
+
+#: unsent-message-description
+msgid ""
+"Your previous message was not sent. Do you want to edit the unsent message "
+"or discard it and continue?"
+msgstr ""
+
+#: unsent-message-option-edit
+#, fuzzy
+msgctxt "unsent-message-option-edit"
+msgid "Edit"
+msgstr "Düzenle"
+
+#: unsent-message-option-discard
+msgid "Discard"
+msgstr ""
 
 #. # Labels for contact fields
 #: mobile
@@ -396,6 +475,29 @@ msgstr "indir"
 #: downloading
 msgid "downloading"
 msgstr "indiriliyor"
+
+#: unnamed-attachment
+msgid "untitled"
+msgstr ""
+
+#: file-too-large
+msgid "The file you have selected is too large"
+msgstr ""
+
+#: resize-image
+msgid "Resizing the attached image"
+msgstr ""
+
+#: no-attachment-text
+msgid "There is a problem with the attached file and it cannot be downloaded."
+msgstr ""
+
+#~ msgctxt "composeMessage.placeholder"
+#~ msgid "Message"
+#~ msgstr "Mesaj"
+
+#~ msgid "Do you want to remove {{recipient}} from the recipients list?'"
+#~ msgstr "{{recipient}} alıcı listesinden çıkarılsın mı?"
 
 #~ msgid "{{name}} and no others"
 #~ msgstr "{{name}} ve başka yok"
