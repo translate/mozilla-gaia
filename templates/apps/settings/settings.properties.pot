@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"POT-Creation-Date: 2013-08-02 12:33+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -202,6 +202,7 @@ msgid "Security"
 msgstr ""
 
 #: securityNone
+msgctxt "securityNone"
 msgid "None"
 msgstr ""
 
@@ -254,6 +255,7 @@ msgid "Forget network"
 msgstr ""
 
 #: authentication
+msgctxt "authentication"
 msgid "Authentication"
 msgstr ""
 
@@ -282,6 +284,11 @@ msgstr ""
 msgid "MAC address"
 msgstr ""
 
+#: macUnavailable
+msgctxt "macUnavailable"
+msgid "Not available"
+msgstr ""
+
 #: noNetworksFound
 msgid "No networks found"
 msgstr ""
@@ -290,11 +297,7 @@ msgstr ""
 msgid "No known networks"
 msgstr ""
 
-#. # Connectivity :: Wi-Fi :: WPS
-#: wps
-msgid "Wi-Fi protected setup"
-msgstr ""
-
+#. # Connectivity :: Wi-Fi :: WPS (Wi-Fi Protected Setup)
 #: wpsMessage
 msgid "Connect with WPS"
 msgstr ""
@@ -319,8 +322,8 @@ msgstr ""
 msgid "Another WPS PBC AP was found"
 msgstr ""
 
-#: wpsDescription
-msgid "Automatic wireless network configuration"
+#: wpsDescription2
+msgid "Automatic Wi-Fi setup"
 msgstr ""
 
 #: wpsMethodSelection
@@ -358,6 +361,18 @@ msgstr ""
 #. # Connectivity :: Call
 #: callSettings
 msgid "Call Settings"
+msgstr ""
+
+#: voiceMail
+msgid "Voicemail"
+msgstr ""
+
+#: voiceMail-number
+msgid "Voicemail Number"
+msgstr ""
+
+#: voiceMail-number-notSet
+msgid "Not set"
 msgstr ""
 
 #: callWaiting
@@ -423,6 +438,10 @@ msgstr ""
 
 #: callForwardingConfirmTitle
 msgid "Call forwarding confirmation message"
+msgstr ""
+
+#: callBroadcastService
+msgid "Cell broadcast service"
 msgstr ""
 
 #: confirmCallWaitingTitle
@@ -505,6 +524,7 @@ msgid "Network type"
 msgstr ""
 
 #: operator-networkType-auto
+msgctxt "operator-networkType-auto"
 msgid "Automatic"
 msgstr ""
 
@@ -518,6 +538,11 @@ msgstr ""
 
 #: operator-autoSelect
 msgid "Automatic selection"
+msgstr ""
+
+#: operator-networkSelect-auto
+msgctxt "operator-networkSelect-auto"
+msgid "Automatic"
 msgstr ""
 
 #: operator-turnAutoSelectOff
@@ -584,7 +609,7 @@ msgid "Auto retrieve"
 msgstr ""
 
 #: auto-retrieve-details
-msgid "Automatically retieve messages"
+msgid "Automatically retrieve messages"
 msgstr ""
 
 #: manual-retrieve
@@ -604,7 +629,7 @@ msgid "Delivery reports"
 msgstr ""
 
 #: delivery-reports-details
-msgid "Request notication of delivery for each text message sent"
+msgid "Request notification of delivery for each text message sent"
 msgstr ""
 
 #: autoConfigure
@@ -621,6 +646,32 @@ msgstr ""
 
 #: custom
 msgid "(custom settings)"
+msgstr ""
+
+#: apn-authType
+msgctxt "apn-authType"
+msgid "Authentication"
+msgstr ""
+
+#: apn-authType-notDefined
+msgid "Not defined"
+msgstr ""
+
+#: apn-authType-none
+msgctxt "apn-authType-none"
+msgid "None"
+msgstr ""
+
+#: apn-authType-pap
+msgid "PAP"
+msgstr ""
+
+#: apn-authType-chap
+msgid "CHAP"
+msgstr ""
+
+#: apn-authType-papOrChap
+msgid "PAP or CHAP"
 msgstr ""
 
 #: dataConnection-warning-head
@@ -1138,6 +1189,10 @@ msgstr ""
 msgid "Click sound"
 msgstr ""
 
+#: autoCorrect
+msgid "Auto correction"
+msgstr ""
+
 #: wordSuggestion
 msgid "Word suggestion"
 msgstr ""
@@ -1214,8 +1269,8 @@ msgstr ""
 msgid "Polish"
 msgstr ""
 
-#: serbian-latin
-msgid "Serbian (Latin)"
+#: serbian
+msgid "Serbian"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -1772,28 +1827,28 @@ msgctxt "internalStorage"
 msgid "Internal Storage"
 msgstr ""
 
-#: storage-name-0
-msgctxt "storage-name-0"
+#: storage-name-internal
+msgctxt "storage-name-internal"
 msgid "Internal Storage"
 msgstr ""
 
-#: storage-name-1
+#: storage-name-external-0
 msgid "SD Card Storage"
 msgstr ""
 
-#: storage-name-2
+#: storage-name-external-1
 msgid "SD Card Storage 2"
 msgstr ""
 
-#: short-storage-name-0
+#: short-storage-name-internal
 msgid "Internal"
 msgstr ""
 
-#: short-storage-name-1
+#: short-storage-name-external-0
 msgid "SD Card"
 msgstr ""
 
-#: short-storage-name-2
+#: short-storage-name-external-1
 msgid "SD Card 2"
 msgstr ""
 
@@ -1820,6 +1875,7 @@ msgid "Space left"
 msgstr ""
 
 #: size-not-available
+msgctxt "size-not-available"
 msgid "Not available"
 msgstr ""
 
@@ -2313,18 +2369,87 @@ msgstr ""
 msgid "Help menu"
 msgstr ""
 
-#: operatorService-invalid-url
-msgid "Cannot access the URL"
-msgstr ""
-
-#: operatorService-confirmCall-defaultmessage
-msgid "Call {{number}}?"
-msgstr ""
-
 #: stkAppsNotAvailable
 msgid "SIM card applications not available."
 msgstr ""
 
 #: simToolkit
 msgid "SIM toolkit"
+msgstr ""
+
+#. # Device :: SIM toolkit - NAI (Next Action Indicator)
+#: stkItemsNaiSetUpCall
+msgid "Set Up Call"
+msgstr ""
+
+#: stkItemsNaiSendSs
+msgid "Send SS"
+msgstr ""
+
+#: stkItemsNaiSendUssd
+msgid "Send USSD"
+msgstr ""
+
+#: stkItemsNaiSendSms
+msgid "Send SMS"
+msgstr ""
+
+#: stkItemsNaiSendDtmf
+msgid "Send DTMF"
+msgstr ""
+
+#: stkItemsNaiLaunchBrowser
+msgid "Launch Browser"
+msgstr ""
+
+#: stkItemsNaiPlayTone
+msgid "Play Tone"
+msgstr ""
+
+#: stkItemsNaiDisplayText
+msgid "Display Text"
+msgstr ""
+
+#: stkItemsNaiGetInkey
+msgid "Get Inkey"
+msgstr ""
+
+#: stkItemsNaiGetInput
+msgid "Get Input"
+msgstr ""
+
+#: stkItemsNaiSelectItem
+msgid "Select Item"
+msgstr ""
+
+#: stkItemsNaiSetUpMenu
+msgid "Set Up Menu"
+msgstr ""
+
+#: stkItemsNaiProvideLocalInfo
+msgid "Provide Local Info"
+msgstr ""
+
+#: stkItemsNaiSetIdleModeText
+msgid "Set Idle Mode Text"
+msgstr ""
+
+#: stkItemsNaiOpenChannel
+msgid "Open Channel"
+msgstr ""
+
+#: stkItemsNaiCloseChannel
+msgid "Close Channel"
+msgstr ""
+
+#: stkItemsNaiReceiveData
+msgid "Receive Data"
+msgstr ""
+
+#: stkItemsNaiSendData
+msgid "Send Data"
+msgstr ""
+
+#: stkItemsNaiGetChannelStatus
+msgid "Get Channel Status"
 msgstr ""
