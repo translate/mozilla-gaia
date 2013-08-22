@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
+"POT-Creation-Date: 2013-08-22 13:57+0100\n"
 "PO-Revision-Date: 2013-03-10 03:57+0000\n"
 "Last-Translator: Praveen <mail2ipn@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,9 +101,9 @@ msgstr "నెట్‌వర్క్ & అనుసంధానత"
 msgid "Airplane mode"
 msgstr "విమాన రీతి"
 
-#: gps
-msgid "GPS"
-msgstr "జీపీయస్"
+#: geolocation
+msgid "Geolocation"
+msgstr ""
 
 #. # Connectivity :: Wi-Fi
 #: wifi
@@ -207,6 +207,7 @@ msgstr "భద్రత"
 
 #: securityNone
 #, fuzzy
+msgctxt "securityNone"
 msgid "None"
 msgstr "ఏదీకాదు"
 
@@ -259,6 +260,8 @@ msgid "Forget network"
 msgstr "నెట్‌వర్కును మరచిపొమ్ము"
 
 #: authentication
+#, fuzzy
+msgctxt "authentication"
 msgid "Authentication"
 msgstr "ధృవీకరణ"
 
@@ -287,6 +290,11 @@ msgstr "స్వేచ్ఛా నెట్‌వర్కు లభ్యత�
 msgid "MAC address"
 msgstr "MAC చిరునామా"
 
+#: macUnavailable
+msgctxt "macUnavailable"
+msgid "Not available"
+msgstr ""
+
 #: noNetworksFound
 msgid "No networks found"
 msgstr "ఎటువంటి నెట్‌వర్కులు కనపడలేదు"
@@ -295,11 +303,7 @@ msgstr "ఎటువంటి నెట్‌వర్కులు కనపడ�
 msgid "No known networks"
 msgstr "తెలిసిన నెట్‌వర్కులు ఏవీ లేవు"
 
-#. # Connectivity :: Wi-Fi :: WPS
-#: wps
-msgid "Wi-Fi protected setup"
-msgstr "వై-ఫై రక్షిత అమరిక"
-
+#. # Connectivity :: Wi-Fi :: WPS (Wi-Fi Protected Setup)
 #: wpsMessage
 msgid "Connect with WPS"
 msgstr ""
@@ -324,9 +328,9 @@ msgstr ""
 msgid "Another WPS PBC AP was found"
 msgstr ""
 
-#: wpsDescription
-msgid "Automatic wireless network configuration"
-msgstr "స్వయంచాలక నిస్తంత్రి నెట్‌వర్కు స్వరూపణం"
+#: wpsDescription2
+msgid "Automatic Wi-Fi setup"
+msgstr ""
 
 #: wpsMethodSelection
 msgid "Select a WPS method:"
@@ -366,6 +370,18 @@ msgstr "WPS రద్దుచేయుటలో విఫలమైంది"
 #: callSettings
 msgid "Call Settings"
 msgstr "కాల్ అమరికలు"
+
+#: voiceMail
+msgid "Voicemail"
+msgstr ""
+
+#: voiceMail-number
+msgid "Voicemail Number"
+msgstr ""
+
+#: voiceMail-number-notSet
+msgid "Not set"
+msgstr ""
 
 #: callWaiting
 msgid "Call waiting"
@@ -430,6 +446,10 @@ msgstr "అచేనమైవుంది"
 
 #: callForwardingConfirmTitle
 msgid "Call forwarding confirmation message"
+msgstr ""
+
+#: callBroadcastService
+msgid "Cell broadcast service"
 msgstr ""
 
 #: confirmCallWaitingTitle
@@ -512,6 +532,8 @@ msgid "Network type"
 msgstr "నెట్‍‌వర్క్ రకం"
 
 #: operator-networkType-auto
+#, fuzzy
+msgctxt "operator-networkType-auto"
 msgid "Automatic"
 msgstr "స్వయంచాలకం"
 
@@ -526,6 +548,12 @@ msgstr "3జీ మాత్రమే"
 #: operator-autoSelect
 msgid "Automatic selection"
 msgstr "స్వయంచాలక ఎంపిక"
+
+#: operator-networkSelect-auto
+#, fuzzy
+msgctxt "operator-networkSelect-auto"
+msgid "Automatic"
+msgstr "స్వయంచాలకం"
 
 #: operator-turnAutoSelectOff
 msgid "Turn automatic selection off to view available network operators."
@@ -555,12 +583,26 @@ msgid "Data settings"
 msgstr "దత్తాంశ అమరికలు"
 
 #: suplSettings
+#, fuzzy
 msgid "A-GPS settings"
+msgstr "ఎంఎంఎస్ అమరికలు"
+
+#: messageSettings
+msgid "Message settings"
 msgstr ""
 
-#: mmsSettings
-msgid "MMS settings"
+#: apnSettings
+#, fuzzy
+msgid "APN settings"
 msgstr "ఎంఎంఎస్ అమరికలు"
+
+#: text-message-confirmation
+msgid "Text message confirmation"
+msgstr ""
+
+#: mmsTitle
+msgid "Multimedia messaging (MMS)"
+msgstr ""
 
 #: mmsport
 msgid "MMS port"
@@ -572,6 +614,34 @@ msgstr ""
 
 #: mmsc
 msgid "MMSC"
+msgstr ""
+
+#: auto-retrieve
+msgid "Auto retrieve"
+msgstr ""
+
+#: auto-retrieve-details
+msgid "Automatically retrieve messages"
+msgstr ""
+
+#: manual-retrieve
+msgid "Off"
+msgstr ""
+
+#: auto-roaming-retrieve
+msgid "On with roaming"
+msgstr ""
+
+#: auto-no-roaming-retrieve
+msgid "On without roaming"
+msgstr ""
+
+#: delivery-reports
+msgid "Delivery reports"
+msgstr ""
+
+#: delivery-reports-details
+msgid "Request notification of delivery for each text message sent"
 msgstr ""
 
 #: autoConfigure
@@ -591,6 +661,34 @@ msgstr "HTTP ప్రాతినిధ్య హోస్టు"
 msgid "(custom settings)"
 msgstr "(అనురూపిత అమరికలు)"
 
+#: apn-authType
+#, fuzzy
+msgctxt "apn-authType"
+msgid "Authentication"
+msgstr "ధృవీకరణ"
+
+#: apn-authType-notDefined
+msgid "Not defined"
+msgstr ""
+
+#: apn-authType-none
+#, fuzzy
+msgctxt "apn-authType-none"
+msgid "None"
+msgstr "ఏదీకాదు"
+
+#: apn-authType-pap
+msgid "PAP"
+msgstr ""
+
+#: apn-authType-chap
+msgid "CHAP"
+msgstr ""
+
+#: apn-authType-papOrChap
+msgid "PAP or CHAP"
+msgstr ""
+
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
 msgstr "దత్తాంశ అనుసంధానాన్ని చేతనించాలా?"
@@ -609,6 +707,30 @@ msgstr ""
 msgid ""
 "Depending on your service agreement, extra charges may apply for data when "
 "you are in a roaming area."
+msgstr ""
+
+#: state-unknown
+msgid "Unknown state"
+msgstr ""
+
+#: state-available
+msgid "Available"
+msgstr ""
+
+#: state-connected
+#, fuzzy
+msgctxt "state-connected"
+msgid "Connected"
+msgstr "అనుసంధానించబడింది"
+
+#: state-current
+#, fuzzy
+msgctxt "state-current"
+msgid "Connected"
+msgstr "అనుసంధానించబడింది"
+
+#: state-forbidden
+msgid "Forbidden"
 msgstr ""
 
 #. # Connectivity :: Bluetooth
@@ -1097,6 +1219,10 @@ msgstr ""
 msgid "Click sound"
 msgstr ""
 
+#: autoCorrect
+msgid "Auto correction"
+msgstr ""
+
 #: wordSuggestion
 msgid "Word suggestion"
 msgstr ""
@@ -1173,8 +1299,8 @@ msgstr ""
 msgid "Polish"
 msgstr ""
 
-#: serbian-latin
-msgid "Serbian (Latin)"
+#: serbian
+msgid "Serbian"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -1294,7 +1420,7 @@ msgid "Create"
 msgstr ""
 
 #: create-passcode
-msgid "Create a passcode"
+msgid "Create a Passcode"
 msgstr ""
 
 #: enter-passcode
@@ -1322,7 +1448,7 @@ msgid "Passcode"
 msgstr ""
 
 #: confirm-passcode
-msgid "Confirm passcode"
+msgid "Confirm Passcode"
 msgstr ""
 
 #: immediately
@@ -1429,34 +1555,73 @@ msgstr ""
 msgid "The PIN was incorrect."
 msgstr ""
 
-#: pinAttemptMsg2
+#: inputCodeRetriesLeft
 #, fuzzy
-msgctxt "pinAttemptMsg2"
+msgctxt "inputCodeRetriesLeft"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: pinAttemptMsg2[one]
-msgid "Last chance."
+#: inputCodeRetriesLeft[one]
+msgid "last try."
 msgstr ""
 
-#: pinAttemptMsg2[two]
-msgctxt "pinAttemptMsg2[two]"
+#: inputCodeRetriesLeft[two]
+msgctxt "inputCodeRetriesLeft[two]"
 msgid "{{n}} tries left."
 msgstr ""
 
-#: pinAttemptMsg2[few]
-msgctxt "pinAttemptMsg2[few]"
+#: inputCodeRetriesLeft[few]
+msgctxt "inputCodeRetriesLeft[few]"
 msgid "{{n}} tries left."
 msgstr ""
 
-#: pinAttemptMsg2[many]
-msgctxt "pinAttemptMsg2[many]"
+#: inputCodeRetriesLeft[many]
+msgctxt "inputCodeRetriesLeft[many]"
 msgid "{{n}} tries left."
 msgstr ""
 
-#: pinAttemptMsg2[other]
-msgctxt "pinAttemptMsg2[other]"
+#: inputCodeRetriesLeft[other]
+msgctxt "inputCodeRetriesLeft[other]"
 msgid "{{n}} tries left."
+msgstr ""
+
+#: pinAttemptMsg3
+#, fuzzy
+msgctxt "pinAttemptMsg3"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: pinAttemptMsg3[one]
+msgid ""
+"You have one try left to enter the correct code before locking the SIM card."
+msgstr ""
+
+#: pinAttemptMsg3[two]
+msgctxt "pinAttemptMsg3[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+
+#: pinAttemptMsg3[few]
+msgctxt "pinAttemptMsg3[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+
+#: pinAttemptMsg3[many]
+msgctxt "pinAttemptMsg3[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+
+#: pinAttemptMsg3[other]
+msgctxt "pinAttemptMsg3[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
 msgstr ""
 
 #: pinLastChanceMsg
@@ -1479,7 +1644,45 @@ msgstr ""
 msgid "The PUK code is incorrect."
 msgstr ""
 
-#: pukAttemptMsg2
+#: pukAttemptMsg3
+#, fuzzy
+msgctxt "pukAttemptMsg3"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: pukAttemptMsg3[one]
+msgid ""
+"You have one try left to enter the correct code before this SIM card will be "
+"permanently unusable. Refer to your SIM card documentation or contact your "
+"carrier for more information."
+msgstr ""
+
+#: pukAttemptMsg3[two]
+msgctxt "pukAttemptMsg3[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+
+#: pukAttemptMsg3[few]
+msgctxt "pukAttemptMsg3[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+
+#: pukAttemptMsg3[many]
+msgctxt "pukAttemptMsg3[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+
+#: pukAttemptMsg3[other]
+msgctxt "pukAttemptMsg3[other]"
 msgid ""
 "You have {{n}} tries left to enter the correct code before this SIM card "
 "will be permanently unusable. Refer to your SIM card documentation or "
@@ -1541,14 +1744,214 @@ msgid ""
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#. # Storage
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#: storage
+msgid "Storage"
+msgstr ""
+
+#: enableUSBStorage
+msgid "Enable USB storage"
+msgstr ""
+
+#. # Storage :: Application storage
+#: deviceStorage
+msgid "Device storage"
+msgstr ""
+
+#: usbMassStorage
+msgid "USB mass storage"
+msgstr ""
+
+#: umsUnplugToDisable
+msgid "Unplug USB cable to disable"
+msgstr ""
+
+#: appStorage
+msgid "Application storage"
+msgstr ""
+
+#: byteUnit-B
+msgid "B"
+msgstr ""
+
+#: byteUnit-KB
+msgid "KB"
+msgstr ""
+
+#: byteUnit-MB
+msgid "MB"
+msgstr ""
+
+#: byteUnit-GB
+msgid "GB"
+msgstr ""
+
+#: byteUnit-TB
+msgid "TB"
+msgstr ""
+
+#: storageSize
+msgid "{{size}} {{unit}}"
+msgstr ""
+
+#: availableSize
+#, fuzzy
+msgid "{[ plural(size) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: availableSize[zero]
+msgctxt "availableSize[zero]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
+
+#: availableSize[one]
+msgctxt "availableSize[one]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
+
+#: availableSize[two]
+msgctxt "availableSize[two]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
+
+#: availableSize[few]
+msgctxt "availableSize[few]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
+
+#: availableSize[many]
+msgctxt "availableSize[many]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
+
+#: availableSize[other]
+msgctxt "availableSize[other]"
+msgid "{{size}} {{unit}} available"
+msgstr ""
+
+#: apps-total-space
+msgid "Total space"
+msgstr ""
+
+#: apps-used-space
+msgid "Used"
+msgstr ""
+
+#: apps-free-space
+msgid "Left"
+msgstr ""
+
+#: media-storage-details
+msgid ""
+"Photos, videos and music are stored on the SD card. See media storage for "
+"details."
+msgstr ""
+
+#: ums-shared-volumes
+msgid "{{list}} shared"
+msgstr ""
+
+#. # Storage :: Media storage
+#: mediaStorage
+msgid "Media storage"
+msgstr ""
+
+#: internalStorage
+msgctxt "internalStorage"
+msgid "Internal Storage"
+msgstr ""
+
+#: storage-name-internal
+msgctxt "storage-name-internal"
+msgid "Internal Storage"
+msgstr ""
+
+#: storage-name-external-0
+msgid "SD Card Storage"
+msgstr ""
+
+#: storage-name-external-1
+msgid "SD Card Storage 2"
+msgstr ""
+
+#: short-storage-name-internal
+msgid "Internal"
+msgstr ""
+
+#: short-storage-name-external-0
+msgid "SD Card"
+msgstr ""
+
+#: short-storage-name-external-1
+msgid "SD Card 2"
+msgstr ""
+
+#: music-space
+msgid "Music"
+msgstr ""
+
+#: pictures-space
+msgid "Pictures"
+msgstr ""
+
+#: videos-space
+msgid "Movies"
+msgstr ""
+
+#: left-space
+msgctxt "left-space"
+msgid "Space left"
+msgstr ""
+
+#: free-space
+msgctxt "free-space"
+msgid "Space left"
+msgstr ""
+
+#: size-not-available
+msgctxt "size-not-available"
+msgid "Not available"
+msgstr ""
+
+#: no-storage
+msgid "No storage found"
+msgstr ""
+
+#: advanced
+msgid "Advanced"
+msgstr ""
+
+#: turn-on-ums-confirm
+msgid ""
+"Turning on Enable USB storage allows another computer or device connected "
+"using USB to access files on this phone."
+msgstr ""
+
+#: default-media-location
+msgid "Default media location"
+msgstr ""
+
+#: default-media-location-msg
+msgid "Choose where photos, videos, music and downloads are stored by default."
+msgstr ""
+
+#: change-default-location-confirm
+msgid ""
+"Changing the default media storage volume will effect where photos, videos, "
+"downloads and other media will be saved to by default. Existing data will "
+"remain in its current location."
+msgstr ""
+
+#: share-using-usb
+msgid "Share using USB"
+msgstr ""
+
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Device
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #: device
 msgid "Device"
-msgstr ""
-
-#: storage
-msgid "Storage"
 msgstr ""
 
 #: help
@@ -1571,6 +1974,10 @@ msgstr ""
 
 #: deviceInfo-MSISDN
 msgid "Phone number"
+msgstr ""
+
+#: gitInfo
+msgid "Git commit info"
 msgstr ""
 
 #: developer
@@ -1655,10 +2062,6 @@ msgstr ""
 
 #: more-info
 msgid "More Information"
-msgstr ""
-
-#: gitInfo
-msgid "Git commit info"
 msgstr ""
 
 #: softwareUpdates
@@ -1839,133 +2242,6 @@ msgstr ""
 msgid "No first time use app found"
 msgstr ""
 
-#. # Device :: Device storage
-#: deviceStorage
-msgid "Device storage"
-msgstr ""
-
-#: usbMassStorage
-msgid "USB mass storage"
-msgstr ""
-
-#: umsUnplugToDisable
-msgid "Unplug USB cable to disable"
-msgstr ""
-
-#: appStorage
-msgid "Application storage"
-msgstr ""
-
-#: byteUnit-B
-msgid "B"
-msgstr ""
-
-#: byteUnit-KB
-msgid "KB"
-msgstr ""
-
-#: byteUnit-MB
-msgid "MB"
-msgstr ""
-
-#: byteUnit-GB
-msgid "GB"
-msgstr ""
-
-#: byteUnit-TB
-msgid "TB"
-msgstr ""
-
-#: storageSize
-msgid "{{size}} {{unit}}"
-msgstr ""
-
-#: availableSize
-#, fuzzy
-msgid "{[ plural(size) ]}"
-msgstr "{[ plural(n) ]}"
-
-#: availableSize[zero]
-msgctxt "availableSize[zero]"
-msgid "{{size}} {{unit}} available"
-msgstr ""
-
-#: availableSize[one]
-msgctxt "availableSize[one]"
-msgid "{{size}} {{unit}} available"
-msgstr ""
-
-#: availableSize[two]
-msgctxt "availableSize[two]"
-msgid "{{size}} {{unit}} available"
-msgstr ""
-
-#: availableSize[few]
-msgctxt "availableSize[few]"
-msgid "{{size}} {{unit}} available"
-msgstr ""
-
-#: availableSize[many]
-msgctxt "availableSize[many]"
-msgid "{{size}} {{unit}} available"
-msgstr ""
-
-#: availableSize[other]
-msgctxt "availableSize[other]"
-msgid "{{size}} {{unit}} available"
-msgstr ""
-
-#: apps-total-space
-msgid "Total space"
-msgstr ""
-
-#: apps-used-space
-msgid "Used"
-msgstr ""
-
-#: apps-free-space
-msgid "Left"
-msgstr ""
-
-#: media-storage-details
-msgid ""
-"Photos, videos and music are stored on the SD card. See media storage for "
-"details."
-msgstr ""
-
-#. # Device :: Media storage
-#: mediaStorage
-msgid "Media storage"
-msgstr ""
-
-#: music-space
-msgid "Music"
-msgstr ""
-
-#: pictures-space
-msgid "Pictures"
-msgstr ""
-
-#: videos-space
-msgid "Movies"
-msgstr ""
-
-#: left-space
-msgid "Space left"
-msgstr ""
-
-#: size-not-available
-msgid "Not available"
-msgstr ""
-
-#: no-storage
-msgid "No storage found"
-msgstr ""
-
-#: advanced
-msgid "Advanced"
-msgstr ""
-
 #. # Device :: Battery
 #: battery
 msgid "Battery"
@@ -1995,11 +2271,11 @@ msgstr ""
 msgid "{{level}}% battery left"
 msgstr ""
 
-#: powerSave-expl
+#: powerSave-explanation
 msgid ""
-"Turning on power save mode turns off the phone’s data, Bluetooth and GPS "
-"connections to extend battery life. You can still turn these services back "
-"on manually."
+"Turning on power save mode turns off the phone’s data, Bluetooth and "
+"Geolocation connections to extend battery life. You can still turn these "
+"services back on manually."
 msgstr ""
 
 #: turnOnAuto
@@ -2058,8 +2334,8 @@ msgstr ""
 msgid "Never send a report"
 msgstr ""
 
-#: askToSendReport
-msgid "Ask me when a crash occurs"
+#: askToSendReport2
+msgid "Ask each time"
 msgstr ""
 
 #. # Device :: Improve Browser OS :: Crash Reports
@@ -2128,14 +2404,6 @@ msgstr ""
 msgid "Help menu"
 msgstr ""
 
-#: operatorService-invalid-url
-msgid "Cannot access the URL"
-msgstr ""
-
-#: operatorService-confirmCall-defaultmessage
-msgid "Call {{number}}?"
-msgstr ""
-
 #: stkAppsNotAvailable
 msgid "SIM card applications not available."
 msgstr ""
@@ -2143,3 +2411,94 @@ msgstr ""
 #: simToolkit
 msgid "SIM toolkit"
 msgstr ""
+
+#. # Device :: SIM toolkit - NAI (Next Action Indicator)
+#: stkItemsNaiSetUpCall
+msgid "Set Up Call"
+msgstr ""
+
+#: stkItemsNaiSendSs
+msgid "Send SS"
+msgstr ""
+
+#: stkItemsNaiSendUssd
+msgid "Send USSD"
+msgstr ""
+
+#: stkItemsNaiSendSms
+msgid "Send SMS"
+msgstr ""
+
+#: stkItemsNaiSendDtmf
+msgid "Send DTMF"
+msgstr ""
+
+#: stkItemsNaiLaunchBrowser
+msgid "Launch Browser"
+msgstr ""
+
+#: stkItemsNaiPlayTone
+msgid "Play Tone"
+msgstr ""
+
+#: stkItemsNaiDisplayText
+msgid "Display Text"
+msgstr ""
+
+#: stkItemsNaiGetInkey
+msgid "Get Inkey"
+msgstr ""
+
+#: stkItemsNaiGetInput
+msgid "Get Input"
+msgstr ""
+
+#: stkItemsNaiSelectItem
+msgid "Select Item"
+msgstr ""
+
+#: stkItemsNaiSetUpMenu
+msgid "Set Up Menu"
+msgstr ""
+
+#: stkItemsNaiProvideLocalInfo
+msgid "Provide Local Info"
+msgstr ""
+
+#: stkItemsNaiSetIdleModeText
+msgid "Set Idle Mode Text"
+msgstr ""
+
+#: stkItemsNaiOpenChannel
+msgid "Open Channel"
+msgstr ""
+
+#: stkItemsNaiCloseChannel
+msgid "Close Channel"
+msgstr ""
+
+#: stkItemsNaiReceiveData
+msgid "Receive Data"
+msgstr ""
+
+#: stkItemsNaiSendData
+msgid "Send Data"
+msgstr ""
+
+#: stkItemsNaiGetChannelStatus
+msgid "Get Channel Status"
+msgstr ""
+
+#~ msgid "Wi-Fi protected setup"
+#~ msgstr "వై-ఫై రక్షిత అమరిక"
+
+#~ msgid "Automatic wireless network configuration"
+#~ msgstr "స్వయంచాలక నిస్తంత్రి నెట్‌వర్కు స్వరూపణం"
+
+#~ msgid "GPS"
+#~ msgstr "జీపీయస్"
+
+#, fuzzy
+#~ msgctxt "pinAttemptMsg2"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"

@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-03 17:13+0100\n"
-"PO-Revision-Date: 2013-06-22 15:55+0000\n"
+"POT-Creation-Date: 2013-08-22 13:57+0100\n"
+"PO-Revision-Date: 2013-06-26 21:44+0000\n"
 "Last-Translator: Benny <bennychandra@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: id\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1371916544.000000\n"
+"X-POOTLE-MTIME: 1372283073.000000\n"
 
 #. # Headers
 #: messages
@@ -63,6 +63,8 @@ msgstr "{{name}} (+{{n}})"
 
 #. # Edit Mode
 #: edit
+#, fuzzy
+msgctxt "edit"
 msgid "Edit"
 msgstr "Edit"
 
@@ -150,8 +152,9 @@ msgctxt "message"
 msgid "Message"
 msgstr "Pesan"
 
-#: composeMessage.placeholder
-msgctxt "composeMessage.placeholder"
+#: composeMessage.dataset.placeholder
+#, fuzzy
+msgctxt "composeMessage.dataset.placeholder"
 msgid "Message"
 msgstr "Pesan"
 
@@ -177,6 +180,11 @@ msgstr ""
 
 #: newMessage
 msgid "New message"
+msgstr "Pesan baru"
+
+#: sendMessage
+#, fuzzy
+msgid "Send message"
 msgstr "Pesan baru"
 
 #: recipient
@@ -208,17 +216,54 @@ msgctxt "recipient[other]"
 msgid "{{n}} recipients"
 msgstr "{{n}} penerima"
 
-#: recipientRemoval
-msgid "Do you want to remove {{recipient}} from the recipients list?'"
-msgstr "Anda ingin hapus {{recipient}} dari daftar penerima?"
-
 #: attachmentSize
 msgid "{{n}} kB"
+msgstr "{{n}} kB"
+
+#: attachmentSizeMB
+#, fuzzy
+msgid "{{n}} MB"
 msgstr "{{n}} kB"
 
 #: attachmentOpenError
 msgid "There is no application available to open this file type."
 msgstr "Tidak tersedia aplikasi untuk membuka tipe berkas ini."
+
+#. # Dialog to disambiguate in a new message
+#: remove
+msgid "Remove"
+msgstr ""
+
+#. # Group participants
+#: participant
+#, fuzzy
+msgctxt "participant"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: participant[one]
+msgid "{{n}} participant"
+msgstr ""
+
+#: participant[two]
+msgctxt "participant[two]"
+msgid "{{n}} participants"
+msgstr ""
+
+#: participant[few]
+msgctxt "participant[few]"
+msgid "{{n}} participants"
+msgstr ""
+
+#: participant[many]
+msgctxt "participant[many]"
+msgid "{{n}} participants"
+msgstr ""
+
+#: participant[other]
+msgctxt "participant[other]"
+msgid "{{n}} participants"
+msgstr ""
 
 #. # Search functionality
 #: search
@@ -271,13 +316,27 @@ msgctxt "sendGeneralErrorBtnOk"
 msgid "OK"
 msgstr "Oke"
 
+#: sendNoSimCardTitle
+msgid "Sim card error"
+msgstr ""
+
+#: sendNoSimCardBody
+msgid "No SIM card."
+msgstr ""
+
+#: sendNoSimCardBtnOk
+#, fuzzy
+msgctxt "sendNoSimCardBtnOk"
+msgid "OK"
+msgstr "Oke"
+
 #: sendAirplaneModeTitle
 msgid "Airplane mode activated"
-msgstr "Mode pesawat aktif"
+msgstr "Modus pesawat aktif"
 
 #: sendAirplaneModeBody
 msgid "To send a message, first disable airplane mode."
-msgstr "Untuk mengirim pesan, matikan mode pesawat terlebih dulu."
+msgstr "Untuk mengirim pesan, matikan modus pesawat terlebih dulu."
 
 #: sendAirplaneModeBtnOk
 msgctxt "sendAirplaneModeBtnOk"
@@ -312,6 +371,26 @@ msgstr "audio"
 msgid "video"
 msgstr "video"
 
+#: unsent-message-title
+msgid "Unsent Message"
+msgstr ""
+
+#: unsent-message-description
+msgid ""
+"Your previous message was not sent. Do you want to edit the unsent message "
+"or discard it and continue?"
+msgstr ""
+
+#: unsent-message-option-edit
+#, fuzzy
+msgctxt "unsent-message-option-edit"
+msgid "Edit"
+msgstr "Edit"
+
+#: unsent-message-option-discard
+msgid "Discard"
+msgstr ""
+
 #. # Labels for contact fields
 #: mobile
 msgid "Mobile"
@@ -345,6 +424,10 @@ msgstr "Faks lainnya"
 msgid "Another"
 msgstr "Lainnya"
 
+#: Other
+msgid "Other"
+msgstr ""
+
 #. # Date and time
 #: today
 msgid "today"
@@ -371,6 +454,10 @@ msgstr "Buat kontak baru"
 msgid "Call"
 msgstr "Panggil"
 
+#: sendEmail
+msgid "Send email"
+msgstr ""
+
 #. # MMS message
 #: mms-message
 msgid "MMS message"
@@ -395,6 +482,29 @@ msgstr "unduh"
 #: downloading
 msgid "downloading"
 msgstr "mengunduh"
+
+#: unnamed-attachment
+msgid "untitled"
+msgstr ""
+
+#: file-too-large
+msgid "The file you have selected is too large"
+msgstr ""
+
+#: resize-image
+msgid "Resizing the attached image"
+msgstr ""
+
+#: no-attachment-text
+msgid "There is a problem with the attached file and it cannot be downloaded."
+msgstr ""
+
+#~ msgctxt "composeMessage.placeholder"
+#~ msgid "Message"
+#~ msgstr "Pesan"
+
+#~ msgid "Do you want to remove {{recipient}} from the recipients list?'"
+#~ msgstr "Anda ingin hapus {{recipient}} dari daftar penerima?"
 
 #~ msgid "{{name}} and no others"
 #~ msgstr "{{name}} dan tidak ada lagi"

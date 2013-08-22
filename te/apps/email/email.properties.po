@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
+"POT-Creation-Date: 2013-08-02 12:33+0100\n"
 "PO-Revision-Date: 2013-03-09 17:30+0000\n"
 "Last-Translator: Veeven <veeven@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -182,6 +182,11 @@ msgstr ""
 #. # currently indicates it is offline for maintenance.
 #: setup-error-server-maintenance
 msgid "The server \"{{server}}\" is offline for maintenance. Try again later."
+msgstr ""
+
+#. # The error when the user trying to register a duplicate account
+#: setup-error-account-already-exists
+msgid "This account is already configured."
 msgstr ""
 
 #: setup-manual-config2
@@ -504,6 +509,10 @@ msgstr ""
 msgid "Compose message"
 msgstr ""
 
+#: compose-header-short
+msgid "Compose"
+msgstr ""
+
 #: compose-send
 msgid "Send"
 msgstr ""
@@ -579,6 +588,24 @@ msgstr "వేగును పంపిస్తున్నది"
 msgid "Sending email failed"
 msgstr "వేగును పంపుటలో విఫలమైంది"
 
+#: composer-attachment-large
+msgid "Attachment too large"
+msgstr ""
+
+#: composer-attachments-large
+msgid "Attachments too large"
+msgstr ""
+
+#: compose-attchment-size-exceeded
+msgid "The selected attachment is too large to send with this message."
+msgstr ""
+
+#: compose-attchments-size-exceeded
+msgid ""
+"The selected attachments are too large to send with this message. Try "
+"selecting fewer files."
+msgstr ""
+
 #: dialog-button-ok
 msgid "OK"
 msgstr "సరే"
@@ -623,6 +650,10 @@ msgstr "తొలగించు"
 #: message-edit-delete-confirm
 msgid "Delete email message?"
 msgstr "వేగు సందేశాన్ని తొలగించాలా?"
+
+#: message-send-attachment-disabled-confirm
+msgid "Attachments can not be forwarded."
+msgstr ""
 
 #: message-multiedit-header
 msgctxt "message-multiedit-header"
@@ -806,10 +837,20 @@ msgstr ""
 msgid "Folders"
 msgstr ""
 
+#. # L10n note: account-last-synced-label is found on the folder list card,
+#. # accessible from the message-list card by clicking the icon in the upper left
+#. # of the card.  The label is displayed at the bottom of the folder list and is
+#. # right aligned.  There is currently 1 button to the left of the label and soon
+#. # there will be two, so it is desirable to use as short a translation as
+#. # possible.  To the right of the label, a (short) relative timestamp is
+#. # displayed.
 #: account-last-synced-label
 msgid "Last sync: "
 msgstr ""
 
+#. # L10n note: This string is displayed to the right of account-last-synced-label
+#. # if no folder has ever been synchronized.  Otherwise the space occupied by this
+#. # string will be a (short) relative timestamp.
 #: account-never-synced
 msgid "Never"
 msgstr ""
@@ -1089,6 +1130,38 @@ msgstr ""
 
 #: confirm-dialog-title
 msgid "Confirmation"
+msgstr ""
+
+#. # new-emails refers to the text shown on a notification that users
+#. # get when they receive new, unread email. The ui component that utilizes
+#. # this lives in apps/email/js/message_list_topbar.js.
+#: new-emails
+msgctxt "new-emails"
+msgid "{[ plural(n) ]}"
+msgstr ""
+
+#: new-emails[one]
+msgid "1 New Email"
+msgstr ""
+
+#: new-emails[two]
+msgctxt "new-emails[two]"
+msgid "{{ n }} New Emails"
+msgstr ""
+
+#: new-emails[few]
+msgctxt "new-emails[few]"
+msgid "{{ n }} New Emails"
+msgstr ""
+
+#: new-emails[many]
+msgctxt "new-emails[many]"
+msgid "{{ n }} New Emails"
+msgstr ""
+
+#: new-emails[other]
+msgctxt "new-emails[other]"
+msgid "{{ n }} New Emails"
 msgstr ""
 
 #~ msgid "Please wait while your account is set up"

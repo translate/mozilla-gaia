@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
+"POT-Creation-Date: 2013-08-22 13:57+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,41 +23,46 @@ msgstr "메시지"
 msgid "Edit messages"
 msgstr "메시지 편집"
 
-#: others
-msgctxt "others"
+#. # Contact title
+#: thread-header-text
+#, fuzzy
+msgctxt "thread-header-text"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: others[zero]
-msgid "{{name}} and no others"
-msgstr "{{name}} 외 없음"
+#: thread-header-text[zero]
+msgid "{{name}}"
+msgstr ""
 
-#: others[one]
-msgid "{{name}} and {{n}} other"
-msgstr "{{name}} 외 {{n}} 명"
+#: thread-header-text[one]
+msgctxt "thread-header-text[one]"
+msgid "{{name}} (+{{n}})"
+msgstr ""
 
-#: others[two]
-msgctxt "others[two]"
-msgid "{{name}} and {{n}} others"
-msgstr "{{name}} and {{n}} 명"
+#: thread-header-text[two]
+msgctxt "thread-header-text[two]"
+msgid "{{name}} (+{{n}})"
+msgstr ""
 
-#: others[few]
-msgctxt "others[few]"
-msgid "{{name}} and {{n}} others"
-msgstr "{{name}} and {{n}} 명"
+#: thread-header-text[few]
+msgctxt "thread-header-text[few]"
+msgid "{{name}} (+{{n}})"
+msgstr ""
 
-#: others[many]
-msgctxt "others[many]"
-msgid "{{name}} and {{n}} others"
-msgstr "{{name}} and {{n}} 명"
+#: thread-header-text[many]
+msgctxt "thread-header-text[many]"
+msgid "{{name}} (+{{n}})"
+msgstr ""
 
-#: others[other]
-msgctxt "others[other]"
-msgid "{{name}} and {{n}} others"
-msgstr "{{name}} and {{n}} 명"
+#: thread-header-text[other]
+msgctxt "thread-header-text[other]"
+msgid "{{name}} (+{{n}})"
+msgstr ""
 
 #. # Edit Mode
 #: edit
+#, fuzzy
+msgctxt "edit"
 msgid "Edit"
 msgstr "편집"
 
@@ -130,6 +135,10 @@ msgid "{{n}} selected"
 msgstr "{{n}}개 선태됨"
 
 #. # New Message
+#: to
+msgid "To:"
+msgstr ""
+
 #: send
 msgid "Send"
 msgstr "보내기"
@@ -143,18 +152,116 @@ msgctxt "message"
 msgid "Message"
 msgstr "메시지"
 
-#: composeMessage.placeholder
-msgctxt "composeMessage.placeholder"
+#: composeMessage.dataset.placeholder
+#, fuzzy
+msgctxt "composeMessage.dataset.placeholder"
 msgid "Message"
 msgstr "메시지"
+
+#: converted-to-mms
+msgid "Converting to multimedia message."
+msgstr ""
+
+#: converted-to-sms
+msgid "Converting to text message."
+msgstr ""
+
+#: messages-max-length-text
+msgid "You've reached the maximum length."
+msgstr ""
+
+#: messages-exceeded-length-text
+msgid ""
+"You've exceeded the maximum length. Remove special characters or shorten the "
+"message to send it."
+msgstr ""
 
 #: newMessage
 #, fuzzy
 msgid "New message"
 msgstr "문자"
 
-#: messages-max-length-notice
-msgid "You've reached the maximum length for an SMS."
+#: sendMessage
+#, fuzzy
+msgid "Send message"
+msgstr "문자"
+
+#: recipient
+#, fuzzy
+msgctxt "recipient"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: recipient[one]
+msgid "{{n}} recipient"
+msgstr ""
+
+#: recipient[two]
+msgctxt "recipient[two]"
+msgid "{{n}} recipients"
+msgstr ""
+
+#: recipient[few]
+msgctxt "recipient[few]"
+msgid "{{n}} recipients"
+msgstr ""
+
+#: recipient[many]
+msgctxt "recipient[many]"
+msgid "{{n}} recipients"
+msgstr ""
+
+#: recipient[other]
+msgctxt "recipient[other]"
+msgid "{{n}} recipients"
+msgstr ""
+
+#: attachmentSize
+msgid "{{n}} kB"
+msgstr ""
+
+#: attachmentSizeMB
+msgid "{{n}} MB"
+msgstr ""
+
+#: attachmentOpenError
+msgid "There is no application available to open this file type."
+msgstr ""
+
+#. # Dialog to disambiguate in a new message
+#: remove
+msgid "Remove"
+msgstr ""
+
+#. # Group participants
+#: participant
+#, fuzzy
+msgctxt "participant"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: participant[one]
+msgid "{{n}} participant"
+msgstr ""
+
+#: participant[two]
+msgctxt "participant[two]"
+msgid "{{n}} participants"
+msgstr ""
+
+#: participant[few]
+msgctxt "participant[few]"
+msgid "{{n}} participants"
+msgstr ""
+
+#: participant[many]
+msgctxt "participant[many]"
+msgid "{{n}} participants"
+msgstr ""
+
+#: participant[other]
+msgctxt "participant[other]"
+msgid "{{n}} participants"
 msgstr ""
 
 #. # Search functionality
@@ -209,6 +316,20 @@ msgctxt "sendGeneralErrorBtnOk"
 msgid "OK"
 msgstr "확인"
 
+#: sendNoSimCardTitle
+msgid "Sim card error"
+msgstr ""
+
+#: sendNoSimCardBody
+msgid "No SIM card."
+msgstr ""
+
+#: sendNoSimCardBtnOk
+#, fuzzy
+msgctxt "sendNoSimCardBtnOk"
+msgid "OK"
+msgstr "확인"
+
 #: sendAirplaneModeTitle
 #, fuzzy
 msgid "Airplane mode activated"
@@ -223,6 +344,54 @@ msgstr "비행기 모드를 비활성화하면 메시지를 보낼 수 있습니
 msgctxt "sendAirplaneModeBtnOk"
 msgid "OK"
 msgstr "확인"
+
+#: deleted-sms
+msgid "This message has already been deleted."
+msgstr ""
+
+#: view-attachment
+msgid "View"
+msgstr ""
+
+#: remove-attachment
+msgid "Remove {{type}}"
+msgstr ""
+
+#: replace-attachment
+msgid "Replace {{type}}"
+msgstr ""
+
+#: attachment-type-image
+msgid "image"
+msgstr ""
+
+#: attachment-type-audio
+msgid "audio"
+msgstr ""
+
+#: attachment-type-video
+msgid "video"
+msgstr ""
+
+#: unsent-message-title
+msgid "Unsent Message"
+msgstr ""
+
+#: unsent-message-description
+msgid ""
+"Your previous message was not sent. Do you want to edit the unsent message "
+"or discard it and continue?"
+msgstr ""
+
+#: unsent-message-option-edit
+#, fuzzy
+msgctxt "unsent-message-option-edit"
+msgid "Edit"
+msgstr "편집"
+
+#: unsent-message-option-discard
+msgid "Discard"
+msgstr ""
 
 #. # Labels for contact fields
 #: mobile
@@ -260,6 +429,10 @@ msgstr "기타 Fax"
 msgid "Another"
 msgstr "기타"
 
+#: Other
+msgid "Other"
+msgstr ""
+
 #. # Date and time
 #: today
 msgid "today"
@@ -285,6 +458,77 @@ msgstr ""
 #: call
 msgid "Call"
 msgstr ""
+
+#: sendEmail
+msgid "Send email"
+msgstr ""
+
+#. # MMS message
+#: mms-message
+msgid "MMS message"
+msgstr ""
+
+#: notDownloaded-title
+msgid "Message is not downloaded yet."
+msgstr ""
+
+#: not-downloaded-mms
+msgid "I have sent you a file. It will be available until {{date}}"
+msgstr ""
+
+#: expired-mms
+msgid "Sorry, message cannot be downloaded as it expired on {{date}}"
+msgstr ""
+
+#: download
+msgid "download"
+msgstr ""
+
+#: downloading
+msgid "downloading"
+msgstr ""
+
+#: unnamed-attachment
+msgid "untitled"
+msgstr ""
+
+#: file-too-large
+msgid "The file you have selected is too large"
+msgstr ""
+
+#: resize-image
+msgid "Resizing the attached image"
+msgstr ""
+
+#: no-attachment-text
+msgid "There is a problem with the attached file and it cannot be downloaded."
+msgstr ""
+
+#~ msgctxt "composeMessage.placeholder"
+#~ msgid "Message"
+#~ msgstr "메시지"
+
+#~ msgid "{{name}} and no others"
+#~ msgstr "{{name}} 외 없음"
+
+#~ msgid "{{name}} and {{n}} other"
+#~ msgstr "{{name}} 외 {{n}} 명"
+
+#~ msgctxt "others[two]"
+#~ msgid "{{name}} and {{n}} others"
+#~ msgstr "{{name}} and {{n}} 명"
+
+#~ msgctxt "others[few]"
+#~ msgid "{{name}} and {{n}} others"
+#~ msgstr "{{name}} and {{n}} 명"
+
+#~ msgctxt "others[many]"
+#~ msgid "{{name}} and {{n}} others"
+#~ msgstr "{{name}} and {{n}} 명"
+
+#~ msgctxt "others[other]"
+#~ msgid "{{name}} and {{n}} others"
+#~ msgstr "{{name}} and {{n}} 명"
 
 #~ msgid "No results returned"
 #~ msgstr "결과 없음"

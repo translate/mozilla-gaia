@@ -1,16 +1,16 @@
-#. extracted from locales/en-US/apps/email/email.properties
+#. extracted from ./apps/email/email.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-09 00:56+0100\n"
+"POT-Creation-Date: 2013-08-02 12:33+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
@@ -27,7 +27,8 @@ msgstr ""
 
 #: setup-pick-service
 msgid "To send and receive email, you will need to set up an account."
-msgstr "Pour envoyer et recevoir des messages, vous devez configurer un compte."
+msgstr ""
+"Pour envoyer et recevoir des messages, vous devez configurer un compte."
 
 #. # Title of the account setup card where the user enters their display name,
 #. # e-mail address, and password.
@@ -72,8 +73,8 @@ msgid "Next"
 msgstr "Suivant"
 
 #: setup-progress-wait
-msgid "Please wait while your account is set up"
-msgstr "Veuillez patienter pendant la configuration de votre compte"
+msgid "Setting up account"
+msgstr ""
 
 #: setup-completed-header
 msgid "Mail account setup"
@@ -181,6 +182,11 @@ msgstr ""
 msgid "The server \"{{server}}\" is offline for maintenance. Try again later."
 msgstr ""
 
+#. # The error when the user trying to register a duplicate account
+#: setup-error-account-already-exists
+msgid "This account is already configured."
+msgstr ""
+
 #: setup-manual-config2
 #, fuzzy
 msgctxt "setup-manual-config2"
@@ -286,7 +292,8 @@ msgid "Retry"
 msgstr ""
 
 #: settings-main-header
-msgid "Mail settings"
+#, fuzzy
+msgid "Mail Settings"
 msgstr "Paramètres message"
 
 #: settings-done
@@ -299,7 +306,8 @@ msgid "Accounts"
 msgstr "Comptes"
 
 #: settings-account-add
-msgid "Add account"
+#, fuzzy
+msgid "Add Account"
 msgstr "Ajouter un compte"
 
 #: settings-account-delete
@@ -500,6 +508,10 @@ msgstr "Lire"
 msgid "Compose message"
 msgstr "Écrire un message"
 
+#: compose-header-short
+msgid "Compose"
+msgstr ""
+
 #: compose-send
 msgid "Send"
 msgstr "Envoyer"
@@ -517,11 +529,49 @@ msgstr "Cc"
 msgid "bcc"
 msgstr "Cci"
 
+#: compose-attachments
+#, fuzzy
+msgctxt "compose-attachments"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: compose-attachments[zero]
+msgid "Attachments"
+msgstr ""
+
+#: compose-attachments[one]
+msgid "{{ n }} attachment"
+msgstr ""
+
+#: compose-attachments[two]
+msgctxt "compose-attachments[two]"
+msgid "{{ n }} attachments"
+msgstr ""
+
+#: compose-attachments[few]
+msgctxt "compose-attachments[few]"
+msgid "{{ n }} attachments"
+msgstr ""
+
+#: compose-attachments[many]
+msgctxt "compose-attachments[many]"
+msgid "{{ n }} attachments"
+msgstr ""
+
+#: compose-attachments[other]
+msgctxt "compose-attachments[other]"
+msgid "{{ n }} attachments"
+msgstr ""
+
 #: compose-subject
 #, fuzzy
 msgctxt "compose-subject"
 msgid "Subject"
 msgstr "Sujet"
+
+#: compose-draft-save
+msgid "Save to Local Drafts"
+msgstr ""
 
 #: compose-discard-message
 msgid "Discard email?"
@@ -537,6 +587,24 @@ msgstr ""
 
 #: compose-send-message-failed
 msgid "Sending email failed"
+msgstr ""
+
+#: composer-attachment-large
+msgid "Attachment too large"
+msgstr ""
+
+#: composer-attachments-large
+msgid "Attachments too large"
+msgstr ""
+
+#: compose-attchment-size-exceeded
+msgid "The selected attachment is too large to send with this message."
+msgstr ""
+
+#: compose-attchments-size-exceeded
+msgid ""
+"The selected attachments are too large to send with this message. Try "
+"selecting fewer files."
 msgstr ""
 
 #: dialog-button-ok
@@ -583,6 +651,10 @@ msgstr "Supprimer"
 #: message-edit-delete-confirm
 msgid "Delete email message?"
 msgstr "Supprimer un message ?"
+
+#: message-send-attachment-disabled-confirm
+msgid "Attachments can not be forwarded."
+msgstr ""
 
 #: message-multiedit-header
 msgctxt "message-multiedit-header"
@@ -741,6 +813,14 @@ msgstr ""
 msgid "Select folder"
 msgstr "Choisir un dossier"
 
+#: message-contact-menu-create
+msgid "Save new contact"
+msgstr ""
+
+#: message-contact-menu-add-existing
+msgid "Add to existing contact"
+msgstr ""
+
 #: message-contact-menu-view
 msgid "View contact"
 msgstr "Voir le contact"
@@ -749,18 +829,33 @@ msgstr "Voir le contact"
 msgid "Reply"
 msgstr "Répondre"
 
+#: message-contact-menu-new
+msgid "Send new mail"
+msgstr ""
+
 #: folder-list-header
 msgid "Folders"
 msgstr "Dossiers"
 
+#. # L10n note: account-last-synced-label is found on the folder list card,
+#. # accessible from the message-list card by clicking the icon in the upper left
+#. # of the card.  The label is displayed at the bottom of the folder list and is
+#. # right aligned.  There is currently 1 button to the left of the label and soon
+#. # there will be two, so it is desirable to use as short a translation as
+#. # possible.  To the right of the label, a (short) relative timestamp is
+#. # displayed.
 #: account-last-synced-label
 msgid "Last sync: "
 msgstr ""
 
+#. # L10n note: This string is displayed to the right of account-last-synced-label
+#. # if no folder has ever been synchronized.  Otherwise the space occupied by this
+#. # string will be a (short) relative timestamp.
 #: account-never-synced
 msgid "Never"
 msgstr ""
 
+#. # LOCALIZATION NOTE: do not translate {name}
 #: reply-quoting-wrote
 msgid "{name} wrote"
 msgstr "{name} a écrit"
@@ -836,6 +931,10 @@ msgstr ""
 
 #: folder-archives
 msgid "Archives"
+msgstr ""
+
+#: folder-localdrafts
+msgid "Local Drafts"
 msgstr ""
 
 #: toaster-undo
@@ -1050,6 +1149,42 @@ msgstr "Effacer le texte"
 #: confirm-dialog-title
 msgid "Confirmation"
 msgstr ""
+
+#. # new-emails refers to the text shown on a notification that users
+#. # get when they receive new, unread email. The ui component that utilizes
+#. # this lives in apps/email/js/message_list_topbar.js.
+#: new-emails
+#, fuzzy
+msgctxt "new-emails"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: new-emails[one]
+msgid "1 New Email"
+msgstr ""
+
+#: new-emails[two]
+msgctxt "new-emails[two]"
+msgid "{{ n }} New Emails"
+msgstr ""
+
+#: new-emails[few]
+msgctxt "new-emails[few]"
+msgid "{{ n }} New Emails"
+msgstr ""
+
+#: new-emails[many]
+msgctxt "new-emails[many]"
+msgid "{{ n }} New Emails"
+msgstr ""
+
+#: new-emails[other]
+msgctxt "new-emails[other]"
+msgid "{{ n }} New Emails"
+msgstr ""
+
+#~ msgid "Please wait while your account is set up"
+#~ msgstr "Veuillez patienter pendant la configuration de votre compte"
 
 #~ msgid "New mail account setup"
 #~ msgstr "Configuration d’un nouveau compte message"

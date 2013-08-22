@@ -1,9 +1,9 @@
-#. extracted from build/locales/en-US/apps/communications/dialer/dialer.properties, ../gaia-l10n-transifex/ar/apps/communications/dialer/dialer.properties
+#. extracted from ./apps/communications/dialer/dialer.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-04 19:11+0200\n"
+"POT-Creation-Date: 2013-08-22 13:57+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,7 +97,8 @@ msgid "Delete"
 msgstr "حذف"
 
 #: deselectAll
-msgid "Deselect all"
+#, fuzzy
+msgid "Deselect All"
 msgstr "إلغاء اختيار الكل"
 
 #: edit-selected
@@ -169,6 +170,10 @@ msgstr "لم يتم تسجيل أي مكالمة"
 #: no-logs-msg-2
 msgid "Start communicating now"
 msgstr "بدء التواصل الآن"
+
+#: no-logs-msg-3
+msgid "No missed calls"
+msgstr ""
 
 #: reply
 msgid "Reply"
@@ -378,6 +383,10 @@ msgstr ""
 msgid "Erasure was successful"
 msgstr ""
 
+#: smServiceInterrogated
+msgid "Request was successful"
+msgstr ""
+
 #: smServiceNotProvisioned
 msgid "Service not provisioned"
 msgstr ""
@@ -406,6 +415,22 @@ msgstr ""
 msgid "Service was enabled for:"
 msgstr ""
 
+#: smPinChanged
+msgid "PIN successfully changed"
+msgstr ""
+
+#: smPinUnblocked
+msgid "PIN successfully unblocked"
+msgstr ""
+
+#: smPin2Changed
+msgid "PIN2 successfully changed"
+msgstr ""
+
+#: smPin2Unblocked
+msgid "PIN2 successfully unblocked"
+msgstr ""
+
 #. # MMI Error message
 #: emMmiError
 msgid "Connection problem or invalid MMI code"
@@ -431,12 +456,8 @@ msgstr ""
 msgid "The PUK you typed is not correct"
 msgstr ""
 
-#: emMmiErrorPinPukAttempts
-msgid "Attempts Remaining:"
-msgstr ""
-
 #: emMmiErrorBadPin
-msgid "The old PIN you typed is not correct"
+msgid "The old PIN you typed is not correct."
 msgstr ""
 
 #: emMmiErrorNeedPuk2
@@ -485,6 +506,40 @@ msgstr ""
 
 #: emMmiErrorStkCcSsSs
 msgid "SS request is modified to new SS request"
+msgstr ""
+
+#: emMmiErrorPinPukAttempts
+#, fuzzy
+msgctxt "emMmiErrorPinPukAttempts"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: emMmiErrorPinPukAttempts[one]
+msgid "Only {{ n }} retry left"
+msgstr ""
+
+#: emMmiErrorPinPukAttempts[two]
+msgctxt "emMmiErrorPinPukAttempts[two]"
+msgid "{{ n }} retries left"
+msgstr ""
+
+#: emMmiErrorPinPukAttempts[few]
+msgctxt "emMmiErrorPinPukAttempts[few]"
+msgid "{{ n }} retries left"
+msgstr ""
+
+#: emMmiErrorPinPukAttempts[many]
+msgctxt "emMmiErrorPinPukAttempts[many]"
+msgid "{{ n }} retries left"
+msgstr ""
+
+#: emMmiErrorPinPukAttempts[other]
+msgctxt "emMmiErrorPinPukAttempts[other]"
+msgid "{{ n }} retries left"
+msgstr ""
+
+#: emMmiErrorSimBlocked
+msgid "Maximum number of retries exceeded. SIM blocked"
 msgstr ""
 
 #. # RIL errno

@@ -3,17 +3,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-03 17:13+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2013-08-02 12:33+0100\n"
+"PO-Revision-Date: 2013-07-05 14:18+0000\n"
+"Last-Translator: haryati <haryati.salehin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ms\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
+"X-POOTLE-MTIME: 1373033928.000000\n"
 
 #: setup-app-name-header
 msgid "Mail"
@@ -62,12 +64,12 @@ msgstr ""
 #: setup-info-password.placeholder
 msgctxt "setup-info-password.placeholder"
 msgid "Password"
-msgstr ""
+msgstr "Kata laluan"
 
 #: setup-info-next
 msgctxt "setup-info-next"
 msgid "Next"
-msgstr ""
+msgstr "Seterusnya"
 
 #: setup-progress-wait
 msgid "Setting up account"
@@ -79,11 +81,11 @@ msgstr ""
 
 #: setup-completed-label
 msgid "All done!"
-msgstr ""
+msgstr "Semua selesai!"
 
 #: setup-add-another-account
 msgid "Add another account"
-msgstr ""
+msgstr "Tambah akaun lain"
 
 #: setup-show-mail
 msgid "Continue to Mail"
@@ -100,8 +102,9 @@ msgstr ""
 #. # tell them apart either.  Also, if the user made a typo, they could have made
 #. # it in either place.
 #: setup-error-bad-user-or-pass2
+#, fuzzy
 msgid "Invalid username or password. Check for typos."
-msgstr ""
+msgstr "Nama pengguna atau kata laluan tidak sah. Periksa kesilapan ejaan."
 
 #. # The error for a user having the correct username and password, but the mail
 #. # server explicitly indicates they don't have permission to talk to the mail
@@ -110,7 +113,7 @@ msgstr ""
 #. # domain have their own error code: setup-error-imap-disabled.
 #: setup-error-not-authorized
 msgid "The server said you're not authorized to create an account"
-msgstr ""
+msgstr "Menurut server, anda tidak mempunyai kebenaran untuk membuat akaun"
 
 #. # The fallback error; if we don't have a better error, we report this.
 #: setup-error-unknown2
@@ -118,6 +121,8 @@ msgid ""
 "An unknown error occurred. Check your network connection or try the manual "
 "configuration option."
 msgstr ""
+"Kesilapan yang tidak diketahui telah berlaku, sila periksa sambungan talian "
+"anda atau cuba pilih konfigurasi manual."
 
 #. # The error for Gmail accounts where 2-factor authentication (where you receive
 #. # a text message on your phone or run a special app) is enabled, and so the
@@ -217,7 +222,7 @@ msgstr ""
 #: setup-manual-next
 msgctxt "setup-manual-next"
 msgid "Next"
-msgstr ""
+msgstr "Seterusnya"
 
 #: setup-manual-socket
 msgid "Socket Type"
@@ -418,9 +423,10 @@ msgid "Username"
 msgstr ""
 
 #: settings-password
+#, fuzzy
 msgctxt "settings-password"
 msgid "Password"
-msgstr ""
+msgstr "Kata laluan"
 
 #: settings-save
 msgid "Save"
@@ -469,14 +475,16 @@ msgid "Accounts"
 msgstr ""
 
 #: envelope-from
+#, fuzzy
 msgctxt "envelope-from"
 msgid "From"
-msgstr ""
+msgstr "Daripada"
 
 #: envelope-to
+#, fuzzy
 msgctxt "envelope-to"
 msgid "To"
-msgstr ""
+msgstr "Kepada"
 
 #: envelope-cc
 msgctxt "envelope-cc"
@@ -495,14 +503,19 @@ msgstr ""
 msgid "Compose message"
 msgstr ""
 
+#: compose-header-short
+msgid "Compose"
+msgstr ""
+
 #: compose-send
 msgid "Send"
 msgstr ""
 
 #: compose-to
+#, fuzzy
 msgctxt "compose-to"
 msgid "To"
-msgstr ""
+msgstr "Kepada"
 
 #: compose-cc
 msgid "cc"
@@ -546,9 +559,10 @@ msgid "{{ n }} attachments"
 msgstr ""
 
 #: compose-subject
+#, fuzzy
 msgctxt "compose-subject"
 msgid "Subject"
-msgstr ""
+msgstr "Subjek"
 
 #: compose-draft-save
 msgid "Save to Local Drafts"
@@ -743,19 +757,22 @@ msgid "Delete {{ n }} email messages?"
 msgstr ""
 
 #: message-search-from
+#, fuzzy
 msgctxt "message-search-from"
 msgid "From"
-msgstr ""
+msgstr "Daripada"
 
 #: message-search-to
+#, fuzzy
 msgctxt "message-search-to"
 msgid "To"
-msgstr ""
+msgstr "Kepada"
 
 #: message-search-subject
+#, fuzzy
 msgctxt "message-search-subject"
 msgid "Subject"
-msgstr ""
+msgstr "Subjek"
 
 #: message-search-body
 msgid "Body"
@@ -817,10 +834,20 @@ msgstr ""
 msgid "Folders"
 msgstr ""
 
+#. # L10n note: account-last-synced-label is found on the folder list card,
+#. # accessible from the message-list card by clicking the icon in the upper left
+#. # of the card.  The label is displayed at the bottom of the folder list and is
+#. # right aligned.  There is currently 1 button to the left of the label and soon
+#. # there will be two, so it is desirable to use as short a translation as
+#. # possible.  To the right of the label, a (short) relative timestamp is
+#. # displayed.
 #: account-last-synced-label
 msgid "Last sync: "
 msgstr ""
 
+#. # L10n note: This string is displayed to the right of account-last-synced-label
+#. # if no folder has ever been synchronized.  Otherwise the space occupied by this
+#. # string will be a (short) relative timestamp.
 #: account-never-synced
 msgid "Never"
 msgstr ""
@@ -828,11 +855,11 @@ msgstr ""
 #. # LOCALIZATION NOTE: do not translate {name}
 #: reply-quoting-wrote
 msgid "{name} wrote"
-msgstr ""
+msgstr "{name} menulis"
 
 #: forward-original-message
 msgid "Original message"
-msgstr ""
+msgstr "Mesej asal"
 
 #. # L10n note: These are the labels we use when displaying the envelope info for a
 #. # message that is forwarded inline.  While automatic recovery of this
@@ -842,26 +869,26 @@ msgstr ""
 #: forward-header-subject
 msgctxt "forward-header-subject"
 msgid "Subject"
-msgstr ""
+msgstr "Subjek"
 
 #: forward-header-date
 msgid "Date"
-msgstr ""
+msgstr "Tarikh"
 
 #: forward-header-from
 msgctxt "forward-header-from"
 msgid "From"
-msgstr ""
+msgstr "Daripada"
 
 #. # This really wants to have the dash in it for consistency with Thunderbird
 #: forward-header-reply-to
 msgid "Reply-To"
-msgstr ""
+msgstr "Balasan Kepada"
 
 #: forward-header-to
 msgctxt "forward-header-to"
 msgid "To"
-msgstr ""
+msgstr "Kepada"
 
 #: forward-header-cc
 msgctxt "forward-header-cc"

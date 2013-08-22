@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
-"PO-Revision-Date: 2013-02-09 19:22+0000\n"
-"Last-Translator: salahuddin <salahuddinsbr@gmail.com>\n"
+"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"PO-Revision-Date: 2013-06-26 05:51+0000\n"
+"Last-Translator: Huda Sarfraz <huda.sarfraz@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ur\n"
 "MIME-Version: 1.0\n"
@@ -14,7 +14,7 @@ msgstr ""
 "X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1360437747.0\n"
+"X-POOTLE-MTIME: 1372225909.000000\n"
 
 #: add
 msgid "Add"
@@ -105,7 +105,7 @@ msgstr "رابطے لوڈ ہو رہا ہے ..."
 #. # a number from your call list to a contact, and your contacts list is empty.
 #: noContactsActivity
 msgid "Cannot add to contact as your contact list is empty"
-msgstr ""
+msgstr "رابطہ فرد میں نہیں ڈال سکتا کیونکہ آپ کی رابطہ فہرست خالی ہے"
 
 #. # Contact fields
 #: noName
@@ -179,7 +179,7 @@ msgstr "سالگرہ"
 #. # see http://pubs.opengroup.org/onlinepubs/007908799/xsh/strftime.html
 #: birthdayDateFormat
 msgid "%B %e"
-msgstr ""
+msgstr "%B %e"
 
 #. # Contact action buttons
 #: addPhoto
@@ -331,7 +331,7 @@ msgstr "کوئی رابطہ موجود نہیں"
 
 #: importContactsTitle
 msgid "Import Contacts"
-msgstr ""
+msgstr "رابطہ افراد درآمد کریں"
 
 #. # SIM import
 #: simContacts-import
@@ -351,6 +351,8 @@ msgid "Could not import contacts from SIM"
 msgstr "سم سے رابطے درآمد نہیں کر سکا"
 
 #: simContacts-imported3
+#, fuzzy
+msgctxt "simContacts-imported3"
 msgid "{[ plural(n) ]}"
 msgstr "{[(ن) کے تعدد]}"
 
@@ -359,8 +361,9 @@ msgid "No contacts detected on SIM to import"
 msgstr "سم پر کوئی بھی کھوج نہیں ملی جسسے رابطہ برآمد  جائے "
 
 #: simContacts-imported3[one]
+msgctxt "simContacts-imported3[one]"
 msgid "Imported one contact"
-msgstr "ایک درآمد شدہ رابطہ کریں"
+msgstr "ایک رابطہ فرد درآمد کیا"
 
 #: simContacts-imported3[two]
 msgctxt "simContacts-imported3[two]"
@@ -385,6 +388,66 @@ msgstr "{{n}}درآمد شدہرابطہ افراد"
 #: noSimMsg
 msgid "To import contacts insert or unlock your SIM card"
 msgstr "رابطے درآمد کریں یا اپنے کے سم کارڈ داخل کریں "
+
+#. # SD Card import
+#: sdContacts-import
+msgid "Import contacts from SD card"
+msgstr "SD کارڈ سے رابطہ افراد درآمد کریں"
+
+#: sdContacts-importing
+msgid "Importing contacts from SD card…"
+msgstr "SD کارڈ سے رابطہ افراد درآمد کر رہا ہے…"
+
+#: sdContacts-reading
+msgid "Reading from SD card…"
+msgstr "SD کارڈ سے پرھ رہا ہے…"
+
+#: sdContacts-error
+msgid "Could not import contacts from SD card"
+msgstr "SD کارڈ سے رابطہ افراد درآمد نہیں کر سکا"
+
+#: sdContacts-imported3
+#, fuzzy
+msgctxt "sdContacts-imported3"
+msgid "{[ plural(n) ]}"
+msgstr "{[(ن) کے تعدد]}"
+
+#: sdContacts-imported3[zero]
+msgid "No contacts detected on SD card to import"
+msgstr "SD کارڈ پر سے درآمد کرنے کے لیے کوئی رابطہ افراد نہیں"
+
+#: sdContacts-imported3[one]
+msgctxt "sdContacts-imported3[one]"
+msgid "Imported one contact"
+msgstr "ایک رابطہ کریں درآمد کیا"
+
+#: sdContacts-imported3[two]
+#, fuzzy
+msgctxt "sdContacts-imported3[two]"
+msgid "Imported {{n}} contacts"
+msgstr "{{n}}درآمد شدہرابطہ افراد"
+
+#: sdContacts-imported3[few]
+#, fuzzy
+msgctxt "sdContacts-imported3[few]"
+msgid "Imported {{n}} contacts"
+msgstr "{{n}}درآمد شدہرابطہ افراد"
+
+#: sdContacts-imported3[many]
+#, fuzzy
+msgctxt "sdContacts-imported3[many]"
+msgid "Imported {{n}} contacts"
+msgstr "{{n}}درآمد شدہرابطہ افراد"
+
+#: sdContacts-imported3[other]
+#, fuzzy
+msgctxt "sdContacts-imported3[other]"
+msgid "Imported {{n}} contacts"
+msgstr "{{n}}درآمد شدہرابطہ افراد"
+
+#: noSdMsg
+msgid "To import contacts insert a SD card"
+msgstr "رابطہ افراد درآمد کرنے کے لیے کوئی SD لگائیں"
 
 #: genericProgress
 msgid "{{current}}/{{total}}"
@@ -489,14 +552,18 @@ msgstr "آخری نام کی طرف سے آرڈر"
 msgid "SIM card"
 msgstr ""
 
+#: importSd
+msgid "SD card"
+msgstr ""
+
 #: importGmail
 #, fuzzy
 msgid "Gmail"
 msgstr "ای میل"
 
-#: importLive
-msgid "Windows Live"
-msgstr ""
+#: importOutlook
+msgid "Outlook"
+msgstr "Outlook"
 
 #: fbUpdateFriends
 msgid "Update imported friends"

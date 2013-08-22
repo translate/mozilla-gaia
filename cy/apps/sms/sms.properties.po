@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"POT-Creation-Date: 2013-08-22 13:57+0100\n"
 "PO-Revision-Date: 2013-06-18 12:58+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,6 +63,8 @@ msgstr "{{name}} (+{{n}})"
 
 #. # Edit Mode
 #: edit
+#, fuzzy
+msgctxt "edit"
 msgid "Edit"
 msgstr "Golygu"
 
@@ -150,8 +152,9 @@ msgctxt "message"
 msgid "Message"
 msgstr "Neges"
 
-#: composeMessage.placeholder
-msgctxt "composeMessage.placeholder"
+#: composeMessage.dataset.placeholder
+#, fuzzy
+msgctxt "composeMessage.dataset.placeholder"
 msgid "Message"
 msgstr "Neges"
 
@@ -177,6 +180,11 @@ msgstr ""
 
 #: newMessage
 msgid "New message"
+msgstr "Neges newydd"
+
+#: sendMessage
+#, fuzzy
+msgid "Send message"
 msgstr "Neges newydd"
 
 #: recipient
@@ -208,17 +216,54 @@ msgctxt "recipient[other]"
 msgid "{{n}} recipients"
 msgstr "{{n}} derbynnydd"
 
-#: recipientRemoval
-msgid "Do you want to remove {{recipient}} from the recipients list?'"
-msgstr "Hoffech chi dynnu {{recipient}} o'r rhestr derbynwyr?'"
-
 #: attachmentSize
 msgid "{{n}} kB"
+msgstr "{{n}} kB"
+
+#: attachmentSizeMB
+#, fuzzy
+msgid "{{n}} MB"
 msgstr "{{n}} kB"
 
 #: attachmentOpenError
 msgid "There is no application available to open this file type."
 msgstr "Nid oes rhaglen ar gael i agor ffeil o'r math yma."
+
+#. # Dialog to disambiguate in a new message
+#: remove
+msgid "Remove"
+msgstr ""
+
+#. # Group participants
+#: participant
+#, fuzzy
+msgctxt "participant"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: participant[one]
+msgid "{{n}} participant"
+msgstr ""
+
+#: participant[two]
+msgctxt "participant[two]"
+msgid "{{n}} participants"
+msgstr ""
+
+#: participant[few]
+msgctxt "participant[few]"
+msgid "{{n}} participants"
+msgstr ""
+
+#: participant[many]
+msgctxt "participant[many]"
+msgid "{{n}} participants"
+msgstr ""
+
+#: participant[other]
+msgctxt "participant[other]"
+msgid "{{n}} participants"
+msgstr ""
 
 #. # Search functionality
 #: search
@@ -271,6 +316,20 @@ msgctxt "sendGeneralErrorBtnOk"
 msgid "OK"
 msgstr "Iawn"
 
+#: sendNoSimCardTitle
+msgid "Sim card error"
+msgstr ""
+
+#: sendNoSimCardBody
+msgid "No SIM card."
+msgstr ""
+
+#: sendNoSimCardBtnOk
+#, fuzzy
+msgctxt "sendNoSimCardBtnOk"
+msgid "OK"
+msgstr "Iawn"
+
 #: sendAirplaneModeTitle
 msgid "Airplane mode activated"
 msgstr "Gweithredu'r modd awyren"
@@ -312,6 +371,26 @@ msgstr "sain"
 msgid "video"
 msgstr "fideo"
 
+#: unsent-message-title
+msgid "Unsent Message"
+msgstr ""
+
+#: unsent-message-description
+msgid ""
+"Your previous message was not sent. Do you want to edit the unsent message "
+"or discard it and continue?"
+msgstr ""
+
+#: unsent-message-option-edit
+#, fuzzy
+msgctxt "unsent-message-option-edit"
+msgid "Edit"
+msgstr "Golygu"
+
+#: unsent-message-option-discard
+msgid "Discard"
+msgstr ""
+
 #. # Labels for contact fields
 #: mobile
 msgid "Mobile"
@@ -345,6 +424,10 @@ msgstr "Ffacs arall"
 msgid "Another"
 msgstr "Arall"
 
+#: Other
+msgid "Other"
+msgstr ""
+
 #. # Date and time
 #: today
 msgid "today"
@@ -371,6 +454,10 @@ msgstr "Creu cysylltiad newydd"
 msgid "Call"
 msgstr "Galw"
 
+#: sendEmail
+msgid "Send email"
+msgstr ""
+
 #. # MMS message
 #: mms-message
 msgid "MMS message"
@@ -395,6 +482,29 @@ msgstr "llwytho i lawr"
 #: downloading
 msgid "downloading"
 msgstr "llwytho i lawr"
+
+#: unnamed-attachment
+msgid "untitled"
+msgstr ""
+
+#: file-too-large
+msgid "The file you have selected is too large"
+msgstr ""
+
+#: resize-image
+msgid "Resizing the attached image"
+msgstr ""
+
+#: no-attachment-text
+msgid "There is a problem with the attached file and it cannot be downloaded."
+msgstr ""
+
+#~ msgctxt "composeMessage.placeholder"
+#~ msgid "Message"
+#~ msgstr "Neges"
+
+#~ msgid "Do you want to remove {{recipient}} from the recipients list?'"
+#~ msgstr "Hoffech chi dynnu {{recipient}} o'r rhestr derbynwyr?'"
 
 #~ msgid "{{name}} and no others"
 #~ msgstr "{{name}} a neb arall"

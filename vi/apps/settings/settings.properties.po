@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
+"POT-Creation-Date: 2013-08-22 13:57+0100\n"
 "PO-Revision-Date: 2013-03-02 11:28+0000\n"
 "Last-Translator: Hakuna <jackychun1393@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,9 +102,9 @@ msgstr "Mạng"
 msgid "Airplane mode"
 msgstr "Chế độ Máy bay"
 
-#: gps
-msgid "GPS"
-msgstr "GPS"
+#: geolocation
+msgid "Geolocation"
+msgstr ""
 
 #. # Connectivity :: Wi-Fi
 #: wifi
@@ -206,6 +206,8 @@ msgid "Security"
 msgstr "Mã hóa"
 
 #: securityNone
+#, fuzzy
+msgctxt "securityNone"
 msgid "None"
 msgstr "Không có"
 
@@ -258,6 +260,8 @@ msgid "Forget network"
 msgstr "Xóa mạng"
 
 #: authentication
+#, fuzzy
+msgctxt "authentication"
 msgid "Authentication"
 msgstr "Xác thực"
 
@@ -286,6 +290,12 @@ msgstr "Thông báo với tôi khi có thể kết nối mạng"
 msgid "MAC address"
 msgstr "Địa chỉ MAC"
 
+#: macUnavailable
+#, fuzzy
+msgctxt "macUnavailable"
+msgid "Not available"
+msgstr "Hết dung lượng trống"
+
 #: noNetworksFound
 msgid "No networks found"
 msgstr "Không tìm thấy mạng nào"
@@ -294,11 +304,7 @@ msgstr "Không tìm thấy mạng nào"
 msgid "No known networks"
 msgstr "Không có mạng quen nào"
 
-#. # Connectivity :: Wi-Fi :: WPS
-#: wps
-msgid "Wi-Fi protected setup"
-msgstr "Cài đặt bảo vệ Wi-Fi"
-
+#. # Connectivity :: Wi-Fi :: WPS (Wi-Fi Protected Setup)
 #: wpsMessage
 msgid "Connect with WPS"
 msgstr "Kết nối với WPS"
@@ -323,9 +329,9 @@ msgstr "Lỗi WPS"
 msgid "Another WPS PBC AP was found"
 msgstr "Tìm thấy một WPS PBC AP khác"
 
-#: wpsDescription
-msgid "Automatic wireless network configuration"
-msgstr "Thiết lập mạng không dây tự động"
+#: wpsDescription2
+msgid "Automatic Wi-Fi setup"
+msgstr ""
 
 #: wpsMethodSelection
 msgid "Select a WPS method:"
@@ -363,6 +369,18 @@ msgstr "Không thể hủy WPS"
 #: callSettings
 msgid "Call Settings"
 msgstr "Các thiết lập cuộc gọi"
+
+#: voiceMail
+msgid "Voicemail"
+msgstr ""
+
+#: voiceMail-number
+msgid "Voicemail Number"
+msgstr ""
+
+#: voiceMail-number-notSet
+msgid "Not set"
+msgstr ""
 
 #: callWaiting
 msgid "Call waiting"
@@ -427,6 +445,10 @@ msgstr "Tắt"
 
 #: callForwardingConfirmTitle
 msgid "Call forwarding confirmation message"
+msgstr ""
+
+#: callBroadcastService
+msgid "Cell broadcast service"
 msgstr ""
 
 #: confirmCallWaitingTitle
@@ -512,6 +534,8 @@ msgid "Network type"
 msgstr "Kiểu mạng"
 
 #: operator-networkType-auto
+#, fuzzy
+msgctxt "operator-networkType-auto"
 msgid "Automatic"
 msgstr "Tự động"
 
@@ -526,6 +550,12 @@ msgstr "Chỉ 3G"
 #: operator-autoSelect
 msgid "Automatic selection"
 msgstr "Tự lựa chọn"
+
+#: operator-networkSelect-auto
+#, fuzzy
+msgctxt "operator-networkSelect-auto"
+msgid "Automatic"
+msgstr "Tự động"
 
 #: operator-turnAutoSelectOff
 msgid "Turn automatic selection off to view available network operators."
@@ -558,9 +588,22 @@ msgstr "Theiest lập dữ liệu"
 msgid "A-GPS settings"
 msgstr "Thiết lập A-GPS"
 
-#: mmsSettings
-msgid "MMS settings"
-msgstr "Thiết lập MMS"
+#: messageSettings
+msgid "Message settings"
+msgstr ""
+
+#: apnSettings
+#, fuzzy
+msgid "APN settings"
+msgstr "Thiết lập A-GPS"
+
+#: text-message-confirmation
+msgid "Text message confirmation"
+msgstr ""
+
+#: mmsTitle
+msgid "Multimedia messaging (MMS)"
+msgstr ""
 
 #: mmsport
 msgid "MMS port"
@@ -573,6 +616,34 @@ msgstr "Proxy MMS"
 #: mmsc
 msgid "MMSC"
 msgstr "MMSC"
+
+#: auto-retrieve
+msgid "Auto retrieve"
+msgstr ""
+
+#: auto-retrieve-details
+msgid "Automatically retrieve messages"
+msgstr ""
+
+#: manual-retrieve
+msgid "Off"
+msgstr ""
+
+#: auto-roaming-retrieve
+msgid "On with roaming"
+msgstr ""
+
+#: auto-no-roaming-retrieve
+msgid "On without roaming"
+msgstr ""
+
+#: delivery-reports
+msgid "Delivery reports"
+msgstr ""
+
+#: delivery-reports-details
+msgid "Request notification of delivery for each text message sent"
+msgstr ""
 
 #: autoConfigure
 msgid "Auto-configure"
@@ -589,6 +660,34 @@ msgstr "Cổng proxy HTTP"
 #: custom
 msgid "(custom settings)"
 msgstr "(thiết lập thủ công)"
+
+#: apn-authType
+#, fuzzy
+msgctxt "apn-authType"
+msgid "Authentication"
+msgstr "Xác thực"
+
+#: apn-authType-notDefined
+msgid "Not defined"
+msgstr ""
+
+#: apn-authType-none
+#, fuzzy
+msgctxt "apn-authType-none"
+msgid "None"
+msgstr "Không có"
+
+#: apn-authType-pap
+msgid "PAP"
+msgstr ""
+
+#: apn-authType-chap
+msgid "CHAP"
+msgstr ""
+
+#: apn-authType-papOrChap
+msgid "PAP or CHAP"
+msgstr ""
 
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
@@ -611,6 +710,30 @@ msgid ""
 msgstr ""
 "Phụ phí có thể phát sinh với dữ liệu tùy theo thỏa thuận dịch vụ khi bạn kết "
 "nối trong vùng roaming."
+
+#: state-unknown
+msgid "Unknown state"
+msgstr ""
+
+#: state-available
+msgid "Available"
+msgstr ""
+
+#: state-connected
+#, fuzzy
+msgctxt "state-connected"
+msgid "Connected"
+msgstr "Đã kết nối"
+
+#: state-current
+#, fuzzy
+msgctxt "state-current"
+msgid "Connected"
+msgstr "Đã kết nối"
+
+#: state-forbidden
+msgid "Forbidden"
+msgstr ""
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
@@ -1098,6 +1221,10 @@ msgstr "Rung"
 msgid "Click sound"
 msgstr "Tiếng động khi nhấn"
 
+#: autoCorrect
+msgid "Auto correction"
+msgstr ""
+
 #: wordSuggestion
 msgid "Word suggestion"
 msgstr "Gợi ý khi gõ"
@@ -1174,8 +1301,8 @@ msgstr "Pinyin"
 msgid "Polish"
 msgstr ""
 
-#: serbian-latin
-msgid "Serbian (Latin)"
+#: serbian
+msgid "Serbian"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -1294,7 +1421,8 @@ msgid "Create"
 msgstr "Tạo"
 
 #: create-passcode
-msgid "Create a passcode"
+#, fuzzy
+msgid "Create a Passcode"
 msgstr "Tạo mã truyền"
 
 #: enter-passcode
@@ -1322,7 +1450,8 @@ msgid "Passcode"
 msgstr "Mã truyền"
 
 #: confirm-passcode
-msgid "Confirm passcode"
+#, fuzzy
+msgid "Confirm Passcode"
 msgstr "Xác nhận mã truyền"
 
 #: immediately
@@ -1432,36 +1561,78 @@ msgstr "Mã PIN mới"
 msgid "The PIN was incorrect."
 msgstr "Mã PIN không đúng."
 
-#: pinAttemptMsg2
+#: inputCodeRetriesLeft
 #, fuzzy
-msgctxt "pinAttemptMsg2"
+msgctxt "inputCodeRetriesLeft"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: pinAttemptMsg2[one]
+#: inputCodeRetriesLeft[one]
+msgid "last try."
+msgstr ""
+
+#: inputCodeRetriesLeft[two]
 #, fuzzy
-msgid "Last chance."
-msgstr "Lần thử cuối cùng."
-
-#: pinAttemptMsg2[two]
-msgctxt "pinAttemptMsg2[two]"
+msgctxt "inputCodeRetriesLeft[two]"
 msgid "{{n}} tries left."
 msgstr "Còn {{n}} lần thử."
 
-#: pinAttemptMsg2[few]
-msgctxt "pinAttemptMsg2[few]"
+#: inputCodeRetriesLeft[few]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[few]"
 msgid "{{n}} tries left."
 msgstr "Còn {{n}} lần thử."
 
-#: pinAttemptMsg2[many]
-msgctxt "pinAttemptMsg2[many]"
+#: inputCodeRetriesLeft[many]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[many]"
 msgid "{{n}} tries left."
 msgstr "Còn {{n}} lần thử."
 
-#: pinAttemptMsg2[other]
-msgctxt "pinAttemptMsg2[other]"
+#: inputCodeRetriesLeft[other]
+#, fuzzy
+msgctxt "inputCodeRetriesLeft[other]"
 msgid "{{n}} tries left."
 msgstr "Còn {{n}} lần thử."
+
+#: pinAttemptMsg3
+#, fuzzy
+msgctxt "pinAttemptMsg3"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: pinAttemptMsg3[one]
+msgid ""
+"You have one try left to enter the correct code before locking the SIM card."
+msgstr ""
+
+#: pinAttemptMsg3[two]
+msgctxt "pinAttemptMsg3[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+
+#: pinAttemptMsg3[few]
+msgctxt "pinAttemptMsg3[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+
+#: pinAttemptMsg3[many]
+msgctxt "pinAttemptMsg3[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+
+#: pinAttemptMsg3[other]
+msgctxt "pinAttemptMsg3[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
 
 #: pinLastChanceMsg
 msgid ""
@@ -1488,7 +1659,62 @@ msgstr ""
 msgid "The PUK code is incorrect."
 msgstr "Mã PUK không đúng."
 
-#: pukAttemptMsg2
+#: pukAttemptMsg3
+#, fuzzy
+msgctxt "pukAttemptMsg3"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: pukAttemptMsg3[one]
+#, fuzzy
+msgid ""
+"You have one try left to enter the correct code before this SIM card will be "
+"permanently unusable. Refer to your SIM card documentation or contact your "
+"carrier for more information."
+msgstr ""
+"Bạn còn {{n}} lần thử để nhập mã chính xác trước khi thẻ SIM bị khóa vĩnh "
+"viễn. Xem tài liệu về thẻ SIM hoặc liên hệ với nhà mạng để biết thêm thông "
+"tin."
+
+#: pukAttemptMsg3[two]
+#, fuzzy
+msgctxt "pukAttemptMsg3[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Bạn còn {{n}} lần thử để nhập mã chính xác trước khi thẻ SIM bị khóa vĩnh "
+"viễn. Xem tài liệu về thẻ SIM hoặc liên hệ với nhà mạng để biết thêm thông "
+"tin."
+
+#: pukAttemptMsg3[few]
+#, fuzzy
+msgctxt "pukAttemptMsg3[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Bạn còn {{n}} lần thử để nhập mã chính xác trước khi thẻ SIM bị khóa vĩnh "
+"viễn. Xem tài liệu về thẻ SIM hoặc liên hệ với nhà mạng để biết thêm thông "
+"tin."
+
+#: pukAttemptMsg3[many]
+#, fuzzy
+msgctxt "pukAttemptMsg3[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Bạn còn {{n}} lần thử để nhập mã chính xác trước khi thẻ SIM bị khóa vĩnh "
+"viễn. Xem tài liệu về thẻ SIM hoặc liên hệ với nhà mạng để biết thêm thông "
+"tin."
+
+#: pukAttemptMsg3[other]
+#, fuzzy
+msgctxt "pukAttemptMsg3[other]"
 msgid ""
 "You have {{n}} tries left to enter the correct code before this SIM card "
 "will be permanently unusable. Refer to your SIM card documentation or "
@@ -1563,15 +1789,220 @@ msgstr ""
 "nhập."
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#. # Storage
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#: storage
+msgid "Storage"
+msgstr "Lưu trữ"
+
+#: enableUSBStorage
+msgid "Enable USB storage"
+msgstr ""
+
+#. # Storage :: Application storage
+#: deviceStorage
+msgid "Device storage"
+msgstr "Kho lưu trữ thiết bị"
+
+#: usbMassStorage
+#, fuzzy
+msgid "USB mass storage"
+msgstr "Bộ nhớ USB"
+
+#: umsUnplugToDisable
+msgid "Unplug USB cable to disable"
+msgstr "Rút cáp USB để tắt"
+
+#: appStorage
+msgid "Application storage"
+msgstr "Kho lưu trữ ứng dụng"
+
+#: byteUnit-B
+msgid "B"
+msgstr "B"
+
+#: byteUnit-KB
+msgid "KB"
+msgstr "KB"
+
+#: byteUnit-MB
+msgid "MB"
+msgstr "MB"
+
+#: byteUnit-GB
+msgid "GB"
+msgstr "GB"
+
+#: byteUnit-TB
+msgid "TB"
+msgstr "TB"
+
+#: storageSize
+msgid "{{size}} {{unit}}"
+msgstr "{{size}} {{unit}}"
+
+#: availableSize
+msgid "{[ plural(size) ]}"
+msgstr "{[ plural(size) ]}"
+
+#: availableSize[zero]
+msgctxt "availableSize[zero]"
+msgid "{{size}} {{unit}} available"
+msgstr "{{size}} {{unit}} sẵn dùng"
+
+#: availableSize[one]
+msgctxt "availableSize[one]"
+msgid "{{size}} {{unit}} available"
+msgstr "{{size}} {{unit}} sẵn dùng"
+
+#: availableSize[two]
+msgctxt "availableSize[two]"
+msgid "{{size}} {{unit}} available"
+msgstr "{{size}} {{unit}} sẵn dùng"
+
+#: availableSize[few]
+msgctxt "availableSize[few]"
+msgid "{{size}} {{unit}} available"
+msgstr "{{size}} {{unit}} sẵn dùng"
+
+#: availableSize[many]
+msgctxt "availableSize[many]"
+msgid "{{size}} {{unit}} available"
+msgstr "{{size}} {{unit}} sẵn dùng"
+
+#: availableSize[other]
+msgctxt "availableSize[other]"
+msgid "{{size}} {{unit}} available"
+msgstr "{{size}} {{unit}} sẵn dùng"
+
+#: apps-total-space
+msgid "Total space"
+msgstr "Tổng dung lượng "
+
+#: apps-used-space
+msgid "Used"
+msgstr "Đã dùng"
+
+#: apps-free-space
+msgid "Left"
+msgstr "Còn lại"
+
+#: media-storage-details
+msgid ""
+"Photos, videos and music are stored on the SD card. See media storage for "
+"details."
+msgstr ""
+"Ảnh, videos và nhạc được lưu trữ trong thẻ nhớ. Xem phần Lưu trữ đa phương "
+"tiện để biết thêm chi tiết."
+
+#: ums-shared-volumes
+msgid "{{list}} shared"
+msgstr ""
+
+#. # Storage :: Media storage
+#: mediaStorage
+msgid "Media storage"
+msgstr "Kho lưu trữ phương tiện"
+
+#: internalStorage
+msgctxt "internalStorage"
+msgid "Internal Storage"
+msgstr ""
+
+#: storage-name-internal
+msgctxt "storage-name-internal"
+msgid "Internal Storage"
+msgstr ""
+
+#: storage-name-external-0
+msgid "SD Card Storage"
+msgstr ""
+
+#: storage-name-external-1
+msgid "SD Card Storage 2"
+msgstr ""
+
+#: short-storage-name-internal
+msgid "Internal"
+msgstr ""
+
+#: short-storage-name-external-0
+msgid "SD Card"
+msgstr ""
+
+#: short-storage-name-external-1
+msgid "SD Card 2"
+msgstr ""
+
+#: music-space
+msgid "Music"
+msgstr "Nhạc"
+
+#: pictures-space
+msgid "Pictures"
+msgstr "Hình"
+
+#: videos-space
+msgid "Movies"
+msgstr "Phim"
+
+#: left-space
+#, fuzzy
+msgctxt "left-space"
+msgid "Space left"
+msgstr "Dung lượng còn lại"
+
+#: free-space
+#, fuzzy
+msgctxt "free-space"
+msgid "Space left"
+msgstr "Dung lượng còn lại"
+
+#: size-not-available
+#, fuzzy
+msgctxt "size-not-available"
+msgid "Not available"
+msgstr "Hết dung lượng trống"
+
+#: no-storage
+msgid "No storage found"
+msgstr "Không tìm thấy thiết bị lưu trữ"
+
+#: advanced
+msgid "Advanced"
+msgstr "Nâng cao"
+
+#: turn-on-ums-confirm
+msgid ""
+"Turning on Enable USB storage allows another computer or device connected "
+"using USB to access files on this phone."
+msgstr ""
+
+#: default-media-location
+msgid "Default media location"
+msgstr ""
+
+#: default-media-location-msg
+msgid "Choose where photos, videos, music and downloads are stored by default."
+msgstr ""
+
+#: change-default-location-confirm
+msgid ""
+"Changing the default media storage volume will effect where photos, videos, "
+"downloads and other media will be saved to by default. Existing data will "
+"remain in its current location."
+msgstr ""
+
+#: share-using-usb
+msgid "Share using USB"
+msgstr ""
+
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Device
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #: device
 msgid "Device"
 msgstr "Thiết bị"
-
-#: storage
-msgid "Storage"
-msgstr "Lưu trữ"
 
 #: help
 msgctxt "help"
@@ -1594,6 +2025,11 @@ msgstr "ICCID:"
 #: deviceInfo-MSISDN
 msgid "Phone number"
 msgstr "Số điện thoại"
+
+#: gitInfo
+#, fuzzy
+msgid "Git commit info"
+msgstr "thông tin Git commit"
 
 #: developer
 msgid "Developer"
@@ -1678,11 +2114,6 @@ msgstr "Lần cập nhật cuối"
 #: more-info
 msgid "More Information"
 msgstr "Thông tin thêm"
-
-#: gitInfo
-#, fuzzy
-msgid "Git commit info"
-msgstr "thông tin Git commit"
 
 #: softwareUpdates
 msgid "Software updates"
@@ -1899,135 +2330,6 @@ msgstr "Lần sử dụng đầu tiên"
 msgid "No first time use app found"
 msgstr "Không tìm thấy lần sử dụng đầu tiên"
 
-#. # Device :: Device storage
-#: deviceStorage
-msgid "Device storage"
-msgstr "Kho lưu trữ thiết bị"
-
-#: usbMassStorage
-#, fuzzy
-msgid "USB mass storage"
-msgstr "Bộ nhớ USB"
-
-#: umsUnplugToDisable
-msgid "Unplug USB cable to disable"
-msgstr "Rút cáp USB để tắt"
-
-#: appStorage
-msgid "Application storage"
-msgstr "Kho lưu trữ ứng dụng"
-
-#: byteUnit-B
-msgid "B"
-msgstr "B"
-
-#: byteUnit-KB
-msgid "KB"
-msgstr "KB"
-
-#: byteUnit-MB
-msgid "MB"
-msgstr "MB"
-
-#: byteUnit-GB
-msgid "GB"
-msgstr "GB"
-
-#: byteUnit-TB
-msgid "TB"
-msgstr "TB"
-
-#: storageSize
-msgid "{{size}} {{unit}}"
-msgstr "{{size}} {{unit}}"
-
-#: availableSize
-msgid "{[ plural(size) ]}"
-msgstr "{[ plural(size) ]}"
-
-#: availableSize[zero]
-msgctxt "availableSize[zero]"
-msgid "{{size}} {{unit}} available"
-msgstr "{{size}} {{unit}} sẵn dùng"
-
-#: availableSize[one]
-msgctxt "availableSize[one]"
-msgid "{{size}} {{unit}} available"
-msgstr "{{size}} {{unit}} sẵn dùng"
-
-#: availableSize[two]
-msgctxt "availableSize[two]"
-msgid "{{size}} {{unit}} available"
-msgstr "{{size}} {{unit}} sẵn dùng"
-
-#: availableSize[few]
-msgctxt "availableSize[few]"
-msgid "{{size}} {{unit}} available"
-msgstr "{{size}} {{unit}} sẵn dùng"
-
-#: availableSize[many]
-msgctxt "availableSize[many]"
-msgid "{{size}} {{unit}} available"
-msgstr "{{size}} {{unit}} sẵn dùng"
-
-#: availableSize[other]
-msgctxt "availableSize[other]"
-msgid "{{size}} {{unit}} available"
-msgstr "{{size}} {{unit}} sẵn dùng"
-
-#: apps-total-space
-msgid "Total space"
-msgstr "Tổng dung lượng "
-
-#: apps-used-space
-msgid "Used"
-msgstr "Đã dùng"
-
-#: apps-free-space
-msgid "Left"
-msgstr "Còn lại"
-
-#: media-storage-details
-msgid ""
-"Photos, videos and music are stored on the SD card. See media storage for "
-"details."
-msgstr ""
-"Ảnh, videos và nhạc được lưu trữ trong thẻ nhớ. Xem phần Lưu trữ đa phương "
-"tiện để biết thêm chi tiết."
-
-#. # Device :: Media storage
-#: mediaStorage
-msgid "Media storage"
-msgstr "Kho lưu trữ phương tiện"
-
-#: music-space
-msgid "Music"
-msgstr "Nhạc"
-
-#: pictures-space
-msgid "Pictures"
-msgstr "Hình"
-
-#: videos-space
-msgid "Movies"
-msgstr "Phim"
-
-#: left-space
-msgid "Space left"
-msgstr "Dung lượng còn lại"
-
-#: size-not-available
-msgid "Not available"
-msgstr "Hết dung lượng trống"
-
-#: no-storage
-msgid "No storage found"
-msgstr "Không tìm thấy thiết bị lưu trữ"
-
-#: advanced
-msgid "Advanced"
-msgstr "Nâng cao"
-
 #. # Device :: Battery
 #: battery
 msgid "Battery"
@@ -2057,11 +2359,12 @@ msgstr "Chế độ tiết kiệm điện năng"
 msgid "{{level}}% battery left"
 msgstr "Còn lại {{level}}% pin"
 
-#: powerSave-expl
+#: powerSave-explanation
+#, fuzzy
 msgid ""
-"Turning on power save mode turns off the phone’s data, Bluetooth and GPS "
-"connections to extend battery life. You can still turn these services back "
-"on manually."
+"Turning on power save mode turns off the phone’s data, Bluetooth and "
+"Geolocation connections to extend battery life. You can still turn these "
+"services back on manually."
 msgstr ""
 "Việc bật chế độ tiết kiệm pin sẽ tắt dữ liệu, các kết nối Bluetooth và GPS "
 "của điện thoại để tăng thêm thời lượng pin. Bạn có thể bật lại các tiện ích "
@@ -2128,9 +2431,9 @@ msgstr "Luôn gửi một báo cáo"
 msgid "Never send a report"
 msgstr "Không bao giờ gửi báo cáo"
 
-#: askToSendReport
-msgid "Ask me when a crash occurs"
-msgstr "Luôn hỏi tôi khi có sự cố xảy ra"
+#: askToSendReport2
+msgid "Ask each time"
+msgstr ""
 
 #. # Device :: Improve Browser OS :: Crash Reports
 #. # LOCALIZATION NOTE (crash-reports-description-*): these strings are also included in system.properties
@@ -2207,14 +2510,6 @@ msgstr "Trợ giúp"
 msgid "Help menu"
 msgstr "Trình đơn Trợ giúp"
 
-#: operatorService-invalid-url
-msgid "Cannot access the URL"
-msgstr "Không thể mở URL"
-
-#: operatorService-confirmCall-defaultmessage
-msgid "Call {{number}}?"
-msgstr ""
-
 #: stkAppsNotAvailable
 msgid "SIM card applications not available."
 msgstr "Ứng dụng thẻ SIM không sẵn sàng"
@@ -2222,6 +2517,122 @@ msgstr "Ứng dụng thẻ SIM không sẵn sàng"
 #: simToolkit
 msgid "SIM toolkit"
 msgstr ""
+
+#. # Device :: SIM toolkit - NAI (Next Action Indicator)
+#: stkItemsNaiSetUpCall
+msgid "Set Up Call"
+msgstr ""
+
+#: stkItemsNaiSendSs
+msgid "Send SS"
+msgstr ""
+
+#: stkItemsNaiSendUssd
+msgid "Send USSD"
+msgstr ""
+
+#: stkItemsNaiSendSms
+msgid "Send SMS"
+msgstr ""
+
+#: stkItemsNaiSendDtmf
+msgid "Send DTMF"
+msgstr ""
+
+#: stkItemsNaiLaunchBrowser
+msgid "Launch Browser"
+msgstr ""
+
+#: stkItemsNaiPlayTone
+msgid "Play Tone"
+msgstr ""
+
+#: stkItemsNaiDisplayText
+msgid "Display Text"
+msgstr ""
+
+#: stkItemsNaiGetInkey
+msgid "Get Inkey"
+msgstr ""
+
+#: stkItemsNaiGetInput
+msgid "Get Input"
+msgstr ""
+
+#: stkItemsNaiSelectItem
+msgid "Select Item"
+msgstr ""
+
+#: stkItemsNaiSetUpMenu
+msgid "Set Up Menu"
+msgstr ""
+
+#: stkItemsNaiProvideLocalInfo
+msgid "Provide Local Info"
+msgstr ""
+
+#: stkItemsNaiSetIdleModeText
+msgid "Set Idle Mode Text"
+msgstr ""
+
+#: stkItemsNaiOpenChannel
+msgid "Open Channel"
+msgstr ""
+
+#: stkItemsNaiCloseChannel
+msgid "Close Channel"
+msgstr ""
+
+#: stkItemsNaiReceiveData
+msgid "Receive Data"
+msgstr ""
+
+#: stkItemsNaiSendData
+msgid "Send Data"
+msgstr ""
+
+#: stkItemsNaiGetChannelStatus
+msgid "Get Channel Status"
+msgstr ""
+
+#~ msgid "Wi-Fi protected setup"
+#~ msgstr "Cài đặt bảo vệ Wi-Fi"
+
+#~ msgid "Automatic wireless network configuration"
+#~ msgstr "Thiết lập mạng không dây tự động"
+
+#~ msgid "Cannot access the URL"
+#~ msgstr "Không thể mở URL"
+
+#~ msgid "GPS"
+#~ msgstr "GPS"
+
+#~ msgid "MMS settings"
+#~ msgstr "Thiết lập MMS"
+
+#, fuzzy
+#~ msgctxt "pinAttemptMsg2"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#, fuzzy
+#~ msgid "Last chance."
+#~ msgstr "Lần thử cuối cùng."
+
+#~ msgctxt "pinAttemptMsg2[few]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "Còn {{n}} lần thử."
+
+#~ msgctxt "pinAttemptMsg2[many]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "Còn {{n}} lần thử."
+
+#~ msgctxt "pinAttemptMsg2[other]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "Còn {{n}} lần thử."
+
+#~ msgid "Ask me when a crash occurs"
+#~ msgstr "Luôn hỏi tôi khi có sự cố xảy ra"
 
 #, fuzzy
 #~ msgctxt "gitInfo"

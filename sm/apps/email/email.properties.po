@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
-"PO-Revision-Date: 2012-11-28 20:30+0000\n"
+"POT-Creation-Date: 2013-08-02 12:33+0100\n"
+"PO-Revision-Date: 2013-07-21 08:31+0000\n"
 "Last-Translator: Chris <edresources@bickersc.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sm\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1354134607.0\n"
+"X-POOTLE-MTIME: 1374395466.000000\n"
 
 #: setup-app-name-header
 msgid "Mail"
@@ -34,7 +34,7 @@ msgstr ""
 #. # e-mail address, and password.
 #: setup-account-header3
 msgid "New account"
-msgstr ""
+msgstr "Account fou"
 
 #: setup-info-header
 msgid "Your login information"
@@ -48,21 +48,20 @@ msgstr "Lou fa'amatalaga saini-totonu"
 #. # it is currently unlabeled because of screen real estate concerns.
 #: setup-info-name.placeholder
 msgid "Your name"
-msgstr ""
+msgstr "Lau suafa"
 
 #. # The placeholder for the user's e-mail address that will be displayed in the
 #. # account setup screen input box for the e-mail address until they enter any
 #. # text in the box.  The value will be used to configure the e-mail account.
 #: setup-info-email.placeholder
 msgid "someone@example.com"
-msgstr ""
+msgstr "soosemea@tailo.com"
 
 #. # The placeholder for the user's password that will be displayed in the account
 #. # setup screen input box for the password until they enter any text in the box.
 #. # The value will be used to configure the e-mail account and saved for future
 #. # usage.
 #: setup-info-password.placeholder
-#, fuzzy
 msgctxt "setup-info-password.placeholder"
 msgid "Password"
 msgstr "'Upulilo"
@@ -182,6 +181,11 @@ msgstr ""
 msgid "The server \"{{server}}\" is offline for maintenance. Try again later."
 msgstr ""
 
+#. # The error when the user trying to register a duplicate account
+#: setup-error-account-already-exists
+msgid "This account is already configured."
+msgstr ""
+
 #: setup-manual-config2
 #, fuzzy
 msgctxt "setup-manual-config2"
@@ -238,7 +242,6 @@ msgid "Port Number"
 msgstr "Port Numera"
 
 #: setup-manual-username.placeholder
-#, fuzzy
 msgctxt "setup-manual-username.placeholder"
 msgid "Username"
 msgstr "Igoa-fai"
@@ -280,13 +283,11 @@ msgid "You must enable IMAP on your Gmail account "
 msgstr ""
 
 #: setup-gmail-imap-retry
-#, fuzzy
 msgctxt "setup-gmail-imap-retry"
 msgid "Retry"
 msgstr "Toe taumafai"
 
 #: settings-main-header
-#, fuzzy
 msgid "Mail Settings"
 msgstr "Fa'atonutonu o Imeli"
 
@@ -300,7 +301,6 @@ msgid "Accounts"
 msgstr "Accounts"
 
 #: settings-account-add
-#, fuzzy
 msgid "Add Account"
 msgstr "Fa'aopoopo account"
 
@@ -387,7 +387,7 @@ msgstr "Account itu'āiga"
 
 #: settings-account-credentials
 msgid "Credentials"
-msgstr ""
+msgstr "Credentials"
 
 #: settings-account-synchronize
 msgid "Synchronize"
@@ -415,7 +415,7 @@ msgstr "Igoa-talimalō"
 
 #: settings-port
 msgid "Port"
-msgstr ""
+msgstr "Port"
 
 #: settings-username
 msgctxt "settings-username"
@@ -500,6 +500,10 @@ msgstr "Faitau"
 msgid "Compose message"
 msgstr "Faitau fe'au"
 
+#: compose-header-short
+msgid "Compose"
+msgstr ""
+
 #: compose-send
 msgid "Send"
 msgstr "Lafo"
@@ -518,7 +522,6 @@ msgid "bcc"
 msgstr "bcc"
 
 #: compose-attachments
-#, fuzzy
 msgctxt "compose-attachments"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
@@ -576,21 +579,39 @@ msgstr "Lafoina imeli"
 msgid "Sending email failed"
 msgstr "E lē taunu'u lafoina lou imeli"
 
+#: composer-attachment-large
+msgid "Attachment too large"
+msgstr ""
+
+#: composer-attachments-large
+msgid "Attachments too large"
+msgstr ""
+
+#: compose-attchment-size-exceeded
+msgid "The selected attachment is too large to send with this message."
+msgstr ""
+
+#: compose-attchments-size-exceeded
+msgid ""
+"The selected attachments are too large to send with this message. Try "
+"selecting fewer files."
+msgstr ""
+
 #: dialog-button-ok
 msgid "OK"
 msgstr "OK"
 
 #: attachment-size-kib
 msgid "{{kilobytes}}K"
-msgstr ""
+msgstr "{{kilobytes}}K"
 
 #: message-attachment-view.textContent
 msgid "View"
-msgstr ""
+msgstr "Maimoaga"
 
 #: message-no-subject
 msgid "(no subject)"
-msgstr ""
+msgstr "(leai se ulutala)"
 
 #: message-edit-menu-star
 msgid "Star"
@@ -620,6 +641,10 @@ msgstr "Tia'i"
 #: message-edit-delete-confirm
 msgid "Delete email message?"
 msgstr "Tia'i fe'au imeli?"
+
+#: message-send-attachment-disabled-confirm
+msgid "Attachments can not be forwarded."
+msgstr ""
 
 #: message-multiedit-header
 msgctxt "message-multiedit-header"
@@ -747,7 +772,7 @@ msgstr "Tino"
 
 #: message-search-all
 msgid "All"
-msgstr ""
+msgstr "Mea 'uma"
 
 #: message-search-input.placeholder
 msgid "Search Mail"
@@ -779,7 +804,7 @@ msgstr "Filifili pusa-faila"
 
 #: message-contact-menu-create
 msgid "Save new contact"
-msgstr ""
+msgstr "Teu tagata feso'ota'i fou"
 
 #: message-contact-menu-add-existing
 msgid "Add to existing contact"
@@ -787,7 +812,7 @@ msgstr ""
 
 #: message-contact-menu-view
 msgid "View contact"
-msgstr ""
+msgstr "Fa'aali se tagata feso'ota'i"
 
 #: message-contact-menu-reply
 msgid "Reply"
@@ -801,13 +826,23 @@ msgstr ""
 msgid "Folders"
 msgstr "Pusa-faila"
 
+#. # L10n note: account-last-synced-label is found on the folder list card,
+#. # accessible from the message-list card by clicking the icon in the upper left
+#. # of the card.  The label is displayed at the bottom of the folder list and is
+#. # right aligned.  There is currently 1 button to the left of the label and soon
+#. # there will be two, so it is desirable to use as short a translation as
+#. # possible.  To the right of the label, a (short) relative timestamp is
+#. # displayed.
 #: account-last-synced-label
 msgid "Last sync: "
 msgstr ""
 
+#. # L10n note: This string is displayed to the right of account-last-synced-label
+#. # if no folder has ever been synchronized.  Otherwise the space occupied by this
+#. # string will be a (short) relative timestamp.
 #: account-never-synced
 msgid "Never"
-msgstr ""
+msgstr "'Aua lava ne'i"
 
 #. # LOCALIZATION NOTE: do not translate {name}
 #: reply-quoting-wrote
@@ -848,7 +883,6 @@ msgid "To"
 msgstr "Mo"
 
 #: forward-header-cc
-#, fuzzy
 msgctxt "forward-header-cc"
 msgid "Cc"
 msgstr "Cc"
@@ -872,7 +906,7 @@ msgstr ""
 
 #: folder-trash
 msgid "Trash"
-msgstr ""
+msgstr "Lāpisi"
 
 #: folder-queue
 msgid "Unsent"
@@ -1093,6 +1127,38 @@ msgstr "'Ave'ese tusitā"
 #: confirm-dialog-title
 msgid "Confirmation"
 msgstr ""
+
+#. # new-emails refers to the text shown on a notification that users
+#. # get when they receive new, unread email. The ui component that utilizes
+#. # this lives in apps/email/js/message_list_topbar.js.
+#: new-emails
+msgctxt "new-emails"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: new-emails[one]
+msgid "1 New Email"
+msgstr "1 Imeli fou"
+
+#: new-emails[two]
+msgctxt "new-emails[two]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} Imeli fou"
+
+#: new-emails[few]
+msgctxt "new-emails[few]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} Imeli fou"
+
+#: new-emails[many]
+msgctxt "new-emails[many]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} Imeli fou"
+
+#: new-emails[other]
+msgctxt "new-emails[other]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} Imeli fou"
 
 #~ msgid "New mail account setup"
 #~ msgstr "Fa'atūlagaga Imeli account fou"
