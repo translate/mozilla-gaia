@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
-"PO-Revision-Date: 2013-05-16 23:45+0000\n"
+"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"PO-Revision-Date: 2013-08-10 11:34+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
 "Language: gd\n"
@@ -14,11 +14,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.0-rc1\n"
+"X-Generator: Pootle 2.5.1-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
-"X-POOTLE-MTIME: 1368747959.0\n"
+"X-POOTLE-MTIME: 1376134481.000000\n"
 
 #: add
 msgid "Add"
@@ -357,6 +357,7 @@ msgid "Could not import contacts from SIM"
 msgstr "Cha b' urrainn dhuinn an luchd-aithne ion-phortadh on t-SIM"
 
 #: simContacts-imported3
+msgctxt "simContacts-imported3"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
@@ -365,8 +366,9 @@ msgid "No contacts detected on SIM to import"
 msgstr "Cha do lorg sinn neach-aithne sam bith air an SIM"
 
 #: simContacts-imported3[one]
+msgctxt "simContacts-imported3[one]"
 msgid "Imported one contact"
-msgstr "Chaidh neach-aithne ion-phortadh"
+msgstr "Chaidh {{n}} neach-aithne ion-phortadh"
 
 #: simContacts-imported3[two]
 msgctxt "simContacts-imported3[two]"
@@ -393,6 +395,61 @@ msgid "To import contacts insert or unlock your SIM card"
 msgstr ""
 "Gus luchd-aithne ion-phortadh, cuir a-steach a' chairt SIM agad no thoir a' "
 "ghlas dheth"
+
+#. # SD Card import
+#: sdContacts-import
+msgid "Import contacts from SD card"
+msgstr "Ion-phortaich luchd-aithne on chairt SD"
+
+#: sdContacts-importing
+msgid "Importing contacts from SD card…"
+msgstr "Ag ion-phortadh an luchd-aithne on chairt SD…"
+
+#: sdContacts-reading
+msgid "Reading from SD card…"
+msgstr "A' leughadh on chairt SD…"
+
+#: sdContacts-error
+msgid "Could not import contacts from SD card"
+msgstr "Cha b' urrainn dhuinn an luchd-aithne ion-phortadh on chairt SD"
+
+#: sdContacts-imported3
+msgctxt "sdContacts-imported3"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: sdContacts-imported3[zero]
+msgid "No contacts detected on SD card to import"
+msgstr "Cha do lorg sinn neach-aithne sam bith air a' chairt SD"
+
+#: sdContacts-imported3[one]
+msgctxt "sdContacts-imported3[one]"
+msgid "Imported one contact"
+msgstr "Chaidh {{n}} neach-aithne ion-phortadh"
+
+#: sdContacts-imported3[two]
+msgctxt "sdContacts-imported3[two]"
+msgid "Imported {{n}} contacts"
+msgstr "Chaidh {{n}} neach-aithne ion-phortadh"
+
+#: sdContacts-imported3[few]
+msgctxt "sdContacts-imported3[few]"
+msgid "Imported {{n}} contacts"
+msgstr "Chaidh {{n}} luchd-aithne ion-phortadh"
+
+#: sdContacts-imported3[many]
+msgctxt "sdContacts-imported3[many]"
+msgid "Imported {{n}} contacts"
+msgstr "Chaidh {{n}} neach-aithne ion-phortadh"
+
+#: sdContacts-imported3[other]
+msgctxt "sdContacts-imported3[other]"
+msgid "Imported {{n}} contacts"
+msgstr "Chaidh {{n}} neach-aithne ion-phortadh"
+
+#: noSdMsg
+msgid "To import contacts insert a SD card"
+msgstr "Gus luchd-aithne ion-phortadh, cuir a-steach cairt SD"
 
 #: genericProgress
 msgid "{{current}}/{{total}}"
@@ -497,13 +554,17 @@ msgstr "Seòrsaich a-rèir sloinnidh"
 msgid "SIM card"
 msgstr "Cairt SIM"
 
+#: importSd
+msgid "SD card"
+msgstr "Cairt SD"
+
 #: importGmail
 msgid "Gmail"
 msgstr "Gmail"
 
-#: importLive
-msgid "Windows Live"
-msgstr "Windows Live"
+#: importOutlook
+msgid "Outlook"
+msgstr "Outlook"
 
 #: fbUpdateFriends
 msgid "Update imported friends"
@@ -551,6 +612,9 @@ msgstr "Chan eil luchd-aithne ann"
 #: start-adding
 msgid "Start adding them now"
 msgstr "Nach cuir thu ris iad an-dràsta?"
+
+#~ msgid "Windows Live"
+#~ msgstr "Windows Live"
 
 #~ msgid "Import from SIM"
 #~ msgstr "Ion-phortaich on t-SIM"

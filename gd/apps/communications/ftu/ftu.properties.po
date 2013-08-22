@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
-"PO-Revision-Date: 2013-05-16 23:55+0000\n"
+"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"PO-Revision-Date: 2013-08-13 23:40+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
 "Language: gd\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.0-rc1\n"
+"X-Generator: Pootle 2.5.1-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
-"X-POOTLE-MTIME: 1368748531.0\n"
+"X-POOTLE-MTIME: 1376437207.000000\n"
 
 #: pincode2
 msgid "Enter PIN code"
@@ -31,39 +31,11 @@ msgstr "Cuir a-steach an còd PIN"
 msgid "Type your PIN code"
 msgstr "Cuir a-steach an còd PIN agad"
 
-#: type_nck
-msgid "Type your NCK code"
-msgstr "Cuir a-steach an còd NCK agad"
-
-#: type_cck
-msgid "Type your CCK code"
-msgstr "Cuir a-steach an còd CCK agad"
-
-#: type_spck
-msgid "Type your SPCK code"
-msgstr "Cuir a-steach an còd SPCK agad"
-
-#: send
-msgid "Send"
-msgstr "Cuir"
-
 #: pinValidation
 msgid "PIN must have between 4 and 8 characters."
 msgstr "Feumaidh am PIN a bhith eadar 4 is 8 àireamhan a dh'fhaid."
 
-#: nckValidation
-msgid "NCK must have between 8 and 16 characters."
-msgstr "Feumaidh an NCK a bhith eadar 8 is 16 àireamhan a dh'fhaid."
-
-#: cckValidation
-msgid "CCK must have between 8 and 16 characters."
-msgstr "Feumaidh an CCK a bhith eadar 8 is 16 àireamhan a dh'fhaid."
-
-#: spckValidation
-msgid "SPCK must have between 8 and 16 characters."
-msgstr "Feumaidh an SPCK a bhith eadar 8 is 16 àireamhan a dh'fhaid."
-
-#: pinErrorMsg
+#: pinError
 msgid "The PIN was incorrect."
 msgstr "Bha am PIN cearr."
 
@@ -73,29 +45,42 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: pinAttemptMsg2[one]
-msgctxt "pinAttemptMsg2[one]"
-msgid "Last chance."
-msgstr "An oidhirp mu dheireadh."
+msgid ""
+"You have one try left to enter the correct code before locking the SIM card."
+msgstr ""
+"Chan eil ach aon oidhirp air fhàgail mus dèid a' chairt SIM a ghlasadh."
 
 #: pinAttemptMsg2[two]
 msgctxt "pinAttemptMsg2[two]"
-msgid "{{n}} tries left."
-msgstr "{{n}} oidhirp air fhàgail."
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+"Chan eil ach {{n}} oidhirp air fhàgail mus dèid a' chairt SIM a ghlasadh."
 
 #: pinAttemptMsg2[few]
 msgctxt "pinAttemptMsg2[few]"
-msgid "{{n}} tries left."
-msgstr "{{n}} oidhirpean air fhàgail."
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+"Chan eil ach {{n}} oidhirpean air fhàgail mus dèid a' chairt SIM a ghlasadh."
 
 #: pinAttemptMsg2[many]
 msgctxt "pinAttemptMsg2[many]"
-msgid "{{n}} tries left."
-msgstr "{{n}} oidhirp air fhàgail."
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+"Chan eil ach {{n}} oidhirp air fhàgail mus dèid a' chairt SIM a ghlasadh."
 
 #: pinAttemptMsg2[other]
 msgctxt "pinAttemptMsg2[other]"
-msgid "{{n}} tries left."
-msgstr "{{n}} oidhirp air fhàgail."
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+"Chan eil ach {{n}} oidhirp air fhàgail mus dèid a' chairt SIM a ghlasadh."
 
 #: pinLastChanceMsg
 msgid ""
@@ -110,6 +95,112 @@ msgstr ""
 msgid "Enter PUK code"
 msgstr "Cuir a-steach an còd PUK"
 
+#: type_puk
+msgid "PUK code"
+msgstr "Còd PUK"
+
+#: pukValidation
+msgid "PUK code must have exactly 8 characters."
+msgstr "Feumaidh an còd PUK a bhith 8 caractaran a dh'fhaid."
+
+#: pukInfo
+msgid ""
+"You must enter the Personal Unlocking Key (PUK) Code for the SIM card. Refer "
+"to your SIM card documentation or contact your carrier for more information."
+msgstr ""
+"Feumaidh tu am Personal Unlocking Key (PUK) airson na cairt SIM a chur a-"
+"steach. Thoir sùil air an fhiosrachadh a thàinig leis a' chairt SIM agad no "
+"cuir fios gun ghiùlanair agad."
+
+#: pukError
+msgid "The PUK was incorrect."
+msgstr "Bha am PUK cearr."
+
+#: pukAttemptMsg2
+msgctxt "pukAttemptMsg2"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: pukAttemptMsg2[one]
+msgid ""
+"You have one try left to enter the correct code before this SIM card will be "
+"permanently unusable. Refer to your SIM card documentation or contact your "
+"carrier for more information."
+msgstr ""
+"Chan eil ach aon oidhirp air fhàgail mus dèid a' chairt SIM a ghlasadh gu "
+"buan 's cha ghabh a chleachdadh tuilleadh. Thoir sùil air an fhiosrachadh a "
+"fhuair thu an cois na cairt SIM no cuir fios gun ghiùlanair agad airson "
+"barrachd fiosrachaidh."
+
+#: pukAttemptMsg2[two]
+msgctxt "pukAttemptMsg2[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Chan eil ach {{n}} oidhirp air fhàgail mus dèid a' chairt SIM a ghlasadh gu "
+"buan 's cha ghabh a chleachdadh tuilleadh. Thoir sùil air an fhiosrachadh a "
+"fhuair thu an cois na cairt SIM no cuir fios gun ghiùlanair agad airson "
+"barrachd fiosrachaidh."
+
+#: pukAttemptMsg2[few]
+msgctxt "pukAttemptMsg2[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Chan eil ach {{n}} oidhirpean air fhàgail mus dèid a' chairt SIM a ghlasadh "
+"gu buan 's cha ghabh a chleachdadh tuilleadh. Thoir sùil air an fhiosrachadh "
+"a fhuair thu an cois na cairt SIM no cuir fios gun ghiùlanair agad airson "
+"barrachd fiosrachaidh."
+
+#: pukAttemptMsg2[many]
+msgctxt "pukAttemptMsg2[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Chan eil ach {{n}} oidhirp air fhàgail mus dèid a' chairt SIM a ghlasadh gu "
+"buan 's cha ghabh a chleachdadh tuilleadh. Thoir sùil air an fhiosrachadh a "
+"fhuair thu an cois na cairt SIM no cuir fios gun ghiùlanair agad airson "
+"barrachd fiosrachaidh."
+
+#: pukAttemptMsg2[other]
+msgctxt "pukAttemptMsg2[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Chan eil ach {{n}} oidhirp air fhàgail mus dèid a' chairt SIM a ghlasadh gu "
+"buan 's cha ghabh a chleachdadh tuilleadh. Thoir sùil air an fhiosrachadh a "
+"fhuair thu an cois na cairt SIM no cuir fios gun ghiùlanair agad airson "
+"barrachd fiosrachaidh."
+
+#: pukLastChanceMsg
+msgid ""
+"This is your last chance to enter the correct PUK code. Your SIM card will "
+"be permanently unusable if you enter in the wrong PUK code."
+msgstr ""
+"Seo d' oidhirp mu dheireadh an còd PUK ceart a chur a-steach. Thèid a' "
+"chairt SIM agad a ghlasadh gu buan 's cha ghabh a chleachdadh tuilleadh ma "
+"chuireas tu a-steach còd cearr a-rithist."
+
+#: create_newpin
+msgid "Create new PIN (4 to 8 digits)"
+msgstr "Cruthaich PIN ùr (eadar 4 is 8 àireamhan)"
+
+#: confirm_newpin
+msgid "Confirm new PIN"
+msgstr "Dearbh am PIN ùr"
+
+#: newpinConfirmation
+msgid "PINs don’t match"
+msgstr "Chan eil an dà PIN co-ionnann"
+
 #: nckcode
 msgid "Enter NCK code"
 msgstr "Cuir a-steach an còd NCK"
@@ -122,72 +213,149 @@ msgstr "Cuir a-steach an còd CCK"
 msgid "Enter SPCK code"
 msgstr "Cuir a-steach an còd SPCK"
 
-#: type_puk
-msgid "PUK code"
-msgstr "Còd PUK"
+#: type_nck
+msgid "Type your NCK code"
+msgstr "Cuir a-steach an còd NCK agad"
 
-#: create_newpin
-msgid "Create new PIN (4 to 8 digits)"
-msgstr "Cruthaich PIN ùr (eadar 4 is 8 àireamhan)"
+#: type_cck
+msgid "Type your CCK code"
+msgstr "Cuir a-steach an còd CCK agad"
 
-#: confirm_newpin
-msgid "Confirm new PIN"
-msgstr "Dearbh am PIN ùr"
+#: type_spck
+msgid "Type your SPCK code"
+msgstr "Cuir a-steach an còd SPCK agad"
+
+#: nckValidation
+msgid "NCK must have between 8 and 16 characters."
+msgstr "Feumaidh an NCK a bhith eadar 8 is 16 àireamhan a dh'fhaid."
+
+#: cckValidation
+msgid "CCK must have between 8 and 16 characters."
+msgstr "Feumaidh an CCK a bhith eadar 8 is 16 àireamhan a dh'fhaid."
+
+#: spckValidation
+msgid "SPCK must have between 8 and 16 characters."
+msgstr "Feumaidh an SPCK a bhith eadar 8 is 16 àireamhan a dh'fhaid."
+
+#: nckErrorMsg
+msgid "The NCK code is incorrect."
+msgstr "Bha an còd NCK cearr."
+
+#: nckAttemptMsg2
+msgctxt "nckAttemptMsg2"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: nckAttemptMsg2[one]
+msgid ""
+"Network depersonalization request failure. You have one try left to enter "
+"the correct code. Refer to your device documentation or contact your carrier "
+"for more information."
+msgstr ""
+"Dh'fhàillig d' iarrtas airson Network Depersonalization. Tha {{n}} oidhirp "
+"air fhàgail gus an còd ceart a chur a-steach. Thoir sùil air an fhiosrachadh "
+"a fhuair thu an cois an uidheim no cuir fios gun ghiùlanair agad airson "
+"barrachd fiosrachaidh."
+
+#: nckAttemptMsg2[two]
+msgctxt "nckAttemptMsg2[two]"
+msgid ""
+"Network depersonalization request failure. You have {{n}} tries left to "
+"enter the correct code. Refer to your device documentation or contact your "
+"carrier for more information."
+msgstr ""
+"Dh'fhàillig d' iarrtas airson Network Depersonalization. Tha {{n}} oidhirp "
+"air fhàgail gus an còd ceart a chur a-steach. Thoir sùil air an fhiosrachadh "
+"a fhuair thu an cois an uidheim no cuir fios gun ghiùlanair agad airson "
+"barrachd fiosrachaidh."
+
+#: nckAttemptMsg2[few]
+msgctxt "nckAttemptMsg2[few]"
+msgid ""
+"Network depersonalization request failure. You have {{n}} tries left to "
+"enter the correct code. Refer to your device documentation or contact your "
+"carrier for more information."
+msgstr ""
+"Dh'fhàillig d' iarrtas airson Network Depersonalization. Tha {{n}} "
+"oidhirpean air fhàgail gus an còd ceart a chur a-steach. Thoir sùil air an "
+"fhiosrachadh a fhuair thu an cois an uidheim no cuir fios gun ghiùlanair "
+"agad airson barrachd fiosrachaidh."
+
+#: nckAttemptMsg2[many]
+msgctxt "nckAttemptMsg2[many]"
+msgid ""
+"Network depersonalization request failure. You have {{n}} tries left to "
+"enter the correct code. Refer to your device documentation or contact your "
+"carrier for more information."
+msgstr ""
+"Dh'fhàillig d' iarrtas airson Network Depersonalization. Tha {{n}} oidhirp "
+"air fhàgail gus an còd ceart a chur a-steach. Thoir sùil air an fhiosrachadh "
+"a fhuair thu an cois an uidheim no cuir fios gun ghiùlanair agad airson "
+"barrachd fiosrachaidh."
+
+#: nckAttemptMsg2[other]
+msgctxt "nckAttemptMsg2[other]"
+msgid ""
+"Network depersonalization request failure. You have {{n}} tries left to "
+"enter the correct code. Refer to your device documentation or contact your "
+"carrier for more information."
+msgstr ""
+"Dh'fhàillig d' iarrtas airson Network Depersonalization. Tha {{n}} oidhirp "
+"air fhàgail gus an còd ceart a chur a-steach. Thoir sùil air an fhiosrachadh "
+"a fhuair thu an cois an uidheim no cuir fios gun ghiùlanair agad airson "
+"barrachd fiosrachaidh."
+
+#: nckLastChanceMsg
+msgid ""
+"Network depersonalization request failure. Last chance to enter the correct "
+"NCK code. Refer to your device documentation or contact your carrier for "
+"more information."
+msgstr ""
+"Dh'fhàillig d' iarrtas airson Network Depersonalization. Seo an oidhirp mu "
+"dheireadh agad gus an còd NCK ceart a chur a-steach. Thoir sùil air an "
+"fhiosrachadh a fhuair thu an cois an uidheim no cuir fios gun ghiùlanair "
+"agad airson barrachd fiosrachaidh."
+
+#: skip
+msgid "Skip"
+msgstr "Thoir leum thairis air"
+
+#: send
+msgid "Send"
+msgstr "Cuir"
 
 #: simLocked
 msgid "The SIM card is locked"
 msgstr "Tha a' chairt SIM glaiste"
 
-#: pukError
-msgid ""
-"You must enter the Personal Unlocking Key (PUK) Code for the SIM card. Refer "
-"to your SIM card documentation or contact your carrier for more information."
-msgstr ""
-"Feumaidh tu am Personal Unlocking Key (PUK) airson na cairt SIM a chur a-"
-"steach. Thoir sùil air an fhiosrachadh a thàinig leis a' chairt SIM agad no "
-"cuir fios gun ghiùlanair agad."
-
-#: pukErrorMsg
-msgid "The PUK was incorrect"
-msgstr "Bha am PUK cearr"
-
-#: pukAttemptMsg
-msgctxt "pukAttemptMsg"
+#: inputCodeRetriesLeft
+msgctxt "inputCodeRetriesLeft"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: pukAttemptMsg[one]
-msgctxt "pukAttemptMsg[one]"
-msgid "Last chance."
-msgstr "An oidhirp mu dheireadh."
+#: inputCodeRetriesLeft[one]
+msgid "last try."
+msgstr "oidhirp mu dheireadh."
 
-#: pukAttemptMsg[two]
-msgctxt "pukAttemptMsg[two]"
+#: inputCodeRetriesLeft[two]
+msgctxt "inputCodeRetriesLeft[two]"
 msgid "{{n}} tries left."
 msgstr "{{n}} oidhirp air fhàgail."
 
-#: pukAttemptMsg[few]
-msgctxt "pukAttemptMsg[few]"
+#: inputCodeRetriesLeft[few]
+msgctxt "inputCodeRetriesLeft[few]"
 msgid "{{n}} tries left."
 msgstr "{{n}} oidhirpean air fhàgail."
 
-#: pukAttemptMsg[many]
-msgctxt "pukAttemptMsg[many]"
+#: inputCodeRetriesLeft[many]
+msgctxt "inputCodeRetriesLeft[many]"
 msgid "{{n}} tries left."
 msgstr "{{n}} oidhirp air fhàgail."
 
-#: pukAttemptMsg[other]
-msgctxt "pukAttemptMsg[other]"
+#: inputCodeRetriesLeft[other]
+msgctxt "inputCodeRetriesLeft[other]"
 msgid "{{n}} tries left."
 msgstr "{{n}} oidhirp air fhàgail."
-
-#: pukValidation
-msgid "PUK code must have exactly 8 characters."
-msgstr "Feumaidh an còd PUK a bhith 8 caractaran a dh'fhaid."
-
-#: newpinConfirmation
-msgid "PINs don’t match"
-msgstr "Chan eil an dà PIN co-ionnann"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Language
@@ -419,9 +587,9 @@ msgstr "Cairt SIM"
 msgid "Facebook"
 msgstr "Facebook"
 
-#: importLive
-msgid "Windows Live"
-msgstr "Windows Live"
+#: importOutlook
+msgid "Outlook"
+msgstr "Outlook"
 
 #: importGmail
 msgid "Gmail"
@@ -654,10 +822,6 @@ msgctxt "navbar-join"
 msgid "Join"
 msgstr "Gabh pàirt"
 
-#: skip
-msgid "Skip"
-msgstr "Thoir leum thairis air"
-
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Welcome OS
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -765,6 +929,49 @@ msgstr "Chan e post-d dligheach a tha seo"
 #: invalid-email-dialog-text
 msgid "Please go back and correct your entry."
 msgstr "Rach air ais is cuir ceart e."
+
+#~ msgctxt "pinAttemptMsg2[one]"
+#~ msgid "Last chance."
+#~ msgstr "An oidhirp mu dheireadh."
+
+#~ msgctxt "pinAttemptMsg2[few]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} oidhirpean air fhàgail."
+
+#~ msgctxt "pinAttemptMsg2[many]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} oidhirp air fhàgail."
+
+#~ msgctxt "pinAttemptMsg2[other]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} oidhirp air fhàgail."
+
+#~ msgctxt "pukAttemptMsg"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "pukAttemptMsg[one]"
+#~ msgid "Last chance."
+#~ msgstr "An oidhirp mu dheireadh."
+
+#~ msgctxt "pukAttemptMsg[two]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} oidhirp air fhàgail."
+
+#~ msgctxt "pukAttemptMsg[few]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} oidhirpean air fhàgail."
+
+#~ msgctxt "pukAttemptMsg[many]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} oidhirp air fhàgail."
+
+#~ msgctxt "pukAttemptMsg[other]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} oidhirp air fhàgail."
+
+#~ msgid "Windows Live"
+#~ msgstr "Windows Live"
 
 #~ msgid "No networks found"
 #~ msgstr "Cha deach lìonra sam bith a lorg"

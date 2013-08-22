@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
-"PO-Revision-Date: 2013-05-17 00:24+0000\n"
+"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"PO-Revision-Date: 2013-08-14 00:17+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
 "Language: gd\n"
@@ -14,11 +14,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.0-rc1\n"
+"X-Generator: Pootle 2.5.1-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
-"X-POOTLE-MTIME: 1368750264.0\n"
+"X-POOTLE-MTIME: 1376439431.000000\n"
 
 #. # Headers
 #: messages
@@ -29,38 +29,40 @@ msgstr "Teachdaireachdan"
 msgid "Edit messages"
 msgstr "Deasaich na teachdaireachdan"
 
-#: others
-msgctxt "others"
+#. # Contact title
+#: thread-header-text
+msgctxt "thread-header-text"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: others[zero]
-msgid "{{name}} and no others"
-msgstr "{{name}} agus chan eil gin eile"
+#: thread-header-text[zero]
+msgid "{{name}}"
+msgstr "{{name}}"
 
-#: others[one]
-msgid "{{name}} and {{n}} other"
-msgstr "{{name}} agus {{n}} eile"
+#: thread-header-text[one]
+msgctxt "thread-header-text[one]"
+msgid "{{name}} (+{{n}})"
+msgstr "{{name}} (+{{n}})"
 
-#: others[two]
-msgctxt "others[two]"
-msgid "{{name}} and {{n}} others"
-msgstr "{{name}} agus {{n}} eile"
+#: thread-header-text[two]
+msgctxt "thread-header-text[two]"
+msgid "{{name}} (+{{n}})"
+msgstr "{{name}} (+{{n}})"
 
-#: others[few]
-msgctxt "others[few]"
-msgid "{{name}} and {{n}} others"
-msgstr "{{name}} agus {{n}} eile"
+#: thread-header-text[few]
+msgctxt "thread-header-text[few]"
+msgid "{{name}} (+{{n}})"
+msgstr "{{name}} (+{{n}})"
 
-#: others[many]
-msgctxt "others[many]"
-msgid "{{name}} and {{n}} others"
-msgstr "{{name}} agus {{n}} eile"
+#: thread-header-text[many]
+msgctxt "thread-header-text[many]"
+msgid "{{name}} (+{{n}})"
+msgstr "{{name}} (+{{n}})"
 
-#: others[other]
-msgctxt "others[other]"
-msgid "{{name}} and {{n}} others"
-msgstr "{{name}} agus {{n}} eile"
+#: thread-header-text[other]
+msgctxt "thread-header-text[other]"
+msgid "{{name}} (+{{n}})"
+msgstr "{{name}} (+{{n}})"
 
 #. # Edit Mode
 #: edit
@@ -134,6 +136,10 @@ msgid "{{n}} selected"
 msgstr "Thagh thu {{n}}"
 
 #. # New Message
+#: to
+msgid "To:"
+msgstr "Gu:"
+
 #: send
 msgid "Send"
 msgstr "Cuir"
@@ -152,13 +158,72 @@ msgctxt "composeMessage.placeholder"
 msgid "Message"
 msgstr "Teachdaireachd"
 
+#: converted-to-mms
+msgid "Converting to multimedia message."
+msgstr "Iompaich 'na theachdaireachd ioma-mheadhanach."
+
+#: converted-to-sms
+msgid "Converting to text message."
+msgstr "Iompaich 'na theachdaireachd teacsa."
+
+#: messages-max-length-text
+msgid "You've reached the maximum length."
+msgstr "Chan fhaod e a bhith nas fhaide na seo."
+
+#: messages-exceeded-length-text
+msgid ""
+"You've exceeded the maximum length. Remove special characters or shorten the "
+"message to send it."
+msgstr ""
+"Tha e nas fhaide na tha ceadaichte. Thoir air falbhan caractaran sònraichte "
+"no dèan an teachdaireachd nas giorra mus cuir thu e."
+
 #: newMessage
 msgid "New message"
 msgstr "Teachdaireachd ùr"
 
-#: messages-max-length-notice
-msgid "You've reached the maximum length for an SMS."
-msgstr "Chan fhaod SMS a bhith nas fhaide na seo."
+#: recipient
+msgctxt "recipient"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: recipient[one]
+msgid "{{n}} recipient"
+msgstr "{{n}} fhaightear"
+
+#: recipient[two]
+msgctxt "recipient[two]"
+msgid "{{n}} recipients"
+msgstr "{{n}} fhaightear"
+
+#: recipient[few]
+msgctxt "recipient[few]"
+msgid "{{n}} recipients"
+msgstr "{{n}} faightearan"
+
+#: recipient[many]
+msgctxt "recipient[many]"
+msgid "{{n}} recipients"
+msgstr "{{n}} faightear"
+
+#: recipient[other]
+msgctxt "recipient[other]"
+msgid "{{n}} recipients"
+msgstr "{{n}} faightear"
+
+#: recipientRemoval
+msgid "Do you want to remove {{recipient}} from the recipients list?'"
+msgstr ""
+"A bheil thu airson {{recipient}} a thoirt air falbh o liosta nan daoine a "
+"gheibh e?"
+
+#: attachmentSize
+msgid "{{n}} kB"
+msgstr "{{n}} kB"
+
+#: attachmentOpenError
+msgid "There is no application available to open this file type."
+msgstr "Chan eil aplacaid ann a dh'fhosglas a leithid seo a dh'fhaidhle."
 
 #. # Search functionality
 #: search
@@ -233,6 +298,34 @@ msgctxt "sendAirplaneModeBtnOk"
 msgid "OK"
 msgstr "Ceart ma-thà"
 
+#: deleted-sms
+msgid "This message has already been deleted."
+msgstr "Chaidh an teachdaireachd seo a sguabadh às mu thràth."
+
+#: view-attachment
+msgid "View"
+msgstr "Seall"
+
+#: remove-attachment
+msgid "Remove {{type}}"
+msgstr "Thoir air falbh e ({{type}})"
+
+#: replace-attachment
+msgid "Replace {{type}}"
+msgstr "Cuir 'na àite ({{type}})"
+
+#: attachment-type-image
+msgid "image"
+msgstr "dealbh"
+
+#: attachment-type-audio
+msgid "audio"
+msgstr "fuaim"
+
+#: attachment-type-video
+msgid "video"
+msgstr "video"
+
 #. # Labels for contact fields
 #: mobile
 msgid "Mobile"
@@ -291,6 +384,55 @@ msgstr "Cruthaich neach-aithne ùr"
 #: call
 msgid "Call"
 msgstr "Cuir fòn"
+
+#. # MMS message
+#: mms-message
+msgid "MMS message"
+msgstr "Teachdaireachd MMS"
+
+#: notDownloaded-title
+msgid "Message is not downloaded yet."
+msgstr "Cha deach an teachdaireachd a luchdadh a-nuas fhathast."
+
+#: not-downloaded-mms
+msgid "I have sent you a file. It will be available until {{date}}"
+msgstr "Chuir mi faidhle thugad. Bidh e ri fhaighinn gu ruige {{date}}"
+
+#: expired-mms
+msgid "Sorry, message cannot be downloaded as it expired on {{date}}"
+msgstr ""
+"Tha sinn duilich ach cha ghabh a luchdadh a-nuas leis gun do dh'fhalbh an "
+"ùine air {{date}}"
+
+#: download
+msgid "download"
+msgstr "luchdadh a-nuas"
+
+#: downloading
+msgid "downloading"
+msgstr "'ga luchdadh a-nuas"
+
+#~ msgid "{{name}} and no others"
+#~ msgstr "{{name}} agus chan eil gin eile"
+
+#~ msgid "{{name}} and {{n}} other"
+#~ msgstr "{{name}} agus {{n}} eile"
+
+#~ msgctxt "others[two]"
+#~ msgid "{{name}} and {{n}} others"
+#~ msgstr "{{name}} agus {{n}} eile"
+
+#~ msgctxt "others[few]"
+#~ msgid "{{name}} and {{n}} others"
+#~ msgstr "{{name}} agus {{n}} eile"
+
+#~ msgctxt "others[many]"
+#~ msgid "{{name}} and {{n}} others"
+#~ msgstr "{{name}} agus {{n}} eile"
+
+#~ msgctxt "others[other]"
+#~ msgid "{{name}} and {{n}} others"
+#~ msgstr "{{name}} agus {{n}} eile"
 
 #~ msgid "No results returned"
 #~ msgstr "Cha d'fhuaras toradh sam bith"

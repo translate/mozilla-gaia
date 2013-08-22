@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
-"PO-Revision-Date: 2013-05-17 00:23+0000\n"
+"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"PO-Revision-Date: 2013-08-14 00:12+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
 "Language: gd\n"
@@ -14,11 +14,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.0-rc1\n"
+"X-Generator: Pootle 2.5.1-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
-"X-POOTLE-MTIME: 1368750180.0\n"
+"X-POOTLE-MTIME: 1376439129.000000\n"
 
 #: settings
 msgid "Settings"
@@ -104,9 +104,9 @@ msgstr "Lìonra ┐ ceanglaichean"
 msgid "Airplane mode"
 msgstr "Am modh itealain"
 
-#: gps
-msgid "GPS"
-msgstr "GPS"
+#: geolocation
+msgid "Geolocation"
+msgstr "Geò-lorgadh"
 
 #. # Connectivity :: Wi-Fi
 #: wifi
@@ -562,9 +562,21 @@ msgstr "Roghainnean dàta"
 msgid "A-GPS settings"
 msgstr "Roghainnean A-GPS"
 
-#: mmsSettings
-msgid "MMS settings"
-msgstr "Roghainnean MMS"
+#: messageSettings
+msgid "Message settings"
+msgstr "Roghainnean nan teachdaireachdan"
+
+#: apnSettings
+msgid "APN settings"
+msgstr "Roghainnean APN"
+
+#: text-message-confirmation
+msgid "Text message confirmation"
+msgstr "Dearbhadh na teachdaireachd teacsa"
+
+#: mmsTitle
+msgid "Multimedia messaging (MMS)"
+msgstr "Multimedia Messaging (MMS)"
 
 #: mmsport
 msgid "MMS port"
@@ -577,6 +589,35 @@ msgstr "Progsaidh MMS"
 #: mmsc
 msgid "MMSC"
 msgstr "MMSC"
+
+#: auto-retrieve
+msgid "Auto retrieve"
+msgstr "Faigh gu fèin-obrachail"
+
+#: auto-retrieve-details
+msgid "Automatically retieve messages"
+msgstr "Faigh teachdaireachdan gu fèin-obrachail"
+
+#: manual-retrieve
+msgid "Off"
+msgstr "Dheth"
+
+#: auto-roaming-retrieve
+msgid "On with roaming"
+msgstr "Air agus air fàrsan"
+
+#: auto-no-roaming-retrieve
+msgid "On without roaming"
+msgstr "Air agus gun a bhith air fàrsan"
+
+#: delivery-reports
+msgid "Delivery reports"
+msgstr "Aithisgean libhrigidh"
+
+#: delivery-reports-details
+msgid "Request notication of delivery for each text message sent"
+msgstr ""
+"Iarr aithisg libhrigidh airson gach teachdaireachd teacsa a thèid a chur"
 
 #: autoConfigure
 msgid "Auto-configure"
@@ -617,6 +658,28 @@ msgid ""
 msgstr ""
 "A-rèir aonta na seirbheise agad, dh'fhaoidte gun èirich cosgaisean a "
 "bharrachd dhut ma chleachdas tu dàta air fàrsan."
+
+#: state-unknown
+msgid "Unknown state"
+msgstr "Staid neo-aithnichte"
+
+#: state-available
+msgid "Available"
+msgstr "Ri fhaighinn"
+
+#: state-connected
+msgctxt "state-connected"
+msgid "Connected"
+msgstr "Air ceangal a dhèanamh"
+
+#: state-current
+msgctxt "state-current"
+msgid "Connected"
+msgstr "Air ceangal a dhèanamh"
+
+#: state-forbidden
+msgid "Forbidden"
+msgstr "Toirmisgte"
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
@@ -1312,7 +1375,7 @@ msgid "Create"
 msgstr "Cruthaich"
 
 #: create-passcode
-msgid "Create a passcode"
+msgid "Create a Passcode"
 msgstr "Cruthaich còd-faire"
 
 #: enter-passcode
@@ -1340,7 +1403,7 @@ msgid "Passcode"
 msgstr "Còd-faire"
 
 #: confirm-passcode
-msgid "Confirm passcode"
+msgid "Confirm Passcode"
 msgstr "Dearbh an còd-faire"
 
 #: immediately
@@ -1452,34 +1515,72 @@ msgstr "PIN ùr"
 msgid "The PIN was incorrect."
 msgstr "Bha am PIN cearr."
 
-#: pinAttemptMsg2
-msgctxt "pinAttemptMsg2"
+#: inputCodeRetriesLeft
+msgctxt "inputCodeRetriesLeft"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: pinAttemptMsg2[one]
-msgid "Last chance."
-msgstr "Oidhirp mu dheireadh."
+#: inputCodeRetriesLeft[one]
+msgid "last try."
+msgstr "oidhirp mu dheireadh."
 
-#: pinAttemptMsg2[two]
-msgctxt "pinAttemptMsg2[two]"
+#: inputCodeRetriesLeft[two]
+msgctxt "inputCodeRetriesLeft[two]"
 msgid "{{n}} tries left."
-msgstr "{{n}} thuras air fhàgail."
+msgstr "{{n}} oidhirp air fhàgail."
 
-#: pinAttemptMsg2[few]
-msgctxt "pinAttemptMsg2[few]"
+#: inputCodeRetriesLeft[few]
+msgctxt "inputCodeRetriesLeft[few]"
 msgid "{{n}} tries left."
-msgstr "{{n}} turais air fhàgail."
+msgstr "{{n}} oidhirpean air fhàgail."
 
-#: pinAttemptMsg2[many]
-msgctxt "pinAttemptMsg2[many]"
+#: inputCodeRetriesLeft[many]
+msgctxt "inputCodeRetriesLeft[many]"
 msgid "{{n}} tries left."
-msgstr "{{n}} turas air fhàgail."
+msgstr "{{n}} oidhirp air fhàgail."
 
-#: pinAttemptMsg2[other]
-msgctxt "pinAttemptMsg2[other]"
+#: inputCodeRetriesLeft[other]
+msgctxt "inputCodeRetriesLeft[other]"
 msgid "{{n}} tries left."
-msgstr "{{n}} turas air fhàgail."
+msgstr "{{n}} oidhirp air fhàgail."
+
+#: pinAttemptMsg3
+msgctxt "pinAttemptMsg3"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: pinAttemptMsg3[one]
+msgid ""
+"You have one try left to enter the correct code before locking the SIM card."
+msgstr "Tha {{n}} oidhirp air fhàgail mus dèidh a' chairt SIM a ghlasadh."
+
+#: pinAttemptMsg3[two]
+msgctxt "pinAttemptMsg3[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr "Tha {{n}} oidhirp air fhàgail mus dèidh a' chairt SIM a ghlasadh."
+
+#: pinAttemptMsg3[few]
+msgctxt "pinAttemptMsg3[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr "Tha {{n}} oidhirpean air fhàgail mus dèidh a' chairt SIM a ghlasadh."
+
+#: pinAttemptMsg3[many]
+msgctxt "pinAttemptMsg3[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr "Tha {{n}} oidhirp air fhàgail mus dèidh a' chairt SIM a ghlasadh."
+
+#: pinAttemptMsg3[other]
+msgctxt "pinAttemptMsg3[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr "Tha {{n}} oidhirp air fhàgail mus dèidh a' chairt SIM a ghlasadh."
 
 #: pinLastChanceMsg
 msgid ""
@@ -1507,15 +1608,69 @@ msgstr ""
 msgid "The PUK code is incorrect."
 msgstr "Tha an còd PUK cearr."
 
-#: pukAttemptMsg2
+#: pukAttemptMsg3
+msgctxt "pukAttemptMsg3"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: pukAttemptMsg3[one]
+msgid ""
+"You have one try left to enter the correct code before this SIM card will be "
+"permanently unusable. Refer to your SIM card documentation or contact your "
+"carrier for more information."
+msgstr ""
+"Tha aon oidhirp eile agad an còd ceart a chur a-steach mus bi a' chairt SIM "
+"seo gun fheum gu sìorraidh bràth. Thoir sùil air an fhiosrachadh a fhuair "
+"thu an cois na cairt SIM no bruidhinn ris a' ghiùlanair agad airson barrachd "
+"fiosrachaidh."
+
+#: pukAttemptMsg3[two]
+msgctxt "pukAttemptMsg3[two]"
 msgid ""
 "You have {{n}} tries left to enter the correct code before this SIM card "
 "will be permanently unusable. Refer to your SIM card documentation or "
 "contact your carrier for more information."
 msgstr ""
-"Tha {{n}} cothrom eile agad an còd ceart a chur a-steach mus bi a' chairt "
+"Tha {{n}} oidhirp eile agad an còd ceart a chur a-steach mus bi a' chairt "
 "SIM seo gun fheum gu sìorraidh bràth. Thoir sùil air an fhiosrachadh a "
-"fhuair thu an cois na cairt SIM no bruidhinn ris a' ghiùlanair agad."
+"fhuair thu an cois na cairt SIM no bruidhinn ris a' ghiùlanair agad airson "
+"barrachd fiosrachaidh."
+
+#: pukAttemptMsg3[few]
+msgctxt "pukAttemptMsg3[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Tha {{n}} oidhirpean eile agad an còd ceart a chur a-steach mus bi a' chairt "
+"SIM seo gun fheum gu sìorraidh bràth. Thoir sùil air an fhiosrachadh a "
+"fhuair thu an cois na cairt SIM no bruidhinn ris a' ghiùlanair agad airson "
+"barrachd fiosrachaidh."
+
+#: pukAttemptMsg3[many]
+msgctxt "pukAttemptMsg3[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Tha {{n}} oidhirp eile agad an còd ceart a chur a-steach mus bi a' chairt "
+"SIM seo gun fheum gu sìorraidh bràth. Thoir sùil air an fhiosrachadh a "
+"fhuair thu an cois na cairt SIM no bruidhinn ris a' ghiùlanair agad airson "
+"barrachd fiosrachaidh."
+
+#: pukAttemptMsg3[other]
+msgctxt "pukAttemptMsg3[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before this SIM card "
+"will be permanently unusable. Refer to your SIM card documentation or "
+"contact your carrier for more information."
+msgstr ""
+"Tha {{n}} oidhirp eile agad an còd ceart a chur a-steach mus bi a' chairt "
+"SIM seo gun fheum gu sìorraidh bràth. Thoir sùil air an fhiosrachadh a "
+"fhuair thu an cois na cairt SIM no bruidhinn ris a' ghiùlanair agad airson "
+"barrachd fiosrachaidh."
 
 #: pukLastChanceMsg
 msgid ""
@@ -1583,15 +1738,224 @@ msgstr ""
 "d' ionad no ainm-cleachdaichean 's faclan-faire."
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#. # Storage
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#: storage
+msgid "Storage"
+msgstr "Stòras"
+
+#: enableUSBStorage
+msgid "Enable USB storage"
+msgstr "Cuir an stòras USB an comas"
+
+#. # Storage :: Application storage
+#: deviceStorage
+msgid "Device storage"
+msgstr "Stòras an uidheim"
+
+#: usbMassStorage
+msgid "USB mass storage"
+msgstr "Mòr-stòras USB"
+
+#: umsUnplugToDisable
+msgid "Unplug USB cable to disable"
+msgstr "Thoir às an càball USB gus a chur à comas"
+
+#: appStorage
+msgid "Application storage"
+msgstr "Stòras na h-aplacaid"
+
+#: byteUnit-B
+msgid "B"
+msgstr "B"
+
+#: byteUnit-KB
+msgid "KB"
+msgstr "KB"
+
+#: byteUnit-MB
+msgid "MB"
+msgstr "MB"
+
+#: byteUnit-GB
+msgid "GB"
+msgstr "GB"
+
+#: byteUnit-TB
+msgid "TB"
+msgstr "TB"
+
+#: storageSize
+msgid "{{size}} {{unit}}"
+msgstr "{{size}} {{unit}}"
+
+#: availableSize
+msgid "{[ plural(size) ]}"
+msgstr "{[ plural(size) ]}"
+
+#: availableSize[zero]
+msgctxt "availableSize[zero]"
+msgid "{{size}} {{unit}} available"
+msgstr "Tha {{size}} {{unit}} ri làimh"
+
+#: availableSize[one]
+msgctxt "availableSize[one]"
+msgid "{{size}} {{unit}} available"
+msgstr "Tha {{size}} {{unit}} ri làimh"
+
+#: availableSize[two]
+msgctxt "availableSize[two]"
+msgid "{{size}} {{unit}} available"
+msgstr "Tha {{size}} {{unit}} ri làimh"
+
+#: availableSize[few]
+msgctxt "availableSize[few]"
+msgid "{{size}} {{unit}} available"
+msgstr "Tha {{size}} {{unit}} ri làimh"
+
+#: availableSize[many]
+msgctxt "availableSize[many]"
+msgid "{{size}} {{unit}} available"
+msgstr "Tha {{size}} {{unit}} ri làimh"
+
+#: availableSize[other]
+msgctxt "availableSize[other]"
+msgid "{{size}} {{unit}} available"
+msgstr "Tha {{size}} {{unit}} ri làimh"
+
+#: apps-total-space
+msgid "Total space"
+msgstr "Àite iomlan"
+
+#: apps-used-space
+msgid "Used"
+msgstr "Air a chleachdadh"
+
+#: apps-free-space
+msgid "Left"
+msgstr "Air fhàgail"
+
+#: media-storage-details
+msgid ""
+"Photos, videos and music are stored on the SD card. See media storage for "
+"details."
+msgstr ""
+"Thèid dealbh, video is ceòl sam bith a stòradh air a' chairt SD. Faic "
+"\"Stòras nam meadhanan\" airson mion-fhiosrachadh."
+
+#: ums-shared-volumes
+msgid "{{list}} shared"
+msgstr "{{list}} air a cho-roinneadh"
+
+#. # Storage :: Media storage
+#: mediaStorage
+msgid "Media storage"
+msgstr "Stòras nam meadhanan"
+
+#: internalStorage
+msgctxt "internalStorage"
+msgid "Internal Storage"
+msgstr "Stòras inntearnail"
+
+#: storage-name-0
+msgctxt "storage-name-0"
+msgid "Internal Storage"
+msgstr "Stòras inntearnail"
+
+#: storage-name-1
+msgid "SD Card Storage"
+msgstr "Stòras air a' chairt SD"
+
+#: storage-name-2
+msgid "SD Card Storage 2"
+msgstr "Stòras air a' chairt SD 2"
+
+#: short-storage-name-0
+msgid "Internal"
+msgstr "Inntearnail"
+
+#: short-storage-name-1
+msgid "SD Card"
+msgstr "Cairt SD"
+
+#: short-storage-name-2
+msgid "SD Card 2"
+msgstr "Cairt SD 2"
+
+#: music-space
+msgid "Music"
+msgstr "Ceòl"
+
+#: pictures-space
+msgid "Pictures"
+msgstr "Dealbhan"
+
+#: videos-space
+msgid "Movies"
+msgstr "Filmichean"
+
+#: left-space
+msgctxt "left-space"
+msgid "Space left"
+msgstr "Àite a tha air fhàgail"
+
+#: free-space
+msgctxt "free-space"
+msgid "Space left"
+msgstr "Àite a tha air fhàgail"
+
+#: size-not-available
+msgid "Not available"
+msgstr "Chan eil e ri fhaighinn"
+
+#: no-storage
+msgid "No storage found"
+msgstr "Cha deach stòras sam bith a lorg"
+
+#: advanced
+msgid "Advanced"
+msgstr "Adhartach"
+
+#: turn-on-ums-confirm
+msgid ""
+"Turning on Enable USB storage allows another computer or device connected "
+"using USB to access files on this phone."
+msgstr ""
+"Ma chuireas tu air an stòras USB, 's urrainn do choimpiutairean no uidheaman "
+"eile ceangailte cothrom fhaighinn air na faidhlichean air an fhòn seo slighe "
+"USB."
+
+#: default-media-location
+msgid "Default media location"
+msgstr "Ionad bunaiteach nam meadhanan"
+
+#: default-media-location-msg
+msgid "Choose where photos, videos, music and downloads are stored by default."
+msgstr ""
+"Cuir romhad far an dèid dealbhan, videothan, ceòl is rudan a chaidh a "
+"luchdadh a-nuas a stòradh a ghnàth."
+
+#: change-default-location-confirm
+msgid ""
+"Changing the default media storage volume will effect where photos, videos, "
+"downloads and other media will be saved to by default. Existing data will "
+"remain in its current location."
+msgstr ""
+"Ma dh'atharraicheas tu an t-ionad bunaiteach far an dèid meadhanan a "
+"stòradh, bidh buaidh aige seo air an àite far an dèid dealbhan, videothan is "
+"rudan a chaidh a luchdadh a-nuas is meadhanan eile a shàbhaladh a ghnàth. "
+"Bidh dàta a tha ann mu thràth far a bheil e fhathast."
+
+#: share-using-usb
+msgid "Share using USB"
+msgstr "A' co-roinneadh slighe USB"
+
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Device
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #: device
 msgid "Device"
 msgstr "Uidheam"
-
-#: storage
-msgid "Storage"
-msgstr "Stòras"
 
 #: help
 msgctxt "help"
@@ -1919,134 +2283,6 @@ msgstr "Cuir air bhog a' chiad turas a chleachdaichear e"
 msgid "No first time use app found"
 msgstr "Cha deach aplacaid sam bith mar sin a lorg"
 
-#. # Device :: Device storage
-#: deviceStorage
-msgid "Device storage"
-msgstr "Stòras an uidheim"
-
-#: usbMassStorage
-msgid "USB mass storage"
-msgstr "Mòr-stòras USB"
-
-#: umsUnplugToDisable
-msgid "Unplug USB cable to disable"
-msgstr "Thoir às an càball USB gus a chur à comas"
-
-#: appStorage
-msgid "Application storage"
-msgstr "Stòras na h-aplacaid"
-
-#: byteUnit-B
-msgid "B"
-msgstr "B"
-
-#: byteUnit-KB
-msgid "KB"
-msgstr "KB"
-
-#: byteUnit-MB
-msgid "MB"
-msgstr "MB"
-
-#: byteUnit-GB
-msgid "GB"
-msgstr "GB"
-
-#: byteUnit-TB
-msgid "TB"
-msgstr "TB"
-
-#: storageSize
-msgid "{{size}} {{unit}}"
-msgstr "{{size}} {{unit}}"
-
-#: availableSize
-msgid "{[ plural(size) ]}"
-msgstr "{[ plural(size) ]}"
-
-#: availableSize[zero]
-msgctxt "availableSize[zero]"
-msgid "{{size}} {{unit}} available"
-msgstr "Tha {{size}} {{unit}} ri làimh"
-
-#: availableSize[one]
-msgctxt "availableSize[one]"
-msgid "{{size}} {{unit}} available"
-msgstr "Tha {{size}} {{unit}} ri làimh"
-
-#: availableSize[two]
-msgctxt "availableSize[two]"
-msgid "{{size}} {{unit}} available"
-msgstr "Tha {{size}} {{unit}} ri làimh"
-
-#: availableSize[few]
-msgctxt "availableSize[few]"
-msgid "{{size}} {{unit}} available"
-msgstr "Tha {{size}} {{unit}} ri làimh"
-
-#: availableSize[many]
-msgctxt "availableSize[many]"
-msgid "{{size}} {{unit}} available"
-msgstr "Tha {{size}} {{unit}} ri làimh"
-
-#: availableSize[other]
-msgctxt "availableSize[other]"
-msgid "{{size}} {{unit}} available"
-msgstr "Tha {{size}} {{unit}} ri làimh"
-
-#: apps-total-space
-msgid "Total space"
-msgstr "Àite iomlan"
-
-#: apps-used-space
-msgid "Used"
-msgstr "Air a chleachdadh"
-
-#: apps-free-space
-msgid "Left"
-msgstr "Air fhàgail"
-
-#: media-storage-details
-msgid ""
-"Photos, videos and music are stored on the SD card. See media storage for "
-"details."
-msgstr ""
-"Thèid dealbh, video is ceòl sam bith a stòradh air a' chairt SD. Faic "
-"\"Stòras nam meadhanan\" airson mion-fhiosrachadh."
-
-#. # Device :: Media storage
-#: mediaStorage
-msgid "Media storage"
-msgstr "Stòras nam meadhanan"
-
-#: music-space
-msgid "Music"
-msgstr "Ceòl"
-
-#: pictures-space
-msgid "Pictures"
-msgstr "Dealbhan"
-
-#: videos-space
-msgid "Movies"
-msgstr "Filmichean"
-
-#: left-space
-msgid "Space left"
-msgstr "Àite a tha air fhàgail"
-
-#: size-not-available
-msgid "Not available"
-msgstr "Chan eil e ri fhaighinn"
-
-#: no-storage
-msgid "No storage found"
-msgstr "Cha deach stòras sam bith a lorg"
-
-#: advanced
-msgid "Advanced"
-msgstr "Adhartach"
-
 #. # Device :: Battery
 #: battery
 msgid "Battery"
@@ -2076,11 +2312,11 @@ msgstr "Modh sàbhaladh na cumhachd"
 msgid "{{level}}% battery left"
 msgstr "{{level}}% dhen bhataraidh air fhàgail"
 
-#: powerSave-expl
+#: powerSave-explanation
 msgid ""
-"Turning on power save mode turns off the phone’s data, Bluetooth and GPS "
-"connections to extend battery life. You can still turn these services back "
-"on manually."
+"Turning on power save mode turns off the phone’s data, Bluetooth and "
+"Geolocation connections to extend battery life. You can still turn these "
+"services back on manually."
 msgstr ""
 "Ma chuireas tu air \"Modh caomhnadh cumhachd\", thèid na ceanglaichean dàta, "
 "Bluetooth agus GPS aig an fhòn a chur dheth ach am mair am bataraidh nas "
@@ -2147,9 +2383,9 @@ msgstr "Cuir aithisg an-còmhnaidh"
 msgid "Never send a report"
 msgstr "Na cuir aithisgean idir"
 
-#: askToSendReport
-msgid "Ask me when a crash occurs"
-msgstr "Faighnich dhìom nuair a thuislicheas rud"
+#: askToSendReport2
+msgid "Ask each time"
+msgstr "Faighnich dhìom gach turas"
 
 #. # Device :: Improve Browser OS :: Crash Reports
 #. # LOCALIZATION NOTE (crash-reports-description-*): these strings are also included in system.properties
@@ -2241,6 +2477,34 @@ msgstr "Chan eil aplacaidean airson na cairt SIM ri fhaighinn."
 #: simToolkit
 msgid "SIM toolkit"
 msgstr "Acainnean SIM"
+
+#~ msgid "GPS"
+#~ msgstr "GPS"
+
+#~ msgid "MMS settings"
+#~ msgstr "Roghainnean MMS"
+
+#~ msgctxt "pinAttemptMsg2"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgid "Last chance."
+#~ msgstr "Oidhirp mu dheireadh."
+
+#~ msgctxt "pinAttemptMsg2[few]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} turais air fhàgail."
+
+#~ msgctxt "pinAttemptMsg2[many]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} turas air fhàgail."
+
+#~ msgctxt "pinAttemptMsg2[other]"
+#~ msgid "{{n}} tries left."
+#~ msgstr "{{n}} turas air fhàgail."
+
+#~ msgid "Ask me when a crash occurs"
+#~ msgstr "Faighnich dhìom nuair a thuislicheas rud"
 
 #, fuzzy
 #~ msgctxt "gitInfo"

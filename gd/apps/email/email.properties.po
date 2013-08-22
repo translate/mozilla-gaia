@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-08 10:22+0100\n"
-"PO-Revision-Date: 2013-05-17 00:10+0000\n"
+"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"PO-Revision-Date: 2013-08-13 23:41+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
 "Language: gd\n"
@@ -14,11 +14,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.0-rc1\n"
+"X-Generator: Pootle 2.5.1-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
-"X-POOTLE-MTIME: 1368749457.0\n"
+"X-POOTLE-MTIME: 1376437295.000000\n"
 
 #: setup-app-name-header
 msgid "Mail"
@@ -203,6 +203,11 @@ msgid "The server \"{{server}}\" is offline for maintenance. Try again later."
 msgstr ""
 "Tha am frithealaiche \"{{server}}\" far loidhne 's e ri obar-chàraidh. Feuch "
 "ris a-rithist an ceann greis."
+
+#. # The error when the user trying to register a duplicate account
+#: setup-error-account-already-exists
+msgid "This account is already configured."
+msgstr "Chaidh an cunntas seo a rèiteachadh mu thràth."
 
 #: setup-manual-config2
 msgctxt "setup-manual-config2"
@@ -597,6 +602,28 @@ msgstr "A' cur a' phuist-d"
 msgid "Sending email failed"
 msgstr "Dh'fhàillig cur a' phuist"
 
+#: composer-attachment-large
+msgid "Attachment too large"
+msgstr "Tha an ceanglachan ro mhòr"
+
+#: composer-attachments-large
+msgid "Attachments too large"
+msgstr "Tha na ceanglachain ro mhòr"
+
+#: compose-attchment-size-exceeded
+msgid "The selected attachment is too large to send with this message."
+msgstr ""
+"Thagh thu ceanglachan a tha ro mhòr 's cha ghabh a chur leis an "
+"teachdaireachd."
+
+#: compose-attchments-size-exceeded
+msgid ""
+"The selected attachments are too large to send with this message. Try "
+"selecting fewer files."
+msgstr ""
+"Thagh thu ceanglachain a tha ro mhòr 's cha ghabh an cur leis an "
+"teachdaireachd. Feuch is tagh nas lugha dhiubh."
+
 #: dialog-button-ok
 msgid "OK"
 msgstr "Ceart ma-thà"
@@ -641,6 +668,10 @@ msgstr "Sguab às"
 #: message-edit-delete-confirm
 msgid "Delete email message?"
 msgstr "A bheil thu airson an teachdaireachd a sguabadh às?"
+
+#: message-send-attachment-disabled-confirm
+msgid "Attachments can not be forwarded."
+msgstr "Cha ghabh na ceanglachain a shìneadh air adhart."
 
 #: message-multiedit-header
 msgctxt "message-multiedit-header"
@@ -1107,6 +1138,38 @@ msgstr "Thoir air falbh an teacsa"
 #: confirm-dialog-title
 msgid "Confirmation"
 msgstr "Dearbhadh"
+
+#. # new-emails refers to the text shown on a notification that users
+#. # get when they receive new, unread email. The ui component that utilizes
+#. # this lives in apps/email/js/message_list_topbar.js.
+#: new-emails
+msgctxt "new-emails"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: new-emails[one]
+msgid "1 New Email"
+msgstr "{{n}} phost-d ùr"
+
+#: new-emails[two]
+msgctxt "new-emails[two]"
+msgid "{{ n }} New Emails"
+msgstr "{{n}} phost-d ùr"
+
+#: new-emails[few]
+msgctxt "new-emails[few]"
+msgid "{{ n }} New Emails"
+msgstr "{{n}} puist-d ùra"
+
+#: new-emails[many]
+msgctxt "new-emails[many]"
+msgid "{{ n }} New Emails"
+msgstr "{{n}} phost-d ùr"
+
+#: new-emails[other]
+msgctxt "new-emails[other]"
+msgid "{{ n }} New Emails"
+msgstr "{{n}} phost-d ùr"
 
 #~ msgid "Please wait while your account is set up"
 #~ msgstr "Fuirich ort fhad 's a shuidhicheas sinn an cunntas agad"
