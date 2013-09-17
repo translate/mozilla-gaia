@@ -1,0 +1,1165 @@
+#. extracted from ./apps/email/email.properties
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-02 12:33+0100\n"
+"PO-Revision-Date: 2013-09-17 10:07+0000\n"
+"Last-Translator: Jean <jean.cayron@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: wa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
+"X-POOTLE-MTIME: 1379412433.000000\n"
+
+#: setup-app-name-header
+msgid "Mail"
+msgstr "Emile"
+
+#: setup-empty-account-prompt
+msgid ""
+"You are not set up to send or receive email. Would you like to do that now?"
+msgstr "Vos n’ avoz nén apontyî po-z evoyî ou rçure des"
+
+#: setup-pick-service
+msgid "To send and receive email, you will need to set up an account."
+msgstr "Po-z evoyî eyet rçure des emiles, vos dvoz apontyî on conte."
+
+#. # Title of the account setup card where the user enters their display name,
+#. # e-mail address, and password.
+#: setup-account-header3
+msgid "New account"
+msgstr "Novea conte"
+
+#: setup-info-header
+msgid "Your login information"
+msgstr "Les pondants et djondants po vost elodjaedje."
+
+#. # The placeholder for the display name of the user that will be displayed in the
+#. # account setup screen input box for the display name until they enter any text
+#. # in the box.  When you send an e-mail, the "From" header contains the user's
+#. # display name ("John Doe") as well as the e-mail address
+#. # ("john.doe@example.com").  In the future this input box will be labeled, but
+#. # it is currently unlabeled because of screen real estate concerns.
+#: setup-info-name.placeholder
+msgid "Your name"
+msgstr "Vosse no"
+
+#. # The placeholder for the user's e-mail address that will be displayed in the
+#. # account setup screen input box for the e-mail address until they enter any
+#. # text in the box.  The value will be used to configure the e-mail account.
+#: setup-info-email.placeholder
+msgid "someone@example.com"
+msgstr "enesaki@egzimpe.com"
+
+#. # The placeholder for the user's password that will be displayed in the account
+#. # setup screen input box for the password until they enter any text in the box.
+#. # The value will be used to configure the e-mail account and saved for future
+#. # usage.
+#: setup-info-password.placeholder
+msgctxt "setup-info-password.placeholder"
+msgid "Password"
+msgstr "Sicret"
+
+#: setup-info-next
+msgctxt "setup-info-next"
+msgid "Next"
+msgstr "Shuvant"
+
+#: setup-progress-wait
+msgid "Setting up account"
+msgstr "Dj’ aponteye li conte"
+
+#: setup-completed-header
+msgid "Mail account setup"
+msgstr "Apontiaedje do conte emile"
+
+#: setup-completed-label
+msgid "All done!"
+msgstr "Tot fwait !"
+
+#: setup-add-another-account
+msgid "Add another account"
+msgstr "Radjouter èn ôte conte"
+
+#: setup-show-mail
+msgid "Continue to Mail"
+msgstr "Continouwer et drovi Emile"
+
+#. # The error for when the user tries to create an account without a network
+#. # connection active.
+#: setup-error-offline
+msgid "This device is currently offline. Connect to a network and try again."
+msgstr "Cist éndjin ci est disraloyî. Raloyîz vs a ene rantoele eyet"
+
+#. # The error for either a bad username or a bad password.  For security reasons,
+#. # servers try not to distinguish between the two which is why we also cannot
+#. # tell them apart either.  Also, if the user made a typo, they could have made
+#. # it in either place.
+#: setup-error-bad-user-or-pass2
+msgid "Invalid username or password. Check for typos."
+msgstr "Mwais no d’ uzeu ou sicret. Verifyîz li spelaedje."
+
+#. # The error for a user having the correct username and password, but the mail
+#. # server explicitly indicates they don't have permission to talk to the mail
+#. # server.  This is currently only expected from ActiveSync servers; situations
+#. # like gmail over IMAP indicating that IMAP is disabled for the account or
+#. # domain have their own error code: setup-error-imap-disabled.
+#: setup-error-not-authorized
+msgid "The server said you're not authorized to create an account"
+msgstr "Li sierveu a dit k’ vos n’ avoz nén li droet d’"
+
+#. # The fallback error; if we don't have a better error, we report this.
+#: setup-error-unknown2
+msgid ""
+"An unknown error occurred. Check your network connection or try the manual "
+"configuration option."
+msgstr ""
+"Ene aroke nén cnoxhowe s’ a passé. Verifyîz vosse raloyaedje al rantoele "
+"oudon-bén sayîz li tchuze d’ apontiaedje al mwin."
+
+#. # The error for Gmail accounts where 2-factor authentication (where you receive
+#. # a text message on your phone or run a special app) is enabled, and so the
+#. # user needs to create and use an application specific password to allow us to
+#. # talk to the server.
+#: setup-error-needs-app-pass
+msgid ""
+"You must use an application specific password for two-factor Gmail accounts"
+msgstr ""
+"Vos vs divoz siervi d’ on scret specifike å programe po les contes Gmail a "
+"deus facteurs (two-factors)"
+
+#. # The error for Gmail accounts where IMAP is not enabled.  This can occur
+#. # for individual users where they have disabled IMAP from the settings UI.
+#. # This can also occur for apps-for-domains where the domain is not configured
+#. # to support IMAP.
+#: setup-error-imap-disabled
+msgid "You must enable IMAP for your Gmail account"
+msgstr "Vos dvoz mete e-n alaedje l’ IMAP po vosse conte Gmail"
+
+#. # The error for when we are able to contact a server that should be the mail
+#. # server but we are unable to establish a secure connection.
+#: setup-error-bad-security
+msgid ""
+"Unable to establish a secure connection with \"{{server}}\". There may be a "
+"problem with your network or the server."
+msgstr ""
+"Dji n’ sai fé di såve raloyaedje avou « {{server}} ». I gn a motoit åk ki n’ "
+"va nén avou vosse rantoelaedje oudon-bén avou li sierveu."
+
+#. # The error for when we try to contact a server but see no indication of a
+#. # response before we give up because of a timeout.
+#: setup-error-unresponsive-server
+msgid ""
+"Unable to establish a connection with \"{{server}}\". There may be a problem "
+"with the network."
+msgstr ""
+"Dji n’ sai fé di raloyaedje avou « {{server}} ». I gn a motoit åk ki n’ va "
+"nén avou li rantoele."
+
+#. # The error for when we able to establish a (secure) connection with the server,
+#. # but there is some type of failure talking to the server that isn't covered by
+#. # other errors.  Hopefully this is just a temporary problem on the server, but
+#. # it could also be a fundamental incompatibility between our software and the
+#. # server's software.
+#: setup-error-server-problem
+msgid "There is a problem with the server \"{{server}}\". Try again later."
+msgstr "I gn a on problinme avou li sierveu  « {{server}} ». Risayîz pus tård."
+
+#. # The error for when we are trying to figure out the right server settings for
+#. # an account based on the e-mail address the user typed in during configuration,
+#. # but we can't find the right settings.  This is either because the user made a
+#. # typo and so we are looking for configuration data that does not exist, there
+#. # were network failures trying to look the information up, or the information is
+#. # not available.
+#: setup-error-no-config-info
+msgid ""
+"Unable to automatically configure your account. Correct your e-mail address "
+"or try the manual configuration option."
+msgstr ""
+"Dji n’ sai apontyî otomaticmint vosse conte. Coridjîz voste adresse emile "
+"oudon-bén sayî li tchuze d’ apontiaedje al mwin."
+
+#. # The error for when the user is trying to set up an account with a server that
+#. # currently indicates it is offline for maintenance.
+#: setup-error-server-maintenance
+msgid "The server \"{{server}}\" is offline for maintenance. Try again later."
+msgstr ""
+"Li sierveu  « {{server}} » est disraloyî po del mintnance. Risayîz pus tård."
+
+#. # The error when the user trying to register a duplicate account
+#: setup-error-account-already-exists
+msgid "This account is already configured."
+msgstr "Ci conte ci est ddja apontyî."
+
+#: setup-manual-config2
+msgctxt "setup-manual-config2"
+msgid "Manual setup"
+msgstr "Apontiaedje al mwin"
+
+#: setup-manual-config-header
+msgctxt "setup-manual-config-header"
+msgid "Manual setup"
+msgstr "Apontiaedje al mwin"
+
+#: setup-manual-account-type
+msgctxt "setup-manual-account-type"
+msgid "Account type"
+msgstr "Sôre di conte"
+
+#: setup-manual-imap-header
+msgctxt "setup-manual-imap-header"
+msgid "IMAP settings"
+msgstr "Apontiaedjes IMAP"
+
+#: setup-manual-smtp-header
+msgctxt "setup-manual-smtp-header"
+msgid "SMTP settings"
+msgstr "Apontiaedjes SMTP"
+
+#: setup-manual-activesync-header
+msgctxt "setup-manual-activesync-header"
+msgid "ActiveSync settings"
+msgstr "Apontiaedjes ActiveSync"
+
+#: setup-manual-next
+msgctxt "setup-manual-next"
+msgid "Next"
+msgstr "Shuvant"
+
+#: setup-manual-socket
+msgid "Socket Type"
+msgstr "Sôre di sokete"
+
+#: setup-manual-socket-ssl
+msgid "SSL"
+msgstr "SSL"
+
+#: setup-manual-hostname.placeholder
+msgctxt "setup-manual-hostname.placeholder"
+msgid "Hostname"
+msgstr "No do lodjoe"
+
+#: setup-manual-port.placeholder
+msgid "Port Number"
+msgstr "Limero do pôrt"
+
+#: setup-manual-username.placeholder
+msgctxt "setup-manual-username.placeholder"
+msgid "Username"
+msgstr "No d’ uzeu"
+
+#: setup-bad-password-header
+msgid "Bad password!"
+msgstr "Mwais sicret !"
+
+#: setup-bad-password
+msgid "We could not sign in to the server. Maybe your password is wrong?"
+msgstr "Nos n’ nos avans savou elodjî å sierveu. Vosse sicret sereut mwais ?"
+
+#: setup-new-password.placeholder
+msgid "New password"
+msgstr "Novea sicret"
+
+#: setup-fix-password
+msgid "Retry with new password"
+msgstr "Risayî avou on novea sicret"
+
+#: setup-gmail-twofactor-header
+msgid "Two-Factor Enabled"
+msgstr "Deus facteurs e-n alaedje"
+
+#: setup-gmail-twofactor-message
+msgid "You need to enter an application-specific password below."
+msgstr "Vos dvoz taper on scret specifike å programe vaici pa dzo."
+
+#: setup-gmail-twofactor-fix
+msgid "Use application password"
+msgstr "Si siervi do scret do programe"
+
+#: setup-gmail-imap-header
+msgid "IMAP Disabled"
+msgstr "IMAP essocté"
+
+#: setup-gmail-imap-message
+msgid "You must enable IMAP on your Gmail account "
+msgstr "Vos dvoz mete e-n alaedje l’ IMAP so vosse conte Gmail"
+
+#: setup-gmail-imap-retry
+msgctxt "setup-gmail-imap-retry"
+msgid "Retry"
+msgstr "Risayî"
+
+#: settings-main-header
+msgid "Mail Settings"
+msgstr "Apontiaedjes des emiles"
+
+#: settings-done
+msgid "Done"
+msgstr "Tot fwait"
+
+#: settings-account-section
+msgctxt "settings-account-section"
+msgid "Accounts"
+msgstr "Contes"
+
+#: settings-account-add
+msgid "Add Account"
+msgstr "Radjouter conte"
+
+#: settings-account-delete
+msgid "Delete account"
+msgstr "Disfacer conte"
+
+#: settings-account-delete-prompt
+msgid ""
+"Are you sure you want to delete your {{account}} mail account? You will have "
+"to re-download your mail if you re-create the account."
+msgstr ""
+"Voloz vs disfacer vosse conte emile {{account}} po do bon ? Vos rdoevroz "
+"aberweter vos emiles si vs rahivez l’ conte."
+
+#: settings-account-delete-cancel
+msgctxt "settings-account-delete-cancel"
+msgid "Cancel"
+msgstr "Rinoncî"
+
+#: settings-account-delete-confirm
+msgctxt "settings-account-delete-confirm"
+msgid "Delete"
+msgstr "Disfacer"
+
+#: settings-about-section
+msgid "About"
+msgstr "Åd fwait"
+
+#: settings-general-section
+msgid "General settings"
+msgstr "Tchuzes po tot costé"
+
+#: settings-check-mail
+msgid "Check mail"
+msgstr "Waitî après ls emiles"
+
+#: settings-show-images
+msgid "Always show images"
+msgstr "Tofer mostrer les imådjes"
+
+#: settings-download-attachments
+msgid "Download attachments"
+msgstr "Aberweter ataetchmints"
+
+#: settings-notify-mail
+msgid "Notify of new mail"
+msgstr "Notifiaedje di noveas emiles"
+
+#: settings-check-3min
+msgid "3 minutes"
+msgstr "3 munutes"
+
+#: settings-check-5min
+msgid "5 minutes"
+msgstr "5 munutes"
+
+#: settings-check-10min
+msgid "10 minutes"
+msgstr "10 munutes"
+
+#: settings-check-15min
+msgid "15 minutes"
+msgstr "15 munutes"
+
+#: settings-check-30min
+msgid "30 minutes"
+msgstr "30 munutes"
+
+#: settings-check-60min
+msgid "60 minutes"
+msgstr "60 munutes"
+
+#: settings-check-manual
+msgid "Manually"
+msgstr "Al mwin"
+
+#: settings-default-account
+msgid "Default account"
+msgstr "Conte prémetou"
+
+#: settings-account-type
+msgctxt "settings-account-type"
+msgid "Account type"
+msgstr "Sôre di conte"
+
+#: settings-account-credentials
+msgid "Credentials"
+msgstr "Credits"
+
+#: settings-account-synchronize
+msgid "Synchronize"
+msgstr "Sincronijhî"
+
+#: settings-activesync-label
+msgctxt "settings-activesync-label"
+msgid "ActiveSync settings"
+msgstr "Apontiaedjes ActiveSync"
+
+#: settings-imap-label
+msgctxt "settings-imap-label"
+msgid "IMAP settings"
+msgstr "Apontiaedjes IMAP"
+
+#: settings-smtp-label
+msgctxt "settings-smtp-label"
+msgid "SMTP settings"
+msgstr "Apontiaedjes SMTP"
+
+#: settings-hostname
+msgctxt "settings-hostname"
+msgid "Hostname"
+msgstr "No do lodjoe"
+
+#: settings-port
+msgid "Port"
+msgstr "Pôrt"
+
+#: settings-username
+msgctxt "settings-username"
+msgid "Username"
+msgstr "No d’ uzeu"
+
+#: settings-password
+msgctxt "settings-password"
+msgid "Password"
+msgstr "Sicret"
+
+#: settings-save
+msgid "Save"
+msgstr "Schaper"
+
+#: settings-password-empty
+msgid "Password field should not be empty"
+msgstr "Li tchamp do sicret n’ pout esse vude"
+
+#: settings-synchronize-auto
+msgid "Automatic"
+msgstr "Otomatike"
+
+#: settings-synchronize-one-day
+msgid "1 day"
+msgstr "1 djoû"
+
+#: settings-synchronize-three-days
+msgid "3 days"
+msgstr "3 djoûs"
+
+#: settings-synchronize-one-week
+msgid "1 week"
+msgstr "1 samwinne"
+
+#: settings-synchronize-two-weeks
+msgid "2 weeks"
+msgstr "2 samwinnes"
+
+#: settings-synchronize-one-month
+msgid "1 month"
+msgstr "1 moes"
+
+#: settings-synchronize-all
+msgid "All messages"
+msgstr "Tos les messaedjes"
+
+#: accounts-header
+msgctxt "accounts-header"
+msgid "Accounts"
+msgstr "Contes"
+
+#: accounts-button
+msgctxt "accounts-button"
+msgid "Accounts"
+msgstr "Contes"
+
+#: envelope-from
+msgctxt "envelope-from"
+msgid "From"
+msgstr "Di"
+
+#: envelope-to
+msgctxt "envelope-to"
+msgid "To"
+msgstr "A"
+
+#: envelope-cc
+msgctxt "envelope-cc"
+msgid "Cc"
+msgstr "Cc"
+
+#: envelope-bcc
+msgid "Bcc"
+msgstr "Bcc"
+
+#: reader-header
+msgid "Read"
+msgstr "Lére"
+
+#: compose-header
+msgid "Compose message"
+msgstr "Scrire messaedje"
+
+#: compose-header-short
+msgid "Compose"
+msgstr "Scrire"
+
+#: compose-send
+msgid "Send"
+msgstr "Evoyî"
+
+#: compose-to
+msgctxt "compose-to"
+msgid "To"
+msgstr "A"
+
+#: compose-cc
+msgid "cc"
+msgstr "cc"
+
+#: compose-bcc
+msgid "bcc"
+msgstr "bcc"
+
+#: compose-attachments
+msgctxt "compose-attachments"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: compose-attachments[zero]
+msgid "Attachments"
+msgstr "Ataetchmints"
+
+#: compose-attachments[one]
+msgid "{{ n }} attachment"
+msgstr "{{ n }} ataetchmint"
+
+#: compose-attachments[two]
+msgctxt "compose-attachments[two]"
+msgid "{{ n }} attachments"
+msgstr "{{ n }} ataetchmints"
+
+#: compose-attachments[few]
+msgctxt "compose-attachments[few]"
+msgid "{{ n }} attachments"
+msgstr "{{ n }} ataetchmints"
+
+#: compose-attachments[many]
+msgctxt "compose-attachments[many]"
+msgid "{{ n }} attachments"
+msgstr "{{ n }} ataetchmints"
+
+#: compose-attachments[other]
+msgctxt "compose-attachments[other]"
+msgid "{{ n }} attachments"
+msgstr "{{ n }} ataetchmints"
+
+#: compose-subject
+msgctxt "compose-subject"
+msgid "Subject"
+msgstr "Sudjet"
+
+#: compose-draft-save
+msgid "Save to Local Drafts"
+msgstr "Schaper ezès brouyons coinreces"
+
+#: compose-discard-message
+msgid "Discard email?"
+msgstr "Abandner emile ?"
+
+#: compose-discard-confirm
+msgid "Discard"
+msgstr "Abandner"
+
+#: compose-sending-message
+msgid "Sending email"
+msgstr "Dj’ evoye l’ emile"
+
+#: compose-send-message-failed
+msgid "Sending email failed"
+msgstr "L’ evoyaedje di l’ emile a fwait berwete"
+
+#: composer-attachment-large
+msgid "Attachment too large"
+msgstr "Ataetchmint trop grand"
+
+#: composer-attachments-large
+msgid "Attachments too large"
+msgstr "Ataetchmints trop grands"
+
+#: compose-attchment-size-exceeded
+msgid "The selected attachment is too large to send with this message."
+msgstr ""
+"L’ ataetchmint tchoezi est trop grand po-z esse evoyî avou ç’ messaedje ci."
+
+#: compose-attchments-size-exceeded
+msgid ""
+"The selected attachments are too large to send with this message. Try "
+"selecting fewer files."
+msgstr ""
+"Les ataetchmints tchoezis sont trop grands po-z esse evoyîs avou "
+"ç’ messaedje ci. Sayîz d’ tchoezi moens d’ fitchîs."
+
+#: dialog-button-ok
+msgid "OK"
+msgstr "I va"
+
+#: attachment-size-kib
+msgid "{{kilobytes}}K"
+msgstr "{{kilobytes}}K"
+
+#: message-attachment-view.textContent
+msgid "View"
+msgstr "Vey"
+
+#: message-no-subject
+msgid "(no subject)"
+msgstr "(nou sudjet)"
+
+#: message-edit-menu-star
+msgid "Star"
+msgstr "Stoelî"
+
+#: message-edit-menu-unstar
+msgid "Unstar"
+msgstr "Distoelî"
+
+#: message-edit-menu-mark-read
+msgid "Mark as read"
+msgstr "Marker come léjhou"
+
+#: message-edit-menu-mark-unread
+msgid "Mark as unread"
+msgstr "Marker come nén léjhou"
+
+#: message-edit-menu-move
+msgid "Move"
+msgstr "Bodjî"
+
+#: message-edit-menu-delete
+msgctxt "message-edit-menu-delete"
+msgid "Delete"
+msgstr "Disfacer"
+
+#: message-edit-delete-confirm
+msgid "Delete email message?"
+msgstr "Disfacer messaedje emile ?"
+
+#: message-send-attachment-disabled-confirm
+msgid "Attachments can not be forwarded."
+msgstr "Les ataetchmints n’ savèt nén esse ricassîs."
+
+#: message-multiedit-header
+msgctxt "message-multiedit-header"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: message-multiedit-header[zero]
+msgid "Edit"
+msgstr "Candjî"
+
+#: message-multiedit-header[one]
+msgctxt "message-multiedit-header[one]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} di tchoezis"
+
+#: message-multiedit-header[two]
+msgctxt "message-multiedit-header[two]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} di tchoezis"
+
+#: message-multiedit-header[few]
+msgctxt "message-multiedit-header[few]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} di tchoezis"
+
+#: message-multiedit-header[many]
+msgctxt "message-multiedit-header[many]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} di tchoezis"
+
+#: message-multiedit-header[other]
+msgctxt "message-multiedit-header[other]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} di tchoezis"
+
+#: browse-to-url-prompt
+msgid "Browse to URL?: {{ url }}"
+msgstr "Betchter e l’ URL ? : {{ url }}"
+
+#: message-download-images
+msgctxt "message-download-images"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: message-download-images[one]
+msgid "This email contains one image. Click to download."
+msgstr "I gn a ene imådje dins cist emile ci. Tchapotez po-z aberweter."
+
+#: message-download-images[two]
+msgctxt "message-download-images[two]"
+msgid "This email contains {{ n }} images. Click to download."
+msgstr "I gn a {{ n }} imådjes dins cist emile ci Tchapotez po-z aberweter."
+
+#: message-download-images[few]
+msgctxt "message-download-images[few]"
+msgid "This email contains {{ n }} images. Click to download."
+msgstr "I gn a {{ n }} imådjes dins cist emile ci Tchapotez po-z aberweter."
+
+#: message-download-images[many]
+msgctxt "message-download-images[many]"
+msgid "This email contains {{ n }} images. Click to download."
+msgstr "I gn a {{ n }} imådjes dins cist emile ci Tchapotez po-z aberweter."
+
+#: message-download-images[other]
+msgctxt "message-download-images[other]"
+msgid "This email contains {{ n }} images. Click to download."
+msgstr "I gn a {{ n }} imådjes dins cist emile ci Tchapotez po-z aberweter."
+
+#: message-show-external-images
+msgid "Show external images"
+msgstr "Mostrer dfoûtrinnès imådjes"
+
+#: message-multiedit-cancel
+msgctxt "message-multiedit-cancel"
+msgid "Cancel"
+msgstr "Rinoncî"
+
+#: message-multiedit-delete-confirm
+msgctxt "message-multiedit-delete-confirm"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: message-multiedit-delete-confirm[one]
+msgid "Delete this email message?"
+msgstr "Disfacer ci messaedje emile ci ?"
+
+#: message-multiedit-delete-confirm[two]
+msgctxt "message-multiedit-delete-confirm[two]"
+msgid "Delete {{ n }} email messages?"
+msgstr "Disfacer {{ n }} messaedjes emile ?"
+
+#: message-multiedit-delete-confirm[few]
+msgctxt "message-multiedit-delete-confirm[few]"
+msgid "Delete {{ n }} email messages?"
+msgstr "Disfacer {{ n }} messaedjes emile ?"
+
+#: message-multiedit-delete-confirm[many]
+msgctxt "message-multiedit-delete-confirm[many]"
+msgid "Delete {{ n }} email messages?"
+msgstr "Disfacer {{ n }} messaedjes emile ?"
+
+#: message-multiedit-delete-confirm[other]
+msgctxt "message-multiedit-delete-confirm[other]"
+msgid "Delete {{ n }} email messages?"
+msgstr "Disfacer {{ n }} messaedjes emile ?"
+
+#: message-search-from
+msgctxt "message-search-from"
+msgid "From"
+msgstr "Di"
+
+#: message-search-to
+msgctxt "message-search-to"
+msgid "To"
+msgstr "A"
+
+#: message-search-subject
+msgctxt "message-search-subject"
+msgid "Subject"
+msgstr "Sudjet"
+
+#: message-search-body
+msgid "Body"
+msgstr "Coir"
+
+#: message-search-all
+msgid "All"
+msgstr "Totafwait"
+
+#: message-search-input.placeholder
+msgid "Search Mail"
+msgstr "Trover emile"
+
+#: message-search-cancel-accessible
+msgid "Cancel search"
+msgstr "Rinoncî å cweraedje"
+
+#: messages-syncing
+msgid "Loading messages"
+msgstr "Dji tchedje des messaedjes"
+
+#: messages-sync-more
+msgid "Load more messages from server"
+msgstr "Tcherdjî dpus d’ messaedjes då sierveu"
+
+#: messages-folder-empty
+msgid "No mail in this Folder"
+msgstr "Nol emile dins ç’ ridant ci"
+
+#: messages-search-empty
+msgid "No matches in locally cached messages"
+msgstr "Noles corespondances ezès messaedjes del muchete coinrece"
+
+#: messages-folder-select
+msgid "Select folder"
+msgstr "Tchoezi ridant"
+
+#: message-contact-menu-create
+msgid "Save new contact"
+msgstr "Schaper novea contak"
+
+#: message-contact-menu-add-existing
+msgid "Add to existing contact"
+msgstr "Radjouter a on contak k’ i gn a ddja"
+
+#: message-contact-menu-view
+msgid "View contact"
+msgstr "Vey contak"
+
+#: message-contact-menu-reply
+msgid "Reply"
+msgstr "Responde"
+
+#: message-contact-menu-new
+msgid "Send new mail"
+msgstr "Evoyî novea emile"
+
+#: folder-list-header
+msgid "Folders"
+msgstr "Ridants"
+
+#. # L10n note: account-last-synced-label is found on the folder list card,
+#. # accessible from the message-list card by clicking the icon in the upper left
+#. # of the card.  The label is displayed at the bottom of the folder list and is
+#. # right aligned.  There is currently 1 button to the left of the label and soon
+#. # there will be two, so it is desirable to use as short a translation as
+#. # possible.  To the right of the label, a (short) relative timestamp is
+#. # displayed.
+#: account-last-synced-label
+msgid "Last sync: "
+msgstr "Dier. sincro :"
+
+#. # L10n note: This string is displayed to the right of account-last-synced-label
+#. # if no folder has ever been synchronized.  Otherwise the space occupied by this
+#. # string will be a (short) relative timestamp.
+#: account-never-synced
+msgid "Never"
+msgstr "Måy"
+
+#. # LOCALIZATION NOTE: do not translate {name}
+#: reply-quoting-wrote
+msgid "{name} wrote"
+msgstr "{name} a scrît"
+
+#: forward-original-message
+msgid "Original message"
+msgstr "Messaedje d’ oridjene"
+
+#. # L10n note: These are the labels we use when displaying the envelope info for a
+#. # message that is forwarded inline.  While automatic recovery of this
+#. # information by clients is made difficult by these strings regularly being
+#. # localized, we attempt to remain consistent with apps such as Thunderbird for
+#. # at least English.
+#: forward-header-subject
+msgctxt "forward-header-subject"
+msgid "Subject"
+msgstr "Sudjet"
+
+#: forward-header-date
+msgid "Date"
+msgstr "Date"
+
+#: forward-header-from
+msgctxt "forward-header-from"
+msgid "From"
+msgstr "Di"
+
+#. # This really wants to have the dash in it for consistency with Thunderbird
+#: forward-header-reply-to
+msgid "Reply-To"
+msgstr "Response a"
+
+#: forward-header-to
+msgctxt "forward-header-to"
+msgid "To"
+msgstr "A"
+
+#: forward-header-cc
+msgctxt "forward-header-cc"
+msgid "Cc"
+msgstr "Cc"
+
+#. # Localized folder names for IMAP servers.  Because the IMAP standard did not
+#. # originally specify a way to express meta-data about folders, folders may be
+#. # named in English to express their purpose.  Then e-mail clients (or webmail
+#. # interfaces) localize these values.  We do this too, following in the
+#. # footsteps of Thunderbird.
+#: folder-inbox
+msgid "Inbox"
+msgstr "Boesse å letes"
+
+#: folder-sent
+msgid "Sent"
+msgstr "Evoyîs"
+
+#: folder-drafts
+msgid "Drafts"
+msgstr "Brouyons"
+
+#: folder-trash
+msgid "Trash"
+msgstr "Batch"
+
+#: folder-queue
+msgid "Unsent"
+msgstr "Nén evoyîs"
+
+#: folder-junk
+msgid "Junk"
+msgstr "Spams"
+
+#: folder-archives
+msgid "Archives"
+msgstr "Årtchives"
+
+#: folder-localdrafts
+msgid "Local Drafts"
+msgstr "Brouyons coinreces"
+
+#: toaster-undo
+msgid "Undo"
+msgstr "Disfé"
+
+#: toaster-retry
+msgctxt "toaster-retry"
+msgid "Retry"
+msgstr "Risayî"
+
+#: toaster-message-star
+msgctxt "toaster-message-star"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-star[one]
+msgid "1 message flag set"
+msgstr "1 drapea di messaedje metou"
+
+#: toaster-message-star[two]
+msgctxt "toaster-message-star[two]"
+msgid "{{ n }} messages flag set"
+msgstr "{{ n }} drapeas di messaedje metous"
+
+#: toaster-message-star[few]
+msgctxt "toaster-message-star[few]"
+msgid "{{ n }} messages flag set"
+msgstr "{{ n }} drapeas di messaedje metous"
+
+#: toaster-message-star[many]
+msgctxt "toaster-message-star[many]"
+msgid "{{ n }} messages flag set"
+msgstr "{{ n }} drapeas di messaedje metous"
+
+#: toaster-message-star[other]
+msgctxt "toaster-message-star[other]"
+msgid "{{ n }} messages flag set"
+msgstr "{{ n }} drapeas di messaedje metous"
+
+#: toaster-message-unstar
+msgctxt "toaster-message-unstar"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-unstar[one]
+msgid "1 message flag removed"
+msgstr "1 drapea di messaedje oisté"
+
+#: toaster-message-unstar[two]
+msgctxt "toaster-message-unstar[two]"
+msgid "{{ n }} messages flag removed"
+msgstr "{{ n }} drapeas di messaedje oistés"
+
+#: toaster-message-unstar[few]
+msgctxt "toaster-message-unstar[few]"
+msgid "{{ n }} messages flag removed"
+msgstr "{{ n }} drapeas di messaedje oistés"
+
+#: toaster-message-unstar[many]
+msgctxt "toaster-message-unstar[many]"
+msgid "{{ n }} messages flag removed"
+msgstr "{{ n }} drapeas di messaedje oistés"
+
+#: toaster-message-unstar[other]
+msgctxt "toaster-message-unstar[other]"
+msgid "{{ n }} messages flag removed"
+msgstr "{{ n }} drapeas di messaedje oistés"
+
+#: toaster-message-read
+msgctxt "toaster-message-read"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-read[one]
+msgid "1 message marked as read"
+msgstr "1 messaedje marké come léjhou"
+
+#: toaster-message-read[two]
+msgctxt "toaster-message-read[two]"
+msgid "{{ n }} messages marked as read"
+msgstr "{{ n }} messaedjes markés come léjhous"
+
+#: toaster-message-read[few]
+msgctxt "toaster-message-read[few]"
+msgid "{{ n }} messages marked as read"
+msgstr "{{ n }} messaedjes markés come léjhous"
+
+#: toaster-message-read[many]
+msgctxt "toaster-message-read[many]"
+msgid "{{ n }} messages marked as read"
+msgstr "{{ n }} messaedjes markés come léjhous"
+
+#: toaster-message-read[other]
+msgctxt "toaster-message-read[other]"
+msgid "{{ n }} messages marked as read"
+msgstr "{{ n }} messaedjes markés come léjhous"
+
+#: toaster-message-unread
+msgctxt "toaster-message-unread"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-unread[one]
+msgid "1 message marked as unread"
+msgstr "1 messaedje marké come nén léjhou"
+
+#: toaster-message-unread[two]
+msgctxt "toaster-message-unread[two]"
+msgid "{{ n }} messages marked as unread"
+msgstr "{{ n }} messaedjes markés come nén léjhous"
+
+#: toaster-message-unread[few]
+msgctxt "toaster-message-unread[few]"
+msgid "{{ n }} messages marked as unread"
+msgstr "{{ n }} messaedjes markés come nén léjhous"
+
+#: toaster-message-unread[many]
+msgctxt "toaster-message-unread[many]"
+msgid "{{ n }} messages marked as unread"
+msgstr "{{ n }} messaedjes markés come nén léjhous"
+
+#: toaster-message-unread[other]
+msgctxt "toaster-message-unread[other]"
+msgid "{{ n }} messages marked as unread"
+msgstr "{{ n }} messaedjes markés come nén léjhous"
+
+#: toaster-message-move
+msgctxt "toaster-message-move"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-move[one]
+msgid "1 message moved"
+msgstr "1 messaedje di bodjî"
+
+#: toaster-message-move[two]
+msgctxt "toaster-message-move[two]"
+msgid "{{ n }} messages moved"
+msgstr "{{ n }} messaedjes di bodjîs"
+
+#: toaster-message-move[few]
+msgctxt "toaster-message-move[few]"
+msgid "{{ n }} messages moved"
+msgstr "{{ n }} messaedjes di bodjîs"
+
+#: toaster-message-move[many]
+msgctxt "toaster-message-move[many]"
+msgid "{{ n }} messages moved"
+msgstr "{{ n }} messaedjes di bodjîs"
+
+#: toaster-message-move[other]
+msgctxt "toaster-message-move[other]"
+msgid "{{ n }} messages moved"
+msgstr "{{ n }} messaedjes di bodjîs"
+
+#: toaster-message-delete
+msgctxt "toaster-message-delete"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-delete[one]
+msgid "1 message deleted"
+msgstr "1 messaedje disfacé"
+
+#: toaster-message-delete[two]
+msgctxt "toaster-message-delete[two]"
+msgid "{{ n }} messages deleted"
+msgstr "{{ n }} messaedjes disfacés"
+
+#: toaster-message-delete[few]
+msgctxt "toaster-message-delete[few]"
+msgid "{{ n }} messages deleted"
+msgstr "{{ n }} messaedjes disfacés"
+
+#: toaster-message-delete[many]
+msgctxt "toaster-message-delete[many]"
+msgid "{{ n }} messages deleted"
+msgstr "{{ n }} messaedjes disfacés"
+
+#: toaster-message-delete[other]
+msgctxt "toaster-message-delete[other]"
+msgid "{{ n }} messages deleted"
+msgstr "{{ n }} messaedjes disfacés"
+
+#: toaster-retryable-syncfailed
+msgid "Unable to connect to server"
+msgstr "Dji n’  mi sai aloyî å sierveu"
+
+#: form-clear-input
+msgid "Remove text"
+msgstr "Oister scrijhaedje"
+
+#: confirm-dialog-title
+msgid "Confirmation"
+msgstr "Racertinaedje"
+
+#. # new-emails refers to the text shown on a notification that users
+#. # get when they receive new, unread email. The ui component that utilizes
+#. # this lives in apps/email/js/message_list_topbar.js.
+#: new-emails
+msgctxt "new-emails"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: new-emails[one]
+msgid "1 New Email"
+msgstr "1 novea emile"
+
+#: new-emails[two]
+msgctxt "new-emails[two]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} noveas emiles"
+
+#: new-emails[few]
+msgctxt "new-emails[few]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} noveas emiles"
+
+#: new-emails[many]
+msgctxt "new-emails[many]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} noveas emiles"
+
+#: new-emails[other]
+msgctxt "new-emails[other]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} noveas emiles"
