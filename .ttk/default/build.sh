@@ -52,7 +52,7 @@ do
 		pot2po $verbosity -t $translation_dir/.tmp/$polang $translation_dir/templates $translation_dir/$polang
 		rm -rf $translation_dir/.tmp/$polang
 		# new locale files
-		po2moz $verbosity --exclude="obsolete" -t $base_dir/build/locales/$mozrelease/en-US $translation_dir/$polang $base_dir/build/locales/$mozrelease/$mozlang
+		po2moz $verbosity --removeuntranslated --exclude="obsolete" -t $base_dir/build/locales/$mozrelease/en-US $translation_dir/$polang $base_dir/build/locales/$mozrelease/$mozlang
 	fi
 done
 
