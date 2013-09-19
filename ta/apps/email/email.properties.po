@@ -1,0 +1,1167 @@
+#. extracted from ./apps/email/email.properties
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-02 12:33+0100\n"
+"PO-Revision-Date: 2013-09-12 13:51+0000\n"
+"Last-Translator: thangamani-arun <thangam.arunx@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ta\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
+"X-POOTLE-MTIME: 1378993885.000000\n"
+
+#: setup-app-name-header
+msgid "Mail"
+msgstr "மடல்"
+
+#: setup-empty-account-prompt
+msgid ""
+"You are not set up to send or receive email. Would you like to do that now?"
+msgstr ""
+"நீங்கள் மடலை அல்லது பெறவோ முடியாதபடி அமைக்கப்பட்டுள்ளது. நீங்கள் அதை செய்ய "
+"விரும்புகிறீர்களா?"
+
+#: setup-pick-service
+msgid "To send and receive email, you will need to set up an account."
+msgstr "ஒரு கணக்கை அமைப்பதன் மூலம், மின்னஞ்சலை அனுப்பவோ அல்லது பெறவோ முடியும்."
+
+#. # Title of the account setup card where the user enters their display name,
+#. # e-mail address, and password.
+#: setup-account-header3
+msgid "New account"
+msgstr "புதிய கணக்கு"
+
+#: setup-info-header
+msgid "Your login information"
+msgstr "உங்களின் உள்நுழைவு தகவல்"
+
+#. # The placeholder for the display name of the user that will be displayed in the
+#. # account setup screen input box for the display name until they enter any text
+#. # in the box.  When you send an e-mail, the "From" header contains the user's
+#. # display name ("John Doe") as well as the e-mail address
+#. # ("john.doe@example.com").  In the future this input box will be labeled, but
+#. # it is currently unlabeled because of screen real estate concerns.
+#: setup-info-name.placeholder
+msgid "Your name"
+msgstr "உங்களுடைய பெயர்"
+
+#. # The placeholder for the user's e-mail address that will be displayed in the
+#. # account setup screen input box for the e-mail address until they enter any
+#. # text in the box.  The value will be used to configure the e-mail account.
+#: setup-info-email.placeholder
+msgid "someone@example.com"
+msgstr "someone@example.com"
+
+#. # The placeholder for the user's password that will be displayed in the account
+#. # setup screen input box for the password until they enter any text in the box.
+#. # The value will be used to configure the e-mail account and saved for future
+#. # usage.
+#: setup-info-password.placeholder
+msgctxt "setup-info-password.placeholder"
+msgid "Password"
+msgstr "கடவுச்சொல்"
+
+#: setup-info-next
+msgctxt "setup-info-next"
+msgid "Next"
+msgstr "அடுத்து"
+
+#: setup-progress-wait
+msgid "Setting up account"
+msgstr "கணக்கை அமை"
+
+#: setup-completed-header
+msgid "Mail account setup"
+msgstr "மின்னஞ்சல் கணக்கை அமை"
+
+#: setup-completed-label
+msgid "All done!"
+msgstr "எல்லாம் முடிந்தது!"
+
+#: setup-add-another-account
+msgid "Add another account"
+msgstr "மற்றொரு கணக்கை சேர்"
+
+#: setup-show-mail
+msgid "Continue to Mail"
+msgstr "மடலுக்கு தொடர்"
+
+#. # The error for when the user tries to create an account without a network
+#. # connection active.
+#: setup-error-offline
+msgid "This device is currently offline. Connect to a network and try again."
+msgstr ""
+"இந்தக்கருவி தற்போது செயல்பாட்டில் இல்லை. ஒரு பிணையத்துடன் இணை மற்றும் மீண்டும் முயற்சி."
+
+#. # The error for either a bad username or a bad password.  For security reasons,
+#. # servers try not to distinguish between the two which is why we also cannot
+#. # tell them apart either.  Also, if the user made a typo, they could have made
+#. # it in either place.
+#: setup-error-bad-user-or-pass2
+msgid "Invalid username or password. Check for typos."
+msgstr "செல்லாத பயனர் பெயர் அல்லது கடவுச்சொல். தட்டுவதை சரிபார்க்கவும்."
+
+#. # The error for a user having the correct username and password, but the mail
+#. # server explicitly indicates they don't have permission to talk to the mail
+#. # server.  This is currently only expected from ActiveSync servers; situations
+#. # like gmail over IMAP indicating that IMAP is disabled for the account or
+#. # domain have their own error code: setup-error-imap-disabled.
+#: setup-error-not-authorized
+msgid "The server said you're not authorized to create an account"
+msgstr "உங்களுக்கு ஒரு கணக்கை உருவாக்க அதிகாரம் இல்லையென சேவகன் சொல்கிறது "
+
+#. # The fallback error; if we don't have a better error, we report this.
+#: setup-error-unknown2
+msgid ""
+"An unknown error occurred. Check your network connection or try the manual "
+"configuration option."
+msgstr ""
+"தெரியாத பிழை நேர்ந்துள்ளது. உங்களுடைய பிணைய இணைப்பை சரிபார் அல்லது கைமுறையாக "
+"அமைப்புகளை முயற்சி செய்."
+
+#. # The error for Gmail accounts where 2-factor authentication (where you receive
+#. # a text message on your phone or run a special app) is enabled, and so the
+#. # user needs to create and use an application specific password to allow us to
+#. # talk to the server.
+#: setup-error-needs-app-pass
+msgid ""
+"You must use an application specific password for two-factor Gmail accounts"
+msgstr ""
+"நீங்கள் கட்டாயமாக இரு-காரணி பயன்பாடான ஜிமெயில் கணக்குகளுக்கு என ஒரு குறிப்பிட்ட "
+"கடவுச்சொல்லை பயன்படுத்த வேண்டும்"
+
+#. # The error for Gmail accounts where IMAP is not enabled.  This can occur
+#. # for individual users where they have disabled IMAP from the settings UI.
+#. # This can also occur for apps-for-domains where the domain is not configured
+#. # to support IMAP.
+#: setup-error-imap-disabled
+msgid "You must enable IMAP for your Gmail account"
+msgstr "உங்களுடைய ஜிமெயில் கணக்குக்கு கட்டாயமாக IMAP ஐ செயல்படுத்த வேண்டும்"
+
+#. # The error for when we are able to contact a server that should be the mail
+#. # server but we are unable to establish a secure connection.
+#: setup-error-bad-security
+msgid ""
+"Unable to establish a secure connection with \"{{server}}\". There may be a "
+"problem with your network or the server."
+msgstr ""
+"பாதுகாப்பான இணைப்பை \"{{server}}\" உடன் ஏற்ப்படுத்த இயலவில்லை. உங்களுடைய "
+"பிணையத்துடனோ அல்லது சேவகனுடனோ பிழை இருக்கலாம்."
+
+#. # The error for when we try to contact a server but see no indication of a
+#. # response before we give up because of a timeout.
+#: setup-error-unresponsive-server
+msgid ""
+"Unable to establish a connection with \"{{server}}\". There may be a problem "
+"with the network."
+msgstr ""
+"இணைப்பை \"{{server}}\" உடன் ஏற்ப்படுத்த இயலவில்லை. உங்களுடைய பிணையத்துடன் பிழை "
+"இருக்கலாம்."
+
+#. # The error for when we able to establish a (secure) connection with the server,
+#. # but there is some type of failure talking to the server that isn't covered by
+#. # other errors.  Hopefully this is just a temporary problem on the server, but
+#. # it could also be a fundamental incompatibility between our software and the
+#. # server's software.
+#: setup-error-server-problem
+msgid "There is a problem with the server \"{{server}}\". Try again later."
+msgstr "சேவகன் \"{{server}}\" உடன் பிழை இருக்கலாம். பின்னர் மீண்டும் முயற்சி."
+
+#. # The error for when we are trying to figure out the right server settings for
+#. # an account based on the e-mail address the user typed in during configuration,
+#. # but we can't find the right settings.  This is either because the user made a
+#. # typo and so we are looking for configuration data that does not exist, there
+#. # were network failures trying to look the information up, or the information is
+#. # not available.
+#: setup-error-no-config-info
+msgid ""
+"Unable to automatically configure your account. Correct your e-mail address "
+"or try the manual configuration option."
+msgstr ""
+"உங்களுடைய கணக்கை தானாக அமைக்க இயலவில்லை. உங்களுடைய மின்னஞ்சல் முகவரியை சரிபார் அல்லது "
+"கைமுறை அமைப்பை முயற்சி செய்."
+
+#. # The error for when the user is trying to set up an account with a server that
+#. # currently indicates it is offline for maintenance.
+#: setup-error-server-maintenance
+msgid "The server \"{{server}}\" is offline for maintenance. Try again later."
+msgstr ""
+"சேவகன் \"{{server}}\" பரமாரிப்புக்காக செயலாக்கத்தில் இல்லை. பிறகு மீண்டும் முயற்சி செய்."
+
+#. # The error when the user trying to register a duplicate account
+#: setup-error-account-already-exists
+msgid "This account is already configured."
+msgstr "இந்த கணக்கு எற்கனவே உள்ளமைக்கப்பட்டள்ளது."
+
+#: setup-manual-config2
+msgctxt "setup-manual-config2"
+msgid "Manual setup"
+msgstr "கைமுறை அமைப்பு"
+
+#: setup-manual-config-header
+msgctxt "setup-manual-config-header"
+msgid "Manual setup"
+msgstr "கைமுறை அமைப்பு"
+
+#: setup-manual-account-type
+msgctxt "setup-manual-account-type"
+msgid "Account type"
+msgstr "கணக்கு வகை"
+
+#: setup-manual-imap-header
+msgctxt "setup-manual-imap-header"
+msgid "IMAP settings"
+msgstr "IMAP அமைப்புகள்"
+
+#: setup-manual-smtp-header
+msgctxt "setup-manual-smtp-header"
+msgid "SMTP settings"
+msgstr "SMTP அமைப்புகள்"
+
+#: setup-manual-activesync-header
+msgctxt "setup-manual-activesync-header"
+msgid "ActiveSync settings"
+msgstr "செயலிலுள்ள ஒத்தசைவு அமைப்புகள்"
+
+#: setup-manual-next
+msgctxt "setup-manual-next"
+msgid "Next"
+msgstr "அடுத்து"
+
+#: setup-manual-socket
+msgid "Socket Type"
+msgstr "சாக்கெட் வகை"
+
+#: setup-manual-socket-ssl
+msgid "SSL"
+msgstr "எஸ்எஸ்எல்"
+
+#: setup-manual-hostname.placeholder
+msgctxt "setup-manual-hostname.placeholder"
+msgid "Hostname"
+msgstr "புரவலன் பெயர்"
+
+#: setup-manual-port.placeholder
+msgid "Port Number"
+msgstr "போர்ட் எண்"
+
+#: setup-manual-username.placeholder
+msgctxt "setup-manual-username.placeholder"
+msgid "Username"
+msgstr "பயனர்பெயர்"
+
+#: setup-bad-password-header
+msgid "Bad password!"
+msgstr "மோசமான கடவுச்சொல்!"
+
+#: setup-bad-password
+msgid "We could not sign in to the server. Maybe your password is wrong?"
+msgstr "நாங்க சேவகனுள் நுழைய முடியவில்லை. உங்களுடைய கடவுச்சொல் தவறாக இருக்கலாம்?"
+
+#: setup-new-password.placeholder
+msgid "New password"
+msgstr "புதிய கடவுச்சொல்"
+
+#: setup-fix-password
+msgid "Retry with new password"
+msgstr "மீண்டும் புதிய கடவுச்சொல்லுடன் முயற்சி"
+
+#: setup-gmail-twofactor-header
+msgid "Two-Factor Enabled"
+msgstr "இரட்டை-காரணி செயற்பாட்டிலுள்ளது"
+
+#: setup-gmail-twofactor-message
+msgid "You need to enter an application-specific password below."
+msgstr "நீங்க ஒரு பயன்பாட்டுக்குறிய கடவுச்சொல்லை கீழே உள்ளிட வேண்டும்."
+
+#: setup-gmail-twofactor-fix
+msgid "Use application password"
+msgstr "பயன்பாட்டின் கடவுச்சொல்லை பயன்படுத்து"
+
+#: setup-gmail-imap-header
+msgid "IMAP Disabled"
+msgstr "IMAP முடக்கப்பட்டது"
+
+#: setup-gmail-imap-message
+msgid "You must enable IMAP on your Gmail account "
+msgstr "உங்களுடைய ஜிமெயில் கணக்கில் கட்டாயமாக IMAP ஐ செயற்படுத்த வேண்டும் "
+
+#: setup-gmail-imap-retry
+msgctxt "setup-gmail-imap-retry"
+msgid "Retry"
+msgstr "மீண்டும் முயற்சி"
+
+#: settings-main-header
+msgid "Mail Settings"
+msgstr "மின்னஞ்சல் அமைப்புகள்"
+
+#: settings-done
+msgid "Done"
+msgstr "முடிந்தது"
+
+#: settings-account-section
+msgctxt "settings-account-section"
+msgid "Accounts"
+msgstr "கணக்குகள்"
+
+#: settings-account-add
+msgid "Add Account"
+msgstr "கணக்கை சேர்"
+
+#: settings-account-delete
+msgid "Delete account"
+msgstr "கணக்கை நீக்கு"
+
+#: settings-account-delete-prompt
+msgid ""
+"Are you sure you want to delete your {{account}} mail account? You will have "
+"to re-download your mail if you re-create the account."
+msgstr ""
+"உங்களுடைய மின்னஞ்சல் {{account}} கணக்கை உறுதியாக நீக்க வேண்டுமா? மற்றொரு மடல் கணக்கை "
+"உருவாக்கும் பொது இன்னொரு தடவை உங்களுடைய மடல்களை பதிவிறக்கம் செய்யனும்."
+
+#: settings-account-delete-cancel
+msgctxt "settings-account-delete-cancel"
+msgid "Cancel"
+msgstr "இரத்துசெய்"
+
+#: settings-account-delete-confirm
+msgctxt "settings-account-delete-confirm"
+msgid "Delete"
+msgstr "நீக்கு"
+
+#: settings-about-section
+msgid "About"
+msgstr "பற்றி"
+
+#: settings-general-section
+msgid "General settings"
+msgstr "பொது அமைப்புகள்"
+
+#: settings-check-mail
+msgid "Check mail"
+msgstr "அஞ்சல் வரவை பார்"
+
+#: settings-show-images
+msgid "Always show images"
+msgstr "எப்போதும் படங்களைக் காட்டு"
+
+#: settings-download-attachments
+msgid "Download attachments"
+msgstr "இணைப்புகளை பதிவிறக்கு"
+
+#: settings-notify-mail
+msgid "Notify of new mail"
+msgstr "புதிய மடலை அறிவிக்கவும்"
+
+#: settings-check-3min
+msgid "3 minutes"
+msgstr "3 நிமிடங்கள்"
+
+#: settings-check-5min
+msgid "5 minutes"
+msgstr "5 நிமிடங்கள்"
+
+#: settings-check-10min
+msgid "10 minutes"
+msgstr "10 நிமிடங்கள்"
+
+#: settings-check-15min
+msgid "15 minutes"
+msgstr "15 நிமிடங்கள்"
+
+#: settings-check-30min
+msgid "30 minutes"
+msgstr "30 நிமிடங்கள்"
+
+#: settings-check-60min
+msgid "60 minutes"
+msgstr "60 நிமிடங்கள்"
+
+#: settings-check-manual
+msgid "Manually"
+msgstr "கைமுறையில்"
+
+#: settings-default-account
+msgid "Default account"
+msgstr "முன்னிருப்பு கணக்கு"
+
+#: settings-account-type
+msgctxt "settings-account-type"
+msgid "Account type"
+msgstr "கணக்கு வகை"
+
+#: settings-account-credentials
+msgid "Credentials"
+msgstr "நம்பிக்கைச்சான்றுகள்"
+
+#: settings-account-synchronize
+msgid "Synchronize"
+msgstr "ஒத்திசை"
+
+#: settings-activesync-label
+msgctxt "settings-activesync-label"
+msgid "ActiveSync settings"
+msgstr "செயலிலுள்ள ஓத்தசைவு அமைப்புகள்"
+
+#: settings-imap-label
+msgctxt "settings-imap-label"
+msgid "IMAP settings"
+msgstr "IMAP அமைப்புகள்"
+
+#: settings-smtp-label
+msgctxt "settings-smtp-label"
+msgid "SMTP settings"
+msgstr "SMTP அமைப்புகள்"
+
+#: settings-hostname
+msgctxt "settings-hostname"
+msgid "Hostname"
+msgstr "புரவலன் பெயர்"
+
+#: settings-port
+msgid "Port"
+msgstr "போர்ட்"
+
+#: settings-username
+msgctxt "settings-username"
+msgid "Username"
+msgstr "பயனர்பெயர்"
+
+#: settings-password
+msgctxt "settings-password"
+msgid "Password"
+msgstr "கடவுச்சொல்"
+
+#: settings-save
+msgid "Save"
+msgstr "சேமி"
+
+#: settings-password-empty
+msgid "Password field should not be empty"
+msgstr "கடவுச்சொல் பகுதி காலியாக விடக் கூடாது"
+
+#: settings-synchronize-auto
+msgid "Automatic"
+msgstr "தானாக"
+
+#: settings-synchronize-one-day
+msgid "1 day"
+msgstr "1 நாள்"
+
+#: settings-synchronize-three-days
+msgid "3 days"
+msgstr "3 நாட்கள்"
+
+#: settings-synchronize-one-week
+msgid "1 week"
+msgstr "1 வாரம்"
+
+#: settings-synchronize-two-weeks
+msgid "2 weeks"
+msgstr "2 வாரம்"
+
+#: settings-synchronize-one-month
+msgid "1 month"
+msgstr "1 மாதம்"
+
+#: settings-synchronize-all
+msgid "All messages"
+msgstr "அனைத்து செய்திகளும்"
+
+#: accounts-header
+msgctxt "accounts-header"
+msgid "Accounts"
+msgstr "கணக்குகள்"
+
+#: accounts-button
+msgctxt "accounts-button"
+msgid "Accounts"
+msgstr "கணக்குகள்"
+
+#: envelope-from
+msgctxt "envelope-from"
+msgid "From"
+msgstr "அனுப்புநர்"
+
+#: envelope-to
+msgctxt "envelope-to"
+msgid "To"
+msgstr "பெறுநர்"
+
+#: envelope-cc
+msgctxt "envelope-cc"
+msgid "Cc"
+msgstr "சிசி"
+
+#: envelope-bcc
+msgid "Bcc"
+msgstr "பிசிசி"
+
+#: reader-header
+msgid "Read"
+msgstr "படி"
+
+#: compose-header
+msgid "Compose message"
+msgstr "செய்தியை தொகு"
+
+#: compose-header-short
+msgid "Compose"
+msgstr "தொகு"
+
+#: compose-send
+msgid "Send"
+msgstr "அனுப்பு"
+
+#: compose-to
+msgctxt "compose-to"
+msgid "To"
+msgstr "பெறுநர்"
+
+#: compose-cc
+msgid "cc"
+msgstr "சிசி"
+
+#: compose-bcc
+msgid "bcc"
+msgstr "பிசிசி"
+
+#: compose-attachments
+msgctxt "compose-attachments"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: compose-attachments[zero]
+msgid "Attachments"
+msgstr "இணைப்புகள்"
+
+#: compose-attachments[one]
+msgid "{{ n }} attachment"
+msgstr "{{ n }} இணைப்பு"
+
+#: compose-attachments[two]
+msgctxt "compose-attachments[two]"
+msgid "{{ n }} attachments"
+msgstr "{{ n }} இணைப்புகள்"
+
+#: compose-attachments[few]
+msgctxt "compose-attachments[few]"
+msgid "{{ n }} attachments"
+msgstr "{{ n }} இணைப்புகள்"
+
+#: compose-attachments[many]
+msgctxt "compose-attachments[many]"
+msgid "{{ n }} attachments"
+msgstr "{{ n }} இணைப்புகள்"
+
+#: compose-attachments[other]
+msgctxt "compose-attachments[other]"
+msgid "{{ n }} attachments"
+msgstr "{{ n }} இணைப்புகள்"
+
+#: compose-subject
+msgctxt "compose-subject"
+msgid "Subject"
+msgstr "பொருள்"
+
+#: compose-draft-save
+msgid "Save to Local Drafts"
+msgstr "உள்ளூர் வரைவுகளில் சேமி"
+
+#: compose-discard-message
+msgid "Discard email?"
+msgstr "மின்னஞ்சலை தவிர்க்கவா?"
+
+#: compose-discard-confirm
+msgid "Discard"
+msgstr "தவிர்"
+
+#: compose-sending-message
+msgid "Sending email"
+msgstr "மின்னஞ்சல் அனுப்பப்படுகிறது"
+
+#: compose-send-message-failed
+msgid "Sending email failed"
+msgstr "மின்னஞ்சல் அனுப்புவது தோல்வியுற்றது"
+
+#: composer-attachment-large
+msgid "Attachment too large"
+msgstr "இணைப்பு பெரிய அளவில் உள்ளது"
+
+#: composer-attachments-large
+msgid "Attachments too large"
+msgstr "இணைப்புகள் பெரிய அளவில் உள்ளது"
+
+#: compose-attchment-size-exceeded
+msgid "The selected attachment is too large to send with this message."
+msgstr "செய்தியை அனுப்ப தேர்ந்தெடுக்கப்பட்ட இணைப்பு பெரிய அளவில் உள்ளது."
+
+#: compose-attchments-size-exceeded
+msgid ""
+"The selected attachments are too large to send with this message. Try "
+"selecting fewer files."
+msgstr ""
+"செய்தியை அனுப்ப தேர்ந்தெடுக்கப்பட்ட இணைப்பு பெரிய அளவில் உள்ளது. குறைந்தளவு கோப்புகளை "
+"தேர்ந்தெடுத்து முயற்சிசெய்."
+
+#: dialog-button-ok
+msgid "OK"
+msgstr "சரி"
+
+#: attachment-size-kib
+msgid "{{kilobytes}}K"
+msgstr "{{kilobytes}}கி"
+
+#: message-attachment-view.textContent
+msgid "View"
+msgstr "பார்"
+
+#: message-no-subject
+msgid "(no subject)"
+msgstr "(பொருள் இல்லை)"
+
+#: message-edit-menu-star
+msgid "Star"
+msgstr "நட்சத்திரம்"
+
+#: message-edit-menu-unstar
+msgid "Unstar"
+msgstr "நட்சத்திரத்தை நீக்கு"
+
+#: message-edit-menu-mark-read
+msgid "Mark as read"
+msgstr "படித்ததாக குறி"
+
+#: message-edit-menu-mark-unread
+msgid "Mark as unread"
+msgstr "படிக்காததாக குறி"
+
+#: message-edit-menu-move
+msgid "Move"
+msgstr "நகர்த்து"
+
+#: message-edit-menu-delete
+msgctxt "message-edit-menu-delete"
+msgid "Delete"
+msgstr "அழி"
+
+#: message-edit-delete-confirm
+msgid "Delete email message?"
+msgstr "மின்னஞ்சல் மடல்கள் அழி?"
+
+#: message-send-attachment-disabled-confirm
+msgid "Attachments can not be forwarded."
+msgstr "இணைப்புகளை முன்னனுப்ப முடியாது."
+
+#: message-multiedit-header
+msgctxt "message-multiedit-header"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: message-multiedit-header[zero]
+msgid "Edit"
+msgstr "திருத்து"
+
+#: message-multiedit-header[one]
+msgctxt "message-multiedit-header[one]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} தேர்ந்தெடுக்கப்பட்டன"
+
+#: message-multiedit-header[two]
+msgctxt "message-multiedit-header[two]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} தேர்ந்தெடுக்கப்பட்டன"
+
+#: message-multiedit-header[few]
+msgctxt "message-multiedit-header[few]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} தேர்ந்தெடுக்கப்பட்டன"
+
+#: message-multiedit-header[many]
+msgctxt "message-multiedit-header[many]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} தேர்ந்தெடுக்கப்பட்டன"
+
+#: message-multiedit-header[other]
+msgctxt "message-multiedit-header[other]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} தேர்ந்தெடுக்கப்பட்டன"
+
+#: browse-to-url-prompt
+msgid "Browse to URL?: {{ url }}"
+msgstr "இணையமுகவரியில் தேடு?: {{ url }}"
+
+#: message-download-images
+msgctxt "message-download-images"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: message-download-images[one]
+msgid "This email contains one image. Click to download."
+msgstr "இந்த மின்னஞ்சல் ஒரு படத்தை கொண்டுள்ளது. பதிவிறக்க சொடுக்கு."
+
+#: message-download-images[two]
+msgctxt "message-download-images[two]"
+msgid "This email contains {{ n }} images. Click to download."
+msgstr "இந்த மின்னஞ்சல் {{ n }} படங்களை கொண்டுள்ளது. பதிவிறக்க சொடுக்கு."
+
+#: message-download-images[few]
+msgctxt "message-download-images[few]"
+msgid "This email contains {{ n }} images. Click to download."
+msgstr "இந்த மின்னஞ்சல் {{ n }} படங்களை கொண்டுள்ளது. பதிவிறக்க சொடுக்கவும்."
+
+#: message-download-images[many]
+msgctxt "message-download-images[many]"
+msgid "This email contains {{ n }} images. Click to download."
+msgstr "இந்த மின்னஞ்சல் {{ n }} படங்களை கொண்டுள்ளது. பதிவிறக்க சொடுக்கவும்."
+
+#: message-download-images[other]
+msgctxt "message-download-images[other]"
+msgid "This email contains {{ n }} images. Click to download."
+msgstr "இந்த மின்னஞ்சல் {{ n }} படங்களை கொண்டுள்ளது. பதிவிறக்க சொடுக்கவும்."
+
+#: message-show-external-images
+msgid "Show external images"
+msgstr "புறத்தேயான படங்களை காண்பி"
+
+#: message-multiedit-cancel
+msgctxt "message-multiedit-cancel"
+msgid "Cancel"
+msgstr "இரத்துசெய்"
+
+#: message-multiedit-delete-confirm
+msgctxt "message-multiedit-delete-confirm"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: message-multiedit-delete-confirm[one]
+msgid "Delete this email message?"
+msgstr "இந்த மின்னஞ்சல் செய்தியை அழிக்கவா?"
+
+#: message-multiedit-delete-confirm[two]
+msgctxt "message-multiedit-delete-confirm[two]"
+msgid "Delete {{ n }} email messages?"
+msgstr "{{ n }} மின்னஞ்சல் செய்திகளை அழிக்கவா?"
+
+#: message-multiedit-delete-confirm[few]
+msgctxt "message-multiedit-delete-confirm[few]"
+msgid "Delete {{ n }} email messages?"
+msgstr "{{ n }} மின்னஞ்சல் செய்திகளை அழிக்கவா?"
+
+#: message-multiedit-delete-confirm[many]
+msgctxt "message-multiedit-delete-confirm[many]"
+msgid "Delete {{ n }} email messages?"
+msgstr "{{ n }} மின்னஞ்சல் செய்திகளை அழிக்கவா?"
+
+#: message-multiedit-delete-confirm[other]
+msgctxt "message-multiedit-delete-confirm[other]"
+msgid "Delete {{ n }} email messages?"
+msgstr "{{ n }} மின்னஞ்சல் செய்திகளை அழிக்கவா?"
+
+#: message-search-from
+msgctxt "message-search-from"
+msgid "From"
+msgstr "அனுப்புநர்"
+
+#: message-search-to
+msgctxt "message-search-to"
+msgid "To"
+msgstr "பெறுநர்"
+
+#: message-search-subject
+msgctxt "message-search-subject"
+msgid "Subject"
+msgstr "பொருள்"
+
+#: message-search-body
+msgid "Body"
+msgstr "மடல் உள்ளடக்கம்"
+
+#: message-search-all
+msgid "All"
+msgstr "அனைத்தும்"
+
+#: message-search-input.placeholder
+msgid "Search Mail"
+msgstr "மடலைத் தேடு"
+
+#: message-search-cancel-accessible
+msgid "Cancel search"
+msgstr "தேடுலை இரத்துசெய்"
+
+#: messages-syncing
+msgid "Loading messages"
+msgstr "செய்திகளை ஏற்றுகிறது"
+
+#: messages-sync-more
+msgid "Load more messages from server"
+msgstr "சேவகனிலிருந்து கூடுதலான செய்திகளை ஏற்று"
+
+#: messages-folder-empty
+msgid "No mail in this Folder"
+msgstr "இந்த அடைவில் புதிய மடல் எதுவும் இல்லை"
+
+#: messages-search-empty
+msgid "No matches in locally cached messages"
+msgstr "கணினியின் தற்காலிக சேமிப்பு செய்திகளுடன் பொருத்தமில்லை"
+
+#: messages-folder-select
+msgid "Select folder"
+msgstr "அடைவை தேர்வு செய்"
+
+#: message-contact-menu-create
+msgid "Save new contact"
+msgstr "புதிய தொடர்பை சேமி"
+
+#: message-contact-menu-add-existing
+msgid "Add to existing contact"
+msgstr "ஏற்கனவேயுள்ள தொடர்பில் சேர்"
+
+#: message-contact-menu-view
+msgid "View contact"
+msgstr "புதிய தொடர்பு"
+
+#: message-contact-menu-reply
+msgid "Reply"
+msgstr "பதிலளி"
+
+#: message-contact-menu-new
+msgid "Send new mail"
+msgstr "புதிய மின்னஞ்சலை அனுப்பு"
+
+#: folder-list-header
+msgid "Folders"
+msgstr "அடைவுகள்"
+
+#. # L10n note: account-last-synced-label is found on the folder list card,
+#. # accessible from the message-list card by clicking the icon in the upper left
+#. # of the card.  The label is displayed at the bottom of the folder list and is
+#. # right aligned.  There is currently 1 button to the left of the label and soon
+#. # there will be two, so it is desirable to use as short a translation as
+#. # possible.  To the right of the label, a (short) relative timestamp is
+#. # displayed.
+#: account-last-synced-label
+msgid "Last sync: "
+msgstr "கடைசி ஒத்திசைவு: "
+
+#. # L10n note: This string is displayed to the right of account-last-synced-label
+#. # if no folder has ever been synchronized.  Otherwise the space occupied by this
+#. # string will be a (short) relative timestamp.
+#: account-never-synced
+msgid "Never"
+msgstr "எப்போதுமில்லை"
+
+#. # LOCALIZATION NOTE: do not translate {name}
+#: reply-quoting-wrote
+msgid "{name} wrote"
+msgstr "{name} எழுது"
+
+#: forward-original-message
+msgid "Original message"
+msgstr "அசல் செய்தி"
+
+#. # L10n note: These are the labels we use when displaying the envelope info for a
+#. # message that is forwarded inline.  While automatic recovery of this
+#. # information by clients is made difficult by these strings regularly being
+#. # localized, we attempt to remain consistent with apps such as Thunderbird for
+#. # at least English.
+#: forward-header-subject
+msgctxt "forward-header-subject"
+msgid "Subject"
+msgstr "பொருள்"
+
+#: forward-header-date
+msgid "Date"
+msgstr "தேதி"
+
+#: forward-header-from
+msgctxt "forward-header-from"
+msgid "From"
+msgstr "அனுப்புநர்"
+
+#. # This really wants to have the dash in it for consistency with Thunderbird
+#: forward-header-reply-to
+msgid "Reply-To"
+msgstr "பெறுநருக்கு-பதில்"
+
+#: forward-header-to
+msgctxt "forward-header-to"
+msgid "To"
+msgstr "பதில்"
+
+#: forward-header-cc
+msgctxt "forward-header-cc"
+msgid "Cc"
+msgstr "சிசி"
+
+#. # Localized folder names for IMAP servers.  Because the IMAP standard did not
+#. # originally specify a way to express meta-data about folders, folders may be
+#. # named in English to express their purpose.  Then e-mail clients (or webmail
+#. # interfaces) localize these values.  We do this too, following in the
+#. # footsteps of Thunderbird.
+#: folder-inbox
+msgid "Inbox"
+msgstr "மடலகம்"
+
+#: folder-sent
+msgid "Sent"
+msgstr "அனுப்பப்பட்டது"
+
+#: folder-drafts
+msgid "Drafts"
+msgstr "வரைவுகள்"
+
+#: folder-trash
+msgid "Trash"
+msgstr "குப்பைதொட்டி"
+
+#: folder-queue
+msgid "Unsent"
+msgstr "அனுப்பப்படாதது"
+
+#: folder-junk
+msgid "Junk"
+msgstr "தேவையற்ற"
+
+#: folder-archives
+msgid "Archives"
+msgstr "காப்பகங்கள்"
+
+#: folder-localdrafts
+msgid "Local Drafts"
+msgstr "உள்ளூர் வரைவுகள்"
+
+#: toaster-undo
+msgid "Undo"
+msgstr "செயல்நீக்கு"
+
+#: toaster-retry
+msgctxt "toaster-retry"
+msgid "Retry"
+msgstr "மீண்டும் முயல்க"
+
+#: toaster-message-star
+msgctxt "toaster-message-star"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-star[one]
+msgid "1 message flag set"
+msgstr "1 செய்திக்கு கொடி அமை"
+
+#: toaster-message-star[two]
+msgctxt "toaster-message-star[two]"
+msgid "{{ n }} messages flag set"
+msgstr "{{ n }} செய்திகளுக்கு கொடி அமை"
+
+#: toaster-message-star[few]
+msgctxt "toaster-message-star[few]"
+msgid "{{ n }} messages flag set"
+msgstr "{{ n }} செய்திகளுக்கு கொடி அமை"
+
+#: toaster-message-star[many]
+msgctxt "toaster-message-star[many]"
+msgid "{{ n }} messages flag set"
+msgstr "{{ n }} மடல்களுக்கு கொடி அமை"
+
+#: toaster-message-star[other]
+msgctxt "toaster-message-star[other]"
+msgid "{{ n }} messages flag set"
+msgstr "{{ n }} மடல்களுக்கு கொடி அமை"
+
+#: toaster-message-unstar
+msgctxt "toaster-message-unstar"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-unstar[one]
+msgid "1 message flag removed"
+msgstr "1 மடலுக்கு கொடி நீக்கப்பட்டது"
+
+#: toaster-message-unstar[two]
+msgctxt "toaster-message-unstar[two]"
+msgid "{{ n }} messages flag removed"
+msgstr "{{ n }} மடலுகளுக்கு கொடி நீக்கப்பட்டது"
+
+#: toaster-message-unstar[few]
+msgctxt "toaster-message-unstar[few]"
+msgid "{{ n }} messages flag removed"
+msgstr "{{ n }} மடலுகளுக்கு கொடி நீக்கப்பட்டது"
+
+#: toaster-message-unstar[many]
+msgctxt "toaster-message-unstar[many]"
+msgid "{{ n }} messages flag removed"
+msgstr "{{ n }} மடலுகளுக்கு கொடி நீக்கப்பட்டது"
+
+#: toaster-message-unstar[other]
+msgctxt "toaster-message-unstar[other]"
+msgid "{{ n }} messages flag removed"
+msgstr "{{ n }} மடலுகளுக்கு கொடி நீக்கப்பட்டது"
+
+#: toaster-message-read
+msgctxt "toaster-message-read"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-read[one]
+msgid "1 message marked as read"
+msgstr "1 செய்தியை படித்ததாக குறி"
+
+#: toaster-message-read[two]
+msgctxt "toaster-message-read[two]"
+msgid "{{ n }} messages marked as read"
+msgstr "{{ n }} செய்திகளை படித்ததாக குறி"
+
+#: toaster-message-read[few]
+msgctxt "toaster-message-read[few]"
+msgid "{{ n }} messages marked as read"
+msgstr "{{ n }} செய்திகளை படித்ததாக குறி"
+
+#: toaster-message-read[many]
+msgctxt "toaster-message-read[many]"
+msgid "{{ n }} messages marked as read"
+msgstr "{{ n }} செய்திகளை படித்ததாக குறி"
+
+#: toaster-message-read[other]
+msgctxt "toaster-message-read[other]"
+msgid "{{ n }} messages marked as read"
+msgstr "{{ n }} செய்திகளை படித்ததாக குறி"
+
+#: toaster-message-unread
+msgctxt "toaster-message-unread"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-unread[one]
+msgid "1 message marked as unread"
+msgstr "1 செய்தியை படிக்காததாக குறி"
+
+#: toaster-message-unread[two]
+msgctxt "toaster-message-unread[two]"
+msgid "{{ n }} messages marked as unread"
+msgstr "{{ n }} செய்திகளை படிக்காததாக குறி"
+
+#: toaster-message-unread[few]
+msgctxt "toaster-message-unread[few]"
+msgid "{{ n }} messages marked as unread"
+msgstr "{{ n }} செய்திகளை படிக்காததாக குறி"
+
+#: toaster-message-unread[many]
+msgctxt "toaster-message-unread[many]"
+msgid "{{ n }} messages marked as unread"
+msgstr "{{ n }} செய்திகளை படிக்காததாக குறி"
+
+#: toaster-message-unread[other]
+msgctxt "toaster-message-unread[other]"
+msgid "{{ n }} messages marked as unread"
+msgstr "{{ n }} செய்திகளை படிக்காததாக குறி"
+
+#: toaster-message-move
+msgctxt "toaster-message-move"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-move[one]
+msgid "1 message moved"
+msgstr "1 செய்தி நகர்த்தப்பட்டது"
+
+#: toaster-message-move[two]
+msgctxt "toaster-message-move[two]"
+msgid "{{ n }} messages moved"
+msgstr "{{ n }} செய்திகள் நகர்த்தப்பட்டது"
+
+#: toaster-message-move[few]
+msgctxt "toaster-message-move[few]"
+msgid "{{ n }} messages moved"
+msgstr "{{ n }} செய்திகள் நகர்த்தப்பட்டது"
+
+#: toaster-message-move[many]
+msgctxt "toaster-message-move[many]"
+msgid "{{ n }} messages moved"
+msgstr "{{ n }} செய்திகள் நகர்த்தப்பட்டது"
+
+#: toaster-message-move[other]
+msgctxt "toaster-message-move[other]"
+msgid "{{ n }} messages moved"
+msgstr "{{ n }} செய்திகள் நகர்த்தப்பட்டது"
+
+#: toaster-message-delete
+msgctxt "toaster-message-delete"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-delete[one]
+msgid "1 message deleted"
+msgstr "1 செய்தி அழிக்கப்பட்டது"
+
+#: toaster-message-delete[two]
+msgctxt "toaster-message-delete[two]"
+msgid "{{ n }} messages deleted"
+msgstr "{{ n }} செய்திகள் அழிக்கப்பட்டன"
+
+#: toaster-message-delete[few]
+msgctxt "toaster-message-delete[few]"
+msgid "{{ n }} messages deleted"
+msgstr "{{ n }} செய்திகள் அழிக்கப்பட்டன"
+
+#: toaster-message-delete[many]
+msgctxt "toaster-message-delete[many]"
+msgid "{{ n }} messages deleted"
+msgstr "{{ n }} செய்திகள் அழிக்கப்பட்டன"
+
+#: toaster-message-delete[other]
+msgctxt "toaster-message-delete[other]"
+msgid "{{ n }} messages deleted"
+msgstr "{{ n }} செய்திகள் அழிக்கப்பட்டன"
+
+#: toaster-retryable-syncfailed
+msgid "Unable to connect to server"
+msgstr "சேவையகத்துடன் இணைக்க முடியவில்லை"
+
+#: form-clear-input
+msgid "Remove text"
+msgstr "உரையை நீக்கு"
+
+#: confirm-dialog-title
+msgid "Confirmation"
+msgstr "உறுதிப்படுத்துதல்"
+
+#. # new-emails refers to the text shown on a notification that users
+#. # get when they receive new, unread email. The ui component that utilizes
+#. # this lives in apps/email/js/message_list_topbar.js.
+#: new-emails
+msgctxt "new-emails"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: new-emails[one]
+msgid "1 New Email"
+msgstr "1 புதிய மின்னஞ்சல்"
+
+#: new-emails[two]
+msgctxt "new-emails[two]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} புதிய மின்னஞ்சல்கள்"
+
+#: new-emails[few]
+msgctxt "new-emails[few]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} புதிய மின்னஞ்சல்கள்"
+
+#: new-emails[many]
+msgctxt "new-emails[many]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} புதிய மின்னஞ்சல்கள்"
+
+#: new-emails[other]
+msgctxt "new-emails[other]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} புதிய மின்னஞ்சல்கள்"
