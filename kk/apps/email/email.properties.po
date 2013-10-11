@@ -7,7 +7,6 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: kk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -17,26 +16,28 @@ msgstr ""
 
 #: setup-app-name-header
 msgid "Mail"
-msgstr ""
+msgstr "Пошта"
 
 #: setup-empty-account-prompt
 msgid ""
 "You are not set up to send or receive email. Would you like to do that now?"
 msgstr ""
+"Сіз поштаны алу немесе жіберу баптауларын орнатқан жоқсыз. Осыны қазір "
+"жасауды қалайсыз ба? "
 
 #: setup-pick-service
 msgid "To send and receive email, you will need to set up an account."
-msgstr ""
+msgstr "Поштаны жіберу немесе қабылдау үшін сізге тіркелгіні баптау керек."
 
 #. # Title of the account setup card where the user enters their display name,
 #. # e-mail address, and password.
 #: setup-account-header3
 msgid "New account"
-msgstr ""
+msgstr "Жаңа тіркелгі"
 
 #: setup-info-header
 msgid "Your login information"
-msgstr ""
+msgstr "Сіздің тіркелгі ақпаратыңыз"
 
 #. # The placeholder for the display name of the user that will be displayed in the
 #. # account setup screen input box for the display name until they enter any text
@@ -46,14 +47,14 @@ msgstr ""
 #. # it is currently unlabeled because of screen real estate concerns.
 #: setup-info-name.placeholder
 msgid "Your name"
-msgstr ""
+msgstr "Атыңыз"
 
 #. # The placeholder for the user's e-mail address that will be displayed in the
 #. # account setup screen input box for the e-mail address until they enter any
 #. # text in the box.  The value will be used to configure the e-mail account.
 #: setup-info-email.placeholder
 msgid "someone@example.com"
-msgstr ""
+msgstr "someone@example.com"
 
 #. # The placeholder for the user's password that will be displayed in the account
 #. # setup screen input box for the password until they enter any text in the box.
@@ -62,38 +63,39 @@ msgstr ""
 #: setup-info-password.placeholder
 msgctxt "setup-info-password.placeholder"
 msgid "Password"
-msgstr ""
+msgstr "Пароль"
 
 #: setup-info-next
 msgctxt "setup-info-next"
 msgid "Next"
-msgstr ""
+msgstr "Келесі"
 
 #: setup-progress-wait
 msgid "Setting up account"
-msgstr ""
+msgstr "Тіркелгіңіз орнатылып болғанша күте тұрыңыз"
 
 #: setup-completed-header
 msgid "Mail account setup"
-msgstr ""
+msgstr "Пошта тіркелгісін баптау"
 
 #: setup-completed-label
 msgid "All done!"
-msgstr ""
+msgstr "Бәрі де дайын!"
 
 #: setup-add-another-account
 msgid "Add another account"
-msgstr ""
+msgstr "Басқа тіркелгіні қосу"
 
 #: setup-show-mail
 msgid "Continue to Mail"
-msgstr ""
+msgstr "Поштаға өтіп жалғастыру"
 
 #. # The error for when the user tries to create an account without a network
 #. # connection active.
 #: setup-error-offline
 msgid "This device is currently offline. Connect to a network and try again."
 msgstr ""
+"Бұл құрылғы желіден ажыратылған. Желіге байланыс орнатып, қайталап көріңіз."
 
 #. # The error for either a bad username or a bad password.  For security reasons,
 #. # servers try not to distinguish between the two which is why we also cannot
@@ -101,7 +103,7 @@ msgstr ""
 #. # it in either place.
 #: setup-error-bad-user-or-pass2
 msgid "Invalid username or password. Check for typos."
-msgstr ""
+msgstr "Пайдаланушы аты не паролі қате. Қателерге тексеріңіз."
 
 #. # The error for a user having the correct username and password, but the mail
 #. # server explicitly indicates they don't have permission to talk to the mail
@@ -110,7 +112,7 @@ msgstr ""
 #. # domain have their own error code: setup-error-imap-disabled.
 #: setup-error-not-authorized
 msgid "The server said you're not authorized to create an account"
-msgstr ""
+msgstr "Сервер сізде тіркелгіні жасауға құқығыңыз жоқ деген жауапты қайтарды"
 
 #. # The fallback error; if we don't have a better error, we report this.
 #: setup-error-unknown2
@@ -118,6 +120,8 @@ msgid ""
 "An unknown error occurred. Check your network connection or try the manual "
 "configuration option."
 msgstr ""
+"Белгісіз қате орын алды. Желілік байланысыңызды тексеріңіз, немесе қолмен "
+"баптау мүмкіндігін қолданыңыз."
 
 #. # The error for Gmail accounts where 2-factor authentication (where you receive
 #. # a text message on your phone or run a special app) is enabled, and so the
@@ -127,6 +131,8 @@ msgstr ""
 msgid ""
 "You must use an application specific password for two-factor Gmail accounts"
 msgstr ""
+"Gmail қос факторлы тіркелгілері үшін сіз қолданбаға тән парольді қолдануға "
+"тиістісіз"
 
 #. # The error for Gmail accounts where IMAP is not enabled.  This can occur
 #. # for individual users where they have disabled IMAP from the settings UI.
@@ -134,7 +140,7 @@ msgstr ""
 #. # to support IMAP.
 #: setup-error-imap-disabled
 msgid "You must enable IMAP for your Gmail account"
-msgstr ""
+msgstr "Gmail тіркелгіңіз үшін IMAP іске қосуға тиістісіз"
 
 #. # The error for when we are able to contact a server that should be the mail
 #. # server but we are unable to establish a secure connection.
@@ -143,6 +149,8 @@ msgid ""
 "Unable to establish a secure connection with \"{{server}}\". There may be a "
 "problem with your network or the server."
 msgstr ""
+"\"{{server}}\" серверімен қауіпсіз байланысты орнату мүмкін емес. Мәселе "
+"сіздің желіңізде немесе серверде болуы мүмкін."
 
 #. # The error for when we try to contact a server but see no indication of a
 #. # response before we give up because of a timeout.
@@ -151,6 +159,8 @@ msgid ""
 "Unable to establish a connection with \"{{server}}\". There may be a problem "
 "with the network."
 msgstr ""
+"\"{{server}}\" серверімен байланысты орнату мүмкін емес. Мәселе желіде болуы "
+"мүмкін."
 
 #. # The error for when we able to establish a (secure) connection with the server,
 #. # but there is some type of failure talking to the server that isn't covered by
@@ -160,6 +170,7 @@ msgstr ""
 #: setup-error-server-problem
 msgid "There is a problem with the server \"{{server}}\". Try again later."
 msgstr ""
+"\"{{server}}\" сервері мәселелерді кешігуде. Кейінірек қайталап көріңіз."
 
 #. # The error for when we are trying to figure out the right server settings for
 #. # an account based on the e-mail address the user typed in during configuration,
@@ -172,213 +183,220 @@ msgid ""
 "Unable to automatically configure your account. Correct your e-mail address "
 "or try the manual configuration option."
 msgstr ""
+"Тіркелгіңізді автоматты түрде баптау мүмкін емес. Эл. пошта адресіңізді "
+"түзетіңіз немесе қолмен баптау мүмкіндігін қолданыңыз."
 
 #. # The error for when the user is trying to set up an account with a server that
 #. # currently indicates it is offline for maintenance.
 #: setup-error-server-maintenance
 msgid "The server \"{{server}}\" is offline for maintenance. Try again later."
 msgstr ""
+"\"{{server}}\" сервері техникалық жұмыстары салдарынан желіден ажыратылған. "
+"Кейінірек қайталап көріңіз."
 
 #. # The error when the user trying to register a duplicate account
 #: setup-error-account-already-exists
 msgid "This account is already configured."
-msgstr ""
+msgstr "Бұл тіркелгі бапталған болып тұр."
 
 #: setup-manual-config2
 msgctxt "setup-manual-config2"
 msgid "Manual setup"
-msgstr ""
+msgstr "Қолмен орнату"
 
 #: setup-manual-config-header
 msgctxt "setup-manual-config-header"
 msgid "Manual setup"
-msgstr ""
+msgstr "Қолмен орнату"
 
 #: setup-manual-account-type
 msgctxt "setup-manual-account-type"
 msgid "Account type"
-msgstr ""
+msgstr "Тіркелгі түрі"
 
 #: setup-manual-imap-header
 msgctxt "setup-manual-imap-header"
 msgid "IMAP settings"
-msgstr ""
+msgstr "IMAP баптаулары"
 
 #: setup-manual-smtp-header
 msgctxt "setup-manual-smtp-header"
 msgid "SMTP settings"
-msgstr ""
+msgstr "SMTP баптаулары"
 
 #: setup-manual-activesync-header
 msgctxt "setup-manual-activesync-header"
 msgid "ActiveSync settings"
-msgstr ""
+msgstr "ActiveSync баптаулары"
 
 #: setup-manual-next
 msgctxt "setup-manual-next"
 msgid "Next"
-msgstr ""
+msgstr "Келесі"
 
 #: setup-manual-socket
 msgid "Socket Type"
-msgstr ""
+msgstr "Сокет түрі"
 
 #: setup-manual-socket-ssl
 msgid "SSL"
-msgstr ""
+msgstr "SSL"
 
 #: setup-manual-hostname.placeholder
 msgctxt "setup-manual-hostname.placeholder"
 msgid "Hostname"
-msgstr ""
+msgstr "Хост аты"
 
 #: setup-manual-port.placeholder
 msgid "Port Number"
-msgstr ""
+msgstr "Порт нөмірі"
 
 #: setup-manual-username.placeholder
 msgctxt "setup-manual-username.placeholder"
 msgid "Username"
-msgstr ""
+msgstr "Пайдаланушы аты"
 
 #: setup-bad-password-header
 msgid "Bad password!"
-msgstr ""
+msgstr "Пароль қате!"
 
 #: setup-bad-password
 msgid "We could not sign in to the server. Maybe your password is wrong?"
-msgstr ""
+msgstr "Серверге кіре алмадық. Мүмкін, пароліңіз қате шығар?"
 
 #: setup-new-password.placeholder
 msgid "New password"
-msgstr ""
+msgstr "Жаңа пароль"
 
 #: setup-fix-password
 msgid "Retry with new password"
-msgstr ""
+msgstr "Жаңа парольмен қайтадан көру"
 
 #: setup-gmail-twofactor-header
 msgid "Two-Factor Enabled"
-msgstr ""
+msgstr "Қос факторлы іске қосылған"
 
 #: setup-gmail-twofactor-message
 msgid "You need to enter an application-specific password below."
-msgstr ""
+msgstr "Төменде қолданбаға тән парольді енгізу керек."
 
 #: setup-gmail-twofactor-fix
 msgid "Use application password"
-msgstr ""
+msgstr "Қолданба парольін қолдану"
 
 #: setup-gmail-imap-header
 msgid "IMAP Disabled"
-msgstr ""
+msgstr "IMAP сөндірулі"
 
 #: setup-gmail-imap-message
 msgid "You must enable IMAP on your Gmail account "
-msgstr ""
+msgstr "Gmail тіркелгіңіз үшін IMAP іске қосуға тиістісіз"
 
 #: setup-gmail-imap-retry
 msgctxt "setup-gmail-imap-retry"
 msgid "Retry"
-msgstr ""
+msgstr "Қайталау"
 
 #: settings-main-header
 msgid "Mail Settings"
-msgstr ""
+msgstr "Пошта баптаулары"
 
 #: settings-done
 msgid "Done"
-msgstr ""
+msgstr "Дайын"
 
 #: settings-account-section
 msgctxt "settings-account-section"
 msgid "Accounts"
-msgstr ""
+msgstr "Тіркелгілер"
 
 #: settings-account-add
 msgid "Add Account"
-msgstr ""
+msgstr "Тіркелгіні қосу"
 
 #: settings-account-delete
 msgid "Delete account"
-msgstr ""
+msgstr "Тіркелгіні өшіру"
 
 #: settings-account-delete-prompt
 msgid ""
 "Are you sure you want to delete your {{account}} mail account? You will have "
 "to re-download your mail if you re-create the account."
 msgstr ""
+"Өзіңіздің {{account}} эл. пошта тіркелгіңізді өшіруді шынымен қалайсыз ба? "
+"Тіркелгіңізді қайта жасау кезінде барлық поштаны қайтадан жүктеп алу керек "
+"болады."
 
 #: settings-account-delete-cancel
 msgctxt "settings-account-delete-cancel"
 msgid "Cancel"
-msgstr ""
+msgstr "Бас тарту"
 
 #: settings-account-delete-confirm
 msgctxt "settings-account-delete-confirm"
 msgid "Delete"
-msgstr ""
+msgstr "Өшіру"
 
 #: settings-about-section
 msgid "About"
-msgstr ""
+msgstr "Осы туралы"
 
 #: settings-general-section
 msgid "General settings"
-msgstr ""
+msgstr "Жалпы баптаулар"
 
 #: settings-check-mail
 msgid "Check mail"
-msgstr ""
+msgstr "Поштаны тексеру"
 
 #: settings-show-images
 msgid "Always show images"
-msgstr ""
+msgstr "Суреттерді әрқашан көрсету"
 
 #: settings-download-attachments
 msgid "Download attachments"
-msgstr ""
+msgstr "Салынымдарды жүктеп алу"
 
 #: settings-notify-mail
 msgid "Notify of new mail"
-msgstr ""
+msgstr "Жаңа пошта туралы ескертіп отыру"
 
 #: settings-check-3min
 msgid "3 minutes"
-msgstr ""
+msgstr "3 минут"
 
 #: settings-check-5min
 msgid "5 minutes"
-msgstr ""
+msgstr "5 минут"
 
 #: settings-check-10min
 msgid "10 minutes"
-msgstr ""
+msgstr "10 минут"
 
 #: settings-check-15min
 msgid "15 minutes"
-msgstr ""
+msgstr "15 минут"
 
 #: settings-check-30min
 msgid "30 minutes"
-msgstr ""
+msgstr "30 минут"
 
 #: settings-check-60min
 msgid "60 minutes"
-msgstr ""
+msgstr "60 минут"
 
 #: settings-check-manual
 msgid "Manually"
-msgstr ""
+msgstr "Қолмен"
 
 #: settings-default-account
 msgid "Default account"
-msgstr ""
+msgstr "Бастапқы тіркелгі"
 
 #: settings-account-type
 msgctxt "settings-account-type"
 msgid "Account type"
-msgstr ""
+msgstr "Тіркелгі түрі"
 
 #: settings-account-credentials
 msgid "Credentials"
@@ -386,440 +404,442 @@ msgstr ""
 
 #: settings-account-synchronize
 msgid "Synchronize"
-msgstr ""
+msgstr "Синхрондау"
 
 #: settings-activesync-label
 msgctxt "settings-activesync-label"
 msgid "ActiveSync settings"
-msgstr ""
+msgstr "ActiveSync баптаулары"
 
 #: settings-imap-label
 msgctxt "settings-imap-label"
 msgid "IMAP settings"
-msgstr ""
+msgstr "IMAP баптаулары"
 
 #: settings-smtp-label
 msgctxt "settings-smtp-label"
 msgid "SMTP settings"
-msgstr ""
+msgstr "SMTP баптаулары"
 
 #: settings-hostname
 msgctxt "settings-hostname"
 msgid "Hostname"
-msgstr ""
+msgstr "Хост аты"
 
 #: settings-port
 msgid "Port"
-msgstr ""
+msgstr "Порт"
 
 #: settings-username
 msgctxt "settings-username"
 msgid "Username"
-msgstr ""
+msgstr "Пайдаланушы аты"
 
 #: settings-password
 msgctxt "settings-password"
 msgid "Password"
-msgstr ""
+msgstr "Пароль"
 
 #: settings-save
 msgid "Save"
-msgstr ""
+msgstr "Сақтау"
 
 #: settings-password-empty
 msgid "Password field should not be empty"
-msgstr ""
+msgstr "Пароль өрісі бос болмауы тиіс"
 
 #: settings-synchronize-auto
 msgid "Automatic"
-msgstr ""
+msgstr "Автоматты түрде"
 
 #: settings-synchronize-one-day
 msgid "1 day"
-msgstr ""
+msgstr "1 күн"
 
 #: settings-synchronize-three-days
 msgid "3 days"
-msgstr ""
+msgstr "3 күн"
 
 #: settings-synchronize-one-week
 msgid "1 week"
-msgstr ""
+msgstr "1 апта"
 
 #: settings-synchronize-two-weeks
 msgid "2 weeks"
-msgstr ""
+msgstr "2 апта"
 
 #: settings-synchronize-one-month
 msgid "1 month"
-msgstr ""
+msgstr "1 ай"
 
 #: settings-synchronize-all
 msgid "All messages"
-msgstr ""
+msgstr "Барлық хабарламалар"
 
 #: accounts-header
 msgctxt "accounts-header"
 msgid "Accounts"
-msgstr ""
+msgstr "Тіркелгілер"
 
 #: accounts-button
 msgctxt "accounts-button"
 msgid "Accounts"
-msgstr ""
+msgstr "Тіркелгілер"
 
 #: envelope-from
 msgctxt "envelope-from"
 msgid "From"
-msgstr ""
+msgstr "Кімнен"
 
 #: envelope-to
 msgctxt "envelope-to"
 msgid "To"
-msgstr ""
+msgstr "Кімге"
 
 #: envelope-cc
 msgctxt "envelope-cc"
 msgid "Cc"
-msgstr ""
+msgstr "Көшірме"
 
 #: envelope-bcc
 msgid "Bcc"
-msgstr ""
+msgstr "Жасырын көшірме"
 
 #: reader-header
 msgid "Read"
-msgstr ""
+msgstr "Оқу"
 
 #: compose-header
 msgid "Compose message"
-msgstr ""
+msgstr "Хабарламаны жазу"
 
 #: compose-header-short
 msgid "Compose"
-msgstr ""
+msgstr "Жазу"
 
 #: compose-send
 msgid "Send"
-msgstr ""
+msgstr "Жіберу"
 
 #: compose-to
 msgctxt "compose-to"
 msgid "To"
-msgstr ""
+msgstr "Кімге"
 
 #: compose-cc
 msgid "cc"
-msgstr ""
+msgstr "Көшірме"
 
 #: compose-bcc
 msgid "bcc"
-msgstr ""
+msgstr "Жасырын көшірме"
 
 #: compose-attachments
 msgctxt "compose-attachments"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: compose-attachments[zero]
 msgid "Attachments"
-msgstr ""
+msgstr "Салынымдар"
 
 #: compose-attachments[one]
 msgid "{{ n }} attachment"
-msgstr ""
+msgstr "{{ n }} салыным"
 
 #: compose-attachments[two]
 msgctxt "compose-attachments[two]"
 msgid "{{ n }} attachments"
-msgstr ""
+msgstr "{{ n }} салыным"
 
 #: compose-attachments[few]
 msgctxt "compose-attachments[few]"
 msgid "{{ n }} attachments"
-msgstr ""
+msgstr "{{ n }} салыным"
 
 #: compose-attachments[many]
 msgctxt "compose-attachments[many]"
 msgid "{{ n }} attachments"
-msgstr ""
+msgstr "{{ n }} салыным"
 
 #: compose-attachments[other]
 msgctxt "compose-attachments[other]"
 msgid "{{ n }} attachments"
-msgstr ""
+msgstr "{{ n }} салыным"
 
 #: compose-subject
 msgctxt "compose-subject"
 msgid "Subject"
-msgstr ""
+msgstr "Тақырыбы"
 
 #: compose-draft-save
 msgid "Save to Local Drafts"
-msgstr ""
+msgstr "Жергілікті жобаланған бумасына сақтау"
 
 #: compose-discard-message
 msgid "Discard email?"
-msgstr ""
+msgstr "Эл. пошта хатын елемеу керек пе?"
 
 #: compose-discard-confirm
 msgid "Discard"
-msgstr ""
+msgstr "Елемеу"
 
 #: compose-sending-message
 msgid "Sending email"
-msgstr ""
+msgstr "Эл. пошта хатын жіберу"
 
 #: compose-send-message-failed
 msgid "Sending email failed"
-msgstr ""
+msgstr "Эл. пошта хатын жіберу сәтсіз аяқталды"
 
 #: composer-attachment-large
 msgid "Attachment too large"
-msgstr ""
+msgstr "Салыным тым үлкен"
 
 #: composer-attachments-large
 msgid "Attachments too large"
-msgstr ""
+msgstr "Салынымдар тым үлкен"
 
 #: compose-attchment-size-exceeded
 msgid "The selected attachment is too large to send with this message."
-msgstr ""
+msgstr "Таңдалған салыным бұл хатпен жіберілу үшін тым үлкен."
 
 #: compose-attchments-size-exceeded
 msgid ""
 "The selected attachments are too large to send with this message. Try "
 "selecting fewer files."
 msgstr ""
+"Таңдалған салынымдар бұл хатпен жіберілу үшін тым үлкен. Азырақ файлды "
+"таңдап көріңіз."
 
 #: dialog-button-ok
 msgid "OK"
-msgstr ""
+msgstr "ОК"
 
 #: attachment-size-kib
 msgid "{{kilobytes}}K"
-msgstr ""
+msgstr "{{kilobytes}}К"
 
 #: message-attachment-view.textContent
 msgid "View"
-msgstr ""
+msgstr "Қарау"
 
 #: message-no-subject
 msgid "(no subject)"
-msgstr ""
+msgstr "(тақырыпсыз)"
 
 #: message-edit-menu-star
 msgid "Star"
-msgstr ""
+msgstr "Белгілеу"
 
 #: message-edit-menu-unstar
 msgid "Unstar"
-msgstr ""
+msgstr "Белгілеуді алып тастау"
 
 #: message-edit-menu-mark-read
 msgid "Mark as read"
-msgstr ""
+msgstr "Оқылған ретінде белгілеу"
 
 #: message-edit-menu-mark-unread
 msgid "Mark as unread"
-msgstr ""
+msgstr "Оқылмаған ретінде белгілеу"
 
 #: message-edit-menu-move
 msgid "Move"
-msgstr ""
+msgstr "Жылжыту"
 
 #: message-edit-menu-delete
 msgctxt "message-edit-menu-delete"
 msgid "Delete"
-msgstr ""
+msgstr "Өшіру"
 
 #: message-edit-delete-confirm
 msgid "Delete email message?"
-msgstr ""
+msgstr "Эл. пошта хатын өшіру керек пе?"
 
 #: message-send-attachment-disabled-confirm
 msgid "Attachments can not be forwarded."
-msgstr ""
+msgstr "Салынымдарды қайта бағдарлау мүмкін емес."
 
 #: message-multiedit-header
 msgctxt "message-multiedit-header"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: message-multiedit-header[zero]
 msgid "Edit"
-msgstr ""
+msgstr "Түзету"
 
 #: message-multiedit-header[one]
 msgctxt "message-multiedit-header[one]"
 msgid "{{ n }} selected"
-msgstr ""
+msgstr "{{ n }} таңдалды"
 
 #: message-multiedit-header[two]
 msgctxt "message-multiedit-header[two]"
 msgid "{{ n }} selected"
-msgstr ""
+msgstr "{{ n }} таңдалды"
 
 #: message-multiedit-header[few]
 msgctxt "message-multiedit-header[few]"
 msgid "{{ n }} selected"
-msgstr ""
+msgstr "{{ n }} таңдалды"
 
 #: message-multiedit-header[many]
 msgctxt "message-multiedit-header[many]"
 msgid "{{ n }} selected"
-msgstr ""
+msgstr "{{ n }} таңдалды"
 
 #: message-multiedit-header[other]
 msgctxt "message-multiedit-header[other]"
 msgid "{{ n }} selected"
-msgstr ""
+msgstr "{{ n }} таңдалды"
 
 #: browse-to-url-prompt
 msgid "Browse to URL?: {{ url }}"
-msgstr ""
+msgstr "Сілтемеден өту керек пе?: {{ url }}"
 
 #: message-download-images
 msgctxt "message-download-images"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: message-download-images[one]
 msgid "This email contains one image. Click to download."
-msgstr ""
+msgstr "Бұл эл. пошта хатында бір сурет бар. Жүктеп алу үшін шертіңіз."
 
 #: message-download-images[two]
 msgctxt "message-download-images[two]"
 msgid "This email contains {{ n }} images. Click to download."
-msgstr ""
+msgstr "Бұл эл. пошта хатында {{ n }} сурет бар. Жүктеп алу үшін шертіңіз."
 
 #: message-download-images[few]
 msgctxt "message-download-images[few]"
 msgid "This email contains {{ n }} images. Click to download."
-msgstr ""
+msgstr "Бұл эл. пошта хатында {{ n }} сурет бар. Жүктеп алу үшін шертіңіз."
 
 #: message-download-images[many]
 msgctxt "message-download-images[many]"
 msgid "This email contains {{ n }} images. Click to download."
-msgstr ""
+msgstr "Бұл эл. пошта хатында {{ n }} сурет бар. Жүктеп алу үшін шертіңіз."
 
 #: message-download-images[other]
 msgctxt "message-download-images[other]"
 msgid "This email contains {{ n }} images. Click to download."
-msgstr ""
+msgstr "Бұл эл. пошта хатында {{ n }} сурет бар. Жүктеп алу үшін шертіңіз."
 
 #: message-show-external-images
 msgid "Show external images"
-msgstr ""
+msgstr "Сыртқы суреттерді көрсету"
 
 #: message-multiedit-cancel
 msgctxt "message-multiedit-cancel"
 msgid "Cancel"
-msgstr ""
+msgstr "Бас тарту"
 
 #: message-multiedit-delete-confirm
 msgctxt "message-multiedit-delete-confirm"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: message-multiedit-delete-confirm[one]
 msgid "Delete this email message?"
-msgstr ""
+msgstr "Бұл эл. пошта хатын өшіру керек пе?"
 
 #: message-multiedit-delete-confirm[two]
 msgctxt "message-multiedit-delete-confirm[two]"
 msgid "Delete {{ n }} email messages?"
-msgstr ""
+msgstr "{{ n }} эл. пошта хатын өшіру керек пе?"
 
 #: message-multiedit-delete-confirm[few]
 msgctxt "message-multiedit-delete-confirm[few]"
 msgid "Delete {{ n }} email messages?"
-msgstr ""
+msgstr "{{ n }} эл. пошта хатын өшіру керек пе?"
 
 #: message-multiedit-delete-confirm[many]
 msgctxt "message-multiedit-delete-confirm[many]"
 msgid "Delete {{ n }} email messages?"
-msgstr ""
+msgstr "{{ n }} эл. пошта хатын өшіру керек пе?"
 
 #: message-multiedit-delete-confirm[other]
 msgctxt "message-multiedit-delete-confirm[other]"
 msgid "Delete {{ n }} email messages?"
-msgstr ""
+msgstr "{{ n }} эл. пошта хатын өшіру керек пе?"
 
 #: message-search-from
 msgctxt "message-search-from"
 msgid "From"
-msgstr ""
+msgstr "Кімнен"
 
 #: message-search-to
 msgctxt "message-search-to"
 msgid "To"
-msgstr ""
+msgstr "Кімге"
 
 #: message-search-subject
 msgctxt "message-search-subject"
 msgid "Subject"
-msgstr ""
+msgstr "Тақырыбы"
 
 #: message-search-body
 msgid "Body"
-msgstr ""
+msgstr "Денесі"
 
 #: message-search-all
 msgid "All"
-msgstr ""
+msgstr "Барлығы"
 
 #: message-search-input.placeholder
 msgid "Search Mail"
-msgstr ""
+msgstr "Эл. поштадан іздеу"
 
 #: message-search-cancel-accessible
 msgid "Cancel search"
-msgstr ""
+msgstr "Іздеуден бас тарту"
 
 #: messages-syncing
 msgid "Loading messages"
-msgstr ""
+msgstr "Хабарламаларды жүктеу"
 
 #: messages-sync-more
 msgid "Load more messages from server"
-msgstr ""
+msgstr "Серверден көбірек хабарламаларды жүктеп алу"
 
 #: messages-folder-empty
 msgid "No mail in this Folder"
-msgstr ""
+msgstr "Бұл бумада хаттар жоқ"
 
 #: messages-search-empty
 msgid "No matches in locally cached messages"
-msgstr ""
+msgstr "Жергілікті кэштегі хабарламалардан сәйкестіктер табылмады"
 
 #: messages-folder-select
 msgid "Select folder"
-msgstr ""
+msgstr "Буманы таңдау"
 
 #: message-contact-menu-create
 msgid "Save new contact"
-msgstr ""
+msgstr "Жаңа контактты сақтау"
 
 #: message-contact-menu-add-existing
 msgid "Add to existing contact"
-msgstr ""
+msgstr "Бар болып тұрған контактқа қосу"
 
 #: message-contact-menu-view
 msgid "View contact"
-msgstr ""
+msgstr "Контактты қарау"
 
 #: message-contact-menu-reply
 msgid "Reply"
-msgstr ""
+msgstr "Жауап беру"
 
 #: message-contact-menu-new
 msgid "Send new mail"
-msgstr ""
+msgstr "Жаңа хатты жіберу"
 
 #: folder-list-header
 msgid "Folders"
-msgstr ""
+msgstr "Бумалар"
 
 #. # L10n note: account-last-synced-label is found on the folder list card,
 #. # accessible from the message-list card by clicking the icon in the upper left
@@ -830,23 +850,23 @@ msgstr ""
 #. # displayed.
 #: account-last-synced-label
 msgid "Last sync: "
-msgstr ""
+msgstr "Соңғы синхрондау:"
 
 #. # L10n note: This string is displayed to the right of account-last-synced-label
 #. # if no folder has ever been synchronized.  Otherwise the space occupied by this
 #. # string will be a (short) relative timestamp.
 #: account-never-synced
 msgid "Never"
-msgstr ""
+msgstr "ешқашан"
 
 #. # LOCALIZATION NOTE: do not translate {name}
 #: reply-quoting-wrote
 msgid "{name} wrote"
-msgstr ""
+msgstr "{name} жазған"
 
 #: forward-original-message
 msgid "Original message"
-msgstr ""
+msgstr "Түпнұсқа хабарламасы"
 
 #. # L10n note: These are the labels we use when displaying the envelope info for a
 #. # message that is forwarded inline.  While automatic recovery of this
@@ -856,16 +876,16 @@ msgstr ""
 #: forward-header-subject
 msgctxt "forward-header-subject"
 msgid "Subject"
-msgstr ""
+msgstr "Тақырыбы"
 
 #: forward-header-date
 msgid "Date"
-msgstr ""
+msgstr "Күн"
 
 #: forward-header-from
 msgctxt "forward-header-from"
 msgid "From"
-msgstr ""
+msgstr "Кімнен"
 
 #. # This really wants to have the dash in it for consistency with Thunderbird
 #: forward-header-reply-to
@@ -875,12 +895,12 @@ msgstr ""
 #: forward-header-to
 msgctxt "forward-header-to"
 msgid "To"
-msgstr ""
+msgstr "Кімге"
 
 #: forward-header-cc
 msgctxt "forward-header-cc"
 msgid "Cc"
-msgstr ""
+msgstr "Көшірме"
 
 #. # Localized folder names for IMAP servers.  Because the IMAP standard did not
 #. # originally specify a way to express meta-data about folders, folders may be
@@ -889,23 +909,23 @@ msgstr ""
 #. # footsteps of Thunderbird.
 #: folder-inbox
 msgid "Inbox"
-msgstr ""
+msgstr "Кіріс"
 
 #: folder-sent
 msgid "Sent"
-msgstr ""
+msgstr "Жіберілген"
 
 #: folder-drafts
 msgid "Drafts"
-msgstr ""
+msgstr "Жобаланған"
 
 #: folder-trash
 msgid "Trash"
-msgstr ""
+msgstr "Қоқыс шелегі"
 
 #: folder-queue
 msgid "Unsent"
-msgstr ""
+msgstr "Жіберілмеген"
 
 #: folder-junk
 msgid "Junk"
@@ -913,206 +933,206 @@ msgstr ""
 
 #: folder-archives
 msgid "Archives"
-msgstr ""
+msgstr "Архивтер"
 
 #: folder-localdrafts
 msgid "Local Drafts"
-msgstr ""
+msgstr "Жергілікті жобаланған"
 
 #: toaster-undo
 msgid "Undo"
-msgstr ""
+msgstr "Болдырмау"
 
 #: toaster-retry
 msgctxt "toaster-retry"
 msgid "Retry"
-msgstr ""
+msgstr "Қайталау"
 
 #: toaster-message-star
 msgctxt "toaster-message-star"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: toaster-message-star[one]
 msgid "1 message flag set"
-msgstr ""
+msgstr "1 хабарлама жалаушасы орнатылды"
 
 #: toaster-message-star[two]
 msgctxt "toaster-message-star[two]"
 msgid "{{ n }} messages flag set"
-msgstr ""
+msgstr "{{ n }} хабарлама жалаушасы орнатылды"
 
 #: toaster-message-star[few]
 msgctxt "toaster-message-star[few]"
 msgid "{{ n }} messages flag set"
-msgstr ""
+msgstr "{{ n }} хабарлама жалаушасы орнатылды"
 
 #: toaster-message-star[many]
 msgctxt "toaster-message-star[many]"
 msgid "{{ n }} messages flag set"
-msgstr ""
+msgstr "{{ n }} хабарлама жалаушасы орнатылды"
 
 #: toaster-message-star[other]
 msgctxt "toaster-message-star[other]"
 msgid "{{ n }} messages flag set"
-msgstr ""
+msgstr "{{ n }} хабарлама жалаушасы орнатылды"
 
 #: toaster-message-unstar
 msgctxt "toaster-message-unstar"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: toaster-message-unstar[one]
 msgid "1 message flag removed"
-msgstr ""
+msgstr "1 хабарлама жалаушасы өшірілді"
 
 #: toaster-message-unstar[two]
 msgctxt "toaster-message-unstar[two]"
 msgid "{{ n }} messages flag removed"
-msgstr ""
+msgstr "{{ n }} хабарлама жалаушасы өшірілді"
 
 #: toaster-message-unstar[few]
 msgctxt "toaster-message-unstar[few]"
 msgid "{{ n }} messages flag removed"
-msgstr ""
+msgstr "{{ n }} хабарлама жалаушасы өшірілді"
 
 #: toaster-message-unstar[many]
 msgctxt "toaster-message-unstar[many]"
 msgid "{{ n }} messages flag removed"
-msgstr ""
+msgstr "{{ n }} хабарлама жалаушасы өшірілді"
 
 #: toaster-message-unstar[other]
 msgctxt "toaster-message-unstar[other]"
 msgid "{{ n }} messages flag removed"
-msgstr ""
+msgstr "{{ n }} хабарлама жалаушасы өшірілді"
 
 #: toaster-message-read
 msgctxt "toaster-message-read"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: toaster-message-read[one]
 msgid "1 message marked as read"
-msgstr ""
+msgstr "1 хабарлама оқылған ретінде белгіленген"
 
 #: toaster-message-read[two]
 msgctxt "toaster-message-read[two]"
 msgid "{{ n }} messages marked as read"
-msgstr ""
+msgstr "{{ n }} хабарлама оқылған ретінде белгіленген"
 
 #: toaster-message-read[few]
 msgctxt "toaster-message-read[few]"
 msgid "{{ n }} messages marked as read"
-msgstr ""
+msgstr "{{ n }} хабарлама оқылған ретінде белгіленген"
 
 #: toaster-message-read[many]
 msgctxt "toaster-message-read[many]"
 msgid "{{ n }} messages marked as read"
-msgstr ""
+msgstr "{{ n }} хабарлама оқылған ретінде белгіленген"
 
 #: toaster-message-read[other]
 msgctxt "toaster-message-read[other]"
 msgid "{{ n }} messages marked as read"
-msgstr ""
+msgstr "{{ n }} хабарлама оқылған ретінде белгіленген"
 
 #: toaster-message-unread
 msgctxt "toaster-message-unread"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: toaster-message-unread[one]
 msgid "1 message marked as unread"
-msgstr ""
+msgstr "1 хабарлама оқылмаған ретінде белгіленген"
 
 #: toaster-message-unread[two]
 msgctxt "toaster-message-unread[two]"
 msgid "{{ n }} messages marked as unread"
-msgstr ""
+msgstr "{{ n }} хабарлама оқылмаған ретінде белгіленген"
 
 #: toaster-message-unread[few]
 msgctxt "toaster-message-unread[few]"
 msgid "{{ n }} messages marked as unread"
-msgstr ""
+msgstr "{{ n }} хабарлама оқылмаған ретінде белгіленген"
 
 #: toaster-message-unread[many]
 msgctxt "toaster-message-unread[many]"
 msgid "{{ n }} messages marked as unread"
-msgstr ""
+msgstr "{{ n }} хабарлама оқылмаған ретінде белгіленген"
 
 #: toaster-message-unread[other]
 msgctxt "toaster-message-unread[other]"
 msgid "{{ n }} messages marked as unread"
-msgstr ""
+msgstr "{{ n }} хабарлама оқылмаған ретінде белгіленген"
 
 #: toaster-message-move
 msgctxt "toaster-message-move"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: toaster-message-move[one]
 msgid "1 message moved"
-msgstr ""
+msgstr "1 хабарлама жылжытылды"
 
 #: toaster-message-move[two]
 msgctxt "toaster-message-move[two]"
 msgid "{{ n }} messages moved"
-msgstr ""
+msgstr "{{ n }} хабарлама жылжытылды"
 
 #: toaster-message-move[few]
 msgctxt "toaster-message-move[few]"
 msgid "{{ n }} messages moved"
-msgstr ""
+msgstr "{{ n }} хабарлама жылжытылды"
 
 #: toaster-message-move[many]
 msgctxt "toaster-message-move[many]"
 msgid "{{ n }} messages moved"
-msgstr ""
+msgstr "{{ n }} хабарлама жылжытылды"
 
 #: toaster-message-move[other]
 msgctxt "toaster-message-move[other]"
 msgid "{{ n }} messages moved"
-msgstr ""
+msgstr "{{ n }} хабарлама жылжытылды"
 
 #: toaster-message-delete
 msgctxt "toaster-message-delete"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: toaster-message-delete[one]
 msgid "1 message deleted"
-msgstr ""
+msgstr "1 хабарлама өшірілді"
 
 #: toaster-message-delete[two]
 msgctxt "toaster-message-delete[two]"
 msgid "{{ n }} messages deleted"
-msgstr ""
+msgstr "{{ n }} хабарлама өшірілді"
 
 #: toaster-message-delete[few]
 msgctxt "toaster-message-delete[few]"
 msgid "{{ n }} messages deleted"
-msgstr ""
+msgstr "{{ n }} хабарлама өшірілді"
 
 #: toaster-message-delete[many]
 msgctxt "toaster-message-delete[many]"
 msgid "{{ n }} messages deleted"
-msgstr ""
+msgstr "{{ n }} хабарлама өшірілді"
 
 #: toaster-message-delete[other]
 msgctxt "toaster-message-delete[other]"
 msgid "{{ n }} messages deleted"
-msgstr ""
+msgstr "{{ n }} хабарлама өшірілді"
 
 #: toaster-retryable-syncfailed
 msgid "Unable to connect to server"
-msgstr ""
+msgstr "Сервермен байланысты орнату мүмкін емес"
 
 #: form-clear-input
 msgid "Remove text"
-msgstr ""
+msgstr "Мәтінді өшіру"
 
 #: confirm-dialog-title
 msgid "Confirmation"
-msgstr ""
+msgstr "Растау"
 
 #. # new-emails refers to the text shown on a notification that users
 #. # get when they receive new, unread email. The ui component that utilizes
@@ -1120,28 +1140,28 @@ msgstr ""
 #: new-emails
 msgctxt "new-emails"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: new-emails[one]
 msgid "1 New Email"
-msgstr ""
+msgstr "1 жаңа хат"
 
 #: new-emails[two]
 msgctxt "new-emails[two]"
 msgid "{{ n }} New Emails"
-msgstr ""
+msgstr "{{ n }} жаңа хат"
 
 #: new-emails[few]
 msgctxt "new-emails[few]"
 msgid "{{ n }} New Emails"
-msgstr ""
+msgstr "{{ n }} жаңа хат"
 
 #: new-emails[many]
 msgctxt "new-emails[many]"
 msgid "{{ n }} New Emails"
-msgstr ""
+msgstr "{{ n }} жаңа хат"
 
 #: new-emails[other]
 msgctxt "new-emails[other]"
 msgid "{{ n }} New Emails"
-msgstr ""
+msgstr "{{ n }} жаңа хат"
