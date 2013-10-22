@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-17 12:08+0100\n"
+"POT-Creation-Date: 2013-10-22 12:53+0100\n"
 "PO-Revision-Date: 2013-08-25 09:02+0000\n"
 "Last-Translator: Selim <selim@sum.lu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -200,6 +200,14 @@ msgstr "Hayır"
 msgid "Allow"
 msgstr "İzin ver"
 
+#: dontshare
+msgid "Don't Share"
+msgstr ""
+
+#: share
+msgid "Share"
+msgstr ""
+
 #: remember-my-choice
 msgid "Remember my choice"
 msgstr "Tercihimi hatırla"
@@ -221,27 +229,17 @@ msgstr "Boyut"
 msgid "Author"
 msgstr "Yazan"
 
-#: unknown
+#: size-unknown
+#, fuzzy
+msgctxt "size-unknown"
 msgid "Unknown"
 msgstr "Bilinmiyor"
 
-#. # LOCALIZATION NOTE (unknown-size,unknown-author):
-#. # if you leave the original en-US value "{{unknown}}" in
-#. # the following two strings, the localization will be automatically picked
-#. # from the existing string with ID "unknown". If you need to adapt your
-#. # localization to different genders for author and size, you can localize
-#. # these strings. For example in French:
-#. # unknown-size=inconnue
-#. # unknown-author=inconnu
-#: unknown-size
-msgctxt "unknown-size"
-msgid "{{unknown}}"
-msgstr "{{unknown}}"
-
-#: unknown-author
-msgctxt "unknown-author"
-msgid "{{unknown}}"
-msgstr "{{unknown}}"
+#: author-unknown
+#, fuzzy
+msgctxt "author-unknown"
+msgid "Unknown"
+msgstr "Bilinmiyor"
 
 #: install
 msgid "Install"
@@ -252,8 +250,10 @@ msgid "bytes"
 msgstr "bayt"
 
 #: kB
-msgid "kB"
-msgstr "kB"
+#, fuzzy
+msgctxt "kB"
+msgid "KB"
+msgstr "KB"
 
 #: MB
 msgctxt "MB"
@@ -343,6 +343,16 @@ msgstr ""
 msgid "{{ appName }} installed"
 msgstr "{{ appName }} yüklendi"
 
+#. #setup dialog
+#: setup
+msgid "Setup"
+msgstr ""
+
+#. #ime
+#: ime-addkeyboards
+msgid "Add keyboards"
+msgstr ""
+
 #. # update manager
 #: later
 msgid "Later"
@@ -369,7 +379,7 @@ msgid "Not Now"
 msgstr "Daha sonra"
 
 #. # the <span> element will be displayed when the download finishes
-#: downloadingUpdateMessage
+#: downloadingUpdateMessage.innerHTML
 msgid "Downloading updates… <span>{{ progress }} downloaded.</span>"
 msgstr "Güncellemeler indiriliyor… <span>{{ progress }} indirildi.</span>"
 
@@ -401,32 +411,37 @@ msgstr "Tüm indirmeleri iptal etmek istediğinizden emin misiniz?"
 msgid "There was an error while downloading the updates."
 msgstr "Güncellemeler indirilirken bir hata oluştu."
 
-#: updateAvailableInfo
-msgctxt "updateAvailableInfo"
+#: updateAvailableInfo.innerHTML
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: updateAvailableInfo[one]
+#: updateAvailableInfo.innerHTML[one]
 msgid "{{ n }} update available. <span>Tap for more info.</span>"
 msgstr "{{ n }} güncelleme var. <span>Daha fazla bilgi için dokunun.</span>"
 
-#: updateAvailableInfo[two]
-msgctxt "updateAvailableInfo[two]"
+#: updateAvailableInfo.innerHTML[two]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[two]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "{{ n }} güncelleme var. <span>Daha fazla bilgi için dokunun.</span>"
 
-#: updateAvailableInfo[few]
-msgctxt "updateAvailableInfo[few]"
+#: updateAvailableInfo.innerHTML[few]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[few]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "{{ n }} güncelleme var. <span>Daha fazla bilgi için dokunun.</span>"
 
-#: updateAvailableInfo[many]
-msgctxt "updateAvailableInfo[many]"
+#: updateAvailableInfo.innerHTML[many]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[many]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "{{ n }} güncelleme var. <span>Daha fazla bilgi için dokunun.</span>"
 
-#: updateAvailableInfo[other]
-msgctxt "updateAvailableInfo[other]"
+#: updateAvailableInfo.innerHTML[other]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[other]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "{{ n }} güncelleme var. <span>Daha fazla bilgi için dokunun.</span>"
 
@@ -471,7 +486,7 @@ msgstr "Sistem Güncellemesi Hazır"
 msgid "Required"
 msgstr "Gerekli"
 
-#: uncompressingMessage
+#: uncompressingMessage.innerHTML
 msgid "Uncompressing… <span>This can take a few minutes.</span>"
 msgstr "Genişletiliyor… <span>Bu birkaç dakika sürebilir.</span>"
 
@@ -610,10 +625,6 @@ msgstr ""
 #: try-again
 msgid "Try again"
 msgstr "Terkar dene"
-
-#: dialog-closed
-msgid "Dialog closed by the user"
-msgstr "Diyalog kullanıcı tarafından kapatıldı"
 
 #. # value selector, time/date picker
 #: select-time
@@ -768,18 +779,20 @@ msgstr ""
 "{{deviceName}}, {{fileName}} ({{fileSize}}) dosyasını aktarmak istiyor."
 
 #: notification-fileTransfer-title
-msgid "Receive file?"
-msgstr "Dosya alınsın mı?"
+msgid "{{deviceName}}"
+msgstr ""
 
 #: notification-fileTransfer-description
-msgid "File incoming from another device"
-msgstr "Başka bir aygıttan dosya alınıyor"
+msgid "Review transfer request."
+msgstr ""
 
 #: byteUnit-B
 msgid "Bytes"
 msgstr "Bayt"
 
 #: byteUnit-KB
+#, fuzzy
+msgctxt "byteUnit-KB"
 msgid "KB"
 msgstr "KB"
 
@@ -831,18 +844,6 @@ msgstr "Aktar"
 #: cancelFileTransfer
 msgid "Cancel Bluetooth file transfer?"
 msgstr "Bluetooth dosya aktarımı iptal edilsin mi?"
-
-#: bluetooth-file-transfer-result
-msgid "Bluetooth file transfer {{status}}."
-msgstr "Bluetooth dosya aktarımı {{status}}."
-
-#: complete
-msgid "complete"
-msgstr "tamamlandı"
-
-#: failed
-msgid "failed"
-msgstr "başarısız oldu"
 
 #: transferFinished-sentSuccessful-title
 msgid "File sent"
@@ -1411,6 +1412,72 @@ msgstr "Mesaj gönderilsin mi?"
 #: icc-inputtitle
 msgid "STK Query"
 msgstr "STK Sorgusu"
+
+#. # CDMA emergency callback mode
+#: emergency-callback-mode
+msgid "Emergency call back mode"
+msgstr ""
+
+#: emergency-callback-dialog-message
+msgid ""
+"Telecom services and internet are disable due to emergency call back mode. "
+"Would you like to turn off the mode?"
+msgstr ""
+
+#. # CDMA record information
+#: cdma-record-info
+msgid "CDMA record information"
+msgstr ""
+
+#. # IME (Keyboard)
+#: ime-switching-tip
+msgid "Tap to switch input method"
+msgstr ""
+
+#~ msgctxt "unknown-size"
+#~ msgid "{{unknown}}"
+#~ msgstr "{{unknown}}"
+
+#~ msgctxt "unknown-author"
+#~ msgid "{{unknown}}"
+#~ msgstr "{{unknown}}"
+
+#~ msgid "kB"
+#~ msgstr "kB"
+
+#~ msgctxt "updateAvailableInfo"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "updateAvailableInfo[few]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr "{{ n }} güncelleme var. <span>Daha fazla bilgi için dokunun.</span>"
+
+#~ msgctxt "updateAvailableInfo[many]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr "{{ n }} güncelleme var. <span>Daha fazla bilgi için dokunun.</span>"
+
+#~ msgctxt "updateAvailableInfo[other]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr "{{ n }} güncelleme var. <span>Daha fazla bilgi için dokunun.</span>"
+
+#~ msgid "Dialog closed by the user"
+#~ msgstr "Diyalog kullanıcı tarafından kapatıldı"
+
+#~ msgid "Receive file?"
+#~ msgstr "Dosya alınsın mı?"
+
+#~ msgid "File incoming from another device"
+#~ msgstr "Başka bir aygıttan dosya alınıyor"
+
+#~ msgid "Bluetooth file transfer {{status}}."
+#~ msgstr "Bluetooth dosya aktarımı {{status}}."
+
+#~ msgid "complete"
+#~ msgstr "tamamlandı"
+
+#~ msgid "failed"
+#~ msgstr "başarısız oldu"
 
 #~ msgid "Don't allow"
 #~ msgstr "İzin verme"
