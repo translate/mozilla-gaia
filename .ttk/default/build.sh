@@ -23,6 +23,7 @@ function update_hg_repo()
 		hg pull;
 		hg update;
 	else
+		log_debug "hg clone $mozilla_repository/$mozlang $mozlang"
 		hg clone $mozilla_repository/$mozlang $mozlang
 	fi
 	)
@@ -39,6 +40,7 @@ do
 		
 		# Make new template files
 		rm $(find $translation_dir/$polang -name "*.pot")
+		log_debug "cd $base_dir/build/locales/$mozrelease/$mozlang; moz2po $verbosity --exclude=".hgtags" --exclude="*.diff" -P .      $translation_dir/$polang"
 		(cd $base_dir/build/locales/$mozrelease/$mozlang; moz2po $verbosity --exclude=".hgtags" --exclude="*.diff" -P . $translation_dir/$polang)
 	else
 		polang=$(get_language_pootle $lang)
