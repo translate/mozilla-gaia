@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-22 12:38+0100\n"
+"POT-Creation-Date: 2013-11-03 21:03+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,7 +69,7 @@ msgctxt "setup-info-next"
 msgid "Next"
 msgstr ""
 
-#: setup-progress-wait
+#: setup-progress-wait-msg
 msgid "Setting up account"
 msgstr ""
 
@@ -1238,6 +1238,12 @@ msgstr ""
 msgid "Confirmation"
 msgstr ""
 
+#. # senders-separation-sign separates the email accounts of senders.
+#. # Notice that we have a space after the comma.
+#: senders-separation-sign
+msgid ", "
+msgstr ""
+
 #. # new-emails refers to the text shown on a notification that users
 #. # get when they receive new, unread email. The ui component that utilizes
 #. # this lives in apps/email/js/message_list_topbar.js.
@@ -1247,6 +1253,7 @@ msgid "{[ plural(n) ]}"
 msgstr ""
 
 #: new-emails[one]
+msgctxt "new-emails[one]"
 msgid "1 New Email"
 msgstr ""
 
@@ -1270,35 +1277,75 @@ msgctxt "new-emails[other]"
 msgid "{{ n }} New Emails"
 msgstr ""
 
-#. # new-emails-notify is used when a system notification is generatef during
+#. # new-emails-notify-one-account is used when a system notification is generated during
 #. # a periodic background sync with the server. Since this goes to the system's
-#. # notification area and the user could have more than one account configured
-#. # with the email app, this notification includes the email address.
-#: new-emails-notify
-msgctxt "new-emails-notify"
+#. # notification area, and user has only one account configured with the email App.
+#: new-emails-notify-one-account
+msgctxt "new-emails-notify-one-account"
 msgid "{[ plural(n) ]}"
 msgstr ""
 
-#: new-emails-notify[one]
-msgid "1 New Email - {{ accountName }}"
+#: new-emails-notify-one-account[one]
+msgctxt "new-emails-notify-one-account[one]"
+msgid "1 New Email"
 msgstr ""
 
-#: new-emails-notify[two]
-msgctxt "new-emails-notify[two]"
-msgid "{{ n }} New Emails - {{ accountName }}"
+#: new-emails-notify-one-account[two]
+msgctxt "new-emails-notify-one-account[two]"
+msgid "{{ n }} New Emails"
 msgstr ""
 
-#: new-emails-notify[few]
-msgctxt "new-emails-notify[few]"
-msgid "{{ n }} New Emails - {{ accountName }}"
+#: new-emails-notify-one-account[few]
+msgctxt "new-emails-notify-one-account[few]"
+msgid "{{ n }} New Emails"
 msgstr ""
 
-#: new-emails-notify[many]
-msgctxt "new-emails-notify[many]"
-msgid "{{ n }} New Emails - {{ accountName }}"
+#: new-emails-notify-one-account[many]
+msgctxt "new-emails-notify-one-account[many]"
+msgid "{{ n }} New Emails"
 msgstr ""
 
-#: new-emails-notify[other]
-msgctxt "new-emails-notify[other]"
-msgid "{{ n }} New Emails - {{ accountName }}"
+#: new-emails-notify-one-account[other]
+msgctxt "new-emails-notify-one-account[other]"
+msgid "{{ n }} New Emails"
+msgstr ""
+
+#. # new-emails-notify-multiple-accounts is used in the same situation
+#. # as new-emails-notify-one-account.
+#. # In this case, the user has more than one account configured
+#. # with the email app.
+#: new-emails-notify-multiple-accounts
+msgctxt "new-emails-notify-multiple-accounts"
+msgid "{[ plural(n) ]}"
+msgstr ""
+
+#: new-emails-notify-multiple-accounts[one]
+msgid "1 New Email ({{ accountName }})"
+msgstr ""
+
+#: new-emails-notify-multiple-accounts[two]
+msgctxt "new-emails-notify-multiple-accounts[two]"
+msgid "{{ n }} New Emails ({{ accountName }})"
+msgstr ""
+
+#: new-emails-notify-multiple-accounts[few]
+msgctxt "new-emails-notify-multiple-accounts[few]"
+msgid "{{ n }} New Emails ({{ accountName }})"
+msgstr ""
+
+#: new-emails-notify-multiple-accounts[many]
+msgctxt "new-emails-notify-multiple-accounts[many]"
+msgid "{{ n }} New Emails ({{ accountName }})"
+msgstr ""
+
+#: new-emails-notify-multiple-accounts[other]
+msgctxt "new-emails-notify-multiple-accounts[other]"
+msgid "{{ n }} New Emails ({{ accountName }})"
+msgstr ""
+
+#. # new-emails-notify-multiple-accounts-body is used in the same situation
+#. # as new-emails-notify-multiple-accounts.
+#. # This is the body part of the notification.
+#: new-emails-notify-multiple-accounts-body
+msgid "{{ from }} “{{ subject }}”"
 msgstr ""
