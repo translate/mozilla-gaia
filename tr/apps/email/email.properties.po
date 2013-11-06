@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-22 12:38+0100\n"
-"PO-Revision-Date: 2013-10-23 11:47+0000\n"
+"POT-Creation-Date: 2013-11-03 21:03+0100\n"
+"PO-Revision-Date: 2013-11-04 18:59+0000\n"
 "Last-Translator: Selim <selim@sum.lu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: Pootle 2.5.1-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1382528867.000000\n"
+"X-POOTLE-MTIME: 1383591582.000000\n"
 
 #: setup-app-name-header
 msgid "Mail"
@@ -74,7 +74,7 @@ msgctxt "setup-info-next"
 msgid "Next"
 msgstr "İleri"
 
-#: setup-progress-wait
+#: setup-progress-wait-msg
 msgid "Setting up account"
 msgstr "Hesap kuruluyor"
 
@@ -429,27 +429,27 @@ msgstr "Yeni postaları bildir"
 #. # User will manually click the refresh button to check for new messages.
 #: settings-check-every-3min
 msgid "Every 3 minutes"
-msgstr ""
+msgstr "3 dakikada bir"
 
 #: settings-check-every-5min
 msgid "Every 5 minutes"
-msgstr ""
+msgstr "5 dakikada bir"
 
 #: settings-check-every-10min
 msgid "Every 10 minutes"
-msgstr ""
+msgstr "10 dakikada bir"
 
 #: settings-check-every-15min
 msgid "Every 15 minutes"
-msgstr ""
+msgstr "15 dakikada bir"
 
 #: settings-check-every-30min
 msgid "Every 30 minutes"
-msgstr ""
+msgstr "30 dakikada bir"
 
 #: settings-check-every-60min
 msgid "Every hour"
-msgstr ""
+msgstr "Saatte bir"
 
 #: settings-check-every-manual
 msgid "Manually"
@@ -459,43 +459,42 @@ msgstr "Elle"
 #. # debug/development tools, and are always in seconds. Otherwise, just
 #. # the settings-check-every-* options are visible.
 #: settings-check-dynamic
-#, fuzzy
 msgctxt "settings-check-dynamic"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: settings-check-dynamic[zero]
 msgid "seconds"
-msgstr ""
+msgstr "saniye"
 
 #: settings-check-dynamic[one]
 msgctxt "settings-check-dynamic[one]"
 msgid "{{ n }} seconds"
-msgstr ""
+msgstr "{{ n }} saniye"
 
 #: settings-check-dynamic[two]
 msgctxt "settings-check-dynamic[two]"
 msgid "{{ n }} seconds"
-msgstr ""
+msgstr "{{ n }} saniye"
 
 #: settings-check-dynamic[few]
 msgctxt "settings-check-dynamic[few]"
 msgid "{{ n }} seconds"
-msgstr ""
+msgstr "{{ n }} saniye"
 
 #: settings-check-dynamic[many]
 msgctxt "settings-check-dynamic[many]"
 msgid "{{ n }} seconds"
-msgstr ""
+msgstr "{{ n }} saniye"
 
 #: settings-check-dynamic[other]
 msgctxt "settings-check-dynamic[other]"
 msgid "{{ n }} seconds"
-msgstr ""
+msgstr "{{ n }} saniye"
 
 #: settings-default-account
 msgid "Set as default email"
-msgstr ""
+msgstr "Varsayılan e-posta olarak ata"
 
 #: settings-account-type
 msgctxt "settings-account-type"
@@ -553,7 +552,7 @@ msgstr "Parola alanı boş olamaz"
 #. # like IMAP.
 #: settings-account-synchronize-window
 msgid "Days to sync"
-msgstr ""
+msgstr "Eşitlenecek gün sayısı"
 
 #: settings-synchronize-auto
 msgid "Automatic"
@@ -905,9 +904,8 @@ msgid "Cancel search"
 msgstr "Aramayı iptal et"
 
 #: messages-syncing
-#, fuzzy
 msgid "Loading Messages"
-msgstr "Mesajlar yükleniyor"
+msgstr "İletiler yükleniyor"
 
 #: messages-sync-more
 msgid "Load more messages from server"
@@ -938,7 +936,6 @@ msgid "View contact"
 msgstr "Kişiyi gör"
 
 #: message-contact-menu-reply
-#, fuzzy
 msgctxt "message-contact-menu-reply"
 msgid "Reply"
 msgstr "Yanıtla"
@@ -948,21 +945,19 @@ msgid "Send new mail"
 msgstr "Yeni posta gönder"
 
 #: message-reply-menu-reply
-#, fuzzy
 msgctxt "message-reply-menu-reply"
 msgid "Reply"
 msgstr "Yanıtla"
 
 #: message-reply-menu-reply-all
 msgid "Reply All"
-msgstr ""
+msgstr "Tümüne yanıtla"
 
 #: message-reply-menu-forward
 msgid "Forward"
-msgstr ""
+msgstr "İlet"
 
 #: message-reply-menu-cancel
-#, fuzzy
 msgctxt "message-reply-menu-cancel"
 msgid "Cancel"
 msgstr "İptal"
@@ -979,7 +974,6 @@ msgstr "Klasörler"
 #. # possible.  To the right of the label, a (short) relative timestamp is
 #. # displayed.
 #: account-last-synced-label
-#, fuzzy
 msgctxt "account-last-synced-label"
 msgid "Last sync:"
 msgstr "Son eşitleme: "
@@ -1266,6 +1260,12 @@ msgstr "Metni kaldır"
 msgid "Confirmation"
 msgstr "Onay"
 
+#. # senders-separation-sign separates the email accounts of senders.
+#. # Notice that we have a space after the comma.
+#: senders-separation-sign
+msgid ", "
+msgstr ", "
+
 #. # new-emails refers to the text shown on a notification that users
 #. # get when they receive new, unread email. The ui component that utilizes
 #. # this lives in apps/email/js/message_list_topbar.js.
@@ -1275,6 +1275,7 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: new-emails[one]
+msgctxt "new-emails[one]"
 msgid "1 New Email"
 msgstr "1 yeni e-posta"
 
@@ -1298,39 +1299,83 @@ msgctxt "new-emails[other]"
 msgid "{{ n }} New Emails"
 msgstr "{{ n }} Yeni E-posta"
 
-#. # new-emails-notify is used when a system notification is generatef during
+#. # new-emails-notify-one-account is used when a system notification is generated during
 #. # a periodic background sync with the server. Since this goes to the system's
-#. # notification area and the user could have more than one account configured
-#. # with the email app, this notification includes the email address.
-#: new-emails-notify
-#, fuzzy
-msgctxt "new-emails-notify"
+#. # notification area, and user has only one account configured with the email App.
+#: new-emails-notify-one-account
+msgctxt "new-emails-notify-one-account"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: new-emails-notify[one]
-msgid "1 New Email - {{ accountName }}"
-msgstr ""
+#: new-emails-notify-one-account[one]
+msgctxt "new-emails-notify-one-account[one]"
+msgid "1 New Email"
+msgstr "1 yeni e-posta"
 
-#: new-emails-notify[two]
-msgctxt "new-emails-notify[two]"
-msgid "{{ n }} New Emails - {{ accountName }}"
-msgstr ""
+#: new-emails-notify-one-account[two]
+msgctxt "new-emails-notify-one-account[two]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} yeni e-posta"
 
-#: new-emails-notify[few]
-msgctxt "new-emails-notify[few]"
-msgid "{{ n }} New Emails - {{ accountName }}"
-msgstr ""
+#: new-emails-notify-one-account[few]
+msgctxt "new-emails-notify-one-account[few]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} yeni e-posta"
 
-#: new-emails-notify[many]
-msgctxt "new-emails-notify[many]"
-msgid "{{ n }} New Emails - {{ accountName }}"
-msgstr ""
+#: new-emails-notify-one-account[many]
+msgctxt "new-emails-notify-one-account[many]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} yeni e-posta"
 
-#: new-emails-notify[other]
-msgctxt "new-emails-notify[other]"
-msgid "{{ n }} New Emails - {{ accountName }}"
-msgstr ""
+#: new-emails-notify-one-account[other]
+msgctxt "new-emails-notify-one-account[other]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} yeni e-posta"
+
+#. # new-emails-notify-multiple-accounts is used in the same situation
+#. # as new-emails-notify-one-account.
+#. # In this case, the user has more than one account configured
+#. # with the email app.
+#: new-emails-notify-multiple-accounts
+msgctxt "new-emails-notify-multiple-accounts"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: new-emails-notify-multiple-accounts[one]
+msgid "1 New Email ({{ accountName }})"
+msgstr "1 yeni e-posta ({{ accountName }})"
+
+#: new-emails-notify-multiple-accounts[two]
+msgctxt "new-emails-notify-multiple-accounts[two]"
+msgid "{{ n }} New Emails ({{ accountName }})"
+msgstr "{{ n }} yeni e-posta ({{ accountName }})"
+
+#: new-emails-notify-multiple-accounts[few]
+msgctxt "new-emails-notify-multiple-accounts[few]"
+msgid "{{ n }} New Emails ({{ accountName }})"
+msgstr "{{ n }} yeni e-posta ({{ accountName }})"
+
+#: new-emails-notify-multiple-accounts[many]
+msgctxt "new-emails-notify-multiple-accounts[many]"
+msgid "{{ n }} New Emails ({{ accountName }})"
+msgstr "{{ n }} yeni e-posta ({{ accountName }})"
+
+#: new-emails-notify-multiple-accounts[other]
+msgctxt "new-emails-notify-multiple-accounts[other]"
+msgid "{{ n }} New Emails ({{ accountName }})"
+msgstr "{{ n }} yeni e-posta ({{ accountName }})"
+
+#. # new-emails-notify-multiple-accounts-body is used in the same situation
+#. # as new-emails-notify-multiple-accounts.
+#. # This is the body part of the notification.
+#: new-emails-notify-multiple-accounts-body
+msgid "{{ from }} “{{ subject }}”"
+msgstr "{{ from }} “{{ subject }}”"
+
+#, fuzzy
+#~ msgctxt "new-emails-notify"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
 
 #~ msgctxt "setup-manual-config-header"
 #~ msgid "Manual setup"
