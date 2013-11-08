@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-17 12:08+0100\n"
+"POT-Creation-Date: 2013-10-22 12:53+0100\n"
 "PO-Revision-Date: 2013-10-05 21:29+0000\n"
 "Last-Translator: Robin <robin@ankur.org.bd>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -200,6 +200,14 @@ msgstr ""
 msgid "Allow"
 msgstr ""
 
+#: dontshare
+msgid "Don't Share"
+msgstr ""
+
+#: share
+msgid "Share"
+msgstr ""
+
 #: remember-my-choice
 msgid "Remember my choice"
 msgstr ""
@@ -221,28 +229,17 @@ msgstr ""
 msgid "Author"
 msgstr "লেখক"
 
-#: unknown
+#: size-unknown
+#, fuzzy
+msgctxt "size-unknown"
 msgid "Unknown"
 msgstr "অজ্ঞাত"
 
-#. # LOCALIZATION NOTE (unknown-size,unknown-author):
-#. # if you leave the original en-US value "{{unknown}}" in
-#. # the following two strings, the localization will be automatically picked
-#. # from the existing string with ID "unknown". If you need to adapt your
-#. # localization to different genders for author and size, you can localize
-#. # these strings. For example in French:
-#. # unknown-size=inconnue
-#. # unknown-author=inconnu
-#: unknown-size
+#: author-unknown
 #, fuzzy
-msgctxt "unknown-size"
-msgid "{{unknown}}"
-msgstr "{{unknown}}"
-
-#: unknown-author
-msgctxt "unknown-author"
-msgid "{{unknown}}"
-msgstr "{{unknown}}"
+msgctxt "author-unknown"
+msgid "Unknown"
+msgstr "অজ্ঞাত"
 
 #: install
 msgid "Install"
@@ -253,8 +250,10 @@ msgid "bytes"
 msgstr "বাইট"
 
 #: kB
-msgid "kB"
-msgstr "কিলোবাইট"
+#, fuzzy
+msgctxt "kB"
+msgid "KB"
+msgstr "কিঃবাঃ"
 
 #: MB
 msgctxt "MB"
@@ -339,7 +338,18 @@ msgid ""
 msgstr ""
 
 #: app-install-success
+#, fuzzy
 msgid "{{ appName }} installed"
+msgstr "{{ appName }} ডাউনলোড ব্যার্থ হয়েছে"
+
+#. #setup dialog
+#: setup
+msgid "Setup"
+msgstr ""
+
+#. #ime
+#: ime-addkeyboards
+msgid "Add keyboards"
 msgstr ""
 
 #. # update manager
@@ -368,7 +378,7 @@ msgid "Not Now"
 msgstr "এখন না"
 
 #. # the <span> element will be displayed when the download finishes
-#: downloadingUpdateMessage
+#: downloadingUpdateMessage.innerHTML
 msgid "Downloading updates… <span>{{ progress }} downloaded.</span>"
 msgstr ""
 "হালনাগাদ ডাউনলোড হচ্ছে... <span> {{progress}} ডাউনলোড সম্পন্ন হয়েছে। </span>"
@@ -401,33 +411,33 @@ msgstr "আপনি কি সব ডাউনলোড বাতিল কর�
 msgid "There was an error while downloading the updates."
 msgstr "হালনাগাদ ডাউনলোড করার সময় ত্রুটি পাওয়া গেছে।"
 
-#: updateAvailableInfo
+#: updateAvailableInfo.innerHTML
 #, fuzzy
-msgctxt "updateAvailableInfo"
+msgctxt "updateAvailableInfo.innerHTML"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: updateAvailableInfo[one]
+#: updateAvailableInfo.innerHTML[one]
 msgid "{{ n }} update available. <span>Tap for more info.</span>"
 msgstr ""
 
-#: updateAvailableInfo[two]
-msgctxt "updateAvailableInfo[two]"
+#: updateAvailableInfo.innerHTML[two]
+msgctxt "updateAvailableInfo.innerHTML[two]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr ""
 
-#: updateAvailableInfo[few]
-msgctxt "updateAvailableInfo[few]"
+#: updateAvailableInfo.innerHTML[few]
+msgctxt "updateAvailableInfo.innerHTML[few]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr ""
 
-#: updateAvailableInfo[many]
-msgctxt "updateAvailableInfo[many]"
+#: updateAvailableInfo.innerHTML[many]
+msgctxt "updateAvailableInfo.innerHTML[many]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr ""
 
-#: updateAvailableInfo[other]
-msgctxt "updateAvailableInfo[other]"
+#: updateAvailableInfo.innerHTML[other]
+msgctxt "updateAvailableInfo.innerHTML[other]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr ""
 
@@ -475,7 +485,7 @@ msgstr "সিস্টেমের হালনাগাদ প্রস্ত�
 msgid "Required"
 msgstr "প্রয়োজনীয়"
 
-#: uncompressingMessage
+#: uncompressingMessage.innerHTML
 msgid "Uncompressing… <span>This can take a few minutes.</span>"
 msgstr "অসংকুচিত করা হচ্ছে... <span> এই কাজের জন্য কিছু সময় প্রয়োজন।</span>"
 
@@ -600,10 +610,6 @@ msgstr ""
 
 #: try-again
 msgid "Try again"
-msgstr ""
-
-#: dialog-closed
-msgid "Dialog closed by the user"
 msgstr ""
 
 #. # value selector, time/date picker
@@ -749,11 +755,11 @@ msgid "{{deviceName}} would like to transfer {{fileName}} ({{fileSize}})."
 msgstr ""
 
 #: notification-fileTransfer-title
-msgid "Receive file?"
+msgid "{{deviceName}}"
 msgstr ""
 
 #: notification-fileTransfer-description
-msgid "File incoming from another device"
+msgid "Review transfer request."
 msgstr ""
 
 #: byteUnit-B
@@ -761,6 +767,8 @@ msgid "Bytes"
 msgstr "বাইট"
 
 #: byteUnit-KB
+#, fuzzy
+msgctxt "byteUnit-KB"
 msgid "KB"
 msgstr "কিঃবাঃ"
 
@@ -812,18 +820,6 @@ msgstr ""
 
 #: cancelFileTransfer
 msgid "Cancel Bluetooth file transfer?"
-msgstr ""
-
-#: bluetooth-file-transfer-result
-msgid "Bluetooth file transfer {{status}}."
-msgstr ""
-
-#: complete
-msgid "complete"
-msgstr ""
-
-#: failed
-msgid "failed"
 msgstr ""
 
 #: transferFinished-sentSuccessful-title
@@ -1338,6 +1334,44 @@ msgstr ""
 #: icc-inputtitle
 msgid "STK Query"
 msgstr ""
+
+#. # CDMA emergency callback mode
+#: emergency-callback-mode
+msgid "Emergency call back mode"
+msgstr ""
+
+#: emergency-callback-dialog-message
+msgid ""
+"Telecom services and internet are disable due to emergency call back mode. "
+"Would you like to turn off the mode?"
+msgstr ""
+
+#. # CDMA record information
+#: cdma-record-info
+msgid "CDMA record information"
+msgstr ""
+
+#. # IME (Keyboard)
+#: ime-switching-tip
+msgid "Tap to switch input method"
+msgstr ""
+
+#, fuzzy
+#~ msgctxt "unknown-size"
+#~ msgid "{{unknown}}"
+#~ msgstr "{{unknown}}"
+
+#~ msgctxt "unknown-author"
+#~ msgid "{{unknown}}"
+#~ msgstr "{{unknown}}"
+
+#~ msgid "kB"
+#~ msgstr "কিলোবাইট"
+
+#, fuzzy
+#~ msgctxt "updateAvailableInfo"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
 
 #~ msgid "Battery low"
 #~ msgstr "অল্প ব্যাটারি"
