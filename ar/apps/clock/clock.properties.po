@@ -1,9 +1,9 @@
-#. extracted from build/locales/en-US/apps/clock/clock.properties, ../gaia-l10n-transifex/ar/apps/clock/clock.properties
+#. extracted from ./apps/clock/clock.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-04 19:11+0200\n"
+"POT-Creation-Date: 2013-11-08 20:21+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,8 +34,18 @@ msgstr "إلغاء"
 msgid "Hour"
 msgstr "ساعة"
 
+#: hours
+#, fuzzy
+msgid "Hours"
+msgstr "ساعة"
+
 #: minute
 msgid "Minute"
+msgstr "دقيقة"
+
+#: minutes
+#, fuzzy
+msgid "Minutes"
 msgstr "دقيقة"
 
 #: enable
@@ -54,6 +64,15 @@ msgstr "مُلصق"
 msgid "Alarm"
 msgstr "المنبه"
 
+#: timer
+#, fuzzy
+msgid "Timer"
+msgstr "الوقت"
+
+#: stopwatch
+msgid "Stopwatch"
+msgstr ""
+
 #: alarmName.placeholder
 msgid "Alarm name"
 msgstr ""
@@ -65,6 +84,22 @@ msgstr "إضافة منبه"
 #: editAlarm
 msgid "Edit alarm"
 msgstr "تعديل منبه"
+
+#: pause
+msgid "Pause"
+msgstr ""
+
+#: resume
+msgid "Resume"
+msgstr ""
+
+#: lap
+msgid "Lap"
+msgstr ""
+
+#: lap-number
+msgid "Lap {{n}}"
+msgstr ""
 
 #: delete
 msgid "Delete"
@@ -151,6 +186,11 @@ msgstr "تم ضبط المنبه خلال <strong>{{minutes}}</strong> من ال
 msgid "The alarm is set for {{hours}} {{minutes}} from now."
 msgstr "تم ضبط المنبه خلال {{hours}} {{minutes}} من الآن ."
 
+#: countdown-moreThanADay
+#, fuzzy
+msgid "The alarm is set for {{days}} {{hours}} from now."
+msgstr "تم ضبط المنبه خلال {{hours}} {{minutes}} من الآن ."
+
 #: nMinutes
 msgctxt "nMinutes"
 msgid "{[ plural(n) ]}"
@@ -184,38 +224,123 @@ msgctxt "nMinutes[other]"
 msgid "{{n}} minutes"
 msgstr "{{n}} دقائق ."
 
-#: nRemainHours
-msgctxt "nRemainHours"
+#: nHours
+#, fuzzy
+msgctxt "nHours"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: nRemainHours[zero]
-msgctxt "nRemainHours[zero]"
+#: nHours[zero]
+msgctxt "nHours[zero]"
 msgid ""
 msgstr ""
 
-#: nRemainHours[one]
+#: nHours[one]
 msgid "<strong>{{n}} hour</strong>"
 msgstr "<strong>{{n}} ساعة</strong>"
 
-#: nRemainHours[two]
-msgctxt "nRemainHours[two]"
+#: nHours[two]
+#, fuzzy
+msgctxt "nHours[two]"
 msgid "<strong>{{n}} hours</strong>"
 msgstr "<strong>{{n}} ساعات</strong>"
 
-#: nRemainHours[few]
-msgctxt "nRemainHours[few]"
+#: nHours[few]
+#, fuzzy
+msgctxt "nHours[few]"
 msgid "<strong>{{n}} hours</strong>"
 msgstr "<strong>{{n}} ساعات</strong>"
 
-#: nRemainHours[many]
-msgctxt "nRemainHours[many]"
+#: nHours[many]
+#, fuzzy
+msgctxt "nHours[many]"
 msgid "<strong>{{n}} hours</strong>"
 msgstr "<strong>{{n}} ساعات</strong>"
 
-#: nRemainHours[other]
-msgctxt "nRemainHours[other]"
+#: nHours[other]
+#, fuzzy
+msgctxt "nHours[other]"
 msgid "<strong>{{n}} hours</strong>"
+msgstr "<strong>{{n}} ساعات</strong>"
+
+#: nAndRemainHours
+#, fuzzy
+msgctxt "nAndRemainHours"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: nAndRemainHours[zero]
+msgctxt "nAndRemainHours[zero]"
+msgid ""
+msgstr ""
+
+#: nAndRemainHours[one]
+#, fuzzy
+msgid "and <strong>{{n}} hour</strong>"
+msgstr "<strong>{{n}} ساعة</strong>"
+
+#: nAndRemainHours[two]
+#, fuzzy
+msgctxt "nAndRemainHours[two]"
+msgid "and <strong>{{n}} hours</strong>"
+msgstr "<strong>{{n}} ساعات</strong>"
+
+#: nAndRemainHours[few]
+#, fuzzy
+msgctxt "nAndRemainHours[few]"
+msgid "and <strong>{{n}} hours</strong>"
+msgstr "<strong>{{n}} ساعات</strong>"
+
+#: nAndRemainHours[many]
+#, fuzzy
+msgctxt "nAndRemainHours[many]"
+msgid "and <strong>{{n}} hours</strong>"
+msgstr "<strong>{{n}} ساعات</strong>"
+
+#: nAndRemainHours[other]
+#, fuzzy
+msgctxt "nAndRemainHours[other]"
+msgid "and <strong>{{n}} hours</strong>"
+msgstr "<strong>{{n}} ساعات</strong>"
+
+#: nRemainDays
+#, fuzzy
+msgctxt "nRemainDays"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: nRemainDays[zero]
+msgctxt "nRemainDays[zero]"
+msgid ""
+msgstr ""
+
+#: nRemainDays[one]
+#, fuzzy
+msgid "<strong>{{n}} day</strong>"
+msgstr "<strong>{{n}} ساعة</strong>"
+
+#: nRemainDays[two]
+#, fuzzy
+msgctxt "nRemainDays[two]"
+msgid "<strong>{{n}} days</strong>"
+msgstr "<strong>{{n}} ساعات</strong>"
+
+#: nRemainDays[few]
+#, fuzzy
+msgctxt "nRemainDays[few]"
+msgid "<strong>{{n}} days</strong>"
+msgstr "<strong>{{n}} ساعات</strong>"
+
+#: nRemainDays[many]
+#, fuzzy
+msgctxt "nRemainDays[many]"
+msgid "<strong>{{n}} days</strong>"
+msgstr "<strong>{{n}} ساعات</strong>"
+
+#: nRemainDays[other]
+#, fuzzy
+msgctxt "nRemainDays[other]"
+msgid "<strong>{{n}} days</strong>"
 msgstr "<strong>{{n}} ساعات</strong>"
 
 #: nRemainMinutes
@@ -251,3 +376,19 @@ msgstr "و <strong>{{n}} دقائق</strong>"
 msgctxt "nRemainMinutes[other]"
 msgid "and <strong>{{n}} minutes</strong>"
 msgstr "و <strong>{{n}} دقائق</strong>"
+
+#~ msgctxt "nRemainHours"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "nRemainHours[few]"
+#~ msgid "<strong>{{n}} hours</strong>"
+#~ msgstr "<strong>{{n}} ساعات</strong>"
+
+#~ msgctxt "nRemainHours[many]"
+#~ msgid "<strong>{{n}} hours</strong>"
+#~ msgstr "<strong>{{n}} ساعات</strong>"
+
+#~ msgctxt "nRemainHours[other]"
+#~ msgid "<strong>{{n}} hours</strong>"
+#~ msgstr "<strong>{{n}} ساعات</strong>"
