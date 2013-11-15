@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-03 21:03+0100\n"
-"PO-Revision-Date: 2013-11-14 06:25+0000\n"
+"PO-Revision-Date: 2013-11-15 13:35+0000\n"
 "Last-Translator: Zobayer Ahmed <zobayer_mc@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: bn_BD\n"
@@ -14,7 +14,7 @@ msgstr ""
 "X-Generator: Pootle 2.5.1-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1384410329.000000\n"
+"X-POOTLE-MTIME: 1384522556.000000\n"
 
 #: setup-app-name-header
 msgid "Mail"
@@ -112,7 +112,7 @@ msgstr "ইউজারনেম বা পাসওয়ার্ড ভুল।
 #. # domain have their own error code: setup-error-imap-disabled.
 #: setup-error-not-authorized
 msgid "The server said you're not authorized to create an account"
-msgstr ""
+msgstr "সার্ভারের তথ্যমতে আপনার একাউন্ট তৈরীর অনুমোদন নেই।"
 
 #. # The fallback error; if we don't have a better error, we report this.
 #: setup-error-unknown2
@@ -120,6 +120,8 @@ msgid ""
 "An unknown error occurred. Check your network connection or try the manual "
 "configuration option."
 msgstr ""
+"একটি অজ্ঞাত ভুল হয়েছে। আপনার নেটওয়ার্ক সংযোগ পরীক্ষা করুন বা ম্যানুয়াল কনফিগারেশন "
+"অপশনে চেষ্টা করুন।"
 
 #. # The error for Gmail accounts where 2-factor authentication (where you receive
 #. # a text message on your phone or run a special app) is enabled, and so the
@@ -129,13 +131,14 @@ msgstr ""
 msgid ""
 "You must use an application specific password for two-factor Gmail accounts"
 msgstr ""
+"আপনাকে অবশ্যই একটা অ্যাপ্লিকেশন এর জন্য নিদিষ্ট পাসওয়ার্ড ব্যাবহার করতে হবে ২ "
+"ফ্যাক্টর জিমেইল অ্যাকাউন্টের জন্য"
 
 #. # The error for Gmail accounts where IMAP is not enabled.  This can occur
 #. # for individual users where they have disabled IMAP from the settings UI.
 #. # This can also occur for apps-for-domains where the domain is not configured
 #. # to support IMAP.
 #: setup-error-imap-disabled
-#, fuzzy
 msgid "You must enable IMAP for your Gmail account"
 msgstr "জিমেইল একাউন্টের জন্য আপনাকে অবশ্যই IMAP চালু করতে হবে"
 
@@ -146,6 +149,8 @@ msgid ""
 "Unable to establish a secure connection with \"{{server}}\". There may be a "
 "problem with your network or the server."
 msgstr ""
+"\"{{server}}\"এর সাথে নিরাপদ সংযোগ স্থাপন করা যাচ্ছে না। এটি আপনার নেটওয়ার্ক বা "
+"সার্ভারের সমস্যা হতে পারে।"
 
 #. # The error for when we try to contact a server but see no indication of a
 #. # response before we give up because of a timeout.
@@ -154,6 +159,8 @@ msgid ""
 "Unable to establish a connection with \"{{server}}\". There may be a problem "
 "with the network."
 msgstr ""
+"\"{{server}}\"এর সাথে নিরাপদ সংযোগ স্থাপন করা যাচ্ছে না। এটি আপনার নেটওয়ার্কের "
+"সমস্যা হতে পারে।"
 
 #. # The error for when we able to establish a (secure) connection with the server,
 #. # but there is some type of failure talking to the server that isn't covered by
@@ -162,7 +169,7 @@ msgstr ""
 #. # server's software.
 #: setup-error-server-problem
 msgid "There is a problem with the server \"{{server}}\". Try again later."
-msgstr ""
+msgstr "\"{{server}}\" সার্ভারে কিছু একটা সমস্যা হয়েছে। পরে আবার চেষ্টা করুন।"
 
 #. # The error for when we are trying to figure out the right server settings for
 #. # an account based on the e-mail address the user typed in during configuration,
@@ -270,11 +277,11 @@ msgstr "নতুন পাসওয়ার্ড দিয়ে আবার
 
 #: setup-gmail-twofactor-header
 msgid "Two-Factor Enabled"
-msgstr ""
+msgstr "টু-ফেক্টর সক্রিয়"
 
 #: setup-gmail-twofactor-message
 msgid "You need to enter an application-specific password below."
-msgstr ""
+msgstr "আপনাকে এপ্লিকেশন-বিষয়ক একটি পাসওয়ার্ড প্রবেশ করাতে হবে।"
 
 #: setup-gmail-twofactor-fix
 msgid "Use application password"
@@ -467,26 +474,23 @@ msgid "{{ n }} seconds"
 msgstr "{{ n }} সেকেন্ড"
 
 #: settings-check-dynamic[few]
-#, fuzzy
 msgctxt "settings-check-dynamic[few]"
 msgid "{{ n }} seconds"
 msgstr "{{ n }} সেকেন্ড"
 
 #: settings-check-dynamic[many]
-#, fuzzy
 msgctxt "settings-check-dynamic[many]"
 msgid "{{ n }} seconds"
 msgstr "{{ n }} সেকেন্ড"
 
 #: settings-check-dynamic[other]
-#, fuzzy
 msgctxt "settings-check-dynamic[other]"
 msgid "{{ n }} seconds"
 msgstr "{{ n }} সেকেন্ড"
 
 #: settings-default-account
 msgid "Set as default email"
-msgstr ""
+msgstr "ডিফল্ট ইমেইল হিসাবে সেট করুন"
 
 #: settings-account-type
 msgctxt "settings-account-type"
@@ -498,7 +502,6 @@ msgid "Credentials"
 msgstr "প্রমান পত্র"
 
 #: settings-activesync-label
-#, fuzzy
 msgctxt "settings-activesync-label"
 msgid "ActiveSync settings"
 msgstr "একটিভসিঙ্ক সেটিংস"
@@ -534,18 +537,18 @@ msgstr "পাসওয়ার্ড"
 
 #: settings-save
 msgid "Save"
-msgstr ""
+msgstr "সংরক্ষণ"
 
 #: settings-password-empty
 msgid "Password field should not be empty"
-msgstr ""
+msgstr "পাসওয়ার্ড ঘর খালি থাকতে পারবে না"
 
 #. # How much email to sync, in smallest unit of days, from the server. Only
 #. # valid for ActiveSync mail servers, not shown for other mail server types
 #. # like IMAP.
 #: settings-account-synchronize-window
 msgid "Days to sync"
-msgstr ""
+msgstr "সিঙ্ক করতে দিন"
 
 #: settings-synchronize-auto
 msgid "Automatic"
@@ -573,7 +576,7 @@ msgstr "১ মাস"
 
 #: settings-synchronize-all
 msgid "All messages"
-msgstr ""
+msgstr "সকল বার্তাসমূহ"
 
 #: accounts-header
 msgctxt "accounts-header"
@@ -818,20 +821,18 @@ msgid "This email contains {{ n }} images. Click to download."
 msgstr "এই ইমেইলটিতে {{ n }} টি ছবি আছে। ডাউনলোড করার জন্য ক্লিক করুন।"
 
 #: message-download-images[many]
-#, fuzzy
 msgctxt "message-download-images[many]"
 msgid "This email contains {{ n }} images. Click to download."
 msgstr "এই ইমেইলটিতে {{ n }} টি ছবি আছে। ডাউনলোড করার জন্য ক্লিক করুন।"
 
 #: message-download-images[other]
-#, fuzzy
 msgctxt "message-download-images[other]"
 msgid "This email contains {{ n }} images. Click to download."
 msgstr "এই ইমেইলটিতে {{ n }} টি ছবি আছে। ডাউনলোড করার জন্য ক্লিক করুন।"
 
 #: message-show-external-images
 msgid "Show external images"
-msgstr ""
+msgstr "বাইরের ছবি প্রদর্শন"
 
 #: message-multiedit-cancel
 msgctxt "message-multiedit-cancel"
@@ -912,7 +913,7 @@ msgstr "এই ফোল্ডারে কোন বার্তা নেই"
 
 #: messages-search-empty
 msgid "No matches in locally cached messages"
-msgstr ""
+msgstr "স্থানীয়ভাবে ক্যাশকৃত বার্তার সাথে মিল পাওয়া যায়নি।"
 
 #: messages-folder-select
 msgid "Select folder"
@@ -1108,28 +1109,24 @@ msgid "1 message flag removed"
 msgstr "১ র্বার্তা পতাকা অপসারিত"
 
 #: toaster-message-unstar[two]
-#, fuzzy
 msgctxt "toaster-message-unstar[two]"
 msgid "{{ n }} messages flag removed"
-msgstr "{{ n }} টি বার্তা ফ্লাগ করা হয়েছে"
+msgstr "{{ n }} টি বার্তা ফ্লাগ মুছে ফেলা হয়েছে"
 
 #: toaster-message-unstar[few]
-#, fuzzy
 msgctxt "toaster-message-unstar[few]"
 msgid "{{ n }} messages flag removed"
-msgstr "{{ n }} টি বার্তা ফ্লাগ করা হয়েছে"
+msgstr "{{ n }} টি বার্তা ফ্লাগ মুছে ফেলা হয়েছে"
 
 #: toaster-message-unstar[many]
-#, fuzzy
 msgctxt "toaster-message-unstar[many]"
 msgid "{{ n }} messages flag removed"
-msgstr "{{ n }} টি বার্তা ফ্লাগ করা হয়েছে"
+msgstr "{{ n }} টি বার্তা ফ্লাগ মুছে ফেলা হয়েছে"
 
 #: toaster-message-unstar[other]
-#, fuzzy
 msgctxt "toaster-message-unstar[other]"
 msgid "{{ n }} messages flag removed"
-msgstr "{{ n }} টি বার্তা ফ্লাগ করা হয়েছে"
+msgstr "{{ n }} টি বার্তা ফ্লাগ মুছে ফেলা হয়েছে"
 
 #: toaster-message-read
 msgctxt "toaster-message-read"
@@ -1166,9 +1163,8 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: toaster-message-unread[one]
-#, fuzzy
 msgid "1 message marked as unread"
-msgstr "১টি বার্তা পঠিত হিসাবে চিহ্নিত হয়েছে"
+msgstr "১টি বার্তা অপঠিত হিসাবে চিহ্নিত হয়েছে"
 
 #: toaster-message-unread[two]
 msgctxt "toaster-message-unread[two]"
@@ -1215,52 +1211,46 @@ msgid "{{ n }} messages moved"
 msgstr "{{ n }} টি বার্তা সরানো হয়েছে"
 
 #: toaster-message-move[other]
-#, fuzzy
 msgctxt "toaster-message-move[other]"
 msgid "{{ n }} messages moved"
 msgstr "{{ n }} টি বার্তা সরানো হয়েছে"
 
 #: toaster-message-delete
-#, fuzzy
 msgctxt "toaster-message-delete"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: toaster-message-delete[one]
 msgid "1 message deleted"
-msgstr ""
+msgstr "১টি বার্তা মুছে ফেলা হয়েছে"
 
 #: toaster-message-delete[two]
-#, fuzzy
 msgctxt "toaster-message-delete[two]"
 msgid "{{ n }} messages deleted"
-msgstr "{{ n }} টি বার্তা সরানো হয়েছে"
+msgstr "{{ n }} টি বার্তা মুছে ফেলা হয়েছে"
 
 #: toaster-message-delete[few]
-#, fuzzy
 msgctxt "toaster-message-delete[few]"
 msgid "{{ n }} messages deleted"
-msgstr "{{ n }} টি বার্তা সরানো হয়েছে"
+msgstr "{{ n }} টি বার্তা মুছে ফেলা হয়েছে"
 
 #: toaster-message-delete[many]
-#, fuzzy
 msgctxt "toaster-message-delete[many]"
 msgid "{{ n }} messages deleted"
-msgstr "{{ n }} টি বার্তা সরানো হয়েছে"
+msgstr "{{ n }} টি বার্তা মুছে ফেলা হয়েছে"
 
 #: toaster-message-delete[other]
-#, fuzzy
 msgctxt "toaster-message-delete[other]"
 msgid "{{ n }} messages deleted"
-msgstr "{{ n }} টি বার্তা সরানো হয়েছে"
+msgstr "{{ n }} টি বার্তা মুছে ফেলা হয়েছে "
 
 #: toaster-retryable-syncfailed
 msgid "Unable to connect to server"
-msgstr ""
+msgstr "সার্ভারের সাথে সংযোগ স্থাপন করা যায় নি।"
 
 #: form-clear-input
 msgid "Remove text"
-msgstr ""
+msgstr "টেক্সট অপসারণ করুন"
 
 #: confirm-dialog-title
 msgid "Confirmation"
@@ -1314,31 +1304,26 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: new-emails-notify-one-account[one]
-#, fuzzy
 msgctxt "new-emails-notify-one-account[one]"
 msgid "1 New Email"
 msgstr "১টি নতুন ই-মেইল"
 
 #: new-emails-notify-one-account[two]
-#, fuzzy
 msgctxt "new-emails-notify-one-account[two]"
 msgid "{{ n }} New Emails"
 msgstr "{{ n }} টি নতুন ইমেইল"
 
 #: new-emails-notify-one-account[few]
-#, fuzzy
 msgctxt "new-emails-notify-one-account[few]"
 msgid "{{ n }} New Emails"
 msgstr "{{ n }} টি নতুন ইমেইল"
 
 #: new-emails-notify-one-account[many]
-#, fuzzy
 msgctxt "new-emails-notify-one-account[many]"
 msgid "{{ n }} New Emails"
 msgstr "{{ n }} টি নতুন ইমেইল"
 
 #: new-emails-notify-one-account[other]
-#, fuzzy
 msgctxt "new-emails-notify-one-account[other]"
 msgid "{{ n }} New Emails"
 msgstr "{{ n }} টি নতুন ইমেইল"
@@ -1348,7 +1333,6 @@ msgstr "{{ n }} টি নতুন ইমেইল"
 #. # In this case, the user has more than one account configured
 #. # with the email app.
 #: new-emails-notify-multiple-accounts
-#, fuzzy
 msgctxt "new-emails-notify-multiple-accounts"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
@@ -1358,13 +1342,11 @@ msgid "1 New Email ({{ accountName }})"
 msgstr "১টি নতুন ই-মেইল ({{ accountName }})"
 
 #: new-emails-notify-multiple-accounts[two]
-#, fuzzy
 msgctxt "new-emails-notify-multiple-accounts[two]"
 msgid "{{ n }} New Emails ({{ accountName }})"
 msgstr "{{ n }} টি নতুন ই-মেইল ({{ accountName }})"
 
 #: new-emails-notify-multiple-accounts[few]
-#, fuzzy
 msgctxt "new-emails-notify-multiple-accounts[few]"
 msgid "{{ n }} New Emails ({{ accountName }})"
 msgstr "{{ n }} টি নতুন ই-মেইল ({{ accountName }})"
