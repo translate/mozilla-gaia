@@ -51,9 +51,10 @@ do
 		mkdir -p $translation_dir/.tmp/
 		cp -rp $translation_dir/$polang $translation_dir/.tmp/
 		rm $(find $translation_dir/$polang -name "*.po")
-		pot2po $verbosity -t $translation_dir/.tmp/$polang $translation_dir/templates $translation_dir/$polang
+		pomigrate2 $verbosity --pot2po $translation_dir/.tmp/$polang $translation_dir/$polang $translation_dir/templates
 		rm -rf $translation_dir/.tmp/$polang
 		# new locale files
+		rm $(find $base_dir/build/locales/$mozrelease/$mozlang -name "*.properties")
 		po2moz $verbosity --removeuntranslated --exclude="obsolete" -t $base_dir/build/locales/$mozrelease/en-US $translation_dir/$polang $base_dir/build/locales/$mozrelease/$mozlang
 	fi
 done
