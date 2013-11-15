@@ -1,49 +1,78 @@
-diff -r c30af8f02e20 apps/communications/ftu/ftu.properties
---- a/apps/communications/ftu/ftu.properties	Thu Jan 17 13:22:15 2013 +0000
-+++ b/apps/communications/ftu/ftu.properties	Tue Jan 22 00:14:21 2013 +0000
-@@ -4,7 +4,6 @@
+diff --git a/apps/settings/settings.properties b/apps/settings/settings.properties
+--- a/apps/settings/settings.properties
++++ b/apps/settings/settings.properties
+@@ -142,17 +142,16 @@ fdnAttemptMsg3={[ plural(n) ]}
+ fdnAttemptMsg3[one]=You have one try left to enter the correct code before locking the SIM card.
+ fdnAttemptMsg3[two]=You have {{n}} tries left to enter the correct code before locking the SIM card.
+ fdnAttemptMsg3[few]=You have {{n}} tries left to enter the correct code before locking the SIM card.
+ fdnAttemptMsg3[many]=You have {{n}} tries left to enter the correct code before locking the SIM card.
+ fdnAttemptMsg3[other]=You have {{n}} tries left to enter the correct code before locking the SIM card.
+ fdnLastChanceMsg=This is your last chance to enter the correct PIN2. Otherwise, you must enter the PUK2 code to use this SIM card.
+ fdnErrorMsg=The PIN2 code is incorrect.
+ fdn-enabled-warning=Call forwarding is disabled by FDN.
+-fdn-authorizedNumbers=Authorized numbers
+ fdnContact-name=name
+ fdnContact-number=number
+ fdnContact-submit=submit
+ fdnAction-add=Add contact
+ fdnAction-call=Call
+ fdnAction-edit=Edit contact
+ fdnAction-delete=Delete contact
  
- pincode2=Enter PIN code
- type_pin=Type your PIN code
--skip=Skip
- send=Send
- pinValidation=PIN must have between 4 and 8 characters.
- pinErrorMsg=The PIN was incorrect.
-@@ -82,7 +81,6 @@
- showPassword=Show Password
- refresh = Refresh
- noWifiFound = No networks found
--join = Join
- 
- #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
- # Date & Time
-diff -r c30af8f02e20 apps/settings/settings.properties
---- a/apps/settings/settings.properties	Thu Jan 17 13:22:15 2013 +0000
-+++ b/apps/settings/settings.properties	Tue Jan 22 00:14:21 2013 +0000
-@@ -390,7 +390,6 @@
- deviceInfo-IMEI=IMEI
- deviceInfo-ICCID=ICCID
- deviceInfo-MSISDN=Phone number
+@@ -614,17 +613,16 @@ model-name=Model
+ os-version=OS version
+ firmware_revision=Firmware revision
+ hardware_revision=Hardware revision
+ platform_version=Platform version
+ build-id=Build Identifier
+ update-channel=Update channel
+ last-updated=Last Updated
+ more-info=More Information
 -gitInfo=Git commit info
- developer=Developer
- software=Software
- devSettings=Developer settings
-diff -r c30af8f02e20 apps/system/system.properties
---- a/apps/system/system.properties	Thu Jan 17 13:22:15 2013 +0000
-+++ b/apps/system/system.properties	Tue Jan 22 00:14:21 2013 +0000
-@@ -51,7 +51,6 @@
+ softwareUpdates=Software updates
+ check-update-daily     = Daily
+ check-update-weekly    = Weekly
+ check-update-monthly   = Monthly
+ check-for-updates      = Check for updates
+ check-update-now       = Check now
+ update-status          = Update status
+ checking-for-update    = Checking for updates…
+diff --git a/apps/system/system.properties b/apps/system/system.properties
+--- a/apps/system/system.properties
++++ b/apps/system/system.properties
+@@ -53,17 +53,16 @@ power=Power off
+ # cards view
+ no-recent-apps=No recent apps
+ 
+ # permissions
+ # LOCALIZATION NOTE: this is displayed in a permission request dialog box,
  # see shared/permissions/permissions.properties for more context.
  yes=Yes
  no=No
 -deny=Don't allow
  allow=Allow
- remember-my-choice=Remember my choice
- 
-@@ -75,7 +74,6 @@
- are-you-sure-you-want-to-cancel=Are you sure you want to cancel this install?
- cancel-install=Cancel Install
- resume=Resume
+ dontshare-geolocation=Don't Share
+ share-geolocation=Share
+ dontshare-audio-capture=Don't Share
+ share-audio-capture=Share
+ dontshare-video-capture=Don't Share
+ share-video-capture=Share
+ dontshare-media-capture=Don't Share
+@@ -228,17 +227,16 @@ byteUnit-PB = PB
+ byteUnit-EB = EB
+ byteUnit-ZB = ZB
+ byteUnit-YB = YB
+ # Localization note (fileSize*): The string is a float.
+ fileSize = {{size}} {{unit}}
+ deny=Deny
+ transfer=Transfer
+ cancelFileTransfer=Cancel Bluetooth file transfer?
 -continue=Continue
- stopDownloading=Stop downloading {{ app }}?
- app-download-can-be-restarted=The download can be restarted later.
- app-download-stop-button=Stop Download
+ transfer-has-started-title=The transfer has started
+ transfer-has-started-description=Check the progress in Notification center
+ transferFinished-sentSuccessful-title=File sent
+ transferFinished-receivedSuccessful-title=File received
+ transferFinished-sentFailed-title=File could not be sent
+ transferFinished-receivedFailed-title=File could not be received
+ transferReport-title=Transfer report:
+ transferReport-description={{numSuccessful}} files successful, {{numUnsuccessful}} files unsuccessful
