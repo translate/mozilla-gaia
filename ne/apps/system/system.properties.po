@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-17 12:08+0100\n"
+"POT-Creation-Date: 2013-11-15 22:32+0100\n"
 "PO-Revision-Date: 2013-09-18 18:03+0000\n"
 "Last-Translator: Benjamin <benpokharel@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -185,6 +185,11 @@ msgstr "पुन:सुरु गर्नुहोस्"
 msgid "Power off"
 msgstr "पावर बन्द"
 
+#. # cards view
+#: no-recent-apps
+msgid "No recent apps"
+msgstr ""
+
 #. # permissions
 #. # LOCALIZATION NOTE: this is displayed in a permission request dialog box,
 #. # see shared/permissions/permissions.properties for more context.
@@ -199,6 +204,46 @@ msgstr "हँदैन"
 #: allow
 msgid "Allow"
 msgstr "अनुमति दिनुहोस्"
+
+#: dontshare-geolocation
+msgctxt "dontshare-geolocation"
+msgid "Don't Share"
+msgstr ""
+
+#: share-geolocation
+msgctxt "share-geolocation"
+msgid "Share"
+msgstr ""
+
+#: dontshare-audio-capture
+msgctxt "dontshare-audio-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-audio-capture
+msgctxt "share-audio-capture"
+msgid "Share"
+msgstr ""
+
+#: dontshare-video-capture
+msgctxt "dontshare-video-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-video-capture
+msgctxt "share-video-capture"
+msgid "Share"
+msgstr ""
+
+#: dontshare-media-capture
+msgctxt "dontshare-media-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-media-capture
+msgctxt "share-media-capture"
+msgid "Share"
+msgstr ""
 
 #: remember-my-choice
 msgid "Remember my choice"
@@ -221,27 +266,17 @@ msgstr "साइज"
 msgid "Author"
 msgstr "लेखक"
 
-#: unknown
+#: size-unknown
+#, fuzzy
+msgctxt "size-unknown"
 msgid "Unknown"
 msgstr "अज्ञात"
 
-#. # LOCALIZATION NOTE (unknown-size,unknown-author):
-#. # if you leave the original en-US value "{{unknown}}" in
-#. # the following two strings, the localization will be automatically picked
-#. # from the existing string with ID "unknown". If you need to adapt your
-#. # localization to different genders for author and size, you can localize
-#. # these strings. For example in French:
-#. # unknown-size=inconnue
-#. # unknown-author=inconnu
-#: unknown-size
-msgctxt "unknown-size"
-msgid "{{unknown}}"
-msgstr "{{अज्ञात}}"
-
-#: unknown-author
-msgctxt "unknown-author"
-msgid "{{unknown}}"
-msgstr "{{अज्ञात}}"
+#: author-unknown
+#, fuzzy
+msgctxt "author-unknown"
+msgid "Unknown"
+msgstr "अज्ञात"
 
 #: install
 msgid "Install"
@@ -252,8 +287,10 @@ msgid "bytes"
 msgstr "बाइट्स"
 
 #: kB
-msgid "kB"
-msgstr "kB"
+#, fuzzy
+msgctxt "kB"
+msgid "KB"
+msgstr "KB"
 
 #: MB
 msgctxt "MB"
@@ -343,6 +380,16 @@ msgstr ""
 msgid "{{ appName }} installed"
 msgstr "{{ appName }} इन्स्टल भयो"
 
+#. #setup dialog
+#: setup
+msgid "Setup"
+msgstr ""
+
+#. #ime
+#: ime-addkeyboards
+msgid "Add keyboards"
+msgstr ""
+
 #. # update manager
 #: later
 msgid "Later"
@@ -369,7 +416,7 @@ msgid "Not Now"
 msgstr "अहिले होइन"
 
 #. # the <span> element will be displayed when the download finishes
-#: downloadingUpdateMessage
+#: downloadingUpdateMessage.innerHTML
 msgid "Downloading updates… <span>{{ progress }} downloaded.</span>"
 msgstr "अपडेटहरु डाउनलोड हुदैछन्...<span>{{ progress }} डाउनलोड भइसक्यो.</span>"
 
@@ -401,32 +448,37 @@ msgstr "तपाईँ सबै डाउनलोडहरु रद्द �
 msgid "There was an error while downloading the updates."
 msgstr "अपडेटहरु डाउनलोड गर्दा एउटा त्रुटि भेटियो।"
 
-#: updateAvailableInfo
-msgctxt "updateAvailableInfo"
+#: updateAvailableInfo.innerHTML
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: updateAvailableInfo[one]
+#: updateAvailableInfo.innerHTML[one]
 msgid "{{ n }} update available. <span>Tap for more info.</span>"
 msgstr "{{ n }} अपडेटहरु उपलब्ध छन् | <span>थप जानकारीका लागि थिच्नुहोस्।</span>"
 
-#: updateAvailableInfo[two]
-msgctxt "updateAvailableInfo[two]"
+#: updateAvailableInfo.innerHTML[two]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[two]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "{{ n }} अपडेटहरु उपलब्ध छन्।<span>थप जानकारीका लागि थिच्नुहोस् |</span>"
 
-#: updateAvailableInfo[few]
-msgctxt "updateAvailableInfo[few]"
-msgid "{{ n }} updates available. <span>Tap for more info.</span>"
-msgstr "{{ n }} अपडेटहरु उपलब्ध छन्।<span>थप जानकारीका लागि थिच्नुहोस्।</span>"
-
-#: updateAvailableInfo[many]
-msgctxt "updateAvailableInfo[many]"
+#: updateAvailableInfo.innerHTML[few]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[few]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "{{ n }} अपडेटहरु उपलब्ध छन्।<span>थप जानकारीका लागि थिच्नुहोस् |</span>"
 
-#: updateAvailableInfo[other]
-msgctxt "updateAvailableInfo[other]"
+#: updateAvailableInfo.innerHTML[many]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[many]"
+msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+msgstr "{{ n }} अपडेटहरु उपलब्ध छन्।<span>थप जानकारीका लागि थिच्नुहोस् |</span>"
+
+#: updateAvailableInfo.innerHTML[other]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[other]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "{{ n }} अपडेटहरु उपलब्ध छन्।<span>थप जानकारीका लागि थिच्नुहोस् |</span>"
 
@@ -471,7 +523,7 @@ msgstr "प्रणाली अपडेट तयार"
 msgid "Required"
 msgstr "आवश्यक"
 
-#: uncompressingMessage
+#: uncompressingMessage.innerHTML
 msgid "Uncompressing… <span>This can take a few minutes.</span>"
 msgstr "फुकाउदै…<span>केही मिनेट लग्न सक्छ |</span>"
 
@@ -605,10 +657,6 @@ msgstr ""
 #: try-again
 msgid "Try again"
 msgstr "फेरि प्रयास गर्नुहोस्"
-
-#: dialog-closed
-msgid "Dialog closed by the user"
-msgstr "प्रयोगकर्ताद्वारा संवाद बन्द गरियो"
 
 #. # value selector, time/date picker
 #: select-time
@@ -760,19 +808,21 @@ msgstr "ब्लुटुथ फाइल स्थानान्तरण स
 msgid "{{deviceName}} would like to transfer {{fileName}} ({{fileSize}})."
 msgstr "{{deviceName}}ले {{fileName}} ({{fileSize}}byte) स्थानान्तर गर्न चाहन्छ |"
 
-#: notification-fileTransfer-title
-msgid "Receive file?"
-msgstr "फाइल प्राप्त गर्न चाहनुहुन्छ?"
+#: transfer-confirmation-title
+msgid "{{deviceName}}"
+msgstr ""
 
-#: notification-fileTransfer-description
-msgid "File incoming from another device"
-msgstr "फाइल आर्को यन्त्रबाट आगमन हुँदै छ"
+#: transfer-confirmation-description
+msgid "Review transfer request."
+msgstr ""
 
 #: byteUnit-B
 msgid "Bytes"
 msgstr "बाइट्स"
 
 #: byteUnit-KB
+#, fuzzy
+msgctxt "byteUnit-KB"
 msgid "KB"
 msgstr "KB"
 
@@ -825,17 +875,13 @@ msgstr "स्थानान्तर गर्नुहोस्"
 msgid "Cancel Bluetooth file transfer?"
 msgstr "ब्लुटुथ फाइल स्थानान्तर गर्नुहोस रद्द गर्न चाहनुहुन्छ?"
 
-#: bluetooth-file-transfer-result
-msgid "Bluetooth file transfer {{status}}."
-msgstr "ब्लुटुथ फाइल स्थानान्तर गर्नुहोस {{status}}।"
+#: transfer-has-started-title
+msgid "The transfer has started"
+msgstr ""
 
-#: complete
-msgid "complete"
-msgstr "पूरा भयो"
-
-#: failed
-msgid "failed"
-msgstr "असफल भयो"
+#: transfer-has-started-description
+msgid "Check the progress in Notification center"
+msgstr ""
 
 #: transferFinished-sentSuccessful-title
 msgid "File sent"
@@ -852,6 +898,15 @@ msgstr "फाइल पठाउन सकिएन"
 #: transferFinished-receivedFailed-title
 msgid "File could not be received"
 msgstr "फाइल प्राप्त गर्न सकिएन"
+
+#: transferReport-title
+msgid "Transfer report:"
+msgstr ""
+
+#: transferReport-description
+msgid ""
+"{{numSuccessful}} files successful, {{numUnsuccessful}} files unsuccessful"
+msgstr ""
 
 #: unknown-file
 msgid "Unknown file"
@@ -874,11 +929,13 @@ msgid "Can not receive file"
 msgstr "फाइल प्राप्त गर्न सकिदैन"
 
 #: cannotGetStorageState
-msgid "Can not get device storage state"
+#, fuzzy
+msgid "Can not get device storage state."
 msgstr "यन्त्र भण्डार स्थिति पाउन सकिदैन"
 
-#: sdcard-not-exist
-msgid "No memory card found (Please insert a memory card)"
+#: sdcard-not-exist2
+#, fuzzy
+msgid "No memory card found. Please insert a memory card."
 msgstr "मेमोरी कार्ड छैन (कृपया मेमोरी कार्ड घुसाउनुहोस्)"
 
 #: sdcard-in-use
@@ -900,6 +957,19 @@ msgstr "अज्ञात त्रुटि"
 #: confirm
 msgid "Confirm"
 msgstr "यकिन गर्नुहोस्"
+
+#. # Media Recoding
+#: microphone-is-on
+msgid "Mic is on"
+msgstr ""
+
+#: camera-is-on
+msgid "Camera is on"
+msgstr ""
+
+#: media-is-on
+msgid "Camera & Mic are ON"
+msgstr ""
 
 #. # Security :: SIM PIN lock
 #: noSimCard
@@ -1390,6 +1460,76 @@ msgstr "सन्देश पठाउनुहोस्?"
 #: icc-inputtitle
 msgid "STK Query"
 msgstr "STK क्वेरी"
+
+#. # CDMA emergency callback mode
+#: emergency-callback-mode
+msgid "Emergency call back mode"
+msgstr ""
+
+#: emergency-callback-dialog-message
+msgid ""
+"Telecom services and internet are disable due to emergency call back mode. "
+"Would you like to turn off the mode?"
+msgstr ""
+
+#. # CDMA record information
+#: cdma-record-info
+msgid "CDMA record information"
+msgstr ""
+
+#. # IME (Keyboard)
+#: ime-switching-tip
+msgid "Tap to switch input method"
+msgstr ""
+
+#: layout-selection
+msgid "Layout selection"
+msgstr ""
+
+#~ msgctxt "unknown-size"
+#~ msgid "{{unknown}}"
+#~ msgstr "{{अज्ञात}}"
+
+#~ msgctxt "unknown-author"
+#~ msgid "{{unknown}}"
+#~ msgstr "{{अज्ञात}}"
+
+#~ msgid "kB"
+#~ msgstr "kB"
+
+#~ msgctxt "updateAvailableInfo"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "updateAvailableInfo[few]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr "{{ n }} अपडेटहरु उपलब्ध छन्।<span>थप जानकारीका लागि थिच्नुहोस्।</span>"
+
+#~ msgctxt "updateAvailableInfo[many]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr "{{ n }} अपडेटहरु उपलब्ध छन्।<span>थप जानकारीका लागि थिच्नुहोस् |</span>"
+
+#~ msgctxt "updateAvailableInfo[other]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr "{{ n }} अपडेटहरु उपलब्ध छन्।<span>थप जानकारीका लागि थिच्नुहोस् |</span>"
+
+#~ msgid "Dialog closed by the user"
+#~ msgstr "प्रयोगकर्ताद्वारा संवाद बन्द गरियो"
+
+#~ msgid "Receive file?"
+#~ msgstr "फाइल प्राप्त गर्न चाहनुहुन्छ?"
+
+#~ msgid "File incoming from another device"
+#~ msgstr "फाइल आर्को यन्त्रबाट आगमन हुँदै छ"
+
+#~ msgid "Bluetooth file transfer {{status}}."
+#~ msgstr "ब्लुटुथ फाइल स्थानान्तर गर्नुहोस {{status}}।"
+
+#~ msgid "complete"
+#~ msgstr "पूरा भयो"
+
+#~ msgid "failed"
+#~ msgstr "असफल भयो"
 
 #~ msgid "Don't allow"
 #~ msgstr "अनुमति नदिनुहोस्"

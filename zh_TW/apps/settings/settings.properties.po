@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-22 13:57+0100\n"
+"POT-Creation-Date: 2013-11-15 22:32+0100\n"
 "PO-Revision-Date: 2013-03-17 10:33+0000\n"
 "Last-Translator: dwj437220696 <dwj437220696@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1363516417.000000\n"
@@ -266,6 +266,10 @@ msgctxt "authentication"
 msgid "Authentication"
 msgstr "認證"
 
+#: eap
+msgid "EAP method"
+msgstr ""
+
 #: identity
 msgid "Identifier"
 msgstr "識別"
@@ -356,8 +360,18 @@ msgid "PIN is 4 or 8 digits"
 msgstr "PIN 碼為四或八位數字長"
 
 #: wpsPinInput
-msgid "Input {{pin}} to opposite device"
+#, fuzzy
+msgid "Input {{pin}} to an opposite device"
 msgstr "在另一台裝置輸入 {{pin}}"
+
+#: wpsPinAps
+msgid "Select an opposite device"
+msgstr ""
+
+#: wpsAnyAp
+msgctxt "wpsAnyAp"
+msgid "Any"
+msgstr ""
 
 #: wpsCancelMessage
 msgid "Cancel WPS"
@@ -372,6 +386,14 @@ msgstr "WPS 取消失敗"
 msgid "Call Settings"
 msgstr ""
 
+#: callSettingsQuery
+msgid "Requesting network info…"
+msgstr ""
+
+#: callSettingsQueryError
+msgid "Error in query"
+msgstr ""
+
 #: voiceMail
 msgid "Voicemail"
 msgstr ""
@@ -384,9 +406,23 @@ msgstr ""
 msgid "Not set"
 msgstr ""
 
+#: voicePrivacyMode
+msgid "Voice privacy mode"
+msgstr ""
+
 #: callWaiting
 msgid "Call waiting"
 msgstr "來電等待"
+
+#: confirmCallWaitingTitle
+msgid "Unable to confirm call waiting preferences"
+msgstr ""
+
+#: confirmCallWaitingDesc
+msgid ""
+"The device is currently unable to communicate with the carrier. Try setting "
+"the preference again."
+msgstr ""
 
 #: callForwarding
 msgid "Call forwarding"
@@ -428,14 +464,6 @@ msgstr ""
 msgid "When unreachable"
 msgstr ""
 
-#: callForwardingRequesting
-msgid "Requesting network info…"
-msgstr ""
-
-#: callForwardingQueryError
-msgid "Error in query"
-msgstr ""
-
 #: callForwardingForwardingVoiceTo
 msgid "Voice calls to"
 msgstr ""
@@ -448,20 +476,6 @@ msgstr "停用"
 
 #: callForwardingConfirmTitle
 msgid "Call forwarding confirmation message"
-msgstr ""
-
-#: callBroadcastService
-msgid "Cell broadcast service"
-msgstr ""
-
-#: confirmCallWaitingTitle
-msgid "Unable to confirm call waiting preferences"
-msgstr ""
-
-#: confirmCallWaitingDesc
-msgid ""
-"The device is currently unable to communicate with the carrier. Try setting "
-"the preference again."
 msgstr ""
 
 #: cf-alwaysUseThisNumber
@@ -494,6 +508,209 @@ msgstr ""
 
 #: callForwardingSetError
 msgid "Call settings error."
+msgstr ""
+
+#: callerId
+msgid "Caller ID"
+msgstr ""
+
+#: callerId-default
+msgid "Network default"
+msgstr ""
+
+#: callerId-hide
+msgid "Hide number"
+msgstr ""
+
+#: callerId-show
+msgid "Show number"
+msgstr ""
+
+#: fdn
+msgctxt "fdn"
+msgid "Fixed dialing numbers"
+msgstr ""
+
+#: fdnSettings
+msgctxt "fdnSettings"
+msgid "Fixed dialing numbers"
+msgstr ""
+
+#: fdn-authorizedNumbers
+msgid "Authorized numbers"
+msgstr ""
+
+#: fdn-authorizedNumbers-desc
+msgid "List of numbers that can be called"
+msgstr ""
+
+#: fdn-explanation1
+msgid "Restrict which numbers can be dialed from this phone."
+msgstr ""
+
+#: fdn-explanation2
+msgid "(Emergency numbers will always be dialable)"
+msgstr ""
+
+#: fdnEnable
+msgid "Enable FDN"
+msgstr ""
+
+#: fdnDisable
+msgid "Disable FDN"
+msgstr ""
+
+#: fdnReset
+msgid "Reset PIN2"
+msgstr ""
+
+#: fdnAttemptMsg3
+#, fuzzy
+msgctxt "fdnAttemptMsg3"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: fdnAttemptMsg3[one]
+msgctxt "fdnAttemptMsg3[one]"
+msgid ""
+"You have one try left to enter the correct code before locking the SIM card."
+msgstr ""
+
+#: fdnAttemptMsg3[two]
+msgctxt "fdnAttemptMsg3[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+
+#: fdnAttemptMsg3[few]
+msgctxt "fdnAttemptMsg3[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+
+#: fdnAttemptMsg3[many]
+msgctxt "fdnAttemptMsg3[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+
+#: fdnAttemptMsg3[other]
+msgctxt "fdnAttemptMsg3[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+
+#: fdnLastChanceMsg
+#, fuzzy
+msgid ""
+"This is your last chance to enter the correct PIN2. Otherwise, you must "
+"enter the PUK2 code to use this SIM card."
+msgstr ""
+"這是您最後一次能輸入正確 PIN 碼的機會。否則您必須輸入 PUK 碼才能使用此 SIM "
+"卡。"
+
+#: fdnErrorMsg
+#, fuzzy
+msgid "The PIN2 code is incorrect."
+msgstr "PUK 碼不正確。"
+
+#: fdn-enabled-warning
+msgid "Call forwarding is disabled by FDN."
+msgstr ""
+
+#: fdnContact-name
+#, fuzzy
+msgid "name"
+msgstr "名稱"
+
+#: fdnContact-number
+msgctxt "fdnContact-number"
+msgid "number"
+msgstr ""
+
+#: fdnContact-submit
+msgid "submit"
+msgstr ""
+
+#: fdnAction-add
+msgid "Add contact"
+msgstr ""
+
+#: fdnAction-call
+msgid "Call"
+msgstr "撥號"
+
+#: fdnAction-edit
+msgid "Edit contact"
+msgstr ""
+
+#: fdnAction-delete
+msgid "Delete contact"
+msgstr ""
+
+#. # Connectivity :: Messaging
+#: messagingSettings
+msgid "Messaging Settings"
+msgstr ""
+
+#: message-confirmation
+msgid "Message confirmation"
+msgstr ""
+
+#: message-delivery-reports
+msgid "Delivery reports"
+msgstr ""
+
+#: message-delivery-reports-details
+msgid "Request notification of delivery for each message sent"
+msgstr ""
+
+#: mmsTitle
+msgid "Multimedia messaging (MMS)"
+msgstr ""
+
+#: auto-retrieve
+msgid "Auto retrieve"
+msgstr ""
+
+#: auto-retrieve-details
+msgid "Automatically retrieve messages"
+msgstr ""
+
+#: manual-retrieve
+msgid "Off"
+msgstr ""
+
+#: auto-roaming-retrieve
+msgid "On with roaming"
+msgstr ""
+
+#: auto-no-roaming-retrieve
+msgid "On without roaming"
+msgstr ""
+
+#: autoConfigure
+msgid "Auto-configure"
+msgstr "自動設定"
+
+#: wapPushMessages
+msgid "WAP Push messages"
+msgstr ""
+
+#: wapPush
+msgid "WAP Push"
+msgstr ""
+
+#: cellBroadcastMessages
+msgid "Cell broadcast messages"
+msgstr ""
+
+#: cellBroadcast
+msgid "Cell broadcast"
 msgstr ""
 
 #. # Connectivity :: Cellular & Data
@@ -538,12 +755,45 @@ msgctxt "operator-networkType-auto"
 msgid "Automatic"
 msgstr ""
 
+#: operator-networkType-prefer2G
+msgid "2G preferred"
+msgstr ""
+
 #: operator-networkType-2G
 msgid "2G only"
 msgstr ""
 
 #: operator-networkType-3G
 msgid "3G only"
+msgstr ""
+
+#. # DUALSTACK
+#: operator-networkType-GSM
+msgid "GSM"
+msgstr ""
+
+#: operator-networkType-WCDMA
+msgid "WCDMA"
+msgstr ""
+
+#: operator-networkType-CDMA
+msgid "CDMA"
+msgstr ""
+
+#: operator-networkType-EVDO
+msgid "EVDO"
+msgstr ""
+
+#: operator-networkType-preferGSM
+msgid "GSM preferred"
+msgstr ""
+
+#: operator-networkType-preferWCDMA
+msgid "WCDMA preferred"
+msgstr ""
+
+#: operator-networkType-preferEVDO
+msgid "EVDO preferred"
 msgstr ""
 
 #: operator-autoSelect
@@ -553,6 +803,10 @@ msgstr "自動選擇"
 #: operator-networkSelect-auto
 msgctxt "operator-networkSelect-auto"
 msgid "Automatic"
+msgstr ""
+
+#: operator-networkSelect-manual
+msgid "Manual"
 msgstr ""
 
 #: operator-turnAutoSelectOff
@@ -573,6 +827,23 @@ msgstr "連線失敗"
 msgctxt "operator-status-connected"
 msgid "Connected"
 msgstr "已連線"
+
+#: operator-roamingPreference
+msgid "Roaming preference"
+msgstr ""
+
+#: operator-roamingPreference-home
+msgid "Home"
+msgstr ""
+
+#: operator-roamingPreference-any
+msgctxt "operator-roamingPreference-any"
+msgid "Any"
+msgstr ""
+
+#: operator-roamingPreference-affiliated
+msgid "Affiliated"
+msgstr ""
 
 #: apn
 msgid "APN"
@@ -596,14 +867,6 @@ msgstr ""
 msgid "APN settings"
 msgstr "APN 選項"
 
-#: text-message-confirmation
-msgid "Text message confirmation"
-msgstr ""
-
-#: mmsTitle
-msgid "Multimedia messaging (MMS)"
-msgstr ""
-
 #: mmsport
 msgid "MMS port"
 msgstr "MMS 埠"
@@ -615,38 +878,6 @@ msgstr "MMS Proxy"
 #: mmsc
 msgid "MMSC"
 msgstr "MMSC"
-
-#: auto-retrieve
-msgid "Auto retrieve"
-msgstr ""
-
-#: auto-retrieve-details
-msgid "Automatically retrieve messages"
-msgstr ""
-
-#: manual-retrieve
-msgid "Off"
-msgstr ""
-
-#: auto-roaming-retrieve
-msgid "On with roaming"
-msgstr ""
-
-#: auto-no-roaming-retrieve
-msgid "On without roaming"
-msgstr ""
-
-#: delivery-reports
-msgid "Delivery reports"
-msgstr ""
-
-#: delivery-reports-details
-msgid "Request notification of delivery for each text message sent"
-msgstr ""
-
-#: autoConfigure
-msgid "Auto-configure"
-msgstr "自動設定"
 
 #: httpProxyHost
 msgid "HTTP proxy host"
@@ -753,6 +984,10 @@ msgstr "附近的裝置"
 msgid "Visible to all"
 msgstr "讓所有人可見"
 
+#: bluetooth-name-maxlength-alert
+msgid "Your device name exceeds {{length}} characters. Please retry again."
+msgstr ""
+
 #: bt-status-nopaired
 msgid "No devices paired"
 msgstr "沒有已經配對的裝置"
@@ -822,9 +1057,33 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "已連線"
 
+#: device-status-connected-phone
+msgid "Connected to phone audio"
+msgstr ""
+
+#: device-status-connected-media
+msgid "Connected to media audio"
+msgstr ""
+
+#: device-status-connected-phone-media
+msgid "Connected to phone/media audio"
+msgstr ""
+
 #: device-option-unpair
 msgid "Unpair"
 msgstr "取消配對"
+
+#: device-option-confirm
+msgid "Confirm"
+msgstr ""
+
+#: device-option-unpair-confirmation
+msgid "Confirmation"
+msgstr ""
+
+#: device-option-unpair-device
+msgid "Unpair Device?"
+msgstr ""
 
 #: device-option-connect
 msgid "Connect"
@@ -853,6 +1112,10 @@ msgstr "未知的裝置"
 #: change-phone-name
 msgid "Change phone name"
 msgstr "修改手機名稱"
+
+#: change-phone-name-desc
+msgid "Change the name of your device as it appears in your computer"
+msgstr ""
 
 #: bluetooth-new-name
 msgid "New name"
@@ -934,7 +1197,15 @@ msgid ""
 "from it."
 msgstr "您目前已連接到此裝置。取消配對的同時也將會取消連線。"
 
+#: pair-view-title
+msgid "Bluetooth Request From"
+msgstr ""
+
 #. # Connectivity :: Internet Sharing
+#: SSIDCannotBeEmpty
+msgid "The SSID cannot be empty"
+msgstr ""
+
 #: internetSharing
 msgid "Internet sharing"
 msgstr "分享網路"
@@ -1029,6 +1300,18 @@ msgstr "音量"
 msgid "Tones"
 msgstr ""
 
+#: touch-tones
+msgid "Audible touch tones"
+msgstr ""
+
+#: touch-tone-short
+msgid "Short"
+msgstr ""
+
+#: touch-tone-long
+msgid "Long"
+msgstr ""
+
 #: select-tone
 msgid "Select a tone"
 msgstr "選擇鈴聲"
@@ -1065,6 +1348,14 @@ msgstr "解鎖畫面"
 msgid "Camera shutter"
 msgstr ""
 
+#: camera-recordingsound
+msgid "Video recording"
+msgstr ""
+
+#: sent-mail
+msgid "Sent Mail"
+msgstr ""
+
 #: sent-message
 msgid "Sent Message"
 msgstr ""
@@ -1081,6 +1372,16 @@ msgstr ""
 msgid "Voice"
 msgstr ""
 
+#: savingringtone
+msgid "Saving ringtone…"
+msgstr ""
+
+#: unplayable-ringtone
+msgid ""
+"The ringtone was not changed because the selected file can not be played on "
+"this phone."
+msgstr ""
+
 #. # Personalization :: Display
 #: display
 msgid "Display"
@@ -1095,7 +1396,8 @@ msgid "Adjust automatically"
 msgstr "自動調整"
 
 #: lockScreen
-msgid "Lock Screen"
+#, fuzzy
+msgid "Lock screen"
 msgstr "鎖定畫面"
 
 #: wallpaper
@@ -1125,6 +1427,10 @@ msgstr "10 分鐘"
 #: never
 msgid "never"
 msgstr "永不"
+
+#: lock-orientation
+msgid "Lock orientation"
+msgstr ""
 
 #. # Personalization :: Notifications
 #: notifications
@@ -1190,109 +1496,78 @@ msgstr ""
 msgid "%A, %B %d, %Y"
 msgstr "%Y年%B%d日 %A"
 
+#. # Personalization :: Homescreen
+#: homescreen
+msgid "Homescreen"
+msgstr ""
+
+#: changeHomescreen
+msgid "Change homescreen"
+msgstr ""
+
+#: changeHomescreenButton
+#, fuzzy
+msgctxt "changeHomescreenButton"
+msgid "Change"
+msgstr "變更"
+
+#: description
+msgid "Description"
+msgstr ""
+
 #. # Personalization :: Keyboard
-#: keyboard
-msgid "Keyboard"
+#: installedInputMethods
+msgid "Installed input methods"
+msgstr ""
+
+#: keyboards
+#, fuzzy
+msgid "Keyboards"
 msgstr "鍵盤"
 
 #: keyboardLayouts
 msgid "Keyboard layouts"
 msgstr "鍵盤配置"
 
+#: numberKeyboardLayouts
+msgid "Number layouts"
+msgstr ""
+
+#: optionKeyboardLayouts
+msgid "Option layouts"
+msgstr ""
+
 #: keypad
 msgid "Keypad"
 msgstr "數字鍵盤"
 
-#: vibration
-msgid "Vibration"
-msgstr "震動"
-
-#: clickSound
-msgid "Click sound"
-msgstr "點擊音效"
-
-#: autoCorrect
-msgid "Auto correction"
+#: selectedKeyboards
+msgid "Selected keyboards"
 msgstr ""
 
-#: wordSuggestion
-msgid "Word suggestion"
-msgstr "文字建議"
-
-#: english
-msgid "English"
-msgstr "英文"
-
-#: dvorak
-msgid "English (Dvorak)"
-msgstr "英文 (Dvorak)"
-
-#: spanish
-msgid "Spanish"
-msgstr "西班牙文"
-
-#: portuguese
-msgid "Portuguese Brazilian"
-msgstr "巴西葡萄牙語"
-
-#: latin
-msgid "Other Latin scripts"
-msgstr "其他拉丁文字"
-
-#: latin-desc
-msgid "French, German, Norwegian (Bokmål), Slovak, Turkish"
-msgstr "法文、德文、書面挪威文、斯洛伐克語、土耳其文"
-
-#: cyrillic
-msgid "Cyrillic scripts"
-msgstr "西里爾文字"
-
-#: cyrillic-desc
-msgid "Russian, Serbian (cyrillic)"
-msgstr "俄文、塞爾維亞語西里爾文字"
-
-#: arabic
-msgid "Arabic"
-msgstr "阿拉伯文"
-
-#: greek
-msgid "Greek"
-msgstr "希臘文"
-
-#: hebrew
-msgid "Hebrew"
-msgstr "希伯來文"
-
-#: jp-kanji
-msgid "Japanese"
-msgstr "日文"
-
-#: jp-kanji-desc
-msgid "Kanji"
-msgstr "漢字"
-
-#: traditionalChinese
-msgid "Traditional Chinese"
-msgstr "正體中文 (繁體中文)"
-
-#: traditionalChinese-desc
-msgid "Zhuyin"
-msgstr "注音"
-
-#: simplifiedChinese
-msgid "Simplified Chinese"
-msgstr "簡體中文"
-
-#: simplifiedChinese-desc
-msgid "Pinyin"
-msgstr "拼音"
-
-#: polish
-msgid "Polish"
+#: addMoreKeyboards
+msgid "Add more keyboards"
 msgstr ""
 
-#: serbian
-msgid "Serbian"
+#: mustHaveOneKeyboard
+msgid "At least one {{type}} keyboard should be selected"
+msgstr ""
+
+#: keyboardType-text
+msgid "text"
+msgstr ""
+
+#: keyboardType-url
+msgid "url"
+msgstr ""
+
+#: keyboardType-number
+msgctxt "keyboardType-number"
+msgid "number"
+msgstr ""
+
+#: defaultKeyboardEnabled
+msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -1326,8 +1601,8 @@ msgid "Passcode: {{code}}"
 msgstr "Passcode: {{code}}"
 
 #: phoneLock
-msgid "Phone lock"
-msgstr "電話鎖"
+msgid "Screen lock"
+msgstr ""
 
 #: simSecurity
 msgid "SIM security"
@@ -1337,6 +1612,10 @@ msgstr "SIM 安全性"
 #: appPermissions
 msgid "App permissions"
 msgstr "應用程式權限"
+
+#: author
+msgid "Author"
+msgstr ""
 
 #: permissions
 msgid "Permissions"
@@ -1403,6 +1682,8 @@ msgid "Ring"
 msgstr "鈴聲"
 
 #: change
+#, fuzzy
+msgctxt "change"
 msgid "Change"
 msgstr "變更"
 
@@ -1410,10 +1691,14 @@ msgstr "變更"
 msgid "Create"
 msgstr "建立"
 
-#: create-passcode
+#: create-a-passcode
 #, fuzzy
 msgid "Create a Passcode"
 msgstr "建立 Passcode"
+
+#: passcode-heading
+msgid "Passcode"
+msgstr "Passcode"
 
 #: enter-passcode
 msgid "Enter passcode"
@@ -1436,13 +1721,9 @@ msgstr "Passcode 不正確。"
 msgid "Passcode doesn’t match. Try again."
 msgstr "輸入的 Passcode 不相同。請再試一次。"
 
-#: passcode
-msgid "Passcode"
-msgstr "Passcode"
-
 #: confirm-passcode
 #, fuzzy
-msgid "Confirm Passcode"
+msgid "Confirm passcode"
 msgstr "確認 Passcode"
 
 #: immediately
@@ -1497,11 +1778,13 @@ msgid "After 4 hours"
 msgstr "4 小時後"
 
 #: require-passcode
-msgid "Require Passcode"
+#, fuzzy
+msgid "Require passcode"
 msgstr "需要 Passcode"
 
 #: change-passcode
-msgid "Change Passcode"
+#, fuzzy
+msgid "Change passcode"
 msgstr "修改 Passcode"
 
 #. # Security :: SIM PIN Lock
@@ -1513,8 +1796,18 @@ msgstr "未插入 SIM 卡"
 msgid "SIM PIN"
 msgstr "SIM PIN"
 
+#: simPin2
+#, fuzzy
+msgid "SIM PIN2"
+msgstr "SIM PIN"
+
 #: pukCode
 msgid "PUK code"
+msgstr "PUK 碼"
+
+#: puk2Code
+#, fuzzy
+msgid "PUK2 code"
 msgstr "PUK 碼"
 
 #: whatIsSimPin
@@ -1542,17 +1835,23 @@ msgstr "修改 PIN"
 msgid "Enter SIM PIN"
 msgstr "輸入 SIM PIN"
 
+#: pin2Title
+#, fuzzy
+msgid "Enter SIM PIN2"
+msgstr "輸入 SIM PIN"
+
 #: pukTitle
 msgid "Enter PUK code"
+msgstr "輸入 PUK 碼"
+
+#: puk2Title
+#, fuzzy
+msgid "Enter PUK2 code"
 msgstr "輸入 PUK 碼"
 
 #: newpinTitle
 msgid "New PIN"
 msgstr "設定 PIN"
-
-#: pinErrorMsg
-msgid "The PIN was incorrect."
-msgstr "PIN 不正確"
 
 #: inputCodeRetriesLeft
 #, fuzzy
@@ -1595,6 +1894,7 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: pinAttemptMsg3[one]
+msgctxt "pinAttemptMsg3[one]"
 msgid ""
 "You have one try left to enter the correct code before locking the SIM card."
 msgstr ""
@@ -1643,6 +1943,16 @@ msgstr "SIM 卡已鎖定。"
 msgid ""
 "You must enter the Personal Unlocking Key (PUK) code for the SIM card. Refer "
 "to your SIM card documentation or contact your carrier for more information."
+msgstr ""
+"您必須輸入 SIM 卡的 PUK 碼。若需更多資訊，請參考您的 SIM 卡文件或洽詢您的電信"
+"業者。"
+
+#: enterPuk2Msg
+#, fuzzy
+msgid ""
+"You must enter the Personal Unlocking Key (PUK2) code for the SIM card. "
+"Refer to your SIM card documentation or contact your carrier for more "
+"information."
 msgstr ""
 "您必須輸入 SIM 卡的 PUK 碼。若需更多資訊，請參考您的 SIM 卡文件或洽詢您的電信"
 "業者。"
@@ -1724,8 +2034,18 @@ msgstr ""
 msgid "Create PIN (must contain 4 to 8 digits)"
 msgstr "設定 PIN（須包含 4 ~ 8 碼數字）"
 
+#: newSimPin2Msg
+#, fuzzy
+msgid "Create PIN2 (must contain 4 to 8 digits)"
+msgstr "設定 PIN（須包含 4 ~ 8 碼數字）"
+
 #: confirmNewSimPinMsg
 msgid "Confirm new PIN"
+msgstr "確認新 PIN 碼"
+
+#: confirmNewSimPin2Msg
+#, fuzzy
+msgid "Confirm new PIN2"
 msgstr "確認新 PIN 碼"
 
 #: newPinErrorMsg
@@ -1744,10 +2064,26 @@ msgstr ""
 msgid "SIM card not ready"
 msgstr ""
 
+#: simCardIllegal
+msgid "Unauthorized SIM card"
+msgstr ""
+
 #. # Security :: Do Not Track
 #: doNotTrack
 msgid "Do Not Track"
 msgstr "不要追蹤我"
+
+#: doNotTrackActions
+msgid "Tell websites and apps that I do not want to be tracked"
+msgstr ""
+
+#: allowTracking
+msgid "Tell websites and apps that I want to be tracked"
+msgstr ""
+
+#: doNotHavePrefOnTracking
+msgid "Do not tell websites and apps anything about my tracking preferences"
+msgstr ""
 
 #: doNotTrack-dt
 msgid "How does Do Not Track work?"
@@ -1778,8 +2114,8 @@ msgstr ""
 msgid "Storage"
 msgstr "儲存空間"
 
-#: enableUSBStorage
-msgid "Enable USB storage"
+#: enableUSBStorage1
+msgid "USB storage"
 msgstr ""
 
 #. # Storage :: Application storage
@@ -1870,10 +2206,11 @@ msgstr "已用"
 msgid "Left"
 msgstr "剩下"
 
-#: media-storage-details
+#: storage-details
+#, fuzzy
 msgid ""
-"Photos, videos and music are stored on the SD card. See media storage for "
-"details."
+"Photos, videos and music are stored separately from apps. See media storage "
+"for details."
 msgstr ""
 "相片、影片以及音樂都儲存在 SD 卡當中。請參考媒體儲存空間當中的詳細資訊。"
 
@@ -1970,7 +2307,7 @@ msgstr ""
 
 #: change-default-location-confirm
 msgid ""
-"Changing the default media storage volume will effect where photos, videos, "
+"Changing the default media storage volume will affect where photos, videos, "
 "downloads and other media will be saved to by default. Existing data will "
 "remain in its current location."
 msgstr ""
@@ -2008,6 +2345,10 @@ msgstr ""
 msgid "Phone number"
 msgstr ""
 
+#: unknown-phoneNumber
+msgid "Unknown"
+msgstr ""
+
 #: gitInfo
 #, fuzzy
 msgid "Git commit info"
@@ -2037,9 +2378,17 @@ msgstr "網格"
 msgid "Show frames per second"
 msgstr "顯示每秒畫面數"
 
+#: layers-draw-borders
+msgid "Draw layers borders"
+msgstr ""
+
 #: paint-flashing
 msgid "Flash repainted area"
 msgstr "閃爍重繪區域"
+
+#: apz-force-enable
+msgid "Enable APZ for all content processes"
+msgstr ""
 
 #: log-animations
 msgid "Log slow animations"
@@ -2051,6 +2400,14 @@ msgstr ""
 
 #: wifi-debugging
 msgid "Wi-Fi output in adb"
+msgstr ""
+
+#: bluetooth-debugging
+msgid "Bluetooth output in adb"
+msgstr ""
+
+#: contacts-debugging
+msgid "Contacts debugging output in adb"
 msgstr ""
 
 #: ttl-monitor
@@ -2287,6 +2644,22 @@ msgstr ""
 msgid "No first time use app found"
 msgstr ""
 
+#: software-button-enabled
+msgid "Enable software home button"
+msgstr ""
+
+#: homegesture-enabled
+msgid "Home gesture enabled"
+msgstr ""
+
+#: edgesgesture-enabled
+msgid "Edges gesture enabled"
+msgstr ""
+
+#: debug-gaia-enabled
+msgid "Gaia debug traces"
+msgstr ""
+
 #. # Device :: Battery
 #: battery
 msgid "Battery"
@@ -2417,6 +2790,104 @@ msgstr ""
 msgid "."
 msgstr ""
 
+#. # Device :: Improve Browser OS :: Submit Your Feedback
+#: sendFeedbackTitle
+msgid "Submit Your Feedback"
+msgstr ""
+
+#: feedback-description
+msgid "Your feedback will help us to improve Firefox OS."
+msgstr ""
+
+#: feedback-happy
+msgid "Happy"
+msgstr ""
+
+#: feedback-sad
+msgid "Sad"
+msgstr ""
+
+#: feedback-mood-description
+msgid "How do you feel?"
+msgstr ""
+
+#: feedback_whyfeel_happy
+msgid "Why do you feel happy?"
+msgstr ""
+
+#: feedback_whyfeel_sad
+msgid "Why do you feel sad?"
+msgstr ""
+
+#: feedback-mood-explain
+msgid "Please tell us in detail."
+msgstr ""
+
+#: feedback-public-description
+msgid ""
+"The content of your feedback will be public, so please be sure not include "
+"any personal information."
+msgstr ""
+
+#: feedback-contactyou
+msgid "Check here to let us contact you from your email."
+msgstr ""
+
+#: email-address1
+msgid "Email address:"
+msgstr ""
+
+#: email-keepprivate
+msgid "Don't worry. Your email will always be kept private."
+msgstr ""
+
+#: feedback-sendbtn
+msgid "Send Feedback"
+msgstr ""
+
+#: feedback-errormessage-connect-error
+msgid ""
+"Sorry, the system can't send your suggestion due to a data connection error. "
+"Please try again when the issue is resolved."
+msgstr ""
+
+#: feedback-errormessage-server-off
+msgid ""
+"Sorry, the system can't send your suggestion because the server shut down. "
+"Please wait a moment and try again."
+msgstr ""
+
+#: feedback-errormessage-timeout
+msgid ""
+"Sorry, the system can't send your suggestion because of a timeout. Please "
+"restart and try again."
+msgstr ""
+
+#: feedback-errormessage-wrong-email
+msgid ""
+"Sorry, the system can't send your suggestion because the email address is "
+"missing or due to a formatting error. Please use a valid email address and "
+"try again."
+msgstr ""
+
+#: feedback-errormessage-empty-comment
+msgid ""
+"Sorry, the system can't send your suggestion because the comment field is "
+"empty. Please enter some text and try again."
+msgstr ""
+
+#: feedback-errormessage-just-sent
+msgid ""
+"Sorry, the system can't send your suggestion because you already sent us "
+"feedback. Please try our next software update and send again."
+msgstr ""
+
+#: feedback-done-msg
+msgid ""
+"Thanks for the feedback! We will use it to help us create a better "
+"experience in future release of Firefox OS."
+msgstr ""
+
 #. # Device :: Help
 #: online-support
 msgid "Online support:"
@@ -2425,10 +2896,6 @@ msgstr "線上支援:"
 #: call-support
 msgid "Call support:"
 msgstr "撥打技術支援電話:"
-
-#: call-support-numbers
-msgid "{{link1}} or {{link2}}"
-msgstr ""
 
 #: user-guide
 msgid "User guide"
@@ -2537,6 +3004,72 @@ msgstr ""
 msgid "Get Channel Status"
 msgstr ""
 
+#~ msgid "Vibration"
+#~ msgstr "震動"
+
+#~ msgid "Click sound"
+#~ msgstr "點擊音效"
+
+#~ msgid "Word suggestion"
+#~ msgstr "文字建議"
+
+#~ msgid "English"
+#~ msgstr "英文"
+
+#~ msgid "English (Dvorak)"
+#~ msgstr "英文 (Dvorak)"
+
+#~ msgid "Spanish"
+#~ msgstr "西班牙文"
+
+#~ msgid "Portuguese Brazilian"
+#~ msgstr "巴西葡萄牙語"
+
+#~ msgid "Other Latin scripts"
+#~ msgstr "其他拉丁文字"
+
+#~ msgid "French, German, Norwegian (Bokmål), Slovak, Turkish"
+#~ msgstr "法文、德文、書面挪威文、斯洛伐克語、土耳其文"
+
+#~ msgid "Cyrillic scripts"
+#~ msgstr "西里爾文字"
+
+#~ msgid "Russian, Serbian (cyrillic)"
+#~ msgstr "俄文、塞爾維亞語西里爾文字"
+
+#~ msgid "Arabic"
+#~ msgstr "阿拉伯文"
+
+#~ msgid "Greek"
+#~ msgstr "希臘文"
+
+#~ msgid "Hebrew"
+#~ msgstr "希伯來文"
+
+#~ msgid "Japanese"
+#~ msgstr "日文"
+
+#~ msgid "Kanji"
+#~ msgstr "漢字"
+
+#~ msgid "Traditional Chinese"
+#~ msgstr "正體中文 (繁體中文)"
+
+#~ msgid "Zhuyin"
+#~ msgstr "注音"
+
+#~ msgid "Simplified Chinese"
+#~ msgstr "簡體中文"
+
+#~ msgid "Pinyin"
+#~ msgstr "拼音"
+
+#~ msgid "Phone lock"
+#~ msgstr "電話鎖"
+
+#~ msgid "The PIN was incorrect."
+#~ msgstr "PIN 不正確"
+
 #~ msgid "Wi-Fi protected setup"
 #~ msgstr "Wi-Fi Protected Setup (WPS)"
 
@@ -2585,9 +3118,6 @@ msgstr ""
 
 #~ msgid "Beep beep"
 #~ msgstr "嗶嗶聲"
-
-#~ msgid "Call"
-#~ msgstr "撥號"
 
 #~ msgctxt "pinAttemptMsg"
 #~ msgid "{[ plural(n) ]}"

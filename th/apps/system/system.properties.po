@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-17 12:08+0100\n"
+"POT-Creation-Date: 2013-11-15 22:32+0100\n"
 "PO-Revision-Date: 2013-06-09 17:01+0000\n"
 "Last-Translator: Wichai <chengings@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -186,6 +186,11 @@ msgstr "ปิดและเปิดเครื่องใหม่"
 msgid "Power off"
 msgstr "ปิดเครื่อง"
 
+#. # cards view
+#: no-recent-apps
+msgid "No recent apps"
+msgstr ""
+
 #. # permissions
 #. # LOCALIZATION NOTE: this is displayed in a permission request dialog box,
 #. # see shared/permissions/permissions.properties for more context.
@@ -200,6 +205,46 @@ msgstr "ไม่"
 #: allow
 msgid "Allow"
 msgstr "อนุญาต"
+
+#: dontshare-geolocation
+msgctxt "dontshare-geolocation"
+msgid "Don't Share"
+msgstr ""
+
+#: share-geolocation
+msgctxt "share-geolocation"
+msgid "Share"
+msgstr ""
+
+#: dontshare-audio-capture
+msgctxt "dontshare-audio-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-audio-capture
+msgctxt "share-audio-capture"
+msgid "Share"
+msgstr ""
+
+#: dontshare-video-capture
+msgctxt "dontshare-video-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-video-capture
+msgctxt "share-video-capture"
+msgid "Share"
+msgstr ""
+
+#: dontshare-media-capture
+msgctxt "dontshare-media-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-media-capture
+msgctxt "share-media-capture"
+msgid "Share"
+msgstr ""
 
 #: remember-my-choice
 msgid "Remember my choice"
@@ -222,27 +267,17 @@ msgstr "ขนาด"
 msgid "Author"
 msgstr "ผู้สร้าง"
 
-#: unknown
+#: size-unknown
+#, fuzzy
+msgctxt "size-unknown"
 msgid "Unknown"
 msgstr "ไม่มีข้อมูล"
 
-#. # LOCALIZATION NOTE (unknown-size,unknown-author):
-#. # if you leave the original en-US value "{{unknown}}" in
-#. # the following two strings, the localization will be automatically picked
-#. # from the existing string with ID "unknown". If you need to adapt your
-#. # localization to different genders for author and size, you can localize
-#. # these strings. For example in French:
-#. # unknown-size=inconnue
-#. # unknown-author=inconnu
-#: unknown-size
-msgctxt "unknown-size"
-msgid "{{unknown}}"
-msgstr ""
-
-#: unknown-author
-msgctxt "unknown-author"
-msgid "{{unknown}}"
-msgstr ""
+#: author-unknown
+#, fuzzy
+msgctxt "author-unknown"
+msgid "Unknown"
+msgstr "ไม่มีข้อมูล"
 
 #: install
 msgid "Install"
@@ -253,7 +288,9 @@ msgid "bytes"
 msgstr "ไบต์"
 
 #: kB
-msgid "kB"
+#, fuzzy
+msgctxt "kB"
+msgid "KB"
 msgstr "กิโลไบต์"
 
 #: MB
@@ -344,6 +381,16 @@ msgstr ""
 msgid "{{ appName }} installed"
 msgstr "{{ appName }} ได้รับการติดตั้งแล้ว"
 
+#. #setup dialog
+#: setup
+msgid "Setup"
+msgstr ""
+
+#. #ime
+#: ime-addkeyboards
+msgid "Add keyboards"
+msgstr ""
+
 #. # update manager
 #: later
 msgid "Later"
@@ -370,7 +417,7 @@ msgid "Not Now"
 msgstr "ยังไม่ใช่ตอนนี้"
 
 #. # the <span> element will be displayed when the download finishes
-#: downloadingUpdateMessage
+#: downloadingUpdateMessage.innerHTML
 msgid "Downloading updates… <span>{{ progress }} downloaded.</span>"
 msgstr "กำลังดาวน์โหลดการปรับปรุง… <span>ดาวน์โหลดไปแล้ว {{ progress }}</span>"
 
@@ -402,33 +449,36 @@ msgstr "แน่ใจหรือไม่ว่าจะยกเลิกท
 msgid "There was an error while downloading the updates."
 msgstr "มีข้อผิดพลาดระหว่างการดาวน์โหลดการปรับรุ่น"
 
-#: updateAvailableInfo
-msgctxt "updateAvailableInfo"
+#: updateAvailableInfo.innerHTML
+msgctxt "updateAvailableInfo.innerHTML"
 msgid "{[ plural(n) ]}"
 msgstr ""
 
-#: updateAvailableInfo[one]
+#: updateAvailableInfo.innerHTML[one]
 msgid "{{ n }} update available. <span>Tap for more info.</span>"
 msgstr "มีการปรับรุ่นจำนวน {{ n }} รายการ <span>แตะเพื่อดูรายละเอียดเพิ่มเติม</span>"
 
-#: updateAvailableInfo[two]
-msgctxt "updateAvailableInfo[two]"
-msgid "{{ n }} updates available. <span>Tap for more info.</span>"
-msgstr "มีการปรับรุ่นจำนวน {{ n }} รายการ <span>แตะเพื่อดูรายละเอียดเพิ่มเติม</span>"
-
-#: updateAvailableInfo[few]
+#: updateAvailableInfo.innerHTML[two]
 #, fuzzy
-msgctxt "updateAvailableInfo[few]"
+msgctxt "updateAvailableInfo.innerHTML[two]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "มีการปรับรุ่นจำนวน {{ n }} รายการ <span>แตะเพื่อดูรายละเอียดเพิ่มเติม</span>"
 
-#: updateAvailableInfo[many]
-msgctxt "updateAvailableInfo[many]"
+#: updateAvailableInfo.innerHTML[few]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[few]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "มีการปรับรุ่นจำนวน {{ n }} รายการ <span>แตะเพื่อดูรายละเอียดเพิ่มเติม</span>"
 
-#: updateAvailableInfo[other]
-msgctxt "updateAvailableInfo[other]"
+#: updateAvailableInfo.innerHTML[many]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[many]"
+msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+msgstr "มีการปรับรุ่นจำนวน {{ n }} รายการ <span>แตะเพื่อดูรายละเอียดเพิ่มเติม</span>"
+
+#: updateAvailableInfo.innerHTML[other]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[other]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "มีการปรับรุ่นจำนวน {{ n }} รายการ <span>แตะเพื่อดูรายละเอียดเพิ่มเติม</span>"
 
@@ -473,7 +523,7 @@ msgstr "ตัวปรับปรุงระบบพร้อมแล้ว
 msgid "Required"
 msgstr "ต้องการ"
 
-#: uncompressingMessage
+#: uncompressingMessage.innerHTML
 msgid "Uncompressing… <span>This can take a few minutes.</span>"
 msgstr "กำลังขยายแฟ้ม… <span>อาจต้องใช้เวลาสักครู่หนึ่ง</span>"
 
@@ -605,10 +655,6 @@ msgstr ""
 #: try-again
 msgid "Try again"
 msgstr "ลองใหม่อีกครั้ง"
-
-#: dialog-closed
-msgid "Dialog closed by the user"
-msgstr "กล่องโต้ตอบถูกปิดโดยผู้ใช้"
 
 #. # value selector, time/date picker
 #: select-time
@@ -761,19 +807,21 @@ msgstr "ต้องการรับข้อมูลที่ส่งผ่
 msgid "{{deviceName}} would like to transfer {{fileName}} ({{fileSize}})."
 msgstr "{{deviceName}} ต้องการส่งแฟ้ม {{fileName}} ({{fileSize}})"
 
-#: notification-fileTransfer-title
-msgid "Receive file?"
-msgstr "ต้องการรับแฟ้มหรือไม่?"
+#: transfer-confirmation-title
+msgid "{{deviceName}}"
+msgstr ""
 
-#: notification-fileTransfer-description
-msgid "File incoming from another device"
-msgstr "แฟ้มข้อมูลจากอุปกรณ์อื่น"
+#: transfer-confirmation-description
+msgid "Review transfer request."
+msgstr ""
 
 #: byteUnit-B
 msgid "Bytes"
 msgstr "ไบต์"
 
 #: byteUnit-KB
+#, fuzzy
+msgctxt "byteUnit-KB"
 msgid "KB"
 msgstr "กิโลไบต์"
 
@@ -826,17 +874,13 @@ msgstr "การส่ง/รับ"
 msgid "Cancel Bluetooth file transfer?"
 msgstr "ยกเลิกการส่ง/รับแฟ้มผ่านบลูทูธ?"
 
-#: bluetooth-file-transfer-result
-msgid "Bluetooth file transfer {{status}}."
-msgstr "การรับ/ส่งแฟ้มผ่านบลูทูธ {{status}}"
+#: transfer-has-started-title
+msgid "The transfer has started"
+msgstr ""
 
-#: complete
-msgid "complete"
-msgstr "เสร็จสมบูรณ์"
-
-#: failed
-msgid "failed"
-msgstr "ล้มเหลว"
+#: transfer-has-started-description
+msgid "Check the progress in Notification center"
+msgstr ""
 
 #: transferFinished-sentSuccessful-title
 msgid "File sent"
@@ -853,6 +897,15 @@ msgstr "ไม่สามารถส่งแฟ้มได้"
 #: transferFinished-receivedFailed-title
 msgid "File could not be received"
 msgstr "ไม่สามารถรับแฟ้มได้"
+
+#: transferReport-title
+msgid "Transfer report:"
+msgstr ""
+
+#: transferReport-description
+msgid ""
+"{{numSuccessful}} files successful, {{numUnsuccessful}} files unsuccessful"
+msgstr ""
 
 #: unknown-file
 msgid "Unknown file"
@@ -875,11 +928,13 @@ msgid "Can not receive file"
 msgstr "ไม่สามารถรับแฟ้มได้"
 
 #: cannotGetStorageState
-msgid "Can not get device storage state"
+#, fuzzy
+msgid "Can not get device storage state."
 msgstr "ไม่สามารถทราบสถานะของพื้นที่เก็บข้อมูลของเครื่องได้"
 
-#: sdcard-not-exist
-msgid "No memory card found (Please insert a memory card)"
+#: sdcard-not-exist2
+#, fuzzy
+msgid "No memory card found. Please insert a memory card."
 msgstr "ไม่พบการ์ดหน่วยความจำ (โปรดใส่การ์ดหน่วยความจำ)"
 
 #: sdcard-in-use
@@ -901,6 +956,19 @@ msgstr "ข้อผิดพลาดไม่ทราบสาเหตุ"
 #: confirm
 msgid "Confirm"
 msgstr "ยืนยัน"
+
+#. # Media Recoding
+#: microphone-is-on
+msgid "Mic is on"
+msgstr ""
+
+#: camera-is-on
+msgid "Camera is on"
+msgstr ""
+
+#: media-is-on
+msgid "Camera & Mic are ON"
+msgstr ""
 
 #. # Security :: SIM PIN lock
 #: noSimCard
@@ -1383,6 +1451,65 @@ msgstr ""
 #: icc-inputtitle
 msgid "STK Query"
 msgstr ""
+
+#. # CDMA emergency callback mode
+#: emergency-callback-mode
+msgid "Emergency call back mode"
+msgstr ""
+
+#: emergency-callback-dialog-message
+msgid ""
+"Telecom services and internet are disable due to emergency call back mode. "
+"Would you like to turn off the mode?"
+msgstr ""
+
+#. # CDMA record information
+#: cdma-record-info
+msgid "CDMA record information"
+msgstr ""
+
+#. # IME (Keyboard)
+#: ime-switching-tip
+msgid "Tap to switch input method"
+msgstr ""
+
+#: layout-selection
+msgid "Layout selection"
+msgstr ""
+
+#~ msgid "kB"
+#~ msgstr "กิโลไบต์"
+
+#, fuzzy
+#~ msgctxt "updateAvailableInfo[few]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr "มีการปรับรุ่นจำนวน {{ n }} รายการ <span>แตะเพื่อดูรายละเอียดเพิ่มเติม</span>"
+
+#~ msgctxt "updateAvailableInfo[many]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr "มีการปรับรุ่นจำนวน {{ n }} รายการ <span>แตะเพื่อดูรายละเอียดเพิ่มเติม</span>"
+
+#~ msgctxt "updateAvailableInfo[other]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr "มีการปรับรุ่นจำนวน {{ n }} รายการ <span>แตะเพื่อดูรายละเอียดเพิ่มเติม</span>"
+
+#~ msgid "Dialog closed by the user"
+#~ msgstr "กล่องโต้ตอบถูกปิดโดยผู้ใช้"
+
+#~ msgid "Receive file?"
+#~ msgstr "ต้องการรับแฟ้มหรือไม่?"
+
+#~ msgid "File incoming from another device"
+#~ msgstr "แฟ้มข้อมูลจากอุปกรณ์อื่น"
+
+#~ msgid "Bluetooth file transfer {{status}}."
+#~ msgstr "การรับ/ส่งแฟ้มผ่านบลูทูธ {{status}}"
+
+#~ msgid "complete"
+#~ msgstr "เสร็จสมบูรณ์"
+
+#~ msgid "failed"
+#~ msgstr "ล้มเหลว"
 
 #~ msgid "Enter security code"
 #~ msgstr "ใส่รหัสรักษาความปลอดภัย"

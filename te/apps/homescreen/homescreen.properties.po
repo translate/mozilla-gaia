@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-22 13:57+0100\n"
+"POT-Creation-Date: 2013-11-15 22:11+0100\n"
 "PO-Revision-Date: 2013-03-09 17:40+0000\n"
 "Last-Translator: Praveen <mail2ipn@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,9 +30,23 @@ msgstr "జాలగూడు-పేరు"
 msgid "Address"
 msgstr "చిరునామా"
 
+#: added-to-home-screen
+#, fuzzy
+msgid "Added to Home Screen"
+msgstr "ఇల్లు"
+
 #. # Wrapper
 #: wrapper-search-name
 msgid "{{topic}} on {{name}}"
+msgstr ""
+
+#. # Dialog that appears when a user long taps on the homescreen
+#: contextmenu-add-wallpaper
+msgid "Change Wallpaper"
+msgstr ""
+
+#: contextmenu-add-collections
+msgid "Add Collection"
 msgstr ""
 
 #. # Prompt that appears when a user tries to delete an app.
@@ -76,6 +90,8 @@ msgstr "%A, %B %e"
 
 #. # App reinstall
 #: download
+#, fuzzy
+msgctxt "download"
 msgid "Download"
 msgstr "దింపుకొను"
 
@@ -103,12 +119,17 @@ msgctxt "evme-searchbar-default2"
 msgid "I'm thinking of…"
 msgstr ""
 
+#: evme-searchbar-default2.placeholder
+msgctxt "evme-searchbar-default2.placeholder"
+msgid "I'm thinking of…"
+msgstr ""
+
 #: evme-searchbar-clear
 msgid "Back"
 msgstr "వెనక్కి"
 
-#: evme-smart-folders
-msgid "Smart Collections"
+#: evme-collections
+msgid "Collections"
 msgstr ""
 
 #: evme-searchbar-default.placeholder
@@ -172,6 +193,16 @@ msgctxt "evme-helper-title-empty"
 msgid "Everything"
 msgstr "సమస్తం"
 
+#: evme-apps-market-download
+#, fuzzy
+msgctxt "evme-apps-market-download"
+msgid "Download"
+msgstr "దింపుకొను"
+
+#: evme-apps-market-more-apps
+msgid "More Apps"
+msgstr ""
+
 #: evme-apps-loading-app
 msgctxt "evme-apps-loading-app"
 msgid "Loading…"
@@ -192,24 +223,21 @@ msgstr "{{name}} ను ఇంటితెరకు జతచేయాలా?"
 msgid "{{name}} was already added to Home Screen"
 msgstr "{{name}} ను ఇదివరకే ఇంటితెరకు జతచేసాము"
 
-#: evme-alert-offline-shortcuts-more
-msgid "Connect to the internet to add more shortcuts"
+#: evme-alert-offline-collections-more
+#, fuzzy
+msgid "Connect to the internet to add more collections"
 msgstr "మరిన్ని అడ్డదారులను జోడించడానికి అంతర్జాలానికి అనుసంధానమవ్వండి"
 
-#: evme-alert-save-smartfolder
-msgid "Add as Smart Collection?"
+#: evme-alert-save-collection
+msgid "Add as Collection?"
 msgstr ""
 
 #: evme-alert-save-wallpaper
 msgid "Set as wallpaper?"
 msgstr ""
 
-#: evme-alert-shortcuts-suggest-empty
-msgid "No Smart Collections to add"
-msgstr ""
-
-#: evme-alert-no-more-shortcuts
-msgid "No Shortcuts to add"
+#: evme-alert-no-more-collections
+msgid "No Collections to add"
 msgstr ""
 
 #: evme-banner-app-install-success
@@ -226,29 +254,45 @@ msgstr ""
 msgid "More"
 msgstr "మరిన్ని"
 
-#: evme-shortcutscustomize-loading
-msgctxt "evme-shortcutscustomize-loading"
+#: evme-collectionssuggest-loading
+#, fuzzy
+msgctxt "evme-collectionssuggest-loading"
 msgid "Loading…"
 msgstr "లోడవుతున్నది..."
 
-#: evme-shortcutscustomize-loading-cancel
-msgctxt "evme-shortcutscustomize-loading-cancel"
+#: evme-collectionssuggest-loading-cancel
+#, fuzzy
+msgctxt "evme-collectionssuggest-loading-cancel"
 msgid "Cancel"
 msgstr "రద్దుచేయి"
+
+#: evme-collectionssuggest-prompt-create
+msgid "Create your own collection"
+msgstr ""
 
 #: evme-backgroundimage-source-label
 msgid "Source:"
 msgstr "మూలం:"
 
-#: evme-smartfolder-title-prefix
-msgctxt "evme-smartfolder-title-prefix"
+#: evme-collection-title-prefix
+#, fuzzy
+msgctxt "evme-collection-title-prefix"
 msgid "Everything"
 msgstr "సమస్తం"
 
-#: evme-smartfolder-loading-more
-msgctxt "evme-smartfolder-loading-more"
+#: evme-collection-title-suffix
+msgid "Phone"
+msgstr ""
+
+#: evme-collection-loading-more
+#, fuzzy
+msgctxt "evme-collection-loading-more"
 msgid "Loading…"
 msgstr "లోడవుతున్నది..."
+
+#: evme-collection-prompt-rename
+msgid "Rename Collection"
+msgstr ""
 
 #. # {{query}} will always be the user's current query from the searchbox
 #: evme-connectionmessage-apps
@@ -273,7 +317,11 @@ msgid ""
 "These are the apps for <b>{{query}}</b>,<br /><br /> tap any icon to open it."
 msgstr ""
 
-#. # smart folder translations
+#. # collection translations
+#: evme-shortcut-custom
+msgid "Custom..."
+msgstr ""
+
 #: evme-shortcut-id-astrology
 msgid "Astrology"
 msgstr "జ్యోతిషము"
@@ -309,6 +357,10 @@ msgstr "ఎలక్ట్రానిక్స్"
 #: evme-shortcut-id-email
 msgid "Email"
 msgstr "వేగు"
+
+#: evme-shortcut-id-entertainment
+msgid "Entertainment"
+msgstr ""
 
 #: evme-shortcut-id-environment
 msgid "Environment"
@@ -413,3 +465,19 @@ msgstr ""
 #: evme-shortcut-id-weather
 msgid "Weather"
 msgstr "వాతావరణం"
+
+#~ msgctxt "evme-shortcutscustomize-loading"
+#~ msgid "Loading…"
+#~ msgstr "లోడవుతున్నది..."
+
+#~ msgctxt "evme-shortcutscustomize-loading-cancel"
+#~ msgid "Cancel"
+#~ msgstr "రద్దుచేయి"
+
+#~ msgctxt "evme-smartfolder-title-prefix"
+#~ msgid "Everything"
+#~ msgstr "సమస్తం"
+
+#~ msgctxt "evme-smartfolder-loading-more"
+#~ msgid "Loading…"
+#~ msgstr "లోడవుతున్నది..."

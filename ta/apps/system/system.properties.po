@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-17 12:08+0100\n"
+"POT-Creation-Date: 2013-11-15 22:32+0100\n"
 "PO-Revision-Date: 2013-09-16 19:22+0000\n"
 "Last-Translator: thangamani-arun <thangam.arunx@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -185,6 +185,11 @@ msgstr "மீள்துவக்கு"
 msgid "Power off"
 msgstr "மின்சக்தி நிறுத்தம்"
 
+#. # cards view
+#: no-recent-apps
+msgid "No recent apps"
+msgstr ""
+
 #. # permissions
 #. # LOCALIZATION NOTE: this is displayed in a permission request dialog box,
 #. # see shared/permissions/permissions.properties for more context.
@@ -199,6 +204,46 @@ msgstr "இல்லை"
 #: allow
 msgid "Allow"
 msgstr "அனுமதி"
+
+#: dontshare-geolocation
+msgctxt "dontshare-geolocation"
+msgid "Don't Share"
+msgstr ""
+
+#: share-geolocation
+msgctxt "share-geolocation"
+msgid "Share"
+msgstr ""
+
+#: dontshare-audio-capture
+msgctxt "dontshare-audio-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-audio-capture
+msgctxt "share-audio-capture"
+msgid "Share"
+msgstr ""
+
+#: dontshare-video-capture
+msgctxt "dontshare-video-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-video-capture
+msgctxt "share-video-capture"
+msgid "Share"
+msgstr ""
+
+#: dontshare-media-capture
+msgctxt "dontshare-media-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-media-capture
+msgctxt "share-media-capture"
+msgid "Share"
+msgstr ""
 
 #: remember-my-choice
 msgid "Remember my choice"
@@ -221,27 +266,17 @@ msgstr "அளவு"
 msgid "Author"
 msgstr "ஆசிரியர்"
 
-#: unknown
+#: size-unknown
+#, fuzzy
+msgctxt "size-unknown"
 msgid "Unknown"
 msgstr "தெரியாத"
 
-#. # LOCALIZATION NOTE (unknown-size,unknown-author):
-#. # if you leave the original en-US value "{{unknown}}" in
-#. # the following two strings, the localization will be automatically picked
-#. # from the existing string with ID "unknown". If you need to adapt your
-#. # localization to different genders for author and size, you can localize
-#. # these strings. For example in French:
-#. # unknown-size=inconnue
-#. # unknown-author=inconnu
-#: unknown-size
-msgctxt "unknown-size"
-msgid "{{unknown}}"
-msgstr "{{unknown}}"
-
-#: unknown-author
-msgctxt "unknown-author"
-msgid "{{unknown}}"
-msgstr "{{unknown}}"
+#: author-unknown
+#, fuzzy
+msgctxt "author-unknown"
+msgid "Unknown"
+msgstr "தெரியாத"
 
 #: install
 msgid "Install"
@@ -252,7 +287,9 @@ msgid "bytes"
 msgstr "பைட்டுகள்"
 
 #: kB
-msgid "kB"
+#, fuzzy
+msgctxt "kB"
+msgid "KB"
 msgstr "கிபை"
 
 #: MB
@@ -343,6 +380,16 @@ msgstr ""
 msgid "{{ appName }} installed"
 msgstr "{{ appName }} நிறுவப்பட்டது"
 
+#. #setup dialog
+#: setup
+msgid "Setup"
+msgstr ""
+
+#. #ime
+#: ime-addkeyboards
+msgid "Add keyboards"
+msgstr ""
+
 #. # update manager
 #: later
 msgid "Later"
@@ -369,7 +416,7 @@ msgid "Not Now"
 msgstr "இப்போது இல்லை"
 
 #. # the <span> element will be displayed when the download finishes
-#: downloadingUpdateMessage
+#: downloadingUpdateMessage.innerHTML
 msgid "Downloading updates… <span>{{ progress }} downloaded.</span>"
 msgstr ""
 "புதுப்பிப்புகளை பதிவிறக்கிறது... <span>{{ progress }} பதிவிறக்கப்பட்டது.</span>"
@@ -402,34 +449,39 @@ msgstr "நீங்கள் அனைத்து பதிவிறக்க�
 msgid "There was an error while downloading the updates."
 msgstr "பதிவிறக்கம் செய்துகொண்டிருக்கம் பொருட்டு அங்கே பிழை நேர்ந்தது."
 
-#: updateAvailableInfo
-msgctxt "updateAvailableInfo"
+#: updateAvailableInfo.innerHTML
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: updateAvailableInfo[one]
+#: updateAvailableInfo.innerHTML[one]
 msgid "{{ n }} update available. <span>Tap for more info.</span>"
 msgstr "{{ n }}மேம்பாடுகள் இருக்கின்றன. <span>மேலும் தகவலுக்கு தட்டு.</span>"
 
-#: updateAvailableInfo[two]
-msgctxt "updateAvailableInfo[two]"
+#: updateAvailableInfo.innerHTML[two]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[two]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "{{ n }} மேம்பாடுகள் இருக்கின்றன. <span>மேலும் தகவலுக்கு தட்டு.</span>"
 
-#: updateAvailableInfo[few]
-msgctxt "updateAvailableInfo[few]"
+#: updateAvailableInfo.innerHTML[few]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[few]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "{{ n }} மேம்பாடுகள் இருக்கின்றன. <span>மேலும் தகவலுக்கு தட்டு.</span>"
 
-#: updateAvailableInfo[many]
-msgctxt "updateAvailableInfo[many]"
+#: updateAvailableInfo.innerHTML[many]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[many]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
-msgstr "{{ n }} புதுப்பிப்புகள் உள்ளன. <span>மேலும் தகவலுக்காக தட்டு.</span>"
+msgstr "{{ n }} மேம்பாடுகள் இருக்கின்றன. <span>மேலும் தகவலுக்கு தட்டு.</span>"
 
-#: updateAvailableInfo[other]
-msgctxt "updateAvailableInfo[other]"
+#: updateAvailableInfo.innerHTML[other]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[other]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
-msgstr "{{ n }} புதுப்பிப்புகள் உள்ளன. <span>மேலும் தகவலுக்காக தட்டு.</span>"
+msgstr "{{ n }} மேம்பாடுகள் இருக்கின்றன. <span>மேலும் தகவலுக்கு தட்டு.</span>"
 
 #: numberOfUpdates
 msgctxt "numberOfUpdates"
@@ -472,7 +524,7 @@ msgstr "கணினி மேம்பாடு தயாராகவுள்�
 msgid "Required"
 msgstr "தேவையான"
 
-#: uncompressingMessage
+#: uncompressingMessage.innerHTML
 msgid "Uncompressing… <span>This can take a few minutes.</span>"
 msgstr "பிரிக்கிறது... <span>இதற்கு ஒரு சில நிமிடங்கள் ஆகும்.</span>"
 
@@ -610,10 +662,6 @@ msgstr ""
 #: try-again
 msgid "Try again"
 msgstr "மீண்டும் முயற்சிக்கவும்"
-
-#: dialog-closed
-msgid "Dialog closed by the user"
-msgstr "உரையாடல் பயனரால் மூடப்பட்டது"
 
 #. # value selector, time/date picker
 #: select-time
@@ -765,19 +813,21 @@ msgstr "ப்ளூடூத் கோப்பு பரிமாற்ற�
 msgid "{{deviceName}} would like to transfer {{fileName}} ({{fileSize}})."
 msgstr "{{deviceName}} பரிமாற்றம் செய்ய விருப்பமா {{fileName}} ({{fileSize}})."
 
-#: notification-fileTransfer-title
-msgid "Receive file?"
-msgstr "கோப்பை பெறவா?"
+#: transfer-confirmation-title
+msgid "{{deviceName}}"
+msgstr ""
 
-#: notification-fileTransfer-description
-msgid "File incoming from another device"
-msgstr "மற்றொரு சாதனத்திலிருந்து கொப்பு வருகிறது"
+#: transfer-confirmation-description
+msgid "Review transfer request."
+msgstr ""
 
 #: byteUnit-B
 msgid "Bytes"
 msgstr "பைட்டுகள்"
 
 #: byteUnit-KB
+#, fuzzy
+msgctxt "byteUnit-KB"
 msgid "KB"
 msgstr "கிபை"
 
@@ -830,17 +880,13 @@ msgstr "பரிமாற்று"
 msgid "Cancel Bluetooth file transfer?"
 msgstr "ப்ளூடூத் கோப்பு பரிமாற்றத்தை இரத்துசெய்?"
 
-#: bluetooth-file-transfer-result
-msgid "Bluetooth file transfer {{status}}."
-msgstr "ப்ளூடூத் கோப்பு பரிமாற்றம் {{status}}."
+#: transfer-has-started-title
+msgid "The transfer has started"
+msgstr ""
 
-#: complete
-msgid "complete"
-msgstr "முடிந்தது"
-
-#: failed
-msgid "failed"
-msgstr "தோற்றது"
+#: transfer-has-started-description
+msgid "Check the progress in Notification center"
+msgstr ""
 
 #: transferFinished-sentSuccessful-title
 msgid "File sent"
@@ -857,6 +903,15 @@ msgstr "கோப்புகளை அனுப்ப முடியவில�
 #: transferFinished-receivedFailed-title
 msgid "File could not be received"
 msgstr "கோப்பை பெற முடியவில்லை"
+
+#: transferReport-title
+msgid "Transfer report:"
+msgstr ""
+
+#: transferReport-description
+msgid ""
+"{{numSuccessful}} files successful, {{numUnsuccessful}} files unsuccessful"
+msgstr ""
 
 #: unknown-file
 msgid "Unknown file"
@@ -879,11 +934,13 @@ msgid "Can not receive file"
 msgstr "கோப்பை திறக்க முடியவில்லை"
 
 #: cannotGetStorageState
-msgid "Can not get device storage state"
+#, fuzzy
+msgid "Can not get device storage state."
 msgstr "சாதன சேமிப்பு நிலையை பெற முடியாது"
 
-#: sdcard-not-exist
-msgid "No memory card found (Please insert a memory card)"
+#: sdcard-not-exist2
+#, fuzzy
+msgid "No memory card found. Please insert a memory card."
 msgstr "எந்த நினைவக அட்டையும் காணவில்லை (தயவுச்செய்து நினைவக அட்டையை செருகு)"
 
 #: sdcard-in-use
@@ -905,6 +962,19 @@ msgstr "தெரியாத பிழை"
 #: confirm
 msgid "Confirm"
 msgstr "உறுதிசெய்"
+
+#. # Media Recoding
+#: microphone-is-on
+msgid "Mic is on"
+msgstr ""
+
+#: camera-is-on
+msgid "Camera is on"
+msgstr ""
+
+#: media-is-on
+msgid "Camera & Mic are ON"
+msgstr ""
 
 #. # Security :: SIM PIN lock
 #: noSimCard
@@ -1400,6 +1470,76 @@ msgstr "செய்தியை அனுப்பவா?"
 #: icc-inputtitle
 msgid "STK Query"
 msgstr "எஸ்டிகெ கேள்வி"
+
+#. # CDMA emergency callback mode
+#: emergency-callback-mode
+msgid "Emergency call back mode"
+msgstr ""
+
+#: emergency-callback-dialog-message
+msgid ""
+"Telecom services and internet are disable due to emergency call back mode. "
+"Would you like to turn off the mode?"
+msgstr ""
+
+#. # CDMA record information
+#: cdma-record-info
+msgid "CDMA record information"
+msgstr ""
+
+#. # IME (Keyboard)
+#: ime-switching-tip
+msgid "Tap to switch input method"
+msgstr ""
+
+#: layout-selection
+msgid "Layout selection"
+msgstr ""
+
+#~ msgctxt "unknown-size"
+#~ msgid "{{unknown}}"
+#~ msgstr "{{unknown}}"
+
+#~ msgctxt "unknown-author"
+#~ msgid "{{unknown}}"
+#~ msgstr "{{unknown}}"
+
+#~ msgid "kB"
+#~ msgstr "கிபை"
+
+#~ msgctxt "updateAvailableInfo"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "updateAvailableInfo[few]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr "{{ n }} மேம்பாடுகள் இருக்கின்றன. <span>மேலும் தகவலுக்கு தட்டு.</span>"
+
+#~ msgctxt "updateAvailableInfo[many]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr "{{ n }} புதுப்பிப்புகள் உள்ளன. <span>மேலும் தகவலுக்காக தட்டு.</span>"
+
+#~ msgctxt "updateAvailableInfo[other]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr "{{ n }} புதுப்பிப்புகள் உள்ளன. <span>மேலும் தகவலுக்காக தட்டு.</span>"
+
+#~ msgid "Dialog closed by the user"
+#~ msgstr "உரையாடல் பயனரால் மூடப்பட்டது"
+
+#~ msgid "Receive file?"
+#~ msgstr "கோப்பை பெறவா?"
+
+#~ msgid "File incoming from another device"
+#~ msgstr "மற்றொரு சாதனத்திலிருந்து கொப்பு வருகிறது"
+
+#~ msgid "Bluetooth file transfer {{status}}."
+#~ msgstr "ப்ளூடூத் கோப்பு பரிமாற்றம் {{status}}."
+
+#~ msgid "complete"
+#~ msgstr "முடிந்தது"
+
+#~ msgid "failed"
+#~ msgstr "தோற்றது"
 
 #~ msgid "Don't allow"
 #~ msgstr "அனுமதிக்காதே"

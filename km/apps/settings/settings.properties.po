@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-22 13:57+0100\n"
+"POT-Creation-Date: 2013-11-15 22:32+0100\n"
 "PO-Revision-Date: 2013-11-06 09:24+0000\n"
 "Last-Translator: Sutha <sutha@open.org.kh>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1383729851.000000\n"
@@ -262,6 +262,10 @@ msgctxt "authentication"
 msgid "Authentication"
 msgstr "ការ​ផ្ទៀងផ្ទាត់​"
 
+#: eap
+msgid "EAP method"
+msgstr ""
+
 #: identity
 msgid "Identifier"
 msgstr "សញ្ញា​សម្គាល់"
@@ -350,8 +354,18 @@ msgid "PIN is 4 or 8 digits"
 msgstr "PIN មាន ៤ ឬ ៨ ខ្ទង់"
 
 #: wpsPinInput
-msgid "Input {{pin}} to opposite device"
+#, fuzzy
+msgid "Input {{pin}} to an opposite device"
 msgstr "បញ្ចូល {{pin}} ដើម្បី​ទល់​នឹង​ឧបករណ៍"
+
+#: wpsPinAps
+msgid "Select an opposite device"
+msgstr ""
+
+#: wpsAnyAp
+msgctxt "wpsAnyAp"
+msgid "Any"
+msgstr ""
 
 #: wpsCancelMessage
 msgid "Cancel WPS"
@@ -366,6 +380,14 @@ msgstr "បរាជ័យ​ក្នុង​ការ​បោះបង់ WP
 msgid "Call Settings"
 msgstr "កំណត់​ការ​ហៅ"
 
+#: callSettingsQuery
+msgid "Requesting network info…"
+msgstr "កំពុង​ស្នើ​ព័ត៌មាន​បណ្ដាញ..."
+
+#: callSettingsQueryError
+msgid "Error in query"
+msgstr "មាន​កំហុស​ក្នុង​សំណួរ"
+
 #: voiceMail
 msgid "Voicemail"
 msgstr "អ៊ីមែល​ជា​សំឡេង"
@@ -378,9 +400,23 @@ msgstr "លេខ​អ៊ីមែល​ជា​សំឡេង"
 msgid "Not set"
 msgstr "មិន​កំណត់"
 
+#: voicePrivacyMode
+msgid "Voice privacy mode"
+msgstr ""
+
 #: callWaiting
 msgid "Call waiting"
 msgstr "រង់ចាំ​ការ​ហៅ"
+
+#: confirmCallWaitingTitle
+msgid "Unable to confirm call waiting preferences"
+msgstr "មិន​អាច​អះអាង​ចំណូល​ចិត្ត​រង់ចាំ​ការ​ហៅ"
+
+#: confirmCallWaitingDesc
+msgid ""
+"The device is currently unable to communicate with the carrier. Try setting "
+"the preference again."
+msgstr "បច្ចុប្បន្ន​ឧបករណ៍​មិន​អាច​ទាក់ទង​ជាមួយ​ក្រុមហ៊ុន​គមនាគមន៍។ ព្យាយាម​កំណត់​ចំណូលចិត្ត​ម្ដង​ទៀត។"
 
 #: callForwarding
 msgid "Call forwarding"
@@ -422,14 +458,6 @@ msgstr "បញ្ជូន​បន្ត​ពេល​មិន​អាច​
 msgid "When unreachable"
 msgstr "​ពេល​មិន​អាច​ទាក់ទង​បាន"
 
-#: callForwardingRequesting
-msgid "Requesting network info…"
-msgstr "កំពុង​ស្នើ​ព័ត៌មាន​បណ្ដាញ..."
-
-#: callForwardingQueryError
-msgid "Error in query"
-msgstr "មាន​កំហុស​ក្នុង​សំណួរ"
-
 #: callForwardingForwardingVoiceTo
 msgid "Voice calls to"
 msgstr "ការ​ហៅ​ជា​សំឡេង​ទៅ"
@@ -442,20 +470,6 @@ msgstr "បាន​បិទ"
 #: callForwardingConfirmTitle
 msgid "Call forwarding confirmation message"
 msgstr "សារ​អះអាង​ការ​បញ្ជូន​ការ​ហៅ"
-
-#: callBroadcastService
-msgid "Cell broadcast service"
-msgstr "សេវាកម្ម​ផ្សាយ​ចល័ត"
-
-#: confirmCallWaitingTitle
-msgid "Unable to confirm call waiting preferences"
-msgstr "មិន​អាច​អះអាង​ចំណូល​ចិត្ត​រង់ចាំ​ការ​ហៅ"
-
-#: confirmCallWaitingDesc
-msgid ""
-"The device is currently unable to communicate with the carrier. Try setting "
-"the preference again."
-msgstr "បច្ចុប្បន្ន​ឧបករណ៍​មិន​អាច​ទាក់ទង​ជាមួយ​ក្រុមហ៊ុន​គមនាគមន៍។ ព្យាយាម​កំណត់​ចំណូលចិត្ត​ម្ដង​ទៀត។"
 
 #: cf-alwaysUseThisNumber
 msgid "Always use this number"
@@ -488,6 +502,218 @@ msgstr "ប្រតិបត្តិករ​របស់​អ្នក​ម
 #: callForwardingSetError
 msgid "Call settings error."
 msgstr "កំហុស​កំណត់​ការ​ហៅ។"
+
+#: callerId
+msgid "Caller ID"
+msgstr ""
+
+#: callerId-default
+msgid "Network default"
+msgstr ""
+
+#: callerId-hide
+msgid "Hide number"
+msgstr ""
+
+#: callerId-show
+#, fuzzy
+msgid "Show number"
+msgstr "លេខ​ទូរស័ព្ទ​"
+
+#: fdn
+msgctxt "fdn"
+msgid "Fixed dialing numbers"
+msgstr ""
+
+#: fdnSettings
+msgctxt "fdnSettings"
+msgid "Fixed dialing numbers"
+msgstr ""
+
+#: fdn-authorizedNumbers
+msgid "Authorized numbers"
+msgstr ""
+
+#: fdn-authorizedNumbers-desc
+msgid "List of numbers that can be called"
+msgstr ""
+
+#: fdn-explanation1
+msgid "Restrict which numbers can be dialed from this phone."
+msgstr ""
+
+#: fdn-explanation2
+msgid "(Emergency numbers will always be dialable)"
+msgstr ""
+
+#: fdnEnable
+msgid "Enable FDN"
+msgstr ""
+
+#: fdnDisable
+msgid "Disable FDN"
+msgstr ""
+
+#: fdnReset
+msgid "Reset PIN2"
+msgstr ""
+
+#: fdnAttemptMsg3
+#, fuzzy
+msgctxt "fdnAttemptMsg3"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: fdnAttemptMsg3[one]
+#, fuzzy
+msgctxt "fdnAttemptMsg3[one]"
+msgid ""
+"You have one try left to enter the correct code before locking the SIM card."
+msgstr "អ្នក​នៅសល់​ការ​សាកល្បង​បញ្ចូល​លេខ​កូដ​ត្រឹមត្រូវ​ម្ដងទៀត មុន​ពេល​ចាក់សោ​ស៊ីមកាត។"
+
+#: fdnAttemptMsg3[two]
+#, fuzzy
+msgctxt "fdnAttemptMsg3[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr "អ្នក​នៅសល់​ការ​សាកល្បង​បញ្ចូល​លេខ​កូដ​ត្រឹមត្រូវ​ចំនួន {{n}} ដង​ទៀត មុន​ពេល​ចាក់សោ​ស៊ីមកាត។"
+
+#: fdnAttemptMsg3[few]
+#, fuzzy
+msgctxt "fdnAttemptMsg3[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr "អ្នក​នៅសល់​ការ​សាកល្បង​បញ្ចូល​លេខ​កូដ​ត្រឹមត្រូវ​ចំនួន {{n}} ដង​ទៀត មុន​ពេល​ចាក់សោ​ស៊ីមកាត។"
+
+#: fdnAttemptMsg3[many]
+#, fuzzy
+msgctxt "fdnAttemptMsg3[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr "អ្នក​នៅសល់​ការ​សាកល្បង​បញ្ចូល​លេខ​កូដ​ត្រឹមត្រូវ​ចំនួន {{n}} ដង​ទៀត មុន​ពេល​ចាក់សោ​ស៊ីមកាត។"
+
+#: fdnAttemptMsg3[other]
+#, fuzzy
+msgctxt "fdnAttemptMsg3[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr "អ្នក​នៅសល់​ការ​សាកល្បង​បញ្ចូល​លេខ​កូដ​ត្រឹមត្រូវ​ចំនួន {{n}} ដង​ទៀត មុន​ពេល​ចាក់សោ​ស៊ីមកាត។"
+
+#: fdnLastChanceMsg
+#, fuzzy
+msgid ""
+"This is your last chance to enter the correct PIN2. Otherwise, you must "
+"enter the PUK2 code to use this SIM card."
+msgstr ""
+"នេះ​ជា​លើក​ចុង​​ក្រោយ​​ក្នុង​ការ​បញ្ចូល PIN ត្រឹមត្រូវ។ បើ​មិន​ដូច្នោះ​ទេ អ្នក​ត្រូវតែ​បញ្ចូល​លេខ​កូដ PUK ដើម្បី​"
+"អាច​ប្រើ​​ស៊ីម​កាត​នេះ។"
+
+#: fdnErrorMsg
+#, fuzzy
+msgid "The PIN2 code is incorrect."
+msgstr "​កូដ PUK មិន​ត្រឹមត្រូវ។"
+
+#: fdn-enabled-warning
+msgid "Call forwarding is disabled by FDN."
+msgstr ""
+
+#: fdnContact-name
+#, fuzzy
+msgid "name"
+msgstr "ឈ្មោះ"
+
+#: fdnContact-number
+msgctxt "fdnContact-number"
+msgid "number"
+msgstr ""
+
+#: fdnContact-submit
+msgid "submit"
+msgstr ""
+
+#: fdnAction-add
+msgid "Add contact"
+msgstr ""
+
+#: fdnAction-call
+msgid "Call"
+msgstr ""
+
+#: fdnAction-edit
+msgid "Edit contact"
+msgstr ""
+
+#: fdnAction-delete
+msgid "Delete contact"
+msgstr ""
+
+#. # Connectivity :: Messaging
+#: messagingSettings
+#, fuzzy
+msgid "Messaging Settings"
+msgstr "ការ​កំណត់​សារ"
+
+#: message-confirmation
+#, fuzzy
+msgid "Message confirmation"
+msgstr "ការ​បញ្ជាក់​សារ​អត្ថបទ"
+
+#: message-delivery-reports
+msgid "Delivery reports"
+msgstr "ការ​បញ្ជូន​របាយការណ៍"
+
+#: message-delivery-reports-details
+#, fuzzy
+msgid "Request notification of delivery for each message sent"
+msgstr "ស្នើ​ជូនដំណឹង​ការ​បញ្ជូន​សម្រាប់​សារ​នីមួយ​ដែល​បាន​ផ្ញើ"
+
+#: mmsTitle
+msgid "Multimedia messaging (MMS)"
+msgstr "Multimedia messaging (MMS)"
+
+#: auto-retrieve
+msgid "Auto retrieve"
+msgstr "ទៅ​យក​ដោយ​ស្វ័យប្រវត្តិ"
+
+#: auto-retrieve-details
+msgid "Automatically retrieve messages"
+msgstr "ទៅ​យក​សារ​ដោយ​ស្វ័យប្រវត្តិ"
+
+#: manual-retrieve
+msgid "Off"
+msgstr "បិទ"
+
+#: auto-roaming-retrieve
+msgid "On with roaming"
+msgstr "បើក​ដោយ​មាន​រ៉ូមីង"
+
+#: auto-no-roaming-retrieve
+msgid "On without roaming"
+msgstr "បើក​ដោយ​គ្មាន​រ៉ូមីង"
+
+#: autoConfigure
+msgid "Auto-configure"
+msgstr "កំណត់​​រចនាសម្ព័ន្ធ​ស្វ័យប្រវត្តិ"
+
+#: wapPushMessages
+msgid "WAP Push messages"
+msgstr ""
+
+#: wapPush
+msgid "WAP Push"
+msgstr ""
+
+#: cellBroadcastMessages
+msgid "Cell broadcast messages"
+msgstr ""
+
+#: cellBroadcast
+msgid "Cell broadcast"
+msgstr ""
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
@@ -531,6 +757,10 @@ msgctxt "operator-networkType-auto"
 msgid "Automatic"
 msgstr "ស្វ័យ​ប្រវត្តិ"
 
+#: operator-networkType-prefer2G
+msgid "2G preferred"
+msgstr ""
+
 #: operator-networkType-2G
 msgid "2G only"
 msgstr "បានតែ 2G"
@@ -538,6 +768,35 @@ msgstr "បានតែ 2G"
 #: operator-networkType-3G
 msgid "3G only"
 msgstr "បានតែ 2G"
+
+#. # DUALSTACK
+#: operator-networkType-GSM
+msgid "GSM"
+msgstr ""
+
+#: operator-networkType-WCDMA
+msgid "WCDMA"
+msgstr ""
+
+#: operator-networkType-CDMA
+msgid "CDMA"
+msgstr ""
+
+#: operator-networkType-EVDO
+msgid "EVDO"
+msgstr ""
+
+#: operator-networkType-preferGSM
+msgid "GSM preferred"
+msgstr ""
+
+#: operator-networkType-preferWCDMA
+msgid "WCDMA preferred"
+msgstr ""
+
+#: operator-networkType-preferEVDO
+msgid "EVDO preferred"
+msgstr ""
 
 #: operator-autoSelect
 msgid "Automatic selection"
@@ -547,6 +806,10 @@ msgstr "ជម្រើស​ស្វ័យប្រវត្តិ"
 msgctxt "operator-networkSelect-auto"
 msgid "Automatic"
 msgstr "ស្វ័យ​ប្រវត្តិ"
+
+#: operator-networkSelect-manual
+msgid "Manual"
+msgstr ""
 
 #: operator-turnAutoSelectOff
 msgid "Turn automatic selection off to view available network operators."
@@ -566,6 +829,23 @@ msgstr "បាន​បរាជ័យ​ការ​ភ្ជាប់"
 msgctxt "operator-status-connected"
 msgid "Connected"
 msgstr "បាន​តភ្ជាប់"
+
+#: operator-roamingPreference
+msgid "Roaming preference"
+msgstr ""
+
+#: operator-roamingPreference-home
+msgid "Home"
+msgstr ""
+
+#: operator-roamingPreference-any
+msgctxt "operator-roamingPreference-any"
+msgid "Any"
+msgstr ""
+
+#: operator-roamingPreference-affiliated
+msgid "Affiliated"
+msgstr ""
 
 #: apn
 msgid "APN"
@@ -587,14 +867,6 @@ msgstr "ការ​កំណត់​សារ"
 msgid "APN settings"
 msgstr "ការ​កំណត់ APN"
 
-#: text-message-confirmation
-msgid "Text message confirmation"
-msgstr "ការ​បញ្ជាក់​សារ​អត្ថបទ"
-
-#: mmsTitle
-msgid "Multimedia messaging (MMS)"
-msgstr "Multimedia messaging (MMS)"
-
 #: mmsport
 msgid "MMS port"
 msgstr "ច្រក MMS"
@@ -606,38 +878,6 @@ msgstr "MMS proxy"
 #: mmsc
 msgid "MMSC"
 msgstr "MMSC"
-
-#: auto-retrieve
-msgid "Auto retrieve"
-msgstr "ទៅ​យក​ដោយ​ស្វ័យប្រវត្តិ"
-
-#: auto-retrieve-details
-msgid "Automatically retrieve messages"
-msgstr "ទៅ​យក​សារ​ដោយ​ស្វ័យប្រវត្តិ"
-
-#: manual-retrieve
-msgid "Off"
-msgstr "បិទ"
-
-#: auto-roaming-retrieve
-msgid "On with roaming"
-msgstr "បើក​ដោយ​មាន​រ៉ូមីង"
-
-#: auto-no-roaming-retrieve
-msgid "On without roaming"
-msgstr "បើក​ដោយ​គ្មាន​រ៉ូមីង"
-
-#: delivery-reports
-msgid "Delivery reports"
-msgstr "ការ​បញ្ជូន​របាយការណ៍"
-
-#: delivery-reports-details
-msgid "Request notification of delivery for each text message sent"
-msgstr "ស្នើ​ជូនដំណឹង​ការ​បញ្ជូន​សម្រាប់​សារ​នីមួយ​ដែល​បាន​ផ្ញើ"
-
-#: autoConfigure
-msgid "Auto-configure"
-msgstr "កំណត់​​រចនាសម្ព័ន្ធ​ស្វ័យប្រវត្តិ"
 
 #: httpProxyHost
 msgid "HTTP proxy host"
@@ -744,6 +984,10 @@ msgstr "ឧបករណ៍​ក្នុង​តំបន់"
 msgid "Visible to all"
 msgstr "អាច​មើល​ឃើញ​ទាំងអស់"
 
+#: bluetooth-name-maxlength-alert
+msgid "Your device name exceeds {{length}} characters. Please retry again."
+msgstr ""
+
 #: bt-status-nopaired
 msgid "No devices paired"
 msgstr "គ្មាន​ឧបករណ៍​ផ្គូរផ្គង"
@@ -812,9 +1056,33 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "បាន​តភ្ជាប់"
 
+#: device-status-connected-phone
+msgid "Connected to phone audio"
+msgstr ""
+
+#: device-status-connected-media
+msgid "Connected to media audio"
+msgstr ""
+
+#: device-status-connected-phone-media
+msgid "Connected to phone/media audio"
+msgstr ""
+
 #: device-option-unpair
 msgid "Unpair"
 msgstr "មិន​ផ្គូរផ្គង"
+
+#: device-option-confirm
+msgid "Confirm"
+msgstr ""
+
+#: device-option-unpair-confirmation
+msgid "Confirmation"
+msgstr ""
+
+#: device-option-unpair-device
+msgid "Unpair Device?"
+msgstr ""
 
 #: device-option-connect
 msgid "Connect"
@@ -843,6 +1111,10 @@ msgstr "មិន​ស្គាល់​ឧបករណ៍"
 #: change-phone-name
 msgid "Change phone name"
 msgstr "ផ្លាស់ប្ដូរ​ឈ្មោះ​ទូរស័ព្ទ"
+
+#: change-phone-name-desc
+msgid "Change the name of your device as it appears in your computer"
+msgstr ""
 
 #: bluetooth-new-name
 msgid "New name"
@@ -924,7 +1196,15 @@ msgid ""
 "from it."
 msgstr "បច្ចុប្បន្ន​អ្នក​មិន​ត្រូវ​បាន​ភ្ជាប់​ទៅ​ឧបករណ៍​នេះ​ទេ។ ការ​មិន​ផ្គូផ្គង​​ក៏​នឹង​ផ្ដាច់​ពី​វា។"
 
+#: pair-view-title
+msgid "Bluetooth Request From"
+msgstr ""
+
 #. # Connectivity :: Internet Sharing
+#: SSIDCannotBeEmpty
+msgid "The SSID cannot be empty"
+msgstr ""
+
 #: internetSharing
 msgid "Internet sharing"
 msgstr "ការ​ចែករំលែក​អ៊ីនធឺណិត"
@@ -1018,6 +1298,18 @@ msgstr "កម្រិត"
 msgid "Tones"
 msgstr "សូរ​សំឡេង"
 
+#: touch-tones
+msgid "Audible touch tones"
+msgstr ""
+
+#: touch-tone-short
+msgid "Short"
+msgstr ""
+
+#: touch-tone-long
+msgid "Long"
+msgstr ""
+
 #: select-tone
 msgid "Select a tone"
 msgstr "ជ្រើស​​សូរ​សំឡេង​មួយ"
@@ -1054,6 +1346,14 @@ msgstr "ដោះសោ​អេក្រង់"
 msgid "Camera shutter"
 msgstr "សន្ទះ​ពន្លឺ​កាម៉េរា"
 
+#: camera-recordingsound
+msgid "Video recording"
+msgstr ""
+
+#: sent-mail
+msgid "Sent Mail"
+msgstr ""
+
 #: sent-message
 msgid "Sent Message"
 msgstr "​បាន​ផ្ញើ​សារ"
@@ -1070,6 +1370,16 @@ msgstr "កណ្ដឹង​រោទ៍ & ការ​ជូន​ដំណឹ
 msgid "Voice"
 msgstr "សំឡេង"
 
+#: savingringtone
+msgid "Saving ringtone…"
+msgstr ""
+
+#: unplayable-ringtone
+msgid ""
+"The ringtone was not changed because the selected file can not be played on "
+"this phone."
+msgstr ""
+
 #. # Personalization :: Display
 #: display
 msgid "Display"
@@ -1084,7 +1394,8 @@ msgid "Adjust automatically"
 msgstr "លៃ​តម្រូវ​ស្វ័យប្រវត្តិ"
 
 #: lockScreen
-msgid "Lock Screen"
+#, fuzzy
+msgid "Lock screen"
 msgstr "ចាក់សោ​អេក្រង់"
 
 #: wallpaper
@@ -1114,6 +1425,10 @@ msgstr "១០ នាទី"
 #: never
 msgid "never"
 msgstr "មិនដែល"
+
+#: lock-orientation
+msgid "Lock orientation"
+msgstr ""
 
 #. # Personalization :: Notifications
 #: notifications
@@ -1179,110 +1494,79 @@ msgstr "ទ្រង់ទ្រាយ​គំរូ"
 msgid "%A, %B %d, %Y"
 msgstr "%A, %B %d, %Y"
 
+#. # Personalization :: Homescreen
+#: homescreen
+msgid "Homescreen"
+msgstr ""
+
+#: changeHomescreen
+msgid "Change homescreen"
+msgstr ""
+
+#: changeHomescreenButton
+#, fuzzy
+msgctxt "changeHomescreenButton"
+msgid "Change"
+msgstr "ផ្លាស់ប្ដូរ"
+
+#: description
+msgid "Description"
+msgstr ""
+
 #. # Personalization :: Keyboard
-#: keyboard
-msgid "Keyboard"
+#: installedInputMethods
+msgid "Installed input methods"
+msgstr ""
+
+#: keyboards
+#, fuzzy
+msgid "Keyboards"
 msgstr "ក្ដារចុច"
 
 #: keyboardLayouts
 msgid "Keyboard layouts"
 msgstr "ប្លង់ក្ដារចុច"
 
+#: numberKeyboardLayouts
+msgid "Number layouts"
+msgstr ""
+
+#: optionKeyboardLayouts
+msgid "Option layouts"
+msgstr ""
+
 #: keypad
 msgid "Keypad"
 msgstr "ប្រអប់​គ្រាប់ចុច"
 
-#: vibration
-msgid "Vibration"
-msgstr "ញ័រ"
+#: selectedKeyboards
+msgid "Selected keyboards"
+msgstr ""
 
-#: clickSound
-msgid "Click sound"
-msgstr "សំឡេង​​ពេល​ចុច"
+#: addMoreKeyboards
+msgid "Add more keyboards"
+msgstr ""
 
-#: autoCorrect
-msgid "Auto correction"
-msgstr "ការ​កែ​ស្វ័យប្រវត្តិ"
+#: mustHaveOneKeyboard
+msgid "At least one {{type}} keyboard should be selected"
+msgstr ""
 
-#: wordSuggestion
-msgid "Word suggestion"
-msgstr "ការ​ស្នើ​ពាក្យ"
+#: keyboardType-text
+msgid "text"
+msgstr ""
 
-#: english
-msgid "English"
-msgstr "អង់គ្លេស"
+#: keyboardType-url
+msgid "url"
+msgstr ""
 
-#: dvorak
-msgid "English (Dvorak)"
-msgstr "អង់គ្លេស (Dvorak)"
+#: keyboardType-number
+msgctxt "keyboardType-number"
+msgid "number"
+msgstr ""
 
-#: spanish
-msgid "Spanish"
-msgstr "អេស្ប៉ាញ"
-
-#: portuguese
-msgid "Portuguese Brazilian"
-msgstr "ព័រទុយហ្គាល់ ប្រេស៊ីល"
-
-#: latin
-msgid "Other Latin scripts"
-msgstr "អក្សរ​ឡាតាំង​ផ្សេង"
-
-#: latin-desc
-msgid "French, German, Norwegian (Bokmål), Slovak, Turkish"
-msgstr "បារាំង, អាល្លឺម៉ង់, ន័រវែស (បុកម៉ាល់), ស្លូវ៉ាគី, ទួរគី"
-
-#: cyrillic
-msgid "Cyrillic scripts"
-msgstr "អក្សរ​ Cyrillic"
-
-#: cyrillic-desc
-msgid "Russian, Serbian (cyrillic)"
-msgstr "រុស្សី, សើប (cyrillic)"
-
-#: arabic
-msgid "Arabic"
-msgstr "អារ៉ាប់"
-
-#: greek
-msgid "Greek"
-msgstr "ក្រិច"
-
-#: hebrew
-msgid "Hebrew"
-msgstr "អ៊ីស្រាអែល"
-
-#: jp-kanji
-msgid "Japanese"
-msgstr "ជប៉ុន"
-
-#: jp-kanji-desc
-msgid "Kanji"
-msgstr "កានជី"
-
-#: traditionalChinese
-msgid "Traditional Chinese"
-msgstr "ចិន​អក្សរ​ពេញ"
-
-#: traditionalChinese-desc
-msgid "Zhuyin"
-msgstr "ជូអ៊ីន"
-
-#: simplifiedChinese
-msgid "Simplified Chinese"
-msgstr "ចិន​អក្សរ​កាត់"
-
-#: simplifiedChinese-desc
-msgid "Pinyin"
-msgstr "ភីនអ៊ីន"
-
-#: polish
-msgid "Polish"
-msgstr "ប៉ូឡូញ"
-
-#: serbian
-msgid "Serbian"
-msgstr "សើប"
+#: defaultKeyboardEnabled
+msgid "{{appName}} {{layoutName}} is set as default input method"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Accounts (N/A)
@@ -1315,8 +1599,8 @@ msgid "Passcode: {{code}}"
 msgstr "លេខ​កូដ៖ {{code}}"
 
 #: phoneLock
-msgid "Phone lock"
-msgstr "សោ​ទូរស័ព្ទ"
+msgid "Screen lock"
+msgstr ""
 
 #: simSecurity
 msgid "SIM security"
@@ -1326,6 +1610,10 @@ msgstr "សុវត្ថិភាព​ស៊ីម"
 #: appPermissions
 msgid "App permissions"
 msgstr "ការ​អនុញ្ញាត​​កម្មវិធី"
+
+#: author
+msgid "Author"
+msgstr ""
 
 #: permissions
 msgid "Permissions"
@@ -1393,6 +1681,8 @@ msgid "Ring"
 msgstr "រោទ៍"
 
 #: change
+#, fuzzy
+msgctxt "change"
 msgid "Change"
 msgstr "ផ្លាស់ប្ដូរ"
 
@@ -1400,9 +1690,13 @@ msgstr "ផ្លាស់ប្ដូរ"
 msgid "Create"
 msgstr "បង្កើត"
 
-#: create-passcode
+#: create-a-passcode
 msgid "Create a Passcode"
 msgstr "បង្កើត​ពាក្យសម្ងាត់"
+
+#: passcode-heading
+msgid "Passcode"
+msgstr "លេខ​កូដ"
 
 #: enter-passcode
 msgid "Enter passcode"
@@ -1424,12 +1718,9 @@ msgstr "លេខ​កូដ​មិន​ត្រឹមត្រូវ"
 msgid "Passcode doesn’t match. Try again."
 msgstr "លេខ​កូដ​មិន​ត្រូវ​គ្នា។ ព្យាយាម​ម្ដង​ទៀត។"
 
-#: passcode
-msgid "Passcode"
-msgstr "លេខ​កូដ"
-
 #: confirm-passcode
-msgid "Confirm Passcode"
+#, fuzzy
+msgid "Confirm passcode"
 msgstr "អះអាង​ពាក្យសម្ងាត់"
 
 #: immediately
@@ -1481,11 +1772,13 @@ msgid "After 4 hours"
 msgstr "បន្ទាប់​ពី ៤ ម៉ោង"
 
 #: require-passcode
-msgid "Require Passcode"
+#, fuzzy
+msgid "Require passcode"
 msgstr "ទាមទារ​លេខ​កូដ"
 
 #: change-passcode
-msgid "Change Passcode"
+#, fuzzy
+msgid "Change passcode"
 msgstr "ផ្លាស់ប្ដូរ​លេខ​កូដ"
 
 #. # Security :: SIM PIN Lock
@@ -1497,8 +1790,18 @@ msgstr "គ្មាន​ស៊ីម​កាត"
 msgid "SIM PIN"
 msgstr "SIM PIN"
 
+#: simPin2
+#, fuzzy
+msgid "SIM PIN2"
+msgstr "SIM PIN"
+
 #: pukCode
 msgid "PUK code"
+msgstr "កូដ PUK"
+
+#: puk2Code
+#, fuzzy
+msgid "PUK2 code"
 msgstr "កូដ PUK"
 
 #: whatIsSimPin
@@ -1526,17 +1829,23 @@ msgstr "ផ្លាស់ប្ដូរ PIN"
 msgid "Enter SIM PIN"
 msgstr "បញ្ចូល SIM PIN"
 
+#: pin2Title
+#, fuzzy
+msgid "Enter SIM PIN2"
+msgstr "បញ្ចូល SIM PIN"
+
 #: pukTitle
 msgid "Enter PUK code"
+msgstr "បញ្ចូល​​កូដ PUK"
+
+#: puk2Title
+#, fuzzy
+msgid "Enter PUK2 code"
 msgstr "បញ្ចូល​​កូដ PUK"
 
 #: newpinTitle
 msgid "New PIN"
 msgstr "PIN ថ្មី"
-
-#: pinErrorMsg
-msgid "The PIN was incorrect."
-msgstr "PIN មិន​ត្រឹមត្រូវ។"
 
 #: inputCodeRetriesLeft
 msgctxt "inputCodeRetriesLeft"
@@ -1573,6 +1882,8 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: pinAttemptMsg3[one]
+#, fuzzy
+msgctxt "pinAttemptMsg3[one]"
 msgid ""
 "You have one try left to enter the correct code before locking the SIM card."
 msgstr "អ្នក​នៅសល់​ការ​សាកល្បង​បញ្ចូល​លេខ​កូដ​ត្រឹមត្រូវ​ម្ដងទៀត មុន​ពេល​ចាក់សោ​ស៊ីមកាត។"
@@ -1621,6 +1932,16 @@ msgstr "ស៊ីម​កាត​ជាប់​សោ។"
 msgid ""
 "You must enter the Personal Unlocking Key (PUK) code for the SIM card. Refer "
 "to your SIM card documentation or contact your carrier for more information."
+msgstr ""
+"អ្នក​ត្រូវតែ​បញ្ចូល​​កូដ​​គន្លឹះ​ដោះ​សោ​ផ្ទាល់ខ្លួន (PUK) សម្រាប់​ស៊ីម​កាត។ យោង​តាម​ឯកសារ​ស៊ីម​កាត​របស់​អ្នក ឬ​"
+"ទាក់ទង​ក្រុមហ៊ុន​គមនាគមន៍​របស់​អ្នក​សម្រាប់​ព័ត៌មាន​បន្ថែម។"
+
+#: enterPuk2Msg
+#, fuzzy
+msgid ""
+"You must enter the Personal Unlocking Key (PUK2) code for the SIM card. "
+"Refer to your SIM card documentation or contact your carrier for more "
+"information."
 msgstr ""
 "អ្នក​ត្រូវតែ​បញ្ចូល​​កូដ​​គន្លឹះ​ដោះ​សោ​ផ្ទាល់ខ្លួន (PUK) សម្រាប់​ស៊ីម​កាត។ យោង​តាម​ឯកសារ​ស៊ីម​កាត​របស់​អ្នក ឬ​"
 "ទាក់ទង​ក្រុមហ៊ុន​គមនាគមន៍​របស់​អ្នក​សម្រាប់​ព័ត៌មាន​បន្ថែម។"
@@ -1697,8 +2018,18 @@ msgstr ""
 msgid "Create PIN (must contain 4 to 8 digits)"
 msgstr "បង្កើត PIN (ត្រូវតែ​មាន​ ៤ ទៅ ៨ ខ្ទង់)"
 
+#: newSimPin2Msg
+#, fuzzy
+msgid "Create PIN2 (must contain 4 to 8 digits)"
+msgstr "បង្កើត PIN (ត្រូវតែ​មាន​ ៤ ទៅ ៨ ខ្ទង់)"
+
 #: confirmNewSimPinMsg
 msgid "Confirm new PIN"
+msgstr "អះអាង PIN ថ្មី"
+
+#: confirmNewSimPin2Msg
+#, fuzzy
+msgid "Confirm new PIN2"
 msgstr "អះអាង PIN ថ្មី"
 
 #: newPinErrorMsg
@@ -1717,10 +2048,26 @@ msgstr "មិន​ស្គាល់​ស្ថានភាព​ស៊ីម
 msgid "SIM card not ready"
 msgstr "ស៊ីម​កាត់​មិន​ទាន់​រួចរាល់"
 
+#: simCardIllegal
+msgid "Unauthorized SIM card"
+msgstr ""
+
 #. # Security :: Do Not Track
 #: doNotTrack
 msgid "Do Not Track"
 msgstr "Do Not Track"
+
+#: doNotTrackActions
+msgid "Tell websites and apps that I do not want to be tracked"
+msgstr ""
+
+#: allowTracking
+msgid "Tell websites and apps that I want to be tracked"
+msgstr ""
+
+#: doNotHavePrefOnTracking
+msgid "Do not tell websites and apps anything about my tracking preferences"
+msgstr ""
 
 #: doNotTrack-dt
 msgid "How does Do Not Track work?"
@@ -1751,9 +2098,9 @@ msgstr ""
 msgid "Storage"
 msgstr "ឧបករណ៍​ផ្ទុក"
 
-#: enableUSBStorage
-msgid "Enable USB storage"
-msgstr "បើក​ឧបករណ៍​យូអេសប៊ី"
+#: enableUSBStorage1
+msgid "USB storage"
+msgstr ""
 
 #. # Storage :: Application storage
 #: deviceStorage
@@ -1842,10 +2189,11 @@ msgstr "បាន​ប្រើ"
 msgid "Left"
 msgstr "នៅ​សល់"
 
-#: media-storage-details
+#: storage-details
+#, fuzzy
 msgid ""
-"Photos, videos and music are stored on the SD card. See media storage for "
-"details."
+"Photos, videos and music are stored separately from apps. See media storage "
+"for details."
 msgstr "រូបថត វីដេអូ និង​តន្ត្រី​ដែល​បាន​ផ្ទុក​នៅ​លើ​កាត SD ។ មើល​កន្លែង​ផ្ទុក​មេឌៀ​លម្អិត។"
 
 #: ums-shared-volumes
@@ -1939,8 +2287,9 @@ msgid "Choose where photos, videos, music and downloads are stored by default."
 msgstr "ជ្រើស​ទីតាំង​លំនាំដើម​ដើម្បី​ទុក​រូបថត វីដេអូ តន្ត្រី និង​ការ​ទាញ​យក។"
 
 #: change-default-location-confirm
+#, fuzzy
 msgid ""
-"Changing the default media storage volume will effect where photos, videos, "
+"Changing the default media storage volume will affect where photos, videos, "
 "downloads and other media will be saved to by default. Existing data will "
 "remain in its current location."
 msgstr ""
@@ -1980,6 +2329,10 @@ msgstr "ICCID"
 msgid "Phone number"
 msgstr "លេខ​ទូរស័ព្ទ​"
 
+#: unknown-phoneNumber
+msgid "Unknown"
+msgstr ""
+
 #: gitInfo
 msgid "Git commit info"
 msgstr "Git commit info"
@@ -2008,9 +2361,17 @@ msgstr "ក្រឡា​ចត្រង្គ"
 msgid "Show frames per second"
 msgstr "បង្ហាញ​ស៊ុម​ក្នុង​មួយ​វិនាទី"
 
+#: layers-draw-borders
+msgid "Draw layers borders"
+msgstr ""
+
 #: paint-flashing
 msgid "Flash repainted area"
 msgstr "តំបន់​បាញ់​ផ្លាស់"
+
+#: apz-force-enable
+msgid "Enable APZ for all content processes"
+msgstr ""
 
 #: log-animations
 msgid "Log slow animations"
@@ -2023,6 +2384,14 @@ msgstr "ការ​បំបាត់​កំហុស​ពី​ចម្ង
 #: wifi-debugging
 msgid "Wi-Fi output in adb"
 msgstr "លទ្ធផល Wi-Fi ក្នុង adb"
+
+#: bluetooth-debugging
+msgid "Bluetooth output in adb"
+msgstr ""
+
+#: contacts-debugging
+msgid "Contacts debugging output in adb"
+msgstr ""
 
 #: ttl-monitor
 msgid "Show time to load"
@@ -2271,6 +2640,22 @@ msgstr "ការ​ដាក់​ឲ្យ​ប្រើ​ជា​លើក
 msgid "No first time use app found"
 msgstr "រក​មិន​ឃើញ​កម្មវិធី​ដាក់​ឲ្យ​ប្រើ​លើក​ដំបូង"
 
+#: software-button-enabled
+msgid "Enable software home button"
+msgstr ""
+
+#: homegesture-enabled
+msgid "Home gesture enabled"
+msgstr ""
+
+#: edgesgesture-enabled
+msgid "Edges gesture enabled"
+msgstr ""
+
+#: debug-gaia-enabled
+msgid "Gaia debug traces"
+msgstr ""
+
 #. # Device :: Battery
 #: battery
 msgid "Battery"
@@ -2408,6 +2793,104 @@ msgstr "គោលនយោបាយ​ភាព​ឯកជន"
 msgid "."
 msgstr "."
 
+#. # Device :: Improve Browser OS :: Submit Your Feedback
+#: sendFeedbackTitle
+msgid "Submit Your Feedback"
+msgstr ""
+
+#: feedback-description
+msgid "Your feedback will help us to improve Firefox OS."
+msgstr ""
+
+#: feedback-happy
+msgid "Happy"
+msgstr ""
+
+#: feedback-sad
+msgid "Sad"
+msgstr ""
+
+#: feedback-mood-description
+msgid "How do you feel?"
+msgstr ""
+
+#: feedback_whyfeel_happy
+msgid "Why do you feel happy?"
+msgstr ""
+
+#: feedback_whyfeel_sad
+msgid "Why do you feel sad?"
+msgstr ""
+
+#: feedback-mood-explain
+msgid "Please tell us in detail."
+msgstr ""
+
+#: feedback-public-description
+msgid ""
+"The content of your feedback will be public, so please be sure not include "
+"any personal information."
+msgstr ""
+
+#: feedback-contactyou
+msgid "Check here to let us contact you from your email."
+msgstr ""
+
+#: email-address1
+msgid "Email address:"
+msgstr ""
+
+#: email-keepprivate
+msgid "Don't worry. Your email will always be kept private."
+msgstr ""
+
+#: feedback-sendbtn
+msgid "Send Feedback"
+msgstr ""
+
+#: feedback-errormessage-connect-error
+msgid ""
+"Sorry, the system can't send your suggestion due to a data connection error. "
+"Please try again when the issue is resolved."
+msgstr ""
+
+#: feedback-errormessage-server-off
+msgid ""
+"Sorry, the system can't send your suggestion because the server shut down. "
+"Please wait a moment and try again."
+msgstr ""
+
+#: feedback-errormessage-timeout
+msgid ""
+"Sorry, the system can't send your suggestion because of a timeout. Please "
+"restart and try again."
+msgstr ""
+
+#: feedback-errormessage-wrong-email
+msgid ""
+"Sorry, the system can't send your suggestion because the email address is "
+"missing or due to a formatting error. Please use a valid email address and "
+"try again."
+msgstr ""
+
+#: feedback-errormessage-empty-comment
+msgid ""
+"Sorry, the system can't send your suggestion because the comment field is "
+"empty. Please enter some text and try again."
+msgstr ""
+
+#: feedback-errormessage-just-sent
+msgid ""
+"Sorry, the system can't send your suggestion because you already sent us "
+"feedback. Please try our next software update and send again."
+msgstr ""
+
+#: feedback-done-msg
+msgid ""
+"Thanks for the feedback! We will use it to help us create a better "
+"experience in future release of Firefox OS."
+msgstr ""
+
 #. # Device :: Help
 #: online-support
 msgid "Online support:"
@@ -2416,10 +2899,6 @@ msgstr "ជំនួយ​លើ​បណ្ដាញ៖"
 #: call-support
 msgid "Call support:"
 msgstr "ជំនួយ​ការ​ហៅ៖"
-
-#: call-support-numbers
-msgid "{{link1}} or {{link2}}"
-msgstr "{{link1}} ឬ {{link2}}"
 
 #: user-guide
 msgid "User guide"
@@ -2527,6 +3006,90 @@ msgstr "ផ្ញើ​ទិន្នន័យ"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "យល់​ស្ថានភាព​ឆានែល"
+
+#~ msgid "Cell broadcast service"
+#~ msgstr "សេវាកម្ម​ផ្សាយ​ចល័ត"
+
+#~ msgid "Vibration"
+#~ msgstr "ញ័រ"
+
+#~ msgid "Click sound"
+#~ msgstr "សំឡេង​​ពេល​ចុច"
+
+#~ msgid "Auto correction"
+#~ msgstr "ការ​កែ​ស្វ័យប្រវត្តិ"
+
+#~ msgid "Word suggestion"
+#~ msgstr "ការ​ស្នើ​ពាក្យ"
+
+#~ msgid "English"
+#~ msgstr "អង់គ្លេស"
+
+#~ msgid "English (Dvorak)"
+#~ msgstr "អង់គ្លេស (Dvorak)"
+
+#~ msgid "Spanish"
+#~ msgstr "អេស្ប៉ាញ"
+
+#~ msgid "Portuguese Brazilian"
+#~ msgstr "ព័រទុយហ្គាល់ ប្រេស៊ីល"
+
+#~ msgid "Other Latin scripts"
+#~ msgstr "អក្សរ​ឡាតាំង​ផ្សេង"
+
+#~ msgid "French, German, Norwegian (Bokmål), Slovak, Turkish"
+#~ msgstr "បារាំង, អាល្លឺម៉ង់, ន័រវែស (បុកម៉ាល់), ស្លូវ៉ាគី, ទួរគី"
+
+#~ msgid "Cyrillic scripts"
+#~ msgstr "អក្សរ​ Cyrillic"
+
+#~ msgid "Russian, Serbian (cyrillic)"
+#~ msgstr "រុស្សី, សើប (cyrillic)"
+
+#~ msgid "Arabic"
+#~ msgstr "អារ៉ាប់"
+
+#~ msgid "Greek"
+#~ msgstr "ក្រិច"
+
+#~ msgid "Hebrew"
+#~ msgstr "អ៊ីស្រាអែល"
+
+#~ msgid "Japanese"
+#~ msgstr "ជប៉ុន"
+
+#~ msgid "Kanji"
+#~ msgstr "កានជី"
+
+#~ msgid "Traditional Chinese"
+#~ msgstr "ចិន​អក្សរ​ពេញ"
+
+#~ msgid "Zhuyin"
+#~ msgstr "ជូអ៊ីន"
+
+#~ msgid "Simplified Chinese"
+#~ msgstr "ចិន​អក្សរ​កាត់"
+
+#~ msgid "Pinyin"
+#~ msgstr "ភីនអ៊ីន"
+
+#~ msgid "Polish"
+#~ msgstr "ប៉ូឡូញ"
+
+#~ msgid "Serbian"
+#~ msgstr "សើប"
+
+#~ msgid "Phone lock"
+#~ msgstr "សោ​ទូរស័ព្ទ"
+
+#~ msgid "The PIN was incorrect."
+#~ msgstr "PIN មិន​ត្រឹមត្រូវ។"
+
+#~ msgid "Enable USB storage"
+#~ msgstr "បើក​ឧបករណ៍​យូអេសប៊ី"
+
+#~ msgid "{{link1}} or {{link2}}"
+#~ msgstr "{{link1}} ឬ {{link2}}"
 
 #~ msgid "Wi-Fi protected setup"
 #~ msgstr "រៀបចំ​ការពារ Wi-Fi"

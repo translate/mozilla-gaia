@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-17 12:08+0100\n"
+"POT-Creation-Date: 2013-11-15 22:32+0100\n"
 "PO-Revision-Date: 2013-11-04 22:05+0000\n"
 "Last-Translator: Rodrigo <rodrigo_perez_r@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1383602735.000000\n"
@@ -184,6 +184,11 @@ msgstr "Tetey taa diif vez"
 msgid "Power off"
 msgstr "Tog ga"
 
+#. # cards view
+#: no-recent-apps
+msgid "No recent apps"
+msgstr ""
+
 #. # permissions
 #. # LOCALIZATION NOTE: this is displayed in a permission request dialog box,
 #. # see shared/permissions/permissions.properties for more context.
@@ -198,6 +203,46 @@ msgstr "Yenta"
 #: allow
 msgid "Allow"
 msgstr "Liiy"
+
+#: dontshare-geolocation
+msgctxt "dontshare-geolocation"
+msgid "Don't Share"
+msgstr ""
+
+#: share-geolocation
+msgctxt "share-geolocation"
+msgid "Share"
+msgstr ""
+
+#: dontshare-audio-capture
+msgctxt "dontshare-audio-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-audio-capture
+msgctxt "share-audio-capture"
+msgid "Share"
+msgstr ""
+
+#: dontshare-video-capture
+msgctxt "dontshare-video-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-video-capture
+msgctxt "share-video-capture"
+msgid "Share"
+msgstr ""
+
+#: dontshare-media-capture
+msgctxt "dontshare-media-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-media-capture
+msgctxt "share-media-capture"
+msgid "Share"
+msgstr ""
 
 #: remember-my-choice
 msgid "Remember my choice"
@@ -220,27 +265,17 @@ msgstr "Xha niey"
 msgid "Author"
 msgstr "Cho thus kuey"
 
-#: unknown
+#: size-unknown
+#, fuzzy
+msgctxt "size-unknown"
 msgid "Unknown"
 msgstr "Naa mnet niy"
 
-#. # LOCALIZATION NOTE (unknown-size,unknown-author):
-#. # if you leave the original en-US value "{{unknown}}" in
-#. # the following two strings, the localization will be automatically picked
-#. # from the existing string with ID "unknown". If you need to adapt your
-#. # localization to different genders for author and size, you can localize
-#. # these strings. For example in French:
-#. # unknown-size=inconnue
-#. # unknown-author=inconnu
-#: unknown-size
-msgctxt "unknown-size"
-msgid "{{unknown}}"
-msgstr "{{unknown}}"
-
-#: unknown-author
-msgctxt "unknown-author"
-msgid "{{unknown}}"
-msgstr "{{unknown}}"
+#: author-unknown
+#, fuzzy
+msgctxt "author-unknown"
+msgid "Unknown"
+msgstr "Naa mnet niy"
 
 #: install
 msgid "Install"
@@ -251,8 +286,10 @@ msgid "bytes"
 msgstr "bytes"
 
 #: kB
-msgid "kB"
-msgstr "kB"
+#, fuzzy
+msgctxt "kB"
+msgid "KB"
+msgstr "KB"
 
 #: MB
 msgctxt "MB"
@@ -338,6 +375,16 @@ msgstr ""
 msgid "{{ appName }} installed"
 msgstr "{{ appName }} gok la doob kue"
 
+#. #setup dialog
+#: setup
+msgid "Setup"
+msgstr ""
+
+#. #ime
+#: ime-addkeyboards
+msgid "Add keyboards"
+msgstr ""
+
 #. # update manager
 #: later
 msgid "Later"
@@ -364,7 +411,7 @@ msgid "Not Now"
 msgstr "Nal yenta"
 
 #. # the <span> element will be displayed when the download finishes
-#: downloadingUpdateMessage
+#: downloadingUpdateMessage.innerHTML
 msgid "Downloading updates… <span>{{ progress }} downloaded.</span>"
 msgstr ""
 
@@ -396,34 +443,39 @@ msgstr "Lash luu toog luu ree koo de lal ga?"
 msgid "There was an error while downloading the updates."
 msgstr "Naa gok gan blan kue."
 
-#: updateAvailableInfo
-msgctxt "updateAvailableInfo"
+#: updateAvailableInfo.innerHTML
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: updateAvailableInfo[one]
+#: updateAvailableInfo.innerHTML[one]
 msgid "{{ n }} update available. <span>Tap for more info.</span>"
 msgstr "{{ n }} Tak lil kub kue. <span>Güi kuan xho lent ree.</span>"
 
-#: updateAvailableInfo[two]
-msgctxt "updateAvailableInfo[two]"
+#: updateAvailableInfo.innerHTML[two]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[two]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "{{ n }} Tak la lal ko kub. <span>Güi tre.</span>"
 
-#: updateAvailableInfo[few]
-msgctxt "updateAvailableInfo[few]"
+#: updateAvailableInfo.innerHTML[few]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[few]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "{{ n }} Tak la lal ko kub. <span>Güi tre.</span>"
 
-#: updateAvailableInfo[many]
-msgctxt "updateAvailableInfo[many]"
+#: updateAvailableInfo.innerHTML[many]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[many]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "{{ n }} Tak la lal ko kub. <span>Güi tre.</span>"
 
-#: updateAvailableInfo[other]
-msgctxt "updateAvailableInfo[other]"
+#: updateAvailableInfo.innerHTML[other]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[other]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
-msgstr "{{ n }} tak la lal ko kub. <span>Güi tre.</span>"
+msgstr "{{ n }} Tak la lal ko kub. <span>Güi tre.</span>"
 
 #: numberOfUpdates
 msgctxt "numberOfUpdates"
@@ -466,7 +518,7 @@ msgstr "Tak la lil kob Sistema na lu"
 msgid "Required"
 msgstr "Li chel kue"
 
-#: uncompressingMessage
+#: uncompressingMessage.innerHTML
 msgid "Uncompressing… <span>This can take a few minutes.</span>"
 msgstr "De xhil na kue… <span>let chut.</span>"
 
@@ -591,10 +643,6 @@ msgstr ""
 
 #: try-again
 msgid "Try again"
-msgstr ""
-
-#: dialog-closed
-msgid "Dialog closed by the user"
 msgstr ""
 
 #. # value selector, time/date picker
@@ -731,19 +779,20 @@ msgid "Receiving Bluetooth transfer.."
 msgstr ""
 
 #: acceptFileTransfer
+#, fuzzy
 msgid "Accept Bluetooth file transfer?"
-msgstr ""
+msgstr "Na talt lu kue por Bluetooth?"
 
 #: wantToReceiveFile
 msgid "{{deviceName}} would like to transfer {{fileName}} ({{fileSize}})."
 msgstr ""
 
-#: notification-fileTransfer-title
-msgid "Receive file?"
-msgstr "Mxhin kue ga?"
+#: transfer-confirmation-title
+msgid "{{deviceName}}"
+msgstr ""
 
-#: notification-fileTransfer-description
-msgid "File incoming from another device"
+#: transfer-confirmation-description
+msgid "Review transfer request."
 msgstr ""
 
 #: byteUnit-B
@@ -751,6 +800,8 @@ msgid "Bytes"
 msgstr "Bytes"
 
 #: byteUnit-KB
+#, fuzzy
+msgctxt "byteUnit-KB"
 msgid "KB"
 msgstr "KB"
 
@@ -803,17 +854,13 @@ msgstr "Tal la lo"
 msgid "Cancel Bluetooth file transfer?"
 msgstr "Na talt lu kue por Bluetooth?"
 
-#: bluetooth-file-transfer-result
-msgid "Bluetooth file transfer {{status}}."
-msgstr "Mtal la lu kue por Bluetooth {{status}}."
+#: transfer-has-started-title
+msgid "The transfer has started"
+msgstr ""
 
-#: complete
-msgid "complete"
-msgstr "gonk ka"
-
-#: failed
-msgid "failed"
-msgstr "na god gan na"
+#: transfer-has-started-description
+msgid "Check the progress in Notification center"
+msgstr ""
 
 #: transferFinished-sentSuccessful-title
 msgid "File sent"
@@ -830,6 +877,15 @@ msgstr "Ta men na gadt tal na kue"
 #: transferFinished-receivedFailed-title
 msgid "File could not be received"
 msgstr "Na mxhin kue"
+
+#: transferReport-title
+msgid "Transfer report:"
+msgstr ""
+
+#: transferReport-description
+msgid ""
+"{{numSuccessful}} files successful, {{numUnsuccessful}} files unsuccessful"
+msgstr ""
 
 #: unknown-file
 msgid "Unknown file"
@@ -852,11 +908,11 @@ msgid "Can not receive file"
 msgstr "Na gadt tien na kue"
 
 #: cannotGetStorageState
-msgid "Can not get device storage state"
+msgid "Can not get device storage state."
 msgstr ""
 
-#: sdcard-not-exist
-msgid "No memory card found (Please insert a memory card)"
+#: sdcard-not-exist2
+msgid "No memory card found. Please insert a memory card."
 msgstr ""
 
 #: sdcard-in-use
@@ -876,6 +932,19 @@ msgstr "Naa mnet kuan mxhac"
 #: confirm
 msgid "Confirm"
 msgstr "Bliy"
+
+#. # Media Recoding
+#: microphone-is-on
+msgid "Mic is on"
+msgstr ""
+
+#: camera-is-on
+msgid "Camera is on"
+msgstr ""
+
+#: media-is-on
+msgid "Camera & Mic are ON"
+msgstr ""
 
 #. # Security :: SIM PIN lock
 #: noSimCard
@@ -1100,8 +1169,9 @@ msgid "PINs don’t match."
 msgstr ""
 
 #: nckErrorMsg
+#, fuzzy
 msgid "The NCK code is incorrect."
-msgstr ""
+msgstr "Kap kel código PUK."
 
 #: nckAttemptMsg2
 msgctxt "nckAttemptMsg2"
@@ -1322,6 +1392,70 @@ msgstr "Tal na dizh re ga?"
 #: icc-inputtitle
 msgid "STK Query"
 msgstr "STK Query"
+
+#. # CDMA emergency callback mode
+#: emergency-callback-mode
+msgid "Emergency call back mode"
+msgstr ""
+
+#: emergency-callback-dialog-message
+msgid ""
+"Telecom services and internet are disable due to emergency call back mode. "
+"Would you like to turn off the mode?"
+msgstr ""
+
+#. # CDMA record information
+#: cdma-record-info
+msgid "CDMA record information"
+msgstr ""
+
+#. # IME (Keyboard)
+#: ime-switching-tip
+msgid "Tap to switch input method"
+msgstr ""
+
+#: layout-selection
+msgid "Layout selection"
+msgstr ""
+
+#~ msgctxt "unknown-size"
+#~ msgid "{{unknown}}"
+#~ msgstr "{{unknown}}"
+
+#~ msgctxt "unknown-author"
+#~ msgid "{{unknown}}"
+#~ msgstr "{{unknown}}"
+
+#~ msgid "kB"
+#~ msgstr "kB"
+
+#~ msgctxt "updateAvailableInfo"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "updateAvailableInfo[few]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr "{{ n }} Tak la lal ko kub. <span>Güi tre.</span>"
+
+#~ msgctxt "updateAvailableInfo[many]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr "{{ n }} Tak la lal ko kub. <span>Güi tre.</span>"
+
+#~ msgctxt "updateAvailableInfo[other]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr "{{ n }} tak la lal ko kub. <span>Güi tre.</span>"
+
+#~ msgid "Receive file?"
+#~ msgstr "Mxhin kue ga?"
+
+#~ msgid "Bluetooth file transfer {{status}}."
+#~ msgstr "Mtal la lu kue por Bluetooth {{status}}."
+
+#~ msgid "complete"
+#~ msgstr "gonk ka"
+
+#~ msgid "failed"
+#~ msgstr "na god gan na"
 
 #~ msgid "Don't allow"
 #~ msgstr "Na lit luu kue"

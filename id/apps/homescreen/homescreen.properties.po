@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-22 13:57+0100\n"
+"POT-Creation-Date: 2013-11-15 22:11+0100\n"
 "PO-Revision-Date: 2013-10-18 10:50+0000\n"
 "Last-Translator: Benny <bennychandra@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1382093428.000000\n"
@@ -30,10 +30,24 @@ msgstr "Nama situs web"
 msgid "Address"
 msgstr "Alamat"
 
+#: added-to-home-screen
+#, fuzzy
+msgid "Added to Home Screen"
+msgstr "Tambah ke Layar Beranda"
+
 #. # Wrapper
 #: wrapper-search-name
 msgid "{{topic}} on {{name}}"
 msgstr "{{topic}} di {{name}}"
+
+#. # Dialog that appears when a user long taps on the homescreen
+#: contextmenu-add-wallpaper
+msgid "Change Wallpaper"
+msgstr ""
+
+#: contextmenu-add-collections
+msgid "Add Collection"
+msgstr ""
 
 #. # Prompt that appears when a user tries to delete an app.
 #: delete-title
@@ -73,6 +87,8 @@ msgstr "%A, %e %B"
 
 #. # App reinstall
 #: download
+#, fuzzy
+msgctxt "download"
 msgid "Download"
 msgstr "Unduh"
 
@@ -100,12 +116,17 @@ msgctxt "evme-searchbar-default2"
 msgid "I'm thinking of…"
 msgstr ""
 
+#: evme-searchbar-default2.placeholder
+msgctxt "evme-searchbar-default2.placeholder"
+msgid "I'm thinking of…"
+msgstr ""
+
 #: evme-searchbar-clear
 msgid "Back"
 msgstr "Kembali"
 
-#: evme-smart-folders
-msgid "Smart Collections"
+#: evme-collections
+msgid "Collections"
 msgstr ""
 
 #: evme-searchbar-default.placeholder
@@ -169,6 +190,16 @@ msgctxt "evme-helper-title-empty"
 msgid "Everything"
 msgstr "Semuanya"
 
+#: evme-apps-market-download
+#, fuzzy
+msgctxt "evme-apps-market-download"
+msgid "Download"
+msgstr "Unduh"
+
+#: evme-apps-market-more-apps
+msgid "More Apps"
+msgstr ""
+
 #: evme-apps-loading-app
 msgctxt "evme-apps-loading-app"
 msgid "Loading…"
@@ -187,25 +218,22 @@ msgstr "Tambahkan {{name}} ke Layar Beranda?"
 msgid "{{name}} was already added to Home Screen"
 msgstr "{{name}} telah ditambahkan ke Layar Beranda"
 
-#: evme-alert-offline-shortcuts-more
-msgid "Connect to the internet to add more shortcuts"
+#: evme-alert-offline-collections-more
+#, fuzzy
+msgid "Connect to the internet to add more collections"
 msgstr "Konek ke internet untuk untuk menambah shortcuts lain"
 
-#: evme-alert-save-smartfolder
-msgid "Add as Smart Collection?"
+#: evme-alert-save-collection
+msgid "Add as Collection?"
 msgstr ""
 
 #: evme-alert-save-wallpaper
 msgid "Set as wallpaper?"
 msgstr "Pasang sebagai gambar latar?"
 
-#: evme-alert-shortcuts-suggest-empty
-msgid "No Smart Collections to add"
+#: evme-alert-no-more-collections
+msgid "No Collections to add"
 msgstr ""
-
-#: evme-alert-no-more-shortcuts
-msgid "No Shortcuts to add"
-msgstr "Tak ada Pintasan untuk ditambahkan"
 
 #: evme-banner-app-install-success
 msgid "{{name}} added to Home Screen"
@@ -220,29 +248,45 @@ msgstr "Gambar latar sukses terpasang"
 msgid "More"
 msgstr "Lagi"
 
-#: evme-shortcutscustomize-loading
-msgctxt "evme-shortcutscustomize-loading"
+#: evme-collectionssuggest-loading
+#, fuzzy
+msgctxt "evme-collectionssuggest-loading"
 msgid "Loading…"
 msgstr "Memuat…"
 
-#: evme-shortcutscustomize-loading-cancel
-msgctxt "evme-shortcutscustomize-loading-cancel"
+#: evme-collectionssuggest-loading-cancel
+#, fuzzy
+msgctxt "evme-collectionssuggest-loading-cancel"
 msgid "Cancel"
 msgstr "Batal"
+
+#: evme-collectionssuggest-prompt-create
+msgid "Create your own collection"
+msgstr ""
 
 #: evme-backgroundimage-source-label
 msgid "Source:"
 msgstr "Sumber:"
 
-#: evme-smartfolder-title-prefix
-msgctxt "evme-smartfolder-title-prefix"
+#: evme-collection-title-prefix
+#, fuzzy
+msgctxt "evme-collection-title-prefix"
 msgid "Everything"
 msgstr "Semuanya"
 
-#: evme-smartfolder-loading-more
-msgctxt "evme-smartfolder-loading-more"
+#: evme-collection-title-suffix
+msgid "Phone"
+msgstr ""
+
+#: evme-collection-loading-more
+#, fuzzy
+msgctxt "evme-collection-loading-more"
 msgid "Loading…"
 msgstr "Memuat…"
+
+#: evme-collection-prompt-rename
+msgid "Rename Collection"
+msgstr ""
 
 #. # {{query}} will always be the user's current query from the searchbox
 #: evme-connectionmessage-apps
@@ -269,7 +313,11 @@ msgstr ""
 "Inilah aplikasi untuk <b>{{query}}</b>,<br /><br /> sentuh ikon apa saja "
 "untuk membukanya."
 
-#. # smart folder translations
+#. # collection translations
+#: evme-shortcut-custom
+msgid "Custom..."
+msgstr ""
+
 #: evme-shortcut-id-astrology
 msgid "Astrology"
 msgstr "Astrologi"
@@ -305,6 +353,10 @@ msgstr "Elektronik"
 #: evme-shortcut-id-email
 msgid "Email"
 msgstr "Surel"
+
+#: evme-shortcut-id-entertainment
+msgid "Entertainment"
+msgstr ""
 
 #: evme-shortcut-id-environment
 msgid "Environment"
@@ -409,3 +461,22 @@ msgstr ""
 #: evme-shortcut-id-weather
 msgid "Weather"
 msgstr "Cuaca"
+
+#~ msgid "No Shortcuts to add"
+#~ msgstr "Tak ada Pintasan untuk ditambahkan"
+
+#~ msgctxt "evme-shortcutscustomize-loading"
+#~ msgid "Loading…"
+#~ msgstr "Memuat…"
+
+#~ msgctxt "evme-shortcutscustomize-loading-cancel"
+#~ msgid "Cancel"
+#~ msgstr "Batal"
+
+#~ msgctxt "evme-smartfolder-title-prefix"
+#~ msgid "Everything"
+#~ msgstr "Semuanya"
+
+#~ msgctxt "evme-smartfolder-loading-more"
+#~ msgid "Loading…"
+#~ msgstr "Memuat…"

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-22 13:57+0100\n"
+"POT-Creation-Date: 2013-11-15 22:32+0100\n"
 "PO-Revision-Date: 2013-10-22 00:09+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -265,6 +265,10 @@ msgctxt "authentication"
 msgid "Authentication"
 msgstr "Dearbhadh"
 
+#: eap
+msgid "EAP method"
+msgstr ""
+
 #: identity
 msgid "Identifier"
 msgstr "Aithnichear"
@@ -353,8 +357,18 @@ msgid "PIN is 4 or 8 digits"
 msgstr "Bidh 4 no 8 àireamhan ann am PIN"
 
 #: wpsPinInput
-msgid "Input {{pin}} to opposite device"
+#, fuzzy
+msgid "Input {{pin}} to an opposite device"
 msgstr "Cuir {{pin}} a-steach air an t-seise inneil"
+
+#: wpsPinAps
+msgid "Select an opposite device"
+msgstr ""
+
+#: wpsAnyAp
+msgctxt "wpsAnyAp"
+msgid "Any"
+msgstr ""
 
 #: wpsCancelMessage
 msgid "Cancel WPS"
@@ -369,6 +383,14 @@ msgstr "Dh'fhàillig an ceangal ri WPS"
 msgid "Call Settings"
 msgstr "Roghainnean nan gairmean"
 
+#: callSettingsQuery
+msgid "Requesting network info…"
+msgstr "A' faighinn fiosrachadh mun lìonra…"
+
+#: callSettingsQueryError
+msgid "Error in query"
+msgstr "Mearachd sa cheist"
+
 #: voiceMail
 msgid "Voicemail"
 msgstr "Post-gutha"
@@ -381,9 +403,25 @@ msgstr "Àireamh a' phuist-ghutha"
 msgid "Not set"
 msgstr "Cha deach a shuidheachadh"
 
+#: voicePrivacyMode
+msgid "Voice privacy mode"
+msgstr ""
+
 #: callWaiting
 msgid "Call waiting"
 msgstr "Tha gairm a' feitheamh"
+
+#: confirmCallWaitingTitle
+msgid "Unable to confirm call waiting preferences"
+msgstr "Chan urrainn dhuinn roghainnean feitheamh ghairmean a dhearbhadh"
+
+#: confirmCallWaitingDesc
+msgid ""
+"The device is currently unable to communicate with the carrier. Try setting "
+"the preference again."
+msgstr ""
+"Chan urrainn dhan uidheam conaltradh a dhèanamh leis a' ghiùlanair an-"
+"dràsta. Feuch is suidhich an roghainn a-rithist."
 
 #: callForwarding
 msgid "Call forwarding"
@@ -425,14 +463,6 @@ msgstr "Sìn air adhart mura gabh a ruigsinn"
 msgid "When unreachable"
 msgstr "Nuair nach gabh a ruigsinn"
 
-#: callForwardingRequesting
-msgid "Requesting network info…"
-msgstr "A' faighinn fiosrachadh mun lìonra…"
-
-#: callForwardingQueryError
-msgid "Error in query"
-msgstr "Mearachd sa cheist"
-
 #: callForwardingForwardingVoiceTo
 msgid "Voice calls to"
 msgstr "Gairmean gutha gu"
@@ -445,22 +475,6 @@ msgstr "À comas"
 #: callForwardingConfirmTitle
 msgid "Call forwarding confirmation message"
 msgstr "Teachdaireachd dearbhaidh mu choinneamh sìneadh air adhart ghairmean"
-
-#: callBroadcastService
-msgid "Cell broadcast service"
-msgstr "Seirbheis craoladh fhònaichean-làimhe"
-
-#: confirmCallWaitingTitle
-msgid "Unable to confirm call waiting preferences"
-msgstr "Chan urrainn dhuinn roghainnean feitheamh ghairmean a dhearbhadh"
-
-#: confirmCallWaitingDesc
-msgid ""
-"The device is currently unable to communicate with the carrier. Try setting "
-"the preference again."
-msgstr ""
-"Chan urrainn dhan uidheam conaltradh a dhèanamh leis a' ghiùlanair an-"
-"dràsta. Feuch is suidhich an roghainn a-rithist."
 
 #: cf-alwaysUseThisNumber
 msgid "Always use this number"
@@ -493,6 +507,220 @@ msgstr "Chan eil an solaraiche agad a' cur taic ri seo."
 #: callForwardingSetError
 msgid "Call settings error."
 msgstr "Mearachd ann an roghainnean na gairm."
+
+#: callerId
+msgid "Caller ID"
+msgstr ""
+
+#: callerId-default
+msgid "Network default"
+msgstr ""
+
+#: callerId-hide
+msgid "Hide number"
+msgstr ""
+
+#: callerId-show
+#, fuzzy
+msgid "Show number"
+msgstr "Àireamh fòn"
+
+#: fdn
+msgctxt "fdn"
+msgid "Fixed dialing numbers"
+msgstr ""
+
+#: fdnSettings
+msgctxt "fdnSettings"
+msgid "Fixed dialing numbers"
+msgstr ""
+
+#: fdn-authorizedNumbers
+msgid "Authorized numbers"
+msgstr ""
+
+#: fdn-authorizedNumbers-desc
+msgid "List of numbers that can be called"
+msgstr ""
+
+#: fdn-explanation1
+msgid "Restrict which numbers can be dialed from this phone."
+msgstr ""
+
+#: fdn-explanation2
+msgid "(Emergency numbers will always be dialable)"
+msgstr ""
+
+#: fdnEnable
+msgid "Enable FDN"
+msgstr ""
+
+#: fdnDisable
+msgid "Disable FDN"
+msgstr ""
+
+#: fdnReset
+msgid "Reset PIN2"
+msgstr ""
+
+#: fdnAttemptMsg3
+#, fuzzy
+msgctxt "fdnAttemptMsg3"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: fdnAttemptMsg3[one]
+#, fuzzy
+msgctxt "fdnAttemptMsg3[one]"
+msgid ""
+"You have one try left to enter the correct code before locking the SIM card."
+msgstr "Tha {{n}} oidhirp air fhàgail mus dèidh a' chairt SIM a ghlasadh."
+
+#: fdnAttemptMsg3[two]
+#, fuzzy
+msgctxt "fdnAttemptMsg3[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr "Tha {{n}} oidhirp air fhàgail mus dèidh a' chairt SIM a ghlasadh."
+
+#: fdnAttemptMsg3[few]
+#, fuzzy
+msgctxt "fdnAttemptMsg3[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr "Tha {{n}} oidhirp air fhàgail mus dèidh a' chairt SIM a ghlasadh."
+
+#: fdnAttemptMsg3[many]
+#, fuzzy
+msgctxt "fdnAttemptMsg3[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr "Tha {{n}} oidhirp air fhàgail mus dèidh a' chairt SIM a ghlasadh."
+
+#: fdnAttemptMsg3[other]
+#, fuzzy
+msgctxt "fdnAttemptMsg3[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr "Tha {{n}} oidhirp air fhàgail mus dèidh a' chairt SIM a ghlasadh."
+
+#: fdnLastChanceMsg
+#, fuzzy
+msgid ""
+"This is your last chance to enter the correct PIN2. Otherwise, you must "
+"enter the PUK2 code to use this SIM card."
+msgstr ""
+"Tha aon chothrom eile agad am PIN ceart a chur a-steach. Ma chuireas tu fear "
+"cearr a-steach, bidh agad ri còd PUK a chur a-steach mus urrainn dhut a' "
+"chairt SIM seo a chleachdadh."
+
+#: fdnErrorMsg
+#, fuzzy
+msgid "The PIN2 code is incorrect."
+msgstr "Tha an còd PUK cearr."
+
+#: fdn-enabled-warning
+msgid "Call forwarding is disabled by FDN."
+msgstr ""
+
+#: fdnContact-name
+#, fuzzy
+msgid "name"
+msgstr "Ainm"
+
+#: fdnContact-number
+msgctxt "fdnContact-number"
+msgid "number"
+msgstr ""
+
+#: fdnContact-submit
+msgid "submit"
+msgstr ""
+
+#: fdnAction-add
+msgid "Add contact"
+msgstr ""
+
+#: fdnAction-call
+msgid "Call"
+msgstr "Gairm"
+
+#: fdnAction-edit
+msgid "Edit contact"
+msgstr ""
+
+#: fdnAction-delete
+msgid "Delete contact"
+msgstr ""
+
+#. # Connectivity :: Messaging
+#: messagingSettings
+#, fuzzy
+msgid "Messaging Settings"
+msgstr "Roghainnean nan teachdaireachdan"
+
+#: message-confirmation
+#, fuzzy
+msgid "Message confirmation"
+msgstr "Dearbhadh na teachdaireachd teacsa"
+
+#: message-delivery-reports
+msgid "Delivery reports"
+msgstr "Aithisgean libhrigidh"
+
+#: message-delivery-reports-details
+#, fuzzy
+msgid "Request notification of delivery for each message sent"
+msgstr ""
+"Iarr aithisg libhrigidh airson gach teachdaireachd teacsa a thèid a chur"
+
+#: mmsTitle
+msgid "Multimedia messaging (MMS)"
+msgstr "Multimedia Messaging (MMS)"
+
+#: auto-retrieve
+msgid "Auto retrieve"
+msgstr "Faigh gu fèin-obrachail"
+
+#: auto-retrieve-details
+msgid "Automatically retrieve messages"
+msgstr "Faigh teachdaireachdan gu fèin-obrachail"
+
+#: manual-retrieve
+msgid "Off"
+msgstr "Dheth"
+
+#: auto-roaming-retrieve
+msgid "On with roaming"
+msgstr "Air agus air fàrsan"
+
+#: auto-no-roaming-retrieve
+msgid "On without roaming"
+msgstr "Air agus gun a bhith air fàrsan"
+
+#: autoConfigure
+msgid "Auto-configure"
+msgstr "Fèin-rèitich"
+
+#: wapPushMessages
+msgid "WAP Push messages"
+msgstr ""
+
+#: wapPush
+msgid "WAP Push"
+msgstr ""
+
+#: cellBroadcastMessages
+msgid "Cell broadcast messages"
+msgstr ""
+
+#: cellBroadcast
+msgid "Cell broadcast"
+msgstr ""
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
@@ -537,6 +765,10 @@ msgctxt "operator-networkType-auto"
 msgid "Automatic"
 msgstr "Gu fèin-obrachail"
 
+#: operator-networkType-prefer2G
+msgid "2G preferred"
+msgstr ""
+
 #: operator-networkType-2G
 msgid "2G only"
 msgstr "2G a-mhàin"
@@ -544,6 +776,35 @@ msgstr "2G a-mhàin"
 #: operator-networkType-3G
 msgid "3G only"
 msgstr "3G a-mhàin"
+
+#. # DUALSTACK
+#: operator-networkType-GSM
+msgid "GSM"
+msgstr ""
+
+#: operator-networkType-WCDMA
+msgid "WCDMA"
+msgstr ""
+
+#: operator-networkType-CDMA
+msgid "CDMA"
+msgstr ""
+
+#: operator-networkType-EVDO
+msgid "EVDO"
+msgstr ""
+
+#: operator-networkType-preferGSM
+msgid "GSM preferred"
+msgstr ""
+
+#: operator-networkType-preferWCDMA
+msgid "WCDMA preferred"
+msgstr ""
+
+#: operator-networkType-preferEVDO
+msgid "EVDO preferred"
+msgstr ""
 
 #: operator-autoSelect
 msgid "Automatic selection"
@@ -553,6 +814,10 @@ msgstr "Fèin-taghadh"
 msgctxt "operator-networkSelect-auto"
 msgid "Automatic"
 msgstr "Gu fèin-obrachail"
+
+#: operator-networkSelect-manual
+msgid "Manual"
+msgstr ""
 
 #: operator-turnAutoSelectOff
 msgid "Turn automatic selection off to view available network operators."
@@ -575,6 +840,23 @@ msgctxt "operator-status-connected"
 msgid "Connected"
 msgstr "Air ceangal a dhèanamh"
 
+#: operator-roamingPreference
+msgid "Roaming preference"
+msgstr ""
+
+#: operator-roamingPreference-home
+msgid "Home"
+msgstr ""
+
+#: operator-roamingPreference-any
+msgctxt "operator-roamingPreference-any"
+msgid "Any"
+msgstr ""
+
+#: operator-roamingPreference-affiliated
+msgid "Affiliated"
+msgstr ""
+
 #: apn
 msgid "APN"
 msgstr "APN"
@@ -595,14 +877,6 @@ msgstr "Roghainnean nan teachdaireachdan"
 msgid "APN settings"
 msgstr "Roghainnean APN"
 
-#: text-message-confirmation
-msgid "Text message confirmation"
-msgstr "Dearbhadh na teachdaireachd teacsa"
-
-#: mmsTitle
-msgid "Multimedia messaging (MMS)"
-msgstr "Multimedia Messaging (MMS)"
-
 #: mmsport
 msgid "MMS port"
 msgstr "Port MMS"
@@ -614,39 +888,6 @@ msgstr "Progsaidh MMS"
 #: mmsc
 msgid "MMSC"
 msgstr "MMSC"
-
-#: auto-retrieve
-msgid "Auto retrieve"
-msgstr "Faigh gu fèin-obrachail"
-
-#: auto-retrieve-details
-msgid "Automatically retrieve messages"
-msgstr "Faigh teachdaireachdan gu fèin-obrachail"
-
-#: manual-retrieve
-msgid "Off"
-msgstr "Dheth"
-
-#: auto-roaming-retrieve
-msgid "On with roaming"
-msgstr "Air agus air fàrsan"
-
-#: auto-no-roaming-retrieve
-msgid "On without roaming"
-msgstr "Air agus gun a bhith air fàrsan"
-
-#: delivery-reports
-msgid "Delivery reports"
-msgstr "Aithisgean libhrigidh"
-
-#: delivery-reports-details
-msgid "Request notification of delivery for each text message sent"
-msgstr ""
-"Iarr aithisg libhrigidh airson gach teachdaireachd teacsa a thèid a chur"
-
-#: autoConfigure
-msgid "Auto-configure"
-msgstr "Fèin-rèitich"
 
 #: httpProxyHost
 msgid "HTTP proxy host"
@@ -753,6 +994,10 @@ msgstr "Uidheaman san sgìre"
 msgid "Visible to all"
 msgstr "Follaiseach dhan a h-uile"
 
+#: bluetooth-name-maxlength-alert
+msgid "Your device name exceeds {{length}} characters. Please retry again."
+msgstr ""
+
 #: bt-status-nopaired
 msgid "No devices paired"
 msgstr "Cha deach uidheam a phaidhreachadh"
@@ -821,9 +1066,33 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "Air ceangal a dhèanamh"
 
+#: device-status-connected-phone
+msgid "Connected to phone audio"
+msgstr ""
+
+#: device-status-connected-media
+msgid "Connected to media audio"
+msgstr ""
+
+#: device-status-connected-phone-media
+msgid "Connected to phone/media audio"
+msgstr ""
+
 #: device-option-unpair
 msgid "Unpair"
 msgstr "Bris am paidhreachadh"
+
+#: device-option-confirm
+msgid "Confirm"
+msgstr ""
+
+#: device-option-unpair-confirmation
+msgid "Confirmation"
+msgstr ""
+
+#: device-option-unpair-device
+msgid "Unpair Device?"
+msgstr ""
 
 #: device-option-connect
 msgid "Connect"
@@ -852,6 +1121,10 @@ msgstr "Uidheam neo-aithnichte"
 #: change-phone-name
 msgid "Change phone name"
 msgstr "Atharraich ainm an fhòn"
+
+#: change-phone-name-desc
+msgid "Change the name of your device as it appears in your computer"
+msgstr ""
 
 #: bluetooth-new-name
 msgid "New name"
@@ -947,7 +1220,15 @@ msgstr ""
 "Tha thu ceangailte ris an uidheam seo an-dràsta fhèin. Ma nì thu dì-"
 "phaidhreachadh, thèid an ceangal a bhriseadh."
 
+#: pair-view-title
+msgid "Bluetooth Request From"
+msgstr ""
+
 #. # Connectivity :: Internet Sharing
+#: SSIDCannotBeEmpty
+msgid "The SSID cannot be empty"
+msgstr ""
+
 #: internetSharing
 msgid "Internet sharing"
 msgstr "Co-roinnean an eadar-lìn"
@@ -1045,6 +1326,18 @@ msgstr "Àirde na fuaime"
 msgid "Tones"
 msgstr "Seirmean"
 
+#: touch-tones
+msgid "Audible touch tones"
+msgstr ""
+
+#: touch-tone-short
+msgid "Short"
+msgstr ""
+
+#: touch-tone-long
+msgid "Long"
+msgstr ""
+
 #: select-tone
 msgid "Select a tone"
 msgstr "Tagh seirm"
@@ -1081,6 +1374,14 @@ msgstr "Thoir a' ghlas far na sgrìn"
 msgid "Camera shutter"
 msgstr "Siutair a' chamara"
 
+#: camera-recordingsound
+msgid "Video recording"
+msgstr ""
+
+#: sent-mail
+msgid "Sent Mail"
+msgstr ""
+
 #: sent-message
 msgid "Sent Message"
 msgstr "Chaidh an teachdaireachd a chur"
@@ -1097,6 +1398,16 @@ msgstr "Seirm ┐ brathan"
 msgid "Voice"
 msgstr "Guth"
 
+#: savingringtone
+msgid "Saving ringtone…"
+msgstr ""
+
+#: unplayable-ringtone
+msgid ""
+"The ringtone was not changed because the selected file can not be played on "
+"this phone."
+msgstr ""
+
 #. # Personalization :: Display
 #: display
 msgid "Display"
@@ -1111,7 +1422,8 @@ msgid "Adjust automatically"
 msgstr "Cuir air dòigh gu fèin-obrachail"
 
 #: lockScreen
-msgid "Lock Screen"
+#, fuzzy
+msgid "Lock screen"
 msgstr "Glais an sgrìn"
 
 #: wallpaper
@@ -1141,6 +1453,10 @@ msgstr "10 mionaidean"
 #: never
 msgid "never"
 msgstr "chan ann idir"
+
+#: lock-orientation
+msgid "Lock orientation"
+msgstr ""
 
 #. # Personalization :: Notifications
 #: notifications
@@ -1206,110 +1522,79 @@ msgstr "Ball-sampaill fòrmait"
 msgid "%A, %B %d, %Y"
 msgstr "%A, %d %B, %Y"
 
+#. # Personalization :: Homescreen
+#: homescreen
+msgid "Homescreen"
+msgstr ""
+
+#: changeHomescreen
+msgid "Change homescreen"
+msgstr ""
+
+#: changeHomescreenButton
+#, fuzzy
+msgctxt "changeHomescreenButton"
+msgid "Change"
+msgstr "Atharraich"
+
+#: description
+msgid "Description"
+msgstr ""
+
 #. # Personalization :: Keyboard
-#: keyboard
-msgid "Keyboard"
+#: installedInputMethods
+msgid "Installed input methods"
+msgstr ""
+
+#: keyboards
+#, fuzzy
+msgid "Keyboards"
 msgstr "Meur-chlàr"
 
 #: keyboardLayouts
 msgid "Keyboard layouts"
 msgstr "Diofar meur-chlàir"
 
+#: numberKeyboardLayouts
+msgid "Number layouts"
+msgstr ""
+
+#: optionKeyboardLayouts
+msgid "Option layouts"
+msgstr ""
+
 #: keypad
 msgid "Keypad"
 msgstr "Pada-iuchraichean"
 
-#: vibration
-msgid "Vibration"
-msgstr "Crith"
+#: selectedKeyboards
+msgid "Selected keyboards"
+msgstr ""
 
-#: clickSound
-msgid "Click sound"
-msgstr "Fuaim briogaidh"
+#: addMoreKeyboards
+msgid "Add more keyboards"
+msgstr ""
 
-#: autoCorrect
-msgid "Auto correction"
-msgstr "Fèin-cheartachadh"
+#: mustHaveOneKeyboard
+msgid "At least one {{type}} keyboard should be selected"
+msgstr ""
 
-#: wordSuggestion
-msgid "Word suggestion"
-msgstr "Moladh fhaclan"
+#: keyboardType-text
+msgid "text"
+msgstr ""
 
-#: english
-msgid "English"
-msgstr "Beurla"
+#: keyboardType-url
+msgid "url"
+msgstr ""
 
-#: dvorak
-msgid "English (Dvorak)"
-msgstr "Beurla (Dvořak)"
+#: keyboardType-number
+msgctxt "keyboardType-number"
+msgid "number"
+msgstr ""
 
-#: spanish
-msgid "Spanish"
-msgstr "Spàinntis"
-
-#: portuguese
-msgid "Portuguese Brazilian"
-msgstr "Portagailis Bhraisil"
-
-#: latin
-msgid "Other Latin scripts"
-msgstr "Aibidilean Laideann eile"
-
-#: latin-desc
-msgid "French, German, Norwegian (Bokmål), Slovak, Turkish"
-msgstr "Fraingis, Gearmailtis, Nirribhis (Bokmål), Slòbhacais, Turcais"
-
-#: cyrillic
-msgid "Cyrillic scripts"
-msgstr "Aibidilean Cirileach"
-
-#: cyrillic-desc
-msgid "Russian, Serbian (cyrillic)"
-msgstr "Ruisis, Sèirbis (Chirileach)"
-
-#: arabic
-msgid "Arabic"
-msgstr "Arabais"
-
-#: greek
-msgid "Greek"
-msgstr "Greugais"
-
-#: hebrew
-msgid "Hebrew"
-msgstr "Eabhra"
-
-#: jp-kanji
-msgid "Japanese"
-msgstr "Seapanais"
-
-#: jp-kanji-desc
-msgid "Kanji"
-msgstr "Kanji"
-
-#: traditionalChinese
-msgid "Traditional Chinese"
-msgstr "Sìnis thradaiseanta"
-
-#: traditionalChinese-desc
-msgid "Zhuyin"
-msgstr "Zhuyin"
-
-#: simplifiedChinese
-msgid "Simplified Chinese"
-msgstr "Sìnis shimplichte"
-
-#: simplifiedChinese-desc
-msgid "Pinyin"
-msgstr "Pinyin"
-
-#: polish
-msgid "Polish"
-msgstr "Snasaich"
-
-#: serbian
-msgid "Serbian"
-msgstr "Sèirbis"
+#: defaultKeyboardEnabled
+msgid "{{appName}} {{layoutName}} is set as default input method"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Accounts (N/A)
@@ -1342,8 +1627,8 @@ msgid "Passcode: {{code}}"
 msgstr "An còd-faire: {{code}}"
 
 #: phoneLock
-msgid "Phone lock"
-msgstr "Glas an fhòn"
+msgid "Screen lock"
+msgstr ""
 
 #: simSecurity
 msgid "SIM security"
@@ -1353,6 +1638,10 @@ msgstr "Tèarainteachd SIM"
 #: appPermissions
 msgid "App permissions"
 msgstr "Ceadan nan aplacaidean"
+
+#: author
+msgid "Author"
+msgstr ""
 
 #: permissions
 msgid "Permissions"
@@ -1422,6 +1711,8 @@ msgid "Ring"
 msgstr "Seirm"
 
 #: change
+#, fuzzy
+msgctxt "change"
 msgid "Change"
 msgstr "Atharraich"
 
@@ -1429,9 +1720,13 @@ msgstr "Atharraich"
 msgid "Create"
 msgstr "Cruthaich"
 
-#: create-passcode
+#: create-a-passcode
 msgid "Create a Passcode"
 msgstr "Cruthaich còd-faire"
+
+#: passcode-heading
+msgid "Passcode"
+msgstr "Còd-faire"
 
 #: enter-passcode
 msgid "Enter passcode"
@@ -1453,12 +1748,9 @@ msgstr "Tha an còd-faire cearr"
 msgid "Passcode doesn’t match. Try again."
 msgstr "Chan eil an dà chòd-faire co-ionnann. Feuch ris a-rithist."
 
-#: passcode
-msgid "Passcode"
-msgstr "Còd-faire"
-
 #: confirm-passcode
-msgid "Confirm Passcode"
+#, fuzzy
+msgid "Confirm passcode"
 msgstr "Dearbh an còd-faire"
 
 #: immediately
@@ -1510,11 +1802,13 @@ msgid "After 4 hours"
 msgstr "An dèidh 4 uairean a thìde"
 
 #: require-passcode
-msgid "Require Passcode"
+#, fuzzy
+msgid "Require passcode"
 msgstr "Iarr còd-faire"
 
 #: change-passcode
-msgid "Change Passcode"
+#, fuzzy
+msgid "Change passcode"
 msgstr "Atharraich an còd-faire"
 
 #. # Security :: SIM PIN Lock
@@ -1526,8 +1820,18 @@ msgstr "Chan eil cairt SIM ann"
 msgid "SIM PIN"
 msgstr "PIN an t-SIM"
 
+#: simPin2
+#, fuzzy
+msgid "SIM PIN2"
+msgstr "PIN an t-SIM"
+
 #: pukCode
 msgid "PUK code"
+msgstr "Còd PUK"
+
+#: puk2Code
+#, fuzzy
+msgid "PUK2 code"
 msgstr "Còd PUK"
 
 #: whatIsSimPin
@@ -1558,17 +1862,23 @@ msgstr "Atharraich am PIN"
 msgid "Enter SIM PIN"
 msgstr "Cuir a-steach PIN an t-SIM"
 
+#: pin2Title
+#, fuzzy
+msgid "Enter SIM PIN2"
+msgstr "Cuir a-steach PIN an t-SIM"
+
 #: pukTitle
 msgid "Enter PUK code"
+msgstr "Cuir a-steach am PUK"
+
+#: puk2Title
+#, fuzzy
+msgid "Enter PUK2 code"
 msgstr "Cuir a-steach am PUK"
 
 #: newpinTitle
 msgid "New PIN"
 msgstr "PIN ùr"
-
-#: pinErrorMsg
-msgid "The PIN was incorrect."
-msgstr "Bha am PIN cearr."
 
 #: inputCodeRetriesLeft
 msgctxt "inputCodeRetriesLeft"
@@ -1605,6 +1915,8 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: pinAttemptMsg3[one]
+#, fuzzy
+msgctxt "pinAttemptMsg3[one]"
 msgid ""
 "You have one try left to enter the correct code before locking the SIM card."
 msgstr "Tha {{n}} oidhirp air fhàgail mus dèidh a' chairt SIM a ghlasadh."
@@ -1654,6 +1966,17 @@ msgstr "Tha a' chairt SIM glaiste."
 msgid ""
 "You must enter the Personal Unlocking Key (PUK) code for the SIM card. Refer "
 "to your SIM card documentation or contact your carrier for more information."
+msgstr ""
+"Feumaidh tu an còd Personal Unlocking Key (PUK) airson na cairt SIM seo a "
+"chur a-steach. Thoir sùil air an fhiosrachadh a fhuair thu an cois na cairt "
+"SIM no bruidhinn ris a' ghiùlanair agad."
+
+#: enterPuk2Msg
+#, fuzzy
+msgid ""
+"You must enter the Personal Unlocking Key (PUK2) code for the SIM card. "
+"Refer to your SIM card documentation or contact your carrier for more "
+"information."
 msgstr ""
 "Feumaidh tu an còd Personal Unlocking Key (PUK) airson na cairt SIM seo a "
 "chur a-steach. Thoir sùil air an fhiosrachadh a fhuair thu an cois na cairt "
@@ -1742,8 +2065,18 @@ msgstr ""
 msgid "Create PIN (must contain 4 to 8 digits)"
 msgstr "Cruthaich PIN (feumaidh eadar 4 is 8 àireamhan a bhith ann)"
 
+#: newSimPin2Msg
+#, fuzzy
+msgid "Create PIN2 (must contain 4 to 8 digits)"
+msgstr "Cruthaich PIN (feumaidh eadar 4 is 8 àireamhan a bhith ann)"
+
 #: confirmNewSimPinMsg
 msgid "Confirm new PIN"
+msgstr "Dearbh am PIN ùr"
+
+#: confirmNewSimPin2Msg
+#, fuzzy
+msgid "Confirm new PIN2"
 msgstr "Dearbh am PIN ùr"
 
 #: newPinErrorMsg
@@ -1762,10 +2095,26 @@ msgstr "Staid an SIM neo-aithnichte"
 msgid "SIM card not ready"
 msgstr "Chan eil a' chairt SIM deiseil"
 
+#: simCardIllegal
+msgid "Unauthorized SIM card"
+msgstr ""
+
 #. # Security :: Do Not Track
 #: doNotTrack
 msgid "Do Not Track"
 msgstr "Na tracaich"
+
+#: doNotTrackActions
+msgid "Tell websites and apps that I do not want to be tracked"
+msgstr ""
+
+#: allowTracking
+msgid "Tell websites and apps that I want to be tracked"
+msgstr ""
+
+#: doNotHavePrefOnTracking
+msgid "Do not tell websites and apps anything about my tracking preferences"
+msgstr ""
 
 #: doNotTrack-dt
 msgid "How does Do Not Track work?"
@@ -1799,9 +2148,9 @@ msgstr ""
 msgid "Storage"
 msgstr "Stòras"
 
-#: enableUSBStorage
-msgid "Enable USB storage"
-msgstr "Cuir an stòras USB an comas"
+#: enableUSBStorage1
+msgid "USB storage"
+msgstr ""
 
 #. # Storage :: Application storage
 #: deviceStorage
@@ -1890,10 +2239,11 @@ msgstr "Air a chleachdadh"
 msgid "Left"
 msgstr "Air fhàgail"
 
-#: media-storage-details
+#: storage-details
+#, fuzzy
 msgid ""
-"Photos, videos and music are stored on the SD card. See media storage for "
-"details."
+"Photos, videos and music are stored separately from apps. See media storage "
+"for details."
 msgstr ""
 "Thèid dealbh, video is ceòl sam bith a stòradh air a' chairt SD. Faic "
 "\"Stòras nam meadhanan\" airson mion-fhiosrachadh."
@@ -1992,8 +2342,9 @@ msgstr ""
 "luchdadh a-nuas a stòradh a ghnàth."
 
 #: change-default-location-confirm
+#, fuzzy
 msgid ""
-"Changing the default media storage volume will effect where photos, videos, "
+"Changing the default media storage volume will affect where photos, videos, "
 "downloads and other media will be saved to by default. Existing data will "
 "remain in its current location."
 msgstr ""
@@ -2035,6 +2386,10 @@ msgstr "ICCID"
 msgid "Phone number"
 msgstr "Àireamh fòn"
 
+#: unknown-phoneNumber
+msgid "Unknown"
+msgstr ""
+
 #: gitInfo
 msgid "Git commit info"
 msgstr "Fiosrachadh Git commit"
@@ -2063,9 +2418,17 @@ msgstr "Griod"
 msgid "Show frames per second"
 msgstr "Seall àireamh nam frèamaichean gach diog"
 
+#: layers-draw-borders
+msgid "Draw layers borders"
+msgstr ""
+
 #: paint-flashing
 msgid "Flash repainted area"
 msgstr "Dèan flash air an raon ath-pheantaichte"
+
+#: apz-force-enable
+msgid "Enable APZ for all content processes"
+msgstr ""
 
 #: log-animations
 msgid "Log slow animations"
@@ -2078,6 +2441,14 @@ msgstr "Debugging cèin"
 #: wifi-debugging
 msgid "Wi-Fi output in adb"
 msgstr "Seall às-chur WiFi ann an adb"
+
+#: bluetooth-debugging
+msgid "Bluetooth output in adb"
+msgstr ""
+
+#: contacts-debugging
+msgid "Contacts debugging output in adb"
+msgstr ""
 
 #: ttl-monitor
 msgid "Show time to load"
@@ -2339,6 +2710,22 @@ msgstr "Cuir air bhog a' chiad turas a chleachdaichear e"
 msgid "No first time use app found"
 msgstr "Cha deach aplacaid sam bith mar sin a lorg"
 
+#: software-button-enabled
+msgid "Enable software home button"
+msgstr ""
+
+#: homegesture-enabled
+msgid "Home gesture enabled"
+msgstr ""
+
+#: edgesgesture-enabled
+msgid "Edges gesture enabled"
+msgstr ""
+
+#: debug-gaia-enabled
+msgid "Gaia debug traces"
+msgstr ""
+
 #. # Device :: Battery
 #: battery
 msgid "Battery"
@@ -2483,6 +2870,104 @@ msgstr "phoileasaidh phrìobhaideachd againn"
 msgid "."
 msgstr "."
 
+#. # Device :: Improve Browser OS :: Submit Your Feedback
+#: sendFeedbackTitle
+msgid "Submit Your Feedback"
+msgstr ""
+
+#: feedback-description
+msgid "Your feedback will help us to improve Firefox OS."
+msgstr ""
+
+#: feedback-happy
+msgid "Happy"
+msgstr ""
+
+#: feedback-sad
+msgid "Sad"
+msgstr ""
+
+#: feedback-mood-description
+msgid "How do you feel?"
+msgstr ""
+
+#: feedback_whyfeel_happy
+msgid "Why do you feel happy?"
+msgstr ""
+
+#: feedback_whyfeel_sad
+msgid "Why do you feel sad?"
+msgstr ""
+
+#: feedback-mood-explain
+msgid "Please tell us in detail."
+msgstr ""
+
+#: feedback-public-description
+msgid ""
+"The content of your feedback will be public, so please be sure not include "
+"any personal information."
+msgstr ""
+
+#: feedback-contactyou
+msgid "Check here to let us contact you from your email."
+msgstr ""
+
+#: email-address1
+msgid "Email address:"
+msgstr ""
+
+#: email-keepprivate
+msgid "Don't worry. Your email will always be kept private."
+msgstr ""
+
+#: feedback-sendbtn
+msgid "Send Feedback"
+msgstr ""
+
+#: feedback-errormessage-connect-error
+msgid ""
+"Sorry, the system can't send your suggestion due to a data connection error. "
+"Please try again when the issue is resolved."
+msgstr ""
+
+#: feedback-errormessage-server-off
+msgid ""
+"Sorry, the system can't send your suggestion because the server shut down. "
+"Please wait a moment and try again."
+msgstr ""
+
+#: feedback-errormessage-timeout
+msgid ""
+"Sorry, the system can't send your suggestion because of a timeout. Please "
+"restart and try again."
+msgstr ""
+
+#: feedback-errormessage-wrong-email
+msgid ""
+"Sorry, the system can't send your suggestion because the email address is "
+"missing or due to a formatting error. Please use a valid email address and "
+"try again."
+msgstr ""
+
+#: feedback-errormessage-empty-comment
+msgid ""
+"Sorry, the system can't send your suggestion because the comment field is "
+"empty. Please enter some text and try again."
+msgstr ""
+
+#: feedback-errormessage-just-sent
+msgid ""
+"Sorry, the system can't send your suggestion because you already sent us "
+"feedback. Please try our next software update and send again."
+msgstr ""
+
+#: feedback-done-msg
+msgid ""
+"Thanks for the feedback! We will use it to help us create a better "
+"experience in future release of Firefox OS."
+msgstr ""
+
 #. # Device :: Help
 #: online-support
 msgid "Online support:"
@@ -2491,10 +2976,6 @@ msgstr "Taic air loidhne:"
 #: call-support
 msgid "Call support:"
 msgstr "Cuir fòn gun sgioba taice:"
-
-#: call-support-numbers
-msgid "{{link1}} or {{link2}}"
-msgstr "{{link1}} no {{link2}}"
 
 #: user-guide
 msgid "User guide"
@@ -2602,6 +3083,90 @@ msgstr "Cuir an dàta"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Iarr staid na seanail"
+
+#~ msgid "Cell broadcast service"
+#~ msgstr "Seirbheis craoladh fhònaichean-làimhe"
+
+#~ msgid "Vibration"
+#~ msgstr "Crith"
+
+#~ msgid "Click sound"
+#~ msgstr "Fuaim briogaidh"
+
+#~ msgid "Auto correction"
+#~ msgstr "Fèin-cheartachadh"
+
+#~ msgid "Word suggestion"
+#~ msgstr "Moladh fhaclan"
+
+#~ msgid "English"
+#~ msgstr "Beurla"
+
+#~ msgid "English (Dvorak)"
+#~ msgstr "Beurla (Dvořak)"
+
+#~ msgid "Spanish"
+#~ msgstr "Spàinntis"
+
+#~ msgid "Portuguese Brazilian"
+#~ msgstr "Portagailis Bhraisil"
+
+#~ msgid "Other Latin scripts"
+#~ msgstr "Aibidilean Laideann eile"
+
+#~ msgid "French, German, Norwegian (Bokmål), Slovak, Turkish"
+#~ msgstr "Fraingis, Gearmailtis, Nirribhis (Bokmål), Slòbhacais, Turcais"
+
+#~ msgid "Cyrillic scripts"
+#~ msgstr "Aibidilean Cirileach"
+
+#~ msgid "Russian, Serbian (cyrillic)"
+#~ msgstr "Ruisis, Sèirbis (Chirileach)"
+
+#~ msgid "Arabic"
+#~ msgstr "Arabais"
+
+#~ msgid "Greek"
+#~ msgstr "Greugais"
+
+#~ msgid "Hebrew"
+#~ msgstr "Eabhra"
+
+#~ msgid "Japanese"
+#~ msgstr "Seapanais"
+
+#~ msgid "Kanji"
+#~ msgstr "Kanji"
+
+#~ msgid "Traditional Chinese"
+#~ msgstr "Sìnis thradaiseanta"
+
+#~ msgid "Zhuyin"
+#~ msgstr "Zhuyin"
+
+#~ msgid "Simplified Chinese"
+#~ msgstr "Sìnis shimplichte"
+
+#~ msgid "Pinyin"
+#~ msgstr "Pinyin"
+
+#~ msgid "Polish"
+#~ msgstr "Snasaich"
+
+#~ msgid "Serbian"
+#~ msgstr "Sèirbis"
+
+#~ msgid "Phone lock"
+#~ msgstr "Glas an fhòn"
+
+#~ msgid "The PIN was incorrect."
+#~ msgstr "Bha am PIN cearr."
+
+#~ msgid "Enable USB storage"
+#~ msgstr "Cuir an stòras USB an comas"
+
+#~ msgid "{{link1}} or {{link2}}"
+#~ msgstr "{{link1}} no {{link2}}"
 
 #~ msgid "Wi-Fi protected setup"
 #~ msgstr "Suidheachadh tèarainte WiFi"
@@ -2758,9 +3323,6 @@ msgstr "Iarr staid na seanail"
 
 #~ msgid "Beep beep"
 #~ msgstr "Big big bigean"
-
-#~ msgid "Call"
-#~ msgstr "Gairm"
 
 #~ msgid "Normal"
 #~ msgstr "Àbhaisteach"

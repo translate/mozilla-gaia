@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-22 13:57+0100\n"
+"POT-Creation-Date: 2013-11-15 22:11+0100\n"
 "PO-Revision-Date: 2013-03-15 22:14+0000\n"
 "Last-Translator: Dwayne Bailey <dwayne@translate.org.za>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,10 +29,24 @@ msgstr "वेबसाइट का नाम"
 msgid "Address"
 msgstr "पता"
 
+#: added-to-home-screen
+#, fuzzy
+msgid "Added to Home Screen"
+msgstr "घर स्क्रीन पर जोड़ें"
+
 #. # Wrapper
 #: wrapper-search-name
 msgid "{{topic}} on {{name}}"
 msgstr "{{topic}} पर {{name}}"
+
+#. # Dialog that appears when a user long taps on the homescreen
+#: contextmenu-add-wallpaper
+msgid "Change Wallpaper"
+msgstr ""
+
+#: contextmenu-add-collections
+msgid "Add Collection"
+msgstr ""
 
 #. # Prompt that appears when a user tries to delete an app.
 #: delete-title
@@ -72,6 +86,8 @@ msgstr "%A, %B %e"
 
 #. # App reinstall
 #: download
+#, fuzzy
+msgctxt "download"
 msgid "Download"
 msgstr "डाउनलोड"
 
@@ -100,12 +116,17 @@ msgctxt "evme-searchbar-default2"
 msgid "I'm thinking of…"
 msgstr ""
 
+#: evme-searchbar-default2.placeholder
+msgctxt "evme-searchbar-default2.placeholder"
+msgid "I'm thinking of…"
+msgstr ""
+
 #: evme-searchbar-clear
 msgid "Back"
 msgstr "पीछे"
 
-#: evme-smart-folders
-msgid "Smart Collections"
+#: evme-collections
+msgid "Collections"
 msgstr ""
 
 #: evme-searchbar-default.placeholder
@@ -169,6 +190,16 @@ msgctxt "evme-helper-title-empty"
 msgid "Everything"
 msgstr "सभी"
 
+#: evme-apps-market-download
+#, fuzzy
+msgctxt "evme-apps-market-download"
+msgid "Download"
+msgstr "डाउनलोड"
+
+#: evme-apps-market-more-apps
+msgid "More Apps"
+msgstr ""
+
 #: evme-apps-loading-app
 msgctxt "evme-apps-loading-app"
 msgid "Loading…"
@@ -187,24 +218,21 @@ msgstr "होम्स्क्रीन पर {{name}} को जोड़े"
 msgid "{{name}} was already added to Home Screen"
 msgstr "{{name}} होमस्क्रीन पर पहले ही जोड़ा जा चूका है"
 
-#: evme-alert-offline-shortcuts-more
-msgid "Connect to the internet to add more shortcuts"
+#: evme-alert-offline-collections-more
+#, fuzzy
+msgid "Connect to the internet to add more collections"
 msgstr "और अधिक शार्ट कट्स के लिए इन्टरनेट से संयोजित करे"
 
-#: evme-alert-save-smartfolder
-msgid "Add as Smart Collection?"
+#: evme-alert-save-collection
+msgid "Add as Collection?"
 msgstr ""
 
 #: evme-alert-save-wallpaper
 msgid "Set as wallpaper?"
 msgstr ""
 
-#: evme-alert-shortcuts-suggest-empty
-msgid "No Smart Collections to add"
-msgstr ""
-
-#: evme-alert-no-more-shortcuts
-msgid "No Shortcuts to add"
+#: evme-alert-no-more-collections
+msgid "No Collections to add"
 msgstr ""
 
 #: evme-banner-app-install-success
@@ -220,29 +248,45 @@ msgstr ""
 msgid "More"
 msgstr "अधिक"
 
-#: evme-shortcutscustomize-loading
-msgctxt "evme-shortcutscustomize-loading"
+#: evme-collectionssuggest-loading
+#, fuzzy
+msgctxt "evme-collectionssuggest-loading"
 msgid "Loading…"
-msgstr "लोड हो रहा है..."
+msgstr "लोड हो रहा है"
 
-#: evme-shortcutscustomize-loading-cancel
-msgctxt "evme-shortcutscustomize-loading-cancel"
+#: evme-collectionssuggest-loading-cancel
+#, fuzzy
+msgctxt "evme-collectionssuggest-loading-cancel"
 msgid "Cancel"
-msgstr "रद्द"
+msgstr "रद्द करें"
+
+#: evme-collectionssuggest-prompt-create
+msgid "Create your own collection"
+msgstr ""
 
 #: evme-backgroundimage-source-label
 msgid "Source:"
 msgstr "स्रोत:"
 
-#: evme-smartfolder-title-prefix
-msgctxt "evme-smartfolder-title-prefix"
+#: evme-collection-title-prefix
+#, fuzzy
+msgctxt "evme-collection-title-prefix"
 msgid "Everything"
-msgstr "सभी कुछ"
+msgstr "सभी"
 
-#: evme-smartfolder-loading-more
-msgctxt "evme-smartfolder-loading-more"
+#: evme-collection-title-suffix
+msgid "Phone"
+msgstr ""
+
+#: evme-collection-loading-more
+#, fuzzy
+msgctxt "evme-collection-loading-more"
 msgid "Loading…"
-msgstr "लोड किया जा रहा है"
+msgstr "लोड हो रहा है"
+
+#: evme-collection-prompt-rename
+msgid "Rename Collection"
+msgstr ""
 
 #. # {{query}} will always be the user's current query from the searchbox
 #: evme-connectionmessage-apps
@@ -269,7 +313,11 @@ msgstr ""
 "ये <b> लिए क्षुधा हैं {{query}} </ b>, <br /> <br /> किसी भी इसे खोलने के लिए चिह्न "
 "नल."
 
-#. # smart folder translations
+#. # collection translations
+#: evme-shortcut-custom
+msgid "Custom..."
+msgstr ""
+
 #: evme-shortcut-id-astrology
 msgid "Astrology"
 msgstr "ज्योतिष"
@@ -305,6 +353,10 @@ msgstr "इलेक्ट्रॉनिक्स"
 #: evme-shortcut-id-email
 msgid "Email"
 msgstr "ई-मेल"
+
+#: evme-shortcut-id-entertainment
+msgid "Entertainment"
+msgstr ""
 
 #: evme-shortcut-id-environment
 msgid "Environment"
@@ -409,3 +461,19 @@ msgstr ""
 #: evme-shortcut-id-weather
 msgid "Weather"
 msgstr "मौसम"
+
+#~ msgctxt "evme-shortcutscustomize-loading"
+#~ msgid "Loading…"
+#~ msgstr "लोड हो रहा है..."
+
+#~ msgctxt "evme-shortcutscustomize-loading-cancel"
+#~ msgid "Cancel"
+#~ msgstr "रद्द"
+
+#~ msgctxt "evme-smartfolder-title-prefix"
+#~ msgid "Everything"
+#~ msgstr "सभी कुछ"
+
+#~ msgctxt "evme-smartfolder-loading-more"
+#~ msgid "Loading…"
+#~ msgstr "लोड किया जा रहा है"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-22 13:57+0100\n"
+"POT-Creation-Date: 2013-11-15 22:11+0100\n"
 "PO-Revision-Date: 2013-11-03 05:43+0000\n"
 "Last-Translator: Trung <ndtrung4419@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1383457425.000000\n"
@@ -30,11 +30,25 @@ msgstr "Tên trang web"
 msgid "Address"
 msgstr "Địa chỉ"
 
+#: added-to-home-screen
+#, fuzzy
+msgid "Added to Home Screen"
+msgstr "Thêm vào màn hình chính"
+
 # chắc là hiện news :-?
 #. # Wrapper
 #: wrapper-search-name
 msgid "{{topic}} on {{name}}"
 msgstr "{{topic}} trên {{name}}"
+
+#. # Dialog that appears when a user long taps on the homescreen
+#: contextmenu-add-wallpaper
+msgid "Change Wallpaper"
+msgstr ""
+
+#: contextmenu-add-collections
+msgid "Add Collection"
+msgstr ""
 
 #. # Prompt that appears when a user tries to delete an app.
 #: delete-title
@@ -74,6 +88,8 @@ msgstr "%A, ngày %d tháng %m"
 
 #. # App reinstall
 #: download
+#, fuzzy
+msgctxt "download"
 msgid "Download"
 msgstr "Tải xuống"
 
@@ -102,12 +118,17 @@ msgctxt "evme-searchbar-default2"
 msgid "I'm thinking of…"
 msgstr ""
 
+#: evme-searchbar-default2.placeholder
+msgctxt "evme-searchbar-default2.placeholder"
+msgid "I'm thinking of…"
+msgstr ""
+
 #: evme-searchbar-clear
 msgid "Back"
 msgstr "Quay lại"
 
-#: evme-smart-folders
-msgid "Smart Collections"
+#: evme-collections
+msgid "Collections"
 msgstr ""
 
 #: evme-searchbar-default.placeholder
@@ -174,6 +195,16 @@ msgctxt "evme-helper-title-empty"
 msgid "Everything"
 msgstr "Everything.me"
 
+#: evme-apps-market-download
+#, fuzzy
+msgctxt "evme-apps-market-download"
+msgid "Download"
+msgstr "Tải xuống"
+
+#: evme-apps-market-more-apps
+msgid "More Apps"
+msgstr ""
+
 #: evme-apps-loading-app
 msgctxt "evme-apps-loading-app"
 msgid "Loading…"
@@ -192,25 +223,22 @@ msgstr "Thêm {{name}} vào màn hình chính?"
 msgid "{{name}} was already added to Home Screen"
 msgstr "{{name}} được thêm vào màn hình chính từ trước"
 
-#: evme-alert-offline-shortcuts-more
-msgid "Connect to the internet to add more shortcuts"
+#: evme-alert-offline-collections-more
+#, fuzzy
+msgid "Connect to the internet to add more collections"
 msgstr "Kết nối mạng để có thể thêm nhiều shortcut"
 
-#: evme-alert-save-smartfolder
-msgid "Add as Smart Collection?"
+#: evme-alert-save-collection
+msgid "Add as Collection?"
 msgstr ""
 
 #: evme-alert-save-wallpaper
 msgid "Set as wallpaper?"
 msgstr ""
 
-#: evme-alert-shortcuts-suggest-empty
-msgid "No Smart Collections to add"
+#: evme-alert-no-more-collections
+msgid "No Collections to add"
 msgstr ""
-
-#: evme-alert-no-more-shortcuts
-msgid "No Shortcuts to add"
-msgstr "Không có shortcut để thêm"
 
 #: evme-banner-app-install-success
 msgid "{{name}} added to Home Screen"
@@ -225,30 +253,46 @@ msgstr ""
 msgid "More"
 msgstr "Thêm"
 
-#: evme-shortcutscustomize-loading
-msgctxt "evme-shortcutscustomize-loading"
+#: evme-collectionssuggest-loading
+#, fuzzy
+msgctxt "evme-collectionssuggest-loading"
 msgid "Loading…"
 msgstr "Đang tải…"
 
-#: evme-shortcutscustomize-loading-cancel
-msgctxt "evme-shortcutscustomize-loading-cancel"
+#: evme-collectionssuggest-loading-cancel
+#, fuzzy
+msgctxt "evme-collectionssuggest-loading-cancel"
 msgid "Cancel"
-msgstr "Thôi"
+msgstr "Hủy bỏ"
+
+#: evme-collectionssuggest-prompt-create
+msgid "Create your own collection"
+msgstr ""
 
 #: evme-backgroundimage-source-label
 msgid "Source:"
 msgstr "Nguồn:"
 
 # tên trang web http://corp.everything.me/
-#: evme-smartfolder-title-prefix
-msgctxt "evme-smartfolder-title-prefix"
+#: evme-collection-title-prefix
+#, fuzzy
+msgctxt "evme-collection-title-prefix"
 msgid "Everything"
 msgstr "Everything.me"
 
-#: evme-smartfolder-loading-more
-msgctxt "evme-smartfolder-loading-more"
+#: evme-collection-title-suffix
+msgid "Phone"
+msgstr ""
+
+#: evme-collection-loading-more
+#, fuzzy
+msgctxt "evme-collection-loading-more"
 msgid "Loading…"
 msgstr "Đang tải…"
+
+#: evme-collection-prompt-rename
+msgid "Rename Collection"
+msgstr ""
 
 #. # {{query}} will always be the user's current query from the searchbox
 #: evme-connectionmessage-apps
@@ -275,7 +319,11 @@ msgstr ""
 "Những ứng dụng này là do <b>{{query}}</b>,<b /><b> nhấn bất kỳ biểu tượng "
 "nào để mở nó."
 
-#. # smart folder translations
+#. # collection translations
+#: evme-shortcut-custom
+msgid "Custom..."
+msgstr ""
+
 #: evme-shortcut-id-astrology
 msgid "Astrology"
 msgstr "Thiên văn"
@@ -311,6 +359,10 @@ msgstr "Điện tử"
 #: evme-shortcut-id-email
 msgid "Email"
 msgstr "Thư điện tử"
+
+#: evme-shortcut-id-entertainment
+msgid "Entertainment"
+msgstr ""
 
 #: evme-shortcut-id-environment
 msgid "Environment"
@@ -415,3 +467,23 @@ msgstr ""
 #: evme-shortcut-id-weather
 msgid "Weather"
 msgstr "Thời tiết"
+
+#~ msgid "No Shortcuts to add"
+#~ msgstr "Không có shortcut để thêm"
+
+#~ msgctxt "evme-shortcutscustomize-loading"
+#~ msgid "Loading…"
+#~ msgstr "Đang tải…"
+
+#~ msgctxt "evme-shortcutscustomize-loading-cancel"
+#~ msgid "Cancel"
+#~ msgstr "Thôi"
+
+# tên trang web http://corp.everything.me/
+#~ msgctxt "evme-smartfolder-title-prefix"
+#~ msgid "Everything"
+#~ msgstr "Everything.me"
+
+#~ msgctxt "evme-smartfolder-loading-more"
+#~ msgid "Loading…"
+#~ msgstr "Đang tải…"

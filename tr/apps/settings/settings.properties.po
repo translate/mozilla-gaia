@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-22 13:57+0100\n"
+"POT-Creation-Date: 2013-11-15 22:32+0100\n"
 "PO-Revision-Date: 2013-08-23 17:02+0000\n"
 "Last-Translator: Selim <selim@sum.lu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1377277339.000000\n"
@@ -262,6 +262,10 @@ msgctxt "authentication"
 msgid "Authentication"
 msgstr "Doğrulama"
 
+#: eap
+msgid "EAP method"
+msgstr ""
+
 #: identity
 msgid "Identifier"
 msgstr "Tanımlayıcı"
@@ -350,8 +354,18 @@ msgid "PIN is 4 or 8 digits"
 msgstr "PIN 4-8 basamaklıdır"
 
 #: wpsPinInput
-msgid "Input {{pin}} to opposite device"
+#, fuzzy
+msgid "Input {{pin}} to an opposite device"
 msgstr "Karşı cihaza {{pin}} girin"
+
+#: wpsPinAps
+msgid "Select an opposite device"
+msgstr ""
+
+#: wpsAnyAp
+msgctxt "wpsAnyAp"
+msgid "Any"
+msgstr ""
 
 #: wpsCancelMessage
 msgid "Cancel WPS"
@@ -366,6 +380,14 @@ msgstr "WPS iptal edilemedi"
 msgid "Call Settings"
 msgstr "Arama ayarları"
 
+#: callSettingsQuery
+msgid "Requesting network info…"
+msgstr "Şebeke bilgileri isteniyor…"
+
+#: callSettingsQueryError
+msgid "Error in query"
+msgstr "Sorgulama hatası"
+
 #: voiceMail
 msgid "Voicemail"
 msgstr "Telesekreter"
@@ -378,9 +400,25 @@ msgstr "Telesekreter Numarası"
 msgid "Not set"
 msgstr "Ayarlanmamış"
 
+#: voicePrivacyMode
+msgid "Voice privacy mode"
+msgstr ""
+
 #: callWaiting
 msgid "Call waiting"
 msgstr "Arama bekletme"
+
+#: confirmCallWaitingTitle
+msgid "Unable to confirm call waiting preferences"
+msgstr "Arama bekletme tercihleri doğrulanamadı"
+
+#: confirmCallWaitingDesc
+msgid ""
+"The device is currently unable to communicate with the carrier. Try setting "
+"the preference again."
+msgstr ""
+"Aygıt şu anda operatör ile bağlantı kuramıyor. Tercihi yeniden belirlemeyi "
+"deneyin."
 
 #: callForwarding
 msgid "Call forwarding"
@@ -422,14 +460,6 @@ msgstr "Ulaşılamıyorsa yönlendir"
 msgid "When unreachable"
 msgstr "Ulaşılamıyorsa"
 
-#: callForwardingRequesting
-msgid "Requesting network info…"
-msgstr "Şebeke bilgileri isteniyor…"
-
-#: callForwardingQueryError
-msgid "Error in query"
-msgstr "Sorgulama hatası"
-
 #: callForwardingForwardingVoiceTo
 msgid "Voice calls to"
 msgstr "Sesli aramalar"
@@ -442,22 +472,6 @@ msgstr "Devre dışı"
 #: callForwardingConfirmTitle
 msgid "Call forwarding confirmation message"
 msgstr "Arama yönlendirme onay mesajı"
-
-#: callBroadcastService
-msgid "Cell broadcast service"
-msgstr "Hücresel yayın hizmeti"
-
-#: confirmCallWaitingTitle
-msgid "Unable to confirm call waiting preferences"
-msgstr "Arama bekletme tercihleri doğrulanamadı"
-
-#: confirmCallWaitingDesc
-msgid ""
-"The device is currently unable to communicate with the carrier. Try setting "
-"the preference again."
-msgstr ""
-"Aygıt şu anda operatör ile bağlantı kuramıyor. Tercihi yeniden belirlemeyi "
-"deneyin."
 
 #: cf-alwaysUseThisNumber
 msgid "Always use this number"
@@ -490,6 +504,227 @@ msgstr "Operatörünüz bu işlemi desteklemiyor."
 #: callForwardingSetError
 msgid "Call settings error."
 msgstr "Arama ayarları hatası."
+
+#: callerId
+msgid "Caller ID"
+msgstr ""
+
+#: callerId-default
+msgid "Network default"
+msgstr ""
+
+#: callerId-hide
+msgid "Hide number"
+msgstr ""
+
+#: callerId-show
+#, fuzzy
+msgid "Show number"
+msgstr "Telefon numarası"
+
+#: fdn
+msgctxt "fdn"
+msgid "Fixed dialing numbers"
+msgstr ""
+
+#: fdnSettings
+msgctxt "fdnSettings"
+msgid "Fixed dialing numbers"
+msgstr ""
+
+#: fdn-authorizedNumbers
+msgid "Authorized numbers"
+msgstr ""
+
+#: fdn-authorizedNumbers-desc
+msgid "List of numbers that can be called"
+msgstr ""
+
+#: fdn-explanation1
+msgid "Restrict which numbers can be dialed from this phone."
+msgstr ""
+
+#: fdn-explanation2
+msgid "(Emergency numbers will always be dialable)"
+msgstr ""
+
+#: fdnEnable
+msgid "Enable FDN"
+msgstr ""
+
+#: fdnDisable
+msgid "Disable FDN"
+msgstr ""
+
+#: fdnReset
+msgid "Reset PIN2"
+msgstr ""
+
+#: fdnAttemptMsg3
+#, fuzzy
+msgctxt "fdnAttemptMsg3"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: fdnAttemptMsg3[one]
+#, fuzzy
+msgctxt "fdnAttemptMsg3[one]"
+msgid ""
+"You have one try left to enter the correct code before locking the SIM card."
+msgstr ""
+"SIM kart kilitlenmeden önce doğru kodu girmek için bir deneme hakkınız kaldı."
+
+#: fdnAttemptMsg3[two]
+#, fuzzy
+msgctxt "fdnAttemptMsg3[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+"SIM kart kilitlenmeden önce doğru kodu girmek için {{n}} deneme hakkınız "
+"kaldı."
+
+#: fdnAttemptMsg3[few]
+#, fuzzy
+msgctxt "fdnAttemptMsg3[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+"SIM kart kilitlenmeden önce doğru kodu girmek için {{n}} deneme hakkınız "
+"kaldı."
+
+#: fdnAttemptMsg3[many]
+#, fuzzy
+msgctxt "fdnAttemptMsg3[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+"SIM kart kilitlenmeden önce doğru kodu girmek için {{n}} deneme hakkınız "
+"kaldı."
+
+#: fdnAttemptMsg3[other]
+#, fuzzy
+msgctxt "fdnAttemptMsg3[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+"SIM kart kilitlenmeden önce doğru kodu girmek için {{n}} deneme hakkınız "
+"kaldı."
+
+#: fdnLastChanceMsg
+#, fuzzy
+msgid ""
+"This is your last chance to enter the correct PIN2. Otherwise, you must "
+"enter the PUK2 code to use this SIM card."
+msgstr ""
+"Bu, doğru PIN'i girmek için son şansınız. Aksi halde bu SIM kartını "
+"kullanmak için PUK kodunu girmeniz gerekecek."
+
+#: fdnErrorMsg
+#, fuzzy
+msgid "The PIN2 code is incorrect."
+msgstr "PUK kodu yanlış."
+
+#: fdn-enabled-warning
+msgid "Call forwarding is disabled by FDN."
+msgstr ""
+
+#: fdnContact-name
+#, fuzzy
+msgid "name"
+msgstr "İsim"
+
+#: fdnContact-number
+msgctxt "fdnContact-number"
+msgid "number"
+msgstr ""
+
+#: fdnContact-submit
+msgid "submit"
+msgstr ""
+
+#: fdnAction-add
+msgid "Add contact"
+msgstr ""
+
+#: fdnAction-call
+msgid "Call"
+msgstr ""
+
+#: fdnAction-edit
+msgid "Edit contact"
+msgstr ""
+
+#: fdnAction-delete
+msgid "Delete contact"
+msgstr ""
+
+#. # Connectivity :: Messaging
+#: messagingSettings
+#, fuzzy
+msgid "Messaging Settings"
+msgstr "Mesaj ayarları"
+
+#: message-confirmation
+#, fuzzy
+msgid "Message confirmation"
+msgstr "Metin mesajı onayı"
+
+#: message-delivery-reports
+msgid "Delivery reports"
+msgstr "İletim raporları"
+
+#: message-delivery-reports-details
+#, fuzzy
+msgid "Request notification of delivery for each message sent"
+msgstr "Gönderilen her metin mesajı için iletim bildirimi iste"
+
+#: mmsTitle
+msgid "Multimedia messaging (MMS)"
+msgstr "Multimedya mesajı (MMS)"
+
+#: auto-retrieve
+msgid "Auto retrieve"
+msgstr "Otomatik al"
+
+#: auto-retrieve-details
+msgid "Automatically retrieve messages"
+msgstr "Mesajları otomatik al"
+
+#: manual-retrieve
+msgid "Off"
+msgstr "Kapalı"
+
+#: auto-roaming-retrieve
+msgid "On with roaming"
+msgstr "Dolaşımda açık"
+
+#: auto-no-roaming-retrieve
+msgid "On without roaming"
+msgstr "Dolaşım dışında açık"
+
+#: autoConfigure
+msgid "Auto-configure"
+msgstr "Otomatik yapılandır"
+
+#: wapPushMessages
+msgid "WAP Push messages"
+msgstr ""
+
+#: wapPush
+msgid "WAP Push"
+msgstr ""
+
+#: cellBroadcastMessages
+msgid "Cell broadcast messages"
+msgstr ""
+
+#: cellBroadcast
+msgid "Cell broadcast"
+msgstr ""
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
@@ -534,6 +769,10 @@ msgctxt "operator-networkType-auto"
 msgid "Automatic"
 msgstr "Otomatik"
 
+#: operator-networkType-prefer2G
+msgid "2G preferred"
+msgstr ""
+
 #: operator-networkType-2G
 msgid "2G only"
 msgstr "Yalnızca 2G"
@@ -541,6 +780,35 @@ msgstr "Yalnızca 2G"
 #: operator-networkType-3G
 msgid "3G only"
 msgstr "Yalnızca 3G"
+
+#. # DUALSTACK
+#: operator-networkType-GSM
+msgid "GSM"
+msgstr ""
+
+#: operator-networkType-WCDMA
+msgid "WCDMA"
+msgstr ""
+
+#: operator-networkType-CDMA
+msgid "CDMA"
+msgstr ""
+
+#: operator-networkType-EVDO
+msgid "EVDO"
+msgstr ""
+
+#: operator-networkType-preferGSM
+msgid "GSM preferred"
+msgstr ""
+
+#: operator-networkType-preferWCDMA
+msgid "WCDMA preferred"
+msgstr ""
+
+#: operator-networkType-preferEVDO
+msgid "EVDO preferred"
+msgstr ""
 
 #: operator-autoSelect
 msgid "Automatic selection"
@@ -550,6 +818,10 @@ msgstr "Otomatik seçim"
 msgctxt "operator-networkSelect-auto"
 msgid "Automatic"
 msgstr "Otomatik"
+
+#: operator-networkSelect-manual
+msgid "Manual"
+msgstr ""
 
 #: operator-turnAutoSelectOff
 msgid "Turn automatic selection off to view available network operators."
@@ -571,6 +843,23 @@ msgctxt "operator-status-connected"
 msgid "Connected"
 msgstr "Bağlanıldı"
 
+#: operator-roamingPreference
+msgid "Roaming preference"
+msgstr ""
+
+#: operator-roamingPreference-home
+msgid "Home"
+msgstr ""
+
+#: operator-roamingPreference-any
+msgctxt "operator-roamingPreference-any"
+msgid "Any"
+msgstr ""
+
+#: operator-roamingPreference-affiliated
+msgid "Affiliated"
+msgstr ""
+
 #: apn
 msgid "APN"
 msgstr "APN"
@@ -591,14 +880,6 @@ msgstr "Mesaj ayarları"
 msgid "APN settings"
 msgstr "APN ayarları"
 
-#: text-message-confirmation
-msgid "Text message confirmation"
-msgstr "Metin mesajı onayı"
-
-#: mmsTitle
-msgid "Multimedia messaging (MMS)"
-msgstr "Multimedya mesajı (MMS)"
-
 #: mmsport
 msgid "MMS port"
 msgstr "MMS portu"
@@ -610,38 +891,6 @@ msgstr "MMS vekil sunucusu"
 #: mmsc
 msgid "MMSC"
 msgstr "MMSC"
-
-#: auto-retrieve
-msgid "Auto retrieve"
-msgstr "Otomatik al"
-
-#: auto-retrieve-details
-msgid "Automatically retrieve messages"
-msgstr "Mesajları otomatik al"
-
-#: manual-retrieve
-msgid "Off"
-msgstr "Kapalı"
-
-#: auto-roaming-retrieve
-msgid "On with roaming"
-msgstr "Dolaşımda açık"
-
-#: auto-no-roaming-retrieve
-msgid "On without roaming"
-msgstr "Dolaşım dışında açık"
-
-#: delivery-reports
-msgid "Delivery reports"
-msgstr "İletim raporları"
-
-#: delivery-reports-details
-msgid "Request notification of delivery for each text message sent"
-msgstr "Gönderilen her metin mesajı için iletim bildirimi iste"
-
-#: autoConfigure
-msgid "Auto-configure"
-msgstr "Otomatik yapılandır"
 
 #: httpProxyHost
 msgid "HTTP proxy host"
@@ -748,6 +997,10 @@ msgstr "Bölgedeki aygıtlar"
 msgid "Visible to all"
 msgstr "Tümüne görünür"
 
+#: bluetooth-name-maxlength-alert
+msgid "Your device name exceeds {{length}} characters. Please retry again."
+msgstr ""
+
 #: bt-status-nopaired
 msgid "No devices paired"
 msgstr "Eşleştirilmiş aygıt yok"
@@ -816,9 +1069,33 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "Bağlandı"
 
+#: device-status-connected-phone
+msgid "Connected to phone audio"
+msgstr ""
+
+#: device-status-connected-media
+msgid "Connected to media audio"
+msgstr ""
+
+#: device-status-connected-phone-media
+msgid "Connected to phone/media audio"
+msgstr ""
+
 #: device-option-unpair
 msgid "Unpair"
 msgstr "Eşleşmeyi kaldır"
+
+#: device-option-confirm
+msgid "Confirm"
+msgstr ""
+
+#: device-option-unpair-confirmation
+msgid "Confirmation"
+msgstr ""
+
+#: device-option-unpair-device
+msgid "Unpair Device?"
+msgstr ""
 
 #: device-option-connect
 msgid "Connect"
@@ -847,6 +1124,10 @@ msgstr "Bilinmeyen aygıt"
 #: change-phone-name
 msgid "Change phone name"
 msgstr "Telefon ismini değiştir"
+
+#: change-phone-name-desc
+msgid "Change the name of your device as it appears in your computer"
+msgstr ""
 
 #: bluetooth-new-name
 msgid "New name"
@@ -936,7 +1217,15 @@ msgstr ""
 "Şu anda bu aygıta bağlısınız. Eşleşmeyi kaldırırsanız bağlantınız da "
 "kesilecektir."
 
+#: pair-view-title
+msgid "Bluetooth Request From"
+msgstr ""
+
 #. # Connectivity :: Internet Sharing
+#: SSIDCannotBeEmpty
+msgid "The SSID cannot be empty"
+msgstr ""
+
 #: internetSharing
 msgid "Internet sharing"
 msgstr "İnternet paylaşımı"
@@ -1033,6 +1322,18 @@ msgstr "Ses"
 msgid "Tones"
 msgstr "Tonlar"
 
+#: touch-tones
+msgid "Audible touch tones"
+msgstr ""
+
+#: touch-tone-short
+msgid "Short"
+msgstr ""
+
+#: touch-tone-long
+msgid "Long"
+msgstr ""
+
 #: select-tone
 msgid "Select a tone"
 msgstr "Bir ton seçin"
@@ -1069,6 +1370,14 @@ msgstr "Ekran kilidini aç"
 msgid "Camera shutter"
 msgstr "Kamera deklanşörü"
 
+#: camera-recordingsound
+msgid "Video recording"
+msgstr ""
+
+#: sent-mail
+msgid "Sent Mail"
+msgstr ""
+
 #: sent-message
 msgid "Sent Message"
 msgstr "Mesaj gönderildi"
@@ -1085,6 +1394,16 @@ msgstr "Zil sesi ve bildirimler"
 msgid "Voice"
 msgstr "Ses"
 
+#: savingringtone
+msgid "Saving ringtone…"
+msgstr ""
+
+#: unplayable-ringtone
+msgid ""
+"The ringtone was not changed because the selected file can not be played on "
+"this phone."
+msgstr ""
+
 #. # Personalization :: Display
 #: display
 msgid "Display"
@@ -1099,7 +1418,8 @@ msgid "Adjust automatically"
 msgstr "Otomatik olarak ayarla"
 
 #: lockScreen
-msgid "Lock Screen"
+#, fuzzy
+msgid "Lock screen"
 msgstr "Ekranı kilitle"
 
 #: wallpaper
@@ -1129,6 +1449,10 @@ msgstr "10 dakika"
 #: never
 msgid "never"
 msgstr "Hiçbir zaman"
+
+#: lock-orientation
+msgid "Lock orientation"
+msgstr ""
 
 #. # Personalization :: Notifications
 #: notifications
@@ -1194,110 +1518,79 @@ msgstr "Örnek Biçim"
 msgid "%A, %B %d, %Y"
 msgstr "%d %B %Y %A"
 
+#. # Personalization :: Homescreen
+#: homescreen
+msgid "Homescreen"
+msgstr ""
+
+#: changeHomescreen
+msgid "Change homescreen"
+msgstr ""
+
+#: changeHomescreenButton
+#, fuzzy
+msgctxt "changeHomescreenButton"
+msgid "Change"
+msgstr "Değiştir"
+
+#: description
+msgid "Description"
+msgstr ""
+
 #. # Personalization :: Keyboard
-#: keyboard
-msgid "Keyboard"
+#: installedInputMethods
+msgid "Installed input methods"
+msgstr ""
+
+#: keyboards
+#, fuzzy
+msgid "Keyboards"
 msgstr "Klavye"
 
 #: keyboardLayouts
 msgid "Keyboard layouts"
 msgstr "Klavye düzenleri"
 
+#: numberKeyboardLayouts
+msgid "Number layouts"
+msgstr ""
+
+#: optionKeyboardLayouts
+msgid "Option layouts"
+msgstr ""
+
 #: keypad
 msgid "Keypad"
 msgstr "Tuş takımı"
 
-#: vibration
-msgid "Vibration"
-msgstr "Titreşim"
+#: selectedKeyboards
+msgid "Selected keyboards"
+msgstr ""
 
-#: clickSound
-msgid "Click sound"
-msgstr "Tıklama sesi"
+#: addMoreKeyboards
+msgid "Add more keyboards"
+msgstr ""
 
-#: autoCorrect
-msgid "Auto correction"
-msgstr "Otomatik düzeltme"
+#: mustHaveOneKeyboard
+msgid "At least one {{type}} keyboard should be selected"
+msgstr ""
 
-#: wordSuggestion
-msgid "Word suggestion"
-msgstr "Kelime önerisi"
+#: keyboardType-text
+msgid "text"
+msgstr ""
 
-#: english
-msgid "English"
-msgstr "İngilizce"
+#: keyboardType-url
+msgid "url"
+msgstr ""
 
-#: dvorak
-msgid "English (Dvorak)"
-msgstr "İngilizce (Dvorak)"
+#: keyboardType-number
+msgctxt "keyboardType-number"
+msgid "number"
+msgstr ""
 
-#: spanish
-msgid "Spanish"
-msgstr "İspanyolca"
-
-#: portuguese
-msgid "Portuguese Brazilian"
-msgstr "Brezilya Portekizcesi"
-
-#: latin
-msgid "Other Latin scripts"
-msgstr "Diğer Latin alfabeleri"
-
-#: latin-desc
-msgid "French, German, Norwegian (Bokmål), Slovak, Turkish"
-msgstr "Fransızca, Almanca, Norveççe (Bokmål), Slovakça, Türkçe"
-
-#: cyrillic
-msgid "Cyrillic scripts"
-msgstr "Kiril alfabesi"
-
-#: cyrillic-desc
-msgid "Russian, Serbian (cyrillic)"
-msgstr "Rusça, Sırpça (kiril)"
-
-#: arabic
-msgid "Arabic"
-msgstr "Arapça"
-
-#: greek
-msgid "Greek"
-msgstr "Yunanca"
-
-#: hebrew
-msgid "Hebrew"
-msgstr "İbranice"
-
-#: jp-kanji
-msgid "Japanese"
-msgstr "Japonca"
-
-#: jp-kanji-desc
-msgid "Kanji"
-msgstr "Kanji"
-
-#: traditionalChinese
-msgid "Traditional Chinese"
-msgstr "Geleneksel Çince"
-
-#: traditionalChinese-desc
-msgid "Zhuyin"
-msgstr "Zhuyin"
-
-#: simplifiedChinese
-msgid "Simplified Chinese"
-msgstr "Basitleştirilmiş Çince"
-
-#: simplifiedChinese-desc
-msgid "Pinyin"
-msgstr "Pinyin"
-
-#: polish
-msgid "Polish"
-msgstr "Lehçe"
-
-#: serbian
-msgid "Serbian"
-msgstr "Sırpça"
+#: defaultKeyboardEnabled
+msgid "{{appName}} {{layoutName}} is set as default input method"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Accounts (N/A)
@@ -1330,8 +1623,8 @@ msgid "Passcode: {{code}}"
 msgstr "Şifre: {{code}}"
 
 #: phoneLock
-msgid "Phone lock"
-msgstr "Telefon kilidi"
+msgid "Screen lock"
+msgstr ""
 
 #: simSecurity
 msgid "SIM security"
@@ -1341,6 +1634,10 @@ msgstr "SIM güvenliği"
 #: appPermissions
 msgid "App permissions"
 msgstr "Uygulama izinleri"
+
+#: author
+msgid "Author"
+msgstr ""
 
 #: permissions
 msgid "Permissions"
@@ -1409,6 +1706,8 @@ msgid "Ring"
 msgstr "Zil"
 
 #: change
+#, fuzzy
+msgctxt "change"
 msgid "Change"
 msgstr "Değiştir"
 
@@ -1416,9 +1715,13 @@ msgstr "Değiştir"
 msgid "Create"
 msgstr "Oluştur"
 
-#: create-passcode
+#: create-a-passcode
 msgid "Create a Passcode"
 msgstr "Şifre oluştur"
+
+#: passcode-heading
+msgid "Passcode"
+msgstr "Şifre"
 
 #: enter-passcode
 msgid "Enter passcode"
@@ -1440,12 +1743,9 @@ msgstr "Şifre yanlış"
 msgid "Passcode doesn’t match. Try again."
 msgstr "Şifre uyuşmuyor. Tekrar deneyin."
 
-#: passcode
-msgid "Passcode"
-msgstr "Şifre"
-
 #: confirm-passcode
-msgid "Confirm Passcode"
+#, fuzzy
+msgid "Confirm passcode"
 msgstr "Şifreyi onaylayın"
 
 #: immediately
@@ -1497,11 +1797,13 @@ msgid "After 4 hours"
 msgstr "4 saat sonra"
 
 #: require-passcode
-msgid "Require Passcode"
+#, fuzzy
+msgid "Require passcode"
 msgstr "Şifre iste"
 
 #: change-passcode
-msgid "Change Passcode"
+#, fuzzy
+msgid "Change passcode"
 msgstr "Şifreyi değiştir"
 
 #. # Security :: SIM PIN Lock
@@ -1513,8 +1815,18 @@ msgstr "SIM kart yok"
 msgid "SIM PIN"
 msgstr "SIM PIN'i"
 
+#: simPin2
+#, fuzzy
+msgid "SIM PIN2"
+msgstr "SIM PIN'i"
+
 #: pukCode
 msgid "PUK code"
+msgstr "PUK kodu"
+
+#: puk2Code
+#, fuzzy
+msgid "PUK2 code"
 msgstr "PUK kodu"
 
 #: whatIsSimPin
@@ -1544,17 +1856,23 @@ msgstr "PIN'i değiştir"
 msgid "Enter SIM PIN"
 msgstr "SIM PIN'ini girin"
 
+#: pin2Title
+#, fuzzy
+msgid "Enter SIM PIN2"
+msgstr "SIM PIN'ini girin"
+
 #: pukTitle
 msgid "Enter PUK code"
+msgstr "PUK kodunu girin"
+
+#: puk2Title
+#, fuzzy
+msgid "Enter PUK2 code"
 msgstr "PUK kodunu girin"
 
 #: newpinTitle
 msgid "New PIN"
 msgstr "Yeni PIN"
-
-#: pinErrorMsg
-msgid "The PIN was incorrect."
-msgstr "PIN yanlış."
 
 #: inputCodeRetriesLeft
 msgctxt "inputCodeRetriesLeft"
@@ -1591,6 +1909,8 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: pinAttemptMsg3[one]
+#, fuzzy
+msgctxt "pinAttemptMsg3[one]"
 msgid ""
 "You have one try left to enter the correct code before locking the SIM card."
 msgstr ""
@@ -1648,6 +1968,17 @@ msgstr "SIM kart kilitli."
 msgid ""
 "You must enter the Personal Unlocking Key (PUK) code for the SIM card. Refer "
 "to your SIM card documentation or contact your carrier for more information."
+msgstr ""
+"SIM kartın Kişisel Kilit Açma Anahtarını (PUK) girmelisiniz. Daha fazla "
+"bilgi için SIM kartınızın belgelerine bakın veya operatörünüzle irtibata "
+"geçin."
+
+#: enterPuk2Msg
+#, fuzzy
+msgid ""
+"You must enter the Personal Unlocking Key (PUK2) code for the SIM card. "
+"Refer to your SIM card documentation or contact your carrier for more "
+"information."
 msgstr ""
 "SIM kartın Kişisel Kilit Açma Anahtarını (PUK) girmelisiniz. Daha fazla "
 "bilgi için SIM kartınızın belgelerine bakın veya operatörünüzle irtibata "
@@ -1730,8 +2061,18 @@ msgstr ""
 msgid "Create PIN (must contain 4 to 8 digits)"
 msgstr "PIN oluştur (4-8 haneli olmalı)"
 
+#: newSimPin2Msg
+#, fuzzy
+msgid "Create PIN2 (must contain 4 to 8 digits)"
+msgstr "PIN oluştur (4-8 haneli olmalı)"
+
 #: confirmNewSimPinMsg
 msgid "Confirm new PIN"
+msgstr "Yeni PIN'i onaylayın"
+
+#: confirmNewSimPin2Msg
+#, fuzzy
+msgid "Confirm new PIN2"
 msgstr "Yeni PIN'i onaylayın"
 
 #: newPinErrorMsg
@@ -1750,10 +2091,26 @@ msgstr "Bilinmeyen SIM kart durumu"
 msgid "SIM card not ready"
 msgstr "SIM kart hazır değil"
 
+#: simCardIllegal
+msgid "Unauthorized SIM card"
+msgstr ""
+
 #. # Security :: Do Not Track
 #: doNotTrack
 msgid "Do Not Track"
 msgstr "Beni İzleme"
+
+#: doNotTrackActions
+msgid "Tell websites and apps that I do not want to be tracked"
+msgstr ""
+
+#: allowTracking
+msgid "Tell websites and apps that I want to be tracked"
+msgstr ""
+
+#: doNotHavePrefOnTracking
+msgid "Do not tell websites and apps anything about my tracking preferences"
+msgstr ""
 
 #: doNotTrack-dt
 msgid "How does Do Not Track work?"
@@ -1786,9 +2143,9 @@ msgstr ""
 msgid "Storage"
 msgstr "Depolama"
 
-#: enableUSBStorage
-msgid "Enable USB storage"
-msgstr "USB depolama"
+#: enableUSBStorage1
+msgid "USB storage"
+msgstr ""
 
 #. # Storage :: Application storage
 #: deviceStorage
@@ -1877,10 +2234,11 @@ msgstr "Kullanılan"
 msgid "Left"
 msgstr "Kalan"
 
-#: media-storage-details
+#: storage-details
+#, fuzzy
 msgid ""
-"Photos, videos and music are stored on the SD card. See media storage for "
-"details."
+"Photos, videos and music are stored separately from apps. See media storage "
+"for details."
 msgstr ""
 "Fotoğraf, video ve müzikler SD kartta depolanıyor. Ayrıntılar için medya "
 "deposuna bakın."
@@ -1978,8 +2336,9 @@ msgstr ""
 "depolanacağını seçin."
 
 #: change-default-location-confirm
+#, fuzzy
 msgid ""
-"Changing the default media storage volume will effect where photos, videos, "
+"Changing the default media storage volume will affect where photos, videos, "
 "downloads and other media will be saved to by default. Existing data will "
 "remain in its current location."
 msgstr ""
@@ -2020,6 +2379,10 @@ msgstr "ICCID"
 msgid "Phone number"
 msgstr "Telefon numarası"
 
+#: unknown-phoneNumber
+msgid "Unknown"
+msgstr ""
+
 #: gitInfo
 msgid "Git commit info"
 msgstr "Git günlük bilgisi"
@@ -2048,9 +2411,17 @@ msgstr "Kılavuz"
 msgid "Show frames per second"
 msgstr "Kare/saniye hızını göster"
 
+#: layers-draw-borders
+msgid "Draw layers borders"
+msgstr ""
+
 #: paint-flashing
 msgid "Flash repainted area"
 msgstr "Tekrar çizilen alanı boya"
+
+#: apz-force-enable
+msgid "Enable APZ for all content processes"
+msgstr ""
 
 #: log-animations
 msgid "Log slow animations"
@@ -2063,6 +2434,14 @@ msgstr "Uzaktan hata ayıklama"
 #: wifi-debugging
 msgid "Wi-Fi output in adb"
 msgstr "Wi-Fi çıkışı adb cinsinden"
+
+#: bluetooth-debugging
+msgid "Bluetooth output in adb"
+msgstr ""
+
+#: contacts-debugging
+msgid "Contacts debugging output in adb"
+msgstr ""
 
 #: ttl-monitor
 msgid "Show time to load"
@@ -2319,6 +2698,22 @@ msgstr "İlk kullanımı başlat"
 msgid "No first time use app found"
 msgstr "İlk kullanım uygulaması bulunamadı"
 
+#: software-button-enabled
+msgid "Enable software home button"
+msgstr ""
+
+#: homegesture-enabled
+msgid "Home gesture enabled"
+msgstr ""
+
+#: edgesgesture-enabled
+msgid "Edges gesture enabled"
+msgstr ""
+
+#: debug-gaia-enabled
+msgid "Gaia debug traces"
+msgstr ""
+
 #. # Device :: Battery
 #: battery
 msgid "Battery"
@@ -2459,6 +2854,104 @@ msgstr " açıklandığı şekilde kullanılır."
 msgid "."
 msgstr " açıklandığı şekilde kullanıyoruz."
 
+#. # Device :: Improve Browser OS :: Submit Your Feedback
+#: sendFeedbackTitle
+msgid "Submit Your Feedback"
+msgstr ""
+
+#: feedback-description
+msgid "Your feedback will help us to improve Firefox OS."
+msgstr ""
+
+#: feedback-happy
+msgid "Happy"
+msgstr ""
+
+#: feedback-sad
+msgid "Sad"
+msgstr ""
+
+#: feedback-mood-description
+msgid "How do you feel?"
+msgstr ""
+
+#: feedback_whyfeel_happy
+msgid "Why do you feel happy?"
+msgstr ""
+
+#: feedback_whyfeel_sad
+msgid "Why do you feel sad?"
+msgstr ""
+
+#: feedback-mood-explain
+msgid "Please tell us in detail."
+msgstr ""
+
+#: feedback-public-description
+msgid ""
+"The content of your feedback will be public, so please be sure not include "
+"any personal information."
+msgstr ""
+
+#: feedback-contactyou
+msgid "Check here to let us contact you from your email."
+msgstr ""
+
+#: email-address1
+msgid "Email address:"
+msgstr ""
+
+#: email-keepprivate
+msgid "Don't worry. Your email will always be kept private."
+msgstr ""
+
+#: feedback-sendbtn
+msgid "Send Feedback"
+msgstr ""
+
+#: feedback-errormessage-connect-error
+msgid ""
+"Sorry, the system can't send your suggestion due to a data connection error. "
+"Please try again when the issue is resolved."
+msgstr ""
+
+#: feedback-errormessage-server-off
+msgid ""
+"Sorry, the system can't send your suggestion because the server shut down. "
+"Please wait a moment and try again."
+msgstr ""
+
+#: feedback-errormessage-timeout
+msgid ""
+"Sorry, the system can't send your suggestion because of a timeout. Please "
+"restart and try again."
+msgstr ""
+
+#: feedback-errormessage-wrong-email
+msgid ""
+"Sorry, the system can't send your suggestion because the email address is "
+"missing or due to a formatting error. Please use a valid email address and "
+"try again."
+msgstr ""
+
+#: feedback-errormessage-empty-comment
+msgid ""
+"Sorry, the system can't send your suggestion because the comment field is "
+"empty. Please enter some text and try again."
+msgstr ""
+
+#: feedback-errormessage-just-sent
+msgid ""
+"Sorry, the system can't send your suggestion because you already sent us "
+"feedback. Please try our next software update and send again."
+msgstr ""
+
+#: feedback-done-msg
+msgid ""
+"Thanks for the feedback! We will use it to help us create a better "
+"experience in future release of Firefox OS."
+msgstr ""
+
 #. # Device :: Help
 #: online-support
 msgid "Online support:"
@@ -2467,10 +2960,6 @@ msgstr "Çevrimiçi destek:"
 #: call-support
 msgid "Call support:"
 msgstr "Çağrı merkezi:"
-
-#: call-support-numbers
-msgid "{{link1}} or {{link2}}"
-msgstr "{{link1}} veya {{link2}}"
 
 #: user-guide
 msgid "User guide"
@@ -2578,6 +3067,90 @@ msgstr "Veri gönder"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Kanal durumunu al"
+
+#~ msgid "Cell broadcast service"
+#~ msgstr "Hücresel yayın hizmeti"
+
+#~ msgid "Vibration"
+#~ msgstr "Titreşim"
+
+#~ msgid "Click sound"
+#~ msgstr "Tıklama sesi"
+
+#~ msgid "Auto correction"
+#~ msgstr "Otomatik düzeltme"
+
+#~ msgid "Word suggestion"
+#~ msgstr "Kelime önerisi"
+
+#~ msgid "English"
+#~ msgstr "İngilizce"
+
+#~ msgid "English (Dvorak)"
+#~ msgstr "İngilizce (Dvorak)"
+
+#~ msgid "Spanish"
+#~ msgstr "İspanyolca"
+
+#~ msgid "Portuguese Brazilian"
+#~ msgstr "Brezilya Portekizcesi"
+
+#~ msgid "Other Latin scripts"
+#~ msgstr "Diğer Latin alfabeleri"
+
+#~ msgid "French, German, Norwegian (Bokmål), Slovak, Turkish"
+#~ msgstr "Fransızca, Almanca, Norveççe (Bokmål), Slovakça, Türkçe"
+
+#~ msgid "Cyrillic scripts"
+#~ msgstr "Kiril alfabesi"
+
+#~ msgid "Russian, Serbian (cyrillic)"
+#~ msgstr "Rusça, Sırpça (kiril)"
+
+#~ msgid "Arabic"
+#~ msgstr "Arapça"
+
+#~ msgid "Greek"
+#~ msgstr "Yunanca"
+
+#~ msgid "Hebrew"
+#~ msgstr "İbranice"
+
+#~ msgid "Japanese"
+#~ msgstr "Japonca"
+
+#~ msgid "Kanji"
+#~ msgstr "Kanji"
+
+#~ msgid "Traditional Chinese"
+#~ msgstr "Geleneksel Çince"
+
+#~ msgid "Zhuyin"
+#~ msgstr "Zhuyin"
+
+#~ msgid "Simplified Chinese"
+#~ msgstr "Basitleştirilmiş Çince"
+
+#~ msgid "Pinyin"
+#~ msgstr "Pinyin"
+
+#~ msgid "Polish"
+#~ msgstr "Lehçe"
+
+#~ msgid "Serbian"
+#~ msgstr "Sırpça"
+
+#~ msgid "Phone lock"
+#~ msgstr "Telefon kilidi"
+
+#~ msgid "The PIN was incorrect."
+#~ msgstr "PIN yanlış."
+
+#~ msgid "Enable USB storage"
+#~ msgstr "USB depolama"
+
+#~ msgid "{{link1}} or {{link2}}"
+#~ msgstr "{{link1}} veya {{link2}}"
 
 #~ msgid "Wi-Fi protected setup"
 #~ msgstr "Wi-Fi korumalı kurulum"

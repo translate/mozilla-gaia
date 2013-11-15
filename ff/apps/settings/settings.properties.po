@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-22 13:57+0100\n"
+"POT-Creation-Date: 2013-11-15 22:32+0100\n"
 "PO-Revision-Date: 2013-08-22 13:02+0000\n"
 "Last-Translator: Ibrahima <ibrahima.sarr@pulaagu.com>\n"
 "Language-Team: FULA LOCALIZATION\n"
@@ -12,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -265,6 +265,10 @@ msgctxt "authentication"
 msgid "Authentication"
 msgstr "Goongɗitingol"
 
+#: eap
+msgid "EAP method"
+msgstr ""
+
 #: identity
 msgid "Identifier"
 msgstr "Innitirde"
@@ -354,8 +358,18 @@ msgid "PIN is 4 or 8 digits"
 msgstr "PIN ko limooje 4 walla 8"
 
 #: wpsPinInput
-msgid "Input {{pin}} to opposite device"
+#, fuzzy
+msgid "Input {{pin}} to an opposite device"
 msgstr "Naatnu {{pin}} to kaɓirgol ngola"
+
+#: wpsPinAps
+msgid "Select an opposite device"
+msgstr ""
+
+#: wpsAnyAp
+msgctxt "wpsAnyAp"
+msgid "Any"
+msgstr ""
 
 #: wpsCancelMessage
 msgid "Cancel WPS"
@@ -370,6 +384,14 @@ msgstr "Horiima haaytinde e WPS"
 msgid "Call Settings"
 msgstr "Teelte Noddugol"
 
+#: callSettingsQuery
+msgid "Requesting network info…"
+msgstr "Nana ɗaɓɓita humpito resoo…"
+
+#: callSettingsQueryError
+msgid "Error in query"
+msgstr "Juumre e ɗaɓɓitande"
+
 #: voiceMail
 msgid "Voicemail"
 msgstr ""
@@ -382,9 +404,25 @@ msgstr ""
 msgid "Not set"
 msgstr ""
 
+#: voicePrivacyMode
+msgid "Voice privacy mode"
+msgstr ""
+
 #: callWaiting
 msgid "Call waiting"
 msgstr "Noddaango nana fada"
+
+#: confirmCallWaitingTitle
+msgid "Unable to confirm call waiting preferences"
+msgstr "Horiima teeŋtinde cuɓoraaɗe padgol noddaali"
+
+#: confirmCallWaitingDesc
+msgid ""
+"The device is currently unable to communicate with the carrier. Try setting "
+"the preference again."
+msgstr ""
+"Ngol kaɓirgol heɓotaako oo sahaa ngam jokkondirde e operatoor oo. Eto "
+"teeltaade cuɓoraaɗe ɗee kadi."
 
 #: callForwarding
 msgid "Call forwarding"
@@ -426,14 +464,6 @@ msgstr "Ɓennin so heɓotaako"
 msgid "When unreachable"
 msgstr "So heɓotaako"
 
-#: callForwardingRequesting
-msgid "Requesting network info…"
-msgstr "Nana ɗaɓɓita humpito resoo…"
-
-#: callForwardingQueryError
-msgid "Error in query"
-msgstr "Juumre e ɗaɓɓitande"
-
 #: callForwardingForwardingVoiceTo
 msgid "Voice calls to"
 msgstr "Noddaali daande to"
@@ -446,22 +476,6 @@ msgstr "Daaƴaaɗo"
 #: callForwardingConfirmTitle
 msgid "Call forwarding confirmation message"
 msgstr "Ɓatakuure teeŋtingol ɓenningol noddaali"
-
-#: callBroadcastService
-msgid "Cell broadcast service"
-msgstr ""
-
-#: confirmCallWaitingTitle
-msgid "Unable to confirm call waiting preferences"
-msgstr "Horiima teeŋtinde cuɓoraaɗe padgol noddaali"
-
-#: confirmCallWaitingDesc
-msgid ""
-"The device is currently unable to communicate with the carrier. Try setting "
-"the preference again."
-msgstr ""
-"Ngol kaɓirgol heɓotaako oo sahaa ngam jokkondirde e operatoor oo. Eto "
-"teeltaade cuɓoraaɗe ɗee kadi."
 
 #: cf-alwaysUseThisNumber
 msgid "Always use this number"
@@ -494,6 +508,229 @@ msgstr "Operatoor maa tambitaaki ngaal gollal."
 #: callForwardingSetError
 msgid "Call settings error."
 msgstr "Juumre teeltagol noddaali."
+
+#: callerId
+msgid "Caller ID"
+msgstr ""
+
+#: callerId-default
+msgid "Network default"
+msgstr ""
+
+#: callerId-hide
+msgid "Hide number"
+msgstr ""
+
+#: callerId-show
+#, fuzzy
+msgid "Show number"
+msgstr "Tonngooɗe noddirde"
+
+#: fdn
+msgctxt "fdn"
+msgid "Fixed dialing numbers"
+msgstr ""
+
+#: fdnSettings
+msgctxt "fdnSettings"
+msgid "Fixed dialing numbers"
+msgstr ""
+
+#: fdn-authorizedNumbers
+msgid "Authorized numbers"
+msgstr ""
+
+#: fdn-authorizedNumbers-desc
+msgid "List of numbers that can be called"
+msgstr ""
+
+#: fdn-explanation1
+msgid "Restrict which numbers can be dialed from this phone."
+msgstr ""
+
+#: fdn-explanation2
+msgid "(Emergency numbers will always be dialable)"
+msgstr ""
+
+#: fdnEnable
+msgid "Enable FDN"
+msgstr ""
+
+#: fdnDisable
+msgid "Disable FDN"
+msgstr ""
+
+#: fdnReset
+msgid "Reset PIN2"
+msgstr ""
+
+#: fdnAttemptMsg3
+#, fuzzy
+msgctxt "fdnAttemptMsg3"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: fdnAttemptMsg3[one]
+#, fuzzy
+msgctxt "fdnAttemptMsg3[one]"
+msgid ""
+"You have one try left to enter the correct code before locking the SIM card."
+msgstr ""
+"Aɗa heddoraa etaannde wootere naatnude kod moƴƴo hade kartal SIM ngal "
+"daaƴeede."
+
+#: fdnAttemptMsg3[two]
+#, fuzzy
+msgctxt "fdnAttemptMsg3[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+"Aɗa heddoraa etaali {{n}} gootol naatnude kod moƴƴo hade kartal SIM ngal "
+"daaƴeede."
+
+#: fdnAttemptMsg3[few]
+#, fuzzy
+msgctxt "fdnAttemptMsg3[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+"Aɗa heddoraa etaali {{n}} gootol naatnude kod moƴƴo hade kartal SIM ngal "
+"daaƴeede."
+
+#: fdnAttemptMsg3[many]
+#, fuzzy
+msgctxt "fdnAttemptMsg3[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+"Aɗa heddoraa etaali {{n}} gootol naatnude kod moƴƴo hade kartal SIM ngal "
+"daaƴeede."
+
+#: fdnAttemptMsg3[other]
+#, fuzzy
+msgctxt "fdnAttemptMsg3[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+"Aɗa heddoraa etaali {{n}} gootol naatnude kod moƴƴo hade kartal SIM ngal "
+"daaƴeede."
+
+#: fdnLastChanceMsg
+#, fuzzy
+msgid ""
+"This is your last chance to enter the correct PIN2. Otherwise, you must "
+"enter the PUK2 code to use this SIM card."
+msgstr ""
+"Ngol ko fartaŋŋe maa battindiiɗo naatnude kod PIN moƴƴo. So ɗuum alaa maa "
+"naatnaa kod PUK oo ngam huutoraade ngal kartal SIM."
+
+#: fdnErrorMsg
+#, fuzzy
+msgid "The PIN2 code is incorrect."
+msgstr "Kod PUK oo moƴƴaani."
+
+#: fdn-enabled-warning
+msgid "Call forwarding is disabled by FDN."
+msgstr ""
+
+#: fdnContact-name
+#, fuzzy
+msgid "name"
+msgstr "Innde"
+
+#: fdnContact-number
+msgctxt "fdnContact-number"
+msgid "number"
+msgstr ""
+
+#: fdnContact-submit
+msgid "submit"
+msgstr ""
+
+#: fdnAction-add
+msgid "Add contact"
+msgstr ""
+
+#: fdnAction-call
+msgid "Call"
+msgstr "Noddu"
+
+#: fdnAction-edit
+msgid "Edit contact"
+msgstr ""
+
+#: fdnAction-delete
+msgid "Delete contact"
+msgstr ""
+
+#. # Connectivity :: Messaging
+#: messagingSettings
+#, fuzzy
+msgid "Messaging Settings"
+msgstr "Teelte ɓatakuuje"
+
+#: message-confirmation
+#, fuzzy
+msgid "Message confirmation"
+msgstr "Teeŋtingol ɓatakuure binndol"
+
+#: message-delivery-reports
+msgid "Delivery reports"
+msgstr "Jante jonnoygol"
+
+#: message-delivery-reports-details
+#, fuzzy
+msgid "Request notification of delivery for each message sent"
+msgstr "Ɗaɓɓit tintineede joonnoygol kala nde ɓatakuuru binndol neldaa"
+
+#: mmsTitle
+msgid "Multimedia messaging (MMS)"
+msgstr "Ɓatakingol Multimediaa (MMS)"
+
+#: auto-retrieve
+msgid "Auto retrieve"
+msgstr "Aafto e jaajol"
+
+#: auto-retrieve-details
+#, fuzzy
+msgid "Automatically retrieve messages"
+msgstr "Aafto ɓatakuuje e jaajol"
+
+#: manual-retrieve
+msgid "Off"
+msgstr "Koko ñifi"
+
+#: auto-roaming-retrieve
+msgid "On with roaming"
+msgstr "Koko huɓɓi e doomagal"
+
+#: auto-no-roaming-retrieve
+msgid "On without roaming"
+msgstr "Koko huɓɓi alaa doomagal"
+
+#: autoConfigure
+msgid "Auto-configure"
+msgstr "Teelto-jaajol"
+
+#: wapPushMessages
+msgid "WAP Push messages"
+msgstr ""
+
+#: wapPush
+msgid "WAP Push"
+msgstr ""
+
+#: cellBroadcastMessages
+msgid "Cell broadcast messages"
+msgstr ""
+
+#: cellBroadcast
+msgid "Cell broadcast"
+msgstr ""
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
@@ -538,6 +775,10 @@ msgctxt "operator-networkType-auto"
 msgid "Automatic"
 msgstr "E jaajol"
 
+#: operator-networkType-prefer2G
+msgid "2G preferred"
+msgstr ""
+
 #: operator-networkType-2G
 msgid "2G only"
 msgstr "2G tan"
@@ -545,6 +786,35 @@ msgstr "2G tan"
 #: operator-networkType-3G
 msgid "3G only"
 msgstr "3G tan"
+
+#. # DUALSTACK
+#: operator-networkType-GSM
+msgid "GSM"
+msgstr ""
+
+#: operator-networkType-WCDMA
+msgid "WCDMA"
+msgstr ""
+
+#: operator-networkType-CDMA
+msgid "CDMA"
+msgstr ""
+
+#: operator-networkType-EVDO
+msgid "EVDO"
+msgstr ""
+
+#: operator-networkType-preferGSM
+msgid "GSM preferred"
+msgstr ""
+
+#: operator-networkType-preferWCDMA
+msgid "WCDMA preferred"
+msgstr ""
+
+#: operator-networkType-preferEVDO
+msgid "EVDO preferred"
+msgstr ""
 
 #: operator-autoSelect
 msgid "Automatic selection"
@@ -555,6 +825,10 @@ msgstr "Labagol jaajol"
 msgctxt "operator-networkSelect-auto"
 msgid "Automatic"
 msgstr "E jaajol"
+
+#: operator-networkSelect-manual
+msgid "Manual"
+msgstr ""
 
 #: operator-turnAutoSelectOff
 msgid "Turn automatic selection off to view available network operators."
@@ -574,6 +848,23 @@ msgstr "Ceŋagol woorii"
 msgctxt "operator-status-connected"
 msgid "Connected"
 msgstr "Seŋiima"
+
+#: operator-roamingPreference
+msgid "Roaming preference"
+msgstr ""
+
+#: operator-roamingPreference-home
+msgid "Home"
+msgstr ""
+
+#: operator-roamingPreference-any
+msgctxt "operator-roamingPreference-any"
+msgid "Any"
+msgstr ""
+
+#: operator-roamingPreference-affiliated
+msgid "Affiliated"
+msgstr ""
 
 #: apn
 msgid "APN"
@@ -595,14 +886,6 @@ msgstr "Teelte ɓatakuuje"
 msgid "APN settings"
 msgstr "Teelte APN"
 
-#: text-message-confirmation
-msgid "Text message confirmation"
-msgstr "Teeŋtingol ɓatakuure binndol"
-
-#: mmsTitle
-msgid "Multimedia messaging (MMS)"
-msgstr "Ɓatakingol Multimediaa (MMS)"
-
 #: mmsport
 msgid "MMS port"
 msgstr "Poor MMS"
@@ -614,40 +897,6 @@ msgstr "Proxy MMS"
 #: mmsc
 msgid "MMSC"
 msgstr "MMSC"
-
-#: auto-retrieve
-msgid "Auto retrieve"
-msgstr "Aafto e jaajol"
-
-#: auto-retrieve-details
-#, fuzzy
-msgid "Automatically retrieve messages"
-msgstr "Aafto ɓatakuuje e jaajol"
-
-#: manual-retrieve
-msgid "Off"
-msgstr "Koko ñifi"
-
-#: auto-roaming-retrieve
-msgid "On with roaming"
-msgstr "Koko huɓɓi e doomagal"
-
-#: auto-no-roaming-retrieve
-msgid "On without roaming"
-msgstr "Koko huɓɓi alaa doomagal"
-
-#: delivery-reports
-msgid "Delivery reports"
-msgstr "Jante jonnoygol"
-
-#: delivery-reports-details
-#, fuzzy
-msgid "Request notification of delivery for each text message sent"
-msgstr "Ɗaɓɓit tintineede joonnoygol kala nde ɓatakuuru binndol neldaa"
-
-#: autoConfigure
-msgid "Auto-configure"
-msgstr "Teelto-jaajol"
 
 #: httpProxyHost
 msgid "HTTP proxy host"
@@ -756,6 +1005,10 @@ msgstr "Kaɓirɗi ɓadiiɗi Nokku oo"
 msgid "Visible to all"
 msgstr "Yimɓe fof en njiya"
 
+#: bluetooth-name-maxlength-alert
+msgid "Your device name exceeds {{length}} characters. Please retry again."
+msgstr ""
+
 #: bt-status-nopaired
 msgid "No devices paired"
 msgstr "Alaa kaɓirɗi ceŋondiraa"
@@ -824,9 +1077,33 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "Seŋiima"
 
+#: device-status-connected-phone
+msgid "Connected to phone audio"
+msgstr ""
+
+#: device-status-connected-media
+msgid "Connected to media audio"
+msgstr ""
+
+#: device-status-connected-phone-media
+msgid "Connected to phone/media audio"
+msgstr ""
+
 #: device-option-unpair
 msgid "Unpair"
 msgstr "Seŋtondir"
+
+#: device-option-confirm
+msgid "Confirm"
+msgstr ""
+
+#: device-option-unpair-confirmation
+msgid "Confirmation"
+msgstr ""
+
+#: device-option-unpair-device
+msgid "Unpair Device?"
+msgstr ""
 
 #: device-option-connect
 msgid "Connect"
@@ -855,6 +1132,10 @@ msgstr "Kaɓirgol anndaaka"
 #: change-phone-name
 msgid "Change phone name"
 msgstr "Waylu innde cinndel"
+
+#: change-phone-name-desc
+msgid "Change the name of your device as it appears in your computer"
+msgstr ""
 
 #: bluetooth-new-name
 msgid "New name"
@@ -943,7 +1224,15 @@ msgid ""
 msgstr ""
 "Jooni ko a ceŋiiɗo e ngol kaɓirgol. So a seŋtondirii maa seŋto kisa e maggol."
 
+#: pair-view-title
+msgid "Bluetooth Request From"
+msgstr ""
+
 #. # Connectivity :: Internet Sharing
+#: SSIDCannotBeEmpty
+msgid "The SSID cannot be empty"
+msgstr ""
+
 #: internetSharing
 msgid "Internet sharing"
 msgstr "Peccugol Enternet"
@@ -1039,6 +1328,18 @@ msgstr "Daande"
 msgid "Tones"
 msgstr "Baaruuji"
 
+#: touch-tones
+msgid "Audible touch tones"
+msgstr ""
+
+#: touch-tone-short
+msgid "Short"
+msgstr ""
+
+#: touch-tone-long
+msgid "Long"
+msgstr ""
+
 #: select-tone
 msgid "Select a tone"
 msgstr "Labo baar"
@@ -1075,6 +1376,14 @@ msgstr "Daaƴtu yaynirde"
 msgid "Camera shutter"
 msgstr "Udditorde kameraa"
 
+#: camera-recordingsound
+msgid "Video recording"
+msgstr ""
+
+#: sent-mail
+msgid "Sent Mail"
+msgstr ""
+
 #: sent-message
 msgid "Sent Message"
 msgstr "Neldu Ɓatakuuru"
@@ -1091,6 +1400,16 @@ msgstr "Holɓorde e Tintine"
 msgid "Voice"
 msgstr "Daande"
 
+#: savingringtone
+msgid "Saving ringtone…"
+msgstr ""
+
+#: unplayable-ringtone
+msgid ""
+"The ringtone was not changed because the selected file can not be played on "
+"this phone."
+msgstr ""
+
 #. # Personalization :: Display
 #: display
 msgid "Display"
@@ -1105,7 +1424,8 @@ msgid "Adjust automatically"
 msgstr "Fonndit e jaajol"
 
 #: lockScreen
-msgid "Lock Screen"
+#, fuzzy
+msgid "Lock screen"
 msgstr "Yaynirde Daaƴirde"
 
 #: wallpaper
@@ -1135,6 +1455,10 @@ msgstr "hoƴomaaji 10"
 #: never
 msgid "never"
 msgstr "hay sahaa"
+
+#: lock-orientation
+msgid "Lock orientation"
+msgstr ""
 
 #. # Personalization :: Notifications
 #: notifications
@@ -1200,109 +1524,78 @@ msgstr "Jubbannde Mbaydi"
 msgid "%A, %B %d, %Y"
 msgstr "%A, %B %d, %Y"
 
+#. # Personalization :: Homescreen
+#: homescreen
+msgid "Homescreen"
+msgstr ""
+
+#: changeHomescreen
+msgid "Change homescreen"
+msgstr ""
+
+#: changeHomescreenButton
+#, fuzzy
+msgctxt "changeHomescreenButton"
+msgid "Change"
+msgstr "Waylu"
+
+#: description
+msgid "Description"
+msgstr ""
+
 #. # Personalization :: Keyboard
-#: keyboard
-msgid "Keyboard"
+#: installedInputMethods
+msgid "Installed input methods"
+msgstr ""
+
+#: keyboards
+#, fuzzy
+msgid "Keyboards"
 msgstr "Tappirde"
 
 #: keyboardLayouts
 msgid "Keyboard layouts"
 msgstr "Lelngooji tappirde"
 
+#: numberKeyboardLayouts
+msgid "Number layouts"
+msgstr ""
+
+#: optionKeyboardLayouts
+msgid "Option layouts"
+msgstr ""
+
 #: keypad
 msgid "Keypad"
 msgstr "Tappirde limooje"
 
-#: vibration
-msgid "Vibration"
-msgstr "Yerɓannde"
-
-#: clickSound
-msgid "Click sound"
-msgstr "Dillere dobagol"
-
-#: autoCorrect
-msgid "Auto correction"
+#: selectedKeyboards
+msgid "Selected keyboards"
 msgstr ""
 
-#: wordSuggestion
-msgid "Word suggestion"
-msgstr "Basiyagol kelme"
+#: addMoreKeyboards
+msgid "Add more keyboards"
+msgstr ""
 
-#: english
-msgid "English"
-msgstr "Pulaar-Fulfulde"
+#: mustHaveOneKeyboard
+msgid "At least one {{type}} keyboard should be selected"
+msgstr ""
 
-#: dvorak
-msgid "English (Dvorak)"
-msgstr "Pulaar-Fulfulde (Dvorak)"
+#: keyboardType-text
+msgid "text"
+msgstr ""
 
-#: spanish
-msgid "Spanish"
-msgstr "Español"
+#: keyboardType-url
+msgid "url"
+msgstr ""
 
-#: portuguese
-msgid "Portuguese Brazilian"
-msgstr "Purtugeere Beresiil"
+#: keyboardType-number
+msgctxt "keyboardType-number"
+msgid "number"
+msgstr ""
 
-#: latin
-msgid "Other Latin scripts"
-msgstr "Binndi Lateŋ goɗɗi"
-
-#: latin-desc
-msgid "French, German, Norwegian (Bokmål), Slovak, Turkish"
-msgstr "Farayseere, Doccere, Norwejiire (Bokmål), Slowak, Turkiire"
-
-#: cyrillic
-msgid "Cyrillic scripts"
-msgstr "Binndi Kirilic"
-
-#: cyrillic-desc
-msgid "Russian, Serbian (cyrillic)"
-msgstr "Ruusiire, Serbiire (kirilic)"
-
-#: arabic
-msgid "Arabic"
-msgstr "Aarabeere"
-
-#: greek
-msgid "Greek"
-msgstr "Gerek"
-
-#: hebrew
-msgid "Hebrew"
-msgstr "Eburu"
-
-#: jp-kanji
-msgid "Japanese"
-msgstr "Japanese"
-
-#: jp-kanji-desc
-msgid "Kanji"
-msgstr "Kannji"
-
-#: traditionalChinese
-msgid "Traditional Chinese"
-msgstr "Sinuwaare Ganni"
-
-#: traditionalChinese-desc
-msgid "Zhuyin"
-msgstr "Zhuyin"
-
-#: simplifiedChinese
-msgid "Simplified Chinese"
-msgstr "Sinuwaare weeɓtunde"
-
-#: simplifiedChinese-desc
-msgid "Pinyin"
-msgstr "Pinyin"
-
-#: polish
-msgid "Polish"
-msgstr "Poloneere"
-
-#: serbian
-msgid "Serbian"
+#: defaultKeyboardEnabled
+msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -1336,8 +1629,8 @@ msgid "Passcode: {{code}}"
 msgstr "Finnde: {{code}}"
 
 #: phoneLock
-msgid "Phone lock"
-msgstr "Daaƴgol cinndel"
+msgid "Screen lock"
+msgstr ""
 
 #: simSecurity
 msgid "SIM security"
@@ -1347,6 +1640,10 @@ msgstr "Kisal SIM"
 #: appPermissions
 msgid "App permissions"
 msgstr "Jamirooje jaaɓngal"
+
+#: author
+msgid "Author"
+msgstr ""
 
 #: permissions
 msgid "Permissions"
@@ -1415,6 +1712,8 @@ msgid "Ring"
 msgstr "Holɓin"
 
 #: change
+#, fuzzy
+msgctxt "change"
 msgid "Change"
 msgstr "Waylu"
 
@@ -1422,9 +1721,13 @@ msgstr "Waylu"
 msgid "Create"
 msgstr "Sos"
 
-#: create-passcode
+#: create-a-passcode
 msgid "Create a Passcode"
 msgstr "Sos Finnde"
+
+#: passcode-heading
+msgid "Passcode"
+msgstr "Finnde"
 
 #: enter-passcode
 msgid "Enter passcode"
@@ -1446,12 +1749,9 @@ msgstr "Finnde moƴƴaani"
 msgid "Passcode doesn’t match. Try again."
 msgstr "Finnde nanndaani. Fuɗɗito."
 
-#: passcode
-msgid "Passcode"
-msgstr "Finnde"
-
 #: confirm-passcode
-msgid "Confirm Passcode"
+#, fuzzy
+msgid "Confirm passcode"
 msgstr "Teeŋtin Finnde"
 
 #: immediately
@@ -1503,11 +1803,13 @@ msgid "After 4 hours"
 msgstr "Caggal waktuuji 4"
 
 #: require-passcode
-msgid "Require Passcode"
+#, fuzzy
+msgid "Require passcode"
 msgstr "Finnde ena Waɗɗii"
 
 #: change-passcode
-msgid "Change Passcode"
+#, fuzzy
+msgid "Change passcode"
 msgstr "Waylu Finnde"
 
 #. # Security :: SIM PIN Lock
@@ -1519,8 +1821,18 @@ msgstr "Alaa kartal SIM"
 msgid "SIM PIN"
 msgstr "Kod PIN kartal SIM"
 
+#: simPin2
+#, fuzzy
+msgid "SIM PIN2"
+msgstr "Kod PIN kartal SIM"
+
 #: pukCode
 msgid "PUK code"
+msgstr "Kod PUK"
+
+#: puk2Code
+#, fuzzy
+msgid "PUK2 code"
 msgstr "Kod PUK"
 
 #: whatIsSimPin
@@ -1551,17 +1863,23 @@ msgstr "Waylu kod PIN"
 msgid "Enter SIM PIN"
 msgstr "Naatnu kod PIN kartal SIM"
 
+#: pin2Title
+#, fuzzy
+msgid "Enter SIM PIN2"
+msgstr "Naatnu kod PIN kartal SIM"
+
 #: pukTitle
 msgid "Enter PUK code"
+msgstr "Naatnu kod PUK"
+
+#: puk2Title
+#, fuzzy
+msgid "Enter PUK2 code"
 msgstr "Naatnu kod PUK"
 
 #: newpinTitle
 msgid "New PIN"
 msgstr "Kod PIN keso"
-
-#: pinErrorMsg
-msgid "The PIN was incorrect."
-msgstr "Kod PIN oo moƴƴaani."
 
 #: inputCodeRetriesLeft
 msgctxt "inputCodeRetriesLeft"
@@ -1598,6 +1916,8 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: pinAttemptMsg3[one]
+#, fuzzy
+msgctxt "pinAttemptMsg3[one]"
 msgid ""
 "You have one try left to enter the correct code before locking the SIM card."
 msgstr ""
@@ -1656,6 +1976,17 @@ msgstr "Kartal SIM ngal daaƴaama."
 msgid ""
 "You must enter the Personal Unlocking Key (PUK) code for the SIM card. Refer "
 "to your SIM card documentation or contact your carrier for more information."
+msgstr ""
+"Alaa e sago naatnaa Kod Daaƴtirɗo Keeriiɗo kartal SIM ngal (PUK). Rutto e "
+"kaayitaaji garduɗi e kartal maa SIM walla jokkondir e carwinoowo maa ngam "
+"ɓeydude humpito."
+
+#: enterPuk2Msg
+#, fuzzy
+msgid ""
+"You must enter the Personal Unlocking Key (PUK2) code for the SIM card. "
+"Refer to your SIM card documentation or contact your carrier for more "
+"information."
 msgstr ""
 "Alaa e sago naatnaa Kod Daaƴtirɗo Keeriiɗo kartal SIM ngal (PUK). Rutto e "
 "kaayitaaji garduɗi e kartal maa SIM walla jokkondir e carwinoowo maa ngam "
@@ -1738,8 +2069,18 @@ msgstr ""
 msgid "Create PIN (must contain 4 to 8 digits)"
 msgstr "Sos kod PIN (ena foti waɗde limooje 4 walla 8)"
 
+#: newSimPin2Msg
+#, fuzzy
+msgid "Create PIN2 (must contain 4 to 8 digits)"
+msgstr "Sos kod PIN (ena foti waɗde limooje 4 walla 8)"
+
 #: confirmNewSimPinMsg
 msgid "Confirm new PIN"
+msgstr "Teeŋtin PIN keso"
+
+#: confirmNewSimPin2Msg
+#, fuzzy
+msgid "Confirm new PIN2"
 msgstr "Teeŋtin PIN keso"
 
 #: newPinErrorMsg
@@ -1758,10 +2099,26 @@ msgstr "Ngonka kartal SIM anndaaka"
 msgid "SIM card not ready"
 msgstr "Kartal SIM habaaki"
 
+#: simCardIllegal
+msgid "Unauthorized SIM card"
+msgstr ""
+
 #. # Security :: Do Not Track
 #: doNotTrack
 msgid "Do Not Track"
 msgstr "Hoto Rewindo"
+
+#: doNotTrackActions
+msgid "Tell websites and apps that I do not want to be tracked"
+msgstr ""
+
+#: allowTracking
+msgid "Tell websites and apps that I want to be tracked"
+msgstr ""
+
+#: doNotHavePrefOnTracking
+msgid "Do not tell websites and apps anything about my tracking preferences"
+msgstr ""
 
 #: doNotTrack-dt
 msgid "How does Do Not Track work?"
@@ -1794,9 +2151,9 @@ msgstr ""
 msgid "Storage"
 msgstr "Ndesgu"
 
-#: enableUSBStorage
-msgid "Enable USB storage"
-msgstr "Hurmin ndesgu USB"
+#: enableUSBStorage1
+msgid "USB storage"
+msgstr ""
 
 #. # Storage :: Application storage
 #: deviceStorage
@@ -1885,10 +2242,11 @@ msgstr "Ko huutoraa"
 msgid "Left"
 msgstr "Ena heddii"
 
-#: media-storage-details
+#: storage-details
+#, fuzzy
 msgid ""
-"Photos, videos and music are stored on the SD card. See media storage for "
-"details."
+"Photos, videos and music are stored separately from apps. See media storage "
+"for details."
 msgstr ""
 "Nate, widewooji, e gaaci mooftaa ko e kartal SD ngal. Ƴeew ndesgu mejaaje "
 "ngam ɓeydude humpito."
@@ -1986,8 +2344,9 @@ msgid "Choose where photos, videos, music and downloads are stored by default."
 msgstr "Suɓo ɗo nate, widewooji, gaaci e gaawte ngoowata moofteede."
 
 #: change-default-location-confirm
+#, fuzzy
 msgid ""
-"Changing the default media storage volume will effect where photos, videos, "
+"Changing the default media storage volume will affect where photos, videos, "
 "downloads and other media will be saved to by default. Existing data will "
 "remain in its current location."
 msgstr ""
@@ -2028,6 +2387,10 @@ msgstr "ICCID"
 msgid "Phone number"
 msgstr "Tonngooɗe noddirde"
 
+#: unknown-phoneNumber
+msgid "Unknown"
+msgstr ""
+
 #: gitInfo
 msgid "Git commit info"
 msgstr "Humpito naatnugol Git"
@@ -2056,9 +2419,17 @@ msgstr "Tagar"
 msgid "Show frames per second"
 msgstr "Hollu kaareje e hojom"
 
+#: layers-draw-borders
+msgid "Draw layers borders"
+msgstr ""
+
 #: paint-flashing
 msgid "Flash repainted area"
 msgstr "Nokku mo Flash goobtii"
+
+#: apz-force-enable
+msgid "Enable APZ for all content processes"
+msgstr ""
 
 #: log-animations
 msgid "Log slow animations"
@@ -2071,6 +2442,14 @@ msgstr "Buggitagol goɗɗungol"
 #: wifi-debugging
 msgid "Wi-Fi output in adb"
 msgstr "Jaltal Wifi e adb"
+
+#: bluetooth-debugging
+msgid "Bluetooth output in adb"
+msgstr ""
+
+#: contacts-debugging
+msgid "Contacts debugging output in adb"
+msgstr ""
 
 #: ttl-monitor
 msgid "Show time to load"
@@ -2325,6 +2704,22 @@ msgstr "Fuɗɗo kuutorgol gadanol"
 msgid "No first time use app found"
 msgstr "Alaa jaaɓngal kuutorgol gadanol yiytaa"
 
+#: software-button-enabled
+msgid "Enable software home button"
+msgstr ""
+
+#: homegesture-enabled
+msgid "Home gesture enabled"
+msgstr ""
+
+#: edgesgesture-enabled
+msgid "Edges gesture enabled"
+msgstr ""
+
+#: debug-gaia-enabled
+msgid "Gaia debug traces"
+msgstr ""
+
 #. # Device :: Battery
 #: battery
 msgid "Battery"
@@ -2464,6 +2859,104 @@ msgstr "dawirgol suturo amen"
 msgid "."
 msgstr "."
 
+#. # Device :: Improve Browser OS :: Submit Your Feedback
+#: sendFeedbackTitle
+msgid "Submit Your Feedback"
+msgstr ""
+
+#: feedback-description
+msgid "Your feedback will help us to improve Firefox OS."
+msgstr ""
+
+#: feedback-happy
+msgid "Happy"
+msgstr ""
+
+#: feedback-sad
+msgid "Sad"
+msgstr ""
+
+#: feedback-mood-description
+msgid "How do you feel?"
+msgstr ""
+
+#: feedback_whyfeel_happy
+msgid "Why do you feel happy?"
+msgstr ""
+
+#: feedback_whyfeel_sad
+msgid "Why do you feel sad?"
+msgstr ""
+
+#: feedback-mood-explain
+msgid "Please tell us in detail."
+msgstr ""
+
+#: feedback-public-description
+msgid ""
+"The content of your feedback will be public, so please be sure not include "
+"any personal information."
+msgstr ""
+
+#: feedback-contactyou
+msgid "Check here to let us contact you from your email."
+msgstr ""
+
+#: email-address1
+msgid "Email address:"
+msgstr ""
+
+#: email-keepprivate
+msgid "Don't worry. Your email will always be kept private."
+msgstr ""
+
+#: feedback-sendbtn
+msgid "Send Feedback"
+msgstr ""
+
+#: feedback-errormessage-connect-error
+msgid ""
+"Sorry, the system can't send your suggestion due to a data connection error. "
+"Please try again when the issue is resolved."
+msgstr ""
+
+#: feedback-errormessage-server-off
+msgid ""
+"Sorry, the system can't send your suggestion because the server shut down. "
+"Please wait a moment and try again."
+msgstr ""
+
+#: feedback-errormessage-timeout
+msgid ""
+"Sorry, the system can't send your suggestion because of a timeout. Please "
+"restart and try again."
+msgstr ""
+
+#: feedback-errormessage-wrong-email
+msgid ""
+"Sorry, the system can't send your suggestion because the email address is "
+"missing or due to a formatting error. Please use a valid email address and "
+"try again."
+msgstr ""
+
+#: feedback-errormessage-empty-comment
+msgid ""
+"Sorry, the system can't send your suggestion because the comment field is "
+"empty. Please enter some text and try again."
+msgstr ""
+
+#: feedback-errormessage-just-sent
+msgid ""
+"Sorry, the system can't send your suggestion because you already sent us "
+"feedback. Please try our next software update and send again."
+msgstr ""
+
+#: feedback-done-msg
+msgid ""
+"Thanks for the feedback! We will use it to help us create a better "
+"experience in future release of Firefox OS."
+msgstr ""
+
 #. # Device :: Help
 #: online-support
 msgid "Online support:"
@@ -2472,10 +2965,6 @@ msgstr "Wallitorde e enternet:"
 #: call-support
 msgid "Call support:"
 msgstr "Noddu wallitorde:"
-
-#: call-support-numbers
-msgid "{{link1}} or {{link2}}"
-msgstr "{{link1}} or {{link2}}"
 
 #: user-guide
 msgid "User guide"
@@ -2583,6 +3072,81 @@ msgstr ""
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr ""
+
+#~ msgid "Vibration"
+#~ msgstr "Yerɓannde"
+
+#~ msgid "Click sound"
+#~ msgstr "Dillere dobagol"
+
+#~ msgid "Word suggestion"
+#~ msgstr "Basiyagol kelme"
+
+#~ msgid "English"
+#~ msgstr "Pulaar-Fulfulde"
+
+#~ msgid "English (Dvorak)"
+#~ msgstr "Pulaar-Fulfulde (Dvorak)"
+
+#~ msgid "Spanish"
+#~ msgstr "Español"
+
+#~ msgid "Portuguese Brazilian"
+#~ msgstr "Purtugeere Beresiil"
+
+#~ msgid "Other Latin scripts"
+#~ msgstr "Binndi Lateŋ goɗɗi"
+
+#~ msgid "French, German, Norwegian (Bokmål), Slovak, Turkish"
+#~ msgstr "Farayseere, Doccere, Norwejiire (Bokmål), Slowak, Turkiire"
+
+#~ msgid "Cyrillic scripts"
+#~ msgstr "Binndi Kirilic"
+
+#~ msgid "Russian, Serbian (cyrillic)"
+#~ msgstr "Ruusiire, Serbiire (kirilic)"
+
+#~ msgid "Arabic"
+#~ msgstr "Aarabeere"
+
+#~ msgid "Greek"
+#~ msgstr "Gerek"
+
+#~ msgid "Hebrew"
+#~ msgstr "Eburu"
+
+#~ msgid "Japanese"
+#~ msgstr "Japanese"
+
+#~ msgid "Kanji"
+#~ msgstr "Kannji"
+
+#~ msgid "Traditional Chinese"
+#~ msgstr "Sinuwaare Ganni"
+
+#~ msgid "Zhuyin"
+#~ msgstr "Zhuyin"
+
+#~ msgid "Simplified Chinese"
+#~ msgstr "Sinuwaare weeɓtunde"
+
+#~ msgid "Pinyin"
+#~ msgstr "Pinyin"
+
+#~ msgid "Polish"
+#~ msgstr "Poloneere"
+
+#~ msgid "Phone lock"
+#~ msgstr "Daaƴgol cinndel"
+
+#~ msgid "The PIN was incorrect."
+#~ msgstr "Kod PIN oo moƴƴaani."
+
+#~ msgid "Enable USB storage"
+#~ msgstr "Hurmin ndesgu USB"
+
+#~ msgid "{{link1}} or {{link2}}"
+#~ msgstr "{{link1}} or {{link2}}"
 
 #~ msgid "Wi-Fi protected setup"
 #~ msgstr "Yuɓɓino kisnaango Wifi"
@@ -2734,9 +3298,6 @@ msgstr ""
 
 #~ msgid "Beep beep"
 #~ msgstr "Bip bip"
-
-#~ msgid "Call"
-#~ msgstr "Noddu"
 
 #~ msgid "Normal"
 #~ msgstr "Potɗum"

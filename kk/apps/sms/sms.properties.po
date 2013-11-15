@@ -1,9 +1,9 @@
-#. extracted from build/locales/en-US/apps/sms/sms.properties, build/locales/kk/apps/sms/sms.properties
+#. extracted from ./apps/sms/sms.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-11 21:30+0100\n"
+"POT-Creation-Date: 2013-11-15 22:11+0100\n"
 "PO-Revision-Date: 2013-10-16 04:51+0000\n"
 "Last-Translator: Baurzhan <baurthefirst@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1381899112.000000\n"
@@ -213,7 +213,8 @@ msgid "{{n}} recipients"
 msgstr "{{n}} алушы"
 
 #: attachmentSize
-msgid "{{n}} kB"
+#, fuzzy
+msgid "{{n}} KB"
 msgstr "{{n}} КБ"
 
 #: attachmentSizeMB
@@ -277,6 +278,10 @@ msgstr "Желі белгісіз"
 msgid "Are you sure you want to discard this message?"
 msgstr "Бұл хабарламаны елемеуді қалайсыз ба?"
 
+#: discard-new-message
+msgid "Discard the message you're composing and open the new message?"
+msgstr ""
+
 #: resend-confirmation
 msgid "The message could not be sent. Try again?"
 msgstr "Хабарламаны жіберу мүмкін емес. Қайталау керек пе?"
@@ -288,6 +293,14 @@ msgstr "Таңдалған хабарламаларды өшіру керек п
 #: deleteThreads-confirmation2
 msgid "Delete selected message threads?"
 msgstr "Таңдалған хабарламалар тізімдерін өшіру керек пе?"
+
+#: new-message-notice-text
+msgid "New message from"
+msgstr ""
+
+#: new-message-notice-a-text
+msgid "Read it"
+msgstr ""
 
 #: noMessages-title
 msgid "No messages"
@@ -338,33 +351,113 @@ msgctxt "sendAirplaneModeBtnOk"
 msgid "OK"
 msgstr "ОК"
 
+#: fdnBlockedTitle
+msgid "FDN active"
+msgstr ""
+
+#: fdnBlockedBody.innerHTML
+#, fuzzy
+msgctxt "fdnBlockedBody.innerHTML"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: fdnBlockedBody.innerHTML[one]
+msgid ""
+"FDN is enabled and the following recipient is not in your FDN list:<br />"
+"{{ numbers }}"
+msgstr ""
+
+#: fdnBlockedBody.innerHTML[two]
+msgctxt "fdnBlockedBody.innerHTML[two]"
+msgid ""
+"FDN is enabled and the following recipients are not in your FDN list:<br />"
+"{{ numbers }}"
+msgstr ""
+
+#: fdnBlockedBody.innerHTML[few]
+msgctxt "fdnBlockedBody.innerHTML[few]"
+msgid ""
+"FDN is enabled and the following recipients are not in your FDN list:<br />"
+"{{ numbers }}"
+msgstr ""
+
+#: fdnBlockedBody.innerHTML[many]
+msgctxt "fdnBlockedBody.innerHTML[many]"
+msgid ""
+"FDN is enabled and the following recipients are not in your FDN list:<br />"
+"{{ numbers }}"
+msgstr ""
+
+#: fdnBlockedBody.innerHTML[other]
+msgctxt "fdnBlockedBody.innerHTML[other]"
+msgid ""
+"FDN is enabled and the following recipients are not in your FDN list:<br />"
+"{{ numbers }}"
+msgstr ""
+
+#: fdnBlockedBtnOk
+#, fuzzy
+msgctxt "fdnBlockedBtnOk"
+msgid "OK"
+msgstr "ОК"
+
 #: deleted-sms
 msgid "This message has already been deleted."
 msgstr "Бұл хабарлама өшірілген болып тұр."
 
-#: view-attachment
+#: view-attachment-image
+#, fuzzy
+msgctxt "view-attachment-image"
 msgid "View"
 msgstr "Қарау"
 
-#: remove-attachment
-msgid "Remove {{type}}"
-msgstr "Өшіру {{name}}"
+#: view-attachment-audio
+msgid "Listen"
+msgstr ""
 
-#: replace-attachment
-msgid "Replace {{type}}"
-msgstr "Алмастыру {{type}}"
+#: view-attachment-video
+#, fuzzy
+msgctxt "view-attachment-video"
+msgid "View"
+msgstr "Қарау"
 
-#: attachment-type-image
-msgid "image"
-msgstr "сурет"
+#: view-attachment-other
+#, fuzzy
+msgctxt "view-attachment-other"
+msgid "View"
+msgstr "Қарау"
 
-#: attachment-type-audio
-msgid "audio"
-msgstr "аудио"
+#: remove-attachment-image
+msgid "Remove image"
+msgstr ""
 
-#: attachment-type-video
-msgid "video"
-msgstr "видео"
+#: remove-attachment-audio
+msgid "Remove audio"
+msgstr ""
+
+#: remove-attachment-video
+msgid "Remove video"
+msgstr ""
+
+#: remove-attachment-other
+msgid "Remove attachment"
+msgstr ""
+
+#: replace-attachment-image
+msgid "Replace image"
+msgstr ""
+
+#: replace-attachment-audio
+msgid "Replace audio"
+msgstr ""
+
+#: replace-attachment-video
+msgid "Replace video"
+msgstr ""
+
+#: replace-attachment-other
+msgid "Replace attachment"
+msgstr ""
 
 #: unsent-message-title
 msgid "Unsent Message"
@@ -386,6 +479,14 @@ msgstr "Түзету"
 #: unsent-message-option-discard
 msgid "Discard"
 msgstr "Елемеу"
+
+#: message-options
+msgid "Message options"
+msgstr ""
+
+#: forward
+msgid "Forward"
+msgstr ""
 
 #. # Labels for contact fields
 #: mobile
@@ -446,6 +547,10 @@ msgstr "Бар болып тұрған контактқа қосу"
 msgid "Create new contact"
 msgstr "Жаңа контактты жасау"
 
+#: viewContact
+msgid "View contact"
+msgstr ""
+
 #: call
 msgid "Call"
 msgstr "Қоңырау шалу"
@@ -496,3 +601,18 @@ msgstr "Салынған суреттің өлшемін өзгерту"
 #: no-attachment-text
 msgid "There is a problem with the attached file and it cannot be downloaded."
 msgstr "Салыным файлымен мәселелер орын алды, оны жүктеп алу мүмкін емес."
+
+#~ msgid "Remove {{type}}"
+#~ msgstr "Өшіру {{name}}"
+
+#~ msgid "Replace {{type}}"
+#~ msgstr "Алмастыру {{type}}"
+
+#~ msgid "image"
+#~ msgstr "сурет"
+
+#~ msgid "audio"
+#~ msgstr "аудио"
+
+#~ msgid "video"
+#~ msgstr "видео"

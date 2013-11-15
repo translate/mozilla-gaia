@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-17 12:08+0100\n"
+"POT-Creation-Date: 2013-11-15 22:32+0100\n"
 "PO-Revision-Date: 2013-10-16 04:53+0000\n"
 "Last-Translator: Baurzhan <baurthefirst@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1381899181.000000\n"
@@ -184,6 +184,11 @@ msgstr "Қайта қосу"
 msgid "Power off"
 msgstr "Сөндіру"
 
+#. # cards view
+#: no-recent-apps
+msgid "No recent apps"
+msgstr ""
+
 #. # permissions
 #. # LOCALIZATION NOTE: this is displayed in a permission request dialog box,
 #. # see shared/permissions/permissions.properties for more context.
@@ -198,6 +203,46 @@ msgstr "Жоқ"
 #: allow
 msgid "Allow"
 msgstr "Рұқсат ету"
+
+#: dontshare-geolocation
+msgctxt "dontshare-geolocation"
+msgid "Don't Share"
+msgstr ""
+
+#: share-geolocation
+msgctxt "share-geolocation"
+msgid "Share"
+msgstr ""
+
+#: dontshare-audio-capture
+msgctxt "dontshare-audio-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-audio-capture
+msgctxt "share-audio-capture"
+msgid "Share"
+msgstr ""
+
+#: dontshare-video-capture
+msgctxt "dontshare-video-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-video-capture
+msgctxt "share-video-capture"
+msgid "Share"
+msgstr ""
+
+#: dontshare-media-capture
+msgctxt "dontshare-media-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-media-capture
+msgctxt "share-media-capture"
+msgid "Share"
+msgstr ""
 
 #: remember-my-choice
 msgid "Remember my choice"
@@ -220,27 +265,17 @@ msgstr "Өлшемі"
 msgid "Author"
 msgstr "Авторы"
 
-#: unknown
+#: size-unknown
+#, fuzzy
+msgctxt "size-unknown"
 msgid "Unknown"
 msgstr "Белгісіз"
 
-#. # LOCALIZATION NOTE (unknown-size,unknown-author):
-#. # if you leave the original en-US value "{{unknown}}" in
-#. # the following two strings, the localization will be automatically picked
-#. # from the existing string with ID "unknown". If you need to adapt your
-#. # localization to different genders for author and size, you can localize
-#. # these strings. For example in French:
-#. # unknown-size=inconnue
-#. # unknown-author=inconnu
-#: unknown-size
-msgctxt "unknown-size"
-msgid "{{unknown}}"
-msgstr "{{белгісіз}}"
-
-#: unknown-author
-msgctxt "unknown-author"
-msgid "{{unknown}}"
-msgstr "{{белгісіз}}"
+#: author-unknown
+#, fuzzy
+msgctxt "author-unknown"
+msgid "Unknown"
+msgstr "Белгісіз"
 
 #: install
 msgid "Install"
@@ -251,7 +286,9 @@ msgid "bytes"
 msgstr "байт"
 
 #: kB
-msgid "kB"
+#, fuzzy
+msgctxt "kB"
+msgid "KB"
 msgstr "КБ"
 
 #: MB
@@ -343,6 +380,16 @@ msgstr ""
 msgid "{{ appName }} installed"
 msgstr "{{ appName }} орнатылды"
 
+#. #setup dialog
+#: setup
+msgid "Setup"
+msgstr ""
+
+#. #ime
+#: ime-addkeyboards
+msgid "Add keyboards"
+msgstr ""
+
 #. # update manager
 #: later
 msgid "Later"
@@ -369,7 +416,7 @@ msgid "Not Now"
 msgstr "Қазір емес"
 
 #. # the <span> element will be displayed when the download finishes
-#: downloadingUpdateMessage
+#: downloadingUpdateMessage.innerHTML
 msgid "Downloading updates… <span>{{ progress }} downloaded.</span>"
 msgstr "Жаңартуларды жүктеп алу… <span>{{ progress }} жүктеліп алынды.</span>"
 
@@ -401,32 +448,37 @@ msgstr "Барлық жүктемелерден бас тартуды шыным
 msgid "There was an error while downloading the updates."
 msgstr "Жаңартуларды жүктеп алу кезінде қате орын алды."
 
-#: updateAvailableInfo
-msgctxt "updateAvailableInfo"
+#: updateAvailableInfo.innerHTML
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: updateAvailableInfo[one]
+#: updateAvailableInfo.innerHTML[one]
 msgid "{{ n }} update available. <span>Tap for more info.</span>"
 msgstr "{{ n }} жаңарту қолжетерлік. <span>Көбірек білу үшін шертіңіз.</span>"
 
-#: updateAvailableInfo[two]
-msgctxt "updateAvailableInfo[two]"
+#: updateAvailableInfo.innerHTML[two]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[two]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "{{ n }} жаңарту қолжетерлік. <span>Көбірек білу үшін шертіңіз.</span>"
 
-#: updateAvailableInfo[few]
-msgctxt "updateAvailableInfo[few]"
+#: updateAvailableInfo.innerHTML[few]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[few]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "{{ n }} жаңарту қолжетерлік. <span>Көбірек білу үшін шертіңіз.</span>"
 
-#: updateAvailableInfo[many]
-msgctxt "updateAvailableInfo[many]"
+#: updateAvailableInfo.innerHTML[many]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[many]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "{{ n }} жаңарту қолжетерлік. <span>Көбірек білу үшін шертіңіз.</span>"
 
-#: updateAvailableInfo[other]
-msgctxt "updateAvailableInfo[other]"
+#: updateAvailableInfo.innerHTML[other]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[other]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "{{ n }} жаңарту қолжетерлік. <span>Көбірек білу үшін шертіңіз.</span>"
 
@@ -471,7 +523,7 @@ msgstr "Жүйелік жаңарту дайын"
 msgid "Required"
 msgstr "Міндетті"
 
-#: uncompressingMessage
+#: uncompressingMessage.innerHTML
 msgid "Uncompressing… <span>This can take a few minutes.</span>"
 msgstr "Тарқату… <span>Бұл бірнеше минутты алуы мүмкін.</span>"
 
@@ -609,10 +661,6 @@ msgstr ""
 #: try-again
 msgid "Try again"
 msgstr "Қайтадан көріңіз"
-
-#: dialog-closed
-msgid "Dialog closed by the user"
-msgstr "Диалогты пайдаланушы жапты"
 
 #. # value selector, time/date picker
 #: select-time
@@ -766,19 +814,21 @@ msgid "{{deviceName}} would like to transfer {{fileName}} ({{fileSize}})."
 msgstr ""
 "{{deviceName}} құрылғысы {{fileName}} ({{fileSize}}) тасымалдағысы келеді."
 
-#: notification-fileTransfer-title
-msgid "Receive file?"
-msgstr "Файлды қабылдау керек пе?"
+#: transfer-confirmation-title
+msgid "{{deviceName}}"
+msgstr ""
 
-#: notification-fileTransfer-description
-msgid "File incoming from another device"
-msgstr "Басқа құрылғыдан келетін файл"
+#: transfer-confirmation-description
+msgid "Review transfer request."
+msgstr ""
 
 #: byteUnit-B
 msgid "Bytes"
 msgstr "Байт"
 
 #: byteUnit-KB
+#, fuzzy
+msgctxt "byteUnit-KB"
 msgid "KB"
 msgstr "КБ"
 
@@ -831,17 +881,13 @@ msgstr "Алмасу"
 msgid "Cancel Bluetooth file transfer?"
 msgstr "Bluetooth файлдар тасымалдаудан бас тарту керек пе?"
 
-#: bluetooth-file-transfer-result
-msgid "Bluetooth file transfer {{status}}."
-msgstr "Bluetooth файлдар тасымалдауы {{status}}."
+#: transfer-has-started-title
+msgid "The transfer has started"
+msgstr ""
 
-#: complete
-msgid "complete"
-msgstr "дайын"
-
-#: failed
-msgid "failed"
-msgstr "сәтсіз"
+#: transfer-has-started-description
+msgid "Check the progress in Notification center"
+msgstr ""
 
 #: transferFinished-sentSuccessful-title
 msgid "File sent"
@@ -858,6 +904,15 @@ msgstr "Файлды жіберу мүмкін емес"
 #: transferFinished-receivedFailed-title
 msgid "File could not be received"
 msgstr "Файлды қабылдау мүмкін емес"
+
+#: transferReport-title
+msgid "Transfer report:"
+msgstr ""
+
+#: transferReport-description
+msgid ""
+"{{numSuccessful}} files successful, {{numUnsuccessful}} files unsuccessful"
+msgstr ""
 
 #: unknown-file
 msgid "Unknown file"
@@ -880,11 +935,13 @@ msgid "Can not receive file"
 msgstr "Файлды қабылдау мүмкін емес"
 
 #: cannotGetStorageState
-msgid "Can not get device storage state"
+#, fuzzy
+msgid "Can not get device storage state."
 msgstr "Құрылғының сақтауыш күйін алу мүмкін емес"
 
-#: sdcard-not-exist
-msgid "No memory card found (Please insert a memory card)"
+#: sdcard-not-exist2
+#, fuzzy
+msgid "No memory card found. Please insert a memory card."
 msgstr "Жады картасы табылмады (оны салыңыз)"
 
 #: sdcard-in-use
@@ -906,6 +963,19 @@ msgstr "Белгісіз қате"
 #: confirm
 msgid "Confirm"
 msgstr "Растау"
+
+#. # Media Recoding
+#: microphone-is-on
+msgid "Mic is on"
+msgstr ""
+
+#: camera-is-on
+msgid "Camera is on"
+msgstr ""
+
+#: media-is-on
+msgid "Camera & Mic are ON"
+msgstr ""
 
 #. # Security :: SIM PIN lock
 #: noSimCard
@@ -1409,3 +1479,76 @@ msgstr "Хабарламаны жіберу керек пе?"
 #: icc-inputtitle
 msgid "STK Query"
 msgstr "STK сұранымы"
+
+#. # CDMA emergency callback mode
+#: emergency-callback-mode
+msgid "Emergency call back mode"
+msgstr ""
+
+#: emergency-callback-dialog-message
+msgid ""
+"Telecom services and internet are disable due to emergency call back mode. "
+"Would you like to turn off the mode?"
+msgstr ""
+
+#. # CDMA record information
+#: cdma-record-info
+msgid "CDMA record information"
+msgstr ""
+
+#. # IME (Keyboard)
+#: ime-switching-tip
+msgid "Tap to switch input method"
+msgstr ""
+
+#: layout-selection
+msgid "Layout selection"
+msgstr ""
+
+#~ msgctxt "unknown-size"
+#~ msgid "{{unknown}}"
+#~ msgstr "{{белгісіз}}"
+
+#~ msgctxt "unknown-author"
+#~ msgid "{{unknown}}"
+#~ msgstr "{{белгісіз}}"
+
+#~ msgid "kB"
+#~ msgstr "КБ"
+
+#~ msgctxt "updateAvailableInfo"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "updateAvailableInfo[few]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr ""
+#~ "{{ n }} жаңарту қолжетерлік. <span>Көбірек білу үшін шертіңіз.</span>"
+
+#~ msgctxt "updateAvailableInfo[many]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr ""
+#~ "{{ n }} жаңарту қолжетерлік. <span>Көбірек білу үшін шертіңіз.</span>"
+
+#~ msgctxt "updateAvailableInfo[other]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr ""
+#~ "{{ n }} жаңарту қолжетерлік. <span>Көбірек білу үшін шертіңіз.</span>"
+
+#~ msgid "Dialog closed by the user"
+#~ msgstr "Диалогты пайдаланушы жапты"
+
+#~ msgid "Receive file?"
+#~ msgstr "Файлды қабылдау керек пе?"
+
+#~ msgid "File incoming from another device"
+#~ msgstr "Басқа құрылғыдан келетін файл"
+
+#~ msgid "Bluetooth file transfer {{status}}."
+#~ msgstr "Bluetooth файлдар тасымалдауы {{status}}."
+
+#~ msgid "complete"
+#~ msgstr "дайын"
+
+#~ msgid "failed"
+#~ msgstr "сәтсіз"

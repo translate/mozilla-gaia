@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-17 12:08+0100\n"
+"POT-Creation-Date: 2013-11-15 22:32+0100\n"
 "PO-Revision-Date: 2013-11-06 08:37+0000\n"
 "Last-Translator: Sutha <sutha@open.org.kh>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1383727025.000000\n"
@@ -185,6 +185,11 @@ msgstr "ចាប់ផ្ដើម​ឡើងវិញ"
 msgid "Power off"
 msgstr "បិទ​ម៉ាស៊ីន"
 
+#. # cards view
+#: no-recent-apps
+msgid "No recent apps"
+msgstr ""
+
 #. # permissions
 #. # LOCALIZATION NOTE: this is displayed in a permission request dialog box,
 #. # see shared/permissions/permissions.properties for more context.
@@ -199,6 +204,46 @@ msgstr "គ្មាន"
 #: allow
 msgid "Allow"
 msgstr "អនុញ្ញាត"
+
+#: dontshare-geolocation
+msgctxt "dontshare-geolocation"
+msgid "Don't Share"
+msgstr ""
+
+#: share-geolocation
+msgctxt "share-geolocation"
+msgid "Share"
+msgstr ""
+
+#: dontshare-audio-capture
+msgctxt "dontshare-audio-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-audio-capture
+msgctxt "share-audio-capture"
+msgid "Share"
+msgstr ""
+
+#: dontshare-video-capture
+msgctxt "dontshare-video-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-video-capture
+msgctxt "share-video-capture"
+msgid "Share"
+msgstr ""
+
+#: dontshare-media-capture
+msgctxt "dontshare-media-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-media-capture
+msgctxt "share-media-capture"
+msgid "Share"
+msgstr ""
 
 #: remember-my-choice
 msgid "Remember my choice"
@@ -221,27 +266,17 @@ msgstr "ទំហំ"
 msgid "Author"
 msgstr "អ្នក​និពន្ធ"
 
-#: unknown
+#: size-unknown
+#, fuzzy
+msgctxt "size-unknown"
 msgid "Unknown"
 msgstr "មិន​ស្គាល់"
 
-#. # LOCALIZATION NOTE (unknown-size,unknown-author):
-#. # if you leave the original en-US value "{{unknown}}" in
-#. # the following two strings, the localization will be automatically picked
-#. # from the existing string with ID "unknown". If you need to adapt your
-#. # localization to different genders for author and size, you can localize
-#. # these strings. For example in French:
-#. # unknown-size=inconnue
-#. # unknown-author=inconnu
-#: unknown-size
-msgctxt "unknown-size"
-msgid "{{unknown}}"
-msgstr "{{unknown}}"
-
-#: unknown-author
-msgctxt "unknown-author"
-msgid "{{unknown}}"
-msgstr "{{unknown}}"
+#: author-unknown
+#, fuzzy
+msgctxt "author-unknown"
+msgid "Unknown"
+msgstr "មិន​ស្គាល់"
 
 #: install
 msgid "Install"
@@ -252,7 +287,9 @@ msgid "bytes"
 msgstr "បៃ"
 
 #: kB
-msgid "kB"
+#, fuzzy
+msgctxt "kB"
+msgid "KB"
 msgstr "គីឡូបៃ"
 
 #: MB
@@ -343,6 +380,16 @@ msgstr ""
 msgid "{{ appName }} installed"
 msgstr "បាន​ដំឡើង {{ appName }}"
 
+#. #setup dialog
+#: setup
+msgid "Setup"
+msgstr ""
+
+#. #ime
+#: ime-addkeyboards
+msgid "Add keyboards"
+msgstr ""
+
 #. # update manager
 #: later
 msgid "Later"
@@ -369,7 +416,7 @@ msgid "Not Now"
 msgstr "មិន​មែន​ឥឡូវ"
 
 #. # the <span> element will be displayed when the download finishes
-#: downloadingUpdateMessage
+#: downloadingUpdateMessage.innerHTML
 msgid "Downloading updates… <span>{{ progress }} downloaded.</span>"
 msgstr "កំពុង​ទាញយក​បច្ចុប្បន្នភាព… <span>បាន​ទាញយក {{ progress }} ។</span>"
 
@@ -401,32 +448,37 @@ msgstr "តើ​អ្នក​ប្រាកដ​ជា​ចង់​បោ
 msgid "There was an error while downloading the updates."
 msgstr "មាន​កំហុស​​ខណៈពេល​កំពុង​ទាញយក​បច្ចុប្បន្នភាព។"
 
-#: updateAvailableInfo
-msgctxt "updateAvailableInfo"
+#: updateAvailableInfo.innerHTML
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: updateAvailableInfo[one]
+#: updateAvailableInfo.innerHTML[one]
 msgid "{{ n }} update available. <span>Tap for more info.</span>"
 msgstr "មាន​បច្ចុប្បន្នភាព {{ n }} ។ <span>ចុច​​សម្រាប់​ព័ត៌មាន​បន្ថែម</span>"
 
-#: updateAvailableInfo[two]
-msgctxt "updateAvailableInfo[two]"
+#: updateAvailableInfo.innerHTML[two]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[two]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "មាន​បច្ចុប្បន្នភាព {{ n }} ។ <span>ចុច​​សម្រាប់​ព័ត៌មាន​បន្ថែម</span>"
 
-#: updateAvailableInfo[few]
-msgctxt "updateAvailableInfo[few]"
+#: updateAvailableInfo.innerHTML[few]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[few]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "មាន​បច្ចុប្បន្នភាព {{ n }} ។ <span>ចុច​​សម្រាប់​ព័ត៌មាន​បន្ថែម</span>"
 
-#: updateAvailableInfo[many]
-msgctxt "updateAvailableInfo[many]"
+#: updateAvailableInfo.innerHTML[many]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[many]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "មាន​បច្ចុប្បន្នភាព {{ n }} ។ <span>ចុច​​សម្រាប់​ព័ត៌មាន​បន្ថែម</span>"
 
-#: updateAvailableInfo[other]
-msgctxt "updateAvailableInfo[other]"
+#: updateAvailableInfo.innerHTML[other]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[other]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "មាន​បច្ចុប្បន្នភាព {{ n }} ។ <span>ចុច​​សម្រាប់​ព័ត៌មាន​បន្ថែម</span>"
 
@@ -471,7 +523,7 @@ msgstr "ធ្វើ​បច្ចុប្បន្នភាព​ប្រព
 msgid "Required"
 msgstr "ទាមទារ"
 
-#: uncompressingMessage
+#: uncompressingMessage.innerHTML
 msgid "Uncompressing… <span>This can take a few minutes.</span>"
 msgstr "កំពុង​មិន​បង្ហាប់… <span>នេះ​​អាច​ចំណាយ​ពេល​ប៉ុន្មាន​នាទី។</span>"
 
@@ -601,10 +653,6 @@ msgstr "{{name}} ទាមទារ​ការ​ភ្ជាប់​បណ្
 #: try-again
 msgid "Try again"
 msgstr "ព្យាយាម​ម្ដង​ទៀត"
-
-#: dialog-closed
-msgid "Dialog closed by the user"
-msgstr "បាន​បិទ​ផ្ទាំង​ដោយ​អ្នក​ប្រើ"
 
 #. # value selector, time/date picker
 #: select-time
@@ -755,19 +803,21 @@ msgstr "យល់ព្រម​​ការ​ផ្ទេរ​ឯកសារ
 msgid "{{deviceName}} would like to transfer {{fileName}} ({{fileSize}})."
 msgstr "{{deviceName}} ចង់​ផ្ទេរ {{fileName}} ({{fileSize}})។"
 
-#: notification-fileTransfer-title
-msgid "Receive file?"
-msgstr "ទទួល​ឯកសារ​ឬ?"
+#: transfer-confirmation-title
+msgid "{{deviceName}}"
+msgstr ""
 
-#: notification-fileTransfer-description
-msgid "File incoming from another device"
-msgstr "ឯកសារ​ចូល​មក​ពី​ឧបករណ៍​ផ្សេង"
+#: transfer-confirmation-description
+msgid "Review transfer request."
+msgstr ""
 
 #: byteUnit-B
 msgid "Bytes"
 msgstr "បៃ"
 
 #: byteUnit-KB
+#, fuzzy
+msgctxt "byteUnit-KB"
 msgid "KB"
 msgstr "គីឡូបៃ"
 
@@ -820,17 +870,13 @@ msgstr "ផ្ទេរ"
 msgid "Cancel Bluetooth file transfer?"
 msgstr "បោះបង់​ការ​ផ្ទេរ​ឯកសារ​តាម​ប៊ូធូស?"
 
-#: bluetooth-file-transfer-result
-msgid "Bluetooth file transfer {{status}}."
-msgstr "ការ​ផ្ទេរ​ឯកសារ​តាម​ប៊ូធូស {{status}} ។"
+#: transfer-has-started-title
+msgid "The transfer has started"
+msgstr ""
 
-#: complete
-msgid "complete"
-msgstr "បញ្ចប់"
-
-#: failed
-msgid "failed"
-msgstr "បានបរាជ័យ"
+#: transfer-has-started-description
+msgid "Check the progress in Notification center"
+msgstr ""
 
 #: transferFinished-sentSuccessful-title
 msgid "File sent"
@@ -847,6 +893,15 @@ msgstr "មិន​អាច​ផ្ញើ​ឯកសារ​បាន​ទ
 #: transferFinished-receivedFailed-title
 msgid "File could not be received"
 msgstr "មិន​អាច​ទទួល​ឯកសារ​បាន​ទេ"
+
+#: transferReport-title
+msgid "Transfer report:"
+msgstr ""
+
+#: transferReport-description
+msgid ""
+"{{numSuccessful}} files successful, {{numUnsuccessful}} files unsuccessful"
+msgstr ""
 
 #: unknown-file
 msgid "Unknown file"
@@ -869,11 +924,13 @@ msgid "Can not receive file"
 msgstr "មិន​អាច​ទទួល​ឯកសារ"
 
 #: cannotGetStorageState
-msgid "Can not get device storage state"
+#, fuzzy
+msgid "Can not get device storage state."
 msgstr "មិន​អាច​​​ទទួល​ស្ថានភាព​កន្លែង​ផ្ទុក​ឧបករណ៍"
 
-#: sdcard-not-exist
-msgid "No memory card found (Please insert a memory card)"
+#: sdcard-not-exist2
+#, fuzzy
+msgid "No memory card found. Please insert a memory card."
 msgstr "រក​មិន​ឃើញ​កាត​អង្គ​ចងចាំ (សូម​បញ្ចូល​កាត​អង្គ​​ចងចាំ)"
 
 #: sdcard-in-use
@@ -893,6 +950,19 @@ msgstr "កំហុស​ដែល​មិន​ស្គាល់"
 #: confirm
 msgid "Confirm"
 msgstr "អះអាង"
+
+#. # Media Recoding
+#: microphone-is-on
+msgid "Mic is on"
+msgstr ""
+
+#: camera-is-on
+msgid "Camera is on"
+msgstr ""
+
+#: media-is-on
+msgid "Camera & Mic are ON"
+msgstr ""
 
 #. # Security :: SIM PIN lock
 #: noSimCard
@@ -1370,6 +1440,76 @@ msgstr "ផ្ញើ​សារ?"
 #: icc-inputtitle
 msgid "STK Query"
 msgstr "STK Query"
+
+#. # CDMA emergency callback mode
+#: emergency-callback-mode
+msgid "Emergency call back mode"
+msgstr ""
+
+#: emergency-callback-dialog-message
+msgid ""
+"Telecom services and internet are disable due to emergency call back mode. "
+"Would you like to turn off the mode?"
+msgstr ""
+
+#. # CDMA record information
+#: cdma-record-info
+msgid "CDMA record information"
+msgstr ""
+
+#. # IME (Keyboard)
+#: ime-switching-tip
+msgid "Tap to switch input method"
+msgstr ""
+
+#: layout-selection
+msgid "Layout selection"
+msgstr ""
+
+#~ msgctxt "unknown-size"
+#~ msgid "{{unknown}}"
+#~ msgstr "{{unknown}}"
+
+#~ msgctxt "unknown-author"
+#~ msgid "{{unknown}}"
+#~ msgstr "{{unknown}}"
+
+#~ msgid "kB"
+#~ msgstr "គីឡូបៃ"
+
+#~ msgctxt "updateAvailableInfo"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "updateAvailableInfo[few]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr "មាន​បច្ចុប្បន្នភាព {{ n }} ។ <span>ចុច​​សម្រាប់​ព័ត៌មាន​បន្ថែម</span>"
+
+#~ msgctxt "updateAvailableInfo[many]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr "មាន​បច្ចុប្បន្នភាព {{ n }} ។ <span>ចុច​​សម្រាប់​ព័ត៌មាន​បន្ថែម</span>"
+
+#~ msgctxt "updateAvailableInfo[other]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr "មាន​បច្ចុប្បន្នភាព {{ n }} ។ <span>ចុច​​សម្រាប់​ព័ត៌មាន​បន្ថែម</span>"
+
+#~ msgid "Dialog closed by the user"
+#~ msgstr "បាន​បិទ​ផ្ទាំង​ដោយ​អ្នក​ប្រើ"
+
+#~ msgid "Receive file?"
+#~ msgstr "ទទួល​ឯកសារ​ឬ?"
+
+#~ msgid "File incoming from another device"
+#~ msgstr "ឯកសារ​ចូល​មក​ពី​ឧបករណ៍​ផ្សេង"
+
+#~ msgid "Bluetooth file transfer {{status}}."
+#~ msgstr "ការ​ផ្ទេរ​ឯកសារ​តាម​ប៊ូធូស {{status}} ។"
+
+#~ msgid "complete"
+#~ msgstr "បញ្ចប់"
+
+#~ msgid "failed"
+#~ msgstr "បានបរាជ័យ"
 
 #~ msgid "Enter security code"
 #~ msgstr "បញ្ចូល​លេខ​កូដ​សុវត្ថិភាព"

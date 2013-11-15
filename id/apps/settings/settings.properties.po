@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-22 13:57+0100\n"
+"POT-Creation-Date: 2013-11-15 22:32+0100\n"
 "PO-Revision-Date: 2013-10-18 10:48+0000\n"
 "Last-Translator: Benny <bennychandra@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1382093289.000000\n"
@@ -264,6 +264,10 @@ msgctxt "authentication"
 msgid "Authentication"
 msgstr "Autentikasi"
 
+#: eap
+msgid "EAP method"
+msgstr ""
+
 #: identity
 msgid "Identifier"
 msgstr "Pengenal"
@@ -352,8 +356,18 @@ msgid "PIN is 4 or 8 digits"
 msgstr "PIN (4 atau 8 angka)"
 
 #: wpsPinInput
-msgid "Input {{pin}} to opposite device"
+#, fuzzy
+msgid "Input {{pin}} to an opposite device"
 msgstr "Masukkan {{pin}} ke perangkat lainnya"
+
+#: wpsPinAps
+msgid "Select an opposite device"
+msgstr ""
+
+#: wpsAnyAp
+msgctxt "wpsAnyAp"
+msgid "Any"
+msgstr ""
 
 #: wpsCancelMessage
 msgid "Cancel WPS"
@@ -368,6 +382,14 @@ msgstr "Gagal membatalkan WPS"
 msgid "Call Settings"
 msgstr "Setelan Panggilan"
 
+#: callSettingsQuery
+msgid "Requesting network info…"
+msgstr "Meminta informasi jaringan…"
+
+#: callSettingsQueryError
+msgid "Error in query"
+msgstr "Galat saat mengambil status"
+
 #: voiceMail
 msgid "Voicemail"
 msgstr ""
@@ -380,9 +402,23 @@ msgstr ""
 msgid "Not set"
 msgstr ""
 
+#: voicePrivacyMode
+msgid "Voice privacy mode"
+msgstr ""
+
 #: callWaiting
 msgid "Call waiting"
 msgstr "Panggilan tunggu"
+
+#: confirmCallWaitingTitle
+msgid "Unable to confirm call waiting preferences"
+msgstr ""
+
+#: confirmCallWaitingDesc
+msgid ""
+"The device is currently unable to communicate with the carrier. Try setting "
+"the preference again."
+msgstr ""
 
 #: callForwarding
 msgid "Call forwarding"
@@ -424,14 +460,6 @@ msgstr "Alihkan saat tidak terjangkau"
 msgid "When unreachable"
 msgstr "Ketika tak dapat dihubungi"
 
-#: callForwardingRequesting
-msgid "Requesting network info…"
-msgstr "Meminta informasi jaringan…"
-
-#: callForwardingQueryError
-msgid "Error in query"
-msgstr "Galat saat mengambil status"
-
 #: callForwardingForwardingVoiceTo
 msgid "Voice calls to"
 msgstr "Panggilan suara ke"
@@ -444,20 +472,6 @@ msgstr "Nonaktif"
 #: callForwardingConfirmTitle
 msgid "Call forwarding confirmation message"
 msgstr "Pesan konfirmasi pengalihan panggilan"
-
-#: callBroadcastService
-msgid "Cell broadcast service"
-msgstr ""
-
-#: confirmCallWaitingTitle
-msgid "Unable to confirm call waiting preferences"
-msgstr ""
-
-#: confirmCallWaitingDesc
-msgid ""
-"The device is currently unable to communicate with the carrier. Try setting "
-"the preference again."
-msgstr ""
 
 #: cf-alwaysUseThisNumber
 msgid "Always use this number"
@@ -489,6 +503,212 @@ msgstr ""
 
 #: callForwardingSetError
 msgid "Call settings error."
+msgstr ""
+
+#: callerId
+msgid "Caller ID"
+msgstr ""
+
+#: callerId-default
+msgid "Network default"
+msgstr ""
+
+#: callerId-hide
+msgid "Hide number"
+msgstr ""
+
+#: callerId-show
+#, fuzzy
+msgid "Show number"
+msgstr "Nomor telepon"
+
+#: fdn
+msgctxt "fdn"
+msgid "Fixed dialing numbers"
+msgstr ""
+
+#: fdnSettings
+msgctxt "fdnSettings"
+msgid "Fixed dialing numbers"
+msgstr ""
+
+#: fdn-authorizedNumbers
+msgid "Authorized numbers"
+msgstr ""
+
+#: fdn-authorizedNumbers-desc
+msgid "List of numbers that can be called"
+msgstr ""
+
+#: fdn-explanation1
+msgid "Restrict which numbers can be dialed from this phone."
+msgstr ""
+
+#: fdn-explanation2
+msgid "(Emergency numbers will always be dialable)"
+msgstr ""
+
+#: fdnEnable
+msgid "Enable FDN"
+msgstr ""
+
+#: fdnDisable
+msgid "Disable FDN"
+msgstr ""
+
+#: fdnReset
+msgid "Reset PIN2"
+msgstr ""
+
+#: fdnAttemptMsg3
+#, fuzzy
+msgctxt "fdnAttemptMsg3"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: fdnAttemptMsg3[one]
+msgctxt "fdnAttemptMsg3[one]"
+msgid ""
+"You have one try left to enter the correct code before locking the SIM card."
+msgstr ""
+
+#: fdnAttemptMsg3[two]
+msgctxt "fdnAttemptMsg3[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+
+#: fdnAttemptMsg3[few]
+msgctxt "fdnAttemptMsg3[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+
+#: fdnAttemptMsg3[many]
+msgctxt "fdnAttemptMsg3[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+
+#: fdnAttemptMsg3[other]
+msgctxt "fdnAttemptMsg3[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+
+#: fdnLastChanceMsg
+#, fuzzy
+msgid ""
+"This is your last chance to enter the correct PIN2. Otherwise, you must "
+"enter the PUK2 code to use this SIM card."
+msgstr ""
+"Ini adalah kesempatan untuk memasukkan PIN yang benar. Jika masih salah, "
+"Anda harus memasukkan kode PUK untuk menggunakan kartu SIM ini."
+
+#: fdnErrorMsg
+#, fuzzy
+msgid "The PIN2 code is incorrect."
+msgstr "Kode PUK salah."
+
+#: fdn-enabled-warning
+msgid "Call forwarding is disabled by FDN."
+msgstr ""
+
+#: fdnContact-name
+#, fuzzy
+msgid "name"
+msgstr "Nama"
+
+#: fdnContact-number
+msgctxt "fdnContact-number"
+msgid "number"
+msgstr ""
+
+#: fdnContact-submit
+msgid "submit"
+msgstr ""
+
+#: fdnAction-add
+msgid "Add contact"
+msgstr ""
+
+#: fdnAction-call
+msgid "Call"
+msgstr "Panggilan"
+
+#: fdnAction-edit
+msgid "Edit contact"
+msgstr ""
+
+#: fdnAction-delete
+msgid "Delete contact"
+msgstr ""
+
+#. # Connectivity :: Messaging
+#: messagingSettings
+msgid "Messaging Settings"
+msgstr ""
+
+#: message-confirmation
+#, fuzzy
+msgid "Message confirmation"
+msgstr "Konfirmasi pesan teks"
+
+#: message-delivery-reports
+msgid "Delivery reports"
+msgstr "Laporan penyampaian"
+
+#: message-delivery-reports-details
+#, fuzzy
+msgid "Request notification of delivery for each message sent"
+msgstr "Minta notifikasi penyampaian setiap pesan teks terkirim"
+
+#: mmsTitle
+msgid "Multimedia messaging (MMS)"
+msgstr ""
+
+#: auto-retrieve
+msgid "Auto retrieve"
+msgstr ""
+
+#: auto-retrieve-details
+msgid "Automatically retrieve messages"
+msgstr "Otomatis terima pesan"
+
+#: manual-retrieve
+msgid "Off"
+msgstr ""
+
+#: auto-roaming-retrieve
+msgid "On with roaming"
+msgstr ""
+
+#: auto-no-roaming-retrieve
+msgid "On without roaming"
+msgstr ""
+
+#: autoConfigure
+msgid "Auto-configure"
+msgstr "Konfigurasi otomatis"
+
+#: wapPushMessages
+msgid "WAP Push messages"
+msgstr ""
+
+#: wapPush
+msgid "WAP Push"
+msgstr ""
+
+#: cellBroadcastMessages
+msgid "Cell broadcast messages"
+msgstr ""
+
+#: cellBroadcast
+msgid "Cell broadcast"
 msgstr ""
 
 #. # Connectivity :: Cellular & Data
@@ -533,6 +753,10 @@ msgctxt "operator-networkType-auto"
 msgid "Automatic"
 msgstr "Otomatis"
 
+#: operator-networkType-prefer2G
+msgid "2G preferred"
+msgstr ""
+
 #: operator-networkType-2G
 msgid "2G only"
 msgstr "Hanya 2G"
@@ -540,6 +764,35 @@ msgstr "Hanya 2G"
 #: operator-networkType-3G
 msgid "3G only"
 msgstr "Hanya 3G"
+
+#. # DUALSTACK
+#: operator-networkType-GSM
+msgid "GSM"
+msgstr ""
+
+#: operator-networkType-WCDMA
+msgid "WCDMA"
+msgstr ""
+
+#: operator-networkType-CDMA
+msgid "CDMA"
+msgstr ""
+
+#: operator-networkType-EVDO
+msgid "EVDO"
+msgstr ""
+
+#: operator-networkType-preferGSM
+msgid "GSM preferred"
+msgstr ""
+
+#: operator-networkType-preferWCDMA
+msgid "WCDMA preferred"
+msgstr ""
+
+#: operator-networkType-preferEVDO
+msgid "EVDO preferred"
+msgstr ""
 
 #: operator-autoSelect
 msgid "Automatic selection"
@@ -550,6 +803,10 @@ msgstr "Pilih otomatis"
 msgctxt "operator-networkSelect-auto"
 msgid "Automatic"
 msgstr "Otomatis"
+
+#: operator-networkSelect-manual
+msgid "Manual"
+msgstr ""
 
 #: operator-turnAutoSelectOff
 msgid "Turn automatic selection off to view available network operators."
@@ -571,6 +828,23 @@ msgctxt "operator-status-connected"
 msgid "Connected"
 msgstr "Tersambung"
 
+#: operator-roamingPreference
+msgid "Roaming preference"
+msgstr ""
+
+#: operator-roamingPreference-home
+msgid "Home"
+msgstr ""
+
+#: operator-roamingPreference-any
+msgctxt "operator-roamingPreference-any"
+msgid "Any"
+msgstr ""
+
+#: operator-roamingPreference-affiliated
+msgid "Affiliated"
+msgstr ""
+
 #: apn
 msgid "APN"
 msgstr "APN"
@@ -591,14 +865,6 @@ msgstr ""
 msgid "APN settings"
 msgstr "Setelan APN"
 
-#: text-message-confirmation
-msgid "Text message confirmation"
-msgstr "Konfirmasi pesan teks"
-
-#: mmsTitle
-msgid "Multimedia messaging (MMS)"
-msgstr ""
-
 #: mmsport
 msgid "MMS port"
 msgstr "Port MMS"
@@ -610,39 +876,6 @@ msgstr "Proksi MMS"
 #: mmsc
 msgid "MMSC"
 msgstr "MMSC"
-
-#: auto-retrieve
-msgid "Auto retrieve"
-msgstr ""
-
-#: auto-retrieve-details
-msgid "Automatically retrieve messages"
-msgstr "Otomatis terima pesan"
-
-#: manual-retrieve
-msgid "Off"
-msgstr ""
-
-#: auto-roaming-retrieve
-msgid "On with roaming"
-msgstr ""
-
-#: auto-no-roaming-retrieve
-msgid "On without roaming"
-msgstr ""
-
-#: delivery-reports
-msgid "Delivery reports"
-msgstr "Laporan penyampaian"
-
-#: delivery-reports-details
-#, fuzzy
-msgid "Request notification of delivery for each text message sent"
-msgstr "Minta notifikasi penyampaian setiap pesan teks terkirim"
-
-#: autoConfigure
-msgid "Auto-configure"
-msgstr "Konfigurasi otomatis"
 
 #: httpProxyHost
 msgid "HTTP proxy host"
@@ -750,6 +983,10 @@ msgstr "Perangkat di sekitar"
 msgid "Visible to all"
 msgstr "Terlihat untuk semua"
 
+#: bluetooth-name-maxlength-alert
+msgid "Your device name exceeds {{length}} characters. Please retry again."
+msgstr ""
+
 #: bt-status-nopaired
 msgid "No devices paired"
 msgstr "Tidak ada perangkat yang dipasangkan"
@@ -818,9 +1055,33 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "Tersambung"
 
+#: device-status-connected-phone
+msgid "Connected to phone audio"
+msgstr ""
+
+#: device-status-connected-media
+msgid "Connected to media audio"
+msgstr ""
+
+#: device-status-connected-phone-media
+msgid "Connected to phone/media audio"
+msgstr ""
+
 #: device-option-unpair
 msgid "Unpair"
 msgstr "Pisahkan"
+
+#: device-option-confirm
+msgid "Confirm"
+msgstr ""
+
+#: device-option-unpair-confirmation
+msgid "Confirmation"
+msgstr ""
+
+#: device-option-unpair-device
+msgid "Unpair Device?"
+msgstr ""
 
 #: device-option-connect
 msgid "Connect"
@@ -849,6 +1110,10 @@ msgstr "Perangkat tidak dikenal"
 #: change-phone-name
 msgid "Change phone name"
 msgstr "Ubah nama telepon"
+
+#: change-phone-name-desc
+msgid "Change the name of your device as it appears in your computer"
+msgstr ""
 
 #: bluetooth-new-name
 msgid "New name"
@@ -941,7 +1206,15 @@ msgstr ""
 "Anda sedang tersambung ke perangkat ini. Pemisahan perangkat juga akan "
 "memutuskan sambungannya."
 
+#: pair-view-title
+msgid "Bluetooth Request From"
+msgstr ""
+
 #. # Connectivity :: Internet Sharing
+#: SSIDCannotBeEmpty
+msgid "The SSID cannot be empty"
+msgstr ""
+
 #: internetSharing
 msgid "Internet sharing"
 msgstr "Berbagi Internet"
@@ -1039,6 +1312,18 @@ msgstr "Volume"
 msgid "Tones"
 msgstr "Nada"
 
+#: touch-tones
+msgid "Audible touch tones"
+msgstr ""
+
+#: touch-tone-short
+msgid "Short"
+msgstr ""
+
+#: touch-tone-long
+msgid "Long"
+msgstr ""
+
 #: select-tone
 msgid "Select a tone"
 msgstr "Pilih nada"
@@ -1075,6 +1360,14 @@ msgstr "Buka kunci layar"
 msgid "Camera shutter"
 msgstr "Jepretan kamera"
 
+#: camera-recordingsound
+msgid "Video recording"
+msgstr ""
+
+#: sent-mail
+msgid "Sent Mail"
+msgstr ""
+
 #: sent-message
 msgid "Sent Message"
 msgstr "Pesan Terkirim"
@@ -1091,6 +1384,16 @@ msgstr "Dering & Peringatan"
 msgid "Voice"
 msgstr "Suara"
 
+#: savingringtone
+msgid "Saving ringtone…"
+msgstr ""
+
+#: unplayable-ringtone
+msgid ""
+"The ringtone was not changed because the selected file can not be played on "
+"this phone."
+msgstr ""
+
 #. # Personalization :: Display
 #: display
 msgid "Display"
@@ -1105,7 +1408,8 @@ msgid "Adjust automatically"
 msgstr "Otomatis sesuaikan"
 
 #: lockScreen
-msgid "Lock Screen"
+#, fuzzy
+msgid "Lock screen"
 msgstr "Kunci Layar"
 
 #: wallpaper
@@ -1135,6 +1439,10 @@ msgstr "10 menit"
 #: never
 msgid "never"
 msgstr "tidak pernah"
+
+#: lock-orientation
+msgid "Lock orientation"
+msgstr ""
 
 #. # Personalization :: Notifications
 #: notifications
@@ -1200,110 +1508,79 @@ msgstr "Contoh Format"
 msgid "%A, %B %d, %Y"
 msgstr "%A, %d %B %Y"
 
+#. # Personalization :: Homescreen
+#: homescreen
+msgid "Homescreen"
+msgstr ""
+
+#: changeHomescreen
+msgid "Change homescreen"
+msgstr ""
+
+#: changeHomescreenButton
+#, fuzzy
+msgctxt "changeHomescreenButton"
+msgid "Change"
+msgstr "Ubah"
+
+#: description
+msgid "Description"
+msgstr ""
+
 #. # Personalization :: Keyboard
-#: keyboard
-msgid "Keyboard"
+#: installedInputMethods
+msgid "Installed input methods"
+msgstr ""
+
+#: keyboards
+#, fuzzy
+msgid "Keyboards"
 msgstr "Papan tik"
 
 #: keyboardLayouts
 msgid "Keyboard layouts"
 msgstr "Tata letak papan tik"
 
+#: numberKeyboardLayouts
+msgid "Number layouts"
+msgstr ""
+
+#: optionKeyboardLayouts
+msgid "Option layouts"
+msgstr ""
+
 #: keypad
 msgid "Keypad"
 msgstr "Papan tombol"
 
-#: vibration
-msgid "Vibration"
-msgstr "Getar"
-
-#: clickSound
-msgid "Click sound"
-msgstr "Suara klik"
-
-#: autoCorrect
-msgid "Auto correction"
+#: selectedKeyboards
+msgid "Selected keyboards"
 msgstr ""
 
-#: wordSuggestion
-msgid "Word suggestion"
-msgstr "Saran ejaan"
-
-#: english
-msgid "English"
-msgstr "Inggris"
-
-#: dvorak
-msgid "English (Dvorak)"
-msgstr "Inggris (Dvorak)"
-
-#: spanish
-msgid "Spanish"
-msgstr "Spanyol"
-
-#: portuguese
-msgid "Portuguese Brazilian"
-msgstr "Portugis (Brasil)"
-
-#: latin
-msgid "Other Latin scripts"
-msgstr "Skrip Latin Lainnya"
-
-#: latin-desc
-msgid "French, German, Norwegian (Bokmål), Slovak, Turkish"
-msgstr "Prancis, Jerman, Norwegia (Bokmål), Slovakia, Turki"
-
-#: cyrillic
-msgid "Cyrillic scripts"
-msgstr "Skrip Cyrillic"
-
-#: cyrillic-desc
-msgid "Russian, Serbian (cyrillic)"
-msgstr "Rusia, Serbia (cyrillic)"
-
-#: arabic
-msgid "Arabic"
-msgstr "Arab"
-
-#: greek
-msgid "Greek"
-msgstr "Yunani"
-
-#: hebrew
-msgid "Hebrew"
-msgstr "Ibrani"
-
-#: jp-kanji
-msgid "Japanese"
-msgstr "Jepang"
-
-#: jp-kanji-desc
-msgid "Kanji"
-msgstr "Kanji"
-
-#: traditionalChinese
-msgid "Traditional Chinese"
-msgstr "China Tradisional"
-
-#: traditionalChinese-desc
-msgid "Zhuyin"
-msgstr "Zhuyin"
-
-#: simplifiedChinese
-msgid "Simplified Chinese"
-msgstr "China Sederhana"
-
-#: simplifiedChinese-desc
-msgid "Pinyin"
-msgstr "Pinyin"
-
-#: polish
-msgid "Polish"
+#: addMoreKeyboards
+msgid "Add more keyboards"
 msgstr ""
 
-#: serbian
-msgid "Serbian"
-msgstr "Serbia"
+#: mustHaveOneKeyboard
+msgid "At least one {{type}} keyboard should be selected"
+msgstr ""
+
+#: keyboardType-text
+msgid "text"
+msgstr ""
+
+#: keyboardType-url
+msgid "url"
+msgstr ""
+
+#: keyboardType-number
+msgctxt "keyboardType-number"
+msgid "number"
+msgstr ""
+
+#: defaultKeyboardEnabled
+msgid "{{appName}} {{layoutName}} is set as default input method"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Accounts (N/A)
@@ -1336,8 +1613,8 @@ msgid "Passcode: {{code}}"
 msgstr "Kode lewat: {{code}}"
 
 #: phoneLock
-msgid "Phone lock"
-msgstr "Kunci ponsel"
+msgid "Screen lock"
+msgstr ""
 
 #: simSecurity
 msgid "SIM security"
@@ -1347,6 +1624,10 @@ msgstr "Keamanan SIM"
 #: appPermissions
 msgid "App permissions"
 msgstr "Izin aplikasi"
+
+#: author
+msgid "Author"
+msgstr ""
 
 #: permissions
 msgid "Permissions"
@@ -1413,6 +1694,8 @@ msgid "Ring"
 msgstr "Dering"
 
 #: change
+#, fuzzy
+msgctxt "change"
 msgid "Change"
 msgstr "Ubah"
 
@@ -1420,10 +1703,14 @@ msgstr "Ubah"
 msgid "Create"
 msgstr "Buat"
 
-#: create-passcode
+#: create-a-passcode
 #, fuzzy
 msgid "Create a Passcode"
 msgstr "Buat kode lewat"
+
+#: passcode-heading
+msgid "Passcode"
+msgstr "Kode masuk"
 
 #: enter-passcode
 msgid "Enter passcode"
@@ -1445,13 +1732,9 @@ msgstr "Kode masuk salah"
 msgid "Passcode doesn’t match. Try again."
 msgstr "Kode masuk tidak cocok. Coba lagi."
 
-#: passcode
-msgid "Passcode"
-msgstr "Kode masuk"
-
 #: confirm-passcode
 #, fuzzy
-msgid "Confirm Passcode"
+msgid "Confirm passcode"
 msgstr "Konfirmasikan kode masuk"
 
 #: immediately
@@ -1503,11 +1786,13 @@ msgid "After 4 hours"
 msgstr "Setelah 4 jam"
 
 #: require-passcode
-msgid "Require Passcode"
+#, fuzzy
+msgid "Require passcode"
 msgstr "Memerlukan kode lewat"
 
 #: change-passcode
-msgid "Change Passcode"
+#, fuzzy
+msgid "Change passcode"
 msgstr "Ubah kode lewat"
 
 #. # Security :: SIM PIN Lock
@@ -1519,8 +1804,18 @@ msgstr "Tidak ada kartu SIM"
 msgid "SIM PIN"
 msgstr "PIN SIM"
 
+#: simPin2
+#, fuzzy
+msgid "SIM PIN2"
+msgstr "PIN SIM"
+
 #: pukCode
 msgid "PUK code"
+msgstr "Kode PUK"
+
+#: puk2Code
+#, fuzzy
+msgid "PUK2 code"
 msgstr "Kode PUK"
 
 #: whatIsSimPin
@@ -1550,17 +1845,23 @@ msgstr "Ubah PIN"
 msgid "Enter SIM PIN"
 msgstr "Masukkan PIN SIM"
 
+#: pin2Title
+#, fuzzy
+msgid "Enter SIM PIN2"
+msgstr "Masukkan PIN SIM"
+
 #: pukTitle
 msgid "Enter PUK code"
+msgstr "Masukkan kode PUK"
+
+#: puk2Title
+#, fuzzy
+msgid "Enter PUK2 code"
 msgstr "Masukkan kode PUK"
 
 #: newpinTitle
 msgid "New PIN"
 msgstr "PIN baru"
-
-#: pinErrorMsg
-msgid "The PIN was incorrect."
-msgstr "PIN salah."
 
 #: inputCodeRetriesLeft
 msgctxt "inputCodeRetriesLeft"
@@ -1602,6 +1903,7 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: pinAttemptMsg3[one]
+msgctxt "pinAttemptMsg3[one]"
 msgid ""
 "You have one try left to enter the correct code before locking the SIM card."
 msgstr ""
@@ -1650,6 +1952,17 @@ msgstr "Kartu SIM terkunci."
 msgid ""
 "You must enter the Personal Unlocking Key (PUK) code for the SIM card. Refer "
 "to your SIM card documentation or contact your carrier for more information."
+msgstr ""
+"Anda harus memasukkan kode Personal Unlocking Key (PUK) untuk kartu SIM ini. "
+"Silakan baca petunjuk penggunaan kartu SIM Anda atau hubungi operator Anda "
+"untuk mendapatkan informasi selengkapnya."
+
+#: enterPuk2Msg
+#, fuzzy
+msgid ""
+"You must enter the Personal Unlocking Key (PUK2) code for the SIM card. "
+"Refer to your SIM card documentation or contact your carrier for more "
+"information."
 msgstr ""
 "Anda harus memasukkan kode Personal Unlocking Key (PUK) untuk kartu SIM ini. "
 "Silakan baca petunjuk penggunaan kartu SIM Anda atau hubungi operator Anda "
@@ -1742,8 +2055,18 @@ msgstr ""
 msgid "Create PIN (must contain 4 to 8 digits)"
 msgstr "Buat PIN (4 atau 8 angka)"
 
+#: newSimPin2Msg
+#, fuzzy
+msgid "Create PIN2 (must contain 4 to 8 digits)"
+msgstr "Buat PIN (4 atau 8 angka)"
+
 #: confirmNewSimPinMsg
 msgid "Confirm new PIN"
+msgstr "Ulangi PIN baru"
+
+#: confirmNewSimPin2Msg
+#, fuzzy
+msgid "Confirm new PIN2"
 msgstr "Ulangi PIN baru"
 
 #: newPinErrorMsg
@@ -1762,10 +2085,26 @@ msgstr ""
 msgid "SIM card not ready"
 msgstr "Kartu SIM tidak siap"
 
+#: simCardIllegal
+msgid "Unauthorized SIM card"
+msgstr ""
+
 #. # Security :: Do Not Track
 #: doNotTrack
 msgid "Do Not Track"
 msgstr "Jangan Lacak"
+
+#: doNotTrackActions
+msgid "Tell websites and apps that I do not want to be tracked"
+msgstr ""
+
+#: allowTracking
+msgid "Tell websites and apps that I want to be tracked"
+msgstr ""
+
+#: doNotHavePrefOnTracking
+msgid "Do not tell websites and apps anything about my tracking preferences"
+msgstr ""
 
 #: doNotTrack-dt
 msgid "How does Do Not Track work?"
@@ -1798,9 +2137,9 @@ msgstr ""
 msgid "Storage"
 msgstr "Penyimpanan"
 
-#: enableUSBStorage
-msgid "Enable USB storage"
-msgstr "Aktifkan penyimpanan USB"
+#: enableUSBStorage1
+msgid "USB storage"
+msgstr ""
 
 #. # Storage :: Application storage
 #: deviceStorage
@@ -1889,10 +2228,11 @@ msgstr "Dipakai"
 msgid "Left"
 msgstr "Sisa"
 
-#: media-storage-details
+#: storage-details
+#, fuzzy
 msgid ""
-"Photos, videos and music are stored on the SD card. See media storage for "
-"details."
+"Photos, videos and music are stored separately from apps. See media storage "
+"for details."
 msgstr ""
 "Foto, video, dan musik disimpan pada kartu SD. Lihat penyimpanan media untuk "
 "detailnya."
@@ -1991,7 +2331,7 @@ msgstr ""
 
 #: change-default-location-confirm
 msgid ""
-"Changing the default media storage volume will effect where photos, videos, "
+"Changing the default media storage volume will affect where photos, videos, "
 "downloads and other media will be saved to by default. Existing data will "
 "remain in its current location."
 msgstr ""
@@ -2029,6 +2369,10 @@ msgstr ""
 msgid "Phone number"
 msgstr "Nomor telepon"
 
+#: unknown-phoneNumber
+msgid "Unknown"
+msgstr ""
+
 #: gitInfo
 #, fuzzy
 msgid "Git commit info"
@@ -2058,9 +2402,17 @@ msgstr "Grid"
 msgid "Show frames per second"
 msgstr "Tampilkan bingkai per detik"
 
+#: layers-draw-borders
+msgid "Draw layers borders"
+msgstr ""
+
 #: paint-flashing
 msgid "Flash repainted area"
 msgstr "Kilaskan area yang digambar ulang"
+
+#: apz-force-enable
+msgid "Enable APZ for all content processes"
+msgstr ""
 
 #: log-animations
 msgid "Log slow animations"
@@ -2073,6 +2425,14 @@ msgstr "Debug daring"
 #: wifi-debugging
 msgid "Wi-Fi output in adb"
 msgstr "Keluaran Wi-Fi pada adb"
+
+#: bluetooth-debugging
+msgid "Bluetooth output in adb"
+msgstr ""
+
+#: contacts-debugging
+msgid "Contacts debugging output in adb"
+msgstr ""
 
 #: ttl-monitor
 msgid "Show time to load"
@@ -2330,6 +2690,22 @@ msgstr "Luncurkan tampilan pertama kali"
 msgid "No first time use app found"
 msgstr "Tidak ada waktu pemakaian pertama aplikasi ditemukan"
 
+#: software-button-enabled
+msgid "Enable software home button"
+msgstr ""
+
+#: homegesture-enabled
+msgid "Home gesture enabled"
+msgstr ""
+
+#: edgesgesture-enabled
+msgid "Edges gesture enabled"
+msgstr ""
+
+#: debug-gaia-enabled
+msgid "Gaia debug traces"
+msgstr ""
+
 #. # Device :: Battery
 #: battery
 msgid "Battery"
@@ -2472,6 +2848,104 @@ msgstr "kebijakan privasi"
 msgid "."
 msgstr "."
 
+#. # Device :: Improve Browser OS :: Submit Your Feedback
+#: sendFeedbackTitle
+msgid "Submit Your Feedback"
+msgstr ""
+
+#: feedback-description
+msgid "Your feedback will help us to improve Firefox OS."
+msgstr ""
+
+#: feedback-happy
+msgid "Happy"
+msgstr ""
+
+#: feedback-sad
+msgid "Sad"
+msgstr ""
+
+#: feedback-mood-description
+msgid "How do you feel?"
+msgstr ""
+
+#: feedback_whyfeel_happy
+msgid "Why do you feel happy?"
+msgstr ""
+
+#: feedback_whyfeel_sad
+msgid "Why do you feel sad?"
+msgstr ""
+
+#: feedback-mood-explain
+msgid "Please tell us in detail."
+msgstr ""
+
+#: feedback-public-description
+msgid ""
+"The content of your feedback will be public, so please be sure not include "
+"any personal information."
+msgstr ""
+
+#: feedback-contactyou
+msgid "Check here to let us contact you from your email."
+msgstr ""
+
+#: email-address1
+msgid "Email address:"
+msgstr ""
+
+#: email-keepprivate
+msgid "Don't worry. Your email will always be kept private."
+msgstr ""
+
+#: feedback-sendbtn
+msgid "Send Feedback"
+msgstr ""
+
+#: feedback-errormessage-connect-error
+msgid ""
+"Sorry, the system can't send your suggestion due to a data connection error. "
+"Please try again when the issue is resolved."
+msgstr ""
+
+#: feedback-errormessage-server-off
+msgid ""
+"Sorry, the system can't send your suggestion because the server shut down. "
+"Please wait a moment and try again."
+msgstr ""
+
+#: feedback-errormessage-timeout
+msgid ""
+"Sorry, the system can't send your suggestion because of a timeout. Please "
+"restart and try again."
+msgstr ""
+
+#: feedback-errormessage-wrong-email
+msgid ""
+"Sorry, the system can't send your suggestion because the email address is "
+"missing or due to a formatting error. Please use a valid email address and "
+"try again."
+msgstr ""
+
+#: feedback-errormessage-empty-comment
+msgid ""
+"Sorry, the system can't send your suggestion because the comment field is "
+"empty. Please enter some text and try again."
+msgstr ""
+
+#: feedback-errormessage-just-sent
+msgid ""
+"Sorry, the system can't send your suggestion because you already sent us "
+"feedback. Please try our next software update and send again."
+msgstr ""
+
+#: feedback-done-msg
+msgid ""
+"Thanks for the feedback! We will use it to help us create a better "
+"experience in future release of Firefox OS."
+msgstr ""
+
 #. # Device :: Help
 #: online-support
 msgid "Online support:"
@@ -2480,10 +2954,6 @@ msgstr "Layanan dukungan daring:"
 #: call-support
 msgid "Call support:"
 msgstr "Layanan pelangganan:"
-
-#: call-support-numbers
-msgid "{{link1}} or {{link2}}"
-msgstr "{{link1}} atau {{link2}}"
 
 #: user-guide
 msgid "User guide"
@@ -2591,6 +3061,81 @@ msgstr ""
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr ""
+
+#~ msgid "Vibration"
+#~ msgstr "Getar"
+
+#~ msgid "Click sound"
+#~ msgstr "Suara klik"
+
+#~ msgid "Word suggestion"
+#~ msgstr "Saran ejaan"
+
+#~ msgid "English"
+#~ msgstr "Inggris"
+
+#~ msgid "English (Dvorak)"
+#~ msgstr "Inggris (Dvorak)"
+
+#~ msgid "Spanish"
+#~ msgstr "Spanyol"
+
+#~ msgid "Portuguese Brazilian"
+#~ msgstr "Portugis (Brasil)"
+
+#~ msgid "Other Latin scripts"
+#~ msgstr "Skrip Latin Lainnya"
+
+#~ msgid "French, German, Norwegian (Bokmål), Slovak, Turkish"
+#~ msgstr "Prancis, Jerman, Norwegia (Bokmål), Slovakia, Turki"
+
+#~ msgid "Cyrillic scripts"
+#~ msgstr "Skrip Cyrillic"
+
+#~ msgid "Russian, Serbian (cyrillic)"
+#~ msgstr "Rusia, Serbia (cyrillic)"
+
+#~ msgid "Arabic"
+#~ msgstr "Arab"
+
+#~ msgid "Greek"
+#~ msgstr "Yunani"
+
+#~ msgid "Hebrew"
+#~ msgstr "Ibrani"
+
+#~ msgid "Japanese"
+#~ msgstr "Jepang"
+
+#~ msgid "Kanji"
+#~ msgstr "Kanji"
+
+#~ msgid "Traditional Chinese"
+#~ msgstr "China Tradisional"
+
+#~ msgid "Zhuyin"
+#~ msgstr "Zhuyin"
+
+#~ msgid "Simplified Chinese"
+#~ msgstr "China Sederhana"
+
+#~ msgid "Pinyin"
+#~ msgstr "Pinyin"
+
+#~ msgid "Serbian"
+#~ msgstr "Serbia"
+
+#~ msgid "Phone lock"
+#~ msgstr "Kunci ponsel"
+
+#~ msgid "The PIN was incorrect."
+#~ msgstr "PIN salah."
+
+#~ msgid "Enable USB storage"
+#~ msgstr "Aktifkan penyimpanan USB"
+
+#~ msgid "{{link1}} or {{link2}}"
+#~ msgstr "{{link1}} atau {{link2}}"
 
 #~ msgid "Wi-Fi protected setup"
 #~ msgstr "Persiapan Wi-Fi terlindungi"
@@ -2733,9 +3278,6 @@ msgstr ""
 
 #~ msgid "or"
 #~ msgstr "atau"
-
-#~ msgid "Call"
-#~ msgstr "Panggilan"
 
 #~ msgid "Normal"
 #~ msgstr "Normal"

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"POT-Creation-Date: 2013-11-15 22:11+0100\n"
 "PO-Revision-Date: 2013-08-10 11:34+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -73,6 +73,15 @@ msgstr "Sguab às an neach-aithne"
 msgid "Select contact"
 msgstr "Tagh neach-aithne"
 
+#: selectAll
+#, fuzzy
+msgid "Select all"
+msgstr "Tagh post-d"
+
+#: deselectAll
+msgid "Deselect all"
+msgstr ""
+
 #: editContact
 msgid "Edit contact"
 msgstr "Deasaich an neach-aithne"
@@ -89,13 +98,13 @@ msgstr "Thoir air falbh"
 msgid "Comments"
 msgstr "Beachdan"
 
-#: no_phones
-msgid "No phones"
-msgstr "Chan eil fòn ann"
+#: no_contact_phones
+msgid "This contact does not have a phone number"
+msgstr ""
 
-#: no_email
-msgid "No email"
-msgstr "Chan eil post-d ann"
+#: no_contact_email
+msgid "This contact does not have an email address"
+msgstr ""
 
 #: removePhotoConfirm
 msgid "Remove contact picture?"
@@ -335,9 +344,121 @@ msgstr "Lorg"
 msgid "No contacts found"
 msgstr "Cha deach neach-aithne sam bith a lorg"
 
+#: transferContactsTitle
+msgid "Transfer Contacts"
+msgstr ""
+
 #: importContactsTitle
 msgid "Import Contacts"
 msgstr "Ion-phortaich luchd-aithne"
+
+#: exportContactsTitle
+#, fuzzy
+msgid "Export Contacts"
+msgstr "Ion-phortaich luchd-aithne"
+
+#: exportContactsAction
+msgid "Export"
+msgstr ""
+
+#. # Export
+#: simExport-title
+msgid "Export to SIM"
+msgstr ""
+
+#: sdExport-title
+msgid "Export to SD Card"
+msgstr ""
+
+#: btExport-title
+msgid "Export to Bluetooth"
+msgstr ""
+
+#: sdUMSEnabled
+msgid "Cannot use SD Card because USB storage is enabled"
+msgstr ""
+
+#: exportErrorTitle
+msgid "Export error"
+msgstr ""
+
+#: contactsExported
+#, fuzzy
+msgid "{{ plural(exported) }}"
+msgstr "{[ plural(imported) ]}"
+
+#: contactsExported[zero]
+#, fuzzy
+msgid "No contacts exported"
+msgstr "Cha deach neach-aithne sam bith ion-phortadh"
+
+#: contactsExported[one]
+#, fuzzy
+msgctxt "contactsExported[one]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "Chaidh {{imported}} charaid ion-phortadh à {{total}}"
+
+#: contactsExported[two]
+#, fuzzy
+msgctxt "contactsExported[two]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "Chaidh {{imported}} charaid ion-phortadh à {{total}}"
+
+#: contactsExported[few]
+#, fuzzy
+msgctxt "contactsExported[few]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "Chaidh {{imported}} charaid ion-phortadh à {{total}}"
+
+#: contactsExported[many]
+#, fuzzy
+msgctxt "contactsExported[many]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "Chaidh {{imported}} charaid ion-phortadh à {{total}}"
+
+#: contactsExported[other]
+#, fuzzy
+msgctxt "contactsExported[other]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "Chaidh {{imported}} charaid ion-phortadh à {{total}}"
+
+#: exportError-general
+msgid "Some error happened while exporting"
+msgstr ""
+
+#: exportError-SD-shared
+msgctxt "exportError-SD-shared"
+msgid "Can't access memory card because it's shared"
+msgstr ""
+
+#: exportError-SD-unavailable
+msgctxt "exportError-SD-unavailable"
+msgid "Memory card is not available"
+msgstr ""
+
+#: exportError-SD-noSpace
+msgctxt "exportError-SD-noSpace"
+msgid "There's not enough space on the memory card to export the contacts"
+msgstr ""
+
+#: exportError-SIM-unavailable
+msgid "SIM card is not available"
+msgstr ""
+
+#: exportError-BT-shared
+msgctxt "exportError-BT-shared"
+msgid "Can't access memory card because it's shared"
+msgstr ""
+
+#: exportError-BT-unavailable
+msgctxt "exportError-BT-unavailable"
+msgid "Memory card is not available"
+msgstr ""
+
+#: exportError-BT-noSpace
+msgctxt "exportError-BT-noSpace"
+msgid "There's not enough space on the memory card to export the contacts"
+msgstr ""
 
 #. # SIM import
 #: simContacts-import
@@ -396,59 +517,83 @@ msgstr ""
 "Gus luchd-aithne ion-phortadh, cuir a-steach a' chairt SIM agad no thoir a' "
 "ghlas dheth"
 
+#: noSimMsgExport
+#, fuzzy
+msgid "To export contacts insert or unlock your SIM card"
+msgstr ""
+"Gus luchd-aithne ion-phortadh, cuir a-steach a' chairt SIM agad no thoir a' "
+"ghlas dheth"
+
 #. # SD Card import
-#: sdContacts-import
-msgid "Import contacts from SD card"
+#: memoryCardContacts-import
+#, fuzzy
+msgid "Import contacts from memory card"
 msgstr "Ion-phortaich luchd-aithne on chairt SD"
 
-#: sdContacts-importing
-msgid "Importing contacts from SD card…"
+#: memoryCardContacts-importing
+#, fuzzy
+msgid "Importing contacts from memory card…"
 msgstr "Ag ion-phortadh an luchd-aithne on chairt SD…"
 
-#: sdContacts-reading
-msgid "Reading from SD card…"
+#: memoryCardContacts-reading
+#, fuzzy
+msgid "Reading from memory card…"
 msgstr "A' leughadh on chairt SD…"
 
-#: sdContacts-error
-msgid "Could not import contacts from SD card"
+#: memoryCardContacts-error
+#, fuzzy
+msgid "Could not import contacts from memory card"
 msgstr "Cha b' urrainn dhuinn an luchd-aithne ion-phortadh on chairt SD"
 
-#: sdContacts-imported3
-msgctxt "sdContacts-imported3"
+#: memoryCardContacts-imported3
+#, fuzzy
+msgctxt "memoryCardContacts-imported3"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: sdContacts-imported3[zero]
-msgid "No contacts detected on SD card to import"
+#: memoryCardContacts-imported3[zero]
+#, fuzzy
+msgid "No contacts detected on memory card to import"
 msgstr "Cha do lorg sinn neach-aithne sam bith air a' chairt SD"
 
-#: sdContacts-imported3[one]
-msgctxt "sdContacts-imported3[one]"
+#: memoryCardContacts-imported3[one]
+#, fuzzy
+msgctxt "memoryCardContacts-imported3[one]"
 msgid "Imported one contact"
 msgstr "Chaidh {{n}} neach-aithne ion-phortadh"
 
-#: sdContacts-imported3[two]
-msgctxt "sdContacts-imported3[two]"
+#: memoryCardContacts-imported3[two]
+#, fuzzy
+msgctxt "memoryCardContacts-imported3[two]"
 msgid "Imported {{n}} contacts"
 msgstr "Chaidh {{n}} neach-aithne ion-phortadh"
 
-#: sdContacts-imported3[few]
-msgctxt "sdContacts-imported3[few]"
-msgid "Imported {{n}} contacts"
-msgstr "Chaidh {{n}} luchd-aithne ion-phortadh"
-
-#: sdContacts-imported3[many]
-msgctxt "sdContacts-imported3[many]"
+#: memoryCardContacts-imported3[few]
+#, fuzzy
+msgctxt "memoryCardContacts-imported3[few]"
 msgid "Imported {{n}} contacts"
 msgstr "Chaidh {{n}} neach-aithne ion-phortadh"
 
-#: sdContacts-imported3[other]
-msgctxt "sdContacts-imported3[other]"
+#: memoryCardContacts-imported3[many]
+#, fuzzy
+msgctxt "memoryCardContacts-imported3[many]"
 msgid "Imported {{n}} contacts"
 msgstr "Chaidh {{n}} neach-aithne ion-phortadh"
 
-#: noSdMsg
-msgid "To import contacts insert a SD card"
+#: memoryCardContacts-imported3[other]
+#, fuzzy
+msgctxt "memoryCardContacts-imported3[other]"
+msgid "Imported {{n}} contacts"
+msgstr "Chaidh {{n}} neach-aithne ion-phortadh"
+
+#: noMemoryCardMsg
+#, fuzzy
+msgid "To import contacts insert a memory card"
+msgstr "Gus luchd-aithne ion-phortadh, cuir a-steach cairt SD"
+
+#: noMemoryCardMsgExport
+#, fuzzy
+msgid "To export contacts insert a memory card"
 msgstr "Gus luchd-aithne ion-phortadh, cuir a-steach cairt SD"
 
 #: genericProgress
@@ -551,16 +696,23 @@ msgid "Order by last name"
 msgstr "Seòrsaich a-rèir sloinnidh"
 
 #: importSim2
+#, fuzzy
+msgctxt "importSim2"
 msgid "SIM card"
 msgstr "Cairt SIM"
 
-#: importSd
-msgid "SD card"
-msgstr "Cairt SD"
+#: importMemoryCard
+msgctxt "importMemoryCard"
+msgid "Memory card"
+msgstr ""
 
 #: importGmail
 msgid "Gmail"
 msgstr "Gmail"
+
+#: bluetooth
+msgid "Bluetooth"
+msgstr ""
 
 #: importOutlook
 msgid "Outlook"
@@ -596,6 +748,22 @@ msgstr ""
 msgid "Not enabled yet"
 msgstr "Chan eil seo an comas fhathast"
 
+#: genericNoConnection
+msgid "To import contacts connect to Wi-Fi or data network"
+msgstr ""
+
+#. # Used for export, just in case the strings will diverge on time
+#: simCard
+#, fuzzy
+msgctxt "simCard"
+msgid "SIM card"
+msgstr "Cairt SIM"
+
+#: memoryCard
+msgctxt "memoryCard"
+msgid "Memory card"
+msgstr ""
+
 #. # No contacts
 #: create-new
 msgid "Create a new contact"
@@ -613,6 +781,71 @@ msgstr "Chan eil luchd-aithne ann"
 msgid "Start adding them now"
 msgstr "Nach cuir thu ris iad an-dràsta?"
 
+#: notImported
+msgid "Not imported"
+msgstr ""
+
+#: imported
+msgid "Imported"
+msgstr ""
+
+#: today
+msgid "Today"
+msgstr ""
+
+#: yesterday
+msgid "Yesterday"
+msgstr ""
+
+#: messageCanceling
+msgid "Please hold on. We are canceling the ongoing operation."
+msgstr ""
+
+#: organise-contacts
+msgid "Organize Contacts"
+msgstr ""
+
+#: find-merge-contacts
+msgid "Find duplicate contacts"
+msgstr ""
+
+#: preparing-contacts
+msgid "Preparing contacts"
+msgstr ""
+
+#~ msgid "No phones"
+#~ msgstr "Chan eil fòn ann"
+
+#~ msgid "No email"
+#~ msgstr "Chan eil post-d ann"
+
+#~ msgctxt "sdContacts-imported3"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "sdContacts-imported3[one]"
+#~ msgid "Imported one contact"
+#~ msgstr "Chaidh {{n}} neach-aithne ion-phortadh"
+
+#~ msgctxt "sdContacts-imported3[two]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "Chaidh {{n}} neach-aithne ion-phortadh"
+
+#~ msgctxt "sdContacts-imported3[few]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "Chaidh {{n}} luchd-aithne ion-phortadh"
+
+#~ msgctxt "sdContacts-imported3[many]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "Chaidh {{n}} neach-aithne ion-phortadh"
+
+#~ msgctxt "sdContacts-imported3[other]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "Chaidh {{n}} neach-aithne ion-phortadh"
+
+#~ msgid "SD card"
+#~ msgstr "Cairt SD"
+
 #~ msgid "Windows Live"
 #~ msgstr "Windows Live"
 
@@ -624,9 +857,6 @@ msgstr "Nach cuir thu ris iad an-dràsta?"
 
 #~ msgid "Enable Facebook"
 #~ msgstr "Cuir an comas Facebook"
-
-#~ msgid "No contacts imported"
-#~ msgstr "Cha deach neach-aithne sam bith ion-phortadh"
 
 #~ msgctxt "simContacts-imported2[few]"
 #~ msgid "Imported {{n}} contacts"

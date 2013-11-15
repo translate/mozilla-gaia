@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-22 13:57+0100\n"
+"POT-Creation-Date: 2013-11-15 22:32+0100\n"
 "PO-Revision-Date: 2013-09-16 19:53+0000\n"
 "Last-Translator: thangamani-arun <thangam.arunx@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1379361196.000000\n"
@@ -262,6 +262,10 @@ msgctxt "authentication"
 msgid "Authentication"
 msgstr "அங்கீகாரம்"
 
+#: eap
+msgid "EAP method"
+msgstr ""
+
 #: identity
 msgid "Identifier"
 msgstr "அடையாளங்காட்டி"
@@ -350,8 +354,18 @@ msgid "PIN is 4 or 8 digits"
 msgstr "பிண் 4 அல்லது 8 இலக்ங்களில்"
 
 #: wpsPinInput
-msgid "Input {{pin}} to opposite device"
+#, fuzzy
+msgid "Input {{pin}} to an opposite device"
 msgstr "எதிர் சாதன உள்ளீடு {{pin}}"
+
+#: wpsPinAps
+msgid "Select an opposite device"
+msgstr ""
+
+#: wpsAnyAp
+msgctxt "wpsAnyAp"
+msgid "Any"
+msgstr ""
 
 #: wpsCancelMessage
 msgid "Cancel WPS"
@@ -366,6 +380,14 @@ msgstr "டபிள்யூபிஎஸ் ஐ இரத்துசெய்�
 msgid "Call Settings"
 msgstr "அழைப்பு அமைப்புகள்"
 
+#: callSettingsQuery
+msgid "Requesting network info…"
+msgstr "பிணைய தகவலை கோருகிறது..."
+
+#: callSettingsQueryError
+msgid "Error in query"
+msgstr "கேள்வியில் பிழை"
+
 #: voiceMail
 msgid "Voicemail"
 msgstr "குரல் மடல்"
@@ -378,9 +400,25 @@ msgstr "குரல்மடல் எண்"
 msgid "Not set"
 msgstr "இன்னமும் இல்லை"
 
+#: voicePrivacyMode
+msgid "Voice privacy mode"
+msgstr ""
+
 #: callWaiting
 msgid "Call waiting"
 msgstr "அழைப்பு காத்திருக்கிறது"
+
+#: confirmCallWaitingTitle
+msgid "Unable to confirm call waiting preferences"
+msgstr "காத்திருக்கும் அழைப்புகளுக்கு முன்னுரிமைகளை உறுதிசெய்ய இயலவில்லை"
+
+#: confirmCallWaitingDesc
+msgid ""
+"The device is currently unable to communicate with the carrier. Try setting "
+"the preference again."
+msgstr ""
+"இந்த செல்பேசி தற்பொது கேரியருடன் தொடர்புகொள்ள இயலவில்லை. மீண்டும் முன்னுரிமை அமைத்தலை "
+"முயற்சி."
 
 #: callForwarding
 msgid "Call forwarding"
@@ -422,14 +460,6 @@ msgstr "அழைப்பு வந்தடையாதபொது மு�
 msgid "When unreachable"
 msgstr "அழைப்பு வந்தடையாதபொது"
 
-#: callForwardingRequesting
-msgid "Requesting network info…"
-msgstr "பிணைய தகவலை கோருகிறது..."
-
-#: callForwardingQueryError
-msgid "Error in query"
-msgstr "கேள்வியில் பிழை"
-
 #: callForwardingForwardingVoiceTo
 msgid "Voice calls to"
 msgstr "குரல் அழைப்புகளுக்கு"
@@ -442,22 +472,6 @@ msgstr "முடக்கப்பட்டது"
 #: callForwardingConfirmTitle
 msgid "Call forwarding confirmation message"
 msgstr "அழைப்பை முன்னுப்பியதற்க்கான உறுதிச் செய்தி"
-
-#: callBroadcastService
-msgid "Cell broadcast service"
-msgstr "செல்பேசி ஒலிபரப்பு சேவை"
-
-#: confirmCallWaitingTitle
-msgid "Unable to confirm call waiting preferences"
-msgstr "காத்திருக்கும் அழைப்புகளுக்கு முன்னுரிமைகளை உறுதிசெய்ய இயலவில்லை"
-
-#: confirmCallWaitingDesc
-msgid ""
-"The device is currently unable to communicate with the carrier. Try setting "
-"the preference again."
-msgstr ""
-"இந்த செல்பேசி தற்பொது கேரியருடன் தொடர்புகொள்ள இயலவில்லை. மீண்டும் முன்னுரிமை அமைத்தலை "
-"முயற்சி."
 
 #: cf-alwaysUseThisNumber
 msgid "Always use this number"
@@ -490,6 +504,218 @@ msgstr "உங்களுடைய இயக்குனர் அந்த ந
 #: callForwardingSetError
 msgid "Call settings error."
 msgstr "அழைப்பு அமைப்புகளில் பிழை."
+
+#: callerId
+msgid "Caller ID"
+msgstr ""
+
+#: callerId-default
+msgid "Network default"
+msgstr ""
+
+#: callerId-hide
+msgid "Hide number"
+msgstr ""
+
+#: callerId-show
+#, fuzzy
+msgid "Show number"
+msgstr "தொலைபேசி எண்"
+
+#: fdn
+msgctxt "fdn"
+msgid "Fixed dialing numbers"
+msgstr ""
+
+#: fdnSettings
+msgctxt "fdnSettings"
+msgid "Fixed dialing numbers"
+msgstr ""
+
+#: fdn-authorizedNumbers
+msgid "Authorized numbers"
+msgstr ""
+
+#: fdn-authorizedNumbers-desc
+msgid "List of numbers that can be called"
+msgstr ""
+
+#: fdn-explanation1
+msgid "Restrict which numbers can be dialed from this phone."
+msgstr ""
+
+#: fdn-explanation2
+msgid "(Emergency numbers will always be dialable)"
+msgstr ""
+
+#: fdnEnable
+msgid "Enable FDN"
+msgstr ""
+
+#: fdnDisable
+msgid "Disable FDN"
+msgstr ""
+
+#: fdnReset
+msgid "Reset PIN2"
+msgstr ""
+
+#: fdnAttemptMsg3
+#, fuzzy
+msgctxt "fdnAttemptMsg3"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: fdnAttemptMsg3[one]
+#, fuzzy
+msgctxt "fdnAttemptMsg3[one]"
+msgid ""
+"You have one try left to enter the correct code before locking the SIM card."
+msgstr "சிம் அட்டையை பூட்டும் முன் ஒரு வாய்ப்புதான் மீதம் உள்ளது சரியான குறியீடை உள்ளிடு."
+
+#: fdnAttemptMsg3[two]
+#, fuzzy
+msgctxt "fdnAttemptMsg3[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr "சிம் அட்டையை பூட்டும் முன் {{n}} வாய்ப்புதான் மீதம் உள்ளது சரியான குறியீடை உள்ளிடு."
+
+#: fdnAttemptMsg3[few]
+#, fuzzy
+msgctxt "fdnAttemptMsg3[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr "சிம் அட்டையை பூட்டும் முன் {{n}} வாய்ப்புதான் மீதம் உள்ளது சரியான குறியீடை உள்ளிடு."
+
+#: fdnAttemptMsg3[many]
+#, fuzzy
+msgctxt "fdnAttemptMsg3[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr "சிம் அட்டையை பூட்டும் முன் {{n}} வாய்ப்புதான் மீதம் உள்ளது சரியான குறியீடை உள்ளிடு."
+
+#: fdnAttemptMsg3[other]
+#, fuzzy
+msgctxt "fdnAttemptMsg3[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr "சிம் அட்டையை பூட்டும் முன் {{n}} வாய்ப்புதான் மீதம் உள்ளது சரியான குறியீடை உள்ளிடு."
+
+#: fdnLastChanceMsg
+#, fuzzy
+msgid ""
+"This is your last chance to enter the correct PIN2. Otherwise, you must "
+"enter the PUK2 code to use this SIM card."
+msgstr ""
+"உங்களுடைய பிண்ணை சரியாக உள்ளிட இதுவே கடைசி முயற்சி. இல்லையென்றால், பியூகெ குறியீட்டை "
+"உள்ளிட்டு சிம் அட்டையை பயன்படுத்து."
+
+#: fdnErrorMsg
+#, fuzzy
+msgid "The PIN2 code is incorrect."
+msgstr "பியூகெ குறியீடு தவறானது."
+
+#: fdn-enabled-warning
+msgid "Call forwarding is disabled by FDN."
+msgstr ""
+
+#: fdnContact-name
+#, fuzzy
+msgid "name"
+msgstr "பெயர்"
+
+#: fdnContact-number
+msgctxt "fdnContact-number"
+msgid "number"
+msgstr ""
+
+#: fdnContact-submit
+msgid "submit"
+msgstr ""
+
+#: fdnAction-add
+msgid "Add contact"
+msgstr ""
+
+#: fdnAction-call
+msgid "Call"
+msgstr ""
+
+#: fdnAction-edit
+msgid "Edit contact"
+msgstr ""
+
+#: fdnAction-delete
+msgid "Delete contact"
+msgstr ""
+
+#. # Connectivity :: Messaging
+#: messagingSettings
+#, fuzzy
+msgid "Messaging Settings"
+msgstr "செய்தி அமைப்புகள்"
+
+#: message-confirmation
+#, fuzzy
+msgid "Message confirmation"
+msgstr "உரை செய்தி உறுதிப்படுத்துதல்"
+
+#: message-delivery-reports
+msgid "Delivery reports"
+msgstr "விநியோக அறிக்கைகள்"
+
+#: message-delivery-reports-details
+#, fuzzy
+msgid "Request notification of delivery for each message sent"
+msgstr "அனுப்பப்படும் ஒவ்வொரு உரைச்செய்தியின் விநியோக அறிவிப்பை கேட்கவும்"
+
+#: mmsTitle
+msgid "Multimedia messaging (MMS)"
+msgstr "பல்லூடக செய்தி (எம்எம்எஸ்)"
+
+#: auto-retrieve
+msgid "Auto retrieve"
+msgstr "தானியக்க மீட்டெடுத்தல்"
+
+#: auto-retrieve-details
+msgid "Automatically retrieve messages"
+msgstr "தானாகவே செய்திகளை மீட்டெடுக்கிறது"
+
+#: manual-retrieve
+msgid "Off"
+msgstr "முடக்கு"
+
+#: auto-roaming-retrieve
+msgid "On with roaming"
+msgstr "ரோமிங் செயற்பாட்டில்"
+
+#: auto-no-roaming-retrieve
+msgid "On without roaming"
+msgstr "ரோமிங் இல்லாமல்"
+
+#: autoConfigure
+msgid "Auto-configure"
+msgstr "தானியக்க கட்டமைவு"
+
+#: wapPushMessages
+msgid "WAP Push messages"
+msgstr ""
+
+#: wapPush
+msgid "WAP Push"
+msgstr ""
+
+#: cellBroadcastMessages
+msgid "Cell broadcast messages"
+msgstr ""
+
+#: cellBroadcast
+msgid "Cell broadcast"
+msgstr ""
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
@@ -533,6 +759,10 @@ msgctxt "operator-networkType-auto"
 msgid "Automatic"
 msgstr "தானியங்கி"
 
+#: operator-networkType-prefer2G
+msgid "2G preferred"
+msgstr ""
+
 #: operator-networkType-2G
 msgid "2G only"
 msgstr "2ஜி மட்டும்"
@@ -540,6 +770,35 @@ msgstr "2ஜி மட்டும்"
 #: operator-networkType-3G
 msgid "3G only"
 msgstr "3ஜி மட்டும்"
+
+#. # DUALSTACK
+#: operator-networkType-GSM
+msgid "GSM"
+msgstr ""
+
+#: operator-networkType-WCDMA
+msgid "WCDMA"
+msgstr ""
+
+#: operator-networkType-CDMA
+msgid "CDMA"
+msgstr ""
+
+#: operator-networkType-EVDO
+msgid "EVDO"
+msgstr ""
+
+#: operator-networkType-preferGSM
+msgid "GSM preferred"
+msgstr ""
+
+#: operator-networkType-preferWCDMA
+msgid "WCDMA preferred"
+msgstr ""
+
+#: operator-networkType-preferEVDO
+msgid "EVDO preferred"
+msgstr ""
 
 #: operator-autoSelect
 msgid "Automatic selection"
@@ -549,6 +808,10 @@ msgstr "தானியக்கமாகக் கண்டறிதல்"
 msgctxt "operator-networkSelect-auto"
 msgid "Automatic"
 msgstr "தானியங்கி"
+
+#: operator-networkSelect-manual
+msgid "Manual"
+msgstr ""
 
 #: operator-turnAutoSelectOff
 msgid "Turn automatic selection off to view available network operators."
@@ -568,6 +831,23 @@ msgstr "இணைப்பு தோல்வியுற்றது"
 msgctxt "operator-status-connected"
 msgid "Connected"
 msgstr "இணைக்கப்பட்டது"
+
+#: operator-roamingPreference
+msgid "Roaming preference"
+msgstr ""
+
+#: operator-roamingPreference-home
+msgid "Home"
+msgstr ""
+
+#: operator-roamingPreference-any
+msgctxt "operator-roamingPreference-any"
+msgid "Any"
+msgstr ""
+
+#: operator-roamingPreference-affiliated
+msgid "Affiliated"
+msgstr ""
 
 #: apn
 msgid "APN"
@@ -589,14 +869,6 @@ msgstr "செய்தி அமைப்புகள்"
 msgid "APN settings"
 msgstr "ஏபிஎன் அமைப்புகள்"
 
-#: text-message-confirmation
-msgid "Text message confirmation"
-msgstr "உரை செய்தி உறுதிப்படுத்துதல்"
-
-#: mmsTitle
-msgid "Multimedia messaging (MMS)"
-msgstr "பல்லூடக செய்தி (எம்எம்எஸ்)"
-
 #: mmsport
 msgid "MMS port"
 msgstr "எம்எம்எஸ் போர்ட்"
@@ -608,38 +880,6 @@ msgstr "எம்எம்எஸ் பிராக்சி"
 #: mmsc
 msgid "MMSC"
 msgstr "எம்எம்எஸ்சி"
-
-#: auto-retrieve
-msgid "Auto retrieve"
-msgstr "தானியக்க மீட்டெடுத்தல்"
-
-#: auto-retrieve-details
-msgid "Automatically retrieve messages"
-msgstr "தானாகவே செய்திகளை மீட்டெடுக்கிறது"
-
-#: manual-retrieve
-msgid "Off"
-msgstr "முடக்கு"
-
-#: auto-roaming-retrieve
-msgid "On with roaming"
-msgstr "ரோமிங் செயற்பாட்டில்"
-
-#: auto-no-roaming-retrieve
-msgid "On without roaming"
-msgstr "ரோமிங் இல்லாமல்"
-
-#: delivery-reports
-msgid "Delivery reports"
-msgstr "விநியோக அறிக்கைகள்"
-
-#: delivery-reports-details
-msgid "Request notification of delivery for each text message sent"
-msgstr "அனுப்பப்படும் ஒவ்வொரு உரைச்செய்தியின் விநியோக அறிவிப்பை கேட்கவும்"
-
-#: autoConfigure
-msgid "Auto-configure"
-msgstr "தானியக்க கட்டமைவு"
 
 #: httpProxyHost
 msgid "HTTP proxy host"
@@ -746,6 +986,10 @@ msgstr "அருகாமையிலுள்ள சாதனங்கள்"
 msgid "Visible to all"
 msgstr "அனைவருக்கும் தெரியும்படி"
 
+#: bluetooth-name-maxlength-alert
+msgid "Your device name exceeds {{length}} characters. Please retry again."
+msgstr ""
+
 #: bt-status-nopaired
 msgid "No devices paired"
 msgstr "எந்த சாதனங்களும் சோடி சேரவில்லை"
@@ -814,9 +1058,33 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "இணைக்கப்பட்டது"
 
+#: device-status-connected-phone
+msgid "Connected to phone audio"
+msgstr ""
+
+#: device-status-connected-media
+msgid "Connected to media audio"
+msgstr ""
+
+#: device-status-connected-phone-media
+msgid "Connected to phone/media audio"
+msgstr ""
+
 #: device-option-unpair
 msgid "Unpair"
 msgstr "சோடியை பிரி"
+
+#: device-option-confirm
+msgid "Confirm"
+msgstr ""
+
+#: device-option-unpair-confirmation
+msgid "Confirmation"
+msgstr ""
+
+#: device-option-unpair-device
+msgid "Unpair Device?"
+msgstr ""
 
 #: device-option-connect
 msgid "Connect"
@@ -845,6 +1113,10 @@ msgstr "தெரியாத சாதனம்"
 #: change-phone-name
 msgid "Change phone name"
 msgstr "செல்பேசியின் பெயரை மாற்று"
+
+#: change-phone-name-desc
+msgid "Change the name of your device as it appears in your computer"
+msgstr ""
 
 #: bluetooth-new-name
 msgid "New name"
@@ -934,7 +1206,15 @@ msgstr ""
 "நீங்க தற்போது இந்த சாதனத்துடன் இணைந்துள்ளது. சோடியை பிரித்தால் இதிலிருந்து "
 "பிரிந்துவிடும்."
 
+#: pair-view-title
+msgid "Bluetooth Request From"
+msgstr ""
+
 #. # Connectivity :: Internet Sharing
+#: SSIDCannotBeEmpty
+msgid "The SSID cannot be empty"
+msgstr ""
+
 #: internetSharing
 msgid "Internet sharing"
 msgstr "இணைய பகிர்வு"
@@ -1031,6 +1311,18 @@ msgstr "ஒலி அளவு"
 msgid "Tones"
 msgstr "தொனிகள்"
 
+#: touch-tones
+msgid "Audible touch tones"
+msgstr ""
+
+#: touch-tone-short
+msgid "Short"
+msgstr ""
+
+#: touch-tone-long
+msgid "Long"
+msgstr ""
+
 #: select-tone
 msgid "Select a tone"
 msgstr "தொனியை தேர்வு செய்"
@@ -1067,6 +1359,14 @@ msgstr "திரையை திற"
 msgid "Camera shutter"
 msgstr "புகைப்பட கருவி ஷட்டர்"
 
+#: camera-recordingsound
+msgid "Video recording"
+msgstr ""
+
+#: sent-mail
+msgid "Sent Mail"
+msgstr ""
+
 #: sent-message
 msgid "Sent Message"
 msgstr "அனுப்பிய செய்தி"
@@ -1083,6 +1383,16 @@ msgstr "மணிஅடிப்பு & அறிவிப்புகள்"
 msgid "Voice"
 msgstr "குரல்"
 
+#: savingringtone
+msgid "Saving ringtone…"
+msgstr ""
+
+#: unplayable-ringtone
+msgid ""
+"The ringtone was not changed because the selected file can not be played on "
+"this phone."
+msgstr ""
+
 #. # Personalization :: Display
 #: display
 msgid "Display"
@@ -1097,7 +1407,8 @@ msgid "Adjust automatically"
 msgstr "தானியங்குமுறையில் சீரமை"
 
 #: lockScreen
-msgid "Lock Screen"
+#, fuzzy
+msgid "Lock screen"
 msgstr "திரையை பூட்டு"
 
 #: wallpaper
@@ -1127,6 +1438,10 @@ msgstr "10 நிமிடங்கள்"
 #: never
 msgid "never"
 msgstr "எப்போதுமில்லை"
+
+#: lock-orientation
+msgid "Lock orientation"
+msgstr ""
 
 #. # Personalization :: Notifications
 #: notifications
@@ -1192,110 +1507,79 @@ msgstr "மாதிரி வடிவமைப்பு"
 msgid "%A, %B %d, %Y"
 msgstr "%A, %B %d, %Y"
 
+#. # Personalization :: Homescreen
+#: homescreen
+msgid "Homescreen"
+msgstr ""
+
+#: changeHomescreen
+msgid "Change homescreen"
+msgstr ""
+
+#: changeHomescreenButton
+#, fuzzy
+msgctxt "changeHomescreenButton"
+msgid "Change"
+msgstr "மாற்று"
+
+#: description
+msgid "Description"
+msgstr ""
+
 #. # Personalization :: Keyboard
-#: keyboard
-msgid "Keyboard"
+#: installedInputMethods
+msgid "Installed input methods"
+msgstr ""
+
+#: keyboards
+#, fuzzy
+msgid "Keyboards"
 msgstr "விசைப்பலகை"
 
 #: keyboardLayouts
 msgid "Keyboard layouts"
 msgstr "விசைப்பலகை அமைப்புகள்"
 
+#: numberKeyboardLayouts
+msgid "Number layouts"
+msgstr ""
+
+#: optionKeyboardLayouts
+msgid "Option layouts"
+msgstr ""
+
 #: keypad
 msgid "Keypad"
 msgstr "விசைமேடு"
 
-#: vibration
-msgid "Vibration"
-msgstr "அதிர்வு"
+#: selectedKeyboards
+msgid "Selected keyboards"
+msgstr ""
 
-#: clickSound
-msgid "Click sound"
-msgstr "ஒலியை சொடுக்கு"
+#: addMoreKeyboards
+msgid "Add more keyboards"
+msgstr ""
 
-#: autoCorrect
-msgid "Auto correction"
-msgstr "தானே சரிசெய்தல்"
+#: mustHaveOneKeyboard
+msgid "At least one {{type}} keyboard should be selected"
+msgstr ""
 
-#: wordSuggestion
-msgid "Word suggestion"
-msgstr "வார்த்தை பரிந்துரை"
+#: keyboardType-text
+msgid "text"
+msgstr ""
 
-#: english
-msgid "English"
-msgstr "ஆங்கிலம்"
+#: keyboardType-url
+msgid "url"
+msgstr ""
 
-#: dvorak
-msgid "English (Dvorak)"
-msgstr "ஆங்கிலம் (துவோரக்)"
+#: keyboardType-number
+msgctxt "keyboardType-number"
+msgid "number"
+msgstr ""
 
-#: spanish
-msgid "Spanish"
-msgstr "ஸ்பானிஷ்"
-
-#: portuguese
-msgid "Portuguese Brazilian"
-msgstr "போர்த்துகீசிய (பிரேசிலியன்)"
-
-#: latin
-msgid "Other Latin scripts"
-msgstr "மற்ற லத்தீன் ஸ்கிரிப்டுகள்"
-
-#: latin-desc
-msgid "French, German, Norwegian (Bokmål), Slovak, Turkish"
-msgstr "பிரஞ்சு, ஜெர்மன், நோர்வே (பொக்மால்), ஸ்லோவாக், துருக்கிய"
-
-#: cyrillic
-msgid "Cyrillic scripts"
-msgstr "சிரில்லிக் ஸ்கிரிப்டுகள்"
-
-#: cyrillic-desc
-msgid "Russian, Serbian (cyrillic)"
-msgstr "இரஷியன், செர்பியன் (சிரிலிக்)"
-
-#: arabic
-msgid "Arabic"
-msgstr "அராபிக்"
-
-#: greek
-msgid "Greek"
-msgstr "கிரேக்கம்"
-
-#: hebrew
-msgid "Hebrew"
-msgstr "ஹீப்ரூ"
-
-#: jp-kanji
-msgid "Japanese"
-msgstr "ஜப்பானிய"
-
-#: jp-kanji-desc
-msgid "Kanji"
-msgstr "காஞ்சி"
-
-#: traditionalChinese
-msgid "Traditional Chinese"
-msgstr "தொன்மைச் சீனம்"
-
-#: traditionalChinese-desc
-msgid "Zhuyin"
-msgstr "சூயின்"
-
-#: simplifiedChinese
-msgid "Simplified Chinese"
-msgstr "எளிதாக்கப்பட்ட சீனம்"
-
-#: simplifiedChinese-desc
-msgid "Pinyin"
-msgstr "பின்யின்"
-
-#: polish
-msgid "Polish"
-msgstr "போலிஷ்"
-
-#: serbian
-msgid "Serbian"
-msgstr "செர்பியன்"
+#: defaultKeyboardEnabled
+msgid "{{appName}} {{layoutName}} is set as default input method"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Accounts (N/A)
@@ -1328,8 +1612,8 @@ msgid "Passcode: {{code}}"
 msgstr "கடவுக்குறியீடு: {{code}}"
 
 #: phoneLock
-msgid "Phone lock"
-msgstr "செல்பேசி பூட்டு"
+msgid "Screen lock"
+msgstr ""
 
 #: simSecurity
 msgid "SIM security"
@@ -1339,6 +1623,10 @@ msgstr "சிம் பாதுகாப்பு"
 #: appPermissions
 msgid "App permissions"
 msgstr "பயன்பாட்டு அனுமதிகள்"
+
+#: author
+msgid "Author"
+msgstr ""
 
 #: permissions
 msgid "Permissions"
@@ -1407,6 +1695,8 @@ msgid "Ring"
 msgstr "ரிங்"
 
 #: change
+#, fuzzy
+msgctxt "change"
 msgid "Change"
 msgstr "மாற்று"
 
@@ -1414,9 +1704,13 @@ msgstr "மாற்று"
 msgid "Create"
 msgstr "உருவாக்கு"
 
-#: create-passcode
+#: create-a-passcode
 msgid "Create a Passcode"
 msgstr "ஒரு கடவுக்குறியீட்டை உருவாக்கு"
+
+#: passcode-heading
+msgid "Passcode"
+msgstr "கடவுக்குறியீடு"
 
 #: enter-passcode
 msgid "Enter passcode"
@@ -1441,12 +1735,9 @@ msgstr ""
 "செயற்படுத்தும் போது சிம் அட்டையை வைத்திருக்கும் எந்த சாதனமும் மறுதுவக்கம் செய்யும்போது "
 "பிண்னை கேட்கும்."
 
-#: passcode
-msgid "Passcode"
-msgstr "கடவுக்குறியீடு"
-
 #: confirm-passcode
-msgid "Confirm Passcode"
+#, fuzzy
+msgid "Confirm passcode"
 msgstr "கடவுக்குறியீட்டைஉறுதிசெய்"
 
 #: immediately
@@ -1498,11 +1789,13 @@ msgid "After 4 hours"
 msgstr "4 மணி நேரத்திற்கு பின்னர்"
 
 #: require-passcode
-msgid "Require Passcode"
+#, fuzzy
+msgid "Require passcode"
 msgstr "கடவுக்குறியீட்டை தேவை"
 
 #: change-passcode
-msgid "Change Passcode"
+#, fuzzy
+msgid "Change passcode"
 msgstr "கடவுக்குறியீட்டை மாற்று"
 
 #. # Security :: SIM PIN Lock
@@ -1514,8 +1807,18 @@ msgstr "சிம் அட்டை இல்லை"
 msgid "SIM PIN"
 msgstr "சிம் பிண்"
 
+#: simPin2
+#, fuzzy
+msgid "SIM PIN2"
+msgstr "சிம் பிண்"
+
 #: pukCode
 msgid "PUK code"
+msgstr "பியூகெ குறியீடு"
+
+#: puk2Code
+#, fuzzy
+msgid "PUK2 code"
 msgstr "பியூகெ குறியீடு"
 
 #: whatIsSimPin
@@ -1544,17 +1847,23 @@ msgstr "பிண்ணை மாற்று"
 msgid "Enter SIM PIN"
 msgstr "சிம் பிண்ணை உள்ளிடு"
 
+#: pin2Title
+#, fuzzy
+msgid "Enter SIM PIN2"
+msgstr "சிம் பிண்ணை உள்ளிடு"
+
 #: pukTitle
 msgid "Enter PUK code"
+msgstr "பியூகெ குறியீட்டை உள்ளிடு"
+
+#: puk2Title
+#, fuzzy
+msgid "Enter PUK2 code"
 msgstr "பியூகெ குறியீட்டை உள்ளிடு"
 
 #: newpinTitle
 msgid "New PIN"
 msgstr "புதிய பிண்"
-
-#: pinErrorMsg
-msgid "The PIN was incorrect."
-msgstr "பிண் தவறானது"
 
 #: inputCodeRetriesLeft
 msgctxt "inputCodeRetriesLeft"
@@ -1591,6 +1900,8 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: pinAttemptMsg3[one]
+#, fuzzy
+msgctxt "pinAttemptMsg3[one]"
 msgid ""
 "You have one try left to enter the correct code before locking the SIM card."
 msgstr "சிம் அட்டையை பூட்டும் முன் ஒரு வாய்ப்புதான் மீதம் உள்ளது சரியான குறியீடை உள்ளிடு."
@@ -1639,6 +1950,17 @@ msgstr "சிம் அட்டை பூட்டப்பட்டது."
 msgid ""
 "You must enter the Personal Unlocking Key (PUK) code for the SIM card. Refer "
 "to your SIM card documentation or contact your carrier for more information."
+msgstr ""
+"சிம் அட்டையை திறக்க தனிப்பட்ட திறத்தல் விசையை(பியூகெ) குறியீட்டை உள்ளிட வேண்டும். "
+"உங்களுடைய சிம் அட்டையின் ஆவணத்தை பார் அல்லது மேலும் தகவலுக்கு உங்களுடைய செல்பேசி சேவை "
+"வழங்குநரை தொடர்பு கொள்."
+
+#: enterPuk2Msg
+#, fuzzy
+msgid ""
+"You must enter the Personal Unlocking Key (PUK2) code for the SIM card. "
+"Refer to your SIM card documentation or contact your carrier for more "
+"information."
 msgstr ""
 "சிம் அட்டையை திறக்க தனிப்பட்ட திறத்தல் விசையை(பியூகெ) குறியீட்டை உள்ளிட வேண்டும். "
 "உங்களுடைய சிம் அட்டையின் ஆவணத்தை பார் அல்லது மேலும் தகவலுக்கு உங்களுடைய செல்பேசி சேவை "
@@ -1722,8 +2044,18 @@ msgstr ""
 msgid "Create PIN (must contain 4 to 8 digits)"
 msgstr "பிண்ணை உருவாக்கு (கட்டாயமாக 4க்கும் 8க்கும் இடைப்படட்ட இலக்கங்களை கொண்டிருக்கணும்)"
 
+#: newSimPin2Msg
+#, fuzzy
+msgid "Create PIN2 (must contain 4 to 8 digits)"
+msgstr "பிண்ணை உருவாக்கு (கட்டாயமாக 4க்கும் 8க்கும் இடைப்படட்ட இலக்கங்களை கொண்டிருக்கணும்)"
+
 #: confirmNewSimPinMsg
 msgid "Confirm new PIN"
+msgstr "புதிய பிண்ணை உறுதிசெய்"
+
+#: confirmNewSimPin2Msg
+#, fuzzy
+msgid "Confirm new PIN2"
 msgstr "புதிய பிண்ணை உறுதிசெய்"
 
 #: newPinErrorMsg
@@ -1742,10 +2074,26 @@ msgstr "சிம் அட்டையின் நிலை தெரியவ
 msgid "SIM card not ready"
 msgstr "சிம் அட்டை தயாராக இல்லை"
 
+#: simCardIllegal
+msgid "Unauthorized SIM card"
+msgstr ""
+
 #. # Security :: Do Not Track
 #: doNotTrack
 msgid "Do Not Track"
 msgstr "கண்காணிகாதே"
+
+#: doNotTrackActions
+msgid "Tell websites and apps that I do not want to be tracked"
+msgstr ""
+
+#: allowTracking
+msgid "Tell websites and apps that I want to be tracked"
+msgstr ""
+
+#: doNotHavePrefOnTracking
+msgid "Do not tell websites and apps anything about my tracking preferences"
+msgstr ""
 
 #: doNotTrack-dt
 msgid "How does Do Not Track work?"
@@ -1778,9 +2126,9 @@ msgstr ""
 msgid "Storage"
 msgstr "சேமிப்பகம்"
 
-#: enableUSBStorage
-msgid "Enable USB storage"
-msgstr "யூஎஸ்பி சேமிப்பகத்தை செயற்படுத்து"
+#: enableUSBStorage1
+msgid "USB storage"
+msgstr ""
 
 #. # Storage :: Application storage
 #: deviceStorage
@@ -1869,10 +2217,11 @@ msgstr "பயன்படுத்தப்பட்ட"
 msgid "Left"
 msgstr "இடது"
 
-#: media-storage-details
+#: storage-details
+#, fuzzy
 msgid ""
-"Photos, videos and music are stored on the SD card. See media storage for "
-"details."
+"Photos, videos and music are stored separately from apps. See media storage "
+"for details."
 msgstr ""
 "எஸ்டி அட்டையில் படங்கள், வீடியோக்கள் மற்றும் இசைகள் சேமிக்கப்பட்டுள்ளன. மேலும் தகவல்களுக்கு "
 "ஊடக சேமிப்பை பார்க்கவும்."
@@ -1969,8 +2318,9 @@ msgstr ""
 "படங்கள், வீடியோக்கள், இசை மற்றும் பதிவிறக்கங்கள் முன்னிருப்பாக சேமிப்பிலிருந்தே தேர்வுச்செய்."
 
 #: change-default-location-confirm
+#, fuzzy
 msgid ""
-"Changing the default media storage volume will effect where photos, videos, "
+"Changing the default media storage volume will affect where photos, videos, "
 "downloads and other media will be saved to by default. Existing data will "
 "remain in its current location."
 msgstr ""
@@ -2011,6 +2361,10 @@ msgstr "ஐசிசிஐடி"
 msgid "Phone number"
 msgstr "தொலைபேசி எண்"
 
+#: unknown-phoneNumber
+msgid "Unknown"
+msgstr ""
+
 #: gitInfo
 msgid "Git commit info"
 msgstr "ஜிட் கமிட் தகவல்"
@@ -2039,9 +2393,17 @@ msgstr "பின்னல்"
 msgid "Show frames per second"
 msgstr "விநாடிக்கு சட்டங்களை காட்டு"
 
+#: layers-draw-borders
+msgid "Draw layers borders"
+msgstr ""
+
 #: paint-flashing
 msgid "Flash repainted area"
 msgstr "மறு வண்ணம் பூசப்பட்ட பகுதியில் பளிச்சிடு"
+
+#: apz-force-enable
+msgid "Enable APZ for all content processes"
+msgstr ""
 
 #: log-animations
 msgid "Log slow animations"
@@ -2054,6 +2416,14 @@ msgstr "தொலைநிலை வழுநீக்கும்"
 #: wifi-debugging
 msgid "Wi-Fi output in adb"
 msgstr "ஏடிபி யில் வை-பை வெளிப்பாடு "
+
+#: bluetooth-debugging
+msgid "Bluetooth output in adb"
+msgstr ""
+
+#: contacts-debugging
+msgid "Contacts debugging output in adb"
+msgstr ""
 
 #: ttl-monitor
 msgid "Show time to load"
@@ -2309,6 +2679,22 @@ msgstr "முதன் முறை பயன்பாட்டுக்கா�
 msgid "No first time use app found"
 msgstr "முதன் முதலாக பயன்படுத்தப்பட்ட பயன்பாடு காணப்படவில்லை"
 
+#: software-button-enabled
+msgid "Enable software home button"
+msgstr ""
+
+#: homegesture-enabled
+msgid "Home gesture enabled"
+msgstr ""
+
+#: edgesgesture-enabled
+msgid "Edges gesture enabled"
+msgstr ""
+
+#: debug-gaia-enabled
+msgid "Gaia debug traces"
+msgstr ""
+
 #. # Device :: Battery
 #: battery
 msgid "Battery"
@@ -2451,6 +2837,104 @@ msgstr "தனியுரிமை கொள்கை"
 msgid "."
 msgstr "."
 
+#. # Device :: Improve Browser OS :: Submit Your Feedback
+#: sendFeedbackTitle
+msgid "Submit Your Feedback"
+msgstr ""
+
+#: feedback-description
+msgid "Your feedback will help us to improve Firefox OS."
+msgstr ""
+
+#: feedback-happy
+msgid "Happy"
+msgstr ""
+
+#: feedback-sad
+msgid "Sad"
+msgstr ""
+
+#: feedback-mood-description
+msgid "How do you feel?"
+msgstr ""
+
+#: feedback_whyfeel_happy
+msgid "Why do you feel happy?"
+msgstr ""
+
+#: feedback_whyfeel_sad
+msgid "Why do you feel sad?"
+msgstr ""
+
+#: feedback-mood-explain
+msgid "Please tell us in detail."
+msgstr ""
+
+#: feedback-public-description
+msgid ""
+"The content of your feedback will be public, so please be sure not include "
+"any personal information."
+msgstr ""
+
+#: feedback-contactyou
+msgid "Check here to let us contact you from your email."
+msgstr ""
+
+#: email-address1
+msgid "Email address:"
+msgstr ""
+
+#: email-keepprivate
+msgid "Don't worry. Your email will always be kept private."
+msgstr ""
+
+#: feedback-sendbtn
+msgid "Send Feedback"
+msgstr ""
+
+#: feedback-errormessage-connect-error
+msgid ""
+"Sorry, the system can't send your suggestion due to a data connection error. "
+"Please try again when the issue is resolved."
+msgstr ""
+
+#: feedback-errormessage-server-off
+msgid ""
+"Sorry, the system can't send your suggestion because the server shut down. "
+"Please wait a moment and try again."
+msgstr ""
+
+#: feedback-errormessage-timeout
+msgid ""
+"Sorry, the system can't send your suggestion because of a timeout. Please "
+"restart and try again."
+msgstr ""
+
+#: feedback-errormessage-wrong-email
+msgid ""
+"Sorry, the system can't send your suggestion because the email address is "
+"missing or due to a formatting error. Please use a valid email address and "
+"try again."
+msgstr ""
+
+#: feedback-errormessage-empty-comment
+msgid ""
+"Sorry, the system can't send your suggestion because the comment field is "
+"empty. Please enter some text and try again."
+msgstr ""
+
+#: feedback-errormessage-just-sent
+msgid ""
+"Sorry, the system can't send your suggestion because you already sent us "
+"feedback. Please try our next software update and send again."
+msgstr ""
+
+#: feedback-done-msg
+msgid ""
+"Thanks for the feedback! We will use it to help us create a better "
+"experience in future release of Firefox OS."
+msgstr ""
+
 #. # Device :: Help
 #: online-support
 msgid "Online support:"
@@ -2459,10 +2943,6 @@ msgstr "இணைய ஆதரவு:"
 #: call-support
 msgid "Call support:"
 msgstr "அழைப்பு வழி ஆதரவு:"
-
-#: call-support-numbers
-msgid "{{link1}} or {{link2}}"
-msgstr "{{link1}} அல்லது {{link2}}"
 
 #: user-guide
 msgid "User guide"
@@ -2570,3 +3050,87 @@ msgstr "தரவை அனுப்பு"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "அலைவரிசை நிலையை வாங்கு"
+
+#~ msgid "Cell broadcast service"
+#~ msgstr "செல்பேசி ஒலிபரப்பு சேவை"
+
+#~ msgid "Vibration"
+#~ msgstr "அதிர்வு"
+
+#~ msgid "Click sound"
+#~ msgstr "ஒலியை சொடுக்கு"
+
+#~ msgid "Auto correction"
+#~ msgstr "தானே சரிசெய்தல்"
+
+#~ msgid "Word suggestion"
+#~ msgstr "வார்த்தை பரிந்துரை"
+
+#~ msgid "English"
+#~ msgstr "ஆங்கிலம்"
+
+#~ msgid "English (Dvorak)"
+#~ msgstr "ஆங்கிலம் (துவோரக்)"
+
+#~ msgid "Spanish"
+#~ msgstr "ஸ்பானிஷ்"
+
+#~ msgid "Portuguese Brazilian"
+#~ msgstr "போர்த்துகீசிய (பிரேசிலியன்)"
+
+#~ msgid "Other Latin scripts"
+#~ msgstr "மற்ற லத்தீன் ஸ்கிரிப்டுகள்"
+
+#~ msgid "French, German, Norwegian (Bokmål), Slovak, Turkish"
+#~ msgstr "பிரஞ்சு, ஜெர்மன், நோர்வே (பொக்மால்), ஸ்லோவாக், துருக்கிய"
+
+#~ msgid "Cyrillic scripts"
+#~ msgstr "சிரில்லிக் ஸ்கிரிப்டுகள்"
+
+#~ msgid "Russian, Serbian (cyrillic)"
+#~ msgstr "இரஷியன், செர்பியன் (சிரிலிக்)"
+
+#~ msgid "Arabic"
+#~ msgstr "அராபிக்"
+
+#~ msgid "Greek"
+#~ msgstr "கிரேக்கம்"
+
+#~ msgid "Hebrew"
+#~ msgstr "ஹீப்ரூ"
+
+#~ msgid "Japanese"
+#~ msgstr "ஜப்பானிய"
+
+#~ msgid "Kanji"
+#~ msgstr "காஞ்சி"
+
+#~ msgid "Traditional Chinese"
+#~ msgstr "தொன்மைச் சீனம்"
+
+#~ msgid "Zhuyin"
+#~ msgstr "சூயின்"
+
+#~ msgid "Simplified Chinese"
+#~ msgstr "எளிதாக்கப்பட்ட சீனம்"
+
+#~ msgid "Pinyin"
+#~ msgstr "பின்யின்"
+
+#~ msgid "Polish"
+#~ msgstr "போலிஷ்"
+
+#~ msgid "Serbian"
+#~ msgstr "செர்பியன்"
+
+#~ msgid "Phone lock"
+#~ msgstr "செல்பேசி பூட்டு"
+
+#~ msgid "The PIN was incorrect."
+#~ msgstr "பிண் தவறானது"
+
+#~ msgid "Enable USB storage"
+#~ msgstr "யூஎஸ்பி சேமிப்பகத்தை செயற்படுத்து"
+
+#~ msgid "{{link1}} or {{link2}}"
+#~ msgstr "{{link1}} அல்லது {{link2}}"

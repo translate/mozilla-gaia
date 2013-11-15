@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-17 12:08+0100\n"
+"POT-Creation-Date: 2013-11-15 22:32+0100\n"
 "PO-Revision-Date: 2013-10-21 23:53+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -188,6 +188,11 @@ msgstr "Ath-thòisich"
 msgid "Power off"
 msgstr "Cuir a' chumhachd dheth"
 
+#. # cards view
+#: no-recent-apps
+msgid "No recent apps"
+msgstr ""
+
 #. # permissions
 #. # LOCALIZATION NOTE: this is displayed in a permission request dialog box,
 #. # see shared/permissions/permissions.properties for more context.
@@ -202,6 +207,46 @@ msgstr "Chan eil"
 #: allow
 msgid "Allow"
 msgstr "Ceadaich"
+
+#: dontshare-geolocation
+msgctxt "dontshare-geolocation"
+msgid "Don't Share"
+msgstr ""
+
+#: share-geolocation
+msgctxt "share-geolocation"
+msgid "Share"
+msgstr ""
+
+#: dontshare-audio-capture
+msgctxt "dontshare-audio-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-audio-capture
+msgctxt "share-audio-capture"
+msgid "Share"
+msgstr ""
+
+#: dontshare-video-capture
+msgctxt "dontshare-video-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-video-capture
+msgctxt "share-video-capture"
+msgid "Share"
+msgstr ""
+
+#: dontshare-media-capture
+msgctxt "dontshare-media-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-media-capture
+msgctxt "share-media-capture"
+msgid "Share"
+msgstr ""
 
 #: remember-my-choice
 msgid "Remember my choice"
@@ -224,27 +269,17 @@ msgstr "Meud"
 msgid "Author"
 msgstr "Ùghdar"
 
-#: unknown
+#: size-unknown
+#, fuzzy
+msgctxt "size-unknown"
 msgid "Unknown"
 msgstr "Neo-aithnichte"
 
-#. # LOCALIZATION NOTE (unknown-size,unknown-author):
-#. # if you leave the original en-US value "{{unknown}}" in
-#. # the following two strings, the localization will be automatically picked
-#. # from the existing string with ID "unknown". If you need to adapt your
-#. # localization to different genders for author and size, you can localize
-#. # these strings. For example in French:
-#. # unknown-size=inconnue
-#. # unknown-author=inconnu
-#: unknown-size
-msgctxt "unknown-size"
-msgid "{{unknown}}"
-msgstr "{{unknown}}"
-
-#: unknown-author
-msgctxt "unknown-author"
-msgid "{{unknown}}"
-msgstr "{{unknown}}"
+#: author-unknown
+#, fuzzy
+msgctxt "author-unknown"
+msgid "Unknown"
+msgstr "Neo-aithnichte"
 
 #: install
 msgid "Install"
@@ -255,8 +290,10 @@ msgid "bytes"
 msgstr "bytes"
 
 #: kB
-msgid "kB"
-msgstr "kB"
+#, fuzzy
+msgctxt "kB"
+msgid "KB"
+msgstr "KB"
 
 #: MB
 msgctxt "MB"
@@ -348,6 +385,16 @@ msgstr ""
 msgid "{{ appName }} installed"
 msgstr "Chaidh {{ appName }} a stàladh"
 
+#. #setup dialog
+#: setup
+msgid "Setup"
+msgstr ""
+
+#. #ime
+#: ime-addkeyboards
+msgid "Add keyboards"
+msgstr ""
+
 #. # update manager
 #: later
 msgid "Later"
@@ -374,7 +421,7 @@ msgid "Not Now"
 msgstr "Chan ann an-dràsta"
 
 #. # the <span> element will be displayed when the download finishes
-#: downloadingUpdateMessage
+#: downloadingUpdateMessage.innerHTML
 msgid "Downloading updates… <span>{{ progress }} downloaded.</span>"
 msgstr ""
 "A' luchdadh a-nuas nan ùrachaidhean… <span>{{ progress }} air a luchdadh a-"
@@ -409,40 +456,45 @@ msgstr ""
 msgid "There was an error while downloading the updates."
 msgstr "Thachair mearachd nuair a bha sinn a' luchdadh a-nuas nan ùrachaidhea."
 
-#: updateAvailableInfo
-msgctxt "updateAvailableInfo"
+#: updateAvailableInfo.innerHTML
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: updateAvailableInfo[one]
+#: updateAvailableInfo.innerHTML[one]
 msgid "{{ n }} update available. <span>Tap for more info.</span>"
 msgstr ""
 "Tha {{ n }} ùrachadh ri fhaighinn. <span>Thoir gnogag gus a luchdadh a-nuas."
 "</span>"
 
-#: updateAvailableInfo[two]
-msgctxt "updateAvailableInfo[two]"
+#: updateAvailableInfo.innerHTML[two]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[two]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr ""
 "Tha {{ n }} ùrachadh ri fhaighinn. <span>Thoir gnogag gus a luchdadh a-nuas."
 "</span>"
 
-#: updateAvailableInfo[few]
-msgctxt "updateAvailableInfo[few]"
-msgid "{{ n }} updates available. <span>Tap for more info.</span>"
-msgstr ""
-"Tha {{ n }} ùrachaidhean ri fhaighinn. <span>Thoir gnogag gus a luchdadh a-"
-"nuas.</span>"
-
-#: updateAvailableInfo[many]
-msgctxt "updateAvailableInfo[many]"
+#: updateAvailableInfo.innerHTML[few]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[few]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr ""
 "Tha {{ n }} ùrachadh ri fhaighinn. <span>Thoir gnogag gus a luchdadh a-nuas."
 "</span>"
 
-#: updateAvailableInfo[other]
-msgctxt "updateAvailableInfo[other]"
+#: updateAvailableInfo.innerHTML[many]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[many]"
+msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+msgstr ""
+"Tha {{ n }} ùrachadh ri fhaighinn. <span>Thoir gnogag gus a luchdadh a-nuas."
+"</span>"
+
+#: updateAvailableInfo.innerHTML[other]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[other]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr ""
 "Tha {{ n }} ùrachadh ri fhaighinn. <span>Thoir gnogag gus a luchdadh a-nuas."
@@ -489,7 +541,7 @@ msgstr "Tha ùrachadh an t-siostaim deiseil"
 msgid "Required"
 msgstr "Riatanach"
 
-#: uncompressingMessage
+#: uncompressingMessage.innerHTML
 msgid "Uncompressing… <span>This can take a few minutes.</span>"
 msgstr ""
 "A' dì-dhùmhlachadh… <span>Faodaidh gun doir seo beagan mhionaidean</span>"
@@ -632,10 +684,6 @@ msgstr ""
 #: try-again
 msgid "Try again"
 msgstr "Feuch ris a-rithist"
-
-#: dialog-closed
-msgid "Dialog closed by the user"
-msgstr "Chaidh an còmhradh a dhùnadh leis a' chleachdaiche"
 
 #. # value selector, time/date picker
 #: select-time
@@ -790,19 +838,21 @@ msgstr "An gabh sinn ris an tar-chur faidhle Bluetooth?"
 msgid "{{deviceName}} would like to transfer {{fileName}} ({{fileSize}})."
 msgstr "Bu toigh le {{deviceName}} {{fileName}} ({{fileSize}}) a chur thugad."
 
-#: notification-fileTransfer-title
-msgid "Receive file?"
-msgstr "A bheil thu airson gabhail ris?"
+#: transfer-confirmation-title
+msgid "{{deviceName}}"
+msgstr ""
 
-#: notification-fileTransfer-description
-msgid "File incoming from another device"
-msgstr "Tha faidhle a' tighinn a-steach o uidheam eile"
+#: transfer-confirmation-description
+msgid "Review transfer request."
+msgstr ""
 
 #: byteUnit-B
 msgid "Bytes"
 msgstr "Bytes"
 
 #: byteUnit-KB
+#, fuzzy
+msgctxt "byteUnit-KB"
 msgid "KB"
 msgstr "KB"
 
@@ -855,17 +905,13 @@ msgstr "Gabh ris"
 msgid "Cancel Bluetooth file transfer?"
 msgstr "A bheil thu airson sgur dhen tar-chur fhaidhle Bluetooth?"
 
-#: bluetooth-file-transfer-result
-msgid "Bluetooth file transfer {{status}}."
-msgstr "Tha tar-chur an fhaidhle air Bluetooth {{status}}."
+#: transfer-has-started-title
+msgid "The transfer has started"
+msgstr ""
 
-#: complete
-msgid "complete"
-msgstr "deiseil"
-
-#: failed
-msgid "failed"
-msgstr "air fàilligeadh"
+#: transfer-has-started-description
+msgid "Check the progress in Notification center"
+msgstr ""
 
 #: transferFinished-sentSuccessful-title
 msgid "File sent"
@@ -882,6 +928,15 @@ msgstr "Cha b' urrainn dhuinn am faidhle a chur"
 #: transferFinished-receivedFailed-title
 msgid "File could not be received"
 msgstr "Cha b' urrainn dhuinn am faidhle fhaighinn"
+
+#: transferReport-title
+msgid "Transfer report:"
+msgstr ""
+
+#: transferReport-description
+msgid ""
+"{{numSuccessful}} files successful, {{numUnsuccessful}} files unsuccessful"
+msgstr ""
 
 #: unknown-file
 msgid "Unknown file"
@@ -904,11 +959,13 @@ msgid "Can not receive file"
 msgstr "Chan urrainn dhuinn am faidhle fhaighninn"
 
 #: cannotGetStorageState
-msgid "Can not get device storage state"
+#, fuzzy
+msgid "Can not get device storage state."
 msgstr "Chan urrainn dhuinn staid stòras an uidheim fhaighninn"
 
-#: sdcard-not-exist
-msgid "No memory card found (Please insert a memory card)"
+#: sdcard-not-exist2
+#, fuzzy
+msgid "No memory card found. Please insert a memory card."
 msgstr ""
 "Cha deach cairt-chuimhne a lorg (Nach cuir thu a-steach cairt-chuimhne?)"
 
@@ -931,6 +988,19 @@ msgstr "Mearachd neo-aithnichte"
 #: confirm
 msgid "Confirm"
 msgstr "Dearbhaich"
+
+#. # Media Recoding
+#: microphone-is-on
+msgid "Mic is on"
+msgstr ""
+
+#: camera-is-on
+msgid "Camera is on"
+msgstr ""
+
+#: media-is-on
+msgid "Camera & Mic are ON"
+msgstr ""
 
 #. # Security :: SIM PIN lock
 #: noSimCard
@@ -1447,8 +1517,84 @@ msgstr "A bheil thu airson an teachdaireachd a chur?"
 msgid "STK Query"
 msgstr "Ceist STK"
 
-msgid "Don't allow"
-msgstr "Na ceadaich"
+#. # CDMA emergency callback mode
+#: emergency-callback-mode
+msgid "Emergency call back mode"
+msgstr ""
+
+#: emergency-callback-dialog-message
+msgid ""
+"Telecom services and internet are disable due to emergency call back mode. "
+"Would you like to turn off the mode?"
+msgstr ""
+
+#. # CDMA record information
+#: cdma-record-info
+msgid "CDMA record information"
+msgstr ""
+
+#. # IME (Keyboard)
+#: ime-switching-tip
+msgid "Tap to switch input method"
+msgstr ""
+
+#: layout-selection
+msgid "Layout selection"
+msgstr ""
+
+#~ msgctxt "unknown-size"
+#~ msgid "{{unknown}}"
+#~ msgstr "{{unknown}}"
+
+#~ msgctxt "unknown-author"
+#~ msgid "{{unknown}}"
+#~ msgstr "{{unknown}}"
+
+#~ msgid "kB"
+#~ msgstr "kB"
+
+#~ msgctxt "updateAvailableInfo"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "updateAvailableInfo[few]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr ""
+#~ "Tha {{ n }} ùrachaidhean ri fhaighinn. <span>Thoir gnogag gus a luchdadh "
+#~ "a-nuas.</span>"
+
+#~ msgctxt "updateAvailableInfo[many]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr ""
+#~ "Tha {{ n }} ùrachadh ri fhaighinn. <span>Thoir gnogag gus a luchdadh a-"
+#~ "nuas.</span>"
+
+#~ msgctxt "updateAvailableInfo[other]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr ""
+#~ "Tha {{ n }} ùrachadh ri fhaighinn. <span>Thoir gnogag gus a luchdadh a-"
+#~ "nuas.</span>"
+
+#~ msgid "Dialog closed by the user"
+#~ msgstr "Chaidh an còmhradh a dhùnadh leis a' chleachdaiche"
+
+#~ msgid "Receive file?"
+#~ msgstr "A bheil thu airson gabhail ris?"
+
+#~ msgid "File incoming from another device"
+#~ msgstr "Tha faidhle a' tighinn a-steach o uidheam eile"
+
+#~ msgid "Bluetooth file transfer {{status}}."
+#~ msgstr "Tha tar-chur an fhaidhle air Bluetooth {{status}}."
+
+#~ msgid "complete"
+#~ msgstr "deiseil"
+
+#~ msgid "failed"
+#~ msgstr "air fàilligeadh"
+
+#~ msgid "Don't allow"
+#~ msgstr "Na ceadaich"
 
 #~ msgid "Enter security code"
 #~ msgstr "Cuir a-steach an còd tèarainteachd"

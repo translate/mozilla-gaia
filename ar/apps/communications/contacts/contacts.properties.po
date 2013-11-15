@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"POT-Creation-Date: 2013-11-15 22:11+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,6 +67,15 @@ msgstr "حذف جهة اتصال"
 msgid "Select contact"
 msgstr "حدد جهة اتصال"
 
+#: selectAll
+#, fuzzy
+msgid "Select all"
+msgstr "إختر بريد إلكتروني"
+
+#: deselectAll
+msgid "Deselect all"
+msgstr ""
+
 #: editContact
 msgid "Edit contact"
 msgstr "تحرير جهة اتصال"
@@ -83,13 +92,13 @@ msgstr "إزالة"
 msgid "Comments"
 msgstr "ملاحظات"
 
-#: no_phones
-msgid "No phones"
-msgstr "لا يوجد هاتف"
+#: no_contact_phones
+msgid "This contact does not have a phone number"
+msgstr ""
 
-#: no_email
-msgid "No email"
-msgstr "لا يوجد بريد الكتروني"
+#: no_contact_email
+msgid "This contact does not have an email address"
+msgstr ""
 
 #: removePhotoConfirm
 msgid "Remove contact picture?"
@@ -327,8 +336,118 @@ msgstr "بحث"
 msgid "No contacts found"
 msgstr "لم يتم العثور على جهة اتصال"
 
+#: transferContactsTitle
+msgid "Transfer Contacts"
+msgstr ""
+
 #: importContactsTitle
 msgid "Import Contacts"
+msgstr ""
+
+#: exportContactsTitle
+msgid "Export Contacts"
+msgstr ""
+
+#: exportContactsAction
+msgid "Export"
+msgstr ""
+
+#. # Export
+#: simExport-title
+msgid "Export to SIM"
+msgstr ""
+
+#: sdExport-title
+msgid "Export to SD Card"
+msgstr ""
+
+#: btExport-title
+msgid "Export to Bluetooth"
+msgstr ""
+
+#: sdUMSEnabled
+msgid "Cannot use SD Card because USB storage is enabled"
+msgstr ""
+
+#: exportErrorTitle
+msgid "Export error"
+msgstr ""
+
+#: contactsExported
+#, fuzzy
+msgid "{{ plural(exported) }}"
+msgstr "{[ plural(imported) ]}"
+
+#: contactsExported[zero]
+msgid "No contacts exported"
+msgstr ""
+
+#: contactsExported[one]
+#, fuzzy
+msgctxt "contactsExported[one]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "تم استيراد {{imported}}/{{total}} أصدقاء"
+
+#: contactsExported[two]
+#, fuzzy
+msgctxt "contactsExported[two]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "تم استيراد {{imported}}/{{total}} أصدقاء"
+
+#: contactsExported[few]
+#, fuzzy
+msgctxt "contactsExported[few]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "تم استيراد {{imported}}/{{total}} أصدقاء"
+
+#: contactsExported[many]
+#, fuzzy
+msgctxt "contactsExported[many]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "تم استيراد {{imported}}/{{total}} أصدقاء"
+
+#: contactsExported[other]
+#, fuzzy
+msgctxt "contactsExported[other]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "تم استيراد {{imported}}/{{total}} أصدقاء"
+
+#: exportError-general
+msgid "Some error happened while exporting"
+msgstr ""
+
+#: exportError-SD-shared
+msgctxt "exportError-SD-shared"
+msgid "Can't access memory card because it's shared"
+msgstr ""
+
+#: exportError-SD-unavailable
+msgctxt "exportError-SD-unavailable"
+msgid "Memory card is not available"
+msgstr ""
+
+#: exportError-SD-noSpace
+msgctxt "exportError-SD-noSpace"
+msgid "There's not enough space on the memory card to export the contacts"
+msgstr ""
+
+#: exportError-SIM-unavailable
+msgid "SIM card is not available"
+msgstr ""
+
+#: exportError-BT-shared
+msgctxt "exportError-BT-shared"
+msgid "Can't access memory card because it's shared"
+msgstr ""
+
+#: exportError-BT-unavailable
+msgctxt "exportError-BT-unavailable"
+msgid "Memory card is not available"
+msgstr ""
+
+#: exportError-BT-noSpace
+msgctxt "exportError-BT-noSpace"
+msgid "There's not enough space on the memory card to export the contacts"
 msgstr ""
 
 #. # SIM import
@@ -386,62 +505,77 @@ msgstr "تم إستيراد {{n}} أسماء"
 msgid "To import contacts insert or unlock your SIM card"
 msgstr "لاستيراد جهات الاتصال ادخل او فك قفل بطاقة SIM"
 
-#. # SD Card import
-#: sdContacts-import
-msgid "Import contacts from SD card"
-msgstr ""
-
-#: sdContacts-importing
-msgid "Importing contacts from SD card…"
-msgstr ""
-
-#: sdContacts-reading
+#: noSimMsgExport
 #, fuzzy
-msgid "Reading from SD card…"
+msgid "To export contacts insert or unlock your SIM card"
+msgstr "لاستيراد جهات الاتصال ادخل او فك قفل بطاقة SIM"
+
+#. # SD Card import
+#: memoryCardContacts-import
+msgid "Import contacts from memory card"
+msgstr ""
+
+#: memoryCardContacts-importing
+msgid "Importing contacts from memory card…"
+msgstr ""
+
+#: memoryCardContacts-reading
+#, fuzzy
+msgid "Reading from memory card…"
 msgstr "جارِ القراءة من بطاقة SIM..."
 
-#: sdContacts-error
+#: memoryCardContacts-error
 #, fuzzy
-msgid "Could not import contacts from SD card"
+msgid "Could not import contacts from memory card"
 msgstr "تعذَر إستيراد جهات الاتصال من بطاقة SIM"
 
-#: sdContacts-imported3
-msgctxt "sdContacts-imported3"
+#: memoryCardContacts-imported3
+#, fuzzy
+msgctxt "memoryCardContacts-imported3"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: sdContacts-imported3[zero]
+#: memoryCardContacts-imported3[zero]
 #, fuzzy
-msgid "No contacts detected on SD card to import"
+msgid "No contacts detected on memory card to import"
 msgstr "لم يتم العثور على جهات اتصال للاستيراد على شريحة الجوّال"
 
-#: sdContacts-imported3[one]
-msgctxt "sdContacts-imported3[one]"
+#: memoryCardContacts-imported3[one]
+#, fuzzy
+msgctxt "memoryCardContacts-imported3[one]"
 msgid "Imported one contact"
 msgstr "تم استيراد اسم واحد"
 
-#: sdContacts-imported3[two]
-msgctxt "sdContacts-imported3[two]"
+#: memoryCardContacts-imported3[two]
+#, fuzzy
+msgctxt "memoryCardContacts-imported3[two]"
 msgid "Imported {{n}} contacts"
 msgstr "تم إستيراد {{n}} أسماء"
 
-#: sdContacts-imported3[few]
-msgctxt "sdContacts-imported3[few]"
+#: memoryCardContacts-imported3[few]
+#, fuzzy
+msgctxt "memoryCardContacts-imported3[few]"
 msgid "Imported {{n}} contacts"
 msgstr "تم إستيراد {{n}} أسماء"
 
-#: sdContacts-imported3[many]
-msgctxt "sdContacts-imported3[many]"
+#: memoryCardContacts-imported3[many]
+#, fuzzy
+msgctxt "memoryCardContacts-imported3[many]"
 msgid "Imported {{n}} contacts"
 msgstr "تم إستيراد {{n}} أسماء"
 
-#: sdContacts-imported3[other]
-msgctxt "sdContacts-imported3[other]"
+#: memoryCardContacts-imported3[other]
+#, fuzzy
+msgctxt "memoryCardContacts-imported3[other]"
 msgid "Imported {{n}} contacts"
 msgstr "تم إستيراد {{n}} أسماء"
 
-#: noSdMsg
-msgid "To import contacts insert a SD card"
+#: noMemoryCardMsg
+msgid "To import contacts insert a memory card"
+msgstr ""
+
+#: noMemoryCardMsgExport
+msgid "To export contacts insert a memory card"
 msgstr ""
 
 #: genericProgress
@@ -544,18 +678,24 @@ msgid "Order by last name"
 msgstr "ترتيب حسب الإسم الأخير"
 
 #: importSim2
+#, fuzzy
+msgctxt "importSim2"
 msgid "SIM card"
 msgstr "بطاقة SIM"
 
-#: importSd
-#, fuzzy
-msgid "SD card"
-msgstr "بطاقة SIM"
+#: importMemoryCard
+msgctxt "importMemoryCard"
+msgid "Memory card"
+msgstr ""
 
 #: importGmail
 #, fuzzy
 msgid "Gmail"
 msgstr "البريد الالكتروني"
+
+#: bluetooth
+msgid "Bluetooth"
+msgstr ""
 
 #: importOutlook
 msgid "Outlook"
@@ -589,6 +729,22 @@ msgstr ""
 msgid "Not enabled yet"
 msgstr "غير مُفعَّل حتى الان"
 
+#: genericNoConnection
+msgid "To import contacts connect to Wi-Fi or data network"
+msgstr ""
+
+#. # Used for export, just in case the strings will diverge on time
+#: simCard
+#, fuzzy
+msgctxt "simCard"
+msgid "SIM card"
+msgstr "بطاقة SIM"
+
+#: memoryCard
+msgctxt "memoryCard"
+msgid "Memory card"
+msgstr ""
+
 #. # No contacts
 #: create-new
 msgid "Create a new contact"
@@ -605,3 +761,69 @@ msgstr "لا توجد جهات اتصال"
 #: start-adding
 msgid "Start adding them now"
 msgstr "إبدأ بإضافتهم الآن"
+
+#: notImported
+msgid "Not imported"
+msgstr ""
+
+#: imported
+msgid "Imported"
+msgstr ""
+
+#: today
+msgid "Today"
+msgstr ""
+
+#: yesterday
+msgid "Yesterday"
+msgstr ""
+
+#: messageCanceling
+msgid "Please hold on. We are canceling the ongoing operation."
+msgstr ""
+
+#: organise-contacts
+msgid "Organize Contacts"
+msgstr ""
+
+#: find-merge-contacts
+msgid "Find duplicate contacts"
+msgstr ""
+
+#: preparing-contacts
+msgid "Preparing contacts"
+msgstr ""
+
+#~ msgid "No phones"
+#~ msgstr "لا يوجد هاتف"
+
+#~ msgid "No email"
+#~ msgstr "لا يوجد بريد الكتروني"
+
+#~ msgctxt "sdContacts-imported3"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "sdContacts-imported3[one]"
+#~ msgid "Imported one contact"
+#~ msgstr "تم استيراد اسم واحد"
+
+#~ msgctxt "sdContacts-imported3[two]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "تم إستيراد {{n}} أسماء"
+
+#~ msgctxt "sdContacts-imported3[few]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "تم إستيراد {{n}} أسماء"
+
+#~ msgctxt "sdContacts-imported3[many]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "تم إستيراد {{n}} أسماء"
+
+#~ msgctxt "sdContacts-imported3[other]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "تم إستيراد {{n}} أسماء"
+
+#, fuzzy
+#~ msgid "SD card"
+#~ msgstr "بطاقة SIM"

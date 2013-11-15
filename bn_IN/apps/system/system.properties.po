@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-17 12:08+0100\n"
+"POT-Creation-Date: 2013-11-15 22:32+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -183,6 +183,11 @@ msgstr "পুনরারম্ভ"
 msgid "Power off"
 msgstr "পাওয়ার বন্ধ"
 
+#. # cards view
+#: no-recent-apps
+msgid "No recent apps"
+msgstr ""
+
 #. # permissions
 #. # LOCALIZATION NOTE: this is displayed in a permission request dialog box,
 #. # see shared/permissions/permissions.properties for more context.
@@ -197,6 +202,46 @@ msgstr "না"
 #: allow
 msgid "Allow"
 msgstr "অনুমতি "
+
+#: dontshare-geolocation
+msgctxt "dontshare-geolocation"
+msgid "Don't Share"
+msgstr ""
+
+#: share-geolocation
+msgctxt "share-geolocation"
+msgid "Share"
+msgstr ""
+
+#: dontshare-audio-capture
+msgctxt "dontshare-audio-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-audio-capture
+msgctxt "share-audio-capture"
+msgid "Share"
+msgstr ""
+
+#: dontshare-video-capture
+msgctxt "dontshare-video-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-video-capture
+msgctxt "share-video-capture"
+msgid "Share"
+msgstr ""
+
+#: dontshare-media-capture
+msgctxt "dontshare-media-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-media-capture
+msgctxt "share-media-capture"
+msgid "Share"
+msgstr ""
 
 #: remember-my-choice
 msgid "Remember my choice"
@@ -219,27 +264,17 @@ msgstr "আয়তন"
 msgid "Author"
 msgstr "রচয়িতা"
 
-#: unknown
+#: size-unknown
+#, fuzzy
+msgctxt "size-unknown"
 msgid "Unknown"
 msgstr "অজ্ঞাত"
 
-#. # LOCALIZATION NOTE (unknown-size,unknown-author):
-#. # if you leave the original en-US value "{{unknown}}" in
-#. # the following two strings, the localization will be automatically picked
-#. # from the existing string with ID "unknown". If you need to adapt your
-#. # localization to different genders for author and size, you can localize
-#. # these strings. For example in French:
-#. # unknown-size=inconnue
-#. # unknown-author=inconnu
-#: unknown-size
-msgctxt "unknown-size"
-msgid "{{unknown}}"
-msgstr ""
-
-#: unknown-author
-msgctxt "unknown-author"
-msgid "{{unknown}}"
-msgstr ""
+#: author-unknown
+#, fuzzy
+msgctxt "author-unknown"
+msgid "Unknown"
+msgstr "অজ্ঞাত"
 
 #: install
 msgid "Install"
@@ -250,8 +285,9 @@ msgid "bytes"
 msgstr "বাইট"
 
 #: kB
-msgid "kB"
-msgstr "kB"
+msgctxt "kB"
+msgid "KB"
+msgstr ""
 
 #: MB
 msgctxt "MB"
@@ -341,6 +377,16 @@ msgstr ""
 msgid "{{ appName }} installed"
 msgstr ""
 
+#. #setup dialog
+#: setup
+msgid "Setup"
+msgstr ""
+
+#. #ime
+#: ime-addkeyboards
+msgid "Add keyboards"
+msgstr ""
+
 #. # update manager
 #: later
 msgid "Later"
@@ -367,7 +413,7 @@ msgid "Not Now"
 msgstr ""
 
 #. # the <span> element will be displayed when the download finishes
-#: downloadingUpdateMessage
+#: downloadingUpdateMessage.innerHTML
 msgid "Downloading updates… <span>{{ progress }} downloaded.</span>"
 msgstr "আপডেট ডাউনলোড হচ্ছে... <span>{{ progress }} ডাউনলোড হয়েছে.</span>"
 
@@ -399,33 +445,33 @@ msgstr "আপনি কি নিশ্চিত যে আপনি সব ড
 msgid "There was an error while downloading the updates."
 msgstr "একটি ত্রুটি ঘটেছে আপডেট ডাউনলোডে"
 
-#: updateAvailableInfo
+#: updateAvailableInfo.innerHTML
 #, fuzzy
-msgctxt "updateAvailableInfo"
+msgctxt "updateAvailableInfo.innerHTML"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: updateAvailableInfo[one]
+#: updateAvailableInfo.innerHTML[one]
 msgid "{{ n }} update available. <span>Tap for more info.</span>"
 msgstr ""
 
-#: updateAvailableInfo[two]
-msgctxt "updateAvailableInfo[two]"
+#: updateAvailableInfo.innerHTML[two]
+msgctxt "updateAvailableInfo.innerHTML[two]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr ""
 
-#: updateAvailableInfo[few]
-msgctxt "updateAvailableInfo[few]"
+#: updateAvailableInfo.innerHTML[few]
+msgctxt "updateAvailableInfo.innerHTML[few]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr ""
 
-#: updateAvailableInfo[many]
-msgctxt "updateAvailableInfo[many]"
+#: updateAvailableInfo.innerHTML[many]
+msgctxt "updateAvailableInfo.innerHTML[many]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr ""
 
-#: updateAvailableInfo[other]
-msgctxt "updateAvailableInfo[other]"
+#: updateAvailableInfo.innerHTML[other]
+msgctxt "updateAvailableInfo.innerHTML[other]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr ""
 
@@ -470,7 +516,7 @@ msgstr ""
 msgid "Required"
 msgstr "প্রয়োজনীয়"
 
-#: uncompressingMessage
+#: uncompressingMessage.innerHTML
 msgid "Uncompressing… <span>This can take a few minutes.</span>"
 msgstr ""
 
@@ -602,10 +648,6 @@ msgstr ""
 #: try-again
 msgid "Try again"
 msgstr "আবার চেষ্টা করুন"
-
-#: dialog-closed
-msgid "Dialog closed by the user"
-msgstr "ব্যবহারকারী দ্বারা ডায়লগ বন্ধ করা হয়েছে"
 
 #. # value selector, time/date picker
 #: select-time
@@ -758,12 +800,12 @@ msgstr "ব্লুটুথ ফাইল স্থানান্তরণ  �
 msgid "{{deviceName}} would like to transfer {{fileName}} ({{fileSize}})."
 msgstr ""
 
-#: notification-fileTransfer-title
-msgid "Receive file?"
+#: transfer-confirmation-title
+msgid "{{deviceName}}"
 msgstr ""
 
-#: notification-fileTransfer-description
-msgid "File incoming from another device"
+#: transfer-confirmation-description
+msgid "Review transfer request."
 msgstr ""
 
 #: byteUnit-B
@@ -772,6 +814,7 @@ msgid "Bytes"
 msgstr "বাইট"
 
 #: byteUnit-KB
+msgctxt "byteUnit-KB"
 msgid "KB"
 msgstr ""
 
@@ -828,17 +871,13 @@ msgstr "স্থানান্তরণ"
 msgid "Cancel Bluetooth file transfer?"
 msgstr "ফাইল স্থানান্তর বাতিল করা হোক?"
 
-#: bluetooth-file-transfer-result
-msgid "Bluetooth file transfer {{status}}."
-msgstr "ব্লুটুথ ফাইল স্থানান্তরণ {{status}}"
+#: transfer-has-started-title
+msgid "The transfer has started"
+msgstr ""
 
-#: complete
-msgid "complete"
-msgstr "সম্পূর্ণ"
-
-#: failed
-msgid "failed"
-msgstr "ব্যর্থ হয়েছে"
+#: transfer-has-started-description
+msgid "Check the progress in Notification center"
+msgstr ""
 
 #: transferFinished-sentSuccessful-title
 msgid "File sent"
@@ -854,6 +893,15 @@ msgstr ""
 
 #: transferFinished-receivedFailed-title
 msgid "File could not be received"
+msgstr ""
+
+#: transferReport-title
+msgid "Transfer report:"
+msgstr ""
+
+#: transferReport-description
+msgid ""
+"{{numSuccessful}} files successful, {{numUnsuccessful}} files unsuccessful"
 msgstr ""
 
 #: unknown-file
@@ -877,11 +925,13 @@ msgid "Can not receive file"
 msgstr "ফাইল পেতে অক্ষম"
 
 #: cannotGetStorageState
-msgid "Can not get device storage state"
+#, fuzzy
+msgid "Can not get device storage state."
 msgstr "স্টোরেজ ডিভাইসের অবস্থা পেতে অক্ষম"
 
-#: sdcard-not-exist
-msgid "No memory card found (Please insert a memory card)"
+#: sdcard-not-exist2
+#, fuzzy
+msgid "No memory card found. Please insert a memory card."
 msgstr "কোন মেমরি কার্ড পাওয়া যায় নি(একটি মেমরি কার্ড সন্নিবেশ করুন)"
 
 #: sdcard-in-use
@@ -901,6 +951,19 @@ msgstr "অজানা ত্রুটি"
 #: confirm
 msgid "Confirm"
 msgstr "নিশ্চিত করা"
+
+#. # Media Recoding
+#: microphone-is-on
+msgid "Mic is on"
+msgstr ""
+
+#: camera-is-on
+msgid "Camera is on"
+msgstr ""
+
+#: media-is-on
+msgid "Camera & Mic are ON"
+msgstr ""
 
 #. # Security :: SIM PIN lock
 #: noSimCard
@@ -1369,3 +1432,48 @@ msgstr ""
 #: icc-inputtitle
 msgid "STK Query"
 msgstr ""
+
+#. # CDMA emergency callback mode
+#: emergency-callback-mode
+msgid "Emergency call back mode"
+msgstr ""
+
+#: emergency-callback-dialog-message
+msgid ""
+"Telecom services and internet are disable due to emergency call back mode. "
+"Would you like to turn off the mode?"
+msgstr ""
+
+#. # CDMA record information
+#: cdma-record-info
+msgid "CDMA record information"
+msgstr ""
+
+#. # IME (Keyboard)
+#: ime-switching-tip
+msgid "Tap to switch input method"
+msgstr ""
+
+#: layout-selection
+msgid "Layout selection"
+msgstr ""
+
+#~ msgid "kB"
+#~ msgstr "kB"
+
+#, fuzzy
+#~ msgctxt "updateAvailableInfo"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgid "Dialog closed by the user"
+#~ msgstr "ব্যবহারকারী দ্বারা ডায়লগ বন্ধ করা হয়েছে"
+
+#~ msgid "Bluetooth file transfer {{status}}."
+#~ msgstr "ব্লুটুথ ফাইল স্থানান্তরণ {{status}}"
+
+#~ msgid "complete"
+#~ msgstr "সম্পূর্ণ"
+
+#~ msgid "failed"
+#~ msgstr "ব্যর্থ হয়েছে"

@@ -1,9 +1,9 @@
-#. extracted from build/locales/en-US/apps/clock/clock.properties, build/locales/kk/apps/clock/clock.properties
+#. extracted from ./apps/clock/clock.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-11 21:30+0100\n"
+"POT-Creation-Date: 2013-11-15 22:11+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,8 +34,18 @@ msgstr "Бас тарту"
 msgid "Hour"
 msgstr "Сағат"
 
+#: hours
+#, fuzzy
+msgid "Hours"
+msgstr "Сағат"
+
 #: minute
 msgid "Minute"
+msgstr "Минут"
+
+#: minutes
+#, fuzzy
+msgid "Minutes"
 msgstr "Минут"
 
 #: enable
@@ -54,6 +64,15 @@ msgstr "Белгі"
 msgid "Alarm"
 msgstr "Оятқыш"
 
+#: timer
+#, fuzzy
+msgid "Timer"
+msgstr "Уақыт"
+
+#: stopwatch
+msgid "Stopwatch"
+msgstr ""
+
 #: alarmName.placeholder
 msgid "Alarm name"
 msgstr "Оятқыш атауы"
@@ -65,6 +84,22 @@ msgstr "Жаңа оятқыш"
 #: editAlarm
 msgid "Edit alarm"
 msgstr "Оятқышты түзету"
+
+#: pause
+msgid "Pause"
+msgstr ""
+
+#: resume
+msgid "Resume"
+msgstr ""
+
+#: lap
+msgid "Lap"
+msgstr ""
+
+#: lap-number
+msgid "Lap {{n}}"
+msgstr ""
 
 #: delete
 msgid "Delete"
@@ -151,6 +186,11 @@ msgstr "Оятқыш осыдан бастап <strong>{{minutes}}</strong> ке
 msgid "The alarm is set for {{hours}} {{minutes}} from now."
 msgstr "Оятқыш осыдан бастап {{hours}} {{minutes}} кейін іске қосылады."
 
+#: countdown-moreThanADay
+#, fuzzy
+msgid "The alarm is set for {{days}} {{hours}} from now."
+msgstr "Оятқыш осыдан бастап {{hours}} {{minutes}} кейін іске қосылады."
+
 #: nMinutes
 msgctxt "nMinutes"
 msgid "{[ plural(n) ]}"
@@ -184,38 +224,123 @@ msgctxt "nMinutes[other]"
 msgid "{{n}} minutes"
 msgstr "{{n}} минут"
 
-#: nRemainHours
-msgctxt "nRemainHours"
+#: nHours
+#, fuzzy
+msgctxt "nHours"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: nRemainHours[zero]
-msgctxt "nRemainHours[zero]"
+#: nHours[zero]
+msgctxt "nHours[zero]"
 msgid ""
 msgstr ""
 
-#: nRemainHours[one]
+#: nHours[one]
 msgid "<strong>{{n}} hour</strong>"
 msgstr "<strong>{{n}} сағат</strong>"
 
-#: nRemainHours[two]
-msgctxt "nRemainHours[two]"
+#: nHours[two]
+#, fuzzy
+msgctxt "nHours[two]"
 msgid "<strong>{{n}} hours</strong>"
 msgstr "<strong>{{n}} сағат</strong>"
 
-#: nRemainHours[few]
-msgctxt "nRemainHours[few]"
+#: nHours[few]
+#, fuzzy
+msgctxt "nHours[few]"
 msgid "<strong>{{n}} hours</strong>"
 msgstr "<strong>{{n}} сағат</strong>"
 
-#: nRemainHours[many]
-msgctxt "nRemainHours[many]"
+#: nHours[many]
+#, fuzzy
+msgctxt "nHours[many]"
 msgid "<strong>{{n}} hours</strong>"
 msgstr "<strong>{{n}} сағат</strong>"
 
-#: nRemainHours[other]
-msgctxt "nRemainHours[other]"
+#: nHours[other]
+#, fuzzy
+msgctxt "nHours[other]"
 msgid "<strong>{{n}} hours</strong>"
+msgstr "<strong>{{n}} сағат</strong>"
+
+#: nAndRemainHours
+#, fuzzy
+msgctxt "nAndRemainHours"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: nAndRemainHours[zero]
+msgctxt "nAndRemainHours[zero]"
+msgid ""
+msgstr ""
+
+#: nAndRemainHours[one]
+#, fuzzy
+msgid "and <strong>{{n}} hour</strong>"
+msgstr "<strong>{{n}} сағат</strong>"
+
+#: nAndRemainHours[two]
+#, fuzzy
+msgctxt "nAndRemainHours[two]"
+msgid "and <strong>{{n}} hours</strong>"
+msgstr "<strong>{{n}} сағат</strong>"
+
+#: nAndRemainHours[few]
+#, fuzzy
+msgctxt "nAndRemainHours[few]"
+msgid "and <strong>{{n}} hours</strong>"
+msgstr "<strong>{{n}} сағат</strong>"
+
+#: nAndRemainHours[many]
+#, fuzzy
+msgctxt "nAndRemainHours[many]"
+msgid "and <strong>{{n}} hours</strong>"
+msgstr "<strong>{{n}} сағат</strong>"
+
+#: nAndRemainHours[other]
+#, fuzzy
+msgctxt "nAndRemainHours[other]"
+msgid "and <strong>{{n}} hours</strong>"
+msgstr "<strong>{{n}} сағат</strong>"
+
+#: nRemainDays
+#, fuzzy
+msgctxt "nRemainDays"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: nRemainDays[zero]
+msgctxt "nRemainDays[zero]"
+msgid ""
+msgstr ""
+
+#: nRemainDays[one]
+#, fuzzy
+msgid "<strong>{{n}} day</strong>"
+msgstr "<strong>{{n}} сағат</strong>"
+
+#: nRemainDays[two]
+#, fuzzy
+msgctxt "nRemainDays[two]"
+msgid "<strong>{{n}} days</strong>"
+msgstr "<strong>{{n}} сағат</strong>"
+
+#: nRemainDays[few]
+#, fuzzy
+msgctxt "nRemainDays[few]"
+msgid "<strong>{{n}} days</strong>"
+msgstr "<strong>{{n}} сағат</strong>"
+
+#: nRemainDays[many]
+#, fuzzy
+msgctxt "nRemainDays[many]"
+msgid "<strong>{{n}} days</strong>"
+msgstr "<strong>{{n}} сағат</strong>"
+
+#: nRemainDays[other]
+#, fuzzy
+msgctxt "nRemainDays[other]"
+msgid "<strong>{{n}} days</strong>"
 msgstr "<strong>{{n}} сағат</strong>"
 
 #: nRemainMinutes
@@ -251,3 +376,19 @@ msgstr "және <strong>{{n}} минут</strong>"
 msgctxt "nRemainMinutes[other]"
 msgid "and <strong>{{n}} minutes</strong>"
 msgstr "және <strong>{{n}} минут</strong>"
+
+#~ msgctxt "nRemainHours"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "nRemainHours[few]"
+#~ msgid "<strong>{{n}} hours</strong>"
+#~ msgstr "<strong>{{n}} сағат</strong>"
+
+#~ msgctxt "nRemainHours[many]"
+#~ msgid "<strong>{{n}} hours</strong>"
+#~ msgstr "<strong>{{n}} сағат</strong>"
+
+#~ msgctxt "nRemainHours[other]"
+#~ msgid "<strong>{{n}} hours</strong>"
+#~ msgstr "<strong>{{n}} сағат</strong>"

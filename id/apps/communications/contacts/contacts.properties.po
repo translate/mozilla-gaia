@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"POT-Creation-Date: 2013-11-15 22:11+0100\n"
 "PO-Revision-Date: 2013-06-18 20:13+0000\n"
 "Last-Translator: Benny <bennychandra@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,6 +70,15 @@ msgstr "Hapus kontak"
 msgid "Select contact"
 msgstr "Pilih kontak"
 
+#: selectAll
+#, fuzzy
+msgid "Select all"
+msgstr "Pilih surel"
+
+#: deselectAll
+msgid "Deselect all"
+msgstr ""
+
 #: editContact
 msgid "Edit contact"
 msgstr "Sunting kontak"
@@ -86,13 +95,13 @@ msgstr "Buang"
 msgid "Comments"
 msgstr "Komentar"
 
-#: no_phones
-msgid "No phones"
-msgstr "Tidak ada telepon"
+#: no_contact_phones
+msgid "This contact does not have a phone number"
+msgstr ""
 
-#: no_email
-msgid "No email"
-msgstr "Tidak ada surel"
+#: no_contact_email
+msgid "This contact does not have an email address"
+msgstr ""
 
 #: removePhotoConfirm
 msgid "Remove contact picture?"
@@ -330,9 +339,121 @@ msgstr "Cari"
 msgid "No contacts found"
 msgstr "Kontak tak ditemukan"
 
+#: transferContactsTitle
+msgid "Transfer Contacts"
+msgstr ""
+
 #: importContactsTitle
 msgid "Import Contacts"
 msgstr "Impor Kontak"
+
+#: exportContactsTitle
+#, fuzzy
+msgid "Export Contacts"
+msgstr "Impor Kontak"
+
+#: exportContactsAction
+msgid "Export"
+msgstr ""
+
+#. # Export
+#: simExport-title
+msgid "Export to SIM"
+msgstr ""
+
+#: sdExport-title
+msgid "Export to SD Card"
+msgstr ""
+
+#: btExport-title
+msgid "Export to Bluetooth"
+msgstr ""
+
+#: sdUMSEnabled
+msgid "Cannot use SD Card because USB storage is enabled"
+msgstr ""
+
+#: exportErrorTitle
+msgid "Export error"
+msgstr ""
+
+#: contactsExported
+#, fuzzy
+msgid "{{ plural(exported) }}"
+msgstr "{[ plural(imported) ]}"
+
+#: contactsExported[zero]
+#, fuzzy
+msgid "No contacts exported"
+msgstr "Tidak ada kontak yang diimpor"
+
+#: contactsExported[one]
+#, fuzzy
+msgctxt "contactsExported[one]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "{{imported}}/{{total}} kontak telah diimpor"
+
+#: contactsExported[two]
+#, fuzzy
+msgctxt "contactsExported[two]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "{{imported}}/{{total}} kontak telah diimpor"
+
+#: contactsExported[few]
+#, fuzzy
+msgctxt "contactsExported[few]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "{{imported}}/{{total}} kontak telah diimpor"
+
+#: contactsExported[many]
+#, fuzzy
+msgctxt "contactsExported[many]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "{{imported}}/{{total}} kontak telah diimpor"
+
+#: contactsExported[other]
+#, fuzzy
+msgctxt "contactsExported[other]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "{{imported}}/{{total}} kontak telah diimpor"
+
+#: exportError-general
+msgid "Some error happened while exporting"
+msgstr ""
+
+#: exportError-SD-shared
+msgctxt "exportError-SD-shared"
+msgid "Can't access memory card because it's shared"
+msgstr ""
+
+#: exportError-SD-unavailable
+msgctxt "exportError-SD-unavailable"
+msgid "Memory card is not available"
+msgstr ""
+
+#: exportError-SD-noSpace
+msgctxt "exportError-SD-noSpace"
+msgid "There's not enough space on the memory card to export the contacts"
+msgstr ""
+
+#: exportError-SIM-unavailable
+msgid "SIM card is not available"
+msgstr ""
+
+#: exportError-BT-shared
+msgctxt "exportError-BT-shared"
+msgid "Can't access memory card because it's shared"
+msgstr ""
+
+#: exportError-BT-unavailable
+msgctxt "exportError-BT-unavailable"
+msgid "Memory card is not available"
+msgstr ""
+
+#: exportError-BT-noSpace
+msgctxt "exportError-BT-noSpace"
+msgid "There's not enough space on the memory card to export the contacts"
+msgstr ""
 
 #. # SIM import
 #: simContacts-import
@@ -389,59 +510,81 @@ msgstr "{{n}} kontak telah diimpor"
 msgid "To import contacts insert or unlock your SIM card"
 msgstr "Untuk mengimpor kontak, masukkan atau buka kunci kartu SIM Anda"
 
+#: noSimMsgExport
+#, fuzzy
+msgid "To export contacts insert or unlock your SIM card"
+msgstr "Untuk mengimpor kontak, masukkan atau buka kunci kartu SIM Anda"
+
 #. # SD Card import
-#: sdContacts-import
-msgid "Import contacts from SD card"
+#: memoryCardContacts-import
+#, fuzzy
+msgid "Import contacts from memory card"
 msgstr "Impor kontak dari kartu SD"
 
-#: sdContacts-importing
-msgid "Importing contacts from SD card…"
+#: memoryCardContacts-importing
+#, fuzzy
+msgid "Importing contacts from memory card…"
 msgstr "Mengimpor kontak dari kartu SD…"
 
-#: sdContacts-reading
-msgid "Reading from SD card…"
+#: memoryCardContacts-reading
+#, fuzzy
+msgid "Reading from memory card…"
 msgstr "Membaca dari kartu SD…"
 
-#: sdContacts-error
-msgid "Could not import contacts from SD card"
+#: memoryCardContacts-error
+#, fuzzy
+msgid "Could not import contacts from memory card"
 msgstr "Tidak dapat mengimpor kontak dari kartu SD"
 
-#: sdContacts-imported3
-msgctxt "sdContacts-imported3"
+#: memoryCardContacts-imported3
+#, fuzzy
+msgctxt "memoryCardContacts-imported3"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: sdContacts-imported3[zero]
-msgid "No contacts detected on SD card to import"
+#: memoryCardContacts-imported3[zero]
+#, fuzzy
+msgid "No contacts detected on memory card to import"
 msgstr "Tidak ada kontak terdeteksi pada kartu SD untuk diimpor"
 
-#: sdContacts-imported3[one]
-msgctxt "sdContacts-imported3[one]"
+#: memoryCardContacts-imported3[one]
+#, fuzzy
+msgctxt "memoryCardContacts-imported3[one]"
 msgid "Imported one contact"
-msgstr "Satu kontak telah diimpor"
+msgstr "Satu kontak diimpor"
 
-#: sdContacts-imported3[two]
-msgctxt "sdContacts-imported3[two]"
+#: memoryCardContacts-imported3[two]
+#, fuzzy
+msgctxt "memoryCardContacts-imported3[two]"
 msgid "Imported {{n}} contacts"
 msgstr "{{n}} kontak telah diimpor"
 
-#: sdContacts-imported3[few]
-msgctxt "sdContacts-imported3[few]"
-msgid "Imported {{n}} contacts"
-msgstr "{{n}} kontak diimpor"
-
-#: sdContacts-imported3[many]
-msgctxt "sdContacts-imported3[many]"
-msgid "Imported {{n}} contacts"
-msgstr "{{n}} kontak diimpor"
-
-#: sdContacts-imported3[other]
-msgctxt "sdContacts-imported3[other]"
+#: memoryCardContacts-imported3[few]
+#, fuzzy
+msgctxt "memoryCardContacts-imported3[few]"
 msgid "Imported {{n}} contacts"
 msgstr "{{n}} kontak telah diimpor"
 
-#: noSdMsg
-msgid "To import contacts insert a SD card"
+#: memoryCardContacts-imported3[many]
+#, fuzzy
+msgctxt "memoryCardContacts-imported3[many]"
+msgid "Imported {{n}} contacts"
+msgstr "{{n}} kontak telah diimpor"
+
+#: memoryCardContacts-imported3[other]
+#, fuzzy
+msgctxt "memoryCardContacts-imported3[other]"
+msgid "Imported {{n}} contacts"
+msgstr "{{n}} kontak telah diimpor"
+
+#: noMemoryCardMsg
+#, fuzzy
+msgid "To import contacts insert a memory card"
+msgstr "Masukkan kartu SD untuk mengimpor kontak"
+
+#: noMemoryCardMsgExport
+#, fuzzy
+msgid "To export contacts insert a memory card"
 msgstr "Masukkan kartu SD untuk mengimpor kontak"
 
 #: genericProgress
@@ -544,16 +687,23 @@ msgid "Order by last name"
 msgstr "Urutkan berdasarkan nama belakang"
 
 #: importSim2
+#, fuzzy
+msgctxt "importSim2"
 msgid "SIM card"
 msgstr "Kartu SIM"
 
-#: importSd
-msgid "SD card"
-msgstr "Kartu SD"
+#: importMemoryCard
+msgctxt "importMemoryCard"
+msgid "Memory card"
+msgstr ""
 
 #: importGmail
 msgid "Gmail"
 msgstr "Gmail"
+
+#: bluetooth
+msgid "Bluetooth"
+msgstr ""
 
 #: importOutlook
 msgid "Outlook"
@@ -589,6 +739,22 @@ msgstr ""
 msgid "Not enabled yet"
 msgstr "Belum diaktifkan"
 
+#: genericNoConnection
+msgid "To import contacts connect to Wi-Fi or data network"
+msgstr ""
+
+#. # Used for export, just in case the strings will diverge on time
+#: simCard
+#, fuzzy
+msgctxt "simCard"
+msgid "SIM card"
+msgstr "Kartu SIM"
+
+#: memoryCard
+msgctxt "memoryCard"
+msgid "Memory card"
+msgstr ""
+
 #. # No contacts
 #: create-new
 msgid "Create a new contact"
@@ -606,6 +772,71 @@ msgstr "Tidak ada kontak"
 msgid "Start adding them now"
 msgstr "Mulai tambahkan mereka sekarang"
 
+#: notImported
+msgid "Not imported"
+msgstr ""
+
+#: imported
+msgid "Imported"
+msgstr ""
+
+#: today
+msgid "Today"
+msgstr ""
+
+#: yesterday
+msgid "Yesterday"
+msgstr ""
+
+#: messageCanceling
+msgid "Please hold on. We are canceling the ongoing operation."
+msgstr ""
+
+#: organise-contacts
+msgid "Organize Contacts"
+msgstr ""
+
+#: find-merge-contacts
+msgid "Find duplicate contacts"
+msgstr ""
+
+#: preparing-contacts
+msgid "Preparing contacts"
+msgstr ""
+
+#~ msgid "No phones"
+#~ msgstr "Tidak ada telepon"
+
+#~ msgid "No email"
+#~ msgstr "Tidak ada surel"
+
+#~ msgctxt "sdContacts-imported3"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "sdContacts-imported3[one]"
+#~ msgid "Imported one contact"
+#~ msgstr "Satu kontak telah diimpor"
+
+#~ msgctxt "sdContacts-imported3[two]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "{{n}} kontak telah diimpor"
+
+#~ msgctxt "sdContacts-imported3[few]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "{{n}} kontak diimpor"
+
+#~ msgctxt "sdContacts-imported3[many]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "{{n}} kontak diimpor"
+
+#~ msgctxt "sdContacts-imported3[other]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "{{n}} kontak telah diimpor"
+
+#~ msgid "SD card"
+#~ msgstr "Kartu SD"
+
 #~ msgid "Windows Live"
 #~ msgstr "Windows Live"
 
@@ -617,9 +848,6 @@ msgstr "Mulai tambahkan mereka sekarang"
 
 #~ msgid "Enable Facebook"
 #~ msgstr "Aktifkan Facebook"
-
-#~ msgid "No contacts imported"
-#~ msgstr "Tidak ada kontak yang diimpor"
 
 #~ msgctxt "simContacts-imported2[few]"
 #~ msgid "Imported {{n}} contacts"

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"POT-Creation-Date: 2013-11-15 22:11+0100\n"
 "PO-Revision-Date: 2013-08-11 10:35+0000\n"
 "Last-Translator: Ibrahima <ibrahima.sarr@pulaagu.com>\n"
 "Language-Team: FULA LOCALIZATION\n"
@@ -12,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -71,6 +71,15 @@ msgstr "Momtu jokkondiral"
 msgid "Select contact"
 msgstr "Labo jokkondiral"
 
+#: selectAll
+#, fuzzy
+msgid "Select all"
+msgstr "Labo iimeel"
+
+#: deselectAll
+msgid "Deselect all"
+msgstr ""
+
 #: editContact
 msgid "Edit contact"
 msgstr "Taƴto jokkondiral"
@@ -87,13 +96,13 @@ msgstr "Momtu"
 msgid "Comments"
 msgstr "Jowe"
 
-#: no_phones
-msgid "No phones"
-msgstr "Alaa cinnde"
+#: no_contact_phones
+msgid "This contact does not have a phone number"
+msgstr ""
 
-#: no_email
-msgid "No email"
-msgstr "Alaa iimeel"
+#: no_contact_email
+msgid "This contact does not have an email address"
+msgstr ""
 
 #: removePhotoConfirm
 msgid "Remove contact picture?"
@@ -331,9 +340,121 @@ msgstr "Yiylo"
 msgid "No contacts found"
 msgstr "Alaa jokkondire njiytaa"
 
+#: transferContactsTitle
+msgid "Transfer Contacts"
+msgstr ""
+
 #: importContactsTitle
 msgid "Import Contacts"
 msgstr "Jiggo Jokkondire"
+
+#: exportContactsTitle
+#, fuzzy
+msgid "Export Contacts"
+msgstr "Jiggo Jokkondire"
+
+#: exportContactsAction
+msgid "Export"
+msgstr ""
+
+#. # Export
+#: simExport-title
+msgid "Export to SIM"
+msgstr ""
+
+#: sdExport-title
+msgid "Export to SD Card"
+msgstr ""
+
+#: btExport-title
+msgid "Export to Bluetooth"
+msgstr ""
+
+#: sdUMSEnabled
+msgid "Cannot use SD Card because USB storage is enabled"
+msgstr ""
+
+#: exportErrorTitle
+msgid "Export error"
+msgstr ""
+
+#: contactsExported
+#, fuzzy
+msgid "{{ plural(exported) }}"
+msgstr "{[ plural(imported) ]}"
+
+#: contactsExported[zero]
+#, fuzzy
+msgid "No contacts exported"
+msgstr "Alaa jokkondire njiggaa"
+
+#: contactsExported[one]
+#, fuzzy
+msgctxt "contactsExported[one]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "{{imported}}/{{total}} sehil njiggaama"
+
+#: contactsExported[two]
+#, fuzzy
+msgctxt "contactsExported[two]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "{{imported}}/{{total}} sehil njiggaama"
+
+#: contactsExported[few]
+#, fuzzy
+msgctxt "contactsExported[few]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "{{imported}}/{{total}} sehil njiggaama"
+
+#: contactsExported[many]
+#, fuzzy
+msgctxt "contactsExported[many]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "{{imported}}/{{total}} sehil njiggaama"
+
+#: contactsExported[other]
+#, fuzzy
+msgctxt "contactsExported[other]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "{{imported}}/{{total}} sehil njiggaama"
+
+#: exportError-general
+msgid "Some error happened while exporting"
+msgstr ""
+
+#: exportError-SD-shared
+msgctxt "exportError-SD-shared"
+msgid "Can't access memory card because it's shared"
+msgstr ""
+
+#: exportError-SD-unavailable
+msgctxt "exportError-SD-unavailable"
+msgid "Memory card is not available"
+msgstr ""
+
+#: exportError-SD-noSpace
+msgctxt "exportError-SD-noSpace"
+msgid "There's not enough space on the memory card to export the contacts"
+msgstr ""
+
+#: exportError-SIM-unavailable
+msgid "SIM card is not available"
+msgstr ""
+
+#: exportError-BT-shared
+msgctxt "exportError-BT-shared"
+msgid "Can't access memory card because it's shared"
+msgstr ""
+
+#: exportError-BT-unavailable
+msgctxt "exportError-BT-unavailable"
+msgid "Memory card is not available"
+msgstr ""
+
+#: exportError-BT-noSpace
+msgctxt "exportError-BT-noSpace"
+msgid "There's not enough space on the memory card to export the contacts"
+msgstr ""
 
 #. # SIM import
 #: simContacts-import
@@ -390,59 +511,81 @@ msgstr "Jiggiima jokkondire {{n}}"
 msgid "To import contacts insert or unlock your SIM card"
 msgstr "Ngam jiggaade jokkondire naatnu walla daaƴtu karta SIM maa"
 
+#: noSimMsgExport
+#, fuzzy
+msgid "To export contacts insert or unlock your SIM card"
+msgstr "Ngam jiggaade jokkondire naatnu walla daaƴtu karta SIM maa"
+
 #. # SD Card import
-#: sdContacts-import
-msgid "Import contacts from SD card"
+#: memoryCardContacts-import
+#, fuzzy
+msgid "Import contacts from memory card"
 msgstr "Jiggo jokkondire kartal SD"
 
-#: sdContacts-importing
-msgid "Importing contacts from SD card…"
+#: memoryCardContacts-importing
+#, fuzzy
+msgid "Importing contacts from memory card…"
 msgstr "Nana jiggo jokkondire kartal SD…"
 
-#: sdContacts-reading
-msgid "Reading from SD card…"
+#: memoryCardContacts-reading
+#, fuzzy
+msgid "Reading from memory card…"
 msgstr "Nana tara e kartal SD…"
 
-#: sdContacts-error
-msgid "Could not import contacts from SD card"
+#: memoryCardContacts-error
+#, fuzzy
+msgid "Could not import contacts from memory card"
 msgstr "Horiima jiggaade jokkondire kartal SD"
 
-#: sdContacts-imported3
-msgctxt "sdContacts-imported3"
+#: memoryCardContacts-imported3
+#, fuzzy
+msgctxt "memoryCardContacts-imported3"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: sdContacts-imported3[zero]
-msgid "No contacts detected on SD card to import"
+#: memoryCardContacts-imported3[zero]
+#, fuzzy
+msgid "No contacts detected on memory card to import"
 msgstr "Alaa jokkondire jiggeteeɗe ejtaa e kartal SD"
 
-#: sdContacts-imported3[one]
-msgctxt "sdContacts-imported3[one]"
+#: memoryCardContacts-imported3[one]
+#, fuzzy
+msgctxt "memoryCardContacts-imported3[one]"
 msgid "Imported one contact"
 msgstr "Jiggiima jokkondiral gootal"
 
-#: sdContacts-imported3[two]
-msgctxt "sdContacts-imported3[two]"
+#: memoryCardContacts-imported3[two]
+#, fuzzy
+msgctxt "memoryCardContacts-imported3[two]"
 msgid "Imported {{n}} contacts"
 msgstr "Jiggiima jokkondire {{n}}"
 
-#: sdContacts-imported3[few]
-msgctxt "sdContacts-imported3[few]"
+#: memoryCardContacts-imported3[few]
+#, fuzzy
+msgctxt "memoryCardContacts-imported3[few]"
 msgid "Imported {{n}} contacts"
 msgstr "Jiggiima jokkondire {{n}}"
 
-#: sdContacts-imported3[many]
-msgctxt "sdContacts-imported3[many]"
+#: memoryCardContacts-imported3[many]
+#, fuzzy
+msgctxt "memoryCardContacts-imported3[many]"
 msgid "Imported {{n}} contacts"
 msgstr "Jiggiima jokkondire {{n}}"
 
-#: sdContacts-imported3[other]
-msgctxt "sdContacts-imported3[other]"
+#: memoryCardContacts-imported3[other]
+#, fuzzy
+msgctxt "memoryCardContacts-imported3[other]"
 msgid "Imported {{n}} contacts"
 msgstr "Jiggiima jokkondire {{n}}"
 
-#: noSdMsg
-msgid "To import contacts insert a SD card"
+#: noMemoryCardMsg
+#, fuzzy
+msgid "To import contacts insert a memory card"
+msgstr "Ngam jiggaade jokkondire naatnu kartal SD"
+
+#: noMemoryCardMsgExport
+#, fuzzy
+msgid "To export contacts insert a memory card"
 msgstr "Ngam jiggaade jokkondire naatnu kartal SD"
 
 #: genericProgress
@@ -545,16 +688,23 @@ msgid "Order by last name"
 msgstr "Leemtoro yettoode"
 
 #: importSim2
+#, fuzzy
+msgctxt "importSim2"
 msgid "SIM card"
 msgstr "Kartal SIM"
 
-#: importSd
-msgid "SD card"
-msgstr "Kartal SD"
+#: importMemoryCard
+msgctxt "importMemoryCard"
+msgid "Memory card"
+msgstr ""
 
 #: importGmail
 msgid "Gmail"
 msgstr "Gmail"
+
+#: bluetooth
+msgid "Bluetooth"
+msgstr ""
 
 #: importOutlook
 msgid "Outlook"
@@ -590,6 +740,22 @@ msgstr ""
 msgid "Not enabled yet"
 msgstr "Hurminaaka tawo"
 
+#: genericNoConnection
+msgid "To import contacts connect to Wi-Fi or data network"
+msgstr ""
+
+#. # Used for export, just in case the strings will diverge on time
+#: simCard
+#, fuzzy
+msgctxt "simCard"
+msgid "SIM card"
+msgstr "Kartal SIM"
+
+#: memoryCard
+msgctxt "memoryCard"
+msgid "Memory card"
+msgstr ""
+
 #. # No contacts
 #: create-new
 msgid "Create a new contact"
@@ -607,6 +773,71 @@ msgstr "Alaa jokkondire"
 msgid "Start adding them now"
 msgstr "Fuɗɗo ɓeydude-ɗe jooni"
 
+#: notImported
+msgid "Not imported"
+msgstr ""
+
+#: imported
+msgid "Imported"
+msgstr ""
+
+#: today
+msgid "Today"
+msgstr ""
+
+#: yesterday
+msgid "Yesterday"
+msgstr ""
+
+#: messageCanceling
+msgid "Please hold on. We are canceling the ongoing operation."
+msgstr ""
+
+#: organise-contacts
+msgid "Organize Contacts"
+msgstr ""
+
+#: find-merge-contacts
+msgid "Find duplicate contacts"
+msgstr ""
+
+#: preparing-contacts
+msgid "Preparing contacts"
+msgstr ""
+
+#~ msgid "No phones"
+#~ msgstr "Alaa cinnde"
+
+#~ msgid "No email"
+#~ msgstr "Alaa iimeel"
+
+#~ msgctxt "sdContacts-imported3"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "sdContacts-imported3[one]"
+#~ msgid "Imported one contact"
+#~ msgstr "Jiggiima jokkondiral gootal"
+
+#~ msgctxt "sdContacts-imported3[two]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "Jiggiima jokkondire {{n}}"
+
+#~ msgctxt "sdContacts-imported3[few]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "Jiggiima jokkondire {{n}}"
+
+#~ msgctxt "sdContacts-imported3[many]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "Jiggiima jokkondire {{n}}"
+
+#~ msgctxt "sdContacts-imported3[other]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "Jiggiima jokkondire {{n}}"
+
+#~ msgid "SD card"
+#~ msgstr "Kartal SD"
+
 #~ msgid "Windows Live"
 #~ msgstr "Windows Live"
 
@@ -618,9 +849,6 @@ msgstr "Fuɗɗo ɓeydude-ɗe jooni"
 
 #~ msgid "Enable Facebook"
 #~ msgstr "Hurmin Facebook"
-
-#~ msgid "No contacts imported"
-#~ msgstr "Alaa jokkondire njiggaa"
 
 #~ msgctxt "simContacts-imported2[few]"
 #~ msgid "Imported {{n}} contacts"

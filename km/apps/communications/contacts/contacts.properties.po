@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"POT-Creation-Date: 2013-11-15 22:11+0100\n"
 "PO-Revision-Date: 2013-06-11 15:14+0000\n"
 "Last-Translator: Piseth <piseth.kheng@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,6 +70,15 @@ msgstr "លុប​ទំនាក់ទំនង​​"
 msgid "Select contact"
 msgstr "លុប​ទំនាក់ទំនង​​"
 
+#: selectAll
+#, fuzzy
+msgid "Select all"
+msgstr "ជ្រើស​អ៊ីមែល"
+
+#: deselectAll
+msgid "Deselect all"
+msgstr ""
+
 #: editContact
 msgid "Edit contact"
 msgstr "កែ​​ទំនាក់ទំនង​"
@@ -86,13 +95,13 @@ msgstr "លុប​ចេញ"
 msgid "Comments"
 msgstr "មតិយោបល់"
 
-#: no_phones
-msgid "No phones"
-msgstr "គ្មាន​ទូរស័ព្ទ"
+#: no_contact_phones
+msgid "This contact does not have a phone number"
+msgstr ""
 
-#: no_email
-msgid "No email"
-msgstr "គ្មាន​អ៊ីមែល"
+#: no_contact_email
+msgid "This contact does not have an email address"
+msgstr ""
 
 #: removePhotoConfirm
 msgid "Remove contact picture?"
@@ -330,9 +339,121 @@ msgstr "ស្វែងរក"
 msgid "No contacts found"
 msgstr "រក​មិន​ឃើញ​ទំនាក់ទំនង"
 
+#: transferContactsTitle
+msgid "Transfer Contacts"
+msgstr ""
+
 #: importContactsTitle
 msgid "Import Contacts"
 msgstr "នាំចូល​ទំនាក់ទំនង"
+
+#: exportContactsTitle
+#, fuzzy
+msgid "Export Contacts"
+msgstr "នាំចូល​ទំនាក់ទំនង"
+
+#: exportContactsAction
+msgid "Export"
+msgstr ""
+
+#. # Export
+#: simExport-title
+msgid "Export to SIM"
+msgstr ""
+
+#: sdExport-title
+msgid "Export to SD Card"
+msgstr ""
+
+#: btExport-title
+msgid "Export to Bluetooth"
+msgstr ""
+
+#: sdUMSEnabled
+msgid "Cannot use SD Card because USB storage is enabled"
+msgstr ""
+
+#: exportErrorTitle
+msgid "Export error"
+msgstr ""
+
+#: contactsExported
+#, fuzzy
+msgid "{{ plural(exported) }}"
+msgstr "{[ plural(imported) ]}"
+
+#: contactsExported[zero]
+#, fuzzy
+msgid "No contacts exported"
+msgstr "មិន​បាន​នាំចូល​​ទំនាក់ទំនង"
+
+#: contactsExported[one]
+#, fuzzy
+msgctxt "contactsExported[one]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "បាន​នាំចូល​មិត្តភ័ក្ដិ {{imported}}/{{total}}"
+
+#: contactsExported[two]
+#, fuzzy
+msgctxt "contactsExported[two]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "បាន​នាំចូល​មិត្តភ័ក្ដិ {{imported}}/{{total}}"
+
+#: contactsExported[few]
+#, fuzzy
+msgctxt "contactsExported[few]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "បាន​នាំចូល​មិត្តភ័ក្ដិ {{imported}}/{{total}}"
+
+#: contactsExported[many]
+#, fuzzy
+msgctxt "contactsExported[many]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "បាន​នាំចូល​មិត្តភ័ក្ដិ {{imported}}/{{total}}"
+
+#: contactsExported[other]
+#, fuzzy
+msgctxt "contactsExported[other]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "បាន​នាំចូល​មិត្តភ័ក្ដិ {{imported}}/{{total}}"
+
+#: exportError-general
+msgid "Some error happened while exporting"
+msgstr ""
+
+#: exportError-SD-shared
+msgctxt "exportError-SD-shared"
+msgid "Can't access memory card because it's shared"
+msgstr ""
+
+#: exportError-SD-unavailable
+msgctxt "exportError-SD-unavailable"
+msgid "Memory card is not available"
+msgstr ""
+
+#: exportError-SD-noSpace
+msgctxt "exportError-SD-noSpace"
+msgid "There's not enough space on the memory card to export the contacts"
+msgstr ""
+
+#: exportError-SIM-unavailable
+msgid "SIM card is not available"
+msgstr ""
+
+#: exportError-BT-shared
+msgctxt "exportError-BT-shared"
+msgid "Can't access memory card because it's shared"
+msgstr ""
+
+#: exportError-BT-unavailable
+msgctxt "exportError-BT-unavailable"
+msgid "Memory card is not available"
+msgstr ""
+
+#: exportError-BT-noSpace
+msgctxt "exportError-BT-noSpace"
+msgid "There's not enough space on the memory card to export the contacts"
+msgstr ""
 
 #. # SIM import
 #: simContacts-import
@@ -389,59 +510,81 @@ msgstr "បាន​នាំចូល​ទំនាក់ទំនង {{n}}"
 msgid "To import contacts insert or unlock your SIM card"
 msgstr "ដើម្បី​នាំចូល​ទំនាក់ទំនង បញ្ចូល ឬ​​​​​ដោះ​សោ​​ស៊ីម​កាត​របស់​អ្នក"
 
+#: noSimMsgExport
+#, fuzzy
+msgid "To export contacts insert or unlock your SIM card"
+msgstr "ដើម្បី​នាំចូល​ទំនាក់ទំនង បញ្ចូល ឬ​​​​​ដោះ​សោ​​ស៊ីម​កាត​របស់​អ្នក"
+
 #. # SD Card import
-#: sdContacts-import
-msgid "Import contacts from SD card"
+#: memoryCardContacts-import
+#, fuzzy
+msgid "Import contacts from memory card"
 msgstr "នាំចូល​ទំនាក់ទំនង​ពី​កាត SD"
 
-#: sdContacts-importing
-msgid "Importing contacts from SD card…"
+#: memoryCardContacts-importing
+#, fuzzy
+msgid "Importing contacts from memory card…"
 msgstr "កំពុង​នាំចូល​ទំនាក់ទំនង​ពី​កាត SD..."
 
-#: sdContacts-reading
-msgid "Reading from SD card…"
+#: memoryCardContacts-reading
+#, fuzzy
+msgid "Reading from memory card…"
 msgstr "កំពុង​អាន​ពី​​​​កាត SD..."
 
-#: sdContacts-error
-msgid "Could not import contacts from SD card"
+#: memoryCardContacts-error
+#, fuzzy
+msgid "Could not import contacts from memory card"
 msgstr "មិន​អាច​នាំចូល​ទំនាក់ទំនង​ពី​​កាត SD"
 
-#: sdContacts-imported3
-msgctxt "sdContacts-imported3"
+#: memoryCardContacts-imported3
+#, fuzzy
+msgctxt "memoryCardContacts-imported3"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: sdContacts-imported3[zero]
-msgid "No contacts detected on SD card to import"
+#: memoryCardContacts-imported3[zero]
+#, fuzzy
+msgid "No contacts detected on memory card to import"
 msgstr "គ្មាន​ទំនាក់ទំនង​ដែល​រក​ឃើញ​នៅ​ក្នុង​​កាត SD ​ដើម្បី​នាំចូល​ឡើយ"
 
-#: sdContacts-imported3[one]
-msgctxt "sdContacts-imported3[one]"
+#: memoryCardContacts-imported3[one]
+#, fuzzy
+msgctxt "memoryCardContacts-imported3[one]"
 msgid "Imported one contact"
 msgstr "បាន​នាំចូល​ទំនាក់ទំនង​​មួយ"
 
-#: sdContacts-imported3[two]
-msgctxt "sdContacts-imported3[two]"
+#: memoryCardContacts-imported3[two]
+#, fuzzy
+msgctxt "memoryCardContacts-imported3[two]"
 msgid "Imported {{n}} contacts"
-msgstr "បាន​នាំចូល​ទំនាក់ទំនង {{n}}"
+msgstr "បាន​នាំចូល​ទំនាក់ទំនង{{n}}"
 
-#: sdContacts-imported3[few]
-msgctxt "sdContacts-imported3[few]"
+#: memoryCardContacts-imported3[few]
+#, fuzzy
+msgctxt "memoryCardContacts-imported3[few]"
 msgid "Imported {{n}} contacts"
-msgstr "បាន​នាំចូល​ទំនាក់ទំនង {{n}}"
+msgstr "បាន​នាំចូល​ទំនាក់ទំនង{{n}}"
 
-#: sdContacts-imported3[many]
-msgctxt "sdContacts-imported3[many]"
+#: memoryCardContacts-imported3[many]
+#, fuzzy
+msgctxt "memoryCardContacts-imported3[many]"
 msgid "Imported {{n}} contacts"
-msgstr "បាន​នាំចូល​ទំនាក់ទំនង {{n}}"
+msgstr "បាន​នាំចូល​ទំនាក់ទំនង{{n}}"
 
-#: sdContacts-imported3[other]
-msgctxt "sdContacts-imported3[other]"
+#: memoryCardContacts-imported3[other]
+#, fuzzy
+msgctxt "memoryCardContacts-imported3[other]"
 msgid "Imported {{n}} contacts"
-msgstr "បាន​នាំចូល​ទំនាក់ទំនង {{n}}"
+msgstr "បាន​នាំចូល​ទំនាក់ទំនង{{n}}"
 
-#: noSdMsg
-msgid "To import contacts insert a SD card"
+#: noMemoryCardMsg
+#, fuzzy
+msgid "To import contacts insert a memory card"
+msgstr "ដើម្បី​នាំចូល​ទំនាក់ទំនង​ បញ្ចូល​កាត SD"
+
+#: noMemoryCardMsgExport
+#, fuzzy
+msgid "To export contacts insert a memory card"
 msgstr "ដើម្បី​នាំចូល​ទំនាក់ទំនង​ បញ្ចូល​កាត SD"
 
 #: genericProgress
@@ -544,16 +687,23 @@ msgid "Order by last name"
 msgstr "តម្រៀប​តាម​នាម​ត្រកូល"
 
 #: importSim2
+#, fuzzy
+msgctxt "importSim2"
 msgid "SIM card"
 msgstr "ស៊ីម​កាត"
 
-#: importSd
-msgid "SD card"
-msgstr "កាត SD"
+#: importMemoryCard
+msgctxt "importMemoryCard"
+msgid "Memory card"
+msgstr ""
 
 #: importGmail
 msgid "Gmail"
 msgstr "Gmail"
+
+#: bluetooth
+msgid "Bluetooth"
+msgstr ""
 
 #: importOutlook
 msgid "Outlook"
@@ -587,6 +737,22 @@ msgstr "ដើម្បី​នាំចូល​​មិត្តភ័ក្
 msgid "Not enabled yet"
 msgstr "មិន​ទាន់​បាន​បើក​នៅ​ឡើយ​ទេ"
 
+#: genericNoConnection
+msgid "To import contacts connect to Wi-Fi or data network"
+msgstr ""
+
+#. # Used for export, just in case the strings will diverge on time
+#: simCard
+#, fuzzy
+msgctxt "simCard"
+msgid "SIM card"
+msgstr "ស៊ីម​កាត"
+
+#: memoryCard
+msgctxt "memoryCard"
+msgid "Memory card"
+msgstr ""
+
 #. # No contacts
 #: create-new
 msgid "Create a new contact"
@@ -604,6 +770,71 @@ msgstr "គ្មាន​ទំនាក់ទំនង"
 msgid "Start adding them now"
 msgstr "ចាប់ផ្ដើម​បន្ថែម​​វា​ឥឡូវ"
 
+#: notImported
+msgid "Not imported"
+msgstr ""
+
+#: imported
+msgid "Imported"
+msgstr ""
+
+#: today
+msgid "Today"
+msgstr ""
+
+#: yesterday
+msgid "Yesterday"
+msgstr ""
+
+#: messageCanceling
+msgid "Please hold on. We are canceling the ongoing operation."
+msgstr ""
+
+#: organise-contacts
+msgid "Organize Contacts"
+msgstr ""
+
+#: find-merge-contacts
+msgid "Find duplicate contacts"
+msgstr ""
+
+#: preparing-contacts
+msgid "Preparing contacts"
+msgstr ""
+
+#~ msgid "No phones"
+#~ msgstr "គ្មាន​ទូរស័ព្ទ"
+
+#~ msgid "No email"
+#~ msgstr "គ្មាន​អ៊ីមែល"
+
+#~ msgctxt "sdContacts-imported3"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "sdContacts-imported3[one]"
+#~ msgid "Imported one contact"
+#~ msgstr "បាន​នាំចូល​ទំនាក់ទំនង​​មួយ"
+
+#~ msgctxt "sdContacts-imported3[two]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "បាន​នាំចូល​ទំនាក់ទំនង {{n}}"
+
+#~ msgctxt "sdContacts-imported3[few]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "បាន​នាំចូល​ទំនាក់ទំនង {{n}}"
+
+#~ msgctxt "sdContacts-imported3[many]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "បាន​នាំចូល​ទំនាក់ទំនង {{n}}"
+
+#~ msgctxt "sdContacts-imported3[other]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "បាន​នាំចូល​ទំនាក់ទំនង {{n}}"
+
+#~ msgid "SD card"
+#~ msgstr "កាត SD"
+
 #~ msgid "Windows Live"
 #~ msgstr "Windows Live"
 
@@ -615,9 +846,6 @@ msgstr "ចាប់ផ្ដើម​បន្ថែម​​វា​ឥឡូ
 
 #~ msgid "Enable Facebook"
 #~ msgstr "បើក Facebook"
-
-#~ msgid "No contacts imported"
-#~ msgstr "មិន​បាន​នាំចូល​​ទំនាក់ទំនង"
 
 #~ msgctxt "simContacts-imported2[few]"
 #~ msgid "Imported {{n}} contacts"

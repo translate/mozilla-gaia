@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-02 12:33+0100\n"
+"POT-Creation-Date: 2013-11-15 22:11+0100\n"
 "PO-Revision-Date: 2013-09-10 15:07+0000\n"
 "Last-Translator: thangamani-arun <thangam.arunx@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1378825647.000000\n"
@@ -37,8 +37,18 @@ msgstr "இரத்துசெய்"
 msgid "Hour"
 msgstr "மணி நேரம்"
 
+#: hours
+#, fuzzy
+msgid "Hours"
+msgstr "மணி நேரம்"
+
 #: minute
 msgid "Minute"
+msgstr "நிமிடம்"
+
+#: minutes
+#, fuzzy
+msgid "Minutes"
 msgstr "நிமிடம்"
 
 #: enable
@@ -57,6 +67,15 @@ msgstr "அடையாளம்"
 msgid "Alarm"
 msgstr "எச்சரிக்கை மணி"
 
+#: timer
+#, fuzzy
+msgid "Timer"
+msgstr "நேரம்"
+
+#: stopwatch
+msgid "Stopwatch"
+msgstr ""
+
 #: alarmName.placeholder
 msgid "Alarm name"
 msgstr "எச்சரிக்கை மணியின் பெயர்"
@@ -68,6 +87,22 @@ msgstr "புதிய எச்சரிக்கை மணி"
 #: editAlarm
 msgid "Edit alarm"
 msgstr "எச்சரிக்கை மணியை திருத்து"
+
+#: pause
+msgid "Pause"
+msgstr ""
+
+#: resume
+msgid "Resume"
+msgstr ""
+
+#: lap
+msgid "Lap"
+msgstr ""
+
+#: lap-number
+msgid "Lap {{n}}"
+msgstr ""
 
 #: delete
 msgid "Delete"
@@ -155,6 +190,11 @@ msgstr ""
 msgid "The alarm is set for {{hours}} {{minutes}} from now."
 msgstr "இப்பொழுது எச்சரிக்கை மணியானது {{hours}} {{minutes} க்கு அமைக்கப்பட்டது."
 
+#: countdown-moreThanADay
+#, fuzzy
+msgid "The alarm is set for {{days}} {{hours}} from now."
+msgstr "இப்பொழுது எச்சரிக்கை மணியானது {{hours}} {{minutes} க்கு அமைக்கப்பட்டது."
+
 #: nMinutes
 msgctxt "nMinutes"
 msgid "{[ plural(n) ]}"
@@ -188,38 +228,123 @@ msgctxt "nMinutes[other]"
 msgid "{{n}} minutes"
 msgstr "{{n}} நிமிடங்கள்"
 
-#: nRemainHours
-msgctxt "nRemainHours"
+#: nHours
+#, fuzzy
+msgctxt "nHours"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: nRemainHours[zero]
-msgctxt "nRemainHours[zero]"
+#: nHours[zero]
+msgctxt "nHours[zero]"
 msgid ""
 msgstr ""
 
-#: nRemainHours[one]
+#: nHours[one]
 msgid "<strong>{{n}} hour</strong>"
 msgstr "<strong>{{n}} மணி நேரம்</strong>"
 
-#: nRemainHours[two]
-msgctxt "nRemainHours[two]"
+#: nHours[two]
+#, fuzzy
+msgctxt "nHours[two]"
 msgid "<strong>{{n}} hours</strong>"
 msgstr "<strong>{{n}} மணி நேரம்</strong>"
 
-#: nRemainHours[few]
-msgctxt "nRemainHours[few]"
+#: nHours[few]
+#, fuzzy
+msgctxt "nHours[few]"
 msgid "<strong>{{n}} hours</strong>"
 msgstr "<strong>{{n}} மணி நேரம்</strong>"
 
-#: nRemainHours[many]
-msgctxt "nRemainHours[many]"
+#: nHours[many]
+#, fuzzy
+msgctxt "nHours[many]"
 msgid "<strong>{{n}} hours</strong>"
 msgstr "<strong>{{n}} மணி நேரம்</strong>"
 
-#: nRemainHours[other]
-msgctxt "nRemainHours[other]"
+#: nHours[other]
+#, fuzzy
+msgctxt "nHours[other]"
 msgid "<strong>{{n}} hours</strong>"
+msgstr "<strong>{{n}} மணி நேரம்</strong>"
+
+#: nAndRemainHours
+#, fuzzy
+msgctxt "nAndRemainHours"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: nAndRemainHours[zero]
+msgctxt "nAndRemainHours[zero]"
+msgid ""
+msgstr ""
+
+#: nAndRemainHours[one]
+#, fuzzy
+msgid "and <strong>{{n}} hour</strong>"
+msgstr "<strong>{{n}} மணி நேரம்</strong>"
+
+#: nAndRemainHours[two]
+#, fuzzy
+msgctxt "nAndRemainHours[two]"
+msgid "and <strong>{{n}} hours</strong>"
+msgstr "<strong>{{n}} மணி நேரம்</strong>"
+
+#: nAndRemainHours[few]
+#, fuzzy
+msgctxt "nAndRemainHours[few]"
+msgid "and <strong>{{n}} hours</strong>"
+msgstr "<strong>{{n}} மணி நேரம்</strong>"
+
+#: nAndRemainHours[many]
+#, fuzzy
+msgctxt "nAndRemainHours[many]"
+msgid "and <strong>{{n}} hours</strong>"
+msgstr "<strong>{{n}} மணி நேரம்</strong>"
+
+#: nAndRemainHours[other]
+#, fuzzy
+msgctxt "nAndRemainHours[other]"
+msgid "and <strong>{{n}} hours</strong>"
+msgstr "<strong>{{n}} மணி நேரம்</strong>"
+
+#: nRemainDays
+#, fuzzy
+msgctxt "nRemainDays"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: nRemainDays[zero]
+msgctxt "nRemainDays[zero]"
+msgid ""
+msgstr ""
+
+#: nRemainDays[one]
+#, fuzzy
+msgid "<strong>{{n}} day</strong>"
+msgstr "<strong>{{n}} மணி நேரம்</strong>"
+
+#: nRemainDays[two]
+#, fuzzy
+msgctxt "nRemainDays[two]"
+msgid "<strong>{{n}} days</strong>"
+msgstr "<strong>{{n}} மணி நேரம்</strong>"
+
+#: nRemainDays[few]
+#, fuzzy
+msgctxt "nRemainDays[few]"
+msgid "<strong>{{n}} days</strong>"
+msgstr "<strong>{{n}} மணி நேரம்</strong>"
+
+#: nRemainDays[many]
+#, fuzzy
+msgctxt "nRemainDays[many]"
+msgid "<strong>{{n}} days</strong>"
+msgstr "<strong>{{n}} மணி நேரம்</strong>"
+
+#: nRemainDays[other]
+#, fuzzy
+msgctxt "nRemainDays[other]"
+msgid "<strong>{{n}} days</strong>"
 msgstr "<strong>{{n}} மணி நேரம்</strong>"
 
 #: nRemainMinutes
@@ -255,3 +380,19 @@ msgstr "மற்றும் <strong>{{n}} நிமிடங்கள்</stro
 msgctxt "nRemainMinutes[other]"
 msgid "and <strong>{{n}} minutes</strong>"
 msgstr "மற்றும் <strong>{{n}} நிமிடங்கள்</strong>"
+
+#~ msgctxt "nRemainHours"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "nRemainHours[few]"
+#~ msgid "<strong>{{n}} hours</strong>"
+#~ msgstr "<strong>{{n}} மணி நேரம்</strong>"
+
+#~ msgctxt "nRemainHours[many]"
+#~ msgid "<strong>{{n}} hours</strong>"
+#~ msgstr "<strong>{{n}} மணி நேரம்</strong>"
+
+#~ msgctxt "nRemainHours[other]"
+#~ msgid "<strong>{{n}} hours</strong>"
+#~ msgstr "<strong>{{n}} மணி நேரம்</strong>"

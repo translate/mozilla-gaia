@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-22 13:57+0100\n"
+"POT-Creation-Date: 2013-11-15 22:32+0100\n"
 "PO-Revision-Date: 2013-07-02 08:49+0000\n"
 "Last-Translator: Veeven <veeven@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1372754941.000000\n"
@@ -265,6 +265,10 @@ msgctxt "authentication"
 msgid "Authentication"
 msgstr "ధృవీకరణ"
 
+#: eap
+msgid "EAP method"
+msgstr ""
+
 #: identity
 msgid "Identifier"
 msgstr "గుర్తింపరి"
@@ -353,8 +357,18 @@ msgid "PIN is 4 or 8 digits"
 msgstr "పిన్ అనేది 4 లేదా 8 అంకెలలో ఉండాలి"
 
 #: wpsPinInput
-msgid "Input {{pin}} to opposite device"
+#, fuzzy
+msgid "Input {{pin}} to an opposite device"
 msgstr "తోడు పరికరానికి {{pin}} ఇవ్వండి"
+
+#: wpsPinAps
+msgid "Select an opposite device"
+msgstr ""
+
+#: wpsAnyAp
+msgctxt "wpsAnyAp"
+msgid "Any"
+msgstr ""
 
 #: wpsCancelMessage
 #, fuzzy
@@ -371,6 +385,14 @@ msgstr "WPS రద్దుచేయుటలో విఫలమైంది"
 msgid "Call Settings"
 msgstr "కాల్ అమరికలు"
 
+#: callSettingsQuery
+msgid "Requesting network info…"
+msgstr ""
+
+#: callSettingsQueryError
+msgid "Error in query"
+msgstr ""
+
 #: voiceMail
 msgid "Voicemail"
 msgstr ""
@@ -383,9 +405,23 @@ msgstr ""
 msgid "Not set"
 msgstr ""
 
+#: voicePrivacyMode
+msgid "Voice privacy mode"
+msgstr ""
+
 #: callWaiting
 msgid "Call waiting"
 msgstr "పిలుపు నిరీక్షణ"
+
+#: confirmCallWaitingTitle
+msgid "Unable to confirm call waiting preferences"
+msgstr ""
+
+#: confirmCallWaitingDesc
+msgid ""
+"The device is currently unable to communicate with the carrier. Try setting "
+"the preference again."
+msgstr ""
 
 #: callForwarding
 msgid "Call forwarding"
@@ -427,14 +463,6 @@ msgstr ""
 msgid "When unreachable"
 msgstr "చేరుకోలేనప్పుడు"
 
-#: callForwardingRequesting
-msgid "Requesting network info…"
-msgstr ""
-
-#: callForwardingQueryError
-msgid "Error in query"
-msgstr ""
-
 #: callForwardingForwardingVoiceTo
 msgid "Voice calls to"
 msgstr ""
@@ -446,20 +474,6 @@ msgstr "అచేనమైవుంది"
 
 #: callForwardingConfirmTitle
 msgid "Call forwarding confirmation message"
-msgstr ""
-
-#: callBroadcastService
-msgid "Cell broadcast service"
-msgstr ""
-
-#: confirmCallWaitingTitle
-msgid "Unable to confirm call waiting preferences"
-msgstr ""
-
-#: confirmCallWaitingDesc
-msgid ""
-"The device is currently unable to communicate with the carrier. Try setting "
-"the preference again."
 msgstr ""
 
 #: cf-alwaysUseThisNumber
@@ -492,6 +506,205 @@ msgstr ""
 
 #: callForwardingSetError
 msgid "Call settings error."
+msgstr ""
+
+#: callerId
+msgid "Caller ID"
+msgstr ""
+
+#: callerId-default
+msgid "Network default"
+msgstr ""
+
+#: callerId-hide
+msgid "Hide number"
+msgstr ""
+
+#: callerId-show
+msgid "Show number"
+msgstr ""
+
+#: fdn
+msgctxt "fdn"
+msgid "Fixed dialing numbers"
+msgstr ""
+
+#: fdnSettings
+msgctxt "fdnSettings"
+msgid "Fixed dialing numbers"
+msgstr ""
+
+#: fdn-authorizedNumbers
+msgid "Authorized numbers"
+msgstr ""
+
+#: fdn-authorizedNumbers-desc
+msgid "List of numbers that can be called"
+msgstr ""
+
+#: fdn-explanation1
+msgid "Restrict which numbers can be dialed from this phone."
+msgstr ""
+
+#: fdn-explanation2
+msgid "(Emergency numbers will always be dialable)"
+msgstr ""
+
+#: fdnEnable
+msgid "Enable FDN"
+msgstr ""
+
+#: fdnDisable
+msgid "Disable FDN"
+msgstr ""
+
+#: fdnReset
+msgid "Reset PIN2"
+msgstr ""
+
+#: fdnAttemptMsg3
+#, fuzzy
+msgctxt "fdnAttemptMsg3"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: fdnAttemptMsg3[one]
+msgctxt "fdnAttemptMsg3[one]"
+msgid ""
+"You have one try left to enter the correct code before locking the SIM card."
+msgstr ""
+
+#: fdnAttemptMsg3[two]
+msgctxt "fdnAttemptMsg3[two]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+
+#: fdnAttemptMsg3[few]
+msgctxt "fdnAttemptMsg3[few]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+
+#: fdnAttemptMsg3[many]
+msgctxt "fdnAttemptMsg3[many]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+
+#: fdnAttemptMsg3[other]
+msgctxt "fdnAttemptMsg3[other]"
+msgid ""
+"You have {{n}} tries left to enter the correct code before locking the SIM "
+"card."
+msgstr ""
+
+#: fdnLastChanceMsg
+msgid ""
+"This is your last chance to enter the correct PIN2. Otherwise, you must "
+"enter the PUK2 code to use this SIM card."
+msgstr ""
+
+#: fdnErrorMsg
+msgid "The PIN2 code is incorrect."
+msgstr ""
+
+#: fdn-enabled-warning
+msgid "Call forwarding is disabled by FDN."
+msgstr ""
+
+#: fdnContact-name
+#, fuzzy
+msgid "name"
+msgstr "పేరు"
+
+#: fdnContact-number
+msgctxt "fdnContact-number"
+msgid "number"
+msgstr ""
+
+#: fdnContact-submit
+msgid "submit"
+msgstr ""
+
+#: fdnAction-add
+msgid "Add contact"
+msgstr ""
+
+#: fdnAction-call
+msgid "Call"
+msgstr ""
+
+#: fdnAction-edit
+msgid "Edit contact"
+msgstr ""
+
+#: fdnAction-delete
+msgid "Delete contact"
+msgstr ""
+
+#. # Connectivity :: Messaging
+#: messagingSettings
+msgid "Messaging Settings"
+msgstr ""
+
+#: message-confirmation
+msgid "Message confirmation"
+msgstr ""
+
+#: message-delivery-reports
+msgid "Delivery reports"
+msgstr ""
+
+#: message-delivery-reports-details
+msgid "Request notification of delivery for each message sent"
+msgstr ""
+
+#: mmsTitle
+msgid "Multimedia messaging (MMS)"
+msgstr ""
+
+#: auto-retrieve
+msgid "Auto retrieve"
+msgstr ""
+
+#: auto-retrieve-details
+msgid "Automatically retrieve messages"
+msgstr ""
+
+#: manual-retrieve
+msgid "Off"
+msgstr ""
+
+#: auto-roaming-retrieve
+msgid "On with roaming"
+msgstr ""
+
+#: auto-no-roaming-retrieve
+msgid "On without roaming"
+msgstr ""
+
+#: autoConfigure
+msgid "Auto-configure"
+msgstr "స్వయం-స్వరూపించు"
+
+#: wapPushMessages
+msgid "WAP Push messages"
+msgstr ""
+
+#: wapPush
+msgid "WAP Push"
+msgstr ""
+
+#: cellBroadcastMessages
+msgid "Cell broadcast messages"
+msgstr ""
+
+#: cellBroadcast
+msgid "Cell broadcast"
 msgstr ""
 
 #. # Connectivity :: Cellular & Data
@@ -537,6 +750,10 @@ msgctxt "operator-networkType-auto"
 msgid "Automatic"
 msgstr "స్వయంచాలకం"
 
+#: operator-networkType-prefer2G
+msgid "2G preferred"
+msgstr ""
+
 #: operator-networkType-2G
 msgid "2G only"
 msgstr "2జీ మాత్రమే"
@@ -544,6 +761,35 @@ msgstr "2జీ మాత్రమే"
 #: operator-networkType-3G
 msgid "3G only"
 msgstr "3జీ మాత్రమే"
+
+#. # DUALSTACK
+#: operator-networkType-GSM
+msgid "GSM"
+msgstr ""
+
+#: operator-networkType-WCDMA
+msgid "WCDMA"
+msgstr ""
+
+#: operator-networkType-CDMA
+msgid "CDMA"
+msgstr ""
+
+#: operator-networkType-EVDO
+msgid "EVDO"
+msgstr ""
+
+#: operator-networkType-preferGSM
+msgid "GSM preferred"
+msgstr ""
+
+#: operator-networkType-preferWCDMA
+msgid "WCDMA preferred"
+msgstr ""
+
+#: operator-networkType-preferEVDO
+msgid "EVDO preferred"
+msgstr ""
 
 #: operator-autoSelect
 msgid "Automatic selection"
@@ -554,6 +800,10 @@ msgstr "స్వయంచాలక ఎంపిక"
 msgctxt "operator-networkSelect-auto"
 msgid "Automatic"
 msgstr "స్వయంచాలకం"
+
+#: operator-networkSelect-manual
+msgid "Manual"
+msgstr ""
 
 #: operator-turnAutoSelectOff
 msgid "Turn automatic selection off to view available network operators."
@@ -573,6 +823,23 @@ msgstr "అనుసంధానం విఫలమైంది"
 msgctxt "operator-status-connected"
 msgid "Connected"
 msgstr "అనుసంధానించబడింది"
+
+#: operator-roamingPreference
+msgid "Roaming preference"
+msgstr ""
+
+#: operator-roamingPreference-home
+msgid "Home"
+msgstr ""
+
+#: operator-roamingPreference-any
+msgctxt "operator-roamingPreference-any"
+msgid "Any"
+msgstr ""
+
+#: operator-roamingPreference-affiliated
+msgid "Affiliated"
+msgstr ""
 
 #: apn
 msgid "APN"
@@ -596,14 +863,6 @@ msgstr ""
 msgid "APN settings"
 msgstr "ఎంఎంఎస్ అమరికలు"
 
-#: text-message-confirmation
-msgid "Text message confirmation"
-msgstr ""
-
-#: mmsTitle
-msgid "Multimedia messaging (MMS)"
-msgstr ""
-
 #: mmsport
 msgid "MMS port"
 msgstr "ఎంఎంఎస్ ద్వారము"
@@ -615,38 +874,6 @@ msgstr ""
 #: mmsc
 msgid "MMSC"
 msgstr ""
-
-#: auto-retrieve
-msgid "Auto retrieve"
-msgstr ""
-
-#: auto-retrieve-details
-msgid "Automatically retrieve messages"
-msgstr ""
-
-#: manual-retrieve
-msgid "Off"
-msgstr ""
-
-#: auto-roaming-retrieve
-msgid "On with roaming"
-msgstr ""
-
-#: auto-no-roaming-retrieve
-msgid "On without roaming"
-msgstr ""
-
-#: delivery-reports
-msgid "Delivery reports"
-msgstr ""
-
-#: delivery-reports-details
-msgid "Request notification of delivery for each text message sent"
-msgstr ""
-
-#: autoConfigure
-msgid "Auto-configure"
-msgstr "స్వయం-స్వరూపించు"
 
 #: httpProxyHost
 msgid "HTTP proxy host"
@@ -754,6 +981,10 @@ msgstr ""
 msgid "Visible to all"
 msgstr ""
 
+#: bluetooth-name-maxlength-alert
+msgid "Your device name exceeds {{length}} characters. Please retry again."
+msgstr ""
+
 #: bt-status-nopaired
 msgid "No devices paired"
 msgstr ""
@@ -831,8 +1062,32 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "అనుసంధానించబడింది"
 
+#: device-status-connected-phone
+msgid "Connected to phone audio"
+msgstr ""
+
+#: device-status-connected-media
+msgid "Connected to media audio"
+msgstr ""
+
+#: device-status-connected-phone-media
+msgid "Connected to phone/media audio"
+msgstr ""
+
 #: device-option-unpair
 msgid "Unpair"
+msgstr ""
+
+#: device-option-confirm
+msgid "Confirm"
+msgstr ""
+
+#: device-option-unpair-confirmation
+msgid "Confirmation"
+msgstr ""
+
+#: device-option-unpair-device
+msgid "Unpair Device?"
 msgstr ""
 
 #: device-option-connect
@@ -862,6 +1117,10 @@ msgstr "తెలియని పరికరం"
 #: change-phone-name
 msgid "Change phone name"
 msgstr "దూరవాణి పేరు మార్చు"
+
+#: change-phone-name-desc
+msgid "Change the name of your device as it appears in your computer"
+msgstr ""
 
 #: bluetooth-new-name
 msgid "New name"
@@ -939,7 +1198,15 @@ msgid ""
 "from it."
 msgstr ""
 
+#: pair-view-title
+msgid "Bluetooth Request From"
+msgstr ""
+
 #. # Connectivity :: Internet Sharing
+#: SSIDCannotBeEmpty
+msgid "The SSID cannot be empty"
+msgstr ""
+
 #: internetSharing
 msgid "Internet sharing"
 msgstr ""
@@ -1034,6 +1301,18 @@ msgstr "సంపుటం"
 msgid "Tones"
 msgstr "స్వరాలు"
 
+#: touch-tones
+msgid "Audible touch tones"
+msgstr ""
+
+#: touch-tone-short
+msgid "Short"
+msgstr ""
+
+#: touch-tone-long
+msgid "Long"
+msgstr ""
+
 #: select-tone
 msgid "Select a tone"
 msgstr "ఒక స్వరాన్ని ఎంచుకోడండి"
@@ -1070,6 +1349,14 @@ msgstr "తెర తాళంతీయి"
 msgid "Camera shutter"
 msgstr "కెమేరా షట్టరు"
 
+#: camera-recordingsound
+msgid "Video recording"
+msgstr ""
+
+#: sent-mail
+msgid "Sent Mail"
+msgstr ""
+
 #: sent-message
 msgid "Sent Message"
 msgstr ""
@@ -1086,6 +1373,16 @@ msgstr ""
 msgid "Voice"
 msgstr "గొంతు"
 
+#: savingringtone
+msgid "Saving ringtone…"
+msgstr ""
+
+#: unplayable-ringtone
+msgid ""
+"The ringtone was not changed because the selected file can not be played on "
+"this phone."
+msgstr ""
+
 #. # Personalization :: Display
 #: display
 msgid "Display"
@@ -1100,8 +1397,9 @@ msgid "Adjust automatically"
 msgstr ""
 
 #: lockScreen
-msgid "Lock Screen"
-msgstr ""
+#, fuzzy
+msgid "Lock screen"
+msgstr "తెర తాళంతీయి"
 
 #: wallpaper
 msgid "Wallpaper"
@@ -1131,6 +1429,10 @@ msgstr "10 నిమిషాలు"
 
 #: never
 msgid "never"
+msgstr ""
+
+#: lock-orientation
+msgid "Lock orientation"
 msgstr ""
 
 #. # Personalization :: Notifications
@@ -1198,109 +1500,76 @@ msgstr ""
 msgid "%A, %B %d, %Y"
 msgstr ""
 
+#. # Personalization :: Homescreen
+#: homescreen
+msgid "Homescreen"
+msgstr ""
+
+#: changeHomescreen
+msgid "Change homescreen"
+msgstr ""
+
+#: changeHomescreenButton
+msgctxt "changeHomescreenButton"
+msgid "Change"
+msgstr ""
+
+#: description
+msgid "Description"
+msgstr ""
+
 #. # Personalization :: Keyboard
-#: keyboard
-msgid "Keyboard"
+#: installedInputMethods
+msgid "Installed input methods"
+msgstr ""
+
+#: keyboards
+msgid "Keyboards"
 msgstr ""
 
 #: keyboardLayouts
 msgid "Keyboard layouts"
 msgstr ""
 
+#: numberKeyboardLayouts
+msgid "Number layouts"
+msgstr ""
+
+#: optionKeyboardLayouts
+msgid "Option layouts"
+msgstr ""
+
 #: keypad
 msgid "Keypad"
 msgstr ""
 
-#: vibration
-msgid "Vibration"
+#: selectedKeyboards
+msgid "Selected keyboards"
 msgstr ""
 
-#: clickSound
-msgid "Click sound"
+#: addMoreKeyboards
+msgid "Add more keyboards"
 msgstr ""
 
-#: autoCorrect
-msgid "Auto correction"
+#: mustHaveOneKeyboard
+msgid "At least one {{type}} keyboard should be selected"
 msgstr ""
 
-#: wordSuggestion
-msgid "Word suggestion"
+#: keyboardType-text
+msgid "text"
 msgstr ""
 
-#: english
-msgid "English"
+#: keyboardType-url
+msgid "url"
 msgstr ""
 
-#: dvorak
-msgid "English (Dvorak)"
+#: keyboardType-number
+msgctxt "keyboardType-number"
+msgid "number"
 msgstr ""
 
-#: spanish
-msgid "Spanish"
-msgstr ""
-
-#: portuguese
-msgid "Portuguese Brazilian"
-msgstr ""
-
-#: latin
-msgid "Other Latin scripts"
-msgstr ""
-
-#: latin-desc
-msgid "French, German, Norwegian (Bokmål), Slovak, Turkish"
-msgstr ""
-
-#: cyrillic
-msgid "Cyrillic scripts"
-msgstr ""
-
-#: cyrillic-desc
-msgid "Russian, Serbian (cyrillic)"
-msgstr ""
-
-#: arabic
-msgid "Arabic"
-msgstr ""
-
-#: greek
-msgid "Greek"
-msgstr ""
-
-#: hebrew
-msgid "Hebrew"
-msgstr ""
-
-#: jp-kanji
-msgid "Japanese"
-msgstr ""
-
-#: jp-kanji-desc
-msgid "Kanji"
-msgstr ""
-
-#: traditionalChinese
-msgid "Traditional Chinese"
-msgstr ""
-
-#: traditionalChinese-desc
-msgid "Zhuyin"
-msgstr ""
-
-#: simplifiedChinese
-msgid "Simplified Chinese"
-msgstr ""
-
-#: simplifiedChinese-desc
-msgid "Pinyin"
-msgstr ""
-
-#: polish
-msgid "Polish"
-msgstr ""
-
-#: serbian
-msgid "Serbian"
+#: defaultKeyboardEnabled
+msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -1334,7 +1603,7 @@ msgid "Passcode: {{code}}"
 msgstr ""
 
 #: phoneLock
-msgid "Phone lock"
+msgid "Screen lock"
 msgstr ""
 
 #: simSecurity
@@ -1344,6 +1613,10 @@ msgstr ""
 #. # Security :: App permissions
 #: appPermissions
 msgid "App permissions"
+msgstr ""
+
+#: author
+msgid "Author"
 msgstr ""
 
 #: permissions
@@ -1412,6 +1685,7 @@ msgid "Ring"
 msgstr ""
 
 #: change
+msgctxt "change"
 msgid "Change"
 msgstr ""
 
@@ -1419,8 +1693,12 @@ msgstr ""
 msgid "Create"
 msgstr ""
 
-#: create-passcode
+#: create-a-passcode
 msgid "Create a Passcode"
+msgstr ""
+
+#: passcode-heading
+msgid "Passcode"
 msgstr ""
 
 #: enter-passcode
@@ -1443,12 +1721,8 @@ msgstr ""
 msgid "Passcode doesn’t match. Try again."
 msgstr ""
 
-#: passcode
-msgid "Passcode"
-msgstr ""
-
 #: confirm-passcode
-msgid "Confirm Passcode"
+msgid "Confirm passcode"
 msgstr ""
 
 #: immediately
@@ -1500,11 +1774,11 @@ msgid "After 4 hours"
 msgstr ""
 
 #: require-passcode
-msgid "Require Passcode"
+msgid "Require passcode"
 msgstr ""
 
 #: change-passcode
-msgid "Change Passcode"
+msgid "Change passcode"
 msgstr ""
 
 #. # Security :: SIM PIN Lock
@@ -1516,8 +1790,16 @@ msgstr ""
 msgid "SIM PIN"
 msgstr ""
 
+#: simPin2
+msgid "SIM PIN2"
+msgstr ""
+
 #: pukCode
 msgid "PUK code"
+msgstr ""
+
+#: puk2Code
+msgid "PUK2 code"
 msgstr ""
 
 #: whatIsSimPin
@@ -1543,16 +1825,20 @@ msgstr ""
 msgid "Enter SIM PIN"
 msgstr ""
 
+#: pin2Title
+msgid "Enter SIM PIN2"
+msgstr ""
+
 #: pukTitle
 msgid "Enter PUK code"
 msgstr ""
 
-#: newpinTitle
-msgid "New PIN"
+#: puk2Title
+msgid "Enter PUK2 code"
 msgstr ""
 
-#: pinErrorMsg
-msgid "The PIN was incorrect."
+#: newpinTitle
+msgid "New PIN"
 msgstr ""
 
 #: inputCodeRetriesLeft
@@ -1592,6 +1878,7 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: pinAttemptMsg3[one]
+msgctxt "pinAttemptMsg3[one]"
 msgid ""
 "You have one try left to enter the correct code before locking the SIM card."
 msgstr ""
@@ -1638,6 +1925,13 @@ msgstr ""
 msgid ""
 "You must enter the Personal Unlocking Key (PUK) code for the SIM card. Refer "
 "to your SIM card documentation or contact your carrier for more information."
+msgstr ""
+
+#: enterPuk2Msg
+msgid ""
+"You must enter the Personal Unlocking Key (PUK2) code for the SIM card. "
+"Refer to your SIM card documentation or contact your carrier for more "
+"information."
 msgstr ""
 
 #: pukErrorMsg
@@ -1700,8 +1994,16 @@ msgstr ""
 msgid "Create PIN (must contain 4 to 8 digits)"
 msgstr ""
 
+#: newSimPin2Msg
+msgid "Create PIN2 (must contain 4 to 8 digits)"
+msgstr ""
+
 #: confirmNewSimPinMsg
 msgid "Confirm new PIN"
+msgstr ""
+
+#: confirmNewSimPin2Msg
+msgid "Confirm new PIN2"
 msgstr ""
 
 #: newPinErrorMsg
@@ -1720,9 +2022,25 @@ msgstr ""
 msgid "SIM card not ready"
 msgstr ""
 
+#: simCardIllegal
+msgid "Unauthorized SIM card"
+msgstr ""
+
 #. # Security :: Do Not Track
 #: doNotTrack
 msgid "Do Not Track"
+msgstr ""
+
+#: doNotTrackActions
+msgid "Tell websites and apps that I do not want to be tracked"
+msgstr ""
+
+#: allowTracking
+msgid "Tell websites and apps that I want to be tracked"
+msgstr ""
+
+#: doNotHavePrefOnTracking
+msgid "Do not tell websites and apps anything about my tracking preferences"
 msgstr ""
 
 #: doNotTrack-dt
@@ -1750,8 +2068,8 @@ msgstr ""
 msgid "Storage"
 msgstr ""
 
-#: enableUSBStorage
-msgid "Enable USB storage"
+#: enableUSBStorage1
+msgid "USB storage"
 msgstr ""
 
 #. # Storage :: Application storage
@@ -1842,10 +2160,10 @@ msgstr ""
 msgid "Left"
 msgstr ""
 
-#: media-storage-details
+#: storage-details
 msgid ""
-"Photos, videos and music are stored on the SD card. See media storage for "
-"details."
+"Photos, videos and music are stored separately from apps. See media storage "
+"for details."
 msgstr ""
 
 #: ums-shared-volumes
@@ -1938,7 +2256,7 @@ msgstr ""
 
 #: change-default-location-confirm
 msgid ""
-"Changing the default media storage volume will effect where photos, videos, "
+"Changing the default media storage volume will affect where photos, videos, "
 "downloads and other media will be saved to by default. Existing data will "
 "remain in its current location."
 msgstr ""
@@ -1976,6 +2294,10 @@ msgstr ""
 msgid "Phone number"
 msgstr ""
 
+#: unknown-phoneNumber
+msgid "Unknown"
+msgstr ""
+
 #: gitInfo
 msgid "Git commit info"
 msgstr ""
@@ -2004,8 +2326,16 @@ msgstr ""
 msgid "Show frames per second"
 msgstr ""
 
+#: layers-draw-borders
+msgid "Draw layers borders"
+msgstr ""
+
 #: paint-flashing
 msgid "Flash repainted area"
+msgstr ""
+
+#: apz-force-enable
+msgid "Enable APZ for all content processes"
 msgstr ""
 
 #: log-animations
@@ -2018,6 +2348,14 @@ msgstr ""
 
 #: wifi-debugging
 msgid "Wi-Fi output in adb"
+msgstr ""
+
+#: bluetooth-debugging
+msgid "Bluetooth output in adb"
+msgstr ""
+
+#: contacts-debugging
+msgid "Contacts debugging output in adb"
 msgstr ""
 
 #: ttl-monitor
@@ -2242,6 +2580,22 @@ msgstr ""
 msgid "No first time use app found"
 msgstr ""
 
+#: software-button-enabled
+msgid "Enable software home button"
+msgstr ""
+
+#: homegesture-enabled
+msgid "Home gesture enabled"
+msgstr ""
+
+#: edgesgesture-enabled
+msgid "Edges gesture enabled"
+msgstr ""
+
+#: debug-gaia-enabled
+msgid "Gaia debug traces"
+msgstr ""
+
 #. # Device :: Battery
 #: battery
 msgid "Battery"
@@ -2369,6 +2723,104 @@ msgstr ""
 msgid "."
 msgstr ""
 
+#. # Device :: Improve Browser OS :: Submit Your Feedback
+#: sendFeedbackTitle
+msgid "Submit Your Feedback"
+msgstr ""
+
+#: feedback-description
+msgid "Your feedback will help us to improve Firefox OS."
+msgstr ""
+
+#: feedback-happy
+msgid "Happy"
+msgstr ""
+
+#: feedback-sad
+msgid "Sad"
+msgstr ""
+
+#: feedback-mood-description
+msgid "How do you feel?"
+msgstr ""
+
+#: feedback_whyfeel_happy
+msgid "Why do you feel happy?"
+msgstr ""
+
+#: feedback_whyfeel_sad
+msgid "Why do you feel sad?"
+msgstr ""
+
+#: feedback-mood-explain
+msgid "Please tell us in detail."
+msgstr ""
+
+#: feedback-public-description
+msgid ""
+"The content of your feedback will be public, so please be sure not include "
+"any personal information."
+msgstr ""
+
+#: feedback-contactyou
+msgid "Check here to let us contact you from your email."
+msgstr ""
+
+#: email-address1
+msgid "Email address:"
+msgstr ""
+
+#: email-keepprivate
+msgid "Don't worry. Your email will always be kept private."
+msgstr ""
+
+#: feedback-sendbtn
+msgid "Send Feedback"
+msgstr ""
+
+#: feedback-errormessage-connect-error
+msgid ""
+"Sorry, the system can't send your suggestion due to a data connection error. "
+"Please try again when the issue is resolved."
+msgstr ""
+
+#: feedback-errormessage-server-off
+msgid ""
+"Sorry, the system can't send your suggestion because the server shut down. "
+"Please wait a moment and try again."
+msgstr ""
+
+#: feedback-errormessage-timeout
+msgid ""
+"Sorry, the system can't send your suggestion because of a timeout. Please "
+"restart and try again."
+msgstr ""
+
+#: feedback-errormessage-wrong-email
+msgid ""
+"Sorry, the system can't send your suggestion because the email address is "
+"missing or due to a formatting error. Please use a valid email address and "
+"try again."
+msgstr ""
+
+#: feedback-errormessage-empty-comment
+msgid ""
+"Sorry, the system can't send your suggestion because the comment field is "
+"empty. Please enter some text and try again."
+msgstr ""
+
+#: feedback-errormessage-just-sent
+msgid ""
+"Sorry, the system can't send your suggestion because you already sent us "
+"feedback. Please try our next software update and send again."
+msgstr ""
+
+#: feedback-done-msg
+msgid ""
+"Thanks for the feedback! We will use it to help us create a better "
+"experience in future release of Firefox OS."
+msgstr ""
+
 #. # Device :: Help
 #: online-support
 msgid "Online support:"
@@ -2376,10 +2828,6 @@ msgstr ""
 
 #: call-support
 msgid "Call support:"
-msgstr ""
-
-#: call-support-numbers
-msgid "{{link1}} or {{link2}}"
 msgstr ""
 
 #: user-guide

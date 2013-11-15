@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"POT-Creation-Date: 2013-11-15 22:11+0100\n"
 "PO-Revision-Date: 2013-05-23 15:42+0000\n"
 "Last-Translator: Robin <robin@ankur.org.bd>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1369323779.000000\n"
@@ -70,6 +70,15 @@ msgstr "পরিচিতি মুছে ফেলুন"
 msgid "Select contact"
 msgstr "পরিচিতি নির্বাচন করুন"
 
+#: selectAll
+#, fuzzy
+msgid "Select all"
+msgstr "ইমেইল নির্বাচন করুন"
+
+#: deselectAll
+msgid "Deselect all"
+msgstr ""
+
 #: editContact
 msgid "Edit contact"
 msgstr "পরিচিতির তথ্য সম্পাদনা"
@@ -86,13 +95,13 @@ msgstr "ফেলে দাও"
 msgid "Comments"
 msgstr "মন্তব্য"
 
-#: no_phones
-msgid "No phones"
-msgstr "কোন ফোন নেই"
+#: no_contact_phones
+msgid "This contact does not have a phone number"
+msgstr ""
 
-#: no_email
-msgid "No email"
-msgstr "কোন ইমেইল নেই"
+#: no_contact_email
+msgid "This contact does not have an email address"
+msgstr ""
 
 #: removePhotoConfirm
 msgid "Remove contact picture?"
@@ -340,8 +349,118 @@ msgstr "অনুসন্ধান"
 msgid "No contacts found"
 msgstr "কোন পরিচিতি পাওয়া যায়নি"
 
+#: transferContactsTitle
+msgid "Transfer Contacts"
+msgstr ""
+
 #: importContactsTitle
 msgid "Import Contacts"
+msgstr ""
+
+#: exportContactsTitle
+msgid "Export Contacts"
+msgstr ""
+
+#: exportContactsAction
+msgid "Export"
+msgstr ""
+
+#. # Export
+#: simExport-title
+msgid "Export to SIM"
+msgstr ""
+
+#: sdExport-title
+msgid "Export to SD Card"
+msgstr ""
+
+#: btExport-title
+msgid "Export to Bluetooth"
+msgstr ""
+
+#: sdUMSEnabled
+msgid "Cannot use SD Card because USB storage is enabled"
+msgstr ""
+
+#: exportErrorTitle
+msgid "Export error"
+msgstr ""
+
+#: contactsExported
+#, fuzzy
+msgid "{{ plural(exported) }}"
+msgstr "{[ plural(imported) ]}"
+
+#: contactsExported[zero]
+msgid "No contacts exported"
+msgstr ""
+
+#: contactsExported[one]
+#, fuzzy
+msgctxt "contactsExported[one]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "{{imported}}/{{total}} জন বন্ধুকে মোবাইলে যুক্ত করা হয়েছে"
+
+#: contactsExported[two]
+#, fuzzy
+msgctxt "contactsExported[two]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "{{imported}}/{{total}} জন বন্ধুকে মোবাইলে যুক্ত করা হয়েছে"
+
+#: contactsExported[few]
+#, fuzzy
+msgctxt "contactsExported[few]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "{{imported}}/{{total}} জন বন্ধুকে মোবাইলে যুক্ত করা হয়েছে"
+
+#: contactsExported[many]
+#, fuzzy
+msgctxt "contactsExported[many]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "{{imported}}/{{total}} জন বন্ধুকে মোবাইলে যুক্ত করা হয়েছে"
+
+#: contactsExported[other]
+#, fuzzy
+msgctxt "contactsExported[other]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr "{{imported}}/{{total}} জন বন্ধুকে মোবাইলে যুক্ত করা হয়েছে"
+
+#: exportError-general
+msgid "Some error happened while exporting"
+msgstr ""
+
+#: exportError-SD-shared
+msgctxt "exportError-SD-shared"
+msgid "Can't access memory card because it's shared"
+msgstr ""
+
+#: exportError-SD-unavailable
+msgctxt "exportError-SD-unavailable"
+msgid "Memory card is not available"
+msgstr ""
+
+#: exportError-SD-noSpace
+msgctxt "exportError-SD-noSpace"
+msgid "There's not enough space on the memory card to export the contacts"
+msgstr ""
+
+#: exportError-SIM-unavailable
+msgid "SIM card is not available"
+msgstr ""
+
+#: exportError-BT-shared
+msgctxt "exportError-BT-shared"
+msgid "Can't access memory card because it's shared"
+msgstr ""
+
+#: exportError-BT-unavailable
+msgctxt "exportError-BT-unavailable"
+msgid "Memory card is not available"
+msgstr ""
+
+#: exportError-BT-noSpace
+msgctxt "exportError-BT-noSpace"
+msgid "There's not enough space on the memory card to export the contacts"
 msgstr ""
 
 #. # SIM import
@@ -402,68 +521,77 @@ msgstr "{{n}} টি পরিচিতি ফোনে আনা হয়েছ�
 msgid "To import contacts insert or unlock your SIM card"
 msgstr "পরিচিতি আমদানী করতে সিম কার্ড প্রবেশ বা আনলক করুন"
 
-#. # SD Card import
-#: sdContacts-import
-msgid "Import contacts from SD card"
-msgstr ""
-
-#: sdContacts-importing
-msgid "Importing contacts from SD card…"
-msgstr ""
-
-#: sdContacts-reading
+#: noSimMsgExport
 #, fuzzy
-msgid "Reading from SD card…"
+msgid "To export contacts insert or unlock your SIM card"
+msgstr "পরিচিতি আমদানী করতে সিম কার্ড প্রবেশ বা আনলক করুন"
+
+#. # SD Card import
+#: memoryCardContacts-import
+msgid "Import contacts from memory card"
+msgstr ""
+
+#: memoryCardContacts-importing
+msgid "Importing contacts from memory card…"
+msgstr ""
+
+#: memoryCardContacts-reading
+#, fuzzy
+msgid "Reading from memory card…"
 msgstr "সিমকার্ডের তথ্য পড়ছি..."
 
-#: sdContacts-error
+#: memoryCardContacts-error
 #, fuzzy
-msgid "Could not import contacts from SD card"
+msgid "Could not import contacts from memory card"
 msgstr "সিমকার্ড থেকে পরিচিতি আমদানী করতে পারি নি"
 
-#: sdContacts-imported3
+#: memoryCardContacts-imported3
 #, fuzzy
-msgctxt "sdContacts-imported3"
+msgctxt "memoryCardContacts-imported3"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: sdContacts-imported3[zero]
+#: memoryCardContacts-imported3[zero]
 #, fuzzy
-msgid "No contacts detected on SD card to import"
+msgid "No contacts detected on memory card to import"
 msgstr "ফোনে আনার মতন কোন পরিচিত সিম কার্ডে পাওয়া যায় নাই"
 
-#: sdContacts-imported3[one]
+#: memoryCardContacts-imported3[one]
 #, fuzzy
-msgctxt "sdContacts-imported3[one]"
+msgctxt "memoryCardContacts-imported3[one]"
 msgid "Imported one contact"
 msgstr "একটি পরিচিতি ফোনে আনা হয়েছে"
 
-#: sdContacts-imported3[two]
+#: memoryCardContacts-imported3[two]
 #, fuzzy
-msgctxt "sdContacts-imported3[two]"
+msgctxt "memoryCardContacts-imported3[two]"
 msgid "Imported {{n}} contacts"
 msgstr "{{n}} টি পরিচিতি ফোনে আনা হয়েছে"
 
-#: sdContacts-imported3[few]
+#: memoryCardContacts-imported3[few]
 #, fuzzy
-msgctxt "sdContacts-imported3[few]"
+msgctxt "memoryCardContacts-imported3[few]"
 msgid "Imported {{n}} contacts"
 msgstr "{{n}} টি পরিচিতি ফোনে আনা হয়েছে"
 
-#: sdContacts-imported3[many]
+#: memoryCardContacts-imported3[many]
 #, fuzzy
-msgctxt "sdContacts-imported3[many]"
+msgctxt "memoryCardContacts-imported3[many]"
 msgid "Imported {{n}} contacts"
 msgstr "{{n}} টি পরিচিতি ফোনে আনা হয়েছে"
 
-#: sdContacts-imported3[other]
+#: memoryCardContacts-imported3[other]
 #, fuzzy
-msgctxt "sdContacts-imported3[other]"
+msgctxt "memoryCardContacts-imported3[other]"
 msgid "Imported {{n}} contacts"
 msgstr "{{n}} টি পরিচিতি ফোনে আনা হয়েছে"
 
-#: noSdMsg
-msgid "To import contacts insert a SD card"
+#: noMemoryCardMsg
+msgid "To import contacts insert a memory card"
+msgstr ""
+
+#: noMemoryCardMsgExport
+msgid "To export contacts insert a memory card"
 msgstr ""
 
 #: genericProgress
@@ -566,17 +694,23 @@ msgid "Order by last name"
 msgstr "শেষ নাম অনুযায়ী সাজান"
 
 #: importSim2
+msgctxt "importSim2"
 msgid "SIM card"
 msgstr ""
 
-#: importSd
-msgid "SD card"
+#: importMemoryCard
+msgctxt "importMemoryCard"
+msgid "Memory card"
 msgstr ""
 
 #: importGmail
 #, fuzzy
 msgid "Gmail"
 msgstr "ই-মেইল"
+
+#: bluetooth
+msgid "Bluetooth"
+msgstr ""
 
 #: importOutlook
 msgid "Outlook"
@@ -611,6 +745,21 @@ msgstr "ফেসবুক থেকে বন্ধু আমদানী ক�
 msgid "Not enabled yet"
 msgstr "এখনও সক্রিয় নয়"
 
+#: genericNoConnection
+msgid "To import contacts connect to Wi-Fi or data network"
+msgstr ""
+
+#. # Used for export, just in case the strings will diverge on time
+#: simCard
+msgctxt "simCard"
+msgid "SIM card"
+msgstr ""
+
+#: memoryCard
+msgctxt "memoryCard"
+msgid "Memory card"
+msgstr ""
+
 #. # No contacts
 #: create-new
 msgid "Create a new contact"
@@ -627,6 +776,74 @@ msgstr "কোনো পরিচিতি নেই"
 #: start-adding
 msgid "Start adding them now"
 msgstr "যুক্ত করা শুরু করুন"
+
+#: notImported
+msgid "Not imported"
+msgstr ""
+
+#: imported
+msgid "Imported"
+msgstr ""
+
+#: today
+msgid "Today"
+msgstr ""
+
+#: yesterday
+msgid "Yesterday"
+msgstr ""
+
+#: messageCanceling
+msgid "Please hold on. We are canceling the ongoing operation."
+msgstr ""
+
+#: organise-contacts
+msgid "Organize Contacts"
+msgstr ""
+
+#: find-merge-contacts
+msgid "Find duplicate contacts"
+msgstr ""
+
+#: preparing-contacts
+msgid "Preparing contacts"
+msgstr ""
+
+#~ msgid "No phones"
+#~ msgstr "কোন ফোন নেই"
+
+#~ msgid "No email"
+#~ msgstr "কোন ইমেইল নেই"
+
+#, fuzzy
+#~ msgctxt "sdContacts-imported3"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#, fuzzy
+#~ msgctxt "sdContacts-imported3[one]"
+#~ msgid "Imported one contact"
+#~ msgstr "একটি পরিচিতি ফোনে আনা হয়েছে"
+
+#, fuzzy
+#~ msgctxt "sdContacts-imported3[two]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "{{n}} টি পরিচিতি ফোনে আনা হয়েছে"
+
+#, fuzzy
+#~ msgctxt "sdContacts-imported3[few]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "{{n}} টি পরিচিতি ফোনে আনা হয়েছে"
+
+#, fuzzy
+#~ msgctxt "sdContacts-imported3[many]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "{{n}} টি পরিচিতি ফোনে আনা হয়েছে"
+
+#, fuzzy
+#~ msgctxt "sdContacts-imported3[other]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "{{n}} টি পরিচিতি ফোনে আনা হয়েছে"
 
 #~ msgid "Import from SIM"
 #~ msgstr "সিম থেকে ফোনে আনুন"

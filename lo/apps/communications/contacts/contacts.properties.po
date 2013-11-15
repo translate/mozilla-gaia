@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-03 17:13+0100\n"
+"POT-Creation-Date: 2013-11-15 22:11+0100\n"
 "PO-Revision-Date: 2013-08-22 03:18+0000\n"
 "Last-Translator: Anousak <anousak@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,6 +69,14 @@ msgstr "ລຶບພົວພັນ"
 msgid "Select contact"
 msgstr "ເລີອກພົວພັນ"
 
+#: selectAll
+msgid "Select all"
+msgstr ""
+
+#: deselectAll
+msgid "Deselect all"
+msgstr ""
+
 #: editContact
 msgid "Edit contact"
 msgstr "ປັບປຸງພົວພັນ"
@@ -86,12 +94,12 @@ msgstr ""
 msgid "Comments"
 msgstr "ຄຳເຫັນ:"
 
-#: no_phones
-msgid "No phones"
+#: no_contact_phones
+msgid "This contact does not have a phone number"
 msgstr ""
 
-#: no_email
-msgid "No email"
+#: no_contact_email
+msgid "This contact does not have an email address"
 msgstr ""
 
 #: removePhotoConfirm
@@ -337,8 +345,113 @@ msgstr ""
 msgid "No contacts found"
 msgstr ""
 
+#: transferContactsTitle
+msgid "Transfer Contacts"
+msgstr ""
+
 #: importContactsTitle
 msgid "Import Contacts"
+msgstr ""
+
+#: exportContactsTitle
+msgid "Export Contacts"
+msgstr ""
+
+#: exportContactsAction
+msgid "Export"
+msgstr ""
+
+#. # Export
+#: simExport-title
+msgid "Export to SIM"
+msgstr ""
+
+#: sdExport-title
+msgid "Export to SD Card"
+msgstr ""
+
+#: btExport-title
+msgid "Export to Bluetooth"
+msgstr ""
+
+#: sdUMSEnabled
+msgid "Cannot use SD Card because USB storage is enabled"
+msgstr ""
+
+#: exportErrorTitle
+msgid "Export error"
+msgstr ""
+
+#: contactsExported
+#, fuzzy
+msgid "{{ plural(exported) }}"
+msgstr "{[ plural(imported) ]}"
+
+#: contactsExported[zero]
+msgid "No contacts exported"
+msgstr ""
+
+#: contactsExported[one]
+msgctxt "contactsExported[one]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr ""
+
+#: contactsExported[two]
+msgctxt "contactsExported[two]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr ""
+
+#: contactsExported[few]
+msgctxt "contactsExported[few]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr ""
+
+#: contactsExported[many]
+msgctxt "contactsExported[many]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr ""
+
+#: contactsExported[other]
+msgctxt "contactsExported[other]"
+msgid "{{exported}}/{{total}} friends exported"
+msgstr ""
+
+#: exportError-general
+msgid "Some error happened while exporting"
+msgstr ""
+
+#: exportError-SD-shared
+msgctxt "exportError-SD-shared"
+msgid "Can't access memory card because it's shared"
+msgstr ""
+
+#: exportError-SD-unavailable
+msgctxt "exportError-SD-unavailable"
+msgid "Memory card is not available"
+msgstr ""
+
+#: exportError-SD-noSpace
+msgctxt "exportError-SD-noSpace"
+msgid "There's not enough space on the memory card to export the contacts"
+msgstr ""
+
+#: exportError-SIM-unavailable
+msgid "SIM card is not available"
+msgstr ""
+
+#: exportError-BT-shared
+msgctxt "exportError-BT-shared"
+msgid "Can't access memory card because it's shared"
+msgstr ""
+
+#: exportError-BT-unavailable
+msgctxt "exportError-BT-unavailable"
+msgid "Memory card is not available"
+msgstr ""
+
+#: exportError-BT-noSpace
+msgctxt "exportError-BT-noSpace"
+msgid "There's not enough space on the memory card to export the contacts"
 msgstr ""
 
 #. # SIM import
@@ -398,64 +511,77 @@ msgstr "ນໍາເຂົ້າ {{n}} ພົວພັນ"
 msgid "To import contacts insert or unlock your SIM card"
 msgstr "ກາລູນາສອດ ຫຼື ປົດລ໋ອກສີມກາດເຈົ້າ ເພື່ອນໍາເຂົ້າພົວພັນທັງໝົດ"
 
+#: noSimMsgExport
+#, fuzzy
+msgid "To export contacts insert or unlock your SIM card"
+msgstr "ກາລູນາສອດ ຫຼື ປົດລ໋ອກສີມກາດເຈົ້າ ເພື່ອນໍາເຂົ້າພົວພັນທັງໝົດ"
+
 #. # SD Card import
-#: sdContacts-import
-msgid "Import contacts from SD card"
+#: memoryCardContacts-import
+#, fuzzy
+msgid "Import contacts from memory card"
 msgstr "ນໍາເຂົ້າພົວພັນທັງໝົດຈາກ SD ກາດ"
 
-#: sdContacts-importing
-msgid "Importing contacts from SD card…"
+#: memoryCardContacts-importing
+#, fuzzy
+msgid "Importing contacts from memory card…"
 msgstr "ກໍາລັງນໍາເຂົ້າພົວພັນທັງໝົດຈາກ SD ກາດ..."
 
-#: sdContacts-reading
-msgid "Reading from SD card…"
+#: memoryCardContacts-reading
+#, fuzzy
+msgid "Reading from memory card…"
 msgstr "ກໍາລັງອ່ານຈາກ SD ກາດ..."
 
-#: sdContacts-error
-msgid "Could not import contacts from SD card"
+#: memoryCardContacts-error
+#, fuzzy
+msgid "Could not import contacts from memory card"
 msgstr "ບໍ່ສາມາດນໍາເຂົ້າພົວພັນທັງໝົດຈາກ SD ກາດ"
 
-#: sdContacts-imported3
-msgctxt "sdContacts-imported3"
+#: memoryCardContacts-imported3
+msgctxt "memoryCardContacts-imported3"
 msgid "{[ plural(n) ]}"
 msgstr ""
 
-#: sdContacts-imported3[zero]
-msgid "No contacts detected on SD card to import"
+#: memoryCardContacts-imported3[zero]
+msgid "No contacts detected on memory card to import"
 msgstr ""
 
-#: sdContacts-imported3[one]
+#: memoryCardContacts-imported3[one]
 #, fuzzy
-msgctxt "sdContacts-imported3[one]"
+msgctxt "memoryCardContacts-imported3[one]"
 msgid "Imported one contact"
 msgstr "ນໍາເຂົ້າຫນຶ່ງພົວພັນ"
 
-#: sdContacts-imported3[two]
+#: memoryCardContacts-imported3[two]
 #, fuzzy
-msgctxt "sdContacts-imported3[two]"
+msgctxt "memoryCardContacts-imported3[two]"
 msgid "Imported {{n}} contacts"
 msgstr "ນໍາເຂົ້າ {{n}} ພົວພັນ"
 
-#: sdContacts-imported3[few]
+#: memoryCardContacts-imported3[few]
 #, fuzzy
-msgctxt "sdContacts-imported3[few]"
+msgctxt "memoryCardContacts-imported3[few]"
 msgid "Imported {{n}} contacts"
 msgstr "ນໍາເຂົ້າ {{n}} ພົວພັນ"
 
-#: sdContacts-imported3[many]
+#: memoryCardContacts-imported3[many]
 #, fuzzy
-msgctxt "sdContacts-imported3[many]"
+msgctxt "memoryCardContacts-imported3[many]"
 msgid "Imported {{n}} contacts"
 msgstr "ນໍາເຂົ້າ {{n}} ພົວພັນ"
 
-#: sdContacts-imported3[other]
+#: memoryCardContacts-imported3[other]
 #, fuzzy
-msgctxt "sdContacts-imported3[other]"
+msgctxt "memoryCardContacts-imported3[other]"
 msgid "Imported {{n}} contacts"
 msgstr "ນໍາເຂົ້າ {{n}} ພົວພັນ"
 
-#: noSdMsg
-msgid "To import contacts insert a SD card"
+#: noMemoryCardMsg
+msgid "To import contacts insert a memory card"
+msgstr ""
+
+#: noMemoryCardMsgExport
+msgid "To export contacts insert a memory card"
 msgstr ""
 
 #: genericProgress
@@ -558,16 +684,23 @@ msgid "Order by last name"
 msgstr "ຈັດລຽງໂດຍນາມສະກູນ"
 
 #: importSim2
+#, fuzzy
+msgctxt "importSim2"
 msgid "SIM card"
 msgstr "ສີມກາດ"
 
-#: importSd
-msgid "SD card"
-msgstr "ສີມກາດ"
+#: importMemoryCard
+msgctxt "importMemoryCard"
+msgid "Memory card"
+msgstr ""
 
 #: importGmail
 msgid "Gmail"
 msgstr "ຈີເມວລ໌ (Gmail)"
+
+#: bluetooth
+msgid "Bluetooth"
+msgstr ""
 
 #: importOutlook
 msgid "Outlook"
@@ -601,6 +734,22 @@ msgstr ""
 msgid "Not enabled yet"
 msgstr ""
 
+#: genericNoConnection
+msgid "To import contacts connect to Wi-Fi or data network"
+msgstr ""
+
+#. # Used for export, just in case the strings will diverge on time
+#: simCard
+#, fuzzy
+msgctxt "simCard"
+msgid "SIM card"
+msgstr "ສີມກາດ"
+
+#: memoryCard
+msgctxt "memoryCard"
+msgid "Memory card"
+msgstr ""
+
 #. # No contacts
 #: create-new
 msgid "Create a new contact"
@@ -617,3 +766,63 @@ msgstr ""
 #: start-adding
 msgid "Start adding them now"
 msgstr ""
+
+#: notImported
+msgid "Not imported"
+msgstr ""
+
+#: imported
+msgid "Imported"
+msgstr ""
+
+#: today
+msgid "Today"
+msgstr ""
+
+#: yesterday
+msgid "Yesterday"
+msgstr ""
+
+#: messageCanceling
+msgid "Please hold on. We are canceling the ongoing operation."
+msgstr ""
+
+#: organise-contacts
+msgid "Organize Contacts"
+msgstr ""
+
+#: find-merge-contacts
+msgid "Find duplicate contacts"
+msgstr ""
+
+#: preparing-contacts
+msgid "Preparing contacts"
+msgstr ""
+
+#, fuzzy
+#~ msgctxt "sdContacts-imported3[one]"
+#~ msgid "Imported one contact"
+#~ msgstr "ນໍາເຂົ້າຫນຶ່ງພົວພັນ"
+
+#, fuzzy
+#~ msgctxt "sdContacts-imported3[two]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "ນໍາເຂົ້າ {{n}} ພົວພັນ"
+
+#, fuzzy
+#~ msgctxt "sdContacts-imported3[few]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "ນໍາເຂົ້າ {{n}} ພົວພັນ"
+
+#, fuzzy
+#~ msgctxt "sdContacts-imported3[many]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "ນໍາເຂົ້າ {{n}} ພົວພັນ"
+
+#, fuzzy
+#~ msgctxt "sdContacts-imported3[other]"
+#~ msgid "Imported {{n}} contacts"
+#~ msgstr "ນໍາເຂົ້າ {{n}} ພົວພັນ"
+
+#~ msgid "SD card"
+#~ msgstr "ສີມກາດ"

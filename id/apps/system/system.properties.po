@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-17 12:08+0100\n"
+"POT-Creation-Date: 2013-11-15 22:32+0100\n"
 "PO-Revision-Date: 2013-10-20 20:54+0000\n"
 "Last-Translator: Benny <bennychandra@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1382302486.000000\n"
@@ -185,6 +185,11 @@ msgstr "Mulai ulang"
 msgid "Power off"
 msgstr "Matikan daya"
 
+#. # cards view
+#: no-recent-apps
+msgid "No recent apps"
+msgstr ""
+
 #. # permissions
 #. # LOCALIZATION NOTE: this is displayed in a permission request dialog box,
 #. # see shared/permissions/permissions.properties for more context.
@@ -199,6 +204,46 @@ msgstr "Tidak"
 #: allow
 msgid "Allow"
 msgstr "Izinkan"
+
+#: dontshare-geolocation
+msgctxt "dontshare-geolocation"
+msgid "Don't Share"
+msgstr ""
+
+#: share-geolocation
+msgctxt "share-geolocation"
+msgid "Share"
+msgstr ""
+
+#: dontshare-audio-capture
+msgctxt "dontshare-audio-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-audio-capture
+msgctxt "share-audio-capture"
+msgid "Share"
+msgstr ""
+
+#: dontshare-video-capture
+msgctxt "dontshare-video-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-video-capture
+msgctxt "share-video-capture"
+msgid "Share"
+msgstr ""
+
+#: dontshare-media-capture
+msgctxt "dontshare-media-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-media-capture
+msgctxt "share-media-capture"
+msgid "Share"
+msgstr ""
 
 #: remember-my-choice
 msgid "Remember my choice"
@@ -221,27 +266,17 @@ msgstr "Ukuran"
 msgid "Author"
 msgstr "Penyusun"
 
-#: unknown
+#: size-unknown
+#, fuzzy
+msgctxt "size-unknown"
 msgid "Unknown"
 msgstr "Tak dikenal"
 
-#. # LOCALIZATION NOTE (unknown-size,unknown-author):
-#. # if you leave the original en-US value "{{unknown}}" in
-#. # the following two strings, the localization will be automatically picked
-#. # from the existing string with ID "unknown". If you need to adapt your
-#. # localization to different genders for author and size, you can localize
-#. # these strings. For example in French:
-#. # unknown-size=inconnue
-#. # unknown-author=inconnu
-#: unknown-size
-msgctxt "unknown-size"
-msgid "{{unknown}}"
-msgstr ""
-
-#: unknown-author
-msgctxt "unknown-author"
-msgid "{{unknown}}"
-msgstr ""
+#: author-unknown
+#, fuzzy
+msgctxt "author-unknown"
+msgid "Unknown"
+msgstr "Tak dikenal"
 
 #: install
 msgid "Install"
@@ -252,8 +287,10 @@ msgid "bytes"
 msgstr "bita"
 
 #: kB
-msgid "kB"
-msgstr "kB"
+#, fuzzy
+msgctxt "kB"
+msgid "KB"
+msgstr "KB"
 
 #: MB
 msgctxt "MB"
@@ -345,6 +382,16 @@ msgstr ""
 msgid "{{ appName }} installed"
 msgstr "{{ appName }} terpasang"
 
+#. #setup dialog
+#: setup
+msgid "Setup"
+msgstr ""
+
+#. #ime
+#: ime-addkeyboards
+msgid "Add keyboards"
+msgstr ""
+
 #. # update manager
 #: later
 msgid "Later"
@@ -371,7 +418,7 @@ msgid "Not Now"
 msgstr "Tidak Sekarang"
 
 #. # the <span> element will be displayed when the download finishes
-#: downloadingUpdateMessage
+#: downloadingUpdateMessage.innerHTML
 msgid "Downloading updates… <span>{{ progress }} downloaded.</span>"
 msgstr "Mengunduh pembaruan… <span>{{ progress }} diunduh.</span>"
 
@@ -403,32 +450,37 @@ msgstr "Yakin ingin membatalkan semua unduhan?"
 msgid "There was an error while downloading the updates."
 msgstr "Terjadi galat saat mengunduh pembaruan."
 
-#: updateAvailableInfo
-msgctxt "updateAvailableInfo"
+#: updateAvailableInfo.innerHTML
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: updateAvailableInfo[one]
+#: updateAvailableInfo.innerHTML[one]
 msgid "{{ n }} update available. <span>Tap for more info.</span>"
 msgstr "{{ n }} pembaruan tersedia. Ketuk untuk info lebih jelas."
 
-#: updateAvailableInfo[two]
-msgctxt "updateAvailableInfo[two]"
+#: updateAvailableInfo.innerHTML[two]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[two]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "{{ n }} pembaruan tersedia. Ketuk untuk info lebih jelas."
 
-#: updateAvailableInfo[few]
-msgctxt "updateAvailableInfo[few]"
+#: updateAvailableInfo.innerHTML[few]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[few]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "{{ n }} pembaruan tersedia. Ketuk untuk info lebih jelas."
 
-#: updateAvailableInfo[many]
-msgctxt "updateAvailableInfo[many]"
+#: updateAvailableInfo.innerHTML[many]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[many]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "{{ n }} pembaruan tersedia. Ketuk untuk info lebih jelas."
 
-#: updateAvailableInfo[other]
-msgctxt "updateAvailableInfo[other]"
+#: updateAvailableInfo.innerHTML[other]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[other]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "{{ n }} pembaruan tersedia. Ketuk untuk info lebih jelas."
 
@@ -473,7 +525,7 @@ msgstr "Pembaruan Sistem Siap"
 msgid "Required"
 msgstr "Wajib"
 
-#: uncompressingMessage
+#: uncompressingMessage.innerHTML
 msgid "Uncompressing… <span>This can take a few minutes.</span>"
 msgstr ""
 
@@ -612,10 +664,6 @@ msgstr ""
 #: try-again
 msgid "Try again"
 msgstr "Coba lagi"
-
-#: dialog-closed
-msgid "Dialog closed by the user"
-msgstr "Dialog ditutup oleh pengguna"
 
 #. # value selector, time/date picker
 #: select-time
@@ -768,12 +816,12 @@ msgstr "Terima transfer berkas Bluetooth?"
 msgid "{{deviceName}} would like to transfer {{fileName}} ({{fileSize}})."
 msgstr "{{deviceName}} ingin mentransfer {{fileName}} ({{fileSize}})."
 
-#: notification-fileTransfer-title
-msgid "Receive file?"
+#: transfer-confirmation-title
+msgid "{{deviceName}}"
 msgstr ""
 
-#: notification-fileTransfer-description
-msgid "File incoming from another device"
+#: transfer-confirmation-description
+msgid "Review transfer request."
 msgstr ""
 
 #: byteUnit-B
@@ -782,6 +830,8 @@ msgid "Bytes"
 msgstr "bita"
 
 #: byteUnit-KB
+#, fuzzy
+msgctxt "byteUnit-KB"
 msgid "KB"
 msgstr "KB"
 
@@ -834,17 +884,13 @@ msgstr "Transfer"
 msgid "Cancel Bluetooth file transfer?"
 msgstr "Batalkan transfer berkas Bluetooth?"
 
-#: bluetooth-file-transfer-result
-msgid "Bluetooth file transfer {{status}}."
-msgstr "Transfer berkas Bluetooth {{status}}."
+#: transfer-has-started-title
+msgid "The transfer has started"
+msgstr ""
 
-#: complete
-msgid "complete"
-msgstr "selesai"
-
-#: failed
-msgid "failed"
-msgstr "gagal"
+#: transfer-has-started-description
+msgid "Check the progress in Notification center"
+msgstr ""
 
 #: transferFinished-sentSuccessful-title
 msgid "File sent"
@@ -860,6 +906,15 @@ msgstr "Berkas tidak dapat dikirim"
 
 #: transferFinished-receivedFailed-title
 msgid "File could not be received"
+msgstr ""
+
+#: transferReport-title
+msgid "Transfer report:"
+msgstr ""
+
+#: transferReport-description
+msgid ""
+"{{numSuccessful}} files successful, {{numUnsuccessful}} files unsuccessful"
 msgstr ""
 
 #: unknown-file
@@ -883,11 +938,13 @@ msgid "Can not receive file"
 msgstr "Tidak dapat menerima berkas"
 
 #: cannotGetStorageState
-msgid "Can not get device storage state"
+#, fuzzy
+msgid "Can not get device storage state."
 msgstr "Tidak dapat mengambil status penyimpanan perangkat"
 
-#: sdcard-not-exist
-msgid "No memory card found (Please insert a memory card)"
+#: sdcard-not-exist2
+#, fuzzy
+msgid "No memory card found. Please insert a memory card."
 msgstr "Tidak ada kartu memori ditemukan (Masukkan kartu memori)"
 
 #: sdcard-in-use
@@ -909,6 +966,19 @@ msgstr "Galat tidak dikenal"
 #: confirm
 msgid "Confirm"
 msgstr "Konfirmasikan"
+
+#. # Media Recoding
+#: microphone-is-on
+msgid "Mic is on"
+msgstr ""
+
+#: camera-is-on
+msgid "Camera is on"
+msgstr ""
+
+#: media-is-on
+msgid "Camera & Mic are ON"
+msgstr ""
 
 #. # Security :: SIM PIN lock
 #: noSimCard
@@ -1409,6 +1479,62 @@ msgstr ""
 #: icc-inputtitle
 msgid "STK Query"
 msgstr ""
+
+#. # CDMA emergency callback mode
+#: emergency-callback-mode
+msgid "Emergency call back mode"
+msgstr ""
+
+#: emergency-callback-dialog-message
+msgid ""
+"Telecom services and internet are disable due to emergency call back mode. "
+"Would you like to turn off the mode?"
+msgstr ""
+
+#. # CDMA record information
+#: cdma-record-info
+msgid "CDMA record information"
+msgstr ""
+
+#. # IME (Keyboard)
+#: ime-switching-tip
+msgid "Tap to switch input method"
+msgstr ""
+
+#: layout-selection
+msgid "Layout selection"
+msgstr ""
+
+#~ msgid "kB"
+#~ msgstr "kB"
+
+#~ msgctxt "updateAvailableInfo"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "updateAvailableInfo[few]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr "{{ n }} pembaruan tersedia. Ketuk untuk info lebih jelas."
+
+#~ msgctxt "updateAvailableInfo[many]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr "{{ n }} pembaruan tersedia. Ketuk untuk info lebih jelas."
+
+#~ msgctxt "updateAvailableInfo[other]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr "{{ n }} pembaruan tersedia. Ketuk untuk info lebih jelas."
+
+#~ msgid "Dialog closed by the user"
+#~ msgstr "Dialog ditutup oleh pengguna"
+
+#~ msgid "Bluetooth file transfer {{status}}."
+#~ msgstr "Transfer berkas Bluetooth {{status}}."
+
+#~ msgid "complete"
+#~ msgstr "selesai"
+
+#~ msgid "failed"
+#~ msgstr "gagal"
 
 #~ msgid "Enter security code"
 #~ msgstr "Masukkan kode keamanan"

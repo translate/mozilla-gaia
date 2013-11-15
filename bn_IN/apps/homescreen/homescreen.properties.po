@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-22 13:57+0100\n"
+"POT-Creation-Date: 2013-11-15 22:11+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,10 +27,24 @@ msgstr "ওয়েব-সাইটের নাম"
 msgid "Address"
 msgstr "ঠিকানা"
 
+#: added-to-home-screen
+#, fuzzy
+msgid "Added to Home Screen"
+msgstr "হোম পর্দায় যোগ করুন"
+
 #. # Wrapper
 #: wrapper-search-name
 msgid "{{topic}} on {{name}}"
 msgstr "{{name}}-র মধ্যে {{topic}}"
+
+#. # Dialog that appears when a user long taps on the homescreen
+#: contextmenu-add-wallpaper
+msgid "Change Wallpaper"
+msgstr ""
+
+#: contextmenu-add-collections
+msgid "Add Collection"
+msgstr ""
 
 #. # Prompt that appears when a user tries to delete an app.
 #: delete-title
@@ -70,6 +84,8 @@ msgstr "%A, %B %e"
 
 #. # App reinstall
 #: download
+#, fuzzy
+msgctxt "download"
 msgid "Download"
 msgstr "ডাউনলোড করুন"
 
@@ -97,12 +113,17 @@ msgctxt "evme-searchbar-default2"
 msgid "I'm thinking of…"
 msgstr ""
 
+#: evme-searchbar-default2.placeholder
+msgctxt "evme-searchbar-default2.placeholder"
+msgid "I'm thinking of…"
+msgstr ""
+
 #: evme-searchbar-clear
 msgid "Back"
 msgstr "পূর্বাবস্থা"
 
-#: evme-smart-folders
-msgid "Smart Collections"
+#: evme-collections
+msgid "Collections"
 msgstr ""
 
 #: evme-searchbar-default.placeholder
@@ -166,6 +187,16 @@ msgctxt "evme-helper-title-empty"
 msgid "Everything"
 msgstr "সব জিনিস"
 
+#: evme-apps-market-download
+#, fuzzy
+msgctxt "evme-apps-market-download"
+msgid "Download"
+msgstr "ডাউনলোড করুন"
+
+#: evme-apps-market-more-apps
+msgid "More Apps"
+msgstr ""
+
 #: evme-apps-loading-app
 msgctxt "evme-apps-loading-app"
 msgid "Loading…"
@@ -184,24 +215,20 @@ msgstr ""
 msgid "{{name}} was already added to Home Screen"
 msgstr ""
 
-#: evme-alert-offline-shortcuts-more
-msgid "Connect to the internet to add more shortcuts"
+#: evme-alert-offline-collections-more
+msgid "Connect to the internet to add more collections"
 msgstr ""
 
-#: evme-alert-save-smartfolder
-msgid "Add as Smart Collection?"
+#: evme-alert-save-collection
+msgid "Add as Collection?"
 msgstr ""
 
 #: evme-alert-save-wallpaper
 msgid "Set as wallpaper?"
 msgstr ""
 
-#: evme-alert-shortcuts-suggest-empty
-msgid "No Smart Collections to add"
-msgstr ""
-
-#: evme-alert-no-more-shortcuts
-msgid "No Shortcuts to add"
+#: evme-alert-no-more-collections
+msgid "No Collections to add"
 msgstr ""
 
 #: evme-banner-app-install-success
@@ -217,29 +244,45 @@ msgstr ""
 msgid "More"
 msgstr "অতিরিক্ত"
 
-#: evme-shortcutscustomize-loading
-msgctxt "evme-shortcutscustomize-loading"
+#: evme-collectionssuggest-loading
+#, fuzzy
+msgctxt "evme-collectionssuggest-loading"
 msgid "Loading…"
 msgstr "লোড করা হচ্ছে…"
 
-#: evme-shortcutscustomize-loading-cancel
-msgctxt "evme-shortcutscustomize-loading-cancel"
+#: evme-collectionssuggest-loading-cancel
+#, fuzzy
+msgctxt "evme-collectionssuggest-loading-cancel"
 msgid "Cancel"
 msgstr "বাতিল করুন"
+
+#: evme-collectionssuggest-prompt-create
+msgid "Create your own collection"
+msgstr ""
 
 #: evme-backgroundimage-source-label
 msgid "Source:"
 msgstr "উৎস:"
 
-#: evme-smartfolder-title-prefix
-msgctxt "evme-smartfolder-title-prefix"
+#: evme-collection-title-prefix
+#, fuzzy
+msgctxt "evme-collection-title-prefix"
 msgid "Everything"
 msgstr "সব জিনিস"
 
-#: evme-smartfolder-loading-more
-msgctxt "evme-smartfolder-loading-more"
+#: evme-collection-title-suffix
+msgid "Phone"
+msgstr ""
+
+#: evme-collection-loading-more
+#, fuzzy
+msgctxt "evme-collection-loading-more"
 msgid "Loading…"
 msgstr "লোড করা হচ্ছে…"
+
+#: evme-collection-prompt-rename
+msgid "Rename Collection"
+msgstr ""
 
 #. # {{query}} will always be the user's current query from the searchbox
 #: evme-connectionmessage-apps
@@ -266,7 +309,11 @@ msgstr ""
 "<b>{{query}}</b>-র জন্য এই অ্যাপগুলি উপলব্ধ রয়েছে,<br /><br /> খোলার জন্য আইকনের "
 "উপর টিপুন।"
 
-#. # smart folder translations
+#. # collection translations
+#: evme-shortcut-custom
+msgid "Custom..."
+msgstr ""
+
 #: evme-shortcut-id-astrology
 msgid "Astrology"
 msgstr ""
@@ -301,6 +348,10 @@ msgstr ""
 
 #: evme-shortcut-id-email
 msgid "Email"
+msgstr ""
+
+#: evme-shortcut-id-entertainment
+msgid "Entertainment"
 msgstr ""
 
 #: evme-shortcut-id-environment
@@ -406,3 +457,19 @@ msgstr ""
 #: evme-shortcut-id-weather
 msgid "Weather"
 msgstr ""
+
+#~ msgctxt "evme-shortcutscustomize-loading"
+#~ msgid "Loading…"
+#~ msgstr "লোড করা হচ্ছে…"
+
+#~ msgctxt "evme-shortcutscustomize-loading-cancel"
+#~ msgid "Cancel"
+#~ msgstr "বাতিল করুন"
+
+#~ msgctxt "evme-smartfolder-title-prefix"
+#~ msgid "Everything"
+#~ msgstr "সব জিনিস"
+
+#~ msgctxt "evme-smartfolder-loading-more"
+#~ msgid "Loading…"
+#~ msgstr "লোড করা হচ্ছে…"

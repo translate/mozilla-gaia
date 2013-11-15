@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-17 12:08+0100\n"
+"POT-Creation-Date: 2013-11-15 22:32+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -182,6 +182,11 @@ msgstr "إعادة التشغيل"
 msgid "Power off"
 msgstr "إيقاف التشغيل"
 
+#. # cards view
+#: no-recent-apps
+msgid "No recent apps"
+msgstr ""
+
 #. # permissions
 #. # LOCALIZATION NOTE: this is displayed in a permission request dialog box,
 #. # see shared/permissions/permissions.properties for more context.
@@ -196,6 +201,46 @@ msgstr "لا"
 #: allow
 msgid "Allow"
 msgstr "سماح"
+
+#: dontshare-geolocation
+msgctxt "dontshare-geolocation"
+msgid "Don't Share"
+msgstr ""
+
+#: share-geolocation
+msgctxt "share-geolocation"
+msgid "Share"
+msgstr ""
+
+#: dontshare-audio-capture
+msgctxt "dontshare-audio-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-audio-capture
+msgctxt "share-audio-capture"
+msgid "Share"
+msgstr ""
+
+#: dontshare-video-capture
+msgctxt "dontshare-video-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-video-capture
+msgctxt "share-video-capture"
+msgid "Share"
+msgstr ""
+
+#: dontshare-media-capture
+msgctxt "dontshare-media-capture"
+msgid "Don't Share"
+msgstr ""
+
+#: share-media-capture
+msgctxt "share-media-capture"
+msgid "Share"
+msgstr ""
 
 #: remember-my-choice
 msgid "Remember my choice"
@@ -218,27 +263,17 @@ msgstr "الحجم"
 msgid "Author"
 msgstr "المُبرمج"
 
-#: unknown
+#: size-unknown
+#, fuzzy
+msgctxt "size-unknown"
 msgid "Unknown"
 msgstr "غير معروف"
 
-#. # LOCALIZATION NOTE (unknown-size,unknown-author):
-#. # if you leave the original en-US value "{{unknown}}" in
-#. # the following two strings, the localization will be automatically picked
-#. # from the existing string with ID "unknown". If you need to adapt your
-#. # localization to different genders for author and size, you can localize
-#. # these strings. For example in French:
-#. # unknown-size=inconnue
-#. # unknown-author=inconnu
-#: unknown-size
-msgctxt "unknown-size"
-msgid "{{unknown}}"
-msgstr ""
-
-#: unknown-author
-msgctxt "unknown-author"
-msgid "{{unknown}}"
-msgstr ""
+#: author-unknown
+#, fuzzy
+msgctxt "author-unknown"
+msgid "Unknown"
+msgstr "غير معروف"
 
 #: install
 msgid "Install"
@@ -249,7 +284,9 @@ msgid "bytes"
 msgstr "بايت"
 
 #: kB
-msgid "kB"
+#, fuzzy
+msgctxt "kB"
+msgid "KB"
 msgstr "كيلو بايت"
 
 #: MB
@@ -340,6 +377,16 @@ msgstr ""
 msgid "{{ appName }} installed"
 msgstr "{{ appName }} تم تثبيته"
 
+#. #setup dialog
+#: setup
+msgid "Setup"
+msgstr ""
+
+#. #ime
+#: ime-addkeyboards
+msgid "Add keyboards"
+msgstr ""
+
 #. # update manager
 #: later
 msgid "Later"
@@ -366,7 +413,7 @@ msgid "Not Now"
 msgstr "ليس الآن"
 
 #. # the <span> element will be displayed when the download finishes
-#: downloadingUpdateMessage
+#: downloadingUpdateMessage.innerHTML
 msgid "Downloading updates… <span>{{ progress }} downloaded.</span>"
 msgstr "جارِ تنزيل التحديثات...<span>{{ progress }} تم تنزيله.</span>"
 
@@ -398,32 +445,37 @@ msgstr "هل أنت متأكد من إلغاء جميع التنزيلات؟"
 msgid "There was an error while downloading the updates."
 msgstr "حدث خطأ عند تنزيل التحديثات."
 
-#: updateAvailableInfo
-msgctxt "updateAvailableInfo"
+#: updateAvailableInfo.innerHTML
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: updateAvailableInfo[one]
+#: updateAvailableInfo.innerHTML[one]
 msgid "{{ n }} update available. <span>Tap for more info.</span>"
 msgstr "{{ n }} تحديثات متاحة. <span> اضغط للتحميل.</span>"
 
-#: updateAvailableInfo[two]
-msgctxt "updateAvailableInfo[two]"
+#: updateAvailableInfo.innerHTML[two]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[two]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "{{ n }} تحديثات متاحة. <span> اضغط للتحميل.</span>"
 
-#: updateAvailableInfo[few]
-msgctxt "updateAvailableInfo[few]"
+#: updateAvailableInfo.innerHTML[few]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[few]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "{{ n }} تحديثات متاحة. <span> اضغط للتحميل.</span>"
 
-#: updateAvailableInfo[many]
-msgctxt "updateAvailableInfo[many]"
+#: updateAvailableInfo.innerHTML[many]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[many]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "{{ n }} تحديثات متاحة. <span> اضغط للتحميل.</span>"
 
-#: updateAvailableInfo[other]
-msgctxt "updateAvailableInfo[other]"
+#: updateAvailableInfo.innerHTML[other]
+#, fuzzy
+msgctxt "updateAvailableInfo.innerHTML[other]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr "{{ n }} تحديثات متاحة. <span> اضغط للتحميل.</span>"
 
@@ -468,7 +520,7 @@ msgstr "تحديث النظام جاهز"
 msgid "Required"
 msgstr "مطلوب"
 
-#: uncompressingMessage
+#: uncompressingMessage.innerHTML
 msgid "Uncompressing… <span>This can take a few minutes.</span>"
 msgstr "جارِ فك الضغط… <span>ربما يحتاج لبضعة دقائق.</span>"
 
@@ -603,10 +655,6 @@ msgstr ""
 #: try-again
 msgid "Try again"
 msgstr "حاول مرة أخرى"
-
-#: dialog-closed
-msgid "Dialog closed by the user"
-msgstr "تم إغلاق النافذة من قبل المستخدم"
 
 #. # value selector, time/date picker
 #: select-time
@@ -758,19 +806,21 @@ msgstr "قبول نقل الملف عبر البلوتوث؟"
 msgid "{{deviceName}} would like to transfer {{fileName}} ({{fileSize}})."
 msgstr "يرغب {{deviceName}}  بنقل {{fileName}} ({{fileSize}})."
 
-#: notification-fileTransfer-title
-msgid "Receive file?"
-msgstr "استلام الملف؟"
+#: transfer-confirmation-title
+msgid "{{deviceName}}"
+msgstr ""
 
-#: notification-fileTransfer-description
-msgid "File incoming from another device"
-msgstr "ملف وارد من جهاز آخر"
+#: transfer-confirmation-description
+msgid "Review transfer request."
+msgstr ""
 
 #: byteUnit-B
 msgid "Bytes"
 msgstr "بايت"
 
 #: byteUnit-KB
+#, fuzzy
+msgctxt "byteUnit-KB"
 msgid "KB"
 msgstr "كيلو بايت"
 
@@ -823,17 +873,13 @@ msgstr "نقل"
 msgid "Cancel Bluetooth file transfer?"
 msgstr "إلغاء نقل الملف عبر البلوتوث؟"
 
-#: bluetooth-file-transfer-result
-msgid "Bluetooth file transfer {{status}}."
-msgstr "{{status}} نقل الملف عبر البلوتوث."
+#: transfer-has-started-title
+msgid "The transfer has started"
+msgstr ""
 
-#: complete
-msgid "complete"
-msgstr "إكتمل"
-
-#: failed
-msgid "failed"
-msgstr "فشل"
+#: transfer-has-started-description
+msgid "Check the progress in Notification center"
+msgstr ""
 
 #: transferFinished-sentSuccessful-title
 msgid "File sent"
@@ -850,6 +896,15 @@ msgstr "لم يتم ارسال الملف"
 #: transferFinished-receivedFailed-title
 msgid "File could not be received"
 msgstr "لم بتم استقبال الملف"
+
+#: transferReport-title
+msgid "Transfer report:"
+msgstr ""
+
+#: transferReport-description
+msgid ""
+"{{numSuccessful}} files successful, {{numUnsuccessful}} files unsuccessful"
+msgstr ""
 
 #: unknown-file
 msgid "Unknown file"
@@ -872,11 +927,13 @@ msgid "Can not receive file"
 msgstr "لا يمكن استلام الملف"
 
 #: cannotGetStorageState
-msgid "Can not get device storage state"
+#, fuzzy
+msgid "Can not get device storage state."
 msgstr "لايمكن الوصول الى حالة تخزين الجوّال"
 
-#: sdcard-not-exist
-msgid "No memory card found (Please insert a memory card)"
+#: sdcard-not-exist2
+#, fuzzy
+msgid "No memory card found. Please insert a memory card."
 msgstr "لم يتم العثور على بطاقة ذاكرة (الرجاء ادخال واحدة)"
 
 #: sdcard-in-use
@@ -898,6 +955,19 @@ msgstr "خطأ غير معروف"
 #: confirm
 msgid "Confirm"
 msgstr "تأكيد"
+
+#. # Media Recoding
+#: microphone-is-on
+msgid "Mic is on"
+msgstr ""
+
+#: camera-is-on
+msgid "Camera is on"
+msgstr ""
+
+#: media-is-on
+msgid "Camera & Mic are ON"
+msgstr ""
 
 #. # Security :: SIM PIN lock
 #: noSimCard
@@ -1381,3 +1451,65 @@ msgstr ""
 #: icc-inputtitle
 msgid "STK Query"
 msgstr ""
+
+#. # CDMA emergency callback mode
+#: emergency-callback-mode
+msgid "Emergency call back mode"
+msgstr ""
+
+#: emergency-callback-dialog-message
+msgid ""
+"Telecom services and internet are disable due to emergency call back mode. "
+"Would you like to turn off the mode?"
+msgstr ""
+
+#. # CDMA record information
+#: cdma-record-info
+msgid "CDMA record information"
+msgstr ""
+
+#. # IME (Keyboard)
+#: ime-switching-tip
+msgid "Tap to switch input method"
+msgstr ""
+
+#: layout-selection
+msgid "Layout selection"
+msgstr ""
+
+#~ msgid "kB"
+#~ msgstr "كيلو بايت"
+
+#~ msgctxt "updateAvailableInfo"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "updateAvailableInfo[few]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr "{{ n }} تحديثات متاحة. <span> اضغط للتحميل.</span>"
+
+#~ msgctxt "updateAvailableInfo[many]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr "{{ n }} تحديثات متاحة. <span> اضغط للتحميل.</span>"
+
+#~ msgctxt "updateAvailableInfo[other]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr "{{ n }} تحديثات متاحة. <span> اضغط للتحميل.</span>"
+
+#~ msgid "Dialog closed by the user"
+#~ msgstr "تم إغلاق النافذة من قبل المستخدم"
+
+#~ msgid "Receive file?"
+#~ msgstr "استلام الملف؟"
+
+#~ msgid "File incoming from another device"
+#~ msgstr "ملف وارد من جهاز آخر"
+
+#~ msgid "Bluetooth file transfer {{status}}."
+#~ msgstr "{{status}} نقل الملف عبر البلوتوث."
+
+#~ msgid "complete"
+#~ msgstr "إكتمل"
+
+#~ msgid "failed"
+#~ msgstr "فشل"
