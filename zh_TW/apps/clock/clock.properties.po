@@ -3,19 +3,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-02 12:33+0100\n"
-"PO-Revision-Date: 2013-03-17 10:33+0000\n"
-"Last-Translator: dwj437220696 <dwj437220696@hotmail.com>\n"
+"POT-Creation-Date: 2013-11-08 20:21+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1363516417.000000\n"
 
 #: reset
 msgid "Reset"
@@ -37,8 +34,16 @@ msgstr "取消"
 msgid "Hour"
 msgstr "時"
 
+#: hours
+msgid "Hours"
+msgstr "時"
+
 #: minute
 msgid "Minute"
+msgstr "分"
+
+#: minutes
+msgid "Minutes"
 msgstr "分"
 
 #: enable
@@ -54,13 +59,20 @@ msgid "Label"
 msgstr "標籤"
 
 #: alarm
-#, fuzzy
 msgid "Alarm"
 msgstr "鬧鐘"
 
+#: timer
+msgid "Timer"
+msgstr "計時器"
+
+#: stopwatch
+msgid "Stopwatch"
+msgstr "碼錶"
+
 #: alarmName.placeholder
 msgid "Alarm name"
-msgstr ""
+msgstr "鬧鐘名稱"
 
 #: newAlarm
 msgid "New alarm"
@@ -70,13 +82,29 @@ msgstr "新增鬧鐘"
 msgid "Edit alarm"
 msgstr "編輯鬧鐘"
 
+#: pause
+msgid "Pause"
+msgstr "暫停"
+
+#: resume
+msgid "Resume"
+msgstr "繼續"
+
+#: lap
+msgid "Lap"
+msgstr "分段"
+
+#: lap-number
+msgid "Lap {{n}}"
+msgstr "第 {{n}} 圈"
+
 #: delete
 msgid "Delete"
 msgstr "刪除"
 
 #: time
 msgid "Time"
-msgstr ""
+msgstr "時間"
 
 #: snooze
 msgid "Snooze"
@@ -84,11 +112,11 @@ msgstr "貪睡"
 
 #: repeat
 msgid "Repeat"
-msgstr "重複"
+msgstr "重複於"
 
 #: vibrate
 msgid "Vibrate"
-msgstr ""
+msgstr "震動"
 
 #: close
 msgid "Close"
@@ -116,7 +144,7 @@ msgstr "音效"
 
 #: noSound
 msgid "No Sound"
-msgstr ""
+msgstr "無聲"
 
 #: everyday
 msgid "Every day"
@@ -136,24 +164,28 @@ msgstr "永不"
 
 #: vibrateOn
 msgid "On"
-msgstr ""
+msgstr "開啟"
 
 #: vibrateOff
 msgid "Off"
-msgstr ""
+msgstr "關閉"
 
 #. # see http://www.cplusplus.com/reference/clibrary/ctime/strftime/
 #: dateFormat
 msgid "%A, %B %e"
-msgstr "%B %e 日 %A "
+msgstr "%b %e 日 %A"
 
 #: countdown-lessThanAnHour
 msgid "The alarm is set for <strong>{{minutes}}</strong> from now."
-msgstr "鬧鐘將在 <strong>{{minute}}</strong> 後啟動。"
+msgstr "鬧鐘將在 <strong>{{minutes}}</strong> 後啟動。"
 
 #: countdown-moreThanAnHour
 msgid "The alarm is set for {{hours}} {{minutes}} from now."
 msgstr "鬧鐘將在 {{hours}} {{minutes}} 後啟動。"
+
+#: countdown-moreThanADay
+msgid "The alarm is set for {{days}} {{hours}} from now."
+msgstr "鬧鈴已設定於 {{days}} {{hours}} 後"
 
 #: nMinutes
 msgctxt "nMinutes"
@@ -169,19 +201,16 @@ msgid "one minute"
 msgstr "一分鐘"
 
 #: nMinutes[two]
-#, fuzzy
 msgctxt "nMinutes[two]"
 msgid "{{n}} minutes"
 msgstr "{{n}} 分鐘"
 
 #: nMinutes[few]
-#, fuzzy
 msgctxt "nMinutes[few]"
 msgid "{{n}} minutes"
 msgstr "{{n}} 分鐘"
 
 #: nMinutes[many]
-#, fuzzy
 msgctxt "nMinutes[many]"
 msgid "{{n}} minutes"
 msgstr "{{n}} 分鐘"
@@ -191,42 +220,107 @@ msgctxt "nMinutes[other]"
 msgid "{{n}} minutes"
 msgstr "{{n}} 分鐘"
 
-#: nRemainHours
-msgctxt "nRemainHours"
+#: nHours
+msgctxt "nHours"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: nRemainHours[zero]
-msgctxt "nRemainHours[zero]"
+#: nHours[zero]
+msgctxt "nHours[zero]"
 msgid ""
 msgstr ""
 
-#: nRemainHours[one]
+#: nHours[one]
 msgid "<strong>{{n}} hour</strong>"
 msgstr "<strong>{{n}} 小時</strong>"
 
-#: nRemainHours[two]
-#, fuzzy
-msgctxt "nRemainHours[two]"
+#: nHours[two]
+msgctxt "nHours[two]"
 msgid "<strong>{{n}} hours</strong>"
 msgstr "<strong>{{n}} 小時</strong>"
 
-#: nRemainHours[few]
-#, fuzzy
-msgctxt "nRemainHours[few]"
+#: nHours[few]
+msgctxt "nHours[few]"
 msgid "<strong>{{n}} hours</strong>"
 msgstr "<strong>{{n}} 小時</strong>"
 
-#: nRemainHours[many]
-#, fuzzy
-msgctxt "nRemainHours[many]"
+#: nHours[many]
+msgctxt "nHours[many]"
 msgid "<strong>{{n}} hours</strong>"
 msgstr "<strong>{{n}} 小時</strong>"
 
-#: nRemainHours[other]
-msgctxt "nRemainHours[other]"
+#: nHours[other]
+msgctxt "nHours[other]"
 msgid "<strong>{{n}} hours</strong>"
 msgstr "<strong>{{n}} 小時</strong>"
+
+#: nAndRemainHours
+msgctxt "nAndRemainHours"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: nAndRemainHours[zero]
+msgctxt "nAndRemainHours[zero]"
+msgid ""
+msgstr ""
+
+#: nAndRemainHours[one]
+msgid "and <strong>{{n}} hour</strong>"
+msgstr "<strong>{{n}} 小時</strong>"
+
+#: nAndRemainHours[two]
+msgctxt "nAndRemainHours[two]"
+msgid "and <strong>{{n}} hours</strong>"
+msgstr "<strong>{{n}} 小時</strong>"
+
+#: nAndRemainHours[few]
+msgctxt "nAndRemainHours[few]"
+msgid "and <strong>{{n}} hours</strong>"
+msgstr "<strong>{{n}} 小時</strong>"
+
+#: nAndRemainHours[many]
+msgctxt "nAndRemainHours[many]"
+msgid "and <strong>{{n}} hours</strong>"
+msgstr "<strong>{{n}} 小時</strong>"
+
+#: nAndRemainHours[other]
+msgctxt "nAndRemainHours[other]"
+msgid "and <strong>{{n}} hours</strong>"
+msgstr "<strong>{{n}} 小時</strong>"
+
+#: nRemainDays
+msgctxt "nRemainDays"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: nRemainDays[zero]
+msgctxt "nRemainDays[zero]"
+msgid ""
+msgstr ""
+
+#: nRemainDays[one]
+msgid "<strong>{{n}} day</strong>"
+msgstr "<strong>{{n}} 天</strong>"
+
+#: nRemainDays[two]
+msgctxt "nRemainDays[two]"
+msgid "<strong>{{n}} days</strong>"
+msgstr "<strong>{{n}} 天</strong>"
+
+#: nRemainDays[few]
+msgctxt "nRemainDays[few]"
+msgid "<strong>{{n}} days</strong>"
+msgstr "<strong>{{n}} 天</strong>"
+
+#: nRemainDays[many]
+msgctxt "nRemainDays[many]"
+msgid "<strong>{{n}} days</strong>"
+msgstr "<strong>{{n}} 天</strong>"
+
+#: nRemainDays[other]
+msgctxt "nRemainDays[other]"
+msgid "<strong>{{n}} days</strong>"
+msgstr "<strong>{{n}} 天</strong>"
 
 #: nRemainMinutes
 msgctxt "nRemainMinutes"
@@ -243,19 +337,16 @@ msgid "and <strong>{{n}} minute</strong>"
 msgstr "<strong>{{n}} 分鐘</strong>"
 
 #: nRemainMinutes[two]
-#, fuzzy
 msgctxt "nRemainMinutes[two]"
 msgid "and <strong>{{n}} minutes</strong>"
 msgstr "<strong>{{n}} 分鐘</strong>"
 
 #: nRemainMinutes[few]
-#, fuzzy
 msgctxt "nRemainMinutes[few]"
 msgid "and <strong>{{n}} minutes</strong>"
 msgstr "<strong>{{n}} 分鐘</strong>"
 
 #: nRemainMinutes[many]
-#, fuzzy
 msgctxt "nRemainMinutes[many]"
 msgid "and <strong>{{n}} minutes</strong>"
 msgstr "<strong>{{n}} 分鐘</strong>"
@@ -264,7 +355,3 @@ msgstr "<strong>{{n}} 分鐘</strong>"
 msgctxt "nRemainMinutes[other]"
 msgid "and <strong>{{n}} minutes</strong>"
 msgstr "<strong>{{n}} 分鐘</strong>"
-
-#~ msgctxt "alarm.placeholder"
-#~ msgid "Alarm"
-#~ msgstr "鬧鐘"

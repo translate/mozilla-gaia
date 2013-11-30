@@ -3,19 +3,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-22 13:57+0100\n"
-"PO-Revision-Date: 2013-03-17 10:33+0000\n"
-"Last-Translator: dwj437220696 <dwj437220696@hotmail.com>\n"
+"POT-Creation-Date: 2013-11-30 01:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1363516417.000000\n"
 
 #: addNewNumber
 msgid "Add new number"
@@ -35,7 +32,7 @@ msgstr "通話紀錄"
 
 #: connecting
 msgid "Connecting"
-msgstr ""
+msgstr "撥號中"
 
 #: cancel
 msgid "Cancel"
@@ -45,47 +42,47 @@ msgstr "取消"
 #. ## LOCALIZATION NOTE Its variables might be a phone number or cf-inactive.
 #: cf-async
 msgid "Asynchronous: {{ async }}\n"
-msgstr ""
+msgstr "非同步: {{ async }}\n"
 
 #: cf-data
 msgid "Data: {{ data }}\n"
-msgstr ""
+msgstr "資料：{{ data }}\n"
 
 #: cf-error
 msgid "An error occurred while retrieving call forwarding status"
-msgstr ""
+msgstr "取得通話轉接狀態時發生錯誤"
 
 #: cf-fax
 msgid "FAX: {{ fax }}\n"
-msgstr ""
+msgstr "傳真: {{ fax }}\n"
 
 #: cf-inactive
 msgid "Inactive"
-msgstr ""
+msgstr "停用"
 
 #: cf-packet
 msgid "Packet: {{ packet }}\n"
-msgstr ""
+msgstr "封包: {{ packet }}\n"
 
 #: cf-pad
 msgid "PAD: {{ pad }}\n"
-msgstr ""
+msgstr "PAD: {{ pad }}\n"
 
 #: cf-sms
 msgid "SMS: {{ sms }}\n"
-msgstr ""
+msgstr "簡訊：{{ sms }}\n"
 
 #: cf-status
 msgid "Call forwarding status\n"
-msgstr ""
+msgstr "通話轉接狀態\n"
 
 #: cf-sync
 msgid "Synchronous: {{ sync }}\n"
-msgstr ""
+msgstr "同步: {{ sync }}\n"
 
 #: cf-voice
 msgid "Voice: {{ voice }}\n"
-msgstr ""
+msgstr "語音：{{ voice }}\n"
 
 #: confirm-deletion
 msgid "Clear selected calls?"
@@ -100,9 +97,8 @@ msgid "Delete"
 msgstr "刪除"
 
 #: deselectAll
-#, fuzzy
 msgid "Deselect All"
-msgstr "取消選擇全部"
+msgstr "全部不選"
 
 #: edit-selected
 msgctxt "edit-selected"
@@ -144,7 +140,7 @@ msgstr "忽略通話"
 
 #: incoming
 msgid "Incoming"
-msgstr "內送"
+msgstr "來電"
 
 #: missed
 msgid "Missed"
@@ -156,15 +152,15 @@ msgstr "未接來電"
 
 #: mmi-error
 msgid "An error occurred while sending the message"
-msgstr ""
+msgstr "傳送訊息時發生錯誤"
 
 #: mmi-session-expired
 msgid "Session expired"
-msgstr ""
+msgstr "Session 已過期"
 
 #: mmi-successfully-sent
 msgid "Message successfully sent"
-msgstr ""
+msgstr "訊息已成功送出"
 
 #: no-logs-msg-1
 msgid "No calls recorded"
@@ -176,7 +172,7 @@ msgstr "立刻開始通訊"
 
 #: no-logs-msg-3
 msgid "No missed calls"
-msgstr ""
+msgstr "無未接來電"
 
 #: reply
 msgid "Reply"
@@ -184,11 +180,15 @@ msgstr "回覆"
 
 #: selectAll
 msgid "Select All"
-msgstr "全選"
+msgstr "全部選擇"
 
 #: send
 msgid "Send"
 msgstr "傳送"
+
+#: switch-calls
+msgid "Switch calls"
+msgstr "切換通話"
 
 #: today
 msgid "Today"
@@ -196,19 +196,19 @@ msgstr "今天"
 
 #: withheld-number
 msgid "Withheld number"
-msgstr ""
+msgstr "隱藏發話號碼"
 
 #: from-contact
 msgid "From {{ contact }}"
-msgstr ""
+msgstr "來自 {{ contact }}"
 
 #: from-number
 msgid "From {{ number }}"
-msgstr ""
+msgstr "來自 {{ number }}"
 
 #: from-withheld-number
 msgid "From withheld number"
-msgstr ""
+msgstr "來電號碼隱藏"
 
 #: yesterday
 msgid "Yesterday"
@@ -230,108 +230,161 @@ msgstr "輸入您的回應…"
 msgid "Clear all text"
 msgstr "清除所有文字"
 
+#: hide
+msgid "Hide"
+msgstr "隱藏"
+
 #. ## LOCALIZATION NOTE 'call' is an action verb
 #: call
 msgid "Call"
-msgstr ""
+msgstr "撥號"
+
+#: hold
+msgid "Hold"
+msgstr "保留"
+
+#: resume
+msgid "Resume"
+msgstr "繼續"
+
+#: sendSms
+msgid "Send Message"
+msgstr "寄送郵件"
 
 #. ## LOCALIZATION NOTE: these labels aren't displayed but they're used for acessibility
 #: hangup-a11y-button.aria-label
 msgid "Hang Up"
-msgstr "已掛斷"
+msgstr "掛斷"
 
 #: pickup-a11y-button.aria-label
 msgid "Pick up"
 msgstr "接聽"
 
+#: unlock-a11y-button.aria-label
+msgid "Slider"
+msgstr "滑塊"
+
 #: settings
 msgid "Settings"
-msgstr ""
+msgstr "設定"
+
+#. #Call log
+#: delete-n-log?
+msgctxt "delete-n-log?"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: delete-n-log?[zero]
+msgid "Nothing selected"
+msgstr "未選取項目"
+
+#: delete-n-log?[one]
+msgid "Delete selected log?"
+msgstr "要刪除所選的紀錄？"
+
+#: delete-n-log?[two]
+msgctxt "delete-n-log?[two]"
+msgid "Delete {{ n }} logs?"
+msgstr "要刪除 {{ n }} 筆紀錄？"
+
+#: delete-n-log?[few]
+msgctxt "delete-n-log?[few]"
+msgid "Delete {{ n }} logs?"
+msgstr "要刪除 {{ n }} 筆紀錄？"
+
+#: delete-n-log?[many]
+msgctxt "delete-n-log?[many]"
+msgid "Delete {{ n }} logs?"
+msgstr "要刪除 {{ n }} 筆紀錄？"
+
+#: delete-n-log?[other]
+msgctxt "delete-n-log?[other]"
+msgid "Delete {{ n }} logs?"
+msgstr "要刪除 {{ n }} 筆紀錄？"
 
 #. #Call duration units
 #: callDurationMinutes
 msgid "{{ m }}:{{ s }}"
-msgstr ""
+msgstr "{{ m }}:{{ s }}"
 
 #: callDurationHours
 msgid "{{ h }}:{{ m }}:{{ s}}"
-msgstr ""
+msgstr "{{ h }}:{{ m }}:{{ s }}"
 
 #. #Suggestion bar
 #: suggestionMatches
-#, fuzzy
 msgctxt "suggestionMatches"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: suggestionMatches[one]
 msgid "{{ n }} match for \"{{ matchNumber }}\""
-msgstr ""
+msgstr "「{{ matchNumber }}」找到 {{ n }} 筆"
 
 #: suggestionMatches[two]
 msgctxt "suggestionMatches[two]"
 msgid "{{ n }} matches for \"{{ matchNumber }}\""
-msgstr ""
+msgstr "「{{ matchNumber }}」找到 {{ n }} 筆"
 
 #: suggestionMatches[few]
 msgctxt "suggestionMatches[few]"
 msgid "{{ n }} matches for \"{{ matchNumber }}\""
-msgstr ""
+msgstr "「{{ matchNumber }}」找到 {{ n }} 筆"
 
 #: suggestionMatches[many]
 msgctxt "suggestionMatches[many]"
 msgid "{{ n }} matches for \"{{ matchNumber }}\""
-msgstr ""
+msgstr "「{{ matchNumber }}」找到 {{ n }} 筆"
 
 #: suggestionMatches[other]
 msgctxt "suggestionMatches[other]"
 msgid "{{ n }} matches for \"{{ matchNumber }}\""
-msgstr ""
+msgstr "「{{ matchNumber }}」找到 {{ n }} 筆"
 
 #. # MMI Service code
 #: scCallBarring
 msgid "Call barring"
-msgstr ""
+msgstr "通話限制"
 
 #: scCallForwarding
 msgid "Call forwarding"
-msgstr ""
+msgstr "通話轉接"
 
 #: scClip
 msgid "Incoming Caller ID"
-msgstr ""
+msgstr "來電號碼"
 
 #: scClir
 msgid "Outgoing Caller ID"
-msgstr ""
+msgstr "去話號碼"
 
 #: scPwd
 msgid "Password change"
-msgstr ""
+msgstr "修改密碼"
 
 #: scCallWaiting
 msgid "Call waiting"
-msgstr ""
+msgstr "來電等待"
 
 #: scPin
 msgid "PIN change"
-msgstr ""
+msgstr "修改 PIN 碼"
 
 #: scPin2
 msgid "PIN2 change"
-msgstr ""
+msgstr "修改 PIN2 碼"
 
 #: scPuk
 msgid "Unblock PIN"
-msgstr ""
+msgstr "解鎖 PIN 碼"
 
 #: scPuk2
 msgid "Unblock PIN2"
-msgstr ""
+msgstr "解鎖 PIN2 碼"
 
 #: scImei
 msgid "IMEI"
-msgstr ""
+msgstr "IMEI"
 
 #: scUssd
 msgid "USSD"
@@ -340,343 +393,348 @@ msgstr "USSD"
 #. # MMI Service class
 #: serviceClassVoice
 msgid "Voice"
-msgstr ""
+msgstr "語音"
 
 #: serviceClassData
 msgid "Data"
-msgstr ""
+msgstr "數據"
 
 #: serviceClassFax
 msgid "FAX"
-msgstr ""
+msgstr "傳真"
 
 #: serviceClassSms
 msgid "SMS"
-msgstr ""
+msgstr "簡訊"
 
 #: serviceClassDataSync
 msgid "Sync"
-msgstr ""
+msgstr "同步"
 
 #: serviceClassDataAsync
 msgid "Async"
-msgstr ""
+msgstr "非同步"
 
 #: serviceClassPacket
 msgid "Packet"
-msgstr ""
+msgstr "封包"
 
 #: serviceClassPad
 msgid "PAD"
-msgstr ""
+msgstr "PAD"
 
 #. # MMI Status message
 #: smServiceEnabled
 msgid "Service was enabled"
-msgstr ""
+msgstr "服務已啟用"
 
 #: smServiceDisabled
 msgid "Service has been disabled"
-msgstr ""
+msgstr "服務已停用"
 
 #: smServiceRegistered
 msgid "Registration was successful"
-msgstr ""
+msgstr "已成功註冊"
 
 #: smServiceErased
 msgid "Erasure was successful"
-msgstr ""
+msgstr "已成功解除註冊"
 
 #: smServiceInterrogated
 msgid "Request was successful"
-msgstr ""
+msgstr "已成功完成請求"
 
 #: smServiceNotProvisioned
 msgid "Service not provisioned"
-msgstr ""
+msgstr "服務未開通"
 
 #: smClirPermanent
 msgid "You can not change the caller ID setting"
-msgstr ""
+msgstr "您無法修改通話號碼選項"
 
 #: smClirDefaultOnNextCallOn
 msgid "Caller ID defaults to restricted. Next call: Restricted"
-msgstr ""
+msgstr "通話號碼預設不顯示。下次通話：不顯示"
 
 #: smClirDefaultOnNextCallOff
 msgid "Caller ID defaults to restricted. Next call: Not restricted"
-msgstr ""
+msgstr "通話號碼預設不顯示。下次通話：顯示"
 
 #: smClirDefaultOffNextCallOn
 msgid "Caller ID defaults to not restricted. Next call: Restricted"
-msgstr ""
+msgstr "通話號碼預設顯示。下次通話：不顯示"
 
 #: smClirDefaultOffNextCallOff
 msgid "Caller ID defaults to not restricted. Next call: Not restricted"
-msgstr ""
+msgstr "通話號碼預設顯示。下次通話：顯示"
 
 #: smServiceEnabledFor
 msgid "Service was enabled for:"
-msgstr ""
+msgstr "已啟用下列服務:"
 
 #: smPinChanged
 msgid "PIN successfully changed"
-msgstr ""
+msgstr "成功更改 PIN 碼"
 
 #: smPinUnblocked
 msgid "PIN successfully unblocked"
-msgstr ""
+msgstr "成功解鎖 PIN 碼"
 
 #: smPin2Changed
 msgid "PIN2 successfully changed"
-msgstr ""
+msgstr "成功更改 PIN2 碼"
 
 #: smPin2Unblocked
 msgid "PIN2 successfully unblocked"
-msgstr ""
+msgstr "成功解鎖 PIN2 碼"
 
 #. # MMI Error message
 #: emMmiError
 msgid "Connection problem or invalid MMI code"
-msgstr ""
+msgstr "連線問題或無效的 MMI 碼"
 
 #: emMmiErrorPasswordIncorrect
 msgid "Incorrect Password"
-msgstr ""
+msgstr "密碼不正確"
 
 #: emMmiErrorNotSupported
 msgid "Invalid or Unsupported MMI Code"
-msgstr ""
+msgstr "無效或未支援的 MMI 碼"
 
 #: emMmiErrorInvalidAction
 msgid "Invalid action"
-msgstr ""
+msgstr "無效行為"
 
 #: emMmiErrorInvalidScCode
 msgid "Invalid service code"
-msgstr ""
+msgstr "服務碼無效"
 
 #: emMmiErrorBadPuk
 msgid "The PUK you typed is not correct"
-msgstr ""
+msgstr "您輸入的 PUK 碼不正確"
 
 #: emMmiErrorBadPin
 msgid "The old PIN you typed is not correct."
-msgstr ""
+msgstr "您輸入的舊 PIN 碼不正確。"
 
 #: emMmiErrorNeedPuk2
 msgid "Type PUK2 to unblock SIM card"
-msgstr ""
+msgstr "輸入 PUK2 碼以解除封鎖 SIM 卡"
 
 #: emMmiErrorMismatchPin
 msgid "The PINs you typed do not match"
-msgstr ""
+msgstr "您輸入的 PIN 碼不相同"
 
 #: emMmiErrorInvalidPin
 msgid "Type a PIN that is 4 to 8 numbers"
-msgstr ""
+msgstr "輸入 4 到 8 位數的 PIN 碼"
 
 #: emMmiErrorNeedsPuk
 msgid "Your SIM card is PUK-locked"
-msgstr ""
+msgstr "您的 SIM 卡已被鎖定，需要輸入 PUK 碼"
 
 #: emMmiErrorEnablePin
 msgid "Unsuccessful. Enable SIM/RUIM LOCK"
-msgstr ""
+msgstr "未成功，啟用 SIM/RUIM 鎖定"
 
 #: emMmiErrorMmiFdn
 msgid "Operation is restricted to fixed dialing numbers only"
-msgstr ""
+msgstr "操作被限制為僅能撥打固定號碼"
 
 #: emMmiErrorStkCcUssdDial
 msgid "USSD request is modified to DIAL request"
-msgstr ""
+msgstr "USSD 請求被修改為撥號請求"
 
 #: emMmiErrorStkCcUssdSs
 msgid "USSD request is modified to SS request"
-msgstr ""
+msgstr "USSD 請求被修改為 SS 請求"
 
 #: emMmiErrorStkCcUssdUssd
 msgid "USSD request is modified to new USSD request"
-msgstr ""
+msgstr "USSD 請求被修改為新的 USSD 請求"
 
 #: emMmiErrorStkCcSsDial
 msgid "SS request is modified to DIAL request"
-msgstr ""
+msgstr "SS 請求被修改為撥號請求"
 
 #: emMmiErrorStkCcSsUssd
 msgid "SS request is modified to USSD request"
-msgstr ""
+msgstr "SS 請求被修改為 USSD 請求"
 
 #: emMmiErrorStkCcSsSs
 msgid "SS request is modified to new SS request"
-msgstr ""
+msgstr "SS 請求被修改為新的 SS 請求"
 
 #: emMmiErrorPinPukAttempts
-#, fuzzy
 msgctxt "emMmiErrorPinPukAttempts"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: emMmiErrorPinPukAttempts[one]
 msgid "Only {{ n }} retry left"
-msgstr ""
+msgstr "僅剩下 {{ n }} 次重試機會"
 
 #: emMmiErrorPinPukAttempts[two]
 msgctxt "emMmiErrorPinPukAttempts[two]"
 msgid "{{ n }} retries left"
-msgstr ""
+msgstr "剩下 {{ n }} 次重試機會"
 
 #: emMmiErrorPinPukAttempts[few]
 msgctxt "emMmiErrorPinPukAttempts[few]"
 msgid "{{ n }} retries left"
-msgstr ""
+msgstr "剩下 {{ n }} 次重試機會"
 
 #: emMmiErrorPinPukAttempts[many]
 msgctxt "emMmiErrorPinPukAttempts[many]"
 msgid "{{ n }} retries left"
-msgstr ""
+msgstr "剩下 {{ n }} 次重試機會"
 
 #: emMmiErrorPinPukAttempts[other]
 msgctxt "emMmiErrorPinPukAttempts[other]"
 msgid "{{ n }} retries left"
-msgstr ""
+msgstr "剩下 {{ n }} 次重試機會"
 
 #: emMmiErrorSimBlocked
 msgid "Maximum number of retries exceeded. SIM blocked"
-msgstr ""
+msgstr "已達最大重試次數，SIM 卡已被封鎖"
 
 #. # RIL errno
 #: RadioNotAvailable
 msgid "Radio not available"
-msgstr ""
+msgstr "無法使用無線訊號"
 
 #: GenericFailure
 msgid "Generic failure"
-msgstr ""
+msgstr "一般失敗"
 
 #: PasswordIncorrect
 msgid "Password incorrect"
-msgstr ""
+msgstr "密碼不正確"
 
 #: SimPin2
 msgid "SIM PIN2"
-msgstr ""
+msgstr "SIM PIN2"
 
 #: SimPuk2
 msgid "SIM PUK2"
-msgstr ""
+msgstr "SIM PUK2"
 
 #: RequestNotSupported
 msgid "Request not supported"
-msgstr ""
+msgstr "請求未支援"
 
 #: OpNotAllowedDuringVoiceCall
 msgid "Operation not allowed during voice call"
-msgstr ""
+msgstr "語音通話時不允許進行操作"
 
 #: SmsSendFailRetry
 msgid "SMS send fail retry"
-msgstr ""
+msgstr "簡訊傳送失敗重試"
 
 #: SimAbsent
 msgid "SIM absent"
-msgstr ""
+msgstr "SIM 卡不存在"
 
 #: SubscriptionNotAvailable
 msgid "Subscription not available"
-msgstr ""
+msgstr "訂閱無法使用"
 
 #: ModeNotSupported
 msgid "Mode not supported"
-msgstr ""
+msgstr "模式未支援"
 
 #: FdnCheckFailure
 msgid "Fdn check failure"
-msgstr ""
+msgstr "Fdn 檢查失敗"
 
 #: IllegalSimOrMe
 msgid "Illegal SIM or ME"
-msgstr ""
+msgstr "無效的 SIM 卡或 ME"
 
 #: DialModifiedToUssd
 msgid "Dial modified to USSD"
-msgstr ""
+msgstr "撥號請求被修改為 USSD 請求"
 
 #: DialModifiedToSs
 msgid "Dial modified to SS"
-msgstr ""
+msgstr "撥號請求被修改為 SS 請求"
 
 #: DialModifiedToDial
 msgid "Dial modified to dial"
-msgstr ""
+msgstr "撥號請求被修改為新的撥號請求"
 
 #: UssdModifiedToDial
 msgid "USSD modified to dial"
-msgstr ""
+msgstr "USSD 請求被修改為撥號請求"
 
 #: UssdModifiedToSs
 msgid "USSD modified to SS"
-msgstr ""
+msgstr "USSD 請求被修改為 SS 請求"
 
 #: UssdModifiedToUssd
 msgid "USSD modified to USSD"
-msgstr ""
+msgstr "USSD 請求被修改為新的 USSD 請求"
 
 #: SsModifiedToDial
 msgid "SS modified to dial"
-msgstr ""
+msgstr "SS 請求被修改為撥號請求"
 
 #: SsModifiedToUssd
 msgid "SS modified to USSD"
-msgstr ""
+msgstr "SS 請求被修改為 USSD 請求"
 
 #: SsModifiedToSs
 msgid "SS modified to SS"
-msgstr ""
+msgstr "SS 請求被修改為新的 SS 請求"
 
 #: SubscriptionNotSupported
 msgid "Subscription not supported"
-msgstr ""
+msgstr "訂閱不被支援"
 
 #: InvalidParameter
 msgid "Invalid parameter"
-msgstr ""
+msgstr "參數無效"
 
 #: RejectedByRemote
 msgid "Rejected by remote"
-msgstr ""
+msgstr "被遠端拒絕"
 
-#, fuzzy
-#~ msgctxt "contactNameWithOthersSuffix"
-#~ msgid "{[ plural(n) ]}"
-#~ msgstr "{[ plural(n) ]}"
+#. # Conference call
+#: group-call
+msgctxt "group-call"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
 
-#~ msgid "From {{sender}}"
-#~ msgstr "來自 {{sender}}"
+#: group-call[one]
+msgctxt "group-call[one]"
+msgid "Group call ({{ n }})"
+msgstr "群組通話 ({{ n }})"
 
-#~ msgid "Unknown number"
-#~ msgstr "未知"
+#: group-call[two]
+msgctxt "group-call[two]"
+msgid "Group call ({{ n }})"
+msgstr "群組通話 ({{ n }})"
 
-#~ msgid "To make a call, disable Airplane Mode."
-#~ msgstr "若需要打電話，請先關閉飛航模式。"
+#: group-call[few]
+msgctxt "group-call[few]"
+msgid "Group call ({{ n }})"
+msgstr "群組通話 ({{ n }})"
 
-#~ msgctxt "callAirplaneModeBtnOk"
-#~ msgid "OK"
-#~ msgstr "確定"
+#: group-call[many]
+msgctxt "group-call[many]"
+msgid "Group call ({{ n }})"
+msgstr "群組通話 ({{ n }})"
 
-#~ msgid "Airplane Mode is on"
-#~ msgstr "飛航模式已開啟"
+#: group-call[other]
+msgctxt "group-call[other]"
+msgid "Group call ({{ n }})"
+msgstr "群組通話 ({{ n }})"
 
-#~ msgid "To make a call, the phone must be connected to a network."
-#~ msgstr "手機必須連線到通訊網路才能撥打電話。"
+#: caller-left-call
+msgid "{{ caller }} has left the call."
+msgstr "{{ caller }} 已離開通話。"
 
-#~ msgid "Emergency calls are not allowed by the network."
-#~ msgstr "通訊網路不允許撥打緊急電話。"
-
-#~ msgctxt "emergencyDialogBtnOk"
-#~ msgid "OK"
-#~ msgstr "確定"
-
-#~ msgid "No network connection"
-#~ msgstr "無網路連線"
+#. # date string. see http://pubs.opengroup.org/onlinepubs/007908799/xsh/strftime.html
+#: longDateFormat
+msgid "%A, %B %e"
+msgstr "%b %e 日 %A"

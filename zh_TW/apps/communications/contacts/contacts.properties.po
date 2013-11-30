@@ -3,19 +3,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-03 17:13+0100\n"
-"PO-Revision-Date: 2013-03-17 10:33+0000\n"
-"Last-Translator: dwj437220696 <dwj437220696@hotmail.com>\n"
+"POT-Creation-Date: 2013-10-22 12:38+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1363516417.000000\n"
 
 #: add
 msgid "Add"
@@ -51,7 +48,7 @@ msgstr "更新"
 
 #: retry
 msgid "Retry"
-msgstr ""
+msgstr "重試"
 
 #. # Menus and dialog strings
 #: contacts
@@ -67,9 +64,16 @@ msgid "Delete contact"
 msgstr "刪除聯絡人"
 
 #: selectContact
-#, fuzzy
 msgid "Select contact"
-msgstr "刪除聯絡人"
+msgstr "選擇聯絡人"
+
+#: selectAll
+msgid "Select all"
+msgstr "全部選擇"
+
+#: deselectAll
+msgid "Deselect all"
+msgstr "全部不選"
 
 #: editContact
 msgid "Edit contact"
@@ -87,13 +91,13 @@ msgstr "移除"
 msgid "Comments"
 msgstr "附註"
 
-#: no_phones
-msgid "No phones"
-msgstr "無電話號碼"
+#: no_contact_phones
+msgid "This contact does not have a phone number"
+msgstr "此聯絡人沒有電話號碼"
 
-#: no_email
-msgid "No email"
-msgstr "無電子郵件"
+#: no_contact_email
+msgid "This contact does not have an email address"
+msgstr "此聯絡人沒有電子郵件地址"
 
 #: removePhotoConfirm
 msgid "Remove contact picture?"
@@ -107,7 +111,7 @@ msgstr "正在載入聯絡人…"
 #. # a number from your call list to a contact, and your contacts list is empty.
 #: noContactsActivity
 msgid "Cannot add to contact as your contact list is empty"
-msgstr ""
+msgstr "因為您的聯絡人清單是空的，無法新增至聯絡人"
 
 #. # Contact fields
 #: noName
@@ -129,12 +133,12 @@ msgstr "電話"
 #: carrier
 msgctxt "carrier"
 msgid "Carrier"
-msgstr "營運商"
+msgstr "電信業者"
 
 #: carrier.placeholder
 msgctxt "carrier.placeholder"
 msgid "Carrier"
-msgstr "營運商"
+msgstr "電信業者"
 
 #: email
 msgctxt "email"
@@ -181,7 +185,7 @@ msgstr "生日"
 #. # see http://pubs.opengroup.org/onlinepubs/007908799/xsh/strftime.html
 #: birthdayDateFormat
 msgid "%B %e"
-msgstr "%B %e"
+msgstr "%b %e 日"
 
 #. # Contact action buttons
 #: addPhoto
@@ -300,7 +304,7 @@ msgstr "國家:"
 
 #: labelComment
 msgid "Comment:"
-msgstr "註解:"
+msgstr "附註:"
 
 #: legendTitleMain
 msgid "Main information"
@@ -331,9 +335,80 @@ msgstr "搜尋"
 msgid "No contacts found"
 msgstr "找不到聯絡人"
 
+#: transferContactsTitle
+msgid "Transfer Contacts"
+msgstr "轉移聯絡人"
+
 #: importContactsTitle
 msgid "Import Contacts"
-msgstr ""
+msgstr "匯入聯絡人"
+
+#: exportContactsTitle
+msgid "Export Contacts"
+msgstr "匯出聯絡人"
+
+#: exportContactsAction
+msgid "Export"
+msgstr "匯出"
+
+#. # Export
+#: simExport-title
+msgid "Export to SIM"
+msgstr "匯出至 SIM 卡"
+
+#: sdExport-title
+msgid "Export to SD Card"
+msgstr "匯出至 SD 卡"
+
+#: btExport-title
+msgid "Export to Bluetooth"
+msgstr "匯出至藍牙"
+
+#: sdUMSEnabled
+msgid "Cannot use SD Card because USB storage is enabled"
+msgstr "因為已啟用 USB 儲存空間，無法使用 SD 卡"
+
+#: exportErrorTitle
+msgid "Export error"
+msgstr "匯出錯誤"
+
+#: exportError-general
+msgid "Some error happened while exporting"
+msgstr "匯出時發生錯誤"
+
+#: exportError-SD-shared
+msgctxt "exportError-SD-shared"
+msgid "Can't access memory card because it's shared"
+msgstr "因為已共享，無法存取記憶卡"
+
+#: exportError-SD-unavailable
+msgctxt "exportError-SD-unavailable"
+msgid "Memory card is not available"
+msgstr "無法使用記憶卡"
+
+#: exportError-SD-noSpace
+msgctxt "exportError-SD-noSpace"
+msgid "There's not enough space on the memory card to export the contacts"
+msgstr "記憶卡剩餘空間不足，無法匯出聯絡人"
+
+#: exportError-SIM-unavailable
+msgid "SIM card is not available"
+msgstr "無法使用 SIM 卡"
+
+#: exportError-BT-shared
+msgctxt "exportError-BT-shared"
+msgid "Can't access memory card because it's shared"
+msgstr "因為已共享，無法存取記憶卡"
+
+#: exportError-BT-unavailable
+msgctxt "exportError-BT-unavailable"
+msgid "Memory card is not available"
+msgstr "無法使用記憶卡"
+
+#: exportError-BT-noSpace
+msgctxt "exportError-BT-noSpace"
+msgid "There's not enough space on the memory card to export the contacts"
+msgstr "記憶卡剩餘空間不足，無法匯出聯絡人"
 
 #. # SIM import
 #: simContacts-import
@@ -346,110 +421,116 @@ msgstr "正在匯入 SIM 卡中的聯絡人…"
 
 #: simContacts-reading
 msgid "Reading from SIM card…"
-msgstr "正在自 SIM 卡讀取…"
+msgstr "正在讀取 SIM 卡…"
 
 #: simContacts-error
 msgid "Could not import contacts from SIM"
-msgstr "無法自 SIM 卡中匯入連絡人"
+msgstr "無法自 SIM 卡中匯入聯絡人"
 
 #: simContacts-imported3
 msgctxt "simContacts-imported3"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: simContacts-imported3[zero]
 msgid "No contacts detected on SIM to import"
-msgstr ""
+msgstr "SIM 卡上找不到可匯入的聯絡人"
 
 #: simContacts-imported3[one]
 msgctxt "simContacts-imported3[one]"
 msgid "Imported one contact"
-msgstr ""
+msgstr "已匯入 1 位聯絡人"
 
 #: simContacts-imported3[two]
 msgctxt "simContacts-imported3[two]"
 msgid "Imported {{n}} contacts"
-msgstr ""
+msgstr "已匯入 {{n}} 位聯絡人"
 
 #: simContacts-imported3[few]
 msgctxt "simContacts-imported3[few]"
 msgid "Imported {{n}} contacts"
-msgstr ""
+msgstr "已匯入 {{n}} 位聯絡人"
 
 #: simContacts-imported3[many]
 msgctxt "simContacts-imported3[many]"
 msgid "Imported {{n}} contacts"
-msgstr ""
+msgstr "已匯入 {{n}} 位聯絡人"
 
 #: simContacts-imported3[other]
 msgctxt "simContacts-imported3[other]"
 msgid "Imported {{n}} contacts"
-msgstr ""
+msgstr "已匯入 {{n}} 位聯絡人"
 
 #: noSimMsg
 msgid "To import contacts insert or unlock your SIM card"
-msgstr ""
+msgstr "請插入或解鎖 SIM 卡以匯入聯絡人"
+
+#: noSimMsgExport
+msgid "To export contacts insert or unlock your SIM card"
+msgstr "要匯出聯絡人，請插入或解鎖您的 SIM 卡"
 
 #. # SD Card import
-#: sdContacts-import
-msgid "Import contacts from SD card"
-msgstr ""
+#: memoryCardContacts-import
+msgid "Import contacts from memory card"
+msgstr "自記憶卡中匯入聯絡人"
 
-#: sdContacts-importing
-msgid "Importing contacts from SD card…"
-msgstr ""
+#: memoryCardContacts-importing
+msgid "Importing contacts from memory card…"
+msgstr "正在自記憶卡中匯入聯絡人…"
 
-#: sdContacts-reading
-#, fuzzy
-msgid "Reading from SD card…"
-msgstr "正在自 SIM 卡讀取…"
+#: memoryCardContacts-reading
+msgid "Reading from memory card…"
+msgstr "正在讀取記憶卡…"
 
-#: sdContacts-error
-#, fuzzy
-msgid "Could not import contacts from SD card"
-msgstr "無法自 SIM 卡中匯入連絡人"
+#: memoryCardContacts-error
+msgid "Could not import contacts from memory card"
+msgstr "無法自記憶卡中匯入聯絡人"
 
-#: sdContacts-imported3
-msgctxt "sdContacts-imported3"
+#: memoryCardContacts-imported3
+msgctxt "memoryCardContacts-imported3"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
-#: sdContacts-imported3[zero]
-msgid "No contacts detected on SD card to import"
-msgstr ""
+#: memoryCardContacts-imported3[zero]
+msgid "No contacts detected on memory card to import"
+msgstr "記憶卡中偵測不到聯絡人"
 
-#: sdContacts-imported3[one]
-msgctxt "sdContacts-imported3[one]"
+#: memoryCardContacts-imported3[one]
+msgctxt "memoryCardContacts-imported3[one]"
 msgid "Imported one contact"
-msgstr ""
+msgstr "已匯入 1 位聯絡人"
 
-#: sdContacts-imported3[two]
-msgctxt "sdContacts-imported3[two]"
+#: memoryCardContacts-imported3[two]
+msgctxt "memoryCardContacts-imported3[two]"
 msgid "Imported {{n}} contacts"
-msgstr ""
+msgstr "已匯入 {{n}} 位聯絡人"
 
-#: sdContacts-imported3[few]
-msgctxt "sdContacts-imported3[few]"
+#: memoryCardContacts-imported3[few]
+msgctxt "memoryCardContacts-imported3[few]"
 msgid "Imported {{n}} contacts"
-msgstr ""
+msgstr "已匯入 {{n}} 位聯絡人"
 
-#: sdContacts-imported3[many]
-msgctxt "sdContacts-imported3[many]"
+#: memoryCardContacts-imported3[many]
+msgctxt "memoryCardContacts-imported3[many]"
 msgid "Imported {{n}} contacts"
-msgstr ""
+msgstr "已匯入 {{n}} 位聯絡人"
 
-#: sdContacts-imported3[other]
-msgctxt "sdContacts-imported3[other]"
+#: memoryCardContacts-imported3[other]
+msgctxt "memoryCardContacts-imported3[other]"
 msgid "Imported {{n}} contacts"
-msgstr ""
+msgstr "已匯入 {{n}} 位聯絡人"
 
-#: noSdMsg
-msgid "To import contacts insert a SD card"
-msgstr ""
+#: noMemoryCardMsg
+msgid "To import contacts insert a memory card"
+msgstr "請插入記憶卡以匯入聯絡人"
+
+#: noMemoryCardMsgExport
+msgid "To export contacts insert a memory card"
+msgstr "請插入記憶卡以匯出聯絡人"
 
 #: genericProgress
 msgid "{{current}}/{{total}}"
-msgstr ""
+msgstr "{{current}}/{{total}}"
 
 #. # Social networks
 #: social-network
@@ -466,11 +547,11 @@ msgstr "解除連結聯絡人"
 
 #: social-unlink-confirm-title
 msgid "Do you want to unlink your friend?"
-msgstr ""
+msgstr "您是否想要取消您朋友的連結？"
 
 #: social-unlink-confirm-accept
 msgid "Unlink"
-msgstr ""
+msgstr "解除連結"
 
 #: facebook-import
 msgid "Import Facebook friends"
@@ -478,7 +559,7 @@ msgstr "匯入 Facebook 上的朋友"
 
 #: show-fb-profile
 msgid "View Facebook profile"
-msgstr ""
+msgstr "檢視 Facebook 個人資訊"
 
 #: msg-send
 msgid "Message"
@@ -494,43 +575,43 @@ msgstr "Facebook"
 
 #: facebook-import-msg
 msgid "{[ plural(imported) ]}"
-msgstr ""
+msgstr "{[ plural(imported) ]}"
 
 #: facebook-import-msg[zero]
 msgid "No friends imported (out of {{total}})"
-msgstr ""
+msgstr "未匯入朋友 (全部有 {{total}} 位)"
 
 #: facebook-import-msg[one]
 msgid "One friend imported (out of {{total}})"
-msgstr ""
+msgstr "已匯入一位朋友 (全部有 {{total}} 位)"
 
 #: facebook-import-msg[two]
 msgctxt "facebook-import-msg[two]"
 msgid "{{imported}}/{{total}} friends imported"
-msgstr ""
+msgstr "已匯入 {{imported}}/{{total}} 位朋友"
 
 #: facebook-import-msg[few]
 msgctxt "facebook-import-msg[few]"
 msgid "{{imported}}/{{total}} friends imported"
-msgstr ""
+msgstr "已匯入 {{imported}}/{{total}} 位朋友"
 
 #: facebook-import-msg[many]
 msgctxt "facebook-import-msg[many]"
 msgid "{{imported}}/{{total}} friends imported"
-msgstr ""
+msgstr "已匯入 {{imported}}/{{total}} 位朋友"
 
 #: facebook-import-msg[other]
 msgctxt "facebook-import-msg[other]"
 msgid "{{imported}}/{{total}} friends imported"
-msgstr ""
+msgstr "已匯入 {{imported}}/{{total}} 位朋友"
 
 #: otherAccount
 msgid "Other accounts"
-msgstr ""
+msgstr "其他帳號"
 
 #: facebookSwitchMsg
 msgid "Sync friends"
-msgstr ""
+msgstr "同步朋友"
 
 #. # value selector
 #: select_mobile
@@ -547,25 +628,30 @@ msgid "Order by last name"
 msgstr "依照姓氏排序"
 
 #: importSim2
+msgctxt "importSim2"
 msgid "SIM card"
-msgstr ""
+msgstr "SIM 卡"
 
-#: importSd
-msgid "SD card"
-msgstr ""
+#: importMemoryCard
+msgctxt "importMemoryCard"
+msgid "Memory card"
+msgstr "記憶卡"
 
 #: importGmail
-#, fuzzy
 msgid "Gmail"
-msgstr "電子郵件"
+msgstr "Gmail"
+
+#: bluetooth
+msgid "Bluetooth"
+msgstr "藍牙"
 
 #: importOutlook
 msgid "Outlook"
-msgstr ""
+msgstr "Outlook"
 
 #: fbUpdateFriends
 msgid "Update imported friends"
-msgstr ""
+msgstr "更新匯入的朋友"
 
 #: cleaningFbData
 msgid "Removing Facebook data"
@@ -581,38 +667,76 @@ msgstr "移除所有 Facebook 資料？"
 
 #: renewPwdMsg
 msgid "Your password in Facebook has changed. Please, update it."
-msgstr ""
+msgstr "您的 Facebook 密碼已更動。請更新。"
 
 #: noConnection11
 msgid "To import Facebook friends or contacts connect to Wi-Fi or data network"
-msgstr ""
+msgstr "請先連線到 Wi-Fi 或數據網路以匯入 Facebook 朋友或聯絡人"
 
 #: notEnabledYet
 msgid "Not enabled yet"
-msgstr ""
+msgstr "未啟用"
+
+#: genericNoConnection
+msgid "To import contacts connect to Wi-Fi or data network"
+msgstr "請連線至 Wi-Fi 或數據網路以匯入聯絡人"
+
+#. # Used for export, just in case the strings will diverge on time
+#: simCard
+msgctxt "simCard"
+msgid "SIM card"
+msgstr "SIM 卡"
+
+#: memoryCard
+msgctxt "memoryCard"
+msgid "Memory card"
+msgstr "記憶卡"
 
 #. # No contacts
 #: create-new
 msgid "Create a new contact"
-msgstr "建立新連絡人"
+msgstr "建立新聯絡人"
 
 #: import-now
 msgid "Import your contacts from SIM card or Facebook"
-msgstr "自您的 SIM 卡或 Facebook 帳號匯入連絡人"
+msgstr "自您的 SIM 卡或 Facebook 帳號匯入聯絡人"
 
 #: no-contacts
 msgid "No contacts"
-msgstr "無連絡人"
+msgstr "無聯絡人"
 
 #: start-adding
 msgid "Start adding them now"
-msgstr "開始新增連絡人吧"
+msgstr "開始新增聯絡人吧"
 
-#~ msgid "Import from SIM"
-#~ msgstr "自 SIM 卡匯入"
+#: notImported
+msgid "Not imported"
+msgstr "未匯入"
 
-#~ msgid "Storing SIM contacts…"
-#~ msgstr "正在儲存 SIM 卡聯絡人…"
+#: imported
+msgid "Imported"
+msgstr "已匯入"
 
-#~ msgid "Import from Facebook"
-#~ msgstr "自 Facebook 匯入"
+#: today
+msgid "Today"
+msgstr "今天"
+
+#: yesterday
+msgid "Yesterday"
+msgstr "昨天"
+
+#: messageCanceling
+msgid "Please hold on. We are canceling the ongoing operation."
+msgstr "請稍候，我們正在取消目前的操作。"
+
+#: organise-contacts
+msgid "Organize Contacts"
+msgstr "管理聯絡人"
+
+#: find-merge-contacts
+msgid "Find duplicate contacts"
+msgstr "搜尋重複的聯絡人"
+
+#: preparing-contacts
+msgid "Preparing contacts"
+msgstr "正在整理聯絡人"
