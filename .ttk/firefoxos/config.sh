@@ -1,7 +1,7 @@
 project=firefoxos
 instance=mozilla
 user=pootlesync
-server=pootle.locamotion.org
+server=mozilla.locamotion.org
 local_copy=$base_dir/.pootle_tmp
 manage_command="/var/www/sites/$instance/src/manage.py"
 manage_py_verbosity=2
