@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-15 22:11+0100\n"
+"POT-Creation-Date: 2013-12-06 22:42+0100\n"
 "PO-Revision-Date: 2013-10-22 00:10+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Translate Toolkit 1.10.0\n"
+"X-Generator: Translate Toolkit 1.11.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -25,9 +25,9 @@ msgstr ""
 msgid "Messages"
 msgstr "Teachdaireachdan"
 
-#: editMode
-msgid "Edit messages"
-msgstr "Deasaich na teachdaireachdan"
+#: deleteMessages-title
+msgid "Delete messages"
+msgstr ""
 
 #. # Contact title
 #: thread-header-text
@@ -135,6 +135,15 @@ msgstr "Thagh thu {{n}}"
 msgctxt "selected[other]"
 msgid "{{n}} selected"
 msgstr "Thagh thu {{n}}"
+
+#. # Options menu
+#: deleteMessages-label
+msgid "Delete Messages"
+msgstr ""
+
+#: settings
+msgid "Settings"
+msgstr ""
 
 #. # New Message
 #: to
@@ -335,32 +344,31 @@ msgctxt "sendGeneralErrorBtnOk"
 msgid "OK"
 msgstr "Ceart ma-thà"
 
-#: sendNoSimCardTitle
-msgid "Sim card error"
-msgstr "Mearachd na cairt SIM"
-
-#: sendNoSimCardBody
-msgid "No SIM card."
-msgstr "Chan eil cairt SIM ann."
-
-#: sendNoSimCardBtnOk
-msgctxt "sendNoSimCardBtnOk"
-msgid "OK"
-msgstr "Ceart ma-thà"
-
-#: sendAirplaneModeTitle
-msgid "Airplane mode activated"
-msgstr "Tha am modh itealain air"
-
-#: sendAirplaneModeBody
-msgid "To send a message, first disable airplane mode."
+#: sendMissingSimCardTitle
+msgid "Missing SIM card"
 msgstr ""
-"Feumaidh tu am modh itealain a chur à comas mus cuir thu teachdaireachd."
 
-#: sendAirplaneModeBtnOk
-msgctxt "sendAirplaneModeBtnOk"
+#: sendMissingSimCardBody
+msgid "Insert a valid SIM card to continue."
+msgstr ""
+
+#: sendMissingSimCardBtnOk
+msgctxt "sendMissingSimCardBtnOk"
 msgid "OK"
-msgstr "Ceart ma-thà"
+msgstr ""
+
+#: sendFlightModeTitle
+msgid "Airplane mode activated"
+msgstr ""
+
+#: sendFlightModeBody
+msgid "Turn off airplane mode to send messages."
+msgstr ""
+
+#: sendFlightModeBtnOk
+msgctxt "sendFlightModeBtnOk"
+msgid "OK"
+msgstr ""
 
 #: fdnBlockedTitle
 msgid "FDN active"
@@ -411,6 +419,64 @@ msgstr ""
 msgctxt "fdnBlockedBtnOk"
 msgid "OK"
 msgstr "Ceart ma-thà"
+
+#: nonActiveSimTitle
+msgid "Switch data connection"
+msgstr ""
+
+#: nonActiveSimBody
+msgid ""
+"Switch the data connection to {{ nonactive }} to retrieve the MMS. The "
+"current data transfer on {{ active }} will be suspended. Continue anyway?"
+msgstr ""
+
+#: nonActiveSimBtnOk
+msgid "Later"
+msgstr ""
+
+#: nonActiveSimConfirm
+msgctxt "nonActiveSimConfirm"
+msgid "OK"
+msgstr ""
+
+#: sendNoSignalErrorTitle
+msgid "No network coverage"
+msgstr ""
+
+#: sendNoSignalErrorBody
+msgid "Make sure you have a mobile signal and try again."
+msgstr ""
+
+#: sendNoSignalErrorBtnOk
+msgctxt "sendNoSignalErrorBtnOk"
+msgid "OK"
+msgstr ""
+
+#: sendNotFoundErrorTitle
+msgid "Message not found"
+msgstr ""
+
+#: sendNotFoundErrorBody
+msgid "The message you're looking for is no longer available."
+msgstr ""
+
+#: sendNotFoundErrorBtnOk
+msgctxt "sendNotFoundErrorBtnOk"
+msgid "OK"
+msgstr ""
+
+#: sendInvalidAddressErrorTitle
+msgid "Invalid number"
+msgstr ""
+
+#: sendInvalidAddressErrorBody
+msgid "Make sure the mobile number you're sending to is valid."
+msgstr ""
+
+#: sendInvalidAddressErrorBtnOk
+msgctxt "sendInvalidAddressErrorBtnOk"
+msgid "OK"
+msgstr ""
 
 #: deleted-sms
 msgid "This message has already been deleted."
@@ -614,6 +680,27 @@ msgstr "Ag atharrachadh meud an deilbh a cheangail thu ris"
 msgid "There is a problem with the attached file and it cannot be downloaded."
 msgstr ""
 "Tha duilgheadas leis an fhaidhle a tha ris agus cha ghabh a luchdadh a-nuas."
+
+#~ msgid "Edit messages"
+#~ msgstr "Deasaich na teachdaireachdan"
+
+#~ msgid "Sim card error"
+#~ msgstr "Mearachd na cairt SIM"
+
+#~ msgid "No SIM card."
+#~ msgstr "Chan eil cairt SIM ann."
+
+#~ msgctxt "sendNoSimCardBtnOk"
+#~ msgid "OK"
+#~ msgstr "Ceart ma-thà"
+
+#~ msgid "To send a message, first disable airplane mode."
+#~ msgstr ""
+#~ "Feumaidh tu am modh itealain a chur à comas mus cuir thu teachdaireachd."
+
+#~ msgctxt "sendAirplaneModeBtnOk"
+#~ msgid "OK"
+#~ msgstr "Ceart ma-thà"
 
 #~ msgid "Remove {{type}}"
 #~ msgstr "Thoir air falbh e ({{type}})"

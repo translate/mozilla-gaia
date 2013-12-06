@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-15 22:32+0100\n"
+"POT-Creation-Date: 2013-12-06 22:42+0100\n"
 "PO-Revision-Date: 2013-12-04 10:25+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.11.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1386152737.000000\n"
@@ -53,6 +53,10 @@ msgstr "Iawn"
 #: no
 msgid "No"
 msgstr "Na"
+
+#: reset
+msgid "Reset"
+msgstr ""
 
 #: cancel
 msgid "Cancel"
@@ -191,6 +195,14 @@ msgstr "All-lein"
 msgid "Manage networks"
 msgstr "Rheoli rhwydweithiau"
 
+#: manageCertificates
+msgid "Manage certificates"
+msgstr ""
+
+#: manageCert
+msgid "Manage Cert."
+msgstr ""
+
 #: joinHiddenNetwork
 msgid "Join hidden network"
 msgstr "Ymuno â rhwydwaith gudd"
@@ -253,9 +265,14 @@ msgstr "Da iawn"
 msgid "Forget"
 msgstr "Anghofio"
 
-#: forgetNetwork
-msgid "Forget network"
-msgstr "Anghofio'r rhwydwaith"
+#: forgetNetwork-dialog
+msgid "Forget network?"
+msgstr ""
+
+#: forgetNetwork-confirmation
+msgctxt "forgetNetwork-confirmation"
+msgid "Confirmation"
+msgstr ""
 
 #: authentication
 msgctxt "authentication"
@@ -265,6 +282,20 @@ msgstr "Dilysu"
 #: eap
 msgid "EAP method"
 msgstr "Dull EAP"
+
+#: auth-phase2
+msgid "Phase 2 authentication"
+msgstr ""
+
+#: server-certificate
+msgid "Server certificate"
+msgstr ""
+
+#: import-certificate-msg
+msgid ""
+"Notice: If you need to import new certificates, please go to “Manage "
+"certificates\"."
+msgstr ""
 
 #: identity
 msgid "Identifier"
@@ -303,6 +334,58 @@ msgstr "Heb ganfod rhwydwaith"
 #: noKnownNetworks
 msgid "No known networks"
 msgstr "Dim rhwydweithiau hysbys"
+
+#: edit
+msgid "Edit"
+msgstr ""
+
+#: certificateList
+msgid "Certificate list"
+msgstr ""
+
+#: noCertificate
+msgid "No imported certificate"
+msgstr ""
+
+#: deleteCertificate
+msgid "Delete certificate"
+msgstr ""
+
+#: importCertificate
+msgid "Import certificate"
+msgstr ""
+
+#: selectCertificateFile
+msgid "Select certificate file"
+msgstr ""
+
+#: enterCertificateNickname
+msgid "Enter certificate nick name"
+msgstr ""
+
+#: nickname
+msgid "Nick name"
+msgstr ""
+
+#: enter-certificate-name-msg
+msgid "You can change the nick name or keep the default name."
+msgstr ""
+
+#: certificate-deletion-failed
+msgid "Certificate deletion failed"
+msgstr ""
+
+#: certificate-deletion-failed-description
+msgid "This may be due to a storage issue, for example."
+msgstr ""
+
+#: certificate-import-failed
+msgid "Certificate import failed"
+msgstr ""
+
+#: certificate-import-failed-description
+msgid "This may be due to a damaged certificate file, for example."
+msgstr ""
 
 #. # Connectivity :: Wi-Fi :: WPS (Wi-Fi Protected Setup)
 #: wpsMessage
@@ -719,6 +802,8 @@ msgid "Carrier"
 msgstr "Darparwr"
 
 #: dataConnectivity
+#, fuzzy
+msgctxt "dataConnectivity"
 msgid "Data"
 msgstr "Data"
 
@@ -1073,6 +1158,8 @@ msgid "Confirm"
 msgstr "Cadarnhau"
 
 #: device-option-unpair-confirmation
+#, fuzzy
+msgctxt "device-option-unpair-confirmation"
 msgid "Confirmation"
 msgstr "Cadarnhad"
 
@@ -1201,6 +1288,11 @@ msgstr ""
 #: pair-view-title
 msgid "Bluetooth Request From"
 msgstr "Cais bluetooth gan"
+
+#. # Connectivity :: NFC
+#: nfc
+msgid "NFC"
+msgstr ""
 
 #. # Connectivity :: Internet Sharing
 #: SSIDCannotBeEmpty
@@ -1499,6 +1591,59 @@ msgstr "Fformat Sampl"
 msgid "%A, %B %d, %Y"
 msgstr "%A, %B %d, %Y"
 
+#. # Personalization :: Sim cards manager
+#: simManager
+msgid "SIM manager"
+msgstr ""
+
+#: sim-manager-outgoing-call
+msgid "Outgoing call"
+msgstr ""
+
+#: sim-manager-outgoing-call-desc
+msgid "Calls will be sent from"
+msgstr ""
+
+#: sim-manager-outgoing-messages
+msgid "Outgoing messages"
+msgstr ""
+
+#: sim-manager-outgoing-messages-desc
+msgid "SMS will be sent from"
+msgstr ""
+
+#: sim-manager-outgoing-data
+msgctxt "sim-manager-outgoing-data"
+msgid "Data"
+msgstr ""
+
+#: sim-manager-outgoing-data-desc
+msgid "Internet connection, MMS and A-GPS"
+msgstr ""
+
+#: sim-pin-locked
+msgid "SIM PIN locked"
+msgstr ""
+
+#: no-operator
+msgid "No operator"
+msgstr ""
+
+#: cant-disable-simcard-alert
+msgid "At least one SIM should be activated at a time"
+msgstr ""
+
+#: disable-simcard-confirm
+msgid ""
+"SIM {{disableCardIndex}} can't receive any calls and messages. Outgoing "
+"calls and outgoing messages which are set to SIM {{disableCardIndex}} will "
+"be disabled."
+msgstr ""
+
+#: change-outgoing-data-confirm
+msgid "The current data transfer will be suspended. Continue anyway?"
+msgstr ""
+
 #. # Personalization :: Homescreen
 #: homescreen
 msgid "Homescreen"
@@ -1525,10 +1670,6 @@ msgstr "Dulliau mewnbynnu sydd wedi'u gosod"
 #: keyboards
 msgid "Keyboards"
 msgstr "Bysellfyrddau"
-
-#: keyboardLayouts
-msgid "Keyboard layouts"
-msgstr "Cynllun bysellfwrdd"
 
 #: numberKeyboardLayouts
 msgid "Number layouts"
@@ -2339,6 +2480,10 @@ msgstr "ICCID"
 msgid "Phone number"
 msgstr "Rhif ffôn"
 
+#: downloads
+msgid "Downloads"
+msgstr ""
+
 #: unknown-phoneNumber
 msgid "Unknown"
 msgstr ""
@@ -2366,6 +2511,10 @@ msgstr "Dadfygio"
 #: grid
 msgid "Grid"
 msgstr "Grid"
+
+#: developer-menu
+msgid "Developer Menu"
+msgstr ""
 
 #: fps-monitor
 msgid "Show frames per second"
@@ -2517,21 +2666,16 @@ msgstr "Dysgu Rhagor"
 msgid "Reset Phone"
 msgstr "Ailosod y Ffôn"
 
-#: reset-warning-1
-msgid ""
-"CAUTION: Resetting will erase all your data, including any apps you’ve "
-"purchased."
+#: reset-warning-title
+msgid "CAUTION"
 msgstr ""
-"RHYBUDD: Bydd ailosod yn dileu eich holl ddata, gan gynnwys unrhyw apiau "
-"rydych wedi eu prynu."
 
-#: reset-warning-2
+#: reset-warning-body
 msgid ""
-"The phone will be restored to its factory condition. None of your settings "
-"or data will be saved."
+"Resetting will erase all your data, including any apps you’ve purchased. The "
+"phone will be restored to its factory condition. None of your settings or "
+"data will be saved."
 msgstr ""
-"Bydd y ffôn yn cael ei adfer i'w gyflwr ffatri. Ni bydd dim o'ch gosodiadau "
-"na'ch data'n cael ei gadw."
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
 #: your-rights
@@ -3042,6 +3186,26 @@ msgstr "Anfon Data"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Estyn Statws Sianel"
+
+#~ msgid "Forget network"
+#~ msgstr "Anghofio'r rhwydwaith"
+
+#~ msgid "Keyboard layouts"
+#~ msgstr "Cynllun bysellfwrdd"
+
+#~ msgid ""
+#~ "CAUTION: Resetting will erase all your data, including any apps you’ve "
+#~ "purchased."
+#~ msgstr ""
+#~ "RHYBUDD: Bydd ailosod yn dileu eich holl ddata, gan gynnwys unrhyw apiau "
+#~ "rydych wedi eu prynu."
+
+#~ msgid ""
+#~ "The phone will be restored to its factory condition. None of your "
+#~ "settings or data will be saved."
+#~ msgstr ""
+#~ "Bydd y ffôn yn cael ei adfer i'w gyflwr ffatri. Ni bydd dim o'ch "
+#~ "gosodiadau na'ch data'n cael ei gadw."
 
 #~ msgid "Cell broadcast service"
 #~ msgstr "Gwasanaeth darlledu cell"

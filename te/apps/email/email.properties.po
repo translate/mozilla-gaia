@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-15 22:11+0100\n"
+"POT-Creation-Date: 2013-12-06 22:42+0100\n"
 "PO-Revision-Date: 2013-07-02 08:49+0000\n"
 "Last-Translator: Veeven <veeven@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.10.0\n"
+"X-Generator: Translate Toolkit 1.11.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1372754941.000000\n"
@@ -119,6 +119,13 @@ msgstr "వాడుకరిపేరు లేదా సంకేతపదం 
 msgid "The server said you're not authorized to create an account"
 msgstr "ఖాతా సృష్టించుకోవడానికి మీరు ధృవీకృత వ్యక్తి కాదని సేవకము అంటున్నది"
 
+#. # The error for when the server is not good enough to be supported
+#. # because it is missing the required features.
+#: setup-error-pop-server-not-great
+msgid ""
+"Server unsupported. The POP3 server does not implement required features."
+msgstr ""
+
 #. # The fallback error; if we don't have a better error, we report this.
 #: setup-error-unknown2
 msgid ""
@@ -143,6 +150,14 @@ msgstr ""
 #, fuzzy
 msgid "You must enable IMAP for your Gmail account"
 msgstr "మీరు మీ జీమెయిల్ ఖాతాలోని ఐమ్యాప్ చేతనించి వుండాలి"
+
+#. # The error for Gmail accounts where POP3 is not enabled.  This can occur
+#. # for individual users where they have disabled POP3 from the settings UI.
+#. # This can also occur for apps-for-domains where the domain is not configured
+#. # to support POP3.
+#: setup-error-pop3-disabled
+msgid "You must enable POP3 for your Gmail account"
+msgstr ""
 
 #. # The error for when we are able to contact a server that should be the mail
 #. # server but we are unable to establish a secure connection.
@@ -296,6 +311,19 @@ msgstr "మీరు మీ జీమెయిల్ ఖాతాలోని �
 msgctxt "setup-gmail-imap-retry"
 msgid "Retry"
 msgstr "పునఃప్రయత్నించండి"
+
+#: setup-gmail-pop3-header
+msgid "POP3 Disabled"
+msgstr ""
+
+#: setup-gmail-pop3-message
+msgid "You must enable POP3 on your Gmail account"
+msgstr ""
+
+#: setup-gmail-pop3-retry
+msgctxt "setup-gmail-pop3-retry"
+msgid "Retry"
+msgstr ""
 
 #: settings-main-header
 #, fuzzy
@@ -512,6 +540,10 @@ msgstr "యాక్టివ్ సింక్ అమరికలు"
 msgctxt "settings-imap-label"
 msgid "IMAP settings"
 msgstr "ఐమ్యాప్ అమరికలు"
+
+#: settings-pop3-label
+msgid "POP3 settings"
+msgstr ""
 
 #: settings-smtp-label
 #, fuzzy
@@ -870,6 +902,19 @@ msgstr ""
 #: message-multiedit-delete-confirm[other]
 msgctxt "message-multiedit-delete-confirm[other]"
 msgid "Delete {{ n }} email messages?"
+msgstr ""
+
+#: message-large-message-cancel
+msgctxt "message-large-message-cancel"
+msgid "Cancel"
+msgstr ""
+
+#: message-large-message-ok
+msgid "Continue"
+msgstr ""
+
+#: message-large-message-confirm
+msgid "This message is large and may take some time to download."
 msgstr ""
 
 #: message-search-from

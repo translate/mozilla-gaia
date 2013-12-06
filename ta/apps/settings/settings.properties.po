@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-15 22:32+0100\n"
+"POT-Creation-Date: 2013-12-06 22:42+0100\n"
 "PO-Revision-Date: 2013-09-16 19:53+0000\n"
 "Last-Translator: thangamani-arun <thangam.arunx@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.10.0\n"
+"X-Generator: Translate Toolkit 1.11.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1379361196.000000\n"
@@ -53,6 +53,10 @@ msgstr "ஆம்"
 #: no
 msgid "No"
 msgstr "இல்லை"
+
+#: reset
+msgid "Reset"
+msgstr ""
 
 #: cancel
 msgid "Cancel"
@@ -191,6 +195,14 @@ msgstr "இணையமற்று"
 msgid "Manage networks"
 msgstr "பிணையங்களை நிர்வகி"
 
+#: manageCertificates
+msgid "Manage certificates"
+msgstr ""
+
+#: manageCert
+msgid "Manage Cert."
+msgstr ""
+
 #: joinHiddenNetwork
 msgid "Join hidden network"
 msgstr "மறைந்த பிணையத்துடன் இணை"
@@ -253,9 +265,14 @@ msgstr "மிகவும் நன்று"
 msgid "Forget"
 msgstr "மற"
 
-#: forgetNetwork
-msgid "Forget network"
-msgstr "பிணையத்தை மற"
+#: forgetNetwork-dialog
+msgid "Forget network?"
+msgstr ""
+
+#: forgetNetwork-confirmation
+msgctxt "forgetNetwork-confirmation"
+msgid "Confirmation"
+msgstr ""
 
 #: authentication
 msgctxt "authentication"
@@ -264,6 +281,20 @@ msgstr "அங்கீகாரம்"
 
 #: eap
 msgid "EAP method"
+msgstr ""
+
+#: auth-phase2
+msgid "Phase 2 authentication"
+msgstr ""
+
+#: server-certificate
+msgid "Server certificate"
+msgstr ""
+
+#: import-certificate-msg
+msgid ""
+"Notice: If you need to import new certificates, please go to “Manage "
+"certificates\"."
 msgstr ""
 
 #: identity
@@ -303,6 +334,58 @@ msgstr "பிணையங்கள் எதுவும் காணப்ப�
 #: noKnownNetworks
 msgid "No known networks"
 msgstr "தெறிந்த பிணையங்கள் எதுவும் இல்லை"
+
+#: edit
+msgid "Edit"
+msgstr ""
+
+#: certificateList
+msgid "Certificate list"
+msgstr ""
+
+#: noCertificate
+msgid "No imported certificate"
+msgstr ""
+
+#: deleteCertificate
+msgid "Delete certificate"
+msgstr ""
+
+#: importCertificate
+msgid "Import certificate"
+msgstr ""
+
+#: selectCertificateFile
+msgid "Select certificate file"
+msgstr ""
+
+#: enterCertificateNickname
+msgid "Enter certificate nick name"
+msgstr ""
+
+#: nickname
+msgid "Nick name"
+msgstr ""
+
+#: enter-certificate-name-msg
+msgid "You can change the nick name or keep the default name."
+msgstr ""
+
+#: certificate-deletion-failed
+msgid "Certificate deletion failed"
+msgstr ""
+
+#: certificate-deletion-failed-description
+msgid "This may be due to a storage issue, for example."
+msgstr ""
+
+#: certificate-import-failed
+msgid "Certificate import failed"
+msgstr ""
+
+#: certificate-import-failed-description
+msgid "This may be due to a damaged certificate file, for example."
+msgstr ""
 
 #. # Connectivity :: Wi-Fi :: WPS (Wi-Fi Protected Setup)
 #: wpsMessage
@@ -727,6 +810,8 @@ msgid "Carrier"
 msgstr "கேரியர்"
 
 #: dataConnectivity
+#, fuzzy
+msgctxt "dataConnectivity"
 msgid "Data"
 msgstr "தரவு"
 
@@ -1079,6 +1164,7 @@ msgid "Confirm"
 msgstr ""
 
 #: device-option-unpair-confirmation
+msgctxt "device-option-unpair-confirmation"
 msgid "Confirmation"
 msgstr ""
 
@@ -1208,6 +1294,11 @@ msgstr ""
 
 #: pair-view-title
 msgid "Bluetooth Request From"
+msgstr ""
+
+#. # Connectivity :: NFC
+#: nfc
+msgid "NFC"
 msgstr ""
 
 #. # Connectivity :: Internet Sharing
@@ -1507,6 +1598,59 @@ msgstr "மாதிரி வடிவமைப்பு"
 msgid "%A, %B %d, %Y"
 msgstr "%A, %B %d, %Y"
 
+#. # Personalization :: Sim cards manager
+#: simManager
+msgid "SIM manager"
+msgstr ""
+
+#: sim-manager-outgoing-call
+msgid "Outgoing call"
+msgstr ""
+
+#: sim-manager-outgoing-call-desc
+msgid "Calls will be sent from"
+msgstr ""
+
+#: sim-manager-outgoing-messages
+msgid "Outgoing messages"
+msgstr ""
+
+#: sim-manager-outgoing-messages-desc
+msgid "SMS will be sent from"
+msgstr ""
+
+#: sim-manager-outgoing-data
+msgctxt "sim-manager-outgoing-data"
+msgid "Data"
+msgstr ""
+
+#: sim-manager-outgoing-data-desc
+msgid "Internet connection, MMS and A-GPS"
+msgstr ""
+
+#: sim-pin-locked
+msgid "SIM PIN locked"
+msgstr ""
+
+#: no-operator
+msgid "No operator"
+msgstr ""
+
+#: cant-disable-simcard-alert
+msgid "At least one SIM should be activated at a time"
+msgstr ""
+
+#: disable-simcard-confirm
+msgid ""
+"SIM {{disableCardIndex}} can't receive any calls and messages. Outgoing "
+"calls and outgoing messages which are set to SIM {{disableCardIndex}} will "
+"be disabled."
+msgstr ""
+
+#: change-outgoing-data-confirm
+msgid "The current data transfer will be suspended. Continue anyway?"
+msgstr ""
+
 #. # Personalization :: Homescreen
 #: homescreen
 msgid "Homescreen"
@@ -1535,10 +1679,6 @@ msgstr ""
 #, fuzzy
 msgid "Keyboards"
 msgstr "விசைப்பலகை"
-
-#: keyboardLayouts
-msgid "Keyboard layouts"
-msgstr "விசைப்பலகை அமைப்புகள்"
 
 #: numberKeyboardLayouts
 msgid "Number layouts"
@@ -2361,6 +2501,10 @@ msgstr "ஐசிசிஐடி"
 msgid "Phone number"
 msgstr "தொலைபேசி எண்"
 
+#: downloads
+msgid "Downloads"
+msgstr ""
+
 #: unknown-phoneNumber
 msgid "Unknown"
 msgstr ""
@@ -2388,6 +2532,10 @@ msgstr "வழு நீக்கம்"
 #: grid
 msgid "Grid"
 msgstr "பின்னல்"
+
+#: developer-menu
+msgid "Developer Menu"
+msgstr ""
 
 #: fps-monitor
 msgid "Show frames per second"
@@ -2539,20 +2687,16 @@ msgstr "மேலும் அறிய"
 msgid "Reset Phone"
 msgstr "செல்பேசியை மீளமை"
 
-#: reset-warning-1
-msgid ""
-"CAUTION: Resetting will erase all your data, including any apps you’ve "
-"purchased."
+#: reset-warning-title
+msgid "CAUTION"
 msgstr ""
-"அபாயம்: மீளமைவு அனைத்து தரவுகளையும் அழித்துவிடும், நீங்கள் வாங்கிய பயன்பாடுகள் உட்பட."
 
-#: reset-warning-2
+#: reset-warning-body
 msgid ""
-"The phone will be restored to its factory condition. None of your settings "
-"or data will be saved."
+"Resetting will erase all your data, including any apps you’ve purchased. The "
+"phone will be restored to its factory condition. None of your settings or "
+"data will be saved."
 msgstr ""
-"சேல்பேசியானது அதனுடைய தொடக்க நிலைக்கு மீட்டமைக்கப்பட்டுவிடும். உங்களுடைய எந்த "
-"அமைவுகளும் அல்லது தரவும் சேமிக்கப்படாது."
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
 #: your-rights
@@ -3050,6 +3194,25 @@ msgstr "தரவை அனுப்பு"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "அலைவரிசை நிலையை வாங்கு"
+
+#~ msgid "Forget network"
+#~ msgstr "பிணையத்தை மற"
+
+#~ msgid "Keyboard layouts"
+#~ msgstr "விசைப்பலகை அமைப்புகள்"
+
+#~ msgid ""
+#~ "CAUTION: Resetting will erase all your data, including any apps you’ve "
+#~ "purchased."
+#~ msgstr ""
+#~ "அபாயம்: மீளமைவு அனைத்து தரவுகளையும் அழித்துவிடும், நீங்கள் வாங்கிய பயன்பாடுகள் உட்பட."
+
+#~ msgid ""
+#~ "The phone will be restored to its factory condition. None of your "
+#~ "settings or data will be saved."
+#~ msgstr ""
+#~ "சேல்பேசியானது அதனுடைய தொடக்க நிலைக்கு மீட்டமைக்கப்பட்டுவிடும். உங்களுடைய எந்த "
+#~ "அமைவுகளும் அல்லது தரவும் சேமிக்கப்படாது."
 
 #~ msgid "Cell broadcast service"
 #~ msgstr "செல்பேசி ஒலிபரப்பு சேவை"

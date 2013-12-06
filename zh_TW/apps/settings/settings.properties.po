@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-15 22:32+0100\n"
+"POT-Creation-Date: 2013-12-06 22:42+0100\n"
 "PO-Revision-Date: 2013-03-17 10:33+0000\n"
 "Last-Translator: dwj437220696 <dwj437220696@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.10.0\n"
+"X-Generator: Translate Toolkit 1.11.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1363516417.000000\n"
@@ -54,6 +54,10 @@ msgstr "開"
 #: no
 msgid "No"
 msgstr "關"
+
+#: reset
+msgid "Reset"
+msgstr ""
 
 #: cancel
 msgid "Cancel"
@@ -193,6 +197,14 @@ msgstr "離線。"
 msgid "Manage networks"
 msgstr "管理網路"
 
+#: manageCertificates
+msgid "Manage certificates"
+msgstr ""
+
+#: manageCert
+msgid "Manage Cert."
+msgstr ""
+
 #: joinHiddenNetwork
 msgid "Join hidden network"
 msgstr "加入隱藏網路"
@@ -256,9 +268,14 @@ msgstr "非常好"
 msgid "Forget"
 msgstr "忘記"
 
-#: forgetNetwork
-msgid "Forget network"
-msgstr "忘記此網路"
+#: forgetNetwork-dialog
+msgid "Forget network?"
+msgstr ""
+
+#: forgetNetwork-confirmation
+msgctxt "forgetNetwork-confirmation"
+msgid "Confirmation"
+msgstr ""
 
 #: authentication
 #, fuzzy
@@ -268,6 +285,20 @@ msgstr "認證"
 
 #: eap
 msgid "EAP method"
+msgstr ""
+
+#: auth-phase2
+msgid "Phase 2 authentication"
+msgstr ""
+
+#: server-certificate
+msgid "Server certificate"
+msgstr ""
+
+#: import-certificate-msg
+msgid ""
+"Notice: If you need to import new certificates, please go to “Manage "
+"certificates\"."
 msgstr ""
 
 #: identity
@@ -309,6 +340,58 @@ msgstr ""
 #, fuzzy
 msgid "No known networks"
 msgstr "已知網路"
+
+#: edit
+msgid "Edit"
+msgstr ""
+
+#: certificateList
+msgid "Certificate list"
+msgstr ""
+
+#: noCertificate
+msgid "No imported certificate"
+msgstr ""
+
+#: deleteCertificate
+msgid "Delete certificate"
+msgstr ""
+
+#: importCertificate
+msgid "Import certificate"
+msgstr ""
+
+#: selectCertificateFile
+msgid "Select certificate file"
+msgstr ""
+
+#: enterCertificateNickname
+msgid "Enter certificate nick name"
+msgstr ""
+
+#: nickname
+msgid "Nick name"
+msgstr ""
+
+#: enter-certificate-name-msg
+msgid "You can change the nick name or keep the default name."
+msgstr ""
+
+#: certificate-deletion-failed
+msgid "Certificate deletion failed"
+msgstr ""
+
+#: certificate-deletion-failed-description
+msgid "This may be due to a storage issue, for example."
+msgstr ""
+
+#: certificate-import-failed
+msgid "Certificate import failed"
+msgstr ""
+
+#: certificate-import-failed-description
+msgid "This may be due to a damaged certificate file, for example."
+msgstr ""
 
 #. # Connectivity :: Wi-Fi :: WPS (Wi-Fi Protected Setup)
 #: wpsMessage
@@ -723,6 +806,8 @@ msgid "Carrier"
 msgstr "營運商"
 
 #: dataConnectivity
+#, fuzzy
+msgctxt "dataConnectivity"
 msgid "Data"
 msgstr "數據"
 
@@ -1078,6 +1163,7 @@ msgid "Confirm"
 msgstr ""
 
 #: device-option-unpair-confirmation
+msgctxt "device-option-unpair-confirmation"
 msgid "Confirmation"
 msgstr ""
 
@@ -1199,6 +1285,11 @@ msgstr "您目前已連接到此裝置。取消配對的同時也將會取消連
 
 #: pair-view-title
 msgid "Bluetooth Request From"
+msgstr ""
+
+#. # Connectivity :: NFC
+#: nfc
+msgid "NFC"
 msgstr ""
 
 #. # Connectivity :: Internet Sharing
@@ -1496,6 +1587,59 @@ msgstr ""
 msgid "%A, %B %d, %Y"
 msgstr "%Y年%B%d日 %A"
 
+#. # Personalization :: Sim cards manager
+#: simManager
+msgid "SIM manager"
+msgstr ""
+
+#: sim-manager-outgoing-call
+msgid "Outgoing call"
+msgstr ""
+
+#: sim-manager-outgoing-call-desc
+msgid "Calls will be sent from"
+msgstr ""
+
+#: sim-manager-outgoing-messages
+msgid "Outgoing messages"
+msgstr ""
+
+#: sim-manager-outgoing-messages-desc
+msgid "SMS will be sent from"
+msgstr ""
+
+#: sim-manager-outgoing-data
+msgctxt "sim-manager-outgoing-data"
+msgid "Data"
+msgstr ""
+
+#: sim-manager-outgoing-data-desc
+msgid "Internet connection, MMS and A-GPS"
+msgstr ""
+
+#: sim-pin-locked
+msgid "SIM PIN locked"
+msgstr ""
+
+#: no-operator
+msgid "No operator"
+msgstr ""
+
+#: cant-disable-simcard-alert
+msgid "At least one SIM should be activated at a time"
+msgstr ""
+
+#: disable-simcard-confirm
+msgid ""
+"SIM {{disableCardIndex}} can't receive any calls and messages. Outgoing "
+"calls and outgoing messages which are set to SIM {{disableCardIndex}} will "
+"be disabled."
+msgstr ""
+
+#: change-outgoing-data-confirm
+msgid "The current data transfer will be suspended. Continue anyway?"
+msgstr ""
+
 #. # Personalization :: Homescreen
 #: homescreen
 msgid "Homescreen"
@@ -1524,10 +1668,6 @@ msgstr ""
 #, fuzzy
 msgid "Keyboards"
 msgstr "鍵盤"
-
-#: keyboardLayouts
-msgid "Keyboard layouts"
-msgstr "鍵盤配置"
 
 #: numberKeyboardLayouts
 msgid "Number layouts"
@@ -2345,6 +2485,10 @@ msgstr ""
 msgid "Phone number"
 msgstr ""
 
+#: downloads
+msgid "Downloads"
+msgstr ""
+
 #: unknown-phoneNumber
 msgid "Unknown"
 msgstr ""
@@ -2373,6 +2517,10 @@ msgstr "除錯"
 #: grid
 msgid "Grid"
 msgstr "網格"
+
+#: developer-menu
+msgid "Developer Menu"
+msgstr ""
 
 #: fps-monitor
 msgid "Show frames per second"
@@ -2524,18 +2672,16 @@ msgstr "更多資訊"
 msgid "Reset Phone"
 msgstr "重設手機"
 
-#: reset-warning-1
-#, fuzzy
-msgid ""
-"CAUTION: Resetting will erase all your data, including any apps you’ve "
-"purchased."
-msgstr "警告: 重設手機將會清除您所有的資料，包含您購買過的所有程式。"
+#: reset-warning-title
+msgid "CAUTION"
+msgstr ""
 
-#: reset-warning-2
+#: reset-warning-body
 msgid ""
-"The phone will be restored to its factory condition. None of your settings "
-"or data will be saved."
-msgstr "手機將會回復到出廠狀態，您的設定與資料都不會被保留。"
+"Resetting will erase all your data, including any apps you’ve purchased. The "
+"phone will be restored to its factory condition. None of your settings or "
+"data will be saved."
+msgstr ""
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
 #: your-rights
@@ -3003,6 +3149,23 @@ msgstr ""
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr ""
+
+#~ msgid "Forget network"
+#~ msgstr "忘記此網路"
+
+#~ msgid "Keyboard layouts"
+#~ msgstr "鍵盤配置"
+
+#, fuzzy
+#~ msgid ""
+#~ "CAUTION: Resetting will erase all your data, including any apps you’ve "
+#~ "purchased."
+#~ msgstr "警告: 重設手機將會清除您所有的資料，包含您購買過的所有程式。"
+
+#~ msgid ""
+#~ "The phone will be restored to its factory condition. None of your "
+#~ "settings or data will be saved."
+#~ msgstr "手機將會回復到出廠狀態，您的設定與資料都不會被保留。"
 
 #~ msgid "Vibration"
 #~ msgstr "震動"

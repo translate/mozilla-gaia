@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-15 22:32+0100\n"
+"POT-Creation-Date: 2013-12-06 22:42+0100\n"
 "PO-Revision-Date: 2013-06-03 17:22+0000\n"
 "Last-Translator: amit  <amit103065@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.10.0\n"
+"X-Generator: Translate Toolkit 1.11.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1370280156.000000\n"
@@ -52,6 +52,10 @@ msgstr "हाँ"
 #: no
 msgid "No"
 msgstr "नहीं "
+
+#: reset
+msgid "Reset"
+msgstr ""
 
 #: cancel
 msgid "Cancel"
@@ -190,6 +194,14 @@ msgstr "ऑफ़लाइन"
 msgid "Manage networks"
 msgstr "नेटवर्क का प्रबंधन"
 
+#: manageCertificates
+msgid "Manage certificates"
+msgstr ""
+
+#: manageCert
+msgid "Manage Cert."
+msgstr ""
+
 #: joinHiddenNetwork
 msgid "Join hidden network"
 msgstr "छुपा हुआ संजाल में शामिल हो "
@@ -253,9 +265,14 @@ msgstr "बहुत अच्छा"
 msgid "Forget"
 msgstr "भूलें"
 
-#: forgetNetwork
-msgid "Forget network"
-msgstr "संजाल भूल गया (_F)"
+#: forgetNetwork-dialog
+msgid "Forget network?"
+msgstr ""
+
+#: forgetNetwork-confirmation
+msgctxt "forgetNetwork-confirmation"
+msgid "Confirmation"
+msgstr ""
 
 #: authentication
 #, fuzzy
@@ -265,6 +282,20 @@ msgstr "पहचानकर्ता"
 
 #: eap
 msgid "EAP method"
+msgstr ""
+
+#: auth-phase2
+msgid "Phase 2 authentication"
+msgstr ""
+
+#: server-certificate
+msgid "Server certificate"
+msgstr ""
+
+#: import-certificate-msg
+msgid ""
+"Notice: If you need to import new certificates, please go to “Manage "
+"certificates\"."
 msgstr ""
 
 #: identity
@@ -305,6 +336,58 @@ msgstr "कोई नेटवर्क  नहीं मिला"
 #: noKnownNetworks
 msgid "No known networks"
 msgstr "कोई ज्ञात संजाल नहीं मिला"
+
+#: edit
+msgid "Edit"
+msgstr ""
+
+#: certificateList
+msgid "Certificate list"
+msgstr ""
+
+#: noCertificate
+msgid "No imported certificate"
+msgstr ""
+
+#: deleteCertificate
+msgid "Delete certificate"
+msgstr ""
+
+#: importCertificate
+msgid "Import certificate"
+msgstr ""
+
+#: selectCertificateFile
+msgid "Select certificate file"
+msgstr ""
+
+#: enterCertificateNickname
+msgid "Enter certificate nick name"
+msgstr ""
+
+#: nickname
+msgid "Nick name"
+msgstr ""
+
+#: enter-certificate-name-msg
+msgid "You can change the nick name or keep the default name."
+msgstr ""
+
+#: certificate-deletion-failed
+msgid "Certificate deletion failed"
+msgstr ""
+
+#: certificate-deletion-failed-description
+msgid "This may be due to a storage issue, for example."
+msgstr ""
+
+#: certificate-import-failed
+msgid "Certificate import failed"
+msgstr ""
+
+#: certificate-import-failed-description
+msgid "This may be due to a damaged certificate file, for example."
+msgstr ""
 
 #. # Connectivity :: Wi-Fi :: WPS (Wi-Fi Protected Setup)
 #: wpsMessage
@@ -721,6 +804,8 @@ msgid "Carrier"
 msgstr "वाहक "
 
 #: dataConnectivity
+#, fuzzy
+msgctxt "dataConnectivity"
 msgid "Data"
 msgstr "डेटा"
 
@@ -1080,6 +1165,7 @@ msgid "Confirm"
 msgstr ""
 
 #: device-option-unpair-confirmation
+msgctxt "device-option-unpair-confirmation"
 msgid "Confirmation"
 msgstr ""
 
@@ -1206,6 +1292,11 @@ msgstr "आप वर्तमान में इस डिवाइस  से
 
 #: pair-view-title
 msgid "Bluetooth Request From"
+msgstr ""
+
+#. # Connectivity :: NFC
+#: nfc
+msgid "NFC"
 msgstr ""
 
 #. # Connectivity :: Internet Sharing
@@ -1503,6 +1594,59 @@ msgstr "नमूना प्रारूप"
 msgid "%A, %B %d, %Y"
 msgstr "%A, %B %d, %Y"
 
+#. # Personalization :: Sim cards manager
+#: simManager
+msgid "SIM manager"
+msgstr ""
+
+#: sim-manager-outgoing-call
+msgid "Outgoing call"
+msgstr ""
+
+#: sim-manager-outgoing-call-desc
+msgid "Calls will be sent from"
+msgstr ""
+
+#: sim-manager-outgoing-messages
+msgid "Outgoing messages"
+msgstr ""
+
+#: sim-manager-outgoing-messages-desc
+msgid "SMS will be sent from"
+msgstr ""
+
+#: sim-manager-outgoing-data
+msgctxt "sim-manager-outgoing-data"
+msgid "Data"
+msgstr ""
+
+#: sim-manager-outgoing-data-desc
+msgid "Internet connection, MMS and A-GPS"
+msgstr ""
+
+#: sim-pin-locked
+msgid "SIM PIN locked"
+msgstr ""
+
+#: no-operator
+msgid "No operator"
+msgstr ""
+
+#: cant-disable-simcard-alert
+msgid "At least one SIM should be activated at a time"
+msgstr ""
+
+#: disable-simcard-confirm
+msgid ""
+"SIM {{disableCardIndex}} can't receive any calls and messages. Outgoing "
+"calls and outgoing messages which are set to SIM {{disableCardIndex}} will "
+"be disabled."
+msgstr ""
+
+#: change-outgoing-data-confirm
+msgid "The current data transfer will be suspended. Continue anyway?"
+msgstr ""
+
 #. # Personalization :: Homescreen
 #: homescreen
 msgid "Homescreen"
@@ -1531,10 +1675,6 @@ msgstr ""
 #, fuzzy
 msgid "Keyboards"
 msgstr "कुंजीपटल"
-
-#: keyboardLayouts
-msgid "Keyboard layouts"
-msgstr "कुंजीपटल लेआउट"
 
 #: numberKeyboardLayouts
 msgid "Number layouts"
@@ -2361,6 +2501,10 @@ msgstr "ICCID"
 msgid "Phone number"
 msgstr "फोन नम्बर"
 
+#: downloads
+msgid "Downloads"
+msgstr ""
+
 #: unknown-phoneNumber
 msgid "Unknown"
 msgstr ""
@@ -2388,6 +2532,10 @@ msgstr "दोषसुधार"
 #: grid
 msgid "Grid"
 msgstr "जाल"
+
+#: developer-menu
+msgid "Developer Menu"
+msgstr ""
 
 #: fps-monitor
 msgid "Show frames per second"
@@ -2538,20 +2686,16 @@ msgstr "अधिक जानें"
 msgid "Reset Phone"
 msgstr "फोन रीसेट करें"
 
-#: reset-warning-1
-msgid ""
-"CAUTION: Resetting will erase all your data, including any apps you’ve "
-"purchased."
+#: reset-warning-title
+msgid "CAUTION"
 msgstr ""
-"चेतावनी: पुनः सेट करना किसी भी अनुप्रयोग जिसे आपने खरीदा है सहित अपने सभी डेटा को मिटा "
-"देंगे."
 
-#: reset-warning-2
+#: reset-warning-body
 msgid ""
-"The phone will be restored to its factory condition. None of your settings "
-"or data will be saved."
+"Resetting will erase all your data, including any apps you’ve purchased. The "
+"phone will be restored to its factory condition. None of your settings or "
+"data will be saved."
 msgstr ""
-"फोन अपने कारखाने हालत में बहाल हो जाएगा. आपका कोई सेटिंग्स या डेटा से सहेजा नहीं जायेगा।"
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
 #: your-rights
@@ -3043,6 +3187,26 @@ msgstr ""
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr ""
+
+#~ msgid "Forget network"
+#~ msgstr "संजाल भूल गया (_F)"
+
+#~ msgid "Keyboard layouts"
+#~ msgstr "कुंजीपटल लेआउट"
+
+#~ msgid ""
+#~ "CAUTION: Resetting will erase all your data, including any apps you’ve "
+#~ "purchased."
+#~ msgstr ""
+#~ "चेतावनी: पुनः सेट करना किसी भी अनुप्रयोग जिसे आपने खरीदा है सहित अपने सभी डेटा को "
+#~ "मिटा देंगे."
+
+#~ msgid ""
+#~ "The phone will be restored to its factory condition. None of your "
+#~ "settings or data will be saved."
+#~ msgstr ""
+#~ "फोन अपने कारखाने हालत में बहाल हो जाएगा. आपका कोई सेटिंग्स या डेटा से सहेजा नहीं "
+#~ "जायेगा।"
 
 #~ msgid "Vibration"
 #~ msgstr "कंपन"

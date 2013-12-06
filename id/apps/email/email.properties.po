@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-15 22:11+0100\n"
+"POT-Creation-Date: 2013-12-06 22:42+0100\n"
 "PO-Revision-Date: 2013-10-18 11:04+0000\n"
 "Last-Translator: Benny <bennychandra@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.10.0\n"
+"X-Generator: Translate Toolkit 1.11.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1382094280.000000\n"
@@ -119,6 +119,13 @@ msgstr "Nama pengguna atau sandi salah. Periksa salah ketik."
 msgid "The server said you're not authorized to create an account"
 msgstr "Server memberitahukan bahwa Anda tidak diizinkan untuk membuat akun"
 
+#. # The error for when the server is not good enough to be supported
+#. # because it is missing the required features.
+#: setup-error-pop-server-not-great
+msgid ""
+"Server unsupported. The POP3 server does not implement required features."
+msgstr ""
+
 #. # The fallback error; if we don't have a better error, we report this.
 #: setup-error-unknown2
 msgid ""
@@ -144,6 +151,14 @@ msgstr ""
 #: setup-error-imap-disabled
 msgid "You must enable IMAP for your Gmail account"
 msgstr "IMAP harus diaktifkan untuk akun Gmail Anda"
+
+#. # The error for Gmail accounts where POP3 is not enabled.  This can occur
+#. # for individual users where they have disabled POP3 from the settings UI.
+#. # This can also occur for apps-for-domains where the domain is not configured
+#. # to support POP3.
+#: setup-error-pop3-disabled
+msgid "You must enable POP3 for your Gmail account"
+msgstr ""
 
 #. # The error for when we are able to contact a server that should be the mail
 #. # server but we are unable to establish a secure connection.
@@ -305,6 +320,19 @@ msgstr "IMAP harus diaktifkan pada akun Gmail Anda "
 msgctxt "setup-gmail-imap-retry"
 msgid "Retry"
 msgstr "Coba Lagi"
+
+#: setup-gmail-pop3-header
+msgid "POP3 Disabled"
+msgstr ""
+
+#: setup-gmail-pop3-message
+msgid "You must enable POP3 on your Gmail account"
+msgstr ""
+
+#: setup-gmail-pop3-retry
+msgctxt "setup-gmail-pop3-retry"
+msgid "Retry"
+msgstr ""
 
 #: settings-main-header
 msgid "Mail Settings"
@@ -521,6 +549,10 @@ msgstr "Setelan ActiveSync"
 msgctxt "settings-imap-label"
 msgid "IMAP settings"
 msgstr "Setelan IMAP"
+
+#: settings-pop3-label
+msgid "POP3 settings"
+msgstr ""
 
 #: settings-smtp-label
 msgctxt "settings-smtp-label"
@@ -876,6 +908,19 @@ msgstr "Hapus {{ n }} pesan email?"
 msgctxt "message-multiedit-delete-confirm[other]"
 msgid "Delete {{ n }} email messages?"
 msgstr "Hapus {{ n }} pesan email?"
+
+#: message-large-message-cancel
+msgctxt "message-large-message-cancel"
+msgid "Cancel"
+msgstr ""
+
+#: message-large-message-ok
+msgid "Continue"
+msgstr ""
+
+#: message-large-message-confirm
+msgid "This message is large and may take some time to download."
+msgstr ""
 
 #: message-search-from
 msgctxt "message-search-from"
