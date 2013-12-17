@@ -21,7 +21,7 @@ function update_hg_repo()
 	if [ -d $mozlang ]; then
 		cd $mozlang;
 		hg pull;
-		hg update;
+		hg update --clean;
 	else
 		log_debug "hg clone $mozilla_repository/$mozlang $mozlang"
 		hg clone $mozilla_repository/$mozlang $mozlang
