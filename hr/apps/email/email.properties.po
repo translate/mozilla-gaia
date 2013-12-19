@@ -1,0 +1,1386 @@
+#. extracted from ./apps/email/email.properties
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-03 21:03+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
+"X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
+
+#: setup-app-name-header
+msgid "Mail"
+msgstr "E-pošta"
+
+#: setup-empty-account-prompt
+msgid ""
+"You are not set up to send or receive email. Would you like to do that now?"
+msgstr ""
+"Nemate podešen račun za slanje ili primanje e-pošte. Želite li ga podesiti "
+"sada?"
+
+#: setup-pick-service
+msgid "To send and receive email, you will need to set up an account."
+msgstr "Da biste mogli slati i primati e-poštu, trebate podesiti račun."
+
+#. # Title of the account setup card where the user enters their display name,
+#. # e-mail address, and password.
+#: setup-account-header3
+msgid "New Account"
+msgstr "Novi račun"
+
+#: setup-info-header
+msgid "Your login information"
+msgstr "Vaši podaci za prijavu"
+
+#. # The placeholder for the display name of the user that will be displayed in the
+#. # account setup screen input box for the display name until they enter any text
+#. # in the box.  When you send an e-mail, the "From" header contains the user's
+#. # display name ("John Doe") as well as the e-mail address
+#. # ("john.doe@example.com").  In the future this input box will be labeled, but
+#. # it is currently unlabeled because of screen real estate concerns.
+#: setup-info-name.placeholder
+msgctxt "setup-info-name.placeholder"
+msgid "Your name"
+msgstr "Vaše ime"
+
+#. # The placeholder for the user's e-mail address that will be displayed in the
+#. # account setup screen input box for the e-mail address until they enter any
+#. # text in the box.  The value will be used to configure the e-mail account.
+#: setup-info-email.placeholder
+msgid "someone@example.com"
+msgstr "korisnik@domena.com"
+
+#. # The placeholder for the user's password that will be displayed in the account
+#. # setup screen input box for the password until they enter any text in the box.
+#. # The value will be used to configure the e-mail account and saved for future
+#. # usage.
+#: setup-info-password.placeholder
+msgctxt "setup-info-password.placeholder"
+msgid "Password"
+msgstr "Lozinka"
+
+#: setup-info-next
+msgctxt "setup-info-next"
+msgid "Next"
+msgstr "Naprijed"
+
+#: setup-progress-wait-msg
+msgid "Setting up account"
+msgstr "Podešavanje računa"
+
+#: setup-completed-header
+msgid "Mail account setup"
+msgstr "Podešavanje e-pošte"
+
+#: setup-completed-label
+msgid "All done!"
+msgstr "Gotovo!"
+
+#: setup-add-another-account
+msgid "Add another account"
+msgstr "Dodaj novi račun"
+
+#: setup-show-mail
+msgid "Continue to Mail"
+msgstr "Pokreni E-poštu"
+
+#. # The error for when the user tries to create an account without a network
+#. # connection active.
+#: setup-error-offline
+msgid "This device is currently offline. Connect to a network and try again."
+msgstr ""
+"Ovaj uređaj trenutno nije umrežen. Spojite se na mrežu i pokušajte ponovno."
+
+#. # The error for either a bad username or a bad password.  For security reasons,
+#. # servers try not to distinguish between the two which is why we also cannot
+#. # tell them apart either.  Also, if the user made a typo, they could have made
+#. # it in either place.
+#: setup-error-bad-user-or-pass2
+msgid "Invalid username or password. Check for typos."
+msgstr ""
+"Netočno korisničko ime ili lozinka. Provjerite jeste točno upisali podatke."
+
+#. # The error for a user having the correct username and password, but the mail
+#. # server explicitly indicates they don't have permission to talk to the mail
+#. # server.  This is currently only expected from ActiveSync servers; situations
+#. # like gmail over IMAP indicating that IMAP is disabled for the account or
+#. # domain have their own error code: setup-error-imap-disabled.
+#: setup-error-not-authorized
+msgid "The server said you're not authorized to create an account"
+msgstr "Poslužitelj je odgovorio da niste autorizirani otvoriti račun"
+
+#. # The fallback error; if we don't have a better error, we report this.
+#: setup-error-unknown2
+msgid ""
+"An unknown error occurred. Check your network connection or try the manual "
+"configuration option."
+msgstr ""
+"Došlo je do nepoznate greške. Provjerite svoju mrežnu vezu ili pokušajte "
+"ručno podešavanje."
+
+#. # The error for Gmail accounts where 2-factor authentication (where you receive
+#. # a text message on your phone or run a special app) is enabled, and so the
+#. # user needs to create and use an application specific password to allow us to
+#. # talk to the server.
+#: setup-error-needs-app-pass
+msgid ""
+"You must use an application specific password for two-factor Gmail accounts"
+msgstr ""
+"Za Gmail račune s dvostrukom metodom prijave trebate koristiti posebne "
+"lozinke za aplikacije"
+
+#. # The error for Gmail accounts where IMAP is not enabled.  This can occur
+#. # for individual users where they have disabled IMAP from the settings UI.
+#. # This can also occur for apps-for-domains where the domain is not configured
+#. # to support IMAP.
+#: setup-error-imap-disabled
+msgid "You must enable IMAP for your Gmail account"
+msgstr "Morate omogućiti IMAP za svoj Gmail račun"
+
+#. # The error for when we are able to contact a server that should be the mail
+#. # server but we are unable to establish a secure connection.
+#: setup-error-bad-security
+msgid ""
+"Unable to establish a secure connection with \"{{server}}\". There may be a "
+"problem with your network or the server."
+msgstr ""
+"Nije moguće uspostaviti sigurnu vezu sa \"{{server}}\". Možda postoji "
+"problem s vašom mrežom ili poslužiteljem."
+
+#. # The error for when we try to contact a server but see no indication of a
+#. # response before we give up because of a timeout.
+#: setup-error-unresponsive-server
+msgid ""
+"Unable to establish a connection with \"{{server}}\". There may be a problem "
+"with the network."
+msgstr ""
+"Nije moguće uspostaviti vezu sa \"{{server}}\". Možda postoji problem s "
+"mrežom."
+
+#. # The error for when we able to establish a (secure) connection with the server,
+#. # but there is some type of failure talking to the server that isn't covered by
+#. # other errors.  Hopefully this is just a temporary problem on the server, but
+#. # it could also be a fundamental incompatibility between our software and the
+#. # server's software.
+#: setup-error-server-problem
+msgid "There is a problem with the server \"{{server}}\". Try again later."
+msgstr ""
+"Postoji problem s poslužiteljem \"{{server}}\". Pokušajte ponovno kasnije."
+
+#. # The error for when we are trying to figure out the right server settings for
+#. # an account based on the e-mail address the user typed in during configuration,
+#. # but we can't find the right settings.  This is either because the user made a
+#. # typo and so we are looking for configuration data that does not exist, there
+#. # were network failures trying to look the information up, or the information is
+#. # not available.
+#: setup-error-no-config-info
+msgid ""
+"Unable to automatically configure your account. Correct your e-mail address "
+"or try the manual configuration option."
+msgstr ""
+"Automatsko podešavanje računa nije moguće. Ispravite svoju adresu e-pošte "
+"ili pokušajte ručnu konfiguraciju."
+
+#. # The error for when the user is trying to set up an account with a server that
+#. # currently indicates it is offline for maintenance.
+#: setup-error-server-maintenance
+msgid "The server \"{{server}}\" is offline for maintenance. Try again later."
+msgstr ""
+"U tijeku je održavanje poslužitelja \"{{server}}\". Pokušajte ponovno "
+"kasnije."
+
+#. # The error when the user trying to register a duplicate account
+#: setup-error-account-already-exists
+msgid "This account is already configured."
+msgstr "Ovaj korisnički račun je već postavljen."
+
+#: setup-manual-config2
+msgid "Manual setup"
+msgstr "Ručno podešavanje"
+
+#: setup-manual-config-header
+msgid "Manual Setup"
+msgstr "Podešavanje"
+
+#: setup-manual-account-type
+msgctxt "setup-manual-account-type"
+msgid "Account type"
+msgstr "Vrsta računa"
+
+#: setup-manual-imap-header
+msgctxt "setup-manual-imap-header"
+msgid "IMAP settings"
+msgstr "IMAP postavke"
+
+#: setup-manual-smtp-header
+msgctxt "setup-manual-smtp-header"
+msgid "SMTP settings"
+msgstr "SMTP postavke"
+
+#: setup-manual-activesync-header
+msgctxt "setup-manual-activesync-header"
+msgid "ActiveSync settings"
+msgstr "ActiveSync postavke"
+
+#: setup-manual-next
+msgctxt "setup-manual-next"
+msgid "Next"
+msgstr "Naprijed"
+
+#: setup-manual-socket
+msgid "Socket Type"
+msgstr "Vrsta priključka"
+
+#. # Technical term, should not be translated
+#: setup-manual-socket-ssl
+msgid "SSL"
+msgstr "SSL"
+
+#. # Technical term, should not be translated
+#: setup-manual-socket-starttls
+msgid "STARTTLS"
+msgstr "STARTTLS"
+
+#: setup-manual-hostname.placeholder
+msgctxt "setup-manual-hostname.placeholder"
+msgid "Hostname"
+msgstr "Adresa poslužitelja"
+
+#: setup-manual-port.placeholder
+msgid "Port Number"
+msgstr "Port"
+
+#: setup-manual-username.placeholder
+msgctxt "setup-manual-username.placeholder"
+msgid "Username"
+msgstr "Korisničko ime"
+
+#: setup-bad-password-header
+msgid "Bad password!"
+msgstr "Kriva lozinka!"
+
+#: setup-bad-password
+msgid "We could not sign in to the server. Maybe your password is wrong?"
+msgstr "Prijava na poslužitelj nije uspjela. Možda ste upisali krivu lozinku?"
+
+#: setup-new-password.placeholder
+msgid "New password"
+msgstr "Nova lozinka"
+
+#: setup-fix-password
+msgid "Retry with new password"
+msgstr "Pokušaj ponovno s novom lozinkom"
+
+#: setup-gmail-twofactor-header
+msgid "Two-Factor Enabled"
+msgstr "Dvostruka metoda prijave uključena"
+
+#: setup-gmail-twofactor-message
+msgid "You need to enter an application-specific password below."
+msgstr "Ispod trebate upisati lozinku izdanu za ovu aplikaciju."
+
+#: setup-gmail-twofactor-fix
+msgid "Use application password"
+msgstr "Koristi posebnu lozinku za ovu aplikaciju"
+
+#: setup-gmail-imap-header
+msgid "IMAP Disabled"
+msgstr "IMAP onemogućen"
+
+#: setup-gmail-imap-message
+msgid "You must enable IMAP on your Gmail account"
+msgstr "Morate uključiti IMAP za svoj Gmail račun"
+
+#: setup-gmail-imap-retry
+msgctxt "setup-gmail-imap-retry"
+msgid "Retry"
+msgstr "Pokušaj ponovno"
+
+#: settings-main-header
+msgid "Mail Settings"
+msgstr "Postavke e-pošte"
+
+#. # For account settings screen, there are sections of settings, and each
+#. #section has a header. One is Account, which shows general information
+#. # about the account, like the name.
+#: settings-sub-header-account
+msgid "Account"
+msgstr "Račun"
+
+#. # Label in the "Account" sub-section of acccount settings that shows the
+#. # human name, not the email address, for the account.
+#: settings-account-name
+msgctxt "settings-account-name"
+msgid "Your name"
+msgstr "Vaše ime"
+
+#. # Label in the "Account" sub-section of acccount settings for the checkbox
+#. # that enables getting phone notifications when new inbox email is found
+#. # via periodic sync with the mail server.
+#: settings-account-display-notifications
+msgid "Display notifications for new messages"
+msgstr "Prikazuj obavijesti za nove poruke"
+
+#. # For account settings screen, there are sections of settings, and each
+#. # section has a header. One is Data, which deals with sync intervals and
+#. # time windows for the data that is fetched.
+#: settings-sub-header-data
+msgid "Data"
+msgstr "Podaci"
+
+#. # Label in the "Data" sub-section of acccount settings for the select box
+#. # that allows choosing how often to check the server for new messages in
+#. # the inbox. The possible select box options are listed in the
+#. # settings-check-every-* properties.
+#: settings-account-check-mail
+msgid "Check for new messages"
+msgstr "Provjeri za nove poruke"
+
+#. # For account settings screen, there are sections of settings, and each
+#. # section has a header. One is "Server settings", which deals with the
+#. # name/password and server addresses.
+#: settings-sub-header-server
+msgid "Server settings"
+msgstr "Postavke poslužitelja"
+
+#. # Label in the "Server settings" sub-section of acccount settings for going
+#. # to a settings card that shows user name and password used to connect to
+#. # the mail server.
+#: settings-account-userpass
+msgid "Username and password"
+msgstr "Korisničko ime i lozinka"
+
+#. # In the account picker card, where the user can select which account to view
+#. # in the app, it shows when each account was last synchronized.
+#: fld-account-picker-last-sync
+msgctxt "fld-account-picker-last-sync"
+msgid "Last sync:"
+msgstr "Zadnja sinkronizacija:"
+
+#: settings-done
+msgid "Done"
+msgstr "Gotovo"
+
+#: settings-account-section
+msgctxt "settings-account-section"
+msgid "Accounts"
+msgstr "Računi"
+
+#: settings-account-add
+msgid "Add Account"
+msgstr "Dodaj račun"
+
+#: settings-account-delete
+msgid "Delete account"
+msgstr "Obriši račun"
+
+#: settings-account-delete-prompt
+msgid ""
+"Are you sure you want to delete your {{account}} mail account? You will have "
+"to re-download your mail if you re-create the account."
+msgstr ""
+"Jeste li sigurni da želite obrisati {{account}} račun e-pošte? Ako ponovno "
+"stvorite isti račun, trebat ćete ponovno preuzeti sve poruke."
+
+#: settings-account-delete-cancel
+msgctxt "settings-account-delete-cancel"
+msgid "Cancel"
+msgstr "Otkaži"
+
+#: settings-account-delete-confirm
+msgctxt "settings-account-delete-confirm"
+msgid "Delete"
+msgstr "Obriši"
+
+#: settings-about-section
+msgid "About"
+msgstr "Informacije"
+
+#: settings-general-section
+msgid "General settings"
+msgstr "Opće postavke"
+
+#: settings-check-mail
+msgid "Check mail"
+msgstr "Provjeri poštu"
+
+#: settings-show-images
+msgid "Always show images"
+msgstr "Uvijek prikaži slike"
+
+#: settings-download-attachments
+msgid "Download attachments"
+msgstr "Preuzmi privitke"
+
+#: settings-notify-mail
+msgid "Notify of new mail"
+msgstr "Obavijesti kada stigne nova pošta"
+
+#. # How often to check the mail server for new mail messages for the inbox.
+#. # "Manually" means, do not automatically connect on a periodic sync interval.
+#. # User will manually click the refresh button to check for new messages.
+#: settings-check-every-3min
+msgid "Every 3 minutes"
+msgstr "Svake 3 minute"
+
+#: settings-check-every-5min
+msgid "Every 5 minutes"
+msgstr "Svakih 5 minuta"
+
+#: settings-check-every-10min
+msgid "Every 10 minutes"
+msgstr "Svakih 10 minuta"
+
+#: settings-check-every-15min
+msgid "Every 15 minutes"
+msgstr "Svakih 15 minuta"
+
+#: settings-check-every-30min
+msgid "Every 30 minutes"
+msgstr "Svakih 30 minuta"
+
+#: settings-check-every-60min
+msgid "Every hour"
+msgstr "Svaki sat"
+
+#: settings-check-every-manual
+msgid "Manually"
+msgstr "Ručno"
+
+#. # Dynamically added sync interval checks. These are only added via special
+#. # debug/development tools, and are always in seconds. Otherwise, just
+#. # the settings-check-every-* options are visible.
+#: settings-check-dynamic
+msgctxt "settings-check-dynamic"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: settings-check-dynamic[zero]
+msgid "seconds"
+msgstr "sekundi"
+
+#: settings-check-dynamic[one]
+#, fuzzy
+msgctxt "settings-check-dynamic[one]"
+msgid "{{ n }} seconds"
+msgstr "{{ n }} sekunda"
+
+#: settings-check-dynamic[two]
+msgctxt "settings-check-dynamic[two]"
+msgid "{{ n }} seconds"
+msgstr "{{ n }} sekunde"
+
+#: settings-check-dynamic[few]
+msgctxt "settings-check-dynamic[few]"
+msgid "{{ n }} seconds"
+msgstr "{{ n }} sekundi"
+
+#: settings-check-dynamic[many]
+msgctxt "settings-check-dynamic[many]"
+msgid "{{ n }} seconds"
+msgstr "{{ n }} sekundi"
+
+#: settings-check-dynamic[other]
+msgctxt "settings-check-dynamic[other]"
+msgid "{{ n }} seconds"
+msgstr "{{ n }} sekundi"
+
+#: settings-default-account
+msgid "Set as default email"
+msgstr "Zadani račun"
+
+#: settings-account-type
+msgctxt "settings-account-type"
+msgid "Account type"
+msgstr "Vrsta računa"
+
+#: settings-account-credentials
+msgid "Credentials"
+msgstr "Pristupni podaci"
+
+#: settings-activesync-label
+msgctxt "settings-activesync-label"
+msgid "ActiveSync settings"
+msgstr "ActiveSync postavke"
+
+#: settings-imap-label
+msgctxt "settings-imap-label"
+msgid "IMAP settings"
+msgstr "IMAP postavke"
+
+#: settings-smtp-label
+msgctxt "settings-smtp-label"
+msgid "SMTP settings"
+msgstr "SMTP postavke"
+
+#: settings-hostname
+msgctxt "settings-hostname"
+msgid "Hostname"
+msgstr "Adresa poslužitelja"
+
+#: settings-port
+msgid "Port"
+msgstr "Port"
+
+#: settings-username
+msgctxt "settings-username"
+msgid "Username"
+msgstr "Korisničko ime"
+
+#: settings-password
+msgctxt "settings-password"
+msgid "Password"
+msgstr "Lozinka"
+
+#: settings-save
+msgid "Save"
+msgstr "Spremi"
+
+#: settings-password-empty
+msgid "Password field should not be empty"
+msgstr "Polje lozinke ne bi smijelo biti prazno"
+
+#. # How much email to sync, in smallest unit of days, from the server. Only
+#. # valid for ActiveSync mail servers, not shown for other mail server types
+#. # like IMAP.
+#: settings-account-synchronize-window
+msgid "Days to sync"
+msgstr "Sinkronizacija prema danima"
+
+#: settings-synchronize-auto
+msgid "Automatic"
+msgstr "Automatski"
+
+#: settings-synchronize-one-day
+msgid "1 day"
+msgstr "1 dan"
+
+#: settings-synchronize-three-days
+msgid "3 days"
+msgstr "3 dana"
+
+#: settings-synchronize-one-week
+msgid "1 week"
+msgstr "1 tjedan"
+
+#: settings-synchronize-two-weeks
+msgid "2 weeks"
+msgstr "2 tjedna"
+
+#: settings-synchronize-one-month
+msgid "1 month"
+msgstr "1 mjesec"
+
+#: settings-synchronize-all
+msgid "All messages"
+msgstr "Sve poruke"
+
+#: accounts-header
+msgctxt "accounts-header"
+msgid "Accounts"
+msgstr "Računi"
+
+#: accounts-button
+msgctxt "accounts-button"
+msgid "Accounts"
+msgstr "Računi"
+
+#: envelope-from
+msgctxt "envelope-from"
+msgid "From"
+msgstr "Šalje"
+
+#: envelope-to
+msgctxt "envelope-to"
+msgid "To"
+msgstr "Prima"
+
+#: envelope-cc
+msgctxt "envelope-cc"
+msgid "Cc"
+msgstr "Cc"
+
+#: envelope-bcc
+msgid "Bcc"
+msgstr "Bcc"
+
+#: reader-header
+msgid "Read"
+msgstr "Pročitaj"
+
+#: compose-header
+msgid "Compose message"
+msgstr "Sastavi poruku"
+
+#: compose-header-short
+msgid "Compose"
+msgstr "Sastavi"
+
+#: compose-send
+msgid "Send"
+msgstr "Pošalji"
+
+#: compose-to
+msgctxt "compose-to"
+msgid "To"
+msgstr "Prima"
+
+#: compose-cc
+msgid "cc"
+msgstr "cc"
+
+#: compose-bcc
+msgid "bcc"
+msgstr "bcc"
+
+#: compose-attachments
+msgctxt "compose-attachments"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: compose-attachments[zero]
+msgid "Attachments"
+msgstr "Privici"
+
+#: compose-attachments[one]
+msgid "{{ n }} attachment"
+msgstr "{{ n }} privitak"
+
+#: compose-attachments[two]
+#, fuzzy
+msgctxt "compose-attachments[two]"
+msgid "{{ n }} attachments"
+msgstr "{{ n }} privitka"
+
+#: compose-attachments[few]
+msgctxt "compose-attachments[few]"
+msgid "{{ n }} attachments"
+msgstr "{{ n }} privitaka"
+
+#: compose-attachments[many]
+msgctxt "compose-attachments[many]"
+msgid "{{ n }} attachments"
+msgstr "{{ n }} privitaka"
+
+#: compose-attachments[other]
+msgctxt "compose-attachments[other]"
+msgid "{{ n }} attachments"
+msgstr "{{ n }} privitaka"
+
+#: compose-subject
+msgctxt "compose-subject"
+msgid "Subject"
+msgstr "Naslov"
+
+#: compose-draft-save
+msgid "Save to Local Drafts"
+msgstr "Spremi u Lokalne skice"
+
+#: compose-discard-message
+msgid "Discard email?"
+msgstr "Obrisati poruku?"
+
+#: compose-discard-confirm
+msgid "Discard"
+msgstr "Obriši"
+
+#: compose-sending-message
+msgid "Sending email"
+msgstr "Slanje e-pošte"
+
+#: compose-send-message-failed
+msgid "Sending email failed"
+msgstr "Slanje e-pošte nije uspjelo"
+
+#: composer-attachment-large
+msgid "Attachment too large"
+msgstr "Priložena datoteka je prevelika"
+
+#: composer-attachments-large
+msgid "Attachments too large"
+msgstr "Priložene datoteke su prevelike"
+
+#: compose-attchment-size-exceeded
+msgid "The selected attachment is too large to send with this message."
+msgstr "Odabrani priložak je prevelik za slanje pomoću ove poruke."
+
+#: compose-attchments-size-exceeded
+msgid ""
+"The selected attachments are too large to send with this message. Try "
+"selecting fewer files."
+msgstr ""
+"Odabrani prilošci su preveliki za slanje pomoću ove poruke. Pokušaj odabrati "
+"manje datoteka."
+
+#: dialog-button-ok
+msgid "OK"
+msgstr "OK"
+
+#: attachment-size-kib
+msgid "{{kilobytes}}K"
+msgstr "{{kilobytes}}K"
+
+#: message-attachment-view.textContent
+msgid "View"
+msgstr "Prikaži"
+
+#: message-no-subject
+msgid "(no subject)"
+msgstr "(bez naslova)"
+
+#: message-edit-menu-star
+msgid "Star"
+msgstr "Označi zvijezdicom"
+
+#: message-edit-menu-unstar
+msgid "Unstar"
+msgstr "Ukloni zvijezdicu"
+
+#: message-edit-menu-mark-read
+msgid "Mark as read"
+msgstr "Označi kao pročitano"
+
+#: message-edit-menu-mark-unread
+msgid "Mark as unread"
+msgstr "Označi kao nepročitano"
+
+#: message-edit-menu-move
+msgid "Move"
+msgstr "Premjesti"
+
+#: message-edit-menu-delete
+msgctxt "message-edit-menu-delete"
+msgid "Delete"
+msgstr "Obriši"
+
+#: message-edit-delete-confirm
+msgid "Delete email message?"
+msgstr "Obrisati poruku?"
+
+#: message-send-attachment-disabled-confirm
+msgid "Attachments can not be forwarded."
+msgstr "Priložak ne može biti prosljeđen."
+
+#: message-multiedit-header
+msgctxt "message-multiedit-header"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: message-multiedit-header[zero]
+msgid "Edit"
+msgstr "Uredi"
+
+#: message-multiedit-header[one]
+#, fuzzy
+msgctxt "message-multiedit-header[one]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} odabranu"
+
+#: message-multiedit-header[two]
+msgctxt "message-multiedit-header[two]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} odabrane"
+
+#: message-multiedit-header[few]
+msgctxt "message-multiedit-header[few]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} odabranih"
+
+#: message-multiedit-header[many]
+msgctxt "message-multiedit-header[many]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} odabranih"
+
+#: message-multiedit-header[other]
+msgctxt "message-multiedit-header[other]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} odabranih"
+
+#: browse-to-url-prompt
+msgid "Browse to URL?: {{ url }}"
+msgstr "Posjetiti adresu?: {{ url }}"
+
+#: message-download-images
+msgctxt "message-download-images"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: message-download-images[one]
+msgid "This email contains one image. Click to download."
+msgstr "Ova poruka sadrži jednu sliku. Pritisnite za preuzimanje."
+
+#: message-download-images[two]
+#, fuzzy
+msgctxt "message-download-images[two]"
+msgid "This email contains {{ n }} images. Click to download."
+msgstr "Ova poruka sadrži {{ n }} slike. Pritisnite za preuzimanje."
+
+#: message-download-images[few]
+msgctxt "message-download-images[few]"
+msgid "This email contains {{ n }} images. Click to download."
+msgstr "Ova poruka sadrži {{ n }} slika. Pritisnite za preuzimanje."
+
+#: message-download-images[many]
+msgctxt "message-download-images[many]"
+msgid "This email contains {{ n }} images. Click to download."
+msgstr "Ova poruka sadrži {{ n }} slika. Pritisnite za preuzimanje."
+
+#: message-download-images[other]
+msgctxt "message-download-images[other]"
+msgid "This email contains {{ n }} images. Click to download."
+msgstr "Ova poruka sadrži {{ n }} slika. Pritisnite za preuzimanje."
+
+#: message-show-external-images
+msgid "Show external images"
+msgstr "Prikaži vanjske slike"
+
+#: message-multiedit-cancel
+msgctxt "message-multiedit-cancel"
+msgid "Cancel"
+msgstr "Otkaži"
+
+#: message-multiedit-delete-confirm
+msgctxt "message-multiedit-delete-confirm"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: message-multiedit-delete-confirm[one]
+msgid "Delete this email message?"
+msgstr "Obrisati ovu poruku?"
+
+#: message-multiedit-delete-confirm[two]
+#, fuzzy
+msgctxt "message-multiedit-delete-confirm[two]"
+msgid "Delete {{ n }} email messages?"
+msgstr "Obrisati {{ n }} poruke?"
+
+#: message-multiedit-delete-confirm[few]
+msgctxt "message-multiedit-delete-confirm[few]"
+msgid "Delete {{ n }} email messages?"
+msgstr "Obrisati {{ n }} poruka?"
+
+#: message-multiedit-delete-confirm[many]
+msgctxt "message-multiedit-delete-confirm[many]"
+msgid "Delete {{ n }} email messages?"
+msgstr "Obrisati {{ n }} poruka?"
+
+#: message-multiedit-delete-confirm[other]
+msgctxt "message-multiedit-delete-confirm[other]"
+msgid "Delete {{ n }} email messages?"
+msgstr "Obrisati {{ n }} poruka?"
+
+#: message-search-from
+msgctxt "message-search-from"
+msgid "From"
+msgstr "Šalje"
+
+#: message-search-to
+msgctxt "message-search-to"
+msgid "To"
+msgstr "Prima"
+
+#: message-search-subject
+msgctxt "message-search-subject"
+msgid "Subject"
+msgstr "Naslov"
+
+#: message-search-body
+msgid "Body"
+msgstr "Tekst"
+
+#: message-search-all
+msgid "All"
+msgstr "Sve"
+
+#: message-search-input.placeholder
+msgid "Search Mail"
+msgstr "Pretraži poruke"
+
+#: message-search-cancel-accessible
+msgid "Cancel search"
+msgstr "Otkaži pretraživanje"
+
+#: messages-syncing
+msgid "Loading Messages"
+msgstr "Učitavanje poruka"
+
+#: messages-sync-more
+msgid "Load more messages from server"
+msgstr "Učitaj više poruka s poslužitelja"
+
+#: messages-folder-empty
+msgid "No mail in this Folder"
+msgstr "Nema poruka u ovoj mapi"
+
+#: messages-search-empty
+msgid "No matches in locally cached messages"
+msgstr "Nema rezultata u lokalno spremljenim porukama"
+
+#: messages-folder-select
+msgid "Select folder"
+msgstr "Odaberi mapu"
+
+#: message-contact-menu-create
+msgid "Save new contact"
+msgstr "Spremi novi kontakt"
+
+#: message-contact-menu-add-existing
+msgid "Add to existing contact"
+msgstr "Dodaj postojećem kontaktu"
+
+#: message-contact-menu-view
+msgid "View contact"
+msgstr "Prikaži kontakt"
+
+#: message-contact-menu-reply
+msgctxt "message-contact-menu-reply"
+msgid "Reply"
+msgstr "Odgovori"
+
+#: message-contact-menu-new
+msgid "Send new mail"
+msgstr "Pošalji novu e-poštu"
+
+#: message-reply-menu-reply
+msgctxt "message-reply-menu-reply"
+msgid "Reply"
+msgstr "Odgovori"
+
+#: message-reply-menu-reply-all
+msgid "Reply All"
+msgstr "Odgovori svima"
+
+#: message-reply-menu-forward
+msgid "Forward"
+msgstr "Proslijedi"
+
+#: message-reply-menu-cancel
+msgctxt "message-reply-menu-cancel"
+msgid "Cancel"
+msgstr "Otkaži"
+
+#: folder-list-header
+msgid "Folders"
+msgstr "Mape"
+
+#. # L10n note: account-last-synced-label is found on the folder list card,
+#. # accessible from the message-list card by clicking the icon in the upper left
+#. # of the card.  The label is displayed at the bottom of the folder list and is
+#. # right aligned.  There is currently 1 button to the left of the label and soon
+#. # there will be two, so it is desirable to use as short a translation as
+#. # possible.  To the right of the label, a (short) relative timestamp is
+#. # displayed.
+#: account-last-synced-label
+msgctxt "account-last-synced-label"
+msgid "Last sync:"
+msgstr "Zadnja sinkronizacija:"
+
+#. # L10n note: This string is displayed to the right of account-last-synced-label
+#. # if no folder has ever been synchronized.  Otherwise the space occupied by this
+#. # string will be a (short) relative timestamp.
+#: account-never-synced
+msgid "Never"
+msgstr "Nikad"
+
+#. # LOCALIZATION NOTE: do not translate {name}
+#: reply-quoting-wrote
+msgid "{name} wrote"
+msgstr "{name} je napisao/la"
+
+#: forward-original-message
+msgid "Original message"
+msgstr "Izvorna poruka"
+
+#. # L10n note: These are the labels we use when displaying the envelope info for a
+#. # message that is forwarded inline.  While automatic recovery of this
+#. # information by clients is made difficult by these strings regularly being
+#. # localized, we attempt to remain consistent with apps such as Thunderbird for
+#. # at least English.
+#: forward-header-subject
+msgctxt "forward-header-subject"
+msgid "Subject"
+msgstr "Subject"
+
+#: forward-header-date
+msgid "Date"
+msgstr "Date"
+
+#: forward-header-from
+msgctxt "forward-header-from"
+msgid "From"
+msgstr "From"
+
+#. # This really wants to have the dash in it for consistency with Thunderbird
+#: forward-header-reply-to
+msgid "Reply-To"
+msgstr "Reply-To"
+
+#: forward-header-to
+msgctxt "forward-header-to"
+msgid "To"
+msgstr "To"
+
+#: forward-header-cc
+msgctxt "forward-header-cc"
+msgid "Cc"
+msgstr "Cc"
+
+#. # Localized folder names for IMAP servers.  Because the IMAP standard did not
+#. # originally specify a way to express meta-data about folders, folders may be
+#. # named in English to express their purpose.  Then e-mail clients (or webmail
+#. # interfaces) localize these values.  We do this too, following in the
+#. # footsteps of Thunderbird.
+#: folder-inbox
+msgid "Inbox"
+msgstr "Primljena pošta"
+
+#: folder-sent
+msgid "Sent"
+msgstr "Poslana pošta"
+
+#: folder-drafts
+msgid "Drafts"
+msgstr "Skice"
+
+#: folder-trash
+msgid "Trash"
+msgstr "Smeće"
+
+#: folder-queue
+msgid "Unsent"
+msgstr "Odlazna pošta"
+
+#: folder-junk
+msgid "Junk"
+msgstr "Neželjena pošta"
+
+#: folder-archives
+msgid "Archives"
+msgstr "Arhiva"
+
+#: folder-localdrafts
+msgid "Local Drafts"
+msgstr "Lokalne skice"
+
+#: toaster-undo
+msgid "Undo"
+msgstr "Vrati"
+
+#: toaster-retry
+msgctxt "toaster-retry"
+msgid "Retry"
+msgstr "Pokušaj ponovno"
+
+#: toaster-message-star
+msgctxt "toaster-message-star"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-star[one]
+msgid "1 message flag set"
+msgstr "Postavljena 1 oznaka poruke"
+
+#: toaster-message-star[two]
+#, fuzzy
+msgctxt "toaster-message-star[two]"
+msgid "{{ n }} messages flag set"
+msgstr "Postavljene {{ n }} oznake poruka"
+
+#: toaster-message-star[few]
+msgctxt "toaster-message-star[few]"
+msgid "{{ n }} messages flag set"
+msgstr "Postavljeno {{ n }} oznaka poruka"
+
+#: toaster-message-star[many]
+msgctxt "toaster-message-star[many]"
+msgid "{{ n }} messages flag set"
+msgstr "Postavljeno {{ n }} oznaka poruka"
+
+#: toaster-message-star[other]
+msgctxt "toaster-message-star[other]"
+msgid "{{ n }} messages flag set"
+msgstr "Postavljeno {{ n }} oznaka poruka"
+
+#: toaster-message-unstar
+msgctxt "toaster-message-unstar"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-unstar[one]
+msgid "1 message flag removed"
+msgstr "Uklonjena 1 oznaka poruke"
+
+#: toaster-message-unstar[two]
+#, fuzzy
+msgctxt "toaster-message-unstar[two]"
+msgid "{{ n }} messages flag removed"
+msgstr "Uklonjene {{ n }} oznake poruka"
+
+#: toaster-message-unstar[few]
+msgctxt "toaster-message-unstar[few]"
+msgid "{{ n }} messages flag removed"
+msgstr "Uklonjeno {{ n }} oznaka poruka"
+
+#: toaster-message-unstar[many]
+msgctxt "toaster-message-unstar[many]"
+msgid "{{ n }} messages flag removed"
+msgstr "Uklonjeno {{ n }} oznaka poruka"
+
+#: toaster-message-unstar[other]
+msgctxt "toaster-message-unstar[other]"
+msgid "{{ n }} messages flag removed"
+msgstr "Uklonjeno {{ n }} oznaka poruka"
+
+#: toaster-message-read
+msgctxt "toaster-message-read"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-read[one]
+msgid "1 message marked as read"
+msgstr "1 poruka označena kao pročitana"
+
+#: toaster-message-read[two]
+#, fuzzy
+msgctxt "toaster-message-read[two]"
+msgid "{{ n }} messages marked as read"
+msgstr "{{ n }} poruke označene kao pročitane"
+
+#: toaster-message-read[few]
+msgctxt "toaster-message-read[few]"
+msgid "{{ n }} messages marked as read"
+msgstr "{{ n }} poruka označeno kao pročitano"
+
+#: toaster-message-read[many]
+msgctxt "toaster-message-read[many]"
+msgid "{{ n }} messages marked as read"
+msgstr "{{ n }} poruka označeno kao pročitano"
+
+#: toaster-message-read[other]
+msgctxt "toaster-message-read[other]"
+msgid "{{ n }} messages marked as read"
+msgstr "{{ n }} poruka označeno kao pročitano"
+
+#: toaster-message-unread
+msgctxt "toaster-message-unread"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-unread[one]
+msgid "1 message marked as unread"
+msgstr "1 poruka označena kao nepročitana"
+
+#: toaster-message-unread[two]
+#, fuzzy
+msgctxt "toaster-message-unread[two]"
+msgid "{{ n }} messages marked as unread"
+msgstr "{{ n }} poruke označene kao nepročitane"
+
+#: toaster-message-unread[few]
+msgctxt "toaster-message-unread[few]"
+msgid "{{ n }} messages marked as unread"
+msgstr "{{ n }} poruka označeno kao nepročitano"
+
+#: toaster-message-unread[many]
+msgctxt "toaster-message-unread[many]"
+msgid "{{ n }} messages marked as unread"
+msgstr "{{ n }} poruka označeno kao nepročitano"
+
+#: toaster-message-unread[other]
+msgctxt "toaster-message-unread[other]"
+msgid "{{ n }} messages marked as unread"
+msgstr "{{ n }} poruka označeno kao nepročitano"
+
+#: toaster-message-move
+msgctxt "toaster-message-move"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-move[one]
+msgid "1 message moved"
+msgstr "Premještena 1 poruka"
+
+#: toaster-message-move[two]
+#, fuzzy
+msgctxt "toaster-message-move[two]"
+msgid "{{ n }} messages moved"
+msgstr "Premještene {{ n }} poruke"
+
+#: toaster-message-move[few]
+msgctxt "toaster-message-move[few]"
+msgid "{{ n }} messages moved"
+msgstr "Premješteno {{ n }} poruka"
+
+#: toaster-message-move[many]
+msgctxt "toaster-message-move[many]"
+msgid "{{ n }} messages moved"
+msgstr "Premješteno {{ n }} poruka"
+
+#: toaster-message-move[other]
+msgctxt "toaster-message-move[other]"
+msgid "{{ n }} messages moved"
+msgstr "Premješteno {{ n }} poruka"
+
+#: toaster-message-delete
+msgctxt "toaster-message-delete"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-delete[one]
+msgid "1 message deleted"
+msgstr "Obrisana 1 poruka"
+
+#: toaster-message-delete[two]
+#, fuzzy
+msgctxt "toaster-message-delete[two]"
+msgid "{{ n }} messages deleted"
+msgstr "Obrisane {{ n }} poruke"
+
+#: toaster-message-delete[few]
+msgctxt "toaster-message-delete[few]"
+msgid "{{ n }} messages deleted"
+msgstr "Obrisano {{ n }} poruka"
+
+#: toaster-message-delete[many]
+msgctxt "toaster-message-delete[many]"
+msgid "{{ n }} messages deleted"
+msgstr "Obrisano {{ n }} poruka"
+
+#: toaster-message-delete[other]
+msgctxt "toaster-message-delete[other]"
+msgid "{{ n }} messages deleted"
+msgstr "Obrisano {{ n }} poruka"
+
+#: toaster-retryable-syncfailed
+msgid "Unable to connect to server"
+msgstr "Povezivanje na poslužitelj nije uspjelo"
+
+#: form-clear-input
+msgid "Remove text"
+msgstr "Ukloni tekst"
+
+#: confirm-dialog-title
+msgid "Confirmation"
+msgstr "Potvrda"
+
+#. # senders-separation-sign separates the email accounts of senders.
+#. # Notice that we have a space after the comma.
+#: senders-separation-sign
+msgid ", "
+msgstr ", "
+
+#. # new-emails refers to the text shown on a notification that users
+#. # get when they receive new, unread email. The ui component that utilizes
+#. # this lives in apps/email/js/message_list_topbar.js.
+#: new-emails
+msgctxt "new-emails"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: new-emails[one]
+msgctxt "new-emails[one]"
+msgid "1 New Email"
+msgstr "1 nova e-pošta"
+
+#: new-emails[two]
+#, fuzzy
+msgctxt "new-emails[two]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} nove e-pošte"
+
+#: new-emails[few]
+msgctxt "new-emails[few]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} novih e-pošti"
+
+#: new-emails[many]
+msgctxt "new-emails[many]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} novih e-pošti"
+
+#: new-emails[other]
+msgctxt "new-emails[other]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} novih e-pošti"
+
+#. # new-emails-notify-one-account is used when a system notification is generated during
+#. # a periodic background sync with the server. Since this goes to the system's
+#. # notification area, and user has only one account configured with the email App.
+#: new-emails-notify-one-account
+msgctxt "new-emails-notify-one-account"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: new-emails-notify-one-account[one]
+msgctxt "new-emails-notify-one-account[one]"
+msgid "1 New Email"
+msgstr "1 nova e-pošta"
+
+#: new-emails-notify-one-account[two]
+msgctxt "new-emails-notify-one-account[two]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} nove e-pošte"
+
+#: new-emails-notify-one-account[few]
+msgctxt "new-emails-notify-one-account[few]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} novih e-pošti"
+
+#: new-emails-notify-one-account[many]
+msgctxt "new-emails-notify-one-account[many]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} novih e-pošti"
+
+#: new-emails-notify-one-account[other]
+msgctxt "new-emails-notify-one-account[other]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} novih e-pošti"
+
+#. # new-emails-notify-multiple-accounts is used in the same situation
+#. # as new-emails-notify-one-account.
+#. # In this case, the user has more than one account configured
+#. # with the email app.
+#: new-emails-notify-multiple-accounts
+msgctxt "new-emails-notify-multiple-accounts"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: new-emails-notify-multiple-accounts[one]
+msgid "1 New Email ({{ accountName }})"
+msgstr "1 nova e-pošta ({{ accountName }})"
+
+#: new-emails-notify-multiple-accounts[two]
+#, fuzzy
+msgctxt "new-emails-notify-multiple-accounts[two]"
+msgid "{{ n }} New Emails ({{ accountName }})"
+msgstr "{{ n }} nove e-pošte ({{ accountName }})"
+
+#: new-emails-notify-multiple-accounts[few]
+msgctxt "new-emails-notify-multiple-accounts[few]"
+msgid "{{ n }} New Emails ({{ accountName }})"
+msgstr "{{ n }} novih e-pošta ({{ accountName }})"
+
+#: new-emails-notify-multiple-accounts[many]
+msgctxt "new-emails-notify-multiple-accounts[many]"
+msgid "{{ n }} New Emails ({{ accountName }})"
+msgstr "{{ n }} novih e-pošta ({{ accountName }})"
+
+#: new-emails-notify-multiple-accounts[other]
+msgctxt "new-emails-notify-multiple-accounts[other]"
+msgid "{{ n }} New Emails ({{ accountName }})"
+msgstr "{{ n }} novih e-pošta ({{ accountName }})"
+
+#. # new-emails-notify-multiple-accounts-body is used in the same situation
+#. # as new-emails-notify-multiple-accounts.
+#. # This is the body part of the notification.
+#: new-emails-notify-multiple-accounts-body
+msgid "{{ from }} “{{ subject }}”"
+msgstr "{{ from }} “{{ subject }}”"
