@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-06 22:42+0100\n"
+"POT-Creation-Date: 2014-01-20 21:57+0100\n"
 "PO-Revision-Date: 2014-01-18 12:23+0000\n"
 "Last-Translator: Selim <selim@sum.lu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1-rc1\n"
+"X-Generator: Translate Toolkit 1.11.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1390047831.000000\n"
@@ -234,6 +234,11 @@ msgctxt "setup-manual-imap-header"
 msgid "IMAP settings"
 msgstr "IMAP ayarları"
 
+#: setup-manual-pop3-header
+msgctxt "setup-manual-pop3-header"
+msgid "POP3 settings"
+msgstr ""
+
 #: setup-manual-smtp-header
 msgctxt "setup-manual-smtp-header"
 msgid "SMTP settings"
@@ -323,13 +328,15 @@ msgid "POP3 Disabled"
 msgstr "POP3 devre dışı"
 
 #: setup-gmail-pop3-message
+#, fuzzy
 msgid "You must enable POP3 on your Gmail account"
-msgstr ""
+msgstr "Gmail hesabınız için POP3'ü etkinleştirmelisiniz"
 
 #: setup-gmail-pop3-retry
+#, fuzzy
 msgctxt "setup-gmail-pop3-retry"
 msgid "Retry"
-msgstr ""
+msgstr "Tekrar dene"
 
 #: settings-main-header
 msgid "Mail Settings"
@@ -544,6 +551,7 @@ msgid "IMAP settings"
 msgstr "IMAP ayarları"
 
 #: settings-pop3-label
+msgctxt "settings-pop3-label"
 msgid "POP3 settings"
 msgstr ""
 
@@ -754,6 +762,40 @@ msgstr ""
 msgid "OK"
 msgstr "Tamam"
 
+#. # If a file is attached to an email but it does not have a name, this
+#. # name is used. There could be multiple ones attached, so the count
+#. # of the attachment in the attachment list is used in the name
+#: default-attachment-name
+#, fuzzy
+msgctxt "default-attachment-name"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: default-attachment-name[one]
+#, fuzzy
+msgid "attachment1"
+msgstr "Ekler"
+
+#: default-attachment-name[two]
+msgctxt "default-attachment-name[two]"
+msgid "attachment{{ n }}"
+msgstr ""
+
+#: default-attachment-name[few]
+msgctxt "default-attachment-name[few]"
+msgid "attachment{{ n }}"
+msgstr ""
+
+#: default-attachment-name[many]
+msgctxt "default-attachment-name[many]"
+msgid "attachment{{ n }}"
+msgstr ""
+
+#: default-attachment-name[other]
+msgctxt "default-attachment-name[other]"
+msgid "attachment{{ n }}"
+msgstr ""
+
 #: attachment-size-kib
 msgid "{{kilobytes}}K"
 msgstr "{{kilobytes}} K"
@@ -905,9 +947,10 @@ msgid "Delete {{ n }} email messages?"
 msgstr "{{ n }} e-posta iletisi silinsin mi?"
 
 #: message-large-message-cancel
+#, fuzzy
 msgctxt "message-large-message-cancel"
 msgid "Cancel"
-msgstr ""
+msgstr "İptal"
 
 #: message-large-message-ok
 msgid "Continue"
