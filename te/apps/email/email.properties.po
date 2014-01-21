@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-06 22:42+0100\n"
+"POT-Creation-Date: 2014-01-21 12:49+0100\n"
 "PO-Revision-Date: 2013-07-02 08:49+0000\n"
 "Last-Translator: Veeven <veeven@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -116,7 +116,8 @@ msgstr "వాడుకరిపేరు లేదా సంకేతపదం 
 #. # like gmail over IMAP indicating that IMAP is disabled for the account or
 #. # domain have their own error code: setup-error-imap-disabled.
 #: setup-error-not-authorized
-msgid "The server said you're not authorized to create an account"
+#, fuzzy
+msgid "The server said you’re not authorized to create an account"
 msgstr "ఖాతా సృష్టించుకోవడానికి మీరు ధృవీకృత వ్యక్తి కాదని సేవకము అంటున్నది"
 
 #. # The error for when the server is not good enough to be supported
@@ -227,6 +228,11 @@ msgstr "ఖాతా రకం"
 msgctxt "setup-manual-imap-header"
 msgid "IMAP settings"
 msgstr "ఐమ్యాప్ అమరికలు"
+
+#: setup-manual-pop3-header
+msgctxt "setup-manual-pop3-header"
+msgid "POP3 settings"
+msgstr ""
 
 #: setup-manual-smtp-header
 msgctxt "setup-manual-smtp-header"
@@ -545,6 +551,7 @@ msgid "IMAP settings"
 msgstr "ఐమ్యాప్ అమరికలు"
 
 #: settings-pop3-label
+msgctxt "settings-pop3-label"
 msgid "POP3 settings"
 msgstr ""
 
@@ -755,6 +762,38 @@ msgstr ""
 #: dialog-button-ok
 msgid "OK"
 msgstr "సరే"
+
+#. # If a file is attached to an email but it does not have a name, this
+#. # name is used. There could be multiple ones attached, so the count
+#. # of the attachment in the attachment list is used in the name
+#: default-attachment-name
+msgctxt "default-attachment-name"
+msgid "{[ plural(n) ]}"
+msgstr ""
+
+#: default-attachment-name[one]
+msgid "attachment1"
+msgstr ""
+
+#: default-attachment-name[two]
+msgctxt "default-attachment-name[two]"
+msgid "attachment{{ n }}"
+msgstr ""
+
+#: default-attachment-name[few]
+msgctxt "default-attachment-name[few]"
+msgid "attachment{{ n }}"
+msgstr ""
+
+#: default-attachment-name[many]
+msgctxt "default-attachment-name[many]"
+msgid "attachment{{ n }}"
+msgstr ""
+
+#: default-attachment-name[other]
+msgctxt "default-attachment-name[other]"
+msgid "attachment{{ n }}"
+msgstr ""
 
 #: attachment-size-kib
 msgid "{{kilobytes}}K"

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-06 22:42+0100\n"
+"POT-Creation-Date: 2014-01-21 12:49+0100\n"
 "PO-Revision-Date: 2013-12-30 15:53+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.11.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -121,7 +121,8 @@ msgstr ""
 #. # like gmail over IMAP indicating that IMAP is disabled for the account or
 #. # domain have their own error code: setup-error-imap-disabled.
 #: setup-error-not-authorized
-msgid "The server said you're not authorized to create an account"
+#, fuzzy
+msgid "The server said you’re not authorized to create an account"
 msgstr "Thuirt am frithealaiche nach eil cead agad cunntas a chruthachadh"
 
 #. # The error for when the server is not good enough to be supported
@@ -244,6 +245,12 @@ msgstr "Seòrsa a' chunntais"
 msgctxt "setup-manual-imap-header"
 msgid "IMAP settings"
 msgstr "Roghainnean IMAP"
+
+#: setup-manual-pop3-header
+#, fuzzy
+msgctxt "setup-manual-pop3-header"
+msgid "POP3 settings"
+msgstr "Roghainnean POP3"
 
 #: setup-manual-smtp-header
 msgctxt "setup-manual-smtp-header"
@@ -559,6 +566,8 @@ msgid "IMAP settings"
 msgstr "Roghainnean IMAP"
 
 #: settings-pop3-label
+#, fuzzy
+msgctxt "settings-pop3-label"
 msgid "POP3 settings"
 msgstr "Roghainnean POP3"
 
@@ -770,6 +779,40 @@ msgstr ""
 #: dialog-button-ok
 msgid "OK"
 msgstr "Ceart ma-thà"
+
+#. # If a file is attached to an email but it does not have a name, this
+#. # name is used. There could be multiple ones attached, so the count
+#. # of the attachment in the attachment list is used in the name
+#: default-attachment-name
+#, fuzzy
+msgctxt "default-attachment-name"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: default-attachment-name[one]
+#, fuzzy
+msgid "attachment1"
+msgstr "Ceanglachain"
+
+#: default-attachment-name[two]
+msgctxt "default-attachment-name[two]"
+msgid "attachment{{ n }}"
+msgstr ""
+
+#: default-attachment-name[few]
+msgctxt "default-attachment-name[few]"
+msgid "attachment{{ n }}"
+msgstr ""
+
+#: default-attachment-name[many]
+msgctxt "default-attachment-name[many]"
+msgid "attachment{{ n }}"
+msgstr ""
+
+#: default-attachment-name[other]
+msgctxt "default-attachment-name[other]"
+msgid "attachment{{ n }}"
+msgstr ""
 
 #: attachment-size-kib
 msgid "{{kilobytes}}K"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-30 01:18+0100\n"
+"POT-Creation-Date: 2014-01-21 12:49+0100\n"
 "PO-Revision-Date: 2013-11-04 20:40+0000\n"
 "Last-Translator: Mikeyy <mihovil.stanic@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Translate Toolkit 1.10.0\n"
+"X-Generator: Translate Toolkit 1.11.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1383597621.000000\n"
@@ -37,6 +37,10 @@ msgstr "Otkaži"
 #: close
 msgid "Close"
 msgstr "Zatvori"
+
+#: skip
+msgid "Skip"
+msgstr ""
 
 #. # utility tray mobile states
 #: airplaneMode
@@ -98,7 +102,8 @@ msgstr "{{date}}, {{operator}}"
 
 #. # see http://pubs.opengroup.org/onlinepubs/007908799/xsh/strftime.html
 #: statusbarDateFormat
-msgid "%b. %e"
+#, fuzzy
+msgid "%b %e"
 msgstr "%e. %b"
 
 #. # either 24-hour format (%H:%M) or 12-hour without AM/PM (%I:%M)
@@ -187,6 +192,19 @@ msgstr "Ponovno pokretanje"
 msgid "Power off"
 msgstr "Isključivanje"
 
+#: asyncpanzoom
+msgid "Disable APZ for Apps"
+msgstr ""
+
+#: asyncpanzoomOff
+msgid "Enable APZ for Apps"
+msgstr ""
+
+#. # cards view
+#: no-recent-apps
+msgid "No recent apps"
+msgstr ""
+
 #. # permissions
 #. # LOCALIZATION NOTE: this is displayed in a permission request dialog box,
 #. # see shared/permissions/permissions.properties for more context.
@@ -205,7 +223,7 @@ msgstr "Dopusti"
 #: dontshare-geolocation
 #, fuzzy
 msgctxt "dontshare-geolocation"
-msgid "Don't Share"
+msgid "Don’t Share"
 msgstr "Ne dijeli"
 
 #: share-geolocation
@@ -217,7 +235,7 @@ msgstr "Dijeli"
 #: dontshare-audio-capture
 #, fuzzy
 msgctxt "dontshare-audio-capture"
-msgid "Don't Share"
+msgid "Don’t Share"
 msgstr "Ne dijeli"
 
 #: share-audio-capture
@@ -229,7 +247,7 @@ msgstr "Dijeli"
 #: dontshare-video-capture
 #, fuzzy
 msgctxt "dontshare-video-capture"
-msgid "Don't Share"
+msgid "Don’t Share"
 msgstr "Ne dijeli"
 
 #: share-video-capture
@@ -241,7 +259,7 @@ msgstr "Dijeli"
 #: dontshare-media-capture
 #, fuzzy
 msgctxt "dontshare-media-capture"
-msgid "Don't Share"
+msgid "Don’t Share"
 msgstr "Ne dijeli"
 
 #: share-media-capture
@@ -249,6 +267,14 @@ msgstr "Ne dijeli"
 msgctxt "share-media-capture"
 msgid "Share"
 msgstr "Dijeli"
+
+#: device-front
+msgid "Front Camera"
+msgstr ""
+
+#: device-back
+msgid "Back Camera"
+msgstr ""
 
 #: remember-my-choice
 msgid "Remember my choice"
@@ -608,6 +634,11 @@ msgstr "Kamera"
 msgid "%A, %B %e"
 msgstr "%A, %e %B"
 
+#. #software buttons
+#: softwareHomeButton.ariaLabel
+msgid "Home"
+msgstr ""
+
 #. # system dialogs
 #: login
 msgid "Sign in"
@@ -648,6 +679,14 @@ msgstr ""
 "{{name}} zahtijeva mrežnu vezu. Isključite zrakoplovni način rada u "
 "Postavkama i povežite se na Wi-Fi ili podatkovnu mrežu."
 
+#: server-not-found
+msgid "Server not found"
+msgstr ""
+
+#: server-not-found-error
+msgid "Can’t find the server at {{name}}."
+msgstr ""
+
 #: network-connection-unavailable
 msgid "Network connection unavailable"
 msgstr "Mrežna veza nije dostupna"
@@ -659,6 +698,14 @@ msgid ""
 msgstr ""
 "{{name}} zahtijeva mrežnu vezu. Pokušajte se povezati na Wi-Fi ili "
 "podatkovnu mrežu."
+
+#: unable-to-connect
+msgid "Unable to connect"
+msgstr ""
+
+#: tap-to-retry
+msgid "Tap to retry"
+msgstr ""
 
 #: try-again
 msgid "Try again"
@@ -711,7 +758,8 @@ msgstr ""
 "riješavanju problema? (Izvještaji se šalju samo preko Wi-Fi veze)"
 
 #: crash-info-link
-msgid "What's in a crash report?"
+#, fuzzy
+msgid "What’s in a crash report?"
 msgstr "Što sadrži izvještaj o rušenju?"
 
 #: crash-always-report
@@ -719,7 +767,8 @@ msgid "Always send Mozilla a report when a crash occurs."
 msgstr "Uvijek šalji izvještaj kada dođe do rušenja."
 
 #: crash-dont-send
-msgid "Don't Send"
+#, fuzzy
+msgid "Don’t Send"
 msgstr "Ne šalji"
 
 #: crash-end
@@ -814,11 +863,11 @@ msgstr "Prihvatiti Bluetooth transfer datoteke?"
 msgid "{{deviceName}} would like to transfer {{fileName}} ({{fileSize}})."
 msgstr "{{deviceName}} želi transferirati {{fileName}} ({{fileSize}})."
 
-#: notification-fileTransfer-title
+#: transfer-confirmation-title
 msgid "{{deviceName}}"
 msgstr "Prihvati datoteku?"
 
-#: notification-fileTransfer-description
+#: transfer-confirmation-description
 msgid "Review transfer request."
 msgstr "Primanje datoteke s drugog uređaja"
 
@@ -880,6 +929,14 @@ msgstr "Transferiraj"
 msgid "Cancel Bluetooth file transfer?"
 msgstr "Otkazati Bluetooth transfer datoteke?"
 
+#: transfer-has-started-title
+msgid "The transfer has started"
+msgstr ""
+
+#: transfer-has-started-description
+msgid "Check the progress in Notification center"
+msgstr ""
+
 #: transferFinished-sentSuccessful-title
 msgid "File sent"
 msgstr "Datoteka poslana"
@@ -895,6 +952,15 @@ msgstr "Slanje datoteke nije uspjelo"
 #: transferFinished-receivedFailed-title
 msgid "File could not be received"
 msgstr "Primanje datoteke nije uspjelo"
+
+#: transferReport-title
+msgid "Transfer report:"
+msgstr ""
+
+#: transferReport-description
+msgid ""
+"{{numSuccessful}} files successful, {{numUnsuccessful}} files unsuccessful"
+msgstr ""
 
 #: unknown-file
 msgid "Unknown file"
@@ -917,11 +983,13 @@ msgid "Can not receive file"
 msgstr "Nije moguće primiti datoteku"
 
 #: cannotGetStorageState
-msgid "Can not get device storage state"
+#, fuzzy
+msgid "Can not get device storage state."
 msgstr "Nije moguće dobiti stanje memorije uređaja"
 
-#: sdcard-not-exist
-msgid "No memory card found (Please insert a memory card)"
+#: sdcard-not-exist2
+#, fuzzy
+msgid "No memory card found. Please insert a memory card."
 msgstr "Memorijska kartica nije pronađena (molim umetnite memorijsku karticu)"
 
 #: sdcard-in-use
@@ -1009,6 +1077,10 @@ msgstr "Promijeni PIN"
 msgid "Enter SIM PIN"
 msgstr "Upišite PIN"
 
+#: multiSIMpinTitle
+msgid "Enter SIM {{n}} PIN"
+msgstr ""
+
 #: pukTitle
 msgid "Enter PUK code"
 msgstr "Upišite PUK kôd"
@@ -1035,7 +1107,8 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: inputCodeRetriesLeft[one]
-msgid "last try."
+#, fuzzy
+msgid "Last try."
 msgstr "posljednji pokušaj."
 
 #: inputCodeRetriesLeft[two]
@@ -1490,6 +1563,61 @@ msgstr "Pritisnite za promjenu metode unosa"
 #: layout-selection
 msgid "Layout selection"
 msgstr ""
+
+#. # Shrinking UI
+#: shrinking-tip
+msgid "Swipe to share"
+msgstr ""
+
+#. # Download Manager
+#: download_started
+msgid "Download started"
+msgstr ""
+
+#: download_stopped
+msgid "Download stopped"
+msgstr ""
+
+#: download_downloading
+#, fuzzy
+msgid "Downloading…"
+msgstr "Preuzimanje"
+
+#: download_succeeded
+msgid "Download complete"
+msgstr ""
+
+#: download_failed
+msgid "Download failed"
+msgstr ""
+
+#: download_text_by_default
+msgid "{{name}}"
+msgstr ""
+
+#: download_downloading_text
+msgid "{{name}} - {{percentage}} %"
+msgstr ""
+
+#. # Rocketbar
+#: search-or-type-address.placeholder
+msgid "Search or type address"
+msgstr ""
+
+#, fuzzy
+#~ msgctxt "dontshare-audio-capture"
+#~ msgid "Don't Share"
+#~ msgstr "Ne dijeli"
+
+#, fuzzy
+#~ msgctxt "dontshare-video-capture"
+#~ msgid "Don't Share"
+#~ msgstr "Ne dijeli"
+
+#, fuzzy
+#~ msgctxt "dontshare-media-capture"
+#~ msgid "Don't Share"
+#~ msgstr "Ne dijeli"
 
 #~ msgid "Don't Share"
 #~ msgstr "Ne dijeli"

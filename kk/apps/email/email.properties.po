@@ -1,9 +1,9 @@
-#
+#. extracted from ./apps/email/email.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-06 22:42+0100\n"
+"POT-Creation-Date: 2014-01-21 12:49+0100\n"
 "PO-Revision-Date: 2014-01-05 14:07+0000\n"
 "Last-Translator: Baurzhan <baurthefirst@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.11.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1388930853.000000\n"
@@ -41,36 +41,27 @@ msgstr "Жаңа тіркелгі"
 msgid "Your login information"
 msgstr "Сіздің тіркелгі ақпаратыңыз"
 
-#. # The placeholder for the display name of the user that will be displayed
-#. in the
-#. # account setup screen input box for the display name until they enter any
-#. text
-#. # in the box.  When you send an e-mail, the "From" header contains the
-#. user's
+#. # The placeholder for the display name of the user that will be displayed in the
+#. # account setup screen input box for the display name until they enter any text
+#. # in the box.  When you send an e-mail, the "From" header contains the user's
 #. # display name ("John Doe") as well as the e-mail address
-#. # ("john.doe@example.com").  In the future this input box will be labeled,
-#. but
+#. # ("john.doe@example.com").  In the future this input box will be labeled, but
 #. # it is currently unlabeled because of screen real estate concerns.
 #: setup-info-name.placeholder
 msgctxt "setup-info-name.placeholder"
 msgid "Your name"
 msgstr "Атыңыз"
 
-#. # The placeholder for the user's e-mail address that will be displayed in
-#. the
-#. # account setup screen input box for the e-mail address until they enter
-#. any
+#. # The placeholder for the user's e-mail address that will be displayed in the
+#. # account setup screen input box for the e-mail address until they enter any
 #. # text in the box.  The value will be used to configure the e-mail account.
 #: setup-info-email.placeholder
 msgid "someone@example.com"
 msgstr "someone@example.com"
 
-#. # The placeholder for the user's password that will be displayed in the
-#. account
-#. # setup screen input box for the password until they enter any text in the
-#. box.
-#. # The value will be used to configure the e-mail account and saved for
-#. future
+#. # The placeholder for the user's password that will be displayed in the account
+#. # setup screen input box for the password until they enter any text in the box.
+#. # The value will be used to configure the e-mail account and saved for future
 #. # usage.
 #: setup-info-password.placeholder
 msgctxt "setup-info-password.placeholder"
@@ -109,27 +100,22 @@ msgid "This device is currently offline. Connect to a network and try again."
 msgstr ""
 "Бұл құрылғы желіден ажыратылған. Желіге байланыс орнатып, қайталап көріңіз."
 
-#. # The error for either a bad username or a bad password.  For security
-#. reasons,
-#. # servers try not to distinguish between the two which is why we also
-#. cannot
-#. # tell them apart either.  Also, if the user made a typo, they could have
-#. made
+#. # The error for either a bad username or a bad password.  For security reasons,
+#. # servers try not to distinguish between the two which is why we also cannot
+#. # tell them apart either.  Also, if the user made a typo, they could have made
 #. # it in either place.
 #: setup-error-bad-user-or-pass2
 msgid "Invalid username or password. Check for typos."
 msgstr "Пайдаланушы аты не паролі қате. Қателерге тексеріңіз."
 
-#. # The error for a user having the correct username and password, but the
-#. mail
-#. # server explicitly indicates they don't have permission to talk to the
-#. mail
-#. # server.  This is currently only expected from ActiveSync servers;
-#. situations
+#. # The error for a user having the correct username and password, but the mail
+#. # server explicitly indicates they don't have permission to talk to the mail
+#. # server.  This is currently only expected from ActiveSync servers; situations
 #. # like gmail over IMAP indicating that IMAP is disabled for the account or
 #. # domain have their own error code: setup-error-imap-disabled.
 #: setup-error-not-authorized
-msgid "The server said you're not authorized to create an account"
+#, fuzzy
+msgid "The server said you’re not authorized to create an account"
 msgstr "Сервер сізде тіркелгіні жасауға құқығыңыз жоқ деген жауапты қайтарды"
 
 #. # The error for when the server is not good enough to be supported
@@ -148,11 +134,9 @@ msgstr ""
 "Белгісіз қате орын алды. Желілік байланысыңызды тексеріңіз, немесе қолмен "
 "баптау мүмкіндігін қолданыңыз."
 
-#. # The error for Gmail accounts where 2-factor authentication (where you
-#. receive
+#. # The error for Gmail accounts where 2-factor authentication (where you receive
 #. # a text message on your phone or run a special app) is enabled, and so the
-#. # user needs to create and use an application specific password to allow us
-#. to
+#. # user needs to create and use an application specific password to allow us to
 #. # talk to the server.
 #: setup-error-needs-app-pass
 msgid ""
@@ -163,8 +147,7 @@ msgstr ""
 
 #. # The error for Gmail accounts where IMAP is not enabled.  This can occur
 #. # for individual users where they have disabled IMAP from the settings UI.
-#. # This can also occur for apps-for-domains where the domain is not
-#. configured
+#. # This can also occur for apps-for-domains where the domain is not configured
 #. # to support IMAP.
 #: setup-error-imap-disabled
 msgid "You must enable IMAP for your Gmail account"
@@ -172,16 +155,14 @@ msgstr "Gmail тіркелгіңіз үшін IMAP іске қосуға тиі�
 
 #. # The error for Gmail accounts where POP3 is not enabled.  This can occur
 #. # for individual users where they have disabled POP3 from the settings UI.
-#. # This can also occur for apps-for-domains where the domain is not
-#. configured
+#. # This can also occur for apps-for-domains where the domain is not configured
 #. # to support POP3.
 #: setup-error-pop3-disabled
 #, fuzzy
 msgid "You must enable POP3 for your Gmail account"
 msgstr "Gmail тіркелгіңіз үшін IMAP іске қосуға тиістісіз"
 
-#. # The error for when we are able to contact a server that should be the
-#. mail
+#. # The error for when we are able to contact a server that should be the mail
 #. # server but we are unable to establish a secure connection.
 #: setup-error-bad-security
 msgid ""
@@ -201,30 +182,21 @@ msgstr ""
 "\"{{server}}\" серверімен байланысты орнату мүмкін емес. Мәселе желіде болуы "
 "мүмкін."
 
-#. # The error for when we able to establish a (secure) connection with the
-#. server,
-#. # but there is some type of failure talking to the server that isn't
-#. covered by
-#. # other errors.  Hopefully this is just a temporary problem on the server,
-#. but
-#. # it could also be a fundamental incompatibility between our software and
-#. the
+#. # The error for when we able to establish a (secure) connection with the server,
+#. # but there is some type of failure talking to the server that isn't covered by
+#. # other errors.  Hopefully this is just a temporary problem on the server, but
+#. # it could also be a fundamental incompatibility between our software and the
 #. # server's software.
 #: setup-error-server-problem
 msgid "There is a problem with the server \"{{server}}\". Try again later."
 msgstr ""
 "\"{{server}}\" сервері мәселелерді кешігуде. Кейінірек қайталап көріңіз."
 
-#. # The error for when we are trying to figure out the right server settings
-#. for
-#. # an account based on the e-mail address the user typed in during
-#. configuration,
-#. # but we can't find the right settings.  This is either because the user
-#. made a
-#. # typo and so we are looking for configuration data that does not exist,
-#. there
-#. # were network failures trying to look the information up, or the
-#. information is
+#. # The error for when we are trying to figure out the right server settings for
+#. # an account based on the e-mail address the user typed in during configuration,
+#. # but we can't find the right settings.  This is either because the user made a
+#. # typo and so we are looking for configuration data that does not exist, there
+#. # were network failures trying to look the information up, or the information is
 #. # not available.
 #: setup-error-no-config-info
 msgid ""
@@ -234,8 +206,7 @@ msgstr ""
 "Тіркелгіңізді автоматты түрде баптау мүмкін емес. Эл. пошта адресіңізді "
 "түзетіңіз немесе қолмен баптау мүмкіндігін қолданыңыз."
 
-#. # The error for when the user is trying to set up an account with a server
-#. that
+#. # The error for when the user is trying to set up an account with a server that
 #. # currently indicates it is offline for maintenance.
 #: setup-error-server-maintenance
 msgid "The server \"{{server}}\" is offline for maintenance. Try again later."
@@ -265,6 +236,11 @@ msgstr "Тіркелгі түрі"
 msgctxt "setup-manual-imap-header"
 msgid "IMAP settings"
 msgstr "IMAP баптаулары"
+
+#: setup-manual-pop3-header
+msgctxt "setup-manual-pop3-header"
+msgid "POP3 settings"
+msgstr ""
 
 #: setup-manual-smtp-header
 msgctxt "setup-manual-smtp-header"
@@ -419,8 +395,7 @@ msgstr ""
 msgid "Username and password"
 msgstr ""
 
-#. # In the account picker card, where the user can select which account to
-#. view
+#. # In the account picker card, where the user can select which account to view
 #. # in the app, it shows when each account was last synchronized.
 #: fld-account-picker-last-sync
 #, fuzzy
@@ -489,8 +464,7 @@ msgid "Notify of new mail"
 msgstr "Жаңа пошта туралы ескертіп отыру"
 
 #. # How often to check the mail server for new mail messages for the inbox.
-#. # "Manually" means, do not automatically connect on a periodic sync
-#. interval.
+#. # "Manually" means, do not automatically connect on a periodic sync interval.
 #. # User will manually click the refresh button to check for new messages.
 #: settings-check-every-3min
 msgid "Every 3 minutes"
@@ -581,6 +555,7 @@ msgid "IMAP settings"
 msgstr "IMAP баптаулары"
 
 #: settings-pop3-label
+msgctxt "settings-pop3-label"
 msgid "POP3 settings"
 msgstr ""
 
@@ -790,6 +765,40 @@ msgstr ""
 #: dialog-button-ok
 msgid "OK"
 msgstr "ОК"
+
+#. # If a file is attached to an email but it does not have a name, this
+#. # name is used. There could be multiple ones attached, so the count
+#. # of the attachment in the attachment list is used in the name
+#: default-attachment-name
+#, fuzzy
+msgctxt "default-attachment-name"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: default-attachment-name[one]
+#, fuzzy
+msgid "attachment1"
+msgstr "Салынымдар"
+
+#: default-attachment-name[two]
+msgctxt "default-attachment-name[two]"
+msgid "attachment{{ n }}"
+msgstr ""
+
+#: default-attachment-name[few]
+msgctxt "default-attachment-name[few]"
+msgid "attachment{{ n }}"
+msgstr ""
+
+#: default-attachment-name[many]
+msgctxt "default-attachment-name[many]"
+msgid "attachment{{ n }}"
+msgstr ""
+
+#: default-attachment-name[other]
+msgctxt "default-attachment-name[other]"
+msgid "attachment{{ n }}"
+msgstr ""
 
 #: attachment-size-kib
 msgid "{{kilobytes}}K"
@@ -1049,12 +1058,9 @@ msgid "Folders"
 msgstr "Бумалар"
 
 #. # L10n note: account-last-synced-label is found on the folder list card,
-#. # accessible from the message-list card by clicking the icon in the upper
-#. left
-#. # of the card.  The label is displayed at the bottom of the folder list and
-#. is
-#. # right aligned.  There is currently 1 button to the left of the label and
-#. soon
+#. # accessible from the message-list card by clicking the icon in the upper left
+#. # of the card.  The label is displayed at the bottom of the folder list and is
+#. # right aligned.  There is currently 1 button to the left of the label and soon
 #. # there will be two, so it is desirable to use as short a translation as
 #. # possible.  To the right of the label, a (short) relative timestamp is
 #. # displayed.
@@ -1063,10 +1069,8 @@ msgctxt "account-last-synced-label"
 msgid "Last sync:"
 msgstr "Соңғы синхрондау:"
 
-#. # L10n note: This string is displayed to the right of account-last-synced-
-#. label
-#. # if no folder has ever been synchronized.  Otherwise the space occupied by
-#. this
+#. # L10n note: This string is displayed to the right of account-last-synced-label
+#. # if no folder has ever been synchronized.  Otherwise the space occupied by this
 #. # string will be a (short) relative timestamp.
 #: account-never-synced
 msgid "Never"
@@ -1081,12 +1085,10 @@ msgstr "{name} жазған"
 msgid "Original message"
 msgstr "Түпнұсқа хабарламасы"
 
-#. # L10n note: These are the labels we use when displaying the envelope info
-#. for a
+#. # L10n note: These are the labels we use when displaying the envelope info for a
 #. # message that is forwarded inline.  While automatic recovery of this
 #. # information by clients is made difficult by these strings regularly being
-#. # localized, we attempt to remain consistent with apps such as Thunderbird
-#. for
+#. # localized, we attempt to remain consistent with apps such as Thunderbird for
 #. # at least English.
 #: forward-header-subject
 msgctxt "forward-header-subject"
@@ -1117,12 +1119,9 @@ msgctxt "forward-header-cc"
 msgid "Cc"
 msgstr "Көшірме"
 
-#. # Localized folder names for IMAP servers.  Because the IMAP standard did
-#. not
-#. # originally specify a way to express meta-data about folders, folders may
-#. be
-#. # named in English to express their purpose.  Then e-mail clients (or
-#. webmail
+#. # Localized folder names for IMAP servers.  Because the IMAP standard did not
+#. # originally specify a way to express meta-data about folders, folders may be
+#. # named in English to express their purpose.  Then e-mail clients (or webmail
 #. # interfaces) localize these values.  We do this too, following in the
 #. # footsteps of Thunderbird.
 #: folder-inbox
@@ -1391,12 +1390,9 @@ msgctxt "new-emails[other]"
 msgid "{{ n }} New Emails"
 msgstr "{{ n }} жаңа хат"
 
-#. # new-emails-notify-one-account is used when a system notification is
-#. generated during
-#. # a periodic background sync with the server. Since this goes to the
-#. system's
-#. # notification area, and user has only one account configured with the
-#. email App.
+#. # new-emails-notify-one-account is used when a system notification is generated during
+#. # a periodic background sync with the server. Since this goes to the system's
+#. # notification area, and user has only one account configured with the email App.
 #: new-emails-notify-one-account
 msgctxt "new-emails-notify-one-account"
 msgid "{[ plural(n) ]}"

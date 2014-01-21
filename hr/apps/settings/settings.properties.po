@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-13 15:50+0100\n"
+"POT-Creation-Date: 2014-01-21 12:49+0100\n"
 "PO-Revision-Date: 2013-11-04 20:41+0000\n"
 "Last-Translator: Mikeyy <mihovil.stanic@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Translate Toolkit 1.10.0\n"
+"X-Generator: Translate Toolkit 1.11.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1383597676.000000\n"
@@ -55,6 +55,10 @@ msgstr "Da"
 msgid "No"
 msgstr "Ne"
 
+#: reset
+msgid "Reset"
+msgstr ""
+
 #: cancel
 msgid "Cancel"
 msgstr "Otkaži"
@@ -91,6 +95,18 @@ msgstr "Ne sada"
 msgid "Turn ON"
 msgstr "Uključi"
 
+#: selectASIMCard
+msgid "Select a SIM card"
+msgstr ""
+
+#: sim1
+msgid "SIM 1"
+msgstr ""
+
+#: sim2
+msgid "SIM 2"
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Connectivity
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -111,6 +127,15 @@ msgstr "Geolokacija"
 msgctxt "wifi"
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
+
+#. # LOCALIZATION NOTE (wifi-header): if you leave the original
+#. # en-US value "{{wifi}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "wifi".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: wifi-header
+msgid "{{wifi}}"
+msgstr ""
 
 #: wifi-disabled
 msgid "Turn Wi-Fi on to view available networks."
@@ -193,6 +218,23 @@ msgstr "Izvanmrežno"
 msgid "Manage networks"
 msgstr "Upravljanje mrežama"
 
+#. # LOCALIZATION NOTE (manageNetworks-header): if you leave the original
+#. # en-US value "{{manageNetworks}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "manageNetworks".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: manageNetworks-header
+msgid "{{manageNetworks}}"
+msgstr ""
+
+#: manageCertificates
+msgid "Manage certificates"
+msgstr ""
+
+#: manageCert
+msgid "Manage Cert."
+msgstr ""
+
 #: joinHiddenNetwork
 msgid "Join hidden network"
 msgstr "Spoji se na skrivenu mrežu"
@@ -255,18 +297,47 @@ msgstr "Vrlo dobra"
 msgid "Forget"
 msgstr "Zaboravi"
 
-#: forgetNetwork
-msgid "Forget network"
+#: forgetNetwork-dialog
+#, fuzzy
+msgid "Forget network?"
 msgstr "Zaboravi mrežu"
+
+#: forgetNetwork-confirmation
+msgctxt "forgetNetwork-confirmation"
+msgid "Confirmation"
+msgstr ""
 
 #: authentication
 msgctxt "authentication"
 msgid "Authentication"
 msgstr "Autentifikacija"
 
+#. # LOCALIZATION NOTE (authentication-header): if you leave the original
+#. # en-US value "{{authentication}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "authentication".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: authentication-header
+msgid "{{authentication}}"
+msgstr ""
+
 #: eap
 msgid "EAP method"
 msgstr "EAP metoda"
+
+#: auth-phase2
+msgid "Phase 2 authentication"
+msgstr ""
+
+#: server-certificate
+msgid "Server certificate"
+msgstr ""
+
+#: import-certificate-msg
+msgid ""
+"Notice: If you need to import new certificates, please go to \"Manage "
+"certificates\"."
+msgstr ""
 
 #: identity
 msgid "Identifier"
@@ -306,10 +377,71 @@ msgstr "Nisu pronađene mreže"
 msgid "No known networks"
 msgstr "Nema poznatih mreža"
 
+#: edit
+msgid "Edit"
+msgstr ""
+
+#: certificateList
+msgid "Certificate list"
+msgstr ""
+
+#: noCertificate
+msgid "No imported certificate"
+msgstr ""
+
+#: deleteCertificate
+msgid "Delete certificate"
+msgstr ""
+
+#: importCertificate
+msgid "Import certificate"
+msgstr ""
+
+#: selectCertificateFile
+msgid "Select certificate file"
+msgstr ""
+
+#: enterCertificateNickname
+msgid "Enter certificate nick name"
+msgstr ""
+
+#: nickname
+msgid "Nick name"
+msgstr ""
+
+#: enter-certificate-name-msg
+msgid "You can change the nick name or keep the default name."
+msgstr ""
+
+#: certificate-deletion-failed
+msgid "Certificate deletion failed"
+msgstr ""
+
+#: certificate-deletion-failed-description
+msgid "This may be due to a storage issue, for example."
+msgstr ""
+
+#: certificate-import-failed
+msgid "Certificate import failed"
+msgstr ""
+
+#: certificate-import-failed-description
+msgid "This may be due to a damaged certificate file, for example."
+msgstr ""
+
 #. # Connectivity :: Wi-Fi :: WPS (Wi-Fi Protected Setup)
 #: wpsMessage
 msgid "Connect with WPS"
 msgstr "Poveži WPS-om"
+
+#. # LOCALIZATION NOTE (wpsMessage-header): if you leave the original
+#. # en-US value "{{wpsMessage}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "wpsMessage".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: wpsMessage-header
+msgid "{{wpsMessage}}"
+msgstr ""
 
 #: fullStatus-wps-inprogress
 msgid "WPS is in progress…"
@@ -381,6 +513,15 @@ msgstr "Otkazivanje WPS-a nije uspjelo"
 msgid "Call Settings"
 msgstr "Postavke poziva"
 
+#. # LOCALIZATION NOTE (callSettings-header): if you leave the original
+#. # en-US value "{{callSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "callSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: callSettings-header
+msgid "{{callSettings}}"
+msgstr ""
+
 #: callSettingsQuery
 msgid "Requesting network info…"
 msgstr "Dobivanje informacija o mreži…"
@@ -392,6 +533,15 @@ msgstr "Greška u upitu"
 #: voiceMail
 msgid "Voicemail"
 msgstr "Glasovna pošta"
+
+#. # LOCALIZATION NOTE (voiceMail-header): if you leave the original
+#. # en-US value "{{voiceMail}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "voiceMail".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: voiceMail-header
+msgid "{{voiceMail}}"
+msgstr ""
 
 #: voiceMail-number
 msgid "Voicemail Number"
@@ -424,6 +574,15 @@ msgstr ""
 #: callForwarding
 msgid "Call forwarding"
 msgstr "Proslijeđivanje"
+
+#. # LOCALIZATION NOTE (callForwarding-header): if you leave the original
+#. # en-US value "{{callForwarding}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "callForwarding".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: callForwarding-header
+msgid "{{callForwarding}}"
+msgstr ""
 
 #: callForwardingForward
 msgid "Forward"
@@ -534,9 +693,27 @@ msgctxt "fdnSettings"
 msgid "Fixed dialing numbers"
 msgstr "Fixed dialing numbers"
 
+#. # LOCALIZATION NOTE (fdnSettings-header): if you leave the original
+#. # en-US value "{{fdnSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "fdnSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: fdnSettings-header
+msgid "{{fdnSettings}}"
+msgstr ""
+
 #: fdn-authorizedNumbers
 msgid "Authorized numbers"
 msgstr "Ovlašteni brojevi"
+
+#. # LOCALIZATION NOTE (fdn-authorizedNumbers-header): if you leave the original
+#. # en-US value "{{fdn-authorizedNumbers}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "fdn-authorizedNumbers".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: fdn-authorizedNumbers-header
+msgid "{{fdn-authorizedNumbers}}"
+msgstr ""
 
 #: fdn-authorizedNumbers-desc
 msgid "List of numbers that can be called"
@@ -650,6 +827,14 @@ msgid "Call"
 msgstr "Poziv"
 
 #: fdnAction-edit
+#, fuzzy
+msgctxt "fdnAction-edit"
+msgid "Edit contact"
+msgstr "Uredi kontakt"
+
+#: fdnAction-edit-header
+#, fuzzy
+msgctxt "fdnAction-edit-header"
 msgid "Edit contact"
 msgstr "Uredi kontakt"
 
@@ -662,6 +847,15 @@ msgstr "Obriši kontakt"
 #, fuzzy
 msgid "Messaging Settings"
 msgstr "Postavke poruka"
+
+#. # LOCALIZATION NOTE (messagingSettings-header): if you leave the original
+#. # en-US value "{{messagingSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "messagingSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: messagingSettings-header
+msgid "{{messagingSettings}}"
+msgstr ""
 
 #: message-confirmation
 msgid "Message confirmation"
@@ -724,11 +918,22 @@ msgstr ""
 msgid "Cellular & Data"
 msgstr "Mobilne i podat. veze"
 
+#. # LOCALIZATION NOTE (cellularAndData-header): if you leave the original
+#. # en-US value "{{cellularAndData}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "cellularAndData".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: cellularAndData-header
+msgid "{{cellularAndData}}"
+msgstr ""
+
 #: dataNetwork
 msgid "Carrier"
 msgstr "Operater"
 
 #: dataConnectivity
+#, fuzzy
+msgctxt "dataConnectivity"
 msgid "Data"
 msgstr "Podatkovna veza"
 
@@ -748,9 +953,26 @@ msgstr "Kod ulaska u roaming područje, podatkovna veza će se isključiti."
 msgid "Network operator"
 msgstr "Mrežni operater"
 
+#. # LOCALIZATION NOTE (networkOperator-header): if you leave the original
+#. # en-US value "{{networkOperator}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "networkOperator".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: networkOperator-header
+msgid "{{networkOperator}}"
+msgstr ""
+
 #: availableOperators
 msgid "Network operators in the area"
 msgstr "Mrežni operateri u području"
+
+#: preferredNetworkTypeAlertTitle
+msgid "Preferred network type"
+msgstr ""
+
+#: preferredNetworkTypeAlertErrorMessage
+msgid "Network type could not be set"
+msgstr ""
 
 #: operator-networkType
 msgid "Network type"
@@ -811,6 +1033,10 @@ msgctxt "operator-networkSelect-auto"
 msgid "Automatic"
 msgstr "Automatsko"
 
+#: operator-networkSelect-manual
+msgid "Manual"
+msgstr ""
+
 #: operator-turnAutoSelectOff
 msgid "Turn automatic selection off to view available network operators."
 msgstr ""
@@ -856,13 +1082,40 @@ msgstr "APN"
 msgid "Data settings"
 msgstr "Postavke veze"
 
+#. # LOCALIZATION NOTE (dataSettings-header): if you leave the original
+#. # en-US value "{{dataSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "dataSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: dataSettings-header
+msgid "{{dataSettings}}"
+msgstr ""
+
 #: suplSettings
 msgid "A-GPS settings"
 msgstr "A-GPS postavke"
 
+#. # LOCALIZATION NOTE (suplSettings-header): if you leave the original
+#. # en-US value "{{suplSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "suplSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: suplSettings-header
+msgid "{{suplSettings}}"
+msgstr ""
+
 #: messageSettings
 msgid "Message settings"
 msgstr "Postavke poruka"
+
+#. # LOCALIZATION NOTE (messageSettings-header): if you leave the original
+#. # en-US value "{{messageSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "messageSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: messageSettings-header
+msgid "{{messageSettings}}"
+msgstr ""
 
 #: apnSettings
 msgid "APN settings"
@@ -969,6 +1222,15 @@ msgstr "Zabranjena"
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
+#. # LOCALIZATION NOTE (bluetooth-header): if you leave the original
+#. # en-US value "{{bluetooth}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "bluetooth".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: bluetooth-header
+msgid "{{bluetooth}}"
+msgstr ""
+
 #: bluetooth-enable-msg
 msgid "Turn Bluetooth on to view devices in the area."
 msgstr "Uključite Bluetooth da biste vidjeli uređaje u blizini."
@@ -990,6 +1252,16 @@ msgid "Your device name exceeds {{length}} characters. Please retry again."
 msgstr ""
 "Ime vašeg uređaja prekoračuje ograničenje od {{length}} characters. Molim "
 "pokušajte ponovno."
+
+#: bluetooth-address
+msgid "Bluetooth Address"
+msgstr ""
+
+#: bluetooth-address-unavailable
+#, fuzzy
+msgctxt "bluetooth-address-unavailable"
+msgid "Not available"
+msgstr "Nedostupna"
 
 #: bt-status-nopaired
 msgid "No devices paired"
@@ -1081,6 +1353,7 @@ msgid "Confirm"
 msgstr "Potvrdi"
 
 #: device-option-unpair-confirmation
+msgctxt "device-option-unpair-confirmation"
 msgid "Confirmation"
 msgstr ""
 
@@ -1115,6 +1388,10 @@ msgstr "Nepoznat uređaj"
 #: change-phone-name
 msgid "Change phone name"
 msgstr "Preimenuj telefon"
+
+#: change-phone-name-desc
+msgid "Change the name of your device as it appears in your computer"
+msgstr ""
 
 #: bluetooth-new-name
 msgid "New name"
@@ -1208,6 +1485,11 @@ msgstr ""
 msgid "Bluetooth Request From"
 msgstr "Bluetooth zahtjev od"
 
+#. # Connectivity :: NFC
+#: nfc
+msgid "NFC"
+msgstr ""
+
 #. # Connectivity :: Internet Sharing
 #: SSIDCannotBeEmpty
 msgid "The SSID cannot be empty"
@@ -1216,6 +1498,15 @@ msgstr "SSID ne može biti prazan"
 #: internetSharing
 msgid "Internet sharing"
 msgstr "Dijeljenje Interneta"
+
+#. # LOCALIZATION NOTE (internetSharing-header): if you leave the original
+#. # en-US value "{{internetSharing}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "internetSharing".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: internetSharing-header
+msgid "{{internetSharing}}"
+msgstr ""
 
 #: internetSharing-usb
 msgid "USB"
@@ -1269,6 +1560,15 @@ msgstr "USB dijeljenje"
 msgid "Hotspot settings"
 msgstr "Hotspot"
 
+#. # LOCALIZATION NOTE (hotspotSettings-header): if you leave the original
+#. # en-US value "{{hotspotSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "hotspotSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: hotspotSettings-header
+msgid "{{hotspotSettings}}"
+msgstr ""
+
 #: ssid-name
 msgid "SSID network name"
 msgstr "SSID naziv mreže"
@@ -1285,6 +1585,10 @@ msgstr "WPA (TKIP)"
 msgid "WPA2 (AES)"
 msgstr "WPA2 (AES)"
 
+#: hotspot-password-desc
+msgid "The password must have at least 8 characters."
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Personalization
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -1296,6 +1600,15 @@ msgstr "Personalizacija"
 #: sound
 msgid "Sound"
 msgstr "Zvuk"
+
+#. # LOCALIZATION NOTE (sound-header): if you leave the original
+#. # en-US value "{{sound}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "sound".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: sound-header
+msgid "{{sound}}"
+msgstr ""
 
 #: message
 msgid "Message"
@@ -1396,6 +1709,15 @@ msgstr ""
 msgid "Display"
 msgstr "Zaslon"
 
+#. # LOCALIZATION NOTE (display-header): if you leave the original
+#. # en-US value "{{display}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "display".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: display-header
+msgid "{{display}}"
+msgstr ""
+
 #: brightness
 msgid "Brightness"
 msgstr "Svjetlina"
@@ -1405,7 +1727,8 @@ msgid "Adjust automatically"
 msgstr "Prilagodi automatski"
 
 #: lockScreen
-msgid "Lock Screen"
+#, fuzzy
+msgid "Lock screen"
 msgstr "Zaslon zaključavanja"
 
 #: wallpaper
@@ -1445,6 +1768,15 @@ msgstr "Zaključavanje položaja"
 msgid "Notifications"
 msgstr "Obavijesti"
 
+#. # LOCALIZATION NOTE (notifications-header): if you leave the original
+#. # en-US value "{{notifications}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "notifications".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: notifications-header
+msgid "{{notifications}}"
+msgstr ""
+
 #: lockscreen-notifications
 msgid "Show on lock screen"
 msgstr "Prikaz na zak. zaslonu"
@@ -1453,6 +1785,15 @@ msgstr "Prikaz na zak. zaslonu"
 #: dateAndTime
 msgid "Date & Time"
 msgstr "Datum i vrijeme"
+
+#. # LOCALIZATION NOTE (dateAndTime-header): if you leave the original
+#. # en-US value "{{dateAndTime}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "dateAndTime".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: dateAndTime-header
+msgid "{{dateAndTime}}"
+msgstr ""
 
 #: setTimeAutomatically
 msgid "Set automatically"
@@ -1491,6 +1832,15 @@ msgstr "Jezik i regija"
 msgid "Language"
 msgstr "Jezik"
 
+#. # LOCALIZATION NOTE (language-header): if you leave the original
+#. # en-US value "{{language}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "language".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: language-header
+msgid "{{language}}"
+msgstr ""
+
 #: region
 msgid "Region"
 msgstr "Regija"
@@ -1504,10 +1854,83 @@ msgstr "Primjer formata"
 msgid "%A, %B %d, %Y"
 msgstr "%A %d. %B, %Y"
 
+#. # Personalization :: Sim cards manager
+#: simManager
+msgid "SIM manager"
+msgstr ""
+
+#. # LOCALIZATION NOTE (simManager-header): if you leave the original
+#. # en-US value "{{simManager}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "simManager".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: simManager-header
+msgid "{{simManager}}"
+msgstr ""
+
+#: sim-manager-outgoing-calls
+msgid "Outgoing calls"
+msgstr ""
+
+#: sim-manager-outgoing-call-desc
+msgid "Calls will be sent from"
+msgstr ""
+
+#: sim-manager-outgoing-messages
+msgid "Outgoing messages"
+msgstr ""
+
+#: sim-manager-outgoing-messages-desc
+msgid "SMS will be sent from"
+msgstr ""
+
+#: sim-manager-outgoing-data
+#, fuzzy
+msgctxt "sim-manager-outgoing-data"
+msgid "Data"
+msgstr "Podatkovna veza"
+
+#: sim-manager-outgoing-data-desc-new
+msgid ""
+"Internet connection, MMS, A-GPS and Marketplace payments will be sent from"
+msgstr ""
+
+#: sim-pin-locked
+msgid "SIM PIN locked"
+msgstr ""
+
+#: no-operator
+msgid "No operator"
+msgstr ""
+
+#: cant-disable-simcard-alert
+msgid "At least one SIM should be activated at a time"
+msgstr ""
+
+#: disable-simcard-confirm
+msgid ""
+"SIM {{disableCardIndex}} can’t receive any calls and messages. Outgoing "
+"calls and outgoing messages which are set to SIM {{disableCardIndex}} will "
+"be disabled."
+msgstr ""
+
+#: change-outgoing-data-confirm
+msgid "The current data transfer will be suspended. Continue anyway?"
+msgstr ""
+
 #. # Personalization :: Homescreen
 #: homescreen
 msgid "Homescreen"
 msgstr "Početni ekran"
+
+#. # LOCALIZATION NOTE (homescreen-header): if you leave the original
+#. # en-US value "{{homescreen}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "homescreen".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: homescreen-header
+msgid "{{homescreen}}"
+msgstr ""
 
 #: changeHomescreen
 msgid "Change homescreen"
@@ -1531,9 +1954,14 @@ msgstr "Instalirane metode unosa"
 msgid "Keyboards"
 msgstr "Tipkovnice"
 
-#: keyboardLayouts
-msgid "Keyboard layouts"
-msgstr "Rasporedi tipkovnice"
+#. # LOCALIZATION NOTE (keyboards-header): if you leave the original
+#. # en-US value "{{keyboards}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "keyboards".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: keyboards-header
+msgid "{{keyboards}}"
+msgstr ""
 
 #: numberKeyboardLayouts
 msgid "Number layouts"
@@ -1551,9 +1979,27 @@ msgstr "Numerička tipkovnica"
 msgid "Selected keyboards"
 msgstr "Odabrane tipkovnice"
 
+#. # LOCALIZATION NOTE (selectedKeyboards-header): if you leave the original
+#. # en-US value "{{selectedKeyboards}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "selectedKeyboards".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: selectedKeyboards-header
+msgid "{{selectedKeyboards}}"
+msgstr ""
+
 #: addMoreKeyboards
 msgid "Add more keyboards"
 msgstr "Dodaj više tipkovnica"
+
+#. # LOCALIZATION NOTE (addMoreKeyboards-header): if you leave the original
+#. # en-US value "{{addMoreKeyboards}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "addMoreKeyboards".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: addMoreKeyboards-header
+msgid "{{addMoreKeyboards}}"
+msgstr ""
 
 #: mustHaveOneKeyboard
 msgid "At least one {{type}} keyboard should be selected"
@@ -1611,14 +2057,41 @@ msgstr "Lozinka: {{code}}"
 msgid "Screen lock"
 msgstr "Zaključavanje telefona"
 
+#. # LOCALIZATION NOTE (phoneLock-header): if you leave the original
+#. # en-US value "{{phoneLock}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "phoneLock".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: phoneLock-header
+msgid "{{phoneLock}}"
+msgstr ""
+
 #: simSecurity
 msgid "SIM security"
 msgstr "Sigurnost SIM kartice"
+
+#. # LOCALIZATION NOTE (simSecurity-header): if you leave the original
+#. # en-US value "{{simSecurity}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "simSecurity".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: simSecurity-header
+msgid "{{simSecurity}}"
+msgstr ""
 
 #. # Security :: App permissions
 #: appPermissions
 msgid "App permissions"
 msgstr "Dopuštenja aplikacija"
+
+#. # LOCALIZATION NOTE (appPermissions-header): if you leave the original
+#. # en-US value "{{appPermissions}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "appPermissions".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: appPermissions-header
+msgid "{{appPermissions}}"
+msgstr ""
 
 #: author
 msgid "Author"
@@ -1699,9 +2172,21 @@ msgstr "Promijeni"
 msgid "Create"
 msgstr "Stvori"
 
-#: create-passcode
+#: create-a-passcode
 msgid "Create a Passcode"
 msgstr "Stvori lozinku"
+
+#: passcode
+#, fuzzy
+msgctxt "passcode"
+msgid "Passcode"
+msgstr "Lozinka"
+
+#: passcode-heading
+#, fuzzy
+msgctxt "passcode-heading"
+msgid "Passcode"
+msgstr "Lozinka"
 
 #: enter-passcode
 msgid "Enter passcode"
@@ -1723,12 +2208,9 @@ msgstr "Lozinka nije ispravna"
 msgid "Passcode doesn’t match. Try again."
 msgstr "Lozinka se ne podudara. Pokušajte ponovno."
 
-#: passcode
-msgid "Passcode"
-msgstr "Lozinka"
-
 #: confirm-passcode
-msgid "Confirm Passcode"
+#, fuzzy
+msgid "Confirm passcode"
 msgstr "Potvrdite lozinku"
 
 #: immediately
@@ -1780,11 +2262,13 @@ msgid "After 4 hours"
 msgstr "Nakon 4 sata"
 
 #: require-passcode
-msgid "Require Passcode"
+#, fuzzy
+msgid "Require passcode"
 msgstr "Zahtijevaj lozinku"
 
 #: change-passcode
-msgid "Change Passcode"
+#, fuzzy
+msgid "Change passcode"
 msgstr "Promijeni lozinku"
 
 #. # Security :: SIM PIN Lock
@@ -1799,6 +2283,10 @@ msgstr "PIN SIM kartice"
 #: simPin2
 msgid "SIM PIN2"
 msgstr "PIN2 SIM kartice"
+
+#: simPinWithIndex
+msgid "SIM {{index}} PIN"
+msgstr ""
 
 #: pukCode
 msgid "PUK code"
@@ -1831,6 +2319,14 @@ msgstr ""
 msgid "Change PIN"
 msgstr "Promijeni PIN"
 
+#: simPinChangedSuccessfully
+msgid "SIM PIN changed successfully"
+msgstr ""
+
+#: simPinChangedSuccessfullyWithIndex
+msgid "SIM {{index}} PIN changed successfully"
+msgstr ""
+
 #: pinTitle
 msgid "Enter SIM PIN"
 msgstr "Upišite PIN"
@@ -1857,7 +2353,8 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: inputCodeRetriesLeft[one]
-msgid "last try."
+#, fuzzy
+msgid "Last try."
 msgstr "posljednji pokušaj."
 
 #: inputCodeRetriesLeft[two]
@@ -2061,10 +2558,23 @@ msgstr "Nepoznato stanje SIM kartice"
 msgid "SIM card not ready"
 msgstr "SIM kartica nije spremna"
 
+#: simCardIllegal
+msgid "Unauthorized SIM card"
+msgstr ""
+
 #. # Security :: Do Not Track
 #: doNotTrack
 msgid "Do Not Track"
 msgstr "Ne prati me"
+
+#. # LOCALIZATION NOTE (doNotTrack-header): if you leave the original
+#. # en-US value "{{doNotTrack}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "doNotTrack".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: doNotTrack-header
+msgid "{{doNotTrack}}"
+msgstr ""
 
 #: doNotTrackActions
 msgid "Tell websites and apps that I do not want to be tracked"
@@ -2109,9 +2619,9 @@ msgstr ""
 msgid "Storage"
 msgstr "Spremište"
 
-#: enableUSBStorage
-msgid "Enable USB storage"
-msgstr "USB spremište"
+#: enableUSBStorage1
+msgid "USB storage"
+msgstr ""
 
 #. # Storage :: Application storage
 #: deviceStorage
@@ -2129,6 +2639,15 @@ msgstr "Izvadi USB kabel za prekid"
 #: appStorage
 msgid "Application storage"
 msgstr "Spremište aplikacija"
+
+#. # LOCALIZATION NOTE (appStorage-header): if you leave the original
+#. # en-US value "{{appStorage}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "appStorage".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: appStorage-header
+msgid "{{appStorage}}"
+msgstr ""
 
 #: byteUnit-B
 msgid "B"
@@ -2218,6 +2737,15 @@ msgstr "{{list}} dijeljeni"
 msgid "Media storage"
 msgstr "Spremište multimedije"
 
+#. # LOCALIZATION NOTE (mediaStorage-header): if you leave the original
+#. # en-US value "{{mediaStorage}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "mediaStorage".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: mediaStorage-header
+msgid "{{mediaStorage}}"
+msgstr ""
+
 #: internalStorage
 msgctxt "internalStorage"
 msgid "Internal Storage"
@@ -2302,8 +2830,9 @@ msgstr ""
 "preuzeti sadržaji."
 
 #: change-default-location-confirm
+#, fuzzy
 msgid ""
-"Changing the default media storage volume will effect where photos, videos, "
+"Changing the default media storage volume will affect where photos, videos, "
 "downloads and other media will be saved to by default. Existing data will "
 "remain in its current location."
 msgstr ""
@@ -2332,6 +2861,15 @@ msgstr "Pomoć"
 msgid "Device information"
 msgstr "Informacije o uređaju"
 
+#. # LOCALIZATION NOTE (deviceInfo-header): if you leave the original
+#. # en-US value "{{deviceInfo}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "deviceInfo".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: deviceInfo-header
+msgid "{{deviceInfo}}"
+msgstr ""
+
 #: deviceInfo-IMEI
 msgid "IMEI"
 msgstr "IMEI"
@@ -2344,6 +2882,19 @@ msgstr "ICCID"
 msgid "Phone number"
 msgstr "Broj telefona"
 
+#: downloads
+msgid "Downloads"
+msgstr ""
+
+#. # LOCALIZATION NOTE (downloads-header): if you leave the original
+#. # en-US value "{{downloads}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "downloads".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: downloads-header
+msgid "{{downloads}}"
+msgstr ""
+
 #: unknown-phoneNumber
 msgid "Unknown"
 msgstr "Nepoznat"
@@ -2355,6 +2906,15 @@ msgstr "Git commit info"
 #: developer
 msgid "Developer"
 msgstr "Programer"
+
+#. # LOCALIZATION NOTE (developer-header): if you leave the original
+#. # en-US value "{{developer}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "developer".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: developer-header
+msgid "{{developer}}"
+msgstr ""
 
 #: software
 msgid "Software"
@@ -2372,6 +2932,10 @@ msgstr "Debug"
 msgid "Grid"
 msgstr "Grid"
 
+#: developer-menu
+msgid "Developer Menu"
+msgstr ""
+
 #: fps-monitor
 msgid "Show frames per second"
 msgstr "Prikaži FPS"
@@ -2380,9 +2944,17 @@ msgstr "Prikaži FPS"
 msgid "Draw layers borders"
 msgstr "Crtaj okvire slojeva"
 
+#: layers-composer2d-enabled
+msgid "Enable hardware composer"
+msgstr ""
+
 #: paint-flashing
 msgid "Flash repainted area"
 msgstr "Osvijetli ponovo obojano područje"
+
+#: apz-force-enable
+msgid "Enable APZ for all content processes"
+msgstr ""
 
 #: log-animations
 msgid "Log slow animations"
@@ -2391,6 +2963,20 @@ msgstr "Bilježi spore animacije"
 #: remote-debugging
 msgid "Remote debugging"
 msgstr "Udaljeni debugging"
+
+#: debugger-disabled
+#, fuzzy
+msgctxt "debugger-disabled"
+msgid "Disabled"
+msgstr "Onemogućeno"
+
+#: debugger-adb-only
+msgid "ADB only"
+msgstr ""
+
+#: debugger-adb-and-devtools
+msgid "ADB and Devtools"
+msgstr ""
 
 #: wifi-debugging
 msgid "Wi-Fi output in adb"
@@ -2447,6 +3033,15 @@ msgstr "Posljednje ažuriranje"
 #: more-info
 msgid "More Information"
 msgstr "Više informacija"
+
+#. # LOCALIZATION NOTE (more-info-header): if you leave the original
+#. # en-US value "{{more-info}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "more-info".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: more-info-header
+msgid "{{more-info}}"
+msgstr ""
 
 #: softwareUpdates
 msgid "Software updates"
@@ -2520,26 +3115,30 @@ msgstr "Saznajte više"
 msgid "Reset Phone"
 msgstr "Resetiraj telefon"
 
-#: reset-warning-1
-msgid ""
-"CAUTION: Resetting will erase all your data, including any apps you’ve "
-"purchased."
+#: reset-warning-title
+msgid "CAUTION"
 msgstr ""
-"UPOZORENJE: Resetiranje će obrisati sve vaše podatke, uključujući i "
-"aplikacije koje ste kupili."
 
-#: reset-warning-2
+#: reset-warning-body
 msgid ""
-"The phone will be restored to its factory condition. None of your settings "
-"or data will be saved."
+"Resetting will erase all your data, including any apps you’ve purchased. The "
+"phone will be restored to its factory condition. None of your settings or "
+"data will be saved."
 msgstr ""
-"Telefon će se vratiti u tvorničko stanje. Sve vaše postavke i podaci će biti "
-"poništeni."
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
 #: your-rights
 msgid "Your Rights"
 msgstr "Vaša prava"
+
+#. # LOCALIZATION NOTE (your-rights-header): if you leave the original
+#. # en-US value "{{your-rights}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "your-rights".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: your-rights-header
+msgid "{{your-rights}}"
+msgstr ""
 
 #: about-your-rights-0
 msgid ""
@@ -2593,13 +3192,40 @@ msgstr ""
 msgid "Legal Information"
 msgstr "Pravne informacije"
 
+#. # LOCALIZATION NOTE (about-legal-info-header): if you leave the original
+#. # en-US value "{{about-legal-info}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "about-legal-info".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: about-legal-info-header
+msgid "{{about-legal-info}}"
+msgstr ""
+
 #: open-source-notices
 msgid "Open Source Notices"
 msgstr "Napom. otvor. kôda"
 
+#. # LOCALIZATION NOTE (open-source-notices-header): if you leave the original
+#. # en-US value "{{open-source-notices}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "open-source-notices".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: open-source-notices-header
+msgid "{{open-source-notices}}"
+msgstr ""
+
 #: obtaining-source-code
 msgid "Obtaining Source Code"
 msgstr "Nabava izvor. kôda"
+
+#. # LOCALIZATION NOTE (obtaining-source-code-header): if you leave the original
+#. # en-US value "{{obtaining-source-code}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "obtaining-source-code".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: obtaining-source-code-header
+msgid "{{obtaining-source-code}}"
+msgstr ""
 
 #: about-mozilla
 msgid "Mozilla"
@@ -2612,6 +3238,15 @@ msgstr "Ostalo"
 #: your-privacy
 msgid "Your Privacy"
 msgstr "Vaša privatnost"
+
+#. # LOCALIZATION NOTE (your-privacy-header): if you leave the original
+#. # en-US value "{{your-privacy}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "your-privacy".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: your-privacy-header
+msgid "{{your-privacy}}"
+msgstr ""
 
 #: licensing-1
 msgid ""
@@ -2662,6 +3297,10 @@ msgstr "Pokreni upute"
 msgid "No first time use app found"
 msgstr "Nije pronađena aplikacija prvog korištenja"
 
+#: rocketbar-enabled
+msgid "Rocketbar enabled"
+msgstr ""
+
 #: software-button-enabled
 msgid "Enable software home button"
 msgstr "Omogući softversku 'home' tipku"
@@ -2670,14 +3309,52 @@ msgstr "Omogući softversku 'home' tipku"
 msgid "Home gesture enabled"
 msgstr ""
 
+#: edgesgesture-enabled
+msgid "Edges gesture enabled"
+msgstr ""
+
+#: continuoustransition-enabled
+msgid "Continuous transition enabled"
+msgstr ""
+
 #: debug-gaia-enabled
 msgid "Gaia debug traces"
+msgstr ""
+
+#: enable-app-transition
+msgid "App transition enabled"
+msgstr ""
+
+#. # Device :: Downloads
+#: downloads-edit
+msgid "Edit downloads"
+msgstr ""
+
+#: downloads-select-all
+msgid "Select all"
+msgstr ""
+
+#: downloads-deselect-all
+msgid "Deselect all"
+msgstr ""
+
+#: downloads-delete
+msgid "Delete"
 msgstr ""
 
 #. # Device :: Battery
 #: battery
 msgid "Battery"
 msgstr "Baterija"
+
+#. # LOCALIZATION NOTE (battery): if you leave the original
+#. # en-US value "{{battery}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "battery".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: battery-header
+msgid "{{battery}}"
+msgstr ""
 
 #: batteryLevel
 msgid "Current level"
@@ -2721,6 +3398,15 @@ msgstr "Uključi automatski"
 msgid "Accessibility"
 msgstr "Pristupačnost"
 
+#. # LOCALIZATION NOTE (accessibility): if you leave the original
+#. # en-US value "{{accessibility}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "accessibility".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: accessibility-header
+msgid "{{accessibility}}"
+msgstr ""
+
 #: invertColors
 msgid "Invert colors"
 msgstr "Zamijeni boje"
@@ -2731,6 +3417,14 @@ msgstr "Čitač zaslona"
 
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
+#, fuzzy
+msgctxt "improveBrowserOS"
+msgid "Improve {{brandShortName}}"
+msgstr "Unaprijedite {{brandShortName}}"
+
+#: improveBrowserOSTitle
+#, fuzzy
+msgctxt "improveBrowserOSTitle"
 msgid "Improve {{brandShortName}}"
 msgstr "Unaprijedite {{brandShortName}}"
 
@@ -2755,6 +3449,15 @@ msgstr "Šalji podatke"
 #: crashReports
 msgid "Crash reports"
 msgstr "Izvještaji rušenja"
+
+#. # LOCALIZATION NOTE (crashReports): if you leave the original
+#. # en-US value "{{crashReports}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "crashReports".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: crashReports-header
+msgid "{{crashReports}}"
+msgstr ""
 
 #: crashReportInfo
 msgid ""
@@ -2865,7 +3568,8 @@ msgid "Email address:"
 msgstr "Adresa e-pošte :"
 
 #: email-keepprivate
-msgid "Don't worry. Your email will always be kept private."
+#, fuzzy
+msgid "Don’t worry. Your email will always be kept private."
 msgstr "Bez brige, vaša adresa e-pošte neće biti nigdje objavljena."
 
 #: feedback-sendbtn
@@ -2874,38 +3578,38 @@ msgstr "Pošalji"
 
 #: feedback-errormessage-connect-error
 msgid ""
-"Sorry, the system can't send your suggestion due to a data connection error. "
+"Sorry, the system can’t send your suggestion due to a data connection error. "
 "Please try again when the issue is resolved."
 msgstr ""
 
 #: feedback-errormessage-server-off
 msgid ""
-"Sorry, the system can't send your suggestion because the server shut down. "
+"Sorry, the system can’t send your suggestion because the server shut down. "
 "Please wait a moment and try again."
 msgstr ""
 
 #: feedback-errormessage-timeout
 msgid ""
-"Sorry, the system can't send your suggestion because of a timeout. Please "
+"Sorry, the system can’t send your suggestion because of a timeout. Please "
 "restart and try again."
 msgstr ""
 
 #: feedback-errormessage-wrong-email
 msgid ""
-"Sorry, the system can't send your suggestion because the email address is "
+"Sorry, the system can’t send your suggestion because the email address is "
 "missing or due to a formatting error. Please use a valid email address and "
 "try again."
 msgstr ""
 
 #: feedback-errormessage-empty-comment
 msgid ""
-"Sorry, the system can't send your suggestion because the comment field is "
+"Sorry, the system can’t send your suggestion because the comment field is "
 "empty. Please enter some text and try again."
 msgstr ""
 
 #: feedback-errormessage-just-sent
 msgid ""
-"Sorry, the system can't send your suggestion because you already sent us "
+"Sorry, the system can’t send your suggestion because you already sent us "
 "feedback. Please try our next software update and send again."
 msgstr ""
 
@@ -3032,6 +3736,26 @@ msgstr "Pošalji podatke"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Traži stanje kanala"
+
+#~ msgid "Keyboard layouts"
+#~ msgstr "Rasporedi tipkovnice"
+
+#~ msgid "Enable USB storage"
+#~ msgstr "USB spremište"
+
+#~ msgid ""
+#~ "CAUTION: Resetting will erase all your data, including any apps you’ve "
+#~ "purchased."
+#~ msgstr ""
+#~ "UPOZORENJE: Resetiranje će obrisati sve vaše podatke, uključujući i "
+#~ "aplikacije koje ste kupili."
+
+#~ msgid ""
+#~ "The phone will be restored to its factory condition. None of your "
+#~ "settings or data will be saved."
+#~ msgstr ""
+#~ "Telefon će se vratiti u tvorničko stanje. Sve vaše postavke i podaci će "
+#~ "biti poništeni."
 
 #~ msgid "Cell broadcast service"
 #~ msgstr "Cell broadcast"

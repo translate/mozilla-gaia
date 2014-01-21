@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-22 12:38+0100\n"
+"POT-Creation-Date: 2014-01-21 12:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.10.0\n"
+"X-Generator: Translate Toolkit 1.11.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
@@ -20,9 +20,9 @@ msgstr ""
 msgid "Messages"
 msgstr "Poruke"
 
-#: editMode
-msgid "Edit messages"
-msgstr "Uredite poruke"
+#: deleteMessages-title
+msgid "Delete messages"
+msgstr ""
 
 #. # Contact title
 #: thread-header-text
@@ -132,6 +132,23 @@ msgctxt "selected[other]"
 msgid "{{n}} selected"
 msgstr "{{n}} odabranih"
 
+#. # Options menu
+#: deleteMessages-label
+msgid "Delete Messages"
+msgstr ""
+
+#: settings
+msgid "Settings"
+msgstr ""
+
+#: add-subject
+msgid "Add subject"
+msgstr ""
+
+#: remove-subject
+msgid "Remove subject"
+msgstr ""
+
 #. # New Message
 #: to
 msgid "To:"
@@ -155,6 +172,10 @@ msgctxt "composeMessage.dataset.placeholder"
 msgid "Message"
 msgstr "Poruka"
 
+#: composeSubject.placeholder
+msgid "Subject"
+msgstr ""
+
 #: converted-to-mms
 msgid "Converting to multimedia message."
 msgstr "Pretvaram u MMS poruku."
@@ -164,12 +185,18 @@ msgid "Converting to text message."
 msgstr "Pretvaram u SMS poruku."
 
 #: messages-max-length-text
-msgid "You've reached the maximum length."
+#, fuzzy
+msgid "You’ve reached the maximum length."
 msgstr "Dosegnuli ste maksimalnu dužinu poruke."
 
+#: messages-max-subject-length-text
+msgid "Maximum length of subject reached."
+msgstr ""
+
 #: messages-exceeded-length-text
+#, fuzzy
 msgid ""
-"You've exceeded the maximum length. Remove special characters or shorten the "
+"You’ve exceeded the maximum length. Remove special characters or shorten the "
 "message to send it."
 msgstr ""
 "Dosegnuli ste najveću dužinu. Da biste mogli poslati poruku, uklonite "
@@ -182,6 +209,10 @@ msgstr "Nova poruka"
 #: sendMessage
 msgid "Send message"
 msgstr "Pošalji poruku"
+
+#: no-recipient
+msgid "(No recipient)"
+msgstr ""
 
 #: recipient
 msgctxt "recipient"
@@ -260,6 +291,84 @@ msgctxt "participant[other]"
 msgid "{{n}} participants"
 msgstr "{{n}} članova"
 
+#. # Message report
+#: message-report
+msgid "Message report"
+msgstr ""
+
+#: message-type-sms
+msgid "Text Message (SMS)"
+msgstr ""
+
+#: message-type-mms
+msgid "Multimedia Message (MMS)"
+msgstr ""
+
+#: sms-report-description
+msgid "Your Text Message (SMS), was sent on {{datetime}}"
+msgstr ""
+
+#: mms-report-description
+msgid ""
+"Your Multimedia Message (MMS), subject {{subject}}, was sent on {{datetime}}"
+msgstr ""
+
+#: mms-no-subject-report-description
+msgid "Your Multimedia Message (MMS), was sent on {{datetime}}"
+msgstr ""
+
+#: message-status
+msgid "Status:"
+msgstr ""
+
+#: message-status-sent
+msgid "sent"
+msgstr ""
+
+#: message-status-received
+msgid "received"
+msgstr ""
+
+#: message-status-sending
+msgid "sending"
+msgstr ""
+
+#: message-status-error
+msgid "error"
+msgstr ""
+
+#: message-status-not-downloaded
+msgid "not downloaded"
+msgstr ""
+
+#: message-delivered
+msgid "Delivered:"
+msgstr ""
+
+#: message-read
+msgid "Read report:"
+msgstr ""
+
+#: message-requested
+msgid "Requested"
+msgstr ""
+
+#: message-size-was
+msgid "Message size:"
+msgstr ""
+
+#: report-dateTimeFormat
+msgid "%e %B %Y, {{shortTimeFormat}}"
+msgstr ""
+
+#: report-recipients
+msgid "Recipients:"
+msgstr ""
+
+#: report-from
+msgid "From:"
+msgstr ""
+
 #. # Search functionality
 #: search
 msgid "Search"
@@ -274,9 +383,27 @@ msgid "Carrier unknown"
 msgstr "Nepoznat operater"
 
 #. # Modal Dialogs
+#: replace-draft
+msgid "Replace existing Draft"
+msgstr ""
+
+#: save-as-draft
+msgid "Save as Draft"
+msgstr ""
+
+#: discard-message
+#, fuzzy
+msgctxt "discard-message"
+msgid "Discard"
+msgstr "Odbaci"
+
 #: discard-sms
 msgid "Are you sure you want to discard this message?"
 msgstr "Jeste li sigurni da želite odbaciti ovu poruku?"
+
+#: discard-new-message
+msgid "Discard the message you’re composing and open the new message?"
+msgstr ""
 
 #: resend-confirmation
 msgid "The message could not be sent. Try again?"
@@ -289,6 +416,14 @@ msgstr "Obrisati odabrane poruke?"
 #: deleteThreads-confirmation2
 msgid "Delete selected message threads?"
 msgstr "Obrisati odabrane skupove poruka?"
+
+#: new-message-notice-text
+msgid "New message from"
+msgstr ""
+
+#: new-message-notice-a-text
+msgid "Read it"
+msgstr ""
 
 #: noMessages-title
 msgid "No messages"
@@ -312,31 +447,31 @@ msgctxt "sendGeneralErrorBtnOk"
 msgid "OK"
 msgstr "U redu"
 
-#: sendNoSimCardTitle
-msgid "Sim card error"
-msgstr "Greška SIM kartice"
+#: sendMissingSimCardTitle
+msgid "Missing SIM card"
+msgstr ""
 
-#: sendNoSimCardBody
-msgid "No SIM card."
-msgstr "Nema SIM kartice."
+#: sendMissingSimCardBody
+msgid "Insert a valid SIM card to continue."
+msgstr ""
 
-#: sendNoSimCardBtnOk
-msgctxt "sendNoSimCardBtnOk"
+#: sendMissingSimCardBtnOk
+#, fuzzy
+msgctxt "sendMissingSimCardBtnOk"
 msgid "OK"
-msgstr "OK"
+msgstr "U redu"
 
-#: sendAirplaneModeTitle
+#: sendFlightModeTitle
 msgid "Airplane mode activated"
 msgstr "Aktivan je zrakoplovni način rada"
 
-#: sendAirplaneModeBody
-msgid "To send a message, first disable airplane mode."
+#: sendFlightModeBody
+msgid "Turn off airplane mode to send messages."
 msgstr ""
-"Da biste mogli poslati poruku, najprije trebate isključiti zrakoplovni način "
-"rada."
 
-#: sendAirplaneModeBtnOk
-msgctxt "sendAirplaneModeBtnOk"
+#: sendFlightModeBtnOk
+#, fuzzy
+msgctxt "sendFlightModeBtnOk"
 msgid "OK"
 msgstr "U redu"
 
@@ -395,6 +530,68 @@ msgstr ""
 
 #: fdnBlockedBtnOk
 msgctxt "fdnBlockedBtnOk"
+msgid "OK"
+msgstr "U redu"
+
+#: nonActiveSimTitle
+msgid "Switch data connection"
+msgstr ""
+
+#: nonActiveSimBody
+msgid ""
+"Switch the data connection to {{ nonactive }} to retrieve the MMS. The "
+"current data transfer on {{ active }} will be suspended. Continue anyway?"
+msgstr ""
+
+#: nonActiveSimBtnOk
+msgid "Later"
+msgstr ""
+
+#: nonActiveSimConfirm
+#, fuzzy
+msgctxt "nonActiveSimConfirm"
+msgid "OK"
+msgstr "U redu"
+
+#: sendNoSignalErrorTitle
+msgid "No network coverage"
+msgstr ""
+
+#: sendNoSignalErrorBody
+msgid "Make sure you have a mobile signal and try again."
+msgstr ""
+
+#: sendNoSignalErrorBtnOk
+#, fuzzy
+msgctxt "sendNoSignalErrorBtnOk"
+msgid "OK"
+msgstr "U redu"
+
+#: sendNotFoundErrorTitle
+msgid "Message not found"
+msgstr ""
+
+#: sendNotFoundErrorBody
+msgid "The message you’re looking for is no longer available."
+msgstr ""
+
+#: sendNotFoundErrorBtnOk
+#, fuzzy
+msgctxt "sendNotFoundErrorBtnOk"
+msgid "OK"
+msgstr "U redu"
+
+#: sendInvalidAddressErrorTitle
+msgid "Invalid number"
+msgstr ""
+
+#: sendInvalidAddressErrorBody
+msgid "Make sure the mobile number you’re sending to is valid."
+msgstr ""
+
+#: sendInvalidAddressErrorBtnOk
+#, fuzzy
+msgctxt "sendInvalidAddressErrorBtnOk"
 msgid "OK"
 msgstr "U redu"
 
@@ -471,8 +668,22 @@ msgid "Edit"
 msgstr "Izmijeni"
 
 #: unsent-message-option-discard
+#, fuzzy
+msgctxt "unsent-message-option-discard"
 msgid "Discard"
 msgstr "Odbaci"
+
+#: message-options
+msgid "Message options"
+msgstr ""
+
+#: forward
+msgid "Forward"
+msgstr ""
+
+#: view-message-report
+msgid "View message report"
+msgstr ""
 
 #. # Labels for contact fields
 #: mobile
@@ -533,6 +744,10 @@ msgstr "Dodaj u postojeći kontakt"
 msgid "Create new contact"
 msgstr "Stvori novi kontakt"
 
+#: viewContact
+msgid "View contact"
+msgstr ""
+
 #: call
 msgid "Call"
 msgstr "Pozovi"
@@ -581,3 +796,25 @@ msgstr "Mijenjam veličinu priložene slike"
 #: no-attachment-text
 msgid "There is a problem with the attached file and it cannot be downloaded."
 msgstr "Postoji problem s priloženom datotekom, te se ne može preuzeti."
+
+#~ msgid "Edit messages"
+#~ msgstr "Uredite poruke"
+
+#~ msgid "Sim card error"
+#~ msgstr "Greška SIM kartice"
+
+#~ msgid "No SIM card."
+#~ msgstr "Nema SIM kartice."
+
+#~ msgctxt "sendNoSimCardBtnOk"
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "To send a message, first disable airplane mode."
+#~ msgstr ""
+#~ "Da biste mogli poslati poruku, najprije trebate isključiti zrakoplovni "
+#~ "način rada."
+
+#~ msgctxt "sendAirplaneModeBtnOk"
+#~ msgid "OK"
+#~ msgstr "U redu"

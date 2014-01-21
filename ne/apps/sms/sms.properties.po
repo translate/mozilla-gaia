@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-17 14:29+0100\n"
+"POT-Creation-Date: 2014-01-21 12:49+0100\n"
 "PO-Revision-Date: 2014-01-21 08:04+0000\n"
 "Last-Translator: swati <prad.swati@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1-rc1\n"
+"X-Generator: Translate Toolkit 1.11.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1390291493.000000\n"
@@ -186,7 +186,8 @@ msgid "Converting to text message."
 msgstr "पाठ सन्देशमा रूपान्तरण गरिदै।"
 
 #: messages-max-length-text
-msgid "You've reached the maximum length."
+#, fuzzy
+msgid "You’ve reached the maximum length."
 msgstr "तपाईं अधिकतम लम्बाइमा पुग्नुभएको छ।"
 
 #: messages-max-subject-length-text
@@ -194,8 +195,9 @@ msgid "Maximum length of subject reached."
 msgstr ""
 
 #: messages-exceeded-length-text
+#, fuzzy
 msgid ""
-"You've exceeded the maximum length. Remove special characters or shorten the "
+"You’ve exceeded the maximum length. Remove special characters or shorten the "
 "message to send it."
 msgstr ""
 "तपाईंले अधिकतम लम्बाइमा नाग्नुभएको छ।सन्देश पठाउनका लागि विशेष क्यारेक्टर हटाउनुहोस् वा "
@@ -208,6 +210,10 @@ msgstr "नयाँ सन्देश"
 #: sendMessage
 msgid "Send message"
 msgstr "सन्देश पठाउनुहोस्"
+
+#: no-recipient
+msgid "(No recipient)"
+msgstr ""
 
 #: recipient
 msgctxt "recipient"
@@ -285,6 +291,84 @@ msgctxt "participant[other]"
 msgid "{{n}} participants"
 msgstr "{{n}} सहभागीहरु"
 
+#. # Message report
+#: message-report
+msgid "Message report"
+msgstr ""
+
+#: message-type-sms
+msgid "Text Message (SMS)"
+msgstr ""
+
+#: message-type-mms
+msgid "Multimedia Message (MMS)"
+msgstr ""
+
+#: sms-report-description
+msgid "Your Text Message (SMS), was sent on {{datetime}}"
+msgstr ""
+
+#: mms-report-description
+msgid ""
+"Your Multimedia Message (MMS), subject {{subject}}, was sent on {{datetime}}"
+msgstr ""
+
+#: mms-no-subject-report-description
+msgid "Your Multimedia Message (MMS), was sent on {{datetime}}"
+msgstr ""
+
+#: message-status
+msgid "Status:"
+msgstr ""
+
+#: message-status-sent
+msgid "sent"
+msgstr ""
+
+#: message-status-received
+msgid "received"
+msgstr ""
+
+#: message-status-sending
+msgid "sending"
+msgstr ""
+
+#: message-status-error
+msgid "error"
+msgstr ""
+
+#: message-status-not-downloaded
+msgid "not downloaded"
+msgstr ""
+
+#: message-delivered
+msgid "Delivered:"
+msgstr ""
+
+#: message-read
+msgid "Read report:"
+msgstr ""
+
+#: message-requested
+msgid "Requested"
+msgstr ""
+
+#: message-size-was
+msgid "Message size:"
+msgstr ""
+
+#: report-dateTimeFormat
+msgid "%e %B %Y, {{shortTimeFormat}}"
+msgstr ""
+
+#: report-recipients
+msgid "Recipients:"
+msgstr ""
+
+#: report-from
+msgid "From:"
+msgstr ""
+
 #. # Search functionality
 #: search
 msgid "Search"
@@ -299,12 +383,27 @@ msgid "Carrier unknown"
 msgstr "अज्ञात वाहक"
 
 #. # Modal Dialogs
+#: replace-draft
+msgid "Replace existing Draft"
+msgstr ""
+
+#: save-as-draft
+msgid "Save as Draft"
+msgstr ""
+
+#: discard-message
+#, fuzzy
+msgctxt "discard-message"
+msgid "Discard"
+msgstr "छाड्नुहोस्"
+
 #: discard-sms
 msgid "Are you sure you want to discard this message?"
 msgstr "के तपाइँ यो सन्देश मेटाउने कुरामा निश्चित हुनुहुन्छ?"
 
 #: discard-new-message
-msgid "Discard the message you're composing and open the new message?"
+#, fuzzy
+msgid "Discard the message you’re composing and open the new message?"
 msgstr "तपाईंले रचना गरिराख्नु भएको सन्देश छोडेर नँया सन्देश खोल्न चाहनुहुन्छ ?  "
 
 #: resend-confirmation
@@ -469,7 +568,7 @@ msgid "Message not found"
 msgstr ""
 
 #: sendNotFoundErrorBody
-msgid "The message you're looking for is no longer available."
+msgid "The message you’re looking for is no longer available."
 msgstr ""
 
 #: sendNotFoundErrorBtnOk
@@ -482,7 +581,7 @@ msgid "Invalid number"
 msgstr ""
 
 #: sendInvalidAddressErrorBody
-msgid "Make sure the mobile number you're sending to is valid."
+msgid "Make sure the mobile number you’re sending to is valid."
 msgstr ""
 
 #: sendInvalidAddressErrorBtnOk
@@ -563,6 +662,8 @@ msgid "Edit"
 msgstr "सम्पादन"
 
 #: unsent-message-option-discard
+#, fuzzy
+msgctxt "unsent-message-option-discard"
 msgid "Discard"
 msgstr "छाड्नुहोस्"
 
@@ -573,6 +674,10 @@ msgstr "खबर विकल्पहरु"
 #: forward
 msgid "Forward"
 msgstr "अगाडि"
+
+#: view-message-report
+msgid "View message report"
+msgstr ""
 
 #. # Labels for contact fields
 #: mobile

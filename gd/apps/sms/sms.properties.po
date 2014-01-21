@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-17 14:29+0100\n"
+"POT-Creation-Date: 2014-01-21 12:49+0100\n"
 "PO-Revision-Date: 2013-12-30 16:02+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.11.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -189,7 +189,8 @@ msgid "Converting to text message."
 msgstr "Iompaich 'na theachdaireachd teacsa."
 
 #: messages-max-length-text
-msgid "You've reached the maximum length."
+#, fuzzy
+msgid "You’ve reached the maximum length."
 msgstr "Chan fhaod e a bhith nas fhaide na seo."
 
 #: messages-max-subject-length-text
@@ -197,8 +198,9 @@ msgid "Maximum length of subject reached."
 msgstr "Tha an cuspair cho fad 's a tha ceadaichte."
 
 #: messages-exceeded-length-text
+#, fuzzy
 msgid ""
-"You've exceeded the maximum length. Remove special characters or shorten the "
+"You’ve exceeded the maximum length. Remove special characters or shorten the "
 "message to send it."
 msgstr ""
 "Tha e nas fhaide na tha ceadaichte. Thoir air falbhan caractaran sònraichte "
@@ -211,6 +213,10 @@ msgstr "Teachdaireachd ùr"
 #: sendMessage
 msgid "Send message"
 msgstr "Cuir an teachdaireachd"
+
+#: no-recipient
+msgid "(No recipient)"
+msgstr ""
 
 #: recipient
 msgctxt "recipient"
@@ -288,6 +294,84 @@ msgctxt "participant[other]"
 msgid "{{n}} participants"
 msgstr "{{n}} com-pàirtiche"
 
+#. # Message report
+#: message-report
+msgid "Message report"
+msgstr ""
+
+#: message-type-sms
+msgid "Text Message (SMS)"
+msgstr ""
+
+#: message-type-mms
+msgid "Multimedia Message (MMS)"
+msgstr ""
+
+#: sms-report-description
+msgid "Your Text Message (SMS), was sent on {{datetime}}"
+msgstr ""
+
+#: mms-report-description
+msgid ""
+"Your Multimedia Message (MMS), subject {{subject}}, was sent on {{datetime}}"
+msgstr ""
+
+#: mms-no-subject-report-description
+msgid "Your Multimedia Message (MMS), was sent on {{datetime}}"
+msgstr ""
+
+#: message-status
+msgid "Status:"
+msgstr ""
+
+#: message-status-sent
+msgid "sent"
+msgstr ""
+
+#: message-status-received
+msgid "received"
+msgstr ""
+
+#: message-status-sending
+msgid "sending"
+msgstr ""
+
+#: message-status-error
+msgid "error"
+msgstr ""
+
+#: message-status-not-downloaded
+msgid "not downloaded"
+msgstr ""
+
+#: message-delivered
+msgid "Delivered:"
+msgstr ""
+
+#: message-read
+msgid "Read report:"
+msgstr ""
+
+#: message-requested
+msgid "Requested"
+msgstr ""
+
+#: message-size-was
+msgid "Message size:"
+msgstr ""
+
+#: report-dateTimeFormat
+msgid "%e %B %Y, {{shortTimeFormat}}"
+msgstr ""
+
+#: report-recipients
+msgid "Recipients:"
+msgstr ""
+
+#: report-from
+msgid "From:"
+msgstr ""
+
 #. # Search functionality
 #: search
 msgid "Search"
@@ -302,6 +386,20 @@ msgid "Carrier unknown"
 msgstr "Giùlanair neo-aithnichte"
 
 #. # Modal Dialogs
+#: replace-draft
+msgid "Replace existing Draft"
+msgstr ""
+
+#: save-as-draft
+msgid "Save as Draft"
+msgstr ""
+
+#: discard-message
+#, fuzzy
+msgctxt "discard-message"
+msgid "Discard"
+msgstr "Tilg air falbh"
+
 #: discard-sms
 msgid "Are you sure you want to discard this message?"
 msgstr ""
@@ -309,7 +407,8 @@ msgstr ""
 "air falbh?"
 
 #: discard-new-message
-msgid "Discard the message you're composing and open the new message?"
+#, fuzzy
+msgid "Discard the message you’re composing and open the new message?"
 msgstr ""
 "A bheil thu airson an teachdaireachd a tha thu ris a thilgeil air falbh 's "
 "an tè ùr fhosgladh?"
@@ -485,7 +584,8 @@ msgid "Message not found"
 msgstr "Cha deach an teachdaireachd a lorg"
 
 #: sendNotFoundErrorBody
-msgid "The message you're looking for is no longer available."
+#, fuzzy
+msgid "The message you’re looking for is no longer available."
 msgstr "Tha thu a' sireadh teachdaireachd nach eil ann tuilleadh."
 
 #: sendNotFoundErrorBtnOk
@@ -498,7 +598,8 @@ msgid "Invalid number"
 msgstr "Àireamh mhì-dhligheach"
 
 #: sendInvalidAddressErrorBody
-msgid "Make sure the mobile number you're sending to is valid."
+#, fuzzy
+msgid "Make sure the mobile number you’re sending to is valid."
 msgstr "Dèan cinnteach gu bheil thu a' cur àireamh dhligheach."
 
 #: sendInvalidAddressErrorBtnOk
@@ -580,6 +681,8 @@ msgid "Edit"
 msgstr "Deasaich"
 
 #: unsent-message-option-discard
+#, fuzzy
+msgctxt "unsent-message-option-discard"
 msgid "Discard"
 msgstr "Tilg air falbh"
 
@@ -590,6 +693,10 @@ msgstr "Roghainnean na teachdaireachd"
 #: forward
 msgid "Forward"
 msgstr "Sìn air adhart"
+
+#: view-message-report
+msgid "View message report"
+msgstr ""
 
 #. # Labels for contact fields
 #: mobile
