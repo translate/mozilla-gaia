@@ -19,9 +19,15 @@ function update_hg_repo()
 	mkdir -p $base_dir/build/locales/$mozrelease
 	cd $base_dir/build/locales/$mozrelease
 	if [ -d $mozlang ]; then
-		cd $mozlang;
-		hg pull -u;
-		hg update -C;
+		cd $mozlang
+		if [ $mozlang == "en-US" ]; then
+			hg pull
+			hg update
+		else
+			hg pull -u
+			hg update -C
+		fi
+
 	else
 		log_debug "hg clone $mozilla_repository/$mozlang $mozlang"
 		hg clone $mozilla_repository/$mozlang $mozlang
