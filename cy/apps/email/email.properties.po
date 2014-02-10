@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-26 22:27+0100\n"
-"PO-Revision-Date: 2013-12-04 09:58+0000\n"
+"PO-Revision-Date: 2014-02-09 16:41+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: cy\n"
@@ -12,10 +12,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Translate Toolkit 1.11.0-rc1\n"
+"X-Generator: Pootle 2.5.1-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1386151088.000000\n"
+"X-POOTLE-MTIME: 1391964102.000000\n"
 
 #: setup-app-name-header
 msgid "Mail"
@@ -115,7 +115,6 @@ msgstr "Enw defnyddiwr neu gyfrinair annilys. Gwiriwch eich teipio."
 #. # like gmail over IMAP indicating that IMAP is disabled for the account or
 #. # domain have their own error code: setup-error-imap-disabled.
 #: setup-error-not-authorized
-#, fuzzy
 msgid "The server said you’re not authorized to create an account"
 msgstr "Mae'r gweinydd yn dweud nad oes gennych hawl i greu cyfrif"
 
@@ -125,6 +124,8 @@ msgstr "Mae'r gweinydd yn dweud nad oes gennych hawl i greu cyfrif"
 msgid ""
 "Server unsupported. The POP3 server does not implement required features."
 msgstr ""
+"Nid yw'r gweinydd y cael ei gynnal. Nid yw'r gweinydd POP3 yn gweithredu'r "
+"nodweddion angenrheidiol."
 
 #. # The fallback error; if we don't have a better error, we report this.
 #: setup-error-unknown2
@@ -159,9 +160,8 @@ msgstr "Rhaid galluogi IMAP ar gyfer eich cyfrif Gmail"
 #. # This can also occur for apps-for-domains where the domain is not configured
 #. # to support POP3.
 #: setup-error-pop3-disabled
-#, fuzzy
 msgid "You must enable POP3 for your Gmail account"
-msgstr "Rhaid galluogi IMAP ar gyfer eich cyfrif Gmail"
+msgstr "Rhaid galluogi POP3 ar gyfer eich cyfrif Gmail"
 
 #. # The error for when we are able to contact a server that should be the mail
 #. # server but we are unable to establish a secure connection.
@@ -239,7 +239,7 @@ msgstr "Gosodiadau IMAP"
 #: setup-manual-pop3-header
 msgctxt "setup-manual-pop3-header"
 msgid "POP3 settings"
-msgstr ""
+msgstr "Gosodiadau POP3"
 
 #: setup-manual-smtp-header
 msgctxt "setup-manual-smtp-header"
@@ -319,7 +319,7 @@ msgstr "Analluogwyd IMAP"
 
 #: setup-gmail-imap-message
 msgid "You must enable IMAP on your Gmail account"
-msgstr "Rhaid galluogi IMAP ar gyfer eich cyfrif Gmail "
+msgstr "Rhaid galluogi IMAP ar gyfer eich cyfrif Gmail"
 
 #: setup-gmail-imap-retry
 msgctxt "setup-gmail-imap-retry"
@@ -328,15 +328,13 @@ msgstr "Ceisio eto"
 
 #: setup-gmail-pop3-header
 msgid "POP3 Disabled"
-msgstr ""
+msgstr "Analluogwyd POP3"
 
 #: setup-gmail-pop3-message
-#, fuzzy
 msgid "You must enable POP3 on your Gmail account"
-msgstr "Rhaid galluogi IMAP ar gyfer eich cyfrif Gmail "
+msgstr "Rhaid galluogi POP3 ar gyfer eich cyfrif Gmail"
 
 #: setup-gmail-pop3-retry
-#, fuzzy
 msgctxt "setup-gmail-pop3-retry"
 msgid "Retry"
 msgstr "Ceisio eto"
@@ -555,7 +553,7 @@ msgstr "Gosodiadau IMAP"
 #: settings-pop3-label
 msgctxt "settings-pop3-label"
 msgid "POP3 settings"
-msgstr ""
+msgstr "Gosodiadau POP3"
 
 #: settings-smtp-label
 msgctxt "settings-smtp-label"
@@ -770,7 +768,7 @@ msgstr "Iawn"
 #. # each other.
 #: default-attachment-filename
 msgid "attachment{{ n }}"
-msgstr ""
+msgstr "atodiad{{ n }}"
 
 #: attachment-size-kib
 msgid "{{kilobytes}}K"
@@ -923,18 +921,17 @@ msgid "Delete {{ n }} email messages?"
 msgstr "Dileu {{ n }} neges e-bost?"
 
 #: message-large-message-cancel
-#, fuzzy
 msgctxt "message-large-message-cancel"
 msgid "Cancel"
 msgstr "Diddymu"
 
 #: message-large-message-ok
 msgid "Continue"
-msgstr ""
+msgstr "Parhau"
 
 #: message-large-message-confirm
 msgid "This message is large and may take some time to download."
-msgstr ""
+msgstr "Mae'r neges yn fawr a gall gymryd peth amser i lwytho i lawr."
 
 #: message-search-from
 msgctxt "message-search-from"
@@ -1412,7 +1409,7 @@ msgstr "1 E-bost Newydd ({{ accountName }})"
 #: new-emails-notify-multiple-accounts[two]
 msgctxt "new-emails-notify-multiple-accounts[two]"
 msgid "{{ n }} New Emails ({{ accountName }})"
-msgstr "1 E-bost Newydd ({{ accountName }})"
+msgstr "{{ n }} E-bost Newydd ({{ accountName }})"
 
 #: new-emails-notify-multiple-accounts[few]
 msgctxt "new-emails-notify-multiple-accounts[few]"
@@ -1422,12 +1419,12 @@ msgstr "{{ n }} E-byst Newydd ({{ accountName }})"
 #: new-emails-notify-multiple-accounts[many]
 msgctxt "new-emails-notify-multiple-accounts[many]"
 msgid "{{ n }} New Emails ({{ accountName }})"
-msgstr "{{ n }} E-byst Newydd ({{ accountName }}"
+msgstr "{{ n }} E-byst Newydd ({{ accountName }})"
 
 #: new-emails-notify-multiple-accounts[other]
 msgctxt "new-emails-notify-multiple-accounts[other]"
 msgid "{{ n }} New Emails ({{ accountName }})"
-msgstr "{{ n }} E-byst Newydd ({{ accountName }}"
+msgstr "{{ n }} E-byst Newydd ({{ accountName }})"
 
 #. # new-emails-notify-multiple-accounts-body is used in the same situation
 #. # as new-emails-notify-multiple-accounts.
