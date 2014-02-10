@@ -20,8 +20,8 @@ function update_hg_repo()
 	cd $base_dir/build/locales/$mozrelease
 	if [ -d $mozlang ]; then
 		cd $mozlang;
-		hg pull;
-		hg update;
+		hg pull -u;
+		hg update -C;
 	else
 		log_debug "hg clone $mozilla_repository/$mozlang $mozlang"
 		hg clone $mozilla_repository/$mozlang $mozlang
