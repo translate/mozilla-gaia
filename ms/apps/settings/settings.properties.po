@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-17 14:40+0100\n"
+"POT-Creation-Date: 2014-03-01 00:45+0100\n"
 "PO-Revision-Date: 2014-02-25 06:23+0000\n"
 "Last-Translator: syafiqmazli <creativeneuron8@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.11.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1393309439.000000\n"
@@ -861,6 +861,14 @@ msgstr "Laporan penyerahan"
 msgid "Request notification of delivery for each message sent"
 msgstr "Pohon makluman penyerahan untuk setiap mesej dohantar"
 
+#: message-read-reports
+msgid "Read reports"
+msgstr ""
+
+#: message-read-reports-details
+msgid "Request read report for each message sent"
+msgstr ""
+
 #: mmsTitle
 msgid "Multimedia messaging (MMS)"
 msgstr "Mesej multimedia (MMS)"
@@ -1104,6 +1112,38 @@ msgstr "Tetapan mesej"
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
 #: messageSettings-header
+#, fuzzy
+msgctxt "messageSettings-header"
+msgid "{{messageSettings}}"
+msgstr "{{messageSettings}}"
+
+#: dunSettings
+msgid "Tethering settings"
+msgstr ""
+
+#. # LOCALIZATION NOTE (dunSettings-header): if you leave the original
+#. # en-US value "{{dunSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "dunSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: dunSettings-header
+#, fuzzy
+msgid "{{dunSettings}}"
+msgstr "{{fdnSettings}}"
+
+#: imsSettings
+#, fuzzy
+msgid "IMS settings"
+msgstr "Tetapan APN"
+
+#. # LOCALIZATION NOTE (imsSettings-header): if you leave the original
+#. # en-US value "{{imsSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "imsSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: imsSettings-header
+#, fuzzy
+msgctxt "imsSettings-header"
 msgid "{{messageSettings}}"
 msgstr "{{messageSettings}}"
 
@@ -1141,6 +1181,8 @@ msgid "Authentication"
 msgstr "Pengsahihan"
 
 #: apn-authType-notDefined
+#, fuzzy
+msgctxt "apn-authType-notDefined"
 msgid "Not defined"
 msgstr "Tidak ditentukan"
 
@@ -1160,6 +1202,32 @@ msgstr "CHAP"
 #: apn-authType-papOrChap
 msgid "PAP or CHAP"
 msgstr "PAP atau CHAP"
+
+#: apn-protocol
+msgid "Protocol"
+msgstr ""
+
+#: apn-roaming-protocol
+msgid "Roaming protocol"
+msgstr ""
+
+#: apn-protocol-notDefined
+#, fuzzy
+msgctxt "apn-protocol-notDefined"
+msgid "Not defined"
+msgstr "Tidak ditentukan"
+
+#: apn-protocol-ip
+msgid "IPv4"
+msgstr ""
+
+#: apn-protocol-ipv6
+msgid "IPv6"
+msgstr ""
+
+#: apn-protocol-ipv4v6
+msgid "IPv4/IPv6"
+msgstr ""
 
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
@@ -1882,6 +1950,10 @@ msgid ""
 msgstr ""
 "Sambungan Internet, MMS, A-GPS dan pembayaran Marketplace akan dihantar "
 "daripada"
+
+#: sim-manager-always-ask
+msgid "Always ask"
+msgstr ""
 
 #: sim-pin-locked
 msgid "SIM PIN locked"
@@ -2848,16 +2920,25 @@ msgid "Share using USB"
 msgstr "Kongsi menggunakan USB"
 
 #: format-sdcard
+#, fuzzy
+msgctxt "format-sdcard"
 msgid "Format SD card"
 msgstr "Format kad SD"
 
-#: format-sdcard-confirmation
-msgid "Format SD card?"
-msgstr "Format kad SD?"
+#: format-sdcard-title
+#, fuzzy
+msgctxt "format-sdcard-title"
+msgid "Format SD card"
+msgstr "Format kad SD"
 
-#: format-sdcard-description
-msgid "It will erase all SD card data. Such as music or photos."
-msgstr "Ini akan memadam semua data kad SD. Seumpama muzik atau foto."
+#: format-sdcard-message
+msgid ""
+"This will erase all data stored on your SD card, such as music and photos."
+msgstr ""
+
+#: format-sdcard-btnformat
+msgid "Format"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Device
@@ -2931,37 +3012,75 @@ msgstr "Pembangun"
 msgid "{{developer}}"
 msgstr "{{developer}}"
 
-#: developer-hud
+#: hud
 msgid "Developer HUD"
 msgstr "HUD pembangun"
 
-#: developer-hud-header
-msgid "{{developer-hud}}"
-msgstr "{{developer-hud}}"
+#: hud-header
+msgid "{{hud}}"
+msgstr ""
 
-#: developer-hud-errors
+#: hud-errors
 msgid "Errors"
 msgstr "Ralat"
 
-#: developer-hud-warnings
+#: hud-warnings
 msgid "Warnings"
 msgstr "Amaran"
 
-#: developer-hud-reflows
+#: hud-performance
+msgid "Performance"
+msgstr ""
+
+#: hud-reflows
 msgid "Reflows"
 msgstr "Atur semula"
 
-#: developer-hud-jank
+#: hud-jank
 msgid "Jank"
 msgstr "Jank"
 
-#: developer-hud-fps
+#: hud-fps
 msgid "Frames per second"
 msgstr "Bingkai per saat"
 
-#: developer-hud-ttl
+#: hud-ttl
 msgid "Time to load"
 msgstr "Masa untuk memuat"
+
+#: hud-memory
+msgid "Memory"
+msgstr ""
+
+#: hud-appmemory
+msgid "App memory"
+msgstr ""
+
+#: hud-jsobjects
+msgid "JS objects"
+msgstr ""
+
+#: hud-jsstrings
+msgid "JS strings"
+msgstr ""
+
+#: hud-jsother
+msgid "JS other"
+msgstr ""
+
+#: hud-dom
+msgid "DOM"
+msgstr ""
+
+#: hud-style
+msgid "Style"
+msgstr ""
+
+#: hud-other
+#, fuzzy
+msgctxt "hud-other"
+msgid "Other"
+msgstr "Lain-lain"
 
 #: software
 msgid "Software"
@@ -2990,6 +3109,10 @@ msgstr "Bolehkan pengarang perkakasan"
 #: paint-flashing
 msgid "Flash repainted area"
 msgstr "Kelip kawasan yang dicat"
+
+#: dumps-layers
+msgid "Dump layers tree"
+msgstr ""
 
 #: apz-force-enable
 msgid "Enable APZ for all content processes"
@@ -3314,6 +3437,8 @@ msgid "Mozilla"
 msgstr "Mozilla"
 
 #: about-other
+#, fuzzy
+msgctxt "about-other"
 msgid "Other"
 msgstr "Lain-lain"
 
@@ -3533,7 +3658,7 @@ msgstr ""
 "Sentuh di mana-mana untuk mendengar item di bawah jari, dan tap dua kali "
 "untuk mengaktifkannya."
 
-#: screenreader-confirm-button-start
+#: screenReader-confirm-button-start
 msgid "Start"
 msgstr "Mula"
 
@@ -3881,6 +4006,15 @@ msgstr "Hantar Data"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Dapatkan Status Saluran"
+
+#~ msgid "Format SD card?"
+#~ msgstr "Format kad SD?"
+
+#~ msgid "It will erase all SD card data. Such as music or photos."
+#~ msgstr "Ini akan memadam semua data kad SD. Seumpama muzik atau foto."
+
+#~ msgid "{{developer-hud}}"
+#~ msgstr "{{developer-hud}}"
 
 #~ msgid "Contacts debugging output in adb"
 #~ msgstr "Output menyahpijat kenalan dalam adb"

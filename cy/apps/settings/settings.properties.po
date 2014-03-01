@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-17 14:40+0100\n"
+"POT-Creation-Date: 2014-03-01 00:45+0100\n"
 "PO-Revision-Date: 2014-02-11 21:07+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -858,6 +858,14 @@ msgstr "Gofnod trosglwyddo"
 msgid "Request notification of delivery for each message sent"
 msgstr "Gofyn am hysbysiad trosglwyddo pob neges testun anfonwyd"
 
+#: message-read-reports
+msgid "Read reports"
+msgstr ""
+
+#: message-read-reports-details
+msgid "Request read report for each message sent"
+msgstr ""
+
 #: mmsTitle
 msgid "Multimedia messaging (MMS)"
 msgstr "Negesu Amlgyfrwng (MMS)"
@@ -1103,6 +1111,38 @@ msgstr "Gosodiadau Negeseuon"
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
 #: messageSettings-header
+#, fuzzy
+msgctxt "messageSettings-header"
+msgid "{{messageSettings}}"
+msgstr "{{messageSettings}}"
+
+#: dunSettings
+msgid "Tethering settings"
+msgstr ""
+
+#. # LOCALIZATION NOTE (dunSettings-header): if you leave the original
+#. # en-US value "{{dunSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "dunSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: dunSettings-header
+#, fuzzy
+msgid "{{dunSettings}}"
+msgstr "{{fdnSettings}}"
+
+#: imsSettings
+#, fuzzy
+msgid "IMS settings"
+msgstr "Gosodiadau MMS"
+
+#. # LOCALIZATION NOTE (imsSettings-header): if you leave the original
+#. # en-US value "{{imsSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "imsSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: imsSettings-header
+#, fuzzy
+msgctxt "imsSettings-header"
 msgid "{{messageSettings}}"
 msgstr "{{messageSettings}}"
 
@@ -1140,6 +1180,8 @@ msgid "Authentication"
 msgstr "Dilysu"
 
 #: apn-authType-notDefined
+#, fuzzy
+msgctxt "apn-authType-notDefined"
 msgid "Not defined"
 msgstr "Heb ei ddiffinio"
 
@@ -1159,6 +1201,32 @@ msgstr "CHAP"
 #: apn-authType-papOrChap
 msgid "PAP or CHAP"
 msgstr "PAP neu CHAP"
+
+#: apn-protocol
+msgid "Protocol"
+msgstr ""
+
+#: apn-roaming-protocol
+msgid "Roaming protocol"
+msgstr ""
+
+#: apn-protocol-notDefined
+#, fuzzy
+msgctxt "apn-protocol-notDefined"
+msgid "Not defined"
+msgstr "Heb ei ddiffinio"
+
+#: apn-protocol-ip
+msgid "IPv4"
+msgstr ""
+
+#: apn-protocol-ipv6
+msgid "IPv6"
+msgstr ""
+
+#: apn-protocol-ipv4v6
+msgid "IPv4/IPv6"
+msgstr ""
 
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
@@ -1878,6 +1946,10 @@ msgid ""
 msgstr ""
 "Bydd cysylltiad â'r we, MMS, A-GPS a thaliadau'r Marketplace yn cael eu "
 "hanfon o"
+
+#: sim-manager-always-ask
+msgid "Always ask"
+msgstr ""
 
 #: sim-pin-locked
 msgid "SIM PIN locked"
@@ -2839,15 +2911,22 @@ msgid "Share using USB"
 msgstr "Rhannu drwy USB"
 
 #: format-sdcard
+msgctxt "format-sdcard"
 msgid "Format SD card"
 msgstr ""
 
-#: format-sdcard-confirmation
-msgid "Format SD card?"
+#: format-sdcard-title
+msgctxt "format-sdcard-title"
+msgid "Format SD card"
 msgstr ""
 
-#: format-sdcard-description
-msgid "It will erase all SD card data. Such as music or photos."
+#: format-sdcard-message
+msgid ""
+"This will erase all data stored on your SD card, such as music and photos."
+msgstr ""
+
+#: format-sdcard-btnformat
+msgid "Format"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -2922,39 +3001,76 @@ msgstr "Datblygwr"
 msgid "{{developer}}"
 msgstr "{{developer}}"
 
-#: developer-hud
+#: hud
 msgid "Developer HUD"
 msgstr ""
 
-#: developer-hud-header
-#, fuzzy
-msgid "{{developer-hud}}"
-msgstr "{{developer}}"
+#: hud-header
+msgid "{{hud}}"
+msgstr ""
 
-#: developer-hud-errors
+#: hud-errors
 #, fuzzy
 msgid "Errors"
 msgstr "Gwall"
 
-#: developer-hud-warnings
+#: hud-warnings
 msgid "Warnings"
 msgstr ""
 
-#: developer-hud-reflows
+#: hud-performance
+msgid "Performance"
+msgstr ""
+
+#: hud-reflows
 msgid "Reflows"
 msgstr ""
 
-#: developer-hud-jank
+#: hud-jank
 msgid "Jank"
 msgstr ""
 
-#: developer-hud-fps
+#: hud-fps
 msgid "Frames per second"
 msgstr ""
 
-#: developer-hud-ttl
+#: hud-ttl
 msgid "Time to load"
 msgstr ""
+
+#: hud-memory
+msgid "Memory"
+msgstr ""
+
+#: hud-appmemory
+msgid "App memory"
+msgstr ""
+
+#: hud-jsobjects
+msgid "JS objects"
+msgstr ""
+
+#: hud-jsstrings
+msgid "JS strings"
+msgstr ""
+
+#: hud-jsother
+msgid "JS other"
+msgstr ""
+
+#: hud-dom
+msgid "DOM"
+msgstr ""
+
+#: hud-style
+msgid "Style"
+msgstr ""
+
+#: hud-other
+#, fuzzy
+msgctxt "hud-other"
+msgid "Other"
+msgstr "Arall"
 
 #: software
 msgid "Software"
@@ -2983,6 +3099,10 @@ msgstr "Galluogi cyfansoddwr caledwedd"
 #: paint-flashing
 msgid "Flash repainted area"
 msgstr "Ardal ail baentiwyd gan Flash"
+
+#: dumps-layers
+msgid "Dump layers tree"
+msgstr ""
 
 #: apz-force-enable
 msgid "Enable APZ for all content processes"
@@ -3303,6 +3423,8 @@ msgid "Mozilla"
 msgstr "Mozilla"
 
 #: about-other
+#, fuzzy
+msgctxt "about-other"
 msgid "Other"
 msgstr "Arall"
 
@@ -3523,7 +3645,7 @@ msgstr ""
 "gweithio. Cyfyrddwch yn unrhyw le i glywed yr eitem o dan eich bys a thapio "
 "dwywaith i'w gychwyn."
 
-#: screenreader-confirm-button-start
+#: screenReader-confirm-button-start
 msgid "Start"
 msgstr "Cychwyn"
 
@@ -3870,6 +3992,10 @@ msgstr "Anfon Data"
 msgid "Get Channel Status"
 msgstr "Estyn Statws Sianel"
 
+#, fuzzy
+#~ msgid "{{developer-hud}}"
+#~ msgstr "{{developer}}"
+
 #~ msgid "Contacts debugging output in adb"
 #~ msgstr "Allbwn dadfygio cysylltiadau yn adb"
 
@@ -4011,9 +4137,6 @@ msgstr "Estyn Statws Sianel"
 
 #~ msgid "GPS"
 #~ msgstr "GPS"
-
-#~ msgid "MMS settings"
-#~ msgstr "Gosodiadau MMS"
 
 #~ msgctxt "pinAttemptMsg2"
 #~ msgid "{[ plural(n) ]}"

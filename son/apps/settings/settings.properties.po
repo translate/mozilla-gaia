@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-17 14:40+0100\n"
+"POT-Creation-Date: 2014-03-01 00:45+0100\n"
 "PO-Revision-Date: 2013-09-11 21:07+0000\n"
 "Last-Translator: Mohomodou  <mh@bollag-areal.ch>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -871,6 +871,14 @@ msgstr "Bayrandi kanbarey"
 msgid "Request notification of delivery for each message sent"
 msgstr "Hãayan bayrandi toonandiri sanbandi hantum foo kul še"
 
+#: message-read-reports
+msgid "Read reports"
+msgstr ""
+
+#: message-read-reports-details
+msgid "Request read report for each message sent"
+msgstr ""
+
 #: mmsTitle
 msgid "Multimedia messaging (MMS)"
 msgstr "Hẽenandikaw boobo alhabar (MMS)"
@@ -1115,6 +1123,35 @@ msgstr "Alhabar kayandiyaney"
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
 #: messageSettings-header
+msgctxt "messageSettings-header"
+msgid "{{messageSettings}}"
+msgstr ""
+
+#: dunSettings
+msgid "Tethering settings"
+msgstr ""
+
+#. # LOCALIZATION NOTE (dunSettings-header): if you leave the original
+#. # en-US value "{{dunSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "dunSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: dunSettings-header
+msgid "{{dunSettings}}"
+msgstr ""
+
+#: imsSettings
+#, fuzzy
+msgid "IMS settings"
+msgstr "APN kayandiyaney"
+
+#. # LOCALIZATION NOTE (imsSettings-header): if you leave the original
+#. # en-US value "{{imsSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "imsSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: imsSettings-header
+msgctxt "imsSettings-header"
 msgid "{{messageSettings}}"
 msgstr ""
 
@@ -1152,6 +1189,8 @@ msgid "Authentication"
 msgstr "Tabatandiyan"
 
 #: apn-authType-notDefined
+#, fuzzy
+msgctxt "apn-authType-notDefined"
 msgid "Not defined"
 msgstr "Mana bayrandi"
 
@@ -1171,6 +1210,32 @@ msgstr "CHAP"
 #: apn-authType-papOrChap
 msgid "PAP or CHAP"
 msgstr "PAP wala CHAP"
+
+#: apn-protocol
+msgid "Protocol"
+msgstr ""
+
+#: apn-roaming-protocol
+msgid "Roaming protocol"
+msgstr ""
+
+#: apn-protocol-notDefined
+#, fuzzy
+msgctxt "apn-protocol-notDefined"
+msgid "Not defined"
+msgstr "Mana bayrandi"
+
+#: apn-protocol-ip
+msgid "IPv4"
+msgstr ""
+
+#: apn-protocol-ipv6
+msgid "IPv6"
+msgstr ""
+
+#: apn-protocol-ipv4v6
+msgid "IPv4/IPv6"
+msgstr ""
 
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
@@ -1888,6 +1953,10 @@ msgstr "Bayhayey"
 #: sim-manager-outgoing-data-desc-new
 msgid ""
 "Internet connection, MMS, A-GPS and Marketplace payments will be sent from"
+msgstr ""
+
+#: sim-manager-always-ask
+msgid "Always ask"
 msgstr ""
 
 #: sim-pin-locked
@@ -2863,15 +2932,22 @@ msgid "Share using USB"
 msgstr "Marga USB goy ra"
 
 #: format-sdcard
+msgctxt "format-sdcard"
 msgid "Format SD card"
 msgstr ""
 
-#: format-sdcard-confirmation
-msgid "Format SD card?"
+#: format-sdcard-title
+msgctxt "format-sdcard-title"
+msgid "Format SD card"
 msgstr ""
 
-#: format-sdcard-description
-msgid "It will erase all SD card data. Such as music or photos."
+#: format-sdcard-message
+msgid ""
+"This will erase all data stored on your SD card, such as music and photos."
+msgstr ""
+
+#: format-sdcard-btnformat
+msgid "Format"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -2947,38 +3023,76 @@ msgstr "Cinakey"
 msgid "{{developer}}"
 msgstr ""
 
-#: developer-hud
+#: hud
 msgid "Developer HUD"
 msgstr ""
 
-#: developer-hud-header
-msgid "{{developer-hud}}"
+#: hud-header
+msgid "{{hud}}"
 msgstr ""
 
-#: developer-hud-errors
+#: hud-errors
 #, fuzzy
 msgid "Errors"
 msgstr "Firka"
 
-#: developer-hud-warnings
+#: hud-warnings
 msgid "Warnings"
 msgstr ""
 
-#: developer-hud-reflows
+#: hud-performance
+msgid "Performance"
+msgstr ""
+
+#: hud-reflows
 msgid "Reflows"
 msgstr ""
 
-#: developer-hud-jank
+#: hud-jank
 msgid "Jank"
 msgstr ""
 
-#: developer-hud-fps
+#: hud-fps
 msgid "Frames per second"
 msgstr ""
 
-#: developer-hud-ttl
+#: hud-ttl
 msgid "Time to load"
 msgstr ""
+
+#: hud-memory
+msgid "Memory"
+msgstr ""
+
+#: hud-appmemory
+msgid "App memory"
+msgstr ""
+
+#: hud-jsobjects
+msgid "JS objects"
+msgstr ""
+
+#: hud-jsstrings
+msgid "JS strings"
+msgstr ""
+
+#: hud-jsother
+msgid "JS other"
+msgstr ""
+
+#: hud-dom
+msgid "DOM"
+msgstr ""
+
+#: hud-style
+msgid "Style"
+msgstr ""
+
+#: hud-other
+#, fuzzy
+msgctxt "hud-other"
+msgid "Other"
+msgstr "Itana"
 
 #: software
 msgid "Software"
@@ -3007,6 +3121,10 @@ msgstr ""
 #: paint-flashing
 msgid "Flash repainted area"
 msgstr "Caaray taaga ganda cebe"
+
+#: dumps-layers
+msgid "Dump layers tree"
+msgstr ""
 
 #: apz-force-enable
 msgid "Enable APZ for all content processes"
@@ -3325,6 +3443,8 @@ msgid "Mozilla"
 msgstr "Mozilla"
 
 #: about-other
+#, fuzzy
+msgctxt "about-other"
 msgid "Other"
 msgstr "Itana"
 
@@ -3538,7 +3658,7 @@ msgid ""
 "activate."
 msgstr ""
 
-#: screenreader-confirm-button-start
+#: screenReader-confirm-button-start
 msgid "Start"
 msgstr ""
 

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-17 14:40+0100\n"
+"POT-Creation-Date: 2014-03-01 00:45+0100\n"
 "PO-Revision-Date: 2014-02-19 07:42+0000\n"
 "Last-Translator: Trung <ndtrung4419@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -859,6 +859,14 @@ msgstr "Báo cáo gửi đi"
 msgid "Request notification of delivery for each message sent"
 msgstr "Yêu cầu thông báo tình trạng gửi đi của mỗi tin nhắn"
 
+#: message-read-reports
+msgid "Read reports"
+msgstr ""
+
+#: message-read-reports-details
+msgid "Request read report for each message sent"
+msgstr ""
+
 #: mmsTitle
 msgid "Multimedia messaging (MMS)"
 msgstr "Tin nhắn đa phương tiện (MMS)"
@@ -1104,6 +1112,38 @@ msgstr "Thiết lập nhắn tin"
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
 #: messageSettings-header
+#, fuzzy
+msgctxt "messageSettings-header"
+msgid "{{messageSettings}}"
+msgstr "{{messageSettings}}"
+
+#: dunSettings
+msgid "Tethering settings"
+msgstr ""
+
+#. # LOCALIZATION NOTE (dunSettings-header): if you leave the original
+#. # en-US value "{{dunSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "dunSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: dunSettings-header
+#, fuzzy
+msgid "{{dunSettings}}"
+msgstr "Giới hạn liên lạc"
+
+#: imsSettings
+#, fuzzy
+msgid "IMS settings"
+msgstr "Thiết lập MMS"
+
+#. # LOCALIZATION NOTE (imsSettings-header): if you leave the original
+#. # en-US value "{{imsSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "imsSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: imsSettings-header
+#, fuzzy
+msgctxt "imsSettings-header"
 msgid "{{messageSettings}}"
 msgstr "{{messageSettings}}"
 
@@ -1141,6 +1181,8 @@ msgid "Authentication"
 msgstr "Xác thực"
 
 #: apn-authType-notDefined
+#, fuzzy
+msgctxt "apn-authType-notDefined"
 msgid "Not defined"
 msgstr "Không đặt cụ thể"
 
@@ -1160,6 +1202,32 @@ msgstr "CHAP"
 #: apn-authType-papOrChap
 msgid "PAP or CHAP"
 msgstr "PAP hoặc CHAP"
+
+#: apn-protocol
+msgid "Protocol"
+msgstr ""
+
+#: apn-roaming-protocol
+msgid "Roaming protocol"
+msgstr ""
+
+#: apn-protocol-notDefined
+#, fuzzy
+msgctxt "apn-protocol-notDefined"
+msgid "Not defined"
+msgstr "Không đặt cụ thể"
+
+#: apn-protocol-ip
+msgid "IPv4"
+msgstr ""
+
+#: apn-protocol-ipv6
+msgid "IPv6"
+msgstr ""
+
+#: apn-protocol-ipv4v6
+msgid "IPv4/IPv6"
+msgstr ""
 
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
@@ -1877,6 +1945,10 @@ msgstr "Dữ liệu"
 msgid ""
 "Internet connection, MMS, A-GPS and Marketplace payments will be sent from"
 msgstr "Kết nối Internet, MMS, A-GPS và thanh toán kho ứng dụng sẽ được gửi từ"
+
+#: sim-manager-always-ask
+msgid "Always ask"
+msgstr ""
 
 #: sim-pin-locked
 msgid "SIM PIN locked"
@@ -2825,16 +2897,25 @@ msgid "Share using USB"
 msgstr "Chia sẻ qua USB"
 
 #: format-sdcard
+#, fuzzy
+msgctxt "format-sdcard"
 msgid "Format SD card"
 msgstr "Xóa trắng thẻ SD"
 
-#: format-sdcard-confirmation
-msgid "Format SD card?"
-msgstr "Xóa trắng thẻ SD?"
+#: format-sdcard-title
+#, fuzzy
+msgctxt "format-sdcard-title"
+msgid "Format SD card"
+msgstr "Xóa trắng thẻ SD"
 
-#: format-sdcard-description
-msgid "It will erase all SD card data. Such as music or photos."
-msgstr "Thao tác này sẽ xóa sạch dữ liệu như nhạc hay ảnh trên thẻ SD."
+#: format-sdcard-message
+msgid ""
+"This will erase all data stored on your SD card, such as music and photos."
+msgstr ""
+
+#: format-sdcard-btnformat
+msgid "Format"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Device
@@ -2908,38 +2989,76 @@ msgstr "Dành cho lập trình viên"
 msgid "{{developer}}"
 msgstr "Lập trình viên"
 
-#: developer-hud
+#: hud
 msgid "Developer HUD"
 msgstr ""
 
-#: developer-hud-header
-msgid "{{developer-hud}}"
-msgstr "{{developer-hud}}"
+#: hud-header
+msgid "{{hud}}"
+msgstr ""
 
-#: developer-hud-errors
+#: hud-errors
 #, fuzzy
 msgid "Errors"
 msgstr "Lỗi"
 
-#: developer-hud-warnings
+#: hud-warnings
 msgid "Warnings"
 msgstr ""
 
-#: developer-hud-reflows
+#: hud-performance
+msgid "Performance"
+msgstr ""
+
+#: hud-reflows
 msgid "Reflows"
 msgstr ""
 
-#: developer-hud-jank
+#: hud-jank
 msgid "Jank"
 msgstr ""
 
-#: developer-hud-fps
+#: hud-fps
 msgid "Frames per second"
 msgstr ""
 
-#: developer-hud-ttl
+#: hud-ttl
 msgid "Time to load"
 msgstr ""
+
+#: hud-memory
+msgid "Memory"
+msgstr ""
+
+#: hud-appmemory
+msgid "App memory"
+msgstr ""
+
+#: hud-jsobjects
+msgid "JS objects"
+msgstr ""
+
+#: hud-jsstrings
+msgid "JS strings"
+msgstr ""
+
+#: hud-jsother
+msgid "JS other"
+msgstr ""
+
+#: hud-dom
+msgid "DOM"
+msgstr ""
+
+#: hud-style
+msgid "Style"
+msgstr ""
+
+#: hud-other
+#, fuzzy
+msgctxt "hud-other"
+msgid "Other"
+msgstr "Thông tin khác"
 
 #: software
 msgid "Software"
@@ -2967,6 +3086,10 @@ msgstr ""
 
 #: paint-flashing
 msgid "Flash repainted area"
+msgstr ""
+
+#: dumps-layers
+msgid "Dump layers tree"
 msgstr ""
 
 #: apz-force-enable
@@ -3291,6 +3414,8 @@ msgid "Mozilla"
 msgstr "Mozilla"
 
 #: about-other
+#, fuzzy
+msgctxt "about-other"
 msgid "Other"
 msgstr "Thông tin khác"
 
@@ -3509,7 +3634,7 @@ msgstr ""
 "kỳ đâu để nghe đọc văn bản ở vị trí ngón tay, sau đó chạm hai lần để kích "
 "hoạt mục đó."
 
-#: screenreader-confirm-button-start
+#: screenReader-confirm-button-start
 msgid "Start"
 msgstr "Bật"
 
@@ -3854,6 +3979,15 @@ msgstr ""
 msgid "Get Channel Status"
 msgstr ""
 
+#~ msgid "Format SD card?"
+#~ msgstr "Xóa trắng thẻ SD?"
+
+#~ msgid "It will erase all SD card data. Such as music or photos."
+#~ msgstr "Thao tác này sẽ xóa sạch dữ liệu như nhạc hay ảnh trên thẻ SD."
+
+#~ msgid "{{developer-hud}}"
+#~ msgstr "{{developer-hud}}"
+
 #~ msgid "Grid"
 #~ msgstr "Lưới"
 
@@ -3965,9 +4099,6 @@ msgstr ""
 
 #~ msgid "GPS"
 #~ msgstr "GPS"
-
-#~ msgid "MMS settings"
-#~ msgstr "Thiết lập MMS"
 
 #, fuzzy
 #~ msgctxt "pinAttemptMsg2"

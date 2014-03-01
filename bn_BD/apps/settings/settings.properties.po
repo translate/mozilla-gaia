@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-17 14:40+0100\n"
+"POT-Creation-Date: 2014-03-01 00:45+0100\n"
 "PO-Revision-Date: 2013-05-23 15:42+0000\n"
 "Last-Translator: Robin <robin@ankur.org.bd>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -964,6 +964,14 @@ msgstr "ডেলিভারি রিপোর্ট"
 msgid "Request notification of delivery for each message sent"
 msgstr "প্রত্যেক বার্তা পাঠানো হলে বিজ্ঞপ্তি দেওয়া হোক"
 
+#: message-read-reports
+msgid "Read reports"
+msgstr ""
+
+#: message-read-reports-details
+msgid "Request read report for each message sent"
+msgstr ""
+
 #: mmsTitle
 msgid "Multimedia messaging (MMS)"
 msgstr "মাল্টিমিডিয়া বার্তা (MMS)"
@@ -1222,6 +1230,38 @@ msgstr "বার্তার সেটিংস"
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
 #: messageSettings-header
+#, fuzzy
+msgctxt "messageSettings-header"
+msgid "{{messageSettings}}"
+msgstr "{{messageSettings}}"
+
+#: dunSettings
+msgid "Tethering settings"
+msgstr ""
+
+#. # LOCALIZATION NOTE (dunSettings-header): if you leave the original
+#. # en-US value "{{dunSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "dunSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: dunSettings-header
+#, fuzzy
+msgid "{{dunSettings}}"
+msgstr "{{fdnSettings}}"
+
+#: imsSettings
+#, fuzzy
+msgid "IMS settings"
+msgstr "এমএমএস সেটিংস"
+
+#. # LOCALIZATION NOTE (imsSettings-header): if you leave the original
+#. # en-US value "{{imsSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "imsSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: imsSettings-header
+#, fuzzy
+msgctxt "imsSettings-header"
 msgid "{{messageSettings}}"
 msgstr "{{messageSettings}}"
 
@@ -1261,6 +1301,8 @@ msgid "Authentication"
 msgstr "প্রমাণীকরণ"
 
 #: apn-authType-notDefined
+#, fuzzy
+msgctxt "apn-authType-notDefined"
 msgid "Not defined"
 msgstr "সুনির্দিষ্ট নয়"
 
@@ -1281,6 +1323,32 @@ msgstr "CHAP"
 #: apn-authType-papOrChap
 msgid "PAP or CHAP"
 msgstr "PAP অথবা CHAP"
+
+#: apn-protocol
+msgid "Protocol"
+msgstr ""
+
+#: apn-roaming-protocol
+msgid "Roaming protocol"
+msgstr ""
+
+#: apn-protocol-notDefined
+#, fuzzy
+msgctxt "apn-protocol-notDefined"
+msgid "Not defined"
+msgstr "সুনির্দিষ্ট নয়"
+
+#: apn-protocol-ip
+msgid "IPv4"
+msgstr ""
+
+#: apn-protocol-ipv6
+msgid "IPv6"
+msgstr ""
+
+#: apn-protocol-ipv4v6
+msgid "IPv4/IPv6"
+msgstr ""
 
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
@@ -2079,6 +2147,10 @@ msgstr "ডাটা"
 msgid ""
 "Internet connection, MMS, A-GPS and Marketplace payments will be sent from"
 msgstr "ইন্টারনেট সংযোগ, এমএমএস, এ-জিপিএস এবং মার্কেটপ্লেস পেমেন্ট পাঠানো হবে"
+
+#: sim-manager-always-ask
+msgid "Always ask"
+msgstr ""
 
 #: sim-pin-locked
 msgid "SIM PIN locked"
@@ -3254,15 +3326,22 @@ msgid "Share using USB"
 msgstr "ইউএসবি দ্বারা শেয়ার"
 
 #: format-sdcard
+msgctxt "format-sdcard"
 msgid "Format SD card"
 msgstr ""
 
-#: format-sdcard-confirmation
-msgid "Format SD card?"
+#: format-sdcard-title
+msgctxt "format-sdcard-title"
+msgid "Format SD card"
 msgstr ""
 
-#: format-sdcard-description
-msgid "It will erase all SD card data. Such as music or photos."
+#: format-sdcard-message
+msgid ""
+"This will erase all data stored on your SD card, such as music and photos."
+msgstr ""
+
+#: format-sdcard-btnformat
+msgid "Format"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3337,39 +3416,76 @@ msgstr "ডেভেলপার"
 msgid "{{developer}}"
 msgstr "{{developer}}"
 
-#: developer-hud
+#: hud
 msgid "Developer HUD"
 msgstr ""
 
-#: developer-hud-header
-#, fuzzy
-msgid "{{developer-hud}}"
-msgstr "{{developer}}"
+#: hud-header
+msgid "{{hud}}"
+msgstr ""
 
-#: developer-hud-errors
+#: hud-errors
 #, fuzzy
 msgid "Errors"
 msgstr "ত্রুটি"
 
-#: developer-hud-warnings
+#: hud-warnings
 msgid "Warnings"
 msgstr ""
 
-#: developer-hud-reflows
+#: hud-performance
+msgid "Performance"
+msgstr ""
+
+#: hud-reflows
 msgid "Reflows"
 msgstr ""
 
-#: developer-hud-jank
+#: hud-jank
 msgid "Jank"
 msgstr ""
 
-#: developer-hud-fps
+#: hud-fps
 msgid "Frames per second"
 msgstr ""
 
-#: developer-hud-ttl
+#: hud-ttl
 msgid "Time to load"
 msgstr ""
+
+#: hud-memory
+msgid "Memory"
+msgstr ""
+
+#: hud-appmemory
+msgid "App memory"
+msgstr ""
+
+#: hud-jsobjects
+msgid "JS objects"
+msgstr ""
+
+#: hud-jsstrings
+msgid "JS strings"
+msgstr ""
+
+#: hud-jsother
+msgid "JS other"
+msgstr ""
+
+#: hud-dom
+msgid "DOM"
+msgstr ""
+
+#: hud-style
+msgid "Style"
+msgstr ""
+
+#: hud-other
+#, fuzzy
+msgctxt "hud-other"
+msgid "Other"
+msgstr "অন্যান্য"
 
 #: software
 msgid "Software"
@@ -3398,6 +3514,10 @@ msgstr "হার্ডওয়্যার প্রণেতা সক্র�
 #: paint-flashing
 msgid "Flash repainted area"
 msgstr "পুন রং করা অংশ ফ্লাশ কর"
+
+#: dumps-layers
+msgid "Dump layers tree"
+msgstr ""
 
 #: apz-force-enable
 msgid "Enable APZ for all content processes"
@@ -3744,6 +3864,8 @@ msgid "Mozilla"
 msgstr "মোজিলা"
 
 #: about-other
+#, fuzzy
+msgctxt "about-other"
 msgid "Other"
 msgstr "অন্যান্য"
 
@@ -3987,7 +4109,7 @@ msgid ""
 "activate."
 msgstr ""
 
-#: screenreader-confirm-button-start
+#: screenReader-confirm-button-start
 msgid "Start"
 msgstr "শুরু"
 
@@ -4343,6 +4465,10 @@ msgstr "ডাটা প্রেরণ"
 msgid "Get Channel Status"
 msgstr "চ্যানেলের অবস্থা দেখুন"
 
+#, fuzzy
+#~ msgid "{{developer-hud}}"
+#~ msgstr "{{developer}}"
+
 #~ msgid "Arabic"
 #~ msgstr "আরবি"
 
@@ -4357,6 +4483,3 @@ msgstr "চ্যানেলের অবস্থা দেখুন"
 
 #~ msgid "GPS"
 #~ msgstr "জিপিএস"
-
-#~ msgid "MMS settings"
-#~ msgstr "এমএমএস সেটিংস"

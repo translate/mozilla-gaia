@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-17 14:40+0100\n"
+"POT-Creation-Date: 2014-03-01 00:45+0100\n"
 "PO-Revision-Date: 2014-02-22 12:02+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.11.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -862,6 +862,14 @@ msgstr "Aithisgean libhrigidh"
 msgid "Request notification of delivery for each message sent"
 msgstr "Iarr brath libhrigidh airson gach teachdaireachd a thèid a chur"
 
+#: message-read-reports
+msgid "Read reports"
+msgstr ""
+
+#: message-read-reports-details
+msgid "Request read report for each message sent"
+msgstr ""
+
 #: mmsTitle
 msgid "Multimedia messaging (MMS)"
 msgstr "Multimedia Messaging (MMS)"
@@ -1108,6 +1116,38 @@ msgstr "Roghainnean nan teachdaireachdan"
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
 #: messageSettings-header
+#, fuzzy
+msgctxt "messageSettings-header"
+msgid "{{messageSettings}}"
+msgstr "{{messageSettings}}"
+
+#: dunSettings
+msgid "Tethering settings"
+msgstr ""
+
+#. # LOCALIZATION NOTE (dunSettings-header): if you leave the original
+#. # en-US value "{{dunSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "dunSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: dunSettings-header
+#, fuzzy
+msgid "{{dunSettings}}"
+msgstr "{{fdnSettings}}"
+
+#: imsSettings
+#, fuzzy
+msgid "IMS settings"
+msgstr "Roghainnean MMS"
+
+#. # LOCALIZATION NOTE (imsSettings-header): if you leave the original
+#. # en-US value "{{imsSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "imsSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: imsSettings-header
+#, fuzzy
+msgctxt "imsSettings-header"
 msgid "{{messageSettings}}"
 msgstr "{{messageSettings}}"
 
@@ -1145,6 +1185,8 @@ msgid "Authentication"
 msgstr "Dearbhadh"
 
 #: apn-authType-notDefined
+#, fuzzy
+msgctxt "apn-authType-notDefined"
 msgid "Not defined"
 msgstr "Gun deifinisean"
 
@@ -1164,6 +1206,32 @@ msgstr "CHAP"
 #: apn-authType-papOrChap
 msgid "PAP or CHAP"
 msgstr "PAP no CHAP"
+
+#: apn-protocol
+msgid "Protocol"
+msgstr ""
+
+#: apn-roaming-protocol
+msgid "Roaming protocol"
+msgstr ""
+
+#: apn-protocol-notDefined
+#, fuzzy
+msgctxt "apn-protocol-notDefined"
+msgid "Not defined"
+msgstr "Gun deifinisean"
+
+#: apn-protocol-ip
+msgid "IPv4"
+msgstr ""
+
+#: apn-protocol-ipv6
+msgid "IPv6"
+msgstr ""
+
+#: apn-protocol-ipv4v6
+msgid "IPv4/IPv6"
+msgstr ""
 
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
@@ -1895,6 +1963,10 @@ msgid ""
 "Internet connection, MMS, A-GPS and Marketplace payments will be sent from"
 msgstr ""
 "Thèid ceanglaichean eadar-lìn, MMS, A-GPS agus pàigheadh na margaidh a chur o"
+
+#: sim-manager-always-ask
+msgid "Always ask"
+msgstr ""
 
 #: sim-pin-locked
 msgid "SIM PIN locked"
@@ -2870,17 +2942,25 @@ msgid "Share using USB"
 msgstr "A' co-roinneadh slighe USB"
 
 #: format-sdcard
+#, fuzzy
+msgctxt "format-sdcard"
 msgid "Format SD card"
 msgstr "Fòrmataich a’ chairt SD"
 
-#: format-sdcard-confirmation
-msgid "Format SD card?"
-msgstr "A bheil thu airson a’ chairt SD fhòrmatadh?"
+#: format-sdcard-title
+#, fuzzy
+msgctxt "format-sdcard-title"
+msgid "Format SD card"
+msgstr "Fòrmataich a’ chairt SD"
 
-#: format-sdcard-description
-msgid "It will erase all SD card data. Such as music or photos."
+#: format-sdcard-message
+msgid ""
+"This will erase all data stored on your SD card, such as music and photos."
 msgstr ""
-"Thèid dàta sam bith air a’ chairt SD a sguabadh às, can ceòl is dealbhan."
+
+#: format-sdcard-btnformat
+msgid "Format"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Device
@@ -2954,37 +3034,75 @@ msgstr "Luchd-leasachaidh"
 msgid "{{developer}}"
 msgstr "{{developer}}"
 
-#: developer-hud
+#: hud
 msgid "Developer HUD"
 msgstr "HUD luchd-leasachaidh"
 
-#: developer-hud-header
-msgid "{{developer-hud}}"
-msgstr "{{developer-hud}}"
+#: hud-header
+msgid "{{hud}}"
+msgstr ""
 
-#: developer-hud-errors
+#: hud-errors
 msgid "Errors"
 msgstr "Mearachdan"
 
-#: developer-hud-warnings
+#: hud-warnings
 msgid "Warnings"
 msgstr "Rabhaidhean"
 
-#: developer-hud-reflows
+#: hud-performance
+msgid "Performance"
+msgstr ""
+
+#: hud-reflows
 msgid "Reflows"
 msgstr "Reflows"
 
-#: developer-hud-jank
+#: hud-jank
 msgid "Jank"
 msgstr "Jank"
 
-#: developer-hud-fps
+#: hud-fps
 msgid "Frames per second"
 msgstr "Frèamaichean gach diog"
 
-#: developer-hud-ttl
+#: hud-ttl
 msgid "Time to load"
 msgstr "Ùine luchdachaidh"
+
+#: hud-memory
+msgid "Memory"
+msgstr ""
+
+#: hud-appmemory
+msgid "App memory"
+msgstr ""
+
+#: hud-jsobjects
+msgid "JS objects"
+msgstr ""
+
+#: hud-jsstrings
+msgid "JS strings"
+msgstr ""
+
+#: hud-jsother
+msgid "JS other"
+msgstr ""
+
+#: hud-dom
+msgid "DOM"
+msgstr ""
+
+#: hud-style
+msgid "Style"
+msgstr ""
+
+#: hud-other
+#, fuzzy
+msgctxt "hud-other"
+msgid "Other"
+msgstr "Eile"
 
 #: software
 msgid "Software"
@@ -3013,6 +3131,10 @@ msgstr "Hardware composer an comas"
 #: paint-flashing
 msgid "Flash repainted area"
 msgstr "Flash air an raon ath-pheantaichte"
+
+#: dumps-layers
+msgid "Dump layers tree"
+msgstr ""
 
 #: apz-force-enable
 msgid "Enable APZ for all content processes"
@@ -3338,6 +3460,8 @@ msgid "Mozilla"
 msgstr "Mozilla"
 
 #: about-other
+#, fuzzy
+msgctxt "about-other"
 msgid "Other"
 msgstr "Eile"
 
@@ -3558,7 +3682,7 @@ msgstr ""
 "dòigh eile. Bean ris àite sam bith is cluinneadh na tha fo do chorrag is "
 "dèan gnogag dhùbailte gus a ghnìomhachadh."
 
-#: screenreader-confirm-button-start
+#: screenReader-confirm-button-start
 msgid "Start"
 msgstr "Tòisich"
 
@@ -3915,6 +4039,16 @@ msgstr "Cuir an dàta"
 msgid "Get Channel Status"
 msgstr "Iarr staid na seanail"
 
+#~ msgid "Format SD card?"
+#~ msgstr "A bheil thu airson a’ chairt SD fhòrmatadh?"
+
+#~ msgid "It will erase all SD card data. Such as music or photos."
+#~ msgstr ""
+#~ "Thèid dàta sam bith air a’ chairt SD a sguabadh às, can ceòl is dealbhan."
+
+#~ msgid "{{developer-hud}}"
+#~ msgstr "{{developer-hud}}"
+
 #~ msgid "Contacts debugging output in adb"
 #~ msgstr "Às-chur dì-bhugachadh luchd-aithne ann an adb"
 
@@ -4054,9 +4188,6 @@ msgstr "Iarr staid na seanail"
 
 #~ msgid "GPS"
 #~ msgstr "GPS"
-
-#~ msgid "MMS settings"
-#~ msgstr "Roghainnean MMS"
 
 #~ msgctxt "pinAttemptMsg2"
 #~ msgid "{[ plural(n) ]}"

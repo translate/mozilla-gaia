@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-17 14:40+0100\n"
+"POT-Creation-Date: 2014-03-01 00:45+0100\n"
 "PO-Revision-Date: 2013-10-18 10:48+0000\n"
 "Last-Translator: Benny <bennychandra@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -861,6 +861,14 @@ msgstr "Laporan penyampaian"
 msgid "Request notification of delivery for each message sent"
 msgstr "Minta notifikasi penyampaian setiap pesan teks terkirim"
 
+#: message-read-reports
+msgid "Read reports"
+msgstr ""
+
+#: message-read-reports-details
+msgid "Request read report for each message sent"
+msgstr ""
+
 #: mmsTitle
 msgid "Multimedia messaging (MMS)"
 msgstr ""
@@ -1107,6 +1115,35 @@ msgstr ""
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
 #: messageSettings-header
+msgctxt "messageSettings-header"
+msgid "{{messageSettings}}"
+msgstr ""
+
+#: dunSettings
+msgid "Tethering settings"
+msgstr ""
+
+#. # LOCALIZATION NOTE (dunSettings-header): if you leave the original
+#. # en-US value "{{dunSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "dunSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: dunSettings-header
+msgid "{{dunSettings}}"
+msgstr ""
+
+#: imsSettings
+#, fuzzy
+msgid "IMS settings"
+msgstr "Setelan MMS"
+
+#. # LOCALIZATION NOTE (imsSettings-header): if you leave the original
+#. # en-US value "{{imsSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "imsSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: imsSettings-header
+msgctxt "imsSettings-header"
 msgid "{{messageSettings}}"
 msgstr ""
 
@@ -1145,6 +1182,7 @@ msgid "Authentication"
 msgstr "Autentikasi"
 
 #: apn-authType-notDefined
+msgctxt "apn-authType-notDefined"
 msgid "Not defined"
 msgstr ""
 
@@ -1163,6 +1201,31 @@ msgstr ""
 
 #: apn-authType-papOrChap
 msgid "PAP or CHAP"
+msgstr ""
+
+#: apn-protocol
+msgid "Protocol"
+msgstr ""
+
+#: apn-roaming-protocol
+msgid "Roaming protocol"
+msgstr ""
+
+#: apn-protocol-notDefined
+msgctxt "apn-protocol-notDefined"
+msgid "Not defined"
+msgstr ""
+
+#: apn-protocol-ip
+msgid "IPv4"
+msgstr ""
+
+#: apn-protocol-ipv6
+msgid "IPv6"
+msgstr ""
+
+#: apn-protocol-ipv4v6
+msgid "IPv4/IPv6"
 msgstr ""
 
 #: dataConnection-warning-head
@@ -1888,6 +1951,10 @@ msgstr "Data"
 #: sim-manager-outgoing-data-desc-new
 msgid ""
 "Internet connection, MMS, A-GPS and Marketplace payments will be sent from"
+msgstr ""
+
+#: sim-manager-always-ask
+msgid "Always ask"
 msgstr ""
 
 #: sim-pin-locked
@@ -2872,15 +2939,22 @@ msgid "Share using USB"
 msgstr ""
 
 #: format-sdcard
+msgctxt "format-sdcard"
 msgid "Format SD card"
 msgstr ""
 
-#: format-sdcard-confirmation
-msgid "Format SD card?"
+#: format-sdcard-title
+msgctxt "format-sdcard-title"
+msgid "Format SD card"
 msgstr ""
 
-#: format-sdcard-description
-msgid "It will erase all SD card data. Such as music or photos."
+#: format-sdcard-message
+msgid ""
+"This will erase all data stored on your SD card, such as music and photos."
+msgstr ""
+
+#: format-sdcard-btnformat
+msgid "Format"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -2956,38 +3030,76 @@ msgstr "Pengembang"
 msgid "{{developer}}"
 msgstr ""
 
-#: developer-hud
+#: hud
 msgid "Developer HUD"
 msgstr ""
 
-#: developer-hud-header
-msgid "{{developer-hud}}"
+#: hud-header
+msgid "{{hud}}"
 msgstr ""
 
-#: developer-hud-errors
+#: hud-errors
 #, fuzzy
 msgid "Errors"
 msgstr "Galat"
 
-#: developer-hud-warnings
+#: hud-warnings
 msgid "Warnings"
 msgstr ""
 
-#: developer-hud-reflows
+#: hud-performance
+msgid "Performance"
+msgstr ""
+
+#: hud-reflows
 msgid "Reflows"
 msgstr ""
 
-#: developer-hud-jank
+#: hud-jank
 msgid "Jank"
 msgstr ""
 
-#: developer-hud-fps
+#: hud-fps
 msgid "Frames per second"
 msgstr ""
 
-#: developer-hud-ttl
+#: hud-ttl
 msgid "Time to load"
 msgstr ""
+
+#: hud-memory
+msgid "Memory"
+msgstr ""
+
+#: hud-appmemory
+msgid "App memory"
+msgstr ""
+
+#: hud-jsobjects
+msgid "JS objects"
+msgstr ""
+
+#: hud-jsstrings
+msgid "JS strings"
+msgstr ""
+
+#: hud-jsother
+msgid "JS other"
+msgstr ""
+
+#: hud-dom
+msgid "DOM"
+msgstr ""
+
+#: hud-style
+msgid "Style"
+msgstr ""
+
+#: hud-other
+#, fuzzy
+msgctxt "hud-other"
+msgid "Other"
+msgstr "Lainnya"
 
 #: software
 msgid "Software"
@@ -3016,6 +3128,10 @@ msgstr ""
 #: paint-flashing
 msgid "Flash repainted area"
 msgstr "Kilaskan area yang digambar ulang"
+
+#: dumps-layers
+msgid "Dump layers tree"
+msgstr ""
 
 #: apz-force-enable
 msgid "Enable APZ for all content processes"
@@ -3337,6 +3453,8 @@ msgid "Mozilla"
 msgstr "Mozilla"
 
 #: about-other
+#, fuzzy
+msgctxt "about-other"
 msgid "Other"
 msgstr "Lainnya"
 
@@ -3550,7 +3668,7 @@ msgid ""
 "activate."
 msgstr ""
 
-#: screenreader-confirm-button-start
+#: screenReader-confirm-button-start
 msgid "Start"
 msgstr ""
 
@@ -4002,9 +4120,6 @@ msgstr ""
 
 #~ msgid "GPS"
 #~ msgstr "GPS"
-
-#~ msgid "MMS settings"
-#~ msgstr "Setelan MMS"
 
 #, fuzzy
 #~ msgctxt "pinAttemptMsg2"
