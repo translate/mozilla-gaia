@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-17 10:03+0100\n"
+"POT-Creation-Date: 2014-03-30 17:44+0100\n"
 "PO-Revision-Date: 2014-03-18 01:05+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -984,8 +984,9 @@ msgctxt "operator-networkType-auto"
 msgid "Automatic"
 msgstr "Gu fèin-obrachail"
 
-#: operator-networkType-prefer2G
-msgid "2G preferred"
+#: operator-networkType-prefer3G
+#, fuzzy
+msgid "3G preferred"
 msgstr "'S fhearr 2G"
 
 #: operator-networkType-2G
@@ -996,7 +997,7 @@ msgstr "2G a-mhàin"
 msgid "3G only"
 msgstr "3G a-mhàin"
 
-#. # DUALSTACK
+#. # MULTISTACK
 #: operator-networkType-GSM
 msgid "GSM"
 msgstr "GSM"
@@ -1013,17 +1014,37 @@ msgstr "CDMA"
 msgid "EVDO"
 msgstr "EVDO"
 
-#: operator-networkType-preferGSM
-msgid "GSM preferred"
-msgstr "'S fhearr GSM"
+#: operator-networkType-LTE
+msgid "LTE"
+msgstr ""
 
 #: operator-networkType-preferWCDMA
 msgid "WCDMA preferred"
 msgstr "'S fhearr WCDMA"
 
-#: operator-networkType-preferEVDO
-msgid "EVDO preferred"
-msgstr "'S fhearr EVDO"
+#: operator-networkType-auto-2G-3G
+msgid "Auto (2G/3G)"
+msgstr ""
+
+#: operator-networkType-auto-CDMA-EVDO
+msgid "Auto (CDMA/EVDO)"
+msgstr ""
+
+#: operator-networkType-auto-WCDMA-GSM
+msgid "Auto (WCDMA/GSM)"
+msgstr ""
+
+#: operator-networkType-auto-LTE-WCDMA-GSM
+msgid "Auto (LTE/WCDMA/GSM)"
+msgstr ""
+
+#: operator-networkType-auto-LTE-CDMA-EVDO
+msgid "Auto (LTE/CDMA/EVDO)"
+msgstr ""
+
+#: operator-networkType-auto-WCDMA-GSM-CDMA-EVDO
+msgid "Auto (WCDMA/GSM/CDMA/EVDO)"
+msgstr ""
 
 #: operator-autoSelect
 msgid "Automatic selection"
@@ -1621,6 +1642,28 @@ msgstr "Teadhrachadh USB"
 #: hotspotSettings
 msgid "Hotspot settings"
 msgstr "Roghainnean a' Hotspot"
+
+#: wifi-auth-username
+msgctxt "wifi-auth-username"
+msgid "Username"
+msgstr ""
+
+#: wifi-auth-password
+#, fuzzy
+msgctxt "wifi-auth-password"
+msgid "Password"
+msgstr "Facal-faire"
+
+#: wifi-join-username
+msgctxt "wifi-join-username"
+msgid "Username"
+msgstr ""
+
+#: wifi-join-password
+#, fuzzy
+msgctxt "wifi-join-password"
+msgid "Password"
+msgstr "Facal-faire"
 
 #. # LOCALIZATION NOTE (hotspotSettings-header): if you leave the original
 #. # en-US value "{{hotspotSettings}}" in the following string, the localization
@@ -3047,13 +3090,25 @@ msgctxt "hud-button"
 msgid "{{hud}}"
 msgstr "{{hud}}"
 
-#: hud-errors
-msgid "Errors"
-msgstr "Mearachdan"
+#: hud-logging
+msgid "Log changes in adb"
+msgstr ""
+
+#: hud-problems
+msgid "Problems"
+msgstr ""
 
 #: hud-warnings
 msgid "Warnings"
 msgstr "Rabhaidhean"
+
+#: hud-errors
+msgid "Errors"
+msgstr "Mearachdan"
+
+#: hud-security
+msgid "Security issues"
+msgstr ""
 
 #: hud-performance
 msgid "Performance"
@@ -4045,6 +4100,12 @@ msgstr "Cuir an dàta"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Iarr staid na seanail"
+
+#~ msgid "GSM preferred"
+#~ msgstr "'S fhearr GSM"
+
+#~ msgid "EVDO preferred"
+#~ msgstr "'S fhearr EVDO"
 
 #~ msgid "Format SD card?"
 #~ msgstr "A bheil thu airson a’ chairt SD fhòrmatadh?"

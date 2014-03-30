@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-17 10:03+0100\n"
+"POT-Creation-Date: 2014-03-30 17:44+0100\n"
 "PO-Revision-Date: 2014-03-05 20:05+0000\n"
 "Last-Translator: Sasa <sasa@tekovic.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Translate Toolkit 1.11.0\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1394049944.000000\n"
@@ -988,8 +988,9 @@ msgctxt "operator-networkType-auto"
 msgid "Automatic"
 msgstr "Automatski"
 
-#: operator-networkType-prefer2G
-msgid "2G preferred"
+#: operator-networkType-prefer3G
+#, fuzzy
+msgid "3G preferred"
 msgstr "Preferiraj 2G"
 
 #: operator-networkType-2G
@@ -1000,7 +1001,7 @@ msgstr "Samo 2G"
 msgid "3G only"
 msgstr "Samo 3G"
 
-#. # DUALSTACK
+#. # MULTISTACK
 #: operator-networkType-GSM
 msgid "GSM"
 msgstr "GSM"
@@ -1017,17 +1018,37 @@ msgstr "CDMA"
 msgid "EVDO"
 msgstr "EVDO"
 
-#: operator-networkType-preferGSM
-msgid "GSM preferred"
-msgstr "Preferiraj GSM"
+#: operator-networkType-LTE
+msgid "LTE"
+msgstr ""
 
 #: operator-networkType-preferWCDMA
 msgid "WCDMA preferred"
 msgstr "Preferiraj WCDMA"
 
-#: operator-networkType-preferEVDO
-msgid "EVDO preferred"
-msgstr "Preferiraj EVDO"
+#: operator-networkType-auto-2G-3G
+msgid "Auto (2G/3G)"
+msgstr ""
+
+#: operator-networkType-auto-CDMA-EVDO
+msgid "Auto (CDMA/EVDO)"
+msgstr ""
+
+#: operator-networkType-auto-WCDMA-GSM
+msgid "Auto (WCDMA/GSM)"
+msgstr ""
+
+#: operator-networkType-auto-LTE-WCDMA-GSM
+msgid "Auto (LTE/WCDMA/GSM)"
+msgstr ""
+
+#: operator-networkType-auto-LTE-CDMA-EVDO
+msgid "Auto (LTE/CDMA/EVDO)"
+msgstr ""
+
+#: operator-networkType-auto-WCDMA-GSM-CDMA-EVDO
+msgid "Auto (WCDMA/GSM/CDMA/EVDO)"
+msgstr ""
 
 #: operator-autoSelect
 msgid "Automatic selection"
@@ -1623,6 +1644,28 @@ msgstr "USB dijeljenje"
 #: hotspotSettings
 msgid "Hotspot settings"
 msgstr "Hotspot"
+
+#: wifi-auth-username
+msgctxt "wifi-auth-username"
+msgid "Username"
+msgstr ""
+
+#: wifi-auth-password
+#, fuzzy
+msgctxt "wifi-auth-password"
+msgid "Password"
+msgstr "Lozinka"
+
+#: wifi-join-username
+msgctxt "wifi-join-username"
+msgid "Username"
+msgstr ""
+
+#: wifi-join-password
+#, fuzzy
+msgctxt "wifi-join-password"
+msgid "Password"
+msgstr "Lozinka"
 
 #. # LOCALIZATION NOTE (hotspotSettings-header): if you leave the original
 #. # en-US value "{{hotspotSettings}}" in the following string, the localization
@@ -3038,13 +3081,25 @@ msgctxt "hud-button"
 msgid "{{hud}}"
 msgstr ""
 
+#: hud-logging
+msgid "Log changes in adb"
+msgstr ""
+
+#: hud-problems
+msgid "Problems"
+msgstr ""
+
+#: hud-warnings
+msgid "Warnings"
+msgstr ""
+
 #: hud-errors
 #, fuzzy
 msgid "Errors"
 msgstr "Greška"
 
-#: hud-warnings
-msgid "Warnings"
+#: hud-security
+msgid "Security issues"
 msgstr ""
 
 #: hud-performance
@@ -4030,6 +4085,12 @@ msgstr "Pošalji podatke"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Traži stanje kanala"
+
+#~ msgid "GSM preferred"
+#~ msgstr "Preferiraj GSM"
+
+#~ msgid "EVDO preferred"
+#~ msgstr "Preferiraj EVDO"
 
 #~ msgid ""
 #~ "Data: Internet connection, MMS, A-GPS and Marketplace payments will be "

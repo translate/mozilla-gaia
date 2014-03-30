@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-17 10:03+0100\n"
+"POT-Creation-Date: 2014-03-30 17:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.11.0\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
@@ -978,8 +978,9 @@ msgctxt "operator-networkType-auto"
 msgid "Automatic"
 msgstr "自動"
 
-#: operator-networkType-prefer2G
-msgid "2G preferred"
+#: operator-networkType-prefer3G
+#, fuzzy
+msgid "3G preferred"
 msgstr "偏好 2G"
 
 #: operator-networkType-2G
@@ -990,7 +991,7 @@ msgstr "僅 2G"
 msgid "3G only"
 msgstr "僅 3G"
 
-#. # DUALSTACK
+#. # MULTISTACK
 #: operator-networkType-GSM
 msgid "GSM"
 msgstr "GSM"
@@ -1007,17 +1008,37 @@ msgstr "CDMA"
 msgid "EVDO"
 msgstr "EVDO"
 
-#: operator-networkType-preferGSM
-msgid "GSM preferred"
-msgstr "偏好 GSM"
+#: operator-networkType-LTE
+msgid "LTE"
+msgstr ""
 
 #: operator-networkType-preferWCDMA
 msgid "WCDMA preferred"
 msgstr "偏好 WCDMA"
 
-#: operator-networkType-preferEVDO
-msgid "EVDO preferred"
-msgstr "偏好 EVDO"
+#: operator-networkType-auto-2G-3G
+msgid "Auto (2G/3G)"
+msgstr ""
+
+#: operator-networkType-auto-CDMA-EVDO
+msgid "Auto (CDMA/EVDO)"
+msgstr ""
+
+#: operator-networkType-auto-WCDMA-GSM
+msgid "Auto (WCDMA/GSM)"
+msgstr ""
+
+#: operator-networkType-auto-LTE-WCDMA-GSM
+msgid "Auto (LTE/WCDMA/GSM)"
+msgstr ""
+
+#: operator-networkType-auto-LTE-CDMA-EVDO
+msgid "Auto (LTE/CDMA/EVDO)"
+msgstr ""
+
+#: operator-networkType-auto-WCDMA-GSM-CDMA-EVDO
+msgid "Auto (WCDMA/GSM/CDMA/EVDO)"
+msgstr ""
 
 #: operator-autoSelect
 msgid "Automatic selection"
@@ -1593,6 +1614,28 @@ msgstr "USB 網路分享"
 #: hotspotSettings
 msgid "Hotspot settings"
 msgstr "熱點選項"
+
+#: wifi-auth-username
+msgctxt "wifi-auth-username"
+msgid "Username"
+msgstr ""
+
+#: wifi-auth-password
+#, fuzzy
+msgctxt "wifi-auth-password"
+msgid "Password"
+msgstr "密碼"
+
+#: wifi-join-username
+msgctxt "wifi-join-username"
+msgid "Username"
+msgstr ""
+
+#: wifi-join-password
+#, fuzzy
+msgctxt "wifi-join-password"
+msgid "Password"
+msgstr "密碼"
 
 #. # LOCALIZATION NOTE (hotspotSettings-header): if you leave the original
 #. # en-US value "{{hotspotSettings}}" in the following string, the localization
@@ -2987,13 +3030,25 @@ msgctxt "hud-button"
 msgid "{{hud}}"
 msgstr ""
 
+#: hud-logging
+msgid "Log changes in adb"
+msgstr ""
+
+#: hud-problems
+msgid "Problems"
+msgstr ""
+
+#: hud-warnings
+msgid "Warnings"
+msgstr ""
+
 #: hud-errors
 #, fuzzy
 msgid "Errors"
 msgstr "錯誤"
 
-#: hud-warnings
-msgid "Warnings"
+#: hud-security
+msgid "Security issues"
 msgstr ""
 
 #: hud-performance
@@ -3947,6 +4002,12 @@ msgstr "傳送資料"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "取得頻道狀態"
+
+#~ msgid "GSM preferred"
+#~ msgstr "偏好 GSM"
+
+#~ msgid "EVDO preferred"
+#~ msgstr "偏好 EVDO"
 
 #, fuzzy
 #~ msgid "{{developer-hud}}"
