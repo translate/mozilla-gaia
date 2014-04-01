@@ -1,0 +1,1436 @@
+#. extracted from build/locales/en_US/apps/email/email.properties, build/locales/ro/apps/email/email.properties
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-01 17:33+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.11.0\n"
+"X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
+
+#: setup-app-name-header
+msgid "Mail"
+msgstr "Mail"
+
+#: setup-empty-account-prompt
+msgid ""
+"You are not set up to send or receive email. Would you like to do that now?"
+msgstr ""
+"Nu ai configurat niciun cont pentru a trimite și a primi mailuri. Dorești s-"
+"o faci acum?"
+
+#: setup-pick-service
+msgid "To send and receive email, you will need to set up an account."
+msgstr "Pentru a trimite și a primi emailuri, va trebui să configurezi un cont."
+
+#. # Title of the account setup card where the user enters their display name,
+#. # e-mail address, and password.
+#: setup-account-header3
+msgid "New Account"
+msgstr "Cont nou"
+
+#. # The placeholder for the display name of the user that will be displayed in the
+#. # account setup screen input box for the display name until they enter any text
+#. # in the box.  When you send an e-mail, the "From" header contains the user's
+#. # display name ("John Doe") as well as the e-mail address
+#. # ("john.doe@example.com").  In the future this input box will be labeled, but
+#. # it is currently unlabeled because of screen real estate concerns.
+#: setup-info-name.placeholder
+msgctxt "setup-info-name.placeholder"
+msgid "Your name"
+msgstr "Numele tău"
+
+#. # The placeholder for the user's e-mail address that will be displayed in the
+#. # account setup screen input box for the e-mail address until they enter any
+#. # text in the box.  The value will be used to configure the e-mail account.
+#: setup-info-email.placeholder
+msgid "someone@example.com"
+msgstr "cineva@exemplu.ro"
+
+#. # The placeholder for the user's password that will be displayed in the account
+#. # setup screen input box for the password until they enter any text in the box.
+#. # The value will be used to configure the e-mail account and saved for future
+#. # usage.
+#: setup-info-password.placeholder
+msgctxt "setup-info-password.placeholder"
+msgid "Password"
+msgstr "Parolă"
+
+#: setup-info-next
+msgctxt "setup-info-next"
+msgid "Next"
+msgstr "Înainte"
+
+#: setup-progress-wait-msg
+msgid "Setting up account"
+msgstr "Setting up account"
+
+#: setup-completed-header
+msgid "Mail account setup"
+msgstr "Configurarea contului de mail"
+
+#: setup-completed-label
+msgid "All done!"
+msgstr "Totul realizat!"
+
+#: setup-add-another-account
+msgid "Add another account"
+msgstr "Adaugă alt cont"
+
+#: setup-show-mail
+msgid "Continue to Mail"
+msgstr "Continuă pe mail"
+
+#. # The error for when the user tries to create an account without a network
+#. # connection active.
+#: setup-error-offline
+msgid "This device is currently offline. Connect to a network and try again."
+msgstr ""
+"Acest dispozitiv este în prezent offline. Conectează-te la o rețea și "
+"reîncearcă."
+
+#. # The error for either a bad username or a bad password.  For security reasons,
+#. # servers try not to distinguish between the two which is why we also cannot
+#. # tell them apart either.  Also, if the user made a typo, they could have made
+#. # it in either place.
+#: setup-error-bad-user-or-pass2
+msgid "Invalid username or password. Check for typos."
+msgstr "Nume de utilizator sau parolă invalide. Verifică greșelile."
+
+#. # The error for a bad e-mail address. We tried to send email but
+#. # couldn't because the server said it was a bad address.
+#: setup-error-bad-address
+msgid "Invalid e-mail address. Check for typos."
+msgstr ""
+
+#. # The error for a user having the correct username and password, but the mail
+#. # server explicitly indicates they don't have permission to talk to the mail
+#. # server.  This is currently only expected from ActiveSync servers; situations
+#. # like gmail over IMAP indicating that IMAP is disabled for the account or
+#. # domain have their own error code: setup-error-imap-disabled.
+#: setup-error-not-authorized
+msgid "The server said you’re not authorized to create an account"
+msgstr "Serverul a spus că nu ești autorizat să îți creezi un cont"
+
+#. # The error for when the server is not good enough to be supported
+#. # because it is missing the required features.
+#: setup-error-pop-server-not-great
+msgid ""
+"Server unsupported. The POP3 server does not implement required features."
+msgstr ""
+"Server unsupported. The POP3 server does not implement required features."
+
+#. # The fallback error; if we don't have a better error, we report this.
+#: setup-error-unknown2
+msgid ""
+"An unknown error occurred. Check your network connection or try the manual "
+"configuration option."
+msgstr ""
+"S-a produs o eroare necunoscută. Verifică conexiunea la rețea sau încearcă "
+"opțiunea de configurare manuală."
+
+#. # The error for Gmail accounts where 2-factor authentication (where you receive
+#. # a text message on your phone or run a special app) is enabled, and so the
+#. # user needs to create and use an application specific password to allow us to
+#. # talk to the server.
+#: setup-error-needs-app-pass
+msgid ""
+"You must use an application specific password for two-factor Gmail accounts"
+msgstr ""
+"Trebuie să folosești o parolă specifică aplicației pe două niveluri pentru "
+"conturile Gmail"
+
+#. # The error for Gmail accounts where IMAP is not enabled.  This can occur
+#. # for individual users where they have disabled IMAP from the settings UI.
+#. # This can also occur for apps-for-domains where the domain is not configured
+#. # to support IMAP.
+#: setup-error-imap-disabled
+msgid "You must enable IMAP for your Gmail account"
+msgstr "Trebuie să activezi IMAP pentru contul tău de Gmail"
+
+#. # The error for Gmail accounts where POP3 is not enabled.  This can occur
+#. # for individual users where they have disabled POP3 from the settings UI.
+#. # This can also occur for apps-for-domains where the domain is not configured
+#. # to support POP3.
+#: setup-error-pop3-disabled
+msgid "You must enable POP3 for your Gmail account"
+msgstr "You must enable POP3 for your Gmail account"
+
+#. # The error for when we are able to contact a server that should be the mail
+#. # server but we are unable to establish a secure connection.
+#: setup-error-bad-security
+msgid ""
+"Unable to establish a secure connection with \"{{server}}\". There may be a "
+"problem with your network or the server."
+msgstr ""
+"Nu s-a putut stabili o conexiune securizată cu „{{server}}”. S-ar putea să "
+"fie o problemă cu rețeaua ta sau serverul."
+
+#. # The error for when we try to contact a server but see no indication of a
+#. # response before we give up because of a timeout.
+#: setup-error-unresponsive-server
+msgid ""
+"Unable to establish a connection with \"{{server}}\". There may be a problem "
+"with the network."
+msgstr ""
+"Nu s-a putut stabili o conexiune cu „{{server}}”. S-ar putea să fie o "
+"problemă cu rețeaua."
+
+#. # The error for when we able to establish a (secure) connection with the server,
+#. # but there is some type of failure talking to the server that isn't covered by
+#. # other errors.  Hopefully this is just a temporary problem on the server, but
+#. # it could also be a fundamental incompatibility between our software and the
+#. # server's software.
+#: setup-error-server-problem
+msgid "There is a problem with the server \"{{server}}\". Try again later."
+msgstr "Este o problemă cu serverul „{{server}}”. Reîncearcă mai târziu."
+
+#. # The error for when we are trying to figure out the right server settings for
+#. # an account based on the e-mail address the user typed in during configuration,
+#. # but we can't find the right settings.  This is either because the user made a
+#. # typo and so we are looking for configuration data that does not exist, there
+#. # were network failures trying to look the information up, or the information is
+#. # not available.
+#: setup-error-no-config-info
+msgid ""
+"Unable to automatically configure your account. Correct your e-mail address "
+"or try the manual configuration option."
+msgstr ""
+"Nu s-a putut configura în mod automat contul tău. Corectează adresa de email "
+"sau încearcă opțiunea de configurare manuală."
+
+#. # The error for when the user is trying to set up an account with a server that
+#. # currently indicates it is offline for maintenance.
+#: setup-error-server-maintenance
+msgid "The server \"{{server}}\" is offline for maintenance. Try again later."
+msgstr ""
+"Serverul „{{server}}” este offline pentru mentenanță. Reîncearcă mai târziu."
+
+#. # The error when the user trying to register a duplicate account
+#: setup-error-account-already-exists
+msgid "This account is already configured."
+msgstr "Acest cont este deja configurat."
+
+#: setup-manual-config2
+msgid "Manual setup"
+msgstr "Configurare manuală"
+
+#: setup-manual-config-header
+msgid "Manual Setup"
+msgstr "Setare manuală"
+
+#: setup-manual-account-type
+msgctxt "setup-manual-account-type"
+msgid "Account type"
+msgstr "Tip de cont"
+
+#: setup-manual-imap-header
+msgctxt "setup-manual-imap-header"
+msgid "IMAP settings"
+msgstr "Setări IMAP"
+
+#: setup-manual-pop3-header
+msgctxt "setup-manual-pop3-header"
+msgid "POP3 settings"
+msgstr "POP3 settings"
+
+#: setup-manual-smtp-header
+msgctxt "setup-manual-smtp-header"
+msgid "SMTP settings"
+msgstr "Setări SMTP"
+
+#: setup-manual-activesync-header
+msgctxt "setup-manual-activesync-header"
+msgid "ActiveSync settings"
+msgstr "Setări ActiveSync"
+
+#: setup-manual-next
+msgctxt "setup-manual-next"
+msgid "Next"
+msgstr "Înainte"
+
+#: setup-manual-socket
+msgid "Socket Type"
+msgstr "Tipul socketului"
+
+#. # Technical term, should not be translated
+#: setup-manual-socket-ssl
+msgid "SSL"
+msgstr "SSL"
+
+#. # Technical term, should not be translated
+#: setup-manual-socket-starttls
+msgid "STARTTLS"
+msgstr "STARTTLS"
+
+#: setup-manual-hostname.placeholder
+msgctxt "setup-manual-hostname.placeholder"
+msgid "Hostname"
+msgstr "Nume gazdă"
+
+#: setup-manual-port.placeholder
+msgid "Port Number"
+msgstr "Numărul de port"
+
+#: setup-manual-username.placeholder
+msgctxt "setup-manual-username.placeholder"
+msgid "Username"
+msgstr "Utilizator"
+
+#: setup-bad-password-header
+msgid "Bad password!"
+msgstr "Parolă greșită!"
+
+#: setup-bad-password
+msgid "We could not sign in to the server. Maybe your password is wrong?"
+msgstr "Nu ne-am putut autentifica pe server. Posibil ca parola să fie greșită?"
+
+#: setup-new-password.placeholder
+msgid "New password"
+msgstr "Parolă nouă"
+
+#: setup-fix-password
+msgid "Retry with new password"
+msgstr "Reîncearcă cu parola nouă"
+
+#: setup-gmail-twofactor-header
+msgid "Two-Factor Enabled"
+msgstr "Autentificarea pe două niveluri activată"
+
+#: setup-gmail-twofactor-message
+msgid "You need to enter an application-specific password below."
+msgstr "Trebuie să introduci o parolă specifică aplicației mai jos."
+
+#: setup-gmail-twofactor-fix
+msgid "Use application password"
+msgstr "Folosește parola aplicației"
+
+#: setup-gmail-imap-header
+msgid "IMAP Disabled"
+msgstr "IMAP dezactivat"
+
+#: setup-gmail-imap-message
+msgid "You must enable IMAP on your Gmail account"
+msgstr "Trebuie să activezi IMAP pe contul tău de Gmail"
+
+#: setup-gmail-imap-retry
+msgctxt "setup-gmail-imap-retry"
+"setup-gmail-imap-retry"
+msgid "Retry"
+msgstr "Reîncearcă"
+
+#: setup-gmail-pop3-header
+msgid "POP3 Disabled"
+msgstr "POP3 Disabled"
+
+#: setup-gmail-pop3-message
+msgid "You must enable POP3 on your Gmail account"
+msgstr "You must enable POP3 on your Gmail account"
+
+#: setup-gmail-pop3-retry
+msgctxt "setup-gmail-pop3-retry"
+msgid "Retry"
+msgstr "Retry"
+
+#: settings-main-header
+msgid "Mail Settings"
+msgstr "Setări de mail"
+
+#. # For account settings screen, there are sections of settings, and each
+#. #section has a header. One is Account, which shows general information
+#. # about the account, like the name.
+#: settings-sub-header-account
+msgid "Account"
+msgstr "Cont"
+
+#. # Label in the "Account" sub-section of acccount settings that shows the
+#. # human name, not the email address, for the account.
+#: settings-account-name
+msgctxt "settings-account-name"
+msgid "Your name"
+msgstr "Numele tău"
+
+#. # Label in the "Account" sub-section of acccount settings for the checkbox
+#. # that enables getting phone notifications when new inbox email is found
+#. # via periodic sync with the mail server.
+#: settings-account-display-notifications
+msgid "Display notifications for new messages"
+msgstr "Afișează notificări pentru mesaje noi"
+
+#. # For account settings screen, there are sections of settings, and each
+#. # section has a header. One is Data, which deals with sync intervals and
+#. # time windows for the data that is fetched.
+#: settings-sub-header-data
+msgid "Data"
+msgstr "Date"
+
+#. # Label in the "Data" sub-section of acccount settings for the select box
+#. # that allows choosing how often to check the server for new messages in
+#. # the inbox. The possible select box options are listed in the
+#. # settings-check-every-* properties.
+#: settings-account-check-mail
+msgid "Check for new messages"
+msgstr "Caută mesaje noi"
+
+#. # For account settings screen, there are sections of settings, and each
+#. # section has a header. One is "Server settings", which deals with the
+#. # name/password and server addresses.
+#: settings-sub-header-server
+msgid "Server settings"
+msgstr "Setări pt. server"
+
+#. # Label in the "Server settings" sub-section of acccount settings for going
+#. # to a settings card that shows user name and password used to connect to
+#. # the mail server.
+#: settings-account-userpass
+msgid "Username and password"
+msgstr "Utilizator și parolă"
+
+#. # In the account picker card, where the user can select which account to view
+#. # in the app, it shows when each account was last synchronized.
+#: fld-account-picker-last-sync
+msgctxt "fld-account-picker-last-sync"
+msgid "Last sync:"
+msgstr "Ultima sincronizare:"
+
+#: settings-done
+msgid "Done"
+msgstr "Gata"
+
+#: settings-account-section
+msgctxt "settings-account-section"
+msgid "Accounts"
+msgstr "Conturi"
+
+#: settings-account-add
+msgid "Add Account"
+msgstr "Adaugă cont"
+
+#: settings-account-delete
+msgid "Delete account"
+msgstr "Șterge contul"
+
+#: settings-account-delete-prompt
+msgid ""
+"Are you sure you want to delete your {{account}} mail account? You will have "
+"to re-download your mail if you re-create the account."
+msgstr ""
+"Sigur dorești să stergi contul de mail {{account}}? Va trebui să redescarci "
+"mailul dacă recreezi contul."
+
+#: settings-account-delete-cancel
+msgctxt "settings-account-delete-cancel"
+msgid "Cancel"
+msgstr "Renunță"
+
+#: settings-account-delete-confirm
+msgctxt "settings-account-delete-confirm"
+msgid "Delete"
+msgstr "Șterge"
+
+#: settings-about-section
+msgid "About"
+msgstr "Despre"
+
+#: settings-general-section
+msgid "General settings"
+msgstr "Setări generale"
+
+#: settings-check-mail
+msgid "Check mail"
+msgstr "Verifică mailul"
+
+#: settings-show-images
+msgid "Always show images"
+msgstr "Arată întotdeauna imaginile"
+
+#: settings-download-attachments
+msgid "Download attachments"
+msgstr "Descarcă atașamentele"
+
+#: settings-notify-mail
+msgid "Notify of new mail"
+msgstr "Notifică-mă la apariția unui mail nou"
+
+#. # How often to check the mail server for new mail messages for the inbox.
+#. # "Manually" means, do not automatically connect on a periodic sync interval.
+#. # User will manually click the refresh button to check for new messages.
+#: settings-check-every-3min
+msgid "Every 3 minutes"
+msgstr "La fiecare 3 minute"
+
+#: settings-check-every-5min
+msgid "Every 5 minutes"
+msgstr "La fiecare 5 minute"
+
+#: settings-check-every-10min
+msgid "Every 10 minutes"
+msgstr "La fiecare 10 minute"
+
+#: settings-check-every-15min
+msgid "Every 15 minutes"
+msgstr "La fiecare 15 minute"
+
+#: settings-check-every-30min
+msgid "Every 30 minutes"
+msgstr "La fiecare 30 de minute"
+
+#: settings-check-every-60min
+msgid "Every hour"
+msgstr "În fiecare oră"
+
+#: settings-check-every-manual
+msgid "Manually"
+msgstr "Manual"
+
+#. # Dynamically added sync interval checks. These are only added via special
+#. # debug/development tools, and are always in seconds. Otherwise, just
+#. # the settings-check-every-* options are visible.
+#: settings-check-dynamic
+msgctxt "settings-check-dynamic"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: settings-check-dynamic[zero]
+msgid "seconds"
+msgstr "secunde"
+
+#: settings-check-dynamic[one]
+msgctxt "settings-check-dynamic[one]"
+msgid "{{ n }} seconds"
+msgstr "{{ n }} secunde"
+
+#: settings-check-dynamic[two]
+msgctxt "settings-check-dynamic[two]"
+msgid "{{ n }} seconds"
+msgstr "{{ n }} secunde"
+
+#: settings-check-dynamic[few]
+msgctxt "settings-check-dynamic[few]"
+msgid "{{ n }} seconds"
+msgstr "{{ n }} secunde"
+
+#: settings-check-dynamic[many]
+msgctxt "settings-check-dynamic[many]"
+msgid "{{ n }} seconds"
+msgstr "{{ n }} secunde"
+
+#: settings-check-dynamic[other]
+msgctxt "settings-check-dynamic[other]"
+msgid "{{ n }} seconds"
+msgstr "{{ n }} secunde"
+
+#: settings-default-account
+msgid "Set as default email"
+msgstr "Setează ca email implicit"
+
+#: settings-account-type
+msgctxt "settings-account-type"
+msgid "Account type"
+msgstr "Tip de cont"
+
+#: settings-account-credentials
+msgid "Credentials"
+msgstr "Acreditări"
+
+#: settings-activesync-label
+msgctxt "settings-activesync-label"
+msgid "ActiveSync settings"
+msgstr "Setări ActiveSync"
+
+#: settings-imap-label
+msgctxt "settings-imap-label"
+msgid "IMAP settings"
+msgstr "Setări IMAP"
+
+#: settings-pop3-label
+msgctxt "settings-pop3-label"
+msgid "POP3 settings"
+msgstr "POP3 settings"
+
+#: settings-smtp-label
+msgctxt "settings-smtp-label"
+msgid "SMTP settings"
+msgstr "Setări SMTP"
+
+#: settings-hostname
+msgctxt "settings-hostname"
+msgid "Hostname"
+msgstr "Nume gazdă"
+
+#: settings-port
+msgid "Port"
+msgstr "Port"
+
+#: settings-username
+msgctxt "settings-username"
+msgid "Username"
+msgstr "Utilizator"
+
+#: settings-password
+msgctxt "settings-password"
+msgid "Password"
+msgstr "Parolă"
+
+#: settings-save
+msgid "Save"
+msgstr "Salvează"
+
+#: settings-password-empty
+msgid "Password field should not be empty"
+msgstr "Câmpul destinat parolei nu ar trebui să fie gol"
+
+#. # How much email to sync, in smallest unit of days, from the server. Only
+#. # valid for ActiveSync mail servers, not shown for other mail server types
+#. # like IMAP.
+#: settings-account-synchronize-window
+msgid "Days to sync"
+msgstr "Zile pentru sincronizare"
+
+#: settings-synchronize-auto
+msgid "Automatic"
+msgstr "Automat"
+
+#: settings-synchronize-one-day
+msgid "1 day"
+msgstr "1 zi"
+
+#: settings-synchronize-three-days
+msgid "3 days"
+msgstr "3 zile"
+
+#: settings-synchronize-one-week
+msgid "1 week"
+msgstr "1 săptămână"
+
+#: settings-synchronize-two-weeks
+msgid "2 weeks"
+msgstr "2 săptămâni"
+
+#: settings-synchronize-one-month
+msgid "1 month"
+msgstr "1 lună"
+
+#: settings-synchronize-all
+msgid "All messages"
+msgstr "Toate mesajele"
+
+#: accounts-header
+msgctxt "accounts-header"
+msgid "Accounts"
+msgstr "Conturi"
+
+#: accounts-button
+msgctxt "accounts-button"
+msgid "Accounts"
+msgstr "Conturi"
+
+#: envelope-from
+msgctxt "envelope-from"
+msgid "From"
+msgstr "De la"
+
+#: envelope-to
+msgctxt "envelope-to"
+msgid "To"
+msgstr "Către"
+
+#: envelope-cc
+msgctxt "envelope-cc"
+msgid "Cc"
+msgstr "Cc"
+
+#: envelope-bcc
+msgid "Bcc"
+msgstr "Bcc"
+
+#: reader-header
+msgid "Read"
+msgstr "Citit"
+
+#: compose-header
+msgid "Compose message"
+msgstr "Compune mesajul"
+
+#: compose-header-short
+msgid "Compose"
+msgstr "Compune"
+
+#: compose-send
+msgid "Send"
+msgstr "Trimite"
+
+#: compose-to
+msgctxt "compose-to"
+msgid "To"
+msgstr "Către"
+
+#: compose-cc
+msgid "cc"
+msgstr "cc"
+
+#: compose-bcc
+msgid "bcc"
+msgstr "bcc"
+
+#: compose-attachments
+msgctxt "compose-attachments"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: compose-attachments[zero]
+msgid "Attachments"
+msgstr "Atașamente"
+
+#: compose-attachments[one]
+msgid "{{ n }} attachment"
+msgstr "{{ n }} atașament"
+
+#: compose-attachments[two]
+msgctxt "compose-attachments[two]"
+msgid "{{ n }} attachments"
+msgstr "{{ n }} atașamente"
+
+#: compose-attachments[few]
+msgctxt "compose-attachments[few]"
+msgid "{{ n }} attachments"
+msgstr "{{ n }} atașamente"
+
+#: compose-attachments[many]
+msgctxt "compose-attachments[many]"
+msgid "{{ n }} attachments"
+msgstr "{{ n }} atașamente"
+
+#: compose-attachments[other]
+msgctxt "compose-attachments[other]"
+msgid "{{ n }} attachments"
+msgstr "{{ n }} atașamente"
+
+#: compose-subject
+msgctxt "compose-subject"
+msgid "Subject"
+msgstr "Subiect"
+
+#: compose-draft-save
+msgid "Save to Local Drafts"
+msgstr "Salvează în mesaje nefinalizate local"
+
+#: compose-discard-message
+msgid "Discard email?"
+msgstr "Înlături emailul?"
+
+#: compose-discard-confirm
+msgid "Discard"
+msgstr "Înlătură"
+
+#: compose-sending-message
+msgid "Sending email"
+msgstr "Se trimite emailul"
+
+#: compose-send-message-failed
+msgid "Sending email failed"
+msgstr "Trimiterea emailului a eșuat"
+
+#: composer-attachment-large
+msgid "Attachment too large"
+msgstr "Atașament prea mare"
+
+#: composer-attachments-large
+msgid "Attachments too large"
+msgstr "Atașamente prea mari"
+
+#: compose-attchment-size-exceeded
+msgid "The selected attachment is too large to send with this message."
+msgstr "Atașamentul selectat este prea mare pentru a fi trimis cu acest mesaj."
+
+#: compose-attchments-size-exceeded
+msgid ""
+"The selected attachments are too large to send with this message. Try "
+"selecting fewer files."
+msgstr ""
+"Atașamentele selectate sunt prea mari pentru a fi trimise cu acest mesaj. "
+"Încearcă să selectezi mai puține fișiere."
+
+#: dialog-button-ok
+msgid "OK"
+msgstr "Ok"
+
+#. # If a file is attached to an email but it does not have a name, this
+#. # name is used. There could be multiple ones attached, so a number is
+#. # added to the end of the default name to distinguish the files from
+#. # each other.
+#: default-attachment-filename
+msgid "attachment{{ n }}"
+msgstr "attachment{{ n }}"
+
+#: attachment-size-kib
+msgid "{{kilobytes}}K"
+msgstr "{{kilobytes}}K"
+
+#: message-attachment-view.textContent
+msgid "View"
+msgstr "Vezi"
+
+#: message-no-subject
+msgid "(no subject)"
+msgstr "(fără subiect)"
+
+#: message-edit-menu-star
+msgid "Star"
+msgstr "Marchează cu steluță"
+
+#: message-edit-menu-unstar
+msgid "Unstar"
+msgstr "Scoate marcajul cu steluță"
+
+#: message-edit-menu-mark-read
+msgid "Mark as read"
+msgstr "Marchează ca citit"
+
+#: message-edit-menu-mark-unread
+msgid "Mark as unread"
+msgstr "Marchează ca necitit"
+
+#: message-edit-menu-move
+msgid "Move"
+msgstr "Mută"
+
+#: message-edit-menu-delete
+msgctxt "message-edit-menu-delete"
+msgid "Delete"
+msgstr "Șterge"
+
+#: message-edit-delete-confirm
+msgid "Delete email message?"
+msgstr "Ștergi emailul?"
+
+#: message-send-attachment-disabled-confirm
+msgid "Attachments can not be forwarded."
+msgstr "Atașamentele nu pot fi redirecționate."
+
+#: message-multiedit-header
+msgctxt "message-multiedit-header"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: message-multiedit-header[zero]
+msgid "Edit"
+msgstr "Editează"
+
+#: message-multiedit-header[one]
+msgctxt "message-multiedit-header[one]"
+"message-multiedit-header[one]"
+"message-multiedit-header[one]"
+"message-multiedit-header[one]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} selectat"
+
+#: message-multiedit-header[two]
+msgctxt "message-multiedit-header[two]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} selectate"
+
+#: message-multiedit-header[few]
+msgctxt "message-multiedit-header[few]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} selectate"
+
+#: message-multiedit-header[many]
+msgctxt "message-multiedit-header[many]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} selectate"
+
+#: message-multiedit-header[other]
+msgctxt "message-multiedit-header[other]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} selectate"
+
+#: browse-to-url-prompt
+msgid "Browse to URL?: {{ url }}"
+msgstr "Navighezi la adresa web?: {{ url }}"
+
+#: message-download-images
+msgctxt "message-download-images"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: message-download-images[one]
+msgid "This email contains one image. Click to download."
+msgstr "Acest email conține o imagine. Clic pentru a descărca."
+
+#: message-download-images[two]
+msgctxt "message-download-images[two]"
+msgid "This email contains {{ n }} images. Click to download."
+msgstr "Acest email conține {{ n }} imagini. Clic pentru a descărca."
+
+#: message-download-images[few]
+msgctxt "message-download-images[few]"
+msgid "This email contains {{ n }} images. Click to download."
+msgstr "Acest email conține {{ n }} imagini. Clic pentru a descărca."
+
+#: message-download-images[many]
+msgctxt "message-download-images[many]"
+msgid "This email contains {{ n }} images. Click to download."
+msgstr "Acest email conține {{ n }} imagini. Clic pentru a descărca."
+
+#: message-download-images[other]
+msgctxt "message-download-images[other]"
+msgid "This email contains {{ n }} images. Click to download."
+msgstr "Acest email conține {{ n }} imagini. Clic pentru a descărca."
+
+#: message-show-external-images
+msgid "Show external images"
+msgstr "Arată imaginile externe"
+
+#: message-multiedit-cancel
+msgctxt "message-multiedit-cancel"
+msgid "Cancel"
+msgstr "Renunță"
+
+#: message-multiedit-delete-confirm
+msgctxt "message-multiedit-delete-confirm"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: message-multiedit-delete-confirm[one]
+msgid "Delete this email message?"
+msgstr "Ștergi acest email?"
+
+#: message-multiedit-delete-confirm[two]
+msgctxt "message-multiedit-delete-confirm[two]"
+msgid "Delete {{ n }} email messages?"
+msgstr "Ștergi cele {{ n }} emailuri?"
+
+#: message-multiedit-delete-confirm[few]
+msgctxt "message-multiedit-delete-confirm[few]"
+msgid "Delete {{ n }} email messages?"
+msgstr "Ștergi cele {{ n }} emailuri?"
+
+#: message-multiedit-delete-confirm[many]
+msgctxt "message-multiedit-delete-confirm[many]"
+msgid "Delete {{ n }} email messages?"
+msgstr "Ștergi cele {{ n }} emailuri?"
+
+#: message-multiedit-delete-confirm[other]
+msgctxt "message-multiedit-delete-confirm[other]"
+msgid "Delete {{ n }} email messages?"
+msgstr "Ștergi cele {{ n }} emailuri?"
+
+#: message-large-message-cancel
+msgctxt "message-large-message-cancel"
+msgid "Cancel"
+msgstr "Cancel"
+
+#: message-large-message-ok
+msgid "Continue"
+msgstr "Continue"
+
+#: message-large-message-confirm
+msgid "This message is large and may take some time to download."
+msgstr "This message is large and may take some time to download."
+
+#: message-search-from
+msgctxt "message-search-from"
+msgid "From"
+msgstr "De la"
+
+#: message-search-to
+msgctxt "message-search-to"
+msgid "To"
+msgstr "Către"
+
+#: message-search-subject
+msgctxt "message-search-subject"
+msgid "Subject"
+msgstr "Subiect"
+
+#: message-search-body
+msgid "Body"
+msgstr "Corp"
+
+#: message-search-all
+msgid "All"
+msgstr "Toate"
+
+#: message-search-input.placeholder
+msgid "Search Mail"
+msgstr "Caută mail"
+
+#: message-search-cancel-accessible
+msgid "Cancel search"
+msgstr "Anulează căutarea"
+
+#: messages-syncing
+msgid "Loading Messages"
+msgstr "Se încarcă mesajele"
+
+#: messages-sync-more
+msgid "Load more messages from server"
+msgstr "Încarcă mai multe mesaje de pe server"
+
+#: messages-folder-empty
+msgid "No mail in this Folder"
+msgstr "Niciun mail în acest dosar"
+
+#: messages-search-empty
+msgid "No matches in locally cached messages"
+msgstr "Nicio potrivire în mesajele stocate local"
+
+#: messages-folder-select
+msgid "Select folder"
+msgstr "Selectează dosarul"
+
+#: message-contact-menu-create
+msgid "Save new contact"
+msgstr "Salvează contactul nou"
+
+#: message-contact-menu-add-existing
+msgid "Add to existing contact"
+msgstr "Adaugă la contactul existent"
+
+#: message-contact-menu-view
+msgid "View contact"
+msgstr "Vezi contactul"
+
+#: message-contact-menu-reply
+msgctxt "message-contact-menu-reply"
+msgid "Reply"
+msgstr "Răspunde"
+
+#: message-contact-menu-new
+msgid "Send new mail"
+msgstr "Trimite un e-mail nou"
+
+#: message-reply-menu-reply
+msgctxt "message-reply-menu-reply"
+msgid "Reply"
+msgstr "Răspunde"
+
+#: message-reply-menu-reply-all
+msgid "Reply All"
+msgstr "Răspunde la toate"
+
+#: message-reply-menu-forward
+msgid "Forward"
+msgstr "Redirecționare"
+
+#: message-reply-menu-cancel
+msgctxt "message-reply-menu-cancel"
+msgid "Cancel"
+msgstr "Renunță"
+
+#: folder-list-header
+msgid "Folders"
+msgstr "Dosare"
+
+#. # L10n note: account-last-synced-label is found on the folder list card,
+#. # accessible from the message-list card by clicking the icon in the upper left
+#. # of the card.  The label is displayed at the bottom of the folder list and is
+#. # right aligned.  There is currently 1 button to the left of the label and soon
+#. # there will be two, so it is desirable to use as short a translation as
+#. # possible.  To the right of the label, a (short) relative timestamp is
+#. # displayed.
+#: account-last-synced-label
+msgctxt "account-last-synced-label"
+msgid "Last sync:"
+msgstr "Ultima sincronizare:"
+
+#. # L10n note: This string is displayed to the right of account-last-synced-label
+#. # if no folder has ever been synchronized.  Otherwise the space occupied by this
+#. # string will be a (short) relative timestamp.
+#: account-never-synced
+msgid "Never"
+msgstr "Niciodată"
+
+#. # LOCALIZATION NOTE: do not translate {name}
+#: reply-quoting-wrote
+msgid "{name} wrote"
+msgstr "{name} a scris"
+
+#: forward-original-message
+msgid "Original message"
+msgstr "Mesaj original"
+
+#. # L10n note: These are the labels we use when displaying the envelope info for a
+#. # message that is forwarded inline.  While automatic recovery of this
+#. # information by clients is made difficult by these strings regularly being
+#. # localized, we attempt to remain consistent with apps such as Thunderbird for
+#. # at least English.
+#: forward-header-subject
+msgctxt "forward-header-subject"
+msgid "Subject"
+msgstr "Subiect"
+
+#: forward-header-date
+msgid "Date"
+msgstr "Dată"
+
+#: forward-header-from
+msgctxt "forward-header-from"
+msgid "From"
+msgstr "De la"
+
+#. # This really wants to have the dash in it for consistency with Thunderbird
+#: forward-header-reply-to
+msgid "Reply-To"
+msgstr "Răspuns către"
+
+#: forward-header-to
+msgctxt "forward-header-to"
+msgid "To"
+msgstr "Către"
+
+#: forward-header-cc
+msgctxt "forward-header-cc"
+msgid "Cc"
+msgstr "CC"
+
+#. # Localized folder names for IMAP servers.  Because the IMAP standard did not
+#. # originally specify a way to express meta-data about folders, folders may be
+#. # named in English to express their purpose.  Then e-mail clients (or webmail
+#. # interfaces) localize these values.  We do this too, following in the
+#. # footsteps of Thunderbird.
+#: folder-inbox
+msgid "Inbox"
+msgstr "Mesaje primite"
+
+#: folder-sent
+msgid "Sent"
+msgstr "Mesaje trimise"
+
+#: folder-drafts
+msgid "Drafts"
+msgstr "Mesaje nefinalizate"
+
+#: folder-trash
+msgid "Trash"
+msgstr "Coș de gunoi"
+
+#: folder-queue
+msgid "Unsent"
+msgstr "Mesaje netrimise"
+
+#: folder-junk
+msgid "Junk"
+msgstr "Mesaje nesolicitate"
+
+#: folder-archives
+msgid "Archives"
+msgstr "Arhive"
+
+#: folder-localdrafts
+msgid "Local Drafts"
+msgstr "Nefinalizate local"
+
+#: toaster-undo
+msgid "Undo"
+msgstr "Revocă acțiunea"
+
+#: toaster-retry
+msgctxt "toaster-retry"
+msgid "Retry"
+msgstr "Reîncearcă"
+
+#: toaster-message-star
+msgctxt "toaster-message-star"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-star[one]
+msgid "1 message flag set"
+msgstr "Marcaj stabilit pentru 1 mesaj"
+
+#: toaster-message-star[two]
+msgctxt "toaster-message-star[two]"
+msgid "{{ n }} messages flag set"
+msgstr "Marcaj stabilit pentru {{ n }} mesaje"
+
+#: toaster-message-star[few]
+msgctxt "toaster-message-star[few]"
+msgid "{{ n }} messages flag set"
+msgstr "Marcaj stabilit pentru {{ n }} mesaje"
+
+#: toaster-message-star[many]
+msgctxt "toaster-message-star[many]"
+msgid "{{ n }} messages flag set"
+msgstr "Marcaj stabilit pentru {{ n }} mesaje"
+
+#: toaster-message-star[other]
+msgctxt "toaster-message-star[other]"
+msgid "{{ n }} messages flag set"
+msgstr "Marcaj stabilit pentru {{ n }} mesaje"
+
+#: toaster-message-unstar
+msgctxt "toaster-message-unstar"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-unstar[one]
+msgid "1 message flag removed"
+msgstr "Marcaj eliminat pentru 1 mesaj"
+
+#: toaster-message-unstar[two]
+msgctxt "toaster-message-unstar[two]"
+msgid "{{ n }} messages flag removed"
+msgstr "Marcaj eliminat pentru {{ n }} mesaje"
+
+#: toaster-message-unstar[few]
+msgctxt "toaster-message-unstar[few]"
+msgid "{{ n }} messages flag removed"
+msgstr "Marcaj eliminat pentru {{ n }} mesaje"
+
+#: toaster-message-unstar[many]
+msgctxt "toaster-message-unstar[many]"
+msgid "{{ n }} messages flag removed"
+msgstr "Marcaj eliminat pentru {{ n }} mesaje"
+
+#: toaster-message-unstar[other]
+msgctxt "toaster-message-unstar[other]"
+msgid "{{ n }} messages flag removed"
+msgstr "Marcaj eliminat pentru {{ n }} mesaje"
+
+#: toaster-message-read
+msgctxt "toaster-message-read"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-read[one]
+msgid "1 message marked as read"
+msgstr "1 mesaj marcat ca citit"
+
+#: toaster-message-read[two]
+msgctxt "toaster-message-read[two]"
+msgid "{{ n }} messages marked as read"
+msgstr "{{ n }} mesaje marcate ca citite"
+
+#: toaster-message-read[few]
+msgctxt "toaster-message-read[few]"
+msgid "{{ n }} messages marked as read"
+msgstr "{{ n }} mesaje marcate ca citite"
+
+#: toaster-message-read[many]
+msgctxt "toaster-message-read[many]"
+msgid "{{ n }} messages marked as read"
+msgstr "{{ n }} mesaje marcate ca citite"
+
+#: toaster-message-read[other]
+msgctxt "toaster-message-read[other]"
+msgid "{{ n }} messages marked as read"
+msgstr "{{ n }} mesaje marcate ca citite"
+
+#: toaster-message-unread
+msgctxt "toaster-message-unread"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-unread[one]
+msgid "1 message marked as unread"
+msgstr "1 mesaj marcat ca necitit"
+
+#: toaster-message-unread[two]
+msgctxt "toaster-message-unread[two]"
+msgid "{{ n }} messages marked as unread"
+msgstr "{{ n }} mesaje marcate ca necitite"
+
+#: toaster-message-unread[few]
+msgctxt "toaster-message-unread[few]"
+msgid "{{ n }} messages marked as unread"
+msgstr "{{ n }} mesaje marcate ca necitite"
+
+#: toaster-message-unread[many]
+msgctxt "toaster-message-unread[many]"
+msgid "{{ n }} messages marked as unread"
+msgstr "{{ n }} mesaje marcate ca necitite"
+
+#: toaster-message-unread[other]
+msgctxt "toaster-message-unread[other]"
+msgid "{{ n }} messages marked as unread"
+msgstr "{{ n }} mesaje marcate ca necitite"
+
+#: toaster-message-move
+msgctxt "toaster-message-move"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-move[one]
+msgid "1 message moved"
+msgstr "1 mesaj mutat"
+
+#: toaster-message-move[two]
+msgctxt "toaster-message-move[two]"
+msgid "{{ n }} messages moved"
+msgstr "{{ n }} mesaje mutate"
+
+#: toaster-message-move[few]
+msgctxt "toaster-message-move[few]"
+msgid "{{ n }} messages moved"
+msgstr "{{ n }} mesaje mutate"
+
+#: toaster-message-move[many]
+msgctxt "toaster-message-move[many]"
+msgid "{{ n }} messages moved"
+msgstr "{{ n }} mesaje mutate"
+
+#: toaster-message-move[other]
+msgctxt "toaster-message-move[other]"
+msgid "{{ n }} messages moved"
+msgstr "{{ n }} mesaje mutate"
+
+#: toaster-message-delete
+msgctxt "toaster-message-delete"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-delete[one]
+msgid "1 message deleted"
+msgstr "1 mesaj șters"
+
+#: toaster-message-delete[two]
+msgctxt "toaster-message-delete[two]"
+msgid "{{ n }} messages deleted"
+msgstr "{{ n }} mesaje șterse"
+
+#: toaster-message-delete[few]
+msgctxt "toaster-message-delete[few]"
+msgid "{{ n }} messages deleted"
+msgstr "{{ n }} mesaje șterse"
+
+#: toaster-message-delete[many]
+msgctxt "toaster-message-delete[many]"
+msgid "{{ n }} messages deleted"
+msgstr "{{ n }} mesaje șterse"
+
+#: toaster-message-delete[other]
+msgctxt "toaster-message-delete[other]"
+msgid "{{ n }} messages deleted"
+msgstr "{{ n }} mesaje șterse"
+
+#: toaster-retryable-syncfailed
+msgid "Unable to connect to server"
+msgstr "Nu se poate conecta la server"
+
+#: form-clear-input
+msgid "Remove text"
+msgstr "Elimină textul"
+
+#: confirm-dialog-title
+msgid "Confirmation"
+msgstr "Confirmare"
+
+#. # senders-separation-sign separates the email accounts of senders.
+#. # Notice that we have a space after the comma.
+#: senders-separation-sign
+msgid ", "
+msgstr ","
+
+#. # new-emails refers to the text shown on a notification that users
+#. # get when they receive new, unread email. The ui component that utilizes
+#. # this lives in apps/email/js/message_list_topbar.js.
+#: new-emails
+msgctxt "new-emails"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: new-emails[one]
+msgctxt "new-emails[one]"
+msgid "1 New Email"
+msgstr "1 e-mail nou"
+
+#: new-emails[two]
+msgctxt "new-emails[two]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} e-mailuri noi"
+
+#: new-emails[few]
+msgctxt "new-emails[few]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} e-mailuri noi"
+
+#: new-emails[many]
+msgctxt "new-emails[many]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} e-mailuri noi"
+
+#: new-emails[other]
+msgctxt "new-emails[other]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} e-mailuri noi"
+
+#. # new-emails-notify-one-account is used when a system notification is generated during
+#. # a periodic background sync with the server. Since this goes to the system's
+#. # notification area, and user has only one account configured with the email App.
+#: new-emails-notify-one-account
+msgctxt "new-emails-notify-one-account"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: new-emails-notify-one-account[one]
+msgctxt "new-emails-notify-one-account[one]"
+msgid "1 New Email"
+msgstr "1 New Email"
+
+#: new-emails-notify-one-account[two]
+msgctxt "new-emails-notify-one-account[two]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} New Emails"
+
+#: new-emails-notify-one-account[few]
+msgctxt "new-emails-notify-one-account[few]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} New Emails"
+
+#: new-emails-notify-one-account[many]
+msgctxt "new-emails-notify-one-account[many]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} New Emails"
+
+#: new-emails-notify-one-account[other]
+msgctxt "new-emails-notify-one-account[other]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} New Emails"
+
+#. # new-emails-notify-multiple-accounts is used in the same situation
+#. # as new-emails-notify-one-account.
+#. # In this case, the user has more than one account configured
+#. # with the email app.
+#: new-emails-notify-multiple-accounts
+msgctxt "new-emails-notify-multiple-accounts"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: new-emails-notify-multiple-accounts[one]
+msgid "1 New Email ({{ accountName }})"
+msgstr "1 New Email ({{ accountName }})"
+
+#: new-emails-notify-multiple-accounts[two]
+msgctxt "new-emails-notify-multiple-accounts[two]"
+msgid "{{ n }} New Emails ({{ accountName }})"
+msgstr "{{ n }} New Emails ({{ accountName }})"
+
+#: new-emails-notify-multiple-accounts[few]
+msgctxt "new-emails-notify-multiple-accounts[few]"
+msgid "{{ n }} New Emails ({{ accountName }})"
+msgstr "{{ n }} New Emails ({{ accountName }})"
+
+#: new-emails-notify-multiple-accounts[many]
+msgctxt "new-emails-notify-multiple-accounts[many]"
+msgid "{{ n }} New Emails ({{ accountName }})"
+msgstr "{{ n }} New Emails ({{ accountName }})"
+
+#: new-emails-notify-multiple-accounts[other]
+msgctxt "new-emails-notify-multiple-accounts[other]"
+msgid "{{ n }} New Emails ({{ accountName }})"
+msgstr "{{ n }} New Emails ({{ accountName }})"
+
+#. # new-emails-notify-multiple-accounts-body is used in the same situation
+#. # as new-emails-notify-multiple-accounts.
+#. # This is the body part of the notification.
+#: new-emails-notify-multiple-accounts-body
+msgid "{{ from }} “{{ subject }}”"
+msgstr "{{ from }} “{{ subject }}”"
