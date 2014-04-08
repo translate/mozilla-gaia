@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-01 00:45+0100\n"
+"POT-Creation-Date: 2014-04-02 13:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -988,8 +988,8 @@ msgctxt "operator-networkType-auto"
 msgid "Automatic"
 msgstr "Automat"
 
-#: operator-networkType-prefer2G
-msgid "2G preferred"
+#: operator-networkType-prefer3G
+msgid "3G preferred"
 msgstr ""
 
 #: operator-networkType-2G
@@ -1000,7 +1000,7 @@ msgstr "Numai 2G"
 msgid "3G only"
 msgstr "Numai 3G"
 
-#. # DUALSTACK
+#. # MULTISTACK
 #: operator-networkType-GSM
 msgid "GSM"
 msgstr "GSM"
@@ -1017,16 +1017,36 @@ msgstr "CDMA"
 msgid "EVDO"
 msgstr "EVDO"
 
-#: operator-networkType-preferGSM
-msgid "GSM preferred"
+#: operator-networkType-LTE
+msgid "LTE"
 msgstr ""
 
 #: operator-networkType-preferWCDMA
 msgid "WCDMA preferred"
 msgstr "WCDMA preferat"
 
-#: operator-networkType-preferEVDO
-msgid "EVDO preferred"
+#: operator-networkType-auto-2G-3G
+msgid "Auto (2G/3G)"
+msgstr ""
+
+#: operator-networkType-auto-CDMA-EVDO
+msgid "Auto (CDMA/EVDO)"
+msgstr ""
+
+#: operator-networkType-auto-WCDMA-GSM
+msgid "Auto (WCDMA/GSM)"
+msgstr ""
+
+#: operator-networkType-auto-LTE-WCDMA-GSM
+msgid "Auto (LTE/WCDMA/GSM)"
+msgstr ""
+
+#: operator-networkType-auto-LTE-CDMA-EVDO
+msgid "Auto (LTE/CDMA/EVDO)"
+msgstr ""
+
+#: operator-networkType-auto-WCDMA-GSM-CDMA-EVDO
+msgid "Auto (WCDMA/GSM/CDMA/EVDO)"
 msgstr ""
 
 #: operator-autoSelect
@@ -1119,7 +1139,7 @@ msgstr "Setări pt. mesaje"
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
 #: messageSettings-header
-msgctxt "messageSettings-header"
+#, fuzzy
 msgid "{{messageSettings}}"
 msgstr "{{messageSettings}}"
 
@@ -1147,11 +1167,10 @@ msgstr "Setări APN"
 #. # will be automatically picked from the existing string with ID "imsSettings".
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
-#: imsSettings-header
+#: imsSettings-header2
 #, fuzzy
-msgctxt "imsSettings-header"
-msgid "{{messageSettings}}"
-msgstr "{{messageSettings}}"
+msgid "{{imsSettings}}"
+msgstr "{{fdnSettings}}"
 
 #: apnSettings
 msgid "APN settings"
@@ -1621,6 +1640,28 @@ msgstr "Partajare USB"
 #: hotspotSettings
 msgid "Hotspot settings"
 msgstr "Setări Hotspot"
+
+#: wifi-auth-username
+msgctxt "wifi-auth-username"
+msgid "Username"
+msgstr ""
+
+#: wifi-auth-password
+#, fuzzy
+msgctxt "wifi-auth-password"
+msgid "Password"
+msgstr "Parolă"
+
+#: wifi-join-username
+msgctxt "wifi-join-username"
+msgid "Username"
+msgstr ""
+
+#: wifi-join-password
+#, fuzzy
+msgctxt "wifi-join-password"
+msgid "Password"
+msgstr "Parolă"
 
 #. # LOCALIZATION NOTE (hotspotSettings-header): if you leave the original
 #. # en-US value "{{hotspotSettings}}" in the following string, the localization
@@ -3027,8 +3068,31 @@ msgstr "{{developer}}"
 msgid "Developer HUD"
 msgstr ""
 
+#. # LOCALIZATION NOTE (hud-header, hud-button): if you leave the original
+#. # en-US value "{{hud}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "hud".
+#. # If you need to adapt your localizations to the available space in
+#. # headers or buttons, you can use different strings here.
 #: hud-header
+msgctxt "hud-header"
 msgid "{{hud}}"
+msgstr ""
+
+#: hud-button
+msgctxt "hud-button"
+msgid "{{hud}}"
+msgstr ""
+
+#: hud-logging
+msgid "Log changes in adb"
+msgstr ""
+
+#: hud-problems
+msgid "Problems"
+msgstr ""
+
+#: hud-warnings
+msgid "Warnings"
 msgstr ""
 
 #: hud-errors
@@ -3036,8 +3100,8 @@ msgstr ""
 msgid "Errors"
 msgstr "Eroare"
 
-#: hud-warnings
-msgid "Warnings"
+#: hud-security
+msgid "Security issues"
 msgstr ""
 
 #: hud-performance
@@ -3132,6 +3196,10 @@ msgstr "Enable APZ for all content processes"
 
 #: layers-enable-tiles
 msgid "Layers: Enable Tiles"
+msgstr ""
+
+#: layers-simple-tiles
+msgid "Layers: Simple Tiles"
 msgstr ""
 
 #: layers-progressive-paint
@@ -3888,10 +3956,10 @@ msgstr ""
 "Sorry, the system can’t send your suggestion because you already sent us "
 "feedback. Please try our next software update and send again."
 
-#: feedback-done-msg
+#: feedback-complete-msg
 msgid ""
-"Thanks for the feedback! We will use it to help us create a better "
-"experience in future release of Firefox OS."
+"Thanks for the feedback! We use it to help create better experiences in "
+"future releases of Firefox OS."
 msgstr ""
 
 #. # Device :: Help
@@ -4011,14 +4079,9 @@ msgid "Get Channel Status"
 msgstr "Obține starea canalului"
 
 #, fuzzy
-#~ msgctxt "wifi-auth-password"
-#~ msgid "Password"
-#~ msgstr "Parolă"
-
-#, fuzzy
-#~ msgctxt "wifi-join-password"
-#~ msgid "Password"
-#~ msgstr "Parolă"
+#~ msgctxt "imsSettings-header"
+#~ msgid "{{messageSettings}}"
+#~ msgstr "{{messageSettings}}"
 
 #~ msgctxt "fdn-authorizedNumbers"
 #~ msgid "Authorized numbers"

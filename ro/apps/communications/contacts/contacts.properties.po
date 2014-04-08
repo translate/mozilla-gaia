@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-01 00:45+0100\n"
+"POT-Creation-Date: 2014-03-30 17:44+0100\n"
 "PO-Revision-Date: 2014-04-03 17:13+0000\n"
 "Last-Translator: akoscomp <nagy.akos@libreoffice.ro>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);\n"
-"X-Generator: Translate Toolkit 1.11.0\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1396545238.000000\n"
@@ -139,6 +139,10 @@ msgctxt "carrier"
 msgid "Carrier"
 msgstr "Operator"
 
+#: separator
+msgid ","
+msgstr ""
+
 #: carrier.placeholder
 msgctxt "carrier.placeholder"
 msgid "Carrier"
@@ -182,14 +186,32 @@ msgstr "Companie"
 msgid "Custom"
 msgstr "Personalizat"
 
+#: date
+msgctxt "date"
+msgid "Date"
+msgstr ""
+
+#: date.placeholder
+msgctxt "date.placeholder"
+msgid "Date"
+msgstr ""
+
 #: birthday
 msgid "Birthday"
 msgstr "Zi de naștere"
 
 #. # see http://pubs.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#: birthdayDateFormat
+#: dateFormat
 msgid "%B %e"
 msgstr ""
+
+#: dateOutput
+msgid "{{dayMonthFormatted}} {{year}}"
+msgstr "{{dayMonthFormatted}} {{year}}"
+
+#: anniversary
+msgid "Anniversary"
+msgstr "Aniversare"
 
 #. # Contact action buttons
 #: addPhoto
@@ -207,6 +229,10 @@ msgstr "Adaugă email"
 #: addAddress
 msgid "Add Address"
 msgstr "Adaugă adresă"
+
+#: addDate
+msgid "Add Date"
+msgstr ""
 
 #: addComment
 msgid "Add Comment"
@@ -269,6 +295,14 @@ msgstr "Tag personalizat"
 #: current
 msgid "Current"
 msgstr "Curentă"
+
+#. # LOCALIZATION NOTE(itemWithLabel): Parameters in this string will be replaced
+#. # at run-time: {{label}} is the label associated to phone number or email,
+#. # item is the number/email itself. Examples for English: "Home, +123456789" or
+#. # "Work, foo@example.com".
+#: itemWithLabel
+msgid "{{label}}, {{item}}"
+msgstr "{{label}}, {{item}}"
 
 #. # Hidden information, for screen readers
 #: exit
@@ -823,15 +857,3 @@ msgstr "Niciun SIM detectat"
 #: exportError-SIM-GenericError
 msgid "An error occurred while exporting a contact"
 msgstr "Eroare la exportarea unui contact"
-
-#~ msgid ","
-#~ msgstr ","
-
-#~ msgid "{{dayMonthFormatted}} {{year}}"
-#~ msgstr "{{dayMonthFormatted}} {{year}}"
-
-#~ msgid "Anniversary"
-#~ msgstr "Aniversare"
-
-#~ msgid "{{label}}, {{item}}"
-#~ msgstr "{{label}}, {{item}}"
