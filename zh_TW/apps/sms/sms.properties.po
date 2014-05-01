@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-30 17:44+0100\n"
+"POT-Creation-Date: 2014-05-01 15:24+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -170,7 +170,7 @@ msgctxt "composeMessage.dataset.placeholder"
 msgid "Message"
 msgstr "訊息"
 
-#: composeSubject.placeholder
+#: composeSubject.dataset.placeholder
 msgid "Subject"
 msgstr "主旨"
 
@@ -190,10 +190,11 @@ msgstr "已達訊息最大長度。"
 msgid "Maximum length of subject reached."
 msgstr "已達主旨的最大長度。"
 
-#: messages-exceeded-length-text
+#: message-exceeded-max-length
+#, fuzzy
 msgid ""
-"You’ve exceeded the maximum length. Remove special characters or shorten the "
-"message to send it."
+"You’ve exceeded the maximum size. Remove attachments or shorten the message "
+"to send it."
 msgstr "已達訊息最大長度，請移除特殊字元或縮短訊息以傳送此簡訊。"
 
 #: newMessage
@@ -388,6 +389,28 @@ msgstr "未知"
 msgid "Carrier unknown"
 msgstr "未知的電信業者"
 
+#. # LOCALIZATION NOTE(thread-header): parameters in this string will be replaced
+#. # at runtime. {{numberType}} is the label associated to the number ('work',
+#. # 'home', etc.), {{numberDetail}} is either the phone number or the carrier's
+#. # name. Resulting example for en-US: "mobile | +123456789", "mobile | Verizon".
+#: thread-header
+msgid "{{numberType}} | {{numberDetail}}"
+msgstr ""
+
+#. # LOCALIZATION NOTE(thread-separator): used to separate type/carrier from
+#. # the number itself. It should be consistent with the characters used in
+#. # "thread- header", \u20 is a blank space (\u20|\u20 is equivalent to " | ").
+#: thread-separator
+msgid "Ȁu20"
+msgstr ""
+
+#. # LOCALIZATION NOTE(carrier-separator): used to separate carrier's name from
+#. # the number itself. \u20 is a blank space. Resulting example for en-US:
+#. # "Verizon, +123456789".
+#: carrier-separator
+msgid ",Ȁ"
+msgstr ""
+
 #. # Modal Dialogs
 #: replace-draft
 msgid "Replace existing Draft"
@@ -442,16 +465,18 @@ msgstr "無訊息"
 msgid "Start communicating now"
 msgstr "立刻開始通訊"
 
-#: sendGeneralErrorTitle
-msgid "Service currently unavailable"
-msgstr "服務目前無法使用"
+#: sendDefaultErrorTitle
+#, fuzzy
+msgid "Message not sent"
+msgstr "找不到簡訊"
 
-#: sendGeneralErrorBody
-msgid "Message will automatically be sent once service is available."
-msgstr "將會自動在服務可用時傳送訊息。"
+#: sendDefaultErrorBody
+msgid "There was a problem sending the message. Please try again."
+msgstr ""
 
-#: sendGeneralErrorBtnOk
-msgctxt "sendGeneralErrorBtnOk"
+#: sendDefaultErrorBtnOk
+#, fuzzy
+msgctxt "sendDefaultErrorBtnOk"
 msgid "OK"
 msgstr "確定"
 
@@ -481,56 +506,57 @@ msgctxt "sendFlightModeBtnOk"
 msgid "OK"
 msgstr "確定"
 
-#: fdnBlockedTitle
+#: fdnBlocked2Title
 msgid "FDN active"
 msgstr "固定撥號已啟用"
 
-#: fdnBlockedBody.innerHTML
-msgctxt "fdnBlockedBody.innerHTML"
+#. #LOCALIZATION NOTE (fdnBlocked2Body): the English translation does not need the
+#. # actual number of phone numbers. If your translation needs it, you can still add it
+#. # using the parameter {{ n }}. Also take into account that you could add HTML so be
+#. # careful with the content, it may affect to the whole app.
+#: fdnBlocked2Body.innerHTML
+#, fuzzy
+msgctxt "fdnBlocked2Body.innerHTML"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: fdnBlockedBody.innerHTML[one]
+#: fdnBlocked2Body.innerHTML[one]
 msgid ""
-"FDN is enabled and the following recipient is not in your FDN list:<br /"
-">{{ numbers }}"
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipient are in your FDN list:<br />{{ numbers }}"
 msgstr ""
-"已啟用固定撥號，但下列收件者不在您的固定撥號清單中: <br />{{ numbers }}"
 
-#: fdnBlockedBody.innerHTML[two]
-msgctxt "fdnBlockedBody.innerHTML[two]"
+#: fdnBlocked2Body.innerHTML[two]
+msgctxt "fdnBlocked2Body.innerHTML[two]"
 msgid ""
-"FDN is enabled and the following recipients are not in your FDN list:<br /"
-">{{ numbers }}"
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipients are in your FDN list:<br />{{ numbers }}"
 msgstr ""
-"已啟用固定撥號，但下列收件者不在您的固定撥號清單中: <br />{{ numbers }}"
 
-#: fdnBlockedBody.innerHTML[few]
-msgctxt "fdnBlockedBody.innerHTML[few]"
+#: fdnBlocked2Body.innerHTML[few]
+msgctxt "fdnBlocked2Body.innerHTML[few]"
 msgid ""
-"FDN is enabled and the following recipients are not in your FDN list:<br /"
-">{{ numbers }}"
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipients are in your FDN list:<br />{{ numbers }}"
 msgstr ""
-"已啟用固定撥號，但下列收件者不在您的固定撥號清單中: <br />{{ numbers }}"
 
-#: fdnBlockedBody.innerHTML[many]
-msgctxt "fdnBlockedBody.innerHTML[many]"
+#: fdnBlocked2Body.innerHTML[many]
+msgctxt "fdnBlocked2Body.innerHTML[many]"
 msgid ""
-"FDN is enabled and the following recipients are not in your FDN list:<br /"
-">{{ numbers }}"
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipients are in your FDN list:<br />{{ numbers }}"
 msgstr ""
-"已啟用固定撥號，但下列收件者不在您的固定撥號清單中: <br />{{ numbers }}"
 
-#: fdnBlockedBody.innerHTML[other]
-msgctxt "fdnBlockedBody.innerHTML[other]"
+#: fdnBlocked2Body.innerHTML[other]
+msgctxt "fdnBlocked2Body.innerHTML[other]"
 msgid ""
-"FDN is enabled and the following recipients are not in your FDN list:<br /"
-">{{ numbers }}"
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipients are in your FDN list:<br />{{ numbers }}"
 msgstr ""
-"已啟用固定撥號，但下列收件者不在您的固定撥號清單中: <br />{{ numbers }}"
 
-#: fdnBlockedBtnOk
-msgctxt "fdnBlockedBtnOk"
+#: fdnBlocked2BtnOk
+#, fuzzy
+msgctxt "fdnBlocked2BtnOk"
 msgid "OK"
 msgstr "確定"
 
@@ -803,8 +829,49 @@ msgstr "下載中"
 msgid "untitled"
 msgstr "未命名"
 
-#: file-too-large
-msgid "The file you have selected is too large"
+#. # LOCALIZATION NOTE (files-too-large): the English translation does not need the
+#. # actual number of files. If your translation needs it, you can still add it
+#. # using the parameter {{ n }}.
+#: files-too-large
+#, fuzzy
+msgctxt "files-too-large"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: files-too-large[zero]
+#, fuzzy
+msgctxt "files-too-large[zero]"
+msgid "The file you have selected is too large."
+msgstr "您選擇的檔案太大"
+
+#: files-too-large[one]
+#, fuzzy
+msgctxt "files-too-large[one]"
+msgid "The file you have selected is too large."
+msgstr "您選擇的檔案太大"
+
+#: files-too-large[two]
+#, fuzzy
+msgctxt "files-too-large[two]"
+msgid "The files you have selected are too large."
+msgstr "您選擇的檔案太大"
+
+#: files-too-large[few]
+#, fuzzy
+msgctxt "files-too-large[few]"
+msgid "The files you have selected are too large."
+msgstr "您選擇的檔案太大"
+
+#: files-too-large[many]
+#, fuzzy
+msgctxt "files-too-large[many]"
+msgid "The files you have selected are too large."
+msgstr "您選擇的檔案太大"
+
+#: files-too-large[other]
+#, fuzzy
+msgctxt "files-too-large[other]"
+msgid "The files you have selected are too large."
 msgstr "您選擇的檔案太大"
 
 #: resize-image
@@ -828,6 +895,54 @@ msgstr ""
 #: dsds-notification-title-with-sim
 msgid "({{sim}}) {{sender}}"
 msgstr ""
+
+#~ msgid "Service currently unavailable"
+#~ msgstr "服務目前無法使用"
+
+#~ msgid "Message will automatically be sent once service is available."
+#~ msgstr "將會自動在服務可用時傳送訊息。"
+
+#~ msgctxt "fdnBlockedBody.innerHTML"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgid ""
+#~ "FDN is enabled and the following recipient is not in your FDN list:<br /"
+#~ ">{{ numbers }}"
+#~ msgstr ""
+#~ "已啟用固定撥號，但下列收件者不在您的固定撥號清單中: <br />{{ numbers }}"
+
+#~ msgctxt "fdnBlockedBody.innerHTML[two]"
+#~ msgid ""
+#~ "FDN is enabled and the following recipients are not in your FDN list:<br /"
+#~ ">{{ numbers }}"
+#~ msgstr ""
+#~ "已啟用固定撥號，但下列收件者不在您的固定撥號清單中: <br />{{ numbers }}"
+
+#~ msgctxt "fdnBlockedBody.innerHTML[few]"
+#~ msgid ""
+#~ "FDN is enabled and the following recipients are not in your FDN list:<br /"
+#~ ">{{ numbers }}"
+#~ msgstr ""
+#~ "已啟用固定撥號，但下列收件者不在您的固定撥號清單中: <br />{{ numbers }}"
+
+#~ msgctxt "fdnBlockedBody.innerHTML[many]"
+#~ msgid ""
+#~ "FDN is enabled and the following recipients are not in your FDN list:<br /"
+#~ ">{{ numbers }}"
+#~ msgstr ""
+#~ "已啟用固定撥號，但下列收件者不在您的固定撥號清單中: <br />{{ numbers }}"
+
+#~ msgctxt "fdnBlockedBody.innerHTML[other]"
+#~ msgid ""
+#~ "FDN is enabled and the following recipients are not in your FDN list:<br /"
+#~ ">{{ numbers }}"
+#~ msgstr ""
+#~ "已啟用固定撥號，但下列收件者不在您的固定撥號清單中: <br />{{ numbers }}"
+
+#~ msgctxt "fdnBlockedBtnOk"
+#~ msgid "OK"
+#~ msgstr "確定"
 
 #~ msgid "Read report:"
 #~ msgstr "報告閱讀於:"

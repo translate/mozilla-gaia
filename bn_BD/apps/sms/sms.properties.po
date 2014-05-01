@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-30 17:44+0100\n"
+"POT-Creation-Date: 2014-05-01 15:24+0100\n"
 "PO-Revision-Date: 2014-03-05 15:48+0000\n"
 "Last-Translator: Belayet <bellayet@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -172,7 +172,7 @@ msgctxt "composeMessage.dataset.placeholder"
 msgid "Message"
 msgstr "বার্তা"
 
-#: composeSubject.placeholder
+#: composeSubject.dataset.placeholder
 msgid "Subject"
 msgstr "বিষয়"
 
@@ -193,11 +193,11 @@ msgstr "আপনি এর বেশি লিখতে পারবেন ন�
 msgid "Maximum length of subject reached."
 msgstr "বিষয় সর্বচ্চো সীমায় পৌঁছেছে।"
 
-#: messages-exceeded-length-text
+#: message-exceeded-max-length
 #, fuzzy
 msgid ""
-"You’ve exceeded the maximum length. Remove special characters or shorten the "
-"message to send it."
+"You’ve exceeded the maximum size. Remove attachments or shorten the message "
+"to send it."
 msgstr ""
 "আপনি বেশি লিখে ফেলেছেন। বার্তা পাঠাতে বিশেষ চিহ্ন অপসারণ করুন অথবা বার্তা ছোট "
 "করুন।"
@@ -393,6 +393,28 @@ msgstr "অজ্ঞাত"
 msgid "Carrier unknown"
 msgstr "অজ্ঞাত অপারেটর"
 
+#. # LOCALIZATION NOTE(thread-header): parameters in this string will be replaced
+#. # at runtime. {{numberType}} is the label associated to the number ('work',
+#. # 'home', etc.), {{numberDetail}} is either the phone number or the carrier's
+#. # name. Resulting example for en-US: "mobile | +123456789", "mobile | Verizon".
+#: thread-header
+msgid "{{numberType}} | {{numberDetail}}"
+msgstr ""
+
+#. # LOCALIZATION NOTE(thread-separator): used to separate type/carrier from
+#. # the number itself. It should be consistent with the characters used in
+#. # "thread- header", \u20 is a blank space (\u20|\u20 is equivalent to " | ").
+#: thread-separator
+msgid "Ȁu20"
+msgstr ""
+
+#. # LOCALIZATION NOTE(carrier-separator): used to separate carrier's name from
+#. # the number itself. \u20 is a blank space. Resulting example for en-US:
+#. # "Verizon, +123456789".
+#: carrier-separator
+msgid ",Ȁ"
+msgstr ""
+
 #. # Modal Dialogs
 #: replace-draft
 msgid "Replace existing Draft"
@@ -449,16 +471,18 @@ msgstr "কোনো বার্তা নেই"
 msgid "Start communicating now"
 msgstr "যোগাযোগ শুরু করুন"
 
-#: sendGeneralErrorTitle
-msgid "Service currently unavailable"
-msgstr "এই মুহূর্তে সেবা দেয়া যাচ্ছে না"
+#: sendDefaultErrorTitle
+#, fuzzy
+msgid "Message not sent"
+msgstr "বার্তা পাওয়া যায়নি"
 
-#: sendGeneralErrorBody
-msgid "Message will automatically be sent once service is available."
-msgstr "সেবা দেয়া সম্ভব হলে স্বয়ংক্রীয়ভাবে বার্তা প্রেরিত হবে।"
+#: sendDefaultErrorBody
+msgid "There was a problem sending the message. Please try again."
+msgstr ""
 
-#: sendGeneralErrorBtnOk
-msgctxt "sendGeneralErrorBtnOk"
+#: sendDefaultErrorBtnOk
+#, fuzzy
+msgctxt "sendDefaultErrorBtnOk"
 msgid "OK"
 msgstr "ঠিক আছে"
 
@@ -488,51 +512,57 @@ msgctxt "sendFlightModeBtnOk"
 msgid "OK"
 msgstr "ওকে"
 
-#: fdnBlockedTitle
+#: fdnBlocked2Title
 msgid "FDN active"
 msgstr "FDN সক্রিয়"
 
-#: fdnBlockedBody.innerHTML
-msgctxt "fdnBlockedBody.innerHTML"
+#. #LOCALIZATION NOTE (fdnBlocked2Body): the English translation does not need the
+#. # actual number of phone numbers. If your translation needs it, you can still add it
+#. # using the parameter {{ n }}. Also take into account that you could add HTML so be
+#. # careful with the content, it may affect to the whole app.
+#: fdnBlocked2Body.innerHTML
+#, fuzzy
+msgctxt "fdnBlocked2Body.innerHTML"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: fdnBlockedBody.innerHTML[one]
+#: fdnBlocked2Body.innerHTML[one]
 msgid ""
-"FDN is enabled and the following recipient is not in your FDN list:<br /"
-">{{ numbers }}"
-msgstr "FDN সক্রিয় এবং এই প্রাপকগণ আপনার FDN তালিকায় নেই:<br />{{ numbers }}"
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipient are in your FDN list:<br />{{ numbers }}"
+msgstr ""
 
-#: fdnBlockedBody.innerHTML[two]
-msgctxt "fdnBlockedBody.innerHTML[two]"
+#: fdnBlocked2Body.innerHTML[two]
+msgctxt "fdnBlocked2Body.innerHTML[two]"
 msgid ""
-"FDN is enabled and the following recipients are not in your FDN list:<br /"
-">{{ numbers }}"
-msgstr "FDN সক্রিয় এবং এই প্রাপকগণ আপনার FDN তালিকায় নেই:<br />{{ numbers }}"
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipients are in your FDN list:<br />{{ numbers }}"
+msgstr ""
 
-#: fdnBlockedBody.innerHTML[few]
-msgctxt "fdnBlockedBody.innerHTML[few]"
+#: fdnBlocked2Body.innerHTML[few]
+msgctxt "fdnBlocked2Body.innerHTML[few]"
 msgid ""
-"FDN is enabled and the following recipients are not in your FDN list:<br /"
-">{{ numbers }}"
-msgstr "FDN সক্রিয় এবং এই প্রাপকগণ আপনার FDN তালিকায় নেই:<br />{{ numbers }}"
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipients are in your FDN list:<br />{{ numbers }}"
+msgstr ""
 
-#: fdnBlockedBody.innerHTML[many]
-msgctxt "fdnBlockedBody.innerHTML[many]"
+#: fdnBlocked2Body.innerHTML[many]
+msgctxt "fdnBlocked2Body.innerHTML[many]"
 msgid ""
-"FDN is enabled and the following recipients are not in your FDN list:<br /"
-">{{ numbers }}"
-msgstr "FDN সক্রিয় এবং এই প্রাপকগণ আপনার FDN তালিকায় নেই:<br />{{ numbers }}"
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipients are in your FDN list:<br />{{ numbers }}"
+msgstr ""
 
-#: fdnBlockedBody.innerHTML[other]
-msgctxt "fdnBlockedBody.innerHTML[other]"
+#: fdnBlocked2Body.innerHTML[other]
+msgctxt "fdnBlocked2Body.innerHTML[other]"
 msgid ""
-"FDN is enabled and the following recipients are not in your FDN list:<br /"
-">{{ numbers }}"
-msgstr "FDN সক্রিয় এবং এই প্রাপকগণ আপনার FDN তালিকায় নেই:<br />{{ numbers }}"
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipients are in your FDN list:<br />{{ numbers }}"
+msgstr ""
 
-#: fdnBlockedBtnOk
-msgctxt "fdnBlockedBtnOk"
+#: fdnBlocked2BtnOk
+#, fuzzy
+msgctxt "fdnBlocked2BtnOk"
 msgid "OK"
 msgstr "ঠিক আছে"
 
@@ -810,8 +840,49 @@ msgstr "ডাউনলোড করা হচ্ছে"
 msgid "untitled"
 msgstr "শিরোনামহীন"
 
-#: file-too-large
-msgid "The file you have selected is too large"
+#. # LOCALIZATION NOTE (files-too-large): the English translation does not need the
+#. # actual number of files. If your translation needs it, you can still add it
+#. # using the parameter {{ n }}.
+#: files-too-large
+#, fuzzy
+msgctxt "files-too-large"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: files-too-large[zero]
+#, fuzzy
+msgctxt "files-too-large[zero]"
+msgid "The file you have selected is too large."
+msgstr "আপনি অনেক বড় ফাইল নির্বাচন করেছেন"
+
+#: files-too-large[one]
+#, fuzzy
+msgctxt "files-too-large[one]"
+msgid "The file you have selected is too large."
+msgstr "আপনি অনেক বড় ফাইল নির্বাচন করেছেন"
+
+#: files-too-large[two]
+#, fuzzy
+msgctxt "files-too-large[two]"
+msgid "The files you have selected are too large."
+msgstr "আপনি অনেক বড় ফাইল নির্বাচন করেছেন"
+
+#: files-too-large[few]
+#, fuzzy
+msgctxt "files-too-large[few]"
+msgid "The files you have selected are too large."
+msgstr "আপনি অনেক বড় ফাইল নির্বাচন করেছেন"
+
+#: files-too-large[many]
+#, fuzzy
+msgctxt "files-too-large[many]"
+msgid "The files you have selected are too large."
+msgstr "আপনি অনেক বড় ফাইল নির্বাচন করেছেন"
+
+#: files-too-large[other]
+#, fuzzy
+msgctxt "files-too-large[other]"
+msgid "The files you have selected are too large."
 msgstr "আপনি অনেক বড় ফাইল নির্বাচন করেছেন"
 
 #: resize-image
@@ -835,6 +906,49 @@ msgstr ""
 #: dsds-notification-title-with-sim
 msgid "({{sim}}) {{sender}}"
 msgstr ""
+
+#~ msgid "Service currently unavailable"
+#~ msgstr "এই মুহূর্তে সেবা দেয়া যাচ্ছে না"
+
+#~ msgid "Message will automatically be sent once service is available."
+#~ msgstr "সেবা দেয়া সম্ভব হলে স্বয়ংক্রীয়ভাবে বার্তা প্রেরিত হবে।"
+
+#~ msgctxt "fdnBlockedBody.innerHTML"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgid ""
+#~ "FDN is enabled and the following recipient is not in your FDN list:<br /"
+#~ ">{{ numbers }}"
+#~ msgstr "FDN সক্রিয় এবং এই প্রাপকগণ আপনার FDN তালিকায় নেই:<br />{{ numbers }}"
+
+#~ msgctxt "fdnBlockedBody.innerHTML[two]"
+#~ msgid ""
+#~ "FDN is enabled and the following recipients are not in your FDN list:<br /"
+#~ ">{{ numbers }}"
+#~ msgstr "FDN সক্রিয় এবং এই প্রাপকগণ আপনার FDN তালিকায় নেই:<br />{{ numbers }}"
+
+#~ msgctxt "fdnBlockedBody.innerHTML[few]"
+#~ msgid ""
+#~ "FDN is enabled and the following recipients are not in your FDN list:<br /"
+#~ ">{{ numbers }}"
+#~ msgstr "FDN সক্রিয় এবং এই প্রাপকগণ আপনার FDN তালিকায় নেই:<br />{{ numbers }}"
+
+#~ msgctxt "fdnBlockedBody.innerHTML[many]"
+#~ msgid ""
+#~ "FDN is enabled and the following recipients are not in your FDN list:<br /"
+#~ ">{{ numbers }}"
+#~ msgstr "FDN সক্রিয় এবং এই প্রাপকগণ আপনার FDN তালিকায় নেই:<br />{{ numbers }}"
+
+#~ msgctxt "fdnBlockedBody.innerHTML[other]"
+#~ msgid ""
+#~ "FDN is enabled and the following recipients are not in your FDN list:<br /"
+#~ ">{{ numbers }}"
+#~ msgstr "FDN সক্রিয় এবং এই প্রাপকগণ আপনার FDN তালিকায় নেই:<br />{{ numbers }}"
+
+#~ msgctxt "fdnBlockedBtnOk"
+#~ msgid "OK"
+#~ msgstr "ঠিক আছে"
 
 #~ msgid "Edit messages"
 #~ msgstr "বার্তা সম্পাদনা"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-30 17:44+0100\n"
+"POT-Creation-Date: 2014-05-01 15:24+0100\n"
 "PO-Revision-Date: 2014-04-20 11:31+0000\n"
 "Last-Translator: Piseth <piseth.kheng@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1397993484.000000\n"
@@ -20,10 +20,6 @@ msgstr ""
 #: add
 msgid "Add"
 msgstr "បន្ថែម"
-
-#: back
-msgid "Back"
-msgstr "ថយក្រោយ"
 
 #: call
 msgid "Call"
@@ -55,6 +51,8 @@ msgstr "ព្យាយាម​ម្ដង​ទៀត"
 
 #. # Menus and dialog strings
 #: contacts
+#, fuzzy
+msgctxt "contacts"
 msgid "Contacts"
 msgstr "ទំនាក់ទំនង"
 
@@ -187,6 +185,12 @@ msgstr "ផ្ទាល់ខ្លួន"
 
 #: date
 msgctxt "date"
+msgid "Date"
+msgstr "កាលបរិច្ឆេទ"
+
+#: date-span-placeholder
+#, fuzzy
+msgctxt "date-span-placeholder"
 msgid "Date"
 msgstr "កាលបរិច្ឆេទ"
 
@@ -552,10 +556,6 @@ msgctxt "simContacts-imported3[other]"
 msgid "Imported {{n}} contacts"
 msgstr "បាន​នាំចូល​ទំនាក់ទំនង {{n}}"
 
-#: noSimMsg
-msgid "To import contacts insert or unlock your SIM card"
-msgstr "ដើម្បី​នាំចូល​ទំនាក់ទំនង បញ្ចូល ឬ​​​​​ដោះ​សោ​ SIM កាត​របស់​អ្នក"
-
 #: noSimMsgExport
 msgid "To export contacts insert or unlock your SIM card"
 msgstr "ដើម្បី​នាំចេញ​ទំនាក់ទំនង បញ្ចូល ឬ​ដោះ​សោ SIM កាត"
@@ -614,10 +614,6 @@ msgstr "បាន​នាំចូល​ទំនាក់ទំនង {{n}}"
 msgctxt "memoryCardContacts-imported3[other]"
 msgid "Imported {{n}} contacts"
 msgstr "បាន​នាំចូល​ទំនាក់ទំនង {{n}}"
-
-#: noMemoryCardMsg
-msgid "To import contacts insert a memory card"
-msgstr "ដើម្បី​នាំចូល​ទំនាក់ទំនង​ សូម​បញ្ចូល​កាត​អង្គ​ចងចាំ"
 
 #: noMemoryCardMsgExport
 msgid "To export contacts insert a memory card"
@@ -727,11 +723,6 @@ msgctxt "importSim2"
 msgid "SIM card"
 msgstr "SIM កាត"
 
-#: importMemoryCard
-msgctxt "importMemoryCard"
-msgid "Memory card"
-msgstr "កាត​អង្គ​ចងចាំ"
-
 #: importGmail
 msgid "Gmail"
 msgstr "Gmail"
@@ -764,10 +755,6 @@ msgstr "លុប​ទិន្នន័យ Facebook ទាំងអស់​�
 msgid "Your password in Facebook has changed. Please, update it."
 msgstr "ពាក្យសម្ងាត់​របស់​អ្នក​នៅ​ក្នុង Facebook ត្រូវ​បាន​ប្ដូរ ។ សូម​ធ្វើ​បច្ចុប្បន្នភាព​វា ។"
 
-#: noConnection11
-msgid "To import Facebook friends or contacts connect to Wi-Fi or data network"
-msgstr "ដើម្បី​នាំចូល​​មិត្តភ័ក្ដិ​ពី Facebook ឬ​ទំនាក់ទំនង ​​​ភ្ជាប់​ទៅ​ Wi-Fi ឬ​បណ្ដាញ​ទិន្នន័យ"
-
 #: notEnabledYet
 msgid "Not enabled yet"
 msgstr "មិន​ទាន់​បើក​ឲ្យ​ប្រើ​បាន​នៅ​ឡើង​ទេ"
@@ -783,7 +770,7 @@ msgid "SIM card"
 msgstr "SIM កាត"
 
 #: memoryCard
-msgctxt "memoryCard"
+#, fuzzy
 msgid "Memory card"
 msgstr "កាត​អង្គចងចាំ"
 
@@ -841,7 +828,8 @@ msgid "SIM Card is full"
 msgstr "SIM កាត​ពេញ"
 
 #: exportError-SIM-CannotAccessPhoneBook
-msgid "Cannot access SIM card's phone book"
+#, fuzzy
+msgid "Cannot access SIM card’s phone book"
 msgstr "មិន​អាច​ចូល​ដំណើរការ​សៀវភៅ​ទូរស័ព្ទ​របស់​ SIM កាត​បាន​ទេ"
 
 #: exportError-SIM-Unavailable
@@ -851,6 +839,152 @@ msgstr "រក​មិន​ឃើញ​ SIM"
 #: exportError-SIM-GenericError
 msgid "An error occurred while exporting a contact"
 msgstr "កំហុស​បាន​កើត​ឡើង​លក្ខណៈ​ពេល​នាំចេញ​ទំនាក់ទំនង"
+
+#: ContactManagementTitle
+msgid "Contacts Management"
+msgstr ""
+
+#: DeleteTitle
+msgid "Delete"
+msgstr ""
+
+#: bulkDeleteButton
+#, fuzzy
+msgid "Delete Contacts"
+msgstr "លុប​ទំនាក់ទំនង"
+
+#: BulkDelCancel
+msgid "Contacts delete cancelled"
+msgstr ""
+
+#: DeletedTxt
+#, fuzzy
+msgctxt "DeletedTxt"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: DeletedTxt[zero]
+msgctxt "DeletedTxt[zero]"
+msgid "No Contact to Delete"
+msgstr ""
+
+#: DeletedTxt[one]
+msgid "1 Contact removed"
+msgstr ""
+
+#: DeletedTxt[two]
+msgctxt "DeletedTxt[two]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletedTxt[few]
+msgctxt "DeletedTxt[few]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletedTxt[many]
+msgctxt "DeletedTxt[many]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletedTxt[other]
+msgctxt "DeletedTxt[other]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletingContacts
+#, fuzzy
+msgid "Deleting contacts"
+msgstr "លុប​ទំនាក់ទំនង"
+
+#: ContactConfirmDel
+#, fuzzy
+msgctxt "ContactConfirmDel"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: ContactConfirmDel[zero]
+msgctxt "ContactConfirmDel[zero]"
+msgid "No Contact to Delete"
+msgstr ""
+
+#: ContactConfirmDel[one]
+msgid "Delete 1 Contact? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[two]
+msgctxt "ContactConfirmDel[two]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[few]
+msgctxt "ContactConfirmDel[few]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[many]
+msgctxt "ContactConfirmDel[many]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[other]
+msgctxt "ContactConfirmDel[other]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: SelectedTxt
+#, fuzzy
+msgctxt "SelectedTxt"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: SelectedTxt[zero]
+#, fuzzy
+msgctxt "SelectedTxt[zero]"
+msgid "Contacts"
+msgstr "ទំនាក់ទំនង"
+
+#: SelectedTxt[one]
+msgctxt "SelectedTxt[one]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[two]
+msgctxt "SelectedTxt[two]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[few]
+msgctxt "SelectedTxt[few]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[many]
+msgctxt "SelectedTxt[many]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[other]
+msgctxt "SelectedTxt[other]"
+msgid "{{n}} selected"
+msgstr ""
+
+#~ msgid "Back"
+#~ msgstr "ថយក្រោយ"
+
+#~ msgid "To import contacts insert or unlock your SIM card"
+#~ msgstr "ដើម្បី​នាំចូល​ទំនាក់ទំនង បញ្ចូល ឬ​​​​​ដោះ​សោ​ SIM កាត​របស់​អ្នក"
+
+#~ msgid "To import contacts insert a memory card"
+#~ msgstr "ដើម្បី​នាំចូល​ទំនាក់ទំនង​ សូម​បញ្ចូល​កាត​អង្គ​ចងចាំ"
+
+#~ msgid ""
+#~ "To import Facebook friends or contacts connect to Wi-Fi or data network"
+#~ msgstr "ដើម្បី​នាំចូល​​មិត្តភ័ក្ដិ​ពី Facebook ឬ​ទំនាក់ទំនង ​​​ភ្ជាប់​ទៅ​ Wi-Fi ឬ​បណ្ដាញ​ទិន្នន័យ"
+
+#~ msgctxt "memoryCard"
+#~ msgid "Memory card"
+#~ msgstr "កាត​អង្គចងចាំ"
 
 #~ msgctxt "exportError-BT-shared"
 #~ msgid "Can't access memory card because it's shared"

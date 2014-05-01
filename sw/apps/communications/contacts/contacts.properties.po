@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-30 17:44+0100\n"
+"POT-Creation-Date: 2014-05-01 15:24+0100\n"
 "PO-Revision-Date: 2014-04-30 14:36+0000\n"
 "Last-Translator: Boniface <bonifacechallo@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1398868594.000000\n"
@@ -20,10 +20,6 @@ msgstr ""
 #: add
 msgid "Add"
 msgstr "Ongeza"
-
-#: back
-msgid "Back"
-msgstr "Rudi"
 
 #: call
 msgid "Call"
@@ -55,6 +51,8 @@ msgstr "Jaribu tena"
 
 #. # Menus and dialog strings
 #: contacts
+#, fuzzy
+msgctxt "contacts"
 msgid "Contacts"
 msgstr "Mawasiliano"
 
@@ -188,6 +186,12 @@ msgstr "Mwenyeji"
 
 #: date
 msgctxt "date"
+msgid "Date"
+msgstr "Tarehe"
+
+#: date-span-placeholder
+#, fuzzy
+msgctxt "date-span-placeholder"
 msgid "Date"
 msgstr "Tarehe"
 
@@ -555,10 +559,6 @@ msgctxt "simContacts-imported3[other]"
 msgid "Imported {{n}} contacts"
 msgstr "Ilileta anwani {{n}}"
 
-#: noSimMsg
-msgid "To import contacts insert or unlock your SIM card"
-msgstr "Ili kuleta anwani ingiza au fungua kadi yako ya SIM"
-
 #: noSimMsgExport
 msgid "To export contacts insert or unlock your SIM card"
 msgstr "Ili kuhamisha anwani ingiza au fungua kadi yako ya SIM"
@@ -617,10 +617,6 @@ msgstr "Ilileta anwani {{n}}"
 msgctxt "memoryCardContacts-imported3[other]"
 msgid "Imported {{n}} contacts"
 msgstr "Ilileta anwani {{n}}"
-
-#: noMemoryCardMsg
-msgid "To import contacts insert a memory card"
-msgstr "Ili kuleta anwani ingiza kadi ya kumbukumbu"
 
 #: noMemoryCardMsgExport
 msgid "To export contacts insert a memory card"
@@ -730,11 +726,6 @@ msgctxt "importSim2"
 msgid "SIM card"
 msgstr "Kadi ya SIM"
 
-#: importMemoryCard
-msgctxt "importMemoryCard"
-msgid "Memory card"
-msgstr "Kadi ya kumbukumbu"
-
 #: importGmail
 msgid "Gmail"
 msgstr "Gmail"
@@ -767,12 +758,6 @@ msgstr "Ondoa data yote ya Facebook?"
 msgid "Your password in Facebook has changed. Please, update it."
 msgstr "Nenosiri lako katika Facebook limebadilika. Tafadhali, lisasishe."
 
-#: noConnection11
-msgid "To import Facebook friends or contacts connect to Wi-Fi or data network"
-msgstr ""
-"Ili kuleta marafiki au anwani za Facebook unganisha kwa mtandao wa Wi-Fi au "
-"data"
-
 #: notEnabledYet
 msgid "Not enabled yet"
 msgstr "Haijawezeshwa bado"
@@ -788,7 +773,7 @@ msgid "SIM card"
 msgstr "Kadi ya SIM"
 
 #: memoryCard
-msgctxt "memoryCard"
+#, fuzzy
 msgid "Memory card"
 msgstr "Kadi ya kumbukumbu"
 
@@ -846,7 +831,8 @@ msgid "SIM Card is full"
 msgstr "Kadi ya SIM imejaa"
 
 #: exportError-SIM-CannotAccessPhoneBook
-msgid "Cannot access SIM card's phone book"
+#, fuzzy
+msgid "Cannot access SIM card’s phone book"
 msgstr "Haiwezi kupata kitabu cha nambari ya simu ya kadi ya SIM"
 
 #: exportError-SIM-Unavailable
@@ -856,6 +842,154 @@ msgstr "Hakuna SIM iliyogunduliwa"
 #: exportError-SIM-GenericError
 msgid "An error occurred while exporting a contact"
 msgstr "Hitilafu imetokea wakati wa kuhamisha anwani"
+
+#: ContactManagementTitle
+msgid "Contacts Management"
+msgstr ""
+
+#: DeleteTitle
+msgid "Delete"
+msgstr ""
+
+#: bulkDeleteButton
+#, fuzzy
+msgid "Delete Contacts"
+msgstr "Futa mawasiliano"
+
+#: BulkDelCancel
+msgid "Contacts delete cancelled"
+msgstr ""
+
+#: DeletedTxt
+#, fuzzy
+msgctxt "DeletedTxt"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: DeletedTxt[zero]
+msgctxt "DeletedTxt[zero]"
+msgid "No Contact to Delete"
+msgstr ""
+
+#: DeletedTxt[one]
+msgid "1 Contact removed"
+msgstr ""
+
+#: DeletedTxt[two]
+msgctxt "DeletedTxt[two]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletedTxt[few]
+msgctxt "DeletedTxt[few]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletedTxt[many]
+msgctxt "DeletedTxt[many]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletedTxt[other]
+msgctxt "DeletedTxt[other]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletingContacts
+#, fuzzy
+msgid "Deleting contacts"
+msgstr "Futa mawasiliano"
+
+#: ContactConfirmDel
+#, fuzzy
+msgctxt "ContactConfirmDel"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: ContactConfirmDel[zero]
+msgctxt "ContactConfirmDel[zero]"
+msgid "No Contact to Delete"
+msgstr ""
+
+#: ContactConfirmDel[one]
+msgid "Delete 1 Contact? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[two]
+msgctxt "ContactConfirmDel[two]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[few]
+msgctxt "ContactConfirmDel[few]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[many]
+msgctxt "ContactConfirmDel[many]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[other]
+msgctxt "ContactConfirmDel[other]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: SelectedTxt
+#, fuzzy
+msgctxt "SelectedTxt"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: SelectedTxt[zero]
+#, fuzzy
+msgctxt "SelectedTxt[zero]"
+msgid "Contacts"
+msgstr "Mawasiliano"
+
+#: SelectedTxt[one]
+msgctxt "SelectedTxt[one]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[two]
+msgctxt "SelectedTxt[two]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[few]
+msgctxt "SelectedTxt[few]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[many]
+msgctxt "SelectedTxt[many]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[other]
+msgctxt "SelectedTxt[other]"
+msgid "{{n}} selected"
+msgstr ""
+
+#~ msgid "Back"
+#~ msgstr "Rudi"
+
+#~ msgid "To import contacts insert or unlock your SIM card"
+#~ msgstr "Ili kuleta anwani ingiza au fungua kadi yako ya SIM"
+
+#~ msgid "To import contacts insert a memory card"
+#~ msgstr "Ili kuleta anwani ingiza kadi ya kumbukumbu"
+
+#~ msgid ""
+#~ "To import Facebook friends or contacts connect to Wi-Fi or data network"
+#~ msgstr ""
+#~ "Ili kuleta marafiki au anwani za Facebook unganisha kwa mtandao wa Wi-Fi "
+#~ "au data"
+
+#~ msgctxt "memoryCard"
+#~ msgid "Memory card"
+#~ msgstr "Kadi ya kumbukumbu"
 
 #~ msgid "No phones"
 #~ msgstr "Hakuna simu"

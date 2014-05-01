@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-14 09:44+0100\n"
+"POT-Creation-Date: 2014-05-01 15:24+0100\n"
 "PO-Revision-Date: 2014-04-14 12:10+0000\n"
 "Last-Translator: swati <prad.swati@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1397477409.000000\n"
@@ -1420,7 +1420,8 @@ msgid "Confirmation"
 msgstr "यकीन"
 
 #: device-option-unpair-device
-msgid "Unpair Device?"
+#, fuzzy
+msgid "Unpair device?"
 msgstr "यन्त्र छुटाउन चहानु हुन्छ?"
 
 #: device-option-connect
@@ -1768,6 +1769,10 @@ msgstr "संसूचक"
 msgid "Ringer & Notifications"
 msgstr "घन्टी र सूचनाहरु"
 
+#: media-sound
+msgid "Media"
+msgstr ""
+
 #: voice-sound
 msgid "Voice"
 msgstr "स्वर"
@@ -1945,6 +1950,11 @@ msgstr "SIM प्रबन्धक"
 msgid "{{simManager}}"
 msgstr "{{simManager}}"
 
+#: simSettings
+#, fuzzy
+msgid "SIM settings"
+msgstr "अाई एम् एस् सेटिङहरू"
+
 #: sim-manager-outgoing-calls
 msgid "Outgoing calls"
 msgstr "बाह्यगमन कल"
@@ -1966,10 +1976,9 @@ msgctxt "sim-manager-outgoing-data"
 msgid "Data"
 msgstr "डाटा"
 
-#: sim-manager-outgoing-data-desc-new
-msgid ""
-"Internet connection, MMS, A-GPS and Marketplace payments will be sent from"
-msgstr "यहाँ बाट इन्टरनेट जडान, MMS, A-GPS र मारकेटप्लेसका भुक्तानीहरु पठाईनेछन्"
+#: sim-manager-outgoing-data-description
+msgid "Data service network and Marketplace payments"
+msgstr ""
 
 #: sim-manager-always-ask
 msgid "Always ask"
@@ -2105,19 +2114,120 @@ msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr "{{appName}} {{layoutName}} पूर्वनिर्धारण आगत शैली सरह निर्धारण गरिएको छ"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#. # Accounts (N/A)
+#. # Accounts
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#: fxa
+msgctxt "fxa"
+msgid "Firefox Accounts"
+msgstr ""
+
 #: accounts
-msgid "Accounts"
-msgstr "खाताहरू"
+msgid "Account Management"
+msgstr ""
 
-#: persona
-msgid "Persona"
-msgstr "पर्सोना"
+#: fxa-accounts
+msgctxt "fxa-accounts"
+msgid "Firefox Accounts"
+msgstr ""
 
-#: mail
-msgid "Mail"
-msgstr "मेल"
+#. # LOCALIZATION NOTE (fxa-accounts-header): if you leave the original
+#. # en-US value "{{fxa-accounts}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "fxa-accounts".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: fxa-accounts-header
+msgid "{{fxa-accounts}}"
+msgstr ""
+
+#. # Panel: logged out
+#: fxa-overview
+msgid ""
+"Your Firefox Account lets you use features like Find My Device and apps like "
+"the Firefox Marketplace."
+msgstr ""
+
+#: fxa-invitation
+msgid "Create account or sign in"
+msgstr ""
+
+#. # Panel: logged in, unverified
+#: fxa-confirm-account
+msgid "Confirm Your Account"
+msgstr ""
+
+#: fxa-verification-email-sent-msg
+msgid "We will send an email to: {{email}}"
+msgstr ""
+
+#: fxa-please-verify
+msgid "Click the verification link in your email to confirm your account."
+msgstr ""
+
+#: fxa-cancel-confirmation
+msgid "Cancel Account Confirmation"
+msgstr ""
+
+#. # Panel: logged in, verified
+#: fxa-about
+msgid "About"
+msgstr ""
+
+#: fxa-logged-in-text
+msgid "Signed in as {{email}}"
+msgstr ""
+
+#: fxa-signed-in-header
+msgid "Signed In"
+msgstr ""
+
+#: fxa-marketplace-app
+msgid "Marketplace"
+msgstr ""
+
+#: fxa-find-my-device-app
+msgctxt "fxa-find-my-device-app"
+msgid "Find My Device"
+msgstr ""
+
+#: fxa-options
+msgid "Options"
+msgstr ""
+
+#: fxa-sign-out
+msgid "Sign Out"
+msgstr ""
+
+#. # Additional menu states
+#: fxa-confirm-email
+msgid "Please confirm {{email}}"
+msgstr ""
+
+#: findmydevice
+msgctxt "findmydevice"
+msgid "Find My Device"
+msgstr ""
+
+#: findmydevice-signup-description
+msgid "Find My Device allows you to locate, lock or erase your phone"
+msgstr ""
+
+#: findmydevice-login
+msgid "Sign In or Create an Account"
+msgstr ""
+
+#: findmydevice-enable
+msgid "Enable Find My Device"
+msgstr ""
+
+#: findmydevice-about
+msgid "About Find My Device"
+msgstr ""
+
+#: findmydevice-settings-description
+msgid ""
+"Find My Device allows you to locate, lock or erase your phone from a web "
+"site:"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -2134,18 +2244,18 @@ msgstr "पासकोड लक"
 msgid "Passcode: {{code}}"
 msgstr "पासकोड: {{code}}"
 
-#: phoneLock
+#: screenLock
 msgid "Screen lock"
 msgstr "पर्दामा ताल्चा लगाउने"
 
-#. # LOCALIZATION NOTE (phoneLock-header): if you leave the original
-#. # en-US value "{{phoneLock}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "phoneLock".
+#. # LOCALIZATION NOTE (screenLock-header): if you leave the original
+#. # en-US value "{{screenLock}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "screenLock".
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
-#: phoneLock-header
-msgid "{{phoneLock}}"
-msgstr "{{phoneLock}}"
+#: screenLock-header
+msgid "{{screenLock}}"
+msgstr ""
 
 #: simSecurity
 msgid "SIM security"
@@ -3048,7 +3158,8 @@ msgid "{{hud}}"
 msgstr "{{hud}}"
 
 #: hud-logging
-msgid "Log changes in adb"
+#, fuzzy
+msgid "Log changes in ADB"
 msgstr "ए डी बी मा लग परिवर्तनहरू"
 
 #: hud-problems
@@ -3136,13 +3247,17 @@ msgstr "त्रुटि सच्याउनुहोस्"
 msgid "Developer Menu"
 msgstr "विकासकर्ता मेनु"
 
-#: layers-draw-borders
-msgid "Draw layers borders"
-msgstr "तह किनाराहरू कोर्नुहोस्"
+#: developer-tools
+msgid "Developer Tools"
+msgstr ""
 
-#: layers-composer2d-enabled
-msgid "Enable hardware composer"
-msgstr "हार्डवेयर रचयिता सक्षम पार्नुहोस्"
+#: graphics
+msgid "Graphics"
+msgstr ""
+
+#: hardware-composer
+msgid "Hardware composer"
+msgstr ""
 
 #: paint-flashing
 msgid "Flash repainted area"
@@ -3152,28 +3267,34 @@ msgstr "पुन: रङ्गाइएको क्षेत्र फ्ल�
 msgid "Dump layers tree"
 msgstr "डम्प लेयर्स ट्री"
 
-#: apz-force-enable
-msgid "Enable APZ for all content processes"
-msgstr "सबै सामग्री प्रक्रियाहरुको लागि ए पी जेड् सक्षम पार्नुहोस्"
+#: apz
+msgid "Async Pan/Zoom"
+msgstr ""
 
-#: layers-enable-tiles
-msgid "Layers: Enable Tiles"
-msgstr "तहहरु: टाइलहरु सक्षम पार्नुहोस्"
+#: tiling
+msgid "Tiling"
+msgstr ""
 
-#: layers-simple-tiles
-msgid "Layers: Simple Tiles"
-msgstr "तहहरु: साधारण टाइलहरु"
+#: simple-tiling
+msgid "Simple tiling"
+msgstr ""
 
-#: layers-progressive-paint
-msgid "Layers: Progressive Paint"
-msgstr "तहहरु: प्रगतिशील रङ"
+#: progressive-paint
+msgid "Progressive paint"
+msgstr ""
 
-#: layers-draw-tile-borders
-msgid "Layers: Draw Tile Borders"
-msgstr "तहहरु: टाइलका किनाराहरू कोर्नुहोस्"
+#: draw-tile-borders
+msgid "Draw tile borders"
+msgstr ""
+
+#: draw-layer-borders
+#, fuzzy
+msgid "Draw layer borders"
+msgstr "तह किनाराहरू कोर्नुहोस्"
 
 #: apz-displayport-heuristics
-msgid "Displayport Heuristics"
+#, fuzzy
+msgid "Displayport heuristics"
 msgstr "डिसप्लेपोर्ट हिउरिसटिक्स"
 
 #: apz-heuristic-default
@@ -3205,9 +3326,13 @@ msgstr "चेकरबोरडिंग छैन"
 msgid "Log slow animations"
 msgstr "सुस्त एनिमेसनहरु लग गर्नुहोस्"
 
-#: remote-debugging
-msgid "Remote debugging"
-msgstr "रिमोट डिबगिङ"
+#: remote-debugging-usb
+msgid "Debugging via USB"
+msgstr ""
+
+#: dev-tools-wifi
+msgid "DevTools via Wi-Fi"
+msgstr ""
 
 #: debugger-disabled
 msgctxt "debugger-disabled"
@@ -3219,7 +3344,8 @@ msgid "ADB only"
 msgstr "ADB मात्र"
 
 #: debugger-adb-and-devtools
-msgid "ADB and Devtools"
+#, fuzzy
+msgid "ADB and DevTools"
 msgstr "ADB र Devtools"
 
 #: devtools-overlay
@@ -3231,16 +3357,22 @@ msgid "Jank Threshold"
 msgstr "ज्यांक थ्रेसहोल्ड"
 
 #: wifi-debugging
-msgid "Wi-Fi output in adb"
+#, fuzzy
+msgid "Wi-Fi output in ADB"
 msgstr "adb मा Wi-Fi आउटपुट"
 
 #: bluetooth-debugging
-msgid "Bluetooth output in adb"
+#, fuzzy
+msgid "Bluetooth output in ADB"
 msgstr "एडीबीमा ब्लुटुथ निर्गत"
 
 #: console-enabled
 msgid "Console enabled"
 msgstr "कंसोल सक्षम पारिएको "
+
+#: cards-view-screenshots
+msgid "Cards View: Screenshots"
+msgstr ""
 
 #: model-name
 msgid "Model"
@@ -3269,6 +3401,10 @@ msgstr "निर्माण पहिचायक"
 #: update-channel
 msgid "Update channel"
 msgstr "प्रणाली अपडेट गर्नुहोस्"
+
+#: update-url
+msgid "Update URL"
+msgstr ""
 
 #: last-updated
 msgid "Last Updated"
@@ -3531,7 +3667,8 @@ msgid "Apache License 2.0"
 msgstr "Apache License 2.0"
 
 #: launch-ftu
-msgid "Launch first time use"
+#, fuzzy
+msgid "Launch First Time Use"
 msgstr "पहिले पटक चलाउने सुरु"
 
 #: no-ftu
@@ -3542,33 +3679,33 @@ msgstr "पहिलो चोटि चलाउनु भएको एप भ�
 msgid "Rocketbar enabled"
 msgstr "रकेटबार सक्षम पार्नुहोस्"
 
-#: software-button-enabled
-msgid "Enable software home button"
-msgstr "सफ्टवेयर गृह बटनलाई सक्षम पार्नुहोस्"
+#: software-home-button
+msgid "Software home button"
+msgstr ""
 
-#: homegesture-enabled
-msgid "Home gesture enabled"
-msgstr "गृह भंगिमा सक्षम परियो"
+#: home-gesture
+msgid "Home gesture"
+msgstr ""
 
-#: edgesgesture-enabled
-msgid "Edges gesture enabled"
-msgstr "किनारा भंगिमा सक्षम परियो"
+#: edges-gesture
+msgid "Edges gesture"
+msgstr ""
 
-#: continuoustransition-enabled
-msgid "Continuous transition enabled"
-msgstr "निरंतर संक्रमण सक्षम पार्नुहोस्"
+#: continuous-transition
+msgid "Continuous transition"
+msgstr ""
 
 #: debug-gaia-enabled
 msgid "Gaia debug traces"
 msgstr "गाइया त्रुटि सच्याउने पदचिन्हहरु"
 
-#: enable-app-transition
-msgid "App transition enabled"
-msgstr "एप संक्रमण सक्षम पार्नुहोस्"
+#: app-transition
+msgid "App transition"
+msgstr ""
 
-#: enable-app-suspending
-msgid "Keep killed app in task manager"
-msgstr "नष्ट गरिएका अनुप्रयोग कार्य प्रबन्धकमा राख्नुहोस् ।"
+#: app-suspending
+msgid "App suspending"
+msgstr ""
 
 #: window-management
 msgid "Window management"
@@ -3675,6 +3812,14 @@ msgid ""
 msgstr ""
 "जब पर्दा वाचक सक्षम परिन्छ, तपाईं को यन्त्रले दृष्टि बिहिन तथा कम दृष्टि भएका "
 "प्रयोगकर्ताहरूलाई बोल्ने पुनर्निवेश प्रदान गर्ने छ ।"
+
+#: screen-reader-speech-volume
+msgid "Speech Volume"
+msgstr ""
+
+#: screen-reader-speech-rate
+msgid "Speech Rate"
+msgstr ""
 
 #: screenReader-confirm-title-start
 msgid "Start Screen Reader?"
@@ -4035,6 +4180,61 @@ msgstr "डाटा पठाउनुहोस्"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "च्यानल स्थितिहरु प्राप्त गर्नुहोस्"
+
+#~ msgid ""
+#~ "Internet connection, MMS, A-GPS and Marketplace payments will be sent from"
+#~ msgstr "यहाँ बाट इन्टरनेट जडान, MMS, A-GPS र मारकेटप्लेसका भुक्तानीहरु पठाईनेछन्"
+
+#~ msgid "Accounts"
+#~ msgstr "खाताहरू"
+
+#~ msgid "Persona"
+#~ msgstr "पर्सोना"
+
+#~ msgid "Mail"
+#~ msgstr "मेल"
+
+#~ msgid "{{phoneLock}}"
+#~ msgstr "{{phoneLock}}"
+
+#~ msgid "Enable hardware composer"
+#~ msgstr "हार्डवेयर रचयिता सक्षम पार्नुहोस्"
+
+#~ msgid "Enable APZ for all content processes"
+#~ msgstr "सबै सामग्री प्रक्रियाहरुको लागि ए पी जेड् सक्षम पार्नुहोस्"
+
+#~ msgid "Layers: Enable Tiles"
+#~ msgstr "तहहरु: टाइलहरु सक्षम पार्नुहोस्"
+
+#~ msgid "Layers: Simple Tiles"
+#~ msgstr "तहहरु: साधारण टाइलहरु"
+
+#~ msgid "Layers: Progressive Paint"
+#~ msgstr "तहहरु: प्रगतिशील रङ"
+
+#~ msgid "Layers: Draw Tile Borders"
+#~ msgstr "तहहरु: टाइलका किनाराहरू कोर्नुहोस्"
+
+#~ msgid "Remote debugging"
+#~ msgstr "रिमोट डिबगिङ"
+
+#~ msgid "Enable software home button"
+#~ msgstr "सफ्टवेयर गृह बटनलाई सक्षम पार्नुहोस्"
+
+#~ msgid "Home gesture enabled"
+#~ msgstr "गृह भंगिमा सक्षम परियो"
+
+#~ msgid "Edges gesture enabled"
+#~ msgstr "किनारा भंगिमा सक्षम परियो"
+
+#~ msgid "Continuous transition enabled"
+#~ msgstr "निरंतर संक्रमण सक्षम पार्नुहोस्"
+
+#~ msgid "App transition enabled"
+#~ msgstr "एप संक्रमण सक्षम पार्नुहोस्"
+
+#~ msgid "Keep killed app in task manager"
+#~ msgstr "नष्ट गरिएका अनुप्रयोग कार्य प्रबन्धकमा राख्नुहोस् ।"
 
 #, fuzzy
 #~ msgctxt "imsSettings-header"

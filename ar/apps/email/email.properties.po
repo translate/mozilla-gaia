@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-01 00:45+0100\n"
+"POT-Creation-Date: 2014-05-01 15:24+0100\n"
 "PO-Revision-Date: 2014-04-16 15:47+0000\n"
 "Last-Translator: Hamzah Hammad <hohpsut@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n>=3 && "
 "n<=10 ? 3 : n>=11 && n<=99 ? 4 : 5;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1397663273.000000\n"
@@ -280,6 +280,10 @@ msgctxt "setup-manual-username.placeholder"
 msgid "Username"
 msgstr "اسم المستخدم"
 
+#: setup-manual-activesync-username.placeholder
+msgid "Domain\\u0000ame"
+msgstr ""
+
 #: setup-bad-password-header
 msgid "Bad password!"
 msgstr "كلمة سرّ خاطئة"
@@ -429,6 +433,34 @@ msgstr "ألغِ"
 msgctxt "settings-account-delete-confirm"
 msgid "Delete"
 msgstr "حذف"
+
+#. # When dealing with an account that involves multiple types of
+#. # connections, such as IMAP and POP3 which both use SMTP for sending,
+#. # we augment the account name in the string with a label to help
+#. # clarify to the user which account type they are dealing with. For
+#. # most users, the same password will be used for the IMAP server and
+#. # the SMTP server, and they will only ever see the IMAP or POP3 label.
+#. # But some users with unusual server configurations will also see the
+#. # SMTP variant. These unusual users will probably have received
+#. # specific instructions from their ISP that involve use of the
+#. # protocol names. In general we expect that localizers will want to
+#. # leave the protocol names as-is since they are technical protocol
+#. # names, but it may make sense to place the name of the protocol
+#. # before the account type for certain languages.
+#. # Note that the account name is displayed as a string that is
+#. # displayed in its entirety, so you don't need to worry about clipping
+#. # or ellipses.
+#: settings-account-clarify-imap
+msgid "{{account-name}} (IMAP)"
+msgstr ""
+
+#: settings-account-clarify-pop3
+msgid "{{account-name}} (POP3)"
+msgstr ""
+
+#: settings-account-clarify-smtp
+msgid "{{account-name}} (SMTP)"
+msgstr ""
 
 #: settings-about-section
 msgid "About"
@@ -771,6 +803,10 @@ msgstr "{{kilobytes}}K"
 #: message-attachment-view.textContent
 msgid "View"
 msgstr "عرض"
+
+#: message-attachment-too-large
+msgid "This file is too large to download."
+msgstr ""
 
 #: message-no-subject
 msgid "(no subject)"
@@ -1139,23 +1175,27 @@ msgid "1 message flag set"
 msgstr "وضع علامة على رسالة واحدة"
 
 #: toaster-message-star[two]
+#, fuzzy
 msgctxt "toaster-message-star[two]"
-msgid "{{ n }} messages flag set"
+msgid "{{ n }} message flags set"
 msgstr "وضع علامة على {{ n }} رسالة"
 
 #: toaster-message-star[few]
+#, fuzzy
 msgctxt "toaster-message-star[few]"
-msgid "{{ n }} messages flag set"
+msgid "{{ n }} message flags set"
 msgstr "وضع علامة على {{ n }} رسالة"
 
 #: toaster-message-star[many]
+#, fuzzy
 msgctxt "toaster-message-star[many]"
-msgid "{{ n }} messages flag set"
+msgid "{{ n }} message flags set"
 msgstr "وضع علامة على {{ n }} رسالة"
 
 #: toaster-message-star[other]
+#, fuzzy
 msgctxt "toaster-message-star[other]"
-msgid "{{ n }} messages flag set"
+msgid "{{ n }} message flags set"
 msgstr "وضع علامة على {{ n }} رسالة"
 
 #: toaster-message-unstar
@@ -1168,24 +1208,28 @@ msgid "1 message flag removed"
 msgstr "حذف العلامة من رسالة واحدة"
 
 #: toaster-message-unstar[two]
+#, fuzzy
 msgctxt "toaster-message-unstar[two]"
-msgid "{{ n }} messages flag removed"
+msgid "{{ n }} message flags removed"
 msgstr "تم حذف {{ n }} علامة"
 
 #: toaster-message-unstar[few]
+#, fuzzy
 msgctxt "toaster-message-unstar[few]"
-msgid "{{ n }} messages flag removed"
+msgid "{{ n }} message flags removed"
 msgstr "تم حذف {{ n }} علامة"
 
 #: toaster-message-unstar[many]
+#, fuzzy
 msgctxt "toaster-message-unstar[many]"
-msgid "{{ n }} messages flag removed"
+msgid "{{ n }} message flags removed"
 msgstr "تم حذف {{ n }} علامة"
 
 #: toaster-message-unstar[other]
+#, fuzzy
 msgctxt "toaster-message-unstar[other]"
-msgid "{{ n }} messages flag removed"
-msgstr "حذف العلامة عن علامة "
+msgid "{{ n }} message flags removed"
+msgstr "تم حذف {{ n }} علامة"
 
 #: toaster-message-read
 msgctxt "toaster-message-read"
@@ -1426,6 +1470,30 @@ msgstr "{{ n }} بريد إلكتروني جديد ({{accountName}})"
 #: new-emails-notify-multiple-accounts-body
 msgid "{{ from }} “{{ subject }}”"
 msgstr "{{ from }} “{{ subject }}”"
+
+#~ msgctxt "toaster-message-star[few]"
+#~ msgid "{{ n }} messages flag set"
+#~ msgstr "وضع علامة على {{ n }} رسالة"
+
+#~ msgctxt "toaster-message-star[many]"
+#~ msgid "{{ n }} messages flag set"
+#~ msgstr "وضع علامة على {{ n }} رسالة"
+
+#~ msgctxt "toaster-message-star[other]"
+#~ msgid "{{ n }} messages flag set"
+#~ msgstr "وضع علامة على {{ n }} رسالة"
+
+#~ msgctxt "toaster-message-unstar[few]"
+#~ msgid "{{ n }} messages flag removed"
+#~ msgstr "تم حذف {{ n }} علامة"
+
+#~ msgctxt "toaster-message-unstar[many]"
+#~ msgid "{{ n }} messages flag removed"
+#~ msgstr "تم حذف {{ n }} علامة"
+
+#~ msgctxt "toaster-message-unstar[other]"
+#~ msgid "{{ n }} messages flag removed"
+#~ msgstr "حذف العلامة عن علامة "
 
 #~ msgid "Your login information"
 #~ msgstr "معلوماتك لتسجيل الدخول"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-30 17:44+0100\n"
+"POT-Creation-Date: 2014-05-01 15:24+0100\n"
 "PO-Revision-Date: 2014-04-09 09:40+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1397036428.000000\n"
@@ -20,10 +20,6 @@ msgstr ""
 #: add
 msgid "Add"
 msgstr "Ychwanegu"
-
-#: back
-msgid "Back"
-msgstr "Nôl"
 
 #: call
 msgid "Call"
@@ -55,6 +51,8 @@ msgstr "Ceisio eto"
 
 #. # Menus and dialog strings
 #: contacts
+#, fuzzy
+msgctxt "contacts"
 msgid "Contacts"
 msgstr "Cysylltiadau"
 
@@ -187,6 +185,12 @@ msgstr "Cyfaddas"
 
 #: date
 msgctxt "date"
+msgid "Date"
+msgstr "Dyddiad"
+
+#: date-span-placeholder
+#, fuzzy
+msgctxt "date-span-placeholder"
 msgid "Date"
 msgstr "Dyddiad"
 
@@ -552,10 +556,6 @@ msgctxt "simContacts-imported3[other]"
 msgid "Imported {{n}} contacts"
 msgstr "Mewnforiwyd {{n}} cysylltiad"
 
-#: noSimMsg
-msgid "To import contacts insert or unlock your SIM card"
-msgstr "I fewnforio cysylltiadau mewnosodwch neu datglowch eich cerdyn SIM"
-
 #: noSimMsgExport
 msgid "To export contacts insert or unlock your SIM card"
 msgstr "I allforio cysylltiadau mewnosodwch neu datglowch eich cerdyn SIM"
@@ -614,10 +614,6 @@ msgstr "Mewnforiwyd {{n}} cysylltiad"
 msgctxt "memoryCardContacts-imported3[other]"
 msgid "Imported {{n}} contacts"
 msgstr "Mewnforiwyd {{n}} cysylltiad"
-
-#: noMemoryCardMsg
-msgid "To import contacts insert a memory card"
-msgstr "I fewnforio cysylltiadau mewnosodwch gerdyn cof"
 
 #: noMemoryCardMsgExport
 msgid "To export contacts insert a memory card"
@@ -727,11 +723,6 @@ msgctxt "importSim2"
 msgid "SIM card"
 msgstr "Cerdyn SIM"
 
-#: importMemoryCard
-msgctxt "importMemoryCard"
-msgid "Memory card"
-msgstr "Cerdyn cof"
-
 #: importGmail
 msgid "Gmail"
 msgstr "Gmail"
@@ -764,11 +755,6 @@ msgstr "Tynnu holl ddata Facebook?"
 msgid "Your password in Facebook has changed. Please, update it."
 msgstr "Mae eich cyfrinair Facebook wedi newid. Mae angen ei diweddu."
 
-#: noConnection11
-msgid "To import Facebook friends or contacts connect to Wi-Fi or data network"
-msgstr ""
-"I fewnforio ffrindiau Facebook cysylltwch â'r Diwifr neu rwydwaith data"
-
 #: notEnabledYet
 msgid "Not enabled yet"
 msgstr "Heb ei alluogi eto"
@@ -784,7 +770,7 @@ msgid "SIM card"
 msgstr "Cerdyn SIM"
 
 #: memoryCard
-msgctxt "memoryCard"
+#, fuzzy
 msgid "Memory card"
 msgstr "Cerdyn cof"
 
@@ -842,7 +828,8 @@ msgid "SIM Card is full"
 msgstr "Mae'r cerdyn SIM yn llawn"
 
 #: exportError-SIM-CannotAccessPhoneBook
-msgid "Cannot access SIM card's phone book"
+#, fuzzy
+msgid "Cannot access SIM card’s phone book"
 msgstr "Maethu cael mynediad i lyfr ffôn y cerdyn SIM"
 
 #: exportError-SIM-Unavailable
@@ -852,6 +839,153 @@ msgstr "Heb ganfod SIM"
 #: exportError-SIM-GenericError
 msgid "An error occurred while exporting a contact"
 msgstr "Digwyddodd gwall wrth allforio cysylltiad"
+
+#: ContactManagementTitle
+msgid "Contacts Management"
+msgstr ""
+
+#: DeleteTitle
+msgid "Delete"
+msgstr ""
+
+#: bulkDeleteButton
+#, fuzzy
+msgid "Delete Contacts"
+msgstr "Dileu cysylltiad"
+
+#: BulkDelCancel
+msgid "Contacts delete cancelled"
+msgstr ""
+
+#: DeletedTxt
+#, fuzzy
+msgctxt "DeletedTxt"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: DeletedTxt[zero]
+msgctxt "DeletedTxt[zero]"
+msgid "No Contact to Delete"
+msgstr ""
+
+#: DeletedTxt[one]
+msgid "1 Contact removed"
+msgstr ""
+
+#: DeletedTxt[two]
+msgctxt "DeletedTxt[two]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletedTxt[few]
+msgctxt "DeletedTxt[few]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletedTxt[many]
+msgctxt "DeletedTxt[many]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletedTxt[other]
+msgctxt "DeletedTxt[other]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletingContacts
+#, fuzzy
+msgid "Deleting contacts"
+msgstr "Dileu cysylltiad"
+
+#: ContactConfirmDel
+#, fuzzy
+msgctxt "ContactConfirmDel"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: ContactConfirmDel[zero]
+msgctxt "ContactConfirmDel[zero]"
+msgid "No Contact to Delete"
+msgstr ""
+
+#: ContactConfirmDel[one]
+msgid "Delete 1 Contact? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[two]
+msgctxt "ContactConfirmDel[two]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[few]
+msgctxt "ContactConfirmDel[few]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[many]
+msgctxt "ContactConfirmDel[many]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[other]
+msgctxt "ContactConfirmDel[other]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: SelectedTxt
+#, fuzzy
+msgctxt "SelectedTxt"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: SelectedTxt[zero]
+#, fuzzy
+msgctxt "SelectedTxt[zero]"
+msgid "Contacts"
+msgstr "Cysylltiadau"
+
+#: SelectedTxt[one]
+msgctxt "SelectedTxt[one]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[two]
+msgctxt "SelectedTxt[two]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[few]
+msgctxt "SelectedTxt[few]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[many]
+msgctxt "SelectedTxt[many]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[other]
+msgctxt "SelectedTxt[other]"
+msgid "{{n}} selected"
+msgstr ""
+
+#~ msgid "Back"
+#~ msgstr "Nôl"
+
+#~ msgid "To import contacts insert or unlock your SIM card"
+#~ msgstr "I fewnforio cysylltiadau mewnosodwch neu datglowch eich cerdyn SIM"
+
+#~ msgid "To import contacts insert a memory card"
+#~ msgstr "I fewnforio cysylltiadau mewnosodwch gerdyn cof"
+
+#~ msgid ""
+#~ "To import Facebook friends or contacts connect to Wi-Fi or data network"
+#~ msgstr ""
+#~ "I fewnforio ffrindiau Facebook cysylltwch â'r Diwifr neu rwydwaith data"
+
+#~ msgctxt "memoryCard"
+#~ msgid "Memory card"
+#~ msgstr "Cerdyn cof"
 
 #~ msgctxt "exportError-BT-shared"
 #~ msgid "Can't access memory card because it's shared"

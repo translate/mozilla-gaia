@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-30 17:44+0100\n"
+"POT-Creation-Date: 2014-05-01 15:24+0100\n"
 "PO-Revision-Date: 2014-04-17 20:43+0200\n"
 "Last-Translator: Ibrahima SARR <ibrahima.sarr@pulaagu.com>\n"
 "Language-Team: FULAH LOCALIZATION\n"
@@ -12,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -174,7 +174,7 @@ msgctxt "composeMessage.dataset.placeholder"
 msgid "Message"
 msgstr "Ɓatakuru"
 
-#: composeSubject.placeholder
+#: composeSubject.dataset.placeholder
 msgid "Subject"
 msgstr "Toɓere"
 
@@ -194,10 +194,11 @@ msgstr "A yettiima haaɗtirde njuuteende ndii."
 msgid "Maximum length of subject reached."
 msgstr "Haaɗtirde njuuteendi toɓɓere heɓaama."
 
-#: messages-exceeded-length-text
+#: message-exceeded-max-length
+#, fuzzy
 msgid ""
-"You’ve exceeded the maximum length. Remove special characters or shorten the "
-"message to send it."
+"You’ve exceeded the maximum size. Remove attachments or shorten the message "
+"to send it."
 msgstr ""
 "A ɓurtinii haaɗtirde njuuteendi. Ittu alkule keeriiɗe walla ustu ɓatakuure "
 "ndee ngam neldude."
@@ -395,6 +396,28 @@ msgstr "Anndaaka"
 msgid "Carrier unknown"
 msgstr "Carwinoowo anndaaka"
 
+#. # LOCALIZATION NOTE(thread-header): parameters in this string will be replaced
+#. # at runtime. {{numberType}} is the label associated to the number ('work',
+#. # 'home', etc.), {{numberDetail}} is either the phone number or the carrier's
+#. # name. Resulting example for en-US: "mobile | +123456789", "mobile | Verizon".
+#: thread-header
+msgid "{{numberType}} | {{numberDetail}}"
+msgstr ""
+
+#. # LOCALIZATION NOTE(thread-separator): used to separate type/carrier from
+#. # the number itself. It should be consistent with the characters used in
+#. # "thread- header", \u20 is a blank space (\u20|\u20 is equivalent to " | ").
+#: thread-separator
+msgid "Ȁu20"
+msgstr ""
+
+#. # LOCALIZATION NOTE(carrier-separator): used to separate carrier's name from
+#. # the number itself. \u20 is a blank space. Resulting example for en-US:
+#. # "Verizon, +123456789".
+#: carrier-separator
+msgid ",Ȁ"
+msgstr ""
+
 #. # Modal Dialogs
 #: replace-draft
 msgid "Replace existing Draft"
@@ -449,16 +472,18 @@ msgstr "Alaa ɓatakuuje"
 msgid "Start communicating now"
 msgstr "Fuɗɗo jokkondireede jooni"
 
-#: sendGeneralErrorTitle
-msgid "Service currently unavailable"
-msgstr "Carwol heɓotaako oo sahaa"
+#: sendDefaultErrorTitle
+#, fuzzy
+msgid "Message not sent"
+msgstr "Ɓatakuru yiytaaka"
 
-#: sendGeneralErrorBody
-msgid "Message will automatically be sent once service is available."
-msgstr "Maa ɓatakuru nelde e jaajol tuma nde carwol waɗti heɓaade."
+#: sendDefaultErrorBody
+msgid "There was a problem sending the message. Please try again."
+msgstr ""
 
-#: sendGeneralErrorBtnOk
-msgctxt "sendGeneralErrorBtnOk"
+#: sendDefaultErrorBtnOk
+#, fuzzy
+msgctxt "sendDefaultErrorBtnOk"
 msgid "OK"
 msgstr "OK"
 
@@ -488,60 +513,57 @@ msgctxt "sendFlightModeBtnOk"
 msgid "OK"
 msgstr "OK"
 
-#: fdnBlockedTitle
+#: fdnBlocked2Title
 msgid "FDN active"
 msgstr "FDN ena hurmi"
 
-#: fdnBlockedBody.innerHTML
-msgctxt "fdnBlockedBody.innerHTML"
+#. #LOCALIZATION NOTE (fdnBlocked2Body): the English translation does not need the
+#. # actual number of phone numbers. If your translation needs it, you can still add it
+#. # using the parameter {{ n }}. Also take into account that you could add HTML so be
+#. # careful with the content, it may affect to the whole app.
+#: fdnBlocked2Body.innerHTML
+#, fuzzy
+msgctxt "fdnBlocked2Body.innerHTML"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: fdnBlockedBody.innerHTML[one]
+#: fdnBlocked2Body.innerHTML[one]
 msgid ""
-"FDN is enabled and the following recipient is not in your FDN list:<br /"
-">{{ numbers }}"
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipient are in your FDN list:<br />{{ numbers }}"
 msgstr ""
-"FDN ena hurmi tee oo-ɗoo neldeteeɗo alaa e doggol FDN maa:<br />{{ numbers }}"
 
-#: fdnBlockedBody.innerHTML[two]
-msgctxt "fdnBlockedBody.innerHTML[two]"
+#: fdnBlocked2Body.innerHTML[two]
+msgctxt "fdnBlocked2Body.innerHTML[two]"
 msgid ""
-"FDN is enabled and the following recipients are not in your FDN list:<br /"
-">{{ numbers }}"
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipients are in your FDN list:<br />{{ numbers }}"
 msgstr ""
-"FDN ena hurmi tee ɓee-ɗoo neldeteeɓe ngalaa e doggol FDN maa:<br /"
-">{{ numbers }}"
 
-#: fdnBlockedBody.innerHTML[few]
-msgctxt "fdnBlockedBody.innerHTML[few]"
+#: fdnBlocked2Body.innerHTML[few]
+msgctxt "fdnBlocked2Body.innerHTML[few]"
 msgid ""
-"FDN is enabled and the following recipients are not in your FDN list:<br /"
-">{{ numbers }}"
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipients are in your FDN list:<br />{{ numbers }}"
 msgstr ""
-"FDN ena hurmi tee ɓee-ɗoo neldeteeɓe ngalaa e doggol FDN maa:<br /"
-">{{ numbers }}"
 
-#: fdnBlockedBody.innerHTML[many]
-msgctxt "fdnBlockedBody.innerHTML[many]"
+#: fdnBlocked2Body.innerHTML[many]
+msgctxt "fdnBlocked2Body.innerHTML[many]"
 msgid ""
-"FDN is enabled and the following recipients are not in your FDN list:<br /"
-">{{ numbers }}"
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipients are in your FDN list:<br />{{ numbers }}"
 msgstr ""
-"FDN ena hurmi tee ɓee-ɗoo neldeteeɓe ngalaa e doggol FDN maa:<br /"
-">{{ numbers }}"
 
-#: fdnBlockedBody.innerHTML[other]
-msgctxt "fdnBlockedBody.innerHTML[other]"
+#: fdnBlocked2Body.innerHTML[other]
+msgctxt "fdnBlocked2Body.innerHTML[other]"
 msgid ""
-"FDN is enabled and the following recipients are not in your FDN list:<br /"
-">{{ numbers }}"
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipients are in your FDN list:<br />{{ numbers }}"
 msgstr ""
-"FDN ena hurmi tee ɓee-ɗoo neldeteeɓe ngalaa e doggol FDN maa:<br /"
-">{{ numbers }}"
 
-#: fdnBlockedBtnOk
-msgctxt "fdnBlockedBtnOk"
+#: fdnBlocked2BtnOk
+#, fuzzy
+msgctxt "fdnBlocked2BtnOk"
 msgid "OK"
 msgstr "OK"
 
@@ -816,8 +838,49 @@ msgstr "nana aawtoo"
 msgid "untitled"
 msgstr "alaa tiitoonde"
 
-#: file-too-large
-msgid "The file you have selected is too large"
+#. # LOCALIZATION NOTE (files-too-large): the English translation does not need the
+#. # actual number of files. If your translation needs it, you can still add it
+#. # using the parameter {{ n }}.
+#: files-too-large
+#, fuzzy
+msgctxt "files-too-large"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: files-too-large[zero]
+#, fuzzy
+msgctxt "files-too-large[zero]"
+msgid "The file you have selected is too large."
+msgstr "Fiilde labi-ɗaa ndee ena mawni haa wooroo"
+
+#: files-too-large[one]
+#, fuzzy
+msgctxt "files-too-large[one]"
+msgid "The file you have selected is too large."
+msgstr "Fiilde labi-ɗaa ndee ena mawni haa wooroo"
+
+#: files-too-large[two]
+#, fuzzy
+msgctxt "files-too-large[two]"
+msgid "The files you have selected are too large."
+msgstr "Fiilde labi-ɗaa ndee ena mawni haa wooroo"
+
+#: files-too-large[few]
+#, fuzzy
+msgctxt "files-too-large[few]"
+msgid "The files you have selected are too large."
+msgstr "Fiilde labi-ɗaa ndee ena mawni haa wooroo"
+
+#: files-too-large[many]
+#, fuzzy
+msgctxt "files-too-large[many]"
+msgid "The files you have selected are too large."
+msgstr "Fiilde labi-ɗaa ndee ena mawni haa wooroo"
+
+#: files-too-large[other]
+#, fuzzy
+msgctxt "files-too-large[other]"
+msgid "The files you have selected are too large."
 msgstr "Fiilde labi-ɗaa ndee ena mawni haa wooroo"
 
 #: resize-image
@@ -841,6 +904,59 @@ msgstr "SIM{{id}}"
 #: dsds-notification-title-with-sim
 msgid "({{sim}}) {{sender}}"
 msgstr "({{sim}}) {{sender}}"
+
+#~ msgid "Service currently unavailable"
+#~ msgstr "Carwol heɓotaako oo sahaa"
+
+#~ msgid "Message will automatically be sent once service is available."
+#~ msgstr "Maa ɓatakuru nelde e jaajol tuma nde carwol waɗti heɓaade."
+
+#~ msgctxt "fdnBlockedBody.innerHTML"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgid ""
+#~ "FDN is enabled and the following recipient is not in your FDN list:<br /"
+#~ ">{{ numbers }}"
+#~ msgstr ""
+#~ "FDN ena hurmi tee oo-ɗoo neldeteeɗo alaa e doggol FDN maa:<br /"
+#~ ">{{ numbers }}"
+
+#~ msgctxt "fdnBlockedBody.innerHTML[two]"
+#~ msgid ""
+#~ "FDN is enabled and the following recipients are not in your FDN list:<br /"
+#~ ">{{ numbers }}"
+#~ msgstr ""
+#~ "FDN ena hurmi tee ɓee-ɗoo neldeteeɓe ngalaa e doggol FDN maa:<br /"
+#~ ">{{ numbers }}"
+
+#~ msgctxt "fdnBlockedBody.innerHTML[few]"
+#~ msgid ""
+#~ "FDN is enabled and the following recipients are not in your FDN list:<br /"
+#~ ">{{ numbers }}"
+#~ msgstr ""
+#~ "FDN ena hurmi tee ɓee-ɗoo neldeteeɓe ngalaa e doggol FDN maa:<br /"
+#~ ">{{ numbers }}"
+
+#~ msgctxt "fdnBlockedBody.innerHTML[many]"
+#~ msgid ""
+#~ "FDN is enabled and the following recipients are not in your FDN list:<br /"
+#~ ">{{ numbers }}"
+#~ msgstr ""
+#~ "FDN ena hurmi tee ɓee-ɗoo neldeteeɓe ngalaa e doggol FDN maa:<br /"
+#~ ">{{ numbers }}"
+
+#~ msgctxt "fdnBlockedBody.innerHTML[other]"
+#~ msgid ""
+#~ "FDN is enabled and the following recipients are not in your FDN list:<br /"
+#~ ">{{ numbers }}"
+#~ msgstr ""
+#~ "FDN ena hurmi tee ɓee-ɗoo neldeteeɓe ngalaa e doggol FDN maa:<br /"
+#~ ">{{ numbers }}"
+
+#~ msgctxt "fdnBlockedBtnOk"
+#~ msgid "OK"
+#~ msgstr "OK"
 
 #~ msgid "Edit messages"
 #~ msgstr "Taƴto ɓatakuuje"

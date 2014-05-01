@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-30 17:44+0100\n"
+"POT-Creation-Date: 2014-05-01 15:24+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,10 +17,6 @@ msgstr ""
 #: add
 msgid "Add"
 msgstr "新增"
-
-#: back
-msgid "Back"
-msgstr "上一頁"
 
 #: call
 msgid "Call"
@@ -52,6 +48,8 @@ msgstr "重試"
 
 #. # Menus and dialog strings
 #: contacts
+#, fuzzy
+msgctxt "contacts"
 msgid "Contacts"
 msgstr "聯絡人"
 
@@ -184,6 +182,11 @@ msgstr "自訂"
 
 #: date
 msgctxt "date"
+msgid "Date"
+msgstr ""
+
+#: date-span-placeholder
+msgctxt "date-span-placeholder"
 msgid "Date"
 msgstr ""
 
@@ -549,10 +552,6 @@ msgctxt "simContacts-imported3[other]"
 msgid "Imported {{n}} contacts"
 msgstr "已匯入 {{n}} 位聯絡人"
 
-#: noSimMsg
-msgid "To import contacts insert or unlock your SIM card"
-msgstr "請插入或解鎖 SIM 卡以匯入聯絡人"
-
 #: noSimMsgExport
 msgid "To export contacts insert or unlock your SIM card"
 msgstr "要匯出聯絡人，請插入或解鎖您的 SIM 卡"
@@ -611,10 +610,6 @@ msgstr "已匯入 {{n}} 位聯絡人"
 msgctxt "memoryCardContacts-imported3[other]"
 msgid "Imported {{n}} contacts"
 msgstr "已匯入 {{n}} 位聯絡人"
-
-#: noMemoryCardMsg
-msgid "To import contacts insert a memory card"
-msgstr "請插入記憶卡以匯入聯絡人"
 
 #: noMemoryCardMsgExport
 msgid "To export contacts insert a memory card"
@@ -724,11 +719,6 @@ msgctxt "importSim2"
 msgid "SIM card"
 msgstr "SIM 卡"
 
-#: importMemoryCard
-msgctxt "importMemoryCard"
-msgid "Memory card"
-msgstr "記憶卡"
-
 #: importGmail
 msgid "Gmail"
 msgstr "Gmail"
@@ -761,10 +751,6 @@ msgstr "移除所有 Facebook 資料？"
 msgid "Your password in Facebook has changed. Please, update it."
 msgstr "您的 Facebook 密碼已更動。請更新。"
 
-#: noConnection11
-msgid "To import Facebook friends or contacts connect to Wi-Fi or data network"
-msgstr "請先連線到 Wi-Fi 或數據網路以匯入 Facebook 朋友或聯絡人"
-
 #: notEnabledYet
 msgid "Not enabled yet"
 msgstr "未啟用"
@@ -780,7 +766,7 @@ msgid "SIM card"
 msgstr "SIM 卡"
 
 #: memoryCard
-msgctxt "memoryCard"
+#, fuzzy
 msgid "Memory card"
 msgstr "記憶卡"
 
@@ -838,7 +824,8 @@ msgid "SIM Card is full"
 msgstr "SIM 卡已滿"
 
 #: exportError-SIM-CannotAccessPhoneBook
-msgid "Cannot access SIM card's phone book"
+#, fuzzy
+msgid "Cannot access SIM card’s phone book"
 msgstr "無法存取 SIM 卡通訊錄"
 
 #: exportError-SIM-Unavailable
@@ -848,3 +835,149 @@ msgstr "未偵測到 SIM 卡"
 #: exportError-SIM-GenericError
 msgid "An error occurred while exporting a contact"
 msgstr "匯出聯絡人時發生錯誤"
+
+#: ContactManagementTitle
+msgid "Contacts Management"
+msgstr ""
+
+#: DeleteTitle
+msgid "Delete"
+msgstr ""
+
+#: bulkDeleteButton
+#, fuzzy
+msgid "Delete Contacts"
+msgstr "刪除聯絡人"
+
+#: BulkDelCancel
+msgid "Contacts delete cancelled"
+msgstr ""
+
+#: DeletedTxt
+#, fuzzy
+msgctxt "DeletedTxt"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: DeletedTxt[zero]
+msgctxt "DeletedTxt[zero]"
+msgid "No Contact to Delete"
+msgstr ""
+
+#: DeletedTxt[one]
+msgid "1 Contact removed"
+msgstr ""
+
+#: DeletedTxt[two]
+msgctxt "DeletedTxt[two]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletedTxt[few]
+msgctxt "DeletedTxt[few]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletedTxt[many]
+msgctxt "DeletedTxt[many]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletedTxt[other]
+msgctxt "DeletedTxt[other]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletingContacts
+#, fuzzy
+msgid "Deleting contacts"
+msgstr "刪除聯絡人"
+
+#: ContactConfirmDel
+#, fuzzy
+msgctxt "ContactConfirmDel"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: ContactConfirmDel[zero]
+msgctxt "ContactConfirmDel[zero]"
+msgid "No Contact to Delete"
+msgstr ""
+
+#: ContactConfirmDel[one]
+msgid "Delete 1 Contact? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[two]
+msgctxt "ContactConfirmDel[two]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[few]
+msgctxt "ContactConfirmDel[few]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[many]
+msgctxt "ContactConfirmDel[many]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[other]
+msgctxt "ContactConfirmDel[other]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: SelectedTxt
+#, fuzzy
+msgctxt "SelectedTxt"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: SelectedTxt[zero]
+#, fuzzy
+msgctxt "SelectedTxt[zero]"
+msgid "Contacts"
+msgstr "聯絡人"
+
+#: SelectedTxt[one]
+msgctxt "SelectedTxt[one]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[two]
+msgctxt "SelectedTxt[two]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[few]
+msgctxt "SelectedTxt[few]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[many]
+msgctxt "SelectedTxt[many]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[other]
+msgctxt "SelectedTxt[other]"
+msgid "{{n}} selected"
+msgstr ""
+
+#~ msgid "Back"
+#~ msgstr "上一頁"
+
+#~ msgid "To import contacts insert or unlock your SIM card"
+#~ msgstr "請插入或解鎖 SIM 卡以匯入聯絡人"
+
+#~ msgid "To import contacts insert a memory card"
+#~ msgstr "請插入記憶卡以匯入聯絡人"
+
+#~ msgid ""
+#~ "To import Facebook friends or contacts connect to Wi-Fi or data network"
+#~ msgstr "請先連線到 Wi-Fi 或數據網路以匯入 Facebook 朋友或聯絡人"
+
+#~ msgctxt "memoryCard"
+#~ msgid "Memory card"
+#~ msgstr "記憶卡"

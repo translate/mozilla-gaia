@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-30 17:44+0100\n"
+"POT-Creation-Date: 2014-05-01 15:24+0100\n"
 "PO-Revision-Date: 2014-04-01 15:17+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -176,7 +176,7 @@ msgctxt "composeMessage.dataset.placeholder"
 msgid "Message"
 msgstr "Teachdaireachd"
 
-#: composeSubject.placeholder
+#: composeSubject.dataset.placeholder
 msgid "Subject"
 msgstr "Cuspair"
 
@@ -196,10 +196,11 @@ msgstr "Chan fhaod e a bhith nas fhaide na seo."
 msgid "Maximum length of subject reached."
 msgstr "Tha an cuspair cho fad 's a tha ceadaichte."
 
-#: messages-exceeded-length-text
+#: message-exceeded-max-length
+#, fuzzy
 msgid ""
-"You’ve exceeded the maximum length. Remove special characters or shorten the "
-"message to send it."
+"You’ve exceeded the maximum size. Remove attachments or shorten the message "
+"to send it."
 msgstr ""
 "Tha e nas fhaide na tha ceadaichte. Thoir air falbh caractaran sònraichte no "
 "dèan an teachdaireachd nas giorra mus cuir thu e."
@@ -396,6 +397,28 @@ msgstr "Neo-aithnichte"
 msgid "Carrier unknown"
 msgstr "Giùlanair neo-aithnichte"
 
+#. # LOCALIZATION NOTE(thread-header): parameters in this string will be replaced
+#. # at runtime. {{numberType}} is the label associated to the number ('work',
+#. # 'home', etc.), {{numberDetail}} is either the phone number or the carrier's
+#. # name. Resulting example for en-US: "mobile | +123456789", "mobile | Verizon".
+#: thread-header
+msgid "{{numberType}} | {{numberDetail}}"
+msgstr ""
+
+#. # LOCALIZATION NOTE(thread-separator): used to separate type/carrier from
+#. # the number itself. It should be consistent with the characters used in
+#. # "thread- header", \u20 is a blank space (\u20|\u20 is equivalent to " | ").
+#: thread-separator
+msgid "Ȁu20"
+msgstr ""
+
+#. # LOCALIZATION NOTE(carrier-separator): used to separate carrier's name from
+#. # the number itself. \u20 is a blank space. Resulting example for en-US:
+#. # "Verizon, +123456789".
+#: carrier-separator
+msgid ",Ȁ"
+msgstr ""
+
 #. # Modal Dialogs
 #: replace-draft
 msgid "Replace existing Draft"
@@ -458,18 +481,18 @@ msgstr "Gun teachdaireachdan"
 msgid "Start communicating now"
 msgstr "Tòisich air seanachas an-dràsta"
 
-#: sendGeneralErrorTitle
-msgid "Service currently unavailable"
-msgstr "Chan eil an t-seirbheis ri làimh an-dràsta fhèin"
+#: sendDefaultErrorTitle
+#, fuzzy
+msgid "Message not sent"
+msgstr "Cha deach an teachdaireachd a lorg"
 
-#: sendGeneralErrorBody
-msgid "Message will automatically be sent once service is available."
+#: sendDefaultErrorBody
+msgid "There was a problem sending the message. Please try again."
 msgstr ""
-"Thèid an teachdaireachd a chur gu fèin-obrachail turas a bhios an t-"
-"seirbheis ri làimh."
 
-#: sendGeneralErrorBtnOk
-msgctxt "sendGeneralErrorBtnOk"
+#: sendDefaultErrorBtnOk
+#, fuzzy
+msgctxt "sendDefaultErrorBtnOk"
 msgid "OK"
 msgstr "Ceart ma-thà"
 
@@ -499,61 +522,57 @@ msgctxt "sendFlightModeBtnOk"
 msgid "OK"
 msgstr "Ceart ma-thà"
 
-#: fdnBlockedTitle
+#: fdnBlocked2Title
 msgid "FDN active"
 msgstr "FDN gnìomhach"
 
-#: fdnBlockedBody.innerHTML
-msgctxt "fdnBlockedBody.innerHTML"
+#. #LOCALIZATION NOTE (fdnBlocked2Body): the English translation does not need the
+#. # actual number of phone numbers. If your translation needs it, you can still add it
+#. # using the parameter {{ n }}. Also take into account that you could add HTML so be
+#. # careful with the content, it may affect to the whole app.
+#: fdnBlocked2Body.innerHTML
+#, fuzzy
+msgctxt "fdnBlocked2Body.innerHTML"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: fdnBlockedBody.innerHTML[one]
+#: fdnBlocked2Body.innerHTML[one]
 msgid ""
-"FDN is enabled and the following recipient is not in your FDN list:<br /"
-">{{ numbers }}"
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipient are in your FDN list:<br />{{ numbers }}"
 msgstr ""
-"Tha FDN an comas agus chan eil an {{n}} fhaightear a leanas air an liosta "
-"FDN agad:<br />{{ numbers }}"
 
-#: fdnBlockedBody.innerHTML[two]
-msgctxt "fdnBlockedBody.innerHTML[two]"
+#: fdnBlocked2Body.innerHTML[two]
+msgctxt "fdnBlocked2Body.innerHTML[two]"
 msgid ""
-"FDN is enabled and the following recipients are not in your FDN list:<br /"
-">{{ numbers }}"
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipients are in your FDN list:<br />{{ numbers }}"
 msgstr ""
-"Tha FDN an comas agus chan eil an {{n}} fhaightear a leanas air an liosta "
-"FDN agad:<br />{{ numbers }}"
 
-#: fdnBlockedBody.innerHTML[few]
-msgctxt "fdnBlockedBody.innerHTML[few]"
+#: fdnBlocked2Body.innerHTML[few]
+msgctxt "fdnBlocked2Body.innerHTML[few]"
 msgid ""
-"FDN is enabled and the following recipients are not in your FDN list:<br /"
-">{{ numbers }}"
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipients are in your FDN list:<br />{{ numbers }}"
 msgstr ""
-"Tha FDN an comas agus chan eil na {{n}} faightearan a leanas air an liosta "
-"FDN agad:<br />{{ numbers }}"
 
-#: fdnBlockedBody.innerHTML[many]
-msgctxt "fdnBlockedBody.innerHTML[many]"
+#: fdnBlocked2Body.innerHTML[many]
+msgctxt "fdnBlocked2Body.innerHTML[many]"
 msgid ""
-"FDN is enabled and the following recipients are not in your FDN list:<br /"
-">{{ numbers }}"
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipients are in your FDN list:<br />{{ numbers }}"
 msgstr ""
-"Tha FDN an comas agus chan eil an {{n}} faightear a leanas air an liosta FDN "
-"agad:<br />{{ numbers }}"
 
-#: fdnBlockedBody.innerHTML[other]
-msgctxt "fdnBlockedBody.innerHTML[other]"
+#: fdnBlocked2Body.innerHTML[other]
+msgctxt "fdnBlocked2Body.innerHTML[other]"
 msgid ""
-"FDN is enabled and the following recipients are not in your FDN list:<br /"
-">{{ numbers }}"
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipients are in your FDN list:<br />{{ numbers }}"
 msgstr ""
-"Tha FDN an comas agus chan eil an {{n}} faightear a leanas air an liosta FDN "
-"agad:<br />{{ numbers }}"
 
-#: fdnBlockedBtnOk
-msgctxt "fdnBlockedBtnOk"
+#: fdnBlocked2BtnOk
+#, fuzzy
+msgctxt "fdnBlocked2BtnOk"
 msgid "OK"
 msgstr "Ceart ma-thà"
 
@@ -832,8 +851,49 @@ msgstr "'ga luchdadh a-nuas"
 msgid "untitled"
 msgstr "gun tiotal"
 
-#: file-too-large
-msgid "The file you have selected is too large"
+#. # LOCALIZATION NOTE (files-too-large): the English translation does not need the
+#. # actual number of files. If your translation needs it, you can still add it
+#. # using the parameter {{ n }}.
+#: files-too-large
+#, fuzzy
+msgctxt "files-too-large"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: files-too-large[zero]
+#, fuzzy
+msgctxt "files-too-large[zero]"
+msgid "The file you have selected is too large."
+msgstr "Tha am faidhle a thagh thu ro mhòr"
+
+#: files-too-large[one]
+#, fuzzy
+msgctxt "files-too-large[one]"
+msgid "The file you have selected is too large."
+msgstr "Tha am faidhle a thagh thu ro mhòr"
+
+#: files-too-large[two]
+#, fuzzy
+msgctxt "files-too-large[two]"
+msgid "The files you have selected are too large."
+msgstr "Tha am faidhle a thagh thu ro mhòr"
+
+#: files-too-large[few]
+#, fuzzy
+msgctxt "files-too-large[few]"
+msgid "The files you have selected are too large."
+msgstr "Tha am faidhle a thagh thu ro mhòr"
+
+#: files-too-large[many]
+#, fuzzy
+msgctxt "files-too-large[many]"
+msgid "The files you have selected are too large."
+msgstr "Tha am faidhle a thagh thu ro mhòr"
+
+#: files-too-large[other]
+#, fuzzy
+msgctxt "files-too-large[other]"
+msgid "The files you have selected are too large."
 msgstr "Tha am faidhle a thagh thu ro mhòr"
 
 #: resize-image
@@ -858,6 +918,61 @@ msgstr "SIM{{id}}"
 #: dsds-notification-title-with-sim
 msgid "({{sim}}) {{sender}}"
 msgstr "({{sim}}) {{sender}}"
+
+#~ msgid "Service currently unavailable"
+#~ msgstr "Chan eil an t-seirbheis ri làimh an-dràsta fhèin"
+
+#~ msgid "Message will automatically be sent once service is available."
+#~ msgstr ""
+#~ "Thèid an teachdaireachd a chur gu fèin-obrachail turas a bhios an t-"
+#~ "seirbheis ri làimh."
+
+#~ msgctxt "fdnBlockedBody.innerHTML"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgid ""
+#~ "FDN is enabled and the following recipient is not in your FDN list:<br /"
+#~ ">{{ numbers }}"
+#~ msgstr ""
+#~ "Tha FDN an comas agus chan eil an {{n}} fhaightear a leanas air an liosta "
+#~ "FDN agad:<br />{{ numbers }}"
+
+#~ msgctxt "fdnBlockedBody.innerHTML[two]"
+#~ msgid ""
+#~ "FDN is enabled and the following recipients are not in your FDN list:<br /"
+#~ ">{{ numbers }}"
+#~ msgstr ""
+#~ "Tha FDN an comas agus chan eil an {{n}} fhaightear a leanas air an liosta "
+#~ "FDN agad:<br />{{ numbers }}"
+
+#~ msgctxt "fdnBlockedBody.innerHTML[few]"
+#~ msgid ""
+#~ "FDN is enabled and the following recipients are not in your FDN list:<br /"
+#~ ">{{ numbers }}"
+#~ msgstr ""
+#~ "Tha FDN an comas agus chan eil na {{n}} faightearan a leanas air an "
+#~ "liosta FDN agad:<br />{{ numbers }}"
+
+#~ msgctxt "fdnBlockedBody.innerHTML[many]"
+#~ msgid ""
+#~ "FDN is enabled and the following recipients are not in your FDN list:<br /"
+#~ ">{{ numbers }}"
+#~ msgstr ""
+#~ "Tha FDN an comas agus chan eil an {{n}} faightear a leanas air an liosta "
+#~ "FDN agad:<br />{{ numbers }}"
+
+#~ msgctxt "fdnBlockedBody.innerHTML[other]"
+#~ msgid ""
+#~ "FDN is enabled and the following recipients are not in your FDN list:<br /"
+#~ ">{{ numbers }}"
+#~ msgstr ""
+#~ "Tha FDN an comas agus chan eil an {{n}} faightear a leanas air an liosta "
+#~ "FDN agad:<br />{{ numbers }}"
+
+#~ msgctxt "fdnBlockedBtnOk"
+#~ msgid "OK"
+#~ msgstr "Ceart ma-thà"
 
 #~ msgid "Read report:"
 #~ msgstr "Aithisg leughaidh:"

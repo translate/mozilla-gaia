@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-14 09:44+0100\n"
+"POT-Creation-Date: 2014-05-01 15:24+0100\n"
 "PO-Revision-Date: 2014-03-05 15:48+0000\n"
 "Last-Translator: Belayet <bellayet@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1442,7 +1442,8 @@ msgid "Confirmation"
 msgstr "নিশ্চিতকরণ"
 
 #: device-option-unpair-device
-msgid "Unpair Device?"
+#, fuzzy
+msgid "Unpair device?"
 msgstr "ডিভাইস আলাদা করতে চান?"
 
 #: device-option-connect
@@ -1792,6 +1793,10 @@ msgstr "অ্যালার্ম"
 msgid "Ringer & Notifications"
 msgstr "রিঙ্গার ও নোটিফিকেশন"
 
+#: media-sound
+msgid "Media"
+msgstr ""
+
 #: voice-sound
 msgid "Voice"
 msgstr "কণ্ঠস্বর"
@@ -1969,6 +1974,11 @@ msgstr "SIM ব্যবস্থাপক"
 msgid "{{simManager}}"
 msgstr "{{simManager}}"
 
+#: simSettings
+#, fuzzy
+msgid "SIM settings"
+msgstr "এমএমএস সেটিংস"
+
 #: sim-manager-outgoing-calls
 #, fuzzy
 msgid "Outgoing calls"
@@ -1991,10 +2001,9 @@ msgctxt "sim-manager-outgoing-data"
 msgid "Data"
 msgstr "ডাটা"
 
-#: sim-manager-outgoing-data-desc-new
-msgid ""
-"Internet connection, MMS, A-GPS and Marketplace payments will be sent from"
-msgstr "ইন্টারনেট সংযোগ, এমএমএস, এ-জিপিএস এবং মার্কেটপ্লেস পেমেন্ট প্রেরিত হবে"
+#: sim-manager-outgoing-data-description
+msgid "Data service network and Marketplace payments"
+msgstr ""
 
 #: sim-manager-always-ask
 msgid "Always ask"
@@ -2131,19 +2140,120 @@ msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr "{{appName}} {{layoutName}} পূর্বনির্ধারিত ইনপুট মেথড হিসেবে সেট হয়েছে"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#. # Accounts (N/A)
+#. # Accounts
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#: fxa
+msgctxt "fxa"
+msgid "Firefox Accounts"
+msgstr ""
+
 #: accounts
-msgid "Accounts"
-msgstr "অ্যাকাউন্ট"
+msgid "Account Management"
+msgstr ""
 
-#: persona
-msgid "Persona"
-msgstr "পার্সোনা"
+#: fxa-accounts
+msgctxt "fxa-accounts"
+msgid "Firefox Accounts"
+msgstr ""
 
-#: mail
-msgid "Mail"
-msgstr "মেইল"
+#. # LOCALIZATION NOTE (fxa-accounts-header): if you leave the original
+#. # en-US value "{{fxa-accounts}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "fxa-accounts".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: fxa-accounts-header
+msgid "{{fxa-accounts}}"
+msgstr ""
+
+#. # Panel: logged out
+#: fxa-overview
+msgid ""
+"Your Firefox Account lets you use features like Find My Device and apps like "
+"the Firefox Marketplace."
+msgstr ""
+
+#: fxa-invitation
+msgid "Create account or sign in"
+msgstr ""
+
+#. # Panel: logged in, unverified
+#: fxa-confirm-account
+msgid "Confirm Your Account"
+msgstr ""
+
+#: fxa-verification-email-sent-msg
+msgid "We will send an email to: {{email}}"
+msgstr ""
+
+#: fxa-please-verify
+msgid "Click the verification link in your email to confirm your account."
+msgstr ""
+
+#: fxa-cancel-confirmation
+msgid "Cancel Account Confirmation"
+msgstr ""
+
+#. # Panel: logged in, verified
+#: fxa-about
+msgid "About"
+msgstr ""
+
+#: fxa-logged-in-text
+msgid "Signed in as {{email}}"
+msgstr ""
+
+#: fxa-signed-in-header
+msgid "Signed In"
+msgstr ""
+
+#: fxa-marketplace-app
+msgid "Marketplace"
+msgstr ""
+
+#: fxa-find-my-device-app
+msgctxt "fxa-find-my-device-app"
+msgid "Find My Device"
+msgstr ""
+
+#: fxa-options
+msgid "Options"
+msgstr ""
+
+#: fxa-sign-out
+msgid "Sign Out"
+msgstr ""
+
+#. # Additional menu states
+#: fxa-confirm-email
+msgid "Please confirm {{email}}"
+msgstr ""
+
+#: findmydevice
+msgctxt "findmydevice"
+msgid "Find My Device"
+msgstr ""
+
+#: findmydevice-signup-description
+msgid "Find My Device allows you to locate, lock or erase your phone"
+msgstr ""
+
+#: findmydevice-login
+msgid "Sign In or Create an Account"
+msgstr ""
+
+#: findmydevice-enable
+msgid "Enable Find My Device"
+msgstr ""
+
+#: findmydevice-about
+msgid "About Find My Device"
+msgstr ""
+
+#: findmydevice-settings-description
+msgid ""
+"Find My Device allows you to locate, lock or erase your phone from a web "
+"site:"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -2160,18 +2270,18 @@ msgstr "পাসকোড লক"
 msgid "Passcode: {{code}}"
 msgstr "পাসকোড: {{code}}"
 
-#: phoneLock
+#: screenLock
 msgid "Screen lock"
 msgstr "স্ক্রিন লক"
 
-#. # LOCALIZATION NOTE (phoneLock-header): if you leave the original
-#. # en-US value "{{phoneLock}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "phoneLock".
+#. # LOCALIZATION NOTE (screenLock-header): if you leave the original
+#. # en-US value "{{screenLock}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "screenLock".
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
-#: phoneLock-header
-msgid "{{phoneLock}}"
-msgstr "{{phoneLock}}"
+#: screenLock-header
+msgid "{{screenLock}}"
+msgstr ""
 
 #: simSecurity
 msgid "SIM security"
@@ -3085,7 +3195,7 @@ msgid "{{hud}}"
 msgstr ""
 
 #: hud-logging
-msgid "Log changes in adb"
+msgid "Log changes in ADB"
 msgstr ""
 
 #: hud-problems
@@ -3175,13 +3285,17 @@ msgstr "ডিবাগ"
 msgid "Developer Menu"
 msgstr "ডেভেলপার মেনু"
 
-#: layers-draw-borders
-msgid "Draw layers borders"
-msgstr "লেয়ারের বর্ডার আঁকুন"
+#: developer-tools
+msgid "Developer Tools"
+msgstr ""
 
-#: layers-composer2d-enabled
-msgid "Enable hardware composer"
-msgstr "হার্ডওয়্যার প্রণেতা সক্রিয় করুন"
+#: graphics
+msgid "Graphics"
+msgstr ""
+
+#: hardware-composer
+msgid "Hardware composer"
+msgstr ""
 
 #: paint-flashing
 msgid "Flash repainted area"
@@ -3191,29 +3305,34 @@ msgstr "পুনরায় রং করা অংশ ফ্লাশ কর"
 msgid "Dump layers tree"
 msgstr ""
 
-#: apz-force-enable
-msgid "Enable APZ for all content processes"
-msgstr "সব বিষয়বস্তু প্রসেস করতে APZ সক্রিয়"
+#: apz
+msgid "Async Pan/Zoom"
+msgstr ""
 
-#: layers-enable-tiles
-msgid "Layers: Enable Tiles"
-msgstr "স্তরঃ টাইলস সক্রিয় করুন"
+#: tiling
+msgid "Tiling"
+msgstr ""
 
-#: layers-simple-tiles
+#: simple-tiling
+msgid "Simple tiling"
+msgstr ""
+
+#: progressive-paint
+msgid "Progressive paint"
+msgstr ""
+
+#: draw-tile-borders
+msgid "Draw tile borders"
+msgstr ""
+
+#: draw-layer-borders
 #, fuzzy
-msgid "Layers: Simple Tiles"
-msgstr "স্তরঃ টাইলস সক্রিয় করুন"
-
-#: layers-progressive-paint
-msgid "Layers: Progressive Paint"
-msgstr "স্তরঃ প্রগতিশীল রঙ"
-
-#: layers-draw-tile-borders
-msgid "Layers: Draw Tile Borders"
-msgstr "স্তরঃ টাইলের বর্ডার নির্ধারণ করুন"
+msgid "Draw layer borders"
+msgstr "লেয়ারের বর্ডার আঁকুন"
 
 #: apz-displayport-heuristics
-msgid "Displayport Heuristics"
+#, fuzzy
+msgid "Displayport heuristics"
 msgstr "হিউরিস্টিক ডিসপ্লেপোর্ট"
 
 #: apz-heuristic-default
@@ -3245,9 +3364,13 @@ msgstr "চেকারবোরডিং নেই"
 msgid "Log slow animations"
 msgstr "মন্থর এনিমেশনগুলো লগ করুন"
 
-#: remote-debugging
-msgid "Remote debugging"
-msgstr "রিমোট ডিবাগিং"
+#: remote-debugging-usb
+msgid "Debugging via USB"
+msgstr ""
+
+#: dev-tools-wifi
+msgid "DevTools via Wi-Fi"
+msgstr ""
 
 #: debugger-disabled
 #, fuzzy
@@ -3260,7 +3383,7 @@ msgid "ADB only"
 msgstr ""
 
 #: debugger-adb-and-devtools
-msgid "ADB and Devtools"
+msgid "ADB and DevTools"
 msgstr ""
 
 #: devtools-overlay
@@ -3272,16 +3395,22 @@ msgid "Jank Threshold"
 msgstr ""
 
 #: wifi-debugging
-msgid "Wi-Fi output in adb"
+#, fuzzy
+msgid "Wi-Fi output in ADB"
 msgstr "adb তে ওয়াই-ফাই আউটপুট"
 
 #: bluetooth-debugging
-msgid "Bluetooth output in adb"
+#, fuzzy
+msgid "Bluetooth output in ADB"
 msgstr "adb তে ব্লুটুথ এর আউটপুট"
 
 #: console-enabled
 msgid "Console enabled"
 msgstr "কনসোল সক্রিয়"
+
+#: cards-view-screenshots
+msgid "Cards View: Screenshots"
+msgstr ""
 
 #: model-name
 msgid "Model"
@@ -3310,6 +3439,10 @@ msgstr "সনাক্তকারী তৈরি"
 #: update-channel
 msgid "Update channel"
 msgstr "হালনাগাদ চ্যানেলে"
+
+#: update-url
+msgid "Update URL"
+msgstr ""
 
 #: last-updated
 msgid "Last Updated"
@@ -3573,7 +3706,8 @@ msgid "Apache License 2.0"
 msgstr "অ্যাপাচি লাইসেন্স ২.০"
 
 #: launch-ftu
-msgid "Launch first time use"
+#, fuzzy
+msgid "Launch First Time Use"
 msgstr "প্রথমবার ব্যাবহারের মত করুন"
 
 #: no-ftu
@@ -3584,32 +3718,32 @@ msgstr "প্রথমবার মত ব্যবহার করা কো�
 msgid "Rocketbar enabled"
 msgstr ""
 
-#: software-button-enabled
-msgid "Enable software home button"
-msgstr "সফটওয়্যার হোম বাটন সক্রিয়"
+#: software-home-button
+msgid "Software home button"
+msgstr ""
 
-#: homegesture-enabled
-msgid "Home gesture enabled"
-msgstr "হোম গেসচার সক্রিয় আছে"
+#: home-gesture
+msgid "Home gesture"
+msgstr ""
 
-#: edgesgesture-enabled
-msgid "Edges gesture enabled"
-msgstr "এজ গেসচার সক্রিয়"
+#: edges-gesture
+msgid "Edges gesture"
+msgstr ""
 
-#: continuoustransition-enabled
-msgid "Continuous transition enabled"
+#: continuous-transition
+msgid "Continuous transition"
 msgstr ""
 
 #: debug-gaia-enabled
 msgid "Gaia debug traces"
 msgstr "গায়া ডিবাগ ট্রেসেস"
 
-#: enable-app-transition
-msgid "App transition enabled"
+#: app-transition
+msgid "App transition"
 msgstr ""
 
-#: enable-app-suspending
-msgid "Keep killed app in task manager"
+#: app-suspending
+msgid "App suspending"
 msgstr ""
 
 #: window-management
@@ -3714,6 +3848,14 @@ msgstr ""
 msgid ""
 "When the screen reader is enabled, your device will provide spoken feedback "
 "to assist blind and low-vision users."
+msgstr ""
+
+#: screen-reader-speech-volume
+msgid "Speech Volume"
+msgstr ""
+
+#: screen-reader-speech-rate
+msgid "Speech Rate"
 msgstr ""
 
 #: screenReader-confirm-title-start
@@ -4081,6 +4223,53 @@ msgstr "ডাটা প্রেরণ"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "চ্যানেলের অবস্থা দেখুন"
+
+#~ msgid ""
+#~ "Internet connection, MMS, A-GPS and Marketplace payments will be sent from"
+#~ msgstr "ইন্টারনেট সংযোগ, এমএমএস, এ-জিপিএস এবং মার্কেটপ্লেস পেমেন্ট প্রেরিত হবে"
+
+#~ msgid "Accounts"
+#~ msgstr "অ্যাকাউন্ট"
+
+#~ msgid "Persona"
+#~ msgstr "পার্সোনা"
+
+#~ msgid "Mail"
+#~ msgstr "মেইল"
+
+#~ msgid "{{phoneLock}}"
+#~ msgstr "{{phoneLock}}"
+
+#~ msgid "Enable hardware composer"
+#~ msgstr "হার্ডওয়্যার প্রণেতা সক্রিয় করুন"
+
+#~ msgid "Enable APZ for all content processes"
+#~ msgstr "সব বিষয়বস্তু প্রসেস করতে APZ সক্রিয়"
+
+#~ msgid "Layers: Enable Tiles"
+#~ msgstr "স্তরঃ টাইলস সক্রিয় করুন"
+
+#, fuzzy
+#~ msgid "Layers: Simple Tiles"
+#~ msgstr "স্তরঃ টাইলস সক্রিয় করুন"
+
+#~ msgid "Layers: Progressive Paint"
+#~ msgstr "স্তরঃ প্রগতিশীল রঙ"
+
+#~ msgid "Layers: Draw Tile Borders"
+#~ msgstr "স্তরঃ টাইলের বর্ডার নির্ধারণ করুন"
+
+#~ msgid "Remote debugging"
+#~ msgstr "রিমোট ডিবাগিং"
+
+#~ msgid "Enable software home button"
+#~ msgstr "সফটওয়্যার হোম বাটন সক্রিয়"
+
+#~ msgid "Home gesture enabled"
+#~ msgstr "হোম গেসচার সক্রিয় আছে"
+
+#~ msgid "Edges gesture enabled"
+#~ msgstr "এজ গেসচার সক্রিয়"
 
 #, fuzzy
 #~ msgctxt "imsSettings-header"

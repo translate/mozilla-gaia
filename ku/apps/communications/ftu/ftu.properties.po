@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-09 19:43+0100\n"
+"POT-Creation-Date: 2014-05-01 15:24+0100\n"
 "PO-Revision-Date: 2014-01-21 08:34+0000\n"
 "Last-Translator: Amed Çeko <amedcj@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!= 1);\n"
-"X-Generator: Translate Toolkit 1.11.0\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1390293282.000000\n"
@@ -194,6 +194,31 @@ msgstr "Koda PUKê binivîse"
 msgid "Enter SPCK code"
 msgstr "Koda PUKê binivîse"
 
+#: nck1code
+#, fuzzy
+msgid "Enter NCK1 code"
+msgstr "Koda PUKê binivîse"
+
+#: nck2code
+#, fuzzy
+msgid "Enter NCK2 code"
+msgstr "Koda PUKê binivîse"
+
+#: hnckcode
+#, fuzzy
+msgid "Enter HNCK code"
+msgstr "Koda PUKê binivîse"
+
+#: rcckcode
+#, fuzzy
+msgid "Enter RCCK code"
+msgstr "Koda PUKê binivîse"
+
+#: rspckcode
+#, fuzzy
+msgid "Enter RSPCK code"
+msgstr "Koda PUKê binivîse"
+
 #: nckcodeTitle
 msgid "Enter SIM {{n}} NCK"
 msgstr ""
@@ -204,6 +229,26 @@ msgstr ""
 
 #: spckcodeTitle
 msgid "Enter SIM {{n}} SPCK"
+msgstr ""
+
+#: nck1codeTitle
+msgid "Enter SIM {{n}} NCK1"
+msgstr ""
+
+#: nck2codeTitle
+msgid "Enter SIM {{n}} NCK2"
+msgstr ""
+
+#: hnckcodeTitle
+msgid "Enter SIM {{n}} HNCK"
+msgstr ""
+
+#: rcckcodeTitle
+msgid "Enter SIM {{n}} RCCK"
+msgstr ""
+
+#: rspckcodeTitle
+msgid "Enter SIM {{n}} RSPCK"
 msgstr ""
 
 #: nckcodeLabel
@@ -218,6 +263,26 @@ msgstr ""
 msgid "SIM {{n}} SPCK"
 msgstr ""
 
+#: nck1codeLabel
+msgid "SIM {{n}} NCK1"
+msgstr ""
+
+#: nck2codeLabel
+msgid "SIM {{n}} NCK2"
+msgstr ""
+
+#: hnckcodeLabel
+msgid "SIM {{n}} HNCK"
+msgstr ""
+
+#: rcckcodeLabel
+msgid "SIM {{n}} RCCK"
+msgstr ""
+
+#: rspckcodeLabel
+msgid "SIM {{n}} RSPCK"
+msgstr ""
+
 #: type_nck
 msgid "Type your NCK code"
 msgstr ""
@@ -230,6 +295,26 @@ msgstr ""
 msgid "Type your SPCK code"
 msgstr ""
 
+#: type_nck1
+msgid "Type your NCK1 code"
+msgstr ""
+
+#: type_nck2
+msgid "Type your NCK2 code"
+msgstr ""
+
+#: type_hnck
+msgid "Type your HNCK code"
+msgstr ""
+
+#: type_rcck
+msgid "Type your RCCK code"
+msgstr ""
+
+#: type_rspck
+msgid "Type your RSPCK code"
+msgstr ""
+
 #: nckValidation
 msgid "NCK must have between 8 and 16 characters."
 msgstr ""
@@ -240,6 +325,26 @@ msgstr ""
 
 #: spckValidation
 msgid "SPCK must have between 8 and 16 characters."
+msgstr ""
+
+#: nck1Validation
+msgid "NCK1 must have between 8 and 16 characters."
+msgstr ""
+
+#: nck2Validation
+msgid "NCK2 must have between 8 and 16 characters."
+msgstr ""
+
+#: hnckValidation
+msgid "HNCK must have between 8 and 16 characters."
+msgstr ""
+
+#: rcckValidation
+msgid "RCCK must have between 8 and 16 characters."
+msgstr ""
+
+#: rspckValidation
+msgid "RSPCK must have between 8 and 16 characters."
 msgstr ""
 
 #: nckErrorMsg
@@ -690,6 +795,27 @@ msgid "You can import and edit Facebook friends anytime in Contacts settings"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#. # Fxa Intro
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#: firefox-accounts
+msgid "Firefox Accounts"
+msgstr ""
+
+#: fxa-overview.innerHTML
+msgid ""
+"A Firefox Account lets you use features like Find My Device and apps like "
+"the Firefox Marketplace."
+msgstr ""
+
+#: fxa-create-account-or-sign-in
+msgid "Create Account or Sign In"
+msgstr ""
+
+#: fxa-email-sent
+msgid "A verification link has been sent to {{email}}"
+msgstr ""
+
+#. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # About your rights
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #: about-your-rights-0
@@ -752,20 +878,15 @@ msgid ""
 "products better, faster and more responsive."
 msgstr ""
 
-#: learn-more-at
-msgid "Learn more at"
+#. # LOCALIZATION NOTE(learn-more-telemetry.innerHTML, learn-more-information.innerHTML:
+#. # {{link}} will be replaced at run-time by an active link, the URL will be
+#. # used as text for the link.
+#: learn-more-telemetry.innerHTML
+msgid "Learn more at {{link}}"
 msgstr ""
 
-#: external-telemetry.title
-msgid "Telemetry"
-msgstr ""
-
-#: learn-about-information
-msgid "Learn how Mozilla handles your information at"
-msgstr ""
-
-#: external-privacy.title
-msgid "Privacy"
+#: learn-more-information.innerHTML
+msgid "Learn how Mozilla handles your information at {{link}}"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -778,16 +899,15 @@ msgid ""
 "by keeping the power of the Web in your hands."
 msgstr ""
 
-#: learnHow
-msgid "Learn how Mozilla handles your information in our"
+#. # LOCALIZATION NOTE(learn-more-privacy.innerHTML): {{link}} will be replaced at
+#. # run-time by an active link, string "learn-more-privacy-link" will be
+#. # used as text for the link.
+#: learn-more-privacy.innerHTML
+msgid "Learn how Mozilla handles your information in our {{link}}."
 msgstr ""
 
-#: privacyPolicy
+#: learn-more-privacy-link
 msgid "privacy policy"
-msgstr ""
-
-#: privacyPolicy.title
-msgid "Privacy policy"
 msgstr ""
 
 #: aboutBrowser
@@ -915,7 +1035,7 @@ msgid "You can always swipe from the bottom edge to enter home screen."
 msgstr ""
 
 #: thatsIt2Tablet-2
-msgid "Let's do it !"
+msgid "Let’s do it!"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -950,7 +1070,7 @@ msgstr ""
 
 #: tutorial-step1-large-2
 msgid ""
-"Swipe down from top to access recent notiﬁcations, credit information and "
+"Swipe down from top to access recent notifications, credit information and "
 "settings."
 msgstr ""
 

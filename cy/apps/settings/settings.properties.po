@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-14 09:44+0100\n"
+"POT-Creation-Date: 2014-05-01 15:24+0100\n"
 "PO-Revision-Date: 2014-04-15 08:35+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1397550927.000000\n"
@@ -1428,7 +1428,8 @@ msgid "Confirmation"
 msgstr "Cadarnhad"
 
 #: device-option-unpair-device
-msgid "Unpair Device?"
+#, fuzzy
+msgid "Unpair device?"
 msgstr "Dadbaru Dyfais?"
 
 #: device-option-connect
@@ -1777,6 +1778,10 @@ msgstr "Larwm"
 msgid "Ringer & Notifications"
 msgstr "Canu a Hysbysu"
 
+#: media-sound
+msgid "Media"
+msgstr ""
+
 #: voice-sound
 msgid "Voice"
 msgstr "Llais"
@@ -1956,6 +1961,11 @@ msgstr "Rheolwr SIM"
 msgid "{{simManager}}"
 msgstr "{{simManager}}"
 
+#: simSettings
+#, fuzzy
+msgid "SIM settings"
+msgstr "Gosodiadau IMS"
+
 #: sim-manager-outgoing-calls
 msgid "Outgoing calls"
 msgstr "Galwadau allan"
@@ -1977,12 +1987,9 @@ msgctxt "sim-manager-outgoing-data"
 msgid "Data"
 msgstr "Data"
 
-#: sim-manager-outgoing-data-desc-new
-msgid ""
-"Internet connection, MMS, A-GPS and Marketplace payments will be sent from"
+#: sim-manager-outgoing-data-description
+msgid "Data service network and Marketplace payments"
 msgstr ""
-"Bydd cysylltiad â'r we, MMS, A-GPS a thaliadau'r Marketplace yn cael eu "
-"hanfon o"
 
 #: sim-manager-always-ask
 msgid "Always ask"
@@ -2120,19 +2127,120 @@ msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr "Mae {{appName}} {{layoutName}} wedi ei osod fel yr arferol"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#. # Accounts (N/A)
+#. # Accounts
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#: fxa
+msgctxt "fxa"
+msgid "Firefox Accounts"
+msgstr ""
+
 #: accounts
-msgid "Accounts"
-msgstr "Cyfrifon"
+msgid "Account Management"
+msgstr ""
 
-#: persona
-msgid "Persona"
-msgstr "Persona"
+#: fxa-accounts
+msgctxt "fxa-accounts"
+msgid "Firefox Accounts"
+msgstr ""
 
-#: mail
-msgid "Mail"
-msgstr "E-bost"
+#. # LOCALIZATION NOTE (fxa-accounts-header): if you leave the original
+#. # en-US value "{{fxa-accounts}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "fxa-accounts".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: fxa-accounts-header
+msgid "{{fxa-accounts}}"
+msgstr ""
+
+#. # Panel: logged out
+#: fxa-overview
+msgid ""
+"Your Firefox Account lets you use features like Find My Device and apps like "
+"the Firefox Marketplace."
+msgstr ""
+
+#: fxa-invitation
+msgid "Create account or sign in"
+msgstr ""
+
+#. # Panel: logged in, unverified
+#: fxa-confirm-account
+msgid "Confirm Your Account"
+msgstr ""
+
+#: fxa-verification-email-sent-msg
+msgid "We will send an email to: {{email}}"
+msgstr ""
+
+#: fxa-please-verify
+msgid "Click the verification link in your email to confirm your account."
+msgstr ""
+
+#: fxa-cancel-confirmation
+msgid "Cancel Account Confirmation"
+msgstr ""
+
+#. # Panel: logged in, verified
+#: fxa-about
+msgid "About"
+msgstr ""
+
+#: fxa-logged-in-text
+msgid "Signed in as {{email}}"
+msgstr ""
+
+#: fxa-signed-in-header
+msgid "Signed In"
+msgstr ""
+
+#: fxa-marketplace-app
+msgid "Marketplace"
+msgstr ""
+
+#: fxa-find-my-device-app
+msgctxt "fxa-find-my-device-app"
+msgid "Find My Device"
+msgstr ""
+
+#: fxa-options
+msgid "Options"
+msgstr ""
+
+#: fxa-sign-out
+msgid "Sign Out"
+msgstr ""
+
+#. # Additional menu states
+#: fxa-confirm-email
+msgid "Please confirm {{email}}"
+msgstr ""
+
+#: findmydevice
+msgctxt "findmydevice"
+msgid "Find My Device"
+msgstr ""
+
+#: findmydevice-signup-description
+msgid "Find My Device allows you to locate, lock or erase your phone"
+msgstr ""
+
+#: findmydevice-login
+msgid "Sign In or Create an Account"
+msgstr ""
+
+#: findmydevice-enable
+msgid "Enable Find My Device"
+msgstr ""
+
+#: findmydevice-about
+msgid "About Find My Device"
+msgstr ""
+
+#: findmydevice-settings-description
+msgid ""
+"Find My Device allows you to locate, lock or erase your phone from a web "
+"site:"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -2149,18 +2257,18 @@ msgstr "Clo cyfringod"
 msgid "Passcode: {{code}}"
 msgstr "Cyfringod: {{code}}"
 
-#: phoneLock
+#: screenLock
 msgid "Screen lock"
 msgstr "Clo'r sgrin"
 
-#. # LOCALIZATION NOTE (phoneLock-header): if you leave the original
-#. # en-US value "{{phoneLock}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "phoneLock".
+#. # LOCALIZATION NOTE (screenLock-header): if you leave the original
+#. # en-US value "{{screenLock}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "screenLock".
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
-#: phoneLock-header
-msgid "{{phoneLock}}"
-msgstr "{{phoneLock}}"
+#: screenLock-header
+msgid "{{screenLock}}"
+msgstr ""
 
 #: simSecurity
 msgid "SIM security"
@@ -3070,7 +3178,8 @@ msgid "{{hud}}"
 msgstr "{{hud}}"
 
 #: hud-logging
-msgid "Log changes in adb"
+#, fuzzy
+msgid "Log changes in ADB"
 msgstr "Cofnodi'r newid yn adb"
 
 #: hud-problems
@@ -3158,13 +3267,17 @@ msgstr "Dadfygio"
 msgid "Developer Menu"
 msgstr "Dewislen Datblygwr"
 
-#: layers-draw-borders
-msgid "Draw layers borders"
-msgstr "Ymylon haenau lluniadu"
+#: developer-tools
+msgid "Developer Tools"
+msgstr ""
 
-#: layers-composer2d-enabled
-msgid "Enable hardware composer"
-msgstr "Galluogi cyfansoddwr caledwedd"
+#: graphics
+msgid "Graphics"
+msgstr ""
+
+#: hardware-composer
+msgid "Hardware composer"
+msgstr ""
 
 #: paint-flashing
 msgid "Flash repainted area"
@@ -3174,28 +3287,34 @@ msgstr "Ardal ail baentiwyd gan Flash"
 msgid "Dump layers tree"
 msgstr "Coeden pecynnu haenau"
 
-#: apz-force-enable
-msgid "Enable APZ for all content processes"
-msgstr "Galluogi APZ ar gyfer prosesau cynnwys"
+#: apz
+msgid "Async Pan/Zoom"
+msgstr ""
 
-#: layers-enable-tiles
-msgid "Layers: Enable Tiles"
-msgstr "Haenau: Galluogi Teils"
+#: tiling
+msgid "Tiling"
+msgstr ""
 
-#: layers-simple-tiles
-msgid "Layers: Simple Tiles"
-msgstr "Haenau: Teils Syml"
+#: simple-tiling
+msgid "Simple tiling"
+msgstr ""
 
-#: layers-progressive-paint
-msgid "Layers: Progressive Paint"
-msgstr "Haenau: Paent Cynyddol"
+#: progressive-paint
+msgid "Progressive paint"
+msgstr ""
 
-#: layers-draw-tile-borders
-msgid "Layers: Draw Tile Borders"
-msgstr "Haenau: Borderi Teil Lluniadu"
+#: draw-tile-borders
+msgid "Draw tile borders"
+msgstr ""
+
+#: draw-layer-borders
+#, fuzzy
+msgid "Draw layer borders"
+msgstr "Ymylon haenau lluniadu"
 
 #: apz-displayport-heuristics
-msgid "Displayport Heuristics"
+#, fuzzy
+msgid "Displayport heuristics"
 msgstr "Porthdangos hewristig"
 
 #: apz-heuristic-default
@@ -3227,9 +3346,13 @@ msgstr "Dim bwrdd sgwariogu"
 msgid "Log slow animations"
 msgstr "Cofnodi animeiddio araf"
 
-#: remote-debugging
-msgid "Remote debugging"
-msgstr "Dadfygio pell"
+#: remote-debugging-usb
+msgid "Debugging via USB"
+msgstr ""
+
+#: dev-tools-wifi
+msgid "DevTools via Wi-Fi"
+msgstr ""
 
 #: debugger-disabled
 msgctxt "debugger-disabled"
@@ -3241,7 +3364,8 @@ msgid "ADB only"
 msgstr "ADB yn unig"
 
 #: debugger-adb-and-devtools
-msgid "ADB and Devtools"
+#, fuzzy
+msgid "ADB and DevTools"
 msgstr "ADB a Devtools"
 
 #: devtools-overlay
@@ -3253,16 +3377,22 @@ msgid "Jank Threshold"
 msgstr "Trothwy'r Jank"
 
 #: wifi-debugging
-msgid "Wi-Fi output in adb"
+#, fuzzy
+msgid "Wi-Fi output in ADB"
 msgstr "Allbwn diwyfr mewn adb"
 
 #: bluetooth-debugging
-msgid "Bluetooth output in adb"
+#, fuzzy
+msgid "Bluetooth output in ADB"
 msgstr "Allbwn Bluetooth yn adb"
 
 #: console-enabled
 msgid "Console enabled"
 msgstr "Galluogi'r consol"
+
+#: cards-view-screenshots
+msgid "Cards View: Screenshots"
+msgstr ""
 
 #: model-name
 msgid "Model"
@@ -3291,6 +3421,10 @@ msgstr "Enw'r Adeiladiad"
 #: update-channel
 msgid "Update channel"
 msgstr "Sianel diweddaru"
+
+#: update-url
+msgid "Update URL"
+msgstr ""
 
 #: last-updated
 msgid "Last Updated"
@@ -3558,7 +3692,8 @@ msgid "Apache License 2.0"
 msgstr "Apache License 2.0"
 
 #: launch-ftu
-msgid "Launch first time use"
+#, fuzzy
+msgid "Launch First Time Use"
 msgstr "Cychwyn defnydd cyntaf"
 
 #: no-ftu
@@ -3569,33 +3704,33 @@ msgstr "Heb ganfod apiau tro cyntaf"
 msgid "Rocketbar enabled"
 msgstr "Bar roced wedi ei alluogi"
 
-#: software-button-enabled
-msgid "Enable software home button"
-msgstr "Galluogi botwm cartref meddalwedd"
+#: software-home-button
+msgid "Software home button"
+msgstr ""
 
-#: homegesture-enabled
-msgid "Home gesture enabled"
-msgstr "Ystum cartref wedi ei alluogi"
+#: home-gesture
+msgid "Home gesture"
+msgstr ""
 
-#: edgesgesture-enabled
-msgid "Edges gesture enabled"
-msgstr "Ystum ymyl wedi ei alluogi"
+#: edges-gesture
+msgid "Edges gesture"
+msgstr ""
 
-#: continuoustransition-enabled
-msgid "Continuous transition enabled"
-msgstr "Galluogwyd newid parhaus"
+#: continuous-transition
+msgid "Continuous transition"
+msgstr ""
 
 #: debug-gaia-enabled
 msgid "Gaia debug traces"
 msgstr "Olion dadfygio Gaia"
 
-#: enable-app-transition
-msgid "App transition enabled"
-msgstr "Galluogwyd newid ap"
+#: app-transition
+msgid "App transition"
+msgstr ""
 
-#: enable-app-suspending
-msgid "Keep killed app in task manager"
-msgstr "Cadw ap wedi ei atal yn y rheolwr tasgau"
+#: app-suspending
+msgid "App suspending"
+msgstr ""
 
 #: window-management
 msgid "Window management"
@@ -3703,6 +3838,14 @@ msgid ""
 msgstr ""
 "Pan mae'r darllenydd sgrin wedi ei alluogi, bydd eich dyfais yn darparu "
 "adborth lefaru i gynorthwyo defnyddwyr dall a gwelededd isel."
+
+#: screen-reader-speech-volume
+msgid "Speech Volume"
+msgstr ""
+
+#: screen-reader-speech-rate
+msgid "Speech Rate"
+msgstr ""
 
 #: screenReader-confirm-title-start
 msgid "Start Screen Reader?"
@@ -4064,6 +4207,63 @@ msgstr "Anfon Data"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Estyn Statws Sianel"
+
+#~ msgid ""
+#~ "Internet connection, MMS, A-GPS and Marketplace payments will be sent from"
+#~ msgstr ""
+#~ "Bydd cysylltiad â'r we, MMS, A-GPS a thaliadau'r Marketplace yn cael eu "
+#~ "hanfon o"
+
+#~ msgid "Accounts"
+#~ msgstr "Cyfrifon"
+
+#~ msgid "Persona"
+#~ msgstr "Persona"
+
+#~ msgid "Mail"
+#~ msgstr "E-bost"
+
+#~ msgid "{{phoneLock}}"
+#~ msgstr "{{phoneLock}}"
+
+#~ msgid "Enable hardware composer"
+#~ msgstr "Galluogi cyfansoddwr caledwedd"
+
+#~ msgid "Enable APZ for all content processes"
+#~ msgstr "Galluogi APZ ar gyfer prosesau cynnwys"
+
+#~ msgid "Layers: Enable Tiles"
+#~ msgstr "Haenau: Galluogi Teils"
+
+#~ msgid "Layers: Simple Tiles"
+#~ msgstr "Haenau: Teils Syml"
+
+#~ msgid "Layers: Progressive Paint"
+#~ msgstr "Haenau: Paent Cynyddol"
+
+#~ msgid "Layers: Draw Tile Borders"
+#~ msgstr "Haenau: Borderi Teil Lluniadu"
+
+#~ msgid "Remote debugging"
+#~ msgstr "Dadfygio pell"
+
+#~ msgid "Enable software home button"
+#~ msgstr "Galluogi botwm cartref meddalwedd"
+
+#~ msgid "Home gesture enabled"
+#~ msgstr "Ystum cartref wedi ei alluogi"
+
+#~ msgid "Edges gesture enabled"
+#~ msgstr "Ystum ymyl wedi ei alluogi"
+
+#~ msgid "Continuous transition enabled"
+#~ msgstr "Galluogwyd newid parhaus"
+
+#~ msgid "App transition enabled"
+#~ msgstr "Galluogwyd newid ap"
+
+#~ msgid "Keep killed app in task manager"
+#~ msgstr "Cadw ap wedi ei atal yn y rheolwr tasgau"
 
 #~ msgctxt "imsSettings-header"
 #~ msgid "{{messageSettings}}"

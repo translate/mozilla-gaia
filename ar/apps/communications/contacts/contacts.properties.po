@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-30 17:44+0100\n"
+"POT-Creation-Date: 2014-05-01 15:24+0100\n"
 "PO-Revision-Date: 2014-04-16 10:07+0000\n"
 "Last-Translator: Hamzah Hammad <hohpsut@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n>=3 && "
 "n<=10 ? 3 : n>=11 && n<=99 ? 4 : 5;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1397642853.000000\n"
@@ -21,10 +21,6 @@ msgstr ""
 #: add
 msgid "Add"
 msgstr "إضافة"
-
-#: back
-msgid "Back"
-msgstr "رجوع"
 
 #: call
 msgid "Call"
@@ -56,6 +52,8 @@ msgstr "محاولة مرة أخرى"
 
 #. # Menus and dialog strings
 #: contacts
+#, fuzzy
+msgctxt "contacts"
 msgid "Contacts"
 msgstr "جهات الاتصال"
 
@@ -188,6 +186,12 @@ msgstr "مخصص"
 
 #: date
 msgctxt "date"
+msgid "Date"
+msgstr "التاريخ"
+
+#: date-span-placeholder
+#, fuzzy
+msgctxt "date-span-placeholder"
 msgid "Date"
 msgstr "التاريخ"
 
@@ -553,10 +557,6 @@ msgctxt "simContacts-imported3[other]"
 msgid "Imported {{n}} contacts"
 msgstr "تم إستيراد {{n}} أسماء"
 
-#: noSimMsg
-msgid "To import contacts insert or unlock your SIM card"
-msgstr "لاستيراد جهات الاتصال ادخل او فك قفل بطاقة SIM"
-
 #: noSimMsgExport
 msgid "To export contacts insert or unlock your SIM card"
 msgstr "لتصدير جهات الاتصال ادخل او فك قفل بطاقة SIM"
@@ -615,10 +615,6 @@ msgstr "تم إستيراد {{n}} أسماء"
 msgctxt "memoryCardContacts-imported3[other]"
 msgid "Imported {{n}} contacts"
 msgstr "تم إستيراد {{n}} أسماء"
-
-#: noMemoryCardMsg
-msgid "To import contacts insert a memory card"
-msgstr "لإستيراد جهات الإتصال أدخل بطاقة الذاكرة"
 
 #: noMemoryCardMsgExport
 msgid "To export contacts insert a memory card"
@@ -728,11 +724,6 @@ msgctxt "importSim2"
 msgid "SIM card"
 msgstr "بطاقة SIM"
 
-#: importMemoryCard
-msgctxt "importMemoryCard"
-msgid "Memory card"
-msgstr "بطاقة الذاكرة"
-
 #: importGmail
 msgid "Gmail"
 msgstr "Gmail"
@@ -765,12 +756,6 @@ msgstr "حذف جميع بيانات الفيسبوك؟"
 msgid "Your password in Facebook has changed. Please, update it."
 msgstr "تم تغيير كلمة سِّر الفيسبوك، الرجاء تحديثها."
 
-#: noConnection11
-msgid "To import Facebook friends or contacts connect to Wi-Fi or data network"
-msgstr ""
-"للقيام باستيراد أصدقائك على فيسبوك أو جهات اتصال اربط الجهاز بشبكة واي فاي "
-"أو أي شبكة بيانات"
-
 #: notEnabledYet
 msgid "Not enabled yet"
 msgstr "غير مُفعَّل حتى الان"
@@ -786,7 +771,7 @@ msgid "SIM card"
 msgstr "بطاقة SIM"
 
 #: memoryCard
-msgctxt "memoryCard"
+#, fuzzy
 msgid "Memory card"
 msgstr "بطاقة الذاكرة"
 
@@ -844,7 +829,8 @@ msgid "SIM Card is full"
 msgstr "بطاقة SIM ممتلئة"
 
 #: exportError-SIM-CannotAccessPhoneBook
-msgid "Cannot access SIM card's phone book"
+#, fuzzy
+msgid "Cannot access SIM card’s phone book"
 msgstr "لا يمكن الوصول إلى دفتر الهاتف في بطاقة SIM"
 
 #: exportError-SIM-Unavailable
@@ -854,6 +840,154 @@ msgstr "لم يتم إكتشاف SIM"
 #: exportError-SIM-GenericError
 msgid "An error occurred while exporting a contact"
 msgstr "حدث خطأ أثناء تصدير جهة الإتصال"
+
+#: ContactManagementTitle
+msgid "Contacts Management"
+msgstr ""
+
+#: DeleteTitle
+msgid "Delete"
+msgstr ""
+
+#: bulkDeleteButton
+#, fuzzy
+msgid "Delete Contacts"
+msgstr "حذف جهة اتصال"
+
+#: BulkDelCancel
+msgid "Contacts delete cancelled"
+msgstr ""
+
+#: DeletedTxt
+#, fuzzy
+msgctxt "DeletedTxt"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: DeletedTxt[zero]
+msgctxt "DeletedTxt[zero]"
+msgid "No Contact to Delete"
+msgstr ""
+
+#: DeletedTxt[one]
+msgid "1 Contact removed"
+msgstr ""
+
+#: DeletedTxt[two]
+msgctxt "DeletedTxt[two]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletedTxt[few]
+msgctxt "DeletedTxt[few]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletedTxt[many]
+msgctxt "DeletedTxt[many]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletedTxt[other]
+msgctxt "DeletedTxt[other]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletingContacts
+#, fuzzy
+msgid "Deleting contacts"
+msgstr "حذف جهة اتصال"
+
+#: ContactConfirmDel
+#, fuzzy
+msgctxt "ContactConfirmDel"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: ContactConfirmDel[zero]
+msgctxt "ContactConfirmDel[zero]"
+msgid "No Contact to Delete"
+msgstr ""
+
+#: ContactConfirmDel[one]
+msgid "Delete 1 Contact? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[two]
+msgctxt "ContactConfirmDel[two]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[few]
+msgctxt "ContactConfirmDel[few]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[many]
+msgctxt "ContactConfirmDel[many]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[other]
+msgctxt "ContactConfirmDel[other]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: SelectedTxt
+#, fuzzy
+msgctxt "SelectedTxt"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: SelectedTxt[zero]
+#, fuzzy
+msgctxt "SelectedTxt[zero]"
+msgid "Contacts"
+msgstr "جهات الاتصال"
+
+#: SelectedTxt[one]
+msgctxt "SelectedTxt[one]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[two]
+msgctxt "SelectedTxt[two]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[few]
+msgctxt "SelectedTxt[few]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[many]
+msgctxt "SelectedTxt[many]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[other]
+msgctxt "SelectedTxt[other]"
+msgid "{{n}} selected"
+msgstr ""
+
+#~ msgid "Back"
+#~ msgstr "رجوع"
+
+#~ msgid "To import contacts insert or unlock your SIM card"
+#~ msgstr "لاستيراد جهات الاتصال ادخل او فك قفل بطاقة SIM"
+
+#~ msgid "To import contacts insert a memory card"
+#~ msgstr "لإستيراد جهات الإتصال أدخل بطاقة الذاكرة"
+
+#~ msgid ""
+#~ "To import Facebook friends or contacts connect to Wi-Fi or data network"
+#~ msgstr ""
+#~ "للقيام باستيراد أصدقائك على فيسبوك أو جهات اتصال اربط الجهاز بشبكة واي "
+#~ "فاي أو أي شبكة بيانات"
+
+#~ msgctxt "memoryCard"
+#~ msgid "Memory card"
+#~ msgstr "بطاقة الذاكرة"
 
 #, fuzzy
 #~ msgid "{{ plural(exported) }}"

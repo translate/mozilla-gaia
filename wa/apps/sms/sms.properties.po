@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-30 17:44+0100\n"
+"POT-Creation-Date: 2014-05-01 15:24+0100\n"
 "PO-Revision-Date: 2013-09-17 10:26+0000\n"
 "Last-Translator: Jean <jean.cayron@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -173,7 +173,7 @@ msgctxt "composeMessage.dataset.placeholder"
 msgid "Message"
 msgstr "Messaedje"
 
-#: composeSubject.placeholder
+#: composeSubject.dataset.placeholder
 msgid "Subject"
 msgstr ""
 
@@ -194,11 +194,11 @@ msgstr "Vos avoz arivé al longueur macsimom."
 msgid "Maximum length of subject reached."
 msgstr ""
 
-#: messages-exceeded-length-text
+#: message-exceeded-max-length
 #, fuzzy
 msgid ""
-"You’ve exceeded the maximum length. Remove special characters or shorten the "
-"message to send it."
+"You’ve exceeded the maximum size. Remove attachments or shorten the message "
+"to send it."
 msgstr ""
 "Vos avoz dispassé li longueur macsimom. Oistez des caracteres sipeciås oudon-"
 "bén raptitixhoz li messaedje po l’ evoyî."
@@ -395,6 +395,28 @@ msgstr "Nén cnoxhou"
 msgid "Carrier unknown"
 msgstr "Berweteu nén cnoxhou"
 
+#. # LOCALIZATION NOTE(thread-header): parameters in this string will be replaced
+#. # at runtime. {{numberType}} is the label associated to the number ('work',
+#. # 'home', etc.), {{numberDetail}} is either the phone number or the carrier's
+#. # name. Resulting example for en-US: "mobile | +123456789", "mobile | Verizon".
+#: thread-header
+msgid "{{numberType}} | {{numberDetail}}"
+msgstr ""
+
+#. # LOCALIZATION NOTE(thread-separator): used to separate type/carrier from
+#. # the number itself. It should be consistent with the characters used in
+#. # "thread- header", \u20 is a blank space (\u20|\u20 is equivalent to " | ").
+#: thread-separator
+msgid "Ȁu20"
+msgstr ""
+
+#. # LOCALIZATION NOTE(carrier-separator): used to separate carrier's name from
+#. # the number itself. \u20 is a blank space. Resulting example for en-US:
+#. # "Verizon, +123456789".
+#: carrier-separator
+msgid ",Ȁ"
+msgstr ""
+
 #. # Modal Dialogs
 #: replace-draft
 msgid "Replace existing Draft"
@@ -450,16 +472,17 @@ msgstr "Nous messaedjes"
 msgid "Start communicating now"
 msgstr "Ataker a comuniker do côp"
 
-#: sendGeneralErrorTitle
-msgid "Service currently unavailable"
-msgstr "Siervice nén disponibe pol moumint"
+#: sendDefaultErrorTitle
+msgid "Message not sent"
+msgstr ""
 
-#: sendGeneralErrorBody
-msgid "Message will automatically be sent once service is available."
-msgstr "Li messaedje serè evoyî otomaticmint cwand li siervice serè disponibe."
+#: sendDefaultErrorBody
+msgid "There was a problem sending the message. Please try again."
+msgstr ""
 
-#: sendGeneralErrorBtnOk
-msgctxt "sendGeneralErrorBtnOk"
+#: sendDefaultErrorBtnOk
+#, fuzzy
+msgctxt "sendDefaultErrorBtnOk"
 msgid "OK"
 msgstr "I va"
 
@@ -491,53 +514,57 @@ msgctxt "sendFlightModeBtnOk"
 msgid "OK"
 msgstr "I va"
 
-#: fdnBlockedTitle
+#: fdnBlocked2Title
 msgid "FDN active"
 msgstr ""
 
-#: fdnBlockedBody.innerHTML
+#. #LOCALIZATION NOTE (fdnBlocked2Body): the English translation does not need the
+#. # actual number of phone numbers. If your translation needs it, you can still add it
+#. # using the parameter {{ n }}. Also take into account that you could add HTML so be
+#. # careful with the content, it may affect to the whole app.
+#: fdnBlocked2Body.innerHTML
 #, fuzzy
-msgctxt "fdnBlockedBody.innerHTML"
+msgctxt "fdnBlocked2Body.innerHTML"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: fdnBlockedBody.innerHTML[one]
+#: fdnBlocked2Body.innerHTML[one]
 msgid ""
-"FDN is enabled and the following recipient is not in your FDN list:<br /"
-">{{ numbers }}"
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipient are in your FDN list:<br />{{ numbers }}"
 msgstr ""
 
-#: fdnBlockedBody.innerHTML[two]
-msgctxt "fdnBlockedBody.innerHTML[two]"
+#: fdnBlocked2Body.innerHTML[two]
+msgctxt "fdnBlocked2Body.innerHTML[two]"
 msgid ""
-"FDN is enabled and the following recipients are not in your FDN list:<br /"
-">{{ numbers }}"
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipients are in your FDN list:<br />{{ numbers }}"
 msgstr ""
 
-#: fdnBlockedBody.innerHTML[few]
-msgctxt "fdnBlockedBody.innerHTML[few]"
+#: fdnBlocked2Body.innerHTML[few]
+msgctxt "fdnBlocked2Body.innerHTML[few]"
 msgid ""
-"FDN is enabled and the following recipients are not in your FDN list:<br /"
-">{{ numbers }}"
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipients are in your FDN list:<br />{{ numbers }}"
 msgstr ""
 
-#: fdnBlockedBody.innerHTML[many]
-msgctxt "fdnBlockedBody.innerHTML[many]"
+#: fdnBlocked2Body.innerHTML[many]
+msgctxt "fdnBlocked2Body.innerHTML[many]"
 msgid ""
-"FDN is enabled and the following recipients are not in your FDN list:<br /"
-">{{ numbers }}"
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipients are in your FDN list:<br />{{ numbers }}"
 msgstr ""
 
-#: fdnBlockedBody.innerHTML[other]
-msgctxt "fdnBlockedBody.innerHTML[other]"
+#: fdnBlocked2Body.innerHTML[other]
+msgctxt "fdnBlocked2Body.innerHTML[other]"
 msgid ""
-"FDN is enabled and the following recipients are not in your FDN list:<br /"
-">{{ numbers }}"
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipients are in your FDN list:<br />{{ numbers }}"
 msgstr ""
 
-#: fdnBlockedBtnOk
+#: fdnBlocked2BtnOk
 #, fuzzy
-msgctxt "fdnBlockedBtnOk"
+msgctxt "fdnBlocked2BtnOk"
 msgid "OK"
 msgstr "I va"
 
@@ -816,8 +843,49 @@ msgstr "dj’ aberwete"
 msgid "untitled"
 msgstr "sins no"
 
-#: file-too-large
-msgid "The file you have selected is too large"
+#. # LOCALIZATION NOTE (files-too-large): the English translation does not need the
+#. # actual number of files. If your translation needs it, you can still add it
+#. # using the parameter {{ n }}.
+#: files-too-large
+#, fuzzy
+msgctxt "files-too-large"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: files-too-large[zero]
+#, fuzzy
+msgctxt "files-too-large[zero]"
+msgid "The file you have selected is too large."
+msgstr "Li fitchî k’ vos avoz tchoezi est trop grand"
+
+#: files-too-large[one]
+#, fuzzy
+msgctxt "files-too-large[one]"
+msgid "The file you have selected is too large."
+msgstr "Li fitchî k’ vos avoz tchoezi est trop grand"
+
+#: files-too-large[two]
+#, fuzzy
+msgctxt "files-too-large[two]"
+msgid "The files you have selected are too large."
+msgstr "Li fitchî k’ vos avoz tchoezi est trop grand"
+
+#: files-too-large[few]
+#, fuzzy
+msgctxt "files-too-large[few]"
+msgid "The files you have selected are too large."
+msgstr "Li fitchî k’ vos avoz tchoezi est trop grand"
+
+#: files-too-large[many]
+#, fuzzy
+msgctxt "files-too-large[many]"
+msgid "The files you have selected are too large."
+msgstr "Li fitchî k’ vos avoz tchoezi est trop grand"
+
+#: files-too-large[other]
+#, fuzzy
+msgctxt "files-too-large[other]"
+msgid "The files you have selected are too large."
 msgstr "Li fitchî k’ vos avoz tchoezi est trop grand"
 
 #: resize-image
@@ -842,6 +910,23 @@ msgstr ""
 #: dsds-notification-title-with-sim
 msgid "({{sim}}) {{sender}}"
 msgstr ""
+
+#~ msgid "Service currently unavailable"
+#~ msgstr "Siervice nén disponibe pol moumint"
+
+#~ msgid "Message will automatically be sent once service is available."
+#~ msgstr ""
+#~ "Li messaedje serè evoyî otomaticmint cwand li siervice serè disponibe."
+
+#, fuzzy
+#~ msgctxt "fdnBlockedBody.innerHTML"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#, fuzzy
+#~ msgctxt "fdnBlockedBtnOk"
+#~ msgid "OK"
+#~ msgstr "I va"
 
 #~ msgid "Edit messages"
 #~ msgstr "Aspougnî messaedjes"

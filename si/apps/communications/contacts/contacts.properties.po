@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-30 17:44+0100\n"
+"POT-Creation-Date: 2014-05-01 15:24+0100\n"
 "PO-Revision-Date: 2014-04-15 14:26+0000\n"
 "Last-Translator: Lahiru Himesh <lahiru.lahirumadusanka@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1397571973.000000\n"
@@ -20,10 +20,6 @@ msgstr ""
 #: add
 msgid "Add"
 msgstr "එක් කරන්න"
-
-#: back
-msgid "Back"
-msgstr "පසු පසට"
 
 #: call
 msgid "Call"
@@ -55,6 +51,8 @@ msgstr "නැවත උත්සාහ කරන්න"
 
 #. # Menus and dialog strings
 #: contacts
+#, fuzzy
+msgctxt "contacts"
 msgid "Contacts"
 msgstr "සබඳතා"
 
@@ -187,6 +185,12 @@ msgstr "රිසිකළ"
 
 #: date
 msgctxt "date"
+msgid "Date"
+msgstr "දිනය"
+
+#: date-span-placeholder
+#, fuzzy
+msgctxt "date-span-placeholder"
 msgid "Date"
 msgstr "දිනය"
 
@@ -552,10 +556,6 @@ msgctxt "simContacts-imported3[other]"
 msgid "Imported {{n}} contacts"
 msgstr "සබඳතා {{n}} ක් ආනයනය කලා"
 
-#: noSimMsg
-msgid "To import contacts insert or unlock your SIM card"
-msgstr "සබඳතා ආනයනය සඳහා ඔබගේ SIM පත ඇතුලත් කිරීම හෝ අඟුලු මුදා හැරීම සිදු කරන්න"
-
 #: noSimMsgExport
 msgid "To export contacts insert or unlock your SIM card"
 msgstr "සබඳතා අපනයනය සඳහා ඔබගේ SIM පත ඇතුලත් කිරීම හෝ අඟුලු මුදා හැරීම සිදු කරන්න"
@@ -614,10 +614,6 @@ msgstr "සබඳතා {{n}} ක් ආනයනය විය"
 msgctxt "memoryCardContacts-imported3[other]"
 msgid "Imported {{n}} contacts"
 msgstr "සබඳතා {{n}} ක් ආනයනය කෙරිනි"
-
-#: noMemoryCardMsg
-msgid "To import contacts insert a memory card"
-msgstr "සබඳතා ආනායනය කිරීමට ප්‍රථම මතක පතක් ඇතුලු කරන්න"
 
 #: noMemoryCardMsgExport
 msgid "To export contacts insert a memory card"
@@ -727,11 +723,6 @@ msgctxt "importSim2"
 msgid "SIM card"
 msgstr "SIM පත"
 
-#: importMemoryCard
-msgctxt "importMemoryCard"
-msgid "Memory card"
-msgstr "මතක පත"
-
 #: importGmail
 msgid "Gmail"
 msgstr "Gmail"
@@ -764,10 +755,6 @@ msgstr "සියළුම Facebook දත්ත ඉවත් කරන්න �
 msgid "Your password in Facebook has changed. Please, update it."
 msgstr "ඔබගේ Facebook මුර පදය වෙනස් වී ඇත. කරුණාකර නව මුර පදය යොදන්න."
 
-#: noConnection11
-msgid "To import Facebook friends or contacts connect to Wi-Fi or data network"
-msgstr "Facebook මිතුරන් හෝ සබඳතා ආනයනය සඳහා Wi-Fi හෝ දත්ත හුවමාරු ජාලයක් හා සබැදෙන්න"
-
 #: notEnabledYet
 msgid "Not enabled yet"
 msgstr "තවමත් සක්‍රීය කර නොමැත"
@@ -783,7 +770,7 @@ msgid "SIM card"
 msgstr "SIM පත"
 
 #: memoryCard
-msgctxt "memoryCard"
+#, fuzzy
 msgid "Memory card"
 msgstr "මතක පත"
 
@@ -841,7 +828,8 @@ msgid "SIM Card is full"
 msgstr "SIM පත පිරී ඇත"
 
 #: exportError-SIM-CannotAccessPhoneBook
-msgid "Cannot access SIM card's phone book"
+#, fuzzy
+msgid "Cannot access SIM card’s phone book"
 msgstr "SIM පතෙහි සබඳතාවයන්ට පිවිසිය නොහැකියි"
 
 #: exportError-SIM-Unavailable
@@ -851,3 +839,150 @@ msgstr "SIM පතක් හමු නොවීය"
 #: exportError-SIM-GenericError
 msgid "An error occurred while exporting a contact"
 msgstr "සබඳතා අපනයනයේදී දෝශයක් පැන නැගිනි"
+
+#: ContactManagementTitle
+msgid "Contacts Management"
+msgstr ""
+
+#: DeleteTitle
+msgid "Delete"
+msgstr ""
+
+#: bulkDeleteButton
+#, fuzzy
+msgid "Delete Contacts"
+msgstr "සබඳතාව මකන්න"
+
+#: BulkDelCancel
+msgid "Contacts delete cancelled"
+msgstr ""
+
+#: DeletedTxt
+#, fuzzy
+msgctxt "DeletedTxt"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: DeletedTxt[zero]
+msgctxt "DeletedTxt[zero]"
+msgid "No Contact to Delete"
+msgstr ""
+
+#: DeletedTxt[one]
+msgid "1 Contact removed"
+msgstr ""
+
+#: DeletedTxt[two]
+msgctxt "DeletedTxt[two]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletedTxt[few]
+msgctxt "DeletedTxt[few]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletedTxt[many]
+msgctxt "DeletedTxt[many]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletedTxt[other]
+msgctxt "DeletedTxt[other]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletingContacts
+#, fuzzy
+msgid "Deleting contacts"
+msgstr "සබඳතාව මකන්න"
+
+#: ContactConfirmDel
+#, fuzzy
+msgctxt "ContactConfirmDel"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: ContactConfirmDel[zero]
+msgctxt "ContactConfirmDel[zero]"
+msgid "No Contact to Delete"
+msgstr ""
+
+#: ContactConfirmDel[one]
+msgid "Delete 1 Contact? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[two]
+msgctxt "ContactConfirmDel[two]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[few]
+msgctxt "ContactConfirmDel[few]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[many]
+msgctxt "ContactConfirmDel[many]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[other]
+msgctxt "ContactConfirmDel[other]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: SelectedTxt
+#, fuzzy
+msgctxt "SelectedTxt"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: SelectedTxt[zero]
+#, fuzzy
+msgctxt "SelectedTxt[zero]"
+msgid "Contacts"
+msgstr "සබඳතා"
+
+#: SelectedTxt[one]
+msgctxt "SelectedTxt[one]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[two]
+msgctxt "SelectedTxt[two]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[few]
+msgctxt "SelectedTxt[few]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[many]
+msgctxt "SelectedTxt[many]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[other]
+msgctxt "SelectedTxt[other]"
+msgid "{{n}} selected"
+msgstr ""
+
+#~ msgid "Back"
+#~ msgstr "පසු පසට"
+
+#~ msgid "To import contacts insert or unlock your SIM card"
+#~ msgstr "සබඳතා ආනයනය සඳහා ඔබගේ SIM පත ඇතුලත් කිරීම හෝ අඟුලු මුදා හැරීම සිදු කරන්න"
+
+#~ msgid "To import contacts insert a memory card"
+#~ msgstr "සබඳතා ආනායනය කිරීමට ප්‍රථම මතක පතක් ඇතුලු කරන්න"
+
+#~ msgid ""
+#~ "To import Facebook friends or contacts connect to Wi-Fi or data network"
+#~ msgstr ""
+#~ "Facebook මිතුරන් හෝ සබඳතා ආනයනය සඳහා Wi-Fi හෝ දත්ත හුවමාරු ජාලයක් හා සබැදෙන්න"
+
+#~ msgctxt "memoryCard"
+#~ msgid "Memory card"
+#~ msgstr "මතක පත"

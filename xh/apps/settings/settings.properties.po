@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-14 09:44+0100\n"
+"POT-Creation-Date: 2014-05-01 15:24+0100\n"
 "PO-Revision-Date: 2014-03-05 17:25+0000\n"
 "Last-Translator: Ian <ian.henderson@rubric.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1442,7 +1442,8 @@ msgid "Confirmation"
 msgstr "Isiqinisekiso"
 
 #: device-option-unpair-device
-msgid "Unpair Device?"
+#, fuzzy
+msgid "Unpair device?"
 msgstr "Ufuna ukungqamanisa izixhobo?"
 
 #: device-option-connect
@@ -1799,6 +1800,10 @@ msgstr "I-alamu"
 msgid "Ringer & Notifications"
 msgstr "Isikhalisi nesaziso"
 
+#: media-sound
+msgid "Media"
+msgstr ""
+
 #: voice-sound
 msgid "Voice"
 msgstr "Ilizwi"
@@ -1978,6 +1983,11 @@ msgstr "Umlawuli we-SIM"
 msgid "{{simManager}}"
 msgstr "{{simManager}}"
 
+#: simSettings
+#, fuzzy
+msgid "SIM settings"
+msgstr "Iisetingi ze-APN"
+
 #: sim-manager-outgoing-calls
 msgid "Outgoing calls"
 msgstr "Iminxeba ephumayo"
@@ -1999,12 +2009,9 @@ msgctxt "sim-manager-outgoing-data"
 msgid "Data"
 msgstr "Idatha"
 
-#: sim-manager-outgoing-data-desc-new
-msgid ""
-"Internet connection, MMS, A-GPS and Marketplace payments will be sent from"
+#: sim-manager-outgoing-data-description
+msgid "Data service network and Marketplace payments"
 msgstr ""
-"Unxibelelwano lwe-intanethi, i-MMS, i-A-GPS nentlawulo yeNdawo yemarike iza "
-"kuthunyelwa isuka"
 
 #: sim-manager-always-ask
 msgid "Always ask"
@@ -2141,19 +2148,120 @@ msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr "I-{{appName}} {{layoutName}} isetwe ngendlela esisiseko yokufaka"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#. # Accounts (N/A)
+#. # Accounts
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#: fxa
+msgctxt "fxa"
+msgid "Firefox Accounts"
+msgstr ""
+
 #: accounts
-msgid "Accounts"
-msgstr "Ii-akhawunti"
+msgid "Account Management"
+msgstr ""
 
-#: persona
-msgid "Persona"
-msgstr "Abantu"
+#: fxa-accounts
+msgctxt "fxa-accounts"
+msgid "Firefox Accounts"
+msgstr ""
 
-#: mail
-msgid "Mail"
-msgstr "Imeyili"
+#. # LOCALIZATION NOTE (fxa-accounts-header): if you leave the original
+#. # en-US value "{{fxa-accounts}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "fxa-accounts".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: fxa-accounts-header
+msgid "{{fxa-accounts}}"
+msgstr ""
+
+#. # Panel: logged out
+#: fxa-overview
+msgid ""
+"Your Firefox Account lets you use features like Find My Device and apps like "
+"the Firefox Marketplace."
+msgstr ""
+
+#: fxa-invitation
+msgid "Create account or sign in"
+msgstr ""
+
+#. # Panel: logged in, unverified
+#: fxa-confirm-account
+msgid "Confirm Your Account"
+msgstr ""
+
+#: fxa-verification-email-sent-msg
+msgid "We will send an email to: {{email}}"
+msgstr ""
+
+#: fxa-please-verify
+msgid "Click the verification link in your email to confirm your account."
+msgstr ""
+
+#: fxa-cancel-confirmation
+msgid "Cancel Account Confirmation"
+msgstr ""
+
+#. # Panel: logged in, verified
+#: fxa-about
+msgid "About"
+msgstr ""
+
+#: fxa-logged-in-text
+msgid "Signed in as {{email}}"
+msgstr ""
+
+#: fxa-signed-in-header
+msgid "Signed In"
+msgstr ""
+
+#: fxa-marketplace-app
+msgid "Marketplace"
+msgstr ""
+
+#: fxa-find-my-device-app
+msgctxt "fxa-find-my-device-app"
+msgid "Find My Device"
+msgstr ""
+
+#: fxa-options
+msgid "Options"
+msgstr ""
+
+#: fxa-sign-out
+msgid "Sign Out"
+msgstr ""
+
+#. # Additional menu states
+#: fxa-confirm-email
+msgid "Please confirm {{email}}"
+msgstr ""
+
+#: findmydevice
+msgctxt "findmydevice"
+msgid "Find My Device"
+msgstr ""
+
+#: findmydevice-signup-description
+msgid "Find My Device allows you to locate, lock or erase your phone"
+msgstr ""
+
+#: findmydevice-login
+msgid "Sign In or Create an Account"
+msgstr ""
+
+#: findmydevice-enable
+msgid "Enable Find My Device"
+msgstr ""
+
+#: findmydevice-about
+msgid "About Find My Device"
+msgstr ""
+
+#: findmydevice-settings-description
+msgid ""
+"Find My Device allows you to locate, lock or erase your phone from a web "
+"site:"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -2170,18 +2278,18 @@ msgstr "Tshixa ipasikhowudi"
 msgid "Passcode: {{code}}"
 msgstr "Ipasikhowudi: {{code}}"
 
-#: phoneLock
+#: screenLock
 msgid "Screen lock"
 msgstr "Tshixa iskrini"
 
-#. # LOCALIZATION NOTE (phoneLock-header): if you leave the original
-#. # en-US value "{{phoneLock}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "phoneLock".
+#. # LOCALIZATION NOTE (screenLock-header): if you leave the original
+#. # en-US value "{{screenLock}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "screenLock".
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
-#: phoneLock-header
-msgid "{{phoneLock}}"
-msgstr "{{phoneLock}}"
+#: screenLock-header
+msgid "{{screenLock}}"
+msgstr ""
 
 #: simSecurity
 msgid "SIM security"
@@ -3099,7 +3207,7 @@ msgid "{{hud}}"
 msgstr ""
 
 #: hud-logging
-msgid "Log changes in adb"
+msgid "Log changes in ADB"
 msgstr ""
 
 #: hud-problems
@@ -3188,13 +3296,17 @@ msgstr "Khupha ibhagi"
 msgid "Developer Menu"
 msgstr "Imenyu yomphuhlisi"
 
-#: layers-draw-borders
-msgid "Draw layers borders"
-msgstr "Yenza imida yolwaleko"
+#: developer-tools
+msgid "Developer Tools"
+msgstr ""
 
-#: layers-composer2d-enabled
-msgid "Enable hardware composer"
-msgstr "Yenza umqambi wehadiwe asebenze"
+#: graphics
+msgid "Graphics"
+msgstr ""
+
+#: hardware-composer
+msgid "Hardware composer"
+msgstr ""
 
 #: paint-flashing
 msgid "Flash repainted area"
@@ -3204,29 +3316,34 @@ msgstr "Khanyisa indawo epeyintwe ngokutsha"
 msgid "Dump layers tree"
 msgstr ""
 
-#: apz-force-enable
-msgid "Enable APZ for all content processes"
-msgstr "Yenza i-APZ isebenze kuzo zonke iinkqubo zombandela"
+#: apz
+msgid "Async Pan/Zoom"
+msgstr ""
 
-#: layers-enable-tiles
-msgid "Layers: Enable Tiles"
-msgstr "Ulwaleko: Yenza iithayile zisebenze"
+#: tiling
+msgid "Tiling"
+msgstr ""
 
-#: layers-simple-tiles
+#: simple-tiling
+msgid "Simple tiling"
+msgstr ""
+
+#: progressive-paint
+msgid "Progressive paint"
+msgstr ""
+
+#: draw-tile-borders
+msgid "Draw tile borders"
+msgstr ""
+
+#: draw-layer-borders
 #, fuzzy
-msgid "Layers: Simple Tiles"
-msgstr "Ulwaleko: Yenza iithayile zisebenze"
-
-#: layers-progressive-paint
-msgid "Layers: Progressive Paint"
-msgstr "Ulwaleko: Ipeyinti enenkqubela"
-
-#: layers-draw-tile-borders
-msgid "Layers: Draw Tile Borders"
-msgstr "Ulwaleko: Yenza imida yeethayile"
+msgid "Draw layer borders"
+msgstr "Yenza imida yolwaleko"
 
 #: apz-displayport-heuristics
-msgid "Displayport Heuristics"
+#, fuzzy
+msgid "Displayport heuristics"
 msgstr "Bonisa ii-Huristiki"
 
 #: apz-heuristic-default
@@ -3258,9 +3375,13 @@ msgstr "Akukho bhodi yokuhlola"
 msgid "Log slow animations"
 msgstr "Imifanekiso eshukumayo ecothayo"
 
-#: remote-debugging
-msgid "Remote debugging"
-msgstr "Ukukhupha ibagi kude"
+#: remote-debugging-usb
+msgid "Debugging via USB"
+msgstr ""
+
+#: dev-tools-wifi
+msgid "DevTools via Wi-Fi"
+msgstr ""
 
 #: debugger-disabled
 msgctxt "debugger-disabled"
@@ -3272,7 +3393,8 @@ msgid "ADB only"
 msgstr "I-ADB kuphela"
 
 #: debugger-adb-and-devtools
-msgid "ADB and Devtools"
+#, fuzzy
+msgid "ADB and DevTools"
 msgstr "I-ADB neezixhobo zeDev"
 
 #: devtools-overlay
@@ -3284,16 +3406,22 @@ msgid "Jank Threshold"
 msgstr ""
 
 #: wifi-debugging
-msgid "Wi-Fi output in adb"
+#, fuzzy
+msgid "Wi-Fi output in ADB"
 msgstr "Indawo ye-Wi-Fi kwi-adb"
 
 #: bluetooth-debugging
-msgid "Bluetooth output in adb"
+#, fuzzy
+msgid "Bluetooth output in ADB"
 msgstr "Indawo ye-Bluetooth kwi-adb"
 
 #: console-enabled
 msgid "Console enabled"
 msgstr "Yenza ikhonsoli isebenze"
+
+#: cards-view-screenshots
+msgid "Cards View: Screenshots"
+msgstr ""
 
 #: model-name
 msgid "Model"
@@ -3322,6 +3450,10 @@ msgstr "Isichazi seBhildi"
 #: update-channel
 msgid "Update channel"
 msgstr "Itshanele yokuhlaziya"
+
+#: update-url
+msgid "Update URL"
+msgstr ""
 
 #: last-updated
 msgid "Last Updated"
@@ -3589,7 +3721,8 @@ msgid "Apache License 2.0"
 msgstr "ILayisenisi ye-Apache 2.0"
 
 #: launch-ftu
-msgid "Launch first time use"
+#, fuzzy
+msgid "Launch First Time Use"
 msgstr "Sungula ukuyisebenzisa okokuqala"
 
 #: no-ftu
@@ -3600,32 +3733,32 @@ msgstr "Akuho app yokusebenzisa okokuqala efunyenweyo"
 msgid "Rocketbar enabled"
 msgstr "I-Rokhethbha yenziwe yasebenza"
 
-#: software-button-enabled
-msgid "Enable software home button"
-msgstr "Yenza lisebenze iqhosha lesoftwe yasekhaya"
+#: software-home-button
+msgid "Software home button"
+msgstr ""
 
-#: homegesture-enabled
-msgid "Home gesture enabled"
-msgstr "Intshukumo yasekhaya yenziwe yasebenza"
+#: home-gesture
+msgid "Home gesture"
+msgstr ""
 
-#: edgesgesture-enabled
-msgid "Edges gesture enabled"
-msgstr "Inshukumo yongqameko yenziwe yasebenza"
+#: edges-gesture
+msgid "Edges gesture"
+msgstr ""
 
-#: continuoustransition-enabled
-msgid "Continuous transition enabled"
-msgstr "Inguqu eqhubekayo yenziwe yasebenza"
+#: continuous-transition
+msgid "Continuous transition"
+msgstr ""
 
 #: debug-gaia-enabled
 msgid "Gaia debug traces"
 msgstr "Imikhondo yokukhutshwa kwebhagi yeGaia"
 
-#: enable-app-transition
-msgid "App transition enabled"
-msgstr "Inguqu eqhubekayo ye-app yenziwe yasebenza"
+#: app-transition
+msgid "App transition"
+msgstr ""
 
-#: enable-app-suspending
-msgid "Keep killed app in task manager"
+#: app-suspending
+msgid "App suspending"
 msgstr ""
 
 #: window-management
@@ -3734,6 +3867,14 @@ msgid ""
 msgstr ""
 "Xa umfundi weskrini enziwe wasebenza, isixhobo sakho siya kunika ingxelo "
 "yomlomo ukukunceda abasebenzisi abangaboniyo nababona luzizi."
+
+#: screen-reader-speech-volume
+msgid "Speech Volume"
+msgstr ""
+
+#: screen-reader-speech-rate
+msgid "Speech Rate"
+msgstr ""
 
 #: screenReader-confirm-title-start
 msgid "Start Screen Reader?"
@@ -4096,6 +4237,61 @@ msgstr "Thumela idatha"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Fumana ubume betshanele"
+
+#~ msgid ""
+#~ "Internet connection, MMS, A-GPS and Marketplace payments will be sent from"
+#~ msgstr ""
+#~ "Unxibelelwano lwe-intanethi, i-MMS, i-A-GPS nentlawulo yeNdawo yemarike "
+#~ "iza kuthunyelwa isuka"
+
+#~ msgid "Accounts"
+#~ msgstr "Ii-akhawunti"
+
+#~ msgid "Persona"
+#~ msgstr "Abantu"
+
+#~ msgid "Mail"
+#~ msgstr "Imeyili"
+
+#~ msgid "{{phoneLock}}"
+#~ msgstr "{{phoneLock}}"
+
+#~ msgid "Enable hardware composer"
+#~ msgstr "Yenza umqambi wehadiwe asebenze"
+
+#~ msgid "Enable APZ for all content processes"
+#~ msgstr "Yenza i-APZ isebenze kuzo zonke iinkqubo zombandela"
+
+#~ msgid "Layers: Enable Tiles"
+#~ msgstr "Ulwaleko: Yenza iithayile zisebenze"
+
+#, fuzzy
+#~ msgid "Layers: Simple Tiles"
+#~ msgstr "Ulwaleko: Yenza iithayile zisebenze"
+
+#~ msgid "Layers: Progressive Paint"
+#~ msgstr "Ulwaleko: Ipeyinti enenkqubela"
+
+#~ msgid "Layers: Draw Tile Borders"
+#~ msgstr "Ulwaleko: Yenza imida yeethayile"
+
+#~ msgid "Remote debugging"
+#~ msgstr "Ukukhupha ibagi kude"
+
+#~ msgid "Enable software home button"
+#~ msgstr "Yenza lisebenze iqhosha lesoftwe yasekhaya"
+
+#~ msgid "Home gesture enabled"
+#~ msgstr "Intshukumo yasekhaya yenziwe yasebenza"
+
+#~ msgid "Edges gesture enabled"
+#~ msgstr "Inshukumo yongqameko yenziwe yasebenza"
+
+#~ msgid "Continuous transition enabled"
+#~ msgstr "Inguqu eqhubekayo yenziwe yasebenza"
+
+#~ msgid "App transition enabled"
+#~ msgstr "Inguqu eqhubekayo ye-app yenziwe yasebenza"
 
 #, fuzzy
 #~ msgctxt "imsSettings-header"

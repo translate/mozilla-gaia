@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-14 09:44+0100\n"
+"POT-Creation-Date: 2014-05-01 15:24+0100\n"
 "PO-Revision-Date: 2014-04-28 05:44+0000\n"
 "Last-Translator: Arun Kumar <thangam.arunx@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1398663883.000000\n"
@@ -1425,7 +1425,8 @@ msgid "Confirmation"
 msgstr "உறுதிப்படுத்துதல்"
 
 #: device-option-unpair-device
-msgid "Unpair Device?"
+#, fuzzy
+msgid "Unpair device?"
 msgstr "சாதனத்தை சோடி சேர்க்காதே?"
 
 #: device-option-connect
@@ -1777,6 +1778,10 @@ msgstr "எச்சரிக்கை மணி"
 msgid "Ringer & Notifications"
 msgstr "மணிஅடிப்பு & அறிவிப்புகள்"
 
+#: media-sound
+msgid "Media"
+msgstr ""
+
 #: voice-sound
 msgid "Voice"
 msgstr "குரல்"
@@ -1956,6 +1961,11 @@ msgstr "சிம் நிர்வாகி"
 msgid "{{simManager}}"
 msgstr "{{simManager}}"
 
+#: simSettings
+#, fuzzy
+msgid "SIM settings"
+msgstr "IMS அமைவுகள்"
+
 #: sim-manager-outgoing-calls
 msgid "Outgoing calls"
 msgstr "வெளிச்செல்லும் அழைப்புகள்"
@@ -1977,11 +1987,9 @@ msgctxt "sim-manager-outgoing-data"
 msgid "Data"
 msgstr "தரவு"
 
-#: sim-manager-outgoing-data-desc-new
-msgid ""
-"Internet connection, MMS, A-GPS and Marketplace payments will be sent from"
+#: sim-manager-outgoing-data-description
+msgid "Data service network and Marketplace payments"
 msgstr ""
-"இலிருந்து இணைய இணைப்பு, MMS, A-GPS மற்றும் சந்தையிடம் போன்றவற்றின் பணங்கள் அனுப்பப்பட்டன"
 
 #: sim-manager-always-ask
 msgid "Always ask"
@@ -2118,19 +2126,120 @@ msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr "முன்னிருப்பாக {{appName}} {{layoutName}} உள்ளீட்டு முறை அமைக்கப்பட்டுள்ளது"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#. # Accounts (N/A)
+#. # Accounts
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#: fxa
+msgctxt "fxa"
+msgid "Firefox Accounts"
+msgstr ""
+
 #: accounts
-msgid "Accounts"
-msgstr "கணக்குகள்"
+msgid "Account Management"
+msgstr ""
 
-#: persona
-msgid "Persona"
-msgstr "தனி மனிதர்"
+#: fxa-accounts
+msgctxt "fxa-accounts"
+msgid "Firefox Accounts"
+msgstr ""
 
-#: mail
-msgid "Mail"
-msgstr "மடல்"
+#. # LOCALIZATION NOTE (fxa-accounts-header): if you leave the original
+#. # en-US value "{{fxa-accounts}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "fxa-accounts".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: fxa-accounts-header
+msgid "{{fxa-accounts}}"
+msgstr ""
+
+#. # Panel: logged out
+#: fxa-overview
+msgid ""
+"Your Firefox Account lets you use features like Find My Device and apps like "
+"the Firefox Marketplace."
+msgstr ""
+
+#: fxa-invitation
+msgid "Create account or sign in"
+msgstr ""
+
+#. # Panel: logged in, unverified
+#: fxa-confirm-account
+msgid "Confirm Your Account"
+msgstr ""
+
+#: fxa-verification-email-sent-msg
+msgid "We will send an email to: {{email}}"
+msgstr ""
+
+#: fxa-please-verify
+msgid "Click the verification link in your email to confirm your account."
+msgstr ""
+
+#: fxa-cancel-confirmation
+msgid "Cancel Account Confirmation"
+msgstr ""
+
+#. # Panel: logged in, verified
+#: fxa-about
+msgid "About"
+msgstr ""
+
+#: fxa-logged-in-text
+msgid "Signed in as {{email}}"
+msgstr ""
+
+#: fxa-signed-in-header
+msgid "Signed In"
+msgstr ""
+
+#: fxa-marketplace-app
+msgid "Marketplace"
+msgstr ""
+
+#: fxa-find-my-device-app
+msgctxt "fxa-find-my-device-app"
+msgid "Find My Device"
+msgstr ""
+
+#: fxa-options
+msgid "Options"
+msgstr ""
+
+#: fxa-sign-out
+msgid "Sign Out"
+msgstr ""
+
+#. # Additional menu states
+#: fxa-confirm-email
+msgid "Please confirm {{email}}"
+msgstr ""
+
+#: findmydevice
+msgctxt "findmydevice"
+msgid "Find My Device"
+msgstr ""
+
+#: findmydevice-signup-description
+msgid "Find My Device allows you to locate, lock or erase your phone"
+msgstr ""
+
+#: findmydevice-login
+msgid "Sign In or Create an Account"
+msgstr ""
+
+#: findmydevice-enable
+msgid "Enable Find My Device"
+msgstr ""
+
+#: findmydevice-about
+msgid "About Find My Device"
+msgstr ""
+
+#: findmydevice-settings-description
+msgid ""
+"Find My Device allows you to locate, lock or erase your phone from a web "
+"site:"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -2147,18 +2256,18 @@ msgstr "கடவுக்குறியீட்டை பூட்டு"
 msgid "Passcode: {{code}}"
 msgstr "கடவுக்குறியீடு: {{code}}"
 
-#: phoneLock
+#: screenLock
 msgid "Screen lock"
 msgstr "திரைப்பூட்டு"
 
-#. # LOCALIZATION NOTE (phoneLock-header): if you leave the original
-#. # en-US value "{{phoneLock}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "phoneLock".
+#. # LOCALIZATION NOTE (screenLock-header): if you leave the original
+#. # en-US value "{{screenLock}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "screenLock".
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
-#: phoneLock-header
-msgid "{{phoneLock}}"
-msgstr "{{phoneLock}}"
+#: screenLock-header
+msgid "{{screenLock}}"
+msgstr ""
 
 #: simSecurity
 msgid "SIM security"
@@ -3071,7 +3180,8 @@ msgid "{{hud}}"
 msgstr "{{hud}}"
 
 #: hud-logging
-msgid "Log changes in adb"
+#, fuzzy
+msgid "Log changes in ADB"
 msgstr "adb இல் மாற்றங்களை பதியவும்"
 
 #: hud-problems
@@ -3159,13 +3269,17 @@ msgstr "வழு நீக்கம்"
 msgid "Developer Menu"
 msgstr "உருவாக்குனர் பட்டி"
 
-#: layers-draw-borders
-msgid "Draw layers borders"
-msgstr "அடுக்குகளின் எல்லைகளை வரைதல்"
+#: developer-tools
+msgid "Developer Tools"
+msgstr ""
 
-#: layers-composer2d-enabled
-msgid "Enable hardware composer"
-msgstr "வன்பொருள் தொகுப்பானை செயற்படுத்து"
+#: graphics
+msgid "Graphics"
+msgstr ""
+
+#: hardware-composer
+msgid "Hardware composer"
+msgstr ""
 
 #: paint-flashing
 msgid "Flash repainted area"
@@ -3175,28 +3289,34 @@ msgstr "மறு வண்ணம் பூசப்பட்ட பகுதி
 msgid "Dump layers tree"
 msgstr "அடுக்குகளின் படிநிலையை திணி"
 
-#: apz-force-enable
-msgid "Enable APZ for all content processes"
-msgstr "அனைத்து உள்ளடக்க செயல்பாடுகளுக்கும் APZஐ செயற்படுத்து"
+#: apz
+msgid "Async Pan/Zoom"
+msgstr ""
 
-#: layers-enable-tiles
-msgid "Layers: Enable Tiles"
-msgstr "அடுக்குகள்: ஓடுகளை செயல்படுத்து"
+#: tiling
+msgid "Tiling"
+msgstr ""
 
-#: layers-simple-tiles
-msgid "Layers: Simple Tiles"
-msgstr "அடுக்குகள்: சாதாரண ஓடுகள்"
+#: simple-tiling
+msgid "Simple tiling"
+msgstr ""
 
-#: layers-progressive-paint
-msgid "Layers: Progressive Paint"
-msgstr "அடுக்குகள்: முற்போக்கான வண்ணப்பூச்சு"
+#: progressive-paint
+msgid "Progressive paint"
+msgstr ""
 
-#: layers-draw-tile-borders
-msgid "Layers: Draw Tile Borders"
-msgstr "அடுக்குகள்: ஓடுகளின் எல்லையை வரை"
+#: draw-tile-borders
+msgid "Draw tile borders"
+msgstr ""
+
+#: draw-layer-borders
+#, fuzzy
+msgid "Draw layer borders"
+msgstr "அடுக்குகளின் எல்லைகளை வரைதல்"
 
 #: apz-displayport-heuristics
-msgid "Displayport Heuristics"
+#, fuzzy
+msgid "Displayport heuristics"
 msgstr "டிஸ்ப்ளே தீர்வு விதிகள்"
 
 #: apz-heuristic-default
@@ -3228,9 +3348,13 @@ msgstr "சரிபார்ப்பு பலகை எதுமில்ல�
 msgid "Log slow animations"
 msgstr "மெதுவான இயக்கமூட்டல்களை பதியவும்"
 
-#: remote-debugging
-msgid "Remote debugging"
-msgstr "தொலைநிலை வழுநீக்கும்"
+#: remote-debugging-usb
+msgid "Debugging via USB"
+msgstr ""
+
+#: dev-tools-wifi
+msgid "DevTools via Wi-Fi"
+msgstr ""
 
 #: debugger-disabled
 msgctxt "debugger-disabled"
@@ -3242,7 +3366,8 @@ msgid "ADB only"
 msgstr "ADB மட்டுமே"
 
 #: debugger-adb-and-devtools
-msgid "ADB and Devtools"
+#, fuzzy
+msgid "ADB and DevTools"
 msgstr "ADB மற்றும் உருவாக்குனர் கருவிகள்"
 
 #: devtools-overlay
@@ -3254,16 +3379,22 @@ msgid "Jank Threshold"
 msgstr "Jank இன் உச்சநிலை"
 
 #: wifi-debugging
-msgid "Wi-Fi output in adb"
+#, fuzzy
+msgid "Wi-Fi output in ADB"
 msgstr "adb யில் வை-பையின் வெளிப்பாடு"
 
 #: bluetooth-debugging
-msgid "Bluetooth output in adb"
+#, fuzzy
+msgid "Bluetooth output in ADB"
 msgstr "adb யில் ப்ளூடூத்தின் வெளிப்பாடு"
 
 #: console-enabled
 msgid "Console enabled"
 msgstr "பணியகம் செயல்படுத்தப்பட்டது"
+
+#: cards-view-screenshots
+msgid "Cards View: Screenshots"
+msgstr ""
 
 #: model-name
 msgid "Model"
@@ -3292,6 +3423,10 @@ msgstr "உருவாக்கி அடையாளப்படுத்த�
 #: update-channel
 msgid "Update channel"
 msgstr "சேனலை மேம்படுத்து"
+
+#: update-url
+msgid "Update URL"
+msgstr ""
 
 #: last-updated
 msgid "Last Updated"
@@ -3558,7 +3693,8 @@ msgid "Apache License 2.0"
 msgstr "அப்பாச்சி உரிமம் 2.0"
 
 #: launch-ftu
-msgid "Launch first time use"
+#, fuzzy
+msgid "Launch First Time Use"
 msgstr "முதன் முறை பயன்பாட்டுக்காக துவக்கு"
 
 #: no-ftu
@@ -3569,33 +3705,33 @@ msgstr "முதன் முதலாக பயன்படுத்தப்�
 msgid "Rocketbar enabled"
 msgstr "ஏவுகணை பட்டை செயலிலுள்ளது"
 
-#: software-button-enabled
-msgid "Enable software home button"
-msgstr "மென்பொருள் முகப்பு பொத்தானை செயற்படுத்து"
+#: software-home-button
+msgid "Software home button"
+msgstr ""
 
-#: homegesture-enabled
-msgid "Home gesture enabled"
-msgstr "முகப்பு சைகை செயலிலுள்ளது"
+#: home-gesture
+msgid "Home gesture"
+msgstr ""
 
-#: edgesgesture-enabled
-msgid "Edges gesture enabled"
-msgstr "விளிம்புகளின் சைகை செயலிலுள்ளது"
+#: edges-gesture
+msgid "Edges gesture"
+msgstr ""
 
-#: continuoustransition-enabled
-msgid "Continuous transition enabled"
-msgstr "தொடர்ச்சியான மாற்றம் செயலிலுள்ளது"
+#: continuous-transition
+msgid "Continuous transition"
+msgstr ""
 
 #: debug-gaia-enabled
 msgid "Gaia debug traces"
 msgstr "கெயா வழுநீக்க தடங்கள்"
 
-#: enable-app-transition
-msgid "App transition enabled"
-msgstr "பயன்பாட்டின் மாற்றம் செயலிலுள்ளது"
+#: app-transition
+msgid "App transition"
+msgstr ""
 
-#: enable-app-suspending
-msgid "Keep killed app in task manager"
-msgstr "அழிக்கப்பட்ட பயன்பாடுகளை பணி மேலாளரில் வைத்திரு"
+#: app-suspending
+msgid "App suspending"
+msgstr ""
 
 #: window-management
 msgid "Window management"
@@ -3703,6 +3839,14 @@ msgid ""
 msgstr ""
 "உங்களுடைய சாதனத்தில் திரை வாசிப்பானை செயற்படுத்தினால் பார்வையற்ற மற்றும் குறைவான பார்வை "
 "உள்ளவர்களுக்கு பின்னுட்டங்களை படித்து சொல்லும்."
+
+#: screen-reader-speech-volume
+msgid "Speech Volume"
+msgstr ""
+
+#: screen-reader-speech-rate
+msgid "Speech Rate"
+msgstr ""
 
 #: screenReader-confirm-title-start
 msgid "Start Screen Reader?"
@@ -4068,6 +4212,63 @@ msgstr "தரவை அனுப்பு"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "அலைவரிசை நிலையை வாங்கு"
+
+#~ msgid ""
+#~ "Internet connection, MMS, A-GPS and Marketplace payments will be sent from"
+#~ msgstr ""
+#~ "இலிருந்து இணைய இணைப்பு, MMS, A-GPS மற்றும் சந்தையிடம் போன்றவற்றின் பணங்கள் "
+#~ "அனுப்பப்பட்டன"
+
+#~ msgid "Accounts"
+#~ msgstr "கணக்குகள்"
+
+#~ msgid "Persona"
+#~ msgstr "தனி மனிதர்"
+
+#~ msgid "Mail"
+#~ msgstr "மடல்"
+
+#~ msgid "{{phoneLock}}"
+#~ msgstr "{{phoneLock}}"
+
+#~ msgid "Enable hardware composer"
+#~ msgstr "வன்பொருள் தொகுப்பானை செயற்படுத்து"
+
+#~ msgid "Enable APZ for all content processes"
+#~ msgstr "அனைத்து உள்ளடக்க செயல்பாடுகளுக்கும் APZஐ செயற்படுத்து"
+
+#~ msgid "Layers: Enable Tiles"
+#~ msgstr "அடுக்குகள்: ஓடுகளை செயல்படுத்து"
+
+#~ msgid "Layers: Simple Tiles"
+#~ msgstr "அடுக்குகள்: சாதாரண ஓடுகள்"
+
+#~ msgid "Layers: Progressive Paint"
+#~ msgstr "அடுக்குகள்: முற்போக்கான வண்ணப்பூச்சு"
+
+#~ msgid "Layers: Draw Tile Borders"
+#~ msgstr "அடுக்குகள்: ஓடுகளின் எல்லையை வரை"
+
+#~ msgid "Remote debugging"
+#~ msgstr "தொலைநிலை வழுநீக்கும்"
+
+#~ msgid "Enable software home button"
+#~ msgstr "மென்பொருள் முகப்பு பொத்தானை செயற்படுத்து"
+
+#~ msgid "Home gesture enabled"
+#~ msgstr "முகப்பு சைகை செயலிலுள்ளது"
+
+#~ msgid "Edges gesture enabled"
+#~ msgstr "விளிம்புகளின் சைகை செயலிலுள்ளது"
+
+#~ msgid "Continuous transition enabled"
+#~ msgstr "தொடர்ச்சியான மாற்றம் செயலிலுள்ளது"
+
+#~ msgid "App transition enabled"
+#~ msgstr "பயன்பாட்டின் மாற்றம் செயலிலுள்ளது"
+
+#~ msgid "Keep killed app in task manager"
+#~ msgstr "அழிக்கப்பட்ட பயன்பாடுகளை பணி மேலாளரில் வைத்திரு"
 
 #~ msgid "Grid"
 #~ msgstr "பின்னல்"

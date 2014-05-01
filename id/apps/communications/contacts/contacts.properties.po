@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-30 17:44+0100\n"
+"POT-Creation-Date: 2014-05-01 15:24+0100\n"
 "PO-Revision-Date: 2014-04-28 10:09+0000\n"
 "Last-Translator: romi <romihardiyanto@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1398679795.000000\n"
@@ -20,10 +20,6 @@ msgstr ""
 #: add
 msgid "Add"
 msgstr "Tambah"
-
-#: back
-msgid "Back"
-msgstr "Kembali"
 
 #: call
 msgid "Call"
@@ -55,6 +51,8 @@ msgstr "Coba lagi"
 
 #. # Menus and dialog strings
 #: contacts
+#, fuzzy
+msgctxt "contacts"
 msgid "Contacts"
 msgstr "Kontak"
 
@@ -189,6 +187,12 @@ msgstr "Gubahan"
 
 #: date
 msgctxt "date"
+msgid "Date"
+msgstr "Tanggal"
+
+#: date-span-placeholder
+#, fuzzy
+msgctxt "date-span-placeholder"
 msgid "Date"
 msgstr "Tanggal"
 
@@ -560,10 +564,6 @@ msgctxt "simContacts-imported3[other]"
 msgid "Imported {{n}} contacts"
 msgstr "{{n}} kontak telah diimpor"
 
-#: noSimMsg
-msgid "To import contacts insert or unlock your SIM card"
-msgstr "Untuk mengimpor kontak, masukkan atau buka kunci kartu SIM Anda"
-
 #: noSimMsgExport
 msgid "To export contacts insert or unlock your SIM card"
 msgstr "Untuk mengekspor kontak, masukkan atau buka kunci kartu SIM Anda"
@@ -628,11 +628,6 @@ msgstr "{{n}} kontak telah diimpor"
 msgctxt "memoryCardContacts-imported3[other]"
 msgid "Imported {{n}} contacts"
 msgstr "{{n}} kontak telah diimpor"
-
-#: noMemoryCardMsg
-#, fuzzy
-msgid "To import contacts insert a memory card"
-msgstr "Masukkan kartu SD untuk mengimpor kontak"
 
 #: noMemoryCardMsgExport
 #, fuzzy
@@ -744,11 +739,6 @@ msgctxt "importSim2"
 msgid "SIM card"
 msgstr "Kartu SIM"
 
-#: importMemoryCard
-msgctxt "importMemoryCard"
-msgid "Memory card"
-msgstr "Kartu memori"
-
 #: importGmail
 msgid "Gmail"
 msgstr "Gmail"
@@ -781,12 +771,6 @@ msgstr "Hapus semua data Facebook?"
 msgid "Your password in Facebook has changed. Please, update it."
 msgstr "Sandi Anda di Facebook telah berubah. Silakan perbarui."
 
-#: noConnection11
-msgid "To import Facebook friends or contacts connect to Wi-Fi or data network"
-msgstr ""
-"Untuk mengimpor teman atau kontak Facebook, sambungkan ke Wi-Fi atau "
-"jaringan data"
-
 #: notEnabledYet
 msgid "Not enabled yet"
 msgstr "Belum diaktifkan"
@@ -802,7 +786,7 @@ msgid "SIM card"
 msgstr "Kartu SIM"
 
 #: memoryCard
-msgctxt "memoryCard"
+#, fuzzy
 msgid "Memory card"
 msgstr "Kartu memori"
 
@@ -860,7 +844,8 @@ msgid "SIM Card is full"
 msgstr "Kartu SIM penuh"
 
 #: exportError-SIM-CannotAccessPhoneBook
-msgid "Cannot access SIM card's phone book"
+#, fuzzy
+msgid "Cannot access SIM card’s phone book"
 msgstr "Tidak dapat mengakses buku alamat pada kartu SIM"
 
 #: exportError-SIM-Unavailable
@@ -870,6 +855,155 @@ msgstr "Tidak ada kartu SIM terdeteksi"
 #: exportError-SIM-GenericError
 msgid "An error occurred while exporting a contact"
 msgstr "Terjadi kesalahan saat mengekspor kontak"
+
+#: ContactManagementTitle
+msgid "Contacts Management"
+msgstr ""
+
+#: DeleteTitle
+msgid "Delete"
+msgstr ""
+
+#: bulkDeleteButton
+#, fuzzy
+msgid "Delete Contacts"
+msgstr "Hapus kontak"
+
+#: BulkDelCancel
+msgid "Contacts delete cancelled"
+msgstr ""
+
+#: DeletedTxt
+#, fuzzy
+msgctxt "DeletedTxt"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: DeletedTxt[zero]
+msgctxt "DeletedTxt[zero]"
+msgid "No Contact to Delete"
+msgstr ""
+
+#: DeletedTxt[one]
+msgid "1 Contact removed"
+msgstr ""
+
+#: DeletedTxt[two]
+msgctxt "DeletedTxt[two]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletedTxt[few]
+msgctxt "DeletedTxt[few]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletedTxt[many]
+msgctxt "DeletedTxt[many]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletedTxt[other]
+msgctxt "DeletedTxt[other]"
+msgid "{{n}} Contacts removed"
+msgstr ""
+
+#: DeletingContacts
+#, fuzzy
+msgid "Deleting contacts"
+msgstr "Hapus kontak"
+
+#: ContactConfirmDel
+#, fuzzy
+msgctxt "ContactConfirmDel"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: ContactConfirmDel[zero]
+msgctxt "ContactConfirmDel[zero]"
+msgid "No Contact to Delete"
+msgstr ""
+
+#: ContactConfirmDel[one]
+msgid "Delete 1 Contact? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[two]
+msgctxt "ContactConfirmDel[two]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[few]
+msgctxt "ContactConfirmDel[few]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[many]
+msgctxt "ContactConfirmDel[many]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: ContactConfirmDel[other]
+msgctxt "ContactConfirmDel[other]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr ""
+
+#: SelectedTxt
+#, fuzzy
+msgctxt "SelectedTxt"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: SelectedTxt[zero]
+#, fuzzy
+msgctxt "SelectedTxt[zero]"
+msgid "Contacts"
+msgstr "Kontak"
+
+#: SelectedTxt[one]
+msgctxt "SelectedTxt[one]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[two]
+msgctxt "SelectedTxt[two]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[few]
+msgctxt "SelectedTxt[few]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[many]
+msgctxt "SelectedTxt[many]"
+msgid "{{n}} selected"
+msgstr ""
+
+#: SelectedTxt[other]
+msgctxt "SelectedTxt[other]"
+msgid "{{n}} selected"
+msgstr ""
+
+#~ msgid "Back"
+#~ msgstr "Kembali"
+
+#~ msgid "To import contacts insert or unlock your SIM card"
+#~ msgstr "Untuk mengimpor kontak, masukkan atau buka kunci kartu SIM Anda"
+
+#, fuzzy
+#~ msgid "To import contacts insert a memory card"
+#~ msgstr "Masukkan kartu SD untuk mengimpor kontak"
+
+#~ msgid ""
+#~ "To import Facebook friends or contacts connect to Wi-Fi or data network"
+#~ msgstr ""
+#~ "Untuk mengimpor teman atau kontak Facebook, sambungkan ke Wi-Fi atau "
+#~ "jaringan data"
+
+#~ msgctxt "memoryCard"
+#~ msgid "Memory card"
+#~ msgstr "Kartu memori"
 
 #, fuzzy
 #~ msgid "{{ plural(exported) }}"

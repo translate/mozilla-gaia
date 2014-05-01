@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-14 09:44+0100\n"
+"POT-Creation-Date: 2014-05-01 15:24+0100\n"
 "PO-Revision-Date: 2014-04-25 05:40+0000\n"
 "Last-Translator: Ibrahima <ibrahima.sarr@pulaagu.com>\n"
 "Language-Team: FULAH LOCALIZATION\n"
@@ -12,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -1432,7 +1432,8 @@ msgid "Confirmation"
 msgstr "Teeŋtingol"
 
 #: device-option-unpair-device
-msgid "Unpair Device?"
+#, fuzzy
+msgid "Unpair device?"
 msgstr "Seŋtondir Kaɓirgol?"
 
 #: device-option-connect
@@ -1782,6 +1783,10 @@ msgstr "Holɓitorde"
 msgid "Ringer & Notifications"
 msgstr "Holɓorde e Tintine"
 
+#: media-sound
+msgid "Media"
+msgstr ""
+
 #: voice-sound
 msgid "Voice"
 msgstr "Daande"
@@ -1961,6 +1966,11 @@ msgstr "Toppitorde SIM"
 msgid "{{simManager}}"
 msgstr "{{simManager}}"
 
+#: simSettings
+#, fuzzy
+msgid "SIM settings"
+msgstr "Teelte IMS"
+
 #: sim-manager-outgoing-calls
 msgid "Outgoing calls"
 msgstr "Noddaali jaltooji"
@@ -1982,10 +1992,9 @@ msgctxt "sim-manager-outgoing-data"
 msgid "Data"
 msgstr "Keɓe"
 
-#: sim-manager-outgoing-data-desc-new
-msgid ""
-"Internet connection, MMS, A-GPS and Marketplace payments will be sent from"
-msgstr "Njoɓdeele ceŋol Enternet, MMS, A-GPS e Marketplace maa nelde iwde e"
+#: sim-manager-outgoing-data-description
+msgid "Data service network and Marketplace payments"
+msgstr ""
 
 #: sim-manager-always-ask
 msgid "Always ask"
@@ -2121,19 +2130,120 @@ msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr "{{appName}} {{layoutName}} waɗaama feere naatnugol woowaande"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#. # Accounts (N/A)
+#. # Accounts
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#: fxa
+msgctxt "fxa"
+msgid "Firefox Accounts"
+msgstr ""
+
 #: accounts
-msgid "Accounts"
-msgstr "konte"
+msgid "Account Management"
+msgstr ""
 
-#: persona
-msgid "Persona"
-msgstr "Personaaje"
+#: fxa-accounts
+msgctxt "fxa-accounts"
+msgid "Firefox Accounts"
+msgstr ""
 
-#: mail
-msgid "Mail"
-msgstr "Imeel"
+#. # LOCALIZATION NOTE (fxa-accounts-header): if you leave the original
+#. # en-US value "{{fxa-accounts}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "fxa-accounts".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: fxa-accounts-header
+msgid "{{fxa-accounts}}"
+msgstr ""
+
+#. # Panel: logged out
+#: fxa-overview
+msgid ""
+"Your Firefox Account lets you use features like Find My Device and apps like "
+"the Firefox Marketplace."
+msgstr ""
+
+#: fxa-invitation
+msgid "Create account or sign in"
+msgstr ""
+
+#. # Panel: logged in, unverified
+#: fxa-confirm-account
+msgid "Confirm Your Account"
+msgstr ""
+
+#: fxa-verification-email-sent-msg
+msgid "We will send an email to: {{email}}"
+msgstr ""
+
+#: fxa-please-verify
+msgid "Click the verification link in your email to confirm your account."
+msgstr ""
+
+#: fxa-cancel-confirmation
+msgid "Cancel Account Confirmation"
+msgstr ""
+
+#. # Panel: logged in, verified
+#: fxa-about
+msgid "About"
+msgstr ""
+
+#: fxa-logged-in-text
+msgid "Signed in as {{email}}"
+msgstr ""
+
+#: fxa-signed-in-header
+msgid "Signed In"
+msgstr ""
+
+#: fxa-marketplace-app
+msgid "Marketplace"
+msgstr ""
+
+#: fxa-find-my-device-app
+msgctxt "fxa-find-my-device-app"
+msgid "Find My Device"
+msgstr ""
+
+#: fxa-options
+msgid "Options"
+msgstr ""
+
+#: fxa-sign-out
+msgid "Sign Out"
+msgstr ""
+
+#. # Additional menu states
+#: fxa-confirm-email
+msgid "Please confirm {{email}}"
+msgstr ""
+
+#: findmydevice
+msgctxt "findmydevice"
+msgid "Find My Device"
+msgstr ""
+
+#: findmydevice-signup-description
+msgid "Find My Device allows you to locate, lock or erase your phone"
+msgstr ""
+
+#: findmydevice-login
+msgid "Sign In or Create an Account"
+msgstr ""
+
+#: findmydevice-enable
+msgid "Enable Find My Device"
+msgstr ""
+
+#: findmydevice-about
+msgid "About Find My Device"
+msgstr ""
+
+#: findmydevice-settings-description
+msgid ""
+"Find My Device allows you to locate, lock or erase your phone from a web "
+"site:"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -2150,18 +2260,18 @@ msgstr "Cokgol finnde"
 msgid "Passcode: {{code}}"
 msgstr "Finnde: {{code}}"
 
-#: phoneLock
+#: screenLock
 msgid "Screen lock"
 msgstr "Daaƴol yaynirde"
 
-#. # LOCALIZATION NOTE (phoneLock-header): if you leave the original
-#. # en-US value "{{phoneLock}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "phoneLock".
+#. # LOCALIZATION NOTE (screenLock-header): if you leave the original
+#. # en-US value "{{screenLock}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "screenLock".
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
-#: phoneLock-header
-msgid "{{phoneLock}}"
-msgstr "{{phoneLock}}"
+#: screenLock-header
+msgid "{{screenLock}}"
+msgstr ""
 
 #: simSecurity
 msgid "SIM security"
@@ -3074,7 +3184,8 @@ msgid "{{hud}}"
 msgstr "{{hud}}"
 
 #: hud-logging
-msgid "Log changes in adb"
+#, fuzzy
+msgid "Log changes in ADB"
 msgstr "Logo bayle e adb"
 
 #: hud-problems
@@ -3162,13 +3273,17 @@ msgstr "Buggito"
 msgid "Developer Menu"
 msgstr "Dosol Topaajo"
 
-#: layers-draw-borders
-msgid "Draw layers borders"
-msgstr "Diid ŋori cekke"
+#: developer-tools
+msgid "Developer Tools"
+msgstr ""
 
-#: layers-composer2d-enabled
-msgid "Enable hardware composer"
-msgstr "Hurmin feŋtorde njamdeeri"
+#: graphics
+msgid "Graphics"
+msgstr ""
+
+#: hardware-composer
+msgid "Hardware composer"
+msgstr ""
 
 #: paint-flashing
 msgid "Flash repainted area"
@@ -3178,28 +3293,34 @@ msgstr "Nokku mo Flash goobtii"
 msgid "Dump layers tree"
 msgstr "Momtu layers tree"
 
-#: apz-force-enable
-msgid "Enable APZ for all content processes"
-msgstr "Hurmin APZ e cili loowdi kala"
+#: apz
+msgid "Async Pan/Zoom"
+msgstr ""
 
-#: layers-enable-tiles
-msgid "Layers: Enable Tiles"
-msgstr "Layers: Hurmin Keeɗe"
+#: tiling
+msgid "Tiling"
+msgstr ""
 
-#: layers-simple-tiles
-msgid "Layers: Simple Tiles"
-msgstr "Layers: Keeɗe Ɓolte"
+#: simple-tiling
+msgid "Simple tiling"
+msgstr ""
 
-#: layers-progressive-paint
-msgid "Layers: Progressive Paint"
-msgstr "Layers: Progressive Paint"
+#: progressive-paint
+msgid "Progressive paint"
+msgstr ""
 
-#: layers-draw-tile-borders
-msgid "Layers: Draw Tile Borders"
-msgstr "Layers: Diid Ŋori Keeɗe"
+#: draw-tile-borders
+msgid "Draw tile borders"
+msgstr ""
+
+#: draw-layer-borders
+#, fuzzy
+msgid "Draw layer borders"
+msgstr "Diid ŋori cekke"
 
 #: apz-displayport-heuristics
-msgid "Displayport Heuristics"
+#, fuzzy
+msgid "Displayport heuristics"
 msgstr "Displayport Heuristics"
 
 #: apz-heuristic-default
@@ -3231,9 +3352,13 @@ msgstr "No checkerboarding"
 msgid "Log slow animations"
 msgstr "Logo jirwitte leelɗe"
 
-#: remote-debugging
-msgid "Remote debugging"
-msgstr "Buggitagol goɗɗungol"
+#: remote-debugging-usb
+msgid "Debugging via USB"
+msgstr ""
+
+#: dev-tools-wifi
+msgid "DevTools via Wi-Fi"
+msgstr ""
 
 #: debugger-disabled
 msgctxt "debugger-disabled"
@@ -3245,7 +3370,8 @@ msgid "ADB only"
 msgstr "ADB tan"
 
 #: debugger-adb-and-devtools
-msgid "ADB and Devtools"
+#, fuzzy
+msgid "ADB and DevTools"
 msgstr "ADB e Devtools"
 
 #: devtools-overlay
@@ -3257,16 +3383,22 @@ msgid "Jank Threshold"
 msgstr "Jank Threshold"
 
 #: wifi-debugging
-msgid "Wi-Fi output in adb"
+#, fuzzy
+msgid "Wi-Fi output in ADB"
 msgstr "Jaltal Wifi e adb"
 
 #: bluetooth-debugging
-msgid "Bluetooth output in adb"
+#, fuzzy
+msgid "Bluetooth output in ADB"
 msgstr "Jaltal Bluutuus e adb"
 
 #: console-enabled
 msgid "Console enabled"
 msgstr "Ginorde hurminaama"
+
+#: cards-view-screenshots
+msgid "Cards View: Screenshots"
+msgstr ""
 
 #: model-name
 msgid "Model"
@@ -3295,6 +3427,10 @@ msgstr "Heftinorde mahngo"
 #: update-channel
 msgid "Update channel"
 msgstr "Calol kesɗitingol"
+
+#: update-url
+msgid "Update URL"
+msgstr ""
 
 #: last-updated
 msgid "Last Updated"
@@ -3560,7 +3696,8 @@ msgid "Apache License 2.0"
 msgstr "Apache License 2.0"
 
 #: launch-ftu
-msgid "Launch first time use"
+#, fuzzy
+msgid "Launch First Time Use"
 msgstr "Fuɗɗo kuutoragol gadanol"
 
 #: no-ftu
@@ -3571,33 +3708,33 @@ msgstr "Alaa jaaɓngal kuutoragol gadanol yiytaa"
 msgid "Rocketbar enabled"
 msgstr "Palal rokket harminaama"
 
-#: software-button-enabled
-msgid "Enable software home button"
-msgstr "Hurmin butoŋ jaɓɓorgo topirde"
+#: software-home-button
+msgid "Software home button"
+msgstr ""
 
-#: homegesture-enabled
-msgid "Home gesture enabled"
-msgstr "Beese Jaɓɓorde ena kurmi"
+#: home-gesture
+msgid "Home gesture"
+msgstr ""
 
-#: edgesgesture-enabled
-msgid "Edges gesture enabled"
-msgstr "Beese ŋori ena kurmi"
+#: edges-gesture
+msgid "Edges gesture"
+msgstr ""
 
-#: continuoustransition-enabled
-msgid "Continuous transition enabled"
-msgstr "Continuous transition ena hurmi"
+#: continuous-transition
+msgid "Continuous transition"
+msgstr ""
 
 #: debug-gaia-enabled
 msgid "Gaia debug traces"
 msgstr "Gaia debug traces"
 
-#: enable-app-transition
-msgid "App transition enabled"
-msgstr "App transition ena hurmi"
+#: app-transition
+msgid "App transition"
+msgstr ""
 
-#: enable-app-suspending
-msgid "Keep killed app in task manager"
-msgstr "Woppu jaaɓɗe maayɗe e toppitorde golle"
+#: app-suspending
+msgid "App suspending"
+msgstr ""
 
 #: window-management
 msgid "Window management"
@@ -3705,6 +3842,14 @@ msgid ""
 msgstr ""
 "So tarorde yaynirde hurminaama, kaɓirgol maa hokkat duttinal sawto ngam "
 "wallude huutorɓe wumɓe walla famarɓe jiyle."
+
+#: screen-reader-speech-volume
+msgid "Speech Volume"
+msgstr ""
+
+#: screen-reader-speech-rate
+msgid "Speech Rate"
+msgstr ""
 
 #: screenReader-confirm-title-start
 msgid "Start Screen Reader?"
@@ -4064,6 +4209,61 @@ msgstr "Neldu Keɓe"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Heɓ Ngonka Calol"
+
+#~ msgid ""
+#~ "Internet connection, MMS, A-GPS and Marketplace payments will be sent from"
+#~ msgstr "Njoɓdeele ceŋol Enternet, MMS, A-GPS e Marketplace maa nelde iwde e"
+
+#~ msgid "Accounts"
+#~ msgstr "konte"
+
+#~ msgid "Persona"
+#~ msgstr "Personaaje"
+
+#~ msgid "Mail"
+#~ msgstr "Imeel"
+
+#~ msgid "{{phoneLock}}"
+#~ msgstr "{{phoneLock}}"
+
+#~ msgid "Enable hardware composer"
+#~ msgstr "Hurmin feŋtorde njamdeeri"
+
+#~ msgid "Enable APZ for all content processes"
+#~ msgstr "Hurmin APZ e cili loowdi kala"
+
+#~ msgid "Layers: Enable Tiles"
+#~ msgstr "Layers: Hurmin Keeɗe"
+
+#~ msgid "Layers: Simple Tiles"
+#~ msgstr "Layers: Keeɗe Ɓolte"
+
+#~ msgid "Layers: Progressive Paint"
+#~ msgstr "Layers: Progressive Paint"
+
+#~ msgid "Layers: Draw Tile Borders"
+#~ msgstr "Layers: Diid Ŋori Keeɗe"
+
+#~ msgid "Remote debugging"
+#~ msgstr "Buggitagol goɗɗungol"
+
+#~ msgid "Enable software home button"
+#~ msgstr "Hurmin butoŋ jaɓɓorgo topirde"
+
+#~ msgid "Home gesture enabled"
+#~ msgstr "Beese Jaɓɓorde ena kurmi"
+
+#~ msgid "Edges gesture enabled"
+#~ msgstr "Beese ŋori ena kurmi"
+
+#~ msgid "Continuous transition enabled"
+#~ msgstr "Continuous transition ena hurmi"
+
+#~ msgid "App transition enabled"
+#~ msgstr "App transition ena hurmi"
+
+#~ msgid "Keep killed app in task manager"
+#~ msgstr "Woppu jaaɓɗe maayɗe e toppitorde golle"
 
 #~ msgid "Grid"
 #~ msgstr "Tagar"
