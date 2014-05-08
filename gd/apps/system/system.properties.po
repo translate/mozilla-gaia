@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-30 17:44+0100\n"
+"POT-Creation-Date: 2014-05-08 11:07+0100\n"
 "PO-Revision-Date: 2014-04-01 15:25+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -93,6 +93,31 @@ msgstr "(tha solaraiche na seirbheise glaiste)"
 msgid "(corporate locked)"
 msgstr "(glas corporaid)"
 
+#: emergencyCallsOnly-network1Locked
+#, fuzzy
+msgid "(network1 locked)"
+msgstr "(lìonra glaiste)"
+
+#: emergencyCallsOnly-network2Locked
+#, fuzzy
+msgid "(network2 locked)"
+msgstr "(lìonra glaiste)"
+
+#: emergencyCallsOnly-hrpdNetworkLocked
+#, fuzzy
+msgid "(hrpd network locked)"
+msgstr "(lìonra glaiste)"
+
+#: emergencyCallsOnly-ruimCorporateLocked
+#, fuzzy
+msgid "(ruim corporate locked)"
+msgstr "(glas corporaid)"
+
+#: emergencyCallsOnly-ruimServiceProviderLocked
+#, fuzzy
+msgid "(ruim service provider locked)"
+msgstr "(tha solaraiche na seirbheise glaiste)"
+
 #: enterPIN
 msgid "Enter PIN"
 msgstr "Cuir a-steach am PIN"
@@ -158,6 +183,27 @@ msgstr "Teachdaireachd-gutha ùr"
 msgid "Dial {{number}}"
 msgstr "Cuir fòn gu {{number}}"
 
+#: voicemailNotificationMultiSim
+msgid "(SIM {{n}}) {{title}}"
+msgstr ""
+
+#. # NFC Bluetooth Connect
+#: confirmNFCConnectBTenabledNameUnknown
+msgid "Are you sure you want to connect to the device?"
+msgstr ""
+
+#: confirmNFCConnectBTdisabledNameUnknown
+msgid "Turn on Bluetooth and connect to the device?"
+msgstr ""
+
+#: confirmNFCConnectBTenabledNameKnown
+msgid "Are you sure you want to connect to {{deviceName}}?"
+msgstr ""
+
+#: confirmNFCConnectBTdisabledNameKnown
+msgid "Turn on Bluetooth and connect to {{deviceName}}?"
+msgstr ""
+
 #. # sleep menu
 #: deviceMenu
 msgid "Phone"
@@ -186,14 +232,6 @@ msgstr "Ath-thòisich"
 #: power
 msgid "Power off"
 msgstr "Cuir a' chumhachd dheth"
-
-#: asyncpanzoom
-msgid "Disable APZ for Apps"
-msgstr "Cuir APZ à comas airson aplacaidean"
-
-#: asyncpanzoomOff
-msgid "Enable APZ for Apps"
-msgstr "Cuir APZ an comas airson aplacaidean"
 
 #. # screen reader
 #: enableScreenReaderSteps
@@ -227,6 +265,10 @@ msgstr "Tha"
 #: no
 msgid "No"
 msgstr "Chan eil"
+
+#: dontallow
+msgid "Don’t allow"
+msgstr ""
 
 #: allow
 msgid "Allow"
@@ -287,6 +329,10 @@ msgstr "Cuimhnich mo roghainn"
 #: more-info
 msgid "More info…"
 msgstr "Barrachd fiosrachaidh…"
+
+#: hide-info
+msgid "Hide info"
+msgstr ""
 
 #. # App install
 #: install-app
@@ -373,7 +419,17 @@ msgstr ""
 msgid "Are you sure you want to cancel this install?"
 msgstr "A bheil thu cinnteach gu bheil thu airson sgur dhen stàladh seo?"
 
+#. # LOCALIZATION NOTE (cancel-install*): cancel-install is the string used in
+#. # the title, cancel-install-button is used in the bottom-left button
 #: cancel-install
+#, fuzzy
+msgctxt "cancel-install"
+msgid "Cancel Install"
+msgstr "Sguir dhen stàladh"
+
+#: cancel-install-button
+#, fuzzy
+msgctxt "cancel-install-button"
 msgid "Cancel Install"
 msgstr "Sguir dhen stàladh"
 
@@ -382,6 +438,8 @@ msgid "Resume"
 msgstr "Lean air"
 
 #: continue
+#, fuzzy
+msgctxt "continue"
 msgid "Continue"
 msgstr "Lean air adhart"
 
@@ -702,6 +760,155 @@ msgstr "Cha deach am frithealaiche a lorg"
 msgid "Can’t find the server at {{name}}."
 msgstr "Chan urrainn dhuinn am frithealaiche air {{name}} a lorg."
 
+#: file-not-found
+msgid "File not found"
+msgstr ""
+
+#: file-not-found-error
+msgid "The device can’t display this page because the file cannot be found."
+msgstr ""
+
+#: connection-failed
+#, fuzzy
+msgctxt "connection-failed"
+msgid "Unable to connect"
+msgstr "Cha ghabh ceangal a dhèanamh"
+
+#: connection-failed-error
+msgctxt "connection-failed-error"
+msgid "A network error occurred while trying to reach the site."
+msgstr ""
+
+#: invalid-connection
+#, fuzzy
+msgctxt "invalid-connection"
+msgid "Unable to connect"
+msgstr "Cha ghabh ceangal a dhèanamh"
+
+#: invalid-connection-error
+msgctxt "invalid-connection-error"
+msgid "A network error occurred while trying to reach the site."
+msgstr ""
+
+#: malformed-uri
+msgid "URL not valid"
+msgstr ""
+
+#: malformed-uri-error
+msgid "The URL entered is not valid and cannot be loaded."
+msgstr ""
+
+#: redirect-loop
+msgctxt "redirect-loop"
+msgid "Can’t display page"
+msgstr ""
+
+#: redirect-loop-error
+msgid ""
+"The device can’t display this page because the page is not redirecting "
+"properly. Try this page again at a later time."
+msgstr ""
+
+#: not-cached
+msgid "Page expired"
+msgstr ""
+
+#: not-cached-error
+msgid ""
+"As a security precaution, this page cannot be displayed by the device "
+"because it has expired."
+msgstr ""
+
+#: is-printing-error
+msgid "The document cannot change while Printing or in Print Preview."
+msgstr ""
+
+#: denied-port-access
+msgid "This address is restricted"
+msgstr ""
+
+#: denied-port-access-error
+msgid ""
+"This address uses a network port which is normally used for purposes other "
+"than Web browsing. The device has cancelled the request for your protection."
+msgstr ""
+
+#: proxy-resolve-failure
+msgctxt "proxy-resolve-failure"
+msgid "Proxy Server Error"
+msgstr ""
+
+#: proxy-resolve-failure-error
+msgid "The device is configured to use a proxy server that can’t be found."
+msgstr ""
+
+#: proxy-connect-failure
+msgctxt "proxy-connect-failure"
+msgid "Proxy Server Error"
+msgstr ""
+
+#: proxy-connect-failure-error
+msgid ""
+"The device is configured to use a proxy server that is refusing connections."
+msgstr ""
+
+#: content-encoding
+msgctxt "content-encoding"
+msgid "Can’t display page"
+msgstr ""
+
+#: content-encoding-error
+msgid ""
+"The device can’t display this page because a content encoding error occurred."
+msgstr ""
+
+#: remote-xul
+msgid "Page unsupported"
+msgstr ""
+
+#: remote-xul-error
+msgid ""
+"This page can’t be displayed because it uses a technology that is not "
+"supported on the device."
+msgstr ""
+
+#: phishing-blocked
+msgid "Warning"
+msgstr ""
+
+#: phishing-blocked-error
+msgid ""
+"The website has been reported as a web forgery designed to trick users into "
+"sharing personal or financial information."
+msgstr ""
+
+#: malware-blocked
+msgid "Malware attack blocked"
+msgstr ""
+
+#: malware-blocked-error
+msgid "The site at has been reported as an attack site and has been blocked."
+msgstr ""
+
+#: unsafe-content-type
+msgid "Unsafe content"
+msgstr ""
+
+#: unsafe-content-type-error
+msgid "The page cannot be shown because it may not be safe to open."
+msgstr ""
+
+#: corrupted-content
+msgctxt "corrupted-content"
+msgid "Can’t display page"
+msgstr ""
+
+#: corrupted-content-error
+msgid ""
+"The page cannot be shown because an error in the data transmission was "
+"detected."
+msgstr ""
+
 #: network-connection-unavailable
 msgid "Network connection unavailable"
 msgstr "Chan eil ceangal ris an lìonra ri fhaighinn"
@@ -714,17 +921,31 @@ msgstr ""
 "Feumaidh {{name}} ceangal ris an lìonra. Feuch is ceangail ri lìonra WiFi no "
 "dàta mobile."
 
+#: network-error-launching
+msgid "{{name}} requires an Internet connection."
+msgstr ""
+
+#: network-error-in-app
+msgid "No access to the Internet right now."
+msgstr ""
+
 #: unable-to-connect
+#, fuzzy
+msgctxt "unable-to-connect"
 msgid "Unable to connect"
 msgstr "Cha ghabh ceangal a dhèanamh"
-
-#: tap-to-retry
-msgid "Tap to retry"
-msgstr "Thoir gnogag gus feuchainn ris a-rithist"
 
 #: try-again
 msgid "Try again"
 msgstr "Feuch ris a-rithist"
+
+#: check-settings
+msgid "Check settings"
+msgstr ""
+
+#: tap-to-check-settings
+msgid "Tap to check settings"
+msgstr ""
 
 #. # value selector, time/date picker
 #: select-time
@@ -851,25 +1072,15 @@ msgid "Report"
 msgstr "Aithisg"
 
 #. # bluetooth transfer
-#: bluetooth-sendingTitle
-msgctxt "bluetooth-sendingTitle"
-msgid "Sending Bluetooth transfer.."
+#: bluetooth-sending-progress
+#, fuzzy
+msgid "Sending Bluetooth transfer…"
 msgstr "A’ cur an tar-chuir Bluetooth.."
 
-#: bluetooth-receivingTitle
-msgctxt "bluetooth-receivingTitle"
-msgid "Receiving Bluetooth transfer.."
-msgstr "A’ faighinn tar-chuir Bluetooth.."
-
-#: bluetooth-sending-progress
-msgctxt "bluetooth-sending-progress"
-msgid "Sending Bluetooth transfer.."
-msgstr "A' cur an tar-chuir Bluetooth.."
-
 #: bluetooth-receiving-progress
-msgctxt "bluetooth-receiving-progress"
-msgid "Receiving Bluetooth transfer.."
-msgstr "A' faighinn tar-chuir Bluetooth.."
+#, fuzzy
+msgid "Receiving Bluetooth transfer…"
+msgstr "A’ faighinn tar-chuir Bluetooth.."
 
 #: acceptFileTransfer
 msgid "Accept Bluetooth file transfer?"
@@ -944,6 +1155,12 @@ msgstr "Gabh ris"
 #: cancelFileTransfer
 msgid "Cancel Bluetooth file transfer?"
 msgstr "A bheil thu airson sgur dhen tar-chur fhaidhle Bluetooth?"
+
+#: continueFileTransfer
+#, fuzzy
+msgctxt "continueFileTransfer"
+msgid "Continue"
+msgstr "Lean air adhart"
 
 #: transfer-has-started-title
 msgid "The transfer has started"
@@ -1067,6 +1284,31 @@ msgstr "Còd CCK"
 msgid "SPCK code"
 msgstr "Còd SPCK"
 
+#: nck1code
+#, fuzzy
+msgid "NCK1 code"
+msgstr "Còd NCK"
+
+#: nck2code
+#, fuzzy
+msgid "NCK2 code"
+msgstr "Còd NCK"
+
+#: hnckcode
+#, fuzzy
+msgid "HNCK code"
+msgstr "Còd NCK"
+
+#: rcckcode
+#, fuzzy
+msgid "RCCK code"
+msgstr "Còd CCK"
+
+#: rspckcode
+#, fuzzy
+msgid "RSPCK code"
+msgstr "Còd SPCK"
+
 #: whatIsSimPin
 msgid "What is a SIM PIN?"
 msgstr "Dè th' ann am PIN an t-SIM?"
@@ -1113,6 +1355,31 @@ msgstr "Cuir a-steach an còd CCK"
 
 #: spckTitle
 msgid "Enter SPCK code"
+msgstr "Cuir a-steach am SPCK"
+
+#: nck1Title
+#, fuzzy
+msgid "Enter NCK1 code"
+msgstr "Cuir a-steach an còd NCK"
+
+#: nck2Title
+#, fuzzy
+msgid "Enter NCK2 code"
+msgstr "Cuir a-steach an còd NCK"
+
+#: hnckTitle
+#, fuzzy
+msgid "Enter HNCK code"
+msgstr "Cuir a-steach an còd NCK"
+
+#: rcckTitle
+#, fuzzy
+msgid "Enter RCCK code"
+msgstr "Cuir a-steach an còd CCK"
+
+#: rspckTitle
+#, fuzzy
+msgid "Enter RSPCK code"
 msgstr "Cuir a-steach am SPCK"
 
 #: newpinTitle
@@ -1630,12 +1897,16 @@ msgid "{{percentage}}% - {{name}}"
 msgstr "{{percentage}}% - {{name}}"
 
 #. # Rocketbar
-#: search
-msgid "Search"
-msgstr "Lorg"
+#: search-or-enter-address
+#, fuzzy
+msgctxt "search-or-enter-address"
+msgid "Search or enter address"
+msgstr "Lorg seòladh no cuir fear a-steach"
 
-#: search-or-type-address.placeholder
-msgid "Search or type address"
+#: search-or-enter-address.placeholder
+#, fuzzy
+msgctxt "search-or-enter-address.placeholder"
+msgid "Search or enter address"
 msgstr "Lorg seòladh no cuir fear a-steach"
 
 #. # Hotspot
@@ -1644,6 +1915,26 @@ msgid "SIM card is absent or inserted incorrectly, so turn off hotspot"
 msgstr ""
 "Chan eil cairt SIM ann no cha deach a chur a-steach mar bu chòir; cuir dheth "
 "an hotspot"
+
+#~ msgid "Disable APZ for Apps"
+#~ msgstr "Cuir APZ à comas airson aplacaidean"
+
+#~ msgid "Enable APZ for Apps"
+#~ msgstr "Cuir APZ an comas airson aplacaidean"
+
+#~ msgid "Tap to retry"
+#~ msgstr "Thoir gnogag gus feuchainn ris a-rithist"
+
+#~ msgctxt "bluetooth-sending-progress"
+#~ msgid "Sending Bluetooth transfer.."
+#~ msgstr "A' cur an tar-chuir Bluetooth.."
+
+#~ msgctxt "bluetooth-receiving-progress"
+#~ msgid "Receiving Bluetooth transfer.."
+#~ msgstr "A' faighinn tar-chuir Bluetooth.."
+
+#~ msgid "Search"
+#~ msgstr "Lorg"
 
 #~ msgid ""
 #~ "Telecom services and internet are disable due to emergency call back "
@@ -1686,11 +1977,6 @@ msgstr ""
 #~ msgctxt "dontshare-media-capture"
 #~ msgid "Don't Share"
 #~ msgstr "Na co-roinn"
-
-#, fuzzy
-#~ msgctxt "continue"
-#~ msgid "Continue"
-#~ msgstr "Lean air adhart"
 
 #~ msgctxt "unknown-size"
 #~ msgid "{{unknown}}"

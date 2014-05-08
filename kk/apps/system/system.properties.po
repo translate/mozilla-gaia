@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-30 17:44+0100\n"
+"POT-Creation-Date: 2014-05-08 11:07+0100\n"
 "PO-Revision-Date: 2013-11-18 16:53+0000\n"
 "Last-Translator: Baurzhan <baurthefirst@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,6 +89,31 @@ msgstr "(қызмет көрсетуші блокталған)"
 msgid "(corporate locked)"
 msgstr "(корпоративті блоктау)"
 
+#: emergencyCallsOnly-network1Locked
+#, fuzzy
+msgid "(network1 locked)"
+msgstr "(желі блокталған)"
+
+#: emergencyCallsOnly-network2Locked
+#, fuzzy
+msgid "(network2 locked)"
+msgstr "(желі блокталған)"
+
+#: emergencyCallsOnly-hrpdNetworkLocked
+#, fuzzy
+msgid "(hrpd network locked)"
+msgstr "(желі блокталған)"
+
+#: emergencyCallsOnly-ruimCorporateLocked
+#, fuzzy
+msgid "(ruim corporate locked)"
+msgstr "(корпоративті блоктау)"
+
+#: emergencyCallsOnly-ruimServiceProviderLocked
+#, fuzzy
+msgid "(ruim service provider locked)"
+msgstr "(қызмет көрсетуші блокталған)"
+
 #: enterPIN
 msgid "Enter PIN"
 msgstr "PIN енгізіңіз"
@@ -155,6 +180,27 @@ msgstr "Жаңа дауыстық пошта"
 msgid "Dial {{number}}"
 msgstr "{{number}} нөміріне шалу"
 
+#: voicemailNotificationMultiSim
+msgid "(SIM {{n}}) {{title}}"
+msgstr ""
+
+#. # NFC Bluetooth Connect
+#: confirmNFCConnectBTenabledNameUnknown
+msgid "Are you sure you want to connect to the device?"
+msgstr ""
+
+#: confirmNFCConnectBTdisabledNameUnknown
+msgid "Turn on Bluetooth and connect to the device?"
+msgstr ""
+
+#: confirmNFCConnectBTenabledNameKnown
+msgid "Are you sure you want to connect to {{deviceName}}?"
+msgstr ""
+
+#: confirmNFCConnectBTdisabledNameKnown
+msgid "Turn on Bluetooth and connect to {{deviceName}}?"
+msgstr ""
+
 #. # sleep menu
 #: deviceMenu
 msgid "Phone"
@@ -184,14 +230,6 @@ msgstr "Қайта қосу"
 msgid "Power off"
 msgstr "Сөндіру"
 
-#: asyncpanzoom
-msgid "Disable APZ for Apps"
-msgstr ""
-
-#: asyncpanzoomOff
-msgid "Enable APZ for Apps"
-msgstr ""
-
 #. # screen reader
 #: enableScreenReaderSteps
 msgid ""
@@ -220,6 +258,10 @@ msgstr "Иә"
 #: no
 msgid "No"
 msgstr "Жоқ"
+
+#: dontallow
+msgid "Don’t allow"
+msgstr ""
 
 #: allow
 msgid "Allow"
@@ -280,6 +322,10 @@ msgstr "Таңдауымды еске сақтау"
 #: more-info
 msgid "More info…"
 msgstr "Көбірек ақпарат…"
+
+#: hide-info
+msgid "Hide info"
+msgstr ""
 
 #. # App install
 #: install-app
@@ -368,7 +414,17 @@ msgstr "Қолданбаларды кейін де бастапқы орнату
 msgid "Are you sure you want to cancel this install?"
 msgstr "Орнатудан бас тартуды шынымен қалайсыз ба?"
 
+#. # LOCALIZATION NOTE (cancel-install*): cancel-install is the string used in
+#. # the title, cancel-install-button is used in the bottom-left button
 #: cancel-install
+#, fuzzy
+msgctxt "cancel-install"
+msgid "Cancel Install"
+msgstr "Орнатудан бас тарту"
+
+#: cancel-install-button
+#, fuzzy
+msgctxt "cancel-install-button"
 msgid "Cancel Install"
 msgstr "Орнатудан бас тарту"
 
@@ -378,6 +434,7 @@ msgstr "Жалғастыру"
 
 #: continue
 #, fuzzy
+msgctxt "continue"
 msgid "Continue"
 msgstr "Жалғастыру"
 
@@ -684,6 +741,153 @@ msgstr ""
 msgid "Can’t find the server at {{name}}."
 msgstr ""
 
+#: file-not-found
+msgid "File not found"
+msgstr ""
+
+#: file-not-found-error
+msgid "The device can’t display this page because the file cannot be found."
+msgstr ""
+
+#: connection-failed
+msgctxt "connection-failed"
+msgid "Unable to connect"
+msgstr ""
+
+#: connection-failed-error
+msgctxt "connection-failed-error"
+msgid "A network error occurred while trying to reach the site."
+msgstr ""
+
+#: invalid-connection
+msgctxt "invalid-connection"
+msgid "Unable to connect"
+msgstr ""
+
+#: invalid-connection-error
+msgctxt "invalid-connection-error"
+msgid "A network error occurred while trying to reach the site."
+msgstr ""
+
+#: malformed-uri
+msgid "URL not valid"
+msgstr ""
+
+#: malformed-uri-error
+msgid "The URL entered is not valid and cannot be loaded."
+msgstr ""
+
+#: redirect-loop
+msgctxt "redirect-loop"
+msgid "Can’t display page"
+msgstr ""
+
+#: redirect-loop-error
+msgid ""
+"The device can’t display this page because the page is not redirecting "
+"properly. Try this page again at a later time."
+msgstr ""
+
+#: not-cached
+msgid "Page expired"
+msgstr ""
+
+#: not-cached-error
+msgid ""
+"As a security precaution, this page cannot be displayed by the device "
+"because it has expired."
+msgstr ""
+
+#: is-printing-error
+msgid "The document cannot change while Printing or in Print Preview."
+msgstr ""
+
+#: denied-port-access
+msgid "This address is restricted"
+msgstr ""
+
+#: denied-port-access-error
+msgid ""
+"This address uses a network port which is normally used for purposes other "
+"than Web browsing. The device has cancelled the request for your protection."
+msgstr ""
+
+#: proxy-resolve-failure
+msgctxt "proxy-resolve-failure"
+msgid "Proxy Server Error"
+msgstr ""
+
+#: proxy-resolve-failure-error
+msgid "The device is configured to use a proxy server that can’t be found."
+msgstr ""
+
+#: proxy-connect-failure
+msgctxt "proxy-connect-failure"
+msgid "Proxy Server Error"
+msgstr ""
+
+#: proxy-connect-failure-error
+msgid ""
+"The device is configured to use a proxy server that is refusing connections."
+msgstr ""
+
+#: content-encoding
+msgctxt "content-encoding"
+msgid "Can’t display page"
+msgstr ""
+
+#: content-encoding-error
+msgid ""
+"The device can’t display this page because a content encoding error occurred."
+msgstr ""
+
+#: remote-xul
+msgid "Page unsupported"
+msgstr ""
+
+#: remote-xul-error
+msgid ""
+"This page can’t be displayed because it uses a technology that is not "
+"supported on the device."
+msgstr ""
+
+#: phishing-blocked
+msgid "Warning"
+msgstr ""
+
+#: phishing-blocked-error
+msgid ""
+"The website has been reported as a web forgery designed to trick users into "
+"sharing personal or financial information."
+msgstr ""
+
+#: malware-blocked
+msgid "Malware attack blocked"
+msgstr ""
+
+#: malware-blocked-error
+msgid "The site at has been reported as an attack site and has been blocked."
+msgstr ""
+
+#: unsafe-content-type
+msgid "Unsafe content"
+msgstr ""
+
+#: unsafe-content-type-error
+msgid "The page cannot be shown because it may not be safe to open."
+msgstr ""
+
+#: corrupted-content
+msgctxt "corrupted-content"
+msgid "Can’t display page"
+msgstr ""
+
+#: corrupted-content-error
+msgid ""
+"The page cannot be shown because an error in the data transmission was "
+"detected."
+msgstr ""
+
 #: network-connection-unavailable
 msgid "Network connection unavailable"
 msgstr "Желілік байланыс қолжетерсіз"
@@ -696,17 +900,30 @@ msgstr ""
 "{{name}} желілік байланысты талап етеді. Wi-Fi не ұялы деректер желісіне "
 "байланысты орнатып көріңіз."
 
-#: unable-to-connect
-msgid "Unable to connect"
+#: network-error-launching
+msgid "{{name}} requires an Internet connection."
 msgstr ""
 
-#: tap-to-retry
-msgid "Tap to retry"
+#: network-error-in-app
+msgid "No access to the Internet right now."
+msgstr ""
+
+#: unable-to-connect
+msgctxt "unable-to-connect"
+msgid "Unable to connect"
 msgstr ""
 
 #: try-again
 msgid "Try again"
 msgstr "Қайтадан көріңіз"
+
+#: check-settings
+msgid "Check settings"
+msgstr ""
+
+#: tap-to-check-settings
+msgid "Tap to check settings"
+msgstr ""
 
 #. # value selector, time/date picker
 #: select-time
@@ -834,24 +1051,14 @@ msgid "Report"
 msgstr "Хабарлау"
 
 #. # bluetooth transfer
-#: bluetooth-sendingTitle
-msgctxt "bluetooth-sendingTitle"
-msgid "Sending Bluetooth transfer.."
-msgstr "Bluetooth алмасуын жіберу.."
-
-#: bluetooth-receivingTitle
-msgctxt "bluetooth-receivingTitle"
-msgid "Receiving Bluetooth transfer.."
-msgstr "Bluetooth алмасуын қабылдау.."
-
 #: bluetooth-sending-progress
-msgctxt "bluetooth-sending-progress"
-msgid "Sending Bluetooth transfer.."
+#, fuzzy
+msgid "Sending Bluetooth transfer…"
 msgstr "Bluetooth алмасуын жіберу.."
 
 #: bluetooth-receiving-progress
-msgctxt "bluetooth-receiving-progress"
-msgid "Receiving Bluetooth transfer.."
+#, fuzzy
+msgid "Receiving Bluetooth transfer…"
 msgstr "Bluetooth алмасуын қабылдау.."
 
 #: acceptFileTransfer
@@ -929,6 +1136,12 @@ msgstr "Алмасу"
 #: cancelFileTransfer
 msgid "Cancel Bluetooth file transfer?"
 msgstr "Bluetooth файлдар тасымалдаудан бас тарту керек пе?"
+
+#: continueFileTransfer
+#, fuzzy
+msgctxt "continueFileTransfer"
+msgid "Continue"
+msgstr "Жалғастыру"
 
 #: transfer-has-started-title
 msgid "The transfer has started"
@@ -1051,6 +1264,31 @@ msgstr "CCK коды"
 msgid "SPCK code"
 msgstr "SPCK коды"
 
+#: nck1code
+#, fuzzy
+msgid "NCK1 code"
+msgstr "NCK коды"
+
+#: nck2code
+#, fuzzy
+msgid "NCK2 code"
+msgstr "NCK коды"
+
+#: hnckcode
+#, fuzzy
+msgid "HNCK code"
+msgstr "NCK коды"
+
+#: rcckcode
+#, fuzzy
+msgid "RCCK code"
+msgstr "CCK коды"
+
+#: rspckcode
+#, fuzzy
+msgid "RSPCK code"
+msgstr "SPCK коды"
+
 #: whatIsSimPin
 msgid "What is a SIM PIN?"
 msgstr "SIM PIN деген не?"
@@ -1097,6 +1335,31 @@ msgstr "CCK кодын енгізіңіз"
 
 #: spckTitle
 msgid "Enter SPCK code"
+msgstr "SPCK кодын енгізіңіз"
+
+#: nck1Title
+#, fuzzy
+msgid "Enter NCK1 code"
+msgstr "NCK кодын енгізіңіз"
+
+#: nck2Title
+#, fuzzy
+msgid "Enter NCK2 code"
+msgstr "NCK кодын енгізіңіз"
+
+#: hnckTitle
+#, fuzzy
+msgid "Enter HNCK code"
+msgstr "NCK кодын енгізіңіз"
+
+#: rcckTitle
+#, fuzzy
+msgid "Enter RCCK code"
+msgstr "CCK кодын енгізіңіз"
+
+#: rspckTitle
+#, fuzzy
+msgid "Enter RSPCK code"
 msgstr "SPCK кодын енгізіңіз"
 
 #: newpinTitle
@@ -1601,18 +1864,28 @@ msgid "{{percentage}}% - {{name}}"
 msgstr ""
 
 #. # Rocketbar
-#: search
-msgid "Search"
+#: search-or-enter-address
+msgctxt "search-or-enter-address"
+msgid "Search or enter address"
 msgstr ""
 
-#: search-or-type-address.placeholder
-msgid "Search or type address"
+#: search-or-enter-address.placeholder
+msgctxt "search-or-enter-address.placeholder"
+msgid "Search or enter address"
 msgstr ""
 
 #. # Hotspot
 #: noSIMCardInHotspot
 msgid "SIM card is absent or inserted incorrectly, so turn off hotspot"
 msgstr ""
+
+#~ msgctxt "bluetooth-sending-progress"
+#~ msgid "Sending Bluetooth transfer.."
+#~ msgstr "Bluetooth алмасуын жіберу.."
+
+#~ msgctxt "bluetooth-receiving-progress"
+#~ msgid "Receiving Bluetooth transfer.."
+#~ msgstr "Bluetooth алмасуын қабылдау.."
 
 #~ msgid "%I:%M"
 #~ msgstr "%I:%M"
@@ -1622,10 +1895,6 @@ msgstr ""
 
 #~ msgid "STK Query"
 #~ msgstr "STK сұранымы"
-
-#~ msgctxt "continue"
-#~ msgid "Continue"
-#~ msgstr "Жалғастыру"
 
 #~ msgctxt "unknown-size"
 #~ msgid "{{unknown}}"

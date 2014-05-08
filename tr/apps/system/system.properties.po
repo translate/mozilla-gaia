@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-30 17:44+0100\n"
+"POT-Creation-Date: 2014-05-08 11:07+0100\n"
 "PO-Revision-Date: 2014-04-04 08:18+0000\n"
 "Last-Translator: Selim <selim@sum.lu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1396599529.000000\n"
@@ -90,6 +90,31 @@ msgstr "(servis sağlayıcı kilidi)"
 msgid "(corporate locked)"
 msgstr "(şirket kilidi)"
 
+#: emergencyCallsOnly-network1Locked
+#, fuzzy
+msgid "(network1 locked)"
+msgstr "(şebeke kilitli)"
+
+#: emergencyCallsOnly-network2Locked
+#, fuzzy
+msgid "(network2 locked)"
+msgstr "(şebeke kilitli)"
+
+#: emergencyCallsOnly-hrpdNetworkLocked
+#, fuzzy
+msgid "(hrpd network locked)"
+msgstr "(şebeke kilitli)"
+
+#: emergencyCallsOnly-ruimCorporateLocked
+#, fuzzy
+msgid "(ruim corporate locked)"
+msgstr "(şirket kilidi)"
+
+#: emergencyCallsOnly-ruimServiceProviderLocked
+#, fuzzy
+msgid "(ruim service provider locked)"
+msgstr "(servis sağlayıcı kilidi)"
+
 #: enterPIN
 msgid "Enter PIN"
 msgstr "PIN'i girin"
@@ -155,6 +180,27 @@ msgstr "Yeni sesli mesaj"
 msgid "Dial {{number}}"
 msgstr "Ara: {{number}}"
 
+#: voicemailNotificationMultiSim
+msgid "(SIM {{n}}) {{title}}"
+msgstr ""
+
+#. # NFC Bluetooth Connect
+#: confirmNFCConnectBTenabledNameUnknown
+msgid "Are you sure you want to connect to the device?"
+msgstr ""
+
+#: confirmNFCConnectBTdisabledNameUnknown
+msgid "Turn on Bluetooth and connect to the device?"
+msgstr ""
+
+#: confirmNFCConnectBTenabledNameKnown
+msgid "Are you sure you want to connect to {{deviceName}}?"
+msgstr ""
+
+#: confirmNFCConnectBTdisabledNameKnown
+msgid "Turn on Bluetooth and connect to {{deviceName}}?"
+msgstr ""
+
 #. # sleep menu
 #: deviceMenu
 msgid "Phone"
@@ -183,14 +229,6 @@ msgstr "Yeniden başlat"
 #: power
 msgid "Power off"
 msgstr "Kapat"
-
-#: asyncpanzoom
-msgid "Disable APZ for Apps"
-msgstr "Uygulamalar için APZ'yi kapat"
-
-#: asyncpanzoomOff
-msgid "Enable APZ for Apps"
-msgstr "Uygulamalar için APZ'yi aç"
 
 #. # screen reader
 #: enableScreenReaderSteps
@@ -224,6 +262,11 @@ msgstr "Evet"
 #: no
 msgid "No"
 msgstr "Hayır"
+
+#: dontallow
+#, fuzzy
+msgid "Don’t allow"
+msgstr "İzin verme"
 
 #: allow
 msgid "Allow"
@@ -284,6 +327,10 @@ msgstr "Tercihimi hatırla"
 #: more-info
 msgid "More info…"
 msgstr "Daha fazla bilgi…"
+
+#: hide-info
+msgid "Hide info"
+msgstr ""
 
 #. # App install
 #: install-app
@@ -369,7 +416,17 @@ msgstr "Uygulamalar daha sonra orijinal yükleme kaynağından yüklenebilir."
 msgid "Are you sure you want to cancel this install?"
 msgstr "Bu yüklemeyi iptal etmek istediğinizden emin misiniz?"
 
+#. # LOCALIZATION NOTE (cancel-install*): cancel-install is the string used in
+#. # the title, cancel-install-button is used in the bottom-left button
 #: cancel-install
+#, fuzzy
+msgctxt "cancel-install"
+msgid "Cancel Install"
+msgstr "Yüklemeyi iptal et"
+
+#: cancel-install-button
+#, fuzzy
+msgctxt "cancel-install-button"
 msgid "Cancel Install"
 msgstr "Yüklemeyi iptal et"
 
@@ -378,6 +435,8 @@ msgid "Resume"
 msgstr "Devam et"
 
 #: continue
+#, fuzzy
+msgctxt "continue"
 msgid "Continue"
 msgstr "Devam et"
 
@@ -684,6 +743,155 @@ msgstr "Sunucu bulunamadı"
 msgid "Can’t find the server at {{name}}."
 msgstr "{{name}} sunucusu bulunamadı."
 
+#: file-not-found
+msgid "File not found"
+msgstr ""
+
+#: file-not-found-error
+msgid "The device can’t display this page because the file cannot be found."
+msgstr ""
+
+#: connection-failed
+#, fuzzy
+msgctxt "connection-failed"
+msgid "Unable to connect"
+msgstr "Bağlanılamadı"
+
+#: connection-failed-error
+msgctxt "connection-failed-error"
+msgid "A network error occurred while trying to reach the site."
+msgstr ""
+
+#: invalid-connection
+#, fuzzy
+msgctxt "invalid-connection"
+msgid "Unable to connect"
+msgstr "Bağlanılamadı"
+
+#: invalid-connection-error
+msgctxt "invalid-connection-error"
+msgid "A network error occurred while trying to reach the site."
+msgstr ""
+
+#: malformed-uri
+msgid "URL not valid"
+msgstr ""
+
+#: malformed-uri-error
+msgid "The URL entered is not valid and cannot be loaded."
+msgstr ""
+
+#: redirect-loop
+msgctxt "redirect-loop"
+msgid "Can’t display page"
+msgstr ""
+
+#: redirect-loop-error
+msgid ""
+"The device can’t display this page because the page is not redirecting "
+"properly. Try this page again at a later time."
+msgstr ""
+
+#: not-cached
+msgid "Page expired"
+msgstr ""
+
+#: not-cached-error
+msgid ""
+"As a security precaution, this page cannot be displayed by the device "
+"because it has expired."
+msgstr ""
+
+#: is-printing-error
+msgid "The document cannot change while Printing or in Print Preview."
+msgstr ""
+
+#: denied-port-access
+msgid "This address is restricted"
+msgstr ""
+
+#: denied-port-access-error
+msgid ""
+"This address uses a network port which is normally used for purposes other "
+"than Web browsing. The device has cancelled the request for your protection."
+msgstr ""
+
+#: proxy-resolve-failure
+msgctxt "proxy-resolve-failure"
+msgid "Proxy Server Error"
+msgstr ""
+
+#: proxy-resolve-failure-error
+msgid "The device is configured to use a proxy server that can’t be found."
+msgstr ""
+
+#: proxy-connect-failure
+msgctxt "proxy-connect-failure"
+msgid "Proxy Server Error"
+msgstr ""
+
+#: proxy-connect-failure-error
+msgid ""
+"The device is configured to use a proxy server that is refusing connections."
+msgstr ""
+
+#: content-encoding
+msgctxt "content-encoding"
+msgid "Can’t display page"
+msgstr ""
+
+#: content-encoding-error
+msgid ""
+"The device can’t display this page because a content encoding error occurred."
+msgstr ""
+
+#: remote-xul
+msgid "Page unsupported"
+msgstr ""
+
+#: remote-xul-error
+msgid ""
+"This page can’t be displayed because it uses a technology that is not "
+"supported on the device."
+msgstr ""
+
+#: phishing-blocked
+msgid "Warning"
+msgstr ""
+
+#: phishing-blocked-error
+msgid ""
+"The website has been reported as a web forgery designed to trick users into "
+"sharing personal or financial information."
+msgstr ""
+
+#: malware-blocked
+msgid "Malware attack blocked"
+msgstr ""
+
+#: malware-blocked-error
+msgid "The site at has been reported as an attack site and has been blocked."
+msgstr ""
+
+#: unsafe-content-type
+msgid "Unsafe content"
+msgstr ""
+
+#: unsafe-content-type-error
+msgid "The page cannot be shown because it may not be safe to open."
+msgstr ""
+
+#: corrupted-content
+msgctxt "corrupted-content"
+msgid "Can’t display page"
+msgstr ""
+
+#: corrupted-content-error
+msgid ""
+"The page cannot be shown because an error in the data transmission was "
+"detected."
+msgstr ""
+
 #: network-connection-unavailable
 msgid "Network connection unavailable"
 msgstr "Şebeke bağlantısı yok"
@@ -696,17 +904,31 @@ msgstr ""
 "{{name}} bir şebeke bağlantısı gerektirir. Bir Wi-Fi veya mobil veri "
 "şebekesine bağlanmayı deneyin."
 
+#: network-error-launching
+msgid "{{name}} requires an Internet connection."
+msgstr ""
+
+#: network-error-in-app
+msgid "No access to the Internet right now."
+msgstr ""
+
 #: unable-to-connect
+#, fuzzy
+msgctxt "unable-to-connect"
 msgid "Unable to connect"
 msgstr "Bağlanılamadı"
-
-#: tap-to-retry
-msgid "Tap to retry"
-msgstr "Yeniden dene"
 
 #: try-again
 msgid "Try again"
 msgstr "Tekrar dene"
+
+#: check-settings
+msgid "Check settings"
+msgstr ""
+
+#: tap-to-check-settings
+msgid "Tap to check settings"
+msgstr ""
 
 #. # value selector, time/date picker
 #: select-time
@@ -831,24 +1053,14 @@ msgid "Report"
 msgstr "Rapor gönder"
 
 #. # bluetooth transfer
-#: bluetooth-sendingTitle
-msgctxt "bluetooth-sendingTitle"
-msgid "Sending Bluetooth transfer.."
-msgstr "Bluetooth aktarımı gönderiliyor.."
-
-#: bluetooth-receivingTitle
-msgctxt "bluetooth-receivingTitle"
-msgid "Receiving Bluetooth transfer.."
-msgstr "Bluetooth aktarımı alınıyor.."
-
 #: bluetooth-sending-progress
-msgctxt "bluetooth-sending-progress"
-msgid "Sending Bluetooth transfer.."
+#, fuzzy
+msgid "Sending Bluetooth transfer…"
 msgstr "Bluetooth aktarımı gönderiliyor.."
 
 #: bluetooth-receiving-progress
-msgctxt "bluetooth-receiving-progress"
-msgid "Receiving Bluetooth transfer.."
+#, fuzzy
+msgid "Receiving Bluetooth transfer…"
 msgstr "Bluetooth aktarımı alınıyor.."
 
 #: acceptFileTransfer
@@ -925,6 +1137,12 @@ msgstr "Aktar"
 #: cancelFileTransfer
 msgid "Cancel Bluetooth file transfer?"
 msgstr "Bluetooth dosya aktarımı iptal edilsin mi?"
+
+#: continueFileTransfer
+#, fuzzy
+msgctxt "continueFileTransfer"
+msgid "Continue"
+msgstr "Devam et"
 
 #: transfer-has-started-title
 msgid "The transfer has started"
@@ -1045,6 +1263,31 @@ msgstr "CCK kodu"
 msgid "SPCK code"
 msgstr "SPCK kodu"
 
+#: nck1code
+#, fuzzy
+msgid "NCK1 code"
+msgstr "NCK kodu"
+
+#: nck2code
+#, fuzzy
+msgid "NCK2 code"
+msgstr "NCK kodu"
+
+#: hnckcode
+#, fuzzy
+msgid "HNCK code"
+msgstr "NCK kodu"
+
+#: rcckcode
+#, fuzzy
+msgid "RCCK code"
+msgstr "CCK kodu"
+
+#: rspckcode
+#, fuzzy
+msgid "RSPCK code"
+msgstr "SPCK kodu"
+
 #: whatIsSimPin
 msgid "What is a SIM PIN?"
 msgstr "SIM PIN'i nedir?"
@@ -1090,6 +1333,31 @@ msgstr "CCK kodunu girin"
 
 #: spckTitle
 msgid "Enter SPCK code"
+msgstr "SPCK kodunu girin"
+
+#: nck1Title
+#, fuzzy
+msgid "Enter NCK1 code"
+msgstr "NCK kodunu girin"
+
+#: nck2Title
+#, fuzzy
+msgid "Enter NCK2 code"
+msgstr "NCK kodunu girin"
+
+#: hnckTitle
+#, fuzzy
+msgid "Enter HNCK code"
+msgstr "NCK kodunu girin"
+
+#: rcckTitle
+#, fuzzy
+msgid "Enter RCCK code"
+msgstr "CCK kodunu girin"
+
+#: rspckTitle
+#, fuzzy
+msgid "Enter RSPCK code"
 msgstr "SPCK kodunu girin"
 
 #: newpinTitle
@@ -1596,18 +1864,42 @@ msgid "{{percentage}}% - {{name}}"
 msgstr "%{{percentage}} - {{name}}"
 
 #. # Rocketbar
-#: search
-msgid "Search"
-msgstr "Arama"
+#: search-or-enter-address
+#, fuzzy
+msgctxt "search-or-enter-address"
+msgid "Search or enter address"
+msgstr "Arama terimi veya adres yazın"
 
-#: search-or-type-address.placeholder
-msgid "Search or type address"
+#: search-or-enter-address.placeholder
+#, fuzzy
+msgctxt "search-or-enter-address.placeholder"
+msgid "Search or enter address"
 msgstr "Arama terimi veya adres yazın"
 
 #. # Hotspot
 #: noSIMCardInHotspot
 msgid "SIM card is absent or inserted incorrectly, so turn off hotspot"
 msgstr "SIM kart takılı olmadığı için erişim noktası kapatıldı"
+
+#~ msgid "Disable APZ for Apps"
+#~ msgstr "Uygulamalar için APZ'yi kapat"
+
+#~ msgid "Enable APZ for Apps"
+#~ msgstr "Uygulamalar için APZ'yi aç"
+
+#~ msgid "Tap to retry"
+#~ msgstr "Yeniden dene"
+
+#~ msgctxt "bluetooth-sending-progress"
+#~ msgid "Sending Bluetooth transfer.."
+#~ msgstr "Bluetooth aktarımı gönderiliyor.."
+
+#~ msgctxt "bluetooth-receiving-progress"
+#~ msgid "Receiving Bluetooth transfer.."
+#~ msgstr "Bluetooth aktarımı alınıyor.."
+
+#~ msgid "Search"
+#~ msgstr "Arama"
 
 #~ msgid "%I:%M"
 #~ msgstr "%H:%M"
@@ -1690,9 +1982,6 @@ msgstr "SIM kart takılı olmadığı için erişim noktası kapatıldı"
 
 #~ msgid "failed"
 #~ msgstr "başarısız oldu"
-
-#~ msgid "Don't allow"
-#~ msgstr "İzin verme"
 
 #~ msgid "Enter security code"
 #~ msgstr "Güvenlik kodunu girin"

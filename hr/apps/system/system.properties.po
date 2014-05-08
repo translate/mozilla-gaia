@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-30 17:44+0100\n"
+"POT-Creation-Date: 2014-05-08 11:07+0100\n"
 "PO-Revision-Date: 2014-03-05 20:06+0000\n"
 "Last-Translator: Sasa <sasa@tekovic.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,6 +91,31 @@ msgstr "(zaključan od strane pružatelja usluge)"
 msgid "(corporate locked)"
 msgstr "(zaključan od strane tvrtke)"
 
+#: emergencyCallsOnly-network1Locked
+#, fuzzy
+msgid "(network1 locked)"
+msgstr "(mreža zaključana)"
+
+#: emergencyCallsOnly-network2Locked
+#, fuzzy
+msgid "(network2 locked)"
+msgstr "(mreža zaključana)"
+
+#: emergencyCallsOnly-hrpdNetworkLocked
+#, fuzzy
+msgid "(hrpd network locked)"
+msgstr "(mreža zaključana)"
+
+#: emergencyCallsOnly-ruimCorporateLocked
+#, fuzzy
+msgid "(ruim corporate locked)"
+msgstr "(zaključan od strane tvrtke)"
+
+#: emergencyCallsOnly-ruimServiceProviderLocked
+#, fuzzy
+msgid "(ruim service provider locked)"
+msgstr "(zaključan od strane pružatelja usluge)"
+
 #: enterPIN
 msgid "Enter PIN"
 msgstr "Upišite PIN"
@@ -157,6 +182,27 @@ msgstr "New voicemail"
 msgid "Dial {{number}}"
 msgstr "Biraj {{number}}"
 
+#: voicemailNotificationMultiSim
+msgid "(SIM {{n}}) {{title}}"
+msgstr ""
+
+#. # NFC Bluetooth Connect
+#: confirmNFCConnectBTenabledNameUnknown
+msgid "Are you sure you want to connect to the device?"
+msgstr ""
+
+#: confirmNFCConnectBTdisabledNameUnknown
+msgid "Turn on Bluetooth and connect to the device?"
+msgstr ""
+
+#: confirmNFCConnectBTenabledNameKnown
+msgid "Are you sure you want to connect to {{deviceName}}?"
+msgstr ""
+
+#: confirmNFCConnectBTdisabledNameKnown
+msgid "Turn on Bluetooth and connect to {{deviceName}}?"
+msgstr ""
+
 #. # sleep menu
 #: deviceMenu
 msgid "Phone"
@@ -186,14 +232,6 @@ msgstr "Ponovno pokretanje"
 msgid "Power off"
 msgstr "Isključivanje"
 
-#: asyncpanzoom
-msgid "Disable APZ for Apps"
-msgstr "Onemogući APZ za aplikacije"
-
-#: asyncpanzoomOff
-msgid "Enable APZ for Apps"
-msgstr "Omogući APZ za aplikacije"
-
 #. # screen reader
 #: enableScreenReaderSteps
 msgid ""
@@ -222,6 +260,10 @@ msgstr "Da"
 #: no
 msgid "No"
 msgstr "Ne"
+
+#: dontallow
+msgid "Don’t allow"
+msgstr ""
 
 #: allow
 msgid "Allow"
@@ -286,6 +328,10 @@ msgstr "Zapamti moj izbor"
 #: more-info
 msgid "More info…"
 msgstr "Više informacija…"
+
+#: hide-info
+msgid "Hide info"
+msgstr ""
 
 #. # App install
 #: install-app
@@ -372,7 +418,17 @@ msgstr ""
 msgid "Are you sure you want to cancel this install?"
 msgstr "Jeste li sigurni da želite otkazati instalaciju?"
 
+#. # LOCALIZATION NOTE (cancel-install*): cancel-install is the string used in
+#. # the title, cancel-install-button is used in the bottom-left button
 #: cancel-install
+#, fuzzy
+msgctxt "cancel-install"
+msgid "Cancel Install"
+msgstr "Otkaži instalaciju"
+
+#: cancel-install-button
+#, fuzzy
+msgctxt "cancel-install-button"
 msgid "Cancel Install"
 msgstr "Otkaži instalaciju"
 
@@ -381,6 +437,8 @@ msgid "Resume"
 msgstr "Nastavi"
 
 #: continue
+#, fuzzy
+msgctxt "continue"
 msgid "Continue"
 msgstr "Nastavi"
 
@@ -690,6 +748,155 @@ msgstr "Poslužitelj nije pronađen"
 msgid "Can’t find the server at {{name}}."
 msgstr "Nije moguće pronaći poslužitelj pri {{name}}."
 
+#: file-not-found
+msgid "File not found"
+msgstr ""
+
+#: file-not-found-error
+msgid "The device can’t display this page because the file cannot be found."
+msgstr ""
+
+#: connection-failed
+#, fuzzy
+msgctxt "connection-failed"
+msgid "Unable to connect"
+msgstr "Povezivanje nije moguće"
+
+#: connection-failed-error
+msgctxt "connection-failed-error"
+msgid "A network error occurred while trying to reach the site."
+msgstr ""
+
+#: invalid-connection
+#, fuzzy
+msgctxt "invalid-connection"
+msgid "Unable to connect"
+msgstr "Povezivanje nije moguće"
+
+#: invalid-connection-error
+msgctxt "invalid-connection-error"
+msgid "A network error occurred while trying to reach the site."
+msgstr ""
+
+#: malformed-uri
+msgid "URL not valid"
+msgstr ""
+
+#: malformed-uri-error
+msgid "The URL entered is not valid and cannot be loaded."
+msgstr ""
+
+#: redirect-loop
+msgctxt "redirect-loop"
+msgid "Can’t display page"
+msgstr ""
+
+#: redirect-loop-error
+msgid ""
+"The device can’t display this page because the page is not redirecting "
+"properly. Try this page again at a later time."
+msgstr ""
+
+#: not-cached
+msgid "Page expired"
+msgstr ""
+
+#: not-cached-error
+msgid ""
+"As a security precaution, this page cannot be displayed by the device "
+"because it has expired."
+msgstr ""
+
+#: is-printing-error
+msgid "The document cannot change while Printing or in Print Preview."
+msgstr ""
+
+#: denied-port-access
+msgid "This address is restricted"
+msgstr ""
+
+#: denied-port-access-error
+msgid ""
+"This address uses a network port which is normally used for purposes other "
+"than Web browsing. The device has cancelled the request for your protection."
+msgstr ""
+
+#: proxy-resolve-failure
+msgctxt "proxy-resolve-failure"
+msgid "Proxy Server Error"
+msgstr ""
+
+#: proxy-resolve-failure-error
+msgid "The device is configured to use a proxy server that can’t be found."
+msgstr ""
+
+#: proxy-connect-failure
+msgctxt "proxy-connect-failure"
+msgid "Proxy Server Error"
+msgstr ""
+
+#: proxy-connect-failure-error
+msgid ""
+"The device is configured to use a proxy server that is refusing connections."
+msgstr ""
+
+#: content-encoding
+msgctxt "content-encoding"
+msgid "Can’t display page"
+msgstr ""
+
+#: content-encoding-error
+msgid ""
+"The device can’t display this page because a content encoding error occurred."
+msgstr ""
+
+#: remote-xul
+msgid "Page unsupported"
+msgstr ""
+
+#: remote-xul-error
+msgid ""
+"This page can’t be displayed because it uses a technology that is not "
+"supported on the device."
+msgstr ""
+
+#: phishing-blocked
+msgid "Warning"
+msgstr ""
+
+#: phishing-blocked-error
+msgid ""
+"The website has been reported as a web forgery designed to trick users into "
+"sharing personal or financial information."
+msgstr ""
+
+#: malware-blocked
+msgid "Malware attack blocked"
+msgstr ""
+
+#: malware-blocked-error
+msgid "The site at has been reported as an attack site and has been blocked."
+msgstr ""
+
+#: unsafe-content-type
+msgid "Unsafe content"
+msgstr ""
+
+#: unsafe-content-type-error
+msgid "The page cannot be shown because it may not be safe to open."
+msgstr ""
+
+#: corrupted-content
+msgctxt "corrupted-content"
+msgid "Can’t display page"
+msgstr ""
+
+#: corrupted-content-error
+msgid ""
+"The page cannot be shown because an error in the data transmission was "
+"detected."
+msgstr ""
+
 #: network-connection-unavailable
 msgid "Network connection unavailable"
 msgstr "Mrežna veza nije dostupna"
@@ -702,17 +909,31 @@ msgstr ""
 "{{name}} zahtijeva mrežnu vezu. Pokušajte se povezati na Wi-Fi ili "
 "podatkovnu mrežu."
 
+#: network-error-launching
+msgid "{{name}} requires an Internet connection."
+msgstr ""
+
+#: network-error-in-app
+msgid "No access to the Internet right now."
+msgstr ""
+
 #: unable-to-connect
+#, fuzzy
+msgctxt "unable-to-connect"
 msgid "Unable to connect"
 msgstr "Povezivanje nije moguće"
-
-#: tap-to-retry
-msgid "Tap to retry"
-msgstr "Kliknite da biste pokušali ponovno"
 
 #: try-again
 msgid "Try again"
 msgstr "Pokušaj ponovno"
+
+#: check-settings
+msgid "Check settings"
+msgstr ""
+
+#: tap-to-check-settings
+msgid "Tap to check settings"
+msgstr ""
 
 #. # value selector, time/date picker
 #: select-time
@@ -839,25 +1060,15 @@ msgid "Report"
 msgstr "Izvještaj"
 
 #. # bluetooth transfer
-#: bluetooth-sendingTitle
-msgctxt "bluetooth-sendingTitle"
-msgid "Sending Bluetooth transfer.."
-msgstr "Slanje Bluetooth transfera.."
-
-#: bluetooth-receivingTitle
-msgctxt "bluetooth-receivingTitle"
-msgid "Receiving Bluetooth transfer.."
-msgstr "Dolazni Bluetooth transfer.."
-
 #: bluetooth-sending-progress
-msgctxt "bluetooth-sending-progress"
-msgid "Sending Bluetooth transfer.."
+#, fuzzy
+msgid "Sending Bluetooth transfer…"
 msgstr "Slanje Bluetooth transfera.."
 
 #: bluetooth-receiving-progress
-msgctxt "bluetooth-receiving-progress"
-msgid "Receiving Bluetooth transfer.."
-msgstr "Primanje Bluetooth transfera.."
+#, fuzzy
+msgid "Receiving Bluetooth transfer…"
+msgstr "Dolazni Bluetooth transfer.."
 
 #: acceptFileTransfer
 msgid "Accept Bluetooth file transfer?"
@@ -932,6 +1143,12 @@ msgstr "Transferiraj"
 #: cancelFileTransfer
 msgid "Cancel Bluetooth file transfer?"
 msgstr "Otkazati Bluetooth transfer datoteke?"
+
+#: continueFileTransfer
+#, fuzzy
+msgctxt "continueFileTransfer"
+msgid "Continue"
+msgstr "Nastavi"
 
 #: transfer-has-started-title
 msgid "The transfer has started"
@@ -1053,6 +1270,31 @@ msgstr "CCK kôd"
 msgid "SPCK code"
 msgstr "SPCK kôd"
 
+#: nck1code
+#, fuzzy
+msgid "NCK1 code"
+msgstr "NCK kôd"
+
+#: nck2code
+#, fuzzy
+msgid "NCK2 code"
+msgstr "NCK kôd"
+
+#: hnckcode
+#, fuzzy
+msgid "HNCK code"
+msgstr "NCK kôd"
+
+#: rcckcode
+#, fuzzy
+msgid "RCCK code"
+msgstr "CCK kôd"
+
+#: rspckcode
+#, fuzzy
+msgid "RSPCK code"
+msgstr "SPCK kôd"
+
 #: whatIsSimPin
 msgid "What is a SIM PIN?"
 msgstr "Što je PIN SIM kartice?"
@@ -1098,6 +1340,31 @@ msgstr "Upišite CCK kôd"
 
 #: spckTitle
 msgid "Enter SPCK code"
+msgstr "Upišite SPCK kôd"
+
+#: nck1Title
+#, fuzzy
+msgid "Enter NCK1 code"
+msgstr "Upišite NCK kôd"
+
+#: nck2Title
+#, fuzzy
+msgid "Enter NCK2 code"
+msgstr "Upišite NCK kôd"
+
+#: hnckTitle
+#, fuzzy
+msgid "Enter HNCK code"
+msgstr "Upišite NCK kôd"
+
+#: rcckTitle
+#, fuzzy
+msgid "Enter RCCK code"
+msgstr "Upišite CCK kôd"
+
+#: rspckTitle
+#, fuzzy
+msgid "Enter RSPCK code"
 msgstr "Upišite SPCK kôd"
 
 #: newpinTitle
@@ -1605,18 +1872,37 @@ msgid "{{percentage}}% - {{name}}"
 msgstr ""
 
 #. # Rocketbar
-#: search
-msgid "Search"
+#: search-or-enter-address
+msgctxt "search-or-enter-address"
+msgid "Search or enter address"
 msgstr ""
 
-#: search-or-type-address.placeholder
-msgid "Search or type address"
+#: search-or-enter-address.placeholder
+msgctxt "search-or-enter-address.placeholder"
+msgid "Search or enter address"
 msgstr ""
 
 #. # Hotspot
 #: noSIMCardInHotspot
 msgid "SIM card is absent or inserted incorrectly, so turn off hotspot"
 msgstr ""
+
+#~ msgid "Disable APZ for Apps"
+#~ msgstr "Onemogući APZ za aplikacije"
+
+#~ msgid "Enable APZ for Apps"
+#~ msgstr "Omogući APZ za aplikacije"
+
+#~ msgid "Tap to retry"
+#~ msgstr "Kliknite da biste pokušali ponovno"
+
+#~ msgctxt "bluetooth-sending-progress"
+#~ msgid "Sending Bluetooth transfer.."
+#~ msgstr "Slanje Bluetooth transfera.."
+
+#~ msgctxt "bluetooth-receiving-progress"
+#~ msgid "Receiving Bluetooth transfer.."
+#~ msgstr "Primanje Bluetooth transfera.."
 
 #~ msgid ""
 #~ "Telecom services and internet are disable due to emergency call back "
