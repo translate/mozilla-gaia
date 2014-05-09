@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-08 11:07+0100\n"
+"POT-Creation-Date: 2014-05-09 16:39+0100\n"
 "PO-Revision-Date: 2014-04-18 04:19+0000\n"
 "Last-Translator: danishka <danishka@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -391,19 +391,13 @@ msgstr "සේවාදායක සැකසුම්"
 msgid "Username and password"
 msgstr "පරිශීලක නාමය සහ මුරපදය"
 
-#. # In the account picker card, where the user can select which account to view
-#. # in the app, it shows when each account was last synchronized.
-#: fld-account-picker-last-sync
-msgctxt "fld-account-picker-last-sync"
-msgid "Last sync:"
-msgstr "අවසන් වරට සමාකලන වූයේ:"
-
 #: settings-done
 msgid "Done"
 msgstr "නිමයි"
 
 #: settings-account-section
 #, fuzzy
+msgctxt "settings-account-section"
 msgid "Accounts"
 msgstr "ගිණුම්"
 
@@ -1011,29 +1005,6 @@ msgctxt "message-reply-menu-cancel"
 msgid "Cancel"
 msgstr "අහෝසි කරන්න"
 
-#: folder-list-header
-msgid "Folders"
-msgstr "බහාලුම්"
-
-#. # L10n note: account-last-synced-label is found on the folder list card,
-#. # accessible from the message-list card by clicking the icon in the upper left
-#. # of the card.  The label is displayed at the bottom of the folder list and is
-#. # right aligned.  There is currently 1 button to the left of the label and soon
-#. # there will be two, so it is desirable to use as short a translation as
-#. # possible.  To the right of the label, a (short) relative timestamp is
-#. # displayed.
-#: account-last-synced-label
-msgctxt "account-last-synced-label"
-msgid "Last sync:"
-msgstr "අවසන් සමාකාලීනය:"
-
-#. # L10n note: This string is displayed to the right of account-last-synced-label
-#. # if no folder has ever been synchronized.  Otherwise the space occupied by this
-#. # string will be a (short) relative timestamp.
-#: account-never-synced
-msgid "Never"
-msgstr "කිසි දිනෙක එපා"
-
 #. # LOCALIZATION NOTE: do not translate {name}
 #: reply-quoting-wrote
 msgid "{name} wrote"
@@ -1113,6 +1084,38 @@ msgstr "සංරක්‍ෂිත"
 #: folder-localdrafts
 msgid "Local Drafts"
 msgstr "කෙටුම් පත්"
+
+#. # In the folder picker drawer, there is a transparent area for the header,
+#. # and a tap region to take the user back to the message list. So this text is
+#. # not visible by the user, but could be used for accessibility.
+#: drawer-back
+msgid "Back"
+msgstr ""
+
+#. # In the folder picker drawer, the list of email accounts are shown. This is
+#. # the header for that section.
+#: drawer-accounts-header
+#, fuzzy
+msgctxt "drawer-accounts-header"
+msgid "Accounts"
+msgstr "ගිණුම්"
+
+#. # At the bottom of the folder picker drawer, there is an icon link that
+#. # goes to the account settings. This string is only used for accessibility
+#. # concerns, and is not visible visually.
+#: drawer-settings-link
+msgid "Settings"
+msgstr ""
+
+#. # folder-last-synced-label is shown in the message-list, in the
+#. # middle of its bottom toolbar, and shows the last sync time for the currently
+#. # displayed list of messages in the folder. Since space is tight in that area,
+#. # the app code detects if the string will be too long and it will shrink the
+#. # font size to fit longer text.
+#: folder-last-synced-label
+#, fuzzy
+msgid "Last sync:"
+msgstr "අවසන් වරට සමාකලන වූයේ:"
 
 #: toaster-undo
 msgid "Undo"
@@ -1428,6 +1431,16 @@ msgstr "නව විද්‍යුත් තැපැල් පණිවුඩ
 #: new-emails-notify-multiple-accounts-body
 msgid "{{ from }} “{{ subject }}”"
 msgstr "{{ from }} “{{ subject }}”"
+
+#~ msgid "Folders"
+#~ msgstr "බහාලුම්"
+
+#~ msgctxt "account-last-synced-label"
+#~ msgid "Last sync:"
+#~ msgstr "අවසන් සමාකාලීනය:"
+
+#~ msgid "Never"
+#~ msgstr "කිසි දිනෙක එපා"
 
 #~ msgid "About"
 #~ msgstr "පිළිබඳ"
