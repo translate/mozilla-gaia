@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-19 10:49+0100\n"
+"POT-Creation-Date: 2014-05-21 07:58+0100\n"
 "PO-Revision-Date: 2014-05-17 04:45+0000\n"
 "Last-Translator: Arun Kumar <thangam.arunx@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -168,12 +168,13 @@ msgctxt "message"
 msgid "Message"
 msgstr "செய்தி"
 
-#: composeMessage.dataset.placeholder
-msgctxt "composeMessage.dataset.placeholder"
+#: messagesInput_placeholder
+#, fuzzy
+msgctxt "messagesInput_placeholder"
 msgid "Message"
 msgstr "செய்தி"
 
-#: composeSubject.dataset.placeholder
+#: messagesSubjectInput_placeholder
 msgid "Subject"
 msgstr "பொருளுரை"
 
@@ -821,9 +822,9 @@ msgstr "பல்லூடக குறுந்தகவல்"
 msgid "Message is not downloaded yet."
 msgstr "செய்தியானது இன்னமும் பதிவிறக்கப்படவில்லை."
 
-#. # LOCALIZATION NOTE: 'expiry-date-format' is used for the '{{date}}' in the
-#. # 'not-downloaded-attachment' and 'expired-attachment' strings. Be aware
-#. # that this may not be suitable for locales with more complex grammar rules.
+#. # LOCALIZATION NOTE (not-downloaded-attachment, expired-attachment):
+#. # {{date}} is replaced at run-time with a date. The format used to display
+#. # this date is specified in the string with ID 'expiry-date-format'.
 #: not-downloaded-attachment
 msgid "Attachment can be downloaded until {{date}}."
 msgstr "{{date}} வரை இணைப்பை பதிவிறக்க முடியும்."
@@ -906,11 +907,18 @@ msgid "({{sim}}) {{sender}}"
 msgstr "({{sim}}) {{sender}}"
 
 #. # Date formats specific for SMS app
-#. # LOCALIZATION NOTE: this format may not be suitable for locales with more
-#. # complex grammar rules. In such locales, you can use '{{dateTimeFormat_%x}}'.
+#. # LOCALIZATION NOTE (expiry-date-format): this is a date format.
+#. # See http://pubs.opengroup.org/onlinepubs/007908799/xsh/strftime.html
+#. # %A is the full weekday name from shared/date/date.properties and it might
+#. # not be in the correct grammatical case. To work around this issue, you can
+#. # use a different format like "%m/%d/%Y".
 #: expiry-date-format
 msgid "%A, %b %e"
 msgstr "%A, %b %e"
+
+#~ msgctxt "composeMessage.dataset.placeholder"
+#~ msgid "Message"
+#~ msgstr "செய்தி"
 
 #~ msgid "I have sent you a file. It will be available until {{date}}"
 #~ msgstr "நான் ஒரு கோப்பை அனுப்பியுள்ளேன். அது {{date}} வரை கிடைக்கும்."
