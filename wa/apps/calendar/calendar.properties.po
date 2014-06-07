@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-03 16:48+0100\n"
+"POT-Creation-Date: 2014-06-07 16:25+0100\n"
 "PO-Revision-Date: 2014-04-17 11:14+0000\n"
 "Last-Translator: Jean <jean.cayron@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -285,22 +285,39 @@ msgstr "30 mun"
 msgid "Each hour"
 msgstr "Tchaeke eure"
 
+#. # duration time of events
+#. # startDate and endDate use the `longDateFormat` format.
+#. # startTime and endTime use the `shortTimeFormat` format.
+#. # `<br>` (line break) used for presentation.
+#: one-day-duration
+msgid "{{startDate}}<br>from {{startTime}} to {{endTime}}"
+msgstr ""
+
+#: multiple-day-duration
+msgid "From {{startTime}} {{startDate}}<br>to {{endTime}} {{endDate}}"
+msgstr ""
+
+#: one-all-day-duration
+msgid "All day<br>{{startDate}}"
+msgstr ""
+
+#: multiple-all-day-duration
+msgid "All day from {{startDate}}<br>to {{endDate}}"
+msgstr ""
+
 #. # alarms for event view/edit
 #: none
 msgid "None"
 msgstr "Nou"
 
+#: reminder
+#, fuzzy
+msgid "Reminder:"
+msgstr "Rahoucaedjes"
+
 #: remind-me
 msgid "Remind me"
 msgstr "Mi rahoukî"
-
-#: from-time
-msgid "From: "
-msgstr "Di :"
-
-#: to-time
-msgid "To: "
-msgstr "Po :"
 
 #: alarm-at-event-standard
 msgid "At time of event"
@@ -721,15 +738,6 @@ msgstr "{{value}} ans après"
 msgid "%I %p"
 msgstr "%Hh"
 
-#. # abbreviated format (used on week view)
-#: hour-format-abbr-am
-msgid "%IA"
-msgstr ""
-
-#: hour-format-abbr-pm
-msgid "%IP"
-msgstr ""
-
 #: hour-allday
 msgid "All Day"
 msgstr "Tote li djournêye"
@@ -753,6 +761,11 @@ msgstr "%A %e %b"
 #, fuzzy
 msgid "%A, %b %e"
 msgstr "%A li %e di %B"
+
+#. # Date format in the event detail view.
+#: longDateFormat
+msgid "%A, %B %d, %Y"
+msgstr ""
 
 #. #errors
 #: error-start-after-end
@@ -787,6 +800,12 @@ msgstr "Aroke di sincro do calindrî"
 #: notification-error-sync-description
 msgid "Tap for more info"
 msgstr "Tchapotez po ndè sawè dpus"
+
+#~ msgid "From: "
+#~ msgstr "Di :"
+
+#~ msgid "To: "
+#~ msgstr "Po :"
 
 #~ msgid "%B %Y"
 #~ msgstr "%B %Y"

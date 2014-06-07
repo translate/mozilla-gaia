@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-03 16:48+0100\n"
+"POT-Creation-Date: 2014-06-07 16:25+0100\n"
 "PO-Revision-Date: 2014-04-09 09:24+0000\n"
 "Last-Translator: Arif Fahmi <ryuzaki_l@y7mail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -285,22 +285,39 @@ msgstr "30 minit"
 msgid "Each hour"
 msgstr "Setiap jam"
 
+#. # duration time of events
+#. # startDate and endDate use the `longDateFormat` format.
+#. # startTime and endTime use the `shortTimeFormat` format.
+#. # `<br>` (line break) used for presentation.
+#: one-day-duration
+msgid "{{startDate}}<br>from {{startTime}} to {{endTime}}"
+msgstr ""
+
+#: multiple-day-duration
+msgid "From {{startTime}} {{startDate}}<br>to {{endTime}} {{endDate}}"
+msgstr ""
+
+#: one-all-day-duration
+msgid "All day<br>{{startDate}}"
+msgstr ""
+
+#: multiple-all-day-duration
+msgid "All day from {{startDate}}<br>to {{endDate}}"
+msgstr ""
+
 #. # alarms for event view/edit
 #: none
 msgid "None"
 msgstr "Tiada"
 
+#: reminder
+#, fuzzy
+msgid "Reminder:"
+msgstr "Peringatan"
+
 #: remind-me
 msgid "Remind me"
 msgstr "Ingatkan saya"
-
-#: from-time
-msgid "From: "
-msgstr "Dari: "
-
-#: to-time
-msgid "To: "
-msgstr "Ke: "
 
 #: alarm-at-event-standard
 msgid "At time of event"
@@ -721,15 +738,6 @@ msgstr "{{value}} tahun selepas"
 msgid "%I %p"
 msgstr "%I %p"
 
-#. # abbreviated format (used on week view)
-#: hour-format-abbr-am
-msgid "%IA"
-msgstr ""
-
-#: hour-format-abbr-pm
-msgid "%IP"
-msgstr ""
-
 #: hour-allday
 msgid "All Day"
 msgstr "Sepanjang Hari"
@@ -753,6 +761,11 @@ msgstr "%b %e, %A"
 #, fuzzy
 msgid "%A, %b %e"
 msgstr "%A %B %e"
+
+#. # Date format in the event detail view.
+#: longDateFormat
+msgid "%A, %B %d, %Y"
+msgstr ""
 
 #. #errors
 #: error-start-after-end
@@ -787,6 +800,12 @@ msgstr "Ralat sync Kalendar"
 #: notification-error-sync-description
 msgid "Tap for more info"
 msgstr "Sentuh untuk maklumat lanjut"
+
+#~ msgid "From: "
+#~ msgstr "Dari: "
+
+#~ msgid "To: "
+#~ msgstr "Ke: "
 
 #~ msgid "%B %Y"
 #~ msgstr "%B %Y"

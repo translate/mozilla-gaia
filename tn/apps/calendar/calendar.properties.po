@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-03 16:48+0100\n"
+"POT-Creation-Date: 2014-06-07 16:25+0100\n"
 "PO-Revision-Date: 2014-05-14 05:45+0000\n"
 "Last-Translator: winnie <winniemmoko@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -281,22 +281,39 @@ msgstr ""
 msgid "Each hour"
 msgstr "Oura nngwe le nngwe"
 
+#. # duration time of events
+#. # startDate and endDate use the `longDateFormat` format.
+#. # startTime and endTime use the `shortTimeFormat` format.
+#. # `<br>` (line break) used for presentation.
+#: one-day-duration
+msgid "{{startDate}}<br>from {{startTime}} to {{endTime}}"
+msgstr ""
+
+#: multiple-day-duration
+msgid "From {{startTime}} {{startDate}}<br>to {{endTime}} {{endDate}}"
+msgstr ""
+
+#: one-all-day-duration
+msgid "All day<br>{{startDate}}"
+msgstr ""
+
+#: multiple-all-day-duration
+msgid "All day from {{startDate}}<br>to {{endDate}}"
+msgstr ""
+
 #. # alarms for event view/edit
 #: none
 msgid "None"
 msgstr "Sepe"
 
+#: reminder
+#, fuzzy
+msgid "Reminder:"
+msgstr "Segopotso"
+
 #: remind-me
 msgid "Remind me"
 msgstr "Nkgakolola"
-
-#: from-time
-msgid "From: "
-msgstr "ko"
-
-#: to-time
-msgid "To: "
-msgstr "kwa"
 
 #: alarm-at-event-standard
 msgid "At time of event"
@@ -724,15 +741,6 @@ msgstr ""
 msgid "%I %p"
 msgstr ""
 
-#. # abbreviated format (used on week view)
-#: hour-format-abbr-am
-msgid "%IA"
-msgstr ""
-
-#: hour-format-abbr-pm
-msgid "%IP"
-msgstr ""
-
 #: hour-allday
 msgid "All Day"
 msgstr "Letsatsi lotlhe"
@@ -754,6 +762,11 @@ msgstr ""
 #. # Header used on month view before the event list (selected day date)
 #: months-day-view-header-format
 msgid "%A, %b %e"
+msgstr ""
+
+#. # Date format in the event detail view.
+#: longDateFormat
+msgid "%A, %B %d, %Y"
 msgstr ""
 
 #. #errors
@@ -789,3 +802,9 @@ msgstr ""
 #: notification-error-sync-description
 msgid "Tap for more info"
 msgstr ""
+
+#~ msgid "From: "
+#~ msgstr "ko"
+
+#~ msgid "To: "
+#~ msgstr "kwa"

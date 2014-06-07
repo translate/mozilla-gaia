@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-03 16:48+0100\n"
+"POT-Creation-Date: 2014-06-07 16:25+0100\n"
 "PO-Revision-Date: 2014-06-06 19:28+0000\n"
 "Last-Translator: Tin Aung <tinaunglinn.eng91@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1402082916.000000\n"
@@ -279,22 +279,39 @@ msgstr "30 မိနစ်"
 msgid "Each hour"
 msgstr "နာရီတိုင်း"
 
+#. # duration time of events
+#. # startDate and endDate use the `longDateFormat` format.
+#. # startTime and endTime use the `shortTimeFormat` format.
+#. # `<br>` (line break) used for presentation.
+#: one-day-duration
+msgid "{{startDate}}<br>from {{startTime}} to {{endTime}}"
+msgstr ""
+
+#: multiple-day-duration
+msgid "From {{startTime}} {{startDate}}<br>to {{endTime}} {{endDate}}"
+msgstr ""
+
+#: one-all-day-duration
+msgid "All day<br>{{startDate}}"
+msgstr ""
+
+#: multiple-all-day-duration
+msgid "All day from {{startDate}}<br>to {{endDate}}"
+msgstr ""
+
 #. # alarms for event view/edit
 #: none
 msgid "None"
 msgstr "ဘာမျှ"
 
+#: reminder
+#, fuzzy
+msgid "Reminder:"
+msgstr "သတိပေးချက်များ"
+
 #: remind-me
 msgid "Remind me"
 msgstr "သတိပေးပါ"
-
-#: from-time
-msgid "From: "
-msgstr "မှ:   "
-
-#: to-time
-msgid "To: "
-msgstr "သို့:   "
 
 #: alarm-at-event-standard
 msgid "At time of event"
@@ -715,15 +732,6 @@ msgstr "{{value}} နှစ်အကြာ"
 msgid "%I %p"
 msgstr "%I %p"
 
-#. # abbreviated format (used on week view)
-#: hour-format-abbr-am
-msgid "%IA"
-msgstr "%IA"
-
-#: hour-format-abbr-pm
-msgid "%IP"
-msgstr "%IP"
-
 #: hour-allday
 msgid "All Day"
 msgstr "တစ်နေကုန်"
@@ -746,6 +754,11 @@ msgstr "%b %e, %A"
 #: months-day-view-header-format
 msgid "%A, %b %e"
 msgstr "%A, %b %e"
+
+#. # Date format in the event detail view.
+#: longDateFormat
+msgid "%A, %B %d, %Y"
+msgstr ""
 
 #. #errors
 #: error-start-after-end
@@ -780,6 +793,18 @@ msgstr "ပြက္ခဒိန် ချိတ်ဆက်ခြင်း ပ�
 #: notification-error-sync-description
 msgid "Tap for more info"
 msgstr "ထပ်ကြည့်ရန် ထိပါ"
+
+#~ msgid "From: "
+#~ msgstr "မှ:   "
+
+#~ msgid "To: "
+#~ msgstr "သို့:   "
+
+#~ msgid "%IA"
+#~ msgstr "%IA"
+
+#~ msgid "%IP"
+#~ msgstr "%IP"
 
 #~ msgid "%B %Y"
 #~ msgstr "%B %Y"

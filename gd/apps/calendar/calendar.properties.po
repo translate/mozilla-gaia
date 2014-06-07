@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-03 16:48+0100\n"
+"POT-Creation-Date: 2014-06-07 16:25+0100\n"
 "PO-Revision-Date: 2014-05-27 18:11+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -285,22 +285,39 @@ msgstr "Leth-uair a thìde"
 msgid "Each hour"
 msgstr "Gach uair a thìde"
 
+#. # duration time of events
+#. # startDate and endDate use the `longDateFormat` format.
+#. # startTime and endTime use the `shortTimeFormat` format.
+#. # `<br>` (line break) used for presentation.
+#: one-day-duration
+msgid "{{startDate}}<br>from {{startTime}} to {{endTime}}"
+msgstr ""
+
+#: multiple-day-duration
+msgid "From {{startTime}} {{startDate}}<br>to {{endTime}} {{endDate}}"
+msgstr ""
+
+#: one-all-day-duration
+msgid "All day<br>{{startDate}}"
+msgstr ""
+
+#: multiple-all-day-duration
+msgid "All day from {{startDate}}<br>to {{endDate}}"
+msgstr ""
+
 #. # alarms for event view/edit
 #: none
 msgid "None"
 msgstr "Chan eil gin"
 
+#: reminder
+#, fuzzy
+msgid "Reminder:"
+msgstr "Cuimhneachain"
+
 #: remind-me
 msgid "Remind me"
 msgstr "Cuir 'nam chuimhne"
-
-#: from-time
-msgid "From: "
-msgstr "O: "
-
-#: to-time
-msgid "To: "
-msgstr "Gu: "
 
 #: alarm-at-event-standard
 msgid "At time of event"
@@ -721,15 +738,6 @@ msgstr "{{value}} bliadhna 'na dhèidh"
 msgid "%I %p"
 msgstr "%I %p"
 
-#. # abbreviated format (used on week view)
-#: hour-format-abbr-am
-msgid "%IA"
-msgstr "%IA"
-
-#: hour-format-abbr-pm
-msgid "%IP"
-msgstr "%IP"
-
 #: hour-allday
 msgid "All Day"
 msgstr "Fad an latha"
@@ -753,6 +761,11 @@ msgstr "%A, %e %b"
 #, fuzzy
 msgid "%A, %b %e"
 msgstr "%A %e %B"
+
+#. # Date format in the event detail view.
+#: longDateFormat
+msgid "%A, %B %d, %Y"
+msgstr ""
 
 #. #errors
 #: error-start-after-end
@@ -792,6 +805,18 @@ msgstr "Mearachd le sioncronachadh a’ mhìosachain"
 #: notification-error-sync-description
 msgid "Tap for more info"
 msgstr "Thoir gnogag airson barrachd fiosrachaidh"
+
+#~ msgid "From: "
+#~ msgstr "O: "
+
+#~ msgid "To: "
+#~ msgstr "Gu: "
+
+#~ msgid "%IA"
+#~ msgstr "%IA"
+
+#~ msgid "%IP"
+#~ msgstr "%IP"
 
 #~ msgid "%B %Y"
 #~ msgstr "%B %Y"

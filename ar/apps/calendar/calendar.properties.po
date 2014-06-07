@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-03 16:48+0100\n"
+"POT-Creation-Date: 2014-06-07 16:25+0100\n"
 "PO-Revision-Date: 2014-06-02 09:02+0000\n"
 "Last-Translator: Rami <rami@vrami.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -281,22 +281,39 @@ msgstr "٣٠ دقيقة"
 msgid "Each hour"
 msgstr "كل ساعة"
 
+#. # duration time of events
+#. # startDate and endDate use the `longDateFormat` format.
+#. # startTime and endTime use the `shortTimeFormat` format.
+#. # `<br>` (line break) used for presentation.
+#: one-day-duration
+msgid "{{startDate}}<br>from {{startTime}} to {{endTime}}"
+msgstr ""
+
+#: multiple-day-duration
+msgid "From {{startTime}} {{startDate}}<br>to {{endTime}} {{endDate}}"
+msgstr ""
+
+#: one-all-day-duration
+msgid "All day<br>{{startDate}}"
+msgstr ""
+
+#: multiple-all-day-duration
+msgid "All day from {{startDate}}<br>to {{endDate}}"
+msgstr ""
+
 #. # alarms for event view/edit
 #: none
 msgid "None"
 msgstr "لا يوجد"
 
+#: reminder
+#, fuzzy
+msgid "Reminder:"
+msgstr "التذكيرات"
+
 #: remind-me
 msgid "Remind me"
 msgstr "ذكّرني"
-
-#: from-time
-msgid "From: "
-msgstr "من:"
-
-#: to-time
-msgid "To: "
-msgstr "إلى:"
 
 #: alarm-at-event-standard
 msgid "At time of event"
@@ -717,15 +734,6 @@ msgstr "بعد {{value}} سنة"
 msgid "%I %p"
 msgstr "%I %p"
 
-#. # abbreviated format (used on week view)
-#: hour-format-abbr-am
-msgid "%IA"
-msgstr "%IA"
-
-#: hour-format-abbr-pm
-msgid "%IP"
-msgstr "%IP"
-
 #: hour-allday
 msgid "All Day"
 msgstr "طول اليوم"
@@ -749,6 +757,11 @@ msgstr "%b %e, %A"
 #, fuzzy
 msgid "%A, %b %e"
 msgstr "%A %B %e"
+
+#. # Date format in the event detail view.
+#: longDateFormat
+msgid "%A, %B %d, %Y"
+msgstr ""
 
 #. #errors
 #: error-start-after-end
@@ -783,6 +796,18 @@ msgstr "خطأ في تزامن التقويم"
 #: notification-error-sync-description
 msgid "Tap for more info"
 msgstr "انقر لمزيد من المعلومات"
+
+#~ msgid "From: "
+#~ msgstr "من:"
+
+#~ msgid "To: "
+#~ msgstr "إلى:"
+
+#~ msgid "%IA"
+#~ msgstr "%IA"
+
+#~ msgid "%IP"
+#~ msgstr "%IP"
 
 #~ msgid "%B %Y"
 #~ msgstr "%B %Y"

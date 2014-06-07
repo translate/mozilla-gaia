@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-03 16:48+0100\n"
+"POT-Creation-Date: 2014-06-07 16:25+0100\n"
 "PO-Revision-Date: 2014-06-01 19:06+0000\n"
 "Last-Translator: Rodrigo <rodrigo_perez_r@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -279,22 +279,39 @@ msgstr "30 minut"
 msgid "Each hour"
 msgstr "Cad hor"
 
+#. # duration time of events
+#. # startDate and endDate use the `longDateFormat` format.
+#. # startTime and endTime use the `shortTimeFormat` format.
+#. # `<br>` (line break) used for presentation.
+#: one-day-duration
+msgid "{{startDate}}<br>from {{startTime}} to {{endTime}}"
+msgstr ""
+
+#: multiple-day-duration
+msgid "From {{startTime}} {{startDate}}<br>to {{endTime}} {{endDate}}"
+msgstr ""
+
+#: one-all-day-duration
+msgid "All day<br>{{startDate}}"
+msgstr ""
+
+#: multiple-all-day-duration
+msgid "All day from {{startDate}}<br>to {{endDate}}"
+msgstr ""
+
 #. # alarms for event view/edit
 #: none
 msgid "None"
 msgstr "Yent kuan nak"
 
+#: reminder
+#, fuzzy
+msgid "Reminder:"
+msgstr "Ney loon"
+
 #: remind-me
 msgid "Remind me"
 msgstr "Lii aviss lon"
-
-#: from-time
-msgid "From: "
-msgstr "Cho mtal la: "
-
-#: to-time
-msgid "To: "
-msgstr "Pa day: "
 
 #: alarm-at-event-standard
 msgid "At time of event"
@@ -715,15 +732,6 @@ msgstr "{{value}} plal lit sera"
 msgid "%I %p"
 msgstr "%I %p"
 
-#. # abbreviated format (used on week view)
-#: hour-format-abbr-am
-msgid "%IA"
-msgstr "%IA"
-
-#: hour-format-abbr-pm
-msgid "%IP"
-msgstr "%IP"
-
 #: hour-allday
 msgid "All Day"
 msgstr "Re güis"
@@ -747,6 +755,11 @@ msgstr "%b %e, %A"
 #, fuzzy
 msgid "%A, %b %e"
 msgstr "%A %B %e"
+
+#. # Date format in the event detail view.
+#: longDateFormat
+msgid "%A, %B %d, %Y"
+msgstr ""
 
 #. #errors
 #: error-start-after-end
@@ -781,6 +794,18 @@ msgstr "Na li chet sync"
 #: notification-error-sync-description
 msgid "Tap for more info"
 msgstr "Güi ko xho tree"
+
+#~ msgid "From: "
+#~ msgstr "Cho mtal la: "
+
+#~ msgid "To: "
+#~ msgstr "Pa day: "
+
+#~ msgid "%IA"
+#~ msgstr "%IA"
+
+#~ msgid "%IP"
+#~ msgstr "%IP"
 
 #~ msgid "%B %Y"
 #~ msgstr "%B %Y"

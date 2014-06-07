@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-03 16:48+0100\n"
+"POT-Creation-Date: 2014-06-07 16:25+0100\n"
 "PO-Revision-Date: 2013-05-20 08:48+0000\n"
 "Last-Translator: zero <mail@luka.ge>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -282,22 +282,38 @@ msgstr ""
 msgid "Each hour"
 msgstr ""
 
+#. # duration time of events
+#. # startDate and endDate use the `longDateFormat` format.
+#. # startTime and endTime use the `shortTimeFormat` format.
+#. # `<br>` (line break) used for presentation.
+#: one-day-duration
+msgid "{{startDate}}<br>from {{startTime}} to {{endTime}}"
+msgstr ""
+
+#: multiple-day-duration
+msgid "From {{startTime}} {{startDate}}<br>to {{endTime}} {{endDate}}"
+msgstr ""
+
+#: one-all-day-duration
+msgid "All day<br>{{startDate}}"
+msgstr ""
+
+#: multiple-all-day-duration
+msgid "All day from {{startDate}}<br>to {{endDate}}"
+msgstr ""
+
 #. # alarms for event view/edit
 #: none
 #, fuzzy
 msgid "None"
 msgstr "მზადაა"
 
+#: reminder
+msgid "Reminder:"
+msgstr ""
+
 #: remind-me
 msgid "Remind me"
-msgstr ""
-
-#: from-time
-msgid "From: "
-msgstr ""
-
-#: to-time
-msgid "To: "
 msgstr ""
 
 #: alarm-at-event-standard
@@ -719,15 +735,6 @@ msgstr ""
 msgid "%I %p"
 msgstr ""
 
-#. # abbreviated format (used on week view)
-#: hour-format-abbr-am
-msgid "%IA"
-msgstr ""
-
-#: hour-format-abbr-pm
-msgid "%IP"
-msgstr ""
-
 #: hour-allday
 msgid "All Day"
 msgstr ""
@@ -749,6 +756,11 @@ msgstr ""
 #. # Header used on month view before the event list (selected day date)
 #: months-day-view-header-format
 msgid "%A, %b %e"
+msgstr ""
+
+#. # Date format in the event detail view.
+#: longDateFormat
+msgid "%A, %B %d, %Y"
 msgstr ""
 
 #. #errors

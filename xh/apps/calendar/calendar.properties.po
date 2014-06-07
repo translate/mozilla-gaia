@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-03 16:48+0100\n"
+"POT-Creation-Date: 2014-06-07 16:25+0100\n"
 "PO-Revision-Date: 2014-03-05 17:25+0000\n"
 "Last-Translator: Ian <ian.henderson@rubric.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -285,22 +285,39 @@ msgstr "Imizu. engama-30"
 msgid "Each hour"
 msgstr "Iyure nganye"
 
+#. # duration time of events
+#. # startDate and endDate use the `longDateFormat` format.
+#. # startTime and endTime use the `shortTimeFormat` format.
+#. # `<br>` (line break) used for presentation.
+#: one-day-duration
+msgid "{{startDate}}<br>from {{startTime}} to {{endTime}}"
+msgstr ""
+
+#: multiple-day-duration
+msgid "From {{startTime}} {{startDate}}<br>to {{endTime}} {{endDate}}"
+msgstr ""
+
+#: one-all-day-duration
+msgid "All day<br>{{startDate}}"
+msgstr ""
+
+#: multiple-all-day-duration
+msgid "All day from {{startDate}}<br>to {{endDate}}"
+msgstr ""
+
 #. # alarms for event view/edit
 #: none
 msgid "None"
 msgstr "Akukho"
 
+#: reminder
+#, fuzzy
+msgid "Reminder:"
+msgstr "Izikhumbuzo"
+
 #: remind-me
 msgid "Remind me"
 msgstr "Ndikhumbuze"
-
-#: from-time
-msgid "From: "
-msgstr "Ukususela: "
-
-#: to-time
-msgid "To: "
-msgstr "Ukuya: "
 
 #: alarm-at-event-standard
 msgid "At time of event"
@@ -721,15 +738,6 @@ msgstr "{{value}} iminyaka emva"
 msgid "%I %p"
 msgstr "%I %p"
 
-#. # abbreviated format (used on week view)
-#: hour-format-abbr-am
-msgid "%IA"
-msgstr ""
-
-#: hour-format-abbr-pm
-msgid "%IP"
-msgstr ""
-
 #: hour-allday
 msgid "All Day"
 msgstr "Imini yonke"
@@ -751,6 +759,11 @@ msgstr "%b %e, %A"
 #. # Header used on month view before the event list (selected day date)
 #: months-day-view-header-format
 msgid "%A, %b %e"
+msgstr ""
+
+#. # Date format in the event detail view.
+#: longDateFormat
+msgid "%A, %B %d, %Y"
 msgstr ""
 
 #. #errors
@@ -788,6 +801,12 @@ msgstr "Imposiso yokungqamanisa ikhalenda"
 #: notification-error-sync-description
 msgid "Tap for more info"
 msgstr "Cofa ukuze ufumane inkcazelo engakumbi"
+
+#~ msgid "From: "
+#~ msgstr "Ukususela: "
+
+#~ msgid "To: "
+#~ msgstr "Ukuya: "
 
 #~ msgid "%B %Y"
 #~ msgstr "%B %Y"

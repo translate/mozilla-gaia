@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-03 16:48+0100\n"
+"POT-Creation-Date: 2014-06-07 16:25+0100\n"
 "PO-Revision-Date: 2014-05-29 12:49+0000\n"
 "Last-Translator: Selim <selim@sum.lu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -282,22 +282,39 @@ msgstr "30 dk"
 msgid "Each hour"
 msgstr "Her saat"
 
+#. # duration time of events
+#. # startDate and endDate use the `longDateFormat` format.
+#. # startTime and endTime use the `shortTimeFormat` format.
+#. # `<br>` (line break) used for presentation.
+#: one-day-duration
+msgid "{{startDate}}<br>from {{startTime}} to {{endTime}}"
+msgstr ""
+
+#: multiple-day-duration
+msgid "From {{startTime}} {{startDate}}<br>to {{endTime}} {{endDate}}"
+msgstr ""
+
+#: one-all-day-duration
+msgid "All day<br>{{startDate}}"
+msgstr ""
+
+#: multiple-all-day-duration
+msgid "All day from {{startDate}}<br>to {{endDate}}"
+msgstr ""
+
 #. # alarms for event view/edit
 #: none
 msgid "None"
 msgstr "Yok"
 
+#: reminder
+#, fuzzy
+msgid "Reminder:"
+msgstr "Hatırlatıcılar"
+
 #: remind-me
 msgid "Remind me"
 msgstr "Bana hatırlat"
-
-#: from-time
-msgid "From: "
-msgstr "Başlangıç: "
-
-#: to-time
-msgid "To: "
-msgstr "Bitiş: "
 
 #: alarm-at-event-standard
 msgid "At time of event"
@@ -718,15 +735,6 @@ msgstr "{{value}} yıl sonra"
 msgid "%I %p"
 msgstr "%H"
 
-#. # abbreviated format (used on week view)
-#: hour-format-abbr-am
-msgid "%IA"
-msgstr ""
-
-#: hour-format-abbr-pm
-msgid "%IP"
-msgstr ""
-
 #: hour-allday
 msgid "All Day"
 msgstr "Tüm Gün"
@@ -750,6 +758,11 @@ msgstr "%e %b %A"
 #, fuzzy
 msgid "%A, %b %e"
 msgstr "%e %B %A"
+
+#. # Date format in the event detail view.
+#: longDateFormat
+msgid "%A, %B %d, %Y"
+msgstr ""
 
 #. #errors
 #: error-start-after-end
@@ -784,6 +797,12 @@ msgstr "Takvim eşitleme hatası"
 #: notification-error-sync-description
 msgid "Tap for more info"
 msgstr "Daha fazla bilgi için dokun"
+
+#~ msgid "From: "
+#~ msgstr "Başlangıç: "
+
+#~ msgid "To: "
+#~ msgstr "Bitiş: "
 
 #~ msgid "%B %Y"
 #~ msgstr "%B %Y"

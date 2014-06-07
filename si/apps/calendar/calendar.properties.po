@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-03 16:48+0100\n"
+"POT-Creation-Date: 2014-06-07 16:25+0100\n"
 "PO-Revision-Date: 2014-06-06 15:36+0000\n"
 "Last-Translator: Lahiru Himesh <lahiru.lahirumadusanka@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1402068982.000000\n"
@@ -280,22 +280,39 @@ msgstr "මිනිත්තු 30 ක්"
 msgid "Each hour"
 msgstr "පැයකට වරක්"
 
+#. # duration time of events
+#. # startDate and endDate use the `longDateFormat` format.
+#. # startTime and endTime use the `shortTimeFormat` format.
+#. # `<br>` (line break) used for presentation.
+#: one-day-duration
+msgid "{{startDate}}<br>from {{startTime}} to {{endTime}}"
+msgstr ""
+
+#: multiple-day-duration
+msgid "From {{startTime}} {{startDate}}<br>to {{endTime}} {{endDate}}"
+msgstr ""
+
+#: one-all-day-duration
+msgid "All day<br>{{startDate}}"
+msgstr ""
+
+#: multiple-all-day-duration
+msgid "All day from {{startDate}}<br>to {{endDate}}"
+msgstr ""
+
 #. # alarms for event view/edit
 #: none
 msgid "None"
 msgstr "කිසිවක් නැත"
 
+#: reminder
+#, fuzzy
+msgid "Reminder:"
+msgstr "සිහිකැදවීම්"
+
 #: remind-me
 msgid "Remind me"
 msgstr "මා හට සිහි කැදවන්න"
-
-#: from-time
-msgid "From: "
-msgstr "  වෙතින්"
-
-#: to-time
-msgid "To: "
-msgstr " වෙත"
 
 #: alarm-at-event-standard
 msgid "At time of event"
@@ -716,15 +733,6 @@ msgstr "අවුරුදු {{value}} කට පසු"
 msgid "%I %p"
 msgstr "%p %I"
 
-#. # abbreviated format (used on week view)
-#: hour-format-abbr-am
-msgid "%IA"
-msgstr "%IA"
-
-#: hour-format-abbr-pm
-msgid "%IP"
-msgstr "%IP"
-
 #: hour-allday
 msgid "All Day"
 msgstr "දවස පුරා"
@@ -747,6 +755,11 @@ msgstr "%b %e, %A"
 #: months-day-view-header-format
 msgid "%A, %b %e"
 msgstr "%A, %b %e"
+
+#. # Date format in the event detail view.
+#: longDateFormat
+msgid "%A, %B %d, %Y"
+msgstr ""
 
 #. #errors
 #: error-start-after-end
@@ -781,6 +794,18 @@ msgstr "දින දර්ශනය සමාකලන වීමේ දෝශ�
 #: notification-error-sync-description
 msgid "Tap for more info"
 msgstr "වැඩි විස්තර සඳහා ටැප් කරන්න"
+
+#~ msgid "From: "
+#~ msgstr "  වෙතින්"
+
+#~ msgid "To: "
+#~ msgstr " වෙත"
+
+#~ msgid "%IA"
+#~ msgstr "%IA"
+
+#~ msgid "%IP"
+#~ msgstr "%IP"
 
 #~ msgid "%B %Y"
 #~ msgstr "%B %Y"

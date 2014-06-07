@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-03 16:48+0100\n"
+"POT-Creation-Date: 2014-06-07 16:25+0100\n"
 "PO-Revision-Date: 2014-04-10 12:37+0000\n"
 "Last-Translator: Bansaj <bansajpradhan@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -284,22 +284,39 @@ msgstr "३० मिनेट"
 msgid "Each hour"
 msgstr "प्रत्येक घण्टा"
 
+#. # duration time of events
+#. # startDate and endDate use the `longDateFormat` format.
+#. # startTime and endTime use the `shortTimeFormat` format.
+#. # `<br>` (line break) used for presentation.
+#: one-day-duration
+msgid "{{startDate}}<br>from {{startTime}} to {{endTime}}"
+msgstr ""
+
+#: multiple-day-duration
+msgid "From {{startTime}} {{startDate}}<br>to {{endTime}} {{endDate}}"
+msgstr ""
+
+#: one-all-day-duration
+msgid "All day<br>{{startDate}}"
+msgstr ""
+
+#: multiple-all-day-duration
+msgid "All day from {{startDate}}<br>to {{endDate}}"
+msgstr ""
+
 #. # alarms for event view/edit
 #: none
 msgid "None"
 msgstr "कुनै पनि होइन"
 
+#: reminder
+#, fuzzy
+msgid "Reminder:"
+msgstr "सचेतकहरु"
+
 #: remind-me
 msgid "Remind me"
 msgstr "मलाई सचेत गर्नुहोस्"
-
-#: from-time
-msgid "From: "
-msgstr "बाट: "
-
-#: to-time
-msgid "To: "
-msgstr "सम्म: "
 
 #: alarm-at-event-standard
 msgid "At time of event"
@@ -720,15 +737,6 @@ msgstr "{{value}} बर्ष पछी"
 msgid "%I %p"
 msgstr "%I %p"
 
-#. # abbreviated format (used on week view)
-#: hour-format-abbr-am
-msgid "%IA"
-msgstr ""
-
-#: hour-format-abbr-pm
-msgid "%IP"
-msgstr ""
-
 #: hour-allday
 msgid "All Day"
 msgstr "सबै दिन"
@@ -752,6 +760,11 @@ msgstr "%b %e, %A"
 #, fuzzy
 msgid "%A, %b %e"
 msgstr "%A %B %e"
+
+#. # Date format in the event detail view.
+#: longDateFormat
+msgid "%A, %B %d, %Y"
+msgstr ""
 
 #. #errors
 #: error-start-after-end
@@ -786,6 +799,12 @@ msgstr "पात्रो समक्रमण त्रुटि"
 #: notification-error-sync-description
 msgid "Tap for more info"
 msgstr "थप जानकारीका लागि थिच्नुहोस्"
+
+#~ msgid "From: "
+#~ msgstr "बाट: "
+
+#~ msgid "To: "
+#~ msgstr "सम्म: "
 
 #~ msgid "%B %Y"
 #~ msgstr "%B %Y"

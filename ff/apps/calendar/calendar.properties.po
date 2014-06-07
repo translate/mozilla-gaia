@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-03 16:48+0100\n"
+"POT-Creation-Date: 2014-06-07 16:25+0100\n"
 "PO-Revision-Date: 2014-06-04 10:28+0000\n"
 "Last-Translator: Ibrahima <ibrahima.sarr@pulaagu.com>\n"
 "Language-Team: FULA LOCALIZATION\n"
@@ -12,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -283,22 +283,39 @@ msgstr "hoj 30"
 msgid "Each hour"
 msgstr "Waktu fof"
 
+#. # duration time of events
+#. # startDate and endDate use the `longDateFormat` format.
+#. # startTime and endTime use the `shortTimeFormat` format.
+#. # `<br>` (line break) used for presentation.
+#: one-day-duration
+msgid "{{startDate}}<br>from {{startTime}} to {{endTime}}"
+msgstr ""
+
+#: multiple-day-duration
+msgid "From {{startTime}} {{startDate}}<br>to {{endTime}} {{endDate}}"
+msgstr ""
+
+#: one-all-day-duration
+msgid "All day<br>{{startDate}}"
+msgstr ""
+
+#: multiple-all-day-duration
+msgid "All day from {{startDate}}<br>to {{endDate}}"
+msgstr ""
+
 #. # alarms for event view/edit
 #: none
 msgid "None"
 msgstr "Hoto siiftin"
 
+#: reminder
+#, fuzzy
+msgid "Reminder:"
+msgstr "Ciiftine"
+
 #: remind-me
 msgid "Remind me"
 msgstr "Siiftin am"
-
-#: from-time
-msgid "From: "
-msgstr "Iwde to: "
-
-#: to-time
-msgid "To: "
-msgstr "Fayi to: "
 
 #: alarm-at-event-standard
 msgid "At time of event"
@@ -719,15 +736,6 @@ msgstr "duuɓi {{value}} caggal ɗuum"
 msgid "%I %p"
 msgstr "%Hw"
 
-#. # abbreviated format (used on week view)
-#: hour-format-abbr-am
-msgid "%IA"
-msgstr "%H"
-
-#: hour-format-abbr-pm
-msgid "%IP"
-msgstr "%H"
-
 #: hour-allday
 msgid "All Day"
 msgstr "Ñalawma Fof"
@@ -750,6 +758,11 @@ msgstr "%A %e %b"
 #: months-day-view-header-format
 msgid "%A, %b %e"
 msgstr "%A %B %e"
+
+#. # Date format in the event detail view.
+#: longDateFormat
+msgid "%A, %B %d, %Y"
+msgstr ""
 
 #. #errors
 #: error-start-after-end
@@ -784,6 +797,18 @@ msgstr "Juumre sync haatumeere"
 #: notification-error-sync-description
 msgid "Tap for more info"
 msgstr "Tappu ngam ɓeydude humpito"
+
+#~ msgid "From: "
+#~ msgstr "Iwde to: "
+
+#~ msgid "To: "
+#~ msgstr "Fayi to: "
+
+#~ msgid "%IA"
+#~ msgstr "%H"
+
+#~ msgid "%IP"
+#~ msgstr "%H"
 
 #~ msgid "%B %Y"
 #~ msgstr "%B %Y"

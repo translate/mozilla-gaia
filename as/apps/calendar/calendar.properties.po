@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-03 16:48+0100\n"
+"POT-Creation-Date: 2014-06-07 16:25+0100\n"
 "PO-Revision-Date: 2014-06-07 05:26+0000\n"
 "Last-Translator: Nilamdyuti <ngoswami@redhat.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1402118764.000000\n"
@@ -281,22 +281,39 @@ msgstr "৩০ মিনিট"
 msgid "Each hour"
 msgstr "প্ৰতি ঘণ্টা"
 
+#. # duration time of events
+#. # startDate and endDate use the `longDateFormat` format.
+#. # startTime and endTime use the `shortTimeFormat` format.
+#. # `<br>` (line break) used for presentation.
+#: one-day-duration
+msgid "{{startDate}}<br>from {{startTime}} to {{endTime}}"
+msgstr ""
+
+#: multiple-day-duration
+msgid "From {{startTime}} {{startDate}}<br>to {{endTime}} {{endDate}}"
+msgstr ""
+
+#: one-all-day-duration
+msgid "All day<br>{{startDate}}"
+msgstr ""
+
+#: multiple-all-day-duration
+msgid "All day from {{startDate}}<br>to {{endDate}}"
+msgstr ""
+
 #. # alarms for event view/edit
 #: none
 msgid "None"
 msgstr "একো নাই"
 
+#: reminder
+#, fuzzy
+msgid "Reminder:"
+msgstr "ৰিমাইণ্ডাৰসমূহ"
+
 #: remind-me
 msgid "Remind me"
 msgstr "মনত পেলাই দিব"
-
-#: from-time
-msgid "From: "
-msgstr "প্ৰেৰক: "
-
-#: to-time
-msgid "To: "
-msgstr "গ্ৰাহক: "
 
 #: alarm-at-event-standard
 msgid "At time of event"
@@ -717,15 +734,6 @@ msgstr "{{value}} বছৰ পিছত"
 msgid "%I %p"
 msgstr "%I %p"
 
-#. # abbreviated format (used on week view)
-#: hour-format-abbr-am
-msgid "%IA"
-msgstr "%IA"
-
-#: hour-format-abbr-pm
-msgid "%IP"
-msgstr "%IP"
-
 #: hour-allday
 msgid "All Day"
 msgstr "সম্পূৰ্ণ দিন"
@@ -748,6 +756,11 @@ msgstr "%b %e, %A"
 #: months-day-view-header-format
 msgid "%A, %b %e"
 msgstr "%A, %b %e"
+
+#. # Date format in the event detail view.
+#: longDateFormat
+msgid "%A, %B %d, %Y"
+msgstr ""
 
 #. #errors
 #: error-start-after-end
@@ -782,6 +795,18 @@ msgstr "কেলেন্ডাৰ সংমিহলি ত্ৰুটি"
 #: notification-error-sync-description
 msgid "Tap for more info"
 msgstr "অধিক তথ্যৰ বাবে টেপ কৰক"
+
+#~ msgid "From: "
+#~ msgstr "প্ৰেৰক: "
+
+#~ msgid "To: "
+#~ msgstr "গ্ৰাহক: "
+
+#~ msgid "%IA"
+#~ msgstr "%IA"
+
+#~ msgid "%IP"
+#~ msgstr "%IP"
 
 #~ msgid "%B %Y"
 #~ msgstr "%B %Y"
