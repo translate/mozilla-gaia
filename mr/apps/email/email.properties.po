@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-05 20:44+0100\n"
-"PO-Revision-Date: 2014-06-07 12:15+0000\n"
+"PO-Revision-Date: 2014-06-08 09:23+0000\n"
 "Last-Translator: Chandrakant <cpdhutadmal@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: mr\n"
@@ -12,10 +12,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
+"X-Generator: Pootle 2.5.1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1402143303.000000\n"
+"X-POOTLE-MTIME: 1402219380.000000\n"
 
 #: setup-app-name-header
 msgid "Mail"
@@ -86,7 +86,7 @@ msgstr "इतर खाते जोडा"
 
 #: setup-show-mail
 msgid "Continue to Mail"
-msgstr ""
+msgstr "मेल सेटअप चालू ठेवा"
 
 #. # The error for when the user tries to create an account without a network
 #. # connection active.
@@ -130,6 +130,8 @@ msgid ""
 "An unknown error occurred. Check your network connection or try the manual "
 "configuration option."
 msgstr ""
+"अनोळखी चूक घडली आहे. आपली नेटवर्क तपासणी जोडणी तपासा किंवा व्यक्तिचलित कॉन्फिगरेशन "
+"विकल्प वापरा."
 
 #. # The error for Gmail accounts where 2-factor authentication (where you receive
 #. # a text message on your phone or run a special app) is enabled, and so the
@@ -138,25 +140,23 @@ msgstr ""
 #: setup-error-needs-app-pass
 msgid ""
 "You must use an application specific password for two-factor Gmail accounts"
-msgstr ""
+msgstr "टू-फॅक्टर Gmail खात्यासाठी ॲप्लिकेशन संबधित पासवर्ड वापरा"
 
 #. # The error for Gmail accounts where IMAP is not enabled.  This can occur
 #. # for individual users where they have disabled IMAP from the settings UI.
 #. # This can also occur for apps-for-domains where the domain is not configured
 #. # to support IMAP.
 #: setup-error-imap-disabled
-#, fuzzy
 msgid "You must enable IMAP for your Gmail account"
-msgstr "आपल्या Gmail खात्यावर, IMAP सक्रिय करा"
+msgstr "आपल्या Gmail खात्यावर, IMAP सक्रिय करणे गरजेचे आहे"
 
 #. # The error for Gmail accounts where POP3 is not enabled.  This can occur
 #. # for individual users where they have disabled POP3 from the settings UI.
 #. # This can also occur for apps-for-domains where the domain is not configured
 #. # to support POP3.
 #: setup-error-pop3-disabled
-#, fuzzy
 msgid "You must enable POP3 for your Gmail account"
-msgstr "आपल्या Gmail खात्यावर, IMAP सक्रिय करा"
+msgstr "आपल्या Gmail खात्यावर, POP3 सक्रिय करणे गरजेचे आहे"
 
 #. # The error for when we are able to contact a server that should be the mail
 #. # server but we are unable to establish a secure connection.
@@ -165,6 +165,8 @@ msgid ""
 "Unable to establish a secure connection with \"{{server}}\". There may be a "
 "problem with your network or the server."
 msgstr ""
+"\"{{server}}\" सोबत सुरक्षित जोडणी होउ शकली नाही. नेटवर्क किंवा सर्वर वर काही "
+"समस्या असू शकते."
 
 #. # The error for when we try to contact a server but see no indication of a
 #. # response before we give up because of a timeout.
@@ -173,6 +175,8 @@ msgid ""
 "Unable to establish a connection with \"{{server}}\". There may be a problem "
 "with the network."
 msgstr ""
+"\"{{server}}\" सोबत सुरक्षित जोडणी होउ शकली नाही. नेटवर्क किंवा सर्वर वर काही "
+"समस्या असू शकते."
 
 #. # The error for when we able to establish a (secure) connection with the server,
 #. # but there is some type of failure talking to the server that isn't covered by
@@ -181,7 +185,7 @@ msgstr ""
 #. # server's software.
 #: setup-error-server-problem
 msgid "There is a problem with the server \"{{server}}\". Try again later."
-msgstr ""
+msgstr "\"{{server}}\" सोबत काही समस्या आहेत. पुन्हा प्रयत्न करा."
 
 #. # The error for when we are trying to figure out the right server settings for
 #. # an account based on the e-mail address the user typed in during configuration,
@@ -194,17 +198,19 @@ msgid ""
 "Unable to automatically configure your account. Correct your e-mail address "
 "or try the manual configuration option."
 msgstr ""
+"आपले खाते स्वयंचलित पद्धतिने कॉन्फिगर होउ शकत नाही.  योग्य इ-मेल खाते किंवा व्यक्तिचलित "
+"कॉन्फिगरेशन विकल्प तपासा."
 
 #. # The error for when the user is trying to set up an account with a server that
 #. # currently indicates it is offline for maintenance.
 #: setup-error-server-maintenance
 msgid "The server \"{{server}}\" is offline for maintenance. Try again later."
-msgstr ""
+msgstr "\"{{server}}\" सद्या परिरक्षणासाठी ऑफलाइन आहे. पुन्हा प्रयत्न करा."
 
 #. # The error when the user trying to register a duplicate account
 #: setup-error-account-already-exists
 msgid "This account is already configured."
-msgstr ""
+msgstr "हे खाते कॉन्फिगर आधिच केलेले आहे."
 
 #: setup-manual-config2
 msgid "Manual setup"
@@ -251,25 +257,23 @@ msgstr "सॉकेट प्रकार"
 #. # Technical term, should not be translated
 #: setup-manual-socket-ssl
 msgid "SSL"
-msgstr ""
+msgstr "SSL"
 
 #. # Technical term, should not be translated
 #: setup-manual-socket-starttls
 msgid "STARTTLS"
-msgstr ""
+msgstr "STARTTLS"
 
 #: setup-manual-hostname.placeholder
-#, fuzzy
 msgctxt "setup-manual-hostname.placeholder"
 msgid "Hostname"
 msgstr "होस्टनेम"
 
 #: setup-manual-port.placeholder
 msgid "Port Number"
-msgstr ""
+msgstr "पोर्ट क्रमांक"
 
 #: setup-manual-username.placeholder
-#, fuzzy
 msgctxt "setup-manual-username.placeholder"
 msgid "Username"
 msgstr "वापरकर्ता नाव"
@@ -278,15 +282,15 @@ msgstr "वापरकर्ता नाव"
 #. # the double \\ will be displayed as a single \ 
 #: setup-manual-activesync-username.placeholder
 msgid "Domain\\Username"
-msgstr ""
+msgstr "Domain\\Username"
 
 #: setup-bad-password-header
 msgid "Bad password!"
-msgstr ""
+msgstr " अपायकारक पासवर्ड!"
 
 #: setup-bad-password
 msgid "We could not sign in to the server. Maybe your password is wrong?"
-msgstr ""
+msgstr "सर्वर वर साईन-इन करू शकत नाही. कदाचित आपले पासवर्ड चुकिचे आहे ?"
 
 #: setup-new-password.placeholder
 msgid "New password"
@@ -298,7 +302,7 @@ msgstr "नविन पासवर्ड ने पुन्हा प्र�
 
 #: setup-gmail-twofactor-header
 msgid "Two-Factor Enabled"
-msgstr ""
+msgstr "टू-फॅक्टर सक्रिय"
 
 #: setup-gmail-twofactor-message
 msgid "You need to enter an application-specific password below."
@@ -326,32 +330,28 @@ msgid "POP3 Disabled"
 msgstr "POP3 निष्क्रिय"
 
 #: setup-gmail-pop3-message
-#, fuzzy
 msgid "You must enable POP3 on your Gmail account"
-msgstr "आपल्या Gmail खात्यावर, IMAP सक्रिय करा"
+msgstr "आपल्या Gmail खात्यावर, POP3 सक्रिय करणे गरजेचे आहे"
 
 #: setup-gmail-pop3-retry
-#, fuzzy
 msgctxt "setup-gmail-pop3-retry"
 msgid "Retry"
 msgstr "पुन्हा प्रयत्न करा"
 
 #: settings-main-header
 msgid "Mail Settings"
-msgstr ""
+msgstr "मेल सेटिंग्स्"
 
 #. # For account settings screen, there are sections of settings, and each
 #. #section has a header. One is Account, which shows general information
 #. # about the account, like the name.
 #: settings-sub-header-account
-#, fuzzy
 msgid "Account"
 msgstr "खाते"
 
 #. # Label in the "Account" sub-section of account settings that shows the
 #. # human name, not the email address, for the account.
 #: settings-account-name
-#, fuzzy
 msgctxt "settings-account-name"
 msgid "Your name"
 msgstr "आपले नाव"
@@ -361,21 +361,21 @@ msgstr "आपले नाव"
 #. # via periodic sync with the mail server.
 #: settings-account-display-notifications
 msgid "Display notifications for new messages"
-msgstr ""
+msgstr "नवीन संदेश करीता दृष्य सूचना"
 
 #. # LOCALIZATION NOTE(settings-account-play-sound-onsend): Label in the "Account"
 #. # sub-section of account settings for the checkbox that enables playing a sound
 #. # after a message is sent.
 #: settings-account-play-sound-onsend
 msgid "Play sound after message is sent"
-msgstr ""
+msgstr "संदेश पाठविल्यानंतर बेल वाजवा."
 
 #. # For account settings screen, there are sections of settings, and each
 #. # section has a header. One is Data, which deals with sync intervals and
 #. # time windows for the data that is fetched.
 #: settings-sub-header-data
 msgid "Data"
-msgstr ""
+msgstr "डाटा"
 
 #. # Label in the "Data" sub-section of acccount settings for the select box
 #. # that allows choosing how often to check the server for new messages in
@@ -383,7 +383,7 @@ msgstr ""
 #. # settings-check-every-* properties.
 #: settings-account-check-mail
 msgid "Check for new messages"
-msgstr ""
+msgstr "नवीन संदेश आले आहेत का पहा"
 
 #. # For account settings screen, there are sections of settings, and each
 #. # section has a header. One is "Server settings", which deals with the
@@ -452,40 +452,38 @@ msgstr "नष्ट करा"
 #. # or ellipses.
 #: settings-account-clarify-imap
 msgid "{{account-name}} (IMAP)"
-msgstr ""
+msgstr "{{account-name}} (IMAP)"
 
 #: settings-account-clarify-pop3
 msgid "{{account-name}} (POP3)"
-msgstr ""
+msgstr "{{account-name}} (POP3)"
 
 #: settings-account-clarify-smtp
 msgid "{{account-name}} (SMTP)"
-msgstr ""
+msgstr "{{account-name}} (SMTP)"
 
 #: settings-general-section
 msgid "General settings"
-msgstr ""
+msgstr "सामान्य सेटिंग्स्"
 
 #: settings-show-images
 msgid "Always show images"
-msgstr ""
+msgstr "नेहमी प्रतिमा दाखवा"
 
 #: settings-download-attachments
 msgid "Download attachments"
-msgstr ""
+msgstr "ॲटॅचमेंट्स डाउनलोड करा"
 
 #. # How often to check the mail server for new mail messages for the inbox.
 #. # "Manually" means, do not automatically connect on a periodic sync interval.
 #. # User will manually click the refresh button to check for new messages.
 #: settings-check-every-5min
-#, fuzzy
 msgid "Every 5 minutes"
 msgstr "प्रत्येक 15 मिनिटांनी"
 
 #: settings-check-every-10min
-#, fuzzy
 msgid "Every 10 minutes"
-msgstr "प्रत्येक 15 मिनिटांनी"
+msgstr "प्रत्येक 10 मिनिटांनी"
 
 #: settings-check-every-15min
 msgid "Every 15 minutes"
@@ -531,54 +529,47 @@ msgid "{{ n }} seconds"
 msgstr "{{ n }} सेकंद"
 
 #: settings-check-dynamic[many]
-#, fuzzy
 msgctxt "settings-check-dynamic[many]"
 msgid "{{ n }} seconds"
 msgstr "{{ n }} सेकंद"
 
 #: settings-check-dynamic[other]
-#, fuzzy
 msgctxt "settings-check-dynamic[other]"
 msgid "{{ n }} seconds"
 msgstr "{{ n }} सेकंद"
 
 #: settings-default-account
 msgid "Set as default email"
-msgstr ""
+msgstr "पूर्वनिर्धारित म्हणून सेट करा"
 
 #: settings-account-type
-#, fuzzy
 msgctxt "settings-account-type"
 msgid "Account type"
 msgstr "खाते प्रकार"
 
 #: settings-account-credentials
 msgid "Credentials"
-msgstr ""
+msgstr "क्रिडेंशियल्स"
 
 #: settings-activesync-label
-#, fuzzy
 msgctxt "settings-activesync-label"
 msgid "ActiveSync settings"
-msgstr "ActiveSync सेटींग्स"
+msgstr "ActiveSync सेटींग्स्"
 
 #: settings-imap-label
-#, fuzzy
 msgctxt "settings-imap-label"
 msgid "IMAP settings"
-msgstr "IMAP सेटींग्स"
+msgstr "IMAP सेटींग्स्"
 
 #: settings-pop3-label
-#, fuzzy
 msgctxt "settings-pop3-label"
 msgid "POP3 settings"
-msgstr "POP3 सेटींग्स"
+msgstr "POP3 सेटींग्स्"
 
 #: settings-smtp-label
-#, fuzzy
 msgctxt "settings-smtp-label"
 msgid "SMTP settings"
-msgstr "SMTP सेटींग्स"
+msgstr "SMTP सेटींग्स्"
 
 #: settings-hostname
 msgctxt "settings-hostname"
@@ -624,32 +615,30 @@ msgstr "1 दिवस"
 
 #: settings-synchronize-three-days
 msgid "3 days"
-msgstr ""
+msgstr "3 दिवस"
 
 #: settings-synchronize-one-week
 msgid "1 week"
-msgstr ""
+msgstr "1 आठवडा"
 
 #: settings-synchronize-two-weeks
 msgid "2 weeks"
-msgstr ""
+msgstr "2 आठवडे"
 
 #: settings-synchronize-one-month
 msgid "1 month"
-msgstr ""
+msgstr "1 महिना"
 
 #: settings-synchronize-all
 msgid "All messages"
-msgstr ""
+msgstr "सर्व संदेश"
 
 #: envelope-from
-#, fuzzy
 msgctxt "envelope-from"
 msgid "From"
 msgstr "च्या-कडून"
 
 #: envelope-to
-#, fuzzy
 msgctxt "envelope-to"
 msgid "To"
 msgstr "प्रति"
@@ -657,11 +646,11 @@ msgstr "प्रति"
 #: envelope-cc
 msgctxt "envelope-cc"
 msgid "Cc"
-msgstr ""
+msgstr "प्रत"
 
 #: envelope-bcc
 msgid "Bcc"
-msgstr ""
+msgstr "गुप्त प्रत"
 
 #: reader-header
 msgid "Read"
@@ -703,47 +692,46 @@ msgstr "ॲटॅचमेंट"
 
 #: compose-attachments[one]
 msgid "{{ n }} attachment"
-msgstr ""
+msgstr "{{ n }} ॲटॅचमेंट"
 
 #: compose-attachments[two]
 msgctxt "compose-attachments[two]"
 msgid "{{ n }} attachments"
-msgstr ""
+msgstr "{{ n }} ॲटॅचमेंट्स"
 
 #: compose-attachments[few]
 msgctxt "compose-attachments[few]"
 msgid "{{ n }} attachments"
-msgstr ""
+msgstr "{{ n }} ॲटॅचमेंट्स"
 
 #: compose-attachments[many]
 msgctxt "compose-attachments[many]"
 msgid "{{ n }} attachments"
-msgstr ""
+msgstr "{{ n }} ॲटॅचमेंट्स"
 
 #: compose-attachments[other]
 msgctxt "compose-attachments[other]"
 msgid "{{ n }} attachments"
-msgstr ""
+msgstr "{{ n }} ॲटॅचमेंट्स"
 
 #. # Shown when user taps on attachment icon in compose, but the app still
 #. # needs a bit more time to finishing the add of the previous attachment.
 #: compose-attachment-still-working
 msgid "One moment, still working on the previous attachment..."
-msgstr ""
+msgstr "थोडा वेळ थांबा. आधिच्या ॲटॅचमेंट वर काम चालू आहे..."
 
 #: compose-subject
-#, fuzzy
 msgctxt "compose-subject"
 msgid "Subject"
 msgstr "विषय"
 
 #: compose-draft-save
 msgid "Save to Local Drafts"
-msgstr ""
+msgstr "स्थानीक मसुदा म्हणून साठवा"
 
 #: compose-discard-message
 msgid "Discard email?"
-msgstr ""
+msgstr "इ-मेल दुर्लक्षित करावे ?"
 
 #: compose-discard-confirm
 msgid "Discard"
@@ -790,43 +778,41 @@ msgstr "ॲटॅचमेंट{{ n }}"
 
 #: attachment-size-kib
 msgid "{{kilobytes}}K"
-msgstr ""
+msgstr "{{kilobytes}}K"
 
 #: message-attachment-view.textContent
 msgid "View"
-msgstr ""
+msgstr "दृश्य"
 
 #: message-attachment-too-large
 msgid "This file is too large to download."
-msgstr ""
+msgstr "डाउनलोड करण्यासाठी हि फाइल खुपच मोठी आहे."
 
 #: message-no-subject
 msgid "(no subject)"
-msgstr ""
+msgstr "(विषय नाही)"
 
 #: message-edit-menu-delete
-#, fuzzy
 msgctxt "message-edit-menu-delete"
 msgid "Delete"
 msgstr "नष्ट करा"
 
 #: message-edit-delete-confirm
 msgid "Delete email message?"
-msgstr ""
+msgstr "सर्व संदेश नष्ट करावे ?"
 
 #: message-send-attachment-disabled-confirm
 msgid "Attachments can not be forwarded."
-msgstr ""
+msgstr "ॲटॅचमेंट्स पुढे पाठविता येत नाहित."
 
 #: message-multiedit-header
-#, fuzzy
 msgctxt "message-multiedit-header"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: message-multiedit-header[zero]
 msgid "Edit"
-msgstr ""
+msgstr "संपादन करा"
 
 #: message-multiedit-header[one]
 msgctxt "message-multiedit-header[one]"
@@ -872,51 +858,44 @@ msgid "This email contains {{ n }} images. Click to download."
 msgstr "या इ-मेल सोबत {{ n }} प्रतिमा आहेत.  त्या डाउनलोड करण्यासाठी क्लिक करा."
 
 #: message-download-images[few]
-#, fuzzy
 msgctxt "message-download-images[few]"
 msgid "This email contains {{ n }} images. Click to download."
-msgstr "या इ-मेल सोबत {{ n }} प्रतिमा आहेत.  त्या डाउनलोड करण्यासाठी क्लिक करा."
+msgstr "या इ-मेल सोबत {{ n }} प्रतिमा आहेत. त्या डाउनलोड करण्यासाठी क्लिक करा."
 
 #: message-download-images[many]
-#, fuzzy
 msgctxt "message-download-images[many]"
 msgid "This email contains {{ n }} images. Click to download."
-msgstr "या इ-मेल सोबत {{ n }} प्रतिमा आहेत.  त्या डाउनलोड करण्यासाठी क्लिक करा."
+msgstr "या इ-मेल सोबत {{ n }} प्रतिमा आहेत. त्या डाउनलोड करण्यासाठी क्लिक करा."
 
 #: message-download-images[other]
-#, fuzzy
 msgctxt "message-download-images[other]"
 msgid "This email contains {{ n }} images. Click to download."
-msgstr "या इ-मेल सोबत {{ n }} प्रतिमा आहेत.  त्या डाउनलोड करण्यासाठी क्लिक करा."
+msgstr "या इ-मेल सोबत {{ n }} प्रतिमा आहेत. त्या डाउनलोड करण्यासाठी क्लिक करा."
 
 #: message-show-external-images
 msgid "Show external images"
-msgstr ""
+msgstr "बाहेरील प्रतिमा दर्शवा"
 
 #: message-multiedit-cancel
-#, fuzzy
 msgctxt "message-multiedit-cancel"
 msgid "Cancel"
 msgstr "रद्द करा"
 
 #: message-multiedit-delete-confirm
-#, fuzzy
 msgctxt "message-multiedit-delete-confirm"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: message-multiedit-delete-confirm[one]
 msgid "Delete this email message?"
-msgstr ""
+msgstr "हा इ-मेल संदेश नष्ट करावा ?"
 
 #: message-multiedit-delete-confirm[two]
-#, fuzzy
 msgctxt "message-multiedit-delete-confirm[two]"
 msgid "Delete {{ n }} email messages?"
 msgstr "{{ n }} इ-मेल संदेश नष्ट करावे ?"
 
 #: message-multiedit-delete-confirm[few]
-#, fuzzy
 msgctxt "message-multiedit-delete-confirm[few]"
 msgid "Delete {{ n }} email messages?"
 msgstr "{{ n }} इ-मेल संदेश नष्ट करावे ?"
@@ -965,41 +944,40 @@ msgstr "मजकूर"
 
 #: message-search-all
 msgid "All"
-msgstr ""
+msgstr "सर्व"
 
 #: message-search-input.placeholder
 msgid "Search Mail"
-msgstr ""
+msgstr "मेल शोधा"
 
 #: message-search-cancel
-#, fuzzy
 msgctxt "message-search-cancel"
 msgid "Cancel"
 msgstr "रद्द करा"
 
 #: messages-syncing
 msgid "Loading Messages"
-msgstr ""
+msgstr "संदेश लोड करत आहे"
 
 #: messages-sync-more
 msgid "Load more messages from server"
-msgstr ""
+msgstr "सर्वर वरून अधिक संदेश लोड करा"
 
 #: messages-folder-empty
 msgid "No mail in this Folder"
-msgstr ""
+msgstr "या फोल्डर मध्ये मेल नाहीत"
 
 #: messages-search-empty
 msgid "No matches in locally cached messages"
-msgstr ""
+msgstr "स्थानिक कॅशे केलेल्या संदेशाशी एकही संदेश जुळत नाही"
 
 #: messages-folder-select
 msgid "Select folder"
-msgstr ""
+msgstr "फोल्डर निवडा"
 
 #: message-contact-menu-create
 msgid "Save new contact"
-msgstr ""
+msgstr "नवीन संपर्क साठवा"
 
 #: message-contact-menu-add-existing
 msgid "Add to existing contact"
@@ -1043,7 +1021,7 @@ msgstr "{name} ने लिहिले"
 
 #: forward-original-message
 msgid "Original message"
-msgstr ""
+msgstr "मुळ संदेश"
 
 #. # L10n note: These are the labels we use when displaying the envelope info for a
 #. # message that is forwarded inline.  While automatic recovery of this
@@ -1051,17 +1029,15 @@ msgstr ""
 #. # localized, we attempt to remain consistent with apps such as Thunderbird for
 #. # at least English.
 #: forward-header-subject
-#, fuzzy
 msgctxt "forward-header-subject"
 msgid "Subject"
 msgstr "विषय"
 
 #: forward-header-date
 msgid "Date"
-msgstr ""
+msgstr "दिनांक"
 
 #: forward-header-from
-#, fuzzy
 msgctxt "forward-header-from"
 msgid "From"
 msgstr "च्या-कडून"
@@ -1069,10 +1045,9 @@ msgstr "च्या-कडून"
 #. # This really wants to have the dash in it for consistency with Thunderbird
 #: forward-header-reply-to
 msgid "Reply-To"
-msgstr ""
+msgstr "यास उत्तर द्या"
 
 #: forward-header-to
-#, fuzzy
 msgctxt "forward-header-to"
 msgid "To"
 msgstr "प्रति"
@@ -1080,7 +1055,7 @@ msgstr "प्रति"
 #: forward-header-cc
 msgctxt "forward-header-cc"
 msgid "Cc"
-msgstr ""
+msgstr "प्रत"
 
 #. # Localized folder names for IMAP servers.  Because the IMAP standard did not
 #. # originally specify a way to express meta-data about folders, folders may be
@@ -1089,12 +1064,11 @@ msgstr ""
 #. # footsteps of Thunderbird.
 #: folder-inbox
 msgid "Inbox"
-msgstr ""
+msgstr "इनबॉक्स"
 
 #: folder-sent
-#, fuzzy
 msgid "Sent"
-msgstr "पाठवा"
+msgstr "पाठवलेले"
 
 #: folder-drafts
 msgid "Drafts"
@@ -1148,47 +1122,45 @@ msgstr "सेटिंग्स्"
 #. # font size to fit longer text.
 #: folder-last-synced-label
 msgid "Last sync:"
-msgstr ""
+msgstr "शेवटचे सिंक: "
 
 #: toaster-undo
 msgid "Undo"
-msgstr ""
+msgstr "पूर्ववत करा"
 
 #: toaster-retry
-#, fuzzy
 msgctxt "toaster-retry"
 msgid "Retry"
 msgstr "पुन्हा प्रयत्न करा"
 
 #: toaster-message-star
-#, fuzzy
 msgctxt "toaster-message-star"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: toaster-message-star[one]
 msgid "1 message flag set"
-msgstr ""
+msgstr "1 संदेश फ्लॅग सेट केला"
 
 #: toaster-message-star[two]
 msgctxt "toaster-message-star[two]"
 msgid "{{ n }} message flags set"
-msgstr ""
+msgstr "{{n}} संदेश फ्लॅग सेट केले"
 
 #: toaster-message-star[few]
 msgctxt "toaster-message-star[few]"
 msgid "{{ n }} message flags set"
-msgstr ""
+msgstr "{{ n }} संदेश फ्लॅग सेट केले"
 
 #: toaster-message-star[many]
 msgctxt "toaster-message-star[many]"
 msgid "{{ n }} message flags set"
-msgstr ""
+msgstr "{{ n }} संदेश फ्लॅग सेट केले"
 
 #: toaster-message-star[other]
 msgctxt "toaster-message-star[other]"
 msgid "{{ n }} message flags set"
-msgstr ""
+msgstr "{{ n }} संदेश फ्लॅग सेट केले"
 
 #: toaster-message-unstar
 msgctxt "toaster-message-unstar"
@@ -1197,30 +1169,29 @@ msgstr "{[ plural(n) ]}"
 
 #: toaster-message-unstar[one]
 msgid "1 message flag removed"
-msgstr ""
+msgstr "1 संदेश फ्लॅग काढला"
 
 #: toaster-message-unstar[two]
 msgctxt "toaster-message-unstar[two]"
 msgid "{{ n }} message flags removed"
-msgstr ""
+msgstr "{{ n }} संदेश फ्लॅग काढले"
 
 #: toaster-message-unstar[few]
 msgctxt "toaster-message-unstar[few]"
 msgid "{{ n }} message flags removed"
-msgstr ""
+msgstr "{{ n }} संदेश फ्लॅग काढले"
 
 #: toaster-message-unstar[many]
 msgctxt "toaster-message-unstar[many]"
 msgid "{{ n }} message flags removed"
-msgstr ""
+msgstr "{{ n }} संदेश फ्लॅग काढले"
 
 #: toaster-message-unstar[other]
 msgctxt "toaster-message-unstar[other]"
 msgid "{{ n }} message flags removed"
-msgstr ""
+msgstr "{{ n }} संदेश फ्लॅग काढले"
 
 #: toaster-message-read
-#, fuzzy
 msgctxt "toaster-message-read"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
@@ -1232,137 +1203,132 @@ msgstr "1 वाचलेला संदेश चिन्हित केल�
 #: toaster-message-read[two]
 msgctxt "toaster-message-read[two]"
 msgid "{{ n }} messages marked as read"
-msgstr ""
+msgstr "{{ n }} संदेश \"वाचलेले\" असे चिन्हांकीत केले गेले"
 
 #: toaster-message-read[few]
 msgctxt "toaster-message-read[few]"
 msgid "{{ n }} messages marked as read"
-msgstr ""
+msgstr "{{ n }} संदेश \"वाचलेले\" असे चिन्हांकीत केले गेले"
 
 #: toaster-message-read[many]
 msgctxt "toaster-message-read[many]"
 msgid "{{ n }} messages marked as read"
-msgstr ""
+msgstr "{{ n }} संदेश \"वाचलेले\" असे चिन्हांकीत केले गेले"
 
 #: toaster-message-read[other]
 msgctxt "toaster-message-read[other]"
 msgid "{{ n }} messages marked as read"
-msgstr ""
+msgstr "{{ n }} संदेश \"वाचलेले\" असे चिन्हांकीत केले आहेत"
 
 #: toaster-message-unread
-#, fuzzy
 msgctxt "toaster-message-unread"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: toaster-message-unread[one]
-#, fuzzy
 msgid "1 message marked as unread"
-msgstr "1 वाचलेला संदेश चिन्हित केला"
+msgstr "1 संदेश \"न वाचलेला\" असे चिन्हांकित केला"
 
 #: toaster-message-unread[two]
 msgctxt "toaster-message-unread[two]"
 msgid "{{ n }} messages marked as unread"
-msgstr ""
+msgstr "{{ n }} संदेश \"वाचलेले नाहीत\" असे चिन्हांकीत केले आहेत"
 
 #: toaster-message-unread[few]
 msgctxt "toaster-message-unread[few]"
 msgid "{{ n }} messages marked as unread"
-msgstr ""
+msgstr "{{ n }} संदेश \"वाचलेले नाहीत\" असे चिन्हांकीत केले आहेत"
 
 #: toaster-message-unread[many]
 msgctxt "toaster-message-unread[many]"
 msgid "{{ n }} messages marked as unread"
-msgstr ""
+msgstr "{{ n }} संदेश \"वाचलेले नाहीत\" असे चिन्हांकीत केले आहेत"
 
 #: toaster-message-unread[other]
 msgctxt "toaster-message-unread[other]"
 msgid "{{ n }} messages marked as unread"
-msgstr ""
+msgstr "{{ n }} संदेश \"वाचलेले नाहीत\" असे चिन्हांकीत केले आहेत"
 
 #: toaster-message-move
-#, fuzzy
 msgctxt "toaster-message-move"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: toaster-message-move[one]
 msgid "1 message moved"
-msgstr ""
+msgstr "1 संदेश दुसऱ्या फोल्डर मध्ये स्थानांतरित केले आहे"
 
 #: toaster-message-move[two]
 msgctxt "toaster-message-move[two]"
 msgid "{{ n }} messages moved"
-msgstr ""
+msgstr "{{ n }} संदेश दुसऱ्या फोल्डर मध्ये स्थानांतरित केले आहेत"
 
 #: toaster-message-move[few]
 msgctxt "toaster-message-move[few]"
 msgid "{{ n }} messages moved"
-msgstr ""
+msgstr "{{ n }} संदेश दुसऱ्या फोल्डर मध्ये स्थानांतरित केले आहेत"
 
 #: toaster-message-move[many]
 msgctxt "toaster-message-move[many]"
 msgid "{{ n }} messages moved"
-msgstr ""
+msgstr "{{ n }} संदेश दुसऱ्या फोल्डर मध्ये स्थानांतरित केले आहेत"
 
 #: toaster-message-move[other]
 msgctxt "toaster-message-move[other]"
 msgid "{{ n }} messages moved"
-msgstr ""
+msgstr "{{ n }} संदेश दुसऱ्या फोल्डर मध्ये स्थानांतरित केले आहेत"
 
 #: toaster-message-delete
-#, fuzzy
 msgctxt "toaster-message-delete"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: toaster-message-delete[one]
 msgid "1 message deleted"
-msgstr ""
+msgstr "1 संदेश नष्ट केला"
 
 #: toaster-message-delete[two]
 msgctxt "toaster-message-delete[two]"
 msgid "{{ n }} messages deleted"
-msgstr ""
+msgstr "{{ n }} संदेश नष्ट केले"
 
 #: toaster-message-delete[few]
 msgctxt "toaster-message-delete[few]"
 msgid "{{ n }} messages deleted"
-msgstr ""
+msgstr "{{ n }} संदेश नष्ट केले"
 
 #: toaster-message-delete[many]
 msgctxt "toaster-message-delete[many]"
 msgid "{{ n }} messages deleted"
-msgstr ""
+msgstr "{{ n }} संदेश नष्ट केले"
 
 #: toaster-message-delete[other]
 msgctxt "toaster-message-delete[other]"
 msgid "{{ n }} messages deleted"
-msgstr ""
+msgstr "{{ n }} संदेश नष्ट केले"
 
 #: toaster-retryable-syncfailed
 msgid "Unable to connect to server"
-msgstr ""
+msgstr "सर्वर सोबत जोडणी होऊ शकत नाही"
 
 #: form-clear-input
 msgid "Remove text"
-msgstr ""
+msgstr "मजकूर काढून टाका"
 
 #: confirm-dialog-title
 msgid "Confirmation"
-msgstr ""
+msgstr "खात्री"
 
 #. # senders-separation-sign separates the email accounts of senders.
 #. # Notice that we have a space after the comma.
 #: senders-separation-sign
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #. # new-emails refers to the text shown on a notification that users
 #. # get when they receive new, unread email. The ui component that utilizes
 #. # this lives in apps/email/js/message_list_topbar.js.
 #: new-emails
-#, fuzzy
 msgctxt "new-emails"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
@@ -1370,33 +1336,32 @@ msgstr "{[ plural(n) ]}"
 #: new-emails[one]
 msgctxt "new-emails[one]"
 msgid "1 New Email"
-msgstr ""
+msgstr "1 नविन इ-मेल"
 
 #: new-emails[two]
 msgctxt "new-emails[two]"
 msgid "{{ n }} New Emails"
-msgstr ""
+msgstr "{{ n }} नविन इ-मेल"
 
 #: new-emails[few]
 msgctxt "new-emails[few]"
 msgid "{{ n }} New Emails"
-msgstr ""
+msgstr "{{ n }} नविन इ-मेल"
 
 #: new-emails[many]
 msgctxt "new-emails[many]"
 msgid "{{ n }} New Emails"
-msgstr ""
+msgstr "{{ n }} नविन इ-मेल"
 
 #: new-emails[other]
 msgctxt "new-emails[other]"
 msgid "{{ n }} New Emails"
-msgstr ""
+msgstr "{{ n }} नविन इ-मेल"
 
 #. # new-emails-notify-one-account is used when a system notification is generated during
 #. # a periodic background sync with the server. Since this goes to the system's
 #. # notification area, and user has only one account configured with the email App.
 #: new-emails-notify-one-account
-#, fuzzy
 msgctxt "new-emails-notify-one-account"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
@@ -1404,65 +1369,64 @@ msgstr "{[ plural(n) ]}"
 #: new-emails-notify-one-account[one]
 msgctxt "new-emails-notify-one-account[one]"
 msgid "1 New Email"
-msgstr ""
+msgstr "1 नविन इ-मेल"
 
 #: new-emails-notify-one-account[two]
 msgctxt "new-emails-notify-one-account[two]"
 msgid "{{ n }} New Emails"
-msgstr ""
+msgstr "{{ n }} नविन इ-मेल"
 
 #: new-emails-notify-one-account[few]
 msgctxt "new-emails-notify-one-account[few]"
 msgid "{{ n }} New Emails"
-msgstr ""
+msgstr "{{ n }} नविन इ-मेल"
 
 #: new-emails-notify-one-account[many]
 msgctxt "new-emails-notify-one-account[many]"
 msgid "{{ n }} New Emails"
-msgstr ""
+msgstr "{{ n }} नविन इ-मेल"
 
 #: new-emails-notify-one-account[other]
 msgctxt "new-emails-notify-one-account[other]"
 msgid "{{ n }} New Emails"
-msgstr ""
+msgstr "{{ n }} नविन इ-मेल"
 
 #. # new-emails-notify-multiple-accounts is used in the same situation
 #. # as new-emails-notify-one-account.
 #. # In this case, the user has more than one account configured
 #. # with the email app.
 #: new-emails-notify-multiple-accounts
-#, fuzzy
 msgctxt "new-emails-notify-multiple-accounts"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: new-emails-notify-multiple-accounts[one]
 msgid "1 New Email ({{ accountName }})"
-msgstr ""
+msgstr "1 नविन इ-मेल ({{ accountName }})"
 
 #: new-emails-notify-multiple-accounts[two]
 msgctxt "new-emails-notify-multiple-accounts[two]"
 msgid "{{ n }} New Emails ({{ accountName }})"
-msgstr ""
+msgstr "{{ n }} नविन इ-मेल ({{ accountName }})"
 
 #: new-emails-notify-multiple-accounts[few]
 msgctxt "new-emails-notify-multiple-accounts[few]"
 msgid "{{ n }} New Emails ({{ accountName }})"
-msgstr ""
+msgstr "{{ n }} नविन इ-मेल ({{ accountName }})"
 
 #: new-emails-notify-multiple-accounts[many]
 msgctxt "new-emails-notify-multiple-accounts[many]"
 msgid "{{ n }} New Emails ({{ accountName }})"
-msgstr ""
+msgstr "{{ n }} नविन इ-मेल ({{ accountName }})"
 
 #: new-emails-notify-multiple-accounts[other]
 msgctxt "new-emails-notify-multiple-accounts[other]"
 msgid "{{ n }} New Emails ({{ accountName }})"
-msgstr ""
+msgstr "{{ n }} नविन इ-मेल ({{ accountName }})"
 
 #. # new-emails-notify-multiple-accounts-body is used in the same situation
 #. # as new-emails-notify-multiple-accounts.
 #. # This is the body part of the notification.
 #: new-emails-notify-multiple-accounts-body
 msgid "{{ from }} “{{ subject }}”"
-msgstr ""
+msgstr "{{ from }} “{{ subject }}”"
