@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-24 11:19+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-04-26 13:37+0000\n"
 "Last-Translator: Raul <raul.malea@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,6 +62,8 @@ msgid "No"
 msgstr "Nu"
 
 #: reset
+#, fuzzy
+msgctxt "reset"
 msgid "Reset"
 msgstr "Restează"
 
@@ -930,6 +932,21 @@ msgstr "Transmisie celulară a mesajelor"
 #: cellBroadcast
 msgid "Cell broadcast"
 msgstr "Transmisie celulară"
+
+#: messagingInformation
+#, fuzzy
+msgid "Information"
+msgstr "Confirmare"
+
+#. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
+#: messagingSMSC
+#, fuzzy
+msgid "SMSC"
+msgstr "MMSC"
+
+#: unknownSMSC
+msgid "Unknown number"
+msgstr ""
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
@@ -2009,6 +2026,10 @@ msgctxt "vertical-homescreen-header"
 msgid "Homescreen"
 msgstr "Ecran principal"
 
+#: vertical-homescreen-layout
+msgid "Layout"
+msgstr ""
+
 #: vertical-homescreen-icon-layout
 msgid "Icon Layout"
 msgstr ""
@@ -2025,27 +2046,16 @@ msgstr ""
 msgid "Notice"
 msgstr ""
 
+#: search-header
+msgid "Search"
+msgstr ""
+
 #: search-engine
 msgid "Search Engine"
 msgstr ""
 
 #: search-suggestions
 msgid "Search Suggestions"
-msgstr ""
-
-#. # LOCALIZATION NOTE (search-suggestions-button, search-suggestions-header):
-#. # If you leave the original en-US value "{{search-suggestions}}" in the following
-#. # strings, the localization will be automatically picked from the existing
-#. # string with ID "search-suggestions". If you need to adapt your localization to
-#. # the reduced space available in header or button, you can use shorter strings here.
-#: search-suggestions-button
-msgctxt "search-suggestions-button"
-msgid "{{search-suggestions}}"
-msgstr ""
-
-#: search-suggestions-header
-msgctxt "search-suggestions-header"
-msgid "{{search-suggestions}}"
 msgstr ""
 
 #: search-suggestions-description
@@ -2085,9 +2095,14 @@ msgid "Description"
 msgstr "Descriere"
 
 #. # Personalization :: Keyboard
-#: installedInputMethods
-msgid "Installed input methods"
-msgstr "Metode de introducere instalate"
+#: keyboardSettings
+msgid "Keyboard Settings"
+msgstr ""
+
+#: selectedKeyboards
+#, fuzzy
+msgid "Selected Keyboards"
+msgstr "Tastaturi selectate"
 
 #: keyboards
 msgid "Keyboards"
@@ -2118,31 +2133,20 @@ msgstr "Tastatură"
 msgid "Dial Pad"
 msgstr ""
 
-#: selectedKeyboards
-msgid "Selected keyboards"
+#: selectKeyboards
+#, fuzzy
+msgid "Select Keyboards"
 msgstr "Tastaturi selectate"
 
-#. # LOCALIZATION NOTE (selectedKeyboards-header): if you leave the original
-#. # en-US value "{{selectedKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "selectedKeyboards".
+#. # LOCALIZATION NOTE (selectKeyboards-header): if you leave the original
+#. # en-US value "{{selectKeyboards}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "selectKeyboards".
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
-#: selectedKeyboards-header
-msgid "{{selectedKeyboards}}"
+#: selectKeyboards-header
+#, fuzzy
+msgid "{{selectKeyboards}}"
 msgstr "{{selectedKeyboards}}"
-
-#: addMoreKeyboards
-msgid "Add more keyboards"
-msgstr "Adaugă mai multe tastaturi"
-
-#. # LOCALIZATION NOTE (addMoreKeyboards-header): if you leave the original
-#. # en-US value "{{addMoreKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "addMoreKeyboards".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: addMoreKeyboards-header
-msgid "{{addMoreKeyboards}}"
-msgstr "{{addMoreKeyboards}}"
 
 #: mustHaveOneKeyboard
 msgid "At least one {{type}} keyboard should be selected"
@@ -2200,6 +2204,7 @@ msgid ""
 msgstr ""
 
 #: fxa-invitation
+msgctxt "fxa-invitation"
 msgid "Create account or sign in"
 msgstr ""
 
@@ -2279,8 +2284,9 @@ msgstr ""
 msgid "Find My Device allows you to locate, lock or erase your phone"
 msgstr ""
 
-#: findmydevice-login
-msgid "Sign In or Create an Account"
+#: findmydevice-create-account
+msgctxt "findmydevice-create-account"
+msgid "Create account or sign in"
 msgstr ""
 
 #: findmydevice-enable
@@ -2498,33 +2504,13 @@ msgstr "Confirmă codul de acces"
 msgid "Immediately"
 msgstr "Imediat"
 
-#: after-five-seconds
-msgid "After 5 seconds"
-msgstr "După 5 secunde"
-
-#: after-fifteen-seconds
-msgid "After 15 seconds"
-msgstr "După 15 secunde"
-
-#: after-thirty-seconds
-msgid "After 30 seconds"
-msgstr "După 30 de secunde"
-
 #: after-one-minute
 msgid "After 1 minute"
 msgstr "După 1 minut"
 
-#: after-two-minutes
-msgid "After 2 minutes"
-msgstr "După 2 minute"
-
 #: after-five-minutes
 msgid "After 5 minutes"
 msgstr "După 5 minute"
-
-#: after-ten-minutes
-msgid "After 10 minutes"
-msgstr "După 10 minute"
 
 #: after-fifteen-minutes
 msgid "After 15 minutes"
@@ -2537,10 +2523,6 @@ msgstr "După 30 de minute"
 #: after-one-hour
 msgid "After 1 hour"
 msgstr "După 1 oră"
-
-#: after-four-hours
-msgid "After 4 hours"
-msgstr "După 4 ore"
 
 #: require-passcode
 msgid "Require passcode"
@@ -2883,9 +2865,10 @@ msgid "How does Do Not Track work?"
 msgstr "Cum funcționează „Nu mă urmări”?"
 
 #: doNotTrack-dd1
+#, fuzzy
 msgid ""
 "When you turn on Do Not Track, your device tells every website and app (as "
-"well as advertisers and other content providers) that you don’t want your "
+"well as advertisers and other content providers) that you do not want your "
 "behavior tracked."
 msgstr ""
 "Când pornești funcția „Nu mă urmări”, dispozitivul tău spune fiecărui sait "
@@ -2893,10 +2876,11 @@ msgstr ""
 "conținut) căci nu vrei să-ți fie urmărit comportamentul."
 
 #: doNotTrack-dd2
+#, fuzzy
 msgid ""
-"Turning on Do Not Track won’t affect your ability to sign in to websites nor "
-"cause your device to forget your private information, such as the contents "
-"of shopping carts, location information or sign-in information."
+"Turning on Do Not Track will not affect your ability to sign in to websites "
+"nor cause your device to forget your private information, such as the "
+"contents of shopping carts, location information or sign-in information."
 msgstr ""
 "Pornind funcția „Nu mă urmări” aceasta nu va afecta posibilitatea de a te "
 "autentifica pe saituri, nici ca dispozitivul tău să uite informațiile tale "
@@ -3256,6 +3240,10 @@ msgstr "{{hud}}"
 msgid "Log changes in ADB"
 msgstr "Înreg. schimbările în adb"
 
+#: hud-system
+msgid "Show system HUD"
+msgstr ""
+
 #: hud-problems
 msgid "Problems"
 msgstr "Probleme"
@@ -3284,6 +3272,10 @@ msgstr "Reflows"
 msgid "Jank"
 msgstr "Jank"
 
+#: jank-threshold
+msgid "Jank Threshold"
+msgstr "Jank Threshold"
+
 #: hud-fps
 msgid "Frames per second"
 msgstr "Cadre pe secundă"
@@ -3295,6 +3287,10 @@ msgstr "Timp de încărcare"
 #: hud-memory
 msgid "Memory"
 msgstr "Memorie"
+
+#: hud-uss
+msgid "Unique Set Size"
+msgstr ""
 
 #: hud-appmemory
 msgid "App memory"
@@ -3413,14 +3409,6 @@ msgstr "Doar ADB"
 msgid "ADB and DevTools"
 msgstr "ADB și unelte de dezvoltare"
 
-#: devtools-overlay
-msgid "Show devtools overlay"
-msgstr "Show devtools overlay"
-
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Jank Threshold"
-
 #: wifi-debugging
 #, fuzzy
 msgid "Wi-Fi output in ADB"
@@ -3441,6 +3429,10 @@ msgstr ""
 
 #: geolocation-debugging-enabled
 msgid "Geolocation output in ADB"
+msgstr ""
+
+#: use-reviewer-certs
+msgid "Use Marketplace reviewer certs"
 msgstr ""
 
 #: model-name
@@ -3557,6 +3549,12 @@ msgstr ""
 #: learn-more
 msgid "Learn More"
 msgstr "Află mai multe"
+
+#: reset-head
+#, fuzzy
+msgctxt "reset-head"
+msgid "Reset"
+msgstr "Restează"
 
 #: reset-phone
 msgid "Reset Phone"
@@ -3937,19 +3935,19 @@ msgstr "Sprijină {{brandShortName}}"
 msgid "Send Mozilla Feedback"
 msgstr "Trimite opinia Mozillei"
 
-#: performanceData
-msgid "Performance data"
-msgstr "Date despre performanță"
-
-#: performanceDataInfo
-msgid "Help us improve {{brandShortName}} by sharing data about your phone."
+#: performanceAndUsageData
+msgid "Performance and usage data"
 msgstr ""
-"Ajută-ne să îmbunătățim {{brandShortName}} prin împărtășirea datelor despre "
-"telefonul tău."
 
-#: sharePerformanceData
-msgid "Submit performance data"
-msgstr "Trimite datele"
+#: performanceAndUsageDataInfo
+msgid ""
+"Help us improve {{brandShortName}} by sharing data about your phone and the "
+"way you use it."
+msgstr ""
+
+#: sharePerformanceAndUsageData
+msgid "Submit data"
+msgstr ""
 
 #: crashReports
 msgid "Crash reports"
@@ -4256,6 +4254,47 @@ msgstr "Trimite date"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Obține starea canalului"
+
+#~ msgid "Installed input methods"
+#~ msgstr "Metode de introducere instalate"
+
+#~ msgid "Add more keyboards"
+#~ msgstr "Adaugă mai multe tastaturi"
+
+#~ msgid "{{addMoreKeyboards}}"
+#~ msgstr "{{addMoreKeyboards}}"
+
+#~ msgid "After 5 seconds"
+#~ msgstr "După 5 secunde"
+
+#~ msgid "After 15 seconds"
+#~ msgstr "După 15 secunde"
+
+#~ msgid "After 30 seconds"
+#~ msgstr "După 30 de secunde"
+
+#~ msgid "After 2 minutes"
+#~ msgstr "După 2 minute"
+
+#~ msgid "After 10 minutes"
+#~ msgstr "După 10 minute"
+
+#~ msgid "After 4 hours"
+#~ msgstr "După 4 ore"
+
+#~ msgid "Show devtools overlay"
+#~ msgstr "Show devtools overlay"
+
+#~ msgid "Performance data"
+#~ msgstr "Date despre performanță"
+
+#~ msgid "Help us improve {{brandShortName}} by sharing data about your phone."
+#~ msgstr ""
+#~ "Ajută-ne să îmbunătățim {{brandShortName}} prin împărtășirea datelor "
+#~ "despre telefonul tău."
+
+#~ msgid "Submit performance data"
+#~ msgstr "Trimite datele"
 
 #~ msgid "Sent Mail"
 #~ msgstr "Mesaje trimise"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-24 11:19+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-06-08 03:15+0000\n"
 "Last-Translator: RAJESH <rajeshkajha@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,6 +58,8 @@ msgid "No"
 msgstr "नहीं"
 
 #: reset
+#, fuzzy
+msgctxt "reset"
 msgid "Reset"
 msgstr "रीसेट करें"
 
@@ -919,6 +921,21 @@ msgstr "सेल प्रसारण संदेश"
 #: cellBroadcast
 msgid "Cell broadcast"
 msgstr "सेल ब्राडकास्ट"
+
+#: messagingInformation
+#, fuzzy
+msgid "Information"
+msgstr "पुष्टिकरण"
+
+#. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
+#: messagingSMSC
+#, fuzzy
+msgid "SMSC"
+msgstr "MMSC"
+
+#: unknownSMSC
+msgid "Unknown number"
+msgstr ""
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
@@ -1984,6 +2001,10 @@ msgctxt "vertical-homescreen-header"
 msgid "Homescreen"
 msgstr "होमस्क्रीन"
 
+#: vertical-homescreen-layout
+msgid "Layout"
+msgstr ""
+
 #: vertical-homescreen-icon-layout
 msgid "Icon Layout"
 msgstr "चिह्न ख़ाका"
@@ -2000,27 +2021,16 @@ msgstr "चार स्तंभ"
 msgid "Notice"
 msgstr ""
 
+#: search-header
+msgid "Search"
+msgstr ""
+
 #: search-engine
 msgid "Search Engine"
 msgstr ""
 
 #: search-suggestions
 msgid "Search Suggestions"
-msgstr ""
-
-#. # LOCALIZATION NOTE (search-suggestions-button, search-suggestions-header):
-#. # If you leave the original en-US value "{{search-suggestions}}" in the following
-#. # strings, the localization will be automatically picked from the existing
-#. # string with ID "search-suggestions". If you need to adapt your localization to
-#. # the reduced space available in header or button, you can use shorter strings here.
-#: search-suggestions-button
-msgctxt "search-suggestions-button"
-msgid "{{search-suggestions}}"
-msgstr ""
-
-#: search-suggestions-header
-msgctxt "search-suggestions-header"
-msgid "{{search-suggestions}}"
 msgstr ""
 
 #: search-suggestions-description
@@ -2058,9 +2068,14 @@ msgid "Description"
 msgstr "विवरण"
 
 #. # Personalization :: Keyboard
-#: installedInputMethods
-msgid "Installed input methods"
-msgstr "स्थापित इनपुट विधि"
+#: keyboardSettings
+msgid "Keyboard Settings"
+msgstr ""
+
+#: selectedKeyboards
+#, fuzzy
+msgid "Selected Keyboards"
+msgstr "चुने हुए कुंजीपट"
 
 #: keyboards
 msgid "Keyboards"
@@ -2091,31 +2106,20 @@ msgstr "कुंजीपैड"
 msgid "Dial Pad"
 msgstr ""
 
-#: selectedKeyboards
-msgid "Selected keyboards"
+#: selectKeyboards
+#, fuzzy
+msgid "Select Keyboards"
 msgstr "चुने हुए कुंजीपट"
 
-#. # LOCALIZATION NOTE (selectedKeyboards-header): if you leave the original
-#. # en-US value "{{selectedKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "selectedKeyboards".
+#. # LOCALIZATION NOTE (selectKeyboards-header): if you leave the original
+#. # en-US value "{{selectKeyboards}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "selectKeyboards".
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
-#: selectedKeyboards-header
-msgid "{{selectedKeyboards}}"
+#: selectKeyboards-header
+#, fuzzy
+msgid "{{selectKeyboards}}"
 msgstr "{{selectedKeyboards}}"
-
-#: addMoreKeyboards
-msgid "Add more keyboards"
-msgstr "अधिक कुंजीपट जोड़ें"
-
-#. # LOCALIZATION NOTE (addMoreKeyboards-header): if you leave the original
-#. # en-US value "{{addMoreKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "addMoreKeyboards".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: addMoreKeyboards-header
-msgid "{{addMoreKeyboards}}"
-msgstr "{{addMoreKeyboards}}"
 
 #: mustHaveOneKeyboard
 msgid "At least one {{type}} keyboard should be selected"
@@ -2172,6 +2176,8 @@ msgid ""
 msgstr "आपका फ़ायरफ़ॉक्स का खाता फीचर और फायरफाक्स मार्केटप्लेस का उपयोग कर सकते हैं."
 
 #: fxa-invitation
+#, fuzzy
+msgctxt "fxa-invitation"
 msgid "Create account or sign in"
 msgstr "खाता बनाएँ या साइन इन करें"
 
@@ -2252,9 +2258,11 @@ msgid "Find My Device allows you to locate, lock or erase your phone"
 msgstr ""
 "मेरे युक्ति को ढ़ूँढ़ें आपके अपने फोन को पता करने के लिए, बंद करने और मिटाने की अनुमति देता है"
 
-#: findmydevice-login
-msgid "Sign In or Create an Account"
-msgstr "साइन इन करें या एक खाता बनाएँ"
+#: findmydevice-create-account
+#, fuzzy
+msgctxt "findmydevice-create-account"
+msgid "Create account or sign in"
+msgstr "खाता बनाएँ या साइन इन करें"
 
 #: findmydevice-enable
 msgid "Enable Find My Device"
@@ -2473,33 +2481,13 @@ msgstr "पासकोड संपुष्ट करें"
 msgid "Immediately"
 msgstr "तत्काल"
 
-#: after-five-seconds
-msgid "After 5 seconds"
-msgstr "5 सेकंड के बाद"
-
-#: after-fifteen-seconds
-msgid "After 15 seconds"
-msgstr "15 सेकंड के बाद"
-
-#: after-thirty-seconds
-msgid "After 30 seconds"
-msgstr "30 सेकंड्स के बाद"
-
 #: after-one-minute
 msgid "After 1 minute"
 msgstr "1 मिनट के बाद"
 
-#: after-two-minutes
-msgid "After 2 minutes"
-msgstr "2 मिनट के बाद"
-
 #: after-five-minutes
 msgid "After 5 minutes"
 msgstr "5 मिनट के बाद"
-
-#: after-ten-minutes
-msgid "After 10 minutes"
-msgstr "10 मिनट के बाद"
 
 #: after-fifteen-minutes
 msgid "After 15 minutes"
@@ -2512,10 +2500,6 @@ msgstr "30 मिनट के बाद"
 #: after-one-hour
 msgid "After 1 hour"
 msgstr "1 घंटे के बाद"
-
-#: after-four-hours
-msgid "After 4 hours"
-msgstr "4 घंटे के बाद"
 
 #: require-passcode
 msgid "Require passcode"
@@ -2844,9 +2828,10 @@ msgid "How does Do Not Track work?"
 msgstr "डू नॉट ट्रैक कैसे काम करता है ?"
 
 #: doNotTrack-dd1
+#, fuzzy
 msgid ""
 "When you turn on Do Not Track, your device tells every website and app (as "
-"well as advertisers and other content providers) that you don’t want your "
+"well as advertisers and other content providers) that you do not want your "
 "behavior tracked."
 msgstr ""
 "ट्रैक नहीं करें को चालू करने से, आपका युक्ति प्रत्येक वेबसाइट और अनुप्रयोग (विज्ञापनदाताओं और "
@@ -2854,10 +2839,11 @@ msgstr ""
 "चाहते हैं।"
 
 #: doNotTrack-dd2
+#, fuzzy
 msgid ""
-"Turning on Do Not Track won’t affect your ability to sign in to websites nor "
-"cause your device to forget your private information, such as the contents "
-"of shopping carts, location information or sign-in information."
+"Turning on Do Not Track will not affect your ability to sign in to websites "
+"nor cause your device to forget your private information, such as the "
+"contents of shopping carts, location information or sign-in information."
 msgstr ""
 "ट्रैक नहीं करें को चालू करने से वेबसाइट में साइन इन करने की क्षमता को प्रभावित नहीं करेगा ना "
 "हि आपके उपकरण द्वारा आपकी निजी जानकारी को भूला देगा, जैसे शॉपिंग कार्ट, स्थान जानकारी "
@@ -3208,6 +3194,10 @@ msgstr "{{hud}}"
 msgid "Log changes in ADB"
 msgstr "ADB में लॉग परिवर्तन"
 
+#: hud-system
+msgid "Show system HUD"
+msgstr ""
+
 #: hud-problems
 msgid "Problems"
 msgstr "समस्या"
@@ -3236,6 +3226,10 @@ msgstr "रीफ़्लो"
 msgid "Jank"
 msgstr "जैंक"
 
+#: jank-threshold
+msgid "Jank Threshold"
+msgstr "जैंक थ्रेसहोल्ड"
+
 #: hud-fps
 msgid "Frames per second"
 msgstr "फ्रेम प्रति सेकेंड"
@@ -3247,6 +3241,10 @@ msgstr "लोड कर नेका समय"
 #: hud-memory
 msgid "Memory"
 msgstr "मेमोरी"
+
+#: hud-uss
+msgid "Unique Set Size"
+msgstr ""
 
 #: hud-appmemory
 msgid "App memory"
@@ -3362,14 +3360,6 @@ msgstr "केवल ADB"
 msgid "ADB and DevTools"
 msgstr "ADB और डेवटूल्स"
 
-#: devtools-overlay
-msgid "Show devtools overlay"
-msgstr "डेवटूल सार दिखाएँ"
-
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "जैंक थ्रेसहोल्ड"
-
 #: wifi-debugging
 msgid "Wi-Fi output in ADB"
 msgstr "ADB में वाई-फाई उत्पादन"
@@ -3389,6 +3379,10 @@ msgstr "कार्ड का दृश्य: स्क्रीनशॉट"
 #: geolocation-debugging-enabled
 msgid "Geolocation output in ADB"
 msgstr "ADB मे जिओलोकेशन आउटपुट"
+
+#: use-reviewer-certs
+msgid "Use Marketplace reviewer certs"
+msgstr ""
 
 #: model-name
 msgid "Model"
@@ -3503,6 +3497,12 @@ msgstr ""
 #: learn-more
 msgid "Learn More"
 msgstr "अधिक जानें"
+
+#: reset-head
+#, fuzzy
+msgctxt "reset-head"
+msgid "Reset"
+msgstr "रीसेट करें"
 
 #: reset-phone
 msgid "Reset Phone"
@@ -3876,18 +3876,19 @@ msgstr "{{brandShortName}} सुधारें"
 msgid "Send Mozilla Feedback"
 msgstr "मोज़िला प्रतिक्रिया भेजें"
 
-#: performanceData
-msgid "Performance data"
-msgstr "प्रदर्शन डेटा"
-
-#: performanceDataInfo
-msgid "Help us improve {{brandShortName}} by sharing data about your phone."
+#: performanceAndUsageData
+msgid "Performance and usage data"
 msgstr ""
-"हमें अपने फोन के बारे में डेटा साझा करके {{brandShortName}} कोबेहतर बनाने में सहायता करें."
 
-#: sharePerformanceData
-msgid "Submit performance data"
-msgstr "प्रदर्शन डेटा सबमिट करें"
+#: performanceAndUsageDataInfo
+msgid ""
+"Help us improve {{brandShortName}} by sharing data about your phone and the "
+"way you use it."
+msgstr ""
+
+#: sharePerformanceAndUsageData
+msgid "Submit data"
+msgstr ""
 
 #: crashReports
 msgid "Crash reports"
@@ -4189,6 +4190,50 @@ msgstr "डाटा भेजे"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "माध्यम का स्थिति ले"
+
+#~ msgid "Installed input methods"
+#~ msgstr "स्थापित इनपुट विधि"
+
+#~ msgid "Add more keyboards"
+#~ msgstr "अधिक कुंजीपट जोड़ें"
+
+#~ msgid "{{addMoreKeyboards}}"
+#~ msgstr "{{addMoreKeyboards}}"
+
+#~ msgid "Sign In or Create an Account"
+#~ msgstr "साइन इन करें या एक खाता बनाएँ"
+
+#~ msgid "After 5 seconds"
+#~ msgstr "5 सेकंड के बाद"
+
+#~ msgid "After 15 seconds"
+#~ msgstr "15 सेकंड के बाद"
+
+#~ msgid "After 30 seconds"
+#~ msgstr "30 सेकंड्स के बाद"
+
+#~ msgid "After 2 minutes"
+#~ msgstr "2 मिनट के बाद"
+
+#~ msgid "After 10 minutes"
+#~ msgstr "10 मिनट के बाद"
+
+#~ msgid "After 4 hours"
+#~ msgstr "4 घंटे के बाद"
+
+#~ msgid "Show devtools overlay"
+#~ msgstr "डेवटूल सार दिखाएँ"
+
+#~ msgid "Performance data"
+#~ msgstr "प्रदर्शन डेटा"
+
+#~ msgid "Help us improve {{brandShortName}} by sharing data about your phone."
+#~ msgstr ""
+#~ "हमें अपने फोन के बारे में डेटा साझा करके {{brandShortName}} कोबेहतर बनाने में सहायता "
+#~ "करें."
+
+#~ msgid "Submit performance data"
+#~ msgstr "प्रदर्शन डेटा सबमिट करें"
 
 #~ msgid "Edges gesture"
 #~ msgstr "किनारा मुद्रा"

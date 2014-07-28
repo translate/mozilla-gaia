@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-24 11:19+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-07-25 09:07+0000\n"
 "Last-Translator: asiersar <asier.sarasua@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1406279220.000000\n"
@@ -59,6 +59,8 @@ msgid "No"
 msgstr "Ez"
 
 #: reset
+#, fuzzy
+msgctxt "reset"
 msgid "Reset"
 msgstr "Berrezarri"
 
@@ -922,6 +924,21 @@ msgstr "Difusio zelularreko mezuak"
 #: cellBroadcast
 msgid "Cell broadcast"
 msgstr "Difusio zelularra"
+
+#: messagingInformation
+#, fuzzy
+msgid "Information"
+msgstr "Berrespena"
+
+#. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
+#: messagingSMSC
+#, fuzzy
+msgid "SMSC"
+msgstr "MMSC"
+
+#: unknownSMSC
+msgid "Unknown number"
+msgstr ""
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
@@ -1998,6 +2015,10 @@ msgctxt "vertical-homescreen-header"
 msgid "Homescreen"
 msgstr "Hasierako pantaila"
 
+#: vertical-homescreen-layout
+msgid "Layout"
+msgstr ""
+
 #: vertical-homescreen-icon-layout
 msgid "Icon Layout"
 msgstr "Ikonoen antolaketa"
@@ -2014,6 +2035,10 @@ msgstr "Lau zutabe"
 msgid "Notice"
 msgstr "Oharra"
 
+#: search-header
+msgid "Search"
+msgstr ""
+
 #: search-engine
 msgid "Search Engine"
 msgstr "Bilaketa-motorra"
@@ -2021,21 +2046,6 @@ msgstr "Bilaketa-motorra"
 #: search-suggestions
 msgid "Search Suggestions"
 msgstr "Bilaketa-iradokizunak"
-
-#. # LOCALIZATION NOTE (search-suggestions-button, search-suggestions-header):
-#. # If you leave the original en-US value "{{search-suggestions}}" in the following
-#. # strings, the localization will be automatically picked from the existing
-#. # string with ID "search-suggestions". If you need to adapt your localization to
-#. # the reduced space available in header or button, you can use shorter strings here.
-#: search-suggestions-button
-msgctxt "search-suggestions-button"
-msgid "{{search-suggestions}}"
-msgstr "{{search-suggestions}}"
-
-#: search-suggestions-header
-msgctxt "search-suggestions-header"
-msgid "{{search-suggestions}}"
-msgstr "{{search-suggestions}}"
 
 #: search-suggestions-description
 msgid ""
@@ -2075,9 +2085,14 @@ msgid "Description"
 msgstr "Deskribapena"
 
 #. # Personalization :: Keyboard
-#: installedInputMethods
-msgid "Installed input methods"
-msgstr "Instalatutako sarrera-metodoak"
+#: keyboardSettings
+msgid "Keyboard Settings"
+msgstr ""
+
+#: selectedKeyboards
+#, fuzzy
+msgid "Selected Keyboards"
+msgstr "Hautatutako teklatuak"
 
 #: keyboards
 msgid "Keyboards"
@@ -2108,31 +2123,20 @@ msgstr "Zenbakizko teklatua"
 msgid "Dial Pad"
 msgstr "Markatze-teklatua"
 
-#: selectedKeyboards
-msgid "Selected keyboards"
+#: selectKeyboards
+#, fuzzy
+msgid "Select Keyboards"
 msgstr "Hautatutako teklatuak"
 
-#. # LOCALIZATION NOTE (selectedKeyboards-header): if you leave the original
-#. # en-US value "{{selectedKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "selectedKeyboards".
+#. # LOCALIZATION NOTE (selectKeyboards-header): if you leave the original
+#. # en-US value "{{selectKeyboards}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "selectKeyboards".
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
-#: selectedKeyboards-header
-msgid "{{selectedKeyboards}}"
+#: selectKeyboards-header
+#, fuzzy
+msgid "{{selectKeyboards}}"
 msgstr "{{selectedKeyboards}}"
-
-#: addMoreKeyboards
-msgid "Add more keyboards"
-msgstr "Gehitu teklatu gehiago"
-
-#. # LOCALIZATION NOTE (addMoreKeyboards-header): if you leave the original
-#. # en-US value "{{addMoreKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "addMoreKeyboards".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: addMoreKeyboards-header
-msgid "{{addMoreKeyboards}}"
-msgstr "{{addMoreKeyboards}}"
 
 #: mustHaveOneKeyboard
 msgid "At least one {{type}} keyboard should be selected"
@@ -2191,6 +2195,8 @@ msgstr ""
 "Firefox Marketplace bezalako aplikazioak erabil ditzakezu."
 
 #: fxa-invitation
+#, fuzzy
+msgctxt "fxa-invitation"
 msgid "Create account or sign in"
 msgstr "Sortu kontua edo hasi saioa"
 
@@ -2272,9 +2278,11 @@ msgstr ""
 "'Aurkitu nire gailua' aukerak zure telefonoa aurkitu, blokeatu edo "
 "ezabatzeko aukera ematen dizu."
 
-#: findmydevice-login
-msgid "Sign In or Create an Account"
-msgstr "Hasi saioa edo sortu kontua"
+#: findmydevice-create-account
+#, fuzzy
+msgctxt "findmydevice-create-account"
+msgid "Create account or sign in"
+msgstr "Sortu kontua edo hasi saioa"
 
 #: findmydevice-enable
 msgid "Enable Find My Device"
@@ -2500,33 +2508,13 @@ msgstr "Berretsi pasakodea"
 msgid "Immediately"
 msgstr "Berehala"
 
-#: after-five-seconds
-msgid "After 5 seconds"
-msgstr "5 segundo ondoren"
-
-#: after-fifteen-seconds
-msgid "After 15 seconds"
-msgstr "15 segundo ondoren"
-
-#: after-thirty-seconds
-msgid "After 30 seconds"
-msgstr "30 segundo ondoren"
-
 #: after-one-minute
 msgid "After 1 minute"
 msgstr "Minutu baten ondoren"
 
-#: after-two-minutes
-msgid "After 2 minutes"
-msgstr "2 minutu ondoren"
-
 #: after-five-minutes
 msgid "After 5 minutes"
 msgstr "5 minutu ondoren"
-
-#: after-ten-minutes
-msgid "After 10 minutes"
-msgstr "10 minutu ondoren"
 
 #: after-fifteen-minutes
 msgid "After 15 minutes"
@@ -2539,10 +2527,6 @@ msgstr "30 minutu ondoren"
 #: after-one-hour
 msgid "After 1 hour"
 msgstr "Ordubete ondoren"
-
-#: after-four-hours
-msgid "After 4 hours"
-msgstr "4 ordu ondoren"
 
 #: require-passcode
 msgid "Require passcode"
@@ -2875,9 +2859,10 @@ msgid "How does Do Not Track work?"
 msgstr "Nola dabil Do Not Track?"
 
 #: doNotTrack-dd1
+#, fuzzy
 msgid ""
 "When you turn on Do Not Track, your device tells every website and app (as "
-"well as advertisers and other content providers) that you don’t want your "
+"well as advertisers and other content providers) that you do not want your "
 "behavior tracked."
 msgstr ""
 "Do No Track aktibatzean, zure gailuak webgune eta aplikazio guztiei (bai eta "
@@ -2885,10 +2870,11 @@ msgstr ""
 "portaeraren jarraipenik egitea nahi."
 
 #: doNotTrack-dd2
+#, fuzzy
 msgid ""
-"Turning on Do Not Track won’t affect your ability to sign in to websites nor "
-"cause your device to forget your private information, such as the contents "
-"of shopping carts, location information or sign-in information."
+"Turning on Do Not Track will not affect your ability to sign in to websites "
+"nor cause your device to forget your private information, such as the "
+"contents of shopping carts, location information or sign-in information."
 msgstr ""
 "Do No Track aktibatzeak ez du eraginik webguneetan saioa hasteko gaitasunean "
 "eta ez du zure informazio pribaturik ahaztuko, hala nola erosketa-saskietako "
@@ -3244,6 +3230,10 @@ msgstr "{{hud}}"
 msgid "Log changes in ADB"
 msgstr "Erregistr. aldaketak ADBn"
 
+#: hud-system
+msgid "Show system HUD"
+msgstr ""
+
 #: hud-problems
 msgid "Problems"
 msgstr "Arazoak"
@@ -3272,6 +3262,10 @@ msgstr "Egokitzeak"
 msgid "Jank"
 msgstr "Atzerapena"
 
+#: jank-threshold
+msgid "Jank Threshold"
+msgstr "Atzerapenaren atalasea"
+
 #: hud-fps
 msgid "Frames per second"
 msgstr "Fotogramak segundoko"
@@ -3283,6 +3277,10 @@ msgstr "Kargatzeko denbora"
 #: hud-memory
 msgid "Memory"
 msgstr "Memoria"
+
+#: hud-uss
+msgid "Unique Set Size"
+msgstr ""
 
 #: hud-appmemory
 msgid "App memory"
@@ -3398,14 +3396,6 @@ msgstr "ADB soilik"
 msgid "ADB and DevTools"
 msgstr "ADB eta garatzaile-tresnak"
 
-#: devtools-overlay
-msgid "Show devtools overlay"
-msgstr "Erakutsi garatzaile tresnak gainean"
-
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Atzerapenaren atalasea"
-
 #: wifi-debugging
 msgid "Wi-Fi output in ADB"
 msgstr "Wi-Fiaren irteera ADBn"
@@ -3425,6 +3415,10 @@ msgstr "Txartel-ikuspegia: pantaila-argazkiak"
 #: geolocation-debugging-enabled
 msgid "Geolocation output in ADB"
 msgstr "Geokokapen-irteera ADBn"
+
+#: use-reviewer-certs
+msgid "Use Marketplace reviewer certs"
+msgstr ""
 
 #: model-name
 msgid "Model"
@@ -3541,6 +3535,12 @@ msgstr ""
 #: learn-more
 msgid "Learn More"
 msgstr "Argibide gehiago"
+
+#: reset-head
+#, fuzzy
+msgctxt "reset-head"
+msgid "Reset"
+msgstr "Berrezarri"
 
 #: reset-phone
 msgid "Reset Phone"
@@ -3921,19 +3921,19 @@ msgstr "Hobetu {{brandShortName}}"
 msgid "Send Mozilla Feedback"
 msgstr "Bidali iritzia Mozillari"
 
-#: performanceData
-msgid "Performance data"
-msgstr "Errendimenduaren datuak"
-
-#: performanceDataInfo
-msgid "Help us improve {{brandShortName}} by sharing data about your phone."
+#: performanceAndUsageData
+msgid "Performance and usage data"
 msgstr ""
-"Lagun gaitzazu {{brandShortName}} hobetzen zure telefonoaren inguruko datuak "
-"partekatuz."
 
-#: sharePerformanceData
-msgid "Submit performance data"
-msgstr "Bidali errendim.-datuak"
+#: performanceAndUsageDataInfo
+msgid ""
+"Help us improve {{brandShortName}} by sharing data about your phone and the "
+"way you use it."
+msgstr ""
+
+#: sharePerformanceAndUsageData
+msgid "Submit data"
+msgstr ""
 
 #: crashReports
 msgid "Crash reports"
@@ -4238,3 +4238,55 @@ msgstr "Bidali datuak"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Eskuratu kanalaren egoera"
+
+#~ msgctxt "search-suggestions-button"
+#~ msgid "{{search-suggestions}}"
+#~ msgstr "{{search-suggestions}}"
+
+#~ msgctxt "search-suggestions-header"
+#~ msgid "{{search-suggestions}}"
+#~ msgstr "{{search-suggestions}}"
+
+#~ msgid "Installed input methods"
+#~ msgstr "Instalatutako sarrera-metodoak"
+
+#~ msgid "Add more keyboards"
+#~ msgstr "Gehitu teklatu gehiago"
+
+#~ msgid "{{addMoreKeyboards}}"
+#~ msgstr "{{addMoreKeyboards}}"
+
+#~ msgid "Sign In or Create an Account"
+#~ msgstr "Hasi saioa edo sortu kontua"
+
+#~ msgid "After 5 seconds"
+#~ msgstr "5 segundo ondoren"
+
+#~ msgid "After 15 seconds"
+#~ msgstr "15 segundo ondoren"
+
+#~ msgid "After 30 seconds"
+#~ msgstr "30 segundo ondoren"
+
+#~ msgid "After 2 minutes"
+#~ msgstr "2 minutu ondoren"
+
+#~ msgid "After 10 minutes"
+#~ msgstr "10 minutu ondoren"
+
+#~ msgid "After 4 hours"
+#~ msgstr "4 ordu ondoren"
+
+#~ msgid "Show devtools overlay"
+#~ msgstr "Erakutsi garatzaile tresnak gainean"
+
+#~ msgid "Performance data"
+#~ msgstr "Errendimenduaren datuak"
+
+#~ msgid "Help us improve {{brandShortName}} by sharing data about your phone."
+#~ msgstr ""
+#~ "Lagun gaitzazu {{brandShortName}} hobetzen zure telefonoaren inguruko "
+#~ "datuak partekatuz."
+
+#~ msgid "Submit performance data"
+#~ msgstr "Bidali errendim.-datuak"

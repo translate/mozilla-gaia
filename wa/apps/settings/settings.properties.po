@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-24 11:19+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2013-09-17 10:26+0000\n"
 "Last-Translator: Jean <jean.cayron@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,6 +61,7 @@ msgid "No"
 msgstr "Neni"
 
 #: reset
+msgctxt "reset"
 msgid "Reset"
 msgstr ""
 
@@ -936,6 +937,20 @@ msgstr ""
 
 #: cellBroadcast
 msgid "Cell broadcast"
+msgstr ""
+
+#: messagingInformation
+msgid "Information"
+msgstr ""
+
+#. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
+#: messagingSMSC
+#, fuzzy
+msgid "SMSC"
+msgstr "MMSC"
+
+#: unknownSMSC
+msgid "Unknown number"
 msgstr ""
 
 #. # Connectivity :: Cellular & Data
@@ -2015,6 +2030,10 @@ msgctxt "vertical-homescreen-header"
 msgid "Homescreen"
 msgstr ""
 
+#: vertical-homescreen-layout
+msgid "Layout"
+msgstr ""
+
 #: vertical-homescreen-icon-layout
 msgid "Icon Layout"
 msgstr ""
@@ -2031,27 +2050,16 @@ msgstr ""
 msgid "Notice"
 msgstr ""
 
+#: search-header
+msgid "Search"
+msgstr ""
+
 #: search-engine
 msgid "Search Engine"
 msgstr ""
 
 #: search-suggestions
 msgid "Search Suggestions"
-msgstr ""
-
-#. # LOCALIZATION NOTE (search-suggestions-button, search-suggestions-header):
-#. # If you leave the original en-US value "{{search-suggestions}}" in the following
-#. # strings, the localization will be automatically picked from the existing
-#. # string with ID "search-suggestions". If you need to adapt your localization to
-#. # the reduced space available in header or button, you can use shorter strings here.
-#: search-suggestions-button
-msgctxt "search-suggestions-button"
-msgid "{{search-suggestions}}"
-msgstr ""
-
-#: search-suggestions-header
-msgctxt "search-suggestions-header"
-msgid "{{search-suggestions}}"
 msgstr ""
 
 #: search-suggestions-description
@@ -2090,8 +2098,12 @@ msgid "Description"
 msgstr ""
 
 #. # Personalization :: Keyboard
-#: installedInputMethods
-msgid "Installed input methods"
+#: keyboardSettings
+msgid "Keyboard Settings"
+msgstr ""
+
+#: selectedKeyboards
+msgid "Selected Keyboards"
 msgstr ""
 
 #: keyboards
@@ -2124,30 +2136,17 @@ msgstr "Schaeye taperce"
 msgid "Dial Pad"
 msgstr ""
 
-#: selectedKeyboards
-msgid "Selected keyboards"
+#: selectKeyboards
+msgid "Select Keyboards"
 msgstr ""
 
-#. # LOCALIZATION NOTE (selectedKeyboards-header): if you leave the original
-#. # en-US value "{{selectedKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "selectedKeyboards".
+#. # LOCALIZATION NOTE (selectKeyboards-header): if you leave the original
+#. # en-US value "{{selectKeyboards}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "selectKeyboards".
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
-#: selectedKeyboards-header
-msgid "{{selectedKeyboards}}"
-msgstr ""
-
-#: addMoreKeyboards
-msgid "Add more keyboards"
-msgstr ""
-
-#. # LOCALIZATION NOTE (addMoreKeyboards-header): if you leave the original
-#. # en-US value "{{addMoreKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "addMoreKeyboards".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: addMoreKeyboards-header
-msgid "{{addMoreKeyboards}}"
+#: selectKeyboards-header
+msgid "{{selectKeyboards}}"
 msgstr ""
 
 #: mustHaveOneKeyboard
@@ -2205,6 +2204,7 @@ msgid ""
 msgstr ""
 
 #: fxa-invitation
+msgctxt "fxa-invitation"
 msgid "Create account or sign in"
 msgstr ""
 
@@ -2284,8 +2284,9 @@ msgstr ""
 msgid "Find My Device allows you to locate, lock or erase your phone"
 msgstr ""
 
-#: findmydevice-login
-msgid "Sign In or Create an Account"
+#: findmydevice-create-account
+msgctxt "findmydevice-create-account"
+msgid "Create account or sign in"
 msgstr ""
 
 #: findmydevice-enable
@@ -2507,33 +2508,13 @@ msgstr "Racertiner côde sicret"
 msgid "Immediately"
 msgstr "Tot d’ shûte"
 
-#: after-five-seconds
-msgid "After 5 seconds"
-msgstr "Après 5 segondes"
-
-#: after-fifteen-seconds
-msgid "After 15 seconds"
-msgstr "Après 15 segondes"
-
-#: after-thirty-seconds
-msgid "After 30 seconds"
-msgstr "Après 30 segondes"
-
 #: after-one-minute
 msgid "After 1 minute"
 msgstr "Après 1 munute"
 
-#: after-two-minutes
-msgid "After 2 minutes"
-msgstr "Après 2 munutes"
-
 #: after-five-minutes
 msgid "After 5 minutes"
 msgstr "Après 5 munutes"
-
-#: after-ten-minutes
-msgid "After 10 minutes"
-msgstr "Après 10 munutes"
 
 #: after-fifteen-minutes
 msgid "After 15 minutes"
@@ -2546,10 +2527,6 @@ msgstr "Après 30 munutes"
 #: after-one-hour
 msgid "After 1 hour"
 msgstr "Après 1 eure"
-
-#: after-four-hours
-msgid "After 4 hours"
-msgstr "Après 4 eures"
 
 #: require-passcode
 #, fuzzy
@@ -2897,9 +2874,10 @@ msgid "How does Do Not Track work?"
 msgstr "Comint çki Èn nén shuve rote ?"
 
 #: doNotTrack-dd1
+#, fuzzy
 msgid ""
 "When you turn on Do Not Track, your device tells every website and app (as "
-"well as advertisers and other content providers) that you don’t want your "
+"well as advertisers and other content providers) that you do not want your "
 "behavior tracked."
 msgstr ""
 "Cwand vs eclitchîz Èn nén shuve, vost éndjin dirè a tchaeke waibe et "
@@ -2907,10 +2885,11 @@ msgstr ""
 "vos n’ vloz nén k’ vos uzances fouxhexhe shuvowe."
 
 #: doNotTrack-dd2
+#, fuzzy
 msgid ""
-"Turning on Do Not Track won’t affect your ability to sign in to websites nor "
-"cause your device to forget your private information, such as the contents "
-"of shopping carts, location information or sign-in information."
+"Turning on Do Not Track will not affect your ability to sign in to websites "
+"nor cause your device to forget your private information, such as the "
+"contents of shopping carts, location information or sign-in information."
 msgstr ""
 "Eclitchî Èn nén shuve ni vs espaitchrè nén di vs elodjî a des waibes et ni "
 "frè nén k’ vost éndjin roveye vos informåcions privêyes come çou k’ i gn a e "
@@ -3273,6 +3252,10 @@ msgstr ""
 msgid "Log changes in ADB"
 msgstr ""
 
+#: hud-system
+msgid "Show system HUD"
+msgstr ""
+
 #: hud-problems
 msgid "Problems"
 msgstr ""
@@ -3302,6 +3285,10 @@ msgstr ""
 msgid "Jank"
 msgstr ""
 
+#: jank-threshold
+msgid "Jank Threshold"
+msgstr ""
+
 #: hud-fps
 msgid "Frames per second"
 msgstr ""
@@ -3312,6 +3299,10 @@ msgstr ""
 
 #: hud-memory
 msgid "Memory"
+msgstr ""
+
+#: hud-uss
+msgid "Unique Set Size"
 msgstr ""
 
 #: hud-appmemory
@@ -3430,14 +3421,6 @@ msgstr ""
 msgid "ADB and DevTools"
 msgstr ""
 
-#: devtools-overlay
-msgid "Show devtools overlay"
-msgstr ""
-
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr ""
-
 #: wifi-debugging
 #, fuzzy
 msgid "Wi-Fi output in ADB"
@@ -3457,6 +3440,10 @@ msgstr ""
 
 #: geolocation-debugging-enabled
 msgid "Geolocation output in ADB"
+msgstr ""
+
+#: use-reviewer-certs
+msgid "Use Marketplace reviewer certs"
 msgstr ""
 
 #: model-name
@@ -3574,6 +3561,11 @@ msgstr ""
 #: learn-more
 msgid "Learn More"
 msgstr "Endè saveur dipus"
+
+#: reset-head
+msgctxt "reset-head"
+msgid "Reset"
+msgstr ""
 
 #: reset-phone
 msgid "Reset Phone"
@@ -3951,19 +3943,19 @@ msgstr "Amidrer {{brandShortName}}"
 msgid "Send Mozilla Feedback"
 msgstr "Evoyî on rtour d' esperyince a Mozilla"
 
-#: performanceData
-msgid "Performance data"
-msgstr "Dinêyes di performance"
-
-#: performanceDataInfo
-msgid "Help us improve {{brandShortName}} by sharing data about your phone."
+#: performanceAndUsageData
+msgid "Performance and usage data"
 msgstr ""
-"Aidîz ns a amidrer {{brandShortName}} tot pårtaedjant des dnêyes åd fwait di "
-"vosse telefone."
 
-#: sharePerformanceData
-msgid "Submit performance data"
-msgstr "Evoyî dinêyes di performance"
+#: performanceAndUsageDataInfo
+msgid ""
+"Help us improve {{brandShortName}} by sharing data about your phone and the "
+"way you use it."
+msgstr ""
+
+#: sharePerformanceAndUsageData
+msgid "Submit data"
+msgstr ""
 
 #: crashReports
 msgid "Crash reports"
@@ -4253,6 +4245,35 @@ msgstr "Evoyî dinêyes"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Cweri li statut do canå"
+
+#~ msgid "After 5 seconds"
+#~ msgstr "Après 5 segondes"
+
+#~ msgid "After 15 seconds"
+#~ msgstr "Après 15 segondes"
+
+#~ msgid "After 30 seconds"
+#~ msgstr "Après 30 segondes"
+
+#~ msgid "After 2 minutes"
+#~ msgstr "Après 2 munutes"
+
+#~ msgid "After 10 minutes"
+#~ msgstr "Après 10 munutes"
+
+#~ msgid "After 4 hours"
+#~ msgstr "Après 4 eures"
+
+#~ msgid "Performance data"
+#~ msgstr "Dinêyes di performance"
+
+#~ msgid "Help us improve {{brandShortName}} by sharing data about your phone."
+#~ msgstr ""
+#~ "Aidîz ns a amidrer {{brandShortName}} tot pårtaedjant des dnêyes åd fwait "
+#~ "di vosse telefone."
+
+#~ msgid "Submit performance data"
+#~ msgstr "Evoyî dinêyes di performance"
 
 #~ msgid "Camera shutter"
 #~ msgstr "Cloyaedje del båkete del camera"

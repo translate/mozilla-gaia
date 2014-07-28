@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-24 11:19+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-07-07 07:13+0000\n"
 "Last-Translator: Swarnava <swarnavasengupta@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1404717205.000000\n"
@@ -84,6 +84,8 @@ msgid "Delete contact?"
 msgstr "পরিচিতি মুছে ফেলবেন?"
 
 #: remove
+#, fuzzy
+msgctxt "remove"
 msgid "Remove"
 msgstr "অপসারণ করুন"
 
@@ -103,6 +105,10 @@ msgstr "এই পরিচিতির কোন ফোন নাম্বা�
 #: no_contact_email
 msgid "This contact does not have an email address"
 msgstr "এই পরিচিতির কোন ইমেল অ্যাড্রেস নেই"
+
+#: no_contact_data
+msgid "This contact does not have a phone number and email address"
+msgstr ""
 
 #: removePhotoConfirm
 msgid "Remove contact picture?"
@@ -183,10 +189,6 @@ msgstr "মন্তব্য"
 msgid "Company"
 msgstr "প্রতিষ্ঠান"
 
-#: custom.placeholder
-msgid "Custom"
-msgstr "স্বনির্ধারিত"
-
 #: date
 msgctxt "date"
 msgid "Date"
@@ -252,64 +254,6 @@ msgstr "পছন্দের তালিকায় যোগ করুন"
 msgid "Remove as Favorite"
 msgstr "পছন্দের তালিকা থেকে সরিয়ে ফেলুন"
 
-#. # Field labels
-#: label
-msgid "Label"
-msgstr "লেবেল"
-
-#: mobile
-msgid "Mobile"
-msgstr "মোবাইল"
-
-#: home
-msgid "Home"
-msgstr "গৃহ"
-
-#: work
-msgid "Work"
-msgstr "কর্ম"
-
-#: personal
-msgid "Personal"
-msgstr "ব্যক্তিগত"
-
-#: faxHome
-msgid "Fax home"
-msgstr "ফ্যাক্স গৃহ"
-
-#: faxOffice
-msgid "Fax office"
-msgstr "ফ্যাক্স অফিস"
-
-#: faxOther
-msgid "Fax other"
-msgstr "ফ্যাক্স অন্যান্য"
-
-#: another
-msgid "Another"
-msgstr "আরেকটি"
-
-#: other
-msgid "Other"
-msgstr "অন্য"
-
-#: customTag.placeholder
-msgid "Custom tag"
-msgstr "স্বনির্বাচিত ট্যাগ"
-
-#. # Note: For localizers. This tag indicates the current address
-#: current
-msgid "Current"
-msgstr "বর্তমান"
-
-#. # LOCALIZATION NOTE(itemWithLabel): Parameters in this string will be replaced
-#. # at run-time: {{label}} is the label associated to phone number or email,
-#. # item is the number/email itself. Examples for English: "Home, +123456789" or
-#. # "Work, foo@example.com".
-#: itemWithLabel
-msgid "{{label}}, {{item}}"
-msgstr "{{label}}, {{item}}"
-
 #. # Hidden information, for screen readers
 #: exit
 msgid "Exit"
@@ -374,6 +318,10 @@ msgstr "ই-মেইল ঠিকানা"
 #: legendAddress
 msgid "Address"
 msgstr "ঠিকানা"
+
+#: legendPhoto.ariaLabel
+msgid "Photo"
+msgstr ""
 
 #: settings
 msgid "Settings"
@@ -565,6 +513,10 @@ msgstr "মোবাইল নির্বাচন করুন"
 #: select_email
 msgid "Select email"
 msgstr "ইমেল নির্বাচন করুন"
+
+#: select_recipient
+msgid "Select recipient"
+msgstr ""
 
 #. # Settings related
 #: contactsOrderBy
@@ -835,6 +787,65 @@ msgstr "ভিডিও"
 #: audio
 msgid "Audio"
 msgstr "অডিও"
+
+#. # Pick Destination
+#: pick_destination
+msgid "{{ destination }} {{ carrier }}"
+msgstr ""
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: removeField.ariaLabel
+#, fuzzy
+msgctxt "removeField.ariaLabel"
+msgid "Remove"
+msgstr "অপসারণ করুন"
+
+#: undo.ariaLabel
+msgid "Undo"
+msgstr ""
+
+#~ msgid "Custom"
+#~ msgstr "স্বনির্ধারিত"
+
+#~ msgid "Label"
+#~ msgstr "লেবেল"
+
+#~ msgid "Mobile"
+#~ msgstr "মোবাইল"
+
+#~ msgid "Home"
+#~ msgstr "গৃহ"
+
+#~ msgid "Work"
+#~ msgstr "কর্ম"
+
+#~ msgid "Personal"
+#~ msgstr "ব্যক্তিগত"
+
+#~ msgid "Fax home"
+#~ msgstr "ফ্যাক্স গৃহ"
+
+#~ msgid "Fax office"
+#~ msgstr "ফ্যাক্স অফিস"
+
+#~ msgid "Fax other"
+#~ msgstr "ফ্যাক্স অন্যান্য"
+
+#~ msgid "Another"
+#~ msgstr "আরেকটি"
+
+#~ msgid "Other"
+#~ msgstr "অন্য"
+
+#~ msgid "Custom tag"
+#~ msgstr "স্বনির্বাচিত ট্যাগ"
+
+#~ msgid "Current"
+#~ msgstr "বর্তমান"
+
+#~ msgid "{{label}}, {{item}}"
+#~ msgstr "{{label}}, {{item}}"
 
 #~ msgid "Import SIM contacts"
 #~ msgstr "SIM পরিচিতিসমূহ রপ্তানি করুন"

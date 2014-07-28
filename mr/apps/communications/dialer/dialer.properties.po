@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-11 17:31+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-06-19 10:44+0000\n"
 "Last-Translator: Chandrakant <cpdhutadmal@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1403174652.000000\n"
@@ -35,10 +35,6 @@ msgctxt "all.ariaLabel"
 msgid "All"
 msgstr "सर्व"
 
-#: asterisk.ariaLabel
-msgid "Asterisk"
-msgstr "चौफूली"
-
 #: callLog
 msgid "Call log"
 msgstr "संवाद नोंदी"
@@ -54,10 +50,6 @@ msgstr "संवाद नोंदी संपादन"
 #: connecting
 msgid "Connecting"
 msgstr "जोडत आहे"
-
-#: cancel
-msgid "Cancel"
-msgstr "रद्द"
 
 #. ## LOCALIZATION NOTE cf-async, cf-data, cf-fax, cf-packet, cf-pad, cf-sms, cf-sync and cf-voice are the service the call forwarding is activate/inactive for.
 #. ## LOCALIZATION NOTE Its variables might be a phone number or cf-inactive.
@@ -122,7 +114,7 @@ msgid "Create new contact"
 msgstr "नवीन संपर्क बनवा"
 
 #: delete
-msgctxt "delete"
+#, fuzzy
 msgid "Delete"
 msgstr "डिलीट"
 
@@ -172,10 +164,6 @@ msgstr "{{ n }} निवडले"
 msgid "Edit"
 msgstr "संपादन"
 
-#: hashSign.ariaLabel
-msgid "Hash sign"
-msgstr "हॅश चिन्ह"
-
 #: hideKeypad.ariaLabel
 msgid "Hide keypad"
 msgstr "कीपॅड लपवा"
@@ -191,11 +179,6 @@ msgstr "येणारे"
 #: keypad.ariaLabel
 msgid "Keypad"
 msgstr "कीपॅड"
-
-#: keypadDelete.ariaLabel
-msgctxt "keypadDelete.ariaLabel"
-msgid "Delete"
-msgstr "डिलीट"
 
 #: makeCall.ariaLabel
 msgid "Make call"
@@ -259,10 +242,6 @@ msgstr "संभाषणाला सुरुवात करा"
 msgid "No missed calls"
 msgstr "सुटलेले संवाद नाही"
 
-#: phoneNumberInput.ariaLabel
-msgid "Phone number"
-msgstr "फोन क्रमांक"
-
 #: recents.ariaLabel
 msgid "Recent calls"
 msgstr "अलिकडील संवाद"
@@ -286,10 +265,6 @@ msgstr "संवाद स्थानांतरण"
 #: today
 msgid "Today"
 msgstr "आज"
-
-#: voiceMailKey.ariaLabel
-msgid "Voicemail"
-msgstr "आवाजमेल"
 
 #: withheld-number
 msgid "Withheld number"
@@ -387,6 +362,10 @@ msgstr "उचला"
 #: unlock-a11y-button.ariaLabel
 msgid "Slider"
 msgstr "सरकपट्टी"
+
+#: roaming
+msgid "{{operator}} (Roaming)"
+msgstr ""
 
 #: settings
 msgid "Settings"
@@ -824,34 +803,11 @@ msgid "Rejected by remote"
 msgstr "दुरस्थने नाकारले"
 
 #. # Conference call
-#: conference
-msgctxt "conference"
-msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
-
-#: conference[one]
-msgctxt "conference[one]"
-msgid "Conference ({{ n }})"
-msgstr "कॉन्फरंस ({{ n }})"
-
-#: conference[two]
-msgctxt "conference[two]"
-msgid "Conference ({{ n }})"
-msgstr "कॉन्फरंस ({{ n }})"
-
-#: conference[few]
-msgctxt "conference[few]"
-msgid "Conference ({{ n }})"
-msgstr "कॉन्फरंस ({{ n }})"
-
-#: conference[many]
-msgctxt "conference[many]"
-msgid "Conference ({{ n }})"
-msgstr "कॉन्फरंस ({{ n }})"
-
-#: conference[other]
-msgctxt "conference[other]"
-msgid "Conference ({{ n }})"
+#. # LOCALIZATION NOTE(conferenceCall): {{n}} represents the number of
+#. # participants in the group call.
+#: conferenceCall
+#, fuzzy
+msgid "Conference ({{n}})"
 msgstr "कॉन्फरंस ({{ n }})"
 
 #: caller-left-call
@@ -888,6 +844,45 @@ msgstr "प्राप्तकर्ता"
 msgctxt "speaker"
 msgid "Speaker"
 msgstr "स्पीकर"
+
+#~ msgid "Asterisk"
+#~ msgstr "चौफूली"
+
+#~ msgid "Cancel"
+#~ msgstr "रद्द"
+
+#~ msgid "Hash sign"
+#~ msgstr "हॅश चिन्ह"
+
+#~ msgctxt "keypadDelete.ariaLabel"
+#~ msgid "Delete"
+#~ msgstr "डिलीट"
+
+#~ msgid "Phone number"
+#~ msgstr "फोन क्रमांक"
+
+#~ msgid "Voicemail"
+#~ msgstr "आवाजमेल"
+
+#~ msgctxt "conference"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "conference[two]"
+#~ msgid "Conference ({{ n }})"
+#~ msgstr "कॉन्फरंस ({{ n }})"
+
+#~ msgctxt "conference[few]"
+#~ msgid "Conference ({{ n }})"
+#~ msgstr "कॉन्फरंस ({{ n }})"
+
+#~ msgctxt "conference[many]"
+#~ msgid "Conference ({{ n }})"
+#~ msgstr "कॉन्फरंस ({{ n }})"
+
+#~ msgctxt "conference[other]"
+#~ msgid "Conference ({{ n }})"
+#~ msgstr "कॉन्फरंस ({{ n }})"
 
 #~ msgctxt "group-call"
 #~ msgid "{[ plural(n) ]}"

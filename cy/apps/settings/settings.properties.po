@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-24 11:19+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-07-18 15:43+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1405698202.000000\n"
@@ -59,6 +59,8 @@ msgid "No"
 msgstr "Na"
 
 #: reset
+#, fuzzy
+msgctxt "reset"
 msgid "Reset"
 msgstr "Ailosod"
 
@@ -921,6 +923,21 @@ msgstr "Negeseuon darlledu cell"
 #: cellBroadcast
 msgid "Cell broadcast"
 msgstr "Darlledu cell"
+
+#: messagingInformation
+#, fuzzy
+msgid "Information"
+msgstr "Cadarnhad"
+
+#. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
+#: messagingSMSC
+#, fuzzy
+msgid "SMSC"
+msgstr "MMSC"
+
+#: unknownSMSC
+msgid "Unknown number"
+msgstr ""
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
@@ -1995,6 +2012,10 @@ msgctxt "vertical-homescreen-header"
 msgid "Homescreen"
 msgstr "Sgrin cartref"
 
+#: vertical-homescreen-layout
+msgid "Layout"
+msgstr ""
+
 #: vertical-homescreen-icon-layout
 msgid "Icon Layout"
 msgstr "Cynllun Eiconau"
@@ -2011,6 +2032,10 @@ msgstr "Pedair Colofn"
 msgid "Notice"
 msgstr "Hysbysiad"
 
+#: search-header
+msgid "Search"
+msgstr ""
+
 #: search-engine
 msgid "Search Engine"
 msgstr "Peiriant Chwilio"
@@ -2018,21 +2043,6 @@ msgstr "Peiriant Chwilio"
 #: search-suggestions
 msgid "Search Suggestions"
 msgstr "Awgrymiadau Chwilio"
-
-#. # LOCALIZATION NOTE (search-suggestions-button, search-suggestions-header):
-#. # If you leave the original en-US value "{{search-suggestions}}" in the following
-#. # strings, the localization will be automatically picked from the existing
-#. # string with ID "search-suggestions". If you need to adapt your localization to
-#. # the reduced space available in header or button, you can use shorter strings here.
-#: search-suggestions-button
-msgctxt "search-suggestions-button"
-msgid "{{search-suggestions}}"
-msgstr "{{search-suggestions}}"
-
-#: search-suggestions-header
-msgctxt "search-suggestions-header"
-msgid "{{search-suggestions}}"
-msgstr "{{search-suggestions}}"
 
 #: search-suggestions-description
 msgid ""
@@ -2073,9 +2083,14 @@ msgid "Description"
 msgstr "Disgrifiad"
 
 #. # Personalization :: Keyboard
-#: installedInputMethods
-msgid "Installed input methods"
-msgstr "Dulliau mewnbynnu sydd wedi'u gosod"
+#: keyboardSettings
+msgid "Keyboard Settings"
+msgstr ""
+
+#: selectedKeyboards
+#, fuzzy
+msgid "Selected Keyboards"
+msgstr "Bysellau dewiswyd"
 
 #: keyboards
 msgid "Keyboards"
@@ -2106,31 +2121,20 @@ msgstr "Bysellbad"
 msgid "Dial Pad"
 msgstr "Pad Deialu"
 
-#: selectedKeyboards
-msgid "Selected keyboards"
+#: selectKeyboards
+#, fuzzy
+msgid "Select Keyboards"
 msgstr "Bysellau dewiswyd"
 
-#. # LOCALIZATION NOTE (selectedKeyboards-header): if you leave the original
-#. # en-US value "{{selectedKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "selectedKeyboards".
+#. # LOCALIZATION NOTE (selectKeyboards-header): if you leave the original
+#. # en-US value "{{selectKeyboards}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "selectKeyboards".
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
-#: selectedKeyboards-header
-msgid "{{selectedKeyboards}}"
+#: selectKeyboards-header
+#, fuzzy
+msgid "{{selectKeyboards}}"
 msgstr "{{selectedKeyboards}}"
-
-#: addMoreKeyboards
-msgid "Add more keyboards"
-msgstr "Ychwanegu bysellfwrdd"
-
-#. # LOCALIZATION NOTE (addMoreKeyboards-header): if you leave the original
-#. # en-US value "{{addMoreKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "addMoreKeyboards".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: addMoreKeyboards-header
-msgid "{{addMoreKeyboards}}"
-msgstr "{{addMoreKeyboards}}"
 
 #: mustHaveOneKeyboard
 msgid "At least one {{type}} keyboard should be selected"
@@ -2189,6 +2193,8 @@ msgstr ""
 "fy Nyfais ac apiau fel Firefox Marketplace."
 
 #: fxa-invitation
+#, fuzzy
+msgctxt "fxa-invitation"
 msgid "Create account or sign in"
 msgstr "Crëwch gyfrif neu fewngofnodi"
 
@@ -2270,9 +2276,11 @@ msgstr ""
 "Mae Canfod fy Nyfais yn caniatáu i chi ganfod, cloi neu ddileu cynnwys eich "
 "ffôn"
 
-#: findmydevice-login
-msgid "Sign In or Create an Account"
-msgstr "Mewngofnodi neu Greu Cyfrif"
+#: findmydevice-create-account
+#, fuzzy
+msgctxt "findmydevice-create-account"
+msgid "Create account or sign in"
+msgstr "Crëwch gyfrif neu fewngofnodi"
 
 #: findmydevice-enable
 msgid "Enable Find My Device"
@@ -2493,33 +2501,13 @@ msgstr "Cadarnhau cyfringod"
 msgid "Immediately"
 msgstr "Yn syth"
 
-#: after-five-seconds
-msgid "After 5 seconds"
-msgstr "Ar ôl 5 eiliad"
-
-#: after-fifteen-seconds
-msgid "After 15 seconds"
-msgstr "Ar ôl 15 eiliad"
-
-#: after-thirty-seconds
-msgid "After 30 seconds"
-msgstr "Ar ôl 30 eiliad"
-
 #: after-one-minute
 msgid "After 1 minute"
 msgstr "Ar ôl 1 munud"
 
-#: after-two-minutes
-msgid "After 2 minutes"
-msgstr "Ar ôl 2 funud"
-
 #: after-five-minutes
 msgid "After 5 minutes"
 msgstr "Ar ôl 5 munud"
-
-#: after-ten-minutes
-msgid "After 10 minutes"
-msgstr "Ar ôl 10 munud"
 
 #: after-fifteen-minutes
 msgid "After 15 minutes"
@@ -2532,10 +2520,6 @@ msgstr "Ar ôl 30 munud"
 #: after-one-hour
 msgid "After 1 hour"
 msgstr "Ar ôl 1 awr"
-
-#: after-four-hours
-msgid "After 4 hours"
-msgstr "Ar ôl 4 awr"
 
 #: require-passcode
 msgid "Require passcode"
@@ -2869,9 +2853,10 @@ msgid "How does Do Not Track work?"
 msgstr "Sut mae Peidio Dilyn yn gweithio?"
 
 #: doNotTrack-dd1
+#, fuzzy
 msgid ""
 "When you turn on Do Not Track, your device tells every website and app (as "
-"well as advertisers and other content providers) that you don’t want your "
+"well as advertisers and other content providers) that you do not want your "
 "behavior tracked."
 msgstr ""
 "Pan fyddwch yn cychwyn y nodwedd Peidio Dilyn, bydd eich dyfais yn dweud "
@@ -2879,10 +2864,11 @@ msgstr ""
 "nad ydych am gael eich dilyn."
 
 #: doNotTrack-dd2
+#, fuzzy
 msgid ""
-"Turning on Do Not Track won’t affect your ability to sign in to websites nor "
-"cause your device to forget your private information, such as the contents "
-"of shopping carts, location information or sign-in information."
+"Turning on Do Not Track will not affect your ability to sign in to websites "
+"nor cause your device to forget your private information, such as the "
+"contents of shopping carts, location information or sign-in information."
 msgstr ""
 "Ni fydd cychwyn Peidio Dilyn yn effeithio ar eich gallu i fewngofnodi i "
 "wefannau, nag achosi i'ch dyfais anghofio eich data preifat megis cynnwys "
@@ -3236,6 +3222,10 @@ msgstr "{{hud}}"
 msgid "Log changes in ADB"
 msgstr "Cofnodi'r newid yn ADB"
 
+#: hud-system
+msgid "Show system HUD"
+msgstr ""
+
 #: hud-problems
 msgid "Problems"
 msgstr "Anawsterau"
@@ -3264,6 +3254,10 @@ msgstr "Ail lifo"
 msgid "Jank"
 msgstr "Jank"
 
+#: jank-threshold
+msgid "Jank Threshold"
+msgstr "Trothwy'r Jank"
+
 #: hud-fps
 msgid "Frames per second"
 msgstr "Ffrâm yr eiliad"
@@ -3275,6 +3269,10 @@ msgstr "Amser i'w lwytho"
 #: hud-memory
 msgid "Memory"
 msgstr "Cof"
+
+#: hud-uss
+msgid "Unique Set Size"
+msgstr ""
 
 #: hud-appmemory
 msgid "App memory"
@@ -3390,14 +3388,6 @@ msgstr "ADB yn unig"
 msgid "ADB and DevTools"
 msgstr "ADB a Devtools"
 
-#: devtools-overlay
-msgid "Show devtools overlay"
-msgstr "Dangos troshaen devtools"
-
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Trothwy'r Jank"
-
 #: wifi-debugging
 msgid "Wi-Fi output in ADB"
 msgstr "Allbwn diwyfr mewn ADB"
@@ -3417,6 +3407,10 @@ msgstr "Golwg Cardiau: Lluniau Sgrin"
 #: geolocation-debugging-enabled
 msgid "Geolocation output in ADB"
 msgstr "Allbwn geoleoliad yn ADB"
+
+#: use-reviewer-certs
+msgid "Use Marketplace reviewer certs"
+msgstr ""
 
 #: model-name
 msgid "Model"
@@ -3532,6 +3526,12 @@ msgstr ""
 #: learn-more
 msgid "Learn More"
 msgstr "Dysgu Rhagor"
+
+#: reset-head
+#, fuzzy
+msgctxt "reset-head"
+msgid "Reset"
+msgstr "Ailosod"
 
 #: reset-phone
 msgid "Reset Phone"
@@ -3911,17 +3911,19 @@ msgstr "Gwella {{brandShortName}}"
 msgid "Send Mozilla Feedback"
 msgstr "Anfon Adborth at Mozilla"
 
-#: performanceData
-msgid "Performance data"
-msgstr "Data perfformiad"
+#: performanceAndUsageData
+msgid "Performance and usage data"
+msgstr ""
 
-#: performanceDataInfo
-msgid "Help us improve {{brandShortName}} by sharing data about your phone."
-msgstr "Helpwch ni i wella {{brandShortName}} drwy rannu data am eich ffôn."
+#: performanceAndUsageDataInfo
+msgid ""
+"Help us improve {{brandShortName}} by sharing data about your phone and the "
+"way you use it."
+msgstr ""
 
-#: sharePerformanceData
-msgid "Submit performance data"
-msgstr "Anfon data perfformiad"
+#: sharePerformanceAndUsageData
+msgid "Submit data"
+msgstr ""
 
 #: crashReports
 msgid "Crash reports"
@@ -4226,6 +4228,56 @@ msgstr "Anfon Data"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Estyn Statws Sianel"
+
+#~ msgctxt "search-suggestions-button"
+#~ msgid "{{search-suggestions}}"
+#~ msgstr "{{search-suggestions}}"
+
+#~ msgctxt "search-suggestions-header"
+#~ msgid "{{search-suggestions}}"
+#~ msgstr "{{search-suggestions}}"
+
+#~ msgid "Installed input methods"
+#~ msgstr "Dulliau mewnbynnu sydd wedi'u gosod"
+
+#~ msgid "Add more keyboards"
+#~ msgstr "Ychwanegu bysellfwrdd"
+
+#~ msgid "{{addMoreKeyboards}}"
+#~ msgstr "{{addMoreKeyboards}}"
+
+#~ msgid "Sign In or Create an Account"
+#~ msgstr "Mewngofnodi neu Greu Cyfrif"
+
+#~ msgid "After 5 seconds"
+#~ msgstr "Ar ôl 5 eiliad"
+
+#~ msgid "After 15 seconds"
+#~ msgstr "Ar ôl 15 eiliad"
+
+#~ msgid "After 30 seconds"
+#~ msgstr "Ar ôl 30 eiliad"
+
+#~ msgid "After 2 minutes"
+#~ msgstr "Ar ôl 2 funud"
+
+#~ msgid "After 10 minutes"
+#~ msgstr "Ar ôl 10 munud"
+
+#~ msgid "After 4 hours"
+#~ msgstr "Ar ôl 4 awr"
+
+#~ msgid "Show devtools overlay"
+#~ msgstr "Dangos troshaen devtools"
+
+#~ msgid "Performance data"
+#~ msgstr "Data perfformiad"
+
+#~ msgid "Help us improve {{brandShortName}} by sharing data about your phone."
+#~ msgstr "Helpwch ni i wella {{brandShortName}} drwy rannu data am eich ffôn."
+
+#~ msgid "Submit performance data"
+#~ msgstr "Anfon data perfformiad"
 
 #~ msgid "Edges gesture"
 #~ msgstr "Llusgiad ymyl"

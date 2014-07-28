@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-05 20:44+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-06-06 07:38+0000\n"
 "Last-Translator: Sutha <sutha@open.org.kh>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1402040332.000000\n"
@@ -649,10 +649,6 @@ msgstr "ចម្លង​ជូន"
 msgid "Bcc"
 msgstr "ចម្លង​ជាសម្ងាត់​ជូន"
 
-#: reader-header
-msgid "Read"
-msgstr "អាន"
-
 #: compose-header
 msgid "Compose message"
 msgstr "តែង​សារ"
@@ -734,10 +730,6 @@ msgstr "បោះបង់​ចោល​អ៊ីមែល?"
 msgid "Discard"
 msgstr "បោះបង់ចោល"
 
-#: compose-sending-message
-msgid "Sending email"
-msgstr "ផ្ញើ​អ៊ីមែល"
-
 #: compose-send-message-failed
 msgid "Sending email failed"
 msgstr "បាន​បរាជ័យ​​ផ្ញើ​អ៊ីមែល"
@@ -776,7 +768,7 @@ msgstr "attachment{{ n }}"
 msgid "{{kilobytes}}K"
 msgstr "{{kilobytes}}K"
 
-#: message-attachment-view.textContent
+#: message-attachment-view
 msgid "View"
 msgstr "មើល"
 
@@ -787,6 +779,14 @@ msgstr "ឯកសារ​ធំ​ពេក​ត្រូវ​ទាញយក
 #: message-no-subject
 msgid "(no subject)"
 msgstr "(គ្មាន​ប្រធានបទ)"
+
+#. # LOCALIZATION NOTE(message-edit-menu-edit):
+#. # Displayed in a menu; tapping this item will cause the user to edit the given item.
+#: message-edit-menu-edit
+#, fuzzy
+msgctxt "message-edit-menu-edit"
+msgid "Edit"
+msgstr "កែសម្រួល"
 
 #: message-edit-menu-delete
 msgctxt "message-edit-menu-delete"
@@ -807,6 +807,8 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: message-multiedit-header[zero]
+#, fuzzy
+msgctxt "message-multiedit-header[zero]"
 msgid "Edit"
 msgstr "កែសម្រួល"
 
@@ -1090,6 +1092,10 @@ msgstr "ប័ណ្ណសារ"
 msgid "Local Drafts"
 msgstr "សេចក្ដី​ព្រាង​មូលដ្ឋាន"
 
+#: folder-outbox
+msgid "Outbox"
+msgstr ""
+
 #. # In the folder picker drawer, there is a transparent area for the header,
 #. # and a tap region to take the user back to the message list. So this text is
 #. # not visible by the user, but could be used for accessibility.
@@ -1307,6 +1313,85 @@ msgstr "បាន​លុប​សារ {{ n }}"
 msgid "Unable to connect to server"
 msgstr "មិន​អាច​ភ្ជាប់​ទៅ​កាន់​ម៉ាស៊ីន​មេ"
 
+#. # LOCALIZATION NOTE(compose-invalid-addresses-title):
+#. # A title to be displayed on a warning screen, warning users that
+#. # some of the email addresses they typed were incorrect.
+#: compose-invalid-addresses-title
+msgid "Invalid Addresses"
+msgstr ""
+
+#. # LOCALIZATION NOTE(compose-invalid-addresses-description):
+#. # A description to be displayed on a warning screen, warning users that
+#. # some of the email addresses they typed were incorrect, and that they
+#. # must correct the email addresses before sending.
+#: compose-invalid-addresses-description
+msgid ""
+"Your message contains one or more invalid email addresses. Please correct "
+"them before sending."
+msgstr ""
+
+#. # LOCALIZATION NOTE(background-send-pending):
+#. # Brief message to be displayed in a popup, saying that the phone has
+#. # no network connection, and that the email has been saved to the outbox.
+#: background-send-pending
+msgid "Network unavailable. Email saved to outbox."
+msgstr ""
+
+#. # LOCALIZATION NOTE(background-send-sending):
+#. # Displayed in a toaster popup message, saying that the email
+#. # is currently being sent.
+#: background-send-sending
+#, fuzzy
+msgid "Sending mail…"
+msgstr "ផ្ញើ​អ៊ីមែល"
+
+#. # LOCALIZATION NOTE(background-send-success):
+#. # Displayed in a toaster popup message, saying that the email
+#. # sent successfully.
+#: background-send-success
+msgid "Email sent."
+msgstr ""
+
+#. # LOCALIZATION NOTE(background-send-error):
+#. # Description to be displayed in a notification, saying that an error
+#. # occured while attempting to send an email, and that the email has
+#. # been saved to the outbox.
+#: background-send-error
+msgid "Error occurred. Email saved to outbox."
+msgstr ""
+
+#. # LOCALIZATION NOTE(background-send-error-recipients):
+#. # Description to be displayed in a notification, saying that the email
+#. # could not be sent because the server rejected one or more of the
+#. # email recipients, and that the email has been saved to the outbox.
+#: background-send-error-recipients
+msgid "Recipient error. Email saved to outbox."
+msgstr ""
+
+#. # LOCALIZATION NOTE(background-send-error-title):
+#. # Title to be displayed in a notification, indicating that the
+#. # email failed to send for some reason.
+#: background-send-error-title
+msgid "Mail failed to send"
+msgstr ""
+
+#. # LOCALIZATION NOTE(send-failure-recipients):
+#. # Message to be displayed when editing a message that failed to send due
+#. # to invalid recipients. It should instruct the user to check the addresses
+#. # above for spelling.
+#: send-failure-recipients
+msgid ""
+"Check the spelling of the addresses above. Your mail server indicated one or "
+"more of the addresses above are incorrect."
+msgstr ""
+
+#. # LOCALIZATION NOTE(send-failure-unknown):
+#. # Message to be displayed when editing a message that failed to send for an
+#. # unknown reason.
+#: send-failure-unknown
+msgid "The message could not be sent."
+msgstr ""
+
 #: form-clear-input
 msgid "Remove text"
 msgstr "យក​អត្ថបទ​ចេញ"
@@ -1426,6 +1511,9 @@ msgstr "{{ n }} អ៊ីមែល​ថ្មី ({{ accountName }})"
 #: new-emails-notify-multiple-accounts-body
 msgid "{{ from }} “{{ subject }}”"
 msgstr "{{ from }} “{{ subject }}”"
+
+#~ msgid "Read"
+#~ msgstr "អាន"
 
 #~ msgid "Domain\\u0000ame"
 #~ msgstr "ដែន\\u0000ame"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-08 10:59+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2013-09-18 06:33+0000\n"
 "Last-Translator: Jean <jean.cayron@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,6 +41,10 @@ msgstr "Clôre"
 
 #: skip
 msgid "Skip"
+msgstr ""
+
+#: clear.ariaLabel
+msgid "Clear"
 msgstr ""
 
 #. # LOCALIZATION NOTE(undo.ariaLabel): The following string is spoken by screen
@@ -904,8 +908,12 @@ msgstr "Metaedje a djoû do sistinme"
 msgid "System Update Ready"
 msgstr "Metaedje a djoû presse"
 
-#: systemUpdateLowBattery
-msgid "You need at least 50% battery level to install the update."
+#. # LOCALIZATION NOTE (systemUpdateLowBatteryThreshold): {{ threshold }} will be
+#. # replaced at runtime by the minimum level of the battery needed to update,
+#. # resulting for example in "You need at least 40% battery level to install the
+#. # update."
+#: systemUpdateLowBatteryThreshold
+msgid "You need at least {{ threshold }}% battery level to install the update."
 msgstr ""
 
 #: required
@@ -1002,6 +1010,10 @@ msgstr "%A %e %B"
 #. # screen readers and not shown on the screen.
 #: panel-passcode.ariaLabel
 msgid "Passcode panel"
+msgstr ""
+
+#: lockscreen-sim-id
+msgid "SIM {{ n }}"
 msgstr ""
 
 #. #software buttons
@@ -2121,8 +2133,13 @@ msgid "Emergency warning!"
 msgstr ""
 
 #. # ICC / STK (= SIM Toolkit)
-#: icc-message-title
-msgid "Operator message from SIM {{id}}"
+#: icc-message-maintitle
+msgid "Operator message"
+msgstr "Messaedje di l’ operateu"
+
+#: icc-message-subtitle
+msgctxt "icc-message-subtitle"
+msgid "SIM {{id}}"
 msgstr ""
 
 #: icc-confirmCall-defaultmessage
@@ -2137,9 +2154,14 @@ msgstr "Dj’ evoye li messaedje"
 msgid "Send message?"
 msgstr "Evoyî messaedje ?"
 
-#. # LOCALIZATION NOTE: (icc-inputbox-title) = title of SIM Toolkit input dialog panels
-#: icc-inputbox-title
-msgid "STK Query from SIM {{id}}"
+#. # LOCALIZATION NOTE: (icc-inputbox-[main|sub]title) = title of SIM Toolkit input dialog panels
+#: icc-inputbox-maintitle
+msgid "STK Query"
+msgstr "Cweraedje STK"
+
+#: icc-inputbox-subtitle
+msgctxt "icc-inputbox-subtitle"
+msgid "SIM {{id}}"
 msgstr ""
 
 #. # CDMA emergency callback mode
@@ -2254,6 +2276,22 @@ msgstr ""
 msgid "Save Audio"
 msgstr ""
 
+#: save-link
+msgid "Save linked file"
+msgstr ""
+
+#: share-image
+msgid "Share Image"
+msgstr ""
+
+#: share-video
+msgid "Share Video"
+msgstr ""
+
+#: share-audio
+msgid "Share Audio"
+msgstr ""
+
 #~ msgctxt "bluetooth-sending-progress"
 #~ msgid "Sending Bluetooth transfer.."
 #~ msgstr "Dj’ evoye li berwetaedje Bluetooth..."
@@ -2264,12 +2302,6 @@ msgstr ""
 
 #~ msgid "%I:%M"
 #~ msgstr "%H:%M"
-
-#~ msgid "Operator message"
-#~ msgstr "Messaedje di l’ operateu"
-
-#~ msgid "STK Query"
-#~ msgstr "Cweraedje STK"
 
 #~ msgctxt "unknown-size"
 #~ msgid "{{unknown}}"

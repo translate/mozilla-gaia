@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-24 11:19+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-06-27 12:49+0000\n"
 "Last-Translator: Ahmed <nefzaoui.ahmed@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n>=3 && "
 "n<=10 ? 3 : n>=11 && n<=99 ? 4 : 5;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1403873343.000000\n"
@@ -60,6 +60,8 @@ msgid "No"
 msgstr "لا"
 
 #: reset
+#, fuzzy
+msgctxt "reset"
 msgid "Reset"
 msgstr "إعادة تعيين"
 
@@ -916,6 +918,21 @@ msgstr "رسائل الإذاعة المحمولة"
 #: cellBroadcast
 msgid "Cell broadcast"
 msgstr "الإذاعة المحمولة"
+
+#: messagingInformation
+#, fuzzy
+msgid "Information"
+msgstr "تأكيد"
+
+#. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
+#: messagingSMSC
+#, fuzzy
+msgid "SMSC"
+msgstr "MMSC"
+
+#: unknownSMSC
+msgid "Unknown number"
+msgstr ""
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
@@ -1980,6 +1997,10 @@ msgctxt "vertical-homescreen-header"
 msgid "Homescreen"
 msgstr "الشاشة الرئيسية"
 
+#: vertical-homescreen-layout
+msgid "Layout"
+msgstr ""
+
 #: vertical-homescreen-icon-layout
 msgid "Icon Layout"
 msgstr "تصميم الأيقونة"
@@ -1996,6 +2017,10 @@ msgstr "أربع أعمدة"
 msgid "Notice"
 msgstr "ملاحظة"
 
+#: search-header
+msgid "Search"
+msgstr ""
+
 #: search-engine
 msgid "Search Engine"
 msgstr "محرك البحث"
@@ -2003,21 +2028,6 @@ msgstr "محرك البحث"
 #: search-suggestions
 msgid "Search Suggestions"
 msgstr "محركات بحث مقترحة"
-
-#. # LOCALIZATION NOTE (search-suggestions-button, search-suggestions-header):
-#. # If you leave the original en-US value "{{search-suggestions}}" in the following
-#. # strings, the localization will be automatically picked from the existing
-#. # string with ID "search-suggestions". If you need to adapt your localization to
-#. # the reduced space available in header or button, you can use shorter strings here.
-#: search-suggestions-button
-msgctxt "search-suggestions-button"
-msgid "{{search-suggestions}}"
-msgstr "{{search-suggestions}}"
-
-#: search-suggestions-header
-msgctxt "search-suggestions-header"
-msgid "{{search-suggestions}}"
-msgstr "{{search-suggestions}}"
 
 #: search-suggestions-description
 msgid ""
@@ -2057,9 +2067,14 @@ msgid "Description"
 msgstr "الوصف"
 
 #. # Personalization :: Keyboard
-#: installedInputMethods
-msgid "Installed input methods"
-msgstr "طرق الإدخال المثبتة"
+#: keyboardSettings
+msgid "Keyboard Settings"
+msgstr ""
+
+#: selectedKeyboards
+#, fuzzy
+msgid "Selected Keyboards"
+msgstr "إختر لوحة المفاتيح"
 
 #: keyboards
 msgid "Keyboards"
@@ -2090,31 +2105,20 @@ msgstr "لوحة المفاتيح"
 msgid "Dial Pad"
 msgstr "لوحة الإتصال"
 
-#: selectedKeyboards
-msgid "Selected keyboards"
+#: selectKeyboards
+#, fuzzy
+msgid "Select Keyboards"
 msgstr "إختر لوحة المفاتيح"
 
-#. # LOCALIZATION NOTE (selectedKeyboards-header): if you leave the original
-#. # en-US value "{{selectedKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "selectedKeyboards".
+#. # LOCALIZATION NOTE (selectKeyboards-header): if you leave the original
+#. # en-US value "{{selectKeyboards}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "selectKeyboards".
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
-#: selectedKeyboards-header
-msgid "{{selectedKeyboards}}"
+#: selectKeyboards-header
+#, fuzzy
+msgid "{{selectKeyboards}}"
 msgstr "{{selectedKeyboards}}"
-
-#: addMoreKeyboards
-msgid "Add more keyboards"
-msgstr "أضِف لوحات مفاتيح"
-
-#. # LOCALIZATION NOTE (addMoreKeyboards-header): if you leave the original
-#. # en-US value "{{addMoreKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "addMoreKeyboards".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: addMoreKeyboards-header
-msgid "{{addMoreKeyboards}}"
-msgstr "{{addMoreKeyboards}}"
 
 #: mustHaveOneKeyboard
 msgid "At least one {{type}} keyboard should be selected"
@@ -2173,6 +2177,8 @@ msgstr ""
 "تطبيقات مثل \" متجر التطبيقات \" ."
 
 #: fxa-invitation
+#, fuzzy
+msgctxt "fxa-invitation"
 msgid "Create account or sign in"
 msgstr "إنشاء حساب او تسجيل الدخول"
 
@@ -2252,9 +2258,11 @@ msgstr "إبحث عن جهازي"
 msgid "Find My Device allows you to locate, lock or erase your phone"
 msgstr "\" البحث عن جاهزي \" تطبيق يسمح لك بتحديد ، إغلاق أو مسح هاتفك."
 
-#: findmydevice-login
-msgid "Sign In or Create an Account"
-msgstr "سجل الدخول او انشاء حساب"
+#: findmydevice-create-account
+#, fuzzy
+msgctxt "findmydevice-create-account"
+msgid "Create account or sign in"
+msgstr "إنشاء حساب او تسجيل الدخول"
 
 #: findmydevice-enable
 msgid "Enable Find My Device"
@@ -2473,33 +2481,13 @@ msgstr "تأكيد رمز المرور"
 msgid "Immediately"
 msgstr "حالاً"
 
-#: after-five-seconds
-msgid "After 5 seconds"
-msgstr "بعد 5 ثوانٍ"
-
-#: after-fifteen-seconds
-msgid "After 15 seconds"
-msgstr "بعد 15 ثانية"
-
-#: after-thirty-seconds
-msgid "After 30 seconds"
-msgstr "بعد 30 ثانية"
-
 #: after-one-minute
 msgid "After 1 minute"
 msgstr "بعد دقيقة"
 
-#: after-two-minutes
-msgid "After 2 minutes"
-msgstr "بعد دقيقتين"
-
 #: after-five-minutes
 msgid "After 5 minutes"
 msgstr "بعد 5 دقائق"
-
-#: after-ten-minutes
-msgid "After 10 minutes"
-msgstr "بعد 10 دقائق"
 
 #: after-fifteen-minutes
 msgid "After 15 minutes"
@@ -2512,10 +2500,6 @@ msgstr "بعد 30 دقيقة"
 #: after-one-hour
 msgid "After 1 hour"
 msgstr "بعد ساعة"
-
-#: after-four-hours
-msgid "After 4 hours"
-msgstr "بعد 4 ساعات"
 
 #: require-passcode
 msgid "Require passcode"
@@ -2840,19 +2824,21 @@ msgid "How does Do Not Track work?"
 msgstr "كيف يعمل عدم التعقب ؟"
 
 #: doNotTrack-dd1
+#, fuzzy
 msgid ""
 "When you turn on Do Not Track, your device tells every website and app (as "
-"well as advertisers and other content providers) that you don’t want your "
+"well as advertisers and other content providers) that you do not want your "
 "behavior tracked."
 msgstr ""
 "عند تشغيلك لميزة عدم التعقب، جهازك يخبر كل موقع ويب وتطبيق (كذلك المعلنين "
 "ومقدمي المحتويات اﻷخرى) بأنك لا ترغب في تعقب سلوكك."
 
 #: doNotTrack-dd2
+#, fuzzy
 msgid ""
-"Turning on Do Not Track won’t affect your ability to sign in to websites nor "
-"cause your device to forget your private information, such as the contents "
-"of shopping carts, location information or sign-in information."
+"Turning on Do Not Track will not affect your ability to sign in to websites "
+"nor cause your device to forget your private information, such as the "
+"contents of shopping carts, location information or sign-in information."
 msgstr ""
 "تشغيل عدم التعقب لن يؤثر على قدرتك في تسجيل الدخول لمواقع الويب، ولن يؤدي "
 "بجهازك لنسيان معلوماتك الخاصة — من قبيل محتويات عربات التسوق، معلومات "
@@ -3205,6 +3191,10 @@ msgstr "{{hud}}"
 msgid "Log changes in ADB"
 msgstr "تسجيل التغييرات في ADB"
 
+#: hud-system
+msgid "Show system HUD"
+msgstr ""
+
 #: hud-problems
 msgid "Problems"
 msgstr "مشاكل"
@@ -3233,6 +3223,10 @@ msgstr "التدفقات العائدة"
 msgid "Jank"
 msgstr "جانك"
 
+#: jank-threshold
+msgid "Jank Threshold"
+msgstr "Jank Threshold"
+
 #: hud-fps
 msgid "Frames per second"
 msgstr "الإطارات لكلّ ثانية"
@@ -3244,6 +3238,10 @@ msgstr "الوقت للتحميل"
 #: hud-memory
 msgid "Memory"
 msgstr "الذاكرة"
+
+#: hud-uss
+msgid "Unique Set Size"
+msgstr ""
 
 #: hud-appmemory
 msgid "App memory"
@@ -3359,14 +3357,6 @@ msgstr "ADB فقط"
 msgid "ADB and DevTools"
 msgstr "ADB و أدوات المطورين"
 
-#: devtools-overlay
-msgid "Show devtools overlay"
-msgstr "عرض غطاء أدوات المطورين"
-
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Jank Threshold"
-
 #: wifi-debugging
 msgid "Wi-Fi output in ADB"
 msgstr "ناتج الواي فاي في ADB"
@@ -3386,6 +3376,10 @@ msgstr "عارض التطبيقات : لقطات"
 #: geolocation-debugging-enabled
 msgid "Geolocation output in ADB"
 msgstr "سِجِلّ الـ GPS في ADB"
+
+#: use-reviewer-certs
+msgid "Use Marketplace reviewer certs"
+msgstr ""
 
 #: model-name
 msgid "Model"
@@ -3500,6 +3494,12 @@ msgstr ""
 #: learn-more
 msgid "Learn More"
 msgstr "معرفة المزيد"
+
+#: reset-head
+#, fuzzy
+msgctxt "reset-head"
+msgid "Reset"
+msgstr "إعادة تعيين"
 
 #: reset-phone
 msgid "Reset Phone"
@@ -3872,19 +3872,19 @@ msgstr "تحسين {{brandShortName}}"
 msgid "Send Mozilla Feedback"
 msgstr "ارسل تعليق لموزيلا"
 
-#: performanceData
-msgid "Performance data"
-msgstr "بيانات الأداء"
-
-#: performanceDataInfo
-msgid "Help us improve {{brandShortName}} by sharing data about your phone."
+#: performanceAndUsageData
+msgid "Performance and usage data"
 msgstr ""
-"ساعدنا في جعل {{brandShortName}} أسرع وذو استعمال أسهل وذلك عن طريق مشاركتك "
-"لمعلومات حول هاتفك."
 
-#: sharePerformanceData
-msgid "Submit performance data"
-msgstr "إرسال بيانات الأداء"
+#: performanceAndUsageDataInfo
+msgid ""
+"Help us improve {{brandShortName}} by sharing data about your phone and the "
+"way you use it."
+msgstr ""
+
+#: sharePerformanceAndUsageData
+msgid "Submit data"
+msgstr ""
 
 #: crashReports
 msgid "Crash reports"
@@ -4185,6 +4185,58 @@ msgstr "أرسل بيانات"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "أحصل على معلومات القناة"
+
+#~ msgctxt "search-suggestions-button"
+#~ msgid "{{search-suggestions}}"
+#~ msgstr "{{search-suggestions}}"
+
+#~ msgctxt "search-suggestions-header"
+#~ msgid "{{search-suggestions}}"
+#~ msgstr "{{search-suggestions}}"
+
+#~ msgid "Installed input methods"
+#~ msgstr "طرق الإدخال المثبتة"
+
+#~ msgid "Add more keyboards"
+#~ msgstr "أضِف لوحات مفاتيح"
+
+#~ msgid "{{addMoreKeyboards}}"
+#~ msgstr "{{addMoreKeyboards}}"
+
+#~ msgid "Sign In or Create an Account"
+#~ msgstr "سجل الدخول او انشاء حساب"
+
+#~ msgid "After 5 seconds"
+#~ msgstr "بعد 5 ثوانٍ"
+
+#~ msgid "After 15 seconds"
+#~ msgstr "بعد 15 ثانية"
+
+#~ msgid "After 30 seconds"
+#~ msgstr "بعد 30 ثانية"
+
+#~ msgid "After 2 minutes"
+#~ msgstr "بعد دقيقتين"
+
+#~ msgid "After 10 minutes"
+#~ msgstr "بعد 10 دقائق"
+
+#~ msgid "After 4 hours"
+#~ msgstr "بعد 4 ساعات"
+
+#~ msgid "Show devtools overlay"
+#~ msgstr "عرض غطاء أدوات المطورين"
+
+#~ msgid "Performance data"
+#~ msgstr "بيانات الأداء"
+
+#~ msgid "Help us improve {{brandShortName}} by sharing data about your phone."
+#~ msgstr ""
+#~ "ساعدنا في جعل {{brandShortName}} أسرع وذو استعمال أسهل وذلك عن طريق "
+#~ "مشاركتك لمعلومات حول هاتفك."
+
+#~ msgid "Submit performance data"
+#~ msgstr "إرسال بيانات الأداء"
 
 #~ msgid "Sent Mail"
 #~ msgstr "أرسل بريد"

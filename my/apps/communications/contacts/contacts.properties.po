@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-24 11:19+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-06-12 15:30+0000\n"
 "Last-Translator: Tin Aung <tinaunglinn.eng91@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,6 +83,8 @@ msgid "Delete contact?"
 msgstr "အဆက်အသွယ် အားဖျက်"
 
 #: remove
+#, fuzzy
+msgctxt "remove"
 msgid "Remove"
 msgstr "ဖယ်ထုတ်"
 
@@ -102,6 +104,10 @@ msgstr "ယခု အဆက်အသွယ်တွင် ဖုန်းနံ�
 #: no_contact_email
 msgid "This contact does not have an email address"
 msgstr "ယခုအဆက်အသွယ်တွင် အီးမေလ်းလိပ်စာ မရှိပါ"
+
+#: no_contact_data
+msgid "This contact does not have a phone number and email address"
+msgstr ""
 
 #: removePhotoConfirm
 msgid "Remove contact picture?"
@@ -182,10 +188,6 @@ msgstr "မှတ်ချက်များ"
 msgid "Company"
 msgstr "ကုမ္ပဏီ"
 
-#: custom.placeholder
-msgid "Custom"
-msgstr "စိတ်ကြိုက်"
-
 #: date
 msgctxt "date"
 msgid "Date"
@@ -251,64 +253,6 @@ msgstr "စိတ်ကြိုက်စာရင်းထဲထည့်ပါ
 msgid "Remove as Favorite"
 msgstr "စိတ်ကြိုက်စာရင်းမှဖျက်ပါ"
 
-#. # Field labels
-#: label
-msgid "Label"
-msgstr "အမှတ်အသား"
-
-#: mobile
-msgid "Mobile"
-msgstr "မိုဘိုင်း"
-
-#: home
-msgid "Home"
-msgstr "အိမ်"
-
-#: work
-msgid "Work"
-msgstr "အလုပ်အကိုင်"
-
-#: personal
-msgid "Personal"
-msgstr "ကိုယ်ရေးကိုယ်တာ"
-
-#: faxHome
-msgid "Fax home"
-msgstr "အိမ်သုံးဖက်စ်"
-
-#: faxOffice
-msgid "Fax office"
-msgstr "ရုံးသုံးဖက်စ်"
-
-#: faxOther
-msgid "Fax other"
-msgstr "အခြားဖက်စ်"
-
-#: another
-msgid "Another"
-msgstr "အခြားတစ်ခု"
-
-#: other
-msgid "Other"
-msgstr "အခြား"
-
-#: customTag.placeholder
-msgid "Custom tag"
-msgstr "စိတ်ကြိုက် တေဂျ်"
-
-#. # Note: For localizers. This tag indicates the current address
-#: current
-msgid "Current"
-msgstr "လက်ရှိ"
-
-#. # LOCALIZATION NOTE(itemWithLabel): Parameters in this string will be replaced
-#. # at run-time: {{label}} is the label associated to phone number or email,
-#. # item is the number/email itself. Examples for English: "Home, +123456789" or
-#. # "Work, foo@example.com".
-#: itemWithLabel
-msgid "{{label}}, {{item}}"
-msgstr "{{label}}, {{item}}"
-
 #. # Hidden information, for screen readers
 #: exit
 msgid "Exit"
@@ -373,6 +317,10 @@ msgstr "အီမေလ်း လိပ်စာ"
 #: legendAddress
 msgid "Address"
 msgstr "လိပ်စာ"
+
+#: legendPhoto.ariaLabel
+msgid "Photo"
+msgstr ""
 
 #: settings
 msgid "Settings"
@@ -564,6 +512,10 @@ msgstr "မိုဘိုင်းရွေးပါ"
 #: select_email
 msgid "Select email"
 msgstr "အီမေလ်းရွေး"
+
+#: select_recipient
+msgid "Select recipient"
+msgstr ""
 
 #. # Settings related
 #: contactsOrderBy
@@ -834,6 +786,65 @@ msgstr "ဗီဒီယို"
 #: audio
 msgid "Audio"
 msgstr "အော်ဒီယို"
+
+#. # Pick Destination
+#: pick_destination
+msgid "{{ destination }} {{ carrier }}"
+msgstr ""
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: removeField.ariaLabel
+#, fuzzy
+msgctxt "removeField.ariaLabel"
+msgid "Remove"
+msgstr "ဖယ်ထုတ်"
+
+#: undo.ariaLabel
+msgid "Undo"
+msgstr ""
+
+#~ msgid "Custom"
+#~ msgstr "စိတ်ကြိုက်"
+
+#~ msgid "Label"
+#~ msgstr "အမှတ်အသား"
+
+#~ msgid "Mobile"
+#~ msgstr "မိုဘိုင်း"
+
+#~ msgid "Home"
+#~ msgstr "အိမ်"
+
+#~ msgid "Work"
+#~ msgstr "အလုပ်အကိုင်"
+
+#~ msgid "Personal"
+#~ msgstr "ကိုယ်ရေးကိုယ်တာ"
+
+#~ msgid "Fax home"
+#~ msgstr "အိမ်သုံးဖက်စ်"
+
+#~ msgid "Fax office"
+#~ msgstr "ရုံးသုံးဖက်စ်"
+
+#~ msgid "Fax other"
+#~ msgstr "အခြားဖက်စ်"
+
+#~ msgid "Another"
+#~ msgstr "အခြားတစ်ခု"
+
+#~ msgid "Other"
+#~ msgstr "အခြား"
+
+#~ msgid "Custom tag"
+#~ msgstr "စိတ်ကြိုက် တေဂျ်"
+
+#~ msgid "Current"
+#~ msgstr "လက်ရှိ"
+
+#~ msgid "{{label}}, {{item}}"
+#~ msgstr "{{label}}, {{item}}"
 
 #~ msgid "Import SIM contacts"
 #~ msgstr "SIM အဆက်အသွယ်များတင်ပို့"

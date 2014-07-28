@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-11 17:31+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-07-09 08:52+0000\n"
 "Last-Translator: Selim <selim@sum.lu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1404895940.000000\n"
@@ -35,10 +35,6 @@ msgctxt "all.ariaLabel"
 msgid "All"
 msgstr "Tümü"
 
-#: asterisk.ariaLabel
-msgid "Asterisk"
-msgstr "Yıldız"
-
 #: callLog
 msgid "Call log"
 msgstr "Arama kaydı"
@@ -54,10 +50,6 @@ msgstr "Arama günlüğü diyaloğunu düzenle"
 #: connecting
 msgid "Connecting"
 msgstr "Bağlanıyor"
-
-#: cancel
-msgid "Cancel"
-msgstr "İptal"
 
 #. ## LOCALIZATION NOTE cf-async, cf-data, cf-fax, cf-packet, cf-pad, cf-sms, cf-sync and cf-voice are the service the call forwarding is activate/inactive for.
 #. ## LOCALIZATION NOTE Its variables might be a phone number or cf-inactive.
@@ -122,7 +114,7 @@ msgid "Create new contact"
 msgstr "Yeni kişi oluştur"
 
 #: delete
-msgctxt "delete"
+#, fuzzy
 msgid "Delete"
 msgstr "Sil"
 
@@ -172,10 +164,6 @@ msgstr "{{ n }} seçili"
 msgid "Edit"
 msgstr "Düzenle"
 
-#: hashSign.ariaLabel
-msgid "Hash sign"
-msgstr "Kare işareti"
-
 #: hideKeypad.ariaLabel
 msgid "Hide keypad"
 msgstr "Klavyeyi gizle"
@@ -191,11 +179,6 @@ msgstr "Gelen"
 #: keypad.ariaLabel
 msgid "Keypad"
 msgstr "Klavye"
-
-#: keypadDelete.ariaLabel
-msgctxt "keypadDelete.ariaLabel"
-msgid "Delete"
-msgstr "Sil"
 
 #: makeCall.ariaLabel
 msgid "Make call"
@@ -259,10 +242,6 @@ msgstr "Haydi, konuşmaya başlayın."
 msgid "No missed calls"
 msgstr "Cevapsız çağrı yok"
 
-#: phoneNumberInput.ariaLabel
-msgid "Phone number"
-msgstr "Telefon numarası"
-
 #: recents.ariaLabel
 msgid "Recent calls"
 msgstr "Son aramalar"
@@ -286,10 +265,6 @@ msgstr "Arama değiştir"
 #: today
 msgid "Today"
 msgstr "Bugün"
-
-#: voiceMailKey.ariaLabel
-msgid "Voicemail"
-msgstr "Telesekreter"
 
 #: withheld-number
 msgid "Withheld number"
@@ -387,6 +362,10 @@ msgstr "Yanıtla"
 #: unlock-a11y-button.ariaLabel
 msgid "Slider"
 msgstr "Sürgü"
+
+#: roaming
+msgid "{{operator}} (Roaming)"
+msgstr ""
 
 #: settings
 msgid "Settings"
@@ -824,34 +803,11 @@ msgid "Rejected by remote"
 msgstr "Karşı taraf reddetti"
 
 #. # Conference call
-#: conference
-msgctxt "conference"
-msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
-
-#: conference[one]
-msgctxt "conference[one]"
-msgid "Conference ({{ n }})"
-msgstr "Konferans ({{ n }})"
-
-#: conference[two]
-msgctxt "conference[two]"
-msgid "Conference ({{ n }})"
-msgstr "Konferans ({{ n }})"
-
-#: conference[few]
-msgctxt "conference[few]"
-msgid "Conference ({{ n }})"
-msgstr "Konferans ({{ n }})"
-
-#: conference[many]
-msgctxt "conference[many]"
-msgid "Conference ({{ n }})"
-msgstr "Konferans ({{ n }})"
-
-#: conference[other]
-msgctxt "conference[other]"
-msgid "Conference ({{ n }})"
+#. # LOCALIZATION NOTE(conferenceCall): {{n}} represents the number of
+#. # participants in the group call.
+#: conferenceCall
+#, fuzzy
+msgid "Conference ({{n}})"
 msgstr "Konferans ({{ n }})"
 
 #: caller-left-call
@@ -888,6 +844,45 @@ msgstr "Alıcı"
 msgctxt "speaker"
 msgid "Speaker"
 msgstr "Hoparlör"
+
+#~ msgid "Asterisk"
+#~ msgstr "Yıldız"
+
+#~ msgid "Cancel"
+#~ msgstr "İptal"
+
+#~ msgid "Hash sign"
+#~ msgstr "Kare işareti"
+
+#~ msgctxt "keypadDelete.ariaLabel"
+#~ msgid "Delete"
+#~ msgstr "Sil"
+
+#~ msgid "Phone number"
+#~ msgstr "Telefon numarası"
+
+#~ msgid "Voicemail"
+#~ msgstr "Telesekreter"
+
+#~ msgctxt "conference"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "conference[two]"
+#~ msgid "Conference ({{ n }})"
+#~ msgstr "Konferans ({{ n }})"
+
+#~ msgctxt "conference[few]"
+#~ msgid "Conference ({{ n }})"
+#~ msgstr "Konferans ({{ n }})"
+
+#~ msgctxt "conference[many]"
+#~ msgid "Conference ({{ n }})"
+#~ msgstr "Konferans ({{ n }})"
+
+#~ msgctxt "conference[other]"
+#~ msgid "Conference ({{ n }})"
+#~ msgstr "Konferans ({{ n }})"
 
 #~ msgctxt "group-call"
 #~ msgid "{[ plural(n) ]}"

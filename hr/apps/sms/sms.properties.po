@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-05 20:44+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-03-05 20:05+0000\n"
 "Last-Translator: Sasa <sasa@tekovic.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -392,18 +392,21 @@ msgstr "Traži"
 msgid "Unknown"
 msgstr "Nepoznat"
 
-#. # LOCALIZATION NOTE(thread-separator): used to separate type/carrier from
+#. # LOCALIZATION NOTE(phone-type-separator): used to separate phone type from
 #. # the number itself. It should be consistent with the characters used in
-#. # "thread- header", \u20 is a blank space (\u20|\u20 is equivalent to " | ").
-#: thread-separator
-msgid " | "
+#. # "thread- header", \u20 is a blank space (,\u20 is equivalent to ", "). It can
+#. # be used together with "phone-carrier-separator" if carrier is available.
+#. # Resulting example for en-US: "Mobile, +123456789" or if carrier is available
+#. # "Mobile, +123456789 Carrier".
+#: phone-type-separator
+msgid ", "
 msgstr ""
 
-#. # LOCALIZATION NOTE(carrier-separator): used to separate carrier's name from
-#. # the number itself. \u20 is a blank space. Resulting example for en-US:
-#. # "Verizon, +123456789".
-#: carrier-separator
-msgid ", "
+#. # LOCALIZATION NOTE(phone-carrier-separator): used to separate carrier's name
+#. # from the number itself. \u20 is a blank space.  Resulting example for en-US:
+#. # "+123456789 Verizon".
+#: phone-carrier-separator
+msgid " "
 msgstr ""
 
 #. # Modal Dialogs
@@ -557,49 +560,53 @@ msgctxt "fdnBlocked2BtnOk"
 msgid "OK"
 msgstr "U redu"
 
-#: nonActiveSimTitle
+#: switchSimToRetrieveTitle
 msgid "Switch data connection"
 msgstr "Prebaci podatkovnu vezu"
 
-#: nonActiveSimBody
+#: switchSimToRetrieveBody
+#, fuzzy
 msgid ""
-"Switch the data connection to {{ nonactive }} to retrieve the MMS. The "
-"current data transfer on {{ active }} will be suspended. Continue anyway?"
+"Switch the data connection to SIM {{ nonActiveSimId }} to retrieve the MMS. "
+"The current data transfer on SIM {{ activeSimId }} will be suspended. "
+"Continue anyway?"
 msgstr ""
 "Postavite mobilnu podatkovnu vezu na {{ nonactive }} da biste preuzeli MMS. "
 "Trenutni prijenos podataka na {{ active }} će biti odgođen. Želite li "
 "nastaviti?"
 
-#: nonActiveSimBtnOk
+#: switchSimToRetrieveBtnOk
 msgid "Later"
 msgstr "Kasnije"
 
-#: nonActiveSimConfirm
-msgctxt "nonActiveSimConfirm"
+#: switchSimToRetrieveConfirm
+#, fuzzy
+msgctxt "switchSimToRetrieveConfirm"
 msgid "OK"
 msgstr "U redu"
 
 #. # no need to retranslate title and buttons if not necessary
-#: nonActiveSimToSendTitle
-msgid "{{nonActiveSimTitle}}"
+#: switchSimToSendTitle
+msgid "{{switchSimToRetrieveTitle}}"
 msgstr ""
 
-#: nonActiveSimToSendBody
+#: switchSimToSendBody
 #, fuzzy
 msgid ""
-"Switch the data connection to {{ nonactive }} to send the MMS. The current "
-"data transfer on {{ active }} will be suspended. Continue anyway?"
+"Switch the data connection to SIM {{ nonActiveSimId }} to send the MMS. The "
+"current data transfer on SIM {{ activeSimId }} will be suspended. Continue "
+"anyway?"
 msgstr ""
 "Postavite mobilnu podatkovnu vezu na {{ nonactive }} da biste preuzeli MMS. "
 "Trenutni prijenos podataka na {{ active }} će biti odgođen. Želite li "
 "nastaviti?"
 
-#: nonActiveSimToSendBtnOk
-msgid "{{nonActiveSimBtnOk}}"
+#: switchSimToSendBtnOk
+msgid "{{switchSimToRetrieveBtnOk}}"
 msgstr ""
 
-#: nonActiveSimToSendConfirm
-msgid "{{nonActiveSimConfirm}}"
+#: switchSimToSendConfirm
+msgid "{{switchSimToRetrieveConfirm}}"
 msgstr ""
 
 #: sendNoSignalErrorTitle
@@ -640,6 +647,22 @@ msgstr "Provjerite da li je broj na koji šaljete ispravan"
 
 #: sendInvalidAddressErrorBtnOk
 msgctxt "sendInvalidAddressErrorBtnOk"
+msgid "OK"
+msgstr "U redu"
+
+#: simNotMatchedErrorTitle
+msgid "Unable to download"
+msgstr ""
+
+#: simNotMatchedErrorBody
+msgid ""
+"Please make sure the SIM card inserted is the one used to receive this "
+"message."
+msgstr ""
+
+#: simNotMatchedErrorBtnOk
+#, fuzzy
+msgctxt "simNotMatchedErrorBtnOk"
 msgid "OK"
 msgstr "U redu"
 
@@ -838,6 +861,13 @@ msgstr "preuzimanje"
 msgid "untitled"
 msgstr "neimenovano"
 
+#. # LOCALIZATION NOTE (mms-label): This label is used to identify MMS in message
+#. # composer (above the send button) and in the thread list for the thread with
+#. # MMS as the last message.
+#: mms-label
+msgid "MMS"
+msgstr ""
+
 #. # LOCALIZATION NOTE (files-too-large): the English translation does not need the
 #. # actual number of files. If your translation needs it, you can still add it
 #. # using the parameter {{ n }}.
@@ -897,12 +927,23 @@ msgid "Message saved as draft"
 msgstr ""
 
 #. # some DSDS related localizations
-#: sim-name
-msgid "SIM{{id}}"
+#: sim-id-label
+msgid "SIM {{id}}"
 msgstr ""
 
 #: dsds-notification-title-with-sim
 msgid "({{sim}}) {{sender}}"
+msgstr ""
+
+#. # LOCALIZATION NOTE (send-button-sim-indication): don't localize the
+#. # sim-indication itself as we use it to show the SIM number only. Yet obviously,
+#. # the "ariaLabel" needs to be localized.
+#: send-button-sim-indication
+msgid "{{n}}"
+msgstr ""
+
+#: send-button-sim-indication.ariaLabel
+msgid "using SIM {{n}}"
 msgstr ""
 
 #. # Date formats specific for SMS app
@@ -914,6 +955,10 @@ msgstr ""
 #: expiry-date-format
 msgid "%A, %b %e"
 msgstr ""
+
+#~ msgctxt "nonActiveSimConfirm"
+#~ msgid "OK"
+#~ msgstr "U redu"
 
 #~ msgid "Carrier unknown"
 #~ msgstr "Nepoznat operater"

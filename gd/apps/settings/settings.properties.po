@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-24 11:19+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-06-29 23:45+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -62,6 +62,8 @@ msgid "No"
 msgstr "Chan eil"
 
 #: reset
+#, fuzzy
+msgctxt "reset"
 msgid "Reset"
 msgstr "Ath-shuidhich"
 
@@ -925,6 +927,21 @@ msgstr "Teachdaireachdan craoladh an fhòn-làimhe"
 #: cellBroadcast
 msgid "Cell broadcast"
 msgstr "Craoladh an fhòn-làimhe"
+
+#: messagingInformation
+#, fuzzy
+msgid "Information"
+msgstr "Dearbhadh"
+
+#. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
+#: messagingSMSC
+#, fuzzy
+msgid "SMSC"
+msgstr "MMSC"
+
+#: unknownSMSC
+msgid "Unknown number"
+msgstr ""
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
@@ -2009,6 +2026,10 @@ msgctxt "vertical-homescreen-header"
 msgid "Homescreen"
 msgstr "An sgrìn mhòr"
 
+#: vertical-homescreen-layout
+msgid "Layout"
+msgstr ""
+
 #: vertical-homescreen-icon-layout
 msgid "Icon Layout"
 msgstr "Co-dhealbhachd nan ìomhaigeagan"
@@ -2025,6 +2046,10 @@ msgstr "Ceithir colbhan"
 msgid "Notice"
 msgstr "Sanas"
 
+#: search-header
+msgid "Search"
+msgstr ""
+
 #: search-engine
 msgid "Search Engine"
 msgstr "Einnsean-luirg"
@@ -2032,21 +2057,6 @@ msgstr "Einnsean-luirg"
 #: search-suggestions
 msgid "Search Suggestions"
 msgstr "Molaidhean luirg"
-
-#. # LOCALIZATION NOTE (search-suggestions-button, search-suggestions-header):
-#. # If you leave the original en-US value "{{search-suggestions}}" in the following
-#. # strings, the localization will be automatically picked from the existing
-#. # string with ID "search-suggestions". If you need to adapt your localization to
-#. # the reduced space available in header or button, you can use shorter strings here.
-#: search-suggestions-button
-msgctxt "search-suggestions-button"
-msgid "{{search-suggestions}}"
-msgstr "{{search-suggestions}}"
-
-#: search-suggestions-header
-msgctxt "search-suggestions-header"
-msgid "{{search-suggestions}}"
-msgstr "{{search-suggestions}}"
 
 #: search-suggestions-description
 msgid ""
@@ -2087,9 +2097,14 @@ msgid "Description"
 msgstr "Tuairisgeul"
 
 #. # Personalization :: Keyboard
-#: installedInputMethods
-msgid "Installed input methods"
-msgstr "Dòighean ion-chuir stàlaichte"
+#: keyboardSettings
+msgid "Keyboard Settings"
+msgstr ""
+
+#: selectedKeyboards
+#, fuzzy
+msgid "Selected Keyboards"
+msgstr "Meur-chlàran a thagh thu"
 
 #: keyboards
 msgid "Keyboards"
@@ -2120,31 +2135,20 @@ msgstr "Pada-iuchraichean"
 msgid "Dial Pad"
 msgstr "Pada nan àireamhan"
 
-#: selectedKeyboards
-msgid "Selected keyboards"
+#: selectKeyboards
+#, fuzzy
+msgid "Select Keyboards"
 msgstr "Meur-chlàran a thagh thu"
 
-#. # LOCALIZATION NOTE (selectedKeyboards-header): if you leave the original
-#. # en-US value "{{selectedKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "selectedKeyboards".
+#. # LOCALIZATION NOTE (selectKeyboards-header): if you leave the original
+#. # en-US value "{{selectKeyboards}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "selectKeyboards".
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
-#: selectedKeyboards-header
-msgid "{{selectedKeyboards}}"
+#: selectKeyboards-header
+#, fuzzy
+msgid "{{selectKeyboards}}"
 msgstr "{{selectedKeyboards}}"
-
-#: addMoreKeyboards
-msgid "Add more keyboards"
-msgstr "Cuir barrachd mheur-chlàran ris"
-
-#. # LOCALIZATION NOTE (addMoreKeyboards-header): if you leave the original
-#. # en-US value "{{addMoreKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "addMoreKeyboards".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: addMoreKeyboards-header
-msgid "{{addMoreKeyboards}}"
-msgstr "{{addMoreKeyboards}}"
 
 #: mustHaveOneKeyboard
 msgid "At least one {{type}} keyboard should be selected"
@@ -2204,6 +2208,8 @@ msgstr ""
 "aplacaid mar mhargaidh Firefox a chleachdadh."
 
 #: fxa-invitation
+#, fuzzy
+msgctxt "fxa-invitation"
 msgid "Create account or sign in"
 msgstr "Cruthaich cunntas no clàraich a-steach"
 
@@ -2286,9 +2292,11 @@ msgstr ""
 "’S urrainn dhut am fòn agad a lorg leis a’ ghleus “Lorg an t-uidheam agam”, "
 "a ghlasadh no a suathadh bàn."
 
-#: findmydevice-login
-msgid "Sign In or Create an Account"
-msgstr "Clàraich a-steach no cruthaich cunntas"
+#: findmydevice-create-account
+#, fuzzy
+msgctxt "findmydevice-create-account"
+msgid "Create account or sign in"
+msgstr "Cruthaich cunntas no clàraich a-steach"
 
 #: findmydevice-enable
 msgid "Enable Find My Device"
@@ -2513,33 +2521,13 @@ msgstr "Dearbh an còd-faire"
 msgid "Immediately"
 msgstr "Sa bhad"
 
-#: after-five-seconds
-msgid "After 5 seconds"
-msgstr "As dèidh 5 diogan"
-
-#: after-fifteen-seconds
-msgid "After 15 seconds"
-msgstr "As dèidh 15 diogan"
-
-#: after-thirty-seconds
-msgid "After 30 seconds"
-msgstr "As dèidh 30 diog"
-
 #: after-one-minute
 msgid "After 1 minute"
 msgstr "An dèidh mionaid"
 
-#: after-two-minutes
-msgid "After 2 minutes"
-msgstr "An dèidh 2 mhionaid"
-
 #: after-five-minutes
 msgid "After 5 minutes"
 msgstr "An dèidh 5 mionaidean"
-
-#: after-ten-minutes
-msgid "After 10 minutes"
-msgstr "An dèidh 10 mionaidean"
 
 #: after-fifteen-minutes
 msgid "After 15 minutes"
@@ -2552,10 +2540,6 @@ msgstr "An dèidh leth-uair a thìde"
 #: after-one-hour
 msgid "After 1 hour"
 msgstr "An dèidh uair a thìde"
-
-#: after-four-hours
-msgid "After 4 hours"
-msgstr "An dèidh 4 uairean a thìde"
 
 #: require-passcode
 msgid "Require passcode"
@@ -2897,9 +2881,10 @@ msgid "How does Do Not Track work?"
 msgstr "Ciamar a tha \"Na tracaich\" ag obair?"
 
 #: doNotTrack-dd1
+#, fuzzy
 msgid ""
 "When you turn on Do Not Track, your device tells every website and app (as "
-"well as advertisers and other content providers) that you don’t want your "
+"well as advertisers and other content providers) that you do not want your "
 "behavior tracked."
 msgstr ""
 "Ma chuireas tu \"Na tracaich\" air, innsidh an t-uidheam agad dhan a h-uile "
@@ -2907,10 +2892,11 @@ msgstr ""
 "thu ag iarraidh gun tracaich iad na nì thu."
 
 #: doNotTrack-dd2
+#, fuzzy
 msgid ""
-"Turning on Do Not Track won’t affect your ability to sign in to websites nor "
-"cause your device to forget your private information, such as the contents "
-"of shopping carts, location information or sign-in information."
+"Turning on Do Not Track will not affect your ability to sign in to websites "
+"nor cause your device to forget your private information, such as the "
+"contents of shopping carts, location information or sign-in information."
 msgstr ""
 "Ma chuireas tu \"Na tracaich\" air, 's urrainn dhut fhathast clàradh a-"
 "steach air làraichean-lìn agus cha dìochuimhnich an t-uidheam am fiosrachadh "
@@ -3269,6 +3255,10 @@ msgstr "{{hud}}"
 msgid "Log changes in ADB"
 msgstr "Logaich atharraichean ann an ADB"
 
+#: hud-system
+msgid "Show system HUD"
+msgstr ""
+
 #: hud-problems
 msgid "Problems"
 msgstr "Duilgheadasan"
@@ -3297,6 +3287,10 @@ msgstr "Reflows"
 msgid "Jank"
 msgstr "Jank"
 
+#: jank-threshold
+msgid "Jank Threshold"
+msgstr "Stairsneach Jank"
+
 #: hud-fps
 msgid "Frames per second"
 msgstr "Frèamaichean gach diog"
@@ -3308,6 +3302,10 @@ msgstr "Ùine luchdachaidh"
 #: hud-memory
 msgid "Memory"
 msgstr "Cuimhne"
+
+#: hud-uss
+msgid "Unique Set Size"
+msgstr ""
 
 #: hud-appmemory
 msgid "App memory"
@@ -3423,14 +3421,6 @@ msgstr "ADB a-mhàin"
 msgid "ADB and DevTools"
 msgstr "ADB is DevTools"
 
-#: devtools-overlay
-msgid "Show devtools overlay"
-msgstr "Seall tar-chòmhdachadh nan devtools"
-
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Stairsneach Jank"
-
 #: wifi-debugging
 msgid "Wi-Fi output in ADB"
 msgstr "Seall às-chur WiFi ann an ADB"
@@ -3450,6 +3440,10 @@ msgstr "Sealladh nan cairtean: Glacaidhean-sgrìn"
 #: geolocation-debugging-enabled
 msgid "Geolocation output in ADB"
 msgstr "Às-chur a’ gheò-lorgaidh ann an ADB"
+
+#: use-reviewer-certs
+msgid "Use Marketplace reviewer certs"
+msgstr ""
 
 #: model-name
 msgid "Model"
@@ -3567,6 +3561,12 @@ msgstr ""
 #: learn-more
 msgid "Learn More"
 msgstr "Barrachd fiosrachaidh"
+
+#: reset-head
+#, fuzzy
+msgctxt "reset-head"
+msgid "Reset"
+msgstr "Ath-shuidhich"
 
 #: reset-phone
 msgid "Reset Phone"
@@ -3949,19 +3949,19 @@ msgstr "Leasaich {{brandShortName}}"
 msgid "Send Mozilla Feedback"
 msgstr "Cuir fiosrachadh gu Mozilla"
 
-#: performanceData
-msgid "Performance data"
-msgstr "Dàta dèanadais"
-
-#: performanceDataInfo
-msgid "Help us improve {{brandShortName}} by sharing data about your phone."
+#: performanceAndUsageData
+msgid "Performance and usage data"
 msgstr ""
-"Cuidich leinn a' leasachadh {{brandShortName}} is thoir dhuinn beagan "
-"fiosrachaidh mun fhòn agad."
 
-#: sharePerformanceData
-msgid "Submit performance data"
-msgstr "Cuir thugainn dàta air dèanadas"
+#: performanceAndUsageDataInfo
+msgid ""
+"Help us improve {{brandShortName}} by sharing data about your phone and the "
+"way you use it."
+msgstr ""
+
+#: sharePerformanceAndUsageData
+msgid "Submit data"
+msgstr ""
 
 #: crashReports
 msgid "Crash reports"
@@ -4274,6 +4274,58 @@ msgstr "Cuir an dàta"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Iarr staid na seanail"
+
+#~ msgctxt "search-suggestions-button"
+#~ msgid "{{search-suggestions}}"
+#~ msgstr "{{search-suggestions}}"
+
+#~ msgctxt "search-suggestions-header"
+#~ msgid "{{search-suggestions}}"
+#~ msgstr "{{search-suggestions}}"
+
+#~ msgid "Installed input methods"
+#~ msgstr "Dòighean ion-chuir stàlaichte"
+
+#~ msgid "Add more keyboards"
+#~ msgstr "Cuir barrachd mheur-chlàran ris"
+
+#~ msgid "{{addMoreKeyboards}}"
+#~ msgstr "{{addMoreKeyboards}}"
+
+#~ msgid "Sign In or Create an Account"
+#~ msgstr "Clàraich a-steach no cruthaich cunntas"
+
+#~ msgid "After 5 seconds"
+#~ msgstr "As dèidh 5 diogan"
+
+#~ msgid "After 15 seconds"
+#~ msgstr "As dèidh 15 diogan"
+
+#~ msgid "After 30 seconds"
+#~ msgstr "As dèidh 30 diog"
+
+#~ msgid "After 2 minutes"
+#~ msgstr "An dèidh 2 mhionaid"
+
+#~ msgid "After 10 minutes"
+#~ msgstr "An dèidh 10 mionaidean"
+
+#~ msgid "After 4 hours"
+#~ msgstr "An dèidh 4 uairean a thìde"
+
+#~ msgid "Show devtools overlay"
+#~ msgstr "Seall tar-chòmhdachadh nan devtools"
+
+#~ msgid "Performance data"
+#~ msgstr "Dàta dèanadais"
+
+#~ msgid "Help us improve {{brandShortName}} by sharing data about your phone."
+#~ msgstr ""
+#~ "Cuidich leinn a' leasachadh {{brandShortName}} is thoir dhuinn beagan "
+#~ "fiosrachaidh mun fhòn agad."
+
+#~ msgid "Submit performance data"
+#~ msgstr "Cuir thugainn dàta air dèanadas"
 
 #~ msgid "Edges gesture"
 #~ msgstr "Gluasad oirean"

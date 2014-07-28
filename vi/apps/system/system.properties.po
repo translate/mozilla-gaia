@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-08 10:59+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-02-19 05:05+0000\n"
 "Last-Translator: hainp <hainp2604@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,6 +42,10 @@ msgstr "Đóng"
 #: skip
 msgid "Skip"
 msgstr "Bỏ qua"
+
+#: clear.ariaLabel
+msgid "Clear"
+msgstr ""
 
 #. # LOCALIZATION NOTE(undo.ariaLabel): The following string is spoken by screen
 #. # readers and not shown on the screen.
@@ -888,8 +892,12 @@ msgstr "Cập nhật hệ thống"
 msgid "System Update Ready"
 msgstr "Sẵn sàng cập nhật hệ thống"
 
-#: systemUpdateLowBattery
-msgid "You need at least 50% battery level to install the update."
+#. # LOCALIZATION NOTE (systemUpdateLowBatteryThreshold): {{ threshold }} will be
+#. # replaced at runtime by the minimum level of the battery needed to update,
+#. # resulting for example in "You need at least 40% battery level to install the
+#. # update."
+#: systemUpdateLowBatteryThreshold
+msgid "You need at least {{ threshold }}% battery level to install the update."
 msgstr ""
 
 #: required
@@ -982,6 +990,10 @@ msgstr "%A, ngày %d tháng %m"
 #. # screen readers and not shown on the screen.
 #: panel-passcode.ariaLabel
 msgid "Passcode panel"
+msgstr ""
+
+#: lockscreen-sim-id
+msgid "SIM {{ n }}"
 msgstr ""
 
 #. #software buttons
@@ -2078,9 +2090,14 @@ msgid "Emergency warning!"
 msgstr ""
 
 #. # ICC / STK (= SIM Toolkit)
-#: icc-message-title
-msgid "Operator message from SIM {{id}}"
-msgstr "Tin nhắn của nhà mạng từ SIM {{id}}"
+#: icc-message-maintitle
+msgid "Operator message"
+msgstr ""
+
+#: icc-message-subtitle
+msgctxt "icc-message-subtitle"
+msgid "SIM {{id}}"
+msgstr ""
 
 #: icc-confirmCall-defaultmessage
 msgid "Call {{number}}?"
@@ -2094,10 +2111,15 @@ msgstr "Đang gửi tin nhắn"
 msgid "Send message?"
 msgstr "Gửi tin nhắn?"
 
-#. # LOCALIZATION NOTE: (icc-inputbox-title) = title of SIM Toolkit input dialog panels
-#: icc-inputbox-title
-msgid "STK Query from SIM {{id}}"
-msgstr "Truy vấn từ SIM {{id}}"
+#. # LOCALIZATION NOTE: (icc-inputbox-[main|sub]title) = title of SIM Toolkit input dialog panels
+#: icc-inputbox-maintitle
+msgid "STK Query"
+msgstr ""
+
+#: icc-inputbox-subtitle
+msgctxt "icc-inputbox-subtitle"
+msgid "SIM {{id}}"
+msgstr ""
 
 #. # CDMA emergency callback mode
 #: emergency-callback-mode
@@ -2212,6 +2234,28 @@ msgstr ""
 #: save-audio
 msgid "Save Audio"
 msgstr ""
+
+#: save-link
+msgid "Save linked file"
+msgstr ""
+
+#: share-image
+msgid "Share Image"
+msgstr ""
+
+#: share-video
+msgid "Share Video"
+msgstr ""
+
+#: share-audio
+msgid "Share Audio"
+msgstr ""
+
+#~ msgid "Operator message from SIM {{id}}"
+#~ msgstr "Tin nhắn của nhà mạng từ SIM {{id}}"
+
+#~ msgid "STK Query from SIM {{id}}"
+#~ msgstr "Truy vấn từ SIM {{id}}"
 
 #~ msgid "Layout selection"
 #~ msgstr "Chọn kiểu bàn phím"

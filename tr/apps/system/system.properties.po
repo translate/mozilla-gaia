@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-08 10:59+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-07-08 13:38+0000\n"
 "Last-Translator: Selim <selim@sum.lu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1404826720.000000\n"
@@ -41,6 +41,10 @@ msgstr "Kapat"
 #: skip
 msgid "Skip"
 msgstr "Atla"
+
+#: clear.ariaLabel
+msgid "Clear"
+msgstr ""
 
 #. # LOCALIZATION NOTE(undo.ariaLabel): The following string is spoken by screen
 #. # readers and not shown on the screen.
@@ -874,8 +878,13 @@ msgstr "Sistem güncellemesi"
 msgid "System Update Ready"
 msgstr "Sistem Güncellemesi Hazır"
 
-#: systemUpdateLowBattery
-msgid "You need at least 50% battery level to install the update."
+#. # LOCALIZATION NOTE (systemUpdateLowBatteryThreshold): {{ threshold }} will be
+#. # replaced at runtime by the minimum level of the battery needed to update,
+#. # resulting for example in "You need at least 40% battery level to install the
+#. # update."
+#: systemUpdateLowBatteryThreshold
+#, fuzzy
+msgid "You need at least {{ threshold }}% battery level to install the update."
 msgstr "Güncellemeyi yüklemek için piliniz en az %50 dolu olmalıdır."
 
 #: required
@@ -971,6 +980,10 @@ msgstr "%e %B %A"
 #: panel-passcode.ariaLabel
 msgid "Passcode panel"
 msgstr "Şifre paneli"
+
+#: lockscreen-sim-id
+msgid "SIM {{ n }}"
+msgstr ""
 
 #. #software buttons
 #: softwareHomeButton.ariaLabel
@@ -2081,9 +2094,14 @@ msgid "Emergency warning!"
 msgstr "Acil durum uyarısı!"
 
 #. # ICC / STK (= SIM Toolkit)
-#: icc-message-title
-msgid "Operator message from SIM {{id}}"
-msgstr "SIM {{id}} operatör mesajı"
+#: icc-message-maintitle
+msgid "Operator message"
+msgstr "Operatör mesajı"
+
+#: icc-message-subtitle
+msgctxt "icc-message-subtitle"
+msgid "SIM {{id}}"
+msgstr ""
 
 #: icc-confirmCall-defaultmessage
 msgid "Call {{number}}?"
@@ -2097,10 +2115,15 @@ msgstr "Mesaj gönderiliyor"
 msgid "Send message?"
 msgstr "Mesaj gönderilsin mi?"
 
-#. # LOCALIZATION NOTE: (icc-inputbox-title) = title of SIM Toolkit input dialog panels
-#: icc-inputbox-title
-msgid "STK Query from SIM {{id}}"
-msgstr "SIM {{id}} STK sorgusu"
+#. # LOCALIZATION NOTE: (icc-inputbox-[main|sub]title) = title of SIM Toolkit input dialog panels
+#: icc-inputbox-maintitle
+msgid "STK Query"
+msgstr "STK Sorgusu"
+
+#: icc-inputbox-subtitle
+msgctxt "icc-inputbox-subtitle"
+msgid "SIM {{id}}"
+msgstr ""
 
 #. # CDMA emergency callback mode
 #: emergency-callback-mode
@@ -2215,6 +2238,31 @@ msgstr "Videoyu kaydet"
 msgid "Save Audio"
 msgstr "Sesi kaydet"
 
+#: save-link
+msgid "Save linked file"
+msgstr ""
+
+#: share-image
+#, fuzzy
+msgid "Share Image"
+msgstr "Resmi kaydet"
+
+#: share-video
+#, fuzzy
+msgid "Share Video"
+msgstr "Videoyu kaydet"
+
+#: share-audio
+#, fuzzy
+msgid "Share Audio"
+msgstr "Sesi kaydet"
+
+#~ msgid "Operator message from SIM {{id}}"
+#~ msgstr "SIM {{id}} operatör mesajı"
+
+#~ msgid "STK Query from SIM {{id}}"
+#~ msgstr "SIM {{id}} STK sorgusu"
+
 #~ msgid "Layout selection"
 #~ msgstr "Yerleşim seçimi"
 
@@ -2252,12 +2300,6 @@ msgstr "Sesi kaydet"
 #~ msgctxt "dontshare-media-capture"
 #~ msgid "Don't Share"
 #~ msgstr "Paylaşma"
-
-#~ msgid "Operator message"
-#~ msgstr "Operatör mesajı"
-
-#~ msgid "STK Query"
-#~ msgstr "STK Sorgusu"
 
 #~ msgid ""
 #~ "Telecom services and internet are disable due to emergency call back "

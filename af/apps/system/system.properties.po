@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-08 10:59+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-07-15 15:00+0000\n"
 "Last-Translator: af-ZA04_Karen <translation@lando.co.za>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1405436419.000000\n"
@@ -41,6 +41,10 @@ msgstr "Maak toe"
 #: skip
 msgid "Skip"
 msgstr "Slaan oor"
+
+#: clear.ariaLabel
+msgid "Clear"
+msgstr ""
 
 #. # LOCALIZATION NOTE(undo.ariaLabel): The following string is spoken by screen
 #. # readers and not shown on the screen.
@@ -881,8 +885,13 @@ msgstr "Stelselbywerking"
 msgid "System Update Ready"
 msgstr "Stelselbywerking gereed"
 
-#: systemUpdateLowBattery
-msgid "You need at least 50% battery level to install the update."
+#. # LOCALIZATION NOTE (systemUpdateLowBatteryThreshold): {{ threshold }} will be
+#. # replaced at runtime by the minimum level of the battery needed to update,
+#. # resulting for example in "You need at least 40% battery level to install the
+#. # update."
+#: systemUpdateLowBatteryThreshold
+#, fuzzy
+msgid "You need at least {{ threshold }}% battery level to install the update."
 msgstr ""
 "Jy het ten minste 50% batteryvlak nodig om die bywerking te installeer."
 
@@ -979,6 +988,10 @@ msgstr "%A %e %B"
 #: panel-passcode.ariaLabel
 msgid "Passcode panel"
 msgstr "Wagkode-paneel"
+
+#: lockscreen-sim-id
+msgid "SIM {{ n }}"
+msgstr ""
 
 #. #software buttons
 #: softwareHomeButton.ariaLabel
@@ -2101,9 +2114,14 @@ msgid "Emergency warning!"
 msgstr "Noodwaarskuwing!"
 
 #. # ICC / STK (= SIM Toolkit)
-#: icc-message-title
-msgid "Operator message from SIM {{id}}"
-msgstr "Operateurboodskap van SIM {{id}}"
+#: icc-message-maintitle
+msgid "Operator message"
+msgstr ""
+
+#: icc-message-subtitle
+msgctxt "icc-message-subtitle"
+msgid "SIM {{id}}"
+msgstr ""
 
 #: icc-confirmCall-defaultmessage
 msgid "Call {{number}}?"
@@ -2117,10 +2135,15 @@ msgstr "Stuur boodskap"
 msgid "Send message?"
 msgstr "Stuur boodskap?"
 
-#. # LOCALIZATION NOTE: (icc-inputbox-title) = title of SIM Toolkit input dialog panels
-#: icc-inputbox-title
-msgid "STK Query from SIM {{id}}"
-msgstr "STK-navraag van SIM {{id}}"
+#. # LOCALIZATION NOTE: (icc-inputbox-[main|sub]title) = title of SIM Toolkit input dialog panels
+#: icc-inputbox-maintitle
+msgid "STK Query"
+msgstr ""
+
+#: icc-inputbox-subtitle
+msgctxt "icc-inputbox-subtitle"
+msgid "SIM {{id}}"
+msgstr ""
 
 #. # CDMA emergency callback mode
 #: emergency-callback-mode
@@ -2234,6 +2257,31 @@ msgstr "Stoor video"
 #: save-audio
 msgid "Save Audio"
 msgstr "Stoor oudio"
+
+#: save-link
+msgid "Save linked file"
+msgstr ""
+
+#: share-image
+#, fuzzy
+msgid "Share Image"
+msgstr "Stoor beeld"
+
+#: share-video
+#, fuzzy
+msgid "Share Video"
+msgstr "Stoor video"
+
+#: share-audio
+#, fuzzy
+msgid "Share Audio"
+msgstr "Stoor oudio"
+
+#~ msgid "Operator message from SIM {{id}}"
+#~ msgstr "Operateurboodskap van SIM {{id}}"
+
+#~ msgid "STK Query from SIM {{id}}"
+#~ msgstr "STK-navraag van SIM {{id}}"
 
 #~ msgid "Disable APZ for Apps"
 #~ msgstr "Deaktiveer APZ vir programme"

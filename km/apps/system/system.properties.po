@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-08 10:59+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-07-09 01:42+0000\n"
 "Last-Translator: Sutha <sutha@open.org.kh>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1404870168.000000\n"
@@ -41,6 +41,10 @@ msgstr "បិទ"
 #: skip
 msgid "Skip"
 msgstr "រំលង"
+
+#: clear.ariaLabel
+msgid "Clear"
+msgstr ""
 
 #. # LOCALIZATION NOTE(undo.ariaLabel): The following string is spoken by screen
 #. # readers and not shown on the screen.
@@ -870,8 +874,13 @@ msgstr "បច្ចុប្បន្នភាព​ប្រព័ន្ធ"
 msgid "System Update Ready"
 msgstr "ធ្វើ​បច្ចុប្បន្នភាព​ប្រព័ន្ធ​រួចរាល់"
 
-#: systemUpdateLowBattery
-msgid "You need at least 50% battery level to install the update."
+#. # LOCALIZATION NOTE (systemUpdateLowBatteryThreshold): {{ threshold }} will be
+#. # replaced at runtime by the minimum level of the battery needed to update,
+#. # resulting for example in "You need at least 40% battery level to install the
+#. # update."
+#: systemUpdateLowBatteryThreshold
+#, fuzzy
+msgid "You need at least {{ threshold }}% battery level to install the update."
 msgstr "អ្នក​ត្រូវ​មាន​កម្រិត​ថ្ម​យ៉ាងហោចណាស់ 50% ដើម្បី​ដំឡើង​បច្ចុប្បន្នភាព។"
 
 #: required
@@ -961,6 +970,10 @@ msgstr "%A, %B %e"
 #: panel-passcode.ariaLabel
 msgid "Passcode panel"
 msgstr "ផ្ទាំង​​ពាក្យ​សម្ងាត់"
+
+#: lockscreen-sim-id
+msgid "SIM {{ n }}"
+msgstr ""
 
 #. #software buttons
 #: softwareHomeButton.ariaLabel
@@ -2027,9 +2040,14 @@ msgid "Emergency warning!"
 msgstr "ការព្រមាន​​ពី​គ្រោះ​អាសន្ន!"
 
 #. # ICC / STK (= SIM Toolkit)
-#: icc-message-title
-msgid "Operator message from SIM {{id}}"
-msgstr "សារ​ប្រតិបត្តិ​ករ​ពី SIM {{id}}"
+#: icc-message-maintitle
+msgid "Operator message"
+msgstr "សារ​សហការី"
+
+#: icc-message-subtitle
+msgctxt "icc-message-subtitle"
+msgid "SIM {{id}}"
+msgstr ""
 
 #: icc-confirmCall-defaultmessage
 msgid "Call {{number}}?"
@@ -2043,10 +2061,15 @@ msgstr "ផ្ញើ​សារ"
 msgid "Send message?"
 msgstr "ផ្ញើ​សារ?"
 
-#. # LOCALIZATION NOTE: (icc-inputbox-title) = title of SIM Toolkit input dialog panels
-#: icc-inputbox-title
-msgid "STK Query from SIM {{id}}"
-msgstr "សំណួរ STK ពី​ SIM {{id}}"
+#. # LOCALIZATION NOTE: (icc-inputbox-[main|sub]title) = title of SIM Toolkit input dialog panels
+#: icc-inputbox-maintitle
+msgid "STK Query"
+msgstr "STK Query"
+
+#: icc-inputbox-subtitle
+msgctxt "icc-inputbox-subtitle"
+msgid "SIM {{id}}"
+msgstr ""
 
 #. # CDMA emergency callback mode
 #: emergency-callback-mode
@@ -2161,6 +2184,31 @@ msgstr "រក្សាទុក​វីដេអូ"
 msgid "Save Audio"
 msgstr "រក្សាទុក​អូឌីយ៉ូ"
 
+#: save-link
+msgid "Save linked file"
+msgstr ""
+
+#: share-image
+#, fuzzy
+msgid "Share Image"
+msgstr "រក្សាទុក​រូបភាព"
+
+#: share-video
+#, fuzzy
+msgid "Share Video"
+msgstr "រក្សាទុក​វីដេអូ"
+
+#: share-audio
+#, fuzzy
+msgid "Share Audio"
+msgstr "រក្សាទុក​អូឌីយ៉ូ"
+
+#~ msgid "Operator message from SIM {{id}}"
+#~ msgstr "សារ​ប្រតិបត្តិ​ករ​ពី SIM {{id}}"
+
+#~ msgid "STK Query from SIM {{id}}"
+#~ msgstr "សំណួរ STK ពី​ SIM {{id}}"
+
 #~ msgid "Layout selection"
 #~ msgstr "ការ​ជ្រើស​ប្លង់"
 
@@ -2199,12 +2247,6 @@ msgstr "រក្សាទុក​អូឌីយ៉ូ"
 
 #~ msgid "%I:%M"
 #~ msgstr "%I:%M"
-
-#~ msgid "Operator message"
-#~ msgstr "សារ​សហការី"
-
-#~ msgid "STK Query"
-#~ msgstr "STK Query"
 
 #~ msgid "{{name}} - {{percentage}} %"
 #~ msgstr "{{name}} - {{percentage}} %"

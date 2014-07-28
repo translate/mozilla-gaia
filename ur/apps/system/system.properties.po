@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-08 10:59+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-06-15 15:15+0000\n"
 "Last-Translator: Tanzeel <tanzeelkhan94@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,6 +40,10 @@ msgstr "بند کریں"
 #: skip
 msgid "Skip"
 msgstr "نظر انداز"
+
+#: clear.ariaLabel
+msgid "Clear"
+msgstr ""
 
 #. # LOCALIZATION NOTE(undo.ariaLabel): The following string is spoken by screen
 #. # readers and not shown on the screen.
@@ -882,8 +886,13 @@ msgstr "نظامتازہ کاری کریں"
 msgid "System Update Ready"
 msgstr "سسٹم اپ ڈیٹ تیار ہیں"
 
-#: systemUpdateLowBattery
-msgid "You need at least 50% battery level to install the update."
+#. # LOCALIZATION NOTE (systemUpdateLowBatteryThreshold): {{ threshold }} will be
+#. # replaced at runtime by the minimum level of the battery needed to update,
+#. # resulting for example in "You need at least 40% battery level to install the
+#. # update."
+#: systemUpdateLowBatteryThreshold
+#, fuzzy
+msgid "You need at least {{ threshold }}% battery level to install the update."
 msgstr "اپ ڈیٹ کو انسٹال کرنے میں کم از کم 50٪ بیٹری کی سطح حونی ضرورت ہے."
 
 #: required
@@ -978,6 +987,10 @@ msgstr "%A, %B %e"
 #: panel-passcode.ariaLabel
 msgid "Passcode panel"
 msgstr "پاس کوڈ پینل"
+
+#: lockscreen-sim-id
+msgid "SIM {{ n }}"
+msgstr ""
 
 #. #software buttons
 #: softwareHomeButton.ariaLabel
@@ -2085,9 +2098,14 @@ msgid "Emergency warning!"
 msgstr ""
 
 #. # ICC / STK (= SIM Toolkit)
-#: icc-message-title
-msgid "Operator message from SIM {{id}}"
-msgstr "SIM {{id}} سے آپریٹر پیغام"
+#: icc-message-maintitle
+msgid "Operator message"
+msgstr ""
+
+#: icc-message-subtitle
+msgctxt "icc-message-subtitle"
+msgid "SIM {{id}}"
+msgstr ""
 
 #: icc-confirmCall-defaultmessage
 msgid "Call {{number}}?"
@@ -2101,10 +2119,15 @@ msgstr "پیغام بھیجا جارہا ہے"
 msgid "Send message?"
 msgstr "پیغام بھیجیں؟"
 
-#. # LOCALIZATION NOTE: (icc-inputbox-title) = title of SIM Toolkit input dialog panels
-#: icc-inputbox-title
-msgid "STK Query from SIM {{id}}"
-msgstr "STK استفسار SIM {{id}} سے"
+#. # LOCALIZATION NOTE: (icc-inputbox-[main|sub]title) = title of SIM Toolkit input dialog panels
+#: icc-inputbox-maintitle
+msgid "STK Query"
+msgstr ""
+
+#: icc-inputbox-subtitle
+msgctxt "icc-inputbox-subtitle"
+msgid "SIM {{id}}"
+msgstr ""
 
 #. # CDMA emergency callback mode
 #: emergency-callback-mode
@@ -2218,6 +2241,30 @@ msgstr "ویڈیو محفوظ کریں"
 #: save-audio
 msgid "Save Audio"
 msgstr ""
+
+#: save-link
+msgid "Save linked file"
+msgstr ""
+
+#: share-image
+#, fuzzy
+msgid "Share Image"
+msgstr "نقش محفوظ کریں"
+
+#: share-video
+#, fuzzy
+msgid "Share Video"
+msgstr "ویڈیو محفوظ کریں"
+
+#: share-audio
+msgid "Share Audio"
+msgstr ""
+
+#~ msgid "Operator message from SIM {{id}}"
+#~ msgstr "SIM {{id}} سے آپریٹر پیغام"
+
+#~ msgid "STK Query from SIM {{id}}"
+#~ msgstr "STK استفسار SIM {{id}} سے"
 
 #~ msgctxt "bluetooth-sending-progress"
 #~ msgid "Sending Bluetooth transfer.."

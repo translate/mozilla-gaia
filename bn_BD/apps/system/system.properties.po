@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-08 10:59+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-07-07 15:50+0000\n"
 "Last-Translator: Belayet <bellayet@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,6 +40,10 @@ msgstr "বন্ধ"
 #: skip
 msgid "Skip"
 msgstr "উপেক্ষা করুন"
+
+#: clear.ariaLabel
+msgid "Clear"
+msgstr ""
 
 #. # LOCALIZATION NOTE(undo.ariaLabel): The following string is spoken by screen
 #. # readers and not shown on the screen.
@@ -874,8 +878,13 @@ msgstr "সিস্টেম হালনাগাদ"
 msgid "System Update Ready"
 msgstr "সিস্টেমের হালনাগাদ প্রস্তুত"
 
-#: systemUpdateLowBattery
-msgid "You need at least 50% battery level to install the update."
+#. # LOCALIZATION NOTE (systemUpdateLowBatteryThreshold): {{ threshold }} will be
+#. # replaced at runtime by the minimum level of the battery needed to update,
+#. # resulting for example in "You need at least 40% battery level to install the
+#. # update."
+#: systemUpdateLowBatteryThreshold
+#, fuzzy
+msgid "You need at least {{ threshold }}% battery level to install the update."
 msgstr "You need at least ৫০% battery level to install the update."
 
 #: required
@@ -970,6 +979,10 @@ msgstr "%A, %B %e"
 #: panel-passcode.ariaLabel
 msgid "Passcode panel"
 msgstr "পাসকোড প্যানেল"
+
+#: lockscreen-sim-id
+msgid "SIM {{ n }}"
+msgstr ""
 
 #. #software buttons
 #: softwareHomeButton.ariaLabel
@@ -2077,9 +2090,14 @@ msgid "Emergency warning!"
 msgstr "জরুরী সতর্কতা!"
 
 #. # ICC / STK (= SIM Toolkit)
-#: icc-message-title
-msgid "Operator message from SIM {{id}}"
-msgstr "SIM {{id}} থেকে অপারেটর বার্তা"
+#: icc-message-maintitle
+msgid "Operator message"
+msgstr "অপারেটরের বার্তা"
+
+#: icc-message-subtitle
+msgctxt "icc-message-subtitle"
+msgid "SIM {{id}}"
+msgstr ""
 
 #: icc-confirmCall-defaultmessage
 msgid "Call {{number}}?"
@@ -2093,10 +2111,15 @@ msgstr "বার্তা পাঠানো হচ্ছে"
 msgid "Send message?"
 msgstr "বার্তা পাঠাবেন?"
 
-#. # LOCALIZATION NOTE: (icc-inputbox-title) = title of SIM Toolkit input dialog panels
-#: icc-inputbox-title
-msgid "STK Query from SIM {{id}}"
-msgstr "SIM থেকে STK জিজ্ঞাসা {{id}}"
+#. # LOCALIZATION NOTE: (icc-inputbox-[main|sub]title) = title of SIM Toolkit input dialog panels
+#: icc-inputbox-maintitle
+msgid "STK Query"
+msgstr "STK অনুসন্ধান"
+
+#: icc-inputbox-subtitle
+msgctxt "icc-inputbox-subtitle"
+msgid "SIM {{id}}"
+msgstr ""
 
 #. # CDMA emergency callback mode
 #: emergency-callback-mode
@@ -2211,6 +2234,30 @@ msgstr "ভিডিও সংরক্ষণ"
 msgid "Save Audio"
 msgstr ""
 
+#: save-link
+msgid "Save linked file"
+msgstr ""
+
+#: share-image
+#, fuzzy
+msgid "Share Image"
+msgstr "ছবি সংরক্ষণ"
+
+#: share-video
+#, fuzzy
+msgid "Share Video"
+msgstr "ভিডিও সংরক্ষণ"
+
+#: share-audio
+msgid "Share Audio"
+msgstr ""
+
+#~ msgid "Operator message from SIM {{id}}"
+#~ msgstr "SIM {{id}} থেকে অপারেটর বার্তা"
+
+#~ msgid "STK Query from SIM {{id}}"
+#~ msgstr "SIM থেকে STK জিজ্ঞাসা {{id}}"
+
 #~ msgid "Layout selection"
 #~ msgstr "বহির্বিন্যাস নির্বাচন"
 
@@ -2252,12 +2299,6 @@ msgstr ""
 #~ msgctxt "dontshare-media-capture"
 #~ msgid "Don't Share"
 #~ msgstr "শেয়ার করা হবে না"
-
-#~ msgid "Operator message"
-#~ msgstr "অপারেটরের বার্তা"
-
-#~ msgid "STK Query"
-#~ msgstr "STK অনুসন্ধান"
 
 #~ msgid "{{name}} - {{percentage}} %"
 #~ msgstr "{{name}} - {{percentage}} %"

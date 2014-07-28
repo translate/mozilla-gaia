@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-05 20:44+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-06-13 08:26+0000\n"
 "Last-Translator: Piseth <piseth.kheng@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1402647965.000000\n"
@@ -388,19 +388,22 @@ msgstr "ស្វែងរក"
 msgid "Unknown"
 msgstr "មិន​ស្គាល់"
 
-#. # LOCALIZATION NOTE(thread-separator): used to separate type/carrier from
+#. # LOCALIZATION NOTE(phone-type-separator): used to separate phone type from
 #. # the number itself. It should be consistent with the characters used in
-#. # "thread- header", \u20 is a blank space (\u20|\u20 is equivalent to " | ").
-#: thread-separator
-msgid " | "
-msgstr " | "
-
-#. # LOCALIZATION NOTE(carrier-separator): used to separate carrier's name from
-#. # the number itself. \u20 is a blank space. Resulting example for en-US:
-#. # "Verizon, +123456789".
-#: carrier-separator
+#. # "thread- header", \u20 is a blank space (,\u20 is equivalent to ", "). It can
+#. # be used together with "phone-carrier-separator" if carrier is available.
+#. # Resulting example for en-US: "Mobile, +123456789" or if carrier is available
+#. # "Mobile, +123456789 Carrier".
+#: phone-type-separator
 msgid ", "
 msgstr ", "
+
+#. # LOCALIZATION NOTE(phone-carrier-separator): used to separate carrier's name
+#. # from the number itself. \u20 is a blank space.  Resulting example for en-US:
+#. # "+123456789 Verizon".
+#: phone-carrier-separator
+msgid " "
+msgstr ""
 
 #. # Modal Dialogs
 #: replace-draft
@@ -557,47 +560,52 @@ msgctxt "fdnBlocked2BtnOk"
 msgid "OK"
 msgstr "យល់​ព្រម"
 
-#: nonActiveSimTitle
+#: switchSimToRetrieveTitle
 msgid "Switch data connection"
 msgstr "ប្ដូរ​ការ​ភ្ជាប់ទិន្នន័យ"
 
-#: nonActiveSimBody
+#: switchSimToRetrieveBody
+#, fuzzy
 msgid ""
-"Switch the data connection to {{ nonactive }} to retrieve the MMS. The "
-"current data transfer on {{ active }} will be suspended. Continue anyway?"
+"Switch the data connection to SIM {{ nonActiveSimId }} to retrieve the MMS. "
+"The current data transfer on SIM {{ activeSimId }} will be suspended. "
+"Continue anyway?"
 msgstr ""
 "ប្ដូរ​ការ​ភ្ជាប់​ទិន្នន័យទៅ {{ nonactive }} ដើម្បីទៅ​យក​សារ MMS ។ ការ​ផ្ទេរ​​ទិន្នន័យ​បច្ចុប្បន្ន​នៅ​លើ "
 "{{ active }} នឹង​ត្រូវ​បាន​ផ្អាក។ អញ្ចឹង​បន្ត?"
 
-#: nonActiveSimBtnOk
+#: switchSimToRetrieveBtnOk
 msgid "Later"
 msgstr "ពេលក្រោយ"
 
-#: nonActiveSimConfirm
-msgctxt "nonActiveSimConfirm"
+#: switchSimToRetrieveConfirm
+#, fuzzy
+msgctxt "switchSimToRetrieveConfirm"
 msgid "OK"
 msgstr "យល់​ព្រម"
 
 #. # no need to retranslate title and buttons if not necessary
-#: nonActiveSimToSendTitle
-msgid "{{nonActiveSimTitle}}"
-msgstr "{{nonActiveSimTitle}}"
+#: switchSimToSendTitle
+msgid "{{switchSimToRetrieveTitle}}"
+msgstr ""
 
-#: nonActiveSimToSendBody
+#: switchSimToSendBody
+#, fuzzy
 msgid ""
-"Switch the data connection to {{ nonactive }} to send the MMS. The current "
-"data transfer on {{ active }} will be suspended. Continue anyway?"
+"Switch the data connection to SIM {{ nonActiveSimId }} to send the MMS. The "
+"current data transfer on SIM {{ activeSimId }} will be suspended. Continue "
+"anyway?"
 msgstr ""
 "ប្ដូរ​ការ​ភ្ជាប់​ទិន្នន័យ​ទៅ {{ nonactive }} ដើម្បី​ផ្ញើ​សារ MMS ។ ការ​ផ្ទេរ​​ទិន្នន័យ​បច្ចុប្បន្ន​នៅ​លើ "
 "{{ active }} នឹង​ត្រូវ​បាន​ផ្អាក។ អញ្ចឹង​បន្ត?"
 
-#: nonActiveSimToSendBtnOk
-msgid "{{nonActiveSimBtnOk}}"
-msgstr "{{nonActiveSimBtnOk}}"
+#: switchSimToSendBtnOk
+msgid "{{switchSimToRetrieveBtnOk}}"
+msgstr ""
 
-#: nonActiveSimToSendConfirm
-msgid "{{nonActiveSimConfirm}}"
-msgstr "{{nonActiveSimConfirm}}"
+#: switchSimToSendConfirm
+msgid "{{switchSimToRetrieveConfirm}}"
+msgstr ""
 
 #: sendNoSignalErrorTitle
 msgid "No network coverage"
@@ -635,6 +643,22 @@ msgstr "សូម​ប្រាកដ​ថា លេខ​ទូរស័ព�
 
 #: sendInvalidAddressErrorBtnOk
 msgctxt "sendInvalidAddressErrorBtnOk"
+msgid "OK"
+msgstr "យល់​ព្រម"
+
+#: simNotMatchedErrorTitle
+msgid "Unable to download"
+msgstr ""
+
+#: simNotMatchedErrorBody
+msgid ""
+"Please make sure the SIM card inserted is the one used to receive this "
+"message."
+msgstr ""
+
+#: simNotMatchedErrorBtnOk
+#, fuzzy
+msgctxt "simNotMatchedErrorBtnOk"
 msgid "OK"
 msgstr "យល់​ព្រម"
 
@@ -828,6 +852,13 @@ msgstr "កំពុង​ទាញ​យក…"
 msgid "untitled"
 msgstr "គ្មាន​ចំណង​ជើង"
 
+#. # LOCALIZATION NOTE (mms-label): This label is used to identify MMS in message
+#. # composer (above the send button) and in the thread list for the thread with
+#. # MMS as the last message.
+#: mms-label
+msgid "MMS"
+msgstr ""
+
 #. # LOCALIZATION NOTE (files-too-large): the English translation does not need the
 #. # actual number of files. If your translation needs it, you can still add it
 #. # using the parameter {{ n }}.
@@ -880,13 +911,25 @@ msgid "Message saved as draft"
 msgstr "សារ​បាន​រក្សាទុក​ជា​សេចក្ដី​ព្រាង"
 
 #. # some DSDS related localizations
-#: sim-name
-msgid "SIM{{id}}"
+#: sim-id-label
+#, fuzzy
+msgid "SIM {{id}}"
 msgstr "SIM{{id}}"
 
 #: dsds-notification-title-with-sim
 msgid "({{sim}}) {{sender}}"
 msgstr "({{sim}}) {{sender}}"
+
+#. # LOCALIZATION NOTE (send-button-sim-indication): don't localize the
+#. # sim-indication itself as we use it to show the SIM number only. Yet obviously,
+#. # the "ariaLabel" needs to be localized.
+#: send-button-sim-indication
+msgid "{{n}}"
+msgstr ""
+
+#: send-button-sim-indication.ariaLabel
+msgid "using SIM {{n}}"
+msgstr ""
 
 #. # Date formats specific for SMS app
 #. # LOCALIZATION NOTE (expiry-date-format): this is a date format.
@@ -897,6 +940,22 @@ msgstr "({{sim}}) {{sender}}"
 #: expiry-date-format
 msgid "%A, %b %e"
 msgstr "%A, %b %e"
+
+#~ msgid " | "
+#~ msgstr " | "
+
+#~ msgctxt "nonActiveSimConfirm"
+#~ msgid "OK"
+#~ msgstr "យល់​ព្រម"
+
+#~ msgid "{{nonActiveSimTitle}}"
+#~ msgstr "{{nonActiveSimTitle}}"
+
+#~ msgid "{{nonActiveSimBtnOk}}"
+#~ msgstr "{{nonActiveSimBtnOk}}"
+
+#~ msgid "{{nonActiveSimConfirm}}"
+#~ msgstr "{{nonActiveSimConfirm}}"
 
 #~ msgid "Carrier unknown"
 #~ msgstr "មិន​ស្គាល់​​ក្រុមហ៊ុន​គមនាគមន៍"

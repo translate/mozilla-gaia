@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-08 10:59+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-07-12 02:48+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -44,6 +44,10 @@ msgstr "Dùin"
 #: skip
 msgid "Skip"
 msgstr "Leum thairis air"
+
+#: clear.ariaLabel
+msgid "Clear"
+msgstr ""
 
 #. # LOCALIZATION NOTE(undo.ariaLabel): The following string is spoken by screen
 #. # readers and not shown on the screen.
@@ -892,8 +896,13 @@ msgstr "Ùrachadh an t-siostaim"
 msgid "System Update Ready"
 msgstr "Tha ùrachadh an t-siostaim deiseil"
 
-#: systemUpdateLowBattery
-msgid "You need at least 50% battery level to install the update."
+#. # LOCALIZATION NOTE (systemUpdateLowBatteryThreshold): {{ threshold }} will be
+#. # replaced at runtime by the minimum level of the battery needed to update,
+#. # resulting for example in "You need at least 40% battery level to install the
+#. # update."
+#: systemUpdateLowBatteryThreshold
+#, fuzzy
+msgid "You need at least {{ threshold }}% battery level to install the update."
 msgstr ""
 "Feumaidh am bataraidh a bhith co-dhiù leth-làn mus urrainn dhut an t-"
 "ùrachadh a stàladh."
@@ -991,6 +1000,10 @@ msgstr "%A, %B %e"
 #: panel-passcode.ariaLabel
 msgid "Passcode panel"
 msgstr "Panail a’ chòd-fhaire"
+
+#: lockscreen-sim-id
+msgid "SIM {{ n }}"
+msgstr ""
 
 #. #software buttons
 #: softwareHomeButton.ariaLabel
@@ -2128,9 +2141,14 @@ msgid "Emergency warning!"
 msgstr "Rabhadh èiginn!"
 
 #. # ICC / STK (= SIM Toolkit)
-#: icc-message-title
-msgid "Operator message from SIM {{id}}"
-msgstr "Teachdaireachd a' ghnìomharaiche on t-SIM {{id}}"
+#: icc-message-maintitle
+msgid "Operator message"
+msgstr "Teachdaireachd a' ghnìomharaiche"
+
+#: icc-message-subtitle
+msgctxt "icc-message-subtitle"
+msgid "SIM {{id}}"
+msgstr ""
 
 #: icc-confirmCall-defaultmessage
 msgid "Call {{number}}?"
@@ -2144,10 +2162,15 @@ msgstr "A' cur na teachdaireachd"
 msgid "Send message?"
 msgstr "A bheil thu airson an teachdaireachd a chur?"
 
-#. # LOCALIZATION NOTE: (icc-inputbox-title) = title of SIM Toolkit input dialog panels
-#: icc-inputbox-title
-msgid "STK Query from SIM {{id}}"
-msgstr "Ceist STK on t-SIM {{id}}"
+#. # LOCALIZATION NOTE: (icc-inputbox-[main|sub]title) = title of SIM Toolkit input dialog panels
+#: icc-inputbox-maintitle
+msgid "STK Query"
+msgstr "Ceist STK"
+
+#: icc-inputbox-subtitle
+msgctxt "icc-inputbox-subtitle"
+msgid "SIM {{id}}"
+msgstr ""
 
 #. # CDMA emergency callback mode
 #: emergency-callback-mode
@@ -2265,6 +2288,31 @@ msgstr "Sàbhail a’ video"
 msgid "Save Audio"
 msgstr "Sàbhail an fhuaim"
 
+#: save-link
+msgid "Save linked file"
+msgstr ""
+
+#: share-image
+#, fuzzy
+msgid "Share Image"
+msgstr "Sàbhail an dealbh"
+
+#: share-video
+#, fuzzy
+msgid "Share Video"
+msgstr "Sàbhail a’ video"
+
+#: share-audio
+#, fuzzy
+msgid "Share Audio"
+msgstr "Sàbhail an fhuaim"
+
+#~ msgid "Operator message from SIM {{id}}"
+#~ msgstr "Teachdaireachd a' ghnìomharaiche on t-SIM {{id}}"
+
+#~ msgid "STK Query from SIM {{id}}"
+#~ msgstr "Ceist STK on t-SIM {{id}}"
+
 #~ msgid "Layout selection"
 #~ msgstr "Taghadh na co-dhealbhachd"
 
@@ -2308,12 +2356,6 @@ msgstr "Sàbhail an fhuaim"
 
 #~ msgid "%I:%M"
 #~ msgstr "%I:%M"
-
-#~ msgid "Operator message"
-#~ msgstr "Teachdaireachd a' ghnìomharaiche"
-
-#~ msgid "STK Query"
-#~ msgstr "Ceist STK"
 
 #~ msgid "{{name}} - {{percentage}} %"
 #~ msgstr "{{name}} - {{percentage}} %"

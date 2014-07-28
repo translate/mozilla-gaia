@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-08 10:59+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-07-26 18:50+0000\n"
 "Last-Translator: Arun <arunprakash.pts@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1406400648.000000\n"
@@ -41,6 +41,10 @@ msgstr "மூடு"
 #: skip
 msgid "Skip"
 msgstr "தாவு"
+
+#: clear.ariaLabel
+msgid "Clear"
+msgstr ""
 
 #. # LOCALIZATION NOTE(undo.ariaLabel): The following string is spoken by screen
 #. # readers and not shown on the screen.
@@ -874,8 +878,13 @@ msgstr "கணினி மேம்பாடு"
 msgid "System Update Ready"
 msgstr "கணினி மேம்பாடு தயாராகவுள்ளது"
 
-#: systemUpdateLowBattery
-msgid "You need at least 50% battery level to install the update."
+#. # LOCALIZATION NOTE (systemUpdateLowBatteryThreshold): {{ threshold }} will be
+#. # replaced at runtime by the minimum level of the battery needed to update,
+#. # resulting for example in "You need at least 40% battery level to install the
+#. # update."
+#: systemUpdateLowBatteryThreshold
+#, fuzzy
+msgid "You need at least {{ threshold }}% battery level to install the update."
 msgstr "மேம்பாட்டை நிறுவ குறைந்தபட்சம் 50% மின்கல ஆற்றல் தேவை."
 
 #: required
@@ -969,6 +978,10 @@ msgstr "%A, %B %e"
 #: panel-passcode.ariaLabel
 msgid "Passcode panel"
 msgstr "கடவுக்குறியீடு பலகம்"
+
+#: lockscreen-sim-id
+msgid "SIM {{ n }}"
+msgstr ""
 
 #. #software buttons
 #: softwareHomeButton.ariaLabel
@@ -2070,9 +2083,14 @@ msgid "Emergency warning!"
 msgstr "அவசரநிலை எச்சரிக்கை!"
 
 #. # ICC / STK (= SIM Toolkit)
-#: icc-message-title
-msgid "Operator message from SIM {{id}}"
-msgstr "சிம் {{id}} இலிருந்து வந்த சேவையாளரின் செய்தி"
+#: icc-message-maintitle
+msgid "Operator message"
+msgstr "இயக்குனர் செய்தி"
+
+#: icc-message-subtitle
+msgctxt "icc-message-subtitle"
+msgid "SIM {{id}}"
+msgstr ""
 
 #: icc-confirmCall-defaultmessage
 msgid "Call {{number}}?"
@@ -2086,10 +2104,15 @@ msgstr "செய்தி அனுப்பப்படுகிறது"
 msgid "Send message?"
 msgstr "செய்தியை அனுப்பவா?"
 
-#. # LOCALIZATION NOTE: (icc-inputbox-title) = title of SIM Toolkit input dialog panels
-#: icc-inputbox-title
-msgid "STK Query from SIM {{id}}"
-msgstr "சிம் {{id}} இலிருந்து வரும் STK கேள்வி"
+#. # LOCALIZATION NOTE: (icc-inputbox-[main|sub]title) = title of SIM Toolkit input dialog panels
+#: icc-inputbox-maintitle
+msgid "STK Query"
+msgstr "எஸ்டிகெ கேள்வி"
+
+#: icc-inputbox-subtitle
+msgctxt "icc-inputbox-subtitle"
+msgid "SIM {{id}}"
+msgstr ""
 
 #. # CDMA emergency callback mode
 #: emergency-callback-mode
@@ -2204,6 +2227,31 @@ msgstr "நிகழ்படத்தை சேமி"
 msgid "Save Audio"
 msgstr "ஒலியைச் சேமி"
 
+#: save-link
+msgid "Save linked file"
+msgstr ""
+
+#: share-image
+#, fuzzy
+msgid "Share Image"
+msgstr "படத்தை சேமி"
+
+#: share-video
+#, fuzzy
+msgid "Share Video"
+msgstr "நிகழ்படத்தை சேமி"
+
+#: share-audio
+#, fuzzy
+msgid "Share Audio"
+msgstr "ஒலியைச் சேமி"
+
+#~ msgid "Operator message from SIM {{id}}"
+#~ msgstr "சிம் {{id}} இலிருந்து வந்த சேவையாளரின் செய்தி"
+
+#~ msgid "STK Query from SIM {{id}}"
+#~ msgstr "சிம் {{id}} இலிருந்து வரும் STK கேள்வி"
+
 #~ msgid "Layout selection"
 #~ msgstr "அமைவுப்பட தேர்வு"
 
@@ -2229,12 +2277,6 @@ msgstr "ஒலியைச் சேமி"
 
 #~ msgid "%I:%M"
 #~ msgstr "%I:%M"
-
-#~ msgid "Operator message"
-#~ msgstr "இயக்குனர் செய்தி"
-
-#~ msgid "STK Query"
-#~ msgstr "எஸ்டிகெ கேள்வி"
 
 #~ msgctxt "unknown-size"
 #~ msgid "{{unknown}}"

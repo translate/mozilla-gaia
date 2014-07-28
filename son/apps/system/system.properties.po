@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-08 10:59+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-07-14 10:09+0000\n"
 "Last-Translator: Mohomodou  <mh@bollag-areal.ch>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1405332570.000000\n"
@@ -41,6 +41,10 @@ msgstr "Daabu"
 #: skip
 msgid "Skip"
 msgstr "Sar"
+
+#: clear.ariaLabel
+msgid "Clear"
+msgstr ""
 
 #. # LOCALIZATION NOTE(undo.ariaLabel): The following string is spoken by screen
 #. # readers and not shown on the screen.
@@ -874,8 +878,13 @@ msgstr "Dabariɲaa taagandiri"
 msgid "System Update Ready"
 msgstr "Dabariɲaa taagandiri soolu"
 
-#: systemUpdateLowBattery
-msgid "You need at least 50% battery level to install the update."
+#. # LOCALIZATION NOTE (systemUpdateLowBatteryThreshold): {{ threshold }} will be
+#. # replaced at runtime by the minimum level of the battery needed to update,
+#. # resulting for example in "You need at least 40% battery level to install the
+#. # update."
+#: systemUpdateLowBatteryThreshold
+#, fuzzy
+msgid "You need at least {{ threshold }}% battery level to install the update."
 msgstr "War baatiri ga hima ka bara nda 50% sahã ka taagandiroo sinji."
 
 #: required
@@ -970,6 +979,10 @@ msgstr "%A, %B %e"
 #: panel-passcode.ariaLabel
 msgid "Passcode panel"
 msgstr "Bisayan ašariya fasaldoo"
+
+#: lockscreen-sim-id
+msgid "SIM {{ n }}"
+msgstr ""
 
 #. #software buttons
 #: softwareHomeButton.ariaLabel
@@ -2068,9 +2081,14 @@ msgid "Emergency warning!"
 msgstr "Tilasu yaamar!"
 
 #. # ICC / STK (= SIM Toolkit)
-#: icc-message-title
-msgid "Operator message from SIM {{id}}"
-msgstr "Talfon hugu alhabar SIM{{id}} ga"
+#: icc-message-maintitle
+msgid "Operator message"
+msgstr "Goyandikaw alhabar"
+
+#: icc-message-subtitle
+msgctxt "icc-message-subtitle"
+msgid "SIM {{id}}"
+msgstr ""
 
 #: icc-confirmCall-defaultmessage
 msgid "Call {{number}}?"
@@ -2084,10 +2102,15 @@ msgstr "Alhabar sanba"
 msgid "Send message?"
 msgstr "Alhabar sanba?"
 
-#. # LOCALIZATION NOTE: (icc-inputbox-title) = title of SIM Toolkit input dialog panels
-#: icc-inputbox-title
-msgid "STK Query from SIM {{id}}"
-msgstr "STK hãayan SIM {{id}} ga"
+#. # LOCALIZATION NOTE: (icc-inputbox-[main|sub]title) = title of SIM Toolkit input dialog panels
+#: icc-inputbox-maintitle
+msgid "STK Query"
+msgstr "STK hãayan"
+
+#: icc-inputbox-subtitle
+msgctxt "icc-inputbox-subtitle"
+msgid "SIM {{id}}"
+msgstr ""
 
 #. # CDMA emergency callback mode
 #: emergency-callback-mode
@@ -2202,6 +2225,31 @@ msgstr "Widewo gaabu"
 msgid "Save Audio"
 msgstr "Jinde gaabu"
 
+#: save-link
+msgid "Save linked file"
+msgstr ""
+
+#: share-image
+#, fuzzy
+msgid "Share Image"
+msgstr "Bii gaabu"
+
+#: share-video
+#, fuzzy
+msgid "Share Video"
+msgstr "Widewo gaabu"
+
+#: share-audio
+#, fuzzy
+msgid "Share Audio"
+msgstr "Jinde gaabu"
+
+#~ msgid "Operator message from SIM {{id}}"
+#~ msgstr "Talfon hugu alhabar SIM{{id}} ga"
+
+#~ msgid "STK Query from SIM {{id}}"
+#~ msgstr "STK hãayan SIM {{id}} ga"
+
 #~ msgctxt "bluetooth-sending-progress"
 #~ msgid "Sending Bluetooth transfer.."
 #~ msgstr "Bluetooth berandiri sanbandi.."
@@ -2212,12 +2260,6 @@ msgstr "Jinde gaabu"
 
 #~ msgid "%I:%M"
 #~ msgstr "%H:%M"
-
-#~ msgid "Operator message"
-#~ msgstr "Goyandikaw alhabar"
-
-#~ msgid "STK Query"
-#~ msgstr "STK hãayan"
 
 #~ msgctxt "unknown-size"
 #~ msgid "{{unknown}}"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-24 11:19+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-07-14 06:31+0000\n"
 "Last-Translator: Muhammad Refa Utama Putra <muhammadrefa@aol.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,6 +59,8 @@ msgid "No"
 msgstr "Tidak"
 
 #: reset
+#, fuzzy
+msgctxt "reset"
 msgid "Reset"
 msgstr "Atur Ulang"
 
@@ -922,6 +924,21 @@ msgstr ""
 
 #: cellBroadcast
 msgid "Cell broadcast"
+msgstr ""
+
+#: messagingInformation
+#, fuzzy
+msgid "Information"
+msgstr "Konfirmasi"
+
+#. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
+#: messagingSMSC
+#, fuzzy
+msgid "SMSC"
+msgstr "MMSC"
+
+#: unknownSMSC
+msgid "Unknown number"
 msgstr ""
 
 #. # Connectivity :: Cellular & Data
@@ -2000,6 +2017,10 @@ msgctxt "vertical-homescreen-header"
 msgid "Homescreen"
 msgstr ""
 
+#: vertical-homescreen-layout
+msgid "Layout"
+msgstr ""
+
 #: vertical-homescreen-icon-layout
 msgid "Icon Layout"
 msgstr ""
@@ -2016,27 +2037,16 @@ msgstr ""
 msgid "Notice"
 msgstr ""
 
+#: search-header
+msgid "Search"
+msgstr ""
+
 #: search-engine
 msgid "Search Engine"
 msgstr ""
 
 #: search-suggestions
 msgid "Search Suggestions"
-msgstr ""
-
-#. # LOCALIZATION NOTE (search-suggestions-button, search-suggestions-header):
-#. # If you leave the original en-US value "{{search-suggestions}}" in the following
-#. # strings, the localization will be automatically picked from the existing
-#. # string with ID "search-suggestions". If you need to adapt your localization to
-#. # the reduced space available in header or button, you can use shorter strings here.
-#: search-suggestions-button
-msgctxt "search-suggestions-button"
-msgid "{{search-suggestions}}"
-msgstr ""
-
-#: search-suggestions-header
-msgctxt "search-suggestions-header"
-msgid "{{search-suggestions}}"
 msgstr ""
 
 #: search-suggestions-description
@@ -2075,8 +2085,12 @@ msgid "Description"
 msgstr ""
 
 #. # Personalization :: Keyboard
-#: installedInputMethods
-msgid "Installed input methods"
+#: keyboardSettings
+msgid "Keyboard Settings"
+msgstr ""
+
+#: selectedKeyboards
+msgid "Selected Keyboards"
 msgstr ""
 
 #: keyboards
@@ -2109,30 +2123,17 @@ msgstr "Papan tombol"
 msgid "Dial Pad"
 msgstr ""
 
-#: selectedKeyboards
-msgid "Selected keyboards"
+#: selectKeyboards
+msgid "Select Keyboards"
 msgstr ""
 
-#. # LOCALIZATION NOTE (selectedKeyboards-header): if you leave the original
-#. # en-US value "{{selectedKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "selectedKeyboards".
+#. # LOCALIZATION NOTE (selectKeyboards-header): if you leave the original
+#. # en-US value "{{selectKeyboards}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "selectKeyboards".
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
-#: selectedKeyboards-header
-msgid "{{selectedKeyboards}}"
-msgstr ""
-
-#: addMoreKeyboards
-msgid "Add more keyboards"
-msgstr ""
-
-#. # LOCALIZATION NOTE (addMoreKeyboards-header): if you leave the original
-#. # en-US value "{{addMoreKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "addMoreKeyboards".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: addMoreKeyboards-header
-msgid "{{addMoreKeyboards}}"
+#: selectKeyboards-header
+msgid "{{selectKeyboards}}"
 msgstr ""
 
 #: mustHaveOneKeyboard
@@ -2191,6 +2192,7 @@ msgid ""
 msgstr ""
 
 #: fxa-invitation
+msgctxt "fxa-invitation"
 msgid "Create account or sign in"
 msgstr ""
 
@@ -2270,8 +2272,9 @@ msgstr ""
 msgid "Find My Device allows you to locate, lock or erase your phone"
 msgstr ""
 
-#: findmydevice-login
-msgid "Sign In or Create an Account"
+#: findmydevice-create-account
+msgctxt "findmydevice-create-account"
+msgid "Create account or sign in"
 msgstr ""
 
 #: findmydevice-enable
@@ -2492,33 +2495,13 @@ msgstr "Konfirmasikan kode masuk"
 msgid "Immediately"
 msgstr "Segera"
 
-#: after-five-seconds
-msgid "After 5 seconds"
-msgstr "Setelah 5 detik"
-
-#: after-fifteen-seconds
-msgid "After 15 seconds"
-msgstr "Setelah 15 detik"
-
-#: after-thirty-seconds
-msgid "After 30 seconds"
-msgstr "Setelah 30 detik"
-
 #: after-one-minute
 msgid "After 1 minute"
 msgstr "Setelah 1 menit"
 
-#: after-two-minutes
-msgid "After 2 minutes"
-msgstr "Setelah 2 menit"
-
 #: after-five-minutes
 msgid "After 5 minutes"
 msgstr "Setelah 5 menit"
-
-#: after-ten-minutes
-msgid "After 10 minutes"
-msgstr "Setelah 10 menit"
 
 #: after-fifteen-minutes
 msgid "After 15 minutes"
@@ -2531,10 +2514,6 @@ msgstr "Setelah 30 menit"
 #: after-one-hour
 msgid "After 1 hour"
 msgstr "Setelah 1 jam"
-
-#: after-four-hours
-msgid "After 4 hours"
-msgstr "Setelah 4 jam"
 
 #: require-passcode
 #, fuzzy
@@ -2889,9 +2868,10 @@ msgid "How does Do Not Track work?"
 msgstr "Bagaimana cara kerja 'Jangan Lacak' (Do Not Track)?"
 
 #: doNotTrack-dd1
+#, fuzzy
 msgid ""
 "When you turn on Do Not Track, your device tells every website and app (as "
-"well as advertisers and other content providers) that you don’t want your "
+"well as advertisers and other content providers) that you do not want your "
 "behavior tracked."
 msgstr ""
 "Saat 'Jangan Lacak' diaktifkan, perangkat akan memberi tahu setiap situs web "
@@ -2899,10 +2879,11 @@ msgstr ""
 "tidak ingin tingkah laku Anda dilacak."
 
 #: doNotTrack-dd2
+#, fuzzy
 msgid ""
-"Turning on Do Not Track won’t affect your ability to sign in to websites nor "
-"cause your device to forget your private information, such as the contents "
-"of shopping carts, location information or sign-in information."
+"Turning on Do Not Track will not affect your ability to sign in to websites "
+"nor cause your device to forget your private information, such as the "
+"contents of shopping carts, location information or sign-in information."
 msgstr ""
 "Menyalakan 'Jangan Lacak' tidak mempengaruhi kemampuan untuk masuk ke situs "
 "web atau menyebabkan perangkat Anda melupakan informasi pribadi seperti isi "
@@ -3258,6 +3239,10 @@ msgstr ""
 msgid "Log changes in ADB"
 msgstr ""
 
+#: hud-system
+msgid "Show system HUD"
+msgstr ""
+
 #: hud-problems
 msgid "Problems"
 msgstr ""
@@ -3287,6 +3272,10 @@ msgstr ""
 msgid "Jank"
 msgstr ""
 
+#: jank-threshold
+msgid "Jank Threshold"
+msgstr ""
+
 #: hud-fps
 msgid "Frames per second"
 msgstr ""
@@ -3297,6 +3286,10 @@ msgstr ""
 
 #: hud-memory
 msgid "Memory"
+msgstr ""
+
+#: hud-uss
+msgid "Unique Set Size"
 msgstr ""
 
 #: hud-appmemory
@@ -3415,14 +3408,6 @@ msgstr ""
 msgid "ADB and DevTools"
 msgstr ""
 
-#: devtools-overlay
-msgid "Show devtools overlay"
-msgstr ""
-
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr ""
-
 #: wifi-debugging
 #, fuzzy
 msgid "Wi-Fi output in ADB"
@@ -3442,6 +3427,10 @@ msgstr ""
 
 #: geolocation-debugging-enabled
 msgid "Geolocation output in ADB"
+msgstr ""
+
+#: use-reviewer-certs
+msgid "Use Marketplace reviewer certs"
 msgstr ""
 
 #: model-name
@@ -3558,6 +3547,12 @@ msgstr ""
 #: learn-more
 msgid "Learn More"
 msgstr "Pelajari Lebih Lanjut"
+
+#: reset-head
+#, fuzzy
+msgctxt "reset-head"
+msgid "Reset"
+msgstr "Atur Ulang"
 
 #: reset-phone
 msgid "Reset Phone"
@@ -3933,19 +3928,19 @@ msgstr "Sempurnakan {{brandShortName}}"
 msgid "Send Mozilla Feedback"
 msgstr "Kirim Saran ke Mozilla"
 
-#: performanceData
-msgid "Performance data"
-msgstr "Data kinerja"
-
-#: performanceDataInfo
-msgid "Help us improve {{brandShortName}} by sharing data about your phone."
+#: performanceAndUsageData
+msgid "Performance and usage data"
 msgstr ""
-"Bantu kami memperbaiki {{brandShortName}} dengan membagikan data mengenai "
-"ponsel Anda."
 
-#: sharePerformanceData
-msgid "Submit performance data"
-msgstr "Kirim data kinerja"
+#: performanceAndUsageDataInfo
+msgid ""
+"Help us improve {{brandShortName}} by sharing data about your phone and the "
+"way you use it."
+msgstr ""
+
+#: sharePerformanceAndUsageData
+msgid "Submit data"
+msgstr ""
 
 #: crashReports
 msgid "Crash reports"
@@ -4233,6 +4228,35 @@ msgstr ""
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr ""
+
+#~ msgid "After 5 seconds"
+#~ msgstr "Setelah 5 detik"
+
+#~ msgid "After 15 seconds"
+#~ msgstr "Setelah 15 detik"
+
+#~ msgid "After 30 seconds"
+#~ msgstr "Setelah 30 detik"
+
+#~ msgid "After 2 minutes"
+#~ msgstr "Setelah 2 menit"
+
+#~ msgid "After 10 minutes"
+#~ msgstr "Setelah 10 menit"
+
+#~ msgid "After 4 hours"
+#~ msgstr "Setelah 4 jam"
+
+#~ msgid "Performance data"
+#~ msgstr "Data kinerja"
+
+#~ msgid "Help us improve {{brandShortName}} by sharing data about your phone."
+#~ msgstr ""
+#~ "Bantu kami memperbaiki {{brandShortName}} dengan membagikan data mengenai "
+#~ "ponsel Anda."
+
+#~ msgid "Submit performance data"
+#~ msgstr "Kirim data kinerja"
 
 #~ msgid "Camera shutter"
 #~ msgstr "Jepretan kamera"

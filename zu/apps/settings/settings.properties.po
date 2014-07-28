@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-24 11:19+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-07-16 13:44+0000\n"
 "Last-Translator: Ian <ian.henderson@rubric.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1405518274.000000\n"
@@ -59,6 +59,8 @@ msgid "No"
 msgstr "Cha"
 
 #: reset
+#, fuzzy
+msgctxt "reset"
 msgid "Reset"
 msgstr "Setha kabusha"
 
@@ -926,6 +928,21 @@ msgstr "Imiyalezo yokusakaza ngeselula"
 #: cellBroadcast
 msgid "Cell broadcast"
 msgstr "Ukusakaza ngeselula"
+
+#: messagingInformation
+#, fuzzy
+msgid "Information"
+msgstr "Ukuqinisekisa"
+
+#. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
+#: messagingSMSC
+#, fuzzy
+msgid "SMSC"
+msgstr "MMSC"
+
+#: unknownSMSC
+msgid "Unknown number"
+msgstr ""
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
@@ -2008,6 +2025,10 @@ msgctxt "vertical-homescreen-header"
 msgid "Homescreen"
 msgstr "Iskrini sasekhaya"
 
+#: vertical-homescreen-layout
+msgid "Layout"
+msgstr ""
+
 #: vertical-homescreen-icon-layout
 msgid "Icon Layout"
 msgstr "Ukuhlelwa Kwemifanekiso"
@@ -2024,6 +2045,10 @@ msgstr "Amakholomu Amane"
 msgid "Notice"
 msgstr "Isaziso"
 
+#: search-header
+msgid "Search"
+msgstr ""
+
 #: search-engine
 msgid "Search Engine"
 msgstr "Injini Yocinga"
@@ -2031,21 +2056,6 @@ msgstr "Injini Yocinga"
 #: search-suggestions
 msgid "Search Suggestions"
 msgstr "Imibono Yokucinga"
-
-#. # LOCALIZATION NOTE (search-suggestions-button, search-suggestions-header):
-#. # If you leave the original en-US value "{{search-suggestions}}" in the following
-#. # strings, the localization will be automatically picked from the existing
-#. # string with ID "search-suggestions". If you need to adapt your localization to
-#. # the reduced space available in header or button, you can use shorter strings here.
-#: search-suggestions-button
-msgctxt "search-suggestions-button"
-msgid "{{search-suggestions}}"
-msgstr "{{search-suggestions}}"
-
-#: search-suggestions-header
-msgctxt "search-suggestions-header"
-msgid "{{search-suggestions}}"
-msgstr "{{search-suggestions}}"
 
 #: search-suggestions-description
 msgid ""
@@ -2085,9 +2095,14 @@ msgid "Description"
 msgstr "Incazelo"
 
 #. # Personalization :: Keyboard
-#: installedInputMethods
-msgid "Installed input methods"
-msgstr "Izindlela zokungenisa ezifakeliwe"
+#: keyboardSettings
+msgid "Keyboard Settings"
+msgstr ""
+
+#: selectedKeyboards
+#, fuzzy
+msgid "Selected Keyboards"
+msgstr "Amabhodi ezinkinobho akhethiwe"
 
 #: keyboards
 msgid "Keyboards"
@@ -2118,31 +2133,20 @@ msgstr "Ikhiphedi"
 msgid "Dial Pad"
 msgstr "I-pad Yokudayela"
 
-#: selectedKeyboards
-msgid "Selected keyboards"
+#: selectKeyboards
+#, fuzzy
+msgid "Select Keyboards"
 msgstr "Amabhodi ezinkinobho akhethiwe"
 
-#. # LOCALIZATION NOTE (selectedKeyboards-header): if you leave the original
-#. # en-US value "{{selectedKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "selectedKeyboards".
+#. # LOCALIZATION NOTE (selectKeyboards-header): if you leave the original
+#. # en-US value "{{selectKeyboards}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "selectKeyboards".
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
-#: selectedKeyboards-header
-msgid "{{selectedKeyboards}}"
+#: selectKeyboards-header
+#, fuzzy
+msgid "{{selectKeyboards}}"
 msgstr "{{selectedKeyboards}}"
-
-#: addMoreKeyboards
-msgid "Add more keyboards"
-msgstr "Faka amanye amabhodi ezinkinobho"
-
-#. # LOCALIZATION NOTE (addMoreKeyboards-header): if you leave the original
-#. # en-US value "{{addMoreKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "addMoreKeyboards".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: addMoreKeyboards-header
-msgid "{{addMoreKeyboards}}"
-msgstr "{{addMoreKeyboards}}"
 
 #: mustHaveOneKeyboard
 msgid "At least one {{type}} keyboard should be selected"
@@ -2201,6 +2205,8 @@ msgstr ""
 "Find My Device kanye nama-app afana ne-Firefox Marketplace."
 
 #: fxa-invitation
+#, fuzzy
+msgctxt "fxa-invitation"
 msgid "Create account or sign in"
 msgstr "Yakha i-akhawunti noma sayinela ukungena"
 
@@ -2284,9 +2290,11 @@ msgstr ""
 "Uhlelo lweThola Idivayisi Yami lukuvumela ukuthi uthole, ukhiye noma usule "
 "ifoni yakho"
 
-#: findmydevice-login
-msgid "Sign In or Create an Account"
-msgstr "Sayinela Ukungena noma Yakha i-akhawunti"
+#: findmydevice-create-account
+#, fuzzy
+msgctxt "findmydevice-create-account"
+msgid "Create account or sign in"
+msgstr "Yakha i-akhawunti noma sayinela ukungena"
 
 #: findmydevice-enable
 msgid "Enable Find My Device"
@@ -2509,33 +2517,13 @@ msgstr "Qinisekisa i-passcode"
 msgid "Immediately"
 msgstr "Njengamanje"
 
-#: after-five-seconds
-msgid "After 5 seconds"
-msgstr "Emva kwemizuzwana emi-5"
-
-#: after-fifteen-seconds
-msgid "After 15 seconds"
-msgstr "Emva kwemizuzwana eyi-15"
-
-#: after-thirty-seconds
-msgid "After 30 seconds"
-msgstr "Emva kwemizuzwana engama-30"
-
 #: after-one-minute
 msgid "After 1 minute"
 msgstr "Emva komzuzu o-1"
 
-#: after-two-minutes
-msgid "After 2 minutes"
-msgstr "Emva kwemizuzu emi-2"
-
 #: after-five-minutes
 msgid "After 5 minutes"
 msgstr "Emva kwemizuzu emi-5"
-
-#: after-ten-minutes
-msgid "After 10 minutes"
-msgstr "Emva kwemizuzu eyi-10"
 
 #: after-fifteen-minutes
 msgid "After 15 minutes"
@@ -2548,10 +2536,6 @@ msgstr "Emva kwemizuzu engama-30"
 #: after-one-hour
 msgid "After 1 hour"
 msgstr "Emva kwehora eli-1"
-
-#: after-four-hours
-msgid "After 4 hours"
-msgstr "Emva kwamahora ama-4"
 
 #: require-passcode
 msgid "Require passcode"
@@ -2891,9 +2875,10 @@ msgid "How does Do Not Track work?"
 msgstr "Ingabe lusebenza kanjani uhlelo lokuthi Ungangilandeleli?"
 
 #: doNotTrack-dd1
+#, fuzzy
 msgid ""
 "When you turn on Do Not Track, your device tells every website and app (as "
-"well as advertisers and other content providers) that you don’t want your "
+"well as advertisers and other content providers) that you do not want your "
 "behavior tracked."
 msgstr ""
 "Uma uvula uhlelo lokuthi Ungangilandeleli, idivayisi yakho itshela wonke "
@@ -2901,10 +2886,11 @@ msgstr ""
 "ngolwazi) ukuthi awufuni okwenzayo kulandelelwe."
 
 #: doNotTrack-dd2
+#, fuzzy
 msgid ""
-"Turning on Do Not Track won’t affect your ability to sign in to websites nor "
-"cause your device to forget your private information, such as the contents "
-"of shopping carts, location information or sign-in information."
+"Turning on Do Not Track will not affect your ability to sign in to websites "
+"nor cause your device to forget your private information, such as the "
+"contents of shopping carts, location information or sign-in information."
 msgstr ""
 "Ukuvula uhlelo lokuthi Ungangilandeleli ngeke kuthikameze ukusayinela kwakho "
 "ukungena kumawebhusayithi ngisho nokuthi idivayisi yakho ikhohlwe "
@@ -3262,6 +3248,10 @@ msgstr "{{hud}}"
 msgid "Log changes in ADB"
 msgstr "Izinguquko zelog ku-ADB"
 
+#: hud-system
+msgid "Show system HUD"
+msgstr ""
+
 #: hud-problems
 msgid "Problems"
 msgstr "Izinkinga"
@@ -3290,6 +3280,10 @@ msgstr "Reflows"
 msgid "Jank"
 msgstr "I-Jank"
 
+#: jank-threshold
+msgid "Jank Threshold"
+msgstr "I-Jank threshold"
+
 #: hud-fps
 msgid "Frames per second"
 msgstr "Ama-frame ngomzuzwana"
@@ -3301,6 +3295,10 @@ msgstr "Isikhathi sokuloda"
 #: hud-memory
 msgid "Memory"
 msgstr "Imemori"
+
+#: hud-uss
+msgid "Unique Set Size"
+msgstr ""
 
 #: hud-appmemory
 msgid "App memory"
@@ -3416,14 +3414,6 @@ msgstr "I-ADB kuphela"
 msgid "ADB and DevTools"
 msgstr "Ama-ADB nama-DevTools"
 
-#: devtools-overlay
-msgid "Show devtools overlay"
-msgstr "Veza ukuma kwama-devtools"
-
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "I-Jank threshold"
-
 #: wifi-debugging
 msgid "Wi-Fi output in ADB"
 msgstr "Okudedelwa yi-Wi-Fi ku-ADB"
@@ -3443,6 +3433,10 @@ msgstr "Ukubukwa Kwamakhadi: Ama-Screenshots"
 #: geolocation-debugging-enabled
 msgid "Geolocation output in ADB"
 msgstr "Ukuvezwa Kwendawo Okuyo nge-ADB"
+
+#: use-reviewer-certs
+msgid "Use Marketplace reviewer certs"
+msgstr ""
 
 #: model-name
 msgid "Model"
@@ -3560,6 +3554,12 @@ msgstr ""
 #: learn-more
 msgid "Learn More"
 msgstr "Funda Kabanzi"
+
+#: reset-head
+#, fuzzy
+msgctxt "reset-head"
+msgid "Reset"
+msgstr "Setha kabusha"
 
 #: reset-phone
 msgid "Reset Phone"
@@ -3941,19 +3941,19 @@ msgstr "Yenza ngcono i-{{brandShortName}} isebenze kangcono"
 msgid "Send Mozilla Feedback"
 msgstr "Thumela Impendulo kwa-Mozilla"
 
-#: performanceData
-msgid "Performance data"
-msgstr "Idatha yokwenziwa komsebenzi"
-
-#: performanceDataInfo
-msgid "Help us improve {{brandShortName}} by sharing data about your phone."
+#: performanceAndUsageData
+msgid "Performance and usage data"
 msgstr ""
-"Silekelele senze i-{{brandShortName}} isebenze kangcono ngokwabelana "
-"ngemininingwane yefoni yakho."
 
-#: sharePerformanceData
-msgid "Submit performance data"
-msgstr "Letha idatha yokwenziwa komsebenzi"
+#: performanceAndUsageDataInfo
+msgid ""
+"Help us improve {{brandShortName}} by sharing data about your phone and the "
+"way you use it."
+msgstr ""
+
+#: sharePerformanceAndUsageData
+msgid "Submit data"
+msgstr ""
 
 #: crashReports
 msgid "Crash reports"
@@ -4260,6 +4260,58 @@ msgstr "Thumela Idatha"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Thola Isimo Sesiteshi"
+
+#~ msgctxt "search-suggestions-button"
+#~ msgid "{{search-suggestions}}"
+#~ msgstr "{{search-suggestions}}"
+
+#~ msgctxt "search-suggestions-header"
+#~ msgid "{{search-suggestions}}"
+#~ msgstr "{{search-suggestions}}"
+
+#~ msgid "Installed input methods"
+#~ msgstr "Izindlela zokungenisa ezifakeliwe"
+
+#~ msgid "Add more keyboards"
+#~ msgstr "Faka amanye amabhodi ezinkinobho"
+
+#~ msgid "{{addMoreKeyboards}}"
+#~ msgstr "{{addMoreKeyboards}}"
+
+#~ msgid "Sign In or Create an Account"
+#~ msgstr "Sayinela Ukungena noma Yakha i-akhawunti"
+
+#~ msgid "After 5 seconds"
+#~ msgstr "Emva kwemizuzwana emi-5"
+
+#~ msgid "After 15 seconds"
+#~ msgstr "Emva kwemizuzwana eyi-15"
+
+#~ msgid "After 30 seconds"
+#~ msgstr "Emva kwemizuzwana engama-30"
+
+#~ msgid "After 2 minutes"
+#~ msgstr "Emva kwemizuzu emi-2"
+
+#~ msgid "After 10 minutes"
+#~ msgstr "Emva kwemizuzu eyi-10"
+
+#~ msgid "After 4 hours"
+#~ msgstr "Emva kwamahora ama-4"
+
+#~ msgid "Show devtools overlay"
+#~ msgstr "Veza ukuma kwama-devtools"
+
+#~ msgid "Performance data"
+#~ msgstr "Idatha yokwenziwa komsebenzi"
+
+#~ msgid "Help us improve {{brandShortName}} by sharing data about your phone."
+#~ msgstr ""
+#~ "Silekelele senze i-{{brandShortName}} isebenze kangcono ngokwabelana "
+#~ "ngemininingwane yefoni yakho."
+
+#~ msgid "Submit performance data"
+#~ msgstr "Letha idatha yokwenziwa komsebenzi"
 
 #~ msgid ""
 #~ "When entering a roaming area, your data connection will be turned off."

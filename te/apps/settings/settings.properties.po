@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-24 11:19+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-07-18 16:01+0000\n"
 "Last-Translator: Praveen <mail2ipn@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1405699269.000000\n"
@@ -59,6 +59,8 @@ msgid "No"
 msgstr "వద్దు"
 
 #: reset
+#, fuzzy
+msgctxt "reset"
 msgid "Reset"
 msgstr "మునుపటివలె"
 
@@ -914,6 +916,21 @@ msgstr "సెల్ ప్రసార సందేశాలు"
 #: cellBroadcast
 msgid "Cell broadcast"
 msgstr "సెల్ ప్రసారం"
+
+#: messagingInformation
+#, fuzzy
+msgid "Information"
+msgstr "నిర్ధారణ"
+
+#. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
+#: messagingSMSC
+#, fuzzy
+msgid "SMSC"
+msgstr "MMSC"
+
+#: unknownSMSC
+msgid "Unknown number"
+msgstr ""
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
@@ -1976,6 +1993,10 @@ msgctxt "vertical-homescreen-header"
 msgid "Homescreen"
 msgstr "ముంగిలితెర"
 
+#: vertical-homescreen-layout
+msgid "Layout"
+msgstr ""
+
 #: vertical-homescreen-icon-layout
 msgid "Icon Layout"
 msgstr "ప్రతీకం నమూనా"
@@ -1992,6 +2013,10 @@ msgstr "నాలుగు నిలువు వరుసలు"
 msgid "Notice"
 msgstr "గమనిక"
 
+#: search-header
+msgid "Search"
+msgstr ""
+
 #: search-engine
 msgid "Search Engine"
 msgstr "శోధనా యంత్రం"
@@ -1999,21 +2024,6 @@ msgstr "శోధనా యంత్రం"
 #: search-suggestions
 msgid "Search Suggestions"
 msgstr "వెతుకుడు సలహాలు"
-
-#. # LOCALIZATION NOTE (search-suggestions-button, search-suggestions-header):
-#. # If you leave the original en-US value "{{search-suggestions}}" in the following
-#. # strings, the localization will be automatically picked from the existing
-#. # string with ID "search-suggestions". If you need to adapt your localization to
-#. # the reduced space available in header or button, you can use shorter strings here.
-#: search-suggestions-button
-msgctxt "search-suggestions-button"
-msgid "{{search-suggestions}}"
-msgstr "{{search-suggestions}}"
-
-#: search-suggestions-header
-msgctxt "search-suggestions-header"
-msgid "{{search-suggestions}}"
-msgstr "{{search-suggestions}}"
 
 #: search-suggestions-description
 msgid ""
@@ -2052,9 +2062,14 @@ msgid "Description"
 msgstr "వివరణ"
 
 #. # Personalization :: Keyboard
-#: installedInputMethods
-msgid "Installed input methods"
-msgstr "స్థాపిత ఇన్‌పుట్ పద్ధతులు"
+#: keyboardSettings
+msgid "Keyboard Settings"
+msgstr ""
+
+#: selectedKeyboards
+#, fuzzy
+msgid "Selected Keyboards"
+msgstr "ఎంచుకున్న కీబోర్డులు"
 
 #: keyboards
 msgid "Keyboards"
@@ -2085,31 +2100,20 @@ msgstr "కీప్యాడ్"
 msgid "Dial Pad"
 msgstr "డయల్ ప్యాడ్"
 
-#: selectedKeyboards
-msgid "Selected keyboards"
+#: selectKeyboards
+#, fuzzy
+msgid "Select Keyboards"
 msgstr "ఎంచుకున్న కీబోర్డులు"
 
-#. # LOCALIZATION NOTE (selectedKeyboards-header): if you leave the original
-#. # en-US value "{{selectedKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "selectedKeyboards".
+#. # LOCALIZATION NOTE (selectKeyboards-header): if you leave the original
+#. # en-US value "{{selectKeyboards}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "selectKeyboards".
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
-#: selectedKeyboards-header
-msgid "{{selectedKeyboards}}"
+#: selectKeyboards-header
+#, fuzzy
+msgid "{{selectKeyboards}}"
 msgstr "{{selectedKeyboards}}"
-
-#: addMoreKeyboards
-msgid "Add more keyboards"
-msgstr "మరిన్ని కీబోర్డులను చేర్చండి"
-
-#. # LOCALIZATION NOTE (addMoreKeyboards-header): if you leave the original
-#. # en-US value "{{addMoreKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "addMoreKeyboards".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: addMoreKeyboards-header
-msgid "{{addMoreKeyboards}}"
-msgstr "{{addMoreKeyboards}}"
 
 #: mustHaveOneKeyboard
 msgid "At least one {{type}} keyboard should be selected"
@@ -2168,6 +2172,8 @@ msgstr ""
 "వాడుకోనిస్తుంది."
 
 #: fxa-invitation
+#, fuzzy
+msgctxt "fxa-invitation"
 msgid "Create account or sign in"
 msgstr "ఖాతాను సృష్టించుకోండి లేదా ప్రవేశించండి"
 
@@ -2248,9 +2254,11 @@ msgid "Find My Device allows you to locate, lock or erase your phone"
 msgstr ""
 "నా పరికరాన్ని కనిపెట్టు అనే సౌలభ్యం మీ ఫోనును కనుగొనడానికి, తాళం వేయడానికి లేదా చెరిపివేయడానికి అనుమతిస్తుంది"
 
-#: findmydevice-login
-msgid "Sign In or Create an Account"
-msgstr "ప్రవేశించండి లేదా ఒక ఖాతాను సృష్టించుకోండి"
+#: findmydevice-create-account
+#, fuzzy
+msgctxt "findmydevice-create-account"
+msgid "Create account or sign in"
+msgstr "ఖాతాను సృష్టించుకోండి లేదా ప్రవేశించండి"
 
 #: findmydevice-enable
 msgid "Enable Find My Device"
@@ -2468,33 +2476,13 @@ msgstr "సంకేతసంఖ్యను నిర్ధారించం�
 msgid "Immediately"
 msgstr "తక్షణమే"
 
-#: after-five-seconds
-msgid "After 5 seconds"
-msgstr "5 క్షణాల తరువాత"
-
-#: after-fifteen-seconds
-msgid "After 15 seconds"
-msgstr "15 క్షణాల తరువాత"
-
-#: after-thirty-seconds
-msgid "After 30 seconds"
-msgstr "30 క్షణాల తర్వాత"
-
 #: after-one-minute
 msgid "After 1 minute"
 msgstr "1 నిమిషం తరువాత"
 
-#: after-two-minutes
-msgid "After 2 minutes"
-msgstr "2 నిమిషాల తరువాత"
-
 #: after-five-minutes
 msgid "After 5 minutes"
 msgstr "5 నిమిషాల తరువాత"
-
-#: after-ten-minutes
-msgid "After 10 minutes"
-msgstr "10 నిమిషాల తరువాత"
 
 #: after-fifteen-minutes
 msgid "After 15 minutes"
@@ -2507,10 +2495,6 @@ msgstr "30 నిమిషాల తరువాత"
 #: after-one-hour
 msgid "After 1 hour"
 msgstr "1 గంట తరువాత"
-
-#: after-four-hours
-msgid "After 4 hours"
-msgstr "4 గంటల తరువాత"
 
 #: require-passcode
 msgid "Require passcode"
@@ -2834,19 +2818,21 @@ msgid "How does Do Not Track work?"
 msgstr "డూ నాట్ ట్రాక్ ఎలా పనిచేస్తుంది?"
 
 #: doNotTrack-dd1
+#, fuzzy
 msgid ""
 "When you turn on Do Not Track, your device tells every website and app (as "
-"well as advertisers and other content providers) that you don’t want your "
+"well as advertisers and other content providers) that you do not want your "
 "behavior tracked."
 msgstr ""
 "ట్రాక్ చేయవద్దు చేతనించినప్పుడు, మీ పరికరం ప్రతీ జాలగూడుకు మరియు అనువర్తనాలకు (అలాగే "
 "వాణిజ్యప్రకటనదారు మరియు ఇతర కంటెంట్ సేవాదారులకు) మీ ప్రవర్తనను ట్రాక్ చేయడం ఇష్టం లేదని చెబుతుంది."
 
 #: doNotTrack-dd2
+#, fuzzy
 msgid ""
-"Turning on Do Not Track won’t affect your ability to sign in to websites nor "
-"cause your device to forget your private information, such as the contents "
-"of shopping carts, location information or sign-in information."
+"Turning on Do Not Track will not affect your ability to sign in to websites "
+"nor cause your device to forget your private information, such as the "
+"contents of shopping carts, location information or sign-in information."
 msgstr ""
 "ట్రాక్ చేయవద్దు ఆన్ చేయడం వలన జాలగూళ్ళలోకి ప్రవేశించడం లేదా షాపింగు కార్టులు, స్థాన సమాచారం లేదా ప్రవేశ "
 "సమాచారం వంటి మీ రహస్య సమాచారాన్ని మీ పరికరం మరిచిపోయేలా ఏమీ చేయదు మరియు అలాంటి విషయాలపై ప్రభావం చూపదు."
@@ -3197,6 +3183,10 @@ msgstr "{{hud}}"
 msgid "Log changes in ADB"
 msgstr "ADBలో చిట్టా మార్పులు"
 
+#: hud-system
+msgid "Show system HUD"
+msgstr ""
+
 #: hud-problems
 msgid "Problems"
 msgstr "సమస్యలు"
@@ -3225,6 +3215,10 @@ msgstr "రీఫ్లోస్"
 msgid "Jank"
 msgstr "చెత్త"
 
+#: jank-threshold
+msgid "Jank Threshold"
+msgstr "జంక్ థ్రెషోల్డ్"
+
 #: hud-fps
 msgid "Frames per second"
 msgstr "ఫ్రేమ్స్ పర్ సెకండ్"
@@ -3236,6 +3230,10 @@ msgstr "నింపు సమయం"
 #: hud-memory
 msgid "Memory"
 msgstr "మెమొరీ"
+
+#: hud-uss
+msgid "Unique Set Size"
+msgstr ""
 
 #: hud-appmemory
 msgid "App memory"
@@ -3351,14 +3349,6 @@ msgstr "ADB మాత్రమే"
 msgid "ADB and DevTools"
 msgstr "ADB మరియు డెవ్‌పనిముట్లు"
 
-#: devtools-overlay
-msgid "Show devtools overlay"
-msgstr "డెవ్‌పనిముట్ల ఓవర్లే చూపించు"
-
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "జంక్ థ్రెషోల్డ్"
-
 #: wifi-debugging
 msgid "Wi-Fi output in ADB"
 msgstr "ADBలో వై-ఫై అవుట్‌పుట్"
@@ -3378,6 +3368,10 @@ msgstr "కార్డుల వీక్షణం: తెరపట్టుల
 #: geolocation-debugging-enabled
 msgid "Geolocation output in ADB"
 msgstr "ADBలో భౌగోళికస్థాన అవుట్‌పుట్"
+
+#: use-reviewer-certs
+msgid "Use Marketplace reviewer certs"
+msgstr ""
 
 #: model-name
 msgid "Model"
@@ -3492,6 +3486,12 @@ msgstr ""
 #: learn-more
 msgid "Learn More"
 msgstr "మరింత తెలుసుకోండి"
+
+#: reset-head
+#, fuzzy
+msgctxt "reset-head"
+msgid "Reset"
+msgstr "మునుపటివలె"
 
 #: reset-phone
 msgid "Reset Phone"
@@ -3860,17 +3860,19 @@ msgstr "{{brandShortName}}ను మెరుగుపరచండి"
 msgid "Send Mozilla Feedback"
 msgstr "మొజిల్లాకు ప్రతిస్పందనను పంపండి"
 
-#: performanceData
-msgid "Performance data"
-msgstr "పనితనం దత్తాంశం"
+#: performanceAndUsageData
+msgid "Performance and usage data"
+msgstr ""
 
-#: performanceDataInfo
-msgid "Help us improve {{brandShortName}} by sharing data about your phone."
-msgstr "మీ ఫోను యొక్క దత్తాంశాన్ని పంచుకోవడం ద్వారా {{brandShortName}} అభివృద్ధికి సహాయపడండి."
+#: performanceAndUsageDataInfo
+msgid ""
+"Help us improve {{brandShortName}} by sharing data about your phone and the "
+"way you use it."
+msgstr ""
 
-#: sharePerformanceData
-msgid "Submit performance data"
-msgstr "పనితనం దత్తాంశం దాఖలుచేయి"
+#: sharePerformanceAndUsageData
+msgid "Submit data"
+msgstr ""
 
 #: crashReports
 msgid "Crash reports"
@@ -4171,6 +4173,56 @@ msgstr "పంపే దత్తాంశం"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "వాహిక స్థితిని పొందు"
+
+#~ msgctxt "search-suggestions-button"
+#~ msgid "{{search-suggestions}}"
+#~ msgstr "{{search-suggestions}}"
+
+#~ msgctxt "search-suggestions-header"
+#~ msgid "{{search-suggestions}}"
+#~ msgstr "{{search-suggestions}}"
+
+#~ msgid "Installed input methods"
+#~ msgstr "స్థాపిత ఇన్‌పుట్ పద్ధతులు"
+
+#~ msgid "Add more keyboards"
+#~ msgstr "మరిన్ని కీబోర్డులను చేర్చండి"
+
+#~ msgid "{{addMoreKeyboards}}"
+#~ msgstr "{{addMoreKeyboards}}"
+
+#~ msgid "Sign In or Create an Account"
+#~ msgstr "ప్రవేశించండి లేదా ఒక ఖాతాను సృష్టించుకోండి"
+
+#~ msgid "After 5 seconds"
+#~ msgstr "5 క్షణాల తరువాత"
+
+#~ msgid "After 15 seconds"
+#~ msgstr "15 క్షణాల తరువాత"
+
+#~ msgid "After 30 seconds"
+#~ msgstr "30 క్షణాల తర్వాత"
+
+#~ msgid "After 2 minutes"
+#~ msgstr "2 నిమిషాల తరువాత"
+
+#~ msgid "After 10 minutes"
+#~ msgstr "10 నిమిషాల తరువాత"
+
+#~ msgid "After 4 hours"
+#~ msgstr "4 గంటల తరువాత"
+
+#~ msgid "Show devtools overlay"
+#~ msgstr "డెవ్‌పనిముట్ల ఓవర్లే చూపించు"
+
+#~ msgid "Performance data"
+#~ msgstr "పనితనం దత్తాంశం"
+
+#~ msgid "Help us improve {{brandShortName}} by sharing data about your phone."
+#~ msgstr "మీ ఫోను యొక్క దత్తాంశాన్ని పంచుకోవడం ద్వారా {{brandShortName}} అభివృద్ధికి సహాయపడండి."
+
+#~ msgid "Submit performance data"
+#~ msgstr "పనితనం దత్తాంశం దాఖలుచేయి"
 
 #~ msgid "Edges gesture"
 #~ msgstr "అంచుల స్వభావం"

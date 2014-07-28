@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-08 10:59+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-04-09 08:15+0000\n"
 "Last-Translator: Arif Fahmi <ryuzaki_l@y7mail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,6 +42,10 @@ msgstr "Tutup"
 #: skip
 msgid "Skip"
 msgstr "Langkau"
+
+#: clear.ariaLabel
+msgid "Clear"
+msgstr ""
 
 #. # LOCALIZATION NOTE(undo.ariaLabel): The following string is spoken by screen
 #. # readers and not shown on the screen.
@@ -893,8 +897,12 @@ msgstr "Kemaskini sistem"
 msgid "System Update Ready"
 msgstr "Kemaskini Sistem Sedia"
 
-#: systemUpdateLowBattery
-msgid "You need at least 50% battery level to install the update."
+#. # LOCALIZATION NOTE (systemUpdateLowBatteryThreshold): {{ threshold }} will be
+#. # replaced at runtime by the minimum level of the battery needed to update,
+#. # resulting for example in "You need at least 40% battery level to install the
+#. # update."
+#: systemUpdateLowBatteryThreshold
+msgid "You need at least {{ threshold }}% battery level to install the update."
 msgstr ""
 
 #: required
@@ -990,6 +998,10 @@ msgstr "%A, %B %e"
 #. # screen readers and not shown on the screen.
 #: panel-passcode.ariaLabel
 msgid "Passcode panel"
+msgstr ""
+
+#: lockscreen-sim-id
+msgid "SIM {{ n }}"
 msgstr ""
 
 #. #software buttons
@@ -2108,9 +2120,14 @@ msgid "Emergency warning!"
 msgstr ""
 
 #. # ICC / STK (= SIM Toolkit)
-#: icc-message-title
-msgid "Operator message from SIM {{id}}"
-msgstr "Mesej pengendali dari SIM {{id}}"
+#: icc-message-maintitle
+msgid "Operator message"
+msgstr "Mesej operator"
+
+#: icc-message-subtitle
+msgctxt "icc-message-subtitle"
+msgid "SIM {{id}}"
+msgstr ""
 
 #: icc-confirmCall-defaultmessage
 msgid "Call {{number}}?"
@@ -2124,10 +2141,15 @@ msgstr "Menghantar mesej"
 msgid "Send message?"
 msgstr "Hantar mesej?"
 
-#. # LOCALIZATION NOTE: (icc-inputbox-title) = title of SIM Toolkit input dialog panels
-#: icc-inputbox-title
-msgid "STK Query from SIM {{id}}"
-msgstr "STK kueri dari SIM {{id}}"
+#. # LOCALIZATION NOTE: (icc-inputbox-[main|sub]title) = title of SIM Toolkit input dialog panels
+#: icc-inputbox-maintitle
+msgid "STK Query"
+msgstr "Pertanyaan STK"
+
+#: icc-inputbox-subtitle
+msgctxt "icc-inputbox-subtitle"
+msgid "SIM {{id}}"
+msgstr ""
 
 #. # CDMA emergency callback mode
 #: emergency-callback-mode
@@ -2246,6 +2268,28 @@ msgstr ""
 msgid "Save Audio"
 msgstr ""
 
+#: save-link
+msgid "Save linked file"
+msgstr ""
+
+#: share-image
+msgid "Share Image"
+msgstr ""
+
+#: share-video
+msgid "Share Video"
+msgstr ""
+
+#: share-audio
+msgid "Share Audio"
+msgstr ""
+
+#~ msgid "Operator message from SIM {{id}}"
+#~ msgstr "Mesej pengendali dari SIM {{id}}"
+
+#~ msgid "STK Query from SIM {{id}}"
+#~ msgstr "STK kueri dari SIM {{id}}"
+
 #~ msgid "Layout selection"
 #~ msgstr "Pemilihan susun atur"
 
@@ -2284,9 +2328,3 @@ msgstr ""
 
 #~ msgid "%I:%M"
 #~ msgstr "%I:%M"
-
-#~ msgid "Operator message"
-#~ msgstr "Mesej operator"
-
-#~ msgid "STK Query"
-#~ msgstr "Pertanyaan STK"

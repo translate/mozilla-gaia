@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-11 17:31+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-07-16 11:54+0000\n"
 "Last-Translator: Ian <ian.henderson@rubric.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1405511688.000000\n"
@@ -35,10 +35,6 @@ msgctxt "all.ariaLabel"
 msgid "All"
 msgstr "Onke"
 
-#: asterisk.ariaLabel
-msgid "Asterisk"
-msgstr "Inkwenkwezi"
-
 #: callLog
 msgid "Call log"
 msgstr "Ilogu yomnxeba"
@@ -54,10 +50,6 @@ msgstr "Hlela idayalogi yelogi yomnxeba"
 #: connecting
 msgid "Connecting"
 msgstr "Ukunxibelelana"
-
-#: cancel
-msgid "Cancel"
-msgstr "Rhoxisa"
 
 #. ## LOCALIZATION NOTE cf-async, cf-data, cf-fax, cf-packet, cf-pad, cf-sms, cf-sync and cf-voice are the service the call forwarding is activate/inactive for.
 #. ## LOCALIZATION NOTE Its variables might be a phone number or cf-inactive.
@@ -122,7 +114,7 @@ msgid "Create new contact"
 msgstr "Bhala umntu omtsha onokuqhagamshelana naye"
 
 #: delete
-msgctxt "delete"
+#, fuzzy
 msgid "Delete"
 msgstr "Cima"
 
@@ -172,10 +164,6 @@ msgstr "{{ n }} ezikhethiweyo"
 msgid "Edit"
 msgstr "Hlela"
 
-#: hashSign.ariaLabel
-msgid "Hash sign"
-msgstr "Umsayino weheshi"
-
 #: hideKeypad.ariaLabel
 msgid "Hide keypad"
 msgstr "Fihla ikhiphedi"
@@ -191,11 +179,6 @@ msgstr "Ongenayo"
 #: keypad.ariaLabel
 msgid "Keypad"
 msgstr "Ikhiphedi"
-
-#: keypadDelete.ariaLabel
-msgctxt "keypadDelete.ariaLabel"
-msgid "Delete"
-msgstr "Cima"
 
 #: makeCall.ariaLabel
 msgid "Make call"
@@ -259,10 +242,6 @@ msgstr "Qalisa ukunxibelelana ngoku"
 msgid "No missed calls"
 msgstr "Akukho minxeba ikuphosileyo"
 
-#: phoneNumberInput.ariaLabel
-msgid "Phone number"
-msgstr "Inombolo yefowuni"
-
 #: recents.ariaLabel
 msgid "Recent calls"
 msgstr "Umnxeba wakutshanje"
@@ -286,10 +265,6 @@ msgstr "Tshintsha iminxeba"
 #: today
 msgid "Today"
 msgstr "Namhlanje"
-
-#: voiceMailKey.ariaLabel
-msgid "Voicemail"
-msgstr "Ivoicemail"
 
 #: withheld-number
 msgid "Withheld number"
@@ -387,6 +362,10 @@ msgstr "Chola"
 #: unlock-a11y-button.ariaLabel
 msgid "Slider"
 msgstr "Islayida"
+
+#: roaming
+msgid "{{operator}} (Roaming)"
+msgstr ""
 
 #: settings
 msgid "Settings"
@@ -832,34 +811,11 @@ msgid "Rejected by remote"
 msgstr "Ikhatywe yekude"
 
 #. # Conference call
-#: conference
-msgctxt "conference"
-msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
-
-#: conference[one]
-msgctxt "conference[one]"
-msgid "Conference ({{ n }})"
-msgstr "Inkomfa ({{ n }})"
-
-#: conference[two]
-msgctxt "conference[two]"
-msgid "Conference ({{ n }})"
-msgstr "Inkomfa ({{ n }})"
-
-#: conference[few]
-msgctxt "conference[few]"
-msgid "Conference ({{ n }})"
-msgstr "Inkomfa ({{ n }})"
-
-#: conference[many]
-msgctxt "conference[many]"
-msgid "Conference ({{ n }})"
-msgstr "Inkomfa ({{ n }})"
-
-#: conference[other]
-msgctxt "conference[other]"
-msgid "Conference ({{ n }})"
+#. # LOCALIZATION NOTE(conferenceCall): {{n}} represents the number of
+#. # participants in the group call.
+#: conferenceCall
+#, fuzzy
+msgid "Conference ({{n}})"
 msgstr "Inkomfa ({{ n }})"
 
 #: caller-left-call
@@ -896,6 +852,45 @@ msgstr "Isamkeli"
 msgctxt "speaker"
 msgid "Speaker"
 msgstr "Isithethi"
+
+#~ msgid "Asterisk"
+#~ msgstr "Inkwenkwezi"
+
+#~ msgid "Cancel"
+#~ msgstr "Rhoxisa"
+
+#~ msgid "Hash sign"
+#~ msgstr "Umsayino weheshi"
+
+#~ msgctxt "keypadDelete.ariaLabel"
+#~ msgid "Delete"
+#~ msgstr "Cima"
+
+#~ msgid "Phone number"
+#~ msgstr "Inombolo yefowuni"
+
+#~ msgid "Voicemail"
+#~ msgstr "Ivoicemail"
+
+#~ msgctxt "conference"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "conference[two]"
+#~ msgid "Conference ({{ n }})"
+#~ msgstr "Inkomfa ({{ n }})"
+
+#~ msgctxt "conference[few]"
+#~ msgid "Conference ({{ n }})"
+#~ msgstr "Inkomfa ({{ n }})"
+
+#~ msgctxt "conference[many]"
+#~ msgid "Conference ({{ n }})"
+#~ msgstr "Inkomfa ({{ n }})"
+
+#~ msgctxt "conference[other]"
+#~ msgid "Conference ({{ n }})"
+#~ msgstr "Inkomfa ({{ n }})"
 
 #~ msgctxt "group-call"
 #~ msgid "{[ plural(n) ]}"

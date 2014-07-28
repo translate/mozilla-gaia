@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-24 11:19+0100\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-07-07 10:03+0000\n"
 "Last-Translator: Bansaj <bansajpradhan@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1404727389.000000\n"
@@ -84,6 +84,8 @@ msgid "Delete contact?"
 msgstr "सम्पर्क मेट्नुहुन्छ?"
 
 #: remove
+#, fuzzy
+msgctxt "remove"
 msgid "Remove"
 msgstr "हटाउनुहोस्"
 
@@ -103,6 +105,10 @@ msgstr "सम्पर्कको लागि फोन नम्बर छ�
 #: no_contact_email
 msgid "This contact does not have an email address"
 msgstr "सम्पर्कको लागि ईमेल ठेगाना छैन।"
+
+#: no_contact_data
+msgid "This contact does not have a phone number and email address"
+msgstr ""
 
 #: removePhotoConfirm
 msgid "Remove contact picture?"
@@ -183,10 +189,6 @@ msgstr "टिप्पणी"
 msgid "Company"
 msgstr "कम्पनी"
 
-#: custom.placeholder
-msgid "Custom"
-msgstr "अनुकूल"
-
 #: date
 msgctxt "date"
 msgid "Date"
@@ -252,64 +254,6 @@ msgstr "मनपर्नेहरूमा थप्नुहोस्"
 msgid "Remove as Favorite"
 msgstr "मनपर्नेहरूबाट हटाउनुहोस्"
 
-#. # Field labels
-#: label
-msgid "Label"
-msgstr "लेबुल"
-
-#: mobile
-msgid "Mobile"
-msgstr "मोबाइल"
-
-#: home
-msgid "Home"
-msgstr "गृह"
-
-#: work
-msgid "Work"
-msgstr "काम"
-
-#: personal
-msgid "Personal"
-msgstr "व्यक्तिगत"
-
-#: faxHome
-msgid "Fax home"
-msgstr "गृह फ्याक्स"
-
-#: faxOffice
-msgid "Fax office"
-msgstr "फ्याक्स कार्यालय"
-
-#: faxOther
-msgid "Fax other"
-msgstr "फ्याक्स अरु"
-
-#: another
-msgid "Another"
-msgstr "अर्को"
-
-#: other
-msgid "Other"
-msgstr "अरु"
-
-#: customTag.placeholder
-msgid "Custom tag"
-msgstr "अनुकूल ट्याग"
-
-#. # Note: For localizers. This tag indicates the current address
-#: current
-msgid "Current"
-msgstr "हालको"
-
-#. # LOCALIZATION NOTE(itemWithLabel): Parameters in this string will be replaced
-#. # at run-time: {{label}} is the label associated to phone number or email,
-#. # item is the number/email itself. Examples for English: "Home, +123456789" or
-#. # "Work, foo@example.com".
-#: itemWithLabel
-msgid "{{label}}, {{item}}"
-msgstr "{{label}}, {{item}}"
-
 #. # Hidden information, for screen readers
 #: exit
 msgid "Exit"
@@ -374,6 +318,10 @@ msgstr "इमेल ठेगाना"
 #: legendAddress
 msgid "Address"
 msgstr "ठेगाना"
+
+#: legendPhoto.ariaLabel
+msgid "Photo"
+msgstr ""
 
 #: settings
 msgid "Settings"
@@ -565,6 +513,10 @@ msgstr "मोबाइल चयन गर्नुहोस"
 #: select_email
 msgid "Select email"
 msgstr "इमेल चयन गर्नुहोस"
+
+#: select_recipient
+msgid "Select recipient"
+msgstr ""
 
 #. # Settings related
 #: contactsOrderBy
@@ -842,6 +794,65 @@ msgstr ""
 #: audio
 msgid "Audio"
 msgstr ""
+
+#. # Pick Destination
+#: pick_destination
+msgid "{{ destination }} {{ carrier }}"
+msgstr ""
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: removeField.ariaLabel
+#, fuzzy
+msgctxt "removeField.ariaLabel"
+msgid "Remove"
+msgstr "हटाउनुहोस्"
+
+#: undo.ariaLabel
+msgid "Undo"
+msgstr ""
+
+#~ msgid "Custom"
+#~ msgstr "अनुकूल"
+
+#~ msgid "Label"
+#~ msgstr "लेबुल"
+
+#~ msgid "Mobile"
+#~ msgstr "मोबाइल"
+
+#~ msgid "Home"
+#~ msgstr "गृह"
+
+#~ msgid "Work"
+#~ msgstr "काम"
+
+#~ msgid "Personal"
+#~ msgstr "व्यक्तिगत"
+
+#~ msgid "Fax home"
+#~ msgstr "गृह फ्याक्स"
+
+#~ msgid "Fax office"
+#~ msgstr "फ्याक्स कार्यालय"
+
+#~ msgid "Fax other"
+#~ msgstr "फ्याक्स अरु"
+
+#~ msgid "Another"
+#~ msgstr "अर्को"
+
+#~ msgid "Other"
+#~ msgstr "अरु"
+
+#~ msgid "Custom tag"
+#~ msgstr "अनुकूल ट्याग"
+
+#~ msgid "Current"
+#~ msgstr "हालको"
+
+#~ msgid "{{label}}, {{item}}"
+#~ msgstr "{{label}}, {{item}}"
 
 #~ msgid "Import SIM contacts"
 #~ msgstr "SIMको सम्पर्कहरु आयात गर्नुहोस्"
