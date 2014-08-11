@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-28 20:49+0100\n"
+"POT-Creation-Date: 2014-08-11 06:57+0000\n"
 "PO-Revision-Date: 2014-07-29 04:17+0000\n"
 "Last-Translator: Sutha <sutha@open.org.kh>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1406607428.000000\n"
@@ -375,6 +375,12 @@ msgstr "ជូន​ដំណឹង​ខ្ញុំ​នៅ​ពេល​ម
 msgid "MAC address"
 msgstr "អាសយដ្ឋាន MAC"
 
+#. # os = OS version. For example: 2.0.
+#. # The whole string may look like this: "Firefox OS 2.0"
+#: deviceInfo_software
+msgid "{{ brandShortName }} {{ os }}"
+msgstr ""
+
 #: macUnavailable
 msgctxt "macUnavailable"
 msgid "Not available"
@@ -466,9 +472,9 @@ msgstr "WPS ត្រូវ​បាន​បោះបង់"
 msgid "WPS timed out"
 msgstr "WPS បាន​អស់​ពេល"
 
-#: fullStatus-wps-failed
-msgid "WPS failed"
-msgstr "WPS បាន​បរាជ័យ"
+#: fullStatus-wps-failed-error
+msgid "WPS failed [{{error}}]"
+msgstr ""
 
 #: fullStatus-wps-overlapped
 msgid "Another WPS PBC AP was found"
@@ -515,9 +521,9 @@ msgstr "ណា​មួយ"
 msgid "Cancel WPS"
 msgstr "បោះបង់ WPS"
 
-#: wpsCancelFailedMessage
-msgid "Failed to cancel WPS"
-msgstr "បរាជ័យ​ក្នុង​ការ​បោះបង់ WPS"
+#: wpsCancelFailedMessageError
+msgid "Failed to cancel WPS [{{error}}]"
+msgstr ""
 
 #. # Connectivity :: Call
 #: callSettings
@@ -629,9 +635,9 @@ msgstr "បញ្ជូន​បន្ត​ពេល​មិន​អាច​
 msgid "When unreachable"
 msgstr "ពេល​មិន​អាច​ទាក់ទង​បាន"
 
-#: callForwardingForwardingVoiceTo
-msgid "Voice calls to"
-msgstr "ការ​ហៅ​ជា​សំឡេង​ទៅ"
+#: callForwardingForwardingVoiceToNumber
+msgid "Voice calls to {{number}}"
+msgstr ""
 
 #: callForwardingNotForwarding
 msgctxt "callForwardingNotForwarding"
@@ -851,11 +857,13 @@ msgid "{{messagingSettings}}"
 msgstr "{{messagingSettings}}"
 
 #: message-confirmation
-msgid "Message confirmation"
+#, fuzzy
+msgid "Message Confirmation"
 msgstr "បញ្ជាក់​សារ"
 
 #: message-delivery-reports
-msgid "Delivery reports"
+#, fuzzy
+msgid "Delivery Reports"
 msgstr "ការ​បញ្ជូន​របាយការណ៍"
 
 #: message-delivery-reports-details
@@ -863,7 +871,8 @@ msgid "Request notification of delivery for each message sent"
 msgstr "ស្នើ​ជូនដំណឹង​ការ​បញ្ជូន​សម្រាប់​សារ​នីមួយៗ​​ដែល​បាន​ផ្ញើ"
 
 #: message-read-reports
-msgid "Read reports"
+#, fuzzy
+msgid "Read Reports"
 msgstr "អាន​របាយការណ៍"
 
 #: message-read-reports-details
@@ -871,11 +880,13 @@ msgid "Request read report for each message sent"
 msgstr "ស្នើ​ការ​អាន​របាយការណ៍​សម្រាប់​សារ​នីមួយៗ​ដែល​បាន​ផ្ញើ"
 
 #: mmsTitle
-msgid "Multimedia messaging (MMS)"
+#, fuzzy
+msgid "Multimedia Messaging (MMS)"
 msgstr "Multimedia messaging (MMS)"
 
 #: auto-retrieve
-msgid "Auto retrieve"
+#, fuzzy
+msgid "Auto Retrieve"
 msgstr "ទៅ​យក​ដោយ​ស្វ័យប្រវត្តិ"
 
 #: auto-retrieve-details
@@ -899,7 +910,8 @@ msgid "Auto-configure"
 msgstr "កំណត់​​រចនាសម្ព័ន្ធ​ស្វ័យប្រវត្តិ"
 
 #: wapPushMessages
-msgid "WAP Push messages"
+#, fuzzy
+msgid "WAP Push Messages"
 msgstr "សារ WAP Push"
 
 #: wapPush
@@ -907,25 +919,31 @@ msgid "WAP Push"
 msgstr "WAP Push"
 
 #: cellBroadcastMessages
-msgid "Cell broadcast messages"
+#, fuzzy
+msgid "Cell Broadcast Messages"
 msgstr "សារ​ប្រកាស​ចល័ត"
 
 #: cellBroadcast
-msgid "Cell broadcast"
+#, fuzzy
+msgid "Cell Broadcast"
 msgstr "ការ​ផ្សាយ​ចល័ត"
+
+#: emergencyAlert
+msgid "Emergency Alert"
+msgstr ""
 
 #: messagingInformation
 msgid "Information"
 msgstr "ព័ត៌មាន"
 
 #. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
-#: messagingSMSC
-msgid "SMSC"
-msgstr "SMSC"
+#: messaging-SMSC
+msgid "Service Center"
+msgstr ""
 
-#: unknownSMSC
-msgid "Unknown number"
-msgstr "មិន​ស្គាល់​លេខ"
+#: unknown-SMSC
+msgid "Info not available"
+msgstr ""
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
@@ -1404,17 +1422,9 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "បាន​តភ្ជាប់"
 
-#: device-status-connected-phone
-msgid "Connected to phone audio"
-msgstr "បាន​ភ្ជាប់​ទៅ​អូឌីយ៉ូ​ទូរស័ព្ទ"
-
 #: device-status-connected-media
 msgid "Connected to media audio"
 msgstr "បាន​ភ្ជាប់​ទៅ​អូឌីយ៉ូ​មេឌៀ"
-
-#: device-status-connected-phone-media
-msgid "Connected to phone/media audio"
-msgstr "បាន​ភ្ជាប់​ទៅ​អូឌីយ៉ូទូរស័ព្ទ/មេឌៀ"
 
 #: device-option-unpair
 msgid "Unpair"
@@ -1456,10 +1466,6 @@ msgstr "ប្ដូរ​ឈ្មោះ​ឧបករណ៍​ខ្ញុំ
 #: unnamed-device
 msgid "Unknown device"
 msgstr "មិន​ស្គាល់​ឧបករណ៍"
-
-#: change-phone-name
-msgid "Change phone name"
-msgstr "ផ្លាស់ប្ដូរ​ឈ្មោះ​ទូរស័ព្ទ"
 
 #: change-phone-name-desc
 msgid "Change the name of your device as it appears in your computer"
@@ -1528,20 +1534,10 @@ msgstr "{{internetSharing}}"
 msgid "USB"
 msgstr "USB"
 
-#: internetSharing-usb-desc
-msgid "Share my phone’s Internet connection with a USB-connected device."
-msgstr "ចែករំលែក​ការ​ភ្ជាប់​អ៊ីនធឺណិត​​លើ​ទូរស័ព្ទ​របស់​ខ្ញុំ​ជាមួយ​ឧបករណ៍​ដែល​បាន​ភ្ជាប់​តាម USB។"
-
 #: internetSharing-wifi
 msgctxt "internetSharing-wifi"
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
-
-#: internetSharing-wifi-desc
-msgid ""
-"Allow other devices to share my phone’s Internet connection by connecting "
-"via Wi-Fi."
-msgstr "អនុញ្ញាត​ឧបករណ៍​ផ្សេង​ចែករំលែក​ការ​ភ្ជាប់​អ៊ីនធឺណិត​​​លើ​ទូរស័ព្ទ​របស់​ខ្ញុំ​ដោយ​ភ្ជាប់​តាម Wi-Fi ។"
 
 #: wifi-hotspot
 msgid "Wi-Fi hotspot"
@@ -1718,12 +1714,6 @@ msgstr "មេឌៀ"
 #: savingringtone
 msgid "Saving ringtone…"
 msgstr "កំពុង​រក្សាទុក​សំឡេង​រោទ៍..."
-
-#: unplayable-ringtone
-msgid ""
-"The ringtone was not changed because the selected file can not be played on "
-"this phone."
-msgstr "សំឡេង​រោទ៍​មិន​អាច​ត្រូវ​បាន​ប្ដូរ​ព្រោះ​ឯកសារ​បាន​ជ្រើស​មិន​អាច​ត្រូវ​បាន​ចាក់​លើ​ទូរស័ព្ទ​នេះ។"
 
 #: no-ringtone-app
 msgid "We were unable to find a ringtone app to manage ringtones!"
@@ -2239,10 +2229,6 @@ msgctxt "findmydevice"
 msgid "Find My Device"
 msgstr "ស្វែងរក​ឧបករណ៍​របស់​ខ្ញុំ"
 
-#: findmydevice-signup-description
-msgid "Find My Device allows you to locate, lock or erase your phone"
-msgstr "ស្វែងរក​ឧបករណ៍​របស់​ខ្ញុំ​អនុញ្ញាត​ឲ្យ​អ្នក​បម្រុង​ទុក, ចាក់សោ​ ឬ​លុប​ទូរស័ព្ទ​របស់​អ្នក"
-
 #: findmydevice-create-account
 msgctxt "findmydevice-create-account"
 msgid "Create account or sign in"
@@ -2255,12 +2241,6 @@ msgstr "បើក​ការ​ស្វែងរក​ឧបករណ៍​រ
 #: findmydevice-about
 msgid "About Find My Device"
 msgstr "អំពី​ការ​ស្វែងរក​ឧបករណ៍​របស់​ខ្ញុំ"
-
-#: findmydevice-settings-description
-msgid ""
-"Find My Device allows you to locate, lock or erase your phone from a web "
-"site:"
-msgstr "ស្វែងរក​ឧបករណ៍​របស់​ខ្ញុំ​អនុញ្ញាត​ឲ្យ​អ្នក​បម្រុង​ទុក, ចាក់សោ ឬ​លុប​ទូរស័ព្ទ​របស់​អ្នក​ពី​តំបន់​បណ្ដាញ៖"
 
 #: findmydevice-enable-geolocation-prompt
 msgid "Enable Geolocation?"
@@ -2278,14 +2258,6 @@ msgstr "បាន​បើក​ទីតាំង​ភូមិសាស្ត
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
 msgstr "ឧបករណ៍​នេះ​បច្ចុប្បន្ន​នៅ​ក្រៅបណ្ដាញ។ ភ្ជាប់បណ្ដាញ ហើយ​ព្យាយាម​ម្ដង​ទៀត។"
-
-#: findmydevice-active-tracking
-msgid "Your phone is being tracked by another device through the website."
-msgstr "ទូរស័ព្ទ​​របស់អ្នកកំពុង​ត្រូវ​បាន​តាមដាន​ដោយ​ឧបករណ៍ផ្សេង​តាមរយៈ​​វេបសាយ។"
-
-#: findmydevice-not-tracking
-msgid "No devices are actively tracking your phone through the website."
-msgstr "គ្មាន​ឧបករណ៍​កំពុងតាមដាន​ទូរស័ព្ទ​របស់​អ្នក​សកម្ម​តាមរយៈ​វេបសាយ​ទេ។"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -3009,14 +2981,6 @@ msgstr "កម្រិត​ខ្ពស់"
 msgid "Enable USB storage?"
 msgstr "បើក​ឧបករណ៍​យូអេសប៊ី?"
 
-#: turn-on-ums-confirm
-msgid ""
-"Turning on Enable USB storage allows another computer or device connected "
-"using USB to access files on this phone."
-msgstr ""
-"ការ​បើក​ឧបករណ៍​ផ្ទុក​យូអេសប៊ី គឺ​អនុញ្ញាត​ឲ្យ​កុំព្យូទ័រ ឬ​ឧបករណ៍​ផ្សេង​តភ្ជាប់​ដោយ​ប្រើ​យូអេសប៊ី​ដើម្បី​ចូល​ប្រើ​ឯកសារ​នៅ​"
-"លើ​ទូរស័ព្ទ​នេះ។"
-
 #: default-media-location
 msgid "Default media location"
 msgstr "ទីតាំង​មេឌៀ​លំនាំដើម"
@@ -3293,6 +3257,14 @@ msgstr "ក្បឿង"
 msgid "Simple tiling"
 msgstr "Simple tiling"
 
+#: low-precision
+msgid "Low-precision painting"
+msgstr ""
+
+#: low-opacity
+msgid "Low-precision transparency"
+msgstr ""
+
 #: draw-tile-borders
 msgid "Draw tile borders"
 msgstr "គូរ​ក្រឡា​ស៊ុម"
@@ -3469,22 +3441,9 @@ msgctxt "reset-head"
 msgid "Reset"
 msgstr "កំណត់​ឡើង​វិញ"
 
-#: reset-phone
-msgid "Reset Phone"
-msgstr "កំណត់​ទូរស័ព្ទ​ឡើងវិញ"
-
 #: reset-warning-title
 msgid "CAUTION"
 msgstr "ប្រយ័ត្ន"
-
-#: reset-warning-body
-msgid ""
-"Resetting will erase all your data, including any apps you’ve purchased. The "
-"phone will be restored to its factory condition. None of your settings or "
-"data will be saved."
-msgstr ""
-"ការ​កំណត់​ឡើងវិញ​នឹង​លុប​ទិន្នន័យ​របស់​អ្នក​ទាំងអស់ រួមមាន​កម្មវិធី​ណាមួយ​ដែល​អ្នក​បានទិញ។ ទូរស័ព្ទ​នឹង​ត្រូវ​បានស្ដារ​"
-"ទៅ​ស្ថានភាព​ដូច​ពេលចេញ​ពីរោងចក្រ។ គ្មាន​ការកំណត់​របស់​អ្នក ឬ​ទិន្នន័យ​នឹង​ត្រូវ​បាន​រក្សាទុក​ទេ។"
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
 #: your-rights
@@ -3739,15 +3698,6 @@ msgstr "របៀប​សន្សំ​ថាមពល"
 msgid "{{level}}% battery left"
 msgstr "ថ្ម​នៅ​សល់ {{level}}%"
 
-#: powerSave-explanation
-msgid ""
-"Turning on power save mode turns off the phone’s data, Bluetooth and "
-"Geolocation connections to extend battery life. You can still turn these "
-"services back on manually."
-msgstr ""
-"ការ​បើក​របៀប​សន្សំ​ថាមពល គឺ​បិទ​ទិន្នន័យ, ការ​តភ្ជាប់​ប៊្លូធូស និង​ទីតាំង​ភូមិសាស្ត្រ​របស់​ទូរស័ព្ទ ដើម្បី​​​បន្លាយ​ពេល​"
-"ប្រើប្រាស់​ថ្ម។ អ្នក​នៅ​តែ​អាច​បើក​សេវា​ទាំងនេះ​វិញ​បាន​ដោយ​ដៃ។"
-
 #: turnOnAuto
 msgid "Turn on automatically"
 msgstr "បើក​ដោយ​ស្វ័យប្រវត្តិ"
@@ -3841,14 +3791,6 @@ msgstr "ផ្ញើ​មតិ​ត្រឡប់​ឲ្យ Mozilla"
 #: performanceAndUsageData
 msgid "Performance and usage data"
 msgstr "ទិន្នន័យ​​ការ​ប្រើប្រាស់ និង​ការ​អនុវត្ត"
-
-#: performanceAndUsageDataInfo
-msgid ""
-"Help us improve {{brandShortName}} by sharing data about your phone and the "
-"way you use it."
-msgstr ""
-"ជួយ​​ពួក​យើង​ធ្វើ​ឲ្យ {{brandShortName}} ប្រសើរ​ដោយ​ការ​ចែករំលែក​ទិន្នន័យ​​លេខ​ទូរស័ព្ទ និង​វិធី​ដែល​អ្នក​ប្រើ​"
-"វា។"
 
 #: sharePerformanceAndUsageData
 msgid "Submit data"
@@ -4148,6 +4090,101 @@ msgstr "ផ្ញើ​ទិន្នន័យ"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "យល់​ស្ថានភាព​ឆានែល"
+
+#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
+#: is-warning-head
+msgid "{{newSetting}}"
+msgstr ""
+
+#: is-warning-message
+msgid ""
+"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
+"{{newSetting}}?"
+msgstr ""
+
+#~ msgid "WPS failed"
+#~ msgstr "WPS បាន​បរាជ័យ"
+
+#~ msgid "Failed to cancel WPS"
+#~ msgstr "បរាជ័យ​ក្នុង​ការ​បោះបង់ WPS"
+
+#~ msgid "Voice calls to"
+#~ msgstr "ការ​ហៅ​ជា​សំឡេង​ទៅ"
+
+#~ msgid "SMSC"
+#~ msgstr "SMSC"
+
+#~ msgid "Unknown number"
+#~ msgstr "មិន​ស្គាល់​លេខ"
+
+#~ msgid "Connected to phone audio"
+#~ msgstr "បាន​ភ្ជាប់​ទៅ​អូឌីយ៉ូ​ទូរស័ព្ទ"
+
+#~ msgid "Connected to phone/media audio"
+#~ msgstr "បាន​ភ្ជាប់​ទៅ​អូឌីយ៉ូទូរស័ព្ទ/មេឌៀ"
+
+#~ msgid "Change phone name"
+#~ msgstr "ផ្លាស់ប្ដូរ​ឈ្មោះ​ទូរស័ព្ទ"
+
+#~ msgid "Share my phone’s Internet connection with a USB-connected device."
+#~ msgstr "ចែករំលែក​ការ​ភ្ជាប់​អ៊ីនធឺណិត​​លើ​ទូរស័ព្ទ​របស់​ខ្ញុំ​ជាមួយ​ឧបករណ៍​ដែល​បាន​ភ្ជាប់​តាម USB។"
+
+#~ msgid ""
+#~ "Allow other devices to share my phone’s Internet connection by connecting "
+#~ "via Wi-Fi."
+#~ msgstr "អនុញ្ញាត​ឧបករណ៍​ផ្សេង​ចែករំលែក​ការ​ភ្ជាប់​អ៊ីនធឺណិត​​​លើ​ទូរស័ព្ទ​របស់​ខ្ញុំ​ដោយ​ភ្ជាប់​តាម Wi-Fi ។"
+
+#~ msgid ""
+#~ "The ringtone was not changed because the selected file can not be played "
+#~ "on this phone."
+#~ msgstr "សំឡេង​រោទ៍​មិន​អាច​ត្រូវ​បាន​ប្ដូរ​ព្រោះ​ឯកសារ​បាន​ជ្រើស​មិន​អាច​ត្រូវ​បាន​ចាក់​លើ​ទូរស័ព្ទ​នេះ។"
+
+#~ msgid "Find My Device allows you to locate, lock or erase your phone"
+#~ msgstr "ស្វែងរក​ឧបករណ៍​របស់​ខ្ញុំ​អនុញ្ញាត​ឲ្យ​អ្នក​បម្រុង​ទុក, ចាក់សោ​ ឬ​លុប​ទូរស័ព្ទ​របស់​អ្នក"
+
+#~ msgid ""
+#~ "Find My Device allows you to locate, lock or erase your phone from a web "
+#~ "site:"
+#~ msgstr "ស្វែងរក​ឧបករណ៍​របស់​ខ្ញុំ​អនុញ្ញាត​ឲ្យ​អ្នក​បម្រុង​ទុក, ចាក់សោ ឬ​លុប​ទូរស័ព្ទ​របស់​អ្នក​ពី​តំបន់​បណ្ដាញ៖"
+
+#~ msgid "Your phone is being tracked by another device through the website."
+#~ msgstr "ទូរស័ព្ទ​​របស់អ្នកកំពុង​ត្រូវ​បាន​តាមដាន​ដោយ​ឧបករណ៍ផ្សេង​តាមរយៈ​​វេបសាយ។"
+
+#~ msgid "No devices are actively tracking your phone through the website."
+#~ msgstr "គ្មាន​ឧបករណ៍​កំពុងតាមដាន​ទូរស័ព្ទ​របស់​អ្នក​សកម្ម​តាមរយៈ​វេបសាយ​ទេ។"
+
+#~ msgid ""
+#~ "Turning on Enable USB storage allows another computer or device connected "
+#~ "using USB to access files on this phone."
+#~ msgstr ""
+#~ "ការ​បើក​ឧបករណ៍​ផ្ទុក​យូអេសប៊ី គឺ​អនុញ្ញាត​ឲ្យ​កុំព្យូទ័រ ឬ​ឧបករណ៍​ផ្សេង​តភ្ជាប់​ដោយ​ប្រើ​យូអេសប៊ី​ដើម្បី​ចូល​ប្រើ​"
+#~ "ឯកសារ​នៅ​លើ​ទូរស័ព្ទ​នេះ។"
+
+#~ msgid "Reset Phone"
+#~ msgstr "កំណត់​ទូរស័ព្ទ​ឡើងវិញ"
+
+#~ msgid ""
+#~ "Resetting will erase all your data, including any apps you’ve purchased. "
+#~ "The phone will be restored to its factory condition. None of your "
+#~ "settings or data will be saved."
+#~ msgstr ""
+#~ "ការ​កំណត់​ឡើងវិញ​នឹង​លុប​ទិន្នន័យ​របស់​អ្នក​ទាំងអស់ រួមមាន​កម្មវិធី​ណាមួយ​ដែល​អ្នក​បានទិញ។ ទូរស័ព្ទ​នឹង​ត្រូវ​"
+#~ "បានស្ដារ​ទៅ​ស្ថានភាព​ដូច​ពេលចេញ​ពីរោងចក្រ។ គ្មាន​ការកំណត់​របស់​អ្នក ឬ​ទិន្នន័យ​នឹង​ត្រូវ​បាន​រក្សាទុក​ទេ។"
+
+#~ msgid ""
+#~ "Turning on power save mode turns off the phone’s data, Bluetooth and "
+#~ "Geolocation connections to extend battery life. You can still turn these "
+#~ "services back on manually."
+#~ msgstr ""
+#~ "ការ​បើក​របៀប​សន្សំ​ថាមពល គឺ​បិទ​ទិន្នន័យ, ការ​តភ្ជាប់​ប៊្លូធូស និង​ទីតាំង​ភូមិសាស្ត្រ​របស់​ទូរស័ព្ទ ដើម្បី​​​បន្លាយ​"
+#~ "ពេល​ប្រើប្រាស់​ថ្ម។ អ្នក​នៅ​តែ​អាច​បើក​សេវា​ទាំងនេះ​វិញ​បាន​ដោយ​ដៃ។"
+
+#~ msgid ""
+#~ "Help us improve {{brandShortName}} by sharing data about your phone and "
+#~ "the way you use it."
+#~ msgstr ""
+#~ "ជួយ​​ពួក​យើង​ធ្វើ​ឲ្យ {{brandShortName}} ប្រសើរ​ដោយ​ការ​ចែករំលែក​ទិន្នន័យ​​លេខ​ទូរស័ព្ទ និង​វិធី​ដែល​អ្នក​"
+#~ "ប្រើ​វា។"
 
 #~ msgctxt "search-suggestions-button"
 #~ msgid "{{search-suggestions}}"

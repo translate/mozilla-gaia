@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-28 20:49+0100\n"
+"POT-Creation-Date: 2014-08-11 06:57+0000\n"
 "PO-Revision-Date: 2014-01-05 14:07+0000\n"
 "Last-Translator: Baurzhan <baurthefirst@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1388930863.000000\n"
@@ -378,6 +378,12 @@ msgstr "Ашық желі қолжетерлік болса, маған айту
 msgid "MAC address"
 msgstr "MAC адресі"
 
+#. # os = OS version. For example: 2.0.
+#. # The whole string may look like this: "Firefox OS 2.0"
+#: deviceInfo_software
+msgid "{{ brandShortName }} {{ os }}"
+msgstr ""
+
 #: macUnavailable
 msgctxt "macUnavailable"
 msgid "Not available"
@@ -469,9 +475,9 @@ msgstr "WPS-тен бас тартылды"
 msgid "WPS timed out"
 msgstr "WPS күту уақыты аяқталды"
 
-#: fullStatus-wps-failed
-msgid "WPS failed"
-msgstr "WPS сәтсіз"
+#: fullStatus-wps-failed-error
+msgid "WPS failed [{{error}}]"
+msgstr ""
 
 #: fullStatus-wps-overlapped
 msgid "Another WPS PBC AP was found"
@@ -518,9 +524,9 @@ msgstr ""
 msgid "Cancel WPS"
 msgstr "WPS-тан бас тарту"
 
-#: wpsCancelFailedMessage
-msgid "Failed to cancel WPS"
-msgstr "WPS-тан бас тарту сәтсіз аяқталды"
+#: wpsCancelFailedMessageError
+msgid "Failed to cancel WPS [{{error}}]"
+msgstr ""
 
 #. # Connectivity :: Call
 #: callSettings
@@ -634,9 +640,9 @@ msgstr "Қолжетерсіз кезде қайта бағдарлау"
 msgid "When unreachable"
 msgstr "Қолжетерсіз кезінде"
 
-#: callForwardingForwardingVoiceTo
-msgid "Voice calls to"
-msgstr "Дауыс қоңыраулары"
+#: callForwardingForwardingVoiceToNumber
+msgid "Voice calls to {{number}}"
+msgstr ""
 
 #: callForwardingNotForwarding
 msgctxt "callForwardingNotForwarding"
@@ -876,11 +882,12 @@ msgstr ""
 
 #: message-confirmation
 #, fuzzy
-msgid "Message confirmation"
+msgid "Message Confirmation"
 msgstr "Мәтіндік хабарламаны растау"
 
 #: message-delivery-reports
-msgid "Delivery reports"
+#, fuzzy
+msgid "Delivery Reports"
 msgstr "Жеткізу есептемелері"
 
 #: message-delivery-reports-details
@@ -889,7 +896,7 @@ msgid "Request notification of delivery for each message sent"
 msgstr "Әр жіберілген хабарлама үшін жеткізу ескертуін сұрау"
 
 #: message-read-reports
-msgid "Read reports"
+msgid "Read Reports"
 msgstr ""
 
 #: message-read-reports-details
@@ -897,11 +904,13 @@ msgid "Request read report for each message sent"
 msgstr ""
 
 #: mmsTitle
-msgid "Multimedia messaging (MMS)"
+#, fuzzy
+msgid "Multimedia Messaging (MMS)"
 msgstr "Мультимедиа хабарламалары (MMS)"
 
 #: auto-retrieve
-msgid "Auto retrieve"
+#, fuzzy
+msgid "Auto Retrieve"
 msgstr "Автоқабылдау"
 
 #: auto-retrieve-details
@@ -925,7 +934,7 @@ msgid "Auto-configure"
 msgstr "Автобаптау"
 
 #: wapPushMessages
-msgid "WAP Push messages"
+msgid "WAP Push Messages"
 msgstr ""
 
 #: wapPush
@@ -933,11 +942,15 @@ msgid "WAP Push"
 msgstr ""
 
 #: cellBroadcastMessages
-msgid "Cell broadcast messages"
+msgid "Cell Broadcast Messages"
 msgstr ""
 
 #: cellBroadcast
-msgid "Cell broadcast"
+msgid "Cell Broadcast"
+msgstr ""
+
+#: emergencyAlert
+msgid "Emergency Alert"
 msgstr ""
 
 #: messagingInformation
@@ -946,13 +959,12 @@ msgid "Information"
 msgstr "Растау"
 
 #. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
-#: messagingSMSC
-#, fuzzy
-msgid "SMSC"
-msgstr "MMSC"
+#: messaging-SMSC
+msgid "Service Center"
+msgstr ""
 
-#: unknownSMSC
-msgid "Unknown number"
+#: unknown-SMSC
+msgid "Info not available"
 msgstr ""
 
 #. # Connectivity :: Cellular & Data
@@ -1438,16 +1450,8 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "Байланысқан"
 
-#: device-status-connected-phone
-msgid "Connected to phone audio"
-msgstr ""
-
 #: device-status-connected-media
 msgid "Connected to media audio"
-msgstr ""
-
-#: device-status-connected-phone-media
-msgid "Connected to phone/media audio"
 msgstr ""
 
 #: device-option-unpair
@@ -1490,10 +1494,6 @@ msgstr "Менің құрылғымның атын ауыстыру"
 #: unnamed-device
 msgid "Unknown device"
 msgstr "Белгісіз құрылғы"
-
-#: change-phone-name
-msgid "Change phone name"
-msgstr "Телефон атын ауыстыру"
 
 #: change-phone-name-desc
 msgid "Change the name of your device as it appears in your computer"
@@ -1566,24 +1566,10 @@ msgstr ""
 msgid "USB"
 msgstr "USB"
 
-#: internetSharing-usb-desc
-msgid "Share my phone’s Internet connection with a USB-connected device."
-msgstr ""
-"Менің телефонымдағы Интернет байланысымен USB арқылы байланысқан құрылғымен "
-"бөлісу."
-
 #: internetSharing-wifi
 msgctxt "internetSharing-wifi"
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
-
-#: internetSharing-wifi-desc
-msgid ""
-"Allow other devices to share my phone’s Internet connection by connecting "
-"via Wi-Fi."
-msgstr ""
-"Басқа құрылғыларға менің телефонымдағы Интернетке байланысын Wi-Fi арқылы "
-"қосылып, қолдануға рұқсат ету."
 
 #: wifi-hotspot
 msgid "Wi-Fi hotspot"
@@ -1761,12 +1747,6 @@ msgstr ""
 
 #: savingringtone
 msgid "Saving ringtone…"
-msgstr ""
-
-#: unplayable-ringtone
-msgid ""
-"The ringtone was not changed because the selected file can not be played on "
-"this phone."
 msgstr ""
 
 #: no-ringtone-app
@@ -2285,10 +2265,6 @@ msgctxt "findmydevice"
 msgid "Find My Device"
 msgstr ""
 
-#: findmydevice-signup-description
-msgid "Find My Device allows you to locate, lock or erase your phone"
-msgstr ""
-
 #: findmydevice-create-account
 msgctxt "findmydevice-create-account"
 msgid "Create account or sign in"
@@ -2300,12 +2276,6 @@ msgstr ""
 
 #: findmydevice-about
 msgid "About Find My Device"
-msgstr ""
-
-#: findmydevice-settings-description
-msgid ""
-"Find My Device allows you to locate, lock or erase your phone from a web "
-"site:"
 msgstr ""
 
 #: findmydevice-enable-geolocation-prompt
@@ -2323,14 +2293,6 @@ msgstr ""
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
-msgstr ""
-
-#: findmydevice-active-tracking
-msgid "Your phone is being tracked by another device through the website."
-msgstr ""
-
-#: findmydevice-not-tracking
-msgid "No devices are actively tracking your phone through the website."
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3091,14 +3053,6 @@ msgstr "Кеңейтілген"
 msgid "Enable USB storage?"
 msgstr "USB жинақтауышын іске қосу"
 
-#: turn-on-ums-confirm
-msgid ""
-"Turning on Enable USB storage allows another computer or device connected "
-"using USB to access files on this phone."
-msgstr ""
-"USB жинақтауышын іске қосу нәтижесінде USB арқылы жалғанған басқа компьютер "
-"не құрылғыға бұл телефондағы файлдарды көре алады."
-
 #: default-media-location
 msgid "Default media location"
 msgstr "Медианың үнсіз келісім бойынша орналасуы"
@@ -3381,6 +3335,14 @@ msgstr ""
 msgid "Simple tiling"
 msgstr ""
 
+#: low-precision
+msgid "Low-precision painting"
+msgstr ""
+
+#: low-opacity
+msgid "Low-precision transparency"
+msgstr ""
+
 #: draw-tile-borders
 msgid "Draw tile borders"
 msgstr ""
@@ -3561,19 +3523,8 @@ msgctxt "reset-head"
 msgid "Reset"
 msgstr "Тастау"
 
-#: reset-phone
-msgid "Reset Phone"
-msgstr "Телефонды бастапқы күйіне тастау"
-
 #: reset-warning-title
 msgid "CAUTION"
-msgstr ""
-
-#: reset-warning-body
-msgid ""
-"Resetting will erase all your data, including any apps you’ve purchased. The "
-"phone will be restored to its factory condition. None of your settings or "
-"data will be saved."
 msgstr ""
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
@@ -3810,13 +3761,6 @@ msgstr "Қуатты үнемдеу режимі"
 msgid "{{level}}% battery left"
 msgstr "{{level}}% батарея қалды"
 
-#: powerSave-explanation
-msgid ""
-"Turning on power save mode turns off the phone’s data, Bluetooth and "
-"Geolocation connections to extend battery life. You can still turn these "
-"services back on manually."
-msgstr ""
-
 #: turnOnAuto
 msgid "Turn on automatically"
 msgstr "Автоматты түрде іске қосу"
@@ -3907,12 +3851,6 @@ msgstr "Mozilla кері байланыс хабарламасын жіберу"
 
 #: performanceAndUsageData
 msgid "Performance and usage data"
-msgstr ""
-
-#: performanceAndUsageDataInfo
-msgid ""
-"Help us improve {{brandShortName}} by sharing data about your phone and the "
-"way you use it."
 msgstr ""
 
 #: sharePerformanceAndUsageData
@@ -4203,6 +4141,55 @@ msgstr "Деректерді жіберу"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Арна күйін алу"
+
+#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
+#: is-warning-head
+msgid "{{newSetting}}"
+msgstr ""
+
+#: is-warning-message
+msgid ""
+"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
+"{{newSetting}}?"
+msgstr ""
+
+#~ msgid "WPS failed"
+#~ msgstr "WPS сәтсіз"
+
+#~ msgid "Failed to cancel WPS"
+#~ msgstr "WPS-тан бас тарту сәтсіз аяқталды"
+
+#~ msgid "Voice calls to"
+#~ msgstr "Дауыс қоңыраулары"
+
+#, fuzzy
+#~ msgid "SMSC"
+#~ msgstr "MMSC"
+
+#~ msgid "Change phone name"
+#~ msgstr "Телефон атын ауыстыру"
+
+#~ msgid "Share my phone’s Internet connection with a USB-connected device."
+#~ msgstr ""
+#~ "Менің телефонымдағы Интернет байланысымен USB арқылы байланысқан "
+#~ "құрылғымен бөлісу."
+
+#~ msgid ""
+#~ "Allow other devices to share my phone’s Internet connection by connecting "
+#~ "via Wi-Fi."
+#~ msgstr ""
+#~ "Басқа құрылғыларға менің телефонымдағы Интернетке байланысын Wi-Fi арқылы "
+#~ "қосылып, қолдануға рұқсат ету."
+
+#~ msgid ""
+#~ "Turning on Enable USB storage allows another computer or device connected "
+#~ "using USB to access files on this phone."
+#~ msgstr ""
+#~ "USB жинақтауышын іске қосу нәтижесінде USB арқылы жалғанған басқа "
+#~ "компьютер не құрылғыға бұл телефондағы файлдарды көре алады."
+
+#~ msgid "Reset Phone"
+#~ msgstr "Телефонды бастапқы күйіне тастау"
 
 #~ msgid "After 5 seconds"
 #~ msgstr "5 секундтан кейін"

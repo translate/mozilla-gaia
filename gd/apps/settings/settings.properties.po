@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-28 20:49+0100\n"
+"POT-Creation-Date: 2014-08-11 06:57+0000\n"
 "PO-Revision-Date: 2014-07-31 00:24+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -380,6 +380,12 @@ msgstr "Thoir brath dhomh nuair a bhios lìonra fosgailte ri làimh"
 msgid "MAC address"
 msgstr "Seòladh MAC"
 
+#. # os = OS version. For example: 2.0.
+#. # The whole string may look like this: "Firefox OS 2.0"
+#: deviceInfo_software
+msgid "{{ brandShortName }} {{ os }}"
+msgstr ""
+
 #: macUnavailable
 msgctxt "macUnavailable"
 msgid "Not available"
@@ -474,9 +480,9 @@ msgstr "Sguireadh dhen WPS"
 msgid "WPS timed out"
 msgstr "Dh'fhalbh an ùine air WPS"
 
-#: fullStatus-wps-failed
-msgid "WPS failed"
-msgstr "Dh'fhàillig WPS"
+#: fullStatus-wps-failed-error
+msgid "WPS failed [{{error}}]"
+msgstr ""
 
 #: fullStatus-wps-overlapped
 msgid "Another WPS PBC AP was found"
@@ -523,9 +529,9 @@ msgstr "Gin"
 msgid "Cancel WPS"
 msgstr "Sguir dhen WPS"
 
-#: wpsCancelFailedMessage
-msgid "Failed to cancel WPS"
-msgstr "Dh'fhàillig an ceangal ri WPS"
+#: wpsCancelFailedMessageError
+msgid "Failed to cancel WPS [{{error}}]"
+msgstr ""
 
 #. # Connectivity :: Call
 #: callSettings
@@ -639,9 +645,9 @@ msgstr "Sìn air adhart mura gabh a ruigsinn"
 msgid "When unreachable"
 msgstr "Nuair nach gabh a ruigsinn"
 
-#: callForwardingForwardingVoiceTo
-msgid "Voice calls to"
-msgstr "Gairmean gutha gu"
+#: callForwardingForwardingVoiceToNumber
+msgid "Voice calls to {{number}}"
+msgstr ""
 
 #: callForwardingNotForwarding
 msgctxt "callForwardingNotForwarding"
@@ -864,11 +870,13 @@ msgid "{{messagingSettings}}"
 msgstr "{{messagingSettings}}"
 
 #: message-confirmation
-msgid "Message confirmation"
+#, fuzzy
+msgid "Message Confirmation"
 msgstr "Dearbhadh na teachdaireachd"
 
 #: message-delivery-reports
-msgid "Delivery reports"
+#, fuzzy
+msgid "Delivery Reports"
 msgstr "Aithisgean libhrigidh"
 
 #: message-delivery-reports-details
@@ -876,7 +884,8 @@ msgid "Request notification of delivery for each message sent"
 msgstr "Iarr brath libhrigidh airson gach teachdaireachd a thèid a chur"
 
 #: message-read-reports
-msgid "Read reports"
+#, fuzzy
+msgid "Read Reports"
 msgstr "Aithrisean leughaidh"
 
 #: message-read-reports-details
@@ -884,11 +893,13 @@ msgid "Request read report for each message sent"
 msgstr "Iarr aithris leughaidh airson gach teachdaireachd a chuirear"
 
 #: mmsTitle
-msgid "Multimedia messaging (MMS)"
+#, fuzzy
+msgid "Multimedia Messaging (MMS)"
 msgstr "Multimedia Messaging (MMS)"
 
 #: auto-retrieve
-msgid "Auto retrieve"
+#, fuzzy
+msgid "Auto Retrieve"
 msgstr "Faigh gu fèin-obrachail"
 
 #: auto-retrieve-details
@@ -912,7 +923,8 @@ msgid "Auto-configure"
 msgstr "Fèin-rèitich"
 
 #: wapPushMessages
-msgid "WAP Push messages"
+#, fuzzy
+msgid "WAP Push Messages"
 msgstr "Teachdaireachdan WAP Push"
 
 #: wapPush
@@ -920,25 +932,31 @@ msgid "WAP Push"
 msgstr "WAP Push"
 
 #: cellBroadcastMessages
-msgid "Cell broadcast messages"
+#, fuzzy
+msgid "Cell Broadcast Messages"
 msgstr "Teachdaireachdan craoladh an fhòn-làimhe"
 
 #: cellBroadcast
-msgid "Cell broadcast"
+#, fuzzy
+msgid "Cell Broadcast"
 msgstr "Craoladh an fhòn-làimhe"
+
+#: emergencyAlert
+msgid "Emergency Alert"
+msgstr ""
 
 #: messagingInformation
 msgid "Information"
 msgstr "Fiosrachadh"
 
 #. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
-#: messagingSMSC
-msgid "SMSC"
-msgstr "SMSC"
+#: messaging-SMSC
+msgid "Service Center"
+msgstr ""
 
-#: unknownSMSC
-msgid "Unknown number"
-msgstr "Àireamh neo-aithnichte"
+#: unknown-SMSC
+msgid "Info not available"
+msgstr ""
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
@@ -1421,17 +1439,9 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "Air ceangal a dhèanamh"
 
-#: device-status-connected-phone
-msgid "Connected to phone audio"
-msgstr "Ceangailte ri fuaim an fhòn"
-
 #: device-status-connected-media
 msgid "Connected to media audio"
 msgstr "Ceangailte ri fuaim meadhain"
-
-#: device-status-connected-phone-media
-msgid "Connected to phone/media audio"
-msgstr "Ceangailte ri fuaim meadhain/an fhòn"
 
 #: device-option-unpair
 msgid "Unpair"
@@ -1473,10 +1483,6 @@ msgstr "Thoir ainm ùr air an uidheam agam"
 #: unnamed-device
 msgid "Unknown device"
 msgstr "Uidheam neo-aithnichte"
-
-#: change-phone-name
-msgid "Change phone name"
-msgstr "Atharraich ainm an fhòn"
 
 #: change-phone-name-desc
 msgid "Change the name of your device as it appears in your computer"
@@ -1552,24 +1558,10 @@ msgstr "{{internetSharing}}"
 msgid "USB"
 msgstr "USB"
 
-#: internetSharing-usb-desc
-msgid "Share my phone’s Internet connection with a USB-connected device."
-msgstr ""
-"Co-roinn ceangal an fhòn agam ris an eadar-lìon le uidheam a tha ceangailte "
-"air USB."
-
 #: internetSharing-wifi
 msgctxt "internetSharing-wifi"
 msgid "Wi-Fi"
 msgstr "WiFi"
-
-#: internetSharing-wifi-desc
-msgid ""
-"Allow other devices to share my phone’s Internet connection by connecting "
-"via Wi-Fi."
-msgstr ""
-"Leig le uidheaman eile ceangal an fhòn agam ris an eadar-lìon a cho-"
-"roinneadh air WiFi."
 
 #: wifi-hotspot
 msgid "Wi-Fi hotspot"
@@ -1746,14 +1738,6 @@ msgstr "Meadhanan"
 #: savingringtone
 msgid "Saving ringtone…"
 msgstr "A’ sàbhaladh na seirme…"
-
-#: unplayable-ringtone
-msgid ""
-"The ringtone was not changed because the selected file can not be played on "
-"this phone."
-msgstr ""
-"Cha deach an t-seirm atharrachadh air sgàth 's nach urrainn dhuinn am "
-"faidhle a thagh thu a chluich air an fhòn seo."
 
 #: no-ringtone-app
 msgid "We were unable to find a ringtone app to manage ringtones!"
@@ -2279,12 +2263,6 @@ msgctxt "findmydevice"
 msgid "Find My Device"
 msgstr "Lorg an t-uidheam agam"
 
-#: findmydevice-signup-description
-msgid "Find My Device allows you to locate, lock or erase your phone"
-msgstr ""
-"’S urrainn dhut am fòn agad a lorg leis a’ ghleus “Lorg an t-uidheam agam”, "
-"a ghlasadh no a suathadh bàn."
-
 #: findmydevice-create-account
 msgctxt "findmydevice-create-account"
 msgid "Create account or sign in"
@@ -2297,14 +2275,6 @@ msgstr "Cuir an gleus “Lorg an t-uidheam agam” an comas"
 #: findmydevice-about
 msgid "About Find My Device"
 msgstr "Mu dhèidhinn a’ ghleus “Lorg an t-uidheam agam”"
-
-#: findmydevice-settings-description
-msgid ""
-"Find My Device allows you to locate, lock or erase your phone from a web "
-"site:"
-msgstr ""
-"’S urrainn dhut am fòn agad a lorg leis a’ ghleus “Lorg an t-uidheam agam”, "
-"a ghlasadh no a suathadh bàn o làrach-lìn:"
 
 #: findmydevice-enable-geolocation-prompt
 msgid "Enable Geolocation?"
@@ -2325,16 +2295,6 @@ msgid "This device is currently offline. Connect to a network and try again."
 msgstr ""
 "Tha an t-uidheam seo far loidhne an-dràsta. Ceangail ri lìonra ’s feuch ris "
 "a-rithist."
-
-#: findmydevice-active-tracking
-msgid "Your phone is being tracked by another device through the website."
-msgstr "Tha uidheam eile a’ tracadh an fhòn agad slighe na làraich-lìn."
-
-#: findmydevice-not-tracking
-msgid "No devices are actively tracking your phone through the website."
-msgstr ""
-"Chan eil uidheam sam bith a’ tracadh an fhòn agad slighe na làraich-lìn aig "
-"an àm seo."
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -3088,15 +3048,6 @@ msgstr "Adhartach"
 msgid "Enable USB storage?"
 msgstr "A bheil thu airson an stòras USB a chur an comas?"
 
-#: turn-on-ums-confirm
-msgid ""
-"Turning on Enable USB storage allows another computer or device connected "
-"using USB to access files on this phone."
-msgstr ""
-"Ma chuireas tu air an stòras USB, 's urrainn do choimpiutairean no uidheaman "
-"eile ceangailte cothrom fhaighinn air na faidhlichean air an fhòn seo slighe "
-"USB."
-
 #: default-media-location
 msgid "Default media location"
 msgstr "Ionad bunaiteach nam meadhanan"
@@ -3379,6 +3330,14 @@ msgstr "Leacagadh"
 msgid "Simple tiling"
 msgstr "Leacagadh simplidh"
 
+#: low-precision
+msgid "Low-precision painting"
+msgstr ""
+
+#: low-opacity
+msgid "Low-precision transparency"
+msgstr ""
+
 #: draw-tile-borders
 msgid "Draw tile borders"
 msgstr "Tarraing iomallan nan leacagan"
@@ -3558,24 +3517,9 @@ msgctxt "reset-head"
 msgid "Reset"
 msgstr "Ath-shuidhich"
 
-#: reset-phone
-msgid "Reset Phone"
-msgstr "Ath-shuidhich am fòn"
-
 #: reset-warning-title
 msgid "CAUTION"
 msgstr "AN AIRE"
-
-#: reset-warning-body
-msgid ""
-"Resetting will erase all your data, including any apps you’ve purchased. The "
-"phone will be restored to its factory condition. None of your settings or "
-"data will be saved."
-msgstr ""
-"Ma nì thu ath-shuidheachadh, thèid an dàta air fad agad a sguabadh às, a' "
-"gabhail a-steach aplacaidean a cheannaich thu. Tillear am fòn dhut mar a "
-"thàinig e às an fhactaraidh. Cha dèid gin dhe na roghainnean no dhen dàta "
-"agad a shàbhaladh."
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
 #: your-rights
@@ -3838,16 +3782,6 @@ msgstr "Modh sàbhaladh na cumhachd"
 msgid "{{level}}% battery left"
 msgstr "{{level}}% dhen bhataraidh air fhàgail"
 
-#: powerSave-explanation
-msgid ""
-"Turning on power save mode turns off the phone’s data, Bluetooth and "
-"Geolocation connections to extend battery life. You can still turn these "
-"services back on manually."
-msgstr ""
-"Ma chuireas tu air “Modh caomhnadh cumhachd”, thèid na ceanglaichean dàta, "
-"Bluetooth agus GPS aig an fhòn a chur dheth ach am mair am bataraidh nas "
-"fhaide. ’S urrainn dhut na seirbheisean a chur air a-rithist de làimh."
-
 #: turnOnAuto
 msgid "Turn on automatically"
 msgstr "Cuir air gu fèin-obrachail"
@@ -3942,14 +3876,6 @@ msgstr "Cuir fiosrachadh gu Mozilla"
 #: performanceAndUsageData
 msgid "Performance and usage data"
 msgstr "Dèanadas is dàta cleachdaidh"
-
-#: performanceAndUsageDataInfo
-msgid ""
-"Help us improve {{brandShortName}} by sharing data about your phone and the "
-"way you use it."
-msgstr ""
-"Cuidich leinn a’ leasachadh {{brandShortName}} ’s tu a’ cur dàta thugainn "
-"mun fhòn agad is mar a chleachdas tu e."
 
 #: sharePerformanceAndUsageData
 msgid "Submit data"
@@ -4266,6 +4192,118 @@ msgstr "Cuir an dàta"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Iarr staid na seanail"
+
+#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
+#: is-warning-head
+msgid "{{newSetting}}"
+msgstr ""
+
+#: is-warning-message
+msgid ""
+"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
+"{{newSetting}}?"
+msgstr ""
+
+#~ msgid "WPS failed"
+#~ msgstr "Dh'fhàillig WPS"
+
+#~ msgid "Failed to cancel WPS"
+#~ msgstr "Dh'fhàillig an ceangal ri WPS"
+
+#~ msgid "Voice calls to"
+#~ msgstr "Gairmean gutha gu"
+
+#~ msgid "SMSC"
+#~ msgstr "SMSC"
+
+#~ msgid "Unknown number"
+#~ msgstr "Àireamh neo-aithnichte"
+
+#~ msgid "Connected to phone audio"
+#~ msgstr "Ceangailte ri fuaim an fhòn"
+
+#~ msgid "Connected to phone/media audio"
+#~ msgstr "Ceangailte ri fuaim meadhain/an fhòn"
+
+#~ msgid "Change phone name"
+#~ msgstr "Atharraich ainm an fhòn"
+
+#~ msgid "Share my phone’s Internet connection with a USB-connected device."
+#~ msgstr ""
+#~ "Co-roinn ceangal an fhòn agam ris an eadar-lìon le uidheam a tha "
+#~ "ceangailte air USB."
+
+#~ msgid ""
+#~ "Allow other devices to share my phone’s Internet connection by connecting "
+#~ "via Wi-Fi."
+#~ msgstr ""
+#~ "Leig le uidheaman eile ceangal an fhòn agam ris an eadar-lìon a cho-"
+#~ "roinneadh air WiFi."
+
+#~ msgid ""
+#~ "The ringtone was not changed because the selected file can not be played "
+#~ "on this phone."
+#~ msgstr ""
+#~ "Cha deach an t-seirm atharrachadh air sgàth 's nach urrainn dhuinn am "
+#~ "faidhle a thagh thu a chluich air an fhòn seo."
+
+#~ msgid "Find My Device allows you to locate, lock or erase your phone"
+#~ msgstr ""
+#~ "’S urrainn dhut am fòn agad a lorg leis a’ ghleus “Lorg an t-uidheam "
+#~ "agam”, a ghlasadh no a suathadh bàn."
+
+#~ msgid ""
+#~ "Find My Device allows you to locate, lock or erase your phone from a web "
+#~ "site:"
+#~ msgstr ""
+#~ "’S urrainn dhut am fòn agad a lorg leis a’ ghleus “Lorg an t-uidheam "
+#~ "agam”, a ghlasadh no a suathadh bàn o làrach-lìn:"
+
+#~ msgid "Your phone is being tracked by another device through the website."
+#~ msgstr "Tha uidheam eile a’ tracadh an fhòn agad slighe na làraich-lìn."
+
+#~ msgid "No devices are actively tracking your phone through the website."
+#~ msgstr ""
+#~ "Chan eil uidheam sam bith a’ tracadh an fhòn agad slighe na làraich-lìn "
+#~ "aig an àm seo."
+
+#~ msgid ""
+#~ "Turning on Enable USB storage allows another computer or device connected "
+#~ "using USB to access files on this phone."
+#~ msgstr ""
+#~ "Ma chuireas tu air an stòras USB, 's urrainn do choimpiutairean no "
+#~ "uidheaman eile ceangailte cothrom fhaighinn air na faidhlichean air an "
+#~ "fhòn seo slighe USB."
+
+#~ msgid "Reset Phone"
+#~ msgstr "Ath-shuidhich am fòn"
+
+#~ msgid ""
+#~ "Resetting will erase all your data, including any apps you’ve purchased. "
+#~ "The phone will be restored to its factory condition. None of your "
+#~ "settings or data will be saved."
+#~ msgstr ""
+#~ "Ma nì thu ath-shuidheachadh, thèid an dàta air fad agad a sguabadh às, a' "
+#~ "gabhail a-steach aplacaidean a cheannaich thu. Tillear am fòn dhut mar a "
+#~ "thàinig e às an fhactaraidh. Cha dèid gin dhe na roghainnean no dhen dàta "
+#~ "agad a shàbhaladh."
+
+#~ msgid ""
+#~ "Turning on power save mode turns off the phone’s data, Bluetooth and "
+#~ "Geolocation connections to extend battery life. You can still turn these "
+#~ "services back on manually."
+#~ msgstr ""
+#~ "Ma chuireas tu air “Modh caomhnadh cumhachd”, thèid na ceanglaichean "
+#~ "dàta, Bluetooth agus GPS aig an fhòn a chur dheth ach am mair am "
+#~ "bataraidh nas fhaide. ’S urrainn dhut na seirbheisean a chur air a-"
+#~ "rithist de làimh."
+
+#~ msgid ""
+#~ "Help us improve {{brandShortName}} by sharing data about your phone and "
+#~ "the way you use it."
+#~ msgstr ""
+#~ "Cuidich leinn a’ leasachadh {{brandShortName}} ’s tu a’ cur dàta thugainn "
+#~ "mun fhòn agad is mar a chleachdas tu e."
 
 #~ msgctxt "search-suggestions-button"
 #~ msgid "{{search-suggestions}}"

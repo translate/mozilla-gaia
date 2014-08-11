@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-28 20:49+0100\n"
+"POT-Creation-Date: 2014-08-11 06:57+0000\n"
 "PO-Revision-Date: 2014-08-01 11:52+0000\n"
 "Last-Translator: Belayet <bellayet@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1406893965.000000\n"
@@ -377,6 +377,12 @@ msgstr "উন্মুক্ত নেটওয়ার্ক পাওয়া গ
 msgid "MAC address"
 msgstr "MAC ঠিকানা"
 
+#. # os = OS version. For example: 2.0.
+#. # The whole string may look like this: "Firefox OS 2.0"
+#: deviceInfo_software
+msgid "{{ brandShortName }} {{ os }}"
+msgstr ""
+
 #: macUnavailable
 msgctxt "macUnavailable"
 msgid "Not available"
@@ -468,9 +474,9 @@ msgstr "WPS বাতিল করা হয়েছে"
 msgid "WPS timed out"
 msgstr "WPS এর সময় শেষ"
 
-#: fullStatus-wps-failed
-msgid "WPS failed"
-msgstr "WPS ব্যর্থ"
+#: fullStatus-wps-failed-error
+msgid "WPS failed [{{error}}]"
+msgstr ""
 
 #: fullStatus-wps-overlapped
 msgid "Another WPS PBC AP was found"
@@ -517,9 +523,9 @@ msgstr "যেকোনো"
 msgid "Cancel WPS"
 msgstr "WPS বাতিল করুন"
 
-#: wpsCancelFailedMessage
-msgid "Failed to cancel WPS"
-msgstr "WPS বাতিল করা ব্যর্থ হয়েছে"
+#: wpsCancelFailedMessageError
+msgid "Failed to cancel WPS [{{error}}]"
+msgstr ""
 
 #. # Connectivity :: Call
 #: callSettings
@@ -633,9 +639,9 @@ msgstr "অনুপস্থিত থাকলে"
 msgid "When unreachable"
 msgstr "যখন অনুপস্থিত"
 
-#: callForwardingForwardingVoiceTo
-msgid "Voice calls to"
-msgstr "যাকে ভয়েস কল করবেন"
+#: callForwardingForwardingVoiceToNumber
+msgid "Voice calls to {{number}}"
+msgstr ""
 
 #: callForwardingNotForwarding
 msgctxt "callForwardingNotForwarding"
@@ -864,11 +870,13 @@ msgid "{{messagingSettings}}"
 msgstr "{{messagingSettings}}"
 
 #: message-confirmation
-msgid "Message confirmation"
+#, fuzzy
+msgid "Message Confirmation"
 msgstr "বার্তা নিশ্চিতকরণ"
 
 #: message-delivery-reports
-msgid "Delivery reports"
+#, fuzzy
+msgid "Delivery Reports"
 msgstr "ডেলিভারি রিপোর্ট"
 
 #: message-delivery-reports-details
@@ -876,7 +884,8 @@ msgid "Request notification of delivery for each message sent"
 msgstr "প্রত্যেক বার্তা প্রেরিত হলে বিজ্ঞপ্তি দেওয়া হোক"
 
 #: message-read-reports
-msgid "Read reports"
+#, fuzzy
+msgid "Read Reports"
 msgstr "রিপোর্ট পড়ুন"
 
 #: message-read-reports-details
@@ -884,11 +893,13 @@ msgid "Request read report for each message sent"
 msgstr "প্রত্যেকটি প্রেরিত বার্তা পাঠের রিপোর্টের অনুরোধ করুন"
 
 #: mmsTitle
-msgid "Multimedia messaging (MMS)"
+#, fuzzy
+msgid "Multimedia Messaging (MMS)"
 msgstr "মাল্টিমিডিয়া বার্তা (MMS)"
 
 #: auto-retrieve
-msgid "Auto retrieve"
+#, fuzzy
+msgid "Auto Retrieve"
 msgstr "স্বয়ংক্রিয়ভাবে উদ্ধার"
 
 #: auto-retrieve-details
@@ -912,7 +923,8 @@ msgid "Auto-configure"
 msgstr "স্বয়ংক্রিয়-কনফিগার"
 
 #: wapPushMessages
-msgid "WAP Push messages"
+#, fuzzy
+msgid "WAP Push Messages"
 msgstr "WAP পুশ বার্তা"
 
 #: wapPush
@@ -920,25 +932,31 @@ msgid "WAP Push"
 msgstr "WAP পুশ"
 
 #: cellBroadcastMessages
-msgid "Cell broadcast messages"
+#, fuzzy
+msgid "Cell Broadcast Messages"
 msgstr "সেল সম্প্রচার বার্তা"
 
 #: cellBroadcast
-msgid "Cell broadcast"
+#, fuzzy
+msgid "Cell Broadcast"
 msgstr "সেল সম্প্রচার"
+
+#: emergencyAlert
+msgid "Emergency Alert"
+msgstr ""
 
 #: messagingInformation
 msgid "Information"
 msgstr "তথ্য"
 
 #. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
-#: messagingSMSC
-msgid "SMSC"
-msgstr "SMSC"
+#: messaging-SMSC
+msgid "Service Center"
+msgstr ""
 
-#: unknownSMSC
-msgid "Unknown number"
-msgstr "অজানা নম্বর"
+#: unknown-SMSC
+msgid "Info not available"
+msgstr ""
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
@@ -1417,17 +1435,9 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "সংযুক্ত করা হয়েছে"
 
-#: device-status-connected-phone
-msgid "Connected to phone audio"
-msgstr "ফোন অডিওর সাথে সংযুক্ত হয়েছে"
-
 #: device-status-connected-media
 msgid "Connected to media audio"
 msgstr "মিডিয়া অডিওর সাথে সংযুক্ত"
-
-#: device-status-connected-phone-media
-msgid "Connected to phone/media audio"
-msgstr "ফোন/মিডিয়া অডিওর সাথে সংযুক্ত"
 
 #: device-option-unpair
 msgid "Unpair"
@@ -1469,10 +1479,6 @@ msgstr "আমার ডিভাইসের নাম পরিবর্তন
 #: unnamed-device
 msgid "Unknown device"
 msgstr "অপরিচিত ডিভাইস"
-
-#: change-phone-name
-msgid "Change phone name"
-msgstr "ফোনের নাম পরিবর্তন করুন"
 
 #: change-phone-name-desc
 msgid "Change the name of your device as it appears in your computer"
@@ -1544,21 +1550,10 @@ msgstr "{{internetSharing}}"
 msgid "USB"
 msgstr "ইউএসবি"
 
-#: internetSharing-usb-desc
-msgid "Share my phone’s Internet connection with a USB-connected device."
-msgstr "ইউএসবিতে যুক্ত ডিভাইসের সাথে আমার ফোনের ইন্টারনেট শেয়ার করুন।"
-
 #: internetSharing-wifi
 msgctxt "internetSharing-wifi"
 msgid "Wi-Fi"
 msgstr "ওয়াই-ফাই"
-
-#: internetSharing-wifi-desc
-msgid ""
-"Allow other devices to share my phone’s Internet connection by connecting "
-"via Wi-Fi."
-msgstr ""
-"ওয়াই-ফাই তে যুক্ত হয়ে অন্য ডিভাইসকে আমার ফোনের ইন্টারনেট শেয়ার করতে অনুমতি দিন।"
 
 #: wifi-hotspot
 msgid "Wi-Fi hotspot"
@@ -1735,12 +1730,6 @@ msgstr "মিডিয়া"
 #: savingringtone
 msgid "Saving ringtone…"
 msgstr "রিংটোন সংরক্ষণ করা হচ্ছে…"
-
-#: unplayable-ringtone
-msgid ""
-"The ringtone was not changed because the selected file can not be played on "
-"this phone."
-msgstr "রিংটোন পরিবর্তন হয়নি কারন নির্বাচিত ফাইলটি এই ফোনে বাজানো যাচ্ছে না।"
 
 #: no-ringtone-app
 msgid "We were unable to find a ringtone app to manage ringtones!"
@@ -2257,10 +2246,6 @@ msgctxt "findmydevice"
 msgid "Find My Device"
 msgstr "Find My Device"
 
-#: findmydevice-signup-description
-msgid "Find My Device allows you to locate, lock or erase your phone"
-msgstr "Find My Device আপনাকে ফোন খুঁজতে, লক করতে কিংবা ডাটা অপসারণে সুযোগ দেয়"
-
 #: findmydevice-create-account
 msgctxt "findmydevice-create-account"
 msgid "Create account or sign in"
@@ -2273,14 +2258,6 @@ msgstr "Find My Device সক্রিয় করুন"
 #: findmydevice-about
 msgid "About Find My Device"
 msgstr "Find My Device সম্পর্কে"
-
-#: findmydevice-settings-description
-msgid ""
-"Find My Device allows you to locate, lock or erase your phone from a web "
-"site:"
-msgstr ""
-"Find My Device একটি ওয়েবসাইট থেকে আপনাকে ফোন খুঁজতে, লক করতে কিংবা ডাটা "
-"অপসারণে সুযোগ দেয়:"
 
 #: findmydevice-enable-geolocation-prompt
 msgid "Enable Geolocation?"
@@ -2302,15 +2279,6 @@ msgid "This device is currently offline. Connect to a network and try again."
 msgstr ""
 "এই ডিভাইসটি বর্তমানে অফলাইন আছে। একটি নেটওয়ার্কের সাথে সংযোগ করুন এবং পুনরায় "
 "চেষ্টা করুন।"
-
-#: findmydevice-active-tracking
-msgid "Your phone is being tracked by another device through the website."
-msgstr "আপনার ফোন এই ওয়েবসাইট এর মাধ্যমে অন্য একটি ডিভাইস দিয়ে ট্র্যাক করা হচ্ছে।"
-
-#: findmydevice-not-tracking
-msgid "No devices are actively tracking your phone through the website."
-msgstr ""
-"আপনার ফোন এই ওয়েবসাইট এর মাধ্যমে অন্য কোনো ডিভাইস দিয়ে ট্র্যাক করা হচ্ছে না।"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -3053,14 +3021,6 @@ msgstr "আরও"
 msgid "Enable USB storage?"
 msgstr "ইউএসবি সংগ্রহস্থল সক্রিয় করবেন?"
 
-#: turn-on-ums-confirm
-msgid ""
-"Turning on Enable USB storage allows another computer or device connected "
-"using USB to access files on this phone."
-msgstr ""
-"ইউএসবি স্টোরেজ অন করলে অন্য কম্পিউটার বা ডিভাইস যা ইউএসবি দিয়ে যুক্ত তা এই ফোনের "
-"ফাইলে প্রবেশ করতে পারবে।"
-
 #: default-media-location
 msgid "Default media location"
 msgstr "পূর্বনির্ধারিত মিডিয়ার লোকেশন"
@@ -3340,6 +3300,14 @@ msgstr "Tiling"
 msgid "Simple tiling"
 msgstr "Simple tiling"
 
+#: low-precision
+msgid "Low-precision painting"
+msgstr ""
+
+#: low-opacity
+msgid "Low-precision transparency"
+msgstr ""
+
 #: draw-tile-borders
 msgid "Draw tile borders"
 msgstr "এই সীমানা আঁকুন"
@@ -3517,23 +3485,9 @@ msgctxt "reset-head"
 msgid "Reset"
 msgstr "রিসেট"
 
-#: reset-phone
-msgid "Reset Phone"
-msgstr "ফোন রিসেট করুন"
-
 #: reset-warning-title
 msgid "CAUTION"
 msgstr "সতর্কতা"
-
-#: reset-warning-body
-msgid ""
-"Resetting will erase all your data, including any apps you’ve purchased. The "
-"phone will be restored to its factory condition. None of your settings or "
-"data will be saved."
-msgstr ""
-"রিসেট-এর ফলে আপনার সব ডাটা অপসারিত হবে, এমনকি যেসব অ্যাপ আপনি ক্রয় করেছেন "
-"সেগুলোও। ফোনটি ক্রয়ের পূর্বের অবস্থায় ফিরে যাবে। আপনার কোন ডাটা বা সেটিংস সংরক্ষিত "
-"থাকবে না।"
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
 #: your-rights
@@ -3789,15 +3743,6 @@ msgstr "বিদ্যুৎ সংরক্ষণ মোড"
 msgid "{{level}}% battery left"
 msgstr "{{level}}% ব্যাটারি আছে"
 
-#: powerSave-explanation
-msgid ""
-"Turning on power save mode turns off the phone’s data, Bluetooth and "
-"Geolocation connections to extend battery life. You can still turn these "
-"services back on manually."
-msgstr ""
-"বিদ্যুৎ সংরক্ষণ মোড চালু করা হলে এটি ব্যটারী লাইফ বাড়াতে ফোনের ডাটা, ব্লুটুথ এবং "
-"ভৌগলিক-অবস্থানের সংযোগ বন্ধ করে দেয়। আপনি নিজ হাতে এগুলো আবার চালু করতে পারবেন।"
-
 #: turnOnAuto
 msgid "Turn on automatically"
 msgstr "স্বয়ংক্রিয়ভবে চালু করুন"
@@ -3891,14 +3836,6 @@ msgstr "মজিলাতে প্রতিক্রিয়া পাঠান"
 #: performanceAndUsageData
 msgid "Performance and usage data"
 msgstr "কর্মক্ষমতা ও ব্যবহারের ডাটা"
-
-#: performanceAndUsageDataInfo
-msgid ""
-"Help us improve {{brandShortName}} by sharing data about your phone and the "
-"way you use it."
-msgstr ""
-"আপনার ফোন সম্পর্কিত তথ্য ও আপনার ব্যবহার প্রণালী সম্পর্কে অবহিত করে আমাদের "
-"{{brandShortName}} কে আরো উন্নত করতে সাহায্য করুন।"
 
 #: sharePerformanceAndUsageData
 msgid "Submit data"
@@ -4206,6 +4143,108 @@ msgstr "ডাটা প্রেরণ"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "চ্যানেলের অবস্থা দেখুন"
+
+#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
+#: is-warning-head
+msgid "{{newSetting}}"
+msgstr ""
+
+#: is-warning-message
+msgid ""
+"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
+"{{newSetting}}?"
+msgstr ""
+
+#~ msgid "WPS failed"
+#~ msgstr "WPS ব্যর্থ"
+
+#~ msgid "Failed to cancel WPS"
+#~ msgstr "WPS বাতিল করা ব্যর্থ হয়েছে"
+
+#~ msgid "Voice calls to"
+#~ msgstr "যাকে ভয়েস কল করবেন"
+
+#~ msgid "SMSC"
+#~ msgstr "SMSC"
+
+#~ msgid "Unknown number"
+#~ msgstr "অজানা নম্বর"
+
+#~ msgid "Connected to phone audio"
+#~ msgstr "ফোন অডিওর সাথে সংযুক্ত হয়েছে"
+
+#~ msgid "Connected to phone/media audio"
+#~ msgstr "ফোন/মিডিয়া অডিওর সাথে সংযুক্ত"
+
+#~ msgid "Change phone name"
+#~ msgstr "ফোনের নাম পরিবর্তন করুন"
+
+#~ msgid "Share my phone’s Internet connection with a USB-connected device."
+#~ msgstr "ইউএসবিতে যুক্ত ডিভাইসের সাথে আমার ফোনের ইন্টারনেট শেয়ার করুন।"
+
+#~ msgid ""
+#~ "Allow other devices to share my phone’s Internet connection by connecting "
+#~ "via Wi-Fi."
+#~ msgstr ""
+#~ "ওয়াই-ফাই তে যুক্ত হয়ে অন্য ডিভাইসকে আমার ফোনের ইন্টারনেট শেয়ার করতে অনুমতি দিন।"
+
+#~ msgid ""
+#~ "The ringtone was not changed because the selected file can not be played "
+#~ "on this phone."
+#~ msgstr "রিংটোন পরিবর্তন হয়নি কারন নির্বাচিত ফাইলটি এই ফোনে বাজানো যাচ্ছে না।"
+
+#~ msgid "Find My Device allows you to locate, lock or erase your phone"
+#~ msgstr "Find My Device আপনাকে ফোন খুঁজতে, লক করতে কিংবা ডাটা অপসারণে সুযোগ দেয়"
+
+#~ msgid ""
+#~ "Find My Device allows you to locate, lock or erase your phone from a web "
+#~ "site:"
+#~ msgstr ""
+#~ "Find My Device একটি ওয়েবসাইট থেকে আপনাকে ফোন খুঁজতে, লক করতে কিংবা ডাটা "
+#~ "অপসারণে সুযোগ দেয়:"
+
+#~ msgid "Your phone is being tracked by another device through the website."
+#~ msgstr ""
+#~ "আপনার ফোন এই ওয়েবসাইট এর মাধ্যমে অন্য একটি ডিভাইস দিয়ে ট্র্যাক করা হচ্ছে।"
+
+#~ msgid "No devices are actively tracking your phone through the website."
+#~ msgstr ""
+#~ "আপনার ফোন এই ওয়েবসাইট এর মাধ্যমে অন্য কোনো ডিভাইস দিয়ে ট্র্যাক করা হচ্ছে না।"
+
+#~ msgid ""
+#~ "Turning on Enable USB storage allows another computer or device connected "
+#~ "using USB to access files on this phone."
+#~ msgstr ""
+#~ "ইউএসবি স্টোরেজ অন করলে অন্য কম্পিউটার বা ডিভাইস যা ইউএসবি দিয়ে যুক্ত তা এই "
+#~ "ফোনের ফাইলে প্রবেশ করতে পারবে।"
+
+#~ msgid "Reset Phone"
+#~ msgstr "ফোন রিসেট করুন"
+
+#~ msgid ""
+#~ "Resetting will erase all your data, including any apps you’ve purchased. "
+#~ "The phone will be restored to its factory condition. None of your "
+#~ "settings or data will be saved."
+#~ msgstr ""
+#~ "রিসেট-এর ফলে আপনার সব ডাটা অপসারিত হবে, এমনকি যেসব অ্যাপ আপনি ক্রয় করেছেন "
+#~ "সেগুলোও। ফোনটি ক্রয়ের পূর্বের অবস্থায় ফিরে যাবে। আপনার কোন ডাটা বা সেটিংস "
+#~ "সংরক্ষিত থাকবে না।"
+
+#~ msgid ""
+#~ "Turning on power save mode turns off the phone’s data, Bluetooth and "
+#~ "Geolocation connections to extend battery life. You can still turn these "
+#~ "services back on manually."
+#~ msgstr ""
+#~ "বিদ্যুৎ সংরক্ষণ মোড চালু করা হলে এটি ব্যটারী লাইফ বাড়াতে ফোনের ডাটা, ব্লুটুথ এবং "
+#~ "ভৌগলিক-অবস্থানের সংযোগ বন্ধ করে দেয়। আপনি নিজ হাতে এগুলো আবার চালু করতে "
+#~ "পারবেন।"
+
+#~ msgid ""
+#~ "Help us improve {{brandShortName}} by sharing data about your phone and "
+#~ "the way you use it."
+#~ msgstr ""
+#~ "আপনার ফোন সম্পর্কিত তথ্য ও আপনার ব্যবহার প্রণালী সম্পর্কে অবহিত করে আমাদের "
+#~ "{{brandShortName}} কে আরো উন্নত করতে সাহায্য করুন।"
 
 #~ msgctxt "search-suggestions-button"
 #~ msgid "{{search-suggestions}}"

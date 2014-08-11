@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-28 20:49+0100\n"
+"POT-Creation-Date: 2014-08-11 06:57+0000\n"
 "PO-Revision-Date: 2014-03-05 20:05+0000\n"
 "Last-Translator: Sasa <sasa@tekovic.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1394049944.000000\n"
@@ -383,6 +383,12 @@ msgstr "Obavijesti me kada je dostupna otvorena mreža"
 msgid "MAC address"
 msgstr "MAC adresa"
 
+#. # os = OS version. For example: 2.0.
+#. # The whole string may look like this: "Firefox OS 2.0"
+#: deviceInfo_software
+msgid "{{ brandShortName }} {{ os }}"
+msgstr ""
+
 #: macUnavailable
 msgctxt "macUnavailable"
 msgid "Not available"
@@ -474,9 +480,9 @@ msgstr "WPS je otkazan"
 msgid "WPS timed out"
 msgstr "WPS-u je isteklo vrijeme"
 
-#: fullStatus-wps-failed
-msgid "WPS failed"
-msgstr "WPS nije uspio"
+#: fullStatus-wps-failed-error
+msgid "WPS failed [{{error}}]"
+msgstr ""
 
 #: fullStatus-wps-overlapped
 msgid "Another WPS PBC AP was found"
@@ -523,9 +529,9 @@ msgstr "Bilo koji"
 msgid "Cancel WPS"
 msgstr "Otkaži WPS"
 
-#: wpsCancelFailedMessage
-msgid "Failed to cancel WPS"
-msgstr "Otkazivanje WPS-a nije uspjelo"
+#: wpsCancelFailedMessageError
+msgid "Failed to cancel WPS [{{error}}]"
+msgstr ""
 
 #. # Connectivity :: Call
 #: callSettings
@@ -639,9 +645,9 @@ msgstr "Proslijedi kod nedostupnosti"
 msgid "When unreachable"
 msgstr "Kod nedostupnosti"
 
-#: callForwardingForwardingVoiceTo
-msgid "Voice calls to"
-msgstr "Glasovne pozive prema"
+#: callForwardingForwardingVoiceToNumber
+msgid "Voice calls to {{number}}"
+msgstr ""
 
 #: callForwardingNotForwarding
 msgctxt "callForwardingNotForwarding"
@@ -873,11 +879,13 @@ msgid "{{messagingSettings}}"
 msgstr "{{messagingSettings}}"
 
 #: message-confirmation
-msgid "Message confirmation"
+#, fuzzy
+msgid "Message Confirmation"
 msgstr "Potvrda poruka"
 
 #: message-delivery-reports
-msgid "Delivery reports"
+#, fuzzy
+msgid "Delivery Reports"
 msgstr "Izvješća isporuke"
 
 #: message-delivery-reports-details
@@ -885,7 +893,7 @@ msgid "Request notification of delivery for each message sent"
 msgstr "Zatražite obavijest isporuke svake poslane poruke"
 
 #: message-read-reports
-msgid "Read reports"
+msgid "Read Reports"
 msgstr ""
 
 #: message-read-reports-details
@@ -893,11 +901,13 @@ msgid "Request read report for each message sent"
 msgstr ""
 
 #: mmsTitle
-msgid "Multimedia messaging (MMS)"
+#, fuzzy
+msgid "Multimedia Messaging (MMS)"
 msgstr "Multimedijalne poruke (MMS)"
 
 #: auto-retrieve
-msgid "Auto retrieve"
+#, fuzzy
+msgid "Auto Retrieve"
 msgstr "Automatsko prikupljanje"
 
 #: auto-retrieve-details
@@ -921,7 +931,8 @@ msgid "Auto-configure"
 msgstr "Automatsko podešavanje"
 
 #: wapPushMessages
-msgid "WAP Push messages"
+#, fuzzy
+msgid "WAP Push Messages"
 msgstr "WAP Push poruka"
 
 #: wapPush
@@ -929,12 +940,18 @@ msgid "WAP Push"
 msgstr "WAP push"
 
 #: cellBroadcastMessages
-msgid "Cell broadcast messages"
+#, fuzzy
+msgid "Cell Broadcast Messages"
 msgstr "Cell broadcast poruke"
 
 #: cellBroadcast
-msgid "Cell broadcast"
+#, fuzzy
+msgid "Cell Broadcast"
 msgstr "Cell broadcast"
+
+#: emergencyAlert
+msgid "Emergency Alert"
+msgstr ""
 
 #: messagingInformation
 #, fuzzy
@@ -942,13 +959,12 @@ msgid "Information"
 msgstr "Potvrda"
 
 #. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
-#: messagingSMSC
-#, fuzzy
-msgid "SMSC"
-msgstr "MMSC"
+#: messaging-SMSC
+msgid "Service Center"
+msgstr ""
 
-#: unknownSMSC
-msgid "Unknown number"
+#: unknown-SMSC
+msgid "Info not available"
 msgstr ""
 
 #. # Connectivity :: Cellular & Data
@@ -1439,17 +1455,9 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "Povezan"
 
-#: device-status-connected-phone
-msgid "Connected to phone audio"
-msgstr "Povezan na audio telefona"
-
 #: device-status-connected-media
 msgid "Connected to media audio"
 msgstr "Povezan na audio medija"
-
-#: device-status-connected-phone-media
-msgid "Connected to phone/media audio"
-msgstr "Povezan na audio telefona/medija"
 
 #: device-option-unpair
 msgid "Unpair"
@@ -1492,10 +1500,6 @@ msgstr "Preimenuj moj uređaj"
 #: unnamed-device
 msgid "Unknown device"
 msgstr "Nepoznat uređaj"
-
-#: change-phone-name
-msgid "Change phone name"
-msgstr "Preimenuj telefon"
 
 #: change-phone-name-desc
 msgid "Change the name of your device as it appears in your computer"
@@ -1568,23 +1572,10 @@ msgstr "{{internetSharing}}"
 msgid "USB"
 msgstr "USB"
 
-#: internetSharing-usb-desc
-msgid "Share my phone’s Internet connection with a USB-connected device."
-msgstr ""
-"Dijeli Internet vezu na telefonu s uređajem koji je povezan putem USB-a."
-
 #: internetSharing-wifi
 msgctxt "internetSharing-wifi"
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
-
-#: internetSharing-wifi-desc
-msgid ""
-"Allow other devices to share my phone’s Internet connection by connecting "
-"via Wi-Fi."
-msgstr ""
-"Dopusti ostalim uređajima dijeljenje Internet veze na telefonu povezivanjem "
-"putem Wi-Fi-a."
 
 #: wifi-hotspot
 msgid "Wi-Fi hotspot"
@@ -1763,14 +1754,6 @@ msgstr ""
 #: savingringtone
 msgid "Saving ringtone…"
 msgstr "Spremam zvono..."
-
-#: unplayable-ringtone
-msgid ""
-"The ringtone was not changed because the selected file can not be played on "
-"this phone."
-msgstr ""
-"Zvono nije promijenjeno zbog toga što označena datoteka ne može biti "
-"reproducirana na ovom uređaju."
 
 #: no-ringtone-app
 msgid "We were unable to find a ringtone app to manage ringtones!"
@@ -2293,10 +2276,6 @@ msgctxt "findmydevice"
 msgid "Find My Device"
 msgstr ""
 
-#: findmydevice-signup-description
-msgid "Find My Device allows you to locate, lock or erase your phone"
-msgstr ""
-
 #: findmydevice-create-account
 msgctxt "findmydevice-create-account"
 msgid "Create account or sign in"
@@ -2308,12 +2287,6 @@ msgstr ""
 
 #: findmydevice-about
 msgid "About Find My Device"
-msgstr ""
-
-#: findmydevice-settings-description
-msgid ""
-"Find My Device allows you to locate, lock or erase your phone from a web "
-"site:"
 msgstr ""
 
 #: findmydevice-enable-geolocation-prompt
@@ -2331,14 +2304,6 @@ msgstr ""
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
-msgstr ""
-
-#: findmydevice-active-tracking
-msgid "Your phone is being tracked by another device through the website."
-msgstr ""
-
-#: findmydevice-not-tracking
-msgid "No devices are actively tracking your phone through the website."
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3091,14 +3056,6 @@ msgstr "Napredno"
 msgid "Enable USB storage?"
 msgstr "USB spremište"
 
-#: turn-on-ums-confirm
-msgid ""
-"Turning on Enable USB storage allows another computer or device connected "
-"using USB to access files on this phone."
-msgstr ""
-"Ukljućivanjem USB djeljenja podataka omogućujete drugom računalu ili uređaju "
-"spojenom preko USB kabela pristupanje podacima na ovom mobilnom telefonu."
-
 #: default-media-location
 msgid "Default media location"
 msgstr "Zadano za multimediju"
@@ -3380,6 +3337,14 @@ msgstr ""
 msgid "Simple tiling"
 msgstr ""
 
+#: low-precision
+msgid "Low-precision painting"
+msgstr ""
+
+#: low-opacity
+msgid "Low-precision transparency"
+msgstr ""
+
 #: draw-tile-borders
 #, fuzzy
 msgid "Draw tile borders"
@@ -3565,23 +3530,9 @@ msgctxt "reset-head"
 msgid "Reset"
 msgstr "Resetiraj"
 
-#: reset-phone
-msgid "Reset Phone"
-msgstr "Resetiraj telefon"
-
 #: reset-warning-title
 msgid "CAUTION"
 msgstr "OPREZ"
-
-#: reset-warning-body
-msgid ""
-"Resetting will erase all your data, including any apps you’ve purchased. The "
-"phone will be restored to its factory condition. None of your settings or "
-"data will be saved."
-msgstr ""
-"Vraćanje na zadane postavke će obrisati sve vaše podatke, uključujući i "
-"aplikacije koje ste kupili. Uređaj će biti vraćen na tvorničke postavke. "
-"Nijedna vaša postavka ili podatak neće ostati spremljeni."
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
 #: your-rights
@@ -3844,15 +3795,6 @@ msgstr "Štedljivi način rada"
 msgid "{{level}}% battery left"
 msgstr "{{level}}% preostalog kapaciteta"
 
-#: powerSave-explanation
-msgid ""
-"Turning on power save mode turns off the phone’s data, Bluetooth and "
-"Geolocation connections to extend battery life. You can still turn these "
-"services back on manually."
-msgstr ""
-"Uključivanje štedljivog načina rada isključuje podatkovne veze, Bluetooth i "
-"GPS radi štednje baterije. Navedene usluge možete ponovno uključiti ručno."
-
 #: turnOnAuto
 msgid "Turn on automatically"
 msgstr "Uključi automatski"
@@ -3941,12 +3883,6 @@ msgstr "Pošaljite Mozilli povratnu info."
 
 #: performanceAndUsageData
 msgid "Performance and usage data"
-msgstr ""
-
-#: performanceAndUsageDataInfo
-msgid ""
-"Help us improve {{brandShortName}} by sharing data about your phone and the "
-"way you use it."
 msgstr ""
 
 #: sharePerformanceAndUsageData
@@ -4262,6 +4198,86 @@ msgstr "Pošalji podatke"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Traži stanje kanala"
+
+#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
+#: is-warning-head
+msgid "{{newSetting}}"
+msgstr ""
+
+#: is-warning-message
+msgid ""
+"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
+"{{newSetting}}?"
+msgstr ""
+
+#~ msgid "WPS failed"
+#~ msgstr "WPS nije uspio"
+
+#~ msgid "Failed to cancel WPS"
+#~ msgstr "Otkazivanje WPS-a nije uspjelo"
+
+#~ msgid "Voice calls to"
+#~ msgstr "Glasovne pozive prema"
+
+#, fuzzy
+#~ msgid "SMSC"
+#~ msgstr "MMSC"
+
+#~ msgid "Connected to phone audio"
+#~ msgstr "Povezan na audio telefona"
+
+#~ msgid "Connected to phone/media audio"
+#~ msgstr "Povezan na audio telefona/medija"
+
+#~ msgid "Change phone name"
+#~ msgstr "Preimenuj telefon"
+
+#~ msgid "Share my phone’s Internet connection with a USB-connected device."
+#~ msgstr ""
+#~ "Dijeli Internet vezu na telefonu s uređajem koji je povezan putem USB-a."
+
+#~ msgid ""
+#~ "Allow other devices to share my phone’s Internet connection by connecting "
+#~ "via Wi-Fi."
+#~ msgstr ""
+#~ "Dopusti ostalim uređajima dijeljenje Internet veze na telefonu "
+#~ "povezivanjem putem Wi-Fi-a."
+
+#~ msgid ""
+#~ "The ringtone was not changed because the selected file can not be played "
+#~ "on this phone."
+#~ msgstr ""
+#~ "Zvono nije promijenjeno zbog toga što označena datoteka ne može biti "
+#~ "reproducirana na ovom uređaju."
+
+#~ msgid ""
+#~ "Turning on Enable USB storage allows another computer or device connected "
+#~ "using USB to access files on this phone."
+#~ msgstr ""
+#~ "Ukljućivanjem USB djeljenja podataka omogućujete drugom računalu ili "
+#~ "uređaju spojenom preko USB kabela pristupanje podacima na ovom mobilnom "
+#~ "telefonu."
+
+#~ msgid "Reset Phone"
+#~ msgstr "Resetiraj telefon"
+
+#~ msgid ""
+#~ "Resetting will erase all your data, including any apps you’ve purchased. "
+#~ "The phone will be restored to its factory condition. None of your "
+#~ "settings or data will be saved."
+#~ msgstr ""
+#~ "Vraćanje na zadane postavke će obrisati sve vaše podatke, uključujući i "
+#~ "aplikacije koje ste kupili. Uređaj će biti vraćen na tvorničke postavke. "
+#~ "Nijedna vaša postavka ili podatak neće ostati spremljeni."
+
+#~ msgid ""
+#~ "Turning on power save mode turns off the phone’s data, Bluetooth and "
+#~ "Geolocation connections to extend battery life. You can still turn these "
+#~ "services back on manually."
+#~ msgstr ""
+#~ "Uključivanje štedljivog načina rada isključuje podatkovne veze, Bluetooth "
+#~ "i GPS radi štednje baterije. Navedene usluge možete ponovno uključiti "
+#~ "ručno."
 
 #~ msgid "Installed input methods"
 #~ msgstr "Instalirane metode unosa"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-28 20:49+0100\n"
+"POT-Creation-Date: 2014-08-11 06:57+0000\n"
 "PO-Revision-Date: 2014-08-05 16:28+0000\n"
 "Last-Translator: Ibai <ibai@oihanguren.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1407256117.000000\n"
@@ -378,6 +378,12 @@ msgstr "Jakinarazi sare ireki bat erabilgarri dagoenean"
 msgid "MAC address"
 msgstr "MAC helbidea"
 
+#. # os = OS version. For example: 2.0.
+#. # The whole string may look like this: "Firefox OS 2.0"
+#: deviceInfo_software
+msgid "{{ brandShortName }} {{ os }}"
+msgstr ""
+
 #: macUnavailable
 msgctxt "macUnavailable"
 msgid "Not available"
@@ -470,9 +476,9 @@ msgstr "WPSa utzi egin da"
 msgid "WPS timed out"
 msgstr "WPSaren denbora-muga gaindituta"
 
-#: fullStatus-wps-failed
-msgid "WPS failed"
-msgstr "WPSak huts egin du"
+#: fullStatus-wps-failed-error
+msgid "WPS failed [{{error}}]"
+msgstr ""
 
 #: fullStatus-wps-overlapped
 msgid "Another WPS PBC AP was found"
@@ -519,9 +525,9 @@ msgstr "Edozein"
 msgid "Cancel WPS"
 msgstr "Utzi WPSa"
 
-#: wpsCancelFailedMessage
-msgid "Failed to cancel WPS"
-msgstr "Huts egin du WPSa uztean"
+#: wpsCancelFailedMessageError
+msgid "Failed to cancel WPS [{{error}}]"
+msgstr ""
 
 #. # Connectivity :: Call
 #: callSettings
@@ -635,9 +641,9 @@ msgstr "Birbidali ezin denean eskuratu"
 msgid "When unreachable"
 msgstr "Ezin denean eskuratu"
 
-#: callForwardingForwardingVoiceTo
-msgid "Voice calls to"
-msgstr "Ahots-deiak hona"
+#: callForwardingForwardingVoiceToNumber
+msgid "Voice calls to {{number}}"
+msgstr ""
 
 #: callForwardingNotForwarding
 msgctxt "callForwardingNotForwarding"
@@ -862,11 +868,13 @@ msgid "{{messagingSettings}}"
 msgstr "{{messagingSettings}}"
 
 #: message-confirmation
-msgid "Message confirmation"
+#, fuzzy
+msgid "Message Confirmation"
 msgstr "Mezuaren berrespena"
 
 #: message-delivery-reports
-msgid "Delivery reports"
+#, fuzzy
+msgid "Delivery Reports"
 msgstr "Banaketa-txostenak"
 
 #: message-delivery-reports-details
@@ -874,7 +882,8 @@ msgid "Request notification of delivery for each message sent"
 msgstr "Eskatu banaketa-jakinarazpena bidalitako mezu bakoitzeko"
 
 #: message-read-reports
-msgid "Read reports"
+#, fuzzy
+msgid "Read Reports"
 msgstr "Irakurketa-txostenak"
 
 #: message-read-reports-details
@@ -882,11 +891,13 @@ msgid "Request read report for each message sent"
 msgstr "Eskatu banaketa-txostena bidalitako mezu bakoitzeko"
 
 #: mmsTitle
-msgid "Multimedia messaging (MMS)"
+#, fuzzy
+msgid "Multimedia Messaging (MMS)"
 msgstr "Multimedia-mezularitza (MMS)"
 
 #: auto-retrieve
-msgid "Auto retrieve"
+#, fuzzy
+msgid "Auto Retrieve"
 msgstr "Auto-eskuratu"
 
 #: auto-retrieve-details
@@ -910,7 +921,8 @@ msgid "Auto-configure"
 msgstr "Autokonfiguratu"
 
 #: wapPushMessages
-msgid "WAP Push messages"
+#, fuzzy
+msgid "WAP Push Messages"
 msgstr "WAP Push mezuak"
 
 #: wapPush
@@ -918,12 +930,18 @@ msgid "WAP Push"
 msgstr "WAP Push"
 
 #: cellBroadcastMessages
-msgid "Cell broadcast messages"
+#, fuzzy
+msgid "Cell Broadcast Messages"
 msgstr "Difusio zelularreko mezuak"
 
 #: cellBroadcast
-msgid "Cell broadcast"
+#, fuzzy
+msgid "Cell Broadcast"
 msgstr "Difusio zelularra"
+
+#: emergencyAlert
+msgid "Emergency Alert"
+msgstr ""
 
 #: messagingInformation
 #, fuzzy
@@ -931,13 +949,12 @@ msgid "Information"
 msgstr "Berrespena"
 
 #. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
-#: messagingSMSC
-#, fuzzy
-msgid "SMSC"
-msgstr "MMSC"
+#: messaging-SMSC
+msgid "Service Center"
+msgstr ""
 
-#: unknownSMSC
-msgid "Unknown number"
+#: unknown-SMSC
+msgid "Info not available"
 msgstr ""
 
 #. # Connectivity :: Cellular & Data
@@ -1418,17 +1435,9 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "Konektatuta"
 
-#: device-status-connected-phone
-msgid "Connected to phone audio"
-msgstr "telefonoaren audiora konektatuta"
-
 #: device-status-connected-media
 msgid "Connected to media audio"
 msgstr "Multimediaren audiora konektatuta"
-
-#: device-status-connected-phone-media
-msgid "Connected to phone/media audio"
-msgstr "Tlf./multim. audiora konektatuta"
 
 #: device-option-unpair
 msgid "Unpair"
@@ -1470,10 +1479,6 @@ msgstr "Aldatu nire gailuaren izena"
 #: unnamed-device
 msgid "Unknown device"
 msgstr "Gailu ezezaguna"
-
-#: change-phone-name
-msgid "Change phone name"
-msgstr "Aldatu telefonoaren izena"
 
 #: change-phone-name-desc
 msgid "Change the name of your device as it appears in your computer"
@@ -1546,24 +1551,10 @@ msgstr "{{internetSharing}}"
 msgid "USB"
 msgstr "USB"
 
-#: internetSharing-usb-desc
-msgid "Share my phone’s Internet connection with a USB-connected device."
-msgstr ""
-"Partekatu telefonoaren Internet-konexioa USB bidez konektatutako gailu "
-"batekin."
-
 #: internetSharing-wifi
 msgctxt "internetSharing-wifi"
 msgid "Wi-Fi"
 msgstr "Wi-Fia"
-
-#: internetSharing-wifi-desc
-msgid ""
-"Allow other devices to share my phone’s Internet connection by connecting "
-"via Wi-Fi."
-msgstr ""
-"Baimendu beste gailuei nire telefonoaren Internet-konexioa partekatzea Wi-Fi "
-"bidez konektatuz."
 
 #: wifi-hotspot
 msgid "Wi-Fi hotspot"
@@ -1740,14 +1731,6 @@ msgstr "Multimedia"
 #: savingringtone
 msgid "Saving ringtone…"
 msgstr "Txirrin-tonua gordetzen…"
-
-#: unplayable-ringtone
-msgid ""
-"The ringtone was not changed because the selected file can not be played on "
-"this phone."
-msgstr ""
-"Txirrin-tonua ez da aldatu hautatutako fitxategia ezin delako telefono "
-"honetan erreproduzitu."
 
 #: no-ringtone-app
 msgid "We were unable to find a ringtone app to manage ringtones!"
@@ -2272,12 +2255,6 @@ msgctxt "findmydevice"
 msgid "Find My Device"
 msgstr "Aurkitu nire gailua"
 
-#: findmydevice-signup-description
-msgid "Find My Device allows you to locate, lock or erase your phone"
-msgstr ""
-"'Aurkitu nire gailua' aukerak zure telefonoa aurkitu, blokeatu edo "
-"ezabatzeko aukera ematen dizu."
-
 #: findmydevice-create-account
 #, fuzzy
 msgctxt "findmydevice-create-account"
@@ -2291,14 +2268,6 @@ msgstr "Aurkitu nire gailua"
 #: findmydevice-about
 msgid "About Find My Device"
 msgstr "'Aurkitu nire gailua' aukerari buruz"
-
-#: findmydevice-settings-description
-msgid ""
-"Find My Device allows you to locate, lock or erase your phone from a web "
-"site:"
-msgstr ""
-"'Aurkitu nire gailua' aukerak zure telefonoa webgune batetik aurkitu, "
-"blokeatu edo ezabatzeko aukera ematen dizu:"
 
 #: findmydevice-enable-geolocation-prompt
 msgid "Enable Geolocation?"
@@ -2319,18 +2288,6 @@ msgstr "Geokokapena gaituta"
 msgid "This device is currently offline. Connect to a network and try again."
 msgstr ""
 "Gailu hau lineaz kanpo dago. Konektatu sare batekin eta saiatu berriro."
-
-#: findmydevice-active-tracking
-msgid "Your phone is being tracked by another device through the website."
-msgstr ""
-"Beste gailu bat zure telefonoaren jarraipena ari da egiten webgunearen "
-"bitartez."
-
-#: findmydevice-not-tracking
-msgid "No devices are actively tracking your phone through the website."
-msgstr ""
-"Ez dago beste gailurik zure telefonoaren jarraipena egiten webgunearen "
-"bitartez."
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -3074,14 +3031,6 @@ msgstr "Aurreratua"
 msgid "Enable USB storage?"
 msgstr "Gaitu USB biltegiratzea?"
 
-#: turn-on-ums-confirm
-msgid ""
-"Turning on Enable USB storage allows another computer or device connected "
-"using USB to access files on this phone."
-msgstr ""
-"USB biltegiratzea gaitzeak USB bidez konektatutako beste ordenagailu edo "
-"gailuek telefono honetako fitxategiak atzitu ahal izatea baimentzen du."
-
 #: default-media-location
 msgid "Default media location"
 msgstr "Kokaleku lehenetsia"
@@ -3363,6 +3312,14 @@ msgstr "Mosaikoa egitea"
 msgid "Simple tiling"
 msgstr "Mosaiko-egite sinplea"
 
+#: low-precision
+msgid "Low-precision painting"
+msgstr ""
+
+#: low-opacity
+msgid "Low-precision transparency"
+msgstr ""
+
 #: draw-tile-borders
 msgid "Draw tile borders"
 msgstr "Marraztu mosaikoen ertzak"
@@ -3542,23 +3499,9 @@ msgctxt "reset-head"
 msgid "Reset"
 msgstr "Berrezarri"
 
-#: reset-phone
-msgid "Reset Phone"
-msgstr "Leheneratu telefonoa"
-
 #: reset-warning-title
 msgid "CAUTION"
 msgstr "KONTUZ"
-
-#: reset-warning-body
-msgid ""
-"Resetting will erase all your data, including any apps you’ve purchased. The "
-"phone will be restored to its factory condition. None of your settings or "
-"data will be saved."
-msgstr ""
-"Leheneratuz gero zure datu gutziak ezabatuko dira, erositako edozein "
-"aplikazio barne. Telefonoa fabrika-egoerara leheneratuko da. Zure ezarpenik "
-"edo daturik ez da gordeko."
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
 #: your-rights
@@ -3820,16 +3763,6 @@ msgstr "Energia aurreztea"
 msgid "{{level}}% battery left"
 msgstr "Bateriaren %{{level}} geratzen bada"
 
-#: powerSave-explanation
-msgid ""
-"Turning on power save mode turns off the phone’s data, Bluetooth and "
-"Geolocation connections to extend battery life. You can still turn these "
-"services back on manually."
-msgstr ""
-"Energia aurrezteko modua aktibatuz gero, telefonoaren datu-, Bluetooth- eta "
-"geokokapen-konexioak desaktibatu egiten dira bateriaren bizitza luzatzeko. "
-"Halere zerbitzu hauek eskuz aktiba ditzakezu."
-
 #: turnOnAuto
 msgid "Turn on automatically"
 msgstr "Aktibatu automatikoki"
@@ -3923,12 +3856,6 @@ msgstr "Bidali iritzia Mozillari"
 
 #: performanceAndUsageData
 msgid "Performance and usage data"
-msgstr ""
-
-#: performanceAndUsageDataInfo
-msgid ""
-"Help us improve {{brandShortName}} by sharing data about your phone and the "
-"way you use it."
 msgstr ""
 
 #: sharePerformanceAndUsageData
@@ -4238,6 +4165,108 @@ msgstr "Bidali datuak"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Eskuratu kanalaren egoera"
+
+#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
+#: is-warning-head
+msgid "{{newSetting}}"
+msgstr ""
+
+#: is-warning-message
+msgid ""
+"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
+"{{newSetting}}?"
+msgstr ""
+
+#~ msgid "WPS failed"
+#~ msgstr "WPSak huts egin du"
+
+#~ msgid "Failed to cancel WPS"
+#~ msgstr "Huts egin du WPSa uztean"
+
+#~ msgid "Voice calls to"
+#~ msgstr "Ahots-deiak hona"
+
+#, fuzzy
+#~ msgid "SMSC"
+#~ msgstr "MMSC"
+
+#~ msgid "Connected to phone audio"
+#~ msgstr "telefonoaren audiora konektatuta"
+
+#~ msgid "Connected to phone/media audio"
+#~ msgstr "Tlf./multim. audiora konektatuta"
+
+#~ msgid "Change phone name"
+#~ msgstr "Aldatu telefonoaren izena"
+
+#~ msgid "Share my phone’s Internet connection with a USB-connected device."
+#~ msgstr ""
+#~ "Partekatu telefonoaren Internet-konexioa USB bidez konektatutako gailu "
+#~ "batekin."
+
+#~ msgid ""
+#~ "Allow other devices to share my phone’s Internet connection by connecting "
+#~ "via Wi-Fi."
+#~ msgstr ""
+#~ "Baimendu beste gailuei nire telefonoaren Internet-konexioa partekatzea Wi-"
+#~ "Fi bidez konektatuz."
+
+#~ msgid ""
+#~ "The ringtone was not changed because the selected file can not be played "
+#~ "on this phone."
+#~ msgstr ""
+#~ "Txirrin-tonua ez da aldatu hautatutako fitxategia ezin delako telefono "
+#~ "honetan erreproduzitu."
+
+#~ msgid "Find My Device allows you to locate, lock or erase your phone"
+#~ msgstr ""
+#~ "'Aurkitu nire gailua' aukerak zure telefonoa aurkitu, blokeatu edo "
+#~ "ezabatzeko aukera ematen dizu."
+
+#~ msgid ""
+#~ "Find My Device allows you to locate, lock or erase your phone from a web "
+#~ "site:"
+#~ msgstr ""
+#~ "'Aurkitu nire gailua' aukerak zure telefonoa webgune batetik aurkitu, "
+#~ "blokeatu edo ezabatzeko aukera ematen dizu:"
+
+#~ msgid "Your phone is being tracked by another device through the website."
+#~ msgstr ""
+#~ "Beste gailu bat zure telefonoaren jarraipena ari da egiten webgunearen "
+#~ "bitartez."
+
+#~ msgid "No devices are actively tracking your phone through the website."
+#~ msgstr ""
+#~ "Ez dago beste gailurik zure telefonoaren jarraipena egiten webgunearen "
+#~ "bitartez."
+
+#~ msgid ""
+#~ "Turning on Enable USB storage allows another computer or device connected "
+#~ "using USB to access files on this phone."
+#~ msgstr ""
+#~ "USB biltegiratzea gaitzeak USB bidez konektatutako beste ordenagailu edo "
+#~ "gailuek telefono honetako fitxategiak atzitu ahal izatea baimentzen du."
+
+#~ msgid "Reset Phone"
+#~ msgstr "Leheneratu telefonoa"
+
+#~ msgid ""
+#~ "Resetting will erase all your data, including any apps you’ve purchased. "
+#~ "The phone will be restored to its factory condition. None of your "
+#~ "settings or data will be saved."
+#~ msgstr ""
+#~ "Leheneratuz gero zure datu gutziak ezabatuko dira, erositako edozein "
+#~ "aplikazio barne. Telefonoa fabrika-egoerara leheneratuko da. Zure "
+#~ "ezarpenik edo daturik ez da gordeko."
+
+#~ msgid ""
+#~ "Turning on power save mode turns off the phone’s data, Bluetooth and "
+#~ "Geolocation connections to extend battery life. You can still turn these "
+#~ "services back on manually."
+#~ msgstr ""
+#~ "Energia aurrezteko modua aktibatuz gero, telefonoaren datu-, Bluetooth- "
+#~ "eta geokokapen-konexioak desaktibatu egiten dira bateriaren bizitza "
+#~ "luzatzeko. Halere zerbitzu hauek eskuz aktiba ditzakezu."
 
 #~ msgctxt "search-suggestions-button"
 #~ msgid "{{search-suggestions}}"

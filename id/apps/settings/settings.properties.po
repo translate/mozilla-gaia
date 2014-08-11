@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-28 20:49+0100\n"
+"POT-Creation-Date: 2014-08-11 06:57+0000\n"
 "PO-Revision-Date: 2014-07-14 06:31+0000\n"
 "Last-Translator: Muhammad Refa Utama Putra <muhammadrefa@aol.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1405319506.000000\n"
@@ -376,6 +376,12 @@ msgstr "Beri tahu jika ada jaringan terbuka tersedia"
 msgid "MAC address"
 msgstr "Alamat MAC"
 
+#. # os = OS version. For example: 2.0.
+#. # The whole string may look like this: "Firefox OS 2.0"
+#: deviceInfo_software
+msgid "{{ brandShortName }} {{ os }}"
+msgstr ""
+
 #: macUnavailable
 msgctxt "macUnavailable"
 msgid "Not available"
@@ -467,9 +473,9 @@ msgstr "WPS dibatalkan"
 msgid "WPS timed out"
 msgstr "Tenggang waktu WPS habis"
 
-#: fullStatus-wps-failed
-msgid "WPS failed"
-msgstr "WPS gagal"
+#: fullStatus-wps-failed-error
+msgid "WPS failed [{{error}}]"
+msgstr ""
 
 #: fullStatus-wps-overlapped
 msgid "Another WPS PBC AP was found"
@@ -517,9 +523,9 @@ msgstr ""
 msgid "Cancel WPS"
 msgstr "Batalkan WPS"
 
-#: wpsCancelFailedMessage
-msgid "Failed to cancel WPS"
-msgstr "Gagal membatalkan WPS"
+#: wpsCancelFailedMessageError
+msgid "Failed to cancel WPS [{{error}}]"
+msgstr ""
 
 #. # Connectivity :: Call
 #: callSettings
@@ -634,9 +640,9 @@ msgstr "Alihkan saat tidak terjangkau"
 msgid "When unreachable"
 msgstr "Ketika tak dapat dihubungi"
 
-#: callForwardingForwardingVoiceTo
-msgid "Voice calls to"
-msgstr "Panggilan suara ke"
+#: callForwardingForwardingVoiceToNumber
+msgid "Voice calls to {{number}}"
+msgstr ""
 
 #: callForwardingNotForwarding
 msgctxt "callForwardingNotForwarding"
@@ -862,11 +868,12 @@ msgstr "{{messageSettings}}"
 
 #: message-confirmation
 #, fuzzy
-msgid "Message confirmation"
+msgid "Message Confirmation"
 msgstr "Konfirmasi pesan teks"
 
 #: message-delivery-reports
-msgid "Delivery reports"
+#, fuzzy
+msgid "Delivery Reports"
 msgstr "Laporan penyampaian"
 
 #: message-delivery-reports-details
@@ -875,7 +882,8 @@ msgid "Request notification of delivery for each message sent"
 msgstr "Minta notifikasi penyampaian setiap pesan teks terkirim"
 
 #: message-read-reports
-msgid "Read reports"
+#, fuzzy
+msgid "Read Reports"
 msgstr "Baca laporan"
 
 #: message-read-reports-details
@@ -883,11 +891,13 @@ msgid "Request read report for each message sent"
 msgstr ""
 
 #: mmsTitle
-msgid "Multimedia messaging (MMS)"
+#, fuzzy
+msgid "Multimedia Messaging (MMS)"
 msgstr "Pesan multimedia (MMS)"
 
 #: auto-retrieve
-msgid "Auto retrieve"
+#, fuzzy
+msgid "Auto Retrieve"
 msgstr "Pengambilan otomatis"
 
 #: auto-retrieve-details
@@ -911,7 +921,7 @@ msgid "Auto-configure"
 msgstr "Konfigurasi otomatis"
 
 #: wapPushMessages
-msgid "WAP Push messages"
+msgid "WAP Push Messages"
 msgstr ""
 
 #: wapPush
@@ -919,11 +929,15 @@ msgid "WAP Push"
 msgstr ""
 
 #: cellBroadcastMessages
-msgid "Cell broadcast messages"
+msgid "Cell Broadcast Messages"
 msgstr ""
 
 #: cellBroadcast
-msgid "Cell broadcast"
+msgid "Cell Broadcast"
+msgstr ""
+
+#: emergencyAlert
+msgid "Emergency Alert"
 msgstr ""
 
 #: messagingInformation
@@ -932,13 +946,12 @@ msgid "Information"
 msgstr "Konfirmasi"
 
 #. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
-#: messagingSMSC
-#, fuzzy
-msgid "SMSC"
-msgstr "MMSC"
+#: messaging-SMSC
+msgid "Service Center"
+msgstr ""
 
-#: unknownSMSC
-msgid "Unknown number"
+#: unknown-SMSC
+msgid "Info not available"
 msgstr ""
 
 #. # Connectivity :: Cellular & Data
@@ -1424,16 +1437,8 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "Tersambung"
 
-#: device-status-connected-phone
-msgid "Connected to phone audio"
-msgstr ""
-
 #: device-status-connected-media
 msgid "Connected to media audio"
-msgstr ""
-
-#: device-status-connected-phone-media
-msgid "Connected to phone/media audio"
 msgstr ""
 
 #: device-option-unpair
@@ -1477,10 +1482,6 @@ msgstr "Ubah nama perangkat saya"
 #: unnamed-device
 msgid "Unknown device"
 msgstr "Perangkat tidak dikenal"
-
-#: change-phone-name
-msgid "Change phone name"
-msgstr "Ubah nama telepon"
 
 #: change-phone-name-desc
 msgid "Change the name of your device as it appears in your computer"
@@ -1553,24 +1554,10 @@ msgstr ""
 msgid "USB"
 msgstr "USB"
 
-#: internetSharing-usb-desc
-msgid "Share my phone’s Internet connection with a USB-connected device."
-msgstr ""
-"Bagikan sambungan Internet ponsel saya dengan perangkat yang tersambung "
-"lewat USB."
-
 #: internetSharing-wifi
 msgctxt "internetSharing-wifi"
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
-
-#: internetSharing-wifi-desc
-msgid ""
-"Allow other devices to share my phone’s Internet connection by connecting "
-"via Wi-Fi."
-msgstr ""
-"Izinkan perangkat lain untuk membagikan sambungan Internet ponsel lewat "
-"sambungan Wi-Fi."
 
 #: wifi-hotspot
 msgid "Wi-Fi hotspot"
@@ -1748,12 +1735,6 @@ msgstr "Media"
 #: savingringtone
 msgid "Saving ringtone…"
 msgstr "Menyimpan nada panggil..."
-
-#: unplayable-ringtone
-msgid ""
-"The ringtone was not changed because the selected file can not be played on "
-"this phone."
-msgstr ""
 
 #: no-ringtone-app
 msgid "We were unable to find a ringtone app to manage ringtones!"
@@ -2268,10 +2249,6 @@ msgctxt "findmydevice"
 msgid "Find My Device"
 msgstr ""
 
-#: findmydevice-signup-description
-msgid "Find My Device allows you to locate, lock or erase your phone"
-msgstr ""
-
 #: findmydevice-create-account
 msgctxt "findmydevice-create-account"
 msgid "Create account or sign in"
@@ -2283,12 +2260,6 @@ msgstr ""
 
 #: findmydevice-about
 msgid "About Find My Device"
-msgstr ""
-
-#: findmydevice-settings-description
-msgid ""
-"Find My Device allows you to locate, lock or erase your phone from a web "
-"site:"
 msgstr ""
 
 #: findmydevice-enable-geolocation-prompt
@@ -2306,14 +2277,6 @@ msgstr ""
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
-msgstr ""
-
-#: findmydevice-active-tracking
-msgid "Your phone is being tracked by another device through the website."
-msgstr ""
-
-#: findmydevice-not-tracking
-msgid "No devices are actively tracking your phone through the website."
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3089,14 +3052,6 @@ msgstr "Tingkat lanjut"
 msgid "Enable USB storage?"
 msgstr "Aktifkan penyimpanan USB"
 
-#: turn-on-ums-confirm
-msgid ""
-"Turning on Enable USB storage allows another computer or device connected "
-"using USB to access files on this phone."
-msgstr ""
-"Menyalakan Aktifkan penyimpanan USB membolehkan komputer atau peranti lain "
-"tersambung menggunakan USB untuk mengakses berkas di ponsel ini."
-
 #: default-media-location
 msgid "Default media location"
 msgstr "Lokasi media utama"
@@ -3374,6 +3329,14 @@ msgstr ""
 msgid "Simple tiling"
 msgstr ""
 
+#: low-precision
+msgid "Low-precision painting"
+msgstr ""
+
+#: low-opacity
+msgid "Low-precision transparency"
+msgstr ""
+
 #: draw-tile-borders
 msgid "Draw tile borders"
 msgstr ""
@@ -3554,19 +3517,8 @@ msgctxt "reset-head"
 msgid "Reset"
 msgstr "Atur Ulang"
 
-#: reset-phone
-msgid "Reset Phone"
-msgstr "Setel Ulang Ponsel"
-
 #: reset-warning-title
 msgid "CAUTION"
-msgstr ""
-
-#: reset-warning-body
-msgid ""
-"Resetting will erase all your data, including any apps you’ve purchased. The "
-"phone will be restored to its factory condition. None of your settings or "
-"data will be saved."
 msgstr ""
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
@@ -3830,16 +3782,6 @@ msgstr "Modus hemat energi"
 msgid "{{level}}% battery left"
 msgstr "Baterai tinggal {{level}}%"
 
-#: powerSave-explanation
-msgid ""
-"Turning on power save mode turns off the phone’s data, Bluetooth and "
-"Geolocation connections to extend battery life. You can still turn these "
-"services back on manually."
-msgstr ""
-"Menyalakan modus hemat daya berarti menonaktifkan sambungan data, Bluetooth, "
-"dan Geolocation agar baterai dapat dipakai lebih lama. Anda masih dapat "
-"mengaktifkan layanan ini secara manual."
-
 #: turnOnAuto
 msgid "Turn on automatically"
 msgstr "Aktifkan otomatis"
@@ -3930,12 +3872,6 @@ msgstr "Kirim Saran ke Mozilla"
 
 #: performanceAndUsageData
 msgid "Performance and usage data"
-msgstr ""
-
-#: performanceAndUsageDataInfo
-msgid ""
-"Help us improve {{brandShortName}} by sharing data about your phone and the "
-"way you use it."
 msgstr ""
 
 #: sharePerformanceAndUsageData
@@ -4228,6 +4164,64 @@ msgstr ""
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr ""
+
+#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
+#: is-warning-head
+msgid "{{newSetting}}"
+msgstr ""
+
+#: is-warning-message
+msgid ""
+"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
+"{{newSetting}}?"
+msgstr ""
+
+#~ msgid "WPS failed"
+#~ msgstr "WPS gagal"
+
+#~ msgid "Failed to cancel WPS"
+#~ msgstr "Gagal membatalkan WPS"
+
+#~ msgid "Voice calls to"
+#~ msgstr "Panggilan suara ke"
+
+#, fuzzy
+#~ msgid "SMSC"
+#~ msgstr "MMSC"
+
+#~ msgid "Change phone name"
+#~ msgstr "Ubah nama telepon"
+
+#~ msgid "Share my phone’s Internet connection with a USB-connected device."
+#~ msgstr ""
+#~ "Bagikan sambungan Internet ponsel saya dengan perangkat yang tersambung "
+#~ "lewat USB."
+
+#~ msgid ""
+#~ "Allow other devices to share my phone’s Internet connection by connecting "
+#~ "via Wi-Fi."
+#~ msgstr ""
+#~ "Izinkan perangkat lain untuk membagikan sambungan Internet ponsel lewat "
+#~ "sambungan Wi-Fi."
+
+#~ msgid ""
+#~ "Turning on Enable USB storage allows another computer or device connected "
+#~ "using USB to access files on this phone."
+#~ msgstr ""
+#~ "Menyalakan Aktifkan penyimpanan USB membolehkan komputer atau peranti "
+#~ "lain tersambung menggunakan USB untuk mengakses berkas di ponsel ini."
+
+#~ msgid "Reset Phone"
+#~ msgstr "Setel Ulang Ponsel"
+
+#~ msgid ""
+#~ "Turning on power save mode turns off the phone’s data, Bluetooth and "
+#~ "Geolocation connections to extend battery life. You can still turn these "
+#~ "services back on manually."
+#~ msgstr ""
+#~ "Menyalakan modus hemat daya berarti menonaktifkan sambungan data, "
+#~ "Bluetooth, dan Geolocation agar baterai dapat dipakai lebih lama. Anda "
+#~ "masih dapat mengaktifkan layanan ini secara manual."
 
 #~ msgid "After 5 seconds"
 #~ msgstr "Setelah 5 detik"

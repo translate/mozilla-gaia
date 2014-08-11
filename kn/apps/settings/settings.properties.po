@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-28 20:49+0100\n"
+"POT-Creation-Date: 2014-08-11 06:57+0000\n"
 "PO-Revision-Date: 2014-07-29 14:30+0000\n"
 "Last-Translator: Omshivaprakash <omshivaprakash@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1406644223.000000\n"
@@ -374,6 +374,12 @@ msgstr "ಒಂದು ಮುಕ್ತ ನೆಟ್‌ವರ್ಕ್ ಲಭ್ಯ
 msgid "MAC address"
 msgstr "MAC ವಿಳಾಸ"
 
+#. # os = OS version. For example: 2.0.
+#. # The whole string may look like this: "Firefox OS 2.0"
+#: deviceInfo_software
+msgid "{{ brandShortName }} {{ os }}"
+msgstr ""
+
 #: macUnavailable
 msgctxt "macUnavailable"
 msgid "Not available"
@@ -465,9 +471,9 @@ msgstr "WPS ರದ್ದುಪಡಿಸಲಾಗಿದೆ"
 msgid "WPS timed out"
 msgstr "WPS ಕಾಲಾವಧಿ ಮೀರಿದೆ"
 
-#: fullStatus-wps-failed
-msgid "WPS failed"
-msgstr "WPS ವಿಫಲ"
+#: fullStatus-wps-failed-error
+msgid "WPS failed [{{error}}]"
+msgstr ""
 
 #: fullStatus-wps-overlapped
 msgid "Another WPS PBC AP was found"
@@ -514,9 +520,9 @@ msgstr "ಯಾವುದೇ"
 msgid "Cancel WPS"
 msgstr "WPS ರದ್ದು ಮಾಡು"
 
-#: wpsCancelFailedMessage
-msgid "Failed to cancel WPS"
-msgstr "WPS ರದ್ದುಮಾಡುವಲ್ಲಿ ವಿಫಲ"
+#: wpsCancelFailedMessageError
+msgid "Failed to cancel WPS [{{error}}]"
+msgstr ""
 
 #. # Connectivity :: Call
 #: callSettings
@@ -630,9 +636,9 @@ msgstr "ತಲುಪಲು ಸಾಧ್ಯವಾಗದಿದ್ದಾಗ ರವ�
 msgid "When unreachable"
 msgstr "ತಲುಪಲು ಸಾಧ್ಯವಾಗದಿದ್ದಾಗ"
 
-#: callForwardingForwardingVoiceTo
-msgid "Voice calls to"
-msgstr "ಧ್ವನಿ ಕರೆಗಳು ಇದಕ್ಕೆ"
+#: callForwardingForwardingVoiceToNumber
+msgid "Voice calls to {{number}}"
+msgstr ""
 
 #: callForwardingNotForwarding
 msgctxt "callForwardingNotForwarding"
@@ -860,11 +866,13 @@ msgid "{{messagingSettings}}"
 msgstr "{{messagingSettings}}"
 
 #: message-confirmation
-msgid "Message confirmation"
+#, fuzzy
+msgid "Message Confirmation"
 msgstr "ಸಂದೇಶದ ದೃಢೀಕರಣ"
 
 #: message-delivery-reports
-msgid "Delivery reports"
+#, fuzzy
+msgid "Delivery Reports"
 msgstr "ಕಳುಹಿಸಿದ ವರದಿಗಳು"
 
 #: message-delivery-reports-details
@@ -872,7 +880,8 @@ msgid "Request notification of delivery for each message sent"
 msgstr "ಕಳುಹಿಸಿದ ಸಂದೇಶವು ತಲುಪಿದ ಸೂಚನೆಗೆ ಕೋರಿಕೆ ಸಲ್ಲಿಸಿ"
 
 #: message-read-reports
-msgid "Read reports"
+#, fuzzy
+msgid "Read Reports"
 msgstr "ಓದಿದ ವರದಿಗಳು"
 
 #: message-read-reports-details
@@ -880,11 +889,13 @@ msgid "Request read report for each message sent"
 msgstr "ಕಳುಹಿಸಿದ ಸಂದೇಶವನ್ನು ಓದಿದ ವರದಿಗಾಗಿ ಕೋರಿಕೆ ಸಲ್ಲಿಸಿ"
 
 #: mmsTitle
-msgid "Multimedia messaging (MMS)"
+#, fuzzy
+msgid "Multimedia Messaging (MMS)"
 msgstr "ಮಲ್ಟಿಮೀಡಿಯಾ ಸಂದೇಶಗಳು (MMS)"
 
 #: auto-retrieve
-msgid "Auto retrieve"
+#, fuzzy
+msgid "Auto Retrieve"
 msgstr "ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಮರುಪಡೆ"
 
 #: auto-retrieve-details
@@ -908,7 +919,8 @@ msgid "Auto-configure"
 msgstr "ಸ್ವಯಂ-ಸಜ್ಜು"
 
 #: wapPushMessages
-msgid "WAP Push messages"
+#, fuzzy
+msgid "WAP Push Messages"
 msgstr "WAP Push ಸಂದೇಶಗಳು"
 
 #: wapPush
@@ -916,24 +928,30 @@ msgid "WAP Push"
 msgstr "WAP Push"
 
 #: cellBroadcastMessages
-msgid "Cell broadcast messages"
+#, fuzzy
+msgid "Cell Broadcast Messages"
 msgstr "Cell ಪ್ರಸರಣ ಸಂದೇಶಗಳು"
 
 #: cellBroadcast
-msgid "Cell broadcast"
+#, fuzzy
+msgid "Cell Broadcast"
 msgstr "Cell ಪ್ರಸರಣ"
+
+#: emergencyAlert
+msgid "Emergency Alert"
+msgstr ""
 
 #: messagingInformation
 msgid "Information"
 msgstr "ಮಾಹಿತಿ"
 
 #. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
-#: messagingSMSC
-msgid "SMSC"
-msgstr "SMSC"
+#: messaging-SMSC
+msgid "Service Center"
+msgstr ""
 
-#: unknownSMSC
-msgid "Unknown number"
+#: unknown-SMSC
+msgid "Info not available"
 msgstr ""
 
 #. # Connectivity :: Cellular & Data
@@ -1413,17 +1431,9 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "ಸಂಪರ್ಕಗೊಂಡಿದೆ"
 
-#: device-status-connected-phone
-msgid "Connected to phone audio"
-msgstr "ಪೋನ್ ಆಡಿಯೋಗೆ ಸಂಪರ್ಕಗೊಂಡಿದೆ"
-
 #: device-status-connected-media
 msgid "Connected to media audio"
 msgstr "ಮೀಡಿಯಾ ಆಡಿಯೋ ಜೊತೆ ಸಂಪರ್ಕಗೊಂಡಿದೆ"
-
-#: device-status-connected-phone-media
-msgid "Connected to phone/media audio"
-msgstr "ಫೋನಿನ/media ಆಡಿಯೋ ಜೊತೆ ಸಂಪರ್ಕಗೊಂಡಿದೆ"
 
 #: device-option-unpair
 msgid "Unpair"
@@ -1465,10 +1475,6 @@ msgstr "ಸಾಧನದ ಹೆಸರನ್ನು ಬದಲಾಯಿಸಿ"
 #: unnamed-device
 msgid "Unknown device"
 msgstr "ಗೊತ್ತಿರದ ಸಾಧನ"
-
-#: change-phone-name
-msgid "Change phone name"
-msgstr "ಫೋನಿನ ಹೆಸರನ್ನು ಬದಲಾಯಿಸಿ"
 
 #: change-phone-name-desc
 msgid "Change the name of your device as it appears in your computer"
@@ -1540,20 +1546,10 @@ msgstr "{{internetSharing}}"
 msgid "USB"
 msgstr "USB"
 
-#: internetSharing-usb-desc
-msgid "Share my phone’s Internet connection with a USB-connected device."
-msgstr "ನನ್ನ ಫೋನಿನ ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕವನ್ನು USB-ಸಾಧನದೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ."
-
 #: internetSharing-wifi
 msgctxt "internetSharing-wifi"
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
-
-#: internetSharing-wifi-desc
-msgid ""
-"Allow other devices to share my phone’s Internet connection by connecting "
-"via Wi-Fi."
-msgstr "ಬೇರೆ ಸಾಧನಗಳು ನನ್ನ ಫೋನಿನ ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕವನ್ನು Wi-Fi ಮೂಲಕ ಹಂಚುವಂತೆ ಅನುಮತಿಸಿ."
 
 #: wifi-hotspot
 msgid "Wi-Fi hotspot"
@@ -1730,13 +1726,6 @@ msgstr "ಮಾಧ್ಯಮ"
 #: savingringtone
 msgid "Saving ringtone…"
 msgstr "ರಿಂಗ್‌ಟೋನ್‌ ಅನ್ನು ಉಳಿಸಲಾಗುತ್ತಿದೆ…"
-
-#: unplayable-ringtone
-msgid ""
-"The ringtone was not changed because the selected file can not be played on "
-"this phone."
-msgstr ""
-"ಈ ಕಡತವನ್ನು ಪ್ರಸ್ತುತ ಫೋನಿನಲ್ಲಿ ಓಡಿಸಲು ಸಾಧ್ಯವಿಲ್ಲದ ಕಾರಣ ರಿಂಗಣವನ್ನು ಬದಲಾಯಿಸಲಾಗಲಿಲ್ಲ."
 
 #: no-ringtone-app
 msgid "We were unable to find a ringtone app to manage ringtones!"
@@ -2254,12 +2243,6 @@ msgctxt "findmydevice"
 msgid "Find My Device"
 msgstr "ನನ್ನ ಸಾಧನವನ್ನು ಪತ್ತೆಮಾಡು"
 
-#: findmydevice-signup-description
-msgid "Find My Device allows you to locate, lock or erase your phone"
-msgstr ""
-"ನನ್ನ ಸಾಧನವನ್ನು ಪತ್ತೆ ಮಾಡು ಎನ್ನುವುದು ನಿಮ್ಮ ಫೋನ್‌ ಅನ್ನು ಹುಡುಕಲು, ಲಾಕ್ ಅಥವಾ ಅಳಿಸಲು "
-"ನೆರವಾಗುತ್ತದೆ"
-
 #: findmydevice-create-account
 msgctxt "findmydevice-create-account"
 msgid "Create account or sign in"
@@ -2272,14 +2255,6 @@ msgstr "ನನ್ನ ಸಾಧನವನ್ನು ಪತ್ತೆ ಮಾಡು �
 #: findmydevice-about
 msgid "About Find My Device"
 msgstr "ನನ್ನ ಸಾಧನವನ್ನು ಪತ್ತೆ ಮಾಡು ಬಗ್ಗೆ"
-
-#: findmydevice-settings-description
-msgid ""
-"Find My Device allows you to locate, lock or erase your phone from a web "
-"site:"
-msgstr ""
-"ನನ್ನ ಸಾಧನವನ್ನು ಪತ್ತೆ ಮಾಡುನಿಮ್ಮ ಫೋನ್‌ಅನ್ನು ಹುಡುಕಲು, ಲಾಕ್ ಅಥವಾ ಅಳಿಸಲು ಈ ಜಾಲತಾಣದ ಮೂಲಕ "
-"ಸಾಧ್ಯವಾಗಿಸುತ್ತದೆ:"
 
 #: findmydevice-enable-geolocation-prompt
 msgid "Enable Geolocation?"
@@ -2297,14 +2272,6 @@ msgstr "ಭೂಸ್ಥಳ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ"
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
 msgstr "ಸಾಧನವು ಸದ್ಯಕ್ಕೆ ಆಫ್‌ಲೈನ್ ಆಗಿದೆ. ಜಾಲಬಂಧಕ್ಕೆ ಸಂಪರ್ಕಹೊಂದಿ ನಂತರ ಇನ್ನೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ."
-
-#: findmydevice-active-tracking
-msgid "Your phone is being tracked by another device through the website."
-msgstr "ನಿಮ್ಮ ಫೋನ್‌ ಅನ್ನು ಜಾಲತಾಣದ ಮೂಲಕ ಮತ್ತೊಂದು ಸಾಧನ ಜಾಡು ಹಿಡಿಯುತ್ತಿದೆ."
-
-#: findmydevice-not-tracking
-msgid "No devices are actively tracking your phone through the website."
-msgstr "ಯಾವುದೇ ಸಾಧನ ನಿಮ್ಮ ಫೋನ್‌ ಅನ್ನು ಜಾಲತಾಣದ ಮೂಲಕ ಜಾಡು ಹಿಡಿಯುತ್ತಿಲ್ಲ."
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -3043,14 +3010,6 @@ msgstr "ಹೆಚ್ಚಿನ"
 msgid "Enable USB storage?"
 msgstr "USB ಶೇಖರಣೆ ಸಕ್ರಿಯಗೊಳಿಸಬೇಕೆ?"
 
-#: turn-on-ums-confirm
-msgid ""
-"Turning on Enable USB storage allows another computer or device connected "
-"using USB to access files on this phone."
-msgstr ""
-"USB ಶೇಖರಣೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುವುದರಿಂದ USB ಮೂಲಕ ಜೋಡಿಸಲಾಗಿರುವ ಇನ್ನೊಂದು ಗಣಕ ಅಥವ "
-"ಸಾಧನವು ಈ ಫೋನ್‌ನಲ್ಲಿನ ಕಡತಗಳನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳಲು ಸಾಧ್ಯವಿರುತ್ತದೆ."
-
 #: default-media-location
 msgid "Default media location"
 msgstr "ಪೂರ್ವನಿಯೋಜಿತ ಮೀಡಿಯಾ ಸ್ಥಳ"
@@ -3330,6 +3289,14 @@ msgstr "ಟೈಲಿಂಗ್"
 msgid "Simple tiling"
 msgstr "ಸಾಮಾನ್ಯ ಟೈಲಿಂಗ್"
 
+#: low-precision
+msgid "Low-precision painting"
+msgstr ""
+
+#: low-opacity
+msgid "Low-precision transparency"
+msgstr ""
+
 #: draw-tile-borders
 msgid "Draw tile borders"
 msgstr "ಟೈಲ್ ಅಂಚುಗಳನ್ನು ಚಿತ್ರಿಸು"
@@ -3508,23 +3475,9 @@ msgctxt "reset-head"
 msgid "Reset"
 msgstr "ಮರುಹೊಂದಿಸು"
 
-#: reset-phone
-msgid "Reset Phone"
-msgstr "ಫೋನ್‌ ಮರುಹೊಂದಿಸಿ"
-
 #: reset-warning-title
 msgid "CAUTION"
 msgstr "CAUTION"
-
-#: reset-warning-body
-msgid ""
-"Resetting will erase all your data, including any apps you’ve purchased. The "
-"phone will be restored to its factory condition. None of your settings or "
-"data will be saved."
-msgstr ""
-"ಮರುಹೊಂದಿಸುವುದು ನಿಮ್ಮೆಲ್ಲ ಡೇಟಾ ಅಳಿಸುತ್ತದೆ, ನೀವು ಖರೀದಿಸಿದ ಅನ್ವಯಗಳನ್ನೂ ಒಳಗೊಂಡಂತೆ. "
-"ಫೋನ್ ಅನ್ನು ಕಾರ್ಖಾನೆಯ ಪರಿಸ್ಥಿತಿಗೆ ಮರುಹೊಂದಿಸಲಾಗುತ್ತದೆ. ನಿಮ್ಮ ಯಾವುದೇ ಸಿದ್ದತೆಗಳು ಅಥವಾ "
-"ಡೇಟಾ ಉಳಿಸಲಾಗುವುದಿಲ್ಲ."
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
 #: your-rights
@@ -3785,16 +3738,6 @@ msgstr "ವಿದ್ಯುಚ್ಛಕ್ತಿ ಉಳಿತಾಯ ಸ್ಥಿ�
 msgid "{{level}}% battery left"
 msgstr "{{level}}% ಬ್ಯಾಟರಿ ಉಳಿದಿದೆ"
 
-#: powerSave-explanation
-msgid ""
-"Turning on power save mode turns off the phone’s data, Bluetooth and "
-"Geolocation connections to extend battery life. You can still turn these "
-"services back on manually."
-msgstr ""
-"ವಿದ್ಯುಚ್ಛಕ್ತಿ ಉಳಿತಾಯ ಸ್ಥಿತಿ ಸಕ್ರಿಯಗೊಳಿಸುವುದು ಫೋನಿನ ಡೇಟಾ, ಬ್ಲೂಟೂತ್ ಮತ್ತು ಭೂಸ್ಥಳ "
-"ಸಂಪರ್ಕಗಳನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ ಬ್ಯಾಟರಿಯ ಬದುಕನ್ನು ವಿಸ್ತರಿಸುತ್ತದೆಂಈವು ಈ ಸೇವೆಗಳನ್ನು ಮತ್ತೆ "
-"ಕೈಯಾರೆ ಸಕ್ರಿಯಗೊಳಿಸಬಹುದು."
-
 #: turnOnAuto
 msgid "Turn on automatically"
 msgstr "ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಸಕ್ರಿಯಗೊಳ್ಳು"
@@ -3888,12 +3831,6 @@ msgstr "Mozilla ಗೆ ಅಭಿಪ್ರಾಯ ಕಳುಹಿಸಿ"
 
 #: performanceAndUsageData
 msgid "Performance and usage data"
-msgstr ""
-
-#: performanceAndUsageDataInfo
-msgid ""
-"Help us improve {{brandShortName}} by sharing data about your phone and the "
-"way you use it."
 msgstr ""
 
 #: sharePerformanceAndUsageData
@@ -4202,6 +4139,99 @@ msgstr "ಮಾಹಿತಿ ಕಳುಹಿಸು"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "ಚಾನಲ್‌ ಸ್ಥಿತಿಯನ್ನು ಪಡೆಯಿರಿ"
+
+#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
+#: is-warning-head
+msgid "{{newSetting}}"
+msgstr ""
+
+#: is-warning-message
+msgid ""
+"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
+"{{newSetting}}?"
+msgstr ""
+
+#~ msgid "WPS failed"
+#~ msgstr "WPS ವಿಫಲ"
+
+#~ msgid "Failed to cancel WPS"
+#~ msgstr "WPS ರದ್ದುಮಾಡುವಲ್ಲಿ ವಿಫಲ"
+
+#~ msgid "Voice calls to"
+#~ msgstr "ಧ್ವನಿ ಕರೆಗಳು ಇದಕ್ಕೆ"
+
+#~ msgid "SMSC"
+#~ msgstr "SMSC"
+
+#~ msgid "Connected to phone audio"
+#~ msgstr "ಪೋನ್ ಆಡಿಯೋಗೆ ಸಂಪರ್ಕಗೊಂಡಿದೆ"
+
+#~ msgid "Connected to phone/media audio"
+#~ msgstr "ಫೋನಿನ/media ಆಡಿಯೋ ಜೊತೆ ಸಂಪರ್ಕಗೊಂಡಿದೆ"
+
+#~ msgid "Change phone name"
+#~ msgstr "ಫೋನಿನ ಹೆಸರನ್ನು ಬದಲಾಯಿಸಿ"
+
+#~ msgid "Share my phone’s Internet connection with a USB-connected device."
+#~ msgstr "ನನ್ನ ಫೋನಿನ ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕವನ್ನು USB-ಸಾಧನದೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ."
+
+#~ msgid ""
+#~ "Allow other devices to share my phone’s Internet connection by connecting "
+#~ "via Wi-Fi."
+#~ msgstr ""
+#~ "ಬೇರೆ ಸಾಧನಗಳು ನನ್ನ ಫೋನಿನ ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕವನ್ನು Wi-Fi ಮೂಲಕ ಹಂಚುವಂತೆ ಅನುಮತಿಸಿ."
+
+#~ msgid ""
+#~ "The ringtone was not changed because the selected file can not be played "
+#~ "on this phone."
+#~ msgstr ""
+#~ "ಈ ಕಡತವನ್ನು ಪ್ರಸ್ತುತ ಫೋನಿನಲ್ಲಿ ಓಡಿಸಲು ಸಾಧ್ಯವಿಲ್ಲದ ಕಾರಣ ರಿಂಗಣವನ್ನು ಬದಲಾಯಿಸಲಾಗಲಿಲ್ಲ."
+
+#~ msgid "Find My Device allows you to locate, lock or erase your phone"
+#~ msgstr ""
+#~ "ನನ್ನ ಸಾಧನವನ್ನು ಪತ್ತೆ ಮಾಡು ಎನ್ನುವುದು ನಿಮ್ಮ ಫೋನ್‌ ಅನ್ನು ಹುಡುಕಲು, ಲಾಕ್ ಅಥವಾ ಅಳಿಸಲು "
+#~ "ನೆರವಾಗುತ್ತದೆ"
+
+#~ msgid ""
+#~ "Find My Device allows you to locate, lock or erase your phone from a web "
+#~ "site:"
+#~ msgstr ""
+#~ "ನನ್ನ ಸಾಧನವನ್ನು ಪತ್ತೆ ಮಾಡುನಿಮ್ಮ ಫೋನ್‌ಅನ್ನು ಹುಡುಕಲು, ಲಾಕ್ ಅಥವಾ ಅಳಿಸಲು ಈ ಜಾಲತಾಣದ "
+#~ "ಮೂಲಕ ಸಾಧ್ಯವಾಗಿಸುತ್ತದೆ:"
+
+#~ msgid "Your phone is being tracked by another device through the website."
+#~ msgstr "ನಿಮ್ಮ ಫೋನ್‌ ಅನ್ನು ಜಾಲತಾಣದ ಮೂಲಕ ಮತ್ತೊಂದು ಸಾಧನ ಜಾಡು ಹಿಡಿಯುತ್ತಿದೆ."
+
+#~ msgid "No devices are actively tracking your phone through the website."
+#~ msgstr "ಯಾವುದೇ ಸಾಧನ ನಿಮ್ಮ ಫೋನ್‌ ಅನ್ನು ಜಾಲತಾಣದ ಮೂಲಕ ಜಾಡು ಹಿಡಿಯುತ್ತಿಲ್ಲ."
+
+#~ msgid ""
+#~ "Turning on Enable USB storage allows another computer or device connected "
+#~ "using USB to access files on this phone."
+#~ msgstr ""
+#~ "USB ಶೇಖರಣೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುವುದರಿಂದ USB ಮೂಲಕ ಜೋಡಿಸಲಾಗಿರುವ ಇನ್ನೊಂದು ಗಣಕ ಅಥವ "
+#~ "ಸಾಧನವು ಈ ಫೋನ್‌ನಲ್ಲಿನ ಕಡತಗಳನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳಲು ಸಾಧ್ಯವಿರುತ್ತದೆ."
+
+#~ msgid "Reset Phone"
+#~ msgstr "ಫೋನ್‌ ಮರುಹೊಂದಿಸಿ"
+
+#~ msgid ""
+#~ "Resetting will erase all your data, including any apps you’ve purchased. "
+#~ "The phone will be restored to its factory condition. None of your "
+#~ "settings or data will be saved."
+#~ msgstr ""
+#~ "ಮರುಹೊಂದಿಸುವುದು ನಿಮ್ಮೆಲ್ಲ ಡೇಟಾ ಅಳಿಸುತ್ತದೆ, ನೀವು ಖರೀದಿಸಿದ ಅನ್ವಯಗಳನ್ನೂ ಒಳಗೊಂಡಂತೆ. "
+#~ "ಫೋನ್ ಅನ್ನು ಕಾರ್ಖಾನೆಯ ಪರಿಸ್ಥಿತಿಗೆ ಮರುಹೊಂದಿಸಲಾಗುತ್ತದೆ. ನಿಮ್ಮ ಯಾವುದೇ ಸಿದ್ದತೆಗಳು "
+#~ "ಅಥವಾ ಡೇಟಾ ಉಳಿಸಲಾಗುವುದಿಲ್ಲ."
+
+#~ msgid ""
+#~ "Turning on power save mode turns off the phone’s data, Bluetooth and "
+#~ "Geolocation connections to extend battery life. You can still turn these "
+#~ "services back on manually."
+#~ msgstr ""
+#~ "ವಿದ್ಯುಚ್ಛಕ್ತಿ ಉಳಿತಾಯ ಸ್ಥಿತಿ ಸಕ್ರಿಯಗೊಳಿಸುವುದು ಫೋನಿನ ಡೇಟಾ, ಬ್ಲೂಟೂತ್ ಮತ್ತು ಭೂಸ್ಥಳ "
+#~ "ಸಂಪರ್ಕಗಳನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ ಬ್ಯಾಟರಿಯ ಬದುಕನ್ನು ವಿಸ್ತರಿಸುತ್ತದೆಂಈವು ಈ ಸೇವೆಗಳನ್ನು "
+#~ "ಮತ್ತೆ ಕೈಯಾರೆ ಸಕ್ರಿಯಗೊಳಿಸಬಹುದು."
 
 #~ msgctxt "search-suggestions-button"
 #~ msgid "{{search-suggestions}}"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-28 20:49+0100\n"
+"POT-Creation-Date: 2014-08-11 06:57+0000\n"
 "PO-Revision-Date: 2014-08-10 18:26+0000\n"
 "Last-Translator: milupo <milupo@sorbzilla.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1407695164.000000\n"
@@ -376,6 +376,12 @@ msgstr ""
 msgid "MAC address"
 msgstr ""
 
+#. # os = OS version. For example: 2.0.
+#. # The whole string may look like this: "Firefox OS 2.0"
+#: deviceInfo_software
+msgid "{{ brandShortName }} {{ os }}"
+msgstr ""
+
 #: macUnavailable
 msgctxt "macUnavailable"
 msgid "Not available"
@@ -467,8 +473,8 @@ msgstr ""
 msgid "WPS timed out"
 msgstr ""
 
-#: fullStatus-wps-failed
-msgid "WPS failed"
+#: fullStatus-wps-failed-error
+msgid "WPS failed [{{error}}]"
 msgstr ""
 
 #: fullStatus-wps-overlapped
@@ -516,8 +522,8 @@ msgstr ""
 msgid "Cancel WPS"
 msgstr ""
 
-#: wpsCancelFailedMessage
-msgid "Failed to cancel WPS"
+#: wpsCancelFailedMessageError
+msgid "Failed to cancel WPS [{{error}}]"
 msgstr ""
 
 #. # Connectivity :: Call
@@ -630,8 +636,8 @@ msgstr ""
 msgid "When unreachable"
 msgstr ""
 
-#: callForwardingForwardingVoiceTo
-msgid "Voice calls to"
+#: callForwardingForwardingVoiceToNumber
+msgid "Voice calls to {{number}}"
 msgstr ""
 
 #: callForwardingNotForwarding
@@ -850,11 +856,11 @@ msgid "{{messagingSettings}}"
 msgstr ""
 
 #: message-confirmation
-msgid "Message confirmation"
+msgid "Message Confirmation"
 msgstr ""
 
 #: message-delivery-reports
-msgid "Delivery reports"
+msgid "Delivery Reports"
 msgstr ""
 
 #: message-delivery-reports-details
@@ -862,7 +868,7 @@ msgid "Request notification of delivery for each message sent"
 msgstr ""
 
 #: message-read-reports
-msgid "Read reports"
+msgid "Read Reports"
 msgstr ""
 
 #: message-read-reports-details
@@ -870,11 +876,11 @@ msgid "Request read report for each message sent"
 msgstr ""
 
 #: mmsTitle
-msgid "Multimedia messaging (MMS)"
+msgid "Multimedia Messaging (MMS)"
 msgstr ""
 
 #: auto-retrieve
-msgid "Auto retrieve"
+msgid "Auto Retrieve"
 msgstr ""
 
 #: auto-retrieve-details
@@ -898,7 +904,7 @@ msgid "Auto-configure"
 msgstr ""
 
 #: wapPushMessages
-msgid "WAP Push messages"
+msgid "WAP Push Messages"
 msgstr ""
 
 #: wapPush
@@ -906,11 +912,15 @@ msgid "WAP Push"
 msgstr ""
 
 #: cellBroadcastMessages
-msgid "Cell broadcast messages"
+msgid "Cell Broadcast Messages"
 msgstr ""
 
 #: cellBroadcast
-msgid "Cell broadcast"
+msgid "Cell Broadcast"
+msgstr ""
+
+#: emergencyAlert
+msgid "Emergency Alert"
 msgstr ""
 
 #: messagingInformation
@@ -918,12 +928,12 @@ msgid "Information"
 msgstr ""
 
 #. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
-#: messagingSMSC
-msgid "SMSC"
+#: messaging-SMSC
+msgid "Service Center"
 msgstr ""
 
-#: unknownSMSC
-msgid "Unknown number"
+#: unknown-SMSC
+msgid "Info not available"
 msgstr ""
 
 #. # Connectivity :: Cellular & Data
@@ -1399,16 +1409,8 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr ""
 
-#: device-status-connected-phone
-msgid "Connected to phone audio"
-msgstr ""
-
 #: device-status-connected-media
 msgid "Connected to media audio"
-msgstr ""
-
-#: device-status-connected-phone-media
-msgid "Connected to phone/media audio"
 msgstr ""
 
 #: device-option-unpair
@@ -1450,10 +1452,6 @@ msgstr ""
 
 #: unnamed-device
 msgid "Unknown device"
-msgstr ""
-
-#: change-phone-name
-msgid "Change phone name"
 msgstr ""
 
 #: change-phone-name-desc
@@ -1523,19 +1521,9 @@ msgstr ""
 msgid "USB"
 msgstr ""
 
-#: internetSharing-usb-desc
-msgid "Share my phone’s Internet connection with a USB-connected device."
-msgstr ""
-
 #: internetSharing-wifi
 msgctxt "internetSharing-wifi"
 msgid "Wi-Fi"
-msgstr ""
-
-#: internetSharing-wifi-desc
-msgid ""
-"Allow other devices to share my phone’s Internet connection by connecting "
-"via Wi-Fi."
 msgstr ""
 
 #: wifi-hotspot
@@ -1712,12 +1700,6 @@ msgstr ""
 
 #: savingringtone
 msgid "Saving ringtone…"
-msgstr ""
-
-#: unplayable-ringtone
-msgid ""
-"The ringtone was not changed because the selected file can not be played on "
-"this phone."
 msgstr ""
 
 #: no-ringtone-app
@@ -2228,10 +2210,6 @@ msgctxt "findmydevice"
 msgid "Find My Device"
 msgstr "Mój grat namakać"
 
-#: findmydevice-signup-description
-msgid "Find My Device allows you to locate, lock or erase your phone"
-msgstr ""
-
 #: findmydevice-create-account
 msgctxt "findmydevice-create-account"
 msgid "Create account or sign in"
@@ -2244,12 +2222,6 @@ msgstr "\"Mój grat namakać\" zmóžnić"
 #: findmydevice-about
 msgid "About Find My Device"
 msgstr "Wo \"Mój grat namakać\""
-
-#: findmydevice-settings-description
-msgid ""
-"Find My Device allows you to locate, lock or erase your phone from a web "
-"site:"
-msgstr ""
 
 #: findmydevice-enable-geolocation-prompt
 msgid "Enable Geolocation?"
@@ -2266,14 +2238,6 @@ msgstr ""
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
-msgstr ""
-
-#: findmydevice-active-tracking
-msgid "Your phone is being tracked by another device through the website."
-msgstr ""
-
-#: findmydevice-not-tracking
-msgid "No devices are actively tracking your phone through the website."
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -2972,12 +2936,6 @@ msgstr ""
 msgid "Enable USB storage?"
 msgstr ""
 
-#: turn-on-ums-confirm
-msgid ""
-"Turning on Enable USB storage allows another computer or device connected "
-"using USB to access files on this phone."
-msgstr ""
-
 #: default-media-location
 msgid "Default media location"
 msgstr ""
@@ -3252,6 +3210,14 @@ msgstr ""
 msgid "Simple tiling"
 msgstr ""
 
+#: low-precision
+msgid "Low-precision painting"
+msgstr ""
+
+#: low-opacity
+msgid "Low-precision transparency"
+msgstr ""
+
 #: draw-tile-borders
 msgid "Draw tile borders"
 msgstr ""
@@ -3426,19 +3392,8 @@ msgctxt "reset-head"
 msgid "Reset"
 msgstr ""
 
-#: reset-phone
-msgid "Reset Phone"
-msgstr ""
-
 #: reset-warning-title
 msgid "CAUTION"
-msgstr ""
-
-#: reset-warning-body
-msgid ""
-"Resetting will erase all your data, including any apps you’ve purchased. The "
-"phone will be restored to its factory condition. None of your settings or "
-"data will be saved."
 msgstr ""
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
@@ -3673,13 +3628,6 @@ msgstr ""
 msgid "{{level}}% battery left"
 msgstr ""
 
-#: powerSave-explanation
-msgid ""
-"Turning on power save mode turns off the phone’s data, Bluetooth and "
-"Geolocation connections to extend battery life. You can still turn these "
-"services back on manually."
-msgstr ""
-
 #: turnOnAuto
 msgid "Turn on automatically"
 msgstr ""
@@ -3768,12 +3716,6 @@ msgstr ""
 
 #: performanceAndUsageData
 msgid "Performance and usage data"
-msgstr ""
-
-#: performanceAndUsageDataInfo
-msgid ""
-"Help us improve {{brandShortName}} by sharing data about your phone and the "
-"way you use it."
 msgstr ""
 
 #: sharePerformanceAndUsageData
@@ -4054,4 +3996,15 @@ msgstr ""
 
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
+msgstr ""
+
+#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
+#: is-warning-head
+msgid "{{newSetting}}"
+msgstr ""
+
+#: is-warning-message
+msgid ""
+"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
+"{{newSetting}}?"
 msgstr ""

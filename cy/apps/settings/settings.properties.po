@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-28 20:49+0100\n"
+"POT-Creation-Date: 2014-08-11 06:57+0000\n"
 "PO-Revision-Date: 2014-07-31 14:29+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1406816946.000000\n"
@@ -377,6 +377,12 @@ msgstr "Hysbysu pan fydd rhwydwaith agored ar gael"
 msgid "MAC address"
 msgstr "Cyfeiriad MAC"
 
+#. # os = OS version. For example: 2.0.
+#. # The whole string may look like this: "Firefox OS 2.0"
+#: deviceInfo_software
+msgid "{{ brandShortName }} {{ os }}"
+msgstr ""
+
 #: macUnavailable
 msgctxt "macUnavailable"
 msgid "Not available"
@@ -468,9 +474,9 @@ msgstr "WPS wedi ei ddiddymu"
 msgid "WPS timed out"
 msgstr "Amser allan WPS"
 
-#: fullStatus-wps-failed
-msgid "WPS failed"
-msgstr "Maethodd WPS"
+#: fullStatus-wps-failed-error
+msgid "WPS failed [{{error}}]"
+msgstr ""
 
 #: fullStatus-wps-overlapped
 msgid "Another WPS PBC AP was found"
@@ -517,9 +523,9 @@ msgstr "Unrhyw un"
 msgid "Cancel WPS"
 msgstr "Diddymu WPS"
 
-#: wpsCancelFailedMessage
-msgid "Failed to cancel WPS"
-msgstr "Methu diddymu WPS"
+#: wpsCancelFailedMessageError
+msgid "Failed to cancel WPS [{{error}}]"
+msgstr ""
 
 #. # Connectivity :: Call
 #: callSettings
@@ -633,9 +639,9 @@ msgstr "Ymlaen pan nad ydw i ar gael"
 msgid "When unreachable"
 msgstr "Pan nad ar gael"
 
-#: callForwardingForwardingVoiceTo
-msgid "Voice calls to"
-msgstr "Galwadau llais i"
+#: callForwardingForwardingVoiceToNumber
+msgid "Voice calls to {{number}}"
+msgstr ""
 
 #: callForwardingNotForwarding
 msgctxt "callForwardingNotForwarding"
@@ -860,11 +866,13 @@ msgid "{{messagingSettings}}"
 msgstr "{{messagingSettings}}"
 
 #: message-confirmation
-msgid "Message confirmation"
+#, fuzzy
+msgid "Message Confirmation"
 msgstr "Cadarnhad neges"
 
 #: message-delivery-reports
-msgid "Delivery reports"
+#, fuzzy
+msgid "Delivery Reports"
 msgstr "Gofnod trosglwyddo"
 
 #: message-delivery-reports-details
@@ -872,7 +880,8 @@ msgid "Request notification of delivery for each message sent"
 msgstr "Gofyn am hysbysiad trosglwyddo pob neges testun anfonwyd"
 
 #: message-read-reports
-msgid "Read reports"
+#, fuzzy
+msgid "Read Reports"
 msgstr "Adroddiadau darllen"
 
 #: message-read-reports-details
@@ -880,11 +889,13 @@ msgid "Request read report for each message sent"
 msgstr "Gofyn am adroddiad darllen am bod neges anfonwyd"
 
 #: mmsTitle
-msgid "Multimedia messaging (MMS)"
+#, fuzzy
+msgid "Multimedia Messaging (MMS)"
 msgstr "Negesu Amlgyfrwng (MMS)"
 
 #: auto-retrieve
-msgid "Auto retrieve"
+#, fuzzy
+msgid "Auto Retrieve"
 msgstr "Adalw awtomatig"
 
 #: auto-retrieve-details
@@ -908,7 +919,8 @@ msgid "Auto-configure"
 msgstr "Awto-ffurfweddu"
 
 #: wapPushMessages
-msgid "WAP Push messages"
+#, fuzzy
+msgid "WAP Push Messages"
 msgstr "Negeseuon Gwthio WAP"
 
 #: wapPush
@@ -916,25 +928,31 @@ msgid "WAP Push"
 msgstr "Gwthio WAP"
 
 #: cellBroadcastMessages
-msgid "Cell broadcast messages"
+#, fuzzy
+msgid "Cell Broadcast Messages"
 msgstr "Negeseuon darlledu cell"
 
 #: cellBroadcast
-msgid "Cell broadcast"
+#, fuzzy
+msgid "Cell Broadcast"
 msgstr "Darlledu cell"
+
+#: emergencyAlert
+msgid "Emergency Alert"
+msgstr ""
 
 #: messagingInformation
 msgid "Information"
 msgstr "Gwybodaeth"
 
 #. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
-#: messagingSMSC
-msgid "SMSC"
-msgstr "SMSC"
+#: messaging-SMSC
+msgid "Service Center"
+msgstr ""
 
-#: unknownSMSC
-msgid "Unknown number"
-msgstr "Rhif anhysbys"
+#: unknown-SMSC
+msgid "Info not available"
+msgstr ""
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
@@ -1414,17 +1432,9 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "Cysylltwyd"
 
-#: device-status-connected-phone
-msgid "Connected to phone audio"
-msgstr "Wedi cysylltu i sain y ffôn"
-
 #: device-status-connected-media
 msgid "Connected to media audio"
 msgstr "Wedi cysylltu i sain cyfrwng"
-
-#: device-status-connected-phone-media
-msgid "Connected to phone/media audio"
-msgstr "Wedi cysylltu i sain cyfrwng/ffôn"
 
 #: device-option-unpair
 msgid "Unpair"
@@ -1466,10 +1476,6 @@ msgstr "Ailenwi fy nyfais"
 #: unnamed-device
 msgid "Unknown device"
 msgstr "Dyfais anhysbys"
-
-#: change-phone-name
-msgid "Change phone name"
-msgstr "Newid enw ffôn"
 
 #: change-phone-name-desc
 msgid "Change the name of your device as it appears in your computer"
@@ -1542,22 +1548,10 @@ msgstr "{{internetSharing}}"
 msgid "USB"
 msgstr "USB"
 
-#: internetSharing-usb-desc
-msgid "Share my phone’s Internet connection with a USB-connected device."
-msgstr "Rhannu cysylltiad Rhyngrwyd fy ffôn gyda dyfais drwy'r USB."
-
 #: internetSharing-wifi
 msgctxt "internetSharing-wifi"
 msgid "Wi-Fi"
 msgstr "Diwyfr"
-
-#: internetSharing-wifi-desc
-msgid ""
-"Allow other devices to share my phone’s Internet connection by connecting "
-"via Wi-Fi."
-msgstr ""
-"Caniatáu i ddyfeisiau eraill rannu cysylltiad Rhyngrwyd fy ffôn drwy'r "
-"diwyfr."
 
 #: wifi-hotspot
 msgid "Wi-Fi hotspot"
@@ -1734,14 +1728,6 @@ msgstr "Cyfrwng"
 #: savingringtone
 msgid "Saving ringtone…"
 msgstr "Cadw tôn canu…"
-
-#: unplayable-ringtone
-msgid ""
-"The ringtone was not changed because the selected file can not be played on "
-"this phone."
-msgstr ""
-"Nid yw'r tôn canu wedi newid gan nad oes modd chwarae'r math yna o ffeil ar "
-"y ffôn."
 
 #: no-ringtone-app
 msgid "We were unable to find a ringtone app to manage ringtones!"
@@ -2261,12 +2247,6 @@ msgctxt "findmydevice"
 msgid "Find My Device"
 msgstr "Canfod fy Nyfais"
 
-#: findmydevice-signup-description
-msgid "Find My Device allows you to locate, lock or erase your phone"
-msgstr ""
-"Mae Canfod fy Nyfais yn caniatáu i chi ganfod, cloi neu ddileu cynnwys eich "
-"ffôn"
-
 #: findmydevice-create-account
 msgctxt "findmydevice-create-account"
 msgid "Create account or sign in"
@@ -2279,14 +2259,6 @@ msgstr "Galluogi Canfod Fy Nyfais"
 #: findmydevice-about
 msgid "About Find My Device"
 msgstr "Ynghylch Canfod Fy Nyfais"
-
-#: findmydevice-settings-description
-msgid ""
-"Find My Device allows you to locate, lock or erase your phone from a web "
-"site:"
-msgstr ""
-"Mae Canfod Fy Nyfais yn caniatáu i chi ganfod, cloi neu ddiddymu data ar "
-"eich ffôn o wefan:"
 
 #: findmydevice-enable-geolocation-prompt
 msgid "Enable Geolocation?"
@@ -2306,14 +2278,6 @@ msgid "This device is currently offline. Connect to a network and try again."
 msgstr ""
 "Mae'r ddyfais hon all-lein ar hyn o bryd. Cysylltwch â rhwydwaith a cheisio "
 "eto."
-
-#: findmydevice-active-tracking
-msgid "Your phone is being tracked by another device through the website."
-msgstr "Mae eich ffôn yn cael ei dracio gan ddyfais arall drwy'r wefan."
-
-#: findmydevice-not-tracking
-msgid "No devices are actively tracking your phone through the website."
-msgstr "Nid oes dyfeisiau yn tracio eich ffôn drwy'r wefan."
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -3056,14 +3020,6 @@ msgstr "Uwch"
 msgid "Enable USB storage?"
 msgstr "Galluogi storio USB?"
 
-#: turn-on-ums-confirm
-msgid ""
-"Turning on Enable USB storage allows another computer or device connected "
-"using USB to access files on this phone."
-msgstr ""
-"Mae cychwyn Galluogi storio ar USB yn caniatáu i gyfrifiadur arall neu "
-"ddyfais sydd wedi ei gysylltu drwy USB i gael mynediad i ffeiliau ar y ffôn."
-
 #: default-media-location
 msgid "Default media location"
 msgstr "Lleoliad cyfryngau arferol"
@@ -3343,6 +3299,14 @@ msgstr "Teilsio"
 msgid "Simple tiling"
 msgstr "Teilsio syml"
 
+#: low-precision
+msgid "Low-precision painting"
+msgstr ""
+
+#: low-opacity
+msgid "Low-precision transparency"
+msgstr ""
+
 #: draw-tile-borders
 msgid "Draw tile borders"
 msgstr "Lluniadu ymylon teils"
@@ -3520,23 +3484,9 @@ msgctxt "reset-head"
 msgid "Reset"
 msgstr "Ailosod"
 
-#: reset-phone
-msgid "Reset Phone"
-msgstr "Ailosod y Ffôn"
-
 #: reset-warning-title
 msgid "CAUTION"
 msgstr "GOFAL"
-
-#: reset-warning-body
-msgid ""
-"Resetting will erase all your data, including any apps you’ve purchased. The "
-"phone will be restored to its factory condition. None of your settings or "
-"data will be saved."
-msgstr ""
-"Bydd ailosod yn dileu eich data i gyd, gan gynnwys unrhyw apiau rydych wedi "
-"eu prynu. Bydd y ffôn yn cael ei adfer i'w gyflwr ffatri. Bydd dim o'ch "
-"gosodiadau na data'n cael eu cadw."
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
 #: your-rights
@@ -3797,16 +3747,6 @@ msgstr "Modd arbed pŵer"
 msgid "{{level}}% battery left"
 msgstr "{{level}}% batri ar ôl"
 
-#: powerSave-explanation
-msgid ""
-"Turning on power save mode turns off the phone’s data, Bluetooth and "
-"Geolocation connections to extend battery life. You can still turn these "
-"services back on manually."
-msgstr ""
-"Mae cychwyn modd arbed pŵer yn diffodd cysylltiad Data, Bluetooth a "
-"Geoleoliad y ffôn er mwyn estyn bywyd y batri. Mae modd ailgychwyn y "
-"gwasanaethau hyn gyda llaw."
-
 #: turnOnAuto
 msgid "Turn on automatically"
 msgstr "Cychwyn yn awtomatig"
@@ -3901,14 +3841,6 @@ msgstr "Anfon Adborth at Mozilla"
 #: performanceAndUsageData
 msgid "Performance and usage data"
 msgstr "Data perfformiad a defnydd"
-
-#: performanceAndUsageDataInfo
-msgid ""
-"Help us improve {{brandShortName}} by sharing data about your phone and the "
-"way you use it."
-msgstr ""
-"Cynorthwywch ni i wella {{brandShortName}} drwy rannu data am eich ffôn a'r "
-"ffordd rydych yn ei ddefnyddio."
 
 #: sharePerformanceAndUsageData
 msgid "Submit data"
@@ -4217,6 +4149,112 @@ msgstr "Anfon Data"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Estyn Statws Sianel"
+
+#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
+#: is-warning-head
+msgid "{{newSetting}}"
+msgstr ""
+
+#: is-warning-message
+msgid ""
+"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
+"{{newSetting}}?"
+msgstr ""
+
+#~ msgid "WPS failed"
+#~ msgstr "Maethodd WPS"
+
+#~ msgid "Failed to cancel WPS"
+#~ msgstr "Methu diddymu WPS"
+
+#~ msgid "Voice calls to"
+#~ msgstr "Galwadau llais i"
+
+#~ msgid "SMSC"
+#~ msgstr "SMSC"
+
+#~ msgid "Unknown number"
+#~ msgstr "Rhif anhysbys"
+
+#~ msgid "Connected to phone audio"
+#~ msgstr "Wedi cysylltu i sain y ffôn"
+
+#~ msgid "Connected to phone/media audio"
+#~ msgstr "Wedi cysylltu i sain cyfrwng/ffôn"
+
+#~ msgid "Change phone name"
+#~ msgstr "Newid enw ffôn"
+
+#~ msgid "Share my phone’s Internet connection with a USB-connected device."
+#~ msgstr "Rhannu cysylltiad Rhyngrwyd fy ffôn gyda dyfais drwy'r USB."
+
+#~ msgid ""
+#~ "Allow other devices to share my phone’s Internet connection by connecting "
+#~ "via Wi-Fi."
+#~ msgstr ""
+#~ "Caniatáu i ddyfeisiau eraill rannu cysylltiad Rhyngrwyd fy ffôn drwy'r "
+#~ "diwyfr."
+
+#~ msgid ""
+#~ "The ringtone was not changed because the selected file can not be played "
+#~ "on this phone."
+#~ msgstr ""
+#~ "Nid yw'r tôn canu wedi newid gan nad oes modd chwarae'r math yna o ffeil "
+#~ "ar y ffôn."
+
+#~ msgid "Find My Device allows you to locate, lock or erase your phone"
+#~ msgstr ""
+#~ "Mae Canfod fy Nyfais yn caniatáu i chi ganfod, cloi neu ddileu cynnwys "
+#~ "eich ffôn"
+
+#~ msgid ""
+#~ "Find My Device allows you to locate, lock or erase your phone from a web "
+#~ "site:"
+#~ msgstr ""
+#~ "Mae Canfod Fy Nyfais yn caniatáu i chi ganfod, cloi neu ddiddymu data ar "
+#~ "eich ffôn o wefan:"
+
+#~ msgid "Your phone is being tracked by another device through the website."
+#~ msgstr "Mae eich ffôn yn cael ei dracio gan ddyfais arall drwy'r wefan."
+
+#~ msgid "No devices are actively tracking your phone through the website."
+#~ msgstr "Nid oes dyfeisiau yn tracio eich ffôn drwy'r wefan."
+
+#~ msgid ""
+#~ "Turning on Enable USB storage allows another computer or device connected "
+#~ "using USB to access files on this phone."
+#~ msgstr ""
+#~ "Mae cychwyn Galluogi storio ar USB yn caniatáu i gyfrifiadur arall neu "
+#~ "ddyfais sydd wedi ei gysylltu drwy USB i gael mynediad i ffeiliau ar y "
+#~ "ffôn."
+
+#~ msgid "Reset Phone"
+#~ msgstr "Ailosod y Ffôn"
+
+#~ msgid ""
+#~ "Resetting will erase all your data, including any apps you’ve purchased. "
+#~ "The phone will be restored to its factory condition. None of your "
+#~ "settings or data will be saved."
+#~ msgstr ""
+#~ "Bydd ailosod yn dileu eich data i gyd, gan gynnwys unrhyw apiau rydych "
+#~ "wedi eu prynu. Bydd y ffôn yn cael ei adfer i'w gyflwr ffatri. Bydd dim "
+#~ "o'ch gosodiadau na data'n cael eu cadw."
+
+#~ msgid ""
+#~ "Turning on power save mode turns off the phone’s data, Bluetooth and "
+#~ "Geolocation connections to extend battery life. You can still turn these "
+#~ "services back on manually."
+#~ msgstr ""
+#~ "Mae cychwyn modd arbed pŵer yn diffodd cysylltiad Data, Bluetooth a "
+#~ "Geoleoliad y ffôn er mwyn estyn bywyd y batri. Mae modd ailgychwyn y "
+#~ "gwasanaethau hyn gyda llaw."
+
+#~ msgid ""
+#~ "Help us improve {{brandShortName}} by sharing data about your phone and "
+#~ "the way you use it."
+#~ msgstr ""
+#~ "Cynorthwywch ni i wella {{brandShortName}} drwy rannu data am eich ffôn "
+#~ "a'r ffordd rydych yn ei ddefnyddio."
 
 #~ msgctxt "search-suggestions-button"
 #~ msgid "{{search-suggestions}}"
