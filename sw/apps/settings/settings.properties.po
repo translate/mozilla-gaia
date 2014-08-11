@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-28 20:49+0100\n"
+"POT-Creation-Date: 2014-08-11 07:17+0000\n"
 "PO-Revision-Date: 2014-06-17 20:29+0000\n"
 "Last-Translator: Boniface <bonifacechallo@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1403036980.000000\n"
@@ -378,6 +378,12 @@ msgstr "Nijulishe wakati mtandao uliowazi unapatikana"
 msgid "MAC address"
 msgstr "Anwani ya MAC"
 
+#. # os = OS version. For example: 2.0.
+#. # The whole string may look like this: "Firefox OS 2.0"
+#: deviceInfo_software
+msgid "{{ brandShortName }} {{ os }}"
+msgstr ""
+
 #: macUnavailable
 msgctxt "macUnavailable"
 msgid "Not available"
@@ -470,9 +476,9 @@ msgstr "WPS ilighairiwa"
 msgid "WPS timed out"
 msgstr "WPS ilimaliza wakati wake"
 
-#: fullStatus-wps-failed
-msgid "WPS failed"
-msgstr "WPS ilishindwa"
+#: fullStatus-wps-failed-error
+msgid "WPS failed [{{error}}]"
+msgstr ""
 
 #: fullStatus-wps-overlapped
 msgid "Another WPS PBC AP was found"
@@ -519,9 +525,9 @@ msgstr "Yoyote"
 msgid "Cancel WPS"
 msgstr "Ghairi WPS"
 
-#: wpsCancelFailedMessage
-msgid "Failed to cancel WPS"
-msgstr "Imeshindwa kughairi WPS"
+#: wpsCancelFailedMessageError
+msgid "Failed to cancel WPS [{{error}}]"
+msgstr ""
 
 #. # Connectivity :: Call
 #: callSettings
@@ -635,9 +641,9 @@ msgstr "Sambaza wakati haifikiwi"
 msgid "When unreachable"
 msgstr "Wakati haifikiwi"
 
-#: callForwardingForwardingVoiceTo
-msgid "Voice calls to"
-msgstr "Simu za sauti kwa"
+#: callForwardingForwardingVoiceToNumber
+msgid "Voice calls to {{number}}"
+msgstr ""
 
 #: callForwardingNotForwarding
 msgctxt "callForwardingNotForwarding"
@@ -862,11 +868,13 @@ msgid "{{messagingSettings}}"
 msgstr "{{messagingSettings}}"
 
 #: message-confirmation
-msgid "Message confirmation"
+#, fuzzy
+msgid "Message Confirmation"
 msgstr "Uthibitisho wa ujumbe"
 
 #: message-delivery-reports
-msgid "Delivery reports"
+#, fuzzy
+msgid "Delivery Reports"
 msgstr "Ripoti za uwasilishaji"
 
 #: message-delivery-reports-details
@@ -874,7 +882,8 @@ msgid "Request notification of delivery for each message sent"
 msgstr "Taarifa ya ombi la uwasilishaji wa kila ujumbe uliotumwa"
 
 #: message-read-reports
-msgid "Read reports"
+#, fuzzy
+msgid "Read Reports"
 msgstr "Soma ripoti"
 
 #: message-read-reports-details
@@ -882,11 +891,13 @@ msgid "Request read report for each message sent"
 msgstr "Omba ripoti ya kusoma kwa kila ujumbe uliotumwa"
 
 #: mmsTitle
-msgid "Multimedia messaging (MMS)"
+#, fuzzy
+msgid "Multimedia Messaging (MMS)"
 msgstr "Kutuma ujumbe wa mediaanuwai (MMS)"
 
 #: auto-retrieve
-msgid "Auto retrieve"
+#, fuzzy
+msgid "Auto Retrieve"
 msgstr "Itisha kwa mashine"
 
 #: auto-retrieve-details
@@ -910,7 +921,8 @@ msgid "Auto-configure"
 msgstr "Sanidi kwa mashine"
 
 #: wapPushMessages
-msgid "WAP Push messages"
+#, fuzzy
+msgid "WAP Push Messages"
 msgstr "Ujumbe za WAP Push"
 
 #: wapPush
@@ -918,12 +930,18 @@ msgid "WAP Push"
 msgstr "WAP Push"
 
 #: cellBroadcastMessages
-msgid "Cell broadcast messages"
+#, fuzzy
+msgid "Cell Broadcast Messages"
 msgstr "Ujumba za kutangaza seli"
 
 #: cellBroadcast
-msgid "Cell broadcast"
+#, fuzzy
+msgid "Cell Broadcast"
 msgstr "Kutangaza seli"
+
+#: emergencyAlert
+msgid "Emergency Alert"
+msgstr ""
 
 #: messagingInformation
 #, fuzzy
@@ -931,13 +949,12 @@ msgid "Information"
 msgstr "Uthibitisho"
 
 #. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
-#: messagingSMSC
-#, fuzzy
-msgid "SMSC"
-msgstr "MMSC"
+#: messaging-SMSC
+msgid "Service Center"
+msgstr ""
 
-#: unknownSMSC
-msgid "Unknown number"
+#: unknown-SMSC
+msgid "Info not available"
 msgstr ""
 
 #. # Connectivity :: Cellular & Data
@@ -1418,17 +1435,9 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "Imeunganishwa"
 
-#: device-status-connected-phone
-msgid "Connected to phone audio"
-msgstr "Imeunganishwa kwa sauti ya simu"
-
 #: device-status-connected-media
 msgid "Connected to media audio"
 msgstr "Imeunganisha kwa sauti ya midia"
-
-#: device-status-connected-phone-media
-msgid "Connected to phone/media audio"
-msgstr "Imeungaishwa kwa sauti ya simu/midia"
 
 #: device-option-unpair
 msgid "Unpair"
@@ -1470,10 +1479,6 @@ msgstr "Pea kifaa changu jina upya"
 #: unnamed-device
 msgid "Unknown device"
 msgstr "Kifaa kisichotambulika"
-
-#: change-phone-name
-msgid "Change phone name"
-msgstr "Badilisha jina la simu"
 
 #: change-phone-name-desc
 msgid "Change the name of your device as it appears in your computer"
@@ -1547,23 +1552,10 @@ msgstr "{{internetSharing}}"
 msgid "USB"
 msgstr "USB"
 
-#: internetSharing-usb-desc
-msgid "Share my phone’s Internet connection with a USB-connected device."
-msgstr ""
-"Shiriki muunganisho wa Intaneti ya simu yangu na kifaa kilichounganishwa USB."
-
 #: internetSharing-wifi
 msgctxt "internetSharing-wifi"
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
-
-#: internetSharing-wifi-desc
-msgid ""
-"Allow other devices to share my phone’s Internet connection by connecting "
-"via Wi-Fi."
-msgstr ""
-"Ruhusu vifaa vingine kushiriki muungano wa Intaneti wa simu yangu kwa "
-"kuunganisha kupitia Wi-Fi."
 
 #: wifi-hotspot
 msgid "Wi-Fi hotspot"
@@ -1740,14 +1732,6 @@ msgstr "Midia"
 #: savingringtone
 msgid "Saving ringtone…"
 msgstr "Inahifadhi mlio wa sauti…"
-
-#: unplayable-ringtone
-msgid ""
-"The ringtone was not changed because the selected file can not be played on "
-"this phone."
-msgstr ""
-"Mlio wa simu haukubadilishwa kwa sababu faili iliyochaguliwa haiwezi "
-"kuchezwa kwenye simu hii."
 
 #: no-ringtone-app
 msgid "We were unable to find a ringtone app to manage ringtones!"
@@ -2272,10 +2256,6 @@ msgctxt "findmydevice"
 msgid "Find My Device"
 msgstr "Tafuta Kifaa Changu"
 
-#: findmydevice-signup-description
-msgid "Find My Device allows you to locate, lock or erase your phone"
-msgstr "Tafuta Kifaa Changu hukuruhusu kupata, kufunga au kufuta simu yako"
-
 #: findmydevice-create-account
 #, fuzzy
 msgctxt "findmydevice-create-account"
@@ -2289,14 +2269,6 @@ msgstr "Wezesha Tafuta Kifaa Changu"
 #: findmydevice-about
 msgid "About Find My Device"
 msgstr "Kuhusu Tafuta Kifaa Changu"
-
-#: findmydevice-settings-description
-msgid ""
-"Find My Device allows you to locate, lock or erase your phone from a web "
-"site:"
-msgstr ""
-"Tafuta Kifaa Changu kinakuruhusu kupata, kufunga au kufuta simu yako kutoka "
-"kwa tovuti:"
 
 #: findmydevice-enable-geolocation-prompt
 msgid "Enable Geolocation?"
@@ -2317,14 +2289,6 @@ msgid "This device is currently offline. Connect to a network and try again."
 msgstr ""
 "Kifaa hiki kiko nje ya mkondo kwa sasa. Unganisha kwenye mtandao na ujaribu "
 "tena."
-
-#: findmydevice-active-tracking
-msgid "Your phone is being tracked by another device through the website."
-msgstr ""
-
-#: findmydevice-not-tracking
-msgid "No devices are actively tracking your phone through the website."
-msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -3074,14 +3038,6 @@ msgstr "Taalamu"
 msgid "Enable USB storage?"
 msgstr "Wezesha hifadhi ya USB?"
 
-#: turn-on-ums-confirm
-msgid ""
-"Turning on Enable USB storage allows another computer or device connected "
-"using USB to access files on this phone."
-msgstr ""
-"Kuwasha Kuwezesha hifadhi ya USB kunaruhuhsu kompyuta nyingine au kifaa "
-"kilichouunganisha kwa kutumia USB kufikia faili kwenye simu hii."
-
 #: default-media-location
 msgid "Default media location"
 msgstr "Eneo chaguo-msingi la midia"
@@ -3363,6 +3319,14 @@ msgstr "Kigae"
 msgid "Simple tiling"
 msgstr "Kigae rahisi"
 
+#: low-precision
+msgid "Low-precision painting"
+msgstr ""
+
+#: low-opacity
+msgid "Low-precision transparency"
+msgstr ""
+
 #: draw-tile-borders
 msgid "Draw tile borders"
 msgstr "Chora mipaka ya kigae"
@@ -3542,23 +3506,9 @@ msgctxt "reset-head"
 msgid "Reset"
 msgstr "Weka upya"
 
-#: reset-phone
-msgid "Reset Phone"
-msgstr "Seti Simu upya"
-
 #: reset-warning-title
 msgid "CAUTION"
 msgstr "CAUTION"
-
-#: reset-warning-body
-msgid ""
-"Resetting will erase all your data, including any apps you’ve purchased. The "
-"phone will be restored to its factory condition. None of your settings or "
-"data will be saved."
-msgstr ""
-"Kuseti-upya kutafuta data yako yote, ikiwa ni pamoja na programu zozote "
-"umenunua. Simu itarudishwa katika hali yake ya kiwanda. Hakuna mipangilio au "
-"data yako itahifadhiwa."
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
 #: your-rights
@@ -3819,16 +3769,6 @@ msgstr "Modi ya kuhifadhi umeme"
 msgid "{{level}}% battery left"
 msgstr "{{level}}% betri iliyosalia"
 
-#: powerSave-explanation
-msgid ""
-"Turning on power save mode turns off the phone’s data, Bluetooth and "
-"Geolocation connections to extend battery life. You can still turn these "
-"services back on manually."
-msgstr ""
-"Kuwasha modi ya kuhifadhi umeme huzima data ya simu, miunganisho ya "
-"Bluetooth na Eneo la jio ili kuongeza muda wa betri. Bado unaweza kuwasha "
-"huduma hizi tena kwa mkono."
-
 #: turnOnAuto
 msgid "Turn on automatically"
 msgstr "Washa kwa mashine"
@@ -3922,12 +3862,6 @@ msgstr "Tuma Maoni ya Mozila"
 
 #: performanceAndUsageData
 msgid "Performance and usage data"
-msgstr ""
-
-#: performanceAndUsageDataInfo
-msgid ""
-"Help us improve {{brandShortName}} by sharing data about your phone and the "
-"way you use it."
 msgstr ""
 
 #: sharePerformanceAndUsageData
@@ -4235,6 +4169,96 @@ msgstr "Tuma Data"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Pata Hali ya Kituo"
+
+#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
+#: is-warning-head
+msgid "{{newSetting}}"
+msgstr ""
+
+#: is-warning-message
+msgid ""
+"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
+"{{newSetting}}?"
+msgstr ""
+
+#~ msgid "WPS failed"
+#~ msgstr "WPS ilishindwa"
+
+#~ msgid "Failed to cancel WPS"
+#~ msgstr "Imeshindwa kughairi WPS"
+
+#~ msgid "Voice calls to"
+#~ msgstr "Simu za sauti kwa"
+
+#, fuzzy
+#~ msgid "SMSC"
+#~ msgstr "MMSC"
+
+#~ msgid "Connected to phone audio"
+#~ msgstr "Imeunganishwa kwa sauti ya simu"
+
+#~ msgid "Connected to phone/media audio"
+#~ msgstr "Imeungaishwa kwa sauti ya simu/midia"
+
+#~ msgid "Change phone name"
+#~ msgstr "Badilisha jina la simu"
+
+#~ msgid "Share my phone’s Internet connection with a USB-connected device."
+#~ msgstr ""
+#~ "Shiriki muunganisho wa Intaneti ya simu yangu na kifaa kilichounganishwa "
+#~ "USB."
+
+#~ msgid ""
+#~ "Allow other devices to share my phone’s Internet connection by connecting "
+#~ "via Wi-Fi."
+#~ msgstr ""
+#~ "Ruhusu vifaa vingine kushiriki muungano wa Intaneti wa simu yangu kwa "
+#~ "kuunganisha kupitia Wi-Fi."
+
+#~ msgid ""
+#~ "The ringtone was not changed because the selected file can not be played "
+#~ "on this phone."
+#~ msgstr ""
+#~ "Mlio wa simu haukubadilishwa kwa sababu faili iliyochaguliwa haiwezi "
+#~ "kuchezwa kwenye simu hii."
+
+#~ msgid "Find My Device allows you to locate, lock or erase your phone"
+#~ msgstr "Tafuta Kifaa Changu hukuruhusu kupata, kufunga au kufuta simu yako"
+
+#~ msgid ""
+#~ "Find My Device allows you to locate, lock or erase your phone from a web "
+#~ "site:"
+#~ msgstr ""
+#~ "Tafuta Kifaa Changu kinakuruhusu kupata, kufunga au kufuta simu yako "
+#~ "kutoka kwa tovuti:"
+
+#~ msgid ""
+#~ "Turning on Enable USB storage allows another computer or device connected "
+#~ "using USB to access files on this phone."
+#~ msgstr ""
+#~ "Kuwasha Kuwezesha hifadhi ya USB kunaruhuhsu kompyuta nyingine au kifaa "
+#~ "kilichouunganisha kwa kutumia USB kufikia faili kwenye simu hii."
+
+#~ msgid "Reset Phone"
+#~ msgstr "Seti Simu upya"
+
+#~ msgid ""
+#~ "Resetting will erase all your data, including any apps you’ve purchased. "
+#~ "The phone will be restored to its factory condition. None of your "
+#~ "settings or data will be saved."
+#~ msgstr ""
+#~ "Kuseti-upya kutafuta data yako yote, ikiwa ni pamoja na programu zozote "
+#~ "umenunua. Simu itarudishwa katika hali yake ya kiwanda. Hakuna mipangilio "
+#~ "au data yako itahifadhiwa."
+
+#~ msgid ""
+#~ "Turning on power save mode turns off the phone’s data, Bluetooth and "
+#~ "Geolocation connections to extend battery life. You can still turn these "
+#~ "services back on manually."
+#~ msgstr ""
+#~ "Kuwasha modi ya kuhifadhi umeme huzima data ya simu, miunganisho ya "
+#~ "Bluetooth na Eneo la jio ili kuongeza muda wa betri. Bado unaweza kuwasha "
+#~ "huduma hizi tena kwa mkono."
 
 #~ msgid "Installed input methods"
 #~ msgstr "Mbinu za ingizo zilizosakinishwa"

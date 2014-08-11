@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-28 20:49+0100\n"
+"POT-Creation-Date: 2014-08-11 07:17+0000\n"
 "PO-Revision-Date: 2014-08-05 04:32+0000\n"
 "Last-Translator: La Min <lminko.lmk@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1407213123.000000\n"
@@ -377,6 +377,12 @@ msgstr "လွတ်လပ်ကွန်ယက် ရှိနေလျှင�
 msgid "MAC address"
 msgstr "MAC လိပ်စာ"
 
+#. # os = OS version. For example: 2.0.
+#. # The whole string may look like this: "Firefox OS 2.0"
+#: deviceInfo_software
+msgid "{{ brandShortName }} {{ os }}"
+msgstr ""
+
 #: macUnavailable
 msgctxt "macUnavailable"
 msgid "Not available"
@@ -468,9 +474,9 @@ msgstr "WPS လုပ်ငန်းစဉ်ကို ပယ်ဖျက်ခ�
 msgid "WPS timed out"
 msgstr "WPS လုပ်ဆောင်ချိန် လွန်သွားသည်"
 
-#: fullStatus-wps-failed
-msgid "WPS failed"
-msgstr "WPS လုပ်ငန်းစဉ် မအောင်မြင်ပါ"
+#: fullStatus-wps-failed-error
+msgid "WPS failed [{{error}}]"
+msgstr ""
 
 #: fullStatus-wps-overlapped
 msgid "Another WPS PBC AP was found"
@@ -517,9 +523,9 @@ msgstr "မည်သည့်အရာမဆို"
 msgid "Cancel WPS"
 msgstr "WPS လုပ်ငန်းစဉ်ကို ပယ်ဖျက်ရန်"
 
-#: wpsCancelFailedMessage
-msgid "Failed to cancel WPS"
-msgstr "WPS လုပ်ငန်းစဉ်ကို ပယ်ဖျက်ရာတွင် မအောင်မြင်ပါ"
+#: wpsCancelFailedMessageError
+msgid "Failed to cancel WPS [{{error}}]"
+msgstr ""
 
 #. # Connectivity :: Call
 #: callSettings
@@ -631,8 +637,8 @@ msgstr ""
 msgid "When unreachable"
 msgstr "မရောက်ရှိနိုင်သောအခါ"
 
-#: callForwardingForwardingVoiceTo
-msgid "Voice calls to"
+#: callForwardingForwardingVoiceToNumber
+msgid "Voice calls to {{number}}"
 msgstr ""
 
 #: callForwardingNotForwarding
@@ -853,11 +859,13 @@ msgid "{{messagingSettings}}"
 msgstr "{{messagingSettings}}"
 
 #: message-confirmation
-msgid "Message confirmation"
+#, fuzzy
+msgid "Message Confirmation"
 msgstr "ပို့စာ အတည်ပြုခြင်း"
 
 #: message-delivery-reports
-msgid "Delivery reports"
+#, fuzzy
+msgid "Delivery Reports"
 msgstr "ပေးပို့မှုအစီရင်ခံစာများ"
 
 #: message-delivery-reports-details
@@ -865,7 +873,8 @@ msgid "Request notification of delivery for each message sent"
 msgstr "ပေးပို့ပြီးသောပို့စာတစ်စောင်ချင်းစီအတွက် ပေးပို့မှုအသိပေးချက်ကို တောင်းခံရန်"
 
 #: message-read-reports
-msgid "Read reports"
+#, fuzzy
+msgid "Read Reports"
 msgstr "အစီရင်ခံစာများကို ဖတ်ရန်"
 
 #: message-read-reports-details
@@ -873,11 +882,13 @@ msgid "Request read report for each message sent"
 msgstr "ပေးပို့ပြီးသောပို့စာတစ်ဆောင်ချင်းစီအတွက် ဖတ်ပြီးအစီရင်ခံစာကို တောင်းခံရန်"
 
 #: mmsTitle
-msgid "Multimedia messaging (MMS)"
+#, fuzzy
+msgid "Multimedia Messaging (MMS)"
 msgstr "မာ(လ်)တီမီဒီယာ အချက်အလက်ပို့ခြင်း (MMS)"
 
 #: auto-retrieve
-msgid "Auto retrieve"
+#, fuzzy
+msgid "Auto Retrieve"
 msgstr "အလိုအလျောက်ဆွဲယူရန်"
 
 #: auto-retrieve-details
@@ -901,7 +912,7 @@ msgid "Auto-configure"
 msgstr "အလိုအလျောက်ပြင်ဆင်ရန်"
 
 #: wapPushMessages
-msgid "WAP Push messages"
+msgid "WAP Push Messages"
 msgstr ""
 
 #: wapPush
@@ -909,11 +920,15 @@ msgid "WAP Push"
 msgstr ""
 
 #: cellBroadcastMessages
-msgid "Cell broadcast messages"
+msgid "Cell Broadcast Messages"
 msgstr ""
 
 #: cellBroadcast
-msgid "Cell broadcast"
+msgid "Cell Broadcast"
+msgstr ""
+
+#: emergencyAlert
+msgid "Emergency Alert"
 msgstr ""
 
 #: messagingInformation
@@ -922,12 +937,12 @@ msgid "Information"
 msgstr "အတည်ပြုချက်"
 
 #. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
-#: messagingSMSC
-msgid "SMSC"
+#: messaging-SMSC
+msgid "Service Center"
 msgstr ""
 
-#: unknownSMSC
-msgid "Unknown number"
+#: unknown-SMSC
+msgid "Info not available"
 msgstr ""
 
 #. # Connectivity :: Cellular & Data
@@ -1140,8 +1155,9 @@ msgid "{{suplSettings}}"
 msgstr "{{suplSettings}}"
 
 #: messageSettings
+#, fuzzy
 msgid "Message settings"
-msgstr ""
+msgstr "စာပို့ခြင်း အပြင်အဆင်များ"
 
 #. # LOCALIZATION NOTE (messageSettings-header): if you leave the original
 #. # en-US value "{{messageSettings}}" in the following string, the localization
@@ -1353,9 +1369,10 @@ msgid "Turned off"
 msgstr ""
 
 #: bt-status-paired
+#, fuzzy
 msgctxt "bt-status-paired"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: bt-status-paired[zero]
 msgid "{{name}}"
@@ -1414,16 +1431,8 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "ချိတ်ဆက်ပြီးပြီ"
 
-#: device-status-connected-phone
-msgid "Connected to phone audio"
-msgstr ""
-
 #: device-status-connected-media
 msgid "Connected to media audio"
-msgstr ""
-
-#: device-status-connected-phone-media
-msgid "Connected to phone/media audio"
 msgstr ""
 
 #: device-option-unpair
@@ -1467,10 +1476,6 @@ msgstr ""
 
 #: unnamed-device
 msgid "Unknown device"
-msgstr ""
-
-#: change-phone-name
-msgid "Change phone name"
 msgstr ""
 
 #: change-phone-name-desc
@@ -1540,21 +1545,11 @@ msgstr ""
 msgid "USB"
 msgstr ""
 
-#: internetSharing-usb-desc
-msgid "Share my phone’s Internet connection with a USB-connected device."
-msgstr ""
-
 #: internetSharing-wifi
 #, fuzzy
 msgctxt "internetSharing-wifi"
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
-
-#: internetSharing-wifi-desc
-msgid ""
-"Allow other devices to share my phone’s Internet connection by connecting "
-"via Wi-Fi."
-msgstr ""
 
 #: wifi-hotspot
 msgid "Wi-Fi hotspot"
@@ -1736,12 +1731,6 @@ msgstr ""
 
 #: savingringtone
 msgid "Saving ringtone…"
-msgstr ""
-
-#: unplayable-ringtone
-msgid ""
-"The ringtone was not changed because the selected file can not be played on "
-"this phone."
 msgstr ""
 
 #: no-ringtone-app
@@ -2255,10 +2244,6 @@ msgctxt "findmydevice"
 msgid "Find My Device"
 msgstr ""
 
-#: findmydevice-signup-description
-msgid "Find My Device allows you to locate, lock or erase your phone"
-msgstr ""
-
 #: findmydevice-create-account
 msgctxt "findmydevice-create-account"
 msgid "Create account or sign in"
@@ -2270,12 +2255,6 @@ msgstr ""
 
 #: findmydevice-about
 msgid "About Find My Device"
-msgstr ""
-
-#: findmydevice-settings-description
-msgid ""
-"Find My Device allows you to locate, lock or erase your phone from a web "
-"site:"
 msgstr ""
 
 #: findmydevice-enable-geolocation-prompt
@@ -2293,14 +2272,6 @@ msgstr ""
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
-msgstr ""
-
-#: findmydevice-active-tracking
-msgid "Your phone is being tracked by another device through the website."
-msgstr ""
-
-#: findmydevice-not-tracking
-msgid "No devices are actively tracking your phone through the website."
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -2578,9 +2549,10 @@ msgid "New PIN"
 msgstr ""
 
 #: inputCodeRetriesLeft
+#, fuzzy
 msgctxt "inputCodeRetriesLeft"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: inputCodeRetriesLeft[one]
 msgid "Last try."
@@ -2607,49 +2579,58 @@ msgid "{{n}} tries left."
 msgstr ""
 
 #: pinAttemptMsg3
+#, fuzzy
 msgctxt "pinAttemptMsg3"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: pinAttemptMsg3[one]
+#, fuzzy
 msgctxt "pinAttemptMsg3[one]"
 msgid ""
 "You have one try left to enter the correct code before locking the SIM card."
-msgstr ""
+msgstr "SIM ကတ်(ဒ်)ကို တားဆီးခြင်းမပြုခင် သင့်တွင် ကုတ်(ဒ်)အမှန်ကို ဖြည့်ရန် တစ်ကြိမ် ကျန်ရှိသည်။"
 
 #: pinAttemptMsg3[two]
+#, fuzzy
 msgctxt "pinAttemptMsg3[two]"
 msgid ""
 "You have {{n}} tries left to enter the correct code before locking the SIM "
 "card."
-msgstr ""
+msgstr "SIM ကတ်(ဒ်)ကို တားဆီးခြင်းမပြုခင် သင့်တွင် ကုတ်(ဒ်)အမှန်ကို ဖြည့်ရန် {{n}}ကြိမ် ကျန်ရှိသည်။"
 
 #: pinAttemptMsg3[few]
+#, fuzzy
 msgctxt "pinAttemptMsg3[few]"
 msgid ""
 "You have {{n}} tries left to enter the correct code before locking the SIM "
 "card."
-msgstr ""
+msgstr "SIM ကတ်(ဒ်)ကို တားဆီးခြင်းမပြုခင် သင့်တွင် ကုတ်(ဒ်)အမှန်ကို ဖြည့်ရန် {{n}}ကြိမ် ကျန်ရှိသည်။"
 
 #: pinAttemptMsg3[many]
+#, fuzzy
 msgctxt "pinAttemptMsg3[many]"
 msgid ""
 "You have {{n}} tries left to enter the correct code before locking the SIM "
 "card."
-msgstr ""
+msgstr "SIM ကတ်(ဒ်)ကို တားဆီးခြင်းမပြုခင် သင့်တွင် ကုတ်(ဒ်)အမှန်ကို ဖြည့်ရန် {{n}}ကြိမ် ကျန်ရှိသည်။"
 
 #: pinAttemptMsg3[other]
+#, fuzzy
 msgctxt "pinAttemptMsg3[other]"
 msgid ""
 "You have {{n}} tries left to enter the correct code before locking the SIM "
 "card."
-msgstr ""
+msgstr "SIM ကတ်(ဒ်)ကို တားဆီးခြင်းမပြုခင် သင့်တွင် ကုတ်(ဒ်)အမှန်ကို ဖြည့်ရန် {{n}}ကြိမ် ကျန်ရှိသည်။"
 
 #: pinLastChanceMsg
+#, fuzzy
 msgid ""
 "This is your last chance to enter the correct PIN. Otherwise, you must enter "
 "the PUK code to use this SIM card."
 msgstr ""
+"PIN2 အမှန်ကို ဖြည့်ရန် နောက်ဆုံးအခွင့်အရေးဖြစ်သည်။ သို့မဟုတ်ပါက ဒီ SIM ကတ်(ဒ်)ကို သုံးရန် PUK2 ကုတ်(ဒ်)ကို "
+"ဖြည့်ရမည်။"
 
 #: simCardLockedMsg
 msgid "The SIM card is locked."
@@ -2673,13 +2654,15 @@ msgid ""
 msgstr ""
 
 #: pukErrorMsg
+#, fuzzy
 msgid "The PUK code is incorrect."
-msgstr ""
+msgstr "PIN2 ကုတ်(ဒ်) မမှန်ပါ။"
 
 #: pukAttemptMsg3
+#, fuzzy
 msgctxt "pukAttemptMsg3"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: pukAttemptMsg3[one]
 msgid ""
@@ -2861,8 +2844,9 @@ msgid "{{size}} {{unit}}"
 msgstr ""
 
 #: availableSize
+#, fuzzy
 msgid "{[ plural(size) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: availableSize[zero]
 msgctxt "availableSize[zero]"
@@ -3000,12 +2984,6 @@ msgstr ""
 msgid "Enable USB storage?"
 msgstr ""
 
-#: turn-on-ums-confirm
-msgid ""
-"Turning on Enable USB storage allows another computer or device connected "
-"using USB to access files on this phone."
-msgstr ""
-
 #: default-media-location
 msgid "Default media location"
 msgstr ""
@@ -3079,8 +3057,9 @@ msgid "ICCID"
 msgstr ""
 
 #: deviceInfo-MSISDN
+#, fuzzy
 msgid "Phone number"
-msgstr ""
+msgstr "နံပါတ်ကို ပြရန်"
 
 #: deviceInfo-ICCID-unavailable-sim
 msgid "SIM {{index}}: Not available"
@@ -3281,6 +3260,14 @@ msgstr ""
 msgid "Simple tiling"
 msgstr ""
 
+#: low-precision
+msgid "Low-precision painting"
+msgstr ""
+
+#: low-opacity
+msgid "Low-precision transparency"
+msgstr ""
+
 #: draw-tile-borders
 msgid "Draw tile borders"
 msgstr ""
@@ -3457,19 +3444,8 @@ msgctxt "reset-head"
 msgid "Reset"
 msgstr "ပြန်လည်ချိန်ညှိရန်"
 
-#: reset-phone
-msgid "Reset Phone"
-msgstr ""
-
 #: reset-warning-title
 msgid "CAUTION"
-msgstr ""
-
-#: reset-warning-body
-msgid ""
-"Resetting will erase all your data, including any apps you’ve purchased. The "
-"phone will be restored to its factory condition. None of your settings or "
-"data will be saved."
 msgstr ""
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
@@ -3704,13 +3680,6 @@ msgstr ""
 msgid "{{level}}% battery left"
 msgstr ""
 
-#: powerSave-explanation
-msgid ""
-"Turning on power save mode turns off the phone’s data, Bluetooth and "
-"Geolocation connections to extend battery life. You can still turn these "
-"services back on manually."
-msgstr ""
-
 #: turnOnAuto
 msgid "Turn on automatically"
 msgstr ""
@@ -3799,12 +3768,6 @@ msgstr ""
 
 #: performanceAndUsageData
 msgid "Performance and usage data"
-msgstr ""
-
-#: performanceAndUsageDataInfo
-msgid ""
-"Help us improve {{brandShortName}} by sharing data about your phone and the "
-"way you use it."
 msgstr ""
 
 #: sharePerformanceAndUsageData
@@ -4086,3 +4049,20 @@ msgstr ""
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr ""
+
+#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
+#: is-warning-head
+msgid "{{newSetting}}"
+msgstr ""
+
+#: is-warning-message
+msgid ""
+"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
+"{{newSetting}}?"
+msgstr ""
+
+#~ msgid "WPS failed"
+#~ msgstr "WPS လုပ်ငန်းစဉ် မအောင်မြင်ပါ"
+
+#~ msgid "Failed to cancel WPS"
+#~ msgstr "WPS လုပ်ငန်းစဉ်ကို ပယ်ဖျက်ရာတွင် မအောင်မြင်ပါ"

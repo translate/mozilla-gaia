@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-28 20:49+0100\n"
+"POT-Creation-Date: 2014-08-11 07:17+0000\n"
 "PO-Revision-Date: 2014-07-03 06:57+0000\n"
 "Last-Translator: Lahiru Himesh <lahiru.lahirumadusanka@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1404370632.000000\n"
@@ -377,6 +377,12 @@ msgstr "විවෘත ජාලයක් තිබේ නම් මා හට 
 msgid "MAC address"
 msgstr "MAC ලිපිනය"
 
+#. # os = OS version. For example: 2.0.
+#. # The whole string may look like this: "Firefox OS 2.0"
+#: deviceInfo_software
+msgid "{{ brandShortName }} {{ os }}"
+msgstr ""
+
 #: macUnavailable
 msgctxt "macUnavailable"
 msgid "Not available"
@@ -468,9 +474,9 @@ msgstr "WPS අවලංගු කෙරිණි"
 msgid "WPS timed out"
 msgstr "WPS කාල ඉකුතුව"
 
-#: fullStatus-wps-failed
-msgid "WPS failed"
-msgstr "WPS අසාර්ථකයි"
+#: fullStatus-wps-failed-error
+msgid "WPS failed [{{error}}]"
+msgstr ""
 
 #: fullStatus-wps-overlapped
 msgid "Another WPS PBC AP was found"
@@ -517,9 +523,9 @@ msgstr "ඕනෑම"
 msgid "Cancel WPS"
 msgstr "WPS අවලංගු කරන්න"
 
-#: wpsCancelFailedMessage
-msgid "Failed to cancel WPS"
-msgstr "WPS අවලංගු කිරීම අසාර්ථක විය"
+#: wpsCancelFailedMessageError
+msgid "Failed to cancel WPS [{{error}}]"
+msgstr ""
 
 #. # Connectivity :: Call
 #: callSettings
@@ -632,9 +638,9 @@ msgstr "ළඟා විය නොහැකි විට යොමු කරන�
 msgid "When unreachable"
 msgstr "ලබාගන්නට බැරි විටෙක"
 
-#: callForwardingForwardingVoiceTo
-msgid "Voice calls to"
-msgstr "හඬ ඇමතුම් මෙයට"
+#: callForwardingForwardingVoiceToNumber
+msgid "Voice calls to {{number}}"
+msgstr ""
 
 #: callForwardingNotForwarding
 msgctxt "callForwardingNotForwarding"
@@ -854,11 +860,13 @@ msgid "{{messagingSettings}}"
 msgstr "{{messagingSettings}}"
 
 #: message-confirmation
-msgid "Message confirmation"
+#, fuzzy
+msgid "Message Confirmation"
 msgstr "පණිවුඩයක් මඟින් තහවුරු කිරීම"
 
 #: message-delivery-reports
-msgid "Delivery reports"
+#, fuzzy
+msgid "Delivery Reports"
 msgstr "බෙදාහැරුණු වාර්තා"
 
 #: message-delivery-reports-details
@@ -866,7 +874,8 @@ msgid "Request notification of delivery for each message sent"
 msgstr "යැවූ සෑම පණිවිඩයක් සඳහා බෙදාහැරුණු වාර්තා දැනුම්දීමක් ඉල්ලන්න"
 
 #: message-read-reports
-msgid "Read reports"
+#, fuzzy
+msgid "Read Reports"
 msgstr "කියැවීම් වර්තා"
 
 #: message-read-reports-details
@@ -874,11 +883,13 @@ msgid "Request read report for each message sent"
 msgstr "යැවූ සෑම පණිවිඩයක් සඳහා කියැවූ වාර්තා දැනුම්දීමක් ඉල්ලන්න"
 
 #: mmsTitle
-msgid "Multimedia messaging (MMS)"
+#, fuzzy
+msgid "Multimedia Messaging (MMS)"
 msgstr "බහුමාධ්‍ය පණිවුඩකරණය (MMS)"
 
 #: auto-retrieve
-msgid "Auto retrieve"
+#, fuzzy
+msgid "Auto Retrieve"
 msgstr "ස්වයංව ලබාගැනීම"
 
 #: auto-retrieve-details
@@ -902,7 +913,8 @@ msgid "Auto-configure"
 msgstr "ස්වයං-වින්‍යාසගත කිරීම"
 
 #: wapPushMessages
-msgid "WAP Push messages"
+#, fuzzy
+msgid "WAP Push Messages"
 msgstr "WAP ඉක්මන් පණිවිඩ"
 
 #: wapPush
@@ -910,12 +922,18 @@ msgid "WAP Push"
 msgstr "WAP Push"
 
 #: cellBroadcastMessages
-msgid "Cell broadcast messages"
+#, fuzzy
+msgid "Cell Broadcast Messages"
 msgstr "ජංගම පැතුරුම් පණිවිඩ"
 
 #: cellBroadcast
-msgid "Cell broadcast"
+#, fuzzy
+msgid "Cell Broadcast"
 msgstr "ජංගම පැතුරුම්"
+
+#: emergencyAlert
+msgid "Emergency Alert"
+msgstr ""
 
 #: messagingInformation
 #, fuzzy
@@ -923,13 +941,12 @@ msgid "Information"
 msgstr "තහවුරු කිරීම"
 
 #. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
-#: messagingSMSC
-#, fuzzy
-msgid "SMSC"
-msgstr "MMSC"
+#: messaging-SMSC
+msgid "Service Center"
+msgstr ""
 
-#: unknownSMSC
-msgid "Unknown number"
+#: unknown-SMSC
+msgid "Info not available"
 msgstr ""
 
 #. # Connectivity :: Cellular & Data
@@ -1409,17 +1426,9 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "සම්බන්ධ වී ඇත"
 
-#: device-status-connected-phone
-msgid "Connected to phone audio"
-msgstr "දුරකථනයේ ශ්‍රව්‍ය තුළට සම්බන්ධ වුණි"
-
 #: device-status-connected-media
 msgid "Connected to media audio"
 msgstr "ශ්‍රව්‍ය මාධ්‍ය තුළට සම්බන්ධ වුණි"
-
-#: device-status-connected-phone-media
-msgid "Connected to phone/media audio"
-msgstr "දුරකථන/මාධ්‍ය ශ්‍රව්‍ය තුළට සම්බන්ධ වුණි"
 
 #: device-option-unpair
 msgid "Unpair"
@@ -1461,10 +1470,6 @@ msgstr "මගේ උපාංගය යළි නම් කරන්න"
 #: unnamed-device
 msgid "Unknown device"
 msgstr "නොහඳුනනා උපාංගයකි"
-
-#: change-phone-name
-msgid "Change phone name"
-msgstr "දුරකථනයේ නම වෙනස් කරන්න"
 
 #: change-phone-name-desc
 msgid "Change the name of your device as it appears in your computer"
@@ -1535,22 +1540,10 @@ msgstr "{{internetSharing}}"
 msgid "USB"
 msgstr "USB"
 
-#: internetSharing-usb-desc
-msgid "Share my phone’s Internet connection with a USB-connected device."
-msgstr "USB-සම්බන්ධිත උපාංගයක් සමඟ මගේ දුරකථනයේ අන්තර්ජාල සබඳතාවය හුවමාරු කරන්න."
-
 #: internetSharing-wifi
 msgctxt "internetSharing-wifi"
 msgid "Wi-Fi"
 msgstr "වයි-ෆයි"
-
-#: internetSharing-wifi-desc
-msgid ""
-"Allow other devices to share my phone’s Internet connection by connecting "
-"via Wi-Fi."
-msgstr ""
-"වෙනත් උපාංගවලට වයි-ෆයි හරහා සම්බන්ධ වී මගේ දුරකථනයේ අන්තර්ජාල සබඳතාවය හුවමාරු කිරීමට "
-"ඉඩදෙන්න."
 
 #: wifi-hotspot
 msgid "Wi-Fi hotspot"
@@ -1727,12 +1720,6 @@ msgstr "මාධ්‍යය"
 #: savingringtone
 msgid "Saving ringtone…"
 msgstr "හඬනාදය සුරකිමින්..."
-
-#: unplayable-ringtone
-msgid ""
-"The ringtone was not changed because the selected file can not be played on "
-"this phone."
-msgstr "තෝරාගත් ගොනුව මෙම දුරකථනය මත වාදනය කළ නොහැකි නිසා හඬනාදය වෙනස් නොකෙරිණි."
 
 #: no-ringtone-app
 msgid "We were unable to find a ringtone app to manage ringtones!"
@@ -2252,12 +2239,6 @@ msgctxt "findmydevice"
 msgid "Find My Device"
 msgstr "මාගේ උපාංගය සොයන්න"
 
-#: findmydevice-signup-description
-msgid "Find My Device allows you to locate, lock or erase your phone"
-msgstr ""
-"මාගේ උපාංගය සොයන්න ඔබට ඔබගේ දුරකථනය ඇති ස්ථානය සොයාගැනීමට, අඟුලු ලෑමට හෝ දත්ත "
-"මකාදැමීමට අවස්ථාව ලබාදෙයි"
-
 #: findmydevice-create-account
 #, fuzzy
 msgctxt "findmydevice-create-account"
@@ -2271,14 +2252,6 @@ msgstr "මාගේ උපාංගය සොයන්න සක්‍රීය
 #: findmydevice-about
 msgid "About Find My Device"
 msgstr "මාගේ උපාංගය සොයන්න පහසුකම ගැන"
-
-#: findmydevice-settings-description
-msgid ""
-"Find My Device allows you to locate, lock or erase your phone from a web "
-"site:"
-msgstr ""
-"මාගේ උපාංගය සොයන්න ඔබට දුරකථනය ඇති ස්ථානය සොයාගැනීමට, අඟුලු ලෑමට හෝ දත්ත මකාදැමීමට "
-"පහත වෙබ් අඩවිය හරහා අවස්ථාව ලබාදේ:"
 
 #: findmydevice-enable-geolocation-prompt
 msgid "Enable Geolocation?"
@@ -2297,14 +2270,6 @@ msgstr "භූස්ථානය සක්‍රීයයි"
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
 msgstr "මෙම උපාංගය මාර්ග අපගත තත්වයේ පවතී. ජාලයක් හා සම්බන්ධ වී නැවත උත්සාහ කරන්න."
-
-#: findmydevice-active-tracking
-msgid "Your phone is being tracked by another device through the website."
-msgstr "ඔබගේ දුරකථනය මෙම වෙබ් අඩවිය හරහා වෙන උපාංගයක් මඟින් හඹායනු ලබයි."
-
-#: findmydevice-not-tracking
-msgid "No devices are actively tracking your phone through the website."
-msgstr "කිසිදු උපාංගයක් ඔබගේ දුරකථනය සක්‍රීයව දැනට මෙම වෙබ් අඩවිය හරහා හඹා නොයයි."
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -3038,14 +3003,6 @@ msgstr "සංකීර්ණ"
 msgid "Enable USB storage?"
 msgstr "USB ආචයනය සක්‍රිය කරනවා ද?"
 
-#: turn-on-ums-confirm
-msgid ""
-"Turning on Enable USB storage allows another computer or device connected "
-"using USB to access files on this phone."
-msgstr ""
-"USB ආචයනය සක්‍රිය කිරීම ක්‍රියාත්මක කිරීම තුළින් USB භාවිතා කර සම්බන්ධ වී සිටින වෙනත් පරිගණකයකට හෝ "
-"උපාංගයකට මෙම දුරකථනයේ ගොනු වෙත ප්‍රවේශ වීමට ඉඩදෙනු ඇත."
-
 #: default-media-location
 msgid "Default media location"
 msgstr "පෙරනිමි මාධ්‍ය ස්ථානය"
@@ -3323,6 +3280,14 @@ msgstr "ටයිල් වැනි සැකැස්ම"
 msgid "Simple tiling"
 msgstr "සරල ටයිල් වැනි සැකැස්ම"
 
+#: low-precision
+msgid "Low-precision painting"
+msgstr ""
+
+#: low-opacity
+msgid "Low-precision transparency"
+msgstr ""
+
 #: draw-tile-borders
 msgid "Draw tile borders"
 msgstr "ස්ථර බෝඩර් තිර අඳින්න"
@@ -3501,22 +3466,9 @@ msgctxt "reset-head"
 msgid "Reset"
 msgstr "යළි පිහිටුවන්න"
 
-#: reset-phone
-msgid "Reset Phone"
-msgstr "දුරකථනය යළි පිහිටුවන්න"
-
 #: reset-warning-title
 msgid "CAUTION"
 msgstr "අවධානය පිණිසයි"
-
-#: reset-warning-body
-msgid ""
-"Resetting will erase all your data, including any apps you’ve purchased. The "
-"phone will be restored to its factory condition. None of your settings or "
-"data will be saved."
-msgstr ""
-"යළි පිහිටුවීම මඟින් ඔබ මිලදී ගත් ඕනෑම යෙදුමක් ඇතුළුව, ඔබේ සියලු දත්ත මකා දමනු ඇත. දුරකථනය එහි "
-"කර්මාන්තශාලාවෙන් පැමිණි තත්ත්වයට ප්‍රතිෂ්ඨාපනය වේ. ඔබේ සැකසුම් හෝ දත්ත කිසිවක් සුරක්ෂිත නොවනු ඇත."
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
 #: your-rights
@@ -3771,15 +3723,6 @@ msgstr "බල සුරැකුම් ප්‍රකාරය"
 msgid "{{level}}% battery left"
 msgstr "බැටරිය {{level}}% ඉතිරියි"
 
-#: powerSave-explanation
-msgid ""
-"Turning on power save mode turns off the phone’s data, Bluetooth and "
-"Geolocation connections to extend battery life. You can still turn these "
-"services back on manually."
-msgstr ""
-"බල සුරැකුම් ප්‍රකාරය ක්‍රියාත්මක කිරීමෙන් බැටරියේ ආයුකාලය දීර්ඝ කිරීම පිණිස දුරකථනයේ දත්ත, බ්ලුටූත් සහ "
-"පිහිටුම් සබඳතාවයන් අක්‍රිය කරනු ලබයි. ඔබට මෙම සේවාවන් පසුව හස්තීයව සක්‍රිය කළ හැකිය."
-
 #: turnOnAuto
 msgid "Turn on automatically"
 msgstr "ස්වයංක්‍රීයව ක්‍රියාත්මක කරන්න"
@@ -3872,12 +3815,6 @@ msgstr "මොසිල්ලා වෙත ප්‍රතිපෝෂණය ය
 
 #: performanceAndUsageData
 msgid "Performance and usage data"
-msgstr ""
-
-#: performanceAndUsageDataInfo
-msgid ""
-"Help us improve {{brandShortName}} by sharing data about your phone and the "
-"way you use it."
 msgstr ""
 
 #: sharePerformanceAndUsageData
@@ -4184,6 +4121,99 @@ msgstr "දත්ත යවන්න"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "නාලිකාවේ තත්ත්වය ලබාගන්න"
+
+#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
+#: is-warning-head
+msgid "{{newSetting}}"
+msgstr ""
+
+#: is-warning-message
+msgid ""
+"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
+"{{newSetting}}?"
+msgstr ""
+
+#~ msgid "WPS failed"
+#~ msgstr "WPS අසාර්ථකයි"
+
+#~ msgid "Failed to cancel WPS"
+#~ msgstr "WPS අවලංගු කිරීම අසාර්ථක විය"
+
+#~ msgid "Voice calls to"
+#~ msgstr "හඬ ඇමතුම් මෙයට"
+
+#, fuzzy
+#~ msgid "SMSC"
+#~ msgstr "MMSC"
+
+#~ msgid "Connected to phone audio"
+#~ msgstr "දුරකථනයේ ශ්‍රව්‍ය තුළට සම්බන්ධ වුණි"
+
+#~ msgid "Connected to phone/media audio"
+#~ msgstr "දුරකථන/මාධ්‍ය ශ්‍රව්‍ය තුළට සම්බන්ධ වුණි"
+
+#~ msgid "Change phone name"
+#~ msgstr "දුරකථනයේ නම වෙනස් කරන්න"
+
+#~ msgid "Share my phone’s Internet connection with a USB-connected device."
+#~ msgstr "USB-සම්බන්ධිත උපාංගයක් සමඟ මගේ දුරකථනයේ අන්තර්ජාල සබඳතාවය හුවමාරු කරන්න."
+
+#~ msgid ""
+#~ "Allow other devices to share my phone’s Internet connection by connecting "
+#~ "via Wi-Fi."
+#~ msgstr ""
+#~ "වෙනත් උපාංගවලට වයි-ෆයි හරහා සම්බන්ධ වී මගේ දුරකථනයේ අන්තර්ජාල සබඳතාවය හුවමාරු කිරීමට "
+#~ "ඉඩදෙන්න."
+
+#~ msgid ""
+#~ "The ringtone was not changed because the selected file can not be played "
+#~ "on this phone."
+#~ msgstr "තෝරාගත් ගොනුව මෙම දුරකථනය මත වාදනය කළ නොහැකි නිසා හඬනාදය වෙනස් නොකෙරිණි."
+
+#~ msgid "Find My Device allows you to locate, lock or erase your phone"
+#~ msgstr ""
+#~ "මාගේ උපාංගය සොයන්න ඔබට ඔබගේ දුරකථනය ඇති ස්ථානය සොයාගැනීමට, අඟුලු ලෑමට හෝ දත්ත "
+#~ "මකාදැමීමට අවස්ථාව ලබාදෙයි"
+
+#~ msgid ""
+#~ "Find My Device allows you to locate, lock or erase your phone from a web "
+#~ "site:"
+#~ msgstr ""
+#~ "මාගේ උපාංගය සොයන්න ඔබට දුරකථනය ඇති ස්ථානය සොයාගැනීමට, අඟුලු ලෑමට හෝ දත්ත මකාදැමීමට "
+#~ "පහත වෙබ් අඩවිය හරහා අවස්ථාව ලබාදේ:"
+
+#~ msgid "Your phone is being tracked by another device through the website."
+#~ msgstr "ඔබගේ දුරකථනය මෙම වෙබ් අඩවිය හරහා වෙන උපාංගයක් මඟින් හඹායනු ලබයි."
+
+#~ msgid "No devices are actively tracking your phone through the website."
+#~ msgstr "කිසිදු උපාංගයක් ඔබගේ දුරකථනය සක්‍රීයව දැනට මෙම වෙබ් අඩවිය හරහා හඹා නොයයි."
+
+#~ msgid ""
+#~ "Turning on Enable USB storage allows another computer or device connected "
+#~ "using USB to access files on this phone."
+#~ msgstr ""
+#~ "USB ආචයනය සක්‍රිය කිරීම ක්‍රියාත්මක කිරීම තුළින් USB භාවිතා කර සම්බන්ධ වී සිටින වෙනත් පරිගණකයකට "
+#~ "හෝ උපාංගයකට මෙම දුරකථනයේ ගොනු වෙත ප්‍රවේශ වීමට ඉඩදෙනු ඇත."
+
+#~ msgid "Reset Phone"
+#~ msgstr "දුරකථනය යළි පිහිටුවන්න"
+
+#~ msgid ""
+#~ "Resetting will erase all your data, including any apps you’ve purchased. "
+#~ "The phone will be restored to its factory condition. None of your "
+#~ "settings or data will be saved."
+#~ msgstr ""
+#~ "යළි පිහිටුවීම මඟින් ඔබ මිලදී ගත් ඕනෑම යෙදුමක් ඇතුළුව, ඔබේ සියලු දත්ත මකා දමනු ඇත. දුරකථනය එහි "
+#~ "කර්මාන්තශාලාවෙන් පැමිණි තත්ත්වයට ප්‍රතිෂ්ඨාපනය වේ. ඔබේ සැකසුම් හෝ දත්ත කිසිවක් සුරක්ෂිත නොවනු "
+#~ "ඇත."
+
+#~ msgid ""
+#~ "Turning on power save mode turns off the phone’s data, Bluetooth and "
+#~ "Geolocation connections to extend battery life. You can still turn these "
+#~ "services back on manually."
+#~ msgstr ""
+#~ "බල සුරැකුම් ප්‍රකාරය ක්‍රියාත්මක කිරීමෙන් බැටරියේ ආයුකාලය දීර්ඝ කිරීම පිණිස දුරකථනයේ දත්ත, බ්ලුටූත් "
+#~ "සහ පිහිටුම් සබඳතාවයන් අක්‍රිය කරනු ලබයි. ඔබට මෙම සේවාවන් පසුව හස්තීයව සක්‍රිය කළ හැකිය."
 
 #~ msgctxt "search-suggestions-button"
 #~ msgid "{{search-suggestions}}"
