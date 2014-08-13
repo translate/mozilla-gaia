@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-11 07:17+0000\n"
-"PO-Revision-Date: 2014-08-05 06:37+0000\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
+"PO-Revision-Date: 2014-08-13 09:02+0000\n"
 "Last-Translator: Selim <selim@sum.lu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: tr\n"
@@ -12,10 +12,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Pootle 2.5.1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1407220674.000000\n"
+"X-POOTLE-MTIME: 1407920522.000000\n"
 
 #: settings
 msgid "Settings"
@@ -377,12 +377,6 @@ msgstr "Açık bir ağ bulunduğunda bana bildir"
 msgid "MAC address"
 msgstr "MAC adresi"
 
-#. # os = OS version. For example: 2.0.
-#. # The whole string may look like this: "Firefox OS 2.0"
-#: deviceInfo_software
-msgid "{{ brandShortName }} {{ os }}"
-msgstr ""
-
 #: macUnavailable
 msgctxt "macUnavailable"
 msgid "Not available"
@@ -474,9 +468,9 @@ msgstr "WPS iptal edildi"
 msgid "WPS timed out"
 msgstr "WPS zaman aşımına uğradı"
 
-#: fullStatus-wps-failed-error
-msgid "WPS failed [{{error}}]"
-msgstr ""
+#: fullStatus-wps-failed
+msgid "WPS failed"
+msgstr "WPS başarısız"
 
 #: fullStatus-wps-overlapped
 msgid "Another WPS PBC AP was found"
@@ -523,9 +517,9 @@ msgstr "Herhangi biri"
 msgid "Cancel WPS"
 msgstr "WPS'yi iptal et"
 
-#: wpsCancelFailedMessageError
-msgid "Failed to cancel WPS [{{error}}]"
-msgstr ""
+#: wpsCancelFailedMessage
+msgid "Failed to cancel WPS"
+msgstr "WPS iptal edilemedi"
 
 #. # Connectivity :: Call
 #: callSettings
@@ -639,9 +633,9 @@ msgstr "Ulaşılamıyorsa yönlendir"
 msgid "When unreachable"
 msgstr "Ulaşılamıyorsa"
 
-#: callForwardingForwardingVoiceToNumber
-msgid "Voice calls to {{number}}"
-msgstr ""
+#: callForwardingForwardingVoiceTo
+msgid "Voice calls to"
+msgstr "Sesli aramalar"
 
 #: callForwardingNotForwarding
 msgctxt "callForwardingNotForwarding"
@@ -870,13 +864,11 @@ msgid "{{messagingSettings}}"
 msgstr "{{messagingSettings}}"
 
 #: message-confirmation
-#, fuzzy
-msgid "Message Confirmation"
+msgid "Message confirmation"
 msgstr "Mesaj onayı"
 
 #: message-delivery-reports
-#, fuzzy
-msgid "Delivery Reports"
+msgid "Delivery reports"
 msgstr "İletim raporları"
 
 #: message-delivery-reports-details
@@ -884,8 +876,7 @@ msgid "Request notification of delivery for each message sent"
 msgstr "Gönderilen her mesaj için iletim bildirimi iste"
 
 #: message-read-reports
-#, fuzzy
-msgid "Read Reports"
+msgid "Read reports"
 msgstr "Okundu raporları"
 
 #: message-read-reports-details
@@ -893,13 +884,11 @@ msgid "Request read report for each message sent"
 msgstr "Gönderilen her mesaj için okundu raporu iste"
 
 #: mmsTitle
-#, fuzzy
-msgid "Multimedia Messaging (MMS)"
+msgid "Multimedia messaging (MMS)"
 msgstr "Multimedya mesajı (MMS)"
 
 #: auto-retrieve
-#, fuzzy
-msgid "Auto Retrieve"
+msgid "Auto retrieve"
 msgstr "Otomatik al"
 
 #: auto-retrieve-details
@@ -923,8 +912,7 @@ msgid "Auto-configure"
 msgstr "Otomatik yapılandır"
 
 #: wapPushMessages
-#, fuzzy
-msgid "WAP Push Messages"
+msgid "WAP Push messages"
 msgstr "WAP Push mesajları"
 
 #: wapPush
@@ -932,31 +920,25 @@ msgid "WAP Push"
 msgstr "WAP Push"
 
 #: cellBroadcastMessages
-#, fuzzy
-msgid "Cell Broadcast Messages"
+msgid "Cell broadcast messages"
 msgstr "Hücresel yayın mesajları"
 
 #: cellBroadcast
-#, fuzzy
-msgid "Cell Broadcast"
+msgid "Cell broadcast"
 msgstr "Hücresel yayın"
-
-#: emergencyAlert
-msgid "Emergency Alert"
-msgstr ""
 
 #: messagingInformation
 msgid "Information"
 msgstr "Bilgi"
 
 #. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
-#: messaging-SMSC
-msgid "Service Center"
-msgstr ""
+#: messagingSMSC
+msgid "SMSC"
+msgstr "SMSC"
 
-#: unknown-SMSC
-msgid "Info not available"
-msgstr ""
+#: unknownSMSC
+msgid "Unknown number"
+msgstr "Bilinmeyen numara"
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
@@ -1436,9 +1418,17 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "Bağlandı"
 
+#: device-status-connected-phone
+msgid "Connected to phone audio"
+msgstr "Telefon sesine bağlı"
+
 #: device-status-connected-media
 msgid "Connected to media audio"
 msgstr "Medya sesine bağlı"
+
+#: device-status-connected-phone-media
+msgid "Connected to phone/media audio"
+msgstr "Telefon/medya sesine bağlı"
 
 #: device-option-unpair
 msgid "Unpair"
@@ -1480,6 +1470,10 @@ msgstr "Aygıtımın adını değiştir"
 #: unnamed-device
 msgid "Unknown device"
 msgstr "Bilinmeyen aygıt"
+
+#: change-phone-name
+msgid "Change phone name"
+msgstr "Telefon ismini değiştir"
 
 #: change-phone-name-desc
 msgid "Change the name of your device as it appears in your computer"
@@ -1553,10 +1547,23 @@ msgstr "{{internetSharing}}"
 msgid "USB"
 msgstr "USB"
 
+#: internetSharing-usb-desc
+msgid "Share my phone’s Internet connection with a USB-connected device."
+msgstr ""
+"Telefonumun internet bağlantısını USB'den bağlanmış bir aygıtla paylaş."
+
 #: internetSharing-wifi
 msgctxt "internetSharing-wifi"
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
+
+#: internetSharing-wifi-desc
+msgid ""
+"Allow other devices to share my phone’s Internet connection by connecting "
+"via Wi-Fi."
+msgstr ""
+"Diğer aygıtlara Wi-Fi üzerinden telefonumun internet bağlantısını "
+"paylaşmaları için izin ver."
 
 #: wifi-hotspot
 msgid "Wi-Fi hotspot"
@@ -1733,6 +1740,13 @@ msgstr "Ortam"
 #: savingringtone
 msgid "Saving ringtone…"
 msgstr "Zil sesi kaydediliyor…"
+
+#: unplayable-ringtone
+msgid ""
+"The ringtone was not changed because the selected file can not be played on "
+"this phone."
+msgstr ""
+"Seçilen dosya bu telefonda çalınamayacağı için zil sesi değiştirilmedi."
 
 #: no-ringtone-app
 msgid "We were unable to find a ringtone app to manage ringtones!"
@@ -2218,7 +2232,7 @@ msgstr "Hakkında"
 
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
-msgstr "{{email}} adresiyle oturum açtınız"
+msgstr "Oturum sahibi: {{email}}"
 
 #: fxa-signed-in-header
 msgid "Signed In"
@@ -2251,6 +2265,11 @@ msgctxt "findmydevice"
 msgid "Find My Device"
 msgstr "Cihazımı Bul"
 
+#: findmydevice-signup-description
+msgid "Find My Device allows you to locate, lock or erase your phone"
+msgstr ""
+"Cihazımı Bul, telefonunuzu bulmanızı, kilitlemenizi ve silmenizi sağlar"
+
 #: findmydevice-create-account
 msgctxt "findmydevice-create-account"
 msgid "Create account or sign in"
@@ -2263,6 +2282,14 @@ msgstr "Cihazımı Bul'u aç"
 #: findmydevice-about
 msgid "About Find My Device"
 msgstr "Cihazımı Bul hakkında"
+
+#: findmydevice-settings-description
+msgid ""
+"Find My Device allows you to locate, lock or erase your phone from a web "
+"site:"
+msgstr ""
+"Cihazımı Bul, telefonunuzu bir web sitesi üzerinden bulmanızı, kilitlemenizi "
+"ve silmenizi sağlar:"
 
 #: findmydevice-enable-geolocation-prompt
 msgid "Enable Geolocation?"
@@ -2281,6 +2308,16 @@ msgstr "Coğrafi konum etkinleştirildi"
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
 msgstr "Bu cihaz şu anda çevrimdışı. Bir ağa bağlanıp yeniden deneyin."
+
+#: findmydevice-active-tracking
+msgid "Your phone is being tracked by another device through the website."
+msgstr ""
+"Cihazınız web sitesi üzerinden başka bir cihaz tarafından takip ediliyor."
+
+#: findmydevice-not-tracking
+msgid "No devices are actively tracking your phone through the website."
+msgstr ""
+"Web sitesi üzerinden telefonunuzu aktif olarak takip eden hiçbir cihaz yok."
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -3028,6 +3065,14 @@ msgstr "Gelişmiş"
 msgid "Enable USB storage?"
 msgstr "USB depolama etkinleştirilsin mi?"
 
+#: turn-on-ums-confirm
+msgid ""
+"Turning on Enable USB storage allows another computer or device connected "
+"using USB to access files on this phone."
+msgstr ""
+"USB depolamayı etkinleştirmek, USB ile bağlanana başka bir bilgisayarın veya "
+"aygıtın bu telefondaki dosyalara erişmesine izin verir."
+
 #: default-media-location
 msgid "Default media location"
 msgstr "Varsayılan medya konumu"
@@ -3309,14 +3354,6 @@ msgstr "Döşeme"
 msgid "Simple tiling"
 msgstr "Basit döşeme"
 
-#: low-precision
-msgid "Low-precision painting"
-msgstr ""
-
-#: low-opacity
-msgid "Low-precision transparency"
-msgstr ""
-
 #: draw-tile-borders
 msgid "Draw tile borders"
 msgstr "Döşeme kenarlarını çiz"
@@ -3372,7 +3409,7 @@ msgstr "ADB'de coğrafi konum"
 
 #: use-reviewer-certs
 msgid "Use Marketplace reviewer certs"
-msgstr ""
+msgstr "Marketplace inceleyici sertifikalarını kullan"
 
 #: model-name
 msgid "Model"
@@ -3481,9 +3518,9 @@ msgid ""
 "Mozilla. Our mission is to promote openness, innovation and opportunity by "
 "keeping the power of the Web in your hands."
 msgstr ""
-"{{brandShortName}}, Mozilla'dan ücretsiz ve açık kaynaklı bir işletim "
-"sistemidir. Misyonumuz Web'in gücünü sizin elinize teslim ederek açıklık, "
-"yenilik ve fırsat eşitliğini desteklemektir."
+"{{brandShortName}}, Mozilla'nın geliştirdiği ücretsiz ve açık kaynaklı bir "
+"işletim sistemidir. Misyonumuz Web'in gücünü sizin elinize teslim ederek "
+"açıklık, yenilik ve fırsat eşitliğini desteklemektir."
 
 #: learn-more
 msgid "Learn More"
@@ -3494,9 +3531,23 @@ msgctxt "reset-head"
 msgid "Reset"
 msgstr "Sıfırla"
 
+#: reset-phone
+msgid "Reset Phone"
+msgstr "Telefonu sıfırla"
+
 #: reset-warning-title
 msgid "CAUTION"
 msgstr "DİKKAT"
+
+#: reset-warning-body
+msgid ""
+"Resetting will erase all your data, including any apps you’ve purchased. The "
+"phone will be restored to its factory condition. None of your settings or "
+"data will be saved."
+msgstr ""
+"Telefonu sıfırlamak tüm verilerinizi ve satın aldığınız uygulamaları "
+"silecektir. Telefonunuz fabrika ayarlarına geri dönecektir. Ayarlarınızın "
+"veya verilerinizin hiçbiri kaydedilmeyecektir."
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
 #: your-rights
@@ -3756,6 +3807,15 @@ msgstr "Güç tasarrufu modu"
 msgid "{{level}}% battery left"
 msgstr "%{{level}} pil kalınca"
 
+#: powerSave-explanation
+msgid ""
+"Turning on power save mode turns off the phone’s data, Bluetooth and "
+"Geolocation connections to extend battery life. You can still turn these "
+"services back on manually."
+msgstr ""
+"Güç tasarrufu modunu açmak pil ömrünü uzatmak için telefonun veri, Bluetooth "
+"ve GPS bağlantılarını kapatır. Bu hizmetleri yine de elle açabilirsiniz."
+
 #: turnOnAuto
 msgid "Turn on automatically"
 msgstr "Otomatik olarak aç"
@@ -3850,6 +3910,14 @@ msgstr "Mozilla'ya geri bildirim gönder"
 #: performanceAndUsageData
 msgid "Performance and usage data"
 msgstr "Performans ve kullanım verileri"
+
+#: performanceAndUsageDataInfo
+msgid ""
+"Help us improve {{brandShortName}} by sharing data about your phone and the "
+"way you use it."
+msgstr ""
+"{{brandShortName}} telefonunuz ve kullanımınız hakkında verileri paylaşarak "
+"onu geliştirmemize yardım edin."
 
 #: sharePerformanceAndUsageData
 msgid "Submit data"
@@ -4157,113 +4225,6 @@ msgstr "Veri gönder"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Kanal durumunu al"
-
-#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
-#: is-warning-head
-msgid "{{newSetting}}"
-msgstr ""
-
-#: is-warning-message
-msgid ""
-"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
-"{{newSetting}}?"
-msgstr ""
-
-#~ msgid "WPS failed"
-#~ msgstr "WPS başarısız"
-
-#~ msgid "Failed to cancel WPS"
-#~ msgstr "WPS iptal edilemedi"
-
-#~ msgid "Voice calls to"
-#~ msgstr "Sesli aramalar"
-
-#~ msgid "SMSC"
-#~ msgstr "SMSC"
-
-#~ msgid "Unknown number"
-#~ msgstr "Bilinmeyen numara"
-
-#~ msgid "Connected to phone audio"
-#~ msgstr "Telefon sesine bağlı"
-
-#~ msgid "Connected to phone/media audio"
-#~ msgstr "Telefon/medya sesine bağlı"
-
-#~ msgid "Change phone name"
-#~ msgstr "Telefon ismini değiştir"
-
-#~ msgid "Share my phone’s Internet connection with a USB-connected device."
-#~ msgstr ""
-#~ "Telefonumun internet bağlantısını USB'den bağlanmış bir aygıtla paylaş."
-
-#~ msgid ""
-#~ "Allow other devices to share my phone’s Internet connection by connecting "
-#~ "via Wi-Fi."
-#~ msgstr ""
-#~ "Diğer aygıtlara Wi-Fi üzerinden telefonumun internet bağlantısını "
-#~ "paylaşmaları için izin ver."
-
-#~ msgid ""
-#~ "The ringtone was not changed because the selected file can not be played "
-#~ "on this phone."
-#~ msgstr ""
-#~ "Seçilen dosya bu telefonda çalınamayacağı için zil sesi değiştirilmedi."
-
-#~ msgid "Find My Device allows you to locate, lock or erase your phone"
-#~ msgstr ""
-#~ "Cihazımı Bul, telefonunuzu bulmanızı, kilitlemenizi ve silmenizi sağlar"
-
-#~ msgid ""
-#~ "Find My Device allows you to locate, lock or erase your phone from a web "
-#~ "site:"
-#~ msgstr ""
-#~ "Cihazımı Bul, telefonunuzu bir web sitesi üzerinden bulmanızı, "
-#~ "kilitlemenizi ve silmenizi sağlar:"
-
-#~ msgid "Your phone is being tracked by another device through the website."
-#~ msgstr ""
-#~ "Cihazınız web sitesi üzerinden başka bir cihaz tarafından takip ediliyor."
-
-#~ msgid "No devices are actively tracking your phone through the website."
-#~ msgstr ""
-#~ "Web sitesi üzerinden telefonunuzu aktif olarak takip eden hiçbir cihaz "
-#~ "yok."
-
-#~ msgid ""
-#~ "Turning on Enable USB storage allows another computer or device connected "
-#~ "using USB to access files on this phone."
-#~ msgstr ""
-#~ "USB depolamayı etkinleştirmek, USB ile bağlanana başka bir bilgisayarın "
-#~ "veya aygıtın bu telefondaki dosyalara erişmesine izin verir."
-
-#~ msgid "Reset Phone"
-#~ msgstr "Telefonu sıfırla"
-
-#~ msgid ""
-#~ "Resetting will erase all your data, including any apps you’ve purchased. "
-#~ "The phone will be restored to its factory condition. None of your "
-#~ "settings or data will be saved."
-#~ msgstr ""
-#~ "Telefonu sıfırlamak tüm verilerinizi ve satın aldığınız uygulamaları "
-#~ "silecektir. Telefonunuz fabrika ayarlarına geri dönecektir. Ayarlarınızın "
-#~ "veya verilerinizin hiçbiri kaydedilmeyecektir."
-
-#~ msgid ""
-#~ "Turning on power save mode turns off the phone’s data, Bluetooth and "
-#~ "Geolocation connections to extend battery life. You can still turn these "
-#~ "services back on manually."
-#~ msgstr ""
-#~ "Güç tasarrufu modunu açmak pil ömrünü uzatmak için telefonun veri, "
-#~ "Bluetooth ve GPS bağlantılarını kapatır. Bu hizmetleri yine de elle "
-#~ "açabilirsiniz."
-
-#~ msgid ""
-#~ "Help us improve {{brandShortName}} by sharing data about your phone and "
-#~ "the way you use it."
-#~ msgstr ""
-#~ "{{brandShortName}} telefonunuz ve kullanımınız hakkında verileri "
-#~ "paylaşarak onu geliştirmemize yardım edin."
 
 #~ msgctxt "search-suggestions-button"
 #~ msgid "{{search-suggestions}}"
