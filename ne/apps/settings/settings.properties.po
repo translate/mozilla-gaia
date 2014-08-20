@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-11 07:17+0000\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-07-01 15:35+0000\n"
 "Last-Translator: Bansaj <bansajpradhan@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1404228927.000000\n"
@@ -379,12 +379,6 @@ msgstr "खुला संजाल उपलब्ध भएमा सुच�
 msgid "MAC address"
 msgstr "म्याक ठेगाना"
 
-#. # os = OS version. For example: 2.0.
-#. # The whole string may look like this: "Firefox OS 2.0"
-#: deviceInfo_software
-msgid "{{ brandShortName }} {{ os }}"
-msgstr ""
-
 #: macUnavailable
 msgctxt "macUnavailable"
 msgid "Not available"
@@ -476,9 +470,9 @@ msgstr "WPS रद्द गरियो"
 msgid "WPS timed out"
 msgstr "WPS समय समाप्त"
 
-#: fullStatus-wps-failed-error
-msgid "WPS failed [{{error}}]"
-msgstr ""
+#: fullStatus-wps-failed
+msgid "WPS failed"
+msgstr "WPS असफल"
 
 #: fullStatus-wps-overlapped
 msgid "Another WPS PBC AP was found"
@@ -525,9 +519,9 @@ msgstr "कुनै"
 msgid "Cancel WPS"
 msgstr "WPS रद्द गर्नुहोस्"
 
-#: wpsCancelFailedMessageError
-msgid "Failed to cancel WPS [{{error}}]"
-msgstr ""
+#: wpsCancelFailedMessage
+msgid "Failed to cancel WPS"
+msgstr "WPS रद्द गर्न असफल भयो"
 
 #. # Connectivity :: Call
 #: callSettings
@@ -640,9 +634,9 @@ msgstr "पहुँच अयोग्य भएमा फरवार्ड �
 msgid "When unreachable"
 msgstr "पहुँच नहुँदा"
 
-#: callForwardingForwardingVoiceToNumber
-msgid "Voice calls to {{number}}"
-msgstr ""
+#: callForwardingForwardingVoiceTo
+msgid "Voice calls to"
+msgstr "आवाज कल "
 
 #: callForwardingNotForwarding
 msgctxt "callForwardingNotForwarding"
@@ -862,13 +856,11 @@ msgid "{{messagingSettings}}"
 msgstr "{{messagingSettings}}"
 
 #: message-confirmation
-#, fuzzy
-msgid "Message Confirmation"
+msgid "Message confirmation"
 msgstr "पाठ सन्देशको लागि यकीन"
 
 #: message-delivery-reports
-#, fuzzy
-msgid "Delivery Reports"
+msgid "Delivery reports"
 msgstr "हस्तान्तरण प्रतिवेदनहरु"
 
 #: message-delivery-reports-details
@@ -876,8 +868,7 @@ msgid "Request notification of delivery for each message sent"
 msgstr "प्रत्येक पठाइएका सन्देशका लागि सूचना हस्तान्तरण अनुरोध गर्नुहोस्"
 
 #: message-read-reports
-#, fuzzy
-msgid "Read Reports"
+msgid "Read reports"
 msgstr "प्रतिवेदनहरु पढ्नुहोस्"
 
 #: message-read-reports-details
@@ -885,13 +876,11 @@ msgid "Request read report for each message sent"
 msgstr "प्रत्येक पठाईएका सन्देशहरुका लागि वाचन प्रतिवेदन अनुरोध गर्नुहोस्"
 
 #: mmsTitle
-#, fuzzy
-msgid "Multimedia Messaging (MMS)"
+msgid "Multimedia messaging (MMS)"
 msgstr "मल्टिमिडिया सन्देश (MMS)"
 
 #: auto-retrieve
-#, fuzzy
-msgid "Auto Retrieve"
+msgid "Auto retrieve"
 msgstr "स्वत: प्राप्ती"
 
 #: auto-retrieve-details
@@ -915,8 +904,7 @@ msgid "Auto-configure"
 msgstr "स्वत: कन्फिगर"
 
 #: wapPushMessages
-#, fuzzy
-msgid "WAP Push Messages"
+msgid "WAP Push messages"
 msgstr "WAP थिच्नुपर्ने सन्देशहरु"
 
 #: wapPush
@@ -924,18 +912,12 @@ msgid "WAP Push"
 msgstr "WAP थिच्नुहोस्"
 
 #: cellBroadcastMessages
-#, fuzzy
-msgid "Cell Broadcast Messages"
+msgid "Cell broadcast messages"
 msgstr "कक्ष प्रसारण सन्देशहरू"
 
 #: cellBroadcast
-#, fuzzy
-msgid "Cell Broadcast"
+msgid "Cell broadcast"
 msgstr "कक्ष प्रसारण"
-
-#: emergencyAlert
-msgid "Emergency Alert"
-msgstr ""
 
 #: messagingInformation
 #, fuzzy
@@ -943,12 +925,13 @@ msgid "Information"
 msgstr "यकीन"
 
 #. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
-#: messaging-SMSC
-msgid "Service Center"
-msgstr ""
+#: messagingSMSC
+#, fuzzy
+msgid "SMSC"
+msgstr "MMSC"
 
-#: unknown-SMSC
-msgid "Info not available"
+#: unknownSMSC
+msgid "Unknown number"
 msgstr ""
 
 #. # Connectivity :: Cellular & Data
@@ -1429,9 +1412,17 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "जडान भयो"
 
+#: device-status-connected-phone
+msgid "Connected to phone audio"
+msgstr "फोन अडियोमा जडान भएको"
+
 #: device-status-connected-media
 msgid "Connected to media audio"
 msgstr "फोन मेडियामा जडान भएको"
+
+#: device-status-connected-phone-media
+msgid "Connected to phone/media audio"
+msgstr "फोन वा मेडिया अडियोमा जडान भएको"
 
 #: device-option-unpair
 msgid "Unpair"
@@ -1474,6 +1465,10 @@ msgstr "मेरो यन्त्रको नाम परिवर्तन
 #: unnamed-device
 msgid "Unknown device"
 msgstr "अज्ञात यन्त्र"
+
+#: change-phone-name
+msgid "Change phone name"
+msgstr "फोनको नाम परिवर्तन गर्नुहोस्"
 
 #: change-phone-name-desc
 msgid "Change the name of your device as it appears in your computer"
@@ -1545,10 +1540,21 @@ msgstr "{{internetSharing}}"
 msgid "USB"
 msgstr "USB"
 
+#: internetSharing-usb-desc
+msgid "Share my phone’s Internet connection with a USB-connected device."
+msgstr "USB जडित यन्त्रसँग मेरो फोनको इन्टरनेटलाई बाँड्नुहोस्।"
+
 #: internetSharing-wifi
 msgctxt "internetSharing-wifi"
 msgid "Wi-Fi"
 msgstr "वाई-फाई"
+
+#: internetSharing-wifi-desc
+msgid ""
+"Allow other devices to share my phone’s Internet connection by connecting "
+"via Wi-Fi."
+msgstr ""
+"वाई-फाईबाट जडान गरेर अरु यन्त्रहरुलाई मेरो फोनको इन्टरनेट सेयर गर्न अनुमति दिनुहोस्।"
 
 #: wifi-hotspot
 msgid "Wi-Fi hotspot"
@@ -1725,6 +1731,12 @@ msgstr ""
 #: savingringtone
 msgid "Saving ringtone…"
 msgstr "रिङ्गटोन संचय गरिंदै..."
+
+#: unplayable-ringtone
+msgid ""
+"The ringtone was not changed because the selected file can not be played on "
+"this phone."
+msgstr "चयन गरिएको फाइल यस फोनमा नचल्ने भएको हुँदा रिङ्गटोन बदलिएको छैन।"
 
 #: no-ringtone-app
 msgid "We were unable to find a ringtone app to manage ringtones!"
@@ -2243,6 +2255,10 @@ msgctxt "findmydevice"
 msgid "Find My Device"
 msgstr ""
 
+#: findmydevice-signup-description
+msgid "Find My Device allows you to locate, lock or erase your phone"
+msgstr ""
+
 #: findmydevice-create-account
 msgctxt "findmydevice-create-account"
 msgid "Create account or sign in"
@@ -2254,6 +2270,12 @@ msgstr ""
 
 #: findmydevice-about
 msgid "About Find My Device"
+msgstr ""
+
+#: findmydevice-settings-description
+msgid ""
+"Find My Device allows you to locate, lock or erase your phone from a web "
+"site:"
 msgstr ""
 
 #: findmydevice-enable-geolocation-prompt
@@ -2271,6 +2293,14 @@ msgstr ""
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
+msgstr ""
+
+#: findmydevice-active-tracking
+msgid "Your phone is being tracked by another device through the website."
+msgstr ""
+
+#: findmydevice-not-tracking
+msgid "No devices are actively tracking your phone through the website."
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3012,6 +3042,14 @@ msgstr "आधुनिक"
 msgid "Enable USB storage?"
 msgstr "USB भण्डार सक्षम पार्न चहानुहुन्छ?"
 
+#: turn-on-ums-confirm
+msgid ""
+"Turning on Enable USB storage allows another computer or device connected "
+"using USB to access files on this phone."
+msgstr ""
+"USB भण्डार सक्षम पारेमा अन्य USBमा जडान भएका कम्प्युटर वा यन्त्रलाई यस फोनमा फाइलहरुको "
+"पहुँच हुनेछ।"
+
 #: default-media-location
 msgid "Default media location"
 msgstr "पूर्वनिर्धारित मिडिया स्थान"
@@ -3291,14 +3329,6 @@ msgstr ""
 msgid "Simple tiling"
 msgstr ""
 
-#: low-precision
-msgid "Low-precision painting"
-msgstr ""
-
-#: low-opacity
-msgid "Low-precision transparency"
-msgstr ""
-
 #: draw-tile-borders
 #, fuzzy
 msgid "Draw tile borders"
@@ -3482,9 +3512,23 @@ msgctxt "reset-head"
 msgid "Reset"
 msgstr "रिसेट गर्नुहोस्"
 
+#: reset-phone
+msgid "Reset Phone"
+msgstr "फोन रिसेट गर्नुहोस्"
+
 #: reset-warning-title
 msgid "CAUTION"
 msgstr "सावधान"
+
+#: reset-warning-body
+msgid ""
+"Resetting will erase all your data, including any apps you’ve purchased. The "
+"phone will be restored to its factory condition. None of your settings or "
+"data will be saved."
+msgstr ""
+"रिसेट गर्न ले तपाईं को सबै डेटा, तपाईं ले खरीद गर्नु भएको कुनै पनि अनुप्रयोग सहित मेटाउने छ। "
+"फोन आफ्नो कारखाना अवास्थामा पूर्वावस्थामा आउने छ । तपाईं को कुनै पनि सेटिङहरु भण्डारण हुने "
+"छैन ।"
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
 #: your-rights
@@ -3741,6 +3785,15 @@ msgstr "पावर बचत मोड"
 msgid "{{level}}% battery left"
 msgstr "{{level}}% ब्याटरी बाँकी"
 
+#: powerSave-explanation
+msgid ""
+"Turning on power save mode turns off the phone’s data, Bluetooth and "
+"Geolocation connections to extend battery life. You can still turn these "
+"services back on manually."
+msgstr ""
+"शक्ति शैली चालू गरेमा फोनको ब्याटरी जीवन बढाउन डाटा, ब्लुटुथ र GPS जडानहरु बन्द गरिनेछ। "
+"तपाईले यी सेवाहरु आफै पछि चालू गर्न सक्नुहुन्छ।"
+
 #: turnOnAuto
 msgid "Turn on automatically"
 msgstr "स्वचालित तरिकाले अन गर्नुहोस्"
@@ -3834,6 +3887,12 @@ msgstr "मोजिल्लालाई पृष्ठपोषण पठा�
 
 #: performanceAndUsageData
 msgid "Performance and usage data"
+msgstr ""
+
+#: performanceAndUsageDataInfo
+msgid ""
+"Help us improve {{brandShortName}} by sharing data about your phone and the "
+"way you use it."
 msgstr ""
 
 #: sharePerformanceAndUsageData
@@ -4141,80 +4200,6 @@ msgstr "डाटा पठाउनुहोस्"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "च्यानल स्थितिहरु प्राप्त गर्नुहोस्"
-
-#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
-#: is-warning-head
-msgid "{{newSetting}}"
-msgstr ""
-
-#: is-warning-message
-msgid ""
-"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
-"{{newSetting}}?"
-msgstr ""
-
-#~ msgid "WPS failed"
-#~ msgstr "WPS असफल"
-
-#~ msgid "Failed to cancel WPS"
-#~ msgstr "WPS रद्द गर्न असफल भयो"
-
-#~ msgid "Voice calls to"
-#~ msgstr "आवाज कल "
-
-#, fuzzy
-#~ msgid "SMSC"
-#~ msgstr "MMSC"
-
-#~ msgid "Connected to phone audio"
-#~ msgstr "फोन अडियोमा जडान भएको"
-
-#~ msgid "Connected to phone/media audio"
-#~ msgstr "फोन वा मेडिया अडियोमा जडान भएको"
-
-#~ msgid "Change phone name"
-#~ msgstr "फोनको नाम परिवर्तन गर्नुहोस्"
-
-#~ msgid "Share my phone’s Internet connection with a USB-connected device."
-#~ msgstr "USB जडित यन्त्रसँग मेरो फोनको इन्टरनेटलाई बाँड्नुहोस्।"
-
-#~ msgid ""
-#~ "Allow other devices to share my phone’s Internet connection by connecting "
-#~ "via Wi-Fi."
-#~ msgstr ""
-#~ "वाई-फाईबाट जडान गरेर अरु यन्त्रहरुलाई मेरो फोनको इन्टरनेट सेयर गर्न अनुमति दिनुहोस्।"
-
-#~ msgid ""
-#~ "The ringtone was not changed because the selected file can not be played "
-#~ "on this phone."
-#~ msgstr "चयन गरिएको फाइल यस फोनमा नचल्ने भएको हुँदा रिङ्गटोन बदलिएको छैन।"
-
-#~ msgid ""
-#~ "Turning on Enable USB storage allows another computer or device connected "
-#~ "using USB to access files on this phone."
-#~ msgstr ""
-#~ "USB भण्डार सक्षम पारेमा अन्य USBमा जडान भएका कम्प्युटर वा यन्त्रलाई यस फोनमा "
-#~ "फाइलहरुको पहुँच हुनेछ।"
-
-#~ msgid "Reset Phone"
-#~ msgstr "फोन रिसेट गर्नुहोस्"
-
-#~ msgid ""
-#~ "Resetting will erase all your data, including any apps you’ve purchased. "
-#~ "The phone will be restored to its factory condition. None of your "
-#~ "settings or data will be saved."
-#~ msgstr ""
-#~ "रिसेट गर्न ले तपाईं को सबै डेटा, तपाईं ले खरीद गर्नु भएको कुनै पनि अनुप्रयोग सहित मेटाउने "
-#~ "छ। फोन आफ्नो कारखाना अवास्थामा पूर्वावस्थामा आउने छ । तपाईं को कुनै पनि सेटिङहरु "
-#~ "भण्डारण हुने छैन ।"
-
-#~ msgid ""
-#~ "Turning on power save mode turns off the phone’s data, Bluetooth and "
-#~ "Geolocation connections to extend battery life. You can still turn these "
-#~ "services back on manually."
-#~ msgstr ""
-#~ "शक्ति शैली चालू गरेमा फोनको ब्याटरी जीवन बढाउन डाटा, ब्लुटुथ र GPS जडानहरु बन्द "
-#~ "गरिनेछ। तपाईले यी सेवाहरु आफै पछि चालू गर्न सक्नुहुन्छ।"
 
 #~ msgid "Installed input methods"
 #~ msgstr "स्थापित आगत तरिकाहरु"
