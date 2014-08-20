@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-11 07:17+0000\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-07-17 12:13+0000\n"
 "Last-Translator: Ian <ian.henderson@rubric.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1405599229.000000\n"
@@ -378,12 +378,6 @@ msgstr "Ndazise xa inethiweki evulekileyo ifumaneka"
 msgid "MAC address"
 msgstr "Idilesi ye-MAC"
 
-#. # os = OS version. For example: 2.0.
-#. # The whole string may look like this: "Firefox OS 2.0"
-#: deviceInfo_software
-msgid "{{ brandShortName }} {{ os }}"
-msgstr ""
-
 #: macUnavailable
 msgctxt "macUnavailable"
 msgid "Not available"
@@ -475,9 +469,9 @@ msgstr "I-WPS yarhoxiswa"
 msgid "WPS timed out"
 msgstr "I-WPS iphelelwe lixesha"
 
-#: fullStatus-wps-failed-error
-msgid "WPS failed [{{error}}]"
-msgstr ""
+#: fullStatus-wps-failed
+msgid "WPS failed"
+msgstr "I-WPS isilele"
 
 #: fullStatus-wps-overlapped
 msgid "Another WPS PBC AP was found"
@@ -524,9 +518,9 @@ msgstr "Nasiphi na"
 msgid "Cancel WPS"
 msgstr "Rhoxisa i-WPS"
 
-#: wpsCancelFailedMessageError
-msgid "Failed to cancel WPS [{{error}}]"
-msgstr ""
+#: wpsCancelFailedMessage
+msgid "Failed to cancel WPS"
+msgstr "Isilele ukurhoxisa i-WPS"
 
 #. # Connectivity :: Call
 #: callSettings
@@ -640,9 +634,9 @@ msgstr "Gqithisela phambili xa ndingafumaneki"
 msgid "When unreachable"
 msgstr "Xa ndingafumaneki"
 
-#: callForwardingForwardingVoiceToNumber
-msgid "Voice calls to {{number}}"
-msgstr ""
+#: callForwardingForwardingVoiceTo
+msgid "Voice calls to"
+msgstr "Iminxeba yelizwi eya"
 
 #: callForwardingNotForwarding
 msgctxt "callForwardingNotForwarding"
@@ -872,13 +866,11 @@ msgid "{{messagingSettings}}"
 msgstr "{{messagingSettings}}"
 
 #: message-confirmation
-#, fuzzy
-msgid "Message Confirmation"
+msgid "Message confirmation"
 msgstr "Isiqinisekiso somyalezo"
 
 #: message-delivery-reports
-#, fuzzy
-msgid "Delivery Reports"
+msgid "Delivery reports"
 msgstr "Ingxelo yokuhanjiswa"
 
 #: message-delivery-reports-details
@@ -886,8 +878,7 @@ msgid "Request notification of delivery for each message sent"
 msgstr "Isicelo sesaziso sokuhanjiswa komyalezo ngamnye othunyelweyo"
 
 #: message-read-reports
-#, fuzzy
-msgid "Read Reports"
+msgid "Read reports"
 msgstr "Funda iingxelo"
 
 #: message-read-reports-details
@@ -895,13 +886,11 @@ msgid "Request read report for each message sent"
 msgstr "Cela ingxelo yokufunda kumyalezo ngamnye othunyelweyo"
 
 #: mmsTitle
-#, fuzzy
-msgid "Multimedia Messaging (MMS)"
+msgid "Multimedia messaging (MMS)"
 msgstr "Ukuthumela umyalezo ngeentlobo zemidiya (MMS)"
 
 #: auto-retrieve
-#, fuzzy
-msgid "Auto Retrieve"
+msgid "Auto retrieve"
 msgstr "Wuvule ngokuzenzekelayo"
 
 #: auto-retrieve-details
@@ -925,8 +914,7 @@ msgid "Auto-configure"
 msgstr "Ngqamanisa ngokuzenzekelayo"
 
 #: wapPushMessages
-#, fuzzy
-msgid "WAP Push Messages"
+msgid "WAP Push messages"
 msgstr "Imiyalezo etyhalwa nge-WAP"
 
 #: wapPush
@@ -934,18 +922,12 @@ msgid "WAP Push"
 msgstr "Etyhalwa nge-WAP"
 
 #: cellBroadcastMessages
-#, fuzzy
-msgid "Cell Broadcast Messages"
+msgid "Cell broadcast messages"
 msgstr "Imiyalezo yosasazo lweseli"
 
 #: cellBroadcast
-#, fuzzy
-msgid "Cell Broadcast"
+msgid "Cell broadcast"
 msgstr "Sasaza ngeseli"
-
-#: emergencyAlert
-msgid "Emergency Alert"
-msgstr ""
 
 #: messagingInformation
 #, fuzzy
@@ -953,12 +935,13 @@ msgid "Information"
 msgstr "Isiqinisekiso"
 
 #. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
-#: messaging-SMSC
-msgid "Service Center"
-msgstr ""
+#: messagingSMSC
+#, fuzzy
+msgid "SMSC"
+msgstr "MMSC"
 
-#: unknown-SMSC
-msgid "Info not available"
+#: unknownSMSC
+msgid "Unknown number"
 msgstr ""
 
 #. # Connectivity :: Cellular & Data
@@ -1446,9 +1429,17 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "Inxityelelwe"
 
+#: device-status-connected-phone
+msgid "Connected to phone audio"
+msgstr "Inxityelelwe kwi-odiyo yefowuni"
+
 #: device-status-connected-media
 msgid "Connected to media audio"
 msgstr "Inxityelelwe kwi-odiyo yemidiya"
+
+#: device-status-connected-phone-media
+msgid "Connected to phone/media audio"
+msgstr "Inxityelelwe kwi-odiyo yefowuni/imidiya"
 
 #: device-option-unpair
 msgid "Unpair"
@@ -1490,6 +1481,10 @@ msgstr "Thiya ngokutsha isixhobo sam"
 #: unnamed-device
 msgid "Unknown device"
 msgstr "Isixhobo esingaziwayo"
+
+#: change-phone-name
+msgid "Change phone name"
+msgstr "Tshintsha igama lefowuni"
 
 #: change-phone-name-desc
 msgid "Change the name of your device as it appears in your computer"
@@ -1564,10 +1559,24 @@ msgstr "{{internetSharing}}"
 msgid "USB"
 msgstr "U-USB"
 
+#: internetSharing-usb-desc
+msgid "Share my phone’s Internet connection with a USB-connected device."
+msgstr ""
+"Yabelana ngonxibelelwano lwam lwe-intanethi nesixhobo esinxityelelanisiweyo "
+"se-USB."
+
 #: internetSharing-wifi
 msgctxt "internetSharing-wifi"
 msgid "Wi-Fi"
 msgstr "I-Wi-Fi"
+
+#: internetSharing-wifi-desc
+msgid ""
+"Allow other devices to share my phone’s Internet connection by connecting "
+"via Wi-Fi."
+msgstr ""
+"Vumela ezinye izixhobo zabelane nonxibelelwano lwe-intanethi lwefowuni yam "
+"ngokunxibelelana nge-Wi-Fi."
 
 #: wifi-hotspot
 msgid "Wi-Fi hotspot"
@@ -1744,6 +1753,14 @@ msgstr "IMidiya"
 #: savingringtone
 msgid "Saving ringtone…"
 msgstr "Igcina ithoni yefowuni…"
+
+#: unplayable-ringtone
+msgid ""
+"The ringtone was not changed because the selected file can not be played on "
+"this phone."
+msgstr ""
+"Ithoni yefowuni ayitshintshwanga ngenxa yefayile ekhethiweyo "
+"ebingenakudlalwa kule fowuni."
 
 #: no-ringtone-app
 msgid "We were unable to find a ringtone app to manage ringtones!"
@@ -2272,6 +2289,11 @@ msgctxt "findmydevice"
 msgid "Find My Device"
 msgstr "Fumana isixhobo sam"
 
+#: findmydevice-signup-description
+msgid "Find My Device allows you to locate, lock or erase your phone"
+msgstr ""
+"UFumana isixhobo sam uyakuvumela ufumane, utshixe okanye ucime ifowuni yakho"
+
 #: findmydevice-create-account
 #, fuzzy
 msgctxt "findmydevice-create-account"
@@ -2285,6 +2307,14 @@ msgstr "Yenza uFumana isixhobo sam asebenze"
 #: findmydevice-about
 msgid "About Find My Device"
 msgstr "Mayela noFumana isixhobo sam"
+
+#: findmydevice-settings-description
+msgid ""
+"Find My Device allows you to locate, lock or erase your phone from a web "
+"site:"
+msgstr ""
+"UFumana isixhobo sam uyakuvumela ukuba ufumane, utshixe okanye ucime ifowuni "
+"yakho kwiwebhu:"
 
 #: findmydevice-enable-geolocation-prompt
 msgid "Enable Geolocation?"
@@ -2305,6 +2335,14 @@ msgstr "Indawo yejografi ivunyelwe"
 msgid "This device is currently offline. Connect to a network and try again."
 msgstr ""
 "Esi sixhobo sicimile okwangoku. Nxibelelana kwinethiwekhi uze uzame kwakhona."
+
+#: findmydevice-active-tracking
+msgid "Your phone is being tracked by another device through the website."
+msgstr "Ifowuni yakho ilandwa sesinye isixhobo ngewebhusayithi."
+
+#: findmydevice-not-tracking
+msgid "No devices are actively tracking your phone through the website."
+msgstr "Akukho sixhobo silanda umkhondo wefowuni yakho kwiwebhusayithi."
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -3057,6 +3095,14 @@ msgstr "Kwinqanaba eliphambili"
 msgid "Enable USB storage?"
 msgstr "Ufuna ukwenza ugcino lwe-USB lusebenze?"
 
+#: turn-on-ums-confirm
+msgid ""
+"Turning on Enable USB storage allows another computer or device connected "
+"using USB to access files on this phone."
+msgstr ""
+"Ukulayita ugcino lwe-USB kuvumela enye ikhompyutha okanye isixhobo "
+"sinxibelelane sisebenzisa i-USB ukungena kwiifayile ezikule fowuni."
+
 #: default-media-location
 msgid "Default media location"
 msgstr "Indawo esisiseko yemidiya"
@@ -3337,14 +3383,6 @@ msgstr "Ukuthayilisha"
 msgid "Simple tiling"
 msgstr "Ukuthayilisha okulula"
 
-#: low-precision
-msgid "Low-precision painting"
-msgstr ""
-
-#: low-opacity
-msgid "Low-precision transparency"
-msgstr ""
-
 #: draw-tile-borders
 msgid "Draw tile borders"
 msgstr "Yenza imida yethayile"
@@ -3525,9 +3563,23 @@ msgctxt "reset-head"
 msgid "Reset"
 msgstr "Seta ngokutsha"
 
+#: reset-phone
+msgid "Reset Phone"
+msgstr "Seta ifowuni ngokutsha"
+
 #: reset-warning-title
 msgid "CAUTION"
 msgstr "ISILUMKISO"
+
+#: reset-warning-body
+msgid ""
+"Resetting will erase all your data, including any apps you’ve purchased. The "
+"phone will be restored to its factory condition. None of your settings or "
+"data will be saved."
+msgstr ""
+"Ukuseta ngokutsha kuya kucima yonke idatha yakho, kuquka zonke ii-app "
+"ozithengileyo. Ifowuni iya kubuyiselwa kwimeko yakowayo. Akukho zisetingi "
+"okanye idatha yakho eya kugcinwa."
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
 #: your-rights
@@ -3786,6 +3838,16 @@ msgstr "Imo yokonga umbane"
 msgid "{{level}}% battery left"
 msgstr "Yi-{{level}}% eseleyo kwibhethri"
 
+#: powerSave-explanation
+msgid ""
+"Turning on power save mode turns off the phone’s data, Bluetooth and "
+"Geolocation connections to extend battery life. You can still turn these "
+"services back on manually."
+msgstr ""
+"Ukucima imo yokonga umbande kucima idatha yefowuni, unxibelelwano lwe-"
+"Bluetooth nendawo okuyo ukuze bande ubomi bebhetri. Ungazilayita ezi nkonzo "
+"ngokwakho."
+
 #: turnOnAuto
 msgid "Turn on automatically"
 msgstr "Zilayite ngokuzenzekelayo"
@@ -3879,6 +3941,12 @@ msgstr "Thumela ingxelo kwiMozilla"
 
 #: performanceAndUsageData
 msgid "Performance and usage data"
+msgstr ""
+
+#: performanceAndUsageDataInfo
+msgid ""
+"Help us improve {{brandShortName}} by sharing data about your phone and the "
+"way you use it."
 msgstr ""
 
 #: sharePerformanceAndUsageData
@@ -4187,104 +4255,6 @@ msgstr "Thumela idatha"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Fumana ubume betshanele"
-
-#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
-#: is-warning-head
-msgid "{{newSetting}}"
-msgstr ""
-
-#: is-warning-message
-msgid ""
-"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
-"{{newSetting}}?"
-msgstr ""
-
-#~ msgid "WPS failed"
-#~ msgstr "I-WPS isilele"
-
-#~ msgid "Failed to cancel WPS"
-#~ msgstr "Isilele ukurhoxisa i-WPS"
-
-#~ msgid "Voice calls to"
-#~ msgstr "Iminxeba yelizwi eya"
-
-#, fuzzy
-#~ msgid "SMSC"
-#~ msgstr "MMSC"
-
-#~ msgid "Connected to phone audio"
-#~ msgstr "Inxityelelwe kwi-odiyo yefowuni"
-
-#~ msgid "Connected to phone/media audio"
-#~ msgstr "Inxityelelwe kwi-odiyo yefowuni/imidiya"
-
-#~ msgid "Change phone name"
-#~ msgstr "Tshintsha igama lefowuni"
-
-#~ msgid "Share my phone’s Internet connection with a USB-connected device."
-#~ msgstr ""
-#~ "Yabelana ngonxibelelwano lwam lwe-intanethi nesixhobo "
-#~ "esinxityelelanisiweyo se-USB."
-
-#~ msgid ""
-#~ "Allow other devices to share my phone’s Internet connection by connecting "
-#~ "via Wi-Fi."
-#~ msgstr ""
-#~ "Vumela ezinye izixhobo zabelane nonxibelelwano lwe-intanethi lwefowuni "
-#~ "yam ngokunxibelelana nge-Wi-Fi."
-
-#~ msgid ""
-#~ "The ringtone was not changed because the selected file can not be played "
-#~ "on this phone."
-#~ msgstr ""
-#~ "Ithoni yefowuni ayitshintshwanga ngenxa yefayile ekhethiweyo "
-#~ "ebingenakudlalwa kule fowuni."
-
-#~ msgid "Find My Device allows you to locate, lock or erase your phone"
-#~ msgstr ""
-#~ "UFumana isixhobo sam uyakuvumela ufumane, utshixe okanye ucime ifowuni "
-#~ "yakho"
-
-#~ msgid ""
-#~ "Find My Device allows you to locate, lock or erase your phone from a web "
-#~ "site:"
-#~ msgstr ""
-#~ "UFumana isixhobo sam uyakuvumela ukuba ufumane, utshixe okanye ucime "
-#~ "ifowuni yakho kwiwebhu:"
-
-#~ msgid "Your phone is being tracked by another device through the website."
-#~ msgstr "Ifowuni yakho ilandwa sesinye isixhobo ngewebhusayithi."
-
-#~ msgid "No devices are actively tracking your phone through the website."
-#~ msgstr "Akukho sixhobo silanda umkhondo wefowuni yakho kwiwebhusayithi."
-
-#~ msgid ""
-#~ "Turning on Enable USB storage allows another computer or device connected "
-#~ "using USB to access files on this phone."
-#~ msgstr ""
-#~ "Ukulayita ugcino lwe-USB kuvumela enye ikhompyutha okanye isixhobo "
-#~ "sinxibelelane sisebenzisa i-USB ukungena kwiifayile ezikule fowuni."
-
-#~ msgid "Reset Phone"
-#~ msgstr "Seta ifowuni ngokutsha"
-
-#~ msgid ""
-#~ "Resetting will erase all your data, including any apps you’ve purchased. "
-#~ "The phone will be restored to its factory condition. None of your "
-#~ "settings or data will be saved."
-#~ msgstr ""
-#~ "Ukuseta ngokutsha kuya kucima yonke idatha yakho, kuquka zonke ii-app "
-#~ "ozithengileyo. Ifowuni iya kubuyiselwa kwimeko yakowayo. Akukho zisetingi "
-#~ "okanye idatha yakho eya kugcinwa."
-
-#~ msgid ""
-#~ "Turning on power save mode turns off the phone’s data, Bluetooth and "
-#~ "Geolocation connections to extend battery life. You can still turn these "
-#~ "services back on manually."
-#~ msgstr ""
-#~ "Ukucima imo yokonga umbande kucima idatha yefowuni, unxibelelwano lwe-"
-#~ "Bluetooth nendawo okuyo ukuze bande ubomi bebhetri. Ungazilayita ezi "
-#~ "nkonzo ngokwakho."
 
 #~ msgctxt "search-suggestions-button"
 #~ msgid "{{search-suggestions}}"

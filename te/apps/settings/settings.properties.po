@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-11 07:17+0000\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-07-30 12:00+0000\n"
 "Last-Translator: Praveen <mail2ipn@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Pootle 2.5.1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1406721613.000000\n"
@@ -377,12 +377,6 @@ msgstr "స్వేచ్ఛా నెట్‌వర్కు లభ్యత�
 msgid "MAC address"
 msgstr "MAC చిరునామా"
 
-#. # os = OS version. For example: 2.0.
-#. # The whole string may look like this: "Firefox OS 2.0"
-#: deviceInfo_software
-msgid "{{ brandShortName }} {{ os }}"
-msgstr ""
-
 #: macUnavailable
 msgctxt "macUnavailable"
 msgid "Not available"
@@ -474,9 +468,9 @@ msgstr "WPS రద్దుచేయబడింది"
 msgid "WPS timed out"
 msgstr "WPS కాలం తీరింది"
 
-#: fullStatus-wps-failed-error
-msgid "WPS failed [{{error}}]"
-msgstr ""
+#: fullStatus-wps-failed
+msgid "WPS failed"
+msgstr "WPS విఫలమైంది"
 
 #: fullStatus-wps-overlapped
 msgid "Another WPS PBC AP was found"
@@ -523,9 +517,9 @@ msgstr "ఏదైనా"
 msgid "Cancel WPS"
 msgstr "WPSను రద్దుచేయి"
 
-#: wpsCancelFailedMessageError
-msgid "Failed to cancel WPS [{{error}}]"
-msgstr ""
+#: wpsCancelFailedMessage
+msgid "Failed to cancel WPS"
+msgstr "WPS ను రద్దుచేయుటలో విఫలమైంది"
 
 #. # Connectivity :: Call
 #: callSettings
@@ -637,9 +631,9 @@ msgstr "చేరుకోలేనప్పుడు పార్వార్�
 msgid "When unreachable"
 msgstr "చేరుకోలేనప్పుడు"
 
-#: callForwardingForwardingVoiceToNumber
-msgid "Voice calls to {{number}}"
-msgstr ""
+#: callForwardingForwardingVoiceTo
+msgid "Voice calls to"
+msgstr "దీనికి వాయిస్ కాల్స్ పార్వార్డ్​చేయి"
 
 #: callForwardingNotForwarding
 msgctxt "callForwardingNotForwarding"
@@ -859,13 +853,11 @@ msgid "{{messagingSettings}}"
 msgstr "{{messagingSettings}}"
 
 #: message-confirmation
-#, fuzzy
-msgid "Message Confirmation"
+msgid "Message confirmation"
 msgstr "సందేశ నిర్ధారణ"
 
 #: message-delivery-reports
-#, fuzzy
-msgid "Delivery Reports"
+msgid "Delivery reports"
 msgstr "చేరవేత నివేదికలు"
 
 #: message-delivery-reports-details
@@ -873,8 +865,7 @@ msgid "Request notification of delivery for each message sent"
 msgstr "పంపే ప్రతీ సందేశానికి చేరవేత గమనింపును అభ్యర్థించు"
 
 #: message-read-reports
-#, fuzzy
-msgid "Read Reports"
+msgid "Read reports"
 msgstr "చదవగానే తెలియజేయి"
 
 #: message-read-reports-details
@@ -882,13 +873,11 @@ msgid "Request read report for each message sent"
 msgstr "పంపే ప్రతీ సందేశం చదవగానే తెలియజేయమని అడుగు"
 
 #: mmsTitle
-#, fuzzy
-msgid "Multimedia Messaging (MMS)"
+msgid "Multimedia messaging (MMS)"
 msgstr "బహుళమాధ్యమ సంభాషణం (MMS)"
 
 #: auto-retrieve
-#, fuzzy
-msgid "Auto Retrieve"
+msgid "Auto retrieve"
 msgstr "స్వయంగా పొందు "
 
 #: auto-retrieve-details
@@ -912,8 +901,7 @@ msgid "Auto-configure"
 msgstr "స్వయం-స్వరూపించు"
 
 #: wapPushMessages
-#, fuzzy
-msgid "WAP Push Messages"
+msgid "WAP Push messages"
 msgstr "WAP పుష్ సందేశాలు"
 
 #: wapPush
@@ -921,31 +909,25 @@ msgid "WAP Push"
 msgstr "WAP పుష్"
 
 #: cellBroadcastMessages
-#, fuzzy
-msgid "Cell Broadcast Messages"
+msgid "Cell broadcast messages"
 msgstr "సెల్ ప్రసార సందేశాలు"
 
 #: cellBroadcast
-#, fuzzy
-msgid "Cell Broadcast"
+msgid "Cell broadcast"
 msgstr "సెల్ ప్రసారం"
-
-#: emergencyAlert
-msgid "Emergency Alert"
-msgstr ""
 
 #: messagingInformation
 msgid "Information"
 msgstr "సమాచారం"
 
 #. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
-#: messaging-SMSC
-msgid "Service Center"
-msgstr ""
+#: messagingSMSC
+msgid "SMSC"
+msgstr "SMSC"
 
-#: unknown-SMSC
-msgid "Info not available"
-msgstr ""
+#: unknownSMSC
+msgid "Unknown number"
+msgstr "తెలియని నంబరు"
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
@@ -1423,9 +1405,17 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "అనుసంధానమైంది"
 
+#: device-status-connected-phone
+msgid "Connected to phone audio"
+msgstr "ఫోను శ్రవ్యకానికి అనుసంధానమైంది"
+
 #: device-status-connected-media
 msgid "Connected to media audio"
 msgstr "మాధ్యమ శ్రవ్యకానికి అనుసంధానమైంది"
+
+#: device-status-connected-phone-media
+msgid "Connected to phone/media audio"
+msgstr "ఫోను/మాధ్యమ శ్రవ్యకానికి అనుసంధానమైంది"
 
 #: device-option-unpair
 msgid "Unpair"
@@ -1467,6 +1457,10 @@ msgstr "నా పరికరం పేరుమార్చు"
 #: unnamed-device
 msgid "Unknown device"
 msgstr "తెలియని పరికరం"
+
+#: change-phone-name
+msgid "Change phone name"
+msgstr "ఫోను పేరు మార్చు"
 
 #: change-phone-name-desc
 msgid "Change the name of your device as it appears in your computer"
@@ -1537,10 +1531,20 @@ msgstr "{{internetSharing}}"
 msgid "USB"
 msgstr "USB"
 
+#: internetSharing-usb-desc
+msgid "Share my phone’s Internet connection with a USB-connected device."
+msgstr "నా ఫోను యొక్క అంతర్జాల అనుసంధానం USB-అనుసంధానిత పరికరంతో పంచుకో."
+
 #: internetSharing-wifi
 msgctxt "internetSharing-wifi"
 msgid "Wi-Fi"
 msgstr "వై-ఫై"
+
+#: internetSharing-wifi-desc
+msgid ""
+"Allow other devices to share my phone’s Internet connection by connecting "
+"via Wi-Fi."
+msgstr "నా ఫోను యొక్క అంతర్జాల అనుసంధానాన్ని ఇతర పరికరాలు వై-ఫై ద్వారా అనుసంధానమవడానికి అనుమతించు."
 
 #: wifi-hotspot
 msgid "Wi-Fi hotspot"
@@ -1717,6 +1721,12 @@ msgstr "మాధ్యమం"
 #: savingringtone
 msgid "Saving ringtone…"
 msgstr "రింగుటోన్ను భద్రపరుస్తున్నాం…"
+
+#: unplayable-ringtone
+msgid ""
+"The ringtone was not changed because the selected file can not be played on "
+"this phone."
+msgstr "ఎంచుకున్న దస్త్రం ఈ ఫోనుపై ఆడించుట వీలుకాదు కాబట్టి రింగుటోను మార్చలేదు."
 
 #: no-ringtone-app
 msgid "We were unable to find a ringtone app to manage ringtones!"
@@ -2232,6 +2242,11 @@ msgctxt "findmydevice"
 msgid "Find My Device"
 msgstr "నా పరికరాన్ని కనిపెట్టు"
 
+#: findmydevice-signup-description
+msgid "Find My Device allows you to locate, lock or erase your phone"
+msgstr ""
+"నా పరికరాన్ని కనిపెట్టు అనే సౌలభ్యం మీ ఫోనును కనుగొనడానికి, తాళం వేయడానికి లేదా చెరిపివేయడానికి అనుమతిస్తుంది"
+
 #: findmydevice-create-account
 msgctxt "findmydevice-create-account"
 msgid "Create account or sign in"
@@ -2244,6 +2259,14 @@ msgstr "నా పరికరాన్ని కనిపెట్టు చే
 #: findmydevice-about
 msgid "About Find My Device"
 msgstr "నా పరికరం కనుగొను గురించి"
+
+#: findmydevice-settings-description
+msgid ""
+"Find My Device allows you to locate, lock or erase your phone from a web "
+"site:"
+msgstr ""
+"నా పరికరాన్ని కనిపెట్టు అనే సౌలభ్యం జాల గూడు నుండి మీ ఫోనును కనుగొనడానికి, తాళం వేయడానికి లేదా "
+"చెరిపివేయడానికి అనుమతిస్తుంది:"
 
 #: findmydevice-enable-geolocation-prompt
 msgid "Enable Geolocation?"
@@ -2261,6 +2284,14 @@ msgstr "భౌగోళికస్థానం చేతనమైవుంద�
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
 msgstr "ఈ పరికరం ప్రస్తుతం ఆఫ్‌లైనులో ఉంది. నెట్‌వర్క్‌కు అనుసంధానమయి, మరలా ప్రయత్నించండి."
+
+#: findmydevice-active-tracking
+msgid "Your phone is being tracked by another device through the website."
+msgstr "జాలగూడు గుండా మీ ఫోను వేరే పరికరంతో ట్రాక్ చేయబడుతుంది."
+
+#: findmydevice-not-tracking
+msgid "No devices are actively tracking your phone through the website."
+msgstr "జాలగూడు గుండా మీ ఫోను వేరే ఏ పరికరంతోనూ క్రియాశీలకంగా ట్రాక్ చేయబడటం లేదు."
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -2990,6 +3021,14 @@ msgstr "ఉన్నతం"
 msgid "Enable USB storage?"
 msgstr "USB నిల్వను చేతనించాలా?"
 
+#: turn-on-ums-confirm
+msgid ""
+"Turning on Enable USB storage allows another computer or device connected "
+"using USB to access files on this phone."
+msgstr ""
+"USB నిల్వ చేతనించు ఆన్ చేయడం వలన USB ద్వారా అనుసంధానమయిన వేరే కంప్యూటరు లేదా పరికరం ఈ ఫోనులోని "
+"దస్త్రాలను ప్రాప్యించుటకు అనుమతిస్తుంది."
+
 #: default-media-location
 msgid "Default media location"
 msgstr "అప్రమేయ మాధ్యమ స్థానం"
@@ -3267,14 +3306,6 @@ msgstr "టైలింగు"
 msgid "Simple tiling"
 msgstr "సింపుల్ టైలింగు"
 
-#: low-precision
-msgid "Low-precision painting"
-msgstr ""
-
-#: low-opacity
-msgid "Low-precision transparency"
-msgstr ""
-
 #: draw-tile-borders
 msgid "Draw tile borders"
 msgstr "టైల్ హద్దులను గీయి"
@@ -3451,9 +3482,22 @@ msgctxt "reset-head"
 msgid "Reset"
 msgstr "రీసెట్​చేయి"
 
+#: reset-phone
+msgid "Reset Phone"
+msgstr "ఫోన్ రీసెట్‌చేయి"
+
 #: reset-warning-title
 msgid "CAUTION"
 msgstr "హెచ్చరిక"
+
+#: reset-warning-body
+msgid ""
+"Resetting will erase all your data, including any apps you’ve purchased. The "
+"phone will be restored to its factory condition. None of your settings or "
+"data will be saved."
+msgstr ""
+"రీసెట్ చేయడం వలన మీ మొత్తం దత్తాంశం, మీరు కొనుగోలు చేసిన అనువర్తనాలతో సహా అన్నిటినీ చెరిపివేస్తుంది. ఫోను "
+"ఫ్యాక్టరీ స్థితికి పునరుద్ధరించబడుతుంది. మీ అమరికలు గానీ లేదా దత్తాంశం గానీ భద్రపరచబడదు."
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
 #: your-rights
@@ -3706,6 +3750,15 @@ msgstr "విద్యుత్ పొదుపు రీతి"
 msgid "{{level}}% battery left"
 msgstr "{{level}}% బ్యాటరీ మిగిలివున్నప్పుడు"
 
+#: powerSave-explanation
+msgid ""
+"Turning on power save mode turns off the phone’s data, Bluetooth and "
+"Geolocation connections to extend battery life. You can still turn these "
+"services back on manually."
+msgstr ""
+"విద్యుత్ పొదుపు రీతిని చేతనించడం వలన బ్యాటరీ కాలాన్ని పొడిగించుటకు ఫోను యొక్క దత్తాంశ, బ్లూటూత్ మరియు "
+"భౌగోళికస్థాన అనుసంధానాలను అచేతనిస్తుంది."
+
 #: turnOnAuto
 msgid "Turn on automatically"
 msgstr "స్వయంచాలకంగా చేతనించు"
@@ -3799,6 +3852,14 @@ msgstr "మొజిల్లాకు ప్రతిస్పందనను �
 #: performanceAndUsageData
 msgid "Performance and usage data"
 msgstr "పనితీరు మరియు వినియోగ దత్తాంశం"
+
+#: performanceAndUsageDataInfo
+msgid ""
+"Help us improve {{brandShortName}} by sharing data about your phone and the "
+"way you use it."
+msgstr ""
+"మీ ఫోను మరియు దానిని వినియోగించే తీరును గురించిన దత్తాంశాన్ని పంచుకోవడం ద్వారా {{brandShortName}} ని "
+"అభివృద్ధి చేయుటలో సాయం చేయండి."
 
 #: sharePerformanceAndUsageData
 msgid "Submit data"
@@ -4103,106 +4164,6 @@ msgstr "పంపే దత్తాంశం"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "వాహిక స్థితిని పొందు"
-
-#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
-#: is-warning-head
-msgid "{{newSetting}}"
-msgstr ""
-
-#: is-warning-message
-msgid ""
-"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
-"{{newSetting}}?"
-msgstr ""
-
-#~ msgid "WPS failed"
-#~ msgstr "WPS విఫలమైంది"
-
-#~ msgid "Failed to cancel WPS"
-#~ msgstr "WPS ను రద్దుచేయుటలో విఫలమైంది"
-
-#~ msgid "Voice calls to"
-#~ msgstr "దీనికి వాయిస్ కాల్స్ పార్వార్డ్​చేయి"
-
-#~ msgid "SMSC"
-#~ msgstr "SMSC"
-
-#~ msgid "Unknown number"
-#~ msgstr "తెలియని నంబరు"
-
-#~ msgid "Connected to phone audio"
-#~ msgstr "ఫోను శ్రవ్యకానికి అనుసంధానమైంది"
-
-#~ msgid "Connected to phone/media audio"
-#~ msgstr "ఫోను/మాధ్యమ శ్రవ్యకానికి అనుసంధానమైంది"
-
-#~ msgid "Change phone name"
-#~ msgstr "ఫోను పేరు మార్చు"
-
-#~ msgid "Share my phone’s Internet connection with a USB-connected device."
-#~ msgstr "నా ఫోను యొక్క అంతర్జాల అనుసంధానం USB-అనుసంధానిత పరికరంతో పంచుకో."
-
-#~ msgid ""
-#~ "Allow other devices to share my phone’s Internet connection by connecting "
-#~ "via Wi-Fi."
-#~ msgstr ""
-#~ "నా ఫోను యొక్క అంతర్జాల అనుసంధానాన్ని ఇతర పరికరాలు వై-ఫై ద్వారా అనుసంధానమవడానికి అనుమతించు."
-
-#~ msgid ""
-#~ "The ringtone was not changed because the selected file can not be played "
-#~ "on this phone."
-#~ msgstr "ఎంచుకున్న దస్త్రం ఈ ఫోనుపై ఆడించుట వీలుకాదు కాబట్టి రింగుటోను మార్చలేదు."
-
-#~ msgid "Find My Device allows you to locate, lock or erase your phone"
-#~ msgstr ""
-#~ "నా పరికరాన్ని కనిపెట్టు అనే సౌలభ్యం మీ ఫోనును కనుగొనడానికి, తాళం వేయడానికి లేదా చెరిపివేయడానికి "
-#~ "అనుమతిస్తుంది"
-
-#~ msgid ""
-#~ "Find My Device allows you to locate, lock or erase your phone from a web "
-#~ "site:"
-#~ msgstr ""
-#~ "నా పరికరాన్ని కనిపెట్టు అనే సౌలభ్యం జాల గూడు నుండి మీ ఫోనును కనుగొనడానికి, తాళం వేయడానికి లేదా "
-#~ "చెరిపివేయడానికి అనుమతిస్తుంది:"
-
-#~ msgid "Your phone is being tracked by another device through the website."
-#~ msgstr "జాలగూడు గుండా మీ ఫోను వేరే పరికరంతో ట్రాక్ చేయబడుతుంది."
-
-#~ msgid "No devices are actively tracking your phone through the website."
-#~ msgstr "జాలగూడు గుండా మీ ఫోను వేరే ఏ పరికరంతోనూ క్రియాశీలకంగా ట్రాక్ చేయబడటం లేదు."
-
-#~ msgid ""
-#~ "Turning on Enable USB storage allows another computer or device connected "
-#~ "using USB to access files on this phone."
-#~ msgstr ""
-#~ "USB నిల్వ చేతనించు ఆన్ చేయడం వలన USB ద్వారా అనుసంధానమయిన వేరే కంప్యూటరు లేదా పరికరం ఈ "
-#~ "ఫోనులోని దస్త్రాలను ప్రాప్యించుటకు అనుమతిస్తుంది."
-
-#~ msgid "Reset Phone"
-#~ msgstr "ఫోన్ రీసెట్‌చేయి"
-
-#~ msgid ""
-#~ "Resetting will erase all your data, including any apps you’ve purchased. "
-#~ "The phone will be restored to its factory condition. None of your "
-#~ "settings or data will be saved."
-#~ msgstr ""
-#~ "రీసెట్ చేయడం వలన మీ మొత్తం దత్తాంశం, మీరు కొనుగోలు చేసిన అనువర్తనాలతో సహా అన్నిటినీ చెరిపివేస్తుంది. "
-#~ "ఫోను ఫ్యాక్టరీ స్థితికి పునరుద్ధరించబడుతుంది. మీ అమరికలు గానీ లేదా దత్తాంశం గానీ భద్రపరచబడదు."
-
-#~ msgid ""
-#~ "Turning on power save mode turns off the phone’s data, Bluetooth and "
-#~ "Geolocation connections to extend battery life. You can still turn these "
-#~ "services back on manually."
-#~ msgstr ""
-#~ "విద్యుత్ పొదుపు రీతిని చేతనించడం వలన బ్యాటరీ కాలాన్ని పొడిగించుటకు ఫోను యొక్క దత్తాంశ, బ్లూటూత్ "
-#~ "మరియు భౌగోళికస్థాన అనుసంధానాలను అచేతనిస్తుంది."
-
-#~ msgid ""
-#~ "Help us improve {{brandShortName}} by sharing data about your phone and "
-#~ "the way you use it."
-#~ msgstr ""
-#~ "మీ ఫోను మరియు దానిని వినియోగించే తీరును గురించిన దత్తాంశాన్ని పంచుకోవడం ద్వారా "
-#~ "{{brandShortName}} ని అభివృద్ధి చేయుటలో సాయం చేయండి."
 
 #~ msgctxt "search-suggestions-button"
 #~ msgid "{{search-suggestions}}"

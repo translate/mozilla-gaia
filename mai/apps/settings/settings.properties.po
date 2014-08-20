@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-11 07:17+0000\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-06-25 11:37+0000\n"
 "Last-Translator: sadan <sadanjha@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1403696227.000000\n"
@@ -376,12 +376,6 @@ msgstr "हमरा सूचित करू जखन एकटा खुल�
 msgid "MAC address"
 msgstr "MAC पता"
 
-#. # os = OS version. For example: 2.0.
-#. # The whole string may look like this: "Firefox OS 2.0"
-#: deviceInfo_software
-msgid "{{ brandShortName }} {{ os }}"
-msgstr ""
-
 #: macUnavailable
 msgctxt "macUnavailable"
 msgid "Not available"
@@ -473,9 +467,9 @@ msgstr "WPS रद्द भए चुकल अछि"
 msgid "WPS timed out"
 msgstr "WPS क समय खत्म भए चुकल अछि"
 
-#: fullStatus-wps-failed-error
-msgid "WPS failed [{{error}}]"
-msgstr ""
+#: fullStatus-wps-failed
+msgid "WPS failed"
+msgstr "WPS बिफल"
 
 #: fullStatus-wps-overlapped
 msgid "Another WPS PBC AP was found"
@@ -522,9 +516,9 @@ msgstr "कोनो"
 msgid "Cancel WPS"
 msgstr "WPS रद्द करू"
 
-#: wpsCancelFailedMessageError
-msgid "Failed to cancel WPS [{{error}}]"
-msgstr ""
+#: wpsCancelFailedMessage
+msgid "Failed to cancel WPS"
+msgstr "WPS केँ रद्द करब मे बिफल"
 
 #. # Connectivity :: Call
 #: callSettings
@@ -638,9 +632,9 @@ msgstr "संपर्क सँ बाहर हए पर अग्रेष�
 msgid "When unreachable"
 msgstr "पहुँच क बाहर हए पर"
 
-#: callForwardingForwardingVoiceToNumber
-msgid "Voice calls to {{number}}"
-msgstr ""
+#: callForwardingForwardingVoiceTo
+msgid "Voice calls to"
+msgstr "कलेल आवाजकॉल"
 
 #: callForwardingNotForwarding
 msgctxt "callForwardingNotForwarding"
@@ -865,13 +859,11 @@ msgid "{{messagingSettings}}"
 msgstr "{{messagingSettings}}"
 
 #: message-confirmation
-#, fuzzy
-msgid "Message Confirmation"
+msgid "Message confirmation"
 msgstr "समाद पुष्टिकरण"
 
 #: message-delivery-reports
-#, fuzzy
-msgid "Delivery Reports"
+msgid "Delivery reports"
 msgstr "वितरण रपट"
 
 #: message-delivery-reports-details
@@ -879,8 +871,7 @@ msgid "Request notification of delivery for each message sent"
 msgstr "भेजल गेल प्रत्येक समाद कलेल वितरण क अधिसूचना क अनुरोध करू"
 
 #: message-read-reports
-#, fuzzy
-msgid "Read Reports"
+msgid "Read reports"
 msgstr "रिपोट पढू"
 
 #: message-read-reports-details
@@ -888,13 +879,11 @@ msgid "Request read report for each message sent"
 msgstr "भेजल गेल प्रत्येक समाद कलेल रिपोट केँ पढ़बाक अनुरोध करू"
 
 #: mmsTitle
-#, fuzzy
-msgid "Multimedia Messaging (MMS)"
+msgid "Multimedia messaging (MMS)"
 msgstr "मल्टीमीडिया समाद सेवा (MMS)"
 
 #: auto-retrieve
-#, fuzzy
-msgid "Auto Retrieve"
+msgid "Auto retrieve"
 msgstr "स्वतः वापस निकालनाइ"
 
 #: auto-retrieve-details
@@ -918,8 +907,7 @@ msgid "Auto-configure"
 msgstr "स्वविन्यस्त"
 
 #: wapPushMessages
-#, fuzzy
-msgid "WAP Push Messages"
+msgid "WAP Push messages"
 msgstr "WAP दाबू समाद"
 
 #: wapPush
@@ -927,18 +915,12 @@ msgid "WAP Push"
 msgstr "WAP पुश"
 
 #: cellBroadcastMessages
-#, fuzzy
-msgid "Cell Broadcast Messages"
+msgid "Cell broadcast messages"
 msgstr "सेल प्रसारण समाद"
 
 #: cellBroadcast
-#, fuzzy
-msgid "Cell Broadcast"
+msgid "Cell broadcast"
 msgstr "सेल ब्राडकास्ट"
-
-#: emergencyAlert
-msgid "Emergency Alert"
-msgstr ""
 
 #: messagingInformation
 #, fuzzy
@@ -946,12 +928,13 @@ msgid "Information"
 msgstr "पुष्टिकरण"
 
 #. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
-#: messaging-SMSC
-msgid "Service Center"
-msgstr ""
+#: messagingSMSC
+#, fuzzy
+msgid "SMSC"
+msgstr "MMSC"
 
-#: unknown-SMSC
-msgid "Info not available"
+#: unknownSMSC
+msgid "Unknown number"
 msgstr ""
 
 #. # Connectivity :: Cellular & Data
@@ -1431,9 +1414,17 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "कनेक्टेड"
 
+#: device-status-connected-phone
+msgid "Connected to phone audio"
+msgstr "फोन आडियो सँ कनेक्ट"
+
 #: device-status-connected-media
 msgid "Connected to media audio"
 msgstr "मीडिया आडियो सँ कनेक्ट"
+
+#: device-status-connected-phone-media
+msgid "Connected to phone/media audio"
+msgstr "फोन मीडिया आडियो सँ कनेक्ट"
 
 #: device-option-unpair
 msgid "Unpair"
@@ -1475,6 +1466,10 @@ msgstr "हमर डिवाइस नाम बदलू"
 #: unnamed-device
 msgid "Unknown device"
 msgstr "अज्ञात अओजार"
+
+#: change-phone-name
+msgid "Change phone name"
+msgstr "फोन नाम बदलू"
 
 #: change-phone-name-desc
 msgid "Change the name of your device as it appears in your computer"
@@ -1546,10 +1541,21 @@ msgstr "{{internetSharing}}"
 msgid "USB"
 msgstr "USB"
 
+#: internetSharing-usb-desc
+msgid "Share my phone’s Internet connection with a USB-connected device."
+msgstr "एकटा USB ​​सँ जुड़ल अओजार केर साथ, हमर फोन क इंटरनेट कनेक्शन साझा करू"
+
 #: internetSharing-wifi
 msgctxt "internetSharing-wifi"
 msgid "Wi-Fi"
 msgstr "वाइ-फाइ"
+
+#: internetSharing-wifi-desc
+msgid ""
+"Allow other devices to share my phone’s Internet connection by connecting "
+"via Wi-Fi."
+msgstr ""
+"आन अओजार केँ हमर फोन क इंटरनेट कनेक्शन वाइ - फाइ क माध्यम सँ जोड़ब कलेल अनुमति दिअ."
 
 #: wifi-hotspot
 msgid "Wi-Fi hotspot"
@@ -1726,6 +1732,12 @@ msgstr "मीडिया"
 #: savingringtone
 msgid "Saving ringtone…"
 msgstr "रिंगटोन सहेजल जाए रहल अछि…"
+
+#: unplayable-ringtone
+msgid ""
+"The ringtone was not changed because the selected file can not be played on "
+"this phone."
+msgstr "रिंगटोन नहि बदलल गेल छला जे एकटा चयनित फाइल एहि फोन पर नहि चलाएल जाए सकत."
 
 #: no-ringtone-app
 msgid "We were unable to find a ringtone app to manage ringtones!"
@@ -2245,6 +2257,10 @@ msgctxt "findmydevice"
 msgid "Find My Device"
 msgstr "हमर डिवाइस खोजू"
 
+#: findmydevice-signup-description
+msgid "Find My Device allows you to locate, lock or erase your phone"
+msgstr "हमर युक्ति ताकू अहाँक अपन फोनकेँ पता करबा, बन्न करब आओर मेटाबैक अनुमति दैछ"
+
 #: findmydevice-create-account
 #, fuzzy
 msgctxt "findmydevice-create-account"
@@ -2258,6 +2274,13 @@ msgstr "हमर डिवाइस सक्रिय"
 #: findmydevice-about
 msgid "About Find My Device"
 msgstr "हमर डिवाइस खोजू के संबंध मे"
+
+#: findmydevice-settings-description
+msgid ""
+"Find My Device allows you to locate, lock or erase your phone from a web "
+"site:"
+msgstr ""
+"हमर युक्ति ताकू अहाँक अपन फोनकेँ पता करबा, बन्न करब आओर मेटाबैक कोनो वेबसाइटसँ अनुमति दैछ:"
 
 #: findmydevice-enable-geolocation-prompt
 msgid "Enable Geolocation?"
@@ -2275,6 +2298,16 @@ msgstr "भू-स्थिति सक्रिय"
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
 msgstr "ई यंत्र अखनि ऑफ लाइन अछि. नेट वर्क सँ जोड़ू आ पुनः प्रयास करू "
+
+#: findmydevice-active-tracking
+msgid "Your phone is being tracked by another device through the website."
+msgstr "अहाँक फोन के वेबसाइट'क माध्यम सँ एकटा अन्य यंत्र द्वारा ट्रैक कयल जा रहल अछि. "
+
+#: findmydevice-not-tracking
+msgid "No devices are actively tracking your phone through the website."
+msgstr ""
+"वेबसाइट'क माध्यम सँ कोनो अन्य यंत्र द्वारा अहाँक फोन के सक्रिय रूप सँ ट्रैक नहि कयल जा रहल "
+"अछि. "
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -3015,6 +3048,14 @@ msgstr "उन्नत"
 msgid "Enable USB storage?"
 msgstr "USB भंडारण सक्रिय करू?"
 
+#: turn-on-ums-confirm
+msgid ""
+"Turning on Enable USB storage allows another computer or device connected "
+"using USB to access files on this phone."
+msgstr ""
+"USB भंडारण सक्रिय करू केँ चालू कएनाइ एहि फोन पर फाइल क पहुँच लिए मे यूएसबी क उपयोग सँ "
+"दोसर कंप्यूटर अथवा युक्ति केँ स्वीकृत देत अछि."
+
 #: default-media-location
 msgid "Default media location"
 msgstr "पूर्वनिर्धारित मीडिया स्थान"
@@ -3293,14 +3334,6 @@ msgstr "टिलिंग"
 msgid "Simple tiling"
 msgstr "सरल टिलिंग"
 
-#: low-precision
-msgid "Low-precision painting"
-msgstr ""
-
-#: low-opacity
-msgid "Low-precision transparency"
-msgstr ""
-
 #: draw-tile-borders
 msgid "Draw tile borders"
 msgstr "शीर्षक बॉर्डर्स आरेखित करू"
@@ -3478,9 +3511,23 @@ msgctxt "reset-head"
 msgid "Reset"
 msgstr "फेर सेट करू "
 
+#: reset-phone
+msgid "Reset Phone"
+msgstr "फोन रीसेट करू"
+
 #: reset-warning-title
 msgid "CAUTION"
 msgstr "सावधानी"
+
+#: reset-warning-body
+msgid ""
+"Resetting will erase all your data, including any apps you’ve purchased. The "
+"phone will be restored to its factory condition. None of your settings or "
+"data will be saved."
+msgstr ""
+"रिसेट कएनाइ अहाँक आँकड़े केँ मेटाय देताह जकरामे ओ सारे एप्प सेहो सामिल अछि जकरा अहाँ खरीदने "
+"छी. फोन अपन कारखाने सँ बनल हालत मे बहाल भए जएताह. अहाँक कोनो सेटिंग अथवा डेटा सँ "
+"सहेजल नहि जएताह."
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
 #: your-rights
@@ -3737,6 +3784,16 @@ msgstr "पावर केँ सहेजू मोड"
 msgid "{{level}}% battery left"
 msgstr "{{level}}% बैटरी शेष अछि"
 
+#: powerSave-explanation
+msgid ""
+"Turning on power save mode turns off the phone’s data, Bluetooth and "
+"Geolocation connections to extend battery life. You can still turn these "
+"services back on manually."
+msgstr ""
+"बैटरी जीवन क विस्तार करब कलेल पावर केँ सहेजू मोड केँ चालू करब सँ फोन क डेटा, ब्लूटूथ आओर "
+"जिओलोकेशन कनेक्शन बन्न भ जाइत अछि बदैल जाइत अछि. अहाँ क अखन सेहो एहि सेवा केँ वापस "
+"मैन्युअल रूप सँ चालू कए सकैत अछि."
+
 #: turnOnAuto
 msgid "Turn on automatically"
 msgstr "स्वतः चालू करू"
@@ -3830,6 +3887,12 @@ msgstr "मोजिला प्रतिक्रिया पठाबू"
 
 #: performanceAndUsageData
 msgid "Performance and usage data"
+msgstr ""
+
+#: performanceAndUsageDataInfo
+msgid ""
+"Help us improve {{brandShortName}} by sharing data about your phone and the "
+"way you use it."
 msgstr ""
 
 #: sharePerformanceAndUsageData
@@ -4137,100 +4200,6 @@ msgstr "डाटा पठाबू"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "माध्यम क स्थिति लिअ"
-
-#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
-#: is-warning-head
-msgid "{{newSetting}}"
-msgstr ""
-
-#: is-warning-message
-msgid ""
-"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
-"{{newSetting}}?"
-msgstr ""
-
-#~ msgid "WPS failed"
-#~ msgstr "WPS बिफल"
-
-#~ msgid "Failed to cancel WPS"
-#~ msgstr "WPS केँ रद्द करब मे बिफल"
-
-#~ msgid "Voice calls to"
-#~ msgstr "कलेल आवाजकॉल"
-
-#, fuzzy
-#~ msgid "SMSC"
-#~ msgstr "MMSC"
-
-#~ msgid "Connected to phone audio"
-#~ msgstr "फोन आडियो सँ कनेक्ट"
-
-#~ msgid "Connected to phone/media audio"
-#~ msgstr "फोन मीडिया आडियो सँ कनेक्ट"
-
-#~ msgid "Change phone name"
-#~ msgstr "फोन नाम बदलू"
-
-#~ msgid "Share my phone’s Internet connection with a USB-connected device."
-#~ msgstr "एकटा USB ​​सँ जुड़ल अओजार केर साथ, हमर फोन क इंटरनेट कनेक्शन साझा करू"
-
-#~ msgid ""
-#~ "Allow other devices to share my phone’s Internet connection by connecting "
-#~ "via Wi-Fi."
-#~ msgstr ""
-#~ "आन अओजार केँ हमर फोन क इंटरनेट कनेक्शन वाइ - फाइ क माध्यम सँ जोड़ब कलेल अनुमति दिअ."
-
-#~ msgid ""
-#~ "The ringtone was not changed because the selected file can not be played "
-#~ "on this phone."
-#~ msgstr ""
-#~ "रिंगटोन नहि बदलल गेल छला जे एकटा चयनित फाइल एहि फोन पर नहि चलाएल जाए सकत."
-
-#~ msgid "Find My Device allows you to locate, lock or erase your phone"
-#~ msgstr "हमर युक्ति ताकू अहाँक अपन फोनकेँ पता करबा, बन्न करब आओर मेटाबैक अनुमति दैछ"
-
-#~ msgid ""
-#~ "Find My Device allows you to locate, lock or erase your phone from a web "
-#~ "site:"
-#~ msgstr ""
-#~ "हमर युक्ति ताकू अहाँक अपन फोनकेँ पता करबा, बन्न करब आओर मेटाबैक कोनो वेबसाइटसँ अनुमति "
-#~ "दैछ:"
-
-#~ msgid "Your phone is being tracked by another device through the website."
-#~ msgstr "अहाँक फोन के वेबसाइट'क माध्यम सँ एकटा अन्य यंत्र द्वारा ट्रैक कयल जा रहल अछि. "
-
-#~ msgid "No devices are actively tracking your phone through the website."
-#~ msgstr ""
-#~ "वेबसाइट'क माध्यम सँ कोनो अन्य यंत्र द्वारा अहाँक फोन के सक्रिय रूप सँ ट्रैक नहि कयल जा "
-#~ "रहल अछि. "
-
-#~ msgid ""
-#~ "Turning on Enable USB storage allows another computer or device connected "
-#~ "using USB to access files on this phone."
-#~ msgstr ""
-#~ "USB भंडारण सक्रिय करू केँ चालू कएनाइ एहि फोन पर फाइल क पहुँच लिए मे यूएसबी क उपयोग "
-#~ "सँ दोसर कंप्यूटर अथवा युक्ति केँ स्वीकृत देत अछि."
-
-#~ msgid "Reset Phone"
-#~ msgstr "फोन रीसेट करू"
-
-#~ msgid ""
-#~ "Resetting will erase all your data, including any apps you’ve purchased. "
-#~ "The phone will be restored to its factory condition. None of your "
-#~ "settings or data will be saved."
-#~ msgstr ""
-#~ "रिसेट कएनाइ अहाँक आँकड़े केँ मेटाय देताह जकरामे ओ सारे एप्प सेहो सामिल अछि जकरा अहाँ "
-#~ "खरीदने छी. फोन अपन कारखाने सँ बनल हालत मे बहाल भए जएताह. अहाँक कोनो सेटिंग अथवा "
-#~ "डेटा सँ सहेजल नहि जएताह."
-
-#~ msgid ""
-#~ "Turning on power save mode turns off the phone’s data, Bluetooth and "
-#~ "Geolocation connections to extend battery life. You can still turn these "
-#~ "services back on manually."
-#~ msgstr ""
-#~ "बैटरी जीवन क विस्तार करब कलेल पावर केँ सहेजू मोड केँ चालू करब सँ फोन क डेटा, ब्लूटूथ आओर "
-#~ "जिओलोकेशन कनेक्शन बन्न भ जाइत अछि बदैल जाइत अछि. अहाँ क अखन सेहो एहि सेवा केँ वापस "
-#~ "मैन्युअल रूप सँ चालू कए सकैत अछि."
 
 #~ msgctxt "search-suggestions-button"
 #~ msgid "{{search-suggestions}}"

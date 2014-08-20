@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-11 07:17+0000\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-02-19 07:42+0000\n"
 "Last-Translator: Trung <ndtrung4419@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1392795766.000000\n"
@@ -381,12 +381,6 @@ msgstr "Thông báo với tôi khi có thể kết nối mạng"
 msgid "MAC address"
 msgstr "Địa chỉ MAC"
 
-#. # os = OS version. For example: 2.0.
-#. # The whole string may look like this: "Firefox OS 2.0"
-#: deviceInfo_software
-msgid "{{ brandShortName }} {{ os }}"
-msgstr ""
-
 #: macUnavailable
 msgctxt "macUnavailable"
 msgid "Not available"
@@ -478,9 +472,9 @@ msgstr "Đã hoãn WPS"
 msgid "WPS timed out"
 msgstr "Hết hạn chờ WPS"
 
-#: fullStatus-wps-failed-error
-msgid "WPS failed [{{error}}]"
-msgstr ""
+#: fullStatus-wps-failed
+msgid "WPS failed"
+msgstr "Lỗi WPS"
 
 #: fullStatus-wps-overlapped
 msgid "Another WPS PBC AP was found"
@@ -528,9 +522,9 @@ msgstr "Bất kỳ"
 msgid "Cancel WPS"
 msgstr "Hủy WPS"
 
-#: wpsCancelFailedMessageError
-msgid "Failed to cancel WPS [{{error}}]"
-msgstr ""
+#: wpsCancelFailedMessage
+msgid "Failed to cancel WPS"
+msgstr "Không thể hủy WPS"
 
 #. # Connectivity :: Call
 #: callSettings
@@ -644,9 +638,9 @@ msgstr "Chuyển tiếp khi không liên lạc được"
 msgid "When unreachable"
 msgstr "Khi k. l.lạc được"
 
-#: callForwardingForwardingVoiceToNumber
-msgid "Voice calls to {{number}}"
-msgstr ""
+#: callForwardingForwardingVoiceTo
+msgid "Voice calls to"
+msgstr "Khi có cuộc gọi tới"
 
 #: callForwardingNotForwarding
 msgctxt "callForwardingNotForwarding"
@@ -871,13 +865,11 @@ msgid "{{messagingSettings}}"
 msgstr "Thiết lập nhắn tin"
 
 #: message-confirmation
-#, fuzzy
-msgid "Message Confirmation"
+msgid "Message confirmation"
 msgstr "Xác nhận tin nhắn"
 
 #: message-delivery-reports
-#, fuzzy
-msgid "Delivery Reports"
+msgid "Delivery reports"
 msgstr "Báo cáo gửi đi"
 
 #: message-delivery-reports-details
@@ -885,7 +877,7 @@ msgid "Request notification of delivery for each message sent"
 msgstr "Yêu cầu thông báo tình trạng gửi đi của mỗi tin nhắn"
 
 #: message-read-reports
-msgid "Read Reports"
+msgid "Read reports"
 msgstr ""
 
 #: message-read-reports-details
@@ -893,13 +885,11 @@ msgid "Request read report for each message sent"
 msgstr ""
 
 #: mmsTitle
-#, fuzzy
-msgid "Multimedia Messaging (MMS)"
+msgid "Multimedia messaging (MMS)"
 msgstr "Tin nhắn đa phương tiện (MMS)"
 
 #: auto-retrieve
-#, fuzzy
-msgid "Auto Retrieve"
+msgid "Auto retrieve"
 msgstr "Tự động nhận"
 
 #: auto-retrieve-details
@@ -923,8 +913,7 @@ msgid "Auto-configure"
 msgstr "Tự thiết lập"
 
 #: wapPushMessages
-#, fuzzy
-msgid "WAP Push Messages"
+msgid "WAP Push messages"
 msgstr "Tin nhắn WAP Push"
 
 #: wapPush
@@ -932,18 +921,12 @@ msgid "WAP Push"
 msgstr "WAP Push"
 
 #: cellBroadcastMessages
-#, fuzzy
-msgid "Cell Broadcast Messages"
+msgid "Cell broadcast messages"
 msgstr "Tin nhắn quảng bá"
 
 #: cellBroadcast
-#, fuzzy
-msgid "Cell Broadcast"
+msgid "Cell broadcast"
 msgstr "Tin quảng bá"
-
-#: emergencyAlert
-msgid "Emergency Alert"
-msgstr ""
 
 #: messagingInformation
 #, fuzzy
@@ -951,12 +934,13 @@ msgid "Information"
 msgstr "Xác nhận"
 
 #. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
-#: messaging-SMSC
-msgid "Service Center"
-msgstr ""
+#: messagingSMSC
+#, fuzzy
+msgid "SMSC"
+msgstr "MMSC"
 
-#: unknown-SMSC
-msgid "Info not available"
+#: unknownSMSC
+msgid "Unknown number"
 msgstr ""
 
 #. # Connectivity :: Cellular & Data
@@ -1443,8 +1427,16 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "Đã kết nối"
 
+#: device-status-connected-phone
+msgid "Connected to phone audio"
+msgstr ""
+
 #: device-status-connected-media
 msgid "Connected to media audio"
+msgstr ""
+
+#: device-status-connected-phone-media
+msgid "Connected to phone/media audio"
 msgstr ""
 
 #: device-option-unpair
@@ -1488,6 +1480,10 @@ msgstr "Đổi tên thiết bị này"
 #: unnamed-device
 msgid "Unknown device"
 msgstr "Thiết bị không rõ"
+
+#: change-phone-name
+msgid "Change phone name"
+msgstr "Đổi tên điện thoại"
 
 #: change-phone-name-desc
 msgid "Change the name of your device as it appears in your computer"
@@ -1559,10 +1555,22 @@ msgstr "{{internetSharing}}"
 msgid "USB"
 msgstr "USB"
 
+#: internetSharing-usb-desc
+msgid "Share my phone’s Internet connection with a USB-connected device."
+msgstr ""
+"Chia sẻ kết nối Internet trên điện thoại của tôi với một thiết bị qua USB."
+
 #: internetSharing-wifi
 msgctxt "internetSharing-wifi"
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
+
+#: internetSharing-wifi-desc
+msgid ""
+"Allow other devices to share my phone’s Internet connection by connecting "
+"via Wi-Fi."
+msgstr ""
+"Cho phép các thiết bị khác sử dụng kết nối Internet của tôi thông qua Wi-Fi."
 
 #: wifi-hotspot
 msgid "Wi-Fi hotspot"
@@ -1741,6 +1749,13 @@ msgstr ""
 #: savingringtone
 msgid "Saving ringtone…"
 msgstr "Đang lưu nhạc chuông…"
+
+#: unplayable-ringtone
+msgid ""
+"The ringtone was not changed because the selected file can not be played on "
+"this phone."
+msgstr ""
+"Không thay đổi nhạc chuông vì không thể phát tập tin được chọn trên máy này."
 
 #: no-ringtone-app
 msgid "We were unable to find a ringtone app to manage ringtones!"
@@ -2258,6 +2273,10 @@ msgctxt "findmydevice"
 msgid "Find My Device"
 msgstr ""
 
+#: findmydevice-signup-description
+msgid "Find My Device allows you to locate, lock or erase your phone"
+msgstr ""
+
 #: findmydevice-create-account
 msgctxt "findmydevice-create-account"
 msgid "Create account or sign in"
@@ -2269,6 +2288,12 @@ msgstr ""
 
 #: findmydevice-about
 msgid "About Find My Device"
+msgstr ""
+
+#: findmydevice-settings-description
+msgid ""
+"Find My Device allows you to locate, lock or erase your phone from a web "
+"site:"
 msgstr ""
 
 #: findmydevice-enable-geolocation-prompt
@@ -2286,6 +2311,14 @@ msgstr ""
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
+msgstr ""
+
+#: findmydevice-active-tracking
+msgid "Your phone is being tracked by another device through the website."
+msgstr ""
+
+#: findmydevice-not-tracking
+msgid "No devices are actively tracking your phone through the website."
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3027,6 +3060,14 @@ msgstr "Nâng cao"
 msgid "Enable USB storage?"
 msgstr "Cho phép lưu trữ USB?"
 
+#: turn-on-ums-confirm
+msgid ""
+"Turning on Enable USB storage allows another computer or device connected "
+"using USB to access files on this phone."
+msgstr ""
+"Khi cho phép lưu trữ USB thì máy tính hoặc các thiết bị kết nối qua USB có "
+"thể truy cập các tập tin trên điện thoại này."
+
 #: default-media-location
 msgid "Default media location"
 msgstr "Nơi chứa dữ liệu đa phương tiện mặc định"
@@ -3308,14 +3349,6 @@ msgstr ""
 msgid "Simple tiling"
 msgstr ""
 
-#: low-precision
-msgid "Low-precision painting"
-msgstr ""
-
-#: low-opacity
-msgid "Low-precision transparency"
-msgstr ""
-
 #: draw-tile-borders
 msgid "Draw tile borders"
 msgstr ""
@@ -3496,9 +3529,23 @@ msgctxt "reset-head"
 msgid "Reset"
 msgstr "Đặt lại"
 
+#: reset-phone
+msgid "Reset Phone"
+msgstr "Reset lại điện thoại"
+
 #: reset-warning-title
 msgid "CAUTION"
 msgstr "CẨN THẬN"
+
+#: reset-warning-body
+msgid ""
+"Resetting will erase all your data, including any apps you’ve purchased. The "
+"phone will be restored to its factory condition. None of your settings or "
+"data will be saved."
+msgstr ""
+"Thao tác này sẽ xóa sạch mọi dữ liệu của bạn, bao gồm cả các ứng dụng đã "
+"mua. Điện thoại sẽ được phục hồi lại trạng thái vừa xuất xưởng. Không dữ "
+"liệu hay thiết lập nào của bạn sẽ được lưu lại hết."
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
 #: your-rights
@@ -3760,6 +3807,15 @@ msgstr "Chế độ tiết kiệm điện"
 msgid "{{level}}% battery left"
 msgstr "Khi còn {{level}}% pin"
 
+#: powerSave-explanation
+msgid ""
+"Turning on power save mode turns off the phone’s data, Bluetooth and "
+"Geolocation connections to extend battery life. You can still turn these "
+"services back on manually."
+msgstr ""
+"Bật chế độ tiết kiệm pin sẽ tắt kết nối dữ liệu, Bluetooth và GPS để tăng "
+"thêm thời lượng pin. Bạn vẫn có thể tự bật lại các dịch vụ này."
+
 #: turnOnAuto
 msgid "Turn on automatically"
 msgstr "Bật tự động"
@@ -3853,6 +3909,12 @@ msgstr "Gửi phản hồi cho Mozilla"
 
 #: performanceAndUsageData
 msgid "Performance and usage data"
+msgstr ""
+
+#: performanceAndUsageDataInfo
+msgid ""
+"Help us improve {{brandShortName}} by sharing data about your phone and the "
+"way you use it."
 msgstr ""
 
 #: sharePerformanceAndUsageData
@@ -4160,78 +4222,6 @@ msgstr ""
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr ""
-
-#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
-#: is-warning-head
-msgid "{{newSetting}}"
-msgstr ""
-
-#: is-warning-message
-msgid ""
-"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
-"{{newSetting}}?"
-msgstr ""
-
-#~ msgid "WPS failed"
-#~ msgstr "Lỗi WPS"
-
-#~ msgid "Failed to cancel WPS"
-#~ msgstr "Không thể hủy WPS"
-
-#~ msgid "Voice calls to"
-#~ msgstr "Khi có cuộc gọi tới"
-
-#, fuzzy
-#~ msgid "SMSC"
-#~ msgstr "MMSC"
-
-#~ msgid "Change phone name"
-#~ msgstr "Đổi tên điện thoại"
-
-#~ msgid "Share my phone’s Internet connection with a USB-connected device."
-#~ msgstr ""
-#~ "Chia sẻ kết nối Internet trên điện thoại của tôi với một thiết bị qua USB."
-
-#~ msgid ""
-#~ "Allow other devices to share my phone’s Internet connection by connecting "
-#~ "via Wi-Fi."
-#~ msgstr ""
-#~ "Cho phép các thiết bị khác sử dụng kết nối Internet của tôi thông qua Wi-"
-#~ "Fi."
-
-#~ msgid ""
-#~ "The ringtone was not changed because the selected file can not be played "
-#~ "on this phone."
-#~ msgstr ""
-#~ "Không thay đổi nhạc chuông vì không thể phát tập tin được chọn trên máy "
-#~ "này."
-
-#~ msgid ""
-#~ "Turning on Enable USB storage allows another computer or device connected "
-#~ "using USB to access files on this phone."
-#~ msgstr ""
-#~ "Khi cho phép lưu trữ USB thì máy tính hoặc các thiết bị kết nối qua USB "
-#~ "có thể truy cập các tập tin trên điện thoại này."
-
-#~ msgid "Reset Phone"
-#~ msgstr "Reset lại điện thoại"
-
-#~ msgid ""
-#~ "Resetting will erase all your data, including any apps you’ve purchased. "
-#~ "The phone will be restored to its factory condition. None of your "
-#~ "settings or data will be saved."
-#~ msgstr ""
-#~ "Thao tác này sẽ xóa sạch mọi dữ liệu của bạn, bao gồm cả các ứng dụng đã "
-#~ "mua. Điện thoại sẽ được phục hồi lại trạng thái vừa xuất xưởng. Không dữ "
-#~ "liệu hay thiết lập nào của bạn sẽ được lưu lại hết."
-
-#~ msgid ""
-#~ "Turning on power save mode turns off the phone’s data, Bluetooth and "
-#~ "Geolocation connections to extend battery life. You can still turn these "
-#~ "services back on manually."
-#~ msgstr ""
-#~ "Bật chế độ tiết kiệm pin sẽ tắt kết nối dữ liệu, Bluetooth và GPS để tăng "
-#~ "thêm thời lượng pin. Bạn vẫn có thể tự bật lại các dịch vụ này."
 
 #~ msgid "Installed input methods"
 #~ msgstr "Các kiểu gõ đã cài"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-11 07:17+0000\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2013-08-22 14:09+0000\n"
 "Last-Translator: Chris <edresources@bickersc.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1377180550.000000\n"
@@ -380,12 +380,6 @@ msgstr "Fa'aso'oso'o a'u i le taimi avanoa se felavasa'iga"
 msgid "MAC address"
 msgstr "MAC afio'aga"
 
-#. # os = OS version. For example: 2.0.
-#. # The whole string may look like this: "Firefox OS 2.0"
-#: deviceInfo_software
-msgid "{{ brandShortName }} {{ os }}"
-msgstr ""
-
 #: macUnavailable
 #, fuzzy
 msgctxt "macUnavailable"
@@ -478,9 +472,9 @@ msgstr "WPS e sōloia."
 msgid "WPS timed out"
 msgstr "'Uma taimi le WPS"
 
-#: fullStatus-wps-failed-error
-msgid "WPS failed [{{error}}]"
-msgstr ""
+#: fullStatus-wps-failed
+msgid "WPS failed"
+msgstr "E lē taunu'u le WPS"
 
 #: fullStatus-wps-overlapped
 msgid "Another WPS PBC AP was found"
@@ -528,9 +522,9 @@ msgstr ""
 msgid "Cancel WPS"
 msgstr "Sōloia WPS"
 
-#: wpsCancelFailedMessageError
-msgid "Failed to cancel WPS [{{error}}]"
-msgstr ""
+#: wpsCancelFailedMessage
+msgid "Failed to cancel WPS"
+msgstr "E lē taunu'u sōloia le WPS"
 
 #. # Connectivity :: Call
 #: callSettings
@@ -642,8 +636,8 @@ msgstr ""
 msgid "When unreachable"
 msgstr ""
 
-#: callForwardingForwardingVoiceToNumber
-msgid "Voice calls to {{number}}"
+#: callForwardingForwardingVoiceTo
+msgid "Voice calls to"
 msgstr ""
 
 #: callForwardingNotForwarding
@@ -864,11 +858,11 @@ msgid "{{messagingSettings}}"
 msgstr ""
 
 #: message-confirmation
-msgid "Message Confirmation"
+msgid "Message confirmation"
 msgstr ""
 
 #: message-delivery-reports
-msgid "Delivery Reports"
+msgid "Delivery reports"
 msgstr ""
 
 #: message-delivery-reports-details
@@ -876,7 +870,7 @@ msgid "Request notification of delivery for each message sent"
 msgstr ""
 
 #: message-read-reports
-msgid "Read Reports"
+msgid "Read reports"
 msgstr ""
 
 #: message-read-reports-details
@@ -884,11 +878,11 @@ msgid "Request read report for each message sent"
 msgstr ""
 
 #: mmsTitle
-msgid "Multimedia Messaging (MMS)"
+msgid "Multimedia messaging (MMS)"
 msgstr ""
 
 #: auto-retrieve
-msgid "Auto Retrieve"
+msgid "Auto retrieve"
 msgstr ""
 
 #: auto-retrieve-details
@@ -912,7 +906,7 @@ msgid "Auto-configure"
 msgstr "Fa'atonutonu-'otometi"
 
 #: wapPushMessages
-msgid "WAP Push Messages"
+msgid "WAP Push messages"
 msgstr ""
 
 #: wapPush
@@ -920,15 +914,11 @@ msgid "WAP Push"
 msgstr ""
 
 #: cellBroadcastMessages
-msgid "Cell Broadcast Messages"
+msgid "Cell broadcast messages"
 msgstr ""
 
 #: cellBroadcast
-msgid "Cell Broadcast"
-msgstr ""
-
-#: emergencyAlert
-msgid "Emergency Alert"
+msgid "Cell broadcast"
 msgstr ""
 
 #: messagingInformation
@@ -936,12 +926,13 @@ msgid "Information"
 msgstr ""
 
 #. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
-#: messaging-SMSC
-msgid "Service Center"
-msgstr ""
+#: messagingSMSC
+#, fuzzy
+msgid "SMSC"
+msgstr "MMSC"
 
-#: unknown-SMSC
-msgid "Info not available"
+#: unknownSMSC
+msgid "Unknown number"
 msgstr ""
 
 #. # Connectivity :: Cellular & Data
@@ -1423,8 +1414,16 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "Feso'ota'iga"
 
+#: device-status-connected-phone
+msgid "Connected to phone audio"
+msgstr ""
+
 #: device-status-connected-media
 msgid "Connected to media audio"
+msgstr ""
+
+#: device-status-connected-phone-media
+msgid "Connected to phone/media audio"
 msgstr ""
 
 #: device-option-unpair
@@ -1467,6 +1466,10 @@ msgstr "Toe-fa'aigoa lo'u togafiti"
 #: unnamed-device
 msgid "Unknown device"
 msgstr "Togafiti e lē iloa"
+
+#: change-phone-name
+msgid "Change phone name"
+msgstr "Sui le igoa o le telefoni"
 
 #: change-phone-name-desc
 msgid "Change the name of your device as it appears in your computer"
@@ -1535,10 +1538,20 @@ msgstr ""
 msgid "USB"
 msgstr "USB"
 
+#: internetSharing-usb-desc
+msgid "Share my phone’s Internet connection with a USB-connected device."
+msgstr ""
+
 #: internetSharing-wifi
 msgctxt "internetSharing-wifi"
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
+
+#: internetSharing-wifi-desc
+msgid ""
+"Allow other devices to share my phone’s Internet connection by connecting "
+"via Wi-Fi."
+msgstr ""
 
 #: wifi-hotspot
 msgid "Wi-Fi hotspot"
@@ -1716,6 +1729,12 @@ msgstr ""
 
 #: savingringtone
 msgid "Saving ringtone…"
+msgstr ""
+
+#: unplayable-ringtone
+msgid ""
+"The ringtone was not changed because the selected file can not be played on "
+"this phone."
 msgstr ""
 
 #: no-ringtone-app
@@ -2230,6 +2249,10 @@ msgctxt "findmydevice"
 msgid "Find My Device"
 msgstr ""
 
+#: findmydevice-signup-description
+msgid "Find My Device allows you to locate, lock or erase your phone"
+msgstr ""
+
 #: findmydevice-create-account
 msgctxt "findmydevice-create-account"
 msgid "Create account or sign in"
@@ -2241,6 +2264,12 @@ msgstr ""
 
 #: findmydevice-about
 msgid "About Find My Device"
+msgstr ""
+
+#: findmydevice-settings-description
+msgid ""
+"Find My Device allows you to locate, lock or erase your phone from a web "
+"site:"
 msgstr ""
 
 #: findmydevice-enable-geolocation-prompt
@@ -2258,6 +2287,14 @@ msgstr ""
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
+msgstr ""
+
+#: findmydevice-active-tracking
+msgid "Your phone is being tracked by another device through the website."
+msgstr ""
+
+#: findmydevice-not-tracking
+msgid "No devices are actively tracking your phone through the website."
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -2972,6 +3009,12 @@ msgstr "Poto"
 msgid "Enable USB storage?"
 msgstr ""
 
+#: turn-on-ums-confirm
+msgid ""
+"Turning on Enable USB storage allows another computer or device connected "
+"using USB to access files on this phone."
+msgstr ""
+
 #: default-media-location
 msgid "Default media location"
 msgstr ""
@@ -3247,14 +3290,6 @@ msgstr ""
 msgid "Simple tiling"
 msgstr ""
 
-#: low-precision
-msgid "Low-precision painting"
-msgstr ""
-
-#: low-opacity
-msgid "Low-precision transparency"
-msgstr ""
-
 #: draw-tile-borders
 msgid "Draw tile borders"
 msgstr ""
@@ -3430,8 +3465,19 @@ msgctxt "reset-head"
 msgid "Reset"
 msgstr ""
 
+#: reset-phone
+msgid "Reset Phone"
+msgstr "Toe-seti telefoni"
+
 #: reset-warning-title
 msgid "CAUTION"
+msgstr ""
+
+#: reset-warning-body
+msgid ""
+"Resetting will erase all your data, including any apps you’ve purchased. The "
+"phone will be restored to its factory condition. None of your settings or "
+"data will be saved."
 msgstr ""
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
@@ -3669,6 +3715,13 @@ msgstr ""
 msgid "{{level}}% battery left"
 msgstr ""
 
+#: powerSave-explanation
+msgid ""
+"Turning on power save mode turns off the phone’s data, Bluetooth and "
+"Geolocation connections to extend battery life. You can still turn these "
+"services back on manually."
+msgstr ""
+
 #: turnOnAuto
 msgid "Turn on automatically"
 msgstr "Kī 'otometi"
@@ -3757,6 +3810,12 @@ msgstr ""
 
 #: performanceAndUsageData
 msgid "Performance and usage data"
+msgstr ""
+
+#: performanceAndUsageDataInfo
+msgid ""
+"Help us improve {{brandShortName}} by sharing data about your phone and the "
+"way you use it."
 msgstr ""
 
 #: sharePerformanceAndUsageData
@@ -4038,33 +4097,6 @@ msgstr ""
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr ""
-
-#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
-#: is-warning-head
-msgid "{{newSetting}}"
-msgstr ""
-
-#: is-warning-message
-msgid ""
-"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
-"{{newSetting}}?"
-msgstr ""
-
-#~ msgid "WPS failed"
-#~ msgstr "E lē taunu'u le WPS"
-
-#~ msgid "Failed to cancel WPS"
-#~ msgstr "E lē taunu'u sōloia le WPS"
-
-#, fuzzy
-#~ msgid "SMSC"
-#~ msgstr "MMSC"
-
-#~ msgid "Change phone name"
-#~ msgstr "Sui le igoa o le telefoni"
-
-#~ msgid "Reset Phone"
-#~ msgstr "Toe-seti telefoni"
 
 #~ msgid "After 5 seconds"
 #~ msgstr "Pe 'ā 'uma le 5 setone"

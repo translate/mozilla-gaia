@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-11 07:17+0000\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-04-26 13:37+0000\n"
 "Last-Translator: Raul <raul.malea@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1398519444.000000\n"
@@ -381,12 +381,6 @@ msgstr "Notifică-mă când o rețea deschisă e disponibilă"
 msgid "MAC address"
 msgstr "Adresă MAC"
 
-#. # os = OS version. For example: 2.0.
-#. # The whole string may look like this: "Firefox OS 2.0"
-#: deviceInfo_software
-msgid "{{ brandShortName }} {{ os }}"
-msgstr ""
-
 #: macUnavailable
 msgctxt "macUnavailable"
 msgid "Not available"
@@ -479,9 +473,9 @@ msgstr "WPS a fost anulat"
 msgid "WPS timed out"
 msgstr "WPS a expirat."
 
-#: fullStatus-wps-failed-error
-msgid "WPS failed [{{error}}]"
-msgstr ""
+#: fullStatus-wps-failed
+msgid "WPS failed"
+msgstr "WPS a eșuat"
 
 #: fullStatus-wps-overlapped
 msgid "Another WPS PBC AP was found"
@@ -528,9 +522,9 @@ msgstr "Oricare"
 msgid "Cancel WPS"
 msgstr "Anulează WPS"
 
-#: wpsCancelFailedMessageError
-msgid "Failed to cancel WPS [{{error}}]"
-msgstr ""
+#: wpsCancelFailedMessage
+msgid "Failed to cancel WPS"
+msgstr "Eșec la anularea WPS"
 
 #. # Connectivity :: Call
 #: callSettings
@@ -644,9 +638,9 @@ msgstr "Redirect. când e inaccesibil"
 msgid "When unreachable"
 msgstr "Când e inaccesibil"
 
-#: callForwardingForwardingVoiceToNumber
-msgid "Voice calls to {{number}}"
-msgstr ""
+#: callForwardingForwardingVoiceTo
+msgid "Voice calls to"
+msgstr "Apeluri vocale către"
 
 #: callForwardingNotForwarding
 msgctxt "callForwardingNotForwarding"
@@ -876,13 +870,11 @@ msgid "{{messagingSettings}}"
 msgstr "{{messagingSettings}}"
 
 #: message-confirmation
-#, fuzzy
-msgid "Message Confirmation"
+msgid "Message confirmation"
 msgstr "Confirmare de mesaj"
 
 #: message-delivery-reports
-#, fuzzy
-msgid "Delivery Reports"
+msgid "Delivery reports"
 msgstr "Rapoarte de livrare"
 
 #: message-delivery-reports-details
@@ -890,8 +882,7 @@ msgid "Request notification of delivery for each message sent"
 msgstr "Solicită notificare de livrare pentru fiecare mesaj text trimis"
 
 #: message-read-reports
-#, fuzzy
-msgid "Read Reports"
+msgid "Read reports"
 msgstr "Citește rapoartele"
 
 #: message-read-reports-details
@@ -899,13 +890,11 @@ msgid "Request read report for each message sent"
 msgstr "Solicită raport de citire pentru fiecare mesaj trimis"
 
 #: mmsTitle
-#, fuzzy
-msgid "Multimedia Messaging (MMS)"
+msgid "Multimedia messaging (MMS)"
 msgstr "Mesagerie multimedia (MMS)"
 
 #: auto-retrieve
-#, fuzzy
-msgid "Auto Retrieve"
+msgid "Auto retrieve"
 msgstr "Preluare automată"
 
 #: auto-retrieve-details
@@ -929,8 +918,7 @@ msgid "Auto-configure"
 msgstr "Autoconfigurare"
 
 #: wapPushMessages
-#, fuzzy
-msgid "WAP Push Messages"
+msgid "WAP Push messages"
 msgstr "Mesaje WAP Push"
 
 #: wapPush
@@ -938,18 +926,12 @@ msgid "WAP Push"
 msgstr "WAP Push"
 
 #: cellBroadcastMessages
-#, fuzzy
-msgid "Cell Broadcast Messages"
+msgid "Cell broadcast messages"
 msgstr "Transmisie celulară a mesajelor"
 
 #: cellBroadcast
-#, fuzzy
-msgid "Cell Broadcast"
+msgid "Cell broadcast"
 msgstr "Transmisie celulară"
-
-#: emergencyAlert
-msgid "Emergency Alert"
-msgstr ""
 
 #: messagingInformation
 #, fuzzy
@@ -957,12 +939,13 @@ msgid "Information"
 msgstr "Confirmare"
 
 #. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
-#: messaging-SMSC
-msgid "Service Center"
-msgstr ""
+#: messagingSMSC
+#, fuzzy
+msgid "SMSC"
+msgstr "MMSC"
 
-#: unknown-SMSC
-msgid "Info not available"
+#: unknownSMSC
+msgid "Unknown number"
 msgstr ""
 
 #. # Connectivity :: Cellular & Data
@@ -1444,9 +1427,17 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "Conectat"
 
+#: device-status-connected-phone
+msgid "Connected to phone audio"
+msgstr "Conectat la sistemul audio al telefonului"
+
 #: device-status-connected-media
 msgid "Connected to media audio"
 msgstr "Conectat la sistemul audio media"
+
+#: device-status-connected-phone-media
+msgid "Connected to phone/media audio"
+msgstr "Conectat la sistemul audio al telefonului/media"
 
 #: device-option-unpair
 msgid "Unpair"
@@ -1489,6 +1480,10 @@ msgstr "Redenumește-mi dispozitivul"
 #: unnamed-device
 msgid "Unknown device"
 msgstr "Dispozitiv necunoscut"
+
+#: change-phone-name
+msgid "Change phone name"
+msgstr "Schimbă numele telefonului"
 
 #: change-phone-name-desc
 msgid "Change the name of your device as it appears in your computer"
@@ -1562,10 +1557,24 @@ msgstr "{{internetSharing}}"
 msgid "USB"
 msgstr "USB"
 
+#: internetSharing-usb-desc
+msgid "Share my phone’s Internet connection with a USB-connected device."
+msgstr ""
+"Partajează conexiunea de internet a telefonului meu cu un dispozitiv "
+"conectat la USB."
+
 #: internetSharing-wifi
 msgctxt "internetSharing-wifi"
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
+
+#: internetSharing-wifi-desc
+msgid ""
+"Allow other devices to share my phone’s Internet connection by connecting "
+"via Wi-Fi."
+msgstr ""
+"Permite altor dispozitive să partajeze conexiunea de internet a telefonului "
+"meu conectându-se via Wi-Fi."
 
 #: wifi-hotspot
 msgid "Wi-Fi hotspot"
@@ -1742,6 +1751,14 @@ msgstr ""
 #: savingringtone
 msgid "Saving ringtone…"
 msgstr "Se salvează tonul…"
+
+#: unplayable-ringtone
+msgid ""
+"The ringtone was not changed because the selected file can not be played on "
+"this phone."
+msgstr ""
+"Tonul de apel nu a fost schimbat deoarece fișierul selectat nu a putut fi "
+"redat pe acest telefon."
 
 #: no-ringtone-app
 msgid "We were unable to find a ringtone app to manage ringtones!"
@@ -2263,6 +2280,10 @@ msgctxt "findmydevice"
 msgid "Find My Device"
 msgstr ""
 
+#: findmydevice-signup-description
+msgid "Find My Device allows you to locate, lock or erase your phone"
+msgstr ""
+
 #: findmydevice-create-account
 msgctxt "findmydevice-create-account"
 msgid "Create account or sign in"
@@ -2274,6 +2295,12 @@ msgstr ""
 
 #: findmydevice-about
 msgid "About Find My Device"
+msgstr ""
+
+#: findmydevice-settings-description
+msgid ""
+"Find My Device allows you to locate, lock or erase your phone from a web "
+"site:"
 msgstr ""
 
 #: findmydevice-enable-geolocation-prompt
@@ -2291,6 +2318,14 @@ msgstr ""
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
+msgstr ""
+
+#: findmydevice-active-tracking
+msgid "Your phone is being tracked by another device through the website."
+msgstr ""
+
+#: findmydevice-not-tracking
+msgid "No devices are actively tracking your phone through the website."
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3048,6 +3083,14 @@ msgstr "Avansat"
 msgid "Enable USB storage?"
 msgstr "Activezi stocarea USB?"
 
+#: turn-on-ums-confirm
+msgid ""
+"Turning on Enable USB storage allows another computer or device connected "
+"using USB to access files on this phone."
+msgstr ""
+"Pornind „Stocare USB” permite altui calculator sau dispozitiv conectat "
+"folosind USB să acceseze fișierele pe acest telefon."
+
 #: default-media-location
 msgid "Default media location"
 msgstr "Locul media implicit"
@@ -3330,14 +3373,6 @@ msgstr ""
 msgid "Simple tiling"
 msgstr ""
 
-#: low-precision
-msgid "Low-precision painting"
-msgstr ""
-
-#: low-opacity
-msgid "Low-precision transparency"
-msgstr ""
-
 #: draw-tile-borders
 #, fuzzy
 msgid "Draw tile borders"
@@ -3521,9 +3556,23 @@ msgctxt "reset-head"
 msgid "Reset"
 msgstr "Restează"
 
+#: reset-phone
+msgid "Reset Phone"
+msgstr "Resetează telefonul"
+
 #: reset-warning-title
 msgid "CAUTION"
 msgstr "ATENȚIE"
+
+#: reset-warning-body
+msgid ""
+"Resetting will erase all your data, including any apps you’ve purchased. The "
+"phone will be restored to its factory condition. None of your settings or "
+"data will be saved."
+msgstr ""
+"Resetarea va șterge toate datele, inclusiv orice aplicație pe care ai "
+"achiziționat-o. Telefonul va fi restaurat la starea din fabrică. Niciuna din "
+"setările tale sau din date nu va fi salvată."
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
 #: your-rights
@@ -3785,6 +3834,16 @@ msgstr "Mod de economisire"
 msgid "{{level}}% battery left"
 msgstr "la {{level}}% baterie rămasă"
 
+#: powerSave-explanation
+msgid ""
+"Turning on power save mode turns off the phone’s data, Bluetooth and "
+"Geolocation connections to extend battery life. You can still turn these "
+"services back on manually."
+msgstr ""
+"Pornirea modului de economisire a energiei oprește conexiunea de date a "
+"telefonului, Bluetooth și geolocația pentru a extinde durata de viață a "
+"bateriei. Poți porni în continuare aceste servicii din nou manual."
+
 #: turnOnAuto
 msgid "Turn on automatically"
 msgstr "Pornește automat"
@@ -3878,6 +3937,12 @@ msgstr "Trimite opinia Mozillei"
 
 #: performanceAndUsageData
 msgid "Performance and usage data"
+msgstr ""
+
+#: performanceAndUsageDataInfo
+msgid ""
+"Help us improve {{brandShortName}} by sharing data about your phone and the "
+"way you use it."
 msgstr ""
 
 #: sharePerformanceAndUsageData
@@ -4189,86 +4254,6 @@ msgstr "Trimite date"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Obține starea canalului"
-
-#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
-#: is-warning-head
-msgid "{{newSetting}}"
-msgstr ""
-
-#: is-warning-message
-msgid ""
-"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
-"{{newSetting}}?"
-msgstr ""
-
-#~ msgid "WPS failed"
-#~ msgstr "WPS a eșuat"
-
-#~ msgid "Failed to cancel WPS"
-#~ msgstr "Eșec la anularea WPS"
-
-#~ msgid "Voice calls to"
-#~ msgstr "Apeluri vocale către"
-
-#, fuzzy
-#~ msgid "SMSC"
-#~ msgstr "MMSC"
-
-#~ msgid "Connected to phone audio"
-#~ msgstr "Conectat la sistemul audio al telefonului"
-
-#~ msgid "Connected to phone/media audio"
-#~ msgstr "Conectat la sistemul audio al telefonului/media"
-
-#~ msgid "Change phone name"
-#~ msgstr "Schimbă numele telefonului"
-
-#~ msgid "Share my phone’s Internet connection with a USB-connected device."
-#~ msgstr ""
-#~ "Partajează conexiunea de internet a telefonului meu cu un dispozitiv "
-#~ "conectat la USB."
-
-#~ msgid ""
-#~ "Allow other devices to share my phone’s Internet connection by connecting "
-#~ "via Wi-Fi."
-#~ msgstr ""
-#~ "Permite altor dispozitive să partajeze conexiunea de internet a "
-#~ "telefonului meu conectându-se via Wi-Fi."
-
-#~ msgid ""
-#~ "The ringtone was not changed because the selected file can not be played "
-#~ "on this phone."
-#~ msgstr ""
-#~ "Tonul de apel nu a fost schimbat deoarece fișierul selectat nu a putut fi "
-#~ "redat pe acest telefon."
-
-#~ msgid ""
-#~ "Turning on Enable USB storage allows another computer or device connected "
-#~ "using USB to access files on this phone."
-#~ msgstr ""
-#~ "Pornind „Stocare USB” permite altui calculator sau dispozitiv conectat "
-#~ "folosind USB să acceseze fișierele pe acest telefon."
-
-#~ msgid "Reset Phone"
-#~ msgstr "Resetează telefonul"
-
-#~ msgid ""
-#~ "Resetting will erase all your data, including any apps you’ve purchased. "
-#~ "The phone will be restored to its factory condition. None of your "
-#~ "settings or data will be saved."
-#~ msgstr ""
-#~ "Resetarea va șterge toate datele, inclusiv orice aplicație pe care ai "
-#~ "achiziționat-o. Telefonul va fi restaurat la starea din fabrică. Niciuna "
-#~ "din setările tale sau din date nu va fi salvată."
-
-#~ msgid ""
-#~ "Turning on power save mode turns off the phone’s data, Bluetooth and "
-#~ "Geolocation connections to extend battery life. You can still turn these "
-#~ "services back on manually."
-#~ msgstr ""
-#~ "Pornirea modului de economisire a energiei oprește conexiunea de date a "
-#~ "telefonului, Bluetooth și geolocația pentru a extinde durata de viață a "
-#~ "bateriei. Poți porni în continuare aceste servicii din nou manual."
 
 #~ msgid "Installed input methods"
 #~ msgstr "Metode de introducere instalate"
