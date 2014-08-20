@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-11 06:57+0000\n"
+"POT-Creation-Date: 2014-08-20 14:24+0000\n"
 "PO-Revision-Date: 2014-06-11 20:03+0000\n"
 "Last-Translator: Ibrahima <ibrahima.sarr@pulaagu.com>\n"
 "Language-Team: FULAH LOCALIZATION\n"
@@ -375,6 +375,29 @@ msgstr "Jaytin tintinde ɓatakuuje kese"
 msgid "Play sound after message is sent"
 msgstr "Fiy gaacol so ɓatakuure neldaama"
 
+#. # LOCALIZATION NOTE (settings-account-signature-label): The label for the
+#. # signature field in the account settings card.
+#: settings-account-signature-label
+msgid "Signature"
+msgstr ""
+
+#. # LOCALIZATION NOTE (signature-save): This is the text for an option
+#. # in a dialog box that pops up when the user hits back with the
+#. # signature changed. The option keeps the saves the current signature in
+#. # the editor
+#: signature-save
+msgid "Save Signature"
+msgstr ""
+
+#. # LOCALIZATION NOTE (signature-discard-confirm): This is the text of the
+#. # button which discards changes when a user hits back in the signature
+#. # entry page.
+#: signature-discard-confirm
+#, fuzzy
+msgctxt "signature-discard-confirm"
+msgid "Discard"
+msgstr "Momtu"
+
 #. # For account settings screen, there are sections of settings, and each
 #. # section has a header. One is Data, which deals with sync intervals and
 #. # time windows for the data that is fetched.
@@ -403,6 +426,12 @@ msgstr "Teelte sarworde"
 #: settings-account-userpass
 msgid "Username and password"
 msgstr "Innde kuutoro e finnde"
+
+#. # LOCALIZATION NOTE (settings-default-signature-2): The default signature
+#. # that the frontend adds in for new accounts
+#: settings-default-signature-2
+msgid "Sent Using Firefox OS"
+msgstr ""
 
 #: settings-done
 msgid "Done"
@@ -735,6 +764,8 @@ msgid "Discard email?"
 msgstr "Momtu iimeel?"
 
 #: compose-discard-confirm
+#, fuzzy
+msgctxt "compose-discard-confirm"
 msgid "Discard"
 msgstr "Momtu"
 
@@ -852,33 +883,39 @@ msgstr "{{ n }} labaama"
 msgid "Browse to URL?: {{ url }}"
 msgstr "Feero to URL?: {{ url }}"
 
-#: message-download-images
-msgctxt "message-download-images"
+#: message-download-images-tap
+#, fuzzy
+msgctxt "message-download-images-tap"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: message-download-images[one]
-msgid "This email contains one image. Click to download."
+#: message-download-images-tap[one]
+#, fuzzy
+msgid "This email contains one image. Tap to download."
 msgstr "Oo iimeel ena wonndi e natal. Dobo ngam aawtaade."
 
-#: message-download-images[two]
-msgctxt "message-download-images[two]"
-msgid "This email contains {{ n }} images. Click to download."
+#: message-download-images-tap[two]
+#, fuzzy
+msgctxt "message-download-images-tap[two]"
+msgid "This email contains {{ n }} images. Tap to download."
 msgstr "Oo iimeel ena wonndi e nate {{ n }}. Dobo ngam aawtaade."
 
-#: message-download-images[few]
-msgctxt "message-download-images[few]"
-msgid "This email contains {{ n }} images. Click to download."
+#: message-download-images-tap[few]
+#, fuzzy
+msgctxt "message-download-images-tap[few]"
+msgid "This email contains {{ n }} images. Tap to download."
 msgstr "Oo iimeel ena wonndi e nate {{ n }}. Dobo ngam aawtaade."
 
-#: message-download-images[many]
-msgctxt "message-download-images[many]"
-msgid "This email contains {{ n }} images. Click to download."
+#: message-download-images-tap[many]
+#, fuzzy
+msgctxt "message-download-images-tap[many]"
+msgid "This email contains {{ n }} images. Tap to download."
 msgstr "Oo iimeel ena wonndi e nate {{ n }}. Dobo ngam aawtaade."
 
-#: message-download-images[other]
-msgctxt "message-download-images[other]"
-msgid "This email contains {{ n }} images. Click to download."
+#: message-download-images-tap[other]
+#, fuzzy
+msgctxt "message-download-images-tap[other]"
+msgid "This email contains {{ n }} images. Tap to download."
 msgstr "Oo iimeel ena wonndi e nate {{ n }}. Dobo ngam aawtaade."
 
 #: message-show-external-images
@@ -968,9 +1005,12 @@ msgstr "Haaytu"
 msgid "Loading Messages"
 msgstr "Nana loowa ɓatakuuje"
 
-#: messages-sync-more
-msgid "Load more messages from server"
-msgstr "Loow ɓatakuuje goɗɗe iwde to sarworde"
+#. # LOCALIZATION NOTE (messages-load-more): This text shows at the bottom of the
+#. # list of messages in the message list, and pressing it will load more messages
+#. # likely from the server. The space is constrained and has an icon next to it.
+#: messages-load-more
+msgid "Load More Messages"
+msgstr ""
 
 #: messages-folder-empty
 msgid "No mail in this Folder"
@@ -1149,11 +1189,6 @@ msgstr ""
 #: toaster-undo
 msgid "Undo"
 msgstr "Firtu"
-
-#: toaster-retry
-msgctxt "toaster-retry"
-msgid "Retry"
-msgstr "Eto goɗngol"
 
 #: toaster-message-star
 msgctxt "toaster-message-star"
@@ -1531,6 +1566,29 @@ msgstr "Iimeeluuji Kesi {{ n }} ({{ accountName }})"
 #: new-emails-notify-multiple-accounts-body
 msgid "{{ from }} “{{ subject }}”"
 msgstr "{{ from }} “{{ subject }}”"
+
+#~ msgctxt "message-download-images"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "message-download-images[few]"
+#~ msgid "This email contains {{ n }} images. Click to download."
+#~ msgstr "Oo iimeel ena wonndi e nate {{ n }}. Dobo ngam aawtaade."
+
+#~ msgctxt "message-download-images[many]"
+#~ msgid "This email contains {{ n }} images. Click to download."
+#~ msgstr "Oo iimeel ena wonndi e nate {{ n }}. Dobo ngam aawtaade."
+
+#~ msgctxt "message-download-images[other]"
+#~ msgid "This email contains {{ n }} images. Click to download."
+#~ msgstr "Oo iimeel ena wonndi e nate {{ n }}. Dobo ngam aawtaade."
+
+#~ msgid "Load more messages from server"
+#~ msgstr "Loow ɓatakuuje goɗɗe iwde to sarworde"
+
+#~ msgctxt "toaster-retry"
+#~ msgid "Retry"
+#~ msgstr "Eto goɗngol"
 
 #~ msgid "Read"
 #~ msgstr "Tar"

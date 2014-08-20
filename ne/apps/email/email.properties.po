@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-28 20:49+0100\n"
+"POT-Creation-Date: 2014-08-20 14:24+0000\n"
 "PO-Revision-Date: 2014-07-18 13:56+0000\n"
 "Last-Translator: Bansaj <bansajpradhan@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1405691810.000000\n"
@@ -368,6 +368,29 @@ msgstr "नयाँ सन्देशहारुको लागि सूच
 msgid "Play sound after message is sent"
 msgstr ""
 
+#. # LOCALIZATION NOTE (settings-account-signature-label): The label for the
+#. # signature field in the account settings card.
+#: settings-account-signature-label
+msgid "Signature"
+msgstr ""
+
+#. # LOCALIZATION NOTE (signature-save): This is the text for an option
+#. # in a dialog box that pops up when the user hits back with the
+#. # signature changed. The option keeps the saves the current signature in
+#. # the editor
+#: signature-save
+msgid "Save Signature"
+msgstr ""
+
+#. # LOCALIZATION NOTE (signature-discard-confirm): This is the text of the
+#. # button which discards changes when a user hits back in the signature
+#. # entry page.
+#: signature-discard-confirm
+#, fuzzy
+msgctxt "signature-discard-confirm"
+msgid "Discard"
+msgstr "छाड्नुहोस्"
+
 #. # For account settings screen, there are sections of settings, and each
 #. # section has a header. One is Data, which deals with sync intervals and
 #. # time windows for the data that is fetched.
@@ -396,6 +419,12 @@ msgstr "सर्भर सेटिङहरू"
 #: settings-account-userpass
 msgid "Username and password"
 msgstr "प्रयोगकर्ताको नाम र पासवर्ड"
+
+#. # LOCALIZATION NOTE (settings-default-signature-2): The default signature
+#. # that the frontend adds in for new accounts
+#: settings-default-signature-2
+msgid "Sent Using Firefox OS"
+msgstr ""
 
 #: settings-done
 msgid "Done"
@@ -729,6 +758,8 @@ msgid "Discard email?"
 msgstr "इमेल छोड्न चाहनुहुन्छ?"
 
 #: compose-discard-confirm
+#, fuzzy
+msgctxt "compose-discard-confirm"
 msgid "Discard"
 msgstr "छाड्नुहोस्"
 
@@ -844,34 +875,40 @@ msgstr "{{ n }} वटा चयन गरिएको"
 msgid "Browse to URL?: {{ url }}"
 msgstr "यो URL ब्राउज गर्ने?: {{ url }}"
 
-#: message-download-images
-msgctxt "message-download-images"
+#: message-download-images-tap
+#, fuzzy
+msgctxt "message-download-images-tap"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: message-download-images[one]
-msgid "This email contains one image. Click to download."
+#: message-download-images-tap[one]
+#, fuzzy
+msgid "This email contains one image. Tap to download."
 msgstr "यो इमेल मा एउटा छवि शामिल छ। डाउनलोड गर्न क्लिक गर्नुहोस्।"
 
-#: message-download-images[two]
-msgctxt "message-download-images[two]"
-msgid "This email contains {{ n }} images. Click to download."
+#: message-download-images-tap[two]
+#, fuzzy
+msgctxt "message-download-images-tap[two]"
+msgid "This email contains {{ n }} images. Tap to download."
 msgstr "यो इमेलमा {{ n }} वटा छविहरु शामिल छन्। डाउनलोड गर्न क्लिक गर्नुहोस्।"
 
-#: message-download-images[few]
-msgctxt "message-download-images[few]"
-msgid "This email contains {{ n }} images. Click to download."
+#: message-download-images-tap[few]
+#, fuzzy
+msgctxt "message-download-images-tap[few]"
+msgid "This email contains {{ n }} images. Tap to download."
 msgstr "यो इमेलमा {{ n }} वटा छविहरु शामिल छन्। डाउनलोड गर्न क्लिक गर्नुहोस्।"
 
-#: message-download-images[many]
-msgctxt "message-download-images[many]"
-msgid "This email contains {{ n }} images. Click to download."
+#: message-download-images-tap[many]
+#, fuzzy
+msgctxt "message-download-images-tap[many]"
+msgid "This email contains {{ n }} images. Tap to download."
 msgstr "यो इमेलमा {{ n }} वटा छविहरु शामिल छन्। डाउनलोड गर्न क्लिक गर्नुहोस्।"
 
-#: message-download-images[other]
-msgctxt "message-download-images[other]"
-msgid "This email contains {{ n }} images. Click to download."
-msgstr "यो इमेलमा {{ n }} वटा छविहरु समाविष्ट छन्। डाउनलोड गर्न क्लिक गर्नुहोस्।"
+#: message-download-images-tap[other]
+#, fuzzy
+msgctxt "message-download-images-tap[other]"
+msgid "This email contains {{ n }} images. Tap to download."
+msgstr "यो इमेलमा {{ n }} वटा छविहरु शामिल छन्। डाउनलोड गर्न क्लिक गर्नुहोस्।"
 
 #: message-show-external-images
 msgid "Show external images"
@@ -961,9 +998,12 @@ msgstr "रद्द गर्नुहोस्"
 msgid "Loading Messages"
 msgstr "सन्देशहरु लोड हुँदैछ"
 
-#: messages-sync-more
-msgid "Load more messages from server"
-msgstr "सर्भरबाट बढि सन्देशहरू लोड गर्नुहोस्"
+#. # LOCALIZATION NOTE (messages-load-more): This text shows at the bottom of the
+#. # list of messages in the message list, and pressing it will load more messages
+#. # likely from the server. The space is constrained and has an icon next to it.
+#: messages-load-more
+msgid "Load More Messages"
+msgstr ""
 
 #: messages-folder-empty
 msgid "No mail in this Folder"
@@ -1132,14 +1172,18 @@ msgstr ""
 msgid "Last sync:"
 msgstr "अन्तिम सिङ्क:"
 
+#. # LOCALIZATION NOTE(message-list-top-action):
+#. # In the message-list, as the user scrolls down, an action bar will scroll into
+#. # view that if tapped will take the user to the top of the screen. That bar
+#. # will use an icon to display its meaning, this is text that will not be visible
+#. # to the user, it is provided for accessibility.
+#: message-list-top-action
+msgid "Top"
+msgstr ""
+
 #: toaster-undo
 msgid "Undo"
 msgstr "पूर्वस्थितिमा फर्काउनुहोस्"
-
-#: toaster-retry
-msgctxt "toaster-retry"
-msgid "Retry"
-msgstr "पुन:प्रयास गर्नुहोस्"
 
 #: toaster-message-star
 msgctxt "toaster-message-star"
@@ -1525,6 +1569,29 @@ msgstr "{{ n }} नँया इमेलहरु ({{ accountName }})"
 #: new-emails-notify-multiple-accounts-body
 msgid "{{ from }} “{{ subject }}”"
 msgstr "{{ from }} “{{ subject }}”"
+
+#~ msgctxt "message-download-images"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "message-download-images[few]"
+#~ msgid "This email contains {{ n }} images. Click to download."
+#~ msgstr "यो इमेलमा {{ n }} वटा छविहरु शामिल छन्। डाउनलोड गर्न क्लिक गर्नुहोस्।"
+
+#~ msgctxt "message-download-images[many]"
+#~ msgid "This email contains {{ n }} images. Click to download."
+#~ msgstr "यो इमेलमा {{ n }} वटा छविहरु शामिल छन्। डाउनलोड गर्न क्लिक गर्नुहोस्।"
+
+#~ msgctxt "message-download-images[other]"
+#~ msgid "This email contains {{ n }} images. Click to download."
+#~ msgstr "यो इमेलमा {{ n }} वटा छविहरु समाविष्ट छन्। डाउनलोड गर्न क्लिक गर्नुहोस्।"
+
+#~ msgid "Load more messages from server"
+#~ msgstr "सर्भरबाट बढि सन्देशहरू लोड गर्नुहोस्"
+
+#~ msgctxt "toaster-retry"
+#~ msgid "Retry"
+#~ msgstr "पुन:प्रयास गर्नुहोस्"
 
 #~ msgid "Read"
 #~ msgstr "पढ्नुहोस्"
