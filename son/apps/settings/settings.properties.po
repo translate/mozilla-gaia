@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-11 07:17+0000\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-07-01 10:13+0000\n"
 "Last-Translator: Mohomodou  <mh@bollag-areal.ch>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1404209596.000000\n"
@@ -378,12 +378,6 @@ msgstr "Ay bayrandi waati kaŋ sankay feerante ga bara"
 msgid "MAC address"
 msgstr "MAC aderesu"
 
-#. # os = OS version. For example: 2.0.
-#. # The whole string may look like this: "Firefox OS 2.0"
-#: deviceInfo_software
-msgid "{{ brandShortName }} {{ os }}"
-msgstr ""
-
 #: macUnavailable
 msgctxt "macUnavailable"
 msgid "Not available"
@@ -475,9 +469,9 @@ msgstr "WPS n' ka naŋandi"
 msgid "WPS timed out"
 msgstr "WPS waatoo ben"
 
-#: fullStatus-wps-failed-error
-msgid "WPS failed [{{error}}]"
-msgstr ""
+#: fullStatus-wps-failed
+msgid "WPS failed"
+msgstr "WPS kaŋ"
 
 #: fullStatus-wps-overlapped
 msgid "Another WPS PBC AP was found"
@@ -524,9 +518,9 @@ msgstr "Hayakul"
 msgid "Cancel WPS"
 msgstr "WPS naŋ"
 
-#: wpsCancelFailedMessageError
-msgid "Failed to cancel WPS [{{error}}]"
-msgstr ""
+#: wpsCancelFailedMessage
+msgid "Failed to cancel WPS"
+msgstr "Mana hin ka WPS naŋ"
 
 #. # Connectivity :: Call
 #: callSettings
@@ -639,9 +633,9 @@ msgstr "Bisandi nd'a ši duwandi"
 msgid "When unreachable"
 msgstr "Nd'a ši duwandi"
 
-#: callForwardingForwardingVoiceToNumber
-msgid "Voice calls to {{number}}"
-msgstr ""
+#: callForwardingForwardingVoiceTo
+msgid "Voice calls to"
+msgstr "Jinde ciyari ne"
 
 #: callForwardingNotForwarding
 msgctxt "callForwardingNotForwarding"
@@ -866,13 +860,11 @@ msgid "{{messagingSettings}}"
 msgstr "{{messagingSettings}}"
 
 #: message-confirmation
-#, fuzzy
-msgid "Message Confirmation"
+msgid "Message confirmation"
 msgstr "Alhabar tabatandiyan"
 
 #: message-delivery-reports
-#, fuzzy
-msgid "Delivery Reports"
+msgid "Delivery reports"
 msgstr "Bayrandi kanbarey"
 
 #: message-delivery-reports-details
@@ -880,8 +872,7 @@ msgid "Request notification of delivery for each message sent"
 msgstr "Hãayan bayrandi toonandi alhabar sanbante foo kul se"
 
 #: message-read-reports
-#, fuzzy
-msgid "Read Reports"
+msgid "Read reports"
 msgstr "Bayrandi caw"
 
 #: message-read-reports-details
@@ -889,13 +880,11 @@ msgid "Request read report for each message sent"
 msgstr "Caw bayrandi hãa alhabar sanbante foo kul se"
 
 #: mmsTitle
-#, fuzzy
-msgid "Multimedia Messaging (MMS)"
+msgid "Multimedia messaging (MMS)"
 msgstr "Hẽenandikaw boobo alhabar (MMS)"
 
 #: auto-retrieve
-#, fuzzy
-msgid "Auto Retrieve"
+msgid "Auto retrieve"
 msgstr "Boŋ soolom"
 
 #: auto-retrieve-details
@@ -919,8 +908,7 @@ msgid "Auto-configure"
 msgstr "Boŋhanseyan"
 
 #: wapPushMessages
-#, fuzzy
-msgid "WAP Push Messages"
+msgid "WAP Push messages"
 msgstr "WAP naagu alhabar"
 
 #: wapPush
@@ -928,18 +916,12 @@ msgid "WAP Push"
 msgstr "WAP naagu"
 
 #: cellBroadcastMessages
-#, fuzzy
-msgid "Cell Broadcast Messages"
+msgid "Cell broadcast messages"
 msgstr "Fargandu ciyari alhabarey"
 
 #: cellBroadcast
-#, fuzzy
-msgid "Cell Broadcast"
+msgid "Cell broadcast"
 msgstr "Fargandu ciyari"
-
-#: emergencyAlert
-msgid "Emergency Alert"
-msgstr ""
 
 #: messagingInformation
 #, fuzzy
@@ -947,12 +929,13 @@ msgid "Information"
 msgstr "Cimandiyan"
 
 #. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
-#: messaging-SMSC
-msgid "Service Center"
-msgstr ""
+#: messagingSMSC
+#, fuzzy
+msgid "SMSC"
+msgstr "MMSC"
 
-#: unknown-SMSC
-msgid "Info not available"
+#: unknownSMSC
+msgid "Unknown number"
 msgstr ""
 
 #. # Connectivity :: Cellular & Data
@@ -1432,9 +1415,17 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "Goo ciyari ra"
 
+#: device-status-connected-phone
+msgid "Connected to phone audio"
+msgstr "Ga dobu talfon jinde ga"
+
 #: device-status-connected-media
 msgid "Connected to media audio"
 msgstr "Ga dobu hooray hinje ga"
+
+#: device-status-connected-phone-media
+msgid "Connected to phone/media audio"
+msgstr "Ga dobu talfon/hooray jinda ga"
 
 #: device-option-unpair
 msgid "Unpair"
@@ -1476,6 +1467,10 @@ msgstr "Ay jinaa noo maa taaga"
 #: unnamed-device
 msgid "Unknown device"
 msgstr "Jinay šibayante"
+
+#: change-phone-name
+msgid "Change phone name"
+msgstr "Talfon maaɲoo barmay"
 
 #: change-phone-name-desc
 msgid "Change the name of your device as it appears in your computer"
@@ -1547,10 +1542,22 @@ msgstr "{{internetSharing}}"
 msgid "USB"
 msgstr "USB"
 
+#: internetSharing-usb-desc
+msgid "Share my phone’s Internet connection with a USB-connected device."
+msgstr "Ay talfonoo interneti dobuyanoo žemni nda USB jinay dobante foo."
+
 #: internetSharing-wifi
 msgctxt "internetSharing-wifi"
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
+
+#: internetSharing-wifi-desc
+msgid ""
+"Allow other devices to share my phone’s Internet connection by connecting "
+"via Wi-Fi."
+msgstr ""
+"Naŋ jinay taney m'ay talfonoo interneti dobuyanoo žemni nd'a ciya Wi-Fi "
+"bande."
 
 #: wifi-hotspot
 msgid "Wi-Fi hotspot"
@@ -1727,6 +1734,14 @@ msgstr "Hooray jinay"
 #: savingringtone
 msgid "Saving ringtone…"
 msgstr "Ga talfon hẽeni gaabu…"
+
+#: unplayable-ringtone
+msgid ""
+"The ringtone was not changed because the selected file can not be played on "
+"this phone."
+msgstr ""
+"Talfon hẽenoo mana barmay zama tukoo kaŋ war n'a suuba ši hin ka hẽe "
+"talfonoo woo ga."
 
 #: no-ringtone-app
 msgid "We were unable to find a ringtone app to manage ringtones!"
@@ -2247,6 +2262,10 @@ msgctxt "findmydevice"
 msgid "Find My Device"
 msgstr "Ay jinaa gunaa"
 
+#: findmydevice-signup-description
+msgid "Find My Device allows you to locate, lock or erase your phone"
+msgstr "Ay jinaa guna ka too war ma war talfonoo sijjel, kufal wal'a tuusu"
+
 #: findmydevice-create-account
 #, fuzzy
 msgctxt "findmydevice-create-account"
@@ -2260,6 +2279,14 @@ msgstr "Ay jinaa guna tunandi"
 #: findmydevice-about
 msgid "About Find My Device"
 msgstr "Ay jinaa guna ga"
+
+#: findmydevice-settings-description
+msgid ""
+"Find My Device allows you to locate, lock or erase your phone from a web "
+"site:"
+msgstr ""
+"Ay jinaa guna ga too war ma war talfonoo sijjel. kufal wal'a tuusu interneti "
+"doo ga:"
 
 #: findmydevice-enable-geolocation-prompt
 msgid "Enable Geolocation?"
@@ -2277,6 +2304,14 @@ msgstr "Gorodoo maateyan tun"
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
 msgstr "Jinaa ši ciya sohõda. Sankay foo cee ka ceeci taaga."
+
+#: findmydevice-active-tracking
+msgid "Your phone is being tracked by another device through the website."
+msgstr "Jinay tana foo goo ma war talfonoo hawgay interneti ra."
+
+#: findmydevice-not-tracking
+msgid "No devices are actively tracking your phone through the website."
+msgstr "Jinay kulyaŋ šii ma war talfonoo hawgay interneti ra."
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -3018,6 +3053,14 @@ msgstr "Jinekoyante"
 msgid "Enable USB storage?"
 msgstr "USB jišidoo feeri?"
 
+#: turn-on-ums-confirm
+msgid ""
+"Turning on Enable USB storage allows another computer or device connected "
+"using USB to access files on this phone."
+msgstr ""
+"USB jišidoo tunandi ka too ordinater tana wala jinay dobante kaŋ ga goy nda "
+"USB ka tukey zaa war talfonoo ra."
+
 #: default-media-location
 msgid "Default media location"
 msgstr "Tilasu gorodoo alhabar jinay"
@@ -3297,14 +3340,6 @@ msgstr "Ferawyan"
 msgid "Simple tiling"
 msgstr "Ferawyan faalante"
 
-#: low-precision
-msgid "Low-precision painting"
-msgstr ""
-
-#: low-opacity
-msgid "Low-precision transparency"
-msgstr ""
-
 #: draw-tile-borders
 msgid "Draw tile borders"
 msgstr "Feraw hirrey žeeri"
@@ -3483,9 +3518,23 @@ msgctxt "reset-head"
 msgid "Reset"
 msgstr "Yeeti"
 
+#: reset-phone
+msgid "Reset Phone"
+msgstr "Talfon lasaloo yeeti"
+
 #: reset-warning-title
 msgid "CAUTION"
 msgstr "HAWGAY"
+
+#: reset-warning-body
+msgid ""
+"Resetting will erase all your data, including any apps you’ve purchased. The "
+"phone will be restored to its factory condition. None of your settings or "
+"data will be saved."
+msgstr ""
+"Yeetiyan ga war bayhayey kul tuusu, sanda porogaramey kaŋ war n'i day. "
+"Talfonoo ga willi nga teeyan alhaaloo ga. War kayandiyan wala bayhaya kul ši "
+"gaabundi."
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
 #: your-rights
@@ -3743,6 +3792,16 @@ msgstr "Sahã buuna alhaali"
 msgid "{{level}}% battery left"
 msgstr "Baatiri {{level}}% cindi"
 
+#: powerSave-explanation
+msgid ""
+"Turning on power save mode turns off the phone’s data, Bluetooth and "
+"Geolocation connections to extend battery life. You can still turn these "
+"services back on manually."
+msgstr ""
+"Nda sahã gaabuyan tunandi kul talfonoo bayhayey, Bluetooth nda gorodoo "
+"šilbaykaa ka buu hala baatiriyoo ma gay. War ga hin ka goymiɲey tunandi "
+"koyne war boŋ še."
+
 #: turnOnAuto
 msgid "Turn on automatically"
 msgstr "A ma tun nga boŋ še"
@@ -3836,6 +3895,12 @@ msgstr "Laasaabu sanba Mozilla do"
 
 #: performanceAndUsageData
 msgid "Performance and usage data"
+msgstr ""
+
+#: performanceAndUsageDataInfo
+msgid ""
+"Help us improve {{brandShortName}} by sharing data about your phone and the "
+"way you use it."
 msgstr ""
 
 #: sharePerformanceAndUsageData
@@ -4142,100 +4207,6 @@ msgstr "Bayhayey sanba"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Kanaara assariya zaa"
-
-#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
-#: is-warning-head
-msgid "{{newSetting}}"
-msgstr ""
-
-#: is-warning-message
-msgid ""
-"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
-"{{newSetting}}?"
-msgstr ""
-
-#~ msgid "WPS failed"
-#~ msgstr "WPS kaŋ"
-
-#~ msgid "Failed to cancel WPS"
-#~ msgstr "Mana hin ka WPS naŋ"
-
-#~ msgid "Voice calls to"
-#~ msgstr "Jinde ciyari ne"
-
-#, fuzzy
-#~ msgid "SMSC"
-#~ msgstr "MMSC"
-
-#~ msgid "Connected to phone audio"
-#~ msgstr "Ga dobu talfon jinde ga"
-
-#~ msgid "Connected to phone/media audio"
-#~ msgstr "Ga dobu talfon/hooray jinda ga"
-
-#~ msgid "Change phone name"
-#~ msgstr "Talfon maaɲoo barmay"
-
-#~ msgid "Share my phone’s Internet connection with a USB-connected device."
-#~ msgstr "Ay talfonoo interneti dobuyanoo žemni nda USB jinay dobante foo."
-
-#~ msgid ""
-#~ "Allow other devices to share my phone’s Internet connection by connecting "
-#~ "via Wi-Fi."
-#~ msgstr ""
-#~ "Naŋ jinay taney m'ay talfonoo interneti dobuyanoo žemni nd'a ciya Wi-Fi "
-#~ "bande."
-
-#~ msgid ""
-#~ "The ringtone was not changed because the selected file can not be played "
-#~ "on this phone."
-#~ msgstr ""
-#~ "Talfon hẽenoo mana barmay zama tukoo kaŋ war n'a suuba ši hin ka hẽe "
-#~ "talfonoo woo ga."
-
-#~ msgid "Find My Device allows you to locate, lock or erase your phone"
-#~ msgstr "Ay jinaa guna ka too war ma war talfonoo sijjel, kufal wal'a tuusu"
-
-#~ msgid ""
-#~ "Find My Device allows you to locate, lock or erase your phone from a web "
-#~ "site:"
-#~ msgstr ""
-#~ "Ay jinaa guna ga too war ma war talfonoo sijjel. kufal wal'a tuusu "
-#~ "interneti doo ga:"
-
-#~ msgid "Your phone is being tracked by another device through the website."
-#~ msgstr "Jinay tana foo goo ma war talfonoo hawgay interneti ra."
-
-#~ msgid "No devices are actively tracking your phone through the website."
-#~ msgstr "Jinay kulyaŋ šii ma war talfonoo hawgay interneti ra."
-
-#~ msgid ""
-#~ "Turning on Enable USB storage allows another computer or device connected "
-#~ "using USB to access files on this phone."
-#~ msgstr ""
-#~ "USB jišidoo tunandi ka too ordinater tana wala jinay dobante kaŋ ga goy "
-#~ "nda USB ka tukey zaa war talfonoo ra."
-
-#~ msgid "Reset Phone"
-#~ msgstr "Talfon lasaloo yeeti"
-
-#~ msgid ""
-#~ "Resetting will erase all your data, including any apps you’ve purchased. "
-#~ "The phone will be restored to its factory condition. None of your "
-#~ "settings or data will be saved."
-#~ msgstr ""
-#~ "Yeetiyan ga war bayhayey kul tuusu, sanda porogaramey kaŋ war n'i day. "
-#~ "Talfonoo ga willi nga teeyan alhaaloo ga. War kayandiyan wala bayhaya kul "
-#~ "ši gaabundi."
-
-#~ msgid ""
-#~ "Turning on power save mode turns off the phone’s data, Bluetooth and "
-#~ "Geolocation connections to extend battery life. You can still turn these "
-#~ "services back on manually."
-#~ msgstr ""
-#~ "Nda sahã gaabuyan tunandi kul talfonoo bayhayey, Bluetooth nda gorodoo "
-#~ "šilbaykaa ka buu hala baatiriyoo ma gay. War ga hin ka goymiɲey tunandi "
-#~ "koyne war boŋ še."
 
 #~ msgctxt "search-suggestions-button"
 #~ msgid "{{search-suggestions}}"
