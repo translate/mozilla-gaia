@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-20 14:24+0000\n"
+"POT-Creation-Date: 2014-08-29 14:37+0000\n"
 "PO-Revision-Date: 2014-07-08 12:08+0000\n"
 "Last-Translator: Nilamdyuti <ngoswami@redhat.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,8 @@ msgstr ""
 "X-POOTLE-MTIME: 1404821285.000000\n"
 
 #: ok
+#, fuzzy
+msgctxt "ok"
 msgid "OK"
 msgstr "ঠিক আছে"
 
@@ -827,19 +829,27 @@ msgstr ""
 msgid "Download updates via data connection?"
 msgstr "তথ্য সংযোগৰ সহায়ত আপডেইটসমূহ ডাউনল'ড কৰিব নে?"
 
-#: downloadUpdatesViaDataConnectionMessage
-msgid ""
-"Updates are downloaded via data connection when Wi-Fi is not available. When "
-"using data connection, phone calls may be blocked and additional charges may "
-"also apply."
-msgstr ""
-"আপডেইটসমূহক Wi-Fi উপলব্ধ নাথাকিলে তথ্য সংযোগৰ সহায়ত ডাউনল'ড কৰা হয়। তথ্য সংযোগ "
-"ব্যৱহাৰ কৰোতে, ফোন কলসমূহ প্ৰতিৰোধ কৰা হব পাৰে আৰু অতিৰিক্ত চাৰ্জ কৰা হব পাৰে।"
-
 #: downloadUpdatesVia2GForbidden2
 msgid ""
 "Downloading updates is not possible on slow connections (2G). Please connect "
 "via Wi-Fi or 3G (if available) and try again."
+msgstr ""
+
+#: downloadUpdatesViaDataConnectionMessage2
+msgid ""
+"When using a data connection, additional charges may apply. Do you want to "
+"continue?"
+msgstr ""
+
+#: downloadUpdatesViaDataRoamingConnection
+#, fuzzy
+msgid "Download updates via data roaming?"
+msgstr "তথ্য সংযোগৰ সহায়ত আপডেইটসমূহ ডাউনল'ড কৰিব নে?"
+
+#: downloadUpdatesViaDataRoamingConnectionMessage
+msgid ""
+"You are currently roaming and additional charges may apply. Do you want to "
+"continue?"
 msgstr ""
 
 #. # screenshots
@@ -912,6 +922,10 @@ msgstr "আৰম্ভণি"
 msgid "Sign in"
 msgstr "ছাইন ইন কৰক"
 
+#: sign-in-to-website
+msgid "Sign in to website"
+msgstr ""
+
 #: username
 msgid "Username"
 msgstr "ব্যৱহাৰকাৰীনাম"
@@ -920,12 +934,9 @@ msgstr "ব্যৱহাৰকাৰীনাম"
 msgid "Password"
 msgstr "পাছৱৰ্ড"
 
-#: http-authentication-message
-msgid ""
-"A username and password are being requested by {{host}}. The site says: "
-"“{{realm}}”"
+#: http-authentication-message2
+msgid "The website {{host}} requires you to sign in."
 msgstr ""
-"{{host}} এ এটা ব্যৱহাৰকাৰীনাম আৰু পাছৱৰ্ড অনুৰোধ কৰিছে। ছাইটে কয়: “{{realm}}”"
 
 #: error-message
 msgid "{{name}} is not loading properly"
@@ -1150,6 +1161,36 @@ msgstr "সংহতিসমূহ নিৰীক্ষণ কৰক"
 #: tap-to-check-settings
 msgid "Tap to check settings"
 msgstr "সংহতিসমূহ নিৰীক্ষণ কৰিবলে টেপ কৰক"
+
+#. # Prompt that appears when a user tries to delete an app/collection/bookmark.
+#: delete-title
+msgid "Delete {{name}}"
+msgstr ""
+
+#: delete-body
+msgid "{{name}} and all of its data will be deleted."
+msgstr ""
+
+#: delete
+msgid "Delete"
+msgstr ""
+
+#. # Prompt that appears when removing an app
+#: unrecoverable-error-title
+msgid "Remove Application"
+msgstr ""
+
+#: unrecoverable-error-body
+msgid ""
+"Cannot install application due to an unrecoverable error. Please try "
+"downloading again. The application will be removed."
+msgstr ""
+
+#: unrecoverable-error-action
+#, fuzzy
+msgctxt "unrecoverable-error-action"
+msgid "OK"
+msgstr "ঠিক আছে"
 
 #. # value selector, time/date picker
 #: select-time
@@ -1449,6 +1490,31 @@ msgstr "‍অজ্ঞাত ত্ৰুটি"
 #: confirm
 msgid "Confirm"
 msgstr "নিশ্চিত কৰক"
+
+#. # Storage Status
+#: sdcard-detected-title
+msgid "SD card detected"
+msgstr ""
+
+#: sdcard-total-size-body
+msgid "Total size: {{size}} {{unit}}"
+msgstr ""
+
+#: sdcard-unknown-size-tap-to-format-body
+msgid "Unknown, tap to format"
+msgstr ""
+
+#: sdcard-removed-title
+msgid "SD card removed"
+msgstr ""
+
+#: sdcard-removed-eject-successfully
+msgid "Eject successfully"
+msgstr ""
+
+#: sdcard-removed-not-eject-properly
+msgid "Not eject properly"
+msgstr ""
 
 #. # Media Recoding
 #: microphone-is-on
@@ -2158,6 +2224,21 @@ msgstr "ভিডিঅ' সংৰক্ষণ কৰক"
 #, fuzzy
 msgid "Share Audio"
 msgstr "অডিঅ' সংৰক্ষণ কৰক"
+
+#~ msgid ""
+#~ "Updates are downloaded via data connection when Wi-Fi is not available. "
+#~ "When using data connection, phone calls may be blocked and additional "
+#~ "charges may also apply."
+#~ msgstr ""
+#~ "আপডেইটসমূহক Wi-Fi উপলব্ধ নাথাকিলে তথ্য সংযোগৰ সহায়ত ডাউনল'ড কৰা হয়। তথ্য "
+#~ "সংযোগ ব্যৱহাৰ কৰোতে, ফোন কলসমূহ প্ৰতিৰোধ কৰা হব পাৰে আৰু অতিৰিক্ত চাৰ্জ কৰা হব "
+#~ "পাৰে।"
+
+#~ msgid ""
+#~ "A username and password are being requested by {{host}}. The site says: "
+#~ "“{{realm}}”"
+#~ msgstr ""
+#~ "{{host}} এ এটা ব্যৱহাৰকাৰীনাম আৰু পাছৱৰ্ড অনুৰোধ কৰিছে। ছাইটে কয়: “{{realm}}”"
 
 #~ msgid "Airplane mode"
 #~ msgstr "বিমান অৱস্থা"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-20 14:24+0000\n"
+"POT-Creation-Date: 2014-08-29 14:37+0000\n"
 "PO-Revision-Date: 2014-07-29 14:32+0000\n"
 "Last-Translator: Omshivaprakash <omshivaprakash@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,8 @@ msgstr ""
 "X-POOTLE-MTIME: 1406644322.000000\n"
 
 #: ok
+#, fuzzy
+msgctxt "ok"
 msgid "OK"
 msgstr "ಸರಿ"
 
@@ -826,19 +828,27 @@ msgstr ""
 msgid "Download updates via data connection?"
 msgstr "ಡೇಟಾ ಸಂಪರ್ಕದ ಮೂಲಕ ಅಪ್‌ಡೇಟ್‌ಗಳನ್ನು ಡೌನ್‌ಲೋಡ್‌ ಮಾಡುವುದೇ?"
 
-#: downloadUpdatesViaDataConnectionMessage
-msgid ""
-"Updates are downloaded via data connection when Wi-Fi is not available. When "
-"using data connection, phone calls may be blocked and additional charges may "
-"also apply."
-msgstr ""
-"Wi-Fi ಲಭ್ಯವಿರದ ಸಮಯದಲ್ಲಿ ಅಪ್‌ಡೇಟ್‌ಗಳು ಡೇಟಾ ಸಂಪರ್ಕದ ಮೂಲಕ ಡೌನ್‌ಲೋಡ್‌ ಆಗಿದೆ,ಡೇಟಾ ಸಂಪರ್ಕವನ್ನು "
-"ಬಳಸಿದಾಗ, ಫೋನ್‌ ಕರೆಗಳು ನಿರ್ಬಂಧಿಸಬಹುದು ಮತ್ತು ಹೆಚ್ಚುವರಿ ಡೇಟಾ ವೆಚ್ಚಗಳು ಸಹ ಅನ್ವಯವಾಗಬಹುದು."
-
 #: downloadUpdatesVia2GForbidden2
 msgid ""
 "Downloading updates is not possible on slow connections (2G). Please connect "
 "via Wi-Fi or 3G (if available) and try again."
+msgstr ""
+
+#: downloadUpdatesViaDataConnectionMessage2
+msgid ""
+"When using a data connection, additional charges may apply. Do you want to "
+"continue?"
+msgstr ""
+
+#: downloadUpdatesViaDataRoamingConnection
+#, fuzzy
+msgid "Download updates via data roaming?"
+msgstr "ಡೇಟಾ ಸಂಪರ್ಕದ ಮೂಲಕ ಅಪ್‌ಡೇಟ್‌ಗಳನ್ನು ಡೌನ್‌ಲೋಡ್‌ ಮಾಡುವುದೇ?"
+
+#: downloadUpdatesViaDataRoamingConnectionMessage
+msgid ""
+"You are currently roaming and additional charges may apply. Do you want to "
+"continue?"
 msgstr ""
 
 #. # screenshots
@@ -911,6 +921,10 @@ msgstr "ನೆಲೆ"
 msgid "Sign in"
 msgstr "ಪ್ರವೇಶಿಸು"
 
+#: sign-in-to-website
+msgid "Sign in to website"
+msgstr ""
+
 #: username
 msgid "Username"
 msgstr "ಬಳಕೆದಾರಹೆಸರು"
@@ -919,13 +933,9 @@ msgstr "ಬಳಕೆದಾರಹೆಸರು"
 msgid "Password"
 msgstr "ಗುಪ್ತಪದ"
 
-#: http-authentication-message
-msgid ""
-"A username and password are being requested by {{host}}. The site says: "
-"“{{realm}}”"
+#: http-authentication-message2
+msgid "The website {{host}} requires you to sign in."
 msgstr ""
-"{{host}} ಇಂದ ಒಂದು ಬಳಕೆದಾರ ಪದ ಹಾಗು ಗುಪ್ತಪದಕ್ಕಾಗಿ ಮನವಿ ಸಲ್ಲಿಸಲಾಗಿದೆ. ತಾಣವು ಹೀಗೆ "
-"ಹೇಳುತ್ತದೆ: “{{realm}}”"
 
 #: error-message
 msgid "{{name}} is not loading properly"
@@ -1151,6 +1161,36 @@ msgstr "ಸಿದ್ಧತೆಗಳನ್ನು ಪರಿಶೀಲಿಸಿ"
 #: tap-to-check-settings
 msgid "Tap to check settings"
 msgstr "ಸಿದ್ಧತೆಗಳ ಪರಿಶೀಲನೆಗ ಮೆಲ್ಲನೆ ತಟ್ಟಿ"
+
+#. # Prompt that appears when a user tries to delete an app/collection/bookmark.
+#: delete-title
+msgid "Delete {{name}}"
+msgstr ""
+
+#: delete-body
+msgid "{{name}} and all of its data will be deleted."
+msgstr ""
+
+#: delete
+msgid "Delete"
+msgstr ""
+
+#. # Prompt that appears when removing an app
+#: unrecoverable-error-title
+msgid "Remove Application"
+msgstr ""
+
+#: unrecoverable-error-body
+msgid ""
+"Cannot install application due to an unrecoverable error. Please try "
+"downloading again. The application will be removed."
+msgstr ""
+
+#: unrecoverable-error-action
+#, fuzzy
+msgctxt "unrecoverable-error-action"
+msgid "OK"
+msgstr "ಸರಿ"
 
 #. # value selector, time/date picker
 #: select-time
@@ -1451,6 +1491,31 @@ msgstr "ಗೊತ್ತಿರದ ದೋಷ"
 #: confirm
 msgid "Confirm"
 msgstr "ಖಚಿತಪಡಿಸು"
+
+#. # Storage Status
+#: sdcard-detected-title
+msgid "SD card detected"
+msgstr ""
+
+#: sdcard-total-size-body
+msgid "Total size: {{size}} {{unit}}"
+msgstr ""
+
+#: sdcard-unknown-size-tap-to-format-body
+msgid "Unknown, tap to format"
+msgstr ""
+
+#: sdcard-removed-title
+msgid "SD card removed"
+msgstr ""
+
+#: sdcard-removed-eject-successfully
+msgid "Eject successfully"
+msgstr ""
+
+#: sdcard-removed-not-eject-properly
+msgid "Not eject properly"
+msgstr ""
 
 #. # Media Recoding
 #: microphone-is-on
@@ -2165,6 +2230,22 @@ msgstr "ವೀಡಿಯೋವನ್ನು ಹಂಚು"
 #: share-audio
 msgid "Share Audio"
 msgstr "ಆಡಿಯೋ ಹಂಚು"
+
+#~ msgid ""
+#~ "Updates are downloaded via data connection when Wi-Fi is not available. "
+#~ "When using data connection, phone calls may be blocked and additional "
+#~ "charges may also apply."
+#~ msgstr ""
+#~ "Wi-Fi ಲಭ್ಯವಿರದ ಸಮಯದಲ್ಲಿ ಅಪ್‌ಡೇಟ್‌ಗಳು ಡೇಟಾ ಸಂಪರ್ಕದ ಮೂಲಕ ಡೌನ್‌ಲೋಡ್‌ ಆಗಿದೆ,ಡೇಟಾ "
+#~ "ಸಂಪರ್ಕವನ್ನು ಬಳಸಿದಾಗ, ಫೋನ್‌ ಕರೆಗಳು ನಿರ್ಬಂಧಿಸಬಹುದು ಮತ್ತು ಹೆಚ್ಚುವರಿ ಡೇಟಾ ವೆಚ್ಚಗಳು ಸಹ "
+#~ "ಅನ್ವಯವಾಗಬಹುದು."
+
+#~ msgid ""
+#~ "A username and password are being requested by {{host}}. The site says: "
+#~ "“{{realm}}”"
+#~ msgstr ""
+#~ "{{host}} ಇಂದ ಒಂದು ಬಳಕೆದಾರ ಪದ ಹಾಗು ಗುಪ್ತಪದಕ್ಕಾಗಿ ಮನವಿ ಸಲ್ಲಿಸಲಾಗಿದೆ. ತಾಣವು "
+#~ "ಹೀಗೆ ಹೇಳುತ್ತದೆ: “{{realm}}”"
 
 #~ msgid "Airplane mode"
 #~ msgstr "ಏರ್‌ಪ್ಲೇನ್‌ ಸ್ಥಿತಿ"
