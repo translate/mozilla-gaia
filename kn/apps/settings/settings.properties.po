@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-29 14:37+0000\n"
+"POT-Creation-Date: 2014-09-03 10:18+0000\n"
 "PO-Revision-Date: 2014-07-29 14:30+0000\n"
 "Last-Translator: Omshivaprakash <omshivaprakash@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1133,6 +1133,21 @@ msgstr "ಮಾನ್ಯತೆ ಪಡೆದಿದೆ"
 msgid "APN"
 msgstr "APN"
 
+#: apnSettings
+#, fuzzy
+msgid "APN settings"
+msgstr "A-GPS ಸಿದ್ದತೆಗಳು"
+
+#. # LOCALIZATION NOTE (apnSettings-header): if you leave the original
+#. # en-US value "{{apnSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "apnSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: apnSettings-header
+#, fuzzy
+msgid "{{apnSettings}}"
+msgstr "{{fdnSettings}}"
+
 #: dataSettings
 msgid "Data settings"
 msgstr "ಡೇಟಾ ಸಿದ್ಧತೆಗಳು"
@@ -1197,6 +1212,10 @@ msgstr "IMS ಸಿದ್ದತೆಗಳು"
 #: imsSettings-header2
 msgid "{{imsSettings}}"
 msgstr "{{imsSettings}}"
+
+#: apn-editor-header
+msgid "APN Editor"
+msgstr ""
 
 #: mmsport
 msgid "MMS port"
@@ -1274,6 +1293,10 @@ msgstr "IPv6"
 msgid "IPv4/IPv6"
 msgstr "IPv4/IPv6"
 
+#: apn-type
+msgid "APN Type"
+msgstr ""
+
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
 msgstr "ಡೇಟಾ ಸಂಪರ್ಕವನ್ನು ON ಮಾಡಬೇಕೆ?"
@@ -1298,6 +1321,20 @@ msgstr ""
 "ನಿಮ್ಮ ಸೇವಾ ಒಪ್ಪಂದದ ಪ್ರಕಾರ, ನೀವು roamingನಲ್ಲಿರುವಾಗ ಡೇಟಾಗಾಗಿ ಹೆಚ್ಚಿನ ಹಣ "
 "ತೆರಬೇಕಾಗಬಹುದು."
 
+#: change-apn-warning-message
+msgid ""
+"Depending on your service agreement, changing your APN setting may result in "
+"extra charges when roaming."
+msgstr ""
+
+#: change-apn-warning-question
+msgid "Do you want to proceed?"
+msgstr ""
+
+#: reset-apn-warning-message
+msgid "This resets the settings to default values. This cannot be undone."
+msgstr ""
+
 #: state-unknown
 msgid "Unknown state"
 msgstr "ಗೊತ್ತಿರದ ಸ್ಥಿತಿ"
@@ -1319,6 +1356,28 @@ msgstr "ಸಂಪರ್ಕಗೊಂಡಿದೆ"
 #: state-forbidden
 msgid "Forbidden"
 msgstr "ನಿಷೇಧಿತ"
+
+#: delete-apn-confirm
+msgid "Delete this APN?"
+msgstr ""
+
+#: delete-apn
+#, fuzzy
+msgctxt "delete-apn"
+msgid "Delete"
+msgstr "ಅಳಿಸು"
+
+#: add-apn
+msgid "Add New Apn"
+msgstr ""
+
+#: reset-apn
+msgid "Reset to Default"
+msgstr ""
+
+#: apnSettings-reset
+msgid "APN settings reset"
+msgstr ""
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
@@ -1671,33 +1730,22 @@ msgstr "ಉದ್ದವಾದ"
 msgid "Select a tone"
 msgstr "ಒಂದು ರಿಂಗಣವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ"
 
-#: ringer
-msgid "Ringer"
-msgstr "ರಿಂಗಣ"
-
-#: ring-tones
+#: ringtones
 msgid "Ringtones"
 msgstr "ರಿಂಗಣಗಳು"
-
-#: alert-tones
-msgid "Alert tones"
-msgstr "ಎಚ್ಚರಿಗೆ ರಿಂಗಣಗಳು"
-
-#: manage-sounds
-msgid "Manage Sounds"
-msgstr "ಧ್ವನಿ ನಿರ್ವಹಣೆ"
-
-#: manage-ringtones
-msgid "Manage Ringtones"
-msgstr "ರಿಂಗಣಗಳ ನಿರ್ವಹಣೆ"
-
-#: other-sounds
-msgid "Other sounds"
-msgstr "ಇತರ ಧ್ವನಿಗಳು"
 
 #: alerts
 msgid "Alerts"
 msgstr "ಎಚ್ಚರಿಕೆಗಳು"
+
+#: manage-tones
+#, fuzzy
+msgid "Manage Tones"
+msgstr "ಧ್ವನಿ ನಿರ್ವಹಣೆ"
+
+#: other-sounds
+msgid "Other sounds"
+msgstr "ಇತರ ಧ್ವನಿಗಳು"
 
 #: unlock-screen
 msgid "Unlock screen"
@@ -1715,8 +1763,9 @@ msgstr "ಕಳುಹಿಸಿದ ಸಂದೇಶಗಳು"
 msgid "Alarm"
 msgstr "ಅಲಾರಂ"
 
-#: ringer-and-notification-sound
-msgid "Ringer & Notifications"
+#: ringtone-and-notification-sound
+#, fuzzy
+msgid "Ringtones & Notifications"
 msgstr "ರಿಂಗಣ ಮತ್ತು ಸೂಚನೆಗಳು"
 
 #: media-sound
@@ -2010,7 +2059,13 @@ msgstr "ನಾಲ್ಕು ಕಾಲಂಗಳು"
 msgid "Notice"
 msgstr "ಸೂಚನೆ"
 
+#: search
+msgctxt "search"
+msgid "Search"
+msgstr ""
+
 #: search-header
+msgctxt "search-header"
 msgid "Search"
 msgstr ""
 
@@ -2130,6 +2185,15 @@ msgstr "ಸಂಖ್ಯೆ"
 #: defaultKeyboardEnabled
 msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr "{{appName}} {{layoutName}} ಅನ್ನು ಪೂರ್ವನಿಯೋಜಿತ ಇನ್‌ಪುಟ್‌ ವಿಧಾನವಾಗಿಸಲಾಗಿದೆ"
+
+#. # Personalization :: Themes
+#: themes
+msgid "Themes"
+msgstr ""
+
+#: themes-header
+msgid "{{themes}}"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Accounts
@@ -2268,10 +2332,23 @@ msgstr "ನಿಮ್ಮ ಸಾಧನದ ಸ್ಥಳವನ್ನು ನೋಡಲ
 msgid "Geolocation Enabled"
 msgstr "ಭೂಸ್ಥಳ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ"
 
+#. # Error messages
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
 msgstr "ಸಾಧನವು ಸದ್ಯಕ್ಕೆ ಆಫ್‌ಲೈನ್ ಆಗಿದೆ. ಜಾಲಬಂಧಕ್ಕೆ ಸಂಪರ್ಕಹೊಂದಿ ನಂತರ ಇನ್ನೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ."
+
+#: findmydevice-error
+msgid "A Find My Device error has occurred."
+msgstr ""
+
+#: findmydevice-please-try
+msgid "Please try again."
+msgstr ""
+
+#: findmydevice-please-tap
+msgid "Please tap to try again."
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -2796,6 +2873,21 @@ msgstr ""
 msgid "Browser Privacy"
 msgstr ""
 
+#. # LOCALIZATION NOTE (browserPrivacy-header): if you leave the original
+#. # en-US value "{{browserPrivacy}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "browserPrivacy".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: browserPrivacy-header
+msgid "{{browserPrivacy}}"
+msgstr ""
+
+#: confirm-clear-title
+#, fuzzy
+msgctxt "confirm-clear-title"
+msgid "Confirmation"
+msgstr "ದೃಢೀಕರಣ"
+
 #: clear-browsing-history
 msgid "Clear browsing history"
 msgstr ""
@@ -2811,6 +2903,10 @@ msgstr ""
 #: confirm-clear-cookies-and-stored-data
 msgid "Clear cookies and other data stored by sites on this device?"
 msgstr ""
+
+#: clear-boomarks-data
+msgid "Clear bookmarks data"
+msgstr "ಪುಟಗುರುತುಗಳ ಮಾಹಿತಿಯನ್ನು ಅಳಿಸು"
 
 #: confirmClearBookmarkAppsDataDesc
 msgid ""
@@ -2935,6 +3031,19 @@ msgstr ""
 #: ums-shared-volumes
 msgid "{{list}} shared"
 msgstr "{{list}} ಹಂಚಿದೆ"
+
+#. # Storage :: USB storage
+#: transferProtocol-header
+msgid "Transfer Protocol"
+msgstr ""
+
+#: protocol-mtp
+msgid "Media transfer protocol (MTP)"
+msgstr ""
+
+#: protocol-ums
+msgid "USB mass Storage (UMS)"
+msgstr ""
 
 #. # Storage :: Media storage
 #: mediaStorage
@@ -3383,6 +3492,11 @@ msgstr "Wi-Fi ಉತ್ಪನ್ನ ADB ಯಲ್ಲಿ"
 msgid "Bluetooth output in ADB"
 msgstr "ADBಯಲ್ಲಿನ ಬ್ಲೂಟೂತ್‌ ಔಟ್‌ಪುಟ್‌"
 
+#: nfc-debugging
+#, fuzzy
+msgid "NFC output in ADB"
+msgstr "Wi-Fi ಉತ್ಪನ್ನ ADB ಯಲ್ಲಿ"
+
 #: console-enabled
 msgid "Console enabled"
 msgstr "ಕನ್ಸೋಲ್ ಸಕ್ರಿಯಗೊಂಡಿದೆ"
@@ -3746,6 +3860,8 @@ msgid "Deselect all"
 msgstr "ಏನನ್ನೂ ಆರಿಸದಿರು"
 
 #: downloads-delete
+#, fuzzy
+msgctxt "downloads-delete"
 msgid "Delete"
 msgstr "ಅಳಿಸು"
 
@@ -4200,11 +4316,17 @@ msgid ""
 "{{newSetting}}?"
 msgstr ""
 
+#~ msgid "Ringer"
+#~ msgstr "ರಿಂಗಣ"
+
+#~ msgid "Alert tones"
+#~ msgstr "ಎಚ್ಚರಿಗೆ ರಿಂಗಣಗಳು"
+
+#~ msgid "Manage Ringtones"
+#~ msgstr "ರಿಂಗಣಗಳ ನಿರ್ವಹಣೆ"
+
 #~ msgid "Are you sure you want to uninstall {{ app }}?"
 #~ msgstr "{{ app }} ತೆಗೆದುಹಾಕಲು ನೀವು ಖಚಿತವೆ?"
-
-#~ msgid "Clear bookmarks data"
-#~ msgstr "ಪುಟಗುರುತುಗಳ ಮಾಹಿತಿಯನ್ನು ಅಳಿಸು"
 
 #~ msgid "Clear private data from bookmarks?"
 #~ msgstr "ಪುಟಗುರುತುಗಳಿಂದ ಖಾಸಗಿ ಮಾಹಿತಿಯನ್ನು ಅಳಿಸಬೇಕೆ?"

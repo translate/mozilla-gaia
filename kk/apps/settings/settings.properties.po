@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-29 14:37+0000\n"
+"POT-Creation-Date: 2014-09-03 10:18+0000\n"
 "PO-Revision-Date: 2014-01-05 14:07+0000\n"
 "Last-Translator: Baurzhan <baurthefirst@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1148,6 +1148,19 @@ msgstr ""
 msgid "APN"
 msgstr "APN"
 
+#: apnSettings
+msgid "APN settings"
+msgstr "APN баптаулары"
+
+#. # LOCALIZATION NOTE (apnSettings-header): if you leave the original
+#. # en-US value "{{apnSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "apnSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: apnSettings-header
+msgid "{{apnSettings}}"
+msgstr ""
+
 #: dataSettings
 msgid "Data settings"
 msgstr "Деректер баптаулары"
@@ -1212,6 +1225,10 @@ msgstr "APN баптаулары"
 #. # in headers, you can use a shorter string here.
 #: imsSettings-header2
 msgid "{{imsSettings}}"
+msgstr ""
+
+#: apn-editor-header
+msgid "APN Editor"
 msgstr ""
 
 #: mmsport
@@ -1292,6 +1309,10 @@ msgstr ""
 msgid "IPv4/IPv6"
 msgstr ""
 
+#: apn-type
+msgid "APN Type"
+msgstr ""
+
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
 msgstr "Деректер байланысын іске қосу керек пе?"
@@ -1316,6 +1337,20 @@ msgstr ""
 "Қызмет көрсету келісімшартына байланысты, роуминг аймағында болған кезде "
 "деректер үшін қосымша ақша алынуы мүмкін."
 
+#: change-apn-warning-message
+msgid ""
+"Depending on your service agreement, changing your APN setting may result in "
+"extra charges when roaming."
+msgstr ""
+
+#: change-apn-warning-question
+msgid "Do you want to proceed?"
+msgstr ""
+
+#: reset-apn-warning-message
+msgid "This resets the settings to default values. This cannot be undone."
+msgstr ""
+
 #: state-unknown
 msgid "Unknown state"
 msgstr "Қалып-күйі белгісіз"
@@ -1337,6 +1372,27 @@ msgstr "Байланысқан"
 #: state-forbidden
 msgid "Forbidden"
 msgstr "Тыйым салынған"
+
+#: delete-apn-confirm
+msgid "Delete this APN?"
+msgstr ""
+
+#: delete-apn
+msgctxt "delete-apn"
+msgid "Delete"
+msgstr ""
+
+#: add-apn
+msgid "Add New Apn"
+msgstr ""
+
+#: reset-apn
+msgid "Reset to Default"
+msgstr ""
+
+#: apnSettings-reset
+msgid "APN settings reset"
+msgstr ""
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
@@ -1693,33 +1749,21 @@ msgstr ""
 msgid "Select a tone"
 msgstr ""
 
-#: ringer
-msgid "Ringer"
-msgstr ""
-
-#: ring-tones
+#: ringtones
 msgid "Ringtones"
 msgstr ""
 
-#: alert-tones
-msgid "Alert tones"
+#: alerts
+msgid "Alerts"
 msgstr ""
 
-#: manage-sounds
-msgid "Manage Sounds"
-msgstr ""
-
-#: manage-ringtones
-msgid "Manage Ringtones"
+#: manage-tones
+msgid "Manage Tones"
 msgstr ""
 
 #: other-sounds
 msgid "Other sounds"
 msgstr "Басқа дыбыстар"
-
-#: alerts
-msgid "Alerts"
-msgstr ""
 
 #: unlock-screen
 msgid "Unlock screen"
@@ -1737,8 +1781,8 @@ msgstr "Жіберілген хабарлама"
 msgid "Alarm"
 msgstr "Оятқыш"
 
-#: ringer-and-notification-sound
-msgid "Ringer & Notifications"
+#: ringtone-and-notification-sound
+msgid "Ringtones & Notifications"
 msgstr ""
 
 #: media-sound
@@ -2034,7 +2078,13 @@ msgstr ""
 msgid "Notice"
 msgstr ""
 
+#: search
+msgctxt "search"
+msgid "Search"
+msgstr ""
+
 #: search-header
+msgctxt "search-header"
 msgid "Search"
 msgstr ""
 
@@ -2153,6 +2203,15 @@ msgstr ""
 
 #: defaultKeyboardEnabled
 msgid "{{appName}} {{layoutName}} is set as default input method"
+msgstr ""
+
+#. # Personalization :: Themes
+#: themes
+msgid "Themes"
+msgstr ""
+
+#: themes-header
+msgid "{{themes}}"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -2290,9 +2349,22 @@ msgstr ""
 msgid "Geolocation Enabled"
 msgstr ""
 
+#. # Error messages
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
+msgstr ""
+
+#: findmydevice-error
+msgid "A Find My Device error has occurred."
+msgstr ""
+
+#: findmydevice-please-try
+msgid "Please try again."
+msgstr ""
+
+#: findmydevice-please-tap
+msgid "Please tap to try again."
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -2835,6 +2907,21 @@ msgstr ""
 msgid "Browser Privacy"
 msgstr ""
 
+#. # LOCALIZATION NOTE (browserPrivacy-header): if you leave the original
+#. # en-US value "{{browserPrivacy}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "browserPrivacy".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: browserPrivacy-header
+msgid "{{browserPrivacy}}"
+msgstr ""
+
+#: confirm-clear-title
+#, fuzzy
+msgctxt "confirm-clear-title"
+msgid "Confirmation"
+msgstr "Растау"
+
 #: clear-browsing-history
 msgid "Clear browsing history"
 msgstr ""
@@ -2850,6 +2937,10 @@ msgstr ""
 #: confirm-clear-cookies-and-stored-data
 msgid "Clear cookies and other data stored by sites on this device?"
 msgstr ""
+
+#: clear-boomarks-data
+msgid "Clear bookmarks data"
+msgstr "Бетбелгілер деректерін тазарту"
 
 #: confirmClearBookmarkAppsDataDesc
 msgid ""
@@ -2975,6 +3066,19 @@ msgstr ""
 #: ums-shared-volumes
 msgid "{{list}} shared"
 msgstr "{{list}} бөлісуде"
+
+#. # Storage :: USB storage
+#: transferProtocol-header
+msgid "Transfer Protocol"
+msgstr ""
+
+#: protocol-mtp
+msgid "Media transfer protocol (MTP)"
+msgstr ""
+
+#: protocol-ums
+msgid "USB mass Storage (UMS)"
+msgstr ""
 
 #. # Storage :: Media storage
 #: mediaStorage
@@ -3428,6 +3532,11 @@ msgstr "adb ішіндегі Wi-Fi шығысы"
 msgid "Bluetooth output in ADB"
 msgstr ""
 
+#: nfc-debugging
+#, fuzzy
+msgid "NFC output in ADB"
+msgstr "adb ішіндегі Wi-Fi шығысы"
+
 #: console-enabled
 msgid "Console enabled"
 msgstr "Консоль іске қосылған"
@@ -3766,6 +3875,7 @@ msgid "Deselect all"
 msgstr ""
 
 #: downloads-delete
+msgctxt "downloads-delete"
 msgid "Delete"
 msgstr ""
 
@@ -4202,9 +4312,6 @@ msgstr ""
 #~ msgid "Are you sure you want to uninstall {{ app }}?"
 #~ msgstr "{{ app }} қолданбасын өшіруді шынымен қалайсыз ба?"
 
-#~ msgid "Clear bookmarks data"
-#~ msgstr "Бетбелгілер деректерін тазарту"
-
 #~ msgid "Clear private data from bookmarks?"
 #~ msgstr "Бетбелгілерден жеке мәліметтерді тазарту керек пе?"
 
@@ -4318,9 +4425,6 @@ msgstr ""
 #~ "When entering a roaming area, your data connection will be turned off."
 #~ msgstr ""
 #~ "Роуминг аймағына кірген кезде, мәлімет байланысыңыз сөндірілетін болады."
-
-#~ msgid "APN settings"
-#~ msgstr "APN баптаулары"
 
 #~ msgid "Hotspot"
 #~ msgstr "Қатынау нүктесі"

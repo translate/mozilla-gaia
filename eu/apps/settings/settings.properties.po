@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-29 14:37+0000\n"
+"POT-Creation-Date: 2014-09-03 10:18+0000\n"
 "PO-Revision-Date: 2014-09-01 20:48+0000\n"
 "Last-Translator: Ibai <ibai@oihanguren.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1409604486.000000\n"
@@ -1126,6 +1126,21 @@ msgstr "Afiliatua"
 msgid "APN"
 msgstr "APNa"
 
+#: apnSettings
+#, fuzzy
+msgid "APN settings"
+msgstr "A-GPS ezarpenak"
+
+#. # LOCALIZATION NOTE (apnSettings-header): if you leave the original
+#. # en-US value "{{apnSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "apnSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: apnSettings-header
+#, fuzzy
+msgid "{{apnSettings}}"
+msgstr "{{fdnSettings}}"
+
 #: dataSettings
 msgid "Data settings"
 msgstr "Datu-ezarpenak"
@@ -1190,6 +1205,10 @@ msgstr "IMS ezarpenak"
 #: imsSettings-header2
 msgid "{{imsSettings}}"
 msgstr "{{imsSettings}}"
+
+#: apn-editor-header
+msgid "APN Editor"
+msgstr ""
 
 #: mmsport
 msgid "MMS port"
@@ -1267,6 +1286,10 @@ msgstr "IPv6"
 msgid "IPv4/IPv6"
 msgstr "IPv4/IPv6"
 
+#: apn-type
+msgid "APN Type"
+msgstr ""
+
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
 msgstr "Gaitu datu-konexioa?"
@@ -1291,6 +1314,20 @@ msgstr ""
 "Zure zerbitzu-baldintzen arabera, datu-tarifa gehigarriak aplika litezke "
 "ibiltaritza-eskualde batean zaudenean."
 
+#: change-apn-warning-message
+msgid ""
+"Depending on your service agreement, changing your APN setting may result in "
+"extra charges when roaming."
+msgstr ""
+
+#: change-apn-warning-question
+msgid "Do you want to proceed?"
+msgstr ""
+
+#: reset-apn-warning-message
+msgid "This resets the settings to default values. This cannot be undone."
+msgstr ""
+
 #: state-unknown
 msgid "Unknown state"
 msgstr "Egoera ezezaguna"
@@ -1312,6 +1349,28 @@ msgstr "Konektatuta"
 #: state-forbidden
 msgid "Forbidden"
 msgstr "Debekatuta"
+
+#: delete-apn-confirm
+msgid "Delete this APN?"
+msgstr ""
+
+#: delete-apn
+#, fuzzy
+msgctxt "delete-apn"
+msgid "Delete"
+msgstr "Ezabatu"
+
+#: add-apn
+msgid "Add New Apn"
+msgstr ""
+
+#: reset-apn
+msgid "Reset to Default"
+msgstr ""
+
+#: apnSettings-reset
+msgid "APN settings reset"
+msgstr ""
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
@@ -1666,33 +1725,22 @@ msgstr "Luzea"
 msgid "Select a tone"
 msgstr "Hautatu tonua"
 
-#: ringer
-msgid "Ringer"
-msgstr "Txirrina"
-
-#: ring-tones
+#: ringtones
 msgid "Ringtones"
 msgstr "Txirrin-tonuak"
-
-#: alert-tones
-msgid "Alert tones"
-msgstr "Alerta-tonuak"
-
-#: manage-sounds
-msgid "Manage Sounds"
-msgstr "Kudeatu soinuak"
-
-#: manage-ringtones
-msgid "Manage Ringtones"
-msgstr "Kudeatu txirrin-tonuak"
-
-#: other-sounds
-msgid "Other sounds"
-msgstr "Beste soinuak"
 
 #: alerts
 msgid "Alerts"
 msgstr "Alertak"
+
+#: manage-tones
+#, fuzzy
+msgid "Manage Tones"
+msgstr "Kudeatu soinuak"
+
+#: other-sounds
+msgid "Other sounds"
+msgstr "Beste soinuak"
 
 #: unlock-screen
 msgid "Unlock screen"
@@ -1710,8 +1758,9 @@ msgstr "Bidalitako mezua"
 msgid "Alarm"
 msgstr "Alarma"
 
-#: ringer-and-notification-sound
-msgid "Ringer & Notifications"
+#: ringtone-and-notification-sound
+#, fuzzy
+msgid "Ringtones & Notifications"
 msgstr "Txirrina eta jakinarazpenak"
 
 #: media-sound
@@ -2008,7 +2057,15 @@ msgstr "Lau zutabe"
 msgid "Notice"
 msgstr "Oharra"
 
+#: search
+#, fuzzy
+msgctxt "search"
+msgid "Search"
+msgstr "Bilatu"
+
 #: search-header
+#, fuzzy
+msgctxt "search-header"
 msgid "Search"
 msgstr "Bilatu"
 
@@ -2128,6 +2185,15 @@ msgstr "zenbakia"
 #: defaultKeyboardEnabled
 msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr "{{appName}} {{layoutName}} sarrera-metodo lehenetsi gisa dago ezarrita"
+
+#. # Personalization :: Themes
+#: themes
+msgid "Themes"
+msgstr ""
+
+#: themes-header
+msgid "{{themes}}"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Accounts
@@ -2268,11 +2334,24 @@ msgstr ""
 msgid "Geolocation Enabled"
 msgstr "Geokokapena gaituta"
 
+#. # Error messages
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
 msgstr ""
 "Gailu hau lineaz kanpo dago. Konektatu sare batekin eta saiatu berriro."
+
+#: findmydevice-error
+msgid "A Find My Device error has occurred."
+msgstr ""
+
+#: findmydevice-please-try
+msgid "Please try again."
+msgstr ""
+
+#: findmydevice-please-tap
+msgid "Please tap to try again."
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -2800,6 +2879,21 @@ msgstr ""
 msgid "Browser Privacy"
 msgstr ""
 
+#. # LOCALIZATION NOTE (browserPrivacy-header): if you leave the original
+#. # en-US value "{{browserPrivacy}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "browserPrivacy".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: browserPrivacy-header
+msgid "{{browserPrivacy}}"
+msgstr ""
+
+#: confirm-clear-title
+#, fuzzy
+msgctxt "confirm-clear-title"
+msgid "Confirmation"
+msgstr "Berrespena"
+
 #: clear-browsing-history
 msgid "Clear browsing history"
 msgstr ""
@@ -2815,6 +2909,10 @@ msgstr ""
 #: confirm-clear-cookies-and-stored-data
 msgid "Clear cookies and other data stored by sites on this device?"
 msgstr ""
+
+#: clear-boomarks-data
+msgid "Clear bookmarks data"
+msgstr "Garbitu laster-marken datuak"
 
 #: confirmClearBookmarkAppsDataDesc
 msgid ""
@@ -2939,6 +3037,19 @@ msgstr ""
 #: ums-shared-volumes
 msgid "{{list}} shared"
 msgstr "{{list}} partekatuta"
+
+#. # Storage :: USB storage
+#: transferProtocol-header
+msgid "Transfer Protocol"
+msgstr ""
+
+#: protocol-mtp
+msgid "Media transfer protocol (MTP)"
+msgstr ""
+
+#: protocol-ums
+msgid "USB mass Storage (UMS)"
+msgstr ""
 
 #. # Storage :: Media storage
 #: mediaStorage
@@ -3389,6 +3500,11 @@ msgstr "Wi-Fiaren irteera ADBn"
 msgid "Bluetooth output in ADB"
 msgstr "Blueetooh-irteera ADBn"
 
+#: nfc-debugging
+#, fuzzy
+msgid "NFC output in ADB"
+msgstr "Wi-Fiaren irteera ADBn"
+
 #: console-enabled
 msgid "Console enabled"
 msgstr "Kontsola gaituta"
@@ -3753,6 +3869,8 @@ msgid "Deselect all"
 msgstr "Desautatu denak"
 
 #: downloads-delete
+#, fuzzy
+msgctxt "downloads-delete"
 msgid "Delete"
 msgstr "Ezabatu"
 
@@ -4210,17 +4328,23 @@ msgstr ""
 "{{newSetting}} gaitzean {{oldSetting}} desgaituko da. {{newSetting}} gaitu "
 "nahi duzu?"
 
-msgid "Are you sure you want to uninstall {{ app }}?"
-msgstr "Ziur zaude {{ app }} aplikazioa desinstalatu nahi duzula?"
+#~ msgid "Ringer"
+#~ msgstr "Txirrina"
 
-msgid "Clear bookmarks data"
-msgstr "Garbitu laster-marken datuak"
+#~ msgid "Alert tones"
+#~ msgstr "Alerta-tonuak"
 
-msgid "Clear private data from bookmarks?"
-msgstr "Garbitu laster-marketako datu pribatuak?"
+#~ msgid "Manage Ringtones"
+#~ msgstr "Kudeatu txirrin-tonuak"
 
-msgid "Share using USB"
-msgstr "Partekatu USB erabiliz"
+#~ msgid "Are you sure you want to uninstall {{ app }}?"
+#~ msgstr "Ziur zaude {{ app }} aplikazioa desinstalatu nahi duzula?"
+
+#~ msgid "Clear private data from bookmarks?"
+#~ msgstr "Garbitu laster-marketako datu pribatuak?"
+
+#~ msgid "Share using USB"
+#~ msgstr "Partekatu USB erabiliz"
 
 #~ msgid "WPS failed"
 #~ msgstr "WPSak huts egin du"

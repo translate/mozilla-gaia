@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-29 14:37+0000\n"
+"POT-Creation-Date: 2014-09-03 10:18+0000\n"
 "PO-Revision-Date: 2014-06-17 20:29+0000\n"
 "Last-Translator: Boniface <bonifacechallo@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1136,6 +1136,20 @@ msgstr "Washirika"
 msgid "APN"
 msgstr "APN"
 
+#: apnSettings
+msgid "APN settings"
+msgstr "Mipangilio ya APN"
+
+#. # LOCALIZATION NOTE (apnSettings-header): if you leave the original
+#. # en-US value "{{apnSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "apnSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: apnSettings-header
+#, fuzzy
+msgid "{{apnSettings}}"
+msgstr "{{fdnSettings}}"
+
 #: dataSettings
 msgid "Data settings"
 msgstr "Mipangilio ya data"
@@ -1200,6 +1214,10 @@ msgstr "Mipangilio ya IMS"
 #: imsSettings-header2
 msgid "{{imsSettings}}"
 msgstr "{{imsSettings}}"
+
+#: apn-editor-header
+msgid "APN Editor"
+msgstr ""
 
 #: mmsport
 msgid "MMS port"
@@ -1277,6 +1295,10 @@ msgstr "IPv6"
 msgid "IPv4/IPv6"
 msgstr "IPv4/IPv6"
 
+#: apn-type
+msgid "APN Type"
+msgstr ""
+
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
 msgstr "Washa muungano wa data?"
@@ -1301,6 +1323,20 @@ msgstr ""
 "Kulingana na makubaliano yako ya huduma, ada ya ziada inaweza kutumika kwa "
 "data wakati uko katika eneo la kuranda."
 
+#: change-apn-warning-message
+msgid ""
+"Depending on your service agreement, changing your APN setting may result in "
+"extra charges when roaming."
+msgstr ""
+
+#: change-apn-warning-question
+msgid "Do you want to proceed?"
+msgstr ""
+
+#: reset-apn-warning-message
+msgid "This resets the settings to default values. This cannot be undone."
+msgstr ""
+
 #: state-unknown
 msgid "Unknown state"
 msgstr "Hali isiyotambulika"
@@ -1322,6 +1358,28 @@ msgstr "Imeunganishwa"
 #: state-forbidden
 msgid "Forbidden"
 msgstr "Imekatazwa"
+
+#: delete-apn-confirm
+msgid "Delete this APN?"
+msgstr ""
+
+#: delete-apn
+#, fuzzy
+msgctxt "delete-apn"
+msgid "Delete"
+msgstr "Futa"
+
+#: add-apn
+msgid "Add New Apn"
+msgstr ""
+
+#: reset-apn
+msgid "Reset to Default"
+msgstr ""
+
+#: apnSettings-reset
+msgid "APN settings reset"
+msgstr ""
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
@@ -1677,33 +1735,22 @@ msgstr "Ndefu"
 msgid "Select a tone"
 msgstr "Chaguo tuni"
 
-#: ringer
-msgid "Ringer"
-msgstr "Kipigaji"
-
-#: ring-tones
+#: ringtones
 msgid "Ringtones"
 msgstr "Mlio wa simu"
-
-#: alert-tones
-msgid "Alert tones"
-msgstr "Tuni za hadhari"
-
-#: manage-sounds
-msgid "Manage Sounds"
-msgstr "Dhibiti Sauti"
-
-#: manage-ringtones
-msgid "Manage Ringtones"
-msgstr "Dhibiti Mlio"
-
-#: other-sounds
-msgid "Other sounds"
-msgstr "Sauti zingine"
 
 #: alerts
 msgid "Alerts"
 msgstr "Hadhari"
+
+#: manage-tones
+#, fuzzy
+msgid "Manage Tones"
+msgstr "Dhibiti Sauti"
+
+#: other-sounds
+msgid "Other sounds"
+msgstr "Sauti zingine"
 
 #: unlock-screen
 msgid "Unlock screen"
@@ -1721,8 +1768,9 @@ msgstr "Ujumbe Uliotumwa"
 msgid "Alarm"
 msgstr "King'ora"
 
-#: ringer-and-notification-sound
-msgid "Ringer & Notifications"
+#: ringtone-and-notification-sound
+#, fuzzy
+msgid "Ringtones & Notifications"
 msgstr "Kipigaji na Taarifa"
 
 #: media-sound
@@ -2017,7 +2065,13 @@ msgstr "Minara Minne"
 msgid "Notice"
 msgstr "Notisi"
 
+#: search
+msgctxt "search"
+msgid "Search"
+msgstr ""
+
 #: search-header
+msgctxt "search-header"
 msgid "Search"
 msgstr ""
 
@@ -2140,6 +2194,15 @@ msgstr "nambari"
 #: defaultKeyboardEnabled
 msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr "{{appName}} {{layoutName}} imewekwa kama mbini ya ingizo chaguo msingi"
+
+#. # Personalization :: Themes
+#: themes
+msgid "Themes"
+msgstr ""
+
+#: themes-header
+msgid "{{themes}}"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Accounts
@@ -2283,12 +2346,25 @@ msgstr ""
 msgid "Geolocation Enabled"
 msgstr "Eneo la jio Limewezeshwa"
 
+#. # Error messages
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
 msgstr ""
 "Kifaa hiki kiko nje ya mkondo kwa sasa. Unganisha kwenye mtandao na ujaribu "
 "tena."
+
+#: findmydevice-error
+msgid "A Find My Device error has occurred."
+msgstr ""
+
+#: findmydevice-please-try
+msgid "Please try again."
+msgstr ""
+
+#: findmydevice-please-tap
+msgid "Please tap to try again."
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -2824,6 +2900,21 @@ msgstr ""
 msgid "Browser Privacy"
 msgstr ""
 
+#. # LOCALIZATION NOTE (browserPrivacy-header): if you leave the original
+#. # en-US value "{{browserPrivacy}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "browserPrivacy".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: browserPrivacy-header
+msgid "{{browserPrivacy}}"
+msgstr ""
+
+#: confirm-clear-title
+#, fuzzy
+msgctxt "confirm-clear-title"
+msgid "Confirmation"
+msgstr "Uthibitisho"
+
 #: clear-browsing-history
 msgid "Clear browsing history"
 msgstr ""
@@ -2839,6 +2930,10 @@ msgstr ""
 #: confirm-clear-cookies-and-stored-data
 msgid "Clear cookies and other data stored by sites on this device?"
 msgstr ""
+
+#: clear-boomarks-data
+msgid "Clear bookmarks data"
+msgstr "Safisha data ya alamisha"
 
 #: confirmClearBookmarkAppsDataDesc
 msgid ""
@@ -2963,6 +3058,19 @@ msgstr ""
 #: ums-shared-volumes
 msgid "{{list}} shared"
 msgstr "{{list}} imeshirikishwa"
+
+#. # Storage :: USB storage
+#: transferProtocol-header
+msgid "Transfer Protocol"
+msgstr ""
+
+#: protocol-mtp
+msgid "Media transfer protocol (MTP)"
+msgstr ""
+
+#: protocol-ums
+msgid "USB mass Storage (UMS)"
+msgstr ""
 
 #. # Storage :: Media storage
 #: mediaStorage
@@ -3413,6 +3521,11 @@ msgstr "Zao la Wi-Fi katika ADB"
 msgid "Bluetooth output in ADB"
 msgstr "Zao la Bluetooth katika ADB"
 
+#: nfc-debugging
+#, fuzzy
+msgid "NFC output in ADB"
+msgstr "Zao la Wi-Fi katika ADB"
+
 #: console-enabled
 msgid "Console enabled"
 msgstr "Imewezeshwa konsali"
@@ -3777,6 +3890,8 @@ msgid "Deselect all"
 msgstr "Usichague zote"
 
 #: downloads-delete
+#, fuzzy
+msgctxt "downloads-delete"
 msgid "Delete"
 msgstr "Futa"
 
@@ -4230,11 +4345,17 @@ msgid ""
 "{{newSetting}}?"
 msgstr ""
 
+#~ msgid "Ringer"
+#~ msgstr "Kipigaji"
+
+#~ msgid "Alert tones"
+#~ msgstr "Tuni za hadhari"
+
+#~ msgid "Manage Ringtones"
+#~ msgstr "Dhibiti Mlio"
+
 #~ msgid "Are you sure you want to uninstall {{ app }}?"
 #~ msgstr "Je una uhakika unataka kusakunushua {{ app }}?"
-
-#~ msgid "Clear bookmarks data"
-#~ msgstr "Safisha data ya alamisha"
 
 #~ msgid "Clear private data from bookmarks?"
 #~ msgstr "Safisha data ya ufaragha kutoka kwa alamisha?"
@@ -4422,9 +4543,6 @@ msgstr ""
 #~ msgid ""
 #~ "When entering a roaming area, your data connection will be turned off."
 #~ msgstr "Unapoingia eneo la kuranda, muungano wa data yako utazimwa."
-
-#~ msgid "APN settings"
-#~ msgstr "Mipangilio ya APN"
 
 #~ msgid "Hotspot"
 #~ msgstr "Eneo lenye intaneti"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-29 14:37+0000\n"
+"POT-Creation-Date: 2014-09-03 10:18+0000\n"
 "PO-Revision-Date: 2014-06-25 11:37+0000\n"
 "Last-Translator: sadan <sadanjha@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1133,6 +1133,21 @@ msgstr "संबद्ध"
 msgid "APN"
 msgstr "APN"
 
+#: apnSettings
+#, fuzzy
+msgid "APN settings"
+msgstr "A-GPS सेटिंग"
+
+#. # LOCALIZATION NOTE (apnSettings-header): if you leave the original
+#. # en-US value "{{apnSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "apnSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: apnSettings-header
+#, fuzzy
+msgid "{{apnSettings}}"
+msgstr "{{fdnSettings}}"
+
 #: dataSettings
 msgid "Data settings"
 msgstr "डेटा सेटिंग"
@@ -1197,6 +1212,10 @@ msgstr "IMS सेटिंग"
 #: imsSettings-header2
 msgid "{{imsSettings}}"
 msgstr "{{imsSettings}}"
+
+#: apn-editor-header
+msgid "APN Editor"
+msgstr ""
 
 #: mmsport
 msgid "MMS port"
@@ -1274,6 +1293,10 @@ msgstr "IPv6"
 msgid "IPv4/IPv6"
 msgstr "IPv4/IPv6"
 
+#: apn-type
+msgid "APN Type"
+msgstr ""
+
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
 msgstr "डाटा कनेक्शन चालू करू?"
@@ -1298,6 +1321,20 @@ msgstr ""
 "अहाँक सेवा समझौता पर निर्भर करैत अछि, जखन अहाँ रोमिंग एरिया मे अछि तखन बाइली शुल्क "
 "लागू भ सकैत अछि"
 
+#: change-apn-warning-message
+msgid ""
+"Depending on your service agreement, changing your APN setting may result in "
+"extra charges when roaming."
+msgstr ""
+
+#: change-apn-warning-question
+msgid "Do you want to proceed?"
+msgstr ""
+
+#: reset-apn-warning-message
+msgid "This resets the settings to default values. This cannot be undone."
+msgstr ""
+
 #: state-unknown
 msgid "Unknown state"
 msgstr "अज्ञात स्थिति"
@@ -1319,6 +1356,28 @@ msgstr "कनेक्टेड"
 #: state-forbidden
 msgid "Forbidden"
 msgstr "निषेधित"
+
+#: delete-apn-confirm
+msgid "Delete this APN?"
+msgstr ""
+
+#: delete-apn
+#, fuzzy
+msgctxt "delete-apn"
+msgid "Delete"
+msgstr "मेटाउ"
+
+#: add-apn
+msgid "Add New Apn"
+msgstr ""
+
+#: reset-apn
+msgid "Reset to Default"
+msgstr ""
+
+#: apnSettings-reset
+msgid "APN settings reset"
+msgstr ""
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
@@ -1671,33 +1730,22 @@ msgstr "नमहर"
 msgid "Select a tone"
 msgstr "एकटा टोन क चयन करू"
 
-#: ringer
-msgid "Ringer"
-msgstr "घंटी"
-
-#: ring-tones
+#: ringtones
 msgid "Ringtones"
 msgstr "रिंगटोन"
-
-#: alert-tones
-msgid "Alert tones"
-msgstr "चेतावनी टोन"
-
-#: manage-sounds
-msgid "Manage Sounds"
-msgstr "ध्वनि प्रबंधित करू"
-
-#: manage-ringtones
-msgid "Manage Ringtones"
-msgstr "रिंगटोन प्रबंधित करू"
-
-#: other-sounds
-msgid "Other sounds"
-msgstr "आन ध्वनि"
 
 #: alerts
 msgid "Alerts"
 msgstr "चेतावनी"
+
+#: manage-tones
+#, fuzzy
+msgid "Manage Tones"
+msgstr "ध्वनि प्रबंधित करू"
+
+#: other-sounds
+msgid "Other sounds"
+msgstr "आन ध्वनि"
 
 #: unlock-screen
 msgid "Unlock screen"
@@ -1715,8 +1763,9 @@ msgstr "भेजल गेल समाद"
 msgid "Alarm"
 msgstr "अलार्म"
 
-#: ringer-and-notification-sound
-msgid "Ringer & Notifications"
+#: ringtone-and-notification-sound
+#, fuzzy
+msgid "Ringtones & Notifications"
 msgstr "रिंगर & सूचना"
 
 #: media-sound
@@ -2009,7 +2058,13 @@ msgstr "चारि स्तंभ"
 msgid "Notice"
 msgstr "सूचना"
 
+#: search
+msgctxt "search"
+msgid "Search"
+msgstr ""
+
 #: search-header
+msgctxt "search-header"
 msgid "Search"
 msgstr ""
 
@@ -2131,6 +2186,15 @@ msgstr "संख्या"
 #: defaultKeyboardEnabled
 msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr "{{appName}} {{layoutName}} पूर्वनिर्धारित इनपुट विधि क रूपेँ सेट कएल गेल अछि"
+
+#. # Personalization :: Themes
+#: themes
+msgid "Themes"
+msgstr ""
+
+#: themes-header
+msgid "{{themes}}"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Accounts
@@ -2271,10 +2335,23 @@ msgstr "अपन डिवाइस के स्थान देखबाक �
 msgid "Geolocation Enabled"
 msgstr "भू-स्थिति सक्रिय"
 
+#. # Error messages
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
 msgstr "ई यंत्र अखनि ऑफ लाइन अछि. नेट वर्क सँ जोड़ू आ पुनः प्रयास करू "
+
+#: findmydevice-error
+msgid "A Find My Device error has occurred."
+msgstr ""
+
+#: findmydevice-please-try
+msgid "Please try again."
+msgstr ""
+
+#: findmydevice-please-tap
+msgid "Please tap to try again."
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -2801,6 +2878,21 @@ msgstr ""
 msgid "Browser Privacy"
 msgstr ""
 
+#. # LOCALIZATION NOTE (browserPrivacy-header): if you leave the original
+#. # en-US value "{{browserPrivacy}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "browserPrivacy".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: browserPrivacy-header
+msgid "{{browserPrivacy}}"
+msgstr ""
+
+#: confirm-clear-title
+#, fuzzy
+msgctxt "confirm-clear-title"
+msgid "Confirmation"
+msgstr "पुष्टिकरण"
+
 #: clear-browsing-history
 msgid "Clear browsing history"
 msgstr ""
@@ -2816,6 +2908,10 @@ msgstr ""
 #: confirm-clear-cookies-and-stored-data
 msgid "Clear cookies and other data stored by sites on this device?"
 msgstr ""
+
+#: clear-boomarks-data
+msgid "Clear bookmarks data"
+msgstr "पुस्तकचिह्न डाटा साफ करू"
 
 #: confirmClearBookmarkAppsDataDesc
 msgid ""
@@ -2940,6 +3036,19 @@ msgstr ""
 #: ums-shared-volumes
 msgid "{{list}} shared"
 msgstr "{{list}} साझा कएल गेल"
+
+#. # Storage :: USB storage
+#: transferProtocol-header
+msgid "Transfer Protocol"
+msgstr ""
+
+#: protocol-mtp
+msgid "Media transfer protocol (MTP)"
+msgstr ""
+
+#: protocol-ums
+msgid "USB mass Storage (UMS)"
+msgstr ""
 
 #. # Storage :: Media storage
 #: mediaStorage
@@ -3387,6 +3496,11 @@ msgstr "ADB मे वाइ-फाइ उत्पादन"
 msgid "Bluetooth output in ADB"
 msgstr "ADB मे ब्लूटुथ आउटपुट"
 
+#: nfc-debugging
+#, fuzzy
+msgid "NFC output in ADB"
+msgstr "ADB मे वाइ-फाइ उत्पादन"
+
 #: console-enabled
 msgid "Console enabled"
 msgstr "कँसोल सक्षम होनाइ चाही"
@@ -3745,6 +3859,8 @@ msgid "Deselect all"
 msgstr "सभ अचयनित करू"
 
 #: downloads-delete
+#, fuzzy
+msgctxt "downloads-delete"
 msgid "Delete"
 msgstr "मेटाउ"
 
@@ -4198,11 +4314,17 @@ msgid ""
 "{{newSetting}}?"
 msgstr ""
 
+#~ msgid "Ringer"
+#~ msgstr "घंटी"
+
+#~ msgid "Alert tones"
+#~ msgstr "चेतावनी टोन"
+
+#~ msgid "Manage Ringtones"
+#~ msgstr "रिंगटोन प्रबंधित करू"
+
 #~ msgid "Are you sure you want to uninstall {{ app }}?"
 #~ msgstr "अहाँ सुनिश्चित करू जे अहाँ {{ app }} क स्थापना रद्द कएनाइ चाहैत अछि?"
-
-#~ msgid "Clear bookmarks data"
-#~ msgstr "पुस्तकचिह्न डाटा साफ करू"
 
 #~ msgid "Clear private data from bookmarks?"
 #~ msgstr "पुस्तकचिह्न सँ निज डाटा साफ करू?"

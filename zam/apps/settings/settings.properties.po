@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-29 14:37+0000\n"
+"POT-Creation-Date: 2014-09-03 10:18+0000\n"
 "PO-Revision-Date: 2014-06-13 01:17+0000\n"
 "Last-Translator: Rodrigo <rodrigo_perez_r@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1118,6 +1118,21 @@ msgstr ""
 msgid "APN"
 msgstr "APN"
 
+#: apnSettings
+#, fuzzy
+msgid "APN settings"
+msgstr "thus kue IMS"
+
+#. # LOCALIZATION NOTE (apnSettings-header): if you leave the original
+#. # en-US value "{{apnSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "apnSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: apnSettings-header
+#, fuzzy
+msgid "{{apnSettings}}"
+msgstr "{{fdnSettings}}"
+
 #: dataSettings
 msgid "Data settings"
 msgstr "Thus kue dizh re"
@@ -1184,6 +1199,10 @@ msgstr "thus kue IMS"
 #: imsSettings-header2
 msgid "{{imsSettings}}"
 msgstr "{{imsSettings}}"
+
+#: apn-editor-header
+msgid "APN Editor"
+msgstr ""
 
 #: mmsport
 msgid "MMS port"
@@ -1261,6 +1280,10 @@ msgstr "IPv6"
 msgid "IPv4/IPv6"
 msgstr "IPv4/IPv6"
 
+#: apn-type
+msgid "APN Type"
+msgstr ""
+
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
 msgstr ""
@@ -1279,6 +1302,20 @@ msgstr ""
 msgid ""
 "Depending on your service agreement, extra charges may apply for data when "
 "you are in a roaming area."
+msgstr ""
+
+#: change-apn-warning-message
+msgid ""
+"Depending on your service agreement, changing your APN setting may result in "
+"extra charges when roaming."
+msgstr ""
+
+#: change-apn-warning-question
+msgid "Do you want to proceed?"
+msgstr ""
+
+#: reset-apn-warning-message
+msgid "This resets the settings to default values. This cannot be undone."
 msgstr ""
 
 #: state-unknown
@@ -1301,6 +1338,28 @@ msgstr "Taak laa lii chel kue"
 
 #: state-forbidden
 msgid "Forbidden"
+msgstr ""
+
+#: delete-apn-confirm
+msgid "Delete this APN?"
+msgstr ""
+
+#: delete-apn
+#, fuzzy
+msgctxt "delete-apn"
+msgid "Delete"
+msgstr "Te dont na"
+
+#: add-apn
+msgid "Add New Apn"
+msgstr ""
+
+#: reset-apn
+msgid "Reset to Default"
+msgstr ""
+
+#: apnSettings-reset
+msgid "APN settings reset"
 msgstr ""
 
 #. # Connectivity :: Bluetooth
@@ -1651,33 +1710,21 @@ msgstr "Na ruy"
 msgid "Select a tone"
 msgstr "Mxhen xha xhon na"
 
-#: ringer
-msgid "Ringer"
-msgstr "Xha dizh ah"
-
-#: ring-tones
+#: ringtones
 msgid "Ringtones"
 msgstr "Xha tak dizh ah"
 
-#: alert-tones
-msgid "Alert tones"
-msgstr "Xha dizh kue"
+#: alerts
+msgid "Alerts"
+msgstr "Xha dizh ah"
 
-#: manage-sounds
-msgid "Manage Sounds"
-msgstr ""
-
-#: manage-ringtones
-msgid "Manage Ringtones"
+#: manage-tones
+msgid "Manage Tones"
 msgstr ""
 
 #: other-sounds
 msgid "Other sounds"
 msgstr "Bin ta más dizh"
-
-#: alerts
-msgid "Alerts"
-msgstr "Xha dizh ah"
 
 #: unlock-screen
 msgid "Unlock screen"
@@ -1695,8 +1742,8 @@ msgstr "Tal Dizh"
 msgid "Alarm"
 msgstr "Ko lu ka lol"
 
-#: ringer-and-notification-sound
-msgid "Ringer & Notifications"
+#: ringtone-and-notification-sound
+msgid "Ringtones & Notifications"
 msgstr ""
 
 #: media-sound
@@ -1987,7 +2034,13 @@ msgstr ""
 msgid "Notice"
 msgstr ""
 
+#: search
+msgctxt "search"
+msgid "Search"
+msgstr ""
+
 #: search-header
+msgctxt "search-header"
 msgid "Search"
 msgstr ""
 
@@ -2103,6 +2156,15 @@ msgstr ""
 
 #: defaultKeyboardEnabled
 msgid "{{appName}} {{layoutName}} is set as default input method"
+msgstr ""
+
+#. # Personalization :: Themes
+#: themes
+msgid "Themes"
+msgstr ""
+
+#: themes-header
+msgid "{{themes}}"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -2240,9 +2302,22 @@ msgstr ""
 msgid "Geolocation Enabled"
 msgstr ""
 
+#. # Error messages
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
+msgstr ""
+
+#: findmydevice-error
+msgid "A Find My Device error has occurred."
+msgstr ""
+
+#: findmydevice-please-try
+msgid "Please try again."
+msgstr ""
+
+#: findmydevice-please-tap
+msgid "Please tap to try again."
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -2733,6 +2808,21 @@ msgstr ""
 msgid "Browser Privacy"
 msgstr ""
 
+#. # LOCALIZATION NOTE (browserPrivacy-header): if you leave the original
+#. # en-US value "{{browserPrivacy}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "browserPrivacy".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: browserPrivacy-header
+msgid "{{browserPrivacy}}"
+msgstr ""
+
+#: confirm-clear-title
+#, fuzzy
+msgctxt "confirm-clear-title"
+msgid "Confirmation"
+msgstr "Li ni ga"
+
 #: clear-browsing-history
 msgid "Clear browsing history"
 msgstr ""
@@ -2748,6 +2838,10 @@ msgstr ""
 #: confirm-clear-cookies-and-stored-data
 msgid "Clear cookies and other data stored by sites on this device?"
 msgstr ""
+
+#: clear-boomarks-data
+msgid "Clear bookmarks data"
+msgstr "To mbi ko do lash na"
 
 #: confirmClearBookmarkAppsDataDesc
 msgid ""
@@ -2868,6 +2962,19 @@ msgstr ""
 #: ums-shared-volumes
 msgid "{{list}} shared"
 msgstr "{{list}} tal"
+
+#. # Storage :: USB storage
+#: transferProtocol-header
+msgid "Transfer Protocol"
+msgstr ""
+
+#: protocol-mtp
+msgid "Media transfer protocol (MTP)"
+msgstr ""
+
+#: protocol-ums
+msgid "USB mass Storage (UMS)"
+msgstr ""
 
 #. # Storage :: Media storage
 #: mediaStorage
@@ -3311,6 +3418,10 @@ msgstr ""
 msgid "Bluetooth output in ADB"
 msgstr ""
 
+#: nfc-debugging
+msgid "NFC output in ADB"
+msgstr ""
+
 #: console-enabled
 msgid "Console enabled"
 msgstr ""
@@ -3650,6 +3761,8 @@ msgid "Deselect all"
 msgstr "Bla reey"
 
 #: downloads-delete
+#, fuzzy
+msgctxt "downloads-delete"
 msgid "Delete"
 msgstr "Te dont na"
 
@@ -4072,8 +4185,11 @@ msgid ""
 "{{newSetting}}?"
 msgstr ""
 
-#~ msgid "Clear bookmarks data"
-#~ msgstr "To mbi ko do lash na"
+#~ msgid "Ringer"
+#~ msgstr "Xha dizh ah"
+
+#~ msgid "Alert tones"
+#~ msgstr "Xha dizh kue"
 
 #~ msgid "Share using USB"
 #~ msgstr "Toob kue ner de xhin lu USB"

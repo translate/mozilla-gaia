@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-29 14:37+0000\n"
+"POT-Creation-Date: 2014-09-03 10:18+0000\n"
 "PO-Revision-Date: 2014-09-02 14:31+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -1131,6 +1131,20 @@ msgstr "Dlùth-chompanach"
 msgid "APN"
 msgstr "APN"
 
+#: apnSettings
+msgid "APN settings"
+msgstr "Roghainnean APN"
+
+#. # LOCALIZATION NOTE (apnSettings-header): if you leave the original
+#. # en-US value "{{apnSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "apnSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: apnSettings-header
+#, fuzzy
+msgid "{{apnSettings}}"
+msgstr "{{fdnSettings}}"
+
 #: dataSettings
 msgid "Data settings"
 msgstr "Roghainnean dàta"
@@ -1195,6 +1209,10 @@ msgstr "Roghainnean IMS"
 #: imsSettings-header2
 msgid "{{imsSettings}}"
 msgstr "{{imsSettings}}"
+
+#: apn-editor-header
+msgid "APN Editor"
+msgstr ""
 
 #: mmsport
 msgid "MMS port"
@@ -1272,6 +1290,10 @@ msgstr "IPv6"
 msgid "IPv4/IPv6"
 msgstr "IPv4/IPv6"
 
+#: apn-type
+msgid "APN Type"
+msgstr ""
+
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
 msgstr "A bheil thu airson an ceangal dàta a chur AIR?"
@@ -1296,6 +1318,20 @@ msgstr ""
 "A-rèir aonta na seirbheise agad, dh'fhaoidte gun èirich cosgaisean a "
 "bharrachd dhut ma chleachdas tu dàta air fàrsan."
 
+#: change-apn-warning-message
+msgid ""
+"Depending on your service agreement, changing your APN setting may result in "
+"extra charges when roaming."
+msgstr ""
+
+#: change-apn-warning-question
+msgid "Do you want to proceed?"
+msgstr ""
+
+#: reset-apn-warning-message
+msgid "This resets the settings to default values. This cannot be undone."
+msgstr ""
+
 #: state-unknown
 msgid "Unknown state"
 msgstr "Staid neo-aithnichte"
@@ -1317,6 +1353,28 @@ msgstr "Air ceangal a dhèanamh"
 #: state-forbidden
 msgid "Forbidden"
 msgstr "Toirmisgte"
+
+#: delete-apn-confirm
+msgid "Delete this APN?"
+msgstr ""
+
+#: delete-apn
+#, fuzzy
+msgctxt "delete-apn"
+msgid "Delete"
+msgstr "Sguab às"
+
+#: add-apn
+msgid "Add New Apn"
+msgstr ""
+
+#: reset-apn
+msgid "Reset to Default"
+msgstr ""
+
+#: apnSettings-reset
+msgid "APN settings reset"
+msgstr ""
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
@@ -1675,33 +1733,22 @@ msgstr "Fada"
 msgid "Select a tone"
 msgstr "Tagh seirm"
 
-#: ringer
-msgid "Ringer"
-msgstr "Seirm"
-
-#: ring-tones
+#: ringtones
 msgid "Ringtones"
 msgstr "Fuaimean seirme"
-
-#: alert-tones
-msgid "Alert tones"
-msgstr "Seirmean chaismeachdan"
-
-#: manage-sounds
-msgid "Manage Sounds"
-msgstr "Stiùirich na fuaimean"
-
-#: manage-ringtones
-msgid "Manage Ringtones"
-msgstr "Stiùirich na seirmean"
-
-#: other-sounds
-msgid "Other sounds"
-msgstr "Fuaimean eile"
 
 #: alerts
 msgid "Alerts"
 msgstr "Caismeachdan"
+
+#: manage-tones
+#, fuzzy
+msgid "Manage Tones"
+msgstr "Stiùirich na fuaimean"
+
+#: other-sounds
+msgid "Other sounds"
+msgstr "Fuaimean eile"
 
 #: unlock-screen
 msgid "Unlock screen"
@@ -1719,8 +1766,9 @@ msgstr "Chaidh an teachdaireachd a chur"
 msgid "Alarm"
 msgstr "Caismeachd"
 
-#: ringer-and-notification-sound
-msgid "Ringer & Notifications"
+#: ringtone-and-notification-sound
+#, fuzzy
+msgid "Ringtones & Notifications"
 msgstr "Seirm ┐ brathan"
 
 #: media-sound
@@ -2019,7 +2067,15 @@ msgstr "Ceithir colbhan"
 msgid "Notice"
 msgstr "Sanas"
 
+#: search
+#, fuzzy
+msgctxt "search"
+msgid "Search"
+msgstr "Lorg"
+
 #: search-header
+#, fuzzy
+msgctxt "search-header"
 msgid "Search"
 msgstr "Lorg"
 
@@ -2141,6 +2197,15 @@ msgstr "àireamhan"
 msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr ""
 "'S e {{appName}} {{layoutName}} an dòigh ion-chuir bhunaiteach agad an-dràsta"
+
+#. # Personalization :: Themes
+#: themes
+msgid "Themes"
+msgstr ""
+
+#: themes-header
+msgid "{{themes}}"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Accounts
@@ -2281,12 +2346,25 @@ msgstr ""
 msgid "Geolocation Enabled"
 msgstr "Tha an geò-lorgadh an comas"
 
+#. # Error messages
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
 msgstr ""
 "Tha an t-uidheam seo far loidhne an-dràsta. Ceangail ri lìonra ’s feuch ris "
 "a-rithist."
+
+#: findmydevice-error
+msgid "A Find My Device error has occurred."
+msgstr ""
+
+#: findmydevice-please-try
+msgid "Please try again."
+msgstr ""
+
+#: findmydevice-please-tap
+msgid "Please tap to try again."
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -2825,6 +2903,21 @@ msgstr ""
 msgid "Browser Privacy"
 msgstr "Prìobhaideachd a’ bhrabhsair"
 
+#. # LOCALIZATION NOTE (browserPrivacy-header): if you leave the original
+#. # en-US value "{{browserPrivacy}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "browserPrivacy".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: browserPrivacy-header
+msgid "{{browserPrivacy}}"
+msgstr ""
+
+#: confirm-clear-title
+#, fuzzy
+msgctxt "confirm-clear-title"
+msgid "Confirmation"
+msgstr "Dearbhadh"
+
 #: clear-browsing-history
 msgid "Clear browsing history"
 msgstr "Falamhaich an eachdraidh brabhsaidh"
@@ -2842,6 +2935,10 @@ msgid "Clear cookies and other data stored by sites on this device?"
 msgstr ""
 "A bheil thu airson na briosgaidean ’s an dàta a tha làraichean a’ cumail air "
 "an uidheam seo fhalamhadh?"
+
+#: clear-boomarks-data
+msgid "Clear bookmarks data"
+msgstr "Falamhaich dàta nan comharran-lìn"
 
 #: confirmClearBookmarkAppsDataDesc
 msgid ""
@@ -2966,6 +3063,19 @@ msgstr ""
 #: ums-shared-volumes
 msgid "{{list}} shared"
 msgstr "{{list}} air a cho-roinneadh"
+
+#. # Storage :: USB storage
+#: transferProtocol-header
+msgid "Transfer Protocol"
+msgstr ""
+
+#: protocol-mtp
+msgid "Media transfer protocol (MTP)"
+msgstr ""
+
+#: protocol-ums
+msgid "USB mass Storage (UMS)"
+msgstr ""
 
 #. # Storage :: Media storage
 #: mediaStorage
@@ -3418,6 +3528,11 @@ msgstr "Seall às-chur WiFi ann an ADB"
 msgid "Bluetooth output in ADB"
 msgstr "Às-chur Bluetooth an ADB"
 
+#: nfc-debugging
+#, fuzzy
+msgid "NFC output in ADB"
+msgstr "Seall às-chur WiFi ann an ADB"
+
 #: console-enabled
 msgid "Console enabled"
 msgstr "Tha a' chonsoil an comas"
@@ -3784,6 +3899,8 @@ msgid "Deselect all"
 msgstr "Dì-thagh na h-uile"
 
 #: downloads-delete
+#, fuzzy
+msgctxt "downloads-delete"
 msgid "Delete"
 msgstr "Sguab às"
 
@@ -4249,11 +4366,17 @@ msgstr ""
 "Ma chuireas tu {{newSetting}} an comas, thèid {{oldSetting}} a chur à comas. "
 "A bheil thu airson {{newSetting}} a chur an comas?"
 
+#~ msgid "Ringer"
+#~ msgstr "Seirm"
+
+#~ msgid "Alert tones"
+#~ msgstr "Seirmean chaismeachdan"
+
+#~ msgid "Manage Ringtones"
+#~ msgstr "Stiùirich na seirmean"
+
 #~ msgid "Are you sure you want to uninstall {{ app }}?"
 #~ msgstr "A bheil thu cinnteach gu bheil thu airson {{ app }} a dhì-stàladh?"
-
-#~ msgid "Clear bookmarks data"
-#~ msgstr "Falamhaich dàta nan comharran-lìn"
 
 #~ msgid "Clear private data from bookmarks?"
 #~ msgstr ""
@@ -4478,9 +4601,6 @@ msgstr ""
 #~ "When entering a roaming area, your data connection will be turned off."
 #~ msgstr ""
 #~ "Thèid an ceangal dàta agad a chur dheth nuair a dh'fhalbhas tu air fàrsan."
-
-#~ msgid "APN settings"
-#~ msgstr "Roghainnean APN"
 
 #~ msgid "Hotspot"
 #~ msgstr "Hotspot"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-29 14:37+0000\n"
+"POT-Creation-Date: 2014-09-03 10:18+0000\n"
 "PO-Revision-Date: 2014-08-06 19:52+0000\n"
 "Last-Translator: af-ZA04_Karen <translation@lando.co.za>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1140,6 +1140,20 @@ msgstr "Geaffilieerd"
 msgid "APN"
 msgstr "APN"
 
+#: apnSettings
+msgid "APN settings"
+msgstr "APN-instellings"
+
+#. # LOCALIZATION NOTE (apnSettings-header): if you leave the original
+#. # en-US value "{{apnSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "apnSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: apnSettings-header
+#, fuzzy
+msgid "{{apnSettings}}"
+msgstr "{{fdnSettings}}"
+
 #: dataSettings
 msgid "Data settings"
 msgstr "Datainstellings"
@@ -1204,6 +1218,10 @@ msgstr "IMS-instellings"
 #: imsSettings-header2
 msgid "{{imsSettings}}"
 msgstr "{{imsSettings}}"
+
+#: apn-editor-header
+msgid "APN Editor"
+msgstr ""
 
 #: mmsport
 msgid "MMS port"
@@ -1281,6 +1299,10 @@ msgstr "IPv6"
 msgid "IPv4/IPv6"
 msgstr "IPv4/IPv6"
 
+#: apn-type
+msgid "APN Type"
+msgstr ""
+
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
 msgstr "Skakel dataverbinding AAN?"
@@ -1305,6 +1327,20 @@ msgstr ""
 "Daar kan dalk ekstra koste wees as jy in ’n swerwingsarea is, afhangende van "
 "jou diensooreenkoms."
 
+#: change-apn-warning-message
+msgid ""
+"Depending on your service agreement, changing your APN setting may result in "
+"extra charges when roaming."
+msgstr ""
+
+#: change-apn-warning-question
+msgid "Do you want to proceed?"
+msgstr ""
+
+#: reset-apn-warning-message
+msgid "This resets the settings to default values. This cannot be undone."
+msgstr ""
+
 #: state-unknown
 msgid "Unknown state"
 msgstr "Onbekende stand"
@@ -1326,6 +1362,28 @@ msgstr "Gekoppel"
 #: state-forbidden
 msgid "Forbidden"
 msgstr "Verbode"
+
+#: delete-apn-confirm
+msgid "Delete this APN?"
+msgstr ""
+
+#: delete-apn
+#, fuzzy
+msgctxt "delete-apn"
+msgid "Delete"
+msgstr "Skrap"
+
+#: add-apn
+msgid "Add New Apn"
+msgstr ""
+
+#: reset-apn
+msgid "Reset to Default"
+msgstr ""
+
+#: apnSettings-reset
+msgid "APN settings reset"
+msgstr ""
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
@@ -1679,33 +1737,22 @@ msgstr "Lank"
 msgid "Select a tone"
 msgstr "Kies ’n toon"
 
-#: ringer
-msgid "Ringer"
-msgstr "Luier"
-
-#: ring-tones
+#: ringtones
 msgid "Ringtones"
 msgstr "Luitone"
-
-#: alert-tones
-msgid "Alert tones"
-msgstr "Waarskuwingstone"
-
-#: manage-sounds
-msgid "Manage Sounds"
-msgstr "Bestuur klanke"
-
-#: manage-ringtones
-msgid "Manage Ringtones"
-msgstr "Bestuur luitone"
-
-#: other-sounds
-msgid "Other sounds"
-msgstr "Ander klanke"
 
 #: alerts
 msgid "Alerts"
 msgstr "Waarskuwings"
+
+#: manage-tones
+#, fuzzy
+msgid "Manage Tones"
+msgstr "Bestuur klanke"
+
+#: other-sounds
+msgid "Other sounds"
+msgstr "Ander klanke"
 
 #: unlock-screen
 msgid "Unlock screen"
@@ -1723,8 +1770,9 @@ msgstr "Gestuurde boodskap"
 msgid "Alarm"
 msgstr "Alarm"
 
-#: ringer-and-notification-sound
-msgid "Ringer & Notifications"
+#: ringtone-and-notification-sound
+#, fuzzy
+msgid "Ringtones & Notifications"
 msgstr "Luier en kennisgewings"
 
 #: media-sound
@@ -2020,7 +2068,13 @@ msgstr "Vier kolomme"
 msgid "Notice"
 msgstr "Kennisgewing"
 
+#: search
+msgctxt "search"
+msgid "Search"
+msgstr ""
+
 #: search-header
+msgctxt "search-header"
 msgid "Search"
 msgstr ""
 
@@ -2143,6 +2197,15 @@ msgstr "nommer"
 #: defaultKeyboardEnabled
 msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr "{{appName}} {{layoutName}} is as verstek toevoermetode gestel"
+
+#. # Personalization :: Themes
+#: themes
+msgid "Themes"
+msgstr ""
+
+#: themes-header
+msgid "{{themes}}"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Accounts
@@ -2284,10 +2347,23 @@ msgstr ""
 msgid "Geolocation Enabled"
 msgstr "Geoligging geaktiveer"
 
+#. # Error messages
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
 msgstr "Hierdie toestel is tans vanlyn. Koppel aan 'n netwerk en probeer weer."
+
+#: findmydevice-error
+msgid "A Find My Device error has occurred."
+msgstr ""
+
+#: findmydevice-please-try
+msgid "Please try again."
+msgstr ""
+
+#: findmydevice-please-tap
+msgid "Please tap to try again."
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -2826,6 +2902,21 @@ msgstr ""
 msgid "Browser Privacy"
 msgstr ""
 
+#. # LOCALIZATION NOTE (browserPrivacy-header): if you leave the original
+#. # en-US value "{{browserPrivacy}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "browserPrivacy".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: browserPrivacy-header
+msgid "{{browserPrivacy}}"
+msgstr ""
+
+#: confirm-clear-title
+#, fuzzy
+msgctxt "confirm-clear-title"
+msgid "Confirmation"
+msgstr "Bevestiging"
+
 #: clear-browsing-history
 msgid "Clear browsing history"
 msgstr ""
@@ -2841,6 +2932,10 @@ msgstr ""
 #: confirm-clear-cookies-and-stored-data
 msgid "Clear cookies and other data stored by sites on this device?"
 msgstr ""
+
+#: clear-boomarks-data
+msgid "Clear bookmarks data"
+msgstr "Wis boekmerkdata"
 
 #: confirmClearBookmarkAppsDataDesc
 msgid ""
@@ -2965,6 +3060,19 @@ msgstr ""
 #: ums-shared-volumes
 msgid "{{list}} shared"
 msgstr "{{list}} gedeel"
+
+#. # Storage :: USB storage
+#: transferProtocol-header
+msgid "Transfer Protocol"
+msgstr ""
+
+#: protocol-mtp
+msgid "Media transfer protocol (MTP)"
+msgstr ""
+
+#: protocol-ums
+msgid "USB mass Storage (UMS)"
+msgstr ""
 
 #. # Storage :: Media storage
 #: mediaStorage
@@ -3413,6 +3521,11 @@ msgstr "Wi-Fi-afvoer in ADB"
 msgid "Bluetooth output in ADB"
 msgstr "Bluetooth-afvoer in ADB"
 
+#: nfc-debugging
+#, fuzzy
+msgid "NFC output in ADB"
+msgstr "Wi-Fi-afvoer in ADB"
+
 #: console-enabled
 msgid "Console enabled"
 msgstr "Konsole geaktiveer"
@@ -3778,6 +3891,8 @@ msgid "Deselect all"
 msgstr "Ontkies almal"
 
 #: downloads-delete
+#, fuzzy
+msgctxt "downloads-delete"
 msgid "Delete"
 msgstr "Skrap"
 
@@ -4232,11 +4347,17 @@ msgid ""
 "{{newSetting}}?"
 msgstr ""
 
+#~ msgid "Ringer"
+#~ msgstr "Luier"
+
+#~ msgid "Alert tones"
+#~ msgstr "Waarskuwingstone"
+
+#~ msgid "Manage Ringtones"
+#~ msgstr "Bestuur luitone"
+
 #~ msgid "Are you sure you want to uninstall {{ app }}?"
 #~ msgstr "Is jy seker jy wil {{ app }} deïnstalleer?"
-
-#~ msgid "Clear bookmarks data"
-#~ msgstr "Wis boekmerkdata"
 
 #~ msgid "Clear private data from bookmarks?"
 #~ msgstr "Wis private data uit boekmerke?"
@@ -4386,9 +4507,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Wanneer jy ’n swerwingsarea ingaan, sal jou dataverbinding afgeskakel "
 #~ "word."
-
-#~ msgid "APN settings"
-#~ msgstr "APN-instellings"
 
 #~ msgid "Confirm devices to pair"
 #~ msgstr "Bevestig toestelle wat moet saambind"

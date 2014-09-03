@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-29 14:37+0000\n"
+"POT-Creation-Date: 2014-09-03 10:18+0000\n"
 "PO-Revision-Date: 2014-09-01 19:39+0000\n"
 "Last-Translator: Akmal <akmalxster@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1409600355.000000\n"
@@ -1130,6 +1130,21 @@ msgstr "Birlashgan"
 msgid "APN"
 msgstr "APN"
 
+#: apnSettings
+#, fuzzy
+msgid "APN settings"
+msgstr "A-GPS sozlamalari"
+
+#. # LOCALIZATION NOTE (apnSettings-header): if you leave the original
+#. # en-US value "{{apnSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "apnSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: apnSettings-header
+#, fuzzy
+msgid "{{apnSettings}}"
+msgstr "{{fdnSettings}}"
+
 #: dataSettings
 msgid "Data settings"
 msgstr "Internet sozlamalari"
@@ -1194,6 +1209,10 @@ msgstr "IMS sozlamalari"
 #: imsSettings-header2
 msgid "{{imsSettings}}"
 msgstr "{{imsSettings}}"
+
+#: apn-editor-header
+msgid "APN Editor"
+msgstr ""
 
 #: mmsport
 msgid "MMS port"
@@ -1271,6 +1290,10 @@ msgstr "IPv6"
 msgid "IPv4/IPv6"
 msgstr "IPv4/IPv6"
 
+#: apn-type
+msgid "APN Type"
+msgstr ""
+
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
 msgstr "Internetga ulanish yoqilsinmi?"
@@ -1295,6 +1318,20 @@ msgstr ""
 "Xizmat shartlaringizga bog‘liq holda rouming hududida bo‘lganingizda "
 "internet uchun qo‘shimcha to‘lovlar olinishi mumkin."
 
+#: change-apn-warning-message
+msgid ""
+"Depending on your service agreement, changing your APN setting may result in "
+"extra charges when roaming."
+msgstr ""
+
+#: change-apn-warning-question
+msgid "Do you want to proceed?"
+msgstr ""
+
+#: reset-apn-warning-message
+msgid "This resets the settings to default values. This cannot be undone."
+msgstr ""
+
 #: state-unknown
 msgid "Unknown state"
 msgstr "Noma’lum holat"
@@ -1316,6 +1353,28 @@ msgstr "Ulandi"
 #: state-forbidden
 msgid "Forbidden"
 msgstr "Taqiqlandi"
+
+#: delete-apn-confirm
+msgid "Delete this APN?"
+msgstr ""
+
+#: delete-apn
+#, fuzzy
+msgctxt "delete-apn"
+msgid "Delete"
+msgstr "O‘chirish"
+
+#: add-apn
+msgid "Add New Apn"
+msgstr ""
+
+#: reset-apn
+msgid "Reset to Default"
+msgstr ""
+
+#: apnSettings-reset
+msgid "APN settings reset"
+msgstr ""
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
@@ -1673,33 +1732,22 @@ msgstr "Uzun"
 msgid "Select a tone"
 msgstr "Ohangni tanlang"
 
-#: ringer
-msgid "Ringer"
-msgstr "Qo‘ng‘iroq"
-
-#: ring-tones
+#: ringtones
 msgid "Ringtones"
 msgstr "Ringtonlar"
-
-#: alert-tones
-msgid "Alert tones"
-msgstr "Ogohlantirgich ohanglari"
-
-#: manage-sounds
-msgid "Manage Sounds"
-msgstr "Ovozlarni boshqarish"
-
-#: manage-ringtones
-msgid "Manage Ringtones"
-msgstr "Ringtonlarni boshqarish"
-
-#: other-sounds
-msgid "Other sounds"
-msgstr "Boshqa ovozlar"
 
 #: alerts
 msgid "Alerts"
 msgstr "Ogohlantirish signallari"
+
+#: manage-tones
+#, fuzzy
+msgid "Manage Tones"
+msgstr "Ovozlarni boshqarish"
+
+#: other-sounds
+msgid "Other sounds"
+msgstr "Boshqa ovozlar"
 
 #: unlock-screen
 msgid "Unlock screen"
@@ -1717,8 +1765,9 @@ msgstr "Jo‘natilgan xabar"
 msgid "Alarm"
 msgstr "Uyg‘otgich"
 
-#: ringer-and-notification-sound
-msgid "Ringer & Notifications"
+#: ringtone-and-notification-sound
+#, fuzzy
+msgid "Ringtones & Notifications"
 msgstr "Qo‘ng‘iroq va eslatmalar"
 
 #: media-sound
@@ -2013,7 +2062,15 @@ msgstr "To‘rtta ustun"
 msgid "Notice"
 msgstr "Eslatma"
 
+#: search
+#, fuzzy
+msgctxt "search"
+msgid "Search"
+msgstr "Qidirish"
+
 #: search-header
+#, fuzzy
+msgctxt "search-header"
 msgid "Search"
 msgstr "Qidirish"
 
@@ -2134,6 +2191,15 @@ msgstr "raqam"
 #: defaultKeyboardEnabled
 msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr "{{appName}} {{layoutName}} standart yozish uslubi sifatida o‘rnatildi"
+
+#. # Personalization :: Themes
+#: themes
+msgid "Themes"
+msgstr ""
+
+#: themes-header
+msgid "{{themes}}"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Accounts
@@ -2275,11 +2341,24 @@ msgstr ""
 msgid "Geolocation Enabled"
 msgstr "Geojoylashuv yoqildi"
 
+#. # Error messages
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
 msgstr ""
 "Ushbu qurilma hozirda oflayn. Tarmoqqa ulaning va qaytadan urinib ko‘ring."
+
+#: findmydevice-error
+msgid "A Find My Device error has occurred."
+msgstr ""
+
+#: findmydevice-please-try
+msgid "Please try again."
+msgstr ""
+
+#: findmydevice-please-tap
+msgid "Please tap to try again."
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -2815,6 +2894,21 @@ msgstr ""
 msgid "Browser Privacy"
 msgstr ""
 
+#. # LOCALIZATION NOTE (browserPrivacy-header): if you leave the original
+#. # en-US value "{{browserPrivacy}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "browserPrivacy".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: browserPrivacy-header
+msgid "{{browserPrivacy}}"
+msgstr ""
+
+#: confirm-clear-title
+#, fuzzy
+msgctxt "confirm-clear-title"
+msgid "Confirmation"
+msgstr "Tasdiqlash"
+
 #: clear-browsing-history
 msgid "Clear browsing history"
 msgstr ""
@@ -2830,6 +2924,10 @@ msgstr ""
 #: confirm-clear-cookies-and-stored-data
 msgid "Clear cookies and other data stored by sites on this device?"
 msgstr ""
+
+#: clear-boomarks-data
+msgid "Clear bookmarks data"
+msgstr "Xatcho‘plar ma’lumotlarini tozalash"
 
 #: confirmClearBookmarkAppsDataDesc
 msgid ""
@@ -2954,6 +3052,19 @@ msgstr ""
 #: ums-shared-volumes
 msgid "{{list}} shared"
 msgstr "{{list}} bo‘lishilgan"
+
+#. # Storage :: USB storage
+#: transferProtocol-header
+msgid "Transfer Protocol"
+msgstr ""
+
+#: protocol-mtp
+msgid "Media transfer protocol (MTP)"
+msgstr ""
+
+#: protocol-ums
+msgid "USB mass Storage (UMS)"
+msgstr ""
 
 #. # Storage :: Media storage
 #: mediaStorage
@@ -3404,6 +3515,11 @@ msgstr "ADB’ga Wi-Fi chiqish"
 msgid "Bluetooth output in ADB"
 msgstr "ADB’ga Bluetooth chiqish"
 
+#: nfc-debugging
+#, fuzzy
+msgid "NFC output in ADB"
+msgstr "ADB’ga Wi-Fi chiqish"
+
 #: console-enabled
 msgid "Console enabled"
 msgstr "Terminal yoqib qo‘yildi"
@@ -3768,6 +3884,8 @@ msgid "Deselect all"
 msgstr "Belgilashni bekor qilish"
 
 #: downloads-delete
+#, fuzzy
+msgctxt "downloads-delete"
 msgid "Delete"
 msgstr "O‘chirish"
 
@@ -4227,11 +4345,17 @@ msgid ""
 "{{newSetting}}?"
 msgstr ""
 
+#~ msgid "Ringer"
+#~ msgstr "Qo‘ng‘iroq"
+
+#~ msgid "Alert tones"
+#~ msgstr "Ogohlantirgich ohanglari"
+
+#~ msgid "Manage Ringtones"
+#~ msgstr "Ringtonlarni boshqarish"
+
 #~ msgid "Are you sure you want to uninstall {{ app }}?"
 #~ msgstr "{{ app }}ni o‘chirishga ishonchingiz komilmi?"
-
-#~ msgid "Clear bookmarks data"
-#~ msgstr "Xatcho‘plar ma’lumotlarini tozalash"
 
 #~ msgid "Clear private data from bookmarks?"
 #~ msgstr "Shaxsiy xatcho‘plar ma’lumotlarini tozalansinmi?"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-29 14:37+0000\n"
+"POT-Creation-Date: 2014-09-03 10:18+0000\n"
 "PO-Revision-Date: 2014-08-30 03:46+0000\n"
 "Last-Translator: Mahrazi Mohd Kamal <mahrazi@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1409370410.000000\n"
@@ -1128,6 +1128,20 @@ msgstr "Bergabung"
 msgid "APN"
 msgstr "APN"
 
+#: apnSettings
+msgid "APN settings"
+msgstr "Tetapan APN"
+
+#. # LOCALIZATION NOTE (apnSettings-header): if you leave the original
+#. # en-US value "{{apnSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "apnSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: apnSettings-header
+#, fuzzy
+msgid "{{apnSettings}}"
+msgstr "{{fdnSettings}}"
+
 #: dataSettings
 msgid "Data settings"
 msgstr "Tetapan data"
@@ -1192,6 +1206,10 @@ msgstr "Tetapan IMS"
 #: imsSettings-header2
 msgid "{{imsSettings}}"
 msgstr "{{imsSettings}}"
+
+#: apn-editor-header
+msgid "APN Editor"
+msgstr ""
 
 #: mmsport
 msgid "MMS port"
@@ -1269,6 +1287,10 @@ msgstr "IPv6"
 msgid "IPv4/IPv6"
 msgstr "IPv4/IPv6"
 
+#: apn-type
+msgid "APN Type"
+msgstr ""
+
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
 msgstr "HIDUPKAN sambungan data?"
@@ -1293,6 +1315,20 @@ msgstr ""
 "Bergantung kepada perjanjian servis anda, cas tambahan akan dikenakan untuk "
 "data apabila anda berada di kawasan perayauan."
 
+#: change-apn-warning-message
+msgid ""
+"Depending on your service agreement, changing your APN setting may result in "
+"extra charges when roaming."
+msgstr ""
+
+#: change-apn-warning-question
+msgid "Do you want to proceed?"
+msgstr ""
+
+#: reset-apn-warning-message
+msgid "This resets the settings to default values. This cannot be undone."
+msgstr ""
+
 #: state-unknown
 msgid "Unknown state"
 msgstr "Keadaan tidak diketahui"
@@ -1314,6 +1350,28 @@ msgstr "Tersambung"
 #: state-forbidden
 msgid "Forbidden"
 msgstr "Larangan"
+
+#: delete-apn-confirm
+msgid "Delete this APN?"
+msgstr ""
+
+#: delete-apn
+#, fuzzy
+msgctxt "delete-apn"
+msgid "Delete"
+msgstr "Hapus"
+
+#: add-apn
+msgid "Add New Apn"
+msgstr ""
+
+#: reset-apn
+msgid "Reset to Default"
+msgstr ""
+
+#: apnSettings-reset
+msgid "APN settings reset"
+msgstr ""
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
@@ -1667,33 +1725,22 @@ msgstr "Panjang"
 msgid "Select a tone"
 msgstr "Pilih tona"
 
-#: ringer
-msgid "Ringer"
-msgstr "Pendering"
-
-#: ring-tones
+#: ringtones
 msgid "Ringtones"
 msgstr "Nada Dering"
-
-#: alert-tones
-msgid "Alert tones"
-msgstr "Nada waspada"
-
-#: manage-sounds
-msgid "Manage Sounds"
-msgstr "Urus Bunyi"
-
-#: manage-ringtones
-msgid "Manage Ringtones"
-msgstr "Urus Nada Dering"
-
-#: other-sounds
-msgid "Other sounds"
-msgstr "Bunyi lain"
 
 #: alerts
 msgid "Alerts"
 msgstr "Waspada"
+
+#: manage-tones
+#, fuzzy
+msgid "Manage Tones"
+msgstr "Urus Bunyi"
+
+#: other-sounds
+msgid "Other sounds"
+msgstr "Bunyi lain"
 
 #: unlock-screen
 msgid "Unlock screen"
@@ -1711,8 +1758,9 @@ msgstr "Hantar Mesej"
 msgid "Alarm"
 msgstr "Penggera"
 
-#: ringer-and-notification-sound
-msgid "Ringer & Notifications"
+#: ringtone-and-notification-sound
+#, fuzzy
+msgid "Ringtones & Notifications"
 msgstr "Pendering & Makluman"
 
 #: media-sound
@@ -2008,7 +2056,15 @@ msgstr "Empat Lajur"
 msgid "Notice"
 msgstr "Notis"
 
+#: search
+#, fuzzy
+msgctxt "search"
+msgid "Search"
+msgstr "Carian"
+
 #: search-header
+#, fuzzy
+msgctxt "search-header"
 msgid "Search"
 msgstr "Carian"
 
@@ -2128,6 +2184,15 @@ msgstr "nombor"
 #: defaultKeyboardEnabled
 msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr "{{appName}} {{layoutName}} telah ditetapkan sebagai kaedah input lalai"
+
+#. # Personalization :: Themes
+#: themes
+msgid "Themes"
+msgstr ""
+
+#: themes-header
+msgid "{{themes}}"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Accounts
@@ -2269,11 +2334,24 @@ msgstr ""
 msgid "Geolocation Enabled"
 msgstr "Geolokasi Dibolehkan"
 
+#. # Error messages
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
 msgstr ""
 "Peranti ini berada diluar talian. Sambungkan kepada rangkaian dan cuba lagi."
+
+#: findmydevice-error
+msgid "A Find My Device error has occurred."
+msgstr ""
+
+#: findmydevice-please-try
+msgid "Please try again."
+msgstr ""
+
+#: findmydevice-please-tap
+msgid "Please tap to try again."
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -2809,6 +2887,21 @@ msgstr ""
 msgid "Browser Privacy"
 msgstr "Privasi Pelayar"
 
+#. # LOCALIZATION NOTE (browserPrivacy-header): if you leave the original
+#. # en-US value "{{browserPrivacy}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "browserPrivacy".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: browserPrivacy-header
+msgid "{{browserPrivacy}}"
+msgstr ""
+
+#: confirm-clear-title
+#, fuzzy
+msgctxt "confirm-clear-title"
+msgid "Confirmation"
+msgstr "Pengesahan"
+
 #: clear-browsing-history
 msgid "Clear browsing history"
 msgstr "Lapangkan sejarah pelayaran"
@@ -2825,6 +2918,10 @@ msgstr "Lapangkan kuki dan data tersimpan"
 msgid "Clear cookies and other data stored by sites on this device?"
 msgstr ""
 "Lapangkan kuki dan data lain yang disimpan oleh laman pada peranti ini?"
+
+#: clear-boomarks-data
+msgid "Clear bookmarks data"
+msgstr "Lapangkan data penanda buku"
 
 #: confirmClearBookmarkAppsDataDesc
 msgid ""
@@ -2949,6 +3046,19 @@ msgstr ""
 #: ums-shared-volumes
 msgid "{{list}} shared"
 msgstr "{{list}} dikongsi"
+
+#. # Storage :: USB storage
+#: transferProtocol-header
+msgid "Transfer Protocol"
+msgstr ""
+
+#: protocol-mtp
+msgid "Media transfer protocol (MTP)"
+msgstr ""
+
+#: protocol-ums
+msgid "USB mass Storage (UMS)"
+msgstr ""
 
 #. # Storage :: Media storage
 #: mediaStorage
@@ -3397,6 +3507,11 @@ msgstr "Output Wi-Fi dalam ADB"
 msgid "Bluetooth output in ADB"
 msgstr "Output Bluetooth di ADB"
 
+#: nfc-debugging
+#, fuzzy
+msgid "NFC output in ADB"
+msgstr "Output Wi-Fi dalam ADB"
+
 #: console-enabled
 msgid "Console enabled"
 msgstr "Konsol dibolehkan"
@@ -3762,6 +3877,8 @@ msgid "Deselect all"
 msgstr "Nyahpilih semua"
 
 #: downloads-delete
+#, fuzzy
+msgctxt "downloads-delete"
 msgid "Delete"
 msgstr "Hapus"
 
@@ -4220,11 +4337,17 @@ msgstr ""
 "Membolehkan {{newSetting}} bakal melumpuhkan {{oldSetting}}. Adakah anda "
 "ingin membolehkan {{newSetting}}?"
 
+#~ msgid "Ringer"
+#~ msgstr "Pendering"
+
+#~ msgid "Alert tones"
+#~ msgstr "Nada waspada"
+
+#~ msgid "Manage Ringtones"
+#~ msgstr "Urus Nada Dering"
+
 #~ msgid "Are you sure you want to uninstall {{ app }}?"
 #~ msgstr "Pastikah anda untuk menyahpasang {{ app }}?"
-
-#~ msgid "Clear bookmarks data"
-#~ msgstr "Lapangkan data penanda buku"
 
 #~ msgid "Clear private data from bookmarks?"
 #~ msgstr "Lapangkan data peribadi datipada tandabuku?"
@@ -4397,9 +4520,6 @@ msgstr ""
 #~ "When entering a roaming area, your data connection will be turned off."
 #~ msgstr ""
 #~ "Ketika memasuki kawasan perayauan, sambungan data anda akan dimatikan."
-
-#~ msgid "APN settings"
-#~ msgstr "Tetapan APN"
 
 #~ msgid "Hotspot"
 #~ msgstr "Kawasan Khas"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-29 14:37+0000\n"
+"POT-Creation-Date: 2014-09-03 10:18+0000\n"
 "PO-Revision-Date: 2014-02-19 07:42+0000\n"
 "Last-Translator: Trung <ndtrung4419@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1139,6 +1139,20 @@ msgstr "Mạng có liên quan"
 msgid "APN"
 msgstr "APN"
 
+#: apnSettings
+msgid "APN settings"
+msgstr "Thiết lập APN"
+
+#. # LOCALIZATION NOTE (apnSettings-header): if you leave the original
+#. # en-US value "{{apnSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "apnSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: apnSettings-header
+#, fuzzy
+msgid "{{apnSettings}}"
+msgstr "Giới hạn liên lạc"
+
 #: dataSettings
 msgid "Data settings"
 msgstr "Thiết lập dữ liệu"
@@ -1207,6 +1221,10 @@ msgstr "Thiết lập MMS"
 #, fuzzy
 msgid "{{imsSettings}}"
 msgstr "Giới hạn liên lạc"
+
+#: apn-editor-header
+msgid "APN Editor"
+msgstr ""
 
 #: mmsport
 msgid "MMS port"
@@ -1286,6 +1304,10 @@ msgstr ""
 msgid "IPv4/IPv6"
 msgstr ""
 
+#: apn-type
+msgid "APN Type"
+msgstr ""
+
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
 msgstr "Bật kết nối dữ liệu?"
@@ -1310,6 +1332,20 @@ msgstr ""
 "Phụ phí có thể phát sinh với dữ liệu tùy theo thỏa thuận dịch vụ khi bạn kết "
 "nối trong vùng không có sóng của nhà mạng đang dùng."
 
+#: change-apn-warning-message
+msgid ""
+"Depending on your service agreement, changing your APN setting may result in "
+"extra charges when roaming."
+msgstr ""
+
+#: change-apn-warning-question
+msgid "Do you want to proceed?"
+msgstr ""
+
+#: reset-apn-warning-message
+msgid "This resets the settings to default values. This cannot be undone."
+msgstr ""
+
 #: state-unknown
 msgid "Unknown state"
 msgstr "Trạng thái không rõ"
@@ -1331,6 +1367,28 @@ msgstr "Đã kết nối"
 #: state-forbidden
 msgid "Forbidden"
 msgstr "Bị cấm kết nối"
+
+#: delete-apn-confirm
+msgid "Delete this APN?"
+msgstr ""
+
+#: delete-apn
+#, fuzzy
+msgctxt "delete-apn"
+msgid "Delete"
+msgstr "Xóa"
+
+#: add-apn
+msgid "Add New Apn"
+msgstr ""
+
+#: reset-apn
+msgid "Reset to Default"
+msgstr ""
+
+#: apnSettings-reset
+msgid "APN settings reset"
+msgstr ""
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
@@ -1686,33 +1744,21 @@ msgstr "Âm dài"
 msgid "Select a tone"
 msgstr "Chọn nhạc chuông"
 
-#: ringer
-msgid "Ringer"
-msgstr "Chuông báo cuộc gọi"
-
-#: ring-tones
+#: ringtones
 msgid "Ringtones"
 msgstr "Nhạc chuông"
 
-#: alert-tones
-msgid "Alert tones"
-msgstr "Chuông báo"
+#: alerts
+msgid "Alerts"
+msgstr "Thông báo"
 
-#: manage-sounds
-msgid "Manage Sounds"
-msgstr ""
-
-#: manage-ringtones
-msgid "Manage Ringtones"
+#: manage-tones
+msgid "Manage Tones"
 msgstr ""
 
 #: other-sounds
 msgid "Other sounds"
 msgstr "Âm thanh khác"
-
-#: alerts
-msgid "Alerts"
-msgstr "Thông báo"
 
 #: unlock-screen
 msgid "Unlock screen"
@@ -1730,8 +1776,9 @@ msgstr "Tiếng gửi tin nhắn"
 msgid "Alarm"
 msgstr "Báo thức"
 
-#: ringer-and-notification-sound
-msgid "Ringer & Notifications"
+#: ringtone-and-notification-sound
+#, fuzzy
+msgid "Ringtones & Notifications"
 msgstr "Chuông và thông báo"
 
 #: media-sound
@@ -2025,7 +2072,13 @@ msgstr ""
 msgid "Notice"
 msgstr ""
 
+#: search
+msgctxt "search"
+msgid "Search"
+msgstr ""
+
 #: search-header
+msgctxt "search-header"
 msgid "Search"
 msgstr ""
 
@@ -2147,6 +2200,15 @@ msgstr "số"
 #: defaultKeyboardEnabled
 msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr "{{appName}} {{layoutName}} được đặt là kiểu gõ mặc định"
+
+#. # Personalization :: Themes
+#: themes
+msgid "Themes"
+msgstr ""
+
+#: themes-header
+msgid "{{themes}}"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Accounts
@@ -2283,9 +2345,22 @@ msgstr ""
 msgid "Geolocation Enabled"
 msgstr ""
 
+#. # Error messages
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
+msgstr ""
+
+#: findmydevice-error
+msgid "A Find My Device error has occurred."
+msgstr ""
+
+#: findmydevice-please-try
+msgid "Please try again."
+msgstr ""
+
+#: findmydevice-please-tap
+msgid "Please tap to try again."
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -2811,6 +2886,21 @@ msgstr ""
 msgid "Browser Privacy"
 msgstr ""
 
+#. # LOCALIZATION NOTE (browserPrivacy-header): if you leave the original
+#. # en-US value "{{browserPrivacy}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "browserPrivacy".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: browserPrivacy-header
+msgid "{{browserPrivacy}}"
+msgstr ""
+
+#: confirm-clear-title
+#, fuzzy
+msgctxt "confirm-clear-title"
+msgid "Confirmation"
+msgstr "Xác nhận"
+
 #: clear-browsing-history
 msgid "Clear browsing history"
 msgstr ""
@@ -2826,6 +2916,10 @@ msgstr ""
 #: confirm-clear-cookies-and-stored-data
 msgid "Clear cookies and other data stored by sites on this device?"
 msgstr ""
+
+#: clear-boomarks-data
+msgid "Clear bookmarks data"
+msgstr "Xóa d.liệu khỏi ứng dụng web"
 
 #: confirmClearBookmarkAppsDataDesc
 msgid ""
@@ -2950,6 +3044,19 @@ msgstr ""
 
 #: ums-shared-volumes
 msgid "{{list}} shared"
+msgstr ""
+
+#. # Storage :: USB storage
+#: transferProtocol-header
+msgid "Transfer Protocol"
+msgstr ""
+
+#: protocol-mtp
+msgid "Media transfer protocol (MTP)"
+msgstr ""
+
+#: protocol-ums
+msgid "USB mass Storage (UMS)"
 msgstr ""
 
 #. # Storage :: Media storage
@@ -3403,6 +3510,11 @@ msgstr "Đầu ra Wi-fi ở adb"
 msgid "Bluetooth output in ADB"
 msgstr ""
 
+#: nfc-debugging
+#, fuzzy
+msgid "NFC output in ADB"
+msgstr "Đầu ra Wi-fi ở adb"
+
 #: console-enabled
 msgid "Console enabled"
 msgstr ""
@@ -3767,6 +3879,8 @@ msgid "Deselect all"
 msgstr "Bỏ chọn tất cả"
 
 #: downloads-delete
+#, fuzzy
+msgctxt "downloads-delete"
 msgid "Delete"
 msgstr "Xóa"
 
@@ -4220,11 +4334,14 @@ msgid ""
 "{{newSetting}}?"
 msgstr ""
 
+#~ msgid "Ringer"
+#~ msgstr "Chuông báo cuộc gọi"
+
+#~ msgid "Alert tones"
+#~ msgstr "Chuông báo"
+
 #~ msgid "Are you sure you want to uninstall {{ app }}?"
 #~ msgstr "Bạn có thực sự muốn gỡ bỏ {{ app }} không?"
-
-#~ msgid "Clear bookmarks data"
-#~ msgstr "Xóa d.liệu khỏi ứng dụng web"
 
 #~ msgid "Clear private data from bookmarks?"
 #~ msgstr "Xóa dữ liệu cá nhân khỏi các ứng dụng web?"
@@ -4388,9 +4505,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Khi đi vào vùng không có sóng của nhà mạng hiện tại, kết nối dữ liệu sẽ "
 #~ "bị ngắt."
-
-#~ msgid "APN settings"
-#~ msgstr "Thiết lập APN"
 
 #~ msgid "Hotspot"
 #~ msgstr "Điểm truy cập"

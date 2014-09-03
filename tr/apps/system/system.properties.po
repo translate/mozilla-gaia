@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-29 14:37+0000\n"
+"POT-Creation-Date: 2014-09-03 10:18+0000\n"
 "PO-Revision-Date: 2014-08-13 09:03+0000\n"
 "Last-Translator: Selim <selim@sum.lu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -86,6 +86,10 @@ msgstr "Duraklat"
 msgid "Next"
 msgstr "Sonraki"
 
+#: UnknownTrack
+msgid "Unknown track"
+msgstr ""
+
 #: wifiButton-on
 msgid "Wi-Fi on"
 msgstr "Wi-Fi açık"
@@ -132,9 +136,9 @@ msgstr "Uçak modu kapalı"
 msgid "Settings"
 msgstr "Ayarlar"
 
-#: utilityTrayGrippy.ariaLabel
-msgid "Close utility tray"
-msgstr "Araç tepsisini kapat"
+#: utilityTray.ariaLabel
+msgid "Utility tray"
+msgstr ""
 
 #. # status bar text label
 #: statusbarLabel
@@ -379,6 +383,15 @@ msgstr "Ara: {{number}}"
 #: voicemailNotificationMultiSim
 msgid "(SIM {{n}}) {{title}}"
 msgstr "(SIM {{n}}) {{title}}"
+
+#. # EU roaming
+#: euRoamingNotificationTitle
+msgid "EU internet detected"
+msgstr ""
+
+#: euRoamingNotificationMsg
+msgid "Tap to change."
+msgstr ""
 
 #. # NFC Bluetooth Connect
 #: confirmNFCConnectBTenabledNameUnknown
@@ -679,9 +692,11 @@ msgstr "İndir"
 msgid "Download update now?"
 msgstr "Güncelleme şimdi indirilsin mi?"
 
-#: wantToInstall
-msgid "Install update now?"
-msgstr "Güncelleme şimdi yüklensin mi?"
+#: wantToInstallNow
+msgid ""
+"Do you want to install the update now? You will not be able to use your "
+"phone for a few minutes."
+msgstr ""
 
 #: installNow
 msgid "Install Now"
@@ -961,176 +976,6 @@ msgstr ""
 "{{name}} bir şebeke bağlantısı gerektirir. Ayarlar'dan uçak modunu kapatın "
 "ve bir Wi-Fi veya mobil veri şebekesine bağlanın."
 
-#: server-not-found
-msgid "Server not found"
-msgstr "Sunucu bulunamadı"
-
-#: server-not-found-error
-msgid "Can’t find the server at {{name}}."
-msgstr "{{name}} sunucusu bulunamadı."
-
-#: file-not-found
-msgid "File not found"
-msgstr "Dosya bulunamadı"
-
-#: file-not-found-error
-msgid "The device can’t display this page because the file cannot be found."
-msgstr "Dosya bulunamadığı için cihaz bu sayfayı görüntüleyemiyor."
-
-#: connection-failed
-msgctxt "connection-failed"
-msgid "Unable to connect"
-msgstr "Bağlanılamadı"
-
-#: connection-failed-error
-msgctxt "connection-failed-error"
-msgid "A network error occurred while trying to reach the site."
-msgstr "Siteye erişmeye çalışılırken bir ağ hatası oluştu."
-
-#: invalid-connection
-msgctxt "invalid-connection"
-msgid "Unable to connect"
-msgstr "Bağlanılamadı"
-
-#: invalid-connection-error
-msgctxt "invalid-connection-error"
-msgid "A network error occurred while trying to reach the site."
-msgstr "Siteye erişmeye çalışılırken bir ağ hatası oluştu."
-
-#: malformed-uri
-msgid "URL not valid"
-msgstr "URL geçersiz"
-
-#: malformed-uri-error
-msgid "The URL entered is not valid and cannot be loaded."
-msgstr "Girilen URL geçerli olmadığı için yüklenemiyor."
-
-#: redirect-loop
-msgctxt "redirect-loop"
-msgid "Can’t display page"
-msgstr "Sayfa görüntülenemiyor"
-
-#: redirect-loop-error
-msgid ""
-"The device can’t display this page because the page is not redirecting "
-"properly. Try this page again at a later time."
-msgstr ""
-"Sayfa düzgün yönlendirilmediği için cihaz bu sayfayı görüntüleyemiyor. Daha "
-"sonra tekrar deneyin."
-
-#: not-cached
-msgid "Page expired"
-msgstr "Sayfa zaman aşımına uğradı"
-
-#: not-cached-error
-msgid ""
-"As a security precaution, this page cannot be displayed by the device "
-"because it has expired."
-msgstr ""
-"Bu sayfa zaman aşımına uğradığı için güvenlik önlemi olarak bu cihaz "
-"tarafından görüntülenemez."
-
-#: is-printing-error
-msgid "The document cannot change while Printing or in Print Preview."
-msgstr "Belge yazdırılırken veya yazdırma ön izlemesindeyken değiştirilemez."
-
-#: denied-port-access
-msgid "This address is restricted"
-msgstr "Bu adrese erişim kısıtlanmış"
-
-#: denied-port-access-error
-msgid ""
-"This address uses a network port which is normally used for purposes other "
-"than Web browsing. The device has cancelled the request for your protection."
-msgstr ""
-"Bu adres, web'de gezintiden başka amaçlar için kullanılan bir ağ bağlantı "
-"noktası kullanıyor. Güvenliğiniz için cihazınız bu bağlanma isteğini iptal "
-"etti."
-
-#: proxy-resolve-failure
-msgctxt "proxy-resolve-failure"
-msgid "Proxy Server Error"
-msgstr "Vekil sunucu hatası"
-
-#: proxy-resolve-failure-error
-msgid "The device is configured to use a proxy server that can’t be found."
-msgstr "Cihaz bulunamayan bir vekil sunucuya bağlanmak üzere ayarlanmış."
-
-#: proxy-connect-failure
-msgctxt "proxy-connect-failure"
-msgid "Proxy Server Error"
-msgstr "Vekil sunucu hatası"
-
-#: proxy-connect-failure-error
-msgid ""
-"The device is configured to use a proxy server that is refusing connections."
-msgstr ""
-"Cihaz bağlanma isteklerini geri çeviren bir vekil sunucuya bağlanmak üzere "
-"ayarlanmış."
-
-#: content-encoding
-msgctxt "content-encoding"
-msgid "Can’t display page"
-msgstr "Sayfa görüntülenemiyor"
-
-#: content-encoding-error
-msgid ""
-"The device can’t display this page because a content encoding error occurred."
-msgstr ""
-"Bir içerik kodlama hatası oluştuğu için cihaz bu sayfayı görüntüleyemiyor."
-
-#: remote-xul
-msgid "Page unsupported"
-msgstr "Sayfa desteklenmiyor"
-
-#: remote-xul-error
-msgid ""
-"This page can’t be displayed because it uses a technology that is not "
-"supported on the device."
-msgstr ""
-"Bu sayfa bu cihazda desteklenmeyen bir teknoloji kullandığı için "
-"görüntülenemiyor."
-
-#: phishing-blocked
-msgid "Warning"
-msgstr "Uyarı"
-
-#: phishing-blocked-error
-msgid ""
-"The website has been reported as a web forgery designed to trick users into "
-"sharing personal or financial information."
-msgstr ""
-"Bu sitenin kullanıcıları kandırarak onları kişisel ve mali bilgilerini "
-"paylaşmaya yönelten bir sahtekârlık girişimi içerdiği bildirilmiştir."
-
-#: malware-blocked
-msgid "Malware attack blocked"
-msgstr "Zararlı yazılım saldırısı engellendi"
-
-#: malware-blocked-error
-msgid "The site at has been reported as an attack site and has been blocked."
-msgstr ""
-"Bu sitenin saldırgan bir site olduğu rapor edildiği için site engellenmiştir."
-
-#: unsafe-content-type
-msgid "Unsafe content"
-msgstr "Güvenilmeyen içerik"
-
-#: unsafe-content-type-error
-msgid "The page cannot be shown because it may not be safe to open."
-msgstr "Bu sayfayı açmanız güvenli olmayabilir, o yüzden sayfa gösterilemiyor."
-
-#: corrupted-content
-msgctxt "corrupted-content"
-msgid "Can’t display page"
-msgstr "Sayfa görüntülenemiyor"
-
-#: corrupted-content-error
-msgid ""
-"The page cannot be shown because an error in the data transmission was "
-"detected."
-msgstr "Veri aktarımında bir hata tespit edildiği için sayfa gösterilemiyor."
-
 #: network-connection-unavailable
 msgid "Network connection unavailable"
 msgstr "Şebeke bağlantısı yok"
@@ -1143,26 +988,10 @@ msgstr ""
 "{{name}} bir şebeke bağlantısı gerektirir. Bir Wi-Fi veya mobil veri "
 "şebekesine bağlanmayı deneyin."
 
-#: network-error-launching
-msgid "{{name}} requires an Internet connection."
-msgstr "{{name}} için internet bağlantısı gereklidir."
-
-#: network-error-in-app
-msgid "No access to the Internet right now."
-msgstr "Şu anda internet erişiminiz yok."
-
 #: unable-to-connect
-msgctxt "unable-to-connect"
+#, fuzzy
 msgid "Unable to connect"
 msgstr "Bağlanılamadı"
-
-#: try-again
-msgid "Try again"
-msgstr "Tekrar dene"
-
-#: check-settings
-msgid "Check settings"
-msgstr "Ayarları kontrol et"
 
 #: tap-to-check-settings
 msgid "Tap to check settings"
@@ -1218,17 +1047,22 @@ msgid "Select day"
 msgstr "Günü seçin"
 
 #. # system overlay
-#: battery-almost-empty
-msgid "Battery almost empty"
-msgstr "Pil boşalmak üzere"
+#: battery-almost-empty2
+msgid "Battery almost empty. Plug in your charger."
+msgstr ""
 
 #. # wrapper
 #: new-window
-msgid "New Window"
+msgid "New window"
+msgstr ""
+
+#: show-windows
+msgid "Show windows"
 msgstr ""
 
 #: add-to-home-screen
-msgid "Add to Home Screen"
+#, fuzzy
+msgid "Add to home screen"
 msgstr "Ana Ekran'a ekle"
 
 #: share
@@ -2180,6 +2014,10 @@ msgid "{{percentage}}% - {{name}}"
 msgstr "%{{percentage}} - {{name}}"
 
 #. # Rocketbar
+#: search-the-web
+msgid "Search the web"
+msgstr ""
+
 #: search-or-enter-address
 msgctxt "search-or-enter-address"
 msgid "Search or enter address"
@@ -2243,6 +2081,172 @@ msgstr "Videoyu kaydet"
 #: share-audio
 msgid "Share Audio"
 msgstr "Sesi kaydet"
+
+#~ msgid "Close utility tray"
+#~ msgstr "Araç tepsisini kapat"
+
+#~ msgid "Install update now?"
+#~ msgstr "Güncelleme şimdi yüklensin mi?"
+
+#~ msgid "Server not found"
+#~ msgstr "Sunucu bulunamadı"
+
+#~ msgid "Can’t find the server at {{name}}."
+#~ msgstr "{{name}} sunucusu bulunamadı."
+
+#~ msgid "File not found"
+#~ msgstr "Dosya bulunamadı"
+
+#~ msgid "The device can’t display this page because the file cannot be found."
+#~ msgstr "Dosya bulunamadığı için cihaz bu sayfayı görüntüleyemiyor."
+
+#~ msgctxt "connection-failed-error"
+#~ msgid "A network error occurred while trying to reach the site."
+#~ msgstr "Siteye erişmeye çalışılırken bir ağ hatası oluştu."
+
+#~ msgctxt "invalid-connection"
+#~ msgid "Unable to connect"
+#~ msgstr "Bağlanılamadı"
+
+#~ msgctxt "invalid-connection-error"
+#~ msgid "A network error occurred while trying to reach the site."
+#~ msgstr "Siteye erişmeye çalışılırken bir ağ hatası oluştu."
+
+#~ msgid "URL not valid"
+#~ msgstr "URL geçersiz"
+
+#~ msgid "The URL entered is not valid and cannot be loaded."
+#~ msgstr "Girilen URL geçerli olmadığı için yüklenemiyor."
+
+#~ msgctxt "redirect-loop"
+#~ msgid "Can’t display page"
+#~ msgstr "Sayfa görüntülenemiyor"
+
+#~ msgid ""
+#~ "The device can’t display this page because the page is not redirecting "
+#~ "properly. Try this page again at a later time."
+#~ msgstr ""
+#~ "Sayfa düzgün yönlendirilmediği için cihaz bu sayfayı görüntüleyemiyor. "
+#~ "Daha sonra tekrar deneyin."
+
+#~ msgid "Page expired"
+#~ msgstr "Sayfa zaman aşımına uğradı"
+
+#~ msgid ""
+#~ "As a security precaution, this page cannot be displayed by the device "
+#~ "because it has expired."
+#~ msgstr ""
+#~ "Bu sayfa zaman aşımına uğradığı için güvenlik önlemi olarak bu cihaz "
+#~ "tarafından görüntülenemez."
+
+#~ msgid "The document cannot change while Printing or in Print Preview."
+#~ msgstr ""
+#~ "Belge yazdırılırken veya yazdırma ön izlemesindeyken değiştirilemez."
+
+#~ msgid "This address is restricted"
+#~ msgstr "Bu adrese erişim kısıtlanmış"
+
+#~ msgid ""
+#~ "This address uses a network port which is normally used for purposes "
+#~ "other than Web browsing. The device has cancelled the request for your "
+#~ "protection."
+#~ msgstr ""
+#~ "Bu adres, web'de gezintiden başka amaçlar için kullanılan bir ağ bağlantı "
+#~ "noktası kullanıyor. Güvenliğiniz için cihazınız bu bağlanma isteğini "
+#~ "iptal etti."
+
+#~ msgctxt "proxy-resolve-failure"
+#~ msgid "Proxy Server Error"
+#~ msgstr "Vekil sunucu hatası"
+
+#~ msgid "The device is configured to use a proxy server that can’t be found."
+#~ msgstr "Cihaz bulunamayan bir vekil sunucuya bağlanmak üzere ayarlanmış."
+
+#~ msgctxt "proxy-connect-failure"
+#~ msgid "Proxy Server Error"
+#~ msgstr "Vekil sunucu hatası"
+
+#~ msgid ""
+#~ "The device is configured to use a proxy server that is refusing "
+#~ "connections."
+#~ msgstr ""
+#~ "Cihaz bağlanma isteklerini geri çeviren bir vekil sunucuya bağlanmak "
+#~ "üzere ayarlanmış."
+
+#~ msgctxt "content-encoding"
+#~ msgid "Can’t display page"
+#~ msgstr "Sayfa görüntülenemiyor"
+
+#~ msgid ""
+#~ "The device can’t display this page because a content encoding error "
+#~ "occurred."
+#~ msgstr ""
+#~ "Bir içerik kodlama hatası oluştuğu için cihaz bu sayfayı görüntüleyemiyor."
+
+#~ msgid "Page unsupported"
+#~ msgstr "Sayfa desteklenmiyor"
+
+#~ msgid ""
+#~ "This page can’t be displayed because it uses a technology that is not "
+#~ "supported on the device."
+#~ msgstr ""
+#~ "Bu sayfa bu cihazda desteklenmeyen bir teknoloji kullandığı için "
+#~ "görüntülenemiyor."
+
+#~ msgid "Warning"
+#~ msgstr "Uyarı"
+
+#~ msgid ""
+#~ "The website has been reported as a web forgery designed to trick users "
+#~ "into sharing personal or financial information."
+#~ msgstr ""
+#~ "Bu sitenin kullanıcıları kandırarak onları kişisel ve mali bilgilerini "
+#~ "paylaşmaya yönelten bir sahtekârlık girişimi içerdiği bildirilmiştir."
+
+#~ msgid "Malware attack blocked"
+#~ msgstr "Zararlı yazılım saldırısı engellendi"
+
+#~ msgid ""
+#~ "The site at has been reported as an attack site and has been blocked."
+#~ msgstr ""
+#~ "Bu sitenin saldırgan bir site olduğu rapor edildiği için site "
+#~ "engellenmiştir."
+
+#~ msgid "Unsafe content"
+#~ msgstr "Güvenilmeyen içerik"
+
+#~ msgid "The page cannot be shown because it may not be safe to open."
+#~ msgstr ""
+#~ "Bu sayfayı açmanız güvenli olmayabilir, o yüzden sayfa gösterilemiyor."
+
+#~ msgctxt "corrupted-content"
+#~ msgid "Can’t display page"
+#~ msgstr "Sayfa görüntülenemiyor"
+
+#~ msgid ""
+#~ "The page cannot be shown because an error in the data transmission was "
+#~ "detected."
+#~ msgstr ""
+#~ "Veri aktarımında bir hata tespit edildiği için sayfa gösterilemiyor."
+
+#~ msgid "{{name}} requires an Internet connection."
+#~ msgstr "{{name}} için internet bağlantısı gereklidir."
+
+#~ msgid "No access to the Internet right now."
+#~ msgstr "Şu anda internet erişiminiz yok."
+
+#~ msgctxt "unable-to-connect"
+#~ msgid "Unable to connect"
+#~ msgstr "Bağlanılamadı"
+
+#~ msgid "Try again"
+#~ msgstr "Tekrar dene"
+
+#~ msgid "Check settings"
+#~ msgstr "Ayarları kontrol et"
+
+#~ msgid "Battery almost empty"
+#~ msgstr "Pil boşalmak üzere"
 
 #~ msgid ""
 #~ "Updates are downloaded via data connection when Wi-Fi is not available. "

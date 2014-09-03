@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-29 14:37+0000\n"
+"POT-Creation-Date: 2014-09-03 10:18+0000\n"
 "PO-Revision-Date: 2014-07-30 10:00+0000\n"
 "Last-Translator: কৌস্তভ <koustavsuny2009@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -375,6 +375,14 @@ msgstr "নতুন বার্তার জন্যে বিজ্ঞপ্
 #: settings-account-play-sound-onsend
 msgid "Play sound after message is sent"
 msgstr "বার্তা পাঠানোর পর শব্দ হোক"
+
+#. # LOCALIZATION NOTE(settings-empty-signature-label): Text used for the button
+#. # that takes the user to edit the signature, if there is no existing signature
+#. # text. It should inform the user that tapping on it will lead to editing the
+#. # signature text.
+#: settings-empty-signature-label
+msgid "Tap to Edit"
+msgstr ""
 
 #. # LOCALIZATION NOTE (settings-account-signature-label): The label for the
 #. # signature field in the account settings card.
@@ -1470,38 +1478,44 @@ msgstr "নিশ্চিতি"
 msgid ", "
 msgstr ", "
 
-#. # new-emails refers to the text shown on a notification that users
-#. # get when they receive new, unread email. The ui component that utilizes
-#. # this lives in apps/email/js/message_list_topbar.js.
-#: new-emails
-msgctxt "new-emails"
+#. # LOCALIZATION NOTE(new-messages): refers to the text shown inside the email app
+#. # on the message list when new, unread messages have been received while the
+#. # user is looking at the messages in the message list. The ui component that
+#. # uses this lives in apps/email/js/message_list_topbar.js. This display differ
+#. # from the messages that are sent as system notifications. Those are more
+#. # important to distinguish that emails and not SMS messages have been received.
+#. # This display uses the term "Messages" since other text labels in the message
+#. # list also use "Messages" instead of "Emails" since the context of Email is
+#. # assumed as it is in the email app.
+#: new-messages
+#, fuzzy
+msgctxt "new-messages"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: new-emails[one]
-msgctxt "new-emails[one]"
-msgid "1 New Email"
-msgstr "1টি নতুন ই-মেইল"
+#: new-messages[one]
+msgid "1 New Message"
+msgstr ""
 
-#: new-emails[two]
-msgctxt "new-emails[two]"
-msgid "{{ n }} New Emails"
-msgstr "{{ n }} নতুন ই-মেইল"
+#: new-messages[two]
+msgctxt "new-messages[two]"
+msgid "{{ n }} New Messages"
+msgstr ""
 
-#: new-emails[few]
-msgctxt "new-emails[few]"
-msgid "{{ n }} New Emails"
-msgstr "{{ n }} নতুন ই-মেইল"
+#: new-messages[few]
+msgctxt "new-messages[few]"
+msgid "{{ n }} New Messages"
+msgstr ""
 
-#: new-emails[many]
-msgctxt "new-emails[many]"
-msgid "{{ n }} New Emails"
-msgstr "{{ n }} নতুন ই-মেইল"
+#: new-messages[many]
+msgctxt "new-messages[many]"
+msgid "{{ n }} New Messages"
+msgstr ""
 
-#: new-emails[other]
-msgctxt "new-emails[other]"
-msgid "{{ n }} New Emails"
-msgstr "{{ n }} নতুন ই-মেইল"
+#: new-messages[other]
+msgctxt "new-messages[other]"
+msgid "{{ n }} New Messages"
+msgstr ""
 
 #. # new-emails-notify-one-account is used when a system notification is generated during
 #. # a periodic background sync with the server. Since this goes to the system's
@@ -1512,7 +1526,7 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: new-emails-notify-one-account[one]
-msgctxt "new-emails-notify-one-account[one]"
+#, fuzzy
 msgid "1 New Email"
 msgstr "1টি নতুন ই-মেইল"
 
@@ -1575,6 +1589,26 @@ msgstr "{{ n }} নতুন ই-মেইল ({{ accountName }})"
 #: new-emails-notify-multiple-accounts-body
 msgid "{{ from }} “{{ subject }}”"
 msgstr "{{ from }} “{{ subject }}”"
+
+#~ msgctxt "new-emails"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "new-emails[few]"
+#~ msgid "{{ n }} New Emails"
+#~ msgstr "{{ n }} নতুন ই-মেইল"
+
+#~ msgctxt "new-emails[many]"
+#~ msgid "{{ n }} New Emails"
+#~ msgstr "{{ n }} নতুন ই-মেইল"
+
+#~ msgctxt "new-emails[other]"
+#~ msgid "{{ n }} New Emails"
+#~ msgstr "{{ n }} নতুন ই-মেইল"
+
+#~ msgctxt "new-emails-notify-one-account[one]"
+#~ msgid "1 New Email"
+#~ msgstr "1টি নতুন ই-মেইল"
 
 #~ msgctxt "message-download-images"
 #~ msgid "{[ plural(n) ]}"

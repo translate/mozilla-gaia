@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-29 14:37+0000\n"
+"POT-Creation-Date: 2014-09-03 10:18+0000\n"
 "PO-Revision-Date: 2014-07-30 12:00+0000\n"
 "Last-Translator: Praveen <mail2ipn@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1126,6 +1126,21 @@ msgstr "అనుబంధం"
 msgid "APN"
 msgstr "ఎపియన్"
 
+#: apnSettings
+#, fuzzy
+msgid "APN settings"
+msgstr "ఎంఎంఎస్ అమరికలు"
+
+#. # LOCALIZATION NOTE (apnSettings-header): if you leave the original
+#. # en-US value "{{apnSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "apnSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: apnSettings-header
+#, fuzzy
+msgid "{{apnSettings}}"
+msgstr "{{fdnSettings}}"
+
 #: dataSettings
 msgid "Data settings"
 msgstr "దత్తాంశ అమరికలు"
@@ -1190,6 +1205,10 @@ msgstr "IMS అమరికలు"
 #: imsSettings-header2
 msgid "{{imsSettings}}"
 msgstr "{{imsSettings}}"
+
+#: apn-editor-header
+msgid "APN Editor"
+msgstr ""
 
 #: mmsport
 msgid "MMS port"
@@ -1267,6 +1286,10 @@ msgstr "IPv6"
 msgid "IPv4/IPv6"
 msgstr "IPv4/IPv6"
 
+#: apn-type
+msgid "APN Type"
+msgstr ""
+
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
 msgstr "దత్తాంశ అనుసంధానాన్ని చేతనించాలా?"
@@ -1290,6 +1313,20 @@ msgid ""
 msgstr ""
 "మీరు రోమింగు ప్రాంతంలో ఉన్నప్పుడు మీ సేవా ఒప్పందం ఆధారంగా దత్తాంశం కోసం అదనపు చార్జీలు వర్తించవచ్చు."
 
+#: change-apn-warning-message
+msgid ""
+"Depending on your service agreement, changing your APN setting may result in "
+"extra charges when roaming."
+msgstr ""
+
+#: change-apn-warning-question
+msgid "Do you want to proceed?"
+msgstr ""
+
+#: reset-apn-warning-message
+msgid "This resets the settings to default values. This cannot be undone."
+msgstr ""
+
 #: state-unknown
 msgid "Unknown state"
 msgstr "తెలియని స్థితి"
@@ -1311,6 +1348,28 @@ msgstr "అనుసంధానమైంది"
 #: state-forbidden
 msgid "Forbidden"
 msgstr "నిషేధించబడింది"
+
+#: delete-apn-confirm
+msgid "Delete this APN?"
+msgstr ""
+
+#: delete-apn
+#, fuzzy
+msgctxt "delete-apn"
+msgid "Delete"
+msgstr "తొలగించు"
+
+#: add-apn
+msgid "Add New Apn"
+msgstr ""
+
+#: reset-apn
+msgid "Reset to Default"
+msgstr ""
+
+#: apnSettings-reset
+msgid "APN settings reset"
+msgstr ""
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
@@ -1662,33 +1721,22 @@ msgstr "దీర్ఘం"
 msgid "Select a tone"
 msgstr "ఒక స్వరాన్ని ఎంచుకోడండి"
 
-#: ringer
-msgid "Ringer"
-msgstr "రింగరు"
-
-#: ring-tones
+#: ringtones
 msgid "Ringtones"
 msgstr "రింగుటోన్లు"
-
-#: alert-tones
-msgid "Alert tones"
-msgstr "జాగరూకత శబ్దాలు"
-
-#: manage-sounds
-msgid "Manage Sounds"
-msgstr "శబ్దాలను నిర్వహించండి"
-
-#: manage-ringtones
-msgid "Manage Ringtones"
-msgstr "రింగుటోన్లను నిర్వహించండి"
-
-#: other-sounds
-msgid "Other sounds"
-msgstr "ఇతర శబ్దాలు"
 
 #: alerts
 msgid "Alerts"
 msgstr "హెచ్చరికలు"
+
+#: manage-tones
+#, fuzzy
+msgid "Manage Tones"
+msgstr "శబ్దాలను నిర్వహించండి"
+
+#: other-sounds
+msgid "Other sounds"
+msgstr "ఇతర శబ్దాలు"
 
 #: unlock-screen
 msgid "Unlock screen"
@@ -1706,8 +1754,9 @@ msgstr "పంపిన సందేశం"
 msgid "Alarm"
 msgstr "అలారం"
 
-#: ringer-and-notification-sound
-msgid "Ringer & Notifications"
+#: ringtone-and-notification-sound
+#, fuzzy
+msgid "Ringtones & Notifications"
 msgstr "మోగరి & గమనింపులు"
 
 #: media-sound
@@ -2000,7 +2049,15 @@ msgstr "నాలుగు నిలువు వరుసలు"
 msgid "Notice"
 msgstr "గమనిక"
 
+#: search
+#, fuzzy
+msgctxt "search"
+msgid "Search"
+msgstr "వెతుకు"
+
 #: search-header
+#, fuzzy
+msgctxt "search-header"
 msgid "Search"
 msgstr "వెతుకు"
 
@@ -2119,6 +2176,15 @@ msgstr "సంఖ్య"
 #: defaultKeyboardEnabled
 msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr "{{appName}} {{layoutName}} అప్రమేయ ఇన్‌పుట్ పద్ధతిగా అమర్చబడింది"
+
+#. # Personalization :: Themes
+#: themes
+msgid "Themes"
+msgstr ""
+
+#: themes-header
+msgid "{{themes}}"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Accounts
@@ -2257,10 +2323,23 @@ msgstr "మీ పరికరం యొక్క స్థానం చూడ�
 msgid "Geolocation Enabled"
 msgstr "భౌగోళికస్థానం చేతనమైవుంది"
 
+#. # Error messages
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
 msgstr "ఈ పరికరం ప్రస్తుతం ఆఫ్‌లైనులో ఉంది. నెట్‌వర్క్‌కు అనుసంధానమయి, మరలా ప్రయత్నించండి."
+
+#: findmydevice-error
+msgid "A Find My Device error has occurred."
+msgstr ""
+
+#: findmydevice-please-try
+msgid "Please try again."
+msgstr ""
+
+#: findmydevice-please-tap
+msgid "Please tap to try again."
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -2777,6 +2856,21 @@ msgstr ""
 msgid "Browser Privacy"
 msgstr ""
 
+#. # LOCALIZATION NOTE (browserPrivacy-header): if you leave the original
+#. # en-US value "{{browserPrivacy}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "browserPrivacy".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: browserPrivacy-header
+msgid "{{browserPrivacy}}"
+msgstr ""
+
+#: confirm-clear-title
+#, fuzzy
+msgctxt "confirm-clear-title"
+msgid "Confirmation"
+msgstr "నిర్ధారణ"
+
 #: clear-browsing-history
 msgid "Clear browsing history"
 msgstr ""
@@ -2792,6 +2886,10 @@ msgstr ""
 #: confirm-clear-cookies-and-stored-data
 msgid "Clear cookies and other data stored by sites on this device?"
 msgstr ""
+
+#: clear-boomarks-data
+msgid "Clear bookmarks data"
+msgstr "ఇష్టాంశాల దత్తాంశాన్ని శుభ్రపరుచు"
 
 #: confirmClearBookmarkAppsDataDesc
 msgid ""
@@ -2915,6 +3013,19 @@ msgstr ""
 #: ums-shared-volumes
 msgid "{{list}} shared"
 msgstr "{{list}} పంచుకోబడింది"
+
+#. # Storage :: USB storage
+#: transferProtocol-header
+msgid "Transfer Protocol"
+msgstr ""
+
+#: protocol-mtp
+msgid "Media transfer protocol (MTP)"
+msgstr ""
+
+#: protocol-ums
+msgid "USB mass Storage (UMS)"
+msgstr ""
 
 #. # Storage :: Media storage
 #: mediaStorage
@@ -3361,6 +3472,11 @@ msgstr "ADBలో వై-ఫై అవుట్‌పుట్"
 msgid "Bluetooth output in ADB"
 msgstr "ADBలో బ్లూటూత్ అవుట్‌పుట్"
 
+#: nfc-debugging
+#, fuzzy
+msgid "NFC output in ADB"
+msgstr "ADBలో వై-ఫై అవుట్‌పుట్"
+
 #: console-enabled
 msgid "Console enabled"
 msgstr "కన్సోల్ చేతనం"
@@ -3714,6 +3830,8 @@ msgid "Deselect all"
 msgstr "ఎంపిక రద్దు"
 
 #: downloads-delete
+#, fuzzy
+msgctxt "downloads-delete"
 msgid "Delete"
 msgstr "తొలగించు"
 
@@ -4164,11 +4282,17 @@ msgid ""
 "{{newSetting}}?"
 msgstr ""
 
+#~ msgid "Ringer"
+#~ msgstr "రింగరు"
+
+#~ msgid "Alert tones"
+#~ msgstr "జాగరూకత శబ్దాలు"
+
+#~ msgid "Manage Ringtones"
+#~ msgstr "రింగుటోన్లను నిర్వహించండి"
+
 #~ msgid "Are you sure you want to uninstall {{ app }}?"
 #~ msgstr "మీరు ఖచ్ఛితంగా {{ app }} ను తొలగించాలనుకుంటున్నారా?"
-
-#~ msgid "Clear bookmarks data"
-#~ msgstr "ఇష్టాంశాల దత్తాంశాన్ని శుభ్రపరుచు"
 
 #~ msgid "Clear private data from bookmarks?"
 #~ msgstr "ఇష్టాంశాల నుండి అంతరంగిక దత్తాంశాన్ని తుడిచివేయాలా?"
@@ -4320,10 +4444,6 @@ msgstr ""
 
 #~ msgid "Camera shutter"
 #~ msgstr "కెమేరా షట్టరు"
-
-#, fuzzy
-#~ msgid "APN settings"
-#~ msgstr "ఎంఎంఎస్ అమరికలు"
 
 #~ msgid "Message"
 #~ msgstr "సందేశం"

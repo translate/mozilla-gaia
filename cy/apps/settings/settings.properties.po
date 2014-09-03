@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-29 14:37+0000\n"
+"POT-Creation-Date: 2014-09-03 10:18+0000\n"
 "PO-Revision-Date: 2014-08-26 15:46+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1126,6 +1126,20 @@ msgstr "Ynghlwm â"
 msgid "APN"
 msgstr "APN"
 
+#: apnSettings
+msgid "APN settings"
+msgstr "Gosodiadau APN"
+
+#. # LOCALIZATION NOTE (apnSettings-header): if you leave the original
+#. # en-US value "{{apnSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "apnSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: apnSettings-header
+#, fuzzy
+msgid "{{apnSettings}}"
+msgstr "{{fdnSettings}}"
+
 #: dataSettings
 msgid "Data settings"
 msgstr "Gosodiadau data"
@@ -1190,6 +1204,10 @@ msgstr "Gosodiadau IMS"
 #: imsSettings-header2
 msgid "{{imsSettings}}"
 msgstr "{{imsSettings}}"
+
+#: apn-editor-header
+msgid "APN Editor"
+msgstr ""
 
 #: mmsport
 msgid "MMS port"
@@ -1267,6 +1285,10 @@ msgstr "IPv6"
 msgid "IPv4/IPv6"
 msgstr "IPv4/IPv6"
 
+#: apn-type
+msgid "APN Type"
+msgstr ""
+
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
 msgstr "Troi cysylltiad data YMLAEN?"
@@ -1291,6 +1313,20 @@ msgstr ""
 "Yn ddibynnol ar eich cytundeb gwasanaeth, gall gostau ychwanegol gael eu "
 "gosod am ddata pan fyddwch mewn ardal crwydro."
 
+#: change-apn-warning-message
+msgid ""
+"Depending on your service agreement, changing your APN setting may result in "
+"extra charges when roaming."
+msgstr ""
+
+#: change-apn-warning-question
+msgid "Do you want to proceed?"
+msgstr ""
+
+#: reset-apn-warning-message
+msgid "This resets the settings to default values. This cannot be undone."
+msgstr ""
+
 #: state-unknown
 msgid "Unknown state"
 msgstr "Cyflwr anhysbys"
@@ -1312,6 +1348,28 @@ msgstr "Cysylltwyd"
 #: state-forbidden
 msgid "Forbidden"
 msgstr "Gwaharddedig"
+
+#: delete-apn-confirm
+msgid "Delete this APN?"
+msgstr ""
+
+#: delete-apn
+#, fuzzy
+msgctxt "delete-apn"
+msgid "Delete"
+msgstr "Dileu"
+
+#: add-apn
+msgid "Add New Apn"
+msgstr ""
+
+#: reset-apn
+msgid "Reset to Default"
+msgstr ""
+
+#: apnSettings-reset
+msgid "APN settings reset"
+msgstr ""
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
@@ -1665,33 +1723,22 @@ msgstr "Hir"
 msgid "Select a tone"
 msgstr "Dewis tôn"
 
-#: ringer
-msgid "Ringer"
-msgstr "Canu"
-
-#: ring-tones
+#: ringtones
 msgid "Ringtones"
 msgstr "Tonau Canu"
-
-#: alert-tones
-msgid "Alert tones"
-msgstr "Tonau rhybudd"
-
-#: manage-sounds
-msgid "Manage Sounds"
-msgstr "Rheoli Seiniau"
-
-#: manage-ringtones
-msgid "Manage Ringtones"
-msgstr "Rheoli Tonau Canu"
-
-#: other-sounds
-msgid "Other sounds"
-msgstr "Synau eraill"
 
 #: alerts
 msgid "Alerts"
 msgstr "Rhybuddion"
+
+#: manage-tones
+#, fuzzy
+msgid "Manage Tones"
+msgstr "Rheoli Seiniau"
+
+#: other-sounds
+msgid "Other sounds"
+msgstr "Synau eraill"
 
 #: unlock-screen
 msgid "Unlock screen"
@@ -1709,8 +1756,9 @@ msgstr "Neges Anfonwyd"
 msgid "Alarm"
 msgstr "Larwm"
 
-#: ringer-and-notification-sound
-msgid "Ringer & Notifications"
+#: ringtone-and-notification-sound
+#, fuzzy
+msgid "Ringtones & Notifications"
 msgstr "Canu a Hysbysu"
 
 #: media-sound
@@ -2005,7 +2053,15 @@ msgstr "Pedair Colofn"
 msgid "Notice"
 msgstr "Hysbysiad"
 
+#: search
+#, fuzzy
+msgctxt "search"
+msgid "Search"
+msgstr "Chwilio"
+
 #: search-header
+#, fuzzy
+msgctxt "search-header"
 msgid "Search"
 msgstr "Chwilio"
 
@@ -2126,6 +2182,15 @@ msgstr "rhif"
 #: defaultKeyboardEnabled
 msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr "Mae {{appName}} {{layoutName}} wedi ei osod fel yr arferol"
+
+#. # Personalization :: Themes
+#: themes
+msgid "Themes"
+msgstr ""
+
+#: themes-header
+msgid "{{themes}}"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Accounts
@@ -2264,12 +2329,25 @@ msgstr "I weld lleoliad eich dyfais, rhaid i chi alluogi tracio geoleoliad."
 msgid "Geolocation Enabled"
 msgstr "Galluogwyd Geoleoliad"
 
+#. # Error messages
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
 msgstr ""
 "Mae'r ddyfais hon all-lein ar hyn o bryd. Cysylltwch â rhwydwaith a cheisio "
 "eto."
+
+#: findmydevice-error
+msgid "A Find My Device error has occurred."
+msgstr ""
+
+#: findmydevice-please-try
+msgid "Please try again."
+msgstr ""
+
+#: findmydevice-please-tap
+msgid "Please tap to try again."
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -2798,6 +2876,21 @@ msgstr ""
 msgid "Browser Privacy"
 msgstr ""
 
+#. # LOCALIZATION NOTE (browserPrivacy-header): if you leave the original
+#. # en-US value "{{browserPrivacy}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "browserPrivacy".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: browserPrivacy-header
+msgid "{{browserPrivacy}}"
+msgstr ""
+
+#: confirm-clear-title
+#, fuzzy
+msgctxt "confirm-clear-title"
+msgid "Confirmation"
+msgstr "Cadarnhad"
+
 #: clear-browsing-history
 msgid "Clear browsing history"
 msgstr ""
@@ -2813,6 +2906,10 @@ msgstr ""
 #: confirm-clear-cookies-and-stored-data
 msgid "Clear cookies and other data stored by sites on this device?"
 msgstr ""
+
+#: clear-boomarks-data
+msgid "Clear bookmarks data"
+msgstr "Clirio data nodau tudalen"
 
 #: confirmClearBookmarkAppsDataDesc
 msgid ""
@@ -2937,6 +3034,19 @@ msgstr ""
 #: ums-shared-volumes
 msgid "{{list}} shared"
 msgstr "Rhannu {{list}}"
+
+#. # Storage :: USB storage
+#: transferProtocol-header
+msgid "Transfer Protocol"
+msgstr ""
+
+#: protocol-mtp
+msgid "Media transfer protocol (MTP)"
+msgstr ""
+
+#: protocol-ums
+msgid "USB mass Storage (UMS)"
+msgstr ""
 
 #. # Storage :: Media storage
 #: mediaStorage
@@ -3385,6 +3495,11 @@ msgstr "Allbwn diwyfr mewn ADB"
 msgid "Bluetooth output in ADB"
 msgstr "Allbwn Bluetooth yn ADB"
 
+#: nfc-debugging
+#, fuzzy
+msgid "NFC output in ADB"
+msgstr "Allbwn diwyfr mewn ADB"
+
 #: console-enabled
 msgid "Console enabled"
 msgstr "Galluogi'r consol"
@@ -3747,6 +3862,8 @@ msgid "Deselect all"
 msgstr "Dad-ddewis popeth"
 
 #: downloads-delete
+#, fuzzy
+msgctxt "downloads-delete"
 msgid "Delete"
 msgstr "Dileu"
 
@@ -4204,11 +4321,17 @@ msgstr ""
 "Bydd galluogi {{number}} yn analluogi {{oldSetting}} Hoffech chi alluogi "
 "{{newSetting}}?"
 
+#~ msgid "Ringer"
+#~ msgstr "Canu"
+
+#~ msgid "Alert tones"
+#~ msgstr "Tonau rhybudd"
+
+#~ msgid "Manage Ringtones"
+#~ msgstr "Rheoli Tonau Canu"
+
 #~ msgid "Are you sure you want to uninstall {{ app }}?"
 #~ msgstr "Ydych chi'n siŵr eich bod am ddadosod {{ app }}?"
-
-#~ msgid "Clear bookmarks data"
-#~ msgstr "Clirio data nodau tudalen"
 
 #~ msgid "Clear private data from bookmarks?"
 #~ msgstr "Clirio data preifat o'r nodau tudalen?"
@@ -4419,9 +4542,6 @@ msgstr ""
 #~ "When entering a roaming area, your data connection will be turned off."
 #~ msgstr ""
 #~ "Wrth fynd i ardal crwydro, bydd eich cysylltiad data'n cael ei ddiffodd."
-
-#~ msgid "APN settings"
-#~ msgstr "Gosodiadau APN"
 
 #~ msgid "Hotspot"
 #~ msgstr "Man Poeth"

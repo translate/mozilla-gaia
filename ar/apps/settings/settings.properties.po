@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-29 14:37+0000\n"
+"POT-Creation-Date: 2014-09-03 10:18+0000\n"
 "PO-Revision-Date: 2014-06-27 12:49+0000\n"
 "Last-Translator: Ahmed <nefzaoui.ahmed@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1130,6 +1130,20 @@ msgstr "التابعة"
 msgid "APN"
 msgstr "APN"
 
+#: apnSettings
+msgid "APN settings"
+msgstr "إعدادات APN"
+
+#. # LOCALIZATION NOTE (apnSettings-header): if you leave the original
+#. # en-US value "{{apnSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "apnSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: apnSettings-header
+#, fuzzy
+msgid "{{apnSettings}}"
+msgstr "{{fdnSettings}}"
+
 #: dataSettings
 msgid "Data settings"
 msgstr "اعدادات البيانات"
@@ -1194,6 +1208,10 @@ msgstr "إعدادات IMS"
 #: imsSettings-header2
 msgid "{{imsSettings}}"
 msgstr "{{imsSettings}}"
+
+#: apn-editor-header
+msgid "APN Editor"
+msgstr ""
 
 #: mmsport
 msgid "MMS port"
@@ -1271,6 +1289,10 @@ msgstr "IPv6"
 msgid "IPv4/IPv6"
 msgstr "IPv4/IPv6"
 
+#: apn-type
+msgid "APN Type"
+msgstr ""
+
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
 msgstr "هل تريد تفعيل اتصال البيانات؟"
@@ -1295,6 +1317,20 @@ msgstr ""
 "اعتمادا على اتفاقية الخدمة الخاصة بك، قد تطبق رسوم إضافية للبيانات عندما "
 "تكون في منطقة التجوال."
 
+#: change-apn-warning-message
+msgid ""
+"Depending on your service agreement, changing your APN setting may result in "
+"extra charges when roaming."
+msgstr ""
+
+#: change-apn-warning-question
+msgid "Do you want to proceed?"
+msgstr ""
+
+#: reset-apn-warning-message
+msgid "This resets the settings to default values. This cannot be undone."
+msgstr ""
+
 #: state-unknown
 msgid "Unknown state"
 msgstr "حالة مجهولة"
@@ -1316,6 +1352,28 @@ msgstr "مُتصِّل"
 #: state-forbidden
 msgid "Forbidden"
 msgstr "ممنوع"
+
+#: delete-apn-confirm
+msgid "Delete this APN?"
+msgstr ""
+
+#: delete-apn
+#, fuzzy
+msgctxt "delete-apn"
+msgid "Delete"
+msgstr "احذف"
+
+#: add-apn
+msgid "Add New Apn"
+msgstr ""
+
+#: reset-apn
+msgid "Reset to Default"
+msgstr ""
+
+#: apnSettings-reset
+msgid "APN settings reset"
+msgstr ""
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
@@ -1667,33 +1725,22 @@ msgstr "طويل"
 msgid "Select a tone"
 msgstr "إختَر نغمة"
 
-#: ringer
-msgid "Ringer"
-msgstr "رنين"
-
-#: ring-tones
+#: ringtones
 msgid "Ringtones"
 msgstr "نعمات الرنين"
-
-#: alert-tones
-msgid "Alert tones"
-msgstr "نغمات التنبيهات"
-
-#: manage-sounds
-msgid "Manage Sounds"
-msgstr "إدارة الأصوات"
-
-#: manage-ringtones
-msgid "Manage Ringtones"
-msgstr "إدارة النغمات"
-
-#: other-sounds
-msgid "Other sounds"
-msgstr "أصوات أخرى"
 
 #: alerts
 msgid "Alerts"
 msgstr "تنبيهات"
+
+#: manage-tones
+#, fuzzy
+msgid "Manage Tones"
+msgstr "إدارة الأصوات"
+
+#: other-sounds
+msgid "Other sounds"
+msgstr "أصوات أخرى"
 
 #: unlock-screen
 msgid "Unlock screen"
@@ -1711,8 +1758,9 @@ msgstr "الرسالة المرسلة"
 msgid "Alarm"
 msgstr "المنبه"
 
-#: ringer-and-notification-sound
-msgid "Ringer & Notifications"
+#: ringtone-and-notification-sound
+#, fuzzy
+msgid "Ringtones & Notifications"
 msgstr "الرنين والتنبيهات"
 
 #: media-sound
@@ -2005,7 +2053,13 @@ msgstr "أربع أعمدة"
 msgid "Notice"
 msgstr "ملاحظة"
 
+#: search
+msgctxt "search"
+msgid "Search"
+msgstr ""
+
 #: search-header
+msgctxt "search-header"
 msgid "Search"
 msgstr ""
 
@@ -2128,6 +2182,15 @@ msgstr "رقم"
 #: defaultKeyboardEnabled
 msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr "{{appName}} {{layoutName}} عينت كأسلوب إدخال إفتراضي"
+
+#. # Personalization :: Themes
+#: themes
+msgid "Themes"
+msgstr ""
+
+#: themes-header
+msgid "{{themes}}"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Accounts
@@ -2268,10 +2331,23 @@ msgstr "لعرض الموقع الجهاز الخاص بك، يجب تفعيل �
 msgid "Geolocation Enabled"
 msgstr "تحديد الموقع الجغرافي مفعل"
 
+#. # Error messages
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
 msgstr "هذا الجهاز غير متصل حاليا. الاتصال بشبكة و حاول مرة أخرى."
+
+#: findmydevice-error
+msgid "A Find My Device error has occurred."
+msgstr ""
+
+#: findmydevice-please-try
+msgid "Please try again."
+msgstr ""
+
+#: findmydevice-please-tap
+msgid "Please tap to try again."
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -2792,6 +2868,21 @@ msgstr ""
 msgid "Browser Privacy"
 msgstr ""
 
+#. # LOCALIZATION NOTE (browserPrivacy-header): if you leave the original
+#. # en-US value "{{browserPrivacy}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "browserPrivacy".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: browserPrivacy-header
+msgid "{{browserPrivacy}}"
+msgstr ""
+
+#: confirm-clear-title
+#, fuzzy
+msgctxt "confirm-clear-title"
+msgid "Confirmation"
+msgstr "تأكيد"
+
 #: clear-browsing-history
 msgid "Clear browsing history"
 msgstr ""
@@ -2807,6 +2898,10 @@ msgstr ""
 #: confirm-clear-cookies-and-stored-data
 msgid "Clear cookies and other data stored by sites on this device?"
 msgstr ""
+
+#: clear-boomarks-data
+msgid "Clear bookmarks data"
+msgstr "مسح معلومات العلامات"
 
 #: confirmClearBookmarkAppsDataDesc
 msgid ""
@@ -2931,6 +3026,19 @@ msgstr ""
 #: ums-shared-volumes
 msgid "{{list}} shared"
 msgstr "{{list}} مشاركة"
+
+#. # Storage :: USB storage
+#: transferProtocol-header
+msgid "Transfer Protocol"
+msgstr ""
+
+#: protocol-mtp
+msgid "Media transfer protocol (MTP)"
+msgstr ""
+
+#: protocol-ums
+msgid "USB mass Storage (UMS)"
+msgstr ""
 
 #. # Storage :: Media storage
 #: mediaStorage
@@ -3378,6 +3486,11 @@ msgstr "ناتج الواي فاي في ADB"
 msgid "Bluetooth output in ADB"
 msgstr "مخرج البلوتوث في ADB"
 
+#: nfc-debugging
+#, fuzzy
+msgid "NFC output in ADB"
+msgstr "ناتج الواي فاي في ADB"
+
 #: console-enabled
 msgid "Console enabled"
 msgstr "وحدة التحكم مفعلة"
@@ -3735,6 +3848,8 @@ msgid "Deselect all"
 msgstr "إلغاء تحديد الكل"
 
 #: downloads-delete
+#, fuzzy
+msgctxt "downloads-delete"
 msgid "Delete"
 msgstr "احذف"
 
@@ -4185,11 +4300,17 @@ msgid ""
 "{{newSetting}}?"
 msgstr ""
 
+#~ msgid "Ringer"
+#~ msgstr "رنين"
+
+#~ msgid "Alert tones"
+#~ msgstr "نغمات التنبيهات"
+
+#~ msgid "Manage Ringtones"
+#~ msgstr "إدارة النغمات"
+
 #~ msgid "Are you sure you want to uninstall {{ app }}?"
 #~ msgstr "هل ترغب فعلاً بإلغاء تثبيت {{ app }}؟"
-
-#~ msgid "Clear bookmarks data"
-#~ msgstr "مسح معلومات العلامات"
 
 #~ msgid "Clear private data from bookmarks?"
 #~ msgstr "مسح المعلومات الخاصة من العلامات؟"
@@ -4385,9 +4506,6 @@ msgstr ""
 #~ msgid ""
 #~ "When entering a roaming area, your data connection will be turned off."
 #~ msgstr "عند دخول منطقة التجوال، سيتم إيقاف اتصال بياناتك."
-
-#~ msgid "APN settings"
-#~ msgstr "إعدادات APN"
 
 #~ msgid "Hotspot"
 #~ msgstr "HotSpot"
