@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-03 10:18+0000\n"
+"POT-Creation-Date: 2014-09-05 14:52+0000\n"
 "PO-Revision-Date: 2014-09-03 22:05+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -1329,6 +1329,12 @@ msgstr ""
 msgid "Do you want to proceed?"
 msgstr "A bheil thu airson leantainn air adhart?"
 
+#: reset-apn-warning-title
+#, fuzzy
+msgctxt "reset-apn-warning-title"
+msgid "Reset to Default"
+msgstr "Aisig na bun-roghainnean"
+
 #: reset-apn-warning-message
 msgid "This resets the settings to default values. This cannot be undone."
 msgstr "Aisigidh seo na bun-roghainnean. Cha ghabh seo a neo-dhèanamh."
@@ -1365,10 +1371,13 @@ msgid "Delete"
 msgstr "Sguab às"
 
 #: add-apn
-msgid "Add New Apn"
+#, fuzzy
+msgid "Add New APN"
 msgstr "Cuir APN ùr ris"
 
 #: reset-apn
+#, fuzzy
+msgctxt "reset-apn"
 msgid "Reset to Default"
 msgstr "Aisig na bun-roghainnean"
 
@@ -1614,6 +1623,8 @@ msgid "Wi-Fi"
 msgstr "WiFi"
 
 #: wifi-hotspot
+#, fuzzy
+msgctxt "wifi-hotspot"
 msgid "Wi-Fi hotspot"
 msgstr "WiFi Hotspot"
 
@@ -1632,6 +1643,8 @@ msgid "Security"
 msgstr "Tèarainteachd"
 
 #: usb-tethering
+#, fuzzy
+msgctxt "usb-tethering"
 msgid "USB tethering"
 msgstr "Teadhrachadh USB"
 
@@ -2894,18 +2907,20 @@ msgstr ""
 "prìobhaideach agad — can susbaint nam basgaidean ceannachd, fiosrachadh mu "
 "d’ ionad no ainm-cleachdaichean 's faclan-faire."
 
-#. # Security :: Browser Privacy
-#: browserPrivacy
-msgid "Browser Privacy"
+#. # Security :: Browsing Privacy
+#: browsingPrivacy
+#, fuzzy
+msgid "Browsing Privacy"
 msgstr "Prìobhaideachd a’ bhrabhsair"
 
-#. # LOCALIZATION NOTE (browserPrivacy-header): if you leave the original
-#. # en-US value "{{browserPrivacy}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "browserPrivacy".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: browserPrivacy-header
-msgid "{{browserPrivacy}}"
+#. # LOCALIZATION NOTE (browsingPrivacy-header): if you leave the original
+#. # en-US value "{{browsingPrivacy}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID
+#. # "browsingPrivacy". If you need to adapt your localization to the reduced space
+#. # available in headers, you can use a shorter string here.
+#: browsingPrivacy-header
+#, fuzzy
+msgid "{{browsingPrivacy}}"
 msgstr "{{browserPrivacy}}"
 
 #: confirm-clear-title
@@ -2955,6 +2970,8 @@ msgid "Storage"
 msgstr "Stòras"
 
 #: enableUSBStorage1
+#, fuzzy
+msgctxt "enableUSBStorage1"
 msgid "USB storage"
 msgstr "Stòras USB"
 
@@ -3863,6 +3880,10 @@ msgstr "Tar-mhùthadh leantainneach"
 msgid "Gaia debug traces"
 msgstr "Gaia debug traces"
 
+#: showScreenReaderSettings
+msgid "Show screen reader settings"
+msgstr ""
+
 #: app-transition
 msgid "App transition"
 msgstr "Tar-mhùthadh aplacaid"
@@ -3953,18 +3974,15 @@ msgstr "So-inntrigeachd"
 msgid "{{accessibility}}"
 msgstr "{{accessibility}}"
 
-#: invertColors
-msgid "Invert colors"
-msgstr "Ais-tionndaidh na dathan"
-
 #: screenReader
 msgid "Screen reader"
 msgstr "Leughadair sgrìn"
 
-#: showA11ySettings
-msgid "Show accessibility settings"
-msgstr "Seall roghainnean na so-ruigsinneachd"
+#: colorFilter
+msgid "Color filter"
+msgstr ""
 
+#. # Device :: Accessibility :: Screen reader
 #: screenReader-enable-msg
 msgid ""
 "When the screen reader is enabled, your device will provide spoken feedback "
@@ -4010,6 +4028,19 @@ msgstr "Ma chuireas tu crìoch air an leughadair, sguiridh e dhen leughadh."
 #: screenReader-confirm-button-stop
 msgid "Stop"
 msgstr "Sguir dheth"
+
+#. # Device :: Accessibility :: Color filter
+#: colorFilter-invert
+msgid "Invert"
+msgstr ""
+
+#: colorFilter-grayscale
+msgid "Grayscale"
+msgstr ""
+
+#: colorFilter-contrast
+msgid "Contrast"
+msgstr ""
 
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
@@ -4347,17 +4378,63 @@ msgid "Get Channel Status"
 msgstr "Iarr staid na seanail"
 
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
-#: is-warning-head
-msgid "{{newSetting}}"
-msgstr "{{newSetting}}"
+#: is-warning-storage-header
+#, fuzzy
+msgctxt "is-warning-storage-header"
+msgid "USB storage"
+msgstr "Stòras USB"
 
-#: is-warning-message
+#: is-warning-tethering-header
+#, fuzzy
+msgctxt "is-warning-tethering-header"
+msgid "USB tethering"
+msgstr "Teadhrachadh USB"
+
+#: is-warning-wifi-header
+#, fuzzy
+msgctxt "is-warning-wifi-header"
+msgid "Wi-Fi hotspot"
+msgstr "WiFi Hotspot"
+
+#: is-warning-storage-tethering-message
 msgid ""
-"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
-"{{newSetting}}?"
+"Enabling USB storage will disable USB tethering. Do you want to enable USB "
+"storage?"
 msgstr ""
-"Ma chuireas tu {{newSetting}} an comas, thèid {{oldSetting}} a chur à comas. "
-"A bheil thu airson {{newSetting}} a chur an comas?"
+
+#: is-warning-tethering-storage-message
+msgid ""
+"Enabling USB tethering will disable USB storage. Do you want to enable USB "
+"tethering?"
+msgstr ""
+
+#: is-warning-tethering-wifi-message
+msgid ""
+"Enabling USB tethering will disable Wi-Fi hotspot. Do you want to enable USB "
+"tethering?"
+msgstr ""
+
+#: is-warning-wifi-tethering-message
+msgid ""
+"Enabling Wi-Fi hotspot will disable USB tethering. Do you want to enable Wi-"
+"Fi hotspot?"
+msgstr ""
+
+#~ msgid "Invert colors"
+#~ msgstr "Ais-tionndaidh na dathan"
+
+#~ msgid "Show accessibility settings"
+#~ msgstr "Seall roghainnean na so-ruigsinneachd"
+
+#~ msgid "{{newSetting}}"
+#~ msgstr "{{newSetting}}"
+
+#~ msgid ""
+#~ "Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to "
+#~ "enable {{newSetting}}?"
+#~ msgstr ""
+#~ "Ma chuireas tu {{newSetting}} an comas, thèid {{oldSetting}} a chur à "
+#~ "comas. A bheil thu airson {{newSetting}} a chur an comas?"
 
 #~ msgid "Ringer"
 #~ msgstr "Seirm"

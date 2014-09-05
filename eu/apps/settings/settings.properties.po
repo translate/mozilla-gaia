@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-03 10:18+0000\n"
+"POT-Creation-Date: 2014-09-05 14:52+0000\n"
 "PO-Revision-Date: 2014-09-04 22:44+0000\n"
 "Last-Translator: Ibai <ibai@oihanguren.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1409870682.000000\n"
@@ -1324,6 +1324,12 @@ msgstr ""
 msgid "Do you want to proceed?"
 msgstr "Aurrera jarraitu nahi duzu?"
 
+#: reset-apn-warning-title
+#, fuzzy
+msgctxt "reset-apn-warning-title"
+msgid "Reset to Default"
+msgstr "Berrezarri lehenetsietara"
+
 #: reset-apn-warning-message
 msgid "This resets the settings to default values. This cannot be undone."
 msgstr ""
@@ -1360,10 +1366,13 @@ msgid "Delete"
 msgstr "Ezabatu"
 
 #: add-apn
-msgid "Add New Apn"
+#, fuzzy
+msgid "Add New APN"
 msgstr "Gehitu APN berria"
 
 #: reset-apn
+#, fuzzy
+msgctxt "reset-apn"
 msgid "Reset to Default"
 msgstr "Berrezarri lehenetsietara"
 
@@ -1605,6 +1614,8 @@ msgid "Wi-Fi"
 msgstr "Wi-Fia"
 
 #: wifi-hotspot
+#, fuzzy
+msgctxt "wifi-hotspot"
 msgid "Wi-Fi hotspot"
 msgstr "Wifigunea"
 
@@ -1623,6 +1634,8 @@ msgid "Security"
 msgstr "Segurtasuna"
 
 #: usb-tethering
+#, fuzzy
+msgctxt "usb-tethering"
 msgid "USB tethering"
 msgstr "USB tethering-a"
 
@@ -2871,18 +2884,20 @@ msgstr ""
 "erosketa-saskietako edukiak, kokapen-informazioa edo saio-hasierako "
 "informazioa."
 
-#. # Security :: Browser Privacy
-#: browserPrivacy
-msgid "Browser Privacy"
+#. # Security :: Browsing Privacy
+#: browsingPrivacy
+#, fuzzy
+msgid "Browsing Privacy"
 msgstr "Nabigatzailearen pribatutasuna"
 
-#. # LOCALIZATION NOTE (browserPrivacy-header): if you leave the original
-#. # en-US value "{{browserPrivacy}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "browserPrivacy".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: browserPrivacy-header
-msgid "{{browserPrivacy}}"
+#. # LOCALIZATION NOTE (browsingPrivacy-header): if you leave the original
+#. # en-US value "{{browsingPrivacy}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID
+#. # "browsingPrivacy". If you need to adapt your localization to the reduced space
+#. # available in headers, you can use a shorter string here.
+#: browsingPrivacy-header
+#, fuzzy
+msgid "{{browsingPrivacy}}"
 msgstr "{{browserPrivacy}}"
 
 #: confirm-clear-title
@@ -2931,6 +2946,8 @@ msgid "Storage"
 msgstr "Biltegiratzea"
 
 #: enableUSBStorage1
+#, fuzzy
+msgctxt "enableUSBStorage1"
 msgid "USB storage"
 msgstr "USB biltegiratzea"
 
@@ -3834,6 +3851,10 @@ msgstr "Etengabeko trantsizioa"
 msgid "Gaia debug traces"
 msgstr "Gaia arazketa-aztarnak"
 
+#: showScreenReaderSettings
+msgid "Show screen reader settings"
+msgstr ""
+
 #: app-transition
 msgid "App transition"
 msgstr "Aplikazioen trantsizioa"
@@ -3925,18 +3946,15 @@ msgstr "Erabilerraztasuna"
 msgid "{{accessibility}}"
 msgstr "{{accessibility}}"
 
-#: invertColors
-msgid "Invert colors"
-msgstr "Alderantzikatu koloreak"
-
 #: screenReader
 msgid "Screen reader"
 msgstr "Pantaila-irakurlea"
 
-#: showA11ySettings
-msgid "Show accessibility settings"
-msgstr "Erak. erabilerr.-ezarpenak"
+#: colorFilter
+msgid "Color filter"
+msgstr ""
 
+#. # Device :: Accessibility :: Screen reader
 #: screenReader-enable-msg
 msgid ""
 "When the screen reader is enabled, your device will provide spoken feedback "
@@ -3982,6 +4000,19 @@ msgstr "Pantaila-irakurlea gelditzeak hizketa-ohar guztiak amaituko ditu."
 #: screenReader-confirm-button-stop
 msgid "Stop"
 msgstr "Gelditu"
+
+#. # Device :: Accessibility :: Color filter
+#: colorFilter-invert
+msgid "Invert"
+msgstr ""
+
+#: colorFilter-grayscale
+msgid "Grayscale"
+msgstr ""
+
+#: colorFilter-contrast
+msgid "Contrast"
+msgstr ""
 
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
@@ -4311,17 +4342,63 @@ msgid "Get Channel Status"
 msgstr "Eskuratu kanalaren egoera"
 
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
-#: is-warning-head
-msgid "{{newSetting}}"
-msgstr "{{newSetting}}"
+#: is-warning-storage-header
+#, fuzzy
+msgctxt "is-warning-storage-header"
+msgid "USB storage"
+msgstr "USB biltegiratzea"
 
-#: is-warning-message
+#: is-warning-tethering-header
+#, fuzzy
+msgctxt "is-warning-tethering-header"
+msgid "USB tethering"
+msgstr "USB tethering-a"
+
+#: is-warning-wifi-header
+#, fuzzy
+msgctxt "is-warning-wifi-header"
+msgid "Wi-Fi hotspot"
+msgstr "Wifigunea"
+
+#: is-warning-storage-tethering-message
 msgid ""
-"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
-"{{newSetting}}?"
+"Enabling USB storage will disable USB tethering. Do you want to enable USB "
+"storage?"
 msgstr ""
-"{{newSetting}} gaitzean {{oldSetting}} desgaituko da. {{newSetting}} gaitu "
-"nahi duzu?"
+
+#: is-warning-tethering-storage-message
+msgid ""
+"Enabling USB tethering will disable USB storage. Do you want to enable USB "
+"tethering?"
+msgstr ""
+
+#: is-warning-tethering-wifi-message
+msgid ""
+"Enabling USB tethering will disable Wi-Fi hotspot. Do you want to enable USB "
+"tethering?"
+msgstr ""
+
+#: is-warning-wifi-tethering-message
+msgid ""
+"Enabling Wi-Fi hotspot will disable USB tethering. Do you want to enable Wi-"
+"Fi hotspot?"
+msgstr ""
+
+#~ msgid "Invert colors"
+#~ msgstr "Alderantzikatu koloreak"
+
+#~ msgid "Show accessibility settings"
+#~ msgstr "Erak. erabilerr.-ezarpenak"
+
+#~ msgid "{{newSetting}}"
+#~ msgstr "{{newSetting}}"
+
+#~ msgid ""
+#~ "Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to "
+#~ "enable {{newSetting}}?"
+#~ msgstr ""
+#~ "{{newSetting}} gaitzean {{oldSetting}} desgaituko da. {{newSetting}} "
+#~ "gaitu nahi duzu?"
 
 #~ msgid "Ringer"
 #~ msgstr "Txirrina"

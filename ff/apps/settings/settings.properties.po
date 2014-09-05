@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-03 10:18+0000\n"
+"POT-Creation-Date: 2014-09-05 14:52+0000\n"
 "PO-Revision-Date: 2014-08-15 22:04+0000\n"
 "Last-Translator: Ibrahima <ibrahima.sarr@pulaagu.com>\n"
 "Language-Team: FULAH LOCALIZATION\n"
@@ -1338,6 +1338,11 @@ msgstr ""
 msgid "Do you want to proceed?"
 msgstr ""
 
+#: reset-apn-warning-title
+msgctxt "reset-apn-warning-title"
+msgid "Reset to Default"
+msgstr ""
+
 #: reset-apn-warning-message
 msgid "This resets the settings to default values. This cannot be undone."
 msgstr ""
@@ -1375,10 +1380,11 @@ msgid "Delete"
 msgstr "Momtu"
 
 #: add-apn
-msgid "Add New Apn"
+msgid "Add New APN"
 msgstr ""
 
 #: reset-apn
+msgctxt "reset-apn"
 msgid "Reset to Default"
 msgstr ""
 
@@ -1618,6 +1624,8 @@ msgid "Wi-Fi"
 msgstr "Wifi"
 
 #: wifi-hotspot
+#, fuzzy
+msgctxt "wifi-hotspot"
 msgid "Wi-Fi hotspot"
 msgstr "Hotspot Wifi"
 
@@ -1636,6 +1644,8 @@ msgid "Security"
 msgstr "Kisal"
 
 #: usb-tethering
+#, fuzzy
+msgctxt "usb-tethering"
 msgid "USB tethering"
 msgstr "Ceŋondiral USB"
 
@@ -2891,18 +2901,18 @@ msgstr ""
 "maa yejjitde humpito maa heeriingo wano loowdi jigeeji duggirɗi, humpito "
 "nokkuure, walla humpito ceŋagol."
 
-#. # Security :: Browser Privacy
-#: browserPrivacy
-msgid "Browser Privacy"
+#. # Security :: Browsing Privacy
+#: browsingPrivacy
+msgid "Browsing Privacy"
 msgstr ""
 
-#. # LOCALIZATION NOTE (browserPrivacy-header): if you leave the original
-#. # en-US value "{{browserPrivacy}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "browserPrivacy".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: browserPrivacy-header
-msgid "{{browserPrivacy}}"
+#. # LOCALIZATION NOTE (browsingPrivacy-header): if you leave the original
+#. # en-US value "{{browsingPrivacy}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID
+#. # "browsingPrivacy". If you need to adapt your localization to the reduced space
+#. # available in headers, you can use a shorter string here.
+#: browsingPrivacy-header
+msgid "{{browsingPrivacy}}"
 msgstr ""
 
 #: confirm-clear-title
@@ -2951,6 +2961,8 @@ msgid "Storage"
 msgstr "Ndesgu"
 
 #: enableUSBStorage1
+#, fuzzy
+msgctxt "enableUSBStorage1"
 msgid "USB storage"
 msgstr "Ndesgu USB"
 
@@ -3849,6 +3861,10 @@ msgstr "Continuous transition"
 msgid "Gaia debug traces"
 msgstr "Gaia debug traces"
 
+#: showScreenReaderSettings
+msgid "Show screen reader settings"
+msgstr ""
+
 #: app-transition
 msgid "App transition"
 msgstr "App transition"
@@ -3940,18 +3956,15 @@ msgstr "Weeɓitaare"
 msgid "{{accessibility}}"
 msgstr "{{accessibility}}"
 
-#: invertColors
-msgid "Invert colors"
-msgstr "Waklit goobuuji"
-
 #: screenReader
 msgid "Screen reader"
 msgstr "Tarirde yaynirde"
 
-#: showA11ySettings
-msgid "Show accessibility settings"
-msgstr "Hollu teete weeɓitaare"
+#: colorFilter
+msgid "Color filter"
+msgstr ""
 
+#. # Device :: Accessibility :: Screen reader
 #: screenReader-enable-msg
 msgid ""
 "When the screen reader is enabled, your device will provide spoken feedback "
@@ -3997,6 +4010,19 @@ msgstr "Dartinde tarorde yaynirde ndee maa dartin duttine daande fof."
 #: screenReader-confirm-button-stop
 msgid "Stop"
 msgstr "Dartin"
+
+#. # Device :: Accessibility :: Color filter
+#: colorFilter-invert
+msgid "Invert"
+msgstr ""
+
+#: colorFilter-grayscale
+msgid "Grayscale"
+msgstr ""
+
+#: colorFilter-contrast
+msgid "Contrast"
+msgstr ""
 
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
@@ -4324,15 +4350,53 @@ msgid "Get Channel Status"
 msgstr "Heɓ Ngonka Calol"
 
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
-#: is-warning-head
-msgid "{{newSetting}}"
+#: is-warning-storage-header
+#, fuzzy
+msgctxt "is-warning-storage-header"
+msgid "USB storage"
+msgstr "Ndesgu USB"
+
+#: is-warning-tethering-header
+#, fuzzy
+msgctxt "is-warning-tethering-header"
+msgid "USB tethering"
+msgstr "Ceŋondiral USB"
+
+#: is-warning-wifi-header
+#, fuzzy
+msgctxt "is-warning-wifi-header"
+msgid "Wi-Fi hotspot"
+msgstr "Hotspot Wifi"
+
+#: is-warning-storage-tethering-message
+msgid ""
+"Enabling USB storage will disable USB tethering. Do you want to enable USB "
+"storage?"
 msgstr ""
 
-#: is-warning-message
+#: is-warning-tethering-storage-message
 msgid ""
-"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
-"{{newSetting}}?"
+"Enabling USB tethering will disable USB storage. Do you want to enable USB "
+"tethering?"
 msgstr ""
+
+#: is-warning-tethering-wifi-message
+msgid ""
+"Enabling USB tethering will disable Wi-Fi hotspot. Do you want to enable USB "
+"tethering?"
+msgstr ""
+
+#: is-warning-wifi-tethering-message
+msgid ""
+"Enabling Wi-Fi hotspot will disable USB tethering. Do you want to enable Wi-"
+"Fi hotspot?"
+msgstr ""
+
+#~ msgid "Invert colors"
+#~ msgstr "Waklit goobuuji"
+
+#~ msgid "Show accessibility settings"
+#~ msgstr "Hollu teete weeɓitaare"
 
 #~ msgid "Ringer"
 #~ msgstr "Holɓorde"

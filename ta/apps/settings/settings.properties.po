@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-03 10:18+0000\n"
+"POT-Creation-Date: 2014-09-05 14:52+0000\n"
 "PO-Revision-Date: 2014-09-02 09:06+0000\n"
 "Last-Translator: Arun Kumar <thangam.arunx@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1318,6 +1318,11 @@ msgstr ""
 msgid "Do you want to proceed?"
 msgstr ""
 
+#: reset-apn-warning-title
+msgctxt "reset-apn-warning-title"
+msgid "Reset to Default"
+msgstr ""
+
 #: reset-apn-warning-message
 msgid "This resets the settings to default values. This cannot be undone."
 msgstr ""
@@ -1355,10 +1360,11 @@ msgid "Delete"
 msgstr "நீக்கு"
 
 #: add-apn
-msgid "Add New Apn"
+msgid "Add New APN"
 msgstr ""
 
 #: reset-apn
+msgctxt "reset-apn"
 msgid "Reset to Default"
 msgstr ""
 
@@ -1601,6 +1607,8 @@ msgid "Wi-Fi"
 msgstr "வை-பை"
 
 #: wifi-hotspot
+#, fuzzy
+msgctxt "wifi-hotspot"
 msgid "Wi-Fi hotspot"
 msgstr "ஹாட்ஸ்பாட்"
 
@@ -1619,6 +1627,8 @@ msgid "Security"
 msgstr "பாதுகாப்பு"
 
 #: usb-tethering
+#, fuzzy
+msgctxt "usb-tethering"
 msgid "USB tethering"
 msgstr "USB பகிர்வு"
 
@@ -2865,18 +2875,18 @@ msgstr ""
 "உங்களுடைய நாதனத்தின் சுய விவர தரவை மறக்கடிக்கோ செய்யாது, அவைகளை பொன்ற ஷாப்பிங் "
 "பொருட்கள், இடத் தகவல் அல்லது நுழைவு தகவல்."
 
-#. # Security :: Browser Privacy
-#: browserPrivacy
-msgid "Browser Privacy"
+#. # Security :: Browsing Privacy
+#: browsingPrivacy
+msgid "Browsing Privacy"
 msgstr ""
 
-#. # LOCALIZATION NOTE (browserPrivacy-header): if you leave the original
-#. # en-US value "{{browserPrivacy}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "browserPrivacy".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: browserPrivacy-header
-msgid "{{browserPrivacy}}"
+#. # LOCALIZATION NOTE (browsingPrivacy-header): if you leave the original
+#. # en-US value "{{browsingPrivacy}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID
+#. # "browsingPrivacy". If you need to adapt your localization to the reduced space
+#. # available in headers, you can use a shorter string here.
+#: browsingPrivacy-header
+msgid "{{browsingPrivacy}}"
 msgstr ""
 
 #: confirm-clear-title
@@ -2925,6 +2935,8 @@ msgid "Storage"
 msgstr "சேமிப்பகம்"
 
 #: enableUSBStorage1
+#, fuzzy
+msgctxt "enableUSBStorage1"
 msgid "USB storage"
 msgstr "USB சேமிப்பகம்"
 
@@ -3822,6 +3834,10 @@ msgstr "தொடர்ச்சியான மாற்றம்"
 msgid "Gaia debug traces"
 msgstr "கெயா வழுநீக்க தடங்கள்"
 
+#: showScreenReaderSettings
+msgid "Show screen reader settings"
+msgstr ""
+
 #: app-transition
 msgid "App transition"
 msgstr "பயன்பாட்டின் மாற்றம்"
@@ -3913,18 +3929,15 @@ msgstr "அணுகுத்திறன்"
 msgid "{{accessibility}}"
 msgstr "{{accessibility}}"
 
-#: invertColors
-msgid "Invert colors"
-msgstr "வண்ணத்தை மாற்று"
-
 #: screenReader
 msgid "Screen reader"
 msgstr "திரைவாசிப்பான்"
 
-#: showA11ySettings
-msgid "Show accessibility settings"
-msgstr "அணுகல் அமைவுகளை காண்பி"
+#: colorFilter
+msgid "Color filter"
+msgstr ""
 
+#. # Device :: Accessibility :: Screen reader
 #: screenReader-enable-msg
 msgid ""
 "When the screen reader is enabled, your device will provide spoken feedback "
@@ -3972,6 +3985,19 @@ msgstr ""
 #: screenReader-confirm-button-stop
 msgid "Stop"
 msgstr "நிறுத்து"
+
+#. # Device :: Accessibility :: Color filter
+#: colorFilter-invert
+msgid "Invert"
+msgstr ""
+
+#: colorFilter-grayscale
+msgid "Grayscale"
+msgstr ""
+
+#: colorFilter-contrast
+msgid "Contrast"
+msgstr ""
 
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
@@ -4298,17 +4324,63 @@ msgid "Get Channel Status"
 msgstr "அலைவரிசை நிலையை பெறு"
 
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
-#: is-warning-head
-msgid "{{newSetting}}"
-msgstr "{{newSetting}}"
+#: is-warning-storage-header
+#, fuzzy
+msgctxt "is-warning-storage-header"
+msgid "USB storage"
+msgstr "USB சேமிப்பகம்"
 
-#: is-warning-message
+#: is-warning-tethering-header
+#, fuzzy
+msgctxt "is-warning-tethering-header"
+msgid "USB tethering"
+msgstr "USB பகிர்வு"
+
+#: is-warning-wifi-header
+#, fuzzy
+msgctxt "is-warning-wifi-header"
+msgid "Wi-Fi hotspot"
+msgstr "ஹாட்ஸ்பாட்"
+
+#: is-warning-storage-tethering-message
 msgid ""
-"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
-"{{newSetting}}?"
+"Enabling USB storage will disable USB tethering. Do you want to enable USB "
+"storage?"
 msgstr ""
-"{{newSetting}} செயல்படுத்தினால் {{oldSetting}} முடங்கும். {{newSetting}} "
-"செயல்படுத்தவா?"
+
+#: is-warning-tethering-storage-message
+msgid ""
+"Enabling USB tethering will disable USB storage. Do you want to enable USB "
+"tethering?"
+msgstr ""
+
+#: is-warning-tethering-wifi-message
+msgid ""
+"Enabling USB tethering will disable Wi-Fi hotspot. Do you want to enable USB "
+"tethering?"
+msgstr ""
+
+#: is-warning-wifi-tethering-message
+msgid ""
+"Enabling Wi-Fi hotspot will disable USB tethering. Do you want to enable Wi-"
+"Fi hotspot?"
+msgstr ""
+
+#~ msgid "Invert colors"
+#~ msgstr "வண்ணத்தை மாற்று"
+
+#~ msgid "Show accessibility settings"
+#~ msgstr "அணுகல் அமைவுகளை காண்பி"
+
+#~ msgid "{{newSetting}}"
+#~ msgstr "{{newSetting}}"
+
+#~ msgid ""
+#~ "Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to "
+#~ "enable {{newSetting}}?"
+#~ msgstr ""
+#~ "{{newSetting}} செயல்படுத்தினால் {{oldSetting}} முடங்கும். {{newSetting}} "
+#~ "செயல்படுத்தவா?"
 
 #~ msgid "Ringer"
 #~ msgstr "ஒலிக்கிறது"

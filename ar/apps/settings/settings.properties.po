@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-03 10:18+0000\n"
+"POT-Creation-Date: 2014-09-05 14:52+0000\n"
 "PO-Revision-Date: 2014-06-27 12:49+0000\n"
 "Last-Translator: Ahmed <nefzaoui.ahmed@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1327,6 +1327,11 @@ msgstr ""
 msgid "Do you want to proceed?"
 msgstr ""
 
+#: reset-apn-warning-title
+msgctxt "reset-apn-warning-title"
+msgid "Reset to Default"
+msgstr ""
+
 #: reset-apn-warning-message
 msgid "This resets the settings to default values. This cannot be undone."
 msgstr ""
@@ -1364,10 +1369,11 @@ msgid "Delete"
 msgstr "احذف"
 
 #: add-apn
-msgid "Add New Apn"
+msgid "Add New APN"
 msgstr ""
 
 #: reset-apn
+msgctxt "reset-apn"
 msgid "Reset to Default"
 msgstr ""
 
@@ -1606,6 +1612,8 @@ msgid "Wi-Fi"
 msgstr "Wi-Fi"
 
 #: wifi-hotspot
+#, fuzzy
+msgctxt "wifi-hotspot"
 msgid "Wi-Fi hotspot"
 msgstr "Wi-Fi Hotspot"
 
@@ -1624,6 +1632,8 @@ msgid "Security"
 msgstr "الحماية"
 
 #: usb-tethering
+#, fuzzy
+msgctxt "usb-tethering"
 msgid "USB tethering"
 msgstr "ربط USB"
 
@@ -2863,18 +2873,18 @@ msgstr ""
 "بجهازك لنسيان معلوماتك الخاصة — من قبيل محتويات عربات التسوق، معلومات "
 "الموقع، أو معلومات تسجيل الدخول."
 
-#. # Security :: Browser Privacy
-#: browserPrivacy
-msgid "Browser Privacy"
+#. # Security :: Browsing Privacy
+#: browsingPrivacy
+msgid "Browsing Privacy"
 msgstr ""
 
-#. # LOCALIZATION NOTE (browserPrivacy-header): if you leave the original
-#. # en-US value "{{browserPrivacy}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "browserPrivacy".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: browserPrivacy-header
-msgid "{{browserPrivacy}}"
+#. # LOCALIZATION NOTE (browsingPrivacy-header): if you leave the original
+#. # en-US value "{{browsingPrivacy}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID
+#. # "browsingPrivacy". If you need to adapt your localization to the reduced space
+#. # available in headers, you can use a shorter string here.
+#: browsingPrivacy-header
+msgid "{{browsingPrivacy}}"
 msgstr ""
 
 #: confirm-clear-title
@@ -2923,6 +2933,8 @@ msgid "Storage"
 msgstr "تخزين"
 
 #: enableUSBStorage1
+#, fuzzy
+msgctxt "enableUSBStorage1"
 msgid "USB storage"
 msgstr "تخزين باستخدام ال USB"
 
@@ -3818,6 +3830,10 @@ msgstr "التنقل المستمر "
 msgid "Gaia debug traces"
 msgstr "Gaia debug traces"
 
+#: showScreenReaderSettings
+msgid "Show screen reader settings"
+msgstr ""
+
 #: app-transition
 msgid "App transition"
 msgstr "التطبيقات الانتقالية."
@@ -3909,18 +3925,15 @@ msgstr "الوصول"
 msgid "{{accessibility}}"
 msgstr "{{accessibility}}"
 
-#: invertColors
-msgid "Invert colors"
-msgstr "عكس الألوان"
-
 #: screenReader
 msgid "Screen reader"
 msgstr "قارئ الشاشة"
 
-#: showA11ySettings
-msgid "Show accessibility settings"
-msgstr "إعدادات الإعانة"
+#: colorFilter
+msgid "Color filter"
+msgstr ""
 
+#. # Device :: Accessibility :: Screen reader
 #: screenReader-enable-msg
 msgid ""
 "When the screen reader is enabled, your device will provide spoken feedback "
@@ -3965,6 +3978,19 @@ msgstr "سيتم وقف قارئ الشاشة ووضع حد لجميع ردود 
 #: screenReader-confirm-button-stop
 msgid "Stop"
 msgstr "أوقف"
+
+#. # Device :: Accessibility :: Color filter
+#: colorFilter-invert
+msgid "Invert"
+msgstr ""
+
+#: colorFilter-grayscale
+msgid "Grayscale"
+msgstr ""
+
+#: colorFilter-contrast
+msgid "Contrast"
+msgstr ""
 
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
@@ -4290,15 +4316,53 @@ msgid "Get Channel Status"
 msgstr "أحصل على معلومات القناة"
 
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
-#: is-warning-head
-msgid "{{newSetting}}"
+#: is-warning-storage-header
+#, fuzzy
+msgctxt "is-warning-storage-header"
+msgid "USB storage"
+msgstr "تخزين باستخدام ال USB"
+
+#: is-warning-tethering-header
+#, fuzzy
+msgctxt "is-warning-tethering-header"
+msgid "USB tethering"
+msgstr "ربط USB"
+
+#: is-warning-wifi-header
+#, fuzzy
+msgctxt "is-warning-wifi-header"
+msgid "Wi-Fi hotspot"
+msgstr "Wi-Fi Hotspot"
+
+#: is-warning-storage-tethering-message
+msgid ""
+"Enabling USB storage will disable USB tethering. Do you want to enable USB "
+"storage?"
 msgstr ""
 
-#: is-warning-message
+#: is-warning-tethering-storage-message
 msgid ""
-"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
-"{{newSetting}}?"
+"Enabling USB tethering will disable USB storage. Do you want to enable USB "
+"tethering?"
 msgstr ""
+
+#: is-warning-tethering-wifi-message
+msgid ""
+"Enabling USB tethering will disable Wi-Fi hotspot. Do you want to enable USB "
+"tethering?"
+msgstr ""
+
+#: is-warning-wifi-tethering-message
+msgid ""
+"Enabling Wi-Fi hotspot will disable USB tethering. Do you want to enable Wi-"
+"Fi hotspot?"
+msgstr ""
+
+#~ msgid "Invert colors"
+#~ msgstr "عكس الألوان"
+
+#~ msgid "Show accessibility settings"
+#~ msgstr "إعدادات الإعانة"
 
 #~ msgid "Ringer"
 #~ msgstr "رنين"

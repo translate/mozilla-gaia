@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-03 10:18+0000\n"
+"POT-Creation-Date: 2014-09-05 14:52+0000\n"
 "PO-Revision-Date: 2014-08-13 09:02+0000\n"
 "Last-Translator: Selim <selim@sum.lu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1335,6 +1335,11 @@ msgstr ""
 msgid "Do you want to proceed?"
 msgstr ""
 
+#: reset-apn-warning-title
+msgctxt "reset-apn-warning-title"
+msgid "Reset to Default"
+msgstr ""
+
 #: reset-apn-warning-message
 msgid "This resets the settings to default values. This cannot be undone."
 msgstr ""
@@ -1372,10 +1377,11 @@ msgid "Delete"
 msgstr "Sil"
 
 #: add-apn
-msgid "Add New Apn"
+msgid "Add New APN"
 msgstr ""
 
 #: reset-apn
+msgctxt "reset-apn"
 msgid "Reset to Default"
 msgstr ""
 
@@ -1617,6 +1623,8 @@ msgid "Wi-Fi"
 msgstr "Wi-Fi"
 
 #: wifi-hotspot
+#, fuzzy
+msgctxt "wifi-hotspot"
 msgid "Wi-Fi hotspot"
 msgstr "Wi-Fi erişim noktası"
 
@@ -1635,6 +1643,8 @@ msgid "Security"
 msgstr "Güvenlik"
 
 #: usb-tethering
+#, fuzzy
+msgctxt "usb-tethering"
 msgid "USB tethering"
 msgstr "USB internet paylaşımı"
 
@@ -2887,18 +2897,18 @@ msgstr ""
 "aygıtınızın alışveriş sepeti içeriği, konum bilgisi, oturum bilgileri gibi "
 "özel bilgilerinizi unutmasına yol açmaz."
 
-#. # Security :: Browser Privacy
-#: browserPrivacy
-msgid "Browser Privacy"
+#. # Security :: Browsing Privacy
+#: browsingPrivacy
+msgid "Browsing Privacy"
 msgstr ""
 
-#. # LOCALIZATION NOTE (browserPrivacy-header): if you leave the original
-#. # en-US value "{{browserPrivacy}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "browserPrivacy".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: browserPrivacy-header
-msgid "{{browserPrivacy}}"
+#. # LOCALIZATION NOTE (browsingPrivacy-header): if you leave the original
+#. # en-US value "{{browsingPrivacy}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID
+#. # "browsingPrivacy". If you need to adapt your localization to the reduced space
+#. # available in headers, you can use a shorter string here.
+#: browsingPrivacy-header
+msgid "{{browsingPrivacy}}"
 msgstr ""
 
 #: confirm-clear-title
@@ -2947,6 +2957,8 @@ msgid "Storage"
 msgstr "Depolama"
 
 #: enableUSBStorage1
+#, fuzzy
+msgctxt "enableUSBStorage1"
 msgid "USB storage"
 msgstr "USB depolama"
 
@@ -3849,6 +3861,10 @@ msgstr "Sürekli geçiş"
 msgid "Gaia debug traces"
 msgstr "Gaia hata ayıklama izleri"
 
+#: showScreenReaderSettings
+msgid "Show screen reader settings"
+msgstr ""
+
 #: app-transition
 msgid "App transition"
 msgstr "Uygulama geçişi"
@@ -3940,18 +3956,15 @@ msgstr "Erişilebilirlik"
 msgid "{{accessibility}}"
 msgstr "{{accessibility}}"
 
-#: invertColors
-msgid "Invert colors"
-msgstr "Renkleri çevir"
-
 #: screenReader
 msgid "Screen reader"
 msgstr "Ekran okuyucu"
 
-#: showA11ySettings
-msgid "Show accessibility settings"
-msgstr "Erişilebilirlik ayarlarını aç"
+#: colorFilter
+msgid "Color filter"
+msgstr ""
 
+#. # Device :: Accessibility :: Screen reader
 #: screenReader-enable-msg
 msgid ""
 "When the screen reader is enabled, your device will provide spoken feedback "
@@ -3997,6 +4010,19 @@ msgstr "Ekran okuyucu durdurursanız tüm konuşma geribildirimleri duracaktır.
 #: screenReader-confirm-button-stop
 msgid "Stop"
 msgstr "Durdur"
+
+#. # Device :: Accessibility :: Color filter
+#: colorFilter-invert
+msgid "Invert"
+msgstr ""
+
+#: colorFilter-grayscale
+msgid "Grayscale"
+msgstr ""
+
+#: colorFilter-contrast
+msgid "Contrast"
+msgstr ""
 
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
@@ -4325,15 +4351,53 @@ msgid "Get Channel Status"
 msgstr "Kanal durumunu al"
 
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
-#: is-warning-head
-msgid "{{newSetting}}"
+#: is-warning-storage-header
+#, fuzzy
+msgctxt "is-warning-storage-header"
+msgid "USB storage"
+msgstr "USB depolama"
+
+#: is-warning-tethering-header
+#, fuzzy
+msgctxt "is-warning-tethering-header"
+msgid "USB tethering"
+msgstr "USB internet paylaşımı"
+
+#: is-warning-wifi-header
+#, fuzzy
+msgctxt "is-warning-wifi-header"
+msgid "Wi-Fi hotspot"
+msgstr "Wi-Fi erişim noktası"
+
+#: is-warning-storage-tethering-message
+msgid ""
+"Enabling USB storage will disable USB tethering. Do you want to enable USB "
+"storage?"
 msgstr ""
 
-#: is-warning-message
+#: is-warning-tethering-storage-message
 msgid ""
-"Enabling {{newSetting}} will disable {{oldSetting}}. Do you want to enable "
-"{{newSetting}}?"
+"Enabling USB tethering will disable USB storage. Do you want to enable USB "
+"tethering?"
 msgstr ""
+
+#: is-warning-tethering-wifi-message
+msgid ""
+"Enabling USB tethering will disable Wi-Fi hotspot. Do you want to enable USB "
+"tethering?"
+msgstr ""
+
+#: is-warning-wifi-tethering-message
+msgid ""
+"Enabling Wi-Fi hotspot will disable USB tethering. Do you want to enable Wi-"
+"Fi hotspot?"
+msgstr ""
+
+#~ msgid "Invert colors"
+#~ msgstr "Renkleri çevir"
+
+#~ msgid "Show accessibility settings"
+#~ msgstr "Erişilebilirlik ayarlarını aç"
 
 #~ msgid "Ringer"
 #~ msgstr "Zil sesi"
