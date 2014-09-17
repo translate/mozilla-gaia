@@ -1,16 +1,19 @@
-#. extracted from en-US/apps/email/email.properties, eo/apps/email/email.properties
+#. extracted from ./apps/email/email.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-08 14:59-0200\n"
+"POT-Creation-Date: 2014-09-03 10:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #: setup-app-name-header
 msgid "Mail"
@@ -23,7 +26,7 @@ msgstr "Vi ne agordis por sendi aŭ ricevi repoŝton. Ĉu vi ŝatus tion fari nu
 
 #: setup-pick-service
 msgid "To send and receive email, you will need to set up an account."
-msgstr "Por povi sendi kaj ricevi retpoŝton, vi devas krei konton."
+msgstr ""
 
 #. # Title of the account setup card where the user enters their display name,
 #. # e-mail address, and password.
@@ -251,12 +254,12 @@ msgstr "Tipo de soklo"
 #. # Technical term, should not be translated
 #: setup-manual-socket-ssl
 msgid "SSL"
-msgstr "SSL"
+msgstr ""
 
 #. # Technical term, should not be translated
 #: setup-manual-socket-starttls
 msgid "STARTTLS"
-msgstr "STARTTLS"
+msgstr ""
 
 #: setup-manual-hostname.placeholder
 msgctxt "setup-manual-hostname.placeholder"
@@ -273,9 +276,10 @@ msgid "Username"
 msgstr "Nomo de uzanto"
 
 #. # LOCALIZATION NOTE (setup-manual-activesync-username.placeholder):
-#. # the double \\ will be displayed as a single #: setup-manual-activesync-username.placeholder
+#. # the double \\ will be displayed as a single \ 
+#: setup-manual-activesync-username.placeholder
 msgid "Domain\\Username"
-msgstr "nomregno\\uzantonomo"
+msgstr ""
 
 #: setup-bad-password-header
 msgid "Bad password!"
@@ -364,6 +368,36 @@ msgstr "Montri sciigojn por novaj mesaĝoj"
 msgid "Play sound after message is sent"
 msgstr "Ludi sono post sendo de mesaĝo"
 
+#. # LOCALIZATION NOTE(settings-empty-signature-label): Text used for the button
+#. # that takes the user to edit the signature, if there is no existing signature
+#. # text. It should inform the user that tapping on it will lead to editing the
+#. # signature text.
+#: settings-empty-signature-label
+msgid "Tap to Edit"
+msgstr ""
+
+#. # LOCALIZATION NOTE (settings-account-signature-label): The label for the
+#. # signature field in the account settings card.
+#: settings-account-signature-label
+msgid "Signature"
+msgstr ""
+
+#. # LOCALIZATION NOTE (signature-save): This is the text for an option
+#. # in a dialog box that pops up when the user hits back with the
+#. # signature changed. The option keeps the saves the current signature in
+#. # the editor
+#: signature-save
+msgid "Save Signature"
+msgstr ""
+
+#. # LOCALIZATION NOTE (signature-discard-confirm): This is the text of the
+#. # button which discards changes when a user hits back in the signature
+#. # entry page.
+#: signature-discard-confirm
+msgctxt "signature-discard-confirm"
+msgid "Discard"
+msgstr ""
+
 #. # For account settings screen, there are sections of settings, and each
 #. # section has a header. One is Data, which deals with sync intervals and
 #. # time windows for the data that is fetched.
@@ -392,6 +426,12 @@ msgstr "Agordoj de servilo"
 #: settings-account-userpass
 msgid "Username and password"
 msgstr "Uzantonomo kaj pasvorto"
+
+#. # LOCALIZATION NOTE (settings-default-signature-2): The default signature
+#. # that the frontend adds in for new accounts
+#: settings-default-signature-2
+msgid "Sent Using Firefox OS"
+msgstr ""
 
 #: settings-done
 msgid "Done"
@@ -428,18 +468,33 @@ msgctxt "settings-account-delete-confirm"
 msgid "Delete"
 msgstr "Forigi"
 
-#. # When dealing with an account that involves multiple types of# connections, such as IMAP and POP3 which both use SMTP for sending,# we augment the account name in the string with a label to help# clarify to the user which account type they are dealing with. For# most users, the same password will be used for the IMAP server and# the SMTP server, and they will only ever see the IMAP or POP3 label.# But some users with unusual server configurations will also see the# SMTP variant. These unusual users will probably have received# specific instructions from their ISP that involve use of the# protocol names. In general we expect that localizers will want to# leave the protocol names as-is since they are technical protocol# names, but it may make sense to place the name of the protocol# before the account type for certain languages.# Note that the account name is displayed as a string that is# displayed in its entirety, so you don't need to worry about clipping# or ellipses.
+#. # When dealing with an account that involves multiple types of
+#. # connections, such as IMAP and POP3 which both use SMTP for sending,
+#. # we augment the account name in the string with a label to help
+#. # clarify to the user which account type they are dealing with. For
+#. # most users, the same password will be used for the IMAP server and
+#. # the SMTP server, and they will only ever see the IMAP or POP3 label.
+#. # But some users with unusual server configurations will also see the
+#. # SMTP variant. These unusual users will probably have received
+#. # specific instructions from their ISP that involve use of the
+#. # protocol names. In general we expect that localizers will want to
+#. # leave the protocol names as-is since they are technical protocol
+#. # names, but it may make sense to place the name of the protocol
+#. # before the account type for certain languages.
+#. # Note that the account name is displayed as a string that is
+#. # displayed in its entirety, so you don't need to worry about clipping
+#. # or ellipses.
 #: settings-account-clarify-imap
 msgid "{{account-name}} (IMAP)"
-msgstr "{{account-name}} (IMAP)"
+msgstr ""
 
 #: settings-account-clarify-pop3
 msgid "{{account-name}} (POP3)"
-msgstr "{{account-name}} (POP3)"
+msgstr ""
 
 #: settings-account-clarify-smtp
 msgid "{{account-name}} (SMTP)"
-msgstr "{{account-name}} (SMTP)"
+msgstr ""
 
 #: settings-general-section
 msgid "General settings"
@@ -486,7 +541,7 @@ msgstr "Permane"
 #: settings-check-dynamic
 msgctxt "settings-check-dynamic"
 msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
+msgstr ""
 
 #: settings-check-dynamic[zero]
 msgid "seconds"
@@ -519,7 +574,7 @@ msgstr "{{ n }} sekundoj"
 
 #: settings-default-account
 msgid "Set as default email"
-msgstr "Set as default email"
+msgstr ""
 
 #: settings-account-type
 msgctxt "settings-account-type"
@@ -582,7 +637,7 @@ msgstr "La pasvorto ne devus esti malplena!"
 #. # like IMAP.
 #: settings-account-synchronize-window
 msgid "Days to sync"
-msgstr "Days to sync"
+msgstr ""
 
 #: settings-synchronize-auto
 msgid "Automatic"
@@ -631,10 +686,6 @@ msgstr "kun kopio"
 msgid "Bcc"
 msgstr "kun kaŝita kopio"
 
-#: reader-header
-msgid "Read"
-msgstr "Legita"
-
 #: compose-header
 msgid "Compose message"
 msgstr "Verki mesaĝon"
@@ -663,7 +714,7 @@ msgstr "kun kaŝita kopio"
 #: compose-attachments
 msgctxt "compose-attachments"
 msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
+msgstr ""
 
 #: compose-attachments[zero]
 msgid "Attachments"
@@ -697,7 +748,7 @@ msgstr "{{ n }} kunsendaĵoj"
 #. # needs a bit more time to finishing the add of the previous attachment.
 #: compose-attachment-still-working
 msgid "One moment, still working on the previous attachment..."
-msgstr "Momenton, la antaŭa kunsendaĵo estas prilaborata..."
+msgstr ""
 
 #: compose-subject
 msgctxt "compose-subject"
@@ -713,12 +764,10 @@ msgid "Discard email?"
 msgstr "Ĉu forjeti retpoŝton?"
 
 #: compose-discard-confirm
+#, fuzzy
+msgctxt "compose-discard-confirm"
 msgid "Discard"
 msgstr "Forĵeti"
-
-#: compose-sending-message
-msgid "Sending email"
-msgstr "Retpoŝto sendata"
 
 #: compose-send-message-failed
 msgid "Sending email failed"
@@ -761,17 +810,24 @@ msgstr "kunsendaĵo{{ n }}"
 msgid "{{kilobytes}}K"
 msgstr "{{kilobytes}}O"
 
-#: message-attachment-view.textContent
+#: message-attachment-view
 msgid "View"
-msgstr "Vidi"
+msgstr ""
 
 #: message-attachment-too-large
 msgid "This file is too large to download."
-msgstr "This file is too large to download."
+msgstr ""
 
 #: message-no-subject
 msgid "(no subject)"
 msgstr "(sen temo)"
+
+#. # LOCALIZATION NOTE(message-edit-menu-edit):
+#. # Displayed in a menu; tapping this item will cause the user to edit the given item.
+#: message-edit-menu-edit
+msgctxt "message-edit-menu-edit"
+msgid "Edit"
+msgstr ""
 
 #: message-edit-menu-delete
 msgctxt "message-edit-menu-delete"
@@ -789,16 +845,17 @@ msgstr "Aneksoj ne povas esti plusenditaj."
 #: message-multiedit-header
 msgctxt "message-multiedit-header"
 msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
+msgstr ""
 
 #: message-multiedit-header[zero]
+#, fuzzy
+msgctxt "message-multiedit-header[zero]"
 msgid "Edit"
 msgstr "Redakti"
 
 #: message-multiedit-header[one]
-msgctxt ""
-"message-multiedit-header[one]message-multiedit-header[one]message-multiedit-"
-"header[one]message-multiedit-header[one]"
+#, fuzzy
+msgctxt "message-multiedit-header[one]"
 msgid "{{ n }} selected"
 msgstr "{{ n }} elektita"
 
@@ -824,36 +881,36 @@ msgstr "{{ n }} elektitaj"
 
 #: browse-to-url-prompt
 msgid "Browse to URL?: {{ url }}"
-msgstr "Browse to URL?: {{ url }}"
+msgstr ""
 
-#: message-download-images
-msgctxt "message-download-images"
+#: message-download-images-tap
+msgctxt "message-download-images-tap"
 msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
+msgstr ""
 
-#: message-download-images[one]
-msgid "This email contains one image. Click to download."
-msgstr "Tiu ĉi retpoŝto enhavas unu bildon. Alklaku por elŝuti."
+#: message-download-images-tap[one]
+msgid "This email contains one image. Tap to download."
+msgstr ""
 
-#: message-download-images[two]
-msgctxt "message-download-images[two]"
-msgid "This email contains {{ n }} images. Click to download."
-msgstr "Tiu ĉi retpoŝto enhavas {{ n }} bildojn. Alklaku por elŝuti."
+#: message-download-images-tap[two]
+msgctxt "message-download-images-tap[two]"
+msgid "This email contains {{ n }} images. Tap to download."
+msgstr ""
 
-#: message-download-images[few]
-msgctxt "message-download-images[few]"
-msgid "This email contains {{ n }} images. Click to download."
-msgstr "Tiu ĉi retpoŝto enhavas {{ n }} bildojn. Alklaku por elŝuti."
+#: message-download-images-tap[few]
+msgctxt "message-download-images-tap[few]"
+msgid "This email contains {{ n }} images. Tap to download."
+msgstr ""
 
-#: message-download-images[many]
-msgctxt "message-download-images[many]"
-msgid "This email contains {{ n }} images. Click to download."
-msgstr "Tiu ĉi retpoŝto enhavas {{ n }} bildojn. Alklaku por elŝuti."
+#: message-download-images-tap[many]
+msgctxt "message-download-images-tap[many]"
+msgid "This email contains {{ n }} images. Tap to download."
+msgstr ""
 
-#: message-download-images[other]
-msgctxt "message-download-images[other]"
-msgid "This email contains {{ n }} images. Click to download."
-msgstr "Tiu ĉi retpoŝto enhavas {{ n }} bildojn. Alklaku por elŝuti."
+#: message-download-images-tap[other]
+msgctxt "message-download-images-tap[other]"
+msgid "This email contains {{ n }} images. Tap to download."
+msgstr ""
 
 #: message-show-external-images
 msgid "Show external images"
@@ -867,7 +924,7 @@ msgstr "Nuligi"
 #: message-multiedit-delete-confirm
 msgctxt "message-multiedit-delete-confirm"
 msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
+msgstr ""
 
 #: message-multiedit-delete-confirm[one]
 msgid "Delete this email message?"
@@ -942,9 +999,12 @@ msgstr "Nuligi"
 msgid "Loading Messages"
 msgstr "Mesaĝoj ŝargataj"
 
-#: messages-sync-more
-msgid "Load more messages from server"
-msgstr "Ŝargi pli da mesaĝoj el la servilo"
+#. # LOCALIZATION NOTE (messages-load-more): This text shows at the bottom of the
+#. # list of messages in the message list, and pressing it will load more messages
+#. # likely from the server. The space is constrained and has an icon next to it.
+#: messages-load-more
+msgid "Load More Messages"
+msgstr ""
 
 #: messages-folder-empty
 msgid "No mail in this Folder"
@@ -957,6 +1017,14 @@ msgstr "Neniu kongruo en loke staplitaj mesaĝoj"
 #: messages-folder-select
 msgid "Select folder"
 msgstr "Elekti dosierujon"
+
+#. # LOCALIZATION NOTE(messages-folder-unread-max): This string is inserted
+#. # in place of the unread message count in the folder list whenever
+#. # the number exceeds 999. Note that due to space constraints any
+#. # localizations optimally should only be 4-5 characters.
+#: messages-folder-unread-max
+msgid "999+"
+msgstr ""
 
 #: message-contact-menu-create
 msgid "Save new contact"
@@ -1077,6 +1145,10 @@ msgstr "Arĥivoj"
 msgid "Local Drafts"
 msgstr "Lokaj malnetoj"
 
+#: folder-outbox
+msgid "Outbox"
+msgstr ""
+
 #. # In the folder picker drawer, there is a transparent area for the header,
 #. # and a tap region to take the user back to the message list. So this text is
 #. # not visible by the user, but could be used for accessibility.
@@ -1107,19 +1179,23 @@ msgstr "Agordoj"
 msgid "Last sync:"
 msgstr "Lasta spegulado:"
 
+#. # LOCALIZATION NOTE(message-list-top-action):
+#. # In the message-list, as the user scrolls down, an action bar will scroll into
+#. # view that if tapped will take the user to the top of the screen. That bar
+#. # will use an icon to display its meaning, this is text that will not be visible
+#. # to the user, it is provided for accessibility.
+#: message-list-top-action
+msgid "Top"
+msgstr ""
+
 #: toaster-undo
 msgid "Undo"
 msgstr "Malfari"
 
-#: toaster-retry
-msgctxt "toaster-retry"
-msgid "Retry"
-msgstr "Klopodu denove"
-
 #: toaster-message-star
 msgctxt "toaster-message-star"
 msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
+msgstr ""
 
 #: toaster-message-star[one]
 msgid "1 message flag set"
@@ -1148,7 +1224,7 @@ msgstr "{{ n }} mesaĝoj markitaj"
 #: toaster-message-unstar
 msgctxt "toaster-message-unstar"
 msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
+msgstr ""
 
 #: toaster-message-unstar[one]
 msgid "1 message flag removed"
@@ -1177,7 +1253,7 @@ msgstr "marko forigita el {{ n }} mesaĝoj"
 #: toaster-message-read
 msgctxt "toaster-message-read"
 msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
+msgstr ""
 
 #: toaster-message-read[one]
 msgid "1 message marked as read"
@@ -1206,7 +1282,7 @@ msgstr "{{ n }} mesaĝoj markitaj kiel legitaj"
 #: toaster-message-unread
 msgctxt "toaster-message-unread"
 msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
+msgstr ""
 
 #: toaster-message-unread[one]
 msgid "1 message marked as unread"
@@ -1235,7 +1311,7 @@ msgstr "{{ n }} mesaĝoj markitaj kiel nelegitaj"
 #: toaster-message-move
 msgctxt "toaster-message-move"
 msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
+msgstr ""
 
 #: toaster-message-move[one]
 msgid "1 message moved"
@@ -1264,7 +1340,7 @@ msgstr "{{ n }} mesaĝoj translokitaj"
 #: toaster-message-delete
 msgctxt "toaster-message-delete"
 msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
+msgstr ""
 
 #: toaster-message-delete[one]
 msgid "1 message deleted"
@@ -1294,6 +1370,84 @@ msgstr "{{ n }} mesaĝoj forviŝitaj"
 msgid "Unable to connect to server"
 msgstr "Ne eblas konektiĝi al la servilo"
 
+#. # LOCALIZATION NOTE(compose-invalid-addresses-title):
+#. # A title to be displayed on a warning screen, warning users that
+#. # some of the email addresses they typed were incorrect.
+#: compose-invalid-addresses-title
+msgid "Invalid Addresses"
+msgstr ""
+
+#. # LOCALIZATION NOTE(compose-invalid-addresses-description):
+#. # A description to be displayed on a warning screen, warning users that
+#. # some of the email addresses they typed were incorrect, and that they
+#. # must correct the email addresses before sending.
+#: compose-invalid-addresses-description
+msgid ""
+"Your message contains one or more invalid email addresses. Please correct "
+"them before sending."
+msgstr ""
+
+#. # LOCALIZATION NOTE(background-send-pending):
+#. # Brief message to be displayed in a popup, saying that the phone has
+#. # no network connection, and that the email has been saved to the outbox.
+#: background-send-pending
+msgid "Network unavailable. Email saved to outbox."
+msgstr ""
+
+#. # LOCALIZATION NOTE(background-send-sending):
+#. # Displayed in a toaster popup message, saying that the email
+#. # is currently being sent.
+#: background-send-sending
+msgid "Sending mail…"
+msgstr ""
+
+#. # LOCALIZATION NOTE(background-send-success):
+#. # Displayed in a toaster popup message, saying that the email
+#. # sent successfully.
+#: background-send-success
+msgid "Email sent."
+msgstr ""
+
+#. # LOCALIZATION NOTE(background-send-error):
+#. # Description to be displayed in a notification, saying that an error
+#. # occured while attempting to send an email, and that the email has
+#. # been saved to the outbox.
+#: background-send-error
+msgid "Error occurred. Email saved to outbox."
+msgstr ""
+
+#. # LOCALIZATION NOTE(background-send-error-recipients):
+#. # Description to be displayed in a notification, saying that the email
+#. # could not be sent because the server rejected one or more of the
+#. # email recipients, and that the email has been saved to the outbox.
+#: background-send-error-recipients
+msgid "Recipient error. Email saved to outbox."
+msgstr ""
+
+#. # LOCALIZATION NOTE(background-send-error-title):
+#. # Title to be displayed in a notification, indicating that the
+#. # email failed to send for some reason.
+#: background-send-error-title
+msgid "Mail failed to send"
+msgstr ""
+
+#. # LOCALIZATION NOTE(send-failure-recipients):
+#. # Message to be displayed when editing a message that failed to send due
+#. # to invalid recipients. It should instruct the user to check the addresses
+#. # above for spelling.
+#: send-failure-recipients
+msgid ""
+"Check the spelling of the addresses above. Your mail server indicated one or "
+"more of the addresses above are incorrect."
+msgstr ""
+
+#. # LOCALIZATION NOTE(send-failure-unknown):
+#. # Message to be displayed when editing a message that failed to send for an
+#. # unknown reason.
+#: send-failure-unknown
+msgid "The message could not be sent."
+msgstr ""
+
 #: form-clear-input
 msgid "Remove text"
 msgstr "Forigi tekston"
@@ -1306,40 +1460,45 @@ msgstr "Konfirmo"
 #. # Notice that we have a space after the comma.
 #: senders-separation-sign
 msgid ", "
-msgstr ","
+msgstr ""
 
-#. # new-emails refers to the text shown on a notification that users
-#. # get when they receive new, unread email. The ui component that utilizes
-#. # this lives in apps/email/js/message_list_topbar.js.
-#: new-emails
-msgctxt "new-emails"
+#. # LOCALIZATION NOTE(new-messages): refers to the text shown inside the email app
+#. # on the message list when new, unread messages have been received while the
+#. # user is looking at the messages in the message list. The ui component that
+#. # uses this lives in apps/email/js/message_list_topbar.js. This display differ
+#. # from the messages that are sent as system notifications. Those are more
+#. # important to distinguish that emails and not SMS messages have been received.
+#. # This display uses the term "Messages" since other text labels in the message
+#. # list also use "Messages" instead of "Emails" since the context of Email is
+#. # assumed as it is in the email app.
+#: new-messages
+msgctxt "new-messages"
 msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
+msgstr ""
 
-#: new-emails[one]
-msgctxt "new-emails[one]"
-msgid "1 New Email"
-msgstr "1 nova retmesaĝo"
+#: new-messages[one]
+msgid "1 New Message"
+msgstr ""
 
-#: new-emails[two]
-msgctxt "new-emails[two]"
-msgid "{{ n }} New Emails"
-msgstr "{{ n }} novaj retmesaĝoj"
+#: new-messages[two]
+msgctxt "new-messages[two]"
+msgid "{{ n }} New Messages"
+msgstr ""
 
-#: new-emails[few]
-msgctxt "new-emails[few]"
-msgid "{{ n }} New Emails"
-msgstr "{{ n }} novaj retmesaĝoj"
+#: new-messages[few]
+msgctxt "new-messages[few]"
+msgid "{{ n }} New Messages"
+msgstr ""
 
-#: new-emails[many]
-msgctxt "new-emails[many]"
-msgid "{{ n }} New Emails"
-msgstr "{{ n }} novaj retmesaĝoj"
+#: new-messages[many]
+msgctxt "new-messages[many]"
+msgid "{{ n }} New Messages"
+msgstr ""
 
-#: new-emails[other]
-msgctxt "new-emails[other]"
-msgid "{{ n }} New Emails"
-msgstr "{{ n }} novaj retmesaĝoj"
+#: new-messages[other]
+msgctxt "new-messages[other]"
+msgid "{{ n }} New Messages"
+msgstr ""
 
 #. # new-emails-notify-one-account is used when a system notification is generated during
 #. # a periodic background sync with the server. Since this goes to the system's
@@ -1347,10 +1506,10 @@ msgstr "{{ n }} novaj retmesaĝoj"
 #: new-emails-notify-one-account
 msgctxt "new-emails-notify-one-account"
 msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
+msgstr ""
 
 #: new-emails-notify-one-account[one]
-msgctxt "new-emails-notify-one-account[one]"
+#, fuzzy
 msgid "1 New Email"
 msgstr "1 nova retmesaĝo"
 
@@ -1381,7 +1540,7 @@ msgstr "{{ n }} novaj retmesaĝoj"
 #: new-emails-notify-multiple-accounts
 msgctxt "new-emails-notify-multiple-accounts"
 msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
+msgstr ""
 
 #: new-emails-notify-multiple-accounts[one]
 msgid "1 New Email ({{ accountName }})"
@@ -1412,4 +1571,55 @@ msgstr "{{ n }} novaj retmesaĝoj ({{ accountName }})"
 #. # This is the body part of the notification.
 #: new-emails-notify-multiple-accounts-body
 msgid "{{ from }} “{{ subject }}”"
-msgstr "{{ from }} “{{ subject }}”"
+msgstr ""
+
+#~ msgid "DomainUsername"
+#~ msgstr "nomregnouzantonomo"
+
+#~ msgid "Read"
+#~ msgstr "Legita"
+
+#~ msgid "Sending email"
+#~ msgstr "Retpoŝto sendata"
+
+#~ msgid "This email contains one image. Click to download."
+#~ msgstr "Tiu ĉi retpoŝto enhavas unu bildon. Alklaku por elŝuti."
+
+#~ msgctxt "message-download-images[two]"
+#~ msgid "This email contains {{ n }} images. Click to download."
+#~ msgstr "Tiu ĉi retpoŝto enhavas {{ n }} bildojn. Alklaku por elŝuti."
+
+#~ msgctxt "message-download-images[few]"
+#~ msgid "This email contains {{ n }} images. Click to download."
+#~ msgstr "Tiu ĉi retpoŝto enhavas {{ n }} bildojn. Alklaku por elŝuti."
+
+#~ msgctxt "message-download-images[many]"
+#~ msgid "This email contains {{ n }} images. Click to download."
+#~ msgstr "Tiu ĉi retpoŝto enhavas {{ n }} bildojn. Alklaku por elŝuti."
+
+#~ msgctxt "message-download-images[other]"
+#~ msgid "This email contains {{ n }} images. Click to download."
+#~ msgstr "Tiu ĉi retpoŝto enhavas {{ n }} bildojn. Alklaku por elŝuti."
+
+#~ msgid "Load more messages from server"
+#~ msgstr "Ŝargi pli da mesaĝoj el la servilo"
+
+#~ msgctxt "toaster-retry"
+#~ msgid "Retry"
+#~ msgstr "Klopodu denove"
+
+#~ msgctxt "new-emails[few]"
+#~ msgid "{{ n }} New Emails"
+#~ msgstr "{{ n }} novaj retmesaĝoj"
+
+#~ msgctxt "new-emails[many]"
+#~ msgid "{{ n }} New Emails"
+#~ msgstr "{{ n }} novaj retmesaĝoj"
+
+#~ msgctxt "new-emails[other]"
+#~ msgid "{{ n }} New Emails"
+#~ msgstr "{{ n }} novaj retmesaĝoj"
+
+#~ msgctxt "new-emails-notify-one-account[one]"
+#~ msgid "1 New Email"
+#~ msgstr "1 nova retmesaĝo"
