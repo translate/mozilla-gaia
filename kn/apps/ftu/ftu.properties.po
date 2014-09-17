@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-05 14:52+0000\n"
+"POT-Creation-Date: 2014-09-17 11:13+0000\n"
 "PO-Revision-Date: 2014-06-30 12:24+0000\n"
 "Last-Translator: shanky <prasad.mvs@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -794,13 +794,11 @@ msgstr ""
 msgid "Firefox Accounts"
 msgstr "Firefox ಖಾತೆಗಳು"
 
-#: fxa-overview.innerHTML
+#: fxa-upsell.innerHTML
 msgid ""
-"A Firefox Account lets you use features like Find My Device and apps like "
-"the Firefox Marketplace."
+"A Firefox Account lets you find a lost phone and buy apps from the Firefox "
+"Marketplace."
 msgstr ""
-"ಫೈರ್ಫಾಕ್ಸ್ ಖಾತೆ ನನ್ನ ಸಾಧನವನ್ನು ಪತ್ತೆ ಮಾಡು ಹಾಗೂ ಫೈರ್ಫಾಕ್ಸ್ ಮಾರ್ಕೆಟ್ ಪ್ಲೇಸ್ ನಂತಹ ಅನ್ವಯಗಳನ್ನು "
-"ಬಳಸಲು ಸಾಧ್ಯವಾಗಿಸುತ್ತದೆ."
 
 #: fxa-create-account-or-sign-in
 msgid "Create Account or Sign In"
@@ -909,15 +907,33 @@ msgstr "ಮೊಝಿಲ್ಲಾ ನಿಮ್ಮ ಮಾಹಿತಿಯನ್ನ�
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # OS privacy
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: welcomeBrowser
+#: htmlWelcome.innerHTML
+#, fuzzy
 msgid ""
-"Welcome to {{brandShortName}}, the free and open source operating system "
-"from Mozilla. Our mission is to promote openness, innovation and opportunity "
-"by keeping the power of the Web in your hands."
+"Welcome to {{link}}, the free and open source operating system from Mozilla. "
+"Our mission is to promote openness, innovation and opportunity by keeping "
+"the power of the Web in your hands."
 msgstr ""
 "Mozilla ದ ಮುಕ್ತ ಮತ್ತು ಸ್ವತಂತ್ರ ಕಾರ್ಯಾಚರಣೆ ವ್ಯವಸ್ಥೆಯಾದಂತಹ {{brandShortName}} ಗೆ "
 "ಸ್ವಾಗತ. ಜಾಲದ ಶಕ್ತಿಯನ್ನು ನಿಮ್ಮ ಕೈಗೆಟುಕುವಂತೆ ಇರಿಸುವ ಮೂಲಕ ಮುಕ್ತತೆ, ನಾವಿನ್ಯತೆ ಮತ್ತು "
 "ಅವಕಾಶವನ್ನು ಒದಗಿಸುವುದು ನಮ್ಮ ಗುರಿಯಾಗಿದೆ."
+
+#: htmlWelcome-link
+#, fuzzy
+msgctxt "htmlWelcome-link"
+msgid "{{brandShortName}}"
+msgstr "{{brandShortName}}"
+
+#: helpImprove.innerHTML
+msgid ""
+"You can help us improve our products and services by automatically sending "
+"analytics data. See our {{link}} to learn how we handle data from your "
+"device."
+msgstr ""
+
+#: helpImprove-link
+msgid "Privacy Notice"
+msgstr ""
 
 #. # LOCALIZATION NOTE(learn-more-privacy.innerHTML): {{link}} will be replaced at
 #. # run-time by an active link, string "learn-more-privacy-link" will be
@@ -950,18 +966,9 @@ msgstr ""
 "ಮತ್ತು ಹತ್ತಿರದಲ್ಲಿ ನಡೆಯುವ ನಮ್ಮ ಕಾರ್ಯಕ್ರಮಗಳ ಕುರಿತು ಇನ್ನಷ್ಟು ಮಾಹಿತಿಯನ್ನು ತಿಳಿದುಕೊಳ್ಳಲು "
 "ಬಯಸಿದಲ್ಲಿ, ಈ ಕೆಳಗೆ ನಿಮ್ಮ ಇಮೇಲ್ ಅನ್ನು ನಮೂದಿಸಿ."
 
-#: sharePerformanceAndUsageData
-#, fuzzy
-msgid ""
-"I want to help improve {{brandShortName}} by sharing data about my phone and "
-"the way I use it."
+#: sharePerformanceAndUsageData2
+msgid "Yes! Send data."
 msgstr ""
-"ನನ್ನ ಫೋನಿನ ಬಗ್ಗೆ ಮಾಹಿತಿಯನ್ನು ಹಂಚಿಕೊಳ್ಳುವುದರ ಮೂಲಕ {{brandShortName}} "
-"ಉತ್ತಮಗೊಳಿಸುವುದರಲ್ಲಿ ನಾನು ಸಹಾಯ ಮಾಡಬೇಕೆಂದಿದ್ದೇನೆ."
-
-#: learnMore
-msgid "Learn more."
-msgstr "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ."
 
 #: emailAddress.placeholder
 msgid "Email address"
@@ -1224,6 +1231,24 @@ msgstr "{{total}} ರ {{step}} ನೇ ಹಂತ"
 #: progressbar.ariaLabel
 msgid "First Time Experience"
 msgstr "ಮೊದಲ ಅನುಭವ"
+
+#~ msgid ""
+#~ "A Firefox Account lets you use features like Find My Device and apps like "
+#~ "the Firefox Marketplace."
+#~ msgstr ""
+#~ "ಫೈರ್ಫಾಕ್ಸ್ ಖಾತೆ ನನ್ನ ಸಾಧನವನ್ನು ಪತ್ತೆ ಮಾಡು ಹಾಗೂ ಫೈರ್ಫಾಕ್ಸ್ ಮಾರ್ಕೆಟ್ ಪ್ಲೇಸ್ ನಂತಹ "
+#~ "ಅನ್ವಯಗಳನ್ನು ಬಳಸಲು ಸಾಧ್ಯವಾಗಿಸುತ್ತದೆ."
+
+#, fuzzy
+#~ msgid ""
+#~ "I want to help improve {{brandShortName}} by sharing data about my phone "
+#~ "and the way I use it."
+#~ msgstr ""
+#~ "ನನ್ನ ಫೋನಿನ ಬಗ್ಗೆ ಮಾಹಿತಿಯನ್ನು ಹಂಚಿಕೊಳ್ಳುವುದರ ಮೂಲಕ {{brandShortName}} "
+#~ "ಉತ್ತಮಗೊಳಿಸುವುದರಲ್ಲಿ ನಾನು ಸಹಾಯ ಮಾಡಬೇಕೆಂದಿದ್ದೇನೆ."
+
+#~ msgid "Learn more."
+#~ msgstr "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ."
 
 #~ msgid ""
 #~ "Swipe up and down to browse your apps. Tap and hold an icon to move or "

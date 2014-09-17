@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-03 10:18+0000\n"
+"POT-Creation-Date: 2014-09-17 11:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,6 +33,12 @@ msgstr ""
 #: setup-account-header3
 msgid "New Account"
 msgstr "Nova konto"
+
+#. # LOCALIZATION NOTE (setup-account-enter-password): Shown during account setup
+#. # if the autoconfig process determines a password is needed to complete setup.
+#: setup-account-enter-password
+msgid "Enter Password For:"
+msgstr ""
 
 #. # The placeholder for the display name of the user that will be displayed in the
 #. # account setup screen input box for the display name until they enter any text
@@ -278,8 +284,9 @@ msgstr "Nomo de uzanto"
 #. # LOCALIZATION NOTE (setup-manual-activesync-username.placeholder):
 #. # the double \\ will be displayed as a single \ 
 #: setup-manual-activesync-username.placeholder
+#, fuzzy
 msgid "Domain\\Username"
-msgstr ""
+msgstr "nomregnouzantonomo"
 
 #: setup-bad-password-header
 msgid "Bad password!"
@@ -335,6 +342,31 @@ msgstr "Vi devas aktivigi POP3 en via konto de Gmail"
 msgctxt "setup-gmail-pop3-retry"
 msgid "Retry"
 msgstr "Klopodi denove"
+
+#. # LOCALIZATION NOTE (setup-fix-oauth2-header): The card header for the card that
+#. # asks the user to reauthorize the email account to use an OAuth2 token. This
+#. # may show up from time to time with a GMail account for example, but there are
+#. # other account types besides GMail that could be OAuth2 authorized.
+#: setup-fix-oauth2-header
+msgid "Reauthorize Email"
+msgstr ""
+
+#. # LOCALIZATION NOTE (setup-fix-oauth2-description): Describes that the account
+#. # needs to be reauthorized via OAuth2. The account is shown below this
+#. # description.
+#: setup-fix-oauth2-description
+msgid "Email needs to be reauthorized to access the following account:"
+msgstr ""
+
+#. # LOCALIZATION NOTE (setup-fix-oauth2-reauthorize): The button triggering the
+#. # reauthorization flow for OAuth2-protected account types. This will result in
+#. # a dialog-type browser window opening up and going to the account provider,
+#. # for instance GMail, so that the user can authorize the Email app to continue
+#. # to access the account.
+#: setup-fix-oauth2-reauthorize
+msgctxt "setup-fix-oauth2-reauthorize"
+msgid "Reauthorize"
+msgstr ""
 
 #: settings-main-header
 msgid "Mail Settings"
@@ -394,9 +426,10 @@ msgstr ""
 #. # button which discards changes when a user hits back in the signature
 #. # entry page.
 #: signature-discard-confirm
+#, fuzzy
 msgctxt "signature-discard-confirm"
 msgid "Discard"
-msgstr ""
+msgstr "Forĵeti"
 
 #. # For account settings screen, there are sections of settings, and each
 #. # section has a header. One is Data, which deals with sync intervals and
@@ -426,6 +459,16 @@ msgstr "Agordoj de servilo"
 #: settings-account-userpass
 msgid "Username and password"
 msgstr "Uzantonomo kaj pasvorto"
+
+#. # LOCALIZATION NOTE (ssettings-account-useroauth2): Label in the
+#. # "Server settings" sub-section of acccount settings for going to a settings
+#. # card that shows user name and a reauthorize option for an account that was
+#. # configured to use oauth2.
+#: settings-account-useroauth2
+#, fuzzy
+msgctxt "settings-account-useroauth2"
+msgid "Username"
+msgstr "Nomo de uzanto"
 
 #. # LOCALIZATION NOTE (settings-default-signature-2): The default signature
 #. # that the frontend adds in for new accounts
@@ -632,6 +675,14 @@ msgstr "Konservi"
 msgid "Password field should not be empty"
 msgstr "La pasvorto ne devus esti malplena!"
 
+#. # LOCALIZATION NOTE (settings-reauth): On the account credentials settings card,
+#. # if the account is an oauth2 account, this is the button label that allows the
+#. # user to reauthorize the email app to access their account via oauth2.
+#: settings-reauth
+msgctxt "settings-reauth"
+msgid "Reauthorize"
+msgstr ""
+
 #. # How much email to sync, in smallest unit of days, from the server. Only
 #. # valid for ActiveSync mail servers, not shown for other mail server types
 #. # like IMAP.
@@ -825,9 +876,10 @@ msgstr "(sen temo)"
 #. # LOCALIZATION NOTE(message-edit-menu-edit):
 #. # Displayed in a menu; tapping this item will cause the user to edit the given item.
 #: message-edit-menu-edit
+#, fuzzy
 msgctxt "message-edit-menu-edit"
 msgid "Edit"
-msgstr ""
+msgstr "Redakti"
 
 #: message-edit-menu-delete
 msgctxt "message-edit-menu-delete"
@@ -889,28 +941,33 @@ msgid "{[ plural(n) ]}"
 msgstr ""
 
 #: message-download-images-tap[one]
+#, fuzzy
 msgid "This email contains one image. Tap to download."
-msgstr ""
+msgstr "Tiu ĉi retpoŝto enhavas unu bildon. Alklaku por elŝuti."
 
 #: message-download-images-tap[two]
+#, fuzzy
 msgctxt "message-download-images-tap[two]"
 msgid "This email contains {{ n }} images. Tap to download."
-msgstr ""
+msgstr "Tiu ĉi retpoŝto enhavas {{ n }} bildojn. Alklaku por elŝuti."
 
 #: message-download-images-tap[few]
+#, fuzzy
 msgctxt "message-download-images-tap[few]"
 msgid "This email contains {{ n }} images. Tap to download."
-msgstr ""
+msgstr "Tiu ĉi retpoŝto enhavas {{ n }} bildojn. Alklaku por elŝuti."
 
 #: message-download-images-tap[many]
+#, fuzzy
 msgctxt "message-download-images-tap[many]"
 msgid "This email contains {{ n }} images. Tap to download."
-msgstr ""
+msgstr "Tiu ĉi retpoŝto enhavas {{ n }} bildojn. Alklaku por elŝuti."
 
 #: message-download-images-tap[other]
+#, fuzzy
 msgctxt "message-download-images-tap[other]"
 msgid "This email contains {{ n }} images. Tap to download."
-msgstr ""
+msgstr "Tiu ĉi retpoŝto enhavas {{ n }} bildojn. Alklaku por elŝuti."
 
 #: message-show-external-images
 msgid "Show external images"
@@ -1398,8 +1455,9 @@ msgstr ""
 #. # Displayed in a toaster popup message, saying that the email
 #. # is currently being sent.
 #: background-send-sending
+#, fuzzy
 msgid "Sending mail…"
-msgstr ""
+msgstr "Retpoŝto sendata"
 
 #. # LOCALIZATION NOTE(background-send-success):
 #. # Displayed in a toaster popup message, saying that the email
@@ -1573,21 +1631,8 @@ msgstr "{{ n }} novaj retmesaĝoj ({{ accountName }})"
 msgid "{{ from }} “{{ subject }}”"
 msgstr ""
 
-#~ msgid "DomainUsername"
-#~ msgstr "nomregnouzantonomo"
-
 #~ msgid "Read"
 #~ msgstr "Legita"
-
-#~ msgid "Sending email"
-#~ msgstr "Retpoŝto sendata"
-
-#~ msgid "This email contains one image. Click to download."
-#~ msgstr "Tiu ĉi retpoŝto enhavas unu bildon. Alklaku por elŝuti."
-
-#~ msgctxt "message-download-images[two]"
-#~ msgid "This email contains {{ n }} images. Click to download."
-#~ msgstr "Tiu ĉi retpoŝto enhavas {{ n }} bildojn. Alklaku por elŝuti."
 
 #~ msgctxt "message-download-images[few]"
 #~ msgid "This email contains {{ n }} images. Click to download."

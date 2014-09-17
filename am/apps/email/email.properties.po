@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-03 10:18+0000\n"
+"POT-Creation-Date: 2014-09-17 11:13+0000\n"
 "PO-Revision-Date: 2014-09-17 02:34+0000\n"
 "Last-Translator: samson <sambelet@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1410921287.000000\n"
@@ -35,6 +35,12 @@ msgstr ""
 #: setup-account-header3
 msgid "New Account"
 msgstr "አዲስ መግለጫ"
+
+#. # LOCALIZATION NOTE (setup-account-enter-password): Shown during account setup
+#. # if the autoconfig process determines a password is needed to complete setup.
+#: setup-account-enter-password
+msgid "Enter Password For:"
+msgstr ""
 
 #. # The placeholder for the display name of the user that will be displayed in the
 #. # account setup screen input box for the display name until they enter any text
@@ -330,6 +336,31 @@ msgctxt "setup-gmail-pop3-retry"
 msgid "Retry"
 msgstr "እንደገና መሞከሪያ"
 
+#. # LOCALIZATION NOTE (setup-fix-oauth2-header): The card header for the card that
+#. # asks the user to reauthorize the email account to use an OAuth2 token. This
+#. # may show up from time to time with a GMail account for example, but there are
+#. # other account types besides GMail that could be OAuth2 authorized.
+#: setup-fix-oauth2-header
+msgid "Reauthorize Email"
+msgstr ""
+
+#. # LOCALIZATION NOTE (setup-fix-oauth2-description): Describes that the account
+#. # needs to be reauthorized via OAuth2. The account is shown below this
+#. # description.
+#: setup-fix-oauth2-description
+msgid "Email needs to be reauthorized to access the following account:"
+msgstr ""
+
+#. # LOCALIZATION NOTE (setup-fix-oauth2-reauthorize): The button triggering the
+#. # reauthorization flow for OAuth2-protected account types. This will result in
+#. # a dialog-type browser window opening up and going to the account provider,
+#. # for instance GMail, so that the user can authorize the Email app to continue
+#. # to access the account.
+#: setup-fix-oauth2-reauthorize
+msgctxt "setup-fix-oauth2-reauthorize"
+msgid "Reauthorize"
+msgstr ""
+
 #: settings-main-header
 msgid "Mail Settings"
 msgstr "ደብዳቤ ማሰናጃዎች"
@@ -344,9 +375,10 @@ msgstr "መግለጫ"
 #. # Label in the "Account" sub-section of account settings that shows the
 #. # human name, not the email address, for the account.
 #: settings-account-name
+#, fuzzy
 msgctxt "settings-account-name"
 msgid "Your name"
-msgstr ""
+msgstr "የእርስዎ ስም"
 
 #. # Label in the "Account" sub-section of account settings for the checkbox
 #. # that enables getting phone notifications when new inbox email is found
@@ -420,6 +452,16 @@ msgstr "ሰርቨር ማሰናጃዎች"
 #: settings-account-userpass
 msgid "Username and password"
 msgstr "የ ተጠቃሚ ስም እና የመግቢያ ቃል"
+
+#. # LOCALIZATION NOTE (ssettings-account-useroauth2): Label in the
+#. # "Server settings" sub-section of acccount settings for going to a settings
+#. # card that shows user name and a reauthorize option for an account that was
+#. # configured to use oauth2.
+#: settings-account-useroauth2
+#, fuzzy
+msgctxt "settings-account-useroauth2"
+msgid "Username"
+msgstr "የተጠቃሚ ስም"
 
 #. # LOCALIZATION NOTE (settings-default-signature-2): The default signature
 #. # that the frontend adds in for new accounts
@@ -504,8 +546,9 @@ msgstr ""
 #. # "Manually" means, do not automatically connect on a periodic sync interval.
 #. # User will manually click the refresh button to check for new messages.
 #: settings-check-every-5min
+#, fuzzy
 msgid "Every 5 minutes"
-msgstr ""
+msgstr "በየ 15 ደቂቆች"
 
 #: settings-check-every-10min
 msgid "Every 10 minutes"
@@ -569,9 +612,10 @@ msgid "Set as default email"
 msgstr "እንደ ነባር ኢሜይል ማሰናጃ"
 
 #: settings-account-type
+#, fuzzy
 msgctxt "settings-account-type"
 msgid "Account type"
-msgstr ""
+msgstr "የ መግለጫው አይነት"
 
 #: settings-account-credentials
 msgid "Credentials"
@@ -583,19 +627,22 @@ msgid "ActiveSync settings"
 msgstr ""
 
 #: settings-imap-label
+#, fuzzy
 msgctxt "settings-imap-label"
 msgid "IMAP settings"
-msgstr ""
+msgstr "IMAP ማሰናጃዎች"
 
 #: settings-pop3-label
+#, fuzzy
 msgctxt "settings-pop3-label"
 msgid "POP3 settings"
-msgstr ""
+msgstr "POP3 ማሰናጃዎች"
 
 #: settings-smtp-label
+#, fuzzy
 msgctxt "settings-smtp-label"
 msgid "SMTP settings"
-msgstr ""
+msgstr "SMTP ማሰናጃዎች"
 
 #: settings-hostname
 msgctxt "settings-hostname"
@@ -622,6 +669,14 @@ msgstr "ማስቀመጫ"
 
 #: settings-password-empty
 msgid "Password field should not be empty"
+msgstr ""
+
+#. # LOCALIZATION NOTE (settings-reauth): On the account credentials settings card,
+#. # if the account is an oauth2 account, this is the button label that allows the
+#. # user to reauthorize the email app to access their account via oauth2.
+#: settings-reauth
+msgctxt "settings-reauth"
+msgid "Reauthorize"
 msgstr ""
 
 #. # How much email to sync, in smallest unit of days, from the server. Only
@@ -717,14 +772,16 @@ msgid "{{ n }} attachment"
 msgstr "{{ n }} ማያያዣ"
 
 #: compose-attachments[two]
+#, fuzzy
 msgctxt "compose-attachments[two]"
 msgid "{{ n }} attachments"
-msgstr ""
+msgstr "{{ n }} ማያያዣዎች"
 
 #: compose-attachments[few]
+#, fuzzy
 msgctxt "compose-attachments[few]"
 msgid "{{ n }} attachments"
-msgstr ""
+msgstr "{{ n }} ማያያዣዎች"
 
 #: compose-attachments[many]
 msgctxt "compose-attachments[many]"
@@ -861,9 +918,10 @@ msgid "{{ n }} selected"
 msgstr "{{ n }} ተመርጧል"
 
 #: message-multiedit-header[other]
+#, fuzzy
 msgctxt "message-multiedit-header[other]"
 msgid "{{ n }} selected"
-msgstr ""
+msgstr "{{ n }} ተመርጧል"
 
 #: browse-to-url-prompt
 msgid "Browse to URL?: {{ url }}"
@@ -937,9 +995,10 @@ msgid "Delete {{ n }} email messages?"
 msgstr ""
 
 #: message-large-message-cancel
+#, fuzzy
 msgctxt "message-large-message-cancel"
 msgid "Cancel"
-msgstr ""
+msgstr "መሰረዣ"
 
 #: message-large-message-ok
 msgid "Continue"
@@ -950,9 +1009,10 @@ msgid "This message is large and may take some time to download."
 msgstr ""
 
 #: message-search-from
+#, fuzzy
 msgctxt "message-search-from"
 msgid "From"
-msgstr ""
+msgstr "ከ"
 
 #: message-search-to
 msgctxt "message-search-to"
@@ -1066,13 +1126,15 @@ msgstr ""
 #. # localized, we attempt to remain consistent with apps such as Thunderbird for
 #. # at least English.
 #: forward-header-subject
+#, fuzzy
 msgctxt "forward-header-subject"
 msgid "Subject"
-msgstr ""
+msgstr "ጉዳዩ"
 
 #: forward-header-date
+#, fuzzy
 msgid "Date"
-msgstr ""
+msgstr "ዳታ"
 
 #: forward-header-from
 msgctxt "forward-header-from"
@@ -1145,9 +1207,10 @@ msgstr "ወደ ኋላ"
 #. # In the folder picker drawer, the list of email accounts are shown. This is
 #. # the header for that section.
 #: drawer-accounts-header
+#, fuzzy
 msgctxt "drawer-accounts-header"
 msgid "Accounts"
-msgstr ""
+msgstr "መግለጫዎች"
 
 #. # At the bottom of the folder picker drawer, there is an icon link that
 #. # goes to the account settings. This string is only used for accessibility
