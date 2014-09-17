@@ -1,0 +1,1640 @@
+#. extracted from ./apps/email/email.properties
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-09-17 11:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
+
+#: setup-app-name-header
+msgid "Mail"
+msgstr "Correio"
+
+#: setup-empty-account-prompt
+msgid ""
+"You are not set up to send or receive email. Would you like to do that now?"
+msgstr ""
+"Não está preparado para enviar ou receber email. Gostaria de configurar este "
+"serviço agora?"
+
+#: setup-pick-service
+msgid "To send and receive email, you will need to set up an account."
+msgstr "Para enviar e recever email, precisa de definir uma conta."
+
+#. # Title of the account setup card where the user enters their display name,
+#. # e-mail address, and password.
+#: setup-account-header3
+msgid "New Account"
+msgstr "Nova Conta"
+
+#. # LOCALIZATION NOTE (setup-account-enter-password): Shown during account setup
+#. # if the autoconfig process determines a password is needed to complete setup.
+#: setup-account-enter-password
+msgid "Enter Password For:"
+msgstr ""
+
+#. # The placeholder for the display name of the user that will be displayed in the
+#. # account setup screen input box for the display name until they enter any text
+#. # in the box.  When you send an e-mail, the "From" header contains the user's
+#. # display name ("John Doe") as well as the e-mail address
+#. # ("john.doe@example.com").  In the future this input box will be labeled, but
+#. # it is currently unlabeled because of screen real estate concerns.
+#: setup-info-name.placeholder
+msgctxt "setup-info-name.placeholder"
+msgid "Your name"
+msgstr "O seu nome"
+
+#. # The placeholder for the user's e-mail address that will be displayed in the
+#. # account setup screen input box for the e-mail address until they enter any
+#. # text in the box.  The value will be used to configure the e-mail account.
+#: setup-info-email.placeholder
+msgid "someone@example.com"
+msgstr "alguém@exemplo.pt"
+
+#. # The placeholder for the user's password that will be displayed in the account
+#. # setup screen input box for the password until they enter any text in the box.
+#. # The value will be used to configure the e-mail account and saved for future
+#. # usage.
+#: setup-info-password.placeholder
+msgctxt "setup-info-password.placeholder"
+msgid "Password"
+msgstr "Senha"
+
+#: setup-info-next
+msgctxt "setup-info-next"
+msgid "Next"
+msgstr "Seguinte"
+
+#: setup-progress-wait-msg
+msgid "Setting up account"
+msgstr "A configurar uma conta"
+
+#: setup-completed-header
+msgid "Mail account setup"
+msgstr "Configuração da conta de correio"
+
+#: setup-completed-label
+msgid "All done!"
+msgstr "Concluído!"
+
+#: setup-add-another-account
+msgid "Add another account"
+msgstr "Adicionar outra conta"
+
+#: setup-show-mail
+msgid "Continue to Mail"
+msgstr "Continuar para o Correio"
+
+#. # The error for when the user tries to create an account without a network
+#. # connection active.
+#: setup-error-offline
+msgid "This device is currently offline. Connect to a network and try again."
+msgstr ""
+"Este dispositivo está atualmente desligado da rede. Ligue-se a uma rede e "
+"tente novamente."
+
+#. # The error for either a bad username or a bad password.  For security reasons,
+#. # servers try not to distinguish between the two which is why we also cannot
+#. # tell them apart either.  Also, if the user made a typo, they could have made
+#. # it in either place.
+#: setup-error-bad-user-or-pass2
+msgid "Invalid username or password. Check for typos."
+msgstr "Nome de utilizador ou senha inválidos. Verifique os dados fornecidos."
+
+#. # The error for a bad e-mail address. We tried to send email but
+#. # couldn't because the server said it was a bad address.
+#: setup-error-bad-address
+msgid "Invalid e-mail address. Check for typos."
+msgstr "Endereço de email inválido. Verifique se há erros de digitação."
+
+#. # The error for a user having the correct username and password, but the mail
+#. # server explicitly indicates they don't have permission to talk to the mail
+#. # server.  This is currently only expected from ActiveSync servers; situations
+#. # like gmail over IMAP indicating that IMAP is disabled for the account or
+#. # domain have their own error code: setup-error-imap-disabled.
+#: setup-error-not-authorized
+msgid "The server said you’re not authorized to create an account"
+msgstr "O servidor informou que não está autorizado a criar uma conta"
+
+#. # The error for when the server is not good enough to be supported
+#. # because it is missing the required features.
+#: setup-error-pop-server-not-great
+msgid ""
+"Server unsupported. The POP3 server does not implement required features."
+msgstr ""
+"O servidor não é suportado. O servidor POP3 não implementa a funcionalidades "
+"necessárias."
+
+#. # The fallback error; if we don't have a better error, we report this.
+#: setup-error-unknown2
+msgid ""
+"An unknown error occurred. Check your network connection or try the manual "
+"configuration option."
+msgstr ""
+"Ocorreu um erro desconhecido. Verifique se tem ligação à rede ou tente a "
+"opção de configuração manual."
+
+#. # The error for Gmail accounts where 2-factor authentication (where you receive
+#. # a text message on your phone or run a special app) is enabled, and so the
+#. # user needs to create and use an application specific password to allow us to
+#. # talk to the server.
+#: setup-error-needs-app-pass
+msgid ""
+"You must use an application specific password for two-factor Gmail accounts"
+msgstr ""
+"Tem de utilizar uma senha específica para a aplicação para contas Gmail com "
+"autenticação em dois fatores"
+
+#. # The error for Gmail accounts where IMAP is not enabled.  This can occur
+#. # for individual users where they have disabled IMAP from the settings UI.
+#. # This can also occur for apps-for-domains where the domain is not configured
+#. # to support IMAP.
+#: setup-error-imap-disabled
+msgid "You must enable IMAP for your Gmail account"
+msgstr "Deve ativar o IMAP para a sua conta do Gmail"
+
+#. # The error for Gmail accounts where POP3 is not enabled.  This can occur
+#. # for individual users where they have disabled POP3 from the settings UI.
+#. # This can also occur for apps-for-domains where the domain is not configured
+#. # to support POP3.
+#: setup-error-pop3-disabled
+msgid "You must enable POP3 for your Gmail account"
+msgstr "Deve ativar o POP3 para a sua conta Gmail"
+
+#. # The error for when we are able to contact a server that should be the mail
+#. # server but we are unable to establish a secure connection.
+#: setup-error-bad-security
+msgid ""
+"Unable to establish a secure connection with \"{{server}}\". There may be a "
+"problem with your network or the server."
+msgstr ""
+"Não foi possível estabelecer uma ligação segura com \"{{server}}\". Pode ser "
+"um problema com a sua rede ou com o servidor."
+
+#. # The error for when we try to contact a server but see no indication of a
+#. # response before we give up because of a timeout.
+#: setup-error-unresponsive-server
+msgid ""
+"Unable to establish a connection with \"{{server}}\". There may be a problem "
+"with the network."
+msgstr ""
+"Não foi possível estabelecer uma ligação com \"{{server}}\". Pode existir um "
+"problema com a rede."
+
+#. # The error for when we able to establish a (secure) connection with the server,
+#. # but there is some type of failure talking to the server that isn't covered by
+#. # other errors.  Hopefully this is just a temporary problem on the server, but
+#. # it could also be a fundamental incompatibility between our software and the
+#. # server's software.
+#: setup-error-server-problem
+msgid "There is a problem with the server \"{{server}}\". Try again later."
+msgstr ""
+"Existe um problema com o servidor \"{{server}}\". Tente novamente mais tarde."
+
+#. # The error for when we are trying to figure out the right server settings for
+#. # an account based on the e-mail address the user typed in during configuration,
+#. # but we can't find the right settings.  This is either because the user made a
+#. # typo and so we are looking for configuration data that does not exist, there
+#. # were network failures trying to look the information up, or the information is
+#. # not available.
+#: setup-error-no-config-info
+msgid ""
+"Unable to automatically configure your account. Correct your e-mail address "
+"or try the manual configuration option."
+msgstr ""
+"Não foi possível configurar a sua conta automaticamente. Corrija o seu "
+"endereço de email ou tente a opção de configuração manual."
+
+#. # The error for when the user is trying to set up an account with a server that
+#. # currently indicates it is offline for maintenance.
+#: setup-error-server-maintenance
+msgid "The server \"{{server}}\" is offline for maintenance. Try again later."
+msgstr ""
+"O servidor \"{{server}}\" está desligado para manutenção. Tente novamente "
+"mais tarde."
+
+#. # The error when the user trying to register a duplicate account
+#: setup-error-account-already-exists
+msgid "This account is already configured."
+msgstr "Esta conta já está configurada."
+
+#: setup-manual-config2
+msgid "Manual setup"
+msgstr "Configuração manual"
+
+#: setup-manual-config-header
+msgid "Manual Setup"
+msgstr "Configuração manual"
+
+#: setup-manual-account-type
+msgctxt "setup-manual-account-type"
+msgid "Account type"
+msgstr "Tipo de conta"
+
+#: setup-manual-imap-header
+msgctxt "setup-manual-imap-header"
+msgid "IMAP settings"
+msgstr "Definições IMAP"
+
+#: setup-manual-pop3-header
+msgctxt "setup-manual-pop3-header"
+msgid "POP3 settings"
+msgstr "Definições POP3"
+
+#: setup-manual-smtp-header
+msgctxt "setup-manual-smtp-header"
+msgid "SMTP settings"
+msgstr "Definições SMTP"
+
+#: setup-manual-activesync-header
+msgctxt "setup-manual-activesync-header"
+msgid "ActiveSync settings"
+msgstr "Definições ActiveSync"
+
+#: setup-manual-next
+msgctxt "setup-manual-next"
+msgid "Next"
+msgstr "Seguinte"
+
+#: setup-manual-socket
+msgid "Socket Type"
+msgstr "Tipo de ligação"
+
+#. # Technical term, should not be translated
+#: setup-manual-socket-ssl
+msgid "SSL"
+msgstr "SSL"
+
+#. # Technical term, should not be translated
+#: setup-manual-socket-starttls
+msgid "STARTTLS"
+msgstr "STARTTLS"
+
+#: setup-manual-hostname.placeholder
+msgctxt "setup-manual-hostname.placeholder"
+msgid "Hostname"
+msgstr "Nome do servidor"
+
+#: setup-manual-port.placeholder
+msgid "Port Number"
+msgstr "Número da porta"
+
+#: setup-manual-username.placeholder
+#, fuzzy
+msgctxt "setup-manual-username.placeholder"
+msgid "Username"
+msgstr "Nome de utilizador"
+
+#. # LOCALIZATION NOTE (setup-manual-activesync-username.placeholder):
+#. # the double \\ will be displayed as a single \ 
+#: setup-manual-activesync-username.placeholder
+msgid "Domain\\Username"
+msgstr "Domínio\\Nome de utilizador"
+
+#: setup-bad-password-header
+msgid "Bad password!"
+msgstr "Senha incorreta!"
+
+#: setup-bad-password
+msgid "We could not sign in to the server. Maybe your password is wrong?"
+msgstr ""
+"Não conseguimos iniciar sessão no servidor. Talvez a sua senha esteja "
+"incorreta?"
+
+#: setup-new-password.placeholder
+msgid "New password"
+msgstr "Nova senha"
+
+#: setup-fix-password
+msgid "Retry with new password"
+msgstr "Tentar com uma nova senha"
+
+#: setup-gmail-twofactor-header
+msgid "Two-Factor Enabled"
+msgstr "Autenticação de dois fatores ativa"
+
+#: setup-gmail-twofactor-message
+msgid "You need to enter an application-specific password below."
+msgstr "Tem de introduzir a senha específica para a aplicação em baixo."
+
+#: setup-gmail-twofactor-fix
+msgid "Use application password"
+msgstr "Utilizar senha da aplicação"
+
+#: setup-gmail-imap-header
+msgid "IMAP Disabled"
+msgstr "IMAP desativado"
+
+#: setup-gmail-imap-message
+msgid "You must enable IMAP on your Gmail account"
+msgstr "Deve ativar o IMAP na sua conta Gmail"
+
+#: setup-gmail-imap-retry
+msgctxt "setup-gmail-imap-retry"
+msgid "Retry"
+msgstr "Tentar novamente"
+
+#: setup-gmail-pop3-header
+msgid "POP3 Disabled"
+msgstr "POP3 desativado"
+
+#: setup-gmail-pop3-message
+msgid "You must enable POP3 on your Gmail account"
+msgstr "Deve ativar o POP3 na sua conta Gmail"
+
+#: setup-gmail-pop3-retry
+msgctxt "setup-gmail-pop3-retry"
+msgid "Retry"
+msgstr "Tentar novamente"
+
+#. # LOCALIZATION NOTE (setup-fix-oauth2-header): The card header for the card that
+#. # asks the user to reauthorize the email account to use an OAuth2 token. This
+#. # may show up from time to time with a GMail account for example, but there are
+#. # other account types besides GMail that could be OAuth2 authorized.
+#: setup-fix-oauth2-header
+msgid "Reauthorize Email"
+msgstr ""
+
+#. # LOCALIZATION NOTE (setup-fix-oauth2-description): Describes that the account
+#. # needs to be reauthorized via OAuth2. The account is shown below this
+#. # description.
+#: setup-fix-oauth2-description
+msgid "Email needs to be reauthorized to access the following account:"
+msgstr ""
+
+#. # LOCALIZATION NOTE (setup-fix-oauth2-reauthorize): The button triggering the
+#. # reauthorization flow for OAuth2-protected account types. This will result in
+#. # a dialog-type browser window opening up and going to the account provider,
+#. # for instance GMail, so that the user can authorize the Email app to continue
+#. # to access the account.
+#: setup-fix-oauth2-reauthorize
+msgctxt "setup-fix-oauth2-reauthorize"
+msgid "Reauthorize"
+msgstr ""
+
+#: settings-main-header
+msgid "Mail Settings"
+msgstr "Definições de Correio"
+
+#. # For account settings screen, there are sections of settings, and each
+#. #section has a header. One is Account, which shows general information
+#. # about the account, like the name.
+#: settings-sub-header-account
+msgid "Account"
+msgstr "Conta"
+
+#. # Label in the "Account" sub-section of account settings that shows the
+#. # human name, not the email address, for the account.
+#: settings-account-name
+msgctxt "settings-account-name"
+msgid "Your name"
+msgstr "O seu nome"
+
+#. # Label in the "Account" sub-section of account settings for the checkbox
+#. # that enables getting phone notifications when new inbox email is found
+#. # via periodic sync with the mail server.
+#: settings-account-display-notifications
+msgid "Display notifications for new messages"
+msgstr "Apresentar notificações para novas mensagens"
+
+#. # LOCALIZATION NOTE(settings-account-play-sound-onsend): Label in the "Account"
+#. # sub-section of account settings for the checkbox that enables playing a sound
+#. # after a message is sent.
+#: settings-account-play-sound-onsend
+msgid "Play sound after message is sent"
+msgstr "Reproduzir um som após enviar uma mensagem"
+
+#. # LOCALIZATION NOTE(settings-empty-signature-label): Text used for the button
+#. # that takes the user to edit the signature, if there is no existing signature
+#. # text. It should inform the user that tapping on it will lead to editing the
+#. # signature text.
+#: settings-empty-signature-label
+msgid "Tap to Edit"
+msgstr ""
+
+#. # LOCALIZATION NOTE (settings-account-signature-label): The label for the
+#. # signature field in the account settings card.
+#: settings-account-signature-label
+msgid "Signature"
+msgstr "Assinatura"
+
+#. # LOCALIZATION NOTE (signature-save): This is the text for an option
+#. # in a dialog box that pops up when the user hits back with the
+#. # signature changed. The option keeps the saves the current signature in
+#. # the editor
+#: signature-save
+msgid "Save Signature"
+msgstr "Guardar Assinatura"
+
+#. # LOCALIZATION NOTE (signature-discard-confirm): This is the text of the
+#. # button which discards changes when a user hits back in the signature
+#. # entry page.
+#: signature-discard-confirm
+msgctxt "signature-discard-confirm"
+msgid "Discard"
+msgstr "Descartar"
+
+#. # For account settings screen, there are sections of settings, and each
+#. # section has a header. One is Data, which deals with sync intervals and
+#. # time windows for the data that is fetched.
+#: settings-sub-header-data
+msgid "Data"
+msgstr "Dados"
+
+#. # Label in the "Data" sub-section of acccount settings for the select box
+#. # that allows choosing how often to check the server for new messages in
+#. # the inbox. The possible select box options are listed in the
+#. # settings-check-every-* properties.
+#: settings-account-check-mail
+msgid "Check for new messages"
+msgstr "Procurar por novas mensagens"
+
+#. # For account settings screen, there are sections of settings, and each
+#. # section has a header. One is "Server settings", which deals with the
+#. # name/password and server addresses.
+#: settings-sub-header-server
+msgid "Server settings"
+msgstr "Definições do servidor"
+
+#. # Label in the "Server settings" sub-section of acccount settings for going
+#. # to a settings card that shows user name and password used to connect to
+#. # the mail server.
+#: settings-account-userpass
+msgid "Username and password"
+msgstr "Nome de utilizador e senha"
+
+#. # LOCALIZATION NOTE (ssettings-account-useroauth2): Label in the
+#. # "Server settings" sub-section of acccount settings for going to a settings
+#. # card that shows user name and a reauthorize option for an account that was
+#. # configured to use oauth2.
+#: settings-account-useroauth2
+#, fuzzy
+msgctxt "settings-account-useroauth2"
+msgid "Username"
+msgstr "Nome de utilizador"
+
+#. # LOCALIZATION NOTE (settings-default-signature-2): The default signature
+#. # that the frontend adds in for new accounts
+#: settings-default-signature-2
+msgid "Sent Using Firefox OS"
+msgstr "Enviado a partir do Firefox OS"
+
+#: settings-done
+msgid "Done"
+msgstr "Feito"
+
+#: settings-account-section
+msgctxt "settings-account-section"
+msgid "Accounts"
+msgstr "Contas"
+
+#: settings-account-add
+msgid "Add Account"
+msgstr "Adicionar Conta"
+
+#: settings-account-delete
+msgid "Delete account"
+msgstr "Eliminar conta"
+
+#: settings-account-delete-prompt
+msgid ""
+"Are you sure you want to delete your {{account}} mail account? You will have "
+"to re-download your mail if you re-create the account."
+msgstr ""
+"Tem a certeza que pretende eliminar a sua conta de correio {{account}}? Terá "
+"de transferir novamente o seu correio se recriar a conta."
+
+#: settings-account-delete-cancel
+#, fuzzy
+msgctxt "settings-account-delete-cancel"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: settings-account-delete-confirm
+msgctxt "settings-account-delete-confirm"
+msgid "Delete"
+msgstr "Eliminar"
+
+#. # When dealing with an account that involves multiple types of
+#. # connections, such as IMAP and POP3 which both use SMTP for sending,
+#. # we augment the account name in the string with a label to help
+#. # clarify to the user which account type they are dealing with. For
+#. # most users, the same password will be used for the IMAP server and
+#. # the SMTP server, and they will only ever see the IMAP or POP3 label.
+#. # But some users with unusual server configurations will also see the
+#. # SMTP variant. These unusual users will probably have received
+#. # specific instructions from their ISP that involve use of the
+#. # protocol names. In general we expect that localizers will want to
+#. # leave the protocol names as-is since they are technical protocol
+#. # names, but it may make sense to place the name of the protocol
+#. # before the account type for certain languages.
+#. # Note that the account name is displayed as a string that is
+#. # displayed in its entirety, so you don't need to worry about clipping
+#. # or ellipses.
+#: settings-account-clarify-imap
+msgid "{{account-name}} (IMAP)"
+msgstr "{{account-name}} (IMAP)"
+
+#: settings-account-clarify-pop3
+msgid "{{account-name}} (POP3)"
+msgstr "{{account-name}} (POP3)"
+
+#: settings-account-clarify-smtp
+msgid "{{account-name}} (SMTP)"
+msgstr "{{account-name}} (SMTP)"
+
+#: settings-general-section
+msgid "General settings"
+msgstr "Definições gerais"
+
+#: settings-show-images
+msgid "Always show images"
+msgstr "Apresentar sempre as imagens"
+
+#: settings-download-attachments
+msgid "Download attachments"
+msgstr "Transferir anexos"
+
+#. # How often to check the mail server for new mail messages for the inbox.
+#. # "Manually" means, do not automatically connect on a periodic sync interval.
+#. # User will manually click the refresh button to check for new messages.
+#: settings-check-every-5min
+msgid "Every 5 minutes"
+msgstr "Todos os 5 minutos"
+
+#: settings-check-every-10min
+msgid "Every 10 minutes"
+msgstr "Todos os 10 minutos"
+
+#: settings-check-every-15min
+msgid "Every 15 minutes"
+msgstr "Todos os 15 minutos"
+
+#: settings-check-every-30min
+msgid "Every 30 minutes"
+msgstr "Todos os 30 minutos"
+
+#: settings-check-every-60min
+msgid "Every hour"
+msgstr "Todas as horas"
+
+#: settings-check-every-manual
+msgid "Manually"
+msgstr "Manualmente"
+
+#. # Dynamically added sync interval checks. These are only added via special
+#. # debug/development tools, and are always in seconds. Otherwise, just
+#. # the settings-check-every-* options are visible.
+#: settings-check-dynamic
+msgctxt "settings-check-dynamic"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: settings-check-dynamic[zero]
+msgid "seconds"
+msgstr "segundos"
+
+#: settings-check-dynamic[one]
+#, fuzzy
+msgctxt "settings-check-dynamic[one]"
+msgid "{{ n }} seconds"
+msgstr "{{ n }} segundo"
+
+#: settings-check-dynamic[two]
+msgctxt "settings-check-dynamic[two]"
+msgid "{{ n }} seconds"
+msgstr "{{ n }} segundos"
+
+#: settings-check-dynamic[few]
+msgctxt "settings-check-dynamic[few]"
+msgid "{{ n }} seconds"
+msgstr "{{ n }} segundos"
+
+#: settings-check-dynamic[many]
+msgctxt "settings-check-dynamic[many]"
+msgid "{{ n }} seconds"
+msgstr "{{ n }} segundos"
+
+#: settings-check-dynamic[other]
+msgctxt "settings-check-dynamic[other]"
+msgid "{{ n }} seconds"
+msgstr "{{ n }} segundos"
+
+#: settings-default-account
+msgid "Set as default email"
+msgstr "Definir como email por omissão"
+
+#: settings-account-type
+msgctxt "settings-account-type"
+msgid "Account type"
+msgstr "Tipo de conta"
+
+#: settings-account-credentials
+msgid "Credentials"
+msgstr "Credenciais"
+
+#: settings-activesync-label
+msgctxt "settings-activesync-label"
+msgid "ActiveSync settings"
+msgstr "Definições ActiveSync"
+
+#: settings-imap-label
+msgctxt "settings-imap-label"
+msgid "IMAP settings"
+msgstr "Definições IMAP"
+
+#: settings-pop3-label
+msgctxt "settings-pop3-label"
+msgid "POP3 settings"
+msgstr "Definições POP3"
+
+#: settings-smtp-label
+msgctxt "settings-smtp-label"
+msgid "SMTP settings"
+msgstr "Definições SMTP"
+
+#: settings-hostname
+msgctxt "settings-hostname"
+msgid "Hostname"
+msgstr "Nome do servidor"
+
+#: settings-port
+msgid "Port"
+msgstr "Porta"
+
+#: settings-username
+msgctxt "settings-username"
+msgid "Username"
+msgstr "Nome de utilizador"
+
+#: settings-password
+msgctxt "settings-password"
+msgid "Password"
+msgstr "Senha"
+
+#: settings-save
+msgid "Save"
+msgstr "Guardar"
+
+#: settings-password-empty
+msgid "Password field should not be empty"
+msgstr "O campo da senha não deve estar vazio"
+
+#. # LOCALIZATION NOTE (settings-reauth): On the account credentials settings card,
+#. # if the account is an oauth2 account, this is the button label that allows the
+#. # user to reauthorize the email app to access their account via oauth2.
+#: settings-reauth
+msgctxt "settings-reauth"
+msgid "Reauthorize"
+msgstr ""
+
+#. # How much email to sync, in smallest unit of days, from the server. Only
+#. # valid for ActiveSync mail servers, not shown for other mail server types
+#. # like IMAP.
+#: settings-account-synchronize-window
+msgid "Days to sync"
+msgstr "Dias a sincronizar"
+
+#: settings-synchronize-auto
+msgid "Automatic"
+msgstr "Automaticamente"
+
+#: settings-synchronize-one-day
+msgid "1 day"
+msgstr "1 dia"
+
+#: settings-synchronize-three-days
+msgid "3 days"
+msgstr "3 dias"
+
+#: settings-synchronize-one-week
+msgid "1 week"
+msgstr "1 semana"
+
+#: settings-synchronize-two-weeks
+msgid "2 weeks"
+msgstr "2 semanas"
+
+#: settings-synchronize-one-month
+msgid "1 month"
+msgstr "1 mês"
+
+#: settings-synchronize-all
+msgid "All messages"
+msgstr "Todas as mensagens"
+
+#: envelope-from
+msgctxt "envelope-from"
+msgid "From"
+msgstr "De"
+
+#: envelope-to
+msgctxt "envelope-to"
+msgid "To"
+msgstr "Para"
+
+#: envelope-cc
+msgctxt "envelope-cc"
+msgid "Cc"
+msgstr "Cc"
+
+#: envelope-bcc
+msgid "Bcc"
+msgstr "Bcc"
+
+#: compose-header
+msgid "Compose message"
+msgstr "Compor mensagem"
+
+#: compose-header-short
+msgid "Compose"
+msgstr "Compor"
+
+#: compose-send
+msgid "Send"
+msgstr "Enviar"
+
+#: compose-to
+msgctxt "compose-to"
+msgid "To"
+msgstr "Para"
+
+#: compose-cc
+msgid "cc"
+msgstr "cc"
+
+#: compose-bcc
+msgid "bcc"
+msgstr "bcc"
+
+#: compose-attachments
+msgctxt "compose-attachments"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: compose-attachments[zero]
+msgid "Attachments"
+msgstr "Anexos"
+
+#: compose-attachments[one]
+msgid "{{ n }} attachment"
+msgstr "{{ n }} anexo"
+
+#: compose-attachments[two]
+msgctxt "compose-attachments[two]"
+msgid "{{ n }} attachments"
+msgstr "{{ n }} anexos"
+
+#: compose-attachments[few]
+msgctxt "compose-attachments[few]"
+msgid "{{ n }} attachments"
+msgstr "{{ n }} anexos"
+
+#: compose-attachments[many]
+msgctxt "compose-attachments[many]"
+msgid "{{ n }} attachments"
+msgstr "{{ n }} anexos"
+
+#: compose-attachments[other]
+msgctxt "compose-attachments[other]"
+msgid "{{ n }} attachments"
+msgstr "{{ n }} anexos"
+
+#. # Shown when user taps on attachment icon in compose, but the app still
+#. # needs a bit more time to finishing the add of the previous attachment.
+#: compose-attachment-still-working
+msgid "One moment, still working on the previous attachment..."
+msgstr "One moment, still working on the previous attachment..."
+
+#: compose-subject
+msgctxt "compose-subject"
+msgid "Subject"
+msgstr "Assunto"
+
+#: compose-draft-save
+msgid "Save to Local Drafts"
+msgstr "Guardar em Rascunhos Locais"
+
+#: compose-discard-message
+msgid "Discard email?"
+msgstr "Descartar email?"
+
+#: compose-discard-confirm
+msgctxt "compose-discard-confirm"
+msgid "Discard"
+msgstr "Descartar"
+
+#: compose-send-message-failed
+msgid "Sending email failed"
+msgstr "Falhou o envio do email"
+
+#: composer-attachment-large
+msgid "Attachment too large"
+msgstr "Anexo demasiado grande"
+
+#: composer-attachments-large
+msgid "Attachments too large"
+msgstr "Anexos demasiado grandes"
+
+#: compose-attchment-size-exceeded
+msgid "The selected attachment is too large to send with this message."
+msgstr ""
+"O anexo selecionado é demasiado grande para ser enviado com esta mensagem."
+
+#: compose-attchments-size-exceeded
+msgid ""
+"The selected attachments are too large to send with this message. Try "
+"selecting fewer files."
+msgstr ""
+"Os anexos selecionados são demasiado grandes para serem enviados com esta "
+"mensagem. Tente selecionar menos ficheiros."
+
+#: dialog-button-ok
+msgid "OK"
+msgstr "OK"
+
+#. # If a file is attached to an email but it does not have a name, this
+#. # name is used. There could be multiple ones attached, so a number is
+#. # added to the end of the default name to distinguish the files from
+#. # each other.
+#: default-attachment-filename
+msgid "attachment{{ n }}"
+msgstr "anexo{{ n }}"
+
+#: attachment-size-kib
+msgid "{{kilobytes}}K"
+msgstr "{{kilobytes}}K"
+
+#: message-attachment-view
+msgid "View"
+msgstr "Ver"
+
+#: message-attachment-too-large
+msgid "This file is too large to download."
+msgstr "Este ficheiro é demasiado grande para ser transferido."
+
+#: message-no-subject
+msgid "(no subject)"
+msgstr "(sem assunto)"
+
+#. # LOCALIZATION NOTE(message-edit-menu-edit):
+#. # Displayed in a menu; tapping this item will cause the user to edit the given item.
+#: message-edit-menu-edit
+msgctxt "message-edit-menu-edit"
+msgid "Edit"
+msgstr "Editar"
+
+#: message-edit-menu-delete
+msgctxt "message-edit-menu-delete"
+msgid "Delete"
+msgstr "Eliminar"
+
+#: message-edit-delete-confirm
+msgid "Delete email message?"
+msgstr "Eliminar esta mensagem de email?"
+
+#: message-send-attachment-disabled-confirm
+msgid "Attachments can not be forwarded."
+msgstr "Não podem ser reencaminhados anexos."
+
+#: message-multiedit-header
+msgctxt "message-multiedit-header"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: message-multiedit-header[zero]
+msgctxt "message-multiedit-header[zero]"
+msgid "Edit"
+msgstr "Editar"
+
+#: message-multiedit-header[one]
+#, fuzzy
+msgctxt "message-multiedit-header[one]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} selecionado"
+
+#: message-multiedit-header[two]
+msgctxt "message-multiedit-header[two]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} selecionados"
+
+#: message-multiedit-header[few]
+msgctxt "message-multiedit-header[few]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} selecionados"
+
+#: message-multiedit-header[many]
+msgctxt "message-multiedit-header[many]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} selecionados"
+
+#: message-multiedit-header[other]
+msgctxt "message-multiedit-header[other]"
+msgid "{{ n }} selected"
+msgstr "{{ n }} selecionados"
+
+#: browse-to-url-prompt
+msgid "Browse to URL?: {{ url }}"
+msgstr "Ir para endereço?: {{ url }}"
+
+#: message-download-images-tap
+msgctxt "message-download-images-tap"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: message-download-images-tap[one]
+msgid "This email contains one image. Tap to download."
+msgstr "Este email contém uma imagem. Toque para transferir."
+
+#: message-download-images-tap[two]
+msgctxt "message-download-images-tap[two]"
+msgid "This email contains {{ n }} images. Tap to download."
+msgstr "Este email contém {{ n }} imagens. Toque para transferir."
+
+#: message-download-images-tap[few]
+msgctxt "message-download-images-tap[few]"
+msgid "This email contains {{ n }} images. Tap to download."
+msgstr "Este email contém {{ n }} imagens. Toque para transferir."
+
+#: message-download-images-tap[many]
+msgctxt "message-download-images-tap[many]"
+msgid "This email contains {{ n }} images. Tap to download."
+msgstr "Este email contém {{ n }} imagens. Toque para transferir."
+
+#: message-download-images-tap[other]
+msgctxt "message-download-images-tap[other]"
+msgid "This email contains {{ n }} images. Tap to download."
+msgstr "Este email contém {{ n }} imagens. Toque para transferir."
+
+#: message-show-external-images
+msgid "Show external images"
+msgstr "Apresentar imagens externas"
+
+#: message-multiedit-cancel
+msgctxt "message-multiedit-cancel"
+msgid "Cancel"
+msgstr "Cancel"
+
+#: message-multiedit-delete-confirm
+msgctxt "message-multiedit-delete-confirm"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: message-multiedit-delete-confirm[one]
+msgid "Delete this email message?"
+msgstr "Eliminar esta mensagem de email?"
+
+#: message-multiedit-delete-confirm[two]
+msgctxt "message-multiedit-delete-confirm[two]"
+msgid "Delete {{ n }} email messages?"
+msgstr "Eliminar {{ n }} mensagens de email?"
+
+#: message-multiedit-delete-confirm[few]
+msgctxt "message-multiedit-delete-confirm[few]"
+msgid "Delete {{ n }} email messages?"
+msgstr "Eliminar {{ n }} mensagens de email?"
+
+#: message-multiedit-delete-confirm[many]
+msgctxt "message-multiedit-delete-confirm[many]"
+msgid "Delete {{ n }} email messages?"
+msgstr "Eliminar {{ n }} mensagens de email?"
+
+#: message-multiedit-delete-confirm[other]
+msgctxt "message-multiedit-delete-confirm[other]"
+msgid "Delete {{ n }} email messages?"
+msgstr "Eliminar {{ n }} mensagens de email?"
+
+#: message-large-message-cancel
+msgctxt "message-large-message-cancel"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: message-large-message-ok
+msgid "Continue"
+msgstr "Continuar"
+
+#: message-large-message-confirm
+msgid "This message is large and may take some time to download."
+msgstr "Esta mensagem é grande e pode demorar algum tempo a ser transferida."
+
+#: message-search-from
+msgctxt "message-search-from"
+msgid "From"
+msgstr "De"
+
+#: message-search-to
+msgctxt "message-search-to"
+msgid "To"
+msgstr "Para"
+
+#: message-search-subject
+msgctxt "message-search-subject"
+msgid "Subject"
+msgstr "Assunto"
+
+#: message-search-body
+msgid "Body"
+msgstr "Corpo"
+
+#: message-search-all
+msgid "All"
+msgstr "Tudo"
+
+#: message-search-input.placeholder
+msgid "Search Mail"
+msgstr "Pesquisar Correio"
+
+#: message-search-cancel
+msgctxt "message-search-cancel"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: messages-syncing
+msgid "Loading Messages"
+msgstr "A carregar Mensagens"
+
+#. # LOCALIZATION NOTE (messages-load-more): This text shows at the bottom of the
+#. # list of messages in the message list, and pressing it will load more messages
+#. # likely from the server. The space is constrained and has an icon next to it.
+#: messages-load-more
+msgid "Load More Messages"
+msgstr "Carregar mais mensagens"
+
+#: messages-folder-empty
+msgid "No mail in this Folder"
+msgstr "Sem correio nesta Pasta"
+
+#: messages-search-empty
+msgid "No matches in locally cached messages"
+msgstr "Sem resultados nas mensagens armazenadas locamente"
+
+#: messages-folder-select
+msgid "Select folder"
+msgstr "Selecionar pasta"
+
+#. # LOCALIZATION NOTE(messages-folder-unread-max): This string is inserted
+#. # in place of the unread message count in the folder list whenever
+#. # the number exceeds 999. Note that due to space constraints any
+#. # localizations optimally should only be 4-5 characters.
+#: messages-folder-unread-max
+msgid "999+"
+msgstr ""
+
+#: message-contact-menu-create
+msgid "Save new contact"
+msgstr "Guardar novo contacto"
+
+#: message-contact-menu-add-existing
+msgid "Add to existing contact"
+msgstr "Adicionar a contacto existente"
+
+#: message-contact-menu-view
+msgid "View contact"
+msgstr "Ver contacto"
+
+#: message-contact-menu-reply
+msgctxt "message-contact-menu-reply"
+msgid "Reply"
+msgstr "Responder"
+
+#: message-contact-menu-new
+msgid "Send new mail"
+msgstr "Enviar novo correio"
+
+#: message-reply-menu-reply
+msgctxt "message-reply-menu-reply"
+msgid "Reply"
+msgstr "Responder"
+
+#: message-reply-menu-reply-all
+msgid "Reply All"
+msgstr "Responder a Todos"
+
+#: message-reply-menu-forward
+msgid "Forward"
+msgstr "Reencaminhar"
+
+#: message-reply-menu-cancel
+msgctxt "message-reply-menu-cancel"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. # LOCALIZATION NOTE: do not translate {name}
+#: reply-quoting-wrote
+msgid "{name} wrote"
+msgstr "{name} escreveu"
+
+#: forward-original-message
+msgid "Original message"
+msgstr "Mensagem original"
+
+#. # L10n note: These are the labels we use when displaying the envelope info for a
+#. # message that is forwarded inline.  While automatic recovery of this
+#. # information by clients is made difficult by these strings regularly being
+#. # localized, we attempt to remain consistent with apps such as Thunderbird for
+#. # at least English.
+#: forward-header-subject
+msgctxt "forward-header-subject"
+msgid "Subject"
+msgstr "Assunto"
+
+#: forward-header-date
+msgid "Date"
+msgstr "Data"
+
+#: forward-header-from
+msgctxt "forward-header-from"
+msgid "From"
+msgstr "De"
+
+#. # This really wants to have the dash in it for consistency with Thunderbird
+#: forward-header-reply-to
+msgid "Reply-To"
+msgstr "Responder-Para"
+
+#: forward-header-to
+msgctxt "forward-header-to"
+msgid "To"
+msgstr "Para"
+
+#: forward-header-cc
+msgctxt "forward-header-cc"
+msgid "Cc"
+msgstr "Cc"
+
+#. # Localized folder names for IMAP servers.  Because the IMAP standard did not
+#. # originally specify a way to express meta-data about folders, folders may be
+#. # named in English to express their purpose.  Then e-mail clients (or webmail
+#. # interfaces) localize these values.  We do this too, following in the
+#. # footsteps of Thunderbird.
+#: folder-inbox
+msgid "Inbox"
+msgstr "Caixa de entrada"
+
+#: folder-sent
+msgid "Sent"
+msgstr "Enviadas"
+
+#: folder-drafts
+msgid "Drafts"
+msgstr "Rascunhos"
+
+#: folder-trash
+msgid "Trash"
+msgstr "Lixo"
+
+#: folder-queue
+msgid "Unsent"
+msgstr "Não enviadas"
+
+#: folder-junk
+msgid "Junk"
+msgstr "Lixo eletrónico"
+
+#: folder-archives
+msgid "Archives"
+msgstr "Arquivos"
+
+#: folder-localdrafts
+msgid "Local Drafts"
+msgstr "Rascunhos Locais"
+
+#: folder-outbox
+msgid "Outbox"
+msgstr "Caixa de saída"
+
+#. # In the folder picker drawer, there is a transparent area for the header,
+#. # and a tap region to take the user back to the message list. So this text is
+#. # not visible by the user, but could be used for accessibility.
+#: drawer-back
+msgid "Back"
+msgstr "Voltar"
+
+#. # In the folder picker drawer, the list of email accounts are shown. This is
+#. # the header for that section.
+#: drawer-accounts-header
+msgctxt "drawer-accounts-header"
+msgid "Accounts"
+msgstr "Contas"
+
+#. # At the bottom of the folder picker drawer, there is an icon link that
+#. # goes to the account settings. This string is only used for accessibility
+#. # concerns, and is not visible visually.
+#: drawer-settings-link
+msgid "Settings"
+msgstr "Definições"
+
+#. # folder-last-synced-label is shown in the message-list, in the
+#. # middle of its bottom toolbar, and shows the last sync time for the currently
+#. # displayed list of messages in the folder. Since space is tight in that area,
+#. # the app code detects if the string will be too long and it will shrink the
+#. # font size to fit longer text.
+#: folder-last-synced-label
+msgid "Last sync:"
+msgstr "Última sincronização:"
+
+#. # LOCALIZATION NOTE(message-list-top-action):
+#. # In the message-list, as the user scrolls down, an action bar will scroll into
+#. # view that if tapped will take the user to the top of the screen. That bar
+#. # will use an icon to display its meaning, this is text that will not be visible
+#. # to the user, it is provided for accessibility.
+#: message-list-top-action
+msgid "Top"
+msgstr "Topo"
+
+#: toaster-undo
+msgid "Undo"
+msgstr "Anular"
+
+#: toaster-message-star
+msgctxt "toaster-message-star"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-star[one]
+msgid "1 message flag set"
+msgstr "Definida 1 etiqueta de mensagem"
+
+#: toaster-message-star[two]
+msgctxt "toaster-message-star[two]"
+msgid "{{ n }} message flags set"
+msgstr "Definidas {{ n }} etiquetas de mensagem"
+
+#: toaster-message-star[few]
+msgctxt "toaster-message-star[few]"
+msgid "{{ n }} message flags set"
+msgstr "Definidas {{ n }} etiquetas de mensagem"
+
+#: toaster-message-star[many]
+msgctxt "toaster-message-star[many]"
+msgid "{{ n }} message flags set"
+msgstr "Definidas {{ n }} etiquetas de mensagem"
+
+#: toaster-message-star[other]
+msgctxt "toaster-message-star[other]"
+msgid "{{ n }} message flags set"
+msgstr "Definidas {{ n }} etiquetas de mensagem"
+
+#: toaster-message-unstar
+msgctxt "toaster-message-unstar"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-unstar[one]
+msgid "1 message flag removed"
+msgstr "Removida 1 etiqueta de mensagem"
+
+#: toaster-message-unstar[two]
+msgctxt "toaster-message-unstar[two]"
+msgid "{{ n }} message flags removed"
+msgstr "Removidas {{ n }} etiquetas de mensagem"
+
+#: toaster-message-unstar[few]
+msgctxt "toaster-message-unstar[few]"
+msgid "{{ n }} message flags removed"
+msgstr "Removidas {{ n }} etiquetas de mensagem"
+
+#: toaster-message-unstar[many]
+msgctxt "toaster-message-unstar[many]"
+msgid "{{ n }} message flags removed"
+msgstr "Removidas {{ n }} etiquetas de mensagem"
+
+#: toaster-message-unstar[other]
+msgctxt "toaster-message-unstar[other]"
+msgid "{{ n }} message flags removed"
+msgstr "Removidas {{ n }} etiquetas de mensagem"
+
+#: toaster-message-read
+msgctxt "toaster-message-read"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-read[one]
+msgid "1 message marked as read"
+msgstr "1 mensagem marcada como lida"
+
+#: toaster-message-read[two]
+msgctxt "toaster-message-read[two]"
+msgid "{{ n }} messages marked as read"
+msgstr "{{ n }} mensagens marcadas como lidas"
+
+#: toaster-message-read[few]
+msgctxt "toaster-message-read[few]"
+msgid "{{ n }} messages marked as read"
+msgstr "{{ n }} mensagens marcadas como lidas"
+
+#: toaster-message-read[many]
+msgctxt "toaster-message-read[many]"
+msgid "{{ n }} messages marked as read"
+msgstr "{{ n }} mensagens marcadas como lidas"
+
+#: toaster-message-read[other]
+msgctxt "toaster-message-read[other]"
+msgid "{{ n }} messages marked as read"
+msgstr "{{ n }} mensagens marcadas como lidas"
+
+#: toaster-message-unread
+msgctxt "toaster-message-unread"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-unread[one]
+msgid "1 message marked as unread"
+msgstr "1 mensagem marcada como não-lida"
+
+#: toaster-message-unread[two]
+msgctxt "toaster-message-unread[two]"
+msgid "{{ n }} messages marked as unread"
+msgstr "{{ n }} mensagens marcadas como não-lidas"
+
+#: toaster-message-unread[few]
+msgctxt "toaster-message-unread[few]"
+msgid "{{ n }} messages marked as unread"
+msgstr "{{ n }} mensagens marcadas como não-lidas"
+
+#: toaster-message-unread[many]
+msgctxt "toaster-message-unread[many]"
+msgid "{{ n }} messages marked as unread"
+msgstr "{{ n }} mensagens marcadas como não-lidas"
+
+#: toaster-message-unread[other]
+msgctxt "toaster-message-unread[other]"
+msgid "{{ n }} messages marked as unread"
+msgstr "{{ n }} mensagens marcadas como não-lidas"
+
+#: toaster-message-move
+msgctxt "toaster-message-move"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-move[one]
+msgid "1 message moved"
+msgstr "1 mensagem movida"
+
+#: toaster-message-move[two]
+msgctxt "toaster-message-move[two]"
+msgid "{{ n }} messages moved"
+msgstr "{{ n }} mensagens movidas"
+
+#: toaster-message-move[few]
+msgctxt "toaster-message-move[few]"
+msgid "{{ n }} messages moved"
+msgstr "{{ n }} mensagens movidas"
+
+#: toaster-message-move[many]
+msgctxt "toaster-message-move[many]"
+msgid "{{ n }} messages moved"
+msgstr "{{ n }} mensagens movidas"
+
+#: toaster-message-move[other]
+msgctxt "toaster-message-move[other]"
+msgid "{{ n }} messages moved"
+msgstr "{{ n }} mensagens movidas"
+
+#: toaster-message-delete
+msgctxt "toaster-message-delete"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: toaster-message-delete[one]
+msgid "1 message deleted"
+msgstr "1 mensagem eliminada"
+
+#: toaster-message-delete[two]
+msgctxt "toaster-message-delete[two]"
+msgid "{{ n }} messages deleted"
+msgstr "{{ n }} mensagens eliminadas"
+
+#: toaster-message-delete[few]
+msgctxt "toaster-message-delete[few]"
+msgid "{{ n }} messages deleted"
+msgstr "{{ n }} mensagens eliminadas"
+
+#: toaster-message-delete[many]
+msgctxt "toaster-message-delete[many]"
+msgid "{{ n }} messages deleted"
+msgstr "{{ n }} mensagens eliminadas"
+
+#: toaster-message-delete[other]
+msgctxt "toaster-message-delete[other]"
+msgid "{{ n }} messages deleted"
+msgstr "{{ n }} mensagens eliminadas"
+
+#: toaster-retryable-syncfailed
+msgid "Unable to connect to server"
+msgstr "Não foi possível estabelecer uma ligação ao servidor"
+
+#. # LOCALIZATION NOTE(compose-invalid-addresses-title):
+#. # A title to be displayed on a warning screen, warning users that
+#. # some of the email addresses they typed were incorrect.
+#: compose-invalid-addresses-title
+msgid "Invalid Addresses"
+msgstr "Endereços Inválidos"
+
+#. # LOCALIZATION NOTE(compose-invalid-addresses-description):
+#. # A description to be displayed on a warning screen, warning users that
+#. # some of the email addresses they typed were incorrect, and that they
+#. # must correct the email addresses before sending.
+#: compose-invalid-addresses-description
+msgid ""
+"Your message contains one or more invalid email addresses. Please correct "
+"them before sending."
+msgstr ""
+"A sua mensagem contém um ou mais endereços de email inválidos. Por favor "
+"corrija-os antes de enviar."
+
+#. # LOCALIZATION NOTE(background-send-pending):
+#. # Brief message to be displayed in a popup, saying that the phone has
+#. # no network connection, and that the email has been saved to the outbox.
+#: background-send-pending
+msgid "Network unavailable. Email saved to outbox."
+msgstr "Rede não disponível. Email guardado na caixa de saída."
+
+#. # LOCALIZATION NOTE(background-send-sending):
+#. # Displayed in a toaster popup message, saying that the email
+#. # is currently being sent.
+#: background-send-sending
+msgid "Sending mail…"
+msgstr "A enviar correio…"
+
+#. # LOCALIZATION NOTE(background-send-success):
+#. # Displayed in a toaster popup message, saying that the email
+#. # sent successfully.
+#: background-send-success
+msgid "Email sent."
+msgstr "Email enviado."
+
+#. # LOCALIZATION NOTE(background-send-error):
+#. # Description to be displayed in a notification, saying that an error
+#. # occured while attempting to send an email, and that the email has
+#. # been saved to the outbox.
+#: background-send-error
+msgid "Error occurred. Email saved to outbox."
+msgstr "Ocorreu um erro. Email guardado na caixa de saída."
+
+#. # LOCALIZATION NOTE(background-send-error-recipients):
+#. # Description to be displayed in a notification, saying that the email
+#. # could not be sent because the server rejected one or more of the
+#. # email recipients, and that the email has been saved to the outbox.
+#: background-send-error-recipients
+msgid "Recipient error. Email saved to outbox."
+msgstr "Erro de destinatário. Email guardado na caixa de saída."
+
+#. # LOCALIZATION NOTE(background-send-error-title):
+#. # Title to be displayed in a notification, indicating that the
+#. # email failed to send for some reason.
+#: background-send-error-title
+msgid "Mail failed to send"
+msgstr "Falhou o envio da mensagem"
+
+#. # LOCALIZATION NOTE(send-failure-recipients):
+#. # Message to be displayed when editing a message that failed to send due
+#. # to invalid recipients. It should instruct the user to check the addresses
+#. # above for spelling.
+#: send-failure-recipients
+msgid ""
+"Check the spelling of the addresses above. Your mail server indicated one or "
+"more of the addresses above are incorrect."
+msgstr ""
+"Confirme a ortografia dos endereços em cima. O servidor de correio indicou "
+"que um ou mais dos endereços especificados acima estão incorretos."
+
+#. # LOCALIZATION NOTE(send-failure-unknown):
+#. # Message to be displayed when editing a message that failed to send for an
+#. # unknown reason.
+#: send-failure-unknown
+msgid "The message could not be sent."
+msgstr "Não foi possível enviar a mensagem."
+
+#: form-clear-input
+msgid "Remove text"
+msgstr "Remover texto"
+
+#: confirm-dialog-title
+msgid "Confirmation"
+msgstr "Confirmação"
+
+#. # senders-separation-sign separates the email accounts of senders.
+#. # Notice that we have a space after the comma.
+#: senders-separation-sign
+msgid ", "
+msgstr ", "
+
+#. # LOCALIZATION NOTE(new-messages): refers to the text shown inside the email app
+#. # on the message list when new, unread messages have been received while the
+#. # user is looking at the messages in the message list. The ui component that
+#. # uses this lives in apps/email/js/message_list_topbar.js. This display differ
+#. # from the messages that are sent as system notifications. Those are more
+#. # important to distinguish that emails and not SMS messages have been received.
+#. # This display uses the term "Messages" since other text labels in the message
+#. # list also use "Messages" instead of "Emails" since the context of Email is
+#. # assumed as it is in the email app.
+#: new-messages
+#, fuzzy
+msgctxt "new-messages"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: new-messages[one]
+msgid "1 New Message"
+msgstr ""
+
+#: new-messages[two]
+msgctxt "new-messages[two]"
+msgid "{{ n }} New Messages"
+msgstr ""
+
+#: new-messages[few]
+msgctxt "new-messages[few]"
+msgid "{{ n }} New Messages"
+msgstr ""
+
+#: new-messages[many]
+msgctxt "new-messages[many]"
+msgid "{{ n }} New Messages"
+msgstr ""
+
+#: new-messages[other]
+msgctxt "new-messages[other]"
+msgid "{{ n }} New Messages"
+msgstr ""
+
+#. # new-emails-notify-one-account is used when a system notification is generated during
+#. # a periodic background sync with the server. Since this goes to the system's
+#. # notification area, and user has only one account configured with the email App.
+#: new-emails-notify-one-account
+msgctxt "new-emails-notify-one-account"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: new-emails-notify-one-account[one]
+msgid "1 New Email"
+msgstr "1 Email Novo"
+
+#: new-emails-notify-one-account[two]
+msgctxt "new-emails-notify-one-account[two]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} Emails Novos"
+
+#: new-emails-notify-one-account[few]
+msgctxt "new-emails-notify-one-account[few]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} Emails Novos"
+
+#: new-emails-notify-one-account[many]
+msgctxt "new-emails-notify-one-account[many]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} Emails Novos"
+
+#: new-emails-notify-one-account[other]
+msgctxt "new-emails-notify-one-account[other]"
+msgid "{{ n }} New Emails"
+msgstr "{{ n }} Emails Novos"
+
+#. # new-emails-notify-multiple-accounts is used in the same situation
+#. # as new-emails-notify-one-account.
+#. # In this case, the user has more than one account configured
+#. # with the email app.
+#: new-emails-notify-multiple-accounts
+msgctxt "new-emails-notify-multiple-accounts"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: new-emails-notify-multiple-accounts[one]
+msgid "1 New Email ({{ accountName }})"
+msgstr "1 Email Novo ({{ accountName }})"
+
+#: new-emails-notify-multiple-accounts[two]
+msgctxt "new-emails-notify-multiple-accounts[two]"
+msgid "{{ n }} New Emails ({{ accountName }})"
+msgstr "{{ n }} Emails Novos ({{ accountName }})"
+
+#: new-emails-notify-multiple-accounts[few]
+msgctxt "new-emails-notify-multiple-accounts[few]"
+msgid "{{ n }} New Emails ({{ accountName }})"
+msgstr "{{ n }} Emails Novos ({{ accountName }})"
+
+#: new-emails-notify-multiple-accounts[many]
+msgctxt "new-emails-notify-multiple-accounts[many]"
+msgid "{{ n }} New Emails ({{ accountName }})"
+msgstr "{{ n }} Emails Novos ({{ accountName }})"
+
+#: new-emails-notify-multiple-accounts[other]
+msgctxt "new-emails-notify-multiple-accounts[other]"
+msgid "{{ n }} New Emails ({{ accountName }})"
+msgstr "{{ n }} Emails Novos ({{ accountName }})"
+
+#. # new-emails-notify-multiple-accounts-body is used in the same situation
+#. # as new-emails-notify-multiple-accounts.
+#. # This is the body part of the notification.
+#: new-emails-notify-multiple-accounts-body
+msgid "{{ from }} “{{ subject }}”"
+msgstr "{{ from }} “{{ subject }}”"
