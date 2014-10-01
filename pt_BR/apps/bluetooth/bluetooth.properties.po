@@ -1,9 +1,9 @@
-#. extracted from gaia-2.0-pt-BR/apps/bluetooth/bluetooth.properties
+#. extracted from ./apps/bluetooth/bluetooth.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-20 11:57-0200\n"
+"POT-Creation-Date: 2014-09-05 14:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,162 +14,319 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
-#: bluetooth
-msgid "Bluetooth"
+#. # Bluetooth :: Settings
+#. # Bluetooth :: Devices Panel (reuse the string is partially)
+#. # LOCALIZATION NOTE (bluetooth-header): if you leave the original
+#. # en-US value "{{bluetooth}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "bluetooth".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: bluetooth-header
+msgid "{{bluetooth}}"
 msgstr ""
 
-#: confirmation
-msgid "Confirmação"
+#: bluetooth-enable-msg
+msgid "Turn Bluetooth on to view devices in the area."
 msgstr ""
 
-#: bluetooth-status-description
-msgid "O Bluetooth está desativado"
-msgstr ""
-
-#: turn-bluetooth-on
-msgid "Deseja ativar o Bluetooth?"
-msgstr ""
-
-#: cancel
-msgid "Cancelar"
-msgstr ""
-
-#: turn-on
-msgid "Ativar"
-msgstr ""
-
-#: error-transfer-title
-msgid "Falha ao transferir o arquivo via Bluetooth"
-msgstr ""
-
-#: error-transfer-settings
-msgid ""
-"Falha ao transferir o arquivo via Bluetooth. Verfique se suas configurações "
-"Bluetooth estão corretas."
-msgstr ""
-
-#: ok
-msgid "OK"
-msgstr ""
-
-#. # Bluetooth :: Devices Panel
 #: bluetooth-paired-devices
-msgid "Dispositivos pareados"
-msgstr ""
+msgid "Paired devices"
+msgstr "Dispositivos pareados"
 
 #: bluetooth-devices-in-area
-msgid "Dispositivos na área"
+msgid "Devices in the area"
+msgstr "Dispositivos na área"
+
+#: bluetooth-visible-to-all
+msgid "Visible to all"
+msgstr ""
+
+#: bluetooth-name-maxlength-alert
+msgid "Your device name exceeds {{length}} characters. Please retry again."
+msgstr ""
+
+#: bluetooth-address
+msgid "Bluetooth Address"
+msgstr ""
+
+#: bluetooth-address-unavailable
+msgid "Not available"
+msgstr ""
+
+#: bt-status-nopaired
+msgid "No devices paired"
+msgstr ""
+
+#: bt-status-turnoff
+msgid "Turned off"
+msgstr ""
+
+#: bt-status-paired
+msgid "{[ plural(n) ]}"
+msgstr ""
+
+#: bt-status-paired[zero]
+msgid "{{name}}"
+msgstr ""
+
+#: bt-status-paired[one]
+msgctxt "bt-status-paired[one]"
+msgid "{{name}}, +{{n}} more"
+msgstr ""
+
+#: bt-status-paired[two]
+msgctxt "bt-status-paired[two]"
+msgid "{{name}}, +{{n}} more"
+msgstr ""
+
+#: bt-status-paired[few]
+msgctxt "bt-status-paired[few]"
+msgid "{{name}}, +{{n}} more"
+msgstr ""
+
+#: bt-status-paired[many]
+msgctxt "bt-status-paired[many]"
+msgid "{{name}}, +{{n}} more"
+msgstr ""
+
+#: bt-status-paired[other]
+msgctxt "bt-status-paired[other]"
+msgid "{{name}}, +{{n}} more"
 msgstr ""
 
 #: device-status-tap-connect
-msgid "Toque para conectar"
-msgstr ""
+msgid "Tap to connect"
+msgstr "Toque para conectar"
 
 #: device-status-pairing
-msgid "Pareando com o dispositivo…"
-msgstr ""
+msgid "Pairing with device…"
+msgstr "Pareando com o dispositivo…"
 
 #: device-status-waiting
-msgid "Esperando pelo dispositivo…"
-msgstr ""
+msgid "Waiting for other device…"
+msgstr "Esperando pelo dispositivo…"
 
 #: device-status-paired
-msgid "Pareado"
-msgstr ""
+msgid "Paired"
+msgstr "Pareado"
 
 #: device-status-connecting
-msgid "Conectando…"
-msgstr ""
+msgid "Connecting…"
+msgstr "Conectando…"
 
 #: device-status-connected
-msgid "Conectado"
+msgid "Connected"
+msgstr "Conectado"
+
+#: device-status-connected-phone
+msgid "Connected to phone audio"
+msgstr ""
+
+#: device-status-connected-media
+msgid "Connected to media audio"
+msgstr ""
+
+#: device-status-connected-phone-media
+msgid "Connected to phone/media audio"
+msgstr ""
+
+#: device-option-unpair
+msgid "Unpair"
+msgstr ""
+
+#: device-option-confirm
+msgid "Confirm"
+msgstr ""
+
+#: device-option-unpair-confirmation
+#, fuzzy
+msgctxt "device-option-unpair-confirmation"
+msgid "Confirmation"
+msgstr "Confirmação"
+
+#: device-option-unpair-device
+msgid "Unpair device?"
+msgstr ""
+
+#: device-option-connect
+#, fuzzy
+msgid "Connect"
+msgstr "Conectado"
+
+#: device-option-disconnect
+msgid "Disconnect"
 msgstr ""
 
 #: search-for-device
-msgid "Buscando dispositivos…"
-msgstr ""
+msgid "Searching for devices…"
+msgstr "Buscando dispositivos…"
 
 #: search-device
-msgid "Buscar dispositivos"
+msgid "Search for devices"
+msgstr "Buscar dispositivos"
+
+#: rename-device
+msgid "Rename my device"
 msgstr ""
 
 #: unnamed-device
-msgid "Dispositivo desconhecido"
+msgid "Unknown device"
+msgstr "Dispositivo desconhecido"
+
+#: change-phone-name
+msgid "Change phone name"
+msgstr ""
+
+#: change-phone-name-desc
+msgid "Change the name of your device as it appears in your computer"
+msgstr ""
+
+#: bluetooth-new-name
+msgid "New name"
 msgstr ""
 
 #: error-pair-title
-msgid "Não foi possível parear"
-msgstr ""
+msgid "Unable to pair devices"
+msgstr "Não foi possível parear"
 
 #: error-pair-pincode
-msgid "Não foi possível parear. Confira se o PIN está correto."
-msgstr ""
+msgid "Unable to pair with the device. Check that the PIN is correct."
+msgstr "Não foi possível parear. Confira se o PIN está correto."
 
 #: error-pair-toofast
-msgid "Não foi possível parear. Requisições demais foram feitas."
+msgid "Unable to pair with the device. Too many requests."
+msgstr "Não foi possível parear. Requisições demais foram feitas."
+
+#: error-connect-title
+msgid "Unable to connect devices"
 msgstr ""
+
+#: error-connect-msg
+msgid ""
+"Check that the device you’re trying to connect with is still in range and "
+"has Bluetooth turned on."
+msgstr ""
+
+#: unpair-title
+msgid "Unpair a connected device?"
+msgstr ""
+
+#: unpair-msg
+msgid ""
+"You are currently connected to this device. Unpairing will also disconnect "
+"from it."
+msgstr ""
+
+#. # Bluetooth :: Confirmation Dialog
+#: bluetooth
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: confirmation
+msgctxt "confirmation"
+msgid "Confirmation"
+msgstr "Confirmação"
+
+#: bluetooth-status-description
+msgid "Bluetooth is disabled"
+msgstr "O Bluetooth está desativado"
+
+#: turn-bluetooth-on
+msgid "Do you want to turn Bluetooth on?"
+msgstr "Deseja ativar o Bluetooth?"
+
+#: cancel
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: turn-on
+msgid "Turn On"
+msgstr "Ativar"
+
+#: error-transfer-title
+msgid "Bluetooth file transfer failed"
+msgstr "Falha ao transferir o arquivo via Bluetooth"
+
+#: error-transfer-settings
+msgid ""
+"Bluetooth file transfer failed. Check that the Bluetooth settings are "
+"correct."
+msgstr ""
+"Falha ao transferir o arquivo via Bluetooth. Verfique se suas configurações "
+"Bluetooth estão corretas."
+
+#: ok
+msgid "OK"
+msgstr "OK"
 
 #. # Bluetooth :: Pair View
 #: pair
-msgid "Parear"
-msgstr ""
+msgid "Pair"
+msgstr "Parear"
 
 #: active-pair
-msgid "Confirmar dispositivos a serem pareados"
-msgstr ""
+msgid "Confirm devices to pair"
+msgstr "Confirmar dispositivos a serem pareados"
 
 #: active-pair-confirmation
 msgid ""
+"To pair with {{device}}, make sure that both devices currently have the "
+"following PIN displayed:"
+msgstr ""
 "Para parear com {{device}}, confira se ambos os dispositivos mostram o "
 "seguinte código:"
-msgstr ""
 
 #: active-pair-pincode
-msgid "Para parear com {{device}}, digite o código no dispositivo."
-msgstr ""
+msgid "To pair with {{device}}, enter the PIN on the device."
+msgstr "Para parear com {{device}}, digite o código no dispositivo."
 
 #: active-pair-passkey
-msgid "Para parear com {{device}}, digite a senha no dispositivo."
-msgstr ""
+msgid "To pair with {{device}}, enter the passkey on the device."
+msgstr "Para parear com {{device}}, digite a senha no dispositivo."
 
 #: passive-pair
 msgctxt "passive-pair"
-msgid "Pedido de pareamento Bluetooth"
-msgstr ""
+msgid "Bluetooth pairing request"
+msgstr "Pedido de pareamento Bluetooth"
 
 #: passive-pair-confirmation
 msgid ""
+"{{device}} would like to pair with this phone. To accept, make sure that "
+"both devices currently have the following PIN displayed:"
+msgstr ""
 "{{device}} gostaria de parear com esse telefone. Para aceitar, confira se "
 "ambos os dispositivos mostram o seguinte código:"
-msgstr ""
 
 #: passive-pair-pincode
 msgid ""
+"{{device}} would like to pair with this phone. To accept, enter the PIN on "
+"the device."
+msgstr ""
 "{{device}} gostaria de parear com esse telefone. Para aceitar, digite o "
 "código no dispositivo."
-msgstr ""
 
 #: passive-pair-passkey
 msgid ""
+"{{device}} would like to pair with this phone. To accept, enter the passkey "
+"on the device."
+msgstr ""
 "{{device}} gostaria de parear com esse telefone. Para aceitar, digite a "
 "senha no dispositivo."
-msgstr ""
 
 #: pair-view-title
-msgid "Pedido Bluetooth de"
-msgstr ""
+msgid "Bluetooth Request From"
+msgstr "Pedido Bluetooth de"
 
 #. # Bluetooth :: Pair Manager
 #: bluetooth-pairing-request-now-title
 msgctxt "bluetooth-pairing-request-now-title"
-msgid "Pedido de pareamento Bluetooth"
-msgstr ""
+msgid "Bluetooth pairing request"
+msgstr "Pedido de pareamento Bluetooth"
 
 #: pairing-request-timeout-title
-msgctxt "pairing-request-timeout-title"
-msgid "Pedido de pareamento Bluetooth"
-msgstr ""
+msgid "Bluetooth Pairing Request"
+msgstr "Pedido de pareamento Bluetooth"
 
 #: pairing-request-timeout-description
-msgid "Pedido de pareamento Bluetooth expirado. Tente novamente."
-msgstr ""
+msgid "Bluetooth pairing request expired. Try to pair again."
+msgstr "Pedido de pareamento Bluetooth expirado. Tente novamente."
