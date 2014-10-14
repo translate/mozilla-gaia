@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-05 14:52+0000\n"
+"POT-Creation-Date: 2014-09-17 12:05+0000\n"
 "PO-Revision-Date: 2014-09-22 10:04+0000\n"
 "Last-Translator: inma610 <inma.barrios@mozilla-hispano.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1411380290.000000\n"
@@ -230,6 +230,16 @@ msgstr "Sin conexión"
 msgid "Manage networks"
 msgstr "Administrar redes"
 
+#: wifi-bad-credentials-title
+msgid "Failed connecting to Wi-Fi"
+msgstr ""
+
+#: wifi-bad-credentials-confirm
+msgid ""
+"Unable to connect to {{ssid}}, authentication failed due to bad credentials. "
+"Please re-enter the network password."
+msgstr ""
+
 #. # LOCALIZATION NOTE (manageNetworks-header): if you leave the original
 #. # en-US value "{{manageNetworks}}" in the following string, the localization
 #. # will be automatically picked from the existing string with ID "manageNetworks".
@@ -374,7 +384,8 @@ msgid "Notify me when an open network is available"
 msgstr "Notificarme cuando haya disponible una red abierta"
 
 #: macAddress
-msgid "MAC address"
+#, fuzzy
+msgid "MAC Address"
 msgstr "Dirección MAC"
 
 #. # os = OS version. For example: 2.0.
@@ -947,6 +958,10 @@ msgstr "Información"
 #: messaging-SMSC
 msgid "Service Center"
 msgstr "Centro de servicios"
+
+#: messaging-sim-settings
+msgid "SIM {{index}} Settings"
+msgstr ""
 
 #: unknown-SMSC
 msgid "Info not available"
@@ -1781,9 +1796,9 @@ msgstr "Tonos y notificaciones"
 msgid "Media"
 msgstr "Medios"
 
-#: savingringtone
-msgid "Saving ringtone…"
-msgstr "Guardando tono de llamada..."
+#: saving-tone
+msgid "Saving…"
+msgstr ""
 
 #: no-ringtone-app
 msgid "We were unable to find a ringtone app to manage ringtones!"
@@ -1935,6 +1950,24 @@ msgstr "Seleccionar continente"
 msgid "Select time zone"
 msgstr "Seleccionar zona horaria"
 
+#: time-format
+#, fuzzy
+msgctxt "time-format"
+msgid "Format"
+msgstr "Formatear"
+
+#: time-format-time
+msgid "Time Format"
+msgstr ""
+
+#: hour-12
+msgid "12-hour"
+msgstr ""
+
+#: hour-24
+msgid "24-hour"
+msgstr ""
+
 #. # Personalization :: Language & Region
 #: languageAndRegion
 msgid "Language & Region"
@@ -1981,11 +2014,13 @@ msgid "{{simManager}}"
 msgstr "{{simManager}}"
 
 #: simSettings
-msgid "SIM settings"
+#, fuzzy
+msgid "SIM Settings"
 msgstr "Ajustes SIM"
 
 #: sim-manager-outgoing-calls
-msgid "Outgoing calls"
+#, fuzzy
+msgid "Outgoing Calls"
 msgstr "Llamadas salientes"
 
 #: sim-manager-outgoing-call-desc
@@ -1993,7 +2028,8 @@ msgid "Calls will be sent from"
 msgstr "Las llamadas se realizarán desde"
 
 #: sim-manager-outgoing-messages
-msgid "Outgoing messages"
+#, fuzzy
+msgid "Outgoing Messages"
 msgstr "Mensajes salientes"
 
 #: sim-manager-outgoing-messages-desc
@@ -2396,7 +2432,8 @@ msgid "{{screenLock}}"
 msgstr "{{screenLock}}"
 
 #: simSecurity
-msgid "SIM security"
+#, fuzzy
+msgid "SIM Security"
 msgstr "Seguridad de la SIM"
 
 #. # LOCALIZATION NOTE (simSecurity-header): if you leave the original
@@ -3171,11 +3208,12 @@ msgstr ""
 "Seleccione dónde se guardan de manera predeterminada fotos, descargas, "
 "vídeos y música."
 
-#: change-default-location-confirmation
+#: change-default-media-location-confirmation
+#, fuzzy
 msgid ""
-"Changing the default media storage volume will affect where photos, videos, "
-"downloads and other media will be saved to by default. Existing data will "
-"remain in its current location. Do you want to proceed?"
+"Changing the default media storage location will affect where all media will "
+"be saved by default. Existing data will remain in its current location. Do "
+"you want to proceed?"
 msgstr ""
 "El cambio en el volumen predeterminado de datos multimedia afectará a la "
 "ubicación donde se guardan por defecto fotos, descargas, vídeos y otros "
@@ -3204,24 +3242,15 @@ msgid "Format SD card 2"
 msgstr "Formatear tarjeta SD 2"
 
 #: formatting
-msgid "Formatting..."
+#, fuzzy
+msgid "Formatting…"
 msgstr "Formateando..."
 
-#: unmount-sdcard-message
+#: unmount-sdcard-confirmation
 msgid ""
-"You will not be able to access the content stored on SD card in certain apps "
-"after unmount it. Do you want to proceed?"
+"You will not be able to access content on the SD card after you unmount it. "
+"Do you want to proceed?"
 msgstr ""
-"Después de desmontarla, no podrá acceder al contenido guardado en la tarjeta "
-"SD en determinadas apps. ¿Desea continuar?"
-
-#: sdcard-detected
-msgid "SD Card detected"
-msgstr "Tarjeta SD detectada"
-
-#: total-size
-msgid "Total size : {{size}}"
-msgstr "Tamaño total: {{size}}"
 
 #: format-sdcard-title
 msgctxt "format-sdcard-title"
@@ -3236,6 +3265,8 @@ msgstr ""
 "fotografías."
 
 #: format-sdcard-btnformat
+#, fuzzy
+msgctxt "format-sdcard-btnformat"
 msgid "Format"
 msgstr "Formatear"
 
@@ -3278,7 +3309,8 @@ msgid "ICCID"
 msgstr "ICCID"
 
 #: deviceInfo-MSISDN
-msgid "Phone number"
+#, fuzzy
+msgid "Phone Number"
 msgstr "Núm. de teléfono"
 
 #: deviceInfo-ICCID-unavailable-sim
@@ -3307,7 +3339,8 @@ msgid "SIM {{index}}: Unknown"
 msgstr "SIM {{index}}: desconocida"
 
 #: gitInfo
-msgid "Git commit info"
+#, fuzzy
+msgid "Git Commit Info"
 msgstr "Información del commit de Git"
 
 #: developer
@@ -3323,24 +3356,32 @@ msgstr "Desarrollador"
 msgid "{{developer}}"
 msgstr "{{developer}}"
 
-#: hud
+#: hud-settings-button
 msgid "Developer HUD"
 msgstr "HUD desarrolladores"
 
-#. # LOCALIZATION NOTE (hud-header, hud-button): if you leave the original
-#. # en-US value "{{hud}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "hud".
-#. # If you need to adapt your localizations to the available space in
-#. # headers or buttons, you can use different strings here.
-#: hud-header
-msgctxt "hud-header"
-msgid "{{hud}}"
-msgstr "{{hud}}"
+#. # LOCALIZATION NOTE (hud-settings-header): if you leave the original en-US value
+#. # "{{hud-settings-button}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-settings-button". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-settings-header
+msgid "{{hud-settings-button}}"
+msgstr ""
 
-#: hud-button
-msgctxt "hud-button"
-msgid "{{hud}}"
-msgstr "{{hud}}"
+#: hud-devtools
+#, fuzzy
+msgid "Developer tools"
+msgstr "Herramientas para desarrolladores"
+
+#. # LOCALIZATION NOTE (hud-devtools-header): if you leave the original en-US
+#. # value "{{hud-devtools}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-devtools". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-devtools-header
+msgid "{{hud-devtools}}"
+msgstr ""
 
 #: hud-logging
 msgid "Log changes in ADB"
@@ -3432,7 +3473,8 @@ msgid "Software"
 msgstr "Software"
 
 #: devSettings
-msgid "Developer settings"
+#, fuzzy
+msgid "Developer Settings"
 msgstr "Ajustes para desarrolladores"
 
 #: debug
@@ -3507,6 +3549,10 @@ msgstr "Depurar vía USB"
 msgid "DevTools via Wi-Fi"
 msgstr "DevTools a través de wifi"
 
+#: dev-tools-qps
+msgid "Pseudo-localization"
+msgstr ""
+
 #: debugger-disabled
 msgctxt "debugger-disabled"
 msgid "Disabled"
@@ -3548,24 +3594,32 @@ msgstr "Salida de geolocalización en ADB"
 msgid "Use Marketplace reviewer certs"
 msgstr "Usar cert. revisor de Marketplace"
 
+#: shake-to-log
+msgid "Shake to save system log"
+msgstr ""
+
 #: model-name
 msgid "Model"
 msgstr "Modelo"
 
 #: os-version
-msgid "OS version"
+#, fuzzy
+msgid "OS Version"
 msgstr "Versión de SO"
 
 #: firmware_revision
-msgid "Firmware revision"
+#, fuzzy
+msgid "Firmware Revision"
 msgstr "Revisión de firmware"
 
 #: hardware_revision
-msgid "Hardware revision"
+#, fuzzy
+msgid "Hardware Revision"
 msgstr "Revisión de hardware"
 
 #: platform_version
-msgid "Platform version"
+#, fuzzy
+msgid "Platform Version"
 msgstr "Versión de plataforma"
 
 #: build-id
@@ -3573,7 +3627,8 @@ msgid "Build Identifier"
 msgstr "Identificador de compilación"
 
 #: update-channel
-msgid "Update channel"
+#, fuzzy
+msgid "Update Channel"
 msgstr "Canal de actualizaciones"
 
 #: update-url
@@ -3598,7 +3653,8 @@ msgid "{{more-info}}"
 msgstr "{{more-info}}"
 
 #: softwareUpdates
-msgid "Software updates"
+#, fuzzy
+msgid "Software Updates"
 msgstr "Actualizaciones de software"
 
 #: check-update-daily
@@ -3614,11 +3670,13 @@ msgid "Monthly"
 msgstr "Mensualmente"
 
 #: check-for-updates
-msgid "Check for updates"
+#, fuzzy
+msgid "Check for Updates"
 msgstr "Buscar actualizaciones"
 
 #: check-update-now
-msgid "Check now"
+#, fuzzy
+msgid "Check Now"
 msgstr "Buscar ahora"
 
 #: update-status
@@ -3739,6 +3797,10 @@ msgstr ""
 msgid "Legal Information"
 msgstr "Información legal"
 
+#: about-credit-info
+msgid "Credits"
+msgstr ""
+
 #. # LOCALIZATION NOTE (about-legal-info-header): if you leave the original
 #. # en-US value "{{about-legal-info}}" in the following string, the localization
 #. # will be automatically picked from the existing string with ID "about-legal-info".
@@ -3846,10 +3908,6 @@ msgstr "Lanzar FTU"
 #: no-ftu
 msgid "No first time use app found"
 msgstr "No se encuentra la app FTU"
-
-#: rocketbar-enabled
-msgid "Rocketbar enabled"
-msgstr "Rocketbar activada"
 
 #: software-home-button
 msgid "Software home button"
@@ -3965,9 +4023,29 @@ msgstr "{{accessibility}}"
 msgid "Screen reader"
 msgstr "Lector de pantalla"
 
+#: screenReader-header
+msgctxt "screenReader-header"
+msgid "{{screenReader}}"
+msgstr ""
+
+#: screenReader-toggle
+msgctxt "screenReader-toggle"
+msgid "{{screenReader}}"
+msgstr ""
+
 #: colorFilter
 msgid "Color filter"
 msgstr "Filtro cromático"
+
+#: colorFilter-header
+msgctxt "colorFilter-header"
+msgid "{{colorFilter}}"
+msgstr ""
+
+#: colorFilter-toggle
+msgctxt "colorFilter-toggle"
+msgid "{{colorFilter}}"
+msgstr ""
 
 #. # Device :: Accessibility :: Screen reader
 #: screenReader-enable-msg
@@ -4403,3 +4481,30 @@ msgid ""
 msgstr ""
 "Al activar el punto de acceso wifi, se desactivará el tethering USB. ¿Desea "
 "activar el punto de acceso wifi?"
+
+#~ msgid "Saving ringtone…"
+#~ msgstr "Guardando tono de llamada..."
+
+#~ msgid ""
+#~ "You will not be able to access the content stored on SD card in certain "
+#~ "apps after unmount it. Do you want to proceed?"
+#~ msgstr ""
+#~ "Después de desmontarla, no podrá acceder al contenido guardado en la "
+#~ "tarjeta SD en determinadas apps. ¿Desea continuar?"
+
+#~ msgid "SD Card detected"
+#~ msgstr "Tarjeta SD detectada"
+
+#~ msgid "Total size : {{size}}"
+#~ msgstr "Tamaño total: {{size}}"
+
+#~ msgctxt "hud-header"
+#~ msgid "{{hud}}"
+#~ msgstr "{{hud}}"
+
+#~ msgctxt "hud-button"
+#~ msgid "{{hud}}"
+#~ msgstr "{{hud}}"
+
+#~ msgid "Rocketbar enabled"
+#~ msgstr "Rocketbar activada"
