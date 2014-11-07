@@ -1,9 +1,9 @@
-#. extracted from build/locales/en-US/apps/sms/sms.properties, build/locales/br/apps/sms/sms.properties
+#. extracted from ./apps/sms/sms.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-07 15:09+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -197,6 +197,8 @@ msgid "To:"
 msgstr "Da :"
 
 #: send
+#, fuzzy
+msgctxt "send"
 msgid "Send"
 msgstr "Kas"
 
@@ -249,6 +251,12 @@ msgstr "Kemennadenn nevez"
 #: sendMessage
 msgid "Send message"
 msgstr "Kas ar gemennadenn"
+
+#. # LOCALIZATION NOTE(sendMMSToEmail): shown when clicking on an e-mail inside
+#. # the body of a message to provide an option to send a multimedia message.
+#: sendMMSToEmail
+msgid "Send multimedia message"
+msgstr ""
 
 #: no-recipient
 msgid "(No recipient)"
@@ -358,41 +366,37 @@ msgstr ""
 msgid "Your Multimedia Message (MMS), was sent on {{datetime}}"
 msgstr "Kaset eo bet ho kemennadenn liesvedia (MMS) da {{datetime}}"
 
-#: message-status
-msgid "Status:"
-msgstr "Stad :"
+#: message-subject
+#, fuzzy
+msgid "Subject:"
+msgstr "Danvez"
 
-#: message-status-sent
-msgid "sent"
-msgstr "Kaset"
+#: report-status-error
+msgid "Message could not be sent"
+msgstr ""
 
-#: message-status-received
-msgid "received"
-msgstr "Degemeret"
-
-#: message-status-sending
-msgid "sending"
-msgstr "o kas"
-
-#: message-status-error
-msgid "error"
-msgstr "fazi"
-
-#: message-status-not-downloaded
+#: report-status-not-downloaded
 msgid "not downloaded"
 msgstr "ket pellgarget"
 
-#: message-delivered
+#: report-status-delivered
 msgid "Delivered:"
 msgstr "Treuzkaset :"
 
-#: message-read-title
+#: report-status-read
 msgid "Read:"
 msgstr "Lennet :"
 
-#: message-requested
-msgid "Requested"
-msgstr "Azgoulennet"
+#: report-status-pending
+msgid "Report requested"
+msgstr ""
+
+#. # LOCALIZATION NOTE(report-status-rejected): used to describe the outgoing mms
+#. # could not be downloaded by receiver(might be an invalid number or the number 
+#. # is not allowed to download mms)
+#: report-status-rejected
+msgid "Message rejected"
+msgstr ""
 
 #: message-size-was
 msgid "Message size:"
@@ -406,17 +410,22 @@ msgstr "D'an/ar %e a viz %B %Y, {{shortTimeFormat12}}"
 msgid "%e %B %Y, {{shortTimeFormat24}}"
 msgstr "D'an/ar %e a viz %B %Y, {{shortTimeFormat24}}"
 
-#: report-recipients
-msgid "Recipients:"
-msgstr "Degemererien :"
+#: report-to-title
+msgid "To"
+msgstr ""
 
-#: report-from
-msgid "From:"
+#: report-from-title
+#, fuzzy
+msgid "From"
 msgstr "A-berzh :"
 
 #: message-sent
 msgid "Sent:"
 msgstr "Kaset d'an/ar :"
+
+#: message-sending
+msgid "{{message-delivery-status-sending}}"
+msgstr ""
 
 #: message-received
 msgid "Received:"
@@ -426,14 +435,18 @@ msgstr "Degemeret d'an/ar :"
 msgid "Via:"
 msgstr "Dre :"
 
+#: message-resend
+msgid "Resend"
+msgstr ""
+
 #. # Search functionality
 #: search
 msgid "Search"
 msgstr "Klask"
 
-#: unknown-contact
-msgid "Unknown"
-msgstr "Dianavezet"
+#: unknown-contact-title
+msgid "Unknown Contact"
+msgstr ""
 
 #. # LOCALIZATION NOTE(phone-type-separator): used to separate phone type from
 #. # the number itself. It should be consistent with the characters used in
@@ -482,6 +495,11 @@ msgstr "N'hall ket ar gemennadenn bezañ kaset. Klask en-dro ?"
 #: resend-message
 msgid "Resend this message"
 msgstr "Adkas ar gemennadenn-mañ"
+
+#: deleteMessage-confirmation
+#, fuzzy
+msgid "Delete selected message?"
+msgstr "Dilemel ar c'hemennadennoù diuzet ?"
 
 #: deleteMessages-confirmation
 msgid "Delete selected messages?"
@@ -563,6 +581,15 @@ msgstr "{{sendFlightModeBtnOk}}"
 #: fdnBlocked2Title
 msgid "FDN active"
 msgstr "Gweredekaet eo ar niverenniñ digemm"
+
+#. # LOCALIZATION NOTE (sms-counter-notice-label): if typed message exceeds the
+#. # character limit, more segments (messages) will be sent. {{number}} is the
+#. # number of current segment. 
+#. # Example: Limit 160 characters, toaster will show up when 161 characters 
+#. # typed, and string in toaster will be 'Editing SMS 2' (editing 2nd segment).
+#: sms-counter-notice-label
+msgid "Editing SMS {{number}}"
+msgstr ""
 
 #. #LOCALIZATION NOTE (fdnBlocked2Body): the English translation does not need the
 #. # actual number of phone numbers. If your translation needs it, you can still add it
@@ -893,12 +920,14 @@ msgstr "Kemennadenn MMS"
 msgid "Message is not downloaded yet."
 msgstr "N'eo ket bet pellgarget ar gemennadenn c'hoazh."
 
-#. # LOCALIZATION NOTE (not-downloaded-attachment, expired-attachment):
+#. # LOCALIZATION NOTE (tobedownloaded-attachment, expired-attachment):
 #. # {{date}} is replaced at run-time with a date. The format used to display
 #. # this date is specified in the string with ID 'expiry-date-format'.
-#: not-downloaded-attachment
-msgid "Attachment can be downloaded until {{date}}."
-msgstr "Ar c'henstagadur a c'hell bezañ pellgarget betek {{date}}."
+#: tobedownloaded-attachment
+msgid ""
+"You received a multimedia message. You can use the link below to download "
+"its content until {{date}}."
+msgstr ""
 
 #: expired-attachment
 msgid "Sorry, the message expired on {{date}} and cannot be downloaded."
@@ -989,6 +1018,13 @@ msgstr "SIM {{id}}, {{detailString}}"
 msgid "({{sim}}) {{sender}}"
 msgstr "({{sim}}) {{sender}}"
 
+#. #LOCALIZATION NOTE (send-button): localize only the ariaLabel
+#: send-button.ariaLabel
+#, fuzzy
+msgctxt "send-button.ariaLabel"
+msgid "Send"
+msgstr "Kas"
+
 #. # LOCALIZATION NOTE (send-button-sim-indication): don't localize the
 #. # sim-indication itself as we use it to show the SIM number only. Yet obviously,
 #. # the "ariaLabel" needs to be localized.
@@ -1047,3 +1083,30 @@ msgstr "Lennet"
 #: message-delivery-status-error.ariaLabel
 msgid "Error"
 msgstr "Fazi"
+
+#~ msgid "Status:"
+#~ msgstr "Stad :"
+
+#~ msgid "sent"
+#~ msgstr "Kaset"
+
+#~ msgid "received"
+#~ msgstr "Degemeret"
+
+#~ msgid "sending"
+#~ msgstr "o kas"
+
+#~ msgid "error"
+#~ msgstr "fazi"
+
+#~ msgid "Requested"
+#~ msgstr "Azgoulennet"
+
+#~ msgid "Recipients:"
+#~ msgstr "Degemererien :"
+
+#~ msgid "Unknown"
+#~ msgstr "Dianavezet"
+
+#~ msgid "Attachment can be downloaded until {{date}}."
+#~ msgstr "Ar c'henstagadur a c'hell bezañ pellgarget betek {{date}}."

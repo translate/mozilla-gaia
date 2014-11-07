@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17 11:13+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: 2014-09-20 12:12+0000\n"
 "Last-Translator: Arun Kumar <thangam.arunx@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1411215166.000000\n"
@@ -525,6 +525,10 @@ msgstr "சிம் கடவு எண் பூட்டப்பட்டத
 msgid "No operator"
 msgstr "இயக்குபவர் இல்லை"
 
+#: searchingOperator
+msgid "Searching"
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Language
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -634,6 +638,8 @@ msgid "secured by {{capabilities}}"
 msgstr "{{capabilities}} ஆல் பாதுகாக்கப்படும்"
 
 #: security
+#, fuzzy
+msgctxt "security"
 msgid "Security"
 msgstr "பாதுகாப்பு"
 
@@ -656,6 +662,12 @@ msgstr "WPA-EAP"
 #: securityOpen
 msgid "Open"
 msgstr "திற"
+
+#: securityOpen.ariaLabel
+#, fuzzy
+msgctxt "securityOpen.ariaLabel"
+msgid "Security"
+msgstr "பாதுகாப்பு"
 
 #: identity
 msgctxt "identity"
@@ -705,11 +717,11 @@ msgstr "SSID பிணைய பெயர்"
 #. # screen.
 #. # LOCALIZATION NOTE(wifiLevel): {{level}} will be replaced at run-time by a
 #. # number ranging from 1 to 4.
-#: wifiLevel
+#: wifiLevel.ariaLabel
 msgid "{{level}} of 4 bars"
 msgstr "4 கின் {{level}} அளவு"
 
-#: networksList
+#: networksList.ariaLabel
 msgid "Networks found"
 msgstr "இனைப்புகள் கிடைக்கிறது"
 
@@ -900,25 +912,28 @@ msgstr ""
 "எங்களுடைய தயாரிப்புகளை மேம்படுத்தவும், விரைவாக மற்றும் பதிலளிக்க கூடியதாக உருவாக்க "
 "பயன்படுகிறது."
 
-#. # LOCALIZATION NOTE(learn-more-telemetry.innerHTML, learn-more-information.innerHTML:
-#. # {{link}} will be replaced at run-time by an active link, the URL will be
-#. # used as text for the link.
-#: learn-more-telemetry.innerHTML
-msgid "Learn more at {{link}}"
-msgstr "{{link}} என்பதை பற்றி மேலும் அறியவும்"
+#: learn-more-telemetry2.innerHTML
+msgid ""
+"Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
+"a>"
+msgstr ""
 
-#: learn-more-information.innerHTML
-msgid "Learn how Mozilla handles your information at {{link}}"
-msgstr "உங்ளுடைய தகவலை மொசில்லா எப்படி கையாளுகிறது என்பதை {{link}} என்பதில் கற்கவும்"
+#: learn-more-information2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # OS privacy
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: htmlWelcome.innerHTML
+#: htmlWelcome2.innerHTML
+#, fuzzy
 msgid ""
-"Welcome to {{link}}, the free and open source operating system from Mozilla. "
-"Our mission is to promote openness, innovation and opportunity by keeping "
-"the power of the Web in your hands."
+"Welcome to <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>, "
+"the free and open source operating system from Mozilla. Our mission is to "
+"promote openness, innovation and opportunity by keeping the power of the Web "
+"in your hands."
 msgstr ""
 "{{link} க்கு வரவேற்கிறோம், இது மொசில்லாவின் கட்டற்ற திறமூல இயங்குதளம் ஆகும். உங்கள் "
 "கைகளில் இணையத்தின் அதிகாரத்தை திறந்தமுறையில் கொடுப்பதும், கண்டுபிடிப்பை ஊக்குவித்து "
@@ -929,27 +944,23 @@ msgctxt "htmlWelcome-link"
 msgid "{{brandShortName}}"
 msgstr "{{brandShortName}}"
 
-#: helpImprove.innerHTML
+#: helpImprove2.innerHTML
 msgid ""
 "You can help us improve our products and services by automatically sending "
-"analytics data. See our {{link}} to learn how we handle data from your "
+"analytics data. See our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> to learn how we handle data from your "
 "device."
 msgstr ""
-"பகுப்பாய்வு தரவை அனுப்பி எங்களின் தயாரிப்புகளையும் சேவைகளையும் மேம்படுத்த உதவுங்கள். "
-"எங்களது தொடுப்பைப் {{link}} பார்த்து உங்கள் சாதனங்களிலிருந்து தரவை எப்படி நாங்கள் "
-"கையாளுகிறோம் என்பதை அறியுங்கள்."
 
 #: helpImprove-link
 msgid "Privacy Notice"
 msgstr "தனியுரிமை கொள்கை"
 
-#. # LOCALIZATION NOTE(learn-more-privacy.innerHTML): {{link}} will be replaced at
-#. # run-time by an active link, string "learn-more-privacy-link" will be
-#. # used as text for the link.
-#: learn-more-privacy.innerHTML
-msgid "Learn how Mozilla handles your information in our {{link}}."
+#: learn-more-privacy2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information in our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>."
 msgstr ""
-"உங்ளுடைய தகவலை மொசில்லா எப்படி கையாளுகிறது என்பதை எங்களுடைய {{link}}யில் கற்கவும்."
 
 #: learn-more-privacy-link
 msgid "privacy policy"
@@ -1239,6 +1250,26 @@ msgstr "{{total}} இல் {{step}} வது அடி"
 #: progressbar.ariaLabel
 msgid "First Time Experience"
 msgstr "முதல் முறை அனுபவம்"
+
+#~ msgid "Learn more at {{link}}"
+#~ msgstr "{{link}} என்பதை பற்றி மேலும் அறியவும்"
+
+#~ msgid "Learn how Mozilla handles your information at {{link}}"
+#~ msgstr ""
+#~ "உங்ளுடைய தகவலை மொசில்லா எப்படி கையாளுகிறது என்பதை {{link}} என்பதில் கற்கவும்"
+
+#~ msgid ""
+#~ "You can help us improve our products and services by automatically "
+#~ "sending analytics data. See our {{link}} to learn how we handle data from "
+#~ "your device."
+#~ msgstr ""
+#~ "பகுப்பாய்வு தரவை அனுப்பி எங்களின் தயாரிப்புகளையும் சேவைகளையும் மேம்படுத்த உதவுங்கள். "
+#~ "எங்களது தொடுப்பைப் {{link}} பார்த்து உங்கள் சாதனங்களிலிருந்து தரவை எப்படி நாங்கள் "
+#~ "கையாளுகிறோம் என்பதை அறியுங்கள்."
+
+#~ msgid "Learn how Mozilla handles your information in our {{link}}."
+#~ msgstr ""
+#~ "உங்ளுடைய தகவலை மொசில்லா எப்படி கையாளுகிறது என்பதை எங்களுடைய {{link}}யில் கற்கவும்."
 
 #~ msgid ""
 #~ "A Firefox Account lets you use features like Find My Device and apps like "

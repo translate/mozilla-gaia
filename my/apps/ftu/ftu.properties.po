@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17 11:13+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: 2014-10-16 16:47+0000\n"
 "Last-Translator: Tin Aung <tinaunglinn.eng91@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1413478041.000000\n"
@@ -497,6 +497,10 @@ msgstr "SIM PIN ပိတ်ထားသှ်"
 msgid "No operator"
 msgstr "အော်ပရေတာ မရှိပါ"
 
+#: searchingOperator
+msgid "Searching"
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Language
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -601,6 +605,8 @@ msgid "secured by {{capabilities}}"
 msgstr "လုံခြုံစွာ {{capabilities}}"
 
 #: security
+#, fuzzy
+msgctxt "security"
 msgid "Security"
 msgstr "လုံခြုံရေး"
 
@@ -623,6 +629,12 @@ msgstr "WPA-EAP"
 #: securityOpen
 msgid "Open"
 msgstr "ဖွင့်"
+
+#: securityOpen.ariaLabel
+#, fuzzy
+msgctxt "securityOpen.ariaLabel"
+msgid "Security"
+msgstr "လုံခြုံရေး"
 
 #: identity
 msgctxt "identity"
@@ -672,11 +684,11 @@ msgstr "SSID ကွန်ယက် အမည်"
 #. # screen.
 #. # LOCALIZATION NOTE(wifiLevel): {{level}} will be replaced at run-time by a
 #. # number ranging from 1 to 4.
-#: wifiLevel
+#: wifiLevel.ariaLabel
 msgid "{{level}} of 4 bars"
 msgstr "{{level}} ၏ 4 ဘား"
 
-#: networksList
+#: networksList.ariaLabel
 msgid "Networks found"
 msgstr "ကွန်ယက်များ တွေ့ရှိ"
 
@@ -859,25 +871,28 @@ msgstr ""
 "ပြုပြင်ထားပုံများကို ပေးပို့မည်။ ၎င်း အချက်အလက်များအား မိုဇီလာမှ ပိုမိုကောင်းမွန်သော ထုတ်ကုန်တည်ဆောက်ရန်သာ "
 "အသုံးပြုသည်။"
 
-#. # LOCALIZATION NOTE(learn-more-telemetry.innerHTML, learn-more-information.innerHTML:
-#. # {{link}} will be replaced at run-time by an active link, the URL will be
-#. # used as text for the link.
-#: learn-more-telemetry.innerHTML
-msgid "Learn more at {{link}}"
-msgstr "ဆက်လက် လေ့လာ {{link}}"
+#: learn-more-telemetry2.innerHTML
+msgid ""
+"Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
+"a>"
+msgstr ""
 
-#: learn-more-information.innerHTML
-msgid "Learn how Mozilla handles your information at {{link}}"
-msgstr "သင့်အချက်အလက်တွေကို မိုဇီလာမှ ကိုင်တွယ်ပုံအား ဆက်လက်လေ့လာမည် {{link}}"
+#: learn-more-information2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # OS privacy
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: htmlWelcome.innerHTML
+#: htmlWelcome2.innerHTML
+#, fuzzy
 msgid ""
-"Welcome to {{link}}, the free and open source operating system from Mozilla. "
-"Our mission is to promote openness, innovation and opportunity by keeping "
-"the power of the Web in your hands."
+"Welcome to <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>, "
+"the free and open source operating system from Mozilla. Our mission is to "
+"promote openness, innovation and opportunity by keeping the power of the Web "
+"in your hands."
 msgstr ""
 "{{link}} မှကြိုဆိုပါတယ် ၊ မိုဇီလာမှ အခမဲ့ ဖြန့်ဖြူးပြီး ပွင့်လင်းမြင်သာသော ဆော့ဝဲ စနစ်တစ်ခုဖြစ်ပါတယ်။ "
 "ကျွနု်ပ် တို့၏ စစ်ဆင်ရေးသည် ပွင့်လင်းမြင်သာမှူအား အားပေးမည်၊ Web ၏ တီထွင် ကြံစမှူ နှင့် အခွင့်အလမ်းများအား "
@@ -888,26 +903,23 @@ msgctxt "htmlWelcome-link"
 msgid "{{brandShortName}}"
 msgstr "{{brandShortName}}"
 
-#: helpImprove.innerHTML
+#: helpImprove2.innerHTML
 msgid ""
 "You can help us improve our products and services by automatically sending "
-"analytics data. See our {{link}} to learn how we handle data from your "
+"analytics data. See our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> to learn how we handle data from your "
 "device."
 msgstr ""
-"လေ့လာထားသော အချက်အလက်များကို အလိုအလျောက် ပေးပို့ခြင်းအားဖြင့် ကျွန်ုပ်တို့၏ ထုတ်ကုန်များနှင့် "
-"ဝန်ဆောင်မှုများကို ပိုမိုကောင်းမွန်ဖို့ သင်သည် ကျွန်ုပ်တို့ကို ကူညီနိုင်ပါသည်။ သင်၏ စက်မှ အချက်အလက်များကို ကျွန်ုပ်တို့ "
-"မည်သို့ထိန်းထားသည်ကို လေ့လာရင် ကျွန်ုပ်တို့၏ {{link}} တွင် ကြည့်ပါ"
 
 #: helpImprove-link
 msgid "Privacy Notice"
 msgstr "မူပိုင်ခွင့် သတိပေးချက်"
 
-#. # LOCALIZATION NOTE(learn-more-privacy.innerHTML): {{link}} will be replaced at
-#. # run-time by an active link, string "learn-more-privacy-link" will be
-#. # used as text for the link.
-#: learn-more-privacy.innerHTML
-msgid "Learn how Mozilla handles your information in our {{link}}."
-msgstr "သင်၏ အချက်အလက်များကို မိုဇီလာမည်သို့ ကိုင်တွယ်သည်ကို ကြည့်ပါ {{link}}"
+#: learn-more-privacy2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information in our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>."
+msgstr ""
 
 #: learn-more-privacy-link
 msgid "privacy policy"
@@ -1196,6 +1208,24 @@ msgstr "ပေါင်း {{total} မှ အဆင့် {{step}}"
 #: progressbar.ariaLabel
 msgid "First Time Experience"
 msgstr "ပထမဆုံး အတွေ့အကြုံ"
+
+#~ msgid "Learn more at {{link}}"
+#~ msgstr "ဆက်လက် လေ့လာ {{link}}"
+
+#~ msgid "Learn how Mozilla handles your information at {{link}}"
+#~ msgstr "သင့်အချက်အလက်တွေကို မိုဇီလာမှ ကိုင်တွယ်ပုံအား ဆက်လက်လေ့လာမည် {{link}}"
+
+#~ msgid ""
+#~ "You can help us improve our products and services by automatically "
+#~ "sending analytics data. See our {{link}} to learn how we handle data from "
+#~ "your device."
+#~ msgstr ""
+#~ "လေ့လာထားသော အချက်အလက်များကို အလိုအလျောက် ပေးပို့ခြင်းအားဖြင့် ကျွန်ုပ်တို့၏ ထုတ်ကုန်များနှင့် "
+#~ "ဝန်ဆောင်မှုများကို ပိုမိုကောင်းမွန်ဖို့ သင်သည် ကျွန်ုပ်တို့ကို ကူညီနိုင်ပါသည်။ သင်၏ စက်မှ အချက်အလက်များကို ကျွန်ုပ်တို့ "
+#~ "မည်သို့ထိန်းထားသည်ကို လေ့လာရင် ကျွန်ုပ်တို့၏ {{link}} တွင် ကြည့်ပါ"
+
+#~ msgid "Learn how Mozilla handles your information in our {{link}}."
+#~ msgstr "သင်၏ အချက်အလက်များကို မိုဇီလာမည်သို့ ကိုင်တွယ်သည်ကို ကြည့်ပါ {{link}}"
 
 #~ msgid ""
 #~ "A Firefox Account lets you use features like Find My Device and apps like "

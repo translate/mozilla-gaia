@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17 11:13+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: 2014-09-17 14:48+0000\n"
 "Last-Translator: Kerim <kerim@mozilla.ba>\n"
 "Language-Team: none\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1410965322.000000\n"
@@ -201,6 +201,8 @@ msgid "To:"
 msgstr "Za:"
 
 #: send
+#, fuzzy
+msgctxt "send"
 msgid "Send"
 msgstr "Pošalji"
 
@@ -253,6 +255,12 @@ msgstr "Nova poruka"
 #: sendMessage
 msgid "Send message"
 msgstr "Pošalji poruku"
+
+#. # LOCALIZATION NOTE(sendMMSToEmail): shown when clicking on an e-mail inside
+#. # the body of a message to provide an option to send a multimedia message.
+#: sendMMSToEmail
+msgid "Send multimedia message"
+msgstr ""
 
 #: no-recipient
 msgid "(No recipient)"
@@ -361,41 +369,37 @@ msgstr ""
 msgid "Your Multimedia Message (MMS), was sent on {{datetime}}"
 msgstr "Vaša multimedijalna poruka (MMS) je poslana {{datetime}}"
 
-#: message-status
-msgid "Status:"
-msgstr "Status:"
+#: message-subject
+#, fuzzy
+msgid "Subject:"
+msgstr "Naslov"
 
-#: message-status-sent
-msgid "sent"
-msgstr "poslano"
+#: report-status-error
+msgid "Message could not be sent"
+msgstr ""
 
-#: message-status-received
-msgid "received"
-msgstr "primljeno"
-
-#: message-status-sending
-msgid "sending"
-msgstr "šaljem"
-
-#: message-status-error
-msgid "error"
-msgstr "greška"
-
-#: message-status-not-downloaded
+#: report-status-not-downloaded
 msgid "not downloaded"
 msgstr "nije preuzeto"
 
-#: message-delivered
+#: report-status-delivered
 msgid "Delivered:"
 msgstr "Isporučeno:"
 
-#: message-read-title
+#: report-status-read
 msgid "Read:"
 msgstr "Pročitaj:"
 
-#: message-requested
-msgid "Requested"
-msgstr "Zahtjevano"
+#: report-status-pending
+msgid "Report requested"
+msgstr ""
+
+#. # LOCALIZATION NOTE(report-status-rejected): used to describe the outgoing mms
+#. # could not be downloaded by receiver(might be an invalid number or the number 
+#. # is not allowed to download mms)
+#: report-status-rejected
+msgid "Message rejected"
+msgstr ""
 
 #: message-size-was
 msgid "Message size:"
@@ -409,17 +413,22 @@ msgstr "%e. %B %Y., {{shortTimeFormat12}}"
 msgid "%e %B %Y, {{shortTimeFormat24}}"
 msgstr "%e. %B %Y., {{shortTimeFormat24}}"
 
-#: report-recipients
-msgid "Recipients:"
-msgstr "Primaoci:"
+#: report-to-title
+msgid "To"
+msgstr ""
 
-#: report-from
-msgid "From:"
+#: report-from-title
+#, fuzzy
+msgid "From"
 msgstr "Od:"
 
 #: message-sent
 msgid "Sent:"
 msgstr "Poslano:"
+
+#: message-sending
+msgid "{{message-delivery-status-sending}}"
+msgstr ""
 
 #: message-received
 msgid "Received:"
@@ -429,14 +438,18 @@ msgstr "Primljeno:"
 msgid "Via:"
 msgstr "Preko:"
 
+#: message-resend
+msgid "Resend"
+msgstr ""
+
 #. # Search functionality
 #: search
 msgid "Search"
 msgstr "Traži"
 
-#: unknown-contact
-msgid "Unknown"
-msgstr "Nepoznato"
+#: unknown-contact-title
+msgid "Unknown Contact"
+msgstr ""
 
 #. # LOCALIZATION NOTE(phone-type-separator): used to separate phone type from
 #. # the number itself. It should be consistent with the characters used in
@@ -484,6 +497,11 @@ msgstr "Poruka nije mogla biti poslana. Pokušati ponovo?"
 #: resend-message
 msgid "Resend this message"
 msgstr "Ponovo pošalji ovu poruku"
+
+#: deleteMessage-confirmation
+#, fuzzy
+msgid "Delete selected message?"
+msgstr "Obrisati izabrane poruke?"
 
 #: deleteMessages-confirmation
 msgid "Delete selected messages?"
@@ -563,6 +581,15 @@ msgstr "{{sendFlightModeBtnOk}}"
 #: fdnBlocked2Title
 msgid "FDN active"
 msgstr "FDN aktivan"
+
+#. # LOCALIZATION NOTE (sms-counter-notice-label): if typed message exceeds the
+#. # character limit, more segments (messages) will be sent. {{number}} is the
+#. # number of current segment. 
+#. # Example: Limit 160 characters, toaster will show up when 161 characters 
+#. # typed, and string in toaster will be 'Editing SMS 2' (editing 2nd segment).
+#: sms-counter-notice-label
+msgid "Editing SMS {{number}}"
+msgstr ""
 
 #. #LOCALIZATION NOTE (fdnBlocked2Body): the English translation does not need the
 #. # actual number of phone numbers. If your translation needs it, you can still add it
@@ -893,12 +920,14 @@ msgstr "MMS poruka"
 msgid "Message is not downloaded yet."
 msgstr "Poruka još nije preuzeta."
 
-#. # LOCALIZATION NOTE (not-downloaded-attachment, expired-attachment):
+#. # LOCALIZATION NOTE (tobedownloaded-attachment, expired-attachment):
 #. # {{date}} is replaced at run-time with a date. The format used to display
 #. # this date is specified in the string with ID 'expiry-date-format'.
-#: not-downloaded-attachment
-msgid "Attachment can be downloaded until {{date}}."
-msgstr "Prilog se može preuzeti do {{date}}."
+#: tobedownloaded-attachment
+msgid ""
+"You received a multimedia message. You can use the link below to download "
+"its content until {{date}}."
+msgstr ""
 
 #: expired-attachment
 msgid "Sorry, the message expired on {{date}} and cannot be downloaded."
@@ -988,6 +1017,13 @@ msgstr "SIM {{id}}, {{detailString}}"
 msgid "({{sim}}) {{sender}}"
 msgstr "({{sim}}) {{sender}}"
 
+#. #LOCALIZATION NOTE (send-button): localize only the ariaLabel
+#: send-button.ariaLabel
+#, fuzzy
+msgctxt "send-button.ariaLabel"
+msgid "Send"
+msgstr "Pošalji"
+
 #. # LOCALIZATION NOTE (send-button-sim-indication): don't localize the
 #. # sim-indication itself as we use it to show the SIM number only. Yet obviously,
 #. # the "ariaLabel" needs to be localized.
@@ -1046,6 +1082,33 @@ msgstr "Pročitano"
 #: message-delivery-status-error.ariaLabel
 msgid "Error"
 msgstr "Greška"
+
+#~ msgid "Status:"
+#~ msgstr "Status:"
+
+#~ msgid "sent"
+#~ msgstr "poslano"
+
+#~ msgid "received"
+#~ msgstr "primljeno"
+
+#~ msgid "sending"
+#~ msgstr "šaljem"
+
+#~ msgid "error"
+#~ msgstr "greška"
+
+#~ msgid "Requested"
+#~ msgstr "Zahtjevano"
+
+#~ msgid "Recipients:"
+#~ msgstr "Primaoci:"
+
+#~ msgid "Unknown"
+#~ msgstr "Nepoznato"
+
+#~ msgid "Attachment can be downloaded until {{date}}."
+#~ msgstr "Prilog se može preuzeti do {{date}}."
 
 #~ msgctxt "selected"
 #~ msgid "{[ plural(n) ]}"

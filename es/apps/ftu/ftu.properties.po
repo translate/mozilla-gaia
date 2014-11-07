@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17 11:13+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: 2014-10-17 12:26+0000\n"
 "Last-Translator: inma610 <inma.barrios@mozilla-hispano.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1413548811.000000\n"
@@ -525,6 +525,10 @@ msgstr "PIN de la SIM bloqueado"
 msgid "No operator"
 msgstr "Sin operador"
 
+#: searchingOperator
+msgid "Searching"
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Language
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -633,6 +637,8 @@ msgid "secured by {{capabilities}}"
 msgstr "Protegido por {{capabilities}}"
 
 #: security
+#, fuzzy
+msgctxt "security"
 msgid "Security"
 msgstr "Seguridad"
 
@@ -655,6 +661,12 @@ msgstr "WPA-EAP"
 #: securityOpen
 msgid "Open"
 msgstr "Abierta"
+
+#: securityOpen.ariaLabel
+#, fuzzy
+msgctxt "securityOpen.ariaLabel"
+msgid "Security"
+msgstr "Seguridad"
 
 #: identity
 msgctxt "identity"
@@ -704,11 +716,11 @@ msgstr "Nombre SSID de red"
 #. # screen.
 #. # LOCALIZATION NOTE(wifiLevel): {{level}} will be replaced at run-time by a
 #. # number ranging from 1 to 4.
-#: wifiLevel
+#: wifiLevel.ariaLabel
 msgid "{{level}} of 4 bars"
 msgstr "{{level}} sobre 4 barras"
 
-#: networksList
+#: networksList.ariaLabel
 msgid "Networks found"
 msgstr "Redes encontradas"
 
@@ -899,25 +911,28 @@ msgstr ""
 "esta información para mejorar nuestros productos, hacerlos más rápidos y "
 "adaptarlos a las necesidades de nuestros usuarios."
 
-#. # LOCALIZATION NOTE(learn-more-telemetry.innerHTML, learn-more-information.innerHTML:
-#. # {{link}} will be replaced at run-time by an active link, the URL will be
-#. # used as text for the link.
-#: learn-more-telemetry.innerHTML
-msgid "Learn more at {{link}}"
-msgstr "Más información en {{link}}"
+#: learn-more-telemetry2.innerHTML
+msgid ""
+"Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
+"a>"
+msgstr ""
 
-#: learn-more-information.innerHTML
-msgid "Learn how Mozilla handles your information at {{link}}"
-msgstr "Conozca cómo Mozilla gestiona su información en {{link}}"
+#: learn-more-information2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # OS privacy
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: htmlWelcome.innerHTML
+#: htmlWelcome2.innerHTML
+#, fuzzy
 msgid ""
-"Welcome to {{link}}, the free and open source operating system from Mozilla. "
-"Our mission is to promote openness, innovation and opportunity by keeping "
-"the power of the Web in your hands."
+"Welcome to <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>, "
+"the free and open source operating system from Mozilla. Our mission is to "
+"promote openness, innovation and opportunity by keeping the power of the Web "
+"in your hands."
 msgstr ""
 "Bienvenido a {{link}}, el sistema operativo gratuito y abierto de Mozilla. "
 "Nuestra misión es promover la apertura, la innovación y la oportunidad para "
@@ -928,26 +943,23 @@ msgctxt "htmlWelcome-link"
 msgid "{{brandShortName}}"
 msgstr "{{brandShortName}}"
 
-#: helpImprove.innerHTML
+#: helpImprove2.innerHTML
 msgid ""
 "You can help us improve our products and services by automatically sending "
-"analytics data. See our {{link}} to learn how we handle data from your "
+"analytics data. See our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> to learn how we handle data from your "
 "device."
 msgstr ""
-"Puede contribuir a la mejora de nuestros productos y servicios enviando "
-"automáticamente datos de análisis. Consulte nuestra {{link}} para conocer "
-"cómo gestionamos los datos desde el dispositivo."
 
 #: helpImprove-link
 msgid "Privacy Notice"
 msgstr "Aviso de privacidad"
 
-#. # LOCALIZATION NOTE(learn-more-privacy.innerHTML): {{link}} will be replaced at
-#. # run-time by an active link, string "learn-more-privacy-link" will be
-#. # used as text for the link.
-#: learn-more-privacy.innerHTML
-msgid "Learn how Mozilla handles your information in our {{link}}."
-msgstr "Conozca cómo Mozilla gestiona su información en nuestra {{link}}."
+#: learn-more-privacy2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information in our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>."
+msgstr ""
 
 #: learn-more-privacy-link
 msgid "privacy policy"
@@ -1259,6 +1271,24 @@ msgstr "Paso {{step}} de {{total}}"
 #: progressbar.ariaLabel
 msgid "First Time Experience"
 msgstr "Primera experiencia"
+
+#~ msgid "Learn more at {{link}}"
+#~ msgstr "Más información en {{link}}"
+
+#~ msgid "Learn how Mozilla handles your information at {{link}}"
+#~ msgstr "Conozca cómo Mozilla gestiona su información en {{link}}"
+
+#~ msgid ""
+#~ "You can help us improve our products and services by automatically "
+#~ "sending analytics data. See our {{link}} to learn how we handle data from "
+#~ "your device."
+#~ msgstr ""
+#~ "Puede contribuir a la mejora de nuestros productos y servicios enviando "
+#~ "automáticamente datos de análisis. Consulte nuestra {{link}} para conocer "
+#~ "cómo gestionamos los datos desde el dispositivo."
+
+#~ msgid "Learn how Mozilla handles your information in our {{link}}."
+#~ msgstr "Conozca cómo Mozilla gestiona su información en nuestra {{link}}."
 
 #~ msgid ""
 #~ "A Firefox Account lets you use features like Find My Device and apps like "

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17 11:13+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: 2014-06-20 10:07+0000\n"
 "Last-Translator: Ahmed <nefzaoui.ahmed@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n>=3 && "
 "n<=10 ? 3 : n>=11 && n<=99 ? 4 : 5;\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1403258847.000000\n"
@@ -581,21 +581,24 @@ msgstr "كل ساعة"
 msgid "Manually"
 msgstr "يدوياُ"
 
-#. # Dynamically added sync interval checks. These are only added via special
-#. # debug/development tools, and are always in seconds. Otherwise, just
-#. # the settings-check-every-* options are visible.
+#. # LOCALIZATION NOTE(settings-check-dynamic):
+#. # DEBUG ONLY Dynamically added sync interval checks. These are only added via
+#. # special debug/development tools, and are always in seconds. Otherwise, just
+#. # the settings-check-every-* options are visible.  The zero case is impossible
+#. # (a separate string is used) and 20 seconds is the currently lowest possible
+#. # value.
 #: settings-check-dynamic
 msgctxt "settings-check-dynamic"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: settings-check-dynamic[zero]
-msgid "seconds"
-msgstr "ثواني"
+msgid "disabled"
+msgstr ""
 
 #: settings-check-dynamic[one]
-msgctxt "settings-check-dynamic[one]"
-msgid "{{ n }} seconds"
+#, fuzzy
+msgid "{{ n }} second"
 msgstr "ثانية واحدة"
 
 #: settings-check-dynamic[two]
@@ -812,10 +815,6 @@ msgstr "الموضوع"
 #: compose-draft-save
 msgid "Save to Local Drafts"
 msgstr "حفظ في المسودات"
-
-#: compose-discard-message
-msgid "Discard email?"
-msgstr "تجاهُل البريد الإلكتروني؟"
 
 #: compose-discard-confirm
 #, fuzzy
@@ -1632,6 +1631,12 @@ msgstr "{{ n }} بريد إلكتروني جديد ({{accountName}})"
 #: new-emails-notify-multiple-accounts-body
 msgid "{{ from }} “{{ subject }}”"
 msgstr "{{ from }} “{{ subject }}”"
+
+#~ msgid "seconds"
+#~ msgstr "ثواني"
+
+#~ msgid "Discard email?"
+#~ msgstr "تجاهُل البريد الإلكتروني؟"
 
 #~ msgctxt "new-emails"
 #~ msgid "{[ plural(n) ]}"

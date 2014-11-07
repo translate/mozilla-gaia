@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17 11:13+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: 2014-08-18 13:17+0000\n"
 "Last-Translator: micadeyeye <micadeyeye@ngportal.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1408367834.000000\n"
@@ -586,21 +586,24 @@ msgstr "Gbogbo wakati"
 msgid "Manually"
 msgstr "Fifowoyi"
 
-#. # Dynamically added sync interval checks. These are only added via special
-#. # debug/development tools, and are always in seconds. Otherwise, just
-#. # the settings-check-every-* options are visible.
+#. # LOCALIZATION NOTE(settings-check-dynamic):
+#. # DEBUG ONLY Dynamically added sync interval checks. These are only added via
+#. # special debug/development tools, and are always in seconds. Otherwise, just
+#. # the settings-check-every-* options are visible.  The zero case is impossible
+#. # (a separate string is used) and 20 seconds is the currently lowest possible
+#. # value.
 #: settings-check-dynamic
 msgctxt "settings-check-dynamic"
 msgid "{[ plural(n) ]}"
 msgstr "{[ opolopo(n) ]}"
 
 #: settings-check-dynamic[zero]
-msgid "seconds"
-msgstr "aaya"
+msgid "disabled"
+msgstr ""
 
 #: settings-check-dynamic[one]
-msgctxt "settings-check-dynamic[one]"
-msgid "{{ n }} seconds"
+#, fuzzy
+msgid "{{ n }} second"
 msgstr "{{ n }} iseju aaya"
 
 #: settings-check-dynamic[two]
@@ -817,10 +820,6 @@ msgstr "Koko-oro"
 #: compose-draft-save
 msgid "Save to Local Drafts"
 msgstr "Fipamo si Apo-ifiwepamosi Abele"
-
-#: compose-discard-message
-msgid "Discard email?"
-msgstr "Ero-ifiweranse to sonu?"
 
 #: compose-discard-confirm
 #, fuzzy
@@ -1639,6 +1638,12 @@ msgstr "{{ n }} awon Ero-ifiweranse Tuntun ({{ accountName }})"
 #: new-emails-notify-multiple-accounts-body
 msgid "{{ from }} “{{ subject }}”"
 msgstr "{{ lati }} “{{ koko-oro }}”"
+
+#~ msgid "seconds"
+#~ msgstr "aaya"
+
+#~ msgid "Discard email?"
+#~ msgstr "Ero-ifiweranse to sonu?"
 
 #~ msgctxt "new-emails"
 #~ msgid "{[ plural(n) ]}"

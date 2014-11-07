@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17 11:13+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: 2014-09-17 22:06+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -535,6 +535,10 @@ msgstr "Tha PIN an t-SIM glaiste"
 msgid "No operator"
 msgstr "Chan eil giùlanair ann"
 
+#: searchingOperator
+msgid "Searching"
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Language
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -643,6 +647,8 @@ msgid "secured by {{capabilities}}"
 msgstr "’ga dhìon le {{capabilities}}"
 
 #: security
+#, fuzzy
+msgctxt "security"
 msgid "Security"
 msgstr "Tèarainteachd"
 
@@ -665,6 +671,12 @@ msgstr "WPA-EAP"
 #: securityOpen
 msgid "Open"
 msgstr "Fosgailte"
+
+#: securityOpen.ariaLabel
+#, fuzzy
+msgctxt "securityOpen.ariaLabel"
+msgid "Security"
+msgstr "Tèarainteachd"
 
 #: identity
 msgctxt "identity"
@@ -714,11 +726,11 @@ msgstr "Ainm an lìonraidh SSID"
 #. # screen.
 #. # LOCALIZATION NOTE(wifiLevel): {{level}} will be replaced at run-time by a
 #. # number ranging from 1 to 4.
-#: wifiLevel
+#: wifiLevel.ariaLabel
 msgid "{{level}} of 4 bars"
 msgstr "{{level}} à 4 bàraichean"
 
-#: networksList
+#: networksList.ariaLabel
 msgid "Networks found"
 msgstr "Chaidh lìonraidhean a lorg"
 
@@ -909,25 +921,28 @@ msgstr ""
 "cleachdadh is gnàthachadh an uidheim {{brandShortName}} agad. Cleachdaidh "
 "sinn an dàta seo gus am bathar againn a dhèanamh fiù nas fhearr."
 
-#. # LOCALIZATION NOTE(learn-more-telemetry.innerHTML, learn-more-information.innerHTML:
-#. # {{link}} will be replaced at run-time by an active link, the URL will be
-#. # used as text for the link.
-#: learn-more-telemetry.innerHTML
-msgid "Learn more at {{link}}"
-msgstr "Barrachd fiosrachaidh aig {{link}}"
+#: learn-more-telemetry2.innerHTML
+msgid ""
+"Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
+"a>"
+msgstr ""
 
-#: learn-more-information.innerHTML
-msgid "Learn how Mozilla handles your information at {{link}}"
-msgstr "Fiosraich mar a làimhsicheas Mozilla am fiosrachadh agad aig {{link}}"
+#: learn-more-information2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # OS privacy
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: htmlWelcome.innerHTML
+#: htmlWelcome2.innerHTML
+#, fuzzy
 msgid ""
-"Welcome to {{link}}, the free and open source operating system from Mozilla. "
-"Our mission is to promote openness, innovation and opportunity by keeping "
-"the power of the Web in your hands."
+"Welcome to <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>, "
+"the free and open source operating system from Mozilla. Our mission is to "
+"promote openness, innovation and opportunity by keeping the power of the Web "
+"in your hands."
 msgstr ""
 "Fàilte gu {{link}}, an siostam-obrachaidh saor o Mozilla sa bheil còd "
 "fosgailte. Tha e ’na amas dhuinn fosgailteachd, ùr-ghnàthachadh agus "
@@ -938,27 +953,23 @@ msgctxt "htmlWelcome-link"
 msgid "{{brandShortName}}"
 msgstr "{{brandShortName}}"
 
-#: helpImprove.innerHTML
+#: helpImprove2.innerHTML
 msgid ""
 "You can help us improve our products and services by automatically sending "
-"analytics data. See our {{link}} to learn how we handle data from your "
+"analytics data. See our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> to learn how we handle data from your "
 "device."
 msgstr ""
-"’S urrainn dhut taic a chumail ri leasachadh a’ bhathair ’s nan seirbheisean "
-"againn is tu a’ cur dàta anailisidh thugainn. Thoir sùil air an {{link}} "
-"againn airson faighinn a-mach mar a chleachdas sinn an dàta on uidheam agad."
 
 #: helpImprove-link
 msgid "Privacy Notice"
 msgstr "an t-sanas phrìobhaideachd"
 
-#. # LOCALIZATION NOTE(learn-more-privacy.innerHTML): {{link}} will be replaced at
-#. # run-time by an active link, string "learn-more-privacy-link" will be
-#. # used as text for the link.
-#: learn-more-privacy.innerHTML
-msgid "Learn how Mozilla handles your information in our {{link}}."
+#: learn-more-privacy2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information in our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>."
 msgstr ""
-"Fiosraich mar a làimhsicheas Mozilla am fiosrachadh agad sa {{link}} againn."
 
 #: learn-more-privacy-link
 msgid "privacy policy"
@@ -1275,6 +1286,28 @@ msgstr "Ceum {{step}} à {{total}}"
 #: progressbar.ariaLabel
 msgid "First Time Experience"
 msgstr "A’ chiad chleachdadh"
+
+#~ msgid "Learn more at {{link}}"
+#~ msgstr "Barrachd fiosrachaidh aig {{link}}"
+
+#~ msgid "Learn how Mozilla handles your information at {{link}}"
+#~ msgstr ""
+#~ "Fiosraich mar a làimhsicheas Mozilla am fiosrachadh agad aig {{link}}"
+
+#~ msgid ""
+#~ "You can help us improve our products and services by automatically "
+#~ "sending analytics data. See our {{link}} to learn how we handle data from "
+#~ "your device."
+#~ msgstr ""
+#~ "’S urrainn dhut taic a chumail ri leasachadh a’ bhathair ’s nan "
+#~ "seirbheisean againn is tu a’ cur dàta anailisidh thugainn. Thoir sùil air "
+#~ "an {{link}} againn airson faighinn a-mach mar a chleachdas sinn an dàta "
+#~ "on uidheam agad."
+
+#~ msgid "Learn how Mozilla handles your information in our {{link}}."
+#~ msgstr ""
+#~ "Fiosraich mar a làimhsicheas Mozilla am fiosrachadh agad sa {{link}} "
+#~ "againn."
 
 #~ msgid ""
 #~ "A Firefox Account lets you use features like Find My Device and apps like "

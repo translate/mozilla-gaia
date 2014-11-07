@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17 11:13+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: 2013-11-18 16:53+0000\n"
 "Last-Translator: Baurzhan <baurthefirst@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1384793591.000000\n"
@@ -213,6 +213,8 @@ msgid "To:"
 msgstr "Кімге:"
 
 #: send
+#, fuzzy
+msgctxt "send"
 msgid "Send"
 msgstr "Жіберу"
 
@@ -268,6 +270,12 @@ msgstr "Жаңа хабарлама"
 #: sendMessage
 msgid "Send message"
 msgstr "Хабарламаны жіберу"
+
+#. # LOCALIZATION NOTE(sendMMSToEmail): shown when clicking on an e-mail inside
+#. # the body of a message to provide an option to send a multimedia message.
+#: sendMMSToEmail
+msgid "Send multimedia message"
+msgstr ""
 
 #: no-recipient
 msgid "(No recipient)"
@@ -375,40 +383,36 @@ msgstr ""
 msgid "Your Multimedia Message (MMS), was sent on {{datetime}}"
 msgstr ""
 
-#: message-status
-msgid "Status:"
+#: message-subject
+#, fuzzy
+msgid "Subject:"
+msgstr "Тақырыбы"
+
+#: report-status-error
+msgid "Message could not be sent"
 msgstr ""
 
-#: message-status-sent
-msgid "sent"
-msgstr ""
-
-#: message-status-received
-msgid "received"
-msgstr ""
-
-#: message-status-sending
-msgid "sending"
-msgstr ""
-
-#: message-status-error
-msgid "error"
-msgstr ""
-
-#: message-status-not-downloaded
+#: report-status-not-downloaded
 msgid "not downloaded"
 msgstr ""
 
-#: message-delivered
+#: report-status-delivered
 msgid "Delivered:"
 msgstr ""
 
-#: message-read-title
+#: report-status-read
 msgid "Read:"
 msgstr ""
 
-#: message-requested
-msgid "Requested"
+#: report-status-pending
+msgid "Report requested"
+msgstr ""
+
+#. # LOCALIZATION NOTE(report-status-rejected): used to describe the outgoing mms
+#. # could not be downloaded by receiver(might be an invalid number or the number 
+#. # is not allowed to download mms)
+#: report-status-rejected
+msgid "Message rejected"
 msgstr ""
 
 #: message-size-was
@@ -423,16 +427,20 @@ msgstr ""
 msgid "%e %B %Y, {{shortTimeFormat24}}"
 msgstr ""
 
-#: report-recipients
-msgid "Recipients:"
+#: report-to-title
+msgid "To"
 msgstr ""
 
-#: report-from
-msgid "From:"
+#: report-from-title
+msgid "From"
 msgstr ""
 
 #: message-sent
 msgid "Sent:"
+msgstr ""
+
+#: message-sending
+msgid "{{message-delivery-status-sending}}"
 msgstr ""
 
 #: message-received
@@ -443,14 +451,18 @@ msgstr ""
 msgid "Via:"
 msgstr ""
 
+#: message-resend
+msgid "Resend"
+msgstr ""
+
 #. # Search functionality
 #: search
 msgid "Search"
 msgstr "Іздеу"
 
-#: unknown-contact
-msgid "Unknown"
-msgstr "Белгісіз"
+#: unknown-contact-title
+msgid "Unknown Contact"
+msgstr ""
 
 #. # LOCALIZATION NOTE(phone-type-separator): used to separate phone type from
 #. # the number itself. It should be consistent with the characters used in
@@ -499,6 +511,11 @@ msgstr "Хабарламаны жіберу мүмкін емес. Қайтал�
 #: resend-message
 msgid "Resend this message"
 msgstr ""
+
+#: deleteMessage-confirmation
+#, fuzzy
+msgid "Delete selected message?"
+msgstr "Таңдалған хабарламаларды өшіру керек пе?"
 
 #: deleteMessages-confirmation
 msgid "Delete selected messages?"
@@ -580,6 +597,15 @@ msgstr ""
 
 #: fdnBlocked2Title
 msgid "FDN active"
+msgstr ""
+
+#. # LOCALIZATION NOTE (sms-counter-notice-label): if typed message exceeds the
+#. # character limit, more segments (messages) will be sent. {{number}} is the
+#. # number of current segment. 
+#. # Example: Limit 160 characters, toaster will show up when 161 characters 
+#. # typed, and string in toaster will be 'Editing SMS 2' (editing 2nd segment).
+#: sms-counter-notice-label
+msgid "Editing SMS {{number}}"
 msgstr ""
 
 #. #LOCALIZATION NOTE (fdnBlocked2Body): the English translation does not need the
@@ -904,11 +930,13 @@ msgstr "MMS хабарламасы"
 msgid "Message is not downloaded yet."
 msgstr "Хабарлама әлі жүктеліп алынбады."
 
-#. # LOCALIZATION NOTE (not-downloaded-attachment, expired-attachment):
+#. # LOCALIZATION NOTE (tobedownloaded-attachment, expired-attachment):
 #. # {{date}} is replaced at run-time with a date. The format used to display
 #. # this date is specified in the string with ID 'expiry-date-format'.
-#: not-downloaded-attachment
-msgid "Attachment can be downloaded until {{date}}."
+#: tobedownloaded-attachment
+msgid ""
+"You received a multimedia message. You can use the link below to download "
+"its content until {{date}}."
 msgstr ""
 
 #: expired-attachment
@@ -1007,6 +1035,13 @@ msgstr ""
 msgid "({{sim}}) {{sender}}"
 msgstr ""
 
+#. #LOCALIZATION NOTE (send-button): localize only the ariaLabel
+#: send-button.ariaLabel
+#, fuzzy
+msgctxt "send-button.ariaLabel"
+msgid "Send"
+msgstr "Жіберу"
+
 #. # LOCALIZATION NOTE (send-button-sim-indication): don't localize the
 #. # sim-indication itself as we use it to show the SIM number only. Yet obviously,
 #. # the "ariaLabel" needs to be localized.
@@ -1065,6 +1100,9 @@ msgstr ""
 #: message-delivery-status-error.ariaLabel
 msgid "Error"
 msgstr ""
+
+#~ msgid "Unknown"
+#~ msgstr "Белгісіз"
 
 #~ msgctxt "selected"
 #~ msgid "{[ plural(n) ]}"

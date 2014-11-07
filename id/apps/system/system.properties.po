@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17 11:13+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: 2014-09-24 16:54+0000\n"
 "Last-Translator: Benny <bennychandra@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1411577668.000000\n"
@@ -48,6 +48,14 @@ msgstr "Lewati"
 msgid "Clear"
 msgstr "Bersihkan"
 
+#: enable
+msgid "Enable"
+msgstr ""
+
+#: turnOn
+msgid "Turn On"
+msgstr ""
+
 #. # LOCALIZATION NOTE(undo.ariaLabel): The following string is spoken by screen
 #. # readers and not shown on the screen.
 #: undo.ariaLabel
@@ -74,11 +82,11 @@ msgstr ""
 msgid "Previous"
 msgstr "Sebelumnya"
 
-#: mediaPlaybackPlay
+#: mediaPlaybackPlay.ariaLabel
 msgid "Play"
 msgstr "Mainkan"
 
-#: mediaPlaybackPause
+#: mediaPlaybackPause.ariaLabel
 msgid "Pause"
 msgstr "Jeda"
 
@@ -156,11 +164,11 @@ msgstr "%b %e"
 msgid "Status Bar"
 msgstr ""
 
-#: statusbarBattery
+#: statusbarBattery.ariaLabel
 msgid "Battery {{level}} percent"
 msgstr ""
 
-#: statusbarBatteryCharging
+#: statusbarBatteryCharging.ariaLabel
 msgid "Battery {{level}} percent, charging"
 msgstr ""
 
@@ -273,55 +281,56 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: statusbarNotifications[one]
-msgid "{{n}} notification"
+msgid "{{n}} Notification"
 msgstr ""
 
 #: statusbarNotifications[two]
 msgctxt "statusbarNotifications[two]"
-msgid "{{n}} notifications"
+msgid "{{n}} Notifications"
 msgstr ""
 
 #: statusbarNotifications[few]
 msgctxt "statusbarNotifications[few]"
-msgid "{{n}} notifications"
+msgid "{{n}} Notifications"
 msgstr ""
 
 #: statusbarNotifications[many]
 msgctxt "statusbarNotifications[many]"
-msgid "{{n}} notifications"
+msgid "{{n}} Notifications"
 msgstr ""
 
 #: statusbarNotifications[other]
 msgctxt "statusbarNotifications[other]"
-msgid "{{n}} notifications"
+msgid "{{n}} Notifications"
 msgstr ""
 
-#: statusbarNotifications-unread
-msgctxt "statusbarNotifications-unread"
+#: statusbarNotifications-unread.ariaLabel
+#, fuzzy
+msgctxt "statusbarNotifications-unread.ariaLabel"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: statusbarNotifications-unread[one]
+#: statusbarNotifications-unread.ariaLabel[one]
 msgid "{{n}} unread notification"
 msgstr ""
 
-#: statusbarNotifications-unread[two]
-msgctxt "statusbarNotifications-unread[two]"
+#: statusbarNotifications-unread.ariaLabel[two]
+msgctxt "statusbarNotifications-unread.ariaLabel[two]"
 msgid "{{n}} unread notifications"
 msgstr ""
 
-#: statusbarNotifications-unread[few]
-msgctxt "statusbarNotifications-unread[few]"
+#: statusbarNotifications-unread.ariaLabel[few]
+msgctxt "statusbarNotifications-unread.ariaLabel[few]"
 msgid "{{n}} unread notifications"
 msgstr ""
 
-#: statusbarNotifications-unread[many]
-msgctxt "statusbarNotifications-unread[many]"
+#: statusbarNotifications-unread.ariaLabel[many]
+msgctxt "statusbarNotifications-unread.ariaLabel[many]"
 msgid "{{n}} unread notifications"
 msgstr ""
 
-#: statusbarNotifications-unread[other]
-msgctxt "statusbarNotifications-unread[other]"
+#: statusbarNotifications-unread.ariaLabel[other]
+msgctxt "statusbarNotifications-unread.ariaLabel[other]"
 msgid "{{n}} unread notifications"
 msgstr ""
 
@@ -841,6 +850,26 @@ msgstr "Wajib"
 msgid "Uncompressing… <span>This can take a few minutes.</span>"
 msgstr "Membuka paket... <span>Membutuhkan waktu beberapa menit.</span>"
 
+#: downloadWifiPrioritizedUsing2G
+msgid ""
+"Updates are downloaded via data connection when Wi-Fi is not available. When "
+"using data connection, phone calls may be blocked and additional charges may "
+"also apply."
+msgstr ""
+"Versi baru diunduh via koneksi data ketika Wi-Fi tidak tersedia. Ketika "
+"menggunakan koneksi data, mungkin panggilan telepon terhambat dan dikenakan "
+"biaya tambahan. "
+
+#: downloadWifiPrioritized3
+#, fuzzy
+msgid ""
+"Updates are downloaded via data connection when Wi-Fi is not available. When "
+"using data connection, additional charges may apply."
+msgstr ""
+"Versi baru diunduh via koneksi data ketika Wi-Fi tidak tersedia. Ketika "
+"menggunakan koneksi data, mungkin panggilan telepon terhambat dan dikenakan "
+"biaya tambahan. "
+
 #: downloadNoWifiWarning
 msgid ""
 "Wi-Fi unavailable. Updating over current connection may incur additional "
@@ -849,33 +878,23 @@ msgstr ""
 "Wi-Fi tidak tersedia. Pembaruan via koneksi ini mungkin dikenakan tambahan "
 "biaya."
 
-#: downloadOfflineWarning
-msgid "Connection unavailable. Connect to a network to download updates."
+#: downloadOfflineWarning2
+msgid "Connect to a network to download updates."
 msgstr ""
-"Koneksi tidak tersedia. Koneksi ke jaringan diperlukan untuk mengunduh "
-"pembaruan"
-
-#: downloadDataConnectionWarning
-msgid ""
-"Updates are downloaded via data connection when Wi-Fi is not available. "
-"Additional data charges may apply."
-msgstr ""
-"Versi baru diunduh via koneksi data ketika Wi-Fi tidak tersedia. Mungkin "
-"dikenakan biaya data tambahan."
 
 #: downloadUpdatesViaDataConnection
 msgid "Download updates via data connection?"
 msgstr "Unduh pembaruan via koneksi data?"
 
-#: downloadUpdatesVia2GForbidden2
+#: downloadUpdatesVia2GForbidden3
 msgid ""
 "Downloading updates is not possible on slow connections (2G). Please connect "
 "via Wi-Fi or 3G (if available) and try again."
 msgstr ""
 
-#: downloadUpdatesViaDataConnectionMessage2
+#: downloadUpdatesViaDataConnectionMessage3
 msgid ""
-"When using a data connection, additional charges may apply. Do you want to "
+"When using a data connection, additional costs may apply. Do you want to "
 "continue?"
 msgstr ""
 
@@ -917,6 +936,10 @@ msgstr ""
 
 #: logsFailed
 msgid "The logs could not be saved"
+msgstr ""
+
+#: logsStart
+msgid "Capturing logs ..."
 msgstr ""
 
 #. # lock screen
@@ -1047,6 +1070,18 @@ msgstr ""
 msgctxt "unrecoverable-error-action"
 msgid "OK"
 msgstr "Oke"
+
+#. # Quick settings dialog
+#: data-roaming-enabled-title
+msgid "Turn on data roaming?"
+msgstr ""
+
+#: data-roaming-enabled-warning2
+msgid ""
+"In order to access the Internet, you need to turn on data roaming. Depending "
+"on your service agreement, extra charges may apply. Do you want to turn data "
+"on?"
+msgstr ""
 
 #. # value selector, time/date picker
 #: select-time
@@ -1322,9 +1357,9 @@ msgstr "Perangkat tidak dikenal"
 msgid "Can not open received file"
 msgstr "Tidak dapat membuka berkas yang diterima"
 
-#: unknownMediaTypeToOpen
-msgid "Can not open unknown media type:"
-msgstr "Tidak dapat membuka jenis media yang tidak dikenal:"
+#: unknownMediaTypeToOpenFile
+msgid "Can not open unknown media type: {{fileName}}"
+msgstr ""
 
 #: cannotReceiveFile
 msgid "Can not receive file"
@@ -2057,23 +2092,50 @@ msgctxt "search-or-enter-address.placeholder"
 msgid "Search or enter address"
 msgstr "Cari atau masukkan alamat"
 
-#. # Hotspot
-#: noSIMCardInHotspot
-msgid "SIM card is absent or inserted incorrectly, so turn off hotspot"
+#. # LOCALIZATION NOTE: The following strings are spoken by screen readers and
+#. # not shown on the screen.
+#: reload-button.ariaLabel
+msgid "Reload"
 msgstr ""
 
-#: noHopspotWhenAPMisOn
-msgid "Turn off airplane mode to use Wi-Fi hotspot"
+#: stop-button.ariaLabel
+msgid "Stop"
+msgstr ""
+
+#. # Hotspot
+#: noSIMCardInHotspot3
+msgid "Hotspot off: SIM card missing or inserted incorrectly."
+msgstr ""
+
+#: noHotspotWhenAPMisOnWifiHotspot
+#, fuzzy
+msgid "Turn off airplane mode to use Wi-Fi hotspot."
 msgstr "Nonaktifkan modus pesawat untuk pakai hotspot Wi-Fi"
+
+#: noHotspotWhenAPMisOnUsbHotspot
+msgid "Turn off airplane mode to use USB tethering."
+msgstr ""
 
 #: apmActivated
 msgid "Airplane mode activated"
 msgstr "Modus pesawat diaktifkan"
 
+#: noConnectivityHead
+msgid "No data connection"
+msgstr ""
+
+#: noConnectivityMessageWifiHotspot
+msgid "Wi-Fi hotspot is disabled because there is no data connection."
+msgstr ""
+
+#: noConnectivityMessageUsbHotspot
+msgid "USB tethering is disabled because there is no data connection."
+msgstr ""
+
 #. # Browser Context Menu
-#: open-in-new-tab
-msgid "Open link in new tab"
-msgstr "Buka tautan di tab baru"
+#: open-in-new-window
+msgid "Open in new window"
+msgstr ""
 
 #: add-link-to-home-screen
 msgid "Add link to home screen"
@@ -2111,6 +2173,32 @@ msgstr "Berbagi Video"
 msgid "Share Audio"
 msgstr "Berbagi Audio"
 
+#: okCharsLeft
+msgid "OK ({{n}})"
+msgstr ""
+
+#~ msgctxt "statusbarNotifications-unread"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgid "Connection unavailable. Connect to a network to download updates."
+#~ msgstr ""
+#~ "Koneksi tidak tersedia. Koneksi ke jaringan diperlukan untuk mengunduh "
+#~ "pembaruan"
+
+#~ msgid ""
+#~ "Updates are downloaded via data connection when Wi-Fi is not available. "
+#~ "Additional data charges may apply."
+#~ msgstr ""
+#~ "Versi baru diunduh via koneksi data ketika Wi-Fi tidak tersedia. Mungkin "
+#~ "dikenakan biaya data tambahan."
+
+#~ msgid "Can not open unknown media type:"
+#~ msgstr "Tidak dapat membuka jenis media yang tidak dikenal:"
+
+#~ msgid "Open link in new tab"
+#~ msgstr "Buka tautan di tab baru"
+
 #~ msgid "Install update now?"
 #~ msgstr "Instal pembaruan sekarang?"
 
@@ -2119,15 +2207,6 @@ msgstr "Berbagi Audio"
 
 #~ msgid "Battery almost empty"
 #~ msgstr "Baterai hampis habis"
-
-#~ msgid ""
-#~ "Updates are downloaded via data connection when Wi-Fi is not available. "
-#~ "When using data connection, phone calls may be blocked and additional "
-#~ "charges may also apply."
-#~ msgstr ""
-#~ "Versi baru diunduh via koneksi data ketika Wi-Fi tidak tersedia. Ketika "
-#~ "menggunakan koneksi data, mungkin panggilan telepon terhambat dan "
-#~ "dikenakan biaya tambahan. "
 
 #~ msgid ""
 #~ "A username and password are being requested by {{host}}. The site says: "

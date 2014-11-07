@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17 11:13+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: 2014-09-25 00:07+0200\n"
 "Last-Translator: Ibrahima SARR <ibrahima.sarr@pulaagu.com>\n"
 "Language-Team: FULAH LOCALIZATION\n"
@@ -15,7 +15,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -523,6 +523,10 @@ msgstr "PIN SIM koko daaƴaa"
 msgid "No operator"
 msgstr "Alaa Carwinoowo"
 
+#: searchingOperator
+msgid "Searching"
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Language
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -629,6 +633,8 @@ msgid "secured by {{capabilities}}"
 msgstr "hisni ko {{capabilities}}"
 
 #: security
+#, fuzzy
+msgctxt "security"
 msgid "Security"
 msgstr "Kisal"
 
@@ -651,6 +657,12 @@ msgstr "WPA-EAP"
 #: securityOpen
 msgid "Open"
 msgstr "Ena udditii"
+
+#: securityOpen.ariaLabel
+#, fuzzy
+msgctxt "securityOpen.ariaLabel"
+msgid "Security"
+msgstr "Kisal"
 
 #: identity
 msgctxt "identity"
@@ -700,11 +712,11 @@ msgstr "Innde Laylaytol SSID"
 #. # screen.
 #. # LOCALIZATION NOTE(wifiLevel): {{level}} will be replaced at run-time by a
 #. # number ranging from 1 to 4.
-#: wifiLevel
+#: wifiLevel.ariaLabel
 msgid "{{level}} of 4 bars"
 msgstr "Wifi: {{level}} e cabbi 4"
 
-#: networksList
+#: networksList.ariaLabel
 msgid "Networks found"
 msgstr "Resoo yiytaama"
 
@@ -893,25 +905,28 @@ msgstr ""
 "kuutortoo ɗum ko ngam ɓeudude moƴƴinde golle amen. yaawnude e yuɓɓinde "
 "ɗum'en."
 
-#. # LOCALIZATION NOTE(learn-more-telemetry.innerHTML, learn-more-information.innerHTML:
-#. # {{link}} will be replaced at run-time by an active link, the URL will be
-#. # used as text for the link.
-#: learn-more-telemetry.innerHTML
-msgid "Learn more at {{link}}"
-msgstr "Beydu humpito to {{link}}"
+#: learn-more-telemetry2.innerHTML
+msgid ""
+"Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
+"a>"
+msgstr ""
 
-#: learn-more-information.innerHTML
-msgid "Learn how Mozilla handles your information at {{link}}"
-msgstr "Humpito no Mozilla huutortoo humpito maa to {{link}}"
+#: learn-more-information2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # OS privacy
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: htmlWelcome.innerHTML
+#: htmlWelcome2.innerHTML
+#, fuzzy
 msgid ""
-"Welcome to {{link}}, the free and open source operating system from Mozilla. "
-"Our mission is to promote openness, innovation and opportunity by keeping "
-"the power of the Web in your hands."
+"Welcome to <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>, "
+"the free and open source operating system from Mozilla. Our mission is to "
+"promote openness, innovation and opportunity by keeping the power of the Web "
+"in your hands."
 msgstr ""
 "A jaɓɓaama e {{link}}, yuɓɓo huumnungo ngo yoɓetaake tee ko udditiinde iwnde "
 "e Mozilla. Darnde amen ko ɓeydude udditaare, kesamhesamaagu e fartaŋŋe so "
@@ -922,26 +937,23 @@ msgctxt "htmlWelcome-link"
 msgid "{{brandShortName}}"
 msgstr "{{brandShortName}}"
 
-#: helpImprove.innerHTML
+#: helpImprove2.innerHTML
 msgid ""
 "You can help us improve our products and services by automatically sending "
-"analytics data. See our {{link}} to learn how we handle data from your "
+"analytics data. See our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> to learn how we handle data from your "
 "device."
 msgstr ""
-"Aɗa waawi wallude-en moƴƴinde topirɗe amen e carwe so neldude keɓa kiñtooje "
-"e jaajol. Ƴeew {{link}} amen ngam anndude hol no min kuutortoo keɓe kaɓirgol "
-"maa."
 
 #: helpImprove-link
 msgid "Privacy Notice"
 msgstr "Tintinol Suturo"
 
-#. # LOCALIZATION NOTE(learn-more-privacy.innerHTML): {{link}} will be replaced at
-#. # run-time by an active link, string "learn-more-privacy-link" will be
-#. # used as text for the link.
-#: learn-more-privacy.innerHTML
-msgid "Learn how Mozilla handles your information in our {{link}}."
-msgstr "Humpito no Mozilla huutortoo humpito maa to {{link}} amen."
+#: learn-more-privacy2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information in our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>."
+msgstr ""
 
 #: learn-more-privacy-link
 msgid "privacy policy"
@@ -1241,6 +1253,24 @@ msgstr "Taaɓal {{step}} e dow {{total}}"
 #: progressbar.ariaLabel
 msgid "First Time Experience"
 msgstr "Kuutorgol Laawol Gadanol"
+
+#~ msgid "Learn more at {{link}}"
+#~ msgstr "Beydu humpito to {{link}}"
+
+#~ msgid "Learn how Mozilla handles your information at {{link}}"
+#~ msgstr "Humpito no Mozilla huutortoo humpito maa to {{link}}"
+
+#~ msgid ""
+#~ "You can help us improve our products and services by automatically "
+#~ "sending analytics data. See our {{link}} to learn how we handle data from "
+#~ "your device."
+#~ msgstr ""
+#~ "Aɗa waawi wallude-en moƴƴinde topirɗe amen e carwe so neldude keɓa "
+#~ "kiñtooje e jaajol. Ƴeew {{link}} amen ngam anndude hol no min kuutortoo "
+#~ "keɓe kaɓirgol maa."
+
+#~ msgid "Learn how Mozilla handles your information in our {{link}}."
+#~ msgstr "Humpito no Mozilla huutortoo humpito maa to {{link}} amen."
 
 #~ msgid ""
 #~ "A Firefox Account lets you use features like Find My Device and apps like "

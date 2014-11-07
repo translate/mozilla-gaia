@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17 11:13+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: 2014-09-28 12:21+0000\n"
 "Last-Translator: milupo <milupo@sorbzilla.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1411906872.000000\n"
@@ -523,6 +523,10 @@ msgstr "SIM-PIN zastajony"
 msgid "No operator"
 msgstr "Žaden póbitowaŕ mobilneje telefonije"
 
+#: searchingOperator
+msgid "Searching"
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Language
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -630,6 +634,8 @@ msgid "secured by {{capabilities}}"
 msgstr "zawěsćony wót {{capabilities}}"
 
 #: security
+#, fuzzy
+msgctxt "security"
 msgid "Security"
 msgstr "Wěstota"
 
@@ -652,6 +658,12 @@ msgstr "WPA-EAP"
 #: securityOpen
 msgid "Open"
 msgstr "Wótwórjony"
+
+#: securityOpen.ariaLabel
+#, fuzzy
+msgctxt "securityOpen.ariaLabel"
+msgid "Security"
+msgstr "Wěstota"
 
 #: identity
 msgctxt "identity"
@@ -701,11 +713,11 @@ msgstr "Mě SSID-seśi"
 #. # screen.
 #. # LOCALIZATION NOTE(wifiLevel): {{level}} will be replaced at run-time by a
 #. # number ranging from 1 to 4.
-#: wifiLevel
+#: wifiLevel.ariaLabel
 msgid "{{level}} of 4 bars"
 msgstr "{{level}} 4 grědow"
 
-#: networksList
+#: networksList.ariaLabel
 msgid "Networks found"
 msgstr "Seśi namakane"
 
@@ -896,25 +908,28 @@ msgstr ""
 "Wužywamy to, aby swóje produkty pólěpšyli, póspěšyli a wěcej pśiměrjone "
 "cynili."
 
-#. # LOCALIZATION NOTE(learn-more-telemetry.innerHTML, learn-more-information.innerHTML:
-#. # {{link}} will be replaced at run-time by an active link, the URL will be
-#. # used as text for the link.
-#: learn-more-telemetry.innerHTML
-msgid "Learn more at {{link}}"
-msgstr "Zgóńśo wěcej na {{link}}"
+#: learn-more-telemetry2.innerHTML
+msgid ""
+"Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
+"a>"
+msgstr ""
 
-#: learn-more-information.innerHTML
-msgid "Learn how Mozilla handles your information at {{link}}"
-msgstr "Zgóńśo na {{link}}, kak Mozilla wobchada z wašymi informacijami"
+#: learn-more-information2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # OS privacy
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: htmlWelcome.innerHTML
+#: htmlWelcome2.innerHTML
+#, fuzzy
 msgid ""
-"Welcome to {{link}}, the free and open source operating system from Mozilla. "
-"Our mission is to promote openness, innovation and opportunity by keeping "
-"the power of the Web in your hands."
+"Welcome to <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>, "
+"the free and open source operating system from Mozilla. Our mission is to "
+"promote openness, innovation and opportunity by keeping the power of the Web "
+"in your hands."
 msgstr ""
 "Witajśo k {{link}}, dermotnemu źěłowemu systemoju wótwórjonego žrědła "
 "Mozilla. Naša misija jo spěchowanje wótwórjonosći, inowacije a móžnosćow "
@@ -925,26 +940,23 @@ msgctxt "htmlWelcome-link"
 msgid "{{brandShortName}}"
 msgstr "{{brandShortName}}"
 
-#: helpImprove.innerHTML
+#: helpImprove2.innerHTML
 msgid ""
 "You can help us improve our products and services by automatically sending "
-"analytics data. See our {{link}} to learn how we handle data from your "
+"analytics data. See our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> to learn how we handle data from your "
 "device."
 msgstr ""
-"Móžośo nam pomagaś, naše produkty a słužby pśez to pólěpšyś, až sćelośo "
-"wugódnośeńske daty. Glejśo naše {{link}}, aby zgonił, kak wobchadamy z "
-"datami z wašogo rěda."
 
 #: helpImprove-link
 msgid "Privacy Notice"
 msgstr "pšawidła priwatnosći"
 
-#. # LOCALIZATION NOTE(learn-more-privacy.innerHTML): {{link}} will be replaced at
-#. # run-time by an active link, string "learn-more-privacy-link" will be
-#. # used as text for the link.
-#: learn-more-privacy.innerHTML
-msgid "Learn how Mozilla handles your information in our {{link}}."
-msgstr "Zgóńće w našom {{link}}, kak Mozilla wobchada z wašymi informacijami."
+#: learn-more-privacy2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information in our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>."
+msgstr ""
 
 #: learn-more-privacy-link
 msgid "privacy policy"
@@ -1248,3 +1260,22 @@ msgstr "Kšac {{step}} z {{total}}"
 #: progressbar.ariaLabel
 msgid "First Time Experience"
 msgstr "Prědne wužywanje"
+
+#~ msgid "Learn more at {{link}}"
+#~ msgstr "Zgóńśo wěcej na {{link}}"
+
+#~ msgid "Learn how Mozilla handles your information at {{link}}"
+#~ msgstr "Zgóńśo na {{link}}, kak Mozilla wobchada z wašymi informacijami"
+
+#~ msgid ""
+#~ "You can help us improve our products and services by automatically "
+#~ "sending analytics data. See our {{link}} to learn how we handle data from "
+#~ "your device."
+#~ msgstr ""
+#~ "Móžośo nam pomagaś, naše produkty a słužby pśez to pólěpšyś, až sćelośo "
+#~ "wugódnośeńske daty. Glejśo naše {{link}}, aby zgonił, kak wobchadamy z "
+#~ "datami z wašogo rěda."
+
+#~ msgid "Learn how Mozilla handles your information in our {{link}}."
+#~ msgstr ""
+#~ "Zgóńće w našom {{link}}, kak Mozilla wobchada z wašymi informacijami."

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17 11:13+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: 2014-06-21 17:22+0000\n"
 "Last-Translator: Muhammed Hasan <muhammedhasan.ahmed@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1403371322.000000\n"
@@ -521,6 +521,10 @@ msgstr "سم پن مقفل"
 msgid "No operator"
 msgstr "کوئی آپریٹر نہیں"
 
+#: searchingOperator
+msgid "Searching"
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Language
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -629,6 +633,8 @@ msgid "secured by {{capabilities}}"
 msgstr "{{capabilities}} کی طرف سے محفوظ"
 
 #: security
+#, fuzzy
+msgctxt "security"
 msgid "Security"
 msgstr "سلامتی"
 
@@ -651,6 +657,12 @@ msgstr "WPA-EAP"
 #: securityOpen
 msgid "Open"
 msgstr "کھولیں"
+
+#: securityOpen.ariaLabel
+#, fuzzy
+msgctxt "securityOpen.ariaLabel"
+msgid "Security"
+msgstr "سلامتی"
 
 #: identity
 msgctxt "identity"
@@ -700,11 +712,11 @@ msgstr "نیٹ ورک نام (SSID)"
 #. # screen.
 #. # LOCALIZATION NOTE(wifiLevel): {{level}} will be replaced at run-time by a
 #. # number ranging from 1 to 4.
-#: wifiLevel
+#: wifiLevel.ariaLabel
 msgid "{{level}} of 4 bars"
 msgstr "4 سلاخوں کے {{level}}"
 
-#: networksList
+#: networksList.ariaLabel
 msgid "Networks found"
 msgstr "نیٹ ورک مل گیا ہے"
 
@@ -891,26 +903,28 @@ msgstr ""
 "تشکیل اور کثٹما یز یشن کے کوائف کو بھیجتا ہے۔ ہم اسے ہمارے مصنوعہ کو بہتر، "
 "تیز اور مزید اچھا بنا نے میں استعمال کرتے ہیں۔"
 
-#. # LOCALIZATION NOTE(learn-more-telemetry.innerHTML, learn-more-information.innerHTML:
-#. # {{link}} will be replaced at run-time by an active link, the URL will be
-#. # used as text for the link.
-#: learn-more-telemetry.innerHTML
-msgid "Learn more at {{link}}"
-msgstr "مزید سیکھیں اس {{link}} سے"
+#: learn-more-telemetry2.innerHTML
+msgid ""
+"Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
+"a>"
+msgstr ""
 
-#: learn-more-information.innerHTML
-msgid "Learn how Mozilla handles your information at {{link}}"
-msgstr "{{link}} پر سیکھیے کہ Mozilla آپ کی معلومات کیسے رکھتا ہے"
+#: learn-more-information2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # OS privacy
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: htmlWelcome.innerHTML
+#: htmlWelcome2.innerHTML
 #, fuzzy
 msgid ""
-"Welcome to {{link}}, the free and open source operating system from Mozilla. "
-"Our mission is to promote openness, innovation and opportunity by keeping "
-"the power of the Web in your hands."
+"Welcome to <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>, "
+"the free and open source operating system from Mozilla. Our mission is to "
+"promote openness, innovation and opportunity by keeping the power of the Web "
+"in your hands."
 msgstr ""
 "{{brandShortName}} میں آپکا خیر مقدم ہے، Mozilla کی ترف سے ایک ازاد یور کھلا "
 "اپریٹنگ نظام۔ ہمارا مقصد  ویب کی طاقت اپکے ہاتھو میں دیکر  کشادگی، جدت اور "
@@ -922,10 +936,11 @@ msgctxt "htmlWelcome-link"
 msgid "{{brandShortName}}"
 msgstr "{{brandShortName}}"
 
-#: helpImprove.innerHTML
+#: helpImprove2.innerHTML
 msgid ""
 "You can help us improve our products and services by automatically sending "
-"analytics data. See our {{link}} to learn how we handle data from your "
+"analytics data. See our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> to learn how we handle data from your "
 "device."
 msgstr ""
 
@@ -934,12 +949,11 @@ msgstr ""
 msgid "Privacy Notice"
 msgstr "رازداری کی پالیسی"
 
-#. # LOCALIZATION NOTE(learn-more-privacy.innerHTML): {{link}} will be replaced at
-#. # run-time by an active link, string "learn-more-privacy-link" will be
-#. # used as text for the link.
-#: learn-more-privacy.innerHTML
-msgid "Learn how Mozilla handles your information in our {{link}}."
-msgstr "ہمارے {{link}} پر سیکھیے کہ Mozilla آپ کی معلومات کیسے رکھتا ہے۔"
+#: learn-more-privacy2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information in our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>."
+msgstr ""
 
 #: learn-more-privacy-link
 msgid "privacy policy"
@@ -1235,6 +1249,15 @@ msgstr "{{step}} مرحلہ کے {{total}}"
 #: progressbar.ariaLabel
 msgid "First Time Experience"
 msgstr "پہلی بار کا تجربہ"
+
+#~ msgid "Learn more at {{link}}"
+#~ msgstr "مزید سیکھیں اس {{link}} سے"
+
+#~ msgid "Learn how Mozilla handles your information at {{link}}"
+#~ msgstr "{{link}} پر سیکھیے کہ Mozilla آپ کی معلومات کیسے رکھتا ہے"
+
+#~ msgid "Learn how Mozilla handles your information in our {{link}}."
+#~ msgstr "ہمارے {{link}} پر سیکھیے کہ Mozilla آپ کی معلومات کیسے رکھتا ہے۔"
 
 #~ msgid ""
 #~ "A Firefox Account lets you use features like Find My Device and apps like "

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17 11:13+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: 2014-09-23 08:32+0000\n"
 "Last-Translator: Gayan <gkgkalhara@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1411461155.000000\n"
@@ -578,21 +578,24 @@ msgstr "සෑම පැයකම"
 msgid "Manually"
 msgstr "හස්තීයව"
 
-#. # Dynamically added sync interval checks. These are only added via special
-#. # debug/development tools, and are always in seconds. Otherwise, just
-#. # the settings-check-every-* options are visible.
+#. # LOCALIZATION NOTE(settings-check-dynamic):
+#. # DEBUG ONLY Dynamically added sync interval checks. These are only added via
+#. # special debug/development tools, and are always in seconds. Otherwise, just
+#. # the settings-check-every-* options are visible.  The zero case is impossible
+#. # (a separate string is used) and 20 seconds is the currently lowest possible
+#. # value.
 #: settings-check-dynamic
 msgctxt "settings-check-dynamic"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: settings-check-dynamic[zero]
-msgid "seconds"
-msgstr "තත්පර"
+msgid "disabled"
+msgstr ""
 
 #: settings-check-dynamic[one]
-msgctxt "settings-check-dynamic[one]"
-msgid "{{ n }} seconds"
+#, fuzzy
+msgid "{{ n }} second"
 msgstr "තත්පර {{ n }}"
 
 #: settings-check-dynamic[two]
@@ -809,10 +812,6 @@ msgstr "මාතෘකාව"
 #: compose-draft-save
 msgid "Save to Local Drafts"
 msgstr "පරිස්ථානීය කටුසටහන් වලට සුරකින්න"
-
-#: compose-discard-message
-msgid "Discard email?"
-msgstr "විද්‍යුත් තැපැල් පණිවුඩය ඉවත දමන්න ද?"
 
 #: compose-discard-confirm
 msgctxt "compose-discard-confirm"
@@ -1625,6 +1624,12 @@ msgstr "නව විද්‍යුත් තැපැල් පණිවුඩ
 #: new-emails-notify-multiple-accounts-body
 msgid "{{ from }} “{{ subject }}”"
 msgstr "{{ from }} “{{ subject }}”"
+
+#~ msgid "seconds"
+#~ msgstr "තත්පර"
+
+#~ msgid "Discard email?"
+#~ msgstr "විද්‍යුත් තැපැල් පණිවුඩය ඉවත දමන්න ද?"
 
 #~ msgctxt "new-emails"
 #~ msgid "{[ plural(n) ]}"

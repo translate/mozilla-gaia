@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17 11:13+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: 2014-09-08 06:36+0000\n"
 "Last-Translator: Veeven <veeven@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1410158168.000000\n"
@@ -49,6 +49,15 @@ msgstr "దాటవేయి"
 msgid "Clear"
 msgstr "చెరుపు"
 
+#: enable
+msgid "Enable"
+msgstr ""
+
+#: turnOn
+#, fuzzy
+msgid "Turn On"
+msgstr "ఆన్ చేయి"
+
 #. # LOCALIZATION NOTE(undo.ariaLabel): The following string is spoken by screen
 #. # readers and not shown on the screen.
 #: undo.ariaLabel
@@ -75,11 +84,11 @@ msgstr "ప్లేబ్యాక్ నియంత్రికలు"
 msgid "Previous"
 msgstr "మునుపటి"
 
-#: mediaPlaybackPlay
+#: mediaPlaybackPlay.ariaLabel
 msgid "Play"
 msgstr "ఆడించు"
 
-#: mediaPlaybackPause
+#: mediaPlaybackPause.ariaLabel
 msgid "Pause"
 msgstr "నిలిపివుంచు"
 
@@ -156,11 +165,11 @@ msgstr "%b %e"
 msgid "Status Bar"
 msgstr "స్థితి పట్టీ"
 
-#: statusbarBattery
+#: statusbarBattery.ariaLabel
 msgid "Battery {{level}} percent"
 msgstr "బ్యాటరీ {{level}} శాతం"
 
-#: statusbarBatteryCharging
+#: statusbarBatteryCharging.ariaLabel
 msgid "Battery {{level}} percent, charging"
 msgstr "బ్యాటరీ {{level}} శాతం, చార్జవుతూంది"
 
@@ -273,55 +282,65 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: statusbarNotifications[one]
-msgid "{{n}} notification"
+#, fuzzy
+msgid "{{n}} Notification"
 msgstr "{{n}} గమనింపు"
 
 #: statusbarNotifications[two]
+#, fuzzy
 msgctxt "statusbarNotifications[two]"
-msgid "{{n}} notifications"
+msgid "{{n}} Notifications"
 msgstr "{{n}} గమనింపులు"
 
 #: statusbarNotifications[few]
+#, fuzzy
 msgctxt "statusbarNotifications[few]"
-msgid "{{n}} notifications"
+msgid "{{n}} Notifications"
 msgstr "{{n}} గమనింపులు"
 
 #: statusbarNotifications[many]
+#, fuzzy
 msgctxt "statusbarNotifications[many]"
-msgid "{{n}} notifications"
+msgid "{{n}} Notifications"
 msgstr "{{n}} గమనింపులు"
 
 #: statusbarNotifications[other]
+#, fuzzy
 msgctxt "statusbarNotifications[other]"
-msgid "{{n}} notifications"
+msgid "{{n}} Notifications"
 msgstr "{{n}} గమనింపులు"
 
-#: statusbarNotifications-unread
-msgctxt "statusbarNotifications-unread"
+#: statusbarNotifications-unread.ariaLabel
+#, fuzzy
+msgctxt "statusbarNotifications-unread.ariaLabel"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: statusbarNotifications-unread[one]
+#: statusbarNotifications-unread.ariaLabel[one]
 msgid "{{n}} unread notification"
 msgstr "{{n}} చదవని గమనింపులు"
 
-#: statusbarNotifications-unread[two]
-msgctxt "statusbarNotifications-unread[two]"
+#: statusbarNotifications-unread.ariaLabel[two]
+#, fuzzy
+msgctxt "statusbarNotifications-unread.ariaLabel[two]"
 msgid "{{n}} unread notifications"
 msgstr "{{n}} చదవని గమనింపులు"
 
-#: statusbarNotifications-unread[few]
-msgctxt "statusbarNotifications-unread[few]"
+#: statusbarNotifications-unread.ariaLabel[few]
+#, fuzzy
+msgctxt "statusbarNotifications-unread.ariaLabel[few]"
 msgid "{{n}} unread notifications"
 msgstr "{{n}} చదవని గమనింపులు"
 
-#: statusbarNotifications-unread[many]
-msgctxt "statusbarNotifications-unread[many]"
+#: statusbarNotifications-unread.ariaLabel[many]
+#, fuzzy
+msgctxt "statusbarNotifications-unread.ariaLabel[many]"
 msgid "{{n}} unread notifications"
 msgstr "{{n}} చదవని గమనింపులు"
 
-#: statusbarNotifications-unread[other]
-msgctxt "statusbarNotifications-unread[other]"
+#: statusbarNotifications-unread.ariaLabel[other]
+#, fuzzy
+msgctxt "statusbarNotifications-unread.ariaLabel[other]"
 msgid "{{n}} unread notifications"
 msgstr "{{n}} చదవని గమనింపులు"
 
@@ -837,37 +856,47 @@ msgstr "అవసరం"
 msgid "Uncompressing… <span>This can take a few minutes.</span>"
 msgstr "విప్పుతోంది... <span>ఇందుకు కొన్ని నిమిషాలు పట్టవచ్చు.</span>"
 
+#: downloadWifiPrioritizedUsing2G
+msgid ""
+"Updates are downloaded via data connection when Wi-Fi is not available. When "
+"using data connection, phone calls may be blocked and additional charges may "
+"also apply."
+msgstr ""
+"వై-ఫై అందుబాటులోలేనప్పుడు నవీకరణలు దత్తాంశ అనుసంధానం ద్వారా దించబడును. దత్తాంశ అనుసంధానం "
+"ఉపయోగించునప్పుడు, ఫోన్ కాల్స్‌కు అవరోధం కలగవచ్చు మరియు అదనపు చార్జీలు కూడా వర్తించవచ్చు."
+
+#: downloadWifiPrioritized3
+#, fuzzy
+msgid ""
+"Updates are downloaded via data connection when Wi-Fi is not available. When "
+"using data connection, additional charges may apply."
+msgstr ""
+"వై-ఫై అందుబాటులోలేనప్పుడు నవీకరణలు దత్తాంశ అనుసంధానం ద్వారా దించబడును. దత్తాంశ అనుసంధానం "
+"ఉపయోగించునప్పుడు, ఫోన్ కాల్స్‌కు అవరోధం కలగవచ్చు మరియు అదనపు చార్జీలు కూడా వర్తించవచ్చు."
+
 #: downloadNoWifiWarning
 msgid ""
 "Wi-Fi unavailable. Updating over current connection may incur additional "
 "charges."
 msgstr "వై-ఫై అందుబాటులోలేదు. ప్రస్తుత అనుసంధానంలో నవీకరించుట అదనపు ఖర్చుతో కూడివుంది."
 
-#: downloadOfflineWarning
-msgid "Connection unavailable. Connect to a network to download updates."
-msgstr "అనుసంధానం అందుబాటులోలేదు. నవీకరణలు దించుటకు నెట్వర్కునకు అనుసంధానమవ్వండి."
-
-#: downloadDataConnectionWarning
-msgid ""
-"Updates are downloaded via data connection when Wi-Fi is not available. "
-"Additional data charges may apply."
+#: downloadOfflineWarning2
+msgid "Connect to a network to download updates."
 msgstr ""
-"వై-ఫై అందుబాటులోలేనప్పుడు నవీకరణలు దత్తాంశ అనుసంధానం ద్వారా దించబడును. దత్తాంశానికి అదనపు చార్జీలు "
-"వర్తించవచ్చు."
 
 #: downloadUpdatesViaDataConnection
 msgid "Download updates via data connection?"
 msgstr "దత్తాంశ అనుసంధానం ద్వారా నవీకరణలు దించుకోవాలా?"
 
-#: downloadUpdatesVia2GForbidden2
+#: downloadUpdatesVia2GForbidden3
 msgid ""
 "Downloading updates is not possible on slow connections (2G). Please connect "
 "via Wi-Fi or 3G (if available) and try again."
 msgstr ""
 
-#: downloadUpdatesViaDataConnectionMessage2
+#: downloadUpdatesViaDataConnectionMessage3
 msgid ""
-"When using a data connection, additional charges may apply. Do you want to "
+"When using a data connection, additional costs may apply. Do you want to "
 "continue?"
 msgstr ""
 
@@ -910,6 +939,10 @@ msgstr ""
 
 #: logsFailed
 msgid "The logs could not be saved"
+msgstr ""
+
+#: logsStart
+msgid "Capturing logs ..."
 msgstr ""
 
 #. # lock screen
@@ -1041,6 +1074,18 @@ msgstr ""
 msgctxt "unrecoverable-error-action"
 msgid "OK"
 msgstr "సరే"
+
+#. # Quick settings dialog
+#: data-roaming-enabled-title
+msgid "Turn on data roaming?"
+msgstr ""
+
+#: data-roaming-enabled-warning2
+msgid ""
+"In order to access the Internet, you need to turn on data roaming. Depending "
+"on your service agreement, extra charges may apply. Do you want to turn data "
+"on?"
+msgstr ""
 
 #. # value selector, time/date picker
 #: select-time
@@ -1313,9 +1358,9 @@ msgstr "తెలియని పరికరం"
 msgid "Can not open received file"
 msgstr "అందుకున్న దస్త్రాన్ని తెరవలేము"
 
-#: unknownMediaTypeToOpen
-msgid "Can not open unknown media type:"
-msgstr "తెలియని మాధ్యమ రకాన్ని తెరవలేము:"
+#: unknownMediaTypeToOpenFile
+msgid "Can not open unknown media type: {{fileName}}"
+msgstr ""
 
 #: cannotReceiveFile
 msgid "Can not receive file"
@@ -2016,23 +2061,50 @@ msgctxt "search-or-enter-address.placeholder"
 msgid "Search or enter address"
 msgstr "వెతకండి లేదా చిరునామా ఇవ్వండి"
 
-#. # Hotspot
-#: noSIMCardInHotspot
-msgid "SIM card is absent or inserted incorrectly, so turn off hotspot"
-msgstr "సిమ్ కార్డ్ లేదు లేదా సరిగా చొప్పించలేదు, హాట్‌స్పాట్ ఆఫ్ చేయండి"
+#. # LOCALIZATION NOTE: The following strings are spoken by screen readers and
+#. # not shown on the screen.
+#: reload-button.ariaLabel
+msgid "Reload"
+msgstr ""
 
-#: noHopspotWhenAPMisOn
-msgid "Turn off airplane mode to use Wi-Fi hotspot"
+#: stop-button.ariaLabel
+msgid "Stop"
+msgstr ""
+
+#. # Hotspot
+#: noSIMCardInHotspot3
+msgid "Hotspot off: SIM card missing or inserted incorrectly."
+msgstr ""
+
+#: noHotspotWhenAPMisOnWifiHotspot
+#, fuzzy
+msgid "Turn off airplane mode to use Wi-Fi hotspot."
 msgstr "వై-ఫై హాట్‌స్పాట్ వాడుటకు విమాన రీతిని ఆపివేయండి"
+
+#: noHotspotWhenAPMisOnUsbHotspot
+msgid "Turn off airplane mode to use USB tethering."
+msgstr ""
 
 #: apmActivated
 msgid "Airplane mode activated"
 msgstr "విమాన రీతి క్రియాశీలించబడింది"
 
+#: noConnectivityHead
+msgid "No data connection"
+msgstr ""
+
+#: noConnectivityMessageWifiHotspot
+msgid "Wi-Fi hotspot is disabled because there is no data connection."
+msgstr ""
+
+#: noConnectivityMessageUsbHotspot
+msgid "USB tethering is disabled because there is no data connection."
+msgstr ""
+
 #. # Browser Context Menu
-#: open-in-new-tab
-msgid "Open link in new tab"
-msgstr "లంకెను కొత్త టాబ్ నందు తెరవు"
+#: open-in-new-window
+msgid "Open in new window"
+msgstr ""
 
 #: add-link-to-home-screen
 msgid "Add link to home screen"
@@ -2069,6 +2141,57 @@ msgstr "దృశ్యకాన్ని పంచుకోండి"
 #: share-audio
 msgid "Share Audio"
 msgstr "శ్రవ్యకాన్ని పంచుకోండి"
+
+#: okCharsLeft
+msgid "OK ({{n}})"
+msgstr ""
+
+#~ msgctxt "statusbarNotifications[few]"
+#~ msgid "{{n}} notifications"
+#~ msgstr "{{n}} గమనింపులు"
+
+#~ msgctxt "statusbarNotifications[many]"
+#~ msgid "{{n}} notifications"
+#~ msgstr "{{n}} గమనింపులు"
+
+#~ msgctxt "statusbarNotifications[other]"
+#~ msgid "{{n}} notifications"
+#~ msgstr "{{n}} గమనింపులు"
+
+#~ msgctxt "statusbarNotifications-unread"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "statusbarNotifications-unread[few]"
+#~ msgid "{{n}} unread notifications"
+#~ msgstr "{{n}} చదవని గమనింపులు"
+
+#~ msgctxt "statusbarNotifications-unread[many]"
+#~ msgid "{{n}} unread notifications"
+#~ msgstr "{{n}} చదవని గమనింపులు"
+
+#~ msgctxt "statusbarNotifications-unread[other]"
+#~ msgid "{{n}} unread notifications"
+#~ msgstr "{{n}} చదవని గమనింపులు"
+
+#~ msgid "Connection unavailable. Connect to a network to download updates."
+#~ msgstr "అనుసంధానం అందుబాటులోలేదు. నవీకరణలు దించుటకు నెట్వర్కునకు అనుసంధానమవ్వండి."
+
+#~ msgid ""
+#~ "Updates are downloaded via data connection when Wi-Fi is not available. "
+#~ "Additional data charges may apply."
+#~ msgstr ""
+#~ "వై-ఫై అందుబాటులోలేనప్పుడు నవీకరణలు దత్తాంశ అనుసంధానం ద్వారా దించబడును. దత్తాంశానికి అదనపు "
+#~ "చార్జీలు వర్తించవచ్చు."
+
+#~ msgid "Can not open unknown media type:"
+#~ msgstr "తెలియని మాధ్యమ రకాన్ని తెరవలేము:"
+
+#~ msgid "SIM card is absent or inserted incorrectly, so turn off hotspot"
+#~ msgstr "సిమ్ కార్డ్ లేదు లేదా సరిగా చొప్పించలేదు, హాట్‌స్పాట్ ఆఫ్ చేయండి"
+
+#~ msgid "Open link in new tab"
+#~ msgstr "లంకెను కొత్త టాబ్ నందు తెరవు"
 
 #~ msgid "No recent apps"
 #~ msgstr "ఇటీవలి అనువర్తనాలు లేవు"
@@ -2225,14 +2348,6 @@ msgstr "శ్రవ్యకాన్ని పంచుకోండి"
 
 #~ msgid "Battery almost empty"
 #~ msgstr "బ్యాటరీ దాదాపు అయిపోవచ్చింది"
-
-#~ msgid ""
-#~ "Updates are downloaded via data connection when Wi-Fi is not available. "
-#~ "When using data connection, phone calls may be blocked and additional "
-#~ "charges may also apply."
-#~ msgstr ""
-#~ "వై-ఫై అందుబాటులోలేనప్పుడు నవీకరణలు దత్తాంశ అనుసంధానం ద్వారా దించబడును. దత్తాంశ అనుసంధానం "
-#~ "ఉపయోగించునప్పుడు, ఫోన్ కాల్స్‌కు అవరోధం కలగవచ్చు మరియు అదనపు చార్జీలు కూడా వర్తించవచ్చు."
 
 #~ msgid ""
 #~ "A username and password are being requested by {{host}}. The site says: "

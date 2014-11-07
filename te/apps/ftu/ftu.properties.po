@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17 11:13+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: 2014-08-26 10:20+0000\n"
 "Last-Translator: Veeven <veeven@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1409048405.000000\n"
@@ -499,6 +499,10 @@ msgstr "సిమ్ పిన్ తాళంవెయబడెను"
 msgid "No operator"
 msgstr "ఆపరేటర్ లేరు"
 
+#: searchingOperator
+msgid "Searching"
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Language
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -604,6 +608,8 @@ msgid "secured by {{capabilities}}"
 msgstr "{{capabilities}} చే సురక్షితం"
 
 #: security
+#, fuzzy
+msgctxt "security"
 msgid "Security"
 msgstr "భద్రత"
 
@@ -626,6 +632,12 @@ msgstr "WPA-EAP"
 #: securityOpen
 msgid "Open"
 msgstr "తెరువు"
+
+#: securityOpen.ariaLabel
+#, fuzzy
+msgctxt "securityOpen.ariaLabel"
+msgid "Security"
+msgstr "భద్రత"
 
 #: identity
 msgctxt "identity"
@@ -675,11 +687,11 @@ msgstr "SSID నెట్‌వర్కు పేరు"
 #. # screen.
 #. # LOCALIZATION NOTE(wifiLevel): {{level}} will be replaced at run-time by a
 #. # number ranging from 1 to 4.
-#: wifiLevel
+#: wifiLevel.ariaLabel
 msgid "{{level}} of 4 bars"
 msgstr "4 పట్టీలకు గాను {{level}}"
 
-#: networksList
+#: networksList.ariaLabel
 msgid "Networks found"
 msgstr "నెట్‌వర్కులు కనబడ్డాయి"
 
@@ -861,26 +873,28 @@ msgstr ""
 "దత్తాంశంను టెలిమెట్రీ మెజిల్లాకు పంపును. మా ఉత్పత్తులను ఉత్తమంగా, వేగవంతంగా మరియు మరింత "
 "ప్రతిస్పందకంగా చేయుటకు ఇది ఉపయోగిస్తాము."
 
-#. # LOCALIZATION NOTE(learn-more-telemetry.innerHTML, learn-more-information.innerHTML:
-#. # {{link}} will be replaced at run-time by an active link, the URL will be
-#. # used as text for the link.
-#: learn-more-telemetry.innerHTML
-msgid "Learn more at {{link}}"
-msgstr "{{link}} వద్ద మరింత తెలుసుకోండి"
+#: learn-more-telemetry2.innerHTML
+msgid ""
+"Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
+"a>"
+msgstr ""
 
-#: learn-more-information.innerHTML
-msgid "Learn how Mozilla handles your information at {{link}}"
-msgstr "మీ సమాచారాన్ని మొజిల్లా ఎలా సంభాలిస్తుందో {{link}} వద్ద తెలుసుకోండి"
+#: learn-more-information2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # OS privacy
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: htmlWelcome.innerHTML
+#: htmlWelcome2.innerHTML
 #, fuzzy
 msgid ""
-"Welcome to {{link}}, the free and open source operating system from Mozilla. "
-"Our mission is to promote openness, innovation and opportunity by keeping "
-"the power of the Web in your hands."
+"Welcome to <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>, "
+"the free and open source operating system from Mozilla. Our mission is to "
+"promote openness, innovation and opportunity by keeping the power of the Web "
+"in your hands."
 msgstr ""
 "{{brandShortName}} కు స్వాగతం, మొజిల్లా నుండి ఉచిత మరియు ఓపెన్ సోర్స్ ఆపరేటింగ్ సిస్టమ్. వెబ్ యొక్క "
 "శక్తి సామర్థ్యాలు మీ చేతుల్లో ఉంచుతూ బాహాటతను, కొత్తకల్పనను మరియు ఆవశ్యకతను ప్రోత్సహించడం మా లక్ష్యం."
@@ -891,10 +905,11 @@ msgctxt "htmlWelcome-link"
 msgid "{{brandShortName}}"
 msgstr "{{brandShortName}}"
 
-#: helpImprove.innerHTML
+#: helpImprove2.innerHTML
 msgid ""
 "You can help us improve our products and services by automatically sending "
-"analytics data. See our {{link}} to learn how we handle data from your "
+"analytics data. See our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> to learn how we handle data from your "
 "device."
 msgstr ""
 
@@ -902,12 +917,11 @@ msgstr ""
 msgid "Privacy Notice"
 msgstr ""
 
-#. # LOCALIZATION NOTE(learn-more-privacy.innerHTML): {{link}} will be replaced at
-#. # run-time by an active link, string "learn-more-privacy-link" will be
-#. # used as text for the link.
-#: learn-more-privacy.innerHTML
-msgid "Learn how Mozilla handles your information in our {{link}}."
-msgstr "మీ సమాచారాన్ని మొజిల్లా ఎలా సంభాలిస్తుందో మా {{link}} నందు చూడండి."
+#: learn-more-privacy2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information in our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>."
+msgstr ""
 
 #: learn-more-privacy-link
 msgid "privacy policy"
@@ -1190,6 +1204,15 @@ msgstr "{{total}} కీ గాను {{step}} అంచె"
 #: progressbar.ariaLabel
 msgid "First Time Experience"
 msgstr "మొదటి అనుభూతి"
+
+#~ msgid "Learn more at {{link}}"
+#~ msgstr "{{link}} వద్ద మరింత తెలుసుకోండి"
+
+#~ msgid "Learn how Mozilla handles your information at {{link}}"
+#~ msgstr "మీ సమాచారాన్ని మొజిల్లా ఎలా సంభాలిస్తుందో {{link}} వద్ద తెలుసుకోండి"
+
+#~ msgid "Learn how Mozilla handles your information in our {{link}}."
+#~ msgstr "మీ సమాచారాన్ని మొజిల్లా ఎలా సంభాలిస్తుందో మా {{link}} నందు చూడండి."
 
 #~ msgid ""
 #~ "A Firefox Account lets you use features like Find My Device and apps like "

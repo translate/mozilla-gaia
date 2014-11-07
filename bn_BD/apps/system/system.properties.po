@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17 11:13+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: 2014-08-01 11:47+0000\n"
 "Last-Translator: Belayet <bellayet@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1406893633.000000\n"
@@ -49,6 +49,15 @@ msgstr "উপেক্ষা করুন"
 msgid "Clear"
 msgstr "পরিষ্কার"
 
+#: enable
+msgid "Enable"
+msgstr ""
+
+#: turnOn
+#, fuzzy
+msgid "Turn On"
+msgstr "চালু করুন"
+
 #. # LOCALIZATION NOTE(undo.ariaLabel): The following string is spoken by screen
 #. # readers and not shown on the screen.
 #: undo.ariaLabel
@@ -75,11 +84,11 @@ msgstr "প্লেব্যাক কন্ট্রোল"
 msgid "Previous"
 msgstr "পূর্ববর্তী"
 
-#: mediaPlaybackPlay
+#: mediaPlaybackPlay.ariaLabel
 msgid "Play"
 msgstr "চালানো"
 
-#: mediaPlaybackPause
+#: mediaPlaybackPause.ariaLabel
 msgid "Pause"
 msgstr "বিরতি"
 
@@ -156,11 +165,11 @@ msgstr "%b %e"
 msgid "Status Bar"
 msgstr "স্ট্যাটাস বার"
 
-#: statusbarBattery
+#: statusbarBattery.ariaLabel
 msgid "Battery {{level}} percent"
 msgstr "ব্যাটারি {{level}} শতাংশ"
 
-#: statusbarBatteryCharging
+#: statusbarBatteryCharging.ariaLabel
 msgid "Battery {{level}} percent, charging"
 msgstr "ব্যাটারি {{level}} শতাংশ, চার্জ হচ্ছে"
 
@@ -273,55 +282,65 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: statusbarNotifications[one]
-msgid "{{n}} notification"
+#, fuzzy
+msgid "{{n}} Notification"
 msgstr "{{n}}টি নোটিফিকেশন"
 
 #: statusbarNotifications[two]
+#, fuzzy
 msgctxt "statusbarNotifications[two]"
-msgid "{{n}} notifications"
+msgid "{{n}} Notifications"
 msgstr "{{n}}টি নোটিফিকেশন"
 
 #: statusbarNotifications[few]
+#, fuzzy
 msgctxt "statusbarNotifications[few]"
-msgid "{{n}} notifications"
+msgid "{{n}} Notifications"
 msgstr "{{n}}টি নোটিফিকেশন"
 
 #: statusbarNotifications[many]
+#, fuzzy
 msgctxt "statusbarNotifications[many]"
-msgid "{{n}} notifications"
+msgid "{{n}} Notifications"
 msgstr "{{n}}টি নোটিফিকেশন"
 
 #: statusbarNotifications[other]
+#, fuzzy
 msgctxt "statusbarNotifications[other]"
-msgid "{{n}} notifications"
+msgid "{{n}} Notifications"
 msgstr "{{n}}টি নোটিফিকেশন"
 
-#: statusbarNotifications-unread
-msgctxt "statusbarNotifications-unread"
+#: statusbarNotifications-unread.ariaLabel
+#, fuzzy
+msgctxt "statusbarNotifications-unread.ariaLabel"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: statusbarNotifications-unread[one]
+#: statusbarNotifications-unread.ariaLabel[one]
 msgid "{{n}} unread notification"
 msgstr "{{n}}টি অপঠিত নোটিফিকেশন"
 
-#: statusbarNotifications-unread[two]
-msgctxt "statusbarNotifications-unread[two]"
+#: statusbarNotifications-unread.ariaLabel[two]
+#, fuzzy
+msgctxt "statusbarNotifications-unread.ariaLabel[two]"
 msgid "{{n}} unread notifications"
 msgstr "{{n}}টি অপঠিত নোটিফিকেশন"
 
-#: statusbarNotifications-unread[few]
-msgctxt "statusbarNotifications-unread[few]"
+#: statusbarNotifications-unread.ariaLabel[few]
+#, fuzzy
+msgctxt "statusbarNotifications-unread.ariaLabel[few]"
 msgid "{{n}} unread notifications"
 msgstr "{{n}}টি অপঠিত নোটিফিকেশন"
 
-#: statusbarNotifications-unread[many]
-msgctxt "statusbarNotifications-unread[many]"
+#: statusbarNotifications-unread.ariaLabel[many]
+#, fuzzy
+msgctxt "statusbarNotifications-unread.ariaLabel[many]"
 msgid "{{n}} unread notifications"
 msgstr "{{n}}টি অপঠিত নোটিফিকেশন"
 
-#: statusbarNotifications-unread[other]
-msgctxt "statusbarNotifications-unread[other]"
+#: statusbarNotifications-unread.ariaLabel[other]
+#, fuzzy
+msgctxt "statusbarNotifications-unread.ariaLabel[other]"
 msgid "{{n}} unread notifications"
 msgstr "{{n}}টি অপঠিত নোটিফিকেশন"
 
@@ -840,6 +859,26 @@ msgstr "প্রয়োজনীয়"
 msgid "Uncompressing… <span>This can take a few minutes.</span>"
 msgstr "অসংকুচিত করা হচ্ছে... <span>এই কাজের জন্য কিছু সময় প্রয়োজন।</span>"
 
+#: downloadWifiPrioritizedUsing2G
+msgid ""
+"Updates are downloaded via data connection when Wi-Fi is not available. When "
+"using data connection, phone calls may be blocked and additional charges may "
+"also apply."
+msgstr ""
+"ওয়াই-ফাই না থাকায় ডাটা সংযোগের মাধ্যমে হালনাগাদ ডাউনলোড হয়েছে। যখন ডাটা সংযোগ "
+"ব্যবহার করা হয়, তখন ফোন কল ব্লক হয়ে যেতে পারে এবং অতিরিক্ত চার্জও প্রযোজ্য হতে "
+"পারে।"
+
+#: downloadWifiPrioritized3
+#, fuzzy
+msgid ""
+"Updates are downloaded via data connection when Wi-Fi is not available. When "
+"using data connection, additional charges may apply."
+msgstr ""
+"ওয়াই-ফাই না থাকায় ডাটা সংযোগের মাধ্যমে হালনাগাদ ডাউনলোড হয়েছে। যখন ডাটা সংযোগ "
+"ব্যবহার করা হয়, তখন ফোন কল ব্লক হয়ে যেতে পারে এবং অতিরিক্ত চার্জও প্রযোজ্য হতে "
+"পারে।"
+
 #: downloadNoWifiWarning
 msgid ""
 "Wi-Fi unavailable. Updating over current connection may incur additional "
@@ -848,31 +887,23 @@ msgstr ""
 "ওয়াই-ফাই উপলব্ধ নেই। বর্তমান সংযোগের মাধ্যমে হালনাগাদ করা হলে অতিরিক্ত চার্জ "
 "প্রযোজ্য হতে পারে।"
 
-#: downloadOfflineWarning
-msgid "Connection unavailable. Connect to a network to download updates."
-msgstr "সংযোগ উপলব্ধ নেই। হালনাগাদ ডাউনলোড করার জন্য একটি নেটওয়ার্কে সংযুক্ত হোন।"
-
-#: downloadDataConnectionWarning
-msgid ""
-"Updates are downloaded via data connection when Wi-Fi is not available. "
-"Additional data charges may apply."
+#: downloadOfflineWarning2
+msgid "Connect to a network to download updates."
 msgstr ""
-"যেহেতু ওয়াই-ফাই উপলব্ধ ছিলো না তাই ডাটা সংযোগের মাধ্যমে হালনাগাদ ডাউনলোড হয়েছে। "
-"অতিরিক্ত চার্জ প্রযোজ্য হতে পারে।"
 
 #: downloadUpdatesViaDataConnection
 msgid "Download updates via data connection?"
 msgstr "ডাটা সংযোগের মাধ্যমে হালনাগাদ ডাউনলোড করবেন?"
 
-#: downloadUpdatesVia2GForbidden2
+#: downloadUpdatesVia2GForbidden3
 msgid ""
 "Downloading updates is not possible on slow connections (2G). Please connect "
 "via Wi-Fi or 3G (if available) and try again."
 msgstr ""
 
-#: downloadUpdatesViaDataConnectionMessage2
+#: downloadUpdatesViaDataConnectionMessage3
 msgid ""
-"When using a data connection, additional charges may apply. Do you want to "
+"When using a data connection, additional costs may apply. Do you want to "
 "continue?"
 msgstr ""
 
@@ -915,6 +946,10 @@ msgstr ""
 
 #: logsFailed
 msgid "The logs could not be saved"
+msgstr ""
+
+#: logsStart
+msgid "Capturing logs ..."
 msgstr ""
 
 #. # lock screen
@@ -1047,6 +1082,18 @@ msgstr ""
 msgctxt "unrecoverable-error-action"
 msgid "OK"
 msgstr "ঠিক আছে"
+
+#. # Quick settings dialog
+#: data-roaming-enabled-title
+msgid "Turn on data roaming?"
+msgstr ""
+
+#: data-roaming-enabled-warning2
+msgid ""
+"In order to access the Internet, you need to turn on data roaming. Depending "
+"on your service agreement, extra charges may apply. Do you want to turn data "
+"on?"
+msgstr ""
 
 #. # value selector, time/date picker
 #: select-time
@@ -1319,9 +1366,9 @@ msgstr "অজানা ধরনের ডিভাইস"
 msgid "Can not open received file"
 msgstr "প্রাপ্ত ফাইলটি খোলা যাচ্ছে না"
 
-#: unknownMediaTypeToOpen
-msgid "Can not open unknown media type:"
-msgstr "অজ্ঞাত ধরনের মিডিয়া খোলা যাচ্ছে না:"
+#: unknownMediaTypeToOpenFile
+msgid "Can not open unknown media type: {{fileName}}"
+msgstr ""
 
 #: cannotReceiveFile
 msgid "Can not receive file"
@@ -2048,23 +2095,50 @@ msgctxt "search-or-enter-address.placeholder"
 msgid "Search or enter address"
 msgstr "ঠিকানা দিন অথবা অনুসন্ধান করুন"
 
-#. # Hotspot
-#: noSIMCardInHotspot
-msgid "SIM card is absent or inserted incorrectly, so turn off hotspot"
-msgstr "সিম কার্ড অনুপস্থিত বা ঠিক করে লাগানো হ​য় নি, তাই হটস্পট বন্ধ করুন"
+#. # LOCALIZATION NOTE: The following strings are spoken by screen readers and
+#. # not shown on the screen.
+#: reload-button.ariaLabel
+msgid "Reload"
+msgstr ""
 
-#: noHopspotWhenAPMisOn
-msgid "Turn off airplane mode to use Wi-Fi hotspot"
+#: stop-button.ariaLabel
+msgid "Stop"
+msgstr ""
+
+#. # Hotspot
+#: noSIMCardInHotspot3
+msgid "Hotspot off: SIM card missing or inserted incorrectly."
+msgstr ""
+
+#: noHotspotWhenAPMisOnWifiHotspot
+#, fuzzy
+msgid "Turn off airplane mode to use Wi-Fi hotspot."
 msgstr "ওয়াই ফাই হটস্পট ব্যবহার করার জন্য বিমান মোড বন্ধ করুন"
+
+#: noHotspotWhenAPMisOnUsbHotspot
+msgid "Turn off airplane mode to use USB tethering."
+msgstr ""
 
 #: apmActivated
 msgid "Airplane mode activated"
 msgstr "বিমান মোড সক্রিয়"
 
+#: noConnectivityHead
+msgid "No data connection"
+msgstr ""
+
+#: noConnectivityMessageWifiHotspot
+msgid "Wi-Fi hotspot is disabled because there is no data connection."
+msgstr ""
+
+#: noConnectivityMessageUsbHotspot
+msgid "USB tethering is disabled because there is no data connection."
+msgstr ""
+
 #. # Browser Context Menu
-#: open-in-new-tab
-msgid "Open link in new tab"
-msgstr "নতুন ট্যাবে লিংক খুলুন"
+#: open-in-new-window
+msgid "Open in new window"
+msgstr ""
 
 #: add-link-to-home-screen
 msgid "Add link to home screen"
@@ -2101,6 +2175,58 @@ msgstr "ভিডিও শেয়ার"
 #: share-audio
 msgid "Share Audio"
 msgstr "অডিও শেয়ার"
+
+#: okCharsLeft
+msgid "OK ({{n}})"
+msgstr ""
+
+#~ msgctxt "statusbarNotifications[few]"
+#~ msgid "{{n}} notifications"
+#~ msgstr "{{n}}টি নোটিফিকেশন"
+
+#~ msgctxt "statusbarNotifications[many]"
+#~ msgid "{{n}} notifications"
+#~ msgstr "{{n}}টি নোটিফিকেশন"
+
+#~ msgctxt "statusbarNotifications[other]"
+#~ msgid "{{n}} notifications"
+#~ msgstr "{{n}}টি নোটিফিকেশন"
+
+#~ msgctxt "statusbarNotifications-unread"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "statusbarNotifications-unread[few]"
+#~ msgid "{{n}} unread notifications"
+#~ msgstr "{{n}}টি অপঠিত নোটিফিকেশন"
+
+#~ msgctxt "statusbarNotifications-unread[many]"
+#~ msgid "{{n}} unread notifications"
+#~ msgstr "{{n}}টি অপঠিত নোটিফিকেশন"
+
+#~ msgctxt "statusbarNotifications-unread[other]"
+#~ msgid "{{n}} unread notifications"
+#~ msgstr "{{n}}টি অপঠিত নোটিফিকেশন"
+
+#~ msgid "Connection unavailable. Connect to a network to download updates."
+#~ msgstr ""
+#~ "সংযোগ উপলব্ধ নেই। হালনাগাদ ডাউনলোড করার জন্য একটি নেটওয়ার্কে সংযুক্ত হোন।"
+
+#~ msgid ""
+#~ "Updates are downloaded via data connection when Wi-Fi is not available. "
+#~ "Additional data charges may apply."
+#~ msgstr ""
+#~ "যেহেতু ওয়াই-ফাই উপলব্ধ ছিলো না তাই ডাটা সংযোগের মাধ্যমে হালনাগাদ ডাউনলোড "
+#~ "হয়েছে। অতিরিক্ত চার্জ প্রযোজ্য হতে পারে।"
+
+#~ msgid "Can not open unknown media type:"
+#~ msgstr "অজ্ঞাত ধরনের মিডিয়া খোলা যাচ্ছে না:"
+
+#~ msgid "SIM card is absent or inserted incorrectly, so turn off hotspot"
+#~ msgstr "সিম কার্ড অনুপস্থিত বা ঠিক করে লাগানো হ​য় নি, তাই হটস্পট বন্ধ করুন"
+
+#~ msgid "Open link in new tab"
+#~ msgstr "নতুন ট্যাবে লিংক খুলুন"
 
 #~ msgid "No recent apps"
 #~ msgstr "কোন সাম্প্রতিক অ্যাপ নেই"
@@ -2271,15 +2397,6 @@ msgstr "অডিও শেয়ার"
 
 #~ msgid "Battery almost empty"
 #~ msgstr "ব্যাটারি প্রায় শেষ"
-
-#~ msgid ""
-#~ "Updates are downloaded via data connection when Wi-Fi is not available. "
-#~ "When using data connection, phone calls may be blocked and additional "
-#~ "charges may also apply."
-#~ msgstr ""
-#~ "ওয়াই-ফাই না থাকায় ডাটা সংযোগের মাধ্যমে হালনাগাদ ডাউনলোড হয়েছে। যখন ডাটা "
-#~ "সংযোগ ব্যবহার করা হয়, তখন ফোন কল ব্লক হয়ে যেতে পারে এবং অতিরিক্ত চার্জও "
-#~ "প্রযোজ্য হতে পারে।"
 
 #~ msgid ""
 #~ "A username and password are being requested by {{host}}. The site says: "

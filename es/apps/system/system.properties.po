@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17 11:13+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: 2014-10-16 14:42+0000\n"
 "Last-Translator: inma610 <inma.barrios@mozilla-hispano.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1413470535.000000\n"
@@ -48,6 +48,15 @@ msgstr "Omitir"
 msgid "Clear"
 msgstr "Borrar"
 
+#: enable
+msgid "Enable"
+msgstr ""
+
+#: turnOn
+#, fuzzy
+msgid "Turn On"
+msgstr "Activar"
+
 #. # LOCALIZATION NOTE(undo.ariaLabel): The following string is spoken by screen
 #. # readers and not shown on the screen.
 #: undo.ariaLabel
@@ -74,11 +83,11 @@ msgstr "Controles de música"
 msgid "Previous"
 msgstr "Anterior"
 
-#: mediaPlaybackPlay
+#: mediaPlaybackPlay.ariaLabel
 msgid "Play"
 msgstr "Reproducir"
 
-#: mediaPlaybackPause
+#: mediaPlaybackPause.ariaLabel
 msgid "Pause"
 msgstr "Pausar"
 
@@ -155,11 +164,11 @@ msgstr "%e de %b"
 msgid "Status Bar"
 msgstr "Barra de estado"
 
-#: statusbarBattery
+#: statusbarBattery.ariaLabel
 msgid "Battery {{level}} percent"
 msgstr "Batería: {{level}} por ciento"
 
-#: statusbarBatteryCharging
+#: statusbarBatteryCharging.ariaLabel
 msgid "Battery {{level}} percent, charging"
 msgstr "Batería: {{level}} por ciento, cargando"
 
@@ -272,55 +281,65 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: statusbarNotifications[one]
-msgid "{{n}} notification"
+#, fuzzy
+msgid "{{n}} Notification"
 msgstr "{{n}} notificación"
 
 #: statusbarNotifications[two]
+#, fuzzy
 msgctxt "statusbarNotifications[two]"
-msgid "{{n}} notifications"
+msgid "{{n}} Notifications"
 msgstr "{{n}} notificaciones"
 
 #: statusbarNotifications[few]
+#, fuzzy
 msgctxt "statusbarNotifications[few]"
-msgid "{{n}} notifications"
+msgid "{{n}} Notifications"
 msgstr "{{n}} notificaciones"
 
 #: statusbarNotifications[many]
+#, fuzzy
 msgctxt "statusbarNotifications[many]"
-msgid "{{n}} notifications"
+msgid "{{n}} Notifications"
 msgstr "{{n}} notificaciones"
 
 #: statusbarNotifications[other]
+#, fuzzy
 msgctxt "statusbarNotifications[other]"
-msgid "{{n}} notifications"
+msgid "{{n}} Notifications"
 msgstr "{{n}} notificaciones"
 
-#: statusbarNotifications-unread
-msgctxt "statusbarNotifications-unread"
+#: statusbarNotifications-unread.ariaLabel
+#, fuzzy
+msgctxt "statusbarNotifications-unread.ariaLabel"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: statusbarNotifications-unread[one]
+#: statusbarNotifications-unread.ariaLabel[one]
 msgid "{{n}} unread notification"
 msgstr "{{n}} notificación sin leer"
 
-#: statusbarNotifications-unread[two]
-msgctxt "statusbarNotifications-unread[two]"
+#: statusbarNotifications-unread.ariaLabel[two]
+#, fuzzy
+msgctxt "statusbarNotifications-unread.ariaLabel[two]"
 msgid "{{n}} unread notifications"
 msgstr "{{n}} notificaciones sin leer"
 
-#: statusbarNotifications-unread[few]
-msgctxt "statusbarNotifications-unread[few]"
+#: statusbarNotifications-unread.ariaLabel[few]
+#, fuzzy
+msgctxt "statusbarNotifications-unread.ariaLabel[few]"
 msgid "{{n}} unread notifications"
 msgstr "{{n}} notificaciones sin leer"
 
-#: statusbarNotifications-unread[many]
-msgctxt "statusbarNotifications-unread[many]"
+#: statusbarNotifications-unread.ariaLabel[many]
+#, fuzzy
+msgctxt "statusbarNotifications-unread.ariaLabel[many]"
 msgid "{{n}} unread notifications"
 msgstr "{{n}} notificaciones sin leer"
 
-#: statusbarNotifications-unread[other]
-msgctxt "statusbarNotifications-unread[other]"
+#: statusbarNotifications-unread.ariaLabel[other]
+#, fuzzy
+msgctxt "statusbarNotifications-unread.ariaLabel[other]"
 msgid "{{n}} unread notifications"
 msgstr "{{n}} notificaciones sin leer"
 
@@ -848,6 +867,22 @@ msgstr "Requerida"
 msgid "Uncompressing… <span>This can take a few minutes.</span>"
 msgstr "Descomprimiendo… <span>Puede tardar unos minutos.</span>"
 
+#: downloadWifiPrioritizedUsing2G
+msgid ""
+"Updates are downloaded via data connection when Wi-Fi is not available. When "
+"using data connection, phone calls may be blocked and additional charges may "
+"also apply."
+msgstr ""
+
+#: downloadWifiPrioritized3
+#, fuzzy
+msgid ""
+"Updates are downloaded via data connection when Wi-Fi is not available. When "
+"using data connection, additional charges may apply."
+msgstr ""
+"Las actualizaciones se descargan a través de una conexión de datos cuando no "
+"hay una conexión wifi disponible."
+
 #: downloadNoWifiWarning
 msgid ""
 "Wi-Fi unavailable. Updating over current connection may incur additional "
@@ -856,25 +891,15 @@ msgstr ""
 "La red wifi no está disponible. Actualizar bajo su conexión actual podría "
 "incurrir en cargos adicionales."
 
-#: downloadOfflineWarning
-msgid "Connection unavailable. Connect to a network to download updates."
+#: downloadOfflineWarning2
+msgid "Connect to a network to download updates."
 msgstr ""
-"La conexión no está disponible. Conéctese a una red para descargar "
-"actualizaciones."
-
-#: downloadDataConnectionWarning
-msgid ""
-"Updates are downloaded via data connection when Wi-Fi is not available. "
-"Additional data charges may apply."
-msgstr ""
-"Las actualizaciones se descargan a través de una conexión de datos cuando no "
-"hay una conexión wifi disponible."
 
 #: downloadUpdatesViaDataConnection
 msgid "Download updates via data connection?"
 msgstr "¿Descargar bajo una conexión de datos?"
 
-#: downloadUpdatesVia2GForbidden2
+#: downloadUpdatesVia2GForbidden3
 msgid ""
 "Downloading updates is not possible on slow connections (2G). Please connect "
 "via Wi-Fi or 3G (if available) and try again."
@@ -882,9 +907,10 @@ msgstr ""
 "No es posible descargar actualizaciones en conexiones lentas (2G). Conéctese "
 "a través de wifi o 3G (si está disponible) y pruebe nuevo."
 
-#: downloadUpdatesViaDataConnectionMessage2
+#: downloadUpdatesViaDataConnectionMessage3
+#, fuzzy
 msgid ""
-"When using a data connection, additional charges may apply. Do you want to "
+"When using a data connection, additional costs may apply. Do you want to "
 "continue?"
 msgstr ""
 "Al utilizar una conexión de datos, se aplicarán tarifas adicionales ¿Desea "
@@ -930,6 +956,10 @@ msgstr "Registros guardados"
 #: logsFailed
 msgid "The logs could not be saved"
 msgstr "Los registros no se guardaron"
+
+#: logsStart
+msgid "Capturing logs ..."
+msgstr ""
 
 #. # lock screen
 #: emergency-call-button
@@ -1061,6 +1091,18 @@ msgstr ""
 msgctxt "unrecoverable-error-action"
 msgid "OK"
 msgstr "Aceptar"
+
+#. # Quick settings dialog
+#: data-roaming-enabled-title
+msgid "Turn on data roaming?"
+msgstr ""
+
+#: data-roaming-enabled-warning2
+msgid ""
+"In order to access the Internet, you need to turn on data roaming. Depending "
+"on your service agreement, extra charges may apply. Do you want to turn data "
+"on?"
+msgstr ""
 
 #. # value selector, time/date picker
 #: select-time
@@ -1336,9 +1378,9 @@ msgstr "Dispositivo desconocido"
 msgid "Can not open received file"
 msgstr "No se puede abrir fichero recibido"
 
-#: unknownMediaTypeToOpen
-msgid "Can not open unknown media type:"
-msgstr "No se puede abrir tipo de archivo multimedia desconocido:"
+#: unknownMediaTypeToOpenFile
+msgid "Can not open unknown media type: {{fileName}}"
+msgstr ""
 
 #: cannotReceiveFile
 msgid "Can not receive file"
@@ -2071,25 +2113,50 @@ msgctxt "search-or-enter-address.placeholder"
 msgid "Search or enter address"
 msgstr "Busque o escriba dirección"
 
-#. # Hotspot
-#: noSIMCardInHotspot
-msgid "SIM card is absent or inserted incorrectly, so turn off hotspot"
+#. # LOCALIZATION NOTE: The following strings are spoken by screen readers and
+#. # not shown on the screen.
+#: reload-button.ariaLabel
+msgid "Reload"
 msgstr ""
-"No se encuentra la tarjeta SIM o no está insertada correctamente, desactive "
-"el punto de acceso"
 
-#: noHopspotWhenAPMisOn
-msgid "Turn off airplane mode to use Wi-Fi hotspot"
+#: stop-button.ariaLabel
+msgid "Stop"
+msgstr ""
+
+#. # Hotspot
+#: noSIMCardInHotspot3
+msgid "Hotspot off: SIM card missing or inserted incorrectly."
+msgstr ""
+
+#: noHotspotWhenAPMisOnWifiHotspot
+#, fuzzy
+msgid "Turn off airplane mode to use Wi-Fi hotspot."
 msgstr "Desactive el modo avión para usar el punto de acceso wifi."
+
+#: noHotspotWhenAPMisOnUsbHotspot
+msgid "Turn off airplane mode to use USB tethering."
+msgstr ""
 
 #: apmActivated
 msgid "Airplane mode activated"
 msgstr "Modo avión activado"
 
+#: noConnectivityHead
+msgid "No data connection"
+msgstr ""
+
+#: noConnectivityMessageWifiHotspot
+msgid "Wi-Fi hotspot is disabled because there is no data connection."
+msgstr ""
+
+#: noConnectivityMessageUsbHotspot
+msgid "USB tethering is disabled because there is no data connection."
+msgstr ""
+
 #. # Browser Context Menu
-#: open-in-new-tab
-msgid "Open link in new tab"
-msgstr "Abrir enlace en una nueva pestaña"
+#: open-in-new-window
+msgid "Open in new window"
+msgstr ""
 
 #: add-link-to-home-screen
 msgid "Add link to home screen"
@@ -2126,6 +2193,54 @@ msgstr "Compartir vídeo"
 #: share-audio
 msgid "Share Audio"
 msgstr "Compartir audio"
+
+#: okCharsLeft
+msgid "OK ({{n}})"
+msgstr ""
+
+#~ msgctxt "statusbarNotifications[few]"
+#~ msgid "{{n}} notifications"
+#~ msgstr "{{n}} notificaciones"
+
+#~ msgctxt "statusbarNotifications[many]"
+#~ msgid "{{n}} notifications"
+#~ msgstr "{{n}} notificaciones"
+
+#~ msgctxt "statusbarNotifications[other]"
+#~ msgid "{{n}} notifications"
+#~ msgstr "{{n}} notificaciones"
+
+#~ msgctxt "statusbarNotifications-unread"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "statusbarNotifications-unread[few]"
+#~ msgid "{{n}} unread notifications"
+#~ msgstr "{{n}} notificaciones sin leer"
+
+#~ msgctxt "statusbarNotifications-unread[many]"
+#~ msgid "{{n}} unread notifications"
+#~ msgstr "{{n}} notificaciones sin leer"
+
+#~ msgctxt "statusbarNotifications-unread[other]"
+#~ msgid "{{n}} unread notifications"
+#~ msgstr "{{n}} notificaciones sin leer"
+
+#~ msgid "Connection unavailable. Connect to a network to download updates."
+#~ msgstr ""
+#~ "La conexión no está disponible. Conéctese a una red para descargar "
+#~ "actualizaciones."
+
+#~ msgid "Can not open unknown media type:"
+#~ msgstr "No se puede abrir tipo de archivo multimedia desconocido:"
+
+#~ msgid "SIM card is absent or inserted incorrectly, so turn off hotspot"
+#~ msgstr ""
+#~ "No se encuentra la tarjeta SIM o no está insertada correctamente, "
+#~ "desactive el punto de acceso"
+
+#~ msgid "Open link in new tab"
+#~ msgstr "Abrir enlace en una nueva pestaña"
 
 #~ msgid "Battery almost empty. Plug in your charger."
 #~ msgstr "Batería casi agotada. Conecte el cargador."

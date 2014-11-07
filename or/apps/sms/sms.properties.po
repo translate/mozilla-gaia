@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17 11:13+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: 2014-06-26 03:36+0000\n"
 "Last-Translator: Subhashish <psubhashish@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1403753815.000000\n"
@@ -215,6 +215,8 @@ msgid "To:"
 msgstr "କାହା ପାଖକୁ:"
 
 #: send
+#, fuzzy
+msgctxt "send"
 msgid "Send"
 msgstr "ପଠାନ୍ତୁ"
 
@@ -266,6 +268,12 @@ msgstr "ନୂଆ ସନ୍ଦେଶ"
 #: sendMessage
 msgid "Send message"
 msgstr "ସନ୍ଦେଶ ପଠାନ୍ତୁ"
+
+#. # LOCALIZATION NOTE(sendMMSToEmail): shown when clicking on an e-mail inside
+#. # the body of a message to provide an option to send a multimedia message.
+#: sendMMSToEmail
+msgid "Send multimedia message"
+msgstr ""
 
 #: no-recipient
 msgid "(No recipient)"
@@ -373,41 +381,37 @@ msgstr "{{subject}} ବିଷୟ ଥିବା ଆପଣଙ୍କ ମଲ୍ଟି
 msgid "Your Multimedia Message (MMS), was sent on {{datetime}}"
 msgstr "ଆପଣଙ୍କ ମଲ୍ଟିମିଡ଼ିଆ ମେସେଜ (MMS) {{datetime}} ବେଳେ ପଠାଗଲା"
 
-#: message-status
-msgid "Status:"
-msgstr "ସ୍ଥିତି:"
+#: message-subject
+#, fuzzy
+msgid "Subject:"
+msgstr "ବିଷୟ"
 
-#: message-status-sent
-msgid "sent"
-msgstr "ପଠାଯାଇଛି"
+#: report-status-error
+msgid "Message could not be sent"
+msgstr ""
 
-#: message-status-received
-msgid "received"
-msgstr "ମିଳିଲା"
-
-#: message-status-sending
-msgid "sending"
-msgstr "ପଠାଯାଉଛି"
-
-#: message-status-error
-msgid "error"
-msgstr "ତ୍ରୁଟି"
-
-#: message-status-not-downloaded
+#: report-status-not-downloaded
 msgid "not downloaded"
 msgstr "ଡାଉନଲୋଡ଼ ହୋଇନାହିଁ"
 
-#: message-delivered
+#: report-status-delivered
 msgid "Delivered:"
 msgstr "ପହଞ୍ଚିଗଲା:"
 
-#: message-read-title
+#: report-status-read
 msgid "Read:"
 msgstr "ପଢନ୍ତୁ:"
 
-#: message-requested
-msgid "Requested"
-msgstr "ଅନୁରୋଧ କରାଯାଇଛି"
+#: report-status-pending
+msgid "Report requested"
+msgstr ""
+
+#. # LOCALIZATION NOTE(report-status-rejected): used to describe the outgoing mms
+#. # could not be downloaded by receiver(might be an invalid number or the number 
+#. # is not allowed to download mms)
+#: report-status-rejected
+msgid "Message rejected"
+msgstr ""
 
 #: message-size-was
 msgid "Message size:"
@@ -423,17 +427,22 @@ msgstr "%e %B %Y, {{shortTimeFormat}}"
 msgid "%e %B %Y, {{shortTimeFormat24}}"
 msgstr "%e %B %Y, {{shortTimeFormat}}"
 
-#: report-recipients
-msgid "Recipients:"
-msgstr "ଗ୍ରହଣ କର୍ତ୍ତା:"
+#: report-to-title
+msgid "To"
+msgstr ""
 
-#: report-from
-msgid "From:"
+#: report-from-title
+#, fuzzy
+msgid "From"
 msgstr "କାହା ଠାରୁ:"
 
 #: message-sent
 msgid "Sent:"
 msgstr "ପଠାଯାଇଛି:"
+
+#: message-sending
+msgid "{{message-delivery-status-sending}}"
+msgstr ""
 
 #: message-received
 msgid "Received:"
@@ -443,14 +452,18 @@ msgstr "ପ୍ର୍ରାପ୍ତ ହେଲା:"
 msgid "Via:"
 msgstr "ମାଧ୍ଯମ:"
 
+#: message-resend
+msgid "Resend"
+msgstr ""
+
 #. # Search functionality
 #: search
 msgid "Search"
 msgstr "ଖୋଜନ୍ତୁ"
 
-#: unknown-contact
-msgid "Unknown"
-msgstr "ଅଜଣା"
+#: unknown-contact-title
+msgid "Unknown Contact"
+msgstr ""
 
 #. # LOCALIZATION NOTE(phone-type-separator): used to separate phone type from
 #. # the number itself. It should be consistent with the characters used in
@@ -498,6 +511,11 @@ msgstr "ସନ୍ଦେଶଟି ପଠାଯାଇପାରିଲା ନାହ�
 #: resend-message
 msgid "Resend this message"
 msgstr "ସନ୍ଦେଶଟି ଆଉଥରେ ପଠାନ୍ତୁ"
+
+#: deleteMessage-confirmation
+#, fuzzy
+msgid "Delete selected message?"
+msgstr "ବଛାଯାଇଥିବା ସନ୍ଦେଶ ଲିଭାଇବେ?"
 
 #: deleteMessages-confirmation
 msgid "Delete selected messages?"
@@ -577,6 +595,15 @@ msgstr ""
 #: fdnBlocked2Title
 msgid "FDN active"
 msgstr "FDN ସକ୍ରିୟ"
+
+#. # LOCALIZATION NOTE (sms-counter-notice-label): if typed message exceeds the
+#. # character limit, more segments (messages) will be sent. {{number}} is the
+#. # number of current segment. 
+#. # Example: Limit 160 characters, toaster will show up when 161 characters 
+#. # typed, and string in toaster will be 'Editing SMS 2' (editing 2nd segment).
+#: sms-counter-notice-label
+msgid "Editing SMS {{number}}"
+msgstr ""
 
 #. #LOCALIZATION NOTE (fdnBlocked2Body): the English translation does not need the
 #. # actual number of phone numbers. If your translation needs it, you can still add it
@@ -907,12 +934,14 @@ msgstr "MMS ସନ୍ଦେଶ"
 msgid "Message is not downloaded yet."
 msgstr "ସନ୍ଦେଶଟି ଡାଉନଲୋଡ଼ ହୋଇନାହିଁ ।"
 
-#. # LOCALIZATION NOTE (not-downloaded-attachment, expired-attachment):
+#. # LOCALIZATION NOTE (tobedownloaded-attachment, expired-attachment):
 #. # {{date}} is replaced at run-time with a date. The format used to display
 #. # this date is specified in the string with ID 'expiry-date-format'.
-#: not-downloaded-attachment
-msgid "Attachment can be downloaded until {{date}}."
-msgstr "ଆଟାଚମେଣ୍ଟ {{date}} ତାରିଖ ଯାଏ ଡାଉନଲୋଡ଼ ହୋଇପାରିବ ନାହିଁ ।"
+#: tobedownloaded-attachment
+msgid ""
+"You received a multimedia message. You can use the link below to download "
+"its content until {{date}}."
+msgstr ""
 
 #: expired-attachment
 msgid "Sorry, the message expired on {{date}} and cannot be downloaded."
@@ -1003,6 +1032,13 @@ msgstr ""
 msgid "({{sim}}) {{sender}}"
 msgstr "({{sim}}) {{sender}}"
 
+#. #LOCALIZATION NOTE (send-button): localize only the ariaLabel
+#: send-button.ariaLabel
+#, fuzzy
+msgctxt "send-button.ariaLabel"
+msgid "Send"
+msgstr "ପଠାନ୍ତୁ"
+
 #. # LOCALIZATION NOTE (send-button-sim-indication): don't localize the
 #. # sim-indication itself as we use it to show the SIM number only. Yet obviously,
 #. # the "ariaLabel" needs to be localized.
@@ -1065,6 +1101,33 @@ msgstr "ପଢନ୍ତୁ:"
 #, fuzzy
 msgid "Error"
 msgstr "ତ୍ରୁଟି"
+
+#~ msgid "Status:"
+#~ msgstr "ସ୍ଥିତି:"
+
+#~ msgid "sent"
+#~ msgstr "ପଠାଯାଇଛି"
+
+#~ msgid "received"
+#~ msgstr "ମିଳିଲା"
+
+#~ msgid "sending"
+#~ msgstr "ପଠାଯାଉଛି"
+
+#~ msgid "error"
+#~ msgstr "ତ୍ରୁଟି"
+
+#~ msgid "Requested"
+#~ msgstr "ଅନୁରୋଧ କରାଯାଇଛି"
+
+#~ msgid "Recipients:"
+#~ msgstr "ଗ୍ରହଣ କର୍ତ୍ତା:"
+
+#~ msgid "Unknown"
+#~ msgstr "ଅଜଣା"
+
+#~ msgid "Attachment can be downloaded until {{date}}."
+#~ msgstr "ଆଟାଚମେଣ୍ଟ {{date}} ତାରିଖ ଯାଏ ଡାଉନଲୋଡ଼ ହୋଇପାରିବ ନାହିଁ ।"
 
 #~ msgctxt "selected"
 #~ msgid "{[ plural(n) ]}"

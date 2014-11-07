@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17 11:13+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: 2014-03-05 19:34+0000\n"
 "Last-Translator: Sasa <sasa@tekovic.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1394048063.000000\n"
@@ -58,50 +58,64 @@ msgstr ""
 msgid "Connecting"
 msgstr "Povezivanje"
 
-#. ## LOCALIZATION NOTE cf-async, cf-data, cf-fax, cf-packet, cf-pad, cf-sms, cf-sync and cf-voice are the service the call forwarding is activate/inactive for.
-#. ## LOCALIZATION NOTE Its variables might be a phone number or cf-inactive.
-#: cf-async
-msgid "Asynchronous: {{ async }}\n"
+#: connectingEllipsis
+#, fuzzy
+msgid "Connecting…"
+msgstr "Povezivanje"
+
+#. ## LOCALIZATION NOTE call-forwarding-async, call-forwarding-data, call-forwarding-fax, call-forwarding-packet, call-forwarding-pad, call-forwarding-sms, call-forwarding-sync and call-forwarding-voice are the service the call forwarding is activate/inactive for.
+#. ## LOCALIZATION NOTE Its variables might be a phone number or call-forwarding-inactive.
+#: call-forwarding-async
+#, fuzzy
+msgid "Asynchronous: {{ async }}"
 msgstr "Asinkrono: {{ async }}\n"
 
-#: cf-data
-msgid "Data: {{ data }}\n"
+#: call-forwarding-data
+#, fuzzy
+msgid "Data: {{ data }}"
 msgstr "Podaci: {{ data }}\n"
 
-#: cf-error
+#: call-forwarding-error
 msgid "An error occurred while retrieving call forwarding status"
 msgstr "Došlo je do greške prilikom preuzimanja statusa proslijeđivanja poziva"
 
-#: cf-fax
-msgid "FAX: {{ fax }}\n"
+#: call-forwarding-fax
+#, fuzzy
+msgid "FAX: {{ fax }}"
 msgstr "FAKS: {{ fax }}\n"
 
-#: cf-inactive
+#: call-forwarding-inactive
 msgid "Inactive"
 msgstr "Neaktivno"
 
-#: cf-packet
-msgid "Packet: {{ packet }}\n"
+#: call-forwarding-packet
+#, fuzzy
+msgid "Packet: {{ packet }}"
 msgstr "Paket: {{ packet }}\n"
 
-#: cf-pad
-msgid "PAD: {{ pad }}\n"
+#: call-forwarding-pad
+#, fuzzy
+msgid "PAD: {{ pad }}"
 msgstr "PAD: {{ pad }}\n"
 
-#: cf-sms
-msgid "SMS: {{ sms }}\n"
+#: call-forwarding-sms
+#, fuzzy
+msgid "SMS: {{ sms }}"
 msgstr "SMS: {{ sms }}\n"
 
-#: cf-status
-msgid "Call forwarding status\n"
+#: call-forwarding-status
+#, fuzzy
+msgid "Call forwarding status"
 msgstr "Status proslijeđivanja poziva\n"
 
-#: cf-sync
-msgid "Synchronous: {{ sync }}\n"
+#: call-forwarding-sync
+#, fuzzy
+msgid "Synchronous: {{ sync }}"
 msgstr "Sinkrono: {{ sync }}\n"
 
-#: cf-voice
-msgid "Voice: {{ voice }}\n"
+#: call-forwarding-voice
+#, fuzzy
+msgid "Voice: {{ voice }}"
 msgstr "Glas: {{ voice }}\n"
 
 #: close
@@ -379,6 +393,11 @@ msgstr ""
 #: unknown
 msgid "Unknown"
 msgstr ""
+
+#: cancel
+#, fuzzy
+msgid "Cancel"
+msgstr "Otkaži"
 
 #. ## LOCALIZATION NOTE: these labels aren't displayed but they're used for acessibility
 #: hangup-a11y-button.ariaLabel

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17 11:13+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: 2014-11-05 13:46+0000\n"
 "Last-Translator: Manish  <dangol.manish@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1415195168.000000\n"
@@ -512,6 +512,10 @@ msgstr "सिम को पिन बन्द गरिएकोछ"
 msgid "No operator"
 msgstr "सञ्चालक छैन"
 
+#: searchingOperator
+msgid "Searching"
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Language
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -618,6 +622,8 @@ msgid "secured by {{capabilities}}"
 msgstr "सुरछित {{capabilities}} छ"
 
 #: security
+#, fuzzy
+msgctxt "security"
 msgid "Security"
 msgstr "सुरक्षा"
 
@@ -640,6 +646,12 @@ msgstr "डब्लु पी ए-इ ए पी"
 #: securityOpen
 msgid "Open"
 msgstr "खुल्ला"
+
+#: securityOpen.ariaLabel
+#, fuzzy
+msgctxt "securityOpen.ariaLabel"
+msgid "Security"
+msgstr "सुरक्षा"
 
 #: identity
 msgctxt "identity"
@@ -689,11 +701,11 @@ msgstr "एस् एस् आइ डी सञ्जाल नाम"
 #. # screen.
 #. # LOCALIZATION NOTE(wifiLevel): {{level}} will be replaced at run-time by a
 #. # number ranging from 1 to 4.
-#: wifiLevel
+#: wifiLevel.ariaLabel
 msgid "{{level}} of 4 bars"
 msgstr "4 बारहरू को {{level}}"
 
-#: networksList
+#: networksList.ariaLabel
 msgid "Networks found"
 msgstr "सञ्जाल फेला"
 
@@ -877,25 +889,28 @@ msgstr ""
 "कन्फिगुरेसन् र अनुकूलका डाटा पठाउँछ | हामी यस डाटालाई हाम्रो उत्पादनहरु राम्रो, छिटो, र "
 "अझ छरितो बनाउन प्रयोग गर्छौ |"
 
-#. # LOCALIZATION NOTE(learn-more-telemetry.innerHTML, learn-more-information.innerHTML:
-#. # {{link}} will be replaced at run-time by an active link, the URL will be
-#. # used as text for the link.
-#: learn-more-telemetry.innerHTML
-msgid "Learn more at {{link}}"
-msgstr "{{link}} मा अझ धेरै सिक्न सक्छौं"
+#: learn-more-telemetry2.innerHTML
+msgid ""
+"Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
+"a>"
+msgstr ""
 
-#: learn-more-information.innerHTML
-msgid "Learn how Mozilla handles your information at {{link}}"
-msgstr "{{link}}मा मोजिल्लाले तपाईँको सूचनाहरु कसरी समाल्छ सिक्नुहोस्"
+#: learn-more-information2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # OS privacy
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: htmlWelcome.innerHTML
+#: htmlWelcome2.innerHTML
+#, fuzzy
 msgid ""
-"Welcome to {{link}}, the free and open source operating system from Mozilla. "
-"Our mission is to promote openness, innovation and opportunity by keeping "
-"the power of the Web in your hands."
+"Welcome to <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>, "
+"the free and open source operating system from Mozilla. Our mission is to "
+"promote openness, innovation and opportunity by keeping the power of the Web "
+"in your hands."
 msgstr ""
 "मोजिल्लाले बनाएको स्वतन्त्र तथा खुला स्रोत अपरेटिङ्ग सिस्टममा {{link}} तपाईलाई स्वागत "
 "छ। हाम्रो लक्ष भनेको वेबको शक्तिलाई तपाईको हातमा राखेर खुलापन, नवविचार र अवसरलाई "
@@ -906,25 +921,23 @@ msgctxt "htmlWelcome-link"
 msgid "{{brandShortName}}"
 msgstr "{{brandShortName}}"
 
-#: helpImprove.innerHTML
+#: helpImprove2.innerHTML
 msgid ""
 "You can help us improve our products and services by automatically sending "
-"analytics data. See our {{link}} to learn how we handle data from your "
+"analytics data. See our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> to learn how we handle data from your "
 "device."
 msgstr ""
-"तपाईं हामीलाई स्वतः विश्लेषण डेटा पठाएर हाम्रो उत्पादन र सेवा सुधार्न मद्दत गर्न सक्नुहुन्छ। "
-"हामी तपाइँको उपकरणबाट डेटा कसरी ह्यान्डल गर्छौँ जान्न हाम्रो {{link}} हेर्नुहोस्।"
 
 #: helpImprove-link
 msgid "Privacy Notice"
 msgstr "गोपनीयता निति"
 
-#. # LOCALIZATION NOTE(learn-more-privacy.innerHTML): {{link}} will be replaced at
-#. # run-time by an active link, string "learn-more-privacy-link" will be
-#. # used as text for the link.
-#: learn-more-privacy.innerHTML
-msgid "Learn how Mozilla handles your information in our {{link}}."
-msgstr "मोजिल्लाले तपाईँको सूचनाहरु कसरी समालछ {{link}}मा सिक्नुहोस्।"
+#: learn-more-privacy2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information in our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>."
+msgstr ""
 
 #: learn-more-privacy-link
 msgid "privacy policy"
@@ -1208,6 +1221,24 @@ msgstr "{{total}} मध्येको {{step}} चरण"
 #: progressbar.ariaLabel
 msgid "First Time Experience"
 msgstr "पहिलो चोटिको अनुभव"
+
+#~ msgid "Learn more at {{link}}"
+#~ msgstr "{{link}} मा अझ धेरै सिक्न सक्छौं"
+
+#~ msgid "Learn how Mozilla handles your information at {{link}}"
+#~ msgstr "{{link}}मा मोजिल्लाले तपाईँको सूचनाहरु कसरी समाल्छ सिक्नुहोस्"
+
+#~ msgid ""
+#~ "You can help us improve our products and services by automatically "
+#~ "sending analytics data. See our {{link}} to learn how we handle data from "
+#~ "your device."
+#~ msgstr ""
+#~ "तपाईं हामीलाई स्वतः विश्लेषण डेटा पठाएर हाम्रो उत्पादन र सेवा सुधार्न मद्दत गर्न "
+#~ "सक्नुहुन्छ। हामी तपाइँको उपकरणबाट डेटा कसरी ह्यान्डल गर्छौँ जान्न हाम्रो {{link}} "
+#~ "हेर्नुहोस्।"
+
+#~ msgid "Learn how Mozilla handles your information in our {{link}}."
+#~ msgstr "मोजिल्लाले तपाईँको सूचनाहरु कसरी समालछ {{link}}मा सिक्नुहोस्।"
 
 #~ msgid ""
 #~ "I want to help improve {{brandShortName}} by sharing data about my phone "

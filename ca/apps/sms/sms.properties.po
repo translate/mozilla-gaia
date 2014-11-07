@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17 11:13+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
@@ -198,6 +198,8 @@ msgid "To:"
 msgstr "A:"
 
 #: send
+#, fuzzy
+msgctxt "send"
 msgid "Send"
 msgstr "Envia"
 
@@ -250,6 +252,12 @@ msgstr "Missatge nou"
 #: sendMessage
 msgid "Send message"
 msgstr "Envia el missatge"
+
+#. # LOCALIZATION NOTE(sendMMSToEmail): shown when clicking on an e-mail inside
+#. # the body of a message to provide an option to send a multimedia message.
+#: sendMMSToEmail
+msgid "Send multimedia message"
+msgstr ""
 
 #: no-recipient
 msgid "(No recipient)"
@@ -359,41 +367,37 @@ msgstr ""
 msgid "Your Multimedia Message (MMS), was sent on {{datetime}}"
 msgstr "El vostre missatge multimèdia (MMS) s'ha enviat el dia {{datetime}}"
 
-#: message-status
-msgid "Status:"
-msgstr "Estat:"
+#: message-subject
+#, fuzzy
+msgid "Subject:"
+msgstr "Assumpte"
 
-#: message-status-sent
-msgid "sent"
-msgstr "enviat"
+#: report-status-error
+msgid "Message could not be sent"
+msgstr ""
 
-#: message-status-received
-msgid "received"
-msgstr "rebut"
-
-#: message-status-sending
-msgid "sending"
-msgstr "s'està enviant"
-
-#: message-status-error
-msgid "error"
-msgstr "error"
-
-#: message-status-not-downloaded
+#: report-status-not-downloaded
 msgid "not downloaded"
 msgstr "no s'ha baixat"
 
-#: message-delivered
+#: report-status-delivered
 msgid "Delivered:"
 msgstr "Lliurat:"
 
-#: message-read-title
+#: report-status-read
 msgid "Read:"
 msgstr "Llegit:"
 
-#: message-requested
-msgid "Requested"
-msgstr "Sol·licitat"
+#: report-status-pending
+msgid "Report requested"
+msgstr ""
+
+#. # LOCALIZATION NOTE(report-status-rejected): used to describe the outgoing mms
+#. # could not be downloaded by receiver(might be an invalid number or the number 
+#. # is not allowed to download mms)
+#: report-status-rejected
+msgid "Message rejected"
+msgstr ""
 
 #: message-size-was
 msgid "Message size:"
@@ -407,17 +411,22 @@ msgstr "%e %Eb de %Y, {{shortTimeFormat12}}"
 msgid "%e %B %Y, {{shortTimeFormat24}}"
 msgstr "%e %Eb de %Y, {{shortTimeFormat24}}"
 
-#: report-recipients
-msgid "Recipients:"
-msgstr "Destinataris:"
+#: report-to-title
+msgid "To"
+msgstr ""
 
-#: report-from
-msgid "From:"
+#: report-from-title
+#, fuzzy
+msgid "From"
 msgstr "De:"
 
 #: message-sent
 msgid "Sent:"
 msgstr "Enviat:"
+
+#: message-sending
+msgid "{{message-delivery-status-sending}}"
+msgstr ""
 
 #: message-received
 msgid "Received:"
@@ -427,14 +436,18 @@ msgstr "Rebut:"
 msgid "Via:"
 msgstr "Mitjançant:"
 
+#: message-resend
+msgid "Resend"
+msgstr ""
+
 #. # Search functionality
 #: search
 msgid "Search"
 msgstr "Cerca"
 
-#: unknown-contact
-msgid "Unknown"
-msgstr "Desconegut"
+#: unknown-contact-title
+msgid "Unknown Contact"
+msgstr ""
 
 #. # LOCALIZATION NOTE(phone-type-separator): used to separate phone type from
 #. # the number itself. It should be consistent with the characters used in
@@ -483,6 +496,11 @@ msgstr "No s'ha pogut enviar el missatge. Voleu tornar-ho a provar?"
 #: resend-message
 msgid "Resend this message"
 msgstr "Torna a enviar el missatge"
+
+#: deleteMessage-confirmation
+#, fuzzy
+msgid "Delete selected message?"
+msgstr "Voleu eliminar els missatges seleccionats?"
 
 #: deleteMessages-confirmation
 msgid "Delete selected messages?"
@@ -562,6 +580,15 @@ msgstr "{{sendFlightModeBtnOk}}"
 #: fdnBlocked2Title
 msgid "FDN active"
 msgstr "Números prefixats activats"
+
+#. # LOCALIZATION NOTE (sms-counter-notice-label): if typed message exceeds the
+#. # character limit, more segments (messages) will be sent. {{number}} is the
+#. # number of current segment. 
+#. # Example: Limit 160 characters, toaster will show up when 161 characters 
+#. # typed, and string in toaster will be 'Editing SMS 2' (editing 2nd segment).
+#: sms-counter-notice-label
+msgid "Editing SMS {{number}}"
+msgstr ""
 
 #. #LOCALIZATION NOTE (fdnBlocked2Body): the English translation does not need the
 #. # actual number of phone numbers. If your translation needs it, you can still add it
@@ -898,12 +925,14 @@ msgstr "Missatge MMS"
 msgid "Message is not downloaded yet."
 msgstr "El missatge encara no s'ha baixat."
 
-#. # LOCALIZATION NOTE (not-downloaded-attachment, expired-attachment):
+#. # LOCALIZATION NOTE (tobedownloaded-attachment, expired-attachment):
 #. # {{date}} is replaced at run-time with a date. The format used to display
 #. # this date is specified in the string with ID 'expiry-date-format'.
-#: not-downloaded-attachment
-msgid "Attachment can be downloaded until {{date}}."
-msgstr "L'adjunció es pot baixar fins el {{date}}."
+#: tobedownloaded-attachment
+msgid ""
+"You received a multimedia message. You can use the link below to download "
+"its content until {{date}}."
+msgstr ""
 
 #: expired-attachment
 msgid "Sorry, the message expired on {{date}} and cannot be downloaded."
@@ -992,6 +1021,13 @@ msgstr "SIM {{id}}, {{detailString}}"
 msgid "({{sim}}) {{sender}}"
 msgstr "({{sim}}) {{sender}}"
 
+#. #LOCALIZATION NOTE (send-button): localize only the ariaLabel
+#: send-button.ariaLabel
+#, fuzzy
+msgctxt "send-button.ariaLabel"
+msgid "Send"
+msgstr "Envia"
+
 #. # LOCALIZATION NOTE (send-button-sim-indication): don't localize the
 #. # sim-indication itself as we use it to show the SIM number only. Yet obviously,
 #. # the "ariaLabel" needs to be localized.
@@ -1050,3 +1086,30 @@ msgstr "Llegit"
 #: message-delivery-status-error.ariaLabel
 msgid "Error"
 msgstr "Error"
+
+#~ msgid "Status:"
+#~ msgstr "Estat:"
+
+#~ msgid "sent"
+#~ msgstr "enviat"
+
+#~ msgid "received"
+#~ msgstr "rebut"
+
+#~ msgid "sending"
+#~ msgstr "s'està enviant"
+
+#~ msgid "error"
+#~ msgstr "error"
+
+#~ msgid "Requested"
+#~ msgstr "Sol·licitat"
+
+#~ msgid "Recipients:"
+#~ msgstr "Destinataris:"
+
+#~ msgid "Unknown"
+#~ msgstr "Desconegut"
+
+#~ msgid "Attachment can be downloaded until {{date}}."
+#~ msgstr "L'adjunció es pot baixar fins el {{date}}."

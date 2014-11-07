@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17 11:13+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: 2014-07-29 14:28+0000\n"
 "Last-Translator: Omshivaprakash <omshivaprakash@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1406644110.000000\n"
@@ -579,21 +579,24 @@ msgstr "ಪ್ರತಿ ಗಂಟೆ"
 msgid "Manually"
 msgstr "ಕೈಯಾರೆ"
 
-#. # Dynamically added sync interval checks. These are only added via special
-#. # debug/development tools, and are always in seconds. Otherwise, just
-#. # the settings-check-every-* options are visible.
+#. # LOCALIZATION NOTE(settings-check-dynamic):
+#. # DEBUG ONLY Dynamically added sync interval checks. These are only added via
+#. # special debug/development tools, and are always in seconds. Otherwise, just
+#. # the settings-check-every-* options are visible.  The zero case is impossible
+#. # (a separate string is used) and 20 seconds is the currently lowest possible
+#. # value.
 #: settings-check-dynamic
 msgctxt "settings-check-dynamic"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: settings-check-dynamic[zero]
-msgid "seconds"
-msgstr "ಸೆಕೆಂಡುಗಳು"
+msgid "disabled"
+msgstr ""
 
 #: settings-check-dynamic[one]
-msgctxt "settings-check-dynamic[one]"
-msgid "{{ n }} seconds"
+#, fuzzy
+msgid "{{ n }} second"
 msgstr "{{ n }} ಕ್ಷಣಗಳು"
 
 #: settings-check-dynamic[two]
@@ -810,10 +813,6 @@ msgstr "ವಿಷಯ"
 #: compose-draft-save
 msgid "Save to Local Drafts"
 msgstr "ಸ್ಥಳೀಯ ಕರಡುಗಳಿಗೆ ಉಳಿಸು"
-
-#: compose-discard-message
-msgid "Discard email?"
-msgstr "ಇಮೇಲ್ ತ್ಯಜಿಸು ಬೇಕೆ?"
 
 #: compose-discard-confirm
 #, fuzzy
@@ -1629,6 +1628,12 @@ msgstr "{{ n }} ಹೊಸ ಇಮೇಲುಗಳು ({{ accountName }})"
 #: new-emails-notify-multiple-accounts-body
 msgid "{{ from }} “{{ subject }}”"
 msgstr "{{ from }} “{{ subject }}”"
+
+#~ msgid "seconds"
+#~ msgstr "ಸೆಕೆಂಡುಗಳು"
+
+#~ msgid "Discard email?"
+#~ msgstr "ಇಮೇಲ್ ತ್ಯಜಿಸು ಬೇಕೆ?"
 
 #~ msgctxt "new-emails"
 #~ msgid "{[ plural(n) ]}"

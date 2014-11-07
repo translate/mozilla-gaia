@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-17 11:13+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: 2014-07-16 10:17+0000\n"
 "Last-Translator: Ian <ian.henderson@rubric.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1405505863.000000\n"
@@ -215,6 +215,8 @@ msgid "To:"
 msgstr "Iya:"
 
 #: send
+#, fuzzy
+msgctxt "send"
 msgid "Send"
 msgstr "Thumela"
 
@@ -267,6 +269,12 @@ msgstr "Umyalezo omusha"
 #: sendMessage
 msgid "Send message"
 msgstr "Thumela umyalezo"
+
+#. # LOCALIZATION NOTE(sendMMSToEmail): shown when clicking on an e-mail inside
+#. # the body of a message to provide an option to send a multimedia message.
+#: sendMMSToEmail
+msgid "Send multimedia message"
+msgstr ""
 
 #: no-recipient
 msgid "(No recipient)"
@@ -378,41 +386,37 @@ msgstr ""
 "Umyalezo wakho Wemidiya Enhlobonhlobo (MMS), uthunyelwe ngomhlaka "
 "{{datetime}}"
 
-#: message-status
-msgid "Status:"
-msgstr "Isimo:"
+#: message-subject
+#, fuzzy
+msgid "Subject:"
+msgstr "Isihloko"
 
-#: message-status-sent
-msgid "sent"
-msgstr "ithunyelwe"
+#: report-status-error
+msgid "Message could not be sent"
+msgstr ""
 
-#: message-status-received
-msgid "received"
-msgstr "itholwe"
-
-#: message-status-sending
-msgid "sending"
-msgstr "iyathumela"
-
-#: message-status-error
-msgid "error"
-msgstr "iphutha"
-
-#: message-status-not-downloaded
+#: report-status-not-downloaded
 msgid "not downloaded"
 msgstr "ayidawunilodwanga"
 
-#: message-delivered
+#: report-status-delivered
 msgid "Delivered:"
 msgstr "Ithunyelwe:"
 
-#: message-read-title
+#: report-status-read
 msgid "Read:"
 msgstr "Kufundiwe:"
 
-#: message-requested
-msgid "Requested"
-msgstr "Okuceliwe"
+#: report-status-pending
+msgid "Report requested"
+msgstr ""
+
+#. # LOCALIZATION NOTE(report-status-rejected): used to describe the outgoing mms
+#. # could not be downloaded by receiver(might be an invalid number or the number 
+#. # is not allowed to download mms)
+#: report-status-rejected
+msgid "Message rejected"
+msgstr ""
 
 #: message-size-was
 msgid "Message size:"
@@ -428,17 +432,22 @@ msgstr "%e %B %Y, {{shortTimeFormat}}"
 msgid "%e %B %Y, {{shortTimeFormat24}}"
 msgstr "%e %B %Y, {{shortTimeFormat}}"
 
-#: report-recipients
-msgid "Recipients:"
-msgstr "Okubhekiswe kubo:"
+#: report-to-title
+msgid "To"
+msgstr ""
 
-#: report-from
-msgid "From:"
+#: report-from-title
+#, fuzzy
+msgid "From"
 msgstr "Ivela:"
 
 #: message-sent
 msgid "Sent:"
 msgstr "Ithunyelwe:"
+
+#: message-sending
+msgid "{{message-delivery-status-sending}}"
+msgstr ""
 
 #: message-received
 msgid "Received:"
@@ -448,14 +457,18 @@ msgstr "Ifikile:"
 msgid "Via:"
 msgstr "Kusetshenziswa:"
 
+#: message-resend
+msgid "Resend"
+msgstr ""
+
 #. # Search functionality
 #: search
 msgid "Search"
 msgstr "Cinga"
 
-#: unknown-contact
-msgid "Unknown"
-msgstr "Okungaziwa"
+#: unknown-contact-title
+msgid "Unknown Contact"
+msgstr ""
 
 #. # LOCALIZATION NOTE(phone-type-separator): used to separate phone type from
 #. # the number itself. It should be consistent with the characters used in
@@ -503,6 +516,11 @@ msgstr "Umyalezo awuhambanga. Uzozama futhi?"
 #: resend-message
 msgid "Resend this message"
 msgstr "Phinda uthumele lo myalezo"
+
+#: deleteMessage-confirmation
+#, fuzzy
+msgid "Delete selected message?"
+msgstr "Dilitha imiyalezo ekhethiwe?"
 
 #: deleteMessages-confirmation
 msgid "Delete selected messages?"
@@ -583,6 +601,15 @@ msgstr ""
 #: fdnBlocked2Title
 msgid "FDN active"
 msgstr "I-FDN isiyasebenza"
+
+#. # LOCALIZATION NOTE (sms-counter-notice-label): if typed message exceeds the
+#. # character limit, more segments (messages) will be sent. {{number}} is the
+#. # number of current segment. 
+#. # Example: Limit 160 characters, toaster will show up when 161 characters 
+#. # typed, and string in toaster will be 'Editing SMS 2' (editing 2nd segment).
+#: sms-counter-notice-label
+msgid "Editing SMS {{number}}"
+msgstr ""
 
 #. #LOCALIZATION NOTE (fdnBlocked2Body): the English translation does not need the
 #. # actual number of phone numbers. If your translation needs it, you can still add it
@@ -921,12 +948,14 @@ msgstr "Umyalezo we-MMS"
 msgid "Message is not downloaded yet."
 msgstr "Umyalezo awukadawunilodeki okwamanje."
 
-#. # LOCALIZATION NOTE (not-downloaded-attachment, expired-attachment):
+#. # LOCALIZATION NOTE (tobedownloaded-attachment, expired-attachment):
 #. # {{date}} is replaced at run-time with a date. The format used to display
 #. # this date is specified in the string with ID 'expiry-date-format'.
-#: not-downloaded-attachment
-msgid "Attachment can be downloaded until {{date}}."
-msgstr "Okunanyathelisiwe kungadawunilodwa kuze kube umhlaka {{date}}."
+#: tobedownloaded-attachment
+msgid ""
+"You received a multimedia message. You can use the link below to download "
+"its content until {{date}}."
+msgstr ""
 
 #: expired-attachment
 msgid "Sorry, the message expired on {{date}} and cannot be downloaded."
@@ -1019,6 +1048,13 @@ msgstr ""
 msgid "({{sim}}) {{sender}}"
 msgstr "({{sim}}) {{sender}}"
 
+#. #LOCALIZATION NOTE (send-button): localize only the ariaLabel
+#: send-button.ariaLabel
+#, fuzzy
+msgctxt "send-button.ariaLabel"
+msgid "Send"
+msgstr "Thumela"
+
 #. # LOCALIZATION NOTE (send-button-sim-indication): don't localize the
 #. # sim-indication itself as we use it to show the SIM number only. Yet obviously,
 #. # the "ariaLabel" needs to be localized.
@@ -1081,6 +1117,33 @@ msgstr "Kufundiwe:"
 #, fuzzy
 msgid "Error"
 msgstr "iphutha"
+
+#~ msgid "Status:"
+#~ msgstr "Isimo:"
+
+#~ msgid "sent"
+#~ msgstr "ithunyelwe"
+
+#~ msgid "received"
+#~ msgstr "itholwe"
+
+#~ msgid "sending"
+#~ msgstr "iyathumela"
+
+#~ msgid "error"
+#~ msgstr "iphutha"
+
+#~ msgid "Requested"
+#~ msgstr "Okuceliwe"
+
+#~ msgid "Recipients:"
+#~ msgstr "Okubhekiswe kubo:"
+
+#~ msgid "Unknown"
+#~ msgstr "Okungaziwa"
+
+#~ msgid "Attachment can be downloaded until {{date}}."
+#~ msgstr "Okunanyathelisiwe kungadawunilodwa kuze kube umhlaka {{date}}."
 
 #~ msgctxt "selected"
 #~ msgid "{[ plural(n) ]}"
