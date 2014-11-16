@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-11 22:22+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,41 @@ msgstr "Elimina missatges"
 #: selectThreads-title
 msgid "Select"
 msgstr "Trieu"
+
+#. # Contact title
+#: thread-header-text
+msgctxt "thread-header-text"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: thread-header-text[zero]
+msgid "{{name}}"
+msgstr "{{name}}"
+
+#: thread-header-text[one]
+msgctxt "thread-header-text[one]"
+msgid "{{name}} (+{{n}})"
+msgstr "{{name}} (+{{n}})"
+
+#: thread-header-text[two]
+msgctxt "thread-header-text[two]"
+msgid "{{name}} (+{{n}})"
+msgstr "{{name}} (+{{n}})"
+
+#: thread-header-text[few]
+msgctxt "thread-header-text[few]"
+msgid "{{name}} (+{{n}})"
+msgstr "{{name}} (+{{n}})"
+
+#: thread-header-text[many]
+msgctxt "thread-header-text[many]"
+msgid "{{name}} (+{{n}})"
+msgstr "{{name}} (+{{n}})"
+
+#: thread-header-text[other]
+msgctxt "thread-header-text[other]"
+msgid "{{name}} (+{{n}})"
+msgstr "{{name}} (+{{n}})"
 
 #. # Edit Mode
 #: edit
@@ -57,10 +92,12 @@ msgstr "Elimina"
 msgid "Deleting…"
 msgstr "S'està eliminant…"
 
+# Per restriccions d'espai - jordis
 #: select-all
 msgid "Select all"
 msgstr "Marca-ho tot"
 
+# Per restriccions d'espai - jordis
 #: deselect-all
 msgid "Deselect all"
 msgstr "Desmarca-ho tot"
@@ -76,7 +113,6 @@ msgid "none selected"
 msgstr "Cap seleccionat"
 
 #: selected-threads[one]
-#, fuzzy
 msgctxt "selected-threads[one]"
 msgid "{{n}} selected"
 msgstr "{{n}} seleccionat"
@@ -163,7 +199,6 @@ msgid "To:"
 msgstr "A:"
 
 #: send
-#, fuzzy
 msgctxt "send"
 msgid "Send"
 msgstr "Envia"
@@ -333,9 +368,8 @@ msgid "Your Multimedia Message (MMS), was sent on {{datetime}}"
 msgstr "El vostre missatge multimèdia (MMS) s'ha enviat el dia {{datetime}}"
 
 #: message-subject
-#, fuzzy
 msgid "Subject:"
-msgstr "Assumpte"
+msgstr "Assumpte:"
 
 #: report-status-error
 msgid "Message could not be sent"
@@ -378,12 +412,11 @@ msgstr "%e %Eb de %Y, {{shortTimeFormat24}}"
 
 #: report-to-title
 msgid "To"
-msgstr ""
+msgstr "A"
 
 #: report-from-title
-#, fuzzy
 msgid "From"
-msgstr "De:"
+msgstr "De"
 
 #: message-sent
 msgid "Sent:"
@@ -412,7 +445,7 @@ msgstr "Cerca"
 
 #: unknown-contact-title
 msgid "Unknown Contact"
-msgstr ""
+msgstr "Contacte desconegut"
 
 #. # LOCALIZATION NOTE(phone-type-separator): used to separate phone type from
 #. # the number itself. It should be consistent with the characters used in
@@ -421,8 +454,6 @@ msgstr ""
 #. # Resulting example for en-US: "Mobile, +123456789" or if carrier is available
 #. # "Mobile, +123456789 Carrier".
 #: phone-type-separator
-#, fuzzy
-msgctxt "phone-type-separator"
 msgid ", "
 msgstr ", "
 
@@ -432,15 +463,6 @@ msgstr ", "
 #: phone-carrier-separator
 msgid " "
 msgstr ""
-
-#. # LOCALIZATION NOTE(thread-participant-separator): used to separate list of
-#. # contact names and phone numbers of any group message thread. Example for
-#. # en-US: "Bob, +123456789, Alice".
-#: thread-participant-separator
-#, fuzzy
-msgctxt "thread-participant-separator"
-msgid ", "
-msgstr ", "
 
 #. # Modal Dialogs
 #: replace-draft
@@ -474,9 +496,8 @@ msgid "Resend this message"
 msgstr "Torna a enviar el missatge"
 
 #: deleteMessage-confirmation
-#, fuzzy
 msgid "Delete selected message?"
-msgstr "Voleu eliminar els missatges seleccionats?"
+msgstr "Voleu eliminar el missatge seleccionat?"
 
 #: deleteMessages-confirmation
 msgid "Delete selected messages?"
@@ -999,7 +1020,6 @@ msgstr "({{sim}}) {{sender}}"
 
 #. #LOCALIZATION NOTE (send-button): localize only the ariaLabel
 #: send-button.ariaLabel
-#, fuzzy
 msgctxt "send-button.ariaLabel"
 msgid "Send"
 msgstr "Envia"
@@ -1062,29 +1082,6 @@ msgstr "Llegit"
 #: message-delivery-status-error.ariaLabel
 msgid "Error"
 msgstr "Error"
-
-#~ msgid "{{name}}"
-#~ msgstr "{{name}}"
-
-#~ msgctxt "thread-header-text[one]"
-#~ msgid "{{name}} (+{{n}})"
-#~ msgstr "{{name}} (+{{n}})"
-
-#~ msgctxt "thread-header-text[two]"
-#~ msgid "{{name}} (+{{n}})"
-#~ msgstr "{{name}} (+{{n}})"
-
-#~ msgctxt "thread-header-text[few]"
-#~ msgid "{{name}} (+{{n}})"
-#~ msgstr "{{name}} (+{{n}})"
-
-#~ msgctxt "thread-header-text[many]"
-#~ msgid "{{name}} (+{{n}})"
-#~ msgstr "{{name}} (+{{n}})"
-
-#~ msgctxt "thread-header-text[other]"
-#~ msgid "{{name}} (+{{n}})"
-#~ msgstr "{{name}} (+{{n}})"
 
 #~ msgid "Status:"
 #~ msgstr "Estat:"

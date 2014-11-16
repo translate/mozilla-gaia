@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-11 22:22+0000\n"
+"POT-Creation-Date: 2014-11-07 17:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,10 +47,9 @@ msgstr "Neteja"
 
 #: enable
 msgid "Enable"
-msgstr ""
+msgstr "Activa"
 
 #: turnOn
-#, fuzzy
 msgid "Turn On"
 msgstr "Activa"
 
@@ -278,36 +277,30 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: statusbarNotifications[one]
-#, fuzzy
 msgid "{{n}} Notification"
 msgstr "{{n}} notificació"
 
 #: statusbarNotifications[two]
-#, fuzzy
 msgctxt "statusbarNotifications[two]"
 msgid "{{n}} Notifications"
 msgstr "{{n}} notificacions"
 
 #: statusbarNotifications[few]
-#, fuzzy
 msgctxt "statusbarNotifications[few]"
 msgid "{{n}} Notifications"
 msgstr "{{n}} notificacions"
 
 #: statusbarNotifications[many]
-#, fuzzy
 msgctxt "statusbarNotifications[many]"
 msgid "{{n}} Notifications"
 msgstr "{{n}} notificacions"
 
 #: statusbarNotifications[other]
-#, fuzzy
 msgctxt "statusbarNotifications[other]"
 msgid "{{n}} Notifications"
 msgstr "{{n}} notificacions"
 
 #: statusbarNotifications-unread.ariaLabel
-#, fuzzy
 msgctxt "statusbarNotifications-unread.ariaLabel"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
@@ -317,25 +310,21 @@ msgid "{{n}} unread notification"
 msgstr "{{n}} notificació per llegir"
 
 #: statusbarNotifications-unread.ariaLabel[two]
-#, fuzzy
 msgctxt "statusbarNotifications-unread.ariaLabel[two]"
 msgid "{{n}} unread notifications"
 msgstr "{{n}} notificacions per llegir"
 
 #: statusbarNotifications-unread.ariaLabel[few]
-#, fuzzy
 msgctxt "statusbarNotifications-unread.ariaLabel[few]"
 msgid "{{n}} unread notifications"
 msgstr "{{n}} notificacions per llegir"
 
 #: statusbarNotifications-unread.ariaLabel[many]
-#, fuzzy
 msgctxt "statusbarNotifications-unread.ariaLabel[many]"
 msgid "{{n}} unread notifications"
 msgstr "{{n}} notificacions per llegir"
 
 #: statusbarNotifications-unread.ariaLabel[other]
-#, fuzzy
 msgctxt "statusbarNotifications-unread.ariaLabel[other]"
 msgid "{{n}} unread notifications"
 msgstr "{{n}} notificacions per llegir"
@@ -870,23 +859,23 @@ msgid "Uncompressing… <span>This can take a few minutes.</span>"
 msgstr "S'està descomprimint… <span>Això pot trigar uns minuts.</span>"
 
 #: downloadWifiPrioritizedUsing2G
-#, fuzzy
 msgid ""
 "Updates are downloaded via data connection when Wi-Fi is not available. When "
 "using data connection, phone calls may be blocked and additional charges may "
 "also apply."
 msgstr ""
 "Quan no hi ha connexió Wi-Fi disponible, les actualitzacions es baixen per "
-"la connexió de dades. Això pot comportar despeses addicionals."
+"la connexió de dades. L'ús de la connexió de dades pot fer que es bloquin "
+"les trucades i també comportar despeses addicionals."
 
 #: downloadWifiPrioritized3
-#, fuzzy
 msgid ""
 "Updates are downloaded via data connection when Wi-Fi is not available. When "
 "using data connection, additional charges may apply."
 msgstr ""
 "Quan no hi ha connexió Wi-Fi disponible, les actualitzacions es baixen per "
-"la connexió de dades. Això pot comportar despeses addicionals."
+"la connexió de dades. L'ús de la connexió de dades pot comportar despeses "
+"addicionals."
 
 #: downloadNoWifiWarning
 msgid ""
@@ -898,7 +887,7 @@ msgstr ""
 
 #: downloadOfflineWarning2
 msgid "Connect to a network to download updates."
-msgstr ""
+msgstr "Connecteu-vos a una xarxa per baixar actualitzacions."
 
 #: downloadUpdatesViaDataConnection
 msgid "Download updates via data connection?"
@@ -913,7 +902,6 @@ msgstr ""
 "vos per Wi-Fi o 3G (si està disponible) i torneu-ho a provar."
 
 #: downloadUpdatesViaDataConnectionMessage3
-#, fuzzy
 msgid ""
 "When using a data connection, additional costs may apply. Do you want to "
 "continue?"
@@ -935,6 +923,7 @@ msgstr ""
 "Actualment esteu en itinerància, fet que pot comportar despeses addicionals. "
 "Voleu continuar?"
 
+# Restricció d'espai per 1.2 - jordis
 #. # screenshots
 #: screenshotSaved
 msgid "Screenshot saved to Gallery"
@@ -961,26 +950,15 @@ msgstr "No hi ha prou espai a la targeta de memòria"
 msgid "Logs saved to storage"
 msgstr "S'han desat els registres a l'emmagatzematge"
 
-#: logsSaveError
-msgid "Error while saving logs"
+#: logsFailed
+msgid "The logs could not be saved"
+msgstr "No s'han pogut desar els registres"
+
+#: logsStart
+msgid "Capturing logs ..."
 msgstr ""
 
-#: logsSaving
-msgid "Capturing logṣ̣…"
-msgstr ""
-
-#: logsOperationFailed
-msgid "Operation {{operation}} failed."
-msgstr ""
-
-#: logsGenericError
-msgid "Unexpected error occurred."
-msgstr ""
-
-#: logsSDCardMaybeShared
-msgid "Make sure your SD card is not shared with your computer."
-msgstr ""
-
+# Aquí s'ha d'ometre la preposició per tal que hi càpiga a la pantalla - jordis
 #. # lock screen
 #: emergency-call-button
 msgctxt "emergency-call-button"
@@ -1255,9 +1233,10 @@ msgstr "."
 msgid "{{brandShortName}} just crashed."
 msgstr "El {{brandShortName}} acaba de fallar."
 
+# (2.1) com més curt millor, per aplicacions amb nomes llargs i perquè al costat hi apareix el botó "Informe"
 #: crash-banner-app
 msgid "{{name}} just crashed."
-msgstr "«{{name}}» acaba de fallar."
+msgstr "«{{name}}» ha fallat."
 
 #: crash-banner-report
 msgid "Report"
@@ -1400,7 +1379,7 @@ msgstr "No es pot obrir el fitxer rebut"
 
 #: unknownMediaTypeToOpenFile
 msgid "Can not open unknown media type: {{fileName}}"
-msgstr ""
+msgstr "No es pot obrir el fitxer multimèdia desconegut: {{fileName}}"
 
 #: cannotReceiveFile
 msgid "Can not receive file"
@@ -1541,6 +1520,7 @@ msgstr ""
 msgid "Change PIN"
 msgstr "Canvia el PIN"
 
+# Restricció espai - jordis
 #: pinTitle
 msgid "Enter SIM PIN"
 msgstr "Introduïu el PIN"
@@ -1549,38 +1529,47 @@ msgstr "Introduïu el PIN"
 msgid "Enter SIM {{n}} PIN"
 msgstr "PIN de la SIM {{n}}"
 
+# Omès "codi" per potencial restricció d'espai - jordis
 #: pukTitle
 msgid "Enter PUK code"
 msgstr "Introduïu el PUK"
 
+# Omès "codi" per potencial restricció d'espai - jordis
 #: nckTitle
 msgid "Enter NCK code"
 msgstr "Introduïu l'NCK"
 
+# Omès "codi" per potencial restricció d'espai - jordis
 #: cckTitle
 msgid "Enter CCK code"
 msgstr "Introduïu el CCK"
 
+# Omès "codi" per potencial restricció d'espai - jordis
 #: spckTitle
 msgid "Enter SPCK code"
 msgstr "Introduïu l'SPCK"
 
+# Omès "codi" per potencial restricció d'espai - jordis
 #: nck1Title
 msgid "Enter NCK1 code"
 msgstr "Introduïu l'NCK1"
 
+# Omès "codi" per potencial restricció d'espai - jordis
 #: nck2Title
 msgid "Enter NCK2 code"
 msgstr "Introduïu l'NCK2"
 
+# Omès "codi" per potencial restricció d'espai - jordis
 #: hnckTitle
 msgid "Enter HNCK code"
 msgstr "Introduïu l'HNCK"
 
+# Omès "codi" per potencial restricció d'espai - jordis
 #: rcckTitle
 msgid "Enter RCCK code"
 msgstr "Introduïu l'RCCK"
 
+# Omès "codi" per potencial restricció d'espai - jordis
 #: rspckTitle
 msgid "Enter RSPCK code"
 msgstr "Introduïu l'RSPCK"
@@ -1965,7 +1954,6 @@ msgid "No remaining free space."
 msgstr "No queda espai lliure."
 
 #: free-space[one]
-#, fuzzy
 msgctxt "free-space[one]"
 msgid "Less than {{value}} {{unit}} remaining."
 msgstr "Queda menys d'{{value}} {{unit}}."
@@ -2081,6 +2069,7 @@ msgstr "Informació del registre CDMA"
 msgid "{{appName}}: {{name}}"
 msgstr "{{appName}}: {{name}}"
 
+# Hi cap OK - Restricció d'espai (1.3) - jordis
 #: ime-switching-tip
 msgid "Tap to switch input method"
 msgstr "Toqueu per triar el mètode d'entrada"
@@ -2143,21 +2132,23 @@ msgstr ""
 
 #: stop-button.ariaLabel
 msgid "Stop"
-msgstr ""
+msgstr "Atura"
 
 #. # Hotspot
 #: noSIMCardInHotspot3
 msgid "Hotspot off: SIM card missing or inserted incorrectly."
 msgstr ""
+"Punt d'accés Wi-Fi desactivat: No hi ha cap targeta SIM o s'ha inserit "
+"incorrectament."
 
 #: noHotspotWhenAPMisOnWifiHotspot
-#, fuzzy
 msgid "Turn off airplane mode to use Wi-Fi hotspot."
 msgstr "Desactiveu el mode d'avió per utilitzar el punt d'accés Wi-Fi"
 
 #: noHotspotWhenAPMisOnUsbHotspot
 msgid "Turn off airplane mode to use USB tethering."
 msgstr ""
+"Desactiveu el mode d'avió per utilitzar la compartició d'Internet per USB"
 
 #: apmActivated
 msgid "Airplane mode activated"
@@ -2178,7 +2169,7 @@ msgstr ""
 #. # Browser Context Menu
 #: open-in-new-window
 msgid "Open in new window"
-msgstr ""
+msgstr "Obre en una finestra nova"
 
 #: add-link-to-home-screen
 msgid "Add link to home screen"
@@ -2219,9 +2210,6 @@ msgstr "Comparteix l'àudio"
 #: okCharsLeft
 msgid "OK ({{n}})"
 msgstr ""
-
-#~ msgid "The logs could not be saved"
-#~ msgstr "No s'han pogut desar els registres"
 
 #~ msgctxt "statusbarNotifications[few]"
 #~ msgid "{{n}} notifications"

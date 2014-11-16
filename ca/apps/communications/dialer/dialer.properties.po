@@ -26,11 +26,13 @@ msgstr "Detalls de contacte"
 msgid "Add to existing contact"
 msgstr "Afegeix a un contacte existent"
 
+# Sembla que es refereix al Registre de "trucades" - jordis
 #: all
 msgctxt "all"
 msgid "All"
 msgstr "Totes"
 
+# Sembla que es refereix al Registre de "trucades" - jordis
 #: all.ariaLabel
 msgctxt "all.ariaLabel"
 msgid "All"
@@ -48,6 +50,7 @@ msgstr "Edita el registre de trucades"
 msgid "Edit call log dialog"
 msgstr "Diàleg d'edició del registre de trucades"
 
+# Restricció d'espai - És en fer una trucada (1.3) BUG: https://bugzilla.mozilla.org/show_bug.cgi?id=969644 - jordis
 #: connecting
 msgid "Connecting"
 msgstr "Connectant"
@@ -60,57 +63,48 @@ msgstr "Connectant"
 #. ## LOCALIZATION NOTE call-forwarding-async, call-forwarding-data, call-forwarding-fax, call-forwarding-packet, call-forwarding-pad, call-forwarding-sms, call-forwarding-sync and call-forwarding-voice are the service the call forwarding is activate/inactive for.
 #. ## LOCALIZATION NOTE Its variables might be a phone number or call-forwarding-inactive.
 #: call-forwarding-async
-#, fuzzy
 msgid "Asynchronous: {{ async }}"
-msgstr "Asíncron: {{ async }}\n"
+msgstr "Asíncron: {{ async }}"
 
 #: call-forwarding-data
-#, fuzzy
 msgid "Data: {{ data }}"
-msgstr "Dades: {{ data }}\n"
+msgstr "Dades: {{ data }}"
 
 #: call-forwarding-error
 msgid "An error occurred while retrieving call forwarding status"
 msgstr "S'ha produït un error en recuperar l'estat de la desviació de trucades"
 
 #: call-forwarding-fax
-#, fuzzy
 msgid "FAX: {{ fax }}"
-msgstr "Fax: {{ fax }}\n"
+msgstr "Fax: {{ fax }}"
 
 #: call-forwarding-inactive
 msgid "Inactive"
 msgstr "Inactiu"
 
 #: call-forwarding-packet
-#, fuzzy
 msgid "Packet: {{ packet }}"
-msgstr "Paquet: {{ packet }}\n"
+msgstr "Paquet: {{ packet }}"
 
 #: call-forwarding-pad
-#, fuzzy
 msgid "PAD: {{ pad }}"
-msgstr "Coixinet: {{ pad }}\n"
+msgstr "Coixinet: {{ pad }}"
 
 #: call-forwarding-sms
-#, fuzzy
 msgid "SMS: {{ sms }}"
-msgstr "SMS: {{ sms }}\n"
+msgstr "SMS: {{ sms }}"
 
 #: call-forwarding-status
-#, fuzzy
 msgid "Call forwarding status"
-msgstr "Estat de la desviació de trucades\n"
+msgstr "Estat de la desviació de trucades"
 
 #: call-forwarding-sync
-#, fuzzy
 msgid "Synchronous: {{ sync }}"
-msgstr "Síncron: {{ sync }}\n"
+msgstr "Síncron: {{ sync }}"
 
 #: call-forwarding-voice
-#, fuzzy
 msgid "Voice: {{ voice }}"
-msgstr "Veu: {{ voice }}\n"
+msgstr "Veu: {{ voice }}"
 
 #: close
 msgid "Close"
@@ -132,6 +126,7 @@ msgstr "Crea un contacte nou"
 msgid "Delete"
 msgstr "Elimina"
 
+# Per restriccions d'espai - jordis
 #: deselectAll
 msgid "Deselect all"
 msgstr "Desmarca-ho tot"
@@ -149,27 +144,31 @@ msgctxt "edit-selected"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
+# Sembla que el que se selecciona són "trucades" - jordis
 #: edit-selected[one]
-#, fuzzy
 msgctxt "edit-selected[one]"
 msgid "{{ n }} selected"
 msgstr "{{ n }} seleccionada"
 
+# Sembla que el que se selecciona són "trucades" - jordis
 #: edit-selected[two]
 msgctxt "edit-selected[two]"
 msgid "{{ n }} selected"
 msgstr "{{ n }} seleccionades"
 
+# Sembla que el que se selecciona són "trucades" - jordis
 #: edit-selected[few]
 msgctxt "edit-selected[few]"
 msgid "{{ n }} selected"
 msgstr "{{ n }} seleccionades"
 
+# Sembla que el que se selecciona són "trucades" - jordis
 #: edit-selected[many]
 msgctxt "edit-selected[many]"
 msgid "{{ n }} selected"
 msgstr "{{ n }} seleccionades"
 
+# Sembla que el que se selecciona són "trucades" - jordis
 #: edit-selected[other]
 msgctxt "edit-selected[other]"
 msgid "{{ n }} selected"
@@ -187,6 +186,7 @@ msgstr "Amaga el teclat"
 msgid "Ignore Call"
 msgstr "Ignora la trucada"
 
+# Hi cap OK (1.3) És en rebre una trucada - jordis
 #: incoming
 msgid "Incoming"
 msgstr "Trucada entrant"
@@ -278,6 +278,7 @@ msgstr "Trucades recents"
 msgid "Reply"
 msgstr "Respon"
 
+# Per restriccions d'espai - jordis
 #: selectAll
 msgid "Select all"
 msgstr "Marca-ho tot"
@@ -366,6 +367,7 @@ msgstr "Reprèn"
 msgid "Send Message"
 msgstr "Envia un missatge"
 
+# Per restricció d'espai (1.3) - d'altra manera, es trunca la icona que srt a continuació. - jordis
 #: callEnded
 msgid "Call Ended"
 msgstr "Trucada finalitzada"
@@ -383,9 +385,8 @@ msgid "Unknown"
 msgstr "Desconeguda"
 
 #: cancel
-#, fuzzy
 msgid "Cancel"
-msgstr "Cancel·lada"
+msgstr "Cancel·la"
 
 #. ## LOCALIZATION NOTE: these labels aren't displayed but they're used for acessibility
 #: hangup-a11y-button.ariaLabel
@@ -489,19 +490,23 @@ msgctxt "suggestionMatches[other]"
 msgid "{{ n }} matches for \"{{ matchNumber }}\""
 msgstr "{{ n }} coincidències de «{{ matchNumber }}»"
 
+# Restricció d'espai (bug https://bugzilla.mozilla.org/show_bug.cgi?id=931221) - jordis
 #. # MMI Service code
 #: scCallBarring
 msgid "Call barring"
 msgstr "Restricc. trucades"
 
+# Restricció d'espai (bug https://bugzilla.mozilla.org/show_bug.cgi?id=931214) - jordis
 #: scCallForwarding
 msgid "Call forwarding"
 msgstr "Desviació trucad."
 
+# Restricció d'espai (bug https://bugzilla.mozilla.org/show_bug.cgi?id=931211) - jordis
 #: scClip
 msgid "Incoming Caller ID"
 msgstr "ID trucada entr."
 
+# Restricció d'espai (bug https://bugzilla.mozilla.org/show_bug.cgi?id=931211) - jordis
 #: scClir
 msgid "Outgoing Caller ID"
 msgstr "ID trucada sort."
