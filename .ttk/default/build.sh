@@ -2,6 +2,8 @@
 
 source ttk.inc.sh
 
+progress="--progress=none"
+
 langs=$(which_langs $*)
 
 if [ -z "$release" ]; then
@@ -46,8 +48,8 @@ do
 		
 		# Make new template files
 		rm $(find $translation_dir/$polang -name "*.pot")
-		log_debug "cd $base_dir/build/locales/$mozrelease/$mozlang; moz2po $verbosity --exclude=".hgtags" --exclude="*.diff" -P .      $translation_dir/$polang"
-		(cd $base_dir/build/locales/$mozrelease/$mozlang; moz2po $verbosity --exclude=".hgtags" --exclude="*.diff" -P . $translation_dir/$polang)
+		log_debug "cd $base_dir/build/locales/$mozrelease/$mozlang; moz2po $progress --exclude=".hgtags" --exclude="*.diff" -P .      $translation_dir/$polang"
+		(cd $base_dir/build/locales/$mozrelease/$mozlang; moz2po $progress --exclude=".hgtags" --exclude="*.diff" -P . $translation_dir/$polang)
 	else
 		polang=$(get_language_pootle $lang)
 		mozlang=$(get_language_upstream $lang)
@@ -57,11 +59,11 @@ do
 		mkdir -p $translation_dir/.tmp/
 		cp -rp $translation_dir/$polang $translation_dir/.tmp/
 		rm $(find $translation_dir/$polang -name "*.po")
-		pomigrate2 $verbosity --pot2po $translation_dir/.tmp/$polang $translation_dir/$polang $translation_dir/templates
+		pomigrate2 --quiet --pot2po $translation_dir/.tmp/$polang $translation_dir/$polang $translation_dir/templates
 		rm -rf $translation_dir/.tmp/$polang
 		# new locale files
 		rm $(find $base_dir/build/locales/$mozrelease/$mozlang -name "*.properties")
-		po2moz $verbosity --removeuntranslated --exclude="obsolete" -t $base_dir/build/locales/$mozrelease/en-US $translation_dir/$polang $base_dir/build/locales/$mozrelease/$mozlang
+		po2moz $progress --removeuntranslated --exclude="obsolete" -t $base_dir/build/locales/$mozrelease/en-US $translation_dir/$polang $base_dir/build/locales/$mozrelease/$mozlang
 	fi
 done
 
