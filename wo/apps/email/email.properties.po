@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-05 20:44+0100\n"
-"PO-Revision-Date: 2015-01-27 19:50+0000\n"
+"PO-Revision-Date: 2015-01-27 20:51+0000\n"
 "Last-Translator: Mady  <pamaboca@yahoo.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: wo\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: Pootle 2.5.1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1422388248.000000\n"
+"X-POOTLE-MTIME: 1422391861.000000\n"
 
 #: setup-app-name-header
 msgid "Mail"
@@ -94,7 +94,7 @@ msgstr "Wéy ci Bataaxal ci internet"
 #. # connection active.
 #: setup-error-offline
 msgid "This device is currently offline. Connect to a network and try again."
-msgstr ""
+msgstr "Jëfandaay bii nekkul ci internet. Lënkul ci ab reso te nga jéemaat."
 
 #. # The error for either a bad username or a bad password.  For security reasons,
 #. # servers try not to distinguish between the two which is why we also cannot
@@ -102,13 +102,13 @@ msgstr ""
 #. # it in either place.
 #: setup-error-bad-user-or-pass2
 msgid "Invalid username or password. Check for typos."
-msgstr ""
+msgstr "Turu jëfandikukat bi walla baatu-jàll bi baaxul. Seetal njuumte yi."
 
 #. # The error for a bad e-mail address. We tried to send email but
 #. # couldn't because the server said it was a bad address.
 #: setup-error-bad-address
 msgid "Invalid e-mail address. Check for typos."
-msgstr ""
+msgstr "Dëkkuwaayu bataaxal bi baaxul. Seetal njuumte yi."
 
 #. # The error for a user having the correct username and password, but the mail
 #. # server explicitly indicates they don't have permission to talk to the mail
@@ -117,14 +117,14 @@ msgstr ""
 #. # domain have their own error code: setup-error-imap-disabled.
 #: setup-error-not-authorized
 msgid "The server said you’re not authorized to create an account"
-msgstr ""
+msgstr "Cërakon neena mayu ñu la nga sos am sàq"
 
 #. # The error for when the server is not good enough to be supported
 #. # because it is missing the required features.
 #: setup-error-pop-server-not-great
 msgid ""
 "Server unsupported. The POP3 server does not implement required features."
-msgstr ""
+msgstr "Nanguwul cëraakon bi. Cëraakonu POP3 du amal man-man yiñ laaj."
 
 #. # The fallback error; if we don't have a better error, we report this.
 #: setup-error-unknown2
@@ -132,6 +132,8 @@ msgid ""
 "An unknown error occurred. Check your network connection or try the manual "
 "configuration option."
 msgstr ""
+"Njuumte luñ xamul am na. Seetal sa reso internet walla nga amalal sa bopp ay "
+"tànneef."
 
 #. # The error for Gmail accounts where 2-factor authentication (where you receive
 #. # a text message on your phone or run a special app) is enabled, and so the
@@ -140,7 +142,7 @@ msgstr ""
 #: setup-error-needs-app-pass
 msgid ""
 "You must use an application specific password for two-factor Gmail accounts"
-msgstr ""
+msgstr "Danga war a jëfandikoo baatu-jàll ngir ñaari mbiri sàqum Gmail"
 
 #. # The error for Gmail accounts where IMAP is not enabled.  This can occur
 #. # for individual users where they have disabled IMAP from the settings UI.
@@ -148,7 +150,7 @@ msgstr ""
 #. # to support IMAP.
 #: setup-error-imap-disabled
 msgid "You must enable IMAP for your Gmail account"
-msgstr ""
+msgstr "Danga war a doxal IMAP ngir sàqum Gmail"
 
 #. # The error for Gmail accounts where POP3 is not enabled.  This can occur
 #. # for individual users where they have disabled POP3 from the settings UI.
@@ -156,7 +158,7 @@ msgstr ""
 #. # to support POP3.
 #: setup-error-pop3-disabled
 msgid "You must enable POP3 for your Gmail account"
-msgstr ""
+msgstr "Danga war a doxal POP3 ngir sa sàqum Gmail"
 
 #. # The error for when we are able to contact a server that should be the mail
 #. # server but we are unable to establish a secure connection.
@@ -165,6 +167,8 @@ msgid ""
 "Unable to establish a secure connection with \"{{server}}\". There may be a "
 "problem with your network or the server."
 msgstr ""
+"Mënul samp jokkoo gu wóor ak \"{{server}}\". Mën na am sa reso walla sa "
+"cëraakon dañu am jafe-jafe."
 
 #. # The error for when we try to contact a server but see no indication of a
 #. # response before we give up because of a timeout.
@@ -173,6 +177,8 @@ msgid ""
 "Unable to establish a connection with \"{{server}}\". There may be a problem "
 "with the network."
 msgstr ""
+"Mënul samp jokkoo gu wóor ak \"{{server}}\". Mën na am sa reso bi dafa am "
+"jafe-jafe."
 
 #. # The error for when we able to establish a (secure) connection with the server,
 #. # but there is some type of failure talking to the server that isn't covered by
@@ -181,7 +187,7 @@ msgstr ""
 #. # server's software.
 #: setup-error-server-problem
 msgid "There is a problem with the server \"{{server}}\". Try again later."
-msgstr ""
+msgstr "Jafe-jafe am na ci \"{{server}}\". Jéemaatal ci kanam."
 
 #. # The error for when we are trying to figure out the right server settings for
 #. # an account based on the e-mail address the user typed in during configuration,
@@ -194,161 +200,165 @@ msgid ""
 "Unable to automatically configure your account. Correct your e-mail address "
 "or try the manual configuration option."
 msgstr ""
+"Mënul defaral bopp sa sàq. Jubbantil sa dëkkuwaayu bataaxal ci internet "
+"walla nga jéem koo defaral sa bopp."
 
 #. # The error for when the user is trying to set up an account with a server that
 #. # currently indicates it is offline for maintenance.
 #: setup-error-server-maintenance
 msgid "The server \"{{server}}\" is offline for maintenance. Try again later."
 msgstr ""
+"Cëraakonu \"{{server}}\" nekkul ci internet ndax liñu koy defar. Jéemaatal "
+"ci kanam."
 
 #. # The error when the user trying to register a duplicate account
 #: setup-error-account-already-exists
 msgid "This account is already configured."
-msgstr ""
+msgstr "Defar nañu sàq mi ba noppi."
 
 #: setup-manual-config2
 msgid "Manual setup"
-msgstr ""
+msgstr "Sampal sa bopp"
 
 #: setup-manual-config-header
 msgid "Manual Setup"
-msgstr ""
+msgstr "Sampal sa Bopp"
 
 #: setup-manual-account-type
 msgctxt "setup-manual-account-type"
 msgid "Account type"
-msgstr ""
+msgstr "Xeetu sàq"
 
 #: setup-manual-imap-header
 msgctxt "setup-manual-imap-header"
 msgid "IMAP settings"
-msgstr ""
+msgstr "Jekkali IMAP"
 
 #: setup-manual-pop3-header
 msgctxt "setup-manual-pop3-header"
 msgid "POP3 settings"
-msgstr ""
+msgstr "Jekkali POP3"
 
 #: setup-manual-smtp-header
 msgctxt "setup-manual-smtp-header"
 msgid "SMTP settings"
-msgstr ""
+msgstr "Jekkali SMTP"
 
 #: setup-manual-activesync-header
 msgctxt "setup-manual-activesync-header"
 msgid "ActiveSync settings"
-msgstr ""
+msgstr "Jekkali ActiveSync"
 
 #: setup-manual-next
 msgctxt "setup-manual-next"
 msgid "Next"
-msgstr ""
+msgstr "Li ci topp"
 
 #: setup-manual-socket
 msgid "Socket Type"
-msgstr ""
+msgstr "Xeetu Piriis"
 
 #. # Technical term, should not be translated
 #: setup-manual-socket-ssl
 msgid "SSL"
-msgstr ""
+msgstr "SSL"
 
 #. # Technical term, should not be translated
 #: setup-manual-socket-starttls
 msgid "STARTTLS"
-msgstr ""
+msgstr "STARTTLS"
 
 #: setup-manual-hostname.placeholder
 msgctxt "setup-manual-hostname.placeholder"
 msgid "Hostname"
-msgstr ""
+msgstr "Turudalalkat"
 
 #: setup-manual-port.placeholder
 msgid "Port Number"
-msgstr ""
+msgstr "Nimero Poor"
 
 #: setup-manual-username.placeholder
 msgctxt "setup-manual-username.placeholder"
 msgid "Username"
-msgstr ""
+msgstr "Turu jëfandikukat"
 
 #. # LOCALIZATION NOTE (setup-manual-activesync-username.placeholder):
 #. # the double \\ will be displayed as a single \ 
 #: setup-manual-activesync-username.placeholder
 msgid "Domain\\Username"
-msgstr ""
+msgstr "Wàll\\Turu jëfandikukat"
 
 #: setup-bad-password-header
 msgid "Bad password!"
-msgstr ""
+msgstr "Baatu-jàll bi baaxul!"
 
 #: setup-bad-password
 msgid "We could not sign in to the server. Maybe your password is wrong?"
-msgstr ""
+msgstr "Mënu nu dugg ci cëraakon bi. Xanaa sa baatu-jàll bi baaxul?"
 
 #: setup-new-password.placeholder
 msgid "New password"
-msgstr ""
+msgstr "Baatu-jàll bu bees"
 
 #: setup-fix-password
 msgid "Retry with new password"
-msgstr ""
+msgstr "Jéemaatal ak baatu-jàll bu bees"
 
 #: setup-gmail-twofactor-header
 msgid "Two-Factor Enabled"
-msgstr ""
+msgstr "Doxal nañu Ñaari-Mbir"
 
 #: setup-gmail-twofactor-message
 msgid "You need to enter an application-specific password below."
-msgstr ""
+msgstr "Danga war a jëfandikoo ab baatu-jàllu jëfekaay bii ci suuf."
 
 #: setup-gmail-twofactor-fix
 msgid "Use application password"
-msgstr ""
+msgstr "Jëfandikool baatu-jàllu jëfekaay"
 
 #: setup-gmail-imap-header
 msgid "IMAP Disabled"
-msgstr ""
+msgstr "Fay nañu IMAP bi"
 
 #: setup-gmail-imap-message
 msgid "You must enable IMAP on your Gmail account"
-msgstr ""
+msgstr "Danga war a doxal IMAP bi ci sa sàqum Gmail"
 
 #: setup-gmail-imap-retry
 msgctxt "setup-gmail-imap-retry"
 msgid "Retry"
-msgstr ""
+msgstr "Jéemaat"
 
 #: setup-gmail-pop3-header
 msgid "POP3 Disabled"
-msgstr ""
+msgstr "Fay nañu POP3 bi"
 
 #: setup-gmail-pop3-message
 msgid "You must enable POP3 on your Gmail account"
-msgstr ""
+msgstr "Danga war a doxal POP3 bi ci sa sàqum Gmail"
 
 #: setup-gmail-pop3-retry
 msgctxt "setup-gmail-pop3-retry"
 msgid "Retry"
-msgstr ""
+msgstr "Jéemaat"
 
 #: settings-main-header
 msgid "Mail Settings"
-msgstr ""
+msgstr "Jekkali Bataaxal ci internet"
 
 #. # For account settings screen, there are sections of settings, and each
 #. #section has a header. One is Account, which shows general information
 #. # about the account, like the name.
 #: settings-sub-header-account
 msgid "Account"
-msgstr ""
+msgstr "Sàq"
 
 #. # Label in the "Account" sub-section of account settings that shows the
 #. # human name, not the email address, for the account.
 #: settings-account-name
 msgctxt "settings-account-name"
 msgid "Your name"
-msgstr ""
+msgstr "S"
 
 #. # Label in the "Account" sub-section of account settings for the checkbox
 #. # that enables getting phone notifications when new inbox email is found
