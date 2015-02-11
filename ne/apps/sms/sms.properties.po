@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-11 22:22+0000\n"
+"POT-Creation-Date: 2015-02-11 19:45+0000\n"
 "PO-Revision-Date: 2014-11-27 14:48+0000\n"
 "Last-Translator: Firoj  <firojghimire@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,13 +12,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1417099735.000000\n"
 
 #. # Headers
 #: messages
+#, fuzzy
+msgctxt "messages"
 msgid "Messages"
 msgstr "सन्देशहरू"
 
@@ -41,6 +43,8 @@ msgid "Back"
 msgstr "पछाडि"
 
 #: cancel
+#, fuzzy
+msgctxt "cancel"
 msgid "Cancel"
 msgstr "रद्द गर्नुहोस्"
 
@@ -168,12 +172,6 @@ msgstr "विषय हटाउनुहोस्"
 msgid "To:"
 msgstr "लागि:"
 
-#: send
-#, fuzzy
-msgctxt "send"
-msgid "Send"
-msgstr "पठाउनुहोस्"
-
 #: new
 msgid "New"
 msgstr "नयाँ"
@@ -208,13 +206,14 @@ msgstr "तपाईं अधिकतम लम्बाइमा पुग्
 msgid "Maximum length of subject reached."
 msgstr "विषयको अधिकतम लम्बाइमा पुगीएको छ ।"
 
-#: message-exceeded-max-length
+#. # LOCALIZATION NOTE(multimedia-message-exceeded-max-length): shown when size
+#. # of single multimedia message exceeds {{ mmsSize }}. The parameter {{ mmsSize }}
+#. # contains the maximum size for a MMS with the current carrier.
+#: multimedia-message-exceeded-max-length
 msgid ""
-"You’ve exceeded the maximum size. Remove attachments or shorten the message "
-"to send it."
+"You’ve exceeded the {{mmsSize}} KB size limit of a single multimedia "
+"message. Remove attachments or shorten the message to send it."
 msgstr ""
-"तपाईंले अधिकतम लम्बाइमा नाग्नुभएको छ।सन्देश पठाउनका लागि एट्ट्याचमेन्टहरु हटाउनुहोस् वा "
-"सन्देश छोटो बनाउनुहोस्।"
 
 #: newMessage
 msgid "New message"
@@ -263,7 +262,12 @@ msgctxt "recipient[other]"
 msgid "{{n}} recipients"
 msgstr "{{n}} प्रापकहरु"
 
-#: attachmentSize
+#: attachmentSizeB
+#, fuzzy
+msgid "{{n}} B"
+msgstr "{{n}} किलो बाइट"
+
+#: attachmentSizeKB
 msgid "{{n}} KB"
 msgstr "{{n}} किलो बाइट"
 
@@ -363,7 +367,7 @@ msgid "Report requested"
 msgstr ""
 
 #. # LOCALIZATION NOTE(report-status-rejected): used to describe the outgoing mms
-#. # could not be downloaded by receiver(might be an invalid number or the number 
+#. # could not be downloaded by receiver(might be an invalid number or the number
 #. # is not allowed to download mms)
 #: report-status-rejected
 msgid "Message rejected"
@@ -560,8 +564,8 @@ msgstr "एफ् डि एन् सक्रिय भएको छ"
 
 #. # LOCALIZATION NOTE (sms-counter-notice-label): if typed message exceeds the
 #. # character limit, more segments (messages) will be sent. {{number}} is the
-#. # number of current segment. 
-#. # Example: Limit 160 characters, toaster will show up when 161 characters 
+#. # number of current segment.
+#. # Example: Limit 160 characters, toaster will show up when 161 characters
 #. # typed, and string in toaster will be 'Editing SMS 2' (editing 2nd segment).
 #: sms-counter-notice-label
 msgid "Editing SMS {{number}}"
@@ -654,12 +658,14 @@ msgstr ""
 "{{ active }} मा रहेको हालको स्थानान्तर निलंबित हुनेछ । जे भए पनि जारी राख्न चाहनुहुन्छ ?"
 
 #: switchSimToSendBtnOk
+#, fuzzy
 msgid "{{switchSimToRetrieveBtnOk}}"
-msgstr ""
+msgstr "{{switchSimToRetrieveTitle}}"
 
 #: switchSimToSendConfirm
+#, fuzzy
 msgid "{{switchSimToRetrieveConfirm}}"
-msgstr ""
+msgstr "{{switchSimToRetrieveTitle}}"
 
 #: sendNoSignalErrorTitle
 msgid "No network coverage"
@@ -804,6 +810,10 @@ msgstr "अगाडि"
 msgid "View message report"
 msgstr "सन्देश दृश्य प्रतिवेदन"
 
+#: select-text
+msgid "Select text"
+msgstr ""
+
 #. # Labels for contact fields
 #: mobile
 msgid "Mobile"
@@ -916,43 +926,57 @@ msgstr "शीर्षक विहिन"
 msgid "MMS"
 msgstr "MMS"
 
-#. # LOCALIZATION NOTE (files-too-large): the English translation does not need the
+#. # LOCALIZATION NOTE (attached-files-too-large): the English translation does not need the
 #. # actual number of files. If your translation needs it, you can still add it
-#. # using the parameter {{ n }}.
-#: files-too-large
-msgctxt "files-too-large"
+#. # using the parameter {{ n }}. The parameter {{ mmsSize }} contains the maximum size
+#. # for a MMS with the current carrier.
+#: attached-files-too-large
+#, fuzzy
+msgctxt "attached-files-too-large"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: files-too-large[zero]
-msgctxt "files-too-large[zero]"
-msgid "The file you have selected is too large."
-msgstr "तपाईँले चयन गर्नुभएको फाइल धेरै ठुलो छ।"
+#: attached-files-too-large[zero]
+msgctxt "attached-files-too-large[zero]"
+msgid ""
+"The file you have selected exceeds the {{mmsSize}} KB size limit of a single "
+"multimedia message."
+msgstr ""
 
-#: files-too-large[one]
-msgctxt "files-too-large[one]"
-msgid "The file you have selected is too large."
-msgstr "तपाईँले चयन गर्नुभएको फाइल धेरै ठुलो छ।"
+#: attached-files-too-large[one]
+msgctxt "attached-files-too-large[one]"
+msgid ""
+"The file you have selected exceeds the {{mmsSize}} KB size limit of a single "
+"multimedia message."
+msgstr ""
 
-#: files-too-large[two]
-msgctxt "files-too-large[two]"
-msgid "The files you have selected are too large."
-msgstr "तपाईँले चयन गर्नुभएको फाइल धेरै ठुलो छ।"
+#: attached-files-too-large[two]
+msgctxt "attached-files-too-large[two]"
+msgid ""
+"The files you have selected exceeds the {{mmsSize}} KB size limit of a "
+"single multimedia message."
+msgstr ""
 
-#: files-too-large[few]
-msgctxt "files-too-large[few]"
-msgid "The files you have selected are too large."
-msgstr "तपाईँले चयन गर्नुभएको फाइल धेरै ठुलो छ।"
+#: attached-files-too-large[few]
+msgctxt "attached-files-too-large[few]"
+msgid ""
+"The files you have selected exceeds the {{mmsSize}} KB size limit of a "
+"single multimedia message."
+msgstr ""
 
-#: files-too-large[many]
-msgctxt "files-too-large[many]"
-msgid "The files you have selected are too large."
-msgstr "तपाईँले चयन गर्नुभएको फाइल धेरै ठुलो छ।"
+#: attached-files-too-large[many]
+msgctxt "attached-files-too-large[many]"
+msgid ""
+"The files you have selected exceeds the {{mmsSize}} KB size limit of a "
+"single multimedia message."
+msgstr ""
 
-#: files-too-large[other]
-msgctxt "files-too-large[other]"
-msgid "The files you have selected are too large."
-msgstr "तपाईँले चयन गर्नुभएको फाइल धेरै ठुलो छ।"
+#: attached-files-too-large[other]
+msgctxt "attached-files-too-large[other]"
+msgid ""
+"The files you have selected exceeds the {{mmsSize}} KB size limit of a "
+"single multimedia message."
+msgstr ""
 
 #: resize-image
 msgid "Resizing the attached image"
@@ -983,7 +1007,6 @@ msgstr "({{sim}}) {{sender}}"
 #. #LOCALIZATION NOTE (send-button): localize only the ariaLabel
 #: send-button.ariaLabel
 #, fuzzy
-msgctxt "send-button.ariaLabel"
 msgid "Send"
 msgstr "पठाउनुहोस्"
 
@@ -1045,6 +1068,67 @@ msgstr "पढ्नुहोस्:"
 #: message-delivery-status-error.ariaLabel
 msgid "Error"
 msgstr "त्रुटि"
+
+#. # Modal dialog strings
+#: modal-dialog-ok-button
+#, fuzzy
+msgctxt "modal-dialog-ok-button"
+msgid "OK"
+msgstr "ठिक छ"
+
+#: modal-dialog-cancel-button
+#, fuzzy
+msgctxt "modal-dialog-cancel-button"
+msgid "Cancel"
+msgstr "रद्द गर्नुहोस्"
+
+#. # LOCALIZATION NOTE (modal-dialog-default-title): Here we should have name of
+#. # the Messages app, the same as we have in app manifest.
+#: modal-dialog-default-title
+#, fuzzy
+msgctxt "modal-dialog-default-title"
+msgid "Messages"
+msgstr "सन्देशहरू"
+
+#~ msgid ""
+#~ "You’ve exceeded the maximum size. Remove attachments or shorten the "
+#~ "message to send it."
+#~ msgstr ""
+#~ "तपाईंले अधिकतम लम्बाइमा नाग्नुभएको छ।सन्देश पठाउनका लागि एट्ट्याचमेन्टहरु हटाउनुहोस् वा "
+#~ "सन्देश छोटो बनाउनुहोस्।"
+
+#~ msgctxt "files-too-large"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "files-too-large[zero]"
+#~ msgid "The file you have selected is too large."
+#~ msgstr "तपाईँले चयन गर्नुभएको फाइल धेरै ठुलो छ।"
+
+#~ msgctxt "files-too-large[one]"
+#~ msgid "The file you have selected is too large."
+#~ msgstr "तपाईँले चयन गर्नुभएको फाइल धेरै ठुलो छ।"
+
+#~ msgctxt "files-too-large[two]"
+#~ msgid "The files you have selected are too large."
+#~ msgstr "तपाईँले चयन गर्नुभएको फाइल धेरै ठुलो छ।"
+
+#~ msgctxt "files-too-large[few]"
+#~ msgid "The files you have selected are too large."
+#~ msgstr "तपाईँले चयन गर्नुभएको फाइल धेरै ठुलो छ।"
+
+#~ msgctxt "files-too-large[many]"
+#~ msgid "The files you have selected are too large."
+#~ msgstr "तपाईँले चयन गर्नुभएको फाइल धेरै ठुलो छ।"
+
+#~ msgctxt "files-too-large[other]"
+#~ msgid "The files you have selected are too large."
+#~ msgstr "तपाईँले चयन गर्नुभएको फाइल धेरै ठुलो छ।"
+
+#, fuzzy
+#~ msgctxt "send-button.ariaLabel"
+#~ msgid "Send"
+#~ msgstr "पठाउनुहोस्"
 
 #~ msgid "{{name}}"
 #~ msgstr "{{name}}"

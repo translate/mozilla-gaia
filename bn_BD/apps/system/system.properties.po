@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-19 07:45+0000\n"
+"POT-Creation-Date: 2015-02-11 19:45+0000\n"
 "PO-Revision-Date: 2014-08-01 11:47+0000\n"
 "Last-Translator: Belayet <bellayet@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,6 +23,8 @@ msgid "OK"
 msgstr "ঠিক আছে"
 
 #: back
+#, fuzzy
+msgctxt "back"
 msgid "Back"
 msgstr "পিছনে"
 
@@ -68,13 +70,9 @@ msgstr "পূর্বাবস্থা"
 msgid "Enter PIN"
 msgstr "পিন প্রবেশ করুন"
 
-#: mediaPlaybackTitle.ariaLabel
-msgid "Title"
-msgstr "শিরোনাম"
-
-#: mediaPlaybackArtist.ariaLabel
-msgid "Artist"
-msgstr "শিল্পী"
+#: mediaPlaybackTrack.ariaLabel
+msgid "Track title and artist"
+msgstr ""
 
 #: mediaPlaybackControls.ariaLabel
 msgid "Playback controls"
@@ -705,6 +703,10 @@ msgstr ""
 msgid "{{ appName }} installed"
 msgstr "{{ appName }} ইনস্টল হয়েছে"
 
+#: langpack-install-success
+msgid "{{ appName }} installed. Go to Settings > Languages to enable it."
+msgstr ""
+
 #. #setup dialog
 #: setup
 msgid "Setup"
@@ -1032,30 +1034,6 @@ msgstr "{{name}} ঠিকমতো লোড হচ্ছে না"
 msgid "{{name}} is having problems"
 msgstr "{{name}} এ সমস্যা হচ্ছে"
 
-#: airplane-is-on
-msgid "Airplane mode is on"
-msgstr "বিমান মোড চালু"
-
-#: airplane-is-turned-on
-msgid ""
-"{{name}} requires a network connection. Turn off airplane mode from Settings "
-"and connect to a Wi-Fi or mobile data network."
-msgstr ""
-"{{name}} নেটওয়ার্ক সংযোগ চাচ্ছে। সেটিং থেকে বিমান মোড বন্ধ করুন এবং ওয়াই-ফাই "
-"অথবা মোবাইল ডাটা নেটওয়ার্কে সংযুক্ত হোন।"
-
-#: network-connection-unavailable
-msgid "Network connection unavailable"
-msgstr "নেটওয়ার্ক সংযোগ উপলব্ধ নেই"
-
-#: network-error
-msgid ""
-"{{name}} requires a network connection. Try connecting to a Wi-Fi or mobile "
-"data network."
-msgstr ""
-"{{name}} নেটওয়ার্ক সংযোগ চাচ্ছে। ওয়াই-ফাই অথবা মোবাইল ডাটা নেটওয়ার্কে সংযুক্ত হতে "
-"চেষ্টা করুন।"
-
 #: unable-to-connect
 #, fuzzy
 msgid "Unable to connect"
@@ -1145,6 +1123,7 @@ msgid "New private window"
 msgstr ""
 
 #: show-windows
+msgctxt "show-windows"
 msgid "Show windows"
 msgstr ""
 
@@ -1166,6 +1145,10 @@ msgstr "{{brandShortName}} মাত্র একটি ক্র্যাশ �
 #: crash-dialog-app
 msgid "{{name}} just crashed"
 msgstr "{{name}} এইমাত্র ক্র্যাশ হলো"
+
+#: crash-dialog-app-noname
+msgid "Something"
+msgstr ""
 
 #: crash-dialog-message
 msgid ""
@@ -2113,6 +2096,16 @@ msgstr "ঠিকানা দিন অথবা অনুসন্ধান �
 
 #. # LOCALIZATION NOTE: The following strings are spoken by screen readers and
 #. # not shown on the screen.
+#: back-button.ariaLabel
+#, fuzzy
+msgctxt "back-button.ariaLabel"
+msgid "Back"
+msgstr "পিছনে"
+
+#: forward-button.ariaLabel
+msgid "Forward"
+msgstr ""
+
 #: reload-button.ariaLabel
 msgid "Reload"
 msgstr ""
@@ -2121,35 +2114,20 @@ msgstr ""
 msgid "Stop"
 msgstr ""
 
-#. # Hotspot
-#: noSIMCardInHotspot3
-msgid "Hotspot off: SIM card missing or inserted incorrectly."
+#: windows-button.ariaLabel
+msgctxt "windows-button.ariaLabel"
+msgid "Show windows"
 msgstr ""
 
+#. # Hotspot
 #: noHotspotWhenAPMisOnWifiHotspot
 #, fuzzy
 msgid "Turn off airplane mode to use Wi-Fi hotspot."
 msgstr "ওয়াই ফাই হটস্পট ব্যবহার করার জন্য বিমান মোড বন্ধ করুন"
 
-#: noHotspotWhenAPMisOnUsbHotspot
-msgid "Turn off airplane mode to use USB tethering."
-msgstr ""
-
 #: apmActivated
 msgid "Airplane mode activated"
 msgstr "বিমান মোড সক্রিয়"
-
-#: noConnectivityHead
-msgid "No data connection"
-msgstr ""
-
-#: noConnectivityMessageWifiHotspot
-msgid "Wi-Fi hotspot is disabled because there is no data connection."
-msgstr ""
-
-#: noConnectivityMessageUsbHotspot
-msgid "USB tethering is disabled because there is no data connection."
-msgstr ""
 
 #. # Browser Context Menu
 #: open-in-new-window
@@ -2197,38 +2175,55 @@ msgid "Share Audio"
 msgstr "অডিও শেয়ার"
 
 #. # Private Browser
-#: private-browser
-msgid "Private Browser"
+#: private-window
+msgid "Private Window"
 msgstr ""
 
 #: private-browser-title
 msgid "You’re browsing privately"
 msgstr ""
 
-#: private-browser-detail1
-msgid "{{brandShortName}} won’t remember any history for this window."
-msgstr ""
-
-#: private-browser-detail2
+#: private-window-detail1
 msgid ""
-"That includes browsing history, search history, download history, web form "
-"history, cookies, and temporary internet files. However, files you download "
-"and bookmarks you make will be kept."
+"The browser won’t keep any browser history, cookies, or temporary Internet "
+"files."
 msgstr ""
 
-#: private-browser-detail3
+#: private-window-detail2
 msgid ""
 "While this device won’t have a record of your browsing history, your "
-"employer or internet service provider can still track the pages you visit."
-msgstr ""
-
-#: private-browser-learn-more
-msgid "Learn More."
+"Internet service provider can still track the pages you visit."
 msgstr ""
 
 #: okCharsLeft
 msgid "OK ({{n}})"
 msgstr ""
+
+#~ msgid "Title"
+#~ msgstr "শিরোনাম"
+
+#~ msgid "Artist"
+#~ msgstr "শিল্পী"
+
+#~ msgid "Airplane mode is on"
+#~ msgstr "বিমান মোড চালু"
+
+#~ msgid ""
+#~ "{{name}} requires a network connection. Turn off airplane mode from "
+#~ "Settings and connect to a Wi-Fi or mobile data network."
+#~ msgstr ""
+#~ "{{name}} নেটওয়ার্ক সংযোগ চাচ্ছে। সেটিং থেকে বিমান মোড বন্ধ করুন এবং ওয়াই-ফাই "
+#~ "অথবা মোবাইল ডাটা নেটওয়ার্কে সংযুক্ত হোন।"
+
+#~ msgid "Network connection unavailable"
+#~ msgstr "নেটওয়ার্ক সংযোগ উপলব্ধ নেই"
+
+#~ msgid ""
+#~ "{{name}} requires a network connection. Try connecting to a Wi-Fi or "
+#~ "mobile data network."
+#~ msgstr ""
+#~ "{{name}} নেটওয়ার্ক সংযোগ চাচ্ছে। ওয়াই-ফাই অথবা মোবাইল ডাটা নেটওয়ার্কে সংযুক্ত "
+#~ "হতে চেষ্টা করুন।"
 
 #~ msgctxt "statusbarNotifications[few]"
 #~ msgid "{{n}} notifications"

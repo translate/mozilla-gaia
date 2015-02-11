@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-11 22:22+0000\n"
+"POT-Creation-Date: 2015-02-11 19:45+0000\n"
 "PO-Revision-Date: 2015-02-06 20:56+0000\n"
 "Last-Translator: Muhammad Fawwaz <mfawwaz93@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,13 +13,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n>=3 && "
 "n<=10 ? 3 : n>=11 && n<=99 ? 4 : 5;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1423256201.000000\n"
 
 #. # Headers
 #: messages
+#, fuzzy
+msgctxt "messages"
 msgid "Messages"
 msgstr "الرسائل"
 
@@ -42,6 +44,8 @@ msgid "Back"
 msgstr "رجوع"
 
 #: cancel
+#, fuzzy
+msgctxt "cancel"
 msgid "Cancel"
 msgstr "ألغِ"
 
@@ -165,11 +169,6 @@ msgstr "احذف الموضوع"
 msgid "To:"
 msgstr "إلى:"
 
-#: send
-msgctxt "send"
-msgid "Send"
-msgstr "أرسِل"
-
 #: new
 msgid "New"
 msgstr "جديد"
@@ -204,13 +203,14 @@ msgstr "لقد وصلت الى الحد المسموح به في عدد أحرف
 msgid "Maximum length of subject reached."
 msgstr "لقد بلغت الحد الأقصى في عدد أحرف الموضوع."
 
-#: message-exceeded-max-length
+#. # LOCALIZATION NOTE(multimedia-message-exceeded-max-length): shown when size
+#. # of single multimedia message exceeds {{ mmsSize }}. The parameter {{ mmsSize }}
+#. # contains the maximum size for a MMS with the current carrier.
+#: multimedia-message-exceeded-max-length
 msgid ""
-"You’ve exceeded the maximum size. Remove attachments or shorten the message "
-"to send it."
+"You’ve exceeded the {{mmsSize}} KB size limit of a single multimedia "
+"message. Remove attachments or shorten the message to send it."
 msgstr ""
-"لقد تجاوزت الحد الأقصى لعدد الأحرف. الرجاء  إزالة أحرف او رموز خاصة أو تقصير "
-"الرسالة لإرسالها."
 
 #: newMessage
 msgid "New message"
@@ -259,7 +259,12 @@ msgctxt "recipient[other]"
 msgid "{{n}} recipients"
 msgstr "{{n}} مُستلمين"
 
-#: attachmentSize
+#: attachmentSizeB
+#, fuzzy
+msgid "{{n}} B"
+msgstr "{{n}} كيلو بايت"
+
+#: attachmentSizeKB
 msgid "{{n}} KB"
 msgstr "{{n}} كيلو بايت"
 
@@ -358,7 +363,7 @@ msgid "Report requested"
 msgstr "التقرير المطلوب"
 
 #. # LOCALIZATION NOTE(report-status-rejected): used to describe the outgoing mms
-#. # could not be downloaded by receiver(might be an invalid number or the number 
+#. # could not be downloaded by receiver(might be an invalid number or the number
 #. # is not allowed to download mms)
 #: report-status-rejected
 msgid "Message rejected"
@@ -554,8 +559,8 @@ msgstr "FDN مفعّل"
 
 #. # LOCALIZATION NOTE (sms-counter-notice-label): if typed message exceeds the
 #. # character limit, more segments (messages) will be sent. {{number}} is the
-#. # number of current segment. 
-#. # Example: Limit 160 characters, toaster will show up when 161 characters 
+#. # number of current segment.
+#. # Example: Limit 160 characters, toaster will show up when 161 characters
 #. # typed, and string in toaster will be 'Editing SMS 2' (editing 2nd segment).
 #: sms-counter-notice-label
 msgid "Editing SMS {{number}}"
@@ -808,6 +813,10 @@ msgstr "التالي"
 msgid "View message report"
 msgstr "عرض تقرير الرسالة"
 
+#: select-text
+msgid "Select text"
+msgstr ""
+
 #. # Labels for contact fields
 #: mobile
 msgid "Mobile"
@@ -922,43 +931,57 @@ msgstr "بلا عنوان"
 msgid "MMS"
 msgstr "وسائط متعدّدة"
 
-#. # LOCALIZATION NOTE (files-too-large): the English translation does not need the
+#. # LOCALIZATION NOTE (attached-files-too-large): the English translation does not need the
 #. # actual number of files. If your translation needs it, you can still add it
-#. # using the parameter {{ n }}.
-#: files-too-large
-msgctxt "files-too-large"
+#. # using the parameter {{ n }}. The parameter {{ mmsSize }} contains the maximum size
+#. # for a MMS with the current carrier.
+#: attached-files-too-large
+#, fuzzy
+msgctxt "attached-files-too-large"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: files-too-large[zero]
-msgctxt "files-too-large[zero]"
-msgid "The file you have selected is too large."
-msgstr "الملف الذي اخترته كبير جدا."
+#: attached-files-too-large[zero]
+msgctxt "attached-files-too-large[zero]"
+msgid ""
+"The file you have selected exceeds the {{mmsSize}} KB size limit of a single "
+"multimedia message."
+msgstr ""
 
-#: files-too-large[one]
-msgctxt "files-too-large[one]"
-msgid "The file you have selected is too large."
-msgstr "الملف الذي اخترته كبير جدا."
+#: attached-files-too-large[one]
+msgctxt "attached-files-too-large[one]"
+msgid ""
+"The file you have selected exceeds the {{mmsSize}} KB size limit of a single "
+"multimedia message."
+msgstr ""
 
-#: files-too-large[two]
-msgctxt "files-too-large[two]"
-msgid "The files you have selected are too large."
-msgstr "الملف الذي اخترته كبير جدا."
+#: attached-files-too-large[two]
+msgctxt "attached-files-too-large[two]"
+msgid ""
+"The files you have selected exceeds the {{mmsSize}} KB size limit of a "
+"single multimedia message."
+msgstr ""
 
-#: files-too-large[few]
-msgctxt "files-too-large[few]"
-msgid "The files you have selected are too large."
-msgstr "الملف الذي اخترته كبير جدا."
+#: attached-files-too-large[few]
+msgctxt "attached-files-too-large[few]"
+msgid ""
+"The files you have selected exceeds the {{mmsSize}} KB size limit of a "
+"single multimedia message."
+msgstr ""
 
-#: files-too-large[many]
-msgctxt "files-too-large[many]"
-msgid "The files you have selected are too large."
-msgstr "الملفات التي اخترتها كبيرة جدا."
+#: attached-files-too-large[many]
+msgctxt "attached-files-too-large[many]"
+msgid ""
+"The files you have selected exceeds the {{mmsSize}} KB size limit of a "
+"single multimedia message."
+msgstr ""
 
-#: files-too-large[other]
-msgctxt "files-too-large[other]"
-msgid "The files you have selected are too large."
-msgstr "الملفات التي اخترتها كبيرة جدا."
+#: attached-files-too-large[other]
+msgctxt "attached-files-too-large[other]"
+msgid ""
+"The files you have selected exceeds the {{mmsSize}} KB size limit of a "
+"single multimedia message."
+msgstr ""
 
 #: resize-image
 msgid "Resizing the attached image"
@@ -988,7 +1011,7 @@ msgstr "({{sim}}) {{sender}}"
 
 #. #LOCALIZATION NOTE (send-button): localize only the ariaLabel
 #: send-button.ariaLabel
-msgctxt "send-button.ariaLabel"
+#, fuzzy
 msgid "Send"
 msgstr "أرسِل"
 
@@ -1050,6 +1073,66 @@ msgstr "قُرِئَت"
 #: message-delivery-status-error.ariaLabel
 msgid "Error"
 msgstr "خطأ"
+
+#. # Modal dialog strings
+#: modal-dialog-ok-button
+#, fuzzy
+msgctxt "modal-dialog-ok-button"
+msgid "OK"
+msgstr "موافق"
+
+#: modal-dialog-cancel-button
+#, fuzzy
+msgctxt "modal-dialog-cancel-button"
+msgid "Cancel"
+msgstr "ألغِ"
+
+#. # LOCALIZATION NOTE (modal-dialog-default-title): Here we should have name of
+#. # the Messages app, the same as we have in app manifest.
+#: modal-dialog-default-title
+#, fuzzy
+msgctxt "modal-dialog-default-title"
+msgid "Messages"
+msgstr "الرسائل"
+
+#~ msgid ""
+#~ "You’ve exceeded the maximum size. Remove attachments or shorten the "
+#~ "message to send it."
+#~ msgstr ""
+#~ "لقد تجاوزت الحد الأقصى لعدد الأحرف. الرجاء  إزالة أحرف او رموز خاصة أو "
+#~ "تقصير الرسالة لإرسالها."
+
+#~ msgctxt "files-too-large"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "files-too-large[zero]"
+#~ msgid "The file you have selected is too large."
+#~ msgstr "الملف الذي اخترته كبير جدا."
+
+#~ msgctxt "files-too-large[one]"
+#~ msgid "The file you have selected is too large."
+#~ msgstr "الملف الذي اخترته كبير جدا."
+
+#~ msgctxt "files-too-large[two]"
+#~ msgid "The files you have selected are too large."
+#~ msgstr "الملف الذي اخترته كبير جدا."
+
+#~ msgctxt "files-too-large[few]"
+#~ msgid "The files you have selected are too large."
+#~ msgstr "الملف الذي اخترته كبير جدا."
+
+#~ msgctxt "files-too-large[many]"
+#~ msgid "The files you have selected are too large."
+#~ msgstr "الملفات التي اخترتها كبيرة جدا."
+
+#~ msgctxt "files-too-large[other]"
+#~ msgid "The files you have selected are too large."
+#~ msgstr "الملفات التي اخترتها كبيرة جدا."
+
+#~ msgctxt "send-button.ariaLabel"
+#~ msgid "Send"
+#~ msgstr "أرسِل"
 
 #~ msgid "{{name}}"
 #~ msgstr "{{name}}"

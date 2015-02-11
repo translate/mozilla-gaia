@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-19 07:45+0000\n"
+"POT-Creation-Date: 2015-02-11 19:45+0000\n"
 "PO-Revision-Date: 2013-08-22 14:09+0000\n"
 "Last-Translator: Chris <edresources@bickersc.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -248,6 +248,15 @@ msgstr "E lē taunu'u le feso'ota'iga"
 msgctxt "shortStatus-disconnected"
 msgid "Offline"
 msgstr "Laina-'ese"
+
+#: wifi-sleep
+msgid "Wi-Fi Sleep"
+msgstr ""
+
+#: wifi-sleep-description
+msgid ""
+"Enable to automatically turn off Wi-Fi during sleep to save battery power.  "
+msgstr ""
 
 #: manageNetworks
 #, fuzzy
@@ -726,6 +735,111 @@ msgstr "Sesē i le fa'atonutonu o le vili."
 
 #: callerId
 msgid "Caller ID"
+msgstr ""
+
+#: callBarring
+msgid "Call Barring"
+msgstr ""
+
+#. # LOCALIZATION NOTE (callBarring-header): if you leave the original
+#. # en-US value "{{callBarring}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "callBarring".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: callBarring-header
+msgid "{{callBarring}}"
+msgstr ""
+
+#: callBarring-outgoing
+msgid "Outgoing calls"
+msgstr ""
+
+#: callBarring-baoc
+msgctxt "callBarring-baoc"
+msgid "All"
+msgstr ""
+
+#: callBarring-boic
+msgid "International"
+msgstr ""
+
+#: callBarring-boicExhc
+msgid "International except Home Country"
+msgstr ""
+
+#: callBarring-incoming
+msgid "Incoming calls"
+msgstr ""
+
+#: callBarring-baic
+msgctxt "callBarring-baic"
+msgid "All"
+msgstr ""
+
+#: callBarring-baicR
+msgid "All while roaming"
+msgstr ""
+
+#: callBarring-passcode
+#, fuzzy
+msgctxt "callBarring-passcode"
+msgid "Passcode"
+msgstr "'Upulilo"
+
+#: callBarring-change-passcode
+msgctxt "callBarring-change-passcode"
+msgid "Change passcode"
+msgstr ""
+
+#: callBarring-passcode-enter
+#, fuzzy
+msgctxt "callBarring-passcode-enter"
+msgid "Enter passcode"
+msgstr "Fa'atupu 'Upulilo"
+
+#: callBarring-passcode-unknown
+msgid "In case you don't know your passcode, please contact your carrier"
+msgstr ""
+
+#: callBarring-current-passcode
+msgctxt "callBarring-current-passcode"
+msgid "Current passcode"
+msgstr ""
+
+#: callBarring-new-passcode
+msgctxt "callBarring-new-passcode"
+msgid "New passcode"
+msgstr ""
+
+#: callBarring-create-passcode
+#, fuzzy
+msgctxt "callBarring-create-passcode"
+msgid "Create a Passcode"
+msgstr "Fa'atupu 'Upulilo"
+
+#: callBarring-confirm-passcode
+#, fuzzy
+msgid "Confirm passcode"
+msgstr "Fa'amausalī 'Upulilo"
+
+#: callBarring-passcode-error-generic
+msgid "Passcode error."
+msgstr ""
+
+#: callBarring-passcode-error-incorrect
+msgid "Passcode is incorrect."
+msgstr ""
+
+#: callBarring-passcode-error-mismatch
+msgid "Passcode doesn’t match."
+msgstr ""
+
+#: callBarring-update-item-error
+msgid "Error while updating the item: {{error}}."
+msgstr ""
+
+#: callBarring-change-passcode-success
+msgid "Passcode changed."
 msgstr ""
 
 #: callerId-default
@@ -1362,14 +1476,10 @@ msgid ""
 "you are in a roaming area."
 msgstr ""
 
-#: change-apn-warning-message
+#: change-apn-warning-message1
 msgid ""
 "Depending on your service agreement, changing your APN setting may result in "
-"extra charges when roaming."
-msgstr ""
-
-#: change-apn-warning-question
-msgid "Do you want to proceed?"
+"extra charges when roaming. Do you want to proceed?"
 msgstr ""
 
 #: reset-apn-warning-title
@@ -1546,6 +1656,7 @@ msgid "Unpair"
 msgstr ""
 
 #: device-option-confirm
+msgctxt "device-option-confirm"
 msgid "Confirm"
 msgstr ""
 
@@ -1723,11 +1834,34 @@ msgstr "SSID Igoa o felavasa'iga"
 msgid "open"
 msgstr "tatala"
 
-#: hotspot-wpa-psk
+#. # LOCALIZATION NOTE
+#. #
+#. # [For localizers]
+#. # We can't render these strings correctly for RTL locales, so we have to put LRE (&#x202a;)
+#. # and PDF (&#x202c;) entities to these translations to force the correct direction.
+#. #
+#. # RTL locales should have a translation similar to this:
+#. # hotspot-wpa-psk.innerHTML= &#x202a;WPA (TKIP)&#x202c;
+#. # hotspot-wpa2-psk.innerHTML= &#x202a;WPA2 (AES)&#x202c;
+#. #
+#. # [More details]
+#. #
+#. # Please check settings.ar.properties to see the difference first.
+#. #
+#. # We have to put "&#x202a;" and "&#x202c;" these two RTL related characters
+#. # in Arabic locales to make sure these two strings would not be translated
+#. # automatically in a wrong way by browser. Because from engineering side,
+#. # we can only change settings.ar.properties, for localizers, please remember to
+#. # put them in the other RTL languages.
+#. #
+#. # Additionally, in order to make this hack work, we got some help from l10n.js
+#. # that we need to put these strings inside "KEY".innerHTML, so that's the
+#. # reason why these two strings below would be suffixed with ".innerHTML"
+#: hotspot-wpa-psk.innerHTML
 msgid "WPA (TKIP)"
 msgstr "WPA (TKIP)"
 
-#: hotspot-wpa2-psk
+#: hotspot-wpa2-psk.innerHTML
 msgid "WPA2 (AES)"
 msgstr "WPA2 (AES)"
 
@@ -2014,6 +2148,10 @@ msgstr ""
 #: region
 msgid "Region"
 msgstr "Itūlalolagi"
+
+#: more-languages
+msgid "Get More Languages"
+msgstr ""
 
 #: sample-format
 msgid "Sample Format"
@@ -2527,6 +2665,8 @@ msgid "Create"
 msgstr "Fa'atupu"
 
 #: create-a-passcode
+#, fuzzy
+msgctxt "create-a-passcode"
 msgid "Create a Passcode"
 msgstr "Fa'atupu 'Upulilo"
 
@@ -2543,14 +2683,18 @@ msgid "Passcode"
 msgstr "'Upulilo"
 
 #: enter-passcode
+#, fuzzy
+msgctxt "enter-passcode"
 msgid "Enter passcode"
 msgstr "Fa'atupu 'Upulilo"
 
 #: new-passcode
+msgctxt "new-passcode"
 msgid "New passcode"
 msgstr ""
 
 #: current-passcode
+msgctxt "current-passcode"
 msgid "Current passcode"
 msgstr ""
 
@@ -2596,6 +2740,7 @@ msgid "Require passcode"
 msgstr ""
 
 #: change-passcode
+msgctxt "change-passcode"
 msgid "Change passcode"
 msgstr ""
 
@@ -2947,6 +3092,15 @@ msgstr ""
 #: clear
 msgid "Clear"
 msgstr "Fa'amamā"
+
+#. # Security :: Privacy Panel
+#: privacy-controls
+msgid "Privacy Controls"
+msgstr ""
+
+#: no-privacy-panel
+msgid "No privacy panel app found"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Storage
@@ -3688,6 +3842,22 @@ msgid "Reset"
 msgstr ""
 
 #: reset-warning-title
+msgctxt "reset-warning-title"
+msgid "CAUTION"
+msgstr ""
+
+#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
+#. # full DevTools access.
+#: unlock-privileges
+msgid "Unlock Privileges"
+msgstr ""
+
+#: reset-devtools
+msgid "Reset and enable full DevTools"
+msgstr ""
+
+#: reset-devtools-warning-title
+msgctxt "reset-devtools-warning-title"
 msgid "CAUTION"
 msgstr ""
 
@@ -3869,6 +4039,10 @@ msgstr ""
 
 #: app-suspending
 msgid "App suspending"
+msgstr ""
+
+#: copypaste
+msgid "Copy/paste"
 msgstr ""
 
 #: verbose-app-permissions
@@ -4327,6 +4501,22 @@ msgstr ""
 msgid "Set Idle Mode Text"
 msgstr ""
 
+#: stkItemsNaiPerformCardApdu
+msgid "Perform Card APDU"
+msgstr ""
+
+#: stkItemsNaiPowerOnCard
+msgid "Power On Card"
+msgstr ""
+
+#: stkItemsNaiPowerOffCard
+msgid "Power Off Card"
+msgstr ""
+
+#: stkItemsNaiGetReaderStatus
+msgid "Get Reader Status"
+msgstr ""
+
 #: stkItemsNaiOpenChannel
 msgid "Open Channel"
 msgstr ""
@@ -4345,6 +4535,10 @@ msgstr ""
 
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
+msgstr ""
+
+#: stkItemsNaiEndOfTheProactiveSession
+msgid "End of the proactive session"
 msgstr ""
 
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
@@ -4384,6 +4578,33 @@ msgstr ""
 msgid ""
 "Enabling Wi-Fi hotspot will disable USB tethering. Do you want to enable Wi-"
 "Fi hotspot?"
+msgstr ""
+
+#. # Settings Dialog
+#: settings-dialog-alert
+#, fuzzy
+msgid "Alert"
+msgstr "Lapata'i"
+
+#: settings-dialog-confirm
+msgctxt "settings-dialog-confirm"
+msgid "Confirm"
+msgstr ""
+
+#: settings-dialog-prompt
+msgid "Prompt"
+msgstr ""
+
+#: settings-alert-dialog-header
+msgid "{{settings-dialog-alert}}"
+msgstr ""
+
+#: settings-confirm-dialog-header
+msgid "{{settings-dialog-confirm}}"
+msgstr ""
+
+#: settings-prompt-dialog-header
+msgid "{{settings-dialog-prompt}}"
 msgstr ""
 
 #~ msgid "Clear bookmarks data"

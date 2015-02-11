@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-19 07:45+0000\n"
+"POT-Creation-Date: 2015-02-11 19:45+0000\n"
 "PO-Revision-Date: 2014-11-19 09:44+0000\n"
 "Last-Translator: Arun Kumar <thangam.arunx@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1416390291.000000\n"
@@ -447,7 +447,21 @@ msgstr "முடிந்தது"
 msgid "Confirmation"
 msgstr "உறுதிப்படுத்துதல்"
 
-#: reset-confirmation-warning
+#: reset-wifi-confirmation-warning
+msgid "Your current Wi-Fi data usage is {{wifiData}}. Clear it all?"
+msgstr ""
+
+#: reset-mobile-confirmation-warning
+msgid "Your current mobile data usage is {{mobileData}}. Clear it all?"
+msgstr ""
+
+#: reset-all-confirmation-warning
+msgid ""
+"Your current data usages are {{mobileData}} on mobile, {{wifiData}} on Wi-"
+"Fi. Clear it all?"
+msgstr ""
+
+#: reset-telephony-confirmation-warning
 msgid "All current data will be deleted. Are you sure you want to reset?"
 msgstr "தற்போதுள்ள அனைத்து தகவல்களும் அழிக்கப்படும். நீங்க மீட்டமைக்க விரும்புகிறீர்களா?"
 
@@ -463,7 +477,7 @@ msgstr "வைபை பயனளவை மீட்டமை"
 msgid "Reset mobile usage"
 msgstr "கைப்பேசி பயனளவை மீட்டமை"
 
-#: reset-all-data-usage
+#: reset-all
 msgid "Reset mobile & Wi-Fi data"
 msgstr "இருத்தரவையும் மீட்டமை"
 
@@ -506,6 +520,13 @@ msgid ""
 msgstr ""
 "இணைப்பின் வேகம் தரவு வரம்பை அடைந்த பின் குறைந்துவிடும். உங்களுடைய சேவை வழங்குநர் "
 "பொருத்தமான எச்சரிக்கையை அமைத்துள்ளார என சரிபார்."
+
+#. # LOCALIZATION NOTE (data-limit-input-label): A label for an input field for
+#. # data limit. The following string is spoken by screen readers and not shown on
+#. # the screen.
+#: data-limit-input-label.ariaLabel
+msgid "Data limit"
+msgstr ""
 
 #. # LOCALIZATION NOTE (wifi-usage, mobile-usage): these strings are displayed in
 #. # the main window
@@ -701,17 +722,36 @@ msgid "KB"
 msgstr "கிபை"
 
 #: MB
+#, fuzzy
+msgctxt "MB"
 msgid "MB"
 msgstr "மெபை"
 
 #: GB
+#, fuzzy
+msgctxt "GB"
+msgid "GB"
+msgstr "ஜிபை"
+
+#. # LOCALIZATION NOTE (unit-*): For switch unit button a label describing the
+#. # unit. The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: unit-MB.ariaLabel
+#, fuzzy
+msgctxt "unit-MB.ariaLabel"
+msgid "MB"
+msgstr "மெபை"
+
+#: unit-GB.ariaLabel
+#, fuzzy
+msgctxt "unit-GB.ariaLabel"
 msgid "GB"
 msgstr "ஜிபை"
 
 #. # App Usage
-#: app-usage
-msgid "Mobile App Usage"
-msgstr "செல்பேசி பயன்பாடின் பயனளவு"
+#: app-usage-list-header
+msgid "Mobile usage per app"
+msgstr ""
 
 #: app-usage-no-data
 msgid ""
@@ -732,6 +772,13 @@ msgstr "இவ்வாரத்தில் {{amount}} தரவு பயன�
 #: data-used-this-month
 msgid "{{amount}} of data used this month"
 msgstr "இம்மாதத்தில் {{amount}} தரவு பயன்படுத்தப்பட்டது"
+
+#: data-usage-other-apps
+msgid "Others"
+msgstr ""
+
+#~ msgid "Mobile App Usage"
+#~ msgstr "செல்பேசி பயன்பாடின் பயனளவு"
 
 #~ msgid "Set"
 #~ msgstr "அமை"

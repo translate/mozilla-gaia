@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-19 07:45+0000\n"
+"POT-Creation-Date: 2015-02-11 19:45+0000\n"
 "PO-Revision-Date: 2014-11-30 18:37+0000\n"
 "Last-Translator: asiersar <asier.sarasua@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1417372622.000000\n"
@@ -239,6 +239,15 @@ msgstr "Konexioak huts egin du"
 msgctxt "shortStatus-disconnected"
 msgid "Offline"
 msgstr "Lineaz kanpo"
+
+#: wifi-sleep
+msgid "Wi-Fi Sleep"
+msgstr ""
+
+#: wifi-sleep-description
+msgid ""
+"Enable to automatically turn off Wi-Fi during sleep to save battery power.  "
+msgstr ""
 
 #: manageNetworks
 msgid "Manage Networks"
@@ -718,6 +727,117 @@ msgstr "Dei-ezarpenen errorea."
 #: callerId
 msgid "Caller ID"
 msgstr "Deitzailearen IDa"
+
+#: callBarring
+#, fuzzy
+msgid "Call Barring"
+msgstr "Dei-itxarotea"
+
+#. # LOCALIZATION NOTE (callBarring-header): if you leave the original
+#. # en-US value "{{callBarring}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "callBarring".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: callBarring-header
+msgid "{{callBarring}}"
+msgstr ""
+
+#: callBarring-outgoing
+#, fuzzy
+msgid "Outgoing calls"
+msgstr "Irteerako deiak"
+
+#: callBarring-baoc
+msgctxt "callBarring-baoc"
+msgid "All"
+msgstr ""
+
+#: callBarring-boic
+msgid "International"
+msgstr ""
+
+#: callBarring-boicExhc
+msgid "International except Home Country"
+msgstr ""
+
+#: callBarring-incoming
+msgid "Incoming calls"
+msgstr ""
+
+#: callBarring-baic
+msgctxt "callBarring-baic"
+msgid "All"
+msgstr ""
+
+#: callBarring-baicR
+msgid "All while roaming"
+msgstr ""
+
+#: callBarring-passcode
+#, fuzzy
+msgctxt "callBarring-passcode"
+msgid "Passcode"
+msgstr "Pasakodea"
+
+#: callBarring-change-passcode
+#, fuzzy
+msgctxt "callBarring-change-passcode"
+msgid "Change passcode"
+msgstr "Aldatu pasakodea"
+
+#: callBarring-passcode-enter
+#, fuzzy
+msgctxt "callBarring-passcode-enter"
+msgid "Enter passcode"
+msgstr "Sartu pasakodea"
+
+#: callBarring-passcode-unknown
+msgid "In case you don't know your passcode, please contact your carrier"
+msgstr ""
+
+#: callBarring-current-passcode
+#, fuzzy
+msgctxt "callBarring-current-passcode"
+msgid "Current passcode"
+msgstr "Uneko pasakodea"
+
+#: callBarring-new-passcode
+#, fuzzy
+msgctxt "callBarring-new-passcode"
+msgid "New passcode"
+msgstr "Pasakode berria"
+
+#: callBarring-create-passcode
+#, fuzzy
+msgctxt "callBarring-create-passcode"
+msgid "Create a Passcode"
+msgstr "Sortu pasakodea"
+
+#: callBarring-confirm-passcode
+#, fuzzy
+msgid "Confirm passcode"
+msgstr "Berretsi pasakodea"
+
+#: callBarring-passcode-error-generic
+msgid "Passcode error."
+msgstr ""
+
+#: callBarring-passcode-error-incorrect
+#, fuzzy
+msgid "Passcode is incorrect."
+msgstr "Pasakodea okerra da"
+
+#: callBarring-passcode-error-mismatch
+msgid "Passcode doesn’t match."
+msgstr ""
+
+#: callBarring-update-item-error
+msgid "Error while updating the item: {{error}}."
+msgstr ""
+
+#: callBarring-change-passcode-success
+msgid "Passcode changed."
+msgstr ""
 
 #: callerId-default
 msgid "Network default"
@@ -1349,17 +1469,14 @@ msgstr ""
 "Zure zerbitzu-baldintzen arabera, datu-tarifa gehigarriak aplika daitezke "
 "ibiltaritza-eskualde batean zaudenean."
 
-#: change-apn-warning-message
+#: change-apn-warning-message1
+#, fuzzy
 msgid ""
 "Depending on your service agreement, changing your APN setting may result in "
-"extra charges when roaming."
+"extra charges when roaming. Do you want to proceed?"
 msgstr ""
 "Zure zerbitzu-baldintzen arabera, datu-tarifa gehigarriak aplika daitezke "
 "ibiltaritza-eskualde batean APN ezarpenak aldatzen dituzunean."
-
-#: change-apn-warning-question
-msgid "Do you want to proceed?"
-msgstr "Aurrera jarraitu nahi duzu?"
 
 #: reset-apn-warning-title
 msgctxt "reset-apn-warning-title"
@@ -1535,6 +1652,8 @@ msgid "Unpair"
 msgstr "Desparekatu"
 
 #: device-option-confirm
+#, fuzzy
+msgctxt "device-option-confirm"
 msgid "Confirm"
 msgstr "Berretsi"
 
@@ -1710,11 +1829,34 @@ msgstr "SSID sarearen izena"
 msgid "open"
 msgstr "irekia"
 
-#: hotspot-wpa-psk
+#. # LOCALIZATION NOTE
+#. #
+#. # [For localizers]
+#. # We can't render these strings correctly for RTL locales, so we have to put LRE (&#x202a;)
+#. # and PDF (&#x202c;) entities to these translations to force the correct direction.
+#. #
+#. # RTL locales should have a translation similar to this:
+#. # hotspot-wpa-psk.innerHTML= &#x202a;WPA (TKIP)&#x202c;
+#. # hotspot-wpa2-psk.innerHTML= &#x202a;WPA2 (AES)&#x202c;
+#. #
+#. # [More details]
+#. #
+#. # Please check settings.ar.properties to see the difference first.
+#. #
+#. # We have to put "&#x202a;" and "&#x202c;" these two RTL related characters
+#. # in Arabic locales to make sure these two strings would not be translated
+#. # automatically in a wrong way by browser. Because from engineering side,
+#. # we can only change settings.ar.properties, for localizers, please remember to
+#. # put them in the other RTL languages.
+#. #
+#. # Additionally, in order to make this hack work, we got some help from l10n.js
+#. # that we need to put these strings inside "KEY".innerHTML, so that's the
+#. # reason why these two strings below would be suffixed with ".innerHTML"
+#: hotspot-wpa-psk.innerHTML
 msgid "WPA (TKIP)"
 msgstr "WPA (TKIP)"
 
-#: hotspot-wpa2-psk
+#: hotspot-wpa2-psk.innerHTML
 msgid "WPA2 (AES)"
 msgstr "WPA2 (AES)"
 
@@ -1999,6 +2141,10 @@ msgstr "{{language}}"
 #: region
 msgid "Region"
 msgstr "Eskualdea"
+
+#: more-languages
+msgid "Get More Languages"
+msgstr ""
 
 #: sample-format
 msgid "Sample Format"
@@ -2515,6 +2661,8 @@ msgid "Create"
 msgstr "Sortu"
 
 #: create-a-passcode
+#, fuzzy
+msgctxt "create-a-passcode"
 msgid "Create a Passcode"
 msgstr "Sortu pasakodea"
 
@@ -2529,14 +2677,20 @@ msgid "Passcode"
 msgstr "Pasakodea"
 
 #: enter-passcode
+#, fuzzy
+msgctxt "enter-passcode"
 msgid "Enter passcode"
 msgstr "Sartu pasakodea"
 
 #: new-passcode
+#, fuzzy
+msgctxt "new-passcode"
 msgid "New passcode"
 msgstr "Pasakode berria"
 
 #: current-passcode
+#, fuzzy
+msgctxt "current-passcode"
 msgid "Current passcode"
 msgstr "Uneko pasakodea"
 
@@ -2581,6 +2735,8 @@ msgid "Require passcode"
 msgstr "Eskatu pasakodea"
 
 #: change-passcode
+#, fuzzy
+msgctxt "change-passcode"
 msgid "Change passcode"
 msgstr "Aldatu pasakodea"
 
@@ -2966,6 +3122,15 @@ msgstr "Garbitu gailu honetan gordeta dauden cookie-ak eta datuak?"
 #: clear
 msgid "Clear"
 msgstr "Garbitu"
+
+#. # Security :: Privacy Panel
+#: privacy-controls
+msgid "Privacy Controls"
+msgstr ""
+
+#: no-privacy-panel
+msgid "No privacy panel app found"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Storage
@@ -3711,6 +3876,24 @@ msgid "Reset"
 msgstr "Berrezarri"
 
 #: reset-warning-title
+#, fuzzy
+msgctxt "reset-warning-title"
+msgid "CAUTION"
+msgstr "KONTUZ"
+
+#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
+#. # full DevTools access.
+#: unlock-privileges
+msgid "Unlock Privileges"
+msgstr ""
+
+#: reset-devtools
+msgid "Reset and enable full DevTools"
+msgstr ""
+
+#: reset-devtools-warning-title
+#, fuzzy
+msgctxt "reset-devtools-warning-title"
 msgid "CAUTION"
 msgstr "KONTUZ"
 
@@ -3918,6 +4101,10 @@ msgstr "Aplikazioen trantsizioa"
 #: app-suspending
 msgid "App suspending"
 msgstr "Aplikazioa esekitzea"
+
+#: copypaste
+msgid "Copy/paste"
+msgstr ""
 
 #: verbose-app-permissions
 msgid "Verbose app permissions"
@@ -4407,6 +4594,22 @@ msgstr "Hornitu informazio lokala"
 msgid "Set Idle Mode Text"
 msgstr "Ezarri modu inaktiboko testua"
 
+#: stkItemsNaiPerformCardApdu
+msgid "Perform Card APDU"
+msgstr ""
+
+#: stkItemsNaiPowerOnCard
+msgid "Power On Card"
+msgstr ""
+
+#: stkItemsNaiPowerOffCard
+msgid "Power Off Card"
+msgstr ""
+
+#: stkItemsNaiGetReaderStatus
+msgid "Get Reader Status"
+msgstr ""
+
 #: stkItemsNaiOpenChannel
 msgid "Open Channel"
 msgstr "Ireki kanala"
@@ -4426,6 +4629,10 @@ msgstr "Bidali datuak"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Eskuratu kanalaren egoera"
+
+#: stkItemsNaiEndOfTheProactiveSession
+msgid "End of the proactive session"
+msgstr ""
 
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
@@ -4470,6 +4677,37 @@ msgid ""
 "Fi hotspot?"
 msgstr ""
 "Wifigunea gaitzeak USB tethering-a desgaituko du. Wifigunea gaitu nahi duzu?"
+
+#. # Settings Dialog
+#: settings-dialog-alert
+#, fuzzy
+msgid "Alert"
+msgstr "Alertak"
+
+#: settings-dialog-confirm
+#, fuzzy
+msgctxt "settings-dialog-confirm"
+msgid "Confirm"
+msgstr "Berretsi"
+
+#: settings-dialog-prompt
+msgid "Prompt"
+msgstr ""
+
+#: settings-alert-dialog-header
+msgid "{{settings-dialog-alert}}"
+msgstr ""
+
+#: settings-confirm-dialog-header
+msgid "{{settings-dialog-confirm}}"
+msgstr ""
+
+#: settings-prompt-dialog-header
+msgid "{{settings-dialog-prompt}}"
+msgstr ""
+
+#~ msgid "Do you want to proceed?"
+#~ msgstr "Aurrera jarraitu nahi duzu?"
 
 #~ msgid "Async Pan/Zoom"
 #~ msgstr "Mug. panoramikoa/zoom asinkronoa"

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-19 07:45+0000\n"
+"POT-Creation-Date: 2015-02-11 19:45+0000\n"
 "PO-Revision-Date: 2014-11-23 11:38+0200\n"
 "Last-Translator: Ibrahima SARR <ibrahima.sarr@pulaagu.com>\n"
 "Language-Team: FULAH LOCALIZATION\n"
@@ -12,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -24,6 +24,8 @@ msgid "OK"
 msgstr "OK"
 
 #: back
+#, fuzzy
+msgctxt "back"
 msgid "Back"
 msgstr "Rutto"
 
@@ -67,13 +69,9 @@ msgstr "Firtu"
 msgid "Enter PIN"
 msgstr "Naatnu kod PIN"
 
-#: mediaPlaybackTitle.ariaLabel
-msgid "Title"
-msgstr "Tiitoonde"
-
-#: mediaPlaybackArtist.ariaLabel
-msgid "Artist"
-msgstr "Naalaŋke"
+#: mediaPlaybackTrack.ariaLabel
+msgid "Track title and artist"
+msgstr ""
 
 #: mediaPlaybackControls.ariaLabel
 msgid "Playback controls"
@@ -694,6 +692,10 @@ msgstr ""
 msgid "{{ appName }} installed"
 msgstr "{{ appName }} aafaama"
 
+#: langpack-install-success
+msgid "{{ appName }} installed. Go to Settings > Languages to enable it."
+msgstr ""
+
 #. #setup dialog
 #: setup
 msgid "Setup"
@@ -1022,30 +1024,6 @@ msgstr "{{name}} loowaaki no haanirta"
 msgid "{{name}} is having problems"
 msgstr "{{name}} haɓii caɗeele"
 
-#: airplane-is-on
-msgid "Airplane mode is on"
-msgstr "Mbayka ndiwoowa ena hurmi"
-
-#: airplane-is-turned-on
-msgid ""
-"{{name}} requires a network connection. Turn off airplane mode from Settings "
-"and connect to a Wi-Fi or mobile data network."
-msgstr ""
-"{{name}} ena naamnii ceŋagol e resoo. Ñif mbayka ndiwoowa e Teelte kisa ceŋo-"
-"ɗaa e Wifi walla resoo keɓe cinndel."
-
-#: network-connection-unavailable
-msgid "Network connection unavailable"
-msgstr "Ceŋol e resoo woodaani"
-
-#: network-error
-msgid ""
-"{{name}} requires a network connection. Try connecting to a Wi-Fi or mobile "
-"data network."
-msgstr ""
-"{{name}} ena naamnii ceŋagol e resoo. Eto seŋaade kadi r Wifi walla resoo "
-"keɓe cinndel."
-
 #: unable-to-connect
 msgid "Unable to connect"
 msgstr "Horiima seŋaade"
@@ -1137,6 +1115,8 @@ msgid "New private window"
 msgstr "Henorde suturo hesere"
 
 #: show-windows
+#, fuzzy
+msgctxt "show-windows"
 msgid "Show windows"
 msgstr "Hollu kenorɗe"
 
@@ -1157,6 +1137,10 @@ msgstr "{{brandShortName}} yalti jooni ko e hookre"
 #: crash-dialog-app
 msgid "{{name}} just crashed"
 msgstr "{{name}} koko hooknoo"
+
+#: crash-dialog-app-noname
+msgid "Something"
+msgstr ""
 
 #: crash-dialog-message
 msgid ""
@@ -2109,6 +2093,16 @@ msgstr "Yiylo walla naatnu ñiiɓirde"
 
 #. # LOCALIZATION NOTE: The following strings are spoken by screen readers and
 #. # not shown on the screen.
+#: back-button.ariaLabel
+#, fuzzy
+msgctxt "back-button.ariaLabel"
+msgid "Back"
+msgstr "Rutto"
+
+#: forward-button.ariaLabel
+msgid "Forward"
+msgstr ""
+
 #: reload-button.ariaLabel
 msgid "Reload"
 msgstr "Hesɗitin"
@@ -2117,34 +2111,20 @@ msgstr "Hesɗitin"
 msgid "Stop"
 msgstr "Dartin"
 
-#. # Hotspot
-#: noSIMCardInHotspot3
-msgid "Hotspot off: SIM card missing or inserted incorrectly."
-msgstr "Peŋngal Wifi koko ñifi: kartal SIM alaa walla seŋaaki no feewri."
+#: windows-button.ariaLabel
+#, fuzzy
+msgctxt "windows-button.ariaLabel"
+msgid "Show windows"
+msgstr "Hollu kenorɗe"
 
+#. # Hotspot
 #: noHotspotWhenAPMisOnWifiHotspot
 msgid "Turn off airplane mode to use Wi-Fi hotspot."
 msgstr "Ñif mbayka ndiwoowa ngam huutoraade peŋngal Wifi."
 
-#: noHotspotWhenAPMisOnUsbHotspot
-msgid "Turn off airplane mode to use USB tethering."
-msgstr "Ñif mbayka ndiwoowa ngam huutoraade ceŋagol USB."
-
 #: apmActivated
 msgid "Airplane mode activated"
 msgstr "Mbayka ndiwoowa hurmii"
-
-#: noConnectivityHead
-msgid "No data connection"
-msgstr "Alaa ceŋol keɓe"
-
-#: noConnectivityMessageWifiHotspot
-msgid "Wi-Fi hotspot is disabled because there is no data connection."
-msgstr "Peŋngal Wifi koko daaƴaa sabu alaa ceŋol keɓe woodi."
-
-#: noConnectivityMessageUsbHotspot
-msgid "USB tethering is disabled because there is no data connection."
-msgstr "Ceŋagol USB koko daaƴaa sabu alaa ceŋol keɓe woodi."
 
 #. # Browser Context Menu
 #: open-in-new-window
@@ -2192,43 +2172,91 @@ msgid "Share Audio"
 msgstr "Lollin Ojoo"
 
 #. # Private Browser
-#: private-browser
-msgid "Private Browser"
-msgstr "Wanngorde Suturo"
+#: private-window
+msgid "Private Window"
+msgstr ""
 
 #: private-browser-title
 msgid "You’re browsing privately"
 msgstr "Ngon-ɗaa ko e banngagol suturo"
 
-#: private-browser-detail1
-msgid "{{brandShortName}} won’t remember any history for this window."
-msgstr "{{brandShortName}} siiftortaa ko mbaŋngi-ɗaa e ndee henorde."
-
-#: private-browser-detail2
+#: private-window-detail1
 msgid ""
-"That includes browsing history, search history, download history, web form "
-"history, cookies, and temporary internet files. However, files you download "
-"and bookmarks you make will be kept."
+"The browser won’t keep any browser history, cookies, or temporary Internet "
+"files."
 msgstr ""
-"Ena jeyaa heen alsol banngagol, aslol njiilaw, aslol gaawte, aslol formere "
-"geese, kukiije walla pille enternet ɓadiiɗe. Kono piille ɗe ngaawti-ɗaa e "
-"maantore ɗe mbaɗ-ɗaa maa moofte."
 
-#: private-browser-detail3
+#: private-window-detail2
+#, fuzzy
 msgid ""
 "While this device won’t have a record of your browsing history, your "
-"employer or internet service provider can still track the pages you visit."
+"Internet service provider can still track the pages you visit."
 msgstr ""
 "Hay so ngol kaɓirgol mooftaani aslol peeragol maa, jeeyoowo ceŋe enternet "
 "maa walla ligginoowo-ma ena waawi rewindaade kelle ɗe njilloto-ɗaa ɗee."
 
-#: private-browser-learn-more
-msgid "Learn More."
-msgstr "Ɓeydu Humpito."
-
 #: okCharsLeft
 msgid "OK ({{n}})"
 msgstr "OK ({{n}})"
+
+#~ msgid "Title"
+#~ msgstr "Tiitoonde"
+
+#~ msgid "Artist"
+#~ msgstr "Naalaŋke"
+
+#~ msgid "Airplane mode is on"
+#~ msgstr "Mbayka ndiwoowa ena hurmi"
+
+#~ msgid ""
+#~ "{{name}} requires a network connection. Turn off airplane mode from "
+#~ "Settings and connect to a Wi-Fi or mobile data network."
+#~ msgstr ""
+#~ "{{name}} ena naamnii ceŋagol e resoo. Ñif mbayka ndiwoowa e Teelte kisa "
+#~ "ceŋo-ɗaa e Wifi walla resoo keɓe cinndel."
+
+#~ msgid "Network connection unavailable"
+#~ msgstr "Ceŋol e resoo woodaani"
+
+#~ msgid ""
+#~ "{{name}} requires a network connection. Try connecting to a Wi-Fi or "
+#~ "mobile data network."
+#~ msgstr ""
+#~ "{{name}} ena naamnii ceŋagol e resoo. Eto seŋaade kadi r Wifi walla resoo "
+#~ "keɓe cinndel."
+
+#~ msgid "Hotspot off: SIM card missing or inserted incorrectly."
+#~ msgstr "Peŋngal Wifi koko ñifi: kartal SIM alaa walla seŋaaki no feewri."
+
+#~ msgid "Turn off airplane mode to use USB tethering."
+#~ msgstr "Ñif mbayka ndiwoowa ngam huutoraade ceŋagol USB."
+
+#~ msgid "No data connection"
+#~ msgstr "Alaa ceŋol keɓe"
+
+#~ msgid "Wi-Fi hotspot is disabled because there is no data connection."
+#~ msgstr "Peŋngal Wifi koko daaƴaa sabu alaa ceŋol keɓe woodi."
+
+#~ msgid "USB tethering is disabled because there is no data connection."
+#~ msgstr "Ceŋagol USB koko daaƴaa sabu alaa ceŋol keɓe woodi."
+
+#~ msgid "Private Browser"
+#~ msgstr "Wanngorde Suturo"
+
+#~ msgid "{{brandShortName}} won’t remember any history for this window."
+#~ msgstr "{{brandShortName}} siiftortaa ko mbaŋngi-ɗaa e ndee henorde."
+
+#~ msgid ""
+#~ "That includes browsing history, search history, download history, web "
+#~ "form history, cookies, and temporary internet files. However, files you "
+#~ "download and bookmarks you make will be kept."
+#~ msgstr ""
+#~ "Ena jeyaa heen alsol banngagol, aslol njiilaw, aslol gaawte, aslol "
+#~ "formere geese, kukiije walla pille enternet ɓadiiɗe. Kono piille ɗe "
+#~ "ngaawti-ɗaa e maantore ɗe mbaɗ-ɗaa maa moofte."
+
+#~ msgid "Learn More."
+#~ msgstr "Ɓeydu Humpito."
 
 #~ msgid "The logs could not be saved"
 #~ msgstr "Loge ɗee koriima danndeede"

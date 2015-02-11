@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-11 22:22+0000\n"
+"POT-Creation-Date: 2015-02-11 19:45+0000\n"
 "PO-Revision-Date: 2014-09-17 14:48+0000\n"
 "Last-Translator: Kerim <kerim@mozilla.ba>\n"
 "Language-Team: none\n"
@@ -20,6 +20,8 @@ msgstr ""
 
 #. # Headers
 #: messages
+#, fuzzy
+msgctxt "messages"
 msgid "Messages"
 msgstr "Poruke"
 
@@ -42,6 +44,8 @@ msgid "Back"
 msgstr "Nazad"
 
 #: cancel
+#, fuzzy
+msgctxt "cancel"
 msgid "Cancel"
 msgstr "Otkaži"
 
@@ -165,12 +169,6 @@ msgstr "Ukloni naslov"
 msgid "To:"
 msgstr "Za:"
 
-#: send
-#, fuzzy
-msgctxt "send"
-msgid "Send"
-msgstr "Pošalji"
-
 #: new
 msgid "New"
 msgstr "Nova"
@@ -205,13 +203,14 @@ msgstr "Dostigli ste maksimalnu dužinu."
 msgid "Maximum length of subject reached."
 msgstr "Dostigli ste maksimalnu dužinu naslova."
 
-#: message-exceeded-max-length
+#. # LOCALIZATION NOTE(multimedia-message-exceeded-max-length): shown when size
+#. # of single multimedia message exceeds {{ mmsSize }}. The parameter {{ mmsSize }}
+#. # contains the maximum size for a MMS with the current carrier.
+#: multimedia-message-exceeded-max-length
 msgid ""
-"You’ve exceeded the maximum size. Remove attachments or shorten the message "
-"to send it."
+"You’ve exceeded the {{mmsSize}} KB size limit of a single multimedia "
+"message. Remove attachments or shorten the message to send it."
 msgstr ""
-"Prekoračili ste maksimalnu veličinu. Uklonite priloge ili skratite poruku da "
-"bi je poslali."
 
 #: newMessage
 msgid "New message"
@@ -260,7 +259,12 @@ msgctxt "recipient[other]"
 msgid "{{n}} recipients"
 msgstr "{{n}} primaoca"
 
-#: attachmentSize
+#: attachmentSizeB
+#, fuzzy
+msgid "{{n}} B"
+msgstr "{{n}} KB"
+
+#: attachmentSizeKB
 msgid "{{n}} KB"
 msgstr "{{n}} KB"
 
@@ -360,7 +364,7 @@ msgid "Report requested"
 msgstr ""
 
 #. # LOCALIZATION NOTE(report-status-rejected): used to describe the outgoing mms
-#. # could not be downloaded by receiver(might be an invalid number or the number 
+#. # could not be downloaded by receiver(might be an invalid number or the number
 #. # is not allowed to download mms)
 #: report-status-rejected
 msgid "Message rejected"
@@ -560,8 +564,8 @@ msgstr "FDN aktivan"
 
 #. # LOCALIZATION NOTE (sms-counter-notice-label): if typed message exceeds the
 #. # character limit, more segments (messages) will be sent. {{number}} is the
-#. # number of current segment. 
-#. # Example: Limit 160 characters, toaster will show up when 161 characters 
+#. # number of current segment.
+#. # Example: Limit 160 characters, toaster will show up when 161 characters
 #. # typed, and string in toaster will be 'Editing SMS 2' (editing 2nd segment).
 #: sms-counter-notice-label
 msgid "Editing SMS {{number}}"
@@ -816,6 +820,10 @@ msgstr "Proslijedi"
 msgid "View message report"
 msgstr "Pregledaj izvještaj poruke"
 
+#: select-text
+msgid "Select text"
+msgstr ""
+
 #. # Labels for contact fields
 #: mobile
 msgid "Mobile"
@@ -929,43 +937,57 @@ msgstr "bez naslova"
 msgid "MMS"
 msgstr "MMS"
 
-#. # LOCALIZATION NOTE (files-too-large): the English translation does not need the
+#. # LOCALIZATION NOTE (attached-files-too-large): the English translation does not need the
 #. # actual number of files. If your translation needs it, you can still add it
-#. # using the parameter {{ n }}.
-#: files-too-large
-msgctxt "files-too-large"
+#. # using the parameter {{ n }}. The parameter {{ mmsSize }} contains the maximum size
+#. # for a MMS with the current carrier.
+#: attached-files-too-large
+#, fuzzy
+msgctxt "attached-files-too-large"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: files-too-large[zero]
-msgctxt "files-too-large[zero]"
-msgid "The file you have selected is too large."
-msgstr "Fajl koji ste izabrali je prevelik."
+#: attached-files-too-large[zero]
+msgctxt "attached-files-too-large[zero]"
+msgid ""
+"The file you have selected exceeds the {{mmsSize}} KB size limit of a single "
+"multimedia message."
+msgstr ""
 
-#: files-too-large[one]
-msgctxt "files-too-large[one]"
-msgid "The file you have selected is too large."
-msgstr "Fajl koji ste izabrali je prevelik."
+#: attached-files-too-large[one]
+msgctxt "attached-files-too-large[one]"
+msgid ""
+"The file you have selected exceeds the {{mmsSize}} KB size limit of a single "
+"multimedia message."
+msgstr ""
 
-#: files-too-large[two]
-msgctxt "files-too-large[two]"
-msgid "The files you have selected are too large."
-msgstr "Fajlovi koje ste izabrali su preveliki."
+#: attached-files-too-large[two]
+msgctxt "attached-files-too-large[two]"
+msgid ""
+"The files you have selected exceeds the {{mmsSize}} KB size limit of a "
+"single multimedia message."
+msgstr ""
 
-#: files-too-large[few]
-msgctxt "files-too-large[few]"
-msgid "The files you have selected are too large."
-msgstr "Fajlovi koje ste izabrali su preveliki."
+#: attached-files-too-large[few]
+msgctxt "attached-files-too-large[few]"
+msgid ""
+"The files you have selected exceeds the {{mmsSize}} KB size limit of a "
+"single multimedia message."
+msgstr ""
 
-#: files-too-large[many]
-msgctxt "files-too-large[many]"
-msgid "The files you have selected are too large."
-msgstr "Fajlovi koje ste izabrali su preveliki."
+#: attached-files-too-large[many]
+msgctxt "attached-files-too-large[many]"
+msgid ""
+"The files you have selected exceeds the {{mmsSize}} KB size limit of a "
+"single multimedia message."
+msgstr ""
 
-#: files-too-large[other]
-msgctxt "files-too-large[other]"
-msgid "The files you have selected are too large."
-msgstr "Fajlovi koje ste izabrali su preveliki."
+#: attached-files-too-large[other]
+msgctxt "attached-files-too-large[other]"
+msgid ""
+"The files you have selected exceeds the {{mmsSize}} KB size limit of a "
+"single multimedia message."
+msgstr ""
 
 #: resize-image
 msgid "Resizing the attached image"
@@ -996,7 +1018,6 @@ msgstr "({{sim}}) {{sender}}"
 #. #LOCALIZATION NOTE (send-button): localize only the ariaLabel
 #: send-button.ariaLabel
 #, fuzzy
-msgctxt "send-button.ariaLabel"
 msgid "Send"
 msgstr "Pošalji"
 
@@ -1058,6 +1079,67 @@ msgstr "Pročitano"
 #: message-delivery-status-error.ariaLabel
 msgid "Error"
 msgstr "Greška"
+
+#. # Modal dialog strings
+#: modal-dialog-ok-button
+#, fuzzy
+msgctxt "modal-dialog-ok-button"
+msgid "OK"
+msgstr "OK"
+
+#: modal-dialog-cancel-button
+#, fuzzy
+msgctxt "modal-dialog-cancel-button"
+msgid "Cancel"
+msgstr "Otkaži"
+
+#. # LOCALIZATION NOTE (modal-dialog-default-title): Here we should have name of
+#. # the Messages app, the same as we have in app manifest.
+#: modal-dialog-default-title
+#, fuzzy
+msgctxt "modal-dialog-default-title"
+msgid "Messages"
+msgstr "Poruke"
+
+#~ msgid ""
+#~ "You’ve exceeded the maximum size. Remove attachments or shorten the "
+#~ "message to send it."
+#~ msgstr ""
+#~ "Prekoračili ste maksimalnu veličinu. Uklonite priloge ili skratite poruku "
+#~ "da bi je poslali."
+
+#~ msgctxt "files-too-large"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "files-too-large[zero]"
+#~ msgid "The file you have selected is too large."
+#~ msgstr "Fajl koji ste izabrali je prevelik."
+
+#~ msgctxt "files-too-large[one]"
+#~ msgid "The file you have selected is too large."
+#~ msgstr "Fajl koji ste izabrali je prevelik."
+
+#~ msgctxt "files-too-large[two]"
+#~ msgid "The files you have selected are too large."
+#~ msgstr "Fajlovi koje ste izabrali su preveliki."
+
+#~ msgctxt "files-too-large[few]"
+#~ msgid "The files you have selected are too large."
+#~ msgstr "Fajlovi koje ste izabrali su preveliki."
+
+#~ msgctxt "files-too-large[many]"
+#~ msgid "The files you have selected are too large."
+#~ msgstr "Fajlovi koje ste izabrali su preveliki."
+
+#~ msgctxt "files-too-large[other]"
+#~ msgid "The files you have selected are too large."
+#~ msgstr "Fajlovi koje ste izabrali su preveliki."
+
+#, fuzzy
+#~ msgctxt "send-button.ariaLabel"
+#~ msgid "Send"
+#~ msgstr "Pošalji"
 
 #~ msgid "{{name}}"
 #~ msgstr "{{name}}"

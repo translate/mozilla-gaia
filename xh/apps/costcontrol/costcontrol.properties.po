@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-19 07:45+0000\n"
+"POT-Creation-Date: 2015-02-11 19:45+0000\n"
 "PO-Revision-Date: 2014-07-07 19:30+0000\n"
 "Last-Translator: xh-ZA03_Fuma <fdyubhele@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -451,7 +451,21 @@ msgstr "Kwenziwe"
 msgid "Confirmation"
 msgstr "Isiqinisekiso"
 
-#: reset-confirmation-warning
+#: reset-wifi-confirmation-warning
+msgid "Your current Wi-Fi data usage is {{wifiData}}. Clear it all?"
+msgstr ""
+
+#: reset-mobile-confirmation-warning
+msgid "Your current mobile data usage is {{mobileData}}. Clear it all?"
+msgstr ""
+
+#: reset-all-confirmation-warning
+msgid ""
+"Your current data usages are {{mobileData}} on mobile, {{wifiData}} on Wi-"
+"Fi. Clear it all?"
+msgstr ""
+
+#: reset-telephony-confirmation-warning
 msgid "All current data will be deleted. Are you sure you want to reset?"
 msgstr ""
 "Yonke ingcombolo ekhoyo iya kucinywa. Uqinisekile ufuna ukuseta ngokutsha?"
@@ -468,7 +482,7 @@ msgstr "Seta usetyenziso lwe-Wi-Fi ngokutsha"
 msgid "Reset mobile usage"
 msgstr "Seta usetyenziso lwefowuni ephathwayo ngokutsha"
 
-#: reset-all-data-usage
+#: reset-all
 msgid "Reset mobile & Wi-Fi data"
 msgstr "Seta idatha yefowuni ephathwayo ne-Wi-Fi ngokutsha"
 
@@ -512,6 +526,13 @@ msgstr ""
 "Izantya zonxibelelwano ziyacutheka xa emva kokufikelela umlinganiselo. Buza "
 "kumboneleli wenkonzo yedatha ukuze usete umlinganiselo ofanelekileyo "
 "wesilumkiso."
+
+#. # LOCALIZATION NOTE (data-limit-input-label): A label for an input field for
+#. # data limit. The following string is spoken by screen readers and not shown on
+#. # the screen.
+#: data-limit-input-label.ariaLabel
+msgid "Data limit"
+msgstr ""
 
 #. # LOCALIZATION NOTE (wifi-usage, mobile-usage): these strings are displayed in
 #. # the main window
@@ -707,16 +728,35 @@ msgid "KB"
 msgstr "I-KB"
 
 #: MB
+#, fuzzy
+msgctxt "MB"
 msgid "MB"
 msgstr "I-MB"
 
 #: GB
+#, fuzzy
+msgctxt "GB"
+msgid "GB"
+msgstr "I-GB"
+
+#. # LOCALIZATION NOTE (unit-*): For switch unit button a label describing the
+#. # unit. The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: unit-MB.ariaLabel
+#, fuzzy
+msgctxt "unit-MB.ariaLabel"
+msgid "MB"
+msgstr "I-MB"
+
+#: unit-GB.ariaLabel
+#, fuzzy
+msgctxt "unit-GB.ariaLabel"
 msgid "GB"
 msgstr "I-GB"
 
 #. # App Usage
-#: app-usage
-msgid "Mobile App Usage"
+#: app-usage-list-header
+msgid "Mobile usage per app"
 msgstr ""
 
 #: app-usage-no-data
@@ -735,6 +775,10 @@ msgstr ""
 
 #: data-used-this-month
 msgid "{{amount}} of data used this month"
+msgstr ""
+
+#: data-usage-other-apps
+msgid "Others"
 msgstr ""
 
 #~ msgid "Set"

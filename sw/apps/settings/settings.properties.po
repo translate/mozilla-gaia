@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-19 07:45+0000\n"
+"POT-Creation-Date: 2015-02-11 19:45+0000\n"
 "PO-Revision-Date: 2014-09-09 08:54+0000\n"
 "Last-Translator: Stephen <wanjaustev@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -247,6 +247,15 @@ msgstr "Muungano umeshindwa"
 msgctxt "shortStatus-disconnected"
 msgid "Offline"
 msgstr "Nje ya mkondo"
+
+#: wifi-sleep
+msgid "Wi-Fi Sleep"
+msgstr ""
+
+#: wifi-sleep-description
+msgid ""
+"Enable to automatically turn off Wi-Fi during sleep to save battery power.  "
+msgstr ""
 
 #: manageNetworks
 #, fuzzy
@@ -731,6 +740,117 @@ msgstr "Hitilafu ya mipangilio ya kupiga simu."
 #: callerId
 msgid "Caller ID"
 msgstr "Kitambulisho cha Mpigaji simu"
+
+#: callBarring
+#, fuzzy
+msgid "Call Barring"
+msgstr "Simu inasubiri"
+
+#. # LOCALIZATION NOTE (callBarring-header): if you leave the original
+#. # en-US value "{{callBarring}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "callBarring".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: callBarring-header
+msgid "{{callBarring}}"
+msgstr ""
+
+#: callBarring-outgoing
+#, fuzzy
+msgid "Outgoing calls"
+msgstr "Simu zinazotoka"
+
+#: callBarring-baoc
+msgctxt "callBarring-baoc"
+msgid "All"
+msgstr ""
+
+#: callBarring-boic
+msgid "International"
+msgstr ""
+
+#: callBarring-boicExhc
+msgid "International except Home Country"
+msgstr ""
+
+#: callBarring-incoming
+msgid "Incoming calls"
+msgstr ""
+
+#: callBarring-baic
+msgctxt "callBarring-baic"
+msgid "All"
+msgstr ""
+
+#: callBarring-baicR
+msgid "All while roaming"
+msgstr ""
+
+#: callBarring-passcode
+#, fuzzy
+msgctxt "callBarring-passcode"
+msgid "Passcode"
+msgstr "Kodi ya pitisho"
+
+#: callBarring-change-passcode
+#, fuzzy
+msgctxt "callBarring-change-passcode"
+msgid "Change passcode"
+msgstr "Badilisha kodi ya pitisho"
+
+#: callBarring-passcode-enter
+#, fuzzy
+msgctxt "callBarring-passcode-enter"
+msgid "Enter passcode"
+msgstr "Ingiza kodi ya pitisho"
+
+#: callBarring-passcode-unknown
+msgid "In case you don't know your passcode, please contact your carrier"
+msgstr ""
+
+#: callBarring-current-passcode
+#, fuzzy
+msgctxt "callBarring-current-passcode"
+msgid "Current passcode"
+msgstr "Kodi ya sasa ya pitisho"
+
+#: callBarring-new-passcode
+#, fuzzy
+msgctxt "callBarring-new-passcode"
+msgid "New passcode"
+msgstr "Kodi mpya ya pitisho"
+
+#: callBarring-create-passcode
+#, fuzzy
+msgctxt "callBarring-create-passcode"
+msgid "Create a Passcode"
+msgstr "Unda kodi ya pitisho"
+
+#: callBarring-confirm-passcode
+#, fuzzy
+msgid "Confirm passcode"
+msgstr "Thibitisha kodi ya pitisho"
+
+#: callBarring-passcode-error-generic
+msgid "Passcode error."
+msgstr ""
+
+#: callBarring-passcode-error-incorrect
+#, fuzzy
+msgid "Passcode is incorrect."
+msgstr "Kodi ya pitisho sio sahihi"
+
+#: callBarring-passcode-error-mismatch
+msgid "Passcode doesn’t match."
+msgstr ""
+
+#: callBarring-update-item-error
+msgid "Error while updating the item: {{error}}."
+msgstr ""
+
+#: callBarring-change-passcode-success
+msgid "Passcode changed."
+msgstr ""
 
 #: callerId-default
 msgid "Network default"
@@ -1387,14 +1507,10 @@ msgstr ""
 "Kulingana na makubaliano yako ya huduma, ada ya ziada inaweza kutumika kwa "
 "data wakati uko katika eneo la kuranda."
 
-#: change-apn-warning-message
+#: change-apn-warning-message1
 msgid ""
 "Depending on your service agreement, changing your APN setting may result in "
-"extra charges when roaming."
-msgstr ""
-
-#: change-apn-warning-question
-msgid "Do you want to proceed?"
+"extra charges when roaming. Do you want to proceed?"
 msgstr ""
 
 #: reset-apn-warning-title
@@ -1572,6 +1688,8 @@ msgid "Unpair"
 msgstr "Tenganisha"
 
 #: device-option-confirm
+#, fuzzy
+msgctxt "device-option-confirm"
 msgid "Confirm"
 msgstr "Thibitisha"
 
@@ -1753,11 +1871,34 @@ msgstr "Jina la mtandao wa SSID"
 msgid "open"
 msgstr "fungua"
 
-#: hotspot-wpa-psk
+#. # LOCALIZATION NOTE
+#. #
+#. # [For localizers]
+#. # We can't render these strings correctly for RTL locales, so we have to put LRE (&#x202a;)
+#. # and PDF (&#x202c;) entities to these translations to force the correct direction.
+#. #
+#. # RTL locales should have a translation similar to this:
+#. # hotspot-wpa-psk.innerHTML= &#x202a;WPA (TKIP)&#x202c;
+#. # hotspot-wpa2-psk.innerHTML= &#x202a;WPA2 (AES)&#x202c;
+#. #
+#. # [More details]
+#. #
+#. # Please check settings.ar.properties to see the difference first.
+#. #
+#. # We have to put "&#x202a;" and "&#x202c;" these two RTL related characters
+#. # in Arabic locales to make sure these two strings would not be translated
+#. # automatically in a wrong way by browser. Because from engineering side,
+#. # we can only change settings.ar.properties, for localizers, please remember to
+#. # put them in the other RTL languages.
+#. #
+#. # Additionally, in order to make this hack work, we got some help from l10n.js
+#. # that we need to put these strings inside "KEY".innerHTML, so that's the
+#. # reason why these two strings below would be suffixed with ".innerHTML"
+#: hotspot-wpa-psk.innerHTML
 msgid "WPA (TKIP)"
 msgstr "WPA (TKIP)"
 
-#: hotspot-wpa2-psk
+#: hotspot-wpa2-psk.innerHTML
 msgid "WPA2 (AES)"
 msgstr "WPA2 ()"
 
@@ -2052,6 +2193,10 @@ msgstr "{{language}}"
 #: region
 msgid "Region"
 msgstr "Eneo"
+
+#: more-languages
+msgid "Get More Languages"
+msgstr ""
 
 #: sample-format
 msgid "Sample Format"
@@ -2584,6 +2729,8 @@ msgid "Create"
 msgstr "Unda"
 
 #: create-a-passcode
+#, fuzzy
+msgctxt "create-a-passcode"
 msgid "Create a Passcode"
 msgstr "Unda kodi ya pitisho"
 
@@ -2598,14 +2745,20 @@ msgid "Passcode"
 msgstr "Kodi ya pitisho"
 
 #: enter-passcode
+#, fuzzy
+msgctxt "enter-passcode"
 msgid "Enter passcode"
 msgstr "Ingiza kodi ya pitisho"
 
 #: new-passcode
+#, fuzzy
+msgctxt "new-passcode"
 msgid "New passcode"
 msgstr "Kodi mpya ya pitisho"
 
 #: current-passcode
+#, fuzzy
+msgctxt "current-passcode"
 msgid "Current passcode"
 msgstr "Kodi ya sasa ya pitisho"
 
@@ -2651,6 +2804,8 @@ msgid "Require passcode"
 msgstr "Inahitaji kodi ya pitisho"
 
 #: change-passcode
+#, fuzzy
+msgctxt "change-passcode"
 msgid "Change passcode"
 msgstr "Badilisha kodi ya pitisho"
 
@@ -3043,6 +3198,15 @@ msgstr ""
 #: clear
 msgid "Clear"
 msgstr "Ondoa"
+
+#. # Security :: Privacy Panel
+#: privacy-controls
+msgid "Privacy Controls"
+msgstr ""
+
+#: no-privacy-panel
+msgid "No privacy panel app found"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Storage
@@ -3812,6 +3976,24 @@ msgid "Reset"
 msgstr "Weka upya"
 
 #: reset-warning-title
+#, fuzzy
+msgctxt "reset-warning-title"
+msgid "CAUTION"
+msgstr "CAUTION"
+
+#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
+#. # full DevTools access.
+#: unlock-privileges
+msgid "Unlock Privileges"
+msgstr ""
+
+#: reset-devtools
+msgid "Reset and enable full DevTools"
+msgstr ""
+
+#: reset-devtools-warning-title
+#, fuzzy
+msgctxt "reset-devtools-warning-title"
 msgid "CAUTION"
 msgstr "CAUTION"
 
@@ -4018,6 +4200,10 @@ msgstr "Mabadiliko ya programu"
 #: app-suspending
 msgid "App suspending"
 msgstr "Kuzuia ishara"
+
+#: copypaste
+msgid "Copy/paste"
+msgstr ""
 
 #: verbose-app-permissions
 msgid "Verbose app permissions"
@@ -4512,6 +4698,22 @@ msgstr "Toa Maelezo ya Hapa hapa"
 msgid "Set Idle Mode Text"
 msgstr "Weka Maandiko ya Modi Tulivu"
 
+#: stkItemsNaiPerformCardApdu
+msgid "Perform Card APDU"
+msgstr ""
+
+#: stkItemsNaiPowerOnCard
+msgid "Power On Card"
+msgstr ""
+
+#: stkItemsNaiPowerOffCard
+msgid "Power Off Card"
+msgstr ""
+
+#: stkItemsNaiGetReaderStatus
+msgid "Get Reader Status"
+msgstr ""
+
 #: stkItemsNaiOpenChannel
 msgid "Open Channel"
 msgstr "Fungua Kituo"
@@ -4531,6 +4733,10 @@ msgstr "Tuma Data"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Pata Hali ya Kituo"
+
+#: stkItemsNaiEndOfTheProactiveSession
+msgid "End of the proactive session"
+msgstr ""
 
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
@@ -4570,6 +4776,34 @@ msgstr ""
 msgid ""
 "Enabling Wi-Fi hotspot will disable USB tethering. Do you want to enable Wi-"
 "Fi hotspot?"
+msgstr ""
+
+#. # Settings Dialog
+#: settings-dialog-alert
+#, fuzzy
+msgid "Alert"
+msgstr "Hadhari"
+
+#: settings-dialog-confirm
+#, fuzzy
+msgctxt "settings-dialog-confirm"
+msgid "Confirm"
+msgstr "Thibitisha"
+
+#: settings-dialog-prompt
+msgid "Prompt"
+msgstr ""
+
+#: settings-alert-dialog-header
+msgid "{{settings-dialog-alert}}"
+msgstr ""
+
+#: settings-confirm-dialog-header
+msgid "{{settings-dialog-confirm}}"
+msgstr ""
+
+#: settings-prompt-dialog-header
+msgid "{{settings-dialog-prompt}}"
 msgstr ""
 
 #~ msgid "Async Pan/Zoom"

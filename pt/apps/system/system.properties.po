@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-19 07:45+0000\n"
+"POT-Creation-Date: 2015-02-11 19:45+0000\n"
 "PO-Revision-Date: 2014-11-26 05:07+0000\n"
 "Last-Translator: Cláudio <cesperanc@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1416978435.000000\n"
@@ -23,6 +23,8 @@ msgid "OK"
 msgstr "OK"
 
 #: back
+#, fuzzy
+msgctxt "back"
 msgid "Back"
 msgstr "Voltar"
 
@@ -66,13 +68,9 @@ msgstr "Anular"
 msgid "Enter PIN"
 msgstr "Introduzir PIN"
 
-#: mediaPlaybackTitle.ariaLabel
-msgid "Title"
-msgstr "Título"
-
-#: mediaPlaybackArtist.ariaLabel
-msgid "Artist"
-msgstr "Artista"
+#: mediaPlaybackTrack.ariaLabel
+msgid "Track title and artist"
+msgstr ""
 
 #: mediaPlaybackControls.ariaLabel
 msgid "Playback controls"
@@ -695,6 +693,10 @@ msgstr ""
 msgid "{{ appName }} installed"
 msgstr "{{ appName }} instalada"
 
+#: langpack-install-success
+msgid "{{ appName }} installed. Go to Settings > Languages to enable it."
+msgstr ""
+
 #. #setup dialog
 #: setup
 msgid "Setup"
@@ -1033,30 +1035,6 @@ msgstr "{{name}} não está a ser carregado corretamente"
 msgid "{{name}} is having problems"
 msgstr "{{name}} está a ter problemas"
 
-#: airplane-is-on
-msgid "Airplane mode is on"
-msgstr "Modo de Avião ativo"
-
-#: airplane-is-turned-on
-msgid ""
-"{{name}} requires a network connection. Turn off airplane mode from Settings "
-"and connect to a Wi-Fi or mobile data network."
-msgstr ""
-"{{name}} requer uma ligação à rede. Desligue o Modo de Avião nas Definições "
-"e ligue-se ao Wi-Fi ou a uma rede de dados móvel."
-
-#: network-connection-unavailable
-msgid "Network connection unavailable"
-msgstr "Ligação de rede não disponível"
-
-#: network-error
-msgid ""
-"{{name}} requires a network connection. Try connecting to a Wi-Fi or mobile "
-"data network."
-msgstr ""
-"{{name}} necessita de uma ligação de rede. Tente ligar-se a uma rede Wi-Fi "
-"ou de dados móveis."
-
 #: unable-to-connect
 msgid "Unable to connect"
 msgstr "Incapaz de ligar"
@@ -1149,6 +1127,8 @@ msgid "New private window"
 msgstr "Nova janela privada"
 
 #: show-windows
+#, fuzzy
+msgctxt "show-windows"
 msgid "Show windows"
 msgstr "Mostrar as janelas"
 
@@ -1169,6 +1149,10 @@ msgstr "{{brandShortName}} acabou de recuperar de uma falha"
 #: crash-dialog-app
 msgid "{{name}} just crashed"
 msgstr "{{name}} teve uma falha"
+
+#: crash-dialog-app-noname
+msgid "Something"
+msgstr ""
 
 #: crash-dialog-message
 msgid ""
@@ -2128,6 +2112,16 @@ msgstr "Pesquisar ou introduzir endereço"
 
 #. # LOCALIZATION NOTE: The following strings are spoken by screen readers and
 #. # not shown on the screen.
+#: back-button.ariaLabel
+#, fuzzy
+msgctxt "back-button.ariaLabel"
+msgid "Back"
+msgstr "Voltar"
+
+#: forward-button.ariaLabel
+msgid "Forward"
+msgstr ""
+
 #: reload-button.ariaLabel
 msgid "Reload"
 msgstr "Recarregar"
@@ -2136,36 +2130,20 @@ msgstr "Recarregar"
 msgid "Stop"
 msgstr "Parar"
 
-#. # Hotspot
-#: noSIMCardInHotspot3
-msgid "Hotspot off: SIM card missing or inserted incorrectly."
-msgstr ""
-"Ponto de acesso desligado: cartão SIM em falta ou inserido incorretamente."
+#: windows-button.ariaLabel
+#, fuzzy
+msgctxt "windows-button.ariaLabel"
+msgid "Show windows"
+msgstr "Mostrar as janelas"
 
+#. # Hotspot
 #: noHotspotWhenAPMisOnWifiHotspot
 msgid "Turn off airplane mode to use Wi-Fi hotspot."
 msgstr "Desligar o Modo de Avião para utilizar o ponto de acesso Wi-Fi."
 
-#: noHotspotWhenAPMisOnUsbHotspot
-msgid "Turn off airplane mode to use USB tethering."
-msgstr "Desligue o modo de avião para utilizar a associação USB."
-
 #: apmActivated
 msgid "Airplane mode activated"
 msgstr "Modo de Avião ativado"
-
-#: noConnectivityHead
-msgid "No data connection"
-msgstr "Sem ligação de dados"
-
-#: noConnectivityMessageWifiHotspot
-msgid "Wi-Fi hotspot is disabled because there is no data connection."
-msgstr ""
-"O ponto de acesso Wi-FI está desativado porque não existe ligação de dados."
-
-#: noConnectivityMessageUsbHotspot
-msgid "USB tethering is disabled because there is no data connection."
-msgstr "A associação USB está desativada porque não existe ligação de dados."
 
 #. # Browser Context Menu
 #: open-in-new-window
@@ -2213,45 +2191,97 @@ msgid "Share Audio"
 msgstr "Partilhar Áudio"
 
 #. # Private Browser
-#: private-browser
-msgid "Private Browser"
-msgstr "Navegação privada"
+#: private-window
+msgid "Private Window"
+msgstr ""
 
 #: private-browser-title
 msgid "You’re browsing privately"
 msgstr "Está a navegar em modo privado"
 
-#: private-browser-detail1
-msgid "{{brandShortName}} won’t remember any history for this window."
-msgstr "{{brandShortName}} não irá guardar qualquer histórico nesta janela."
-
-#: private-browser-detail2
+#: private-window-detail1
 msgid ""
-"That includes browsing history, search history, download history, web form "
-"history, cookies, and temporary internet files. However, files you download "
-"and bookmarks you make will be kept."
+"The browser won’t keep any browser history, cookies, or temporary Internet "
+"files."
 msgstr ""
-"Isto inclui histórico de navegação, histórico de pesquisas, histórico de "
-"transferências, histórico de formulários web, cookies e ficheiros "
-"temporários da Internet. No entanto, os ficheiros que transferir e os "
-"marcadores que criar serão mantidos."
 
-#: private-browser-detail3
+#: private-window-detail2
+#, fuzzy
 msgid ""
 "While this device won’t have a record of your browsing history, your "
-"employer or internet service provider can still track the pages you visit."
+"Internet service provider can still track the pages you visit."
 msgstr ""
 "Apesar de este dispositivo não registar o seu histórico de navegação, o seu "
 "empregador ou fornecedor de serviço de Internet poderão registar as páginas "
 "que visita."
 
-#: private-browser-learn-more
-msgid "Learn More."
-msgstr "Saiba mais."
-
 #: okCharsLeft
 msgid "OK ({{n}})"
 msgstr "OK ({{n}})"
+
+#~ msgid "Title"
+#~ msgstr "Título"
+
+#~ msgid "Artist"
+#~ msgstr "Artista"
+
+#~ msgid "Airplane mode is on"
+#~ msgstr "Modo de Avião ativo"
+
+#~ msgid ""
+#~ "{{name}} requires a network connection. Turn off airplane mode from "
+#~ "Settings and connect to a Wi-Fi or mobile data network."
+#~ msgstr ""
+#~ "{{name}} requer uma ligação à rede. Desligue o Modo de Avião nas "
+#~ "Definições e ligue-se ao Wi-Fi ou a uma rede de dados móvel."
+
+#~ msgid "Network connection unavailable"
+#~ msgstr "Ligação de rede não disponível"
+
+#~ msgid ""
+#~ "{{name}} requires a network connection. Try connecting to a Wi-Fi or "
+#~ "mobile data network."
+#~ msgstr ""
+#~ "{{name}} necessita de uma ligação de rede. Tente ligar-se a uma rede Wi-"
+#~ "Fi ou de dados móveis."
+
+#~ msgid "Hotspot off: SIM card missing or inserted incorrectly."
+#~ msgstr ""
+#~ "Ponto de acesso desligado: cartão SIM em falta ou inserido incorretamente."
+
+#~ msgid "Turn off airplane mode to use USB tethering."
+#~ msgstr "Desligue o modo de avião para utilizar a associação USB."
+
+#~ msgid "No data connection"
+#~ msgstr "Sem ligação de dados"
+
+#~ msgid "Wi-Fi hotspot is disabled because there is no data connection."
+#~ msgstr ""
+#~ "O ponto de acesso Wi-FI está desativado porque não existe ligação de "
+#~ "dados."
+
+#~ msgid "USB tethering is disabled because there is no data connection."
+#~ msgstr ""
+#~ "A associação USB está desativada porque não existe ligação de dados."
+
+#~ msgid "Private Browser"
+#~ msgstr "Navegação privada"
+
+#~ msgid "{{brandShortName}} won’t remember any history for this window."
+#~ msgstr "{{brandShortName}} não irá guardar qualquer histórico nesta janela."
+
+#~ msgid ""
+#~ "That includes browsing history, search history, download history, web "
+#~ "form history, cookies, and temporary internet files. However, files you "
+#~ "download and bookmarks you make will be kept."
+#~ msgstr ""
+#~ "Isto inclui histórico de navegação, histórico de pesquisas, histórico de "
+#~ "transferências, histórico de formulários web, cookies e ficheiros "
+#~ "temporários da Internet. No entanto, os ficheiros que transferir e os "
+#~ "marcadores que criar serão mantidos."
+
+#~ msgid "Learn More."
+#~ msgstr "Saiba mais."
 
 #~ msgid "The logs could not be saved"
 #~ msgstr "Não foi possível guardar os registos"

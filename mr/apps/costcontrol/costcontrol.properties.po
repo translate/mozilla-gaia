@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-19 07:45+0000\n"
+"POT-Creation-Date: 2015-02-11 19:45+0000\n"
 "PO-Revision-Date: 2014-06-19 10:11+0000\n"
 "Last-Translator: Chandrakant <cpdhutadmal@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -440,7 +440,21 @@ msgstr "ठीक"
 msgid "Confirmation"
 msgstr "खात्री"
 
-#: reset-confirmation-warning
+#: reset-wifi-confirmation-warning
+msgid "Your current Wi-Fi data usage is {{wifiData}}. Clear it all?"
+msgstr ""
+
+#: reset-mobile-confirmation-warning
+msgid "Your current mobile data usage is {{mobileData}}. Clear it all?"
+msgstr ""
+
+#: reset-all-confirmation-warning
+msgid ""
+"Your current data usages are {{mobileData}} on mobile, {{wifiData}} on Wi-"
+"Fi. Clear it all?"
+msgstr ""
+
+#: reset-telephony-confirmation-warning
 msgid "All current data will be deleted. Are you sure you want to reset?"
 msgstr "सध्याची माहिती डिलीट होइल. तुम्हाला नक्की पुनःप्रस्थापित करायचे?"
 
@@ -456,7 +470,7 @@ msgstr "वाय-फाय वापर पुनःप्रस्थापि
 msgid "Reset mobile usage"
 msgstr "मोबाइल वापर पुनःप्रस्थापित"
 
-#: reset-all-data-usage
+#: reset-all
 msgid "Reset mobile & Wi-Fi data"
 msgstr "मोबाइल व वायफाय माहिती पुनःप्रस्थापित"
 
@@ -499,6 +513,13 @@ msgid ""
 msgstr ""
 "मर्यादेनंतर जोडणी वेग कमी होतो. योग्य इशारा पातळी ठरवण्यासाठी तुमच्या मोबाइल सेवा "
 "प्रदात्यासोबत तपासा."
+
+#. # LOCALIZATION NOTE (data-limit-input-label): A label for an input field for
+#. # data limit. The following string is spoken by screen readers and not shown on
+#. # the screen.
+#: data-limit-input-label.ariaLabel
+msgid "Data limit"
+msgstr ""
 
 #. # LOCALIZATION NOTE (wifi-usage, mobile-usage): these strings are displayed in
 #. # the main window
@@ -694,16 +715,35 @@ msgid "KB"
 msgstr "केबी"
 
 #: MB
+#, fuzzy
+msgctxt "MB"
 msgid "MB"
 msgstr "केबी"
 
 #: GB
+#, fuzzy
+msgctxt "GB"
+msgid "GB"
+msgstr "जीबी"
+
+#. # LOCALIZATION NOTE (unit-*): For switch unit button a label describing the
+#. # unit. The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: unit-MB.ariaLabel
+#, fuzzy
+msgctxt "unit-MB.ariaLabel"
+msgid "MB"
+msgstr "केबी"
+
+#: unit-GB.ariaLabel
+#, fuzzy
+msgctxt "unit-GB.ariaLabel"
 msgid "GB"
 msgstr "जीबी"
 
 #. # App Usage
-#: app-usage
-msgid "Mobile App Usage"
+#: app-usage-list-header
+msgid "Mobile usage per app"
 msgstr ""
 
 #: app-usage-no-data
@@ -722,4 +762,8 @@ msgstr ""
 
 #: data-used-this-month
 msgid "{{amount}} of data used this month"
+msgstr ""
+
+#: data-usage-other-apps
+msgid "Others"
 msgstr ""

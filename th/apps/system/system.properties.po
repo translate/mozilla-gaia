@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-19 07:45+0000\n"
+"POT-Creation-Date: 2015-02-11 19:45+0000\n"
 "PO-Revision-Date: 2013-06-09 17:01+0000\n"
 "Last-Translator: Wichai <chengings@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,6 +24,8 @@ msgid "OK"
 msgstr "ตกลง"
 
 #: back
+#, fuzzy
+msgctxt "back"
 msgid "Back"
 msgstr "ย้อนกลับ"
 
@@ -69,12 +71,8 @@ msgstr ""
 msgid "Enter PIN"
 msgstr "ป้อน PIN"
 
-#: mediaPlaybackTitle.ariaLabel
-msgid "Title"
-msgstr ""
-
-#: mediaPlaybackArtist.ariaLabel
-msgid "Artist"
+#: mediaPlaybackTrack.ariaLabel
+msgid "Track title and artist"
 msgstr ""
 
 #: mediaPlaybackControls.ariaLabel
@@ -704,6 +702,10 @@ msgstr ""
 msgid "{{ appName }} installed"
 msgstr "{{ appName }} ได้รับการติดตั้งแล้ว"
 
+#: langpack-install-success
+msgid "{{ appName }} installed. Go to Settings > Languages to enable it."
+msgstr ""
+
 #. #setup dialog
 #: setup
 msgid "Setup"
@@ -1031,28 +1033,6 @@ msgstr "{{name}} ถูกเรียกใช้อย่างไม่ถู
 msgid "{{name}} is having problems"
 msgstr "{{name}} กำลังมีปัญหา"
 
-#: airplane-is-on
-msgid "Airplane mode is on"
-msgstr ""
-
-#: airplane-is-turned-on
-msgid ""
-"{{name}} requires a network connection. Turn off airplane mode from Settings "
-"and connect to a Wi-Fi or mobile data network."
-msgstr ""
-
-#: network-connection-unavailable
-msgid "Network connection unavailable"
-msgstr "ไม่พบการเชื่อมต่อเครือข่าย"
-
-#: network-error
-msgid ""
-"{{name}} requires a network connection. Try connecting to a Wi-Fi or mobile "
-"data network."
-msgstr ""
-"{{name}} จำเป็นที่จะต้องมีการใช้งานที่เชื่อมต่อกับอินเตอร์เน็ต "
-"โปรดเชื่อมต่อเข้ากับไวไฟหรือเครือข่ายโทรศัพท์"
-
 #: unable-to-connect
 msgid "Unable to connect"
 msgstr ""
@@ -1142,6 +1122,7 @@ msgid "New private window"
 msgstr ""
 
 #: show-windows
+msgctxt "show-windows"
 msgid "Show windows"
 msgstr ""
 
@@ -1163,6 +1144,10 @@ msgstr "{{brandShortName}} เพิ่งถูกกู้คืนจาก�
 #: crash-dialog-app
 msgid "{{name}} just crashed"
 msgstr "{{name}} เพิ่งขัดข้อง"
+
+#: crash-dialog-app-noname
+msgid "Something"
+msgstr ""
 
 #: crash-dialog-message
 msgid ""
@@ -2108,6 +2093,16 @@ msgstr ""
 
 #. # LOCALIZATION NOTE: The following strings are spoken by screen readers and
 #. # not shown on the screen.
+#: back-button.ariaLabel
+#, fuzzy
+msgctxt "back-button.ariaLabel"
+msgid "Back"
+msgstr "ย้อนกลับ"
+
+#: forward-button.ariaLabel
+msgid "Forward"
+msgstr ""
+
 #: reload-button.ariaLabel
 msgid "Reload"
 msgstr ""
@@ -2116,33 +2111,18 @@ msgstr ""
 msgid "Stop"
 msgstr ""
 
-#. # Hotspot
-#: noSIMCardInHotspot3
-msgid "Hotspot off: SIM card missing or inserted incorrectly."
+#: windows-button.ariaLabel
+msgctxt "windows-button.ariaLabel"
+msgid "Show windows"
 msgstr ""
 
+#. # Hotspot
 #: noHotspotWhenAPMisOnWifiHotspot
 msgid "Turn off airplane mode to use Wi-Fi hotspot."
 msgstr ""
 
-#: noHotspotWhenAPMisOnUsbHotspot
-msgid "Turn off airplane mode to use USB tethering."
-msgstr ""
-
 #: apmActivated
 msgid "Airplane mode activated"
-msgstr ""
-
-#: noConnectivityHead
-msgid "No data connection"
-msgstr ""
-
-#: noConnectivityMessageWifiHotspot
-msgid "Wi-Fi hotspot is disabled because there is no data connection."
-msgstr ""
-
-#: noConnectivityMessageUsbHotspot
-msgid "USB tethering is disabled because there is no data connection."
 msgstr ""
 
 #. # Browser Context Menu
@@ -2192,38 +2172,39 @@ msgid "Share Audio"
 msgstr ""
 
 #. # Private Browser
-#: private-browser
-msgid "Private Browser"
+#: private-window
+msgid "Private Window"
 msgstr ""
 
 #: private-browser-title
 msgid "You’re browsing privately"
 msgstr ""
 
-#: private-browser-detail1
-msgid "{{brandShortName}} won’t remember any history for this window."
-msgstr ""
-
-#: private-browser-detail2
+#: private-window-detail1
 msgid ""
-"That includes browsing history, search history, download history, web form "
-"history, cookies, and temporary internet files. However, files you download "
-"and bookmarks you make will be kept."
+"The browser won’t keep any browser history, cookies, or temporary Internet "
+"files."
 msgstr ""
 
-#: private-browser-detail3
+#: private-window-detail2
 msgid ""
 "While this device won’t have a record of your browsing history, your "
-"employer or internet service provider can still track the pages you visit."
-msgstr ""
-
-#: private-browser-learn-more
-msgid "Learn More."
+"Internet service provider can still track the pages you visit."
 msgstr ""
 
 #: okCharsLeft
 msgid "OK ({{n}})"
 msgstr ""
+
+#~ msgid "Network connection unavailable"
+#~ msgstr "ไม่พบการเชื่อมต่อเครือข่าย"
+
+#~ msgid ""
+#~ "{{name}} requires a network connection. Try connecting to a Wi-Fi or "
+#~ "mobile data network."
+#~ msgstr ""
+#~ "{{name}} จำเป็นที่จะต้องมีการใช้งานที่เชื่อมต่อกับอินเตอร์เน็ต "
+#~ "โปรดเชื่อมต่อเข้ากับไวไฟหรือเครือข่ายโทรศัพท์"
 
 #~ msgid "Connection unavailable. Connect to a network to download updates."
 #~ msgstr "ไม่พบการเชื่อมต่อ กรุณาเชื่อมต่อเข้ากับเครือข่ายเพื่อดาวน์โหลดการปรับปรุง"

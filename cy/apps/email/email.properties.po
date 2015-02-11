@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-24 09:45+0000\n"
+"POT-Creation-Date: 2015-02-11 19:45+0000\n"
 "PO-Revision-Date: 2014-12-04 15:26+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1417706770.000000\n"
@@ -24,6 +24,13 @@ msgstr ""
 msgctxt "back-button.ariaLabel"
 msgid "Back"
 msgstr "Nôl"
+
+#. # LOCALIZATION NOTE(close-button): For various cards, a label for a general
+#. # purpose header close button rendered as an icon. The following string is
+#. # spoken by screen readers and not shown on the screen.
+#: close-button.ariaLabel
+msgid "Close"
+msgstr "Cau"
 
 #: setup-app-name-header
 msgid "Mail"
@@ -301,6 +308,15 @@ msgstr "STARTTLS"
 msgid "Connection security"
 msgstr "Diogelwch cysylltiad"
 
+#. # LOCALIZATION NOTE (setup-manual-socket-plain): In manual config account setup,
+#. # the socket connect type that is not using an encrypted connection and
+#. # therefore can be insecure to use: hackers or bad actors could easily intercept
+#. # the email credentials and email messages. Choosing this option will also
+#. # result in showing a dialog with the tng-plain-socket-warning-* localizations.
+#: setup-manual-socket-plain
+msgid "Unencrypted (insecure)"
+msgstr ""
+
 #: setup-manual-hostname.placeholder
 msgctxt "setup-manual-hostname.placeholder"
 msgid "Hostname"
@@ -409,6 +425,17 @@ msgstr "Gosodiadau E-bost"
 #. #section has a header. One is Account, which shows general information
 #. # about the account, like the name.
 #: settings-sub-header-account
+#, fuzzy
+msgctxt "settings-sub-header-account"
+msgid "Account"
+msgstr "Cyfrif"
+
+#. # For account settings screen, a label for a section related to general account
+#. # settings. The following string is spoken by screen readers and not shown on
+#. # the screen.
+#: settings-account-group.ariaLabel
+#, fuzzy
+msgctxt "settings-account-group.ariaLabel"
 msgid "Account"
 msgstr "Cyfrif"
 
@@ -444,6 +471,17 @@ msgstr "Tapio i Olygu"
 #. # LOCALIZATION NOTE (settings-account-signature-label): The label for the
 #. # signature field in the account settings card.
 #: settings-account-signature-label
+#, fuzzy
+msgctxt "settings-account-signature-label"
+msgid "Signature"
+msgstr "Llofnod"
+
+#. # LOCALIZATION NOTE(settings-account-signature-textbox): A label for a text area
+#. # that is used to enter or modify email message signature. The following string
+#. # is spoken by screen readers and not shown on the screen.
+#: settings-account-signature-textbox.ariaLabel
+#, fuzzy
+msgctxt "settings-account-signature-textbox.ariaLabel"
 msgid "Signature"
 msgstr "Llofnod"
 
@@ -467,6 +505,17 @@ msgstr "Hepgor"
 #. # section has a header. One is Data, which deals with sync intervals and
 #. # time windows for the data that is fetched.
 #: settings-sub-header-data
+#, fuzzy
+msgctxt "settings-sub-header-data"
+msgid "Data"
+msgstr "Data"
+
+#. # For account settings screen, a label for a section related to data settings
+#. # such as sync intervals and time windows for the data that is fetched. The
+#. # following string is spoken by screen readers and not shown on the screen.
+#: settings-data-group.ariaLabel
+#, fuzzy
+msgctxt "settings-data-group.ariaLabel"
 msgid "Data"
 msgstr "Data"
 
@@ -475,6 +524,18 @@ msgstr "Data"
 #. # the inbox. The possible select box options are listed in the
 #. # settings-check-every-* properties.
 #: settings-account-check-mail
+#, fuzzy
+msgctxt "settings-account-check-mail"
+msgid "Check for new messages"
+msgstr "Gwirio am negeseuon newydd"
+
+#. # LOCALIZATION NOTE(settings-account-check-mail-select): For the account
+#. # settings, the label for the select box that allows choosing how often to check
+#. # the server for new messages in the inbox. The following string is spoken by
+#. # screen readers and not shown on the screen.
+#: settings-account-check-mail-select.ariaLabel
+#, fuzzy
+msgctxt "settings-account-check-mail-select.ariaLabel"
 msgid "Check for new messages"
 msgstr "Gwirio am negeseuon newydd"
 
@@ -482,6 +543,17 @@ msgstr "Gwirio am negeseuon newydd"
 #. # section has a header. One is "Server settings", which deals with the
 #. # name/password and server addresses.
 #: settings-sub-header-server
+#, fuzzy
+msgctxt "settings-sub-header-server"
+msgid "Server settings"
+msgstr "Gosodiadau'r gweinydd"
+
+#. # For account settings screen, a label for a section related to server settings
+#. # such as name/password and server addresses. The following string is spoken by
+#. # screen readers and not shown on the screen.
+#: settings-server-group.ariaLabel
+#, fuzzy
+msgctxt "settings-server-group.ariaLabel"
 msgid "Server settings"
 msgstr "Gosodiadau'r gweinydd"
 
@@ -513,6 +585,15 @@ msgstr "Gorffen"
 
 #: settings-account-section
 msgctxt "settings-account-section"
+msgid "Accounts"
+msgstr "Cyfrifon"
+
+#. # LOCALIZATION NOTE(settings-account-listbox): For the main mail settings, the
+#. # label for the list of added Email accounts. The following string is spoken by
+#. # screen readers and not shown on the screen.
+#: settings-account-listbox.ariaLabel
+#, fuzzy
+msgctxt "settings-account-listbox.ariaLabel"
 msgid "Accounts"
 msgstr "Cyfrifon"
 
@@ -720,6 +801,18 @@ msgstr "Ail Awdurdodi"
 #. # valid for ActiveSync mail servers, not shown for other mail server types
 #. # like IMAP.
 #: settings-account-synchronize-window
+#, fuzzy
+msgctxt "settings-account-synchronize-window"
+msgid "Days to sync"
+msgstr "Dyddiau i'w cydweddu"
+
+#. # Label for a drop down used to select, how much email to sync, in smallest unit
+#. # of days, from the server. Only valid for ActiveSync mail servers, not shown
+#. # for other mail server types like IMAP. The following string is spoken by
+#. # screen readers and not shown on the screen.
+#: settings-account-synchronize-window-select.ariaLabel
+#, fuzzy
+msgctxt "settings-account-synchronize-window-select.ariaLabel"
 msgid "Days to sync"
 msgstr "Dyddiau i'w cydweddu"
 
@@ -770,6 +863,193 @@ msgstr "Cc"
 msgid "Bcc"
 msgstr "Bcc"
 
+#. # LOCALIZATION NOTE(message-header-state-sending): For message list card, used
+#. # to describe a sending state of the message item. The following string is
+#. # spoken by screen readers and not shown on the screen.
+#: message-header-state-sending.ariaLabel
+msgid "Sending"
+msgstr ""
+
+#. # LOCALIZATION NOTE(message-header-state-error): For message list card, used to
+#. # describe an error state of the message item. The following string is spoken
+#. # by screen readers and not shown on the screen.
+#: message-header-state-error.ariaLabel
+msgid "Error sending"
+msgstr ""
+
+#. # LOCALIZATION NOTE(message-header-state-none): For message list card, used to
+#. # describe non sending state of the message item. The following string is spoken
+#. # by screen readers and not shown on the screen.
+#: message-header-state-none.ariaLabel
+msgctxt "message-header-state-none.ariaLabel"
+msgid ""
+msgstr ""
+
+#. # LOCALIZATION NOTE(message-header-unread): For message list card, used to
+#. # describe an unread message indicator that looks like a bullet point. The
+#. # following string is spoken by screen readers and not shown on the screen.
+#: message-header-unread.ariaLabel
+msgid "Unread"
+msgstr ""
+
+#. # LOCALIZATION NOTE(message-header-starred): For message list card, used to
+#. # describe a star/flag indicator of the message item. The following string is
+#. # spoken by screen readers and not shown on the screen.
+#: message-header-starred.ariaLabel
+msgid "Has star"
+msgstr ""
+
+#. # LOCALIZATION NOTE(message-header-attachments): For message list card, used to
+#. # describe an indicator that the message has attachments that looks like a clip.
+#. # The following string is spoken by screen readers and not shown on the screen.
+#: message-header-attachments.ariaLabel
+msgid "Has attachments"
+msgstr ""
+
+#. # LOCALIZATION NOTE(message-body-container): For compose/read cards, a label for
+#. # a section with the pre-composed part of the message. The following string is
+#. # spoken by screen readers and not shown on the screen.
+#: message-body-container.ariaLabel
+msgid "Message body"
+msgstr ""
+
+#. # LOCALIZATION NOTE(message-body-container-progress): For reader cards, a label
+#. # for message body loading progress spinner. The following string is spoken by
+#. # screen readers and not shown on the screen.
+#: message-body-container-progress.ariaValueText
+msgid "Loading"
+msgstr ""
+
+#. # LOCALIZATION NOTE(subject): For compose card, a label for an email subject
+#. # text input or header. The following string is spoken by screen readers and not
+#. # shown on the screen.
+#: subject.ariaLabel
+#, fuzzy
+msgctxt "subject.ariaLabel"
+msgid "Subject"
+msgstr "Pwnc"
+
+#. # LOCALIZATION NOTE(message-delete-button): For reader card, a label for a
+#. # button used to delete a message. The following string is spoken by screen
+#. # readers and not shown on the screen.
+#: message-delete-button.ariaLabel
+#, fuzzy
+msgctxt "message-delete-button.ariaLabel"
+msgid "Delete"
+msgstr "Dileu"
+
+#. # LOCALIZATION NOTE(message-star-button): For reader card, a label for a button
+#. # used to star a message. The following string is spoken by screen readers and
+#. # not shown on the screen.
+#: message-star-button.ariaLabel
+msgid "Add star"
+msgstr ""
+
+#. # LOCALIZATION NOTE(message-unstar-button): For message list card, a label for a
+#. # button used to remove a star from a message. The following string is spoken by
+#. # screen readers and not shown on the screen.
+#: message-unstar-button.ariaLabel
+msgid "Remove star"
+msgstr ""
+
+#. # LOCALIZATION NOTE(message-mark-read-button): For reader card, a label for a
+#. # button used to mark a message as read. The following string is spoken by
+#. # screen readers and not shown on the screen.
+#: message-mark-read-button.ariaLabel
+#, fuzzy
+msgid "Mark read"
+msgstr "Marcio wedi Darllen"
+
+#. # LOCALIZATION NOTE(message-mark-unread-button): For reader card, a label for a
+#. # button used to mark a message as unread. The following string is spoken by
+#. # screen readers and not shown on the screen.
+#: message-mark-unread-button.ariaLabel
+#, fuzzy
+msgid "Mark unread"
+msgstr "Marcio heb eu darllen"
+
+#. # LOCALIZATION NOTE(message-move-button): For reader card, a label for a button
+#. # used to move a message. The following string is spoken by screen readers and
+#. # not shown on the screen.
+#: message-move-button.ariaLabel
+msgid "Move"
+msgstr "Symud"
+
+#. # LOCALIZATION NOTE(message-reply-forward-button): For reader card, a label for
+#. # a button used to reply to a message. The following string is spoken by screen
+#. # readers and not shown on the screen.
+#: message-reply-forward-button.ariaLabel
+msgid "Reply or forward"
+msgstr ""
+
+#. # LOCALIZATION NOTE(download-button): For compose/reader cards, a label
+#. # for a button used to downlaod message attachments. The following string is
+#. # spoken by screen readers and not shown on the screen.
+#: download-button.ariaLabel
+msgid "Download"
+msgstr ""
+
+#. # LOCALIZATION NOTE(downloading-progress): For compose/reader cards, a label
+#. # for an attachments downloading progress spinner. The following string is
+#. # spoken by screen readers and not shown on the screen.
+#: downloading-progress.ariaValueText
+msgid "Downloading"
+msgstr ""
+
+#. # LOCALIZATION NOTE(view-button): For compose/reader cards, a label for a button
+#. # used to view message attachments. The following string is spoken by screen
+#. # readers and not shown on the screen.
+#: view-button.ariaLabel
+#, fuzzy
+msgctxt "view-button.ariaLabel"
+msgid "View"
+msgstr "Golwg"
+
+#. # LOCALIZATION NOTE(attachments-container): For reader card, a label for a list
+#. # of attachments included in the messsage. The following string is spoken by
+#. # screen readers and not shown on the screen.
+#: attachments-container.ariaLabel
+#, fuzzy
+msgctxt "attachments-container.ariaLabel"
+msgid "Attachments"
+msgstr "Atodiadau"
+
+#. # LOCALIZATION NOTE(from-group): For email compose/read cards, a label for a
+#. # section that has controls related to selecting email authors. The following
+#. # string is spoken by screen readers and not shown on the screen.
+#: from-group.ariaLabel
+#, fuzzy
+msgctxt "from-group.ariaLabel"
+msgid "From"
+msgstr "Oddi wrth"
+
+#. # LOCALIZATION NOTE(to-group): For email compose/read cards, a label for a
+#. # section that has controls related to selecting 'to' recipients. The following
+#. # string is spoken by screen readers and not shown on the screen.
+#: to-group.ariaLabel
+#, fuzzy
+msgctxt "to-group.ariaLabel"
+msgid "To"
+msgstr "At"
+
+#. # LOCALIZATION NOTE(cc-group): For email compose/read cards, a label for a
+#. # section that has controls related to selecting 'cc' recipients. The following
+#. # string is spoken by screen readers and not shown on the screen.
+#: cc-group.ariaLabel
+#, fuzzy
+msgctxt "cc-group.ariaLabel"
+msgid "cc"
+msgstr "cc"
+
+#. # LOCALIZATION NOTE(bcc-group): For email compose/read cards, a label for a
+#. # section that has controls related to selecting 'bcc' recipients. The following
+#. # string is spoken by screen readers and not shown on the screen.
+#: bcc-group.ariaLabel
+#, fuzzy
+msgctxt "bcc-group.ariaLabel"
+msgid "bcc"
+msgstr "bcc"
+
 #: compose-header
 msgid "Compose message"
 msgstr "Ysgrifennu neges"
@@ -779,6 +1059,17 @@ msgid "Compose"
 msgstr "Ysgrifennu"
 
 #: compose-send
+#, fuzzy
+msgctxt "compose-send"
+msgid "Send"
+msgstr "Anfon"
+
+#. # LOCALIZATION NOTE(compose-send-button): For compose card, a label for a send
+#. # button rendered as an arrow. The following string is spoken by screen readers
+#. # and not shown on the screen.
+#: compose-send-button.ariaLabel
+#, fuzzy
+msgctxt "compose-send-button.ariaLabel"
 msgid "Send"
 msgstr "Anfon"
 
@@ -788,12 +1079,78 @@ msgid "To"
 msgstr "At"
 
 #: compose-cc
+#, fuzzy
+msgctxt "compose-cc"
 msgid "cc"
 msgstr "cc"
 
 #: compose-bcc
+#, fuzzy
+msgctxt "compose-bcc"
 msgid "bcc"
 msgstr "bcc"
+
+#. # LOCALIZATION NOTE(compose-contact-add): For compose card, a label for an add
+#. # contact buttons rendered as a circled plus sign and used to add to, cc and bcc
+#. # recipients. The following string is spoken by screen readers and not shown on
+#. # the screen.
+#: compose-contact-add.ariaLabel
+msgid "Add contact"
+msgstr ""
+
+#. # LOCALIZATION NOTE(compose-attachments-container): For compose card, a
+#. # label for a list of attachments included in the email being composed. When
+#. # there is more than 1 attachment, it contains a total size in kilobytes of all
+#. # attachments. The following string is spoken by screen readers and not shown on
+#. # the screen.
+#: compose-attachments-container.ariaLabel
+msgid "{[ plural(kilobytes) ]}"
+msgstr ""
+
+#: compose-attachments-container.ariaLabel[zero]
+#, fuzzy
+msgctxt "compose-attachments-container.ariaLabel[zero]"
+msgid "Attachments"
+msgstr "Atodiadau"
+
+#: compose-attachments-container.ariaLabel[one]
+msgctxt "compose-attachments-container.ariaLabel[one]"
+msgid "Attachments: {{kilobytes}}K"
+msgstr ""
+
+#: compose-attachments-container.ariaLabel[two]
+msgctxt "compose-attachments-container.ariaLabel[two]"
+msgid "Attachments: {{kilobytes}}K"
+msgstr ""
+
+#: compose-attachments-container.ariaLabel[few]
+msgctxt "compose-attachments-container.ariaLabel[few]"
+msgid "Attachments: {{kilobytes}}K"
+msgstr ""
+
+#: compose-attachments-container.ariaLabel[many]
+msgctxt "compose-attachments-container.ariaLabel[many]"
+msgid "Attachments: {{kilobytes}}K"
+msgstr ""
+
+#: compose-attachments-container.ariaLabel[other]
+msgctxt "compose-attachments-container.ariaLabel[other]"
+msgid "Attachments: {{kilobytes}}K"
+msgstr ""
+
+#. # LOCALIZATION NOTE(compose-attachment-remove): For compose card, a label for an
+#. # attachement remove button. The following string is spoken by screen readers
+#. # and not shown on the screen.
+#: compose-attachment-remove.ariaLabel
+msgid "Remove"
+msgstr ""
+
+#. # LOCALIZATION NOTE(compose-attachment-button): For compose card, a label for an
+#. # attachment button rendered as a clip. The following string is spoken by screen
+#. # readers and not shown on the screen.
+#: compose-attachment-button.ariaLabel
+msgid "Attach"
+msgstr ""
 
 #: compose-attachments
 msgctxt "compose-attachments"
@@ -801,6 +1158,8 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: compose-attachments[zero]
+#, fuzzy
+msgctxt "compose-attachments[zero]"
 msgid "Attachments"
 msgstr "Atodiadau"
 
@@ -827,6 +1186,15 @@ msgstr "{{ n }} atodiad"
 msgctxt "compose-attachments[other]"
 msgid "{{ n }} attachments"
 msgstr "{{ n }} atodiad"
+
+#. # LOCALIZATION NOTE(compose-text): For compose card, a label for a section with
+#. # a message text. The following string is spoken by screen readers and not shown
+#. # on the screen.
+#: compose-text.ariaLabel
+#, fuzzy
+msgctxt "compose-text.ariaLabel"
+msgid "Edit"
+msgstr "Golygu"
 
 #. # Shown when user taps on attachment icon in compose, but the app still
 #. # needs a bit more time to finishing the add of the previous attachment.
@@ -889,6 +1257,8 @@ msgid "{{kilobytes}}K"
 msgstr "{{kilobytes}}K"
 
 #: message-attachment-view
+#, fuzzy
+msgctxt "message-attachment-view"
 msgid "View"
 msgstr "Golwg"
 
@@ -1256,6 +1626,30 @@ msgstr "Gosodiadau"
 msgid "Last sync:"
 msgstr "Cydweddu diwethaf:"
 
+#. # LOCALIZATION NOTE(messages-refresh-button): For the message-list, a label for
+#. # a button that refreshes the list of messages in the folder. The following
+#. # string is spoken by screen readers and not shown on the screen.
+#: messages-refresh-button.ariaLabel
+msgid "Refresh"
+msgstr ""
+
+#. # LOCALIZATION NOTE(messages-refresh-progress): For the message-list, a label
+#. # for a button that refreshes the list of messages in the folder when the sync
+#. # is in progress. It is only visible when reshing is in progress. The following
+#. # string is spoken by screen readers and not shown on the screen.
+#: messages-refresh-progress.ariaValueText
+msgid "Refreshing"
+msgstr ""
+
+#. # LOCALIZATION NOTE(edit-button): For the message-list, a label for a button
+#. # that activates edit mode for the message list. The following string is spoken
+#. # by screen readers and not shown on the screen.
+#: edit-button.ariaLabel
+#, fuzzy
+msgctxt "edit-button.ariaLabel"
+msgid "Edit"
+msgstr "Golygu"
+
 #. # LOCALIZATION NOTE(message-list-top-action):
 #. # In the message-list, as the user scrolls down, an action bar will scroll into
 #. # view that if tapped will take the user to the top of the screen. That bar
@@ -1264,6 +1658,14 @@ msgstr "Cydweddu diwethaf:"
 #: message-list-top-action
 msgid "Top"
 msgstr "Brig"
+
+#. # LOCALIZATION NOTE(message-list-menu): For the message-list and folder picker,
+#. # a label for a header icon button that brings up or hides the folder picker and
+#. # settings menu. The following string is spoken by screen readers and not shown
+#. # on the screen.
+#: message-list-menu.ariaLabel
+msgid "Folders and settings"
+msgstr ""
 
 #: toaster-undo
 msgid "Undo"
@@ -1653,6 +2055,67 @@ msgstr "{{ n }} E-byst Newydd ({{ accountName }})"
 msgid "{{ from }} “{{ subject }}”"
 msgstr "{{ from }} “{{ subject }}”"
 
+#. # LOCALIZATION NOTE(tng-plain-socket-warning-title): When the user selects an
+#. # PLAIN socket connection type for the email connections in manual config, a
+#. # dialog is shown with this title.
+#: tng-plain-socket-warning-title
+msgid "Are you sure?"
+msgstr ""
+
+#. # LOCALIZATION NOTE(tng-plain-socket-warning-message): On the PLAIN socket
+#. # connection warning dialog, explains the hazards of using that option.
+#: tng-plain-socket-warning-message
+msgid ""
+"Other people may be able to see your passwords and emails or control your "
+"account."
+msgstr ""
+
+#. # LOCALIZATION NOTE(tng-plain-socket-warning-message-options): On the PLAIN
+#. # socket connection warning dialog, lets the user know there are better, free
+#. # options for more secure email.
+#: tng-plain-socket-warning-message-options
+msgid ""
+"There are multiple, free email providers that offer more secure, encrypted "
+"connections."
+msgstr ""
+
+#. # LOCALIZATION NOTE(tng-plain-socket-learn-more): The button in the PLAIN
+#. # socket connection warning dialog that explains more about the risks and about
+#. # alternative email providers that have better connection options.
+#: tng-plain-socket-learn-more
+msgid "Learn more"
+msgstr ""
+
+#. # LOCALIZATION NOTE(tng-plain-socket-warning-ok): The button the user taps to
+#. # indicate they understand the warning dialog about the PLAIN socket connection
+#. # type. This button also dismisses the dialog.
+#: tng-plain-socket-warning-ok
+msgid "I understand"
+msgstr ""
+
+#. # LOCALIZATION NOTE(message-reader-next-button): For reader card, a label for a
+#. # button used to navigate to next message. The following string is spoken by
+#. # screen readers and not shown on the screen.
+#: message-reader-next-button.ariaLabel
+#, fuzzy
+msgctxt "message-reader-next-button.ariaLabel"
+msgid "Next"
+msgstr "Nesaf"
+
+#. # LOCALIZATION NOTE(message-reader-previous-button): For reader card, a label
+#. # for a button used to navigate to previous message. The following string is
+#. # spoken by screen readers and not shown on the screen.
+#: message-reader-previous-button.ariaLabel
+msgid "Previous"
+msgstr ""
+
+#. # LOCALIZATION NOTE(message-reader-date-received): For reader card, a label for
+#. # a text containing the date the time elapsed since the message was received.
+#. # The following string is spoken by screen readers and not shown on the screen.
+#: message-reader-date-received.ariaLabel
+msgid "Received"
+msgstr ""
+
 #~ msgid "seconds"
 #~ msgstr "eiliad"
 
@@ -1749,15 +2212,6 @@ msgstr "{{ from }} “{{ subject }}”"
 
 #~ msgid "Unstar"
 #~ msgstr "Dadserenu"
-
-#~ msgid "Mark as read"
-#~ msgstr "Marcio wedi Darllen"
-
-#~ msgid "Mark as unread"
-#~ msgstr "Marcio heb eu darllen"
-
-#~ msgid "Move"
-#~ msgstr "Symud"
 
 #~ msgctxt "toaster-message-star[few]"
 #~ msgid "{{ n }} messages flag set"
@@ -1860,9 +2314,6 @@ msgstr "{{ from }} “{{ subject }}”"
 #~ msgid "Manually set up account"
 #~ msgstr "Creu cyfrif gyda llaw"
 
-#~ msgid "Close"
-#~ msgstr "Cau"
-
 #~ msgid "Try again"
 #~ msgstr "Ceisio eto"
 
@@ -1886,14 +2337,6 @@ msgstr "{{ from }} “{{ subject }}”"
 
 #~ msgid "6 months"
 #~ msgstr "6 mis"
-
-#~ msgctxt "compose-cc"
-#~ msgid "cc"
-#~ msgstr "cc"
-
-#~ msgctxt "compose-bcc"
-#~ msgid "bcc"
-#~ msgstr "bcc"
 
 #~ msgid "CC"
 #~ msgstr "CC"

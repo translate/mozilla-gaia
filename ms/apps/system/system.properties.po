@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-19 07:45+0000\n"
+"POT-Creation-Date: 2015-02-11 19:45+0000\n"
 "PO-Revision-Date: 2014-09-07 05:19+0000\n"
 "Last-Translator: haryati <haryati.salehin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,6 +23,8 @@ msgid "OK"
 msgstr "OK"
 
 #: back
+#, fuzzy
+msgctxt "back"
 msgid "Back"
 msgstr "Undur"
 
@@ -67,13 +69,9 @@ msgstr "Nyahcara"
 msgid "Enter PIN"
 msgstr "Masukkan PIN"
 
-#: mediaPlaybackTitle.ariaLabel
-msgid "Title"
-msgstr "Tajuk"
-
-#: mediaPlaybackArtist.ariaLabel
-msgid "Artist"
-msgstr "Artis"
+#: mediaPlaybackTrack.ariaLabel
+msgid "Track title and artist"
+msgstr ""
 
 #: mediaPlaybackControls.ariaLabel
 msgid "Playback controls"
@@ -706,6 +704,10 @@ msgstr ""
 msgid "{{ appName }} installed"
 msgstr "{{ appName }} dipasang"
 
+#: langpack-install-success
+msgid "{{ appName }} installed. Go to Settings > Languages to enable it."
+msgstr ""
+
 #. #setup dialog
 #: setup
 msgid "Setup"
@@ -1041,30 +1043,6 @@ msgstr "{{name}} tidak dimuat dengan sempurna"
 msgid "{{name}} is having problems"
 msgstr "{{name}} terdapat masalah"
 
-#: airplane-is-on
-msgid "Airplane mode is on"
-msgstr "Mod pesawat telah hidup"
-
-#: airplane-is-turned-on
-msgid ""
-"{{name}} requires a network connection. Turn off airplane mode from Settings "
-"and connect to a Wi-Fi or mobile data network."
-msgstr ""
-"{{name}} memerlukan sambungan rangkaian. Matikan mod pesawat daripada "
-"Tetapan dan sambung kepada Wi-Fi atau rangkaian data selular."
-
-#: network-connection-unavailable
-msgid "Network connection unavailable"
-msgstr "Sambungan rangkaian tidak tersedia"
-
-#: network-error
-msgid ""
-"{{name}} requires a network connection. Try connecting to a Wi-Fi or mobile "
-"data network."
-msgstr ""
-"{{name}} memerlukan sambungan rangkaian. Cuba menyambuung kepada Wi-Fi atau "
-"rangkaian data selular."
-
 #: unable-to-connect
 msgid "Unable to connect"
 msgstr "Tidak dapat menyambung"
@@ -1154,6 +1132,8 @@ msgid "New private window"
 msgstr ""
 
 #: show-windows
+#, fuzzy
+msgctxt "show-windows"
 msgid "Show windows"
 msgstr "Tunjuk tetingkap"
 
@@ -1174,6 +1154,10 @@ msgstr "{{brandShortName}} telah pulih dari kemusnahan"
 #: crash-dialog-app
 msgid "{{name}} just crashed"
 msgstr "{{name}} telah musnah"
+
+#: crash-dialog-app-noname
+msgid "Something"
+msgstr ""
 
 #: crash-dialog-message
 msgid ""
@@ -2133,6 +2117,16 @@ msgstr "Carian atau masukkan alamat"
 
 #. # LOCALIZATION NOTE: The following strings are spoken by screen readers and
 #. # not shown on the screen.
+#: back-button.ariaLabel
+#, fuzzy
+msgctxt "back-button.ariaLabel"
+msgid "Back"
+msgstr "Undur"
+
+#: forward-button.ariaLabel
+msgid "Forward"
+msgstr ""
+
 #: reload-button.ariaLabel
 msgid "Reload"
 msgstr ""
@@ -2141,35 +2135,21 @@ msgstr ""
 msgid "Stop"
 msgstr ""
 
-#. # Hotspot
-#: noSIMCardInHotspot3
-msgid "Hotspot off: SIM card missing or inserted incorrectly."
-msgstr ""
+#: windows-button.ariaLabel
+#, fuzzy
+msgctxt "windows-button.ariaLabel"
+msgid "Show windows"
+msgstr "Tunjuk tetingkap"
 
+#. # Hotspot
 #: noHotspotWhenAPMisOnWifiHotspot
 #, fuzzy
 msgid "Turn off airplane mode to use Wi-Fi hotspot."
 msgstr "Matikan mod pesawat untuk  menggunakan Wi-Fi hotspot"
 
-#: noHotspotWhenAPMisOnUsbHotspot
-msgid "Turn off airplane mode to use USB tethering."
-msgstr ""
-
 #: apmActivated
 msgid "Airplane mode activated"
 msgstr "Mod pesawat diaktifkan"
-
-#: noConnectivityHead
-msgid "No data connection"
-msgstr ""
-
-#: noConnectivityMessageWifiHotspot
-msgid "Wi-Fi hotspot is disabled because there is no data connection."
-msgstr ""
-
-#: noConnectivityMessageUsbHotspot
-msgid "USB tethering is disabled because there is no data connection."
-msgstr ""
 
 #. # Browser Context Menu
 #: open-in-new-window
@@ -2217,38 +2197,55 @@ msgid "Share Audio"
 msgstr "Simpan Audio"
 
 #. # Private Browser
-#: private-browser
-msgid "Private Browser"
+#: private-window
+msgid "Private Window"
 msgstr ""
 
 #: private-browser-title
 msgid "You’re browsing privately"
 msgstr ""
 
-#: private-browser-detail1
-msgid "{{brandShortName}} won’t remember any history for this window."
-msgstr ""
-
-#: private-browser-detail2
+#: private-window-detail1
 msgid ""
-"That includes browsing history, search history, download history, web form "
-"history, cookies, and temporary internet files. However, files you download "
-"and bookmarks you make will be kept."
+"The browser won’t keep any browser history, cookies, or temporary Internet "
+"files."
 msgstr ""
 
-#: private-browser-detail3
+#: private-window-detail2
 msgid ""
 "While this device won’t have a record of your browsing history, your "
-"employer or internet service provider can still track the pages you visit."
-msgstr ""
-
-#: private-browser-learn-more
-msgid "Learn More."
+"Internet service provider can still track the pages you visit."
 msgstr ""
 
 #: okCharsLeft
 msgid "OK ({{n}})"
 msgstr ""
+
+#~ msgid "Title"
+#~ msgstr "Tajuk"
+
+#~ msgid "Artist"
+#~ msgstr "Artis"
+
+#~ msgid "Airplane mode is on"
+#~ msgstr "Mod pesawat telah hidup"
+
+#~ msgid ""
+#~ "{{name}} requires a network connection. Turn off airplane mode from "
+#~ "Settings and connect to a Wi-Fi or mobile data network."
+#~ msgstr ""
+#~ "{{name}} memerlukan sambungan rangkaian. Matikan mod pesawat daripada "
+#~ "Tetapan dan sambung kepada Wi-Fi atau rangkaian data selular."
+
+#~ msgid "Network connection unavailable"
+#~ msgstr "Sambungan rangkaian tidak tersedia"
+
+#~ msgid ""
+#~ "{{name}} requires a network connection. Try connecting to a Wi-Fi or "
+#~ "mobile data network."
+#~ msgstr ""
+#~ "{{name}} memerlukan sambungan rangkaian. Cuba menyambuung kepada Wi-Fi "
+#~ "atau rangkaian data selular."
 
 #~ msgid "The logs could not be saved"
 #~ msgstr "Log tidak dapat disimpan"

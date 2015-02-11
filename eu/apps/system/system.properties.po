@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-19 07:45+0000\n"
+"POT-Creation-Date: 2015-02-11 19:45+0000\n"
 "PO-Revision-Date: 2014-11-30 09:48+0000\n"
 "Last-Translator: asiersar <asier.sarasua@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1417340905.000000\n"
@@ -23,6 +23,8 @@ msgid "OK"
 msgstr "Ados"
 
 #: back
+#, fuzzy
+msgctxt "back"
 msgid "Back"
 msgstr "Atzera"
 
@@ -66,13 +68,9 @@ msgstr "Desegin"
 msgid "Enter PIN"
 msgstr "Sartu PINa"
 
-#: mediaPlaybackTitle.ariaLabel
-msgid "Title"
-msgstr "Titulua"
-
-#: mediaPlaybackArtist.ariaLabel
-msgid "Artist"
-msgstr "Artista"
+#: mediaPlaybackTrack.ariaLabel
+msgid "Track title and artist"
+msgstr ""
 
 #: mediaPlaybackControls.ariaLabel
 msgid "Playback controls"
@@ -694,6 +692,10 @@ msgstr ""
 msgid "{{ appName }} installed"
 msgstr "{{ appName }} instalatuta"
 
+#: langpack-install-success
+msgid "{{ appName }} installed. Go to Settings > Languages to enable it."
+msgstr ""
+
 #. #setup dialog
 #: setup
 msgid "Setup"
@@ -1032,30 +1034,6 @@ msgstr "{{name}} ez da ari ondo kargatzen"
 msgid "{{name}} is having problems"
 msgstr "{{name}} arazoak izaten ari da"
 
-#: airplane-is-on
-msgid "Airplane mode is on"
-msgstr "Hegazkin modua piztuta dago"
-
-#: airplane-is-turned-on
-msgid ""
-"{{name}} requires a network connection. Turn off airplane mode from Settings "
-"and connect to a Wi-Fi or mobile data network."
-msgstr ""
-"{{name}} aplikazioak sareko konexioa behar du. Itzali hegazkin modua "
-"ezarpenetan eta konektatu Wi-Fi batera edo datuen sare batera."
-
-#: network-connection-unavailable
-msgid "Network connection unavailable"
-msgstr "Sareko konexioa ez dago erabilgarri"
-
-#: network-error
-msgid ""
-"{{name}} requires a network connection. Try connecting to a Wi-Fi or mobile "
-"data network."
-msgstr ""
-"{{name}} aplikazioak sareko konexioa behar du. Saiatu Wi-Fi batera edo "
-"datuen sare batera konektatzen."
-
 #: unable-to-connect
 msgid "Unable to connect"
 msgstr "Ezin da konektatu"
@@ -1148,6 +1126,8 @@ msgid "New private window"
 msgstr "Leiho pribatu berria"
 
 #: show-windows
+#, fuzzy
+msgctxt "show-windows"
 msgid "Show windows"
 msgstr "Erakutsi leihoak"
 
@@ -1168,6 +1148,10 @@ msgstr "{{brandShortName}} hutsegite batetik berreskuratu berri da"
 #: crash-dialog-app
 msgid "{{name}} just crashed"
 msgstr "{{name}} aplikazioak huts egin du"
+
+#: crash-dialog-app-noname
+msgid "Something"
+msgstr ""
 
 #: crash-dialog-message
 msgid ""
@@ -2116,6 +2100,16 @@ msgstr "Bilatu edo idatzi helbidea"
 
 #. # LOCALIZATION NOTE: The following strings are spoken by screen readers and
 #. # not shown on the screen.
+#: back-button.ariaLabel
+#, fuzzy
+msgctxt "back-button.ariaLabel"
+msgid "Back"
+msgstr "Atzera"
+
+#: forward-button.ariaLabel
+msgid "Forward"
+msgstr ""
+
 #: reload-button.ariaLabel
 msgid "Reload"
 msgstr "Birkargatu"
@@ -2124,34 +2118,20 @@ msgstr "Birkargatu"
 msgid "Stop"
 msgstr "Gelditu"
 
-#. # Hotspot
-#: noSIMCardInHotspot3
-msgid "Hotspot off: SIM card missing or inserted incorrectly."
-msgstr "Wifigunea itzalita: SIM txartela falta da edo gaizki txertatu da."
+#: windows-button.ariaLabel
+#, fuzzy
+msgctxt "windows-button.ariaLabel"
+msgid "Show windows"
+msgstr "Erakutsi leihoak"
 
+#. # Hotspot
 #: noHotspotWhenAPMisOnWifiHotspot
 msgid "Turn off airplane mode to use Wi-Fi hotspot."
 msgstr "Itzali hegazkin modua wifigunea erabiltzeko."
 
-#: noHotspotWhenAPMisOnUsbHotspot
-msgid "Turn off airplane mode to use USB tethering."
-msgstr "Itzali hegazkin modua USB tethering-a erabiltzeko."
-
 #: apmActivated
 msgid "Airplane mode activated"
 msgstr "Hegazkin modua aktibatuta"
-
-#: noConnectivityHead
-msgid "No data connection"
-msgstr "Ez dago datu-konexiorik"
-
-#: noConnectivityMessageWifiHotspot
-msgid "Wi-Fi hotspot is disabled because there is no data connection."
-msgstr "Wifigunea desgaituta dago ez dagoelako datu-konexiorik."
-
-#: noConnectivityMessageUsbHotspot
-msgid "USB tethering is disabled because there is no data connection."
-msgstr "USB tethering-a desgaituta dago ez dagoelako datu-konexiorik."
 
 #. # Browser Context Menu
 #: open-in-new-window
@@ -2199,45 +2179,93 @@ msgid "Share Audio"
 msgstr "Partekatu audioa"
 
 #. # Private Browser
-#: private-browser
-msgid "Private Browser"
-msgstr "Nabigatzaile pribatua"
+#: private-window
+msgid "Private Window"
+msgstr ""
 
 #: private-browser-title
 msgid "You’re browsing privately"
 msgstr "Modu pribatuan ari zara nabigatzen"
 
-#: private-browser-detail1
-msgid "{{brandShortName}} won’t remember any history for this window."
-msgstr "{{brandShortName}}(e)k ez du leiho honen historia gogoratuko."
-
-#: private-browser-detail2
+#: private-window-detail1
 msgid ""
-"That includes browsing history, search history, download history, web form "
-"history, cookies, and temporary internet files. However, files you download "
-"and bookmarks you make will be kept."
+"The browser won’t keep any browser history, cookies, or temporary Internet "
+"files."
 msgstr ""
-"Ez du gogoratuko nabigatze-historia, bilaketen historia, deskargen historia, "
-"web-inprimakien historia, cookie-ak eta aldi baterako Internet fitxategiak. "
-"Hala ere, deskargatu dituzun fitxategiak eta sortu dituzun laster-markak "
-"mantenduko dira."
 
-#: private-browser-detail3
+#: private-window-detail2
+#, fuzzy
 msgid ""
 "While this device won’t have a record of your browsing history, your "
-"employer or internet service provider can still track the pages you visit."
+"Internet service provider can still track the pages you visit."
 msgstr ""
 "Gailu honek zure nabigatze-historiaren erregistroa gordetzen ez badu ere, "
 "kontuan izan zure enplegatzaileak edo Internet hornitzaileak bisitatzen "
 "dituzun orrien jarraipena egin dezakeela."
 
-#: private-browser-learn-more
-msgid "Learn More."
-msgstr "Argibide gehiago."
-
 #: okCharsLeft
 msgid "OK ({{n}})"
 msgstr "Ados ({{n}})"
+
+#~ msgid "Title"
+#~ msgstr "Titulua"
+
+#~ msgid "Artist"
+#~ msgstr "Artista"
+
+#~ msgid "Airplane mode is on"
+#~ msgstr "Hegazkin modua piztuta dago"
+
+#~ msgid ""
+#~ "{{name}} requires a network connection. Turn off airplane mode from "
+#~ "Settings and connect to a Wi-Fi or mobile data network."
+#~ msgstr ""
+#~ "{{name}} aplikazioak sareko konexioa behar du. Itzali hegazkin modua "
+#~ "ezarpenetan eta konektatu Wi-Fi batera edo datuen sare batera."
+
+#~ msgid "Network connection unavailable"
+#~ msgstr "Sareko konexioa ez dago erabilgarri"
+
+#~ msgid ""
+#~ "{{name}} requires a network connection. Try connecting to a Wi-Fi or "
+#~ "mobile data network."
+#~ msgstr ""
+#~ "{{name}} aplikazioak sareko konexioa behar du. Saiatu Wi-Fi batera edo "
+#~ "datuen sare batera konektatzen."
+
+#~ msgid "Hotspot off: SIM card missing or inserted incorrectly."
+#~ msgstr "Wifigunea itzalita: SIM txartela falta da edo gaizki txertatu da."
+
+#~ msgid "Turn off airplane mode to use USB tethering."
+#~ msgstr "Itzali hegazkin modua USB tethering-a erabiltzeko."
+
+#~ msgid "No data connection"
+#~ msgstr "Ez dago datu-konexiorik"
+
+#~ msgid "Wi-Fi hotspot is disabled because there is no data connection."
+#~ msgstr "Wifigunea desgaituta dago ez dagoelako datu-konexiorik."
+
+#~ msgid "USB tethering is disabled because there is no data connection."
+#~ msgstr "USB tethering-a desgaituta dago ez dagoelako datu-konexiorik."
+
+#~ msgid "Private Browser"
+#~ msgstr "Nabigatzaile pribatua"
+
+#~ msgid "{{brandShortName}} won’t remember any history for this window."
+#~ msgstr "{{brandShortName}}(e)k ez du leiho honen historia gogoratuko."
+
+#~ msgid ""
+#~ "That includes browsing history, search history, download history, web "
+#~ "form history, cookies, and temporary internet files. However, files you "
+#~ "download and bookmarks you make will be kept."
+#~ msgstr ""
+#~ "Ez du gogoratuko nabigatze-historia, bilaketen historia, deskargen "
+#~ "historia, web-inprimakien historia, cookie-ak eta aldi baterako Internet "
+#~ "fitxategiak. Hala ere, deskargatu dituzun fitxategiak eta sortu dituzun "
+#~ "laster-markak mantenduko dira."
+
+#~ msgid "Learn More."
+#~ msgstr "Argibide gehiago."
 
 #~ msgid "The logs could not be saved"
 #~ msgstr "Egunkariak ezin izan dira gorde"

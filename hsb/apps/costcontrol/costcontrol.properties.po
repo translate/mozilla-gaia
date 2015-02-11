@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-19 07:45+0000\n"
+"POT-Creation-Date: 2015-02-11 19:45+0000\n"
 "PO-Revision-Date: 2014-11-23 21:27+0000\n"
 "Last-Translator: milupo <milupo@sorbzilla.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1416778077.000000\n"
@@ -456,7 +456,21 @@ msgstr "Dokónčene"
 msgid "Confirmation"
 msgstr "Wobkrućenje"
 
-#: reset-confirmation-warning
+#: reset-wifi-confirmation-warning
+msgid "Your current Wi-Fi data usage is {{wifiData}}. Clear it all?"
+msgstr ""
+
+#: reset-mobile-confirmation-warning
+msgid "Your current mobile data usage is {{mobileData}}. Clear it all?"
+msgstr ""
+
+#: reset-all-confirmation-warning
+msgid ""
+"Your current data usages are {{mobileData}} on mobile, {{wifiData}} on Wi-"
+"Fi. Clear it all?"
+msgstr ""
+
+#: reset-telephony-confirmation-warning
 msgid "All current data will be deleted. Are you sure you want to reset?"
 msgstr "Wšě aktualne daty so zhašeja. Chceće woprawdźe wróćo stajić?"
 
@@ -472,7 +486,7 @@ msgstr "Wužiće WLAN wróćo stajić"
 msgid "Reset mobile usage"
 msgstr "Mobilne wužiće wróćo stajić"
 
-#: reset-all-data-usage
+#: reset-all
 msgid "Reset mobile & Wi-Fi data"
 msgstr "Mobilne daty a WLAN-daty wróćo stajić"
 
@@ -516,6 +530,13 @@ msgstr ""
 "Zwiskowa spěšnosć budźe so po překročowanju limita redukować. Stajće so ze "
 "swojim datowym poskićowarjom do zwiska, zo byšće přihódny warnowanski limit "
 "nastajił."
+
+#. # LOCALIZATION NOTE (data-limit-input-label): A label for an input field for
+#. # data limit. The following string is spoken by screen readers and not shown on
+#. # the screen.
+#: data-limit-input-label.ariaLabel
+msgid "Data limit"
+msgstr ""
 
 #. # LOCALIZATION NOTE (wifi-usage, mobile-usage): these strings are displayed in
 #. # the main window
@@ -712,17 +733,36 @@ msgid "KB"
 msgstr "KB"
 
 #: MB
+#, fuzzy
+msgctxt "MB"
 msgid "MB"
 msgstr "MB"
 
 #: GB
+#, fuzzy
+msgctxt "GB"
+msgid "GB"
+msgstr "GB"
+
+#. # LOCALIZATION NOTE (unit-*): For switch unit button a label describing the
+#. # unit. The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: unit-MB.ariaLabel
+#, fuzzy
+msgctxt "unit-MB.ariaLabel"
+msgid "MB"
+msgstr "MB"
+
+#: unit-GB.ariaLabel
+#, fuzzy
+msgctxt "unit-GB.ariaLabel"
 msgid "GB"
 msgstr "GB"
 
 #. # App Usage
-#: app-usage
-msgid "Mobile App Usage"
-msgstr "Mobilne nałoženske wužiće"
+#: app-usage-list-header
+msgid "Mobile usage per app"
+msgstr ""
 
 #: app-usage-no-data
 msgid ""
@@ -743,3 +783,10 @@ msgstr "{{amount}} datow w tutym tydźenju wužite"
 #: data-used-this-month
 msgid "{{amount}} of data used this month"
 msgstr "{{amount}} datow w tutym měsacu wužite"
+
+#: data-usage-other-apps
+msgid "Others"
+msgstr ""
+
+#~ msgid "Mobile App Usage"
+#~ msgstr "Mobilne nałoženske wužiće"

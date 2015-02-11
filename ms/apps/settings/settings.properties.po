@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-19 07:45+0000\n"
+"POT-Creation-Date: 2015-02-11 19:45+0000\n"
 "PO-Revision-Date: 2014-09-07 05:18+0000\n"
 "Last-Translator: haryati <haryati.salehin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -246,6 +246,15 @@ msgstr "Sambungan gagal"
 msgctxt "shortStatus-disconnected"
 msgid "Offline"
 msgstr "Luar Talian"
+
+#: wifi-sleep
+msgid "Wi-Fi Sleep"
+msgstr ""
+
+#: wifi-sleep-description
+msgid ""
+"Enable to automatically turn off Wi-Fi during sleep to save battery power.  "
+msgstr ""
 
 #: manageNetworks
 #, fuzzy
@@ -727,6 +736,117 @@ msgstr "Ralat tetapan panggilan."
 #: callerId
 msgid "Caller ID"
 msgstr "ID Pemanggil"
+
+#: callBarring
+#, fuzzy
+msgid "Call Barring"
+msgstr "Panggilan menunggu"
+
+#. # LOCALIZATION NOTE (callBarring-header): if you leave the original
+#. # en-US value "{{callBarring}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "callBarring".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: callBarring-header
+msgid "{{callBarring}}"
+msgstr ""
+
+#: callBarring-outgoing
+#, fuzzy
+msgid "Outgoing calls"
+msgstr "Panggilan keluar"
+
+#: callBarring-baoc
+msgctxt "callBarring-baoc"
+msgid "All"
+msgstr ""
+
+#: callBarring-boic
+msgid "International"
+msgstr ""
+
+#: callBarring-boicExhc
+msgid "International except Home Country"
+msgstr ""
+
+#: callBarring-incoming
+msgid "Incoming calls"
+msgstr ""
+
+#: callBarring-baic
+msgctxt "callBarring-baic"
+msgid "All"
+msgstr ""
+
+#: callBarring-baicR
+msgid "All while roaming"
+msgstr ""
+
+#: callBarring-passcode
+#, fuzzy
+msgctxt "callBarring-passcode"
+msgid "Passcode"
+msgstr "Kod laluan"
+
+#: callBarring-change-passcode
+#, fuzzy
+msgctxt "callBarring-change-passcode"
+msgid "Change passcode"
+msgstr "Tukar kod laluan"
+
+#: callBarring-passcode-enter
+#, fuzzy
+msgctxt "callBarring-passcode-enter"
+msgid "Enter passcode"
+msgstr "Masukkan kod laluan"
+
+#: callBarring-passcode-unknown
+msgid "In case you don't know your passcode, please contact your carrier"
+msgstr ""
+
+#: callBarring-current-passcode
+#, fuzzy
+msgctxt "callBarring-current-passcode"
+msgid "Current passcode"
+msgstr "Kod laluan semasa"
+
+#: callBarring-new-passcode
+#, fuzzy
+msgctxt "callBarring-new-passcode"
+msgid "New passcode"
+msgstr "Kod laluan baru"
+
+#: callBarring-create-passcode
+#, fuzzy
+msgctxt "callBarring-create-passcode"
+msgid "Create a Passcode"
+msgstr "Cipta Kod Laluan"
+
+#: callBarring-confirm-passcode
+#, fuzzy
+msgid "Confirm passcode"
+msgstr "Sahkan kod laluan"
+
+#: callBarring-passcode-error-generic
+msgid "Passcode error."
+msgstr ""
+
+#: callBarring-passcode-error-incorrect
+#, fuzzy
+msgid "Passcode is incorrect."
+msgstr "Kod laluan tidak betul"
+
+#: callBarring-passcode-error-mismatch
+msgid "Passcode doesn’t match."
+msgstr ""
+
+#: callBarring-update-item-error
+msgid "Error while updating the item: {{error}}."
+msgstr ""
+
+#: callBarring-change-passcode-success
+msgid "Passcode changed."
+msgstr ""
 
 #: callerId-default
 msgid "Network default"
@@ -1378,17 +1498,14 @@ msgstr ""
 "Bergantung kepada perjanjian servis anda, cas tambahan akan dikenakan untuk "
 "data apabila anda berada di kawasan perayauan."
 
-#: change-apn-warning-message
+#: change-apn-warning-message1
+#, fuzzy
 msgid ""
 "Depending on your service agreement, changing your APN setting may result in "
-"extra charges when roaming."
+"extra charges when roaming. Do you want to proceed?"
 msgstr ""
 "Bergantung kepada perjanjian perkhidmatan anda, menukar tetapan APN anda "
 "mungkin akan dikenakan caj tambahan ketika perayauan."
-
-#: change-apn-warning-question
-msgid "Do you want to proceed?"
-msgstr "Adakah anda ingin teruskan?"
 
 #: reset-apn-warning-title
 msgctxt "reset-apn-warning-title"
@@ -1564,6 +1681,8 @@ msgid "Unpair"
 msgstr "Nyah ganding"
 
 #: device-option-confirm
+#, fuzzy
+msgctxt "device-option-confirm"
 msgid "Confirm"
 msgstr "Pasti"
 
@@ -1744,11 +1863,34 @@ msgstr "Nama rangkaian SSID"
 msgid "open"
 msgstr "buka"
 
-#: hotspot-wpa-psk
+#. # LOCALIZATION NOTE
+#. #
+#. # [For localizers]
+#. # We can't render these strings correctly for RTL locales, so we have to put LRE (&#x202a;)
+#. # and PDF (&#x202c;) entities to these translations to force the correct direction.
+#. #
+#. # RTL locales should have a translation similar to this:
+#. # hotspot-wpa-psk.innerHTML= &#x202a;WPA (TKIP)&#x202c;
+#. # hotspot-wpa2-psk.innerHTML= &#x202a;WPA2 (AES)&#x202c;
+#. #
+#. # [More details]
+#. #
+#. # Please check settings.ar.properties to see the difference first.
+#. #
+#. # We have to put "&#x202a;" and "&#x202c;" these two RTL related characters
+#. # in Arabic locales to make sure these two strings would not be translated
+#. # automatically in a wrong way by browser. Because from engineering side,
+#. # we can only change settings.ar.properties, for localizers, please remember to
+#. # put them in the other RTL languages.
+#. #
+#. # Additionally, in order to make this hack work, we got some help from l10n.js
+#. # that we need to put these strings inside "KEY".innerHTML, so that's the
+#. # reason why these two strings below would be suffixed with ".innerHTML"
+#: hotspot-wpa-psk.innerHTML
 msgid "WPA (TKIP)"
 msgstr "WPA (TKIP)"
 
-#: hotspot-wpa2-psk
+#: hotspot-wpa2-psk.innerHTML
 msgid "WPA2 (AES)"
 msgstr "WPA2 (AES)"
 
@@ -2042,6 +2184,10 @@ msgstr "{{language}}"
 #: region
 msgid "Region"
 msgstr "Rantau"
+
+#: more-languages
+msgid "Get More Languages"
+msgstr ""
 
 #: sample-format
 msgid "Sample Format"
@@ -2570,6 +2716,8 @@ msgid "Create"
 msgstr "Cipta"
 
 #: create-a-passcode
+#, fuzzy
+msgctxt "create-a-passcode"
 msgid "Create a Passcode"
 msgstr "Cipta Kod Laluan"
 
@@ -2584,14 +2732,20 @@ msgid "Passcode"
 msgstr "Kod laluan"
 
 #: enter-passcode
+#, fuzzy
+msgctxt "enter-passcode"
 msgid "Enter passcode"
 msgstr "Masukkan kod laluan"
 
 #: new-passcode
+#, fuzzy
+msgctxt "new-passcode"
 msgid "New passcode"
 msgstr "Kod laluan baru"
 
 #: current-passcode
+#, fuzzy
+msgctxt "current-passcode"
 msgid "Current passcode"
 msgstr "Kod laluan semasa"
 
@@ -2637,6 +2791,8 @@ msgid "Require passcode"
 msgstr "Memerlukan kod laluan"
 
 #: change-passcode
+#, fuzzy
+msgctxt "change-passcode"
 msgid "Change passcode"
 msgstr "Tukar kod laluan"
 
@@ -3029,6 +3185,15 @@ msgstr ""
 #: clear
 msgid "Clear"
 msgstr "Bersih"
+
+#. # Security :: Privacy Panel
+#: privacy-controls
+msgid "Privacy Controls"
+msgstr ""
+
+#: no-privacy-panel
+msgid "No privacy panel app found"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Storage
@@ -3797,6 +3962,24 @@ msgid "Reset"
 msgstr "Ulang tetap"
 
 #: reset-warning-title
+#, fuzzy
+msgctxt "reset-warning-title"
+msgid "CAUTION"
+msgstr "AWAS"
+
+#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
+#. # full DevTools access.
+#: unlock-privileges
+msgid "Unlock Privileges"
+msgstr ""
+
+#: reset-devtools
+msgid "Reset and enable full DevTools"
+msgstr ""
+
+#: reset-devtools-warning-title
+#, fuzzy
+msgctxt "reset-devtools-warning-title"
 msgid "CAUTION"
 msgstr "AWAS"
 
@@ -4004,6 +4187,10 @@ msgstr "Peralihan App"
 #: app-suspending
 msgid "App suspending"
 msgstr "Menggantung App"
+
+#: copypaste
+msgid "Copy/paste"
+msgstr ""
 
 #: verbose-app-permissions
 msgid "Verbose app permissions"
@@ -4502,6 +4689,22 @@ msgstr "Sediakan Info Lokal"
 msgid "Set Idle Mode Text"
 msgstr "Tetapkan Teks Mod Lahu"
 
+#: stkItemsNaiPerformCardApdu
+msgid "Perform Card APDU"
+msgstr ""
+
+#: stkItemsNaiPowerOnCard
+msgid "Power On Card"
+msgstr ""
+
+#: stkItemsNaiPowerOffCard
+msgid "Power Off Card"
+msgstr ""
+
+#: stkItemsNaiGetReaderStatus
+msgid "Get Reader Status"
+msgstr ""
+
 #: stkItemsNaiOpenChannel
 msgid "Open Channel"
 msgstr "Buka Saluran"
@@ -4521,6 +4724,10 @@ msgstr "Hantar Data"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Dapatkan Status Saluran"
+
+#: stkItemsNaiEndOfTheProactiveSession
+msgid "End of the proactive session"
+msgstr ""
 
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
@@ -4570,6 +4777,37 @@ msgid ""
 msgstr ""
 "Membolehkan kawasan khas Wi-Fi akan mematikan penambatan USB. Adakah anda "
 "mahu untuk membolehkan kawasan khas Wi-Fi?"
+
+#. # Settings Dialog
+#: settings-dialog-alert
+#, fuzzy
+msgid "Alert"
+msgstr "Waspada"
+
+#: settings-dialog-confirm
+#, fuzzy
+msgctxt "settings-dialog-confirm"
+msgid "Confirm"
+msgstr "Pasti"
+
+#: settings-dialog-prompt
+msgid "Prompt"
+msgstr ""
+
+#: settings-alert-dialog-header
+msgid "{{settings-dialog-alert}}"
+msgstr ""
+
+#: settings-confirm-dialog-header
+msgid "{{settings-dialog-confirm}}"
+msgstr ""
+
+#: settings-prompt-dialog-header
+msgid "{{settings-dialog-prompt}}"
+msgstr ""
+
+#~ msgid "Do you want to proceed?"
+#~ msgstr "Adakah anda ingin teruskan?"
 
 #~ msgid "Async Pan/Zoom"
 #~ msgstr "Pedar/Zun Tak Segerak"

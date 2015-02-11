@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-19 07:45+0000\n"
+"POT-Creation-Date: 2015-02-11 19:45+0000\n"
 "PO-Revision-Date: 2014-11-24 21:25+0000\n"
 "Last-Translator: কৌস্তভ <koustavsuny2009@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1416864309.000000\n"
@@ -444,7 +444,21 @@ msgstr "সম্পন্ন"
 msgid "Confirmation"
 msgstr "নিশ্চিতি"
 
-#: reset-confirmation-warning
+#: reset-wifi-confirmation-warning
+msgid "Your current Wi-Fi data usage is {{wifiData}}. Clear it all?"
+msgstr ""
+
+#: reset-mobile-confirmation-warning
+msgid "Your current mobile data usage is {{mobileData}}. Clear it all?"
+msgstr ""
+
+#: reset-all-confirmation-warning
+msgid ""
+"Your current data usages are {{mobileData}} on mobile, {{wifiData}} on Wi-"
+"Fi. Clear it all?"
+msgstr ""
+
+#: reset-telephony-confirmation-warning
 msgid "All current data will be deleted. Are you sure you want to reset?"
 msgstr "সমস্ত বর্তমান তথ্য মুছে ফেলা হবে. আপনি পুনরায় সেট করার ব্যাপারে নিশ্চিত?"
 
@@ -460,7 +474,7 @@ msgstr "ওয়াই-ফাই ব্যবহার প্রণালী র�
 msgid "Reset mobile usage"
 msgstr "মোবাইল ব্যবহার প্রণালী রিসেট করুন"
 
-#: reset-all-data-usage
+#: reset-all
 msgid "Reset mobile & Wi-Fi data"
 msgstr "মোবাইল এবঙ ওয়াই-ফাই তথ্য রিসেট করুন"
 
@@ -503,6 +517,13 @@ msgid ""
 msgstr ""
 "সংযোগ গতি কমে যায় তথ্য মাত্রা পৌঁছলে। একটি উপযুক্ত সতর্কতা স্তর সেট করতে আপনার তথ্য "
 "প্রদানকারীর সাথে যোগাযোগ করুন।"
+
+#. # LOCALIZATION NOTE (data-limit-input-label): A label for an input field for
+#. # data limit. The following string is spoken by screen readers and not shown on
+#. # the screen.
+#: data-limit-input-label.ariaLabel
+msgid "Data limit"
+msgstr ""
 
 #. # LOCALIZATION NOTE (wifi-usage, mobile-usage): these strings are displayed in
 #. # the main window
@@ -698,17 +719,36 @@ msgid "KB"
 msgstr "কিলোবাইট"
 
 #: MB
+#, fuzzy
+msgctxt "MB"
 msgid "MB"
 msgstr "মেগাবাইট"
 
 #: GB
+#, fuzzy
+msgctxt "GB"
+msgid "GB"
+msgstr "গিগাবাইট"
+
+#. # LOCALIZATION NOTE (unit-*): For switch unit button a label describing the
+#. # unit. The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: unit-MB.ariaLabel
+#, fuzzy
+msgctxt "unit-MB.ariaLabel"
+msgid "MB"
+msgstr "মেগাবাইট"
+
+#: unit-GB.ariaLabel
+#, fuzzy
+msgctxt "unit-GB.ariaLabel"
 msgid "GB"
 msgstr "গিগাবাইট"
 
 #. # App Usage
-#: app-usage
-msgid "Mobile App Usage"
-msgstr "মোবাইল অ্যাপের ব্যবহার প্রণালী"
+#: app-usage-list-header
+msgid "Mobile usage per app"
+msgstr ""
 
 #: app-usage-no-data
 msgid ""
@@ -729,6 +769,13 @@ msgstr "{{amount}} পরিমাণ ডেটা এই সপ্তাহে 
 #: data-used-this-month
 msgid "{{amount}} of data used this month"
 msgstr "{{amount}} পরিমাণ ডেটা এই মাসে ব্যবহার করা হয়েছে"
+
+#: data-usage-other-apps
+msgid "Others"
+msgstr ""
+
+#~ msgid "Mobile App Usage"
+#~ msgstr "মোবাইল অ্যাপের ব্যবহার প্রণালী"
 
 #~ msgid "Set"
 #~ msgstr "স্থাপন"

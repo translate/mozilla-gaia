@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-19 07:45+0000\n"
+"POT-Creation-Date: 2015-02-11 19:45+0000\n"
 "PO-Revision-Date: 2014-07-16 15:46+0000\n"
 "Last-Translator: Anish <anish@helloinfinity.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -247,6 +247,15 @@ msgstr "ബന്ധം പരാജയപ്പെട്ടു"
 msgctxt "shortStatus-disconnected"
 msgid "Offline"
 msgstr "ഓഫ്‌ലൈന്‍"
+
+#: wifi-sleep
+msgid "Wi-Fi Sleep"
+msgstr ""
+
+#: wifi-sleep-description
+msgid ""
+"Enable to automatically turn off Wi-Fi during sleep to save battery power.  "
+msgstr ""
 
 #: manageNetworks
 #, fuzzy
@@ -729,6 +738,117 @@ msgstr "വിളി ക്രമീകരണങ്ങളിൽ പിഴവ്.
 #: callerId
 msgid "Caller ID"
 msgstr "വിളിക്കുന്നയാളുടെ ഐഡി"
+
+#: callBarring
+#, fuzzy
+msgid "Call Barring"
+msgstr "വിളി കാത്തിരിക്കൽ"
+
+#. # LOCALIZATION NOTE (callBarring-header): if you leave the original
+#. # en-US value "{{callBarring}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "callBarring".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: callBarring-header
+msgid "{{callBarring}}"
+msgstr ""
+
+#: callBarring-outgoing
+#, fuzzy
+msgid "Outgoing calls"
+msgstr "പുറത്തേക്കുള്ള വിളികൾ"
+
+#: callBarring-baoc
+msgctxt "callBarring-baoc"
+msgid "All"
+msgstr ""
+
+#: callBarring-boic
+msgid "International"
+msgstr ""
+
+#: callBarring-boicExhc
+msgid "International except Home Country"
+msgstr ""
+
+#: callBarring-incoming
+msgid "Incoming calls"
+msgstr ""
+
+#: callBarring-baic
+msgctxt "callBarring-baic"
+msgid "All"
+msgstr ""
+
+#: callBarring-baicR
+msgid "All while roaming"
+msgstr ""
+
+#: callBarring-passcode
+#, fuzzy
+msgctxt "callBarring-passcode"
+msgid "Passcode"
+msgstr "രഹസ്യവാക്ക്"
+
+#: callBarring-change-passcode
+#, fuzzy
+msgctxt "callBarring-change-passcode"
+msgid "Change passcode"
+msgstr "രഹസ്യവാക്ക് മാറ്റുക"
+
+#: callBarring-passcode-enter
+#, fuzzy
+msgctxt "callBarring-passcode-enter"
+msgid "Enter passcode"
+msgstr "രഹസ്യവാക്ക് ചേർക്കുക"
+
+#: callBarring-passcode-unknown
+msgid "In case you don't know your passcode, please contact your carrier"
+msgstr ""
+
+#: callBarring-current-passcode
+#, fuzzy
+msgctxt "callBarring-current-passcode"
+msgid "Current passcode"
+msgstr "നിലവിലുള്ള രഹസ്യവാക്ക്"
+
+#: callBarring-new-passcode
+#, fuzzy
+msgctxt "callBarring-new-passcode"
+msgid "New passcode"
+msgstr "പുതിയ രഹസ്യവാക്ക്"
+
+#: callBarring-create-passcode
+#, fuzzy
+msgctxt "callBarring-create-passcode"
+msgid "Create a Passcode"
+msgstr "ഒരു രഹസ്യവാക്ക് നിർമ്മിക്കുക"
+
+#: callBarring-confirm-passcode
+#, fuzzy
+msgid "Confirm passcode"
+msgstr "രഹസ്യവാക്ക് സ്ഥിരീകരിക്കുക"
+
+#: callBarring-passcode-error-generic
+msgid "Passcode error."
+msgstr ""
+
+#: callBarring-passcode-error-incorrect
+#, fuzzy
+msgid "Passcode is incorrect."
+msgstr "രഹസ്യവാക്ക് തെറ്റാണു്"
+
+#: callBarring-passcode-error-mismatch
+msgid "Passcode doesn’t match."
+msgstr ""
+
+#: callBarring-update-item-error
+msgid "Error while updating the item: {{error}}."
+msgstr ""
+
+#: callBarring-change-passcode-success
+msgid "Passcode changed."
+msgstr ""
 
 #: callerId-default
 msgid "Network default"
@@ -1380,14 +1500,10 @@ msgstr ""
 "താങ്കളുടെ സേവനവ്യവസ്ഥ അനുസരിച്ച്, താങ്കൾ റോമിങ്ങിലായിരിക്കുമ്പോൾ ഡാറ്റക്ക് അധിക ചാർജ് "
 "നൽകേണ്ടതായി വന്നേക്കാം."
 
-#: change-apn-warning-message
+#: change-apn-warning-message1
 msgid ""
 "Depending on your service agreement, changing your APN setting may result in "
-"extra charges when roaming."
-msgstr ""
-
-#: change-apn-warning-question
-msgid "Do you want to proceed?"
+"extra charges when roaming. Do you want to proceed?"
 msgstr ""
 
 #: reset-apn-warning-title
@@ -1566,6 +1682,8 @@ msgid "Unpair"
 msgstr "ജോഡി അല്ലാതാക്കുക"
 
 #: device-option-confirm
+#, fuzzy
+msgctxt "device-option-confirm"
 msgid "Confirm"
 msgstr "സ്ഥിരീകരിക്കുക"
 
@@ -1746,11 +1864,34 @@ msgstr "SSID ശൃംഘല പേരു്"
 msgid "open"
 msgstr "തുറന്നതു്"
 
-#: hotspot-wpa-psk
+#. # LOCALIZATION NOTE
+#. #
+#. # [For localizers]
+#. # We can't render these strings correctly for RTL locales, so we have to put LRE (&#x202a;)
+#. # and PDF (&#x202c;) entities to these translations to force the correct direction.
+#. #
+#. # RTL locales should have a translation similar to this:
+#. # hotspot-wpa-psk.innerHTML= &#x202a;WPA (TKIP)&#x202c;
+#. # hotspot-wpa2-psk.innerHTML= &#x202a;WPA2 (AES)&#x202c;
+#. #
+#. # [More details]
+#. #
+#. # Please check settings.ar.properties to see the difference first.
+#. #
+#. # We have to put "&#x202a;" and "&#x202c;" these two RTL related characters
+#. # in Arabic locales to make sure these two strings would not be translated
+#. # automatically in a wrong way by browser. Because from engineering side,
+#. # we can only change settings.ar.properties, for localizers, please remember to
+#. # put them in the other RTL languages.
+#. #
+#. # Additionally, in order to make this hack work, we got some help from l10n.js
+#. # that we need to put these strings inside "KEY".innerHTML, so that's the
+#. # reason why these two strings below would be suffixed with ".innerHTML"
+#: hotspot-wpa-psk.innerHTML
 msgid "WPA (TKIP)"
 msgstr "WPA(TKIP)"
 
-#: hotspot-wpa2-psk
+#: hotspot-wpa2-psk.innerHTML
 msgid "WPA2 (AES)"
 msgstr "WPA2 (AES)"
 
@@ -2044,6 +2185,10 @@ msgstr "{{language}}"
 #: region
 msgid "Region"
 msgstr "പ്രദേശം"
+
+#: more-languages
+msgid "Get More Languages"
+msgstr ""
 
 #: sample-format
 msgid "Sample Format"
@@ -2571,6 +2716,8 @@ msgid "Create"
 msgstr "നിർമ്മിക്കുക"
 
 #: create-a-passcode
+#, fuzzy
+msgctxt "create-a-passcode"
 msgid "Create a Passcode"
 msgstr "ഒരു രഹസ്യവാക്ക് നിർമ്മിക്കുക"
 
@@ -2585,14 +2732,20 @@ msgid "Passcode"
 msgstr "രഹസ്യവാക്ക്"
 
 #: enter-passcode
+#, fuzzy
+msgctxt "enter-passcode"
 msgid "Enter passcode"
 msgstr "രഹസ്യവാക്ക് ചേർക്കുക"
 
 #: new-passcode
+#, fuzzy
+msgctxt "new-passcode"
 msgid "New passcode"
 msgstr "പുതിയ രഹസ്യവാക്ക്"
 
 #: current-passcode
+#, fuzzy
+msgctxt "current-passcode"
 msgid "Current passcode"
 msgstr "നിലവിലുള്ള രഹസ്യവാക്ക്"
 
@@ -2638,6 +2791,8 @@ msgid "Require passcode"
 msgstr "രഹസ്യവാക്ക് ആവശ്യപ്പെടുക"
 
 #: change-passcode
+#, fuzzy
+msgctxt "change-passcode"
 msgid "Change passcode"
 msgstr "രഹസ്യവാക്ക് മാറ്റുക"
 
@@ -3022,6 +3177,15 @@ msgstr ""
 #: clear
 msgid "Clear"
 msgstr "നീക്കം ചെയ്യുക"
+
+#. # Security :: Privacy Panel
+#: privacy-controls
+msgid "Privacy Controls"
+msgstr ""
+
+#: no-privacy-panel
+msgid "No privacy panel app found"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Storage
@@ -3789,6 +3953,24 @@ msgid "Reset"
 msgstr "റീസെറ്റ് ചെയ്യുക"
 
 #: reset-warning-title
+#, fuzzy
+msgctxt "reset-warning-title"
+msgid "CAUTION"
+msgstr "ജാഗ്രത"
+
+#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
+#. # full DevTools access.
+#: unlock-privileges
+msgid "Unlock Privileges"
+msgstr ""
+
+#: reset-devtools
+msgid "Reset and enable full DevTools"
+msgstr ""
+
+#: reset-devtools-warning-title
+#, fuzzy
+msgctxt "reset-devtools-warning-title"
 msgid "CAUTION"
 msgstr "ജാഗ്രത"
 
@@ -3990,6 +4172,10 @@ msgstr "പ്രയോഗത്തിന്റെ മാറ്റം"
 #: app-suspending
 msgid "App suspending"
 msgstr "പ്രയോഗത്തിന്റെ താൽക്കാലികമായുള്ള നിർത്തൽ"
+
+#: copypaste
+msgid "Copy/paste"
+msgstr ""
 
 #: verbose-app-permissions
 msgid "Verbose app permissions"
@@ -4485,6 +4671,22 @@ msgstr "പ്രാദേശികമായ വിവരങ്ങൾ നൽക�
 msgid "Set Idle Mode Text"
 msgstr "നിഷ്ക്രിയമായിരിക്കുമ്പോൾ കാണിക്കേണ്ട ടെക്സ്റ്റ് ക്രമീകരിക്കുക"
 
+#: stkItemsNaiPerformCardApdu
+msgid "Perform Card APDU"
+msgstr ""
+
+#: stkItemsNaiPowerOnCard
+msgid "Power On Card"
+msgstr ""
+
+#: stkItemsNaiPowerOffCard
+msgid "Power Off Card"
+msgstr ""
+
+#: stkItemsNaiGetReaderStatus
+msgid "Get Reader Status"
+msgstr ""
+
 #: stkItemsNaiOpenChannel
 msgid "Open Channel"
 msgstr "ചാനൽ തുറക്കുക"
@@ -4504,6 +4706,10 @@ msgstr "ഡാറ്റ അയയ്ക്കുക"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "ചാനൽ അവസ്ഥ അറിയുക"
+
+#: stkItemsNaiEndOfTheProactiveSession
+msgid "End of the proactive session"
+msgstr ""
 
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
@@ -4543,6 +4749,34 @@ msgstr ""
 msgid ""
 "Enabling Wi-Fi hotspot will disable USB tethering. Do you want to enable Wi-"
 "Fi hotspot?"
+msgstr ""
+
+#. # Settings Dialog
+#: settings-dialog-alert
+#, fuzzy
+msgid "Alert"
+msgstr "അറിയിപ്പുകൾ"
+
+#: settings-dialog-confirm
+#, fuzzy
+msgctxt "settings-dialog-confirm"
+msgid "Confirm"
+msgstr "സ്ഥിരീകരിക്കുക"
+
+#: settings-dialog-prompt
+msgid "Prompt"
+msgstr ""
+
+#: settings-alert-dialog-header
+msgid "{{settings-dialog-alert}}"
+msgstr ""
+
+#: settings-confirm-dialog-header
+msgid "{{settings-dialog-confirm}}"
+msgstr ""
+
+#: settings-prompt-dialog-header
+msgid "{{settings-dialog-prompt}}"
 msgstr ""
 
 #~ msgid "Async Pan/Zoom"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-19 07:45+0000\n"
+"POT-Creation-Date: 2015-02-11 19:45+0000\n"
 "PO-Revision-Date: 2014-08-25 09:46+0000\n"
 "Last-Translator: soksophea <sksophea@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,6 +24,8 @@ msgid "OK"
 msgstr "យល់​ព្រម"
 
 #: back
+#, fuzzy
+msgctxt "back"
 msgid "Back"
 msgstr "ថយក្រោយ"
 
@@ -69,13 +71,9 @@ msgstr "មិន​ធ្វើ​វិញ"
 msgid "Enter PIN"
 msgstr "បញ្ចូល PIN"
 
-#: mediaPlaybackTitle.ariaLabel
-msgid "Title"
-msgstr "មុខងារ"
-
-#: mediaPlaybackArtist.ariaLabel
-msgid "Artist"
-msgstr "សិល្បករ"
+#: mediaPlaybackTrack.ariaLabel
+msgid "Track title and artist"
+msgstr ""
 
 #: mediaPlaybackControls.ariaLabel
 msgid "Playback controls"
@@ -706,6 +704,10 @@ msgstr ""
 msgid "{{ appName }} installed"
 msgstr "បាន​ដំឡើង {{ appName }}"
 
+#: langpack-install-success
+msgid "{{ appName }} installed. Go to Settings > Languages to enable it."
+msgstr ""
+
 #. #setup dialog
 #: setup
 msgid "Setup"
@@ -1029,28 +1031,6 @@ msgstr "{{name}} កំពុង​ផ្ទុក​មិន​សមរម្
 msgid "{{name}} is having problems"
 msgstr "{{name}} កំពុង​មាន​បញ្ហា"
 
-#: airplane-is-on
-msgid "Airplane mode is on"
-msgstr "បាន​បើក​របៀប​លើ​យន្តហោះ"
-
-#: airplane-is-turned-on
-msgid ""
-"{{name}} requires a network connection. Turn off airplane mode from Settings "
-"and connect to a Wi-Fi or mobile data network."
-msgstr ""
-"{{name}} ទាមទារ​ការ​ភ្ជាប់​បណ្ដាញ។ បិទ​របៀប​លើ​យន្តហោះ​ពី​ការ​កំណត់ និង​ភ្ជាប់​ទៅ​ Wi-Fi ឬ​បណ្ដាញ​ទិន្នន័យ​"
-"ទូរស័ព្ទ​ចល័ត។"
-
-#: network-connection-unavailable
-msgid "Network connection unavailable"
-msgstr "មិន​មាន​ការ​ភ្ជាប់​បណ្ដាញ​ទេ"
-
-#: network-error
-msgid ""
-"{{name}} requires a network connection. Try connecting to a Wi-Fi or mobile "
-"data network."
-msgstr "{{name}} ទាមទារ​ការ​ភ្ជាប់​បណ្ដាញ។ ព្យាយាម​តភ្ជាប់​ទៅ​បណ្ដាញ Wi-Fi ឬ​ទិន្នន័យ​ទូរស័ព្ទ។"
-
 #: unable-to-connect
 #, fuzzy
 msgid "Unable to connect"
@@ -1141,6 +1121,7 @@ msgid "New private window"
 msgstr ""
 
 #: show-windows
+msgctxt "show-windows"
 msgid "Show windows"
 msgstr ""
 
@@ -1162,6 +1143,10 @@ msgstr "{{brandShortName}} ទើប​បាន​សង្គ្រោះ​�
 #: crash-dialog-app
 msgid "{{name}} just crashed"
 msgstr "{{name}} ទើប​​ជាប់​គាំង"
+
+#: crash-dialog-app-noname
+msgid "Something"
+msgstr ""
 
 #: crash-dialog-message
 msgid ""
@@ -2082,6 +2067,16 @@ msgstr "ស្វែងរក​ ឬ​បញ្ចូល​អាសយដ្�
 
 #. # LOCALIZATION NOTE: The following strings are spoken by screen readers and
 #. # not shown on the screen.
+#: back-button.ariaLabel
+#, fuzzy
+msgctxt "back-button.ariaLabel"
+msgid "Back"
+msgstr "ថយក្រោយ"
+
+#: forward-button.ariaLabel
+msgid "Forward"
+msgstr ""
+
 #: reload-button.ariaLabel
 msgid "Reload"
 msgstr ""
@@ -2090,35 +2085,20 @@ msgstr ""
 msgid "Stop"
 msgstr ""
 
-#. # Hotspot
-#: noSIMCardInHotspot3
-msgid "Hotspot off: SIM card missing or inserted incorrectly."
+#: windows-button.ariaLabel
+msgctxt "windows-button.ariaLabel"
+msgid "Show windows"
 msgstr ""
 
+#. # Hotspot
 #: noHotspotWhenAPMisOnWifiHotspot
 #, fuzzy
 msgid "Turn off airplane mode to use Wi-Fi hotspot."
 msgstr "បិទ​របៀប​ពេល​ជិះ​យន្តហោះ ដើម្បី​ប្រើ​ហតស្ប៉ត​វ៉ាយហ្វាយ"
 
-#: noHotspotWhenAPMisOnUsbHotspot
-msgid "Turn off airplane mode to use USB tethering."
-msgstr ""
-
 #: apmActivated
 msgid "Airplane mode activated"
 msgstr "បាន​ធ្វើ​ឲ្យ​របៀប​ពេលជិះ​យន្ត​ហោះ​សកម្ម"
-
-#: noConnectivityHead
-msgid "No data connection"
-msgstr ""
-
-#: noConnectivityMessageWifiHotspot
-msgid "Wi-Fi hotspot is disabled because there is no data connection."
-msgstr ""
-
-#: noConnectivityMessageUsbHotspot
-msgid "USB tethering is disabled because there is no data connection."
-msgstr ""
 
 #. # Browser Context Menu
 #: open-in-new-window
@@ -2166,38 +2146,53 @@ msgid "Share Audio"
 msgstr "ចែករំលែក​អូឌីយ៉ូ"
 
 #. # Private Browser
-#: private-browser
-msgid "Private Browser"
+#: private-window
+msgid "Private Window"
 msgstr ""
 
 #: private-browser-title
 msgid "You’re browsing privately"
 msgstr ""
 
-#: private-browser-detail1
-msgid "{{brandShortName}} won’t remember any history for this window."
-msgstr ""
-
-#: private-browser-detail2
+#: private-window-detail1
 msgid ""
-"That includes browsing history, search history, download history, web form "
-"history, cookies, and temporary internet files. However, files you download "
-"and bookmarks you make will be kept."
+"The browser won’t keep any browser history, cookies, or temporary Internet "
+"files."
 msgstr ""
 
-#: private-browser-detail3
+#: private-window-detail2
 msgid ""
 "While this device won’t have a record of your browsing history, your "
-"employer or internet service provider can still track the pages you visit."
-msgstr ""
-
-#: private-browser-learn-more
-msgid "Learn More."
+"Internet service provider can still track the pages you visit."
 msgstr ""
 
 #: okCharsLeft
 msgid "OK ({{n}})"
 msgstr ""
+
+#~ msgid "Title"
+#~ msgstr "មុខងារ"
+
+#~ msgid "Artist"
+#~ msgstr "សិល្បករ"
+
+#~ msgid "Airplane mode is on"
+#~ msgstr "បាន​បើក​របៀប​លើ​យន្តហោះ"
+
+#~ msgid ""
+#~ "{{name}} requires a network connection. Turn off airplane mode from "
+#~ "Settings and connect to a Wi-Fi or mobile data network."
+#~ msgstr ""
+#~ "{{name}} ទាមទារ​ការ​ភ្ជាប់​បណ្ដាញ។ បិទ​របៀប​លើ​យន្តហោះ​ពី​ការ​កំណត់ និង​ភ្ជាប់​ទៅ​ Wi-Fi ឬ​បណ្ដាញ​"
+#~ "ទិន្នន័យ​ទូរស័ព្ទ​ចល័ត។"
+
+#~ msgid "Network connection unavailable"
+#~ msgstr "មិន​មាន​ការ​ភ្ជាប់​បណ្ដាញ​ទេ"
+
+#~ msgid ""
+#~ "{{name}} requires a network connection. Try connecting to a Wi-Fi or "
+#~ "mobile data network."
+#~ msgstr "{{name}} ទាមទារ​ការ​ភ្ជាប់​បណ្ដាញ។ ព្យាយាម​តភ្ជាប់​ទៅ​បណ្ដាញ Wi-Fi ឬ​ទិន្នន័យ​ទូរស័ព្ទ។"
 
 #~ msgid "The logs could not be saved"
 #~ msgstr "មិន​អាច​រក្សា​ទុក​កំណត់ហេតុ"

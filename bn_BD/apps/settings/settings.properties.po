@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-19 07:45+0000\n"
+"POT-Creation-Date: 2015-02-11 19:45+0000\n"
 "PO-Revision-Date: 2014-08-01 11:52+0000\n"
 "Last-Translator: Belayet <bellayet@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -246,6 +246,15 @@ msgstr "সংযোগ বিছিন্ন"
 msgctxt "shortStatus-disconnected"
 msgid "Offline"
 msgstr "অফলাইন"
+
+#: wifi-sleep
+msgid "Wi-Fi Sleep"
+msgstr ""
+
+#: wifi-sleep-description
+msgid ""
+"Enable to automatically turn off Wi-Fi during sleep to save battery power.  "
+msgstr ""
 
 #: manageNetworks
 #, fuzzy
@@ -729,6 +738,116 @@ msgstr "কল সেটিং এ ত্রুটি আছে।"
 #: callerId
 msgid "Caller ID"
 msgstr "কলার আইডি"
+
+#: callBarring
+#, fuzzy
+msgid "Call Barring"
+msgstr "কল ওয়েটিং"
+
+#. # LOCALIZATION NOTE (callBarring-header): if you leave the original
+#. # en-US value "{{callBarring}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "callBarring".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: callBarring-header
+msgid "{{callBarring}}"
+msgstr ""
+
+#: callBarring-outgoing
+#, fuzzy
+msgid "Outgoing calls"
+msgstr "আউটগোয়িং কল"
+
+#: callBarring-baoc
+msgctxt "callBarring-baoc"
+msgid "All"
+msgstr ""
+
+#: callBarring-boic
+msgid "International"
+msgstr ""
+
+#: callBarring-boicExhc
+msgid "International except Home Country"
+msgstr ""
+
+#: callBarring-incoming
+msgid "Incoming calls"
+msgstr ""
+
+#: callBarring-baic
+msgctxt "callBarring-baic"
+msgid "All"
+msgstr ""
+
+#: callBarring-baicR
+msgid "All while roaming"
+msgstr ""
+
+#: callBarring-passcode
+#, fuzzy
+msgctxt "callBarring-passcode"
+msgid "Passcode"
+msgstr "পাসকোড"
+
+#: callBarring-change-passcode
+#, fuzzy
+msgctxt "callBarring-change-passcode"
+msgid "Change passcode"
+msgstr "পাসকোড পরিবর্তন করুন"
+
+#: callBarring-passcode-enter
+#, fuzzy
+msgctxt "callBarring-passcode-enter"
+msgid "Enter passcode"
+msgstr "পাসকোড প্রবেশ করান"
+
+#: callBarring-passcode-unknown
+msgid "In case you don't know your passcode, please contact your carrier"
+msgstr ""
+
+#: callBarring-current-passcode
+#, fuzzy
+msgctxt "callBarring-current-passcode"
+msgid "Current passcode"
+msgstr "বর্তমান পাসকোড"
+
+#: callBarring-new-passcode
+#, fuzzy
+msgctxt "callBarring-new-passcode"
+msgid "New passcode"
+msgstr "নতুন পাসকোড"
+
+#: callBarring-create-passcode
+#, fuzzy
+msgctxt "callBarring-create-passcode"
+msgid "Create a Passcode"
+msgstr "পাসকোড তৈরি করুন"
+
+#: callBarring-confirm-passcode
+msgid "Confirm passcode"
+msgstr "পাসকোড নিশ্চিতকরণ"
+
+#: callBarring-passcode-error-generic
+msgid "Passcode error."
+msgstr ""
+
+#: callBarring-passcode-error-incorrect
+#, fuzzy
+msgid "Passcode is incorrect."
+msgstr "ভুল পাসকোড"
+
+#: callBarring-passcode-error-mismatch
+msgid "Passcode doesn’t match."
+msgstr ""
+
+#: callBarring-update-item-error
+msgid "Error while updating the item: {{error}}."
+msgstr ""
+
+#: callBarring-change-passcode-success
+msgid "Passcode changed."
+msgstr ""
 
 #: callerId-default
 msgid "Network default"
@@ -1388,14 +1507,10 @@ msgstr ""
 "আপনার সেবার চুক্তি অনুযায়ী, যখন আপনি রোমিং এলাকায় থাকবেন তখন ইন্টারনেটের জন্য "
 "অতিরিক্ত খরচ হতে পারে।"
 
-#: change-apn-warning-message
+#: change-apn-warning-message1
 msgid ""
 "Depending on your service agreement, changing your APN setting may result in "
-"extra charges when roaming."
-msgstr ""
-
-#: change-apn-warning-question
-msgid "Do you want to proceed?"
+"extra charges when roaming. Do you want to proceed?"
 msgstr ""
 
 #: reset-apn-warning-title
@@ -1572,6 +1687,8 @@ msgid "Unpair"
 msgstr "আলাদা করুন"
 
 #: device-option-confirm
+#, fuzzy
+msgctxt "device-option-confirm"
 msgid "Confirm"
 msgstr "নিশ্চিত"
 
@@ -1751,11 +1868,34 @@ msgstr "SSID নেটওয়ার্কের নাম"
 msgid "open"
 msgstr "উন্মুক্ত"
 
-#: hotspot-wpa-psk
+#. # LOCALIZATION NOTE
+#. #
+#. # [For localizers]
+#. # We can't render these strings correctly for RTL locales, so we have to put LRE (&#x202a;)
+#. # and PDF (&#x202c;) entities to these translations to force the correct direction.
+#. #
+#. # RTL locales should have a translation similar to this:
+#. # hotspot-wpa-psk.innerHTML= &#x202a;WPA (TKIP)&#x202c;
+#. # hotspot-wpa2-psk.innerHTML= &#x202a;WPA2 (AES)&#x202c;
+#. #
+#. # [More details]
+#. #
+#. # Please check settings.ar.properties to see the difference first.
+#. #
+#. # We have to put "&#x202a;" and "&#x202c;" these two RTL related characters
+#. # in Arabic locales to make sure these two strings would not be translated
+#. # automatically in a wrong way by browser. Because from engineering side,
+#. # we can only change settings.ar.properties, for localizers, please remember to
+#. # put them in the other RTL languages.
+#. #
+#. # Additionally, in order to make this hack work, we got some help from l10n.js
+#. # that we need to put these strings inside "KEY".innerHTML, so that's the
+#. # reason why these two strings below would be suffixed with ".innerHTML"
+#: hotspot-wpa-psk.innerHTML
 msgid "WPA (TKIP)"
 msgstr "WPA (TKIP)"
 
-#: hotspot-wpa2-psk
+#: hotspot-wpa2-psk.innerHTML
 msgid "WPA2 (AES)"
 msgstr "WPA2 (AES)"
 
@@ -2048,6 +2188,10 @@ msgstr "{{language}}"
 #: region
 msgid "Region"
 msgstr "অঞ্চল"
+
+#: more-languages
+msgid "Get More Languages"
+msgstr ""
 
 #: sample-format
 msgid "Sample Format"
@@ -2577,6 +2721,8 @@ msgid "Create"
 msgstr "তৈরি"
 
 #: create-a-passcode
+#, fuzzy
+msgctxt "create-a-passcode"
 msgid "Create a Passcode"
 msgstr "পাসকোড তৈরি করুন"
 
@@ -2591,14 +2737,20 @@ msgid "Passcode"
 msgstr "পাসকোড"
 
 #: enter-passcode
+#, fuzzy
+msgctxt "enter-passcode"
 msgid "Enter passcode"
 msgstr "পাসকোড প্রবেশ করান"
 
 #: new-passcode
+#, fuzzy
+msgctxt "new-passcode"
 msgid "New passcode"
 msgstr "নতুন পাসকোড"
 
 #: current-passcode
+#, fuzzy
+msgctxt "current-passcode"
 msgid "Current passcode"
 msgstr "বর্তমান পাসকোড"
 
@@ -2643,6 +2795,8 @@ msgid "Require passcode"
 msgstr "পাসকোড আবশ্যক"
 
 #: change-passcode
+#, fuzzy
+msgctxt "change-passcode"
 msgid "Change passcode"
 msgstr "পাসকোড পরিবর্তন করুন"
 
@@ -3028,6 +3182,15 @@ msgstr ""
 #: clear
 msgid "Clear"
 msgstr "পরিষ্কার"
+
+#. # Security :: Privacy Panel
+#: privacy-controls
+msgid "Privacy Controls"
+msgstr ""
+
+#: no-privacy-panel
+msgid "No privacy panel app found"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Storage
@@ -3792,6 +3955,24 @@ msgid "Reset"
 msgstr "রিসেট"
 
 #: reset-warning-title
+#, fuzzy
+msgctxt "reset-warning-title"
+msgid "CAUTION"
+msgstr "সতর্কতা"
+
+#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
+#. # full DevTools access.
+#: unlock-privileges
+msgid "Unlock Privileges"
+msgstr ""
+
+#: reset-devtools
+msgid "Reset and enable full DevTools"
+msgstr ""
+
+#: reset-devtools-warning-title
+#, fuzzy
+msgctxt "reset-devtools-warning-title"
 msgid "CAUTION"
 msgstr "সতর্কতা"
 
@@ -3993,6 +4174,10 @@ msgstr "App transition"
 #: app-suspending
 msgid "App suspending"
 msgstr "অ্যাপ বন্ধ করা হচ্ছে"
+
+#: copypaste
+msgid "Copy/paste"
+msgstr ""
 
 #: verbose-app-permissions
 msgid "Verbose app permissions"
@@ -4488,6 +4673,22 @@ msgstr "স্থানীয় তথ্য দিন"
 msgid "Set Idle Mode Text"
 msgstr "নিষ্ক্রিয় মোডের লেখা সেট করুন"
 
+#: stkItemsNaiPerformCardApdu
+msgid "Perform Card APDU"
+msgstr ""
+
+#: stkItemsNaiPowerOnCard
+msgid "Power On Card"
+msgstr ""
+
+#: stkItemsNaiPowerOffCard
+msgid "Power Off Card"
+msgstr ""
+
+#: stkItemsNaiGetReaderStatus
+msgid "Get Reader Status"
+msgstr ""
+
 #: stkItemsNaiOpenChannel
 msgid "Open Channel"
 msgstr "উন্মুক্ত চ্যানেল"
@@ -4507,6 +4708,10 @@ msgstr "ডাটা প্রেরণ"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "চ্যানেলের অবস্থা দেখুন"
+
+#: stkItemsNaiEndOfTheProactiveSession
+msgid "End of the proactive session"
+msgstr ""
 
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
@@ -4548,6 +4753,34 @@ msgid ""
 "Fi hotspot?"
 msgstr ""
 
+#. # Settings Dialog
+#: settings-dialog-alert
+#, fuzzy
+msgid "Alert"
+msgstr "সতর্কতা"
+
+#: settings-dialog-confirm
+#, fuzzy
+msgctxt "settings-dialog-confirm"
+msgid "Confirm"
+msgstr "নিশ্চিত"
+
+#: settings-dialog-prompt
+msgid "Prompt"
+msgstr ""
+
+#: settings-alert-dialog-header
+msgid "{{settings-dialog-alert}}"
+msgstr ""
+
+#: settings-confirm-dialog-header
+msgid "{{settings-dialog-confirm}}"
+msgstr ""
+
+#: settings-prompt-dialog-header
+msgid "{{settings-dialog-prompt}}"
+msgstr ""
+
 #~ msgid "Async Pan/Zoom"
 #~ msgstr "Async Pan/Zoom"
 
@@ -4561,9 +4794,6 @@ msgstr ""
 #~ msgctxt "findmydevice-create-account"
 #~ msgid "Create account or sign in"
 #~ msgstr "অ্যাকাউন্ট তৈরি বা সাইন ইন "
-
-#~ msgid "Confirm passcode"
-#~ msgstr "পাসকোড নিশ্চিতকরণ"
 
 #~ msgid "Clear bookmarks data"
 #~ msgstr "বুকমার্ক করা ডাটা পরিষ্কার কর"

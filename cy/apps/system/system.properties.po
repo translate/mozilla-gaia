@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-19 07:45+0000\n"
+"POT-Creation-Date: 2015-02-11 19:45+0000\n"
 "PO-Revision-Date: 2014-11-19 15:47+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: Cymraeg\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -25,6 +25,8 @@ msgid "OK"
 msgstr "Iawn"
 
 #: back
+#, fuzzy
+msgctxt "back"
 msgid "Back"
 msgstr "Nôl"
 
@@ -68,13 +70,9 @@ msgstr "Dadwneud"
 msgid "Enter PIN"
 msgstr "Cynigwch y PIN"
 
-#: mediaPlaybackTitle.ariaLabel
-msgid "Title"
-msgstr "Teitl"
-
-#: mediaPlaybackArtist.ariaLabel
-msgid "Artist"
-msgstr "Artist"
+#: mediaPlaybackTrack.ariaLabel
+msgid "Track title and artist"
+msgstr ""
 
 #: mediaPlaybackControls.ariaLabel
 msgid "Playback controls"
@@ -695,6 +693,10 @@ msgstr ""
 msgid "{{ appName }} installed"
 msgstr "Mae {{ appName }} wedi ei osod"
 
+#: langpack-install-success
+msgid "{{ appName }} installed. Go to Settings > Languages to enable it."
+msgstr ""
+
 #. #setup dialog
 #: setup
 msgid "Setup"
@@ -1028,30 +1030,6 @@ msgstr "Nid yw {{name}} yn llwytho'n iawn"
 msgid "{{name}} is having problems"
 msgstr "Mae {{name}} yn cael problemau"
 
-#: airplane-is-on
-msgid "Airplane mode is on"
-msgstr "Mae modd awyren ymlaen"
-
-#: airplane-is-turned-on
-msgid ""
-"{{name}} requires a network connection. Turn off airplane mode from Settings "
-"and connect to a Wi-Fi or mobile data network."
-msgstr ""
-"Mae {{name}} angen cysylltiad rhwydwaith. Diffoddwch modd awyren yn "
-"Gosodiadau a chysylltu â'r diwyfr neu rwydwaith data symudol."
-
-#: network-connection-unavailable
-msgid "Network connection unavailable"
-msgstr "Dim cysylltiad rhwydwaith ar gael"
-
-#: network-error
-msgid ""
-"{{name}} requires a network connection. Try connecting to a Wi-Fi or mobile "
-"data network."
-msgstr ""
-"Mae {{name}} angen cysylltiad rhwydwaith. Ceisiwch gysylltu â'r diwyfr neu "
-"rwydwaith data symudol."
-
 #: unable-to-connect
 msgid "Unable to connect"
 msgstr "Methu cysylltu"
@@ -1144,6 +1122,8 @@ msgid "New private window"
 msgstr "Ffenestr breifat newydd"
 
 #: show-windows
+#, fuzzy
+msgctxt "show-windows"
 msgid "Show windows"
 msgstr "Dangos ffenestri"
 
@@ -1164,6 +1144,10 @@ msgstr "Mae {{brandShortName}} newydd ei adfer ar ôl chwalu"
 #: crash-dialog-app
 msgid "{{name}} just crashed"
 msgstr "Mae {{name}} newydd chwalu"
+
+#: crash-dialog-app-noname
+msgid "Something"
+msgstr ""
 
 #: crash-dialog-message
 msgid ""
@@ -2112,6 +2096,16 @@ msgstr "Chwilio neu gyfeiriad"
 
 #. # LOCALIZATION NOTE: The following strings are spoken by screen readers and
 #. # not shown on the screen.
+#: back-button.ariaLabel
+#, fuzzy
+msgctxt "back-button.ariaLabel"
+msgid "Back"
+msgstr "Nôl"
+
+#: forward-button.ariaLabel
+msgid "Forward"
+msgstr ""
+
 #: reload-button.ariaLabel
 msgid "Reload"
 msgstr "Ail-lwytho"
@@ -2120,35 +2114,20 @@ msgstr "Ail-lwytho"
 msgid "Stop"
 msgstr "Atal"
 
-#. # Hotspot
-#: noSIMCardInHotspot3
-msgid "Hotspot off: SIM card missing or inserted incorrectly."
-msgstr ""
-"Diffodd man poeth: cerdyn SIM ar goll neu wedi ei fewnosod yn anghywir."
+#: windows-button.ariaLabel
+#, fuzzy
+msgctxt "windows-button.ariaLabel"
+msgid "Show windows"
+msgstr "Dangos ffenestri"
 
+#. # Hotspot
 #: noHotspotWhenAPMisOnWifiHotspot
 msgid "Turn off airplane mode to use Wi-Fi hotspot."
 msgstr "Diffoddwch y modd awyren i ddefnyddio man poeth y diwyfr."
 
-#: noHotspotWhenAPMisOnUsbHotspot
-msgid "Turn off airplane mode to use USB tethering."
-msgstr "Diffodd yy modd awyren i ddefnyddio tenynnu USB."
-
 #: apmActivated
 msgid "Airplane mode activated"
 msgstr "Modd awyren wedi ei weithredu"
-
-#: noConnectivityHead
-msgid "No data connection"
-msgstr "Dim cysylltiad data"
-
-#: noConnectivityMessageWifiHotspot
-msgid "Wi-Fi hotspot is disabled because there is no data connection."
-msgstr "Mae'r man poeth diwyfr wedi ei analluogi am nad oes cysylltiad data."
-
-#: noConnectivityMessageUsbHotspot
-msgid "USB tethering is disabled because there is no data connection."
-msgstr "Mae tenynnu USB wedi ei atal gan nad oes cysylltiad data."
 
 #. # Browser Context Menu
 #: open-in-new-window
@@ -2196,45 +2175,95 @@ msgid "Share Audio"
 msgstr "Rhannu Sain"
 
 #. # Private Browser
-#: private-browser
-msgid "Private Browser"
-msgstr "Porwr Preifat"
+#: private-window
+msgid "Private Window"
+msgstr ""
 
 #: private-browser-title
 msgid "You’re browsing privately"
 msgstr "Rydych yn pori'n breifat"
 
-#: private-browser-detail1
-msgid "{{brandShortName}} won’t remember any history for this window."
-msgstr ""
-"Ni fydd {{brandShortName}} yn cofio dim o'r hanes pori yn y ffenestr hwn."
-
-#: private-browser-detail2
+#: private-window-detail1
 msgid ""
-"That includes browsing history, search history, download history, web form "
-"history, cookies, and temporary internet files. However, files you download "
-"and bookmarks you make will be kept."
+"The browser won’t keep any browser history, cookies, or temporary Internet "
+"files."
 msgstr ""
-"Mae'n cynnwys hanes pori, hanes chwilio, hanes llwytho i lawr, hanes "
-"ffurflenni gwe, cwcis ne ffeiliau gwe dros dro. Er hynny, bydd ffeiliau sydd "
-"wedi eu llwytho i lawr a nodau tudalen yn cael eu cadw."
 
-#: private-browser-detail3
+#: private-window-detail2
+#, fuzzy
 msgid ""
 "While this device won’t have a record of your browsing history, your "
-"employer or internet service provider can still track the pages you visit."
+"Internet service provider can still track the pages you visit."
 msgstr ""
 "Tra na fydd gan y ddyfais hon gofnod o'ch hanes pori, bydd eich darparwr "
 "gwasanaeth rhyngrwyd a chyflogwr dal yn gallu olrhain y tudalennau fuoch "
 "iddynt."
 
-#: private-browser-learn-more
-msgid "Learn More."
-msgstr "Dysgu Rhagor."
-
 #: okCharsLeft
 msgid "OK ({{n}})"
 msgstr "Iawn ({{n}})"
+
+#~ msgid "Title"
+#~ msgstr "Teitl"
+
+#~ msgid "Artist"
+#~ msgstr "Artist"
+
+#~ msgid "Airplane mode is on"
+#~ msgstr "Mae modd awyren ymlaen"
+
+#~ msgid ""
+#~ "{{name}} requires a network connection. Turn off airplane mode from "
+#~ "Settings and connect to a Wi-Fi or mobile data network."
+#~ msgstr ""
+#~ "Mae {{name}} angen cysylltiad rhwydwaith. Diffoddwch modd awyren yn "
+#~ "Gosodiadau a chysylltu â'r diwyfr neu rwydwaith data symudol."
+
+#~ msgid "Network connection unavailable"
+#~ msgstr "Dim cysylltiad rhwydwaith ar gael"
+
+#~ msgid ""
+#~ "{{name}} requires a network connection. Try connecting to a Wi-Fi or "
+#~ "mobile data network."
+#~ msgstr ""
+#~ "Mae {{name}} angen cysylltiad rhwydwaith. Ceisiwch gysylltu â'r diwyfr "
+#~ "neu rwydwaith data symudol."
+
+#~ msgid "Hotspot off: SIM card missing or inserted incorrectly."
+#~ msgstr ""
+#~ "Diffodd man poeth: cerdyn SIM ar goll neu wedi ei fewnosod yn anghywir."
+
+#~ msgid "Turn off airplane mode to use USB tethering."
+#~ msgstr "Diffodd yy modd awyren i ddefnyddio tenynnu USB."
+
+#~ msgid "No data connection"
+#~ msgstr "Dim cysylltiad data"
+
+#~ msgid "Wi-Fi hotspot is disabled because there is no data connection."
+#~ msgstr ""
+#~ "Mae'r man poeth diwyfr wedi ei analluogi am nad oes cysylltiad data."
+
+#~ msgid "USB tethering is disabled because there is no data connection."
+#~ msgstr "Mae tenynnu USB wedi ei atal gan nad oes cysylltiad data."
+
+#~ msgid "Private Browser"
+#~ msgstr "Porwr Preifat"
+
+#~ msgid "{{brandShortName}} won’t remember any history for this window."
+#~ msgstr ""
+#~ "Ni fydd {{brandShortName}} yn cofio dim o'r hanes pori yn y ffenestr hwn."
+
+#~ msgid ""
+#~ "That includes browsing history, search history, download history, web "
+#~ "form history, cookies, and temporary internet files. However, files you "
+#~ "download and bookmarks you make will be kept."
+#~ msgstr ""
+#~ "Mae'n cynnwys hanes pori, hanes chwilio, hanes llwytho i lawr, hanes "
+#~ "ffurflenni gwe, cwcis ne ffeiliau gwe dros dro. Er hynny, bydd ffeiliau "
+#~ "sydd wedi eu llwytho i lawr a nodau tudalen yn cael eu cadw."
+
+#~ msgid "Learn More."
+#~ msgstr "Dysgu Rhagor."
 
 #~ msgid "The logs could not be saved"
 #~ msgstr "Methu cadw'r cofnodion"
