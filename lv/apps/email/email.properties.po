@@ -7,7 +7,6 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,9 +18,10 @@ msgstr ""
 #. # purpose header back button rendered as an icon. The following string is spoken
 #. # by screen readers and not shown on the screen.
 #: back-button.ariaLabel
+#, fuzzy
 msgctxt "back-button.ariaLabel"
 msgid "Back"
-msgstr ""
+msgstr "Atpakaļ"
 
 #. # LOCALIZATION NOTE(close-button): For various cards, a label for a general
 #. # purpose header close button rendered as an icon. The following string is
@@ -32,28 +32,30 @@ msgstr ""
 
 #: setup-app-name-header
 msgid "Mail"
-msgstr ""
+msgstr "Epasts"
 
 #: setup-empty-account-prompt
 msgid ""
 "You are not set up to send or receive email. Would you like to do that now?"
 msgstr ""
+"Jūs neesat uzstādījis nepieciešamo lai sūtīt vai saņemt epastus. Vai "
+"vēlaties tagad to darīt?"
 
 #: setup-pick-service
 msgid "To send and receive email, you will need to set up an account."
-msgstr ""
+msgstr "Lai sūtīt un saņemt epastus, jums ir jāuzstāda kontu."
 
 #. # Title of the account setup card where the user enters their display name,
 #. # e-mail address, and password.
 #: setup-account-header3
 msgid "New Account"
-msgstr ""
+msgstr "Jauns Konts"
 
 #. # LOCALIZATION NOTE (setup-account-enter-password): Shown during account setup
 #. # if the autoconfig process determines a password is needed to complete setup.
 #: setup-account-enter-password
 msgid "Enter Password For:"
-msgstr ""
+msgstr "Ievadiet paroli:"
 
 #. # The placeholder for the display name of the user that will be displayed in the
 #. # account setup screen input box for the display name until they enter any text
@@ -64,14 +66,14 @@ msgstr ""
 #: setup-info-name.placeholder
 msgctxt "setup-info-name.placeholder"
 msgid "Your name"
-msgstr ""
+msgstr "Jūsu vārds"
 
 #. # The placeholder for the user's e-mail address that will be displayed in the
 #. # account setup screen input box for the e-mail address until they enter any
 #. # text in the box.  The value will be used to configure the e-mail account.
 #: setup-info-email.placeholder
 msgid "someone@example.com"
-msgstr ""
+msgstr "kads@piemers.lv"
 
 #. # The placeholder for the user's password that will be displayed in the account
 #. # setup screen input box for the password until they enter any text in the box.
@@ -80,38 +82,39 @@ msgstr ""
 #: setup-info-password.placeholder
 msgctxt "setup-info-password.placeholder"
 msgid "Password"
-msgstr ""
+msgstr "Parole"
 
 #: setup-info-next
 msgctxt "setup-info-next"
 msgid "Next"
-msgstr ""
+msgstr "Nākamais"
 
 #: setup-progress-wait-msg
 msgid "Setting up account"
-msgstr ""
+msgstr "Uzstāda kontu"
 
 #: setup-completed-header
 msgid "Mail account setup"
-msgstr ""
+msgstr "Epasta konta uzstādīšana"
 
 #: setup-completed-label
 msgid "All done!"
-msgstr ""
+msgstr "Viss ir paveikts!"
 
 #: setup-add-another-account
 msgid "Add another account"
-msgstr ""
+msgstr "Pievienot citu kontu"
 
 #: setup-show-mail
 msgid "Continue to Mail"
-msgstr ""
+msgstr "Turpināt uz Epastiem"
 
 #. # The error for when the user tries to create an account without a network
 #. # connection active.
 #: setup-error-offline
 msgid "This device is currently offline. Connect to a network and try again."
 msgstr ""
+"Jūsu ierīce šobrīd ir bezsaistes. Pieslēdzieties tīklam un mēģiniet vēlreiz."
 
 #. # The error for either a bad username or a bad password.  For security reasons,
 #. # servers try not to distinguish between the two which is why we also cannot
@@ -119,13 +122,13 @@ msgstr ""
 #. # it in either place.
 #: setup-error-bad-user-or-pass2
 msgid "Invalid username or password. Check for typos."
-msgstr ""
+msgstr "Nepareizs lietotājvārds vai parole. Lūdzu pārbaudiet tos."
 
 #. # The error for a bad e-mail address. We tried to send email but
 #. # couldn't because the server said it was a bad address.
 #: setup-error-bad-address
 msgid "Invalid e-mail address. Check for typos."
-msgstr ""
+msgstr "Nepareiza epasta adrese. Lūdzu pārbaudiet to."
 
 #. # The error for a user having the correct username and password, but the mail
 #. # server explicitly indicates they don't have permission to talk to the mail
@@ -134,7 +137,7 @@ msgstr ""
 #. # domain have their own error code: setup-error-imap-disabled.
 #: setup-error-not-authorized
 msgid "The server said you’re not authorized to create an account"
-msgstr ""
+msgstr "Serveris ziņoja ka jums nav tiesības izveidot  kontu"
 
 #. # The error for when the server is not good enough to be supported
 #. # because it is missing the required features.
@@ -142,6 +145,7 @@ msgstr ""
 msgid ""
 "Server unsupported. The POP3 server does not implement required features."
 msgstr ""
+"Serveris nav atbalstīts. POP3 serveri neatbalsta nepieciešamas iespējas."
 
 #. # The fallback error; if we don't have a better error, we report this.
 #: setup-error-unknown2
@@ -149,6 +153,8 @@ msgid ""
 "An unknown error occurred. Check your network connection or try the manual "
 "configuration option."
 msgstr ""
+"Notika nezināma kļūda. Pārbaudiet savu tīklu savienojumu vai mēģiniet "
+"pašrocīgās konfigurācijas opciju."
 
 #. # The error for Gmail accounts where 2-factor authentication (where you receive
 #. # a text message on your phone or run a special app) is enabled, and so the
@@ -158,6 +164,7 @@ msgstr ""
 msgid ""
 "You must use an application specific password for two-factor Gmail accounts"
 msgstr ""
+"Jums ir jāizmanto aplikācijas specifiska parole divu-faktoru Gmail kontiem"
 
 #. # The error for Gmail accounts where IMAP is not enabled.  This can occur
 #. # for individual users where they have disabled IMAP from the settings UI.
@@ -165,7 +172,7 @@ msgstr ""
 #. # to support IMAP.
 #: setup-error-imap-disabled
 msgid "You must enable IMAP for your Gmail account"
-msgstr ""
+msgstr "Jums ir jāieslēdz IMAP jūsu Gmail kontam"
 
 #. # The error for Gmail accounts where POP3 is not enabled.  This can occur
 #. # for individual users where they have disabled POP3 from the settings UI.
@@ -173,7 +180,7 @@ msgstr ""
 #. # to support POP3.
 #: setup-error-pop3-disabled
 msgid "You must enable POP3 for your Gmail account"
-msgstr ""
+msgstr "Jums ir jāieslēdz POP3 jūsu Gmail kontam"
 
 #. # The error for when we are able to contact a server that should be the mail
 #. # server but we are unable to establish a secure connection.
@@ -182,6 +189,8 @@ msgid ""
 "Unable to establish a secure connection with \"{{server}}\". There may be a "
 "problem with your network or the server."
 msgstr ""
+"Nevar izveidot drošu savienojumu ar \"{{server}}\". Varēt būt problēma ar "
+"jūsu tīklu vai ar jūsu serveri."
 
 #. # The error for when we try to contact a server but see no indication of a
 #. # response before we give up because of a timeout.
@@ -189,7 +198,7 @@ msgstr ""
 msgid ""
 "Unable to establish a connection with \"{{server}}\". There may be a problem "
 "with the network."
-msgstr ""
+msgstr "Nevar savienoties ar \"{{server}}\". Varēt būt problēma ar tīklu."
 
 #. # The error for when we able to establish a (secure) connection with the server,
 #. # but there is some type of failure talking to the server that isn't covered by
@@ -198,7 +207,7 @@ msgstr ""
 #. # server's software.
 #: setup-error-server-problem
 msgid "There is a problem with the server \"{{server}}\". Try again later."
-msgstr ""
+msgstr "Ir problēma ar \"{{server}}\" serveri. Mēģiniet vēlreiz vēlāk."
 
 #. # The error for when we are trying to figure out the right server settings for
 #. # an account based on the e-mail address the user typed in during configuration,
@@ -211,77 +220,81 @@ msgid ""
 "Unable to automatically configure your account. Correct your e-mail address "
 "or try the manual configuration option."
 msgstr ""
+"Nevar automātiski uzstādīt jūsu kontu. Izlabojiet savu epasta adresi vai "
+"mēģiniet pašrocīgas konfigurācijas opciju.s"
 
 #. # The error for when the user is trying to set up an account with a server that
 #. # currently indicates it is offline for maintenance.
 #: setup-error-server-maintenance
 msgid "The server \"{{server}}\" is offline for maintenance. Try again later."
-msgstr ""
+msgstr "\"{{server}}\" serveris ir bezsaistes apkopei. Mēģiniet vēlreiz vēlāk."
 
 #. # The error when the user trying to register a duplicate account
 #: setup-error-account-already-exists
 msgid "This account is already configured."
-msgstr ""
+msgstr "Šis konts jau ir uzstādīts."
 
 #: setup-manual-config2
 msgid "Manual setup"
-msgstr ""
+msgstr "Pašrocīgā uzstādīšana"
 
 #: setup-manual-config-header
 msgid "Manual Setup"
-msgstr ""
+msgstr "Pašrocīgā uzstādīšana"
 
 #: setup-manual-account-type
+#, fuzzy
 msgctxt "setup-manual-account-type"
 msgid "Account type"
-msgstr ""
+msgstr "Konta veids"
 
 #. # LOCALIZATION NOTE(setup-manual-account-type-select): For the manual setup
 #. # screen, the label for account type select box. The following string is spoken
 #. # by screen readers and not shown on the screen.
 #: setup-manual-account-type-select.ariaLabel
+#, fuzzy
 msgctxt "setup-manual-account-type-select.ariaLabel"
 msgid "Account type"
-msgstr ""
+msgstr "Konta veids"
 
 #: setup-manual-imap-header
 msgctxt "setup-manual-imap-header"
 msgid "IMAP settings"
-msgstr ""
+msgstr "IMAP iestatījumi"
 
 #: setup-manual-pop3-header
 msgctxt "setup-manual-pop3-header"
 msgid "POP3 settings"
-msgstr ""
+msgstr "POP3 iestatījumi"
 
 #: setup-manual-smtp-header
 msgctxt "setup-manual-smtp-header"
 msgid "SMTP settings"
-msgstr ""
+msgstr "SMTP iestatījumi"
 
 #: setup-manual-activesync-header
 msgctxt "setup-manual-activesync-header"
 msgid "ActiveSync settings"
-msgstr ""
+msgstr "ActiveSync iestatījumi"
 
 #: setup-manual-next
 msgctxt "setup-manual-next"
 msgid "Next"
-msgstr ""
+msgstr "Nākamais"
 
 #: setup-manual-socket
 msgid "Socket Type"
-msgstr ""
+msgstr "Socket Type"
 
 #. # Technical term, should not be translated
 #: setup-manual-socket-ssl
 msgid "SSL"
-msgstr ""
+msgstr "SSL"
 
 #. # Technical term, should not be translated
 #: setup-manual-socket-starttls
 msgid "STARTTLS"
-msgstr ""
+msgstr "STARTTLS"
 
 #. # LOCALIZATION NOTE(setup-manual-socket-select): For the manual setup screen,
 #. # the label for connection security select box. The following string is spoken
@@ -302,76 +315,76 @@ msgstr ""
 #: setup-manual-hostname.placeholder
 msgctxt "setup-manual-hostname.placeholder"
 msgid "Hostname"
-msgstr ""
+msgstr "Servera nosaukums"
 
 #: setup-manual-port.placeholder
 msgid "Port Number"
-msgstr ""
+msgstr "Pieslēgvietas Numurs"
 
 #: setup-manual-username.placeholder
 msgctxt "setup-manual-username.placeholder"
 msgid "Username"
-msgstr ""
+msgstr "Lietotājvārds"
 
 #. # LOCALIZATION NOTE (setup-manual-activesync-username.placeholder):
 #. # the double \\ will be displayed as a single \ 
 #: setup-manual-activesync-username.placeholder
 msgid "Domain\\Username"
-msgstr ""
+msgstr "Domēns\\Lietotājvārds"
 
 #: setup-bad-password-header
 msgid "Bad password!"
-msgstr ""
+msgstr "Nepareiza parole!"
 
 #: setup-bad-password
 msgid "We could not sign in to the server. Maybe your password is wrong?"
-msgstr ""
+msgstr "Mēs nevaram ieiet serveri. Varbūt jūsu parole ir nepareiza?"
 
 #: setup-new-password.placeholder
 msgid "New password"
-msgstr ""
+msgstr "Jauna parole"
 
 #: setup-fix-password
 msgid "Retry with new password"
-msgstr ""
+msgstr "Mēģiniet vēlreiz ar jauno paroli"
 
 #: setup-gmail-twofactor-header
 msgid "Two-Factor Enabled"
-msgstr ""
+msgstr "Two-Factor Enabled"
 
 #: setup-gmail-twofactor-message
 msgid "You need to enter an application-specific password below."
-msgstr ""
+msgstr "Jums ir apakšā jāievada aplikācijas-specifiska parole."
 
 #: setup-gmail-twofactor-fix
 msgid "Use application password"
-msgstr ""
+msgstr "Izmantot aplikācijas paroli"
 
 #: setup-gmail-imap-header
 msgid "IMAP Disabled"
-msgstr ""
+msgstr "IMAP ir izslēgts"
 
 #: setup-gmail-imap-message
 msgid "You must enable IMAP on your Gmail account"
-msgstr ""
+msgstr "Jums ir jāieslēdz IMAP uz jūsu Gmail kontu"
 
 #: setup-gmail-imap-retry
 msgctxt "setup-gmail-imap-retry"
 msgid "Retry"
-msgstr ""
+msgstr "Mēģināt vēlreiz"
 
 #: setup-gmail-pop3-header
 msgid "POP3 Disabled"
-msgstr ""
+msgstr "POP3 ir izslēgts"
 
 #: setup-gmail-pop3-message
 msgid "You must enable POP3 on your Gmail account"
-msgstr ""
+msgstr "Jums ir jāieslēdz POP3 uz jūsu Gmail kontu"
 
 #: setup-gmail-pop3-retry
 msgctxt "setup-gmail-pop3-retry"
 msgid "Retry"
-msgstr ""
+msgstr "Mēģināt vēlreiz"
 
 #. # LOCALIZATION NOTE (setup-fix-oauth2-header): The card header for the card that
 #. # asks the user to reauthorize the email account to use an OAuth2 token. This
@@ -379,14 +392,14 @@ msgstr ""
 #. # other account types besides GMail that could be OAuth2 authorized.
 #: setup-fix-oauth2-header
 msgid "Reauthorize Email"
-msgstr ""
+msgstr "Atkaļ atļaut Epastu"
 
 #. # LOCALIZATION NOTE (setup-fix-oauth2-description): Describes that the account
 #. # needs to be reauthorized via OAuth2. The account is shown below this
 #. # description.
 #: setup-fix-oauth2-description
 msgid "Email needs to be reauthorized to access the following account:"
-msgstr ""
+msgstr "Epastu ir atkārtoti jāpilnvaro lai piekļūt sekojošām kontam:"
 
 #. # LOCALIZATION NOTE (setup-fix-oauth2-reauthorize): The button triggering the
 #. # reauthorization flow for OAuth2-protected account types. This will result in
@@ -396,11 +409,11 @@ msgstr ""
 #: setup-fix-oauth2-reauthorize
 msgctxt "setup-fix-oauth2-reauthorize"
 msgid "Reauthorize"
-msgstr ""
+msgstr "Atkaļ atļaut"
 
 #: settings-main-header
 msgid "Mail Settings"
-msgstr ""
+msgstr "Epasta Iestatījumi"
 
 #. # For account settings screen, there are sections of settings, and each
 #. #section has a header. One is Account, which shows general information
@@ -408,36 +421,37 @@ msgstr ""
 #: settings-sub-header-account
 msgctxt "settings-sub-header-account"
 msgid "Account"
-msgstr ""
+msgstr "Konts"
 
 #. # For account settings screen, a label for a section related to general account
 #. # settings. The following string is spoken by screen readers and not shown on
 #. # the screen.
 #: settings-account-group.ariaLabel
+#, fuzzy
 msgctxt "settings-account-group.ariaLabel"
 msgid "Account"
-msgstr ""
+msgstr "Konts"
 
 #. # Label in the "Account" sub-section of account settings that shows the
 #. # human name, not the email address, for the account.
 #: settings-account-name
 msgctxt "settings-account-name"
 msgid "Your name"
-msgstr ""
+msgstr "Jūsu vārds"
 
 #. # Label in the "Account" sub-section of account settings for the checkbox
 #. # that enables getting phone notifications when new inbox email is found
 #. # via periodic sync with the mail server.
 #: settings-account-display-notifications
 msgid "Display notifications for new messages"
-msgstr ""
+msgstr "Rādīt notifikācijas jaunam vēstulēm"
 
 #. # LOCALIZATION NOTE(settings-account-play-sound-onsend): Label in the "Account"
 #. # sub-section of account settings for the checkbox that enables playing a sound
 #. # after a message is sent.
 #: settings-account-play-sound-onsend
 msgid "Play sound after message is sent"
-msgstr ""
+msgstr "Atskaņot skaņu pēc vēstules aizsūtīšanu"
 
 #. # LOCALIZATION NOTE(settings-empty-signature-label): Text used for the button
 #. # that takes the user to edit the signature, if there is no existing signature
@@ -445,22 +459,23 @@ msgstr ""
 #. # signature text.
 #: settings-empty-signature-label
 msgid "Tap to Edit"
-msgstr ""
+msgstr "Spiest lai rediģēt"
 
 #. # LOCALIZATION NOTE (settings-account-signature-label): The label for the
 #. # signature field in the account settings card.
 #: settings-account-signature-label
 msgctxt "settings-account-signature-label"
 msgid "Signature"
-msgstr ""
+msgstr "Paraksts"
 
 #. # LOCALIZATION NOTE(settings-account-signature-textbox): A label for a text area
 #. # that is used to enter or modify email message signature. The following string
 #. # is spoken by screen readers and not shown on the screen.
 #: settings-account-signature-textbox.ariaLabel
+#, fuzzy
 msgctxt "settings-account-signature-textbox.ariaLabel"
 msgid "Signature"
-msgstr ""
+msgstr "Paraksts"
 
 #. # LOCALIZATION NOTE (signature-save): This is the text for an option
 #. # in a dialog box that pops up when the user hits back with the
@@ -468,7 +483,7 @@ msgstr ""
 #. # the editor
 #: signature-save
 msgid "Save Signature"
-msgstr ""
+msgstr "Saglabāt parakstu"
 
 #. # LOCALIZATION NOTE (signature-discard-confirm): This is the text of the
 #. # button which discards changes when a user hits back in the signature
@@ -476,7 +491,7 @@ msgstr ""
 #: signature-discard-confirm
 msgctxt "signature-discard-confirm"
 msgid "Discard"
-msgstr ""
+msgstr "Izmest"
 
 #. # For account settings screen, there are sections of settings, and each
 #. # section has a header. One is Data, which deals with sync intervals and
@@ -484,15 +499,16 @@ msgstr ""
 #: settings-sub-header-data
 msgctxt "settings-sub-header-data"
 msgid "Data"
-msgstr ""
+msgstr "Dati"
 
 #. # For account settings screen, a label for a section related to data settings
 #. # such as sync intervals and time windows for the data that is fetched. The
 #. # following string is spoken by screen readers and not shown on the screen.
 #: settings-data-group.ariaLabel
+#, fuzzy
 msgctxt "settings-data-group.ariaLabel"
 msgid "Data"
-msgstr ""
+msgstr "Dati"
 
 #. # Label in the "Data" sub-section of acccount settings for the select box
 #. # that allows choosing how often to check the server for new messages in
@@ -501,16 +517,17 @@ msgstr ""
 #: settings-account-check-mail
 msgctxt "settings-account-check-mail"
 msgid "Check for new messages"
-msgstr ""
+msgstr "Pārbaudiet epastus"
 
 #. # LOCALIZATION NOTE(settings-account-check-mail-select): For the account
 #. # settings, the label for the select box that allows choosing how often to check
 #. # the server for new messages in the inbox. The following string is spoken by
 #. # screen readers and not shown on the screen.
 #: settings-account-check-mail-select.ariaLabel
+#, fuzzy
 msgctxt "settings-account-check-mail-select.ariaLabel"
 msgid "Check for new messages"
-msgstr ""
+msgstr "Pārbaudiet epastus"
 
 #. # For account settings screen, there are sections of settings, and each
 #. # section has a header. One is "Server settings", which deals with the
@@ -518,22 +535,23 @@ msgstr ""
 #: settings-sub-header-server
 msgctxt "settings-sub-header-server"
 msgid "Server settings"
-msgstr ""
+msgstr "Servera iestatījumi"
 
 #. # For account settings screen, a label for a section related to server settings
 #. # such as name/password and server addresses. The following string is spoken by
 #. # screen readers and not shown on the screen.
 #: settings-server-group.ariaLabel
+#, fuzzy
 msgctxt "settings-server-group.ariaLabel"
 msgid "Server settings"
-msgstr ""
+msgstr "Servera iestatījumi"
 
 #. # Label in the "Server settings" sub-section of acccount settings for going
 #. # to a settings card that shows user name and password used to connect to
 #. # the mail server.
 #: settings-account-userpass
 msgid "Username and password"
-msgstr ""
+msgstr "Lietotājvārds un parole"
 
 #. # LOCALIZATION NOTE (ssettings-account-useroauth2): Label in the
 #. # "Server settings" sub-section of acccount settings for going to a settings
@@ -542,54 +560,59 @@ msgstr ""
 #: settings-account-useroauth2
 msgctxt "settings-account-useroauth2"
 msgid "Username"
-msgstr ""
+msgstr "Lietotājvārds"
 
 #. # LOCALIZATION NOTE (settings-default-signature-2): The default signature
 #. # that the frontend adds in for new accounts
 #: settings-default-signature-2
 msgid "Sent Using Firefox OS"
-msgstr ""
+msgstr "Sūtīts izmantojot Firefox OS"
 
 #: settings-done
 msgid "Done"
-msgstr ""
+msgstr "Paveikts"
 
 #: settings-account-section
+#, fuzzy
 msgctxt "settings-account-section"
 msgid "Accounts"
-msgstr ""
+msgstr "Konti"
 
 #. # LOCALIZATION NOTE(settings-account-listbox): For the main mail settings, the
 #. # label for the list of added Email accounts. The following string is spoken by
 #. # screen readers and not shown on the screen.
 #: settings-account-listbox.ariaLabel
+#, fuzzy
 msgctxt "settings-account-listbox.ariaLabel"
 msgid "Accounts"
-msgstr ""
+msgstr "Konti"
 
 #: settings-account-add
 msgid "Add Account"
-msgstr ""
+msgstr "Pievienot kontu"
 
 #: settings-account-delete
 msgid "Delete account"
-msgstr ""
+msgstr "Dzēst kontu"
 
 #: settings-account-delete-prompt
 msgid ""
 "Are you sure you want to delete your {{account}} mail account? You will have "
 "to re-download your mail if you re-create the account."
 msgstr ""
+"Vai esat droši ka vēlaties dzēst jūsu {{account}} epasta kontu? Jums būs "
+"atkārtoti jālejupielādē savas vēstules ja jūs to atkārtoti izveidojiet."
 
 #: settings-account-delete-cancel
 msgctxt "settings-account-delete-cancel"
 msgid "Cancel"
-msgstr ""
+msgstr "Atcelt"
 
 #: settings-account-delete-confirm
+#, fuzzy
 msgctxt "settings-account-delete-confirm"
 msgid "Delete"
-msgstr ""
+msgstr "Dzēst"
 
 #. # When dealing with an account that involves multiple types of
 #. # connections, such as IMAP and POP3 which both use SMTP for sending,
@@ -609,54 +632,54 @@ msgstr ""
 #. # or ellipses.
 #: settings-account-clarify-imap
 msgid "{{account-name}} (IMAP)"
-msgstr ""
+msgstr "{{account-name}} (IMAP)"
 
 #: settings-account-clarify-pop3
 msgid "{{account-name}} (POP3)"
-msgstr ""
+msgstr "{{account-name}} (POP3)"
 
 #: settings-account-clarify-smtp
 msgid "{{account-name}} (SMTP)"
-msgstr ""
+msgstr "{{account-name}} (SMTP)"
 
 #: settings-general-section
 msgid "General settings"
-msgstr ""
+msgstr "Vispārējie iestatījumi"
 
 #: settings-show-images
 msgid "Always show images"
-msgstr ""
+msgstr "Vienmēr rādīt attēlus"
 
 #: settings-download-attachments
 msgid "Download attachments"
-msgstr ""
+msgstr "Lejupielādēt pielikumus"
 
 #. # How often to check the mail server for new mail messages for the inbox.
 #. # "Manually" means, do not automatically connect on a periodic sync interval.
 #. # User will manually click the refresh button to check for new messages.
 #: settings-check-every-5min
 msgid "Every 5 minutes"
-msgstr ""
+msgstr "Ik pa 5 minūtēm"
 
 #: settings-check-every-10min
 msgid "Every 10 minutes"
-msgstr ""
+msgstr "Ik pa 10 minūtēm"
 
 #: settings-check-every-15min
 msgid "Every 15 minutes"
-msgstr ""
+msgstr "Ik pa 15 minūtēm"
 
 #: settings-check-every-30min
 msgid "Every 30 minutes"
-msgstr ""
+msgstr "Ik pa 30 minūtēm"
 
 #: settings-check-every-60min
 msgid "Every hour"
-msgstr ""
+msgstr "Ik stundu"
 
 #: settings-check-every-manual
 msgid "Manually"
-msgstr ""
+msgstr "Pašrocīgi"
 
 #. # LOCALIZATION NOTE(settings-check-dynamic):
 #. # DEBUG ONLY Dynamically added sync interval checks. These are only added via
@@ -667,95 +690,95 @@ msgstr ""
 #: settings-check-dynamic
 msgctxt "settings-check-dynamic"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: settings-check-dynamic[zero]
 msgid "disabled"
-msgstr ""
+msgstr "sekundes"
 
 #: settings-check-dynamic[one]
 msgid "{{ n }} second"
-msgstr ""
+msgstr "{{ n }} sekundes"
 
 #: settings-check-dynamic[two]
 msgctxt "settings-check-dynamic[two]"
 msgid "{{ n }} seconds"
-msgstr ""
+msgstr "{{ n }} sekundes"
 
 #: settings-check-dynamic[few]
 msgctxt "settings-check-dynamic[few]"
 msgid "{{ n }} seconds"
-msgstr ""
+msgstr "{{ n }} sekundes"
 
 #: settings-check-dynamic[many]
 msgctxt "settings-check-dynamic[many]"
 msgid "{{ n }} seconds"
-msgstr ""
+msgstr "{{ n }} sekundes"
 
 #: settings-check-dynamic[other]
 msgctxt "settings-check-dynamic[other]"
 msgid "{{ n }} seconds"
-msgstr ""
+msgstr "{{ n }} sekundes"
 
 #: settings-default-account
 msgid "Set as default email"
-msgstr ""
+msgstr "Iestatīt kā noklusējuma epastu"
 
 #: settings-account-type
 msgctxt "settings-account-type"
 msgid "Account type"
-msgstr ""
+msgstr "Konta veids"
 
 #: settings-account-credentials
 msgid "Credentials"
-msgstr ""
+msgstr "Akreditācijas dati"
 
 #: settings-activesync-label
 msgctxt "settings-activesync-label"
 msgid "ActiveSync settings"
-msgstr ""
+msgstr "ActiveSync iestatījumi"
 
 #: settings-imap-label
 msgctxt "settings-imap-label"
 msgid "IMAP settings"
-msgstr ""
+msgstr "IMAP iestatījumi"
 
 #: settings-pop3-label
 msgctxt "settings-pop3-label"
 msgid "POP3 settings"
-msgstr ""
+msgstr "POP3 iestatījumi"
 
 #: settings-smtp-label
 msgctxt "settings-smtp-label"
 msgid "SMTP settings"
-msgstr ""
+msgstr "SMTP iestatījumi"
 
 #: settings-hostname
 msgctxt "settings-hostname"
 msgid "Hostname"
-msgstr ""
+msgstr "Servera"
 
 #: settings-port
 msgid "Port"
-msgstr ""
+msgstr "Port"
 
 #: settings-username
 msgctxt "settings-username"
 msgid "Username"
-msgstr ""
+msgstr "Lietotājvārds"
 
 #: settings-password
 msgctxt "settings-password"
 msgid "Password"
-msgstr ""
+msgstr "Parole"
 
 #: settings-save
 msgid "Save"
-msgstr ""
+msgstr "Saglabāt"
 
 #: settings-password-empty
 msgid "Password field should not be empty"
-msgstr ""
+msgstr "Paroles laukam nebūt jābūt tukšam"
 
 #. # LOCALIZATION NOTE (settings-reauth): On the account credentials settings card,
 #. # if the account is an oauth2 account, this is the button label that allows the
@@ -763,7 +786,7 @@ msgstr ""
 #: settings-reauth
 msgctxt "settings-reauth"
 msgid "Reauthorize"
-msgstr ""
+msgstr "Atkārtoti atļaut"
 
 #. # How much email to sync, in smallest unit of days, from the server. Only
 #. # valid for ActiveSync mail servers, not shown for other mail server types
@@ -771,63 +794,66 @@ msgstr ""
 #: settings-account-synchronize-window
 msgctxt "settings-account-synchronize-window"
 msgid "Days to sync"
-msgstr ""
+msgstr "Dienas kurās jāsinhronizē"
 
 #. # Label for a drop down used to select, how much email to sync, in smallest unit
 #. # of days, from the server. Only valid for ActiveSync mail servers, not shown
 #. # for other mail server types like IMAP. The following string is spoken by
 #. # screen readers and not shown on the screen.
 #: settings-account-synchronize-window-select.ariaLabel
+#, fuzzy
 msgctxt "settings-account-synchronize-window-select.ariaLabel"
 msgid "Days to sync"
-msgstr ""
+msgstr "Dienas kurās jāsinhronizē"
 
 #: settings-synchronize-auto
 msgid "Automatic"
-msgstr ""
+msgstr "Automātiski"
 
 #: settings-synchronize-one-day
 msgid "1 day"
-msgstr ""
+msgstr "1 diena"
 
 #: settings-synchronize-three-days
 msgid "3 days"
-msgstr ""
+msgstr "3 dienas"
 
 #: settings-synchronize-one-week
 msgid "1 week"
-msgstr ""
+msgstr "1 nedēļa"
 
 #: settings-synchronize-two-weeks
 msgid "2 weeks"
-msgstr ""
+msgstr "2 nedēļas"
 
 #: settings-synchronize-one-month
 msgid "1 month"
-msgstr ""
+msgstr "1 mēnesis"
 
 #: settings-synchronize-all
 msgid "All messages"
-msgstr ""
+msgstr "Visas vēstules"
 
 #: envelope-from
+#, fuzzy
 msgctxt "envelope-from"
 msgid "From"
-msgstr ""
+msgstr "No"
 
 #: envelope-to
+#, fuzzy
 msgctxt "envelope-to"
 msgid "To"
-msgstr ""
+msgstr "Uz"
 
 #: envelope-cc
 msgctxt "envelope-cc"
 msgid "Cc"
-msgstr ""
+msgstr "Cc"
 
 #: envelope-bcc
 msgid "Bcc"
-msgstr ""
+msgstr "Bcc"
 
 #. # LOCALIZATION NOTE(message-header-state-sending): For message list card, used
 #. # to describe a sending state of the message item. The following string is
@@ -882,17 +908,19 @@ msgstr ""
 #. # text input or header. The following string is spoken by screen readers and not
 #. # shown on the screen.
 #: subject.ariaLabel
+#, fuzzy
 msgctxt "subject.ariaLabel"
 msgid "Subject"
-msgstr ""
+msgstr "Temats"
 
 #. # LOCALIZATION NOTE(message-delete-button): For reader card, a label for a
 #. # button used to delete a message. The following string is spoken by screen
 #. # readers and not shown on the screen.
 #: message-delete-button.ariaLabel
+#, fuzzy
 msgctxt "message-delete-button.ariaLabel"
 msgid "Delete"
-msgstr ""
+msgstr "Dzēst"
 
 #. # LOCALIZATION NOTE(message-star-button): For reader card, a label for a button
 #. # used to star a message. The following string is spoken by screen readers and
@@ -954,86 +982,93 @@ msgstr ""
 #. # used to view message attachments. The following string is spoken by screen
 #. # readers and not shown on the screen.
 #: view-button.ariaLabel
+#, fuzzy
 msgctxt "view-button.ariaLabel"
 msgid "View"
-msgstr ""
+msgstr "Skatīt"
 
 #. # LOCALIZATION NOTE(attachments-container): For reader card, a label for a list
 #. # of attachments included in the messsage. The following string is spoken by
 #. # screen readers and not shown on the screen.
 #: attachments-container.ariaLabel
+#, fuzzy
 msgctxt "attachments-container.ariaLabel"
 msgid "Attachments"
-msgstr ""
+msgstr "nav pielikumu"
 
 #. # LOCALIZATION NOTE(from-group): For email compose/read cards, a label for a
 #. # section that has controls related to selecting email authors. The following
 #. # string is spoken by screen readers and not shown on the screen.
 #: from-group.ariaLabel
+#, fuzzy
 msgctxt "from-group.ariaLabel"
 msgid "From"
-msgstr ""
+msgstr "No"
 
 #. # LOCALIZATION NOTE(to-group): For email compose/read cards, a label for a
 #. # section that has controls related to selecting 'to' recipients. The following
 #. # string is spoken by screen readers and not shown on the screen.
 #: to-group.ariaLabel
+#, fuzzy
 msgctxt "to-group.ariaLabel"
 msgid "To"
-msgstr ""
+msgstr "Uz"
 
 #. # LOCALIZATION NOTE(cc-group): For email compose/read cards, a label for a
 #. # section that has controls related to selecting 'cc' recipients. The following
 #. # string is spoken by screen readers and not shown on the screen.
 #: cc-group.ariaLabel
+#, fuzzy
 msgctxt "cc-group.ariaLabel"
 msgid "cc"
-msgstr ""
+msgstr "cc"
 
 #. # LOCALIZATION NOTE(bcc-group): For email compose/read cards, a label for a
 #. # section that has controls related to selecting 'bcc' recipients. The following
 #. # string is spoken by screen readers and not shown on the screen.
 #: bcc-group.ariaLabel
+#, fuzzy
 msgctxt "bcc-group.ariaLabel"
 msgid "bcc"
-msgstr ""
+msgstr "bcc"
 
 #: compose-header
 msgid "Compose message"
-msgstr ""
+msgstr "Sastādīt vēstuli"
 
 #: compose-header-short
 msgctxt "compose-header-short"
 msgid "Compose"
-msgstr ""
+msgstr "Sastādīt"
 
 #: compose-send
 msgctxt "compose-send"
 msgid "Send"
-msgstr ""
+msgstr "Sūtīt"
 
 #. # LOCALIZATION NOTE(compose-send-button): For compose card, a label for a send
 #. # button rendered as an arrow. The following string is spoken by screen readers
 #. # and not shown on the screen.
 #: compose-send-button.ariaLabel
+#, fuzzy
 msgctxt "compose-send-button.ariaLabel"
 msgid "Send"
-msgstr ""
+msgstr "Sūtīt"
 
 #: compose-to
 msgctxt "compose-to"
 msgid "To"
-msgstr ""
+msgstr "Uz"
 
 #: compose-cc
 msgctxt "compose-cc"
 msgid "cc"
-msgstr ""
+msgstr "cc"
 
 #: compose-bcc
 msgctxt "compose-bcc"
 msgid "bcc"
-msgstr ""
+msgstr "bcc"
 
 #. # LOCALIZATION NOTE(compose-contact-add): For compose card, a label for an add
 #. # contact buttons rendered as a circled plus sign and used to add to, cc and bcc
@@ -1053,9 +1088,10 @@ msgid "{[ plural(kilobytes) ]}"
 msgstr ""
 
 #: compose-attachments-container.ariaLabel[zero]
+#, fuzzy
 msgctxt "compose-attachments-container.ariaLabel[zero]"
 msgid "Attachments"
-msgstr ""
+msgstr "nav pielikumu"
 
 #: compose-attachments-container.ariaLabel[one]
 msgctxt "compose-attachments-container.ariaLabel[one]"
@@ -1099,90 +1135,93 @@ msgstr ""
 #: compose-attachments
 msgctxt "compose-attachments"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: compose-attachments[zero]
 msgctxt "compose-attachments[zero]"
 msgid "Attachments"
-msgstr ""
+msgstr "nav pielikumu"
 
 #: compose-attachments[one]
 msgid "{{ n }} attachment"
-msgstr ""
+msgstr "{{ n }} pielikums"
 
 #: compose-attachments[two]
 msgctxt "compose-attachments[two]"
 msgid "{{ n }} attachments"
-msgstr ""
+msgstr "{{ n }} pielikumi"
 
 #: compose-attachments[few]
 msgctxt "compose-attachments[few]"
 msgid "{{ n }} attachments"
-msgstr ""
+msgstr "{{ n }} pielikumi"
 
 #: compose-attachments[many]
 msgctxt "compose-attachments[many]"
 msgid "{{ n }} attachments"
-msgstr ""
+msgstr "{{ n }} pielikumi"
 
 #: compose-attachments[other]
 msgctxt "compose-attachments[other]"
 msgid "{{ n }} attachments"
-msgstr ""
+msgstr "{{ n }} pielikumi"
 
 #. # LOCALIZATION NOTE(compose-text): For compose card, a label for a section with
 #. # a message text. The following string is spoken by screen readers and not shown
 #. # on the screen.
 #: compose-text.ariaLabel
+#, fuzzy
 msgctxt "compose-text.ariaLabel"
 msgid "Edit"
-msgstr ""
+msgstr "Rediģēt"
 
 #. # Shown when user taps on attachment icon in compose, but the app still
 #. # needs a bit more time to finishing the add of the previous attachment.
 #: compose-attachment-still-working
 msgid "One moment, still working on the previous attachment..."
-msgstr ""
+msgstr "Vienu brīdi, mēs joprojām strādājam uz iepriekšējo pielikumu..."
 
 #: compose-subject
 msgctxt "compose-subject"
 msgid "Subject"
-msgstr ""
+msgstr "Temats"
 
 #: compose-draft-save
 msgid "Save to Local Drafts"
-msgstr ""
+msgstr "Saglabāt vietējas melnrakstos"
 
 #: compose-discard-confirm
 msgctxt "compose-discard-confirm"
 msgid "Discard"
-msgstr ""
+msgstr "Izmest"
 
 #: compose-send-message-failed
 msgid "Sending email failed"
-msgstr ""
+msgstr "Epasta sūtīšana neizdevās"
 
 #: composer-attachment-large
 msgid "Attachment too large"
-msgstr ""
+msgstr "Pielikums pārāk liels"
 
 #: composer-attachments-large
 msgid "Attachments too large"
-msgstr ""
+msgstr "Pielikumi ir pārāk lieli"
 
 #: compose-attchment-size-exceeded
 msgid "The selected attachment is too large to send with this message."
-msgstr ""
+msgstr "Izvēlētais pielikums ir pārāk liels lai to sūtīt ar šo vēstuli."
 
 #: compose-attchments-size-exceeded
 msgid ""
 "The selected attachments are too large to send with this message. Try "
 "selecting fewer files."
 msgstr ""
+"Izvēlētie pielikumi ir pārāk lieli lai tos sūtīt ar šo vēstuli. Izvēlieties "
+"mazāk datņu."
 
 #: dialog-button-ok
 msgid "OK"
-msgstr ""
+msgstr "Labi"
 
 #. # If a file is attached to an email but it does not have a name, this
 #. # name is used. There could be multiple ones attached, so a number is
@@ -1190,16 +1229,16 @@ msgstr ""
 #. # each other.
 #: default-attachment-filename
 msgid "attachment{{ n }}"
-msgstr ""
+msgstr "pielikums {{ n }}"
 
 #: attachment-size-kib
 msgid "{{kilobytes}}K"
-msgstr ""
+msgstr "{{kilobytes}}K"
 
 #: message-attachment-view
 msgctxt "message-attachment-view"
 msgid "View"
-msgstr ""
+msgstr "Skatīt"
 
 #. # LOCALIZATION NOTE(message-attachment-did-not-open-label):
 #. # When a downloaded attachment cannot be opened because there is no app on the
@@ -1219,205 +1258,206 @@ msgstr ""
 
 #: message-attachment-too-large
 msgid "This file is too large to download."
-msgstr ""
+msgstr "Šī datne ir pārāk liela lai to lejupielādēt."
 
 #: message-no-subject
 msgid "(no subject)"
-msgstr ""
+msgstr "(nav temata)"
 
 #. # LOCALIZATION NOTE(message-edit-menu-edit):
 #. # Displayed in a menu; tapping this item will cause the user to edit the given item.
 #: message-edit-menu-edit
 msgctxt "message-edit-menu-edit"
 msgid "Edit"
-msgstr ""
+msgstr "Rediģēt"
 
 #: message-edit-menu-delete
 msgctxt "message-edit-menu-delete"
 msgid "Delete"
-msgstr ""
+msgstr "Dzēst"
 
 #: message-edit-delete-confirm
 msgid "Delete email message?"
-msgstr ""
+msgstr "Vai dzēst vēstuli?"
 
 #: message-send-attachment-disabled-confirm
 msgid "Attachments can not be forwarded."
-msgstr ""
+msgstr "Pielikumus nevar pārsūtīt."
 
 #: message-multiedit-header
 msgctxt "message-multiedit-header"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: message-multiedit-header[zero]
 msgctxt "message-multiedit-header[zero]"
 msgid "Edit"
-msgstr ""
+msgstr "Rediģēt"
 
 #: message-multiedit-header[one]
+#, fuzzy
 msgctxt "message-multiedit-header[one]"
 msgid "{{ n }} selected"
-msgstr ""
+msgstr "{{ n }} izvēlēts"
 
 #: message-multiedit-header[two]
 msgctxt "message-multiedit-header[two]"
 msgid "{{ n }} selected"
-msgstr ""
+msgstr "{{ n }} izvēlēti"
 
 #: message-multiedit-header[few]
 msgctxt "message-multiedit-header[few]"
 msgid "{{ n }} selected"
-msgstr ""
+msgstr "{{ n }} izvēlēti"
 
 #: message-multiedit-header[many]
 msgctxt "message-multiedit-header[many]"
 msgid "{{ n }} selected"
-msgstr ""
+msgstr "{{ n }} izvēlēti"
 
 #: message-multiedit-header[other]
 msgctxt "message-multiedit-header[other]"
 msgid "{{ n }} selected"
-msgstr ""
+msgstr "{{ n }} izvēlēti"
 
 #: browse-to-url-prompt
 msgid "Browse to URL?: {{ url }}"
-msgstr ""
+msgstr "Vai pārlūkot šo URL?: {{ url }}"
 
 #: message-download-images-tap
 msgctxt "message-download-images-tap"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: message-download-images-tap[one]
 msgid "This email contains one image. Tap to download."
-msgstr ""
+msgstr "Šis epasts satur vienu attēlu. Spiediet lai to lejupielādēt."
 
 #: message-download-images-tap[two]
 msgctxt "message-download-images-tap[two]"
 msgid "This email contains {{ n }} images. Tap to download."
-msgstr ""
+msgstr "Šis epasts satur {{ n }} attēlus. Spiediet lai tos lejupielādēt."
 
 #: message-download-images-tap[few]
 msgctxt "message-download-images-tap[few]"
 msgid "This email contains {{ n }} images. Tap to download."
-msgstr ""
+msgstr "Šis epasts satur {{ n }} attēlus. Spiediet lai tos lejupielādēt."
 
 #: message-download-images-tap[many]
 msgctxt "message-download-images-tap[many]"
 msgid "This email contains {{ n }} images. Tap to download."
-msgstr ""
+msgstr "Šis epasts satur {{ n }} attēlus. Spiediet lai tos lejupielādēt."
 
 #: message-download-images-tap[other]
 msgctxt "message-download-images-tap[other]"
 msgid "This email contains {{ n }} images. Tap to download."
-msgstr ""
+msgstr "Šis epasts satur {{ n }} attēlus. Spiediet lai tos lejupielādēt."
 
 #: message-show-external-images
 msgid "Show external images"
-msgstr ""
+msgstr "Rādīt ārējos attēlus"
 
 #: message-multiedit-cancel
 msgctxt "message-multiedit-cancel"
 msgid "Cancel"
-msgstr ""
+msgstr "Atcelt"
 
 #: message-multiedit-delete-confirm
 msgctxt "message-multiedit-delete-confirm"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: message-multiedit-delete-confirm[one]
 msgid "Delete this email message?"
-msgstr ""
+msgstr "Vai dzēst šo vēstuli?"
 
 #: message-multiedit-delete-confirm[two]
 msgctxt "message-multiedit-delete-confirm[two]"
 msgid "Delete {{ n }} email messages?"
-msgstr ""
+msgstr "Vai dzēst {{ n }} vēstules?"
 
 #: message-multiedit-delete-confirm[few]
 msgctxt "message-multiedit-delete-confirm[few]"
 msgid "Delete {{ n }} email messages?"
-msgstr ""
+msgstr "Vai dzēst {{ n }} vēstules?"
 
 #: message-multiedit-delete-confirm[many]
 msgctxt "message-multiedit-delete-confirm[many]"
 msgid "Delete {{ n }} email messages?"
-msgstr ""
+msgstr "Vai dzēst {{ n }} vēstules?"
 
 #: message-multiedit-delete-confirm[other]
 msgctxt "message-multiedit-delete-confirm[other]"
 msgid "Delete {{ n }} email messages?"
-msgstr ""
+msgstr "Vai dzēst {{ n }} vēstules?"
 
 #: message-large-message-cancel
 msgctxt "message-large-message-cancel"
 msgid "Cancel"
-msgstr ""
+msgstr "Atcelt"
 
 #: message-large-message-ok
 msgid "Continue"
-msgstr ""
+msgstr "Turpināt"
 
 #: message-large-message-confirm
 msgid "This message is large and may take some time to download."
-msgstr ""
+msgstr "Šī vēstule ir liela un varēt aizņemt laiciņu lejupielādei."
 
 #: message-search-from
 msgctxt "message-search-from"
 msgid "From"
-msgstr ""
+msgstr "No"
 
 #: message-search-to
 msgctxt "message-search-to"
 msgid "To"
-msgstr ""
+msgstr "Uz"
 
 #: message-search-subject
 msgctxt "message-search-subject"
 msgid "Subject"
-msgstr ""
+msgstr "Temats"
 
 #: message-search-body
 msgid "Body"
-msgstr ""
+msgstr "Saturs"
 
 #: message-search-all
 msgid "All"
-msgstr ""
+msgstr "Visu"
 
 #: message-search-input.placeholder
 msgid "Search Mail"
-msgstr ""
+msgstr "Meklēt vēstulēs"
 
 #: message-search-cancel
 msgctxt "message-search-cancel"
 msgid "Cancel"
-msgstr ""
+msgstr "Atcelt"
 
 #: messages-syncing
 msgid "Loading Messages"
-msgstr ""
+msgstr "Ielādē vēstules"
 
 #. # LOCALIZATION NOTE (messages-load-more): This text shows at the bottom of the
 #. # list of messages in the message list, and pressing it will load more messages
 #. # likely from the server. The space is constrained and has an icon next to it.
 #: messages-load-more
 msgid "Load More Messages"
-msgstr ""
+msgstr "Ielādēt vairāk vēstules"
 
 #: messages-folder-empty
 msgid "No mail in this Folder"
-msgstr ""
+msgstr "Nav epastu šajā mapē"
 
 #: messages-search-empty
 msgid "No matches in locally cached messages"
-msgstr ""
+msgstr "Nav sakritību lokālā kāša vēstulēs"
 
 #: messages-folder-select
 msgid "Select folder"
-msgstr ""
+msgstr "Izvēlēties mapi"
 
 #. # LOCALIZATION NOTE(messages-folder-unread-max): This string is inserted
 #. # in place of the unread message count in the folder list whenever
@@ -1425,55 +1465,55 @@ msgstr ""
 #. # localizations optimally should only be 4-5 characters.
 #: messages-folder-unread-max
 msgid "999+"
-msgstr ""
+msgstr "999+"
 
 #: message-contact-menu-create
 msgid "Save new contact"
-msgstr ""
+msgstr "Saglabāt jaunu kontaktu"
 
 #: message-contact-menu-add-existing
 msgid "Add to existing contact"
-msgstr ""
+msgstr "Pievienot jau pastāvošam kontaktam"
 
 #: message-contact-menu-view
 msgid "View contact"
-msgstr ""
+msgstr "Skatīt kontaktu"
 
 #: message-contact-menu-reply
 msgctxt "message-contact-menu-reply"
 msgid "Reply"
-msgstr ""
+msgstr "Atbildēt"
 
 #: message-contact-menu-new
 msgid "Send new mail"
-msgstr ""
+msgstr "Sūtīt jaunu epastu"
 
 #: message-reply-menu-reply
 msgctxt "message-reply-menu-reply"
 msgid "Reply"
-msgstr ""
+msgstr "Atbildēt"
 
 #: message-reply-menu-reply-all
 msgid "Reply All"
-msgstr ""
+msgstr "Atbildēt Visiem"
 
 #: message-reply-menu-forward
 msgid "Forward"
-msgstr ""
+msgstr "Pārsūtīt"
 
 #: message-reply-menu-cancel
 msgctxt "message-reply-menu-cancel"
 msgid "Cancel"
-msgstr ""
+msgstr "Atcelt"
 
 #. # LOCALIZATION NOTE: do not translate {name}
 #: reply-quoting-wrote
 msgid "{name} wrote"
-msgstr ""
+msgstr "{name} rakstīja"
 
 #: forward-original-message
 msgid "Original message"
-msgstr ""
+msgstr "Oriģināla vēstule"
 
 #. # L10n note: These are the labels we use when displaying the envelope info for a
 #. # message that is forwarded inline.  While automatic recovery of this
@@ -1483,31 +1523,31 @@ msgstr ""
 #: forward-header-subject
 msgctxt "forward-header-subject"
 msgid "Subject"
-msgstr ""
+msgstr "Temats"
 
 #: forward-header-date
 msgid "Date"
-msgstr ""
+msgstr "Datums"
 
 #: forward-header-from
 msgctxt "forward-header-from"
 msgid "From"
-msgstr ""
+msgstr "No"
 
 #. # This really wants to have the dash in it for consistency with Thunderbird
 #: forward-header-reply-to
 msgid "Reply-To"
-msgstr ""
+msgstr "Atbildēt-Uz"
 
 #: forward-header-to
 msgctxt "forward-header-to"
 msgid "To"
-msgstr ""
+msgstr "Uz"
 
 #: forward-header-cc
 msgctxt "forward-header-cc"
 msgid "Cc"
-msgstr ""
+msgstr "Cc"
 
 #. # Localized folder names for IMAP servers.  Because the IMAP standard did not
 #. # originally specify a way to express meta-data about folders, folders may be
@@ -1516,39 +1556,39 @@ msgstr ""
 #. # footsteps of Thunderbird.
 #: folder-inbox
 msgid "Inbox"
-msgstr ""
+msgstr "Iesūtne"
 
 #: folder-sent
 msgid "Sent"
-msgstr ""
+msgstr "Aizsūtīts"
 
 #: folder-drafts
 msgid "Drafts"
-msgstr ""
+msgstr "Melnraksti"
 
 #: folder-trash
 msgid "Trash"
-msgstr ""
+msgstr "Miskaste"
 
 #: folder-queue
 msgid "Unsent"
-msgstr ""
+msgstr "Nesūtīti"
 
 #: folder-junk
 msgid "Junk"
-msgstr ""
+msgstr "Lieki"
 
 #: folder-archives
 msgid "Archives"
-msgstr ""
+msgstr "Arhīvi"
 
 #: folder-localdrafts
 msgid "Local Drafts"
-msgstr ""
+msgstr "Lokālie Melnraksti"
 
 #: folder-outbox
 msgid "Outbox"
-msgstr ""
+msgstr "Izsūtne"
 
 #. # In the folder picker drawer, there is a transparent area for the header,
 #. # and a tap region to take the user back to the message list. So this text is
@@ -1556,21 +1596,21 @@ msgstr ""
 #: drawer-back
 msgctxt "drawer-back"
 msgid "Back"
-msgstr ""
+msgstr "Atpakaļ"
 
 #. # In the folder picker drawer, the list of email accounts are shown. This is
 #. # the header for that section.
 #: drawer-accounts-header
 msgctxt "drawer-accounts-header"
 msgid "Accounts"
-msgstr ""
+msgstr "Konti"
 
 #. # At the bottom of the folder picker drawer, there is an icon link that
 #. # goes to the account settings. This string is only used for accessibility
 #. # concerns, and is not visible visually.
 #: drawer-settings-link
 msgid "Settings"
-msgstr ""
+msgstr "Iestatījumi"
 
 #. # folder-last-synced-label is shown in the message-list, in the
 #. # middle of its bottom toolbar, and shows the last sync time for the currently
@@ -1579,7 +1619,7 @@ msgstr ""
 #. # font size to fit longer text.
 #: folder-last-synced-label
 msgid "Last sync:"
-msgstr ""
+msgstr "Pēdēja sinhronizācija:"
 
 #. # LOCALIZATION NOTE(messages-refresh-button): For the message-list, a label for
 #. # a button that refreshes the list of messages in the folder. The following
@@ -1600,9 +1640,10 @@ msgstr ""
 #. # that activates edit mode for the message list. The following string is spoken
 #. # by screen readers and not shown on the screen.
 #: edit-button.ariaLabel
+#, fuzzy
 msgctxt "edit-button.ariaLabel"
 msgid "Edit"
-msgstr ""
+msgstr "Rediģēt"
 
 #. # LOCALIZATION NOTE(message-list-top-action):
 #. # In the message-list, as the user scrolls down, an action bar will scroll into
@@ -1611,7 +1652,7 @@ msgstr ""
 #. # to the user, it is provided for accessibility.
 #: message-list-top-action
 msgid "Top"
-msgstr ""
+msgstr "Uz sākumu"
 
 #. # LOCALIZATION NOTE(message-list-menu): For the message-list and folder picker,
 #. # a label for a header icon button that brings up or hides the folder picker and
@@ -1625,198 +1666,199 @@ msgstr ""
 #. # message list for going to the compose card. The following string is spoken by
 #. # screen readers and not shown on the screen.
 #: message-list-compose.ariaLabel
+#, fuzzy
 msgctxt "message-list-compose.ariaLabel"
 msgid "Compose"
-msgstr ""
+msgstr "Sastādīt"
 
 #: toaster-undo
 msgid "Undo"
-msgstr ""
+msgstr "Undo"
 
 #: toaster-message-star
 msgctxt "toaster-message-star"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: toaster-message-star[one]
 msgid "1 message flag set"
-msgstr ""
+msgstr "1 vēstulei karogi tika uzstādīti"
 
 #: toaster-message-star[two]
 msgctxt "toaster-message-star[two]"
 msgid "{{ n }} message flags set"
-msgstr ""
+msgstr "{{ n }} vēstulēm karogi tika uzstādīti"
 
 #: toaster-message-star[few]
 msgctxt "toaster-message-star[few]"
 msgid "{{ n }} message flags set"
-msgstr ""
+msgstr "{{ n }} vēstulēm karogi tika uzstādīti"
 
 #: toaster-message-star[many]
 msgctxt "toaster-message-star[many]"
 msgid "{{ n }} message flags set"
-msgstr ""
+msgstr "{{ n }} vēstulēm karogi tika uzstādīti"
 
 #: toaster-message-star[other]
 msgctxt "toaster-message-star[other]"
 msgid "{{ n }} message flags set"
-msgstr ""
+msgstr "{{ n }} vēstulēm karogi tika uzstādīti"
 
 #: toaster-message-unstar
 msgctxt "toaster-message-unstar"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: toaster-message-unstar[one]
 msgid "1 message flag removed"
-msgstr ""
+msgstr "1 vēstulei karogi tika noņemti"
 
 #: toaster-message-unstar[two]
 msgctxt "toaster-message-unstar[two]"
 msgid "{{ n }} message flags removed"
-msgstr ""
+msgstr "{{ n }} vēstulēm karogi tika noņemti"
 
 #: toaster-message-unstar[few]
 msgctxt "toaster-message-unstar[few]"
 msgid "{{ n }} message flags removed"
-msgstr ""
+msgstr "{{ n }} vēstulēm karogi tika noņemti"
 
 #: toaster-message-unstar[many]
 msgctxt "toaster-message-unstar[many]"
 msgid "{{ n }} message flags removed"
-msgstr ""
+msgstr "{{ n }} vēstulēm karogi tika noņemti"
 
 #: toaster-message-unstar[other]
 msgctxt "toaster-message-unstar[other]"
 msgid "{{ n }} message flags removed"
-msgstr ""
+msgstr "{{ n }} vēstulēm karogi tika noņemti"
 
 #: toaster-message-read
 msgctxt "toaster-message-read"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: toaster-message-read[one]
 msgid "1 message marked as read"
-msgstr ""
+msgstr "1 vēstule atzīmēta kā izlasīta"
 
 #: toaster-message-read[two]
 msgctxt "toaster-message-read[two]"
 msgid "{{ n }} messages marked as read"
-msgstr ""
+msgstr "{{ n }} vēstules atzīmētas kā izlasīti"
 
 #: toaster-message-read[few]
 msgctxt "toaster-message-read[few]"
 msgid "{{ n }} messages marked as read"
-msgstr ""
+msgstr "{{ n }} vēstules atzīmētas kā izlasīti"
 
 #: toaster-message-read[many]
 msgctxt "toaster-message-read[many]"
 msgid "{{ n }} messages marked as read"
-msgstr ""
+msgstr "{{ n }} vēstules atzīmētas kā izlasīti"
 
 #: toaster-message-read[other]
 msgctxt "toaster-message-read[other]"
 msgid "{{ n }} messages marked as read"
-msgstr ""
+msgstr "{{ n }} vēstules atzīmēti kā izlasīti"
 
 #: toaster-message-unread
 msgctxt "toaster-message-unread"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: toaster-message-unread[one]
 msgid "1 message marked as unread"
-msgstr ""
+msgstr "1 vēstule atzīmēta kā nelasīta"
 
 #: toaster-message-unread[two]
 msgctxt "toaster-message-unread[two]"
 msgid "{{ n }} messages marked as unread"
-msgstr ""
+msgstr "{{ n }} vēstules atzīmētas kā nelasīti"
 
 #: toaster-message-unread[few]
 msgctxt "toaster-message-unread[few]"
 msgid "{{ n }} messages marked as unread"
-msgstr ""
+msgstr "{{ n }} vēstules atzīmētas kā nelasīti"
 
 #: toaster-message-unread[many]
 msgctxt "toaster-message-unread[many]"
 msgid "{{ n }} messages marked as unread"
-msgstr ""
+msgstr "{{ n }} vēstules atzīmētas kā nelasīti"
 
 #: toaster-message-unread[other]
 msgctxt "toaster-message-unread[other]"
 msgid "{{ n }} messages marked as unread"
-msgstr ""
+msgstr "{{ n }} vēstules atzīmētas kā nelasīti"
 
 #: toaster-message-move
 msgctxt "toaster-message-move"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: toaster-message-move[one]
 msgid "1 message moved"
-msgstr ""
+msgstr "1 vēstule tika pārvietota"
 
 #: toaster-message-move[two]
 msgctxt "toaster-message-move[two]"
 msgid "{{ n }} messages moved"
-msgstr ""
+msgstr "{{ n }} vēstules tika pārvietotas"
 
 #: toaster-message-move[few]
 msgctxt "toaster-message-move[few]"
 msgid "{{ n }} messages moved"
-msgstr ""
+msgstr "{{ n }} vēstules tika pārvietotas"
 
 #: toaster-message-move[many]
 msgctxt "toaster-message-move[many]"
 msgid "{{ n }} messages moved"
-msgstr ""
+msgstr "{{ n }} vēstules tika pārvietotas"
 
 #: toaster-message-move[other]
 msgctxt "toaster-message-move[other]"
 msgid "{{ n }} messages moved"
-msgstr ""
+msgstr "{{ n }} vēstules tika pārvietotas"
 
 #: toaster-message-delete
 msgctxt "toaster-message-delete"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: toaster-message-delete[one]
 msgid "1 message deleted"
-msgstr ""
+msgstr "1 epasts tika dzēsts"
 
 #: toaster-message-delete[two]
 msgctxt "toaster-message-delete[two]"
 msgid "{{ n }} messages deleted"
-msgstr ""
+msgstr "{{ n }} epasti tika dzēsti"
 
 #: toaster-message-delete[few]
 msgctxt "toaster-message-delete[few]"
 msgid "{{ n }} messages deleted"
-msgstr ""
+msgstr "{{ n }} epasti tika dzēsti"
 
 #: toaster-message-delete[many]
 msgctxt "toaster-message-delete[many]"
 msgid "{{ n }} messages deleted"
-msgstr ""
+msgstr "{{ n }} epasti tika dzēsti"
 
 #: toaster-message-delete[other]
 msgctxt "toaster-message-delete[other]"
 msgid "{{ n }} messages deleted"
-msgstr ""
+msgstr "{{ n }} epasti tika dzēsti"
 
 #: toaster-retryable-syncfailed
 msgid "Unable to connect to server"
-msgstr ""
+msgstr "Nevar savienoties ar serveri"
 
 #. # LOCALIZATION NOTE(compose-invalid-addresses-title):
 #. # A title to be displayed on a warning screen, warning users that
 #. # some of the email addresses they typed were incorrect.
 #: compose-invalid-addresses-title
 msgid "Invalid Addresses"
-msgstr ""
+msgstr "Nepareizas adreses"
 
 #. # LOCALIZATION NOTE(compose-invalid-addresses-description):
 #. # A description to be displayed on a warning screen, warning users that
@@ -1827,27 +1869,29 @@ msgid ""
 "Your message contains one or more invalid email addresses. Please correct "
 "them before sending."
 msgstr ""
+"Jūsu epasts satur vienu vai vairākas nepareizas epasta adreses. Lūdzu "
+"izlabojiet tās pirms sūtīšanas."
 
 #. # LOCALIZATION NOTE(background-send-pending):
 #. # Brief message to be displayed in a popup, saying that the phone has
 #. # no network connection, and that the email has been saved to the outbox.
 #: background-send-pending
 msgid "Network unavailable. Email saved to outbox."
-msgstr ""
+msgstr "Tīkls nav pieejams. Vēstule tika saglabāta izsūtnē."
 
 #. # LOCALIZATION NOTE(background-send-sending):
 #. # Displayed in a toaster popup message, saying that the email
 #. # is currently being sent.
 #: background-send-sending
 msgid "Sending mail…"
-msgstr ""
+msgstr "Sūta vēstuli…"
 
 #. # LOCALIZATION NOTE(background-send-success):
 #. # Displayed in a toaster popup message, saying that the email
 #. # sent successfully.
 #: background-send-success
 msgid "Email sent."
-msgstr ""
+msgstr "Vēstule ir aizsūtīta."
 
 #. # LOCALIZATION NOTE(background-send-error):
 #. # Description to be displayed in a notification, saying that an error
@@ -1855,7 +1899,7 @@ msgstr ""
 #. # been saved to the outbox.
 #: background-send-error
 msgid "Error occurred. Email saved to outbox."
-msgstr ""
+msgstr "Notika kļūda. Epasts ir saglabāts izsūtnē."
 
 #. # LOCALIZATION NOTE(background-send-error-recipients):
 #. # Description to be displayed in a notification, saying that the email
@@ -1863,14 +1907,14 @@ msgstr ""
 #. # email recipients, and that the email has been saved to the outbox.
 #: background-send-error-recipients
 msgid "Recipient error. Email saved to outbox."
-msgstr ""
+msgstr "Saņēmēja kļūda. Epasts tika saglabāts izsūtnē."
 
 #. # LOCALIZATION NOTE(background-send-error-title):
 #. # Title to be displayed in a notification, indicating that the
 #. # email failed to send for some reason.
 #: background-send-error-title
 msgid "Mail failed to send"
-msgstr ""
+msgstr "Neizdevās aizsūtīt vēstuli"
 
 #. # LOCALIZATION NOTE(send-failure-recipients):
 #. # Message to be displayed when editing a message that failed to send due
@@ -1881,27 +1925,29 @@ msgid ""
 "Check the spelling of the addresses above. Your mail server indicated one or "
 "more of the addresses above are incorrect."
 msgstr ""
+"Check the spelling of the addresses above. Your mail server indicated one or "
+"more of the addresses above are incorrect."
 
 #. # LOCALIZATION NOTE(send-failure-unknown):
 #. # Message to be displayed when editing a message that failed to send for an
 #. # unknown reason.
 #: send-failure-unknown
 msgid "The message could not be sent."
-msgstr ""
+msgstr "Nevarēja aizsūtīt vēstuli."
 
 #: form-clear-input
 msgid "Remove text"
-msgstr ""
+msgstr "Noņemt tekstu"
 
 #: confirm-dialog-title
 msgid "Confirmation"
-msgstr ""
+msgstr "Apstiprinājums"
 
 #. # senders-separation-sign separates the email accounts of senders.
 #. # Notice that we have a space after the comma.
 #: senders-separation-sign
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #. # LOCALIZATION NOTE(new-messages): refers to the text shown inside the email app
 #. # on the message list when new, unread messages have been received while the
@@ -1915,31 +1961,31 @@ msgstr ""
 #: new-messages
 msgctxt "new-messages"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: new-messages[one]
 msgid "1 New Message"
-msgstr ""
+msgstr "1 jauna vēstule"
 
 #: new-messages[two]
 msgctxt "new-messages[two]"
 msgid "{{ n }} New Messages"
-msgstr ""
+msgstr "{{ n }} jaunas vēstules"
 
 #: new-messages[few]
 msgctxt "new-messages[few]"
 msgid "{{ n }} New Messages"
-msgstr ""
+msgstr "{{ n }} jaunas vēstules"
 
 #: new-messages[many]
 msgctxt "new-messages[many]"
 msgid "{{ n }} New Messages"
-msgstr ""
+msgstr "{{ n }} jaunas vēstules"
 
 #: new-messages[other]
 msgctxt "new-messages[other]"
 msgid "{{ n }} New Messages"
-msgstr ""
+msgstr "{{ n }} jaunas vēstules"
 
 #. # new-emails-notify-one-account is used when a system notification is generated during
 #. # a periodic background sync with the server. Since this goes to the system's
@@ -1947,31 +1993,31 @@ msgstr ""
 #: new-emails-notify-one-account
 msgctxt "new-emails-notify-one-account"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: new-emails-notify-one-account[one]
 msgid "1 New Email"
-msgstr ""
+msgstr "1 jauns epasts"
 
 #: new-emails-notify-one-account[two]
 msgctxt "new-emails-notify-one-account[two]"
 msgid "{{ n }} New Emails"
-msgstr ""
+msgstr "{{ n }} jauni epasti"
 
 #: new-emails-notify-one-account[few]
 msgctxt "new-emails-notify-one-account[few]"
 msgid "{{ n }} New Emails"
-msgstr ""
+msgstr "{{ n }} jauni epasti"
 
 #: new-emails-notify-one-account[many]
 msgctxt "new-emails-notify-one-account[many]"
 msgid "{{ n }} New Emails"
-msgstr ""
+msgstr "{{ n }} jauni epasti"
 
 #: new-emails-notify-one-account[other]
 msgctxt "new-emails-notify-one-account[other]"
 msgid "{{ n }} New Emails"
-msgstr ""
+msgstr "{{ n }} jauni epasti"
 
 #. # new-emails-notify-multiple-accounts is used in the same situation
 #. # as new-emails-notify-one-account.
@@ -1980,38 +2026,38 @@ msgstr ""
 #: new-emails-notify-multiple-accounts
 msgctxt "new-emails-notify-multiple-accounts"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: new-emails-notify-multiple-accounts[one]
 msgid "1 New Email ({{ accountName }})"
-msgstr ""
+msgstr "1 jauns epasts ({{ accountName }})"
 
 #: new-emails-notify-multiple-accounts[two]
 msgctxt "new-emails-notify-multiple-accounts[two]"
 msgid "{{ n }} New Emails ({{ accountName }})"
-msgstr ""
+msgstr "{{ n }} jauni epasti ({{ accountName }})"
 
 #: new-emails-notify-multiple-accounts[few]
 msgctxt "new-emails-notify-multiple-accounts[few]"
 msgid "{{ n }} New Emails ({{ accountName }})"
-msgstr ""
+msgstr "{{ n }} jauni epasti ({{ accountName }})"
 
 #: new-emails-notify-multiple-accounts[many]
 msgctxt "new-emails-notify-multiple-accounts[many]"
 msgid "{{ n }} New Emails ({{ accountName }})"
-msgstr ""
+msgstr "{{ n }} jauni epasti ({{ accountName }})"
 
 #: new-emails-notify-multiple-accounts[other]
 msgctxt "new-emails-notify-multiple-accounts[other]"
 msgid "{{ n }} New Emails ({{ accountName }})"
-msgstr ""
+msgstr "{{ n }} jauni epasti ({{ accountName }})"
 
 #. # new-emails-notify-multiple-accounts-body is used in the same situation
 #. # as new-emails-notify-multiple-accounts.
 #. # This is the body part of the notification.
 #: new-emails-notify-multiple-accounts-body
 msgid "{{ from }} “{{ subject }}”"
-msgstr ""
+msgstr "{{ from }} “{{ subject }}”"
 
 #. # LOCALIZATION NOTE(tng-plain-socket-warning-title): When the user selects an
 #. # PLAIN socket connection type for the email connections in manual config, a
@@ -2055,9 +2101,10 @@ msgstr ""
 #. # button used to navigate to next message. The following string is spoken by
 #. # screen readers and not shown on the screen.
 #: message-reader-next-button.ariaLabel
+#, fuzzy
 msgctxt "message-reader-next-button.ariaLabel"
 msgid "Next"
-msgstr ""
+msgstr "Nākamais"
 
 #. # LOCALIZATION NOTE(message-reader-previous-button): For reader card, a label
 #. # for a button used to navigate to previous message. The following string is
