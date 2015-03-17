@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firefox\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-12 10:45+0000\n"
+"POT-Creation-Date: 2015-03-17 06:45+0000\n"
 "PO-Revision-Date: 2006-02-16 00:01-0000\n"
 "Last-Translator: Séamus Ó Ciardhuáin <seoc (at) iolfree (dot) ie>\n"
 "Language-Team: Irish\n"
@@ -1038,9 +1038,13 @@ msgstr "Fógraí Léite"
 msgid "Request read report for each message sent"
 msgstr "Seol fógra dom nuair a léitear teachtaireacht a sheol mé"
 
-#: mmsTitle
-msgid "Multimedia Messaging (MMS)"
-msgstr "Teachtaireachtaí Ilmheán (MMS)"
+#. # LOCALIZATION NOTE (mmsTitle): LRE (&#x202a;) and PDF (&#x202c;)
+#. # force the proper directionality of parentheses at the end of the string
+#. # regardless of the direction of the surrounding layout. Remove them only
+#. # if the translation puts them between other text.
+#: mmsTitle.innerHTML
+msgid "&#x202a;Multimedia Messaging (MMS)&#x202c;"
+msgstr ""
 
 #: auto-retrieve
 msgid "Auto Retrieve"
@@ -3730,8 +3734,9 @@ msgid "NFC output in ADB"
 msgstr "Aschur Wi-Fi in ADB"
 
 #: ril-debugging
+#, fuzzy
 msgid "RIL output in ADB"
-msgstr ""
+msgstr "Aschur Wi-Fi in ADB"
 
 #: console-enabled
 msgid "Console enabled"
@@ -4672,3 +4677,6 @@ msgstr ""
 #: settings-prompt-dialog-header
 msgid "{{settings-dialog-prompt}}"
 msgstr ""
+
+#~ msgid "Multimedia Messaging (MMS)"
+#~ msgstr "Teachtaireachtaí Ilmheán (MMS)"
