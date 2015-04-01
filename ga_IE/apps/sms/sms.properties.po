@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firefox\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-19 06:45+0000\n"
+"POT-Creation-Date: 2015-04-01 05:45+0000\n"
 "PO-Revision-Date: 2015-03-12 22:13+0000\n"
 "Last-Translator: michealjohnny <michealomeachair@gmail.com>\n"
 "Language-Team: Irish\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :"
 "(n>6 && n<11) ? 3 : 4;;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1426198427.000000\n"
@@ -556,7 +556,7 @@ msgstr "Scoir den mhód eitleáin chun iatáin a íosluchtú."
 msgid "{{sendFlightModeBtnOk}}"
 msgstr "{{sendFlightModeBtnOk}}"
 
-#: fdnBlocked2Title
+#: fdnErrorTitle
 msgid "FDN active"
 msgstr "Tá FDN gníomhach"
 
@@ -569,66 +569,73 @@ msgstr "Tá FDN gníomhach"
 msgid "Editing SMS {{number}}"
 msgstr "SMS {{number}} á chur in eagar"
 
-#. #LOCALIZATION NOTE (fdnBlocked2Body): the English translation does not need the
+#. #LOCALIZATION NOTE (fdnErrorBody): the English translation does not need the
 #. # actual number of phone numbers. If your translation needs it, you can still add it
 #. # using the parameter {{ n }}. Also take into account that you could add HTML so be
 #. # careful with the content, it may affect to the whole app.
-#: fdnBlocked2Body.innerHTML
-msgctxt "fdnBlocked2Body.innerHTML"
+#: fdnErrorBody.innerHTML
+#, fuzzy
+msgctxt "fdnErrorBody.innerHTML"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: fdnBlocked2Body.innerHTML[one]
+#: fdnErrorBody.innerHTML[one]
+#, fuzzy
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
-"following recipient are in your FDN list:<br />{{ numbers }}"
+"following recipient are in your FDN list:"
 msgstr ""
 "Tá an córas FDN (Uimhreacha Socraithe Diailithe) ar siúl. Deimhnigh go "
 "bhfuil an lárionad SMS agus an faighteoir seo a leanas ar do liosta FDN:<br /"
 ">{{ numbers }}"
 
-#: fdnBlocked2Body.innerHTML[two]
-msgctxt "fdnBlocked2Body.innerHTML[two]"
+#: fdnErrorBody.innerHTML[two]
+#, fuzzy
+msgctxt "fdnErrorBody.innerHTML[two]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
-"following recipients are in your FDN list:<br />{{ numbers }}"
+"following recipients are in your FDN list:"
 msgstr ""
 "Tá an córas FDN (Uimhreacha Socraithe Diailithe) ar siúl. Deimhnigh go "
 "bhfuil an lárionad SMS agus na faighteoirí seo a leanas ar do liosta FDN:"
 "<br />{{ numbers }}"
 
-#: fdnBlocked2Body.innerHTML[few]
-msgctxt "fdnBlocked2Body.innerHTML[few]"
+#: fdnErrorBody.innerHTML[few]
+#, fuzzy
+msgctxt "fdnErrorBody.innerHTML[few]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
-"following recipients are in your FDN list:<br />{{ numbers }}"
+"following recipients are in your FDN list:"
 msgstr ""
 "Tá an córas FDN (Uimhreacha Socraithe Diailithe) ar siúl. Deimhnigh go "
 "bhfuil an lárionad SMS agus na faighteoirí seo a leanas ar do liosta FDN:"
 "<br />{{ numbers }}"
 
-#: fdnBlocked2Body.innerHTML[many]
-msgctxt "fdnBlocked2Body.innerHTML[many]"
+#: fdnErrorBody.innerHTML[many]
+#, fuzzy
+msgctxt "fdnErrorBody.innerHTML[many]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
-"following recipients are in your FDN list:<br />{{ numbers }}"
+"following recipients are in your FDN list:"
 msgstr ""
 "Tá an córas FDN (Uimhreacha Socraithe Diailithe) ar siúl. Deimhnigh go "
 "bhfuil an lárionad SMS agus na faighteoirí seo a leanas ar do liosta FDN:"
 "<br />{{ numbers }}"
 
-#: fdnBlocked2Body.innerHTML[other]
-msgctxt "fdnBlocked2Body.innerHTML[other]"
+#: fdnErrorBody.innerHTML[other]
+#, fuzzy
+msgctxt "fdnErrorBody.innerHTML[other]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
-"following recipients are in your FDN list:<br />{{ numbers }}"
+"following recipients are in your FDN list:"
 msgstr ""
 "Tá an córas FDN (Uimhreacha Socraithe Diailithe) ar siúl. Deimhnigh go "
 "bhfuil an lárionad SMS agus na faighteoirí seo a leanas ar do liosta FDN:"
 "<br />{{ numbers }}"
 
-#: fdnBlocked2BtnOk
-msgctxt "fdnBlocked2BtnOk"
+#: fdnErrorBtnOk
+#, fuzzy
+msgctxt "fdnErrorBtnOk"
 msgid "OK"
 msgstr "OK"
 
@@ -1114,6 +1121,41 @@ msgstr "Cealaigh"
 msgctxt "modal-dialog-default-title"
 msgid "Messages"
 msgstr "Teachtaireachtaí"
+
+#~ msgctxt "fdnBlocked2Body.innerHTML"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "fdnBlocked2Body.innerHTML[few]"
+#~ msgid ""
+#~ "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and "
+#~ "the following recipients are in your FDN list:<br />{{ numbers }}"
+#~ msgstr ""
+#~ "Tá an córas FDN (Uimhreacha Socraithe Diailithe) ar siúl. Deimhnigh go "
+#~ "bhfuil an lárionad SMS agus na faighteoirí seo a leanas ar do liosta FDN:"
+#~ "<br />{{ numbers }}"
+
+#~ msgctxt "fdnBlocked2Body.innerHTML[many]"
+#~ msgid ""
+#~ "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and "
+#~ "the following recipients are in your FDN list:<br />{{ numbers }}"
+#~ msgstr ""
+#~ "Tá an córas FDN (Uimhreacha Socraithe Diailithe) ar siúl. Deimhnigh go "
+#~ "bhfuil an lárionad SMS agus na faighteoirí seo a leanas ar do liosta FDN:"
+#~ "<br />{{ numbers }}"
+
+#~ msgctxt "fdnBlocked2Body.innerHTML[other]"
+#~ msgid ""
+#~ "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and "
+#~ "the following recipients are in your FDN list:<br />{{ numbers }}"
+#~ msgstr ""
+#~ "Tá an córas FDN (Uimhreacha Socraithe Diailithe) ar siúl. Deimhnigh go "
+#~ "bhfuil an lárionad SMS agus na faighteoirí seo a leanas ar do liosta FDN:"
+#~ "<br />{{ numbers }}"
+
+#~ msgctxt "fdnBlocked2BtnOk"
+#~ msgid "OK"
+#~ msgstr "OK"
 
 #~ msgctxt "phone-type-separator"
 #~ msgid ",Ȁ"
