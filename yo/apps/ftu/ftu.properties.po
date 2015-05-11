@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-19 23:16+0100\n"
+"POT-Creation-Date: 2015-03-19 18:45+0000\n"
 "PO-Revision-Date: 2015-04-22 10:46+0000\n"
 "Last-Translator: yo-NG02_Oluwatosin <dir22004@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1429699564.000000\n"
@@ -504,6 +504,10 @@ msgstr "SIM PIN titì"
 msgid "No operator"
 msgstr "Kòsí osìsẹ́"
 
+#: searchingOperator
+msgid "Searching"
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Language
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -610,6 +614,8 @@ msgid "secured by {{capabilities}}"
 msgstr "aláàbò ni {{capabilities}} "
 
 #: security
+#, fuzzy
+msgctxt "security"
 msgid "Security"
 msgstr "Ààbò"
 
@@ -632,6 +638,12 @@ msgstr "WPA-EAP"
 #: securityOpen
 msgid "Open"
 msgstr "Ṣí"
+
+#: securityOpen.ariaLabel
+#, fuzzy
+msgctxt "securityOpen.ariaLabel"
+msgid "Security"
+msgstr "Ààbò"
 
 #: identity
 msgctxt "identity"
@@ -681,11 +693,11 @@ msgstr "Orúkọ Nẹ́tíwọkì SSID"
 #. # screen.
 #. # LOCALIZATION NOTE(wifiLevel): {{level}} will be replaced at run-time by a
 #. # number ranging from 1 to 4.
-#: wifiLevel
+#: wifiLevel.ariaLabel
 msgid "{{level}} of 4 bars"
 msgstr "{{level}} àwọn òpó 4"
 
-#: networksList
+#: networksList.ariaLabel
 msgid "Networks found"
 msgstr "Arí nẹ́tíwọkì "
 
@@ -768,6 +780,38 @@ msgid "You can import and edit Facebook friends anytime in Contacts settings"
 msgstr ""
 "O lè gbéwọlé àti ṣàtúntò àwọn ọ̀rẹ́ Facebook nígbà-kigbà ní àwọn ààtò Olùbásọ̀rọ̀"
 
+#: facebook-import-msg
+msgid "{[ plural(imported) ]}"
+msgstr ""
+
+#: facebook-import-msg[zero]
+msgid "No friends imported (out of {{total}})"
+msgstr ""
+
+#: facebook-import-msg[one]
+msgid "One friend imported (out of {{total}})"
+msgstr ""
+
+#: facebook-import-msg[two]
+msgctxt "facebook-import-msg[two]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr ""
+
+#: facebook-import-msg[few]
+msgctxt "facebook-import-msg[few]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr ""
+
+#: facebook-import-msg[many]
+msgctxt "facebook-import-msg[many]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr ""
+
+#: facebook-import-msg[other]
+msgctxt "facebook-import-msg[other]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Fxa Intro
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -775,13 +819,11 @@ msgstr ""
 msgid "Firefox Accounts"
 msgstr "Àwọn Àkọọ́lẹ̀ Firefox"
 
-#: fxa-overview.innerHTML
+#: fxa-upsell.innerHTML
 msgid ""
-"A Firefox Account lets you use features like Find My Device and apps like "
-"the Firefox Marketplace."
+"A Firefox Account lets you find a lost phone and buy apps from the Firefox "
+"Marketplace."
 msgstr ""
-"Àkọọ́lẹ̀ Firefox jẹ́kí o lèlo àwọn àbùdá bíi Wíwá Ohun Èlò Mi àti àwọn "
-"ìṣàfilọ́lẹ̀ bii Ibiìtajà Firefox."
 
 #: fxa-create-account-or-sign-in
 msgid "Create Account or Sign In"
@@ -862,46 +904,67 @@ msgstr "Jọ̀wọ́, ṣàfibọ̀ SIM káàdì kí o tún fóònù r�
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Sharing Performance Data
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: telemetry-sends
+#: telemetry-sends2
+#, fuzzy
 msgid ""
-"Telemetry sends Mozilla data about performance, hardware, configurations and "
-"customizations in your {{brandShortName}} device. We use this to make our "
-"products better, faster and more responsive."
+"Telemetry sends Mozilla data about performance, hardware, configurations, "
+"customizations and app usage in your {{brandShortName}} device. We use this "
+"to make our products better, faster and more responsive."
 msgstr ""
 "Telemetry fi ìṣesí dátà Mozilla ráńṣẹ́, ohun-èlò alárídìmú, àtòpọ̀ àti ìṣàdáni "
 "nínu {{brandShortName}} ohun èlò rẹ. A ńlo èyí láti mú ọjà wa dára, yá àti "
 "ṣe dáadáa."
 
-#. # LOCALIZATION NOTE(learn-more-telemetry.innerHTML, learn-more-information.innerHTML:
-#. # {{link}} will be replaced at run-time by an active link, the URL will be
-#. # used as text for the link.
-#: learn-more-telemetry.innerHTML
-msgid "Learn more at {{link}}"
-msgstr "Kọ́si ní {{link}}"
+#: learn-more-telemetry2.innerHTML
+msgid ""
+"Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
+"a>"
+msgstr ""
 
-#: learn-more-information.innerHTML
-msgid "Learn how Mozilla handles your information at {{link}}"
-msgstr "Kọ́ bíi Mozilla ṣe ńṣe ìwifún ní {{link}}"
+#: learn-more-information2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # OS privacy
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: welcomeBrowser
+#: htmlWelcome2.innerHTML
+#, fuzzy
 msgid ""
-"Welcome to {{brandShortName}}, the free and open source operating system "
-"from Mozilla. Our mission is to promote openness, innovation and opportunity "
-"by keeping the power of the Web in your hands."
+"Welcome to <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>, "
+"the free and open source operating system from Mozilla. Our mission is to "
+"promote openness, innovation and opportunity by keeping the power of the Web "
+"in your hands."
 msgstr ""
 "Káàbọ̀ sí {{brandShortName}}, ibi ọ̀fẹ́ àti ibi iṣẹ́ orísun ị̀ṣísílẹ̀ láti "
 "Mozilla. Ojúṣe wa ni láti polongo òtitọ́, ohun ọ̀tun àti ànfààní nípa ìtọjú "
 "agbára Wẹ́ẹ̀bù ní ọwọ́ rẹ."
 
-#. # LOCALIZATION NOTE(learn-more-privacy.innerHTML): {{link}} will be replaced at
-#. # run-time by an active link, string "learn-more-privacy-link" will be
-#. # used as text for the link.
-#: learn-more-privacy.innerHTML
-msgid "Learn how Mozilla handles your information in our {{link}}."
-msgstr "Kọ́ bíi Mozilla ṣe ńṣe ìwifún rẹ ní {{link}} wa. "
+#: htmlWelcome-link
+#, fuzzy
+msgctxt "htmlWelcome-link"
+msgid "{{brandShortName}}"
+msgstr "{{brandShortName}}"
+
+#: helpImprove2.innerHTML
+msgid ""
+"You can help us improve our products and services by automatically sending "
+"analytics data. See our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> to learn how we handle data from your "
+"device."
+msgstr ""
+
+#: helpImprove-link
+msgid "Privacy Notice"
+msgstr ""
+
+#: learn-more-privacy2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information in our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>."
+msgstr ""
 
 #: learn-more-privacy-link
 msgid "privacy policy"
@@ -926,15 +989,9 @@ msgstr ""
 "láti kọ́ ọjọ́ ọ̀la tí ó tàn fún Wẹ́ẹ̀bù. Bí ó bá fẹ́mọ̀si nípa àwùjọ Mozilla, àwọn "
 "ọjà wa míìràn àti ohun ṣíṣe nítòsí rẹ, jọ̀wọ́ ṣàwọlé àdírẹ̀sì í-meélì rẹ nísàlẹ̀."
 
-#: collaborate
-msgid ""
-"I want to help improve {{brandShortName}} by sharing data about my phone."
+#: sharePerformanceAndUsageData2
+msgid "Yes! Send data."
 msgstr ""
-"Mofẹ́ ṣe ìrànwọ́ ìmúdàra {{brandShortName}} nípa pípín dátà nípa fóònù mi."
-
-#: learnMore
-msgid "Learn more."
-msgstr "Kọ́si."
 
 #: emailAddress.placeholder
 msgid "Email address"
@@ -967,8 +1024,9 @@ msgstr "Ibiọjà"
 msgid "{{privacy-marketplace}}"
 msgstr "{{privacy-marketplace}}"
 
-#: privacy-e-me
-msgid "everything.me"
+#: privacy-eme
+#, fuzzy
+msgid "EverythingMe"
 msgstr "everything.me"
 
 #. # please don't translate the brand name
@@ -1014,8 +1072,17 @@ msgstr "Bẹ̀rẹ̀ ìrìnàjò kọ̀ǹpútà alogègé!"
 msgid "Join us for a quick tutorial about your new phone."
 msgstr "Darapọ̀ mọ́ wa fún èkọ́ nípa fóònù rẹ titun."
 
+#: joinTutorialUpdated
+msgid "Join us for a quick tutorial about the updates to your phone!"
+msgstr ""
+
 #: enjoyYourPhone
 msgid "You’re ready to enjoy your new phone."
+msgstr "O ti ṣetán láti gbádùn fóònù rẹ titun."
+
+#: enjoyYourPhoneUpdated
+#, fuzzy
+msgid "You’re ready to enjoy your updated phone."
 msgstr "O ti ṣetán láti gbádùn fóònù rẹ titun."
 
 #: optionsAvailable
@@ -1048,50 +1115,20 @@ msgstr "Jẹ́kí a ṣé!"
 msgid "Tutorial"
 msgstr "Ẹ̀kọ́"
 
-#: tutorial-step1-tiny
-msgid "Swipe from right to left to browse your apps."
-msgstr "Sún láti ọ̀tún sí òsì láti ṣàwárí lóri àwọn ìṣáfilọlẹ̀ rẹ."
-
-#: tutorial-step2-tiny
-msgctxt "tutorial-step2-tiny"
-msgid "Tap and hold on an icon to delete or move it."
-msgstr "Fọwọ́bà kí o dìmú lórí àwòrán aṣàmì láti parẹ́ tàbí sún un."
-
-#: tutorial-step3-tiny
-msgid "Enter any keyword or topic and your phone will instantly adapt."
-msgstr "Lo kọ́kọ́rọ́ ọ̀rọ̀ yóòwù tàbí àkòrí fóònù rẹ yóò ṣeélò lọ́gán."
-
-#: tutorial-step4-tiny
-msgctxt "tutorial-step4-tiny"
+#: tutorial-step1-large-3
+#, fuzzy
+msgctxt "tutorial-step1-large-3"
 msgid ""
-"Swipe down to access recent notifications, credit information and settings."
+"Swipe down to access recent notifications, usage information and settings."
 msgstr ""
 "Ìfikayàn wálẹ̀ láti ṣàyẹwò ìfitoníletí àìpẹ́, ìwífun kírẹ́dìtì àti àwọn ààtò."
-
-#: tutorial-step5-tiny
-msgid "Tap and hold the home button to browse and close recent apps."
-msgstr "Tẹ̀ kí o di bọ́tìnì ilé mọ́lẹ̀ láti gbàwálẹ̀ kí o ti àwọn ìṣafílọ́lẹ̀ àìpẹ́."
-
-#: tutorial-step6-tiny
-msgid ""
-"Swipe from the side of the screen to move back and forth between recent apps."
-msgstr ""
-"Sún láti ẹ̀gbẹ́ àṣàfihàn láti wá ẹ̀yìn àti iwájú láàrin àwọn ìṣafílọ́lẹ̀ àìpẹ́. "
-
-#: tutorial-step1-large-2
-msgid ""
-"Swipe down from top to access recent notifications, credit information and "
-"settings."
-msgstr ""
-"Sún sísàlẹ̀ láti òkè láti wọlé ìfitonílétí àìpẹ́, kírẹ́dìtì ìwifún àti àwọn "
-"ààtò."
 
 #: tutorial-step2-large-2
 msgid "Swipe left or right to discover new apps on home screen."
 msgstr "Sún sósì tàbi ọ̀tún láti ṣàwarí àwọn ìṣafilọ́lẹ̀ titun lóri aṣàfihàn ilé."
 
 #: tutorial-step3-large-2
-msgctxt "tutorial-step3-large-2"
+#, fuzzy
 msgid "Tap and hold on an icon to delete or move it."
 msgstr "Tẹ̀ láti di àwòrán aṣàmì mu láti parẹ́ tàbí mu kúrò."
 
@@ -1099,24 +1136,40 @@ msgstr "Tẹ̀ láti di àwòrán aṣàmì mu láti parẹ́ tàbí mu kú
 msgid "Two fingers swipe up from the bottom edge to trigger card view."
 msgstr "Ìka méjì sún sókè láti ẹ̀gbẹ́ ìsalẹ̀ láti múṣiṣẹ́ ìwo káàdì."
 
-#: tutorial-vertical-scroll-tiny
+#: tutorial-vertical-scroll-v2-tiny
 msgid ""
-"Swipe up and down to browse your apps. Tap and hold an icon to move or "
-"delete it."
+"Swipe up and down to browse your apps and bookmarks. Tap and hold an icon to "
+"delete, move, or edit it."
 msgstr ""
-"Sún sókè àti ìsàlẹ̀ láti ṣàwarí àwọn ìṣafilọ́lẹ̀ rẹ̀. Tẹ̀ láti di àwòrán aṣàmì mu "
-"láti parẹ́ tàbí mu kúrò. "
 
-#: tutorial-notifications-tiny
-msgctxt "tutorial-notifications-tiny"
+#: tutorial-notifications-v2-tiny
+#, fuzzy
+msgctxt "tutorial-notifications-v2-tiny"
 msgid ""
-"Swipe down to access recent notifications, credit information and settings."
-msgstr "Sún sísàlẹ̀ láti wo ìfitonilétí àìpẹ́, ìwifún kírẹ́dìtì àti àwọn ààtò."
+"Swipe down to access recent notifications, usage information and settings."
+msgstr ""
+"Ìfikayàn wálẹ̀ láti ṣàyẹwò ìfitoníletí àìpẹ́, ìwífun kírẹ́dìtì àti àwọn ààtò."
 
 #: tutorial-sheets-tiny
 msgid "Drag from the left edge of your screen to return to recently used apps."
 msgstr ""
 "Wọ́ láti ẹ̀gbẹ́ òsì aṣàfihàn rẹ láti padà sí àwọn ìṣafilọ́lẹ̀ tí o lò láìpẹ́."
+
+#: tutorial-rocketbar-tiny
+msgid "Tap on the search box anytime to start a search or go to a website."
+msgstr ""
+
+#: tutorial-bookmarks-migration-tiny
+msgid ""
+"Your bookmarks have been moved to the homescreen. When editing, tap a "
+"bookmark to edit or rename it."
+msgstr ""
+
+#: tutorial-app-grouping-tiny
+msgid ""
+"Tap to expand and collapse app groups. Drag an app into a new space to "
+"create a group."
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Offline Error Dialog
@@ -1177,3 +1230,67 @@ msgstr "Ìgbésẹ̀ {{step}} ti {{total}}"
 #: progressbar.ariaLabel
 msgid "First Time Experience"
 msgstr "Ìrirí Ìgbà Àkọkọ́"
+
+#~ msgid ""
+#~ "A Firefox Account lets you use features like Find My Device and apps like "
+#~ "the Firefox Marketplace."
+#~ msgstr ""
+#~ "Àkọọ́lẹ̀ Firefox jẹ́kí o lèlo àwọn àbùdá bíi Wíwá Ohun Èlò Mi àti àwọn "
+#~ "ìṣàfilọ́lẹ̀ bii Ibiìtajà Firefox."
+
+#~ msgid "Learn more at {{link}}"
+#~ msgstr "Kọ́si ní {{link}}"
+
+#~ msgid "Learn how Mozilla handles your information at {{link}}"
+#~ msgstr "Kọ́ bíi Mozilla ṣe ńṣe ìwifún ní {{link}}"
+
+#~ msgid "Learn how Mozilla handles your information in our {{link}}."
+#~ msgstr "Kọ́ bíi Mozilla ṣe ńṣe ìwifún rẹ ní {{link}} wa. "
+
+#~ msgid ""
+#~ "I want to help improve {{brandShortName}} by sharing data about my phone."
+#~ msgstr ""
+#~ "Mofẹ́ ṣe ìrànwọ́ ìmúdàra {{brandShortName}} nípa pípín dátà nípa fóònù mi."
+
+#~ msgid "Learn more."
+#~ msgstr "Kọ́si."
+
+#~ msgid "Swipe from right to left to browse your apps."
+#~ msgstr "Sún láti ọ̀tún sí òsì láti ṣàwárí lóri àwọn ìṣáfilọlẹ̀ rẹ."
+
+#~ msgid "Enter any keyword or topic and your phone will instantly adapt."
+#~ msgstr "Lo kọ́kọ́rọ́ ọ̀rọ̀ yóòwù tàbí àkòrí fóònù rẹ yóò ṣeélò lọ́gán."
+
+#~ msgid "Tap and hold the home button to browse and close recent apps."
+#~ msgstr ""
+#~ "Tẹ̀ kí o di bọ́tìnì ilé mọ́lẹ̀ láti gbàwálẹ̀ kí o ti àwọn ìṣafílọ́lẹ̀ àìpẹ́."
+
+#~ msgid ""
+#~ "Swipe from the side of the screen to move back and forth between recent "
+#~ "apps."
+#~ msgstr ""
+#~ "Sún láti ẹ̀gbẹ́ àṣàfihàn láti wá ẹ̀yìn àti iwájú láàrin àwọn ìṣafílọ́lẹ̀ àìpẹ́. "
+
+#~ msgid ""
+#~ "Swipe down from top to access recent notifications, credit information "
+#~ "and settings."
+#~ msgstr ""
+#~ "Sún sísàlẹ̀ láti òkè láti wọlé ìfitonílétí àìpẹ́, kírẹ́dìtì ìwifún àti àwọn "
+#~ "ààtò."
+
+#~ msgctxt "tutorial-step3-large-2"
+#~ msgid "Tap and hold on an icon to delete or move it."
+#~ msgstr "Tẹ̀ láti di àwòrán aṣàmì mu láti parẹ́ tàbí mu kúrò."
+
+#~ msgid ""
+#~ "Swipe up and down to browse your apps. Tap and hold an icon to move or "
+#~ "delete it."
+#~ msgstr ""
+#~ "Sún sókè àti ìsàlẹ̀ láti ṣàwarí àwọn ìṣafilọ́lẹ̀ rẹ̀. Tẹ̀ láti di àwòrán aṣàmì "
+#~ "mu láti parẹ́ tàbí mu kúrò. "
+
+#~ msgctxt "tutorial-notifications-tiny"
+#~ msgid ""
+#~ "Swipe down to access recent notifications, credit information and "
+#~ "settings."
+#~ msgstr "Sún sísàlẹ̀ láti wo ìfitonilétí àìpẹ́, ìwifún kírẹ́dìtì àti àwọn ààtò."
