@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-28 19:29+0100\n"
+"POT-Creation-Date: 2014-10-22 16:13+0000\n"
 "PO-Revision-Date: 2015-04-24 01:23+0000\n"
 "Last-Translator: ha-NG03_Bashir <bashirmudi2020@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1429838612.000000\n"
@@ -59,6 +59,8 @@ msgid "No"
 msgstr "A'a"
 
 #: reset
+#, fuzzy
+msgctxt "reset"
 msgid "Reset"
 msgstr "Sake saitawa"
 
@@ -229,6 +231,16 @@ msgstr "Ba ya kan layi"
 msgid "Manage networks"
 msgstr "Tafiyar da yanar gizo"
 
+#: wifi-bad-credentials-title
+msgid "Failed connecting to Wi-Fi"
+msgstr ""
+
+#: wifi-bad-credentials-confirm
+msgid ""
+"Unable to connect to {{ssid}}, authentication failed due to bad credentials. "
+"Please re-enter the network password."
+msgstr ""
+
 #. # LOCALIZATION NOTE (manageNetworks-header): if you leave the original
 #. # en-US value "{{manageNetworks}}" in the following string, the localization
 #. # will be automatically picked from the existing string with ID "manageNetworks".
@@ -373,8 +385,15 @@ msgid "Notify me when an open network is available"
 msgstr "Sanar da ni idan an sami buɗaɗɗen haɗin yanar gizo"
 
 #: macAddress
-msgid "MAC address"
+#, fuzzy
+msgid "MAC Address"
 msgstr "Adireshin MAC"
+
+#. # os = OS version. For example: 2.0.
+#. # The whole string may look like this: "Firefox OS 2.0"
+#: deviceInfo_software
+msgid "{{ brandShortName }} {{ os }}"
+msgstr ""
 
 #: macUnavailable
 msgctxt "macUnavailable"
@@ -467,9 +486,9 @@ msgstr "An soke WPS"
 msgid "WPS timed out"
 msgstr "Lokacin WPS ya wuce"
 
-#: fullStatus-wps-failed
-msgid "WPS failed"
-msgstr "WPS ya gaza"
+#: fullStatus-wps-failed-error
+msgid "WPS failed [{{error}}]"
+msgstr ""
 
 #: fullStatus-wps-overlapped
 msgid "Another WPS PBC AP was found"
@@ -516,9 +535,9 @@ msgstr "Ko wane"
 msgid "Cancel WPS"
 msgstr "Soke WPS"
 
-#: wpsCancelFailedMessage
-msgid "Failed to cancel WPS"
-msgstr "Ya kasa soke WPS"
+#: wpsCancelFailedMessageError
+msgid "Failed to cancel WPS [{{error}}]"
+msgstr ""
 
 #. # Connectivity :: Call
 #: callSettings
@@ -631,9 +650,9 @@ msgstr "Miƙa idan an kasa samu"
 msgid "When unreachable"
 msgstr "Idan an gaza isarwa"
 
-#: callForwardingForwardingVoiceTo
-msgid "Voice calls to"
-msgstr "Kiran murya zuwa"
+#: callForwardingForwardingVoiceToNumber
+msgid "Voice calls to {{number}}"
+msgstr ""
 
 #: callForwardingNotForwarding
 msgctxt "callForwardingNotForwarding"
@@ -710,6 +729,10 @@ msgstr "Lambobin bugawa tabbatattu"
 #: fdnSettings-header
 msgid "{{fdnSettings}}"
 msgstr "{{fdnSettings}}"
+
+#: fdn-authorizedNumbers
+msgid "Authorized numbers"
+msgstr "Lambobin da aka bada izini"
 
 #. # LOCALIZATION NOTE (fdn-authorizedNumbers-header): if you leave the original
 #. # en-US value "{{fdn-authorizedNumbers}}" in the following string, the localization
@@ -809,10 +832,6 @@ msgstr "Lambar PIN2 ba dai dai ba ce."
 msgid "Call forwarding is disabled by FDN."
 msgstr "An kashe miƙa kira daga FDN"
 
-#: fdn-authorizedNumbers
-msgid "Authorized numbers"
-msgstr "Lambobin da aka bada izini"
-
 #: fdnContact-name
 msgid "name"
 msgstr "suna"
@@ -863,11 +882,13 @@ msgid "{{messagingSettings}}"
 msgstr "{{messagingSettings}}"
 
 #: message-confirmation
-msgid "Message confirmation"
+#, fuzzy
+msgid "Message Confirmation"
 msgstr "Tabbatar da rubutaccen saƙo"
 
 #: message-delivery-reports
-msgid "Delivery reports"
+#, fuzzy
+msgid "Delivery Reports"
 msgstr "Rahoton isarwa"
 
 #: message-delivery-reports-details
@@ -875,7 +896,8 @@ msgid "Request notification of delivery for each message sent"
 msgstr "Nemi sanarwa ta isarwa duk lokacin da aka miƙa saƙo"
 
 #: message-read-reports
-msgid "Read reports"
+#, fuzzy
+msgid "Read Reports"
 msgstr "Karanta rahotanni"
 
 #: message-read-reports-details
@@ -883,11 +905,13 @@ msgid "Request read report for each message sent"
 msgstr "Nemi karanta rahoto na ko wane saƙo da aka isar"
 
 #: mmsTitle
-msgid "Multimedia messaging (MMS)"
+#, fuzzy
+msgid "Multimedia Messaging (MMS)"
 msgstr "Saƙon Ma'ajiyar waƙe-waƙe (MMS)"
 
 #: auto-retrieve
-msgid "Auto retrieve"
+#, fuzzy
+msgid "Auto Retrieve"
 msgstr "Sake dawowa mai zamam kanta"
 
 #: auto-retrieve-details
@@ -911,7 +935,8 @@ msgid "Auto-configure"
 msgstr "Saita mai yi da kansa"
 
 #: wapPushMessages
-msgid "WAP Push messages"
+#, fuzzy
+msgid "WAP Push Messages"
 msgstr "Saƙwannin Turawa na WAP"
 
 #: wapPush
@@ -919,12 +944,36 @@ msgid "WAP Push"
 msgstr "Turawar WAP"
 
 #: cellBroadcastMessages
-msgid "Cell broadcast messages"
+#, fuzzy
+msgid "Cell Broadcast Messages"
 msgstr "Saƙwannin watsawa na sel"
 
 #: cellBroadcast
-msgid "Cell broadcast"
+#, fuzzy
+msgid "Cell Broadcast"
 msgstr "Watsawa na sel"
+
+#: emergencyAlert
+msgid "Emergency Alert"
+msgstr ""
+
+#: messagingInformation
+#, fuzzy
+msgid "Information"
+msgstr "Tabbatarwa"
+
+#. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
+#: messaging-SMSC
+msgid "Service Center"
+msgstr ""
+
+#: messaging-sim-settings
+msgid "SIM {{index}} Settings"
+msgstr ""
+
+#: unknown-SMSC
+msgid "Info not available"
+msgstr ""
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
@@ -1105,6 +1154,21 @@ msgstr "An alaƙanta"
 msgid "APN"
 msgstr "APN"
 
+#: apnSettings
+#, fuzzy
+msgid "APN settings"
+msgstr "Saitunan A-GPS"
+
+#. # LOCALIZATION NOTE (apnSettings-header): if you leave the original
+#. # en-US value "{{apnSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "apnSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: apnSettings-header
+#, fuzzy
+msgid "{{apnSettings}}"
+msgstr "{{fdnSettings}}"
+
 #: dataSettings
 msgid "Data settings"
 msgstr "Saitunan bayani"
@@ -1169,6 +1233,10 @@ msgstr "Saitunan IMS"
 #: imsSettings-header2
 msgid "{{imsSettings}}"
 msgstr "{{imsSettings}}"
+
+#: apn-editor-header
+msgid "APN Editor"
+msgstr ""
 
 #: mmsport
 msgid "MMS port"
@@ -1246,6 +1314,10 @@ msgstr "IPv6"
 msgid "IPv4/IPv6"
 msgstr "IPv4/IPv6"
 
+#: apn-type
+msgid "APN Type"
+msgstr ""
+
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
 msgstr "Turn ON bayanin haɗi?"
@@ -1270,6 +1342,25 @@ msgstr ""
 "Ya danganta da yarjejeniyar sabis ɗinka, za'a iya cajin ƙarin kuɗi na bayani "
 "lokacin da ka ke warin yawatawa."
 
+#: change-apn-warning-message
+msgid ""
+"Depending on your service agreement, changing your APN setting may result in "
+"extra charges when roaming."
+msgstr ""
+
+#: change-apn-warning-question
+msgid "Do you want to proceed?"
+msgstr ""
+
+#: reset-apn-warning-title
+msgctxt "reset-apn-warning-title"
+msgid "Reset to Default"
+msgstr ""
+
+#: reset-apn-warning-message
+msgid "This resets the settings to default values. This cannot be undone."
+msgstr ""
+
 #: state-unknown
 msgid "Unknown state"
 msgstr "Matsayin da ba'a sani ba"
@@ -1291,6 +1382,29 @@ msgstr "An haɗa"
 #: state-forbidden
 msgid "Forbidden"
 msgstr "Haramtacce"
+
+#: delete-apn-confirm
+msgid "Delete this APN?"
+msgstr ""
+
+#: delete-apn
+#, fuzzy
+msgctxt "delete-apn"
+msgid "Delete"
+msgstr "Goge"
+
+#: add-apn
+msgid "Add New APN"
+msgstr ""
+
+#: reset-apn
+msgctxt "reset-apn"
+msgid "Reset to Default"
+msgstr ""
+
+#: apnSettings-reset
+msgid "APN settings reset"
+msgstr ""
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
@@ -1403,17 +1517,9 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "An haɗa"
 
-#: device-status-connected-phone
-msgid "Connected to phone audio"
-msgstr "An haɗa da wurin sauraro na waya"
-
 #: device-status-connected-media
 msgid "Connected to media audio"
 msgstr "An haɗa da wurin sauraro na ma'ajiyar kaɗe-kaɗe"
-
-#: device-status-connected-phone-media
-msgid "Connected to phone/media audio"
-msgstr "An haɗa da waya/wurin sauraro na ma'ajiyar kaɗe-kaɗe"
 
 #: device-option-unpair
 msgid "Unpair"
@@ -1455,10 +1561,6 @@ msgstr "Sake sunan na'urata"
 #: unnamed-device
 msgid "Unknown device"
 msgstr "Na'urar da ba'a sani ba"
-
-#: change-phone-name
-msgid "Change phone name"
-msgstr "Canja sunan waya"
 
 #: change-phone-name-desc
 msgid "Change the name of your device as it appears in your computer"
@@ -1531,24 +1633,14 @@ msgstr "{{internetSharing}}"
 msgid "USB"
 msgstr "USB"
 
-#: internetSharing-usb-desc
-msgid "Share my phone’s Internet connection with a USB-connected device."
-msgstr "Raba haɗin intanet na wayata da na'ura mai haɗin USB."
-
 #: internetSharing-wifi
 msgctxt "internetSharing-wifi"
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
 
-#: internetSharing-wifi-desc
-msgid ""
-"Allow other devices to share my phone’s Internet connection by connecting "
-"via Wi-Fi."
-msgstr ""
-"Ƙyale sauran na'urori su raba haɗin wayata na intanet ta hanyar haɗi tare da "
-"Wi-Fi."
-
 #: wifi-hotspot
+#, fuzzy
+msgctxt "wifi-hotspot"
 msgid "Wi-Fi hotspot"
 msgstr "Turakar Wi-Fi"
 
@@ -1567,6 +1659,8 @@ msgid "Security"
 msgstr "Tsaro"
 
 #: usb-tethering
+#, fuzzy
+msgctxt "usb-tethering"
 msgid "USB tethering"
 msgstr "Talalar USB"
 
@@ -1668,33 +1762,22 @@ msgstr "Dogo"
 msgid "Select a tone"
 msgstr "Zaɓi amo"
 
-#: ringer
-msgid "Ringer"
-msgstr "Mai kaɗawa"
-
-#: ring-tones
+#: ringtones
 msgid "Ringtones"
 msgstr "Sautin kira"
-
-#: alert-tones
-msgid "Alert tones"
-msgstr "Amon faɗakarwa"
-
-#: manage-sounds
-msgid "Manage Sounds"
-msgstr "Tafiyar da sauti"
-
-#: manage-ringtones
-msgid "Manage Ringtones"
-msgstr "Tafiyar da Sautin kira"
-
-#: other-sounds
-msgid "Other sounds"
-msgstr "Wasu sautunan"
 
 #: alerts
 msgid "Alerts"
 msgstr "Faɗakarwa"
+
+#: manage-tones
+#, fuzzy
+msgid "Manage Tones"
+msgstr "Tafiyar da sauti"
+
+#: other-sounds
+msgid "Other sounds"
+msgstr "Wasu sautunan"
 
 #: unlock-screen
 msgid "Unlock screen"
@@ -1712,25 +1795,18 @@ msgstr "Saƙon da aka Aika"
 msgid "Alarm"
 msgstr "Ƙararrawa"
 
-#: ringer-and-notification-sound
-msgid "Ringer & Notifications"
+#: ringtone-and-notification-sound
+#, fuzzy
+msgid "Ringtones & Notifications"
 msgstr "Mai kaɗawa & Sanarwa"
 
 #: media-sound
 msgid "Media"
 msgstr "Kaɗe-kaɗe"
 
-#: savingringtone
-msgid "Saving ringtone…"
-msgstr "Ya na ajiye sautin kira..."
-
-#: unplayable-ringtone
-msgid ""
-"The ringtone was not changed because the selected file can not be played on "
-"this phone."
+#: saving-tone
+msgid "Saving…"
 msgstr ""
-"Ba'a canja sautin kira ba sabo da fayil ɗin da aka zaɓa ba za'a iya kunna "
-"shi a wannan wayar ba."
 
 #: no-ringtone-app
 msgid "We were unable to find a ringtone app to manage ringtones!"
@@ -1882,6 +1958,24 @@ msgstr "Zaɓi nahiya"
 msgid "Select time zone"
 msgstr "Zaɓi lokacin nahiya"
 
+#: time-format
+#, fuzzy
+msgctxt "time-format"
+msgid "Format"
+msgstr "Shirya"
+
+#: time-format-time
+msgid "Time Format"
+msgstr ""
+
+#: hour-12
+msgid "12-hour"
+msgstr ""
+
+#: hour-24
+msgid "24-hour"
+msgstr ""
+
 #. # Personalization :: Language & Region
 #: languageAndRegion
 msgid "Language & Region"
@@ -1928,11 +2022,13 @@ msgid "{{simManager}}"
 msgstr "{{simManager}}"
 
 #: simSettings
-msgid "SIM settings"
+#, fuzzy
+msgid "SIM Settings"
 msgstr "Saitunan SIM"
 
 #: sim-manager-outgoing-calls
-msgid "Outgoing calls"
+#, fuzzy
+msgid "Outgoing Calls"
 msgstr "Kiraye-kiraye masu fita"
 
 #: sim-manager-outgoing-call-desc
@@ -1940,7 +2036,8 @@ msgid "Calls will be sent from"
 msgstr "Za'a aika kira daga"
 
 #: sim-manager-outgoing-messages
-msgid "Outgoing messages"
+#, fuzzy
+msgid "Outgoing Messages"
 msgstr "Saƙwanni masu fita"
 
 #: sim-manager-outgoing-messages-desc
@@ -1997,6 +2094,10 @@ msgctxt "vertical-homescreen-header"
 msgid "Homescreen"
 msgstr "Fuskar gida"
 
+#: vertical-homescreen-layout
+msgid "Layout"
+msgstr ""
+
 #: vertical-homescreen-icon-layout
 msgid "Icon Layout"
 msgstr "Shirya alama"
@@ -2013,6 +2114,16 @@ msgstr "Gida huɗu"
 msgid "Notice"
 msgstr "Sanarwa"
 
+#: search
+msgctxt "search"
+msgid "Search"
+msgstr ""
+
+#: search-header
+msgctxt "search-header"
+msgid "Search"
+msgstr ""
+
 #: search-engine
 msgid "Search Engine"
 msgstr "Inji Mai nema"
@@ -2020,21 +2131,6 @@ msgstr "Inji Mai nema"
 #: search-suggestions
 msgid "Search Suggestions"
 msgstr "Shawarwarin Nema"
-
-#. # LOCALIZATION NOTE (search-suggestions-button, search-suggestions-header):
-#. # If you leave the original en-US value "{{search-suggestions}}" in the following
-#. # strings, the localization will be automatically picked from the existing
-#. # string with ID "search-suggestions". If you need to adapt your localization to
-#. # the reduced space available in header or button, you can use shorter strings here.
-#: search-suggestions-button
-msgctxt "search-suggestions-button"
-msgid "{{search-suggestions}}"
-msgstr "{{search-suggestions}}"
-
-#: search-suggestions-header
-msgctxt "search-suggestions-header"
-msgid "{{search-suggestions}}"
-msgstr "{{search-suggestions}}"
 
 #: search-suggestions-description
 msgid ""
@@ -2075,9 +2171,14 @@ msgid "Description"
 msgstr "Kwatance"
 
 #. # Personalization :: Keyboard
-#: installedInputMethods
-msgid "Installed input methods"
-msgstr "Ya saka hanyoyin sakawa "
+#: keyboardSettings
+msgid "Keyboard Settings"
+msgstr ""
+
+#: selectedKeyboards
+#, fuzzy
+msgid "Selected Keyboards"
+msgstr "Zaɓaɓɓun allon madannai"
 
 #: keyboards
 msgid "Keyboards"
@@ -2108,31 +2209,20 @@ msgstr "Allon madannai"
 msgid "Dial Pad"
 msgstr "Allon bugawa"
 
-#: selectedKeyboards
-msgid "Selected keyboards"
+#: selectKeyboards
+#, fuzzy
+msgid "Select Keyboards"
 msgstr "Zaɓaɓɓun allon madannai"
 
-#. # LOCALIZATION NOTE (selectedKeyboards-header): if you leave the original
-#. # en-US value "{{selectedKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "selectedKeyboards".
+#. # LOCALIZATION NOTE (selectKeyboards-header): if you leave the original
+#. # en-US value "{{selectKeyboards}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "selectKeyboards".
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
-#: selectedKeyboards-header
-msgid "{{selectedKeyboards}}"
+#: selectKeyboards-header
+#, fuzzy
+msgid "{{selectKeyboards}}"
 msgstr "{{selectedKeyboards}}"
-
-#: addMoreKeyboards
-msgid "Add more keyboards"
-msgstr "Daɗa ƙarin allon madannai"
-
-#. # LOCALIZATION NOTE (addMoreKeyboards-header): if you leave the original
-#. # en-US value "{{addMoreKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "addMoreKeyboards".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: addMoreKeyboards-header
-msgid "{{addMoreKeyboards}}"
-msgstr "{{addMoreKeyboards}}"
 
 #: mustHaveOneKeyboard
 msgid "At least one {{type}} keyboard should be selected"
@@ -2155,6 +2245,15 @@ msgstr "lamba"
 msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr ""
 "{{appName}} {{layoutName}} aka saita a matsayin shiryayyiyar hanya ta sakawa"
+
+#. # Personalization :: Themes
+#: themes
+msgid "Themes"
+msgstr ""
+
+#: themes-header
+msgid "{{themes}}"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Accounts
@@ -2192,6 +2291,8 @@ msgstr ""
 "aikacen Nemo Na'urata kamar Wuraren Kasuwanci na Firefox."
 
 #: fxa-invitation
+#, fuzzy
+msgctxt "fxa-invitation"
 msgid "Create account or sign in"
 msgstr "Ƙirƙiri asusu ko ka shiga"
 
@@ -2267,13 +2368,11 @@ msgctxt "findmydevice"
 msgid "Find My Device"
 msgstr "Nemo Na'urata"
 
-#: findmydevice-signup-description
-msgid "Find My Device allows you to locate, lock or erase your phone"
-msgstr "Nemo Na'urata zai ba ka dama domin gano, kulle ko goge wayarka"
-
-#: findmydevice-login
-msgid "Sign In or Create an Account"
-msgstr "Shiga ko ka Ƙirƙiri Asusu"
+#: findmydevice-create-account
+#, fuzzy
+msgctxt "findmydevice-create-account"
+msgid "Create account or sign in"
+msgstr "Ƙirƙiri asusu ko ka shiga"
 
 #: findmydevice-enable
 msgid "Enable Find My Device"
@@ -2282,14 +2381,6 @@ msgstr "Kunna Nemo Na'urata"
 #: findmydevice-about
 msgid "About Find My Device"
 msgstr "Dangane da Nemo Na'urata"
-
-#: findmydevice-settings-description
-msgid ""
-"Find My Device allows you to locate, lock or erase your phone from a web "
-"site:"
-msgstr ""
-"Nemo Na'urata zai ba ka dama domin gano, kulle ko goge wayarka daga dandalin "
-"yanar gizo:"
 
 #: findmydevice-enable-geolocation-prompt
 msgid "Enable Geolocation?"
@@ -2303,6 +2394,7 @@ msgstr "Domin ganin bigiren na'urarka, dole ka kunna mai gano wurin zama. "
 msgid "Geolocation Enabled"
 msgstr "An kunna mai nuna wurin zama"
 
+#. # Error messages
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
@@ -2310,14 +2402,17 @@ msgstr ""
 "A yanzu haka na'urar ba ta kan layi. Haɗa da yanar gizo kuma ka sake "
 "jarrabawa."
 
-#: findmydevice-active-tracking
-msgid "Your phone is being tracked by another device through the website."
-msgstr "Wata na'urar ta datse wayarka ta hanyar tashar yanar gizo."
-
-#: findmydevice-not-tracking
-msgid "No devices are actively tracking your phone through the website."
+#: findmydevice-error
+msgid "A Find My Device error has occurred."
 msgstr ""
-"Babu wasu na'rori da ke da kuzarin datse wayarka ta hanyar tashar yanar gizo."
+
+#: findmydevice-please-try
+msgid "Please try again."
+msgstr ""
+
+#: findmydevice-please-tap
+msgid "Please tap to try again."
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -2348,7 +2443,8 @@ msgid "{{screenLock}}"
 msgstr "{{screenLock}}"
 
 #: simSecurity
-msgid "SIM security"
+#, fuzzy
+msgid "SIM Security"
 msgstr "Tsaron SIM"
 
 #. # LOCALIZATION NOTE (simSecurity-header): if you leave the original
@@ -2401,31 +2497,6 @@ msgstr "Bayar"
 #: uninstallApp
 msgid "Uninstall app"
 msgstr "Cire saka aikace-aikace"
-
-#: uninstallConfirm
-msgid "Are you sure you want to uninstall {{ app }}?"
-msgstr "Ka tabbatar ka na so ka cire saka {{ app }}?"
-
-#. # Bookmarks/Everything.me app data
-#: clearBookmarkAppsData
-msgid "Clear bookmarks data"
-msgstr "Share bayanin zaunanniyar alama"
-
-#: confirmClearBookmarkAppsDataTitle
-msgid "Clear private data from bookmarks?"
-msgstr "A share bayanin ƙashin kai daga zaunanniyar alama?"
-
-#: confirmClearBookmarkAppsDataDesc
-msgid ""
-"This clears private data from bookmarks that have been added to the home "
-"screen. This cannot be undone."
-msgstr ""
-"Wanan zai share bayani daga zaunanniyar alama wadda aka daɗa zuwa fuskar "
-"gida ta kwamfuta. Ba za'a iya fasa wannan ba."
-
-#: clear
-msgid "Clear"
-msgstr "Share"
 
 #. # Security :: Phone Lock
 #: phone
@@ -2495,33 +2566,13 @@ msgstr "Tabbatar da lambar wucewa"
 msgid "Immediately"
 msgstr "Da gaggawa"
 
-#: after-five-seconds
-msgid "After 5 seconds"
-msgstr "Bayan daƙiƙa 5"
-
-#: after-fifteen-seconds
-msgid "After 15 seconds"
-msgstr "Bayan daƙiƙa 15"
-
-#: after-thirty-seconds
-msgid "After 30 seconds"
-msgstr "Bayan daƙiƙa 30"
-
 #: after-one-minute
 msgid "After 1 minute"
 msgstr "Bayan minti 1"
 
-#: after-two-minutes
-msgid "After 2 minutes"
-msgstr "Bayan mintina 2"
-
 #: after-five-minutes
 msgid "After 5 minutes"
 msgstr "Bayan mintina 5"
-
-#: after-ten-minutes
-msgid "After 10 minutes"
-msgstr "Bayan mintina 10"
 
 #: after-fifteen-minutes
 msgid "After 15 minutes"
@@ -2534,10 +2585,6 @@ msgstr "Bayan mintina 30"
 #: after-one-hour
 msgid "After 1 hour"
 msgstr "Bayan awa 1"
-
-#: after-four-hours
-msgid "After 4 hours"
-msgstr "Bayan awa 4"
 
 #: require-passcode
 msgid "Require passcode"
@@ -2877,9 +2924,10 @@ msgid "How does Do Not Track work?"
 msgstr "Ta yaya Kada Abi Sawu Na ke aiki?"
 
 #: doNotTrack-dd1
+#, fuzzy
 msgid ""
 "When you turn on Do Not Track, your device tells every website and app (as "
-"well as advertisers and other content providers) that you don’t want your "
+"well as advertisers and other content providers) that you do not want your "
 "behavior tracked."
 msgstr ""
 "Idan ka kunna Kada ABi Sawu Na, na'urarka za ta faɗawa ko wace tashar yanar "
@@ -2887,14 +2935,67 @@ msgstr ""
 "bayanai) cewa ba ka so a bi sawun mu'amalata."
 
 #: doNotTrack-dd2
+#, fuzzy
 msgid ""
-"Turning on Do Not Track won’t affect your ability to sign in to websites nor "
-"cause your device to forget your private information, such as the contents "
-"of shopping carts, location information or sign-in information."
+"Turning on Do Not Track will not affect your ability to sign in to websites "
+"nor cause your device to forget your private information, such as the "
+"contents of shopping carts, location information or sign-in information."
 msgstr ""
 "Kunna kada Abi Sawu Na ba zai shafi iyawarka ta shiga tashar yanar gizo ba "
 "ko ta jawo na'urarka ta manta bayananka na ƙashin kai, kamar abin da ya "
 "ƙunshi ayyukan kasuwanci, bayanin wurin zama ko bayanin shiga."
+
+#. # Security :: Browsing Privacy
+#: browsingPrivacy
+msgid "Browsing Privacy"
+msgstr ""
+
+#. # LOCALIZATION NOTE (browsingPrivacy-header): if you leave the original
+#. # en-US value "{{browsingPrivacy}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID
+#. # "browsingPrivacy". If you need to adapt your localization to the reduced space
+#. # available in headers, you can use a shorter string here.
+#: browsingPrivacy-header
+msgid "{{browsingPrivacy}}"
+msgstr ""
+
+#: confirm-clear-title
+#, fuzzy
+msgctxt "confirm-clear-title"
+msgid "Confirmation"
+msgstr "Tabbatarwa"
+
+#: clear-browsing-history
+msgid "Clear browsing history"
+msgstr ""
+
+#: confirm-clear-browsing-history
+msgid "Clear browsing history?"
+msgstr ""
+
+#: clear-cookies-and-stored-data
+msgid "Clear cookies and stored data"
+msgstr ""
+
+#: confirm-clear-cookies-and-stored-data
+msgid "Clear cookies and other data stored by sites on this device?"
+msgstr ""
+
+#: clear-boomarks-data
+msgid "Clear bookmarks data"
+msgstr "Share bayanin zaunanniyar alama"
+
+#: confirmClearBookmarkAppsDataDesc
+msgid ""
+"This clears private data from bookmarks that have been added to the home "
+"screen. This cannot be undone."
+msgstr ""
+"Wanan zai share bayani daga zaunanniyar alama wadda aka daɗa zuwa fuskar "
+"gida ta kwamfuta. Ba za'a iya fasa wannan ba."
+
+#: clear
+msgid "Clear"
+msgstr "Share"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Storage
@@ -2904,6 +3005,8 @@ msgid "Storage"
 msgstr "Ma'ajiya"
 
 #: enableUSBStorage1
+#, fuzzy
+msgctxt "enableUSBStorage1"
 msgid "USB storage"
 msgstr "Ma'ajiyar USB"
 
@@ -3008,6 +3111,19 @@ msgstr ""
 msgid "{{list}} shared"
 msgstr "wanda aka raba {{list}}"
 
+#. # Storage :: USB storage
+#: transferProtocol-header
+msgid "Transfer Protocol"
+msgstr ""
+
+#: protocol-mtp
+msgid "Media transfer protocol (MTP)"
+msgstr ""
+
+#: protocol-ums
+msgid "USB mass Storage (UMS)"
+msgstr ""
+
 #. # Storage :: Media storage
 #: mediaStorage
 msgid "Media storage"
@@ -3090,15 +3206,6 @@ msgstr "Mai zurfi"
 msgid "Enable USB storage?"
 msgstr "An kunna ma'ajiyar USB?"
 
-#: turn-on-ums-confirm
-msgid ""
-"Turning on Enable USB storage allows another computer or device connected "
-"using USB to access files on this phone."
-msgstr ""
-"Kunnawa za ta ba da dama ga ma'ajiyar USB ta ƙyale wata kwamfutar ko na'ura "
-"ta haɗu ta hanyar amfani da USB domin samun damar shiga fayiloli a wannan "
-"wayar."
-
 #: default-media-location
 msgid "Default media location"
 msgstr "Shiryayyen wurin ajiyar kaɗe-kaɗe"
@@ -3109,24 +3216,45 @@ msgstr ""
 "Zaɓi wurin da hotuna, bidiyoyi, kaɗe-kaɗe da abubuwan da aka sauke za'a "
 "ajiyesu a matsayin shiryayyu."
 
-#: change-default-location-confirm
+#: change-default-media-location-confirmation
 msgid ""
-"Changing the default media storage volume will affect where photos, videos, "
-"downloads and other media will be saved to by default. Existing data will "
-"remain in its current location."
+"Changing the default media storage location will affect where all media will "
+"be saved by default. Existing data will remain in its current location. Do "
+"you want to proceed?"
 msgstr ""
-"Canja sautin ma'ajiyar shiryayyun kaɗe-kaɗe na iya shafar inda hotuna, "
-"bidiyoyi, abubuwan da aka sauke da sauran kaɗe-kaɗe za'a ajiyesu a matsayin "
-"shiryayyu. Bayani na yanzu zai zauna a inda ya ke."
 
-#: share-using-usb
-msgid "Share using USB"
-msgstr "Raba ta amfani da USB"
+#: eject-sdcard-external-0
+msgid "Eject SD card"
+msgstr ""
 
-#: format-sdcard
-msgctxt "format-sdcard"
+#: eject-sdcard-external-1
+msgid "Eject SD card 2"
+msgstr ""
+
+#: format-sdcard-internal
+msgid "Format internal storage"
+msgstr ""
+
+#: format-sdcard-external-0
+#, fuzzy
+msgctxt "format-sdcard-external-0"
 msgid "Format SD card"
 msgstr "Tsara katin SD"
+
+#: format-sdcard-external-1
+#, fuzzy
+msgid "Format SD card 2"
+msgstr "Tsara katin SD"
+
+#: formatting
+msgid "Formatting…"
+msgstr ""
+
+#: unmount-sdcard-confirmation
+msgid ""
+"You will not be able to access content on the SD card after you unmount it. "
+"Do you want to proceed?"
+msgstr ""
 
 #: format-sdcard-title
 msgctxt "format-sdcard-title"
@@ -3141,8 +3269,14 @@ msgstr ""
 "hotuna."
 
 #: format-sdcard-btnformat
+#, fuzzy
+msgctxt "format-sdcard-btnformat"
 msgid "Format"
 msgstr "Shirya"
+
+#: sdcardUnmounted
+msgid "SD card unmounted"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Device
@@ -3179,7 +3313,8 @@ msgid "ICCID"
 msgstr "ICCID"
 
 #: deviceInfo-MSISDN
-msgid "Phone number"
+#, fuzzy
+msgid "Phone Number"
 msgstr "Lambar waya"
 
 #: deviceInfo-ICCID-unavailable-sim
@@ -3207,6 +3342,11 @@ msgstr "Wanda ba'a sani ba"
 msgid "SIM {{index}}: Unknown"
 msgstr "SIM {{index}}: Wanda ba'a sani ba"
 
+#: gitInfo
+#, fuzzy
+msgid "Git Commit Info"
+msgstr "Bayanin aikata laifi"
+
 #: developer
 msgid "Developer"
 msgstr "Mai bunƙasawa"
@@ -3220,28 +3360,40 @@ msgstr "Mai bunƙasawa"
 msgid "{{developer}}"
 msgstr "{{developer}}"
 
-#: hud
+#: hud-settings-button
 msgid "Developer HUD"
 msgstr "Mai bunƙasa HUD"
 
-#. # LOCALIZATION NOTE (hud-header, hud-button): if you leave the original
-#. # en-US value "{{hud}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "hud".
-#. # If you need to adapt your localizations to the available space in
-#. # headers or buttons, you can use different strings here.
-#: hud-header
-msgctxt "hud-header"
-msgid "{{hud}}"
-msgstr "{{hud}}"
+#. # LOCALIZATION NOTE (hud-settings-header): if you leave the original en-US value
+#. # "{{hud-settings-button}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-settings-button". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-settings-header
+msgid "{{hud-settings-button}}"
+msgstr ""
 
-#: hud-button
-msgctxt "hud-button"
-msgid "{{hud}}"
-msgstr "{{hud}}"
+#: hud-devtools
+#, fuzzy
+msgid "Developer tools"
+msgstr "Kayayyakin aiki na Mai bunƙasawa"
+
+#. # LOCALIZATION NOTE (hud-devtools-header): if you leave the original en-US
+#. # value "{{hud-devtools}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-devtools". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-devtools-header
+msgid "{{hud-devtools}}"
+msgstr ""
 
 #: hud-logging
 msgid "Log changes in ADB"
 msgstr "Canje-canjen shiga a ADB"
+
+#: hud-system
+msgid "Show system HUD"
+msgstr ""
 
 #: hud-problems
 msgid "Problems"
@@ -3271,6 +3423,10 @@ msgstr "Sake gudana"
 msgid "Jank"
 msgstr "Horo"
 
+#: jank-threshold
+msgid "Jank Threshold"
+msgstr "Mafarin Horo"
+
 #: hud-fps
 msgid "Frames per second"
 msgstr "Alluna a duk daƙiƙa"
@@ -3282,6 +3438,10 @@ msgstr "Lokacin lodawa"
 #: hud-memory
 msgid "Memory"
 msgstr "Ƙwaƙwalwa"
+
+#: hud-uss
+msgid "Unique Set Size"
+msgstr ""
 
 #: hud-appmemory
 msgid "App memory"
@@ -3317,7 +3477,8 @@ msgid "Software"
 msgstr "Masarrafar kwamfuta"
 
 #: devSettings
-msgid "Developer settings"
+#, fuzzy
+msgid "Developer Settings"
 msgstr "Saitunan mai bunƙasawa"
 
 #: debug
@@ -3364,6 +3525,14 @@ msgstr "Haƙawa"
 msgid "Simple tiling"
 msgstr "Haƙa mai sauƙi"
 
+#: low-precision
+msgid "Low-precision painting"
+msgstr ""
+
+#: low-opacity
+msgid "Low-precision transparency"
+msgstr ""
+
 #: draw-tile-borders
 msgid "Draw tile borders"
 msgstr "Zana iyaka mai tayil"
@@ -3384,6 +3553,10 @@ msgstr "Gyara ta hanyar USB"
 msgid "DevTools via Wi-Fi"
 msgstr "Kayayyakin bunƙasawa ta hanyar Wi-Fi"
 
+#: dev-tools-qps
+msgid "Pseudo-localization"
+msgstr ""
+
 #: debugger-disabled
 msgctxt "debugger-disabled"
 msgid "Disabled"
@@ -3397,14 +3570,6 @@ msgstr "ADB kawai"
 msgid "ADB and DevTools"
 msgstr "ADB da Kayayyakin bunƙasawa"
 
-#: devtools-overlay
-msgid "Show devtools overlay"
-msgstr "Nuna hawa-hawa na kayayyakin bunƙasawa"
-
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Mafarin Horo"
-
 #: wifi-debugging
 msgid "Wi-Fi output in ADB"
 msgstr "Fitarwar Wi-Fi a ADB"
@@ -3412,6 +3577,11 @@ msgstr "Fitarwar Wi-Fi a ADB"
 #: bluetooth-debugging
 msgid "Bluetooth output in ADB"
 msgstr "Fitarwar Bluetooth a ADB"
+
+#: nfc-debugging
+#, fuzzy
+msgid "NFC output in ADB"
+msgstr "Fitarwar Wi-Fi a ADB"
 
 #: console-enabled
 msgid "Console enabled"
@@ -3425,24 +3595,36 @@ msgstr "Mai Ganin Kati: Hotunan kariyar kwamfuta"
 msgid "Geolocation output in ADB"
 msgstr "Fitarwar Wurin zama a ADB"
 
+#: use-reviewer-certs
+msgid "Use Marketplace reviewer certs"
+msgstr ""
+
+#: shake-to-log
+msgid "Shake to save system log"
+msgstr ""
+
 #: model-name
 msgid "Model"
 msgstr "Misali"
 
 #: os-version
-msgid "OS version"
+#, fuzzy
+msgid "OS Version"
 msgstr "Yayin OS"
 
 #: firmware_revision
-msgid "Firmware revision"
+#, fuzzy
+msgid "Firmware Revision"
 msgstr "Nazarin ma'ajiyar waje ta kayan kwamfuta"
 
 #: hardware_revision
-msgid "Hardware revision"
+#, fuzzy
+msgid "Hardware Revision"
 msgstr "Nazarin kayayyakin kwamfuta"
 
 #: platform_version
-msgid "Platform version"
+#, fuzzy
+msgid "Platform Version"
 msgstr "Yayin Dandamali"
 
 #: build-id
@@ -3450,7 +3632,8 @@ msgid "Build Identifier"
 msgstr "Mai gano gini"
 
 #: update-channel
-msgid "Update channel"
+#, fuzzy
+msgid "Update Channel"
 msgstr "Zangon sabuntawa"
 
 #: update-url
@@ -3474,12 +3657,9 @@ msgstr "Ƙarin Bayani"
 msgid "{{more-info}}"
 msgstr "{{more-info}}"
 
-#: gitInfo
-msgid "Git commit info"
-msgstr "Bayanin aikata laifi"
-
 #: softwareUpdates
-msgid "Software updates"
+#, fuzzy
+msgid "Software Updates"
 msgstr "Sabunta masarrafar kwamfuta"
 
 #: check-update-daily
@@ -3495,11 +3675,13 @@ msgid "Monthly"
 msgstr "Wata-wata"
 
 #: check-for-updates
-msgid "Check for updates"
+#, fuzzy
+msgid "Check for Updates"
 msgstr "Duba sabuntawa"
 
 #: check-update-now
-msgid "Check now"
+#, fuzzy
+msgid "Check Now"
 msgstr "Duba yanzu"
 
 #: update-status
@@ -3544,23 +3726,15 @@ msgstr ""
 msgid "Learn More"
 msgstr "Ƙara koyo"
 
-#: reset-phone
-msgid "Reset Phone"
-msgstr "Sake saita Waya"
+#: reset-head
+#, fuzzy
+msgctxt "reset-head"
+msgid "Reset"
+msgstr "Sake saitawa"
 
 #: reset-warning-title
 msgid "CAUTION"
 msgstr "CAUTION"
-
-#: reset-warning-body
-msgid ""
-"Resetting will erase all your data, including any apps you’ve purchased. The "
-"phone will be restored to its factory condition. None of your settings or "
-"data will be saved."
-msgstr ""
-"Sake tsarawa zai goge duk bayananka, wanda ya haɗa da ko waɗanne aikace-"
-"aikacen da ka siya. Za'a farfaɗo da wayar kamar yanzu aka ƙerata. Babu "
-"saitunanka ko bayani da za'a ajiye."
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
 #: your-rights
@@ -3626,6 +3800,10 @@ msgstr ""
 #: about-legal-info
 msgid "Legal Information"
 msgstr "Bayanan da su ka shafi shari'a"
+
+#: about-credit-info
+msgid "Credits"
+msgstr ""
 
 #. # LOCALIZATION NOTE (about-legal-info-header): if you leave the original
 #. # en-US value "{{about-legal-info}}" in the following string, the localization
@@ -3734,10 +3912,6 @@ msgstr "Ƙaddamar da Fara Amfani na Farko"
 msgid "No first time use app found"
 msgstr "Ba'a sami aikace-aikacen fara amfani na farko ba"
 
-#: rocketbar-enabled
-msgid "Rocketbar enabled"
-msgstr "An kunna sandar roka"
-
 #: software-home-button
 msgid "Software home button"
 msgstr "Madannin gida na masarrafar kwamfuta"
@@ -3754,6 +3928,10 @@ msgstr "Ci gaban kawo sauyi"
 msgid "Gaia debug traces"
 msgstr "Gurabun gyara na Gaia"
 
+#: showScreenReaderSettings
+msgid "Show screen reader settings"
+msgstr ""
+
 #: app-transition
 msgid "App transition"
 msgstr "Aikace-aikacen kawo sauyi"
@@ -3761,6 +3939,10 @@ msgstr "Aikace-aikacen kawo sauyi"
 #: app-suspending
 msgid "App suspending"
 msgstr "Dakatar da aikace-aikace"
+
+#: verbose-app-permissions
+msgid "Verbose app permissions"
+msgstr ""
 
 #: window-management
 msgid "Window management"
@@ -3780,6 +3962,8 @@ msgid "Deselect all"
 msgstr "Fasa zaɓar duka"
 
 #: downloads-delete
+#, fuzzy
+msgctxt "downloads-delete"
 msgid "Delete"
 msgstr "Goge"
 
@@ -3821,16 +4005,6 @@ msgstr "Yanayin tsimin wuta"
 msgid "{{level}}% battery left"
 msgstr "{{level}}% batir ya rage"
 
-#: powerSave-explanation
-msgid ""
-"Turning on power save mode turns off the phone’s data, Bluetooth and "
-"Geolocation connections to extend battery life. You can still turn these "
-"services back on manually."
-msgstr ""
-"Kunna yanayin tsimin wuta zai kashe bayanan waya, Bluetooth da haɗin Wurin "
-"zama domin tsawaita rayuwar batir. Za ka iya sake kunna waɗannan aikace-"
-"aikace da hannu."
-
 #: turnOnAuto
 msgid "Turn on automatically"
 msgstr "Kunnawa mai yi da kanta"
@@ -3849,18 +4023,35 @@ msgstr "Samun dama"
 msgid "{{accessibility}}"
 msgstr "{{accessibility}}"
 
-#: invertColors
-msgid "Invert colors"
-msgstr "Canja kaloli"
-
 #: screenReader
 msgid "Screen reader"
 msgstr "Makaranciyar fuskar kwamfuta"
 
-#: showA11ySettings
-msgid "Show accessibility settings"
-msgstr "Nuna saitunan samun dama"
+#: screenReader-header
+msgctxt "screenReader-header"
+msgid "{{screenReader}}"
+msgstr ""
 
+#: screenReader-toggle
+msgctxt "screenReader-toggle"
+msgid "{{screenReader}}"
+msgstr ""
+
+#: colorFilter
+msgid "Color filter"
+msgstr ""
+
+#: colorFilter-header
+msgctxt "colorFilter-header"
+msgid "{{colorFilter}}"
+msgstr ""
+
+#: colorFilter-toggle
+msgctxt "colorFilter-toggle"
+msgid "{{colorFilter}}"
+msgstr ""
+
+#. # Device :: Accessibility :: Screen reader
 #: screenReader-enable-msg
 msgid ""
 "When the screen reader is enabled, your device will provide spoken feedback "
@@ -3909,6 +4100,19 @@ msgstr ""
 msgid "Stop"
 msgstr "Tsaya"
 
+#. # Device :: Accessibility :: Color filter
+#: colorFilter-invert
+msgid "Invert"
+msgstr ""
+
+#: colorFilter-grayscale
+msgid "Grayscale"
+msgstr ""
+
+#: colorFilter-contrast
+msgid "Contrast"
+msgstr ""
+
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
 msgctxt "improveBrowserOS"
@@ -3924,19 +4128,13 @@ msgstr "Inganta {{brandShortName}}"
 msgid "Send Mozilla Feedback"
 msgstr "Aikawa da Mozilla Amsa"
 
-#: performanceData
-msgid "Performance data"
-msgstr "Bayanin aiki"
-
-#: performanceDataInfo
-msgid "Help us improve {{brandShortName}} by sharing data about your phone."
+#: performanceAndUsageData
+msgid "Performance and usage data"
 msgstr ""
-"Taimaka mana mu inganta {{brandShortName}} ta raba bayanai dangane da "
-"wayarka."
 
-#: sharePerformanceData
-msgid "Submit performance data"
-msgstr "Miƙa bayanin aiki"
+#: sharePerformanceAndUsageData
+msgid "Submit data"
+msgstr ""
 
 #: crashReports
 msgid "Crash reports"
@@ -4240,3 +4438,227 @@ msgstr "Aika bayanai"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Sami Matsayin Tasha"
+
+#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
+#: is-warning-storage-header
+#, fuzzy
+msgctxt "is-warning-storage-header"
+msgid "USB storage"
+msgstr "Ma'ajiyar USB"
+
+#: is-warning-tethering-header
+#, fuzzy
+msgctxt "is-warning-tethering-header"
+msgid "USB tethering"
+msgstr "Talalar USB"
+
+#: is-warning-wifi-header
+#, fuzzy
+msgctxt "is-warning-wifi-header"
+msgid "Wi-Fi hotspot"
+msgstr "Turakar Wi-Fi"
+
+#: is-warning-storage-tethering-message
+msgid ""
+"Enabling USB storage will disable USB tethering. Do you want to enable USB "
+"storage?"
+msgstr ""
+
+#: is-warning-tethering-storage-message
+msgid ""
+"Enabling USB tethering will disable USB storage. Do you want to enable USB "
+"tethering?"
+msgstr ""
+
+#: is-warning-tethering-wifi-message
+msgid ""
+"Enabling USB tethering will disable Wi-Fi hotspot. Do you want to enable USB "
+"tethering?"
+msgstr ""
+
+#: is-warning-wifi-tethering-message
+msgid ""
+"Enabling Wi-Fi hotspot will disable USB tethering. Do you want to enable Wi-"
+"Fi hotspot?"
+msgstr ""
+
+#~ msgid "WPS failed"
+#~ msgstr "WPS ya gaza"
+
+#~ msgid "Failed to cancel WPS"
+#~ msgstr "Ya kasa soke WPS"
+
+#~ msgid "Voice calls to"
+#~ msgstr "Kiran murya zuwa"
+
+#~ msgid "Connected to phone audio"
+#~ msgstr "An haɗa da wurin sauraro na waya"
+
+#~ msgid "Connected to phone/media audio"
+#~ msgstr "An haɗa da waya/wurin sauraro na ma'ajiyar kaɗe-kaɗe"
+
+#~ msgid "Change phone name"
+#~ msgstr "Canja sunan waya"
+
+#~ msgid "Share my phone’s Internet connection with a USB-connected device."
+#~ msgstr "Raba haɗin intanet na wayata da na'ura mai haɗin USB."
+
+#~ msgid ""
+#~ "Allow other devices to share my phone’s Internet connection by connecting "
+#~ "via Wi-Fi."
+#~ msgstr ""
+#~ "Ƙyale sauran na'urori su raba haɗin wayata na intanet ta hanyar haɗi tare "
+#~ "da Wi-Fi."
+
+#~ msgid "Ringer"
+#~ msgstr "Mai kaɗawa"
+
+#~ msgid "Alert tones"
+#~ msgstr "Amon faɗakarwa"
+
+#~ msgid "Manage Ringtones"
+#~ msgstr "Tafiyar da Sautin kira"
+
+#~ msgid "Saving ringtone…"
+#~ msgstr "Ya na ajiye sautin kira..."
+
+#~ msgid ""
+#~ "The ringtone was not changed because the selected file can not be played "
+#~ "on this phone."
+#~ msgstr ""
+#~ "Ba'a canja sautin kira ba sabo da fayil ɗin da aka zaɓa ba za'a iya kunna "
+#~ "shi a wannan wayar ba."
+
+#~ msgctxt "search-suggestions-button"
+#~ msgid "{{search-suggestions}}"
+#~ msgstr "{{search-suggestions}}"
+
+#~ msgctxt "search-suggestions-header"
+#~ msgid "{{search-suggestions}}"
+#~ msgstr "{{search-suggestions}}"
+
+#~ msgid "Installed input methods"
+#~ msgstr "Ya saka hanyoyin sakawa "
+
+#~ msgid "Add more keyboards"
+#~ msgstr "Daɗa ƙarin allon madannai"
+
+#~ msgid "{{addMoreKeyboards}}"
+#~ msgstr "{{addMoreKeyboards}}"
+
+#~ msgid "Find My Device allows you to locate, lock or erase your phone"
+#~ msgstr "Nemo Na'urata zai ba ka dama domin gano, kulle ko goge wayarka"
+
+#~ msgid "Sign In or Create an Account"
+#~ msgstr "Shiga ko ka Ƙirƙiri Asusu"
+
+#~ msgid ""
+#~ "Find My Device allows you to locate, lock or erase your phone from a web "
+#~ "site:"
+#~ msgstr ""
+#~ "Nemo Na'urata zai ba ka dama domin gano, kulle ko goge wayarka daga "
+#~ "dandalin yanar gizo:"
+
+#~ msgid "Your phone is being tracked by another device through the website."
+#~ msgstr "Wata na'urar ta datse wayarka ta hanyar tashar yanar gizo."
+
+#~ msgid "No devices are actively tracking your phone through the website."
+#~ msgstr ""
+#~ "Babu wasu na'rori da ke da kuzarin datse wayarka ta hanyar tashar yanar "
+#~ "gizo."
+
+#~ msgid "Are you sure you want to uninstall {{ app }}?"
+#~ msgstr "Ka tabbatar ka na so ka cire saka {{ app }}?"
+
+#~ msgid "Clear private data from bookmarks?"
+#~ msgstr "A share bayanin ƙashin kai daga zaunanniyar alama?"
+
+#~ msgid "After 5 seconds"
+#~ msgstr "Bayan daƙiƙa 5"
+
+#~ msgid "After 15 seconds"
+#~ msgstr "Bayan daƙiƙa 15"
+
+#~ msgid "After 30 seconds"
+#~ msgstr "Bayan daƙiƙa 30"
+
+#~ msgid "After 2 minutes"
+#~ msgstr "Bayan mintina 2"
+
+#~ msgid "After 10 minutes"
+#~ msgstr "Bayan mintina 10"
+
+#~ msgid "After 4 hours"
+#~ msgstr "Bayan awa 4"
+
+#~ msgid ""
+#~ "Turning on Enable USB storage allows another computer or device connected "
+#~ "using USB to access files on this phone."
+#~ msgstr ""
+#~ "Kunnawa za ta ba da dama ga ma'ajiyar USB ta ƙyale wata kwamfutar ko "
+#~ "na'ura ta haɗu ta hanyar amfani da USB domin samun damar shiga fayiloli a "
+#~ "wannan wayar."
+
+#~ msgid ""
+#~ "Changing the default media storage volume will affect where photos, "
+#~ "videos, downloads and other media will be saved to by default. Existing "
+#~ "data will remain in its current location."
+#~ msgstr ""
+#~ "Canja sautin ma'ajiyar shiryayyun kaɗe-kaɗe na iya shafar inda hotuna, "
+#~ "bidiyoyi, abubuwan da aka sauke da sauran kaɗe-kaɗe za'a ajiyesu a "
+#~ "matsayin shiryayyu. Bayani na yanzu zai zauna a inda ya ke."
+
+#~ msgid "Share using USB"
+#~ msgstr "Raba ta amfani da USB"
+
+#~ msgctxt "hud-header"
+#~ msgid "{{hud}}"
+#~ msgstr "{{hud}}"
+
+#~ msgctxt "hud-button"
+#~ msgid "{{hud}}"
+#~ msgstr "{{hud}}"
+
+#~ msgid "Show devtools overlay"
+#~ msgstr "Nuna hawa-hawa na kayayyakin bunƙasawa"
+
+#~ msgid "Reset Phone"
+#~ msgstr "Sake saita Waya"
+
+#~ msgid ""
+#~ "Resetting will erase all your data, including any apps you’ve purchased. "
+#~ "The phone will be restored to its factory condition. None of your "
+#~ "settings or data will be saved."
+#~ msgstr ""
+#~ "Sake tsarawa zai goge duk bayananka, wanda ya haɗa da ko waɗanne aikace-"
+#~ "aikacen da ka siya. Za'a farfaɗo da wayar kamar yanzu aka ƙerata. Babu "
+#~ "saitunanka ko bayani da za'a ajiye."
+
+#~ msgid "Rocketbar enabled"
+#~ msgstr "An kunna sandar roka"
+
+#~ msgid ""
+#~ "Turning on power save mode turns off the phone’s data, Bluetooth and "
+#~ "Geolocation connections to extend battery life. You can still turn these "
+#~ "services back on manually."
+#~ msgstr ""
+#~ "Kunna yanayin tsimin wuta zai kashe bayanan waya, Bluetooth da haɗin "
+#~ "Wurin zama domin tsawaita rayuwar batir. Za ka iya sake kunna waɗannan "
+#~ "aikace-aikace da hannu."
+
+#~ msgid "Invert colors"
+#~ msgstr "Canja kaloli"
+
+#~ msgid "Show accessibility settings"
+#~ msgstr "Nuna saitunan samun dama"
+
+#~ msgid "Performance data"
+#~ msgstr "Bayanin aiki"
+
+#~ msgid "Help us improve {{brandShortName}} by sharing data about your phone."
+#~ msgstr ""
+#~ "Taimaka mana mu inganta {{brandShortName}} ta raba bayanai dangane da "
+#~ "wayarka."
+
+#~ msgid "Submit performance data"
+#~ msgstr "Miƙa bayanin aiki"
