@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-09 16:39+0100\n"
+"POT-Creation-Date: 2015-03-02 12:45+0000\n"
 "PO-Revision-Date: 2015-04-24 00:29+0000\n"
 "Last-Translator: ha-NG03_Bashir <bashirmudi2020@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1429835397.000000\n"
@@ -109,6 +109,14 @@ msgstr "Kullallen katin SIM"
 #: widget-sim-locked-meta
 msgid "Unlock your SIM to enable Usage."
 msgstr "Buɗe SIM ɗinka domin bayar da damar aiwatarwa."
+
+#: widget-unknown-heading
+msgid "Error"
+msgstr ""
+
+#: widget-unknown-meta
+msgid "Please, make sure airplane mode is off."
+msgstr ""
 
 #. # FTE Welcome
 #: fte
@@ -340,6 +348,10 @@ msgstr "Aikin waya"
 msgid "%b, %d"
 msgstr "%b, %d"
 
+#: long-date-format
+msgid "%B %d, %Y"
+msgstr ""
+
 #: sms-sent
 msgid "SMS sent"
 msgstr "An aika da SMS"
@@ -363,6 +375,10 @@ msgstr "Lokacin da ragowar kuɗi ya ke ƙasa da"
 #: phone-and-internet-data-report
 msgid "Phone and Internet data report"
 msgstr "Rahoton bayani na waya da intanet"
+
+#: internet-data-report
+msgid "Internet data report"
+msgstr ""
 
 #: starting-on
 msgid "Starting on"
@@ -428,7 +444,21 @@ msgstr "An kammala"
 msgid "Confirmation"
 msgstr "Tabbatarwa"
 
-#: reset-confirmation-warning
+#: reset-wifi-confirmation-warning
+msgid "Your current Wi-Fi data usage is {{wifiData}}. Clear it all?"
+msgstr ""
+
+#: reset-mobile-confirmation-warning
+msgid "Your current mobile data usage is {{mobileData}}. Clear it all?"
+msgstr ""
+
+#: reset-all-confirmation-warning
+msgid ""
+"Your current data usages are {{mobileData}} on mobile, {{wifiData}} on Wi-"
+"Fi. Clear it all?"
+msgstr ""
+
+#: reset-telephony-confirmation-warning
 msgid "All current data will be deleted. Are you sure you want to reset?"
 msgstr ""
 "Duk bayanan da ake da su yanzu za'a goge su. Ka tabbatar ka na so ka sake "
@@ -446,7 +476,7 @@ msgstr "Sake tsare amfani da Wi-Fi"
 msgid "Reset mobile usage"
 msgstr "Sake tsara amfani da waya"
 
-#: reset-all-data-usage
+#: reset-all
 msgid "Reset mobile & Wi-Fi data"
 msgstr "Sake tsara bayanan waya & Wi-Fi"
 
@@ -489,6 +519,13 @@ msgid ""
 msgstr ""
 "Hanzarin haɗi ya ragu bayan an kai iyaka. Ka duba wajen mai ba ka bayanai "
 "domin saita gwargwadon ƙararrawar da ta dace."
+
+#. # LOCALIZATION NOTE (data-limit-input-label): A label for an input field for
+#. # data limit. The following string is spoken by screen readers and not shown on
+#. # the screen.
+#: data-limit-input-label.ariaLabel
+msgid "Data limit"
+msgstr ""
 
 #. # LOCALIZATION NOTE (wifi-usage, mobile-usage): these strings are displayed in
 #. # the main window
@@ -595,6 +632,76 @@ msgstr "Waya"
 msgid "Loading interface data. Please retry in a while."
 msgstr "Ana ɗora bayanin mashiga. Sake jarrabawa nan da wani lokaci."
 
+#. # value in the following strings is an amount of data (100 MB, 2 GB...)
+#: data-limit
+msgid "Data Limit ({{value}})"
+msgstr ""
+
+#: data-available2
+msgctxt "data-available2"
+msgid "{[ plural(value) ]}"
+msgstr ""
+
+#: data-available2[zero]
+msgctxt "data-available2[zero]"
+msgid "{{value}} {{unit}} available"
+msgstr ""
+
+#: data-available2[one]
+msgctxt "data-available2[one]"
+msgid "{{value}} {{unit}} available"
+msgstr ""
+
+#: data-available2[two]
+msgctxt "data-available2[two]"
+msgid "{{value}} {{unit}} available"
+msgstr ""
+
+#: data-available2[few]
+msgctxt "data-available2[few]"
+msgid "{{value}} {{unit}} available"
+msgstr ""
+
+#: data-available2[many]
+msgctxt "data-available2[many]"
+msgid "{{value}} {{unit}} available"
+msgstr ""
+
+#: data-available2[other]
+msgctxt "data-available2[other]"
+msgid "{{value}} {{unit}} available"
+msgstr ""
+
+#: over-limit
+msgctxt "over-limit"
+msgid "{[ plural(value) ]}"
+msgstr ""
+
+#: over-limit[one]
+msgctxt "over-limit[one]"
+msgid "{{value}} {{unit}} over limit"
+msgstr ""
+
+#: over-limit[two]
+msgctxt "over-limit[two]"
+msgid "{{value}} {{unit}} over limit"
+msgstr ""
+
+#: over-limit[few]
+msgctxt "over-limit[few]"
+msgid "{{value}} {{unit}} over limit"
+msgstr ""
+
+#: over-limit[many]
+msgctxt "over-limit[many]"
+msgid "{{value}} {{unit}} over limit"
+msgstr ""
+
+#: over-limit[other]
+msgctxt "over-limit[other]"
+msgid "{{value}} {{unit}} over limit"
+msgstr ""
+
 #: verbose-chart-date-format
 msgid "{{em-month}} {{monthday-number}}"
 msgstr "{{em-month}} {{monthlyday-number}}"
@@ -614,9 +721,86 @@ msgid "KB"
 msgstr "KB"
 
 #: MB
+#, fuzzy
+msgctxt "MB"
 msgid "MB"
 msgstr "MB"
 
 #: GB
+#, fuzzy
+msgctxt "GB"
 msgid "GB"
 msgstr "GB"
+
+#. # LOCALIZATION NOTE (unit-*): For switch unit button a label describing the
+#. # unit. The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: unit-MB.ariaLabel
+#, fuzzy
+msgctxt "unit-MB.ariaLabel"
+msgid "MB"
+msgstr "MB"
+
+#: unit-GB.ariaLabel
+#, fuzzy
+msgctxt "unit-GB.ariaLabel"
+msgid "GB"
+msgstr "GB"
+
+#. # App Usage
+#: app-usage-list-header
+msgid "Mobile usage per app"
+msgstr ""
+
+#: app-usage-no-data
+msgid ""
+"You have not used any mobile data yet. Usage for each application will show "
+"up here when you do."
+msgstr ""
+
+#: data-used-since
+msgid "{{amount}} of data used since {{start-date}}"
+msgstr ""
+
+#: data-used-this-week
+msgid "{{amount}} of data used this week"
+msgstr ""
+
+#: data-used-this-month
+msgid "{{amount}} of data used this month"
+msgstr ""
+
+#: data-usage-other-apps
+msgid "Others"
+msgstr ""
+
+#: data-usage-browser-app
+msgid "Browser"
+msgstr ""
+
+#. # LOCALIZATION NOTE: For charts the following labels are used to describe
+#. # various layers drawn. The following strings are spoken by screen readers and
+#. # not shown on the screen.
+#: limit-layer-MB.ariaLabel
+msgid "Limit of {{value}} MB"
+msgstr ""
+
+#: limit-layer-GB.ariaLabel
+msgid "Limit of {{value}} GB"
+msgstr ""
+
+#: warning-layer.ariaLabel
+msgid "{{value}} left"
+msgstr ""
+
+#: limit-exceeded-layer.ariaLabel
+msgid "Exceeded by {{value}}"
+msgstr ""
+
+#: today-layer.ariaLabel
+msgid "Today is {{today}}"
+msgstr ""
+
+#: axis-layer.ariaLabel
+msgid "From {{from}} to {{to}}"
+msgstr ""
