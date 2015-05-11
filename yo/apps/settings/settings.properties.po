@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-28 19:29+0100\n"
+"POT-Creation-Date: 2014-10-22 16:13+0000\n"
 "PO-Revision-Date: 2015-04-22 10:55+0000\n"
 "Last-Translator: yo-NG02_Oluwatosin <dir22004@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1429700131.000000\n"
@@ -59,6 +59,8 @@ msgid "No"
 msgstr "Rárá"
 
 #: reset
+#, fuzzy
+msgctxt "reset"
 msgid "Reset"
 msgstr "Ṣàtúntò"
 
@@ -229,6 +231,16 @@ msgstr "Àìsílóníforíkorí"
 msgid "Manage networks"
 msgstr "Ṣàbojutó nẹ́tíwọkì"
 
+#: wifi-bad-credentials-title
+msgid "Failed connecting to Wi-Fi"
+msgstr ""
+
+#: wifi-bad-credentials-confirm
+msgid ""
+"Unable to connect to {{ssid}}, authentication failed due to bad credentials. "
+"Please re-enter the network password."
+msgstr ""
+
 #. # LOCALIZATION NOTE (manageNetworks-header): if you leave the original
 #. # en-US value "{{manageNetworks}}" in the following string, the localization
 #. # will be automatically picked from the existing string with ID "manageNetworks".
@@ -373,8 +385,15 @@ msgid "Notify me when an open network is available"
 msgstr "Fitómi létí nígbà tí nẹ́tíwọkì wà ní ṣíṣí sílẹ̀"
 
 #: macAddress
-msgid "MAC address"
+#, fuzzy
+msgid "MAC Address"
 msgstr "Àdírẹ̀sì MAC"
+
+#. # os = OS version. For example: 2.0.
+#. # The whole string may look like this: "Firefox OS 2.0"
+#: deviceInfo_software
+msgid "{{ brandShortName }} {{ os }}"
+msgstr ""
 
 #: macUnavailable
 msgctxt "macUnavailable"
@@ -467,9 +486,9 @@ msgstr "WPS ti pa rẹ́"
 msgid "WPS timed out"
 msgstr "Àkókò gbé WPS jáde"
 
-#: fullStatus-wps-failed
-msgid "WPS failed"
-msgstr "WPS kunà"
+#: fullStatus-wps-failed-error
+msgid "WPS failed [{{error}}]"
+msgstr ""
 
 #: fullStatus-wps-overlapped
 msgid "Another WPS PBC AP was found"
@@ -516,9 +535,9 @@ msgstr "Èyóòwù"
 msgid "Cancel WPS"
 msgstr "Pa WPS rẹ́"
 
-#: wpsCancelFailedMessage
-msgid "Failed to cancel WPS"
-msgstr "Kunà láti pa WPS rẹ́"
+#: wpsCancelFailedMessageError
+msgid "Failed to cancel WPS [{{error}}]"
+msgstr ""
 
 #. # Connectivity :: Call
 #: callSettings
@@ -632,9 +651,9 @@ msgstr "Tari sí nígbà tí wọn kò sí lárọ̀wọ́tó"
 msgid "When unreachable"
 msgstr "Nígbà kò sí lárọ̀wọ́tó"
 
-#: callForwardingForwardingVoiceTo
-msgid "Voice calls to"
-msgstr "Ìpè ohùn sí"
+#: callForwardingForwardingVoiceToNumber
+msgid "Voice calls to {{number}}"
+msgstr ""
 
 #: callForwardingNotForwarding
 msgctxt "callForwardingNotForwarding"
@@ -711,6 +730,10 @@ msgstr "Túnṣe ńọ́m̀bà ìpè "
 #: fdnSettings-header
 msgid "{{fdnSettings}}"
 msgstr "{{fdnSettings}}"
+
+#: fdn-authorizedNumbers
+msgid "Authorized numbers"
+msgstr "Àwọn nọ́ḿbà ìfúnláyè"
 
 #. # LOCALIZATION NOTE (fdn-authorizedNumbers-header): if you leave the original
 #. # en-US value "{{fdn-authorizedNumbers}}" in the following string, the localization
@@ -803,10 +826,6 @@ msgstr "Kóòdù PIN2 kòtọ́."
 msgid "Call forwarding is disabled by FDN."
 msgstr "Fífi ìpè sọwọ́ wà nípò àìṣeélò láti FDN."
 
-#: fdn-authorizedNumbers
-msgid "Authorized numbers"
-msgstr "Àwọn nọ́ḿbà ìfúnláyè"
-
 #: fdnContact-name
 msgid "name"
 msgstr "orúkọ"
@@ -857,11 +876,13 @@ msgid "{{messagingSettings}}"
 msgstr "{{messagingSettings}}"
 
 #: message-confirmation
-msgid "Message confirmation"
+#, fuzzy
+msgid "Message Confirmation"
 msgstr "Ìjẹ́rì iṣẹ́"
 
 #: message-delivery-reports
-msgid "Delivery reports"
+#, fuzzy
+msgid "Delivery Reports"
 msgstr "Àwọn ìjábọ̀ iṣẹ́ jíjẹ́"
 
 #: message-delivery-reports-details
@@ -869,7 +890,8 @@ msgid "Request notification of delivery for each message sent"
 msgstr "Béère ìfitónilétí iṣẹ́ jíjẹ́ fún iṣẹ́ kankan tí a fi jíṣẹ́"
 
 #: message-read-reports
-msgid "Read reports"
+#, fuzzy
+msgid "Read Reports"
 msgstr "Ka àwọn ìjábọ̀"
 
 #: message-read-reports-details
@@ -877,11 +899,13 @@ msgid "Request read report for each message sent"
 msgstr "Béèrè kíka ìjábọ̀ fún iṣẹ́ kankan tí a fi jíṣẹ́ "
 
 #: mmsTitle
-msgid "Multimedia messaging (MMS)"
+#, fuzzy
+msgid "Multimedia Messaging (MMS)"
 msgstr "Ìjiṣẹ́ ọlọ́pọ̀ọmídíà (MMS)"
 
 #: auto-retrieve
-msgid "Auto retrieve"
+#, fuzzy
+msgid "Auto Retrieve"
 msgstr "Gbà aládàáṣe pádà "
 
 #: auto-retrieve-details
@@ -905,7 +929,8 @@ msgid "Auto-configure"
 msgstr "Ṣàtòpọ̀ aládàáṣe"
 
 #: wapPushMessages
-msgid "WAP Push messages"
+#, fuzzy
+msgid "WAP Push Messages"
 msgstr "Tìí àwọn iṣẹ́ WAP"
 
 #: wapPush
@@ -913,12 +938,36 @@ msgid "WAP Push"
 msgstr "Tìí WAP"
 
 #: cellBroadcastMessages
-msgid "Cell broadcast messages"
+#, fuzzy
+msgid "Cell Broadcast Messages"
 msgstr "Sẹ́ẹ̀lì àwọn iṣẹ́ ìsọ kákìri"
 
 #: cellBroadcast
-msgid "Cell broadcast"
+#, fuzzy
+msgid "Cell Broadcast"
 msgstr "Sẹ́ẹ̀lì ìsọ kákìri"
+
+#: emergencyAlert
+msgid "Emergency Alert"
+msgstr ""
+
+#: messagingInformation
+#, fuzzy
+msgid "Information"
+msgstr "Ìjẹ́rì"
+
+#. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
+#: messaging-SMSC
+msgid "Service Center"
+msgstr ""
+
+#: messaging-sim-settings
+msgid "SIM {{index}} Settings"
+msgstr ""
+
+#: unknown-SMSC
+msgid "Info not available"
+msgstr ""
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
@@ -1099,6 +1148,21 @@ msgstr "Alábàáṣepọ̀"
 msgid "APN"
 msgstr "APN"
 
+#: apnSettings
+#, fuzzy
+msgid "APN settings"
+msgstr "Àwọn ààtò A-GPS"
+
+#. # LOCALIZATION NOTE (apnSettings-header): if you leave the original
+#. # en-US value "{{apnSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "apnSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: apnSettings-header
+#, fuzzy
+msgid "{{apnSettings}}"
+msgstr "{{fdnSettings}}"
+
 #: dataSettings
 msgid "Data settings"
 msgstr "Àwọn ààtò dátà"
@@ -1163,6 +1227,10 @@ msgstr "Ààt̀o IMS"
 #: imsSettings-header2
 msgid "{{imsSettings}}"
 msgstr "{{imsSettings}}"
+
+#: apn-editor-header
+msgid "APN Editor"
+msgstr ""
 
 #: mmsport
 msgid "MMS port"
@@ -1240,6 +1308,10 @@ msgstr "IPv6"
 msgid "IPv4/IPv6"
 msgstr "IPv4/IPv6"
 
+#: apn-type
+msgid "APN Type"
+msgstr ""
+
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
 msgstr "TÀN ìsopọ̀ dátà?"
@@ -1264,6 +1336,25 @@ msgstr ""
 "Ìdàlórí àdéhùn ìpèsè, owó àsanlé lè wáyé fún dátà nígbà tí o ba ń gbékíri ní "
 "agbegbè."
 
+#: change-apn-warning-message
+msgid ""
+"Depending on your service agreement, changing your APN setting may result in "
+"extra charges when roaming."
+msgstr ""
+
+#: change-apn-warning-question
+msgid "Do you want to proceed?"
+msgstr ""
+
+#: reset-apn-warning-title
+msgctxt "reset-apn-warning-title"
+msgid "Reset to Default"
+msgstr ""
+
+#: reset-apn-warning-message
+msgid "This resets the settings to default values. This cannot be undone."
+msgstr ""
+
 #: state-unknown
 msgid "Unknown state"
 msgstr "Ìpò aimọ̀"
@@ -1285,6 +1376,29 @@ msgstr "Ti sopọ̀ "
 #: state-forbidden
 msgid "Forbidden"
 msgstr "Èèwọ̀"
+
+#: delete-apn-confirm
+msgid "Delete this APN?"
+msgstr ""
+
+#: delete-apn
+#, fuzzy
+msgctxt "delete-apn"
+msgid "Delete"
+msgstr "Parẹ́"
+
+#: add-apn
+msgid "Add New APN"
+msgstr ""
+
+#: reset-apn
+msgctxt "reset-apn"
+msgid "Reset to Default"
+msgstr ""
+
+#: apnSettings-reset
+msgid "APN settings reset"
+msgstr ""
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
@@ -1397,17 +1511,9 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "Sopọ̀"
 
-#: device-status-connected-phone
-msgid "Connected to phone audio"
-msgstr "Sopọ̀ sí fóònù àfetigbọ́"
-
 #: device-status-connected-media
 msgid "Connected to media audio"
 msgstr "Sopọ̀ sí mídíà àfetigbọ́ "
-
-#: device-status-connected-phone-media
-msgid "Connected to phone/media audio"
-msgstr "Sopọ̀ sí fóònù/mídíà àfetigbọ̀"
 
 #: device-option-unpair
 msgid "Unpair"
@@ -1449,10 +1555,6 @@ msgstr "Fún ohun elò mi lórúkọ míìràn"
 #: unnamed-device
 msgid "Unknown device"
 msgstr "Ohun elò àìmọ̀"
-
-#: change-phone-name
-msgid "Change phone name"
-msgstr "Ṣàyípadà orúkọ fóònù"
 
 #: change-phone-name-desc
 msgid "Change the name of your device as it appears in your computer"
@@ -1524,24 +1626,14 @@ msgstr "{{internetSharing}}"
 msgid "USB"
 msgstr "USB"
 
-#: internetSharing-usb-desc
-msgid "Share my phone’s Internet connection with a USB-connected device."
-msgstr "Pín ìsopọ̀ fóònù Íntánẹ́tì mi pẹ̀lu ohun elò ìsopọ̀ USB."
-
 #: internetSharing-wifi
 msgctxt "internetSharing-wifi"
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
 
-#: internetSharing-wifi-desc
-msgid ""
-"Allow other devices to share my phone’s Internet connection by connecting "
-"via Wi-Fi."
-msgstr ""
-"Fàyègba àwọn ohun elò míìràn láti pín ìsopọ̀ Íntánẹ́tì fóònù mi nípa sísopọ̀ "
-"nípasẹ̀ WI-Fi."
-
 #: wifi-hotspot
+#, fuzzy
+msgctxt "wifi-hotspot"
 msgid "Wi-Fi hotspot"
 msgstr "Agbègbè iṣẹ́ Wi-Fi"
 
@@ -1560,6 +1652,8 @@ msgid "Security"
 msgstr "Aabò"
 
 #: usb-tethering
+#, fuzzy
+msgctxt "usb-tethering"
 msgid "USB tethering"
 msgstr "USB tethering"
 
@@ -1661,33 +1755,22 @@ msgstr "Gùn"
 msgid "Select a tone"
 msgstr "Yan ìró"
 
-#: ringer
-msgid "Ringer"
-msgstr "Ohun dídún"
-
-#: ring-tones
+#: ringtones
 msgid "Ringtones"
 msgstr "Ohun dídún"
-
-#: alert-tones
-msgid "Alert tones"
-msgstr "Ohùn ìtaníjí"
-
-#: manage-sounds
-msgid "Manage Sounds"
-msgstr "Ṣàkóso àwọn Ohùn"
-
-#: manage-ringtones
-msgid "Manage Ringtones"
-msgstr "Ṣàkóso Ohun dídún "
-
-#: other-sounds
-msgid "Other sounds"
-msgstr "Àwọn ohùn míìràn"
 
 #: alerts
 msgid "Alerts"
 msgstr "Ìtaníjí"
+
+#: manage-tones
+#, fuzzy
+msgid "Manage Tones"
+msgstr "Ṣàkóso àwọn Ohùn"
+
+#: other-sounds
+msgid "Other sounds"
+msgstr "Àwọn ohùn míìràn"
 
 #: unlock-screen
 msgid "Unlock screen"
@@ -1705,25 +1788,18 @@ msgstr "Fi iṣẹ́ jíṣẹ́"
 msgid "Alarm"
 msgstr "Aago ìtanijí"
 
-#: ringer-and-notification-sound
-msgid "Ringer & Notifications"
+#: ringtone-and-notification-sound
+#, fuzzy
+msgid "Ringtones & Notifications"
 msgstr "Oludun & Ìfitónilétí"
 
 #: media-sound
 msgid "Media"
 msgstr "Mídíà"
 
-#: savingringtone
-msgid "Saving ringtone…"
-msgstr "Ń fipamọ́ ohun dídún…"
-
-#: unplayable-ringtone
-msgid ""
-"The ringtone was not changed because the selected file can not be played on "
-"this phone."
+#: saving-tone
+msgid "Saving…"
 msgstr ""
-"Ohun dídun yìi ni a kò yípadà nítori fáìlì yíyàn ni a kòlè fi ṣeré lóri "
-"fóònù yíì."
 
 #: no-ringtone-app
 msgid "We were unable to find a ringtone app to manage ringtones!"
@@ -1873,6 +1949,24 @@ msgstr "Yan kọ́ntínẹ́ntì"
 msgid "Select time zone"
 msgstr "Yan àkókò àgbékalẹ̀ agbègbè"
 
+#: time-format
+#, fuzzy
+msgctxt "time-format"
+msgid "Format"
+msgstr "Fọ́màtì"
+
+#: time-format-time
+msgid "Time Format"
+msgstr ""
+
+#: hour-12
+msgid "12-hour"
+msgstr ""
+
+#: hour-24
+msgid "24-hour"
+msgstr ""
+
 #. # Personalization :: Language & Region
 #: languageAndRegion
 msgid "Language & Region"
@@ -1919,11 +2013,13 @@ msgid "{{simManager}}"
 msgstr "{{simManager}}"
 
 #: simSettings
-msgid "SIM settings"
+#, fuzzy
+msgid "SIM Settings"
 msgstr "Àwọn ààtò SIM"
 
 #: sim-manager-outgoing-calls
-msgid "Outgoing calls"
+#, fuzzy
+msgid "Outgoing Calls"
 msgstr "Àwọn ipè to ń jáde"
 
 #: sim-manager-outgoing-call-desc
@@ -1931,7 +2027,8 @@ msgid "Calls will be sent from"
 msgstr "A ó fi ipè jíṣẹ́ láti"
 
 #: sim-manager-outgoing-messages
-msgid "Outgoing messages"
+#, fuzzy
+msgid "Outgoing Messages"
 msgstr "Àwọn iṣẹ́ to ńlọ lọ́wọ́"
 
 #: sim-manager-outgoing-messages-desc
@@ -1987,6 +2084,10 @@ msgctxt "vertical-homescreen-header"
 msgid "Homescreen"
 msgstr "Aṣàfihàn ilé "
 
+#: vertical-homescreen-layout
+msgid "Layout"
+msgstr ""
+
 #: vertical-homescreen-icon-layout
 msgid "Icon Layout"
 msgstr "Ètò-ìrísí àwòrán aṣàmì"
@@ -2003,6 +2104,16 @@ msgstr "Ìlà òòró mẹ́rin"
 msgid "Notice"
 msgstr "Àkíyèsí"
 
+#: search
+msgctxt "search"
+msgid "Search"
+msgstr ""
+
+#: search-header
+msgctxt "search-header"
+msgid "Search"
+msgstr ""
+
 #: search-engine
 msgid "Search Engine"
 msgstr "Ẹ̀rọ ìṣàwárí"
@@ -2010,21 +2121,6 @@ msgstr "Ẹ̀rọ ìṣàwárí"
 #: search-suggestions
 msgid "Search Suggestions"
 msgstr "Ìṣàwárí Ìmọ̀ràn"
-
-#. # LOCALIZATION NOTE (search-suggestions-button, search-suggestions-header):
-#. # If you leave the original en-US value "{{search-suggestions}}" in the following
-#. # strings, the localization will be automatically picked from the existing
-#. # string with ID "search-suggestions". If you need to adapt your localization to
-#. # the reduced space available in header or button, you can use shorter strings here.
-#: search-suggestions-button
-msgctxt "search-suggestions-button"
-msgid "{{search-suggestions}}"
-msgstr "{{search-suggestions}}"
-
-#: search-suggestions-header
-msgctxt "search-suggestions-header"
-msgid "{{search-suggestions}}"
-msgstr "{{search-suggestions}}"
 
 #: search-suggestions-description
 msgid ""
@@ -2064,9 +2160,14 @@ msgid "Description"
 msgstr "Àpèjúwe"
 
 #. # Personalization :: Keyboard
-#: installedInputMethods
-msgid "Installed input methods"
-msgstr "Ṣàgbékalẹ̀ ìlànà àmúwọle"
+#: keyboardSettings
+msgid "Keyboard Settings"
+msgstr ""
+
+#: selectedKeyboards
+#, fuzzy
+msgid "Selected Keyboards"
+msgstr "Àtẹ bọ́tìnnì tí a yàn"
 
 #: keyboards
 msgid "Keyboards"
@@ -2097,31 +2198,20 @@ msgstr "Àtẹ onínọ́ńbà"
 msgid "Dial Pad"
 msgstr "Páàdì Ipè"
 
-#: selectedKeyboards
-msgid "Selected keyboards"
+#: selectKeyboards
+#, fuzzy
+msgid "Select Keyboards"
 msgstr "Àtẹ bọ́tìnnì tí a yàn"
 
-#. # LOCALIZATION NOTE (selectedKeyboards-header): if you leave the original
-#. # en-US value "{{selectedKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "selectedKeyboards".
+#. # LOCALIZATION NOTE (selectKeyboards-header): if you leave the original
+#. # en-US value "{{selectKeyboards}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "selectKeyboards".
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
-#: selectedKeyboards-header
-msgid "{{selectedKeyboards}}"
+#: selectKeyboards-header
+#, fuzzy
+msgid "{{selectKeyboards}}"
 msgstr "{{selectedKeyboards}}"
-
-#: addMoreKeyboards
-msgid "Add more keyboards"
-msgstr "Ṣafikun àtẹ bọ́tìnnì"
-
-#. # LOCALIZATION NOTE (addMoreKeyboards-header): if you leave the original
-#. # en-US value "{{addMoreKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "addMoreKeyboards".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: addMoreKeyboards-header
-msgid "{{addMoreKeyboards}}"
-msgstr "{{addMoreKeyboards}}"
 
 #: mustHaveOneKeyboard
 msgid "At least one {{type}} keyboard should be selected"
@@ -2143,6 +2233,15 @@ msgstr "nọ́ńbà"
 #: defaultKeyboardEnabled
 msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr "{{appName}} {{layoutName}} wàní ìṣafikún bíi ọ̀nà àfibọ̀ àkùnàyàn"
+
+#. # Personalization :: Themes
+#: themes
+msgid "Themes"
+msgstr ""
+
+#: themes-header
+msgid "{{themes}}"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Accounts
@@ -2180,6 +2279,8 @@ msgstr ""
 "bíi Ibiọjà Firefox."
 
 #: fxa-invitation
+#, fuzzy
+msgctxt "fxa-invitation"
 msgid "Create account or sign in"
 msgstr "Ṣẹ̀dá àkọọ́lẹ̀ tàbí wọlé"
 
@@ -2255,13 +2356,11 @@ msgctxt "findmydevice"
 msgid "Find My Device"
 msgstr "Wá Ohun elò Mi"
 
-#: findmydevice-signup-description
-msgid "Find My Device allows you to locate, lock or erase your phone"
-msgstr "Wa Ohun elò Mi fàyègba láti wá, tì tàbí parẹ́ lórí fóònù rẹ"
-
-#: findmydevice-login
-msgid "Sign In or Create an Account"
-msgstr "Wọlé tàbí Ṣẹ̀dá Àkọọ́lẹ̀ "
+#: findmydevice-create-account
+#, fuzzy
+msgctxt "findmydevice-create-account"
+msgid "Create account or sign in"
+msgstr "Ṣẹ̀dá àkọọ́lẹ̀ tàbí wọlé"
 
 #: findmydevice-enable
 msgid "Enable Find My Device"
@@ -2270,14 +2369,6 @@ msgstr "Mu ṣiṣẹ́ wá Ohun Elò Mi"
 #: findmydevice-about
 msgid "About Find My Device"
 msgstr "Nípa wá Ohun Elò Mi "
-
-#: findmydevice-settings-description
-msgid ""
-"Find My Device allows you to locate, lock or erase your phone from a web "
-"site:"
-msgstr ""
-"Wá Ohun Elò Mi fún ọ láyè láti ṣàwarí, tì tàbí parẹ́ lóri fóònù rẹ láti ojúlé "
-"wẹ́ẹ̀bù: "
 
 #: findmydevice-enable-geolocation-prompt
 msgid "Enable Geolocation?"
@@ -2291,19 +2382,24 @@ msgstr "Láti wo ibi ohun èlò, o gbọ́dọ̀ tan ìtọpinpin geolocation
 msgid "Geolocation Enabled"
 msgstr "Geolocation Ti wà ní títàn"
 
+#. # Error messages
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
 msgstr ""
 "Ohun elò wá àìsílóníforíkorí lọ́wọ́lọ́wọ́. Sopọ̀ mọ́ nẹ́tíwọkì kí o tún gbìyànjú."
 
-#: findmydevice-active-tracking
-msgid "Your phone is being tracked by another device through the website."
-msgstr "Ohun elò mííràn ńṣe ìtọ́pa fóònù rẹ láti ojú wẹ́ẹ̀bù."
+#: findmydevice-error
+msgid "A Find My Device error has occurred."
+msgstr ""
 
-#: findmydevice-not-tracking
-msgid "No devices are actively tracking your phone through the website."
-msgstr "Kòsí ohun elò mííràn tó ńṣe ìtọ́pa fóònù rẹ láti ojú wẹ́ẹ̀bù. "
+#: findmydevice-please-try
+msgid "Please try again."
+msgstr ""
+
+#: findmydevice-please-tap
+msgid "Please tap to try again."
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -2334,7 +2430,8 @@ msgid "{{screenLock}}"
 msgstr "{{screenLock}}"
 
 #: simSecurity
-msgid "SIM security"
+#, fuzzy
+msgid "SIM Security"
 msgstr "Ààbò SIM"
 
 #. # LOCALIZATION NOTE (simSecurity-header): if you leave the original
@@ -2387,31 +2484,6 @@ msgstr "Gba láàyè"
 #: uninstallApp
 msgid "Uninstall app"
 msgstr "Ṣàgbékúrò ìṣàfilọ́lẹ̀"
-
-#: uninstallConfirm
-msgid "Are you sure you want to uninstall {{ app }}?"
-msgstr "Ṣé ó dá ọ lójú pé o fẹ́ ṣàgbékúrò {{ app }}?"
-
-#. # Bookmarks/Everything.me app data
-#: clearBookmarkAppsData
-msgid "Clear bookmarks data"
-msgstr "Pa àwọn àmì ìwé dátà rẹ́"
-
-#: confirmClearBookmarkAppsDataTitle
-msgid "Clear private data from bookmarks?"
-msgstr "Pa àwọn àmì ìwé dátà ìkọ̀kọ̀ rẹ́?"
-
-#: confirmClearBookmarkAppsDataDesc
-msgid ""
-"This clears private data from bookmarks that have been added to the home "
-"screen. This cannot be undone."
-msgstr ""
-"Èyí pa dátà ìkọ̀kọ̀ rẹ́ kúrò nínu àwọn àmì ìwé tí a ṣàfikún sí aṣàfihàn ilé. "
-"Akòle ṣàyípadà èyí."
-
-#: clear
-msgid "Clear"
-msgstr "Parẹ́"
 
 #. # Security :: Phone Lock
 #: phone
@@ -2481,33 +2553,13 @@ msgstr "Jẹ́rì kóòdù ìgbaniwọlé"
 msgid "Immediately"
 msgstr "Kíákíá"
 
-#: after-five-seconds
-msgid "After 5 seconds"
-msgstr "Lẹ́hìn ìṣẹjú aayá márùn"
-
-#: after-fifteen-seconds
-msgid "After 15 seconds"
-msgstr "Lẹ́hìn ìṣẹjú aayá mẹ́ẹdogún"
-
-#: after-thirty-seconds
-msgid "After 30 seconds"
-msgstr "Lẹ́hìn ìṣẹjú àayá ọgbọ̀n"
-
 #: after-one-minute
 msgid "After 1 minute"
 msgstr "Lẹ́hìn ìṣẹjú kan"
 
-#: after-two-minutes
-msgid "After 2 minutes"
-msgstr "Lẹ́hìn ìṣẹjú méjì"
-
 #: after-five-minutes
 msgid "After 5 minutes"
 msgstr "Lẹ́hìn ìṣẹjú márùn"
-
-#: after-ten-minutes
-msgid "After 10 minutes"
-msgstr "Lẹ́hìn ìṣẹjú mẹ́wà"
 
 #: after-fifteen-minutes
 msgid "After 15 minutes"
@@ -2520,10 +2572,6 @@ msgstr "Lẹ́hìn 30 ìṣẹjú"
 #: after-one-hour
 msgid "After 1 hour"
 msgstr "Lẹ́hìn wákàtí 1"
-
-#: after-four-hours
-msgid "After 4 hours"
-msgstr "Lẹ́hìn wákàtí 4"
 
 #: require-passcode
 msgid "Require passcode"
@@ -2851,23 +2899,77 @@ msgid "How does Do Not Track work?"
 msgstr "Báwo ni Máṣe Tọpa Ṣe Ń ṣiṣẹ́?"
 
 #: doNotTrack-dd1
+#, fuzzy
 msgid ""
 "When you turn on Do Not Track, your device tells every website and app (as "
-"well as advertisers and other content providers) that you don’t want your "
+"well as advertisers and other content providers) that you do not want your "
 "behavior tracked."
 msgstr ""
 "Nígbà tí o tan Máṣe Tọpa, ohun elò rẹ sọfún gbogbo ojúlé wẹ́ẹ̀bù àti ìṣáfilọ́lẹ̀ "
 "(pẹ̀lú àwọn olùpolongo àti olùpesè àkóónú) pé o kòní ìhùwàsí ìtọpa."
 
 #: doNotTrack-dd2
+#, fuzzy
 msgid ""
-"Turning on Do Not Track won’t affect your ability to sign in to websites nor "
-"cause your device to forget your private information, such as the contents "
-"of shopping carts, location information or sign-in information."
+"Turning on Do Not Track will not affect your ability to sign in to websites "
+"nor cause your device to forget your private information, such as the "
+"contents of shopping carts, location information or sign-in information."
 msgstr ""
 "Títan Máṣẹ Tọpa kòní ṣàkobá fún ipá láti wọlé sí ojúlé wẹ́ẹ̀bù tàbí ṣòkunfà "
 "ohun elò rẹ láti gbàgbé ìwifún ìkọkọ̀ rẹ, bíi àkoonú àtẹ ìrajà, ìwifún ibi tí "
 "o wà tàbí ìwifún ìwọlé."
+
+#. # Security :: Browsing Privacy
+#: browsingPrivacy
+msgid "Browsing Privacy"
+msgstr ""
+
+#. # LOCALIZATION NOTE (browsingPrivacy-header): if you leave the original
+#. # en-US value "{{browsingPrivacy}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID
+#. # "browsingPrivacy". If you need to adapt your localization to the reduced space
+#. # available in headers, you can use a shorter string here.
+#: browsingPrivacy-header
+msgid "{{browsingPrivacy}}"
+msgstr ""
+
+#: confirm-clear-title
+#, fuzzy
+msgctxt "confirm-clear-title"
+msgid "Confirmation"
+msgstr "Ìjẹ́rì"
+
+#: clear-browsing-history
+msgid "Clear browsing history"
+msgstr ""
+
+#: confirm-clear-browsing-history
+msgid "Clear browsing history?"
+msgstr ""
+
+#: clear-cookies-and-stored-data
+msgid "Clear cookies and stored data"
+msgstr ""
+
+#: confirm-clear-cookies-and-stored-data
+msgid "Clear cookies and other data stored by sites on this device?"
+msgstr ""
+
+#: clear-boomarks-data
+msgid "Clear bookmarks data"
+msgstr "Pa àwọn àmì ìwé dátà rẹ́"
+
+#: confirmClearBookmarkAppsDataDesc
+msgid ""
+"This clears private data from bookmarks that have been added to the home "
+"screen. This cannot be undone."
+msgstr ""
+"Èyí pa dátà ìkọ̀kọ̀ rẹ́ kúrò nínu àwọn àmì ìwé tí a ṣàfikún sí aṣàfihàn ilé. "
+"Akòle ṣàyípadà èyí."
+
+#: clear
+msgid "Clear"
+msgstr "Parẹ́"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Storage
@@ -2877,6 +2979,8 @@ msgid "Storage"
 msgstr "Ìpamọ́"
 
 #: enableUSBStorage1
+#, fuzzy
+msgctxt "enableUSBStorage1"
 msgid "USB storage"
 msgstr "Ìpamọ́ USB"
 
@@ -2981,6 +3085,19 @@ msgstr ""
 msgid "{{list}} shared"
 msgstr "{{list}} tí a pín"
 
+#. # Storage :: USB storage
+#: transferProtocol-header
+msgid "Transfer Protocol"
+msgstr ""
+
+#: protocol-mtp
+msgid "Media transfer protocol (MTP)"
+msgstr ""
+
+#: protocol-ums
+msgid "USB mass Storage (UMS)"
+msgstr ""
+
 #. # Storage :: Media storage
 #: mediaStorage
 msgid "Media storage"
@@ -3063,14 +3180,6 @@ msgstr "Ìlọsíwájú"
 msgid "Enable USB storage?"
 msgstr "Tàn ìfipámọ́ USB?"
 
-#: turn-on-ums-confirm
-msgid ""
-"Turning on Enable USB storage allows another computer or device connected "
-"using USB to access files on this phone."
-msgstr ""
-"Yíyí láti tàn ìfipámọ́ USB fàyègba kọ̀ǹpútà mííràn tàbí ohun elò tí a sopọ̀ tí "
-"o ńlo USB láti wọ àwọn fáìlì lóri fóònù yíì."
-
 #: default-media-location
 msgid "Default media location"
 msgstr "Ibi àkùnàyàn mídíà"
@@ -3079,24 +3188,45 @@ msgstr "Ibi àkùnàyàn mídíà"
 msgid "Choose where photos, videos, music and downloads are stored by default."
 msgstr "Yan ibi àkùnàyàn yóò fi àwọn fọ́tò, fídíò, orin àti ìgbàwálẹ̀ pamọsí."
 
-#: change-default-location-confirm
+#: change-default-media-location-confirmation
 msgid ""
-"Changing the default media storage volume will affect where photos, videos, "
-"downloads and other media will be saved to by default. Existing data will "
-"remain in its current location."
+"Changing the default media storage location will affect where all media will "
+"be saved by default. Existing data will remain in its current location. Do "
+"you want to proceed?"
 msgstr ""
-"Ìyípadà àkùnàyàn ìpamọ́ agbára ìró mídíà yóò kóbá ibi tí fọ́tò, fídíò, "
-"ìgbàwálẹ̀ àti mídíà míìràn yóò pamọsí làti àkùnàyàn. Dátà tí ó ti wà yóò wà "
-"láyè rẹ̀."
 
-#: share-using-usb
-msgid "Share using USB"
-msgstr "Ipin ilo USB"
+#: eject-sdcard-external-0
+msgid "Eject SD card"
+msgstr ""
 
-#: format-sdcard
-msgctxt "format-sdcard"
+#: eject-sdcard-external-1
+msgid "Eject SD card 2"
+msgstr ""
+
+#: format-sdcard-internal
+msgid "Format internal storage"
+msgstr ""
+
+#: format-sdcard-external-0
+#, fuzzy
+msgctxt "format-sdcard-external-0"
 msgid "Format SD card"
 msgstr "Fọ̀mátì SD káàdì"
+
+#: format-sdcard-external-1
+#, fuzzy
+msgid "Format SD card 2"
+msgstr "Fọ̀mátì SD káàdì"
+
+#: formatting
+msgid "Formatting…"
+msgstr ""
+
+#: unmount-sdcard-confirmation
+msgid ""
+"You will not be able to access content on the SD card after you unmount it. "
+"Do you want to proceed?"
+msgstr ""
 
 #: format-sdcard-title
 msgctxt "format-sdcard-title"
@@ -3109,8 +3239,14 @@ msgid ""
 msgstr "Èyí yó pa dátà ìpamọ́ rẹ lóri káàdì SD rẹ, bíi orin àti àwọn fọ́tò."
 
 #: format-sdcard-btnformat
+#, fuzzy
+msgctxt "format-sdcard-btnformat"
 msgid "Format"
 msgstr "Fọ́màtì"
+
+#: sdcardUnmounted
+msgid "SD card unmounted"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Device
@@ -3147,7 +3283,8 @@ msgid "ICCID"
 msgstr "ICCID"
 
 #: deviceInfo-MSISDN
-msgid "Phone number"
+#, fuzzy
+msgid "Phone Number"
 msgstr "Nọ́ḿbà fóònù"
 
 #: deviceInfo-ICCID-unavailable-sim
@@ -3175,6 +3312,11 @@ msgstr "Àìmọ̀"
 msgid "SIM {{index}}: Unknown"
 msgstr "SIM {{index}}: Àìmọ̀ "
 
+#: gitInfo
+#, fuzzy
+msgid "Git Commit Info"
+msgstr "Farajìn ìwifún gíìtì"
+
 #: developer
 msgid "Developer"
 msgstr "Olùmúgbèrú"
@@ -3188,28 +3330,40 @@ msgstr "Olùmúgbèrú"
 msgid "{{developer}}"
 msgstr "{{developer}}"
 
-#: hud
+#: hud-settings-button
 msgid "Developer HUD"
 msgstr "HUD Olùmúgbèrú"
 
-#. # LOCALIZATION NOTE (hud-header, hud-button): if you leave the original
-#. # en-US value "{{hud}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "hud".
-#. # If you need to adapt your localizations to the available space in
-#. # headers or buttons, you can use different strings here.
-#: hud-header
-msgctxt "hud-header"
-msgid "{{hud}}"
-msgstr "{{hud}}"
+#. # LOCALIZATION NOTE (hud-settings-header): if you leave the original en-US value
+#. # "{{hud-settings-button}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-settings-button". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-settings-header
+msgid "{{hud-settings-button}}"
+msgstr ""
 
-#: hud-button
-msgctxt "hud-button"
-msgid "{{hud}}"
-msgstr "{{hud}}"
+#: hud-devtools
+#, fuzzy
+msgid "Developer tools"
+msgstr "Irinṣẹ́ Olùmúgbèrú "
+
+#. # LOCALIZATION NOTE (hud-devtools-header): if you leave the original en-US
+#. # value "{{hud-devtools}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-devtools". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-devtools-header
+msgid "{{hud-devtools}}"
+msgstr ""
 
 #: hud-logging
 msgid "Log changes in ADB"
 msgstr "Àyípadà lọ́ọ̀gì ní ADB"
+
+#: hud-system
+msgid "Show system HUD"
+msgstr ""
 
 #: hud-problems
 msgid "Problems"
@@ -3239,6 +3393,10 @@ msgstr "Ìsànwálẹ̀"
 msgid "Jank"
 msgstr "Jáǹkì"
 
+#: jank-threshold
+msgid "Jank Threshold"
+msgstr "Ọ̣̀gangan ípinu Jáǹkì"
+
 #: hud-fps
 msgid "Frames per second"
 msgstr "Àwọn Ìdáwòrán ní ìṣẹjú àayá"
@@ -3250,6 +3408,10 @@ msgstr "Àkókò láti gbàwálẹ̀"
 #: hud-memory
 msgid "Memory"
 msgstr "Ibi ìpamọ́"
+
+#: hud-uss
+msgid "Unique Set Size"
+msgstr ""
 
 #: hud-appmemory
 msgid "App memory"
@@ -3285,7 +3447,8 @@ msgid "Software"
 msgstr "Ẹ̀yà àìrídìmú"
 
 #: devSettings
-msgid "Developer settings"
+#, fuzzy
+msgid "Developer Settings"
 msgstr "Àwọn ààtò olùmúgbèrú"
 
 #: debug
@@ -3332,6 +3495,14 @@ msgstr "Táìlì"
 msgid "Simple tiling"
 msgstr "Táìlì tó rọrùn"
 
+#: low-precision
+msgid "Low-precision painting"
+msgstr ""
+
+#: low-opacity
+msgid "Low-precision transparency"
+msgstr ""
+
 #: draw-tile-borders
 msgid "Draw tile borders"
 msgstr "Ya ààlà táìlì"
@@ -3352,6 +3523,10 @@ msgstr "Ìtánàsìse nípasẹ̀ USB"
 msgid "DevTools via Wi-Fi"
 msgstr "DevTools nípa Wi-Fi"
 
+#: dev-tools-qps
+msgid "Pseudo-localization"
+msgstr ""
+
 #: debugger-disabled
 msgctxt "debugger-disabled"
 msgid "Disabled"
@@ -3365,14 +3540,6 @@ msgstr "ADB nìkan"
 msgid "ADB and DevTools"
 msgstr "ADB àti DevTools"
 
-#: devtools-overlay
-msgid "Show devtools overlay"
-msgstr "Ṣàfihàn àgbélé devtools"
-
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Ọ̣̀gangan ípinu Jáǹkì"
-
 #: wifi-debugging
 msgid "Wi-Fi output in ADB"
 msgstr "Àṣàgbéjáde Wi-Fi ní ADB"
@@ -3380,6 +3547,11 @@ msgstr "Àṣàgbéjáde Wi-Fi ní ADB"
 #: bluetooth-debugging
 msgid "Bluetooth output in ADB"
 msgstr "Àṣàgbéjáde Bluetooth ní ADB"
+
+#: nfc-debugging
+#, fuzzy
+msgid "NFC output in ADB"
+msgstr "Àṣàgbéjáde Wi-Fi ní ADB"
 
 #: console-enabled
 msgid "Console enabled"
@@ -3393,24 +3565,36 @@ msgstr "Ìwò Káàdì: Yíyà Aṣàfihàn"
 msgid "Geolocation output in ADB"
 msgstr "Àṣàgbéjáde Geolocation ni ADB"
 
+#: use-reviewer-certs
+msgid "Use Marketplace reviewer certs"
+msgstr ""
+
+#: shake-to-log
+msgid "Shake to save system log"
+msgstr ""
+
 #: model-name
 msgid "Model"
 msgstr "Àwòṣe"
 
 #: os-version
-msgid "OS version"
+#, fuzzy
+msgid "OS Version"
 msgstr "Ẹ̀yà OS"
 
 #: firmware_revision
-msgid "Firmware revision"
+#, fuzzy
+msgid "Firmware Revision"
 msgstr "Àtúnyẹ̀wò fámúwià"
 
 #: hardware_revision
-msgid "Hardware revision"
+#, fuzzy
+msgid "Hardware Revision"
 msgstr "Àtúnyẹ̀wò ohun-èlò Alárídìmú"
 
 #: platform_version
-msgid "Platform version"
+#, fuzzy
+msgid "Platform Version"
 msgstr "Ẹ̀yà pẹpẹ"
 
 #: build-id
@@ -3418,7 +3602,8 @@ msgid "Build Identifier"
 msgstr "Aṣèdámọ̀ ṣàkójọ ìtumò èdè kọ̀ǹpútà"
 
 #: update-channel
-msgid "Update channel"
+#, fuzzy
+msgid "Update Channel"
 msgstr "Ṣàtúnṣe òpónà"
 
 #: update-url
@@ -3442,12 +3627,9 @@ msgstr "Ìwífún si"
 msgid "{{more-info}}"
 msgstr "{{more-info}}"
 
-#: gitInfo
-msgid "Git commit info"
-msgstr "Farajìn ìwifún gíìtì"
-
 #: softwareUpdates
-msgid "Software updates"
+#, fuzzy
+msgid "Software Updates"
 msgstr "Ṣàtúnṣe ẹ̀yà àìrídìmú"
 
 #: check-update-daily
@@ -3463,11 +3645,13 @@ msgid "Monthly"
 msgstr "Oṣooṣù"
 
 #: check-for-updates
-msgid "Check for updates"
+#, fuzzy
+msgid "Check for Updates"
 msgstr "Ṣàyẹ̀wò ìṣàfikún"
 
 #: check-update-now
-msgid "Check now"
+#, fuzzy
+msgid "Check Now"
 msgstr "Ṣàyẹ̀wò báyì"
 
 #: update-status
@@ -3514,23 +3698,15 @@ msgstr ""
 msgid "Learn More"
 msgstr "Kọ́si"
 
-#: reset-phone
-msgid "Reset Phone"
-msgstr "Ṣàtúntò Fóònù"
+#: reset-head
+#, fuzzy
+msgctxt "reset-head"
+msgid "Reset"
+msgstr "Ṣàtúntò"
 
 #: reset-warning-title
 msgid "CAUTION"
 msgstr "Ẹ̀SỌ̀PẸ̀LẸ́"
-
-#: reset-warning-body
-msgid ""
-"Resetting will erase all your data, including any apps you’ve purchased. The "
-"phone will be restored to its factory condition. None of your settings or "
-"data will be saved."
-msgstr ""
-"Ṣíṣe àtúntò yóò pa dátà rẹ rẹ́, pẹ̀lú ìṣàfilọ́lẹ̀ tí o rà. A ó ṣèmúbọ̀ sípò fóònù "
-"sí ipò bí o ti wà láti ilé iṣẹ́. Kòsí èyíkèyí ààtò tàbí dátà rẹ tí a ó fi "
-"pamọ́."
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
 #: your-rights
@@ -3593,6 +3769,10 @@ msgstr ""
 #: about-legal-info
 msgid "Legal Information"
 msgstr "Ìwifún Òfin"
+
+#: about-credit-info
+msgid "Credits"
+msgstr ""
 
 #. # LOCALIZATION NOTE (about-legal-info-header): if you leave the original
 #. # en-US value "{{about-legal-info}}" in the following string, the localization
@@ -3698,10 +3878,6 @@ msgstr "Ṣàfilọ́lẹ̀ Ìlò Ìgbà Àkọkọ́"
 msgid "No first time use app found"
 msgstr "Kòsí ìṣàfilọ́lẹ̀ ìlò ìgbà àkọkọ́"
 
-#: rocketbar-enabled
-msgid "Rocketbar enabled"
-msgstr "Rocketbar ti tàn"
-
 #: software-home-button
 msgid "Software home button"
 msgstr "Bọ́tìnì ẹ̀yà àìrídìmú ilé"
@@ -3718,6 +3894,10 @@ msgstr "Ìyípòpadà ńtẹ̀síwájú"
 msgid "Gaia debug traces"
 msgstr "Yọ àṣìṣe Gaia tí a rí"
 
+#: showScreenReaderSettings
+msgid "Show screen reader settings"
+msgstr ""
+
 #: app-transition
 msgid "App transition"
 msgstr "Ìyípòpadà ìṣàfilọ́lẹ̀"
@@ -3725,6 +3905,10 @@ msgstr "Ìyípòpadà ìṣàfilọ́lẹ̀"
 #: app-suspending
 msgid "App suspending"
 msgstr "Ìdádúró ìṣàfilọ́lẹ̀ "
+
+#: verbose-app-permissions
+msgid "Verbose app permissions"
+msgstr ""
 
 #: window-management
 msgid "Window management"
@@ -3744,6 +3928,8 @@ msgid "Deselect all"
 msgstr "Ṣàiyan gbogbo wọn"
 
 #: downloads-delete
+#, fuzzy
+msgctxt "downloads-delete"
 msgid "Delete"
 msgstr "Parẹ́"
 
@@ -3785,15 +3971,6 @@ msgstr "Ipò ìtọ́jú agbára"
 msgid "{{level}}% battery left"
 msgstr "{{level}}% bátírì tókù"
 
-#: powerSave-explanation
-msgid ""
-"Turning on power save mode turns off the phone’s data, Bluetooth and "
-"Geolocation connections to extend battery life. You can still turn these "
-"services back on manually."
-msgstr ""
-"Títan agbára ìfipamọ́ móòdù pa dátà fóònù, Bluetooth àti ìsopọ̀ Geolocation "
-"láti ṣàmúpọ̀ ẹ̀mí bátírì. O ṣì le tan iṣẹ́ yìí padà ní àfọwọ́ṣe."
-
 #: turnOnAuto
 msgid "Turn on automatically"
 msgstr "Tán padà nií ọ̀nà Àdáṣe"
@@ -3812,18 +3989,35 @@ msgstr "Ìṣègbàwọlésí"
 msgid "{{accessibility}}"
 msgstr "{{accessibility}}"
 
-#: invertColors
-msgid "Invert colors"
-msgstr "Ṣàyídà àwọ̀"
-
 #: screenReader
 msgid "Screen reader"
 msgstr "Akàwé aṣàfihàn"
 
-#: showA11ySettings
-msgid "Show accessibility settings"
-msgstr "Ṣàfihàn ààtò Ìgbaniláààyè"
+#: screenReader-header
+msgctxt "screenReader-header"
+msgid "{{screenReader}}"
+msgstr ""
 
+#: screenReader-toggle
+msgctxt "screenReader-toggle"
+msgid "{{screenReader}}"
+msgstr ""
+
+#: colorFilter
+msgid "Color filter"
+msgstr ""
+
+#: colorFilter-header
+msgctxt "colorFilter-header"
+msgid "{{colorFilter}}"
+msgstr ""
+
+#: colorFilter-toggle
+msgctxt "colorFilter-toggle"
+msgid "{{colorFilter}}"
+msgstr ""
+
+#. # Device :: Accessibility :: Screen reader
 #: screenReader-enable-msg
 msgid ""
 "When the screen reader is enabled, your device will provide spoken feedback "
@@ -3869,6 +4063,19 @@ msgstr "Dídá dúró àfikà aṣàfihàn yóò mú dúró gbogbo ì
 msgid "Stop"
 msgstr "Dúró"
 
+#. # Device :: Accessibility :: Color filter
+#: colorFilter-invert
+msgid "Invert"
+msgstr ""
+
+#: colorFilter-grayscale
+msgid "Grayscale"
+msgstr ""
+
+#: colorFilter-contrast
+msgid "Contrast"
+msgstr ""
+
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
 msgctxt "improveBrowserOS"
@@ -3884,17 +4091,13 @@ msgstr "Ṣàtúnṣe {{brandShortName}} "
 msgid "Send Mozilla Feedback"
 msgstr "Fi ìjábọ̀ Mozilla jíṣẹ́"
 
-#: performanceData
-msgid "Performance data"
-msgstr "Ìṣesí dátà"
+#: performanceAndUsageData
+msgid "Performance and usage data"
+msgstr ""
 
-#: performanceDataInfo
-msgid "Help us improve {{brandShortName}} by sharing data about your phone."
-msgstr "Ràn wá lọ́wọ́ ṣàtúnṣe {{brandShortName}} nípa pínpín dátà nípa fóònù rẹ."
-
-#: sharePerformanceData
-msgid "Submit performance data"
-msgstr "Fi ìṣesí dátà sílẹ̀"
+#: sharePerformanceAndUsageData
+msgid "Submit data"
+msgstr ""
 
 #: crashReports
 msgid "Crash reports"
@@ -4195,3 +4398,222 @@ msgstr "Fi Dátà Jiṣẹ́"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Gba Ìdúrópàtó Òpónà "
+
+#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
+#: is-warning-storage-header
+#, fuzzy
+msgctxt "is-warning-storage-header"
+msgid "USB storage"
+msgstr "Ìpamọ́ USB"
+
+#: is-warning-tethering-header
+#, fuzzy
+msgctxt "is-warning-tethering-header"
+msgid "USB tethering"
+msgstr "USB tethering"
+
+#: is-warning-wifi-header
+#, fuzzy
+msgctxt "is-warning-wifi-header"
+msgid "Wi-Fi hotspot"
+msgstr "Agbègbè iṣẹ́ Wi-Fi"
+
+#: is-warning-storage-tethering-message
+msgid ""
+"Enabling USB storage will disable USB tethering. Do you want to enable USB "
+"storage?"
+msgstr ""
+
+#: is-warning-tethering-storage-message
+msgid ""
+"Enabling USB tethering will disable USB storage. Do you want to enable USB "
+"tethering?"
+msgstr ""
+
+#: is-warning-tethering-wifi-message
+msgid ""
+"Enabling USB tethering will disable Wi-Fi hotspot. Do you want to enable USB "
+"tethering?"
+msgstr ""
+
+#: is-warning-wifi-tethering-message
+msgid ""
+"Enabling Wi-Fi hotspot will disable USB tethering. Do you want to enable Wi-"
+"Fi hotspot?"
+msgstr ""
+
+#~ msgid "WPS failed"
+#~ msgstr "WPS kunà"
+
+#~ msgid "Failed to cancel WPS"
+#~ msgstr "Kunà láti pa WPS rẹ́"
+
+#~ msgid "Voice calls to"
+#~ msgstr "Ìpè ohùn sí"
+
+#~ msgid "Connected to phone audio"
+#~ msgstr "Sopọ̀ sí fóònù àfetigbọ́"
+
+#~ msgid "Connected to phone/media audio"
+#~ msgstr "Sopọ̀ sí fóònù/mídíà àfetigbọ̀"
+
+#~ msgid "Change phone name"
+#~ msgstr "Ṣàyípadà orúkọ fóònù"
+
+#~ msgid "Share my phone’s Internet connection with a USB-connected device."
+#~ msgstr "Pín ìsopọ̀ fóònù Íntánẹ́tì mi pẹ̀lu ohun elò ìsopọ̀ USB."
+
+#~ msgid ""
+#~ "Allow other devices to share my phone’s Internet connection by connecting "
+#~ "via Wi-Fi."
+#~ msgstr ""
+#~ "Fàyègba àwọn ohun elò míìràn láti pín ìsopọ̀ Íntánẹ́tì fóònù mi nípa sísopọ̀ "
+#~ "nípasẹ̀ WI-Fi."
+
+#~ msgid "Ringer"
+#~ msgstr "Ohun dídún"
+
+#~ msgid "Alert tones"
+#~ msgstr "Ohùn ìtaníjí"
+
+#~ msgid "Manage Ringtones"
+#~ msgstr "Ṣàkóso Ohun dídún "
+
+#~ msgid "Saving ringtone…"
+#~ msgstr "Ń fipamọ́ ohun dídún…"
+
+#~ msgid ""
+#~ "The ringtone was not changed because the selected file can not be played "
+#~ "on this phone."
+#~ msgstr ""
+#~ "Ohun dídun yìi ni a kò yípadà nítori fáìlì yíyàn ni a kòlè fi ṣeré lóri "
+#~ "fóònù yíì."
+
+#~ msgctxt "search-suggestions-button"
+#~ msgid "{{search-suggestions}}"
+#~ msgstr "{{search-suggestions}}"
+
+#~ msgctxt "search-suggestions-header"
+#~ msgid "{{search-suggestions}}"
+#~ msgstr "{{search-suggestions}}"
+
+#~ msgid "Installed input methods"
+#~ msgstr "Ṣàgbékalẹ̀ ìlànà àmúwọle"
+
+#~ msgid "Add more keyboards"
+#~ msgstr "Ṣafikun àtẹ bọ́tìnnì"
+
+#~ msgid "{{addMoreKeyboards}}"
+#~ msgstr "{{addMoreKeyboards}}"
+
+#~ msgid "Find My Device allows you to locate, lock or erase your phone"
+#~ msgstr "Wa Ohun elò Mi fàyègba láti wá, tì tàbí parẹ́ lórí fóònù rẹ"
+
+#~ msgid "Sign In or Create an Account"
+#~ msgstr "Wọlé tàbí Ṣẹ̀dá Àkọọ́lẹ̀ "
+
+#~ msgid ""
+#~ "Find My Device allows you to locate, lock or erase your phone from a web "
+#~ "site:"
+#~ msgstr ""
+#~ "Wá Ohun Elò Mi fún ọ láyè láti ṣàwarí, tì tàbí parẹ́ lóri fóònù rẹ láti "
+#~ "ojúlé wẹ́ẹ̀bù: "
+
+#~ msgid "Your phone is being tracked by another device through the website."
+#~ msgstr "Ohun elò mííràn ńṣe ìtọ́pa fóònù rẹ láti ojú wẹ́ẹ̀bù."
+
+#~ msgid "No devices are actively tracking your phone through the website."
+#~ msgstr "Kòsí ohun elò mííràn tó ńṣe ìtọ́pa fóònù rẹ láti ojú wẹ́ẹ̀bù. "
+
+#~ msgid "Are you sure you want to uninstall {{ app }}?"
+#~ msgstr "Ṣé ó dá ọ lójú pé o fẹ́ ṣàgbékúrò {{ app }}?"
+
+#~ msgid "Clear private data from bookmarks?"
+#~ msgstr "Pa àwọn àmì ìwé dátà ìkọ̀kọ̀ rẹ́?"
+
+#~ msgid "After 5 seconds"
+#~ msgstr "Lẹ́hìn ìṣẹjú aayá márùn"
+
+#~ msgid "After 15 seconds"
+#~ msgstr "Lẹ́hìn ìṣẹjú aayá mẹ́ẹdogún"
+
+#~ msgid "After 30 seconds"
+#~ msgstr "Lẹ́hìn ìṣẹjú àayá ọgbọ̀n"
+
+#~ msgid "After 2 minutes"
+#~ msgstr "Lẹ́hìn ìṣẹjú méjì"
+
+#~ msgid "After 10 minutes"
+#~ msgstr "Lẹ́hìn ìṣẹjú mẹ́wà"
+
+#~ msgid "After 4 hours"
+#~ msgstr "Lẹ́hìn wákàtí 4"
+
+#~ msgid ""
+#~ "Turning on Enable USB storage allows another computer or device connected "
+#~ "using USB to access files on this phone."
+#~ msgstr ""
+#~ "Yíyí láti tàn ìfipámọ́ USB fàyègba kọ̀ǹpútà mííràn tàbí ohun elò tí a sopọ̀ "
+#~ "tí o ńlo USB láti wọ àwọn fáìlì lóri fóònù yíì."
+
+#~ msgid ""
+#~ "Changing the default media storage volume will affect where photos, "
+#~ "videos, downloads and other media will be saved to by default. Existing "
+#~ "data will remain in its current location."
+#~ msgstr ""
+#~ "Ìyípadà àkùnàyàn ìpamọ́ agbára ìró mídíà yóò kóbá ibi tí fọ́tò, fídíò, "
+#~ "ìgbàwálẹ̀ àti mídíà míìràn yóò pamọsí làti àkùnàyàn. Dátà tí ó ti wà yóò "
+#~ "wà láyè rẹ̀."
+
+#~ msgid "Share using USB"
+#~ msgstr "Ipin ilo USB"
+
+#~ msgctxt "hud-header"
+#~ msgid "{{hud}}"
+#~ msgstr "{{hud}}"
+
+#~ msgctxt "hud-button"
+#~ msgid "{{hud}}"
+#~ msgstr "{{hud}}"
+
+#~ msgid "Show devtools overlay"
+#~ msgstr "Ṣàfihàn àgbélé devtools"
+
+#~ msgid "Reset Phone"
+#~ msgstr "Ṣàtúntò Fóònù"
+
+#~ msgid ""
+#~ "Resetting will erase all your data, including any apps you’ve purchased. "
+#~ "The phone will be restored to its factory condition. None of your "
+#~ "settings or data will be saved."
+#~ msgstr ""
+#~ "Ṣíṣe àtúntò yóò pa dátà rẹ rẹ́, pẹ̀lú ìṣàfilọ́lẹ̀ tí o rà. A ó ṣèmúbọ̀ sípò "
+#~ "fóònù sí ipò bí o ti wà láti ilé iṣẹ́. Kòsí èyíkèyí ààtò tàbí dátà rẹ tí a "
+#~ "ó fi pamọ́."
+
+#~ msgid "Rocketbar enabled"
+#~ msgstr "Rocketbar ti tàn"
+
+#~ msgid ""
+#~ "Turning on power save mode turns off the phone’s data, Bluetooth and "
+#~ "Geolocation connections to extend battery life. You can still turn these "
+#~ "services back on manually."
+#~ msgstr ""
+#~ "Títan agbára ìfipamọ́ móòdù pa dátà fóònù, Bluetooth àti ìsopọ̀ Geolocation "
+#~ "láti ṣàmúpọ̀ ẹ̀mí bátírì. O ṣì le tan iṣẹ́ yìí padà ní àfọwọ́ṣe."
+
+#~ msgid "Invert colors"
+#~ msgstr "Ṣàyídà àwọ̀"
+
+#~ msgid "Show accessibility settings"
+#~ msgstr "Ṣàfihàn ààtò Ìgbaniláààyè"
+
+#~ msgid "Performance data"
+#~ msgstr "Ìṣesí dátà"
+
+#~ msgid "Help us improve {{brandShortName}} by sharing data about your phone."
+#~ msgstr ""
+#~ "Ràn wá lọ́wọ́ ṣàtúnṣe {{brandShortName}} nípa pínpín dátà nípa fóònù rẹ."
+
+#~ msgid "Submit performance data"
+#~ msgstr "Fi ìṣesí dátà sílẹ̀"
