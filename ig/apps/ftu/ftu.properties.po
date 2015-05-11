@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-19 23:16+0100\n"
+"POT-Creation-Date: 2015-03-19 18:45+0000\n"
 "PO-Revision-Date: 2015-04-23 13:51+0000\n"
 "Last-Translator: ig-NG02_Chigozie <ezeanichigozie@ikolo.com.ng>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1429797087.000000\n"
@@ -519,6 +519,10 @@ msgstr "Akpọchiri SIM PIN"
 msgid "No operator"
 msgstr "Onye na ahụ mara ọrụ adịghị"
 
+#: searchingOperator
+msgid "Searching"
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Language
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -626,6 +630,8 @@ msgid "secured by {{capabilities}}"
 msgstr "nwere nchedo n'aka {{capabilities}}"
 
 #: security
+#, fuzzy
+msgctxt "security"
 msgid "Security"
 msgstr "Nche"
 
@@ -648,6 +654,12 @@ msgstr "WPA-EAP"
 #: securityOpen
 msgid "Open"
 msgstr "Mepee"
+
+#: securityOpen.ariaLabel
+#, fuzzy
+msgctxt "securityOpen.ariaLabel"
+msgid "Security"
+msgstr "Nche"
 
 #: identity
 msgctxt "identity"
@@ -697,11 +709,11 @@ msgstr "Aha Netwọk SSID"
 #. # screen.
 #. # LOCALIZATION NOTE(wifiLevel): {{level}} will be replaced at run-time by a
 #. # number ranging from 1 to 4.
-#: wifiLevel
+#: wifiLevel.ariaLabel
 msgid "{{level}} of 4 bars"
 msgstr "{{level}} nke ogwe 4"
 
-#: networksList
+#: networksList.ariaLabel
 msgid "Networks found"
 msgstr "Netwọk ndị ahụrụ"
 
@@ -785,6 +797,38 @@ msgstr ""
 "Ị nwere ike ibubata ma dezie ndị enyi Facebook n'oge ọ bụla na ntọala "
 "Kọntaktị"
 
+#: facebook-import-msg
+msgid "{[ plural(imported) ]}"
+msgstr ""
+
+#: facebook-import-msg[zero]
+msgid "No friends imported (out of {{total}})"
+msgstr ""
+
+#: facebook-import-msg[one]
+msgid "One friend imported (out of {{total}})"
+msgstr ""
+
+#: facebook-import-msg[two]
+msgctxt "facebook-import-msg[two]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr ""
+
+#: facebook-import-msg[few]
+msgctxt "facebook-import-msg[few]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr ""
+
+#: facebook-import-msg[many]
+msgctxt "facebook-import-msg[many]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr ""
+
+#: facebook-import-msg[other]
+msgctxt "facebook-import-msg[other]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Fxa Intro
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -792,13 +836,11 @@ msgstr ""
 msgid "Firefox Accounts"
 msgstr "Akaụntụ Firefox"
 
-#: fxa-overview.innerHTML
+#: fxa-upsell.innerHTML
 msgid ""
-"A Firefox Account lets you use features like Find My Device and apps like "
-"the Firefox Marketplace."
+"A Firefox Account lets you find a lost phone and buy apps from the Firefox "
+"Marketplace."
 msgstr ""
-"Akaụntụ Firefox na enye gị ohere iji atụmatụ ndị dị ka Chọta Ngwaọrụ M na "
-"ngwa dị ka Ọdụ Ahịa Firefox."
 
 #: fxa-create-account-or-sign-in
 msgid "Create Account or Sign In"
@@ -881,46 +923,67 @@ msgstr "Biko, fanye kaadị SIM wee bidogharịa ekwentị gị."
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Sharing Performance Data
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: telemetry-sends
+#: telemetry-sends2
+#, fuzzy
 msgid ""
-"Telemetry sends Mozilla data about performance, hardware, configurations and "
-"customizations in your {{brandShortName}} device. We use this to make our "
-"products better, faster and more responsive."
+"Telemetry sends Mozilla data about performance, hardware, configurations, "
+"customizations and app usage in your {{brandShortName}} device. We use this "
+"to make our products better, faster and more responsive."
 msgstr ""
 "Telemetry na ezigara Mozilla data maka arụmọrụ, ngwaike, nhazi na ndozi na "
 "ngwaọrụ {{brandShortName}} gị. Anyị na eji nke a iji mee ka ngwaahịa anyị ka "
 "mma, ka ọsọ na nwekwuo nzaghachi."
 
-#. # LOCALIZATION NOTE(learn-more-telemetry.innerHTML, learn-more-information.innerHTML:
-#. # {{link}} will be replaced at run-time by an active link, the URL will be
-#. # used as text for the link.
-#: learn-more-telemetry.innerHTML
-msgid "Learn more at {{link}}"
-msgstr "Mụtakwuo na {{link}}"
+#: learn-more-telemetry2.innerHTML
+msgid ""
+"Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
+"a>"
+msgstr ""
 
-#: learn-more-information.innerHTML
-msgid "Learn how Mozilla handles your information at {{link}}"
-msgstr "Mara otu Mozilla si ejikwa ozi gị na {{link}}"
+#: learn-more-information2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # OS privacy
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: welcomeBrowser
+#: htmlWelcome2.innerHTML
+#, fuzzy
 msgid ""
-"Welcome to {{brandShortName}}, the free and open source operating system "
-"from Mozilla. Our mission is to promote openness, innovation and opportunity "
-"by keeping the power of the Web in your hands."
+"Welcome to <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>, "
+"the free and open source operating system from Mozilla. Our mission is to "
+"promote openness, innovation and opportunity by keeping the power of the Web "
+"in your hands."
 msgstr ""
 "Nnọọ na {{brandShortName}}, sistemụ arụmọrụ mepere emepe bụ n'efu si na "
 "Mozilla. Ebumnuche anyị bụ ịkwado mkpughe, nrụpụta na ohere idowe ike nke "
 "Weebụ n'aka gị."
 
-#. # LOCALIZATION NOTE(learn-more-privacy.innerHTML): {{link}} will be replaced at
-#. # run-time by an active link, string "learn-more-privacy-link" will be
-#. # used as text for the link.
-#: learn-more-privacy.innerHTML
-msgid "Learn how Mozilla handles your information in our {{link}}."
-msgstr "Mara otu Mozilla si ejikwa ozi gị na {{link}} anyị."
+#: htmlWelcome-link
+#, fuzzy
+msgctxt "htmlWelcome-link"
+msgid "{{brandShortName}}"
+msgstr "{{brandShortName}}"
+
+#: helpImprove2.innerHTML
+msgid ""
+"You can help us improve our products and services by automatically sending "
+"analytics data. See our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> to learn how we handle data from your "
+"device."
+msgstr ""
+
+#: helpImprove-link
+msgid "Privacy Notice"
+msgstr ""
+
+#: learn-more-privacy2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information in our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>."
+msgstr ""
 
 #: learn-more-privacy-link
 msgid "privacy policy"
@@ -946,16 +1009,9 @@ msgstr ""
 "Mozilla, ngwaahịa na mmemme ndị ọzọ nọketere gị, biko tinye adreesị ozi-e gị "
 "n'okpuru."
 
-#: collaborate
-msgid ""
-"I want to help improve {{brandShortName}} by sharing data about my phone."
+#: sharePerformanceAndUsageData2
+msgid "Yes! Send data."
 msgstr ""
-"Achọrọ m ịnyere aka melite {{brandShortName}} site na ịkekọrịta data gbasara "
-"ekwentị m."
-
-#: learnMore
-msgid "Learn more."
-msgstr "Mụtakwuo."
 
 #: emailAddress.placeholder
 msgid "Email address"
@@ -988,8 +1044,9 @@ msgstr "Ọdụ ahịa"
 msgid "{{privacy-marketplace}}"
 msgstr "{{privacy-marketplace}}"
 
-#: privacy-e-me
-msgid "everything.me"
+#: privacy-eme
+#, fuzzy
+msgid "EverythingMe"
 msgstr "everything.me"
 
 #. # please don't translate the brand name
@@ -1035,8 +1092,17 @@ msgstr "Bido ndugharị tabletị gị!"
 msgid "Join us for a quick tutorial about your new phone."
 msgstr "Sonye anyị maka nkuzi ọsọ ọsọ maka ekwentị ọhụrụ gị."
 
+#: joinTutorialUpdated
+msgid "Join us for a quick tutorial about the updates to your phone!"
+msgstr ""
+
 #: enjoyYourPhone
 msgid "You’re ready to enjoy your new phone."
+msgstr "Ị dịla nkwadobe ịnwe ọhụụ ekwentị ọhụrụ gị."
+
+#: enjoyYourPhoneUpdated
+#, fuzzy
+msgid "You’re ready to enjoy your updated phone."
 msgstr "Ị dịla nkwadobe ịnwe ọhụụ ekwentị ọhụrụ gị."
 
 #: optionsAvailable
@@ -1069,47 +1135,19 @@ msgstr "Ka anyị mee ya!"
 msgid "Tutorial"
 msgstr "Nkuzi"
 
-#: tutorial-step1-tiny
-msgid "Swipe from right to left to browse your apps."
-msgstr "Mịa site na akanri gaa na akaekpe iji chọgharịa ngwa gị."
-
-#: tutorial-step2-tiny
-msgctxt "tutorial-step2-tiny"
-msgid "Tap and hold on an icon to delete or move it."
-msgstr "Pịa ma jide otu akara iji hichapụ ma ọ bụ bugharịa ya."
-
-#: tutorial-step3-tiny
-msgid "Enter any keyword or topic and your phone will instantly adapt."
-msgstr "Tinye isiokwu ọ bụla, ekwentị gị ga-adaba ozugbo."
-
-#: tutorial-step4-tiny
-msgctxt "tutorial-step4-tiny"
+#: tutorial-step1-large-3
+#, fuzzy
+msgctxt "tutorial-step1-large-3"
 msgid ""
-"Swipe down to access recent notifications, credit information and settings."
+"Swipe down to access recent notifications, usage information and settings."
 msgstr "Mịdaa iji nweta amamọkwa ọhụrụ, ozi kredit na ntọala."
-
-#: tutorial-step5-tiny
-msgid "Tap and hold the home button to browse and close recent apps."
-msgstr "Pịa ma jide bọtịnụ ụlọ iji chọgharịa ma mechie ngwa nso nso."
-
-#: tutorial-step6-tiny
-msgid ""
-"Swipe from the side of the screen to move back and forth between recent apps."
-msgstr ""
-"Si n'akụkụ nke ihuenyo mịa iji laghachi ma gaa ihu n'etiti ngwa nso nso."
-
-#: tutorial-step1-large-2
-msgid ""
-"Swipe down from top to access recent notifications, credit information and "
-"settings."
-msgstr "Mịdaa site n'elu iji nweta amamọkwa, ozi kredit na ntọala."
 
 #: tutorial-step2-large-2
 msgid "Swipe left or right to discover new apps on home screen."
 msgstr "Mịa akaekpe ma ọ bụ akanri iji chọpụta ngwa ọhụrụ na ihuenyo mbata."
 
 #: tutorial-step3-large-2
-msgctxt "tutorial-step3-large-2"
+#, fuzzy
 msgid "Tap and hold on an icon to delete or move it."
 msgstr "Pịa ma jide otu akara iji hichapụ ma ọ bụ bugharịa ya."
 
@@ -1117,18 +1155,17 @@ msgstr "Pịa ma jide otu akara iji hichapụ ma ọ bụ bugharịa ya."
 msgid "Two fingers swipe up from the bottom edge to trigger card view."
 msgstr "Mmịgo mkpịsị aka abụọ site na akụkụ okpuru iji kpalite nlele kaadị."
 
-#: tutorial-vertical-scroll-tiny
+#: tutorial-vertical-scroll-v2-tiny
 msgid ""
-"Swipe up and down to browse your apps. Tap and hold an icon to move or "
-"delete it."
+"Swipe up and down to browse your apps and bookmarks. Tap and hold an icon to "
+"delete, move, or edit it."
 msgstr ""
-"Mịgoo ma mịdaa iji chọgharịa ngwa gị. Pịa ma jide otu akara iji bugharịa ma "
-"ọ bụ hichapụ ya."
 
-#: tutorial-notifications-tiny
-msgctxt "tutorial-notifications-tiny"
+#: tutorial-notifications-v2-tiny
+#, fuzzy
+msgctxt "tutorial-notifications-v2-tiny"
 msgid ""
-"Swipe down to access recent notifications, credit information and settings."
+"Swipe down to access recent notifications, usage information and settings."
 msgstr "Mịdaa iji nweta amamọkwa ọhụrụ, ozi kredit na ntọala."
 
 #: tutorial-sheets-tiny
@@ -1136,6 +1173,22 @@ msgid "Drag from the left edge of your screen to return to recently used apps."
 msgstr ""
 "Si na akụkụ akaekpe nke ihuenyo gị dọkpụrụ iji laghachi na ngwa ejiri nso "
 "nso a."
+
+#: tutorial-rocketbar-tiny
+msgid "Tap on the search box anytime to start a search or go to a website."
+msgstr ""
+
+#: tutorial-bookmarks-migration-tiny
+msgid ""
+"Your bookmarks have been moved to the homescreen. When editing, tap a "
+"bookmark to edit or rename it."
+msgstr ""
+
+#: tutorial-app-grouping-tiny
+msgid ""
+"Tap to expand and collapse app groups. Drag an app into a new space to "
+"create a group."
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Offline Error Dialog
@@ -1196,3 +1249,65 @@ msgstr "Usoro {{step}} nke {{total}}"
 #: progressbar.ariaLabel
 msgid "First Time Experience"
 msgstr "Ahụmịhe Oge Izizi"
+
+#~ msgid ""
+#~ "A Firefox Account lets you use features like Find My Device and apps like "
+#~ "the Firefox Marketplace."
+#~ msgstr ""
+#~ "Akaụntụ Firefox na enye gị ohere iji atụmatụ ndị dị ka Chọta Ngwaọrụ M na "
+#~ "ngwa dị ka Ọdụ Ahịa Firefox."
+
+#~ msgid "Learn more at {{link}}"
+#~ msgstr "Mụtakwuo na {{link}}"
+
+#~ msgid "Learn how Mozilla handles your information at {{link}}"
+#~ msgstr "Mara otu Mozilla si ejikwa ozi gị na {{link}}"
+
+#~ msgid "Learn how Mozilla handles your information in our {{link}}."
+#~ msgstr "Mara otu Mozilla si ejikwa ozi gị na {{link}} anyị."
+
+#~ msgid ""
+#~ "I want to help improve {{brandShortName}} by sharing data about my phone."
+#~ msgstr ""
+#~ "Achọrọ m ịnyere aka melite {{brandShortName}} site na ịkekọrịta data "
+#~ "gbasara ekwentị m."
+
+#~ msgid "Learn more."
+#~ msgstr "Mụtakwuo."
+
+#~ msgid "Swipe from right to left to browse your apps."
+#~ msgstr "Mịa site na akanri gaa na akaekpe iji chọgharịa ngwa gị."
+
+#~ msgid "Enter any keyword or topic and your phone will instantly adapt."
+#~ msgstr "Tinye isiokwu ọ bụla, ekwentị gị ga-adaba ozugbo."
+
+#~ msgid "Tap and hold the home button to browse and close recent apps."
+#~ msgstr "Pịa ma jide bọtịnụ ụlọ iji chọgharịa ma mechie ngwa nso nso."
+
+#~ msgid ""
+#~ "Swipe from the side of the screen to move back and forth between recent "
+#~ "apps."
+#~ msgstr ""
+#~ "Si n'akụkụ nke ihuenyo mịa iji laghachi ma gaa ihu n'etiti ngwa nso nso."
+
+#~ msgid ""
+#~ "Swipe down from top to access recent notifications, credit information "
+#~ "and settings."
+#~ msgstr "Mịdaa site n'elu iji nweta amamọkwa, ozi kredit na ntọala."
+
+#~ msgctxt "tutorial-step3-large-2"
+#~ msgid "Tap and hold on an icon to delete or move it."
+#~ msgstr "Pịa ma jide otu akara iji hichapụ ma ọ bụ bugharịa ya."
+
+#~ msgid ""
+#~ "Swipe up and down to browse your apps. Tap and hold an icon to move or "
+#~ "delete it."
+#~ msgstr ""
+#~ "Mịgoo ma mịdaa iji chọgharịa ngwa gị. Pịa ma jide otu akara iji bugharịa "
+#~ "ma ọ bụ hichapụ ya."
+
+#~ msgctxt "tutorial-notifications-tiny"
+#~ msgid ""
+#~ "Swipe down to access recent notifications, credit information and "
+#~ "settings."
+#~ msgstr "Mịdaa iji nweta amamọkwa ọhụrụ, ozi kredit na ntọala."

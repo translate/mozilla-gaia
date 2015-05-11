@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-24 11:19+0100\n"
+"POT-Creation-Date: 2015-02-11 19:45+0000\n"
 "PO-Revision-Date: 2015-02-07 18:42+0000\n"
 "Last-Translator: ig-NG02_Chigozie <ezeanichigozie@ikolo.com.ng>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,20 +11,20 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1423334557.000000\n"
 
-#: add
-msgid "Add"
-msgstr "Tinye"
-
 #: call
+#, fuzzy
+msgctxt "call"
 msgid "Call"
 msgstr "Kpọọ"
 
 #: edit
+#, fuzzy
+msgctxt "edit"
 msgid "Edit"
 msgstr "Dezie"
 
@@ -83,6 +83,8 @@ msgid "Delete contact?"
 msgstr "Hichapụ kọntaktị?"
 
 #: remove
+#, fuzzy
+msgctxt "remove"
 msgid "Remove"
 msgstr "Wepu"
 
@@ -103,6 +105,10 @@ msgstr "Kọntaktị a enweghị akara ekwentị"
 msgid "This contact does not have an email address"
 msgstr "Kọntaktị a enweghị adreesị ozi-e"
 
+#: no_contact_data
+msgid "This contact does not have a phone number and email address"
+msgstr ""
+
 #: removePhotoConfirm
 msgid "Remove contact picture?"
 msgstr "Wepu foto kọntaktị?"
@@ -111,11 +117,11 @@ msgstr "Wepu foto kọntaktị?"
 msgid "Loading contacts…"
 msgstr "Na-adọnye kọntaktị…"
 
-#. # LOCALIZATION NOTE(noContactsActivity): Shown when using the context menu to add
-#. # a number from your call list to a contact, and your contacts list is empty.
-#: noContactsActivity
-msgid "Cannot add to contact as your contact list is empty"
-msgstr "Enweghị ike itinye kọntaktị ebe ndepụta kọntaktị gị ghe oghe"
+#. # LOCALIZATION NOTE(noContactsActivity2): Shown when trying to pick a contact
+#. # there are no contacts in your Contacts list
+#: noContactsActivity2
+msgid "No contacts in your Contacts list"
+msgstr ""
 
 #. # Contact fields
 #: noName
@@ -131,6 +137,8 @@ msgid "Last name"
 msgstr "Aha nna"
 
 #: tel.placeholder
+#, fuzzy
+msgctxt "tel.placeholder"
 msgid "Phone"
 msgstr "Ekwentị"
 
@@ -181,10 +189,6 @@ msgstr "Asịsa"
 #: org.placeholder
 msgid "Company"
 msgstr "Ụlọ ọrụ"
-
-#: custom.placeholder
-msgid "Custom"
-msgstr "Ọpụrụiche"
 
 #: date
 msgctxt "date"
@@ -251,65 +255,82 @@ msgstr "Tinye dị ka Ọkacha mmasị"
 msgid "Remove as Favorite"
 msgstr "Wepu dị ka Ọkacha mmasị"
 
-#. # Field labels
-#: label
-msgid "Label"
-msgstr "Mmado"
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: addButton.ariaLabel
+msgid "Add"
+msgstr "Tinye"
 
-#: mobile
-msgid "Mobile"
-msgstr "Mkpanaka"
+#: editButton.ariaLabel
+#, fuzzy
+msgctxt "editButton.ariaLabel"
+msgid "Edit"
+msgstr "Dezie"
 
-#: home
-msgid "Home"
-msgstr "Ụlọ"
+#: settingsButton.ariaLabel
+msgid "Settings"
+msgstr "Ntọala"
 
-#: work
-msgid "Work"
-msgstr "Ọrụ"
+#: phoneDetail.ariaLabel
+#, fuzzy
+msgctxt "phoneDetail.ariaLabel"
+msgid "Phone"
+msgstr "Ekwentị"
 
-#: personal
-msgid "Personal"
-msgstr "Nkeonwe"
+#: emailDetail.ariaLabel
+#, fuzzy
+msgctxt "emailDetail.ariaLabel"
+msgid "Email"
+msgstr "Ozi-e"
 
-#: faxHome
-msgid "Fax home"
-msgstr "Ziga faksị n'ụlọ"
+#: addressDetail.ariaLabel
+#, fuzzy
+msgctxt "addressDetail.ariaLabel"
+msgid "Address"
+msgstr "Adreesị"
 
-#: faxOffice
-msgid "Fax office"
-msgstr "Ziga faksị n'ụlọ ọrụ"
+#: dateDetail.ariaLabel
+#, fuzzy
+msgctxt "dateDetail.ariaLabel"
+msgid "Date"
+msgstr "Ụbọchị"
 
-#: faxOther
-msgid "Fax other"
-msgstr "Ziga faksị n'ebe ọzọ"
+#: composeEmail.ariaLabel
+#, fuzzy
+msgctxt "composeEmail.ariaLabel"
+msgid "Email"
+msgstr "Ozi-e"
 
-#: another
-msgid "Another"
-msgstr "Ọzọ"
+#: makeCall.ariaLabel
+#, fuzzy
+msgctxt "makeCall.ariaLabel"
+msgid "Call"
+msgstr "Kpọọ"
 
-#: other
-msgid "Other"
-msgstr "Nke ọzọ"
+#: phones.ariaLabel
+#, fuzzy
+msgid "Phones"
+msgstr "Ekwentị"
 
-#: customTag.placeholder
-msgid "Custom tag"
-msgstr "Mkpado pụrụ iche"
+#: emails.ariaLabel
+#, fuzzy
+msgid "Emails"
+msgstr "Ozi-e"
 
-#. # Note: For localizers. This tag indicates the current address
-#: current
-msgid "Current"
-msgstr "Dị ugbu a"
+#: addresses.ariaLabel
+#, fuzzy
+msgid "Addresses"
+msgstr "Adreesị"
 
-#. # LOCALIZATION NOTE(itemWithLabel): Parameters in this string will be replaced
-#. # at run-time: {{label}} is the label associated to phone number or email,
-#. # item is the number/email itself. Examples for English: "Home, +123456789" or
-#. # "Work, foo@example.com".
-#: itemWithLabel
-msgid "{{label}}, {{item}}"
-msgstr "{{label}}, {{item}}"
+#: dates.ariaLabel
+#, fuzzy
+msgid "Dates"
+msgstr "Ụbọchị"
 
-#. # Hidden information, for screen readers
+#: notes.ariaLabel
+msgid "Notes"
+msgstr ""
+
 #: exit
 msgid "Exit"
 msgstr "Wepu"
@@ -371,12 +392,10 @@ msgid "Email address"
 msgstr "Adreesị ozi-e"
 
 #: legendAddress
+#, fuzzy
+msgctxt "legendAddress"
 msgid "Address"
 msgstr "Adreesị"
-
-#: settings
-msgid "Settings"
-msgstr "Ntọala"
 
 #. # search related
 #: search-contact.placeholder
@@ -420,16 +439,17 @@ msgstr "Bupu"
 msgid "Export to SIM"
 msgstr "Buga na SIM"
 
-#: sdExport-title
-msgid "Export to SD Card"
-msgstr "Buga na Kaadị SD"
+#: memoryCardExport-title
+msgid "Export to memory card"
+msgstr ""
 
 #: btExport-title
 msgid "Export to Bluetooth"
 msgstr "Buga na Bluetooth"
 
-#: sdUMSEnabled
-msgid "Cannot use SD Card because USB storage is enabled"
+#: memoryCardUMSEnabled
+#, fuzzy
+msgid "Cannot use memory card because USB storage is enabled"
 msgstr "Enweghị ike iji Kaadị SD n'ihi agbanyere nchekwa USB"
 
 #: exportErrorTitle
@@ -544,6 +564,10 @@ msgstr "Ozi"
 msgid "Wall post"
 msgstr "Mbisa ahụaja"
 
+#: share-contact
+msgid "Share Contact"
+msgstr ""
+
 #: facebook-export-forbidden
 msgid "The contact cannot be shared due to Facebook constraint."
 msgstr "Enweghị ike ịkekọrịta kọntaktị ahụ n'ihi mgbochi Facebook."
@@ -564,6 +588,10 @@ msgstr "Họrọ mkpanaka"
 #: select_email
 msgid "Select email"
 msgstr "Họrọ ozi-e"
+
+#: select_recipient
+msgid "Select recipient"
+msgstr ""
 
 #. # Settings related
 #: contactsOrderBy
@@ -625,19 +653,74 @@ msgstr "Kaadị SIM"
 msgid "Memory card"
 msgstr "Kaadị ebe nchekwa"
 
-#: simNumber
-msgid "SIM {{number}}"
+#: simNumberNoMSISDN
+#, fuzzy
+msgid "SIM {{number}}:"
 msgstr "{{number}} SIM"
 
+#: simNumberWithMSISDN
+msgid "SIM {{number}}: {{msisdn}}"
+msgstr ""
+
+#. # ICE Contacts
+#: ICEContactsGroup
+msgctxt "ICEContactsGroup"
+msgid "ICE Contacts"
+msgstr ""
+
+#: setICEButton
+msgid "Set ICE Contacts"
+msgstr ""
+
+#: ICESettingTitle
+msgctxt "ICESettingTitle"
+msgid "ICE Contacts"
+msgstr ""
+
+#: ICEDescription
+msgid "Add two contacts for making “In Case of Emergency” calls."
+msgstr ""
+
+#: ICEContact1
+msgid "ICE Contact 1"
+msgstr ""
+
+#: ICESelectContact
+#, fuzzy
+msgid "Select a contact"
+msgstr "Họrọ kọntaktị"
+
+#: ICEContact2
+msgid "ICE Contact 2"
+msgstr ""
+
+#: ICERepeatedContact
+msgid "This contact is already an existing ICE contact"
+msgstr ""
+
+#: ICEUnknownError
+msgid "There was an error setting the contact as ICE"
+msgstr ""
+
+#: ICEContactNoNumber
+#, fuzzy
+msgid "This contact doesn't have a phone number"
+msgstr "Kọntaktị a enweghị akara ekwentị"
+
+#: ICEFacebookContactNotAllowed
+msgid "Facebook contacts cannot be set as ICE contacts"
+msgstr ""
+
+#: ICEContactDelTel
+msgid "Deleted phone numbers are removed from ICE Contact"
+msgstr ""
+
+#: ICEContactDelTelAll
+msgid ""
+"All the numbers are deleted. This contact is removed from the ICE Contacts."
+msgstr ""
+
 #. # No contacts
-#: create-new
-msgid "Create a new contact"
-msgstr "Mepụta kọntaktị ọhụrụ"
-
-#: import-now
-msgid "Import your contacts from SIM card or Facebook"
-msgstr "Bubata kọntaktị gị site na kaadị SIM ma ọ bụ Facebook"
-
 #: no-contacts
 msgid "No contacts"
 msgstr "Kọntaktị adịghị"
@@ -834,3 +917,101 @@ msgstr "Vidio"
 #: audio
 msgid "Audio"
 msgstr "Ọdịyo"
+
+#. # Pick Destination
+#: pick_destination
+msgid "{{ destination }} {{ carrier }}"
+msgstr ""
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: removeField.ariaLabel
+#, fuzzy
+msgctxt "removeField.ariaLabel"
+msgid "Remove"
+msgstr "Wepu"
+
+#: undo.ariaLabel
+msgid "Undo"
+msgstr ""
+
+#: send-sms-button.ariaLabel
+msgid "SMS"
+msgstr ""
+
+#. # In Case of Emergency contacts (ICE)
+#: ice_contacts
+msgctxt "ice_contacts"
+msgid "ICE Contacts"
+msgstr ""
+
+#: edit-picture
+#, fuzzy
+msgid "Edit Picture"
+msgstr "Tinye Foto"
+
+#: remove-photo
+msgid "Remove photo"
+msgstr ""
+
+#: change-photo
+msgid "Change photo"
+msgstr ""
+
+#: photo-options
+msgid "Photo options"
+msgstr ""
+
+#~ msgid "Cannot add to contact as your contact list is empty"
+#~ msgstr "Enweghị ike itinye kọntaktị ebe ndepụta kọntaktị gị ghe oghe"
+
+#~ msgid "Custom"
+#~ msgstr "Ọpụrụiche"
+
+#~ msgid "Label"
+#~ msgstr "Mmado"
+
+#~ msgid "Mobile"
+#~ msgstr "Mkpanaka"
+
+#~ msgid "Home"
+#~ msgstr "Ụlọ"
+
+#~ msgid "Work"
+#~ msgstr "Ọrụ"
+
+#~ msgid "Personal"
+#~ msgstr "Nkeonwe"
+
+#~ msgid "Fax home"
+#~ msgstr "Ziga faksị n'ụlọ"
+
+#~ msgid "Fax office"
+#~ msgstr "Ziga faksị n'ụlọ ọrụ"
+
+#~ msgid "Fax other"
+#~ msgstr "Ziga faksị n'ebe ọzọ"
+
+#~ msgid "Another"
+#~ msgstr "Ọzọ"
+
+#~ msgid "Other"
+#~ msgstr "Nke ọzọ"
+
+#~ msgid "Custom tag"
+#~ msgstr "Mkpado pụrụ iche"
+
+#~ msgid "Current"
+#~ msgstr "Dị ugbu a"
+
+#~ msgid "{{label}}, {{item}}"
+#~ msgstr "{{label}}, {{item}}"
+
+#~ msgid "Export to SD Card"
+#~ msgstr "Buga na Kaadị SD"
+
+#~ msgid "Create a new contact"
+#~ msgstr "Mepụta kọntaktị ọhụrụ"
+
+#~ msgid "Import your contacts from SIM card or Facebook"
+#~ msgstr "Bubata kọntaktị gị site na kaadị SIM ma ọ bụ Facebook"
