@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-08 15:51+0000\n"
+"POT-Creation-Date: 2015-03-08 15:50+0000\n"
 "PO-Revision-Date: 2015-04-23 05:17+0000\n"
 "Last-Translator: ig-NG02_Chigozie <ezeanichigozie@ikolo.com.ng>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1429766220.000000\n"
@@ -34,6 +34,12 @@ msgstr "Iji zipu ma nweta ozi-e, ị ga-atọlite akaụntụ."
 #: setup-account-header3
 msgid "New Account"
 msgstr "Akaụntụ Ọhụrụ"
+
+#. # LOCALIZATION NOTE (setup-account-enter-password): Shown during account setup
+#. # if the autoconfig process determines a password is needed to complete setup.
+#: setup-account-enter-password
+msgid "Enter Password For:"
+msgstr ""
 
 #. # The placeholder for the display name of the user that will be displayed in the
 #. # account setup screen input box for the display name until they enter any text
@@ -339,6 +345,31 @@ msgctxt "setup-gmail-pop3-retry"
 msgid "Retry"
 msgstr "Nwagharịa"
 
+#. # LOCALIZATION NOTE (setup-fix-oauth2-header): The card header for the card that
+#. # asks the user to reauthorize the email account to use an OAuth2 token. This
+#. # may show up from time to time with a GMail account for example, but there are
+#. # other account types besides GMail that could be OAuth2 authorized.
+#: setup-fix-oauth2-header
+msgid "Reauthorize Email"
+msgstr ""
+
+#. # LOCALIZATION NOTE (setup-fix-oauth2-description): Describes that the account
+#. # needs to be reauthorized via OAuth2. The account is shown below this
+#. # description.
+#: setup-fix-oauth2-description
+msgid "Email needs to be reauthorized to access the following account:"
+msgstr ""
+
+#. # LOCALIZATION NOTE (setup-fix-oauth2-reauthorize): The button triggering the
+#. # reauthorization flow for OAuth2-protected account types. This will result in
+#. # a dialog-type browser window opening up and going to the account provider,
+#. # for instance GMail, so that the user can authorize the Email app to continue
+#. # to access the account.
+#: setup-fix-oauth2-reauthorize
+msgctxt "setup-fix-oauth2-reauthorize"
+msgid "Reauthorize"
+msgstr ""
+
 #: settings-main-header
 msgid "Mail Settings"
 msgstr "Ntọala Ozi"
@@ -371,6 +402,37 @@ msgstr "Gosipụta amamọkwa maka ozi ọhụrụ"
 msgid "Play sound after message is sent"
 msgstr "Kpọọ ụda ka ezipuchara ozi"
 
+#. # LOCALIZATION NOTE(settings-empty-signature-label): Text used for the button
+#. # that takes the user to edit the signature, if there is no existing signature
+#. # text. It should inform the user that tapping on it will lead to editing the
+#. # signature text.
+#: settings-empty-signature-label
+msgid "Tap to Edit"
+msgstr ""
+
+#. # LOCALIZATION NOTE (settings-account-signature-label): The label for the
+#. # signature field in the account settings card.
+#: settings-account-signature-label
+msgid "Signature"
+msgstr ""
+
+#. # LOCALIZATION NOTE (signature-save): This is the text for an option
+#. # in a dialog box that pops up when the user hits back with the
+#. # signature changed. The option keeps the saves the current signature in
+#. # the editor
+#: signature-save
+msgid "Save Signature"
+msgstr ""
+
+#. # LOCALIZATION NOTE (signature-discard-confirm): This is the text of the
+#. # button which discards changes when a user hits back in the signature
+#. # entry page.
+#: signature-discard-confirm
+#, fuzzy
+msgctxt "signature-discard-confirm"
+msgid "Discard"
+msgstr "Wepu"
+
 #. # For account settings screen, there are sections of settings, and each
 #. # section has a header. One is Data, which deals with sync intervals and
 #. # time windows for the data that is fetched.
@@ -399,6 +461,22 @@ msgstr "Ntọala sava"
 #: settings-account-userpass
 msgid "Username and password"
 msgstr "Aha njirimara na okwuntughe"
+
+#. # LOCALIZATION NOTE (ssettings-account-useroauth2): Label in the
+#. # "Server settings" sub-section of acccount settings for going to a settings
+#. # card that shows user name and a reauthorize option for an account that was
+#. # configured to use oauth2.
+#: settings-account-useroauth2
+#, fuzzy
+msgctxt "settings-account-useroauth2"
+msgid "Username"
+msgstr "Aha njirimara"
+
+#. # LOCALIZATION NOTE (settings-default-signature-2): The default signature
+#. # that the frontend adds in for new accounts
+#: settings-default-signature-2
+msgid "Sent Using Firefox OS"
+msgstr ""
 
 #: settings-done
 msgid "Done"
@@ -599,6 +677,14 @@ msgstr "Chekwaa"
 msgid "Password field should not be empty"
 msgstr "Ogige okwuntughe ekwesịghị ịghe oghe"
 
+#. # LOCALIZATION NOTE (settings-reauth): On the account credentials settings card,
+#. # if the account is an oauth2 account, this is the button label that allows the
+#. # user to reauthorize the email app to access their account via oauth2.
+#: settings-reauth
+msgctxt "settings-reauth"
+msgid "Reauthorize"
+msgstr ""
+
 #. # How much email to sync, in smallest unit of days, from the server. Only
 #. # valid for ActiveSync mail servers, not shown for other mail server types
 #. # like IMAP.
@@ -652,10 +738,6 @@ msgstr "Cc"
 #: envelope-bcc
 msgid "Bcc"
 msgstr "Bcc"
-
-#: reader-header
-msgid "Read"
-msgstr "Gụọ"
 
 #: compose-header
 msgid "Compose message"
@@ -735,12 +817,10 @@ msgid "Discard email?"
 msgstr "Tufuo ozi-e?"
 
 #: compose-discard-confirm
+#, fuzzy
+msgctxt "compose-discard-confirm"
 msgid "Discard"
 msgstr "Wepu"
-
-#: compose-sending-message
-msgid "Sending email"
-msgstr "Na-ezipu ozi-e"
 
 #: compose-send-message-failed
 msgid "Sending email failed"
@@ -782,7 +862,7 @@ msgstr "mgbakwunye{{ n }}"
 msgid "{{kilobytes}}K"
 msgstr "{{kilobytes}}K"
 
-#: message-attachment-view.textContent
+#: message-attachment-view
 msgid "View"
 msgstr "Gosi"
 
@@ -793,6 +873,14 @@ msgstr "Faịlụ a buru oke ibu ibudata."
 #: message-no-subject
 msgid "(no subject)"
 msgstr "(isiokwu adịghị)"
+
+#. # LOCALIZATION NOTE(message-edit-menu-edit):
+#. # Displayed in a menu; tapping this item will cause the user to edit the given item.
+#: message-edit-menu-edit
+#, fuzzy
+msgctxt "message-edit-menu-edit"
+msgid "Edit"
+msgstr "Dezie"
 
 #: message-edit-menu-delete
 msgctxt "message-edit-menu-delete"
@@ -813,6 +901,8 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: message-multiedit-header[zero]
+#, fuzzy
+msgctxt "message-multiedit-header[zero]"
 msgid "Edit"
 msgstr "Dezie"
 
@@ -845,33 +935,39 @@ msgstr "Ahọpụtara {{ n }}"
 msgid "Browse to URL?: {{ url }}"
 msgstr "Gaa na URL?: {{ url }}"
 
-#: message-download-images
-msgctxt "message-download-images"
+#: message-download-images-tap
+#, fuzzy
+msgctxt "message-download-images-tap"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: message-download-images[one]
-msgid "This email contains one image. Click to download."
+#: message-download-images-tap[one]
+#, fuzzy
+msgid "This email contains one image. Tap to download."
 msgstr "Ozi-e a nwere otu onyonyo. Pịa iji budata."
 
-#: message-download-images[two]
-msgctxt "message-download-images[two]"
-msgid "This email contains {{ n }} images. Click to download."
+#: message-download-images-tap[two]
+#, fuzzy
+msgctxt "message-download-images-tap[two]"
+msgid "This email contains {{ n }} images. Tap to download."
 msgstr "Ozi-e a nwere onyonyo {{ n }}. Pịa iji budata."
 
-#: message-download-images[few]
-msgctxt "message-download-images[few]"
-msgid "This email contains {{ n }} images. Click to download."
+#: message-download-images-tap[few]
+#, fuzzy
+msgctxt "message-download-images-tap[few]"
+msgid "This email contains {{ n }} images. Tap to download."
 msgstr "Ozi-e a nwere onyonyo {{ n }}. Pịa iji budata."
 
-#: message-download-images[many]
-msgctxt "message-download-images[many]"
-msgid "This email contains {{ n }} images. Click to download."
+#: message-download-images-tap[many]
+#, fuzzy
+msgctxt "message-download-images-tap[many]"
+msgid "This email contains {{ n }} images. Tap to download."
 msgstr "Ozi-e a nwere onyonyo {{ n }}. Pịa iji budata."
 
-#: message-download-images[other]
-msgctxt "message-download-images[other]"
-msgid "This email contains {{ n }} images. Click to download."
+#: message-download-images-tap[other]
+#, fuzzy
+msgctxt "message-download-images-tap[other]"
+msgid "This email contains {{ n }} images. Tap to download."
 msgstr "Ozi-e a nwere onyonyo {{ n }}. Pịa iji budata."
 
 #: message-show-external-images
@@ -961,9 +1057,12 @@ msgstr "Kagbuo"
 msgid "Loading Messages"
 msgstr "Na-adọnye Ozi"
 
-#: messages-sync-more
-msgid "Load more messages from server"
-msgstr "Si na sava dọnyekwuo ozi"
+#. # LOCALIZATION NOTE (messages-load-more): This text shows at the bottom of the
+#. # list of messages in the message list, and pressing it will load more messages
+#. # likely from the server. The space is constrained and has an icon next to it.
+#: messages-load-more
+msgid "Load More Messages"
+msgstr ""
 
 #: messages-folder-empty
 msgid "No mail in this Folder"
@@ -976,6 +1075,14 @@ msgstr "Enweghị mmakọ na ozi echekwara na mpaghara"
 #: messages-folder-select
 msgid "Select folder"
 msgstr "Họrọ folda"
+
+#. # LOCALIZATION NOTE(messages-folder-unread-max): This string is inserted
+#. # in place of the unread message count in the folder list whenever
+#. # the number exceeds 999. Note that due to space constraints any
+#. # localizations optimally should only be 4-5 characters.
+#: messages-folder-unread-max
+msgid "999+"
+msgstr ""
 
 #: message-contact-menu-create
 msgid "Save new contact"
@@ -1096,6 +1203,10 @@ msgstr "Ọkpụ"
 msgid "Local Drafts"
 msgstr "Draftụ Mpaghara"
 
+#: folder-outbox
+msgid "Outbox"
+msgstr ""
+
 #. # In the folder picker drawer, there is a transparent area for the header,
 #. # and a tap region to take the user back to the message list. So this text is
 #. # not visible by the user, but could be used for accessibility.
@@ -1126,14 +1237,18 @@ msgstr "Ntọala"
 msgid "Last sync:"
 msgstr "Mmekọrịta ikpeazụ:"
 
+#. # LOCALIZATION NOTE(message-list-top-action):
+#. # In the message-list, as the user scrolls down, an action bar will scroll into
+#. # view that if tapped will take the user to the top of the screen. That bar
+#. # will use an icon to display its meaning, this is text that will not be visible
+#. # to the user, it is provided for accessibility.
+#: message-list-top-action
+msgid "Top"
+msgstr ""
+
 #: toaster-undo
 msgid "Undo"
 msgstr "Meghasịa"
-
-#: toaster-retry
-msgctxt "toaster-retry"
-msgid "Retry"
-msgstr "Nwagharịa"
 
 #: toaster-message-star
 msgctxt "toaster-message-star"
@@ -1313,6 +1428,85 @@ msgstr "Ehichapụrụ ozi {{ n }}"
 msgid "Unable to connect to server"
 msgstr "Enwenwughi ike ijikọ na sava"
 
+#. # LOCALIZATION NOTE(compose-invalid-addresses-title):
+#. # A title to be displayed on a warning screen, warning users that
+#. # some of the email addresses they typed were incorrect.
+#: compose-invalid-addresses-title
+msgid "Invalid Addresses"
+msgstr ""
+
+#. # LOCALIZATION NOTE(compose-invalid-addresses-description):
+#. # A description to be displayed on a warning screen, warning users that
+#. # some of the email addresses they typed were incorrect, and that they
+#. # must correct the email addresses before sending.
+#: compose-invalid-addresses-description
+msgid ""
+"Your message contains one or more invalid email addresses. Please correct "
+"them before sending."
+msgstr ""
+
+#. # LOCALIZATION NOTE(background-send-pending):
+#. # Brief message to be displayed in a popup, saying that the phone has
+#. # no network connection, and that the email has been saved to the outbox.
+#: background-send-pending
+msgid "Network unavailable. Email saved to outbox."
+msgstr ""
+
+#. # LOCALIZATION NOTE(background-send-sending):
+#. # Displayed in a toaster popup message, saying that the email
+#. # is currently being sent.
+#: background-send-sending
+#, fuzzy
+msgid "Sending mail…"
+msgstr "Na-ezipu ozi-e"
+
+#. # LOCALIZATION NOTE(background-send-success):
+#. # Displayed in a toaster popup message, saying that the email
+#. # sent successfully.
+#: background-send-success
+msgid "Email sent."
+msgstr ""
+
+#. # LOCALIZATION NOTE(background-send-error):
+#. # Description to be displayed in a notification, saying that an error
+#. # occured while attempting to send an email, and that the email has
+#. # been saved to the outbox.
+#: background-send-error
+msgid "Error occurred. Email saved to outbox."
+msgstr ""
+
+#. # LOCALIZATION NOTE(background-send-error-recipients):
+#. # Description to be displayed in a notification, saying that the email
+#. # could not be sent because the server rejected one or more of the
+#. # email recipients, and that the email has been saved to the outbox.
+#: background-send-error-recipients
+msgid "Recipient error. Email saved to outbox."
+msgstr ""
+
+#. # LOCALIZATION NOTE(background-send-error-title):
+#. # Title to be displayed in a notification, indicating that the
+#. # email failed to send for some reason.
+#: background-send-error-title
+msgid "Mail failed to send"
+msgstr ""
+
+#. # LOCALIZATION NOTE(send-failure-recipients):
+#. # Message to be displayed when editing a message that failed to send due
+#. # to invalid recipients. It should instruct the user to check the addresses
+#. # above for spelling.
+#: send-failure-recipients
+msgid ""
+"Check the spelling of the addresses above. Your mail server indicated one or "
+"more of the addresses above are incorrect."
+msgstr ""
+
+#. # LOCALIZATION NOTE(send-failure-unknown):
+#. # Message to be displayed when editing a message that failed to send for an
+#. # unknown reason.
+#: send-failure-unknown
+msgid "The message could not be sent."
+msgstr ""
+
 #: form-clear-input
 msgid "Remove text"
 msgstr "Wepu ederede"
@@ -1327,38 +1521,44 @@ msgstr "Nkwenye"
 msgid ", "
 msgstr ", "
 
-#. # new-emails refers to the text shown on a notification that users
-#. # get when they receive new, unread email. The ui component that utilizes
-#. # this lives in apps/email/js/message_list_topbar.js.
-#: new-emails
-msgctxt "new-emails"
+#. # LOCALIZATION NOTE(new-messages): refers to the text shown inside the email app
+#. # on the message list when new, unread messages have been received while the
+#. # user is looking at the messages in the message list. The ui component that
+#. # uses this lives in apps/email/js/message_list_topbar.js. This display differ
+#. # from the messages that are sent as system notifications. Those are more
+#. # important to distinguish that emails and not SMS messages have been received.
+#. # This display uses the term "Messages" since other text labels in the message
+#. # list also use "Messages" instead of "Emails" since the context of Email is
+#. # assumed as it is in the email app.
+#: new-messages
+#, fuzzy
+msgctxt "new-messages"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: new-emails[one]
-msgctxt "new-emails[one]"
-msgid "1 New Email"
-msgstr "1 Ozi-e Ọhụrụ"
+#: new-messages[one]
+msgid "1 New Message"
+msgstr ""
 
-#: new-emails[two]
-msgctxt "new-emails[two]"
-msgid "{{ n }} New Emails"
-msgstr "Ozi-e Ọhụrụ {{ n }}"
+#: new-messages[two]
+msgctxt "new-messages[two]"
+msgid "{{ n }} New Messages"
+msgstr ""
 
-#: new-emails[few]
-msgctxt "new-emails[few]"
-msgid "{{ n }} New Emails"
-msgstr "Ozi-e Ọhụrụ {{ n }}"
+#: new-messages[few]
+msgctxt "new-messages[few]"
+msgid "{{ n }} New Messages"
+msgstr ""
 
-#: new-emails[many]
-msgctxt "new-emails[many]"
-msgid "{{ n }} New Emails"
-msgstr "Ozi-e Ọhụrụ {{ n }}"
+#: new-messages[many]
+msgctxt "new-messages[many]"
+msgid "{{ n }} New Messages"
+msgstr ""
 
-#: new-emails[other]
-msgctxt "new-emails[other]"
-msgid "{{ n }} New Emails"
-msgstr "Ozi-e Ọhụrụ {{ n }}"
+#: new-messages[other]
+msgctxt "new-messages[other]"
+msgid "{{ n }} New Messages"
+msgstr ""
 
 #. # new-emails-notify-one-account is used when a system notification is generated during
 #. # a periodic background sync with the server. Since this goes to the system's
@@ -1369,7 +1569,7 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: new-emails-notify-one-account[one]
-msgctxt "new-emails-notify-one-account[one]"
+#, fuzzy
 msgid "1 New Email"
 msgstr "1 Ozi-e Ọhụrụ"
 
@@ -1432,3 +1632,49 @@ msgstr "Ozi Ọhụrụ {{ n }} ({{ accountName }})"
 #: new-emails-notify-multiple-accounts-body
 msgid "{{ from }} “{{ subject }}”"
 msgstr "{{ from }} “{{ subject }}”"
+
+#~ msgid "Read"
+#~ msgstr "Gụọ"
+
+#~ msgctxt "message-download-images"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "message-download-images[few]"
+#~ msgid "This email contains {{ n }} images. Click to download."
+#~ msgstr "Ozi-e a nwere onyonyo {{ n }}. Pịa iji budata."
+
+#~ msgctxt "message-download-images[many]"
+#~ msgid "This email contains {{ n }} images. Click to download."
+#~ msgstr "Ozi-e a nwere onyonyo {{ n }}. Pịa iji budata."
+
+#~ msgctxt "message-download-images[other]"
+#~ msgid "This email contains {{ n }} images. Click to download."
+#~ msgstr "Ozi-e a nwere onyonyo {{ n }}. Pịa iji budata."
+
+#~ msgid "Load more messages from server"
+#~ msgstr "Si na sava dọnyekwuo ozi"
+
+#~ msgctxt "toaster-retry"
+#~ msgid "Retry"
+#~ msgstr "Nwagharịa"
+
+#~ msgctxt "new-emails"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "new-emails[few]"
+#~ msgid "{{ n }} New Emails"
+#~ msgstr "Ozi-e Ọhụrụ {{ n }}"
+
+#~ msgctxt "new-emails[many]"
+#~ msgid "{{ n }} New Emails"
+#~ msgstr "Ozi-e Ọhụrụ {{ n }}"
+
+#~ msgctxt "new-emails[other]"
+#~ msgid "{{ n }} New Emails"
+#~ msgstr "Ozi-e Ọhụrụ {{ n }}"
+
+#~ msgctxt "new-emails-notify-one-account[one]"
+#~ msgid "1 New Email"
+#~ msgstr "1 Ozi-e Ọhụrụ"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-05 20:44+0100\n"
+"POT-Creation-Date: 2014-09-17 11:13+0000\n"
 "PO-Revision-Date: 2015-02-12 15:55+0000\n"
 "Last-Translator: ig-NG02_Chigozie <ezeanichigozie@ikolo.com.ng>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1423756530.000000\n"
@@ -24,6 +24,10 @@ msgstr "Ozi"
 #: deleteMessages-title
 msgid "Delete messages"
 msgstr "Hichapụ ozi"
+
+#: selectThreads-title
+msgid "Select"
+msgstr ""
 
 #. # Contact title
 #: thread-header-text
@@ -98,43 +102,98 @@ msgstr "Họrọ ha niile"
 msgid "Deselect all"
 msgstr "Wepu ha niile"
 
-#: selected
-msgctxt "selected"
+#: selected-threads
+#, fuzzy
+msgctxt "selected-threads"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: selected[zero]
+#: selected-threads[zero]
+#, fuzzy
+msgctxt "selected-threads[zero]"
 msgid "none selected"
 msgstr "ọnweghị nke ahọpụtara"
 
-#: selected[one]
-msgctxt "selected[one]"
+#: selected-threads[one]
+#, fuzzy
+msgctxt "selected-threads[one]"
 msgid "{{n}} selected"
 msgstr "Ahọpụtara {{n}}"
 
-#: selected[two]
-msgctxt "selected[two]"
+#: selected-threads[two]
+#, fuzzy
+msgctxt "selected-threads[two]"
 msgid "{{n}} selected"
 msgstr "Ahọpụtara {{n}}"
 
-#: selected[few]
-msgctxt "selected[few]"
+#: selected-threads[few]
+#, fuzzy
+msgctxt "selected-threads[few]"
 msgid "{{n}} selected"
 msgstr "Ahọpụtara {{n}}"
 
-#: selected[many]
-msgctxt "selected[many]"
+#: selected-threads[many]
+#, fuzzy
+msgctxt "selected-threads[many]"
 msgid "{{n}} selected"
 msgstr "Ahọpụtara {{n}}"
 
-#: selected[other]
-msgctxt "selected[other]"
+#: selected-threads[other]
+#, fuzzy
+msgctxt "selected-threads[other]"
+msgid "{{n}} selected"
+msgstr "Ahọpụtara {{n}}"
+
+#: selected-messages
+#, fuzzy
+msgctxt "selected-messages"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: selected-messages[zero]
+#, fuzzy
+msgctxt "selected-messages[zero]"
+msgid "none selected"
+msgstr "ọnweghị nke ahọpụtara"
+
+#: selected-messages[one]
+#, fuzzy
+msgctxt "selected-messages[one]"
+msgid "{{n}} selected"
+msgstr "Ahọpụtara {{n}}"
+
+#: selected-messages[two]
+#, fuzzy
+msgctxt "selected-messages[two]"
+msgid "{{n}} selected"
+msgstr "Ahọpụtara {{n}}"
+
+#: selected-messages[few]
+#, fuzzy
+msgctxt "selected-messages[few]"
+msgid "{{n}} selected"
+msgstr "Ahọpụtara {{n}}"
+
+#: selected-messages[many]
+#, fuzzy
+msgctxt "selected-messages[many]"
+msgid "{{n}} selected"
+msgstr "Ahọpụtara {{n}}"
+
+#: selected-messages[other]
+#, fuzzy
+msgctxt "selected-messages[other]"
 msgid "{{n}} selected"
 msgstr "Ahọpụtara {{n}}"
 
 #. # Options menu
-#: deleteMessages-label
-msgid "Delete Messages"
+#: selectThreads-label
+msgid "Select Threads"
+msgstr ""
+
+#: selectMessages-label
+#, fuzzy
+msgid "Select Messages"
 msgstr "Hichapụ Ozi"
 
 #: settings
@@ -354,8 +413,14 @@ msgstr "Arịrịọ"
 msgid "Message size:"
 msgstr "Nha ozi:"
 
-#: report-dateTimeFormat
-msgid "%e %B %Y, {{shortTimeFormat}}"
+#: report-dateTimeFormat12
+#, fuzzy
+msgid "%e %B %Y, {{shortTimeFormat12}}"
+msgstr "%e %B %Y, {{shortTimeFormat}}"
+
+#: report-dateTimeFormat24
+#, fuzzy
+msgid "%e %B %Y, {{shortTimeFormat24}}"
 msgstr "%e %B %Y, {{shortTimeFormat}}"
 
 #: report-recipients
@@ -387,19 +452,22 @@ msgstr "Chọgharịa"
 msgid "Unknown"
 msgstr "Amaghị"
 
-#. # LOCALIZATION NOTE(thread-separator): used to separate type/carrier from
+#. # LOCALIZATION NOTE(phone-type-separator): used to separate phone type from
 #. # the number itself. It should be consistent with the characters used in
-#. # "thread- header", \u20 is a blank space (\u20|\u20 is equivalent to " | ").
-#: thread-separator
-msgid " | "
-msgstr " | "
-
-#. # LOCALIZATION NOTE(carrier-separator): used to separate carrier's name from
-#. # the number itself. \u20 is a blank space. Resulting example for en-US:
-#. # "Verizon, +123456789".
-#: carrier-separator
+#. # "thread- header", \u20 is a blank space (,\u20 is equivalent to ", "). It can
+#. # be used together with "phone-carrier-separator" if carrier is available.
+#. # Resulting example for en-US: "Mobile, +123456789" or if carrier is available
+#. # "Mobile, +123456789 Carrier".
+#: phone-type-separator
 msgid ", "
 msgstr ", "
+
+#. # LOCALIZATION NOTE(phone-carrier-separator): used to separate carrier's name
+#. # from the number itself. \u20 is a blank space.  Resulting example for en-US:
+#. # "+123456789 Verizon".
+#: phone-carrier-separator
+msgid " "
+msgstr ""
 
 #. # Modal Dialogs
 #: replace-draft
@@ -494,6 +562,18 @@ msgctxt "sendFlightModeBtnOk"
 msgid "OK"
 msgstr "ỌDỊMMA"
 
+#: radioDisabledToDownloadTitle
+msgid "{{sendFlightModeTitle}}"
+msgstr ""
+
+#: radioDisabledToDownloadBody
+msgid "Turn off airplane mode to download attachments."
+msgstr ""
+
+#: radioDisabledToDownloadBtnOk
+msgid "{{sendFlightModeBtnOk}}"
+msgstr ""
+
 #: fdnBlocked2Title
 msgid "FDN active"
 msgstr "FDN nọ n'ọrụ"
@@ -556,47 +636,52 @@ msgctxt "fdnBlocked2BtnOk"
 msgid "OK"
 msgstr "ỌDỊMMA"
 
-#: nonActiveSimTitle
+#: switchSimToRetrieveTitle
 msgid "Switch data connection"
 msgstr "Gbanwee njikọ data"
 
-#: nonActiveSimBody
+#: switchSimToRetrieveBody
+#, fuzzy
 msgid ""
-"Switch the data connection to {{ nonactive }} to retrieve the MMS. The "
-"current data transfer on {{ active }} will be suspended. Continue anyway?"
+"Switch the data connection to SIM {{ nonActiveSimId }} to retrieve the MMS. "
+"The current data transfer on SIM {{ activeSimId }} will be suspended. "
+"Continue anyway?"
 msgstr ""
 "Gbanwee njikọ data ka ọ bụrụ {{ nonactive }} iji weghachite MMS ahụ. A ga-"
 "akwụsịtụ nnyefe data dị ugbu a na {{ active }}. Gaa n'ihu otu ọ bụla?"
 
-#: nonActiveSimBtnOk
+#: switchSimToRetrieveBtnOk
 msgid "Later"
 msgstr "Emechaa"
 
-#: nonActiveSimConfirm
-msgctxt "nonActiveSimConfirm"
+#: switchSimToRetrieveConfirm
+#, fuzzy
+msgctxt "switchSimToRetrieveConfirm"
 msgid "OK"
 msgstr "ỌDỊMMA"
 
 #. # no need to retranslate title and buttons if not necessary
-#: nonActiveSimToSendTitle
-msgid "{{nonActiveSimTitle}}"
-msgstr "{{nonActiveSimTitle}}"
+#: switchSimToSendTitle
+msgid "{{switchSimToRetrieveTitle}}"
+msgstr ""
 
-#: nonActiveSimToSendBody
+#: switchSimToSendBody
+#, fuzzy
 msgid ""
-"Switch the data connection to {{ nonactive }} to send the MMS. The current "
-"data transfer on {{ active }} will be suspended. Continue anyway?"
+"Switch the data connection to SIM {{ nonActiveSimId }} to send the MMS. The "
+"current data transfer on SIM {{ activeSimId }} will be suspended. Continue "
+"anyway?"
 msgstr ""
 "Gbanwee njikọ data ka ọ bụrụ {{ nonactive }} iji zipu MMS. A ga-akwụsịtụ "
 "nnyefe data dị ugbu a na {{ active }}. Gaa n'ihu otu ọ bụla?"
 
-#: nonActiveSimToSendBtnOk
-msgid "{{nonActiveSimBtnOk}}"
-msgstr "{{nonActiveSimBtnOk}}"
+#: switchSimToSendBtnOk
+msgid "{{switchSimToRetrieveBtnOk}}"
+msgstr ""
 
-#: nonActiveSimToSendConfirm
-msgid "{{nonActiveSimConfirm}}"
-msgstr "{{nonActiveSimConfirm}}"
+#: switchSimToSendConfirm
+msgid "{{switchSimToRetrieveConfirm}}"
+msgstr ""
 
 #: sendNoSignalErrorTitle
 msgid "No network coverage"
@@ -634,6 +719,22 @@ msgstr "Gbaa mbọ hụ na nọmba mkpanaka ị na ezipu ziri ezi."
 
 #: sendInvalidAddressErrorBtnOk
 msgctxt "sendInvalidAddressErrorBtnOk"
+msgid "OK"
+msgstr "ỌDỊMMA"
+
+#: simNotMatchedErrorTitle
+msgid "Unable to download"
+msgstr ""
+
+#: simNotMatchedErrorBody
+msgid ""
+"Please make sure the SIM card inserted is the one used to receive this "
+"message."
+msgstr ""
+
+#: simNotMatchedErrorBtnOk
+#, fuzzy
+msgctxt "simNotMatchedErrorBtnOk"
 msgid "OK"
 msgstr "ỌDỊMMA"
 
@@ -829,6 +930,13 @@ msgstr "Na-ebudata…"
 msgid "untitled"
 msgstr "enweghị aha"
 
+#. # LOCALIZATION NOTE (mms-label): This label is used to identify MMS in message
+#. # composer (above the send button) and in the thread list for the thread with
+#. # MMS as the last message.
+#: mms-label
+msgid "MMS"
+msgstr ""
+
 #. # LOCALIZATION NOTE (files-too-large): the English translation does not need the
 #. # actual number of files. If your translation needs it, you can still add it
 #. # using the parameter {{ n }}.
@@ -881,13 +989,29 @@ msgid "Message saved as draft"
 msgstr "Echekwara ozi ka draftụ"
 
 #. # some DSDS related localizations
-#: sim-name
-msgid "SIM{{id}}"
+#: sim-id-label
+#, fuzzy
+msgid "SIM {{id}}"
 msgstr "SIM{{id}}"
+
+#: sim-detail
+msgid "SIM {{id}}, {{detailString}}"
+msgstr ""
 
 #: dsds-notification-title-with-sim
 msgid "({{sim}}) {{sender}}"
 msgstr "({{sim}}) {{sender}}"
+
+#. # LOCALIZATION NOTE (send-button-sim-indication): don't localize the
+#. # sim-indication itself as we use it to show the SIM number only. Yet obviously,
+#. # the "ariaLabel" needs to be localized.
+#: send-button-sim-indication
+msgid "{{n}}"
+msgstr ""
+
+#: send-button-sim-indication.ariaLabel
+msgid "using SIM {{n}}"
+msgstr ""
 
 #. # Date formats specific for SMS app
 #. # LOCALIZATION NOTE (expiry-date-format): this is a date format.
@@ -898,3 +1022,81 @@ msgstr "({{sim}}) {{sender}}"
 #: expiry-date-format
 msgid "%A, %b %e"
 msgstr "%A, %b %e"
+
+#. # Labels for screen reader
+#: attach-button.ariaLabel
+msgid "Add attachment"
+msgstr ""
+
+#: contact-photo.ariaLabel
+msgid "Contact photo"
+msgstr ""
+
+#: unread-thread.ariaLabel
+msgid "Unread"
+msgstr ""
+
+#: has-draft.ariaLabel
+msgid "Has draft"
+msgstr ""
+
+#: is-draft.ariaLabel
+msgid "Draft"
+msgstr ""
+
+#. # Message statuses
+#: message-delivery-status-sending
+#, fuzzy
+msgid "Sending…"
+msgstr "na ezipu"
+
+#: message-delivery-status-delivered.ariaLabel
+#, fuzzy
+msgid "Delivered"
+msgstr "Enyefeela:"
+
+#: message-delivery-status-read.ariaLabel
+#, fuzzy
+msgid "Read"
+msgstr "Gụọ:"
+
+#: message-delivery-status-error.ariaLabel
+#, fuzzy
+msgid "Error"
+msgstr "mperi"
+
+#~ msgctxt "selected"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "selected[two]"
+#~ msgid "{{n}} selected"
+#~ msgstr "Ahọpụtara {{n}}"
+
+#~ msgctxt "selected[few]"
+#~ msgid "{{n}} selected"
+#~ msgstr "Ahọpụtara {{n}}"
+
+#~ msgctxt "selected[many]"
+#~ msgid "{{n}} selected"
+#~ msgstr "Ahọpụtara {{n}}"
+
+#~ msgctxt "selected[other]"
+#~ msgid "{{n}} selected"
+#~ msgstr "Ahọpụtara {{n}}"
+
+#~ msgid " | "
+#~ msgstr " | "
+
+#~ msgctxt "nonActiveSimConfirm"
+#~ msgid "OK"
+#~ msgstr "ỌDỊMMA"
+
+#~ msgid "{{nonActiveSimTitle}}"
+#~ msgstr "{{nonActiveSimTitle}}"
+
+#~ msgid "{{nonActiveSimBtnOk}}"
+#~ msgstr "{{nonActiveSimBtnOk}}"
+
+#~ msgid "{{nonActiveSimConfirm}}"
+#~ msgstr "{{nonActiveSimConfirm}}"

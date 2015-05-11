@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-28 19:29+0100\n"
+"POT-Creation-Date: 2014-10-22 16:13+0000\n"
 "PO-Revision-Date: 2015-04-23 13:49+0000\n"
 "Last-Translator: ig-NG02_Chigozie <ezeanichigozie@ikolo.com.ng>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1429796963.000000\n"
@@ -58,6 +58,8 @@ msgid "No"
 msgstr "Mba"
 
 #: reset
+#, fuzzy
+msgctxt "reset"
 msgid "Reset"
 msgstr "Tọgharịa"
 
@@ -228,6 +230,16 @@ msgstr "Anọghị n'ịntanetị"
 msgid "Manage networks"
 msgstr "Jikwaa netwọk"
 
+#: wifi-bad-credentials-title
+msgid "Failed connecting to Wi-Fi"
+msgstr ""
+
+#: wifi-bad-credentials-confirm
+msgid ""
+"Unable to connect to {{ssid}}, authentication failed due to bad credentials. "
+"Please re-enter the network password."
+msgstr ""
+
 #. # LOCALIZATION NOTE (manageNetworks-header): if you leave the original
 #. # en-US value "{{manageNetworks}}" in the following string, the localization
 #. # will be automatically picked from the existing string with ID "manageNetworks".
@@ -371,8 +383,15 @@ msgid "Notify me when an open network is available"
 msgstr "Zitere m ozi mgbe netwọk mepere emepe dị"
 
 #: macAddress
-msgid "MAC address"
+#, fuzzy
+msgid "MAC Address"
 msgstr "Adreesị MAC"
+
+#. # os = OS version. For example: 2.0.
+#. # The whole string may look like this: "Firefox OS 2.0"
+#: deviceInfo_software
+msgid "{{ brandShortName }} {{ os }}"
+msgstr ""
 
 #: macUnavailable
 msgctxt "macUnavailable"
@@ -465,9 +484,9 @@ msgstr "Akagburu WPS"
 msgid "WPS timed out"
 msgstr "WPS kwụsịrị"
 
-#: fullStatus-wps-failed
-msgid "WPS failed"
-msgstr "WPS agaghị"
+#: fullStatus-wps-failed-error
+msgid "WPS failed [{{error}}]"
+msgstr ""
 
 #: fullStatus-wps-overlapped
 msgid "Another WPS PBC AP was found"
@@ -514,9 +533,9 @@ msgstr "Nke ọ bụla"
 msgid "Cancel WPS"
 msgstr "Kagbuo WPS"
 
-#: wpsCancelFailedMessage
-msgid "Failed to cancel WPS"
-msgstr "Ịkagbu WPS agaghị"
+#: wpsCancelFailedMessageError
+msgid "Failed to cancel WPS [{{error}}]"
+msgstr ""
 
 #. # Connectivity :: Call
 #: callSettings
@@ -630,9 +649,9 @@ msgstr "Zipu mgbe enwetaghịnwu"
 msgid "When unreachable"
 msgstr "Mgbe enwetaghịnwu"
 
-#: callForwardingForwardingVoiceTo
-msgid "Voice calls to"
-msgstr "Oku olu gara na"
+#: callForwardingForwardingVoiceToNumber
+msgid "Voice calls to {{number}}"
+msgstr ""
 
 #: callForwardingNotForwarding
 msgctxt "callForwardingNotForwarding"
@@ -709,6 +728,10 @@ msgstr "Nọmba ọkpụkpọ ahụbara ama"
 #: fdnSettings-header
 msgid "{{fdnSettings}}"
 msgstr "{{fdnSettings}}"
+
+#: fdn-authorizedNumbers
+msgid "Authorized numbers"
+msgstr "Nọmba ndị enyere ikikere"
 
 #. # LOCALIZATION NOTE (fdn-authorizedNumbers-header): if you leave the original
 #. # en-US value "{{fdn-authorizedNumbers}}" in the following string, the localization
@@ -808,10 +831,6 @@ msgstr "Koodu PIN2 ezighi ezi."
 msgid "Call forwarding is disabled by FDN."
 msgstr "FDN gbanyụrụ nzipu oku."
 
-#: fdn-authorizedNumbers
-msgid "Authorized numbers"
-msgstr "Nọmba ndị enyere ikikere"
-
 #: fdnContact-name
 msgid "name"
 msgstr "aha"
@@ -862,11 +881,13 @@ msgid "{{messagingSettings}}"
 msgstr "{{messagingSettings}}"
 
 #: message-confirmation
-msgid "Message confirmation"
+#, fuzzy
+msgid "Message Confirmation"
 msgstr "Nkwenye ozi"
 
 #: message-delivery-reports
-msgid "Delivery reports"
+#, fuzzy
+msgid "Delivery Reports"
 msgstr "Mkpesa Nnyefe"
 
 #: message-delivery-reports-details
@@ -874,7 +895,8 @@ msgid "Request notification of delivery for each message sent"
 msgstr "Rịọ amamọkwa nke nnyefe maka ozi ọ bụla ezipuru"
 
 #: message-read-reports
-msgid "Read reports"
+#, fuzzy
+msgid "Read Reports"
 msgstr "Mkpesa ọgụgụ"
 
 #: message-read-reports-details
@@ -882,11 +904,13 @@ msgid "Request read report for each message sent"
 msgstr "Rịọ mkpesa ọgụgụ maka ozi ọ bụla ezipuru"
 
 #: mmsTitle
-msgid "Multimedia messaging (MMS)"
+#, fuzzy
+msgid "Multimedia Messaging (MMS)"
 msgstr "Nzimozi Mgbasa Ozi (MMS)"
 
 #: auto-retrieve
-msgid "Auto retrieve"
+#, fuzzy
+msgid "Auto Retrieve"
 msgstr "Nweghachite akpaka"
 
 #: auto-retrieve-details
@@ -910,7 +934,8 @@ msgid "Auto-configure"
 msgstr "Nhazi-akpaka"
 
 #: wapPushMessages
-msgid "WAP Push messages"
+#, fuzzy
+msgid "WAP Push Messages"
 msgstr "Ozi ọkwụkwa WAP"
 
 #: wapPush
@@ -918,12 +943,36 @@ msgid "WAP Push"
 msgstr "Ọkwa WAP"
 
 #: cellBroadcastMessages
-msgid "Cell broadcast messages"
+#, fuzzy
+msgid "Cell Broadcast Messages"
 msgstr "Ozi mgbasa ụlọ elu"
 
 #: cellBroadcast
-msgid "Cell broadcast"
+#, fuzzy
+msgid "Cell Broadcast"
 msgstr "Mgbasa ụlọ elu"
+
+#: emergencyAlert
+msgid "Emergency Alert"
+msgstr ""
+
+#: messagingInformation
+#, fuzzy
+msgid "Information"
+msgstr "Nkwenye"
+
+#. # LOCALIZATION NOTE (messagingSMSC): SMSC stands for Short Message Service Center
+#: messaging-SMSC
+msgid "Service Center"
+msgstr ""
+
+#: messaging-sim-settings
+msgid "SIM {{index}} Settings"
+msgstr ""
+
+#: unknown-SMSC
+msgid "Info not available"
+msgstr ""
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
@@ -1104,6 +1153,21 @@ msgstr "Emetụtara"
 msgid "APN"
 msgstr "APN"
 
+#: apnSettings
+#, fuzzy
+msgid "APN settings"
+msgstr "Ntọala A-GPS"
+
+#. # LOCALIZATION NOTE (apnSettings-header): if you leave the original
+#. # en-US value "{{apnSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "apnSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: apnSettings-header
+#, fuzzy
+msgid "{{apnSettings}}"
+msgstr "{{fdnSettings}}"
+
 #: dataSettings
 msgid "Data settings"
 msgstr "Ntọala data"
@@ -1168,6 +1232,10 @@ msgstr "Ntọala IMS"
 #: imsSettings-header2
 msgid "{{imsSettings}}"
 msgstr "{{imsSettings}}"
+
+#: apn-editor-header
+msgid "APN Editor"
+msgstr ""
 
 #: mmsport
 msgid "MMS port"
@@ -1245,6 +1313,10 @@ msgstr "IPv6"
 msgid "IPv4/IPv6"
 msgstr "IPv4/IPv6"
 
+#: apn-type
+msgid "APN Type"
+msgstr ""
+
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
 msgstr "Gbanwuo njikọ data?"
@@ -1269,6 +1341,25 @@ msgstr ""
 "Dabere na nkwekọrịta ọrụ gị, ụgwọ ndị ọzọ nwere ike ịdị maka data mgbe ị nọ "
 "na mpaghara a na eji netwọk ọzọ."
 
+#: change-apn-warning-message
+msgid ""
+"Depending on your service agreement, changing your APN setting may result in "
+"extra charges when roaming."
+msgstr ""
+
+#: change-apn-warning-question
+msgid "Do you want to proceed?"
+msgstr ""
+
+#: reset-apn-warning-title
+msgctxt "reset-apn-warning-title"
+msgid "Reset to Default"
+msgstr ""
+
+#: reset-apn-warning-message
+msgid "This resets the settings to default values. This cannot be undone."
+msgstr ""
+
 #: state-unknown
 msgid "Unknown state"
 msgstr "Ọkwa amaghị"
@@ -1290,6 +1381,29 @@ msgstr "Ejikọrọ"
 #: state-forbidden
 msgid "Forbidden"
 msgstr "Anabataghị"
+
+#: delete-apn-confirm
+msgid "Delete this APN?"
+msgstr ""
+
+#: delete-apn
+#, fuzzy
+msgctxt "delete-apn"
+msgid "Delete"
+msgstr "Hichapụ"
+
+#: add-apn
+msgid "Add New APN"
+msgstr ""
+
+#: reset-apn
+msgctxt "reset-apn"
+msgid "Reset to Default"
+msgstr ""
+
+#: apnSettings-reset
+msgid "APN settings reset"
+msgstr ""
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
@@ -1402,17 +1516,9 @@ msgctxt "device-status-connected"
 msgid "Connected"
 msgstr "Ejikọrọ"
 
-#: device-status-connected-phone
-msgid "Connected to phone audio"
-msgstr "Ejikọrọ na ọdịyo ekwentị"
-
 #: device-status-connected-media
 msgid "Connected to media audio"
 msgstr "Ejikọrọ na ọdịyo mgbasa ozi"
-
-#: device-status-connected-phone-media
-msgid "Connected to phone/media audio"
-msgstr "Ejikọrọ na ekwentị/ọdịyo mgbasa ozi"
 
 #: device-option-unpair
 msgid "Unpair"
@@ -1454,10 +1560,6 @@ msgstr "Nyegharịa ngwaọrụ m aha"
 #: unnamed-device
 msgid "Unknown device"
 msgstr "Ngwaọrụ amaghị"
-
-#: change-phone-name
-msgid "Change phone name"
-msgstr "Gbanwee aha ekwentị"
 
 #: change-phone-name-desc
 msgid "Change the name of your device as it appears in your computer"
@@ -1528,24 +1630,14 @@ msgstr "{{internetSharing}}"
 msgid "USB"
 msgstr "USB"
 
-#: internetSharing-usb-desc
-msgid "Share my phone’s Internet connection with a USB-connected device."
-msgstr "Kekọrịta njikọ Ịntanetị nke ekwentị m n'etiti ngwaọrụ USB-ejikọrọ."
-
 #: internetSharing-wifi
 msgctxt "internetSharing-wifi"
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
 
-#: internetSharing-wifi-desc
-msgid ""
-"Allow other devices to share my phone’s Internet connection by connecting "
-"via Wi-Fi."
-msgstr ""
-"Hapụ ngwaọrụ ndị ọzọ ịkekọrịta njikọ Ịntanetị nke ekwentị m site na ijikọ "
-"site na Wi-Fi."
-
 #: wifi-hotspot
+#, fuzzy
+msgctxt "wifi-hotspot"
 msgid "Wi-Fi hotspot"
 msgstr "Ebe njikọ Wi-Fi"
 
@@ -1564,6 +1656,8 @@ msgid "Security"
 msgstr "Nche"
 
 #: usb-tethering
+#, fuzzy
+msgctxt "usb-tethering"
 msgid "USB tethering"
 msgstr "Njikọta USB"
 
@@ -1665,33 +1759,22 @@ msgstr "Toro ogologo"
 msgid "Select a tone"
 msgstr "Họrọ olu"
 
-#: ringer
-msgid "Ringer"
-msgstr "Mgbịrịgba"
-
-#: ring-tones
+#: ringtones
 msgid "Ringtones"
 msgstr "Ụda"
 
-#: alert-tones
-msgid "Alert tones"
-msgstr "Olu nkute"
+#: alerts
+msgid "Alerts"
+msgstr "Nkute"
 
-#: manage-sounds
-msgid "Manage Sounds"
-msgstr "Jikwaa Ụda"
-
-#: manage-ringtones
-msgid "Manage Ringtones"
+#: manage-tones
+#, fuzzy
+msgid "Manage Tones"
 msgstr "Jikwaa Ụda"
 
 #: other-sounds
 msgid "Other sounds"
 msgstr "Ụda ndị ọzọ"
-
-#: alerts
-msgid "Alerts"
-msgstr "Nkute"
 
 #: unlock-screen
 msgid "Unlock screen"
@@ -1709,23 +1792,18 @@ msgstr "Ozi Ezipuru"
 msgid "Alarm"
 msgstr "Otimkpu"
 
-#: ringer-and-notification-sound
-msgid "Ringer & Notifications"
+#: ringtone-and-notification-sound
+#, fuzzy
+msgid "Ringtones & Notifications"
 msgstr "Mgbịrịgba & Amamọkwa"
 
 #: media-sound
 msgid "Media"
 msgstr "Mgbasa ozi"
 
-#: savingringtone
-msgid "Saving ringtone…"
-msgstr "Na-echekwa ụda…"
-
-#: unplayable-ringtone
-msgid ""
-"The ringtone was not changed because the selected file can not be played on "
-"this phone."
-msgstr "Agbanweghị ụda ahụ n'ihi enweghị ike ịkpọ faịlụ ahọpụtara n'ekwentị a."
+#: saving-tone
+msgid "Saving…"
+msgstr ""
 
 #: no-ringtone-app
 msgid "We were unable to find a ringtone app to manage ringtones!"
@@ -1877,6 +1955,24 @@ msgstr "Họrọ akụkụ ụwa"
 msgid "Select time zone"
 msgstr "Họrọ mpaghara oge"
 
+#: time-format
+#, fuzzy
+msgctxt "time-format"
+msgid "Format"
+msgstr "Nhazi"
+
+#: time-format-time
+msgid "Time Format"
+msgstr ""
+
+#: hour-12
+msgid "12-hour"
+msgstr ""
+
+#: hour-24
+msgid "24-hour"
+msgstr ""
+
 #. # Personalization :: Language & Region
 #: languageAndRegion
 msgid "Language & Region"
@@ -1923,11 +2019,13 @@ msgid "{{simManager}}"
 msgstr "{{simManager}}"
 
 #: simSettings
-msgid "SIM settings"
+#, fuzzy
+msgid "SIM Settings"
 msgstr "Ntọala SIM"
 
 #: sim-manager-outgoing-calls
-msgid "Outgoing calls"
+#, fuzzy
+msgid "Outgoing Calls"
 msgstr "Oku ndị na apụ apụ"
 
 #: sim-manager-outgoing-call-desc
@@ -1935,7 +2033,8 @@ msgid "Calls will be sent from"
 msgstr "A ga-ezipu oku site na"
 
 #: sim-manager-outgoing-messages
-msgid "Outgoing messages"
+#, fuzzy
+msgid "Outgoing Messages"
 msgstr "Ozi ndị na apụ apụ"
 
 #: sim-manager-outgoing-messages-desc
@@ -1992,6 +2091,10 @@ msgctxt "vertical-homescreen-header"
 msgid "Homescreen"
 msgstr "Ihuenyo mbata"
 
+#: vertical-homescreen-layout
+msgid "Layout"
+msgstr ""
+
 #: vertical-homescreen-icon-layout
 msgid "Icon Layout"
 msgstr "Nyiwe Akara"
@@ -2008,6 +2111,16 @@ msgstr "Ọgbara Anọ"
 msgid "Notice"
 msgstr "Ọkwa"
 
+#: search
+msgctxt "search"
+msgid "Search"
+msgstr ""
+
+#: search-header
+msgctxt "search-header"
+msgid "Search"
+msgstr ""
+
 #: search-engine
 msgid "Search Engine"
 msgstr "Njin Ọchụchọ"
@@ -2015,21 +2128,6 @@ msgstr "Njin Ọchụchọ"
 #: search-suggestions
 msgid "Search Suggestions"
 msgstr "Ntụnye Ọchụchọ"
-
-#. # LOCALIZATION NOTE (search-suggestions-button, search-suggestions-header):
-#. # If you leave the original en-US value "{{search-suggestions}}" in the following
-#. # strings, the localization will be automatically picked from the existing
-#. # string with ID "search-suggestions". If you need to adapt your localization to
-#. # the reduced space available in header or button, you can use shorter strings here.
-#: search-suggestions-button
-msgctxt "search-suggestions-button"
-msgid "{{search-suggestions}}"
-msgstr "{{search-suggestions}}"
-
-#: search-suggestions-header
-msgctxt "search-suggestions-header"
-msgid "{{search-suggestions}}"
-msgstr "{{search-suggestions}}"
 
 #: search-suggestions-description
 msgid ""
@@ -2069,9 +2167,14 @@ msgid "Description"
 msgstr "Nkọwa"
 
 #. # Personalization :: Keyboard
-#: installedInputMethods
-msgid "Installed input methods"
-msgstr "Ụzọ ntinye ndị awụnyere"
+#: keyboardSettings
+msgid "Keyboard Settings"
+msgstr ""
+
+#: selectedKeyboards
+#, fuzzy
+msgid "Selected Keyboards"
+msgstr "Ahụigodo ndị ahọpụtara"
 
 #: keyboards
 msgid "Keyboards"
@@ -2102,31 +2205,20 @@ msgstr "Ahụigodo"
 msgid "Dial Pad"
 msgstr "Ogwe Ọkpụkpọ"
 
-#: selectedKeyboards
-msgid "Selected keyboards"
+#: selectKeyboards
+#, fuzzy
+msgid "Select Keyboards"
 msgstr "Ahụigodo ndị ahọpụtara"
 
-#. # LOCALIZATION NOTE (selectedKeyboards-header): if you leave the original
-#. # en-US value "{{selectedKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "selectedKeyboards".
+#. # LOCALIZATION NOTE (selectKeyboards-header): if you leave the original
+#. # en-US value "{{selectKeyboards}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "selectKeyboards".
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
-#: selectedKeyboards-header
-msgid "{{selectedKeyboards}}"
+#: selectKeyboards-header
+#, fuzzy
+msgid "{{selectKeyboards}}"
 msgstr "{{selectedKeyboards}}"
-
-#: addMoreKeyboards
-msgid "Add more keyboards"
-msgstr "Tinyekwuo ahụigodo"
-
-#. # LOCALIZATION NOTE (addMoreKeyboards-header): if you leave the original
-#. # en-US value "{{addMoreKeyboards}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "addMoreKeyboards".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: addMoreKeyboards-header
-msgid "{{addMoreKeyboards}}"
-msgstr "{{addMoreKeyboards}}"
 
 #: mustHaveOneKeyboard
 msgid "At least one {{type}} keyboard should be selected"
@@ -2148,6 +2240,15 @@ msgstr "ọnụọgụgụ"
 #: defaultKeyboardEnabled
 msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr "Atọrọ {{appName}} {{layoutName}} dị ka ụzọ ntinye eburupụta"
+
+#. # Personalization :: Themes
+#: themes
+msgid "Themes"
+msgstr ""
+
+#: themes-header
+msgid "{{themes}}"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Accounts
@@ -2185,6 +2286,8 @@ msgstr ""
 "ngwa dịka Ọdụ ahịa Firefox."
 
 #: fxa-invitation
+#, fuzzy
+msgctxt "fxa-invitation"
 msgid "Create account or sign in"
 msgstr "Mepụta akaụntụ ma ọ bụ banye"
 
@@ -2260,14 +2363,11 @@ msgctxt "findmydevice"
 msgid "Find My Device"
 msgstr "Chọta Ngwaọrụ M"
 
-#: findmydevice-signup-description
-msgid "Find My Device allows you to locate, lock or erase your phone"
-msgstr ""
-"Chọta Ngwaọrụ M na enye gị ohere ịchọta, kpọchie ma ọ bụ hichapụ ekwentị gị"
-
-#: findmydevice-login
-msgid "Sign In or Create an Account"
-msgstr "Banye ma ọ bụ Mepụta Akaụntụ"
+#: findmydevice-create-account
+#, fuzzy
+msgctxt "findmydevice-create-account"
+msgid "Create account or sign in"
+msgstr "Mepụta akaụntụ ma ọ bụ banye"
 
 #: findmydevice-enable
 msgid "Enable Find My Device"
@@ -2276,14 +2376,6 @@ msgstr "Gbanye Chọta Ngwaọrụ M"
 #: findmydevice-about
 msgid "About Find My Device"
 msgstr "Gbasara Chọta Ngwaọrụ M"
-
-#: findmydevice-settings-description
-msgid ""
-"Find My Device allows you to locate, lock or erase your phone from a web "
-"site:"
-msgstr ""
-"Chọta Ngwaọrụ M na enye gị ohere ịchọta, kpọchie ma ọ bụ hichapụ ekwentị gị "
-"site na weebụsaịtị:"
 
 #: findmydevice-enable-geolocation-prompt
 msgid "Enable Geolocation?"
@@ -2297,18 +2389,23 @@ msgstr "Iji lelee ọnọdụ ngwaọrụ gị, ị ga-agbanyerịrị nsochi �
 msgid "Geolocation Enabled"
 msgstr "Agbanyere Ọnọdụ Ala"
 
+#. # Error messages
 #. # Reusing the setup-error-offline message from the email app
 #: findmydevice-enable-network
 msgid "This device is currently offline. Connect to a network and try again."
 msgstr "Ngwaọrụ a anọghị n'ịntanetị ugbu a. Jikọọ na netwọk wee nwaa ọzọ."
 
-#: findmydevice-active-tracking
-msgid "Your phone is being tracked by another device through the website."
-msgstr "Ngwaọrụ ọzọ na esochi ekwentị gị site na weebụsaịtị ahụ."
+#: findmydevice-error
+msgid "A Find My Device error has occurred."
+msgstr ""
 
-#: findmydevice-not-tracking
-msgid "No devices are actively tracking your phone through the website."
-msgstr "Ọnweghị ngwaọrụ na esochi ekwentị gị site na weebụsaịtị ahụ."
+#: findmydevice-please-try
+msgid "Please try again."
+msgstr ""
+
+#: findmydevice-please-tap
+msgid "Please tap to try again."
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Security
@@ -2339,7 +2436,8 @@ msgid "{{screenLock}}"
 msgstr "{{screenLock}}"
 
 #: simSecurity
-msgid "SIM security"
+#, fuzzy
+msgid "SIM Security"
 msgstr "Nche SIM"
 
 #. # LOCALIZATION NOTE (simSecurity-header): if you leave the original
@@ -2392,31 +2490,6 @@ msgstr "Hapụ"
 #: uninstallApp
 msgid "Uninstall app"
 msgstr "Wepu ngwa"
-
-#: uninstallConfirm
-msgid "Are you sure you want to uninstall {{ app }}?"
-msgstr "O doro gị anya na ị chọrọ iwepu {{ app }}?"
-
-#. # Bookmarks/Everything.me app data
-#: clearBookmarkAppsData
-msgid "Clear bookmarks data"
-msgstr "Kpochapụ data bukumakị"
-
-#: confirmClearBookmarkAppsDataTitle
-msgid "Clear private data from bookmarks?"
-msgstr "Kpochapụ data nkeonwe n'ime bukumakị?"
-
-#: confirmClearBookmarkAppsDataDesc
-msgid ""
-"This clears private data from bookmarks that have been added to the home "
-"screen. This cannot be undone."
-msgstr ""
-"Nke a na ekpochapụ data nkeonwe n'ime bukumakị ndị etinyegoro na ihuenyo "
-"mbata. Enweghị ike ịmeghasị nke a."
-
-#: clear
-msgid "Clear"
-msgstr "Kpochapụ"
 
 #. # Security :: Phone Lock
 #: phone
@@ -2486,33 +2559,13 @@ msgstr "Kwenye na koodu ntughe"
 msgid "Immediately"
 msgstr "Ozugbo"
 
-#: after-five-seconds
-msgid "After 5 seconds"
-msgstr "Ka ntakịrị nkeji 5 gachara"
-
-#: after-fifteen-seconds
-msgid "After 15 seconds"
-msgstr "Ka ntakịrị nkeji 15 gachara"
-
-#: after-thirty-seconds
-msgid "After 30 seconds"
-msgstr "Ka ntakịrị nkeji 30 gachara"
-
 #: after-one-minute
 msgid "After 1 minute"
 msgstr "Ka 1 nkeji gachara"
 
-#: after-two-minutes
-msgid "After 2 minutes"
-msgstr "Ka nkeji 2 gachara"
-
 #: after-five-minutes
 msgid "After 5 minutes"
 msgstr "Ka nkeji 5 gachara"
-
-#: after-ten-minutes
-msgid "After 10 minutes"
-msgstr "Ka nkeji 10 gachara"
 
 #: after-fifteen-minutes
 msgid "After 15 minutes"
@@ -2525,10 +2578,6 @@ msgstr "Ka nkeji 30 gachara"
 #: after-one-hour
 msgid "After 1 hour"
 msgstr "Ka 1 aka elekere gachara"
-
-#: after-four-hours
-msgid "After 4 hours"
-msgstr "Ka aka elekere 4 gachara"
 
 #: require-passcode
 msgid "Require passcode"
@@ -2863,23 +2912,77 @@ msgid "How does Do Not Track work?"
 msgstr "Kedu otu Esona si arụ ọrụ?"
 
 #: doNotTrack-dd1
+#, fuzzy
 msgid ""
 "When you turn on Do Not Track, your device tells every website and app (as "
-"well as advertisers and other content providers) that you don’t want your "
+"well as advertisers and other content providers) that you do not want your "
 "behavior tracked."
 msgstr ""
 "Mgbe ị gbanwuru Esona, ngwaọrụ gị na agwa weebụsaịtị na ngwa niile (yanakwa "
 "ndị mgbasa ozi na ndị ṅweta ọdịnaya ndị ọzọ) na ị chọghị ka esoro omume gị."
 
 #: doNotTrack-dd2
+#, fuzzy
 msgid ""
-"Turning on Do Not Track won’t affect your ability to sign in to websites nor "
-"cause your device to forget your private information, such as the contents "
-"of shopping carts, location information or sign-in information."
+"Turning on Do Not Track will not affect your ability to sign in to websites "
+"nor cause your device to forget your private information, such as the "
+"contents of shopping carts, location information or sign-in information."
 msgstr ""
 "Ịgbanwu Esona agaghị emetụta ike ị nwere ịbanye na weebụsaịtị ma ọ bụ mee ka "
 "ngwaọrụ gị chefuo ozi nzuzo gị, dịka ọdịnaya nke nkata azụmahịa, ozi ọnọdụ "
 "ma ọ bụ ozi nbanye."
+
+#. # Security :: Browsing Privacy
+#: browsingPrivacy
+msgid "Browsing Privacy"
+msgstr ""
+
+#. # LOCALIZATION NOTE (browsingPrivacy-header): if you leave the original
+#. # en-US value "{{browsingPrivacy}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID
+#. # "browsingPrivacy". If you need to adapt your localization to the reduced space
+#. # available in headers, you can use a shorter string here.
+#: browsingPrivacy-header
+msgid "{{browsingPrivacy}}"
+msgstr ""
+
+#: confirm-clear-title
+#, fuzzy
+msgctxt "confirm-clear-title"
+msgid "Confirmation"
+msgstr "Nkwenye"
+
+#: clear-browsing-history
+msgid "Clear browsing history"
+msgstr ""
+
+#: confirm-clear-browsing-history
+msgid "Clear browsing history?"
+msgstr ""
+
+#: clear-cookies-and-stored-data
+msgid "Clear cookies and stored data"
+msgstr ""
+
+#: confirm-clear-cookies-and-stored-data
+msgid "Clear cookies and other data stored by sites on this device?"
+msgstr ""
+
+#: clear-boomarks-data
+msgid "Clear bookmarks data"
+msgstr "Kpochapụ data bukumakị"
+
+#: confirmClearBookmarkAppsDataDesc
+msgid ""
+"This clears private data from bookmarks that have been added to the home "
+"screen. This cannot be undone."
+msgstr ""
+"Nke a na ekpochapụ data nkeonwe n'ime bukumakị ndị etinyegoro na ihuenyo "
+"mbata. Enweghị ike ịmeghasị nke a."
+
+#: clear
+msgid "Clear"
+msgstr "Kpochapụ"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Storage
@@ -2889,6 +2992,8 @@ msgid "Storage"
 msgstr "Nchekwa"
 
 #: enableUSBStorage1
+#, fuzzy
+msgctxt "enableUSBStorage1"
 msgid "USB storage"
 msgstr "Nchekwa USB"
 
@@ -2993,6 +3098,19 @@ msgstr ""
 msgid "{{list}} shared"
 msgstr "Ekekọrịtara {{list}}"
 
+#. # Storage :: USB storage
+#: transferProtocol-header
+msgid "Transfer Protocol"
+msgstr ""
+
+#: protocol-mtp
+msgid "Media transfer protocol (MTP)"
+msgstr ""
+
+#: protocol-ums
+msgid "USB mass Storage (UMS)"
+msgstr ""
+
 #. # Storage :: Media storage
 #: mediaStorage
 msgid "Media storage"
@@ -3075,14 +3193,6 @@ msgstr "Dị elu"
 msgid "Enable USB storage?"
 msgstr "Gbanye nchekwa USB?"
 
-#: turn-on-ums-confirm
-msgid ""
-"Turning on Enable USB storage allows another computer or device connected "
-"using USB to access files on this phone."
-msgstr ""
-"Ịgbanwu Gbanye nchekwa USB na ahapụ kọmputa ma ọ bụ ngwaọrụ ndị ejikọrọ site "
-"na iji USB ịnweta faịlụ ndị dị n'ekwentị a."
-
 #: default-media-location
 msgid "Default media location"
 msgstr "Ọnọdụ mgbasa ozi eburupụta"
@@ -3091,24 +3201,45 @@ msgstr "Ọnọdụ mgbasa ozi eburupụta"
 msgid "Choose where photos, videos, music and downloads are stored by default."
 msgstr "Họrọ ebe a ga-echekwa foto, vidio, egwu na mbudata dị ka eburupụta."
 
-#: change-default-location-confirm
+#: change-default-media-location-confirmation
 msgid ""
-"Changing the default media storage volume will affect where photos, videos, "
-"downloads and other media will be saved to by default. Existing data will "
-"remain in its current location."
+"Changing the default media storage location will affect where all media will "
+"be saved by default. Existing data will remain in its current location. Do "
+"you want to proceed?"
 msgstr ""
-"Ịgbanwe ukwu nchekwa mgbasa ozi eburupụta ga-emetụta ebe a ga-echekwa foto, "
-"vidio, mbudata na mgbasa ozi ndị ọzọ dị ka eburupụta. Data dị adị ga-adịrị "
-"n'ọnọdụ ya ugbu a."
 
-#: share-using-usb
-msgid "Share using USB"
-msgstr "Nkekọrịta site na USB"
+#: eject-sdcard-external-0
+msgid "Eject SD card"
+msgstr ""
 
-#: format-sdcard
-msgctxt "format-sdcard"
+#: eject-sdcard-external-1
+msgid "Eject SD card 2"
+msgstr ""
+
+#: format-sdcard-internal
+msgid "Format internal storage"
+msgstr ""
+
+#: format-sdcard-external-0
+#, fuzzy
+msgctxt "format-sdcard-external-0"
 msgid "Format SD card"
 msgstr "Hazigharịa kaadị SD"
+
+#: format-sdcard-external-1
+#, fuzzy
+msgid "Format SD card 2"
+msgstr "Hazigharịa kaadị SD"
+
+#: formatting
+msgid "Formatting…"
+msgstr ""
+
+#: unmount-sdcard-confirmation
+msgid ""
+"You will not be able to access content on the SD card after you unmount it. "
+"Do you want to proceed?"
+msgstr ""
 
 #: format-sdcard-title
 msgctxt "format-sdcard-title"
@@ -3122,8 +3253,14 @@ msgstr ""
 "Nke a ga-ehicha data niile echekwara na kaadị SD gị, dịka egwu na foto."
 
 #: format-sdcard-btnformat
+#, fuzzy
+msgctxt "format-sdcard-btnformat"
 msgid "Format"
 msgstr "Nhazi"
+
+#: sdcardUnmounted
+msgid "SD card unmounted"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Device
@@ -3160,7 +3297,8 @@ msgid "ICCID"
 msgstr "ICCID"
 
 #: deviceInfo-MSISDN
-msgid "Phone number"
+#, fuzzy
+msgid "Phone Number"
 msgstr "Akara ekwentị"
 
 #: deviceInfo-ICCID-unavailable-sim
@@ -3188,6 +3326,11 @@ msgstr "Amaghị"
 msgid "SIM {{index}}: Unknown"
 msgstr "SIM {{index}}: Amaghị"
 
+#: gitInfo
+#, fuzzy
+msgid "Git Commit Info"
+msgstr "Ozi nkwenye git"
+
 #: developer
 msgid "Developer"
 msgstr "Onye nrụpụta"
@@ -3201,28 +3344,40 @@ msgstr "Onye nrụpụta"
 msgid "{{developer}}"
 msgstr "{{developer}}"
 
-#: hud
+#: hud-settings-button
 msgid "Developer HUD"
 msgstr "HUD Onye nrụpụta"
 
-#. # LOCALIZATION NOTE (hud-header, hud-button): if you leave the original
-#. # en-US value "{{hud}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "hud".
-#. # If you need to adapt your localizations to the available space in
-#. # headers or buttons, you can use different strings here.
-#: hud-header
-msgctxt "hud-header"
-msgid "{{hud}}"
-msgstr "{{hud}}"
+#. # LOCALIZATION NOTE (hud-settings-header): if you leave the original en-US value
+#. # "{{hud-settings-button}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-settings-button". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-settings-header
+msgid "{{hud-settings-button}}"
+msgstr ""
 
-#: hud-button
-msgctxt "hud-button"
-msgid "{{hud}}"
-msgstr "{{hud}}"
+#: hud-devtools
+#, fuzzy
+msgid "Developer tools"
+msgstr "Ngwaọrụ Onye Nrụpụta"
+
+#. # LOCALIZATION NOTE (hud-devtools-header): if you leave the original en-US
+#. # value "{{hud-devtools}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-devtools". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-devtools-header
+msgid "{{hud-devtools}}"
+msgstr ""
 
 #: hud-logging
 msgid "Log changes in ADB"
 msgstr "Mgbanwe nbanye na ADB"
+
+#: hud-system
+msgid "Show system HUD"
+msgstr ""
 
 #: hud-problems
 msgid "Problems"
@@ -3252,6 +3407,10 @@ msgstr "Mkpojugharị"
 msgid "Jank"
 msgstr "Jank"
 
+#: jank-threshold
+msgid "Jank Threshold"
+msgstr "Jank Treshold"
+
 #: hud-fps
 msgid "Frames per second"
 msgstr "Eku kwa ntakịrị nkeji"
@@ -3263,6 +3422,10 @@ msgstr "Oge ịdọnye"
 #: hud-memory
 msgid "Memory"
 msgstr "Ebe nchekwa"
+
+#: hud-uss
+msgid "Unique Set Size"
+msgstr ""
 
 #: hud-appmemory
 msgid "App memory"
@@ -3298,7 +3461,8 @@ msgid "Software"
 msgstr "Ngwanrọ"
 
 #: devSettings
-msgid "Developer settings"
+#, fuzzy
+msgid "Developer Settings"
 msgstr "Ntọala onye nrụpụta"
 
 #: debug
@@ -3345,6 +3509,14 @@ msgstr "Nhazi"
 msgid "Simple tiling"
 msgstr "Nhazi dị mfe"
 
+#: low-precision
+msgid "Low-precision painting"
+msgstr ""
+
+#: low-opacity
+msgid "Low-precision transparency"
+msgstr ""
+
 #: draw-tile-borders
 msgid "Draw tile borders"
 msgstr "See oke ngidi"
@@ -3365,6 +3537,10 @@ msgstr "Nturi site na USB"
 msgid "DevTools via Wi-Fi"
 msgstr "DevTools site na Wi-Fi"
 
+#: dev-tools-qps
+msgid "Pseudo-localization"
+msgstr ""
+
 #: debugger-disabled
 msgctxt "debugger-disabled"
 msgid "Disabled"
@@ -3378,14 +3554,6 @@ msgstr "Naanị ADB"
 msgid "ADB and DevTools"
 msgstr "ADB na DevTools"
 
-#: devtools-overlay
-msgid "Show devtools overlay"
-msgstr "Gosi mmachi devtools"
-
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Jank Treshold"
-
 #: wifi-debugging
 msgid "Wi-Fi output in ADB"
 msgstr "Mbupute Wi-Fi na ADB"
@@ -3393,6 +3561,11 @@ msgstr "Mbupute Wi-Fi na ADB"
 #: bluetooth-debugging
 msgid "Bluetooth output in ADB"
 msgstr "Mbupute Bluetooth na ADB"
+
+#: nfc-debugging
+#, fuzzy
+msgid "NFC output in ADB"
+msgstr "Mbupute Wi-Fi na ADB"
 
 #: console-enabled
 msgid "Console enabled"
@@ -3406,24 +3579,36 @@ msgstr "Nlele Kaadị: Nseta ihuenyo"
 msgid "Geolocation output in ADB"
 msgstr "Mbupute ọnọdụ ala na ADB"
 
+#: use-reviewer-certs
+msgid "Use Marketplace reviewer certs"
+msgstr ""
+
+#: shake-to-log
+msgid "Shake to save system log"
+msgstr ""
+
 #: model-name
 msgid "Model"
 msgstr "Usoro"
 
 #: os-version
-msgid "OS version"
+#, fuzzy
+msgid "OS Version"
 msgstr "Ụdị OS"
 
 #: firmware_revision
-msgid "Firmware revision"
+#, fuzzy
+msgid "Firmware Revision"
 msgstr "Nyocha femụwe"
 
 #: hardware_revision
-msgid "Hardware revision"
+#, fuzzy
+msgid "Hardware Revision"
 msgstr "Nyocha ngwaike"
 
 #: platform_version
-msgid "Platform version"
+#, fuzzy
+msgid "Platform Version"
 msgstr "Ụdị nyiwe"
 
 #: build-id
@@ -3431,7 +3616,8 @@ msgid "Build Identifier"
 msgstr "Ihe Nkọwa Nrụpụta"
 
 #: update-channel
-msgid "Update channel"
+#, fuzzy
+msgid "Update Channel"
 msgstr "Melite channelụ"
 
 #: update-url
@@ -3455,12 +3641,9 @@ msgstr "Ozi ndị ọzọ"
 msgid "{{more-info}}"
 msgstr "{{more-info}}"
 
-#: gitInfo
-msgid "Git commit info"
-msgstr "Ozi nkwenye git"
-
 #: softwareUpdates
-msgid "Software updates"
+#, fuzzy
+msgid "Software Updates"
 msgstr "Mmelite ngwanrọ"
 
 #: check-update-daily
@@ -3476,11 +3659,13 @@ msgid "Monthly"
 msgstr "Kwa ọnwa"
 
 #: check-for-updates
-msgid "Check for updates"
+#, fuzzy
+msgid "Check for Updates"
 msgstr "Lelee maka mmelite"
 
 #: check-update-now
-msgid "Check now"
+#, fuzzy
+msgid "Check Now"
 msgstr "Lelee ugbu a"
 
 #: update-status
@@ -3525,23 +3710,15 @@ msgstr ""
 msgid "Learn More"
 msgstr "Mụtakwuo"
 
-#: reset-phone
-msgid "Reset Phone"
-msgstr "Tọgharịa Ekwentị"
+#: reset-head
+#, fuzzy
+msgctxt "reset-head"
+msgid "Reset"
+msgstr "Tọgharịa"
 
 #: reset-warning-title
 msgid "CAUTION"
 msgstr "ỊDỌ AKA NA NTỊ"
-
-#: reset-warning-body
-msgid ""
-"Resetting will erase all your data, including any apps you’ve purchased. The "
-"phone will be restored to its factory condition. None of your settings or "
-"data will be saved."
-msgstr ""
-"Ntọgharị ga-ehichapụ data gị niile, gụnyere ngwa ọ bụla ị zụtara. A ga-"
-"eweghachi ekwentị ahụ n'ọnọdụ ụlọ nrụpụta ya. Ọnweghị ntọala ma ọ bụ data gị "
-"a ga-echekwa."
 
 #. # LOCALIZATION NOTE: the licensing* strings below aren’t ready for translation yet.
 #: your-rights
@@ -3607,6 +3784,10 @@ msgstr ""
 #: about-legal-info
 msgid "Legal Information"
 msgstr "Ozi Iwu"
+
+#: about-credit-info
+msgid "Credits"
+msgstr ""
 
 #. # LOCALIZATION NOTE (about-legal-info-header): if you leave the original
 #. # en-US value "{{about-legal-info}}" in the following string, the localization
@@ -3713,10 +3894,6 @@ msgstr "Bido Ojiji Oge Izizi"
 msgid "No first time use app found"
 msgstr "Ọnweghị ngwa ojiji oge izizi ahụrụ"
 
-#: rocketbar-enabled
-msgid "Rocketbar enabled"
-msgstr "Agbanyela roketba"
-
 #: software-home-button
 msgid "Software home button"
 msgstr "Bọtịnụ ụlọ ngwanrọ"
@@ -3733,6 +3910,10 @@ msgstr "Mgbanwe na aga aga"
 msgid "Gaia debug traces"
 msgstr "Nzọụkwụ nturi Gaia"
 
+#: showScreenReaderSettings
+msgid "Show screen reader settings"
+msgstr ""
+
 #: app-transition
 msgid "App transition"
 msgstr "Mgbanwe ngwa"
@@ -3740,6 +3921,10 @@ msgstr "Mgbanwe ngwa"
 #: app-suspending
 msgid "App suspending"
 msgstr "Nkwụsịtụ ngwa"
+
+#: verbose-app-permissions
+msgid "Verbose app permissions"
+msgstr ""
 
 #: window-management
 msgid "Window management"
@@ -3759,6 +3944,8 @@ msgid "Deselect all"
 msgstr "Wepu ha niile"
 
 #: downloads-delete
+#, fuzzy
+msgctxt "downloads-delete"
 msgid "Delete"
 msgstr "Hichapụ"
 
@@ -3800,15 +3987,6 @@ msgstr "Ụkpụrụ nchekwa ike"
 msgid "{{level}}% battery left"
 msgstr "Batrị {{level}}% fọdụrụ"
 
-#: powerSave-explanation
-msgid ""
-"Turning on power save mode turns off the phone’s data, Bluetooth and "
-"Geolocation connections to extend battery life. You can still turn these "
-"services back on manually."
-msgstr ""
-"Ịgbanwu ụkpụrụ nchekwa ike na agbanyụ data ekwentị, Bluetooth na njikọ Ọnọdụ "
-"ala iji dọtịa ndụ batrị. Ị ka nwere ike iji aka wee gbanwuo ọrụ ndị a ọzọ."
-
 #: turnOnAuto
 msgid "Turn on automatically"
 msgstr "Gbanwuo na akpaghị aka"
@@ -3827,18 +4005,35 @@ msgstr "Nnweta"
 msgid "{{accessibility}}"
 msgstr "{{accessibility}}"
 
-#: invertColors
-msgid "Invert colors"
-msgstr "Tụgharịa agba"
-
 #: screenReader
 msgid "Screen reader"
 msgstr "Ihe ngụpụta ihuenyo"
 
-#: showA11ySettings
-msgid "Show accessibility settings"
-msgstr "Gosi ntọala nnweta"
+#: screenReader-header
+msgctxt "screenReader-header"
+msgid "{{screenReader}}"
+msgstr ""
 
+#: screenReader-toggle
+msgctxt "screenReader-toggle"
+msgid "{{screenReader}}"
+msgstr ""
+
+#: colorFilter
+msgid "Color filter"
+msgstr ""
+
+#: colorFilter-header
+msgctxt "colorFilter-header"
+msgid "{{colorFilter}}"
+msgstr ""
+
+#: colorFilter-toggle
+msgctxt "colorFilter-toggle"
+msgid "{{colorFilter}}"
+msgstr ""
+
+#. # Device :: Accessibility :: Screen reader
 #: screenReader-enable-msg
 msgid ""
 "When the screen reader is enabled, your device will provide spoken feedback "
@@ -3885,6 +4080,19 @@ msgstr "Ịkwụsị ihe ngụpụta ihuenyo ga-akwụsị nzaghachi okwu niile.
 msgid "Stop"
 msgstr "Kwụsị"
 
+#. # Device :: Accessibility :: Color filter
+#: colorFilter-invert
+msgid "Invert"
+msgstr ""
+
+#: colorFilter-grayscale
+msgid "Grayscale"
+msgstr ""
+
+#: colorFilter-contrast
+msgid "Contrast"
+msgstr ""
+
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
 msgctxt "improveBrowserOS"
@@ -3900,19 +4108,13 @@ msgstr "Melite {{brandShortName}}"
 msgid "Send Mozilla Feedback"
 msgstr "Zigara Mozilla Nzaghachi"
 
-#: performanceData
-msgid "Performance data"
-msgstr "Data arụmọrụ"
-
-#: performanceDataInfo
-msgid "Help us improve {{brandShortName}} by sharing data about your phone."
+#: performanceAndUsageData
+msgid "Performance and usage data"
 msgstr ""
-"Nyere anyị aka melite {{brandShortName}} site na ịkekọrịta data gbasara "
-"ekwentị gị."
 
-#: sharePerformanceData
-msgid "Submit performance data"
-msgstr "Nyefee data arụmọrụ"
+#: sharePerformanceAndUsageData
+msgid "Submit data"
+msgstr ""
 
 #: crashReports
 msgid "Crash reports"
@@ -4214,3 +4416,225 @@ msgstr "Zipu Data"
 #: stkItemsNaiGetChannelStatus
 msgid "Get Channel Status"
 msgstr "Nweta Ọkwa Channelụ"
+
+#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
+#: is-warning-storage-header
+#, fuzzy
+msgctxt "is-warning-storage-header"
+msgid "USB storage"
+msgstr "Nchekwa USB"
+
+#: is-warning-tethering-header
+#, fuzzy
+msgctxt "is-warning-tethering-header"
+msgid "USB tethering"
+msgstr "Njikọta USB"
+
+#: is-warning-wifi-header
+#, fuzzy
+msgctxt "is-warning-wifi-header"
+msgid "Wi-Fi hotspot"
+msgstr "Ebe njikọ Wi-Fi"
+
+#: is-warning-storage-tethering-message
+msgid ""
+"Enabling USB storage will disable USB tethering. Do you want to enable USB "
+"storage?"
+msgstr ""
+
+#: is-warning-tethering-storage-message
+msgid ""
+"Enabling USB tethering will disable USB storage. Do you want to enable USB "
+"tethering?"
+msgstr ""
+
+#: is-warning-tethering-wifi-message
+msgid ""
+"Enabling USB tethering will disable Wi-Fi hotspot. Do you want to enable USB "
+"tethering?"
+msgstr ""
+
+#: is-warning-wifi-tethering-message
+msgid ""
+"Enabling Wi-Fi hotspot will disable USB tethering. Do you want to enable Wi-"
+"Fi hotspot?"
+msgstr ""
+
+#~ msgid "WPS failed"
+#~ msgstr "WPS agaghị"
+
+#~ msgid "Failed to cancel WPS"
+#~ msgstr "Ịkagbu WPS agaghị"
+
+#~ msgid "Voice calls to"
+#~ msgstr "Oku olu gara na"
+
+#~ msgid "Connected to phone audio"
+#~ msgstr "Ejikọrọ na ọdịyo ekwentị"
+
+#~ msgid "Connected to phone/media audio"
+#~ msgstr "Ejikọrọ na ekwentị/ọdịyo mgbasa ozi"
+
+#~ msgid "Change phone name"
+#~ msgstr "Gbanwee aha ekwentị"
+
+#~ msgid "Share my phone’s Internet connection with a USB-connected device."
+#~ msgstr "Kekọrịta njikọ Ịntanetị nke ekwentị m n'etiti ngwaọrụ USB-ejikọrọ."
+
+#~ msgid ""
+#~ "Allow other devices to share my phone’s Internet connection by connecting "
+#~ "via Wi-Fi."
+#~ msgstr ""
+#~ "Hapụ ngwaọrụ ndị ọzọ ịkekọrịta njikọ Ịntanetị nke ekwentị m site na ijikọ "
+#~ "site na Wi-Fi."
+
+#~ msgid "Ringer"
+#~ msgstr "Mgbịrịgba"
+
+#~ msgid "Alert tones"
+#~ msgstr "Olu nkute"
+
+#~ msgid "Manage Ringtones"
+#~ msgstr "Jikwaa Ụda"
+
+#~ msgid "Saving ringtone…"
+#~ msgstr "Na-echekwa ụda…"
+
+#~ msgid ""
+#~ "The ringtone was not changed because the selected file can not be played "
+#~ "on this phone."
+#~ msgstr ""
+#~ "Agbanweghị ụda ahụ n'ihi enweghị ike ịkpọ faịlụ ahọpụtara n'ekwentị a."
+
+#~ msgctxt "search-suggestions-button"
+#~ msgid "{{search-suggestions}}"
+#~ msgstr "{{search-suggestions}}"
+
+#~ msgctxt "search-suggestions-header"
+#~ msgid "{{search-suggestions}}"
+#~ msgstr "{{search-suggestions}}"
+
+#~ msgid "Installed input methods"
+#~ msgstr "Ụzọ ntinye ndị awụnyere"
+
+#~ msgid "Add more keyboards"
+#~ msgstr "Tinyekwuo ahụigodo"
+
+#~ msgid "{{addMoreKeyboards}}"
+#~ msgstr "{{addMoreKeyboards}}"
+
+#~ msgid "Find My Device allows you to locate, lock or erase your phone"
+#~ msgstr ""
+#~ "Chọta Ngwaọrụ M na enye gị ohere ịchọta, kpọchie ma ọ bụ hichapụ ekwentị "
+#~ "gị"
+
+#~ msgid "Sign In or Create an Account"
+#~ msgstr "Banye ma ọ bụ Mepụta Akaụntụ"
+
+#~ msgid ""
+#~ "Find My Device allows you to locate, lock or erase your phone from a web "
+#~ "site:"
+#~ msgstr ""
+#~ "Chọta Ngwaọrụ M na enye gị ohere ịchọta, kpọchie ma ọ bụ hichapụ ekwentị "
+#~ "gị site na weebụsaịtị:"
+
+#~ msgid "Your phone is being tracked by another device through the website."
+#~ msgstr "Ngwaọrụ ọzọ na esochi ekwentị gị site na weebụsaịtị ahụ."
+
+#~ msgid "No devices are actively tracking your phone through the website."
+#~ msgstr "Ọnweghị ngwaọrụ na esochi ekwentị gị site na weebụsaịtị ahụ."
+
+#~ msgid "Are you sure you want to uninstall {{ app }}?"
+#~ msgstr "O doro gị anya na ị chọrọ iwepu {{ app }}?"
+
+#~ msgid "Clear private data from bookmarks?"
+#~ msgstr "Kpochapụ data nkeonwe n'ime bukumakị?"
+
+#~ msgid "After 5 seconds"
+#~ msgstr "Ka ntakịrị nkeji 5 gachara"
+
+#~ msgid "After 15 seconds"
+#~ msgstr "Ka ntakịrị nkeji 15 gachara"
+
+#~ msgid "After 30 seconds"
+#~ msgstr "Ka ntakịrị nkeji 30 gachara"
+
+#~ msgid "After 2 minutes"
+#~ msgstr "Ka nkeji 2 gachara"
+
+#~ msgid "After 10 minutes"
+#~ msgstr "Ka nkeji 10 gachara"
+
+#~ msgid "After 4 hours"
+#~ msgstr "Ka aka elekere 4 gachara"
+
+#~ msgid ""
+#~ "Turning on Enable USB storage allows another computer or device connected "
+#~ "using USB to access files on this phone."
+#~ msgstr ""
+#~ "Ịgbanwu Gbanye nchekwa USB na ahapụ kọmputa ma ọ bụ ngwaọrụ ndị ejikọrọ "
+#~ "site na iji USB ịnweta faịlụ ndị dị n'ekwentị a."
+
+#~ msgid ""
+#~ "Changing the default media storage volume will affect where photos, "
+#~ "videos, downloads and other media will be saved to by default. Existing "
+#~ "data will remain in its current location."
+#~ msgstr ""
+#~ "Ịgbanwe ukwu nchekwa mgbasa ozi eburupụta ga-emetụta ebe a ga-echekwa "
+#~ "foto, vidio, mbudata na mgbasa ozi ndị ọzọ dị ka eburupụta. Data dị adị "
+#~ "ga-adịrị n'ọnọdụ ya ugbu a."
+
+#~ msgid "Share using USB"
+#~ msgstr "Nkekọrịta site na USB"
+
+#~ msgctxt "hud-header"
+#~ msgid "{{hud}}"
+#~ msgstr "{{hud}}"
+
+#~ msgctxt "hud-button"
+#~ msgid "{{hud}}"
+#~ msgstr "{{hud}}"
+
+#~ msgid "Show devtools overlay"
+#~ msgstr "Gosi mmachi devtools"
+
+#~ msgid "Reset Phone"
+#~ msgstr "Tọgharịa Ekwentị"
+
+#~ msgid ""
+#~ "Resetting will erase all your data, including any apps you’ve purchased. "
+#~ "The phone will be restored to its factory condition. None of your "
+#~ "settings or data will be saved."
+#~ msgstr ""
+#~ "Ntọgharị ga-ehichapụ data gị niile, gụnyere ngwa ọ bụla ị zụtara. A ga-"
+#~ "eweghachi ekwentị ahụ n'ọnọdụ ụlọ nrụpụta ya. Ọnweghị ntọala ma ọ bụ data "
+#~ "gị a ga-echekwa."
+
+#~ msgid "Rocketbar enabled"
+#~ msgstr "Agbanyela roketba"
+
+#~ msgid ""
+#~ "Turning on power save mode turns off the phone’s data, Bluetooth and "
+#~ "Geolocation connections to extend battery life. You can still turn these "
+#~ "services back on manually."
+#~ msgstr ""
+#~ "Ịgbanwu ụkpụrụ nchekwa ike na agbanyụ data ekwentị, Bluetooth na njikọ "
+#~ "Ọnọdụ ala iji dọtịa ndụ batrị. Ị ka nwere ike iji aka wee gbanwuo ọrụ ndị "
+#~ "a ọzọ."
+
+#~ msgid "Invert colors"
+#~ msgstr "Tụgharịa agba"
+
+#~ msgid "Show accessibility settings"
+#~ msgstr "Gosi ntọala nnweta"
+
+#~ msgid "Performance data"
+#~ msgstr "Data arụmọrụ"
+
+#~ msgid "Help us improve {{brandShortName}} by sharing data about your phone."
+#~ msgstr ""
+#~ "Nyere anyị aka melite {{brandShortName}} site na ịkekọrịta data gbasara "
+#~ "ekwentị gị."
+
+#~ msgid "Submit performance data"
+#~ msgstr "Nyefee data arụmọrụ"
