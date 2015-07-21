@@ -1,32 +1,96 @@
-#. # LOCALIZATION NOTE
-#. # For each permission there are three strings:
-#. #
-#. #   * the permission name, displayed in the Settings app
-#. #   *-appRequest = displayed in a dialog box when an app requires a permission
-#. #   *-webRequest = displayed in a dialog box when a web site requires a permission
-#. #
-#. # The two latter strings are identical in English but might require a more
-#. # specific phrasing in your locale. Note that permission dialogs will display
-#. # two buttons: “Allow” and “Deny”.
-#. #
-#. extracted from ./shared/permissions/permissions.properties
+#. # LOCALIZATION NOTE# For each permission there are three strings:##   * the permission name, displayed in the Settings app#   *-appRequest = displayed in a dialog box when an app requires a permission#   *-webRequest = displayed in a dialog box when a web site requires a permission## The two latter strings are identical in English but might require a more# specific phrasing in your locale. Note that permission dialogs will display# two buttons: “Allow” and “Deny”.#
+#. extracted from en-US/shared/permissions/permissions.properties, fr/shared/permissions/permissions.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-15 22:11+0100\n"
-"PO-Revision-Date: 2012-11-18 08:04+0000\n"
-"Last-Translator: Ibrahima <ibrahima.sarr@pulaagu.com>\n"
+"POT-Creation-Date: 2015-07-21 12:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Translate Toolkit 1.10.0\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1353225866.000000\n"
+
+#: title-app
+msgid "App Permission"
+msgstr "Permission d’application"
+
+#: title-web
+msgid "Website Permission"
+msgstr "Permission de site web"
+
+#: title-cam
+msgid "Select Camera"
+msgstr "Choix de la caméra"
+
+#: perm-alarms
+msgid "Schedule Alarms"
+msgstr "Programmer des alarmes"
+
+#: perm-audio-capture
+msgid "Microphone"
+msgstr "Microphone"
+
+#: perm-audio-capture-appRequest
+msgid "Would you like to share your microphone with {{app}}?"
+msgstr "Voulez-vous partager votre microphone avec l’application {{app}} ?"
+
+#: perm-audio-capture-webRequest
+msgid "Would you like to share your microphone with {{site}}?"
+msgstr "Voulez-vous partager votre microphone avec {{site}} ?"
+
+#: perm-audio-channel-content
+msgctxt "perm-audio-channel-content"
+msgid "Play Sounds"
+msgstr "Lire des sons"
+
+#: perm-audio-channel-notification
+msgid "Play Notification Sounds"
+msgstr "Lire notifications sonores"
+
+#: perm-audio-channel-ringer
+msgid "Play Ringtone Sounds"
+msgstr "Lire des sonneries"
+
+#: perm-background-sensors
+msgid "Access Sensor Data"
+msgstr "Données du capteur"
+
+#: perm-bluetooth
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: perm-browser
+msgid "Inspect Web Pages"
+msgstr "Inspecter des pages web"
+
+#: perm-camera
+msgid "Cameras"
+msgstr "Caméras"
+
+#: perm-camera-selector-appRequest
+msgid "Select a camera for {{app}}."
+msgstr "Veuillez sélectionner une caméra pour l’application {{app}}."
+
+#: perm-camera-selector-webRequest
+msgid "Select a camera for {{site}}."
+msgstr "Veuillez sélectionner une caméra pour {{site}}."
+
+#: perm-camera-appRequest
+msgid "{{app}} would like to use your camera."
+msgstr "L’application {{app}} souhaite utiliser votre caméra."
+
+#: perm-camera-webRequest
+msgid "{{site}} would like to use your camera."
+msgstr "{{site}} souhaite utiliser votre caméra."
+
+#: perm-cellbroadcast
+msgid "Cell Broadcasts"
+msgstr "Diffusions cellulaires"
 
 #: perm-contacts
 msgid "Contacts"
@@ -34,11 +98,11 @@ msgstr "Contacts"
 
 #: perm-contacts-appRequest
 msgid "{{app}} would like to access your contact list."
-msgstr ""
+msgstr "L’application {{app}} souhaite accéder à votre liste de contacts."
 
 #: perm-contacts-webRequest
 msgid "{{site}} would like to access your contact list."
-msgstr ""
+msgstr "{{site}} souhaite accéder à votre liste de contacts."
 
 #: perm-desktop-notification
 msgid "Notifications"
@@ -46,73 +110,79 @@ msgstr "Notifications"
 
 #: perm-desktop-notification-appRequest
 msgid "{{app}} would like to display notifications."
-msgstr ""
+msgstr "L’application {{app}} souhaite afficher des notifications."
 
 #: perm-desktop-notification-webRequest
 msgid "{{site}} would like to display notifications."
-msgstr ""
+msgstr "{{site}} souhaite afficher des notifications."
+
+#: perm-device-storage-apps
+msgid "Apps Storage"
+msgstr "Stockage applications"
 
 #: perm-device-storage-music
-#, fuzzy
 msgid "Music Storage"
-msgstr "Stockage de la musique"
+msgstr "Stockage musique"
 
 #: perm-device-storage-music-appRequest
 msgid "{{app}} would like to access your music."
-msgstr ""
+msgstr "L’application {{app}} souhaite accéder à votre musique."
 
 #: perm-device-storage-music-webRequest
 msgid "{{site}} would like to access your music."
-msgstr ""
+msgstr "{{site}} souhaite accéder à votre musique."
 
 #: perm-device-storage-pictures
 msgid "Image Storage"
-msgstr ""
+msgstr "Stockage images"
 
 #: perm-device-storage-pictures-appRequest
 msgid "{{app}} would like to access your images."
-msgstr ""
+msgstr "L’application {{app}} souhaite accéder à vos images."
 
 #: perm-device-storage-pictures-webRequest
 msgid "{{site}} would like to access your images."
-msgstr ""
+msgstr "{{site}} souhaite accéder à vos images."
 
 #: perm-device-storage-sdcard
 msgid "Memory Card Storage"
-msgstr ""
+msgstr "Stockage carte mémoire"
 
 #: perm-device-storage-sdcard-appRequest
 msgid "{{app}} would like to access your memory card."
-msgstr ""
+msgstr "L’application {{app}} souhaite accéder à votre carte mémoire."
 
 #: perm-device-storage-sdcard-webRequest
 msgid "{{site}} would like to access your memory card."
-msgstr ""
+msgstr "{{site}} souhaite accéder à votre carte mémoire."
 
 #: perm-device-storage-videos
 msgid "Video Storage"
-msgstr ""
+msgstr "Stockage vidéos"
 
 #: perm-device-storage-videos-appRequest
 msgid "{{app}} would like to access your videos."
-msgstr ""
+msgstr "L’application {{app}} souhaite accéder à vos vidéos."
 
 #: perm-device-storage-videos-webRequest
 msgid "{{site}} would like to access your videos."
-msgstr ""
+msgstr "{{site}} souhaite accéder à vos vidéos."
+
+#: perm-embed-apps
+msgid "Embed Apps"
+msgstr "Embarquer des applications"
 
 #: perm-fmradio
-#, fuzzy
 msgid "FM Radio"
 msgstr "Radio FM"
 
 #: perm-fmradio-appRequest
 msgid "{{app}} would like to use the FM Radio."
-msgstr ""
+msgstr "L’application {{app}} souhaite utiliser la radio FM."
 
 #: perm-fmradio-webRequest
 msgid "{{site}} would like to use the FM Radio."
-msgstr ""
+msgstr "{{site}} souhaite utiliser la radio FM."
 
 #: perm-geolocation
 msgid "Geolocation"
@@ -120,11 +190,7 @@ msgstr "Géolocalisation"
 
 #: perm-geolocation-appRequest
 msgid "{{app}} would like to know your location."
-msgstr ""
-
-#: perm-geolocation-webRequest
-msgid "{{site}} would like to know your location."
-msgstr ""
+msgstr "L’application {{app}} souhaite connaître votre position."
 
 #: perm-geolocation-more-info
 msgid ""
@@ -134,142 +200,237 @@ msgid ""
 "location databases.  Data may be stored on your device and data collection "
 "may occur even when no apps are running."
 msgstr ""
+"{{brandShortName}} utilise les données du GPS, du Wi-Fi et des antennes de "
+"téléphonie mobile environnantes pour déterminer approximativement votre "
+"position. Les données sont envoyées à Mozilla ainsi qu’à d’autres "
+"fournisseurs de services et sont mises en commun afin d’améliorer la "
+"précision des positions. Les données peuvent être stockées sur votre "
+"appareil et des données peuvent être collectées même lorsqu’aucune "
+"application n’est exécutée."
 
-#: perm-video-capture
-#, fuzzy
-msgid "Camera"
-msgstr "Photo"
+#: perm-geolocation-webRequest
+msgid "{{site}} would like to know your location."
+msgstr "{{site}} souhaite connaître votre position."
 
-#: perm-video-capture-appRequest
-msgid "Would you like to share your camera with {{app}}?"
-msgstr ""
+#: perm-idle
+msgid "See Idle Status"
+msgstr "Consulter l’état de l’inactivité"
 
-#: perm-video-capture-webRequest
-msgid "Would you like to share your camera with {{site}}?"
-msgstr ""
+#: perm-indexedDB-chrome-settings
+msgid "Privileged IndexedDB"
+msgstr "IndexedDB en mode privilégié"
 
-#: perm-audio-capture
-msgid "Microphone"
-msgstr ""
+#: perm-indexedDB-unlimited
+msgid "Unlimited IndexedDB Storage"
+msgstr "Stockage IndexedDB illimité"
 
-#: perm-audio-capture-appRequest
-msgid "Would you like to share your microphone with {{app}}?"
-msgstr ""
+#: perm-input-manage
+msgid "Manage Keyboards"
+msgstr "Gérer les claviers"
 
-#: perm-audio-capture-webRequest
-msgid "Would you like to share your microphone with {{site}}?"
-msgstr ""
+#: perm-input
+msgid "Act as a Keyboard"
+msgstr "Comportement d’un clavier"
 
 #: perm-media-capture
 msgid "Camera and Microphone"
-msgstr ""
+msgstr "Caméra et microphone"
 
 #: perm-media-capture-appRequest
 msgid "Would you like to share your camera and microphone with {{app}}?"
 msgstr ""
+"Voulez-vous partager votre caméra et votre microphone avec l’application "
+"{{app}} ?"
 
 #: perm-media-capture-webRequest
 msgid "Would you like to share your camera and microphone with {{site}}?"
-msgstr ""
+msgstr "Voulez-vous partager votre caméra et votre microphone avec {{site}} ?"
 
-#~ msgid "Alarm"
-#~ msgstr "Alarme"
+#: perm-mobileconnection
+msgid "Mobile Connection"
+msgstr "Connexion mobile"
 
-#~ msgid "Alarms"
-#~ msgstr "Alarmes"
+#: perm-mobileid
+msgid "Mobile Identity"
+msgstr "Identité mobile"
 
-#~ msgid "Attention screen"
-#~ msgstr "Système d’alerte"
+#: perm-network-events
+msgid "Network Events"
+msgstr "Évènements réseau"
 
-#~ msgctxt "background"
-#~ msgid "Background service"
-#~ msgstr "Service en arrière-plan"
+#: perm-open-remote-window
+msgid "Start an App"
+msgstr "Lancer une application"
 
-#~ msgctxt "backgroundservice"
-#~ msgid "Background service"
-#~ msgstr "Service en arrière-plan"
+#: perm-permissions
+msgid "Modify Apps Permissions"
+msgstr "Changer des permissions"
 
-#~ msgctxt "bluetooth"
-#~ msgid "Bluetooth"
-#~ msgstr "Bluetooth"
+#: perm-power
+msgid "Power Settings"
+msgstr "Paramètres d’énergie"
 
-#~ msgid "Browser"
-#~ msgstr "Navigateur"
+#: perm-settings
+msgid "Modify Settings"
+msgstr "Changer des paramètres"
 
-#~ msgctxt "content-camera"
-#~ msgid "Camera"
-#~ msgstr "Photo"
+#: perm-systemXHR
+msgid "Cross-Origin Requests"
+msgstr "Requêtes cross-origin"
 
-#~ msgid "Deprecated HWVideo"
-#~ msgstr "HWVideo obsolète"
+#: perm-telephony
+msgid "Telephony"
+msgstr "Téléphonie"
 
-#~ msgid "Apps storage"
-#~ msgstr "Stockage des applications"
+#: perm-video-capture
+msgid "Camera"
+msgstr "Caméra"
 
-#~ msgid "Pictures storage"
-#~ msgstr "Stockage des images"
+#: perm-video-capture-appRequest
+msgid "Would you like to share your camera with {{app}}?"
+msgstr "Voulez-vous partager votre caméra avec l’application {{app}} ?"
 
-#~ msgid "Videos"
-#~ msgstr "Vidéos"
+#: perm-video-capture-webRequest
+msgid "Would you like to share your camera with {{site}}?"
+msgstr "Voulez-vous partager votre caméra avec {{site}} ?"
 
-#~ msgid "Embed apps"
-#~ msgstr "Inclure les applications"
+#: perm-voicemail
+msgid "Control Voicemail"
+msgstr "Contrôler messagerie vocale"
 
-#~ msgid "Mobile connection"
-#~ msgstr "Connexion de données"
+#: perm-webapps-manage
+msgid "Install Webapps"
+msgstr "Installer applications web"
 
-#~ msgid "Apps"
-#~ msgstr "Applications"
+#: perm-wifi-manage
+msgid "Manage Wi-Fi"
+msgstr "Gérer le Wi-Fi"
 
-#~ msgctxt "mozBluetooth"
-#~ msgid "Bluetooth"
-#~ msgstr "Bluetooth"
+#. # These permission names will only be seen when 'verbose app permissions' is enabled in the developer settings
+#: perm-attention
+msgid "Open Overlay Popups"
+msgstr "Ouvrir des pop-up"
 
-#~ msgctxt "mozFM"
-#~ msgid "FM Radio"
-#~ msgstr "Radio FM"
+#: perm-audio-channel-alarm
+msgid "Play Alarm Sounds"
+msgstr "Lire les sonneries d’alarme"
 
-#~ msgid "Network events"
-#~ msgstr "Événements réseau"
+#: perm-audio-channel-normal
+msgctxt "perm-audio-channel-normal"
+msgid "Play Sounds"
+msgstr "Lire des sons"
 
-#~ msgid "Network usage"
-#~ msgstr "Utilisation réseau"
+#: perm-audio-channel-publicnotification
+msgid "Play public notification sounds"
+msgstr "Lire notifications publiques"
 
-#~ msgid "Permissions management"
-#~ msgstr "Autorisations"
+#. # "telephony sounds" refers to the audio of somebody you are in a call with.
+#: perm-audio-channel-telephony
+msgid "Play Telephony Sounds"
+msgstr "Lire sonneries téléphoniques"
 
-#~ msgid "Power"
-#~ msgstr "Énergie"
+#: perm-backgroundservice
+msgid "Act as a Background Service"
+msgstr "Service d’arrière-plan"
 
-#~ msgid "Settings management"
-#~ msgstr "Gestion des paramètres"
+#: perm-device-storage-crashes
+msgid "Crash Data Storage"
+msgstr "Stocker données de plantage"
 
-#~ msgid "SMS"
-#~ msgstr "SMS"
+#: perm-downloads
+msgid "Access Downloads"
+msgstr "Accéder aux téléchargements"
 
-#~ msgid "Storage"
-#~ msgstr "Stockage"
+#: perm-embed-widgets
+msgid "Embed Widgets"
+msgstr "Embarquer des widgets"
 
-#~ msgid "System XHR"
-#~ msgstr "XHR du système"
+#: perm-feature-detection
+msgid "Feature Detection"
+msgstr "Détecter les fonctionnalités"
 
-#~ msgid "TCP socket"
-#~ msgstr "Protocole TCP"
+#: perm-firefox-accounts
+msgid "Firefox Accounts"
+msgstr "Comptes Firefox"
 
-#~ msgid "Telephony"
-#~ msgstr "Téléphonie"
+#: perm-mobilenetwork
+msgid "Mobile Network"
+msgstr "Réseau mobile"
 
-#~ msgid "Time"
-#~ msgstr "Heure"
+#. # The following moz-prefixed permissions are like the non-prefixed, but may be handled differently for privileged/certified apps
+#: perm-moz-attention
+msgid "Open Overlay Popups (moz)"
+msgstr "Ouvrir des pop-up (moz)"
 
-#~ msgid "Voicemail"
-#~ msgstr "Messagerie vocale"
+#: perm-moz-audio-channel-ringer
+msgid "Play Ringtone Sounds (moz)"
+msgstr "Lire des sonneries (moz)"
 
-#~ msgid "Apps management"
-#~ msgstr "Gestion des applications"
+#: perm-moz-audio-channel-telephony
+msgid "Play Telephony Sounds (moz)"
+msgstr "Lire sonneries téléph. (moz)"
 
-#~ msgid "Wi-Fi management"
-#~ msgstr "Gestion du Wi-Fi"
+#: perm-moz-firefox-accounts
+msgid "Firefox Accounts (moz)"
+msgstr "Comptes Firefox (moz)"
 
-#~ msgid "Wi-Fi"
-#~ msgstr "Wi-Fi"
+#: perm-networkstats-manage
+msgid "Control Usage Stats"
+msgstr "Statistiques consommation"
+
+#: perm-nfc
+msgid "NFC"
+msgstr "NFC"
+
+#: perm-nfc-hci-events
+msgid "NFC HCI Events"
+msgstr "Évènements NFC HCI"
+
+#: perm-nfc-manager
+msgid "Manage NFC"
+msgstr "Gérer le NFC"
+
+#: perm-phonenumberservice
+msgid "Phone Number Service"
+msgstr "Service numéro de téléphone"
+
+#: perm-push
+msgid "Push API"
+msgstr "API Push"
+
+#: perm-resourcestats-manage
+msgid "Resource Stats"
+msgstr "Statistiques de ressources"
+
+#: perm-sms
+msgid "Send and Read SMS"
+msgstr "Lire et envoyer des SMS"
+
+#: perm-speaker-control
+msgid "Control Volume"
+msgstr "Contrôler le volume"
+
+#: perm-storage
+msgid "Access Storage"
+msgstr "Accéder au stockage"
+
+#: perm-tcp-socket
+msgid "TCP Sockets"
+msgstr "Sockets TCP"
+
+#. # This permission should not be seen, except for our test apps.
+#: perm-test-permission
+msgid "Test Permission"
+msgstr "Permission test"
+
+#: perm-time
+msgid "Set Date and Time"
+msgstr "Régler la date et l’heure"
+
+#: perm-udp-socket
+msgid "UDP Sockets"
+msgstr "Sockets UDP"
+
+#: perm-wappush
+msgid "WAP Push"
+msgstr "Push WAP"

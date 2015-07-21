@@ -1,35 +1,26 @@
-#. extracted from ./apps/communications/contacts/contacts.properties
+#. extracted from en-US/apps/communications/contacts/contacts.properties, fr/apps/communications/contacts/contacts.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-09 19:43+0100\n"
-"PO-Revision-Date: 2012-11-18 08:04+0000\n"
-"Last-Translator: Ibrahima <ibrahima.sarr@pulaagu.com>\n"
+"POT-Creation-Date: 2015-07-21 12:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Translate Toolkit 1.11.0\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1353225866.000000\n"
-
-#: add
-msgid "Add"
-msgstr "Ajouter"
-
-#: back
-msgid "Back"
-msgstr "Retour"
 
 #: call
+msgctxt "call"
 msgid "Call"
 msgstr "Appeler"
 
 #: edit
+msgctxt "edit"
 msgid "Edit"
 msgstr "Modifier"
 
@@ -39,7 +30,7 @@ msgstr "Annuler"
 
 #: done
 msgid "Done"
-msgstr "Fini"
+msgstr "Terminé"
 
 #: ok
 msgid "OK"
@@ -47,50 +38,54 @@ msgstr "OK"
 
 #: update
 msgid "Update"
-msgstr "Mettre à jour"
+msgstr "Enregistrer"
 
 #: retry
 msgid "Retry"
-msgstr ""
+msgstr "Réessayer"
 
 #. # Menus and dialog strings
 #: contacts
+msgctxt "contacts"
 msgid "Contacts"
 msgstr "Contacts"
 
 #: addContact
 msgid "Add contact"
-msgstr "Ajouter un contact"
+msgstr "Créer un contact"
 
 #: deleteContact
 msgid "Delete contact"
-msgstr "Supprimer un contact"
+msgstr "Supprimer le contact"
 
 #: selectContact
-#, fuzzy
 msgid "Select contact"
-msgstr "Supprimer un contact"
+msgstr "Choisir un contact"
 
 #: selectAll
-#, fuzzy
 msgid "Select all"
-msgstr "Choisir le courriel"
+msgstr "Tout sélectionner"
 
 #: deselectAll
-#, fuzzy
 msgid "Deselect all"
-msgstr "Choisir le courriel"
+msgstr "Tout désélectionner"
 
 #: editContact
 msgid "Edit contact"
-msgstr "Modifier un contact"
+msgstr "Modifier le contact"
 
 #: deleteConfirmMsg
 msgid "Delete contact?"
-msgstr "Supprimer ce contact ?"
+msgstr "Supprimer le contact ?"
 
 #: remove
+msgctxt "remove"
 msgid "Remove"
+msgstr "Supprimer"
+
+#: delete
+msgctxt "delete"
+msgid "Delete"
 msgstr "Supprimer"
 
 #: comments
@@ -99,30 +94,35 @@ msgstr "Commentaires"
 
 #: no_contact_phones
 msgid "This contact does not have a phone number"
-msgstr ""
+msgstr "Ce contact ne possède pas de numéro de téléphone"
 
 #: no_contact_email
 msgid "This contact does not have an email address"
+msgstr "Ce contact ne possède pas d’adresse électronique"
+
+#: no_contact_data
+msgid "This contact does not have a phone number and email address"
 msgstr ""
+"Ce contact ne possède pas de numéro de téléphone ni d’adresse électronique"
 
 #: removePhotoConfirm
 msgid "Remove contact picture?"
-msgstr "Supprimer la photo du contact ?"
+msgstr "Supprimer la photo du contact ?"
 
 #: loadingContacts
 msgid "Loading contacts…"
 msgstr "Chargement des contacts…"
 
-#. # LOCALIZATION NOTE(noContactsActivity): Shown when using the context menu to add
-#. # a number from your call list to a contact, and your contacts list is empty.
-#: noContactsActivity
-msgid "Cannot add to contact as your contact list is empty"
-msgstr ""
+#. # LOCALIZATION NOTE(noContactsActivity2): Shown when trying to pick a contact
+#. # there are no contacts in your Contacts list
+#: noContactsActivity2
+msgid "No contacts in your Contacts list"
+msgstr "Votre liste de contacts est vide"
 
 #. # Contact fields
 #: noName
 msgid "No name"
-msgstr "Pas de nom"
+msgstr "Sans nom"
 
 #: givenName.placeholder
 msgid "Name"
@@ -133,6 +133,7 @@ msgid "Last name"
 msgstr "Nom"
 
 #: tel.placeholder
+msgctxt "tel.placeholder"
 msgid "Phone"
 msgstr "Téléphone"
 
@@ -140,6 +141,10 @@ msgstr "Téléphone"
 msgctxt "carrier"
 msgid "Carrier"
 msgstr "Opérateur"
+
+#: separator
+msgid ","
+msgstr ","
 
 #: carrier.placeholder
 msgctxt "carrier.placeholder"
@@ -178,21 +183,22 @@ msgstr "Commentaire"
 
 #: org.placeholder
 msgid "Company"
-msgstr "Société"
-
-#: custom.placeholder
-msgid "Custom"
-msgstr "Personnalisé"
+msgstr "Entreprise"
 
 #: date
 msgctxt "date"
 msgid "Date"
-msgstr ""
+msgstr "Date"
+
+#: date-span-placeholder
+msgctxt "date-span-placeholder"
+msgid "Date"
+msgstr "Date"
 
 #: date.placeholder
 msgctxt "date.placeholder"
 msgid "Date"
-msgstr ""
+msgstr "Date"
 
 #: birthday
 msgid "Birthday"
@@ -201,20 +207,20 @@ msgstr "Anniversaire"
 #. # see http://pubs.opengroup.org/onlinepubs/007908799/xsh/strftime.html
 #: dateFormat
 msgid "%B %e"
-msgstr "%e %B"
+msgstr "%e %Eb"
 
 #: dateOutput
 msgid "{{dayMonthFormatted}} {{year}}"
-msgstr ""
+msgstr "{{dayMonthFormatted}} {{year}}"
 
 #: anniversary
 msgid "Anniversary"
-msgstr ""
+msgstr "Date anniversaire"
 
 #. # Contact action buttons
 #: addPhoto
 msgid "Add Picture"
-msgstr "Ajouter une photo"
+msgstr "Ajouter"
 
 #: addPhone
 msgid "Add Phone"
@@ -230,7 +236,7 @@ msgstr "Ajouter une adresse"
 
 #: addDate
 msgid "Add Date"
-msgstr ""
+msgstr "Ajouter une date"
 
 #: addComment
 msgid "Add Comment"
@@ -242,67 +248,73 @@ msgstr "Ajouter aux favoris"
 
 #: removeFavorite
 msgid "Remove as Favorite"
-msgstr "Supprimer des favoris"
+msgstr "Retirer des favoris"
 
-#. # Field labels
-#: label
-msgid "Label"
-msgstr "Type de numéro"
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: addButton.ariaLabel
+msgid "Add"
+msgstr "Ajouter"
 
-#: mobile
-msgid "Mobile"
-msgstr "Portable"
+#: editButton.ariaLabel
+msgctxt "editButton.ariaLabel"
+msgid "Edit"
+msgstr "Modifier"
 
-#: home
-msgid "Home"
-msgstr "Domicile"
+#: settingsButton.ariaLabel
+msgid "Settings"
+msgstr "Paramètres"
 
-#: work
-msgid "Work"
-msgstr "Bureau"
+#: phoneDetail.ariaLabel
+msgctxt "phoneDetail.ariaLabel"
+msgid "Phone"
+msgstr "Téléphone"
 
-#: personal
-msgid "Personal"
-msgstr "Personnel"
+#: emailDetail.ariaLabel
+msgctxt "emailDetail.ariaLabel"
+msgid "Email"
+msgstr "Courriel"
 
-#: faxHome
-msgid "Fax home"
-msgstr "Fax domicile"
+#: addressDetail.ariaLabel
+msgctxt "addressDetail.ariaLabel"
+msgid "Address"
+msgstr "Adresse"
 
-#: faxOffice
-msgid "Fax office"
-msgstr "Fax bureau"
+#: dateDetail.ariaLabel
+msgctxt "dateDetail.ariaLabel"
+msgid "Date"
+msgstr "Date"
 
-#: faxOther
-msgid "Fax other"
-msgstr "Autre fax"
+#: composeEmail.ariaLabel
+msgctxt "composeEmail.ariaLabel"
+msgid "Email"
+msgstr "Envoyer un courriel"
 
-#: another
-msgid "Another"
-msgstr "Autre"
+#: makeCall.ariaLabel
+msgctxt "makeCall.ariaLabel"
+msgid "Call"
+msgstr "Appeler"
 
-#: other
-msgid "Other"
-msgstr ""
+#: phones.ariaLabel
+msgid "Phones"
+msgstr "Téléphones"
 
-#: custom
-msgid "Custom tag"
-msgstr "Personnalisé"
+#: emails.ariaLabel
+msgid "Emails"
+msgstr "Courriels"
 
-#. # Note: For localizers. This tag indicates the current address
-#: current
-msgid "Current"
-msgstr ""
+#: addresses.ariaLabel
+msgid "Addresses"
+msgstr "Adresses"
 
-#. # LOCALIZATION NOTE(itemWithLabel): Parameters in this string will be replaced
-#. # at run-time: {{label}} is the label associated to phone number or email,
-#. # item is the number/email itself. Examples for English: "Home, +123456789" or
-#. # "Work, foo@example.com".
-#: itemWithLabel
-msgid "{{label}}, {{item}}"
-msgstr ""
+#: dates.ariaLabel
+msgid "Dates"
+msgstr "Dates"
 
-#. # Hidden information, for screen readers
+#: notes.ariaLabel
+msgid "Notes"
+msgstr "Notes"
+
 #: exit
 msgid "Exit"
 msgstr "Quitter"
@@ -361,15 +373,12 @@ msgstr "Numéros de tél."
 
 #: legendEmail
 msgid "Email address"
-msgstr "Adresse courriel"
+msgstr "Adresse électronique"
 
 #: legendAddress
+msgctxt "legendAddress"
 msgid "Address"
 msgstr "Adresse"
-
-#: settings
-msgid "Settings"
-msgstr "Paramètres"
 
 #. # search related
 #: search-contact.placeholder
@@ -378,255 +387,134 @@ msgstr "Rechercher"
 
 #: noResults
 msgid "No contacts found"
-msgstr "Pas de contact trouvé"
+msgstr "Aucun contact trouvé"
 
 #: transferContactsTitle
 msgid "Transfer Contacts"
-msgstr ""
+msgstr "Transférer des contacts"
 
 #: importContactsTitle
 msgctxt "importContactsTitle"
 msgid "Import Contacts"
-msgstr ""
+msgstr "Importer des contacts"
 
 #: importContactsButton
 msgctxt "importContactsButton"
 msgid "Import Contacts"
-msgstr ""
+msgstr "Importer des contacts"
 
 #: exportContactsTitle
 msgctxt "exportContactsTitle"
 msgid "Export Contacts"
-msgstr ""
+msgstr "Exporter des contacts"
 
 #: exportContactsButton
 msgctxt "exportContactsButton"
 msgid "Export Contacts"
-msgstr ""
+msgstr "Exporter des contacts"
 
 #: exportContactsAction
 msgid "Export"
-msgstr ""
+msgstr "Exporter"
 
 #. # Export
 #: simExport-title
 msgid "Export to SIM"
-msgstr ""
+msgstr "Exportation vers la SIM"
 
-#: sdExport-title
-msgid "Export to SD Card"
-msgstr ""
+#: memoryCardExport-title
+msgid "Export to memory card"
+msgstr "Exportation vers la carte mémoire"
 
 #: btExport-title
 msgid "Export to Bluetooth"
-msgstr ""
+msgstr "Exportation par Bluetooth"
 
-#: sdUMSEnabled
-msgid "Cannot use SD Card because USB storage is enabled"
-msgstr ""
+#: memoryCardUMSEnabled
+msgid "Cannot use memory card because USB storage is enabled"
+msgstr "Impossible d’utiliser la carte mémoire car le stockage USB est activé"
 
 #: exportErrorTitle
 msgid "Export error"
-msgstr ""
+msgstr "Erreur d’exportation"
 
 #: contactsExported2
 msgid "{[ plural(exported) ]}"
-msgstr ""
+msgstr "{[ plural(exported) ]}"
 
 #: contactsExported2[zero]
 msgid "No contacts exported"
-msgstr ""
+msgstr "Aucun contact exporté"
 
 #: contactsExported2[one]
 msgctxt "contactsExported2[one]"
+"contactsExported2[one]"
+"contactsExported2[one]"
+"contactsExported2[one]"
 msgid "{{exported}}/{{total}} contacts exported"
-msgstr ""
+msgstr "1 contact exporté (sur {{total}})"
 
 #: contactsExported2[two]
 msgctxt "contactsExported2[two]"
 msgid "{{exported}}/{{total}} contacts exported"
-msgstr ""
+msgstr "{{exported}} contacts exportés (sur {{total}})"
 
 #: contactsExported2[few]
 msgctxt "contactsExported2[few]"
 msgid "{{exported}}/{{total}} contacts exported"
-msgstr ""
+msgstr "{{exported}} contacts exportés (sur {{total}})"
 
 #: contactsExported2[many]
 msgctxt "contactsExported2[many]"
 msgid "{{exported}}/{{total}} contacts exported"
-msgstr ""
+msgstr "{{exported}} contacts exportés (sur {{total}})"
 
 #: contactsExported2[other]
 msgctxt "contactsExported2[other]"
 msgid "{{exported}}/{{total}} contacts exported"
-msgstr ""
+msgstr "{{exported}} contacts exportés (sur {{total}})"
 
 #: exportError-general
 msgid "Some error happened while exporting"
-msgstr ""
+msgstr "Une erreur s’est produite lors de l’exportation"
 
 #: exportError-SD-shared
 msgctxt "exportError-SD-shared"
 msgid "Can’t access memory card because it’s shared"
-msgstr ""
+msgstr "Impossible d’accéder à la carte mémoire tant que le partage est activé"
 
 #: exportError-SD-unavailable
 msgctxt "exportError-SD-unavailable"
 msgid "Memory card is not available"
-msgstr ""
+msgstr "Carte mémoire indisponible"
 
 #: exportError-SD-noSpace
 msgctxt "exportError-SD-noSpace"
 msgid "There’s not enough space on the memory card to export the contacts"
 msgstr ""
+"L’espace disponible sur la carte mémoire est insuffisant pour exporter les "
+"contacts"
 
 #: exportError-SIM-unavailable
 msgid "SIM card is not available"
-msgstr ""
+msgstr "Carte SIM indisponible"
 
 #: exportError-BT-shared
 msgctxt "exportError-BT-shared"
 msgid "Can’t access memory card because it’s shared"
-msgstr ""
+msgstr "Impossible d’accéder à la carte mémoire tant que le partage est activé"
 
 #: exportError-BT-unavailable
 msgctxt "exportError-BT-unavailable"
 msgid "Memory card is not available"
-msgstr ""
+msgstr "Carte mémoire indisponible"
 
 #: exportError-BT-noSpace
 msgctxt "exportError-BT-noSpace"
 msgid "There’s not enough space on the memory card to export the contacts"
 msgstr ""
-
-#. # SIM import
-#: simContacts-import
-msgid "Import SIM contacts"
-msgstr "Importer les contacts de la SIM"
-
-#: simContacts-importing
-msgid "Importing SIM contacts…"
-msgstr "Import des contacts de la SIM…"
-
-#: simContacts-reading
-msgid "Reading from SIM card…"
-msgstr "Lecture de la SIM…"
-
-#: simContacts-error
-msgid "Could not import contacts from SIM"
-msgstr "Impossible d’importer les contacts de la SIM"
-
-#: simContacts-imported3
-msgctxt "simContacts-imported3"
-msgid "{[ plural(n) ]}"
-msgstr ""
-
-#: simContacts-imported3[zero]
-msgid "No contacts detected on SIM to import"
-msgstr ""
-
-#: simContacts-imported3[one]
-msgctxt "simContacts-imported3[one]"
-msgid "Imported one contact"
-msgstr ""
-
-#: simContacts-imported3[two]
-msgctxt "simContacts-imported3[two]"
-msgid "Imported {{n}} contacts"
-msgstr ""
-
-#: simContacts-imported3[few]
-msgctxt "simContacts-imported3[few]"
-msgid "Imported {{n}} contacts"
-msgstr ""
-
-#: simContacts-imported3[many]
-msgctxt "simContacts-imported3[many]"
-msgid "Imported {{n}} contacts"
-msgstr ""
-
-#: simContacts-imported3[other]
-msgctxt "simContacts-imported3[other]"
-msgid "Imported {{n}} contacts"
-msgstr ""
-
-#: noSimMsg
-msgid "To import contacts insert or unlock your SIM card"
-msgstr ""
-
-#: noSimMsgExport
-msgid "To export contacts insert or unlock your SIM card"
-msgstr ""
-
-#: simNumber
-msgid "SIM {{number}}"
-msgstr ""
-
-#. # SD Card import
-#: memoryCardContacts-import
-msgid "Import contacts from memory card"
-msgstr ""
-
-#: memoryCardContacts-importing
-msgid "Importing contacts from memory card…"
-msgstr ""
-
-#: memoryCardContacts-reading
-#, fuzzy
-msgid "Reading from memory card…"
-msgstr "Lecture de la SIM…"
-
-#: memoryCardContacts-error
-#, fuzzy
-msgid "Could not import contacts from memory card"
-msgstr "Impossible d’importer les contacts de la SIM"
-
-#: memoryCardContacts-imported3
-msgctxt "memoryCardContacts-imported3"
-msgid "{[ plural(n) ]}"
-msgstr ""
-
-#: memoryCardContacts-imported3[zero]
-msgid "No contacts detected on memory card to import"
-msgstr ""
-
-#: memoryCardContacts-imported3[one]
-msgctxt "memoryCardContacts-imported3[one]"
-msgid "Imported one contact"
-msgstr ""
-
-#: memoryCardContacts-imported3[two]
-msgctxt "memoryCardContacts-imported3[two]"
-msgid "Imported {{n}} contacts"
-msgstr ""
-
-#: memoryCardContacts-imported3[few]
-msgctxt "memoryCardContacts-imported3[few]"
-msgid "Imported {{n}} contacts"
-msgstr ""
-
-#: memoryCardContacts-imported3[many]
-msgctxt "memoryCardContacts-imported3[many]"
-msgid "Imported {{n}} contacts"
-msgstr ""
-
-#: memoryCardContacts-imported3[other]
-msgctxt "memoryCardContacts-imported3[other]"
-msgid "Imported {{n}} contacts"
-msgstr ""
-
-#: noMemoryCardMsg
-msgid "To import contacts insert a memory card"
-msgstr ""
-
-#: noMemoryCardMsgExport
-msgid "To export contacts insert a memory card"
-msgstr ""
-
-#: genericProgress
-msgid "{{current}}/{{total}}"
-msgstr ""
+"L’espace disponible sur la carte mémoire est insuffisant pour exporter les "
+"contacts"
 
 #. # Social networks
 #: social-network
@@ -635,19 +523,19 @@ msgstr "Réseaux sociaux"
 
 #: social-link
 msgid "Link contact"
-msgstr "Lier le contact"
+msgstr "Ajouter le contact"
 
 #: social-unlink
 msgid "Unlink contact"
-msgstr "Délier le contact"
+msgstr "Retirer le contact"
 
 #: social-unlink-confirm-title
 msgid "Do you want to unlink your friend?"
-msgstr ""
+msgstr "Voulez-vous retirer cet ami ?"
 
 #: social-unlink-confirm-accept
 msgid "Unlink"
-msgstr ""
+msgstr "Retirer"
 
 #: facebook-import
 msgid "Import Facebook friends"
@@ -655,7 +543,7 @@ msgstr "Importer des amis Facebook"
 
 #: show-fb-profile
 msgid "View Facebook profile"
-msgstr ""
+msgstr "Voir le profil Facebook"
 
 #: msg-send
 msgid "Message"
@@ -665,58 +553,34 @@ msgstr "Message"
 msgid "Wall post"
 msgstr "Statut"
 
-#: facebook
-msgid "Facebook"
-msgstr "Facebook"
+#: share-contact
+msgid "Share Contact"
+msgstr "Partager le contact"
 
-#: facebook-import-msg
-msgid "{[ plural(imported) ]}"
-msgstr ""
-
-#: facebook-import-msg[zero]
-msgid "No friends imported (out of {{total}})"
-msgstr ""
-
-#: facebook-import-msg[one]
-msgid "One friend imported (out of {{total}})"
-msgstr ""
-
-#: facebook-import-msg[two]
-msgctxt "facebook-import-msg[two]"
-msgid "{{imported}}/{{total}} friends imported"
-msgstr ""
-
-#: facebook-import-msg[few]
-msgctxt "facebook-import-msg[few]"
-msgid "{{imported}}/{{total}} friends imported"
-msgstr ""
-
-#: facebook-import-msg[many]
-msgctxt "facebook-import-msg[many]"
-msgid "{{imported}}/{{total}} friends imported"
-msgstr ""
-
-#: facebook-import-msg[other]
-msgctxt "facebook-import-msg[other]"
-msgid "{{imported}}/{{total}} friends imported"
-msgstr ""
+#: facebook-export-forbidden
+msgid "The contact cannot be shared due to Facebook constraint."
+msgstr "Le contact ne peut pas être partagé à cause de restrictions Facebook."
 
 #: otherAccount
 msgid "Other accounts"
-msgstr ""
+msgstr "Autres comptes"
 
 #: facebookSwitchMsg
 msgid "Sync friends"
-msgstr ""
+msgstr "Synchroniser amis"
 
 #. # value selector
 #: select_mobile
 msgid "Select mobile"
-msgstr "Choisir le portable"
+msgstr "Choisir le mobile"
 
 #: select_email
 msgid "Select email"
 msgstr "Choisir le courriel"
+
+#: select_recipient
+msgid "Select recipient"
+msgstr "Choisir le destinataire"
 
 #. # Settings related
 #: contactsOrderBy
@@ -726,145 +590,370 @@ msgstr "Trier par nom"
 #: importSim2
 msgctxt "importSim2"
 msgid "SIM card"
-msgstr ""
-
-#: importMemoryCard
-msgctxt "importMemoryCard"
-msgid "Memory card"
-msgstr ""
+msgstr "Carte SIM"
 
 #: importGmail
-#, fuzzy
 msgid "Gmail"
-msgstr "Courriel"
+msgstr "Gmail"
 
 #: bluetooth
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: importOutlook
 msgid "Outlook"
-msgstr ""
+msgstr "Outlook"
 
 #: fbUpdateFriends
 msgid "Update imported friends"
-msgstr ""
+msgstr "Mettre à jour les amis importés"
 
 #: cleaningFbData
 msgid "Removing Facebook data"
-msgstr "Supprimer les données Facebook"
+msgstr "Suppression des données Facebook"
 
 #: loggingOutFb
 msgid "Logging out from Facebook"
-msgstr "Se déconnecter de Facebook"
+msgstr "Déconnexion de Facebook"
 
 #: cleanFbConfirmMsg
 msgid "Remove all Facebook data?"
-msgstr "Supprimer toutes les données Facebook ?"
+msgstr "Supprimer toutes les données Facebook ?"
 
 #: renewPwdMsg
 msgid "Your password in Facebook has changed. Please, update it."
 msgstr ""
-
-#: noConnection11
-msgid "To import Facebook friends or contacts connect to Wi-Fi or data network"
-msgstr ""
+"Votre mot de passe a été modifié sur Facebook. Veuillez le mettre à jour."
 
 #: notEnabledYet
 msgid "Not enabled yet"
-msgstr ""
+msgstr "Pas encore activé"
 
 #: genericNoConnection
 msgid "To import contacts connect to Wi-Fi or data network"
 msgstr ""
+"Pour importer des contacts, connectez-vous à un réseau Wi-Fi ou à un réseau "
+"de données mobiles"
 
 #. # Used for export, just in case the strings will diverge on time
 #: simCard
 msgctxt "simCard"
 msgid "SIM card"
-msgstr ""
+msgstr "Carte SIM"
 
 #: memoryCard
-msgctxt "memoryCard"
 msgid "Memory card"
+msgstr "Carte mémoire"
+
+#: simNumberNoMSISDN
+msgid "SIM {{number}}:"
+msgstr "SIM {{number}} :"
+
+#: simNumberWithMSISDN
+msgid "SIM {{number}}: {{msisdn}}"
+msgstr "SIM {{number}} : {{msisdn}}"
+
+#. # ICE Contacts
+#: ICEContactsGroup
+msgctxt "ICEContactsGroup"
+msgid "ICE Contacts"
+msgstr "Contacts ICE"
+
+#: setICEButton
+msgid "Set ICE Contacts"
+msgstr "Définir des contacts ICE"
+
+#: ICESettingTitle
+msgctxt "ICESettingTitle"
+msgid "ICE Contacts"
+msgstr "Contacts ICE"
+
+#: ICEDescription
+msgid "Add two contacts for making “In Case of Emergency” calls."
 msgstr ""
+"Définissez deux contacts pour les appels ICE (« In Case of Emergency », soit "
+"« en cas d’urgence »)."
+
+#: ICEContact1
+msgid "ICE Contact 1"
+msgstr "Contact ICE 1"
+
+#: ICESelectContact
+msgid "Select a contact"
+msgstr "Sélectionner un contact"
+
+#: ICEContact2
+msgid "ICE Contact 2"
+msgstr "Contact ICE 2"
+
+#: ICERepeatedContact
+msgid "This contact is already an existing ICE contact"
+msgstr "Ce contact est déjà un contact ICE"
+
+#: ICEUnknownError
+msgid "There was an error setting the contact as ICE"
+msgstr ""
+"Une erreur s’est produite lors de la définition de ce contact comme contact "
+"ICE"
+
+#: ICEContactNoNumber
+msgid "This contact doesn't have a phone number"
+msgstr "Ce contact ne possède pas de numéro de téléphone"
+
+#: ICEFacebookContactNotAllowed
+msgid "Facebook contacts cannot be set as ICE contacts"
+msgstr "Les contacts Facebook ne peuvent pas être définis comme contacts ICE"
+
+#: ICEContactDelTel
+msgid "Deleted phone numbers are removed from ICE Contact"
+msgstr "Les numéros de téléphone supprimés ont été retirés du contact ICE"
+
+#: ICEContactDelTelAll
+msgid ""
+"All the numbers are deleted. This contact is removed from the ICE Contacts."
+msgstr ""
+"Tous les numéros de téléphone ont été supprimés. Ce contact a été retiré des "
+"contacts ICE."
 
 #. # No contacts
-#: create-new
-msgid "Create a new contact"
-msgstr "Créer un nouveau contact"
-
-#: import-now
-msgid "Import your contacts from SIM card or Facebook"
-msgstr "Importer vos contacts depuis la SIM ou Facebook"
-
 #: no-contacts
 msgid "No contacts"
-msgstr "pas de contacts"
+msgstr "Aucun contact"
 
 #: start-adding
 msgid "Start adding them now"
-msgstr "commencer à les ajouter maintenant"
+msgstr "Vous pouvez dès à présent commencer à en ajouter"
 
 #: notImported
 msgid "Not imported"
-msgstr ""
+msgstr "Jamais importé"
 
 #: imported
 msgid "Imported"
-msgstr ""
+msgstr "Importé"
 
 #: today
 msgid "Today"
-msgstr ""
+msgstr "Aujourd’hui"
 
 #: yesterday
 msgid "Yesterday"
-msgstr ""
+msgstr "Hier"
 
 #: messageCanceling
 msgid "Please hold on. We are canceling the ongoing operation."
-msgstr ""
+msgstr "Veuillez patienter, nous annulons l’opération en cours."
 
 #: organise-contacts
 msgid "Organize Contacts"
-msgstr ""
+msgstr "Organiser les contacts"
 
 #: find-merge-contacts
 msgid "Find duplicate contacts"
-msgstr ""
+msgstr "Rechercher des doublons"
 
 #: preparing-contacts
 msgid "Preparing contacts"
-msgstr ""
+msgstr "Préparation des contacts"
 
 #: exportError-SIM-NoFreeRecordFound
 msgid "SIM Card is full"
-msgstr ""
+msgstr "La carte SIM est pleine"
 
 #: exportError-SIM-CannotAccessPhoneBook
-msgid "Cannot access SIM card's phone book"
-msgstr ""
+msgid "Cannot access SIM card’s phone book"
+msgstr "Impossible d’accéder au carnet d’adresses de la carte SIM"
 
 #: exportError-SIM-Unavailable
 msgid "No SIM detected"
-msgstr ""
+msgstr "Aucune SIM détectée"
 
 #: exportError-SIM-GenericError
 msgid "An error occurred while exporting a contact"
-msgstr ""
+msgstr "Une erreur s’est produite lors de l’exportation d’un contact."
 
-#~ msgid "No phones"
-#~ msgstr "Pas de téléphone"
+#: noSimMsgExport
+msgid "To export contacts insert or unlock your SIM card"
+msgstr "Pour exporter des contacts, insérez ou débloquez votre carte SIM"
 
-#~ msgid "No email"
-#~ msgstr "Pas de courriel"
+#: noMemoryCardMsgExport
+msgid "To export contacts insert a memory card"
+msgstr "Pour exporter des contacts, insérez une carte mémoire"
 
-#~ msgid "Import from SIM"
-#~ msgstr "Importer depuis la SIM"
+#: ContactManagementTitle
+msgid "Contacts Management"
+msgstr "Gestion des contacts"
 
-#~ msgid "Storing SIM contacts…"
-#~ msgstr "Stockage dans la SIM…"
+#: DeleteTitle
+msgctxt "DeleteTitle"
+msgid "Delete"
+msgstr "Supprimer"
 
-#~ msgid "Import from Facebook"
-#~ msgstr "Importer depuis Facebook"
+#: bulkDeleteButton
+msgid "Delete Contacts"
+msgstr "Supprimer des contacts"
+
+#: BulkDelCancel
+msgid "Contacts delete cancelled"
+msgstr "Suppression des contacts annulée"
+
+#: DeletedTxt
+msgctxt "DeletedTxt"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: DeletedTxt[zero]
+msgctxt "DeletedTxt[zero]"
+msgid "No Contact to Delete"
+msgstr "Aucun contact à supprimer"
+
+#: DeletedTxt[one]
+msgid "1 Contact removed"
+msgstr "1 contact supprimé"
+
+#: DeletedTxt[two]
+msgctxt "DeletedTxt[two]"
+msgid "{{n}} Contacts removed"
+msgstr "{{n}} contacts supprimés"
+
+#: DeletedTxt[few]
+msgctxt "DeletedTxt[few]"
+msgid "{{n}} Contacts removed"
+msgstr "{{n}} contacts supprimés"
+
+#: DeletedTxt[many]
+msgctxt "DeletedTxt[many]"
+msgid "{{n}} Contacts removed"
+msgstr "{{n}} contacts supprimés"
+
+#: DeletedTxt[other]
+msgctxt "DeletedTxt[other]"
+msgid "{{n}} Contacts removed"
+msgstr "{{n}} contacts supprimés"
+
+#: DeletingContacts
+msgid "Deleting contacts"
+msgstr "Suppression des contacts"
+
+#: ContactConfirmDel
+msgctxt "ContactConfirmDel"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: ContactConfirmDel[zero]
+msgctxt "ContactConfirmDel[zero]"
+msgid "No Contact to Delete"
+msgstr "Aucun contact à supprimer"
+
+#: ContactConfirmDel[one]
+msgid "Delete 1 Contact? This cannot be undone."
+msgstr "Supprimer 1 contact ? Cette action est irréversible."
+
+#: ContactConfirmDel[two]
+msgctxt "ContactConfirmDel[two]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr "Supprimer {{n}} contacts ? Cette action est irréversible."
+
+#: ContactConfirmDel[few]
+msgctxt "ContactConfirmDel[few]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr "Supprimer {{n}} contacts ? Cette action est irréversible."
+
+#: ContactConfirmDel[many]
+msgctxt "ContactConfirmDel[many]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr "Supprimer {{n}} contacts ? Cette action est irréversible."
+
+#: ContactConfirmDel[other]
+msgctxt "ContactConfirmDel[other]"
+msgid "Delete {{n}} Contacts? This cannot be undone."
+msgstr "Supprimer {{n}} contacts ? Cette action est irréversible."
+
+#: SelectedTxt
+msgctxt "SelectedTxt"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: SelectedTxt[zero]
+msgctxt "SelectedTxt[zero]"
+msgid "Contacts"
+msgstr "Contacts"
+
+#: SelectedTxt[one]
+msgctxt "SelectedTxt[one]"
+"SelectedTxt[one]"
+"SelectedTxt[one]"
+"SelectedTxt[one]"
+msgid "{{n}} selected"
+msgstr "{{n}} sélectionné"
+
+#: SelectedTxt[two]
+msgctxt "SelectedTxt[two]"
+msgid "{{n}} selected"
+msgstr "{{n}} sélectionnés"
+
+#: SelectedTxt[few]
+msgctxt "SelectedTxt[few]"
+msgid "{{n}} selected"
+msgstr "{{n}} sélectionnés"
+
+#: SelectedTxt[many]
+msgctxt "SelectedTxt[many]"
+msgid "{{n}} selected"
+msgstr "{{n}} sélectionnés"
+
+#: SelectedTxt[other]
+msgctxt "SelectedTxt[other]"
+msgid "{{n}} selected"
+msgstr "{{n}} sélectionnés"
+
+#. # WebRTC App
+#: video
+msgid "Video"
+msgstr "Vidéo"
+
+#: audio
+msgid "Audio"
+msgstr "Audio"
+
+#. # Pick Destination
+#: pick_destination
+msgid "{{ destination }} {{ carrier }}"
+msgstr "{{ destination }} {{ carrier }}"
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: removeField.ariaLabel
+msgctxt "removeField.ariaLabel"
+msgid "Remove"
+msgstr "Supprimer"
+
+#: undo.ariaLabel
+msgid "Undo"
+msgstr "Annuler"
+
+#: send-sms-button.ariaLabel
+msgid "SMS"
+msgstr "SMS"
+
+#. # In Case of Emergency contacts (ICE)
+#: ice_contacts
+msgctxt "ice_contacts"
+msgid "ICE Contacts"
+msgstr "Contacts ICE"
+
+#: edit-picture
+msgid "Edit Picture"
+msgstr "Modifier"
+
+#: remove-photo
+msgid "Remove photo"
+msgstr "Retirer la photo"
+
+#: change-photo
+msgid "Change photo"
+msgstr "Changer de photo"
+
+#: photo-options
+msgid "Photo options"
+msgstr "Options pour la photo"

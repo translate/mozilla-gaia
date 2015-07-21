@@ -1,21 +1,33 @@
-#. extracted from ./apps/email/email.properties
+#. extracted from en-US/apps/email/email.properties, fr/apps/email/email.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-01 00:45+0100\n"
-"PO-Revision-Date: 2012-11-18 08:04+0000\n"
-"Last-Translator: Ibrahima <ibrahima.sarr@pulaagu.com>\n"
+"POT-Creation-Date: 2015-07-21 12:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Translate Toolkit 1.11.0\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1353225866.000000\n"
+
+#. # LOCALIZATION NOTE(back-button): For various cards, a label for a general
+#. # purpose header back button rendered as an icon. The following string is spoken
+#. # by screen readers and not shown on the screen.
+#: back-button.ariaLabel
+msgctxt "back-button.ariaLabel"
+msgid "Back"
+msgstr "Retour"
+
+#. # LOCALIZATION NOTE(close-button): For various cards, a label for a general
+#. # purpose header close button rendered as an icon. The following string is
+#. # spoken by screen readers and not shown on the screen.
+#: close-button.ariaLabel
+msgid "Close"
+msgstr "Fermer"
 
 #: setup-app-name-header
 msgid "Mail"
@@ -26,18 +38,23 @@ msgid ""
 "You are not set up to send or receive email. Would you like to do that now?"
 msgstr ""
 "Votre compte n’est pas configuré pour envoyer ni recevoir des messages. "
-"Voulez-vous le configurer maintenant ?"
+"Voulez-vous le configurer maintenant ?"
 
 #: setup-pick-service
 msgid "To send and receive email, you will need to set up an account."
-msgstr ""
-"Pour envoyer et recevoir des messages, vous devez configurer un compte."
+msgstr "Pour envoyer et recevoir des messages, vous devez configurer un compte."
 
 #. # Title of the account setup card where the user enters their display name,
 #. # e-mail address, and password.
 #: setup-account-header3
 msgid "New Account"
-msgstr ""
+msgstr "Nouveau compte"
+
+#. # LOCALIZATION NOTE (setup-account-enter-password): Shown during account setup
+#. # if the autoconfig process determines a password is needed to complete setup.
+#: setup-account-enter-password
+msgid "Enter Password For:"
+msgstr "Saisir le mot de passe pour :"
 
 #. # The placeholder for the display name of the user that will be displayed in the
 #. # account setup screen input box for the display name until they enter any text
@@ -48,21 +65,20 @@ msgstr ""
 #: setup-info-name.placeholder
 msgctxt "setup-info-name.placeholder"
 msgid "Your name"
-msgstr ""
+msgstr "Votre nom"
 
 #. # The placeholder for the user's e-mail address that will be displayed in the
 #. # account setup screen input box for the e-mail address until they enter any
 #. # text in the box.  The value will be used to configure the e-mail account.
 #: setup-info-email.placeholder
 msgid "someone@example.com"
-msgstr ""
+msgstr "vous@exemple.com"
 
 #. # The placeholder for the user's password that will be displayed in the account
 #. # setup screen input box for the password until they enter any text in the box.
 #. # The value will be used to configure the e-mail account and saved for future
 #. # usage.
 #: setup-info-password.placeholder
-#, fuzzy
 msgctxt "setup-info-password.placeholder"
 msgid "Password"
 msgstr "Mot de passe"
@@ -74,15 +90,15 @@ msgstr "Suivant"
 
 #: setup-progress-wait-msg
 msgid "Setting up account"
-msgstr ""
+msgstr "Configuration du compte"
 
 #: setup-completed-header
 msgid "Mail account setup"
-msgstr "Configuration du compte de messagerie"
+msgstr "Configuration du compte"
 
 #: setup-completed-label
 msgid "All done!"
-msgstr "C’est fini !"
+msgstr "C’est terminé !"
 
 #: setup-add-another-account
 msgid "Add another account"
@@ -97,6 +113,8 @@ msgstr "Continuer vers les messages"
 #: setup-error-offline
 msgid "This device is currently offline. Connect to a network and try again."
 msgstr ""
+"Cet appareil est actuellement hors connexion. Veuillez vous connecter à un "
+"réseau puis réessayer."
 
 #. # The error for either a bad username or a bad password.  For security reasons,
 #. # servers try not to distinguish between the two which is why we also cannot
@@ -105,12 +123,14 @@ msgstr ""
 #: setup-error-bad-user-or-pass2
 msgid "Invalid username or password. Check for typos."
 msgstr ""
+"Nom d’utilisateur ou mot de passe incorrect. Veuillez vérifier ces "
+"informations."
 
 #. # The error for a bad e-mail address. We tried to send email but
 #. # couldn't because the server said it was a bad address.
 #: setup-error-bad-address
 msgid "Invalid e-mail address. Check for typos."
-msgstr ""
+msgstr "Adresse électronique incorrecte. Veuillez vérifier cette information."
 
 #. # The error for a user having the correct username and password, but the mail
 #. # server explicitly indicates they don't have permission to talk to the mail
@@ -118,7 +138,6 @@ msgstr ""
 #. # like gmail over IMAP indicating that IMAP is disabled for the account or
 #. # domain have their own error code: setup-error-imap-disabled.
 #: setup-error-not-authorized
-#, fuzzy
 msgid "The server said you’re not authorized to create an account"
 msgstr "Le serveur répond que vous n’êtes pas autorisé à créer un compte"
 
@@ -128,6 +147,8 @@ msgstr "Le serveur répond que vous n’êtes pas autorisé à créer un compte"
 msgid ""
 "Server unsupported. The POP3 server does not implement required features."
 msgstr ""
+"Serveur non pris en charge. Le serveur POP3 ne possède pas les "
+"fonctionnalités requises."
 
 #. # The fallback error; if we don't have a better error, we report this.
 #: setup-error-unknown2
@@ -135,6 +156,8 @@ msgid ""
 "An unknown error occurred. Check your network connection or try the manual "
 "configuration option."
 msgstr ""
+"Une erreur inconnue s’est produite. Veuillez vérifier votre connexion réseau "
+"ou essayer la configuration manuelle."
 
 #. # The error for Gmail accounts where 2-factor authentication (where you receive
 #. # a text message on your phone or run a special app) is enabled, and so the
@@ -144,6 +167,8 @@ msgstr ""
 msgid ""
 "You must use an application specific password for two-factor Gmail accounts"
 msgstr ""
+"Vous devez utiliser un mot de passe spécifique à l’application pour la "
+"validation en deux étapes de vos comptes Gmail"
 
 #. # The error for Gmail accounts where IMAP is not enabled.  This can occur
 #. # for individual users where they have disabled IMAP from the settings UI.
@@ -151,7 +176,7 @@ msgstr ""
 #. # to support IMAP.
 #: setup-error-imap-disabled
 msgid "You must enable IMAP for your Gmail account"
-msgstr ""
+msgstr "Vous devez activer IMAP pour votre compte Gmail"
 
 #. # The error for Gmail accounts where POP3 is not enabled.  This can occur
 #. # for individual users where they have disabled POP3 from the settings UI.
@@ -159,7 +184,7 @@ msgstr ""
 #. # to support POP3.
 #: setup-error-pop3-disabled
 msgid "You must enable POP3 for your Gmail account"
-msgstr ""
+msgstr "Vous devez activer POP3 pour votre compte Gmail"
 
 #. # The error for when we are able to contact a server that should be the mail
 #. # server but we are unable to establish a secure connection.
@@ -168,6 +193,8 @@ msgid ""
 "Unable to establish a secure connection with \"{{server}}\". There may be a "
 "problem with your network or the server."
 msgstr ""
+"Impossible d’établir une connexion sécurisée avec « {{server}} ». Il y a "
+"peut-être un problème avec le serveur ou votre réseau."
 
 #. # The error for when we try to contact a server but see no indication of a
 #. # response before we give up because of a timeout.
@@ -176,6 +203,8 @@ msgid ""
 "Unable to establish a connection with \"{{server}}\". There may be a problem "
 "with the network."
 msgstr ""
+"Impossible d’établir une connexion avec « {{server}} ». Il y a peut-être un "
+"problème réseau."
 
 #. # The error for when we able to establish a (secure) connection with the server,
 #. # but there is some type of failure talking to the server that isn't covered by
@@ -185,6 +214,8 @@ msgstr ""
 #: setup-error-server-problem
 msgid "There is a problem with the server \"{{server}}\". Try again later."
 msgstr ""
+"Il y a un problème avec le serveur « {{server}} ». Veuillez réessayer plus "
+"tard."
 
 #. # The error for when we are trying to figure out the right server settings for
 #. # an account based on the e-mail address the user typed in during configuration,
@@ -197,30 +228,40 @@ msgid ""
 "Unable to automatically configure your account. Correct your e-mail address "
 "or try the manual configuration option."
 msgstr ""
+"Impossible de configurer automatiquement votre compte. Veuillez corriger "
+"votre adresse électronique ou essayer la configuration manuelle."
 
 #. # The error for when the user is trying to set up an account with a server that
 #. # currently indicates it is offline for maintenance.
 #: setup-error-server-maintenance
 msgid "The server \"{{server}}\" is offline for maintenance. Try again later."
 msgstr ""
+"Le serveur « {{server}} » est hors connexion pour cause de maintenance. "
+"Veuillez réessayer plus tard."
 
 #. # The error when the user trying to register a duplicate account
 #: setup-error-account-already-exists
 msgid "This account is already configured."
-msgstr ""
+msgstr "Ce compte est déjà configuré."
 
 #: setup-manual-config2
-#, fuzzy
 msgid "Manual setup"
 msgstr "Configuration manuelle"
 
 #: setup-manual-config-header
-#, fuzzy
 msgid "Manual Setup"
 msgstr "Configuration manuelle"
 
 #: setup-manual-account-type
 msgctxt "setup-manual-account-type"
+msgid "Account type"
+msgstr "Type de compte"
+
+#. # LOCALIZATION NOTE(setup-manual-account-type-select): For the manual setup
+#. # screen, the label for account type select box. The following string is spoken
+#. # by screen readers and not shown on the screen.
+#: setup-manual-account-type-select.ariaLabel
+msgctxt "setup-manual-account-type-select.ariaLabel"
 msgid "Account type"
 msgstr "Type de compte"
 
@@ -232,7 +273,7 @@ msgstr "Paramètres IMAP"
 #: setup-manual-pop3-header
 msgctxt "setup-manual-pop3-header"
 msgid "POP3 settings"
-msgstr ""
+msgstr "Paramètres POP3"
 
 #: setup-manual-smtp-header
 msgctxt "setup-manual-smtp-header"
@@ -261,10 +302,25 @@ msgstr "SSL"
 #. # Technical term, should not be translated
 #: setup-manual-socket-starttls
 msgid "STARTTLS"
-msgstr ""
+msgstr "STARTTLS"
+
+#. # LOCALIZATION NOTE(setup-manual-socket-select): For the manual setup screen,
+#. # the label for connection security select box. The following string is spoken
+#. # by screen readers and not shown on the screen.
+#: setup-manual-socket-select.ariaLabel
+msgid "Connection security"
+msgstr "Sécurité de la connexion"
+
+#. # LOCALIZATION NOTE (setup-manual-socket-plain): In manual config account setup,
+#. # the socket connect type that is not using an encrypted connection and
+#. # therefore can be insecure to use: hackers or bad actors could easily intercept
+#. # the email credentials and email messages. Choosing this option will also
+#. # result in showing a dialog with the tng-plain-socket-warning-* localizations.
+#: setup-manual-socket-plain
+msgid "Unencrypted (insecure)"
+msgstr "Non chiffré (non sécurisé)"
 
 #: setup-manual-hostname.placeholder
-#, fuzzy
 msgctxt "setup-manual-hostname.placeholder"
 msgid "Hostname"
 msgstr "Nom d’hôte"
@@ -274,142 +330,269 @@ msgid "Port Number"
 msgstr "Numéro de port"
 
 #: setup-manual-username.placeholder
-#, fuzzy
 msgctxt "setup-manual-username.placeholder"
 msgid "Username"
 msgstr "Nom d’utilisateur"
 
+#. # LOCALIZATION NOTE (setup-manual-activesync-username.placeholder):
+#. # the double \\ will be displayed as a single \ 
+#: setup-manual-activesync-username.placeholder
+msgid "Domain\\Username"
+msgstr "Domaine\\Nom d’utilisateur"
+
 #: setup-bad-password-header
 msgid "Bad password!"
-msgstr "Mauvais mot de passe"
+msgstr "Mot de passe incorrect"
 
 #: setup-bad-password
 msgid "We could not sign in to the server. Maybe your password is wrong?"
 msgstr ""
-"Impossible de se connecter sur le serveur. Peut-être le mot de passe est-il "
-"invalide ?"
+"Impossible de s’identifier sur le serveur. Le mot de passe est-il incorrect ?"
 
 #: setup-new-password.placeholder
 msgid "New password"
-msgstr ""
+msgstr "Nouveau mot de passe"
 
 #: setup-fix-password
 msgid "Retry with new password"
-msgstr "Réessayer avec un nouveau mot de passe"
+msgstr "Réessayer avec ce mot de passe"
 
 #: setup-gmail-twofactor-header
 msgid "Two-Factor Enabled"
-msgstr ""
+msgstr "Validation en deux étapes activée"
 
 #: setup-gmail-twofactor-message
 msgid "You need to enter an application-specific password below."
 msgstr ""
+"Vous devez saisir ci-dessous un mot de passe spécifique à l’application."
 
 #: setup-gmail-twofactor-fix
 msgid "Use application password"
-msgstr ""
+msgstr "Utiliser mot de passe de l’application"
 
 #: setup-gmail-imap-header
 msgid "IMAP Disabled"
-msgstr ""
+msgstr "IMAP désactivé"
 
 #: setup-gmail-imap-message
 msgid "You must enable IMAP on your Gmail account"
-msgstr ""
+msgstr "Vous devez activer IMAP sur votre compte Gmail"
 
 #: setup-gmail-imap-retry
 msgctxt "setup-gmail-imap-retry"
 msgid "Retry"
-msgstr ""
+msgstr "Réessayer"
 
 #: setup-gmail-pop3-header
 msgid "POP3 Disabled"
-msgstr ""
+msgstr "POP3 désactivé"
 
 #: setup-gmail-pop3-message
 msgid "You must enable POP3 on your Gmail account"
-msgstr ""
+msgstr "Vous devez activer POP3 sur votre compte Gmail"
 
 #: setup-gmail-pop3-retry
 msgctxt "setup-gmail-pop3-retry"
 msgid "Retry"
+msgstr "Réessayer"
+
+#. # LOCALIZATION NOTE (setup-fix-oauth2-header): The card header for the card that
+#. # asks the user to reauthorize the email account to use an OAuth2 token. This
+#. # may show up from time to time with a GMail account for example, but there are
+#. # other account types besides GMail that could be OAuth2 authorized.
+#: setup-fix-oauth2-header
+msgid "Reauthorize Email"
+msgstr "Réautorisation"
+
+#. # LOCALIZATION NOTE (setup-fix-oauth2-description): Describes that the account
+#. # needs to be reauthorized via OAuth2. The account is shown below this
+#. # description.
+#: setup-fix-oauth2-description
+msgid "Email needs to be reauthorized to access the following account:"
 msgstr ""
+"L’application Courriel a besoin d’une nouvelle autorisation pour accéder au "
+"compte suivant :"
+
+#. # LOCALIZATION NOTE (setup-fix-oauth2-reauthorize): The button triggering the
+#. # reauthorization flow for OAuth2-protected account types. This will result in
+#. # a dialog-type browser window opening up and going to the account provider,
+#. # for instance GMail, so that the user can authorize the Email app to continue
+#. # to access the account.
+#: setup-fix-oauth2-reauthorize
+msgctxt "setup-fix-oauth2-reauthorize"
+msgid "Reauthorize"
+msgstr "Réautoriser"
 
 #: settings-main-header
-#, fuzzy
 msgid "Mail Settings"
-msgstr "Paramètres message"
+msgstr "Paramètres"
 
 #. # For account settings screen, there are sections of settings, and each
 #. #section has a header. One is Account, which shows general information
 #. # about the account, like the name.
 #: settings-sub-header-account
-#, fuzzy
+msgctxt "settings-sub-header-account"
 msgid "Account"
-msgstr "Comptes"
+msgstr "Compte"
 
-#. # Label in the "Account" sub-section of acccount settings that shows the
+#. # For account settings screen, a label for a section related to general account
+#. # settings. The following string is spoken by screen readers and not shown on
+#. # the screen.
+#: settings-account-group.ariaLabel
+msgctxt "settings-account-group.ariaLabel"
+msgid "Account"
+msgstr "Compte"
+
+#. # Label in the "Account" sub-section of account settings that shows the
 #. # human name, not the email address, for the account.
 #: settings-account-name
 msgctxt "settings-account-name"
 msgid "Your name"
-msgstr ""
+msgstr "Votre nom"
 
-#. # Label in the "Account" sub-section of acccount settings for the checkbox
+#. # Label in the "Account" sub-section of account settings for the checkbox
 #. # that enables getting phone notifications when new inbox email is found
 #. # via periodic sync with the mail server.
 #: settings-account-display-notifications
 msgid "Display notifications for new messages"
-msgstr ""
+msgstr "Afficher notification à chaque message reçu"
+
+#. # LOCALIZATION NOTE(settings-account-play-sound-onsend): Label in the "Account"
+#. # sub-section of account settings for the checkbox that enables playing a sound
+#. # after a message is sent.
+#: settings-account-play-sound-onsend
+msgid "Play sound after message is sent"
+msgstr "Jouer un son à chaque message envoyé"
+
+#. # LOCALIZATION NOTE(settings-empty-signature-label): Text used for the button
+#. # that takes the user to edit the signature, if there is no existing signature
+#. # text. It should inform the user that tapping on it will lead to editing the
+#. # signature text.
+#: settings-empty-signature-label
+msgid "Tap to Edit"
+msgstr "Appuyer pour modifier"
+
+#. # LOCALIZATION NOTE (settings-account-signature-label): The label for the
+#. # signature field in the account settings card.
+#: settings-account-signature-label
+msgctxt "settings-account-signature-label"
+msgid "Signature"
+msgstr "Signature"
+
+#. # LOCALIZATION NOTE(settings-account-signature-textbox): A label for a text area
+#. # that is used to enter or modify email message signature. The following string
+#. # is spoken by screen readers and not shown on the screen.
+#: settings-account-signature-textbox.ariaLabel
+msgctxt "settings-account-signature-textbox.ariaLabel"
+msgid "Signature"
+msgstr "Signature"
+
+#. # LOCALIZATION NOTE (signature-save): This is the text for an option
+#. # in a dialog box that pops up when the user hits back with the
+#. # signature changed. The option keeps the saves the current signature in
+#. # the editor
+#: signature-save
+msgid "Save Signature"
+msgstr "Enregistrer la signature"
+
+#. # LOCALIZATION NOTE (signature-discard-confirm): This is the text of the
+#. # button which discards changes when a user hits back in the signature
+#. # entry page.
+#: signature-discard-confirm
+msgctxt "signature-discard-confirm"
+msgid "Discard"
+msgstr "Effacer"
 
 #. # For account settings screen, there are sections of settings, and each
 #. # section has a header. One is Data, which deals with sync intervals and
 #. # time windows for the data that is fetched.
 #: settings-sub-header-data
-#, fuzzy
+msgctxt "settings-sub-header-data"
 msgid "Data"
-msgstr "Date"
+msgstr "Données"
+
+#. # For account settings screen, a label for a section related to data settings
+#. # such as sync intervals and time windows for the data that is fetched. The
+#. # following string is spoken by screen readers and not shown on the screen.
+#: settings-data-group.ariaLabel
+msgctxt "settings-data-group.ariaLabel"
+msgid "Data"
+msgstr "Données"
 
 #. # Label in the "Data" sub-section of acccount settings for the select box
 #. # that allows choosing how often to check the server for new messages in
 #. # the inbox. The possible select box options are listed in the
 #. # settings-check-every-* properties.
 #: settings-account-check-mail
+msgctxt "settings-account-check-mail"
 msgid "Check for new messages"
-msgstr ""
+msgstr "Vérifier les nouveaux messages"
+
+#. # LOCALIZATION NOTE(settings-account-check-mail-select): For the account
+#. # settings, the label for the select box that allows choosing how often to check
+#. # the server for new messages in the inbox. The following string is spoken by
+#. # screen readers and not shown on the screen.
+#: settings-account-check-mail-select.ariaLabel
+msgctxt "settings-account-check-mail-select.ariaLabel"
+msgid "Check for new messages"
+msgstr "Vérifier les nouveaux messages"
 
 #. # For account settings screen, there are sections of settings, and each
 #. # section has a header. One is "Server settings", which deals with the
 #. # name/password and server addresses.
 #: settings-sub-header-server
+msgctxt "settings-sub-header-server"
 msgid "Server settings"
-msgstr ""
+msgstr "Paramètres du serveur"
+
+#. # For account settings screen, a label for a section related to server settings
+#. # such as name/password and server addresses. The following string is spoken by
+#. # screen readers and not shown on the screen.
+#: settings-server-group.ariaLabel
+msgctxt "settings-server-group.ariaLabel"
+msgid "Server settings"
+msgstr "Paramètres du serveur"
 
 #. # Label in the "Server settings" sub-section of acccount settings for going
 #. # to a settings card that shows user name and password used to connect to
 #. # the mail server.
 #: settings-account-userpass
 msgid "Username and password"
-msgstr ""
+msgstr "Utilisateur et mot de passe"
 
-#. # In the account picker card, where the user can select which account to view
-#. # in the app, it shows when each account was last synchronized.
-#: fld-account-picker-last-sync
-msgctxt "fld-account-picker-last-sync"
-msgid "Last sync:"
-msgstr ""
+#. # LOCALIZATION NOTE (ssettings-account-useroauth2): Label in the
+#. # "Server settings" sub-section of acccount settings for going to a settings
+#. # card that shows user name and a reauthorize option for an account that was
+#. # configured to use oauth2.
+#: settings-account-useroauth2
+msgctxt "settings-account-useroauth2"
+msgid "Username"
+msgstr "Nom d’utilisateur"
+
+#. # LOCALIZATION NOTE (settings-default-signature-2): The default signature
+#. # that the frontend adds in for new accounts
+#: settings-default-signature-2
+msgid "Sent Using Firefox OS"
+msgstr "Envoyé depuis Firefox OS"
 
 #: settings-done
 msgid "Done"
-msgstr "Fini"
+msgstr "Terminé"
 
 #: settings-account-section
 msgctxt "settings-account-section"
 msgid "Accounts"
 msgstr "Comptes"
 
+#. # LOCALIZATION NOTE(settings-account-listbox): For the main mail settings, the
+#. # label for the list of added Email accounts. The following string is spoken by
+#. # screen readers and not shown on the screen.
+#: settings-account-listbox.ariaLabel
+msgctxt "settings-account-listbox.ariaLabel"
+msgid "Accounts"
+msgstr "Comptes"
+
 #: settings-account-add
-#, fuzzy
 msgid "Add Account"
 msgstr "Ajouter un compte"
 
@@ -422,30 +605,35 @@ msgid ""
 "Are you sure you want to delete your {{account}} mail account? You will have "
 "to re-download your mail if you re-create the account."
 msgstr ""
+"Voulez-vous vraiment supprimer votre compte de messagerie {{account}} ? Vous "
+"devrez télécharger à nouveau vos messages si vous recréez ce compte."
 
 #: settings-account-delete-cancel
-#, fuzzy
 msgctxt "settings-account-delete-cancel"
 msgid "Cancel"
 msgstr "Annuler"
 
 #: settings-account-delete-confirm
-#, fuzzy
 msgctxt "settings-account-delete-confirm"
 msgid "Delete"
 msgstr "Supprimer"
 
-#: settings-about-section
-msgid "About"
-msgstr "À propos"
+#. # When dealing with an account that involves multiple types of# connections, such as IMAP and POP3 which both use SMTP for sending,# we augment the account name in the string with a label to help# clarify to the user which account type they are dealing with. For# most users, the same password will be used for the IMAP server and# the SMTP server, and they will only ever see the IMAP or POP3 label.# But some users with unusual server configurations will also see the# SMTP variant. These unusual users will probably have received# specific instructions from their ISP that involve use of the# protocol names. In general we expect that localizers will want to# leave the protocol names as-is since they are technical protocol# names, but it may make sense to place the name of the protocol# before the account type for certain languages.# Note that the account name is displayed as a string that is# displayed in its entirety, so you don't need to worry about clipping# or ellipses.
+#: settings-account-clarify-imap
+msgid "{{account-name}} (IMAP)"
+msgstr "{{account-name}} (IMAP)"
+
+#: settings-account-clarify-pop3
+msgid "{{account-name}} (POP3)"
+msgstr "{{account-name}} (POP3)"
+
+#: settings-account-clarify-smtp
+msgid "{{account-name}} (SMTP)"
+msgstr "{{account-name}} (SMTP)"
 
 #: settings-general-section
 msgid "General settings"
-msgstr "Paramères généraux"
-
-#: settings-check-mail
-msgid "Check mail"
-msgstr "Relever les messages"
+msgstr "Paramètres généraux"
 
 #: settings-show-images
 msgid "Always show images"
@@ -455,82 +643,75 @@ msgstr "Toujours afficher les images"
 msgid "Download attachments"
 msgstr "Télécharger les pièces jointes"
 
-#: settings-notify-mail
-msgid "Notify of new mail"
-msgstr "Notifier les nouveaux messages"
-
 #. # How often to check the mail server for new mail messages for the inbox.
 #. # "Manually" means, do not automatically connect on a periodic sync interval.
 #. # User will manually click the refresh button to check for new messages.
-#: settings-check-every-3min
-msgid "Every 3 minutes"
-msgstr ""
-
 #: settings-check-every-5min
 msgid "Every 5 minutes"
-msgstr ""
+msgstr "Toutes les 5 minutes"
 
 #: settings-check-every-10min
 msgid "Every 10 minutes"
-msgstr ""
+msgstr "Toutes les 10 minutes"
 
 #: settings-check-every-15min
 msgid "Every 15 minutes"
-msgstr ""
+msgstr "Toutes les 15 minutes"
 
 #: settings-check-every-30min
 msgid "Every 30 minutes"
-msgstr ""
+msgstr "Toutes les 30 minutes"
 
 #: settings-check-every-60min
 msgid "Every hour"
-msgstr ""
+msgstr "Chaque heure"
 
 #: settings-check-every-manual
 msgid "Manually"
 msgstr "Manuellement"
 
-#. # Dynamically added sync interval checks. These are only added via special
-#. # debug/development tools, and are always in seconds. Otherwise, just
-#. # the settings-check-every-* options are visible.
+#. # LOCALIZATION NOTE(settings-check-dynamic):
+#. # DEBUG ONLY Dynamically added sync interval checks. These are only added via
+#. # special debug/development tools, and are always in seconds. Otherwise, just
+#. # the settings-check-every-* options are visible.  The zero case is impossible
+#. # (a separate string is used) and 20 seconds is the currently lowest possible
+#. # value.
 #: settings-check-dynamic
-#, fuzzy
 msgctxt "settings-check-dynamic"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: settings-check-dynamic[zero]
-msgid "seconds"
-msgstr ""
+msgid "disabled"
+msgstr "désactivé"
 
 #: settings-check-dynamic[one]
-msgctxt "settings-check-dynamic[one]"
-msgid "{{ n }} seconds"
-msgstr ""
+msgid "{{ n }} second"
+msgstr "{{ n }} seconde"
 
 #: settings-check-dynamic[two]
 msgctxt "settings-check-dynamic[two]"
 msgid "{{ n }} seconds"
-msgstr ""
+msgstr "{{ n }} secondes"
 
 #: settings-check-dynamic[few]
 msgctxt "settings-check-dynamic[few]"
 msgid "{{ n }} seconds"
-msgstr ""
+msgstr "{{ n }} secondes"
 
 #: settings-check-dynamic[many]
 msgctxt "settings-check-dynamic[many]"
 msgid "{{ n }} seconds"
-msgstr ""
+msgstr "{{ n }} secondes"
 
 #: settings-check-dynamic[other]
 msgctxt "settings-check-dynamic[other]"
 msgid "{{ n }} seconds"
-msgstr ""
+msgstr "{{ n }} secondes"
 
 #: settings-default-account
 msgid "Set as default email"
-msgstr ""
+msgstr "Compte par défaut"
 
 #: settings-account-type
 msgctxt "settings-account-type"
@@ -554,7 +735,7 @@ msgstr "Paramètres IMAP"
 #: settings-pop3-label
 msgctxt "settings-pop3-label"
 msgid "POP3 settings"
-msgstr ""
+msgstr "Paramètres POP3"
 
 #: settings-smtp-label
 msgctxt "settings-smtp-label"
@@ -586,182 +767,444 @@ msgstr "Enregistrer"
 
 #: settings-password-empty
 msgid "Password field should not be empty"
-msgstr "Le mot de passe ne peut être vide !"
+msgstr "Le champ mot de passe ne peut être vide"
+
+#. # LOCALIZATION NOTE (settings-reauth): On the account credentials settings card,
+#. # if the account is an oauth2 account, this is the button label that allows the
+#. # user to reauthorize the email app to access their account via oauth2.
+#: settings-reauth
+msgctxt "settings-reauth"
+msgid "Reauthorize"
+msgstr "Réautoriser"
 
 #. # How much email to sync, in smallest unit of days, from the server. Only
 #. # valid for ActiveSync mail servers, not shown for other mail server types
 #. # like IMAP.
 #: settings-account-synchronize-window
+msgctxt "settings-account-synchronize-window"
 msgid "Days to sync"
-msgstr ""
+msgstr "Période à synchroniser"
+
+#. # Label for a drop down used to select, how much email to sync, in smallest unit
+#. # of days, from the server. Only valid for ActiveSync mail servers, not shown
+#. # for other mail server types like IMAP. The following string is spoken by
+#. # screen readers and not shown on the screen.
+#: settings-account-synchronize-window-select.ariaLabel
+msgctxt "settings-account-synchronize-window-select.ariaLabel"
+msgid "Days to sync"
+msgstr "Période à synchroniser"
 
 #: settings-synchronize-auto
 msgid "Automatic"
-msgstr ""
+msgstr "Automatiquement"
 
 #: settings-synchronize-one-day
 msgid "1 day"
-msgstr "Un jour"
+msgstr "1 jour"
 
 #: settings-synchronize-three-days
 msgid "3 days"
-msgstr "Trois jours"
+msgstr "3 jours"
 
 #: settings-synchronize-one-week
 msgid "1 week"
-msgstr "Une semaine"
+msgstr "1 semaine"
 
 #: settings-synchronize-two-weeks
 msgid "2 weeks"
-msgstr "Deux semaines"
+msgstr "2 semaines"
 
 #: settings-synchronize-one-month
 msgid "1 month"
-msgstr "Un mois"
+msgstr "1 mois"
 
 #: settings-synchronize-all
 msgid "All messages"
 msgstr "Tous les messages"
 
-#: accounts-header
-msgctxt "accounts-header"
-msgid "Accounts"
-msgstr "Comptes"
-
-#: accounts-button
-msgctxt "accounts-button"
-msgid "Accounts"
-msgstr "Comptes"
-
 #: envelope-from
 msgctxt "envelope-from"
+"envelope-from"
+"envelope-from"
 msgid "From"
-msgstr "De"
+msgstr "De "
 
 #: envelope-to
 msgctxt "envelope-to"
+"envelope-to"
 msgid "To"
-msgstr "À"
+msgstr "À "
 
 #: envelope-cc
 msgctxt "envelope-cc"
 msgid "Cc"
-msgstr "Cc"
+msgstr "Cc "
 
 #: envelope-bcc
 msgid "Bcc"
-msgstr "Cci"
+msgstr "Cci "
 
-#: reader-header
-msgid "Read"
-msgstr "Lire"
+#. # LOCALIZATION NOTE(message-header-state-sending): For message list card, used
+#. # to describe a sending state of the message item. The following string is
+#. # spoken by screen readers and not shown on the screen.
+#: message-header-state-sending.ariaLabel
+msgid "Sending"
+msgstr "Envoi en cours"
+
+#. # LOCALIZATION NOTE(message-header-state-error): For message list card, used to
+#. # describe an error state of the message item. The following string is spoken
+#. # by screen readers and not shown on the screen.
+#: message-header-state-error.ariaLabel
+msgid "Error sending"
+msgstr "Échec de l’envoi"
+
+#. # LOCALIZATION NOTE(message-header-unread): For message list card, used to
+#. # describe an unread message indicator that looks like a bullet point. The
+#. # following string is spoken by screen readers and not shown on the screen.
+#: message-header-unread.ariaLabel
+msgid "Unread"
+msgstr "Est non lu"
+
+#. # LOCALIZATION NOTE(message-header-starred): For message list card, used to
+#. # describe a star/flag indicator of the message item. The following string is
+#. # spoken by screen readers and not shown on the screen.
+#: message-header-starred.ariaLabel
+msgid "Has star"
+msgstr "Est suivi"
+
+#. # LOCALIZATION NOTE(message-header-attachments): For message list card, used to
+#. # describe an indicator that the message has attachments that looks like a clip.
+#. # The following string is spoken by screen readers and not shown on the screen.
+#: message-header-attachments.ariaLabel
+msgid "Has attachments"
+msgstr "Possède des pièces jointes"
+
+#. # LOCALIZATION NOTE(message-body-container): For compose/read cards, a label for
+#. # a section with the pre-composed part of the message. The following string is
+#. # spoken by screen readers and not shown on the screen.
+#: message-body-container.ariaLabel
+msgid "Message body"
+msgstr "Corps du message"
+
+#. # LOCALIZATION NOTE(message-body-container-progress): For reader cards, a label
+#. # for message body loading progress spinner. The following string is spoken by
+#. # screen readers and not shown on the screen.
+#: message-body-container-progress.ariaValueText
+msgid "Loading"
+msgstr "Chargement en cours"
+
+#. # LOCALIZATION NOTE(subject): For compose card, a label for an email subject
+#. # text input or header. The following string is spoken by screen readers and not
+#. # shown on the screen.
+#: subject.ariaLabel
+msgctxt "subject.ariaLabel"
+"subject.ariaLabel"
+msgid "Subject"
+msgstr "Objet"
+
+#. # LOCALIZATION NOTE(message-delete-button): For reader card, a label for a
+#. # button used to delete a message. The following string is spoken by screen
+#. # readers and not shown on the screen.
+#: message-delete-button.ariaLabel
+msgctxt "message-delete-button.ariaLabel"
+msgid "Delete"
+msgstr "Supprimer"
+
+#. # LOCALIZATION NOTE(message-star-button): For reader card, a label for a button
+#. # used to star a message. The following string is spoken by screen readers and
+#. # not shown on the screen.
+#: message-star-button.ariaLabel
+msgid "Add star"
+msgstr "Suivre"
+
+#. # LOCALIZATION NOTE(message-unstar-button): For message list card, a label for a
+#. # button used to remove a star from a message. The following string is spoken by
+#. # screen readers and not shown on the screen.
+#: message-unstar-button.ariaLabel
+msgid "Remove star"
+msgstr "Ne plus suivre"
+
+#. # LOCALIZATION NOTE(message-mark-read-button): For reader card, a label for a
+#. # button used to mark a message as read. The following string is spoken by
+#. # screen readers and not shown on the screen.
+#: message-mark-read-button.ariaLabel
+msgid "Mark read"
+msgstr "Marquer comme lu"
+
+#. # LOCALIZATION NOTE(message-mark-unread-button): For reader card, a label for a
+#. # button used to mark a message as unread. The following string is spoken by
+#. # screen readers and not shown on the screen.
+#: message-mark-unread-button.ariaLabel
+msgid "Mark unread"
+msgstr "Marquer comme non lu"
+
+#. # LOCALIZATION NOTE(message-move-button): For reader card, a label for a button
+#. # used to move a message. The following string is spoken by screen readers and
+#. # not shown on the screen.
+#: message-move-button.ariaLabel
+msgid "Move"
+msgstr "Déplacer"
+
+#. # LOCALIZATION NOTE(message-reply-forward-button): For reader card, a label for
+#. # a button used to reply to a message. The following string is spoken by screen
+#. # readers and not shown on the screen.
+#: message-reply-forward-button.ariaLabel
+msgid "Reply or forward"
+msgstr "Répondre ou transférer"
+
+#. # LOCALIZATION NOTE(download-button): For compose/reader cards, a label
+#. # for a button used to downlaod message attachments. The following string is
+#. # spoken by screen readers and not shown on the screen.
+#: download-button.ariaLabel
+msgid "Download"
+msgstr "Télécharger"
+
+#. # LOCALIZATION NOTE(downloading-progress): For compose/reader cards, a label
+#. # for an attachments downloading progress spinner. The following string is
+#. # spoken by screen readers and not shown on the screen.
+#: downloading-progress.ariaValueText
+msgid "Downloading"
+msgstr "Téléchargement en cours"
+
+#. # LOCALIZATION NOTE(view-button): For compose/reader cards, a label for a button
+#. # used to view message attachments. The following string is spoken by screen
+#. # readers and not shown on the screen.
+#: view-button.ariaLabel
+msgctxt "view-button.ariaLabel"
+msgid "View"
+msgstr "Afficher"
+
+#. # LOCALIZATION NOTE(attachments-container): For reader card, a label for a list
+#. # of attachments included in the messsage. The following string is spoken by
+#. # screen readers and not shown on the screen.
+#: attachments-container.ariaLabel
+msgctxt "attachments-container.ariaLabel"
+msgid "Attachments"
+msgstr "Pièces jointes"
+
+#. # LOCALIZATION NOTE(from-group): For email compose/read cards, a label for a
+#. # section that has controls related to selecting email authors. The following
+#. # string is spoken by screen readers and not shown on the screen.
+#: from-group.ariaLabel
+msgctxt "from-group.ariaLabel"
+msgid "From"
+msgstr "De"
+
+#. # LOCALIZATION NOTE(to-group): For email compose/read cards, a label for a
+#. # section that has controls related to selecting 'to' recipients. The following
+#. # string is spoken by screen readers and not shown on the screen.
+#: to-group.ariaLabel
+msgctxt "to-group.ariaLabel"
+msgid "To"
+msgstr "À"
+
+#. # LOCALIZATION NOTE(cc-group): For email compose/read cards, a label for a
+#. # section that has controls related to selecting 'cc' recipients. The following
+#. # string is spoken by screen readers and not shown on the screen.
+#: cc-group.ariaLabel
+msgctxt "cc-group.ariaLabel"
+msgid "cc"
+msgstr "Cc"
+
+#. # LOCALIZATION NOTE(bcc-group): For email compose/read cards, a label for a
+#. # section that has controls related to selecting 'bcc' recipients. The following
+#. # string is spoken by screen readers and not shown on the screen.
+#: bcc-group.ariaLabel
+msgctxt "bcc-group.ariaLabel"
+msgid "bcc"
+msgstr "Cci"
 
 #: compose-header
 msgid "Compose message"
 msgstr "Écrire un message"
 
 #: compose-header-short
+msgctxt "compose-header-short"
 msgid "Compose"
-msgstr ""
+msgstr "Nouveau message"
 
 #: compose-send
+msgctxt "compose-send"
+msgid "Send"
+msgstr "Envoyer"
+
+#. # LOCALIZATION NOTE(compose-send-button): For compose card, a label for a send
+#. # button rendered as an arrow. The following string is spoken by screen readers
+#. # and not shown on the screen.
+#: compose-send-button.ariaLabel
+msgctxt "compose-send-button.ariaLabel"
 msgid "Send"
 msgstr "Envoyer"
 
 #: compose-to
 msgctxt "compose-to"
 msgid "To"
-msgstr "À"
+msgstr "À "
 
 #: compose-cc
+msgctxt "compose-cc"
 msgid "cc"
-msgstr "Cc"
+msgstr "Cc "
 
 #: compose-bcc
+msgctxt "compose-bcc"
 msgid "bcc"
-msgstr "Cci"
+msgstr "Cci "
+
+#. # LOCALIZATION NOTE(compose-contact-add): For compose card, a label for an add
+#. # contact buttons rendered as a circled plus sign and used to add to, cc and bcc
+#. # recipients. The following string is spoken by screen readers and not shown on
+#. # the screen.
+#: compose-contact-add.ariaLabel
+msgid "Add contact"
+msgstr "Ajouter un contact"
+
+#. # LOCALIZATION NOTE(compose-attachments-container): For compose card, a
+#. # label for a list of attachments included in the email being composed. When
+#. # there is more than 1 attachment, it contains a total size in kilobytes of all
+#. # attachments. The following string is spoken by screen readers and not shown on
+#. # the screen.
+#: compose-attachments-container.ariaLabel
+msgid "{[ plural(kilobytes) ]}"
+msgstr "{[ plural(kilobytes) ]}"
+
+#: compose-attachments-container.ariaLabel[zero]
+msgctxt "compose-attachments-container.ariaLabel[zero]"
+msgid "Attachments"
+msgstr "Pièces jointes"
+
+#: compose-attachments-container.ariaLabel[one]
+msgctxt "compose-attachments-container.ariaLabel[one]"
+msgid "Attachments: {{kilobytes}}K"
+msgstr "Pièces jointes : {{kilobytes}} Ko"
+
+#: compose-attachments-container.ariaLabel[two]
+msgctxt "compose-attachments-container.ariaLabel[two]"
+msgid "Attachments: {{kilobytes}}K"
+msgstr "Pièces jointes : {{kilobytes}} Ko"
+
+#: compose-attachments-container.ariaLabel[few]
+msgctxt "compose-attachments-container.ariaLabel[few]"
+msgid "Attachments: {{kilobytes}}K"
+msgstr "Pièces jointes : {{kilobytes}} Ko"
+
+#: compose-attachments-container.ariaLabel[many]
+msgctxt "compose-attachments-container.ariaLabel[many]"
+msgid "Attachments: {{kilobytes}}K"
+msgstr "Pièces jointes : {{kilobytes}} Ko"
+
+#: compose-attachments-container.ariaLabel[other]
+msgctxt "compose-attachments-container.ariaLabel[other]"
+msgid "Attachments: {{kilobytes}}K"
+msgstr "Pièces jointes : {{kilobytes}} Ko"
+
+#. # LOCALIZATION NOTE(compose-attachment-remove): For compose card, a label for an
+#. # attachement remove button. The following string is spoken by screen readers
+#. # and not shown on the screen.
+#: compose-attachment-remove.ariaLabel
+msgid "Remove"
+msgstr "Supprimer"
+
+#. # LOCALIZATION NOTE(compose-attachment-button): For compose card, a label for an
+#. # attachment button rendered as a clip. The following string is spoken by screen
+#. # readers and not shown on the screen.
+#: compose-attachment-button.ariaLabel
+msgid "Attach"
+msgstr "Joindre"
 
 #: compose-attachments
-#, fuzzy
 msgctxt "compose-attachments"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: compose-attachments[zero]
+msgctxt "compose-attachments[zero]"
 msgid "Attachments"
-msgstr ""
+msgstr "Pièces jointes"
 
 #: compose-attachments[one]
 msgid "{{ n }} attachment"
-msgstr ""
+msgstr "{{ n }} pièce jointe "
 
 #: compose-attachments[two]
 msgctxt "compose-attachments[two]"
 msgid "{{ n }} attachments"
-msgstr ""
+msgstr "{{ n }} pièces jointes "
 
 #: compose-attachments[few]
 msgctxt "compose-attachments[few]"
 msgid "{{ n }} attachments"
-msgstr ""
+msgstr "{{ n }} pièces jointes "
 
 #: compose-attachments[many]
 msgctxt "compose-attachments[many]"
 msgid "{{ n }} attachments"
-msgstr ""
+msgstr "{{ n }} pièces jointes "
 
 #: compose-attachments[other]
 msgctxt "compose-attachments[other]"
 msgid "{{ n }} attachments"
+msgstr "{{ n }} pièces jointes "
+
+#. # LOCALIZATION NOTE(compose-text): For compose card, a label for a section with
+#. # a message text. The following string is spoken by screen readers and not shown
+#. # on the screen.
+#: compose-text.ariaLabel
+msgctxt "compose-text.ariaLabel"
+msgid "Edit"
+msgstr "Modifier"
+
+#. # Shown when user taps on attachment icon in compose, but the app still
+#. # needs a bit more time to finishing the add of the previous attachment.
+#: compose-attachment-still-working
+msgid "One moment, still working on the previous attachment..."
 msgstr ""
+"Un instant, le traitement de la pièce jointe précédente est toujours en "
+"cours…"
 
 #: compose-subject
-#, fuzzy
 msgctxt "compose-subject"
 msgid "Subject"
-msgstr "Sujet"
+msgstr "Objet "
 
 #: compose-draft-save
 msgid "Save to Local Drafts"
-msgstr ""
-
-#: compose-discard-message
-msgid "Discard email?"
-msgstr ""
+msgstr "Enregistrer dans Brouillons locaux"
 
 #: compose-discard-confirm
+msgctxt "compose-discard-confirm"
 msgid "Discard"
-msgstr ""
-
-#: compose-sending-message
-msgid "Sending email"
-msgstr ""
+msgstr "Effacer"
 
 #: compose-send-message-failed
 msgid "Sending email failed"
-msgstr ""
+msgstr "Échec de l’envoi du message"
 
 #: composer-attachment-large
 msgid "Attachment too large"
-msgstr ""
+msgstr "Pièce jointe trop volumineuse"
 
 #: composer-attachments-large
 msgid "Attachments too large"
-msgstr ""
+msgstr "Pièces jointes trop volumineuses"
 
 #: compose-attchment-size-exceeded
 msgid "The selected attachment is too large to send with this message."
 msgstr ""
+"La pièce jointe sélectionnée est trop volumineuse pour être envoyée avec ce "
+"message."
 
 #: compose-attchments-size-exceeded
 msgid ""
 "The selected attachments are too large to send with this message. Try "
 "selecting fewer files."
 msgstr ""
+"Les pièces jointes sélectionnées sont trop volumineuses pour être envoyées "
+"avec ce message. Essayez de sélectionner moins de fichiers."
 
 #: dialog-button-ok
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #. # If a file is attached to an email but it does not have a name, this
 #. # name is used. There could be multiple ones attached, so a number is
@@ -769,39 +1212,48 @@ msgstr ""
 #. # each other.
 #: default-attachment-filename
 msgid "attachment{{ n }}"
-msgstr ""
+msgstr "pièce jointe{{ n }}"
 
 #: attachment-size-kib
 msgid "{{kilobytes}}K"
-msgstr ""
+msgstr "{{kilobytes}} Ko"
 
-#: message-attachment-view.textContent
+#: message-attachment-view
+msgctxt "message-attachment-view"
 msgid "View"
+msgstr "Voir"
+
+#. # LOCALIZATION NOTE(message-attachment-did-not-open-label):
+#. # When a downloaded attachment cannot be opened because there is no app on the
+#. # device to handle its file type (as identified by MIME type), display a
+#. # confirmation dialog with this header.
+#: message-attachment-did-not-open-label
+msgid "Unable to open"
+msgstr "Ouverture impossible"
+
+#. # LOCALIZATION NOTE(message-attachment-did-not-open-label):
+#. # When a downloaded attachment cannot be opened because there is no app on the
+#. # device to handle its file type (as identified by MIME type), display a
+#. # confirmation dialog with this body.
+#: message-attachment-did-not-open-body
+msgid "The device does not have an app that can open the attachment."
 msgstr ""
+"L’appareil ne possède aucune application capable d’ouvrir cette pièce jointe."
+
+#: message-attachment-too-large
+msgid "This file is too large to download."
+msgstr "Ce fichier est trop volumineux pour être téléchargé."
 
 #: message-no-subject
 msgid "(no subject)"
-msgstr ""
+msgstr "(aucun objet)"
 
-#: message-edit-menu-star
-msgid "Star"
-msgstr "Favoris"
-
-#: message-edit-menu-unstar
-msgid "Unstar"
-msgstr "Non favoris"
-
-#: message-edit-menu-mark-read
-msgid "Mark as read"
-msgstr "Marquer comme lu"
-
-#: message-edit-menu-mark-unread
-msgid "Mark as unread"
-msgstr "Marquer comme non lu"
-
-#: message-edit-menu-move
-msgid "Move"
-msgstr "Déplacer"
+#. # LOCALIZATION NOTE(message-edit-menu-edit):
+#. # Displayed in a menu; tapping this item will cause the user to edit the given item.
+#: message-edit-menu-edit
+msgctxt "message-edit-menu-edit"
+msgid "Edit"
+msgstr "Modifier"
 
 #: message-edit-menu-delete
 msgctxt "message-edit-menu-delete"
@@ -810,11 +1262,11 @@ msgstr "Supprimer"
 
 #: message-edit-delete-confirm
 msgid "Delete email message?"
-msgstr "Supprimer un message ?"
+msgstr "Supprimer le message ?"
 
 #: message-send-attachment-disabled-confirm
 msgid "Attachments can not be forwarded."
-msgstr ""
+msgstr "Les pièces jointes ne peuvent pas être transférées."
 
 #: message-multiedit-header
 msgctxt "message-multiedit-header"
@@ -822,12 +1274,15 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: message-multiedit-header[zero]
+msgctxt "message-multiedit-header[zero]"
 msgid "Edit"
-msgstr "Modifier"
+msgstr "Mode édition"
 
 #: message-multiedit-header[one]
-#, fuzzy
 msgctxt "message-multiedit-header[one]"
+"message-multiedit-header[one]"
+"message-multiedit-header[one]"
+"message-multiedit-header[one]"
 msgid "{{ n }} selected"
 msgstr "{{ n }} sélectionné"
 
@@ -853,36 +1308,36 @@ msgstr "{{ n }} sélectionnés"
 
 #: browse-to-url-prompt
 msgid "Browse to URL?: {{ url }}"
-msgstr ""
+msgstr "Ouvrir l’URL ? : {{ url }}"
 
-#: message-download-images
-msgctxt "message-download-images"
+#: message-download-images-tap
+msgctxt "message-download-images-tap"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: message-download-images[one]
-msgid "This email contains one image. Click to download."
-msgstr "Ce message contient une image. Cliquez pour la télécharger."
+#: message-download-images-tap[one]
+msgid "This email contains one image. Tap to download."
+msgstr "Ce message contient une image. Appuyez pour la télécharger."
 
-#: message-download-images[two]
-msgctxt "message-download-images[two]"
-msgid "This email contains {{ n }} images. Click to download."
-msgstr "Ce message contient {{ n }} images. Cliquez pour les télécharger."
+#: message-download-images-tap[two]
+msgctxt "message-download-images-tap[two]"
+msgid "This email contains {{ n }} images. Tap to download."
+msgstr "Ce message contient {{ n }} images. Appuyez pour les télécharger."
 
-#: message-download-images[few]
-msgctxt "message-download-images[few]"
-msgid "This email contains {{ n }} images. Click to download."
-msgstr "Ce message contient {{ n }} images. Cliquez pour les télécharger."
+#: message-download-images-tap[few]
+msgctxt "message-download-images-tap[few]"
+msgid "This email contains {{ n }} images. Tap to download."
+msgstr "Ce message contient {{ n }} images. Appuyez pour les télécharger."
 
-#: message-download-images[many]
-msgctxt "message-download-images[many]"
-msgid "This email contains {{ n }} images. Click to download."
-msgstr "Ce message contient {{ n }} images. Cliquez pour les télécharger."
+#: message-download-images-tap[many]
+msgctxt "message-download-images-tap[many]"
+msgid "This email contains {{ n }} images. Tap to download."
+msgstr "Ce message contient {{ n }} images. Appuyez pour les télécharger."
 
-#: message-download-images[other]
-msgctxt "message-download-images[other]"
-msgid "This email contains {{ n }} images. Click to download."
-msgstr "Ce message contient {{ n }} images. Cliquez pour les télécharger."
+#: message-download-images-tap[other]
+msgctxt "message-download-images-tap[other]"
+msgid "This email contains {{ n }} images. Tap to download."
+msgstr "Ce message contient {{ n }} images. Appuyez pour les télécharger."
 
 #: message-show-external-images
 msgid "Show external images"
@@ -900,41 +1355,40 @@ msgstr "{[ plural(n) ]}"
 
 #: message-multiedit-delete-confirm[one]
 msgid "Delete this email message?"
-msgstr "Supprimer ce message ?"
+msgstr "Supprimer ce message ?"
 
 #: message-multiedit-delete-confirm[two]
 msgctxt "message-multiedit-delete-confirm[two]"
 msgid "Delete {{ n }} email messages?"
-msgstr "Supprimer {{ n }} messages ?"
+msgstr "Supprimer {{ n }} messages ?"
 
 #: message-multiedit-delete-confirm[few]
 msgctxt "message-multiedit-delete-confirm[few]"
 msgid "Delete {{ n }} email messages?"
-msgstr "Supprimer {{ n }} messages ?"
+msgstr "Supprimer {{ n }} messages ?"
 
 #: message-multiedit-delete-confirm[many]
 msgctxt "message-multiedit-delete-confirm[many]"
 msgid "Delete {{ n }} email messages?"
-msgstr "Supprimer {{ n }} messages ?"
+msgstr "Supprimer {{ n }} messages ?"
 
 #: message-multiedit-delete-confirm[other]
 msgctxt "message-multiedit-delete-confirm[other]"
 msgid "Delete {{ n }} email messages?"
-msgstr "Supprimer {{ n }} messages ?"
+msgstr "Supprimer {{ n }} messages ?"
 
 #: message-large-message-cancel
-#, fuzzy
 msgctxt "message-large-message-cancel"
 msgid "Cancel"
 msgstr "Annuler"
 
 #: message-large-message-ok
 msgid "Continue"
-msgstr ""
+msgstr "Continuer"
 
 #: message-large-message-confirm
 msgid "This message is large and may take some time to download."
-msgstr ""
+msgstr "Ce message est volumineux et peut mettre du temps à charger."
 
 #: message-search-from
 msgctxt "message-search-from"
@@ -961,102 +1415,93 @@ msgstr "Tout"
 
 #: message-search-input.placeholder
 msgid "Search Mail"
-msgstr "Rechercher dans les messages"
+msgstr "Rechercher"
 
-#: message-search-cancel-accessible
-msgid "Cancel search"
-msgstr "annuler la recherche"
+#: message-search-cancel
+msgctxt "message-search-cancel"
+msgid "Cancel"
+msgstr "Annuler"
 
 #: messages-syncing
-#, fuzzy
+msgctxt "messages-syncing"
 msgid "Loading Messages"
 msgstr "Chargement des messages"
 
-#: messages-sync-more
-msgid "Load more messages from server"
-msgstr "Charger plus de messages depuis le serveur"
+#: messages-syncing-progressbar.ariaValueText
+msgctxt "messages-syncing-progressbar.ariaValueText"
+msgid "Loading Messages"
+msgstr "Chargement des messages"
+
+#. # LOCALIZATION NOTE (messages-load-more): This text shows at the bottom of the
+#. # list of messages in the message list, and pressing it will load more messages
+#. # likely from the server. The space is constrained and has an icon next to it.
+#: messages-load-more
+msgid "Load More Messages"
+msgstr "Charger davantage de messages"
 
 #: messages-folder-empty
 msgid "No mail in this Folder"
-msgstr "Pas de message dans ce dossier"
+msgstr "Aucun message dans ce dossier"
 
 #: messages-search-empty
 msgid "No matches in locally cached messages"
-msgstr ""
+msgstr "Aucun résultat parmi les messages du cache local"
 
 #: messages-folder-select
 msgid "Select folder"
 msgstr "Choisir un dossier"
 
+#. # LOCALIZATION NOTE(messages-folder-unread-max): This string is inserted
+#. # in place of the unread message count in the folder list whenever
+#. # the number exceeds 999. Note that due to space constraints any
+#. # localizations optimally should only be 4-5 characters.
+#: messages-folder-unread-max
+msgid "999+"
+msgstr "+ de 999"
+
 #: message-contact-menu-create
 msgid "Save new contact"
-msgstr ""
+msgstr "Enregistrer comme nouveau contact"
 
 #: message-contact-menu-add-existing
 msgid "Add to existing contact"
-msgstr ""
+msgstr "Ajouter à un contact existant"
 
 #: message-contact-menu-view
 msgid "View contact"
 msgstr "Voir le contact"
 
 #: message-contact-menu-reply
-#, fuzzy
 msgctxt "message-contact-menu-reply"
 msgid "Reply"
 msgstr "Répondre"
 
 #: message-contact-menu-new
 msgid "Send new mail"
-msgstr ""
+msgstr "Envoyer un nouveau message"
 
 #: message-reply-menu-reply
-#, fuzzy
 msgctxt "message-reply-menu-reply"
 msgid "Reply"
 msgstr "Répondre"
 
 #: message-reply-menu-reply-all
 msgid "Reply All"
-msgstr ""
+msgstr "Répondre à tous"
 
 #: message-reply-menu-forward
 msgid "Forward"
-msgstr ""
+msgstr "Transférer"
 
 #: message-reply-menu-cancel
-#, fuzzy
 msgctxt "message-reply-menu-cancel"
 msgid "Cancel"
 msgstr "Annuler"
 
-#: folder-list-header
-msgid "Folders"
-msgstr "Dossiers"
-
-#. # L10n note: account-last-synced-label is found on the folder list card,
-#. # accessible from the message-list card by clicking the icon in the upper left
-#. # of the card.  The label is displayed at the bottom of the folder list and is
-#. # right aligned.  There is currently 1 button to the left of the label and soon
-#. # there will be two, so it is desirable to use as short a translation as
-#. # possible.  To the right of the label, a (short) relative timestamp is
-#. # displayed.
-#: account-last-synced-label
-msgctxt "account-last-synced-label"
-msgid "Last sync:"
-msgstr ""
-
-#. # L10n note: This string is displayed to the right of account-last-synced-label
-#. # if no folder has ever been synchronized.  Otherwise the space occupied by this
-#. # string will be a (short) relative timestamp.
-#: account-never-synced
-msgid "Never"
-msgstr ""
-
 #. # LOCALIZATION NOTE: do not translate {name}
 #: reply-quoting-wrote
 msgid "{name} wrote"
-msgstr "{name} a écrit"
+msgstr "{name} a écrit "
 
 #: forward-original-message
 msgid "Original message"
@@ -1070,7 +1515,7 @@ msgstr "Message d’origine"
 #: forward-header-subject
 msgctxt "forward-header-subject"
 msgid "Subject"
-msgstr "Sujet"
+msgstr "Objet"
 
 #: forward-header-date
 msgid "Date"
@@ -1083,7 +1528,6 @@ msgstr "De"
 
 #. # This really wants to have the dash in it for consistency with Thunderbird
 #: forward-header-reply-to
-#, fuzzy
 msgid "Reply-To"
 msgstr "Répondre à"
 
@@ -1104,45 +1548,122 @@ msgstr "CC"
 #. # footsteps of Thunderbird.
 #: folder-inbox
 msgid "Inbox"
-msgstr ""
+msgstr "Courrier entrant"
 
 #: folder-sent
-#, fuzzy
 msgid "Sent"
-msgstr "Envoyer"
+msgstr "Envoyés"
 
 #: folder-drafts
 msgid "Drafts"
-msgstr ""
+msgstr "Brouillons"
 
 #: folder-trash
 msgid "Trash"
-msgstr ""
+msgstr "Corbeille"
 
 #: folder-queue
 msgid "Unsent"
-msgstr ""
+msgstr "Messages en attente"
 
 #: folder-junk
 msgid "Junk"
-msgstr ""
+msgstr "Indésirables"
 
 #: folder-archives
 msgid "Archives"
-msgstr ""
+msgstr "Archives"
 
 #: folder-localdrafts
 msgid "Local Drafts"
-msgstr ""
+msgstr "Brouillons locaux"
+
+#: folder-outbox
+msgid "Outbox"
+msgstr "Messages en attente"
+
+#. # In the folder picker drawer, there is a transparent area for the header,
+#. # and a tap region to take the user back to the message list. So this text is
+#. # not visible by the user, but could be used for accessibility.
+#: drawer-back
+msgctxt "drawer-back"
+msgid "Back"
+msgstr "Retour"
+
+#. # In the folder picker drawer, the list of email accounts are shown. This is
+#. # the header for that section.
+#: drawer-accounts-header
+msgctxt "drawer-accounts-header"
+msgid "Accounts"
+msgstr "Comptes"
+
+#. # At the bottom of the folder picker drawer, there is an icon link that
+#. # goes to the account settings. This string is only used for accessibility
+#. # concerns, and is not visible visually.
+#: drawer-settings-link
+msgid "Settings"
+msgstr "Paramètres"
+
+#. # folder-last-synced-label is shown in the message-list, in the
+#. # middle of its bottom toolbar, and shows the last sync time for the currently
+#. # displayed list of messages in the folder. Since space is tight in that area,
+#. # the app code detects if the string will be too long and it will shrink the
+#. # font size to fit longer text.
+#: folder-last-synced-label
+msgid "Last sync:"
+msgstr "Dernière synchronisation :"
+
+#. # LOCALIZATION NOTE(messages-refresh-button): For the message-list, a label for
+#. # a button that refreshes the list of messages in the folder. The following
+#. # string is spoken by screen readers and not shown on the screen.
+#: messages-refresh-button.ariaLabel
+msgid "Refresh"
+msgstr "Actualiser"
+
+#. # LOCALIZATION NOTE(messages-refresh-progress): For the message-list, a label
+#. # for a button that refreshes the list of messages in the folder when the sync
+#. # is in progress. It is only visible when reshing is in progress. The following
+#. # string is spoken by screen readers and not shown on the screen.
+#: messages-refresh-progress.ariaValueText
+msgid "Refreshing"
+msgstr "Actualisation en cours"
+
+#. # LOCALIZATION NOTE(edit-button): For the message-list, a label for a button
+#. # that activates edit mode for the message list. The following string is spoken
+#. # by screen readers and not shown on the screen.
+#: edit-button.ariaLabel
+msgctxt "edit-button.ariaLabel"
+msgid "Edit"
+msgstr "Mode édition"
+
+#. # LOCALIZATION NOTE(message-list-top-action):
+#. # In the message-list, as the user scrolls down, an action bar will scroll into
+#. # view that if tapped will take the user to the top of the screen. That bar
+#. # will use an icon to display its meaning, this is text that will not be visible
+#. # to the user, it is provided for accessibility.
+#: message-list-top-action
+msgid "Top"
+msgstr "Haut"
+
+#. # LOCALIZATION NOTE(message-list-menu): For the message-list and folder picker,
+#. # a label for a header icon button that brings up or hides the folder picker and
+#. # settings menu. The following string is spoken by screen readers and not shown
+#. # on the screen.
+#: message-list-menu.ariaLabel
+msgid "Folders and settings"
+msgstr "Dossiers et paramètres"
+
+#. # LOCALIZATION NOTE(messages-menu-compose): The compose button shown in the
+#. # message list for going to the compose card. The following string is spoken by
+#. # screen readers and not shown on the screen.
+#: message-list-compose.ariaLabel
+msgctxt "message-list-compose.ariaLabel"
+msgid "Compose"
+msgstr "Nouveau message"
 
 #: toaster-undo
 msgid "Undo"
 msgstr "Annuler"
-
-#: toaster-retry
-msgctxt "toaster-retry"
-msgid "Retry"
-msgstr ""
 
 #: toaster-message-star
 msgctxt "toaster-message-star"
@@ -1151,29 +1672,26 @@ msgstr "{[ plural(n) ]}"
 
 #: toaster-message-star[one]
 msgid "1 message flag set"
-msgstr "Un message marqué comme suivi"
+msgstr "1 message marqué comme suivi"
 
 #: toaster-message-star[two]
-#, fuzzy
 msgctxt "toaster-message-star[two]"
-msgid "{{ n }} messages flag set"
+msgid "{{ n }} message flags set"
 msgstr "{{ n }} messages marqués comme suivis"
 
 #: toaster-message-star[few]
-#, fuzzy
 msgctxt "toaster-message-star[few]"
-msgid "{{ n }} messages flag set"
+msgid "{{ n }} message flags set"
 msgstr "{{ n }} messages marqués comme suivis"
 
 #: toaster-message-star[many]
-#, fuzzy
 msgctxt "toaster-message-star[many]"
-msgid "{{ n }} messages flag set"
+msgid "{{ n }} message flags set"
 msgstr "{{ n }} messages marqués comme suivis"
 
 #: toaster-message-star[other]
 msgctxt "toaster-message-star[other]"
-msgid "{{ n }} messages flag set"
+msgid "{{ n }} message flags set"
 msgstr "{{ n }} messages marqués comme suivis"
 
 #: toaster-message-unstar
@@ -1183,29 +1701,26 @@ msgstr "{[ plural(n) ]}"
 
 #: toaster-message-unstar[one]
 msgid "1 message flag removed"
-msgstr "Un message marqué comme non suivi"
+msgstr "1 message marqué comme non suivi"
 
 #: toaster-message-unstar[two]
-#, fuzzy
 msgctxt "toaster-message-unstar[two]"
-msgid "{{ n }} messages flag removed"
+msgid "{{ n }} message flags removed"
 msgstr "{{ n }} messages marqués comme non suivis"
 
 #: toaster-message-unstar[few]
-#, fuzzy
 msgctxt "toaster-message-unstar[few]"
-msgid "{{ n }} messages flag removed"
+msgid "{{ n }} message flags removed"
 msgstr "{{ n }} messages marqués comme non suivis"
 
 #: toaster-message-unstar[many]
-#, fuzzy
 msgctxt "toaster-message-unstar[many]"
-msgid "{{ n }} messages flag removed"
+msgid "{{ n }} message flags removed"
 msgstr "{{ n }} messages marqués comme non suivis"
 
 #: toaster-message-unstar[other]
 msgctxt "toaster-message-unstar[other]"
-msgid "{{ n }} messages flag removed"
+msgid "{{ n }} message flags removed"
 msgstr "{{ n }} messages marqués comme non suivis"
 
 #: toaster-message-read
@@ -1215,22 +1730,19 @@ msgstr "{[ plural(n) ]}"
 
 #: toaster-message-read[one]
 msgid "1 message marked as read"
-msgstr "Un message marqué comme lu"
+msgstr "1 message marqué comme lu"
 
 #: toaster-message-read[two]
-#, fuzzy
 msgctxt "toaster-message-read[two]"
 msgid "{{ n }} messages marked as read"
 msgstr "{{ n }} messages marqués comme lus"
 
 #: toaster-message-read[few]
-#, fuzzy
 msgctxt "toaster-message-read[few]"
 msgid "{{ n }} messages marked as read"
 msgstr "{{ n }} messages marqués comme lus"
 
 #: toaster-message-read[many]
-#, fuzzy
 msgctxt "toaster-message-read[many]"
 msgid "{{ n }} messages marked as read"
 msgstr "{{ n }} messages marqués comme lus"
@@ -1247,22 +1759,19 @@ msgstr "{[ plural(n) ]}"
 
 #: toaster-message-unread[one]
 msgid "1 message marked as unread"
-msgstr "Un message marqué comme non lu"
+msgstr "1 message marqué comme non lu"
 
 #: toaster-message-unread[two]
-#, fuzzy
 msgctxt "toaster-message-unread[two]"
 msgid "{{ n }} messages marked as unread"
 msgstr "{{ n }} messages marqués comme non lus"
 
 #: toaster-message-unread[few]
-#, fuzzy
 msgctxt "toaster-message-unread[few]"
 msgid "{{ n }} messages marked as unread"
 msgstr "{{ n }} messages marqués comme non lus"
 
 #: toaster-message-unread[many]
-#, fuzzy
 msgctxt "toaster-message-unread[many]"
 msgid "{{ n }} messages marked as unread"
 msgstr "{{ n }} messages marqués comme non lus"
@@ -1279,22 +1788,19 @@ msgstr "{[ plural(n) ]}"
 
 #: toaster-message-move[one]
 msgid "1 message moved"
-msgstr "Un message déplacé"
+msgstr "1 message déplacé"
 
 #: toaster-message-move[two]
-#, fuzzy
 msgctxt "toaster-message-move[two]"
 msgid "{{ n }} messages moved"
 msgstr "{{ n }} messages déplacés"
 
 #: toaster-message-move[few]
-#, fuzzy
 msgctxt "toaster-message-move[few]"
 msgid "{{ n }} messages moved"
 msgstr "{{ n }} messages déplacés"
 
 #: toaster-message-move[many]
-#, fuzzy
 msgctxt "toaster-message-move[many]"
 msgid "{{ n }} messages moved"
 msgstr "{{ n }} messages déplacés"
@@ -1311,22 +1817,19 @@ msgstr "{[ plural(n) ]}"
 
 #: toaster-message-delete[one]
 msgid "1 message deleted"
-msgstr "Un message supprimé"
+msgstr "1 message supprimé"
 
 #: toaster-message-delete[two]
-#, fuzzy
 msgctxt "toaster-message-delete[two]"
 msgid "{{ n }} messages deleted"
 msgstr "{{ n }} messages supprimés"
 
 #: toaster-message-delete[few]
-#, fuzzy
 msgctxt "toaster-message-delete[few]"
 msgid "{{ n }} messages deleted"
 msgstr "{{ n }} messages supprimés"
 
 #: toaster-message-delete[many]
-#, fuzzy
 msgctxt "toaster-message-delete[many]"
 msgid "{{ n }} messages deleted"
 msgstr "{{ n }} messages supprimés"
@@ -1338,7 +1841,93 @@ msgstr "{{ n }} messages supprimés"
 
 #: toaster-retryable-syncfailed
 msgid "Unable to connect to server"
+msgstr "Connexion serveur impossible"
+
+#. # LOCALIZATION NOTE(compose-invalid-addresses-title):
+#. # A title to be displayed on a warning screen, warning users that
+#. # some of the email addresses they typed were incorrect.
+#: compose-invalid-addresses-title
+msgid "Invalid Addresses"
+msgstr "Adresses invalides"
+
+#. # LOCALIZATION NOTE(compose-invalid-addresses-description):
+#. # A description to be displayed on a warning screen, warning users that
+#. # some of the email addresses they typed were incorrect, and that they
+#. # must correct the email addresses before sending.
+#: compose-invalid-addresses-description
+msgid ""
+"Your message contains one or more invalid email addresses. Please correct "
+"them before sending."
 msgstr ""
+"Votre message contient une ou plusieurs adresses électroniques invalides. "
+"Veuillez la ou les corriger avant l’envoi."
+
+#. # LOCALIZATION NOTE(background-send-pending):
+#. # Brief message to be displayed in a popup, saying that the phone has
+#. # no network connection, and that the email has been saved to the outbox.
+#: background-send-pending
+msgid "Network unavailable. Email saved to outbox."
+msgstr "Réseau indisponible. Message enregistré dans les messages en attente."
+
+#. # LOCALIZATION NOTE(background-send-sending):
+#. # Displayed in a toaster popup message, saying that the email
+#. # is currently being sent.
+#: background-send-sending
+msgid "Sending mail…"
+msgstr "Envoi du message…"
+
+#. # LOCALIZATION NOTE(background-send-success):
+#. # Displayed in a toaster popup message, saying that the email
+#. # sent successfully.
+#: background-send-success
+msgid "Email sent."
+msgstr "Message envoyé."
+
+#. # LOCALIZATION NOTE(background-send-error):
+#. # Description to be displayed in a notification, saying that an error
+#. # occured while attempting to send an email, and that the email has
+#. # been saved to the outbox.
+#: background-send-error
+msgid "Error occurred. Email saved to outbox."
+msgstr ""
+"Une erreur s’est produite. Le message a été enregistré dans les messages en "
+"attente."
+
+#. # LOCALIZATION NOTE(background-send-error-recipients):
+#. # Description to be displayed in a notification, saying that the email
+#. # could not be sent because the server rejected one or more of the
+#. # email recipients, and that the email has been saved to the outbox.
+#: background-send-error-recipients
+msgid "Recipient error. Email saved to outbox."
+msgstr ""
+"Erreur de destinataire. Message enregistré dans les messages en attente."
+
+#. # LOCALIZATION NOTE(background-send-error-title):
+#. # Title to be displayed in a notification, indicating that the
+#. # email failed to send for some reason.
+#: background-send-error-title
+msgid "Mail failed to send"
+msgstr "Échec de l’envoi du message"
+
+#. # LOCALIZATION NOTE(send-failure-recipients):
+#. # Message to be displayed when editing a message that failed to send due
+#. # to invalid recipients. It should instruct the user to check the addresses
+#. # above for spelling.
+#: send-failure-recipients
+msgid ""
+"Check the spelling of the addresses above. Your mail server indicated one or "
+"more of the addresses above are incorrect."
+msgstr ""
+"Vérifiez que les adresses ci-dessus sont correctes. Votre serveur de "
+"courrier a indiqué qu’une ou plusieurs des adresses ci-dessus étaient "
+"incorrectes."
+
+#. # LOCALIZATION NOTE(send-failure-unknown):
+#. # Message to be displayed when editing a message that failed to send for an
+#. # unknown reason.
+#: send-failure-unknown
+msgid "The message could not be sent."
+msgstr "Le message n’a pas pu être envoyé."
 
 #: form-clear-input
 msgid "Remove text"
@@ -1346,192 +1935,184 @@ msgstr "Effacer le texte"
 
 #: confirm-dialog-title
 msgid "Confirmation"
-msgstr ""
+msgstr "Confirmation"
 
 #. # senders-separation-sign separates the email accounts of senders.
 #. # Notice that we have a space after the comma.
 #: senders-separation-sign
 msgid ", "
-msgstr ""
+msgstr ", "
 
-#. # new-emails refers to the text shown on a notification that users
-#. # get when they receive new, unread email. The ui component that utilizes
-#. # this lives in apps/email/js/message_list_topbar.js.
-#: new-emails
-#, fuzzy
-msgctxt "new-emails"
+#. # LOCALIZATION NOTE(new-messages): refers to the text shown inside the email app
+#. # on the message list when new, unread messages have been received while the
+#. # user is looking at the messages in the message list. The ui component that
+#. # uses this lives in apps/email/js/message_list_topbar.js. This display differ
+#. # from the messages that are sent as system notifications. Those are more
+#. # important to distinguish that emails and not SMS messages have been received.
+#. # This display uses the term "Messages" since other text labels in the message
+#. # list also use "Messages" instead of "Emails" since the context of Email is
+#. # assumed as it is in the email app.
+#: new-messages
+msgctxt "new-messages"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: new-emails[one]
-msgctxt "new-emails[one]"
-msgid "1 New Email"
-msgstr ""
+#: new-messages[one]
+msgid "1 New Message"
+msgstr "1 nouv. message"
 
-#: new-emails[two]
-msgctxt "new-emails[two]"
-msgid "{{ n }} New Emails"
-msgstr ""
+#: new-messages[two]
+msgctxt "new-messages[two]"
+msgid "{{ n }} New Messages"
+msgstr "{{ n }} nouv. messages"
 
-#: new-emails[few]
-msgctxt "new-emails[few]"
-msgid "{{ n }} New Emails"
-msgstr ""
+#: new-messages[few]
+msgctxt "new-messages[few]"
+msgid "{{ n }} New Messages"
+msgstr "{{ n }} nouv. messages"
 
-#: new-emails[many]
-msgctxt "new-emails[many]"
-msgid "{{ n }} New Emails"
-msgstr ""
+#: new-messages[many]
+msgctxt "new-messages[many]"
+msgid "{{ n }} New Messages"
+msgstr "{{ n }} nouv. messages"
 
-#: new-emails[other]
-msgctxt "new-emails[other]"
-msgid "{{ n }} New Emails"
-msgstr ""
+#: new-messages[other]
+msgctxt "new-messages[other]"
+msgid "{{ n }} New Messages"
+msgstr "{{ n }} nouv. messages"
 
 #. # new-emails-notify-one-account is used when a system notification is generated during
 #. # a periodic background sync with the server. Since this goes to the system's
 #. # notification area, and user has only one account configured with the email App.
 #: new-emails-notify-one-account
-#, fuzzy
 msgctxt "new-emails-notify-one-account"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: new-emails-notify-one-account[one]
-msgctxt "new-emails-notify-one-account[one]"
 msgid "1 New Email"
-msgstr ""
+msgstr "1 nouveau courriel"
 
 #: new-emails-notify-one-account[two]
 msgctxt "new-emails-notify-one-account[two]"
 msgid "{{ n }} New Emails"
-msgstr ""
+msgstr "{{ n }} nouveaux courriels"
 
 #: new-emails-notify-one-account[few]
 msgctxt "new-emails-notify-one-account[few]"
 msgid "{{ n }} New Emails"
-msgstr ""
+msgstr "{{ n }} nouveaux courriels"
 
 #: new-emails-notify-one-account[many]
 msgctxt "new-emails-notify-one-account[many]"
 msgid "{{ n }} New Emails"
-msgstr ""
+msgstr "{{ n }} nouveaux courriels"
 
 #: new-emails-notify-one-account[other]
 msgctxt "new-emails-notify-one-account[other]"
 msgid "{{ n }} New Emails"
-msgstr ""
+msgstr "{{ n }} nouveaux courriels"
 
 #. # new-emails-notify-multiple-accounts is used in the same situation
 #. # as new-emails-notify-one-account.
 #. # In this case, the user has more than one account configured
 #. # with the email app.
 #: new-emails-notify-multiple-accounts
-#, fuzzy
 msgctxt "new-emails-notify-multiple-accounts"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: new-emails-notify-multiple-accounts[one]
 msgid "1 New Email ({{ accountName }})"
-msgstr ""
+msgstr "1 nouveau courriel ({{ accountName }})"
 
 #: new-emails-notify-multiple-accounts[two]
 msgctxt "new-emails-notify-multiple-accounts[two]"
 msgid "{{ n }} New Emails ({{ accountName }})"
-msgstr ""
+msgstr "{{ n }} nouveaux courriels ({{ accountName }})"
 
 #: new-emails-notify-multiple-accounts[few]
 msgctxt "new-emails-notify-multiple-accounts[few]"
 msgid "{{ n }} New Emails ({{ accountName }})"
-msgstr ""
+msgstr "{{ n }} nouveaux courriels ({{ accountName }})"
 
 #: new-emails-notify-multiple-accounts[many]
 msgctxt "new-emails-notify-multiple-accounts[many]"
 msgid "{{ n }} New Emails ({{ accountName }})"
-msgstr ""
+msgstr "{{ n }} nouveaux courriels ({{ accountName }})"
 
 #: new-emails-notify-multiple-accounts[other]
 msgctxt "new-emails-notify-multiple-accounts[other]"
 msgid "{{ n }} New Emails ({{ accountName }})"
-msgstr ""
+msgstr "{{ n }} nouveaux courriels ({{ accountName }})"
 
 #. # new-emails-notify-multiple-accounts-body is used in the same situation
 #. # as new-emails-notify-multiple-accounts.
 #. # This is the body part of the notification.
 #: new-emails-notify-multiple-accounts-body
 msgid "{{ from }} “{{ subject }}”"
+msgstr "{{ from }} « {{ subject }} »"
+
+#. # LOCALIZATION NOTE(tng-plain-socket-warning-title): When the user selects an
+#. # PLAIN socket connection type for the email connections in manual config, a
+#. # dialog is shown with this title.
+#: tng-plain-socket-warning-title
+msgid "Are you sure?"
+msgstr "Voulez-vous vraiment utiliser ce type de connexion ?"
+
+#. # LOCALIZATION NOTE(tng-plain-socket-warning-message): On the PLAIN socket
+#. # connection warning dialog, explains the hazards of using that option.
+#: tng-plain-socket-warning-message
+msgid ""
+"Other people may be able to see your passwords and emails or control your "
+"account."
 msgstr ""
+"D’autres personnes pourraient être en mesure de lire vos mots de passe, vos "
+"messages ou de contrôler votre compte."
 
-#~ msgid "Your login information"
-#~ msgstr "Vos informations de connexion"
+#. # LOCALIZATION NOTE(tng-plain-socket-warning-message-options): On the PLAIN
+#. # socket connection warning dialog, lets the user know there are better, free
+#. # options for more secure email.
+#: tng-plain-socket-warning-message-options
+msgid ""
+"There are multiple, free email providers that offer more secure, encrypted "
+"connections."
+msgstr ""
+"Il existe plusieurs fournisseurs de messagerie électronique gratuits qui "
+"offrent des connexions chiffrées et sécurisées."
 
-#, fuzzy
-#~ msgctxt "default-attachment-name"
-#~ msgid "{[ plural(n) ]}"
-#~ msgstr "{[ plural(n) ]}"
+#. # LOCALIZATION NOTE(tng-plain-socket-learn-more): The button in the PLAIN
+#. # socket connection warning dialog that explains more about the risks and about
+#. # alternative email providers that have better connection options.
+#: tng-plain-socket-learn-more
+msgid "Learn more"
+msgstr "En savoir plus"
 
-#, fuzzy
-#~ msgctxt "setup-manual-config-header"
-#~ msgid "Manual setup"
-#~ msgstr "Configuration manuelle"
+#. # LOCALIZATION NOTE(tng-plain-socket-warning-ok): The button the user taps to
+#. # indicate they understand the warning dialog about the PLAIN socket connection
+#. # type. This button also dismisses the dialog.
+#: tng-plain-socket-warning-ok
+msgid "I understand"
+msgstr "J’ai compris"
 
-#~ msgid "3 minutes"
-#~ msgstr "3 min."
+#. # LOCALIZATION NOTE(message-reader-next-button): For reader card, a label for a
+#. # button used to navigate to next message. The following string is spoken by
+#. # screen readers and not shown on the screen.
+#: message-reader-next-button.ariaLabel
+msgctxt "message-reader-next-button.ariaLabel"
+msgid "Next"
+msgstr "Suivant"
 
-#~ msgid "5 minutes"
-#~ msgstr "5 min."
+#. # LOCALIZATION NOTE(message-reader-previous-button): For reader card, a label
+#. # for a button used to navigate to previous message. The following string is
+#. # spoken by screen readers and not shown on the screen.
+#: message-reader-previous-button.ariaLabel
+msgid "Previous"
+msgstr "Précédent"
 
-#~ msgid "10 minutes"
-#~ msgstr "10 min."
-
-#~ msgid "15 minutes"
-#~ msgstr "15 min."
-
-#~ msgid "30 minutes"
-#~ msgstr "30 min."
-
-#~ msgid "60 minutes"
-#~ msgstr "60 min."
-
-#~ msgid "Default account"
-#~ msgstr "Compte par défaut"
-
-#~ msgid "Synchronize"
-#~ msgstr "Synchroniser"
-
-#~ msgid "Please wait while your account is set up"
-#~ msgstr "Veuillez patienter pendant la configuration de votre compte"
-
-#~ msgid "New mail account setup"
-#~ msgstr "Configuration d’un nouveau compte message"
-
-#~ msgid "Hotmail account"
-#~ msgstr "Compte Hotmail"
-
-#~ msgid "Gmail account"
-#~ msgstr "Compte Gmail"
-
-#~ msgid "Other email"
-#~ msgstr "Autre fournisseur"
-
-#~ msgid "Name"
-#~ msgstr "Nom"
-
-#~ msgid "Email address"
-#~ msgstr "Adresse de courriel"
-
-#~ msgid "Invalid username or password"
-#~ msgstr "Nom d’utilisateur ou mot de passe invalide"
-
-#~ msgid "An unknown error occurred"
-#~ msgstr "Une erreur inconnue s’est produite"
-
-#~ msgid "Manually set up account"
-#~ msgstr "Configurer le compte manuellement"
-
-#~ msgid "Close"
-#~ msgstr "Fermer"
-
-#~ msgid "Try again"
-#~ msgstr "Réessayer"
+#. # LOCALIZATION NOTE(message-reader-date-received): For reader card, a label for
+#. # a text containing the date the time elapsed since the message was received.
+#. # The following string is spoken by screen readers and not shown on the screen.
+#: message-reader-date-received.ariaLabel
+msgid "Received"
+msgstr "Réception"

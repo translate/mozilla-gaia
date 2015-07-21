@@ -1,17 +1,16 @@
-#. extracted from ./apps/calendar/calendar.properties
+#. extracted from en-US/apps/calendar/calendar.properties, fr/apps/calendar/calendar.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-10 15:35+0100\n"
+"POT-Creation-Date: 2015-07-21 12:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.11.0\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
@@ -38,33 +37,27 @@ msgstr "Confirmer"
 
 #: done
 msgid "Done"
-msgstr "Fini"
+msgstr "Terminé"
 
 #: events
-#, fuzzy
 msgid "Events"
-msgstr "Événement"
+msgstr "Évènements"
 
 #: edit
 msgid "Edit"
-msgstr ""
+msgstr "Modifier"
 
 #: allday-events
-#, fuzzy
 msgid "All-day Events"
-msgstr "Événement sur toute la journée ?"
+msgstr "Évènements sur jours entiers"
 
-#. # first time use hints
-#: hint-swipe-action
-msgid "Swipe"
-msgstr ""
-
-#: hint-swipe-to-navigate
-msgid "to navigate between calendar dates."
-msgstr ""
+#: no-events
+msgid "No Events"
+msgstr "Aucun évènement"
 
 #. # time view selector
 #: show-today
+msgctxt "show-today"
 msgid "Today"
 msgstr "Aujourd’hui"
 
@@ -82,6 +75,7 @@ msgstr "Jour"
 
 #. # settings
 #: settings-show
+msgctxt "settings-show"
 msgid "Settings"
 msgstr "Paramètres"
 
@@ -89,18 +83,27 @@ msgstr "Paramètres"
 msgid "Hide settings"
 msgstr "Masquer les paramètres"
 
-#. # add records
+#. # view/add/edit records
 #: add-account
 msgid "Add an account"
 msgstr "Ajouter un compte"
 
 #: new-event
+msgctxt "new-event"
 msgid "Add event"
 msgstr "Ajouter un évènement"
 
-#: add-event-header
+#: view-event-header
 msgid "Event"
-msgstr "Événement"
+msgstr "Évènement"
+
+#: new-event-header
+msgid "Add Event"
+msgstr "Nouveau"
+
+#: edit-event-header
+msgid "Edit Event"
+msgstr "Modifier"
 
 #. # account
 #: account-header
@@ -112,19 +115,16 @@ msgid "Accounts"
 msgstr "Comptes"
 
 #. # advanced settings
-#: settings-header
-msgid "Calendars"
-msgstr "Agendas"
-
-#: advanced-settings
-#, fuzzy
-msgid "Calendar settings"
-msgstr "Paramètres de l’agenda"
+#. # The following string is spoken by screen readers and not shown on the
+#. # screen.
+#: advanced-settings-short-icon-button.ariaLabel
+msgctxt "advanced-settings-short-icon-button.ariaLabel"
+msgid "Settings"
+msgstr "Paramètres"
 
 #: advanced-settings-header
-#, fuzzy
 msgid "Calendar Settings"
-msgstr "Paramètres de l’agenda"
+msgstr "Paramètres"
 
 #: advanced-settings-personalization
 msgid "Personalization"
@@ -132,7 +132,11 @@ msgstr "Personnalisation"
 
 #: advanced-settings-reminders
 msgid "Reminders"
-msgstr ""
+msgstr "Rappels"
+
+#: advanced-settings-add-account
+msgid "Add Account"
+msgstr "Ajouter un compte"
 
 #. # create account
 #: field-user.placeholder
@@ -149,15 +153,15 @@ msgstr "Adresse URL"
 
 #: modify-account-setting-up
 msgid "Please wait while your account is set up"
-msgstr ""
+msgstr "Veuillez patienter pendant la configuration de votre compte"
 
 #: modify-account-unable-to-sync
 msgid "Unable to sync"
-msgstr ""
+msgstr "Synchronisation impossible"
 
 #: modify-account-sign-in
 msgid "Sign in"
-msgstr ""
+msgstr "Se connecter"
 
 #. # presets
 #: preset-caldav
@@ -175,7 +179,7 @@ msgstr "Google"
 #: preset-local
 msgctxt "preset-local"
 msgid "Offline calendar"
-msgstr "Agenda hors-ligne"
+msgstr "Agenda hors connexion"
 
 #. # note this does not need to be localized
 #. # it is highly unlikely we will ship with this value.
@@ -186,16 +190,17 @@ msgstr "Mozilla Zimbra"
 #: calendar-local
 msgctxt "calendar-local"
 msgid "Offline calendar"
-msgstr "Agenda hors-ligne"
+msgstr "Agenda hors connexion"
 
 #. # create event
 #: event-title.placeholder
+msgctxt "event-title.placeholder"
 msgid "Title"
 msgstr "Titre"
 
 #: event-location.placeholder
 msgid "Where?"
-msgstr "Où ?"
+msgstr "Où ?"
 
 #: event-description.placeholder
 msgid "Notes"
@@ -203,27 +208,31 @@ msgstr "Notes"
 
 #: event-is-allday
 msgid "All day event?"
-msgstr "Événement sur toute la journée ?"
+msgstr "Évènement sur toute la journée ?"
 
 #: event-start-date.placeholder
+msgctxt "event-start-date.placeholder"
 msgid "Start date"
 msgstr "Date de début"
 
 #: event-end-date.placeholder
+msgctxt "event-end-date.placeholder"
 msgid "End date"
 msgstr "Date de fin"
 
 #: event-start-time.placeholder
+msgctxt "event-start-time.placeholder"
 msgid "Start time"
 msgstr "Heure de début"
 
 #: event-end-time.placeholder
+msgctxt "event-end-time.placeholder"
 msgid "End time"
 msgstr "Heure de fin"
 
 #: event-delete
 msgid "Delete event"
-msgstr "Supprimer l’événement"
+msgstr "Supprimer l’évènement"
 
 #. # remove account
 #: remove-account-data
@@ -240,524 +249,774 @@ msgid ""
 "calendars and events."
 msgstr ""
 "Supprimer ce compte supprimera également votre copie locale des agendas et "
-"événements associés."
+"évènements associés."
+
+#. # sync button in settings drawer
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: drawer-sync-icon-button.ariaLabel
+msgid "Sync"
+msgstr "Synchroniser"
+
+#. # sync progress
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: sync-progress-syncing.ariaValueText
+msgid "Syncing"
+msgstr "Synchronisation en cours"
+
+#: sync-progress-complete.ariaValueText
+msgid "Syncing complete"
+msgstr "Synchronisation terminée"
 
 #. # sync
 #: sync-frequency
 msgid "Sync Calendar"
-msgstr "Synchronisation de l’agenda"
+msgstr "Synchroniser l’agenda"
 
-#: sync-frequency-manual.textContent
+#: sync-frequency-15min
+msgid "15 min"
+msgstr "Toutes les 15 minutes"
+
+#: sync-frequency-30min
+msgid "30 min"
+msgstr "Toutes les 30 minutes"
+
+#: sync-frequency-manual
 msgid "Manually"
 msgstr "Manuellement"
 
-#: sync-frequency-15min.textContent
-msgid "15 min"
-msgstr "15 min"
+#. # duration time of events
+#. # startDate and endDate use the `longDateFormat` format.
+#. # startTime and endTime use the `shortTimeFormat12/24` format.
+#. # `<br>` (line break) used for presentation.
+#: one-day-duration
+msgid "{{startDate}}<br>from {{startTime}} to {{endTime}}"
+msgstr "Le {{startDate}}<br>de {{startTime}} à {{endTime}}"
 
-#: sync-frequency-30min.textContent
-msgid "30 min"
-msgstr "30 min"
+#: multiple-day-duration
+msgid "From {{startTime}} {{startDate}}<br>to {{endTime}} {{endDate}}"
+msgstr "De {{startTime}} le {{startDate}}<br>jusqu’à {{endTime}} le {{endDate}}"
 
-#: sync-frequency-hourly.textContent
-msgid "Each hour"
-msgstr "Chaque heure"
+#: one-all-day-duration
+msgid "All day<br>{{startDate}}"
+msgstr "Toute la journée du<br>{{startDate}}"
+
+#: multiple-all-day-duration
+msgid "All day from {{startDate}}<br>to {{endDate}}"
+msgstr "Toute la journée, du {{startDate}}<br>au {{endDate}}"
 
 #. # alarms for event view/edit
 #: none
-#, fuzzy
 msgid "None"
-msgstr "Fini"
+msgstr "Jamais"
+
+#: reminder
+msgid "Reminder:"
+msgstr "Rappel :"
 
 #: remind-me
 msgid "Remind me"
-msgstr ""
-
-#: from-time
-msgid "From: "
-msgstr ""
-
-#: to-time
-msgid "To: "
-msgstr ""
+msgstr "Me le rappeler"
 
 #: alarm-at-event-standard
 msgid "At time of event"
-msgstr ""
+msgstr "Lors de l’évènement"
 
 #: alarm-at-event-allday
 msgid "On day of event"
-msgstr ""
+msgstr "Le jour de l’évènement"
 
 #. # alarms
 #: alarm-start-notice
-#, fuzzy
 msgid "{{title}} starting {{distance}}"
-msgstr "{{title}} débutera dans {{distance}}"
+msgstr "{{title}} débutera {{distance}}"
 
 #: alarm-started-notice
 msgid "{{title}} started {{distance}}"
-msgstr "{{title}} a débuté à {{distance}}"
+msgstr "{{title}} a débuté {{distance}}"
 
 #. # relative times (before/after)
 #: minutes-before
 msgctxt "minutes-before"
 msgid "{[ plural(value) ]}"
-msgstr ""
+msgstr "{[ plural(value) ]}"
 
 #: minutes-before[zero]
 msgid "0 minutes before"
-msgstr ""
+msgstr "0 minutes avant"
 
 #: minutes-before[one]
 msgid "1 minute before"
-msgstr ""
+msgstr "1 minute avant"
 
 #: minutes-before[two]
 msgctxt "minutes-before[two]"
 msgid "{{value}} minutes before"
-msgstr ""
+msgstr "{{value}} minutes avant"
 
 #: minutes-before[few]
 msgctxt "minutes-before[few]"
 msgid "{{value}} minutes before"
-msgstr ""
+msgstr "{{value}} minutes avant"
 
 #: minutes-before[many]
 msgctxt "minutes-before[many]"
 msgid "{{value}} minutes before"
-msgstr ""
+msgstr "{{value}} minutes avant"
 
 #: minutes-before[other]
 msgctxt "minutes-before[other]"
 msgid "{{value}} minutes before"
-msgstr ""
+msgstr "{{value}} minutes avant"
 
 #: hours-before
 msgctxt "hours-before"
 msgid "{[ plural(value) ]}"
-msgstr ""
+msgstr "{[ plural(value) ]}"
 
 #: hours-before[zero]
 msgid "0 hours before"
-msgstr ""
+msgstr "0 heures avant"
 
 #: hours-before[one]
 msgid "1 hour before"
-msgstr ""
+msgstr "1 heure avant"
 
 #: hours-before[two]
 msgctxt "hours-before[two]"
 msgid "{{value}} hours before"
-msgstr ""
+msgstr "{{value}} heures avant"
 
 #: hours-before[few]
 msgctxt "hours-before[few]"
 msgid "{{value}} hours before"
-msgstr ""
+msgstr "{{value}} heures avant"
 
 #: hours-before[many]
 msgctxt "hours-before[many]"
 msgid "{{value}} hours before"
-msgstr ""
+msgstr "{{value}} heures avant"
 
 #: hours-before[other]
 msgctxt "hours-before[other]"
 msgid "{{value}} hours before"
-msgstr ""
+msgstr "{{value}} heures avant"
 
 #: days-before
 msgctxt "days-before"
 msgid "{[ plural(value) ]}"
-msgstr ""
+msgstr "{[ plural(value) ]}"
 
 #: days-before[zero]
 msgid "0 days before"
-msgstr ""
+msgstr "0 jours avant"
 
 #: days-before[one]
 msgid "1 day before"
-msgstr ""
+msgstr "1 jour avant"
 
 #: days-before[two]
 msgctxt "days-before[two]"
 msgid "{{value}} days before"
-msgstr ""
+msgstr "{{value}} jours avant"
 
 #: days-before[few]
 msgctxt "days-before[few]"
 msgid "{{value}} days before"
-msgstr ""
+msgstr "{{value}} jours avant"
 
 #: days-before[many]
 msgctxt "days-before[many]"
 msgid "{{value}} days before"
-msgstr ""
+msgstr "{{value}} jours avant"
 
 #: days-before[other]
 msgctxt "days-before[other]"
 msgid "{{value}} days before"
-msgstr ""
+msgstr "{{value}} jours avant"
 
 #: weeks-before
 msgctxt "weeks-before"
 msgid "{[ plural(value) ]}"
-msgstr ""
+msgstr "{[ plural(value) ]}"
 
 #: weeks-before[zero]
 msgid "0 weeks before"
-msgstr ""
+msgstr "0 semaines avant"
 
 #: weeks-before[one]
 msgid "1 week before"
-msgstr ""
+msgstr "1 semaine avant"
 
 #: weeks-before[two]
 msgctxt "weeks-before[two]"
 msgid "{{value}} weeks before"
-msgstr ""
+msgstr "{{value}} semaines avant"
 
 #: weeks-before[few]
 msgctxt "weeks-before[few]"
 msgid "{{value}} weeks before"
-msgstr ""
+msgstr "{{value}} semaines avant"
 
 #: weeks-before[many]
 msgctxt "weeks-before[many]"
 msgid "{{value}} weeks before"
-msgstr ""
+msgstr "{{value}} semaines avant"
 
 #: weeks-before[other]
 msgctxt "weeks-before[other]"
 msgid "{{value}} weeks before"
-msgstr ""
+msgstr "{{value}} semaines avant"
 
 #: months-before
 msgctxt "months-before"
 msgid "{[ plural(value) ]}"
-msgstr ""
+msgstr "{[ plural(value) ]}"
 
 #: months-before[zero]
 msgid "0 months before"
-msgstr ""
+msgstr "0 mois avant"
 
 #: months-before[one]
 msgid "1 month before"
-msgstr ""
+msgstr "1 mois avant"
 
 #: months-before[two]
 msgctxt "months-before[two]"
 msgid "{{value}} months before"
-msgstr ""
+msgstr "{{value}} mois avant"
 
 #: months-before[few]
 msgctxt "months-before[few]"
 msgid "{{value}} months before"
-msgstr ""
+msgstr "{{value}} mois avant"
 
 #: months-before[many]
 msgctxt "months-before[many]"
 msgid "{{value}} months before"
-msgstr ""
+msgstr "{{value}} mois avant"
 
 #: months-before[other]
 msgctxt "months-before[other]"
 msgid "{{value}} months before"
-msgstr ""
+msgstr "{{value}} mois avant"
 
 #: years-before
 msgctxt "years-before"
 msgid "{[ plural(value) ]}"
-msgstr ""
+msgstr "{[ plural(value) ]}"
 
 #: years-before[zero]
 msgid "0 years before"
-msgstr ""
+msgstr "0 ans avant"
 
 #: years-before[one]
 msgid "1 year before"
-msgstr ""
+msgstr "1 an avant"
 
 #: years-before[two]
 msgctxt "years-before[two]"
 msgid "{{value}} years before"
-msgstr ""
+msgstr "{{value}} ans avant"
 
 #: years-before[few]
 msgctxt "years-before[few]"
 msgid "{{value}} years before"
-msgstr ""
+msgstr "{{value}} ans avant"
 
 #: years-before[many]
 msgctxt "years-before[many]"
 msgid "{{value}} years before"
-msgstr ""
+msgstr "{{value}} ans avant"
 
 #: years-before[other]
 msgctxt "years-before[other]"
 msgid "{{value}} years before"
-msgstr ""
+msgstr "{{value}} ans avant"
 
 #: minutes-after
 msgctxt "minutes-after"
 msgid "{[ plural(value) ]}"
-msgstr ""
+msgstr "{[ plural(value) ]}"
 
 #: minutes-after[zero]
 msgid "0 minutes after"
-msgstr ""
+msgstr "0 minutes après"
 
 #: minutes-after[one]
 msgid "1 minute after"
-msgstr ""
+msgstr "1 minute après"
 
 #: minutes-after[two]
 msgctxt "minutes-after[two]"
 msgid "{{value}} minutes after"
-msgstr ""
+msgstr "{{value}} minutes après"
 
 #: minutes-after[few]
 msgctxt "minutes-after[few]"
 msgid "{{value}} minutes after"
-msgstr ""
+msgstr "{{value}} minutes après"
 
 #: minutes-after[many]
 msgctxt "minutes-after[many]"
 msgid "{{value}} minutes after"
-msgstr ""
+msgstr "{{value}} minutes après"
 
 #: minutes-after[other]
 msgctxt "minutes-after[other]"
 msgid "{{value}} minutes after"
-msgstr ""
+msgstr "{{value}} minutes après"
 
 #: hours-after
 msgctxt "hours-after"
 msgid "{[ plural(value) ]}"
-msgstr ""
+msgstr "{[ plural(value) ]}"
 
 #: hours-after[zero]
 msgid "0 hours after"
-msgstr ""
+msgstr "0 heures après"
 
 #: hours-after[one]
 msgid "1 hour after"
-msgstr ""
+msgstr "1 heure après"
 
 #: hours-after[two]
 msgctxt "hours-after[two]"
 msgid "{{value}} hours after"
-msgstr ""
+msgstr "{{value}} heures après"
 
 #: hours-after[few]
 msgctxt "hours-after[few]"
 msgid "{{value}} hours after"
-msgstr ""
+msgstr "{{value}} heures après"
 
 #: hours-after[many]
 msgctxt "hours-after[many]"
 msgid "{{value}} hours after"
-msgstr ""
+msgstr "{{value}} heures après"
 
 #: hours-after[other]
 msgctxt "hours-after[other]"
 msgid "{{value}} hours after"
-msgstr ""
+msgstr "{{value}} heures après"
 
 #: days-after
 msgctxt "days-after"
 msgid "{[ plural(value) ]}"
-msgstr ""
+msgstr "{[ plural(value) ]}"
 
 #: days-after[zero]
 msgid "0 days after"
-msgstr ""
+msgstr "0 jours après"
 
 #: days-after[one]
 msgid "1 day after"
-msgstr ""
+msgstr "1 jour après"
 
 #: days-after[two]
 msgctxt "days-after[two]"
 msgid "{{value}} days after"
-msgstr ""
+msgstr "{{value}} jours après"
 
 #: days-after[few]
 msgctxt "days-after[few]"
 msgid "{{value}} days after"
-msgstr ""
+msgstr "{{value}} jours après"
 
 #: days-after[many]
 msgctxt "days-after[many]"
 msgid "{{value}} days after"
-msgstr ""
+msgstr "{{value}} jours après"
 
 #: days-after[other]
 msgctxt "days-after[other]"
 msgid "{{value}} days after"
-msgstr ""
+msgstr "{{value}} jours après"
 
 #: weeks-after
 msgctxt "weeks-after"
 msgid "{[ plural(value) ]}"
-msgstr ""
+msgstr "{[ plural(value) ]}"
 
 #: weeks-after[zero]
 msgid "0 weeks after"
-msgstr ""
+msgstr "0 semaines après"
 
 #: weeks-after[one]
 msgid "1 week after"
-msgstr ""
+msgstr "1 semaine après"
 
 #: weeks-after[two]
 msgctxt "weeks-after[two]"
 msgid "{{value}} weeks after"
-msgstr ""
+msgstr "{{value}} semaines après"
 
 #: weeks-after[few]
 msgctxt "weeks-after[few]"
 msgid "{{value}} weeks after"
-msgstr ""
+msgstr "{{value}} semaines après"
 
 #: weeks-after[many]
 msgctxt "weeks-after[many]"
 msgid "{{value}} weeks after"
-msgstr ""
+msgstr "{{value}} semaines après"
 
 #: weeks-after[other]
 msgctxt "weeks-after[other]"
 msgid "{{value}} weeks after"
-msgstr ""
+msgstr "{{value}} semaines après"
 
 #: months-after
 msgctxt "months-after"
 msgid "{[ plural(value) ]}"
-msgstr ""
+msgstr "{[ plural(value) ]}"
 
 #: months-after[zero]
 msgid "0 months after"
-msgstr ""
+msgstr "0 mois après"
 
 #: months-after[one]
 msgid "1 month after"
-msgstr ""
+msgstr "1 mois après"
 
 #: months-after[two]
 msgctxt "months-after[two]"
 msgid "{{value}} months after"
-msgstr ""
+msgstr "{{value}} mois après"
 
 #: months-after[few]
 msgctxt "months-after[few]"
 msgid "{{value}} months after"
-msgstr ""
+msgstr "{{value}} mois après"
 
 #: months-after[many]
 msgctxt "months-after[many]"
 msgid "{{value}} months after"
-msgstr ""
+msgstr "{{value}} mois après"
 
 #: months-after[other]
 msgctxt "months-after[other]"
 msgid "{{value}} months after"
-msgstr ""
+msgstr "{{value}} mois après"
 
 #: years-after
 msgctxt "years-after"
 msgid "{[ plural(value) ]}"
-msgstr ""
+msgstr "{[ plural(value) ]}"
 
 #: years-after[zero]
 msgid "0 years after"
-msgstr ""
+msgstr "0 ans après"
 
 #: years-after[one]
 msgid "1 year after"
-msgstr ""
+msgstr "1 an après"
 
 #: years-after[two]
 msgctxt "years-after[two]"
 msgid "{{value}} years after"
-msgstr ""
+msgstr "{{value}} ans après"
 
 #: years-after[few]
 msgctxt "years-after[few]"
 msgid "{{value}} years after"
-msgstr ""
+msgstr "{{value}} ans après"
 
 #: years-after[many]
 msgctxt "years-after[many]"
 msgid "{{value}} years after"
-msgstr ""
+msgstr "{{value}} ans après"
 
 #: years-after[other]
 msgctxt "years-after[other]"
 msgid "{{value}} years after"
-msgstr ""
+msgstr "{{value}} ans après"
 
 #. # Date formatting details (http://pubs.opengroup.org/onlinepubs/007908799/xsh/strftime.html)
-#: hour-format
+#: hour-format12
+msgctxt "hour-format12"
 msgid "%I %p"
+msgstr "%I %p"
+
+#: hour-format24
+msgctxt "hour-format24"
+msgid "%H"
+msgstr "%Hh"
+
+#: week-hour-format12
+msgctxt "week-hour-format12"
+msgid "%I %p"
+msgstr "%I %p"
+
+#: week-hour-format24
+msgctxt "week-hour-format24"
+msgid "%H"
 msgstr "%Hh"
 
 #: hour-allday
 msgid "All Day"
-msgstr ""
+msgstr "Toute la journée"
+
+#: week-day
+msgid "%a %e"
+msgstr "%a %e"
+
+#: current-time12
+msgid "%I:%M"
+msgstr "%I:%M"
+
+#: current-time24
+msgid "%H:%M"
+msgstr "%H:%M"
 
 #. # Default header used in month view / week view
-#: month-view-header-format
-msgid "%B %Y"
-msgstr ""
-
-#. # In week view when displaying multiple months (weeks that span months).
 #: multi-month-view-header-format
 msgid "%b %Y"
-msgstr ""
+msgstr "%b %Y"
 
 #. # Header format used for in the day view.
 #: day-view-header-format
 msgid "%b %e, %A"
-msgstr ""
+msgstr "%A %e %Eb"
+
+#. # Header used on month view before the event list (selected day date)
+#: months-day-view-header-format
+msgid "%A, %b %e"
+msgstr "%A %e %Eb"
+
+#. # Date format in the event detail view.
+#: longDateFormat
+msgid "%A, %B %d, %Y"
+msgstr "%e %Eb %Y"
 
 #. #errors
-#: error-start-after-end
-msgid "End date must come after start date"
-msgstr ""
+#: error-start-date-after-end-date
+msgid "The event cannot end before its start date"
+msgstr "L’évènement ne peut se terminer avant sa date de début"
+
+#: error-start-time-after-end-time
+msgid "The event cannot end before its start time"
+msgstr "L’évènement ne peut se terminer avant son heure de début"
 
 #: error-unauthenticated
 msgid "Wrong login and/or password"
-msgstr ""
-
-#: error-no-url
-msgid "No connection. Check your Wi-Fi and try again."
-msgstr ""
+msgstr "Mauvais nom d’utilisateur et/ou mot de passe"
 
 #: error-internal-server-error
 msgid "Server error. Check your login and try again."
-msgstr ""
+msgstr "Erreur du serveur. Vérifiez votre nom d’utilisateur et réessayez."
 
 #: error-default
 msgid "Something is wrong. Try again later."
-msgstr ""
+msgstr "Une erreur s’est produite. Veuillez réessayer plus tard."
 
 #: error-offline
 msgid "No connection. Check your network configuration and try again."
-msgstr ""
+msgstr "Aucune connexion. Vérifiez la configuration réseau et réessayez."
 
 #: error-account-exist
 msgid "This account already exists."
-msgstr ""
+msgstr "Ce compte existe déjà."
 
 #. # notification errors
 #: notification-error-sync-title
 msgid "Calendar sync error"
-msgstr ""
+msgstr "Erreur synchronisation agenda"
 
 #: notification-error-sync-description
 msgid "Tap for more info"
-msgstr ""
+msgstr "Appuyer pour plus d’informations"
 
-#~ msgctxt "advanced-settings-header"
-#~ msgid "Calendar settings"
-#~ msgstr "Paramètres de l’agenda"
+#. # Used in month view as column header, each single char represents a week day
+#. # (from 0-Sunday to 6-Saturday)
+#: weekday-0-single-char
+msgctxt "weekday-0-single-char"
+msgid "S"
+msgstr "D"
+
+#: weekday-1-single-char
+msgid "M"
+msgstr "L"
+
+#: weekday-2-single-char
+msgctxt "weekday-2-single-char"
+msgid "T"
+msgstr "M"
+
+#: weekday-3-single-char
+msgid "W"
+msgstr "M"
+
+#: weekday-4-single-char
+msgctxt "weekday-4-single-char"
+msgid "T"
+msgstr "J"
+
+#: weekday-5-single-char
+msgid "F"
+msgstr "V"
+
+#: weekday-6-single-char
+msgctxt "weekday-6-single-char"
+msgid "S"
+msgstr "S"
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: weekday-5-single-char.ariaLabel
+msgid "Friday"
+msgstr "Vendredi"
+
+#: weekday-4-single-char.ariaLabel
+msgid "Thursday"
+msgstr "Jeudi"
+
+#: weekday-3-single-char.ariaLabel
+msgid "Wednesday"
+msgstr "Mercredi"
+
+#: weekday-2-single-char.ariaLabel
+msgid "Tuesday"
+msgstr "Mardi"
+
+#: weekday-1-single-char.ariaLabel
+msgid "Monday"
+msgstr "Lundi"
+
+#: weekday-0-single-char.ariaLabel
+msgid "Sunday"
+msgstr "Dimanche"
+
+#: weekday-6-single-char.ariaLabel
+msgid "Saturday"
+msgstr "Samedi"
+
+#: busy
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: busy[one]
+msgid "{{n}} event"
+msgstr "{{n}} évènement"
+
+#: busy[two]
+msgctxt "busy[two]"
+msgid "{{n}} events"
+msgstr "{{n}} évènements"
+
+#: busy[few]
+msgctxt "busy[few]"
+msgid "{{n}} events"
+msgstr "{{n}} évènements"
+
+#: busy[many]
+msgctxt "busy[many]"
+msgid "{{n}} events"
+msgstr "{{n}} évènements"
+
+#: busy[other]
+msgctxt "busy[other]"
+msgid "{{n}} events"
+msgstr "{{n}} évènements"
+
+#: present.ariaLabel
+msgctxt "present.ariaLabel"
+msgid "Today"
+msgstr "Aujourd’hui"
+
+#: past-other-month-description.ariaLabel
+msgctxt "past-other-month-description.ariaLabel"
+msgid "Other month"
+msgstr "Autre mois"
+
+#: future-other-month-description.ariaLabel
+msgctxt "future-other-month-description.ariaLabel"
+msgid "Other month"
+msgstr "Autre mois"
+
+#: icon-calendar-alarm.ariaLabel
+msgid "Has alarm"
+msgstr "Possède une alarme"
+
+#: calendars.ariaLabel
+msgid "Calendars"
+msgstr "Agendas"
+
+#: multi-day-new-event-link.ariaLabel
+msgctxt "multi-day-new-event-link.ariaLabel"
+msgid "Add event"
+msgstr "Ajouter un évènement"
+
+#: title.ariaLabel
+msgctxt "title.ariaLabel"
+msgid "Title"
+msgstr "Titre"
+
+#: location.ariaLabel
+msgid "Location"
+msgstr "Lieu"
+
+#: duration.ariaLabel
+msgid "Duration"
+msgstr "Durée"
+
+#: calendar.ariaLabel
+msgid "Calendar"
+msgstr "Agenda"
+
+#: alarms.ariaLabel
+msgid "Alarms"
+msgstr "Alarmes"
+
+#: description.ariaLabel
+msgid "Description"
+msgstr "Description"
+
+#: start-date.ariaLabel
+msgctxt "start-date.ariaLabel"
+msgid "Start date"
+msgstr "Date de début"
+
+#: start-time.ariaLabel
+msgctxt "start-time.ariaLabel"
+msgid "Start time"
+msgstr "Horaire de début"
+
+#: end-date.ariaLabel
+msgctxt "end-date.ariaLabel"
+msgid "End date"
+msgstr "Date de fin"
+
+#: end-time.ariaLabel
+msgctxt "end-time.ariaLabel"
+msgid "End time"
+msgstr "Horaire de fin"
+
+#: during-progress-loading.ariaValueText
+msgid "Loading"
+msgstr "Chargement en cours"
+
+#: all-day.ariaLabel
+msgid "All day"
+msgstr "Toute la journée"
+
+#: create-event.ariaLabel
+msgid "Create event"
+msgstr "Créer un évènement"
+
+#: create-all-day-event.ariaLabel
+msgid "Create all day event"
+msgstr "Créer un évènement sur la journée entière"
+
+#: event-one-day-duration.ariaLabel
+msgid "from {{startTime}} to {{endTime}}"
+msgstr "de {{startTime}} à {{endTime}}"
+
+#: week-event-one-day-duration.ariaLabel
+msgid "{{startDate}} from {{startTime}} to {{endTime}}"
+msgstr "{{startDate}} de {{startTime}} à {{endTime}}"
+
+#: event-multiple-day-duration.ariaLabel
+msgid "From {{startTime}} {{startDate}} to {{endTime}} {{endDate}}"
+msgstr "De {{startTime}} {{startDate}}<br>à {{endTime}} {{endDate}}"
