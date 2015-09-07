@@ -1,384 +1,487 @@
-#. extracted from ./apps/homescreen/homescreen.properties
+#. extracted from en-US/apps/homescreen/homescreen.properties, bg/apps/homescreen/homescreen.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2014-11-14 21:04+0000\n"
 "PO-Revision-Date: 2015-03-12 12:21+0000\n"
-"Last-Translator: Стоян <stoyan@gmx.com>\n"
+"Last-Translator: Стоян Димитров <stoyan@gmx.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1426162901.000000\n"
 
-#: stop-download-body
-#, fuzzy
-msgid "Do you want to stop downloading {{name}}?"
-msgstr "Желаете ли да изтеглите {{name}}?"
+#. # Wrapper
+#: wrapper-search-name
+msgid "{{topic}} on {{name}}"
+msgstr "{{topic}} на {{name}}"
 
-#: stop-download-action
-msgid "Stop"
-msgstr ""
+#. # Dialog that appears when a user long taps on the homescreen
+#: contextmenu-add-wallpaper
+msgid "Change Wallpaper"
+msgstr "Смяна на тапет"
 
-#: resume-download-body
-msgid "Do you want to download {{name}}?"
-msgstr "Желаете ли да изтеглите {{name}}?"
+#: contextmenu-add-smart-collections
+msgid "Add Smart Collections"
+msgstr "Добавяне на умни колекции"
 
-#: resume-download-action
-#, fuzzy
-msgid "Download"
-msgstr "Изтегляне"
+#. # Prompt that appears when a user tries to delete an app.
+#: delete-title
+msgid "Delete {{name}}"
+msgstr "Изтриване на {{name}}"
 
-#: homescreen-settings
-msgid "Homescreen Settings"
-msgstr ""
+#: delete-body
+msgid "{{name}} and all of its data will be deleted."
+msgstr "{{name}} и данните му ще бъдат изтрити."
 
-#: cancel-action
-#, fuzzy
+#: delete
+msgid "Delete"
+msgstr "Изтриване"
+
+#: cancel
+msgctxt "cancel"
 msgid "Cancel"
 msgstr "Отказ"
 
-#: apps-panel
-msgid "Applications"
+#. # Prompt that appears when a user tries to remove a site saved to the homescreen.
+#: remove-title-2
+msgid "Remove {{name}}"
+msgstr "Премахване на {{name}}"
+
+#: remove-body
+msgid "Remove {{name}} from the homescreen?"
+msgstr "Премахване на {{name}} от началния екран?"
+
+#: remove
+msgid "Remove"
+msgstr "Премахване"
+
+#. # Landing
+#: longDateFormat
+msgid "%A, %B %e"
+msgstr "%e %B, %A"
+
+#. # App reinstall
+#: download
+msgctxt "download"
+msgid "Download"
+msgstr "Изтегляне"
+
+#: restart-download-title
+msgid "Restart Download"
+msgstr "Рестартиране на изтеглянето"
+
+#: restart-download-body
+msgid "Do you want to download {{name}}?"
+msgstr "Желаете ли да изтеглите {{name}}?"
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: paginationBarText
+msgid "Page {{current}} of {{total}}"
+msgstr "Страница {{current}} от {{total}}"
+
+#: paginationScroller.ariaLabel
+msgid "Homescreen"
+msgstr "Начален екран"
+
+#. # Evme
+#: loadingEvme2
+msgctxt "loadingEvme2"
+msgid "Loading…"
+msgstr "Зареждане…"
+
+#. #See bug 838634 for why those keys are still here
+#: evme-searchbar-default
+msgid "Everything…"
+msgstr "Всичко…"
+
+#: evme-searchbar-default2
+msgctxt "evme-searchbar-default2"
+msgid "I’m thinking of…"
+msgstr "Мисля за…"
+
+#: evme-searchbar-default2.placeholder
+msgctxt "evme-searchbar-default2.placeholder"
+msgid "I’m thinking of…"
+msgstr "Мисля за…"
+
+#: evme-searchbar-clear
+msgid "Back"
+msgstr "Връщане"
+
+#: evme-searchbar-default.placeholder
+msgctxt "evme-searchbar-default.placeholder"
+msgid "I’m thinking of…"
+msgstr "Мисля за…"
+
+#: evme-searchbar-title
+msgctxt "evme-searchbar-title"
+msgid "Everything"
+msgstr "Всичко"
+
+#. # Helper - in search page, under the search bar
+#. # See bug 838634 to see why the 2 keys cohabits.
+#: evme-helper-default
+msgid "Enter any topic or search query"
+msgstr "Въведете каквато и да е тема или заявка за търсене"
+
+#: evme-helper-default2
+msgid "Enter any topic or keyword"
+msgstr "Въведете каквато и да е тема или ключова дума"
+
+#: evme-helper-dismiss
+msgid "Dismiss"
+msgstr "Прекратяване"
+
+#: evme-helper-no-refine
+msgid "No options found"
+msgstr "Не са намерени настройки"
+
+#: evme-helper-history-title
+msgid "History:"
+msgstr "История:"
+
+#: evme-helper-history-link
+msgid "History"
+msgstr "История"
+
+#: evme-helper-history-clear
+msgid "Clear history"
+msgstr "Изчистване на история"
+
+#: evme-helper-didyoumean-title
+msgctxt "evme-helper-didyoumean-title"
+msgid "Did you mean:"
+msgstr "Може би имахте предвид:"
+
+#: evme-helper-refine-title
+msgctxt "evme-helper-refine-title"
+msgid "Did you mean:"
+msgstr "Може би имахте предвид:"
+
+#: evme-helper-title-prefix
+msgctxt "evme-helper-title-prefix"
+msgid "Everything"
+msgstr "Всичко"
+
+#: evme-helper-title-empty
+msgctxt "evme-helper-title-empty"
+msgid "Everything"
+msgstr "Всичко"
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: evme-helper-save-search
+msgid "Add to homescreen"
+msgstr "Добавяне към началния екран"
+
+#: evme-helper-unsave-search
+msgid "Remove from homescreen"
+msgstr "Премахване от началния екран"
+
+#: evme-apps-market-download
+msgctxt "evme-apps-market-download"
+msgid "Download"
+msgstr "Изтегляне"
+
+#: evme-apps-market-more-apps
+msgid "More Apps"
+msgstr "Още приложения"
+
+#: evme-apps-loading-app
+msgctxt "evme-apps-loading-app"
+msgid "Loading…"
+msgstr "Зареждане…"
+
+#: evme-appsmore-loading
+msgctxt "evme-appsmore-loading"
+msgid "Loading…"
+msgstr "Зареждане…"
+
+#: evme-alert-app-install-confirm
+msgid "Add {{name}} to Home Screen?"
+msgstr "Добавяне на {{name}} към началния екран?"
+
+#: evme-alert-app-install-exists
+msgid "{{name}} was already added to Home Screen"
+msgstr "{{name}} е вече на началния екран"
+
+#: evme-alert-offline-smart-collections-more
+msgid "Connect to the internet to add more Smart Collections"
+msgstr "Свържете се с Интернет, за да добавите още Умни колекции"
+
+#: evme-alert-save-wallpaper
+msgid "Set as wallpaper?"
+msgstr "Поставяне като фон?"
+
+#: evme-alert-no-more-smart-collections
+msgid "No Smart Collections to add"
+msgstr "Липсват умни колекции за добавяне"
+
+#: evme-banner-app-install-success
+msgid "{{name}} added to Home Screen"
+msgstr "{{name}} е добавено към началния екран"
+
+#: evme-banner-save-wallpaper
+msgid "Wallpaper set successfully"
+msgstr "Фонът е поставен успешно"
+
+#. # Shortcuts - AKA smart collections - evme homepage
+#: evme-shortcuts-more
+msgid "More"
+msgstr "Повече"
+
+#: evme-collectionssuggest-loading
+msgctxt "evme-collectionssuggest-loading"
+msgid "Loading…"
+msgstr "Зареждане…"
+
+#: evme-collectionssuggest-loading-cancel
+msgctxt "evme-collectionssuggest-loading-cancel"
+msgid "Cancel"
+msgstr "Отказ"
+
+#: evme-collectionssuggest-prompt-create-custom
+msgid "Create your own Smart Collection"
+msgstr "Създайте своя умна колекция"
+
+#: evme-backgroundimage-source-label
+msgid "Source:"
+msgstr "Източник:"
+
+#: evme-collection-title-prefix
+msgctxt "evme-collection-title-prefix"
+msgid "Everything"
+msgstr "Всичко"
+
+#: evme-collection-title-suffix
+msgid "Phone"
+msgstr "Телефон"
+
+#: evme-collection-loading-more
+msgctxt "evme-collection-loading-more"
+msgid "Loading…"
+msgstr "Зареждане…"
+
+#. # {{query}} will always be the user's current query from the searchbox
+#: evme-connectionmessage-apps
+msgid "Connect to the internet to get apps for {{query}}"
+msgstr "Свържете се с Интернет, за да изтеглите приложения за {{query}}"
+
+#: evme-connectionmessage-apps-has-installed
+msgid "Connect to the internet to get even more apps for {{query}}"
 msgstr ""
+"Свържете се с Интернет, за да изтеглите още повече приложения за {{query}}"
 
-#: pages-panel
-msgid "Pinned Pages"
+#. # tips are shown throughout the app on certain actions
+#: evme-tips-app-explain.innerHTML
+msgid "Find the things you love with the coolest apps."
+msgstr "Намерете любимите си неща, с най-готините приложения."
+
+#: evme-tips-searchbar-focus.innerHTML
+msgid "For example, find your favorite singer or band…"
+msgstr "Например – намерете любимия си изпълнител или група…"
+
+#: evme-tips-exact-results.innerHTML
+msgid ""
+"These are the apps for <b>{{query}}</b>,<br /><br /> tap any icon to open it."
 msgstr ""
-
-#~ msgid "{{topic}} on {{name}}"
-#~ msgstr "{{topic}} на {{name}}"
-
-#~ msgid "Change Wallpaper"
-#~ msgstr "Смяна на тапет"
-
-#~ msgid "Add Smart Collections"
-#~ msgstr "Добавяне на умни колекции"
-
-#~ msgid "Delete {{name}}"
-#~ msgstr "Изтриване на {{name}}"
-
-#~ msgid "{{name}} and all of its data will be deleted."
-#~ msgstr "{{name}} и данните му ще бъдат изтрити."
-
-#~ msgid "Delete"
-#~ msgstr "Изтриване"
-
-#~ msgid "Remove {{name}}"
-#~ msgstr "Премахване на {{name}}"
-
-#~ msgid "Remove {{name}} from the homescreen?"
-#~ msgstr "Премахване на {{name}} от началния екран?"
-
-#~ msgid "Remove"
-#~ msgstr "Премахване"
-
-#~ msgid "%A, %B %e"
-#~ msgstr "%e %B, %A"
-
-#~ msgid "Restart Download"
-#~ msgstr "Рестартиране на изтеглянето"
-
-#~ msgid "Page {{current}} of {{total}}"
-#~ msgstr "Страница {{current}} от {{total}}"
-
-#~ msgid "Homescreen"
-#~ msgstr "Начален екран"
-
-#~ msgctxt "loadingEvme2"
-#~ msgid "Loading…"
-#~ msgstr "Зареждане…"
-
-#~ msgid "Everything…"
-#~ msgstr "Всичко…"
-
-#~ msgctxt "evme-searchbar-default2"
-#~ msgid "I’m thinking of…"
-#~ msgstr "Мисля за…"
-
-#~ msgctxt "evme-searchbar-default2.placeholder"
-#~ msgid "I’m thinking of…"
-#~ msgstr "Мисля за…"
-
-#~ msgid "Back"
-#~ msgstr "Връщане"
-
-#~ msgctxt "evme-searchbar-default.placeholder"
-#~ msgid "I’m thinking of…"
-#~ msgstr "Мисля за…"
-
-#~ msgctxt "evme-searchbar-title"
-#~ msgid "Everything"
-#~ msgstr "Всичко"
-
-#~ msgid "Enter any topic or search query"
-#~ msgstr "Въведете каквато и да е тема или заявка за търсене"
-
-#~ msgid "Enter any topic or keyword"
-#~ msgstr "Въведете каквато и да е тема или ключова дума"
-
-#~ msgid "Dismiss"
-#~ msgstr "Прекратяване"
-
-#~ msgid "No options found"
-#~ msgstr "Не са намерени настройки"
-
-#~ msgid "History:"
-#~ msgstr "История:"
-
-#~ msgid "History"
-#~ msgstr "История"
-
-#~ msgid "Clear history"
-#~ msgstr "Изчистване на история"
-
-#~ msgctxt "evme-helper-didyoumean-title"
-#~ msgid "Did you mean:"
-#~ msgstr "Може би имахте предвид:"
-
-#~ msgctxt "evme-helper-refine-title"
-#~ msgid "Did you mean:"
-#~ msgstr "Може би имахте предвид:"
-
-#~ msgctxt "evme-helper-title-prefix"
-#~ msgid "Everything"
-#~ msgstr "Всичко"
-
-#~ msgctxt "evme-helper-title-empty"
-#~ msgid "Everything"
-#~ msgstr "Всичко"
-
-#~ msgid "Add to homescreen"
-#~ msgstr "Добавяне към началния екран"
-
-#~ msgid "Remove from homescreen"
-#~ msgstr "Премахване от началния екран"
-
-#~ msgctxt "evme-apps-market-download"
-#~ msgid "Download"
-#~ msgstr "Изтегляне"
-
-#~ msgid "More Apps"
-#~ msgstr "Още приложения"
-
-#~ msgctxt "evme-apps-loading-app"
-#~ msgid "Loading…"
-#~ msgstr "Зареждане…"
-
-#~ msgctxt "evme-appsmore-loading"
-#~ msgid "Loading…"
-#~ msgstr "Зареждане…"
-
-#~ msgid "Add {{name}} to Home Screen?"
-#~ msgstr "Добавяне на {{name}} към началния екран?"
-
-#~ msgid "{{name}} was already added to Home Screen"
-#~ msgstr "{{name}} е вече на началния екран"
-
-#~ msgid "Connect to the internet to add more Smart Collections"
-#~ msgstr "Свържете се с Интернет, за да добавите още Умни колекции"
-
-#~ msgid "Set as wallpaper?"
-#~ msgstr "Поставяне като фон?"
-
-#~ msgid "No Smart Collections to add"
-#~ msgstr "Липсват умни колекции за добавяне"
-
-#~ msgid "{{name}} added to Home Screen"
-#~ msgstr "{{name}} е добавено към началния екран"
-
-#~ msgid "Wallpaper set successfully"
-#~ msgstr "Фонът е поставен успешно"
-
-#~ msgid "More"
-#~ msgstr "Повече"
-
-#~ msgctxt "evme-collectionssuggest-loading"
-#~ msgid "Loading…"
-#~ msgstr "Зареждане…"
-
-#~ msgctxt "evme-collectionssuggest-loading-cancel"
-#~ msgid "Cancel"
-#~ msgstr "Отказ"
-
-#~ msgid "Create your own Smart Collection"
-#~ msgstr "Създайте своя умна колекция"
-
-#~ msgid "Source:"
-#~ msgstr "Източник:"
-
-#~ msgctxt "evme-collection-title-prefix"
-#~ msgid "Everything"
-#~ msgstr "Всичко"
-
-#~ msgid "Phone"
-#~ msgstr "Телефон"
-
-#~ msgctxt "evme-collection-loading-more"
-#~ msgid "Loading…"
-#~ msgstr "Зареждане…"
-
-#~ msgid "Connect to the internet to get apps for {{query}}"
-#~ msgstr "Свържете се с Интернет, за да изтеглите приложения за {{query}}"
-
-#~ msgid "Connect to the internet to get even more apps for {{query}}"
-#~ msgstr ""
-#~ "Свържете се с Интернет, за да изтеглите още повече приложения за {{query}}"
-
-#~ msgid "Find the things you love with the coolest apps."
-#~ msgstr "Намерете любимите си неща, с най-готините приложения."
-
-#~ msgid "For example, find your favorite singer or band…"
-#~ msgstr "Например – намерете любимия си изпълнител или група…"
-
-#~ msgid ""
-#~ "These are the apps for <b>{{query}}</b>,<br /><br /> tap any icon to open "
-#~ "it."
-#~ msgstr ""
-#~ "Това са приложенията за <b>{{query}}</b>,<br /><br /> докоснете "
-#~ "пиктограма, за да я отворите."
-
-#~ msgid "Custom…"
-#~ msgstr "Персонализирана…"
-
-#~ msgid "Astrology"
-#~ msgstr "Астрология"
-
-#~ msgid "Autos"
-#~ msgstr "Автомобили"
-
-#~ msgid "Beauty"
-#~ msgstr "Красота"
-
-#~ msgid "Books"
-#~ msgstr "Книги"
-
-#~ msgid "Celebs"
-#~ msgstr "Знаменитости"
-
-#~ msgid "Daily Deals"
-#~ msgstr "Дневни оферти"
-
-#~ msgid "Dating"
-#~ msgstr "Запознанства"
-
-#~ msgid "Electronics"
-#~ msgstr "Електроника"
-
-#~ msgid "Email"
-#~ msgstr "Ел. поща"
-
-#~ msgid "Entertainment"
-#~ msgstr "Забавление"
-
-#~ msgid "Environment"
-#~ msgstr "Околна среда"
-
-#~ msgid "Fashion"
-#~ msgstr "Мода"
-
-#~ msgid "Funny"
-#~ msgstr "Забавно"
-
-#~ msgid "Games"
-#~ msgstr "Игри"
-
-#~ msgid "Government"
-#~ msgstr "Правителство"
-
-#~ msgid "Health"
-#~ msgstr "Здраве"
-
-#~ msgid "Jobs"
-#~ msgstr "Работа"
-
-#~ msgid "Local"
-#~ msgstr "Местни"
-
-#~ msgid "Maps"
-#~ msgstr "Карти"
-
-#~ msgid "Movies"
-#~ msgstr "Филми"
-
-#~ msgid "Music"
-#~ msgstr "Музика"
-
-#~ msgid "New Apps"
-#~ msgstr "Нови приложения"
-
-#~ msgid "News"
-#~ msgstr "Новини"
-
-#~ msgid "Photography"
-#~ msgstr "Фотография"
-
-#~ msgid "Recipes"
-#~ msgstr "Рецепти"
-
-#~ msgid "Restaurants"
-#~ msgstr "Ресторанти"
-
-#~ msgid "Shopping"
-#~ msgstr "Пазаруване"
-
-#~ msgid "Social"
-#~ msgstr "Социално"
-
-#~ msgid "Sports"
-#~ msgstr "Спортове"
-
-#~ msgid "Tech News"
-#~ msgstr "Технически новини"
-
-#~ msgid "Top Apps"
-#~ msgstr "Най-добри приложения"
-
-#~ msgid "Travel"
-#~ msgstr "Пътуване"
-
-#~ msgid "TV"
-#~ msgstr "Телевизия"
-
-#~ msgid "Video"
-#~ msgstr "Видео"
-
-#~ msgid "Utilities"
-#~ msgstr "Инструменти"
-
-#~ msgid "Weather"
-#~ msgstr "Времето"
-
-#~ msgid "Add to top of collection"
-#~ msgstr "Добавяне в началото на колекцията"
-
-#~ msgid "Save to Homescreen"
-#~ msgstr "Поставяне в началния екран"
-
-#~ msgid "Edit"
-#~ msgstr "Редактиране"
-
-#~ msgid "Website name"
-#~ msgstr "Име на страница"
-
-#~ msgid "Address"
-#~ msgstr "Адрес"
-
-#~ msgctxt "edit-dialog-cancel"
-#~ msgid "Cancel"
-#~ msgstr "Отказ"
-
-#~ msgid "Done"
-#~ msgstr "Готово"
-
-#~ msgid "Close"
-#~ msgstr "Затваряне"
-
-#~ msgid "Save"
-#~ msgstr "Запис"
+"Това са приложенията за <b>{{query}}</b>,<br /><br /> докоснете пиктограма, "
+"за да я отворите."
+
+#. # collection translations
+#: evme-shortcut-custom
+msgid "Custom…"
+msgstr "Персонализирана…"
+
+#: evme-shortcut-id-astrology
+msgid "Astrology"
+msgstr "Астрология"
+
+#: evme-shortcut-id-autos
+msgid "Autos"
+msgstr "Автомобили"
+
+#: evme-shortcut-id-beauty
+msgid "Beauty"
+msgstr "Красота"
+
+#: evme-shortcut-id-books
+msgid "Books"
+msgstr "Книги"
+
+#: evme-shortcut-id-celebs
+msgid "Celebs"
+msgstr "Знаменитости"
+
+#: evme-shortcut-id-daily-deals
+msgid "Daily Deals"
+msgstr "Дневни оферти"
+
+#: evme-shortcut-id-dating
+msgid "Dating"
+msgstr "Запознанства"
+
+#: evme-shortcut-id-electronics
+msgid "Electronics"
+msgstr "Електроника"
+
+#: evme-shortcut-id-email
+msgid "Email"
+msgstr "Ел. поща"
+
+#: evme-shortcut-id-entertainment
+msgid "Entertainment"
+msgstr "Забавление"
+
+#: evme-shortcut-id-environment
+msgid "Environment"
+msgstr "Околна среда"
+
+#: evme-shortcut-id-fashion
+msgid "Fashion"
+msgstr "Мода"
+
+#: evme-shortcut-id-funny
+msgid "Funny"
+msgstr "Забавно"
+
+#: evme-shortcut-id-games
+msgid "Games"
+msgstr "Игри"
+
+#: evme-shortcut-id-government
+msgid "Government"
+msgstr "Правителство"
+
+#: evme-shortcut-id-health
+msgid "Health"
+msgstr "Здраве"
+
+#: evme-shortcut-id-jobs
+msgid "Jobs"
+msgstr "Работа"
+
+#: evme-shortcut-id-local
+msgid "Local"
+msgstr "Местни"
+
+#: evme-shortcut-id-maps
+msgid "Maps"
+msgstr "Карти"
+
+#: evme-shortcut-id-movies
+msgid "Movies"
+msgstr "Филми"
+
+#: evme-shortcut-id-music
+msgid "Music"
+msgstr "Музика"
+
+#: evme-shortcut-id-new-apps
+msgid "New Apps"
+msgstr "Нови приложения"
+
+#: evme-shortcut-id-news
+msgid "News"
+msgstr "Новини"
+
+#: evme-shortcut-id-photography
+msgid "Photography"
+msgstr "Фотография"
+
+#: evme-shortcut-id-recipes
+msgid "Recipes"
+msgstr "Рецепти"
+
+#: evme-shortcut-id-restaurants
+msgid "Restaurants"
+msgstr "Ресторанти"
+
+#: evme-shortcut-id-shopping
+msgid "Shopping"
+msgstr "Пазаруване"
+
+#: evme-shortcut-id-social
+msgid "Social"
+msgstr "Социално"
+
+#: evme-shortcut-id-sports
+msgid "Sports"
+msgstr "Спортове"
+
+#: evme-shortcut-id-tech-news
+msgid "Tech News"
+msgstr "Технически новини"
+
+#: evme-shortcut-id-top-apps
+msgid "Top Apps"
+msgstr "Най-добри приложения"
+
+#: evme-shortcut-id-travel
+msgid "Travel"
+msgstr "Пътуване"
+
+#: evme-shortcut-id-tv
+msgid "TV"
+msgstr "Телевизия"
+
+#: evme-shortcut-id-video
+msgid "Video"
+msgstr "Видео"
+
+#: evme-shortcut-id-utilities
+msgid "Utilities"
+msgstr "Инструменти"
+
+#: evme-shortcut-id-weather
+msgid "Weather"
+msgstr "Времето"
+
+#. #search contextmenu
+#: evme-add-to-top-of-collection
+msgid "Add to top of collection"
+msgstr "Добавяне в началото на колекцията"
+
+#: evme-save-to-homescreen
+msgid "Save to Homescreen"
+msgstr "Поставяне в началния екран"
+
+#. # edit dialog
+#: edit-dialog-header
+msgid "Edit"
+msgstr "Редактиране"
+
+#: edit-dialog-name
+msgid "Website name"
+msgstr "Име на страница"
+
+#: edit-dialog-url
+msgid "Address"
+msgstr "Адрес"
+
+#: edit-dialog-cancel
+msgctxt "edit-dialog-cancel"
+msgid "Cancel"
+msgstr "Отказ"
+
+#: edit-dialog-done
+msgid "Done"
+msgstr "Готово"
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: evme-close.ariaLabel
+msgid "Close"
+msgstr "Затваряне"
+
+#: evme-done.ariaLabel
+msgid "Save"
+msgstr "Запис"

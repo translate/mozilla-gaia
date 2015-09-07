@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-03-19 18:45+0000\n"
 "PO-Revision-Date: 2015-04-30 08:23+0000\n"
 "Last-Translator: Mohomodou  Houssouba <mh@bollag-areal.ch>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1430382187.000000\n"
@@ -768,6 +768,10 @@ msgstr "Borey zaa ka dam"
 msgid "SIM card"
 msgstr "SIM katta"
 
+#: importFb2
+msgid "Facebook"
+msgstr "Facebook"
+
 #: importOutlook
 msgid "Outlook"
 msgstr "Outlook"
@@ -775,6 +779,10 @@ msgstr "Outlook"
 #: importGmail
 msgid "Gmail"
 msgstr "Gmail"
+
+#: fb-checking
+msgid "… checking"
+msgstr "… goo ma guna"
 
 #: notImportedYet
 msgid "Not imported yet"
@@ -784,6 +792,42 @@ msgstr "Mana cendandi jina"
 msgid "Other accounts"
 msgstr "Kontu taney"
 
+#: afterFbImport
+msgid "You can import and edit Facebook friends anytime in Contacts settings"
+msgstr "War ga hin ka Facebook cerey dam wala fasal Borey kayandiyaney ra"
+
+#: facebook-import-msg
+msgid "{[ plural(imported) ]}"
+msgstr "{[ plural(imported) ]}"
+
+#: facebook-import-msg[zero]
+msgid "No friends imported (out of {{total}})"
+msgstr "Cere kul mana zaandi (ka hun {{total}} ra)"
+
+#: facebook-import-msg[one]
+msgid "One friend imported (out of {{total}})"
+msgstr "Cere foo ka zaandi (ka hun {{total}} ra)"
+
+#: facebook-import-msg[two]
+msgctxt "facebook-import-msg[two]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr "cere zaante {{imported}}/{{total}}"
+
+#: facebook-import-msg[few]
+msgctxt "facebook-import-msg[few]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr "cere zaante {{imported}}/{{total}}"
+
+#: facebook-import-msg[many]
+msgctxt "facebook-import-msg[many]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr "cere zaante {{imported}}/{{total}}"
+
+#: facebook-import-msg[other]
+msgctxt "facebook-import-msg[other]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr "cere zaante {{imported}}/{{total}}"
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Fxa Intro
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -791,7 +835,7 @@ msgstr "Kontu taney"
 msgid "Firefox Accounts"
 msgstr "Firefox kontey"
 
-#: fxa-upsell
+#: fxa-upsell.innerHTML
 msgid ""
 "A Firefox Account lets you find a lost phone and buy apps from the Firefox "
 "Marketplace."
@@ -889,45 +933,69 @@ msgstr ""
 "nda porogaram goy war {{brandShortName}} jinaa ga. Ir ga goy nda woo ka "
 "jinawey boryandi, k'i cahãndi nda maatandi ka tonton."
 
-#: learn-more-telemetry2
-msgid "Learn more at <a>{{url}}</a>"
+#: learn-more-telemetry2.innerHTML
+msgid ""
+"Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
+"a>"
 msgstr ""
+"Bay ka tonton ne <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}"
+"</a>"
 
-#: learn-more-information2
-#, fuzzy
-msgid "Learn how Mozilla handles your information at <a>{{url}}</a>"
-msgstr "Bay taka kaŋ nda Mozilla ga war alhabaaroo gaabu {{link}} ga"
+#: learn-more-information2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>"
+msgstr ""
+"Caw ka bay takaa kaŋ nda Mozilla ga war alhabarey dii ne <a href="
+"\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # OS privacy
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: htmlWelcome2
-#, fuzzy
+#: htmlWelcome2.innerHTML
 msgid ""
-"Welcome to <a>{{brandShortName}}</a>, the free and open source operating "
-"system from Mozilla. Our mission is to promote openness, innovation and "
-"opportunity by keeping the power of the Web in your hands."
+"Welcome to <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>, "
+"the free and open source operating system from Mozilla. Our mission is to "
+"promote openness, innovation and opportunity by keeping the power of the Web "
+"in your hands."
 msgstr ""
 "Kubayni <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a> ra, "
 "forba nda ašsil-feerante goy dabariɲaa Mozilla se. Ir allaahidoo ti "
 "interneti ma cindi feerante, taagante nd'a a tee gomni kaŋ nda interneti "
 "sahã ma cindi war kanbey ra."
 
-#: helpImprove2
-#, fuzzy
+#: htmlWelcome-link
+msgctxt "htmlWelcome-link"
+msgid "{{brandShortName}}"
+msgstr "{{brandShortName}}"
+
+#: helpImprove2.innerHTML
 msgid ""
 "You can help us improve our products and services by automatically sending "
-"analytics data. See our <a>Privacy Notice</a> to learn how we handle data "
-"from your device."
+"analytics data. See our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> to learn how we handle data from your "
+"device."
 msgstr ""
-"War ga hin k'ir gaa ka jinawey nda goyey boryandi ka tonton nda koroši "
-"bayhayey ga sanbandi ngi boŋ se. Ir {{link}} guna ka bay taka kaŋ nd'ir ga "
-"bayhayey dii war jinaa ga."
+"War ga hin k'ir faaba k'ir goyjinawey nda goymiɲey boryandi ka tonton nda "
+"laasaabay alhabar sanbandi ngi boŋ se. Guna <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> ka bay taka kaŋ nd'ir ga war alhabarey "
+"kaŋ goo war jinaa ga dii."
 
-#: learn-more-privacy2
+#: helpImprove-link
+msgid "Privacy Notice"
+msgstr "Sutura bayrandiyan"
+
+#: learn-more-privacy2.innerHTML
 msgid ""
-"Learn how Mozilla handles your information in our <a>privacy policy</a>."
+"Learn how Mozilla handles your information in our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>."
 msgstr ""
+"Bay taka kaŋ nda Mozilla ka war alhabarey dii ir <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> ra."
+
+#: learn-more-privacy-link
+msgid "privacy policy"
+msgstr "sutura laadaa ra"
 
 #: aboutBrowser
 msgid "About {{brandShortName}}"
@@ -1195,79 +1263,6 @@ msgstr "Ceebandu {{step}} ka hun {{total}} ra"
 msgid "First Time Experience"
 msgstr "Cee jina šiiyan"
 
-#~ msgid "Facebook"
-#~ msgstr "Facebook"
-
-#~ msgid "… checking"
-#~ msgstr "… goo ma guna"
-
-#~ msgid ""
-#~ "You can import and edit Facebook friends anytime in Contacts settings"
-#~ msgstr "War ga hin ka Facebook cerey dam wala fasal Borey kayandiyaney ra"
-
-#~ msgid "{[ plural(imported) ]}"
-#~ msgstr "{[ plural(imported) ]}"
-
-#~ msgid "No friends imported (out of {{total}})"
-#~ msgstr "Cere kul mana zaandi (ka hun {{total}} ra)"
-
-#~ msgid "One friend imported (out of {{total}})"
-#~ msgstr "Cere foo ka zaandi (ka hun {{total}} ra)"
-
-#~ msgctxt "facebook-import-msg[two]"
-#~ msgid "{{imported}}/{{total}} friends imported"
-#~ msgstr "cere zaante {{imported}}/{{total}}"
-
-#~ msgctxt "facebook-import-msg[few]"
-#~ msgid "{{imported}}/{{total}} friends imported"
-#~ msgstr "cere zaante {{imported}}/{{total}}"
-
-#~ msgctxt "facebook-import-msg[many]"
-#~ msgid "{{imported}}/{{total}} friends imported"
-#~ msgstr "cere zaante {{imported}}/{{total}}"
-
-#~ msgctxt "facebook-import-msg[other]"
-#~ msgid "{{imported}}/{{total}} friends imported"
-#~ msgstr "cere zaante {{imported}}/{{total}}"
-
-#~ msgid ""
-#~ "Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}"
-#~ "</a>"
-#~ msgstr ""
-#~ "Bay ka tonton ne <a href=\"{{href}}\" class="
-#~ "\"{{className}}\">{{textContent}}</a>"
-
-#~ msgid ""
-#~ "Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
-#~ "\"{{className}}\">{{textContent}}</a>"
-#~ msgstr ""
-#~ "Caw ka bay takaa kaŋ nda Mozilla ga war alhabarey dii ne <a href="
-#~ "\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>"
-
-#~ msgid ""
-#~ "You can help us improve our products and services by automatically "
-#~ "sending analytics data. See our <a href=\"{{href}}\" class="
-#~ "\"{{className}}\">{{textContent}}</a> to learn how we handle data from "
-#~ "your device."
-#~ msgstr ""
-#~ "War ga hin k'ir faaba k'ir goyjinawey nda goymiɲey boryandi ka tonton nda "
-#~ "laasaabay alhabar sanbandi ngi boŋ se. Guna <a href=\"{{href}}\" class="
-#~ "\"{{className}}\">{{textContent}}</a> ka bay taka kaŋ nd'ir ga war "
-#~ "alhabarey kaŋ goo war jinaa ga dii."
-
-#~ msgid "Privacy Notice"
-#~ msgstr "Sutura bayrandiyan"
-
-#~ msgid ""
-#~ "Learn how Mozilla handles your information in our <a href=\"{{href}}\" "
-#~ "class=\"{{className}}\">{{textContent}}</a>."
-#~ msgstr ""
-#~ "Bay taka kaŋ nda Mozilla ka war alhabarey dii ir <a href=\"{{href}}\" "
-#~ "class=\"{{className}}\">{{textContent}}</a> ra."
-
-#~ msgid "privacy policy"
-#~ msgstr "sutura laadaa ra"
-
 #~ msgid "Swipe from right to left to browse your apps."
 #~ msgstr "Mooru kanbe guma ka koy iwowa here ka porogaram-izey guna."
 
@@ -1303,6 +1298,18 @@ msgstr "Cee jina šiiyan"
 
 #~ msgid "Learn more at {{link}}"
 #~ msgstr "Bay ka tonton {{link}} ga"
+
+#~ msgid "Learn how Mozilla handles your information at {{link}}"
+#~ msgstr "Bay taka kaŋ nda Mozilla ga war alhabaaroo gaabu {{link}} ga"
+
+#~ msgid ""
+#~ "You can help us improve our products and services by automatically "
+#~ "sending analytics data. See our {{link}} to learn how we handle data from "
+#~ "your device."
+#~ msgstr ""
+#~ "War ga hin k'ir gaa ka jinawey nda goyey boryandi ka tonton nda koroši "
+#~ "bayhayey ga sanbandi ngi boŋ se. Ir {{link}} guna ka bay taka kaŋ nd'ir "
+#~ "ga bayhayey dii war jinaa ga."
 
 #~ msgid "Learn how Mozilla handles your information in our {{link}}."
 #~ msgstr "Bay taka kaŋ nda Mozilla ga war alhabaaroo gaabu war {{link}} ga."

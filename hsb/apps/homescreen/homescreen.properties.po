@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-09-14 18:53+0000\n"
 "Last-Translator: milupo <milupo@sorbzilla.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,374 +13,475 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1410720800.000000\n"
 
-#: stop-download-body
-#, fuzzy
-msgid "Do you want to stop downloading {{name}}?"
-msgstr "Chceće {{name}} sćahnyć?"
+#. # Wrapper
+#: wrapper-search-name
+msgid "{{topic}} on {{name}}"
+msgstr "{{topic}} na {{name}}"
 
-#: stop-download-action
-msgid "Stop"
-msgstr ""
+#. # Dialog that appears when a user long taps on the homescreen
+#: contextmenu-add-wallpaper
+msgid "Change Wallpaper"
+msgstr "Pozadk změnić"
 
-#: resume-download-body
-msgid "Do you want to download {{name}}?"
-msgstr "Chceće {{name}} sćahnyć?"
+#: contextmenu-add-smart-collections
+msgid "Add Smart Collections"
+msgstr "Inteligentne zběrki přidać"
 
-#: resume-download-action
-#, fuzzy
-msgid "Download"
-msgstr "Sćahnyć"
+#. # Prompt that appears when a user tries to delete an app.
+#: delete-title
+msgid "Delete {{name}}"
+msgstr "{{name}} zhašeć"
 
-#: homescreen-settings
-msgid "Homescreen Settings"
-msgstr ""
+#: delete-body
+msgid "{{name}} and all of its data will be deleted."
+msgstr "{{name}} a wšě jeho daty so zhašeja."
 
-#: cancel-action
-#, fuzzy
+#: delete
+msgid "Delete"
+msgstr "Zhašeć"
+
+#: cancel
+msgctxt "cancel"
 msgid "Cancel"
 msgstr "Přetorhnyć"
 
-#: apps-panel
-msgid "Applications"
+#. # Prompt that appears when a user tries to remove a site saved to the homescreen.
+#: remove-title-2
+msgid "Remove {{name}}"
+msgstr "{{name}} wotstronić"
+
+#: remove-body
+msgid "Remove {{name}} from the homescreen?"
+msgstr "{{name}} ze startoweje wobrazowki wotstronić?"
+
+#: remove
+msgid "Remove"
+msgstr "Wotstronić"
+
+#. # Landing
+#: longDateFormat
+msgid "%A, %B %e"
+msgstr "%A, %e. %B"
+
+#. # App reinstall
+#: download
+msgctxt "download"
+msgid "Download"
+msgstr "Sćahnyć"
+
+#: restart-download-title
+msgid "Restart Download"
+msgstr "Sćehnjenje znowa startować"
+
+#: restart-download-body
+msgid "Do you want to download {{name}}?"
+msgstr "Chceće {{name}} sćahnyć?"
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: paginationBarText
+msgid "Page {{current}} of {{total}}"
+msgstr "Strona {{current}} z {{total}}"
+
+#: paginationScroller.ariaLabel
+msgid "Homescreen"
+msgstr "Startowa wobrazowka"
+
+#. # Evme
+#: loadingEvme2
+msgctxt "loadingEvme2"
+msgid "Loading…"
+msgstr "Začituje so…"
+
+#. #See bug 838634 for why those keys are still here
+#: evme-searchbar-default
+msgid "Everything…"
+msgstr "Wšitko…"
+
+#: evme-searchbar-default2
+msgctxt "evme-searchbar-default2"
+msgid "I’m thinking of…"
+msgstr "Pytam za…"
+
+#: evme-searchbar-default2.placeholder
+msgctxt "evme-searchbar-default2.placeholder"
+msgid "I’m thinking of…"
+msgstr "Pytam za…"
+
+#: evme-searchbar-clear
+msgid "Back"
+msgstr "Wróćo"
+
+#: evme-searchbar-default.placeholder
+msgctxt "evme-searchbar-default.placeholder"
+msgid "I’m thinking of…"
+msgstr "Pytam za…"
+
+#: evme-searchbar-title
+msgctxt "evme-searchbar-title"
+msgid "Everything"
+msgstr "Wšitko"
+
+#. # Helper - in search page, under the search bar
+#. # See bug 838634 to see why the 2 keys cohabits.
+#: evme-helper-default
+msgid "Enter any topic or search query"
+msgstr "Temu abo pytanske naprašowanje zapodać"
+
+#: evme-helper-default2
+msgid "Enter any topic or keyword"
+msgstr "Temu abo klučowe słowo zapodać"
+
+#: evme-helper-dismiss
+msgid "Dismiss"
+msgstr "Zaćisnyć"
+
+#: evme-helper-no-refine
+msgid "No options found"
+msgstr "Žane nastajenja namakane"
+
+#: evme-helper-history-title
+msgid "History:"
+msgstr "Historija:"
+
+#: evme-helper-history-link
+msgid "History"
+msgstr "Historija"
+
+#: evme-helper-history-clear
+msgid "Clear history"
+msgstr "Historiju wuprózdnić"
+
+#: evme-helper-didyoumean-title
+msgctxt "evme-helper-didyoumean-title"
+msgid "Did you mean:"
+msgstr "Měješće na mysli:"
+
+#: evme-helper-refine-title
+msgctxt "evme-helper-refine-title"
+msgid "Did you mean:"
+msgstr "Měješće na mysli:"
+
+#: evme-helper-title-prefix
+msgctxt "evme-helper-title-prefix"
+msgid "Everything"
+msgstr "Wšitko"
+
+#: evme-helper-title-empty
+msgctxt "evme-helper-title-empty"
+msgid "Everything"
+msgstr "Wšitko"
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: evme-helper-save-search
+msgid "Add to homescreen"
+msgstr "Startowej wobrazowce přidać"
+
+#: evme-helper-unsave-search
+msgid "Remove from homescreen"
+msgstr "Ze startoweje wobrazowki wotstronić"
+
+#: evme-apps-market-download
+msgctxt "evme-apps-market-download"
+msgid "Download"
+msgstr "Sćahnyć"
+
+#: evme-apps-market-more-apps
+msgid "More Apps"
+msgstr "Dalše nałoženja"
+
+#: evme-apps-loading-app
+msgctxt "evme-apps-loading-app"
+msgid "Loading…"
+msgstr "Začituje so…"
+
+#: evme-appsmore-loading
+msgctxt "evme-appsmore-loading"
+msgid "Loading…"
+msgstr "Začituje so…"
+
+#: evme-alert-app-install-confirm
+msgid "Add {{name}} to Home Screen?"
+msgstr "{{name}} startowej wobrazowce přidać?"
+
+#: evme-alert-app-install-exists
+msgid "{{name}} was already added to Home Screen"
+msgstr "{{name}} je so hižo startowej wobrazowce přidało"
+
+#: evme-alert-offline-smart-collections-more
+msgid "Connect to the internet to add more Smart Collections"
+msgstr "Zwjazajće z internetom, zo byšće dalše inteligentne zběrki přidał"
+
+#: evme-alert-save-wallpaper
+msgid "Set as wallpaper?"
+msgstr "Jako pozadk nastajić?"
+
+#: evme-alert-no-more-smart-collections
+msgid "No Smart Collections to add"
+msgstr "Inteligentne zběrki za přidawanje njejsu"
+
+#: evme-banner-app-install-success
+msgid "{{name}} added to Home Screen"
+msgstr "{{name}} startowej wobrazowce přidate"
+
+#: evme-banner-save-wallpaper
+msgid "Wallpaper set successfully"
+msgstr "Pozadk je so wuspěšnje nastajił"
+
+#. # Shortcuts - AKA smart collections - evme homepage
+#: evme-shortcuts-more
+msgid "More"
+msgstr "Wjace"
+
+#: evme-collectionssuggest-loading
+msgctxt "evme-collectionssuggest-loading"
+msgid "Loading…"
+msgstr "Začituje so…"
+
+#: evme-collectionssuggest-loading-cancel
+msgctxt "evme-collectionssuggest-loading-cancel"
+msgid "Cancel"
+msgstr "Přetorhnyć"
+
+#: evme-collectionssuggest-prompt-create-custom
+msgid "Create your own Smart Collection"
+msgstr "Swójsku inteligentnu zběrku wutworić"
+
+#: evme-backgroundimage-source-label
+msgid "Source:"
+msgstr "Žórło:"
+
+#: evme-collection-title-prefix
+msgctxt "evme-collection-title-prefix"
+msgid "Everything"
+msgstr "Wšitko"
+
+#: evme-collection-title-suffix
+msgid "Phone"
+msgstr "Telefon"
+
+#: evme-collection-loading-more
+msgctxt "evme-collection-loading-more"
+msgid "Loading…"
+msgstr "Začituje so…"
+
+#. # {{query}} will always be the user's current query from the searchbox
+#: evme-connectionmessage-apps
+msgid "Connect to the internet to get apps for {{query}}"
+msgstr "Zwjazajće z internetom, zo byšće nałoženja za {{query}} dóstał"
+
+#: evme-connectionmessage-apps-has-installed
+msgid "Connect to the internet to get even more apps for {{query}}"
+msgstr "Zwjazajće z internetom, zo byšće dalše nałoženja za {{query}} dóstał"
+
+#. # tips are shown throughout the app on certain actions
+#: evme-tips-app-explain.innerHTML
+msgid "Find the things you love with the coolest apps."
+msgstr "Namakajće z najwulkotnišimi nałoženjemi wěcy, kotrež lubujeće."
+
+#: evme-tips-searchbar-focus.innerHTML
+msgid "For example, find your favorite singer or band…"
+msgstr "Na přikład, namakajće swojeho najlubšeho spěwarja abo najlubšu band…"
+
+#: evme-tips-exact-results.innerHTML
+msgid ""
+"These are the apps for <b>{{query}}</b>,<br /><br /> tap any icon to open it."
 msgstr ""
-
-#: pages-panel
-msgid "Pinned Pages"
-msgstr ""
-
-#~ msgid "{{topic}} on {{name}}"
-#~ msgstr "{{topic}} na {{name}}"
-
-#~ msgid "Change Wallpaper"
-#~ msgstr "Pozadk změnić"
-
-#~ msgid "Add Smart Collections"
-#~ msgstr "Inteligentne zběrki přidać"
-
-#~ msgid "Delete {{name}}"
-#~ msgstr "{{name}} zhašeć"
-
-#~ msgid "{{name}} and all of its data will be deleted."
-#~ msgstr "{{name}} a wšě jeho daty so zhašeja."
-
-#~ msgid "Delete"
-#~ msgstr "Zhašeć"
-
-#~ msgid "Remove {{name}}"
-#~ msgstr "{{name}} wotstronić"
-
-#~ msgid "Remove {{name}} from the homescreen?"
-#~ msgstr "{{name}} ze startoweje wobrazowki wotstronić?"
-
-#~ msgid "Remove"
-#~ msgstr "Wotstronić"
-
-#~ msgid "%A, %B %e"
-#~ msgstr "%A, %e. %B"
-
-#~ msgid "Restart Download"
-#~ msgstr "Sćehnjenje znowa startować"
-
-#~ msgid "Page {{current}} of {{total}}"
-#~ msgstr "Strona {{current}} z {{total}}"
-
-#~ msgid "Homescreen"
-#~ msgstr "Startowa wobrazowka"
-
-#~ msgctxt "loadingEvme2"
-#~ msgid "Loading…"
-#~ msgstr "Začituje so…"
-
-#~ msgid "Everything…"
-#~ msgstr "Wšitko…"
-
-#~ msgctxt "evme-searchbar-default2"
-#~ msgid "I’m thinking of…"
-#~ msgstr "Pytam za…"
-
-#~ msgctxt "evme-searchbar-default2.placeholder"
-#~ msgid "I’m thinking of…"
-#~ msgstr "Pytam za…"
-
-#~ msgid "Back"
-#~ msgstr "Wróćo"
-
-#~ msgctxt "evme-searchbar-default.placeholder"
-#~ msgid "I’m thinking of…"
-#~ msgstr "Pytam za…"
-
-#~ msgctxt "evme-searchbar-title"
-#~ msgid "Everything"
-#~ msgstr "Wšitko"
-
-#~ msgid "Enter any topic or search query"
-#~ msgstr "Temu abo pytanske naprašowanje zapodać"
-
-#~ msgid "Enter any topic or keyword"
-#~ msgstr "Temu abo klučowe słowo zapodać"
-
-#~ msgid "Dismiss"
-#~ msgstr "Zaćisnyć"
-
-#~ msgid "No options found"
-#~ msgstr "Žane nastajenja namakane"
-
-#~ msgid "History:"
-#~ msgstr "Historija:"
-
-#~ msgid "History"
-#~ msgstr "Historija"
-
-#~ msgid "Clear history"
-#~ msgstr "Historiju wuprózdnić"
-
-#~ msgctxt "evme-helper-didyoumean-title"
-#~ msgid "Did you mean:"
-#~ msgstr "Měješće na mysli:"
-
-#~ msgctxt "evme-helper-refine-title"
-#~ msgid "Did you mean:"
-#~ msgstr "Měješće na mysli:"
-
-#~ msgctxt "evme-helper-title-prefix"
-#~ msgid "Everything"
-#~ msgstr "Wšitko"
-
-#~ msgctxt "evme-helper-title-empty"
-#~ msgid "Everything"
-#~ msgstr "Wšitko"
-
-#~ msgid "Add to homescreen"
-#~ msgstr "Startowej wobrazowce přidać"
-
-#~ msgid "Remove from homescreen"
-#~ msgstr "Ze startoweje wobrazowki wotstronić"
-
-#~ msgctxt "evme-apps-market-download"
-#~ msgid "Download"
-#~ msgstr "Sćahnyć"
-
-#~ msgid "More Apps"
-#~ msgstr "Dalše nałoženja"
-
-#~ msgctxt "evme-apps-loading-app"
-#~ msgid "Loading…"
-#~ msgstr "Začituje so…"
-
-#~ msgctxt "evme-appsmore-loading"
-#~ msgid "Loading…"
-#~ msgstr "Začituje so…"
-
-#~ msgid "Add {{name}} to Home Screen?"
-#~ msgstr "{{name}} startowej wobrazowce přidać?"
-
-#~ msgid "{{name}} was already added to Home Screen"
-#~ msgstr "{{name}} je so hižo startowej wobrazowce přidało"
-
-#~ msgid "Connect to the internet to add more Smart Collections"
-#~ msgstr "Zwjazajće z internetom, zo byšće dalše inteligentne zběrki přidał"
-
-#~ msgid "Set as wallpaper?"
-#~ msgstr "Jako pozadk nastajić?"
-
-#~ msgid "No Smart Collections to add"
-#~ msgstr "Inteligentne zběrki za přidawanje njejsu"
-
-#~ msgid "{{name}} added to Home Screen"
-#~ msgstr "{{name}} startowej wobrazowce přidate"
-
-#~ msgid "Wallpaper set successfully"
-#~ msgstr "Pozadk je so wuspěšnje nastajił"
-
-#~ msgid "More"
-#~ msgstr "Wjace"
-
-#~ msgctxt "evme-collectionssuggest-loading"
-#~ msgid "Loading…"
-#~ msgstr "Začituje so…"
-
-#~ msgctxt "evme-collectionssuggest-loading-cancel"
-#~ msgid "Cancel"
-#~ msgstr "Přetorhnyć"
-
-#~ msgid "Create your own Smart Collection"
-#~ msgstr "Swójsku inteligentnu zběrku wutworić"
-
-#~ msgid "Source:"
-#~ msgstr "Žórło:"
-
-#~ msgctxt "evme-collection-title-prefix"
-#~ msgid "Everything"
-#~ msgstr "Wšitko"
-
-#~ msgid "Phone"
-#~ msgstr "Telefon"
-
-#~ msgctxt "evme-collection-loading-more"
-#~ msgid "Loading…"
-#~ msgstr "Začituje so…"
-
-#~ msgid "Connect to the internet to get apps for {{query}}"
-#~ msgstr "Zwjazajće z internetom, zo byšće nałoženja za {{query}} dóstał"
-
-#~ msgid "Connect to the internet to get even more apps for {{query}}"
-#~ msgstr ""
-#~ "Zwjazajće z internetom, zo byšće dalše nałoženja za {{query}} dóstał"
-
-#~ msgid "Find the things you love with the coolest apps."
-#~ msgstr "Namakajće z najwulkotnišimi nałoženjemi wěcy, kotrež lubujeće."
-
-#~ msgid "For example, find your favorite singer or band…"
-#~ msgstr ""
-#~ "Na přikład, namakajće swojeho najlubšeho spěwarja abo najlubšu band…"
-
-#~ msgid ""
-#~ "These are the apps for <b>{{query}}</b>,<br /><br /> tap any icon to open "
-#~ "it."
-#~ msgstr ""
-#~ "To su nałoženja za <b>{{query}}</b>,<br /><br /> podótkńće so symbola, zo "
-#~ "byšće je wočinił."
-
-#~ msgid "Custom…"
-#~ msgstr "Swójske…"
-
-#~ msgid "Astrology"
-#~ msgstr "Astrologija"
-
-#~ msgid "Autos"
-#~ msgstr "Awta"
-
-#~ msgid "Beauty"
-#~ msgstr "Rjanosć"
-
-#~ msgid "Books"
-#~ msgstr "Knihi"
-
-#~ msgid "Celebs"
-#~ msgstr "Prominenca"
-
-#~ msgid "Daily Deals"
-#~ msgstr "Wšědne poskitki"
-
-#~ msgid "Dating"
-#~ msgstr "Partnerske pytanje"
-
-#~ msgid "Electronics"
-#~ msgstr "Elektronika"
-
-#~ msgid "Email"
-#~ msgstr "E-mejl"
-
-#~ msgid "Entertainment"
-#~ msgstr "Zabawa"
-
-#~ msgid "Environment"
-#~ msgstr "Wokolina"
-
-#~ msgid "Fashion"
-#~ msgstr "Moda"
-
-#~ msgid "Funny"
-#~ msgstr "Wjeselo"
-
-#~ msgid "Games"
-#~ msgstr "Hry"
-
-#~ msgid "Government"
-#~ msgstr "Knježerstwo"
-
-#~ msgid "Health"
-#~ msgstr "Strowota"
-
-#~ msgid "Jobs"
-#~ msgstr "Dźěłowe městna"
-
-#~ msgid "Local"
-#~ msgstr "Lokalne"
-
-#~ msgid "Maps"
-#~ msgstr "Karty"
-
-#~ msgid "Movies"
-#~ msgstr "Filmy"
-
-#~ msgid "Music"
-#~ msgstr "Hudźba"
-
-#~ msgid "New Apps"
-#~ msgstr "Nowe nałoženja"
-
-#~ msgid "News"
-#~ msgstr "Powěsće"
-
-#~ msgid "Photography"
-#~ msgstr "Fotografija"
-
-#~ msgid "Recipes"
-#~ msgstr "Recepty"
-
-#~ msgid "Restaurants"
-#~ msgstr "Hosćency"
-
-#~ msgid "Shopping"
-#~ msgstr "Nakupowanje"
-
-#~ msgid "Social"
-#~ msgstr "Socialne"
-
-#~ msgid "Sports"
-#~ msgstr "Sport"
-
-#~ msgid "Tech News"
-#~ msgstr "Techniske nowinki"
-
-#~ msgid "Top Apps"
-#~ msgstr "Woblubowane nałoženja"
-
-#~ msgid "Travel"
-#~ msgstr "Pućowanje"
-
-#~ msgid "TV"
-#~ msgstr "Telewizija"
-
-#~ msgid "Video"
-#~ msgstr "Widejo"
-
-#~ msgid "Utilities"
-#~ msgstr "Nastroje"
-
-#~ msgid "Weather"
-#~ msgstr "Wjedro"
-
-#~ msgid "Add to top of collection"
-#~ msgstr "Na spočatk zběrki přidać"
-
-#~ msgid "Save to Homescreen"
-#~ msgstr "Do startoweje wobrazowki składować"
-
-#~ msgid "Edit"
-#~ msgstr "Wobdźěłać"
-
-#~ msgid "Website name"
-#~ msgstr "Mjeno websydła"
-
-#~ msgid "Address"
-#~ msgstr "Adresa"
-
-#~ msgctxt "edit-dialog-cancel"
-#~ msgid "Cancel"
-#~ msgstr "Přetorhnyć"
-
-#~ msgid "Done"
-#~ msgstr "Dokónčene"
-
-#~ msgid "Close"
-#~ msgstr "Začinić"
-
-#~ msgid "Save"
-#~ msgstr "Składować"
+"To su nałoženja za <b>{{query}}</b>,<br /><br /> podótkńće so symbola, zo "
+"byšće je wočinił."
+
+#. # collection translations
+#: evme-shortcut-custom
+msgid "Custom…"
+msgstr "Swójske…"
+
+#: evme-shortcut-id-astrology
+msgid "Astrology"
+msgstr "Astrologija"
+
+#: evme-shortcut-id-autos
+msgid "Autos"
+msgstr "Awta"
+
+#: evme-shortcut-id-beauty
+msgid "Beauty"
+msgstr "Rjanosć"
+
+#: evme-shortcut-id-books
+msgid "Books"
+msgstr "Knihi"
+
+#: evme-shortcut-id-celebs
+msgid "Celebs"
+msgstr "Prominenca"
+
+#: evme-shortcut-id-daily-deals
+msgid "Daily Deals"
+msgstr "Wšědne poskitki"
+
+#: evme-shortcut-id-dating
+msgid "Dating"
+msgstr "Partnerske pytanje"
+
+#: evme-shortcut-id-electronics
+msgid "Electronics"
+msgstr "Elektronika"
+
+#: evme-shortcut-id-email
+msgid "Email"
+msgstr "E-mejl"
+
+#: evme-shortcut-id-entertainment
+msgid "Entertainment"
+msgstr "Zabawa"
+
+#: evme-shortcut-id-environment
+msgid "Environment"
+msgstr "Wokolina"
+
+#: evme-shortcut-id-fashion
+msgid "Fashion"
+msgstr "Moda"
+
+#: evme-shortcut-id-funny
+msgid "Funny"
+msgstr "Wjeselo"
+
+#: evme-shortcut-id-games
+msgid "Games"
+msgstr "Hry"
+
+#: evme-shortcut-id-government
+msgid "Government"
+msgstr "Knježerstwo"
+
+#: evme-shortcut-id-health
+msgid "Health"
+msgstr "Strowota"
+
+#: evme-shortcut-id-jobs
+msgid "Jobs"
+msgstr "Dźěłowe městna"
+
+#: evme-shortcut-id-local
+msgid "Local"
+msgstr "Lokalne"
+
+#: evme-shortcut-id-maps
+msgid "Maps"
+msgstr "Karty"
+
+#: evme-shortcut-id-movies
+msgid "Movies"
+msgstr "Filmy"
+
+#: evme-shortcut-id-music
+msgid "Music"
+msgstr "Hudźba"
+
+#: evme-shortcut-id-new-apps
+msgid "New Apps"
+msgstr "Nowe nałoženja"
+
+#: evme-shortcut-id-news
+msgid "News"
+msgstr "Powěsće"
+
+#: evme-shortcut-id-photography
+msgid "Photography"
+msgstr "Fotografija"
+
+#: evme-shortcut-id-recipes
+msgid "Recipes"
+msgstr "Recepty"
+
+#: evme-shortcut-id-restaurants
+msgid "Restaurants"
+msgstr "Hosćency"
+
+#: evme-shortcut-id-shopping
+msgid "Shopping"
+msgstr "Nakupowanje"
+
+#: evme-shortcut-id-social
+msgid "Social"
+msgstr "Socialne"
+
+#: evme-shortcut-id-sports
+msgid "Sports"
+msgstr "Sport"
+
+#: evme-shortcut-id-tech-news
+msgid "Tech News"
+msgstr "Techniske nowinki"
+
+#: evme-shortcut-id-top-apps
+msgid "Top Apps"
+msgstr "Woblubowane nałoženja"
+
+#: evme-shortcut-id-travel
+msgid "Travel"
+msgstr "Pućowanje"
+
+#: evme-shortcut-id-tv
+msgid "TV"
+msgstr "Telewizija"
+
+#: evme-shortcut-id-video
+msgid "Video"
+msgstr "Widejo"
+
+#: evme-shortcut-id-utilities
+msgid "Utilities"
+msgstr "Nastroje"
+
+#: evme-shortcut-id-weather
+msgid "Weather"
+msgstr "Wjedro"
+
+#. #search contextmenu
+#: evme-add-to-top-of-collection
+msgid "Add to top of collection"
+msgstr "Na spočatk zběrki přidać"
+
+#: evme-save-to-homescreen
+msgid "Save to Homescreen"
+msgstr "Do startoweje wobrazowki składować"
+
+#. # edit dialog
+#: edit-dialog-header
+msgid "Edit"
+msgstr "Wobdźěłać"
+
+#: edit-dialog-name
+msgid "Website name"
+msgstr "Mjeno websydła"
+
+#: edit-dialog-url
+msgid "Address"
+msgstr "Adresa"
+
+#: edit-dialog-cancel
+msgctxt "edit-dialog-cancel"
+msgid "Cancel"
+msgstr "Přetorhnyć"
+
+#: edit-dialog-done
+msgid "Done"
+msgstr "Dokónčene"
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: evme-close.ariaLabel
+msgid "Close"
+msgstr "Začinić"
+
+#: evme-done.ariaLabel
+msgid "Save"
+msgstr "Składować"

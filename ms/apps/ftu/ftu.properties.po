@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-03-19 18:45+0000\n"
 "PO-Revision-Date: 2015-08-17 03:17+0000\n"
 "Last-Translator: Arif Fahmi Fisal <ryuzaki_l@y7mail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1439781437.000000\n"
@@ -772,6 +772,10 @@ msgstr "Import kenalan"
 msgid "SIM card"
 msgstr "Kad SIM"
 
+#: importFb2
+msgid "Facebook"
+msgstr "Facebook"
+
 #: importOutlook
 msgid "Outlook"
 msgstr "Outlook"
@@ -779,6 +783,10 @@ msgstr "Outlook"
 #: importGmail
 msgid "Gmail"
 msgstr "Gmail"
+
+#: fb-checking
+msgid "… checking"
+msgstr "...memeriksa"
 
 #: notImportedYet
 msgid "Not imported yet"
@@ -788,6 +796,44 @@ msgstr "Belum diimport"
 msgid "Other accounts"
 msgstr "Akaun lain"
 
+#: afterFbImport
+msgid "You can import and edit Facebook friends anytime in Contacts settings"
+msgstr ""
+"Anda boleh mengimport dan sunting teman Facebook bila-bila masa dalam "
+"tetapan Kenalan"
+
+#: facebook-import-msg
+msgid "{[ plural(imported) ]}"
+msgstr ""
+
+#: facebook-import-msg[zero]
+msgid "No friends imported (out of {{total}})"
+msgstr ""
+
+#: facebook-import-msg[one]
+msgid "One friend imported (out of {{total}})"
+msgstr ""
+
+#: facebook-import-msg[two]
+msgctxt "facebook-import-msg[two]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr ""
+
+#: facebook-import-msg[few]
+msgctxt "facebook-import-msg[few]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr ""
+
+#: facebook-import-msg[many]
+msgctxt "facebook-import-msg[many]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr ""
+
+#: facebook-import-msg[other]
+msgctxt "facebook-import-msg[other]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Fxa Intro
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -795,7 +841,7 @@ msgstr "Akaun lain"
 msgid "Firefox Accounts"
 msgstr "Akaun Firefox"
 
-#: fxa-upsell
+#: fxa-upsell.innerHTML
 msgid ""
 "A Firefox Account lets you find a lost phone and buy apps from the Firefox "
 "Marketplace."
@@ -894,41 +940,61 @@ msgstr ""
 "Kami menggunakannya bagi menjadikan produk kami lebih baik, lebih pantas dan "
 "lebih responsif."
 
-#: learn-more-telemetry2
-msgid "Learn more at <a>{{url}}</a>"
+#: learn-more-telemetry2.innerHTML
+msgid ""
+"Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
+"a>"
 msgstr ""
 
-#: learn-more-information2
-#, fuzzy
-msgid "Learn how Mozilla handles your information at <a>{{url}}</a>"
-msgstr "Ketahui bagaimana Mozilla mengendalikan maklumat anda di {{link}}"
+#: learn-more-information2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # OS privacy
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: htmlWelcome2
-#, fuzzy
+#: htmlWelcome2.innerHTML
 msgid ""
-"Welcome to <a>{{brandShortName}}</a>, the free and open source operating "
-"system from Mozilla. Our mission is to promote openness, innovation and "
-"opportunity by keeping the power of the Web in your hands."
+"Welcome to <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>, "
+"the free and open source operating system from Mozilla. Our mission is to "
+"promote openness, innovation and opportunity by keeping the power of the Web "
+"in your hands."
 msgstr ""
 "Selamat datang ke <a href=\"{{href}}\" class="
 "\"{{className}}\">{{textContent}}</a>, sebuah sistem operasi sumber terbuka "
 "dan bebas daripada Mozilla. Misi kami adalah untuk mempromosikan "
 "keterbukaan, inovasi dan peluang dengan mengekalkan kuasa Web di tangan anda."
 
-#: helpImprove2
+#: htmlWelcome-link
+#, fuzzy
+msgctxt "htmlWelcome-link"
+msgid "{{brandShortName}}"
+msgstr "{{brandShortName}}"
+
+#: helpImprove2.innerHTML
 msgid ""
 "You can help us improve our products and services by automatically sending "
-"analytics data. See our <a>Privacy Notice</a> to learn how we handle data "
-"from your device."
+"analytics data. See our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> to learn how we handle data from your "
+"device."
 msgstr ""
 
-#: learn-more-privacy2
+#: helpImprove-link
+#, fuzzy
+msgid "Privacy Notice"
+msgstr "Dasar privasi"
+
+#: learn-more-privacy2.innerHTML
 msgid ""
-"Learn how Mozilla handles your information in our <a>privacy policy</a>."
+"Learn how Mozilla handles your information in our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>."
 msgstr ""
+
+#: learn-more-privacy-link
+msgid "privacy policy"
+msgstr "dasar privasi"
 
 #: aboutBrowser
 msgid "About {{brandShortName}}"
@@ -1199,25 +1265,6 @@ msgstr "Langkah {{step}} daripada {{total}}"
 msgid "First Time Experience"
 msgstr "Pengalaman Kali Pertama"
 
-#~ msgid "Facebook"
-#~ msgstr "Facebook"
-
-#~ msgid "… checking"
-#~ msgstr "...memeriksa"
-
-#~ msgid ""
-#~ "You can import and edit Facebook friends anytime in Contacts settings"
-#~ msgstr ""
-#~ "Anda boleh mengimport dan sunting teman Facebook bila-bila masa dalam "
-#~ "tetapan Kenalan"
-
-#, fuzzy
-#~ msgid "Privacy Notice"
-#~ msgstr "Dasar privasi"
-
-#~ msgid "privacy policy"
-#~ msgstr "dasar privasi"
-
 #~ msgid "Swipe from right to left to browse your apps."
 #~ msgstr "Leret daripada kanan ke kiti untuk melayari app anda."
 
@@ -1258,6 +1305,9 @@ msgstr "Pengalaman Kali Pertama"
 
 #~ msgid "Learn more at {{link}}"
 #~ msgstr "Ketahui lanjut di {{link}}"
+
+#~ msgid "Learn how Mozilla handles your information at {{link}}"
+#~ msgstr "Ketahui bagaimana Mozilla mengendalikan maklumat anda di {{link}}"
 
 #~ msgid "Learn how Mozilla handles your information in our {{link}}."
 #~ msgstr "Ketahui bagaimana Mozilla mengendalikan maklumat anda di {{link}}."
