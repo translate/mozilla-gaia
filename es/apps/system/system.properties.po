@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-15 06:45+0000\n"
+"POT-Creation-Date: 2015-09-07 14:45+0000\n"
 "PO-Revision-Date: 2015-06-10 22:11+0000\n"
 "Last-Translator: inma610 <inma.barrios@mozilla-hispano.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1433974268.000000\n"
@@ -95,45 +95,47 @@ msgstr "Siguiente"
 msgid "Unknown track"
 msgstr "Pista desconocida"
 
-#: wifiButton-on
+#: quick-settings-wifiButton-on.ariaLabel
 msgid "Wi-Fi on"
 msgstr "Wifi activado"
 
-#: wifiButton-on-initializing
+#: quick-settings-wifiButton-on-initializing.ariaLabel
 msgid "Wi-Fi on, initializing"
 msgstr "Wifi activado, inicializando"
 
-#: wifiButton-off
+#: quick-settings-wifiButton-off.ariaLabel
 msgid "Wi-Fi off"
 msgstr "Wifi desactivado"
 
-#: dataButton-on
+#: quick-settings-dataButton-on.ariaLabel
 msgid "Data {{type}} on"
 msgstr "Datos {{type}} activados"
 
-#: dataButton-off
+#: quick-settings-dataButton-off.ariaLabel
 msgid "Data {{type}} off"
 msgstr "Datos {{type}} desactivados"
 
-#: bluetoothButton-on
-msgctxt "bluetoothButton-on"
+#: quick-settings-bluetoothButton-on.ariaLabel
+#, fuzzy
+msgctxt "quick-settings-bluetoothButton-on.ariaLabel"
 msgid "Bluetooth on"
 msgstr "Bluetooth activado"
 
-#: bluetoothButton-on-initializing
+#: quick-settings-bluetoothButton-on-initializing.ariaLabel
 msgid "Bluetooth on, initializing"
 msgstr "Bluetooth activado, inicializando"
 
-#: bluetoothButton-off
+#: quick-settings-bluetoothButton-off.ariaLabel
 msgid "Bluetooth off"
 msgstr "Bluetooth desactivado"
 
-#: airplaneMode-on
-msgctxt "airplaneMode-on"
+#: quick-settings-airplaneMode-on.ariaLabel
+#, fuzzy
+msgctxt "quick-settings-airplaneMode-on.ariaLabel"
 msgid "Airplane mode on"
 msgstr "Modo avión activado"
 
-#: airplaneMode-off
+#: quick-settings-airplaneMode-off.ariaLabel
 msgid "Airplane mode off"
 msgstr "Modo avión apagado"
 
@@ -151,7 +153,7 @@ msgid "SIM {{id}}"
 msgstr "SIM {{id}}"
 
 #. # status bar text label
-#: statusbarLabel
+#: statusbarOperator
 msgid "{{date}}, {{operator}}"
 msgstr "{{date}} {{operator}}"
 
@@ -173,48 +175,59 @@ msgstr "Batería: {{level}} por ciento"
 msgid "Battery {{level}} percent, charging"
 msgstr "Batería: {{level}} por ciento, cargando"
 
-#: statusbarFlightMode.ariaLabel
-msgctxt "statusbarFlightMode.ariaLabel"
+#: statusbarAirplaneMode.ariaLabel
+#, fuzzy
+msgctxt "statusbarAirplaneMode.ariaLabel"
 msgid "Airplane mode on"
 msgstr "Modo avión activado"
 
-#: statusbarWiFiConnecting
+#: statusbarWiFiConnecting.ariaLabel
 msgid "Wi-Fi: connecting"
 msgstr "Wifi: conectando"
 
-#: statusbarWiFiConnected
+#: statusbarWiFiConnected.ariaLabel
 msgid "Wi-Fi: {{level}} of 4 bars"
 msgstr "Wifi: {{level}} sobre 4 barras"
 
-#: statusbarSignal
+#: statusbarSignal.ariaLabel
 msgid "{{operator}} network, {{level}} of 5 bars"
 msgstr "Red de {{operator}}: {{level}} sobre 5 barras"
 
-#: statusbarSignalRoaming
+#: statusbarSignalRoaming.ariaLabel
 msgid "{{operator}} network (roaming), {{level}} of 5 bars"
 msgstr "Red de {{operator}} (en itinerancia): {{level}} sobre 5 barras"
 
-#: statusbarSignalNoneSearching
+#: statusbarSignalNoneSearching.ariaLabel
 msgid "Searching… Emergency calls only"
 msgstr "Buscando… Sólo llamadas de emergencia"
 
-#: statusbarHeadphones.ariaLabel
+#: statusbarEmergencyCallsOnly.ariaLabel
+msgid "Emergency call only"
+msgstr ""
+
+#: statusbarSignalNoSimCard.ariaLabel
+#, fuzzy
+msgctxt "statusbarSignalNoSimCard.ariaLabel"
+msgid "No SIM card"
+msgstr "No hay tarjeta SIM"
+
+#: statusbarHeadphone.ariaLabel
 msgid "Headphones on"
 msgstr "Auriculares conectados"
 
-#: statusbarBluetoothHeadphones.ariaLabel
+#: statusbarBluetoothHeadphone.ariaLabel
 msgid "Bluetooth headphones on"
 msgstr "Auriculares Bluetooth conectados"
 
-#: statusbarBluetoothTransferring.ariaLabel
+#: statusbarBluetoothTransfer.ariaLabel
 msgid "Bluetooth transfer active"
 msgstr "Transferencia Bluetooth activa"
 
-#: statusbarIconOn-tethering
+#: statusbarIconOn-tethering.ariaLabel
 msgid "Tethering on"
 msgstr "Tethering activado"
 
-#: statusbarIconOnActive-tethering
+#: statusbarIconOnActive-tethering.ariaLabel
 msgid "Tethering on, active"
 msgstr "Tethering activado, funcionando"
 
@@ -222,20 +235,21 @@ msgstr "Tethering activado, funcionando"
 msgid "Alarm on"
 msgstr "Alarma activada"
 
-#: statusbarIconOn-bluetooth
-msgctxt "statusbarIconOn-bluetooth"
+#: statusbarIconOn-bluetooth.ariaLabel
+#, fuzzy
+msgctxt "statusbarIconOn-bluetooth.ariaLabel"
 msgid "Bluetooth on"
 msgstr "Bluetooth activado"
 
-#: statusbarIconOnActive-bluetooth
+#: statusbarIconOnActive-bluetooth.ariaLabel
 msgid "Bluetooth on, active"
 msgstr "Bluetooth activado, funcionando"
 
-#: statusbarIconOn-mute
+#: statusbarIconOn-mute.ariaLabel
 msgid "Mute on"
 msgstr "Silencio activado"
 
-#: statusbarIconOn-vibration
+#: statusbarIconOn-vibration.ariaLabel
 msgid "Vibration on"
 msgstr "Vibración activada"
 
@@ -251,7 +265,7 @@ msgstr "Geolocalización activada"
 msgid "USB on"
 msgstr "USB activado"
 
-#: statusbarForwarding
+#: statusbarCallForwarding
 msgid "Call forwarding on"
 msgstr "Desvío de llamadas activado"
 
@@ -263,8 +277,9 @@ msgstr "Media reproduciéndose"
 msgid "NFC on"
 msgstr "NFC activado"
 
-#: statusbarDownloads.ariaLabel
-msgctxt "statusbarDownloads.ariaLabel"
+#: statusbarDownload.ariaLabel
+#, fuzzy
+msgctxt "statusbarDownload.ariaLabel"
 msgid "Downloading…"
 msgstr "Descargando…"
 
@@ -272,9 +287,14 @@ msgstr "Descargando…"
 msgid "Networking on"
 msgstr "Redes activadas"
 
-#: statusbarEmergencyCBNotification.ariaLabel
+#: statusbarEmergencyCallback.ariaLabel
 msgid "Emergency callback"
 msgstr "Aviso de emergencia"
+
+#: statusbarNoNotifications
+#, fuzzy
+msgid "No Notifications"
+msgstr "Notificaciones"
 
 #: statusbarNotifications
 msgctxt "statusbarNotifications"
@@ -333,6 +353,10 @@ msgstr "{{n}} notificaciones sin leer"
 msgctxt "statusbarNotifications-unread.ariaLabel[other]"
 msgid "{{n}} unread notifications"
 msgstr "{{n}} notificaciones sin leer"
+
+#: statusbarDebugging.ariaLabel
+msgid "Debugging"
+msgstr ""
 
 #. # notifications
 #: notifications
@@ -462,6 +486,10 @@ msgstr "Reiniciar"
 msgid "Power off"
 msgstr "Apagar"
 
+#: viewSource
+msgid "View source"
+msgstr ""
+
 #. # cards view
 #: no-recent-app-windows
 msgid "Your recent app windows show up here"
@@ -498,6 +526,8 @@ msgid "Don’t allow"
 msgstr "No permitir"
 
 #: allow
+#, fuzzy
+msgctxt "allow"
 msgid "Allow"
 msgstr "Permitir"
 
@@ -593,27 +623,27 @@ msgid "bytes"
 msgstr "bytes"
 
 #: kB
-msgctxt "kB"
+#, fuzzy
 msgid "KB"
 msgstr "Kb"
 
 #: MB
-msgctxt "MB"
+#, fuzzy
 msgid "MB"
 msgstr "Mb"
 
 #: GB
-msgctxt "GB"
+#, fuzzy
 msgid "GB"
 msgstr "Gb"
 
 #: TB
-msgctxt "TB"
+#, fuzzy
 msgid "TB"
 msgstr "Tb"
 
 #: PB
-msgctxt "PB"
+#, fuzzy
 msgid "PB"
 msgstr "Pb"
 
@@ -664,7 +694,7 @@ msgid "Resume"
 msgstr "Reanudar"
 
 #: continue
-msgctxt "continue"
+#, fuzzy
 msgid "Continue"
 msgstr "Continuar"
 
@@ -741,7 +771,7 @@ msgid "Not Now"
 msgstr "Ahora no"
 
 #. # the <span> element will be displayed when the download finishes
-#: downloadingUpdateMessage.innerHTML
+#: downloadingUpdateMessage
 msgid "Downloading updates… <span>{{ progress }} downloaded.</span>"
 msgstr "Descargando actualizaciones… <span>{{ progress }} descargados.</span>"
 
@@ -773,36 +803,41 @@ msgstr "¿Seguro que desea cancelar todas las descargas?"
 msgid "There was an error while downloading the updates."
 msgstr "Hubo un error mientras se descargaban las actualizaciones."
 
-#: updateAvailableInfo.innerHTML
-msgctxt "updateAvailableInfo.innerHTML"
+#: updateAvailableInfo
+#, fuzzy
+msgctxt "updateAvailableInfo"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: updateAvailableInfo.innerHTML[one]
+#: updateAvailableInfo[one]
 msgid "{{ n }} update available. <span>Tap for more info.</span>"
 msgstr ""
 "{{ n }} actualización disponible. <span>Pulse para más información.</span>"
 
-#: updateAvailableInfo.innerHTML[two]
-msgctxt "updateAvailableInfo.innerHTML[two]"
+#: updateAvailableInfo[two]
+#, fuzzy
+msgctxt "updateAvailableInfo[two]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr ""
 "{{ n }} actualizaciones disponibles. <span>Pulse para más información.</span>"
 
-#: updateAvailableInfo.innerHTML[few]
-msgctxt "updateAvailableInfo.innerHTML[few]"
+#: updateAvailableInfo[few]
+#, fuzzy
+msgctxt "updateAvailableInfo[few]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr ""
 "{{ n }} actualizaciones disponibles. <span>Pulse para más información.</span>"
 
-#: updateAvailableInfo.innerHTML[many]
-msgctxt "updateAvailableInfo.innerHTML[many]"
+#: updateAvailableInfo[many]
+#, fuzzy
+msgctxt "updateAvailableInfo[many]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr ""
 "{{ n }} actualizaciones disponibles. <span>Pulse para más información.</span>"
 
-#: updateAvailableInfo.innerHTML[other]
-msgctxt "updateAvailableInfo.innerHTML[other]"
+#: updateAvailableInfo[other]
+#, fuzzy
+msgctxt "updateAvailableInfo[other]"
 msgid "{{ n }} updates available. <span>Tap for more info.</span>"
 msgstr ""
 "{{ n }} actualizaciones disponibles. <span>Pulse para más información.</span>"
@@ -858,7 +893,7 @@ msgstr ""
 msgid "Required"
 msgstr "Requerida"
 
-#: uncompressingMessage.innerHTML
+#: uncompressingMessage
 msgid "Uncompressing… <span>This can take a few minutes.</span>"
 msgstr "Descomprimiendo… <span>Puede tardar unos minutos.</span>"
 
@@ -946,12 +981,21 @@ msgid "Not enough space on memory card"
 msgstr "No hay suficiente espacio en la tarjeta de memoria"
 
 #. # logshake
-#: logsSaved
-msgid "Logs saved to storage"
-msgstr "Registros guardados"
+#: logsSavedHeader
+msgid "Device logs saved"
+msgstr ""
+
+#: logsSavedBody
+msgid "Tap to share logs"
+msgstr ""
 
 #: logsSaveError
 msgid "Error while saving logs"
+msgstr "Error al guardar registros"
+
+#: logsShareError
+#, fuzzy
+msgid "Error while sharing logs"
 msgstr "Error al guardar registros"
 
 #: logsSaving
@@ -969,6 +1013,10 @@ msgstr "Se produjo un error inesperado."
 #: logsSDCardMaybeShared
 msgid "Make sure your SD card is not shared with your computer."
 msgstr "Asegúrese de que la tarjeta SD no la comparte con el PC."
+
+#: logsNotFoundError
+msgid "At least one log file could not be read from the filesystem."
+msgstr ""
 
 #. # lock screen
 #: emergency-call-button
@@ -1241,81 +1289,33 @@ msgid "Report"
 msgstr "Informar"
 
 #. # bluetooth transfer
-#: bluetooth-sending-progress
-msgid "Sending Bluetooth transfer…"
-msgstr "Enviando transferencia Bluetooth…"
+#: bluetooth-sending-progress2
+msgid "Sending file…"
+msgstr ""
 
-#: bluetooth-receiving-progress
-msgid "Receiving Bluetooth transfer…"
-msgstr "Recibiendo transferencia Bluetooth…"
+#: bluetooth-receiving-progress2
+msgid "Receiving file…"
+msgstr ""
 
 #: acceptFileTransfer
 msgid "Accept Bluetooth file transfer?"
 msgstr "¿Aceptar una transferencia Bluetooth?"
 
-#: wantToReceiveFile.innerHTML
-msgid ""
-"<bdi>{{deviceName}}</bdi> would like to transfer <bdi>{{fileName}} "
-"({{fileSize}}).</bdi>"
+#: want-to-receive-file
+msgid "{{deviceName}} would like to send you a file. Accept?"
 msgstr ""
-"A <bdi>{{deviceName}}</bdi> le gustaría transferir <bdi>{{fileName}} "
-"({{fileSize}}).</bdi>"
 
 #: transfer-confirmation-title
 msgid "{{deviceName}}"
 msgstr "{{deviceName}}"
 
-#: transfer-confirmation-description
-msgid "Review transfer request."
-msgstr "Revise la petición de transferencia."
-
-#: byteUnit-B
-msgid "Bytes"
-msgstr "Bytes"
-
-#: byteUnit-KB
-msgctxt "byteUnit-KB"
-msgid "KB"
-msgstr "Kb"
-
-#: byteUnit-MB
-msgctxt "byteUnit-MB"
-msgid "MB"
-msgstr "Mb"
-
-#: byteUnit-GB
-msgctxt "byteUnit-GB"
-msgid "GB"
-msgstr "Gb"
-
-#: byteUnit-TB
-msgctxt "byteUnit-TB"
-msgid "TB"
-msgstr "Tb"
-
-#: byteUnit-PB
-msgctxt "byteUnit-PB"
-msgid "PB"
-msgstr "Pb"
-
-#: byteUnit-EB
-msgid "EB"
-msgstr "Eb"
-
-#: byteUnit-ZB
-msgid "ZB"
-msgstr "Zb"
-
-#: byteUnit-YB
-msgid "YB"
-msgstr "Yb"
-
-#. # Localization note (fileSize*): The string is a float.
-#: fileSize
-msgid "{{size}} {{unit}}"
-msgstr "{{size}} {{unit}}"
+#: transfer-confirmation-desc
+msgid "Tap to review transfer request."
+msgstr ""
 
 #: deny
+#, fuzzy
+msgctxt "deny"
 msgid "Deny"
 msgstr "Denegar"
 
@@ -1327,17 +1327,14 @@ msgstr "Transferir"
 msgid "Cancel Bluetooth file transfer?"
 msgstr "¿Cancelar la transferencia Bluetooth?"
 
-#: continueFileTransfer
-msgctxt "continueFileTransfer"
-msgid "Continue"
-msgstr "Continuar"
-
-#: transfer-has-started-title
-msgid "The transfer has started"
+#: transferHasStartedTitle
+#, fuzzy
+msgid "File transfer has started"
 msgstr "La transferencia ha comenzado"
 
-#: transfer-has-started-description
-msgid "Check the progress in Notification center"
+#: transferHasStartedDescription
+#, fuzzy
+msgid "Check progress in Notification center"
 msgstr "Vea progreso en centro de actividades"
 
 #: transferFinished-sentSuccessful-title
@@ -1348,10 +1345,6 @@ msgstr "Archivo enviado"
 msgid "File received"
 msgstr "Archivo recibido"
 
-#: transferFinished-sentFailed-title
-msgid "File could not be sent"
-msgstr "No se envió el archivo"
-
 #: transferFinished-receivedFailed-title
 msgid "File could not be received"
 msgstr "No se recibió el archivo"
@@ -1360,8 +1353,13 @@ msgstr "No se recibió el archivo"
 msgid "Cannot send file right now. Please try again later."
 msgstr "No puede enviarse el archivo. Pruebe de nuevo pasados unos minutos."
 
-#: transferReport-title
-msgid "Transfer report:"
+#: transferFinished-canceled
+msgid "File transfer cancelled"
+msgstr ""
+
+#: transferReportTitle
+#, fuzzy
+msgid "Transfer report"
 msgstr "Informe de la transferencia:"
 
 #: transferReport-description
@@ -1400,9 +1398,10 @@ msgid "No memory card found. Please insert a memory card."
 msgstr "No se encuentra la tarjeta de memoria. Por favor, inserte una."
 
 #: sdcard-in-use
+#, fuzzy
 msgid ""
 "Bluetooth can not be used while phone is plugged in. Please unplug the phone "
-"to receive file(s)."
+"to receive file."
 msgstr ""
 "No se puede usar Bluetooth mientras el teléfono esté conectado. Desconecte "
 "el teléfono para recibir archivo(s)."
@@ -1460,6 +1459,8 @@ msgstr "Cámara y micro están activados"
 
 #. # Security :: SIM PIN lock
 #: noSimCard
+#, fuzzy
+msgctxt "noSimCard"
 msgid "No SIM card"
 msgstr "No hay tarjeta SIM"
 
@@ -1880,6 +1881,10 @@ msgstr "Configurar con:"
 msgid "Dial from:"
 msgstr "Llamar desde:"
 
+#: set-default-action
+msgid "Use from now on"
+msgstr ""
+
 #. # Persona dialog and Identity
 #: persona-signin
 msgid "Sign In"
@@ -1891,13 +1896,58 @@ msgid "Purchase"
 msgstr "Comprar"
 
 #. # Remote Debugger Connection Dialog
-#: remoteDebuggerMessage
-msgid ""
-"An incoming request to permit remote debugging connection was detected. "
-"Allow connection?"
+#: remoteDebuggerPromptUSB
+msgid "Allow USB debugging connection?"
 msgstr ""
-"Se detectó una petición entrante para permitir depuración remota. ¿Permitir "
-"conexión?"
+
+#: remoteDebuggerPromptTCP2
+msgid ""
+"Allow remote debugging connection from <code>{{host}}:{{port}}</code>?<br/"
+"><br/>This connection requires a QR code to be scanned in order to "
+"authenticate the remote device's certificate.  You can avoid future scans by "
+"remembering the device."
+msgstr ""
+
+#. # LOCALIZATION NOTE (remoteDebuggerPrompt-deny): This button will deny an
+#. # an incoming remote debugger connection.
+#: remoteDebuggerPrompt-deny
+#, fuzzy
+msgctxt "remoteDebuggerPrompt-deny"
+msgid "Deny"
+msgstr "Denegar"
+
+#. # LOCALIZATION NOTE (remoteDebuggerPrompt-allow): This button will allow an
+#. # an incoming remote debugger connection.
+#: remoteDebuggerPrompt-allow
+#, fuzzy
+msgctxt "remoteDebuggerPrompt-allow"
+msgid "Allow"
+msgstr "Permitir"
+
+#. # LOCALIZATION NOTE (remoteDebuggerPrompt-scan): This button will start a QR
+#. # code scanner to authenticate an incoming remote debugger connection.  The
+#. # connection will be allowed assuming the scan succeeds.
+#: remoteDebuggerPrompt-scan
+msgid "Scan"
+msgstr ""
+
+#. # LOCALIZATION NOTE (remoteDebuggerPrompt-scanAndRemember): This button will
+#. # start a QR code scanner to authenticate an incoming remote debugger
+#. # connection.  The connection will be allowed assuming the scan succeeds, and
+#. # the other endpoint's certificate will be saved to skip future scans for this
+#. # client.
+#: remoteDebuggerPrompt-scanAndRemember
+msgid "Scan and Remember"
+msgstr ""
+
+#. # DevTools Authentication
+#. # LOCALIZATION NOTE (devtools-auth-scan2): This header text appears above a live
+#. # video feed that is being actively scanned for QR codes.  The expected QR code
+#. # has already been displayed by the client trying to connect (such as desktop
+#. # Firefox via WebIDE), so you just need to aim this device at the QR code.
+#: devtools-auth-scan2
+msgid "Scanning for the QR code displayed on your other device…"
+msgstr ""
 
 #. # fullscreen permission
 #. # LOCALIZATION NOTE {{origin}} is the origin of the site which has requested fullscreen, e.g. http://example.com is now fullscreen. It includes protocol + hostname.
@@ -1934,7 +1984,8 @@ msgstr "El modo de ahorro de energía está activado."
 
 #. # Low device storage
 #: low-device-storage
-msgid "Device space low.\n"
+#, fuzzy
+msgid "Device space low."
 msgstr "Poco espacio en disco.\n"
 
 #. # LOCALIZATION NOTE {{value}} is the amount of remaining free space expressed
@@ -2020,9 +2071,17 @@ msgstr "SIM {{id}}"
 msgid "Call {{number}}?"
 msgstr "¿Llamar a {{number}}?"
 
-#: icc-alertMessage-defaultmessage
-msgid "Sending message"
-msgstr "Enviando mensaje"
+#: icc-alertMessage-send-ss
+msgid "Send SS"
+msgstr ""
+
+#: icc-alertMessage-send-ussd
+msgid "Send USSD"
+msgstr ""
+
+#: icc-alertMessage-send-sms
+msgid "Send SMS"
+msgstr ""
 
 #: icc-confirmMessage-defaultmessage
 msgid "Send message?"
@@ -2071,11 +2130,6 @@ msgstr "{{appName}}: {{name}}"
 #: ime-switching-tip
 msgid "Tap to switch input method"
 msgstr "Pulse para cambiar método de entrada"
-
-#. # Shrinking UI
-#: shrinking-tip
-msgid "Swipe to share"
-msgstr "Deslice para compartir"
 
 #. # Download Manager
 #: download_started
@@ -2200,6 +2254,14 @@ msgstr "Compartir vídeo"
 msgid "Share Audio"
 msgstr "Compartir audio"
 
+#: copy-image
+msgid "Copy Image"
+msgstr ""
+
+#: copy-link
+msgid "Copy Link"
+msgstr ""
+
 #. # Private Browser
 #: private-window
 msgid "Private Window"
@@ -2227,6 +2289,148 @@ msgstr ""
 #: okCharsLeft
 msgid "OK ({{n}})"
 msgstr "Aceptar ({{n}})"
+
+#. # Pinning the Web
+#. # LOCALIZATION NOTE (pinning-pin): This string is used as
+#. # button label. "Pin" indicates the action to pin a website.
+#: pinning-pin
+msgid "Pin"
+msgstr ""
+
+#. # LOCALIZATION NOTE (pinning-pin-type): This string is used as
+#. # panel title. "Pin" indicates the action to pin a site or page.
+#: pinning-pin-type
+msgid "Pin \"{{type}}\""
+msgstr ""
+
+#. # LOCALIZATION NOTE (from): is followed (on a new line) by the URL source of
+#. # the pin. See also: https://bug1168948.bmoattachments.org/attachment.cgi?id=8639285
+#: from
+msgid "From"
+msgstr ""
+
+#. # Multi-Screen
+#: multiscreen-pick
+msgid "Choose an external display"
+msgstr ""
+
+#. # Achivements
+#: achievements-add-on-all-star-name
+msgid "Add-on All-Star"
+msgstr ""
+
+#: achievements-add-on-all-star-description
+msgid "Use Customizer to create your own add-on"
+msgstr ""
+
+#. # View Source
+#: viewSourceHeader
+msgid "View Source"
+msgstr ""
+
+#~ msgctxt "statusbarFlightMode.ariaLabel"
+#~ msgid "Airplane mode on"
+#~ msgstr "Modo avión activado"
+
+#~ msgctxt "statusbarIconOn-bluetooth"
+#~ msgid "Bluetooth on"
+#~ msgstr "Bluetooth activado"
+
+#~ msgctxt "updateAvailableInfo.innerHTML"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "updateAvailableInfo.innerHTML[few]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr ""
+#~ "{{ n }} actualizaciones disponibles. <span>Pulse para más información.</"
+#~ "span>"
+
+#~ msgctxt "updateAvailableInfo.innerHTML[many]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr ""
+#~ "{{ n }} actualizaciones disponibles. <span>Pulse para más información.</"
+#~ "span>"
+
+#~ msgctxt "updateAvailableInfo.innerHTML[other]"
+#~ msgid "{{ n }} updates available. <span>Tap for more info.</span>"
+#~ msgstr ""
+#~ "{{ n }} actualizaciones disponibles. <span>Pulse para más información.</"
+#~ "span>"
+
+#~ msgid "Logs saved to storage"
+#~ msgstr "Registros guardados"
+
+#~ msgid "Sending Bluetooth transfer…"
+#~ msgstr "Enviando transferencia Bluetooth…"
+
+#~ msgid "Receiving Bluetooth transfer…"
+#~ msgstr "Recibiendo transferencia Bluetooth…"
+
+#~ msgid ""
+#~ "<bdi>{{deviceName}}</bdi> would like to transfer <bdi>{{fileName}} "
+#~ "({{fileSize}}).</bdi>"
+#~ msgstr ""
+#~ "A <bdi>{{deviceName}}</bdi> le gustaría transferir <bdi>{{fileName}} "
+#~ "({{fileSize}}).</bdi>"
+
+#~ msgid "Review transfer request."
+#~ msgstr "Revise la petición de transferencia."
+
+#~ msgid "Bytes"
+#~ msgstr "Bytes"
+
+#~ msgctxt "byteUnit-KB"
+#~ msgid "KB"
+#~ msgstr "Kb"
+
+#~ msgctxt "byteUnit-MB"
+#~ msgid "MB"
+#~ msgstr "Mb"
+
+#~ msgctxt "byteUnit-GB"
+#~ msgid "GB"
+#~ msgstr "Gb"
+
+#~ msgctxt "byteUnit-TB"
+#~ msgid "TB"
+#~ msgstr "Tb"
+
+#~ msgctxt "byteUnit-PB"
+#~ msgid "PB"
+#~ msgstr "Pb"
+
+#~ msgid "EB"
+#~ msgstr "Eb"
+
+#~ msgid "ZB"
+#~ msgstr "Zb"
+
+#~ msgid "YB"
+#~ msgstr "Yb"
+
+#~ msgid "{{size}} {{unit}}"
+#~ msgstr "{{size}} {{unit}}"
+
+#~ msgctxt "continueFileTransfer"
+#~ msgid "Continue"
+#~ msgstr "Continuar"
+
+#~ msgid "File could not be sent"
+#~ msgstr "No se envió el archivo"
+
+#~ msgid ""
+#~ "An incoming request to permit remote debugging connection was detected. "
+#~ "Allow connection?"
+#~ msgstr ""
+#~ "Se detectó una petición entrante para permitir depuración remota. "
+#~ "¿Permitir conexión?"
+
+#~ msgid "Sending message"
+#~ msgstr "Enviando mensaje"
+
+#~ msgid "Swipe to share"
+#~ msgstr "Deslice para compartir"
 
 #~ msgid ""
 #~ "The browser won’t keep any browser history, cookies, or temporary "

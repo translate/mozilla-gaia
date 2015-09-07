@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-01 05:45+0000\n"
+"POT-Creation-Date: 2015-09-07 14:45+0000\n"
 "PO-Revision-Date: 2015-04-20 11:34+0000\n"
 "Last-Translator: Veeven <veeven@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1429529693.000000\n"
@@ -59,6 +59,18 @@ msgstr "అయినది"
 #: delete
 msgid "Delete"
 msgstr "తొలగించు"
+
+#: delete-thread
+msgid "Delete thread"
+msgstr ""
+
+#: mark-as-read
+msgid "Mark as read"
+msgstr ""
+
+#: mark-as-unread
+msgid "Mark as unread"
+msgstr ""
 
 #: deleting-messages
 msgid "Deleting…"
@@ -154,6 +166,8 @@ msgid "Select Messages"
 msgstr "సందేశాలను తొలగించు"
 
 #: settings
+#, fuzzy
+msgctxt "settings"
 msgid "Settings"
 msgstr "అమరికలు"
 
@@ -179,8 +193,9 @@ msgctxt "message"
 msgid "Message"
 msgstr "సందేశం"
 
-#: messagesInput_placeholder
-msgctxt "messagesInput_placeholder"
+#: messagesInput.title
+#, fuzzy
+msgctxt "messagesInput.title"
 msgid "Message"
 msgstr "సందేశం"
 
@@ -214,6 +229,8 @@ msgid ""
 msgstr ""
 
 #: newMessage
+#, fuzzy
+msgctxt "newMessage"
 msgid "New message"
 msgstr "కొత్త సందేశం"
 
@@ -374,16 +391,6 @@ msgstr ""
 msgid "Message size:"
 msgstr "సందేశ పరిమాణం:"
 
-#: report-dateTimeFormat12
-#, fuzzy
-msgid "%e %B %Y, {{shortTimeFormat12}}"
-msgstr "%e %B %Y, {{shortTimeFormat}}"
-
-#: report-dateTimeFormat24
-#, fuzzy
-msgid "%e %B %Y, {{shortTimeFormat24}}"
-msgstr "%e %B %Y, {{shortTimeFormat}}"
-
 #: report-to-title
 msgid "To"
 msgstr ""
@@ -457,10 +464,9 @@ msgstr "ఉన్న చిత్తును ప్రతిస్థాపి�
 msgid "Save as Draft"
 msgstr "చిత్తుగా భద్రపరచు"
 
-#: discard-message
-msgctxt "discard-message"
-msgid "Discard"
-msgstr "విస్మరించు"
+#: delete-draft
+msgid "Delete draft"
+msgstr ""
 
 #: discard-sms
 msgid "Are you sure you want to discard this message?"
@@ -479,15 +485,88 @@ msgid "Resend this message"
 msgstr "ఈ సందేశాన్ని మళ్ళీ పంపించు"
 
 #: deleteMessage-confirmation
+#, fuzzy
+msgctxt "deleteMessage-confirmation"
 msgid "Delete selected message?"
 msgstr "ఎంచుకున్న సందేశాన్ని తొలగించాలా?"
 
-#: deleteMessages-confirmation
-msgid "Delete selected messages?"
+#: deleteMessages-confirmation-message
+#, fuzzy
+msgctxt "deleteMessages-confirmation-message"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: deleteMessages-confirmation-message[zero]
+msgid "Please select messages to be deleted."
+msgstr ""
+
+#: deleteMessages-confirmation-message[one]
+#, fuzzy
+msgctxt "deleteMessages-confirmation-message[one]"
+msgid "Delete selected message?"
+msgstr "ఎంచుకున్న సందేశాన్ని తొలగించాలా?"
+
+#: deleteMessages-confirmation-message[two]
+#, fuzzy
+msgctxt "deleteMessages-confirmation-message[two]"
+msgid "Delete {{n}} selected messages?"
 msgstr "ఎంచుకున్న సందేశాలను తొలగించాలా?"
 
-#: deleteThreads-confirmation2
-msgid "Delete selected message threads?"
+#: deleteMessages-confirmation-message[few]
+#, fuzzy
+msgctxt "deleteMessages-confirmation-message[few]"
+msgid "Delete {{n}} selected messages?"
+msgstr "ఎంచుకున్న సందేశాలను తొలగించాలా?"
+
+#: deleteMessages-confirmation-message[many]
+#, fuzzy
+msgctxt "deleteMessages-confirmation-message[many]"
+msgid "Delete {{n}} selected messages?"
+msgstr "ఎంచుకున్న సందేశాలను తొలగించాలా?"
+
+#: deleteMessages-confirmation-message[other]
+#, fuzzy
+msgctxt "deleteMessages-confirmation-message[other]"
+msgid "Delete {{n}} selected messages?"
+msgstr "ఎంచుకున్న సందేశాలను తొలగించాలా?"
+
+#: deleteThreads-confirmation-message
+#, fuzzy
+msgctxt "deleteThreads-confirmation-message"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: deleteThreads-confirmation-message[zero]
+msgid "Please select message threads to be deleted."
+msgstr ""
+
+#: deleteThreads-confirmation-message[one]
+#, fuzzy
+msgid "Delete selected message thread?"
+msgstr "ఎంచుకున్న సందేశ త్రెడ్లు తొలగించాలా?"
+
+#: deleteThreads-confirmation-message[two]
+#, fuzzy
+msgctxt "deleteThreads-confirmation-message[two]"
+msgid "Delete {{n}} selected message threads?"
+msgstr "ఎంచుకున్న సందేశ త్రెడ్లు తొలగించాలా?"
+
+#: deleteThreads-confirmation-message[few]
+#, fuzzy
+msgctxt "deleteThreads-confirmation-message[few]"
+msgid "Delete {{n}} selected message threads?"
+msgstr "ఎంచుకున్న సందేశ త్రెడ్లు తొలగించాలా?"
+
+#: deleteThreads-confirmation-message[many]
+#, fuzzy
+msgctxt "deleteThreads-confirmation-message[many]"
+msgid "Delete {{n}} selected message threads?"
+msgstr "ఎంచుకున్న సందేశ త్రెడ్లు తొలగించాలా?"
+
+#: deleteThreads-confirmation-message[other]
+#, fuzzy
+msgctxt "deleteThreads-confirmation-message[other]"
+msgid "Delete {{n}} selected message threads?"
 msgstr "ఎంచుకున్న సందేశ త్రెడ్లు తొలగించాలా?"
 
 #: new-message-notice-text
@@ -572,15 +651,14 @@ msgstr ""
 
 #. #LOCALIZATION NOTE (fdnErrorBody): the English translation does not need the
 #. # actual number of phone numbers. If your translation needs it, you can still add it
-#. # using the parameter {{ n }}. Also take into account that you could add HTML so be
-#. # careful with the content, it may affect to the whole app.
-#: fdnErrorBody.innerHTML
+#. # using the parameter {{ n }}.
+#: fdnErrorBody
 #, fuzzy
-msgctxt "fdnErrorBody.innerHTML"
+msgctxt "fdnErrorBody"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: fdnErrorBody.innerHTML[one]
+#: fdnErrorBody[one]
 #, fuzzy
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
@@ -589,9 +667,9 @@ msgstr ""
 "ఎఫ్‌డిఎన్ (ఫిక్స్‌డ్ డైలింగ్ సంఖ్యలు) క్రియాశీలమైను. ఎస్ఎమ్ఎస్ కేంద్రం మరియు కింది స్వీకర్తలు మీ ఎఫ్‌డిఎన్ "
 "జాబితానందు ఉండునట్లు చూసుకోండి:<br />{{ numbers }}"
 
-#: fdnErrorBody.innerHTML[two]
+#: fdnErrorBody[two]
 #, fuzzy
-msgctxt "fdnErrorBody.innerHTML[two]"
+msgctxt "fdnErrorBody[two]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipients are in your FDN list:"
@@ -599,9 +677,9 @@ msgstr ""
 "ఎఫ్‌డిఎన్ (ఫిక్స్‌డ్ డైలింగ్ సంఖ్యలు) క్రియాశీలమైను. ఎస్ఎమ్ఎస్ కేంద్రం మరియు కింది స్వీకర్తలు మీ ఎఫ్‌డిఎన్ "
 "జాబితానందు ఉండునట్లు చూసుకోండి:<br />{{ numbers }}"
 
-#: fdnErrorBody.innerHTML[few]
+#: fdnErrorBody[few]
 #, fuzzy
-msgctxt "fdnErrorBody.innerHTML[few]"
+msgctxt "fdnErrorBody[few]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipients are in your FDN list:"
@@ -609,9 +687,9 @@ msgstr ""
 "ఎఫ్‌డిఎన్ (ఫిక్స్‌డ్ డైలింగ్ సంఖ్యలు) క్రియాశీలమైను. ఎస్ఎమ్ఎస్ కేంద్రం మరియు కింది స్వీకర్తలు మీ ఎఫ్‌డిఎన్ "
 "జాబితానందు ఉండునట్లు చూసుకోండి:<br />{{ numbers }}"
 
-#: fdnErrorBody.innerHTML[many]
+#: fdnErrorBody[many]
 #, fuzzy
-msgctxt "fdnErrorBody.innerHTML[many]"
+msgctxt "fdnErrorBody[many]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipients are in your FDN list:"
@@ -619,9 +697,9 @@ msgstr ""
 "ఎఫ్‌డిఎన్ (ఫిక్స్‌డ్ డైలింగ్ సంఖ్యలు) క్రియాశీలమైను. ఎస్ఎమ్ఎస్ కేంద్రం మరియు కింది స్వీకర్తలు మీ ఎఫ్‌డిఎన్ "
 "జాబితానందు ఉండునట్లు చూసుకోండి:<br />{{ numbers }}"
 
-#: fdnErrorBody.innerHTML[other]
+#: fdnErrorBody[other]
 #, fuzzy
-msgctxt "fdnErrorBody.innerHTML[other]"
+msgctxt "fdnErrorBody[other]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipients are in your FDN list:"
@@ -794,10 +872,11 @@ msgstr "జోడింపును ప్రతిస్థాపించు"
 msgid "Unsent Message"
 msgstr "సందేశం పంపవద్దు"
 
-#: unsent-message-description
+#: unsent-message-text
+#, fuzzy
 msgid ""
-"Your previous message was not sent. Do you want to edit the unsent message "
-"or discard it and continue?"
+"Your previous message was not sent. Do you want to discard the unsent "
+"message and continue?"
 msgstr ""
 "మీ గత సందేశం పంపలేదు. పంపని సందేశం సరికూర్చాలనుకుంటున్నారా లేక దానిని రద్దుచేసి "
 "కొనసాగాలనుకుంటున్నారా?"
@@ -808,13 +887,17 @@ msgid "Edit"
 msgstr "సరిచేయి"
 
 #: unsent-message-option-discard
-msgctxt "unsent-message-option-discard"
+#, fuzzy
 msgid "Discard"
 msgstr "విస్మరించు"
 
 #: message-options
 msgid "Message options"
 msgstr "సందేశ ఎంపికలు"
+
+#: thread-options
+msgid "Thread options"
+msgstr ""
 
 #: forward
 msgid "Forward"
@@ -870,13 +953,17 @@ msgstr "ఇతర"
 msgid "today"
 msgstr "నేడు"
 
+#: todayWithTime
+msgid "today {{ time }}"
+msgstr ""
+
 #: yesterday
 msgid "yesterday"
 msgstr "నిన్న"
 
-#: incorrectDate
-msgid "(incorrect date)"
-msgstr "(తేదీ తప్పు)"
+#: yesterdayWithTime
+msgid "yesterday {{ time }}"
+msgstr ""
 
 #. #Phone Context Menu
 #: addToExistingContact
@@ -892,6 +979,8 @@ msgid "View contact"
 msgstr "పరిచయాన్ని చూడు"
 
 #: call
+#, fuzzy
+msgctxt "call"
 msgid "Call"
 msgstr "కాల్"
 
@@ -1013,6 +1102,10 @@ msgstr "సిమ్ {{id}}"
 msgid "SIM {{id}}, {{detailString}}"
 msgstr ""
 
+#: dsds-unknown-sim
+msgid "unknown SIM"
+msgstr ""
+
 #: dsds-notification-title-with-sim
 msgid "({{sim}}) {{sender}}"
 msgstr "({{sim}}) {{sender}}"
@@ -1034,16 +1127,6 @@ msgstr "{{n}}"
 msgid "using SIM {{n}}"
 msgstr "సిమ్ {{n}} వాడి"
 
-#. # Date formats specific for SMS app
-#. # LOCALIZATION NOTE (expiry-date-format): this is a date format.
-#. # See http://pubs.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#. # %A is the full weekday name from shared/date/date.properties and it might
-#. # not be in the correct grammatical case. To work around this issue, you can
-#. # use a different format like "%m/%d/%Y".
-#: expiry-date-format
-msgid "%A, %b %e"
-msgstr "%A, %b %e"
-
 #. # Labels for screen reader
 #: attach-button.ariaLabel
 msgid "Add attachment"
@@ -1064,6 +1147,28 @@ msgstr ""
 #: is-draft.ariaLabel
 msgid "Draft"
 msgstr ""
+
+#: actionsButton.ariaLabel
+msgid "Actions"
+msgstr ""
+
+#: settingsButton.ariaLabel
+#, fuzzy
+msgctxt "settingsButton.ariaLabel"
+msgid "Settings"
+msgstr "అమరికలు"
+
+#: composeLink.ariaLabel
+#, fuzzy
+msgctxt "composeLink.ariaLabel"
+msgid "New message"
+msgstr "కొత్త సందేశం"
+
+#: callButton.ariaLabel
+#, fuzzy
+msgctxt "callButton.ariaLabel"
+msgid "Call"
+msgstr "కాల్"
 
 #. # Message statuses
 #: message-delivery-status-sending
@@ -1106,6 +1211,60 @@ msgstr "రద్దుచేయి"
 msgctxt "modal-dialog-default-title"
 msgid "Messages"
 msgstr "సందేశాలు"
+
+#~ msgctxt "messagesInput_placeholder"
+#~ msgid "Message"
+#~ msgstr "సందేశం"
+
+#, fuzzy
+#~ msgid "%e %B %Y, {{shortTimeFormat12}}"
+#~ msgstr "%e %B %Y, {{shortTimeFormat}}"
+
+#, fuzzy
+#~ msgid "%e %B %Y, {{shortTimeFormat24}}"
+#~ msgstr "%e %B %Y, {{shortTimeFormat}}"
+
+#, fuzzy
+#~ msgctxt "fdnErrorBody.innerHTML"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#, fuzzy
+#~ msgctxt "fdnErrorBody.innerHTML[few]"
+#~ msgid ""
+#~ "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and "
+#~ "the following recipients are in your FDN list:"
+#~ msgstr ""
+#~ "ఎఫ్‌డిఎన్ (ఫిక్స్‌డ్ డైలింగ్ సంఖ్యలు) క్రియాశీలమైను. ఎస్ఎమ్ఎస్ కేంద్రం మరియు కింది స్వీకర్తలు మీ ఎఫ్‌డిఎన్ "
+#~ "జాబితానందు ఉండునట్లు చూసుకోండి:<br />{{ numbers }}"
+
+#, fuzzy
+#~ msgctxt "fdnErrorBody.innerHTML[many]"
+#~ msgid ""
+#~ "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and "
+#~ "the following recipients are in your FDN list:"
+#~ msgstr ""
+#~ "ఎఫ్‌డిఎన్ (ఫిక్స్‌డ్ డైలింగ్ సంఖ్యలు) క్రియాశీలమైను. ఎస్ఎమ్ఎస్ కేంద్రం మరియు కింది స్వీకర్తలు మీ ఎఫ్‌డిఎన్ "
+#~ "జాబితానందు ఉండునట్లు చూసుకోండి:<br />{{ numbers }}"
+
+#, fuzzy
+#~ msgctxt "fdnErrorBody.innerHTML[other]"
+#~ msgid ""
+#~ "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and "
+#~ "the following recipients are in your FDN list:"
+#~ msgstr ""
+#~ "ఎఫ్‌డిఎన్ (ఫిక్స్‌డ్ డైలింగ్ సంఖ్యలు) క్రియాశీలమైను. ఎస్ఎమ్ఎస్ కేంద్రం మరియు కింది స్వీకర్తలు మీ ఎఫ్‌డిఎన్ "
+#~ "జాబితానందు ఉండునట్లు చూసుకోండి:<br />{{ numbers }}"
+
+#~ msgctxt "unsent-message-option-discard"
+#~ msgid "Discard"
+#~ msgstr "విస్మరించు"
+
+#~ msgid "(incorrect date)"
+#~ msgstr "(తేదీ తప్పు)"
+
+#~ msgid "%A, %b %e"
+#~ msgstr "%A, %b %e"
 
 #~ msgctxt "fdnBlocked2Body.innerHTML"
 #~ msgid "{[ plural(n) ]}"

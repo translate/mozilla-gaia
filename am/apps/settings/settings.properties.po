@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-27 18:45+0000\n"
+"POT-Creation-Date: 2015-09-07 14:45+0000\n"
 "PO-Revision-Date: 2015-08-24 18:04+0000\n"
 "Last-Translator: samson <sambelet@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1440439462.000000\n"
@@ -63,11 +63,17 @@ msgctxt "reset"
 msgid "Reset"
 msgstr "እንደ ነበር መመለሻ"
 
+#: factory-reset
+msgid "Factory Reset"
+msgstr ""
+
 #: cancel
 msgid "Cancel"
 msgstr "መሰረዣ"
 
 #: close
+#, fuzzy
+msgctxt "close"
 msgid "Close"
 msgstr "መዝጊያ"
 
@@ -88,6 +94,8 @@ msgid "Pair"
 msgstr "ማጣመሪያ"
 
 #: add
+#, fuzzy
+msgctxt "add"
 msgid "Add"
 msgstr "መጨመሪያ"
 
@@ -146,10 +154,26 @@ msgid "Network & Connectivity"
 msgstr "ኔትዎርክ & ግንኙነት"
 
 #: airplaneMode
+#, fuzzy
+msgctxt "airplaneMode"
+msgid "Airplane Mode"
+msgstr "በ አውሮፕላን ዘዴ"
+
+#: airplaneMode.ariaLabel
+#, fuzzy
+msgctxt "airplaneMode.ariaLabel"
 msgid "Airplane Mode"
 msgstr "በ አውሮፕላን ዘዴ"
 
 #: geolocation
+#, fuzzy
+msgctxt "geolocation"
+msgid "Geolocation"
+msgstr "አሁን ያሉበት አካባቢ"
+
+#: geolocation.ariaLabel
+#, fuzzy
+msgctxt "geolocation.ariaLabel"
 msgid "Geolocation"
 msgstr "አሁን ያሉበት አካባቢ"
 
@@ -249,8 +273,9 @@ msgid "Wi-Fi Sleep"
 msgstr "ዋይ-ፋይ ተኝቷል"
 
 #: wifi-sleep-description
+#, fuzzy
 msgid ""
-"Enable to automatically turn off Wi-Fi during sleep to save battery power.  "
+"Enable to automatically turn off Wi-Fi during sleep to save battery power."
 msgstr "የ ባትሪ ሐይል ለማዳን በሚተኛ ጊዜ ራሱ በራሱ ዋይ-ፋይ ማጥፊያ ማስቻያ"
 
 #: manageNetworks
@@ -279,12 +304,19 @@ msgid "{{manageNetworks}}"
 msgstr "{{manageNetworks}}"
 
 #: manageCertificates
-msgid "Manage certificates"
+#, fuzzy
+msgid "Manage Certificates"
 msgstr "የምስክር ወረቀቶች አስተዳዳሪ"
 
-#: manageCert
-msgid "Manage Cert."
-msgstr "የምስክር ወረቀቶች አስተዳዳሪ"
+#. # LOCALIZATION NOTE (manageCertificates-header): if you leave the original
+#. # en-US value "{{manageCertificates}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID
+#. # "manageCertificates".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: manageCertificates-header
+msgid "{{manageCertificates}}"
+msgstr ""
 
 #: joinHiddenNetwork
 msgid "Join Hidden Network"
@@ -438,6 +470,8 @@ msgid "No known networks"
 msgstr "ምንም የታወቁ ኔትዎርኮች የሉም"
 
 #: edit
+#, fuzzy
+msgctxt "edit"
 msgid "Edit"
 msgstr "ማረሚያ"
 
@@ -450,15 +484,18 @@ msgid "No certificates imported"
 msgstr "ምንም የምስክር ወረቀት አልመጣም"
 
 #: deleteCertificate
-msgid "Delete certificate"
+#, fuzzy
+msgid "Delete Certificate"
 msgstr "የምስክር ወረቀት ማጥፊያ"
 
 #: importCertificate
-msgid "Import certificate"
+#, fuzzy
+msgid "Import Certificate"
 msgstr "የምስክር ወረቀት ማምጫ"
 
 #: selectCertificateFile
-msgid "Select certificate file"
+#, fuzzy
+msgid "Select Certificate File"
 msgstr "የምስክር ወረቀት ፋይል ይምረጡ"
 
 #: enterCertificateNickname
@@ -570,6 +607,8 @@ msgstr "መሰረዝ አልተቻለም WPS [{{error}}]"
 
 #. # Connectivity :: Call
 #: callSettings
+#, fuzzy
+msgctxt "callSettings"
 msgid "Call Settings"
 msgstr "ጥሪ ማሰናጃዎች"
 
@@ -678,7 +717,7 @@ msgstr "በማይደረስ ጊዜ ወደ ፊት ማስተላለፊያ"
 msgid "When unreachable"
 msgstr "በማይደረስ ጊዜ"
 
-#: callForwardingForwardingVoiceToNumber.innerHTML
+#: callForwardingForwardingVoiceToNumber
 msgid "Voice calls to <bdi>{{number}}</bdi>"
 msgstr "የ ድምፅ ጥሪዎች ለ <bdi>{{number}}</bdi>"
 
@@ -945,10 +984,6 @@ msgstr ""
 msgid "The PIN2 code is incorrect."
 msgstr "የ ፒን2 ኮድ የተሳሳተ ነው"
 
-#: fdn-enabled-warning
-msgid "Call forwarding is disabled by FDN."
-msgstr "ጥሪ ወደፊት ማስተላለፍ ተሰናክሏል በ FDN."
-
 #: fdnContact-name
 msgid "name"
 msgstr "ስም"
@@ -990,6 +1025,8 @@ msgstr "ከፍተኛው FDN ላይ ደርሰዋል: ተጨማሪ ቁጥር መ�
 
 #. # Connectivity :: Messaging
 #: messagingSettings
+#, fuzzy
+msgctxt "messagingSettings"
 msgid "Messaging Settings"
 msgstr "መልእክት ማሰናጃዎች"
 
@@ -1022,13 +1059,9 @@ msgstr "መግለጫዎች ማንበቢያ"
 msgid "Request read report for each message sent"
 msgstr "ለ እያንዳንዱ ለ ተላከው መልእክት የ ማንበብያ መግለጫዎች መጠየቂያ"
 
-#. # LOCALIZATION NOTE (mmsTitle): LRE (&#x202a;) and PDF (&#x202c;)
-#. # force the proper directionality of parentheses at the end of the string
-#. # regardless of the direction of the surrounding layout. Remove them only
-#. # if the translation puts them between other text.
-#: mmsTitle.innerHTML
-msgid "&#x202a;Multimedia Messaging (MMS)&#x202c;"
-msgstr "&#x202a;በርካታ መገናኛ መልእክት (MMS)&#x202c;"
+#: mmsTitle
+msgid "Multimedia Messaging (MMS)"
+msgstr "የ በርካታ መገናኛ መልእክቶች (MMS)"
 
 #: auto-retrieve
 msgid "Auto Retrieve"
@@ -1094,6 +1127,8 @@ msgstr "መረጃው ዝግጁ አይደለም"
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
+#, fuzzy
+msgctxt "cellularAndData"
 msgid "Cellular & Data"
 msgstr "ሴሉላር & ዳታ"
 
@@ -1198,6 +1233,11 @@ msgstr "WCDMA ይመረጣል"
 msgid "Auto (2G/3G)"
 msgstr "በራሱ (2G/3G)"
 
+#: operator-networkType-auto-3G-4G
+#, fuzzy
+msgid "Auto (3G/4G)"
+msgstr "በራሱ (2G/3G)"
+
 #: operator-networkType-auto-CDMA-EVDO
 msgid "Auto (CDMA/EVDO)"
 msgstr "በራሱ (CDMA/EVDO)"
@@ -1208,6 +1248,11 @@ msgstr "በራሱ (WCDMA/GSM)"
 
 #: operator-networkType-auto-LTE-WCDMA-GSM
 msgid "Auto (LTE/WCDMA/GSM)"
+msgstr "በራሱ (LTE/WCDMA/GSM)"
+
+#: operator-networkType-auto-LTE-WCDMA
+#, fuzzy
+msgid "Auto (LTE/WCDMA)"
 msgstr "በራሱ (LTE/WCDMA/GSM)"
 
 #: operator-networkType-auto-LTE-CDMA-EVDO
@@ -1235,20 +1280,47 @@ msgstr "በእጅ"
 msgid "Turn automatic selection off to view available network operators."
 msgstr "ራሱ በራሱ መምረጫን ያጥፉ ለመመልከት ዝግጁ የ ኔትዎርክ አንቀሳቃሾችን"
 
-#: operator-status-connecting
-msgctxt "operator-status-connecting"
+#: operator-info-connecting
+#, fuzzy
+msgctxt "operator-info-connecting"
 msgid "Connecting…"
-msgstr "በመገናኘት ላይ..."
+msgstr "በመገናኘት ላይ…"
 
-#: operator-status-connectingfailed
-msgctxt "operator-status-connectingfailed"
+#: operator-info-failed
+#, fuzzy
+msgctxt "operator-info-failed"
 msgid "Connection failed"
 msgstr "ግንኙነቱ ወድቋል"
 
-#: operator-status-connected
-msgctxt "operator-status-connected"
+#: operator-info-connected
+#, fuzzy
+msgctxt "operator-info-connected"
 msgid "Connected"
 msgstr "ተገናኝቷል"
+
+#: operator-info-available
+#, fuzzy
+msgctxt "operator-info-available"
+msgid "Available"
+msgstr "ዝግጁ"
+
+#: operator-info-current
+#, fuzzy
+msgctxt "operator-info-current"
+msgid "Connected"
+msgstr "ተገናኝቷል"
+
+#: operator-info-forbidden
+#, fuzzy
+msgctxt "operator-info-forbidden"
+msgid "Forbidden"
+msgstr "የተከለከለ"
+
+#: operator-info-unknown
+#, fuzzy
+msgctxt "operator-info-unknown"
+msgid "Unknown state"
+msgstr "ያልታወቀ ሁኔታ"
 
 #: operator-roamingPreference
 msgid "Roaming preference"
@@ -1348,6 +1420,20 @@ msgstr "IMS ማሰናጃዎች"
 #: imsSettings-header2
 msgid "{{imsSettings}}"
 msgstr "{{imsSettings}}"
+
+#: fotaSettings
+msgid "FOTA Settings"
+msgstr ""
+
+#. # LOCALIZATION NOTE (fotaSettings-header): if you leave the original
+#. # en-US value "{{fotaSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "fotaSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: fotaSettings-header
+#, fuzzy
+msgid "{{fotaSettings}}"
+msgstr "{{dataSettings}}"
 
 #: apn-editor-header
 msgid "APN Editor"
@@ -1471,10 +1557,14 @@ msgid "This resets the settings to default values. This cannot be undone."
 msgstr "ይህ እንደ ነበር ይመልሳል ማሰናጃዎችን ወደ ነባር ዋጋቸው: ይጠንቀቁ ይህን መተው አይቻልም"
 
 #: state-unknown
+#, fuzzy
+msgctxt "state-unknown"
 msgid "Unknown state"
 msgstr "ያልታወቀ ሁኔታ"
 
 #: state-available
+#, fuzzy
+msgctxt "state-available"
 msgid "Available"
 msgstr "ዝግጁ"
 
@@ -1489,6 +1579,8 @@ msgid "Connected"
 msgstr "ተገናኝቷል"
 
 #: state-forbidden
+#, fuzzy
+msgctxt "state-forbidden"
 msgid "Forbidden"
 msgstr "የተከለከለ"
 
@@ -1516,6 +1608,8 @@ msgstr "APN ማሰናጃዎች እንደ ነበር መመለሻ"
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
+#, fuzzy
+msgctxt "bluetooth"
 msgid "Bluetooth"
 msgstr "ብሉቱዝ"
 
@@ -1671,9 +1765,13 @@ msgstr "የኔን አካል እንደ ገና መሰየሚያ"
 msgid "Unknown device"
 msgstr "ያልታወቀ አካል"
 
-#: change-phone-name-desc
-msgid "Change the name of your device as it appears in your computer"
-msgstr "በ እርስዎ ኮምፒዩተር ላይ እንደሚታየው የ እርስዎን አካል ስም ይቀይሩ"
+#: change-btdevice-name
+msgid "Change device name"
+msgstr ""
+
+#: change-btdevice-name-desc
+msgid "This name will appear on your other Bluetooth devices"
+msgstr ""
 
 #: bluetooth-new-name
 msgid "New name"
@@ -1711,17 +1809,29 @@ msgid ""
 "from it."
 msgstr "አሁን ከዚህ አካል ጋር ተገናኝተዋል: መለያየት ግንኙነቱን ይለያየዋል"
 
+#: unpair-confirm
+msgid ""
+"{{unpair-title}}\n"
+"{{unpair-msg}}"
+msgstr ""
+
 #. # Connectivity :: NFC
 #: nfc
+#, fuzzy
+msgctxt "nfc"
+msgid "NFC"
+msgstr "NFC"
+
+#: nfc.ariaLabel
+#, fuzzy
+msgctxt "nfc.ariaLabel"
 msgid "NFC"
 msgstr "NFC"
 
 #. # Connectivity :: Internet Sharing
-#: SSIDCannotBeEmpty
-msgid "The SSID cannot be empty"
-msgstr "SSID ባዶ መሆን የለበትም"
-
 #: internetSharing
+#, fuzzy
+msgctxt "internetSharing"
 msgid "Internet Sharing"
 msgstr "ኢንተርኔት ማካፈያ"
 
@@ -1802,7 +1912,7 @@ msgstr "{{hotspotSettings}}"
 msgid "SSID Network Name"
 msgstr "SSID ኔትዎርክ ስም"
 
-#: hotspot-open
+#: hotspot-security-open
 msgid "open"
 msgstr "መክፈቻ"
 
@@ -1813,8 +1923,8 @@ msgstr "መክፈቻ"
 #. # and PDF (&#x202c;) entities to these translations to force the correct direction.
 #. #
 #. # RTL locales should have a translation similar to this:
-#. # hotspot-wpa-psk.innerHTML= &#x202a;WPA (TKIP)&#x202c;
-#. # hotspot-wpa2-psk.innerHTML= &#x202a;WPA2 (AES)&#x202c;
+#. # hotspot-wpa-psk= &#x202a;WPA (TKIP)&#x202c;
+#. # hotspot-wpa2-psk= &#x202a;WPA2 (AES)&#x202c;
 #. #
 #. # [More details]
 #. #
@@ -1825,17 +1935,13 @@ msgstr "መክፈቻ"
 #. # automatically in a wrong way by browser. Because from engineering side,
 #. # we can only change settings.ar.properties, for localizers, please remember to
 #. # put them in the other RTL languages.
-#. #
-#. # Additionally, in order to make this hack work, we got some help from l10n.js
-#. # that we need to put these strings inside "KEY".innerHTML, so that's the
-#. # reason why these two strings below would be suffixed with ".innerHTML"
-#: hotspot-wpa-psk.innerHTML
-msgid "WPA (TKIP)"
-msgstr "WPA (TKIP)"
+#: hotspot-security-wpa-psk
+msgid "WPA"
+msgstr ""
 
-#: hotspot-wpa2-psk.innerHTML
-msgid "WPA2 (AES)"
-msgstr "WPA2 (AES)"
+#: hotspot-security-wpa2-psk
+msgid "WPA2"
+msgstr ""
 
 #: hotspot-password-desc
 msgid "The password must have at least 8 characters."
@@ -1850,6 +1956,14 @@ msgstr "የግልዎት ማድረጊያ"
 
 #. # Personalization :: Sound
 #: sound
+#, fuzzy
+msgctxt "sound"
+msgid "Sound"
+msgstr "ድምፅ"
+
+#: sound.ariaLabel
+#, fuzzy
+msgctxt "sound.ariaLabel"
 msgid "Sound"
 msgstr "ድምፅ"
 
@@ -1936,6 +2050,14 @@ msgstr "የ ጥሪ ድምፅ መተግበሪያ ማግኘት አልተቻለም 
 
 #. # Personalization :: Display
 #: display
+#, fuzzy
+msgctxt "display"
+msgid "Display"
+msgstr "ማሳያ"
+
+#: display.ariaLabel
+#, fuzzy
+msgctxt "display.ariaLabel"
 msgid "Display"
 msgstr "ማሳያ"
 
@@ -1994,6 +2116,14 @@ msgstr "አቅጣጫ መቆለፊያ"
 
 #. # Personalization :: Navigation
 #: navigation
+#, fuzzy
+msgctxt "navigation"
+msgid "Navigation"
+msgstr "መቃኛ"
+
+#: navigation.ariaLabel
+#, fuzzy
+msgctxt "navigation.ariaLabel"
 msgid "Navigation"
 msgstr "መቃኛ"
 
@@ -2016,6 +2146,14 @@ msgstr "ይጎትቱ ከ ግራ በኩል ወይንም ከ መመልከቻው �
 
 #. # Personalization :: Notifications
 #: notifications
+#, fuzzy
+msgctxt "notifications"
+msgid "Notifications"
+msgstr "ማስታወቂያዎች"
+
+#: notifications.ariaLabel
+#, fuzzy
+msgctxt "notifications.ariaLabel"
 msgid "Notifications"
 msgstr "ማስታወቂያዎች"
 
@@ -2038,6 +2176,8 @@ msgstr "እንደ ገና ከተነሳ በኋላ ማሳያ"
 
 #. # Personalization :: Date & Time
 #: dateAndTime
+#, fuzzy
+msgctxt "dateAndTime"
 msgid "Date & Time"
 msgstr "ቀን & ሰአት"
 
@@ -2101,6 +2241,8 @@ msgid "Language & Region"
 msgstr "ቋንቋ & አካባቢ"
 
 #: language
+#, fuzzy
+msgctxt "language"
 msgid "Language"
 msgstr "ቋንቋ"
 
@@ -2138,6 +2280,8 @@ msgstr "%B %d, %Y"
 
 #. # Personalization :: Sim cards manager
 #: simManager
+#, fuzzy
+msgctxt "simManager"
 msgid "SIM Manager"
 msgstr "የ ሲም አስተዳዳሪ"
 
@@ -2214,6 +2358,12 @@ msgctxt "homescreen"
 msgid "Homescreen"
 msgstr "የ ቤት መመልከቻ"
 
+#: homescreen.ariaLabel
+#, fuzzy
+msgctxt "homescreen.ariaLabel"
+msgid "Homescreen"
+msgstr "የ ቤት መመልከቻ"
+
 #: vertical-homescreen-header
 msgctxt "vertical-homescreen-header"
 msgid "Homescreen"
@@ -2244,6 +2394,12 @@ msgctxt "search"
 msgid "Search"
 msgstr "መፈለጊያ"
 
+#: search.ariaLabel
+#, fuzzy
+msgctxt "search.ariaLabel"
+msgid "Search"
+msgstr "መፈለጊያ"
+
 #: search-header
 msgctxt "search-header"
 msgid "Search"
@@ -2268,6 +2424,14 @@ msgstr ""
 
 #. # Personalization :: Homescreens
 #: homescreens
+#, fuzzy
+msgctxt "homescreens"
+msgid "Homescreens"
+msgstr "የ ቤት መመልከቻ"
+
+#: homescreens.ariaLabel
+#, fuzzy
+msgctxt "homescreens.ariaLabel"
 msgid "Homescreens"
 msgstr "የ ቤት መመልከቻ"
 
@@ -2290,6 +2454,8 @@ msgid "Change"
 msgstr "መቀየሪያ"
 
 #: description
+#, fuzzy
+msgctxt "description"
 msgid "Description"
 msgstr "መግለጫ"
 
@@ -2303,6 +2469,8 @@ msgid "Selected Keyboards"
 msgstr "የተመረጠው የ ፊደል ገበታ"
 
 #: keyboards
+#, fuzzy
+msgctxt "keyboards"
 msgid "Keyboards"
 msgstr "የ ፊደል ገበታ"
 
@@ -2367,6 +2535,14 @@ msgstr "{{appName}} {{layoutName}} እንደ ነበር ማስገቢያ ዘዴ �
 
 #. # Personalization :: Themes
 #: themes
+#, fuzzy
+msgctxt "themes"
+msgid "Themes"
+msgstr "ገጽታዎች"
+
+#: themes.ariaLabel
+#, fuzzy
+msgctxt "themes.ariaLabel"
 msgid "Themes"
 msgstr "ገጽታዎች"
 
@@ -2434,16 +2610,10 @@ msgstr "የ መግለጫ ማረጋገጫ መሰረዣ"
 msgid "A verification link has been sent to {{email}}."
 msgstr "የ ማረጋገጫ አገናኝ ተልኳል ወደ {{email}}."
 
-#. # LOCALIZATION NOTE (fxa-dont-see-email): the "{{resend}}" placeholder
-#. # will be replaced with a link containing the string with ID "fxa-resend":
-#. # "Don't see an email? <a>Resend</a>."
-#: fxa-dont-see-email
-msgid "Don’t see an email? {{resend}}."
+#: fxa-dont-see-email-resend
+#, fuzzy
+msgid "Don’t see an email? <a>Resend</a>."
 msgstr "ኢሜይል አላዩም? {{resend}}."
-
-#: fxa-resend
-msgid "Resend"
-msgstr "አንደገና መላኪያ"
 
 #. # Panel: logged in, verified
 #: fxa-about
@@ -2468,6 +2638,8 @@ msgid "Find My Device"
 msgstr "የኔን አካል አግኝ"
 
 #: fxa-options
+#, fuzzy
+msgctxt "fxa-options"
 msgid "Options"
 msgstr "ምርጫዎች"
 
@@ -2543,6 +2715,8 @@ msgid "Passcode: {{code}}"
 msgstr "የማለፊያ ኮድ: {{code}}"
 
 #: screenLock
+#, fuzzy
+msgctxt "screenLock"
 msgid "Screen Lock"
 msgstr "መመልከቻ መቆለፊያ"
 
@@ -2555,7 +2729,17 @@ msgstr "መመልከቻ መቆለፊያ"
 msgid "{{screenLock}}"
 msgstr "{{screenLock}}"
 
+#: screenLock-enabled-with-no-passcode
+msgid "Enabled with no passcode"
+msgstr ""
+
+#: screenLock-enabled-with-passcode
+msgid "Enabled with passcode"
+msgstr ""
+
 #: simSecurity
+#, fuzzy
+msgctxt "simSecurity"
 msgid "SIM Security"
 msgstr "የ ሲም ደህንነት"
 
@@ -2570,6 +2754,14 @@ msgstr "{{simSecurity}}"
 
 #. # Security :: App permissions
 #: appPermissions
+#, fuzzy
+msgctxt "appPermissions"
+msgid "App Permissions"
+msgstr "የ መተግበሪያ ፍቃዶች"
+
+#: appPermissions.ariaLabel
+#, fuzzy
+msgctxt "appPermissions.ariaLabel"
 msgid "App Permissions"
 msgstr "የ መተግበሪያ ፍቃዶች"
 
@@ -2995,6 +3187,8 @@ msgstr "ያልታወቀ ስህተት ተፈጥሯል"
 
 #. # Security :: Do Not Track
 #: doNotTrack
+#, fuzzy
+msgctxt "doNotTrack"
 msgid "Do Not Track"
 msgstr "አትከተለኝ"
 
@@ -3043,6 +3237,14 @@ msgstr ""
 
 #. # Security :: Browsing Privacy
 #: browsingPrivacy
+#, fuzzy
+msgctxt "browsingPrivacy"
+msgid "Browsing Privacy"
+msgstr "የግላዊነት መቃኛ"
+
+#: browsingPrivacy.ariaLabel
+#, fuzzy
+msgctxt "browsingPrivacy.ariaLabel"
 msgid "Browsing Privacy"
 msgstr "የግላዊነት መቃኛ"
 
@@ -3082,11 +3284,14 @@ msgstr "ማጽጃ"
 
 #. # Security :: Privacy Panel
 #: privacy-controls
+#, fuzzy
+msgctxt "privacy-controls"
 msgid "Privacy Controls"
 msgstr "የግላዊነት መመሪያ መቆጣጠሪያዎች"
 
-#: no-privacy-panel
-msgid "No privacy panel app found"
+#: no-privacy-controls
+#, fuzzy
+msgid "No privacy controls app found"
 msgstr "የግላዊነት መመሪያ ክፍል መተግበሪያ አልተገኘም"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3106,6 +3311,8 @@ msgid "Unplug USB cable to disable"
 msgstr "ለማሰናከል የ ዩኤስቢ ገመድ ይለያዩ"
 
 #: appStorage
+#, fuzzy
+msgctxt "appStorage"
 msgid "Application Storage"
 msgstr "የ መተግበሪያ ማጠራቀሚያ"
 
@@ -3117,26 +3324,6 @@ msgstr "የ መተግበሪያ ማጠራቀሚያ"
 #: appStorage-header
 msgid "{{appStorage}}"
 msgstr "{{appStorage}}"
-
-#: byteUnit-B
-msgid "B"
-msgstr "ባ"
-
-#: byteUnit-KB
-msgid "KB"
-msgstr "ኪባ"
-
-#: byteUnit-MB
-msgid "MB"
-msgstr "ሜባ"
-
-#: byteUnit-GB
-msgid "GB"
-msgstr "ጌባ"
-
-#: byteUnit-TB
-msgid "TB"
-msgstr "ቴባ"
 
 #: storageSize
 msgid "{{size}} {{unit}}"
@@ -3205,15 +3392,19 @@ msgid "Transfer Protocol"
 msgstr "የ ማስተላለፊያ አሰራር"
 
 #: protocol-mtp
-msgid "Media transfer protocol (MTP)"
+#, fuzzy
+msgid "Media Transfer Protocol (MTP)"
 msgstr "የ መገናኛ ማስተላለፊያ አሰራር (MTP)"
 
 #: protocol-ums
-msgid "USB mass Storage (UMS)"
+#, fuzzy
+msgid "USB Mass Storage (UMS)"
 msgstr "USB በርካታ ማጠራቀሚያ (UMS)"
 
 #. # Storage :: Media storage
 #: mediaStorage
+#, fuzzy
+msgctxt "mediaStorage"
 msgid "Media Storage"
 msgstr "የ መገናኛ ማጠራቀሚያ"
 
@@ -3372,6 +3563,23 @@ msgstr "አቀራረብ"
 msgid "SD card unmounted"
 msgstr "የማጠራቀሚያ ካርድ ወርዷል"
 
+#: ums-partial-support-warning-title
+msgid "Warning: USB Mass Storage may not work"
+msgstr ""
+
+#: ums-partial-support-warning-msg-1
+msgid ""
+"USB Mass Storage will only work correctly with an external SD card. If you'd "
+"like to be able to access both your internal and external storage, you must "
+"use MTP."
+msgstr ""
+
+#: ums-partial-support-warning-msg-2
+msgid ""
+"Press \"OK\" to switch to USB Mass Storage, or \"Cancel\" to remain in MTP "
+"mode."
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Device
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3384,8 +3592,22 @@ msgctxt "help"
 msgid "Help"
 msgstr "እርዳታ"
 
+#: help.ariaLabel
+#, fuzzy
+msgctxt "help.ariaLabel"
+msgid "Help"
+msgstr "እርዳታ"
+
 #. # Device :: Information
 #: deviceInfo
+#, fuzzy
+msgctxt "deviceInfo"
+msgid "Device Information"
+msgstr "የ አካል መረጃ"
+
+#: deviceInfo.ariaLabel
+#, fuzzy
+msgctxt "deviceInfo.ariaLabel"
 msgid "Device Information"
 msgstr "የ አካል መረጃ"
 
@@ -3402,7 +3624,7 @@ msgstr "{{deviceInfo}}"
 msgid "IMEI"
 msgstr "IMEI"
 
-#: deviceInfo-IMEI-with-index.innerHTML
+#: deviceInfo-IMEI-with-index
 msgid "IMEI {{index}}: <bdi>{{imei}}</bdi>"
 msgstr "IMEI {{index}}: <bdi>{{imei}}</bdi>"
 
@@ -3410,7 +3632,7 @@ msgstr "IMEI {{index}}: <bdi>{{imei}}</bdi>"
 msgid "ICCID"
 msgstr "ICCID"
 
-#: deviceInfo-ICCID-with-index.innerHTML
+#: deviceInfo-ICCID-with-index
 msgid "SIM {{index}}: <bdi>{{iccid}}</bdi>"
 msgstr "SIM {{index}}: <bdi>{{iccid}}</bdi>"
 
@@ -3418,7 +3640,7 @@ msgstr "SIM {{index}}: <bdi>{{iccid}}</bdi>"
 msgid "Phone Number"
 msgstr "የ ስልክ ቁጥር"
 
-#: deviceInfo-MSISDN-with-index.innerHTML
+#: deviceInfo-MSISDN-with-index
 msgid "SIM {{index}}: <bdi>{{msisdn}}</bdi>"
 msgstr "ሲም {{index}}: <bdi>{{msisdn}}</bdi>"
 
@@ -3427,6 +3649,14 @@ msgid "SIM {{index}}: Not available"
 msgstr "ሲም {{index}}: አልተገኘም"
 
 #: downloads
+#, fuzzy
+msgctxt "downloads"
+msgid "Downloads"
+msgstr "የወረዱ"
+
+#: downloads.ariaLabel
+#, fuzzy
+msgctxt "downloads.ariaLabel"
 msgid "Downloads"
 msgstr "የወረዱ"
 
@@ -3451,264 +3681,6 @@ msgstr "ሲም {{index}}: ያልታወቀ"
 msgid "Git Commit Info"
 msgstr "Git Commit Info"
 
-#: developer
-msgid "Developer"
-msgstr "አበልጻጊ"
-
-#. # LOCALIZATION NOTE (developer-header): if you leave the original
-#. # en-US value "{{developer}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "developer".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: developer-header
-msgid "{{developer}}"
-msgstr "{{developer}}"
-
-#: hud-settings-button
-msgid "Developer HUD"
-msgstr "የ አበልጻጊ HUD"
-
-#. # LOCALIZATION NOTE (hud-settings-header): if you leave the original en-US value
-#. # "{{hud-settings-button}}" in the following string, the localization will be
-#. # automatically picked from the existing string with ID "hud-settings-button". If you
-#. # need to adapt your localizations to the available space in headers or
-#. # buttons, you can use different strings here.
-#: hud-settings-header
-msgid "{{hud-settings-button}}"
-msgstr "{{hud-settings-button}}"
-
-#: hud-devtools
-msgid "Developer tools"
-msgstr "የ አበልጻጊ መሳሪያዎች"
-
-#. # LOCALIZATION NOTE (hud-devtools-header): if you leave the original en-US
-#. # value "{{hud-devtools}}" in the following string, the localization will be
-#. # automatically picked from the existing string with ID "hud-devtools". If you
-#. # need to adapt your localizations to the available space in headers or
-#. # buttons, you can use different strings here.
-#: hud-devtools-header
-msgid "{{hud-devtools}}"
-msgstr "{{hud-devtools}}"
-
-#: hud-logging
-msgid "Log changes in ADB"
-msgstr ""
-
-#: hud-system
-msgid "Show system HUD"
-msgstr ""
-
-#: hud-problems
-msgid "Problems"
-msgstr "ችግሮች"
-
-#: hud-warnings
-msgid "Warnings"
-msgstr "ማስጠንቀቂያዎች"
-
-#: hud-errors
-msgid "Errors"
-msgstr "ስህተቶች"
-
-#: hud-security
-msgid "Security issues"
-msgstr "የ ደህንነት ችግሮች"
-
-#: hud-performance
-msgid "Performance"
-msgstr "አፈጻጸም"
-
-#: hud-reflows
-msgid "Reflows"
-msgstr ""
-
-#: hud-jank
-msgid "Jank"
-msgstr "የማይረባ"
-
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "የማይረባ መግቢያ"
-
-#: hud-fps
-msgid "Frames per second"
-msgstr "ክፈፎች በ ሰከንድ"
-
-#: hud-ttl
-msgid "Time to load"
-msgstr "መጫኛው ጊዜ"
-
-#: hud-memory
-msgid "Memory"
-msgstr "ማስታወሻ"
-
-#: hud-uss
-msgid "Unique Set Size"
-msgstr "የተለየ መጠን ማሰናጃ"
-
-#: hud-appmemory
-msgid "App memory"
-msgstr ""
-
-#: hud-jsobjects
-msgid "JS objects"
-msgstr "JS objects"
-
-#: hud-jsstrings
-msgid "JS strings"
-msgstr "JS strings"
-
-#: hud-jsother
-msgid "JS other"
-msgstr "JS other"
-
-#: hud-dom
-msgid "DOM"
-msgstr "DOM"
-
-#: hud-style
-msgid "Style"
-msgstr "ዘዴ"
-
-#: hud-other
-msgctxt "hud-other"
-msgid "Other"
-msgstr "ሌላ"
-
-#: software
-msgid "Software"
-msgstr "ሶፍትዌር"
-
-#: devSettings
-msgid "Developer Settings"
-msgstr "የ አበልጻጊ ማሰናጃዎች"
-
-#: debug
-#, fuzzy
-msgid "Debug"
-msgstr "Debug"
-
-#: developer-menu
-msgid "Developer Menu"
-msgstr "የ አበልጻጊ ዝርዝር"
-
-#: developer-tools
-msgid "Developer Tools"
-msgstr "የ አበልጻጊ ዝርዝር"
-
-#: graphics
-msgid "Graphics"
-msgstr "ንድፎች"
-
-#: hardware-composer
-msgid "Hardware composer"
-msgstr "ጠንካራ አካል ማዋቀሪያ"
-
-#: paint-flashing
-msgid "Flash repainted area"
-msgstr ""
-
-#: dumps-layers
-msgid "Dump layers tree"
-msgstr ""
-
-#: dumps-layerscope
-msgid "Dump layerscope"
-msgstr ""
-
-#: apz-overscroll
-msgid "Overscrolling"
-msgstr "መሸብለያ"
-
-#: tiling
-msgid "Tiling"
-msgstr "መደርደሪያ"
-
-#: low-precision
-msgid "Low-precision painting"
-msgstr "በ ዝቅተኝ-ጥራት መሳያ"
-
-#: low-opacity
-msgid "Low-precision transparency"
-msgstr "ዝቅተኝ-ጥራት ግልጽነት"
-
-#: draw-tile-borders
-msgid "Draw tile borders"
-msgstr "የ አርእስት ድንበሮች መሳያ"
-
-#: draw-layer-borders
-msgid "Draw layer borders"
-msgstr "የ አርእስት ድንበሮች መሳያ"
-
-#: log-animations
-msgid "Log slow animations"
-msgstr "የ መግቢያ ዝግተኛ እንቅስቃሴ"
-
-#: remote-debugging-usb
-msgid "Debugging via USB"
-msgstr ""
-
-#: dev-tools-wifi
-msgid "DevTools via Wi-Fi"
-msgstr "DevTools በ ዋይ-ፋይ"
-
-#: dev-tools-qps
-msgid "Pseudo-localization"
-msgstr ""
-
-#: debugger-disabled
-msgctxt "debugger-disabled"
-msgid "Disabled"
-msgstr "ተሰናክሏል"
-
-#: debugger-adb-only
-msgid "ADB only"
-msgstr "ADB only"
-
-#: debugger-adb-and-devtools
-msgid "ADB and DevTools"
-msgstr ""
-
-#: wifi-debugging
-msgid "Wi-Fi output in ADB"
-msgstr "የ ዋይ-ፋይ ውጤት በ ADB"
-
-#: bluetooth-debugging
-msgid "Bluetooth output in ADB"
-msgstr "የ ብሉቱዝ ውጤት በ ADB"
-
-#: nfc-debugging
-msgid "NFC output in ADB"
-msgstr ""
-
-#: ril-debugging
-msgid "RIL output in ADB"
-msgstr ""
-
-#: console-enabled
-msgid "Console enabled"
-msgstr ""
-
-#: cards-view-screenshots
-msgid "Cards View: Screenshots"
-msgstr "ካርዶች መመልከቻ: መመልከቻውን ፎቶ ማንሻ"
-
-#: geolocation-debugging-enabled
-msgid "Geolocation output in ADB"
-msgstr "ያሉበት አካባቢ ውጤት በ ADB"
-
-#: geolocation-debugging-gps-locations-ignored
-msgid "Ignore GPS locations"
-msgstr "የ ጂፒኤስ አካባቢዎችን መተው"
-
-#: use-reviewer-certs
-msgid "Use Marketplace reviewer certs"
-msgstr "የ ገበያ ቦታ መርማሪ ምስክር ወረቀቶች መጠቀሚያ"
-
-#: shake-to-log
-msgid "Shake to save system log"
-msgstr "የ ስርአት መግቢያውን ለማስቀመጥ ያንቀሳቅሱት"
-
 #: model-name
 msgid "Model"
 msgstr "አይነት"
@@ -3719,6 +3691,14 @@ msgstr "የ ስርአት እትም"
 
 #: firmware_revision
 msgid "Firmware Revision"
+msgstr ""
+
+#: hardware_manufacturer
+msgid "Hardware Manufacturer"
+msgstr ""
+
+#: hardware_platform
+msgid "Hardware Platform"
 msgstr ""
 
 #: hardware_revision
@@ -3838,21 +3818,6 @@ msgstr "እንደነበር መመለሻ"
 
 #: reset-warning-title
 msgctxt "reset-warning-title"
-msgid "CAUTION"
-msgstr "ማስጠንቀቂያ"
-
-#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
-#. # full DevTools access.
-#: unlock-privileges
-msgid "Unlock Privileges"
-msgstr "ልዩ መብት መክፈቻ"
-
-#: reset-devtools
-msgid "Reset and enable full DevTools"
-msgstr "እንደ ነበር መመለሻ እና ማስቻያ DevTools"
-
-#: reset-devtools-warning-title
-msgctxt "reset-devtools-warning-title"
 msgid "CAUTION"
 msgstr "ማስጠንቀቂያ"
 
@@ -4025,6 +3990,327 @@ msgstr "Mozilla Public License 2.0"
 msgid "Apache License 2.0"
 msgstr "Apache License 2.0"
 
+#. # Device :: Developer
+#: developer
+#, fuzzy
+msgctxt "developer"
+msgid "Developer"
+msgstr "አበልጻጊ"
+
+#: developer.ariaLabel
+#, fuzzy
+msgctxt "developer.ariaLabel"
+msgid "Developer"
+msgstr "አበልጻጊ"
+
+#. # LOCALIZATION NOTE (developer-header): if you leave the original
+#. # en-US value "{{developer}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "developer".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: developer-header
+msgid "{{developer}}"
+msgstr "{{developer}}"
+
+#: hud-settings-button
+msgid "Developer HUD"
+msgstr "የ አበልጻጊ HUD"
+
+#. # LOCALIZATION NOTE (hud-settings-header): if you leave the original en-US value
+#. # "{{hud-settings-button}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-settings-button". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-settings-header
+msgid "{{hud-settings-button}}"
+msgstr "{{hud-settings-button}}"
+
+#: hud-devtools
+#, fuzzy
+msgctxt "hud-devtools"
+msgid "Developer Tools"
+msgstr "የ አበልጻጊ ዝርዝር"
+
+#. # LOCALIZATION NOTE (hud-devtools-header): if you leave the original en-US
+#. # value "{{hud-devtools}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-devtools". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-devtools-header
+msgid "{{hud-devtools}}"
+msgstr "{{hud-devtools}}"
+
+#: hud-hide
+msgid "Hide All HUD Elements"
+msgstr ""
+
+#: hud-logging
+msgid "Log Changes in ADB"
+msgstr ""
+
+#: hud-system
+msgid "Show System HUD"
+msgstr ""
+
+#: hud-problems
+msgid "Problems"
+msgstr "ችግሮች"
+
+#: hud-warnings
+msgid "Warnings"
+msgstr "ማስጠንቀቂያዎች"
+
+#: hud-errors
+msgid "Errors"
+msgstr "ስህተቶች"
+
+#: hud-security
+#, fuzzy
+msgid "Security Issues"
+msgstr "የ ደህንነት ችግሮች"
+
+#: hud-performance
+msgid "Performance"
+msgstr "አፈጻጸም"
+
+#: hud-reflows
+msgid "Reflows"
+msgstr ""
+
+#: hud-jank
+msgid "Jank"
+msgstr "የማይረባ"
+
+#: jank-threshold
+msgid "Jank Threshold"
+msgstr "የማይረባ መግቢያ"
+
+#: hud-fps
+#, fuzzy
+msgid "Frames per Second"
+msgstr "ክፈፎች በ ሰከንድ"
+
+#: hud-ttl
+#, fuzzy
+msgid "Time to Load"
+msgstr "መጫኛው ጊዜ"
+
+#: hud-memory
+msgid "Memory"
+msgstr "ማስታወሻ"
+
+#: hud-uss
+msgid "Unique Set Size"
+msgstr "የተለየ መጠን ማሰናጃ"
+
+#: hud-appmemory
+msgid "App Memory"
+msgstr ""
+
+#: hud-jsobjects
+#, fuzzy
+msgid "JS Objects"
+msgstr "JS objects"
+
+#: hud-jsstrings
+#, fuzzy
+msgid "JS Strings"
+msgstr "JS strings"
+
+#: hud-jsother
+#, fuzzy
+msgid "JS Other"
+msgstr "JS other"
+
+#: hud-dom
+msgid "DOM"
+msgstr "DOM"
+
+#: hud-style
+msgid "Style"
+msgstr "ዘዴ"
+
+#: hud-other
+msgctxt "hud-other"
+msgid "Other"
+msgstr "ሌላ"
+
+#: hud-telemetry
+msgid "Telemetry"
+msgstr ""
+
+#: software
+msgid "Software"
+msgstr "ሶፍትዌር"
+
+#: devSettings
+msgid "Developer Settings"
+msgstr "የ አበልጻጊ ማሰናጃዎች"
+
+#: debug
+#, fuzzy
+msgid "Debug"
+msgstr "Debug"
+
+#: developer-menu
+msgid "Developer Menu"
+msgstr "የ አበልጻጊ ዝርዝር"
+
+#: developer-tools
+#, fuzzy
+msgctxt "developer-tools"
+msgid "Developer Tools"
+msgstr "የ አበልጻጊ ዝርዝር"
+
+#: graphics
+msgid "Graphics"
+msgstr "ንድፎች"
+
+#: hardware-composer
+#, fuzzy
+msgid "Hardware Composer"
+msgstr "ጠንካራ አካል ማዋቀሪያ"
+
+#: paint-flashing
+msgid "Flash Repainted Area"
+msgstr ""
+
+#: dumps-layers
+msgid "Dump Layers Tree"
+msgstr ""
+
+#: dumps-display-list
+msgid "Dump Display List"
+msgstr ""
+
+#: dumps-layerscope
+msgid "Dump LayerScope"
+msgstr ""
+
+#: apz-overscroll
+msgid "Overscrolling"
+msgstr "መሸብለያ"
+
+#: tiling
+msgid "Tiling"
+msgstr "መደርደሪያ"
+
+#: low-precision
+#, fuzzy
+msgid "Low Precision Painting"
+msgstr "በ ዝቅተኝ-ጥራት መሳያ"
+
+#: low-opacity
+#, fuzzy
+msgid "Low Precision Transparency"
+msgstr "ዝቅተኝ-ጥራት ግልጽነት"
+
+#: draw-tile-borders
+#, fuzzy
+msgid "Draw Tile Borders"
+msgstr "የ አርእስት ድንበሮች መሳያ"
+
+#: draw-layer-borders
+#, fuzzy
+msgid "Draw Layer Borders"
+msgstr "የ አርእስት ድንበሮች መሳያ"
+
+#: log-animations
+#, fuzzy
+msgid "Log Slow Animations"
+msgstr "የ መግቢያ ዝግተኛ እንቅስቃሴ"
+
+#: remote-debugging-usb
+msgid "Debugging via USB"
+msgstr ""
+
+#: devtools-wifi
+msgid "DevTools via Wi-Fi"
+msgstr "DevTools በ ዋይ-ፋይ"
+
+#: devtools-device-name
+msgid "DevTools Wi-Fi Device Name"
+msgstr ""
+
+#: devtools-qps
+msgid "Pseudo-Localization"
+msgstr ""
+
+#: debugger-disabled
+msgctxt "debugger-disabled"
+msgid "Disabled"
+msgstr "ተሰናክሏል"
+
+#: debugger-adb-only
+msgid "ADB only"
+msgstr "ADB only"
+
+#: debugger-adb-and-devtools
+msgid "ADB and DevTools"
+msgstr ""
+
+#: wifi-debugging
+#, fuzzy
+msgid "Wi-Fi Output in ADB"
+msgstr "የ ዋይ-ፋይ ውጤት በ ADB"
+
+#: bluetooth-debugging
+#, fuzzy
+msgid "Bluetooth Output in ADB"
+msgstr "የ ብሉቱዝ ውጤት በ ADB"
+
+#: bluetooth-snoop-debugging
+msgid "Bluetooth HCI Sniffing Logs to SD Card"
+msgstr ""
+
+#: nfc-debugging
+msgid "NFC Output in ADB"
+msgstr ""
+
+#: ril-debugging
+msgid "RIL Output in ADB"
+msgstr ""
+
+#: network-debugging
+msgid "Network Output in ADB"
+msgstr ""
+
+#: mms-debugging
+msgid "MMS Output in ADB"
+msgstr ""
+
+#: console-enabled
+msgid "Console Enabled"
+msgstr ""
+
+#: cards-view-screenshots
+msgid "Cards View: Screenshots"
+msgstr "ካርዶች መመልከቻ: መመልከቻውን ፎቶ ማንሻ"
+
+#: geolocation-debugging-enabled
+#, fuzzy
+msgid "Geolocation Output in ADB"
+msgstr "ያሉበት አካባቢ ውጤት በ ADB"
+
+#: geolocation-debugging-gps-locations-ignored
+#, fuzzy
+msgid "Ignore GPS Locations"
+msgstr "የ ጂፒኤስ አካባቢዎችን መተው"
+
+#: use-reviewer-certs
+#, fuzzy
+msgid "Use Marketplace Reviewer Certs"
+msgstr "የ ገበያ ቦታ መርማሪ ምስክር ወረቀቶች መጠቀሚያ"
+
+#: shake-to-log
+#, fuzzy
+msgid "Shake to Save System Log"
+msgstr "የ ስርአት መግቢያውን ለማስቀመጥ ያንቀሳቅሱት"
+
+#: enable-logshake-qa
+msgid "Enable LogShake QA Mode"
+msgstr ""
+
 #: launch-ftu
 msgid "Launch First Time Use"
 msgstr "ለ መጀመሪያ ጊዜ ተጠቃሚ ማስጀመሪያ"
@@ -4034,44 +4320,177 @@ msgid "No first time use app found"
 msgstr "ለ መጀመሪያ ጊዜ ተጠቃሚ መተግበሪያ አልተገኘም"
 
 #: software-home-button
-msgid "Software home button"
+#, fuzzy
+msgid "Software Home Button"
 msgstr "የ ሶፍትዌር ቤት ቁልፍ"
 
 #: home-gesture
-msgid "Home gesture"
+#, fuzzy
+msgid "Home Gesture"
 msgstr "የ ቤት እንቅስቃሴ"
 
 #: continuous-transition
-msgid "Continuous transition"
+msgid "Continuous Transition"
 msgstr ""
 
 #: debug-gaia-enabled
-msgid "Gaia debug traces"
+msgid "Gaia Debug Traces"
 msgstr ""
 
 #: showScreenReaderSettings
-msgid "Show screen reader settings"
+#, fuzzy
+msgid "Show Screen Reader Settings"
 msgstr "የ መመልከቻ አንባቢ ማሰናጃ ማሳያ"
 
 #: app-transition
-msgid "App transition"
+#, fuzzy
+msgid "App Transition"
 msgstr "የ መተግበሪያ መሸጋገሪያ"
 
 #: app-suspending
-msgid "App suspending"
+#, fuzzy
+msgid "App Suspending"
 msgstr "መተግበሪያው ታድጓል"
 
 #: copypaste
-msgid "Copy/paste"
+#, fuzzy
+msgid "Copy/Paste"
 msgstr "ኮፒ/መለጠፊያ"
 
+#: multi-screen
+msgid "Multi-Screen"
+msgstr ""
+
 #: verbose-app-permissions
-msgid "Verbose app permissions"
+msgid "Verbose App Permissions"
+msgstr ""
+
+#: pinning-the-web
+msgid "Enable Pinning the Web"
+msgstr ""
+
+#: view-source
+msgid "Enable View Source Gesture"
 msgstr ""
 
 #: window-management
-msgid "Window management"
+#, fuzzy
+msgid "Window Management"
 msgstr "የመስኮት አስተዳዳሪ"
+
+#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
+#. # full DevTools access.
+#: unlock-privileges
+msgid "Unlock Privileges"
+msgstr "ልዩ መብት መክፈቻ"
+
+#: full-devtools
+msgid "Full DevTools"
+msgstr ""
+
+#: reset-devtools-warning-title
+msgctxt "reset-devtools-warning-title"
+msgid "CAUTION"
+msgstr "ማስጠንቀቂያ"
+
+#. # Device :: Developer :: Service Workers
+#: service-worker
+msgid "Service Workers"
+msgstr ""
+
+#: service-worker-scope
+msgid "Scope"
+msgstr ""
+
+#: service-worker-script-spec
+msgid "Script spec"
+msgstr ""
+
+#: service-worker-current-worker-url
+msgid "Current worker URL"
+msgstr ""
+
+#: service-worker-active-cache-name
+msgid "Active cache name"
+msgstr ""
+
+#: service-worker-waiting-cache-name
+msgid "Waiting cache name"
+msgstr ""
+
+#: service-worker-update
+msgid "Update"
+msgstr ""
+
+#: service-worker-unregister
+msgid "Unregister"
+msgstr ""
+
+#: service-worker-no-registrations
+msgid "No service workers found"
+msgstr ""
+
+#. # Device :: Full Developer Mode
+#: developer-menu-disabled-warning-title
+msgid "Developer menu not enabled"
+msgstr ""
+
+#: developer-menu-disabled-warning-msg-1
+msgid ""
+"Developer Mode can't be enabled without the developer menu first being "
+"enabled."
+msgstr ""
+
+#: developer-menu-disabled-warning-msg-2
+msgid ""
+"Please enable it from Settings > Device Information > More Information > "
+"Developer Menu."
+msgstr ""
+
+#: enable-full-dev-mode-first-warning-title
+msgid "Would you like to enable developer mode?"
+msgstr ""
+
+#: enable-full-dev-mode-first-warning-msg-1
+msgid "THIS WILL DELETE ALL YOUR DATA AND FACTORY RESET YOUR DEVICE."
+msgstr ""
+
+#: enable-full-dev-mode-first-warning-msg-2
+msgid "THIS WILL DISABLE ALL SECURITY MEASURES ON YOUR DEVICE."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-title
+msgid "Are you sure you want to enable developer mode?"
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg
+#, fuzzy
+msgid "{[ plural(count) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: enable-full-dev-mode-final-warning-msg[one]
+msgid "Tap 'Enable' {{count}} more time to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[two]
+msgctxt "enable-full-dev-mode-final-warning-msg[two]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[few]
+msgctxt "enable-full-dev-mode-final-warning-msg[few]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[many]
+msgctxt "enable-full-dev-mode-final-warning-msg[many]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[other]
+msgctxt "enable-full-dev-mode-final-warning-msg[other]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
 
 #. # Device :: Downloads
 #: downloads-edit
@@ -4093,6 +4512,8 @@ msgstr "ማጥፊያ"
 
 #. # Device :: Battery
 #: battery
+#, fuzzy
+msgctxt "battery"
 msgid "Battery"
 msgstr "ባትሪ"
 
@@ -4141,6 +4562,12 @@ msgstr "ራሱ በራሱ ማብሪያ"
 
 #. # Device :: Accessibility
 #: accessibility
+msgctxt "accessibility"
+msgid "Accessibility"
+msgstr ""
+
+#: accessibility.ariaLabel
+msgctxt "accessibility.ariaLabel"
 msgid "Accessibility"
 msgstr ""
 
@@ -4247,6 +4674,12 @@ msgstr "ማነጻጸሪያ"
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
 msgctxt "improveBrowserOS"
+msgid "Improve {{brandShortName}}"
+msgstr "ማሻሻያ {{brandShortName}}"
+
+#: improveBrowserOS.ariaLabel
+#, fuzzy
+msgctxt "improveBrowserOS.ariaLabel"
 msgid "Improve {{brandShortName}}"
 msgstr "ማሻሻያ {{brandShortName}}"
 
@@ -4437,14 +4870,6 @@ msgstr ""
 "አዝናለሁ: ስርአቱ የ እርስዎን አስተያየት መላክ አልቻለም የ አስተያየት ሜዳ ባዶ በ መሆኑ ምክንያት: እባክዎን ትንሽ "
 "ጽሁፍ አስገብተው እንደገና ይሞክሩ"
 
-#: feedback-errormessage-just-sent
-msgid ""
-"Sorry, the system can’t send your suggestion because you already sent us "
-"feedback. Please try our next software update and send again."
-msgstr ""
-"አዝናለሁ: ስርአቱ የ እርስዎን አስተያየት መላክ አልቻለም ምክንያቱም: ቀደም ሲል የ እርስዎን ምላሽ ልከዋል: እባክዎን "
-"የሚቀጥለውን የ ሶፍትዌር ማሻሻያ ይሞክሩ እና እንደገና ይላኩ"
-
 #: feedback-complete-msg
 msgid ""
 "Thanks for the feedback! We use it to help create better experiences in "
@@ -4452,6 +4877,10 @@ msgid ""
 msgstr ""
 "በጣም እናመሰግናለን ለ ምላሹ! የምንጠቀመው ለችግሩ መፍትሄ ለመፈለግ እና ውጤቱን ለማሻሻል ነው: ለሚቀጥለው የ "
 "ፋየርፎክስ መስሪያ ስርአት እትም በሚወጣ ጊዜ"
+
+#: feedback-errormessage-unknown-error
+msgid "Something went wrong. Please try again."
+msgstr ""
 
 #. # Device :: Help
 #: online-support
@@ -4589,8 +5018,14 @@ msgstr "የ ጣቢያ ሁኔታዎችን ይግኙ"
 msgid "End of the proactive session"
 msgstr ""
 
+#: stkEntry.ariaLabel
+msgid "{{ title }}"
+msgstr ""
+
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
+#, fuzzy
+msgctxt "is-warning-storage-header"
 msgid "USB storage"
 msgstr "ዩኤስቢ ማጠራቀሚያ"
 
@@ -4653,14 +5088,386 @@ msgstr "{{settings-dialog-confirm}}"
 msgid "{{settings-dialog-prompt}}"
 msgstr "{{settings-dialog-prompt}}"
 
+#: accessible-app-icon.ariaLabel
+msgid "Icon for {{ appName }} app"
+msgstr ""
+
+#. # Addongs settings
+#: addon
+msgid "Add-on"
+msgstr ""
+
+#: addons
+msgctxt "addons"
+msgid "Add-ons"
+msgstr ""
+
+#: addons.ariaLabel
+msgctxt "addons.ariaLabel"
+msgid "Add-ons"
+msgstr ""
+
+#: addons-header
+msgid "{{addons}}"
+msgstr ""
+
+#: addon-details-header1
+msgid "{{ appName }}"
+msgstr ""
+
+#: addon-enable
+msgid "Enable Add-on"
+msgstr ""
+
+#: addon-description-header
+#, fuzzy
+msgctxt "addon-description-header"
+msgid "Description"
+msgstr "መግለጫ"
+
+#: addon-developer-name
+msgid "{{ developerName }}"
+msgstr ""
+
+#: addon-targets
+msgid "Affected Apps"
+msgstr ""
+
+#: addon-options
+#, fuzzy
+msgctxt "addon-options"
+msgid "Options"
+msgstr "ምርጫዎች"
+
+#: addon-delete
+msgid "Delete Add-on"
+msgstr ""
+
+#: addon-share
+msgid "Share Add-on"
+msgstr ""
+
+#: addon-share-no-provider
+msgid "No sharing app available"
+msgstr ""
+
+#: addon-no-description
+msgid "This add-on does not include a description in its manifest file."
+msgstr ""
+
+#: addon-no-targets
+msgid "This add-on does not affect any installed apps."
+msgstr ""
+
+#: addon-restart-apps-to-disable
+msgid "Add-on disabled; restart affected apps."
+msgstr ""
+
+#: addon-reboot-required
+msgid ""
+"This add-on affected system apps; you must reboot your device to fully "
+"disable it."
+msgstr ""
+
+#: addon-rename
+msgid "Rename"
+msgstr ""
+
+#: addon-rename-input
+msgid "Enter add-on name"
+msgstr ""
+
+#: addon-rename-desc
+msgid "Change the name of your add-on"
+msgstr ""
+
+#: addon-obsolete
+msgid "This add-on is obsolete and does not work."
+msgstr ""
+
+#: addon-obsolete-can-delete
+msgid "This add-on is obsolete and does not work. Please delete it."
+msgstr ""
+
+#. # Achievements
+#: achievements
+msgid "Achievements"
+msgstr ""
+
+#: achievements.ariaLabel
+msgid "achievements"
+msgstr ""
+
+#: achievements-customize-champ-name
+msgid "Customize Champ"
+msgstr ""
+
+#: achievements-customize-champ-description
+msgid "Open Customizer in an app"
+msgstr ""
+
+#: achievements-add-on-all-star-name
+msgid "Add-on All-Star"
+msgstr ""
+
+#: achievements-add-on-all-star-description
+msgid "Use Customizer to create your own add-on"
+msgstr ""
+
+#: achievements-fab-finder-name
+msgid "Fab Finder"
+msgstr ""
+
+#: achievements-fab-finder-description
+msgid "Install an app or add-on from Hackerplace"
+msgstr ""
+
+#: achievements-content-commander-name
+msgid "Content Commander"
+msgstr ""
+
+#: achievements-content-commander-description
+msgid "Submit an app or add-on to Hackerplace"
+msgstr ""
+
+#: achievements-sharing-is-caring-name
+msgid "Sharing is Caring"
+msgstr ""
+
+#: achievements-sharing-is-caring-description
+msgid "Share your apps and add-ons with the Sharing app"
+msgstr ""
+
+#: achievements-creative-kind-name
+msgid "Creative Kind"
+msgstr ""
+
+#: achievements-creative-kind-description
+msgid "Use Theme Editor to create a new theme"
+msgstr ""
+
+#. # Service Workers
+#: service-workers-interception
+msgid "Intercept requests"
+msgstr ""
+
+#: service-workers-testing
+msgid "Allow over HTTP"
+msgstr ""
+
+#. # LOCALIZATION NOTE: The following strings are spoken by screen readers and not
+#. # shown on the screen.
+#: addButton.ariaLabel
+#, fuzzy
+msgctxt "addButton.ariaLabel"
+msgid "Add"
+msgstr "መጨመሪያ"
+
+#: closeButton.ariaLabel
+#, fuzzy
+msgctxt "closeButton.ariaLabel"
+msgid "Close"
+msgstr "መዝጊያ"
+
+#: changeWallpaperButton.ariaLabel
+msgid "Change wallpaper"
+msgstr ""
+
+#: editButton.ariaLabel
+#, fuzzy
+msgctxt "editButton.ariaLabel"
+msgid "Edit"
+msgstr "ማረሚያ"
+
+#: wifiSection.ariaLabel
+#, fuzzy
+msgctxt "wifiSection.ariaLabel"
+msgid "Wi-Fi"
+msgstr "ዋይ-ፋይ"
+
+#: simManagerSection.ariaLabel
+#, fuzzy
+msgctxt "simManagerSection.ariaLabel"
+msgid "SIM Manager"
+msgstr "የ ሲም አስተዳዳሪ"
+
+#: callSettingsSection.ariaLabel
+#, fuzzy
+msgctxt "callSettingsSection.ariaLabel"
+msgid "Call Settings"
+msgstr "ጥሪ ማሰናጃዎች"
+
+#: messagingSettingsSection.ariaLabel
+#, fuzzy
+msgctxt "messagingSettingsSection.ariaLabel"
+msgid "Messaging Settings"
+msgstr "መልእክት ማሰናጃዎች"
+
+#: cellularAndDataSection.ariaLabel
+#, fuzzy
+msgctxt "cellularAndDataSection.ariaLabel"
+msgid "Cellular & Data"
+msgstr "ሴሉላር & ዳታ"
+
+#: bluetoothSection.ariaLabel
+#, fuzzy
+msgctxt "bluetoothSection.ariaLabel"
+msgid "Bluetooth"
+msgstr "ብሉቱዝ"
+
+#: internetSharingSection.ariaLabel
+#, fuzzy
+msgctxt "internetSharingSection.ariaLabel"
+msgid "Internet Sharing"
+msgstr "ኢንተርኔት ማካፈያ"
+
+#: dateAndTimeSection.ariaLabel
+#, fuzzy
+msgctxt "dateAndTimeSection.ariaLabel"
+msgid "Date & Time"
+msgstr "ቀን & ሰአት"
+
+#: languageSection.ariaLabel
+#, fuzzy
+msgctxt "languageSection.ariaLabel"
+msgid "Language"
+msgstr "ቋንቋ"
+
+#: keyboardsSection.ariaLabel
+#, fuzzy
+msgctxt "keyboardsSection.ariaLabel"
+msgid "Keyboards"
+msgstr "የ ፊደል ገበታ"
+
+#: fxa-accountsSection.ariaLabel
+#, fuzzy
+msgctxt "fxa-accountsSection.ariaLabel"
+msgid "Firefox Accounts"
+msgstr "የ ፋየርፎክስ መግለጫ"
+
+#: findmydeviceSection.ariaLabel
+#, fuzzy
+msgctxt "findmydeviceSection.ariaLabel"
+msgid "Find My Device"
+msgstr "የኔን አካል አግኝ"
+
+#: screenLockSection.ariaLabel
+#, fuzzy
+msgctxt "screenLockSection.ariaLabel"
+msgid "Screen Lock"
+msgstr "መመልከቻ መቆለፊያ"
+
+#: simSecuritySection.ariaLabel
+#, fuzzy
+msgctxt "simSecuritySection.ariaLabel"
+msgid "SIM Security"
+msgstr "የ ሲም ደህንነት"
+
+#: doNotTrackSection.ariaLabel
+#, fuzzy
+msgctxt "doNotTrackSection.ariaLabel"
+msgid "Do Not Track"
+msgstr "አትከተለኝ"
+
+#: privacySection.ariaLabel
+#, fuzzy
+msgctxt "privacySection.ariaLabel"
+msgid "Privacy Controls"
+msgstr "የግላዊነት መመሪያ መቆጣጠሪያዎች"
+
+#: enableStorageSection.ariaLabel
+#, fuzzy
+msgctxt "enableStorageSection.ariaLabel"
+msgid "USB storage"
+msgstr "ዩኤስቢ ማጠራቀሚያ"
+
+#: mediaStorageSection.ariaLabel
+#, fuzzy
+msgctxt "mediaStorageSection.ariaLabel"
+msgid "Media Storage"
+msgstr "የ መገናኛ ማጠራቀሚያ"
+
+#: appStorageSection.ariaLabel
+#, fuzzy
+msgctxt "appStorageSection.ariaLabel"
+msgid "Application Storage"
+msgstr "የ መተግበሪያ ማጠራቀሚያ"
+
+#: batterySection.ariaLabel
+#, fuzzy
+msgctxt "batterySection.ariaLabel"
+msgid "Battery"
+msgstr "ባትሪ"
+
+#~ msgid "Manage Cert."
+#~ msgstr "የምስክር ወረቀቶች አስተዳዳሪ"
+
+#~ msgid "Call forwarding is disabled by FDN."
+#~ msgstr "ጥሪ ወደፊት ማስተላለፍ ተሰናክሏል በ FDN."
+
+#~ msgid "&#x202a;Multimedia Messaging (MMS)&#x202c;"
+#~ msgstr "&#x202a;በርካታ መገናኛ መልእክት (MMS)&#x202c;"
+
+#~ msgctxt "operator-status-connecting"
+#~ msgid "Connecting…"
+#~ msgstr "በመገናኘት ላይ..."
+
+#~ msgctxt "operator-status-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "ግንኙነቱ ወድቋል"
+
+#~ msgctxt "operator-status-connected"
+#~ msgid "Connected"
+#~ msgstr "ተገናኝቷል"
+
+#~ msgid "Change the name of your device as it appears in your computer"
+#~ msgstr "በ እርስዎ ኮምፒዩተር ላይ እንደሚታየው የ እርስዎን አካል ስም ይቀይሩ"
+
+#~ msgid "The SSID cannot be empty"
+#~ msgstr "SSID ባዶ መሆን የለበትም"
+
+#~ msgid "WPA (TKIP)"
+#~ msgstr "WPA (TKIP)"
+
+#~ msgid "WPA2 (AES)"
+#~ msgstr "WPA2 (AES)"
+
+#~ msgid "Resend"
+#~ msgstr "አንደገና መላኪያ"
+
+#~ msgid "B"
+#~ msgstr "ባ"
+
+#~ msgid "KB"
+#~ msgstr "ኪባ"
+
+#~ msgid "MB"
+#~ msgstr "ሜባ"
+
+#~ msgid "GB"
+#~ msgstr "ጌባ"
+
+#~ msgid "TB"
+#~ msgstr "ቴባ"
+
+#~ msgid "Developer tools"
+#~ msgstr "የ አበልጻጊ መሳሪያዎች"
+
+#~ msgid "Reset and enable full DevTools"
+#~ msgstr "እንደ ነበር መመለሻ እና ማስቻያ DevTools"
+
+#~ msgid ""
+#~ "Sorry, the system can’t send your suggestion because you already sent us "
+#~ "feedback. Please try our next software update and send again."
+#~ msgstr ""
+#~ "አዝናለሁ: ስርአቱ የ እርስዎን አስተያየት መላክ አልቻለም ምክንያቱም: ቀደም ሲል የ እርስዎን ምላሽ ልከዋል: "
+#~ "እባክዎን የሚቀጥለውን የ ሶፍትዌር ማሻሻያ ይሞክሩ እና እንደገና ይላኩ"
+
 #~ msgid "No imported certificate"
 #~ msgstr "ምንም የመጣ የምስክር ወረቀት የለም"
 
 #~ msgid "Voice calls to {{number}}"
 #~ msgstr "የ ድምፅ ጥሪ ወደ {{number}}"
-
-#~ msgid "Multimedia Messaging (MMS)"
-#~ msgstr "የ በርካታ መገናኛ መልእክቶች (MMS)"
 
 #~ msgid "Do you want to proceed?"
 #~ msgstr "መቀጠል ይፈልጋሉ?"
