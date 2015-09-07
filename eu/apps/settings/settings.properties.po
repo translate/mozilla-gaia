@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-27 18:45+0000\n"
+"POT-Creation-Date: 2015-09-07 14:45+0000\n"
 "PO-Revision-Date: 2015-06-21 18:42+0000\n"
 "Last-Translator: Ibai Oihanguren Sala <ibai@oihanguren.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1434912174.000000\n"
@@ -63,11 +63,17 @@ msgctxt "reset"
 msgid "Reset"
 msgstr "Berrezarri"
 
+#: factory-reset
+msgid "Factory Reset"
+msgstr ""
+
 #: cancel
 msgid "Cancel"
 msgstr "Utzi"
 
 #: close
+#, fuzzy
+msgctxt "close"
 msgid "Close"
 msgstr "Itxi"
 
@@ -88,6 +94,8 @@ msgid "Pair"
 msgstr "Parekatu"
 
 #: add
+#, fuzzy
+msgctxt "add"
 msgid "Add"
 msgstr "Gehitu"
 
@@ -146,10 +154,26 @@ msgid "Network & Connectivity"
 msgstr "Sarea eta konektibitatea"
 
 #: airplaneMode
+#, fuzzy
+msgctxt "airplaneMode"
+msgid "Airplane Mode"
+msgstr "Hegazkin modua"
+
+#: airplaneMode.ariaLabel
+#, fuzzy
+msgctxt "airplaneMode.ariaLabel"
 msgid "Airplane Mode"
 msgstr "Hegazkin modua"
 
 #: geolocation
+#, fuzzy
+msgctxt "geolocation"
+msgid "Geolocation"
+msgstr "Geokokapena"
+
+#: geolocation.ariaLabel
+#, fuzzy
+msgctxt "geolocation.ariaLabel"
 msgid "Geolocation"
 msgstr "Geokokapena"
 
@@ -249,8 +273,9 @@ msgid "Wi-Fi Sleep"
 msgstr "Wi-Fi loa"
 
 #: wifi-sleep-description
+#, fuzzy
 msgid ""
-"Enable to automatically turn off Wi-Fi during sleep to save battery power.  "
+"Enable to automatically turn off Wi-Fi during sleep to save battery power."
 msgstr ""
 "Gaitu loa Wi-Fia automatikoki itzaltzeko eta horrela bateria aurrezteko."
 
@@ -280,12 +305,19 @@ msgid "{{manageNetworks}}"
 msgstr "{{manageNetworks}}"
 
 #: manageCertificates
-msgid "Manage certificates"
+#, fuzzy
+msgid "Manage Certificates"
 msgstr "Kudeatu ziurtagiriak"
 
-#: manageCert
-msgid "Manage Cert."
-msgstr "Kudeatu ziurt."
+#. # LOCALIZATION NOTE (manageCertificates-header): if you leave the original
+#. # en-US value "{{manageCertificates}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID
+#. # "manageCertificates".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: manageCertificates-header
+msgid "{{manageCertificates}}"
+msgstr ""
 
 #: joinHiddenNetwork
 msgid "Join Hidden Network"
@@ -441,6 +473,8 @@ msgid "No known networks"
 msgstr "Ez dago sare ezagunik"
 
 #: edit
+#, fuzzy
+msgctxt "edit"
 msgid "Edit"
 msgstr "Editatu"
 
@@ -453,15 +487,18 @@ msgid "No certificates imported"
 msgstr "Ez da ziurtagiririk inportatu"
 
 #: deleteCertificate
-msgid "Delete certificate"
+#, fuzzy
+msgid "Delete Certificate"
 msgstr "Ezabatu ziurtagiria"
 
 #: importCertificate
-msgid "Import certificate"
+#, fuzzy
+msgid "Import Certificate"
 msgstr "Inportatu ziurtagiria"
 
 #: selectCertificateFile
-msgid "Select certificate file"
+#, fuzzy
+msgid "Select Certificate File"
 msgstr "Hautatu ziurtagiri-fitxategia"
 
 #: enterCertificateNickname
@@ -574,6 +611,8 @@ msgstr "Huts egin du WPSa uzteak [{{error}}]"
 
 #. # Connectivity :: Call
 #: callSettings
+#, fuzzy
+msgctxt "callSettings"
 msgid "Call Settings"
 msgstr "Deien ezarpenak"
 
@@ -684,7 +723,7 @@ msgstr "Birbidali ezin denean eskuratu"
 msgid "When unreachable"
 msgstr "Ezin denean eskuratu"
 
-#: callForwardingForwardingVoiceToNumber.innerHTML
+#: callForwardingForwardingVoiceToNumber
 msgid "Voice calls to <bdi>{{number}}</bdi>"
 msgstr "<bdi>{{number}}</bdi> zenbakira ahots-deiak"
 
@@ -956,10 +995,6 @@ msgstr ""
 msgid "The PIN2 code is incorrect."
 msgstr "PIN2 kodea okerra da."
 
-#: fdn-enabled-warning
-msgid "Call forwarding is disabled by FDN."
-msgstr "Dei-birbidalketa FDNagatik desgaituta dago."
-
 #: fdnContact-name
 msgid "name"
 msgstr "izena"
@@ -1001,6 +1036,8 @@ msgstr "Gehieneko markatze-zenbaki finkoak. Ezin da zenbaki gehiagorik gehitu."
 
 #. # Connectivity :: Messaging
 #: messagingSettings
+#, fuzzy
+msgctxt "messagingSettings"
 msgid "Messaging Settings"
 msgstr "Mezularitza-ezarpenak"
 
@@ -1033,13 +1070,9 @@ msgstr "Irakurketa-txostenak"
 msgid "Request read report for each message sent"
 msgstr "Eskatu irakurketa-txostena bidalitako mezu bakoitzeko"
 
-#. # LOCALIZATION NOTE (mmsTitle): LRE (&#x202a;) and PDF (&#x202c;)
-#. # force the proper directionality of parentheses at the end of the string
-#. # regardless of the direction of the surrounding layout. Remove them only
-#. # if the translation puts them between other text.
-#: mmsTitle.innerHTML
-msgid "&#x202a;Multimedia Messaging (MMS)&#x202c;"
-msgstr "&#x202a;Multimedia-mezularitza (MMS)&#x202c;"
+#: mmsTitle
+msgid "Multimedia Messaging (MMS)"
+msgstr "Multimedia-mezularitza (MMS)"
 
 #: auto-retrieve
 msgid "Auto Retrieve"
@@ -1105,6 +1138,8 @@ msgstr "Ez dago informaziorik"
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
+#, fuzzy
+msgctxt "cellularAndData"
 msgid "Cellular & Data"
 msgstr "Mugikorra eta datuak"
 
@@ -1209,6 +1244,11 @@ msgstr "WCDMA hobetsia"
 msgid "Auto (2G/3G)"
 msgstr "Automatikoa (2G/3G)"
 
+#: operator-networkType-auto-3G-4G
+#, fuzzy
+msgid "Auto (3G/4G)"
+msgstr "Automatikoa (2G/3G)"
+
 #: operator-networkType-auto-CDMA-EVDO
 msgid "Auto (CDMA/EVDO)"
 msgstr "Automatikoa (CDMA/EVDO)"
@@ -1219,6 +1259,11 @@ msgstr "Automatikoa (WCDMA/GSM)"
 
 #: operator-networkType-auto-LTE-WCDMA-GSM
 msgid "Auto (LTE/WCDMA/GSM)"
+msgstr "Automatikoa (LTE/WCDMA/GSM)"
+
+#: operator-networkType-auto-LTE-WCDMA
+#, fuzzy
+msgid "Auto (LTE/WCDMA)"
 msgstr "Automatikoa (LTE/WCDMA/GSM)"
 
 #: operator-networkType-auto-LTE-CDMA-EVDO
@@ -1246,20 +1291,47 @@ msgstr "Eskuzkoa"
 msgid "Turn automatic selection off to view available network operators."
 msgstr "Desgaitu hautapen automatikoa sare-operatzaile erabilgarriak ikusteko."
 
-#: operator-status-connecting
-msgctxt "operator-status-connecting"
+#: operator-info-connecting
+#, fuzzy
+msgctxt "operator-info-connecting"
 msgid "Connecting…"
 msgstr "Konektatzen…"
 
-#: operator-status-connectingfailed
-msgctxt "operator-status-connectingfailed"
+#: operator-info-failed
+#, fuzzy
+msgctxt "operator-info-failed"
 msgid "Connection failed"
 msgstr "Konexioak huts egin du"
 
-#: operator-status-connected
-msgctxt "operator-status-connected"
+#: operator-info-connected
+#, fuzzy
+msgctxt "operator-info-connected"
 msgid "Connected"
 msgstr "Konektatuta"
+
+#: operator-info-available
+#, fuzzy
+msgctxt "operator-info-available"
+msgid "Available"
+msgstr "Erabilgarri"
+
+#: operator-info-current
+#, fuzzy
+msgctxt "operator-info-current"
+msgid "Connected"
+msgstr "Konektatuta"
+
+#: operator-info-forbidden
+#, fuzzy
+msgctxt "operator-info-forbidden"
+msgid "Forbidden"
+msgstr "Debekatuta"
+
+#: operator-info-unknown
+#, fuzzy
+msgctxt "operator-info-unknown"
+msgid "Unknown state"
+msgstr "Egoera ezezaguna"
 
 #: operator-roamingPreference
 msgid "Roaming preference"
@@ -1359,6 +1431,20 @@ msgstr "IMS ezarpenak"
 #: imsSettings-header2
 msgid "{{imsSettings}}"
 msgstr "{{imsSettings}}"
+
+#: fotaSettings
+msgid "FOTA Settings"
+msgstr ""
+
+#. # LOCALIZATION NOTE (fotaSettings-header): if you leave the original
+#. # en-US value "{{fotaSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "fotaSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: fotaSettings-header
+#, fuzzy
+msgid "{{fotaSettings}}"
+msgstr "{{dataSettings}}"
 
 #: apn-editor-header
 msgid "APN Editor"
@@ -1487,10 +1573,14 @@ msgid "This resets the settings to default values. This cannot be undone."
 msgstr "Ezarpenak balio lehenetsietara berrezartzen ditu. Hau ezin da desegin."
 
 #: state-unknown
+#, fuzzy
+msgctxt "state-unknown"
 msgid "Unknown state"
 msgstr "Egoera ezezaguna"
 
 #: state-available
+#, fuzzy
+msgctxt "state-available"
 msgid "Available"
 msgstr "Erabilgarri"
 
@@ -1505,6 +1595,8 @@ msgid "Connected"
 msgstr "Konektatuta"
 
 #: state-forbidden
+#, fuzzy
+msgctxt "state-forbidden"
 msgid "Forbidden"
 msgstr "Debekatuta"
 
@@ -1532,6 +1624,8 @@ msgstr "Leheneratu APNaren ezarpenak"
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
+#, fuzzy
+msgctxt "bluetooth"
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -1688,9 +1782,13 @@ msgstr "Aldatu nire gailuaren izena"
 msgid "Unknown device"
 msgstr "Gailu ezezaguna"
 
-#: change-phone-name-desc
-msgid "Change the name of your device as it appears in your computer"
-msgstr "Aldatu ordenagailuan agertzen den gailuaren izena"
+#: change-btdevice-name
+msgid "Change device name"
+msgstr ""
+
+#: change-btdevice-name-desc
+msgid "This name will appear on your other Bluetooth devices"
+msgstr ""
 
 #: bluetooth-new-name
 msgid "New name"
@@ -1732,17 +1830,29 @@ msgstr ""
 "Orain gailu honekin konektatuta zaude. Desparekatzeak harekin deskonektatzea "
 "eragingo du."
 
+#: unpair-confirm
+msgid ""
+"{{unpair-title}}\n"
+"{{unpair-msg}}"
+msgstr ""
+
 #. # Connectivity :: NFC
 #: nfc
+#, fuzzy
+msgctxt "nfc"
+msgid "NFC"
+msgstr "NFC"
+
+#: nfc.ariaLabel
+#, fuzzy
+msgctxt "nfc.ariaLabel"
 msgid "NFC"
 msgstr "NFC"
 
 #. # Connectivity :: Internet Sharing
-#: SSIDCannotBeEmpty
-msgid "The SSID cannot be empty"
-msgstr "SSIDak ezin du hutsik egon"
-
 #: internetSharing
+#, fuzzy
+msgctxt "internetSharing"
 msgid "Internet Sharing"
 msgstr "Internet partekatzea"
 
@@ -1823,7 +1933,7 @@ msgstr "Wifigune-ezarpenak"
 msgid "SSID Network Name"
 msgstr "SSID sarearen izena"
 
-#: hotspot-open
+#: hotspot-security-open
 msgid "open"
 msgstr "irekia"
 
@@ -1834,8 +1944,8 @@ msgstr "irekia"
 #. # and PDF (&#x202c;) entities to these translations to force the correct direction.
 #. #
 #. # RTL locales should have a translation similar to this:
-#. # hotspot-wpa-psk.innerHTML= &#x202a;WPA (TKIP)&#x202c;
-#. # hotspot-wpa2-psk.innerHTML= &#x202a;WPA2 (AES)&#x202c;
+#. # hotspot-wpa-psk= &#x202a;WPA (TKIP)&#x202c;
+#. # hotspot-wpa2-psk= &#x202a;WPA2 (AES)&#x202c;
 #. #
 #. # [More details]
 #. #
@@ -1846,17 +1956,13 @@ msgstr "irekia"
 #. # automatically in a wrong way by browser. Because from engineering side,
 #. # we can only change settings.ar.properties, for localizers, please remember to
 #. # put them in the other RTL languages.
-#. #
-#. # Additionally, in order to make this hack work, we got some help from l10n.js
-#. # that we need to put these strings inside "KEY".innerHTML, so that's the
-#. # reason why these two strings below would be suffixed with ".innerHTML"
-#: hotspot-wpa-psk.innerHTML
-msgid "WPA (TKIP)"
-msgstr "WPA (TKIP)"
+#: hotspot-security-wpa-psk
+msgid "WPA"
+msgstr ""
 
-#: hotspot-wpa2-psk.innerHTML
-msgid "WPA2 (AES)"
-msgstr "WPA2 (AES)"
+#: hotspot-security-wpa2-psk
+msgid "WPA2"
+msgstr ""
 
 #: hotspot-password-desc
 msgid "The password must have at least 8 characters."
@@ -1871,6 +1977,14 @@ msgstr "Pertsonalizazioa"
 
 #. # Personalization :: Sound
 #: sound
+#, fuzzy
+msgctxt "sound"
+msgid "Sound"
+msgstr "Soinua"
+
+#: sound.ariaLabel
+#, fuzzy
+msgctxt "sound.ariaLabel"
 msgid "Sound"
 msgstr "Soinua"
 
@@ -1957,6 +2071,14 @@ msgstr "Ez dugu aplikazioarik aurkitu txirrin-tonuak kudeatzeko!"
 
 #. # Personalization :: Display
 #: display
+#, fuzzy
+msgctxt "display"
+msgid "Display"
+msgstr "Pantaila"
+
+#: display.ariaLabel
+#, fuzzy
+msgctxt "display.ariaLabel"
 msgid "Display"
 msgstr "Pantaila"
 
@@ -2015,6 +2137,14 @@ msgstr "Blokeatu orientazioa"
 
 #. # Personalization :: Navigation
 #: navigation
+#, fuzzy
+msgctxt "navigation"
+msgid "Navigation"
+msgstr "Nabigazioa"
+
+#: navigation.ariaLabel
+#, fuzzy
+msgctxt "navigation.ariaLabel"
 msgid "Navigation"
 msgstr "Nabigazioa"
 
@@ -2039,6 +2169,14 @@ msgstr ""
 
 #. # Personalization :: Notifications
 #: notifications
+#, fuzzy
+msgctxt "notifications"
+msgid "Notifications"
+msgstr "Jakinarazpenak"
+
+#: notifications.ariaLabel
+#, fuzzy
+msgctxt "notifications.ariaLabel"
 msgid "Notifications"
 msgstr "Jakinarazpenak"
 
@@ -2061,6 +2199,8 @@ msgstr "Erak. berrabia. ondoren"
 
 #. # Personalization :: Date & Time
 #: dateAndTime
+#, fuzzy
+msgctxt "dateAndTime"
 msgid "Date & Time"
 msgstr "Data eta ordua"
 
@@ -2124,6 +2264,8 @@ msgid "Language & Region"
 msgstr "Hizkuntza eta eskualdea"
 
 #: language
+#, fuzzy
+msgctxt "language"
 msgid "Language"
 msgstr "Hizkuntza"
 
@@ -2161,6 +2303,8 @@ msgstr "%Y-%b-%d"
 
 #. # Personalization :: Sim cards manager
 #: simManager
+#, fuzzy
+msgctxt "simManager"
 msgid "SIM Manager"
 msgstr "SIM kudeatzailea"
 
@@ -2239,6 +2383,12 @@ msgctxt "homescreen"
 msgid "Homescreen"
 msgstr "Hasierako pantaila"
 
+#: homescreen.ariaLabel
+#, fuzzy
+msgctxt "homescreen.ariaLabel"
+msgid "Homescreen"
+msgstr "Hasierako pantaila"
+
 #: vertical-homescreen-header
 msgctxt "vertical-homescreen-header"
 msgid "Homescreen"
@@ -2269,6 +2419,12 @@ msgctxt "search"
 msgid "Search"
 msgstr "Bilaketa"
 
+#: search.ariaLabel
+#, fuzzy
+msgctxt "search.ariaLabel"
+msgid "Search"
+msgstr "Bilaketa"
+
 #: search-header
 msgctxt "search-header"
 msgid "Search"
@@ -2294,6 +2450,14 @@ msgstr ""
 
 #. # Personalization :: Homescreens
 #: homescreens
+#, fuzzy
+msgctxt "homescreens"
+msgid "Homescreens"
+msgstr "Hasierako pantailak"
+
+#: homescreens.ariaLabel
+#, fuzzy
+msgctxt "homescreens.ariaLabel"
 msgid "Homescreens"
 msgstr "Hasierako pantailak"
 
@@ -2316,6 +2480,8 @@ msgid "Change"
 msgstr "Aldatu"
 
 #: description
+#, fuzzy
+msgctxt "description"
 msgid "Description"
 msgstr "Deskribapena"
 
@@ -2329,6 +2495,8 @@ msgid "Selected Keyboards"
 msgstr "Hautatutako teklatuak"
 
 #: keyboards
+#, fuzzy
+msgctxt "keyboards"
 msgid "Keyboards"
 msgstr "Teklatuak"
 
@@ -2393,6 +2561,14 @@ msgstr "{{appName}} {{layoutName}} sarrera-metodo lehenetsi gisa dago ezarrita"
 
 #. # Personalization :: Themes
 #: themes
+#, fuzzy
+msgctxt "themes"
+msgid "Themes"
+msgstr "Gaiak"
+
+#: themes.ariaLabel
+#, fuzzy
+msgctxt "themes.ariaLabel"
 msgid "Themes"
 msgstr "Gaiak"
 
@@ -2460,16 +2636,10 @@ msgstr "Utzi kontu-baieztapena"
 msgid "A verification link has been sent to {{email}}."
 msgstr "Egiaztapen-esteka bat bidali da {{email}} helbidera."
 
-#. # LOCALIZATION NOTE (fxa-dont-see-email): the "{{resend}}" placeholder
-#. # will be replaced with a link containing the string with ID "fxa-resend":
-#. # "Don't see an email? <a>Resend</a>."
-#: fxa-dont-see-email
-msgid "Don’t see an email? {{resend}}."
+#: fxa-dont-see-email-resend
+#, fuzzy
+msgid "Don’t see an email? <a>Resend</a>."
 msgstr "Ez duzu postarik ikusten? {{resend}}."
-
-#: fxa-resend
-msgid "Resend"
-msgstr "Birbidali"
 
 #. # Panel: logged in, verified
 #: fxa-about
@@ -2494,6 +2664,8 @@ msgid "Find My Device"
 msgstr "Bilatu nire gailua"
 
 #: fxa-options
+#, fuzzy
+msgctxt "fxa-options"
 msgid "Options"
 msgstr "Aukerak"
 
@@ -2571,6 +2743,8 @@ msgid "Passcode: {{code}}"
 msgstr "Pasakodea: {{code}}"
 
 #: screenLock
+#, fuzzy
+msgctxt "screenLock"
 msgid "Screen Lock"
 msgstr "Pantaila-blokeoa"
 
@@ -2583,7 +2757,17 @@ msgstr "Pantaila-blokeoa"
 msgid "{{screenLock}}"
 msgstr "{{screenLock}}"
 
+#: screenLock-enabled-with-no-passcode
+msgid "Enabled with no passcode"
+msgstr ""
+
+#: screenLock-enabled-with-passcode
+msgid "Enabled with passcode"
+msgstr ""
+
 #: simSecurity
+#, fuzzy
+msgctxt "simSecurity"
 msgid "SIM Security"
 msgstr "SIM segurtasuna"
 
@@ -2598,6 +2782,14 @@ msgstr "{{simSecurity}}"
 
 #. # Security :: App permissions
 #: appPermissions
+#, fuzzy
+msgctxt "appPermissions"
+msgid "App Permissions"
+msgstr "Aplikazioen baimenak"
+
+#: appPermissions.ariaLabel
+#, fuzzy
+msgctxt "appPermissions.ariaLabel"
 msgid "App Permissions"
 msgstr "Aplikazioen baimenak"
 
@@ -3038,6 +3230,8 @@ msgstr "Errore ezezaguna gertatu da"
 
 #. # Security :: Do Not Track
 #: doNotTrack
+#, fuzzy
+msgctxt "doNotTrack"
 msgid "Do Not Track"
 msgstr "Do Not Track"
 
@@ -3089,6 +3283,14 @@ msgstr ""
 
 #. # Security :: Browsing Privacy
 #: browsingPrivacy
+#, fuzzy
+msgctxt "browsingPrivacy"
+msgid "Browsing Privacy"
+msgstr "Nabigazio-pribatutasuna"
+
+#: browsingPrivacy.ariaLabel
+#, fuzzy
+msgctxt "browsingPrivacy.ariaLabel"
 msgid "Browsing Privacy"
 msgstr "Nabigazio-pribatutasuna"
 
@@ -3128,11 +3330,14 @@ msgstr "Garbitu"
 
 #. # Security :: Privacy Panel
 #: privacy-controls
+#, fuzzy
+msgctxt "privacy-controls"
 msgid "Privacy Controls"
 msgstr "Pribatutasun-kontrolak"
 
-#: no-privacy-panel
-msgid "No privacy panel app found"
+#: no-privacy-controls
+#, fuzzy
+msgid "No privacy controls app found"
 msgstr "Ez da pribatutasun-panelaren aplikazioa aurkitu"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3152,6 +3357,8 @@ msgid "Unplug USB cable to disable"
 msgstr "Desgaitzeko, desentxufatu USB kablea"
 
 #: appStorage
+#, fuzzy
+msgctxt "appStorage"
 msgid "Application Storage"
 msgstr "Aplikazioen biltegiratzea"
 
@@ -3163,26 +3370,6 @@ msgstr "Aplikazioen biltegiratzea"
 #: appStorage-header
 msgid "{{appStorage}}"
 msgstr "{{appStorage}}"
-
-#: byteUnit-B
-msgid "B"
-msgstr "B"
-
-#: byteUnit-KB
-msgid "KB"
-msgstr "KB"
-
-#: byteUnit-MB
-msgid "MB"
-msgstr "MB"
-
-#: byteUnit-GB
-msgid "GB"
-msgstr "GB"
-
-#: byteUnit-TB
-msgid "TB"
-msgstr "TB"
 
 #: storageSize
 msgid "{{size}} {{unit}}"
@@ -3252,15 +3439,19 @@ msgid "Transfer Protocol"
 msgstr "Transferentzia-protokoloa"
 
 #: protocol-mtp
-msgid "Media transfer protocol (MTP)"
+#, fuzzy
+msgid "Media Transfer Protocol (MTP)"
 msgstr "Media transfer protocol (MTP)"
 
 #: protocol-ums
-msgid "USB mass Storage (UMS)"
+#, fuzzy
+msgid "USB Mass Storage (UMS)"
 msgstr "USB mass Storage (UMS)"
 
 #. # Storage :: Media storage
 #: mediaStorage
+#, fuzzy
+msgctxt "mediaStorage"
 msgid "Media Storage"
 msgstr "Multimedia-biltegiratzea"
 
@@ -3428,6 +3619,23 @@ msgstr "Formateatu"
 msgid "SD card unmounted"
 msgstr "SD txartela desmuntatu da"
 
+#: ums-partial-support-warning-title
+msgid "Warning: USB Mass Storage may not work"
+msgstr ""
+
+#: ums-partial-support-warning-msg-1
+msgid ""
+"USB Mass Storage will only work correctly with an external SD card. If you'd "
+"like to be able to access both your internal and external storage, you must "
+"use MTP."
+msgstr ""
+
+#: ums-partial-support-warning-msg-2
+msgid ""
+"Press \"OK\" to switch to USB Mass Storage, or \"Cancel\" to remain in MTP "
+"mode."
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Device
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3440,8 +3648,22 @@ msgctxt "help"
 msgid "Help"
 msgstr "Laguntza"
 
+#: help.ariaLabel
+#, fuzzy
+msgctxt "help.ariaLabel"
+msgid "Help"
+msgstr "Laguntza"
+
 #. # Device :: Information
 #: deviceInfo
+#, fuzzy
+msgctxt "deviceInfo"
+msgid "Device Information"
+msgstr "Gailuaren informazioa"
+
+#: deviceInfo.ariaLabel
+#, fuzzy
+msgctxt "deviceInfo.ariaLabel"
 msgid "Device Information"
 msgstr "Gailuaren informazioa"
 
@@ -3458,7 +3680,7 @@ msgstr "{{deviceInfo}}"
 msgid "IMEI"
 msgstr "IMEI"
 
-#: deviceInfo-IMEI-with-index.innerHTML
+#: deviceInfo-IMEI-with-index
 msgid "IMEI {{index}}: <bdi>{{imei}}</bdi>"
 msgstr "{{index}}. IMEIa: <bdi>{{imei}}</bdi>"
 
@@ -3466,7 +3688,7 @@ msgstr "{{index}}. IMEIa: <bdi>{{imei}}</bdi>"
 msgid "ICCID"
 msgstr "ICCID"
 
-#: deviceInfo-ICCID-with-index.innerHTML
+#: deviceInfo-ICCID-with-index
 msgid "SIM {{index}}: <bdi>{{iccid}}</bdi>"
 msgstr "{{index}}. SIMa: <bdi>{{iccid}}</bdi>"
 
@@ -3474,7 +3696,7 @@ msgstr "{{index}}. SIMa: <bdi>{{iccid}}</bdi>"
 msgid "Phone Number"
 msgstr "Telefono-zenbakia"
 
-#: deviceInfo-MSISDN-with-index.innerHTML
+#: deviceInfo-MSISDN-with-index
 msgid "SIM {{index}}: <bdi>{{msisdn}}</bdi>"
 msgstr "{{index}}. SIMa: <bdi>{{msisdn}}</bdi>"
 
@@ -3483,6 +3705,14 @@ msgid "SIM {{index}}: Not available"
 msgstr "{{index}}. SIMa: ez dago erabilgarri"
 
 #: downloads
+#, fuzzy
+msgctxt "downloads"
+msgid "Downloads"
+msgstr "Deskargak"
+
+#: downloads.ariaLabel
+#, fuzzy
+msgctxt "downloads.ariaLabel"
 msgid "Downloads"
 msgstr "Deskargak"
 
@@ -3507,264 +3737,6 @@ msgstr "{{index}}. SIMa: ezezaguna"
 msgid "Git Commit Info"
 msgstr "Git commit informazioa"
 
-#: developer
-msgid "Developer"
-msgstr "Garatzailea"
-
-#. # LOCALIZATION NOTE (developer-header): if you leave the original
-#. # en-US value "{{developer}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "developer".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: developer-header
-msgid "{{developer}}"
-msgstr "{{developer}}"
-
-#: hud-settings-button
-msgid "Developer HUD"
-msgstr "Garatzailearen HUDa"
-
-#. # LOCALIZATION NOTE (hud-settings-header): if you leave the original en-US value
-#. # "{{hud-settings-button}}" in the following string, the localization will be
-#. # automatically picked from the existing string with ID "hud-settings-button". If you
-#. # need to adapt your localizations to the available space in headers or
-#. # buttons, you can use different strings here.
-#: hud-settings-header
-msgid "{{hud-settings-button}}"
-msgstr "{{hud-settings-button}}"
-
-#: hud-devtools
-msgid "Developer tools"
-msgstr "Garatzaile-tresnak"
-
-#. # LOCALIZATION NOTE (hud-devtools-header): if you leave the original en-US
-#. # value "{{hud-devtools}}" in the following string, the localization will be
-#. # automatically picked from the existing string with ID "hud-devtools". If you
-#. # need to adapt your localizations to the available space in headers or
-#. # buttons, you can use different strings here.
-#: hud-devtools-header
-msgid "{{hud-devtools}}"
-msgstr "{{hud-devtools}}"
-
-#: hud-logging
-msgid "Log changes in ADB"
-msgstr "Erregistr. aldaketak ADBn"
-
-#: hud-system
-msgid "Show system HUD"
-msgstr "Erakutsi sistemaren HUDa"
-
-#: hud-problems
-msgid "Problems"
-msgstr "Arazoak"
-
-#: hud-warnings
-msgid "Warnings"
-msgstr "Abisuak"
-
-#: hud-errors
-msgid "Errors"
-msgstr "Erroreak"
-
-#: hud-security
-msgid "Security issues"
-msgstr "Segurtasun-arazoak"
-
-#: hud-performance
-msgid "Performance"
-msgstr "Errendimendua"
-
-#: hud-reflows
-msgid "Reflows"
-msgstr "Egokitzeak"
-
-#: hud-jank
-msgid "Jank"
-msgstr "Atzerapena"
-
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Atzerapenaren atalasea"
-
-#: hud-fps
-msgid "Frames per second"
-msgstr "Fotogramak segundoko"
-
-#: hud-ttl
-msgid "Time to load"
-msgstr "Kargatzeko denbora"
-
-#: hud-memory
-msgid "Memory"
-msgstr "Memoria"
-
-#: hud-uss
-msgid "Unique Set Size"
-msgstr "Memoria ez partekatua"
-
-#: hud-appmemory
-msgid "App memory"
-msgstr "Aplikazioen memoria"
-
-#: hud-jsobjects
-msgid "JS objects"
-msgstr "JS objektuak"
-
-#: hud-jsstrings
-msgid "JS strings"
-msgstr "JS kateak"
-
-#: hud-jsother
-msgid "JS other"
-msgstr "JS bestelakoa"
-
-#: hud-dom
-msgid "DOM"
-msgstr "DOMa"
-
-#: hud-style
-msgid "Style"
-msgstr "Estiloa"
-
-#: hud-other
-msgctxt "hud-other"
-msgid "Other"
-msgstr "Bestelakoak"
-
-#: software
-msgid "Software"
-msgstr "Softwarea"
-
-#: devSettings
-msgid "Developer Settings"
-msgstr "Garatzaileen ezarpenak"
-
-#: debug
-msgid "Debug"
-msgstr "Arazketa"
-
-#: developer-menu
-msgid "Developer Menu"
-msgstr "Garatzaile-menua"
-
-#: developer-tools
-msgid "Developer Tools"
-msgstr "Garatzaile-tresnak"
-
-#: graphics
-msgid "Graphics"
-msgstr "Grafikoak"
-
-#: hardware-composer
-msgid "Hardware composer"
-msgstr "Hardware-konposatzailea"
-
-#: paint-flashing
-msgid "Flash repainted area"
-msgstr "Distiratu birmargotzeak"
-
-#: dumps-layers
-msgid "Dump layers tree"
-msgstr "Irauli geruzen zuhaitza"
-
-# Layerscope hau da: https://wiki.mozilla.org/Platform/GFX/LayerScope
-#: dumps-layerscope
-msgid "Dump layerscope"
-msgstr "Irauli geruzen esparrua"
-
-#: apz-overscroll
-msgid "Overscrolling"
-msgstr "Gainkorritzea"
-
-#: tiling
-msgid "Tiling"
-msgstr "Mosaikoa egitea"
-
-#: low-precision
-msgid "Low-precision painting"
-msgstr "Doitasun txikiko margotzea"
-
-#: low-opacity
-msgid "Low-precision transparency"
-msgstr "Doitasun txikiko gardentasuna"
-
-#: draw-tile-borders
-msgid "Draw tile borders"
-msgstr "Marraztu mosaikoen ertzak"
-
-#: draw-layer-borders
-msgid "Draw layer borders"
-msgstr "Marraztu geruzen ertzak"
-
-#: log-animations
-msgid "Log slow animations"
-msgstr "Erregistratu animazio motelak"
-
-#: remote-debugging-usb
-msgid "Debugging via USB"
-msgstr "USB bidezko arazketa"
-
-#: dev-tools-wifi
-msgid "DevTools via Wi-Fi"
-msgstr "Wi-Fi bidezko garatzaile-tresnak"
-
-#: dev-tools-qps
-msgid "Pseudo-localization"
-msgstr "Sasiitzulpena"
-
-#: debugger-disabled
-msgctxt "debugger-disabled"
-msgid "Disabled"
-msgstr "Desgaituta"
-
-#: debugger-adb-only
-msgid "ADB only"
-msgstr "ADB soilik"
-
-#: debugger-adb-and-devtools
-msgid "ADB and DevTools"
-msgstr "ADB eta garatzaile-tresnak"
-
-#: wifi-debugging
-msgid "Wi-Fi output in ADB"
-msgstr "Wi-Fiaren irteera ADBn"
-
-#: bluetooth-debugging
-msgid "Bluetooth output in ADB"
-msgstr "Blueetooh-irteera ADBn"
-
-#: nfc-debugging
-msgid "NFC output in ADB"
-msgstr "NFC irteera ADBn"
-
-#: ril-debugging
-msgid "RIL output in ADB"
-msgstr "RIL irteera ADBn"
-
-#: console-enabled
-msgid "Console enabled"
-msgstr "Kontsola gaituta"
-
-#: cards-view-screenshots
-msgid "Cards View: Screenshots"
-msgstr "Txartel-ikuspegia: pantaila-argazkiak"
-
-#: geolocation-debugging-enabled
-msgid "Geolocation output in ADB"
-msgstr "Geokokapen-irteera ADBn"
-
-#: geolocation-debugging-gps-locations-ignored
-msgid "Ignore GPS locations"
-msgstr "Ezikusi GPS kokapenak"
-
-#: use-reviewer-certs
-msgid "Use Marketplace reviewer certs"
-msgstr "Erabili Marketplace berrikusleen ziurtagiriak"
-
-#: shake-to-log
-msgid "Shake to save system log"
-msgstr "Astindu sistema-egunkaria gordetzeko"
-
 #: model-name
 msgid "Model"
 msgstr "Modeloa"
@@ -3776,6 +3748,14 @@ msgstr "SE bertsioa"
 #: firmware_revision
 msgid "Firmware Revision"
 msgstr "Firmwarearen berrikuspena"
+
+#: hardware_manufacturer
+msgid "Hardware Manufacturer"
+msgstr ""
+
+#: hardware_platform
+msgid "Hardware Platform"
+msgstr ""
 
 #: hardware_revision
 msgid "Hardware Revision"
@@ -3896,21 +3876,6 @@ msgstr "Berrezarri"
 
 #: reset-warning-title
 msgctxt "reset-warning-title"
-msgid "CAUTION"
-msgstr "KONTUZ"
-
-#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
-#. # full DevTools access.
-#: unlock-privileges
-msgid "Unlock Privileges"
-msgstr "Desblokeatu pribilegioak"
-
-#: reset-devtools
-msgid "Reset and enable full DevTools"
-msgstr "Berrezarri eta gaitu DevTools osorik"
-
-#: reset-devtools-warning-title
-msgctxt "reset-devtools-warning-title"
 msgid "CAUTION"
 msgstr "KONTUZ"
 
@@ -4083,6 +4048,338 @@ msgstr "Mozilla Public License 2.0"
 msgid "Apache License 2.0"
 msgstr "Apache License 2.0"
 
+#. # Device :: Developer
+#: developer
+#, fuzzy
+msgctxt "developer"
+msgid "Developer"
+msgstr "Garatzailea"
+
+#: developer.ariaLabel
+#, fuzzy
+msgctxt "developer.ariaLabel"
+msgid "Developer"
+msgstr "Garatzailea"
+
+#. # LOCALIZATION NOTE (developer-header): if you leave the original
+#. # en-US value "{{developer}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "developer".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: developer-header
+msgid "{{developer}}"
+msgstr "{{developer}}"
+
+#: hud-settings-button
+msgid "Developer HUD"
+msgstr "Garatzailearen HUDa"
+
+#. # LOCALIZATION NOTE (hud-settings-header): if you leave the original en-US value
+#. # "{{hud-settings-button}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-settings-button". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-settings-header
+msgid "{{hud-settings-button}}"
+msgstr "{{hud-settings-button}}"
+
+#: hud-devtools
+#, fuzzy
+msgctxt "hud-devtools"
+msgid "Developer Tools"
+msgstr "Garatzaile-tresnak"
+
+#. # LOCALIZATION NOTE (hud-devtools-header): if you leave the original en-US
+#. # value "{{hud-devtools}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-devtools". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-devtools-header
+msgid "{{hud-devtools}}"
+msgstr "{{hud-devtools}}"
+
+#: hud-hide
+msgid "Hide All HUD Elements"
+msgstr ""
+
+#: hud-logging
+#, fuzzy
+msgid "Log Changes in ADB"
+msgstr "Erregistr. aldaketak ADBn"
+
+#: hud-system
+#, fuzzy
+msgid "Show System HUD"
+msgstr "Erakutsi sistemaren HUDa"
+
+#: hud-problems
+msgid "Problems"
+msgstr "Arazoak"
+
+#: hud-warnings
+msgid "Warnings"
+msgstr "Abisuak"
+
+#: hud-errors
+msgid "Errors"
+msgstr "Erroreak"
+
+#: hud-security
+#, fuzzy
+msgid "Security Issues"
+msgstr "Segurtasun-arazoak"
+
+#: hud-performance
+msgid "Performance"
+msgstr "Errendimendua"
+
+#: hud-reflows
+msgid "Reflows"
+msgstr "Egokitzeak"
+
+#: hud-jank
+msgid "Jank"
+msgstr "Atzerapena"
+
+#: jank-threshold
+msgid "Jank Threshold"
+msgstr "Atzerapenaren atalasea"
+
+#: hud-fps
+#, fuzzy
+msgid "Frames per Second"
+msgstr "Fotogramak segundoko"
+
+#: hud-ttl
+#, fuzzy
+msgid "Time to Load"
+msgstr "Kargatzeko denbora"
+
+#: hud-memory
+msgid "Memory"
+msgstr "Memoria"
+
+#: hud-uss
+msgid "Unique Set Size"
+msgstr "Memoria ez partekatua"
+
+#: hud-appmemory
+#, fuzzy
+msgid "App Memory"
+msgstr "Aplikazioen memoria"
+
+#: hud-jsobjects
+#, fuzzy
+msgid "JS Objects"
+msgstr "JS objektuak"
+
+#: hud-jsstrings
+#, fuzzy
+msgid "JS Strings"
+msgstr "JS kateak"
+
+#: hud-jsother
+#, fuzzy
+msgid "JS Other"
+msgstr "JS bestelakoa"
+
+#: hud-dom
+msgid "DOM"
+msgstr "DOMa"
+
+#: hud-style
+msgid "Style"
+msgstr "Estiloa"
+
+#: hud-other
+msgctxt "hud-other"
+msgid "Other"
+msgstr "Bestelakoak"
+
+#: hud-telemetry
+msgid "Telemetry"
+msgstr ""
+
+#: software
+msgid "Software"
+msgstr "Softwarea"
+
+#: devSettings
+msgid "Developer Settings"
+msgstr "Garatzaileen ezarpenak"
+
+#: debug
+msgid "Debug"
+msgstr "Arazketa"
+
+#: developer-menu
+msgid "Developer Menu"
+msgstr "Garatzaile-menua"
+
+#: developer-tools
+#, fuzzy
+msgctxt "developer-tools"
+msgid "Developer Tools"
+msgstr "Garatzaile-tresnak"
+
+#: graphics
+msgid "Graphics"
+msgstr "Grafikoak"
+
+#: hardware-composer
+#, fuzzy
+msgid "Hardware Composer"
+msgstr "Hardware-konposatzailea"
+
+#: paint-flashing
+#, fuzzy
+msgid "Flash Repainted Area"
+msgstr "Distiratu birmargotzeak"
+
+#: dumps-layers
+#, fuzzy
+msgid "Dump Layers Tree"
+msgstr "Irauli geruzen zuhaitza"
+
+#: dumps-display-list
+msgid "Dump Display List"
+msgstr ""
+
+# Layerscope hau da: https://wiki.mozilla.org/Platform/GFX/LayerScope
+#: dumps-layerscope
+#, fuzzy
+msgid "Dump LayerScope"
+msgstr "Irauli geruzen esparrua"
+
+#: apz-overscroll
+msgid "Overscrolling"
+msgstr "Gainkorritzea"
+
+#: tiling
+msgid "Tiling"
+msgstr "Mosaikoa egitea"
+
+#: low-precision
+#, fuzzy
+msgid "Low Precision Painting"
+msgstr "Doitasun txikiko margotzea"
+
+#: low-opacity
+#, fuzzy
+msgid "Low Precision Transparency"
+msgstr "Doitasun txikiko gardentasuna"
+
+#: draw-tile-borders
+#, fuzzy
+msgid "Draw Tile Borders"
+msgstr "Marraztu mosaikoen ertzak"
+
+#: draw-layer-borders
+#, fuzzy
+msgid "Draw Layer Borders"
+msgstr "Marraztu geruzen ertzak"
+
+#: log-animations
+#, fuzzy
+msgid "Log Slow Animations"
+msgstr "Erregistratu animazio motelak"
+
+#: remote-debugging-usb
+msgid "Debugging via USB"
+msgstr "USB bidezko arazketa"
+
+#: devtools-wifi
+msgid "DevTools via Wi-Fi"
+msgstr "Wi-Fi bidezko garatzaile-tresnak"
+
+#: devtools-device-name
+msgid "DevTools Wi-Fi Device Name"
+msgstr ""
+
+#: devtools-qps
+#, fuzzy
+msgid "Pseudo-Localization"
+msgstr "Sasiitzulpena"
+
+#: debugger-disabled
+msgctxt "debugger-disabled"
+msgid "Disabled"
+msgstr "Desgaituta"
+
+#: debugger-adb-only
+msgid "ADB only"
+msgstr "ADB soilik"
+
+#: debugger-adb-and-devtools
+msgid "ADB and DevTools"
+msgstr "ADB eta garatzaile-tresnak"
+
+#: wifi-debugging
+#, fuzzy
+msgid "Wi-Fi Output in ADB"
+msgstr "Wi-Fiaren irteera ADBn"
+
+#: bluetooth-debugging
+#, fuzzy
+msgid "Bluetooth Output in ADB"
+msgstr "Blueetooh-irteera ADBn"
+
+#: bluetooth-snoop-debugging
+msgid "Bluetooth HCI Sniffing Logs to SD Card"
+msgstr ""
+
+#: nfc-debugging
+#, fuzzy
+msgid "NFC Output in ADB"
+msgstr "NFC irteera ADBn"
+
+#: ril-debugging
+#, fuzzy
+msgid "RIL Output in ADB"
+msgstr "RIL irteera ADBn"
+
+#: network-debugging
+msgid "Network Output in ADB"
+msgstr ""
+
+#: mms-debugging
+#, fuzzy
+msgid "MMS Output in ADB"
+msgstr "NFC irteera ADBn"
+
+#: console-enabled
+#, fuzzy
+msgid "Console Enabled"
+msgstr "Kontsola gaituta"
+
+#: cards-view-screenshots
+msgid "Cards View: Screenshots"
+msgstr "Txartel-ikuspegia: pantaila-argazkiak"
+
+#: geolocation-debugging-enabled
+#, fuzzy
+msgid "Geolocation Output in ADB"
+msgstr "Geokokapen-irteera ADBn"
+
+#: geolocation-debugging-gps-locations-ignored
+#, fuzzy
+msgid "Ignore GPS Locations"
+msgstr "Ezikusi GPS kokapenak"
+
+#: use-reviewer-certs
+#, fuzzy
+msgid "Use Marketplace Reviewer Certs"
+msgstr "Erabili Marketplace berrikusleen ziurtagiriak"
+
+#: shake-to-log
+#, fuzzy
+msgid "Shake to Save System Log"
+msgstr "Astindu sistema-egunkaria gordetzeko"
+
+#: enable-logshake-qa
+msgid "Enable LogShake QA Mode"
+msgstr ""
+
 #: launch-ftu
 msgid "Launch First Time Use"
 msgstr "Abiarazi lehen erabilpeneko aplikazioa"
@@ -4092,44 +4389,180 @@ msgid "No first time use app found"
 msgstr "Ez da lehen erabilpeneko aplikazioa aurkitu"
 
 #: software-home-button
-msgid "Software home button"
+#, fuzzy
+msgid "Software Home Button"
 msgstr "Software bidezko hasiera-botoia"
 
 #: home-gesture
-msgid "Home gesture"
+#, fuzzy
+msgid "Home Gesture"
 msgstr "Etxerako mugimendua"
 
 #: continuous-transition
-msgid "Continuous transition"
+#, fuzzy
+msgid "Continuous Transition"
 msgstr "Etengabeko trantsizioa"
 
 #: debug-gaia-enabled
-msgid "Gaia debug traces"
+#, fuzzy
+msgid "Gaia Debug Traces"
 msgstr "Gaia arazketa-aztarnak"
 
 #: showScreenReaderSettings
-msgid "Show screen reader settings"
+#, fuzzy
+msgid "Show Screen Reader Settings"
 msgstr "Erakutsi pantaila-irakurlearen ezarpenak"
 
 #: app-transition
-msgid "App transition"
+#, fuzzy
+msgid "App Transition"
 msgstr "Aplikazioen trantsizioa"
 
 #: app-suspending
-msgid "App suspending"
+#, fuzzy
+msgid "App Suspending"
 msgstr "Aplikazioa esekitzea"
 
 #: copypaste
-msgid "Copy/paste"
+#, fuzzy
+msgid "Copy/Paste"
 msgstr "Kopiatu/itsatsi"
 
+#: multi-screen
+msgid "Multi-Screen"
+msgstr ""
+
 #: verbose-app-permissions
-msgid "Verbose app permissions"
+#, fuzzy
+msgid "Verbose App Permissions"
 msgstr "Aplikazioen baimen xehatuak"
 
+#: pinning-the-web
+msgid "Enable Pinning the Web"
+msgstr ""
+
+#: view-source
+msgid "Enable View Source Gesture"
+msgstr ""
+
 #: window-management
-msgid "Window management"
+#, fuzzy
+msgid "Window Management"
 msgstr "Leiho-kudeaketa"
+
+#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
+#. # full DevTools access.
+#: unlock-privileges
+msgid "Unlock Privileges"
+msgstr "Desblokeatu pribilegioak"
+
+#: full-devtools
+msgid "Full DevTools"
+msgstr ""
+
+#: reset-devtools-warning-title
+msgctxt "reset-devtools-warning-title"
+msgid "CAUTION"
+msgstr "KONTUZ"
+
+#. # Device :: Developer :: Service Workers
+#: service-worker
+msgid "Service Workers"
+msgstr ""
+
+#: service-worker-scope
+msgid "Scope"
+msgstr ""
+
+#: service-worker-script-spec
+msgid "Script spec"
+msgstr ""
+
+#: service-worker-current-worker-url
+msgid "Current worker URL"
+msgstr ""
+
+#: service-worker-active-cache-name
+msgid "Active cache name"
+msgstr ""
+
+#: service-worker-waiting-cache-name
+msgid "Waiting cache name"
+msgstr ""
+
+#: service-worker-update
+msgid "Update"
+msgstr ""
+
+#: service-worker-unregister
+msgid "Unregister"
+msgstr ""
+
+#: service-worker-no-registrations
+msgid "No service workers found"
+msgstr ""
+
+#. # Device :: Full Developer Mode
+#: developer-menu-disabled-warning-title
+msgid "Developer menu not enabled"
+msgstr ""
+
+#: developer-menu-disabled-warning-msg-1
+msgid ""
+"Developer Mode can't be enabled without the developer menu first being "
+"enabled."
+msgstr ""
+
+#: developer-menu-disabled-warning-msg-2
+msgid ""
+"Please enable it from Settings > Device Information > More Information > "
+"Developer Menu."
+msgstr ""
+
+#: enable-full-dev-mode-first-warning-title
+msgid "Would you like to enable developer mode?"
+msgstr ""
+
+#: enable-full-dev-mode-first-warning-msg-1
+msgid "THIS WILL DELETE ALL YOUR DATA AND FACTORY RESET YOUR DEVICE."
+msgstr ""
+
+#: enable-full-dev-mode-first-warning-msg-2
+msgid "THIS WILL DISABLE ALL SECURITY MEASURES ON YOUR DEVICE."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-title
+msgid "Are you sure you want to enable developer mode?"
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg
+#, fuzzy
+msgid "{[ plural(count) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: enable-full-dev-mode-final-warning-msg[one]
+msgid "Tap 'Enable' {{count}} more time to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[two]
+msgctxt "enable-full-dev-mode-final-warning-msg[two]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[few]
+msgctxt "enable-full-dev-mode-final-warning-msg[few]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[many]
+msgctxt "enable-full-dev-mode-final-warning-msg[many]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[other]
+msgctxt "enable-full-dev-mode-final-warning-msg[other]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
 
 #. # Device :: Downloads
 #: downloads-edit
@@ -4151,6 +4584,8 @@ msgstr "Ezabatu"
 
 #. # Device :: Battery
 #: battery
+#, fuzzy
+msgctxt "battery"
 msgid "Battery"
 msgstr "Bateria"
 
@@ -4199,6 +4634,14 @@ msgstr "Aktibatu automatikoki"
 
 #. # Device :: Accessibility
 #: accessibility
+#, fuzzy
+msgctxt "accessibility"
+msgid "Accessibility"
+msgstr "Erabilerraztasuna"
+
+#: accessibility.ariaLabel
+#, fuzzy
+msgctxt "accessibility.ariaLabel"
 msgid "Accessibility"
 msgstr "Erabilerraztasuna"
 
@@ -4306,6 +4749,12 @@ msgstr "Kontrastea"
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
 msgctxt "improveBrowserOS"
+msgid "Improve {{brandShortName}}"
+msgstr "Hobetu {{brandShortName}}"
+
+#: improveBrowserOS.ariaLabel
+#, fuzzy
+msgctxt "improveBrowserOS.ariaLabel"
 msgid "Improve {{brandShortName}}"
 msgstr "Hobetu {{brandShortName}}"
 
@@ -4503,14 +4952,6 @@ msgstr ""
 "Sistemak ezin du zure iradokizuna bidali iruzkinen eremua hutsik dagoelako. "
 "Sartu testuren bat eta saiatu berriro."
 
-#: feedback-errormessage-just-sent
-msgid ""
-"Sorry, the system can’t send your suggestion because you already sent us "
-"feedback. Please try our next software update and send again."
-msgstr ""
-"Sistemak ezin du zure iradokizuna bidali lehenago ere bidali zenigulako zure "
-"iritzia. Probatu gure hurrengo software-eguneraketa eta bidali berriro."
-
 #: feedback-complete-msg
 msgid ""
 "Thanks for the feedback! We use it to help create better experiences in "
@@ -4518,6 +4959,10 @@ msgid ""
 msgstr ""
 "Eskerrik asko zure iritziagatik! Firefox OS sistemaren hurrengo "
 "argitaratzeetan esperientzia hobeak eskaintzeko erabiliko dugu."
+
+#: feedback-errormessage-unknown-error
+msgid "Something went wrong. Please try again."
+msgstr ""
 
 #. # Device :: Help
 #: online-support
@@ -4655,8 +5100,14 @@ msgstr "Eskuratu kanalaren egoera"
 msgid "End of the proactive session"
 msgstr "Saio proaktiboaren amaiera"
 
+#: stkEntry.ariaLabel
+msgid "{{ title }}"
+msgstr ""
+
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
+#, fuzzy
+msgctxt "is-warning-storage-header"
 msgid "USB storage"
 msgstr "USB biltegiratzea"
 
@@ -4725,14 +5176,387 @@ msgstr "{{settings-dialog-confirm}}"
 msgid "{{settings-dialog-prompt}}"
 msgstr "{{settings-dialog-prompt}}"
 
+#: accessible-app-icon.ariaLabel
+msgid "Icon for {{ appName }} app"
+msgstr ""
+
+#. # Addongs settings
+#: addon
+msgid "Add-on"
+msgstr ""
+
+#: addons
+msgctxt "addons"
+msgid "Add-ons"
+msgstr ""
+
+#: addons.ariaLabel
+msgctxt "addons.ariaLabel"
+msgid "Add-ons"
+msgstr ""
+
+#: addons-header
+msgid "{{addons}}"
+msgstr ""
+
+#: addon-details-header1
+msgid "{{ appName }}"
+msgstr ""
+
+#: addon-enable
+msgid "Enable Add-on"
+msgstr ""
+
+#: addon-description-header
+#, fuzzy
+msgctxt "addon-description-header"
+msgid "Description"
+msgstr "Deskribapena"
+
+#: addon-developer-name
+msgid "{{ developerName }}"
+msgstr ""
+
+#: addon-targets
+msgid "Affected Apps"
+msgstr ""
+
+#: addon-options
+#, fuzzy
+msgctxt "addon-options"
+msgid "Options"
+msgstr "Aukerak"
+
+#: addon-delete
+msgid "Delete Add-on"
+msgstr ""
+
+#: addon-share
+msgid "Share Add-on"
+msgstr ""
+
+#: addon-share-no-provider
+msgid "No sharing app available"
+msgstr ""
+
+#: addon-no-description
+msgid "This add-on does not include a description in its manifest file."
+msgstr ""
+
+#: addon-no-targets
+msgid "This add-on does not affect any installed apps."
+msgstr ""
+
+#: addon-restart-apps-to-disable
+msgid "Add-on disabled; restart affected apps."
+msgstr ""
+
+#: addon-reboot-required
+msgid ""
+"This add-on affected system apps; you must reboot your device to fully "
+"disable it."
+msgstr ""
+
+#: addon-rename
+msgid "Rename"
+msgstr ""
+
+#: addon-rename-input
+msgid "Enter add-on name"
+msgstr ""
+
+#: addon-rename-desc
+msgid "Change the name of your add-on"
+msgstr ""
+
+#: addon-obsolete
+msgid "This add-on is obsolete and does not work."
+msgstr ""
+
+#: addon-obsolete-can-delete
+msgid "This add-on is obsolete and does not work. Please delete it."
+msgstr ""
+
+#. # Achievements
+#: achievements
+msgid "Achievements"
+msgstr ""
+
+#: achievements.ariaLabel
+msgid "achievements"
+msgstr ""
+
+#: achievements-customize-champ-name
+msgid "Customize Champ"
+msgstr ""
+
+#: achievements-customize-champ-description
+msgid "Open Customizer in an app"
+msgstr ""
+
+#: achievements-add-on-all-star-name
+msgid "Add-on All-Star"
+msgstr ""
+
+#: achievements-add-on-all-star-description
+msgid "Use Customizer to create your own add-on"
+msgstr ""
+
+#: achievements-fab-finder-name
+msgid "Fab Finder"
+msgstr ""
+
+#: achievements-fab-finder-description
+msgid "Install an app or add-on from Hackerplace"
+msgstr ""
+
+#: achievements-content-commander-name
+msgid "Content Commander"
+msgstr ""
+
+#: achievements-content-commander-description
+msgid "Submit an app or add-on to Hackerplace"
+msgstr ""
+
+#: achievements-sharing-is-caring-name
+msgid "Sharing is Caring"
+msgstr ""
+
+#: achievements-sharing-is-caring-description
+msgid "Share your apps and add-ons with the Sharing app"
+msgstr ""
+
+#: achievements-creative-kind-name
+msgid "Creative Kind"
+msgstr ""
+
+#: achievements-creative-kind-description
+msgid "Use Theme Editor to create a new theme"
+msgstr ""
+
+#. # Service Workers
+#: service-workers-interception
+msgid "Intercept requests"
+msgstr ""
+
+#: service-workers-testing
+msgid "Allow over HTTP"
+msgstr ""
+
+#. # LOCALIZATION NOTE: The following strings are spoken by screen readers and not
+#. # shown on the screen.
+#: addButton.ariaLabel
+#, fuzzy
+msgctxt "addButton.ariaLabel"
+msgid "Add"
+msgstr "Gehitu"
+
+#: closeButton.ariaLabel
+#, fuzzy
+msgctxt "closeButton.ariaLabel"
+msgid "Close"
+msgstr "Itxi"
+
+#: changeWallpaperButton.ariaLabel
+msgid "Change wallpaper"
+msgstr ""
+
+#: editButton.ariaLabel
+#, fuzzy
+msgctxt "editButton.ariaLabel"
+msgid "Edit"
+msgstr "Editatu"
+
+#: wifiSection.ariaLabel
+#, fuzzy
+msgctxt "wifiSection.ariaLabel"
+msgid "Wi-Fi"
+msgstr "Wi-Fia"
+
+#: simManagerSection.ariaLabel
+#, fuzzy
+msgctxt "simManagerSection.ariaLabel"
+msgid "SIM Manager"
+msgstr "SIM kudeatzailea"
+
+#: callSettingsSection.ariaLabel
+#, fuzzy
+msgctxt "callSettingsSection.ariaLabel"
+msgid "Call Settings"
+msgstr "Deien ezarpenak"
+
+#: messagingSettingsSection.ariaLabel
+#, fuzzy
+msgctxt "messagingSettingsSection.ariaLabel"
+msgid "Messaging Settings"
+msgstr "Mezularitza-ezarpenak"
+
+#: cellularAndDataSection.ariaLabel
+#, fuzzy
+msgctxt "cellularAndDataSection.ariaLabel"
+msgid "Cellular & Data"
+msgstr "Mugikorra eta datuak"
+
+#: bluetoothSection.ariaLabel
+#, fuzzy
+msgctxt "bluetoothSection.ariaLabel"
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: internetSharingSection.ariaLabel
+#, fuzzy
+msgctxt "internetSharingSection.ariaLabel"
+msgid "Internet Sharing"
+msgstr "Internet partekatzea"
+
+#: dateAndTimeSection.ariaLabel
+#, fuzzy
+msgctxt "dateAndTimeSection.ariaLabel"
+msgid "Date & Time"
+msgstr "Data eta ordua"
+
+#: languageSection.ariaLabel
+#, fuzzy
+msgctxt "languageSection.ariaLabel"
+msgid "Language"
+msgstr "Hizkuntza"
+
+#: keyboardsSection.ariaLabel
+#, fuzzy
+msgctxt "keyboardsSection.ariaLabel"
+msgid "Keyboards"
+msgstr "Teklatuak"
+
+#: fxa-accountsSection.ariaLabel
+#, fuzzy
+msgctxt "fxa-accountsSection.ariaLabel"
+msgid "Firefox Accounts"
+msgstr "Firefox kontuak"
+
+#: findmydeviceSection.ariaLabel
+#, fuzzy
+msgctxt "findmydeviceSection.ariaLabel"
+msgid "Find My Device"
+msgstr "Bilatu nire gailua"
+
+#: screenLockSection.ariaLabel
+#, fuzzy
+msgctxt "screenLockSection.ariaLabel"
+msgid "Screen Lock"
+msgstr "Pantaila-blokeoa"
+
+#: simSecuritySection.ariaLabel
+#, fuzzy
+msgctxt "simSecuritySection.ariaLabel"
+msgid "SIM Security"
+msgstr "SIM segurtasuna"
+
+#: doNotTrackSection.ariaLabel
+#, fuzzy
+msgctxt "doNotTrackSection.ariaLabel"
+msgid "Do Not Track"
+msgstr "Do Not Track"
+
+#: privacySection.ariaLabel
+#, fuzzy
+msgctxt "privacySection.ariaLabel"
+msgid "Privacy Controls"
+msgstr "Pribatutasun-kontrolak"
+
+#: enableStorageSection.ariaLabel
+#, fuzzy
+msgctxt "enableStorageSection.ariaLabel"
+msgid "USB storage"
+msgstr "USB biltegiratzea"
+
+#: mediaStorageSection.ariaLabel
+#, fuzzy
+msgctxt "mediaStorageSection.ariaLabel"
+msgid "Media Storage"
+msgstr "Multimedia-biltegiratzea"
+
+#: appStorageSection.ariaLabel
+#, fuzzy
+msgctxt "appStorageSection.ariaLabel"
+msgid "Application Storage"
+msgstr "Aplikazioen biltegiratzea"
+
+#: batterySection.ariaLabel
+#, fuzzy
+msgctxt "batterySection.ariaLabel"
+msgid "Battery"
+msgstr "Bateria"
+
+#~ msgid "Manage Cert."
+#~ msgstr "Kudeatu ziurt."
+
+#~ msgid "Call forwarding is disabled by FDN."
+#~ msgstr "Dei-birbidalketa FDNagatik desgaituta dago."
+
+#~ msgid "&#x202a;Multimedia Messaging (MMS)&#x202c;"
+#~ msgstr "&#x202a;Multimedia-mezularitza (MMS)&#x202c;"
+
+#~ msgctxt "operator-status-connecting"
+#~ msgid "Connecting…"
+#~ msgstr "Konektatzen…"
+
+#~ msgctxt "operator-status-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "Konexioak huts egin du"
+
+#~ msgctxt "operator-status-connected"
+#~ msgid "Connected"
+#~ msgstr "Konektatuta"
+
+#~ msgid "Change the name of your device as it appears in your computer"
+#~ msgstr "Aldatu ordenagailuan agertzen den gailuaren izena"
+
+#~ msgid "The SSID cannot be empty"
+#~ msgstr "SSIDak ezin du hutsik egon"
+
+#~ msgid "WPA (TKIP)"
+#~ msgstr "WPA (TKIP)"
+
+#~ msgid "WPA2 (AES)"
+#~ msgstr "WPA2 (AES)"
+
+#~ msgid "Resend"
+#~ msgstr "Birbidali"
+
+#~ msgid "B"
+#~ msgstr "B"
+
+#~ msgid "KB"
+#~ msgstr "KB"
+
+#~ msgid "MB"
+#~ msgstr "MB"
+
+#~ msgid "GB"
+#~ msgstr "GB"
+
+#~ msgid "TB"
+#~ msgstr "TB"
+
+#~ msgid "Developer tools"
+#~ msgstr "Garatzaile-tresnak"
+
+#~ msgid "Reset and enable full DevTools"
+#~ msgstr "Berrezarri eta gaitu DevTools osorik"
+
+#~ msgid ""
+#~ "Sorry, the system can’t send your suggestion because you already sent us "
+#~ "feedback. Please try our next software update and send again."
+#~ msgstr ""
+#~ "Sistemak ezin du zure iradokizuna bidali lehenago ere bidali zenigulako "
+#~ "zure iritzia. Probatu gure hurrengo software-eguneraketa eta bidali "
+#~ "berriro."
+
 #~ msgid "No imported certificate"
 #~ msgstr "Inportatutako ziurtagirik ez"
 
 #~ msgid "Voice calls to {{number}}"
 #~ msgstr "Ahots-deiak {{number}} zenbakira"
-
-#~ msgid "Multimedia Messaging (MMS)"
-#~ msgstr "Multimedia-mezularitza (MMS)"
 
 #~ msgid "Do you want to proceed?"
 #~ msgstr "Aurrera jarraitu nahi duzu?"
@@ -4767,10 +5591,6 @@ msgstr "{{settings-dialog-prompt}}"
 
 #~ msgid "Simple tiling"
 #~ msgstr "Mosaiko-egite sinplea"
-
-#~ msgctxt "is-warning-storage-header"
-#~ msgid "USB storage"
-#~ msgstr "USB biltegiratzea"
 
 #~ msgctxt "is-warning-tethering-header"
 #~ msgid "USB tethering"

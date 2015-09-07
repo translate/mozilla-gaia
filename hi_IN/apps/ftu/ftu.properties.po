@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-19 18:45+0000\n"
+"POT-Creation-Date: 2015-09-07 14:45+0000\n"
 "PO-Revision-Date: 2015-09-06 12:55+0000\n"
 "Last-Translator: Suraj Kawade <suraj.kawade@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1441544114.000000\n"
@@ -751,10 +751,6 @@ msgstr "कॉन्टेक्ट्स आयात करें"
 msgid "SIM card"
 msgstr "SIM कार्ड"
 
-#: importFb2
-msgid "Facebook"
-msgstr "फेसबुक"
-
 #: importOutlook
 msgid "Outlook"
 msgstr "आउटलुक"
@@ -762,10 +758,6 @@ msgstr "आउटलुक"
 #: importGmail
 msgid "Gmail"
 msgstr "Gmail"
-
-#: fb-checking
-msgid "… checking"
-msgstr "जाँच की जा रही है"
 
 #: notImportedYet
 msgid "Not imported yet"
@@ -775,43 +767,6 @@ msgstr "अभी तक लागू नहीं हैं."
 msgid "Other accounts"
 msgstr "अन्य खाता"
 
-#: afterFbImport
-msgid "You can import and edit Facebook friends anytime in Contacts settings"
-msgstr ""
-"आप किसी भी समय संपर्क सेटिंग में जाकर फेसबुक दोस्तों को आयात तथा सम्पादित कर सकते है |"
-
-#: facebook-import-msg
-msgid "{[ plural(imported) ]}"
-msgstr "{[ plural(imported) ]}"
-
-#: facebook-import-msg[zero]
-msgid "No friends imported (out of {{total}})"
-msgstr "यहाँ ({{total}} में से) कोई दोस्त आयात नहीं हो पाया"
-
-#: facebook-import-msg[one]
-msgid "One friend imported (out of {{total}})"
-msgstr "यहाँ ({{total}} में से ) एक दोस्त आयात हुआ"
-
-#: facebook-import-msg[two]
-msgctxt "facebook-import-msg[two]"
-msgid "{{imported}}/{{total}} friends imported"
-msgstr "{{imported}}/{{total}} दोस्त आयात हो गयें"
-
-#: facebook-import-msg[few]
-msgctxt "facebook-import-msg[few]"
-msgid "{{imported}}/{{total}} friends imported"
-msgstr "{{imported}}/{{total}} दोस्त आयात हो गयें"
-
-#: facebook-import-msg[many]
-msgctxt "facebook-import-msg[many]"
-msgid "{{imported}}/{{total}} friends imported"
-msgstr "{{imported}}/{{total}} दोस्त आयात हो गयें"
-
-#: facebook-import-msg[other]
-msgctxt "facebook-import-msg[other]"
-msgid "{{imported}}/{{total}} friends imported"
-msgstr "{{imported}}/{{total}} दोस्त आयात हो गयें"
-
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Fxa Intro
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -819,7 +774,7 @@ msgstr "{{imported}}/{{total}} दोस्त आयात हो गयें"
 msgid "Firefox Accounts"
 msgstr "फ़ायरफ़ॉक्स खाता"
 
-#: fxa-upsell.innerHTML
+#: fxa-upsell
 msgid ""
 "A Firefox Account lets you find a lost phone and buy apps from the Firefox "
 "Marketplace."
@@ -915,66 +870,43 @@ msgstr ""
 "बारे में मोज़िला को डेटा भेजता है. हम इस का उपयोग को हमारे उत्पादों को बेहतर, तेज और "
 "अधिक उत्तरदायी बनाने के लिए करते हैं."
 
-#: learn-more-telemetry2.innerHTML
-msgid ""
-"Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
-"a>"
+#: learn-more-telemetry2
+msgid "Learn more at <a>{{url}}</a>"
 msgstr ""
-"और अधिक जानें<a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>"
 
-#: learn-more-information2.innerHTML
-msgid ""
-"Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
-"\"{{className}}\">{{textContent}}</a>"
-msgstr ""
-"जानें मोज़िला कैस अपकि जानकारी को कैसे हैंडल कार्ता है <a href=\"{{href}}\" class="
-"\"{{className}}\">{{textContent}}</a>"
+#: learn-more-information2
+#, fuzzy
+msgid "Learn how Mozilla handles your information at <a>{{url}}</a>"
+msgstr "सीखें कि कैसे {{link}} पर आपकी जानकारी संभालता है"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # OS privacy
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: htmlWelcome2.innerHTML
+#: htmlWelcome2
+#, fuzzy
 msgid ""
-"Welcome to <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>, "
-"the free and open source operating system from Mozilla. Our mission is to "
-"promote openness, innovation and opportunity by keeping the power of the Web "
-"in your hands."
+"Welcome to <a>{{brandShortName}}</a>, the free and open source operating "
+"system from Mozilla. Our mission is to promote openness, innovation and "
+"opportunity by keeping the power of the Web in your hands."
 msgstr ""
 "<a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a> में आपका "
 "स्वागत है, मोज़िला द्वारा बनाए गए मुक्त और ओपन सोर्स ऑपरेटिंग सिस्टम में आपका स्वागत है. "
 "अापके हाथ में वेब की शक्ति रखकर खुलेपन, नवाचार और अवसर को बढ़ावा देना हमारा मिशन है."
 
-#: htmlWelcome-link
-msgctxt "htmlWelcome-link"
-msgid "{{brandShortName}}"
-msgstr "{{brandShortName}}"
-
-#: helpImprove2.innerHTML
+#: helpImprove2
+#, fuzzy
 msgid ""
 "You can help us improve our products and services by automatically sending "
-"analytics data. See our <a href=\"{{href}}\" class="
-"\"{{className}}\">{{textContent}}</a> to learn how we handle data from your "
-"device."
+"analytics data. See our <a>Privacy Notice</a> to learn how we handle data "
+"from your device."
 msgstr ""
-"आप् हमें स्वचालित रूप विश्लेषण डेटा भेजने के द्वारा अपने उत्पादों और सेवाओं को बेहतर बनाने में "
-"मदद कर सकते हैं. सीखने के लिए देख <a href=\"{{href}}\" class="
-"\"{{className}}\">{{textContent}}</a>हम अपने डिवाइस से डेटा को संभालन कर्ते है."
+"आप हमें विश्लेषणात्मक डेटा भेजने के द्वारा स्वतः हमारे उत्पादों और सेवाओं को बेहतर बनाने में मदद "
+"कर सकते हैं.  हमारी {{link}} देखें और सीखें की हम कैसे आपकी युक्ति के डेटा को सँभालते हैं."
 
-#: helpImprove-link
-msgid "Privacy Notice"
-msgstr "गोपनीयता सूचना"
-
-#: learn-more-privacy2.innerHTML
+#: learn-more-privacy2
 msgid ""
-"Learn how Mozilla handles your information in our <a href=\"{{href}}\" class="
-"\"{{className}}\">{{textContent}}</a>."
+"Learn how Mozilla handles your information in our <a>privacy policy</a>."
 msgstr ""
-"जानें कि कैसे मोज़िला में अपनी जानकारी संभालती है <a href=\"{{href}}\" class="
-"\"{{className}}\">{{textContent}}</a>."
-
-#: learn-more-privacy-link
-msgid "privacy policy"
-msgstr "गोपनीयता नीति"
 
 #: aboutBrowser
 msgid "About {{brandShortName}}"
@@ -1238,6 +1170,79 @@ msgstr "चरण {{step}},  {{total}} क"
 msgid "First Time Experience"
 msgstr "पहली बार अनुभव"
 
+#~ msgid "Facebook"
+#~ msgstr "फेसबुक"
+
+#~ msgid "… checking"
+#~ msgstr "जाँच की जा रही है"
+
+#~ msgid ""
+#~ "You can import and edit Facebook friends anytime in Contacts settings"
+#~ msgstr ""
+#~ "आप किसी भी समय संपर्क सेटिंग में जाकर फेसबुक दोस्तों को आयात तथा सम्पादित कर सकते है |"
+
+#~ msgid "{[ plural(imported) ]}"
+#~ msgstr "{[ plural(imported) ]}"
+
+#~ msgid "No friends imported (out of {{total}})"
+#~ msgstr "यहाँ ({{total}} में से) कोई दोस्त आयात नहीं हो पाया"
+
+#~ msgid "One friend imported (out of {{total}})"
+#~ msgstr "यहाँ ({{total}} में से ) एक दोस्त आयात हुआ"
+
+#~ msgctxt "facebook-import-msg[two]"
+#~ msgid "{{imported}}/{{total}} friends imported"
+#~ msgstr "{{imported}}/{{total}} दोस्त आयात हो गयें"
+
+#~ msgctxt "facebook-import-msg[few]"
+#~ msgid "{{imported}}/{{total}} friends imported"
+#~ msgstr "{{imported}}/{{total}} दोस्त आयात हो गयें"
+
+#~ msgctxt "facebook-import-msg[many]"
+#~ msgid "{{imported}}/{{total}} friends imported"
+#~ msgstr "{{imported}}/{{total}} दोस्त आयात हो गयें"
+
+#~ msgctxt "facebook-import-msg[other]"
+#~ msgid "{{imported}}/{{total}} friends imported"
+#~ msgstr "{{imported}}/{{total}} दोस्त आयात हो गयें"
+
+#~ msgid ""
+#~ "Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}"
+#~ "</a>"
+#~ msgstr ""
+#~ "और अधिक जानें<a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
+#~ "a>"
+
+#~ msgid ""
+#~ "Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
+#~ "\"{{className}}\">{{textContent}}</a>"
+#~ msgstr ""
+#~ "जानें मोज़िला कैस अपकि जानकारी को कैसे हैंडल कार्ता है <a href=\"{{href}}\" class="
+#~ "\"{{className}}\">{{textContent}}</a>"
+
+#~ msgid ""
+#~ "You can help us improve our products and services by automatically "
+#~ "sending analytics data. See our <a href=\"{{href}}\" class="
+#~ "\"{{className}}\">{{textContent}}</a> to learn how we handle data from "
+#~ "your device."
+#~ msgstr ""
+#~ "आप् हमें स्वचालित रूप विश्लेषण डेटा भेजने के द्वारा अपने उत्पादों और सेवाओं को बेहतर बनाने में "
+#~ "मदद कर सकते हैं. सीखने के लिए देख <a href=\"{{href}}\" class="
+#~ "\"{{className}}\">{{textContent}}</a>हम अपने डिवाइस से डेटा को संभालन कर्ते है."
+
+#~ msgid "Privacy Notice"
+#~ msgstr "गोपनीयता सूचना"
+
+#~ msgid ""
+#~ "Learn how Mozilla handles your information in our <a href=\"{{href}}\" "
+#~ "class=\"{{className}}\">{{textContent}}</a>."
+#~ msgstr ""
+#~ "जानें कि कैसे मोज़िला में अपनी जानकारी संभालती है <a href=\"{{href}}\" class="
+#~ "\"{{className}}\">{{textContent}}</a>."
+
+#~ msgid "privacy policy"
+#~ msgstr "गोपनीयता नीति"
+
 #~ msgid "Swipe from right to left to browse your apps."
 #~ msgstr "अपने एप्लिकेशन को ब्राउज़ करने के लिए दाएँ से बाएँ स्वाइप करो."
 
@@ -1271,18 +1276,6 @@ msgstr "पहली बार अनुभव"
 
 #~ msgid "Learn more at {{link}}"
 #~ msgstr "{{link}} पर अधिक जानें"
-
-#~ msgid "Learn how Mozilla handles your information at {{link}}"
-#~ msgstr "सीखें कि कैसे {{link}} पर आपकी जानकारी संभालता है"
-
-#~ msgid ""
-#~ "You can help us improve our products and services by automatically "
-#~ "sending analytics data. See our {{link}} to learn how we handle data from "
-#~ "your device."
-#~ msgstr ""
-#~ "आप हमें विश्लेषणात्मक डेटा भेजने के द्वारा स्वतः हमारे उत्पादों और सेवाओं को बेहतर बनाने में "
-#~ "मदद कर सकते हैं.  हमारी {{link}} देखें और सीखें की हम कैसे आपकी युक्ति के डेटा को सँभालते "
-#~ "हैं."
 
 #~ msgid "Learn how Mozilla handles your information in our {{link}}."
 #~ msgstr "सीखें कि कैसे मोज़िल्ला {{link}} पर आपकी जानकारी संभालता है."

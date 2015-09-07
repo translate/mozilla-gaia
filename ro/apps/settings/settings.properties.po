@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-27 18:45+0000\n"
+"POT-Creation-Date: 2015-09-07 14:45+0000\n"
 "PO-Revision-Date: 2015-09-04 16:03+0000\n"
 "Last-Translator: Cristian Silaghi <cristian.silaghi@mozilla.ro>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1441382597.000000\n"
@@ -64,11 +64,17 @@ msgctxt "reset"
 msgid "Reset"
 msgstr "Resetează"
 
+#: factory-reset
+msgid "Factory Reset"
+msgstr ""
+
 #: cancel
 msgid "Cancel"
 msgstr "Renunță"
 
 #: close
+#, fuzzy
+msgctxt "close"
 msgid "Close"
 msgstr "Închide"
 
@@ -89,6 +95,8 @@ msgid "Pair"
 msgstr "Asociază"
 
 #: add
+#, fuzzy
+msgctxt "add"
 msgid "Add"
 msgstr "Adaugă"
 
@@ -147,10 +155,26 @@ msgid "Network & Connectivity"
 msgstr "Rețea și conectivitate"
 
 #: airplaneMode
+#, fuzzy
+msgctxt "airplaneMode"
+msgid "Airplane Mode"
+msgstr "Mod avion"
+
+#: airplaneMode.ariaLabel
+#, fuzzy
+msgctxt "airplaneMode.ariaLabel"
 msgid "Airplane Mode"
 msgstr "Mod avion"
 
 #: geolocation
+#, fuzzy
+msgctxt "geolocation"
+msgid "Geolocation"
+msgstr "Geolocație"
+
+#: geolocation.ariaLabel
+#, fuzzy
+msgctxt "geolocation.ariaLabel"
 msgid "Geolocation"
 msgstr "Geolocație"
 
@@ -250,8 +274,9 @@ msgid "Wi-Fi Sleep"
 msgstr "Mod inactiv Wi-Fi"
 
 #: wifi-sleep-description
+#, fuzzy
 msgid ""
-"Enable to automatically turn off Wi-Fi during sleep to save battery power.  "
+"Enable to automatically turn off Wi-Fi during sleep to save battery power."
 msgstr ""
 "Activează pentru a opri automat Wi-Fi în modul inactiv pentru a economisi "
 "baterie. "
@@ -282,12 +307,19 @@ msgid "{{manageNetworks}}"
 msgstr "{{manageNetworks}}"
 
 #: manageCertificates
-msgid "Manage certificates"
+#, fuzzy
+msgid "Manage Certificates"
 msgstr "Gestionează certificate"
 
-#: manageCert
-msgid "Manage Cert."
-msgstr "Gestionează cert."
+#. # LOCALIZATION NOTE (manageCertificates-header): if you leave the original
+#. # en-US value "{{manageCertificates}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID
+#. # "manageCertificates".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: manageCertificates-header
+msgid "{{manageCertificates}}"
+msgstr ""
 
 #: joinHiddenNetwork
 msgid "Join Hidden Network"
@@ -443,6 +475,8 @@ msgid "No known networks"
 msgstr "Nicio rețea cunoscută"
 
 #: edit
+#, fuzzy
+msgctxt "edit"
 msgid "Edit"
 msgstr "Editează"
 
@@ -455,15 +489,18 @@ msgid "No certificates imported"
 msgstr "Nu sunt certificate importate"
 
 #: deleteCertificate
-msgid "Delete certificate"
+#, fuzzy
+msgid "Delete Certificate"
 msgstr "Șterge certificatul"
 
 #: importCertificate
-msgid "Import certificate"
+#, fuzzy
+msgid "Import Certificate"
 msgstr "Importă certificat"
 
 #: selectCertificateFile
-msgid "Select certificate file"
+#, fuzzy
+msgid "Select Certificate File"
 msgstr "Selectează fișierul de certificat"
 
 #: enterCertificateNickname
@@ -576,6 +613,8 @@ msgstr "Eșec la anularea WPS [{{error}}]"
 
 #. # Connectivity :: Call
 #: callSettings
+#, fuzzy
+msgctxt "callSettings"
 msgid "Call Settings"
 msgstr "Setări de apel"
 
@@ -686,7 +725,7 @@ msgstr "Redirect. când e inaccesibil"
 msgid "When unreachable"
 msgstr "Când e inaccesibil"
 
-#: callForwardingForwardingVoiceToNumber.innerHTML
+#: callForwardingForwardingVoiceToNumber
 msgid "Voice calls to <bdi>{{number}}</bdi>"
 msgstr "Apeluri vocale către <bdi>{{number}}</bdi>"
 
@@ -964,10 +1003,6 @@ msgstr ""
 msgid "The PIN2 code is incorrect."
 msgstr "Codul PIN2 este incorect."
 
-#: fdn-enabled-warning
-msgid "Call forwarding is disabled by FDN."
-msgstr "Redirecționarea apelurilor e dezactivată de către FDN."
-
 #: fdnContact-name
 msgid "name"
 msgstr "nume"
@@ -1009,6 +1044,8 @@ msgstr "FDN maxim atins. Nu poți adăuga mai multe numere."
 
 #. # Connectivity :: Messaging
 #: messagingSettings
+#, fuzzy
+msgctxt "messagingSettings"
 msgid "Messaging Settings"
 msgstr "Setări de mesagerie"
 
@@ -1041,13 +1078,9 @@ msgstr "Citește rapoartele"
 msgid "Request read report for each message sent"
 msgstr "Solicită raport de citire pentru fiecare mesaj trimis"
 
-#. # LOCALIZATION NOTE (mmsTitle): LRE (&#x202a;) and PDF (&#x202c;)
-#. # force the proper directionality of parentheses at the end of the string
-#. # regardless of the direction of the surrounding layout. Remove them only
-#. # if the translation puts them between other text.
-#: mmsTitle.innerHTML
-msgid "&#x202a;Multimedia Messaging (MMS)&#x202c;"
-msgstr "&#x202a;Mesagerie multimedia (MMS)&#x202c;"
+#: mmsTitle
+msgid "Multimedia Messaging (MMS)"
+msgstr "Mesagerie multimedia (MMS)"
 
 #: auto-retrieve
 msgid "Auto Retrieve"
@@ -1113,6 +1146,8 @@ msgstr "Informație nedisponibilă"
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
+#, fuzzy
+msgctxt "cellularAndData"
 msgid "Cellular & Data"
 msgstr "Celular și date"
 
@@ -1217,6 +1252,11 @@ msgstr "WCDMA preferat"
 msgid "Auto (2G/3G)"
 msgstr "Automat (2G/3G)"
 
+#: operator-networkType-auto-3G-4G
+#, fuzzy
+msgid "Auto (3G/4G)"
+msgstr "Automat (2G/3G)"
+
 #: operator-networkType-auto-CDMA-EVDO
 msgid "Auto (CDMA/EVDO)"
 msgstr "Automat (CDMA/EVDO)"
@@ -1227,6 +1267,11 @@ msgstr "Automat (WCDMA/GSM)"
 
 #: operator-networkType-auto-LTE-WCDMA-GSM
 msgid "Auto (LTE/WCDMA/GSM)"
+msgstr "Automat (LTE/WCDMA/GSM)"
+
+#: operator-networkType-auto-LTE-WCDMA
+#, fuzzy
+msgid "Auto (LTE/WCDMA)"
 msgstr "Automat (LTE/WCDMA/GSM)"
 
 #: operator-networkType-auto-LTE-CDMA-EVDO
@@ -1255,20 +1300,47 @@ msgid "Turn automatic selection off to view available network operators."
 msgstr ""
 "Închide selecția automată pentru a vedea operatorii de rețea disponibili."
 
-#: operator-status-connecting
-msgctxt "operator-status-connecting"
+#: operator-info-connecting
+#, fuzzy
+msgctxt "operator-info-connecting"
 msgid "Connecting…"
 msgstr "Conectare…"
 
-#: operator-status-connectingfailed
-msgctxt "operator-status-connectingfailed"
+#: operator-info-failed
+#, fuzzy
+msgctxt "operator-info-failed"
 msgid "Connection failed"
 msgstr "Conexiune eșuată"
 
-#: operator-status-connected
-msgctxt "operator-status-connected"
+#: operator-info-connected
+#, fuzzy
+msgctxt "operator-info-connected"
 msgid "Connected"
 msgstr "Conectat"
+
+#: operator-info-available
+#, fuzzy
+msgctxt "operator-info-available"
+msgid "Available"
+msgstr "Disponibil"
+
+#: operator-info-current
+#, fuzzy
+msgctxt "operator-info-current"
+msgid "Connected"
+msgstr "Conectat"
+
+#: operator-info-forbidden
+#, fuzzy
+msgctxt "operator-info-forbidden"
+msgid "Forbidden"
+msgstr "Interzis"
+
+#: operator-info-unknown
+#, fuzzy
+msgctxt "operator-info-unknown"
+msgid "Unknown state"
+msgstr "Stare necunoscută"
 
 #: operator-roamingPreference
 msgid "Roaming preference"
@@ -1368,6 +1440,20 @@ msgstr "Setări IMS"
 #: imsSettings-header2
 msgid "{{imsSettings}}"
 msgstr "{{imsSettings}}"
+
+#: fotaSettings
+msgid "FOTA Settings"
+msgstr ""
+
+#. # LOCALIZATION NOTE (fotaSettings-header): if you leave the original
+#. # en-US value "{{fotaSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "fotaSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: fotaSettings-header
+#, fuzzy
+msgid "{{fotaSettings}}"
+msgstr "{{dataSettings}}"
 
 #: apn-editor-header
 msgid "APN Editor"
@@ -1497,10 +1583,14 @@ msgstr ""
 "anulat."
 
 #: state-unknown
+#, fuzzy
+msgctxt "state-unknown"
 msgid "Unknown state"
 msgstr "Stare necunoscută"
 
 #: state-available
+#, fuzzy
+msgctxt "state-available"
 msgid "Available"
 msgstr "Disponibil"
 
@@ -1515,6 +1605,8 @@ msgid "Connected"
 msgstr "Conectat"
 
 #: state-forbidden
+#, fuzzy
+msgctxt "state-forbidden"
 msgid "Forbidden"
 msgstr "Interzis"
 
@@ -1542,6 +1634,8 @@ msgstr "Resetează setările APN"
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
+#, fuzzy
+msgctxt "bluetooth"
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -1698,9 +1792,13 @@ msgstr "Redenumește-mi dispozitivul"
 msgid "Unknown device"
 msgstr "Dispozitiv necunoscut"
 
-#: change-phone-name-desc
-msgid "Change the name of your device as it appears in your computer"
-msgstr "Schimbă numele dispozitivului așa cum apare în calculator"
+#: change-btdevice-name
+msgid "Change device name"
+msgstr ""
+
+#: change-btdevice-name-desc
+msgid "This name will appear on your other Bluetooth devices"
+msgstr ""
 
 #: bluetooth-new-name
 msgid "New name"
@@ -1742,17 +1840,29 @@ msgstr ""
 "În prezent ești conectat la acest dispozitiv. Dezasocierea va duce și la "
 "deconectarea de acesta."
 
+#: unpair-confirm
+msgid ""
+"{{unpair-title}}\n"
+"{{unpair-msg}}"
+msgstr ""
+
 #. # Connectivity :: NFC
 #: nfc
+#, fuzzy
+msgctxt "nfc"
+msgid "NFC"
+msgstr "NFC"
+
+#: nfc.ariaLabel
+#, fuzzy
+msgctxt "nfc.ariaLabel"
 msgid "NFC"
 msgstr "NFC"
 
 #. # Connectivity :: Internet Sharing
-#: SSIDCannotBeEmpty
-msgid "The SSID cannot be empty"
-msgstr "SSID-ul nu poate să fie necompletat"
-
 #: internetSharing
+#, fuzzy
+msgctxt "internetSharing"
 msgid "Internet Sharing"
 msgstr "Partajare internet"
 
@@ -1833,7 +1943,7 @@ msgstr "{{hotspotSettings}}"
 msgid "SSID Network Name"
 msgstr "Numele rețelei SSID"
 
-#: hotspot-open
+#: hotspot-security-open
 msgid "open"
 msgstr "deschisă"
 
@@ -1844,8 +1954,8 @@ msgstr "deschisă"
 #. # and PDF (&#x202c;) entities to these translations to force the correct direction.
 #. #
 #. # RTL locales should have a translation similar to this:
-#. # hotspot-wpa-psk.innerHTML= &#x202a;WPA (TKIP)&#x202c;
-#. # hotspot-wpa2-psk.innerHTML= &#x202a;WPA2 (AES)&#x202c;
+#. # hotspot-wpa-psk= &#x202a;WPA (TKIP)&#x202c;
+#. # hotspot-wpa2-psk= &#x202a;WPA2 (AES)&#x202c;
 #. #
 #. # [More details]
 #. #
@@ -1856,17 +1966,13 @@ msgstr "deschisă"
 #. # automatically in a wrong way by browser. Because from engineering side,
 #. # we can only change settings.ar.properties, for localizers, please remember to
 #. # put them in the other RTL languages.
-#. #
-#. # Additionally, in order to make this hack work, we got some help from l10n.js
-#. # that we need to put these strings inside "KEY".innerHTML, so that's the
-#. # reason why these two strings below would be suffixed with ".innerHTML"
-#: hotspot-wpa-psk.innerHTML
-msgid "WPA (TKIP)"
-msgstr "WPA (TKIP)"
+#: hotspot-security-wpa-psk
+msgid "WPA"
+msgstr ""
 
-#: hotspot-wpa2-psk.innerHTML
-msgid "WPA2 (AES)"
-msgstr "WPA2 (AES)"
+#: hotspot-security-wpa2-psk
+msgid "WPA2"
+msgstr ""
 
 #: hotspot-password-desc
 msgid "The password must have at least 8 characters."
@@ -1881,6 +1987,14 @@ msgstr "Personalizare"
 
 #. # Personalization :: Sound
 #: sound
+#, fuzzy
+msgctxt "sound"
+msgid "Sound"
+msgstr "Sunet"
+
+#: sound.ariaLabel
+#, fuzzy
+msgctxt "sound.ariaLabel"
 msgid "Sound"
 msgstr "Sunet"
 
@@ -1967,6 +2081,14 @@ msgstr "Nu am putut găsi o aplicație pentru tonuri ca să gestioneze tonurile!
 
 #. # Personalization :: Display
 #: display
+#, fuzzy
+msgctxt "display"
+msgid "Display"
+msgstr "Afișaj"
+
+#: display.ariaLabel
+#, fuzzy
+msgctxt "display.ariaLabel"
 msgid "Display"
 msgstr "Afișaj"
 
@@ -2025,6 +2147,14 @@ msgstr "Blochează orientarea"
 
 #. # Personalization :: Navigation
 #: navigation
+#, fuzzy
+msgctxt "navigation"
+msgid "Navigation"
+msgstr "Navigare"
+
+#: navigation.ariaLabel
+#, fuzzy
+msgctxt "navigation.ariaLabel"
 msgid "Navigation"
 msgstr "Navigare"
 
@@ -2049,6 +2179,14 @@ msgstr ""
 
 #. # Personalization :: Notifications
 #: notifications
+#, fuzzy
+msgctxt "notifications"
+msgid "Notifications"
+msgstr "Notificări"
+
+#: notifications.ariaLabel
+#, fuzzy
+msgctxt "notifications.ariaLabel"
 msgid "Notifications"
 msgstr "Notificări"
 
@@ -2071,6 +2209,8 @@ msgstr "Afișează după repornire"
 
 #. # Personalization :: Date & Time
 #: dateAndTime
+#, fuzzy
+msgctxt "dateAndTime"
 msgid "Date & Time"
 msgstr "Dată și oră"
 
@@ -2134,6 +2274,8 @@ msgid "Language & Region"
 msgstr "Limbă și regiune"
 
 #: language
+#, fuzzy
+msgctxt "language"
 msgid "Language"
 msgstr "Limbă"
 
@@ -2171,6 +2313,8 @@ msgstr "%d %B %Y"
 
 #. # Personalization :: Sim cards manager
 #: simManager
+#, fuzzy
+msgctxt "simManager"
 msgid "SIM Manager"
 msgstr "Manager SIM"
 
@@ -2248,6 +2392,12 @@ msgctxt "homescreen"
 msgid "Homescreen"
 msgstr "Ecran principal"
 
+#: homescreen.ariaLabel
+#, fuzzy
+msgctxt "homescreen.ariaLabel"
+msgid "Homescreen"
+msgstr "Ecran principal"
+
 #: vertical-homescreen-header
 msgctxt "vertical-homescreen-header"
 msgid "Homescreen"
@@ -2278,6 +2428,12 @@ msgctxt "search"
 msgid "Search"
 msgstr "Căutare"
 
+#: search.ariaLabel
+#, fuzzy
+msgctxt "search.ariaLabel"
+msgid "Search"
+msgstr "Căutare"
+
 #: search-header
 msgctxt "search-header"
 msgid "Search"
@@ -2304,6 +2460,14 @@ msgstr ""
 
 #. # Personalization :: Homescreens
 #: homescreens
+#, fuzzy
+msgctxt "homescreens"
+msgid "Homescreens"
+msgstr "Ecran principal"
+
+#: homescreens.ariaLabel
+#, fuzzy
+msgctxt "homescreens.ariaLabel"
 msgid "Homescreens"
 msgstr "Ecran principal"
 
@@ -2326,6 +2490,8 @@ msgid "Change"
 msgstr "Schimbă"
 
 #: description
+#, fuzzy
+msgctxt "description"
 msgid "Description"
 msgstr "Descriere"
 
@@ -2339,6 +2505,8 @@ msgid "Selected Keyboards"
 msgstr "Tastaturi selectate"
 
 #: keyboards
+#, fuzzy
+msgctxt "keyboards"
 msgid "Keyboards"
 msgstr "Tastaturi"
 
@@ -2403,6 +2571,14 @@ msgstr "{{appName}} {{layoutName}} e setată ca metodă de intrare implicită"
 
 #. # Personalization :: Themes
 #: themes
+#, fuzzy
+msgctxt "themes"
+msgid "Themes"
+msgstr "Teme"
+
+#: themes.ariaLabel
+#, fuzzy
+msgctxt "themes.ariaLabel"
 msgid "Themes"
 msgstr "Teme"
 
@@ -2470,16 +2646,10 @@ msgstr "Anulează confirmarea contului"
 msgid "A verification link has been sent to {{email}}."
 msgstr "Un link de verificare a fost trimis către {{email}}."
 
-#. # LOCALIZATION NOTE (fxa-dont-see-email): the "{{resend}}" placeholder
-#. # will be replaced with a link containing the string with ID "fxa-resend":
-#. # "Don't see an email? <a>Resend</a>."
-#: fxa-dont-see-email
-msgid "Don’t see an email? {{resend}}."
+#: fxa-dont-see-email-resend
+#, fuzzy
+msgid "Don’t see an email? <a>Resend</a>."
 msgstr "Nu vezi un e-mail? {{resend}}."
-
-#: fxa-resend
-msgid "Resend"
-msgstr "Retrimite"
 
 #. # Panel: logged in, verified
 #: fxa-about
@@ -2504,6 +2674,8 @@ msgid "Find My Device"
 msgstr "Găsește-mi dispozitivul"
 
 #: fxa-options
+#, fuzzy
+msgctxt "fxa-options"
 msgid "Options"
 msgstr "Opțiuni"
 
@@ -2581,6 +2753,8 @@ msgid "Passcode: {{code}}"
 msgstr "Cod de acces: {{code}}"
 
 #: screenLock
+#, fuzzy
+msgctxt "screenLock"
 msgid "Screen Lock"
 msgstr "Blocare ecran"
 
@@ -2593,7 +2767,17 @@ msgstr "Blocare ecran"
 msgid "{{screenLock}}"
 msgstr "{{screenLock}}"
 
+#: screenLock-enabled-with-no-passcode
+msgid "Enabled with no passcode"
+msgstr ""
+
+#: screenLock-enabled-with-passcode
+msgid "Enabled with passcode"
+msgstr ""
+
 #: simSecurity
+#, fuzzy
+msgctxt "simSecurity"
 msgid "SIM Security"
 msgstr "Securitate SIM"
 
@@ -2608,6 +2792,14 @@ msgstr "{{simSecurity}}"
 
 #. # Security :: App permissions
 #: appPermissions
+#, fuzzy
+msgctxt "appPermissions"
+msgid "App Permissions"
+msgstr "Permisiuni pentru aplicații"
+
+#: appPermissions.ariaLabel
+#, fuzzy
+msgctxt "appPermissions.ariaLabel"
 msgid "App Permissions"
 msgstr "Permisiuni pentru aplicații"
 
@@ -3055,6 +3247,8 @@ msgstr "S-a produs o eroare necunoscută"
 
 #. # Security :: Do Not Track
 #: doNotTrack
+#, fuzzy
+msgctxt "doNotTrack"
 msgid "Do Not Track"
 msgstr "Nu mă urmări"
 
@@ -3108,6 +3302,14 @@ msgstr ""
 
 #. # Security :: Browsing Privacy
 #: browsingPrivacy
+#, fuzzy
+msgctxt "browsingPrivacy"
+msgid "Browsing Privacy"
+msgstr "Confidențialitate navigare"
+
+#: browsingPrivacy.ariaLabel
+#, fuzzy
+msgctxt "browsingPrivacy.ariaLabel"
 msgid "Browsing Privacy"
 msgstr "Confidențialitate navigare"
 
@@ -3148,11 +3350,14 @@ msgstr "Curăță"
 
 #. # Security :: Privacy Panel
 #: privacy-controls
+#, fuzzy
+msgctxt "privacy-controls"
 msgid "Privacy Controls"
 msgstr "Opțiuni de intimitate"
 
-#: no-privacy-panel
-msgid "No privacy panel app found"
+#: no-privacy-controls
+#, fuzzy
+msgid "No privacy controls app found"
 msgstr "Nicio aplicație găsită pentru panou intimitate"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3172,6 +3377,8 @@ msgid "Unplug USB cable to disable"
 msgstr "Deconectează cablul USB pentru a dezactiva"
 
 #: appStorage
+#, fuzzy
+msgctxt "appStorage"
 msgid "Application Storage"
 msgstr "Stocare de aplicații"
 
@@ -3183,26 +3390,6 @@ msgstr "Stocare de aplicații"
 #: appStorage-header
 msgid "{{appStorage}}"
 msgstr "{{appStorage}}"
-
-#: byteUnit-B
-msgid "B"
-msgstr "B"
-
-#: byteUnit-KB
-msgid "KB"
-msgstr "KB"
-
-#: byteUnit-MB
-msgid "MB"
-msgstr "MB"
-
-#: byteUnit-GB
-msgid "GB"
-msgstr "GB"
-
-#: byteUnit-TB
-msgid "TB"
-msgstr "TB"
 
 #: storageSize
 msgid "{{size}} {{unit}}"
@@ -3272,15 +3459,19 @@ msgid "Transfer Protocol"
 msgstr "Protocol de transfer"
 
 #: protocol-mtp
-msgid "Media transfer protocol (MTP)"
+#, fuzzy
+msgid "Media Transfer Protocol (MTP)"
 msgstr "Protocol de transfer media (MTP)"
 
 #: protocol-ums
-msgid "USB mass Storage (UMS)"
+#, fuzzy
+msgid "USB Mass Storage (UMS)"
 msgstr "Stocare în masă USB (UMS)"
 
 #. # Storage :: Media storage
 #: mediaStorage
+#, fuzzy
+msgctxt "mediaStorage"
 msgid "Media Storage"
 msgstr "Stocare media"
 
@@ -3448,6 +3639,23 @@ msgstr "Formatează"
 msgid "SD card unmounted"
 msgstr "Card SD demontat"
 
+#: ums-partial-support-warning-title
+msgid "Warning: USB Mass Storage may not work"
+msgstr ""
+
+#: ums-partial-support-warning-msg-1
+msgid ""
+"USB Mass Storage will only work correctly with an external SD card. If you'd "
+"like to be able to access both your internal and external storage, you must "
+"use MTP."
+msgstr ""
+
+#: ums-partial-support-warning-msg-2
+msgid ""
+"Press \"OK\" to switch to USB Mass Storage, or \"Cancel\" to remain in MTP "
+"mode."
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Device
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3460,8 +3668,22 @@ msgctxt "help"
 msgid "Help"
 msgstr "Ajutor"
 
+#: help.ariaLabel
+#, fuzzy
+msgctxt "help.ariaLabel"
+msgid "Help"
+msgstr "Ajutor"
+
 #. # Device :: Information
 #: deviceInfo
+#, fuzzy
+msgctxt "deviceInfo"
+msgid "Device Information"
+msgstr "Informații dispozitiv"
+
+#: deviceInfo.ariaLabel
+#, fuzzy
+msgctxt "deviceInfo.ariaLabel"
 msgid "Device Information"
 msgstr "Informații dispozitiv"
 
@@ -3478,7 +3700,7 @@ msgstr "{{deviceInfo}}"
 msgid "IMEI"
 msgstr "IMEI"
 
-#: deviceInfo-IMEI-with-index.innerHTML
+#: deviceInfo-IMEI-with-index
 msgid "IMEI {{index}}: <bdi>{{imei}}</bdi>"
 msgstr "IMEI {{index}}: <bdi>{{imei}}</bdi>"
 
@@ -3486,7 +3708,7 @@ msgstr "IMEI {{index}}: <bdi>{{imei}}</bdi>"
 msgid "ICCID"
 msgstr "ICCID"
 
-#: deviceInfo-ICCID-with-index.innerHTML
+#: deviceInfo-ICCID-with-index
 msgid "SIM {{index}}: <bdi>{{iccid}}</bdi>"
 msgstr "SIM {{index}}: <bdi>{{iccid}}</bdi>"
 
@@ -3494,7 +3716,7 @@ msgstr "SIM {{index}}: <bdi>{{iccid}}</bdi>"
 msgid "Phone Number"
 msgstr "Număr de telefon"
 
-#: deviceInfo-MSISDN-with-index.innerHTML
+#: deviceInfo-MSISDN-with-index
 msgid "SIM {{index}}: <bdi>{{msisdn}}</bdi>"
 msgstr "SIM {{index}}: <bdi>{{msisdn}}</bdi>"
 
@@ -3503,6 +3725,14 @@ msgid "SIM {{index}}: Not available"
 msgstr "SIM {{index}}: Indisponibil"
 
 #: downloads
+#, fuzzy
+msgctxt "downloads"
+msgid "Downloads"
+msgstr "Descărcări"
+
+#: downloads.ariaLabel
+#, fuzzy
+msgctxt "downloads.ariaLabel"
 msgid "Downloads"
 msgstr "Descărcări"
 
@@ -3527,263 +3757,6 @@ msgstr "SIM {{index}}: Necunoscut"
 msgid "Git Commit Info"
 msgstr "Informații de comitere git"
 
-#: developer
-msgid "Developer"
-msgstr "Dezvoltator"
-
-#. # LOCALIZATION NOTE (developer-header): if you leave the original
-#. # en-US value "{{developer}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "developer".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: developer-header
-msgid "{{developer}}"
-msgstr "{{developer}}"
-
-#: hud-settings-button
-msgid "Developer HUD"
-msgstr "HUD dezvoltator"
-
-#. # LOCALIZATION NOTE (hud-settings-header): if you leave the original en-US value
-#. # "{{hud-settings-button}}" in the following string, the localization will be
-#. # automatically picked from the existing string with ID "hud-settings-button". If you
-#. # need to adapt your localizations to the available space in headers or
-#. # buttons, you can use different strings here.
-#: hud-settings-header
-msgid "{{hud-settings-button}}"
-msgstr "{{hud-settings-button}}"
-
-#: hud-devtools
-msgid "Developer tools"
-msgstr "Unelte de dezvoltare"
-
-#. # LOCALIZATION NOTE (hud-devtools-header): if you leave the original en-US
-#. # value "{{hud-devtools}}" in the following string, the localization will be
-#. # automatically picked from the existing string with ID "hud-devtools". If you
-#. # need to adapt your localizations to the available space in headers or
-#. # buttons, you can use different strings here.
-#: hud-devtools-header
-msgid "{{hud-devtools}}"
-msgstr "{{hud-devtools}}"
-
-#: hud-logging
-msgid "Log changes in ADB"
-msgstr "Înregistrează schimbările în ADB"
-
-#: hud-system
-msgid "Show system HUD"
-msgstr "Arată HUD-ul sistemului"
-
-#: hud-problems
-msgid "Problems"
-msgstr "Probleme"
-
-#: hud-warnings
-msgid "Warnings"
-msgstr "Avertismente"
-
-#: hud-errors
-msgid "Errors"
-msgstr "Erori"
-
-#: hud-security
-msgid "Security issues"
-msgstr "Probleme de securitate"
-
-#: hud-performance
-msgid "Performance"
-msgstr "Performanță"
-
-#: hud-reflows
-msgid "Reflows"
-msgstr "Reflows"
-
-#: hud-jank
-msgid "Jank"
-msgstr "Jank"
-
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Jank Threshold"
-
-#: hud-fps
-msgid "Frames per second"
-msgstr "Cadre per secundă"
-
-#: hud-ttl
-msgid "Time to load"
-msgstr "Timp de încărcare"
-
-#: hud-memory
-msgid "Memory"
-msgstr "Memorie"
-
-#: hud-uss
-msgid "Unique Set Size"
-msgstr "Unique Set Size"
-
-#: hud-appmemory
-msgid "App memory"
-msgstr "Memoria aplicației"
-
-#: hud-jsobjects
-msgid "JS objects"
-msgstr "Obiecte JS"
-
-#: hud-jsstrings
-msgid "JS strings"
-msgstr "Șiruri JS"
-
-#: hud-jsother
-msgid "JS other"
-msgstr "JS other"
-
-#: hud-dom
-msgid "DOM"
-msgstr "DOM"
-
-#: hud-style
-msgid "Style"
-msgstr "Style"
-
-#: hud-other
-msgctxt "hud-other"
-msgid "Other"
-msgstr "Other"
-
-#: software
-msgid "Software"
-msgstr "Software"
-
-#: devSettings
-msgid "Developer Settings"
-msgstr "Setări pentru dezvoltator"
-
-#: debug
-msgid "Debug"
-msgstr "Depanare"
-
-#: developer-menu
-msgid "Developer Menu"
-msgstr "Meniu dezvoltator"
-
-#: developer-tools
-msgid "Developer Tools"
-msgstr "Unelte de dezvoltare"
-
-#: graphics
-msgid "Graphics"
-msgstr "Grafică"
-
-#: hardware-composer
-msgid "Hardware composer"
-msgstr "Compozitor hardware"
-
-#: paint-flashing
-msgid "Flash repainted area"
-msgstr "Flash repainted area"
-
-#: dumps-layers
-msgid "Dump layers tree"
-msgstr "Dump layers tree"
-
-#: dumps-layerscope
-msgid "Dump layerscope"
-msgstr "Informații layerscope"
-
-#: apz-overscroll
-msgid "Overscrolling"
-msgstr "Overscrolling"
-
-#: tiling
-msgid "Tiling"
-msgstr "Tiling"
-
-#: low-precision
-msgid "Low-precision painting"
-msgstr "Low-precision painting"
-
-#: low-opacity
-msgid "Low-precision transparency"
-msgstr "Transparență de joasă precizie"
-
-#: draw-tile-borders
-msgid "Draw tile borders"
-msgstr "Desenează marginile miniaturilor"
-
-#: draw-layer-borders
-msgid "Draw layer borders"
-msgstr "Desenează marginile straturilor"
-
-#: log-animations
-msgid "Log slow animations"
-msgstr "Înregistrează animațiile lente"
-
-#: remote-debugging-usb
-msgid "Debugging via USB"
-msgstr "Depanare via USB"
-
-#: dev-tools-wifi
-msgid "DevTools via Wi-Fi"
-msgstr "DevTools via Wi-Fi"
-
-#: dev-tools-qps
-msgid "Pseudo-localization"
-msgstr "Pseudolocalizare"
-
-#: debugger-disabled
-msgctxt "debugger-disabled"
-msgid "Disabled"
-msgstr "Dezactivată"
-
-#: debugger-adb-only
-msgid "ADB only"
-msgstr "Doar ADB"
-
-#: debugger-adb-and-devtools
-msgid "ADB and DevTools"
-msgstr "ADB și DevTools"
-
-#: wifi-debugging
-msgid "Wi-Fi output in ADB"
-msgstr "Ieșire Wi-Fi în ADB"
-
-#: bluetooth-debugging
-msgid "Bluetooth output in ADB"
-msgstr "Ieșire Bluetooth în ADB"
-
-#: nfc-debugging
-msgid "NFC output in ADB"
-msgstr "Ieșire NFC în ADB"
-
-#: ril-debugging
-msgid "RIL output in ADB"
-msgstr "Ieșire RIL în ADB"
-
-#: console-enabled
-msgid "Console enabled"
-msgstr "Consolă activată"
-
-#: cards-view-screenshots
-msgid "Cards View: Screenshots"
-msgstr "Vizualizare carduri: capturi de ecran"
-
-#: geolocation-debugging-enabled
-msgid "Geolocation output in ADB"
-msgstr "Ieșire geolocație în ADB"
-
-#: geolocation-debugging-gps-locations-ignored
-msgid "Ignore GPS locations"
-msgstr "Ignoră locațiile GPS"
-
-#: use-reviewer-certs
-msgid "Use Marketplace reviewer certs"
-msgstr "Folosește examinatorul de certificate Marketplace"
-
-#: shake-to-log
-msgid "Shake to save system log"
-msgstr "Scutură pentru a salva jurnalul sistemului"
-
 #: model-name
 msgid "Model"
 msgstr "Model"
@@ -3795,6 +3768,14 @@ msgstr "Versiune SO"
 #: firmware_revision
 msgid "Firmware Revision"
 msgstr "Revizie firmware"
+
+#: hardware_manufacturer
+msgid "Hardware Manufacturer"
+msgstr ""
+
+#: hardware_platform
+msgid "Hardware Platform"
+msgstr ""
 
 #: hardware_revision
 msgid "Hardware Revision"
@@ -3914,21 +3895,6 @@ msgstr "Resetează"
 
 #: reset-warning-title
 msgctxt "reset-warning-title"
-msgid "CAUTION"
-msgstr "ATENȚIE"
-
-#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
-#. # full DevTools access.
-#: unlock-privileges
-msgid "Unlock Privileges"
-msgstr "Deblochează privilegii"
-
-#: reset-devtools
-msgid "Reset and enable full DevTools"
-msgstr "Resetează și activează DevTools complet"
-
-#: reset-devtools-warning-title
-msgctxt "reset-devtools-warning-title"
 msgid "CAUTION"
 msgstr "ATENȚIE"
 
@@ -4100,6 +4066,337 @@ msgstr "Licența publică Mozilla 2.0"
 msgid "Apache License 2.0"
 msgstr "Licența Apache 2.0"
 
+#. # Device :: Developer
+#: developer
+#, fuzzy
+msgctxt "developer"
+msgid "Developer"
+msgstr "Dezvoltator"
+
+#: developer.ariaLabel
+#, fuzzy
+msgctxt "developer.ariaLabel"
+msgid "Developer"
+msgstr "Dezvoltator"
+
+#. # LOCALIZATION NOTE (developer-header): if you leave the original
+#. # en-US value "{{developer}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "developer".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: developer-header
+msgid "{{developer}}"
+msgstr "{{developer}}"
+
+#: hud-settings-button
+msgid "Developer HUD"
+msgstr "HUD dezvoltator"
+
+#. # LOCALIZATION NOTE (hud-settings-header): if you leave the original en-US value
+#. # "{{hud-settings-button}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-settings-button". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-settings-header
+msgid "{{hud-settings-button}}"
+msgstr "{{hud-settings-button}}"
+
+#: hud-devtools
+#, fuzzy
+msgctxt "hud-devtools"
+msgid "Developer Tools"
+msgstr "Unelte de dezvoltare"
+
+#. # LOCALIZATION NOTE (hud-devtools-header): if you leave the original en-US
+#. # value "{{hud-devtools}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-devtools". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-devtools-header
+msgid "{{hud-devtools}}"
+msgstr "{{hud-devtools}}"
+
+#: hud-hide
+msgid "Hide All HUD Elements"
+msgstr ""
+
+#: hud-logging
+#, fuzzy
+msgid "Log Changes in ADB"
+msgstr "Înregistrează schimbările în ADB"
+
+#: hud-system
+#, fuzzy
+msgid "Show System HUD"
+msgstr "Arată HUD-ul sistemului"
+
+#: hud-problems
+msgid "Problems"
+msgstr "Probleme"
+
+#: hud-warnings
+msgid "Warnings"
+msgstr "Avertismente"
+
+#: hud-errors
+msgid "Errors"
+msgstr "Erori"
+
+#: hud-security
+#, fuzzy
+msgid "Security Issues"
+msgstr "Probleme de securitate"
+
+#: hud-performance
+msgid "Performance"
+msgstr "Performanță"
+
+#: hud-reflows
+msgid "Reflows"
+msgstr "Reflows"
+
+#: hud-jank
+msgid "Jank"
+msgstr "Jank"
+
+#: jank-threshold
+msgid "Jank Threshold"
+msgstr "Jank Threshold"
+
+#: hud-fps
+#, fuzzy
+msgid "Frames per Second"
+msgstr "Cadre per secundă"
+
+#: hud-ttl
+#, fuzzy
+msgid "Time to Load"
+msgstr "Timp de încărcare"
+
+#: hud-memory
+msgid "Memory"
+msgstr "Memorie"
+
+#: hud-uss
+msgid "Unique Set Size"
+msgstr "Unique Set Size"
+
+#: hud-appmemory
+#, fuzzy
+msgid "App Memory"
+msgstr "Memoria aplicației"
+
+#: hud-jsobjects
+#, fuzzy
+msgid "JS Objects"
+msgstr "Obiecte JS"
+
+#: hud-jsstrings
+#, fuzzy
+msgid "JS Strings"
+msgstr "Șiruri JS"
+
+#: hud-jsother
+#, fuzzy
+msgid "JS Other"
+msgstr "JS other"
+
+#: hud-dom
+msgid "DOM"
+msgstr "DOM"
+
+#: hud-style
+msgid "Style"
+msgstr "Style"
+
+#: hud-other
+msgctxt "hud-other"
+msgid "Other"
+msgstr "Other"
+
+#: hud-telemetry
+msgid "Telemetry"
+msgstr ""
+
+#: software
+msgid "Software"
+msgstr "Software"
+
+#: devSettings
+msgid "Developer Settings"
+msgstr "Setări pentru dezvoltator"
+
+#: debug
+msgid "Debug"
+msgstr "Depanare"
+
+#: developer-menu
+msgid "Developer Menu"
+msgstr "Meniu dezvoltator"
+
+#: developer-tools
+#, fuzzy
+msgctxt "developer-tools"
+msgid "Developer Tools"
+msgstr "Unelte de dezvoltare"
+
+#: graphics
+msgid "Graphics"
+msgstr "Grafică"
+
+#: hardware-composer
+#, fuzzy
+msgid "Hardware Composer"
+msgstr "Compozitor hardware"
+
+#: paint-flashing
+#, fuzzy
+msgid "Flash Repainted Area"
+msgstr "Flash repainted area"
+
+#: dumps-layers
+#, fuzzy
+msgid "Dump Layers Tree"
+msgstr "Dump layers tree"
+
+#: dumps-display-list
+msgid "Dump Display List"
+msgstr ""
+
+#: dumps-layerscope
+#, fuzzy
+msgid "Dump LayerScope"
+msgstr "Informații layerscope"
+
+#: apz-overscroll
+msgid "Overscrolling"
+msgstr "Overscrolling"
+
+#: tiling
+msgid "Tiling"
+msgstr "Tiling"
+
+#: low-precision
+#, fuzzy
+msgid "Low Precision Painting"
+msgstr "Low-precision painting"
+
+#: low-opacity
+#, fuzzy
+msgid "Low Precision Transparency"
+msgstr "Transparență de joasă precizie"
+
+#: draw-tile-borders
+#, fuzzy
+msgid "Draw Tile Borders"
+msgstr "Desenează marginile miniaturilor"
+
+#: draw-layer-borders
+#, fuzzy
+msgid "Draw Layer Borders"
+msgstr "Desenează marginile straturilor"
+
+#: log-animations
+#, fuzzy
+msgid "Log Slow Animations"
+msgstr "Înregistrează animațiile lente"
+
+#: remote-debugging-usb
+msgid "Debugging via USB"
+msgstr "Depanare via USB"
+
+#: devtools-wifi
+msgid "DevTools via Wi-Fi"
+msgstr "DevTools via Wi-Fi"
+
+#: devtools-device-name
+msgid "DevTools Wi-Fi Device Name"
+msgstr ""
+
+#: devtools-qps
+#, fuzzy
+msgid "Pseudo-Localization"
+msgstr "Pseudolocalizare"
+
+#: debugger-disabled
+msgctxt "debugger-disabled"
+msgid "Disabled"
+msgstr "Dezactivată"
+
+#: debugger-adb-only
+msgid "ADB only"
+msgstr "Doar ADB"
+
+#: debugger-adb-and-devtools
+msgid "ADB and DevTools"
+msgstr "ADB și DevTools"
+
+#: wifi-debugging
+#, fuzzy
+msgid "Wi-Fi Output in ADB"
+msgstr "Ieșire Wi-Fi în ADB"
+
+#: bluetooth-debugging
+#, fuzzy
+msgid "Bluetooth Output in ADB"
+msgstr "Ieșire Bluetooth în ADB"
+
+#: bluetooth-snoop-debugging
+msgid "Bluetooth HCI Sniffing Logs to SD Card"
+msgstr ""
+
+#: nfc-debugging
+#, fuzzy
+msgid "NFC Output in ADB"
+msgstr "Ieșire NFC în ADB"
+
+#: ril-debugging
+#, fuzzy
+msgid "RIL Output in ADB"
+msgstr "Ieșire RIL în ADB"
+
+#: network-debugging
+msgid "Network Output in ADB"
+msgstr ""
+
+#: mms-debugging
+#, fuzzy
+msgid "MMS Output in ADB"
+msgstr "Ieșire NFC în ADB"
+
+#: console-enabled
+#, fuzzy
+msgid "Console Enabled"
+msgstr "Consolă activată"
+
+#: cards-view-screenshots
+msgid "Cards View: Screenshots"
+msgstr "Vizualizare carduri: capturi de ecran"
+
+#: geolocation-debugging-enabled
+#, fuzzy
+msgid "Geolocation Output in ADB"
+msgstr "Ieșire geolocație în ADB"
+
+#: geolocation-debugging-gps-locations-ignored
+#, fuzzy
+msgid "Ignore GPS Locations"
+msgstr "Ignoră locațiile GPS"
+
+#: use-reviewer-certs
+#, fuzzy
+msgid "Use Marketplace Reviewer Certs"
+msgstr "Folosește examinatorul de certificate Marketplace"
+
+#: shake-to-log
+#, fuzzy
+msgid "Shake to Save System Log"
+msgstr "Scutură pentru a salva jurnalul sistemului"
+
+#: enable-logshake-qa
+msgid "Enable LogShake QA Mode"
+msgstr ""
+
 #: launch-ftu
 msgid "Launch First Time Use"
 msgstr "Lansează prima folosire"
@@ -4109,44 +4406,180 @@ msgid "No first time use app found"
 msgstr "Nicio aplicație FTU găsită"
 
 #: software-home-button
-msgid "Software home button"
+#, fuzzy
+msgid "Software Home Button"
 msgstr "Butonul software acasă"
 
 #: home-gesture
-msgid "Home gesture"
+#, fuzzy
+msgid "Home Gesture"
 msgstr "Gesturi către ecranul principal"
 
 #: continuous-transition
-msgid "Continuous transition"
+#, fuzzy
+msgid "Continuous Transition"
 msgstr "Tranziție continuă"
 
 #: debug-gaia-enabled
-msgid "Gaia debug traces"
+#, fuzzy
+msgid "Gaia Debug Traces"
 msgstr "Urme de depanare Gaia"
 
 #: showScreenReaderSettings
-msgid "Show screen reader settings"
+#, fuzzy
+msgid "Show Screen Reader Settings"
 msgstr "Arată setările cititorului de ecran"
 
 #: app-transition
-msgid "App transition"
+#, fuzzy
+msgid "App Transition"
 msgstr "Tranziție pentru aplicații"
 
 #: app-suspending
-msgid "App suspending"
+#, fuzzy
+msgid "App Suspending"
 msgstr "Suspendare pentru aplicații"
 
 #: copypaste
-msgid "Copy/paste"
+#, fuzzy
+msgid "Copy/Paste"
 msgstr "Copiază/lipește"
 
+#: multi-screen
+msgid "Multi-Screen"
+msgstr ""
+
 #: verbose-app-permissions
-msgid "Verbose app permissions"
+#, fuzzy
+msgid "Verbose App Permissions"
 msgstr "Permisiuni detaliate pentru aplicații"
 
+#: pinning-the-web
+msgid "Enable Pinning the Web"
+msgstr ""
+
+#: view-source
+msgid "Enable View Source Gesture"
+msgstr ""
+
 #: window-management
-msgid "Window management"
+#, fuzzy
+msgid "Window Management"
 msgstr "Gestionarea ferestrelor"
+
+#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
+#. # full DevTools access.
+#: unlock-privileges
+msgid "Unlock Privileges"
+msgstr "Deblochează privilegii"
+
+#: full-devtools
+msgid "Full DevTools"
+msgstr ""
+
+#: reset-devtools-warning-title
+msgctxt "reset-devtools-warning-title"
+msgid "CAUTION"
+msgstr "ATENȚIE"
+
+#. # Device :: Developer :: Service Workers
+#: service-worker
+msgid "Service Workers"
+msgstr ""
+
+#: service-worker-scope
+msgid "Scope"
+msgstr ""
+
+#: service-worker-script-spec
+msgid "Script spec"
+msgstr ""
+
+#: service-worker-current-worker-url
+msgid "Current worker URL"
+msgstr ""
+
+#: service-worker-active-cache-name
+msgid "Active cache name"
+msgstr ""
+
+#: service-worker-waiting-cache-name
+msgid "Waiting cache name"
+msgstr ""
+
+#: service-worker-update
+msgid "Update"
+msgstr ""
+
+#: service-worker-unregister
+msgid "Unregister"
+msgstr ""
+
+#: service-worker-no-registrations
+msgid "No service workers found"
+msgstr ""
+
+#. # Device :: Full Developer Mode
+#: developer-menu-disabled-warning-title
+msgid "Developer menu not enabled"
+msgstr ""
+
+#: developer-menu-disabled-warning-msg-1
+msgid ""
+"Developer Mode can't be enabled without the developer menu first being "
+"enabled."
+msgstr ""
+
+#: developer-menu-disabled-warning-msg-2
+msgid ""
+"Please enable it from Settings > Device Information > More Information > "
+"Developer Menu."
+msgstr ""
+
+#: enable-full-dev-mode-first-warning-title
+msgid "Would you like to enable developer mode?"
+msgstr ""
+
+#: enable-full-dev-mode-first-warning-msg-1
+msgid "THIS WILL DELETE ALL YOUR DATA AND FACTORY RESET YOUR DEVICE."
+msgstr ""
+
+#: enable-full-dev-mode-first-warning-msg-2
+msgid "THIS WILL DISABLE ALL SECURITY MEASURES ON YOUR DEVICE."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-title
+msgid "Are you sure you want to enable developer mode?"
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg
+#, fuzzy
+msgid "{[ plural(count) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: enable-full-dev-mode-final-warning-msg[one]
+msgid "Tap 'Enable' {{count}} more time to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[two]
+msgctxt "enable-full-dev-mode-final-warning-msg[two]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[few]
+msgctxt "enable-full-dev-mode-final-warning-msg[few]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[many]
+msgctxt "enable-full-dev-mode-final-warning-msg[many]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[other]
+msgctxt "enable-full-dev-mode-final-warning-msg[other]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
 
 #. # Device :: Downloads
 #: downloads-edit
@@ -4168,6 +4601,8 @@ msgstr "Șterge"
 
 #. # Device :: Battery
 #: battery
+#, fuzzy
+msgctxt "battery"
 msgid "Battery"
 msgstr "Baterie"
 
@@ -4216,6 +4651,14 @@ msgstr "Pornește automat"
 
 #. # Device :: Accessibility
 #: accessibility
+#, fuzzy
+msgctxt "accessibility"
+msgid "Accessibility"
+msgstr "Accesibilitate"
+
+#: accessibility.ariaLabel
+#, fuzzy
+msgctxt "accessibility.ariaLabel"
 msgid "Accessibility"
 msgstr "Accesibilitate"
 
@@ -4323,6 +4766,12 @@ msgstr "Contrast"
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
 msgctxt "improveBrowserOS"
+msgid "Improve {{brandShortName}}"
+msgstr "Îmbunătățește {{brandShortName}}"
+
+#: improveBrowserOS.ariaLabel
+#, fuzzy
+msgctxt "improveBrowserOS.ariaLabel"
 msgid "Improve {{brandShortName}}"
 msgstr "Îmbunătățește {{brandShortName}}"
 
@@ -4520,15 +4969,6 @@ msgstr ""
 "Scuze, sistemul nu poate trimite sugestia ta deoarece câmpul comentariu este "
 "gol. Te rugăm să introduci un text și să încerci din nou."
 
-#: feedback-errormessage-just-sent
-msgid ""
-"Sorry, the system can’t send your suggestion because you already sent us "
-"feedback. Please try our next software update and send again."
-msgstr ""
-"Scuze, sistemul nu poate trimite sugestia ta deoarece ai trimis deja o "
-"opinie. Te rugăm să încerci actualizarea următoare a programului și să o "
-"trimiți din nou."
-
 #: feedback-complete-msg
 msgid ""
 "Thanks for the feedback! We use it to help create better experiences in "
@@ -4536,6 +4976,10 @@ msgid ""
 msgstr ""
 "Îți mulțumim pentru opinie! O folosim pentru a ne ajuta la crearea unei "
 "experiențe mai bune în versiunile viitoare ale Firefox OS."
+
+#: feedback-errormessage-unknown-error
+msgid "Something went wrong. Please try again."
+msgstr ""
 
 #. # Device :: Help
 #: online-support
@@ -4673,8 +5117,14 @@ msgstr "Obține starea canalului"
 msgid "End of the proactive session"
 msgstr "Finalul sesiunii proactive"
 
+#: stkEntry.ariaLabel
+msgid "{{ title }}"
+msgstr ""
+
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
+#, fuzzy
+msgctxt "is-warning-storage-header"
 msgid "USB storage"
 msgstr "Stocare USB"
 
@@ -4744,14 +5194,387 @@ msgstr "{{settings-dialog-confirm}}"
 msgid "{{settings-dialog-prompt}}"
 msgstr "{{settings-dialog-prompt}}"
 
+#: accessible-app-icon.ariaLabel
+msgid "Icon for {{ appName }} app"
+msgstr ""
+
+#. # Addongs settings
+#: addon
+msgid "Add-on"
+msgstr ""
+
+#: addons
+msgctxt "addons"
+msgid "Add-ons"
+msgstr ""
+
+#: addons.ariaLabel
+msgctxt "addons.ariaLabel"
+msgid "Add-ons"
+msgstr ""
+
+#: addons-header
+msgid "{{addons}}"
+msgstr ""
+
+#: addon-details-header1
+msgid "{{ appName }}"
+msgstr ""
+
+#: addon-enable
+msgid "Enable Add-on"
+msgstr ""
+
+#: addon-description-header
+#, fuzzy
+msgctxt "addon-description-header"
+msgid "Description"
+msgstr "Descriere"
+
+#: addon-developer-name
+msgid "{{ developerName }}"
+msgstr ""
+
+#: addon-targets
+msgid "Affected Apps"
+msgstr ""
+
+#: addon-options
+#, fuzzy
+msgctxt "addon-options"
+msgid "Options"
+msgstr "Opțiuni"
+
+#: addon-delete
+msgid "Delete Add-on"
+msgstr ""
+
+#: addon-share
+msgid "Share Add-on"
+msgstr ""
+
+#: addon-share-no-provider
+msgid "No sharing app available"
+msgstr ""
+
+#: addon-no-description
+msgid "This add-on does not include a description in its manifest file."
+msgstr ""
+
+#: addon-no-targets
+msgid "This add-on does not affect any installed apps."
+msgstr ""
+
+#: addon-restart-apps-to-disable
+msgid "Add-on disabled; restart affected apps."
+msgstr ""
+
+#: addon-reboot-required
+msgid ""
+"This add-on affected system apps; you must reboot your device to fully "
+"disable it."
+msgstr ""
+
+#: addon-rename
+msgid "Rename"
+msgstr ""
+
+#: addon-rename-input
+msgid "Enter add-on name"
+msgstr ""
+
+#: addon-rename-desc
+msgid "Change the name of your add-on"
+msgstr ""
+
+#: addon-obsolete
+msgid "This add-on is obsolete and does not work."
+msgstr ""
+
+#: addon-obsolete-can-delete
+msgid "This add-on is obsolete and does not work. Please delete it."
+msgstr ""
+
+#. # Achievements
+#: achievements
+msgid "Achievements"
+msgstr ""
+
+#: achievements.ariaLabel
+msgid "achievements"
+msgstr ""
+
+#: achievements-customize-champ-name
+msgid "Customize Champ"
+msgstr ""
+
+#: achievements-customize-champ-description
+msgid "Open Customizer in an app"
+msgstr ""
+
+#: achievements-add-on-all-star-name
+msgid "Add-on All-Star"
+msgstr ""
+
+#: achievements-add-on-all-star-description
+msgid "Use Customizer to create your own add-on"
+msgstr ""
+
+#: achievements-fab-finder-name
+msgid "Fab Finder"
+msgstr ""
+
+#: achievements-fab-finder-description
+msgid "Install an app or add-on from Hackerplace"
+msgstr ""
+
+#: achievements-content-commander-name
+msgid "Content Commander"
+msgstr ""
+
+#: achievements-content-commander-description
+msgid "Submit an app or add-on to Hackerplace"
+msgstr ""
+
+#: achievements-sharing-is-caring-name
+msgid "Sharing is Caring"
+msgstr ""
+
+#: achievements-sharing-is-caring-description
+msgid "Share your apps and add-ons with the Sharing app"
+msgstr ""
+
+#: achievements-creative-kind-name
+msgid "Creative Kind"
+msgstr ""
+
+#: achievements-creative-kind-description
+msgid "Use Theme Editor to create a new theme"
+msgstr ""
+
+#. # Service Workers
+#: service-workers-interception
+msgid "Intercept requests"
+msgstr ""
+
+#: service-workers-testing
+msgid "Allow over HTTP"
+msgstr ""
+
+#. # LOCALIZATION NOTE: The following strings are spoken by screen readers and not
+#. # shown on the screen.
+#: addButton.ariaLabel
+#, fuzzy
+msgctxt "addButton.ariaLabel"
+msgid "Add"
+msgstr "Adaugă"
+
+#: closeButton.ariaLabel
+#, fuzzy
+msgctxt "closeButton.ariaLabel"
+msgid "Close"
+msgstr "Închide"
+
+#: changeWallpaperButton.ariaLabel
+msgid "Change wallpaper"
+msgstr ""
+
+#: editButton.ariaLabel
+#, fuzzy
+msgctxt "editButton.ariaLabel"
+msgid "Edit"
+msgstr "Editează"
+
+#: wifiSection.ariaLabel
+#, fuzzy
+msgctxt "wifiSection.ariaLabel"
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
+
+#: simManagerSection.ariaLabel
+#, fuzzy
+msgctxt "simManagerSection.ariaLabel"
+msgid "SIM Manager"
+msgstr "Manager SIM"
+
+#: callSettingsSection.ariaLabel
+#, fuzzy
+msgctxt "callSettingsSection.ariaLabel"
+msgid "Call Settings"
+msgstr "Setări de apel"
+
+#: messagingSettingsSection.ariaLabel
+#, fuzzy
+msgctxt "messagingSettingsSection.ariaLabel"
+msgid "Messaging Settings"
+msgstr "Setări de mesagerie"
+
+#: cellularAndDataSection.ariaLabel
+#, fuzzy
+msgctxt "cellularAndDataSection.ariaLabel"
+msgid "Cellular & Data"
+msgstr "Celular și date"
+
+#: bluetoothSection.ariaLabel
+#, fuzzy
+msgctxt "bluetoothSection.ariaLabel"
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: internetSharingSection.ariaLabel
+#, fuzzy
+msgctxt "internetSharingSection.ariaLabel"
+msgid "Internet Sharing"
+msgstr "Partajare internet"
+
+#: dateAndTimeSection.ariaLabel
+#, fuzzy
+msgctxt "dateAndTimeSection.ariaLabel"
+msgid "Date & Time"
+msgstr "Dată și oră"
+
+#: languageSection.ariaLabel
+#, fuzzy
+msgctxt "languageSection.ariaLabel"
+msgid "Language"
+msgstr "Limbă"
+
+#: keyboardsSection.ariaLabel
+#, fuzzy
+msgctxt "keyboardsSection.ariaLabel"
+msgid "Keyboards"
+msgstr "Tastaturi"
+
+#: fxa-accountsSection.ariaLabel
+#, fuzzy
+msgctxt "fxa-accountsSection.ariaLabel"
+msgid "Firefox Accounts"
+msgstr "Conturi Firefox"
+
+#: findmydeviceSection.ariaLabel
+#, fuzzy
+msgctxt "findmydeviceSection.ariaLabel"
+msgid "Find My Device"
+msgstr "Găsește-mi dispozitivul"
+
+#: screenLockSection.ariaLabel
+#, fuzzy
+msgctxt "screenLockSection.ariaLabel"
+msgid "Screen Lock"
+msgstr "Blocare ecran"
+
+#: simSecuritySection.ariaLabel
+#, fuzzy
+msgctxt "simSecuritySection.ariaLabel"
+msgid "SIM Security"
+msgstr "Securitate SIM"
+
+#: doNotTrackSection.ariaLabel
+#, fuzzy
+msgctxt "doNotTrackSection.ariaLabel"
+msgid "Do Not Track"
+msgstr "Nu mă urmări"
+
+#: privacySection.ariaLabel
+#, fuzzy
+msgctxt "privacySection.ariaLabel"
+msgid "Privacy Controls"
+msgstr "Opțiuni de intimitate"
+
+#: enableStorageSection.ariaLabel
+#, fuzzy
+msgctxt "enableStorageSection.ariaLabel"
+msgid "USB storage"
+msgstr "Stocare USB"
+
+#: mediaStorageSection.ariaLabel
+#, fuzzy
+msgctxt "mediaStorageSection.ariaLabel"
+msgid "Media Storage"
+msgstr "Stocare media"
+
+#: appStorageSection.ariaLabel
+#, fuzzy
+msgctxt "appStorageSection.ariaLabel"
+msgid "Application Storage"
+msgstr "Stocare de aplicații"
+
+#: batterySection.ariaLabel
+#, fuzzy
+msgctxt "batterySection.ariaLabel"
+msgid "Battery"
+msgstr "Baterie"
+
+#~ msgid "Manage Cert."
+#~ msgstr "Gestionează cert."
+
+#~ msgid "Call forwarding is disabled by FDN."
+#~ msgstr "Redirecționarea apelurilor e dezactivată de către FDN."
+
+#~ msgid "&#x202a;Multimedia Messaging (MMS)&#x202c;"
+#~ msgstr "&#x202a;Mesagerie multimedia (MMS)&#x202c;"
+
+#~ msgctxt "operator-status-connecting"
+#~ msgid "Connecting…"
+#~ msgstr "Conectare…"
+
+#~ msgctxt "operator-status-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "Conexiune eșuată"
+
+#~ msgctxt "operator-status-connected"
+#~ msgid "Connected"
+#~ msgstr "Conectat"
+
+#~ msgid "Change the name of your device as it appears in your computer"
+#~ msgstr "Schimbă numele dispozitivului așa cum apare în calculator"
+
+#~ msgid "The SSID cannot be empty"
+#~ msgstr "SSID-ul nu poate să fie necompletat"
+
+#~ msgid "WPA (TKIP)"
+#~ msgstr "WPA (TKIP)"
+
+#~ msgid "WPA2 (AES)"
+#~ msgstr "WPA2 (AES)"
+
+#~ msgid "Resend"
+#~ msgstr "Retrimite"
+
+#~ msgid "B"
+#~ msgstr "B"
+
+#~ msgid "KB"
+#~ msgstr "KB"
+
+#~ msgid "MB"
+#~ msgstr "MB"
+
+#~ msgid "GB"
+#~ msgstr "GB"
+
+#~ msgid "TB"
+#~ msgstr "TB"
+
+#~ msgid "Developer tools"
+#~ msgstr "Unelte de dezvoltare"
+
+#~ msgid "Reset and enable full DevTools"
+#~ msgstr "Resetează și activează DevTools complet"
+
+#~ msgid ""
+#~ "Sorry, the system can’t send your suggestion because you already sent us "
+#~ "feedback. Please try our next software update and send again."
+#~ msgstr ""
+#~ "Scuze, sistemul nu poate trimite sugestia ta deoarece ai trimis deja o "
+#~ "opinie. Te rugăm să încerci actualizarea următoare a programului și să o "
+#~ "trimiți din nou."
+
 #~ msgid "No imported certificate"
 #~ msgstr "Niciun certificat importat"
 
 #~ msgid "Voice calls to {{number}}"
 #~ msgstr "Apeluri vocale către {{number}}"
-
-#~ msgid "Multimedia Messaging (MMS)"
-#~ msgstr "Mesagerie multimedia (MMS)"
 
 #~ msgctxt "fdnSettings"
 #~ msgid "Fixed dialing numbers"
@@ -4770,11 +5593,6 @@ msgstr "{{settings-dialog-prompt}}"
 #~ msgctxt "total-space"
 #~ msgid "Total space"
 #~ msgstr "Spațiu total"
-
-#, fuzzy
-#~ msgctxt "is-warning-storage-header"
-#~ msgid "USB storage"
-#~ msgstr "Stocare USB"
 
 #, fuzzy
 #~ msgctxt "is-warning-tethering-header"
