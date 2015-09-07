@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-04-27 18:45+0000\n"
 "PO-Revision-Date: 2015-08-15 14:38+0000\n"
 "Last-Translator: xeno <firefox-waecohto@accounts.xenoworld.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1439649514.000000\n"
@@ -66,17 +66,11 @@ msgctxt "reset"
 msgid "Reset"
 msgstr "Rekomenci"
 
-#: factory-reset
-msgid "Factory Reset"
-msgstr ""
-
 #: cancel
 msgid "Cancel"
 msgstr "Nuligi"
 
 #: close
-#, fuzzy
-msgctxt "close"
 msgid "Close"
 msgstr "Fermi"
 
@@ -97,7 +91,6 @@ msgid "Pair"
 msgstr "Paro"
 
 #: add
-msgctxt "add"
 msgid "Add"
 msgstr ""
 
@@ -159,25 +152,10 @@ msgstr "Reto kaj konektebleco"
 
 #: airplaneMode
 #, fuzzy
-msgctxt "airplaneMode"
-msgid "Airplane Mode"
-msgstr "Reĝimo de aviadilo"
-
-#: airplaneMode.ariaLabel
-#, fuzzy
-msgctxt "airplaneMode.ariaLabel"
 msgid "Airplane Mode"
 msgstr "Reĝimo de aviadilo"
 
 #: geolocation
-#, fuzzy
-msgctxt "geolocation"
-msgid "Geolocation"
-msgstr "Pozicio"
-
-#: geolocation.ariaLabel
-#, fuzzy
-msgctxt "geolocation.ariaLabel"
 msgid "Geolocation"
 msgstr "Pozicio"
 
@@ -284,7 +262,7 @@ msgstr ""
 
 #: wifi-sleep-description
 msgid ""
-"Enable to automatically turn off Wi-Fi during sleep to save battery power."
+"Enable to automatically turn off Wi-Fi during sleep to save battery power.  "
 msgstr ""
 
 #: manageNetworks
@@ -312,19 +290,12 @@ msgid "{{manageNetworks}}"
 msgstr ""
 
 #: manageCertificates
-#, fuzzy
-msgid "Manage Certificates"
+msgid "Manage certificates"
 msgstr "Administri atestilojn"
 
-#. # LOCALIZATION NOTE (manageCertificates-header): if you leave the original
-#. # en-US value "{{manageCertificates}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID
-#. # "manageCertificates".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: manageCertificates-header
-msgid "{{manageCertificates}}"
-msgstr ""
+#: manageCert
+msgid "Manage Cert."
+msgstr "Adm. atestilojn"
 
 #: joinHiddenNetwork
 #, fuzzy
@@ -481,8 +452,6 @@ msgid "No known networks"
 msgstr "Neniu konata reto"
 
 #: edit
-#, fuzzy
-msgctxt "edit"
 msgid "Edit"
 msgstr "Redakti"
 
@@ -496,18 +465,15 @@ msgid "No certificates imported"
 msgstr ""
 
 #: deleteCertificate
-#, fuzzy
-msgid "Delete Certificate"
+msgid "Delete certificate"
 msgstr "Forigi atestilon"
 
 #: importCertificate
-#, fuzzy
-msgid "Import Certificate"
+msgid "Import certificate"
 msgstr "Importi atestilon"
 
 #: selectCertificateFile
-#, fuzzy
-msgid "Select Certificate File"
+msgid "Select certificate file"
 msgstr "Elekti atestilan dosieron"
 
 #: enterCertificateNickname
@@ -619,8 +585,6 @@ msgstr ""
 
 #. # Connectivity :: Call
 #: callSettings
-#, fuzzy
-msgctxt "callSettings"
 msgid "Call Settings"
 msgstr "Agordoj de vokoj"
 
@@ -734,7 +698,7 @@ msgstr "Plusendi vokojn kiam neatingebla"
 msgid "When unreachable"
 msgstr "Kiam neatingebla"
 
-#: callForwardingForwardingVoiceToNumber
+#: callForwardingForwardingVoiceToNumber.innerHTML
 msgid "Voice calls to <bdi>{{number}}</bdi>"
 msgstr ""
 
@@ -1021,6 +985,10 @@ msgstr ""
 msgid "The PIN2 code is incorrect."
 msgstr "La kodo PIN2 estas malĝusta."
 
+#: fdn-enabled-warning
+msgid "Call forwarding is disabled by FDN."
+msgstr "Plusendo de vokoj malaktiva pro FDN."
+
 #: fdnContact-name
 msgid "name"
 msgstr "nomo"
@@ -1062,8 +1030,6 @@ msgstr ""
 
 #. # Connectivity :: Messaging
 #: messagingSettings
-#, fuzzy
-msgctxt "messagingSettings"
 msgid "Messaging Settings"
 msgstr "Agordoj de mesaĝado"
 
@@ -1099,8 +1065,12 @@ msgstr "Legi raportojn"
 msgid "Request read report for each message sent"
 msgstr "Peti raporton de legado por ĉiu sendita mesaĝo"
 
-#: mmsTitle
-msgid "Multimedia Messaging (MMS)"
+#. # LOCALIZATION NOTE (mmsTitle): LRE (&#x202a;) and PDF (&#x202c;)
+#. # force the proper directionality of parentheses at the end of the string
+#. # regardless of the direction of the surrounding layout. Remove them only
+#. # if the translation puts them between other text.
+#: mmsTitle.innerHTML
+msgid "&#x202a;Multimedia Messaging (MMS)&#x202c;"
 msgstr ""
 
 #: auto-retrieve
@@ -1172,8 +1142,6 @@ msgstr ""
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
-#, fuzzy
-msgctxt "cellularAndData"
 msgid "Cellular & Data"
 msgstr "Reto kaj datumoj"
 
@@ -1283,11 +1251,6 @@ msgstr "Preferi WCDMA"
 msgid "Auto (2G/3G)"
 msgstr "Aŭtomata (2G/3G)"
 
-#: operator-networkType-auto-3G-4G
-#, fuzzy
-msgid "Auto (3G/4G)"
-msgstr "Aŭtomata (2G/3G)"
-
 #: operator-networkType-auto-CDMA-EVDO
 msgid "Auto (CDMA/EVDO)"
 msgstr "Aŭtomata (CDMA/EVDO)"
@@ -1298,11 +1261,6 @@ msgstr "Aŭtomata (WCDMA/GSM)"
 
 #: operator-networkType-auto-LTE-WCDMA-GSM
 msgid "Auto (LTE/WCDMA/GSM)"
-msgstr "Aŭtomata (LTE/WCDMA/GSM)"
-
-#: operator-networkType-auto-LTE-WCDMA
-#, fuzzy
-msgid "Auto (LTE/WCDMA)"
 msgstr "Aŭtomata (LTE/WCDMA/GSM)"
 
 #: operator-networkType-auto-LTE-CDMA-EVDO
@@ -1332,47 +1290,20 @@ msgid "Turn automatic selection off to view available network operators."
 msgstr ""
 "Malŝaltu la aŭtomatan elekton por vidi disponeblajn retajn provizantojn."
 
-#: operator-info-connecting
-#, fuzzy
-msgctxt "operator-info-connecting"
+#: operator-status-connecting
+msgctxt "operator-status-connecting"
 msgid "Connecting…"
-msgstr "konektado…"
+msgstr "konekto…"
 
-#: operator-info-failed
-#, fuzzy
-msgctxt "operator-info-failed"
+#: operator-status-connectingfailed
+msgctxt "operator-status-connectingfailed"
 msgid "Connection failed"
-msgstr "malsukcesa konektado."
+msgstr "malsukcesa konekto"
 
-#: operator-info-connected
-#, fuzzy
-msgctxt "operator-info-connected"
+#: operator-status-connected
+msgctxt "operator-status-connected"
 msgid "Connected"
-msgstr "konektita."
-
-#: operator-info-available
-#, fuzzy
-msgctxt "operator-info-available"
-msgid "Available"
-msgstr "Disponebla"
-
-#: operator-info-current
-#, fuzzy
-msgctxt "operator-info-current"
-msgid "Connected"
-msgstr "konektita."
-
-#: operator-info-forbidden
-#, fuzzy
-msgctxt "operator-info-forbidden"
-msgid "Forbidden"
-msgstr "Malpermesita"
-
-#: operator-info-unknown
-#, fuzzy
-msgctxt "operator-info-unknown"
-msgid "Unknown state"
-msgstr "Nekonata stato"
+msgstr "konektita"
 
 #: operator-roamingPreference
 msgid "Roaming preference"
@@ -1477,19 +1408,6 @@ msgstr "Agordoj de IMS"
 #. # in headers, you can use a shorter string here.
 #: imsSettings-header2
 msgid "{{imsSettings}}"
-msgstr ""
-
-#: fotaSettings
-msgid "FOTA Settings"
-msgstr ""
-
-#. # LOCALIZATION NOTE (fotaSettings-header): if you leave the original
-#. # en-US value "{{fotaSettings}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "fotaSettings".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: fotaSettings-header
-msgid "{{fotaSettings}}"
 msgstr ""
 
 #: apn-editor-header
@@ -1615,14 +1533,10 @@ msgid "This resets the settings to default values. This cannot be undone."
 msgstr ""
 
 #: state-unknown
-#, fuzzy
-msgctxt "state-unknown"
 msgid "Unknown state"
 msgstr "Nekonata stato"
 
 #: state-available
-#, fuzzy
-msgctxt "state-available"
 msgid "Available"
 msgstr "Disponebla"
 
@@ -1637,8 +1551,6 @@ msgid "Connected"
 msgstr "Konektita"
 
 #: state-forbidden
-#, fuzzy
-msgctxt "state-forbidden"
 msgid "Forbidden"
 msgstr "Malpermesita"
 
@@ -1667,7 +1579,6 @@ msgstr ""
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
-msgctxt "bluetooth"
 msgid "Bluetooth"
 msgstr ""
 
@@ -1826,13 +1737,9 @@ msgstr "Renomi mian aparaton"
 msgid "Unknown device"
 msgstr "Nekonata aparato"
 
-#: change-btdevice-name
-msgid "Change device name"
-msgstr ""
-
-#: change-btdevice-name-desc
-msgid "This name will appear on your other Bluetooth devices"
-msgstr ""
+#: change-phone-name-desc
+msgid "Change the name of your device as it appears in your computer"
+msgstr "Ŝanĝi la nomon de via aparato kiu aperas en via komputilo"
 
 #: bluetooth-new-name
 msgid "New name"
@@ -1874,27 +1781,18 @@ msgstr ""
 "Vi estas nuntempe konektita al tiu aparato. Malligado ankaŭ malkonektos vin "
 "de ĝi."
 
-#: unpair-confirm
-msgid ""
-"{{unpair-title}}\n"
-"{{unpair-msg}}"
-msgstr ""
-
 #. # Connectivity :: NFC
 #: nfc
-msgctxt "nfc"
-msgid "NFC"
-msgstr ""
-
-#: nfc.ariaLabel
-msgctxt "nfc.ariaLabel"
 msgid "NFC"
 msgstr ""
 
 #. # Connectivity :: Internet Sharing
+#: SSIDCannotBeEmpty
+msgid "The SSID cannot be empty"
+msgstr "La SSID ne povas esti malplena"
+
 #: internetSharing
 #, fuzzy
-msgctxt "internetSharing"
 msgid "Internet Sharing"
 msgstr "Divido de retaliro"
 
@@ -1979,7 +1877,7 @@ msgstr ""
 msgid "SSID Network Name"
 msgstr "Nomo de reto SSID"
 
-#: hotspot-security-open
+#: hotspot-open
 msgid "open"
 msgstr "malfermita"
 
@@ -1990,8 +1888,8 @@ msgstr "malfermita"
 #. # and PDF (&#x202c;) entities to these translations to force the correct direction.
 #. #
 #. # RTL locales should have a translation similar to this:
-#. # hotspot-wpa-psk= &#x202a;WPA (TKIP)&#x202c;
-#. # hotspot-wpa2-psk= &#x202a;WPA2 (AES)&#x202c;
+#. # hotspot-wpa-psk.innerHTML= &#x202a;WPA (TKIP)&#x202c;
+#. # hotspot-wpa2-psk.innerHTML= &#x202a;WPA2 (AES)&#x202c;
 #. #
 #. # [More details]
 #. #
@@ -2002,12 +1900,16 @@ msgstr "malfermita"
 #. # automatically in a wrong way by browser. Because from engineering side,
 #. # we can only change settings.ar.properties, for localizers, please remember to
 #. # put them in the other RTL languages.
-#: hotspot-security-wpa-psk
-msgid "WPA"
+#. #
+#. # Additionally, in order to make this hack work, we got some help from l10n.js
+#. # that we need to put these strings inside "KEY".innerHTML, so that's the
+#. # reason why these two strings below would be suffixed with ".innerHTML"
+#: hotspot-wpa-psk.innerHTML
+msgid "WPA (TKIP)"
 msgstr ""
 
-#: hotspot-security-wpa2-psk
-msgid "WPA2"
+#: hotspot-wpa2-psk.innerHTML
+msgid "WPA2 (AES)"
 msgstr ""
 
 #: hotspot-password-desc
@@ -2023,14 +1925,6 @@ msgstr "Persone agordi"
 
 #. # Personalization :: Sound
 #: sound
-#, fuzzy
-msgctxt "sound"
-msgid "Sound"
-msgstr "Sono"
-
-#: sound.ariaLabel
-#, fuzzy
-msgctxt "sound.ariaLabel"
 msgid "Sound"
 msgstr "Sono"
 
@@ -2119,14 +2013,6 @@ msgstr ""
 
 #. # Personalization :: Display
 #: display
-#, fuzzy
-msgctxt "display"
-msgid "Display"
-msgstr "Ekrano"
-
-#: display.ariaLabel
-#, fuzzy
-msgctxt "display.ariaLabel"
 msgid "Display"
 msgstr "Ekrano"
 
@@ -2188,12 +2074,6 @@ msgstr "Bloki orientiĝon"
 
 #. # Personalization :: Navigation
 #: navigation
-msgctxt "navigation"
-msgid "Navigation"
-msgstr ""
-
-#: navigation.ariaLabel
-msgctxt "navigation.ariaLabel"
 msgid "Navigation"
 msgstr ""
 
@@ -2216,14 +2096,6 @@ msgstr ""
 
 #. # Personalization :: Notifications
 #: notifications
-#, fuzzy
-msgctxt "notifications"
-msgid "Notifications"
-msgstr "Sciigoj"
-
-#: notifications.ariaLabel
-#, fuzzy
-msgctxt "notifications.ariaLabel"
 msgid "Notifications"
 msgstr "Sciigoj"
 
@@ -2246,8 +2118,6 @@ msgstr ""
 
 #. # Personalization :: Date & Time
 #: dateAndTime
-#, fuzzy
-msgctxt "dateAndTime"
 msgid "Date & Time"
 msgstr "Dato kaj horo"
 
@@ -2315,8 +2185,6 @@ msgid "Language & Region"
 msgstr "Lingvo kaj regiono"
 
 #: language
-#, fuzzy
-msgctxt "language"
 msgid "Language"
 msgstr "Lingvo"
 
@@ -2354,7 +2222,6 @@ msgstr ""
 
 #. # Personalization :: Sim cards manager
 #: simManager
-msgctxt "simManager"
 msgid "SIM Manager"
 msgstr ""
 
@@ -2434,12 +2301,6 @@ msgctxt "homescreen"
 msgid "Homescreen"
 msgstr "Hejmekrano"
 
-#: homescreen.ariaLabel
-#, fuzzy
-msgctxt "homescreen.ariaLabel"
-msgid "Homescreen"
-msgstr "Hejmekrano"
-
 #: vertical-homescreen-header
 #, fuzzy
 msgctxt "vertical-homescreen-header"
@@ -2471,11 +2332,6 @@ msgctxt "search"
 msgid "Search"
 msgstr ""
 
-#: search.ariaLabel
-msgctxt "search.ariaLabel"
-msgid "Search"
-msgstr ""
-
 #: search-header
 msgctxt "search-header"
 msgid "Search"
@@ -2499,13 +2355,6 @@ msgstr ""
 #. # Personalization :: Homescreens
 #: homescreens
 #, fuzzy
-msgctxt "homescreens"
-msgid "Homescreens"
-msgstr "Hejmekrano"
-
-#: homescreens.ariaLabel
-#, fuzzy
-msgctxt "homescreens.ariaLabel"
 msgid "Homescreens"
 msgstr "Hejmekrano"
 
@@ -2528,8 +2377,6 @@ msgid "Change"
 msgstr "Ŝanĝi"
 
 #: description
-#, fuzzy
-msgctxt "description"
 msgid "Description"
 msgstr "Priskribo"
 
@@ -2544,8 +2391,6 @@ msgid "Selected Keyboards"
 msgstr "Elektitaj klavaroj"
 
 #: keyboards
-#, fuzzy
-msgctxt "keyboards"
 msgid "Keyboards"
 msgstr "Klavaroj"
 
@@ -2611,12 +2456,6 @@ msgstr "{{layoutName}} estas la norma eniga metodo por {{appName}}"
 
 #. # Personalization :: Themes
 #: themes
-msgctxt "themes"
-msgid "Themes"
-msgstr ""
-
-#: themes.ariaLabel
-msgctxt "themes.ariaLabel"
 msgid "Themes"
 msgstr ""
 
@@ -2682,8 +2521,15 @@ msgstr ""
 msgid "A verification link has been sent to {{email}}."
 msgstr ""
 
-#: fxa-dont-see-email-resend
-msgid "Don’t see an email? <a>Resend</a>."
+#. # LOCALIZATION NOTE (fxa-dont-see-email): the "{{resend}}" placeholder
+#. # will be replaced with a link containing the string with ID "fxa-resend":
+#. # "Don't see an email? <a>Resend</a>."
+#: fxa-dont-see-email
+msgid "Don’t see an email? {{resend}}."
+msgstr ""
+
+#: fxa-resend
+msgid "Resend"
 msgstr ""
 
 #. # Panel: logged in, verified
@@ -2709,7 +2555,6 @@ msgid "Find My Device"
 msgstr ""
 
 #: fxa-options
-msgctxt "fxa-options"
 msgid "Options"
 msgstr ""
 
@@ -2786,7 +2631,6 @@ msgid "Passcode: {{code}}"
 msgstr "Paskodo: {{code}}"
 
 #: screenLock
-msgctxt "screenLock"
 msgid "Screen Lock"
 msgstr ""
 
@@ -2799,17 +2643,8 @@ msgstr ""
 msgid "{{screenLock}}"
 msgstr ""
 
-#: screenLock-enabled-with-no-passcode
-msgid "Enabled with no passcode"
-msgstr ""
-
-#: screenLock-enabled-with-passcode
-msgid "Enabled with passcode"
-msgstr ""
-
 #: simSecurity
 #, fuzzy
-msgctxt "simSecurity"
 msgid "SIM Security"
 msgstr "Sekureco de SIM"
 
@@ -2825,13 +2660,6 @@ msgstr ""
 #. # Security :: App permissions
 #: appPermissions
 #, fuzzy
-msgctxt "appPermissions"
-msgid "App Permissions"
-msgstr "Permesoj por programoj"
-
-#: appPermissions.ariaLabel
-#, fuzzy
-msgctxt "appPermissions.ariaLabel"
 msgid "App Permissions"
 msgstr "Permesoj por programoj"
 
@@ -3280,8 +3108,6 @@ msgstr ""
 
 #. # Security :: Do Not Track
 #: doNotTrack
-#, fuzzy
-msgctxt "doNotTrack"
 msgid "Do Not Track"
 msgstr "Ne spuri"
 
@@ -3327,12 +3153,6 @@ msgstr "Storage"
 
 #. # Security :: Browsing Privacy
 #: browsingPrivacy
-msgctxt "browsingPrivacy"
-msgid "Browsing Privacy"
-msgstr ""
-
-#: browsingPrivacy.ariaLabel
-msgctxt "browsingPrivacy.ariaLabel"
 msgid "Browsing Privacy"
 msgstr ""
 
@@ -3373,12 +3193,11 @@ msgstr "Forviŝi"
 
 #. # Security :: Privacy Panel
 #: privacy-controls
-msgctxt "privacy-controls"
 msgid "Privacy Controls"
 msgstr ""
 
-#: no-privacy-controls
-msgid "No privacy controls app found"
+#: no-privacy-panel
+msgid "No privacy panel app found"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3400,7 +3219,6 @@ msgstr "Malkonekti la kablon USB por malaktivigi"
 
 #: appStorage
 #, fuzzy
-msgctxt "appStorage"
 msgid "Application Storage"
 msgstr "Konservejo de programoj"
 
@@ -3412,6 +3230,26 @@ msgstr "Konservejo de programoj"
 #: appStorage-header
 msgid "{{appStorage}}"
 msgstr ""
+
+#: byteUnit-B
+msgid "B"
+msgstr "O"
+
+#: byteUnit-KB
+msgid "KB"
+msgstr "KO"
+
+#: byteUnit-MB
+msgid "MB"
+msgstr "MO"
+
+#: byteUnit-GB
+msgid "GB"
+msgstr "GO"
+
+#: byteUnit-TB
+msgid "TB"
+msgstr "TO"
 
 #: storageSize
 msgid "{{size}} {{unit}}"
@@ -3480,17 +3318,16 @@ msgid "Transfer Protocol"
 msgstr ""
 
 #: protocol-mtp
-msgid "Media Transfer Protocol (MTP)"
+msgid "Media transfer protocol (MTP)"
 msgstr ""
 
 #: protocol-ums
-msgid "USB Mass Storage (UMS)"
+msgid "USB mass Storage (UMS)"
 msgstr ""
 
 #. # Storage :: Media storage
 #: mediaStorage
 #, fuzzy
-msgctxt "mediaStorage"
 msgid "Media Storage"
 msgstr "Aŭdvida konservejo"
 
@@ -3652,23 +3489,6 @@ msgstr "Strukturi"
 msgid "SD card unmounted"
 msgstr ""
 
-#: ums-partial-support-warning-title
-msgid "Warning: USB Mass Storage may not work"
-msgstr ""
-
-#: ums-partial-support-warning-msg-1
-msgid ""
-"USB Mass Storage will only work correctly with an external SD card. If you'd "
-"like to be able to access both your internal and external storage, you must "
-"use MTP."
-msgstr ""
-
-#: ums-partial-support-warning-msg-2
-msgid ""
-"Press \"OK\" to switch to USB Mass Storage, or \"Cancel\" to remain in MTP "
-"mode."
-msgstr ""
-
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Device
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3681,22 +3501,9 @@ msgctxt "help"
 msgid "Help"
 msgstr "Helpo"
 
-#: help.ariaLabel
-#, fuzzy
-msgctxt "help.ariaLabel"
-msgid "Help"
-msgstr "Helpo"
-
 #. # Device :: Information
 #: deviceInfo
 #, fuzzy
-msgctxt "deviceInfo"
-msgid "Device Information"
-msgstr "Aparata informo"
-
-#: deviceInfo.ariaLabel
-#, fuzzy
-msgctxt "deviceInfo.ariaLabel"
 msgid "Device Information"
 msgstr "Aparata informo"
 
@@ -3713,7 +3520,7 @@ msgstr ""
 msgid "IMEI"
 msgstr ""
 
-#: deviceInfo-IMEI-with-index
+#: deviceInfo-IMEI-with-index.innerHTML
 msgid "IMEI {{index}}: <bdi>{{imei}}</bdi>"
 msgstr ""
 
@@ -3721,7 +3528,7 @@ msgstr ""
 msgid "ICCID"
 msgstr ""
 
-#: deviceInfo-ICCID-with-index
+#: deviceInfo-ICCID-with-index.innerHTML
 msgid "SIM {{index}}: <bdi>{{iccid}}</bdi>"
 msgstr ""
 
@@ -3730,7 +3537,7 @@ msgstr ""
 msgid "Phone Number"
 msgstr "Telefonnumero"
 
-#: deviceInfo-MSISDN-with-index
+#: deviceInfo-MSISDN-with-index.innerHTML
 msgid "SIM {{index}}: <bdi>{{msisdn}}</bdi>"
 msgstr ""
 
@@ -3739,14 +3546,6 @@ msgid "SIM {{index}}: Not available"
 msgstr ""
 
 #: downloads
-#, fuzzy
-msgctxt "downloads"
-msgid "Downloads"
-msgstr "Elŝutoj"
-
-#: downloads.ariaLabel
-#, fuzzy
-msgctxt "downloads.ariaLabel"
 msgid "Downloads"
 msgstr "Elŝutoj"
 
@@ -3771,6 +3570,266 @@ msgstr "SIM {{index}}: nekonata"
 msgid "Git Commit Info"
 msgstr ""
 
+#: developer
+msgid "Developer"
+msgstr "Programisto"
+
+#. # LOCALIZATION NOTE (developer-header): if you leave the original
+#. # en-US value "{{developer}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "developer".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: developer-header
+msgid "{{developer}}"
+msgstr ""
+
+#: hud-settings-button
+msgid "Developer HUD"
+msgstr "Disvolvanta HUD"
+
+#. # LOCALIZATION NOTE (hud-settings-header): if you leave the original en-US value
+#. # "{{hud-settings-button}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-settings-button". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-settings-header
+msgid "{{hud-settings-button}}"
+msgstr ""
+
+#: hud-devtools
+msgid "Developer tools"
+msgstr ""
+
+#. # LOCALIZATION NOTE (hud-devtools-header): if you leave the original en-US
+#. # value "{{hud-devtools}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-devtools". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-devtools-header
+msgid "{{hud-devtools}}"
+msgstr ""
+
+#: hud-logging
+msgid "Log changes in ADB"
+msgstr "Registri ŝanĝojn en adb"
+
+#: hud-system
+msgid "Show system HUD"
+msgstr ""
+
+#: hud-problems
+msgid "Problems"
+msgstr "Problemoj"
+
+#: hud-warnings
+msgid "Warnings"
+msgstr "Avertoj"
+
+#: hud-errors
+msgid "Errors"
+msgstr "Eraroj"
+
+#: hud-security
+msgid "Security issues"
+msgstr "Sekureca temo"
+
+#: hud-performance
+msgid "Performance"
+msgstr "Efikeco"
+
+#: hud-reflows
+msgid "Reflows"
+msgstr "Rekalkuloj de DOM"
+
+#: hud-jank
+msgid "Jank"
+msgstr "Malfruo"
+
+#: jank-threshold
+msgid "Jank Threshold"
+msgstr "Limo de malfruo"
+
+#: hud-fps
+msgid "Frames per second"
+msgstr "Kadroj per sekundo"
+
+#: hud-ttl
+msgid "Time to load"
+msgstr "Tempo de ŝargado"
+
+#: hud-memory
+msgid "Memory"
+msgstr "Memoro"
+
+#: hud-uss
+msgid "Unique Set Size"
+msgstr ""
+
+#: hud-appmemory
+msgid "App memory"
+msgstr "Memoro de programo"
+
+#: hud-jsobjects
+msgid "JS objects"
+msgstr "Objektoj JS"
+
+#: hud-jsstrings
+msgid "JS strings"
+msgstr "Tekstoj JS"
+
+#: hud-jsother
+msgid "JS other"
+msgstr "Aliaj JS"
+
+#: hud-dom
+msgid "DOM"
+msgstr ""
+
+#: hud-style
+msgid "Style"
+msgstr "Stilo"
+
+#: hud-other
+msgctxt "hud-other"
+msgid "Other"
+msgstr "Alia"
+
+#: software
+msgid "Software"
+msgstr "Programo"
+
+#: devSettings
+#, fuzzy
+msgid "Developer Settings"
+msgstr "Developer Settings"
+
+#: debug
+msgid "Debug"
+msgstr "Sencimigi"
+
+#: developer-menu
+msgid "Developer Menu"
+msgstr "Menuo de disvolvantoj"
+
+#: developer-tools
+msgid "Developer Tools"
+msgstr ""
+
+#: graphics
+msgid "Graphics"
+msgstr ""
+
+#: hardware-composer
+msgid "Hardware composer"
+msgstr ""
+
+#: paint-flashing
+msgid "Flash repainted area"
+msgstr ""
+
+#: dumps-layers
+msgid "Dump layers tree"
+msgstr ""
+
+#: dumps-layerscope
+msgid "Dump layerscope"
+msgstr ""
+
+#: apz-overscroll
+msgid "Overscrolling"
+msgstr ""
+
+#: tiling
+msgid "Tiling"
+msgstr ""
+
+#: low-precision
+msgid "Low-precision painting"
+msgstr ""
+
+#: low-opacity
+msgid "Low-precision transparency"
+msgstr ""
+
+#: draw-tile-borders
+msgid "Draw tile borders"
+msgstr ""
+
+#: draw-layer-borders
+msgid "Draw layer borders"
+msgstr ""
+
+#: log-animations
+msgid "Log slow animations"
+msgstr "Registri malrapidajn movbildojn"
+
+#: remote-debugging-usb
+msgid "Debugging via USB"
+msgstr ""
+
+#: dev-tools-wifi
+msgid "DevTools via Wi-Fi"
+msgstr ""
+
+#: dev-tools-qps
+msgid "Pseudo-localization"
+msgstr ""
+
+#: debugger-disabled
+msgctxt "debugger-disabled"
+msgid "Disabled"
+msgstr "Malaktiva"
+
+#: debugger-adb-only
+msgid "ADB only"
+msgstr "Nur ADB"
+
+#: debugger-adb-and-devtools
+msgid "ADB and DevTools"
+msgstr "ADB kaj disv. iloj"
+
+#: wifi-debugging
+msgid "Wi-Fi output in ADB"
+msgstr "Sendrata eligo en adb"
+
+#: bluetooth-debugging
+msgid "Bluetooth output in ADB"
+msgstr "Bluetooth eligo en adb"
+
+#: nfc-debugging
+#, fuzzy
+msgid "NFC output in ADB"
+msgstr "Sendrata eligo en adb"
+
+#: ril-debugging
+#, fuzzy
+msgid "RIL output in ADB"
+msgstr "Sendrata eligo en adb"
+
+#: console-enabled
+msgid "Console enabled"
+msgstr "Konzolo aktiva"
+
+#: cards-view-screenshots
+msgid "Cards View: Screenshots"
+msgstr ""
+
+#: geolocation-debugging-enabled
+msgid "Geolocation output in ADB"
+msgstr ""
+
+#: geolocation-debugging-gps-locations-ignored
+msgid "Ignore GPS locations"
+msgstr ""
+
+#: use-reviewer-certs
+msgid "Use Marketplace reviewer certs"
+msgstr ""
+
+#: shake-to-log
+msgid "Shake to save system log"
+msgstr ""
+
 #: model-name
 msgid "Model"
 msgstr "Modelo"
@@ -3784,14 +3843,6 @@ msgstr "OS Versio"
 #, fuzzy
 msgid "Firmware Revision"
 msgstr "Revizio de firmprogramo"
-
-#: hardware_manufacturer
-msgid "Hardware Manufacturer"
-msgstr ""
-
-#: hardware_platform
-msgid "Hardware Platform"
-msgstr ""
 
 #: hardware_revision
 #, fuzzy
@@ -3916,6 +3967,22 @@ msgstr "Rekomenci"
 #: reset-warning-title
 #, fuzzy
 msgctxt "reset-warning-title"
+msgid "CAUTION"
+msgstr "PRUDENTO"
+
+#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
+#. # full DevTools access.
+#: unlock-privileges
+msgid "Unlock Privileges"
+msgstr ""
+
+#: reset-devtools
+msgid "Reset and enable full DevTools"
+msgstr ""
+
+#: reset-devtools-warning-title
+#, fuzzy
+msgctxt "reset-devtools-warning-title"
 msgid "CAUTION"
 msgstr "PRUDENTO"
 
@@ -4065,322 +4132,6 @@ msgstr ""
 msgid "Apache License 2.0"
 msgstr ""
 
-#. # Device :: Developer
-#: developer
-#, fuzzy
-msgctxt "developer"
-msgid "Developer"
-msgstr "Programisto"
-
-#: developer.ariaLabel
-#, fuzzy
-msgctxt "developer.ariaLabel"
-msgid "Developer"
-msgstr "Programisto"
-
-#. # LOCALIZATION NOTE (developer-header): if you leave the original
-#. # en-US value "{{developer}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "developer".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: developer-header
-msgid "{{developer}}"
-msgstr ""
-
-#: hud-settings-button
-msgid "Developer HUD"
-msgstr "Disvolvanta HUD"
-
-#. # LOCALIZATION NOTE (hud-settings-header): if you leave the original en-US value
-#. # "{{hud-settings-button}}" in the following string, the localization will be
-#. # automatically picked from the existing string with ID "hud-settings-button". If you
-#. # need to adapt your localizations to the available space in headers or
-#. # buttons, you can use different strings here.
-#: hud-settings-header
-msgid "{{hud-settings-button}}"
-msgstr ""
-
-#: hud-devtools
-msgctxt "hud-devtools"
-msgid "Developer Tools"
-msgstr ""
-
-#. # LOCALIZATION NOTE (hud-devtools-header): if you leave the original en-US
-#. # value "{{hud-devtools}}" in the following string, the localization will be
-#. # automatically picked from the existing string with ID "hud-devtools". If you
-#. # need to adapt your localizations to the available space in headers or
-#. # buttons, you can use different strings here.
-#: hud-devtools-header
-msgid "{{hud-devtools}}"
-msgstr ""
-
-#: hud-hide
-msgid "Hide All HUD Elements"
-msgstr ""
-
-#: hud-logging
-#, fuzzy
-msgid "Log Changes in ADB"
-msgstr "Registri ŝanĝojn en adb"
-
-#: hud-system
-msgid "Show System HUD"
-msgstr ""
-
-#: hud-problems
-msgid "Problems"
-msgstr "Problemoj"
-
-#: hud-warnings
-msgid "Warnings"
-msgstr "Avertoj"
-
-#: hud-errors
-msgid "Errors"
-msgstr "Eraroj"
-
-#: hud-security
-#, fuzzy
-msgid "Security Issues"
-msgstr "Sekureca temo"
-
-#: hud-performance
-msgid "Performance"
-msgstr "Efikeco"
-
-#: hud-reflows
-msgid "Reflows"
-msgstr "Rekalkuloj de DOM"
-
-#: hud-jank
-msgid "Jank"
-msgstr "Malfruo"
-
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Limo de malfruo"
-
-#: hud-fps
-#, fuzzy
-msgid "Frames per Second"
-msgstr "Kadroj per sekundo"
-
-#: hud-ttl
-#, fuzzy
-msgid "Time to Load"
-msgstr "Tempo de ŝargado"
-
-#: hud-memory
-msgid "Memory"
-msgstr "Memoro"
-
-#: hud-uss
-msgid "Unique Set Size"
-msgstr ""
-
-#: hud-appmemory
-#, fuzzy
-msgid "App Memory"
-msgstr "Memoro de programo"
-
-#: hud-jsobjects
-#, fuzzy
-msgid "JS Objects"
-msgstr "Objektoj JS"
-
-#: hud-jsstrings
-#, fuzzy
-msgid "JS Strings"
-msgstr "Tekstoj JS"
-
-#: hud-jsother
-#, fuzzy
-msgid "JS Other"
-msgstr "Aliaj JS"
-
-#: hud-dom
-msgid "DOM"
-msgstr ""
-
-#: hud-style
-msgid "Style"
-msgstr "Stilo"
-
-#: hud-other
-msgctxt "hud-other"
-msgid "Other"
-msgstr "Alia"
-
-#: hud-telemetry
-msgid "Telemetry"
-msgstr ""
-
-#: software
-msgid "Software"
-msgstr "Programo"
-
-#: devSettings
-#, fuzzy
-msgid "Developer Settings"
-msgstr "Developer Settings"
-
-#: debug
-msgid "Debug"
-msgstr "Sencimigi"
-
-#: developer-menu
-msgid "Developer Menu"
-msgstr "Menuo de disvolvantoj"
-
-#: developer-tools
-msgctxt "developer-tools"
-msgid "Developer Tools"
-msgstr ""
-
-#: graphics
-msgid "Graphics"
-msgstr ""
-
-#: hardware-composer
-msgid "Hardware Composer"
-msgstr ""
-
-#: paint-flashing
-msgid "Flash Repainted Area"
-msgstr ""
-
-#: dumps-layers
-msgid "Dump Layers Tree"
-msgstr ""
-
-#: dumps-display-list
-msgid "Dump Display List"
-msgstr ""
-
-#: dumps-layerscope
-msgid "Dump LayerScope"
-msgstr ""
-
-#: apz-overscroll
-msgid "Overscrolling"
-msgstr ""
-
-#: tiling
-msgid "Tiling"
-msgstr ""
-
-#: low-precision
-msgid "Low Precision Painting"
-msgstr ""
-
-#: low-opacity
-msgid "Low Precision Transparency"
-msgstr ""
-
-#: draw-tile-borders
-msgid "Draw Tile Borders"
-msgstr ""
-
-#: draw-layer-borders
-msgid "Draw Layer Borders"
-msgstr ""
-
-#: log-animations
-#, fuzzy
-msgid "Log Slow Animations"
-msgstr "Registri malrapidajn movbildojn"
-
-#: remote-debugging-usb
-msgid "Debugging via USB"
-msgstr ""
-
-#: devtools-wifi
-msgid "DevTools via Wi-Fi"
-msgstr ""
-
-#: devtools-device-name
-msgid "DevTools Wi-Fi Device Name"
-msgstr ""
-
-#: devtools-qps
-msgid "Pseudo-Localization"
-msgstr ""
-
-#: debugger-disabled
-msgctxt "debugger-disabled"
-msgid "Disabled"
-msgstr "Malaktiva"
-
-#: debugger-adb-only
-msgid "ADB only"
-msgstr "Nur ADB"
-
-#: debugger-adb-and-devtools
-msgid "ADB and DevTools"
-msgstr "ADB kaj disv. iloj"
-
-#: wifi-debugging
-#, fuzzy
-msgid "Wi-Fi Output in ADB"
-msgstr "Sendrata eligo en adb"
-
-#: bluetooth-debugging
-#, fuzzy
-msgid "Bluetooth Output in ADB"
-msgstr "Bluetooth eligo en adb"
-
-#: bluetooth-snoop-debugging
-msgid "Bluetooth HCI Sniffing Logs to SD Card"
-msgstr ""
-
-#: nfc-debugging
-#, fuzzy
-msgid "NFC Output in ADB"
-msgstr "Sendrata eligo en adb"
-
-#: ril-debugging
-#, fuzzy
-msgid "RIL Output in ADB"
-msgstr "Sendrata eligo en adb"
-
-#: network-debugging
-msgid "Network Output in ADB"
-msgstr ""
-
-#: mms-debugging
-#, fuzzy
-msgid "MMS Output in ADB"
-msgstr "Sendrata eligo en adb"
-
-#: console-enabled
-#, fuzzy
-msgid "Console Enabled"
-msgstr "Konzolo aktiva"
-
-#: cards-view-screenshots
-msgid "Cards View: Screenshots"
-msgstr ""
-
-#: geolocation-debugging-enabled
-msgid "Geolocation Output in ADB"
-msgstr ""
-
-#: geolocation-debugging-gps-locations-ignored
-msgid "Ignore GPS Locations"
-msgstr ""
-
-#: use-reviewer-certs
-msgid "Use Marketplace Reviewer Certs"
-msgstr ""
-
-#: shake-to-log
-msgid "Shake to Save System Log"
-msgstr ""
-
-#: enable-logshake-qa
-msgid "Enable LogShake QA Mode"
-msgstr ""
-
 #: launch-ftu
 msgid "Launch First Time Use"
 msgstr "Ekrano de unua uzo"
@@ -4390,169 +4141,43 @@ msgid "No first time use app found"
 msgstr ""
 
 #: software-home-button
-msgid "Software Home Button"
+msgid "Software home button"
 msgstr ""
 
 #: home-gesture
-msgid "Home Gesture"
+msgid "Home gesture"
 msgstr ""
 
 #: continuous-transition
-msgid "Continuous Transition"
+msgid "Continuous transition"
 msgstr ""
 
 #: debug-gaia-enabled
-msgid "Gaia Debug Traces"
+msgid "Gaia debug traces"
 msgstr ""
 
 #: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
+msgid "Show screen reader settings"
 msgstr ""
 
 #: app-transition
-msgid "App Transition"
+msgid "App transition"
 msgstr ""
 
 #: app-suspending
-msgid "App Suspending"
+msgid "App suspending"
 msgstr ""
 
 #: copypaste
-msgid "Copy/Paste"
-msgstr ""
-
-#: multi-screen
-msgid "Multi-Screen"
+msgid "Copy/paste"
 msgstr ""
 
 #: verbose-app-permissions
-msgid "Verbose App Permissions"
-msgstr ""
-
-#: pinning-the-web
-msgid "Enable Pinning the Web"
-msgstr ""
-
-#: view-source
-msgid "Enable View Source Gesture"
+msgid "Verbose app permissions"
 msgstr ""
 
 #: window-management
-msgid "Window Management"
-msgstr ""
-
-#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
-#. # full DevTools access.
-#: unlock-privileges
-msgid "Unlock Privileges"
-msgstr ""
-
-#: full-devtools
-msgid "Full DevTools"
-msgstr ""
-
-#: reset-devtools-warning-title
-#, fuzzy
-msgctxt "reset-devtools-warning-title"
-msgid "CAUTION"
-msgstr "PRUDENTO"
-
-#. # Device :: Developer :: Service Workers
-#: service-worker
-msgid "Service Workers"
-msgstr ""
-
-#: service-worker-scope
-msgid "Scope"
-msgstr ""
-
-#: service-worker-script-spec
-msgid "Script spec"
-msgstr ""
-
-#: service-worker-current-worker-url
-msgid "Current worker URL"
-msgstr ""
-
-#: service-worker-active-cache-name
-msgid "Active cache name"
-msgstr ""
-
-#: service-worker-waiting-cache-name
-msgid "Waiting cache name"
-msgstr ""
-
-#: service-worker-update
-msgid "Update"
-msgstr ""
-
-#: service-worker-unregister
-msgid "Unregister"
-msgstr ""
-
-#: service-worker-no-registrations
-msgid "No service workers found"
-msgstr ""
-
-#. # Device :: Full Developer Mode
-#: developer-menu-disabled-warning-title
-msgid "Developer menu not enabled"
-msgstr ""
-
-#: developer-menu-disabled-warning-msg-1
-msgid ""
-"Developer Mode can't be enabled without the developer menu first being "
-"enabled."
-msgstr ""
-
-#: developer-menu-disabled-warning-msg-2
-msgid ""
-"Please enable it from Settings > Device Information > More Information > "
-"Developer Menu."
-msgstr ""
-
-#: enable-full-dev-mode-first-warning-title
-msgid "Would you like to enable developer mode?"
-msgstr ""
-
-#: enable-full-dev-mode-first-warning-msg-1
-msgid "THIS WILL DELETE ALL YOUR DATA AND FACTORY RESET YOUR DEVICE."
-msgstr ""
-
-#: enable-full-dev-mode-first-warning-msg-2
-msgid "THIS WILL DISABLE ALL SECURITY MEASURES ON YOUR DEVICE."
-msgstr ""
-
-#: enable-full-dev-mode-final-warning-title
-msgid "Are you sure you want to enable developer mode?"
-msgstr ""
-
-#: enable-full-dev-mode-final-warning-msg
-msgid "{[ plural(count) ]}"
-msgstr ""
-
-#: enable-full-dev-mode-final-warning-msg[one]
-msgid "Tap 'Enable' {{count}} more time to continue."
-msgstr ""
-
-#: enable-full-dev-mode-final-warning-msg[two]
-msgctxt "enable-full-dev-mode-final-warning-msg[two]"
-msgid "Tap 'Enable' {{count}} more times to continue."
-msgstr ""
-
-#: enable-full-dev-mode-final-warning-msg[few]
-msgctxt "enable-full-dev-mode-final-warning-msg[few]"
-msgid "Tap 'Enable' {{count}} more times to continue."
-msgstr ""
-
-#: enable-full-dev-mode-final-warning-msg[many]
-msgctxt "enable-full-dev-mode-final-warning-msg[many]"
-msgid "Tap 'Enable' {{count}} more times to continue."
-msgstr ""
-
-#: enable-full-dev-mode-final-warning-msg[other]
-msgctxt "enable-full-dev-mode-final-warning-msg[other]"
-msgid "Tap 'Enable' {{count}} more times to continue."
+msgid "Window management"
 msgstr ""
 
 #. # Device :: Downloads
@@ -4576,8 +4201,6 @@ msgstr "Forigi"
 
 #. # Device :: Battery
 #: battery
-#, fuzzy
-msgctxt "battery"
 msgid "Battery"
 msgstr "Baterio"
 
@@ -4630,14 +4253,6 @@ msgstr "Ŝalti aŭtomate"
 
 #. # Device :: Accessibility
 #: accessibility
-#, fuzzy
-msgctxt "accessibility"
-msgid "Accessibility"
-msgstr "Alirebleco"
-
-#: accessibility.ariaLabel
-#, fuzzy
-msgctxt "accessibility.ariaLabel"
 msgid "Accessibility"
 msgstr "Alirebleco"
 
@@ -4741,12 +4356,6 @@ msgstr ""
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
 msgctxt "improveBrowserOS"
-msgid "Improve {{brandShortName}}"
-msgstr "Plibonigi {{brandShortName}}"
-
-#: improveBrowserOS.ariaLabel
-#, fuzzy
-msgctxt "improveBrowserOS.ariaLabel"
 msgid "Improve {{brandShortName}}"
 msgstr "Plibonigi {{brandShortName}}"
 
@@ -4922,14 +4531,16 @@ msgid ""
 "empty. Please enter some text and try again."
 msgstr ""
 
+#: feedback-errormessage-just-sent
+msgid ""
+"Sorry, the system can’t send your suggestion because you already sent us "
+"feedback. Please try our next software update and send again."
+msgstr ""
+
 #: feedback-complete-msg
 msgid ""
 "Thanks for the feedback! We use it to help create better experiences in "
 "future releases of Firefox OS."
-msgstr ""
-
-#: feedback-errormessage-unknown-error
-msgid "Something went wrong. Please try again."
 msgstr ""
 
 #. # Device :: Help
@@ -5069,14 +4680,9 @@ msgstr "Ricevi staton de kanalo"
 msgid "End of the proactive session"
 msgstr ""
 
-#: stkEntry.ariaLabel
-msgid "{{ title }}"
-msgstr ""
-
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
 #, fuzzy
-msgctxt "is-warning-storage-header"
 msgid "USB storage"
 msgstr "Konservejo USB"
 
@@ -5142,348 +4748,6 @@ msgstr ""
 msgid "{{settings-dialog-prompt}}"
 msgstr ""
 
-#: accessible-app-icon.ariaLabel
-msgid "Icon for {{ appName }} app"
-msgstr ""
-
-#. # Addongs settings
-#: addon
-msgid "Add-on"
-msgstr ""
-
-#: addons
-msgctxt "addons"
-msgid "Add-ons"
-msgstr ""
-
-#: addons.ariaLabel
-msgctxt "addons.ariaLabel"
-msgid "Add-ons"
-msgstr ""
-
-#: addons-header
-msgid "{{addons}}"
-msgstr ""
-
-#: addon-details-header1
-msgid "{{ appName }}"
-msgstr ""
-
-#: addon-enable
-msgid "Enable Add-on"
-msgstr ""
-
-#: addon-description-header
-#, fuzzy
-msgctxt "addon-description-header"
-msgid "Description"
-msgstr "Priskribo"
-
-#: addon-developer-name
-msgid "{{ developerName }}"
-msgstr ""
-
-#: addon-targets
-msgid "Affected Apps"
-msgstr ""
-
-#: addon-options
-msgctxt "addon-options"
-msgid "Options"
-msgstr ""
-
-#: addon-delete
-msgid "Delete Add-on"
-msgstr ""
-
-#: addon-share
-msgid "Share Add-on"
-msgstr ""
-
-#: addon-share-no-provider
-msgid "No sharing app available"
-msgstr ""
-
-#: addon-no-description
-msgid "This add-on does not include a description in its manifest file."
-msgstr ""
-
-#: addon-no-targets
-msgid "This add-on does not affect any installed apps."
-msgstr ""
-
-#: addon-restart-apps-to-disable
-msgid "Add-on disabled; restart affected apps."
-msgstr ""
-
-#: addon-reboot-required
-msgid ""
-"This add-on affected system apps; you must reboot your device to fully "
-"disable it."
-msgstr ""
-
-#: addon-rename
-msgid "Rename"
-msgstr ""
-
-#: addon-rename-input
-msgid "Enter add-on name"
-msgstr ""
-
-#: addon-rename-desc
-msgid "Change the name of your add-on"
-msgstr ""
-
-#: addon-obsolete
-msgid "This add-on is obsolete and does not work."
-msgstr ""
-
-#: addon-obsolete-can-delete
-msgid "This add-on is obsolete and does not work. Please delete it."
-msgstr ""
-
-#. # Achievements
-#: achievements
-msgid "Achievements"
-msgstr ""
-
-#: achievements.ariaLabel
-msgid "achievements"
-msgstr ""
-
-#: achievements-customize-champ-name
-msgid "Customize Champ"
-msgstr ""
-
-#: achievements-customize-champ-description
-msgid "Open Customizer in an app"
-msgstr ""
-
-#: achievements-add-on-all-star-name
-msgid "Add-on All-Star"
-msgstr ""
-
-#: achievements-add-on-all-star-description
-msgid "Use Customizer to create your own add-on"
-msgstr ""
-
-#: achievements-fab-finder-name
-msgid "Fab Finder"
-msgstr ""
-
-#: achievements-fab-finder-description
-msgid "Install an app or add-on from Hackerplace"
-msgstr ""
-
-#: achievements-content-commander-name
-msgid "Content Commander"
-msgstr ""
-
-#: achievements-content-commander-description
-msgid "Submit an app or add-on to Hackerplace"
-msgstr ""
-
-#: achievements-sharing-is-caring-name
-msgid "Sharing is Caring"
-msgstr ""
-
-#: achievements-sharing-is-caring-description
-msgid "Share your apps and add-ons with the Sharing app"
-msgstr ""
-
-#: achievements-creative-kind-name
-msgid "Creative Kind"
-msgstr ""
-
-#: achievements-creative-kind-description
-msgid "Use Theme Editor to create a new theme"
-msgstr ""
-
-#. # Service Workers
-#: service-workers-interception
-msgid "Intercept requests"
-msgstr ""
-
-#: service-workers-testing
-msgid "Allow over HTTP"
-msgstr ""
-
-#. # LOCALIZATION NOTE: The following strings are spoken by screen readers and not
-#. # shown on the screen.
-#: addButton.ariaLabel
-msgctxt "addButton.ariaLabel"
-msgid "Add"
-msgstr ""
-
-#: closeButton.ariaLabel
-#, fuzzy
-msgctxt "closeButton.ariaLabel"
-msgid "Close"
-msgstr "Fermi"
-
-#: changeWallpaperButton.ariaLabel
-msgid "Change wallpaper"
-msgstr ""
-
-#: editButton.ariaLabel
-#, fuzzy
-msgctxt "editButton.ariaLabel"
-msgid "Edit"
-msgstr "Redakti"
-
-#: wifiSection.ariaLabel
-#, fuzzy
-msgctxt "wifiSection.ariaLabel"
-msgid "Wi-Fi"
-msgstr "Sendrata reto"
-
-#: simManagerSection.ariaLabel
-msgctxt "simManagerSection.ariaLabel"
-msgid "SIM Manager"
-msgstr ""
-
-#: callSettingsSection.ariaLabel
-#, fuzzy
-msgctxt "callSettingsSection.ariaLabel"
-msgid "Call Settings"
-msgstr "Agordoj de vokoj"
-
-#: messagingSettingsSection.ariaLabel
-#, fuzzy
-msgctxt "messagingSettingsSection.ariaLabel"
-msgid "Messaging Settings"
-msgstr "Agordoj de mesaĝado"
-
-#: cellularAndDataSection.ariaLabel
-#, fuzzy
-msgctxt "cellularAndDataSection.ariaLabel"
-msgid "Cellular & Data"
-msgstr "Reto kaj datumoj"
-
-#: bluetoothSection.ariaLabel
-msgctxt "bluetoothSection.ariaLabel"
-msgid "Bluetooth"
-msgstr ""
-
-#: internetSharingSection.ariaLabel
-#, fuzzy
-msgctxt "internetSharingSection.ariaLabel"
-msgid "Internet Sharing"
-msgstr "Divido de retaliro"
-
-#: dateAndTimeSection.ariaLabel
-#, fuzzy
-msgctxt "dateAndTimeSection.ariaLabel"
-msgid "Date & Time"
-msgstr "Dato kaj horo"
-
-#: languageSection.ariaLabel
-#, fuzzy
-msgctxt "languageSection.ariaLabel"
-msgid "Language"
-msgstr "Lingvo"
-
-#: keyboardsSection.ariaLabel
-#, fuzzy
-msgctxt "keyboardsSection.ariaLabel"
-msgid "Keyboards"
-msgstr "Klavaroj"
-
-#: fxa-accountsSection.ariaLabel
-msgctxt "fxa-accountsSection.ariaLabel"
-msgid "Firefox Accounts"
-msgstr ""
-
-#: findmydeviceSection.ariaLabel
-msgctxt "findmydeviceSection.ariaLabel"
-msgid "Find My Device"
-msgstr ""
-
-#: screenLockSection.ariaLabel
-msgctxt "screenLockSection.ariaLabel"
-msgid "Screen Lock"
-msgstr ""
-
-#: simSecuritySection.ariaLabel
-#, fuzzy
-msgctxt "simSecuritySection.ariaLabel"
-msgid "SIM Security"
-msgstr "Sekureco de SIM"
-
-#: doNotTrackSection.ariaLabel
-#, fuzzy
-msgctxt "doNotTrackSection.ariaLabel"
-msgid "Do Not Track"
-msgstr "Ne spuri"
-
-#: privacySection.ariaLabel
-msgctxt "privacySection.ariaLabel"
-msgid "Privacy Controls"
-msgstr ""
-
-#: enableStorageSection.ariaLabel
-#, fuzzy
-msgctxt "enableStorageSection.ariaLabel"
-msgid "USB storage"
-msgstr "Konservejo USB"
-
-#: mediaStorageSection.ariaLabel
-#, fuzzy
-msgctxt "mediaStorageSection.ariaLabel"
-msgid "Media Storage"
-msgstr "Aŭdvida konservejo"
-
-#: appStorageSection.ariaLabel
-#, fuzzy
-msgctxt "appStorageSection.ariaLabel"
-msgid "Application Storage"
-msgstr "Konservejo de programoj"
-
-#: batterySection.ariaLabel
-#, fuzzy
-msgctxt "batterySection.ariaLabel"
-msgid "Battery"
-msgstr "Baterio"
-
-#~ msgid "Manage Cert."
-#~ msgstr "Adm. atestilojn"
-
-#~ msgid "Call forwarding is disabled by FDN."
-#~ msgstr "Plusendo de vokoj malaktiva pro FDN."
-
-#~ msgctxt "operator-status-connecting"
-#~ msgid "Connecting…"
-#~ msgstr "konekto…"
-
-#~ msgctxt "operator-status-connectingfailed"
-#~ msgid "Connection failed"
-#~ msgstr "malsukcesa konekto"
-
-#~ msgctxt "operator-status-connected"
-#~ msgid "Connected"
-#~ msgstr "konektita"
-
-#~ msgid "Change the name of your device as it appears in your computer"
-#~ msgstr "Ŝanĝi la nomon de via aparato kiu aperas en via komputilo"
-
-#~ msgid "The SSID cannot be empty"
-#~ msgstr "La SSID ne povas esti malplena"
-
-#~ msgid "B"
-#~ msgstr "O"
-
-#~ msgid "KB"
-#~ msgstr "KO"
-
-#~ msgid "MB"
-#~ msgstr "MO"
-
-#~ msgid "GB"
-#~ msgstr "GO"
-
-#~ msgid "TB"
-#~ msgstr "TO"
-
 #~ msgid "No imported certificate"
 #~ msgstr "Neniu importita atestilo"
 
@@ -5501,6 +4765,11 @@ msgstr "Baterio"
 #~ msgctxt "total-space"
 #~ msgid "Total space"
 #~ msgstr "Tuta spaco"
+
+#, fuzzy
+#~ msgctxt "is-warning-storage-header"
+#~ msgid "USB storage"
+#~ msgstr "Konservejo USB"
 
 #, fuzzy
 #~ msgctxt "is-warning-tethering-header"

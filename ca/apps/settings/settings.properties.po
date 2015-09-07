@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-04-27 18:45+0000\n"
 "PO-Revision-Date: 2015-05-02 09:44+0000\n"
 "Last-Translator: Jordi Serratosa <jordis@softcatala.cat>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1430559859.000000\n"
@@ -63,17 +63,11 @@ msgctxt "reset"
 msgid "Reset"
 msgstr "Reinicia"
 
-#: factory-reset
-msgid "Factory Reset"
-msgstr ""
-
 #: cancel
 msgid "Cancel"
 msgstr "Cancel·la"
 
 #: close
-#, fuzzy
-msgctxt "close"
 msgid "Close"
 msgstr "Tanca"
 
@@ -94,8 +88,6 @@ msgid "Pair"
 msgstr "Aparella"
 
 #: add
-#, fuzzy
-msgctxt "add"
 msgid "Add"
 msgstr "Afegeix"
 
@@ -154,26 +146,10 @@ msgid "Network & Connectivity"
 msgstr "Xarxa i connectivitat"
 
 #: airplaneMode
-#, fuzzy
-msgctxt "airplaneMode"
-msgid "Airplane Mode"
-msgstr "Mode d'avió"
-
-#: airplaneMode.ariaLabel
-#, fuzzy
-msgctxt "airplaneMode.ariaLabel"
 msgid "Airplane Mode"
 msgstr "Mode d'avió"
 
 #: geolocation
-#, fuzzy
-msgctxt "geolocation"
-msgid "Geolocation"
-msgstr "Geolocalització"
-
-#: geolocation.ariaLabel
-#, fuzzy
-msgctxt "geolocation.ariaLabel"
 msgid "Geolocation"
 msgstr "Geolocalització"
 
@@ -274,9 +250,8 @@ msgid "Wi-Fi Sleep"
 msgstr "Wi-Fi en repòs"
 
 #: wifi-sleep-description
-#, fuzzy
 msgid ""
-"Enable to automatically turn off Wi-Fi during sleep to save battery power."
+"Enable to automatically turn off Wi-Fi during sleep to save battery power.  "
 msgstr ""
 "Permet desactivar automàticament la connexió Wi-Fi per estalviar bateria."
 
@@ -306,19 +281,12 @@ msgid "{{manageNetworks}}"
 msgstr "{{manageNetworks}}"
 
 #: manageCertificates
-#, fuzzy
-msgid "Manage Certificates"
+msgid "Manage certificates"
 msgstr "Gestiona els certificats"
 
-#. # LOCALIZATION NOTE (manageCertificates-header): if you leave the original
-#. # en-US value "{{manageCertificates}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID
-#. # "manageCertificates".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: manageCertificates-header
-msgid "{{manageCertificates}}"
-msgstr ""
+#: manageCert
+msgid "Manage Cert."
+msgstr "Gestiona cert."
 
 # Aquí hi cap OK (la del FTU no) - jordis
 #: joinHiddenNetwork
@@ -475,8 +443,6 @@ msgid "No known networks"
 msgstr "No hi ha xarxes conegudes"
 
 #: edit
-#, fuzzy
-msgctxt "edit"
 msgid "Edit"
 msgstr "Edita"
 
@@ -489,18 +455,15 @@ msgid "No certificates imported"
 msgstr "No s'ha importat cap certificat"
 
 #: deleteCertificate
-#, fuzzy
-msgid "Delete Certificate"
+msgid "Delete certificate"
 msgstr "Elimina el certificat"
 
 #: importCertificate
-#, fuzzy
-msgid "Import Certificate"
+msgid "Import certificate"
 msgstr "Importa un certificat"
 
 #: selectCertificateFile
-#, fuzzy
-msgid "Select Certificate File"
+msgid "Select certificate file"
 msgstr "Trieu el fitxer de certificat"
 
 #: enterCertificateNickname
@@ -617,8 +580,6 @@ msgstr "Ha fallat la cancel·lació del WPS [{{error}}]"
 # (1.3) "Paràmetres" es pot ometre perquè ja apareix Paràmetres a la capçalera (és el nom de l'aplicació) i per coherència amb les altres opcions (Wi-Fi, Bluetooth, etc.) - jordis
 #. # Connectivity :: Call
 #: callSettings
-#, fuzzy
-msgctxt "callSettings"
 msgid "Call Settings"
 msgstr "Trucades"
 
@@ -730,7 +691,7 @@ msgstr "Desvia si estic il·localitzable"
 msgid "When unreachable"
 msgstr "Si estic il·localitzable"
 
-#: callForwardingForwardingVoiceToNumber
+#: callForwardingForwardingVoiceToNumber.innerHTML
 msgid "Voice calls to <bdi>{{number}}</bdi>"
 msgstr "Trucades de veu al <bdi>{{number}}</bdi>"
 
@@ -1015,6 +976,12 @@ msgstr ""
 msgid "The PIN2 code is incorrect."
 msgstr "El codi PIN2 és incorrecte."
 
+#: fdn-enabled-warning
+msgid "Call forwarding is disabled by FDN."
+msgstr ""
+"La desviació de trucades no està disponible perquè la funció de números "
+"prefixats està activada."
+
 #: fdnContact-name
 msgid "name"
 msgstr "nom"
@@ -1058,8 +1025,6 @@ msgstr ""
 # (1.3) "Paràmetres" es pot ometre perquè ja apareix Paràmetres a la capçalera (és el nom de l'aplicació) i per coherència amb les altres opcions (Wi-Fi, Bluetooth, etc.) - jordis
 #. # Connectivity :: Messaging
 #: messagingSettings
-#, fuzzy
-msgctxt "messagingSettings"
 msgid "Messaging Settings"
 msgstr "Missatges"
 
@@ -1092,9 +1057,13 @@ msgstr "Informes de lectura"
 msgid "Request read report for each message sent"
 msgstr "Sol·licita l'informe de lectura de cada missatge enviat"
 
-#: mmsTitle
-msgid "Multimedia Messaging (MMS)"
-msgstr "Missatges multimèdia (MMS)"
+#. # LOCALIZATION NOTE (mmsTitle): LRE (&#x202a;) and PDF (&#x202c;)
+#. # force the proper directionality of parentheses at the end of the string
+#. # regardless of the direction of the surrounding layout. Remove them only
+#. # if the translation puts them between other text.
+#: mmsTitle.innerHTML
+msgid "&#x202a;Multimedia Messaging (MMS)&#x202c;"
+msgstr "&#x202a;Missatges multimèdia (MMS)&#x202c;"
 
 #: auto-retrieve
 msgid "Auto Retrieve"
@@ -1160,8 +1129,6 @@ msgstr "Cap informació disponible"
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
-#, fuzzy
-msgctxt "cellularAndData"
 msgid "Cellular & Data"
 msgstr "Xarxa mòbil i dades"
 
@@ -1266,11 +1233,6 @@ msgstr "Preferible WCDMA"
 msgid "Auto (2G/3G)"
 msgstr "Automàtic (2G/3G)"
 
-#: operator-networkType-auto-3G-4G
-#, fuzzy
-msgid "Auto (3G/4G)"
-msgstr "Automàtic (2G/3G)"
-
 #: operator-networkType-auto-CDMA-EVDO
 msgid "Auto (CDMA/EVDO)"
 msgstr "Automàtic (CDMA/EVDO)"
@@ -1281,11 +1243,6 @@ msgstr "Automàtic (WCDMA/GSM)"
 
 #: operator-networkType-auto-LTE-WCDMA-GSM
 msgid "Auto (LTE/WCDMA/GSM)"
-msgstr "Automàtic (LTE/WCDMA/GSM)"
-
-#: operator-networkType-auto-LTE-WCDMA
-#, fuzzy
-msgid "Auto (LTE/WCDMA)"
 msgstr "Automàtic (LTE/WCDMA/GSM)"
 
 #: operator-networkType-auto-LTE-CDMA-EVDO
@@ -1313,49 +1270,20 @@ msgstr "Manual"
 msgid "Turn automatic selection off to view available network operators."
 msgstr "Desactiveu la selecció automàtica per veure els operadors de xarxa."
 
-#: operator-info-connecting
-#, fuzzy
-msgctxt "operator-info-connecting"
+#: operator-status-connecting
+msgctxt "operator-status-connecting"
 msgid "Connecting…"
 msgstr "S'està connectant…"
 
-#: operator-info-failed
-#, fuzzy
-msgctxt "operator-info-failed"
+#: operator-status-connectingfailed
+msgctxt "operator-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Ha fallat la connexió"
 
-# Femení perquè es refereix a una xarxa wi-fi - jordis
-#: operator-info-connected
-#, fuzzy
-msgctxt "operator-info-connected"
+#: operator-status-connected
+msgctxt "operator-status-connected"
 msgid "Connected"
-msgstr "Connectada"
-
-#: operator-info-available
-#, fuzzy
-msgctxt "operator-info-available"
-msgid "Available"
-msgstr "Disponible"
-
-# Femení perquè es refereix a una xarxa wi-fi - jordis
-#: operator-info-current
-#, fuzzy
-msgctxt "operator-info-current"
-msgid "Connected"
-msgstr "Connectada"
-
-#: operator-info-forbidden
-#, fuzzy
-msgctxt "operator-info-forbidden"
-msgid "Forbidden"
-msgstr "Prohibit"
-
-#: operator-info-unknown
-#, fuzzy
-msgctxt "operator-info-unknown"
-msgid "Unknown state"
-msgstr "Estat desconegut"
+msgstr "Connectat"
 
 #: operator-roamingPreference
 msgid "Roaming preference"
@@ -1465,21 +1393,6 @@ msgstr "Paràmetres d'IMS"
 #: imsSettings-header2
 msgid "{{imsSettings}}"
 msgstr "{{imsSettings}}"
-
-#: fotaSettings
-msgid "FOTA Settings"
-msgstr ""
-
-# És capçalera. restricció d'espai (1.3) - jordis
-#. # LOCALIZATION NOTE (fotaSettings-header): if you leave the original
-#. # en-US value "{{fotaSettings}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "fotaSettings".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: fotaSettings-header
-#, fuzzy
-msgid "{{fotaSettings}}"
-msgstr "Dades"
 
 #: apn-editor-header
 msgid "APN Editor"
@@ -1611,14 +1524,10 @@ msgstr ""
 "l'acció."
 
 #: state-unknown
-#, fuzzy
-msgctxt "state-unknown"
 msgid "Unknown state"
 msgstr "Estat desconegut"
 
 #: state-available
-#, fuzzy
-msgctxt "state-available"
 msgid "Available"
 msgstr "Disponible"
 
@@ -1633,8 +1542,6 @@ msgid "Connected"
 msgstr "Connectat"
 
 #: state-forbidden
-#, fuzzy
-msgctxt "state-forbidden"
 msgid "Forbidden"
 msgstr "Prohibit"
 
@@ -1662,8 +1569,6 @@ msgstr "Reinici dels paràmetres d'APN"
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
-#, fuzzy
-msgctxt "bluetooth"
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -1822,13 +1727,9 @@ msgstr "Reanomena el meu dispositiu"
 msgid "Unknown device"
 msgstr "Dispositiu desconegut"
 
-#: change-btdevice-name
-msgid "Change device name"
-msgstr ""
-
-#: change-btdevice-name-desc
-msgid "This name will appear on your other Bluetooth devices"
-msgstr ""
+#: change-phone-name-desc
+msgid "Change the name of your device as it appears in your computer"
+msgstr "Canvieu el nom del dispositiu que es mostra a l'ordinador"
 
 #: bluetooth-new-name
 msgid "New name"
@@ -1871,29 +1772,17 @@ msgid ""
 msgstr ""
 "Esteu connectat al dispositiu. En desaparellar-lo també us desconnectareu."
 
-#: unpair-confirm
-msgid ""
-"{{unpair-title}}\n"
-"{{unpair-msg}}"
-msgstr ""
-
 #. # Connectivity :: NFC
 #: nfc
-#, fuzzy
-msgctxt "nfc"
-msgid "NFC"
-msgstr "NFC"
-
-#: nfc.ariaLabel
-#, fuzzy
-msgctxt "nfc.ariaLabel"
 msgid "NFC"
 msgstr "NFC"
 
 #. # Connectivity :: Internet Sharing
+#: SSIDCannotBeEmpty
+msgid "The SSID cannot be empty"
+msgstr "L'SSID no pot estar en blanc"
+
 #: internetSharing
-#, fuzzy
-msgctxt "internetSharing"
 msgid "Internet Sharing"
 msgstr "Compartició d'Internet"
 
@@ -1975,7 +1864,7 @@ msgstr "Punt d'accés"
 msgid "SSID Network Name"
 msgstr "Nom de xarxa SSID"
 
-#: hotspot-security-open
+#: hotspot-open
 msgid "open"
 msgstr "oberta"
 
@@ -1986,8 +1875,8 @@ msgstr "oberta"
 #. # and PDF (&#x202c;) entities to these translations to force the correct direction.
 #. #
 #. # RTL locales should have a translation similar to this:
-#. # hotspot-wpa-psk= &#x202a;WPA (TKIP)&#x202c;
-#. # hotspot-wpa2-psk= &#x202a;WPA2 (AES)&#x202c;
+#. # hotspot-wpa-psk.innerHTML= &#x202a;WPA (TKIP)&#x202c;
+#. # hotspot-wpa2-psk.innerHTML= &#x202a;WPA2 (AES)&#x202c;
 #. #
 #. # [More details]
 #. #
@@ -1998,13 +1887,17 @@ msgstr "oberta"
 #. # automatically in a wrong way by browser. Because from engineering side,
 #. # we can only change settings.ar.properties, for localizers, please remember to
 #. # put them in the other RTL languages.
-#: hotspot-security-wpa-psk
-msgid "WPA"
-msgstr ""
+#. #
+#. # Additionally, in order to make this hack work, we got some help from l10n.js
+#. # that we need to put these strings inside "KEY".innerHTML, so that's the
+#. # reason why these two strings below would be suffixed with ".innerHTML"
+#: hotspot-wpa-psk.innerHTML
+msgid "WPA (TKIP)"
+msgstr "WPA (TKIP)"
 
-#: hotspot-security-wpa2-psk
-msgid "WPA2"
-msgstr ""
+#: hotspot-wpa2-psk.innerHTML
+msgid "WPA2 (AES)"
+msgstr "WPA2 (AES)"
 
 #: hotspot-password-desc
 msgid "The password must have at least 8 characters."
@@ -2019,14 +1912,6 @@ msgstr "Personalització"
 
 #. # Personalization :: Sound
 #: sound
-#, fuzzy
-msgctxt "sound"
-msgid "Sound"
-msgstr "So"
-
-#: sound.ariaLabel
-#, fuzzy
-msgctxt "sound.ariaLabel"
 msgid "Sound"
 msgstr "So"
 
@@ -2114,14 +1999,6 @@ msgstr "No s'ha pogut trobar cap aplicació per gestionar els tons de trucada!"
 
 #. # Personalization :: Display
 #: display
-#, fuzzy
-msgctxt "display"
-msgid "Display"
-msgstr "Pantalla"
-
-#: display.ariaLabel
-#, fuzzy
-msgctxt "display.ariaLabel"
 msgid "Display"
 msgstr "Pantalla"
 
@@ -2180,14 +2057,6 @@ msgstr "Bloqueja l'orientació"
 
 #. # Personalization :: Navigation
 #: navigation
-#, fuzzy
-msgctxt "navigation"
-msgid "Navigation"
-msgstr "Navegació"
-
-#: navigation.ariaLabel
-#, fuzzy
-msgctxt "navigation.ariaLabel"
 msgid "Navigation"
 msgstr "Navegació"
 
@@ -2213,14 +2082,6 @@ msgstr ""
 
 #. # Personalization :: Notifications
 #: notifications
-#, fuzzy
-msgctxt "notifications"
-msgid "Notifications"
-msgstr "Notificacions"
-
-#: notifications.ariaLabel
-#, fuzzy
-msgctxt "notifications.ariaLabel"
 msgid "Notifications"
 msgstr "Notificacions"
 
@@ -2244,8 +2105,6 @@ msgstr "Mostra en reiniciar"
 
 #. # Personalization :: Date & Time
 #: dateAndTime
-#, fuzzy
-msgctxt "dateAndTime"
 msgid "Date & Time"
 msgstr "Data i hora"
 
@@ -2309,8 +2168,6 @@ msgid "Language & Region"
 msgstr "Llengua i regió"
 
 #: language
-#, fuzzy
-msgctxt "language"
 msgid "Language"
 msgstr "Llengua"
 
@@ -2348,8 +2205,6 @@ msgstr "%d %Eb de %Y"
 
 #. # Personalization :: Sim cards manager
 #: simManager
-#, fuzzy
-msgctxt "simManager"
 msgid "SIM Manager"
 msgstr "Gestor de targetes SIM"
 
@@ -2428,12 +2283,6 @@ msgctxt "homescreen"
 msgid "Homescreen"
 msgstr "Pantalla d'inici"
 
-#: homescreen.ariaLabel
-#, fuzzy
-msgctxt "homescreen.ariaLabel"
-msgid "Homescreen"
-msgstr "Pantalla d'inici"
-
 #: vertical-homescreen-header
 msgctxt "vertical-homescreen-header"
 msgid "Homescreen"
@@ -2464,12 +2313,6 @@ msgctxt "search"
 msgid "Search"
 msgstr "Cerca"
 
-#: search.ariaLabel
-#, fuzzy
-msgctxt "search.ariaLabel"
-msgid "Search"
-msgstr "Cerca"
-
 #: search-header
 msgctxt "search-header"
 msgid "Search"
@@ -2495,14 +2338,6 @@ msgstr ""
 
 #. # Personalization :: Homescreens
 #: homescreens
-#, fuzzy
-msgctxt "homescreens"
-msgid "Homescreens"
-msgstr "Pantalles d'inici"
-
-#: homescreens.ariaLabel
-#, fuzzy
-msgctxt "homescreens.ariaLabel"
 msgid "Homescreens"
 msgstr "Pantalles d'inici"
 
@@ -2526,8 +2361,6 @@ msgid "Change"
 msgstr "Canvia"
 
 #: description
-#, fuzzy
-msgctxt "description"
 msgid "Description"
 msgstr "Descripció"
 
@@ -2541,8 +2374,6 @@ msgid "Selected Keyboards"
 msgstr "Teclats actius"
 
 #: keyboards
-#, fuzzy
-msgctxt "keyboards"
 msgid "Keyboards"
 msgstr "Teclats"
 
@@ -2610,14 +2441,6 @@ msgstr "{{appName}}: {{layoutName}} és el mètode d'entrada per defecte"
 
 #. # Personalization :: Themes
 #: themes
-#, fuzzy
-msgctxt "themes"
-msgid "Themes"
-msgstr "Temes"
-
-#: themes.ariaLabel
-#, fuzzy
-msgctxt "themes.ariaLabel"
 msgid "Themes"
 msgstr "Temes"
 
@@ -2687,10 +2510,16 @@ msgstr "Confirmació de cancel·lació del compte"
 msgid "A verification link has been sent to {{email}}."
 msgstr "S'ha enviat un enllaç de verificació a {{email}}."
 
-#: fxa-dont-see-email-resend
-#, fuzzy
-msgid "Don’t see an email? <a>Resend</a>."
+#. # LOCALIZATION NOTE (fxa-dont-see-email): the "{{resend}}" placeholder
+#. # will be replaced with a link containing the string with ID "fxa-resend":
+#. # "Don't see an email? <a>Resend</a>."
+#: fxa-dont-see-email
+msgid "Don’t see an email? {{resend}}."
 msgstr "No ha arribat el missatge? {{resend}}."
+
+#: fxa-resend
+msgid "Resend"
+msgstr "Torna'l a enviar"
 
 #. # Panel: logged in, verified
 #: fxa-about
@@ -2716,8 +2545,6 @@ msgid "Find My Device"
 msgstr "Troba el meu aparell"
 
 #: fxa-options
-#, fuzzy
-msgctxt "fxa-options"
 msgid "Options"
 msgstr "Opcions"
 
@@ -2799,8 +2626,6 @@ msgid "Passcode: {{code}}"
 msgstr "Codi d'accés: {{code}}"
 
 #: screenLock
-#, fuzzy
-msgctxt "screenLock"
 msgid "Screen Lock"
 msgstr "Bloqueig de pantalla"
 
@@ -2813,17 +2638,7 @@ msgstr "Bloqueig de pantalla"
 msgid "{{screenLock}}"
 msgstr "{{screenLock}}"
 
-#: screenLock-enabled-with-no-passcode
-msgid "Enabled with no passcode"
-msgstr ""
-
-#: screenLock-enabled-with-passcode
-msgid "Enabled with passcode"
-msgstr ""
-
 #: simSecurity
-#, fuzzy
-msgctxt "simSecurity"
 msgid "SIM Security"
 msgstr "Seguretat de la SIM"
 
@@ -2839,15 +2654,6 @@ msgstr "{{simSecurity}}"
 # Restricció d'espai - jordis
 #. # Security :: App permissions
 #: appPermissions
-#, fuzzy
-msgctxt "appPermissions"
-msgid "App Permissions"
-msgstr "Permisos d'aplicacions"
-
-# Restricció d'espai - jordis
-#: appPermissions.ariaLabel
-#, fuzzy
-msgctxt "appPermissions.ariaLabel"
 msgid "App Permissions"
 msgstr "Permisos d'aplicacions"
 
@@ -3306,8 +3112,6 @@ msgstr "S'ha produït un error desconegut"
 
 #. # Security :: Do Not Track
 #: doNotTrack
-#, fuzzy
-msgctxt "doNotTrack"
 msgid "Do Not Track"
 msgstr "No vull ser seguit"
 
@@ -3360,14 +3164,6 @@ msgstr ""
 
 #. # Security :: Browsing Privacy
 #: browsingPrivacy
-#, fuzzy
-msgctxt "browsingPrivacy"
-msgid "Browsing Privacy"
-msgstr "Privadesa de navegació"
-
-#: browsingPrivacy.ariaLabel
-#, fuzzy
-msgctxt "browsingPrivacy.ariaLabel"
 msgid "Browsing Privacy"
 msgstr "Privadesa de navegació"
 
@@ -3409,14 +3205,11 @@ msgstr "Esborra"
 
 #. # Security :: Privacy Panel
 #: privacy-controls
-#, fuzzy
-msgctxt "privacy-controls"
 msgid "Privacy Controls"
 msgstr "Controls de privadesa"
 
-#: no-privacy-controls
-#, fuzzy
-msgid "No privacy controls app found"
+#: no-privacy-panel
+msgid "No privacy panel app found"
 msgstr "No s'ha trobat cap aplicació de control de privadesa"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3438,8 +3231,6 @@ msgstr "Desconnecteu el cable USB"
 
 # Restricció d'espai - jordis
 #: appStorage
-#, fuzzy
-msgctxt "appStorage"
 msgid "Application Storage"
 msgstr "Espai per a aplicacions"
 
@@ -3451,6 +3242,26 @@ msgstr "Espai per a aplicacions"
 #: appStorage-header
 msgid "{{appStorage}}"
 msgstr "{{appStorage}}"
+
+#: byteUnit-B
+msgid "B"
+msgstr "B"
+
+#: byteUnit-KB
+msgid "KB"
+msgstr "kB"
+
+#: byteUnit-MB
+msgid "MB"
+msgstr "MB"
+
+#: byteUnit-GB
+msgid "GB"
+msgstr "GB"
+
+#: byteUnit-TB
+msgid "TB"
+msgstr "TB"
 
 #: storageSize
 msgid "{{size}} {{unit}}"
@@ -3522,20 +3333,16 @@ msgid "Transfer Protocol"
 msgstr "Mode de transferència"
 
 #: protocol-mtp
-#, fuzzy
-msgid "Media Transfer Protocol (MTP)"
+msgid "Media transfer protocol (MTP)"
 msgstr "Protocol de transferència multimèdia (MTP)"
 
 #: protocol-ums
-#, fuzzy
-msgid "USB Mass Storage (UMS)"
+msgid "USB mass Storage (UMS)"
 msgstr "Mode de disc USB (UMS)"
 
 # Restricció d'espai - jordis
 #. # Storage :: Media storage
 #: mediaStorage
-#, fuzzy
-msgctxt "mediaStorage"
 msgid "Media Storage"
 msgstr "Espai per a multimèdia"
 
@@ -3705,23 +3512,6 @@ msgstr "Formata"
 msgid "SD card unmounted"
 msgstr "S'ha desmuntat la targeta SD"
 
-#: ums-partial-support-warning-title
-msgid "Warning: USB Mass Storage may not work"
-msgstr ""
-
-#: ums-partial-support-warning-msg-1
-msgid ""
-"USB Mass Storage will only work correctly with an external SD card. If you'd "
-"like to be able to access both your internal and external storage, you must "
-"use MTP."
-msgstr ""
-
-#: ums-partial-support-warning-msg-2
-msgid ""
-"Press \"OK\" to switch to USB Mass Storage, or \"Cancel\" to remain in MTP "
-"mode."
-msgstr ""
-
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Device
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3734,24 +3524,9 @@ msgctxt "help"
 msgid "Help"
 msgstr "Ajuda"
 
-#: help.ariaLabel
-#, fuzzy
-msgctxt "help.ariaLabel"
-msgid "Help"
-msgstr "Ajuda"
-
 # Restricció d'espai - jordis
 #. # Device :: Information
 #: deviceInfo
-#, fuzzy
-msgctxt "deviceInfo"
-msgid "Device Information"
-msgstr "Informació del dispositiu"
-
-# Restricció d'espai - jordis
-#: deviceInfo.ariaLabel
-#, fuzzy
-msgctxt "deviceInfo.ariaLabel"
 msgid "Device Information"
 msgstr "Informació del dispositiu"
 
@@ -3769,7 +3544,7 @@ msgstr "Dispositiu"
 msgid "IMEI"
 msgstr "IMEI"
 
-#: deviceInfo-IMEI-with-index
+#: deviceInfo-IMEI-with-index.innerHTML
 msgid "IMEI {{index}}: <bdi>{{imei}}</bdi>"
 msgstr "IMEI {{index}}: <bdi>{{imei}}</bdi>"
 
@@ -3777,7 +3552,7 @@ msgstr "IMEI {{index}}: <bdi>{{imei}}</bdi>"
 msgid "ICCID"
 msgstr "ICCID"
 
-#: deviceInfo-ICCID-with-index
+#: deviceInfo-ICCID-with-index.innerHTML
 msgid "SIM {{index}}: <bdi>{{iccid}}</bdi>"
 msgstr "SIM {{index}}: <bdi>{{iccid}}</bdi>"
 
@@ -3785,7 +3560,7 @@ msgstr "SIM {{index}}: <bdi>{{iccid}}</bdi>"
 msgid "Phone Number"
 msgstr "Número de telèfon"
 
-#: deviceInfo-MSISDN-with-index
+#: deviceInfo-MSISDN-with-index.innerHTML
 msgid "SIM {{index}}: <bdi>{{msisdn}}</bdi>"
 msgstr "SIM {{index}}: <bdi>{{msisdn}}</bdi>"
 
@@ -3794,14 +3569,6 @@ msgid "SIM {{index}}: Not available"
 msgstr "SIM {{index}}: No disponible"
 
 #: downloads
-#, fuzzy
-msgctxt "downloads"
-msgid "Downloads"
-msgstr "Baixades"
-
-#: downloads.ariaLabel
-#, fuzzy
-msgctxt "downloads.ariaLabel"
 msgid "Downloads"
 msgstr "Baixades"
 
@@ -3826,6 +3593,269 @@ msgstr "SIM {{index}}: Desconegut"
 msgid "Git Commit Info"
 msgstr "Informació de commit del Git"
 
+#: developer
+msgid "Developer"
+msgstr "Desenvolupador"
+
+#. # LOCALIZATION NOTE (developer-header): if you leave the original
+#. # en-US value "{{developer}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "developer".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: developer-header
+msgid "{{developer}}"
+msgstr "{{developer}}"
+
+# CAL COMPROVAR (1.4) [també botó i header] - jordis
+#: hud-settings-button
+msgid "Developer HUD"
+msgstr "Informació per al desenvolupador"
+
+# CAL COMPROVAR (2.1) Restricció d'espai - jordis
+#. # LOCALIZATION NOTE (hud-settings-header): if you leave the original en-US value
+#. # "{{hud-settings-button}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-settings-button". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-settings-header
+msgid "{{hud-settings-button}}"
+msgstr "Info. desenvolupador"
+
+#: hud-devtools
+msgid "Developer tools"
+msgstr "Eines de desenvolupament"
+
+#. # LOCALIZATION NOTE (hud-devtools-header): if you leave the original en-US
+#. # value "{{hud-devtools}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-devtools". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-devtools-header
+msgid "{{hud-devtools}}"
+msgstr "{{hud-devtools}}"
+
+#: hud-logging
+msgid "Log changes in ADB"
+msgstr "Registra els canvis a ADB"
+
+#: hud-system
+msgid "Show system HUD"
+msgstr "Mostra el HUD del sistema"
+
+#: hud-problems
+msgid "Problems"
+msgstr "Problemes"
+
+#: hud-warnings
+msgid "Warnings"
+msgstr "Avisos"
+
+#: hud-errors
+msgid "Errors"
+msgstr "Errors"
+
+#: hud-security
+msgid "Security issues"
+msgstr "Problemes de seguretat"
+
+#: hud-performance
+msgid "Performance"
+msgstr "Rendiment"
+
+#: hud-reflows
+msgid "Reflows"
+msgstr "Reajustaments"
+
+# sembla que és un terme de desenvolupadors - jordis
+#: hud-jank
+msgid "Jank"
+msgstr "Jank"
+
+#: jank-threshold
+msgid "Jank Threshold"
+msgstr "Llindar de Jank"
+
+#: hud-fps
+msgid "Frames per second"
+msgstr "Fotogrames/segon"
+
+#: hud-ttl
+msgid "Time to load"
+msgstr "Temps de càrrega"
+
+#: hud-memory
+msgid "Memory"
+msgstr "Memòria"
+
+#: hud-uss
+msgid "Unique Set Size"
+msgstr "Mida del conjunt únic"
+
+#: hud-appmemory
+msgid "App memory"
+msgstr "Memòria d'aplicació"
+
+#: hud-jsobjects
+msgid "JS objects"
+msgstr "Objectes JS"
+
+#: hud-jsstrings
+msgid "JS strings"
+msgstr "Cadenes JS"
+
+#: hud-jsother
+msgid "JS other"
+msgstr "Altres JS"
+
+#: hud-dom
+msgid "DOM"
+msgstr "DOM"
+
+#: hud-style
+msgid "Style"
+msgstr "Estil"
+
+#: hud-other
+msgctxt "hud-other"
+msgid "Other"
+msgstr "Altres"
+
+#: software
+msgid "Software"
+msgstr "Programari"
+
+#: devSettings
+msgid "Developer Settings"
+msgstr "Paràmetres per a desenvolupadors"
+
+#: debug
+msgid "Debug"
+msgstr "Depuració"
+
+# Restriccions d'espai (1.3) Hi cap OK. BUG: https://bugzilla.mozilla.org/show_bug.cgi?id=968934 - jordis
+#: developer-menu
+msgid "Developer Menu"
+msgstr "Menú de desenvolupador"
+
+#: developer-tools
+msgid "Developer Tools"
+msgstr "Eines de desenvolupament"
+
+#: graphics
+msgid "Graphics"
+msgstr "Gràfics"
+
+#: hardware-composer
+msgid "Hardware composer"
+msgstr "Compon per programari"
+
+#: paint-flashing
+msgid "Flash repainted area"
+msgstr "Ressalta àrea actualitzada"
+
+#: dumps-layers
+msgid "Dump layers tree"
+msgstr "Aboca l'arbre de capes"
+
+#: dumps-layerscope
+msgid "Dump layerscope"
+msgstr "Aboca l'àmbit de capes"
+
+#: apz-overscroll
+msgid "Overscrolling"
+msgstr "Sobredesplaçament"
+
+#: tiling
+msgid "Tiling"
+msgstr "Mosaic"
+
+#: low-precision
+msgid "Low-precision painting"
+msgstr "Dibuixos de baixa precisió"
+
+#: low-opacity
+msgid "Low-precision transparency"
+msgstr "Transparència de baixa precisió"
+
+#: draw-tile-borders
+msgid "Draw tile borders"
+msgstr "Dibuixa vores del mosaic"
+
+#: draw-layer-borders
+msgid "Draw layer borders"
+msgstr "Dibuixa vores de les capes"
+
+# Restriccions d'espai - jordis
+#: log-animations
+msgid "Log slow animations"
+msgstr "Reg. animacions lentes"
+
+#: remote-debugging-usb
+msgid "Debugging via USB"
+msgstr "Depuració per USB"
+
+#: dev-tools-wifi
+msgid "DevTools via Wi-Fi"
+msgstr "DevTools per Wi-Fi"
+
+#: dev-tools-qps
+msgid "Pseudo-localization"
+msgstr "Pseudolocalització"
+
+# Femení perquè aquí es refereix a "depuració" (1.4) - jordis
+#: debugger-disabled
+msgctxt "debugger-disabled"
+msgid "Disabled"
+msgstr "Desactivat"
+
+#: debugger-adb-only
+msgid "ADB only"
+msgstr "Només ADB"
+
+#: debugger-adb-and-devtools
+msgid "ADB and DevTools"
+msgstr "ADB i DevTools"
+
+#: wifi-debugging
+msgid "Wi-Fi output in ADB"
+msgstr "Sortida Wi-Fi a ADB"
+
+#: bluetooth-debugging
+msgid "Bluetooth output in ADB"
+msgstr "Sortida Bluetooth a ADB"
+
+#: nfc-debugging
+msgid "NFC output in ADB"
+msgstr "Sortida NFC a ADB"
+
+#: ril-debugging
+msgid "RIL output in ADB"
+msgstr "Sortida RIL a ADB"
+
+#: console-enabled
+msgid "Console enabled"
+msgstr "Consola activada"
+
+#: cards-view-screenshots
+msgid "Cards View: Screenshots"
+msgstr "Visualització de targetes: captures de pantalla"
+
+#: geolocation-debugging-enabled
+msgid "Geolocation output in ADB"
+msgstr "Sortida geolocalització a ADB"
+
+#: geolocation-debugging-gps-locations-ignored
+msgid "Ignore GPS locations"
+msgstr "Ignora ubicacions del GPS"
+
+#: use-reviewer-certs
+msgid "Use Marketplace reviewer certs"
+msgstr "Utilitza certificats de revisor del Marketplace"
+
+#: shake-to-log
+msgid "Shake to save system log"
+msgstr "Agita per desar el registre del sistema"
+
 #: model-name
 msgid "Model"
 msgstr "Model"
@@ -3837,14 +3867,6 @@ msgstr "Versió del sistema operatiu"
 #: firmware_revision
 msgid "Firmware Revision"
 msgstr "Revisió del microprogramari"
-
-#: hardware_manufacturer
-msgid "Hardware Manufacturer"
-msgstr ""
-
-#: hardware_platform
-msgid "Hardware Platform"
-msgstr ""
 
 #: hardware_revision
 msgid "Hardware Revision"
@@ -3968,6 +3990,21 @@ msgstr "Reinicia"
 
 #: reset-warning-title
 msgctxt "reset-warning-title"
+msgid "CAUTION"
+msgstr "PRECAUCIÓ"
+
+#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
+#. # full DevTools access.
+#: unlock-privileges
+msgid "Unlock Privileges"
+msgstr "Desbloca privilegis"
+
+#: reset-devtools
+msgid "Reset and enable full DevTools"
+msgstr "Reinicialitza i activa DevTools"
+
+#: reset-devtools-warning-title
+msgctxt "reset-devtools-warning-title"
 msgid "CAUTION"
 msgstr "PRECAUCIÓ"
 
@@ -4142,343 +4179,6 @@ msgstr "Llicència pública de Mozilla 2.0"
 msgid "Apache License 2.0"
 msgstr "Llicència Apache 2.0"
 
-#. # Device :: Developer
-#: developer
-#, fuzzy
-msgctxt "developer"
-msgid "Developer"
-msgstr "Desenvolupador"
-
-#: developer.ariaLabel
-#, fuzzy
-msgctxt "developer.ariaLabel"
-msgid "Developer"
-msgstr "Desenvolupador"
-
-#. # LOCALIZATION NOTE (developer-header): if you leave the original
-#. # en-US value "{{developer}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "developer".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: developer-header
-msgid "{{developer}}"
-msgstr "{{developer}}"
-
-# CAL COMPROVAR (1.4) [també botó i header] - jordis
-#: hud-settings-button
-msgid "Developer HUD"
-msgstr "Informació per al desenvolupador"
-
-# CAL COMPROVAR (2.1) Restricció d'espai - jordis
-#. # LOCALIZATION NOTE (hud-settings-header): if you leave the original en-US value
-#. # "{{hud-settings-button}}" in the following string, the localization will be
-#. # automatically picked from the existing string with ID "hud-settings-button". If you
-#. # need to adapt your localizations to the available space in headers or
-#. # buttons, you can use different strings here.
-#: hud-settings-header
-msgid "{{hud-settings-button}}"
-msgstr "Info. desenvolupador"
-
-#: hud-devtools
-#, fuzzy
-msgctxt "hud-devtools"
-msgid "Developer Tools"
-msgstr "Eines de desenvolupament"
-
-#. # LOCALIZATION NOTE (hud-devtools-header): if you leave the original en-US
-#. # value "{{hud-devtools}}" in the following string, the localization will be
-#. # automatically picked from the existing string with ID "hud-devtools". If you
-#. # need to adapt your localizations to the available space in headers or
-#. # buttons, you can use different strings here.
-#: hud-devtools-header
-msgid "{{hud-devtools}}"
-msgstr "{{hud-devtools}}"
-
-#: hud-hide
-msgid "Hide All HUD Elements"
-msgstr ""
-
-#: hud-logging
-#, fuzzy
-msgid "Log Changes in ADB"
-msgstr "Registra els canvis a ADB"
-
-#: hud-system
-#, fuzzy
-msgid "Show System HUD"
-msgstr "Mostra el HUD del sistema"
-
-#: hud-problems
-msgid "Problems"
-msgstr "Problemes"
-
-#: hud-warnings
-msgid "Warnings"
-msgstr "Avisos"
-
-#: hud-errors
-msgid "Errors"
-msgstr "Errors"
-
-#: hud-security
-#, fuzzy
-msgid "Security Issues"
-msgstr "Problemes de seguretat"
-
-#: hud-performance
-msgid "Performance"
-msgstr "Rendiment"
-
-#: hud-reflows
-msgid "Reflows"
-msgstr "Reajustaments"
-
-# sembla que és un terme de desenvolupadors - jordis
-#: hud-jank
-msgid "Jank"
-msgstr "Jank"
-
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Llindar de Jank"
-
-#: hud-fps
-#, fuzzy
-msgid "Frames per Second"
-msgstr "Fotogrames/segon"
-
-#: hud-ttl
-#, fuzzy
-msgid "Time to Load"
-msgstr "Temps de càrrega"
-
-#: hud-memory
-msgid "Memory"
-msgstr "Memòria"
-
-#: hud-uss
-msgid "Unique Set Size"
-msgstr "Mida del conjunt únic"
-
-#: hud-appmemory
-#, fuzzy
-msgid "App Memory"
-msgstr "Memòria d'aplicació"
-
-#: hud-jsobjects
-#, fuzzy
-msgid "JS Objects"
-msgstr "Objectes JS"
-
-#: hud-jsstrings
-#, fuzzy
-msgid "JS Strings"
-msgstr "Cadenes JS"
-
-#: hud-jsother
-#, fuzzy
-msgid "JS Other"
-msgstr "Altres JS"
-
-#: hud-dom
-msgid "DOM"
-msgstr "DOM"
-
-#: hud-style
-msgid "Style"
-msgstr "Estil"
-
-#: hud-other
-msgctxt "hud-other"
-msgid "Other"
-msgstr "Altres"
-
-#: hud-telemetry
-msgid "Telemetry"
-msgstr ""
-
-#: software
-msgid "Software"
-msgstr "Programari"
-
-#: devSettings
-msgid "Developer Settings"
-msgstr "Paràmetres per a desenvolupadors"
-
-#: debug
-msgid "Debug"
-msgstr "Depuració"
-
-# Restriccions d'espai (1.3) Hi cap OK. BUG: https://bugzilla.mozilla.org/show_bug.cgi?id=968934 - jordis
-#: developer-menu
-msgid "Developer Menu"
-msgstr "Menú de desenvolupador"
-
-#: developer-tools
-#, fuzzy
-msgctxt "developer-tools"
-msgid "Developer Tools"
-msgstr "Eines de desenvolupament"
-
-#: graphics
-msgid "Graphics"
-msgstr "Gràfics"
-
-#: hardware-composer
-#, fuzzy
-msgid "Hardware Composer"
-msgstr "Compon per programari"
-
-#: paint-flashing
-#, fuzzy
-msgid "Flash Repainted Area"
-msgstr "Ressalta àrea actualitzada"
-
-#: dumps-layers
-#, fuzzy
-msgid "Dump Layers Tree"
-msgstr "Aboca l'arbre de capes"
-
-#: dumps-display-list
-msgid "Dump Display List"
-msgstr ""
-
-#: dumps-layerscope
-#, fuzzy
-msgid "Dump LayerScope"
-msgstr "Aboca l'àmbit de capes"
-
-#: apz-overscroll
-msgid "Overscrolling"
-msgstr "Sobredesplaçament"
-
-#: tiling
-msgid "Tiling"
-msgstr "Mosaic"
-
-#: low-precision
-#, fuzzy
-msgid "Low Precision Painting"
-msgstr "Dibuixos de baixa precisió"
-
-#: low-opacity
-#, fuzzy
-msgid "Low Precision Transparency"
-msgstr "Transparència de baixa precisió"
-
-#: draw-tile-borders
-#, fuzzy
-msgid "Draw Tile Borders"
-msgstr "Dibuixa vores del mosaic"
-
-#: draw-layer-borders
-#, fuzzy
-msgid "Draw Layer Borders"
-msgstr "Dibuixa vores de les capes"
-
-# Restriccions d'espai - jordis
-#: log-animations
-#, fuzzy
-msgid "Log Slow Animations"
-msgstr "Reg. animacions lentes"
-
-#: remote-debugging-usb
-msgid "Debugging via USB"
-msgstr "Depuració per USB"
-
-#: devtools-wifi
-msgid "DevTools via Wi-Fi"
-msgstr "DevTools per Wi-Fi"
-
-#: devtools-device-name
-msgid "DevTools Wi-Fi Device Name"
-msgstr ""
-
-#: devtools-qps
-#, fuzzy
-msgid "Pseudo-Localization"
-msgstr "Pseudolocalització"
-
-# Femení perquè aquí es refereix a "depuració" (1.4) - jordis
-#: debugger-disabled
-msgctxt "debugger-disabled"
-msgid "Disabled"
-msgstr "Desactivat"
-
-#: debugger-adb-only
-msgid "ADB only"
-msgstr "Només ADB"
-
-#: debugger-adb-and-devtools
-msgid "ADB and DevTools"
-msgstr "ADB i DevTools"
-
-#: wifi-debugging
-#, fuzzy
-msgid "Wi-Fi Output in ADB"
-msgstr "Sortida Wi-Fi a ADB"
-
-#: bluetooth-debugging
-#, fuzzy
-msgid "Bluetooth Output in ADB"
-msgstr "Sortida Bluetooth a ADB"
-
-#: bluetooth-snoop-debugging
-msgid "Bluetooth HCI Sniffing Logs to SD Card"
-msgstr ""
-
-#: nfc-debugging
-#, fuzzy
-msgid "NFC Output in ADB"
-msgstr "Sortida NFC a ADB"
-
-#: ril-debugging
-#, fuzzy
-msgid "RIL Output in ADB"
-msgstr "Sortida RIL a ADB"
-
-#: network-debugging
-msgid "Network Output in ADB"
-msgstr ""
-
-#: mms-debugging
-#, fuzzy
-msgid "MMS Output in ADB"
-msgstr "Sortida NFC a ADB"
-
-#: console-enabled
-#, fuzzy
-msgid "Console Enabled"
-msgstr "Consola activada"
-
-#: cards-view-screenshots
-msgid "Cards View: Screenshots"
-msgstr "Visualització de targetes: captures de pantalla"
-
-#: geolocation-debugging-enabled
-#, fuzzy
-msgid "Geolocation Output in ADB"
-msgstr "Sortida geolocalització a ADB"
-
-#: geolocation-debugging-gps-locations-ignored
-#, fuzzy
-msgid "Ignore GPS Locations"
-msgstr "Ignora ubicacions del GPS"
-
-#: use-reviewer-certs
-#, fuzzy
-msgid "Use Marketplace Reviewer Certs"
-msgstr "Utilitza certificats de revisor del Marketplace"
-
-#: shake-to-log
-#, fuzzy
-msgid "Shake to Save System Log"
-msgstr "Agita per desar el registre del sistema"
-
-#: enable-logshake-qa
-msgid "Enable LogShake QA Mode"
-msgstr ""
-
 #: launch-ftu
 msgid "Launch First Time Use"
 msgstr "Obre l'aplicació de primer ús"
@@ -4488,181 +4188,45 @@ msgid "No first time use app found"
 msgstr "No s'ha trobat cap aplicació de primer ús"
 
 #: software-home-button
-#, fuzzy
-msgid "Software Home Button"
+msgid "Software home button"
 msgstr "Botó d'inici virtual"
 
 #: home-gesture
-#, fuzzy
-msgid "Home Gesture"
+msgid "Home gesture"
 msgstr "Gest per anar a l'inici"
 
 #: continuous-transition
-#, fuzzy
-msgid "Continuous Transition"
+msgid "Continuous transition"
 msgstr "Transició contínua"
 
 # Hi cap OK (1.2) - jordis
 #: debug-gaia-enabled
-#, fuzzy
-msgid "Gaia Debug Traces"
+msgid "Gaia debug traces"
 msgstr "Traces depuració del Gaia"
 
 #: showScreenReaderSettings
-#, fuzzy
-msgid "Show Screen Reader Settings"
+msgid "Show screen reader settings"
 msgstr "Mostra els paràmetres del lector de pantalla"
 
 #: app-transition
-#, fuzzy
-msgid "App Transition"
+msgid "App transition"
 msgstr "Transició d'aplicacions"
 
 #: app-suspending
-#, fuzzy
-msgid "App Suspending"
+msgid "App suspending"
 msgstr "Suspensió d'aplicacions"
 
 #: copypaste
-#, fuzzy
-msgid "Copy/Paste"
+msgid "Copy/paste"
 msgstr "Copia/enganxa"
 
-#: multi-screen
-msgid "Multi-Screen"
-msgstr ""
-
 #: verbose-app-permissions
-#, fuzzy
-msgid "Verbose App Permissions"
+msgid "Verbose app permissions"
 msgstr "Permisos d'aplicacions detallats"
 
-#: pinning-the-web
-msgid "Enable Pinning the Web"
-msgstr ""
-
-#: view-source
-msgid "Enable View Source Gesture"
-msgstr ""
-
 #: window-management
-#, fuzzy
-msgid "Window Management"
+msgid "Window management"
 msgstr "Gestió de finestres"
-
-#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
-#. # full DevTools access.
-#: unlock-privileges
-msgid "Unlock Privileges"
-msgstr "Desbloca privilegis"
-
-#: full-devtools
-msgid "Full DevTools"
-msgstr ""
-
-#: reset-devtools-warning-title
-msgctxt "reset-devtools-warning-title"
-msgid "CAUTION"
-msgstr "PRECAUCIÓ"
-
-#. # Device :: Developer :: Service Workers
-#: service-worker
-msgid "Service Workers"
-msgstr ""
-
-#: service-worker-scope
-msgid "Scope"
-msgstr ""
-
-#: service-worker-script-spec
-msgid "Script spec"
-msgstr ""
-
-#: service-worker-current-worker-url
-msgid "Current worker URL"
-msgstr ""
-
-#: service-worker-active-cache-name
-msgid "Active cache name"
-msgstr ""
-
-#: service-worker-waiting-cache-name
-msgid "Waiting cache name"
-msgstr ""
-
-#: service-worker-update
-msgid "Update"
-msgstr ""
-
-#: service-worker-unregister
-msgid "Unregister"
-msgstr ""
-
-#: service-worker-no-registrations
-msgid "No service workers found"
-msgstr ""
-
-#. # Device :: Full Developer Mode
-#: developer-menu-disabled-warning-title
-msgid "Developer menu not enabled"
-msgstr ""
-
-#: developer-menu-disabled-warning-msg-1
-msgid ""
-"Developer Mode can't be enabled without the developer menu first being "
-"enabled."
-msgstr ""
-
-#: developer-menu-disabled-warning-msg-2
-msgid ""
-"Please enable it from Settings > Device Information > More Information > "
-"Developer Menu."
-msgstr ""
-
-#: enable-full-dev-mode-first-warning-title
-msgid "Would you like to enable developer mode?"
-msgstr ""
-
-#: enable-full-dev-mode-first-warning-msg-1
-msgid "THIS WILL DELETE ALL YOUR DATA AND FACTORY RESET YOUR DEVICE."
-msgstr ""
-
-#: enable-full-dev-mode-first-warning-msg-2
-msgid "THIS WILL DISABLE ALL SECURITY MEASURES ON YOUR DEVICE."
-msgstr ""
-
-#: enable-full-dev-mode-final-warning-title
-msgid "Are you sure you want to enable developer mode?"
-msgstr ""
-
-#: enable-full-dev-mode-final-warning-msg
-#, fuzzy
-msgid "{[ plural(count) ]}"
-msgstr "{[ plural(n) ]}"
-
-#: enable-full-dev-mode-final-warning-msg[one]
-msgid "Tap 'Enable' {{count}} more time to continue."
-msgstr ""
-
-#: enable-full-dev-mode-final-warning-msg[two]
-msgctxt "enable-full-dev-mode-final-warning-msg[two]"
-msgid "Tap 'Enable' {{count}} more times to continue."
-msgstr ""
-
-#: enable-full-dev-mode-final-warning-msg[few]
-msgctxt "enable-full-dev-mode-final-warning-msg[few]"
-msgid "Tap 'Enable' {{count}} more times to continue."
-msgstr ""
-
-#: enable-full-dev-mode-final-warning-msg[many]
-msgctxt "enable-full-dev-mode-final-warning-msg[many]"
-msgid "Tap 'Enable' {{count}} more times to continue."
-msgstr ""
-
-#: enable-full-dev-mode-final-warning-msg[other]
-msgctxt "enable-full-dev-mode-final-warning-msg[other]"
-msgid "Tap 'Enable' {{count}} more times to continue."
-msgstr ""
 
 #. # Device :: Downloads
 #: downloads-edit
@@ -4684,8 +4248,6 @@ msgstr "Elimina"
 
 #. # Device :: Battery
 #: battery
-#, fuzzy
-msgctxt "battery"
 msgid "Battery"
 msgstr "Bateria"
 
@@ -4736,14 +4298,6 @@ msgstr "Activa automàticament"
 
 #. # Device :: Accessibility
 #: accessibility
-#, fuzzy
-msgctxt "accessibility"
-msgid "Accessibility"
-msgstr "Accessibilitat"
-
-#: accessibility.ariaLabel
-#, fuzzy
-msgctxt "accessibility.ariaLabel"
 msgid "Accessibility"
 msgstr "Accessibilitat"
 
@@ -4851,12 +4405,6 @@ msgstr "Contrast"
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
 msgctxt "improveBrowserOS"
-msgid "Improve {{brandShortName}}"
-msgstr "Millora el {{brandShortName}}"
-
-#: improveBrowserOS.ariaLabel
-#, fuzzy
-msgctxt "improveBrowserOS.ariaLabel"
 msgid "Improve {{brandShortName}}"
 msgstr "Millora el {{brandShortName}}"
 
@@ -5052,6 +4600,15 @@ msgstr ""
 "El sistema no pot enviar el vostre suggeriment perquè el camp de comentaris "
 "és buit. Empleneu el camp i torneu-ho a provar."
 
+#: feedback-errormessage-just-sent
+msgid ""
+"Sorry, the system can’t send your suggestion because you already sent us "
+"feedback. Please try our next software update and send again."
+msgstr ""
+"El sistema no pot enviar el vostre suggeriment perquè ja ens n'heu enviat "
+"abans. Proveu la següent actualització de programari i torneu-ne a enviar "
+"llavors."
+
 #: feedback-complete-msg
 msgid ""
 "Thanks for the feedback! We use it to help create better experiences in "
@@ -5059,10 +4616,6 @@ msgid ""
 msgstr ""
 "Gràcies pel comentari! El farem servir per ajudar a millorar properes "
 "versions del Firefox OS."
-
-#: feedback-errormessage-unknown-error
-msgid "Something went wrong. Please try again."
-msgstr ""
 
 #. # Device :: Help
 #: online-support
@@ -5200,14 +4753,8 @@ msgstr "Obtén l'estat del canal"
 msgid "End of the proactive session"
 msgstr "Fi de la sessió proactiva"
 
-#: stkEntry.ariaLabel
-msgid "{{ title }}"
-msgstr ""
-
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
-#, fuzzy
-msgctxt "is-warning-storage-header"
 msgid "USB storage"
 msgstr "Mode de disc USB"
 
@@ -5277,393 +4824,14 @@ msgstr "{{settings-dialog-confirm}}"
 msgid "{{settings-dialog-prompt}}"
 msgstr "{{settings-dialog-prompt}}"
 
-#: accessible-app-icon.ariaLabel
-msgid "Icon for {{ appName }} app"
-msgstr ""
-
-#. # Addongs settings
-#: addon
-msgid "Add-on"
-msgstr ""
-
-#: addons
-msgctxt "addons"
-msgid "Add-ons"
-msgstr ""
-
-#: addons.ariaLabel
-msgctxt "addons.ariaLabel"
-msgid "Add-ons"
-msgstr ""
-
-#: addons-header
-msgid "{{addons}}"
-msgstr ""
-
-#: addon-details-header1
-msgid "{{ appName }}"
-msgstr ""
-
-#: addon-enable
-msgid "Enable Add-on"
-msgstr ""
-
-#: addon-description-header
-#, fuzzy
-msgctxt "addon-description-header"
-msgid "Description"
-msgstr "Descripció"
-
-#: addon-developer-name
-msgid "{{ developerName }}"
-msgstr ""
-
-#: addon-targets
-msgid "Affected Apps"
-msgstr ""
-
-#: addon-options
-#, fuzzy
-msgctxt "addon-options"
-msgid "Options"
-msgstr "Opcions"
-
-#: addon-delete
-msgid "Delete Add-on"
-msgstr ""
-
-#: addon-share
-msgid "Share Add-on"
-msgstr ""
-
-#: addon-share-no-provider
-msgid "No sharing app available"
-msgstr ""
-
-#: addon-no-description
-msgid "This add-on does not include a description in its manifest file."
-msgstr ""
-
-#: addon-no-targets
-msgid "This add-on does not affect any installed apps."
-msgstr ""
-
-#: addon-restart-apps-to-disable
-msgid "Add-on disabled; restart affected apps."
-msgstr ""
-
-#: addon-reboot-required
-msgid ""
-"This add-on affected system apps; you must reboot your device to fully "
-"disable it."
-msgstr ""
-
-#: addon-rename
-msgid "Rename"
-msgstr ""
-
-#: addon-rename-input
-msgid "Enter add-on name"
-msgstr ""
-
-#: addon-rename-desc
-msgid "Change the name of your add-on"
-msgstr ""
-
-#: addon-obsolete
-msgid "This add-on is obsolete and does not work."
-msgstr ""
-
-#: addon-obsolete-can-delete
-msgid "This add-on is obsolete and does not work. Please delete it."
-msgstr ""
-
-#. # Achievements
-#: achievements
-msgid "Achievements"
-msgstr ""
-
-#: achievements.ariaLabel
-msgid "achievements"
-msgstr ""
-
-#: achievements-customize-champ-name
-msgid "Customize Champ"
-msgstr ""
-
-#: achievements-customize-champ-description
-msgid "Open Customizer in an app"
-msgstr ""
-
-#: achievements-add-on-all-star-name
-msgid "Add-on All-Star"
-msgstr ""
-
-#: achievements-add-on-all-star-description
-msgid "Use Customizer to create your own add-on"
-msgstr ""
-
-#: achievements-fab-finder-name
-msgid "Fab Finder"
-msgstr ""
-
-#: achievements-fab-finder-description
-msgid "Install an app or add-on from Hackerplace"
-msgstr ""
-
-#: achievements-content-commander-name
-msgid "Content Commander"
-msgstr ""
-
-#: achievements-content-commander-description
-msgid "Submit an app or add-on to Hackerplace"
-msgstr ""
-
-#: achievements-sharing-is-caring-name
-msgid "Sharing is Caring"
-msgstr ""
-
-#: achievements-sharing-is-caring-description
-msgid "Share your apps and add-ons with the Sharing app"
-msgstr ""
-
-#: achievements-creative-kind-name
-msgid "Creative Kind"
-msgstr ""
-
-#: achievements-creative-kind-description
-msgid "Use Theme Editor to create a new theme"
-msgstr ""
-
-#. # Service Workers
-#: service-workers-interception
-msgid "Intercept requests"
-msgstr ""
-
-#: service-workers-testing
-msgid "Allow over HTTP"
-msgstr ""
-
-#. # LOCALIZATION NOTE: The following strings are spoken by screen readers and not
-#. # shown on the screen.
-#: addButton.ariaLabel
-#, fuzzy
-msgctxt "addButton.ariaLabel"
-msgid "Add"
-msgstr "Afegeix"
-
-#: closeButton.ariaLabel
-#, fuzzy
-msgctxt "closeButton.ariaLabel"
-msgid "Close"
-msgstr "Tanca"
-
-#: changeWallpaperButton.ariaLabel
-msgid "Change wallpaper"
-msgstr ""
-
-#: editButton.ariaLabel
-#, fuzzy
-msgctxt "editButton.ariaLabel"
-msgid "Edit"
-msgstr "Edita"
-
-#: wifiSection.ariaLabel
-#, fuzzy
-msgctxt "wifiSection.ariaLabel"
-msgid "Wi-Fi"
-msgstr "Wi-Fi"
-
-#: simManagerSection.ariaLabel
-#, fuzzy
-msgctxt "simManagerSection.ariaLabel"
-msgid "SIM Manager"
-msgstr "Gestor de targetes SIM"
-
-# (1.3) "Paràmetres" es pot ometre perquè ja apareix Paràmetres a la capçalera (és el nom de l'aplicació) i per coherència amb les altres opcions (Wi-Fi, Bluetooth, etc.) - jordis
-#: callSettingsSection.ariaLabel
-#, fuzzy
-msgctxt "callSettingsSection.ariaLabel"
-msgid "Call Settings"
-msgstr "Trucades"
-
-# (1.3) "Paràmetres" es pot ometre perquè ja apareix Paràmetres a la capçalera (és el nom de l'aplicació) i per coherència amb les altres opcions (Wi-Fi, Bluetooth, etc.) - jordis
-#: messagingSettingsSection.ariaLabel
-#, fuzzy
-msgctxt "messagingSettingsSection.ariaLabel"
-msgid "Messaging Settings"
-msgstr "Missatges"
-
-#: cellularAndDataSection.ariaLabel
-#, fuzzy
-msgctxt "cellularAndDataSection.ariaLabel"
-msgid "Cellular & Data"
-msgstr "Xarxa mòbil i dades"
-
-#: bluetoothSection.ariaLabel
-#, fuzzy
-msgctxt "bluetoothSection.ariaLabel"
-msgid "Bluetooth"
-msgstr "Bluetooth"
-
-#: internetSharingSection.ariaLabel
-#, fuzzy
-msgctxt "internetSharingSection.ariaLabel"
-msgid "Internet Sharing"
-msgstr "Compartició d'Internet"
-
-#: dateAndTimeSection.ariaLabel
-#, fuzzy
-msgctxt "dateAndTimeSection.ariaLabel"
-msgid "Date & Time"
-msgstr "Data i hora"
-
-#: languageSection.ariaLabel
-#, fuzzy
-msgctxt "languageSection.ariaLabel"
-msgid "Language"
-msgstr "Llengua"
-
-#: keyboardsSection.ariaLabel
-#, fuzzy
-msgctxt "keyboardsSection.ariaLabel"
-msgid "Keyboards"
-msgstr "Teclats"
-
-#: fxa-accountsSection.ariaLabel
-#, fuzzy
-msgctxt "fxa-accountsSection.ariaLabel"
-msgid "Firefox Accounts"
-msgstr "Comptes del Firefox"
-
-#: findmydeviceSection.ariaLabel
-#, fuzzy
-msgctxt "findmydeviceSection.ariaLabel"
-msgid "Find My Device"
-msgstr "Troba el meu aparell"
-
-#: screenLockSection.ariaLabel
-#, fuzzy
-msgctxt "screenLockSection.ariaLabel"
-msgid "Screen Lock"
-msgstr "Bloqueig de pantalla"
-
-#: simSecuritySection.ariaLabel
-#, fuzzy
-msgctxt "simSecuritySection.ariaLabel"
-msgid "SIM Security"
-msgstr "Seguretat de la SIM"
-
-#: doNotTrackSection.ariaLabel
-#, fuzzy
-msgctxt "doNotTrackSection.ariaLabel"
-msgid "Do Not Track"
-msgstr "No vull ser seguit"
-
-#: privacySection.ariaLabel
-#, fuzzy
-msgctxt "privacySection.ariaLabel"
-msgid "Privacy Controls"
-msgstr "Controls de privadesa"
-
-#: enableStorageSection.ariaLabel
-#, fuzzy
-msgctxt "enableStorageSection.ariaLabel"
-msgid "USB storage"
-msgstr "Mode de disc USB"
-
-# Restricció d'espai - jordis
-#: mediaStorageSection.ariaLabel
-#, fuzzy
-msgctxt "mediaStorageSection.ariaLabel"
-msgid "Media Storage"
-msgstr "Espai per a multimèdia"
-
-# Restricció d'espai - jordis
-#: appStorageSection.ariaLabel
-#, fuzzy
-msgctxt "appStorageSection.ariaLabel"
-msgid "Application Storage"
-msgstr "Espai per a aplicacions"
-
-#: batterySection.ariaLabel
-#, fuzzy
-msgctxt "batterySection.ariaLabel"
-msgid "Battery"
-msgstr "Bateria"
-
-#~ msgid "Manage Cert."
-#~ msgstr "Gestiona cert."
-
-#~ msgid "Call forwarding is disabled by FDN."
-#~ msgstr ""
-#~ "La desviació de trucades no està disponible perquè la funció de números "
-#~ "prefixats està activada."
-
-#~ msgid "&#x202a;Multimedia Messaging (MMS)&#x202c;"
-#~ msgstr "&#x202a;Missatges multimèdia (MMS)&#x202c;"
-
-#~ msgctxt "operator-status-connecting"
-#~ msgid "Connecting…"
-#~ msgstr "S'està connectant…"
-
-#~ msgctxt "operator-status-connectingfailed"
-#~ msgid "Connection failed"
-#~ msgstr "Ha fallat la connexió"
-
-#~ msgctxt "operator-status-connected"
-#~ msgid "Connected"
-#~ msgstr "Connectat"
-
-#~ msgid "Change the name of your device as it appears in your computer"
-#~ msgstr "Canvieu el nom del dispositiu que es mostra a l'ordinador"
-
-#~ msgid "The SSID cannot be empty"
-#~ msgstr "L'SSID no pot estar en blanc"
-
-#~ msgid "WPA (TKIP)"
-#~ msgstr "WPA (TKIP)"
-
-#~ msgid "WPA2 (AES)"
-#~ msgstr "WPA2 (AES)"
-
-#~ msgid "Resend"
-#~ msgstr "Torna'l a enviar"
-
-#~ msgid "B"
-#~ msgstr "B"
-
-#~ msgid "KB"
-#~ msgstr "kB"
-
-#~ msgid "MB"
-#~ msgstr "MB"
-
-#~ msgid "GB"
-#~ msgstr "GB"
-
-#~ msgid "TB"
-#~ msgstr "TB"
-
-#~ msgid "Developer tools"
-#~ msgstr "Eines de desenvolupament"
-
-#~ msgid "Reset and enable full DevTools"
-#~ msgstr "Reinicialitza i activa DevTools"
-
-#~ msgid ""
-#~ "Sorry, the system can’t send your suggestion because you already sent us "
-#~ "feedback. Please try our next software update and send again."
-#~ msgstr ""
-#~ "El sistema no pot enviar el vostre suggeriment perquè ja ens n'heu enviat "
-#~ "abans. Proveu la següent actualització de programari i torneu-ne a enviar "
-#~ "llavors."
-
 #~ msgid "No imported certificate"
 #~ msgstr "No s'ha importat cap certificat"
 
 #~ msgid "Voice calls to {{number}}"
 #~ msgstr "Trucades de veu al {{number}}"
+
+#~ msgid "Multimedia Messaging (MMS)"
+#~ msgstr "Missatges multimèdia (MMS)"
 
 #~ msgid "Do you want to proceed?"
 #~ msgstr "Voleu continuar?"
@@ -5695,6 +4863,10 @@ msgstr "Bateria"
 
 #~ msgid "Simple tiling"
 #~ msgstr "Mosaic senzill"
+
+#~ msgctxt "is-warning-storage-header"
+#~ msgid "USB storage"
+#~ msgstr "Mode de disc USB"
 
 #~ msgctxt "is-warning-tethering-header"
 #~ msgid "USB tethering"

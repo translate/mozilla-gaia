@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-03-19 18:45+0000\n"
 "PO-Revision-Date: 2015-08-30 23:50+0000\n"
 "Last-Translator: Sérgio Marques <smarquespt@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1440978645.000000\n"
@@ -770,6 +770,10 @@ msgstr "Importar contactos"
 msgid "SIM card"
 msgstr "Cartão SIM"
 
+#: importFb2
+msgid "Facebook"
+msgstr "Facebook"
+
 #: importOutlook
 msgid "Outlook"
 msgstr "Outlook"
@@ -777,6 +781,10 @@ msgstr "Outlook"
 #: importGmail
 msgid "Gmail"
 msgstr "Gmail"
+
+#: fb-checking
+msgid "… checking"
+msgstr "… a verificar"
 
 #: notImportedYet
 msgid "Not imported yet"
@@ -786,6 +794,44 @@ msgstr "Ainda não importado"
 msgid "Other accounts"
 msgstr "Outras contas"
 
+#: afterFbImport
+msgid "You can import and edit Facebook friends anytime in Contacts settings"
+msgstr ""
+"Pode importar e editar amigos do Facebook em qualquer altura nas definições "
+"de Contactos"
+
+#: facebook-import-msg
+msgid "{[ plural(imported) ]}"
+msgstr "{[ plural(imported) ]}"
+
+#: facebook-import-msg[zero]
+msgid "No friends imported (out of {{total}})"
+msgstr "Não foram importados amigos (de {{total}})"
+
+#: facebook-import-msg[one]
+msgid "One friend imported (out of {{total}})"
+msgstr "Um amigo importado (de {{total}})"
+
+#: facebook-import-msg[two]
+msgctxt "facebook-import-msg[two]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr "{{imported}}/{{total}} amigos importados"
+
+#: facebook-import-msg[few]
+msgctxt "facebook-import-msg[few]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr "{{imported}}/{{total}} amigos importados"
+
+#: facebook-import-msg[many]
+msgctxt "facebook-import-msg[many]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr "{{imported}}/{{total}} amigos importados"
+
+#: facebook-import-msg[other]
+msgctxt "facebook-import-msg[other]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr "{{imported}}/{{total}} amigos importados"
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Fxa Intro
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -793,7 +839,7 @@ msgstr "Outras contas"
 msgid "Firefox Accounts"
 msgstr "Contas do Firefox"
 
-#: fxa-upsell
+#: fxa-upsell.innerHTML
 msgid ""
 "A Firefox Account lets you find a lost phone and buy apps from the Firefox "
 "Marketplace."
@@ -895,45 +941,70 @@ msgstr ""
 "{{brandShortName}}. Utilizamos isto para melhorar os nossos produtos, "
 "tornando-os mais rápidos e mais responsivos."
 
-#: learn-more-telemetry2
-msgid "Learn more at <a>{{url}}</a>"
+#: learn-more-telemetry2.innerHTML
+msgid ""
+"Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
+"a>"
 msgstr ""
+"Saber mais em <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
+"a>"
 
-#: learn-more-information2
-#, fuzzy
-msgid "Learn how Mozilla handles your information at <a>{{url}}</a>"
-msgstr "Saiba como a Mozilla gere a sua informação em {{link}}"
+#: learn-more-information2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>"
+msgstr ""
+"Saiba como a Mozilla gere a sua informação em <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # OS privacy
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: htmlWelcome2
-#, fuzzy
+#: htmlWelcome2.innerHTML
 msgid ""
-"Welcome to <a>{{brandShortName}}</a>, the free and open source operating "
-"system from Mozilla. Our mission is to promote openness, innovation and "
-"opportunity by keeping the power of the Web in your hands."
+"Welcome to <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>, "
+"the free and open source operating system from Mozilla. Our mission is to "
+"promote openness, innovation and opportunity by keeping the power of the Web "
+"in your hands."
 msgstr ""
 "Bem-vindo ao <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
 "a>, o sistema operativo livre e de código aberto da Mozilla. A nossa missão "
 "é a de promover a abertura, inovação e oportunidade, mantendo o poder da Web "
 "nas suas mãos."
 
-#: helpImprove2
-#, fuzzy
+#: htmlWelcome-link
+msgctxt "htmlWelcome-link"
+msgid "{{brandShortName}}"
+msgstr "{{brandShortName}}"
+
+#: helpImprove2.innerHTML
 msgid ""
 "You can help us improve our products and services by automatically sending "
-"analytics data. See our <a>Privacy Notice</a> to learn how we handle data "
-"from your device."
+"analytics data. See our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> to learn how we handle data from your "
+"device."
 msgstr ""
-"Poderá ajudar-nos a melhorar os nossos produtos e serviços com o envio "
-"automático de dados analíticos. Veja o nosso {{link}} para saber como gerir "
-"os dados do seu dispositivo."
+"Pode ajudar-nos a melhorar os nossos produtos e serviços enviando dados "
+"analíticos de forma automática. Conheço a nossa <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> para saber mais sobre como gerimos os "
+"dados do seu dispositivo."
 
-#: learn-more-privacy2
+# Será que este também tem de ser traduzido para "Política de Privacidade" ?
+#: helpImprove-link
+msgid "Privacy Notice"
+msgstr "Aviso de privacidade"
+
+#: learn-more-privacy2.innerHTML
 msgid ""
-"Learn how Mozilla handles your information in our <a>privacy policy</a>."
+"Learn how Mozilla handles your information in our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>."
 msgstr ""
+"Saiba como a Mozilla gere a sua informação na nossa <a href=\"{{href}}\" "
+"class=\"{{className}}\">{{textContent}}</a>."
+
+#: learn-more-privacy-link
+msgid "privacy policy"
+msgstr "política de privacidade"
 
 #: aboutBrowser
 msgid "About {{brandShortName}}"
@@ -1211,82 +1282,6 @@ msgstr "Passo {{step}} de {{total}}"
 msgid "First Time Experience"
 msgstr "Primeira experiência"
 
-#~ msgid "Facebook"
-#~ msgstr "Facebook"
-
-#~ msgid "… checking"
-#~ msgstr "… a verificar"
-
-#~ msgid ""
-#~ "You can import and edit Facebook friends anytime in Contacts settings"
-#~ msgstr ""
-#~ "Pode importar e editar amigos do Facebook em qualquer altura nas "
-#~ "definições de Contactos"
-
-#~ msgid "{[ plural(imported) ]}"
-#~ msgstr "{[ plural(imported) ]}"
-
-#~ msgid "No friends imported (out of {{total}})"
-#~ msgstr "Não foram importados amigos (de {{total}})"
-
-#~ msgid "One friend imported (out of {{total}})"
-#~ msgstr "Um amigo importado (de {{total}})"
-
-#~ msgctxt "facebook-import-msg[two]"
-#~ msgid "{{imported}}/{{total}} friends imported"
-#~ msgstr "{{imported}}/{{total}} amigos importados"
-
-#~ msgctxt "facebook-import-msg[few]"
-#~ msgid "{{imported}}/{{total}} friends imported"
-#~ msgstr "{{imported}}/{{total}} amigos importados"
-
-#~ msgctxt "facebook-import-msg[many]"
-#~ msgid "{{imported}}/{{total}} friends imported"
-#~ msgstr "{{imported}}/{{total}} amigos importados"
-
-#~ msgctxt "facebook-import-msg[other]"
-#~ msgid "{{imported}}/{{total}} friends imported"
-#~ msgstr "{{imported}}/{{total}} amigos importados"
-
-#~ msgid ""
-#~ "Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}"
-#~ "</a>"
-#~ msgstr ""
-#~ "Saber mais em <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}"
-#~ "</a>"
-
-#~ msgid ""
-#~ "Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
-#~ "\"{{className}}\">{{textContent}}</a>"
-#~ msgstr ""
-#~ "Saiba como a Mozilla gere a sua informação em <a href=\"{{href}}\" class="
-#~ "\"{{className}}\">{{textContent}}</a>"
-
-#~ msgid ""
-#~ "You can help us improve our products and services by automatically "
-#~ "sending analytics data. See our <a href=\"{{href}}\" class="
-#~ "\"{{className}}\">{{textContent}}</a> to learn how we handle data from "
-#~ "your device."
-#~ msgstr ""
-#~ "Pode ajudar-nos a melhorar os nossos produtos e serviços enviando dados "
-#~ "analíticos de forma automática. Conheço a nossa <a href=\"{{href}}\" "
-#~ "class=\"{{className}}\">{{textContent}}</a> para saber mais sobre como "
-#~ "gerimos os dados do seu dispositivo."
-
-# Será que este também tem de ser traduzido para "Política de Privacidade" ?
-#~ msgid "Privacy Notice"
-#~ msgstr "Aviso de privacidade"
-
-#~ msgid ""
-#~ "Learn how Mozilla handles your information in our <a href=\"{{href}}\" "
-#~ "class=\"{{className}}\">{{textContent}}</a>."
-#~ msgstr ""
-#~ "Saiba como a Mozilla gere a sua informação na nossa <a href=\"{{href}}\" "
-#~ "class=\"{{className}}\">{{textContent}}</a>."
-
-#~ msgid "privacy policy"
-#~ msgstr "política de privacidade"
-
 #~ msgid "Swipe from right to left to browse your apps."
 #~ msgstr ""
 #~ "Deslize da direita para a esquerda para navegar pelas suas aplicações."
@@ -1329,6 +1324,18 @@ msgstr "Primeira experiência"
 
 #~ msgid "Learn more at {{link}}"
 #~ msgstr "Saiba mais em {{link}}"
+
+#~ msgid "Learn how Mozilla handles your information at {{link}}"
+#~ msgstr "Saiba como a Mozilla gere a sua informação em {{link}}"
+
+#~ msgid ""
+#~ "You can help us improve our products and services by automatically "
+#~ "sending analytics data. See our {{link}} to learn how we handle data from "
+#~ "your device."
+#~ msgstr ""
+#~ "Poderá ajudar-nos a melhorar os nossos produtos e serviços com o envio "
+#~ "automático de dados analíticos. Veja o nosso {{link}} para saber como "
+#~ "gerir os dados do seu dispositivo."
 
 #~ msgid "Learn how Mozilla handles your information in our {{link}}."
 #~ msgstr "Saiba como a Mozilla gere a sua informação na nossa {{link}}."

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-03-19 08:45+0000\n"
 "PO-Revision-Date: 2015-01-26 18:13+0000\n"
 "Last-Translator: Mihovil Stanić <mihovil@miho.im>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1422296032.000000\n"
@@ -37,14 +37,12 @@ msgstr ""
 msgid "Mail"
 msgstr "E-pošta"
 
-#. # LOCALIZATION NOTE(setup-empty-account-message): Shown on the
-#. # setup_account_info page when the email app is launched from an activity, but
-#. # no account is set up yet.
-#: setup-empty-account-message
+#: setup-empty-account-prompt
 msgid ""
-"You are not set up to send or receive email. Set up an account to complete "
-"the action."
+"You are not set up to send or receive email. Would you like to do that now?"
 msgstr ""
+"Nemate podešen račun za slanje ili primanje e-pošte. Želite li ga podesiti "
+"sada?"
 
 #: setup-pick-service
 msgid "To send and receive email, you will need to set up an account."
@@ -501,7 +499,7 @@ msgstr "Spremi potpis"
 #. # button which discards changes when a user hits back in the signature
 #. # entry page.
 #: signature-discard-confirm
-#, fuzzy
+msgctxt "signature-discard-confirm"
 msgid "Discard"
 msgstr "Odbaci"
 
@@ -1088,14 +1086,6 @@ msgctxt "compose-bcc"
 msgid "bcc"
 msgstr "bcc"
 
-#. # LOCALIZATION NOTE(compose-autocomplete-match): For the compose card
-#. # autocomplete matches when entering an email, the ariaLabel to use for each
-#. # match. The following string is spoken by screen readers and not shown on the
-#. # screen.
-#: compose-autocomplete-match.ariaLabel
-msgid "{{name}} {{address}}"
-msgstr ""
-
 #. # LOCALIZATION NOTE(compose-contact-add): For compose card, a label for an add
 #. # contact buttons rendered as a circled plus sign and used to add to, cc and bcc
 #. # recipients. The following string is spoken by screen readers and not shown on
@@ -1217,12 +1207,10 @@ msgstr "Naslov"
 msgid "Save to Local Drafts"
 msgstr "Spremi u Lokalne skice"
 
-#. # LOCALIZATION NOTE(compose-delete-confirm): Wheh leaving the Compose card, the
-#. # user is prompted to save the draft or delete it. This is the delete button
-#. # text.
-#: compose-delete-confirm
-msgid "Delete the draft"
-msgstr ""
+#: compose-discard-confirm
+msgctxt "compose-discard-confirm"
+msgid "Discard"
+msgstr "Odbaci"
 
 #: compose-send-message-failed
 msgid "Sending email failed"
@@ -1291,8 +1279,6 @@ msgid "This file is too large to download."
 msgstr "Datoteka je prevelika za preuzimanje."
 
 #: message-no-subject
-#, fuzzy
-msgctxt "message-no-subject"
 msgid "(no subject)"
 msgstr "(bez naslova)"
 
@@ -2026,14 +2012,6 @@ msgctxt "new-messages[other]"
 msgid "{{ n }} New Messages"
 msgstr "{{ n }} novih poruka"
 
-#. # LOCALIZATION NOTE(notification-no-subject): is used for notifications
-#. # if the new email doesn't have a subject
-#: notification-no-subject
-#, fuzzy
-msgctxt "notification-no-subject"
-msgid "(no subject)"
-msgstr "(bez naslova)"
-
 #. # new-emails-notify-one-account is used when a system notification is generated during
 #. # a periodic background sync with the server. Since this goes to the system's
 #. # notification area, and user has only one account configured with the email App.
@@ -2166,17 +2144,6 @@ msgstr ""
 #: message-reader-date-received.ariaLabel
 msgid "Received"
 msgstr ""
-
-#~ msgid ""
-#~ "You are not set up to send or receive email. Would you like to do that "
-#~ "now?"
-#~ msgstr ""
-#~ "Nemate podešen račun za slanje ili primanje e-pošte. Želite li ga "
-#~ "podesiti sada?"
-
-#~ msgctxt "compose-discard-confirm"
-#~ msgid "Discard"
-#~ msgstr "Odbaci"
 
 #~ msgid "seconds"
 #~ msgstr "sekundi"

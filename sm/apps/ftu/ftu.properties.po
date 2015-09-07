@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-03-19 18:45+0000\n"
 "PO-Revision-Date: 2014-02-13 07:29+0000\n"
 "Last-Translator: Chris Bickers <edresources@bickersc.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1392276550.000000\n"
@@ -728,6 +728,10 @@ msgstr "'Aumaiga-fafo SIM contacts"
 msgid "SIM card"
 msgstr ""
 
+#: importFb2
+msgid "Facebook"
+msgstr ""
+
 #: importOutlook
 msgid "Outlook"
 msgstr ""
@@ -735,6 +739,10 @@ msgstr ""
 #: importGmail
 msgid "Gmail"
 msgstr ""
+
+#: fb-checking
+msgid "… checking"
+msgstr "…siatiina"
 
 #: notImportedYet
 msgid "Not imported yet"
@@ -744,6 +752,46 @@ msgstr ""
 msgid "Other accounts"
 msgstr "Isi accounts"
 
+#: afterFbImport
+msgid "You can import and edit Facebook friends anytime in Contacts settings"
+msgstr ""
+
+#: facebook-import-msg
+msgid "{[ plural(imported) ]}"
+msgstr ""
+
+#: facebook-import-msg[zero]
+msgid "No friends imported (out of {{total}})"
+msgstr ""
+
+#: facebook-import-msg[one]
+msgid "One friend imported (out of {{total}})"
+msgstr ""
+
+#: facebook-import-msg[two]
+#, fuzzy
+msgctxt "facebook-import-msg[two]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr "{{imported}}/{{total}} uō 'aumaiga-fafo"
+
+#: facebook-import-msg[few]
+#, fuzzy
+msgctxt "facebook-import-msg[few]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr "{{imported}}/{{total}} uō 'aumaiga-fafo"
+
+#: facebook-import-msg[many]
+#, fuzzy
+msgctxt "facebook-import-msg[many]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr "{{imported}}/{{total}} uō 'aumaiga-fafo"
+
+#: facebook-import-msg[other]
+#, fuzzy
+msgctxt "facebook-import-msg[other]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr "{{imported}}/{{total}} uō 'aumaiga-fafo"
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Fxa Intro
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -751,7 +799,7 @@ msgstr "Isi accounts"
 msgid "Firefox Accounts"
 msgstr ""
 
-#: fxa-upsell
+#: fxa-upsell.innerHTML
 msgid ""
 "A Firefox Account lets you find a lost phone and buy apps from the Firefox "
 "Marketplace."
@@ -832,34 +880,55 @@ msgid ""
 "to make our products better, faster and more responsive."
 msgstr ""
 
-#: learn-more-telemetry2
-msgid "Learn more at <a>{{url}}</a>"
+#: learn-more-telemetry2.innerHTML
+msgid ""
+"Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
+"a>"
 msgstr ""
 
-#: learn-more-information2
-msgid "Learn how Mozilla handles your information at <a>{{url}}</a>"
+#: learn-more-information2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # OS privacy
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: htmlWelcome2
+#: htmlWelcome2.innerHTML
 msgid ""
-"Welcome to <a>{{brandShortName}}</a>, the free and open source operating "
-"system from Mozilla. Our mission is to promote openness, innovation and "
-"opportunity by keeping the power of the Web in your hands."
+"Welcome to <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>, "
+"the free and open source operating system from Mozilla. Our mission is to "
+"promote openness, innovation and opportunity by keeping the power of the Web "
+"in your hands."
 msgstr ""
 
-#: helpImprove2
+#: htmlWelcome-link
+#, fuzzy
+msgctxt "htmlWelcome-link"
+msgid "{{brandShortName}}"
+msgstr "{{brandShortName}}"
+
+#: helpImprove2.innerHTML
 msgid ""
 "You can help us improve our products and services by automatically sending "
-"analytics data. See our <a>Privacy Notice</a> to learn how we handle data "
-"from your device."
+"analytics data. See our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> to learn how we handle data from your "
+"device."
 msgstr ""
 
-#: learn-more-privacy2
+#: helpImprove-link
+msgid "Privacy Notice"
+msgstr ""
+
+#: learn-more-privacy2.innerHTML
 msgid ""
-"Learn how Mozilla handles your information in our <a>privacy policy</a>."
+"Learn how Mozilla handles your information in our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>."
+msgstr ""
+
+#: learn-more-privacy-link
+msgid "privacy policy"
 msgstr ""
 
 #: aboutBrowser
@@ -1113,29 +1182,6 @@ msgstr ""
 #: progressbar.ariaLabel
 msgid "First Time Experience"
 msgstr ""
-
-#~ msgid "… checking"
-#~ msgstr "…siatiina"
-
-#, fuzzy
-#~ msgctxt "facebook-import-msg[two]"
-#~ msgid "{{imported}}/{{total}} friends imported"
-#~ msgstr "{{imported}}/{{total}} uō 'aumaiga-fafo"
-
-#, fuzzy
-#~ msgctxt "facebook-import-msg[few]"
-#~ msgid "{{imported}}/{{total}} friends imported"
-#~ msgstr "{{imported}}/{{total}} uō 'aumaiga-fafo"
-
-#, fuzzy
-#~ msgctxt "facebook-import-msg[many]"
-#~ msgid "{{imported}}/{{total}} friends imported"
-#~ msgstr "{{imported}}/{{total}} uō 'aumaiga-fafo"
-
-#, fuzzy
-#~ msgctxt "facebook-import-msg[other]"
-#~ msgid "{{imported}}/{{total}} friends imported"
-#~ msgstr "{{imported}}/{{total}} uō 'aumaiga-fafo"
 
 #~ msgid "Learn more."
 #~ msgstr "Mālamalama atili"
