@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-27 18:45+0000\n"
+"POT-Creation-Date: 2015-09-07 14:45+0000\n"
 "PO-Revision-Date: 2015-07-24 03:52+0000\n"
 "Last-Translator: Piseth Kheng <piseth.kheng@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1437709976.000000\n"
@@ -64,11 +64,17 @@ msgctxt "reset"
 msgid "Reset"
 msgstr "កំណត់​ឡើងវិញ"
 
+#: factory-reset
+msgid "Factory Reset"
+msgstr ""
+
 #: cancel
 msgid "Cancel"
 msgstr "បោះបង់"
 
 #: close
+#, fuzzy
+msgctxt "close"
 msgid "Close"
 msgstr "បិទ"
 
@@ -89,6 +95,7 @@ msgid "Pair"
 msgstr "គូរ"
 
 #: add
+msgctxt "add"
 msgid "Add"
 msgstr ""
 
@@ -150,10 +157,25 @@ msgstr "បណ្ដាញ & ការ​ត​ភ្ជាប់"
 
 #: airplaneMode
 #, fuzzy
+msgctxt "airplaneMode"
+msgid "Airplane Mode"
+msgstr "របៀប​លើ​យន្តហោះ"
+
+#: airplaneMode.ariaLabel
+#, fuzzy
+msgctxt "airplaneMode.ariaLabel"
 msgid "Airplane Mode"
 msgstr "របៀប​លើ​យន្តហោះ"
 
 #: geolocation
+#, fuzzy
+msgctxt "geolocation"
+msgid "Geolocation"
+msgstr "ទីតាំង​ភូមិសាស្ត្រ"
+
+#: geolocation.ariaLabel
+#, fuzzy
+msgctxt "geolocation.ariaLabel"
 msgid "Geolocation"
 msgstr "ទីតាំង​ភូមិសាស្ត្រ"
 
@@ -258,7 +280,7 @@ msgstr ""
 
 #: wifi-sleep-description
 msgid ""
-"Enable to automatically turn off Wi-Fi during sleep to save battery power.  "
+"Enable to automatically turn off Wi-Fi during sleep to save battery power."
 msgstr ""
 
 #: manageNetworks
@@ -286,12 +308,19 @@ msgid "{{manageNetworks}}"
 msgstr "{{manageNetworks}}"
 
 #: manageCertificates
-msgid "Manage certificates"
+#, fuzzy
+msgid "Manage Certificates"
 msgstr "គ្រប់​គ្រង​​វិញ្ញាបនបត្រ"
 
-#: manageCert
-msgid "Manage Cert."
-msgstr "គ្រប់គ្រង​វិញ្ញាបនបត្រ"
+#. # LOCALIZATION NOTE (manageCertificates-header): if you leave the original
+#. # en-US value "{{manageCertificates}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID
+#. # "manageCertificates".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: manageCertificates-header
+msgid "{{manageCertificates}}"
+msgstr ""
 
 #: joinHiddenNetwork
 #, fuzzy
@@ -447,6 +476,8 @@ msgid "No known networks"
 msgstr "គ្មាន​បណ្ដាញ​ដែល​ស្គាល់"
 
 #: edit
+#, fuzzy
+msgctxt "edit"
 msgid "Edit"
 msgstr "កែសម្រួល​"
 
@@ -460,15 +491,18 @@ msgid "No certificates imported"
 msgstr ""
 
 #: deleteCertificate
-msgid "Delete certificate"
+#, fuzzy
+msgid "Delete Certificate"
 msgstr "លុប​វិញ្ញាបនបត្រ"
 
 #: importCertificate
-msgid "Import certificate"
+#, fuzzy
+msgid "Import Certificate"
 msgstr "នាំចូល​វិញ្ញាបនបត្រ"
 
 #: selectCertificateFile
-msgid "Select certificate file"
+#, fuzzy
+msgid "Select Certificate File"
 msgstr "ជ្រើស​ឯកសារ​វិញ្ញាបនបត្រ"
 
 #: enterCertificateNickname
@@ -580,6 +614,8 @@ msgstr "បាន​បរាជ័យ​ក្នុង​ការ​បោះ
 
 #. # Connectivity :: Call
 #: callSettings
+#, fuzzy
+msgctxt "callSettings"
 msgid "Call Settings"
 msgstr "កំណត់​ការ​ហៅ"
 
@@ -691,7 +727,7 @@ msgstr "បញ្ជូន​បន្ត​ពេល​មិន​អាច​
 msgid "When unreachable"
 msgstr "ពេល​មិន​អាច​ទាក់ទង​បាន"
 
-#: callForwardingForwardingVoiceToNumber.innerHTML
+#: callForwardingForwardingVoiceToNumber
 msgid "Voice calls to <bdi>{{number}}</bdi>"
 msgstr ""
 
@@ -970,10 +1006,6 @@ msgstr ""
 msgid "The PIN2 code is incorrect."
 msgstr "​កូដ PUK2 មិន​ត្រឹមត្រូវ។"
 
-#: fdn-enabled-warning
-msgid "Call forwarding is disabled by FDN."
-msgstr "ការ​បញ្ជូន​ការ​ហៅ​បន្ត​ត្រូវ​បាន​បិទ​ដោយ FDN ។"
-
 #: fdnContact-name
 msgid "name"
 msgstr "ឈ្មោះ"
@@ -1015,6 +1047,8 @@ msgstr ""
 
 #. # Connectivity :: Messaging
 #: messagingSettings
+#, fuzzy
+msgctxt "messagingSettings"
 msgid "Messaging Settings"
 msgstr "កំណត់​ការ​ផ្ញើ​សារ"
 
@@ -1047,13 +1081,9 @@ msgstr "អាន​របាយការណ៍"
 msgid "Request read report for each message sent"
 msgstr "ស្នើ​ការ​អាន​របាយការណ៍​សម្រាប់​សារ​នីមួយៗ​ដែល​បាន​ផ្ញើ"
 
-#. # LOCALIZATION NOTE (mmsTitle): LRE (&#x202a;) and PDF (&#x202c;)
-#. # force the proper directionality of parentheses at the end of the string
-#. # regardless of the direction of the surrounding layout. Remove them only
-#. # if the translation puts them between other text.
-#: mmsTitle.innerHTML
-msgid "&#x202a;Multimedia Messaging (MMS)&#x202c;"
-msgstr ""
+#: mmsTitle
+msgid "Multimedia Messaging (MMS)"
+msgstr "Multimedia messaging (MMS)"
 
 #: auto-retrieve
 msgid "Auto Retrieve"
@@ -1119,6 +1149,8 @@ msgstr "មិន​មាន​ព័ត៌មាន"
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
+#, fuzzy
+msgctxt "cellularAndData"
 msgid "Cellular & Data"
 msgstr "Cellular & ទិន្នន័យ"
 
@@ -1228,6 +1260,11 @@ msgstr "ពេញ​ចិត្ត WCDMA"
 msgid "Auto (2G/3G)"
 msgstr "(2G/3G) ស្វ័យប្រវត្តិ"
 
+#: operator-networkType-auto-3G-4G
+#, fuzzy
+msgid "Auto (3G/4G)"
+msgstr "(2G/3G) ស្វ័យប្រវត្តិ"
+
 #: operator-networkType-auto-CDMA-EVDO
 msgid "Auto (CDMA/EVDO)"
 msgstr "(CDMA/EVDO) ស្វ័យប្រវត្តិ"
@@ -1238,6 +1275,11 @@ msgstr "(WCDMA/GSM) ស្វ័យប្រវត្តិ"
 
 #: operator-networkType-auto-LTE-WCDMA-GSM
 msgid "Auto (LTE/WCDMA/GSM)"
+msgstr "(LTE/WCDMA/GSM) ស្វ័យប្រវត្តិ"
+
+#: operator-networkType-auto-LTE-WCDMA
+#, fuzzy
+msgid "Auto (LTE/WCDMA)"
 msgstr "(LTE/WCDMA/GSM) ស្វ័យប្រវត្តិ"
 
 #: operator-networkType-auto-LTE-CDMA-EVDO
@@ -1266,20 +1308,47 @@ msgstr "​ដោយ​ដៃ"
 msgid "Turn automatic selection off to view available network operators."
 msgstr "បិទ​ជម្រើស​ស្វ័យប្រវត្តិ​ដើម្បី​មើល​ប្រតិបត្តិករ​បណ្ដាញ​ដែល​មាន​។"
 
-#: operator-status-connecting
-msgctxt "operator-status-connecting"
+#: operator-info-connecting
+#, fuzzy
+msgctxt "operator-info-connecting"
 msgid "Connecting…"
 msgstr "កំពុង​ភ្ជាប់..."
 
-#: operator-status-connectingfailed
-msgctxt "operator-status-connectingfailed"
+#: operator-info-failed
+#, fuzzy
+msgctxt "operator-info-failed"
 msgid "Connection failed"
-msgstr "បាន​បរាជ័យ​ការ​ភ្ជាប់"
+msgstr "បាន​បរាជ័យ​ការ​ត​ភ្ជាប់"
 
-#: operator-status-connected
-msgctxt "operator-status-connected"
+#: operator-info-connected
+#, fuzzy
+msgctxt "operator-info-connected"
 msgid "Connected"
 msgstr "បាន​តភ្ជាប់"
+
+#: operator-info-available
+#, fuzzy
+msgctxt "operator-info-available"
+msgid "Available"
+msgstr "មាន"
+
+#: operator-info-current
+#, fuzzy
+msgctxt "operator-info-current"
+msgid "Connected"
+msgstr "បាន​តភ្ជាប់"
+
+#: operator-info-forbidden
+#, fuzzy
+msgctxt "operator-info-forbidden"
+msgid "Forbidden"
+msgstr "ហាមឃាត់"
+
+#: operator-info-unknown
+#, fuzzy
+msgctxt "operator-info-unknown"
+msgid "Unknown state"
+msgstr "មិន​ស្គាល់​សភាព"
 
 #: operator-roamingPreference
 msgid "Roaming preference"
@@ -1385,6 +1454,20 @@ msgstr "ការ​កំណត់ IMS"
 #: imsSettings-header2
 msgid "{{imsSettings}}"
 msgstr "{{imsSettings}}"
+
+#: fotaSettings
+msgid "FOTA Settings"
+msgstr ""
+
+#. # LOCALIZATION NOTE (fotaSettings-header): if you leave the original
+#. # en-US value "{{fotaSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "fotaSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: fotaSettings-header
+#, fuzzy
+msgid "{{fotaSettings}}"
+msgstr "{{dataSettings}}"
 
 #: apn-editor-header
 msgid "APN Editor"
@@ -1511,10 +1594,14 @@ msgid "This resets the settings to default values. This cannot be undone."
 msgstr ""
 
 #: state-unknown
+#, fuzzy
+msgctxt "state-unknown"
 msgid "Unknown state"
 msgstr "មិន​ស្គាល់​សភាព"
 
 #: state-available
+#, fuzzy
+msgctxt "state-available"
 msgid "Available"
 msgstr "មាន"
 
@@ -1529,6 +1616,8 @@ msgid "Connected"
 msgstr "បាន​តភ្ជាប់"
 
 #: state-forbidden
+#, fuzzy
+msgctxt "state-forbidden"
 msgid "Forbidden"
 msgstr "ហាមឃាត់"
 
@@ -1557,6 +1646,8 @@ msgstr ""
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
+#, fuzzy
+msgctxt "bluetooth"
 msgid "Bluetooth"
 msgstr "ប៊្លូធូស"
 
@@ -1713,9 +1804,13 @@ msgstr "ប្ដូរ​ឈ្មោះ​ឧបករណ៍​ខ្ញុំ
 msgid "Unknown device"
 msgstr "មិន​ស្គាល់​ឧបករណ៍"
 
-#: change-phone-name-desc
-msgid "Change the name of your device as it appears in your computer"
-msgstr "ប្ដូរ​ឈ្មោះ​ឧបករណ៍​ដូច​វា​បង្ហាញ​ក្នុង​កុំព្យូទ័រ​របស់​អ្នក"
+#: change-btdevice-name
+msgid "Change device name"
+msgstr ""
+
+#: change-btdevice-name-desc
+msgid "This name will appear on your other Bluetooth devices"
+msgstr ""
 
 #: bluetooth-new-name
 msgid "New name"
@@ -1753,18 +1848,29 @@ msgid ""
 "from it."
 msgstr "បច្ចុប្បន្ន​អ្នក​មិន​ត្រូវ​បាន​ភ្ជាប់​ទៅ​ឧបករណ៍​នេះ​ទេ។ ការ​មិន​ផ្គូផ្គង​​ក៏​នឹង​ផ្ដាច់​ពី​វា។"
 
+#: unpair-confirm
+msgid ""
+"{{unpair-title}}\n"
+"{{unpair-msg}}"
+msgstr ""
+
 #. # Connectivity :: NFC
 #: nfc
+#, fuzzy
+msgctxt "nfc"
+msgid "NFC"
+msgstr "NFC"
+
+#: nfc.ariaLabel
+#, fuzzy
+msgctxt "nfc.ariaLabel"
 msgid "NFC"
 msgstr "NFC"
 
 #. # Connectivity :: Internet Sharing
-#: SSIDCannotBeEmpty
-msgid "The SSID cannot be empty"
-msgstr "SSID មិន​អាច​ទទេ"
-
 #: internetSharing
 #, fuzzy
+msgctxt "internetSharing"
 msgid "Internet Sharing"
 msgstr "ការ​ចែករំលែក​អ៊ីនធឺណិត"
 
@@ -1849,7 +1955,7 @@ msgstr "{{hotspotSettings}}"
 msgid "SSID Network Name"
 msgstr "ឈ្មោះ​បណ្ដាញ SSID"
 
-#: hotspot-open
+#: hotspot-security-open
 msgid "open"
 msgstr "បើក"
 
@@ -1860,8 +1966,8 @@ msgstr "បើក"
 #. # and PDF (&#x202c;) entities to these translations to force the correct direction.
 #. #
 #. # RTL locales should have a translation similar to this:
-#. # hotspot-wpa-psk.innerHTML= &#x202a;WPA (TKIP)&#x202c;
-#. # hotspot-wpa2-psk.innerHTML= &#x202a;WPA2 (AES)&#x202c;
+#. # hotspot-wpa-psk= &#x202a;WPA (TKIP)&#x202c;
+#. # hotspot-wpa2-psk= &#x202a;WPA2 (AES)&#x202c;
 #. #
 #. # [More details]
 #. #
@@ -1872,17 +1978,13 @@ msgstr "បើក"
 #. # automatically in a wrong way by browser. Because from engineering side,
 #. # we can only change settings.ar.properties, for localizers, please remember to
 #. # put them in the other RTL languages.
-#. #
-#. # Additionally, in order to make this hack work, we got some help from l10n.js
-#. # that we need to put these strings inside "KEY".innerHTML, so that's the
-#. # reason why these two strings below would be suffixed with ".innerHTML"
-#: hotspot-wpa-psk.innerHTML
-msgid "WPA (TKIP)"
-msgstr "WPA (TKIP)"
+#: hotspot-security-wpa-psk
+msgid "WPA"
+msgstr ""
 
-#: hotspot-wpa2-psk.innerHTML
-msgid "WPA2 (AES)"
-msgstr "WPA2 (AES)"
+#: hotspot-security-wpa2-psk
+msgid "WPA2"
+msgstr ""
 
 #: hotspot-password-desc
 msgid "The password must have at least 8 characters."
@@ -1897,6 +1999,14 @@ msgstr "ការ​កំណត់​ផ្ទាល់ខ្លួន"
 
 #. # Personalization :: Sound
 #: sound
+#, fuzzy
+msgctxt "sound"
+msgid "Sound"
+msgstr "សំឡេង"
+
+#: sound.ariaLabel
+#, fuzzy
+msgctxt "sound.ariaLabel"
 msgid "Sound"
 msgstr "សំឡេង"
 
@@ -1986,6 +2096,14 @@ msgstr "យើង​រក​មិន​ឃើញ​កម្មវិធី​
 
 #. # Personalization :: Display
 #: display
+#, fuzzy
+msgctxt "display"
+msgid "Display"
+msgstr "បង្ហាញ"
+
+#: display.ariaLabel
+#, fuzzy
+msgctxt "display.ariaLabel"
 msgid "Display"
 msgstr "បង្ហាញ"
 
@@ -2047,6 +2165,14 @@ msgstr "ចាក់​សោ​ការ​បង្វិល"
 
 #. # Personalization :: Navigation
 #: navigation
+#, fuzzy
+msgctxt "navigation"
+msgid "Navigation"
+msgstr "ការ​រុករក"
+
+#: navigation.ariaLabel
+#, fuzzy
+msgctxt "navigation.ariaLabel"
 msgid "Navigation"
 msgstr "ការ​រុករក"
 
@@ -2070,6 +2196,14 @@ msgstr "អូស​ពី​​ចុង​ខាង​ឆ្វេង ឬ​�
 
 #. # Personalization :: Notifications
 #: notifications
+#, fuzzy
+msgctxt "notifications"
+msgid "Notifications"
+msgstr "ការ​ជូន​ដំណឹង"
+
+#: notifications.ariaLabel
+#, fuzzy
+msgctxt "notifications.ariaLabel"
 msgid "Notifications"
 msgstr "ការ​ជូន​ដំណឹង"
 
@@ -2092,6 +2226,8 @@ msgstr "បង្ហាញ​បន្ទាប់​ពី​ចាប់ផ្
 
 #. # Personalization :: Date & Time
 #: dateAndTime
+#, fuzzy
+msgctxt "dateAndTime"
 msgid "Date & Time"
 msgstr "កាលបរិច្ឆេទ &​ពេលវេលា"
 
@@ -2159,6 +2295,8 @@ msgid "Language & Region"
 msgstr "ភាសា & តំបន់"
 
 #: language
+#, fuzzy
+msgctxt "language"
 msgid "Language"
 msgstr "ភាសា"
 
@@ -2197,6 +2335,7 @@ msgstr ""
 #. # Personalization :: Sim cards manager
 #: simManager
 #, fuzzy
+msgctxt "simManager"
 msgid "SIM Manager"
 msgstr "កម្មវិធី​គ្រប់គ្រង​ SIM"
 
@@ -2276,6 +2415,12 @@ msgctxt "homescreen"
 msgid "Homescreen"
 msgstr "អេក្រង់​ដើម"
 
+#: homescreen.ariaLabel
+#, fuzzy
+msgctxt "homescreen.ariaLabel"
+msgid "Homescreen"
+msgstr "អេក្រង់​ដើម"
+
 #: vertical-homescreen-header
 msgctxt "vertical-homescreen-header"
 msgid "Homescreen"
@@ -2307,6 +2452,12 @@ msgctxt "search"
 msgid "Search"
 msgstr "ស្វែងរក"
 
+#: search.ariaLabel
+#, fuzzy
+msgctxt "search.ariaLabel"
+msgid "Search"
+msgstr "ស្វែងរក"
+
 #: search-header
 #, fuzzy
 msgctxt "search-header"
@@ -2332,6 +2483,14 @@ msgstr ""
 
 #. # Personalization :: Homescreens
 #: homescreens
+#, fuzzy
+msgctxt "homescreens"
+msgid "Homescreens"
+msgstr "អេក្រង់​ដើម"
+
+#: homescreens.ariaLabel
+#, fuzzy
+msgctxt "homescreens.ariaLabel"
 msgid "Homescreens"
 msgstr "អេក្រង់​ដើម"
 
@@ -2354,6 +2513,8 @@ msgid "Change"
 msgstr "ផ្លាស់ប្ដូរ"
 
 #: description
+#, fuzzy
+msgctxt "description"
 msgid "Description"
 msgstr "ការ​ពិពណ៌នា"
 
@@ -2367,6 +2528,8 @@ msgid "Selected Keyboards"
 msgstr "ក្ដារ​ចុច​ដែល​បាន​ជ្រើស"
 
 #: keyboards
+#, fuzzy
+msgctxt "keyboards"
 msgid "Keyboards"
 msgstr "ក្ដារចុច"
 
@@ -2431,6 +2594,12 @@ msgstr "{{appName}} {{layoutName}} ត្រូវ​បាន​កំណត់
 
 #. # Personalization :: Themes
 #: themes
+msgctxt "themes"
+msgid "Themes"
+msgstr ""
+
+#: themes.ariaLabel
+msgctxt "themes.ariaLabel"
 msgid "Themes"
 msgstr ""
 
@@ -2499,16 +2668,10 @@ msgstr "បោះបង់​ការ​បញ្ជាក់​គណនី"
 msgid "A verification link has been sent to {{email}}."
 msgstr "តំណ​ផ្ទៀងផ្ទាត់​ត្រូវ​បាន​ផ្ញើ​ទៅ {{email}} ។"
 
-#. # LOCALIZATION NOTE (fxa-dont-see-email): the "{{resend}}" placeholder
-#. # will be replaced with a link containing the string with ID "fxa-resend":
-#. # "Don't see an email? <a>Resend</a>."
-#: fxa-dont-see-email
-msgid "Don’t see an email? {{resend}}."
+#: fxa-dont-see-email-resend
+#, fuzzy
+msgid "Don’t see an email? <a>Resend</a>."
 msgstr "មិន​ឃើញអ៊ីមែល? {{resend}} ។"
-
-#: fxa-resend
-msgid "Resend"
-msgstr "ផ្ញើ​ម្ដង​ទៀត"
 
 #. # Panel: logged in, verified
 #: fxa-about
@@ -2533,6 +2696,8 @@ msgid "Find My Device"
 msgstr "ស្វែងរក​ឧបករណ៍​របស់​ខ្ញុំ"
 
 #: fxa-options
+#, fuzzy
+msgctxt "fxa-options"
 msgid "Options"
 msgstr "ជម្រើស"
 
@@ -2611,6 +2776,7 @@ msgstr "លេខ​កូដ៖ {{code}}"
 
 #: screenLock
 #, fuzzy
+msgctxt "screenLock"
 msgid "Screen Lock"
 msgstr "ចាក់សោ​អេក្រង់"
 
@@ -2623,8 +2789,17 @@ msgstr "ចាក់សោ​អេក្រង់"
 msgid "{{screenLock}}"
 msgstr "{{screenLock}}"
 
+#: screenLock-enabled-with-no-passcode
+msgid "Enabled with no passcode"
+msgstr ""
+
+#: screenLock-enabled-with-passcode
+msgid "Enabled with passcode"
+msgstr ""
+
 #: simSecurity
 #, fuzzy
+msgctxt "simSecurity"
 msgid "SIM Security"
 msgstr "សុវត្ថិភាព​ SIM"
 
@@ -2640,6 +2815,13 @@ msgstr "{{simSecurity}}"
 #. # Security :: App permissions
 #: appPermissions
 #, fuzzy
+msgctxt "appPermissions"
+msgid "App Permissions"
+msgstr "ការ​អនុញ្ញាត​​កម្មវិធី"
+
+#: appPermissions.ariaLabel
+#, fuzzy
+msgctxt "appPermissions.ariaLabel"
 msgid "App Permissions"
 msgstr "ការ​អនុញ្ញាត​​កម្មវិធី"
 
@@ -3073,6 +3255,8 @@ msgstr ""
 
 #. # Security :: Do Not Track
 #: doNotTrack
+#, fuzzy
+msgctxt "doNotTrack"
 msgid "Do Not Track"
 msgstr "Do Not Track"
 
@@ -3121,6 +3305,12 @@ msgstr ""
 
 #. # Security :: Browsing Privacy
 #: browsingPrivacy
+msgctxt "browsingPrivacy"
+msgid "Browsing Privacy"
+msgstr ""
+
+#: browsingPrivacy.ariaLabel
+msgctxt "browsingPrivacy.ariaLabel"
 msgid "Browsing Privacy"
 msgstr ""
 
@@ -3161,11 +3351,12 @@ msgstr "សម្អាត"
 
 #. # Security :: Privacy Panel
 #: privacy-controls
+msgctxt "privacy-controls"
 msgid "Privacy Controls"
 msgstr ""
 
-#: no-privacy-panel
-msgid "No privacy panel app found"
+#: no-privacy-controls
+msgid "No privacy controls app found"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3187,6 +3378,7 @@ msgstr "ដក​ខ្សែ USB ដើម្បី​បិទ​មិន​�
 
 #: appStorage
 #, fuzzy
+msgctxt "appStorage"
 msgid "Application Storage"
 msgstr "កន្លែង​ផ្ទុក​កម្មវិធី"
 
@@ -3198,26 +3390,6 @@ msgstr "កន្លែង​ផ្ទុក​កម្មវិធី"
 #: appStorage-header
 msgid "{{appStorage}}"
 msgstr "{{appStorage}}"
-
-#: byteUnit-B
-msgid "B"
-msgstr "B"
-
-#: byteUnit-KB
-msgid "KB"
-msgstr "KB"
-
-#: byteUnit-MB
-msgid "MB"
-msgstr "MB"
-
-#: byteUnit-GB
-msgid "GB"
-msgstr "GB"
-
-#: byteUnit-TB
-msgid "TB"
-msgstr "TB"
 
 #: storageSize
 msgid "{{size}} {{unit}}"
@@ -3286,16 +3458,17 @@ msgid "Transfer Protocol"
 msgstr ""
 
 #: protocol-mtp
-msgid "Media transfer protocol (MTP)"
+msgid "Media Transfer Protocol (MTP)"
 msgstr ""
 
 #: protocol-ums
-msgid "USB mass Storage (UMS)"
+msgid "USB Mass Storage (UMS)"
 msgstr ""
 
 #. # Storage :: Media storage
 #: mediaStorage
 #, fuzzy
+msgctxt "mediaStorage"
 msgid "Media Storage"
 msgstr "កន្លែង​ផ្ទុក​មេឌៀ"
 
@@ -3461,6 +3634,23 @@ msgstr "ទ្រង់ទ្រាយ"
 msgid "SD card unmounted"
 msgstr ""
 
+#: ums-partial-support-warning-title
+msgid "Warning: USB Mass Storage may not work"
+msgstr ""
+
+#: ums-partial-support-warning-msg-1
+msgid ""
+"USB Mass Storage will only work correctly with an external SD card. If you'd "
+"like to be able to access both your internal and external storage, you must "
+"use MTP."
+msgstr ""
+
+#: ums-partial-support-warning-msg-2
+msgid ""
+"Press \"OK\" to switch to USB Mass Storage, or \"Cancel\" to remain in MTP "
+"mode."
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Device
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3473,9 +3663,22 @@ msgctxt "help"
 msgid "Help"
 msgstr "ជំនួយ"
 
+#: help.ariaLabel
+#, fuzzy
+msgctxt "help.ariaLabel"
+msgid "Help"
+msgstr "ជំនួយ"
+
 #. # Device :: Information
 #: deviceInfo
 #, fuzzy
+msgctxt "deviceInfo"
+msgid "Device Information"
+msgstr "ព័ត៌មាន​​ពី​ឧបករណ៍"
+
+#: deviceInfo.ariaLabel
+#, fuzzy
+msgctxt "deviceInfo.ariaLabel"
 msgid "Device Information"
 msgstr "ព័ត៌មាន​​ពី​ឧបករណ៍"
 
@@ -3492,7 +3695,7 @@ msgstr "{{deviceInfo}}"
 msgid "IMEI"
 msgstr "IMEI"
 
-#: deviceInfo-IMEI-with-index.innerHTML
+#: deviceInfo-IMEI-with-index
 msgid "IMEI {{index}}: <bdi>{{imei}}</bdi>"
 msgstr ""
 
@@ -3500,7 +3703,7 @@ msgstr ""
 msgid "ICCID"
 msgstr "ICCID"
 
-#: deviceInfo-ICCID-with-index.innerHTML
+#: deviceInfo-ICCID-with-index
 msgid "SIM {{index}}: <bdi>{{iccid}}</bdi>"
 msgstr ""
 
@@ -3509,7 +3712,7 @@ msgstr ""
 msgid "Phone Number"
 msgstr "លេខ​ទូរស័ព្ទ"
 
-#: deviceInfo-MSISDN-with-index.innerHTML
+#: deviceInfo-MSISDN-with-index
 msgid "SIM {{index}}: <bdi>{{msisdn}}</bdi>"
 msgstr ""
 
@@ -3518,6 +3721,14 @@ msgid "SIM {{index}}: Not available"
 msgstr "SIM {{index}}: មិន​អាច​ប្រើ​បាន"
 
 #: downloads
+#, fuzzy
+msgctxt "downloads"
+msgid "Downloads"
+msgstr "ទាញយក"
+
+#: downloads.ariaLabel
+#, fuzzy
+msgctxt "downloads.ariaLabel"
 msgid "Downloads"
 msgstr "ទាញយក"
 
@@ -3543,268 +3754,6 @@ msgstr "SIM {{index}}: មិន​ស្គាល់"
 msgid "Git Commit Info"
 msgstr "Git commit info"
 
-#: developer
-msgid "Developer"
-msgstr "អ្នក​អភិវឌ្ឍន៍"
-
-#. # LOCALIZATION NOTE (developer-header): if you leave the original
-#. # en-US value "{{developer}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "developer".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: developer-header
-msgid "{{developer}}"
-msgstr "{{developer}}"
-
-#: hud-settings-button
-msgid "Developer HUD"
-msgstr "អ្នកអភិវឌ្ឍ HUD"
-
-#. # LOCALIZATION NOTE (hud-settings-header): if you leave the original en-US value
-#. # "{{hud-settings-button}}" in the following string, the localization will be
-#. # automatically picked from the existing string with ID "hud-settings-button". If you
-#. # need to adapt your localizations to the available space in headers or
-#. # buttons, you can use different strings here.
-#: hud-settings-header
-msgid "{{hud-settings-button}}"
-msgstr ""
-
-#: hud-devtools
-#, fuzzy
-msgid "Developer tools"
-msgstr "ឧបករណ៍​អ្នក​អភិវឌ្ឍន៍"
-
-#. # LOCALIZATION NOTE (hud-devtools-header): if you leave the original en-US
-#. # value "{{hud-devtools}}" in the following string, the localization will be
-#. # automatically picked from the existing string with ID "hud-devtools". If you
-#. # need to adapt your localizations to the available space in headers or
-#. # buttons, you can use different strings here.
-#: hud-devtools-header
-msgid "{{hud-devtools}}"
-msgstr ""
-
-#: hud-logging
-msgid "Log changes in ADB"
-msgstr "ការ​ផ្លាស់ប្ដូរ​កំណត់​ហេតុ​ក្នុង ADB"
-
-#: hud-system
-msgid "Show system HUD"
-msgstr "បង្ហាញ HUD ប្រព័ន្ធ"
-
-#: hud-problems
-msgid "Problems"
-msgstr "បញ្ហា"
-
-#: hud-warnings
-msgid "Warnings"
-msgstr "ការ​ព្រមាន"
-
-#: hud-errors
-msgid "Errors"
-msgstr "កំហុស"
-
-#: hud-security
-msgid "Security issues"
-msgstr "បង្ហាញ​សុវត្ថិភាព"
-
-#: hud-performance
-msgid "Performance"
-msgstr "ដំណើរការ"
-
-#: hud-reflows
-msgid "Reflows"
-msgstr "លំហូរ​ឡើងវិញ"
-
-#: hud-jank
-msgid "Jank"
-msgstr "ត្រឡប់ត្រឡិន"
-
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "កម្រិត​ពណ៌​​ត្រឡប់ត្រឡិន"
-
-#: hud-fps
-msgid "Frames per second"
-msgstr "ស៊ុម​ក្នុង​មួយ​វិនាទី"
-
-#: hud-ttl
-msgid "Time to load"
-msgstr "ពេលវេលា​ត្រូវ​ផ្ទុក"
-
-#: hud-memory
-msgid "Memory"
-msgstr "អង្គ​ចងចាំ​"
-
-#: hud-uss
-msgid "Unique Set Size"
-msgstr "កំណត់​ទំហំ​តែមួយ"
-
-#: hud-appmemory
-msgid "App memory"
-msgstr "អង្គ​ចងចាំ​កម្មវិធី"
-
-#: hud-jsobjects
-msgid "JS objects"
-msgstr "កម្មវត្ថុ JS"
-
-#: hud-jsstrings
-msgid "JS strings"
-msgstr "ឃ្លា JS"
-
-#: hud-jsother
-msgid "JS other"
-msgstr "JS ផ្សេង​ទៀត"
-
-#: hud-dom
-msgid "DOM"
-msgstr "DOM"
-
-#: hud-style
-msgid "Style"
-msgstr "​រចនាប័ទ្ម"
-
-#: hud-other
-msgctxt "hud-other"
-msgid "Other"
-msgstr "ផ្សេងៗ"
-
-#: software
-msgid "Software"
-msgstr "កម្មវិធី​​ផ្នែក​ទន់"
-
-#: devSettings
-#, fuzzy
-msgid "Developer Settings"
-msgstr "ការ​កំណត់​អ្នក​អភិវឌ្ឍន៍"
-
-#: debug
-msgid "Debug"
-msgstr "បំបាត់​កំហុស"
-
-#: developer-menu
-msgid "Developer Menu"
-msgstr "ម៉ឺនុយ​អ្នក​អភិវឌ្ឍន៍"
-
-#: developer-tools
-msgid "Developer Tools"
-msgstr "ឧបករណ៍​អ្នក​អភិវឌ្ឍន៍"
-
-#: graphics
-msgid "Graphics"
-msgstr "ក្រាហ្វិក"
-
-#: hardware-composer
-msgid "Hardware composer"
-msgstr "Hardware composer"
-
-#: paint-flashing
-msgid "Flash repainted area"
-msgstr "តំបន់​បាញ់​ផ្លាស់"
-
-#: dumps-layers
-msgid "Dump layers tree"
-msgstr "Dump layers tree"
-
-#: dumps-layerscope
-#, fuzzy
-msgid "Dump layerscope"
-msgstr "Dump layers tree"
-
-#: apz-overscroll
-msgid "Overscrolling"
-msgstr "ការ​រមូរ​លើ"
-
-#: tiling
-msgid "Tiling"
-msgstr "ក្បឿង"
-
-#: low-precision
-msgid "Low-precision painting"
-msgstr "គំនូរ​ជាក់លាក់​ទាប"
-
-#: low-opacity
-msgid "Low-precision transparency"
-msgstr "ភាព​ថ្លា​ជាក់លាក់​ទាប"
-
-#: draw-tile-borders
-msgid "Draw tile borders"
-msgstr "គូរ​ក្រឡា​ស៊ុម"
-
-#: draw-layer-borders
-msgid "Draw layer borders"
-msgstr "គូរ​ស៊ុម​ស្រទាប់"
-
-#: log-animations
-msgid "Log slow animations"
-msgstr "ចលនា​យឺតៗ​សម្ពឹក"
-
-#: remote-debugging-usb
-msgid "Debugging via USB"
-msgstr "ការ​បំបាត់​កំហុស​តាម​រយៈ​យូអេសប៊ី"
-
-#: dev-tools-wifi
-msgid "DevTools via Wi-Fi"
-msgstr "DevTools តាម​រយៈ​វ៉ាយហ្វាយ​"
-
-#: dev-tools-qps
-msgid "Pseudo-localization"
-msgstr ""
-
-#: debugger-disabled
-msgctxt "debugger-disabled"
-msgid "Disabled"
-msgstr "បាន​បិទ"
-
-#: debugger-adb-only
-msgid "ADB only"
-msgstr "តែ ADB"
-
-#: debugger-adb-and-devtools
-msgid "ADB and DevTools"
-msgstr "ADB និង DevTools"
-
-#: wifi-debugging
-msgid "Wi-Fi output in ADB"
-msgstr "លទ្ធផល​វ៉ាយហ្វាយ​នៅ​ក្នុង ADB"
-
-#: bluetooth-debugging
-msgid "Bluetooth output in ADB"
-msgstr "លទ្ធផល​ប៊្លូធូស​នៅ​ក្នុង ADB"
-
-#: nfc-debugging
-#, fuzzy
-msgid "NFC output in ADB"
-msgstr "លទ្ធផល​វ៉ាយហ្វាយ​នៅ​ក្នុង ADB"
-
-#: ril-debugging
-#, fuzzy
-msgid "RIL output in ADB"
-msgstr "លទ្ធផល​វ៉ាយហ្វាយ​នៅ​ក្នុង ADB"
-
-#: console-enabled
-msgid "Console enabled"
-msgstr "បាន​អនុញ្ញាត Console"
-
-#: cards-view-screenshots
-msgid "Cards View: Screenshots"
-msgstr "ទិដ្ឋភាព​កាត៖ រូបថត​អេក្រង់"
-
-#: geolocation-debugging-enabled
-msgid "Geolocation output in ADB"
-msgstr "លទ្ធផល​ទីតាំង​ភូមិសាស្ត្រ​នៅ​ក្នុង ADB"
-
-#: geolocation-debugging-gps-locations-ignored
-msgid "Ignore GPS locations"
-msgstr ""
-
-#: use-reviewer-certs
-msgid "Use Marketplace reviewer certs"
-msgstr "ប្រើ​វិញ្ញាបនបត្រ​កម្មវិធី​មើល​ Marketplace"
-
-#: shake-to-log
-msgid "Shake to save system log"
-msgstr ""
-
 #: model-name
 msgid "Model"
 msgstr "ម៉ូដែល"
@@ -3818,6 +3767,14 @@ msgstr "កំណែ​ប្រព័ន្ធ​ប្រតិបត្តិ
 #, fuzzy
 msgid "Firmware Revision"
 msgstr "ការ​កែប្រែ​ Firmware"
+
+#: hardware_manufacturer
+msgid "Hardware Manufacturer"
+msgstr ""
+
+#: hardware_platform
+msgid "Hardware Platform"
+msgstr ""
 
 #: hardware_revision
 #, fuzzy
@@ -3943,22 +3900,6 @@ msgstr "កំណត់​ឡើង​វិញ"
 #: reset-warning-title
 #, fuzzy
 msgctxt "reset-warning-title"
-msgid "CAUTION"
-msgstr "ប្រយ័ត្ន"
-
-#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
-#. # full DevTools access.
-#: unlock-privileges
-msgid "Unlock Privileges"
-msgstr ""
-
-#: reset-devtools
-msgid "Reset and enable full DevTools"
-msgstr ""
-
-#: reset-devtools-warning-title
-#, fuzzy
-msgctxt "reset-devtools-warning-title"
 msgid "CAUTION"
 msgstr "ប្រយ័ត្ន"
 
@@ -4124,6 +4065,335 @@ msgstr "Mozilla Public License 2.0"
 msgid "Apache License 2.0"
 msgstr "Apache License 2.0"
 
+#. # Device :: Developer
+#: developer
+#, fuzzy
+msgctxt "developer"
+msgid "Developer"
+msgstr "អ្នក​អភិវឌ្ឍន៍"
+
+#: developer.ariaLabel
+#, fuzzy
+msgctxt "developer.ariaLabel"
+msgid "Developer"
+msgstr "អ្នក​អភិវឌ្ឍន៍"
+
+#. # LOCALIZATION NOTE (developer-header): if you leave the original
+#. # en-US value "{{developer}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "developer".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: developer-header
+msgid "{{developer}}"
+msgstr "{{developer}}"
+
+#: hud-settings-button
+msgid "Developer HUD"
+msgstr "អ្នកអភិវឌ្ឍ HUD"
+
+#. # LOCALIZATION NOTE (hud-settings-header): if you leave the original en-US value
+#. # "{{hud-settings-button}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-settings-button". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-settings-header
+msgid "{{hud-settings-button}}"
+msgstr ""
+
+#: hud-devtools
+#, fuzzy
+msgctxt "hud-devtools"
+msgid "Developer Tools"
+msgstr "ឧបករណ៍​អ្នក​អភិវឌ្ឍន៍"
+
+#. # LOCALIZATION NOTE (hud-devtools-header): if you leave the original en-US
+#. # value "{{hud-devtools}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-devtools". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-devtools-header
+msgid "{{hud-devtools}}"
+msgstr ""
+
+#: hud-hide
+msgid "Hide All HUD Elements"
+msgstr ""
+
+#: hud-logging
+#, fuzzy
+msgid "Log Changes in ADB"
+msgstr "ការ​ផ្លាស់ប្ដូរ​កំណត់​ហេតុ​ក្នុង ADB"
+
+#: hud-system
+#, fuzzy
+msgid "Show System HUD"
+msgstr "បង្ហាញ HUD ប្រព័ន្ធ"
+
+#: hud-problems
+msgid "Problems"
+msgstr "បញ្ហា"
+
+#: hud-warnings
+msgid "Warnings"
+msgstr "ការ​ព្រមាន"
+
+#: hud-errors
+msgid "Errors"
+msgstr "កំហុស"
+
+#: hud-security
+#, fuzzy
+msgid "Security Issues"
+msgstr "បង្ហាញ​សុវត្ថិភាព"
+
+#: hud-performance
+msgid "Performance"
+msgstr "ដំណើរការ"
+
+#: hud-reflows
+msgid "Reflows"
+msgstr "លំហូរ​ឡើងវិញ"
+
+#: hud-jank
+msgid "Jank"
+msgstr "ត្រឡប់ត្រឡិន"
+
+#: jank-threshold
+msgid "Jank Threshold"
+msgstr "កម្រិត​ពណ៌​​ត្រឡប់ត្រឡិន"
+
+#: hud-fps
+#, fuzzy
+msgid "Frames per Second"
+msgstr "ស៊ុម​ក្នុង​មួយ​វិនាទី"
+
+#: hud-ttl
+#, fuzzy
+msgid "Time to Load"
+msgstr "ពេលវេលា​ត្រូវ​ផ្ទុក"
+
+#: hud-memory
+msgid "Memory"
+msgstr "អង្គ​ចងចាំ​"
+
+#: hud-uss
+msgid "Unique Set Size"
+msgstr "កំណត់​ទំហំ​តែមួយ"
+
+#: hud-appmemory
+#, fuzzy
+msgid "App Memory"
+msgstr "អង្គ​ចងចាំ​កម្មវិធី"
+
+#: hud-jsobjects
+#, fuzzy
+msgid "JS Objects"
+msgstr "កម្មវត្ថុ JS"
+
+#: hud-jsstrings
+#, fuzzy
+msgid "JS Strings"
+msgstr "ឃ្លា JS"
+
+#: hud-jsother
+#, fuzzy
+msgid "JS Other"
+msgstr "JS ផ្សេង​ទៀត"
+
+#: hud-dom
+msgid "DOM"
+msgstr "DOM"
+
+#: hud-style
+msgid "Style"
+msgstr "​រចនាប័ទ្ម"
+
+#: hud-other
+msgctxt "hud-other"
+msgid "Other"
+msgstr "ផ្សេងៗ"
+
+#: hud-telemetry
+msgid "Telemetry"
+msgstr ""
+
+#: software
+msgid "Software"
+msgstr "កម្មវិធី​​ផ្នែក​ទន់"
+
+#: devSettings
+#, fuzzy
+msgid "Developer Settings"
+msgstr "ការ​កំណត់​អ្នក​អភិវឌ្ឍន៍"
+
+#: debug
+msgid "Debug"
+msgstr "បំបាត់​កំហុស"
+
+#: developer-menu
+msgid "Developer Menu"
+msgstr "ម៉ឺនុយ​អ្នក​អភិវឌ្ឍន៍"
+
+#: developer-tools
+#, fuzzy
+msgctxt "developer-tools"
+msgid "Developer Tools"
+msgstr "ឧបករណ៍​អ្នក​អភិវឌ្ឍន៍"
+
+#: graphics
+msgid "Graphics"
+msgstr "ក្រាហ្វិក"
+
+#: hardware-composer
+#, fuzzy
+msgid "Hardware Composer"
+msgstr "Hardware composer"
+
+#: paint-flashing
+#, fuzzy
+msgid "Flash Repainted Area"
+msgstr "តំបន់​បាញ់​ផ្លាស់"
+
+#: dumps-layers
+#, fuzzy
+msgid "Dump Layers Tree"
+msgstr "Dump layers tree"
+
+#: dumps-display-list
+msgid "Dump Display List"
+msgstr ""
+
+#: dumps-layerscope
+#, fuzzy
+msgid "Dump LayerScope"
+msgstr "Dump layers tree"
+
+#: apz-overscroll
+msgid "Overscrolling"
+msgstr "ការ​រមូរ​លើ"
+
+#: tiling
+msgid "Tiling"
+msgstr "ក្បឿង"
+
+#: low-precision
+#, fuzzy
+msgid "Low Precision Painting"
+msgstr "គំនូរ​ជាក់លាក់​ទាប"
+
+#: low-opacity
+#, fuzzy
+msgid "Low Precision Transparency"
+msgstr "ភាព​ថ្លា​ជាក់លាក់​ទាប"
+
+#: draw-tile-borders
+#, fuzzy
+msgid "Draw Tile Borders"
+msgstr "គូរ​ក្រឡា​ស៊ុម"
+
+#: draw-layer-borders
+#, fuzzy
+msgid "Draw Layer Borders"
+msgstr "គូរ​ស៊ុម​ស្រទាប់"
+
+#: log-animations
+#, fuzzy
+msgid "Log Slow Animations"
+msgstr "ចលនា​យឺតៗ​សម្ពឹក"
+
+#: remote-debugging-usb
+msgid "Debugging via USB"
+msgstr "ការ​បំបាត់​កំហុស​តាម​រយៈ​យូអេសប៊ី"
+
+#: devtools-wifi
+msgid "DevTools via Wi-Fi"
+msgstr "DevTools តាម​រយៈ​វ៉ាយហ្វាយ​"
+
+#: devtools-device-name
+msgid "DevTools Wi-Fi Device Name"
+msgstr ""
+
+#: devtools-qps
+msgid "Pseudo-Localization"
+msgstr ""
+
+#: debugger-disabled
+msgctxt "debugger-disabled"
+msgid "Disabled"
+msgstr "បាន​បិទ"
+
+#: debugger-adb-only
+msgid "ADB only"
+msgstr "តែ ADB"
+
+#: debugger-adb-and-devtools
+msgid "ADB and DevTools"
+msgstr "ADB និង DevTools"
+
+#: wifi-debugging
+#, fuzzy
+msgid "Wi-Fi Output in ADB"
+msgstr "លទ្ធផល​វ៉ាយហ្វាយ​នៅ​ក្នុង ADB"
+
+#: bluetooth-debugging
+#, fuzzy
+msgid "Bluetooth Output in ADB"
+msgstr "លទ្ធផល​ប៊្លូធូស​នៅ​ក្នុង ADB"
+
+#: bluetooth-snoop-debugging
+msgid "Bluetooth HCI Sniffing Logs to SD Card"
+msgstr ""
+
+#: nfc-debugging
+#, fuzzy
+msgid "NFC Output in ADB"
+msgstr "លទ្ធផល​វ៉ាយហ្វាយ​នៅ​ក្នុង ADB"
+
+#: ril-debugging
+#, fuzzy
+msgid "RIL Output in ADB"
+msgstr "លទ្ធផល​វ៉ាយហ្វាយ​នៅ​ក្នុង ADB"
+
+#: network-debugging
+msgid "Network Output in ADB"
+msgstr ""
+
+#: mms-debugging
+#, fuzzy
+msgid "MMS Output in ADB"
+msgstr "លទ្ធផល​វ៉ាយហ្វាយ​នៅ​ក្នុង ADB"
+
+#: console-enabled
+#, fuzzy
+msgid "Console Enabled"
+msgstr "បាន​អនុញ្ញាត Console"
+
+#: cards-view-screenshots
+msgid "Cards View: Screenshots"
+msgstr "ទិដ្ឋភាព​កាត៖ រូបថត​អេក្រង់"
+
+#: geolocation-debugging-enabled
+#, fuzzy
+msgid "Geolocation Output in ADB"
+msgstr "លទ្ធផល​ទីតាំង​ភូមិសាស្ត្រ​នៅ​ក្នុង ADB"
+
+#: geolocation-debugging-gps-locations-ignored
+msgid "Ignore GPS Locations"
+msgstr ""
+
+#: use-reviewer-certs
+#, fuzzy
+msgid "Use Marketplace Reviewer Certs"
+msgstr "ប្រើ​វិញ្ញាបនបត្រ​កម្មវិធី​មើល​ Marketplace"
+
+#: shake-to-log
+msgid "Shake to Save System Log"
+msgstr ""
+
+#: enable-logshake-qa
+msgid "Enable LogShake QA Mode"
+msgstr ""
+
 #: launch-ftu
 msgid "Launch First Time Use"
 msgstr "ការ​ដាក់​ឲ្យ​ប្រើ​ជា​លើក​ដំបូង"
@@ -4133,44 +4403,178 @@ msgid "No first time use app found"
 msgstr "រក​មិន​ឃើញ​កម្មវិធី​ដាក់​ឲ្យ​ប្រើ​លើក​ដំបូង"
 
 #: software-home-button
-msgid "Software home button"
+#, fuzzy
+msgid "Software Home Button"
 msgstr "ប៊ូតុង​ដើម​សម្រាប់​កម្មវិធី"
 
 #: home-gesture
-msgid "Home gesture"
+#, fuzzy
+msgid "Home Gesture"
 msgstr "កាយវិការ​ដំបូង"
 
 #: continuous-transition
-msgid "Continuous transition"
+#, fuzzy
+msgid "Continuous Transition"
 msgstr "ការ​បកប្រែ​បន្ត"
 
 #: debug-gaia-enabled
-msgid "Gaia debug traces"
+#, fuzzy
+msgid "Gaia Debug Traces"
 msgstr "ដាន​កែ​កំហុស Gaia"
 
 #: showScreenReaderSettings
-msgid "Show screen reader settings"
+msgid "Show Screen Reader Settings"
 msgstr ""
 
 #: app-transition
-msgid "App transition"
+#, fuzzy
+msgid "App Transition"
 msgstr "ការ​បកប្រែ​កម្មវិធី"
 
 #: app-suspending
-msgid "App suspending"
+#, fuzzy
+msgid "App Suspending"
 msgstr "ការ​ផ្អាក​កម្មវិធី"
 
 #: copypaste
-msgid "Copy/paste"
+msgid "Copy/Paste"
+msgstr ""
+
+#: multi-screen
+msgid "Multi-Screen"
 msgstr ""
 
 #: verbose-app-permissions
-msgid "Verbose app permissions"
+msgid "Verbose App Permissions"
+msgstr ""
+
+#: pinning-the-web
+msgid "Enable Pinning the Web"
+msgstr ""
+
+#: view-source
+msgid "Enable View Source Gesture"
 msgstr ""
 
 #: window-management
-msgid "Window management"
+#, fuzzy
+msgid "Window Management"
 msgstr "ការ​គ្រប់គ្រង​បង្អួច"
+
+#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
+#. # full DevTools access.
+#: unlock-privileges
+msgid "Unlock Privileges"
+msgstr ""
+
+#: full-devtools
+msgid "Full DevTools"
+msgstr ""
+
+#: reset-devtools-warning-title
+#, fuzzy
+msgctxt "reset-devtools-warning-title"
+msgid "CAUTION"
+msgstr "ប្រយ័ត្ន"
+
+#. # Device :: Developer :: Service Workers
+#: service-worker
+msgid "Service Workers"
+msgstr ""
+
+#: service-worker-scope
+msgid "Scope"
+msgstr ""
+
+#: service-worker-script-spec
+msgid "Script spec"
+msgstr ""
+
+#: service-worker-current-worker-url
+msgid "Current worker URL"
+msgstr ""
+
+#: service-worker-active-cache-name
+msgid "Active cache name"
+msgstr ""
+
+#: service-worker-waiting-cache-name
+msgid "Waiting cache name"
+msgstr ""
+
+#: service-worker-update
+msgid "Update"
+msgstr ""
+
+#: service-worker-unregister
+msgid "Unregister"
+msgstr ""
+
+#: service-worker-no-registrations
+msgid "No service workers found"
+msgstr ""
+
+#. # Device :: Full Developer Mode
+#: developer-menu-disabled-warning-title
+msgid "Developer menu not enabled"
+msgstr ""
+
+#: developer-menu-disabled-warning-msg-1
+msgid ""
+"Developer Mode can't be enabled without the developer menu first being "
+"enabled."
+msgstr ""
+
+#: developer-menu-disabled-warning-msg-2
+msgid ""
+"Please enable it from Settings > Device Information > More Information > "
+"Developer Menu."
+msgstr ""
+
+#: enable-full-dev-mode-first-warning-title
+msgid "Would you like to enable developer mode?"
+msgstr ""
+
+#: enable-full-dev-mode-first-warning-msg-1
+msgid "THIS WILL DELETE ALL YOUR DATA AND FACTORY RESET YOUR DEVICE."
+msgstr ""
+
+#: enable-full-dev-mode-first-warning-msg-2
+msgid "THIS WILL DISABLE ALL SECURITY MEASURES ON YOUR DEVICE."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-title
+msgid "Are you sure you want to enable developer mode?"
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg
+#, fuzzy
+msgid "{[ plural(count) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: enable-full-dev-mode-final-warning-msg[one]
+msgid "Tap 'Enable' {{count}} more time to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[two]
+msgctxt "enable-full-dev-mode-final-warning-msg[two]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[few]
+msgctxt "enable-full-dev-mode-final-warning-msg[few]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[many]
+msgctxt "enable-full-dev-mode-final-warning-msg[many]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[other]
+msgctxt "enable-full-dev-mode-final-warning-msg[other]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
 
 #. # Device :: Downloads
 #: downloads-edit
@@ -4193,6 +4597,8 @@ msgstr "​លុប​"
 
 #. # Device :: Battery
 #: battery
+#, fuzzy
+msgctxt "battery"
 msgid "Battery"
 msgstr "ថ្ម"
 
@@ -4245,6 +4651,14 @@ msgstr "បើក​ដោយ​ស្វ័យប្រវត្តិ"
 
 #. # Device :: Accessibility
 #: accessibility
+#, fuzzy
+msgctxt "accessibility"
+msgid "Accessibility"
+msgstr "មធ្យោបាយ​ងាយ​ស្រួល"
+
+#: accessibility.ariaLabel
+#, fuzzy
+msgctxt "accessibility.ariaLabel"
 msgid "Accessibility"
 msgstr "មធ្យោបាយ​ងាយ​ស្រួល"
 
@@ -4352,6 +4766,12 @@ msgstr ""
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
 msgctxt "improveBrowserOS"
+msgid "Improve {{brandShortName}}"
+msgstr "ធ្វើ​ {{brandShortName}} ឲ្យ​ប្រសើរ"
+
+#: improveBrowserOS.ariaLabel
+#, fuzzy
+msgctxt "improveBrowserOS.ariaLabel"
 msgid "Improve {{brandShortName}}"
 msgstr "ធ្វើ​ {{brandShortName}} ឲ្យ​ប្រសើរ"
 
@@ -4541,14 +4961,6 @@ msgstr ""
 "សូម​ទោស ប្រព័ន្ធ​មិន​អាច​ផ្ញើ​សំណើ​របស់​អ្នក​បាន​ទេ ព្រោះ​​វាល​មតិយោបល់​ទទេ។ សូម​បញ្ចូល​អត្ថបទ ហើយ​ព្យាយាម​ម្ដង​"
 "ទៀត។"
 
-#: feedback-errormessage-just-sent
-msgid ""
-"Sorry, the system can’t send your suggestion because you already sent us "
-"feedback. Please try our next software update and send again."
-msgstr ""
-"សូម​ទោស ប្រព័ន្ធ​មិន​អាច​ផ្ញើ​សំណើ​របស់​អ្នក​បាន​ទេ ព្រោះ​​អ្នក​បាន​ផ្ញើ​មតិ​ត្រឡប់​ឲ្យ​យើង​រួច​ហើយ។ សូម​ព្យាយាម​"
-"បច្ចុប្បន្នភាព​កម្មវិធី​បន្ទាប់ ហើយ​​ផ្ញើ​ម្ដង​ទៀត។"
-
 #: feedback-complete-msg
 msgid ""
 "Thanks for the feedback! We use it to help create better experiences in "
@@ -4556,6 +4968,10 @@ msgid ""
 msgstr ""
 "អរគុណ​ចំពោះ​មតិ​ត្រឡប់! យើង​នឹង​ប្រើ​វា​ដើម្បី​ជួយ​យើង​បង្កើត​បទ​ពិសោធន៍​កាន់តែ​ប្រសើរ​ក្នុង​កំណែ​នា​ពេល​អនាគត​របស់ "
 "Firefox OS ។"
+
+#: feedback-errormessage-unknown-error
+msgid "Something went wrong. Please try again."
+msgstr ""
 
 #. # Device :: Help
 #: online-support
@@ -4694,9 +5110,14 @@ msgstr "យល់​ស្ថានភាព​ឆានែល"
 msgid "End of the proactive session"
 msgstr ""
 
+#: stkEntry.ariaLabel
+msgid "{{ title }}"
+msgstr ""
+
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
 #, fuzzy
+msgctxt "is-warning-storage-header"
 msgid "USB storage"
 msgstr "ឧបករណ៍​ផ្ទុក​យូអេសប៊ី"
 
@@ -4762,14 +5183,379 @@ msgstr ""
 msgid "{{settings-dialog-prompt}}"
 msgstr ""
 
+#: accessible-app-icon.ariaLabel
+msgid "Icon for {{ appName }} app"
+msgstr ""
+
+#. # Addongs settings
+#: addon
+msgid "Add-on"
+msgstr ""
+
+#: addons
+msgctxt "addons"
+msgid "Add-ons"
+msgstr ""
+
+#: addons.ariaLabel
+msgctxt "addons.ariaLabel"
+msgid "Add-ons"
+msgstr ""
+
+#: addons-header
+msgid "{{addons}}"
+msgstr ""
+
+#: addon-details-header1
+msgid "{{ appName }}"
+msgstr ""
+
+#: addon-enable
+msgid "Enable Add-on"
+msgstr ""
+
+#: addon-description-header
+#, fuzzy
+msgctxt "addon-description-header"
+msgid "Description"
+msgstr "ការ​ពិពណ៌នា"
+
+#: addon-developer-name
+msgid "{{ developerName }}"
+msgstr ""
+
+#: addon-targets
+msgid "Affected Apps"
+msgstr ""
+
+#: addon-options
+#, fuzzy
+msgctxt "addon-options"
+msgid "Options"
+msgstr "ជម្រើស"
+
+#: addon-delete
+msgid "Delete Add-on"
+msgstr ""
+
+#: addon-share
+msgid "Share Add-on"
+msgstr ""
+
+#: addon-share-no-provider
+msgid "No sharing app available"
+msgstr ""
+
+#: addon-no-description
+msgid "This add-on does not include a description in its manifest file."
+msgstr ""
+
+#: addon-no-targets
+msgid "This add-on does not affect any installed apps."
+msgstr ""
+
+#: addon-restart-apps-to-disable
+msgid "Add-on disabled; restart affected apps."
+msgstr ""
+
+#: addon-reboot-required
+msgid ""
+"This add-on affected system apps; you must reboot your device to fully "
+"disable it."
+msgstr ""
+
+#: addon-rename
+msgid "Rename"
+msgstr ""
+
+#: addon-rename-input
+msgid "Enter add-on name"
+msgstr ""
+
+#: addon-rename-desc
+msgid "Change the name of your add-on"
+msgstr ""
+
+#: addon-obsolete
+msgid "This add-on is obsolete and does not work."
+msgstr ""
+
+#: addon-obsolete-can-delete
+msgid "This add-on is obsolete and does not work. Please delete it."
+msgstr ""
+
+#. # Achievements
+#: achievements
+msgid "Achievements"
+msgstr ""
+
+#: achievements.ariaLabel
+msgid "achievements"
+msgstr ""
+
+#: achievements-customize-champ-name
+msgid "Customize Champ"
+msgstr ""
+
+#: achievements-customize-champ-description
+msgid "Open Customizer in an app"
+msgstr ""
+
+#: achievements-add-on-all-star-name
+msgid "Add-on All-Star"
+msgstr ""
+
+#: achievements-add-on-all-star-description
+msgid "Use Customizer to create your own add-on"
+msgstr ""
+
+#: achievements-fab-finder-name
+msgid "Fab Finder"
+msgstr ""
+
+#: achievements-fab-finder-description
+msgid "Install an app or add-on from Hackerplace"
+msgstr ""
+
+#: achievements-content-commander-name
+msgid "Content Commander"
+msgstr ""
+
+#: achievements-content-commander-description
+msgid "Submit an app or add-on to Hackerplace"
+msgstr ""
+
+#: achievements-sharing-is-caring-name
+msgid "Sharing is Caring"
+msgstr ""
+
+#: achievements-sharing-is-caring-description
+msgid "Share your apps and add-ons with the Sharing app"
+msgstr ""
+
+#: achievements-creative-kind-name
+msgid "Creative Kind"
+msgstr ""
+
+#: achievements-creative-kind-description
+msgid "Use Theme Editor to create a new theme"
+msgstr ""
+
+#. # Service Workers
+#: service-workers-interception
+msgid "Intercept requests"
+msgstr ""
+
+#: service-workers-testing
+msgid "Allow over HTTP"
+msgstr ""
+
+#. # LOCALIZATION NOTE: The following strings are spoken by screen readers and not
+#. # shown on the screen.
+#: addButton.ariaLabel
+msgctxt "addButton.ariaLabel"
+msgid "Add"
+msgstr ""
+
+#: closeButton.ariaLabel
+#, fuzzy
+msgctxt "closeButton.ariaLabel"
+msgid "Close"
+msgstr "បិទ"
+
+#: changeWallpaperButton.ariaLabel
+msgid "Change wallpaper"
+msgstr ""
+
+#: editButton.ariaLabel
+#, fuzzy
+msgctxt "editButton.ariaLabel"
+msgid "Edit"
+msgstr "កែសម្រួល​"
+
+#: wifiSection.ariaLabel
+#, fuzzy
+msgctxt "wifiSection.ariaLabel"
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
+
+#: simManagerSection.ariaLabel
+#, fuzzy
+msgctxt "simManagerSection.ariaLabel"
+msgid "SIM Manager"
+msgstr "កម្មវិធី​គ្រប់គ្រង​ SIM"
+
+#: callSettingsSection.ariaLabel
+#, fuzzy
+msgctxt "callSettingsSection.ariaLabel"
+msgid "Call Settings"
+msgstr "កំណត់​ការ​ហៅ"
+
+#: messagingSettingsSection.ariaLabel
+#, fuzzy
+msgctxt "messagingSettingsSection.ariaLabel"
+msgid "Messaging Settings"
+msgstr "កំណត់​ការ​ផ្ញើ​សារ"
+
+#: cellularAndDataSection.ariaLabel
+#, fuzzy
+msgctxt "cellularAndDataSection.ariaLabel"
+msgid "Cellular & Data"
+msgstr "Cellular & ទិន្នន័យ"
+
+#: bluetoothSection.ariaLabel
+#, fuzzy
+msgctxt "bluetoothSection.ariaLabel"
+msgid "Bluetooth"
+msgstr "ប៊្លូធូស"
+
+#: internetSharingSection.ariaLabel
+#, fuzzy
+msgctxt "internetSharingSection.ariaLabel"
+msgid "Internet Sharing"
+msgstr "ការ​ចែករំលែក​អ៊ីនធឺណិត"
+
+#: dateAndTimeSection.ariaLabel
+#, fuzzy
+msgctxt "dateAndTimeSection.ariaLabel"
+msgid "Date & Time"
+msgstr "កាលបរិច្ឆេទ &​ពេលវេលា"
+
+#: languageSection.ariaLabel
+#, fuzzy
+msgctxt "languageSection.ariaLabel"
+msgid "Language"
+msgstr "ភាសា"
+
+#: keyboardsSection.ariaLabel
+#, fuzzy
+msgctxt "keyboardsSection.ariaLabel"
+msgid "Keyboards"
+msgstr "ក្ដារចុច"
+
+#: fxa-accountsSection.ariaLabel
+#, fuzzy
+msgctxt "fxa-accountsSection.ariaLabel"
+msgid "Firefox Accounts"
+msgstr "គណនី Firefox"
+
+#: findmydeviceSection.ariaLabel
+#, fuzzy
+msgctxt "findmydeviceSection.ariaLabel"
+msgid "Find My Device"
+msgstr "ស្វែងរក​ឧបករណ៍​របស់​ខ្ញុំ"
+
+#: screenLockSection.ariaLabel
+#, fuzzy
+msgctxt "screenLockSection.ariaLabel"
+msgid "Screen Lock"
+msgstr "ចាក់សោ​អេក្រង់"
+
+#: simSecuritySection.ariaLabel
+#, fuzzy
+msgctxt "simSecuritySection.ariaLabel"
+msgid "SIM Security"
+msgstr "សុវត្ថិភាព​ SIM"
+
+#: doNotTrackSection.ariaLabel
+#, fuzzy
+msgctxt "doNotTrackSection.ariaLabel"
+msgid "Do Not Track"
+msgstr "Do Not Track"
+
+#: privacySection.ariaLabel
+msgctxt "privacySection.ariaLabel"
+msgid "Privacy Controls"
+msgstr ""
+
+#: enableStorageSection.ariaLabel
+#, fuzzy
+msgctxt "enableStorageSection.ariaLabel"
+msgid "USB storage"
+msgstr "ឧបករណ៍​ផ្ទុក​យូអេសប៊ី"
+
+#: mediaStorageSection.ariaLabel
+#, fuzzy
+msgctxt "mediaStorageSection.ariaLabel"
+msgid "Media Storage"
+msgstr "កន្លែង​ផ្ទុក​មេឌៀ"
+
+#: appStorageSection.ariaLabel
+#, fuzzy
+msgctxt "appStorageSection.ariaLabel"
+msgid "Application Storage"
+msgstr "កន្លែង​ផ្ទុក​កម្មវិធី"
+
+#: batterySection.ariaLabel
+#, fuzzy
+msgctxt "batterySection.ariaLabel"
+msgid "Battery"
+msgstr "ថ្ម"
+
+#~ msgid "Manage Cert."
+#~ msgstr "គ្រប់គ្រង​វិញ្ញាបនបត្រ"
+
+#~ msgid "Call forwarding is disabled by FDN."
+#~ msgstr "ការ​បញ្ជូន​ការ​ហៅ​បន្ត​ត្រូវ​បាន​បិទ​ដោយ FDN ។"
+
+#~ msgctxt "operator-status-connecting"
+#~ msgid "Connecting…"
+#~ msgstr "កំពុង​ភ្ជាប់..."
+
+#~ msgctxt "operator-status-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "បាន​បរាជ័យ​ការ​ភ្ជាប់"
+
+#~ msgctxt "operator-status-connected"
+#~ msgid "Connected"
+#~ msgstr "បាន​តភ្ជាប់"
+
+#~ msgid "Change the name of your device as it appears in your computer"
+#~ msgstr "ប្ដូរ​ឈ្មោះ​ឧបករណ៍​ដូច​វា​បង្ហាញ​ក្នុង​កុំព្យូទ័រ​របស់​អ្នក"
+
+#~ msgid "The SSID cannot be empty"
+#~ msgstr "SSID មិន​អាច​ទទេ"
+
+#~ msgid "WPA (TKIP)"
+#~ msgstr "WPA (TKIP)"
+
+#~ msgid "WPA2 (AES)"
+#~ msgstr "WPA2 (AES)"
+
+#~ msgid "Resend"
+#~ msgstr "ផ្ញើ​ម្ដង​ទៀត"
+
+#~ msgid "B"
+#~ msgstr "B"
+
+#~ msgid "KB"
+#~ msgstr "KB"
+
+#~ msgid "MB"
+#~ msgstr "MB"
+
+#~ msgid "GB"
+#~ msgstr "GB"
+
+#~ msgid "TB"
+#~ msgstr "TB"
+
+#, fuzzy
+#~ msgid "Developer tools"
+#~ msgstr "ឧបករណ៍​អ្នក​អភិវឌ្ឍន៍"
+
+#~ msgid ""
+#~ "Sorry, the system can’t send your suggestion because you already sent us "
+#~ "feedback. Please try our next software update and send again."
+#~ msgstr ""
+#~ "សូម​ទោស ប្រព័ន្ធ​មិន​អាច​ផ្ញើ​សំណើ​របស់​អ្នក​បាន​ទេ ព្រោះ​​អ្នក​បាន​ផ្ញើ​មតិ​ត្រឡប់​ឲ្យ​យើង​រួច​ហើយ។ សូម​ព្យាយាម​"
+#~ "បច្ចុប្បន្នភាព​កម្មវិធី​បន្ទាប់ ហើយ​​ផ្ញើ​ម្ដង​ទៀត។"
+
 #~ msgid "No imported certificate"
 #~ msgstr "គ្មាន​វិញ្ញាបនបត្រ​បាននាំចូល"
 
 #~ msgid "Voice calls to {{number}}"
 #~ msgstr "ហៅ​ជា​សំឡេង​ទៅ {{number}}"
-
-#~ msgid "Multimedia Messaging (MMS)"
-#~ msgstr "Multimedia messaging (MMS)"
 
 #~ msgid "Async Pan/Zoom"
 #~ msgstr "Async Pan/Zoom"
@@ -4797,11 +5583,6 @@ msgstr ""
 
 #~ msgid "Simple tiling"
 #~ msgstr "Simple tiling"
-
-#, fuzzy
-#~ msgctxt "is-warning-storage-header"
-#~ msgid "USB storage"
-#~ msgstr "ឧបករណ៍​ផ្ទុក​យូអេសប៊ី"
 
 #, fuzzy
 #~ msgctxt "is-warning-tethering-header"

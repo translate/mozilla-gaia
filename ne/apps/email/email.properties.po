@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-19 08:45+0000\n"
+"POT-Creation-Date: 2015-09-07 14:45+0000\n"
 "PO-Revision-Date: 2015-01-05 06:02+0000\n"
 "Last-Translator: Firoj  Ghimire <firojghimire@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1420437770.000000\n"
@@ -36,10 +36,14 @@ msgstr "बन्द गर्नुस्"
 msgid "Mail"
 msgstr "पत्र"
 
-#: setup-empty-account-prompt
+#. # LOCALIZATION NOTE(setup-empty-account-message): Shown on the
+#. # setup_account_info page when the email app is launched from an activity, but
+#. # no account is set up yet.
+#: setup-empty-account-message
 msgid ""
-"You are not set up to send or receive email. Would you like to do that now?"
-msgstr "तपाई इमेल पठाउन वा पाउनका लागि व्यवस्थित हुनुहुन्न। के तपाई अहिले गर्न चाहनुहुन्छ?"
+"You are not set up to send or receive email. Set up an account to complete "
+"the action."
+msgstr ""
 
 #: setup-pick-service
 msgid "To send and receive email, you will need to set up an account."
@@ -486,7 +490,7 @@ msgstr "हस्ताक्षर बचत गर्नुहोस्"
 #. # button which discards changes when a user hits back in the signature
 #. # entry page.
 #: signature-discard-confirm
-msgctxt "signature-discard-confirm"
+#, fuzzy
 msgid "Discard"
 msgstr "छाड्नुहोस्"
 
@@ -1073,6 +1077,14 @@ msgctxt "compose-bcc"
 msgid "bcc"
 msgstr "bcc"
 
+#. # LOCALIZATION NOTE(compose-autocomplete-match): For the compose card
+#. # autocomplete matches when entering an email, the ariaLabel to use for each
+#. # match. The following string is spoken by screen readers and not shown on the
+#. # screen.
+#: compose-autocomplete-match.ariaLabel
+msgid "{{name}} {{address}}"
+msgstr ""
+
 #. # LOCALIZATION NOTE(compose-contact-add): For compose card, a label for an add
 #. # contact buttons rendered as a circled plus sign and used to add to, cc and bcc
 #. # recipients. The following string is spoken by screen readers and not shown on
@@ -1194,10 +1206,12 @@ msgstr "विषय"
 msgid "Save to Local Drafts"
 msgstr "स्थानीय ड्राफ्टसमा बचत गर्नुहोस"
 
-#: compose-discard-confirm
-msgctxt "compose-discard-confirm"
-msgid "Discard"
-msgstr "छाड्नुहोस्"
+#. # LOCALIZATION NOTE(compose-delete-confirm): Wheh leaving the Compose card, the
+#. # user is prompted to save the draft or delete it. This is the delete button
+#. # text.
+#: compose-delete-confirm
+msgid "Delete the draft"
+msgstr ""
 
 #: compose-send-message-failed
 msgid "Sending email failed"
@@ -1265,6 +1279,8 @@ msgid "This file is too large to download."
 msgstr "यो फाइल डाउनलोड गर्न पनि ठूलो छ।"
 
 #: message-no-subject
+#, fuzzy
+msgctxt "message-no-subject"
 msgid "(no subject)"
 msgstr "(विषय नभएको)"
 
@@ -1998,6 +2014,14 @@ msgctxt "new-messages[other]"
 msgid "{{ n }} New Messages"
 msgstr "{{n}} नयाँ सन्देशहरु"
 
+#. # LOCALIZATION NOTE(notification-no-subject): is used for notifications
+#. # if the new email doesn't have a subject
+#: notification-no-subject
+#, fuzzy
+msgctxt "notification-no-subject"
+msgid "(no subject)"
+msgstr "(विषय नभएको)"
+
 #. # new-emails-notify-one-account is used when a system notification is generated during
 #. # a periodic background sync with the server. Since this goes to the system's
 #. # notification area, and user has only one account configured with the email App.
@@ -2130,6 +2154,16 @@ msgstr ""
 #: message-reader-date-received.ariaLabel
 msgid "Received"
 msgstr ""
+
+#~ msgid ""
+#~ "You are not set up to send or receive email. Would you like to do that "
+#~ "now?"
+#~ msgstr ""
+#~ "तपाई इमेल पठाउन वा पाउनका लागि व्यवस्थित हुनुहुन्न। के तपाई अहिले गर्न चाहनुहुन्छ?"
+
+#~ msgctxt "compose-discard-confirm"
+#~ msgid "Discard"
+#~ msgstr "छाड्नुहोस्"
 
 #~ msgid "seconds"
 #~ msgstr "सेकेण्ड"

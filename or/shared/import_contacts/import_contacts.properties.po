@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 19:45+0000\n"
+"POT-Creation-Date: 2015-09-07 14:45+0000\n"
 "PO-Revision-Date: 2014-12-31 08:36+0000\n"
 "Last-Translator: MANOJ KUMAR GIRI <mgiri@redhat.com>\n"
 "Language-Team: none\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1420014988.000000\n"
@@ -32,12 +32,6 @@ msgstr "ସମ୍ପର୍କଗୁଡ଼ିକୁ ଆହୃତ କରିବା�
 #: importMemoryCard
 msgid "Memory card"
 msgstr "ମେମୋରି କାର୍ଡ"
-
-#: noConnection11
-msgid "To import Facebook friends or contacts connect to Wi-Fi or data network"
-msgstr ""
-"ଆପଣଙ୍କ ଫେସବୁକ ସାଙ୍ଗ ବା ସମ୍ପର୍କମାନଙ୍କୁ ଆହୃତ କରିବାପାଇଁ ଗୋଟିଏ ୱାଇ-ଫାଇ ବା ଡାଟା ନେଟୱର୍କ ସହିତ "
-"ସଂଯୁକ୍ତ ହୁଅନ୍ତୁ"
 
 #: emptyAccount
 msgid "No friends or contacts found in this account."
@@ -149,17 +143,79 @@ msgstr "{{n}}ସମ୍ପର୍କ ଆହରଣ କରାଗଲା"
 msgid "{{current}}/{{total}}"
 msgstr "{{current}}/{{total}}"
 
-#. # Facebook import
-#: facebook
-msgid "Facebook"
-msgstr "ଫେସବୁକ"
-
-#: facebook-import-msg2
+#. # Status
+#: friendsUpdated
 #, fuzzy
-msgid "{{imported}}/{{total}} friends imported"
-msgstr "{{imported}}/{{total}} ସାଙ୍ଗ ଆହୃତ ହେଲେ"
+msgid "{[ plural(numFriends) ]}"
+msgstr "{[ plural(numDups) ]}"
+
+#: friendsUpdated[zero]
+msgid "No friends updated"
+msgstr ""
+
+#: friendsUpdated[one]
+msgid "Updated one friend"
+msgstr ""
+
+#: friendsUpdated[two]
+msgctxt "friendsUpdated[two]"
+msgid "Updated {{numFriends}} friends"
+msgstr ""
+
+#: friendsUpdated[few]
+msgctxt "friendsUpdated[few]"
+msgid "Updated {{numFriends}} friends"
+msgstr ""
+
+#: friendsUpdated[many]
+msgctxt "friendsUpdated[many]"
+msgid "Updated {{numFriends}} friends"
+msgstr ""
+
+#: friendsUpdated[other]
+msgctxt "friendsUpdated[other]"
+msgid "Updated {{numFriends}} friends"
+msgstr ""
+
+#: friendsMerged
+#, fuzzy
+msgctxt "friendsMerged"
+msgid "{[ plural(numDups) ]}"
+msgstr "{[ plural(numDups) ]}"
+
+#: friendsMerged[zero]
+#, fuzzy
+msgid "No duplicated friends merged"
+msgstr "ଗୋଟିଏ ବି ଏକାଧିକ ଥର ଥିବା ମିଳିଲା ନାହିଁ"
+
+#: friendsMerged[one]
+#, fuzzy
+msgid "One duplicated friend merged"
+msgstr "ଏକାଧିକ ଥର ଥିବା ସମ୍ପର୍କଟିଏ ମିଶାଇ ଦିଆଗଲା"
+
+#: friendsMerged[two]
+msgctxt "friendsMerged[two]"
+msgid "{{numDups}} friends merged"
+msgstr ""
+
+#: friendsMerged[few]
+msgctxt "friendsMerged[few]"
+msgid "{{numDups}} friends merged"
+msgstr ""
+
+#: friendsMerged[many]
+msgctxt "friendsMerged[many]"
+msgid "{{numDups}} friends merged"
+msgstr ""
+
+#: friendsMerged[other]
+msgctxt "friendsMerged[other]"
+msgid "{{numDups}} friends merged"
+msgstr ""
 
 #: contactsMerged
+#, fuzzy
+msgctxt "contactsMerged"
 msgid "{[ plural(numDups) ]}"
 msgstr "{[ plural(numDups) ]}"
 
@@ -190,6 +246,19 @@ msgstr "{{numDups}} ଗୋଟି ସମ୍ପର୍କ ମିଶାଇ ଦିଆ
 msgctxt "contactsMerged[other]"
 msgid "{{numDups}} contacts merged"
 msgstr "{{numDups}} ଗୋଟି ସମ୍ପର୍କ ମିଶାଇ ଦିଆଗଲା"
+
+#~ msgid ""
+#~ "To import Facebook friends or contacts connect to Wi-Fi or data network"
+#~ msgstr ""
+#~ "ଆପଣଙ୍କ ଫେସବୁକ ସାଙ୍ଗ ବା ସମ୍ପର୍କମାନଙ୍କୁ ଆହୃତ କରିବାପାଇଁ ଗୋଟିଏ ୱାଇ-ଫାଇ ବା ଡାଟା ନେଟୱର୍କ "
+#~ "ସହିତ ସଂଯୁକ୍ତ ହୁଅନ୍ତୁ"
+
+#~ msgid "Facebook"
+#~ msgstr "ଫେସବୁକ"
+
+#, fuzzy
+#~ msgid "{{imported}}/{{total}} friends imported"
+#~ msgstr "{{imported}}/{{total}} ସାଙ୍ଗ ଆହୃତ ହେଲେ"
 
 #~ msgid "{[ plural(imported) ]}"
 #~ msgstr "{[ plural(imported) ]}"
