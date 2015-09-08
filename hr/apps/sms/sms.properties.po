@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-01 05:45+0000\n"
+"POT-Creation-Date: 2015-09-07 14:45+0000\n"
 "PO-Revision-Date: 2015-01-26 18:13+0000\n"
 "Last-Translator: Mihovil Stanić <mihovil@miho.im>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1422296032.000000\n"
@@ -60,6 +60,18 @@ msgstr "Gotovo"
 #: delete
 msgid "Delete"
 msgstr "Obriši"
+
+#: delete-thread
+msgid "Delete thread"
+msgstr ""
+
+#: mark-as-read
+msgid "Mark as read"
+msgstr ""
+
+#: mark-as-unread
+msgid "Mark as unread"
+msgstr ""
 
 #: deleting-messages
 msgid "Deleting…"
@@ -168,6 +180,8 @@ msgid "Select Messages"
 msgstr "Obriši poruke"
 
 #: settings
+#, fuzzy
+msgctxt "settings"
 msgid "Settings"
 msgstr "Postavke"
 
@@ -193,9 +207,9 @@ msgctxt "message"
 msgid "Message"
 msgstr "Poruka"
 
-#: messagesInput_placeholder
+#: messagesInput.title
 #, fuzzy
-msgctxt "messagesInput_placeholder"
+msgctxt "messagesInput.title"
 msgid "Message"
 msgstr "Poruka"
 
@@ -230,6 +244,8 @@ msgid ""
 msgstr ""
 
 #: newMessage
+#, fuzzy
+msgctxt "newMessage"
 msgid "New message"
 msgstr "Nova poruka"
 
@@ -390,14 +406,6 @@ msgstr ""
 msgid "Message size:"
 msgstr ""
 
-#: report-dateTimeFormat12
-msgid "%e %B %Y, {{shortTimeFormat12}}"
-msgstr ""
-
-#: report-dateTimeFormat24
-msgid "%e %B %Y, {{shortTimeFormat24}}"
-msgstr ""
-
 #: report-to-title
 msgid "To"
 msgstr ""
@@ -470,11 +478,9 @@ msgstr ""
 msgid "Save as Draft"
 msgstr ""
 
-#: discard-message
-#, fuzzy
-msgctxt "discard-message"
-msgid "Discard"
-msgstr "Odbaci"
+#: delete-draft
+msgid "Delete draft"
+msgstr ""
 
 #: discard-sms
 msgid "Are you sure you want to discard this message?"
@@ -495,15 +501,87 @@ msgstr ""
 
 #: deleteMessage-confirmation
 #, fuzzy
+msgctxt "deleteMessage-confirmation"
 msgid "Delete selected message?"
 msgstr "Obrisati odabrane poruke?"
 
-#: deleteMessages-confirmation
-msgid "Delete selected messages?"
+#: deleteMessages-confirmation-message
+#, fuzzy
+msgctxt "deleteMessages-confirmation-message"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: deleteMessages-confirmation-message[zero]
+msgid "Please select messages to be deleted."
+msgstr ""
+
+#: deleteMessages-confirmation-message[one]
+#, fuzzy
+msgctxt "deleteMessages-confirmation-message[one]"
+msgid "Delete selected message?"
 msgstr "Obrisati odabrane poruke?"
 
-#: deleteThreads-confirmation2
-msgid "Delete selected message threads?"
+#: deleteMessages-confirmation-message[two]
+#, fuzzy
+msgctxt "deleteMessages-confirmation-message[two]"
+msgid "Delete {{n}} selected messages?"
+msgstr "Obrisati odabrane poruke?"
+
+#: deleteMessages-confirmation-message[few]
+#, fuzzy
+msgctxt "deleteMessages-confirmation-message[few]"
+msgid "Delete {{n}} selected messages?"
+msgstr "Obrisati odabrane poruke?"
+
+#: deleteMessages-confirmation-message[many]
+#, fuzzy
+msgctxt "deleteMessages-confirmation-message[many]"
+msgid "Delete {{n}} selected messages?"
+msgstr "Obrisati odabrane poruke?"
+
+#: deleteMessages-confirmation-message[other]
+#, fuzzy
+msgctxt "deleteMessages-confirmation-message[other]"
+msgid "Delete {{n}} selected messages?"
+msgstr "Obrisati odabrane poruke?"
+
+#: deleteThreads-confirmation-message
+#, fuzzy
+msgctxt "deleteThreads-confirmation-message"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: deleteThreads-confirmation-message[zero]
+msgid "Please select message threads to be deleted."
+msgstr ""
+
+#: deleteThreads-confirmation-message[one]
+#, fuzzy
+msgid "Delete selected message thread?"
+msgstr "Obrisati odabrane skupove poruka?"
+
+#: deleteThreads-confirmation-message[two]
+#, fuzzy
+msgctxt "deleteThreads-confirmation-message[two]"
+msgid "Delete {{n}} selected message threads?"
+msgstr "Obrisati odabrane skupove poruka?"
+
+#: deleteThreads-confirmation-message[few]
+#, fuzzy
+msgctxt "deleteThreads-confirmation-message[few]"
+msgid "Delete {{n}} selected message threads?"
+msgstr "Obrisati odabrane skupove poruka?"
+
+#: deleteThreads-confirmation-message[many]
+#, fuzzy
+msgctxt "deleteThreads-confirmation-message[many]"
+msgid "Delete {{n}} selected message threads?"
+msgstr "Obrisati odabrane skupove poruka?"
+
+#: deleteThreads-confirmation-message[other]
+#, fuzzy
+msgctxt "deleteThreads-confirmation-message[other]"
+msgid "Delete {{n}} selected message threads?"
 msgstr "Obrisati odabrane skupove poruka?"
 
 #: new-message-notice-text
@@ -590,43 +668,42 @@ msgstr ""
 
 #. #LOCALIZATION NOTE (fdnErrorBody): the English translation does not need the
 #. # actual number of phone numbers. If your translation needs it, you can still add it
-#. # using the parameter {{ n }}. Also take into account that you could add HTML so be
-#. # careful with the content, it may affect to the whole app.
-#: fdnErrorBody.innerHTML
+#. # using the parameter {{ n }}.
+#: fdnErrorBody
 #, fuzzy
-msgctxt "fdnErrorBody.innerHTML"
+msgctxt "fdnErrorBody"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: fdnErrorBody.innerHTML[one]
+#: fdnErrorBody[one]
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipient are in your FDN list:"
 msgstr ""
 
-#: fdnErrorBody.innerHTML[two]
-msgctxt "fdnErrorBody.innerHTML[two]"
+#: fdnErrorBody[two]
+msgctxt "fdnErrorBody[two]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipients are in your FDN list:"
 msgstr ""
 
-#: fdnErrorBody.innerHTML[few]
-msgctxt "fdnErrorBody.innerHTML[few]"
+#: fdnErrorBody[few]
+msgctxt "fdnErrorBody[few]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipients are in your FDN list:"
 msgstr ""
 
-#: fdnErrorBody.innerHTML[many]
-msgctxt "fdnErrorBody.innerHTML[many]"
+#: fdnErrorBody[many]
+msgctxt "fdnErrorBody[many]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipients are in your FDN list:"
 msgstr ""
 
-#: fdnErrorBody.innerHTML[other]
-msgctxt "fdnErrorBody.innerHTML[other]"
+#: fdnErrorBody[other]
+msgctxt "fdnErrorBody[other]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipients are in your FDN list:"
@@ -803,10 +880,11 @@ msgstr "Zamijeni privitak"
 msgid "Unsent Message"
 msgstr "Neposlana poruka"
 
-#: unsent-message-description
+#: unsent-message-text
+#, fuzzy
 msgid ""
-"Your previous message was not sent. Do you want to edit the unsent message "
-"or discard it and continue?"
+"Your previous message was not sent. Do you want to discard the unsent "
+"message and continue?"
 msgstr ""
 "Vaša prijašnja poruka nije bila poslana. Da li želite izmijeniti neposlanu "
 "poruku ili odbaciti istu i nastaviti?"
@@ -818,13 +896,16 @@ msgstr "Izmijeni"
 
 #: unsent-message-option-discard
 #, fuzzy
-msgctxt "unsent-message-option-discard"
 msgid "Discard"
 msgstr "Odbaci"
 
 #: message-options
 msgid "Message options"
 msgstr "Opcije poruka"
+
+#: thread-options
+msgid "Thread options"
+msgstr ""
 
 #: forward
 msgid "Forward"
@@ -880,13 +961,17 @@ msgstr "Ostalo"
 msgid "today"
 msgstr "danas"
 
+#: todayWithTime
+msgid "today {{ time }}"
+msgstr ""
+
 #: yesterday
 msgid "yesterday"
 msgstr "jučer"
 
-#: incorrectDate
-msgid "(incorrect date)"
-msgstr "(netočan datum)"
+#: yesterdayWithTime
+msgid "yesterday {{ time }}"
+msgstr ""
 
 #. #Phone Context Menu
 #: addToExistingContact
@@ -902,6 +987,8 @@ msgid "View contact"
 msgstr "Prikaži kontakt"
 
 #: call
+#, fuzzy
+msgctxt "call"
 msgid "Call"
 msgstr "Pozovi"
 
@@ -1025,6 +1112,10 @@ msgstr ""
 msgid "SIM {{id}}, {{detailString}}"
 msgstr ""
 
+#: dsds-unknown-sim
+msgid "unknown SIM"
+msgstr ""
+
 #: dsds-notification-title-with-sim
 msgid "({{sim}}) {{sender}}"
 msgstr ""
@@ -1044,16 +1135,6 @@ msgstr ""
 
 #: send-button-sim-indication.ariaLabel
 msgid "using SIM {{n}}"
-msgstr ""
-
-#. # Date formats specific for SMS app
-#. # LOCALIZATION NOTE (expiry-date-format): this is a date format.
-#. # See http://pubs.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#. # %A is the full weekday name from shared/date/date.properties and it might
-#. # not be in the correct grammatical case. To work around this issue, you can
-#. # use a different format like "%m/%d/%Y".
-#: expiry-date-format
-msgid "%A, %b %e"
 msgstr ""
 
 #. # Labels for screen reader
@@ -1076,6 +1157,28 @@ msgstr ""
 #: is-draft.ariaLabel
 msgid "Draft"
 msgstr ""
+
+#: actionsButton.ariaLabel
+msgid "Actions"
+msgstr ""
+
+#: settingsButton.ariaLabel
+#, fuzzy
+msgctxt "settingsButton.ariaLabel"
+msgid "Settings"
+msgstr "Postavke"
+
+#: composeLink.ariaLabel
+#, fuzzy
+msgctxt "composeLink.ariaLabel"
+msgid "New message"
+msgstr "Nova poruka"
+
+#: callButton.ariaLabel
+#, fuzzy
+msgctxt "callButton.ariaLabel"
+msgid "Call"
+msgstr "Pozovi"
 
 #. # Message statuses
 #: message-delivery-status-sending
@@ -1114,6 +1217,24 @@ msgstr "Otkaži"
 msgctxt "modal-dialog-default-title"
 msgid "Messages"
 msgstr "Poruke"
+
+#, fuzzy
+#~ msgctxt "messagesInput_placeholder"
+#~ msgid "Message"
+#~ msgstr "Poruka"
+
+#, fuzzy
+#~ msgctxt "fdnErrorBody.innerHTML"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#, fuzzy
+#~ msgctxt "unsent-message-option-discard"
+#~ msgid "Discard"
+#~ msgstr "Odbaci"
+
+#~ msgid "(incorrect date)"
+#~ msgstr "(netočan datum)"
 
 #, fuzzy
 #~ msgctxt "fdnBlocked2Body.innerHTML"

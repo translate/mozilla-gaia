@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-19 08:45+0000\n"
+"POT-Creation-Date: 2015-09-07 14:45+0000\n"
 "PO-Revision-Date: 2015-06-04 20:50+0000\n"
 "Last-Translator: Gwenn M <tornoz@laposte.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1433451049.000000\n"
@@ -36,12 +36,14 @@ msgstr "Serriñ"
 msgid "Mail"
 msgstr "Posteloù"
 
-#: setup-empty-account-prompt
+#. # LOCALIZATION NOTE(setup-empty-account-message): Shown on the
+#. # setup_account_info page when the email app is launched from an activity, but
+#. # no account is set up yet.
+#: setup-empty-account-message
 msgid ""
-"You are not set up to send or receive email. Would you like to do that now?"
+"You are not set up to send or receive email. Set up an account to complete "
+"the action."
 msgstr ""
-"N'eo ket arventennet ar c'has pe an degemer postel. C'hoant hoc'h eus d'ober "
-"an dra-mañ bremañ?"
 
 #: setup-pick-service
 msgid "To send and receive email, you will need to set up an account."
@@ -496,7 +498,7 @@ msgstr "Enrollañ ar sinadur"
 #. # button which discards changes when a user hits back in the signature
 #. # entry page.
 #: signature-discard-confirm
-msgctxt "signature-discard-confirm"
+#, fuzzy
 msgid "Discard"
 msgstr "Dilezel"
 
@@ -1059,6 +1061,14 @@ msgctxt "compose-bcc"
 msgid "bcc"
 msgstr "bcc"
 
+#. # LOCALIZATION NOTE(compose-autocomplete-match): For the compose card
+#. # autocomplete matches when entering an email, the ariaLabel to use for each
+#. # match. The following string is spoken by screen readers and not shown on the
+#. # screen.
+#: compose-autocomplete-match.ariaLabel
+msgid "{{name}} {{address}}"
+msgstr ""
+
 #. # LOCALIZATION NOTE(compose-contact-add): For compose card, a label for an add
 #. # contact buttons rendered as a circled plus sign and used to add to, cc and bcc
 #. # recipients. The following string is spoken by screen readers and not shown on
@@ -1177,10 +1187,12 @@ msgstr "Danvez"
 msgid "Save to Local Drafts"
 msgstr "Enrollañ e Brouilhedoù Lec'hel"
 
-#: compose-discard-confirm
-msgctxt "compose-discard-confirm"
-msgid "Discard"
-msgstr "Dilezel"
+#. # LOCALIZATION NOTE(compose-delete-confirm): Wheh leaving the Compose card, the
+#. # user is prompted to save the draft or delete it. This is the delete button
+#. # text.
+#: compose-delete-confirm
+msgid "Delete the draft"
+msgstr ""
 
 #: compose-send-message-failed
 msgid "Sending email failed"
@@ -1248,6 +1260,8 @@ msgid "This file is too large to download."
 msgstr "Re vras eo ar restr evit bezañ pellgarget."
 
 #: message-no-subject
+#, fuzzy
+msgctxt "message-no-subject"
 msgid "(no subject)"
 msgstr "(danvez ebet)"
 
@@ -1986,6 +2000,14 @@ msgctxt "new-messages[other]"
 msgid "{{ n }} New Messages"
 msgstr "{{ n }} a gemennadennoù nevez"
 
+#. # LOCALIZATION NOTE(notification-no-subject): is used for notifications
+#. # if the new email doesn't have a subject
+#: notification-no-subject
+#, fuzzy
+msgctxt "notification-no-subject"
+msgid "(no subject)"
+msgstr "(danvez ebet)"
+
 #. # new-emails-notify-one-account is used when a system notification is generated during
 #. # a periodic background sync with the server. Since this goes to the system's
 #. # notification area, and user has only one account configured with the email App.
@@ -2120,6 +2142,17 @@ msgstr "A-raok"
 #: message-reader-date-received.ariaLabel
 msgid "Received"
 msgstr "Resevet"
+
+#~ msgid ""
+#~ "You are not set up to send or receive email. Would you like to do that "
+#~ "now?"
+#~ msgstr ""
+#~ "N'eo ket arventennet ar c'has pe an degemer postel. C'hoant hoc'h eus "
+#~ "d'ober an dra-mañ bremañ?"
+
+#~ msgctxt "compose-discard-confirm"
+#~ msgid "Discard"
+#~ msgstr "Dilezel"
 
 #~ msgid "seconds"
 #~ msgstr "a eilennoù"

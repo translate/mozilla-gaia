@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-01 05:45+0000\n"
+"POT-Creation-Date: 2015-09-07 14:45+0000\n"
 "PO-Revision-Date: 2015-06-22 07:17+0000\n"
 "Last-Translator: Selim Şumlu <selim@sum.lu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1434957439.000000\n"
@@ -59,6 +59,18 @@ msgstr "Bitti"
 #: delete
 msgid "Delete"
 msgstr "Sil"
+
+#: delete-thread
+msgid "Delete thread"
+msgstr ""
+
+#: mark-as-read
+msgid "Mark as read"
+msgstr ""
+
+#: mark-as-unread
+msgid "Mark as unread"
+msgstr ""
 
 #: deleting-messages
 msgid "Deleting…"
@@ -152,6 +164,8 @@ msgid "Select Messages"
 msgstr "Mesajları seç"
 
 #: settings
+#, fuzzy
+msgctxt "settings"
 msgid "Settings"
 msgstr "Ayarlar"
 
@@ -177,8 +191,9 @@ msgctxt "message"
 msgid "Message"
 msgstr "Mesaj"
 
-#: messagesInput_placeholder
-msgctxt "messagesInput_placeholder"
+#: messagesInput.title
+#, fuzzy
+msgctxt "messagesInput.title"
 msgid "Message"
 msgstr "Mesaj"
 
@@ -212,6 +227,8 @@ msgid ""
 msgstr ""
 
 #: newMessage
+#, fuzzy
+msgctxt "newMessage"
 msgid "New message"
 msgstr "Yeni mesaj"
 
@@ -373,14 +390,6 @@ msgstr "Mesaj reddedildi"
 msgid "Message size:"
 msgstr "Mesaj boyutu:"
 
-#: report-dateTimeFormat12
-msgid "%e %B %Y, {{shortTimeFormat12}}"
-msgstr "%e %B %Y {{shortTimeFormat12}}"
-
-#: report-dateTimeFormat24
-msgid "%e %B %Y, {{shortTimeFormat24}}"
-msgstr "%e %B %Y {{shortTimeFormat24}}"
-
 #: report-to-title
 msgid "To"
 msgstr "Kime"
@@ -453,10 +462,9 @@ msgstr "Mevcut taslağı değiştir"
 msgid "Save as Draft"
 msgstr "Taslak olarak kaydet"
 
-#: discard-message
-msgctxt "discard-message"
-msgid "Discard"
-msgstr "Sil"
+#: delete-draft
+msgid "Delete draft"
+msgstr ""
 
 #: discard-sms
 msgid "Are you sure you want to discard this message?"
@@ -475,15 +483,88 @@ msgid "Resend this message"
 msgstr "Bu mesajı yeniden gönder"
 
 #: deleteMessage-confirmation
+#, fuzzy
+msgctxt "deleteMessage-confirmation"
 msgid "Delete selected message?"
 msgstr "Seçilen mesajlar silinsin mi?"
 
-#: deleteMessages-confirmation
-msgid "Delete selected messages?"
+#: deleteMessages-confirmation-message
+#, fuzzy
+msgctxt "deleteMessages-confirmation-message"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: deleteMessages-confirmation-message[zero]
+msgid "Please select messages to be deleted."
+msgstr ""
+
+#: deleteMessages-confirmation-message[one]
+#, fuzzy
+msgctxt "deleteMessages-confirmation-message[one]"
+msgid "Delete selected message?"
 msgstr "Seçilen mesajlar silinsin mi?"
 
-#: deleteThreads-confirmation2
-msgid "Delete selected message threads?"
+#: deleteMessages-confirmation-message[two]
+#, fuzzy
+msgctxt "deleteMessages-confirmation-message[two]"
+msgid "Delete {{n}} selected messages?"
+msgstr "Seçilen mesajlar silinsin mi?"
+
+#: deleteMessages-confirmation-message[few]
+#, fuzzy
+msgctxt "deleteMessages-confirmation-message[few]"
+msgid "Delete {{n}} selected messages?"
+msgstr "Seçilen mesajlar silinsin mi?"
+
+#: deleteMessages-confirmation-message[many]
+#, fuzzy
+msgctxt "deleteMessages-confirmation-message[many]"
+msgid "Delete {{n}} selected messages?"
+msgstr "Seçilen mesajlar silinsin mi?"
+
+#: deleteMessages-confirmation-message[other]
+#, fuzzy
+msgctxt "deleteMessages-confirmation-message[other]"
+msgid "Delete {{n}} selected messages?"
+msgstr "Seçilen mesajlar silinsin mi?"
+
+#: deleteThreads-confirmation-message
+#, fuzzy
+msgctxt "deleteThreads-confirmation-message"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: deleteThreads-confirmation-message[zero]
+msgid "Please select message threads to be deleted."
+msgstr ""
+
+#: deleteThreads-confirmation-message[one]
+#, fuzzy
+msgid "Delete selected message thread?"
+msgstr "Seçilen mesaj dizileri silinsin mi?"
+
+#: deleteThreads-confirmation-message[two]
+#, fuzzy
+msgctxt "deleteThreads-confirmation-message[two]"
+msgid "Delete {{n}} selected message threads?"
+msgstr "Seçilen mesaj dizileri silinsin mi?"
+
+#: deleteThreads-confirmation-message[few]
+#, fuzzy
+msgctxt "deleteThreads-confirmation-message[few]"
+msgid "Delete {{n}} selected message threads?"
+msgstr "Seçilen mesaj dizileri silinsin mi?"
+
+#: deleteThreads-confirmation-message[many]
+#, fuzzy
+msgctxt "deleteThreads-confirmation-message[many]"
+msgid "Delete {{n}} selected message threads?"
+msgstr "Seçilen mesaj dizileri silinsin mi?"
+
+#: deleteThreads-confirmation-message[other]
+#, fuzzy
+msgctxt "deleteThreads-confirmation-message[other]"
+msgid "Delete {{n}} selected message threads?"
 msgstr "Seçilen mesaj dizileri silinsin mi?"
 
 #: new-message-notice-text
@@ -568,15 +649,14 @@ msgstr "SMS {{number}} düzenleniyor"
 
 #. #LOCALIZATION NOTE (fdnErrorBody): the English translation does not need the
 #. # actual number of phone numbers. If your translation needs it, you can still add it
-#. # using the parameter {{ n }}. Also take into account that you could add HTML so be
-#. # careful with the content, it may affect to the whole app.
-#: fdnErrorBody.innerHTML
+#. # using the parameter {{ n }}.
+#: fdnErrorBody
 #, fuzzy
-msgctxt "fdnErrorBody.innerHTML"
+msgctxt "fdnErrorBody"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: fdnErrorBody.innerHTML[one]
+#: fdnErrorBody[one]
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipient are in your FDN list:"
@@ -584,8 +664,9 @@ msgstr ""
 "FDN (Sabit Arama Numaraları) etkinleştiridi. SMS merkezinin ve aşağıdaki "
 "alıcının FDN listenizde olduğundan emin olun:"
 
-#: fdnErrorBody.innerHTML[two]
-msgctxt "fdnErrorBody.innerHTML[two]"
+#: fdnErrorBody[two]
+#, fuzzy
+msgctxt "fdnErrorBody[two]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipients are in your FDN list:"
@@ -593,8 +674,9 @@ msgstr ""
 "FDN (Sabit Arama Numaraları) etkinleştiridi. SMS merkezinin ve aşağıdaki "
 "alıcıların FDN listenizde olduğundan emin olun:"
 
-#: fdnErrorBody.innerHTML[few]
-msgctxt "fdnErrorBody.innerHTML[few]"
+#: fdnErrorBody[few]
+#, fuzzy
+msgctxt "fdnErrorBody[few]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipients are in your FDN list:"
@@ -602,8 +684,9 @@ msgstr ""
 "FDN (Sabit Arama Numaraları) etkinleştiridi. SMS merkezinin ve aşağıdaki "
 "alıcıların FDN listenizde olduğundan emin olun:"
 
-#: fdnErrorBody.innerHTML[many]
-msgctxt "fdnErrorBody.innerHTML[many]"
+#: fdnErrorBody[many]
+#, fuzzy
+msgctxt "fdnErrorBody[many]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipients are in your FDN list:"
@@ -611,8 +694,9 @@ msgstr ""
 "FDN (Sabit Arama Numaraları) etkinleştiridi. SMS merkezinin ve aşağıdaki "
 "alıcıların FDN listenizde olduğundan emin olun:"
 
-#: fdnErrorBody.innerHTML[other]
-msgctxt "fdnErrorBody.innerHTML[other]"
+#: fdnErrorBody[other]
+#, fuzzy
+msgctxt "fdnErrorBody[other]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipients are in your FDN list:"
@@ -785,10 +869,11 @@ msgstr "Eki değiştir"
 msgid "Unsent Message"
 msgstr "Gönderilmemiş mesaj"
 
-#: unsent-message-description
+#: unsent-message-text
+#, fuzzy
 msgid ""
-"Your previous message was not sent. Do you want to edit the unsent message "
-"or discard it and continue?"
+"Your previous message was not sent. Do you want to discard the unsent "
+"message and continue?"
 msgstr ""
 "Önceki mesajınız gönderilmedi. Gönderilmemiş mesajı düzenlemek mi yoksa "
 "silip devam etmek mi istiyorsunuz?"
@@ -799,13 +884,17 @@ msgid "Edit"
 msgstr "Düzenle"
 
 #: unsent-message-option-discard
-msgctxt "unsent-message-option-discard"
+#, fuzzy
 msgid "Discard"
 msgstr "Sil"
 
 #: message-options
 msgid "Message options"
 msgstr "Mesaj seçenekleri"
+
+#: thread-options
+msgid "Thread options"
+msgstr ""
 
 #: forward
 msgid "Forward"
@@ -861,13 +950,17 @@ msgstr "Diğer"
 msgid "today"
 msgstr "bugün"
 
+#: todayWithTime
+msgid "today {{ time }}"
+msgstr ""
+
 #: yesterday
 msgid "yesterday"
 msgstr "dün"
 
-#: incorrectDate
-msgid "(incorrect date)"
-msgstr "(geçersiz tarih)"
+#: yesterdayWithTime
+msgid "yesterday {{ time }}"
+msgstr ""
 
 #. #Phone Context Menu
 #: addToExistingContact
@@ -883,6 +976,8 @@ msgid "View contact"
 msgstr "Kişiyi göster"
 
 #: call
+#, fuzzy
+msgctxt "call"
 msgid "Call"
 msgstr "Ara"
 
@@ -1008,6 +1103,10 @@ msgstr "SIM {{id}}"
 msgid "SIM {{id}}, {{detailString}}"
 msgstr "SIM {{id}}, {{detailString}}"
 
+#: dsds-unknown-sim
+msgid "unknown SIM"
+msgstr ""
+
 #: dsds-notification-title-with-sim
 msgid "({{sim}}) {{sender}}"
 msgstr "({{sim}}) {{sender}}"
@@ -1029,16 +1128,6 @@ msgstr "{{n}}"
 msgid "using SIM {{n}}"
 msgstr "SIM {{n}} ile"
 
-#. # Date formats specific for SMS app
-#. # LOCALIZATION NOTE (expiry-date-format): this is a date format.
-#. # See http://pubs.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#. # %A is the full weekday name from shared/date/date.properties and it might
-#. # not be in the correct grammatical case. To work around this issue, you can
-#. # use a different format like "%m/%d/%Y".
-#: expiry-date-format
-msgid "%A, %b %e"
-msgstr "%e %B %A"
-
 #. # Labels for screen reader
 #: attach-button.ariaLabel
 msgid "Add attachment"
@@ -1059,6 +1148,28 @@ msgstr "Taslağı var"
 #: is-draft.ariaLabel
 msgid "Draft"
 msgstr "Taslak"
+
+#: actionsButton.ariaLabel
+msgid "Actions"
+msgstr ""
+
+#: settingsButton.ariaLabel
+#, fuzzy
+msgctxt "settingsButton.ariaLabel"
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: composeLink.ariaLabel
+#, fuzzy
+msgctxt "composeLink.ariaLabel"
+msgid "New message"
+msgstr "Yeni mesaj"
+
+#: callButton.ariaLabel
+#, fuzzy
+msgctxt "callButton.ariaLabel"
+msgid "Call"
+msgstr "Ara"
 
 #. # Message statuses
 #: message-delivery-status-sending
@@ -1097,6 +1208,55 @@ msgstr "İptal"
 msgctxt "modal-dialog-default-title"
 msgid "Messages"
 msgstr "Mesajlar"
+
+#~ msgctxt "messagesInput_placeholder"
+#~ msgid "Message"
+#~ msgstr "Mesaj"
+
+#~ msgid "%e %B %Y, {{shortTimeFormat12}}"
+#~ msgstr "%e %B %Y {{shortTimeFormat12}}"
+
+#~ msgid "%e %B %Y, {{shortTimeFormat24}}"
+#~ msgstr "%e %B %Y {{shortTimeFormat24}}"
+
+#, fuzzy
+#~ msgctxt "fdnErrorBody.innerHTML"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "fdnErrorBody.innerHTML[few]"
+#~ msgid ""
+#~ "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and "
+#~ "the following recipients are in your FDN list:"
+#~ msgstr ""
+#~ "FDN (Sabit Arama Numaraları) etkinleştiridi. SMS merkezinin ve aşağıdaki "
+#~ "alıcıların FDN listenizde olduğundan emin olun:"
+
+#~ msgctxt "fdnErrorBody.innerHTML[many]"
+#~ msgid ""
+#~ "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and "
+#~ "the following recipients are in your FDN list:"
+#~ msgstr ""
+#~ "FDN (Sabit Arama Numaraları) etkinleştiridi. SMS merkezinin ve aşağıdaki "
+#~ "alıcıların FDN listenizde olduğundan emin olun:"
+
+#~ msgctxt "fdnErrorBody.innerHTML[other]"
+#~ msgid ""
+#~ "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and "
+#~ "the following recipients are in your FDN list:"
+#~ msgstr ""
+#~ "FDN (Sabit Arama Numaraları) etkinleştiridi. SMS merkezinin ve aşağıdaki "
+#~ "alıcıların FDN listenizde olduğundan emin olun:"
+
+#~ msgctxt "unsent-message-option-discard"
+#~ msgid "Discard"
+#~ msgstr "Sil"
+
+#~ msgid "(incorrect date)"
+#~ msgstr "(geçersiz tarih)"
+
+#~ msgid "%A, %b %e"
+#~ msgstr "%e %B %A"
 
 #~ msgctxt "fdnBlocked2Body.innerHTML"
 #~ msgid "{[ plural(n) ]}"
@@ -1321,9 +1481,6 @@ msgstr "Mesajlar"
 #~ msgctxt "fdnBlockedBtnOk"
 #~ msgid "OK"
 #~ msgstr "Tamam"
-
-#~ msgid "Discard"
-#~ msgstr "Sil"
 
 #~ msgid "Edit messages"
 #~ msgstr "Mesajları düzenle"
