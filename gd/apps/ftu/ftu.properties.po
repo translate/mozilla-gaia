@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-19 18:45+0000\n"
+"POT-Creation-Date: 2015-09-07 14:45+0000\n"
 "PO-Revision-Date: 2015-06-21 14:35+0000\n"
 "Last-Translator: Michael Bauer <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -782,10 +782,6 @@ msgstr "Ion-phortaich luchd-aithne"
 msgid "SIM card"
 msgstr "Cairt SIM"
 
-#: importFb2
-msgid "Facebook"
-msgstr "Facebook"
-
 #: importOutlook
 msgid "Outlook"
 msgstr "Outlook"
@@ -793,10 +789,6 @@ msgstr "Outlook"
 #: importGmail
 msgid "Gmail"
 msgstr "Gmail"
-
-#: fb-checking
-msgid "… checking"
-msgstr "… 'ga sgrùdadh"
 
 #: notImportedYet
 msgid "Not imported yet"
@@ -806,44 +798,6 @@ msgstr "Cha deach ion-phortadh fhathast"
 msgid "Other accounts"
 msgstr "Cunntasan eile"
 
-#: afterFbImport
-msgid "You can import and edit Facebook friends anytime in Contacts settings"
-msgstr ""
-"’S urrainn dhut caraidean Facebook ion-phortadh is deasachadh ann an "
-"roghainnean an luchd-aithne"
-
-#: facebook-import-msg
-msgid "{[ plural(imported) ]}"
-msgstr "{[ plural(imported) ]}"
-
-#: facebook-import-msg[zero]
-msgid "No friends imported (out of {{total}})"
-msgstr "Cha deach caraid sam bith ion-phortadh (à {{total}} uile gu lèir)"
-
-#: facebook-import-msg[one]
-msgid "One friend imported (out of {{total}})"
-msgstr "Chaidh {{imported}} charaid ion-phortadh (à {{total}})"
-
-#: facebook-import-msg[two]
-msgctxt "facebook-import-msg[two]"
-msgid "{{imported}}/{{total}} friends imported"
-msgstr "Chaidh {{imported}} charaid ion-phortadh (à {{total}})"
-
-#: facebook-import-msg[few]
-msgctxt "facebook-import-msg[few]"
-msgid "{{imported}}/{{total}} friends imported"
-msgstr "Chaidh {{imported}} caraidean ion-phortadh (à {{total}})"
-
-#: facebook-import-msg[many]
-msgctxt "facebook-import-msg[many]"
-msgid "{{imported}}/{{total}} friends imported"
-msgstr "Chaidh {{imported}} caraid ion-phortadh (à {{total}})"
-
-#: facebook-import-msg[other]
-msgctxt "facebook-import-msg[other]"
-msgid "{{imported}}/{{total}} friends imported"
-msgstr "Chaidh {{imported}} caraid ion-phortadh (à {{total}})"
-
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Fxa Intro
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -851,7 +805,7 @@ msgstr "Chaidh {{imported}} caraid ion-phortadh (à {{total}})"
 msgid "Firefox Accounts"
 msgstr "Cunntasan Firefox"
 
-#: fxa-upsell.innerHTML
+#: fxa-upsell
 msgid ""
 "A Firefox Account lets you find a lost phone and buy apps from the Firefox "
 "Marketplace."
@@ -951,69 +905,45 @@ msgstr ""
 "caitheamh is gnàthachadh an uidheim {{brandShortName}} agad. Cleachdaidh "
 "sinn an dàta seo gus am bathar againn a dhèanamh fiù nas fhearr."
 
-#: learn-more-telemetry2.innerHTML
-msgid ""
-"Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
-"a>"
+#: learn-more-telemetry2
+msgid "Learn more at <a>{{url}}</a>"
 msgstr ""
-"Barrachd fiosrachaidh aig <a href=\"{{href}}\" class="
-"\"{{className}}\">{{textContent}}</a>"
 
-#: learn-more-information2.innerHTML
-msgid ""
-"Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
-"\"{{className}}\">{{textContent}}</a>"
-msgstr ""
-"Chì thu mar a làimhsicheas Mozilla am fiosrachadh agad aig <a href="
-"\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>"
+#: learn-more-information2
+#, fuzzy
+msgid "Learn how Mozilla handles your information at <a>{{url}}</a>"
+msgstr "Fiosraich mar a làimhsicheas Mozilla am fiosrachadh agad aig {{link}}"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # OS privacy
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: htmlWelcome2.innerHTML
+#: htmlWelcome2
+#, fuzzy
 msgid ""
-"Welcome to <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>, "
-"the free and open source operating system from Mozilla. Our mission is to "
-"promote openness, innovation and opportunity by keeping the power of the Web "
-"in your hands."
+"Welcome to <a>{{brandShortName}}</a>, the free and open source operating "
+"system from Mozilla. Our mission is to promote openness, innovation and "
+"opportunity by keeping the power of the Web in your hands."
 msgstr ""
 "Fàilte gu <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>, "
 "an siostam-obrachaidh saor o Mozilla sa bheil còd fosgailte. Tha e ’na amas "
 "dhuinn fosgailteachd, ùr-ghnàthachadh agus cothroman a chruthachadh is sinne "
 "a’ glèidheadh do smachd-sa air an lìon."
 
-#: htmlWelcome-link
-msgctxt "htmlWelcome-link"
-msgid "{{brandShortName}}"
-msgstr "{{brandShortName}}"
-
-#: helpImprove2.innerHTML
+#: helpImprove2
+#, fuzzy
 msgid ""
 "You can help us improve our products and services by automatically sending "
-"analytics data. See our <a href=\"{{href}}\" class="
-"\"{{className}}\">{{textContent}}</a> to learn how we handle data from your "
-"device."
+"analytics data. See our <a>Privacy Notice</a> to learn how we handle data "
+"from your device."
 msgstr ""
-"’S urrainn dhut taic a chumail ri obair-leasachaidh a’ bhathair is nan "
-"seirbheisean againn ’s tu a’ cur dàta anailis thugainn. Thoir sùil air <a "
-"href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a> airson "
-"fiosrachadh mar a làimhsicheas sinn dàta an uidheim agad."
+"’S urrainn dhut taic a chumail ri leasachadh a’ bhathair ’s nan seirbheisean "
+"againn is tu a’ cur dàta anailisidh thugainn. Thoir sùil air an {{link}} "
+"againn airson faighinn a-mach mar a chleachdas sinn an dàta on uidheam agad."
 
-#: helpImprove-link
-msgid "Privacy Notice"
-msgstr "an t-sanas phrìobhaideachd"
-
-#: learn-more-privacy2.innerHTML
+#: learn-more-privacy2
 msgid ""
-"Learn how Mozilla handles your information in our <a href=\"{{href}}\" class="
-"\"{{className}}\">{{textContent}}</a>."
+"Learn how Mozilla handles your information in our <a>privacy policy</a>."
 msgstr ""
-"Chì thu mar a làimhsicheas Mozilla am fiosrachadh agad aig <a href="
-"\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>."
-
-#: learn-more-privacy-link
-msgid "privacy policy"
-msgstr "phoileasaidh phrìobhaideachd"
 
 #: aboutBrowser
 msgid "About {{brandShortName}}"
@@ -1295,6 +1225,81 @@ msgstr "Ceum {{step}} à {{total}}"
 msgid "First Time Experience"
 msgstr "A’ chiad chleachdadh"
 
+#~ msgid "Facebook"
+#~ msgstr "Facebook"
+
+#~ msgid "… checking"
+#~ msgstr "… 'ga sgrùdadh"
+
+#~ msgid ""
+#~ "You can import and edit Facebook friends anytime in Contacts settings"
+#~ msgstr ""
+#~ "’S urrainn dhut caraidean Facebook ion-phortadh is deasachadh ann an "
+#~ "roghainnean an luchd-aithne"
+
+#~ msgid "{[ plural(imported) ]}"
+#~ msgstr "{[ plural(imported) ]}"
+
+#~ msgid "No friends imported (out of {{total}})"
+#~ msgstr "Cha deach caraid sam bith ion-phortadh (à {{total}} uile gu lèir)"
+
+#~ msgid "One friend imported (out of {{total}})"
+#~ msgstr "Chaidh {{imported}} charaid ion-phortadh (à {{total}})"
+
+#~ msgctxt "facebook-import-msg[two]"
+#~ msgid "{{imported}}/{{total}} friends imported"
+#~ msgstr "Chaidh {{imported}} charaid ion-phortadh (à {{total}})"
+
+#~ msgctxt "facebook-import-msg[few]"
+#~ msgid "{{imported}}/{{total}} friends imported"
+#~ msgstr "Chaidh {{imported}} caraidean ion-phortadh (à {{total}})"
+
+#~ msgctxt "facebook-import-msg[many]"
+#~ msgid "{{imported}}/{{total}} friends imported"
+#~ msgstr "Chaidh {{imported}} caraid ion-phortadh (à {{total}})"
+
+#~ msgctxt "facebook-import-msg[other]"
+#~ msgid "{{imported}}/{{total}} friends imported"
+#~ msgstr "Chaidh {{imported}} caraid ion-phortadh (à {{total}})"
+
+#~ msgid ""
+#~ "Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}"
+#~ "</a>"
+#~ msgstr ""
+#~ "Barrachd fiosrachaidh aig <a href=\"{{href}}\" class="
+#~ "\"{{className}}\">{{textContent}}</a>"
+
+#~ msgid ""
+#~ "Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
+#~ "\"{{className}}\">{{textContent}}</a>"
+#~ msgstr ""
+#~ "Chì thu mar a làimhsicheas Mozilla am fiosrachadh agad aig <a href="
+#~ "\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>"
+
+#~ msgid ""
+#~ "You can help us improve our products and services by automatically "
+#~ "sending analytics data. See our <a href=\"{{href}}\" class="
+#~ "\"{{className}}\">{{textContent}}</a> to learn how we handle data from "
+#~ "your device."
+#~ msgstr ""
+#~ "’S urrainn dhut taic a chumail ri obair-leasachaidh a’ bhathair is nan "
+#~ "seirbheisean againn ’s tu a’ cur dàta anailis thugainn. Thoir sùil air <a "
+#~ "href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a> airson "
+#~ "fiosrachadh mar a làimhsicheas sinn dàta an uidheim agad."
+
+#~ msgid "Privacy Notice"
+#~ msgstr "an t-sanas phrìobhaideachd"
+
+#~ msgid ""
+#~ "Learn how Mozilla handles your information in our <a href=\"{{href}}\" "
+#~ "class=\"{{className}}\">{{textContent}}</a>."
+#~ msgstr ""
+#~ "Chì thu mar a làimhsicheas Mozilla am fiosrachadh agad aig <a href="
+#~ "\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>."
+
+#~ msgid "privacy policy"
+#~ msgstr "phoileasaidh phrìobhaideachd"
+
 #~ msgid "Swipe from right to left to browse your apps."
 #~ msgstr ""
 #~ "Dèan grad-shlaighdeadh on taobh deas gun taobh chlì gus na h-aplacaidean "
@@ -1339,20 +1344,6 @@ msgstr "A’ chiad chleachdadh"
 
 #~ msgid "Learn more at {{link}}"
 #~ msgstr "Barrachd fiosrachaidh aig {{link}}"
-
-#~ msgid "Learn how Mozilla handles your information at {{link}}"
-#~ msgstr ""
-#~ "Fiosraich mar a làimhsicheas Mozilla am fiosrachadh agad aig {{link}}"
-
-#~ msgid ""
-#~ "You can help us improve our products and services by automatically "
-#~ "sending analytics data. See our {{link}} to learn how we handle data from "
-#~ "your device."
-#~ msgstr ""
-#~ "’S urrainn dhut taic a chumail ri leasachadh a’ bhathair ’s nan "
-#~ "seirbheisean againn is tu a’ cur dàta anailisidh thugainn. Thoir sùil air "
-#~ "an {{link}} againn airson faighinn a-mach mar a chleachdas sinn an dàta "
-#~ "on uidheam agad."
 
 #~ msgid "Learn how Mozilla handles your information in our {{link}}."
 #~ msgstr ""

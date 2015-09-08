@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-19 08:45+0000\n"
+"POT-Creation-Date: 2015-09-07 14:45+0000\n"
 "PO-Revision-Date: 2015-09-04 20:18+0000\n"
 "Last-Translator: Jānis Marks Gailis <jm-gailis@fai-vianet.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1441397905.000000\n"
@@ -37,12 +37,14 @@ msgstr "Aizvērt"
 msgid "Mail"
 msgstr "Epasts"
 
-#: setup-empty-account-prompt
+#. # LOCALIZATION NOTE(setup-empty-account-message): Shown on the
+#. # setup_account_info page when the email app is launched from an activity, but
+#. # no account is set up yet.
+#: setup-empty-account-message
 msgid ""
-"You are not set up to send or receive email. Would you like to do that now?"
+"You are not set up to send or receive email. Set up an account to complete "
+"the action."
 msgstr ""
-"Jūs neesat uzstādījis nepieciešamo lai sūtīt vai saņemt epastus. Vai "
-"vēlaties tagad to darīt?"
 
 #: setup-pick-service
 msgid "To send and receive email, you will need to set up an account."
@@ -488,7 +490,7 @@ msgstr "Saglabāt parakstu"
 #. # button which discards changes when a user hits back in the signature
 #. # entry page.
 #: signature-discard-confirm
-msgctxt "signature-discard-confirm"
+#, fuzzy
 msgid "Discard"
 msgstr "Izmest"
 
@@ -1056,6 +1058,14 @@ msgctxt "compose-bcc"
 msgid "bcc"
 msgstr "bcc"
 
+#. # LOCALIZATION NOTE(compose-autocomplete-match): For the compose card
+#. # autocomplete matches when entering an email, the ariaLabel to use for each
+#. # match. The following string is spoken by screen readers and not shown on the
+#. # screen.
+#: compose-autocomplete-match.ariaLabel
+msgid "{{name}} {{address}}"
+msgstr ""
+
 #. # LOCALIZATION NOTE(compose-contact-add): For compose card, a label for an add
 #. # contact buttons rendered as a circled plus sign and used to add to, cc and bcc
 #. # recipients. The following string is spoken by screen readers and not shown on
@@ -1090,19 +1100,22 @@ msgid "Attachments: {{kilobytes}}K"
 msgstr "Pielikumi: {{kilobytes}}K"
 
 #: compose-attachments-container.ariaLabel[few]
+#, fuzzy
 msgctxt "compose-attachments-container.ariaLabel[few]"
 msgid "Attachments: {{kilobytes}}K"
-msgstr ""
+msgstr "Pielikums: {{kilobytes}}K"
 
 #: compose-attachments-container.ariaLabel[many]
+#, fuzzy
 msgctxt "compose-attachments-container.ariaLabel[many]"
 msgid "Attachments: {{kilobytes}}K"
-msgstr ""
+msgstr "Pielikums: {{kilobytes}}K"
 
 #: compose-attachments-container.ariaLabel[other]
+#, fuzzy
 msgctxt "compose-attachments-container.ariaLabel[other]"
 msgid "Attachments: {{kilobytes}}K"
-msgstr ""
+msgstr "Pielikums: {{kilobytes}}K"
 
 #. # LOCALIZATION NOTE(compose-attachment-remove): For compose card, a label for an
 #. # attachement remove button. The following string is spoken by screen readers
@@ -1175,10 +1188,12 @@ msgstr "Temats"
 msgid "Save to Local Drafts"
 msgstr "Saglabāt vietējas melnrakstos"
 
-#: compose-discard-confirm
-msgctxt "compose-discard-confirm"
-msgid "Discard"
-msgstr "Izmest"
+#. # LOCALIZATION NOTE(compose-delete-confirm): Wheh leaving the Compose card, the
+#. # user is prompted to save the draft or delete it. This is the delete button
+#. # text.
+#: compose-delete-confirm
+msgid "Delete the draft"
+msgstr ""
 
 #: compose-send-message-failed
 msgid "Sending email failed"
@@ -1246,6 +1261,8 @@ msgid "This file is too large to download."
 msgstr "Šī datne ir pārāk liela lai to lejupielādēt."
 
 #: message-no-subject
+#, fuzzy
+msgctxt "message-no-subject"
 msgid "(no subject)"
 msgstr "(nav temata)"
 
@@ -1975,6 +1992,14 @@ msgctxt "new-messages[other]"
 msgid "{{ n }} New Messages"
 msgstr "{{ n }} jaunas vēstules"
 
+#. # LOCALIZATION NOTE(notification-no-subject): is used for notifications
+#. # if the new email doesn't have a subject
+#: notification-no-subject
+#, fuzzy
+msgctxt "notification-no-subject"
+msgid "(no subject)"
+msgstr "(nav temata)"
+
 #. # new-emails-notify-one-account is used when a system notification is generated during
 #. # a periodic background sync with the server. Since this goes to the system's
 #. # notification area, and user has only one account configured with the email App.
@@ -2110,3 +2135,14 @@ msgstr "Iepriekšējais"
 #: message-reader-date-received.ariaLabel
 msgid "Received"
 msgstr "Saņemts"
+
+#~ msgid ""
+#~ "You are not set up to send or receive email. Would you like to do that "
+#~ "now?"
+#~ msgstr ""
+#~ "Jūs neesat uzstādījis nepieciešamo lai sūtīt vai saņemt epastus. Vai "
+#~ "vēlaties tagad to darīt?"
+
+#~ msgctxt "compose-discard-confirm"
+#~ msgid "Discard"
+#~ msgstr "Izmest"
