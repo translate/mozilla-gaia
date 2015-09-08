@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-04-01 05:45+0000\n"
 "PO-Revision-Date: 2014-07-31 01:20+0000\n"
 "Last-Translator: Balasankar C <balasankarc@autistici.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1406769649.000000\n"
@@ -59,18 +59,6 @@ msgstr "പൂര്‍ത്തിയായി"
 #: delete
 msgid "Delete"
 msgstr "മായ്ക്കുക"
-
-#: delete-thread
-msgid "Delete thread"
-msgstr ""
-
-#: mark-as-read
-msgid "Mark as read"
-msgstr ""
-
-#: mark-as-unread
-msgid "Mark as unread"
-msgstr ""
 
 #: deleting-messages
 msgid "Deleting…"
@@ -179,8 +167,6 @@ msgid "Select Messages"
 msgstr "സന്ദേശങ്ങള്‍ കളയുക"
 
 #: settings
-#, fuzzy
-msgctxt "settings"
 msgid "Settings"
 msgstr "ക്രമീകരണങ്ങള്‍"
 
@@ -206,9 +192,8 @@ msgctxt "message"
 msgid "Message"
 msgstr "സന്ദേശം"
 
-#: messagesInput.title
-#, fuzzy
-msgctxt "messagesInput.title"
+#: messagesInput_placeholder
+msgctxt "messagesInput_placeholder"
 msgid "Message"
 msgstr "സന്ദേശം"
 
@@ -242,8 +227,6 @@ msgid ""
 msgstr ""
 
 #: newMessage
-#, fuzzy
-msgctxt "newMessage"
 msgid "New message"
 msgstr "പുതിയ സന്ദേശം"
 
@@ -406,6 +389,16 @@ msgstr ""
 msgid "Message size:"
 msgstr "സന്ദേശ വലിപ്പം:"
 
+#: report-dateTimeFormat12
+#, fuzzy
+msgid "%e %B %Y, {{shortTimeFormat12}}"
+msgstr "%e %B %Y, {{shortTimeFormat}}"
+
+#: report-dateTimeFormat24
+#, fuzzy
+msgid "%e %B %Y, {{shortTimeFormat24}}"
+msgstr "%e %B %Y, {{shortTimeFormat}}"
+
 #: report-to-title
 msgid "To"
 msgstr ""
@@ -481,9 +474,10 @@ msgstr "ഇപ്പോഴത്തെ അയയ്ക്കാത്തവ മ�
 msgid "Save as Draft"
 msgstr "അയയ്ക്കാത്തവ ആയി സൂക്ഷിക്കുക"
 
-#: delete-draft
-msgid "Delete draft"
-msgstr ""
+#: discard-message
+msgctxt "discard-message"
+msgid "Discard"
+msgstr "കളയുക"
 
 #: discard-sms
 msgid "Are you sure you want to discard this message?"
@@ -503,87 +497,15 @@ msgstr "ഈ സന്ദേശം വീണ്ടും അയയ്ക്കു
 
 #: deleteMessage-confirmation
 #, fuzzy
-msgctxt "deleteMessage-confirmation"
 msgid "Delete selected message?"
 msgstr "തെരഞ്ഞെടുത്ത സന്ദേശങ്ങള്‍ കളയട്ടെ?"
 
-#: deleteMessages-confirmation-message
-#, fuzzy
-msgctxt "deleteMessages-confirmation-message"
-msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
-
-#: deleteMessages-confirmation-message[zero]
-msgid "Please select messages to be deleted."
-msgstr ""
-
-#: deleteMessages-confirmation-message[one]
-#, fuzzy
-msgctxt "deleteMessages-confirmation-message[one]"
-msgid "Delete selected message?"
+#: deleteMessages-confirmation
+msgid "Delete selected messages?"
 msgstr "തെരഞ്ഞെടുത്ത സന്ദേശങ്ങള്‍ കളയട്ടെ?"
 
-#: deleteMessages-confirmation-message[two]
-#, fuzzy
-msgctxt "deleteMessages-confirmation-message[two]"
-msgid "Delete {{n}} selected messages?"
-msgstr "തെരഞ്ഞെടുത്ത സന്ദേശങ്ങള്‍ കളയട്ടെ?"
-
-#: deleteMessages-confirmation-message[few]
-#, fuzzy
-msgctxt "deleteMessages-confirmation-message[few]"
-msgid "Delete {{n}} selected messages?"
-msgstr "തെരഞ്ഞെടുത്ത സന്ദേശങ്ങള്‍ കളയട്ടെ?"
-
-#: deleteMessages-confirmation-message[many]
-#, fuzzy
-msgctxt "deleteMessages-confirmation-message[many]"
-msgid "Delete {{n}} selected messages?"
-msgstr "തെരഞ്ഞെടുത്ത സന്ദേശങ്ങള്‍ കളയട്ടെ?"
-
-#: deleteMessages-confirmation-message[other]
-#, fuzzy
-msgctxt "deleteMessages-confirmation-message[other]"
-msgid "Delete {{n}} selected messages?"
-msgstr "തെരഞ്ഞെടുത്ത സന്ദേശങ്ങള്‍ കളയട്ടെ?"
-
-#: deleteThreads-confirmation-message
-#, fuzzy
-msgctxt "deleteThreads-confirmation-message"
-msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
-
-#: deleteThreads-confirmation-message[zero]
-msgid "Please select message threads to be deleted."
-msgstr ""
-
-#: deleteThreads-confirmation-message[one]
-#, fuzzy
-msgid "Delete selected message thread?"
-msgstr "തിരഞ്ഞ സന്ദേശക്കൂട്ടങ്ങൾ കളയട്ടെ?"
-
-#: deleteThreads-confirmation-message[two]
-#, fuzzy
-msgctxt "deleteThreads-confirmation-message[two]"
-msgid "Delete {{n}} selected message threads?"
-msgstr "തിരഞ്ഞ സന്ദേശക്കൂട്ടങ്ങൾ കളയട്ടെ?"
-
-#: deleteThreads-confirmation-message[few]
-#, fuzzy
-msgctxt "deleteThreads-confirmation-message[few]"
-msgid "Delete {{n}} selected message threads?"
-msgstr "തിരഞ്ഞ സന്ദേശക്കൂട്ടങ്ങൾ കളയട്ടെ?"
-
-#: deleteThreads-confirmation-message[many]
-#, fuzzy
-msgctxt "deleteThreads-confirmation-message[many]"
-msgid "Delete {{n}} selected message threads?"
-msgstr "തിരഞ്ഞ സന്ദേശക്കൂട്ടങ്ങൾ കളയട്ടെ?"
-
-#: deleteThreads-confirmation-message[other]
-#, fuzzy
-msgctxt "deleteThreads-confirmation-message[other]"
-msgid "Delete {{n}} selected message threads?"
+#: deleteThreads-confirmation2
+msgid "Delete selected message threads?"
 msgstr "തിരഞ്ഞ സന്ദേശക്കൂട്ടങ്ങൾ കളയട്ടെ?"
 
 #: new-message-notice-text
@@ -668,14 +590,15 @@ msgstr ""
 
 #. #LOCALIZATION NOTE (fdnErrorBody): the English translation does not need the
 #. # actual number of phone numbers. If your translation needs it, you can still add it
-#. # using the parameter {{ n }}.
-#: fdnErrorBody
+#. # using the parameter {{ n }}. Also take into account that you could add HTML so be
+#. # careful with the content, it may affect to the whole app.
+#: fdnErrorBody.innerHTML
 #, fuzzy
-msgctxt "fdnErrorBody"
+msgctxt "fdnErrorBody.innerHTML"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: fdnErrorBody[one]
+#: fdnErrorBody.innerHTML[one]
 #, fuzzy
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
@@ -684,9 +607,9 @@ msgstr ""
 "എഫ്ഡിഎന്‍ (ഫിക്സഡ് ഡയലിങ്ങ് നമ്പറുകള്‍) സജീവമാണ്. എസ്എംഎസ് കേന്ദ്രവും ഇനിയുള്ള അയക്കേണ്ടയാളും "
 "നിങ്ങളുടെ എഫ്ഡിഎന്‍ പട്ടികയില്‍ ഉണ്ടെന്നുറപ്പാക്കുക:<br/>{{ numbers }}"
 
-#: fdnErrorBody[two]
+#: fdnErrorBody.innerHTML[two]
 #, fuzzy
-msgctxt "fdnErrorBody[two]"
+msgctxt "fdnErrorBody.innerHTML[two]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipients are in your FDN list:"
@@ -694,9 +617,9 @@ msgstr ""
 "എഫ്ഡിഎന്‍ (ഫിക്സഡ് ഡയലിങ്ങ് നമ്പറുകള്‍) സജീവമാണ്. എസ്എംഎസ് കേന്ദ്രവും ഇനിയുള്ള അയക്കേണ്ടവരും "
 "നിങ്ങളുടെ എഫ്ഡിഎന്‍ പട്ടികയില്‍ ഉണ്ടെന്നുറപ്പാക്കുക:<br/>{{ numbers }}"
 
-#: fdnErrorBody[few]
+#: fdnErrorBody.innerHTML[few]
 #, fuzzy
-msgctxt "fdnErrorBody[few]"
+msgctxt "fdnErrorBody.innerHTML[few]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipients are in your FDN list:"
@@ -704,9 +627,9 @@ msgstr ""
 "എഫ്ഡിഎന്‍ (ഫിക്സഡ് ഡയലിങ്ങ് നമ്പറുകള്‍) സജീവമാണ്. എസ്എംഎസ് കേന്ദ്രവും ഇനിയുള്ള അയക്കേണ്ടവരും "
 "നിങ്ങളുടെ എഫ്ഡിഎന്‍ പട്ടികയില്‍ ഉണ്ടെന്നുറപ്പാക്കുക:<br/>{{ numbers }}"
 
-#: fdnErrorBody[many]
+#: fdnErrorBody.innerHTML[many]
 #, fuzzy
-msgctxt "fdnErrorBody[many]"
+msgctxt "fdnErrorBody.innerHTML[many]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipients are in your FDN list:"
@@ -714,9 +637,9 @@ msgstr ""
 "എഫ്ഡിഎന്‍ (ഫിക്സഡ് ഡയലിങ്ങ് നമ്പറുകള്‍) സജീവമാണ്. എസ്എംഎസ് കേന്ദ്രവും ഇനിയുള്ള അയക്കേണ്ടവരും "
 "നിങ്ങളുടെ എഫ്ഡിഎന്‍ പട്ടികയില്‍ ഉണ്ടെന്നുറപ്പാക്കുക:<br/>{{ numbers }}"
 
-#: fdnErrorBody[other]
+#: fdnErrorBody.innerHTML[other]
 #, fuzzy
-msgctxt "fdnErrorBody[other]"
+msgctxt "fdnErrorBody.innerHTML[other]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipients are in your FDN list:"
@@ -891,11 +814,10 @@ msgstr "അറ്റാച്മെന്റ് മാറ്റുക"
 msgid "Unsent Message"
 msgstr "അയയ്ക്കാത്ത സന്ദേശം"
 
-#: unsent-message-text
-#, fuzzy
+#: unsent-message-description
 msgid ""
-"Your previous message was not sent. Do you want to discard the unsent "
-"message and continue?"
+"Your previous message was not sent. Do you want to edit the unsent message "
+"or discard it and continue?"
 msgstr "നേരത്തേയുള്ള സന്ദേശം അയച്ചിട്ടില്ല. അയക്കാത്ത സന്ദേശം തിരുത്തണോ അതോ കളഞ്ഞിട്ട് തുടരണോ?"
 
 #: unsent-message-option-edit
@@ -904,17 +826,13 @@ msgid "Edit"
 msgstr "തിരുത്തുക"
 
 #: unsent-message-option-discard
-#, fuzzy
+msgctxt "unsent-message-option-discard"
 msgid "Discard"
 msgstr "കളയുക"
 
 #: message-options
 msgid "Message options"
 msgstr "സന്ദേശ സൌകര്യങ്ങള്‍"
-
-#: thread-options
-msgid "Thread options"
-msgstr ""
 
 #: forward
 msgid "Forward"
@@ -970,17 +888,13 @@ msgstr "മറ്റുള്ളവ"
 msgid "today"
 msgstr "ഇന്നു്"
 
-#: todayWithTime
-msgid "today {{ time }}"
-msgstr ""
-
 #: yesterday
 msgid "yesterday"
 msgstr "ഇന്നലെ"
 
-#: yesterdayWithTime
-msgid "yesterday {{ time }}"
-msgstr ""
+#: incorrectDate
+msgid "(incorrect date)"
+msgstr "(തെറ്റായ തിയതി)"
 
 #. #Phone Context Menu
 #: addToExistingContact
@@ -996,8 +910,6 @@ msgid "View contact"
 msgstr "വിലാസം കാണുക"
 
 #: call
-#, fuzzy
-msgctxt "call"
 msgid "Call"
 msgstr "വിളിയ്ക്കുക"
 
@@ -1121,10 +1033,6 @@ msgstr "സിം{{id}}"
 msgid "SIM {{id}}, {{detailString}}"
 msgstr ""
 
-#: dsds-unknown-sim
-msgid "unknown SIM"
-msgstr ""
-
 #: dsds-notification-title-with-sim
 msgid "({{sim}}) {{sender}}"
 msgstr "({{sim}}) {{sender}}"
@@ -1146,6 +1054,16 @@ msgstr ""
 msgid "using SIM {{n}}"
 msgstr ""
 
+#. # Date formats specific for SMS app
+#. # LOCALIZATION NOTE (expiry-date-format): this is a date format.
+#. # See http://pubs.opengroup.org/onlinepubs/007908799/xsh/strftime.html
+#. # %A is the full weekday name from shared/date/date.properties and it might
+#. # not be in the correct grammatical case. To work around this issue, you can
+#. # use a different format like "%m/%d/%Y".
+#: expiry-date-format
+msgid "%A, %b %e"
+msgstr "%A, %b %e"
+
 #. # Labels for screen reader
 #: attach-button.ariaLabel
 msgid "Add attachment"
@@ -1166,28 +1084,6 @@ msgstr ""
 #: is-draft.ariaLabel
 msgid "Draft"
 msgstr ""
-
-#: actionsButton.ariaLabel
-msgid "Actions"
-msgstr ""
-
-#: settingsButton.ariaLabel
-#, fuzzy
-msgctxt "settingsButton.ariaLabel"
-msgid "Settings"
-msgstr "ക്രമീകരണങ്ങള്‍"
-
-#: composeLink.ariaLabel
-#, fuzzy
-msgctxt "composeLink.ariaLabel"
-msgid "New message"
-msgstr "പുതിയ സന്ദേശം"
-
-#: callButton.ariaLabel
-#, fuzzy
-msgctxt "callButton.ariaLabel"
-msgid "Call"
-msgstr "വിളിയ്ക്കുക"
 
 #. # Message statuses
 #: message-delivery-status-sending
@@ -1230,60 +1126,6 @@ msgstr "റദ്ദാക്കുക"
 msgctxt "modal-dialog-default-title"
 msgid "Messages"
 msgstr "സന്ദേശങ്ങള്‍"
-
-#~ msgctxt "messagesInput_placeholder"
-#~ msgid "Message"
-#~ msgstr "സന്ദേശം"
-
-#, fuzzy
-#~ msgid "%e %B %Y, {{shortTimeFormat12}}"
-#~ msgstr "%e %B %Y, {{shortTimeFormat}}"
-
-#, fuzzy
-#~ msgid "%e %B %Y, {{shortTimeFormat24}}"
-#~ msgstr "%e %B %Y, {{shortTimeFormat}}"
-
-#, fuzzy
-#~ msgctxt "fdnErrorBody.innerHTML"
-#~ msgid "{[ plural(n) ]}"
-#~ msgstr "{[ plural(n) ]}"
-
-#, fuzzy
-#~ msgctxt "fdnErrorBody.innerHTML[few]"
-#~ msgid ""
-#~ "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and "
-#~ "the following recipients are in your FDN list:"
-#~ msgstr ""
-#~ "എഫ്ഡിഎന്‍ (ഫിക്സഡ് ഡയലിങ്ങ് നമ്പറുകള്‍) സജീവമാണ്. എസ്എംഎസ് കേന്ദ്രവും ഇനിയുള്ള അയക്കേണ്ടവരും "
-#~ "നിങ്ങളുടെ എഫ്ഡിഎന്‍ പട്ടികയില്‍ ഉണ്ടെന്നുറപ്പാക്കുക:<br/>{{ numbers }}"
-
-#, fuzzy
-#~ msgctxt "fdnErrorBody.innerHTML[many]"
-#~ msgid ""
-#~ "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and "
-#~ "the following recipients are in your FDN list:"
-#~ msgstr ""
-#~ "എഫ്ഡിഎന്‍ (ഫിക്സഡ് ഡയലിങ്ങ് നമ്പറുകള്‍) സജീവമാണ്. എസ്എംഎസ് കേന്ദ്രവും ഇനിയുള്ള അയക്കേണ്ടവരും "
-#~ "നിങ്ങളുടെ എഫ്ഡിഎന്‍ പട്ടികയില്‍ ഉണ്ടെന്നുറപ്പാക്കുക:<br/>{{ numbers }}"
-
-#, fuzzy
-#~ msgctxt "fdnErrorBody.innerHTML[other]"
-#~ msgid ""
-#~ "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and "
-#~ "the following recipients are in your FDN list:"
-#~ msgstr ""
-#~ "എഫ്ഡിഎന്‍ (ഫിക്സഡ് ഡയലിങ്ങ് നമ്പറുകള്‍) സജീവമാണ്. എസ്എംഎസ് കേന്ദ്രവും ഇനിയുള്ള അയക്കേണ്ടവരും "
-#~ "നിങ്ങളുടെ എഫ്ഡിഎന്‍ പട്ടികയില്‍ ഉണ്ടെന്നുറപ്പാക്കുക:<br/>{{ numbers }}"
-
-#~ msgctxt "unsent-message-option-discard"
-#~ msgid "Discard"
-#~ msgstr "കളയുക"
-
-#~ msgid "(incorrect date)"
-#~ msgstr "(തെറ്റായ തിയതി)"
-
-#~ msgid "%A, %b %e"
-#~ msgstr "%A, %b %e"
 
 #~ msgctxt "fdnBlocked2Body.innerHTML"
 #~ msgid "{[ plural(n) ]}"

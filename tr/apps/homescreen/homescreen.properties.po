@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-07-31 08:01+0000\n"
 "Last-Translator: Selim Şumlu <selim@sum.lu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,376 +12,479 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1406793679.000000\n"
 
-#: stop-download-body
-#, fuzzy
-msgid "Do you want to stop downloading {{name}}?"
-msgstr "{{name}} uygulamasını indirmek istiyor musunuz?"
+#. # Wrapper
+#: wrapper-search-name
+msgid "{{topic}} on {{name}}"
+msgstr "{{name}} üzerinde {{topic}}"
 
-#: stop-download-action
-msgid "Stop"
-msgstr ""
+#. # Dialog that appears when a user long taps on the homescreen
+#: contextmenu-add-wallpaper
+msgid "Change Wallpaper"
+msgstr "Duvar kâğıdını değiştir"
 
-#: resume-download-body
-msgid "Do you want to download {{name}}?"
-msgstr "{{name}} uygulamasını indirmek istiyor musunuz?"
+#: contextmenu-add-smart-collections
+msgid "Add Smart Collections"
+msgstr "Akıllı koleksiyon ekle"
 
-#: resume-download-action
-#, fuzzy
-msgid "Download"
-msgstr "İndir"
+#. # Prompt that appears when a user tries to delete an app.
+#: delete-title
+msgid "Delete {{name}}"
+msgstr "{{name}} uygulamasını sil"
 
-#: homescreen-settings
-msgid "Homescreen Settings"
-msgstr ""
+#: delete-body
+msgid "{{name}} and all of its data will be deleted."
+msgstr "{{name}} ve tüm verileri silinecek."
 
-#: cancel-action
-#, fuzzy
+#: delete
+msgid "Delete"
+msgstr "Sil"
+
+#: cancel
+msgctxt "cancel"
 msgid "Cancel"
 msgstr "İptal"
 
-#: apps-panel
-msgid "Applications"
+#. # Prompt that appears when a user tries to remove a site saved to the homescreen.
+#: remove-title-2
+msgid "Remove {{name}}"
+msgstr "{{name}} uygulamasını kaldır"
+
+#: remove-body
+msgid "Remove {{name}} from the homescreen?"
+msgstr "{{name}} ana ekrandan kaldırılsın mı?"
+
+#: remove
+msgid "Remove"
+msgstr "Kaldır"
+
+#. # Landing
+#: longDateFormat
+msgid "%A, %B %e"
+msgstr "%e %B %A"
+
+#. # App reinstall
+#: download
+msgctxt "download"
+msgid "Download"
+msgstr "İndir"
+
+#: restart-download-title
+msgid "Restart Download"
+msgstr "İndirmeyi yeniden başlat"
+
+#: restart-download-body
+msgid "Do you want to download {{name}}?"
+msgstr "{{name}} uygulamasını indirmek istiyor musunuz?"
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: paginationBarText
+msgid "Page {{current}} of {{total}}"
+msgstr "Sayfa {{current}} / {{total}}"
+
+#: paginationScroller.ariaLabel
+msgid "Homescreen"
+msgstr "Ana ekran"
+
+#. # Evme
+#: loadingEvme2
+msgctxt "loadingEvme2"
+msgid "Loading…"
+msgstr "Yükleniyor…"
+
+#. #See bug 838634 for why those keys are still here
+#: evme-searchbar-default
+msgid "Everything…"
+msgstr "Her şey…"
+
+#: evme-searchbar-default2
+msgctxt "evme-searchbar-default2"
+msgid "I’m thinking of…"
+msgstr "Aklımdan geçen şey…"
+
+#: evme-searchbar-default2.placeholder
+msgctxt "evme-searchbar-default2.placeholder"
+msgid "I’m thinking of…"
+msgstr "Aklımdan geçen şey…"
+
+#: evme-searchbar-clear
+msgid "Back"
+msgstr "Geri"
+
+#: evme-searchbar-default.placeholder
+msgctxt "evme-searchbar-default.placeholder"
+msgid "I’m thinking of…"
+msgstr "Aklımdan geçen şey…"
+
+#: evme-searchbar-title
+msgctxt "evme-searchbar-title"
+msgid "Everything"
+msgstr "Her şey"
+
+#. # Helper - in search page, under the search bar
+#. # See bug 838634 to see why the 2 keys cohabits.
+#: evme-helper-default
+msgid "Enter any topic or search query"
+msgstr "Bir konu veya arama sorgusu girin"
+
+#: evme-helper-default2
+msgid "Enter any topic or keyword"
+msgstr "Bir konu veya anahtar kelime girin"
+
+#: evme-helper-dismiss
+msgid "Dismiss"
+msgstr "Kapat"
+
+#: evme-helper-no-refine
+msgid "No options found"
+msgstr "Seçenek bulunamadı"
+
+#: evme-helper-history-title
+msgid "History:"
+msgstr "Geçmiş:"
+
+#: evme-helper-history-link
+msgid "History"
+msgstr "Geçmiş"
+
+#: evme-helper-history-clear
+msgid "Clear history"
+msgstr "Geçmişi temizle"
+
+#: evme-helper-didyoumean-title
+msgctxt "evme-helper-didyoumean-title"
+msgid "Did you mean:"
+msgstr "Bunu mu demek istediniz?:"
+
+#: evme-helper-refine-title
+msgctxt "evme-helper-refine-title"
+msgid "Did you mean:"
+msgstr "Bunu mu demek istediniz?:"
+
+#: evme-helper-title-prefix
+msgctxt "evme-helper-title-prefix"
+msgid "Everything"
+msgstr "Ara:"
+
+#: evme-helper-title-empty
+msgctxt "evme-helper-title-empty"
+msgid "Everything"
+msgstr "Her şey"
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: evme-helper-save-search
+msgid "Add to homescreen"
+msgstr "Ana ekrana ekle"
+
+#: evme-helper-unsave-search
+msgid "Remove from homescreen"
+msgstr "Ana ekrandan kaldır"
+
+#: evme-apps-market-download
+msgctxt "evme-apps-market-download"
+msgid "Download"
+msgstr "İndir"
+
+#: evme-apps-market-more-apps
+msgid "More Apps"
+msgstr "Daha fazla uygulama"
+
+#: evme-apps-loading-app
+msgctxt "evme-apps-loading-app"
+msgid "Loading…"
+msgstr "Yükleniyor…"
+
+#: evme-appsmore-loading
+msgctxt "evme-appsmore-loading"
+msgid "Loading…"
+msgstr "Yükleniyor…"
+
+#: evme-alert-app-install-confirm
+msgid "Add {{name}} to Home Screen?"
+msgstr "{{name}} Ana Ekran'a eklensin mi?"
+
+#: evme-alert-app-install-exists
+msgid "{{name}} was already added to Home Screen"
+msgstr "{{name}} zaten Ana Ekran'a eklenmiş"
+
+#: evme-alert-offline-smart-collections-more
+msgid "Connect to the internet to add more Smart Collections"
+msgstr "Daha fazla Akıllı Koleksiyon eklemek için internete bağlanın"
+
+#: evme-alert-save-wallpaper
+msgid "Set as wallpaper?"
+msgstr "Duvar kâğıdı yapılsın mı?"
+
+#: evme-alert-no-more-smart-collections
+msgid "No Smart Collections to add"
+msgstr "Eklenecek akıllı koleksiyon yok"
+
+#: evme-banner-app-install-success
+msgid "{{name}} added to Home Screen"
+msgstr "{{name}} Ana Ekran'a eklendi"
+
+#: evme-banner-save-wallpaper
+msgid "Wallpaper set successfully"
+msgstr "Duvar kâğıdı başarıyla ayarlandı"
+
+#. # Shortcuts - AKA smart collections - evme homepage
+#: evme-shortcuts-more
+msgid "More"
+msgstr "Daha fazlası"
+
+#: evme-collectionssuggest-loading
+msgctxt "evme-collectionssuggest-loading"
+msgid "Loading…"
+msgstr "Yükleniyor…"
+
+#: evme-collectionssuggest-loading-cancel
+msgctxt "evme-collectionssuggest-loading-cancel"
+msgid "Cancel"
+msgstr "İptal"
+
+#: evme-collectionssuggest-prompt-create-custom
+msgid "Create your own Smart Collection"
+msgstr "Kendi Akıllı Koleksiyon'unuzu yaratın"
+
+#: evme-backgroundimage-source-label
+msgid "Source:"
+msgstr "Kaynak:"
+
+#: evme-collection-title-prefix
+msgctxt "evme-collection-title-prefix"
+msgid "Everything"
+msgstr "Her şey"
+
+#: evme-collection-title-suffix
+msgid "Phone"
+msgstr "Telefon"
+
+#: evme-collection-loading-more
+msgctxt "evme-collection-loading-more"
+msgid "Loading…"
+msgstr "Yükleniyor…"
+
+#. # {{query}} will always be the user's current query from the searchbox
+#: evme-connectionmessage-apps
+msgid "Connect to the internet to get apps for {{query}}"
+msgstr "{{query}} aramasıyla uygulamalar edinmek için internete bağlanın"
+
+#: evme-connectionmessage-apps-has-installed
+msgid "Connect to the internet to get even more apps for {{query}}"
 msgstr ""
+"{{query}} aramasıyla daha fazla uygulama edinmek için internete bağlanın"
 
-#: pages-panel
-msgid "Pinned Pages"
+#. # tips are shown throughout the app on certain actions
+#: evme-tips-app-explain.innerHTML
+msgid "Find the things you love with the coolest apps."
+msgstr "En havalı uygulamalarla sevdiğiniz şeyleri bulun."
+
+#: evme-tips-searchbar-focus.innerHTML
+msgid "For example, find your favorite singer or band…"
+msgstr "Örneğin, en sevdiğiniz şarkıcı veya grubu bulun…"
+
+#: evme-tips-exact-results.innerHTML
+msgid ""
+"These are the apps for <b>{{query}}</b>,<br /><br /> tap any icon to open it."
 msgstr ""
-
-#~ msgid "{{topic}} on {{name}}"
-#~ msgstr "{{name}} üzerinde {{topic}}"
-
-#~ msgid "Change Wallpaper"
-#~ msgstr "Duvar kâğıdını değiştir"
-
-#~ msgid "Add Smart Collections"
-#~ msgstr "Akıllı koleksiyon ekle"
-
-#~ msgid "Delete {{name}}"
-#~ msgstr "{{name}} uygulamasını sil"
-
-#~ msgid "{{name}} and all of its data will be deleted."
-#~ msgstr "{{name}} ve tüm verileri silinecek."
-
-#~ msgid "Delete"
-#~ msgstr "Sil"
-
-#~ msgid "Remove {{name}}"
-#~ msgstr "{{name}} uygulamasını kaldır"
-
-#~ msgid "Remove {{name}} from the homescreen?"
-#~ msgstr "{{name}} ana ekrandan kaldırılsın mı?"
-
-#~ msgid "Remove"
-#~ msgstr "Kaldır"
-
-#~ msgid "%A, %B %e"
-#~ msgstr "%e %B %A"
-
-#~ msgid "Restart Download"
-#~ msgstr "İndirmeyi yeniden başlat"
-
-#~ msgid "Page {{current}} of {{total}}"
-#~ msgstr "Sayfa {{current}} / {{total}}"
-
-#~ msgid "Homescreen"
-#~ msgstr "Ana ekran"
-
-#~ msgctxt "loadingEvme2"
-#~ msgid "Loading…"
-#~ msgstr "Yükleniyor…"
-
-#~ msgid "Everything…"
-#~ msgstr "Her şey…"
-
-#~ msgctxt "evme-searchbar-default2"
-#~ msgid "I’m thinking of…"
-#~ msgstr "Aklımdan geçen şey…"
-
-#~ msgctxt "evme-searchbar-default2.placeholder"
-#~ msgid "I’m thinking of…"
-#~ msgstr "Aklımdan geçen şey…"
-
-#~ msgid "Back"
-#~ msgstr "Geri"
-
-#~ msgctxt "evme-searchbar-default.placeholder"
-#~ msgid "I’m thinking of…"
-#~ msgstr "Aklımdan geçen şey…"
-
-#~ msgctxt "evme-searchbar-title"
-#~ msgid "Everything"
-#~ msgstr "Her şey"
-
-#~ msgid "Enter any topic or search query"
-#~ msgstr "Bir konu veya arama sorgusu girin"
-
-#~ msgid "Enter any topic or keyword"
-#~ msgstr "Bir konu veya anahtar kelime girin"
-
-#~ msgid "Dismiss"
-#~ msgstr "Kapat"
-
-#~ msgid "No options found"
-#~ msgstr "Seçenek bulunamadı"
-
-#~ msgid "History:"
-#~ msgstr "Geçmiş:"
-
-#~ msgid "History"
-#~ msgstr "Geçmiş"
-
-#~ msgid "Clear history"
-#~ msgstr "Geçmişi temizle"
-
-#~ msgctxt "evme-helper-didyoumean-title"
-#~ msgid "Did you mean:"
-#~ msgstr "Bunu mu demek istediniz?:"
-
-#~ msgctxt "evme-helper-refine-title"
-#~ msgid "Did you mean:"
-#~ msgstr "Bunu mu demek istediniz?:"
-
-#~ msgctxt "evme-helper-title-prefix"
-#~ msgid "Everything"
-#~ msgstr "Ara:"
-
-#~ msgctxt "evme-helper-title-empty"
-#~ msgid "Everything"
-#~ msgstr "Her şey"
-
-#~ msgid "Add to homescreen"
-#~ msgstr "Ana ekrana ekle"
-
-#~ msgid "Remove from homescreen"
-#~ msgstr "Ana ekrandan kaldır"
-
-#~ msgctxt "evme-apps-market-download"
-#~ msgid "Download"
-#~ msgstr "İndir"
-
-#~ msgid "More Apps"
-#~ msgstr "Daha fazla uygulama"
-
-#~ msgctxt "evme-apps-loading-app"
-#~ msgid "Loading…"
-#~ msgstr "Yükleniyor…"
-
-#~ msgctxt "evme-appsmore-loading"
-#~ msgid "Loading…"
-#~ msgstr "Yükleniyor…"
-
-#~ msgid "Add {{name}} to Home Screen?"
-#~ msgstr "{{name}} Ana Ekran'a eklensin mi?"
-
-#~ msgid "{{name}} was already added to Home Screen"
-#~ msgstr "{{name}} zaten Ana Ekran'a eklenmiş"
-
-#~ msgid "Connect to the internet to add more Smart Collections"
-#~ msgstr "Daha fazla Akıllı Koleksiyon eklemek için internete bağlanın"
-
-#~ msgid "Set as wallpaper?"
-#~ msgstr "Duvar kâğıdı yapılsın mı?"
-
-#~ msgid "No Smart Collections to add"
-#~ msgstr "Eklenecek akıllı koleksiyon yok"
-
-#~ msgid "{{name}} added to Home Screen"
-#~ msgstr "{{name}} Ana Ekran'a eklendi"
-
-#~ msgid "Wallpaper set successfully"
-#~ msgstr "Duvar kâğıdı başarıyla ayarlandı"
-
-#~ msgid "More"
-#~ msgstr "Daha fazlası"
-
-#~ msgctxt "evme-collectionssuggest-loading"
-#~ msgid "Loading…"
-#~ msgstr "Yükleniyor…"
-
-#~ msgctxt "evme-collectionssuggest-loading-cancel"
-#~ msgid "Cancel"
-#~ msgstr "İptal"
-
-#~ msgid "Create your own Smart Collection"
-#~ msgstr "Kendi Akıllı Koleksiyon'unuzu yaratın"
-
-#~ msgid "Source:"
-#~ msgstr "Kaynak:"
-
-#~ msgctxt "evme-collection-title-prefix"
-#~ msgid "Everything"
-#~ msgstr "Her şey"
-
-#~ msgid "Phone"
-#~ msgstr "Telefon"
-
-#~ msgctxt "evme-collection-loading-more"
-#~ msgid "Loading…"
-#~ msgstr "Yükleniyor…"
-
-#~ msgid "Connect to the internet to get apps for {{query}}"
-#~ msgstr "{{query}} aramasıyla uygulamalar edinmek için internete bağlanın"
-
-#~ msgid "Connect to the internet to get even more apps for {{query}}"
-#~ msgstr ""
-#~ "{{query}} aramasıyla daha fazla uygulama edinmek için internete bağlanın"
-
-#~ msgid "Find the things you love with the coolest apps."
-#~ msgstr "En havalı uygulamalarla sevdiğiniz şeyleri bulun."
-
-#~ msgid "For example, find your favorite singer or band…"
-#~ msgstr "Örneğin, en sevdiğiniz şarkıcı veya grubu bulun…"
-
-#~ msgid ""
-#~ "These are the apps for <b>{{query}}</b>,<br /><br /> tap any icon to open "
-#~ "it."
-#~ msgstr ""
-#~ "Bunlar <b>{{query}}</b> sorgusu için bulunan uygulamalardır.<br /><br /> "
-#~ "Açmak istediğinizin simgesine dokunun."
-
-#~ msgid "Custom…"
-#~ msgstr "Özel..."
-
-#~ msgid "Astrology"
-#~ msgstr "Astroloji"
-
-#~ msgid "Autos"
-#~ msgstr "Otomobil"
-
-#~ msgid "Beauty"
-#~ msgstr "Güzellik"
-
-#~ msgid "Books"
-#~ msgstr "Kitaplar"
-
-#~ msgid "Celebs"
-#~ msgstr "Ünlüler"
-
-#~ msgid "Daily Deals"
-#~ msgstr "Günlük Fırsatlar"
-
-#~ msgid "Dating"
-#~ msgstr "Arkadaşlık"
-
-#~ msgid "Electronics"
-#~ msgstr "Elektronik"
-
-#~ msgid "Email"
-#~ msgstr "E-posta"
-
-#~ msgid "Entertainment"
-#~ msgstr "Eğlence"
-
-#~ msgid "Environment"
-#~ msgstr "Çevre"
-
-#~ msgid "Fashion"
-#~ msgstr "Moda"
-
-#~ msgid "Funny"
-#~ msgstr "Komik"
-
-#~ msgid "Games"
-#~ msgstr "Oyunlar"
-
-#~ msgid "Government"
-#~ msgstr "Devlet"
-
-#~ msgid "Health"
-#~ msgstr "Sağlık"
-
-#~ msgid "Jobs"
-#~ msgstr "İşler"
-
-#~ msgid "Local"
-#~ msgstr "Yerel"
-
-#~ msgid "Maps"
-#~ msgstr "Haritalar"
-
-#~ msgid "Movies"
-#~ msgstr "Filmler"
-
-#~ msgid "Music"
-#~ msgstr "Müzik"
-
-#~ msgid "New Apps"
-#~ msgstr "Yeni Uygulamalar"
-
-#~ msgid "News"
-#~ msgstr "Haberler"
-
-#~ msgid "Photography"
-#~ msgstr "Fotoğrafçılık"
-
-#~ msgid "Recipes"
-#~ msgstr "Tarifler"
-
-#~ msgid "Restaurants"
-#~ msgstr "Lokantalar"
-
-#~ msgid "Shopping"
-#~ msgstr "Alışveriş"
-
-#~ msgid "Social"
-#~ msgstr "Sosyal"
-
-#~ msgid "Sports"
-#~ msgstr "Spor"
-
-#~ msgid "Tech News"
-#~ msgstr "Teknoloji Haberleri"
-
-#~ msgid "Top Apps"
-#~ msgstr "En Beğenilen Uygulamalar"
-
-#~ msgid "Travel"
-#~ msgstr "Seyahat"
-
-#~ msgid "TV"
-#~ msgstr "Televizyon"
-
-#~ msgid "Video"
-#~ msgstr "Video"
-
-#~ msgid "Utilities"
-#~ msgstr "Araçlar"
-
-#~ msgid "Weather"
-#~ msgstr "Hava Durumu"
-
-#~ msgid "Add to top of collection"
-#~ msgstr "Koleksiyonun başına ekle"
-
-#~ msgid "Save to Homescreen"
-#~ msgstr "Ana ekrana kaydet"
-
-#~ msgid "Edit"
-#~ msgstr "Düzenle"
-
-#~ msgid "Website name"
-#~ msgstr "Web sitesi adı"
-
-#~ msgid "Address"
-#~ msgstr "Adres"
-
-#~ msgctxt "edit-dialog-cancel"
-#~ msgid "Cancel"
-#~ msgstr "İptal"
-
-#~ msgid "Done"
-#~ msgstr "Bitti"
-
-#~ msgid "Close"
-#~ msgstr "Kapat"
-
-#~ msgid "Save"
-#~ msgstr "Kaydet"
+"Bunlar <b>{{query}}</b> sorgusu için bulunan uygulamalardır.<br /><br /> "
+"Açmak istediğinizin simgesine dokunun."
+
+#. # collection translations
+#: evme-shortcut-custom
+msgid "Custom…"
+msgstr "Özel..."
+
+#: evme-shortcut-id-astrology
+msgid "Astrology"
+msgstr "Astroloji"
+
+#: evme-shortcut-id-autos
+msgid "Autos"
+msgstr "Otomobil"
+
+#: evme-shortcut-id-beauty
+msgid "Beauty"
+msgstr "Güzellik"
+
+#: evme-shortcut-id-books
+msgid "Books"
+msgstr "Kitaplar"
+
+#: evme-shortcut-id-celebs
+msgid "Celebs"
+msgstr "Ünlüler"
+
+#: evme-shortcut-id-daily-deals
+msgid "Daily Deals"
+msgstr "Günlük Fırsatlar"
+
+#: evme-shortcut-id-dating
+msgid "Dating"
+msgstr "Arkadaşlık"
+
+#: evme-shortcut-id-electronics
+msgid "Electronics"
+msgstr "Elektronik"
+
+#: evme-shortcut-id-email
+msgid "Email"
+msgstr "E-posta"
+
+#: evme-shortcut-id-entertainment
+msgid "Entertainment"
+msgstr "Eğlence"
+
+#: evme-shortcut-id-environment
+msgid "Environment"
+msgstr "Çevre"
+
+#: evme-shortcut-id-fashion
+msgid "Fashion"
+msgstr "Moda"
+
+#: evme-shortcut-id-funny
+msgid "Funny"
+msgstr "Komik"
+
+#: evme-shortcut-id-games
+msgid "Games"
+msgstr "Oyunlar"
+
+#: evme-shortcut-id-government
+msgid "Government"
+msgstr "Devlet"
+
+#: evme-shortcut-id-health
+msgid "Health"
+msgstr "Sağlık"
+
+#: evme-shortcut-id-jobs
+msgid "Jobs"
+msgstr "İşler"
+
+#: evme-shortcut-id-local
+msgid "Local"
+msgstr "Yerel"
+
+#: evme-shortcut-id-maps
+msgid "Maps"
+msgstr "Haritalar"
+
+#: evme-shortcut-id-movies
+msgid "Movies"
+msgstr "Filmler"
+
+#: evme-shortcut-id-music
+msgid "Music"
+msgstr "Müzik"
+
+#: evme-shortcut-id-new-apps
+msgid "New Apps"
+msgstr "Yeni Uygulamalar"
+
+#: evme-shortcut-id-news
+msgid "News"
+msgstr "Haberler"
+
+#: evme-shortcut-id-photography
+msgid "Photography"
+msgstr "Fotoğrafçılık"
+
+#: evme-shortcut-id-recipes
+msgid "Recipes"
+msgstr "Tarifler"
+
+#: evme-shortcut-id-restaurants
+msgid "Restaurants"
+msgstr "Lokantalar"
+
+#: evme-shortcut-id-shopping
+msgid "Shopping"
+msgstr "Alışveriş"
+
+#: evme-shortcut-id-social
+msgid "Social"
+msgstr "Sosyal"
+
+#: evme-shortcut-id-sports
+msgid "Sports"
+msgstr "Spor"
+
+#: evme-shortcut-id-tech-news
+msgid "Tech News"
+msgstr "Teknoloji Haberleri"
+
+#: evme-shortcut-id-top-apps
+msgid "Top Apps"
+msgstr "En Beğenilen Uygulamalar"
+
+#: evme-shortcut-id-travel
+msgid "Travel"
+msgstr "Seyahat"
+
+#: evme-shortcut-id-tv
+msgid "TV"
+msgstr "Televizyon"
+
+#: evme-shortcut-id-video
+msgid "Video"
+msgstr "Video"
+
+#: evme-shortcut-id-utilities
+msgid "Utilities"
+msgstr "Araçlar"
+
+#: evme-shortcut-id-weather
+msgid "Weather"
+msgstr "Hava Durumu"
+
+#. #search contextmenu
+#: evme-add-to-top-of-collection
+msgid "Add to top of collection"
+msgstr "Koleksiyonun başına ekle"
+
+#: evme-save-to-homescreen
+msgid "Save to Homescreen"
+msgstr "Ana ekrana kaydet"
+
+#. # edit dialog
+#: edit-dialog-header
+msgid "Edit"
+msgstr "Düzenle"
+
+#: edit-dialog-name
+msgid "Website name"
+msgstr "Web sitesi adı"
+
+#: edit-dialog-url
+msgid "Address"
+msgstr "Adres"
+
+#: edit-dialog-cancel
+msgctxt "edit-dialog-cancel"
+msgid "Cancel"
+msgstr "İptal"
+
+#: edit-dialog-done
+msgid "Done"
+msgstr "Bitti"
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: evme-close.ariaLabel
+msgid "Close"
+msgstr "Kapat"
+
+#: evme-done.ariaLabel
+msgid "Save"
+msgstr "Kaydet"
 
 #~ msgid "Add link"
 #~ msgstr "Bağlantı ekle"
@@ -410,6 +513,9 @@ msgstr ""
 
 #~ msgid "Rename Collection"
 #~ msgstr "Koleksiyonun adını değiştir"
+
+#~ msgid "Download"
+#~ msgstr "İndir"
 
 #~ msgid "Smart Collections"
 #~ msgstr "Akıllı Koleksiyonlar"
