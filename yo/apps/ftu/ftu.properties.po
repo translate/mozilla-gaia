@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-03-19 18:45+0000\n"
 "PO-Revision-Date: 2015-05-11 12:20+0000\n"
 "Last-Translator: generaleye <odumuyiwaleye@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1431346827.000000\n"
@@ -751,6 +751,10 @@ msgstr "Ṣàgbéwọlé àtòkọ àwọn alábàáṣe"
 msgid "SIM card"
 msgstr "SÍÌMÙ káàdì"
 
+#: importFb2
+msgid "Facebook"
+msgstr "Facebook"
+
 #: importOutlook
 msgid "Outlook"
 msgstr "Outlook"
@@ -758,6 +762,10 @@ msgstr "Outlook"
 #: importGmail
 msgid "Gmail"
 msgstr "Gmail"
+
+#: fb-checking
+msgid "… checking"
+msgstr "… ń ṣàyẹwò"
 
 #: notImportedYet
 msgid "Not imported yet"
@@ -767,6 +775,43 @@ msgstr "Akòí gbéwọlé"
 msgid "Other accounts"
 msgstr "Àwọn àkọọ́lẹ̀ míìràn"
 
+#: afterFbImport
+msgid "You can import and edit Facebook friends anytime in Contacts settings"
+msgstr ""
+"O lè gbéwọlé àti ṣàtúntò àwọn ọ̀rẹ́ Facebook nígbà-kigbà ní àwọn ààtò Olùbásọ̀rọ̀"
+
+#: facebook-import-msg
+msgid "{[ plural(imported) ]}"
+msgstr ""
+
+#: facebook-import-msg[zero]
+msgid "No friends imported (out of {{total}})"
+msgstr ""
+
+#: facebook-import-msg[one]
+msgid "One friend imported (out of {{total}})"
+msgstr ""
+
+#: facebook-import-msg[two]
+msgctxt "facebook-import-msg[two]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr ""
+
+#: facebook-import-msg[few]
+msgctxt "facebook-import-msg[few]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr ""
+
+#: facebook-import-msg[many]
+msgctxt "facebook-import-msg[many]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr ""
+
+#: facebook-import-msg[other]
+msgctxt "facebook-import-msg[other]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Fxa Intro
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -774,7 +819,7 @@ msgstr "Àwọn àkọọ́lẹ̀ míìràn"
 msgid "Firefox Accounts"
 msgstr "Àwọn Àkọọ́lẹ̀ Firefox"
 
-#: fxa-upsell
+#: fxa-upsell.innerHTML
 msgid ""
 "A Firefox Account lets you find a lost phone and buy apps from the Firefox "
 "Marketplace."
@@ -870,40 +915,60 @@ msgstr ""
 "nínu {{brandShortName}} ohun èlò rẹ. A ńlo èyí láti mú ọjà wa dára, yá àti "
 "ṣe dáadáa."
 
-#: learn-more-telemetry2
-msgid "Learn more at <a>{{url}}</a>"
+#: learn-more-telemetry2.innerHTML
+msgid ""
+"Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
+"a>"
 msgstr ""
 
-#: learn-more-information2
-#, fuzzy
-msgid "Learn how Mozilla handles your information at <a>{{url}}</a>"
-msgstr "Kọ́ bíi Mozilla ṣe ńṣe ìwifún ní {{link}}"
+#: learn-more-information2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>"
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # OS privacy
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: htmlWelcome2
+#: htmlWelcome2.innerHTML
 #, fuzzy
 msgid ""
-"Welcome to <a>{{brandShortName}}</a>, the free and open source operating "
-"system from Mozilla. Our mission is to promote openness, innovation and "
-"opportunity by keeping the power of the Web in your hands."
+"Welcome to <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>, "
+"the free and open source operating system from Mozilla. Our mission is to "
+"promote openness, innovation and opportunity by keeping the power of the Web "
+"in your hands."
 msgstr ""
 "Káàbọ̀ sí {{brandShortName}}, ibi ọ̀fẹ́ àti ibi iṣẹ́ orísun ị̀ṣísílẹ̀ láti "
 "Mozilla. Ojúṣe wa ni láti polongo òtitọ́, ohun ọ̀tun àti ànfààní nípa ìtọjú "
 "agbára Wẹ́ẹ̀bù ní ọwọ́ rẹ."
 
-#: helpImprove2
+#: htmlWelcome-link
+#, fuzzy
+msgctxt "htmlWelcome-link"
+msgid "{{brandShortName}}"
+msgstr "{{brandShortName}}"
+
+#: helpImprove2.innerHTML
 msgid ""
 "You can help us improve our products and services by automatically sending "
-"analytics data. See our <a>Privacy Notice</a> to learn how we handle data "
-"from your device."
+"analytics data. See our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> to learn how we handle data from your "
+"device."
 msgstr ""
 
-#: learn-more-privacy2
-msgid ""
-"Learn how Mozilla handles your information in our <a>privacy policy</a>."
+#: helpImprove-link
+msgid "Privacy Notice"
 msgstr ""
+
+#: learn-more-privacy2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information in our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>."
+msgstr ""
+
+#: learn-more-privacy-link
+msgid "privacy policy"
+msgstr "ìlànà ìpamọ́"
 
 #: aboutBrowser
 msgid "About {{brandShortName}}"
@@ -1166,21 +1231,6 @@ msgstr "Ìgbésẹ̀ {{step}} ti {{total}}"
 msgid "First Time Experience"
 msgstr "Ìrirí Ìgbà Àkọkọ́"
 
-#~ msgid "Facebook"
-#~ msgstr "Facebook"
-
-#~ msgid "… checking"
-#~ msgstr "… ń ṣàyẹwò"
-
-#~ msgid ""
-#~ "You can import and edit Facebook friends anytime in Contacts settings"
-#~ msgstr ""
-#~ "O lè gbéwọlé àti ṣàtúntò àwọn ọ̀rẹ́ Facebook nígbà-kigbà ní àwọn ààtò "
-#~ "Olùbásọ̀rọ̀"
-
-#~ msgid "privacy policy"
-#~ msgstr "ìlànà ìpamọ́"
-
 #~ msgid ""
 #~ "A Firefox Account lets you use features like Find My Device and apps like "
 #~ "the Firefox Marketplace."
@@ -1190,6 +1240,9 @@ msgstr "Ìrirí Ìgbà Àkọkọ́"
 
 #~ msgid "Learn more at {{link}}"
 #~ msgstr "Kọ́si ní {{link}}"
+
+#~ msgid "Learn how Mozilla handles your information at {{link}}"
+#~ msgstr "Kọ́ bíi Mozilla ṣe ńṣe ìwifún ní {{link}}"
 
 #~ msgid "Learn how Mozilla handles your information in our {{link}}."
 #~ msgstr "Kọ́ bíi Mozilla ṣe ńṣe ìwifún rẹ ní {{link}} wa. "
