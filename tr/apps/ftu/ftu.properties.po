@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-03-19 18:45+0000\n"
 "PO-Revision-Date: 2015-06-12 08:20+0000\n"
 "Last-Translator: Selim Şumlu <selim@sum.lu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1434097203.000000\n"
@@ -767,6 +767,10 @@ msgstr "Kişileri içeri aktar"
 msgid "SIM card"
 msgstr "SIM kart"
 
+#: importFb2
+msgid "Facebook"
+msgstr "Facebook"
+
 #: importOutlook
 msgid "Outlook"
 msgstr "Outlook"
@@ -774,6 +778,10 @@ msgstr "Outlook"
 #: importGmail
 msgid "Gmail"
 msgstr "Gmail"
+
+#: fb-checking
+msgid "… checking"
+msgstr "… kontrol ediliyor"
 
 #: notImportedYet
 msgid "Not imported yet"
@@ -783,6 +791,44 @@ msgstr "Henüz aktarılmadı"
 msgid "Other accounts"
 msgstr "Diğer hesaplar"
 
+#: afterFbImport
+msgid "You can import and edit Facebook friends anytime in Contacts settings"
+msgstr ""
+"İstediğiniz zaman Facebook arkadaşlarınızı Kişiler ayarlarından içeri "
+"aktarabilir ve düzenleyebilirsiniz"
+
+#: facebook-import-msg
+msgid "{[ plural(imported) ]}"
+msgstr "{[ plural(imported) ]}"
+
+#: facebook-import-msg[zero]
+msgid "No friends imported (out of {{total}})"
+msgstr ""
+
+#: facebook-import-msg[one]
+msgid "One friend imported (out of {{total}})"
+msgstr ""
+
+#: facebook-import-msg[two]
+msgctxt "facebook-import-msg[two]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr ""
+
+#: facebook-import-msg[few]
+msgctxt "facebook-import-msg[few]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr ""
+
+#: facebook-import-msg[many]
+msgctxt "facebook-import-msg[many]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr ""
+
+#: facebook-import-msg[other]
+msgctxt "facebook-import-msg[other]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Fxa Intro
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -790,7 +836,7 @@ msgstr "Diğer hesaplar"
 msgid "Firefox Accounts"
 msgstr "Firefox Hesapları"
 
-#: fxa-upsell
+#: fxa-upsell.innerHTML
 msgid ""
 "A Firefox Account lets you find a lost phone and buy apps from the Firefox "
 "Marketplace."
@@ -891,46 +937,69 @@ msgstr ""
 "gönderir. Bunları ürünlerimizi daha iyi, daha hızlı ve daha duyarlı yapmak "
 "için kullanırız."
 
-#: learn-more-telemetry2
-msgid "Learn more at <a>{{url}}</a>"
+#: learn-more-telemetry2.innerHTML
+msgid ""
+"Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
+"a>"
 msgstr ""
+"<a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a> daha fazla "
+"bilgi alın"
 
-#: learn-more-information2
-#, fuzzy
-msgid "Learn how Mozilla handles your information at <a>{{url}}</a>"
+#: learn-more-information2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>"
 msgstr ""
-"Mozilla'nın bilgilerinizi nasıl kullandığını {{link}} sayfasından öğrenin"
+"Mozilla'nın bilgilerinizi nasıl değerlendirdiğini <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> öğrenin"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # OS privacy
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: htmlWelcome2
-#, fuzzy
+#: htmlWelcome2.innerHTML
 msgid ""
-"Welcome to <a>{{brandShortName}}</a>, the free and open source operating "
-"system from Mozilla. Our mission is to promote openness, innovation and "
-"opportunity by keeping the power of the Web in your hands."
+"Welcome to <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>, "
+"the free and open source operating system from Mozilla. Our mission is to "
+"promote openness, innovation and opportunity by keeping the power of the Web "
+"in your hands."
 msgstr ""
 "Mozilla'nın özgür ve açık kaynaklı işletim sistemi <a href=\"{{href}}\" "
 "class=\"{{className}}\">{{textContent}}</a>'e hoş geldiniz. Misyonumuz "
 "web'in gücünü size teslim ederek açıklığı, yenilikçiliği ve fırsat "
 "eşitliğini desteklemektir."
 
-#: helpImprove2
-#, fuzzy
+#: htmlWelcome-link
+msgctxt "htmlWelcome-link"
+msgid "{{brandShortName}}"
+msgstr "{{brandShortName}}"
+
+#: helpImprove2.innerHTML
 msgid ""
 "You can help us improve our products and services by automatically sending "
-"analytics data. See our <a>Privacy Notice</a> to learn how we handle data "
-"from your device."
+"analytics data. See our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> to learn how we handle data from your "
+"device."
 msgstr ""
-"Analiz verilerinizi otomatik olarak göndererek ürün ve hizmetlerimizi "
-"geliştirmemize yardım edebilirsiniz. Cihazınızdan gelen verileri nasıl "
-"kullandığımızı {{link}} görebilirsiniz."
+"İstistiki verilerinizi otomatik olarak bize göndererek ürün ve "
+"hizmetlerimizi geliştirmemize yardımcı olabilirsiniz. Cihazınızdan gelen "
+"verileri nasıl kullandığımızı öğrenmek için <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>e bakın."
 
-#: learn-more-privacy2
+#: helpImprove-link
+msgid "Privacy Notice"
+msgstr "Gizlilik İlkelerimiz"
+
+#: learn-more-privacy2.innerHTML
 msgid ""
-"Learn how Mozilla handles your information in our <a>privacy policy</a>."
+"Learn how Mozilla handles your information in our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>."
 msgstr ""
+"Mozilla'nın bilgilerinizi nasıl değerlendirdiğini <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> öğrenin."
+
+#: learn-more-privacy-link
+msgid "privacy policy"
+msgstr "gizlilik ilkelerimizden"
 
 #: aboutBrowser
 msgid "About {{brandShortName}}"
@@ -1200,59 +1269,6 @@ msgstr "{{total}} adımdan {{step}}. adım"
 msgid "First Time Experience"
 msgstr "İlk Kullanım"
 
-#~ msgid "Facebook"
-#~ msgstr "Facebook"
-
-#~ msgid "… checking"
-#~ msgstr "… kontrol ediliyor"
-
-#~ msgid ""
-#~ "You can import and edit Facebook friends anytime in Contacts settings"
-#~ msgstr ""
-#~ "İstediğiniz zaman Facebook arkadaşlarınızı Kişiler ayarlarından içeri "
-#~ "aktarabilir ve düzenleyebilirsiniz"
-
-#~ msgid "{[ plural(imported) ]}"
-#~ msgstr "{[ plural(imported) ]}"
-
-#~ msgid ""
-#~ "Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}"
-#~ "</a>"
-#~ msgstr ""
-#~ "<a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a> daha "
-#~ "fazla bilgi alın"
-
-#~ msgid ""
-#~ "Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
-#~ "\"{{className}}\">{{textContent}}</a>"
-#~ msgstr ""
-#~ "Mozilla'nın bilgilerinizi nasıl değerlendirdiğini <a href=\"{{href}}\" "
-#~ "class=\"{{className}}\">{{textContent}}</a> öğrenin"
-
-#~ msgid ""
-#~ "You can help us improve our products and services by automatically "
-#~ "sending analytics data. See our <a href=\"{{href}}\" class="
-#~ "\"{{className}}\">{{textContent}}</a> to learn how we handle data from "
-#~ "your device."
-#~ msgstr ""
-#~ "İstistiki verilerinizi otomatik olarak bize göndererek ürün ve "
-#~ "hizmetlerimizi geliştirmemize yardımcı olabilirsiniz. Cihazınızdan gelen "
-#~ "verileri nasıl kullandığımızı öğrenmek için <a href=\"{{href}}\" class="
-#~ "\"{{className}}\">{{textContent}}</a>e bakın."
-
-#~ msgid "Privacy Notice"
-#~ msgstr "Gizlilik İlkelerimiz"
-
-#~ msgid ""
-#~ "Learn how Mozilla handles your information in our <a href=\"{{href}}\" "
-#~ "class=\"{{className}}\">{{textContent}}</a>."
-#~ msgstr ""
-#~ "Mozilla'nın bilgilerinizi nasıl değerlendirdiğini <a href=\"{{href}}\" "
-#~ "class=\"{{className}}\">{{textContent}}</a> öğrenin."
-
-#~ msgid "privacy policy"
-#~ msgstr "gizlilik ilkelerimizden"
-
 #~ msgid "Swipe from right to left to browse your apps."
 #~ msgstr "Uygulamalarınızı görmek için sağdan sola kaydırın."
 
@@ -1294,6 +1310,19 @@ msgstr "İlk Kullanım"
 
 #~ msgid "Learn more at {{link}}"
 #~ msgstr "{{link}} adresinden daha fazla bilgi alabilirsiniz"
+
+#~ msgid "Learn how Mozilla handles your information at {{link}}"
+#~ msgstr ""
+#~ "Mozilla'nın bilgilerinizi nasıl kullandığını {{link}} sayfasından öğrenin"
+
+#~ msgid ""
+#~ "You can help us improve our products and services by automatically "
+#~ "sending analytics data. See our {{link}} to learn how we handle data from "
+#~ "your device."
+#~ msgstr ""
+#~ "Analiz verilerinizi otomatik olarak göndererek ürün ve hizmetlerimizi "
+#~ "geliştirmemize yardım edebilirsiniz. Cihazınızdan gelen verileri nasıl "
+#~ "kullandığımızı {{link}} görebilirsiniz."
 
 #~ msgid "Learn how Mozilla handles your information in our {{link}}."
 #~ msgstr ""

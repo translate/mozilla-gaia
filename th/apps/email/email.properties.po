@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-03-19 08:45+0000\n"
 "PO-Revision-Date: 2015-08-30 09:11+0000\n"
 "Last-Translator: Teerapat Taechaiya <teerapatxtop@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1440925911.000000\n"
@@ -36,14 +36,10 @@ msgstr "ปิด"
 msgid "Mail"
 msgstr "จดหมาย"
 
-#. # LOCALIZATION NOTE(setup-empty-account-message): Shown on the
-#. # setup_account_info page when the email app is launched from an activity, but
-#. # no account is set up yet.
-#: setup-empty-account-message
+#: setup-empty-account-prompt
 msgid ""
-"You are not set up to send or receive email. Set up an account to complete "
-"the action."
-msgstr ""
+"You are not set up to send or receive email. Would you like to do that now?"
+msgstr "คุณไม่ได้ตั้งค่าเพื่อส่งหรือรับอีเมล คุณต้องการที่จะทำในตอนนี้หรือไม่?"
 
 #: setup-pick-service
 msgid "To send and receive email, you will need to set up an account."
@@ -480,6 +476,7 @@ msgstr "บันทึกลายเซ็น"
 #. # button which discards changes when a user hits back in the signature
 #. # entry page.
 #: signature-discard-confirm
+msgctxt "signature-discard-confirm"
 msgid "Discard"
 msgstr ""
 
@@ -1040,14 +1037,6 @@ msgctxt "compose-bcc"
 msgid "bcc"
 msgstr "สำเนาลับ"
 
-#. # LOCALIZATION NOTE(compose-autocomplete-match): For the compose card
-#. # autocomplete matches when entering an email, the ariaLabel to use for each
-#. # match. The following string is spoken by screen readers and not shown on the
-#. # screen.
-#: compose-autocomplete-match.ariaLabel
-msgid "{{name}} {{address}}"
-msgstr ""
-
 #. # LOCALIZATION NOTE(compose-contact-add): For compose card, a label for an add
 #. # contact buttons rendered as a circled plus sign and used to add to, cc and bcc
 #. # recipients. The following string is spoken by screen readers and not shown on
@@ -1166,11 +1155,9 @@ msgstr "หัวข้อ"
 msgid "Save to Local Drafts"
 msgstr "บันทึกเป็นฉบับร่างในเครื่อง"
 
-#. # LOCALIZATION NOTE(compose-delete-confirm): Wheh leaving the Compose card, the
-#. # user is prompted to save the draft or delete it. This is the delete button
-#. # text.
-#: compose-delete-confirm
-msgid "Delete the draft"
+#: compose-discard-confirm
+msgctxt "compose-discard-confirm"
+msgid "Discard"
 msgstr ""
 
 #: compose-send-message-failed
@@ -1237,8 +1224,6 @@ msgid "This file is too large to download."
 msgstr "ไฟล์นี้ใหญ่เกินไปที่จะดาวน์โหลด"
 
 #: message-no-subject
-#, fuzzy
-msgctxt "message-no-subject"
 msgid "(no subject)"
 msgstr "(ไม่มีหัวข้อ)"
 
@@ -1657,10 +1642,9 @@ msgid "Undo"
 msgstr "เลิกทำ"
 
 #: toaster-message-star
-#, fuzzy
 msgctxt "toaster-message-star"
 msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
+msgstr ""
 
 #: toaster-message-star[one]
 msgid "1 message flag set"
@@ -1687,10 +1671,9 @@ msgid "{{ n }} message flags set"
 msgstr ""
 
 #: toaster-message-unstar
-#, fuzzy
 msgctxt "toaster-message-unstar"
 msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
+msgstr ""
 
 #: toaster-message-unstar[one]
 msgid "1 message flag removed"
@@ -1717,10 +1700,9 @@ msgid "{{ n }} message flags removed"
 msgstr ""
 
 #: toaster-message-read
-#, fuzzy
 msgctxt "toaster-message-read"
 msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
+msgstr ""
 
 #: toaster-message-read[one]
 msgid "1 message marked as read"
@@ -1747,10 +1729,9 @@ msgid "{{ n }} messages marked as read"
 msgstr ""
 
 #: toaster-message-unread
-#, fuzzy
 msgctxt "toaster-message-unread"
 msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
+msgstr ""
 
 #: toaster-message-unread[one]
 msgid "1 message marked as unread"
@@ -1777,10 +1758,9 @@ msgid "{{ n }} messages marked as unread"
 msgstr ""
 
 #: toaster-message-move
-#, fuzzy
 msgctxt "toaster-message-move"
 msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
+msgstr ""
 
 #: toaster-message-move[one]
 msgid "1 message moved"
@@ -1807,10 +1787,9 @@ msgid "{{ n }} messages moved"
 msgstr ""
 
 #: toaster-message-delete
-#, fuzzy
 msgctxt "toaster-message-delete"
 msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
+msgstr ""
 
 #: toaster-message-delete[one]
 msgid "1 message deleted"
@@ -1970,14 +1949,6 @@ msgctxt "new-messages[other]"
 msgid "{{ n }} New Messages"
 msgstr "{{ n }} ข้อความใหม่"
 
-#. # LOCALIZATION NOTE(notification-no-subject): is used for notifications
-#. # if the new email doesn't have a subject
-#: notification-no-subject
-#, fuzzy
-msgctxt "notification-no-subject"
-msgid "(no subject)"
-msgstr "(ไม่มีหัวข้อ)"
-
 #. # new-emails-notify-one-account is used when a system notification is generated during
 #. # a periodic background sync with the server. Since this goes to the system's
 #. # notification area, and user has only one account configured with the email App.
@@ -2109,8 +2080,3 @@ msgstr "ก่อนหน้า"
 #: message-reader-date-received.ariaLabel
 msgid "Received"
 msgstr ""
-
-#~ msgid ""
-#~ "You are not set up to send or receive email. Would you like to do that "
-#~ "now?"
-#~ msgstr "คุณไม่ได้ตั้งค่าเพื่อส่งหรือรับอีเมล คุณต้องการที่จะทำในตอนนี้หรือไม่?"
