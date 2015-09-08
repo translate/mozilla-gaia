@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-03-19 18:45+0000\n"
 "PO-Revision-Date: 2015-04-30 08:16+0000\n"
 "Last-Translator: Benny Chandra <bennychandra@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1430381765.000000\n"
@@ -770,6 +770,10 @@ msgstr "Impor kontak di SIM"
 msgid "SIM card"
 msgstr "Kartu SIM"
 
+#: importFb2
+msgid "Facebook"
+msgstr "Facebook"
+
 #: importOutlook
 msgid "Outlook"
 msgstr "Outlook"
@@ -777,6 +781,10 @@ msgstr "Outlook"
 #: importGmail
 msgid "Gmail"
 msgstr "Gmail"
+
+#: fb-checking
+msgid "… checking"
+msgstr "… memeriksa"
 
 #: notImportedYet
 msgid "Not imported yet"
@@ -786,6 +794,44 @@ msgstr "Belum diimpor"
 msgid "Other accounts"
 msgstr "Akun Lain"
 
+#: afterFbImport
+msgid "You can import and edit Facebook friends anytime in Contacts settings"
+msgstr ""
+"Anda dapat mengimpor dan mengedit teman Facebook kapan saja di pengaturan "
+"Kontak"
+
+#: facebook-import-msg
+msgid "{[ plural(imported) ]}"
+msgstr "{[ plural(imported) ]}"
+
+#: facebook-import-msg[zero]
+msgid "No friends imported (out of {{total}})"
+msgstr "Tak ada teman diimpor (dari {{total}})"
+
+#: facebook-import-msg[one]
+msgid "One friend imported (out of {{total}})"
+msgstr "Satu teman diimpor (dari {{total}})"
+
+#: facebook-import-msg[two]
+msgctxt "facebook-import-msg[two]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr "{{imported}}/{{total}} teman diimpor"
+
+#: facebook-import-msg[few]
+msgctxt "facebook-import-msg[few]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr "{{imported}}/{{total}} teman diimpor"
+
+#: facebook-import-msg[many]
+msgctxt "facebook-import-msg[many]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr "{{imported}}/{{total}} teman diimpor"
+
+#: facebook-import-msg[other]
+msgctxt "facebook-import-msg[other]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr "{{imported}}/{{total}} teman diimpor"
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Fxa Intro
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -793,7 +839,7 @@ msgstr "Akun Lain"
 msgid "Firefox Accounts"
 msgstr "Firefox Account"
 
-#: fxa-upsell
+#: fxa-upsell.innerHTML
 msgid ""
 "A Firefox Account lets you find a lost phone and buy apps from the Firefox "
 "Marketplace."
@@ -895,46 +941,69 @@ msgstr ""
 "{{brandShortName}} Anda. Kami menggunakan data ini untuk meningkatkan produk "
 "serta memperbaiki kecepatan dan keresponsifannya."
 
-#: learn-more-telemetry2
-msgid "Learn more at <a>{{url}}</a>"
+#: learn-more-telemetry2.innerHTML
+msgid ""
+"Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
+"a>"
 msgstr ""
+"Pelajari lebih lanjut di <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>"
 
-#: learn-more-information2
-#, fuzzy
-msgid "Learn how Mozilla handles your information at <a>{{url}}</a>"
-msgstr "Pelajari bagaimana Mozilla menangani informasi Anda di {{link}}"
+#: learn-more-information2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>"
+msgstr ""
+"Pelajari cara Mozilla menangani informasi Anda di <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # OS privacy
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: htmlWelcome2
-#, fuzzy
+#: htmlWelcome2.innerHTML
 msgid ""
-"Welcome to <a>{{brandShortName}}</a>, the free and open source operating "
-"system from Mozilla. Our mission is to promote openness, innovation and "
-"opportunity by keeping the power of the Web in your hands."
+"Welcome to <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>, "
+"the free and open source operating system from Mozilla. Our mission is to "
+"promote openness, innovation and opportunity by keeping the power of the Web "
+"in your hands."
 msgstr ""
 "Selamat datang di <a href=\"{{href}}\" class="
 "\"{{className}}\">{{textContent}}</a>, sistem operasi bebas dan sumber "
 "terbuka dari Mozilla. Misi kami adalah untuk mempromosikan keterbukaan, "
 "inovasi, dan kesempatan dengan menjaga kekuatan Web tetap di tangan Anda."
 
-#: helpImprove2
-#, fuzzy
+#: htmlWelcome-link
+msgctxt "htmlWelcome-link"
+msgid "{{brandShortName}}"
+msgstr "{{brandShortName}}"
+
+#: helpImprove2.innerHTML
 msgid ""
 "You can help us improve our products and services by automatically sending "
-"analytics data. See our <a>Privacy Notice</a> to learn how we handle data "
-"from your device."
+"analytics data. See our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> to learn how we handle data from your "
+"device."
 msgstr ""
 "Anda dapat membantu kami menyempurnakan produk dan layanan kami dengan "
 "mengirimkan data analitis secara otomatis. Lihat <a href=\"{{href}}\" class="
 "\"{{className}}\">{{textContent}}</a> kami untuk mempelajari cara kami untuk "
 "menangani data dari perangkat Anda."
 
-#: learn-more-privacy2
+#: helpImprove-link
+msgid "Privacy Notice"
+msgstr "Pemberitahuan Privasi"
+
+#: learn-more-privacy2.innerHTML
 msgid ""
-"Learn how Mozilla handles your information in our <a>privacy policy</a>."
+"Learn how Mozilla handles your information in our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>."
 msgstr ""
+"Pelajari cara Mozilla menangani informasi Anda di <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>."
+
+#: learn-more-privacy-link
+msgid "privacy policy"
+msgstr "kebijakan privasi"
 
 #: aboutBrowser
 msgid "About {{brandShortName}}"
@@ -1207,70 +1276,6 @@ msgstr "Langkah {{step}} dari {{total}}"
 msgid "First Time Experience"
 msgstr "Pengalaman Pertama"
 
-#~ msgid "Facebook"
-#~ msgstr "Facebook"
-
-#~ msgid "… checking"
-#~ msgstr "… memeriksa"
-
-#~ msgid ""
-#~ "You can import and edit Facebook friends anytime in Contacts settings"
-#~ msgstr ""
-#~ "Anda dapat mengimpor dan mengedit teman Facebook kapan saja di pengaturan "
-#~ "Kontak"
-
-#~ msgid "{[ plural(imported) ]}"
-#~ msgstr "{[ plural(imported) ]}"
-
-#~ msgid "No friends imported (out of {{total}})"
-#~ msgstr "Tak ada teman diimpor (dari {{total}})"
-
-#~ msgid "One friend imported (out of {{total}})"
-#~ msgstr "Satu teman diimpor (dari {{total}})"
-
-#~ msgctxt "facebook-import-msg[two]"
-#~ msgid "{{imported}}/{{total}} friends imported"
-#~ msgstr "{{imported}}/{{total}} teman diimpor"
-
-#~ msgctxt "facebook-import-msg[few]"
-#~ msgid "{{imported}}/{{total}} friends imported"
-#~ msgstr "{{imported}}/{{total}} teman diimpor"
-
-#~ msgctxt "facebook-import-msg[many]"
-#~ msgid "{{imported}}/{{total}} friends imported"
-#~ msgstr "{{imported}}/{{total}} teman diimpor"
-
-#~ msgctxt "facebook-import-msg[other]"
-#~ msgid "{{imported}}/{{total}} friends imported"
-#~ msgstr "{{imported}}/{{total}} teman diimpor"
-
-#~ msgid ""
-#~ "Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}"
-#~ "</a>"
-#~ msgstr ""
-#~ "Pelajari lebih lanjut di <a href=\"{{href}}\" class="
-#~ "\"{{className}}\">{{textContent}}</a>"
-
-#~ msgid ""
-#~ "Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
-#~ "\"{{className}}\">{{textContent}}</a>"
-#~ msgstr ""
-#~ "Pelajari cara Mozilla menangani informasi Anda di <a href=\"{{href}}\" "
-#~ "class=\"{{className}}\">{{textContent}}</a>"
-
-#~ msgid "Privacy Notice"
-#~ msgstr "Pemberitahuan Privasi"
-
-#~ msgid ""
-#~ "Learn how Mozilla handles your information in our <a href=\"{{href}}\" "
-#~ "class=\"{{className}}\">{{textContent}}</a>."
-#~ msgstr ""
-#~ "Pelajari cara Mozilla menangani informasi Anda di <a href=\"{{href}}\" "
-#~ "class=\"{{className}}\">{{textContent}}</a>."
-
-#~ msgid "privacy policy"
-#~ msgstr "kebijakan privasi"
-
 #~ msgid "Swipe from right to left to browse your apps."
 #~ msgstr "Gesek dari kanan ke kiri untuk menjelajahi aplikasi Anda."
 
@@ -1312,6 +1317,9 @@ msgstr "Pengalaman Pertama"
 
 #~ msgid "Learn more at {{link}}"
 #~ msgstr "Pelajari lebih lanjut di {{link}}"
+
+#~ msgid "Learn how Mozilla handles your information at {{link}}"
+#~ msgstr "Pelajari bagaimana Mozilla menangani informasi Anda di {{link}}"
 
 #~ msgid "Learn how Mozilla handles your information in our {{link}}."
 #~ msgstr "Pelajari bagaimana Mozilla menangani informasi Anda di {{link}}."

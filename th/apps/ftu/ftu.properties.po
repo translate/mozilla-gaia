@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-03-19 18:45+0000\n"
 "PO-Revision-Date: 2015-07-24 18:29+0000\n"
 "Last-Translator: Teerapat Taechaiya <teerapatxtop@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1437762556.000000\n"
@@ -355,10 +355,9 @@ msgid "The NCK code is incorrect."
 msgstr "รหัส NCK ไม่ถูกต้อง"
 
 #: nckAttemptMsg2
-#, fuzzy
 msgctxt "nckAttemptMsg2"
 msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
+msgstr ""
 
 #: nckAttemptMsg2[one]
 msgid ""
@@ -724,6 +723,10 @@ msgstr "นำเข้ารายชื่อ"
 msgid "SIM card"
 msgstr "การ์ด SIM"
 
+#: importFb2
+msgid "Facebook"
+msgstr ""
+
 #: importOutlook
 msgid "Outlook"
 msgstr ""
@@ -731,6 +734,10 @@ msgstr ""
 #: importGmail
 msgid "Gmail"
 msgstr ""
+
+#: fb-checking
+msgid "… checking"
+msgstr "… กำลังตรวจสอบ"
 
 #: notImportedYet
 msgid "Not imported yet"
@@ -740,6 +747,42 @@ msgstr "ยังไม่ถูกนำเข้า"
 msgid "Other accounts"
 msgstr "บัญชีอื่น"
 
+#: afterFbImport
+msgid "You can import and edit Facebook friends anytime in Contacts settings"
+msgstr "คุณสามารถนำเข้าและแก้ไขเพื่อน Facebook ได้ทุกเวลาในการตั้งค่ารายชื่อ"
+
+#: facebook-import-msg
+msgid "{[ plural(imported) ]}"
+msgstr "{[ plural(imported) ]}"
+
+#: facebook-import-msg[zero]
+msgid "No friends imported (out of {{total}})"
+msgstr "ไม่มีเพื่อนถูกนำเข้า (จาก {{total}})"
+
+#: facebook-import-msg[one]
+msgid "One friend imported (out of {{total}})"
+msgstr "นำเข้าหนึ่งเพื่อนแล้ว (จาก {{total}})"
+
+#: facebook-import-msg[two]
+msgctxt "facebook-import-msg[two]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr "นำเข้าแล้ว {{imported}}/{{total}} เพื่อน"
+
+#: facebook-import-msg[few]
+msgctxt "facebook-import-msg[few]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr "นำเข้าแล้ว {{imported}}/{{total}} เพื่อน"
+
+#: facebook-import-msg[many]
+msgctxt "facebook-import-msg[many]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr "นำเข้าแล้ว {{imported}}/{{total}} เพื่อน"
+
+#: facebook-import-msg[other]
+msgctxt "facebook-import-msg[other]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr "นำเข้าแล้ว {{imported}}/{{total}} เพื่อน"
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Fxa Intro
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -747,7 +790,7 @@ msgstr "บัญชีอื่น"
 msgid "Firefox Accounts"
 msgstr "บัญชี Firefox"
 
-#: fxa-upsell
+#: fxa-upsell.innerHTML
 msgid ""
 "A Firefox Account lets you find a lost phone and buy apps from the Firefox "
 "Marketplace."
@@ -825,35 +868,56 @@ msgid ""
 "to make our products better, faster and more responsive."
 msgstr ""
 
-#: learn-more-telemetry2
-msgid "Learn more at <a>{{url}}</a>"
+#: learn-more-telemetry2.innerHTML
+msgid ""
+"Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
+"a>"
 msgstr ""
+"เรียนรู้เพิ่มเติมที่ <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>"
 
-#: learn-more-information2
-msgid "Learn how Mozilla handles your information at <a>{{url}}</a>"
+#: learn-more-information2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # OS privacy
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: htmlWelcome2
+#: htmlWelcome2.innerHTML
 msgid ""
-"Welcome to <a>{{brandShortName}}</a>, the free and open source operating "
-"system from Mozilla. Our mission is to promote openness, innovation and "
-"opportunity by keeping the power of the Web in your hands."
+"Welcome to <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>, "
+"the free and open source operating system from Mozilla. Our mission is to "
+"promote openness, innovation and opportunity by keeping the power of the Web "
+"in your hands."
 msgstr ""
 
-#: helpImprove2
+#: htmlWelcome-link
+msgctxt "htmlWelcome-link"
+msgid "{{brandShortName}}"
+msgstr ""
+
+#: helpImprove2.innerHTML
 msgid ""
 "You can help us improve our products and services by automatically sending "
-"analytics data. See our <a>Privacy Notice</a> to learn how we handle data "
-"from your device."
+"analytics data. See our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> to learn how we handle data from your "
+"device."
 msgstr ""
 
-#: learn-more-privacy2
+#: helpImprove-link
+msgid "Privacy Notice"
+msgstr "ประกาศความเป็นส่วนตัว"
+
+#: learn-more-privacy2.innerHTML
 msgid ""
-"Learn how Mozilla handles your information in our <a>privacy policy</a>."
+"Learn how Mozilla handles your information in our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>."
 msgstr ""
+
+#: learn-more-privacy-link
+msgid "privacy policy"
+msgstr "นโยบายความเป็นส่วนตัว"
 
 #: aboutBrowser
 msgid "About {{brandShortName}}"
@@ -1104,48 +1168,3 @@ msgstr "ขั้นตอน {{step}} จาก {{total}}"
 #: progressbar.ariaLabel
 msgid "First Time Experience"
 msgstr ""
-
-#~ msgid "… checking"
-#~ msgstr "… กำลังตรวจสอบ"
-
-#~ msgid ""
-#~ "You can import and edit Facebook friends anytime in Contacts settings"
-#~ msgstr "คุณสามารถนำเข้าและแก้ไขเพื่อน Facebook ได้ทุกเวลาในการตั้งค่ารายชื่อ"
-
-#~ msgid "{[ plural(imported) ]}"
-#~ msgstr "{[ plural(imported) ]}"
-
-#~ msgid "No friends imported (out of {{total}})"
-#~ msgstr "ไม่มีเพื่อนถูกนำเข้า (จาก {{total}})"
-
-#~ msgid "One friend imported (out of {{total}})"
-#~ msgstr "นำเข้าหนึ่งเพื่อนแล้ว (จาก {{total}})"
-
-#~ msgctxt "facebook-import-msg[two]"
-#~ msgid "{{imported}}/{{total}} friends imported"
-#~ msgstr "นำเข้าแล้ว {{imported}}/{{total}} เพื่อน"
-
-#~ msgctxt "facebook-import-msg[few]"
-#~ msgid "{{imported}}/{{total}} friends imported"
-#~ msgstr "นำเข้าแล้ว {{imported}}/{{total}} เพื่อน"
-
-#~ msgctxt "facebook-import-msg[many]"
-#~ msgid "{{imported}}/{{total}} friends imported"
-#~ msgstr "นำเข้าแล้ว {{imported}}/{{total}} เพื่อน"
-
-#~ msgctxt "facebook-import-msg[other]"
-#~ msgid "{{imported}}/{{total}} friends imported"
-#~ msgstr "นำเข้าแล้ว {{imported}}/{{total}} เพื่อน"
-
-#~ msgid ""
-#~ "Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}"
-#~ "</a>"
-#~ msgstr ""
-#~ "เรียนรู้เพิ่มเติมที่ <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}"
-#~ "</a>"
-
-#~ msgid "Privacy Notice"
-#~ msgstr "ประกาศความเป็นส่วนตัว"
-
-#~ msgid "privacy policy"
-#~ msgstr "นโยบายความเป็นส่วนตัว"

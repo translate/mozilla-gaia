@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-03-19 18:45+0000\n"
 "PO-Revision-Date: 2015-04-30 08:13+0000\n"
 "Last-Translator: Ibrahima SARR <ibrahima.sarr@pulaagu.com>\n"
 "Language-Team: FULAH LOCALIZATION\n"
@@ -15,7 +15,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -769,6 +769,10 @@ msgstr "Jiggo jokkondire"
 msgid "SIM card"
 msgstr "Kartal SIM"
 
+#: importFb2
+msgid "Facebook"
+msgstr "Facebook"
+
 #: importOutlook
 msgid "Outlook"
 msgstr "Outlook"
@@ -776,6 +780,10 @@ msgstr "Outlook"
 #: importGmail
 msgid "Gmail"
 msgstr "Gmail"
+
+#: fb-checking
+msgid "… checking"
+msgstr "… nana ƴeewa"
 
 #: notImportedYet
 msgid "Not imported yet"
@@ -785,6 +793,48 @@ msgstr "Jaggaaka tawo"
 msgid "Other accounts"
 msgstr "Konte goɗɗe"
 
+#: afterFbImport
+msgid "You can import and edit Facebook friends anytime in Contacts settings"
+msgstr ""
+"Sahaa lala aɗa waawi jiggaade e taƴtaade sehilaaɓe Facebook e teelte "
+"Jokkondire"
+
+#: facebook-import-msg
+msgid "{[ plural(imported) ]}"
+msgstr ""
+
+#: facebook-import-msg[zero]
+msgid "No friends imported (out of {{total}})"
+msgstr ""
+
+#: facebook-import-msg[one]
+msgid "One friend imported (out of {{total}})"
+msgstr ""
+
+#: facebook-import-msg[two]
+#, fuzzy
+msgctxt "facebook-import-msg[two]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr "{{imported}}/{{total}} sehil njiggaama"
+
+#: facebook-import-msg[few]
+#, fuzzy
+msgctxt "facebook-import-msg[few]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr "{{imported}}/{{total}} sehil njiggaama"
+
+#: facebook-import-msg[many]
+#, fuzzy
+msgctxt "facebook-import-msg[many]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr "{{imported}}/{{total}} sehil njiggaama"
+
+#: facebook-import-msg[other]
+#, fuzzy
+msgctxt "facebook-import-msg[other]"
+msgid "{{imported}}/{{total}} friends imported"
+msgstr "{{imported}}/{{total}} sehil njiggaama"
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Fxa Intro
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -792,7 +842,7 @@ msgstr "Konte goɗɗe"
 msgid "Firefox Accounts"
 msgstr "Konte Firefox"
 
-#: fxa-upsell
+#: fxa-upsell.innerHTML
 msgid ""
 "A Firefox Account lets you find a lost phone and buy apps from the Firefox "
 "Marketplace."
@@ -890,45 +940,68 @@ msgstr ""
 "kuutortoo ɗum ko ngam ɓeudude moƴƴinde golle amen. yaawnude e yuɓɓinde "
 "ɗum'en."
 
-#: learn-more-telemetry2
-msgid "Learn more at <a>{{url}}</a>"
+#: learn-more-telemetry2.innerHTML
+msgid ""
+"Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
+"a>"
 msgstr ""
+"Ɓeydu humpito to <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}"
+"</a>"
 
-#: learn-more-information2
-#, fuzzy
-msgid "Learn how Mozilla handles your information at <a>{{url}}</a>"
-msgstr "Humpito no Mozilla huutortoo humpito maa to {{link}}"
+#: learn-more-information2.innerHTML
+msgid ""
+"Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>"
+msgstr ""
+"Humpito no Mozilla huutortoo humpito maa to <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # OS privacy
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: htmlWelcome2
-#, fuzzy
+#: htmlWelcome2.innerHTML
 msgid ""
-"Welcome to <a>{{brandShortName}}</a>, the free and open source operating "
-"system from Mozilla. Our mission is to promote openness, innovation and "
-"opportunity by keeping the power of the Web in your hands."
+"Welcome to <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>, "
+"the free and open source operating system from Mozilla. Our mission is to "
+"promote openness, innovation and opportunity by keeping the power of the Web "
+"in your hands."
 msgstr ""
 "A jaɓɓaama e <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
 "a>, yuɓɓo huumnungo ngo yoɓetaake tee ko udditiinde iwnde e Mozilla. Darnde "
 "amen ko ɓeydude udditaare, kesamhesamaagu e fartaŋŋe so waɗde doole geese e "
 "junngo maa."
 
-#: helpImprove2
-#, fuzzy
+#: htmlWelcome-link
+msgctxt "htmlWelcome-link"
+msgid "{{brandShortName}}"
+msgstr "{{brandShortName}}"
+
+#: helpImprove2.innerHTML
 msgid ""
 "You can help us improve our products and services by automatically sending "
-"analytics data. See our <a>Privacy Notice</a> to learn how we handle data "
-"from your device."
+"analytics data. See our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> to learn how we handle data from your "
+"device."
 msgstr ""
 "Aɗa waawi wallude-en moƴƴinde topirɗe amen e carwe so neldude keɓa kiñtooje "
-"e jaajol. Ƴeew {{link}} amen ngam anndude hol no min kuutortoo keɓe kaɓirgol "
-"maa."
+"e jaajol. Ƴeew <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
+"a> amen ngam anndude hol no min kuutortoo keɓe kaɓirgol maa."
 
-#: learn-more-privacy2
+#: helpImprove-link
+msgid "Privacy Notice"
+msgstr "Tintinol Suturo"
+
+#: learn-more-privacy2.innerHTML
 msgid ""
-"Learn how Mozilla handles your information in our <a>privacy policy</a>."
+"Learn how Mozilla handles your information in our <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a>."
 msgstr ""
+"Humpito no Mozilla huutortoo humpito maa te <a href=\"{{href}}\" class="
+"\"{{className}}\">{{textContent}}</a> amen."
+
+#: learn-more-privacy-link
+msgid "privacy policy"
+msgstr "dawirgol suturo"
 
 #: aboutBrowser
 msgid "About {{brandShortName}}"
@@ -1198,76 +1271,6 @@ msgstr "Taaɓal {{step}} e dow {{total}}"
 msgid "First Time Experience"
 msgstr "Kuutorgol Laawol Gadanol"
 
-#~ msgid "Facebook"
-#~ msgstr "Facebook"
-
-#~ msgid "… checking"
-#~ msgstr "… nana ƴeewa"
-
-#~ msgid ""
-#~ "You can import and edit Facebook friends anytime in Contacts settings"
-#~ msgstr ""
-#~ "Sahaa lala aɗa waawi jiggaade e taƴtaade sehilaaɓe Facebook e teelte "
-#~ "Jokkondire"
-
-#, fuzzy
-#~ msgctxt "facebook-import-msg[two]"
-#~ msgid "{{imported}}/{{total}} friends imported"
-#~ msgstr "{{imported}}/{{total}} sehil njiggaama"
-
-#, fuzzy
-#~ msgctxt "facebook-import-msg[few]"
-#~ msgid "{{imported}}/{{total}} friends imported"
-#~ msgstr "{{imported}}/{{total}} sehil njiggaama"
-
-#, fuzzy
-#~ msgctxt "facebook-import-msg[many]"
-#~ msgid "{{imported}}/{{total}} friends imported"
-#~ msgstr "{{imported}}/{{total}} sehil njiggaama"
-
-#, fuzzy
-#~ msgctxt "facebook-import-msg[other]"
-#~ msgid "{{imported}}/{{total}} friends imported"
-#~ msgstr "{{imported}}/{{total}} sehil njiggaama"
-
-#~ msgid ""
-#~ "Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}"
-#~ "</a>"
-#~ msgstr ""
-#~ "Ɓeydu humpito to <a href=\"{{href}}\" class="
-#~ "\"{{className}}\">{{textContent}}</a>"
-
-#~ msgid ""
-#~ "Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
-#~ "\"{{className}}\">{{textContent}}</a>"
-#~ msgstr ""
-#~ "Humpito no Mozilla huutortoo humpito maa to <a href=\"{{href}}\" class="
-#~ "\"{{className}}\">{{textContent}}</a>"
-
-#~ msgid ""
-#~ "You can help us improve our products and services by automatically "
-#~ "sending analytics data. See our <a href=\"{{href}}\" class="
-#~ "\"{{className}}\">{{textContent}}</a> to learn how we handle data from "
-#~ "your device."
-#~ msgstr ""
-#~ "Aɗa waawi wallude-en moƴƴinde topirɗe amen e carwe so neldude keɓa "
-#~ "kiñtooje e jaajol. Ƴeew <a href=\"{{href}}\" class="
-#~ "\"{{className}}\">{{textContent}}</a> amen ngam anndude hol no min "
-#~ "kuutortoo keɓe kaɓirgol maa."
-
-#~ msgid "Privacy Notice"
-#~ msgstr "Tintinol Suturo"
-
-#~ msgid ""
-#~ "Learn how Mozilla handles your information in our <a href=\"{{href}}\" "
-#~ "class=\"{{className}}\">{{textContent}}</a>."
-#~ msgstr ""
-#~ "Humpito no Mozilla huutortoo humpito maa te <a href=\"{{href}}\" class="
-#~ "\"{{className}}\">{{textContent}}</a> amen."
-
-#~ msgid "privacy policy"
-#~ msgstr "dawirgol suturo"
-
 #~ msgid "Swipe from right to left to browse your apps."
 #~ msgstr "Fittu iwde ñaamo faya nano ngam weɗɗitde jaaɓɗe maa."
 
@@ -1305,6 +1308,18 @@ msgstr "Kuutorgol Laawol Gadanol"
 
 #~ msgid "Learn more at {{link}}"
 #~ msgstr "Beydu humpito to {{link}}"
+
+#~ msgid "Learn how Mozilla handles your information at {{link}}"
+#~ msgstr "Humpito no Mozilla huutortoo humpito maa to {{link}}"
+
+#~ msgid ""
+#~ "You can help us improve our products and services by automatically "
+#~ "sending analytics data. See our {{link}} to learn how we handle data from "
+#~ "your device."
+#~ msgstr ""
+#~ "Aɗa waawi wallude-en moƴƴinde topirɗe amen e carwe so neldude keɓa "
+#~ "kiñtooje e jaajol. Ƴeew {{link}} amen ngam anndude hol no min kuutortoo "
+#~ "keɓe kaɓirgol maa."
 
 #~ msgid "Learn how Mozilla handles your information in our {{link}}."
 #~ msgstr "Humpito no Mozilla huutortoo humpito maa to {{link}} amen."
