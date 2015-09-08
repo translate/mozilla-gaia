@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-27 18:45+0000\n"
+"POT-Creation-Date: 2015-09-07 14:45+0000\n"
 "PO-Revision-Date: 2015-07-29 21:29+0000\n"
 "Last-Translator: Mohammed Ammar <ksmammar@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1438205380.000000\n"
@@ -63,11 +63,17 @@ msgctxt "reset"
 msgid "Reset"
 msgstr "மீட்டமை"
 
+#: factory-reset
+msgid "Factory Reset"
+msgstr ""
+
 #: cancel
 msgid "Cancel"
 msgstr "இரத்து"
 
 #: close
+#, fuzzy
+msgctxt "close"
 msgid "Close"
 msgstr "மூடு"
 
@@ -88,6 +94,8 @@ msgid "Pair"
 msgstr "சோடி"
 
 #: add
+#, fuzzy
+msgctxt "add"
 msgid "Add"
 msgstr "சேர்"
 
@@ -147,10 +155,26 @@ msgid "Network & Connectivity"
 msgstr "பிணையம் & இணைப்புகள்"
 
 #: airplaneMode
+#, fuzzy
+msgctxt "airplaneMode"
+msgid "Airplane Mode"
+msgstr "விமானப்பாங்கு"
+
+#: airplaneMode.ariaLabel
+#, fuzzy
+msgctxt "airplaneMode.ariaLabel"
 msgid "Airplane Mode"
 msgstr "விமானப்பாங்கு"
 
 #: geolocation
+#, fuzzy
+msgctxt "geolocation"
+msgid "Geolocation"
+msgstr "புவியியல்பகுதி"
+
+#: geolocation.ariaLabel
+#, fuzzy
+msgctxt "geolocation.ariaLabel"
 msgid "Geolocation"
 msgstr "புவியியல்பகுதி"
 
@@ -251,7 +275,7 @@ msgstr ""
 
 #: wifi-sleep-description
 msgid ""
-"Enable to automatically turn off Wi-Fi during sleep to save battery power.  "
+"Enable to automatically turn off Wi-Fi during sleep to save battery power."
 msgstr ""
 
 #: manageNetworks
@@ -280,12 +304,19 @@ msgid "{{manageNetworks}}"
 msgstr "{{manageNetworks}}"
 
 #: manageCertificates
-msgid "Manage certificates"
+#, fuzzy
+msgid "Manage Certificates"
 msgstr "சான்றிதழ்கள் நிர்வகி"
 
-#: manageCert
-msgid "Manage Cert."
-msgstr "சான்றிதழ் நிர்வகி."
+#. # LOCALIZATION NOTE (manageCertificates-header): if you leave the original
+#. # en-US value "{{manageCertificates}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID
+#. # "manageCertificates".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: manageCertificates-header
+msgid "{{manageCertificates}}"
+msgstr ""
 
 #: joinHiddenNetwork
 msgid "Join Hidden Network"
@@ -441,6 +472,8 @@ msgid "No known networks"
 msgstr "தெறிந்த பிணையங்கள் எதுவும் இல்லை"
 
 #: edit
+#, fuzzy
+msgctxt "edit"
 msgid "Edit"
 msgstr "திருத்து"
 
@@ -453,15 +486,18 @@ msgid "No certificates imported"
 msgstr ""
 
 #: deleteCertificate
-msgid "Delete certificate"
+#, fuzzy
+msgid "Delete Certificate"
 msgstr "சான்றிதழை அழி"
 
 #: importCertificate
-msgid "Import certificate"
+#, fuzzy
+msgid "Import Certificate"
 msgstr "சான்றிதழை இறக்குமதி செய்"
 
 #: selectCertificateFile
-msgid "Select certificate file"
+#, fuzzy
+msgid "Select Certificate File"
 msgstr "கோப்பைத்தேர்"
 
 #: enterCertificateNickname
@@ -573,6 +609,8 @@ msgstr "WPS ஐ ரத்து செய்வதில் தோல்வ�
 
 #. # Connectivity :: Call
 #: callSettings
+#, fuzzy
+msgctxt "callSettings"
 msgid "Call Settings"
 msgstr "அழைப்பு அமைவுகள்"
 
@@ -683,7 +721,7 @@ msgstr "எட்டமுடியாதபோது"
 msgid "When unreachable"
 msgstr "எட்டமுடியாதபோது"
 
-#: callForwardingForwardingVoiceToNumber.innerHTML
+#: callForwardingForwardingVoiceToNumber
 msgid "Voice calls to <bdi>{{number}}</bdi>"
 msgstr ""
 
@@ -961,10 +999,6 @@ msgstr ""
 msgid "The PIN2 code is incorrect."
 msgstr "PIN2 குறியீடு தவறானது."
 
-#: fdn-enabled-warning
-msgid "Call forwarding is disabled by FDN."
-msgstr "அழைப்பு முன்செலுத்தல் FDN ஆல் முடக்கப்பட்டது."
-
 #: fdnContact-name
 msgid "name"
 msgstr "பெயர்"
@@ -1006,6 +1040,8 @@ msgstr "உயரிய FDN ஐ அடைந்தது. நீங்கள் 
 
 #. # Connectivity :: Messaging
 #: messagingSettings
+#, fuzzy
+msgctxt "messagingSettings"
 msgid "Messaging Settings"
 msgstr "செய்தியமைவுகள்"
 
@@ -1038,13 +1074,9 @@ msgstr "வாசிப்பு அறிக்கை"
 msgid "Request read report for each message sent"
 msgstr "அனுப்பப்படும் ஒவ்வொரு செய்திக்கும் வாசிப்பு அறிக்கை கேட்கவும்"
 
-#. # LOCALIZATION NOTE (mmsTitle): LRE (&#x202a;) and PDF (&#x202c;)
-#. # force the proper directionality of parentheses at the end of the string
-#. # regardless of the direction of the surrounding layout. Remove them only
-#. # if the translation puts them between other text.
-#: mmsTitle.innerHTML
-msgid "&#x202a;Multimedia Messaging (MMS)&#x202c;"
-msgstr ""
+#: mmsTitle
+msgid "Multimedia Messaging (MMS)"
+msgstr "பல்லூடக செய்தி (MMS)"
 
 #: auto-retrieve
 msgid "Auto Retrieve"
@@ -1110,6 +1142,8 @@ msgstr "தகவல் இல்லை"
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
+#, fuzzy
+msgctxt "cellularAndData"
 msgid "Cellular & Data"
 msgstr "செல்லுலார் & தரவு"
 
@@ -1214,6 +1248,11 @@ msgstr "WCDMA விரும்ப்பட்டது"
 msgid "Auto (2G/3G)"
 msgstr "தானியக்க (2G/3G)"
 
+#: operator-networkType-auto-3G-4G
+#, fuzzy
+msgid "Auto (3G/4G)"
+msgstr "தானியக்க (2G/3G)"
+
 #: operator-networkType-auto-CDMA-EVDO
 msgid "Auto (CDMA/EVDO)"
 msgstr "தானியக்க (CDMA/EVDO)"
@@ -1224,6 +1263,11 @@ msgstr "தானியக்க (WCDMA/GSM)"
 
 #: operator-networkType-auto-LTE-WCDMA-GSM
 msgid "Auto (LTE/WCDMA/GSM)"
+msgstr "தானியக்க (LTE/WCDMA/GSM)"
+
+#: operator-networkType-auto-LTE-WCDMA
+#, fuzzy
+msgid "Auto (LTE/WCDMA)"
 msgstr "தானியக்க (LTE/WCDMA/GSM)"
 
 #: operator-networkType-auto-LTE-CDMA-EVDO
@@ -1251,20 +1295,47 @@ msgstr "கைமுறை"
 msgid "Turn automatic selection off to view available network operators."
 msgstr "கிடைக்கக்கூடிய பிணைய வழங்குநர்களை பார்க்க தானியக்க தேர்வை முடக்கு."
 
-#: operator-status-connecting
-msgctxt "operator-status-connecting"
+#: operator-info-connecting
+#, fuzzy
+msgctxt "operator-info-connecting"
 msgid "Connecting…"
 msgstr "இணைக்கிறது..."
 
-#: operator-status-connectingfailed
-msgctxt "operator-status-connectingfailed"
+#: operator-info-failed
+#, fuzzy
+msgctxt "operator-info-failed"
 msgid "Connection failed"
 msgstr "இணைப்பு தோல்வியுற்றது"
 
-#: operator-status-connected
-msgctxt "operator-status-connected"
+#: operator-info-connected
+#, fuzzy
+msgctxt "operator-info-connected"
 msgid "Connected"
-msgstr "இணைக்கப்பட்டது"
+msgstr "இணைந்தது"
+
+#: operator-info-available
+#, fuzzy
+msgctxt "operator-info-available"
+msgid "Available"
+msgstr "இருக்கிறது"
+
+#: operator-info-current
+#, fuzzy
+msgctxt "operator-info-current"
+msgid "Connected"
+msgstr "இணைந்தது"
+
+#: operator-info-forbidden
+#, fuzzy
+msgctxt "operator-info-forbidden"
+msgid "Forbidden"
+msgstr "தடைசெய்யப்பட்டது"
+
+#: operator-info-unknown
+#, fuzzy
+msgctxt "operator-info-unknown"
+msgid "Unknown state"
+msgstr "அறியாத நிலை"
 
 #: operator-roamingPreference
 msgid "Roaming preference"
@@ -1364,6 +1435,20 @@ msgstr "IMS அமைவுகள்"
 #: imsSettings-header2
 msgid "{{imsSettings}}"
 msgstr "{{imsSettings}}"
+
+#: fotaSettings
+msgid "FOTA Settings"
+msgstr ""
+
+#. # LOCALIZATION NOTE (fotaSettings-header): if you leave the original
+#. # en-US value "{{fotaSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "fotaSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: fotaSettings-header
+#, fuzzy
+msgid "{{fotaSettings}}"
+msgstr "{{dataSettings}}"
 
 #: apn-editor-header
 msgid "APN Editor"
@@ -1492,10 +1577,14 @@ msgid "This resets the settings to default values. This cannot be undone."
 msgstr "இது அமைவுகளின் மதிப்பை முன்னிருப்பிற்கு மாற்றிவிடும். இதை மீட்டெடுக்க முடியாது."
 
 #: state-unknown
+#, fuzzy
+msgctxt "state-unknown"
 msgid "Unknown state"
 msgstr "அறியாத நிலை"
 
 #: state-available
+#, fuzzy
+msgctxt "state-available"
 msgid "Available"
 msgstr "இருக்கிறது"
 
@@ -1510,6 +1599,8 @@ msgid "Connected"
 msgstr "இணைக்கப்பட்டது"
 
 #: state-forbidden
+#, fuzzy
+msgctxt "state-forbidden"
 msgid "Forbidden"
 msgstr "தடைசெய்யப்பட்டது"
 
@@ -1537,6 +1628,8 @@ msgstr "APN அமைவுகளை மீட்டமை"
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
+#, fuzzy
+msgctxt "bluetooth"
 msgid "Bluetooth"
 msgstr "ப்ளூடூத்"
 
@@ -1695,9 +1788,13 @@ msgstr "என் சாதனத்திற்கு மறுபெயரி�
 msgid "Unknown device"
 msgstr "தெரியாத சாதனம்"
 
-#: change-phone-name-desc
-msgid "Change the name of your device as it appears in your computer"
-msgstr "உங்களுடைய கணினியில் உள்ள மாதிரியே சாதனத்தில் பெயரை மாற்றவும்."
+#: change-btdevice-name
+msgid "Change device name"
+msgstr ""
+
+#: change-btdevice-name-desc
+msgid "This name will appear on your other Bluetooth devices"
+msgstr ""
 
 #: bluetooth-new-name
 msgid "New name"
@@ -1739,17 +1836,29 @@ msgstr ""
 "நீங்க தற்போது இந்த சாதனத்துடன் இணைந்துள்ளது. சோடியை பிரித்தால் இதிலிருந்து "
 "பிரிந்துவிடும்."
 
+#: unpair-confirm
+msgid ""
+"{{unpair-title}}\n"
+"{{unpair-msg}}"
+msgstr ""
+
 #. # Connectivity :: NFC
 #: nfc
+#, fuzzy
+msgctxt "nfc"
+msgid "NFC"
+msgstr "என்.எப்.சி"
+
+#: nfc.ariaLabel
+#, fuzzy
+msgctxt "nfc.ariaLabel"
 msgid "NFC"
 msgstr "என்.எப்.சி"
 
 #. # Connectivity :: Internet Sharing
-#: SSIDCannotBeEmpty
-msgid "The SSID cannot be empty"
-msgstr "SSID காலியாக இருக்க முடியாது"
-
 #: internetSharing
+#, fuzzy
+msgctxt "internetSharing"
 msgid "Internet Sharing"
 msgstr "இணைய பகிர்வு"
 
@@ -1830,7 +1939,7 @@ msgstr "{{hotspotSettings}}"
 msgid "SSID Network Name"
 msgstr "SSID பெயர்"
 
-#: hotspot-open
+#: hotspot-security-open
 msgid "open"
 msgstr "திற"
 
@@ -1841,8 +1950,8 @@ msgstr "திற"
 #. # and PDF (&#x202c;) entities to these translations to force the correct direction.
 #. #
 #. # RTL locales should have a translation similar to this:
-#. # hotspot-wpa-psk.innerHTML= &#x202a;WPA (TKIP)&#x202c;
-#. # hotspot-wpa2-psk.innerHTML= &#x202a;WPA2 (AES)&#x202c;
+#. # hotspot-wpa-psk= &#x202a;WPA (TKIP)&#x202c;
+#. # hotspot-wpa2-psk= &#x202a;WPA2 (AES)&#x202c;
 #. #
 #. # [More details]
 #. #
@@ -1853,17 +1962,13 @@ msgstr "திற"
 #. # automatically in a wrong way by browser. Because from engineering side,
 #. # we can only change settings.ar.properties, for localizers, please remember to
 #. # put them in the other RTL languages.
-#. #
-#. # Additionally, in order to make this hack work, we got some help from l10n.js
-#. # that we need to put these strings inside "KEY".innerHTML, so that's the
-#. # reason why these two strings below would be suffixed with ".innerHTML"
-#: hotspot-wpa-psk.innerHTML
-msgid "WPA (TKIP)"
-msgstr "டபிள்யூபிஏ (டிகெஐபி)"
+#: hotspot-security-wpa-psk
+msgid "WPA"
+msgstr ""
 
-#: hotspot-wpa2-psk.innerHTML
-msgid "WPA2 (AES)"
-msgstr "WPA2 (AES)"
+#: hotspot-security-wpa2-psk
+msgid "WPA2"
+msgstr ""
 
 #: hotspot-password-desc
 msgid "The password must have at least 8 characters."
@@ -1878,6 +1983,14 @@ msgstr "தனிப்பயனாக்கம்"
 
 #. # Personalization :: Sound
 #: sound
+#, fuzzy
+msgctxt "sound"
+msgid "Sound"
+msgstr "சத்தம்"
+
+#: sound.ariaLabel
+#, fuzzy
+msgctxt "sound.ariaLabel"
 msgid "Sound"
 msgstr "சத்தம்"
 
@@ -1964,6 +2077,14 @@ msgstr "அழைப்பொலிகளை நிர்வகிக்க ஒ�
 
 #. # Personalization :: Display
 #: display
+#, fuzzy
+msgctxt "display"
+msgid "Display"
+msgstr "காட்சி"
+
+#: display.ariaLabel
+#, fuzzy
+msgctxt "display.ariaLabel"
 msgid "Display"
 msgstr "காட்சி"
 
@@ -2022,6 +2143,14 @@ msgstr "பூட்டு நோக்குநிலை"
 
 #. # Personalization :: Navigation
 #: navigation
+#, fuzzy
+msgctxt "navigation"
+msgid "Navigation"
+msgstr "நகருதல்"
+
+#: navigation.ariaLabel
+#, fuzzy
+msgctxt "navigation.ariaLabel"
 msgid "Navigation"
 msgstr "நகருதல்"
 
@@ -2044,6 +2173,14 @@ msgstr "பயன்பாடுகளுக்கிடையே தாவ த�
 
 #. # Personalization :: Notifications
 #: notifications
+#, fuzzy
+msgctxt "notifications"
+msgid "Notifications"
+msgstr "அறிவிப்புகள்"
+
+#: notifications.ariaLabel
+#, fuzzy
+msgctxt "notifications.ariaLabel"
 msgid "Notifications"
 msgstr "அறிவிப்புகள்"
 
@@ -2066,6 +2203,8 @@ msgstr "மீள்துவக்கிய பின்"
 
 #. # Personalization :: Date & Time
 #: dateAndTime
+#, fuzzy
+msgctxt "dateAndTime"
 msgid "Date & Time"
 msgstr "தேதி & நேரம்"
 
@@ -2129,6 +2268,8 @@ msgid "Language & Region"
 msgstr "மொழி & மண்டலம்"
 
 #: language
+#, fuzzy
+msgctxt "language"
 msgid "Language"
 msgstr "மொழி"
 
@@ -2166,6 +2307,8 @@ msgstr ""
 
 #. # Personalization :: Sim cards manager
 #: simManager
+#, fuzzy
+msgctxt "simManager"
 msgid "SIM Manager"
 msgstr "சிம் நிர்வாகி"
 
@@ -2243,6 +2386,12 @@ msgctxt "homescreen"
 msgid "Homescreen"
 msgstr "முகப்புத்திரை"
 
+#: homescreen.ariaLabel
+#, fuzzy
+msgctxt "homescreen.ariaLabel"
+msgid "Homescreen"
+msgstr "முகப்புத்திரை"
+
 #: vertical-homescreen-header
 msgctxt "vertical-homescreen-header"
 msgid "Homescreen"
@@ -2273,6 +2422,12 @@ msgctxt "search"
 msgid "Search"
 msgstr "தேடு"
 
+#: search.ariaLabel
+#, fuzzy
+msgctxt "search.ariaLabel"
+msgid "Search"
+msgstr "தேடு"
+
 #: search-header
 msgctxt "search-header"
 msgid "Search"
@@ -2298,6 +2453,14 @@ msgstr ""
 
 #. # Personalization :: Homescreens
 #: homescreens
+#, fuzzy
+msgctxt "homescreens"
+msgid "Homescreens"
+msgstr "முகப்புத்திரைகள்"
+
+#: homescreens.ariaLabel
+#, fuzzy
+msgctxt "homescreens.ariaLabel"
 msgid "Homescreens"
 msgstr "முகப்புத்திரைகள்"
 
@@ -2320,6 +2483,8 @@ msgid "Change"
 msgstr "மாற்று"
 
 #: description
+#, fuzzy
+msgctxt "description"
 msgid "Description"
 msgstr "விளக்கம்"
 
@@ -2333,6 +2498,8 @@ msgid "Selected Keyboards"
 msgstr "தேர்ந்த விசைகள்"
 
 #: keyboards
+#, fuzzy
+msgctxt "keyboards"
 msgid "Keyboards"
 msgstr "விசைப்பலகைகள்"
 
@@ -2397,6 +2564,14 @@ msgstr "{{appName}} {{layoutName}} உள்ளீட்டு முறைய�
 
 #. # Personalization :: Themes
 #: themes
+#, fuzzy
+msgctxt "themes"
+msgid "Themes"
+msgstr "கருப்பொருள்"
+
+#: themes.ariaLabel
+#, fuzzy
+msgctxt "themes.ariaLabel"
 msgid "Themes"
 msgstr "கருப்பொருள்"
 
@@ -2464,16 +2639,10 @@ msgstr "கணக்கு உறுதிப்படுத்தலை இர�
 msgid "A verification link has been sent to {{email}}."
 msgstr "{{email}} என்பதற்கு உறுதிச்செய்ய தொடுப்பு அனுப்பப்பட்டுள்ளது."
 
-#. # LOCALIZATION NOTE (fxa-dont-see-email): the "{{resend}}" placeholder
-#. # will be replaced with a link containing the string with ID "fxa-resend":
-#. # "Don't see an email? <a>Resend</a>."
-#: fxa-dont-see-email
-msgid "Don’t see an email? {{resend}}."
+#: fxa-dont-see-email-resend
+#, fuzzy
+msgid "Don’t see an email? <a>Resend</a>."
 msgstr "மடலை பார்க்கவில்லையா? {{resend}}."
-
-#: fxa-resend
-msgid "Resend"
-msgstr "மீண்டும் அனுப்பு"
 
 #. # Panel: logged in, verified
 #: fxa-about
@@ -2498,6 +2667,8 @@ msgid "Find My Device"
 msgstr "சாதனத்தை கண்டறி"
 
 #: fxa-options
+#, fuzzy
+msgctxt "fxa-options"
 msgid "Options"
 msgstr "விருப்பத்தேர்வுகள்"
 
@@ -2574,6 +2745,8 @@ msgid "Passcode: {{code}}"
 msgstr "கடவுக்குறியீடு: {{code}}"
 
 #: screenLock
+#, fuzzy
+msgctxt "screenLock"
 msgid "Screen Lock"
 msgstr "திரைப்பூட்டு"
 
@@ -2586,7 +2759,17 @@ msgstr "திரைப்பூட்டு"
 msgid "{{screenLock}}"
 msgstr "{{screenLock}}"
 
+#: screenLock-enabled-with-no-passcode
+msgid "Enabled with no passcode"
+msgstr ""
+
+#: screenLock-enabled-with-passcode
+msgid "Enabled with passcode"
+msgstr ""
+
 #: simSecurity
+#, fuzzy
+msgctxt "simSecurity"
 msgid "SIM Security"
 msgstr "சிம் பாதுகாப்பு"
 
@@ -2601,6 +2784,14 @@ msgstr "{{simSecurity}}"
 
 #. # Security :: App permissions
 #: appPermissions
+#, fuzzy
+msgctxt "appPermissions"
+msgid "App Permissions"
+msgstr "அனுமதிகள்"
+
+#: appPermissions.ariaLabel
+#, fuzzy
+msgctxt "appPermissions.ariaLabel"
 msgid "App Permissions"
 msgstr "அனுமதிகள்"
 
@@ -3042,6 +3233,8 @@ msgstr ""
 
 #. # Security :: Do Not Track
 #: doNotTrack
+#, fuzzy
+msgctxt "doNotTrack"
 msgid "Do Not Track"
 msgstr "கண்காணிக்காதே"
 
@@ -3096,6 +3289,14 @@ msgstr ""
 
 #. # Security :: Browsing Privacy
 #: browsingPrivacy
+#, fuzzy
+msgctxt "browsingPrivacy"
+msgid "Browsing Privacy"
+msgstr "உலாவல் தனியுரிமை"
+
+#: browsingPrivacy.ariaLabel
+#, fuzzy
+msgctxt "browsingPrivacy.ariaLabel"
 msgid "Browsing Privacy"
 msgstr "உலாவல் தனியுரிமை"
 
@@ -3135,11 +3336,12 @@ msgstr "துடை"
 
 #. # Security :: Privacy Panel
 #: privacy-controls
+msgctxt "privacy-controls"
 msgid "Privacy Controls"
 msgstr ""
 
-#: no-privacy-panel
-msgid "No privacy panel app found"
+#: no-privacy-controls
+msgid "No privacy controls app found"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3159,6 +3361,8 @@ msgid "Unplug USB cable to disable"
 msgstr "யூஎஸ்பி கம்பியை பிரித்து முடக்கு"
 
 #: appStorage
+#, fuzzy
+msgctxt "appStorage"
 msgid "Application Storage"
 msgstr "பயன்பாடு சேமிப்பு"
 
@@ -3170,26 +3374,6 @@ msgstr "பயன்பாடு சேமிப்பு"
 #: appStorage-header
 msgid "{{appStorage}}"
 msgstr "{{appStorage}}"
-
-#: byteUnit-B
-msgid "B"
-msgstr "பை"
-
-#: byteUnit-KB
-msgid "KB"
-msgstr "கிபை"
-
-#: byteUnit-MB
-msgid "MB"
-msgstr "மெபை"
-
-#: byteUnit-GB
-msgid "GB"
-msgstr "ஜிபை"
-
-#: byteUnit-TB
-msgid "TB"
-msgstr "டிபை"
 
 #: storageSize
 msgid "{{size}} {{unit}}"
@@ -3259,15 +3443,19 @@ msgid "Transfer Protocol"
 msgstr "பரிமாற்ற நெறிமுறை"
 
 #: protocol-mtp
-msgid "Media transfer protocol (MTP)"
+#, fuzzy
+msgid "Media Transfer Protocol (MTP)"
 msgstr "ஊடக பரிமாற்ற நெறிமுறை(MTP)"
 
 #: protocol-ums
-msgid "USB mass Storage (UMS)"
+#, fuzzy
+msgid "USB Mass Storage (UMS)"
 msgstr "USB மொத்த சேமிப்பகம் (UMS)"
 
 #. # Storage :: Media storage
 #: mediaStorage
+#, fuzzy
+msgctxt "mediaStorage"
 msgid "Media Storage"
 msgstr "ஊடக சேமிப்பு"
 
@@ -3432,6 +3620,23 @@ msgstr "வடிவூட்டு"
 msgid "SD card unmounted"
 msgstr "எஸ்டி அட்டை பேர்த்தெடுக்கப்பட்டது"
 
+#: ums-partial-support-warning-title
+msgid "Warning: USB Mass Storage may not work"
+msgstr ""
+
+#: ums-partial-support-warning-msg-1
+msgid ""
+"USB Mass Storage will only work correctly with an external SD card. If you'd "
+"like to be able to access both your internal and external storage, you must "
+"use MTP."
+msgstr ""
+
+#: ums-partial-support-warning-msg-2
+msgid ""
+"Press \"OK\" to switch to USB Mass Storage, or \"Cancel\" to remain in MTP "
+"mode."
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Device
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3444,8 +3649,22 @@ msgctxt "help"
 msgid "Help"
 msgstr "உதவி"
 
+#: help.ariaLabel
+#, fuzzy
+msgctxt "help.ariaLabel"
+msgid "Help"
+msgstr "உதவி"
+
 #. # Device :: Information
 #: deviceInfo
+#, fuzzy
+msgctxt "deviceInfo"
+msgid "Device Information"
+msgstr "சாதனத்தின் தகவல்"
+
+#: deviceInfo.ariaLabel
+#, fuzzy
+msgctxt "deviceInfo.ariaLabel"
 msgid "Device Information"
 msgstr "சாதனத்தின் தகவல்"
 
@@ -3462,7 +3681,7 @@ msgstr "{{deviceInfo}}"
 msgid "IMEI"
 msgstr "ஐஎம்இஐ"
 
-#: deviceInfo-IMEI-with-index.innerHTML
+#: deviceInfo-IMEI-with-index
 msgid "IMEI {{index}}: <bdi>{{imei}}</bdi>"
 msgstr ""
 
@@ -3470,7 +3689,7 @@ msgstr ""
 msgid "ICCID"
 msgstr "ஐசிசிஐடி"
 
-#: deviceInfo-ICCID-with-index.innerHTML
+#: deviceInfo-ICCID-with-index
 msgid "SIM {{index}}: <bdi>{{iccid}}</bdi>"
 msgstr ""
 
@@ -3478,7 +3697,7 @@ msgstr ""
 msgid "Phone Number"
 msgstr "பேசி எண்"
 
-#: deviceInfo-MSISDN-with-index.innerHTML
+#: deviceInfo-MSISDN-with-index
 msgid "SIM {{index}}: <bdi>{{msisdn}}</bdi>"
 msgstr ""
 
@@ -3487,6 +3706,14 @@ msgid "SIM {{index}}: Not available"
 msgstr "சிம் {{index}}: கிடைக்கப்பெறவில்லை"
 
 #: downloads
+#, fuzzy
+msgctxt "downloads"
+msgid "Downloads"
+msgstr "பதிவிறக்கம்"
+
+#: downloads.ariaLabel
+#, fuzzy
+msgctxt "downloads.ariaLabel"
 msgid "Downloads"
 msgstr "பதிவிறக்கம்"
 
@@ -3511,264 +3738,6 @@ msgstr "சிம் {{index}}: தெரியாதது"
 msgid "Git Commit Info"
 msgstr "Git கமிட் தகவல்"
 
-#: developer
-msgid "Developer"
-msgstr "உருவாக்குநர்"
-
-#. # LOCALIZATION NOTE (developer-header): if you leave the original
-#. # en-US value "{{developer}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "developer".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: developer-header
-msgid "{{developer}}"
-msgstr "{{developer}}"
-
-#: hud-settings-button
-msgid "Developer HUD"
-msgstr "உருவாக்குநர் HUD"
-
-#. # LOCALIZATION NOTE (hud-settings-header): if you leave the original en-US value
-#. # "{{hud-settings-button}}" in the following string, the localization will be
-#. # automatically picked from the existing string with ID "hud-settings-button". If you
-#. # need to adapt your localizations to the available space in headers or
-#. # buttons, you can use different strings here.
-#: hud-settings-header
-msgid "{{hud-settings-button}}"
-msgstr "{{hud-settings-button}}"
-
-#: hud-devtools
-msgid "Developer tools"
-msgstr "உருவாக்குநர் கருவிகள்"
-
-#. # LOCALIZATION NOTE (hud-devtools-header): if you leave the original en-US
-#. # value "{{hud-devtools}}" in the following string, the localization will be
-#. # automatically picked from the existing string with ID "hud-devtools". If you
-#. # need to adapt your localizations to the available space in headers or
-#. # buttons, you can use different strings here.
-#: hud-devtools-header
-msgid "{{hud-devtools}}"
-msgstr "{{hud-devtools}}"
-
-#: hud-logging
-msgid "Log changes in ADB"
-msgstr "ADB இல் பதியவும்"
-
-#: hud-system
-msgid "Show system HUD"
-msgstr "கணினி HUD காட்டு"
-
-#: hud-problems
-msgid "Problems"
-msgstr "பிரச்சனைகள்"
-
-#: hud-warnings
-msgid "Warnings"
-msgstr "எச்சரிக்கைகள்"
-
-#: hud-errors
-msgid "Errors"
-msgstr "பிழைகள்"
-
-#: hud-security
-msgid "Security issues"
-msgstr "பாதுகாப்பு சிக்கல்"
-
-#: hud-performance
-msgid "Performance"
-msgstr "செயல்திறன்"
-
-#: hud-reflows
-msgid "Reflows"
-msgstr "மீளோடைகள்"
-
-#: hud-jank
-msgid "Jank"
-msgstr "Jank"
-
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Jank இன் உச்சநிலை"
-
-#: hud-fps
-msgid "Frames per second"
-msgstr "விநாடிக்கு பிரேம்"
-
-#: hud-ttl
-msgid "Time to load"
-msgstr "ஏற்றாகும் நேரம்"
-
-#: hud-memory
-msgid "Memory"
-msgstr "நினைவகம்"
-
-#: hud-uss
-msgid "Unique Set Size"
-msgstr "தனித்த அளவை அமை"
-
-#: hud-appmemory
-msgid "App memory"
-msgstr "செயலி நினைவகம்"
-
-#: hud-jsobjects
-msgid "JS objects"
-msgstr "JS பொருட்கள்"
-
-#: hud-jsstrings
-msgid "JS strings"
-msgstr "JS சரங்கள்"
-
-#: hud-jsother
-msgid "JS other"
-msgstr "JS மற்றவை"
-
-#: hud-dom
-msgid "DOM"
-msgstr "DOM"
-
-#: hud-style
-msgid "Style"
-msgstr "தோற்றம்"
-
-#: hud-other
-msgctxt "hud-other"
-msgid "Other"
-msgstr "மற்ற"
-
-#: software
-msgid "Software"
-msgstr "மென்பொருள்"
-
-#: devSettings
-msgid "Developer Settings"
-msgstr "உருவாக்குநர் அமைவுகள்"
-
-#: debug
-msgid "Debug"
-msgstr "வழு நீக்கம்"
-
-#: developer-menu
-msgid "Developer Menu"
-msgstr "உருவாக்குநர் பட்டி"
-
-#: developer-tools
-msgid "Developer Tools"
-msgstr "உருவாக்குநர் கருவிகள்"
-
-#: graphics
-msgid "Graphics"
-msgstr "வரைகலைகள்"
-
-#: hardware-composer
-msgid "Hardware composer"
-msgstr "வன்பொருள் தொகுப்பான்"
-
-#: paint-flashing
-msgid "Flash repainted area"
-msgstr "மறு வண்ணம் பூசப்பட்ட பகுதியில் பளிச்சிடு"
-
-#: dumps-layers
-msgid "Dump layers tree"
-msgstr "அடுக்குகளின் படிநிலையை திணி"
-
-#: dumps-layerscope
-msgid "Dump layerscope"
-msgstr "அடுக்குப்பரப்பைத் திணி"
-
-#: apz-overscroll
-msgid "Overscrolling"
-msgstr "வேகமாக உருளுகிறது"
-
-#: tiling
-msgid "Tiling"
-msgstr "டிலிங்"
-
-#: low-precision
-msgid "Low-precision painting"
-msgstr "துல்லியம் குறைந்த வண்ணப்பூச்சு"
-
-#: low-opacity
-msgid "Low-precision transparency"
-msgstr "துல்லியம் குறைந்த ஊடுருவல்"
-
-#: draw-tile-borders
-msgid "Draw tile borders"
-msgstr "அடுக்குகளின் எல்லைகளை வரையும்"
-
-#: draw-layer-borders
-msgid "Draw layer borders"
-msgstr "அடுக்குகளின் எல்லைகளை வரையும்"
-
-#: log-animations
-msgid "Log slow animations"
-msgstr "மெதுவான இயக்கமூட்டல்களை பதியவும்"
-
-#: remote-debugging-usb
-msgid "Debugging via USB"
-msgstr "USB ஊடாக வழுநீக்கம்"
-
-#: dev-tools-wifi
-msgid "DevTools via Wi-Fi"
-msgstr "வை-பை ஊடாக உருவாக்குநர் கருவிகள்"
-
-#: dev-tools-qps
-msgid "Pseudo-localization"
-msgstr "முறையற்ற தன்மொழியாக்கம்"
-
-#: debugger-disabled
-msgctxt "debugger-disabled"
-msgid "Disabled"
-msgstr "முடக்கப்பட்டது"
-
-#: debugger-adb-only
-msgid "ADB only"
-msgstr "ADB மட்டுமே"
-
-#: debugger-adb-and-devtools
-msgid "ADB and DevTools"
-msgstr "ADB மற்றும் உருவாக்குனர் கருவிகள்"
-
-#: wifi-debugging
-msgid "Wi-Fi output in ADB"
-msgstr "ADB என்பதில் வை-பையின் வெளிப்பாடு"
-
-#: bluetooth-debugging
-msgid "Bluetooth output in ADB"
-msgstr "ADBயில் ப்ளூடூத்தின் வெளிப்பாடு"
-
-#: nfc-debugging
-msgid "NFC output in ADB"
-msgstr "ADB இல் NFC வெளிப்பாடு"
-
-#: ril-debugging
-#, fuzzy
-msgid "RIL output in ADB"
-msgstr "ADB இல் NFC வெளிப்பாடு"
-
-#: console-enabled
-msgid "Console enabled"
-msgstr "பணியகம் செயல்படுத்தப்பட்டது"
-
-#: cards-view-screenshots
-msgid "Cards View: Screenshots"
-msgstr "அட்டையின் பார்வை: திரைப்பிடிப்புகள்"
-
-#: geolocation-debugging-enabled
-msgid "Geolocation output in ADB"
-msgstr "ADB இல் புவியிடத்தின் வெளிப்பாடு"
-
-#: geolocation-debugging-gps-locations-ignored
-msgid "Ignore GPS locations"
-msgstr "GPS இடங்களை தவிர்"
-
-#: use-reviewer-certs
-msgid "Use Marketplace reviewer certs"
-msgstr "Marketplace மறாய்வு சான்றிதழ்களை பயன்படுத்தவும்"
-
-#: shake-to-log
-msgid "Shake to save system log"
-msgstr "ஆட்டி கட்டக பதிவைச் சேமி"
-
 #: model-name
 msgid "Model"
 msgstr "வகை"
@@ -3780,6 +3749,14 @@ msgstr "இயங்குதள பதிப்பு"
 #: firmware_revision
 msgid "Firmware Revision"
 msgstr "வன் மென்பொருள் திருத்தம்"
+
+#: hardware_manufacturer
+msgid "Hardware Manufacturer"
+msgstr ""
+
+#: hardware_platform
+msgid "Hardware Platform"
+msgstr ""
 
 #: hardware_revision
 msgid "Hardware Revision"
@@ -3900,22 +3877,6 @@ msgstr "மீட்டமை"
 #: reset-warning-title
 #, fuzzy
 msgctxt "reset-warning-title"
-msgid "CAUTION"
-msgstr "எச்சரிக்கை"
-
-#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
-#. # full DevTools access.
-#: unlock-privileges
-msgid "Unlock Privileges"
-msgstr ""
-
-#: reset-devtools
-msgid "Reset and enable full DevTools"
-msgstr ""
-
-#: reset-devtools-warning-title
-#, fuzzy
-msgctxt "reset-devtools-warning-title"
 msgid "CAUTION"
 msgstr "எச்சரிக்கை"
 
@@ -4086,6 +4047,337 @@ msgstr "மொசில்லா பொது உரிமம் 2.0"
 msgid "Apache License 2.0"
 msgstr "அப்பாச்சி உரிமம் 2.0"
 
+#. # Device :: Developer
+#: developer
+#, fuzzy
+msgctxt "developer"
+msgid "Developer"
+msgstr "உருவாக்குநர்"
+
+#: developer.ariaLabel
+#, fuzzy
+msgctxt "developer.ariaLabel"
+msgid "Developer"
+msgstr "உருவாக்குநர்"
+
+#. # LOCALIZATION NOTE (developer-header): if you leave the original
+#. # en-US value "{{developer}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "developer".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: developer-header
+msgid "{{developer}}"
+msgstr "{{developer}}"
+
+#: hud-settings-button
+msgid "Developer HUD"
+msgstr "உருவாக்குநர் HUD"
+
+#. # LOCALIZATION NOTE (hud-settings-header): if you leave the original en-US value
+#. # "{{hud-settings-button}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-settings-button". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-settings-header
+msgid "{{hud-settings-button}}"
+msgstr "{{hud-settings-button}}"
+
+#: hud-devtools
+#, fuzzy
+msgctxt "hud-devtools"
+msgid "Developer Tools"
+msgstr "உருவாக்குநர் கருவிகள்"
+
+#. # LOCALIZATION NOTE (hud-devtools-header): if you leave the original en-US
+#. # value "{{hud-devtools}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-devtools". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-devtools-header
+msgid "{{hud-devtools}}"
+msgstr "{{hud-devtools}}"
+
+#: hud-hide
+msgid "Hide All HUD Elements"
+msgstr ""
+
+#: hud-logging
+#, fuzzy
+msgid "Log Changes in ADB"
+msgstr "ADB இல் பதியவும்"
+
+#: hud-system
+#, fuzzy
+msgid "Show System HUD"
+msgstr "கணினி HUD காட்டு"
+
+#: hud-problems
+msgid "Problems"
+msgstr "பிரச்சனைகள்"
+
+#: hud-warnings
+msgid "Warnings"
+msgstr "எச்சரிக்கைகள்"
+
+#: hud-errors
+msgid "Errors"
+msgstr "பிழைகள்"
+
+#: hud-security
+#, fuzzy
+msgid "Security Issues"
+msgstr "பாதுகாப்பு சிக்கல்"
+
+#: hud-performance
+msgid "Performance"
+msgstr "செயல்திறன்"
+
+#: hud-reflows
+msgid "Reflows"
+msgstr "மீளோடைகள்"
+
+#: hud-jank
+msgid "Jank"
+msgstr "Jank"
+
+#: jank-threshold
+msgid "Jank Threshold"
+msgstr "Jank இன் உச்சநிலை"
+
+#: hud-fps
+#, fuzzy
+msgid "Frames per Second"
+msgstr "விநாடிக்கு பிரேம்"
+
+#: hud-ttl
+#, fuzzy
+msgid "Time to Load"
+msgstr "ஏற்றாகும் நேரம்"
+
+#: hud-memory
+msgid "Memory"
+msgstr "நினைவகம்"
+
+#: hud-uss
+msgid "Unique Set Size"
+msgstr "தனித்த அளவை அமை"
+
+#: hud-appmemory
+#, fuzzy
+msgid "App Memory"
+msgstr "செயலி நினைவகம்"
+
+#: hud-jsobjects
+#, fuzzy
+msgid "JS Objects"
+msgstr "JS பொருட்கள்"
+
+#: hud-jsstrings
+#, fuzzy
+msgid "JS Strings"
+msgstr "JS சரங்கள்"
+
+#: hud-jsother
+#, fuzzy
+msgid "JS Other"
+msgstr "JS மற்றவை"
+
+#: hud-dom
+msgid "DOM"
+msgstr "DOM"
+
+#: hud-style
+msgid "Style"
+msgstr "தோற்றம்"
+
+#: hud-other
+msgctxt "hud-other"
+msgid "Other"
+msgstr "மற்ற"
+
+#: hud-telemetry
+msgid "Telemetry"
+msgstr ""
+
+#: software
+msgid "Software"
+msgstr "மென்பொருள்"
+
+#: devSettings
+msgid "Developer Settings"
+msgstr "உருவாக்குநர் அமைவுகள்"
+
+#: debug
+msgid "Debug"
+msgstr "வழு நீக்கம்"
+
+#: developer-menu
+msgid "Developer Menu"
+msgstr "உருவாக்குநர் பட்டி"
+
+#: developer-tools
+#, fuzzy
+msgctxt "developer-tools"
+msgid "Developer Tools"
+msgstr "உருவாக்குநர் கருவிகள்"
+
+#: graphics
+msgid "Graphics"
+msgstr "வரைகலைகள்"
+
+#: hardware-composer
+#, fuzzy
+msgid "Hardware Composer"
+msgstr "வன்பொருள் தொகுப்பான்"
+
+#: paint-flashing
+#, fuzzy
+msgid "Flash Repainted Area"
+msgstr "மறு வண்ணம் பூசப்பட்ட பகுதியில் பளிச்சிடு"
+
+#: dumps-layers
+#, fuzzy
+msgid "Dump Layers Tree"
+msgstr "அடுக்குகளின் படிநிலையை திணி"
+
+#: dumps-display-list
+msgid "Dump Display List"
+msgstr ""
+
+#: dumps-layerscope
+#, fuzzy
+msgid "Dump LayerScope"
+msgstr "அடுக்குப்பரப்பைத் திணி"
+
+#: apz-overscroll
+msgid "Overscrolling"
+msgstr "வேகமாக உருளுகிறது"
+
+#: tiling
+msgid "Tiling"
+msgstr "டிலிங்"
+
+#: low-precision
+#, fuzzy
+msgid "Low Precision Painting"
+msgstr "துல்லியம் குறைந்த வண்ணப்பூச்சு"
+
+#: low-opacity
+#, fuzzy
+msgid "Low Precision Transparency"
+msgstr "துல்லியம் குறைந்த ஊடுருவல்"
+
+#: draw-tile-borders
+#, fuzzy
+msgid "Draw Tile Borders"
+msgstr "அடுக்குகளின் எல்லைகளை வரையும்"
+
+#: draw-layer-borders
+#, fuzzy
+msgid "Draw Layer Borders"
+msgstr "அடுக்குகளின் எல்லைகளை வரையும்"
+
+#: log-animations
+#, fuzzy
+msgid "Log Slow Animations"
+msgstr "மெதுவான இயக்கமூட்டல்களை பதியவும்"
+
+#: remote-debugging-usb
+msgid "Debugging via USB"
+msgstr "USB ஊடாக வழுநீக்கம்"
+
+#: devtools-wifi
+msgid "DevTools via Wi-Fi"
+msgstr "வை-பை ஊடாக உருவாக்குநர் கருவிகள்"
+
+#: devtools-device-name
+msgid "DevTools Wi-Fi Device Name"
+msgstr ""
+
+#: devtools-qps
+#, fuzzy
+msgid "Pseudo-Localization"
+msgstr "முறையற்ற தன்மொழியாக்கம்"
+
+#: debugger-disabled
+msgctxt "debugger-disabled"
+msgid "Disabled"
+msgstr "முடக்கப்பட்டது"
+
+#: debugger-adb-only
+msgid "ADB only"
+msgstr "ADB மட்டுமே"
+
+#: debugger-adb-and-devtools
+msgid "ADB and DevTools"
+msgstr "ADB மற்றும் உருவாக்குனர் கருவிகள்"
+
+#: wifi-debugging
+#, fuzzy
+msgid "Wi-Fi Output in ADB"
+msgstr "ADB என்பதில் வை-பையின் வெளிப்பாடு"
+
+#: bluetooth-debugging
+#, fuzzy
+msgid "Bluetooth Output in ADB"
+msgstr "ADBயில் ப்ளூடூத்தின் வெளிப்பாடு"
+
+#: bluetooth-snoop-debugging
+msgid "Bluetooth HCI Sniffing Logs to SD Card"
+msgstr ""
+
+#: nfc-debugging
+#, fuzzy
+msgid "NFC Output in ADB"
+msgstr "ADB இல் NFC வெளிப்பாடு"
+
+#: ril-debugging
+#, fuzzy
+msgid "RIL Output in ADB"
+msgstr "ADB இல் NFC வெளிப்பாடு"
+
+#: network-debugging
+msgid "Network Output in ADB"
+msgstr ""
+
+#: mms-debugging
+#, fuzzy
+msgid "MMS Output in ADB"
+msgstr "ADB இல் NFC வெளிப்பாடு"
+
+#: console-enabled
+#, fuzzy
+msgid "Console Enabled"
+msgstr "பணியகம் செயல்படுத்தப்பட்டது"
+
+#: cards-view-screenshots
+msgid "Cards View: Screenshots"
+msgstr "அட்டையின் பார்வை: திரைப்பிடிப்புகள்"
+
+#: geolocation-debugging-enabled
+#, fuzzy
+msgid "Geolocation Output in ADB"
+msgstr "ADB இல் புவியிடத்தின் வெளிப்பாடு"
+
+#: geolocation-debugging-gps-locations-ignored
+#, fuzzy
+msgid "Ignore GPS Locations"
+msgstr "GPS இடங்களை தவிர்"
+
+#: use-reviewer-certs
+#, fuzzy
+msgid "Use Marketplace Reviewer Certs"
+msgstr "Marketplace மறாய்வு சான்றிதழ்களை பயன்படுத்தவும்"
+
+#: shake-to-log
+#, fuzzy
+msgid "Shake to Save System Log"
+msgstr "ஆட்டி கட்டக பதிவைச் சேமி"
+
+#: enable-logshake-qa
+msgid "Enable LogShake QA Mode"
+msgstr ""
+
 #: launch-ftu
 msgid "Launch First Time Use"
 msgstr "முதல் முறை பயன்படுத்த துவக்கு"
@@ -4095,44 +4387,180 @@ msgid "No first time use app found"
 msgstr "முதன் முதலாக பயன்படுத்தப்பட்ட பயன்பாடு காணப்படவில்லை"
 
 #: software-home-button
-msgid "Software home button"
+#, fuzzy
+msgid "Software Home Button"
 msgstr "மென்பொருள் முகப்பு பொத்தான்"
 
 #: home-gesture
-msgid "Home gesture"
+#, fuzzy
+msgid "Home Gesture"
 msgstr "முகப்பு சைகை"
 
 #: continuous-transition
-msgid "Continuous transition"
+#, fuzzy
+msgid "Continuous Transition"
 msgstr "தொடர்ச்சியான மாற்றம்"
 
 #: debug-gaia-enabled
-msgid "Gaia debug traces"
+#, fuzzy
+msgid "Gaia Debug Traces"
 msgstr "கெயா வழுநீக்க தடங்கள்"
 
 #: showScreenReaderSettings
-msgid "Show screen reader settings"
+#, fuzzy
+msgid "Show Screen Reader Settings"
 msgstr "திரைப்படிப்பு அமைவுகளை காண்பி"
 
 #: app-transition
-msgid "App transition"
+#, fuzzy
+msgid "App Transition"
 msgstr "பயன்பாட்டின் மாற்றம்"
 
 #: app-suspending
-msgid "App suspending"
+#, fuzzy
+msgid "App Suspending"
 msgstr "பயன்பாட்டின் இடைநிறுத்தம்"
 
 #: copypaste
-msgid "Copy/paste"
+msgid "Copy/Paste"
+msgstr ""
+
+#: multi-screen
+msgid "Multi-Screen"
 msgstr ""
 
 #: verbose-app-permissions
-msgid "Verbose app permissions"
+#, fuzzy
+msgid "Verbose App Permissions"
 msgstr "பயன்பாடு அனுமதிகளை திரையிடு"
 
+#: pinning-the-web
+msgid "Enable Pinning the Web"
+msgstr ""
+
+#: view-source
+msgid "Enable View Source Gesture"
+msgstr ""
+
 #: window-management
-msgid "Window management"
+#, fuzzy
+msgid "Window Management"
 msgstr "சாளர மேலாண்மை"
+
+#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
+#. # full DevTools access.
+#: unlock-privileges
+msgid "Unlock Privileges"
+msgstr ""
+
+#: full-devtools
+msgid "Full DevTools"
+msgstr ""
+
+#: reset-devtools-warning-title
+#, fuzzy
+msgctxt "reset-devtools-warning-title"
+msgid "CAUTION"
+msgstr "எச்சரிக்கை"
+
+#. # Device :: Developer :: Service Workers
+#: service-worker
+msgid "Service Workers"
+msgstr ""
+
+#: service-worker-scope
+msgid "Scope"
+msgstr ""
+
+#: service-worker-script-spec
+msgid "Script spec"
+msgstr ""
+
+#: service-worker-current-worker-url
+msgid "Current worker URL"
+msgstr ""
+
+#: service-worker-active-cache-name
+msgid "Active cache name"
+msgstr ""
+
+#: service-worker-waiting-cache-name
+msgid "Waiting cache name"
+msgstr ""
+
+#: service-worker-update
+msgid "Update"
+msgstr ""
+
+#: service-worker-unregister
+msgid "Unregister"
+msgstr ""
+
+#: service-worker-no-registrations
+msgid "No service workers found"
+msgstr ""
+
+#. # Device :: Full Developer Mode
+#: developer-menu-disabled-warning-title
+msgid "Developer menu not enabled"
+msgstr ""
+
+#: developer-menu-disabled-warning-msg-1
+msgid ""
+"Developer Mode can't be enabled without the developer menu first being "
+"enabled."
+msgstr ""
+
+#: developer-menu-disabled-warning-msg-2
+msgid ""
+"Please enable it from Settings > Device Information > More Information > "
+"Developer Menu."
+msgstr ""
+
+#: enable-full-dev-mode-first-warning-title
+msgid "Would you like to enable developer mode?"
+msgstr ""
+
+#: enable-full-dev-mode-first-warning-msg-1
+msgid "THIS WILL DELETE ALL YOUR DATA AND FACTORY RESET YOUR DEVICE."
+msgstr ""
+
+#: enable-full-dev-mode-first-warning-msg-2
+msgid "THIS WILL DISABLE ALL SECURITY MEASURES ON YOUR DEVICE."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-title
+msgid "Are you sure you want to enable developer mode?"
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg
+#, fuzzy
+msgid "{[ plural(count) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: enable-full-dev-mode-final-warning-msg[one]
+msgid "Tap 'Enable' {{count}} more time to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[two]
+msgctxt "enable-full-dev-mode-final-warning-msg[two]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[few]
+msgctxt "enable-full-dev-mode-final-warning-msg[few]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[many]
+msgctxt "enable-full-dev-mode-final-warning-msg[many]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[other]
+msgctxt "enable-full-dev-mode-final-warning-msg[other]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
 
 #. # Device :: Downloads
 #: downloads-edit
@@ -4154,6 +4582,8 @@ msgstr "அழி"
 
 #. # Device :: Battery
 #: battery
+#, fuzzy
+msgctxt "battery"
 msgid "Battery"
 msgstr "மின்கலம்"
 
@@ -4202,6 +4632,14 @@ msgstr "தானாக செயல்படுத்து"
 
 #. # Device :: Accessibility
 #: accessibility
+#, fuzzy
+msgctxt "accessibility"
+msgid "Accessibility"
+msgstr "அணுகுத்திறன்"
+
+#: accessibility.ariaLabel
+#, fuzzy
+msgctxt "accessibility.ariaLabel"
 msgid "Accessibility"
 msgstr "அணுகுத்திறன்"
 
@@ -4311,6 +4749,12 @@ msgstr "அடர்த்தி"
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
 msgctxt "improveBrowserOS"
+msgid "Improve {{brandShortName}}"
+msgstr "{{brandShortName}}ஐ புதுப்பி"
+
+#: improveBrowserOS.ariaLabel
+#, fuzzy
+msgctxt "improveBrowserOS.ariaLabel"
 msgid "Improve {{brandShortName}}"
 msgstr "{{brandShortName}}ஐ புதுப்பி"
 
@@ -4503,15 +4947,6 @@ msgstr ""
 "மன்னிக்கவும், கணினியால் உங்களுடைய பரிந்துரையை அனுப்பு முடியவில்லை ஏனென்றால் கருத்து "
 "புலம் காலியாக இருக்கிறது. தயவுச்செய்து ஒரு சில வார்த்தைகளை உள்ளிட்டு மீண்டும் முயற்சி."
 
-#: feedback-errormessage-just-sent
-msgid ""
-"Sorry, the system can’t send your suggestion because you already sent us "
-"feedback. Please try our next software update and send again."
-msgstr ""
-"மன்னிக்கவும், கணினியால் உங்களுடைய பரிந்துரையை அனுப்பு முடியவில்லை ஏனென்றால் நீங்க ஏற்கனவே "
-"பின்னூட்டத்தை அனுப்பிவிட்டீர்கள். தயவுச்செய்து அடுத்துவரும் புதுப்பிப்பு மென்பொருளில் "
-"முயற்சித்து மீண்டும் அனுப்பவும்."
-
 #: feedback-complete-msg
 msgid ""
 "Thanks for the feedback! We use it to help create better experiences in "
@@ -4519,6 +4954,10 @@ msgid ""
 msgstr ""
 "கருத்துக்கு நன்றி! உங்களுடைய கருத்து எதிர்வரும் பயர்பாக்ஸ் இயங்குதளத்தில் சிறந்த அனுபவத்தை "
 "உருவாக்க உதவும்."
+
+#: feedback-errormessage-unknown-error
+msgid "Something went wrong. Please try again."
+msgstr ""
 
 #. # Device :: Help
 #: online-support
@@ -4656,8 +5095,14 @@ msgstr "அலைவரிசை நிலையை பெறு"
 msgid "End of the proactive session"
 msgstr ""
 
+#: stkEntry.ariaLabel
+msgid "{{ title }}"
+msgstr ""
+
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
+#, fuzzy
+msgctxt "is-warning-storage-header"
 msgid "USB storage"
 msgstr "USB சேமிப்பகம்"
 
@@ -4727,14 +5172,380 @@ msgstr ""
 msgid "{{settings-dialog-prompt}}"
 msgstr ""
 
+#: accessible-app-icon.ariaLabel
+msgid "Icon for {{ appName }} app"
+msgstr ""
+
+#. # Addongs settings
+#: addon
+msgid "Add-on"
+msgstr ""
+
+#: addons
+msgctxt "addons"
+msgid "Add-ons"
+msgstr ""
+
+#: addons.ariaLabel
+msgctxt "addons.ariaLabel"
+msgid "Add-ons"
+msgstr ""
+
+#: addons-header
+msgid "{{addons}}"
+msgstr ""
+
+#: addon-details-header1
+msgid "{{ appName }}"
+msgstr ""
+
+#: addon-enable
+msgid "Enable Add-on"
+msgstr ""
+
+#: addon-description-header
+#, fuzzy
+msgctxt "addon-description-header"
+msgid "Description"
+msgstr "விளக்கம்"
+
+#: addon-developer-name
+msgid "{{ developerName }}"
+msgstr ""
+
+#: addon-targets
+msgid "Affected Apps"
+msgstr ""
+
+#: addon-options
+#, fuzzy
+msgctxt "addon-options"
+msgid "Options"
+msgstr "விருப்பத்தேர்வுகள்"
+
+#: addon-delete
+msgid "Delete Add-on"
+msgstr ""
+
+#: addon-share
+msgid "Share Add-on"
+msgstr ""
+
+#: addon-share-no-provider
+msgid "No sharing app available"
+msgstr ""
+
+#: addon-no-description
+msgid "This add-on does not include a description in its manifest file."
+msgstr ""
+
+#: addon-no-targets
+msgid "This add-on does not affect any installed apps."
+msgstr ""
+
+#: addon-restart-apps-to-disable
+msgid "Add-on disabled; restart affected apps."
+msgstr ""
+
+#: addon-reboot-required
+msgid ""
+"This add-on affected system apps; you must reboot your device to fully "
+"disable it."
+msgstr ""
+
+#: addon-rename
+msgid "Rename"
+msgstr ""
+
+#: addon-rename-input
+msgid "Enter add-on name"
+msgstr ""
+
+#: addon-rename-desc
+msgid "Change the name of your add-on"
+msgstr ""
+
+#: addon-obsolete
+msgid "This add-on is obsolete and does not work."
+msgstr ""
+
+#: addon-obsolete-can-delete
+msgid "This add-on is obsolete and does not work. Please delete it."
+msgstr ""
+
+#. # Achievements
+#: achievements
+msgid "Achievements"
+msgstr ""
+
+#: achievements.ariaLabel
+msgid "achievements"
+msgstr ""
+
+#: achievements-customize-champ-name
+msgid "Customize Champ"
+msgstr ""
+
+#: achievements-customize-champ-description
+msgid "Open Customizer in an app"
+msgstr ""
+
+#: achievements-add-on-all-star-name
+msgid "Add-on All-Star"
+msgstr ""
+
+#: achievements-add-on-all-star-description
+msgid "Use Customizer to create your own add-on"
+msgstr ""
+
+#: achievements-fab-finder-name
+msgid "Fab Finder"
+msgstr ""
+
+#: achievements-fab-finder-description
+msgid "Install an app or add-on from Hackerplace"
+msgstr ""
+
+#: achievements-content-commander-name
+msgid "Content Commander"
+msgstr ""
+
+#: achievements-content-commander-description
+msgid "Submit an app or add-on to Hackerplace"
+msgstr ""
+
+#: achievements-sharing-is-caring-name
+msgid "Sharing is Caring"
+msgstr ""
+
+#: achievements-sharing-is-caring-description
+msgid "Share your apps and add-ons with the Sharing app"
+msgstr ""
+
+#: achievements-creative-kind-name
+msgid "Creative Kind"
+msgstr ""
+
+#: achievements-creative-kind-description
+msgid "Use Theme Editor to create a new theme"
+msgstr ""
+
+#. # Service Workers
+#: service-workers-interception
+msgid "Intercept requests"
+msgstr ""
+
+#: service-workers-testing
+msgid "Allow over HTTP"
+msgstr ""
+
+#. # LOCALIZATION NOTE: The following strings are spoken by screen readers and not
+#. # shown on the screen.
+#: addButton.ariaLabel
+#, fuzzy
+msgctxt "addButton.ariaLabel"
+msgid "Add"
+msgstr "சேர்"
+
+#: closeButton.ariaLabel
+#, fuzzy
+msgctxt "closeButton.ariaLabel"
+msgid "Close"
+msgstr "மூடு"
+
+#: changeWallpaperButton.ariaLabel
+msgid "Change wallpaper"
+msgstr ""
+
+#: editButton.ariaLabel
+#, fuzzy
+msgctxt "editButton.ariaLabel"
+msgid "Edit"
+msgstr "திருத்து"
+
+#: wifiSection.ariaLabel
+#, fuzzy
+msgctxt "wifiSection.ariaLabel"
+msgid "Wi-Fi"
+msgstr "வை-பை"
+
+#: simManagerSection.ariaLabel
+#, fuzzy
+msgctxt "simManagerSection.ariaLabel"
+msgid "SIM Manager"
+msgstr "சிம் நிர்வாகி"
+
+#: callSettingsSection.ariaLabel
+#, fuzzy
+msgctxt "callSettingsSection.ariaLabel"
+msgid "Call Settings"
+msgstr "அழைப்பு அமைவுகள்"
+
+#: messagingSettingsSection.ariaLabel
+#, fuzzy
+msgctxt "messagingSettingsSection.ariaLabel"
+msgid "Messaging Settings"
+msgstr "செய்தியமைவுகள்"
+
+#: cellularAndDataSection.ariaLabel
+#, fuzzy
+msgctxt "cellularAndDataSection.ariaLabel"
+msgid "Cellular & Data"
+msgstr "செல்லுலார் & தரவு"
+
+#: bluetoothSection.ariaLabel
+#, fuzzy
+msgctxt "bluetoothSection.ariaLabel"
+msgid "Bluetooth"
+msgstr "ப்ளூடூத்"
+
+#: internetSharingSection.ariaLabel
+#, fuzzy
+msgctxt "internetSharingSection.ariaLabel"
+msgid "Internet Sharing"
+msgstr "இணைய பகிர்வு"
+
+#: dateAndTimeSection.ariaLabel
+#, fuzzy
+msgctxt "dateAndTimeSection.ariaLabel"
+msgid "Date & Time"
+msgstr "தேதி & நேரம்"
+
+#: languageSection.ariaLabel
+#, fuzzy
+msgctxt "languageSection.ariaLabel"
+msgid "Language"
+msgstr "மொழி"
+
+#: keyboardsSection.ariaLabel
+#, fuzzy
+msgctxt "keyboardsSection.ariaLabel"
+msgid "Keyboards"
+msgstr "விசைப்பலகைகள்"
+
+#: fxa-accountsSection.ariaLabel
+#, fuzzy
+msgctxt "fxa-accountsSection.ariaLabel"
+msgid "Firefox Accounts"
+msgstr "Firefox கணக்கு"
+
+#: findmydeviceSection.ariaLabel
+#, fuzzy
+msgctxt "findmydeviceSection.ariaLabel"
+msgid "Find My Device"
+msgstr "சாதனத்தை கண்டறி"
+
+#: screenLockSection.ariaLabel
+#, fuzzy
+msgctxt "screenLockSection.ariaLabel"
+msgid "Screen Lock"
+msgstr "திரைப்பூட்டு"
+
+#: simSecuritySection.ariaLabel
+#, fuzzy
+msgctxt "simSecuritySection.ariaLabel"
+msgid "SIM Security"
+msgstr "சிம் பாதுகாப்பு"
+
+#: doNotTrackSection.ariaLabel
+#, fuzzy
+msgctxt "doNotTrackSection.ariaLabel"
+msgid "Do Not Track"
+msgstr "கண்காணிக்காதே"
+
+#: privacySection.ariaLabel
+msgctxt "privacySection.ariaLabel"
+msgid "Privacy Controls"
+msgstr ""
+
+#: enableStorageSection.ariaLabel
+#, fuzzy
+msgctxt "enableStorageSection.ariaLabel"
+msgid "USB storage"
+msgstr "USB சேமிப்பகம்"
+
+#: mediaStorageSection.ariaLabel
+#, fuzzy
+msgctxt "mediaStorageSection.ariaLabel"
+msgid "Media Storage"
+msgstr "ஊடக சேமிப்பு"
+
+#: appStorageSection.ariaLabel
+#, fuzzy
+msgctxt "appStorageSection.ariaLabel"
+msgid "Application Storage"
+msgstr "பயன்பாடு சேமிப்பு"
+
+#: batterySection.ariaLabel
+#, fuzzy
+msgctxt "batterySection.ariaLabel"
+msgid "Battery"
+msgstr "மின்கலம்"
+
+#~ msgid "Manage Cert."
+#~ msgstr "சான்றிதழ் நிர்வகி."
+
+#~ msgid "Call forwarding is disabled by FDN."
+#~ msgstr "அழைப்பு முன்செலுத்தல் FDN ஆல் முடக்கப்பட்டது."
+
+#~ msgctxt "operator-status-connecting"
+#~ msgid "Connecting…"
+#~ msgstr "இணைக்கிறது..."
+
+#~ msgctxt "operator-status-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "இணைப்பு தோல்வியுற்றது"
+
+#~ msgctxt "operator-status-connected"
+#~ msgid "Connected"
+#~ msgstr "இணைக்கப்பட்டது"
+
+#~ msgid "Change the name of your device as it appears in your computer"
+#~ msgstr "உங்களுடைய கணினியில் உள்ள மாதிரியே சாதனத்தில் பெயரை மாற்றவும்."
+
+#~ msgid "The SSID cannot be empty"
+#~ msgstr "SSID காலியாக இருக்க முடியாது"
+
+#~ msgid "WPA (TKIP)"
+#~ msgstr "டபிள்யூபிஏ (டிகெஐபி)"
+
+#~ msgid "WPA2 (AES)"
+#~ msgstr "WPA2 (AES)"
+
+#~ msgid "Resend"
+#~ msgstr "மீண்டும் அனுப்பு"
+
+#~ msgid "B"
+#~ msgstr "பை"
+
+#~ msgid "KB"
+#~ msgstr "கிபை"
+
+#~ msgid "MB"
+#~ msgstr "மெபை"
+
+#~ msgid "GB"
+#~ msgstr "ஜிபை"
+
+#~ msgid "TB"
+#~ msgstr "டிபை"
+
+#~ msgid "Developer tools"
+#~ msgstr "உருவாக்குநர் கருவிகள்"
+
+#~ msgid ""
+#~ "Sorry, the system can’t send your suggestion because you already sent us "
+#~ "feedback. Please try our next software update and send again."
+#~ msgstr ""
+#~ "மன்னிக்கவும், கணினியால் உங்களுடைய பரிந்துரையை அனுப்பு முடியவில்லை ஏனென்றால் நீங்க "
+#~ "ஏற்கனவே பின்னூட்டத்தை அனுப்பிவிட்டீர்கள். தயவுச்செய்து அடுத்துவரும் புதுப்பிப்பு "
+#~ "மென்பொருளில் முயற்சித்து மீண்டும் அனுப்பவும்."
+
 #~ msgid "No imported certificate"
 #~ msgstr "இறக்குமதி செய்த சான்றிதழ் இல்லை"
 
 #~ msgid "Voice calls to {{number}}"
 #~ msgstr "{{number}} க்கு சென்ற அழைப்புகள்"
-
-#~ msgid "Multimedia Messaging (MMS)"
-#~ msgstr "பல்லூடக செய்தி (MMS)"
 
 #~ msgid "Do you want to proceed?"
 #~ msgstr "தொடர விருப்பமா?"
@@ -4769,10 +5580,6 @@ msgstr ""
 
 #~ msgid "Simple tiling"
 #~ msgstr "எளிய டைலிங்"
-
-#~ msgctxt "is-warning-storage-header"
-#~ msgid "USB storage"
-#~ msgstr "USB சேமிப்பகம்"
 
 #~ msgctxt "is-warning-tethering-header"
 #~ msgid "USB tethering"
