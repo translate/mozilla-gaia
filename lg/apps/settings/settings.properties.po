@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-04-27 18:45+0000\n"
 "PO-Revision-Date: 2015-06-22 23:30+0000\n"
 "Last-Translator: lawrencekisuuki <lawrence@mozilla-uganda.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1435015851.000000\n"
@@ -62,17 +62,11 @@ msgctxt "reset"
 msgid "Reset"
 msgstr "Okuzza Obupya"
 
-#: factory-reset
-msgid "Factory Reset"
-msgstr ""
-
 #: cancel
 msgid "Cancel"
 msgstr "Sazaamu"
 
 #: close
-#, fuzzy
-msgctxt "close"
 msgid "Close"
 msgstr "Ggalawo"
 
@@ -93,8 +87,6 @@ msgid "Pair"
 msgstr "Gatta ebibiri"
 
 #: add
-#, fuzzy
-msgctxt "add"
 msgid "Add"
 msgstr "Yongerako"
 
@@ -153,24 +145,10 @@ msgid "Network & Connectivity"
 msgstr "Emikuttu N'enyunga"
 
 #: airplaneMode
-#, fuzzy
-msgctxt "airplaneMode"
-msgid "Airplane Mode"
-msgstr "Engeli yo Munyonyi"
-
-#: airplaneMode.ariaLabel
-#, fuzzy
-msgctxt "airplaneMode.ariaLabel"
 msgid "Airplane Mode"
 msgstr "Engeli yo Munyonyi"
 
 #: geolocation
-msgctxt "geolocation"
-msgid "Geolocation"
-msgstr ""
-
-#: geolocation.ariaLabel
-msgctxt "geolocation.ariaLabel"
 msgid "Geolocation"
 msgstr ""
 
@@ -271,7 +249,7 @@ msgstr ""
 
 #: wifi-sleep-description
 msgid ""
-"Enable to automatically turn off Wi-Fi during sleep to save battery power."
+"Enable to automatically turn off Wi-Fi during sleep to save battery power.  "
 msgstr ""
 
 #: manageNetworks
@@ -298,18 +276,11 @@ msgid "{{manageNetworks}}"
 msgstr "{{manageNetworks}}"
 
 #: manageCertificates
-#, fuzzy
-msgid "Manage Certificates"
+msgid "Manage certificates"
 msgstr "Labilira satifikeeti"
 
-#. # LOCALIZATION NOTE (manageCertificates-header): if you leave the original
-#. # en-US value "{{manageCertificates}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID
-#. # "manageCertificates".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: manageCertificates-header
-msgid "{{manageCertificates}}"
+#: manageCert
+msgid "Manage Cert."
 msgstr ""
 
 #: joinHiddenNetwork
@@ -464,8 +435,6 @@ msgid "No known networks"
 msgstr "Tewali mikutu gimanyidwa"
 
 #: edit
-#, fuzzy
-msgctxt "edit"
 msgid "Edit"
 msgstr "Kyusa"
 
@@ -478,18 +447,15 @@ msgid "No certificates imported"
 msgstr ""
 
 #: deleteCertificate
-#, fuzzy
-msgid "Delete Certificate"
+msgid "Delete certificate"
 msgstr "Sangula Satifikeeti"
 
 #: importCertificate
-#, fuzzy
-msgid "Import Certificate"
+msgid "Import certificate"
 msgstr "Leeta satifikeeti okuva ebweru"
 
 #: selectCertificateFile
-#, fuzzy
-msgid "Select Certificate File"
+msgid "Select certificate file"
 msgstr "Londa fayilo ya satifikeeti"
 
 #: enterCertificateNickname
@@ -602,8 +568,6 @@ msgstr "Elemedwa okusazaamu WPS [{{error}}]"
 
 #. # Connectivity :: Call
 #: callSettings
-#, fuzzy
-msgctxt "callSettings"
 msgid "Call Settings"
 msgstr "Entegeka Z'okuba Amassimu"
 
@@ -712,7 +676,7 @@ msgstr "Giweereze ng'eno tetuukibwaako"
 msgid "When unreachable"
 msgstr "Nga tetuukibwaako"
 
-#: callForwardingForwardingVoiceToNumber
+#: callForwardingForwardingVoiceToNumber.innerHTML
 msgid "Voice calls to <bdi>{{number}}</bdi>"
 msgstr ""
 
@@ -988,6 +952,10 @@ msgstr ""
 msgid "The PIN2 code is incorrect."
 msgstr "Koodi ya PIN2 sintuufu"
 
+#: fdn-enabled-warning
+msgid "Call forwarding is disabled by FDN."
+msgstr "Okuweereza Amassimu kujidwaako FDN"
+
 #: fdnContact-name
 msgid "name"
 msgstr "elinya"
@@ -1029,8 +997,6 @@ msgstr "FDN etuuse kunttiko. Tosobola kwongerako nnamba ndala."
 
 #. # Connectivity :: Messaging
 #: messagingSettings
-#, fuzzy
-msgctxt "messagingSettings"
 msgid "Messaging Settings"
 msgstr "Entegaka y'obubaka bwakabbasa"
 
@@ -1063,9 +1029,13 @@ msgstr "Alipoota kububaka obusomedwa"
 msgid "Request read report for each message sent"
 msgstr "Ssaba alipoota kubuli bubaka obusindikidwa era nebusomebwa"
 
-#: mmsTitle
-msgid "Multimedia Messaging (MMS)"
-msgstr "Obubaka Obulimu Ebizanyibwa (MMS)"
+#. # LOCALIZATION NOTE (mmsTitle): LRE (&#x202a;) and PDF (&#x202c;)
+#. # force the proper directionality of parentheses at the end of the string
+#. # regardless of the direction of the surrounding layout. Remove them only
+#. # if the translation puts them between other text.
+#: mmsTitle.innerHTML
+msgid "&#x202a;Multimedia Messaging (MMS)&#x202c;"
+msgstr ""
 
 #: auto-retrieve
 msgid "Auto Retrieve"
@@ -1131,8 +1101,6 @@ msgstr "Ebikikwatako tebiliwo"
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
-#, fuzzy
-msgctxt "cellularAndData"
 msgid "Cellular & Data"
 msgstr "Eby'omukuttugwo & Omutimbagano"
 
@@ -1237,11 +1205,6 @@ msgstr "WCDMA Okusooka"
 msgid "Auto (2G/3G)"
 msgstr "Okweronderako (2G/3G)"
 
-#: operator-networkType-auto-3G-4G
-#, fuzzy
-msgid "Auto (3G/4G)"
-msgstr "Okweronderako (2G/3G)"
-
 #: operator-networkType-auto-CDMA-EVDO
 msgid "Auto (CDMA/EVDO)"
 msgstr "Okweronderako (CDMA/EVDO)"
@@ -1252,11 +1215,6 @@ msgstr "Okwelonderako (WCDMA/GSM)"
 
 #: operator-networkType-auto-LTE-WCDMA-GSM
 msgid "Auto (LTE/WCDMA/GSM)"
-msgstr "Okwelonderako (LTE/WCDMA/GSM)"
-
-#: operator-networkType-auto-LTE-WCDMA
-#, fuzzy
-msgid "Auto (LTE/WCDMA)"
 msgstr "Okwelonderako (LTE/WCDMA/GSM)"
 
 #: operator-networkType-auto-LTE-CDMA-EVDO
@@ -1285,46 +1243,20 @@ msgid "Turn automatic selection off to view available network operators."
 msgstr ""
 "Jjako enkola y'okwelonderako yokka okulaba abaddukanya emikuttu abaliwo"
 
-#: operator-info-connecting
-#, fuzzy
-msgctxt "operator-info-connecting"
+#: operator-status-connecting
+msgctxt "operator-status-connecting"
 msgid "Connecting…"
 msgstr "Oyungibwa…"
 
-#: operator-info-failed
-#, fuzzy
-msgctxt "operator-info-failed"
+#: operator-status-connectingfailed
+msgctxt "operator-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Okuyungibwa kulemye"
 
-#: operator-info-connected
-#, fuzzy
-msgctxt "operator-info-connected"
+#: operator-status-connected
+msgctxt "operator-status-connected"
 msgid "Connected"
 msgstr "Oyungiddwa"
-
-#: operator-info-available
-msgctxt "operator-info-available"
-msgid "Available"
-msgstr ""
-
-#: operator-info-current
-#, fuzzy
-msgctxt "operator-info-current"
-msgid "Connected"
-msgstr "Oyungiddwa"
-
-#: operator-info-forbidden
-#, fuzzy
-msgctxt "operator-info-forbidden"
-msgid "Forbidden"
-msgstr "Tekikirizibwa"
-
-#: operator-info-unknown
-#, fuzzy
-msgctxt "operator-info-unknown"
-msgid "Unknown state"
-msgstr "Embeera etamanyidwa"
 
 #: operator-roamingPreference
 msgid "Roaming preference"
@@ -1424,20 +1356,6 @@ msgstr "Entegeza za IMS"
 #: imsSettings-header2
 msgid "{{imsSettings}}"
 msgstr "{{imsSettings}}"
-
-#: fotaSettings
-msgid "FOTA Settings"
-msgstr ""
-
-#. # LOCALIZATION NOTE (fotaSettings-header): if you leave the original
-#. # en-US value "{{fotaSettings}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "fotaSettings".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: fotaSettings-header
-#, fuzzy
-msgid "{{fotaSettings}}"
-msgstr "{{dataSettings}}"
 
 #: apn-editor-header
 msgid "APN Editor"
@@ -1559,13 +1477,10 @@ msgid "This resets the settings to default values. This cannot be undone."
 msgstr ""
 
 #: state-unknown
-#, fuzzy
-msgctxt "state-unknown"
 msgid "Unknown state"
 msgstr "Embeera etamanyidwa"
 
 #: state-available
-msgctxt "state-available"
 msgid "Available"
 msgstr ""
 
@@ -1580,8 +1495,6 @@ msgid "Connected"
 msgstr "Oyungiddwa"
 
 #: state-forbidden
-#, fuzzy
-msgctxt "state-forbidden"
 msgid "Forbidden"
 msgstr "Tekikirizibwa"
 
@@ -1609,8 +1522,6 @@ msgstr ""
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
-#, fuzzy
-msgctxt "bluetooth"
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -1767,13 +1678,9 @@ msgstr "Kyuusa elinnya ly'essimu"
 msgid "Unknown device"
 msgstr "Essimu temanyidwa"
 
-#: change-btdevice-name
-msgid "Change device name"
-msgstr ""
-
-#: change-btdevice-name-desc
-msgid "This name will appear on your other Bluetooth devices"
-msgstr ""
+#: change-phone-name-desc
+msgid "Change the name of your device as it appears in your computer"
+msgstr "Kyuusa elinya ly'essimuyo nga bwelirabika mukyuuma kikalimagezi"
 
 #: bluetooth-new-name
 msgid "New name"
@@ -1814,29 +1721,17 @@ msgid ""
 msgstr ""
 "Mukasera kano oyungidwa kussimu eno. Okugatulula kkuja kujaawula kuyiyo."
 
-#: unpair-confirm
-msgid ""
-"{{unpair-title}}\n"
-"{{unpair-msg}}"
-msgstr ""
-
 #. # Connectivity :: NFC
 #: nfc
-#, fuzzy
-msgctxt "nfc"
-msgid "NFC"
-msgstr "NFC"
-
-#: nfc.ariaLabel
-#, fuzzy
-msgctxt "nfc.ariaLabel"
 msgid "NFC"
 msgstr "NFC"
 
 #. # Connectivity :: Internet Sharing
+#: SSIDCannotBeEmpty
+msgid "The SSID cannot be empty"
+msgstr "SSID teyinza kubera nkalu"
+
 #: internetSharing
-#, fuzzy
-msgctxt "internetSharing"
 msgid "Internet Sharing"
 msgstr "Okugabana ku Yiintaneeti"
 
@@ -1917,7 +1812,7 @@ msgstr "{{hotspotSettings}}"
 msgid "SSID Network Name"
 msgstr "Elinnya ly'omukuttu gwa SSID"
 
-#: hotspot-security-open
+#: hotspot-open
 msgid "open"
 msgstr "waggule"
 
@@ -1928,8 +1823,8 @@ msgstr "waggule"
 #. # and PDF (&#x202c;) entities to these translations to force the correct direction.
 #. #
 #. # RTL locales should have a translation similar to this:
-#. # hotspot-wpa-psk= &#x202a;WPA (TKIP)&#x202c;
-#. # hotspot-wpa2-psk= &#x202a;WPA2 (AES)&#x202c;
+#. # hotspot-wpa-psk.innerHTML= &#x202a;WPA (TKIP)&#x202c;
+#. # hotspot-wpa2-psk.innerHTML= &#x202a;WPA2 (AES)&#x202c;
 #. #
 #. # [More details]
 #. #
@@ -1940,13 +1835,17 @@ msgstr "waggule"
 #. # automatically in a wrong way by browser. Because from engineering side,
 #. # we can only change settings.ar.properties, for localizers, please remember to
 #. # put them in the other RTL languages.
-#: hotspot-security-wpa-psk
-msgid "WPA"
-msgstr ""
+#. #
+#. # Additionally, in order to make this hack work, we got some help from l10n.js
+#. # that we need to put these strings inside "KEY".innerHTML, so that's the
+#. # reason why these two strings below would be suffixed with ".innerHTML"
+#: hotspot-wpa-psk.innerHTML
+msgid "WPA (TKIP)"
+msgstr "WPA (TKIP)"
 
-#: hotspot-security-wpa2-psk
-msgid "WPA2"
-msgstr ""
+#: hotspot-wpa2-psk.innerHTML
+msgid "WPA2 (AES)"
+msgstr "WPA2 (AES)"
 
 #: hotspot-password-desc
 msgid "The password must have at least 8 characters."
@@ -1961,14 +1860,6 @@ msgstr "Ebyobwanannyini"
 
 #. # Personalization :: Sound
 #: sound
-#, fuzzy
-msgctxt "sound"
-msgid "Sound"
-msgstr "Eby'eddoboozi"
-
-#: sound.ariaLabel
-#, fuzzy
-msgctxt "sound.ariaLabel"
 msgid "Sound"
 msgstr "Eby'eddoboozi"
 
@@ -2055,14 +1946,6 @@ msgstr ""
 
 #. # Personalization :: Display
 #: display
-#, fuzzy
-msgctxt "display"
-msgid "Display"
-msgstr "Ebyokulaga"
-
-#: display.ariaLabel
-#, fuzzy
-msgctxt "display.ariaLabel"
 msgid "Display"
 msgstr "Ebyokulaga"
 
@@ -2121,12 +2004,6 @@ msgstr ""
 
 #. # Personalization :: Navigation
 #: navigation
-msgctxt "navigation"
-msgid "Navigation"
-msgstr ""
-
-#: navigation.ariaLabel
-msgctxt "navigation.ariaLabel"
 msgid "Navigation"
 msgstr ""
 
@@ -2149,12 +2026,6 @@ msgstr ""
 
 #. # Personalization :: Notifications
 #: notifications
-msgctxt "notifications"
-msgid "Notifications"
-msgstr ""
-
-#: notifications.ariaLabel
-msgctxt "notifications.ariaLabel"
 msgid "Notifications"
 msgstr ""
 
@@ -2177,8 +2048,6 @@ msgstr ""
 
 #. # Personalization :: Date & Time
 #: dateAndTime
-#, fuzzy
-msgctxt "dateAndTime"
 msgid "Date & Time"
 msgstr "Enaku z'omwezi & Esaawa"
 
@@ -2242,8 +2111,6 @@ msgid "Language & Region"
 msgstr "Olulimi & Ekitundu"
 
 #: language
-#, fuzzy
-msgctxt "language"
 msgid "Language"
 msgstr "Olulimi"
 
@@ -2281,8 +2148,6 @@ msgstr "%B %d, %Y"
 
 #. # Personalization :: Sim cards manager
 #: simManager
-#, fuzzy
-msgctxt "simManager"
 msgid "SIM Manager"
 msgstr "Awategekebwa ebya SIM"
 
@@ -2357,12 +2222,6 @@ msgctxt "homescreen"
 msgid "Homescreen"
 msgstr "Olutimbe Olusookerwako"
 
-#: homescreen.ariaLabel
-#, fuzzy
-msgctxt "homescreen.ariaLabel"
-msgid "Homescreen"
-msgstr "Olutimbe Olusookerwako"
-
 #: vertical-homescreen-header
 msgctxt "vertical-homescreen-header"
 msgid "Homescreen"
@@ -2393,12 +2252,6 @@ msgctxt "search"
 msgid "Search"
 msgstr "Noonya"
 
-#: search.ariaLabel
-#, fuzzy
-msgctxt "search.ariaLabel"
-msgid "Search"
-msgstr "Noonya"
-
 #: search-header
 msgctxt "search-header"
 msgid "Search"
@@ -2422,13 +2275,6 @@ msgstr ""
 #. # Personalization :: Homescreens
 #: homescreens
 #, fuzzy
-msgctxt "homescreens"
-msgid "Homescreens"
-msgstr "Olutimbe Olusookerwako"
-
-#: homescreens.ariaLabel
-#, fuzzy
-msgctxt "homescreens.ariaLabel"
 msgid "Homescreens"
 msgstr "Olutimbe Olusookerwako"
 
@@ -2451,8 +2297,6 @@ msgid "Change"
 msgstr "Kyuusa"
 
 #: description
-#, fuzzy
-msgctxt "description"
 msgid "Description"
 msgstr "Ennyinyonyola"
 
@@ -2466,8 +2310,6 @@ msgid "Selected Keyboards"
 msgstr "Seeti z'amapeesa ezilondedwa"
 
 #: keyboards
-#, fuzzy
-msgctxt "keyboards"
 msgid "Keyboards"
 msgstr "Seeti z'amapeesa"
 
@@ -2532,12 +2374,6 @@ msgstr ""
 
 #. # Personalization :: Themes
 #: themes
-msgctxt "themes"
-msgid "Themes"
-msgstr ""
-
-#: themes.ariaLabel
-msgctxt "themes.ariaLabel"
 msgid "Themes"
 msgstr ""
 
@@ -2603,10 +2439,16 @@ msgstr "Sazaamu Okukakasa Kw'akawuunta"
 msgid "A verification link has been sent to {{email}}."
 msgstr "Akayunga k'okukakasibwa kasindikidwa ku {{email}}."
 
-#: fxa-dont-see-email-resend
-#, fuzzy
-msgid "Don’t see an email? <a>Resend</a>."
+#. # LOCALIZATION NOTE (fxa-dont-see-email): the "{{resend}}" placeholder
+#. # will be replaced with a link containing the string with ID "fxa-resend":
+#. # "Don't see an email? <a>Resend</a>."
+#: fxa-dont-see-email
+msgid "Don’t see an email? {{resend}}."
 msgstr "Tolaba yimeyilo? {{resend}}."
+
+#: fxa-resend
+msgid "Resend"
+msgstr "Ddamu okusindika"
 
 #. # Panel: logged in, verified
 #: fxa-about
@@ -2631,8 +2473,6 @@ msgid "Find My Device"
 msgstr ""
 
 #: fxa-options
-#, fuzzy
-msgctxt "fxa-options"
 msgid "Options"
 msgstr "Ebyokulondako"
 
@@ -2708,7 +2548,6 @@ msgid "Passcode: {{code}}"
 msgstr "Koodi y'ekyaama: {{code}}"
 
 #: screenLock
-msgctxt "screenLock"
 msgid "Screen Lock"
 msgstr ""
 
@@ -2721,17 +2560,7 @@ msgstr ""
 msgid "{{screenLock}}"
 msgstr "{{screenLock}}"
 
-#: screenLock-enabled-with-no-passcode
-msgid "Enabled with no passcode"
-msgstr ""
-
-#: screenLock-enabled-with-passcode
-msgid "Enabled with passcode"
-msgstr ""
-
 #: simSecurity
-#, fuzzy
-msgctxt "simSecurity"
 msgid "SIM Security"
 msgstr "Eby'okwerinda bya SIM"
 
@@ -2746,14 +2575,6 @@ msgstr "{{simSecurity}}"
 
 #. # Security :: App permissions
 #: appPermissions
-#, fuzzy
-msgctxt "appPermissions"
-msgid "App Permissions"
-msgstr "Olukkusa lwa App"
-
-#: appPermissions.ariaLabel
-#, fuzzy
-msgctxt "appPermissions.ariaLabel"
 msgid "App Permissions"
 msgstr "Olukkusa lwa App"
 
@@ -3194,7 +3015,6 @@ msgstr ""
 
 #. # Security :: Do Not Track
 #: doNotTrack
-msgctxt "doNotTrack"
 msgid "Do Not Track"
 msgstr ""
 
@@ -3239,12 +3059,6 @@ msgstr ""
 
 #. # Security :: Browsing Privacy
 #: browsingPrivacy
-msgctxt "browsingPrivacy"
-msgid "Browsing Privacy"
-msgstr ""
-
-#: browsingPrivacy.ariaLabel
-msgctxt "browsingPrivacy.ariaLabel"
 msgid "Browsing Privacy"
 msgstr ""
 
@@ -3284,12 +3098,11 @@ msgstr "Siimula"
 
 #. # Security :: Privacy Panel
 #: privacy-controls
-msgctxt "privacy-controls"
 msgid "Privacy Controls"
 msgstr ""
 
-#: no-privacy-controls
-msgid "No privacy controls app found"
+#: no-privacy-panel
+msgid "No privacy panel app found"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3309,7 +3122,6 @@ msgid "Unplug USB cable to disable"
 msgstr ""
 
 #: appStorage
-msgctxt "appStorage"
 msgid "Application Storage"
 msgstr ""
 
@@ -3321,6 +3133,26 @@ msgstr ""
 #: appStorage-header
 msgid "{{appStorage}}"
 msgstr "{{appStorage}}"
+
+#: byteUnit-B
+msgid "B"
+msgstr "B"
+
+#: byteUnit-KB
+msgid "KB"
+msgstr "KB"
+
+#: byteUnit-MB
+msgid "MB"
+msgstr "MB"
+
+#: byteUnit-GB
+msgid "GB"
+msgstr "GB"
+
+#: byteUnit-TB
+msgid "TB"
+msgstr "TB"
 
 #: storageSize
 msgid "{{size}} {{unit}}"
@@ -3390,17 +3222,15 @@ msgid "Transfer Protocol"
 msgstr ""
 
 #: protocol-mtp
-msgid "Media Transfer Protocol (MTP)"
+msgid "Media transfer protocol (MTP)"
 msgstr ""
 
 #: protocol-ums
-msgid "USB Mass Storage (UMS)"
+msgid "USB mass Storage (UMS)"
 msgstr ""
 
 #. # Storage :: Media storage
 #: mediaStorage
-#, fuzzy
-msgctxt "mediaStorage"
 msgid "Media Storage"
 msgstr "Ettelekero Ly'ebizanyibwa"
 
@@ -3561,23 +3391,6 @@ msgstr "Sangula bulikimu"
 msgid "SD card unmounted"
 msgstr ""
 
-#: ums-partial-support-warning-title
-msgid "Warning: USB Mass Storage may not work"
-msgstr ""
-
-#: ums-partial-support-warning-msg-1
-msgid ""
-"USB Mass Storage will only work correctly with an external SD card. If you'd "
-"like to be able to access both your internal and external storage, you must "
-"use MTP."
-msgstr ""
-
-#: ums-partial-support-warning-msg-2
-msgid ""
-"Press \"OK\" to switch to USB Mass Storage, or \"Cancel\" to remain in MTP "
-"mode."
-msgstr ""
-
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Device
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3590,22 +3403,8 @@ msgctxt "help"
 msgid "Help"
 msgstr "Obuyambi"
 
-#: help.ariaLabel
-#, fuzzy
-msgctxt "help.ariaLabel"
-msgid "Help"
-msgstr "Obuyambi"
-
 #. # Device :: Information
 #: deviceInfo
-#, fuzzy
-msgctxt "deviceInfo"
-msgid "Device Information"
-msgstr "Ebikwaata ku ssimu"
-
-#: deviceInfo.ariaLabel
-#, fuzzy
-msgctxt "deviceInfo.ariaLabel"
 msgid "Device Information"
 msgstr "Ebikwaata ku ssimu"
 
@@ -3622,7 +3421,7 @@ msgstr "{{deviceInfo}}"
 msgid "IMEI"
 msgstr "IMEI"
 
-#: deviceInfo-IMEI-with-index
+#: deviceInfo-IMEI-with-index.innerHTML
 msgid "IMEI {{index}}: <bdi>{{imei}}</bdi>"
 msgstr "IMEI {{index}}: <bdi>{{imei}}</bdi>"
 
@@ -3630,7 +3429,7 @@ msgstr "IMEI {{index}}: <bdi>{{imei}}</bdi>"
 msgid "ICCID"
 msgstr "ICCID"
 
-#: deviceInfo-ICCID-with-index
+#: deviceInfo-ICCID-with-index.innerHTML
 msgid "SIM {{index}}: <bdi>{{iccid}}</bdi>"
 msgstr "SIM {{index}}: <bdi>{{iccid}}</bdi>"
 
@@ -3638,7 +3437,7 @@ msgstr "SIM {{index}}: <bdi>{{iccid}}</bdi>"
 msgid "Phone Number"
 msgstr "Ennamba Y'essimu"
 
-#: deviceInfo-MSISDN-with-index
+#: deviceInfo-MSISDN-with-index.innerHTML
 msgid "SIM {{index}}: <bdi>{{msisdn}}</bdi>"
 msgstr "SIM {{index}}: <bdi>{{msisdn}}</bdi>"
 
@@ -3647,14 +3446,6 @@ msgid "SIM {{index}}: Not available"
 msgstr "SIM {{index}}: Teliiwo"
 
 #: downloads
-#, fuzzy
-msgctxt "downloads"
-msgid "Downloads"
-msgstr "Ebiwannulidwa"
-
-#: downloads.ariaLabel
-#, fuzzy
-msgctxt "downloads.ariaLabel"
 msgid "Downloads"
 msgstr "Ebiwannulidwa"
 
@@ -3679,6 +3470,263 @@ msgstr "SIM {{index}}: Temanyiddwa"
 msgid "Git Commit Info"
 msgstr ""
 
+#: developer
+msgid "Developer"
+msgstr "Akulakulanya"
+
+#. # LOCALIZATION NOTE (developer-header): if you leave the original
+#. # en-US value "{{developer}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "developer".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: developer-header
+msgid "{{developer}}"
+msgstr "{{developer}}"
+
+#: hud-settings-button
+msgid "Developer HUD"
+msgstr ""
+
+#. # LOCALIZATION NOTE (hud-settings-header): if you leave the original en-US value
+#. # "{{hud-settings-button}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-settings-button". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-settings-header
+msgid "{{hud-settings-button}}"
+msgstr "{{hud-settings-button}}"
+
+#: hud-devtools
+msgid "Developer tools"
+msgstr ""
+
+#. # LOCALIZATION NOTE (hud-devtools-header): if you leave the original en-US
+#. # value "{{hud-devtools}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-devtools". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-devtools-header
+msgid "{{hud-devtools}}"
+msgstr "{{hud-devtools}}"
+
+#: hud-logging
+msgid "Log changes in ADB"
+msgstr ""
+
+#: hud-system
+msgid "Show system HUD"
+msgstr ""
+
+#: hud-problems
+msgid "Problems"
+msgstr "Ebizibu"
+
+#: hud-warnings
+msgid "Warnings"
+msgstr "Okulabula"
+
+#: hud-errors
+msgid "Errors"
+msgstr "Obuzibu"
+
+#: hud-security
+msgid "Security issues"
+msgstr "Eby'okwerinda"
+
+#: hud-performance
+msgid "Performance"
+msgstr ""
+
+#: hud-reflows
+msgid "Reflows"
+msgstr ""
+
+#: hud-jank
+msgid "Jank"
+msgstr ""
+
+#: jank-threshold
+msgid "Jank Threshold"
+msgstr ""
+
+#: hud-fps
+msgid "Frames per second"
+msgstr ""
+
+#: hud-ttl
+msgid "Time to load"
+msgstr ""
+
+#: hud-memory
+msgid "Memory"
+msgstr ""
+
+#: hud-uss
+msgid "Unique Set Size"
+msgstr ""
+
+#: hud-appmemory
+msgid "App memory"
+msgstr ""
+
+#: hud-jsobjects
+msgid "JS objects"
+msgstr ""
+
+#: hud-jsstrings
+msgid "JS strings"
+msgstr ""
+
+#: hud-jsother
+msgid "JS other"
+msgstr ""
+
+#: hud-dom
+msgid "DOM"
+msgstr "DOM"
+
+#: hud-style
+msgid "Style"
+msgstr ""
+
+#: hud-other
+msgctxt "hud-other"
+msgid "Other"
+msgstr ""
+
+#: software
+msgid "Software"
+msgstr ""
+
+#: devSettings
+msgid "Developer Settings"
+msgstr ""
+
+#: debug
+msgid "Debug"
+msgstr ""
+
+#: developer-menu
+msgid "Developer Menu"
+msgstr ""
+
+#: developer-tools
+msgid "Developer Tools"
+msgstr ""
+
+#: graphics
+msgid "Graphics"
+msgstr ""
+
+#: hardware-composer
+msgid "Hardware composer"
+msgstr ""
+
+#: paint-flashing
+msgid "Flash repainted area"
+msgstr ""
+
+#: dumps-layers
+msgid "Dump layers tree"
+msgstr ""
+
+#: dumps-layerscope
+msgid "Dump layerscope"
+msgstr ""
+
+#: apz-overscroll
+msgid "Overscrolling"
+msgstr ""
+
+#: tiling
+msgid "Tiling"
+msgstr ""
+
+#: low-precision
+msgid "Low-precision painting"
+msgstr ""
+
+#: low-opacity
+msgid "Low-precision transparency"
+msgstr ""
+
+#: draw-tile-borders
+msgid "Draw tile borders"
+msgstr ""
+
+#: draw-layer-borders
+msgid "Draw layer borders"
+msgstr ""
+
+#: log-animations
+msgid "Log slow animations"
+msgstr ""
+
+#: remote-debugging-usb
+msgid "Debugging via USB"
+msgstr ""
+
+#: dev-tools-wifi
+msgid "DevTools via Wi-Fi"
+msgstr ""
+
+#: dev-tools-qps
+msgid "Pseudo-localization"
+msgstr ""
+
+#: debugger-disabled
+msgctxt "debugger-disabled"
+msgid "Disabled"
+msgstr "Kijidwaako"
+
+#: debugger-adb-only
+msgid "ADB only"
+msgstr ""
+
+#: debugger-adb-and-devtools
+msgid "ADB and DevTools"
+msgstr ""
+
+#: wifi-debugging
+msgid "Wi-Fi output in ADB"
+msgstr ""
+
+#: bluetooth-debugging
+msgid "Bluetooth output in ADB"
+msgstr ""
+
+#: nfc-debugging
+msgid "NFC output in ADB"
+msgstr ""
+
+#: ril-debugging
+msgid "RIL output in ADB"
+msgstr ""
+
+#: console-enabled
+msgid "Console enabled"
+msgstr ""
+
+#: cards-view-screenshots
+msgid "Cards View: Screenshots"
+msgstr ""
+
+#: geolocation-debugging-enabled
+msgid "Geolocation output in ADB"
+msgstr ""
+
+#: geolocation-debugging-gps-locations-ignored
+msgid "Ignore GPS locations"
+msgstr ""
+
+#: use-reviewer-certs
+msgid "Use Marketplace reviewer certs"
+msgstr ""
+
+#: shake-to-log
+msgid "Shake to save system log"
+msgstr ""
+
 #: model-name
 msgid "Model"
 msgstr ""
@@ -3689,14 +3737,6 @@ msgstr ""
 
 #: firmware_revision
 msgid "Firmware Revision"
-msgstr ""
-
-#: hardware_manufacturer
-msgid "Hardware Manufacturer"
-msgstr ""
-
-#: hardware_platform
-msgid "Hardware Platform"
 msgstr ""
 
 #: hardware_revision
@@ -3815,6 +3855,21 @@ msgstr "Okuzza Obupya"
 
 #: reset-warning-title
 msgctxt "reset-warning-title"
+msgid "CAUTION"
+msgstr "OKULABULA"
+
+#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
+#. # full DevTools access.
+#: unlock-privileges
+msgid "Unlock Privileges"
+msgstr ""
+
+#: reset-devtools
+msgid "Reset and enable full DevTools"
+msgstr ""
+
+#: reset-devtools-warning-title
+msgctxt "reset-devtools-warning-title"
 msgid "CAUTION"
 msgstr "OKULABULA"
 
@@ -3959,308 +4014,6 @@ msgstr "Layisinsi ya Mozilla Public 2.0"
 msgid "Apache License 2.0"
 msgstr "Layisinsi ya Apache 2.0"
 
-#. # Device :: Developer
-#: developer
-#, fuzzy
-msgctxt "developer"
-msgid "Developer"
-msgstr "Akulakulanya"
-
-#: developer.ariaLabel
-#, fuzzy
-msgctxt "developer.ariaLabel"
-msgid "Developer"
-msgstr "Akulakulanya"
-
-#. # LOCALIZATION NOTE (developer-header): if you leave the original
-#. # en-US value "{{developer}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "developer".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: developer-header
-msgid "{{developer}}"
-msgstr "{{developer}}"
-
-#: hud-settings-button
-msgid "Developer HUD"
-msgstr ""
-
-#. # LOCALIZATION NOTE (hud-settings-header): if you leave the original en-US value
-#. # "{{hud-settings-button}}" in the following string, the localization will be
-#. # automatically picked from the existing string with ID "hud-settings-button". If you
-#. # need to adapt your localizations to the available space in headers or
-#. # buttons, you can use different strings here.
-#: hud-settings-header
-msgid "{{hud-settings-button}}"
-msgstr "{{hud-settings-button}}"
-
-#: hud-devtools
-msgctxt "hud-devtools"
-msgid "Developer Tools"
-msgstr ""
-
-#. # LOCALIZATION NOTE (hud-devtools-header): if you leave the original en-US
-#. # value "{{hud-devtools}}" in the following string, the localization will be
-#. # automatically picked from the existing string with ID "hud-devtools". If you
-#. # need to adapt your localizations to the available space in headers or
-#. # buttons, you can use different strings here.
-#: hud-devtools-header
-msgid "{{hud-devtools}}"
-msgstr "{{hud-devtools}}"
-
-#: hud-hide
-msgid "Hide All HUD Elements"
-msgstr ""
-
-#: hud-logging
-msgid "Log Changes in ADB"
-msgstr ""
-
-#: hud-system
-msgid "Show System HUD"
-msgstr ""
-
-#: hud-problems
-msgid "Problems"
-msgstr "Ebizibu"
-
-#: hud-warnings
-msgid "Warnings"
-msgstr "Okulabula"
-
-#: hud-errors
-msgid "Errors"
-msgstr "Obuzibu"
-
-#: hud-security
-#, fuzzy
-msgid "Security Issues"
-msgstr "Eby'okwerinda"
-
-#: hud-performance
-msgid "Performance"
-msgstr ""
-
-#: hud-reflows
-msgid "Reflows"
-msgstr ""
-
-#: hud-jank
-msgid "Jank"
-msgstr ""
-
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr ""
-
-#: hud-fps
-msgid "Frames per Second"
-msgstr ""
-
-#: hud-ttl
-msgid "Time to Load"
-msgstr ""
-
-#: hud-memory
-msgid "Memory"
-msgstr ""
-
-#: hud-uss
-msgid "Unique Set Size"
-msgstr ""
-
-#: hud-appmemory
-msgid "App Memory"
-msgstr ""
-
-#: hud-jsobjects
-msgid "JS Objects"
-msgstr ""
-
-#: hud-jsstrings
-msgid "JS Strings"
-msgstr ""
-
-#: hud-jsother
-msgid "JS Other"
-msgstr ""
-
-#: hud-dom
-msgid "DOM"
-msgstr "DOM"
-
-#: hud-style
-msgid "Style"
-msgstr ""
-
-#: hud-other
-#, fuzzy
-msgctxt "hud-other"
-msgid "Other"
-msgstr "Ebilara"
-
-#: hud-telemetry
-msgid "Telemetry"
-msgstr ""
-
-#: software
-msgid "Software"
-msgstr ""
-
-#: devSettings
-msgid "Developer Settings"
-msgstr ""
-
-#: debug
-msgid "Debug"
-msgstr ""
-
-#: developer-menu
-msgid "Developer Menu"
-msgstr ""
-
-#: developer-tools
-msgctxt "developer-tools"
-msgid "Developer Tools"
-msgstr ""
-
-#: graphics
-msgid "Graphics"
-msgstr ""
-
-#: hardware-composer
-msgid "Hardware Composer"
-msgstr ""
-
-#: paint-flashing
-msgid "Flash Repainted Area"
-msgstr ""
-
-#: dumps-layers
-msgid "Dump Layers Tree"
-msgstr ""
-
-#: dumps-display-list
-msgid "Dump Display List"
-msgstr ""
-
-#: dumps-layerscope
-msgid "Dump LayerScope"
-msgstr ""
-
-#: apz-overscroll
-msgid "Overscrolling"
-msgstr ""
-
-#: tiling
-msgid "Tiling"
-msgstr ""
-
-#: low-precision
-msgid "Low Precision Painting"
-msgstr ""
-
-#: low-opacity
-msgid "Low Precision Transparency"
-msgstr ""
-
-#: draw-tile-borders
-msgid "Draw Tile Borders"
-msgstr ""
-
-#: draw-layer-borders
-msgid "Draw Layer Borders"
-msgstr ""
-
-#: log-animations
-msgid "Log Slow Animations"
-msgstr ""
-
-#: remote-debugging-usb
-msgid "Debugging via USB"
-msgstr ""
-
-#: devtools-wifi
-msgid "DevTools via Wi-Fi"
-msgstr ""
-
-#: devtools-device-name
-msgid "DevTools Wi-Fi Device Name"
-msgstr ""
-
-#: devtools-qps
-msgid "Pseudo-Localization"
-msgstr ""
-
-#: debugger-disabled
-msgctxt "debugger-disabled"
-msgid "Disabled"
-msgstr "Kijidwaako"
-
-#: debugger-adb-only
-msgid "ADB only"
-msgstr ""
-
-#: debugger-adb-and-devtools
-msgid "ADB and DevTools"
-msgstr ""
-
-#: wifi-debugging
-msgid "Wi-Fi Output in ADB"
-msgstr ""
-
-#: bluetooth-debugging
-msgid "Bluetooth Output in ADB"
-msgstr ""
-
-#: bluetooth-snoop-debugging
-msgid "Bluetooth HCI Sniffing Logs to SD Card"
-msgstr ""
-
-#: nfc-debugging
-msgid "NFC Output in ADB"
-msgstr ""
-
-#: ril-debugging
-msgid "RIL Output in ADB"
-msgstr ""
-
-#: network-debugging
-msgid "Network Output in ADB"
-msgstr ""
-
-#: mms-debugging
-msgid "MMS Output in ADB"
-msgstr ""
-
-#: console-enabled
-msgid "Console Enabled"
-msgstr ""
-
-#: cards-view-screenshots
-msgid "Cards View: Screenshots"
-msgstr ""
-
-#: geolocation-debugging-enabled
-msgid "Geolocation Output in ADB"
-msgstr ""
-
-#: geolocation-debugging-gps-locations-ignored
-msgid "Ignore GPS Locations"
-msgstr ""
-
-#: use-reviewer-certs
-msgid "Use Marketplace Reviewer Certs"
-msgstr ""
-
-#: shake-to-log
-msgid "Shake to Save System Log"
-msgstr ""
-
-#: enable-logshake-qa
-msgid "Enable LogShake QA Mode"
-msgstr ""
-
 #: launch-ftu
 msgid "Launch First Time Use"
 msgstr ""
@@ -4270,170 +4023,43 @@ msgid "No first time use app found"
 msgstr ""
 
 #: software-home-button
-msgid "Software Home Button"
+msgid "Software home button"
 msgstr ""
 
 #: home-gesture
-msgid "Home Gesture"
+msgid "Home gesture"
 msgstr ""
 
 #: continuous-transition
-msgid "Continuous Transition"
+msgid "Continuous transition"
 msgstr ""
 
 #: debug-gaia-enabled
-msgid "Gaia Debug Traces"
+msgid "Gaia debug traces"
 msgstr ""
 
 #: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
+msgid "Show screen reader settings"
 msgstr ""
 
 #: app-transition
-msgid "App Transition"
+msgid "App transition"
 msgstr ""
 
 #: app-suspending
-msgid "App Suspending"
+msgid "App suspending"
 msgstr ""
 
 #: copypaste
-#, fuzzy
-msgid "Copy/Paste"
+msgid "Copy/paste"
 msgstr "kkopa/siiga"
 
-#: multi-screen
-msgid "Multi-Screen"
-msgstr ""
-
 #: verbose-app-permissions
-msgid "Verbose App Permissions"
-msgstr ""
-
-#: pinning-the-web
-msgid "Enable Pinning the Web"
-msgstr ""
-
-#: view-source
-msgid "Enable View Source Gesture"
+msgid "Verbose app permissions"
 msgstr ""
 
 #: window-management
-msgid "Window Management"
-msgstr ""
-
-#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
-#. # full DevTools access.
-#: unlock-privileges
-msgid "Unlock Privileges"
-msgstr ""
-
-#: full-devtools
-msgid "Full DevTools"
-msgstr ""
-
-#: reset-devtools-warning-title
-msgctxt "reset-devtools-warning-title"
-msgid "CAUTION"
-msgstr "OKULABULA"
-
-#. # Device :: Developer :: Service Workers
-#: service-worker
-msgid "Service Workers"
-msgstr ""
-
-#: service-worker-scope
-msgid "Scope"
-msgstr ""
-
-#: service-worker-script-spec
-msgid "Script spec"
-msgstr ""
-
-#: service-worker-current-worker-url
-msgid "Current worker URL"
-msgstr ""
-
-#: service-worker-active-cache-name
-msgid "Active cache name"
-msgstr ""
-
-#: service-worker-waiting-cache-name
-msgid "Waiting cache name"
-msgstr ""
-
-#: service-worker-update
-msgid "Update"
-msgstr ""
-
-#: service-worker-unregister
-msgid "Unregister"
-msgstr ""
-
-#: service-worker-no-registrations
-msgid "No service workers found"
-msgstr ""
-
-#. # Device :: Full Developer Mode
-#: developer-menu-disabled-warning-title
-msgid "Developer menu not enabled"
-msgstr ""
-
-#: developer-menu-disabled-warning-msg-1
-msgid ""
-"Developer Mode can't be enabled without the developer menu first being "
-"enabled."
-msgstr ""
-
-#: developer-menu-disabled-warning-msg-2
-msgid ""
-"Please enable it from Settings > Device Information > More Information > "
-"Developer Menu."
-msgstr ""
-
-#: enable-full-dev-mode-first-warning-title
-msgid "Would you like to enable developer mode?"
-msgstr ""
-
-#: enable-full-dev-mode-first-warning-msg-1
-msgid "THIS WILL DELETE ALL YOUR DATA AND FACTORY RESET YOUR DEVICE."
-msgstr ""
-
-#: enable-full-dev-mode-first-warning-msg-2
-msgid "THIS WILL DISABLE ALL SECURITY MEASURES ON YOUR DEVICE."
-msgstr ""
-
-#: enable-full-dev-mode-final-warning-title
-msgid "Are you sure you want to enable developer mode?"
-msgstr ""
-
-#: enable-full-dev-mode-final-warning-msg
-#, fuzzy
-msgid "{[ plural(count) ]}"
-msgstr "{[ plural(n) ]}"
-
-#: enable-full-dev-mode-final-warning-msg[one]
-msgid "Tap 'Enable' {{count}} more time to continue."
-msgstr ""
-
-#: enable-full-dev-mode-final-warning-msg[two]
-msgctxt "enable-full-dev-mode-final-warning-msg[two]"
-msgid "Tap 'Enable' {{count}} more times to continue."
-msgstr ""
-
-#: enable-full-dev-mode-final-warning-msg[few]
-msgctxt "enable-full-dev-mode-final-warning-msg[few]"
-msgid "Tap 'Enable' {{count}} more times to continue."
-msgstr ""
-
-#: enable-full-dev-mode-final-warning-msg[many]
-msgctxt "enable-full-dev-mode-final-warning-msg[many]"
-msgid "Tap 'Enable' {{count}} more times to continue."
-msgstr ""
-
-#: enable-full-dev-mode-final-warning-msg[other]
-msgctxt "enable-full-dev-mode-final-warning-msg[other]"
-msgid "Tap 'Enable' {{count}} more times to continue."
+msgid "Window management"
 msgstr ""
 
 #. # Device :: Downloads
@@ -4457,8 +4083,6 @@ msgstr "Sangula"
 
 #. # Device :: Battery
 #: battery
-#, fuzzy
-msgctxt "battery"
 msgid "Battery"
 msgstr "Elyanda"
 
@@ -4507,12 +4131,6 @@ msgstr ""
 
 #. # Device :: Accessibility
 #: accessibility
-msgctxt "accessibility"
-msgid "Accessibility"
-msgstr ""
-
-#: accessibility.ariaLabel
-msgctxt "accessibility.ariaLabel"
 msgid "Accessibility"
 msgstr ""
 
@@ -4614,22 +4232,14 @@ msgstr ""
 
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
-#, fuzzy
 msgctxt "improveBrowserOS"
 msgid "Improve {{brandShortName}}"
-msgstr "Ebikwata ku {{brandShortName}}"
-
-#: improveBrowserOS.ariaLabel
-#, fuzzy
-msgctxt "improveBrowserOS.ariaLabel"
-msgid "Improve {{brandShortName}}"
-msgstr "Ebikwata ku {{brandShortName}}"
+msgstr ""
 
 #: improveBrowserOSTitle
-#, fuzzy
 msgctxt "improveBrowserOSTitle"
 msgid "Improve {{brandShortName}}"
-msgstr "Ebikwata ku {{brandShortName}}"
+msgstr ""
 
 #: sendMozillaFeedback
 msgid "Send Mozilla Feedback"
@@ -4795,14 +4405,16 @@ msgid ""
 "empty. Please enter some text and try again."
 msgstr ""
 
+#: feedback-errormessage-just-sent
+msgid ""
+"Sorry, the system can’t send your suggestion because you already sent us "
+"feedback. Please try our next software update and send again."
+msgstr ""
+
 #: feedback-complete-msg
 msgid ""
 "Thanks for the feedback! We use it to help create better experiences in "
 "future releases of Firefox OS."
-msgstr ""
-
-#: feedback-errormessage-unknown-error
-msgid "Something went wrong. Please try again."
 msgstr ""
 
 #. # Device :: Help
@@ -4828,10 +4440,9 @@ msgid "Operator Services"
 msgstr ""
 
 #: operatorServices-help
-#, fuzzy
 msgctxt "operatorServices-help"
 msgid "Help"
-msgstr "Obuyambi"
+msgstr ""
 
 #: operatorServices-helpmenu
 msgid "Help menu"
@@ -4942,13 +4553,8 @@ msgstr ""
 msgid "End of the proactive session"
 msgstr ""
 
-#: stkEntry.ariaLabel
-msgid "{{ title }}"
-msgstr ""
-
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
-msgctxt "is-warning-storage-header"
 msgid "USB storage"
 msgstr ""
 
@@ -5012,358 +4618,11 @@ msgstr ""
 msgid "{{settings-dialog-prompt}}"
 msgstr ""
 
-#: accessible-app-icon.ariaLabel
-msgid "Icon for {{ appName }} app"
-msgstr ""
-
-#. # Addongs settings
-#: addon
-msgid "Add-on"
-msgstr ""
-
-#: addons
-msgctxt "addons"
-msgid "Add-ons"
-msgstr ""
-
-#: addons.ariaLabel
-msgctxt "addons.ariaLabel"
-msgid "Add-ons"
-msgstr ""
-
-#: addons-header
-msgid "{{addons}}"
-msgstr ""
-
-#: addon-details-header1
-msgid "{{ appName }}"
-msgstr ""
-
-#: addon-enable
-msgid "Enable Add-on"
-msgstr ""
-
-#: addon-description-header
-#, fuzzy
-msgctxt "addon-description-header"
-msgid "Description"
-msgstr "Ennyinyonyola"
-
-#: addon-developer-name
-msgid "{{ developerName }}"
-msgstr ""
-
-#: addon-targets
-msgid "Affected Apps"
-msgstr ""
-
-#: addon-options
-#, fuzzy
-msgctxt "addon-options"
-msgid "Options"
-msgstr "Ebyokulondako"
-
-#: addon-delete
-msgid "Delete Add-on"
-msgstr ""
-
-#: addon-share
-msgid "Share Add-on"
-msgstr ""
-
-#: addon-share-no-provider
-msgid "No sharing app available"
-msgstr ""
-
-#: addon-no-description
-msgid "This add-on does not include a description in its manifest file."
-msgstr ""
-
-#: addon-no-targets
-msgid "This add-on does not affect any installed apps."
-msgstr ""
-
-#: addon-restart-apps-to-disable
-msgid "Add-on disabled; restart affected apps."
-msgstr ""
-
-#: addon-reboot-required
-msgid ""
-"This add-on affected system apps; you must reboot your device to fully "
-"disable it."
-msgstr ""
-
-#: addon-rename
-msgid "Rename"
-msgstr ""
-
-#: addon-rename-input
-msgid "Enter add-on name"
-msgstr ""
-
-#: addon-rename-desc
-msgid "Change the name of your add-on"
-msgstr ""
-
-#: addon-obsolete
-msgid "This add-on is obsolete and does not work."
-msgstr ""
-
-#: addon-obsolete-can-delete
-msgid "This add-on is obsolete and does not work. Please delete it."
-msgstr ""
-
-#. # Achievements
-#: achievements
-msgid "Achievements"
-msgstr ""
-
-#: achievements.ariaLabel
-msgid "achievements"
-msgstr ""
-
-#: achievements-customize-champ-name
-msgid "Customize Champ"
-msgstr ""
-
-#: achievements-customize-champ-description
-msgid "Open Customizer in an app"
-msgstr ""
-
-#: achievements-add-on-all-star-name
-msgid "Add-on All-Star"
-msgstr ""
-
-#: achievements-add-on-all-star-description
-msgid "Use Customizer to create your own add-on"
-msgstr ""
-
-#: achievements-fab-finder-name
-msgid "Fab Finder"
-msgstr ""
-
-#: achievements-fab-finder-description
-msgid "Install an app or add-on from Hackerplace"
-msgstr ""
-
-#: achievements-content-commander-name
-msgid "Content Commander"
-msgstr ""
-
-#: achievements-content-commander-description
-msgid "Submit an app or add-on to Hackerplace"
-msgstr ""
-
-#: achievements-sharing-is-caring-name
-msgid "Sharing is Caring"
-msgstr ""
-
-#: achievements-sharing-is-caring-description
-msgid "Share your apps and add-ons with the Sharing app"
-msgstr ""
-
-#: achievements-creative-kind-name
-msgid "Creative Kind"
-msgstr ""
-
-#: achievements-creative-kind-description
-msgid "Use Theme Editor to create a new theme"
-msgstr ""
-
-#. # Service Workers
-#: service-workers-interception
-msgid "Intercept requests"
-msgstr ""
-
-#: service-workers-testing
-msgid "Allow over HTTP"
-msgstr ""
-
-#. # LOCALIZATION NOTE: The following strings are spoken by screen readers and not
-#. # shown on the screen.
-#: addButton.ariaLabel
-#, fuzzy
-msgctxt "addButton.ariaLabel"
-msgid "Add"
-msgstr "Yongerako"
-
-#: closeButton.ariaLabel
-#, fuzzy
-msgctxt "closeButton.ariaLabel"
-msgid "Close"
-msgstr "Ggalawo"
-
-#: changeWallpaperButton.ariaLabel
-msgid "Change wallpaper"
-msgstr ""
-
-#: editButton.ariaLabel
-#, fuzzy
-msgctxt "editButton.ariaLabel"
-msgid "Edit"
-msgstr "Kyusa"
-
-#: wifiSection.ariaLabel
-#, fuzzy
-msgctxt "wifiSection.ariaLabel"
-msgid "Wi-Fi"
-msgstr "Wi-Fi"
-
-#: simManagerSection.ariaLabel
-#, fuzzy
-msgctxt "simManagerSection.ariaLabel"
-msgid "SIM Manager"
-msgstr "Awategekebwa ebya SIM"
-
-#: callSettingsSection.ariaLabel
-#, fuzzy
-msgctxt "callSettingsSection.ariaLabel"
-msgid "Call Settings"
-msgstr "Entegeka Z'okuba Amassimu"
-
-#: messagingSettingsSection.ariaLabel
-#, fuzzy
-msgctxt "messagingSettingsSection.ariaLabel"
-msgid "Messaging Settings"
-msgstr "Entegaka y'obubaka bwakabbasa"
-
-#: cellularAndDataSection.ariaLabel
-#, fuzzy
-msgctxt "cellularAndDataSection.ariaLabel"
-msgid "Cellular & Data"
-msgstr "Eby'omukuttugwo & Omutimbagano"
-
-#: bluetoothSection.ariaLabel
-#, fuzzy
-msgctxt "bluetoothSection.ariaLabel"
-msgid "Bluetooth"
-msgstr "Bluetooth"
-
-#: internetSharingSection.ariaLabel
-#, fuzzy
-msgctxt "internetSharingSection.ariaLabel"
-msgid "Internet Sharing"
-msgstr "Okugabana ku Yiintaneeti"
-
-#: dateAndTimeSection.ariaLabel
-#, fuzzy
-msgctxt "dateAndTimeSection.ariaLabel"
-msgid "Date & Time"
-msgstr "Enaku z'omwezi & Esaawa"
-
-#: languageSection.ariaLabel
-#, fuzzy
-msgctxt "languageSection.ariaLabel"
-msgid "Language"
-msgstr "Olulimi"
-
-#: keyboardsSection.ariaLabel
-#, fuzzy
-msgctxt "keyboardsSection.ariaLabel"
-msgid "Keyboards"
-msgstr "Seeti z'amapeesa"
-
-#: fxa-accountsSection.ariaLabel
-#, fuzzy
-msgctxt "fxa-accountsSection.ariaLabel"
-msgid "Firefox Accounts"
-msgstr "Akawuunta za Firefox"
-
-#: findmydeviceSection.ariaLabel
-msgctxt "findmydeviceSection.ariaLabel"
-msgid "Find My Device"
-msgstr ""
-
-#: screenLockSection.ariaLabel
-msgctxt "screenLockSection.ariaLabel"
-msgid "Screen Lock"
-msgstr ""
-
-#: simSecuritySection.ariaLabel
-#, fuzzy
-msgctxt "simSecuritySection.ariaLabel"
-msgid "SIM Security"
-msgstr "Eby'okwerinda bya SIM"
-
-#: doNotTrackSection.ariaLabel
-msgctxt "doNotTrackSection.ariaLabel"
-msgid "Do Not Track"
-msgstr ""
-
-#: privacySection.ariaLabel
-msgctxt "privacySection.ariaLabel"
-msgid "Privacy Controls"
-msgstr ""
-
-#: enableStorageSection.ariaLabel
-msgctxt "enableStorageSection.ariaLabel"
-msgid "USB storage"
-msgstr ""
-
-#: mediaStorageSection.ariaLabel
-#, fuzzy
-msgctxt "mediaStorageSection.ariaLabel"
-msgid "Media Storage"
-msgstr "Ettelekero Ly'ebizanyibwa"
-
-#: appStorageSection.ariaLabel
-msgctxt "appStorageSection.ariaLabel"
-msgid "Application Storage"
-msgstr ""
-
-#: batterySection.ariaLabel
-#, fuzzy
-msgctxt "batterySection.ariaLabel"
-msgid "Battery"
-msgstr "Elyanda"
-
-#~ msgid "Call forwarding is disabled by FDN."
-#~ msgstr "Okuweereza Amassimu kujidwaako FDN"
-
-#~ msgctxt "operator-status-connecting"
-#~ msgid "Connecting…"
-#~ msgstr "Oyungibwa…"
-
-#~ msgctxt "operator-status-connectingfailed"
-#~ msgid "Connection failed"
-#~ msgstr "Okuyungibwa kulemye"
-
-#~ msgctxt "operator-status-connected"
-#~ msgid "Connected"
-#~ msgstr "Oyungiddwa"
-
-#~ msgid "Change the name of your device as it appears in your computer"
-#~ msgstr "Kyuusa elinya ly'essimuyo nga bwelirabika mukyuuma kikalimagezi"
-
-#~ msgid "The SSID cannot be empty"
-#~ msgstr "SSID teyinza kubera nkalu"
-
-#~ msgid "WPA (TKIP)"
-#~ msgstr "WPA (TKIP)"
-
-#~ msgid "WPA2 (AES)"
-#~ msgstr "WPA2 (AES)"
-
-#~ msgid "Resend"
-#~ msgstr "Ddamu okusindika"
-
-#~ msgid "B"
-#~ msgstr "B"
-
-#~ msgid "KB"
-#~ msgstr "KB"
-
-#~ msgid "MB"
-#~ msgstr "MB"
-
-#~ msgid "GB"
-#~ msgstr "GB"
-
-#~ msgid "TB"
-#~ msgstr "TB"
-
 #~ msgid "No imported certificate"
 #~ msgstr "Tewali satifikeeti zivude bweeru"
 
 #~ msgid "Voice calls to {{number}}"
 #~ msgstr "Amassimu gaweereze ku {{number}}"
+
+#~ msgid "Multimedia Messaging (MMS)"
+#~ msgstr "Obubaka Obulimu Ebizanyibwa (MMS)"

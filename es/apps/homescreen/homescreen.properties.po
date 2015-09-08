@@ -1,9 +1,9 @@
-#. extracted from ./apps/homescreen/homescreen.properties
+#. extracted from build/locales/en-US/apps/homescreen/homescreen.properties, build/locales/es/apps/homescreen/homescreen.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2014-09-08 19:50+0000\n"
 "PO-Revision-Date: 2015-02-13 18:27+0000\n"
 "Last-Translator: inma610 <inma.barrios@mozilla-hispano.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,372 +12,475 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1423852037.000000\n"
 
-#: stop-download-body
-#, fuzzy
-msgid "Do you want to stop downloading {{name}}?"
-msgstr "¿Quiere descargar {{name}}?"
+#. # Wrapper
+#: wrapper-search-name
+msgid "{{topic}} on {{name}}"
+msgstr "{{topic}} en {{name}}"
 
-#: stop-download-action
-msgid "Stop"
-msgstr ""
+#. # Dialog that appears when a user long taps on the homescreen
+#: contextmenu-add-wallpaper
+msgid "Change Wallpaper"
+msgstr "Cambiar fondo de pantalla"
 
-#: resume-download-body
-msgid "Do you want to download {{name}}?"
-msgstr "¿Quiere descargar {{name}}?"
+#: contextmenu-add-smart-collections
+msgid "Add Smart Collections"
+msgstr "Añadir colecciones inteligentes"
 
-#: resume-download-action
-#, fuzzy
-msgid "Download"
-msgstr "Descargar"
+#. # Prompt that appears when a user tries to delete an app.
+#: delete-title
+msgid "Delete {{name}}"
+msgstr "Borrar {{name}}"
 
-#: homescreen-settings
-msgid "Homescreen Settings"
-msgstr ""
+#: delete-body
+msgid "{{name}} and all of its data will be deleted."
+msgstr "{{name}} y todos sus datos serán borrados."
 
-#: cancel-action
-#, fuzzy
+#: delete
+msgid "Delete"
+msgstr "Borrar"
+
+#: cancel
+msgctxt "cancel"
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: apps-panel
-msgid "Applications"
+#. # Prompt that appears when a user tries to remove a site saved to the homescreen.
+#: remove-title-2
+msgid "Remove {{name}}"
+msgstr "Eliminar {{name}}"
+
+#: remove-body
+msgid "Remove {{name}} from the homescreen?"
+msgstr "¿Eliminar {{name}} de la pantalla de inicio?"
+
+#: remove
+msgid "Remove"
+msgstr "Eliminar"
+
+#. # Landing
+#: longDateFormat
+msgid "%A, %B %e"
+msgstr "%A %e de %B"
+
+#. # App reinstall
+#: download
+msgctxt "download"
+msgid "Download"
+msgstr "Descargar"
+
+#: restart-download-title
+msgid "Restart Download"
+msgstr "Reiniciar descarga"
+
+#: restart-download-body
+msgid "Do you want to download {{name}}?"
+msgstr "¿Quiere descargar {{name}}?"
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: paginationBarText
+msgid "Page {{current}} of {{total}}"
+msgstr "Página {{current}} de {{total}}"
+
+#: paginationScroller.ariaLabel
+msgid "Homescreen"
+msgstr "Pantalla de inicio"
+
+#. # Evme
+#: loadingEvme2
+msgctxt "loadingEvme2"
+msgid "Loading…"
+msgstr "Cargando…"
+
+#. #See bug 838634 for why those keys are still here
+#: evme-searchbar-default
+msgid "Everything…"
+msgstr "Todo…"
+
+#: evme-searchbar-default2
+msgctxt "evme-searchbar-default2"
+msgid "I’m thinking of…"
+msgstr "Estoy pensando en…"
+
+#: evme-searchbar-default2.placeholder
+msgctxt "evme-searchbar-default2.placeholder"
+msgid "I’m thinking of…"
+msgstr "Estoy pensando en…"
+
+#: evme-searchbar-clear
+msgid "Back"
+msgstr "Atrás"
+
+#: evme-searchbar-default.placeholder
+msgctxt "evme-searchbar-default.placeholder"
+msgid "I’m thinking of…"
+msgstr "Estoy pensando en…"
+
+#: evme-searchbar-title
+msgctxt "evme-searchbar-title"
+msgid "Everything"
+msgstr "Todo"
+
+#. # Helper - in search page, under the search bar
+#. # See bug 838634 to see why the 2 keys cohabits.
+#: evme-helper-default
+msgid "Enter any topic or search query"
+msgstr "Escriba un tema o una búsqueda"
+
+#: evme-helper-default2
+msgid "Enter any topic or keyword"
+msgstr "Escriba cualquier tema o palabra clave"
+
+#: evme-helper-dismiss
+msgid "Dismiss"
+msgstr "Descartar"
+
+#: evme-helper-no-refine
+msgid "No options found"
+msgstr "No se encontró ninguna opción"
+
+#: evme-helper-history-title
+msgid "History:"
+msgstr "Historial:"
+
+#: evme-helper-history-link
+msgid "History"
+msgstr "Historial"
+
+#: evme-helper-history-clear
+msgid "Clear history"
+msgstr "Limpiar historial"
+
+#: evme-helper-didyoumean-title
+msgctxt "evme-helper-didyoumean-title"
+msgid "Did you mean:"
+msgstr "Quiso decir:"
+
+#: evme-helper-refine-title
+msgctxt "evme-helper-refine-title"
+msgid "Did you mean:"
+msgstr "Quiso decir:"
+
+#: evme-helper-title-prefix
+msgctxt "evme-helper-title-prefix"
+msgid "Everything"
+msgstr "Todo"
+
+#: evme-helper-title-empty
+msgctxt "evme-helper-title-empty"
+msgid "Everything"
+msgstr "Todo"
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: evme-helper-save-search
+msgid "Add to homescreen"
+msgstr "Añadir a pantalla de inicio"
+
+#: evme-helper-unsave-search
+msgid "Remove from homescreen"
+msgstr "Eliminar de pantalla de inicio"
+
+#: evme-apps-market-download
+msgctxt "evme-apps-market-download"
+msgid "Download"
+msgstr "Descargar"
+
+#: evme-apps-market-more-apps
+msgid "More Apps"
+msgstr "Más apps"
+
+#: evme-apps-loading-app
+msgctxt "evme-apps-loading-app"
+msgid "Loading…"
+msgstr "Cargando…"
+
+#: evme-appsmore-loading
+msgctxt "evme-appsmore-loading"
+msgid "Loading…"
+msgstr "Cargando…"
+
+#: evme-alert-app-install-confirm
+msgid "Add {{name}} to Home Screen?"
+msgstr "¿Agregar {{name}} a la pantalla de inicio?"
+
+#: evme-alert-app-install-exists
+msgid "{{name}} was already added to Home Screen"
+msgstr "{{name}} ya estaba agregada a la pantalla de inicio"
+
+#: evme-alert-offline-smart-collections-more
+msgid "Connect to the internet to add more Smart Collections"
+msgstr "Conéctese a Internet para agregar más colecciones inteligentes"
+
+#: evme-alert-save-wallpaper
+msgid "Set as wallpaper?"
+msgstr "¿Usar como fondo de pantalla?"
+
+#: evme-alert-no-more-smart-collections
+msgid "No Smart Collections to add"
+msgstr "No hay ninguna colección inteligente que agregar"
+
+#: evme-banner-app-install-success
+msgid "{{name}} added to Home Screen"
+msgstr "{{name}} agregada a la pantalla de inicio"
+
+#: evme-banner-save-wallpaper
+msgid "Wallpaper set successfully"
+msgstr "Fondo de pantalla establecido correctamente"
+
+#. # Shortcuts - AKA smart collections - evme homepage
+#: evme-shortcuts-more
+msgid "More"
+msgstr "Más"
+
+#: evme-collectionssuggest-loading
+msgctxt "evme-collectionssuggest-loading"
+msgid "Loading…"
+msgstr "Cargando"
+
+#: evme-collectionssuggest-loading-cancel
+msgctxt "evme-collectionssuggest-loading-cancel"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: evme-collectionssuggest-prompt-create-custom
+msgid "Create your own Smart Collection"
+msgstr "Cree su propia colección inteligente"
+
+#: evme-backgroundimage-source-label
+msgid "Source:"
+msgstr "Origen:"
+
+#: evme-collection-title-prefix
+msgctxt "evme-collection-title-prefix"
+msgid "Everything"
+msgstr "Todo"
+
+#: evme-collection-title-suffix
+msgid "Phone"
+msgstr "Teléfono"
+
+#: evme-collection-loading-more
+msgctxt "evme-collection-loading-more"
+msgid "Loading…"
+msgstr "Cargando..."
+
+#. # {{query}} will always be the user's current query from the searchbox
+#: evme-connectionmessage-apps
+msgid "Connect to the internet to get apps for {{query}}"
+msgstr "Conéctese a Internet para obtener apps para {{query}}"
+
+#: evme-connectionmessage-apps-has-installed
+msgid "Connect to the internet to get even more apps for {{query}}"
+msgstr "Conéctese a Internet para obtener más apps para {{query}}"
+
+#. # tips are shown throughout the app on certain actions
+#: evme-tips-app-explain.innerHTML
+msgid "Find the things you love with the coolest apps."
+msgstr "Encuentre todo lo que le encanta con las apps más increíbles."
+
+#: evme-tips-searchbar-focus.innerHTML
+msgid "For example, find your favorite singer or band…"
+msgstr "Por ejemplo, encuentre a su cantante o grupo favorito…"
+
+#: evme-tips-exact-results.innerHTML
+msgid ""
+"These are the apps for <b>{{query}}</b>,<br /><br /> tap any icon to open it."
 msgstr ""
-
-#: pages-panel
-msgid "Pinned Pages"
-msgstr ""
-
-#~ msgid "{{topic}} on {{name}}"
-#~ msgstr "{{topic}} en {{name}}"
-
-#~ msgid "Change Wallpaper"
-#~ msgstr "Cambiar fondo de pantalla"
-
-#~ msgid "Add Smart Collections"
-#~ msgstr "Añadir colecciones inteligentes"
-
-#~ msgid "Delete {{name}}"
-#~ msgstr "Borrar {{name}}"
-
-#~ msgid "{{name}} and all of its data will be deleted."
-#~ msgstr "{{name}} y todos sus datos serán borrados."
-
-#~ msgid "Delete"
-#~ msgstr "Borrar"
-
-#~ msgid "Remove {{name}}"
-#~ msgstr "Eliminar {{name}}"
-
-#~ msgid "Remove {{name}} from the homescreen?"
-#~ msgstr "¿Eliminar {{name}} de la pantalla de inicio?"
-
-#~ msgid "Remove"
-#~ msgstr "Eliminar"
-
-#~ msgid "%A, %B %e"
-#~ msgstr "%A %e de %B"
-
-#~ msgid "Restart Download"
-#~ msgstr "Reiniciar descarga"
-
-#~ msgid "Page {{current}} of {{total}}"
-#~ msgstr "Página {{current}} de {{total}}"
-
-#~ msgid "Homescreen"
-#~ msgstr "Pantalla de inicio"
-
-#~ msgctxt "loadingEvme2"
-#~ msgid "Loading…"
-#~ msgstr "Cargando…"
-
-#~ msgid "Everything…"
-#~ msgstr "Todo…"
-
-#~ msgctxt "evme-searchbar-default2"
-#~ msgid "I’m thinking of…"
-#~ msgstr "Estoy pensando en…"
-
-#~ msgctxt "evme-searchbar-default2.placeholder"
-#~ msgid "I’m thinking of…"
-#~ msgstr "Estoy pensando en…"
-
-#~ msgid "Back"
-#~ msgstr "Atrás"
-
-#~ msgctxt "evme-searchbar-default.placeholder"
-#~ msgid "I’m thinking of…"
-#~ msgstr "Estoy pensando en…"
-
-#~ msgctxt "evme-searchbar-title"
-#~ msgid "Everything"
-#~ msgstr "Todo"
-
-#~ msgid "Enter any topic or search query"
-#~ msgstr "Escriba un tema o una búsqueda"
-
-#~ msgid "Enter any topic or keyword"
-#~ msgstr "Escriba cualquier tema o palabra clave"
-
-#~ msgid "Dismiss"
-#~ msgstr "Descartar"
-
-#~ msgid "No options found"
-#~ msgstr "No se encontró ninguna opción"
-
-#~ msgid "History:"
-#~ msgstr "Historial:"
-
-#~ msgid "History"
-#~ msgstr "Historial"
-
-#~ msgid "Clear history"
-#~ msgstr "Limpiar historial"
-
-#~ msgctxt "evme-helper-didyoumean-title"
-#~ msgid "Did you mean:"
-#~ msgstr "Quiso decir:"
-
-#~ msgctxt "evme-helper-refine-title"
-#~ msgid "Did you mean:"
-#~ msgstr "Quiso decir:"
-
-#~ msgctxt "evme-helper-title-prefix"
-#~ msgid "Everything"
-#~ msgstr "Todo"
-
-#~ msgctxt "evme-helper-title-empty"
-#~ msgid "Everything"
-#~ msgstr "Todo"
-
-#~ msgid "Add to homescreen"
-#~ msgstr "Añadir a pantalla de inicio"
-
-#~ msgid "Remove from homescreen"
-#~ msgstr "Eliminar de pantalla de inicio"
-
-#~ msgctxt "evme-apps-market-download"
-#~ msgid "Download"
-#~ msgstr "Descargar"
-
-#~ msgid "More Apps"
-#~ msgstr "Más apps"
-
-#~ msgctxt "evme-apps-loading-app"
-#~ msgid "Loading…"
-#~ msgstr "Cargando…"
-
-#~ msgctxt "evme-appsmore-loading"
-#~ msgid "Loading…"
-#~ msgstr "Cargando…"
-
-#~ msgid "Add {{name}} to Home Screen?"
-#~ msgstr "¿Agregar {{name}} a la pantalla de inicio?"
-
-#~ msgid "{{name}} was already added to Home Screen"
-#~ msgstr "{{name}} ya estaba agregada a la pantalla de inicio"
-
-#~ msgid "Connect to the internet to add more Smart Collections"
-#~ msgstr "Conéctese a Internet para agregar más colecciones inteligentes"
-
-#~ msgid "Set as wallpaper?"
-#~ msgstr "¿Usar como fondo de pantalla?"
-
-#~ msgid "No Smart Collections to add"
-#~ msgstr "No hay ninguna colección inteligente que agregar"
-
-#~ msgid "{{name}} added to Home Screen"
-#~ msgstr "{{name}} agregada a la pantalla de inicio"
-
-#~ msgid "Wallpaper set successfully"
-#~ msgstr "Fondo de pantalla establecido correctamente"
-
-#~ msgid "More"
-#~ msgstr "Más"
-
-#~ msgctxt "evme-collectionssuggest-loading"
-#~ msgid "Loading…"
-#~ msgstr "Cargando"
-
-#~ msgctxt "evme-collectionssuggest-loading-cancel"
-#~ msgid "Cancel"
-#~ msgstr "Cancelar"
-
-#~ msgid "Create your own Smart Collection"
-#~ msgstr "Cree su propia colección inteligente"
-
-#~ msgid "Source:"
-#~ msgstr "Origen:"
-
-#~ msgctxt "evme-collection-title-prefix"
-#~ msgid "Everything"
-#~ msgstr "Todo"
-
-#~ msgid "Phone"
-#~ msgstr "Teléfono"
-
-#~ msgctxt "evme-collection-loading-more"
-#~ msgid "Loading…"
-#~ msgstr "Cargando..."
-
-#~ msgid "Connect to the internet to get apps for {{query}}"
-#~ msgstr "Conéctese a Internet para obtener apps para {{query}}"
-
-#~ msgid "Connect to the internet to get even more apps for {{query}}"
-#~ msgstr "Conéctese a Internet para obtener más apps para {{query}}"
-
-#~ msgid "Find the things you love with the coolest apps."
-#~ msgstr "Encuentre todo lo que le encanta con las apps más increíbles."
-
-#~ msgid "For example, find your favorite singer or band…"
-#~ msgstr "Por ejemplo, encuentre a su cantante o grupo favorito…"
-
-#~ msgid ""
-#~ "These are the apps for <b>{{query}}</b>,<br /><br /> tap any icon to open "
-#~ "it."
-#~ msgstr ""
-#~ "Estas son las apps para <b>{{query}}</b>,<br /><br /> toque en cualquier "
-#~ "icono para abrirla."
-
-#~ msgid "Custom…"
-#~ msgstr "Personalizar..."
-
-#~ msgid "Astrology"
-#~ msgstr "Astrología"
-
-#~ msgid "Autos"
-#~ msgstr "Autos"
-
-#~ msgid "Beauty"
-#~ msgstr "Belleza"
-
-#~ msgid "Books"
-#~ msgstr "Libros"
-
-#~ msgid "Celebs"
-#~ msgstr "Famosos"
-
-#~ msgid "Daily Deals"
-#~ msgstr "Ofertas"
-
-#~ msgid "Dating"
-#~ msgstr "Amistad"
-
-#~ msgid "Electronics"
-#~ msgstr "Electrónica"
-
-#~ msgid "Email"
-#~ msgstr "Correo"
-
-#~ msgid "Entertainment"
-#~ msgstr "Entretenimiento"
-
-#~ msgid "Environment"
-#~ msgstr "Naturaleza"
-
-#~ msgid "Fashion"
-#~ msgstr "Moda"
-
-#~ msgid "Funny"
-#~ msgstr "Diversión"
-
-#~ msgid "Games"
-#~ msgstr "Juegos"
-
-#~ msgid "Government"
-#~ msgstr "Gobierno"
-
-#~ msgid "Health"
-#~ msgstr "Salud"
-
-#~ msgid "Jobs"
-#~ msgstr "Trabajo"
-
-#~ msgid "Local"
-#~ msgstr "Local"
-
-#~ msgid "Maps"
-#~ msgstr "Mapas"
-
-#~ msgid "Movies"
-#~ msgstr "Películas"
-
-#~ msgid "Music"
-#~ msgstr "Música"
-
-#~ msgid "New Apps"
-#~ msgstr "Nuevas apps"
-
-#~ msgid "News"
-#~ msgstr "Noticias"
-
-#~ msgid "Photography"
-#~ msgstr "Fotografía"
-
-#~ msgid "Recipes"
-#~ msgstr "Recetas"
-
-#~ msgid "Restaurants"
-#~ msgstr "Restaurantes"
-
-#~ msgid "Shopping"
-#~ msgstr "Compras"
-
-#~ msgid "Social"
-#~ msgstr "Social"
-
-#~ msgid "Sports"
-#~ msgstr "Deportes"
-
-#~ msgid "Tech News"
-#~ msgstr "Tecnología"
-
-#~ msgid "Top Apps"
-#~ msgstr "Apps destacadas"
-
-#~ msgid "Travel"
-#~ msgstr "Viajes"
-
-#~ msgid "TV"
-#~ msgstr "TV"
-
-#~ msgid "Video"
-#~ msgstr "Vídeo"
-
-#~ msgid "Utilities"
-#~ msgstr "Utilidades"
-
-#~ msgid "Weather"
-#~ msgstr "Tiempo"
-
-#~ msgid "Add to top of collection"
-#~ msgstr "Añadir a destacados de colección"
-
-#~ msgid "Save to Homescreen"
-#~ msgstr "Guardar en pantalla de inicio"
-
-#~ msgid "Edit"
-#~ msgstr "Editar"
-
-#~ msgid "Website name"
-#~ msgstr "Nombre del sitio web"
-
-#~ msgid "Address"
-#~ msgstr "Dirección"
-
-#~ msgctxt "edit-dialog-cancel"
-#~ msgid "Cancel"
-#~ msgstr "Cancelar"
-
-#~ msgid "Done"
-#~ msgstr "Hecho"
-
-#~ msgid "Close"
-#~ msgstr "Cerrar"
-
-#~ msgid "Save"
-#~ msgstr "Guardar"
+"Estas son las apps para <b>{{query}}</b>,<br /><br /> toque en cualquier "
+"icono para abrirla."
+
+#. # collection translations
+#: evme-shortcut-custom
+msgid "Custom…"
+msgstr "Personalizar..."
+
+#: evme-shortcut-id-astrology
+msgid "Astrology"
+msgstr "Astrología"
+
+#: evme-shortcut-id-autos
+msgid "Autos"
+msgstr "Autos"
+
+#: evme-shortcut-id-beauty
+msgid "Beauty"
+msgstr "Belleza"
+
+#: evme-shortcut-id-books
+msgid "Books"
+msgstr "Libros"
+
+#: evme-shortcut-id-celebs
+msgid "Celebs"
+msgstr "Famosos"
+
+#: evme-shortcut-id-daily-deals
+msgid "Daily Deals"
+msgstr "Ofertas"
+
+#: evme-shortcut-id-dating
+msgid "Dating"
+msgstr "Amistad"
+
+#: evme-shortcut-id-electronics
+msgid "Electronics"
+msgstr "Electrónica"
+
+#: evme-shortcut-id-email
+msgid "Email"
+msgstr "Correo"
+
+#: evme-shortcut-id-entertainment
+msgid "Entertainment"
+msgstr "Entretenimiento"
+
+#: evme-shortcut-id-environment
+msgid "Environment"
+msgstr "Naturaleza"
+
+#: evme-shortcut-id-fashion
+msgid "Fashion"
+msgstr "Moda"
+
+#: evme-shortcut-id-funny
+msgid "Funny"
+msgstr "Diversión"
+
+#: evme-shortcut-id-games
+msgid "Games"
+msgstr "Juegos"
+
+#: evme-shortcut-id-government
+msgid "Government"
+msgstr "Gobierno"
+
+#: evme-shortcut-id-health
+msgid "Health"
+msgstr "Salud"
+
+#: evme-shortcut-id-jobs
+msgid "Jobs"
+msgstr "Trabajo"
+
+#: evme-shortcut-id-local
+msgid "Local"
+msgstr "Local"
+
+#: evme-shortcut-id-maps
+msgid "Maps"
+msgstr "Mapas"
+
+#: evme-shortcut-id-movies
+msgid "Movies"
+msgstr "Películas"
+
+#: evme-shortcut-id-music
+msgid "Music"
+msgstr "Música"
+
+#: evme-shortcut-id-new-apps
+msgid "New Apps"
+msgstr "Nuevas apps"
+
+#: evme-shortcut-id-news
+msgid "News"
+msgstr "Noticias"
+
+#: evme-shortcut-id-photography
+msgid "Photography"
+msgstr "Fotografía"
+
+#: evme-shortcut-id-recipes
+msgid "Recipes"
+msgstr "Recetas"
+
+#: evme-shortcut-id-restaurants
+msgid "Restaurants"
+msgstr "Restaurantes"
+
+#: evme-shortcut-id-shopping
+msgid "Shopping"
+msgstr "Compras"
+
+#: evme-shortcut-id-social
+msgid "Social"
+msgstr "Social"
+
+#: evme-shortcut-id-sports
+msgid "Sports"
+msgstr "Deportes"
+
+#: evme-shortcut-id-tech-news
+msgid "Tech News"
+msgstr "Tecnología"
+
+#: evme-shortcut-id-top-apps
+msgid "Top Apps"
+msgstr "Apps destacadas"
+
+#: evme-shortcut-id-travel
+msgid "Travel"
+msgstr "Viajes"
+
+#: evme-shortcut-id-tv
+msgid "TV"
+msgstr "TV"
+
+#: evme-shortcut-id-video
+msgid "Video"
+msgstr "Vídeo"
+
+#: evme-shortcut-id-utilities
+msgid "Utilities"
+msgstr "Utilidades"
+
+#: evme-shortcut-id-weather
+msgid "Weather"
+msgstr "Tiempo"
+
+#. #search contextmenu
+#: evme-add-to-top-of-collection
+msgid "Add to top of collection"
+msgstr "Añadir a destacados de colección"
+
+#: evme-save-to-homescreen
+msgid "Save to Homescreen"
+msgstr "Guardar en pantalla de inicio"
+
+#. # edit dialog
+#: edit-dialog-header
+msgid "Edit"
+msgstr "Editar"
+
+#: edit-dialog-name
+msgid "Website name"
+msgstr "Nombre del sitio web"
+
+#: edit-dialog-url
+msgid "Address"
+msgstr "Dirección"
+
+#: edit-dialog-cancel
+msgctxt "edit-dialog-cancel"
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: edit-dialog-done
+msgid "Done"
+msgstr "Hecho"
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: evme-close.ariaLabel
+msgid "Close"
+msgstr "Cerrar"
+
+#: evme-done.ariaLabel
+msgid "Save"
+msgstr "Guardar"

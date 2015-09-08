@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2014-08-31 07:39+0000\n"
 "Last-Translator: Kerim Kalamujic <kerim@mozilla.ba>\n"
 "Language-Team: none\n"
@@ -13,373 +13,476 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1409470756.000000\n"
 
-#: stop-download-body
-#, fuzzy
-msgid "Do you want to stop downloading {{name}}?"
-msgstr "Želite li preuzeti {{name}}?"
+#. # Wrapper
+#: wrapper-search-name
+msgid "{{topic}} on {{name}}"
+msgstr "{{topic}} na {{name}}"
 
-#: stop-download-action
-msgid "Stop"
-msgstr ""
+#. # Dialog that appears when a user long taps on the homescreen
+#: contextmenu-add-wallpaper
+msgid "Change Wallpaper"
+msgstr "Promijeni pozadinsku sliku"
 
-#: resume-download-body
-msgid "Do you want to download {{name}}?"
-msgstr "Želite li preuzeti {{name}}?"
+#: contextmenu-add-smart-collections
+msgid "Add Smart Collections"
+msgstr "Dodaj pametne kolekcije"
 
-#: resume-download-action
-#, fuzzy
-msgid "Download"
-msgstr "Preuzmi"
+#. # Prompt that appears when a user tries to delete an app.
+#: delete-title
+msgid "Delete {{name}}"
+msgstr "Izbriši {{name}}"
 
-#: homescreen-settings
-msgid "Homescreen Settings"
-msgstr ""
+#: delete-body
+msgid "{{name}} and all of its data will be deleted."
+msgstr "{{name}} i svi njegovi podaci će biti izbrisani."
 
-#: cancel-action
-#, fuzzy
+#: delete
+msgid "Delete"
+msgstr "Izbriši"
+
+#: cancel
+msgctxt "cancel"
 msgid "Cancel"
 msgstr "Otkaži"
 
-#: apps-panel
-msgid "Applications"
+#. # Prompt that appears when a user tries to remove a site saved to the homescreen.
+#: remove-title-2
+msgid "Remove {{name}}"
+msgstr "Uklanjanje {{name}}"
+
+#: remove-body
+msgid "Remove {{name}} from the homescreen?"
+msgstr "Ukloniti {{name}} sa početnog ekrana?"
+
+#: remove
+msgid "Remove"
+msgstr "Ukloni"
+
+#. # Landing
+#: longDateFormat
+msgid "%A, %B %e"
+msgstr "%A, %e %B"
+
+#. # App reinstall
+#: download
+msgctxt "download"
+msgid "Download"
+msgstr "Preuzmi"
+
+#: restart-download-title
+msgid "Restart Download"
+msgstr "Ponovo pokreni preuzimanje"
+
+#: restart-download-body
+msgid "Do you want to download {{name}}?"
+msgstr "Želite li preuzeti {{name}}?"
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: paginationBarText
+msgid "Page {{current}} of {{total}}"
+msgstr "Strana {{current}} od {{total}}"
+
+#: paginationScroller.ariaLabel
+msgid "Homescreen"
+msgstr "Početni ekran"
+
+#. # Evme
+#: loadingEvme2
+msgctxt "loadingEvme2"
+msgid "Loading…"
+msgstr "Učitavanje..."
+
+#. #See bug 838634 for why those keys are still here
+#: evme-searchbar-default
+msgid "Everything…"
+msgstr "Sve…"
+
+#: evme-searchbar-default2
+msgctxt "evme-searchbar-default2"
+msgid "I’m thinking of…"
+msgstr "Razmišljam o..."
+
+#: evme-searchbar-default2.placeholder
+msgctxt "evme-searchbar-default2.placeholder"
+msgid "I’m thinking of…"
+msgstr "Razmišljam o..."
+
+#: evme-searchbar-clear
+msgid "Back"
+msgstr "Nazad"
+
+#: evme-searchbar-default.placeholder
+msgctxt "evme-searchbar-default.placeholder"
+msgid "I’m thinking of…"
+msgstr "Razmišljam o..."
+
+#: evme-searchbar-title
+msgctxt "evme-searchbar-title"
+msgid "Everything"
+msgstr "Sve"
+
+#. # Helper - in search page, under the search bar
+#. # See bug 838634 to see why the 2 keys cohabits.
+#: evme-helper-default
+msgid "Enter any topic or search query"
+msgstr "Upišite bilo koju temu ili pojam"
+
+#: evme-helper-default2
+msgid "Enter any topic or keyword"
+msgstr "Upišite bilo koju temu ili pojam"
+
+#: evme-helper-dismiss
+msgid "Dismiss"
+msgstr "Odbaci"
+
+#: evme-helper-no-refine
+msgid "No options found"
+msgstr "Opcije nisu pronađene"
+
+#: evme-helper-history-title
+msgid "History:"
+msgstr "Historija:"
+
+#: evme-helper-history-link
+msgid "History"
+msgstr "Historija"
+
+#: evme-helper-history-clear
+msgid "Clear history"
+msgstr "Očisti historiju"
+
+#: evme-helper-didyoumean-title
+msgctxt "evme-helper-didyoumean-title"
+msgid "Did you mean:"
+msgstr "Da li ste mislili:"
+
+#: evme-helper-refine-title
+msgctxt "evme-helper-refine-title"
+msgid "Did you mean:"
+msgstr "Da li ste mislili:"
+
+#: evme-helper-title-prefix
+msgctxt "evme-helper-title-prefix"
+msgid "Everything"
+msgstr "Sve"
+
+#: evme-helper-title-empty
+msgctxt "evme-helper-title-empty"
+msgid "Everything"
+msgstr "Sve"
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: evme-helper-save-search
+msgid "Add to homescreen"
+msgstr "Dodaj na početni ekran"
+
+#: evme-helper-unsave-search
+msgid "Remove from homescreen"
+msgstr "Ukloni sa početnog ekrana"
+
+#: evme-apps-market-download
+msgctxt "evme-apps-market-download"
+msgid "Download"
+msgstr "Preuzimanje"
+
+#: evme-apps-market-more-apps
+msgid "More Apps"
+msgstr "Više aplikacija"
+
+#: evme-apps-loading-app
+msgctxt "evme-apps-loading-app"
+msgid "Loading…"
+msgstr "Učitavanje..."
+
+#: evme-appsmore-loading
+msgctxt "evme-appsmore-loading"
+msgid "Loading…"
+msgstr "Učitavanje..."
+
+#: evme-alert-app-install-confirm
+msgid "Add {{name}} to Home Screen?"
+msgstr "Dodaj {{name}} na početni ekran?"
+
+#: evme-alert-app-install-exists
+msgid "{{name}} was already added to Home Screen"
+msgstr "{{name}} je već dodan na početni ekran"
+
+#: evme-alert-offline-smart-collections-more
+msgid "Connect to the internet to add more Smart Collections"
+msgstr "Spojite se na Internet da biste dodali više pametnih kolekcija"
+
+#: evme-alert-save-wallpaper
+msgid "Set as wallpaper?"
+msgstr "Postaviti kao pozadinsku sliku?"
+
+#: evme-alert-no-more-smart-collections
+msgid "No Smart Collections to add"
+msgstr "Nema pametnih kolekcija za dodavanje"
+
+#: evme-banner-app-install-success
+msgid "{{name}} added to Home Screen"
+msgstr "{{name}} dodan na početni ekran"
+
+#: evme-banner-save-wallpaper
+msgid "Wallpaper set successfully"
+msgstr "Pozadinska slika uspješno postavljena"
+
+#. # Shortcuts - AKA smart collections - evme homepage
+#: evme-shortcuts-more
+msgid "More"
+msgstr "Više"
+
+#: evme-collectionssuggest-loading
+msgctxt "evme-collectionssuggest-loading"
+msgid "Loading…"
+msgstr "Učitavanje…"
+
+#: evme-collectionssuggest-loading-cancel
+msgctxt "evme-collectionssuggest-loading-cancel"
+msgid "Cancel"
+msgstr "Otkaži"
+
+#: evme-collectionssuggest-prompt-create-custom
+msgid "Create your own Smart Collection"
+msgstr "Kreirajte vašu vlastitu pametnu kolekciju"
+
+#: evme-backgroundimage-source-label
+msgid "Source:"
+msgstr "Izvor:"
+
+#: evme-collection-title-prefix
+msgctxt "evme-collection-title-prefix"
+msgid "Everything"
+msgstr "Sve"
+
+#: evme-collection-title-suffix
+msgid "Phone"
+msgstr "Telefon"
+
+#: evme-collection-loading-more
+msgctxt "evme-collection-loading-more"
+msgid "Loading…"
+msgstr "Učitavanje..."
+
+#. # {{query}} will always be the user's current query from the searchbox
+#: evme-connectionmessage-apps
+msgid "Connect to the internet to get apps for {{query}}"
+msgstr "Spojite se na internet da biste dobavili aplikacije za {{query}}"
+
+#: evme-connectionmessage-apps-has-installed
+msgid "Connect to the internet to get even more apps for {{query}}"
 msgstr ""
+"Spojite se na internet da biste dobavili još više aplikacija za {{query}}"
 
-#: pages-panel
-msgid "Pinned Pages"
+#. # tips are shown throughout the app on certain actions
+#: evme-tips-app-explain.innerHTML
+msgid "Find the things you love with the coolest apps."
+msgstr "Pronađite stvari koje volite sa najboljim aplikacijama."
+
+#: evme-tips-searchbar-focus.innerHTML
+msgid "For example, find your favorite singer or band…"
+msgstr "Naprimjer, pronađite omiljenog pjevača ili bend ..."
+
+#: evme-tips-exact-results.innerHTML
+msgid ""
+"These are the apps for <b>{{query}}</b>,<br /><br /> tap any icon to open it."
 msgstr ""
-
-#~ msgid "{{topic}} on {{name}}"
-#~ msgstr "{{topic}} na {{name}}"
-
-#~ msgid "Change Wallpaper"
-#~ msgstr "Promijeni pozadinsku sliku"
-
-#~ msgid "Add Smart Collections"
-#~ msgstr "Dodaj pametne kolekcije"
-
-#~ msgid "Delete {{name}}"
-#~ msgstr "Izbriši {{name}}"
-
-#~ msgid "{{name}} and all of its data will be deleted."
-#~ msgstr "{{name}} i svi njegovi podaci će biti izbrisani."
-
-#~ msgid "Delete"
-#~ msgstr "Izbriši"
-
-#~ msgid "Remove {{name}}"
-#~ msgstr "Uklanjanje {{name}}"
-
-#~ msgid "Remove {{name}} from the homescreen?"
-#~ msgstr "Ukloniti {{name}} sa početnog ekrana?"
-
-#~ msgid "Remove"
-#~ msgstr "Ukloni"
-
-#~ msgid "%A, %B %e"
-#~ msgstr "%A, %e %B"
-
-#~ msgid "Restart Download"
-#~ msgstr "Ponovo pokreni preuzimanje"
-
-#~ msgid "Page {{current}} of {{total}}"
-#~ msgstr "Strana {{current}} od {{total}}"
-
-#~ msgid "Homescreen"
-#~ msgstr "Početni ekran"
-
-#~ msgctxt "loadingEvme2"
-#~ msgid "Loading…"
-#~ msgstr "Učitavanje..."
-
-#~ msgid "Everything…"
-#~ msgstr "Sve…"
-
-#~ msgctxt "evme-searchbar-default2"
-#~ msgid "I’m thinking of…"
-#~ msgstr "Razmišljam o..."
-
-#~ msgctxt "evme-searchbar-default2.placeholder"
-#~ msgid "I’m thinking of…"
-#~ msgstr "Razmišljam o..."
-
-#~ msgid "Back"
-#~ msgstr "Nazad"
-
-#~ msgctxt "evme-searchbar-default.placeholder"
-#~ msgid "I’m thinking of…"
-#~ msgstr "Razmišljam o..."
-
-#~ msgctxt "evme-searchbar-title"
-#~ msgid "Everything"
-#~ msgstr "Sve"
-
-#~ msgid "Enter any topic or search query"
-#~ msgstr "Upišite bilo koju temu ili pojam"
-
-#~ msgid "Enter any topic or keyword"
-#~ msgstr "Upišite bilo koju temu ili pojam"
-
-#~ msgid "Dismiss"
-#~ msgstr "Odbaci"
-
-#~ msgid "No options found"
-#~ msgstr "Opcije nisu pronađene"
-
-#~ msgid "History:"
-#~ msgstr "Historija:"
-
-#~ msgid "History"
-#~ msgstr "Historija"
-
-#~ msgid "Clear history"
-#~ msgstr "Očisti historiju"
-
-#~ msgctxt "evme-helper-didyoumean-title"
-#~ msgid "Did you mean:"
-#~ msgstr "Da li ste mislili:"
-
-#~ msgctxt "evme-helper-refine-title"
-#~ msgid "Did you mean:"
-#~ msgstr "Da li ste mislili:"
-
-#~ msgctxt "evme-helper-title-prefix"
-#~ msgid "Everything"
-#~ msgstr "Sve"
-
-#~ msgctxt "evme-helper-title-empty"
-#~ msgid "Everything"
-#~ msgstr "Sve"
-
-#~ msgid "Add to homescreen"
-#~ msgstr "Dodaj na početni ekran"
-
-#~ msgid "Remove from homescreen"
-#~ msgstr "Ukloni sa početnog ekrana"
-
-#~ msgctxt "evme-apps-market-download"
-#~ msgid "Download"
-#~ msgstr "Preuzimanje"
-
-#~ msgid "More Apps"
-#~ msgstr "Više aplikacija"
-
-#~ msgctxt "evme-apps-loading-app"
-#~ msgid "Loading…"
-#~ msgstr "Učitavanje..."
-
-#~ msgctxt "evme-appsmore-loading"
-#~ msgid "Loading…"
-#~ msgstr "Učitavanje..."
-
-#~ msgid "Add {{name}} to Home Screen?"
-#~ msgstr "Dodaj {{name}} na početni ekran?"
-
-#~ msgid "{{name}} was already added to Home Screen"
-#~ msgstr "{{name}} je već dodan na početni ekran"
-
-#~ msgid "Connect to the internet to add more Smart Collections"
-#~ msgstr "Spojite se na Internet da biste dodali više pametnih kolekcija"
-
-#~ msgid "Set as wallpaper?"
-#~ msgstr "Postaviti kao pozadinsku sliku?"
-
-#~ msgid "No Smart Collections to add"
-#~ msgstr "Nema pametnih kolekcija za dodavanje"
-
-#~ msgid "{{name}} added to Home Screen"
-#~ msgstr "{{name}} dodan na početni ekran"
-
-#~ msgid "Wallpaper set successfully"
-#~ msgstr "Pozadinska slika uspješno postavljena"
-
-#~ msgid "More"
-#~ msgstr "Više"
-
-#~ msgctxt "evme-collectionssuggest-loading"
-#~ msgid "Loading…"
-#~ msgstr "Učitavanje…"
-
-#~ msgctxt "evme-collectionssuggest-loading-cancel"
-#~ msgid "Cancel"
-#~ msgstr "Otkaži"
-
-#~ msgid "Create your own Smart Collection"
-#~ msgstr "Kreirajte vašu vlastitu pametnu kolekciju"
-
-#~ msgid "Source:"
-#~ msgstr "Izvor:"
-
-#~ msgctxt "evme-collection-title-prefix"
-#~ msgid "Everything"
-#~ msgstr "Sve"
-
-#~ msgid "Phone"
-#~ msgstr "Telefon"
-
-#~ msgctxt "evme-collection-loading-more"
-#~ msgid "Loading…"
-#~ msgstr "Učitavanje..."
-
-#~ msgid "Connect to the internet to get apps for {{query}}"
-#~ msgstr "Spojite se na internet da biste dobavili aplikacije za {{query}}"
-
-#~ msgid "Connect to the internet to get even more apps for {{query}}"
-#~ msgstr ""
-#~ "Spojite se na internet da biste dobavili još više aplikacija za {{query}}"
-
-#~ msgid "Find the things you love with the coolest apps."
-#~ msgstr "Pronađite stvari koje volite sa najboljim aplikacijama."
-
-#~ msgid "For example, find your favorite singer or band…"
-#~ msgstr "Naprimjer, pronađite omiljenog pjevača ili bend ..."
-
-#~ msgid ""
-#~ "These are the apps for <b>{{query}}</b>,<br /><br /> tap any icon to open "
-#~ "it."
-#~ msgstr ""
-#~ "Ovo su aplikacije za <b>{{query}}</b>,<br /><br /> dodirnite bilo koju "
-#~ "ikonu da biste je otvorili."
-
-#~ msgid "Custom…"
-#~ msgstr "Prilagođeno..."
-
-#~ msgid "Astrology"
-#~ msgstr "Astrologija"
-
-#~ msgid "Autos"
-#~ msgstr "Automobili"
-
-#~ msgid "Beauty"
-#~ msgstr "Ljepota"
-
-#~ msgid "Books"
-#~ msgstr "Knjige"
-
-#~ msgid "Celebs"
-#~ msgstr "Slavni"
-
-#~ msgid "Daily Deals"
-#~ msgstr "Dnevne ponude"
-
-#~ msgid "Dating"
-#~ msgstr "Zabavljanje"
-
-#~ msgid "Electronics"
-#~ msgstr "Elektronika"
-
-#~ msgid "Email"
-#~ msgstr "Email"
-
-#~ msgid "Entertainment"
-#~ msgstr "Zabava"
-
-#~ msgid "Environment"
-#~ msgstr "Okruženje"
-
-#~ msgid "Fashion"
-#~ msgstr "Moda"
-
-#~ msgid "Funny"
-#~ msgstr "Smiješno"
-
-#~ msgid "Games"
-#~ msgstr "Igre"
-
-#~ msgid "Government"
-#~ msgstr "Vlada"
-
-#~ msgid "Health"
-#~ msgstr "Zdravlje"
-
-#~ msgid "Jobs"
-#~ msgstr "Poslovi"
-
-#~ msgid "Local"
-#~ msgstr "Lokalno"
-
-#~ msgid "Maps"
-#~ msgstr "Mape"
-
-#~ msgid "Movies"
-#~ msgstr "Filmovi"
-
-#~ msgid "Music"
-#~ msgstr "Muzika"
-
-#~ msgid "New Apps"
-#~ msgstr "Nove aplikacije"
-
-#~ msgid "News"
-#~ msgstr "Vijesti"
-
-#~ msgid "Photography"
-#~ msgstr "Fotografija"
-
-#~ msgid "Recipes"
-#~ msgstr "Recepti"
-
-#~ msgid "Restaurants"
-#~ msgstr "Restorani"
-
-#~ msgid "Shopping"
-#~ msgstr "Kupovina"
-
-#~ msgid "Social"
-#~ msgstr "Društveno"
-
-#~ msgid "Sports"
-#~ msgstr "Sportovi"
-
-#~ msgid "Tech News"
-#~ msgstr "Tech vijesti"
-
-#~ msgid "Top Apps"
-#~ msgstr "Top aplikacije"
-
-#~ msgid "Travel"
-#~ msgstr "Putovanja"
-
-#~ msgid "TV"
-#~ msgstr "TV"
-
-#~ msgid "Video"
-#~ msgstr "Video"
-
-#~ msgid "Utilities"
-#~ msgstr "Alati"
-
-#~ msgid "Weather"
-#~ msgstr "Vrijeme"
-
-#~ msgid "Add to top of collection"
-#~ msgstr "Dodaj na vrh kolekcije"
-
-#~ msgid "Save to Homescreen"
-#~ msgstr "Spasi na početni ekran"
-
-#~ msgid "Edit"
-#~ msgstr "Uredi"
-
-#~ msgid "Website name"
-#~ msgstr "Naziv web stranice"
-
-#~ msgid "Address"
-#~ msgstr "Adresa"
-
-#~ msgctxt "edit-dialog-cancel"
-#~ msgid "Cancel"
-#~ msgstr "Otkaži"
-
-#~ msgid "Done"
-#~ msgstr "Gotovo"
-
-#~ msgid "Close"
-#~ msgstr "Zatvori"
-
-#~ msgid "Save"
-#~ msgstr "Spasi"
+"Ovo su aplikacije za <b>{{query}}</b>,<br /><br /> dodirnite bilo koju ikonu "
+"da biste je otvorili."
+
+#. # collection translations
+#: evme-shortcut-custom
+msgid "Custom…"
+msgstr "Prilagođeno..."
+
+#: evme-shortcut-id-astrology
+msgid "Astrology"
+msgstr "Astrologija"
+
+#: evme-shortcut-id-autos
+msgid "Autos"
+msgstr "Automobili"
+
+#: evme-shortcut-id-beauty
+msgid "Beauty"
+msgstr "Ljepota"
+
+#: evme-shortcut-id-books
+msgid "Books"
+msgstr "Knjige"
+
+#: evme-shortcut-id-celebs
+msgid "Celebs"
+msgstr "Slavni"
+
+#: evme-shortcut-id-daily-deals
+msgid "Daily Deals"
+msgstr "Dnevne ponude"
+
+#: evme-shortcut-id-dating
+msgid "Dating"
+msgstr "Zabavljanje"
+
+#: evme-shortcut-id-electronics
+msgid "Electronics"
+msgstr "Elektronika"
+
+#: evme-shortcut-id-email
+msgid "Email"
+msgstr "Email"
+
+#: evme-shortcut-id-entertainment
+msgid "Entertainment"
+msgstr "Zabava"
+
+#: evme-shortcut-id-environment
+msgid "Environment"
+msgstr "Okruženje"
+
+#: evme-shortcut-id-fashion
+msgid "Fashion"
+msgstr "Moda"
+
+#: evme-shortcut-id-funny
+msgid "Funny"
+msgstr "Smiješno"
+
+#: evme-shortcut-id-games
+msgid "Games"
+msgstr "Igre"
+
+#: evme-shortcut-id-government
+msgid "Government"
+msgstr "Vlada"
+
+#: evme-shortcut-id-health
+msgid "Health"
+msgstr "Zdravlje"
+
+#: evme-shortcut-id-jobs
+msgid "Jobs"
+msgstr "Poslovi"
+
+#: evme-shortcut-id-local
+msgid "Local"
+msgstr "Lokalno"
+
+#: evme-shortcut-id-maps
+msgid "Maps"
+msgstr "Mape"
+
+#: evme-shortcut-id-movies
+msgid "Movies"
+msgstr "Filmovi"
+
+#: evme-shortcut-id-music
+msgid "Music"
+msgstr "Muzika"
+
+#: evme-shortcut-id-new-apps
+msgid "New Apps"
+msgstr "Nove aplikacije"
+
+#: evme-shortcut-id-news
+msgid "News"
+msgstr "Vijesti"
+
+#: evme-shortcut-id-photography
+msgid "Photography"
+msgstr "Fotografija"
+
+#: evme-shortcut-id-recipes
+msgid "Recipes"
+msgstr "Recepti"
+
+#: evme-shortcut-id-restaurants
+msgid "Restaurants"
+msgstr "Restorani"
+
+#: evme-shortcut-id-shopping
+msgid "Shopping"
+msgstr "Kupovina"
+
+#: evme-shortcut-id-social
+msgid "Social"
+msgstr "Društveno"
+
+#: evme-shortcut-id-sports
+msgid "Sports"
+msgstr "Sportovi"
+
+#: evme-shortcut-id-tech-news
+msgid "Tech News"
+msgstr "Tech vijesti"
+
+#: evme-shortcut-id-top-apps
+msgid "Top Apps"
+msgstr "Top aplikacije"
+
+#: evme-shortcut-id-travel
+msgid "Travel"
+msgstr "Putovanja"
+
+#: evme-shortcut-id-tv
+msgid "TV"
+msgstr "TV"
+
+#: evme-shortcut-id-video
+msgid "Video"
+msgstr "Video"
+
+#: evme-shortcut-id-utilities
+msgid "Utilities"
+msgstr "Alati"
+
+#: evme-shortcut-id-weather
+msgid "Weather"
+msgstr "Vrijeme"
+
+#. #search contextmenu
+#: evme-add-to-top-of-collection
+msgid "Add to top of collection"
+msgstr "Dodaj na vrh kolekcije"
+
+#: evme-save-to-homescreen
+msgid "Save to Homescreen"
+msgstr "Spasi na početni ekran"
+
+#. # edit dialog
+#: edit-dialog-header
+msgid "Edit"
+msgstr "Uredi"
+
+#: edit-dialog-name
+msgid "Website name"
+msgstr "Naziv web stranice"
+
+#: edit-dialog-url
+msgid "Address"
+msgstr "Adresa"
+
+#: edit-dialog-cancel
+msgctxt "edit-dialog-cancel"
+msgid "Cancel"
+msgstr "Otkaži"
+
+#: edit-dialog-done
+msgid "Done"
+msgstr "Gotovo"
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: evme-close.ariaLabel
+msgid "Close"
+msgstr "Zatvori"
+
+#: evme-done.ariaLabel
+msgid "Save"
+msgstr "Spasi"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2014-07-28 20:49+0100\n"
 "PO-Revision-Date: 2015-09-04 16:02+0000\n"
 "Last-Translator: Cristian Silaghi <cristian.silaghi@mozilla.ro>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,377 +13,479 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1441382545.000000\n"
 
-#: stop-download-body
-#, fuzzy
-msgid "Do you want to stop downloading {{name}}?"
-msgstr "Dorești să descarci {{name}}?"
+#. # Wrapper
+#: wrapper-search-name
+msgid "{{topic}} on {{name}}"
+msgstr "{{topic}} pe {{name}}"
 
-#: stop-download-action
-msgid "Stop"
-msgstr ""
+#. # Dialog that appears when a user long taps on the homescreen
+#: contextmenu-add-wallpaper
+msgid "Change Wallpaper"
+msgstr "Schimbă fundalul"
 
-#: resume-download-body
-msgid "Do you want to download {{name}}?"
-msgstr "Dorești să descarci {{name}}?"
+#: contextmenu-add-smart-collections
+msgid "Add Smart Collections"
+msgstr "Adaugă colecții inteligente"
 
-#: resume-download-action
-#, fuzzy
-msgid "Download"
-msgstr "Descarcă"
+#. # Prompt that appears when a user tries to delete an app.
+#: delete-title
+msgid "Delete {{name}}"
+msgstr "Șterge {{name}}"
 
-#: homescreen-settings
-msgid "Homescreen Settings"
-msgstr ""
+#: delete-body
+msgid "{{name}} and all of its data will be deleted."
+msgstr "{{name}} și toate datele sale vor fi șterse."
 
-#: cancel-action
-#, fuzzy
+#: delete
+msgid "Delete"
+msgstr "Șterge"
+
+#: cancel
+msgctxt "cancel"
 msgid "Cancel"
 msgstr "Renunță"
 
-#: apps-panel
-msgid "Applications"
+#. # Prompt that appears when a user tries to remove a site saved to the homescreen.
+#: remove-title-2
+msgid "Remove {{name}}"
+msgstr "Elimină {{name}}"
+
+#: remove-body
+msgid "Remove {{name}} from the homescreen?"
+msgstr "Elimini {{name}} de pe ecranul principal?"
+
+#: remove
+msgid "Remove"
+msgstr "Elimină"
+
+#. # Landing
+#: longDateFormat
+msgid "%A, %B %e"
+msgstr "%A, %e %B"
+
+#. # App reinstall
+#: download
+msgctxt "download"
+msgid "Download"
+msgstr "Descarcă"
+
+#: restart-download-title
+msgid "Restart Download"
+msgstr "Repornește descărcarea"
+
+#: restart-download-body
+msgid "Do you want to download {{name}}?"
+msgstr "Dorești să descarci {{name}}?"
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: paginationBarText
+msgid "Page {{current}} of {{total}}"
+msgstr "Pagina {{current}} din {{total}}"
+
+#: paginationScroller.ariaLabel
+msgid "Homescreen"
+msgstr "Ecran principal"
+
+#. # Evme
+#: loadingEvme2
+msgctxt "loadingEvme2"
+msgid "Loading…"
+msgstr "Se încarcă…"
+
+#. #See bug 838634 for why those keys are still here
+#: evme-searchbar-default
+msgid "Everything…"
+msgstr "Totul…"
+
+#: evme-searchbar-default2
+msgctxt "evme-searchbar-default2"
+msgid "I’m thinking of…"
+msgstr "Mă gândesc la…"
+
+#: evme-searchbar-default2.placeholder
+msgctxt "evme-searchbar-default2.placeholder"
+msgid "I’m thinking of…"
+msgstr "Mă gândesc la…"
+
+#: evme-searchbar-clear
+msgid "Back"
+msgstr "Înapoi"
+
+#: evme-searchbar-default.placeholder
+msgctxt "evme-searchbar-default.placeholder"
+msgid "I’m thinking of…"
+msgstr "Mă gândesc la…"
+
+#: evme-searchbar-title
+msgctxt "evme-searchbar-title"
+msgid "Everything"
+msgstr "Totul"
+
+#. # Helper - in search page, under the search bar
+#. # See bug 838634 to see why the 2 keys cohabits.
+#: evme-helper-default
+msgid "Enter any topic or search query"
+msgstr "Introdu orice subiect sau căutare"
+
+#: evme-helper-default2
+msgid "Enter any topic or keyword"
+msgstr "Introdu orice subiect sau cuvânt cheie"
+
+#: evme-helper-dismiss
+msgid "Dismiss"
+msgstr "Înlătură"
+
+#: evme-helper-no-refine
+msgid "No options found"
+msgstr "Nicio opțiune găsită"
+
+#: evme-helper-history-title
+msgid "History:"
+msgstr "Istoric:"
+
+#: evme-helper-history-link
+msgid "History"
+msgstr "Istoric"
+
+#: evme-helper-history-clear
+msgid "Clear history"
+msgstr "Curăță istoricul"
+
+#: evme-helper-didyoumean-title
+msgctxt "evme-helper-didyoumean-title"
+msgid "Did you mean:"
+msgstr "Ai vrut să spui:"
+
+#: evme-helper-refine-title
+msgctxt "evme-helper-refine-title"
+msgid "Did you mean:"
+msgstr "Ai vrut să spui:"
+
+#: evme-helper-title-prefix
+msgctxt "evme-helper-title-prefix"
+msgid "Everything"
+msgstr "Totul"
+
+#: evme-helper-title-empty
+msgctxt "evme-helper-title-empty"
+msgid "Everything"
+msgstr "Totul"
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: evme-helper-save-search
+msgid "Add to homescreen"
+msgstr "Adaugă la ecran"
+
+#: evme-helper-unsave-search
+msgid "Remove from homescreen"
+msgstr "Elimină de pe ecran"
+
+#: evme-apps-market-download
+msgctxt "evme-apps-market-download"
+msgid "Download"
+msgstr "Descarcă"
+
+#: evme-apps-market-more-apps
+msgid "More Apps"
+msgstr "Mai multe aplicații"
+
+#: evme-apps-loading-app
+msgctxt "evme-apps-loading-app"
+msgid "Loading…"
+msgstr "Se încarcă…"
+
+#: evme-appsmore-loading
+msgctxt "evme-appsmore-loading"
+msgid "Loading…"
+msgstr "Se încarcă…"
+
+#: evme-alert-app-install-confirm
+msgid "Add {{name}} to Home Screen?"
+msgstr "Adaugi {{name}} la ecranul principal?"
+
+#: evme-alert-app-install-exists
+msgid "{{name}} was already added to Home Screen"
+msgstr "{{name}} a fost deja adăugat la ecranul principal"
+
+#: evme-alert-offline-smart-collections-more
+msgid "Connect to the internet to add more Smart Collections"
+msgstr "Conectează-te la net pentru a adăuga mai multe colecții inteligente"
+
+#: evme-alert-save-wallpaper
+msgid "Set as wallpaper?"
+msgstr "Setezi ca imagine de fundal?"
+
+#: evme-alert-no-more-smart-collections
+msgid "No Smart Collections to add"
+msgstr "Nicio colecție inteligentă de adăugat"
+
+#: evme-banner-app-install-success
+msgid "{{name}} added to Home Screen"
+msgstr "{{name}} adăugat la ecranul principal"
+
+#: evme-banner-save-wallpaper
+msgid "Wallpaper set successfully"
+msgstr "Imagine de fundal setată cu succes"
+
+#. # Shortcuts - AKA smart collections - evme homepage
+#: evme-shortcuts-more
+msgid "More"
+msgstr "Mai multe"
+
+#: evme-collectionssuggest-loading
+msgctxt "evme-collectionssuggest-loading"
+msgid "Loading…"
+msgstr "Se încarcă…"
+
+#: evme-collectionssuggest-loading-cancel
+msgctxt "evme-collectionssuggest-loading-cancel"
+msgid "Cancel"
+msgstr "Renunță"
+
+#: evme-collectionssuggest-prompt-create-custom
+msgid "Create your own Smart Collection"
+msgstr "Creează-ți propria colecție inteligentă"
+
+#: evme-backgroundimage-source-label
+msgid "Source:"
+msgstr "Sursă:"
+
+#: evme-collection-title-prefix
+msgctxt "evme-collection-title-prefix"
+msgid "Everything"
+msgstr "Totul"
+
+#: evme-collection-title-suffix
+msgid "Phone"
+msgstr "Telefon"
+
+#: evme-collection-loading-more
+msgctxt "evme-collection-loading-more"
+msgid "Loading…"
+msgstr "Se încarcă…"
+
+#. # {{query}} will always be the user's current query from the searchbox
+#: evme-connectionmessage-apps
+msgid "Connect to the internet to get apps for {{query}}"
+msgstr "Conectează-te la net pentru a obține aplicații pentru {{query}}"
+
+#: evme-connectionmessage-apps-has-installed
+msgid "Connect to the internet to get even more apps for {{query}}"
 msgstr ""
+"Conectează-te la net pentru a obține și mai multe aplicații pentru {{query}}"
 
-#: pages-panel
-msgid "Pinned Pages"
+#. # tips are shown throughout the app on certain actions
+#: evme-tips-app-explain.innerHTML
+msgid "Find the things you love with the coolest apps."
+msgstr "Găsește lucrurile îndrăgite cu cele mai grozave aplicații."
+
+#: evme-tips-searchbar-focus.innerHTML
+msgid "For example, find your favorite singer or band…"
+msgstr "De exemplu, găsește cântărețul sau trupa favorită…"
+
+#: evme-tips-exact-results.innerHTML
+msgid ""
+"These are the apps for <b>{{query}}</b>,<br /><br /> tap any icon to open it."
 msgstr ""
-
-#~ msgid "{{topic}} on {{name}}"
-#~ msgstr "{{topic}} pe {{name}}"
-
-#~ msgid "Change Wallpaper"
-#~ msgstr "Schimbă fundalul"
-
-#~ msgid "Add Smart Collections"
-#~ msgstr "Adaugă colecții inteligente"
-
-#~ msgid "Delete {{name}}"
-#~ msgstr "Șterge {{name}}"
-
-#~ msgid "{{name}} and all of its data will be deleted."
-#~ msgstr "{{name}} și toate datele sale vor fi șterse."
-
-#~ msgid "Delete"
-#~ msgstr "Șterge"
-
-#~ msgid "Remove {{name}}"
-#~ msgstr "Elimină {{name}}"
-
-#~ msgid "Remove {{name}} from the homescreen?"
-#~ msgstr "Elimini {{name}} de pe ecranul principal?"
-
-#~ msgid "Remove"
-#~ msgstr "Elimină"
-
-#~ msgid "%A, %B %e"
-#~ msgstr "%A, %e %B"
-
-#~ msgid "Restart Download"
-#~ msgstr "Repornește descărcarea"
-
-#~ msgid "Page {{current}} of {{total}}"
-#~ msgstr "Pagina {{current}} din {{total}}"
-
-#~ msgid "Homescreen"
-#~ msgstr "Ecran principal"
-
-#~ msgctxt "loadingEvme2"
-#~ msgid "Loading…"
-#~ msgstr "Se încarcă…"
-
-#~ msgid "Everything…"
-#~ msgstr "Totul…"
-
-#~ msgctxt "evme-searchbar-default2"
-#~ msgid "I’m thinking of…"
-#~ msgstr "Mă gândesc la…"
-
-#~ msgctxt "evme-searchbar-default2.placeholder"
-#~ msgid "I’m thinking of…"
-#~ msgstr "Mă gândesc la…"
-
-#~ msgid "Back"
-#~ msgstr "Înapoi"
-
-#~ msgctxt "evme-searchbar-default.placeholder"
-#~ msgid "I’m thinking of…"
-#~ msgstr "Mă gândesc la…"
-
-#~ msgctxt "evme-searchbar-title"
-#~ msgid "Everything"
-#~ msgstr "Totul"
-
-#~ msgid "Enter any topic or search query"
-#~ msgstr "Introdu orice subiect sau căutare"
-
-#~ msgid "Enter any topic or keyword"
-#~ msgstr "Introdu orice subiect sau cuvânt cheie"
-
-#~ msgid "Dismiss"
-#~ msgstr "Înlătură"
-
-#~ msgid "No options found"
-#~ msgstr "Nicio opțiune găsită"
-
-#~ msgid "History:"
-#~ msgstr "Istoric:"
-
-#~ msgid "History"
-#~ msgstr "Istoric"
-
-#~ msgid "Clear history"
-#~ msgstr "Curăță istoricul"
-
-#~ msgctxt "evme-helper-didyoumean-title"
-#~ msgid "Did you mean:"
-#~ msgstr "Ai vrut să spui:"
-
-#~ msgctxt "evme-helper-refine-title"
-#~ msgid "Did you mean:"
-#~ msgstr "Ai vrut să spui:"
-
-#~ msgctxt "evme-helper-title-prefix"
-#~ msgid "Everything"
-#~ msgstr "Totul"
-
-#~ msgctxt "evme-helper-title-empty"
-#~ msgid "Everything"
-#~ msgstr "Totul"
-
-#~ msgid "Add to homescreen"
-#~ msgstr "Adaugă la ecran"
-
-#~ msgid "Remove from homescreen"
-#~ msgstr "Elimină de pe ecran"
-
-#~ msgctxt "evme-apps-market-download"
-#~ msgid "Download"
-#~ msgstr "Descarcă"
-
-#~ msgid "More Apps"
-#~ msgstr "Mai multe aplicații"
-
-#~ msgctxt "evme-apps-loading-app"
-#~ msgid "Loading…"
-#~ msgstr "Se încarcă…"
-
-#~ msgctxt "evme-appsmore-loading"
-#~ msgid "Loading…"
-#~ msgstr "Se încarcă…"
-
-#~ msgid "Add {{name}} to Home Screen?"
-#~ msgstr "Adaugi {{name}} la ecranul principal?"
-
-#~ msgid "{{name}} was already added to Home Screen"
-#~ msgstr "{{name}} a fost deja adăugat la ecranul principal"
-
-#~ msgid "Connect to the internet to add more Smart Collections"
-#~ msgstr "Conectează-te la net pentru a adăuga mai multe colecții inteligente"
-
-#~ msgid "Set as wallpaper?"
-#~ msgstr "Setezi ca imagine de fundal?"
-
-#~ msgid "No Smart Collections to add"
-#~ msgstr "Nicio colecție inteligentă de adăugat"
-
-#~ msgid "{{name}} added to Home Screen"
-#~ msgstr "{{name}} adăugat la ecranul principal"
-
-#~ msgid "Wallpaper set successfully"
-#~ msgstr "Imagine de fundal setată cu succes"
-
-#~ msgid "More"
-#~ msgstr "Mai multe"
-
-#~ msgctxt "evme-collectionssuggest-loading"
-#~ msgid "Loading…"
-#~ msgstr "Se încarcă…"
-
-#~ msgctxt "evme-collectionssuggest-loading-cancel"
-#~ msgid "Cancel"
-#~ msgstr "Renunță"
-
-#~ msgid "Create your own Smart Collection"
-#~ msgstr "Creează-ți propria colecție inteligentă"
-
-#~ msgid "Source:"
-#~ msgstr "Sursă:"
-
-#~ msgctxt "evme-collection-title-prefix"
-#~ msgid "Everything"
-#~ msgstr "Totul"
-
-#~ msgid "Phone"
-#~ msgstr "Telefon"
-
-#~ msgctxt "evme-collection-loading-more"
-#~ msgid "Loading…"
-#~ msgstr "Se încarcă…"
-
-#~ msgid "Connect to the internet to get apps for {{query}}"
-#~ msgstr "Conectează-te la net pentru a obține aplicații pentru {{query}}"
-
-#~ msgid "Connect to the internet to get even more apps for {{query}}"
-#~ msgstr ""
-#~ "Conectează-te la net pentru a obține și mai multe aplicații pentru "
-#~ "{{query}}"
-
-#~ msgid "Find the things you love with the coolest apps."
-#~ msgstr "Găsește lucrurile îndrăgite cu cele mai grozave aplicații."
-
-#~ msgid "For example, find your favorite singer or band…"
-#~ msgstr "De exemplu, găsește cântărețul sau trupa favorită…"
-
-#~ msgid ""
-#~ "These are the apps for <b>{{query}}</b>,<br /><br /> tap any icon to open "
-#~ "it."
-#~ msgstr ""
-#~ "Acestea sunt aplicațiile pentru <b>{{query}}</b>,<br /><br /> atinge "
-#~ "orice iconiță pentru a le deschide."
-
-#~ msgid "Custom…"
-#~ msgstr "Personalizat…"
-
-#~ msgid "Astrology"
-#~ msgstr "Astrologie"
-
-#~ msgid "Autos"
-#~ msgstr "Auto"
-
-#~ msgid "Beauty"
-#~ msgstr "Frumusețe"
-
-#~ msgid "Books"
-#~ msgstr "Cărți"
-
-#~ msgid "Celebs"
-#~ msgstr "Celebrități"
-
-#~ msgid "Daily Deals"
-#~ msgstr "Oferte zilnice"
-
-#~ msgid "Dating"
-#~ msgstr "Întâlniri"
-
-#~ msgid "Electronics"
-#~ msgstr "Electronice"
-
-#~ msgid "Email"
-#~ msgstr "E-mail"
-
-#~ msgid "Entertainment"
-#~ msgstr "Divertisment"
-
-#~ msgid "Environment"
-#~ msgstr "Mediu înconjurător"
-
-#~ msgid "Fashion"
-#~ msgstr "Modă"
-
-#~ msgid "Funny"
-#~ msgstr "Amuzament"
-
-#~ msgid "Games"
-#~ msgstr "Jocuri"
-
-#~ msgid "Government"
-#~ msgstr "Guvernământ"
-
-#~ msgid "Health"
-#~ msgstr "Sănătate"
-
-#~ msgid "Jobs"
-#~ msgstr "Locuri de muncă"
-
-#~ msgid "Local"
-#~ msgstr "Local"
-
-#~ msgid "Maps"
-#~ msgstr "Hărți"
-
-#~ msgid "Movies"
-#~ msgstr "Videoclipuri"
-
-#~ msgid "Music"
-#~ msgstr "Muzică"
-
-#~ msgid "New Apps"
-#~ msgstr "Aplicații noi"
-
-#~ msgid "News"
-#~ msgstr "Știri"
-
-#~ msgid "Photography"
-#~ msgstr "Fotografie"
-
-#~ msgid "Recipes"
-#~ msgstr "Rețete"
-
-#~ msgid "Restaurants"
-#~ msgstr "Restaurante"
-
-#~ msgid "Shopping"
-#~ msgstr "Cumpărături"
-
-#~ msgid "Social"
-#~ msgstr "Socializare"
-
-#~ msgid "Sports"
-#~ msgstr "Sporturi"
-
-#~ msgid "Tech News"
-#~ msgstr "Știri tehnologice"
-
-#~ msgid "Top Apps"
-#~ msgstr "Aplicații de top"
-
-#~ msgid "Travel"
-#~ msgstr "Călătorie"
-
-#~ msgid "TV"
-#~ msgstr "TV"
-
-#~ msgid "Video"
-#~ msgstr "Video"
-
-#~ msgid "Utilities"
-#~ msgstr "Utilități"
-
-#~ msgid "Weather"
-#~ msgstr "Meteo"
-
-#~ msgid "Add to top of collection"
-#~ msgstr "Adaugă în fruntea colecției"
-
-#~ msgid "Save to Homescreen"
-#~ msgstr "Salvează la ecran"
-
-#~ msgid "Edit"
-#~ msgstr "Editează"
-
-#~ msgid "Website name"
-#~ msgstr "Numele site-ului web"
-
-#~ msgid "Address"
-#~ msgstr "Adresa"
-
-#~ msgctxt "edit-dialog-cancel"
-#~ msgid "Cancel"
-#~ msgstr "Renunță"
-
-#~ msgid "Done"
-#~ msgstr "Gata"
-
-#~ msgid "Close"
-#~ msgstr "Închide"
-
-#~ msgid "Save"
-#~ msgstr "Salvează"
+"Acestea sunt aplicațiile pentru <b>{{query}}</b>,<br /><br /> atinge orice "
+"iconiță pentru a le deschide."
+
+#. # collection translations
+#: evme-shortcut-custom
+msgid "Custom…"
+msgstr "Personalizat…"
+
+#: evme-shortcut-id-astrology
+msgid "Astrology"
+msgstr "Astrologie"
+
+#: evme-shortcut-id-autos
+msgid "Autos"
+msgstr "Auto"
+
+#: evme-shortcut-id-beauty
+msgid "Beauty"
+msgstr "Frumusețe"
+
+#: evme-shortcut-id-books
+msgid "Books"
+msgstr "Cărți"
+
+#: evme-shortcut-id-celebs
+msgid "Celebs"
+msgstr "Celebrități"
+
+#: evme-shortcut-id-daily-deals
+msgid "Daily Deals"
+msgstr "Oferte zilnice"
+
+#: evme-shortcut-id-dating
+msgid "Dating"
+msgstr "Întâlniri"
+
+#: evme-shortcut-id-electronics
+msgid "Electronics"
+msgstr "Electronice"
+
+#: evme-shortcut-id-email
+msgid "Email"
+msgstr "E-mail"
+
+#: evme-shortcut-id-entertainment
+msgid "Entertainment"
+msgstr "Divertisment"
+
+#: evme-shortcut-id-environment
+msgid "Environment"
+msgstr "Mediu înconjurător"
+
+#: evme-shortcut-id-fashion
+msgid "Fashion"
+msgstr "Modă"
+
+#: evme-shortcut-id-funny
+msgid "Funny"
+msgstr "Amuzament"
+
+#: evme-shortcut-id-games
+msgid "Games"
+msgstr "Jocuri"
+
+#: evme-shortcut-id-government
+msgid "Government"
+msgstr "Guvernământ"
+
+#: evme-shortcut-id-health
+msgid "Health"
+msgstr "Sănătate"
+
+#: evme-shortcut-id-jobs
+msgid "Jobs"
+msgstr "Locuri de muncă"
+
+#: evme-shortcut-id-local
+msgid "Local"
+msgstr "Local"
+
+#: evme-shortcut-id-maps
+msgid "Maps"
+msgstr "Hărți"
+
+#: evme-shortcut-id-movies
+msgid "Movies"
+msgstr "Videoclipuri"
+
+#: evme-shortcut-id-music
+msgid "Music"
+msgstr "Muzică"
+
+#: evme-shortcut-id-new-apps
+msgid "New Apps"
+msgstr "Aplicații noi"
+
+#: evme-shortcut-id-news
+msgid "News"
+msgstr "Știri"
+
+#: evme-shortcut-id-photography
+msgid "Photography"
+msgstr "Fotografie"
+
+#: evme-shortcut-id-recipes
+msgid "Recipes"
+msgstr "Rețete"
+
+#: evme-shortcut-id-restaurants
+msgid "Restaurants"
+msgstr "Restaurante"
+
+#: evme-shortcut-id-shopping
+msgid "Shopping"
+msgstr "Cumpărături"
+
+#: evme-shortcut-id-social
+msgid "Social"
+msgstr "Socializare"
+
+#: evme-shortcut-id-sports
+msgid "Sports"
+msgstr "Sporturi"
+
+#: evme-shortcut-id-tech-news
+msgid "Tech News"
+msgstr "Știri tehnologice"
+
+#: evme-shortcut-id-top-apps
+msgid "Top Apps"
+msgstr "Aplicații de top"
+
+#: evme-shortcut-id-travel
+msgid "Travel"
+msgstr "Călătorie"
+
+#: evme-shortcut-id-tv
+msgid "TV"
+msgstr "TV"
+
+#: evme-shortcut-id-video
+msgid "Video"
+msgstr "Video"
+
+#: evme-shortcut-id-utilities
+msgid "Utilities"
+msgstr "Utilități"
+
+#: evme-shortcut-id-weather
+msgid "Weather"
+msgstr "Meteo"
+
+#. #search contextmenu
+#: evme-add-to-top-of-collection
+msgid "Add to top of collection"
+msgstr "Adaugă în fruntea colecției"
+
+#: evme-save-to-homescreen
+msgid "Save to Homescreen"
+msgstr "Salvează la ecran"
+
+#. # edit dialog
+#: edit-dialog-header
+msgid "Edit"
+msgstr "Editează"
+
+#: edit-dialog-name
+msgid "Website name"
+msgstr "Numele site-ului web"
+
+#: edit-dialog-url
+msgid "Address"
+msgstr "Adresa"
+
+#: edit-dialog-cancel
+msgctxt "edit-dialog-cancel"
+msgid "Cancel"
+msgstr "Renunță"
+
+#: edit-dialog-done
+msgid "Done"
+msgstr "Gata"
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: evme-close.ariaLabel
+msgid "Close"
+msgstr "Închide"
+
+#: evme-done.ariaLabel
+msgid "Save"
+msgstr "Salvează"
 
 #~ msgid "Add link"
 #~ msgstr "Adaugă legătură"
