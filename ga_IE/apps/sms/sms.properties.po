@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firefox\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-01 05:45+0000\n"
+"POT-Creation-Date: 2015-09-07 14:45+0000\n"
 "PO-Revision-Date: 2015-04-18 01:33+0000\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :"
 "(n>6 && n<11) ? 3 : 4;;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1429320834.000000\n"
@@ -58,6 +58,18 @@ msgstr "Déanta"
 #: delete
 msgid "Delete"
 msgstr "Scrios"
+
+#: delete-thread
+msgid "Delete thread"
+msgstr ""
+
+#: mark-as-read
+msgid "Mark as read"
+msgstr ""
+
+#: mark-as-unread
+msgid "Mark as unread"
+msgstr ""
 
 #: deleting-messages
 msgid "Deleting…"
@@ -151,6 +163,8 @@ msgid "Select Messages"
 msgstr "Roghnaigh Teachtaireachtaí"
 
 #: settings
+#, fuzzy
+msgctxt "settings"
 msgid "Settings"
 msgstr "Socruithe"
 
@@ -176,8 +190,9 @@ msgctxt "message"
 msgid "Message"
 msgstr "Teachtaireacht"
 
-#: messagesInput_placeholder
-msgctxt "messagesInput_placeholder"
+#: messagesInput.title
+#, fuzzy
+msgctxt "messagesInput.title"
 msgid "Message"
 msgstr "Teachtaireacht"
 
@@ -214,6 +229,8 @@ msgstr ""
 "teachtaireacht lena seoladh."
 
 #: newMessage
+#, fuzzy
+msgctxt "newMessage"
 msgid "New message"
 msgstr "Teachtaireacht nua"
 
@@ -373,14 +390,6 @@ msgstr "Diúltaíodh an teachtaireacht"
 msgid "Message size:"
 msgstr "Méid na teachtaireachta:"
 
-#: report-dateTimeFormat12
-msgid "%e %B %Y, {{shortTimeFormat12}}"
-msgstr "%e %B %Y, {{shortTimeFormat12}}"
-
-#: report-dateTimeFormat24
-msgid "%e %B %Y, {{shortTimeFormat24}}"
-msgstr "%e %B %Y, {{shortTimeFormat24}}"
-
 #: report-to-title
 msgid "To"
 msgstr "Chuig"
@@ -454,10 +463,9 @@ msgstr "Forscríobh an Dréacht atá ann"
 msgid "Save as Draft"
 msgstr "Sábháil mar Dhréacht"
 
-#: discard-message
-msgctxt "discard-message"
-msgid "Discard"
-msgstr "Ná Sábháil"
+#: delete-draft
+msgid "Delete draft"
+msgstr ""
 
 #: discard-sms
 msgid "Are you sure you want to discard this message?"
@@ -478,15 +486,88 @@ msgid "Resend this message"
 msgstr "Athsheol an teachtaireacht seo"
 
 #: deleteMessage-confirmation
+#, fuzzy
+msgctxt "deleteMessage-confirmation"
 msgid "Delete selected message?"
 msgstr "Scrios an teachtaireacht roghnaithe?"
 
-#: deleteMessages-confirmation
-msgid "Delete selected messages?"
+#: deleteMessages-confirmation-message
+#, fuzzy
+msgctxt "deleteMessages-confirmation-message"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: deleteMessages-confirmation-message[zero]
+msgid "Please select messages to be deleted."
+msgstr ""
+
+#: deleteMessages-confirmation-message[one]
+#, fuzzy
+msgctxt "deleteMessages-confirmation-message[one]"
+msgid "Delete selected message?"
+msgstr "Scrios an teachtaireacht roghnaithe?"
+
+#: deleteMessages-confirmation-message[two]
+#, fuzzy
+msgctxt "deleteMessages-confirmation-message[two]"
+msgid "Delete {{n}} selected messages?"
 msgstr "Scrios na teachtaireachtaí roghnaithe?"
 
-#: deleteThreads-confirmation2
-msgid "Delete selected message threads?"
+#: deleteMessages-confirmation-message[few]
+#, fuzzy
+msgctxt "deleteMessages-confirmation-message[few]"
+msgid "Delete {{n}} selected messages?"
+msgstr "Scrios na teachtaireachtaí roghnaithe?"
+
+#: deleteMessages-confirmation-message[many]
+#, fuzzy
+msgctxt "deleteMessages-confirmation-message[many]"
+msgid "Delete {{n}} selected messages?"
+msgstr "Scrios na teachtaireachtaí roghnaithe?"
+
+#: deleteMessages-confirmation-message[other]
+#, fuzzy
+msgctxt "deleteMessages-confirmation-message[other]"
+msgid "Delete {{n}} selected messages?"
+msgstr "Scrios na teachtaireachtaí roghnaithe?"
+
+#: deleteThreads-confirmation-message
+#, fuzzy
+msgctxt "deleteThreads-confirmation-message"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: deleteThreads-confirmation-message[zero]
+msgid "Please select message threads to be deleted."
+msgstr ""
+
+#: deleteThreads-confirmation-message[one]
+#, fuzzy
+msgid "Delete selected message thread?"
+msgstr "Scrios na snáitheanna roghnaithe?"
+
+#: deleteThreads-confirmation-message[two]
+#, fuzzy
+msgctxt "deleteThreads-confirmation-message[two]"
+msgid "Delete {{n}} selected message threads?"
+msgstr "Scrios na snáitheanna roghnaithe?"
+
+#: deleteThreads-confirmation-message[few]
+#, fuzzy
+msgctxt "deleteThreads-confirmation-message[few]"
+msgid "Delete {{n}} selected message threads?"
+msgstr "Scrios na snáitheanna roghnaithe?"
+
+#: deleteThreads-confirmation-message[many]
+#, fuzzy
+msgctxt "deleteThreads-confirmation-message[many]"
+msgid "Delete {{n}} selected message threads?"
+msgstr "Scrios na snáitheanna roghnaithe?"
+
+#: deleteThreads-confirmation-message[other]
+#, fuzzy
+msgctxt "deleteThreads-confirmation-message[other]"
+msgid "Delete {{n}} selected message threads?"
 msgstr "Scrios na snáitheanna roghnaithe?"
 
 #: new-message-notice-text
@@ -571,14 +652,14 @@ msgstr "SMS {{number}} á chur in eagar"
 
 #. #LOCALIZATION NOTE (fdnErrorBody): the English translation does not need the
 #. # actual number of phone numbers. If your translation needs it, you can still add it
-#. # using the parameter {{ n }}. Also take into account that you could add HTML so be
-#. # careful with the content, it may affect to the whole app.
-#: fdnErrorBody.innerHTML
-msgctxt "fdnErrorBody.innerHTML"
+#. # using the parameter {{ n }}.
+#: fdnErrorBody
+#, fuzzy
+msgctxt "fdnErrorBody"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: fdnErrorBody.innerHTML[one]
+#: fdnErrorBody[one]
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipient are in your FDN list:"
@@ -586,8 +667,9 @@ msgstr ""
 "Tá an córas FDN (Uimhreacha Socraithe Diailithe) ar siúl. Deimhnigh go "
 "bhfuil an lárionad SMS agus an faighteoir seo a leanas ar do liosta FDN:"
 
-#: fdnErrorBody.innerHTML[two]
-msgctxt "fdnErrorBody.innerHTML[two]"
+#: fdnErrorBody[two]
+#, fuzzy
+msgctxt "fdnErrorBody[two]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipients are in your FDN list:"
@@ -595,8 +677,9 @@ msgstr ""
 "Tá an córas FDN (Uimhreacha Socraithe Diailithe) ar siúl. Deimhnigh go "
 "bhfuil an lárionad SMS agus na faighteoirí seo a leanas ar do liosta FDN:"
 
-#: fdnErrorBody.innerHTML[few]
-msgctxt "fdnErrorBody.innerHTML[few]"
+#: fdnErrorBody[few]
+#, fuzzy
+msgctxt "fdnErrorBody[few]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipients are in your FDN list:"
@@ -604,8 +687,9 @@ msgstr ""
 "Tá an córas FDN (Uimhreacha Socraithe Diailithe) ar siúl. Deimhnigh go "
 "bhfuil an lárionad SMS agus na faighteoirí seo a leanas ar do liosta FDN:"
 
-#: fdnErrorBody.innerHTML[many]
-msgctxt "fdnErrorBody.innerHTML[many]"
+#: fdnErrorBody[many]
+#, fuzzy
+msgctxt "fdnErrorBody[many]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipients are in your FDN list:"
@@ -613,8 +697,9 @@ msgstr ""
 "Tá an córas FDN (Uimhreacha Socraithe Diailithe) ar siúl. Deimhnigh go "
 "bhfuil an lárionad SMS agus na faighteoirí seo a leanas ar do liosta FDN:"
 
-#: fdnErrorBody.innerHTML[other]
-msgctxt "fdnErrorBody.innerHTML[other]"
+#: fdnErrorBody[other]
+#, fuzzy
+msgctxt "fdnErrorBody[other]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipients are in your FDN list:"
@@ -789,10 +874,11 @@ msgstr "Ionadaigh iatán"
 msgid "Unsent Message"
 msgstr "Teachtaireacht Gan Seoladh"
 
-#: unsent-message-description
+#: unsent-message-text
+#, fuzzy
 msgid ""
-"Your previous message was not sent. Do you want to edit the unsent message "
-"or discard it and continue?"
+"Your previous message was not sent. Do you want to discard the unsent "
+"message and continue?"
 msgstr ""
 "Níor seoladh an teachtaireacht roimhe seo. An bhfuil fonn ort an "
 "teachtaireacht neamhsheolta a chur in eagar, nó í a scriosadh agus leanúint "
@@ -804,13 +890,17 @@ msgid "Edit"
 msgstr "Eagar"
 
 #: unsent-message-option-discard
-msgctxt "unsent-message-option-discard"
+#, fuzzy
 msgid "Discard"
 msgstr "Scrios"
 
 #: message-options
 msgid "Message options"
 msgstr "Roghanna teachtaireachtaí"
+
+#: thread-options
+msgid "Thread options"
+msgstr ""
 
 #: forward
 msgid "Forward"
@@ -866,13 +956,17 @@ msgstr "Eile"
 msgid "today"
 msgstr "inniu"
 
+#: todayWithTime
+msgid "today {{ time }}"
+msgstr ""
+
 #: yesterday
 msgid "yesterday"
 msgstr "inné"
 
-#: incorrectDate
-msgid "(incorrect date)"
-msgstr "(dáta mícheart)"
+#: yesterdayWithTime
+msgid "yesterday {{ time }}"
+msgstr ""
 
 #. #Phone Context Menu
 #: addToExistingContact
@@ -888,6 +982,8 @@ msgid "View contact"
 msgstr "Amharc ar an teagmhálaí"
 
 #: call
+#, fuzzy
+msgctxt "call"
 msgid "Call"
 msgstr "Glaoigh"
 
@@ -1024,6 +1120,10 @@ msgstr "SIM {{id}}"
 msgid "SIM {{id}}, {{detailString}}"
 msgstr "SIM {{id}}, {{detailString}}"
 
+#: dsds-unknown-sim
+msgid "unknown SIM"
+msgstr ""
+
 #: dsds-notification-title-with-sim
 msgid "({{sim}}) {{sender}}"
 msgstr "({{sim}}) {{sender}}"
@@ -1043,16 +1143,6 @@ msgstr "{{n}}"
 #: send-button-sim-indication.ariaLabel
 msgid "using SIM {{n}}"
 msgstr "ag úsáid SIM {{n}}"
-
-#. # Date formats specific for SMS app
-#. # LOCALIZATION NOTE (expiry-date-format): this is a date format.
-#. # See http://pubs.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#. # %A is the full weekday name from shared/date/date.properties and it might
-#. # not be in the correct grammatical case. To work around this issue, you can
-#. # use a different format like "%m/%d/%Y".
-#: expiry-date-format
-msgid "%A, %b %e"
-msgstr "%A, %e %b"
 
 #. # Labels for screen reader
 #: attach-button.ariaLabel
@@ -1074,6 +1164,28 @@ msgstr "A bhfuil dréacht aige"
 #: is-draft.ariaLabel
 msgid "Draft"
 msgstr "Dréacht"
+
+#: actionsButton.ariaLabel
+msgid "Actions"
+msgstr ""
+
+#: settingsButton.ariaLabel
+#, fuzzy
+msgctxt "settingsButton.ariaLabel"
+msgid "Settings"
+msgstr "Socruithe"
+
+#: composeLink.ariaLabel
+#, fuzzy
+msgctxt "composeLink.ariaLabel"
+msgid "New message"
+msgstr "Teachtaireacht nua"
+
+#: callButton.ariaLabel
+#, fuzzy
+msgctxt "callButton.ariaLabel"
+msgid "Call"
+msgstr "Glaoigh"
 
 #. # Message statuses
 #: message-delivery-status-sending
@@ -1109,6 +1221,54 @@ msgstr "Cealaigh"
 msgctxt "modal-dialog-default-title"
 msgid "Messages"
 msgstr "Teachtaireachtaí"
+
+#~ msgctxt "messagesInput_placeholder"
+#~ msgid "Message"
+#~ msgstr "Teachtaireacht"
+
+#~ msgid "%e %B %Y, {{shortTimeFormat12}}"
+#~ msgstr "%e %B %Y, {{shortTimeFormat12}}"
+
+#~ msgid "%e %B %Y, {{shortTimeFormat24}}"
+#~ msgstr "%e %B %Y, {{shortTimeFormat24}}"
+
+#~ msgctxt "fdnErrorBody.innerHTML"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "fdnErrorBody.innerHTML[few]"
+#~ msgid ""
+#~ "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and "
+#~ "the following recipients are in your FDN list:"
+#~ msgstr ""
+#~ "Tá an córas FDN (Uimhreacha Socraithe Diailithe) ar siúl. Deimhnigh go "
+#~ "bhfuil an lárionad SMS agus na faighteoirí seo a leanas ar do liosta FDN:"
+
+#~ msgctxt "fdnErrorBody.innerHTML[many]"
+#~ msgid ""
+#~ "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and "
+#~ "the following recipients are in your FDN list:"
+#~ msgstr ""
+#~ "Tá an córas FDN (Uimhreacha Socraithe Diailithe) ar siúl. Deimhnigh go "
+#~ "bhfuil an lárionad SMS agus na faighteoirí seo a leanas ar do liosta FDN:"
+
+#~ msgctxt "fdnErrorBody.innerHTML[other]"
+#~ msgid ""
+#~ "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and "
+#~ "the following recipients are in your FDN list:"
+#~ msgstr ""
+#~ "Tá an córas FDN (Uimhreacha Socraithe Diailithe) ar siúl. Deimhnigh go "
+#~ "bhfuil an lárionad SMS agus na faighteoirí seo a leanas ar do liosta FDN:"
+
+#~ msgctxt "unsent-message-option-discard"
+#~ msgid "Discard"
+#~ msgstr "Scrios"
+
+#~ msgid "(incorrect date)"
+#~ msgstr "(dáta mícheart)"
+
+#~ msgid "%A, %b %e"
+#~ msgstr "%A, %e %b"
 
 #~ msgctxt "fdnBlocked2Body.innerHTML"
 #~ msgid "{[ plural(n) ]}"

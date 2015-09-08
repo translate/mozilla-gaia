@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-19 18:45+0000\n"
+"POT-Creation-Date: 2015-09-07 14:45+0000\n"
 "PO-Revision-Date: 2015-03-30 01:47+0000\n"
 "Last-Translator: Jordi Serratosa <jordis@softcatala.cat>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1427680069.000000\n"
@@ -773,10 +773,6 @@ msgstr "Importa els contactes"
 msgid "SIM card"
 msgstr "Targeta SIM"
 
-#: importFb2
-msgid "Facebook"
-msgstr "Facebook"
-
 #: importOutlook
 msgid "Outlook"
 msgstr "Outlook"
@@ -784,10 +780,6 @@ msgstr "Outlook"
 #: importGmail
 msgid "Gmail"
 msgstr "Gmail"
-
-#: fb-checking
-msgid "… checking"
-msgstr "… s'està comprovant"
 
 #: notImportedYet
 msgid "Not imported yet"
@@ -797,44 +789,6 @@ msgstr "No s'ha importat encara"
 msgid "Other accounts"
 msgstr "Altres comptes"
 
-#: afterFbImport
-msgid "You can import and edit Facebook friends anytime in Contacts settings"
-msgstr ""
-"Podeu importar i editar les amistats del Facebook en qualsevol moment als "
-"paràmetres dels Contactes"
-
-#: facebook-import-msg
-msgid "{[ plural(imported) ]}"
-msgstr "{[ plural(imported) ]}"
-
-#: facebook-import-msg[zero]
-msgid "No friends imported (out of {{total}})"
-msgstr "No s'ha importat cap amistat (de {{total}})"
-
-#: facebook-import-msg[one]
-msgid "One friend imported (out of {{total}})"
-msgstr "S'ha importat una amistat (de {{total}})"
-
-#: facebook-import-msg[two]
-msgctxt "facebook-import-msg[two]"
-msgid "{{imported}}/{{total}} friends imported"
-msgstr "{{imported}}/{{total}} importades"
-
-#: facebook-import-msg[few]
-msgctxt "facebook-import-msg[few]"
-msgid "{{imported}}/{{total}} friends imported"
-msgstr "{{imported}}/{{total}} importades"
-
-#: facebook-import-msg[many]
-msgctxt "facebook-import-msg[many]"
-msgid "{{imported}}/{{total}} friends imported"
-msgstr "{{imported}}/{{total}} importades"
-
-#: facebook-import-msg[other]
-msgctxt "facebook-import-msg[other]"
-msgid "{{imported}}/{{total}} friends imported"
-msgstr "{{imported}}/{{total}} importades"
-
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Fxa Intro
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -842,7 +796,7 @@ msgstr "{{imported}}/{{total}} importades"
 msgid "Firefox Accounts"
 msgstr "Comptes del Firefox"
 
-#: fxa-upsell.innerHTML
+#: fxa-upsell
 msgid ""
 "A Firefox Account lets you find a lost phone and buy apps from the Firefox "
 "Marketplace."
@@ -944,31 +898,24 @@ msgstr ""
 "dispositiu {{brandShortName}}. Utilitzem aquesta informació per millorar els "
 "nostres productes de manera més ràpida i receptiva."
 
-#: learn-more-telemetry2.innerHTML
-msgid ""
-"Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</"
-"a>"
+#: learn-more-telemetry2
+msgid "Learn more at <a>{{url}}</a>"
 msgstr ""
-"Més informació a <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}"
-"</a>"
 
-#: learn-more-information2.innerHTML
-msgid ""
-"Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
-"\"{{className}}\">{{textContent}}</a>"
-msgstr ""
-"Vegeu com Mozilla gestiona la vostra informació a la <a href=\"{{href}}\" "
-"class=\"{{className}}\">{{textContent}}</a>"
+#: learn-more-information2
+#, fuzzy
+msgid "Learn how Mozilla handles your information at <a>{{url}}</a>"
+msgstr "Vegeu com Mozilla gestiona la vostra informació a la {{link}}"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # OS privacy
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-#: htmlWelcome2.innerHTML
+#: htmlWelcome2
+#, fuzzy
 msgid ""
-"Welcome to <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}</a>, "
-"the free and open source operating system from Mozilla. Our mission is to "
-"promote openness, innovation and opportunity by keeping the power of the Web "
-"in your hands."
+"Welcome to <a>{{brandShortName}}</a>, the free and open source operating "
+"system from Mozilla. Our mission is to promote openness, innovation and "
+"opportunity by keeping the power of the Web in your hands."
 msgstr ""
 "Us donem la benvinguda al <a href=\"{{href}}\" class="
 "\"{{className}}\">{{textContent}}</a>, el sistema operatiu lliure i de codi "
@@ -976,38 +923,21 @@ msgstr ""
 "innovació i l'oportunitat bo i mantenint el potencial de la web a les "
 "vostres mans."
 
-#: htmlWelcome-link
-msgctxt "htmlWelcome-link"
-msgid "{{brandShortName}}"
-msgstr "{{brandShortName}}"
-
-#: helpImprove2.innerHTML
+#: helpImprove2
+#, fuzzy
 msgid ""
 "You can help us improve our products and services by automatically sending "
-"analytics data. See our <a href=\"{{href}}\" class="
-"\"{{className}}\">{{textContent}}</a> to learn how we handle data from your "
-"device."
+"analytics data. See our <a>Privacy Notice</a> to learn how we handle data "
+"from your device."
 msgstr ""
 "Podeu ajudar a millorar els nostres productes i serveis enviant-nos "
 "automàticament informació estadística. Vegeu com gestionem la informació del "
-"vostre dispositiu a l'<a href=\"{{href}}\" class="
-"\"{{className}}\">{{textContent}}</a>."
+"vostre dispositiu a l'{{link}}."
 
-#: helpImprove-link
-msgid "Privacy Notice"
-msgstr "avís de privadesa"
-
-#: learn-more-privacy2.innerHTML
+#: learn-more-privacy2
 msgid ""
-"Learn how Mozilla handles your information in our <a href=\"{{href}}\" class="
-"\"{{className}}\">{{textContent}}</a>."
+"Learn how Mozilla handles your information in our <a>privacy policy</a>."
 msgstr ""
-"Vegeu com Mozilla gestiona la vostra informació a la <a href=\"{{href}}\" "
-"class=\"{{className}}\">{{textContent}}</a>."
-
-#: learn-more-privacy-link
-msgid "privacy policy"
-msgstr "política de privadesa"
 
 #: aboutBrowser
 msgid "About {{brandShortName}}"
@@ -1287,6 +1217,81 @@ msgstr "Pas {{step}} de {{total}}"
 msgid "First Time Experience"
 msgstr "Visita guiada d'introducció"
 
+#~ msgid "Facebook"
+#~ msgstr "Facebook"
+
+#~ msgid "… checking"
+#~ msgstr "… s'està comprovant"
+
+#~ msgid ""
+#~ "You can import and edit Facebook friends anytime in Contacts settings"
+#~ msgstr ""
+#~ "Podeu importar i editar les amistats del Facebook en qualsevol moment als "
+#~ "paràmetres dels Contactes"
+
+#~ msgid "{[ plural(imported) ]}"
+#~ msgstr "{[ plural(imported) ]}"
+
+#~ msgid "No friends imported (out of {{total}})"
+#~ msgstr "No s'ha importat cap amistat (de {{total}})"
+
+#~ msgid "One friend imported (out of {{total}})"
+#~ msgstr "S'ha importat una amistat (de {{total}})"
+
+#~ msgctxt "facebook-import-msg[two]"
+#~ msgid "{{imported}}/{{total}} friends imported"
+#~ msgstr "{{imported}}/{{total}} importades"
+
+#~ msgctxt "facebook-import-msg[few]"
+#~ msgid "{{imported}}/{{total}} friends imported"
+#~ msgstr "{{imported}}/{{total}} importades"
+
+#~ msgctxt "facebook-import-msg[many]"
+#~ msgid "{{imported}}/{{total}} friends imported"
+#~ msgstr "{{imported}}/{{total}} importades"
+
+#~ msgctxt "facebook-import-msg[other]"
+#~ msgid "{{imported}}/{{total}} friends imported"
+#~ msgstr "{{imported}}/{{total}} importades"
+
+#~ msgid ""
+#~ "Learn more at <a href=\"{{href}}\" class=\"{{className}}\">{{textContent}}"
+#~ "</a>"
+#~ msgstr ""
+#~ "Més informació a <a href=\"{{href}}\" class="
+#~ "\"{{className}}\">{{textContent}}</a>"
+
+#~ msgid ""
+#~ "Learn how Mozilla handles your information at <a href=\"{{href}}\" class="
+#~ "\"{{className}}\">{{textContent}}</a>"
+#~ msgstr ""
+#~ "Vegeu com Mozilla gestiona la vostra informació a la <a href=\"{{href}}\" "
+#~ "class=\"{{className}}\">{{textContent}}</a>"
+
+#~ msgid ""
+#~ "You can help us improve our products and services by automatically "
+#~ "sending analytics data. See our <a href=\"{{href}}\" class="
+#~ "\"{{className}}\">{{textContent}}</a> to learn how we handle data from "
+#~ "your device."
+#~ msgstr ""
+#~ "Podeu ajudar a millorar els nostres productes i serveis enviant-nos "
+#~ "automàticament informació estadística. Vegeu com gestionem la informació "
+#~ "del vostre dispositiu a l'<a href=\"{{href}}\" class="
+#~ "\"{{className}}\">{{textContent}}</a>."
+
+#~ msgid "Privacy Notice"
+#~ msgstr "avís de privadesa"
+
+#~ msgid ""
+#~ "Learn how Mozilla handles your information in our <a href=\"{{href}}\" "
+#~ "class=\"{{className}}\">{{textContent}}</a>."
+#~ msgstr ""
+#~ "Vegeu com Mozilla gestiona la vostra informació a la <a href=\"{{href}}\" "
+#~ "class=\"{{className}}\">{{textContent}}</a>."
+
+#~ msgid "privacy policy"
+#~ msgstr "política de privadesa"
+
 #~ msgid "Swipe from right to left to browse your apps."
 #~ msgstr ""
 #~ "Feu lliscar el dit de dreta a esquerra per explorar les aplicacions."
@@ -1329,18 +1334,6 @@ msgstr "Visita guiada d'introducció"
 
 #~ msgid "Learn more at {{link}}"
 #~ msgstr "Més informació a {{link}}"
-
-#~ msgid "Learn how Mozilla handles your information at {{link}}"
-#~ msgstr "Vegeu com Mozilla gestiona la vostra informació a la {{link}}"
-
-#~ msgid ""
-#~ "You can help us improve our products and services by automatically "
-#~ "sending analytics data. See our {{link}} to learn how we handle data from "
-#~ "your device."
-#~ msgstr ""
-#~ "Podeu ajudar a millorar els nostres productes i serveis enviant-nos "
-#~ "automàticament informació estadística. Vegeu com gestionem la informació "
-#~ "del vostre dispositiu a l'{{link}}."
 
 #~ msgid "Learn how Mozilla handles your information in our {{link}}."
 #~ msgstr "Vegeu com Mozilla gestiona la vostra informació a la {{link}}."

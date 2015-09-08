@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-27 18:45+0000\n"
+"POT-Creation-Date: 2015-09-07 14:45+0000\n"
 "PO-Revision-Date: 2015-05-10 21:20+0000\n"
 "Last-Translator: Mohomodou  Houssouba <mh@bollag-areal.ch>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1431292839.000000\n"
@@ -63,11 +63,17 @@ msgctxt "reset"
 msgid "Reset"
 msgstr "Yeeti"
 
+#: factory-reset
+msgid "Factory Reset"
+msgstr ""
+
 #: cancel
 msgid "Cancel"
 msgstr "Naŋ"
 
 #: close
+#, fuzzy
+msgctxt "close"
 msgid "Close"
 msgstr "Daabu"
 
@@ -88,6 +94,8 @@ msgid "Pair"
 msgstr "Marga"
 
 #: add
+#, fuzzy
+msgctxt "add"
 msgid "Add"
 msgstr "Tonton"
 
@@ -146,10 +154,26 @@ msgid "Network & Connectivity"
 msgstr "Sankay nda dobuyan"
 
 #: airplaneMode
+#, fuzzy
+msgctxt "airplaneMode"
+msgid "Airplane Mode"
+msgstr "Beenehii yaayi"
+
+#: airplaneMode.ariaLabel
+#, fuzzy
+msgctxt "airplaneMode.ariaLabel"
 msgid "Airplane Mode"
 msgstr "Beenehii yaayi"
 
 #: geolocation
+#, fuzzy
+msgctxt "geolocation"
+msgid "Geolocation"
+msgstr "Gorodoo šilbayyan"
+
+#: geolocation.ariaLabel
+#, fuzzy
+msgctxt "geolocation.ariaLabel"
 msgid "Geolocation"
 msgstr "Gorodoo šilbayyan"
 
@@ -249,8 +273,9 @@ msgid "Wi-Fi Sleep"
 msgstr "Wi-Fi kanandi"
 
 #: wifi-sleep-description
+#, fuzzy
 msgid ""
-"Enable to automatically turn off Wi-Fi during sleep to save battery power.  "
+"Enable to automatically turn off Wi-Fi during sleep to save battery power."
 msgstr "Tunandi ka Wi-Fi wii nda boŋ se kaniyan waate ka baatiri sahã gaabu."
 
 #: manageNetworks
@@ -279,12 +304,19 @@ msgid "{{manageNetworks}}"
 msgstr "{{manageNetworks}}"
 
 #: manageCertificates
-msgid "Manage certificates"
+#, fuzzy
+msgid "Manage Certificates"
 msgstr "Tabatiyan-tiirawey juwal"
 
-#: manageCert
-msgid "Manage Cert."
-msgstr "Tabatiyan-tiirawey juwal"
+#. # LOCALIZATION NOTE (manageCertificates-header): if you leave the original
+#. # en-US value "{{manageCertificates}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID
+#. # "manageCertificates".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: manageCertificates-header
+msgid "{{manageCertificates}}"
+msgstr ""
 
 #: joinHiddenNetwork
 msgid "Join Hidden Network"
@@ -440,6 +472,8 @@ msgid "No known networks"
 msgstr "Sankay bayrante kul ši"
 
 #: edit
+#, fuzzy
+msgctxt "edit"
 msgid "Edit"
 msgstr "Fasal"
 
@@ -452,15 +486,18 @@ msgid "No certificates imported"
 msgstr "Tabatiyan-tiira kulyaŋ mana zaandi"
 
 #: deleteCertificate
-msgid "Delete certificate"
+#, fuzzy
+msgid "Delete Certificate"
 msgstr "Tabatiyan-tiira tuusu"
 
 #: importCertificate
-msgid "Import certificate"
+#, fuzzy
+msgid "Import Certificate"
 msgstr "Tabatiyan-tiira sanbu"
 
 #: selectCertificateFile
-msgid "Select certificate file"
+#, fuzzy
+msgid "Select Certificate File"
 msgstr "Tabatiyan-tiira tuku suuba"
 
 #: enterCertificateNickname
@@ -572,6 +609,8 @@ msgstr "Mana hin ka WPS [{{error}}] naŋ"
 
 #. # Connectivity :: Call
 #: callSettings
+#, fuzzy
+msgctxt "callSettings"
 msgid "Call Settings"
 msgstr "Ciyari kayandiyaney"
 
@@ -681,7 +720,7 @@ msgstr "Bisandi nd'a ši duwandi"
 msgid "When unreachable"
 msgstr "Nd'a ši duwandi"
 
-#: callForwardingForwardingVoiceToNumber.innerHTML
+#: callForwardingForwardingVoiceToNumber
 msgid "Voice calls to <bdi>{{number}}</bdi>"
 msgstr "Jinde ciyarey <bdi>{{number}}</bdi> here"
 
@@ -953,10 +992,6 @@ msgstr ""
 msgid "The PIN2 code is incorrect."
 msgstr "PIN2 ašariyaa ga laybu."
 
-#: fdn-enabled-warning
-msgid "Call forwarding is disabled by FDN."
-msgstr "FDN na ciyari bisandiyan kayandi."
-
 #: fdnContact-name
 msgid "name"
 msgstr "Maa"
@@ -998,6 +1033,8 @@ msgstr "FDN fellaa too. War ši hin ka lanba tonton koyne."
 
 #. # Connectivity :: Messaging
 #: messagingSettings
+#, fuzzy
+msgctxt "messagingSettings"
 msgid "Messaging Settings"
 msgstr "Toonandiyan kayandiyaney"
 
@@ -1030,13 +1067,9 @@ msgstr "Bayrandey caw"
 msgid "Request read report for each message sent"
 msgstr "Caw bayrandi hãa alhabar sanbante foo kul se"
 
-#. # LOCALIZATION NOTE (mmsTitle): LRE (&#x202a;) and PDF (&#x202c;)
-#. # force the proper directionality of parentheses at the end of the string
-#. # regardless of the direction of the surrounding layout. Remove them only
-#. # if the translation puts them between other text.
-#: mmsTitle.innerHTML
-msgid "&#x202a;Multimedia Messaging (MMS)&#x202c;"
-msgstr "&#x202a;Hẽenandikaw boobo bataga-teeyan (MMS)&#x202c;"
+#: mmsTitle
+msgid "Multimedia Messaging (MMS)"
+msgstr "Hẽenandikaw boobo alhabar (MMS)"
 
 #: auto-retrieve
 msgid "Auto Retrieve"
@@ -1102,6 +1135,8 @@ msgstr "Alhabar ši duwandi"
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
+#, fuzzy
+msgctxt "cellularAndData"
 msgid "Cellular & Data"
 msgstr "Talfonyan nda bayhaya"
 
@@ -1206,6 +1241,11 @@ msgstr "WCDMA ti ibaayante"
 msgid "Auto (2G/3G)"
 msgstr "Boŋse (2G/3G)"
 
+#: operator-networkType-auto-3G-4G
+#, fuzzy
+msgid "Auto (3G/4G)"
+msgstr "Boŋse (2G/3G)"
+
 #: operator-networkType-auto-CDMA-EVDO
 msgid "Auto (CDMA/EVDO)"
 msgstr "Boŋse (CDMA/EVDO)"
@@ -1216,6 +1256,11 @@ msgstr "Boŋse (WCDMA/GSM)"
 
 #: operator-networkType-auto-LTE-WCDMA-GSM
 msgid "Auto (LTE/WCDMA/GSM)"
+msgstr "Boŋse (LTE/WCDMA/GSM)"
+
+#: operator-networkType-auto-LTE-WCDMA
+#, fuzzy
+msgid "Auto (LTE/WCDMA)"
 msgstr "Boŋse (LTE/WCDMA/GSM)"
 
 #: operator-networkType-auto-LTE-CDMA-EVDO
@@ -1243,20 +1288,47 @@ msgstr "Kanbe hanseyan"
 msgid "Turn automatic selection off to view available network operators."
 msgstr "Boŋdirandi suubari wii ka dii sankay goyandikaw barantey."
 
-#: operator-status-connecting
-msgctxt "operator-status-connecting"
+#: operator-info-connecting
+#, fuzzy
+msgctxt "operator-info-connecting"
 msgid "Connecting…"
-msgstr "Goo ma ciya…"
+msgstr "Dobuyan…"
 
-#: operator-status-connectingfailed
-msgctxt "operator-status-connectingfailed"
+#: operator-info-failed
+#, fuzzy
+msgctxt "operator-info-failed"
 msgid "Connection failed"
-msgstr "Ciyaroo mongu"
+msgstr "Dobuyan kay"
 
-#: operator-status-connected
-msgctxt "operator-status-connected"
+#: operator-info-connected
+#, fuzzy
+msgctxt "operator-info-connected"
 msgid "Connected"
-msgstr "Goo ciyari ra"
+msgstr "Dobante"
+
+#: operator-info-available
+#, fuzzy
+msgctxt "operator-info-available"
+msgid "Available"
+msgstr "Ga bara"
+
+#: operator-info-current
+#, fuzzy
+msgctxt "operator-info-current"
+msgid "Connected"
+msgstr "Dobante"
+
+#: operator-info-forbidden
+#, fuzzy
+msgctxt "operator-info-forbidden"
+msgid "Forbidden"
+msgstr "Ganjante"
+
+#: operator-info-unknown
+#, fuzzy
+msgctxt "operator-info-unknown"
+msgid "Unknown state"
+msgstr "Alhaali šibayante"
 
 #: operator-roamingPreference
 msgid "Roaming preference"
@@ -1356,6 +1428,20 @@ msgstr "IMS kayandiyaney"
 #: imsSettings-header2
 msgid "{{imsSettings}}"
 msgstr "{{imsSettings}}"
+
+#: fotaSettings
+msgid "FOTA Settings"
+msgstr ""
+
+#. # LOCALIZATION NOTE (fotaSettings-header): if you leave the original
+#. # en-US value "{{fotaSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "fotaSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: fotaSettings-header
+#, fuzzy
+msgid "{{fotaSettings}}"
+msgstr "{{dataSettings}}"
 
 #: apn-editor-header
 msgid "APN Editor"
@@ -1483,10 +1569,14 @@ msgid "This resets the settings to default values. This cannot be undone."
 msgstr "Woo ga kayandiyaney yeeti tilasu hinnawey ga. Woo ši hin ka taafeeri."
 
 #: state-unknown
+#, fuzzy
+msgctxt "state-unknown"
 msgid "Unknown state"
 msgstr "Alhaali šibayante"
 
 #: state-available
+#, fuzzy
+msgctxt "state-available"
 msgid "Available"
 msgstr "Ga bara"
 
@@ -1501,6 +1591,8 @@ msgid "Connected"
 msgstr "Goo ciyari ra"
 
 #: state-forbidden
+#, fuzzy
+msgctxt "state-forbidden"
 msgid "Forbidden"
 msgstr "Ganjante"
 
@@ -1528,6 +1620,8 @@ msgstr "APN kayandiyaney yeeti"
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
+#, fuzzy
+msgctxt "bluetooth"
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -1683,9 +1777,13 @@ msgstr "Ay jinaa noo maa taaga"
 msgid "Unknown device"
 msgstr "Jinay šibayante"
 
-#: change-phone-name-desc
-msgid "Change the name of your device as it appears in your computer"
-msgstr "Takaa kaŋ nda war jinaa maaɲoo ga fatta ordinateroo ra barmay"
+#: change-btdevice-name
+msgid "Change device name"
+msgstr ""
+
+#: change-btdevice-name-desc
+msgid "This name will appear on your other Bluetooth devices"
+msgstr ""
 
 #: bluetooth-new-name
 msgid "New name"
@@ -1726,17 +1824,29 @@ msgid ""
 msgstr ""
 "Sohõda war dobandi jinaa woo ga. Fayyan da ga ciyaroo dunbu k'a kaa a ga."
 
+#: unpair-confirm
+msgid ""
+"{{unpair-title}}\n"
+"{{unpair-msg}}"
+msgstr ""
+
 #. # Connectivity :: NFC
 #: nfc
+#, fuzzy
+msgctxt "nfc"
+msgid "NFC"
+msgstr "NFC"
+
+#: nfc.ariaLabel
+#, fuzzy
+msgctxt "nfc.ariaLabel"
 msgid "NFC"
 msgstr "NFC"
 
 #. # Connectivity :: Internet Sharing
-#: SSIDCannotBeEmpty
-msgid "The SSID cannot be empty"
-msgstr "SSID ši hin ka tee koonu"
-
 #: internetSharing
+#, fuzzy
+msgctxt "internetSharing"
 msgid "Internet Sharing"
 msgstr "Interneti žemnayan"
 
@@ -1817,7 +1927,7 @@ msgstr "{{hotspotSettings}}"
 msgid "SSID Network Name"
 msgstr "SSID sankay maa"
 
-#: hotspot-open
+#: hotspot-security-open
 msgid "open"
 msgstr "feeri"
 
@@ -1828,8 +1938,8 @@ msgstr "feeri"
 #. # and PDF (&#x202c;) entities to these translations to force the correct direction.
 #. #
 #. # RTL locales should have a translation similar to this:
-#. # hotspot-wpa-psk.innerHTML= &#x202a;WPA (TKIP)&#x202c;
-#. # hotspot-wpa2-psk.innerHTML= &#x202a;WPA2 (AES)&#x202c;
+#. # hotspot-wpa-psk= &#x202a;WPA (TKIP)&#x202c;
+#. # hotspot-wpa2-psk= &#x202a;WPA2 (AES)&#x202c;
 #. #
 #. # [More details]
 #. #
@@ -1840,17 +1950,13 @@ msgstr "feeri"
 #. # automatically in a wrong way by browser. Because from engineering side,
 #. # we can only change settings.ar.properties, for localizers, please remember to
 #. # put them in the other RTL languages.
-#. #
-#. # Additionally, in order to make this hack work, we got some help from l10n.js
-#. # that we need to put these strings inside "KEY".innerHTML, so that's the
-#. # reason why these two strings below would be suffixed with ".innerHTML"
-#: hotspot-wpa-psk.innerHTML
-msgid "WPA (TKIP)"
-msgstr "WPA (TKIP)"
+#: hotspot-security-wpa-psk
+msgid "WPA"
+msgstr ""
 
-#: hotspot-wpa2-psk.innerHTML
-msgid "WPA2 (AES)"
-msgstr "WPA2 (AES)"
+#: hotspot-security-wpa2-psk
+msgid "WPA2"
+msgstr ""
 
 #: hotspot-password-desc
 msgid "The password must have at least 8 characters."
@@ -1865,6 +1971,14 @@ msgstr "Hanseyan boro boŋ se"
 
 #. # Personalization :: Sound
 #: sound
+#, fuzzy
+msgctxt "sound"
+msgid "Sound"
+msgstr "Sawtu"
+
+#: sound.ariaLabel
+#, fuzzy
+msgctxt "sound.ariaLabel"
 msgid "Sound"
 msgstr "Sawtu"
 
@@ -1951,6 +2065,14 @@ msgstr "Ir mana hin ka duu talfon hẽeni porogaram ka hẽeney juwal!"
 
 #. # Personalization :: Display
 #: display
+#, fuzzy
+msgctxt "display"
+msgid "Display"
+msgstr "Cebe"
+
+#: display.ariaLabel
+#, fuzzy
+msgctxt "display.ariaLabel"
 msgid "Display"
 msgstr "Cebe"
 
@@ -2009,6 +2131,14 @@ msgstr "Kufal honnandiyan"
 
 #. # Personalization :: Navigation
 #: navigation
+#, fuzzy
+msgctxt "navigation"
+msgid "Navigation"
+msgstr "Naaruyan"
+
+#: navigation.ariaLabel
+#, fuzzy
+msgctxt "navigation.ariaLabel"
 msgid "Navigation"
 msgstr "Naaruyan"
 
@@ -2031,6 +2161,14 @@ msgstr "Cendi ka hun dijoo ceraw wowa mal'igumaa ga ka bisa poragaramey game."
 
 #. # Personalization :: Notifications
 #: notifications
+#, fuzzy
+msgctxt "notifications"
+msgid "Notifications"
+msgstr "Bangandiyaney"
+
+#: notifications.ariaLabel
+#, fuzzy
+msgctxt "notifications.ariaLabel"
 msgid "Notifications"
 msgstr "Bangandiyaney"
 
@@ -2053,6 +2191,8 @@ msgstr "Cebe tunandi taaga banda ga"
 
 #. # Personalization :: Date & Time
 #: dateAndTime
+#, fuzzy
+msgctxt "dateAndTime"
 msgid "Date & Time"
 msgstr "Han nda waati"
 
@@ -2116,6 +2256,8 @@ msgid "Language & Region"
 msgstr "Šenni nda ganda"
 
 #: language
+#, fuzzy
+msgctxt "language"
 msgid "Language"
 msgstr "Šenni"
 
@@ -2153,6 +2295,8 @@ msgstr "%B %d, %Y"
 
 #. # Personalization :: Sim cards manager
 #: simManager
+#, fuzzy
+msgctxt "simManager"
 msgid "SIM Manager"
 msgstr "SIM juwalkaw"
 
@@ -2229,6 +2373,12 @@ msgctxt "homescreen"
 msgid "Homescreen"
 msgstr "Šintin diji"
 
+#: homescreen.ariaLabel
+#, fuzzy
+msgctxt "homescreen.ariaLabel"
+msgid "Homescreen"
+msgstr "Šintin diji"
+
 #: vertical-homescreen-header
 msgctxt "vertical-homescreen-header"
 msgid "Homescreen"
@@ -2259,6 +2409,12 @@ msgctxt "search"
 msgid "Search"
 msgstr "Ceeci"
 
+#: search.ariaLabel
+#, fuzzy
+msgctxt "search.ariaLabel"
+msgid "Search"
+msgstr "Ceeci"
+
 #: search-header
 msgctxt "search-header"
 msgid "Search"
@@ -2284,6 +2440,14 @@ msgstr ""
 
 #. # Personalization :: Homescreens
 #: homescreens
+#, fuzzy
+msgctxt "homescreens"
+msgid "Homescreens"
+msgstr "Šintin dijey"
+
+#: homescreens.ariaLabel
+#, fuzzy
+msgctxt "homescreens.ariaLabel"
 msgid "Homescreens"
 msgstr "Šintin dijey"
 
@@ -2306,6 +2470,8 @@ msgid "Change"
 msgstr "Barmay"
 
 #: description
+#, fuzzy
+msgctxt "description"
 msgid "Description"
 msgstr "Šilbayyan"
 
@@ -2319,6 +2485,8 @@ msgid "Selected Keyboards"
 msgstr "Kufalwalha suubantey"
 
 #: keyboards
+#, fuzzy
+msgctxt "keyboards"
 msgid "Keyboards"
 msgstr "Kufalwalhawey"
 
@@ -2383,6 +2551,14 @@ msgstr "{{appName}} {{layoutName}} kayandi ka tee tilasu hantum jinay"
 
 #. # Personalization :: Themes
 #: themes
+#, fuzzy
+msgctxt "themes"
+msgid "Themes"
+msgstr "Furarey"
+
+#: themes.ariaLabel
+#, fuzzy
+msgctxt "themes.ariaLabel"
 msgid "Themes"
 msgstr "Furarey"
 
@@ -2450,16 +2626,10 @@ msgstr "Kontu tabatandiyan naŋ"
 msgid "A verification link has been sent to {{email}}."
 msgstr "Tabatantiyan dobu foo sanbandi {{email}} do."
 
-#. # LOCALIZATION NOTE (fxa-dont-see-email): the "{{resend}}" placeholder
-#. # will be replaced with a link containing the string with ID "fxa-resend":
-#. # "Don't see an email? <a>Resend</a>."
-#: fxa-dont-see-email
-msgid "Don’t see an email? {{resend}}."
+#: fxa-dont-see-email-resend
+#, fuzzy
+msgid "Don’t see an email? <a>Resend</a>."
 msgstr "Ši dii bataga kul? {{resend}}."
-
-#: fxa-resend
-msgid "Resend"
-msgstr "Sanba taaga"
 
 #. # Panel: logged in, verified
 #: fxa-about
@@ -2484,6 +2654,8 @@ msgid "Find My Device"
 msgstr "Ay jinaa guna"
 
 #: fxa-options
+#, fuzzy
+msgctxt "fxa-options"
 msgid "Options"
 msgstr "Suubarey"
 
@@ -2559,6 +2731,8 @@ msgid "Passcode: {{code}}"
 msgstr "Huruyan tammaasa: {{code}}"
 
 #: screenLock
+#, fuzzy
+msgctxt "screenLock"
 msgid "Screen Lock"
 msgstr "Diji kufal"
 
@@ -2571,7 +2745,17 @@ msgstr "Diji kufal"
 msgid "{{screenLock}}"
 msgstr "{{screenLock}}"
 
+#: screenLock-enabled-with-no-passcode
+msgid "Enabled with no passcode"
+msgstr ""
+
+#: screenLock-enabled-with-passcode
+msgid "Enabled with passcode"
+msgstr ""
+
 #: simSecurity
+#, fuzzy
+msgctxt "simSecurity"
 msgid "SIM Security"
 msgstr "SIM saajaw"
 
@@ -2586,6 +2770,14 @@ msgstr "{{simSecurity}}"
 
 #. # Security :: App permissions
 #: appPermissions
+#, fuzzy
+msgctxt "appPermissions"
+msgid "App Permissions"
+msgstr "Porogaram-ize duɲeyaney"
+
+#: appPermissions.ariaLabel
+#, fuzzy
+msgctxt "appPermissions.ariaLabel"
 msgid "App Permissions"
 msgstr "Porogaram-ize duɲeyaney"
 
@@ -3022,6 +3214,8 @@ msgstr "Firka šibayante bangay"
 
 #. # Security :: Do Not Track
 #: doNotTrack
+#, fuzzy
+msgctxt "doNotTrack"
 msgid "Do Not Track"
 msgstr "Ma ši ay gana"
 
@@ -3073,6 +3267,14 @@ msgstr ""
 
 #. # Security :: Browsing Privacy
 #: browsingPrivacy
+#, fuzzy
+msgctxt "browsingPrivacy"
+msgid "Browsing Privacy"
+msgstr "Ceeciyan sutura"
+
+#: browsingPrivacy.ariaLabel
+#, fuzzy
+msgctxt "browsingPrivacy.ariaLabel"
 msgid "Browsing Privacy"
 msgstr "Ceeciyan sutura"
 
@@ -3112,11 +3314,14 @@ msgstr "Tuusu"
 
 #. # Security :: Privacy Panel
 #: privacy-controls
+#, fuzzy
+msgctxt "privacy-controls"
 msgid "Privacy Controls"
 msgstr "Sutura dabarey"
 
-#: no-privacy-panel
-msgid "No privacy panel app found"
+#: no-privacy-controls
+#, fuzzy
+msgid "No privacy controls app found"
 msgstr "Sutura fasaldoo porogaram kul mana duwandi"
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3136,6 +3341,8 @@ msgid "Unplug USB cable to disable"
 msgstr "USB karfu kaa k'a kayandi"
 
 #: appStorage
+#, fuzzy
+msgctxt "appStorage"
 msgid "Application Storage"
 msgstr "Porogaram jišidoo"
 
@@ -3147,26 +3354,6 @@ msgstr "Porogaram jišidoo"
 #: appStorage-header
 msgid "{{appStorage}}"
 msgstr "{{appStorage}}"
-
-#: byteUnit-B
-msgid "B"
-msgstr "B"
-
-#: byteUnit-KB
-msgid "KB"
-msgstr "KB"
-
-#: byteUnit-MB
-msgid "MB"
-msgstr "MB"
-
-#: byteUnit-GB
-msgid "GB"
-msgstr "GB"
-
-#: byteUnit-TB
-msgid "TB"
-msgstr "TB"
 
 #: storageSize
 msgid "{{size}} {{unit}}"
@@ -3236,15 +3423,19 @@ msgid "Transfer Protocol"
 msgstr "Bereyan sanbari fondo"
 
 #: protocol-mtp
-msgid "Media transfer protocol (MTP)"
+#, fuzzy
+msgid "Media Transfer Protocol (MTP)"
 msgstr "Hẽenandi jinay bereyan sanbari fondo (MTP)"
 
 #: protocol-ums
-msgid "USB mass Storage (UMS)"
+#, fuzzy
+msgid "USB Mass Storage (UMS)"
 msgstr "USB jišidoo warga (UMS)"
 
 #. # Storage :: Media storage
 #: mediaStorage
+#, fuzzy
+msgctxt "mediaStorage"
 msgid "Media Storage"
 msgstr "Jišidoo beeri"
 
@@ -3410,6 +3601,23 @@ msgstr "Takari"
 msgid "SD card unmounted"
 msgstr "SD katta fatta"
 
+#: ums-partial-support-warning-title
+msgid "Warning: USB Mass Storage may not work"
+msgstr ""
+
+#: ums-partial-support-warning-msg-1
+msgid ""
+"USB Mass Storage will only work correctly with an external SD card. If you'd "
+"like to be able to access both your internal and external storage, you must "
+"use MTP."
+msgstr ""
+
+#: ums-partial-support-warning-msg-2
+msgid ""
+"Press \"OK\" to switch to USB Mass Storage, or \"Cancel\" to remain in MTP "
+"mode."
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Device
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3422,8 +3630,22 @@ msgctxt "help"
 msgid "Help"
 msgstr "Faaba"
 
+#: help.ariaLabel
+#, fuzzy
+msgctxt "help.ariaLabel"
+msgid "Help"
+msgstr "Faaba"
+
 #. # Device :: Information
 #: deviceInfo
+#, fuzzy
+msgctxt "deviceInfo"
+msgid "Device Information"
+msgstr "Jinay alhabar"
+
+#: deviceInfo.ariaLabel
+#, fuzzy
+msgctxt "deviceInfo.ariaLabel"
 msgid "Device Information"
 msgstr "Jinay alhabar"
 
@@ -3440,7 +3662,7 @@ msgstr "{{deviceInfo}}"
 msgid "IMEI"
 msgstr "IMEI"
 
-#: deviceInfo-IMEI-with-index.innerHTML
+#: deviceInfo-IMEI-with-index
 msgid "IMEI {{index}}: <bdi>{{imei}}</bdi>"
 msgstr "MEI {{index}}: <bdi>{{imei}}</bdi>"
 
@@ -3448,7 +3670,7 @@ msgstr "MEI {{index}}: <bdi>{{imei}}</bdi>"
 msgid "ICCID"
 msgstr "ICCID"
 
-#: deviceInfo-ICCID-with-index.innerHTML
+#: deviceInfo-ICCID-with-index
 msgid "SIM {{index}}: <bdi>{{iccid}}</bdi>"
 msgstr "SIM {{index}}: <bdi>{{iccid}}</bdi>"
 
@@ -3456,7 +3678,7 @@ msgstr "SIM {{index}}: <bdi>{{iccid}}</bdi>"
 msgid "Phone Number"
 msgstr "Talfon lanba"
 
-#: deviceInfo-MSISDN-with-index.innerHTML
+#: deviceInfo-MSISDN-with-index
 msgid "SIM {{index}}: <bdi>{{msisdn}}</bdi>"
 msgstr "SIM {{index}}: <bdi>{{msisdn}}</bdi>"
 
@@ -3465,6 +3687,14 @@ msgid "SIM {{index}}: Not available"
 msgstr "SIM {{index}}: ši duwandi"
 
 #: downloads
+#, fuzzy
+msgctxt "downloads"
+msgid "Downloads"
+msgstr "Zumandey"
+
+#: downloads.ariaLabel
+#, fuzzy
+msgctxt "downloads.ariaLabel"
 msgid "Downloads"
 msgstr "Zumandey"
 
@@ -3489,263 +3719,6 @@ msgstr "SIM {{index}}: šibayante"
 msgid "Git Commit Info"
 msgstr "Git yaddayan alhabar"
 
-#: developer
-msgid "Developer"
-msgstr "Cinakey"
-
-#. # LOCALIZATION NOTE (developer-header): if you leave the original
-#. # en-US value "{{developer}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "developer".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: developer-header
-msgid "{{developer}}"
-msgstr "{{developer}}"
-
-#: hud-settings-button
-msgid "Developer HUD"
-msgstr "HUD cinakaw"
-
-#. # LOCALIZATION NOTE (hud-settings-header): if you leave the original en-US value
-#. # "{{hud-settings-button}}" in the following string, the localization will be
-#. # automatically picked from the existing string with ID "hud-settings-button". If you
-#. # need to adapt your localizations to the available space in headers or
-#. # buttons, you can use different strings here.
-#: hud-settings-header
-msgid "{{hud-settings-button}}"
-msgstr "{{hud-settings-button}}"
-
-#: hud-devtools
-msgid "Developer tools"
-msgstr "Cinakaw goyjinawey"
-
-#. # LOCALIZATION NOTE (hud-devtools-header): if you leave the original en-US
-#. # value "{{hud-devtools}}" in the following string, the localization will be
-#. # automatically picked from the existing string with ID "hud-devtools". If you
-#. # need to adapt your localizations to the available space in headers or
-#. # buttons, you can use different strings here.
-#: hud-devtools-header
-msgid "{{hud-devtools}}"
-msgstr "{{hud-devtools}}"
-
-#: hud-logging
-msgid "Log changes in ADB"
-msgstr "Zaaritiira barmay ADB ra"
-
-#: hud-system
-msgid "Show system HUD"
-msgstr "HUD dabariɲaa cebe"
-
-#: hud-problems
-msgid "Problems"
-msgstr "Šendawey"
-
-#: hud-warnings
-msgid "Warnings"
-msgstr "Yaamarey"
-
-#: hud-errors
-msgid "Errors"
-msgstr "Firkawey"
-
-#: hud-security
-msgid "Security issues"
-msgstr "Saajaw misey"
-
-#: hud-performance
-msgid "Performance"
-msgstr "Teeyan sahã"
-
-#: hud-reflows
-msgid "Reflows"
-msgstr "Dandi koyne"
-
-#: hud-jank
-msgid "Jank"
-msgstr "Daaye"
-
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Kayri šiifa"
-
-#: hud-fps
-msgid "Frames per second"
-msgstr "Kungawey segondu ra"
-
-#: hud-ttl
-msgid "Time to load"
-msgstr "Zumandi waati"
-
-#: hud-memory
-msgid "Memory"
-msgstr "Lakkal"
-
-#: hud-uss
-msgid "Unique Set Size"
-msgstr "Kur adadu folloku"
-
-#: hud-appmemory
-msgid "App memory"
-msgstr "Poroagaram lakkal"
-
-#: hud-jsobjects
-msgid "JS objects"
-msgstr "JS jinawey"
-
-#: hud-jsstrings
-msgid "JS strings"
-msgstr "JS tenjirey"
-
-#: hud-jsother
-msgid "JS other"
-msgstr "JS tana"
-
-#: hud-dom
-msgid "DOM"
-msgstr "DOM"
-
-#: hud-style
-msgid "Style"
-msgstr "Fasal"
-
-#: hud-other
-msgctxt "hud-other"
-msgid "Other"
-msgstr "Itana"
-
-#: software
-msgid "Software"
-msgstr "Goy porogaram"
-
-#: devSettings
-msgid "Developer Settings"
-msgstr "Cinakaw kayandiyaney"
-
-#: debug
-msgid "Debug"
-msgstr "Hasaraw kaa"
-
-#: developer-menu
-msgid "Developer Menu"
-msgstr "Cinakaw šilbayboŋ"
-
-#: developer-tools
-msgid "Developer Tools"
-msgstr "Cinakaw goyjinawey"
-
-#: graphics
-msgid "Graphics"
-msgstr "Bii takarey"
-
-#: hardware-composer
-msgid "Hardware composer"
-msgstr "Jinay šenda hantumkaw"
-
-#: paint-flashing
-msgid "Flash repainted area"
-msgstr "Caaray taaga ganda cebe"
-
-#: dumps-layers
-msgid "Dump layers tree"
-msgstr "Bii-kawta tuuri fur"
-
-#: dumps-layerscope
-msgid "Dump layerscope"
-msgstr "Bii-kawta tuuri fur"
-
-#: apz-overscroll
-msgid "Overscrolling"
-msgstr "Gungurayyan"
-
-#: tiling
-msgid "Tiling"
-msgstr "Ferawyan"
-
-#: low-precision
-msgid "Low-precision painting"
-msgstr "Caarayyan ši nd'alhakiika"
-
-#: low-opacity
-msgid "Low-precision transparency"
-msgstr "Hõoroyan ši nd'alhakiika"
-
-#: draw-tile-borders
-msgid "Draw tile borders"
-msgstr "Feraw hirrey žeeri"
-
-#: draw-layer-borders
-msgid "Draw layer borders"
-msgstr "Bii-kawta hirri žeeri"
-
-#: log-animations
-msgid "Log slow animations"
-msgstr "Hunandiyan cee-yayney gaabu"
-
-#: remote-debugging-usb
-msgid "Debugging via USB"
-msgstr "Hanse nda USB"
-
-#: dev-tools-wifi
-msgid "DevTools via Wi-Fi"
-msgstr "DevTools Wi-Fi bande"
-
-#: dev-tools-qps
-msgid "Pseudo-localization"
-msgstr "Gorodoo cebeyan ženti"
-
-#: debugger-disabled
-msgctxt "debugger-disabled"
-msgid "Disabled"
-msgstr "Kayante"
-
-#: debugger-adb-only
-msgid "ADB only"
-msgstr "ADB hinne"
-
-#: debugger-adb-and-devtools
-msgid "ADB and DevTools"
-msgstr "ADB nda DevTools"
-
-#: wifi-debugging
-msgid "Wi-Fi output in ADB"
-msgstr "Wi-Fi fattari ADB ra"
-
-#: bluetooth-debugging
-msgid "Bluetooth output in ADB"
-msgstr "Bluetooth ADB fattari ra"
-
-#: nfc-debugging
-msgid "NFC output in ADB"
-msgstr "NFC fattari ADB ra"
-
-#: ril-debugging
-msgid "RIL output in ADB"
-msgstr "RIL fattari ADB ra"
-
-#: console-enabled
-msgid "Console enabled"
-msgstr "Diji-walha tunante"
-
-#: cards-view-screenshots
-msgid "Cards View: Screenshots"
-msgstr "Katta gunari: dijibiyey"
-
-#: geolocation-debugging-enabled
-msgid "Geolocation output in ADB"
-msgstr "Gorodoo fattari ADB ra"
-
-#: geolocation-debugging-gps-locations-ignored
-msgid "Ignore GPS locations"
-msgstr "GPS gorodogey muray"
-
-#: use-reviewer-certs
-msgid "Use Marketplace reviewer certs"
-msgstr "Goy nda Marketplace gunakaw tabatandiyan tiirawey"
-
-#: shake-to-log
-msgid "Shake to save system log"
-msgstr "Žinji k'a gaabu dabariɲaa zaaritiira ga"
-
 #: model-name
 msgid "Model"
 msgstr "Tee-dumi"
@@ -3757,6 +3730,14 @@ msgstr "OS dumi"
 #: firmware_revision
 msgid "Firmware Revision"
 msgstr "Kunehere-jejebu korošiyan"
+
+#: hardware_manufacturer
+msgid "Hardware Manufacturer"
+msgstr ""
+
+#: hardware_platform
+msgid "Hardware Platform"
+msgstr ""
 
 #: hardware_revision
 msgid "Hardware Revision"
@@ -3876,21 +3857,6 @@ msgstr "Yeeti"
 
 #: reset-warning-title
 msgctxt "reset-warning-title"
-msgid "CAUTION"
-msgstr "HAWGAY"
-
-#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
-#. # full DevTools access.
-#: unlock-privileges
-msgid "Unlock Privileges"
-msgstr "Fondawey feeri"
-
-#: reset-devtools
-msgid "Reset and enable full DevTools"
-msgstr "Yeeti nda cinakaw goyjinay timmantey tunandi"
-
-#: reset-devtools-warning-title
-msgctxt "reset-devtools-warning-title"
 msgid "CAUTION"
 msgstr "HAWGAY"
 
@@ -4059,6 +4025,337 @@ msgstr "Mozilla Public License 2.0"
 msgid "Apache License 2.0"
 msgstr "Apache License 2.0"
 
+#. # Device :: Developer
+#: developer
+#, fuzzy
+msgctxt "developer"
+msgid "Developer"
+msgstr "Cinakey"
+
+#: developer.ariaLabel
+#, fuzzy
+msgctxt "developer.ariaLabel"
+msgid "Developer"
+msgstr "Cinakey"
+
+#. # LOCALIZATION NOTE (developer-header): if you leave the original
+#. # en-US value "{{developer}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "developer".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: developer-header
+msgid "{{developer}}"
+msgstr "{{developer}}"
+
+#: hud-settings-button
+msgid "Developer HUD"
+msgstr "HUD cinakaw"
+
+#. # LOCALIZATION NOTE (hud-settings-header): if you leave the original en-US value
+#. # "{{hud-settings-button}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-settings-button". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-settings-header
+msgid "{{hud-settings-button}}"
+msgstr "{{hud-settings-button}}"
+
+#: hud-devtools
+#, fuzzy
+msgctxt "hud-devtools"
+msgid "Developer Tools"
+msgstr "Cinakaw goyjinawey"
+
+#. # LOCALIZATION NOTE (hud-devtools-header): if you leave the original en-US
+#. # value "{{hud-devtools}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-devtools". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-devtools-header
+msgid "{{hud-devtools}}"
+msgstr "{{hud-devtools}}"
+
+#: hud-hide
+msgid "Hide All HUD Elements"
+msgstr ""
+
+#: hud-logging
+#, fuzzy
+msgid "Log Changes in ADB"
+msgstr "Zaaritiira barmay ADB ra"
+
+#: hud-system
+#, fuzzy
+msgid "Show System HUD"
+msgstr "HUD dabariɲaa cebe"
+
+#: hud-problems
+msgid "Problems"
+msgstr "Šendawey"
+
+#: hud-warnings
+msgid "Warnings"
+msgstr "Yaamarey"
+
+#: hud-errors
+msgid "Errors"
+msgstr "Firkawey"
+
+#: hud-security
+#, fuzzy
+msgid "Security Issues"
+msgstr "Saajaw misey"
+
+#: hud-performance
+msgid "Performance"
+msgstr "Teeyan sahã"
+
+#: hud-reflows
+msgid "Reflows"
+msgstr "Dandi koyne"
+
+#: hud-jank
+msgid "Jank"
+msgstr "Daaye"
+
+#: jank-threshold
+msgid "Jank Threshold"
+msgstr "Kayri šiifa"
+
+#: hud-fps
+#, fuzzy
+msgid "Frames per Second"
+msgstr "Kungawey segondu ra"
+
+#: hud-ttl
+#, fuzzy
+msgid "Time to Load"
+msgstr "Zumandi waati"
+
+#: hud-memory
+msgid "Memory"
+msgstr "Lakkal"
+
+#: hud-uss
+msgid "Unique Set Size"
+msgstr "Kur adadu folloku"
+
+#: hud-appmemory
+#, fuzzy
+msgid "App Memory"
+msgstr "Poroagaram lakkal"
+
+#: hud-jsobjects
+#, fuzzy
+msgid "JS Objects"
+msgstr "JS jinawey"
+
+#: hud-jsstrings
+#, fuzzy
+msgid "JS Strings"
+msgstr "JS tenjirey"
+
+#: hud-jsother
+#, fuzzy
+msgid "JS Other"
+msgstr "JS tana"
+
+#: hud-dom
+msgid "DOM"
+msgstr "DOM"
+
+#: hud-style
+msgid "Style"
+msgstr "Fasal"
+
+#: hud-other
+msgctxt "hud-other"
+msgid "Other"
+msgstr "Itana"
+
+#: hud-telemetry
+msgid "Telemetry"
+msgstr ""
+
+#: software
+msgid "Software"
+msgstr "Goy porogaram"
+
+#: devSettings
+msgid "Developer Settings"
+msgstr "Cinakaw kayandiyaney"
+
+#: debug
+msgid "Debug"
+msgstr "Hasaraw kaa"
+
+#: developer-menu
+msgid "Developer Menu"
+msgstr "Cinakaw šilbayboŋ"
+
+#: developer-tools
+#, fuzzy
+msgctxt "developer-tools"
+msgid "Developer Tools"
+msgstr "Cinakaw goyjinawey"
+
+#: graphics
+msgid "Graphics"
+msgstr "Bii takarey"
+
+#: hardware-composer
+#, fuzzy
+msgid "Hardware Composer"
+msgstr "Jinay šenda hantumkaw"
+
+#: paint-flashing
+#, fuzzy
+msgid "Flash Repainted Area"
+msgstr "Caaray taaga ganda cebe"
+
+#: dumps-layers
+#, fuzzy
+msgid "Dump Layers Tree"
+msgstr "Bii-kawta tuuri fur"
+
+#: dumps-display-list
+msgid "Dump Display List"
+msgstr ""
+
+#: dumps-layerscope
+#, fuzzy
+msgid "Dump LayerScope"
+msgstr "Bii-kawta tuuri fur"
+
+#: apz-overscroll
+msgid "Overscrolling"
+msgstr "Gungurayyan"
+
+#: tiling
+msgid "Tiling"
+msgstr "Ferawyan"
+
+#: low-precision
+#, fuzzy
+msgid "Low Precision Painting"
+msgstr "Caarayyan ši nd'alhakiika"
+
+#: low-opacity
+#, fuzzy
+msgid "Low Precision Transparency"
+msgstr "Hõoroyan ši nd'alhakiika"
+
+#: draw-tile-borders
+#, fuzzy
+msgid "Draw Tile Borders"
+msgstr "Feraw hirrey žeeri"
+
+#: draw-layer-borders
+#, fuzzy
+msgid "Draw Layer Borders"
+msgstr "Bii-kawta hirri žeeri"
+
+#: log-animations
+#, fuzzy
+msgid "Log Slow Animations"
+msgstr "Hunandiyan cee-yayney gaabu"
+
+#: remote-debugging-usb
+msgid "Debugging via USB"
+msgstr "Hanse nda USB"
+
+#: devtools-wifi
+msgid "DevTools via Wi-Fi"
+msgstr "DevTools Wi-Fi bande"
+
+#: devtools-device-name
+msgid "DevTools Wi-Fi Device Name"
+msgstr ""
+
+#: devtools-qps
+#, fuzzy
+msgid "Pseudo-Localization"
+msgstr "Gorodoo cebeyan ženti"
+
+#: debugger-disabled
+msgctxt "debugger-disabled"
+msgid "Disabled"
+msgstr "Kayante"
+
+#: debugger-adb-only
+msgid "ADB only"
+msgstr "ADB hinne"
+
+#: debugger-adb-and-devtools
+msgid "ADB and DevTools"
+msgstr "ADB nda DevTools"
+
+#: wifi-debugging
+#, fuzzy
+msgid "Wi-Fi Output in ADB"
+msgstr "Wi-Fi fattari ADB ra"
+
+#: bluetooth-debugging
+#, fuzzy
+msgid "Bluetooth Output in ADB"
+msgstr "Bluetooth ADB fattari ra"
+
+#: bluetooth-snoop-debugging
+msgid "Bluetooth HCI Sniffing Logs to SD Card"
+msgstr ""
+
+#: nfc-debugging
+#, fuzzy
+msgid "NFC Output in ADB"
+msgstr "NFC fattari ADB ra"
+
+#: ril-debugging
+#, fuzzy
+msgid "RIL Output in ADB"
+msgstr "RIL fattari ADB ra"
+
+#: network-debugging
+msgid "Network Output in ADB"
+msgstr ""
+
+#: mms-debugging
+#, fuzzy
+msgid "MMS Output in ADB"
+msgstr "NFC fattari ADB ra"
+
+#: console-enabled
+#, fuzzy
+msgid "Console Enabled"
+msgstr "Diji-walha tunante"
+
+#: cards-view-screenshots
+msgid "Cards View: Screenshots"
+msgstr "Katta gunari: dijibiyey"
+
+#: geolocation-debugging-enabled
+#, fuzzy
+msgid "Geolocation Output in ADB"
+msgstr "Gorodoo fattari ADB ra"
+
+#: geolocation-debugging-gps-locations-ignored
+#, fuzzy
+msgid "Ignore GPS Locations"
+msgstr "GPS gorodogey muray"
+
+#: use-reviewer-certs
+#, fuzzy
+msgid "Use Marketplace Reviewer Certs"
+msgstr "Goy nda Marketplace gunakaw tabatandiyan tiirawey"
+
+#: shake-to-log
+#, fuzzy
+msgid "Shake to Save System Log"
+msgstr "Žinji k'a gaabu dabariɲaa zaaritiira ga"
+
+#: enable-logshake-qa
+msgid "Enable LogShake QA Mode"
+msgstr ""
+
 #: launch-ftu
 msgid "Launch First Time Use"
 msgstr "Cee jina goyyan tunandi"
@@ -4068,44 +4365,180 @@ msgid "No first time use app found"
 msgstr "Goy cee jina porogaram-ize kul ši duwandi"
 
 #: software-home-button
-msgid "Software home button"
+#, fuzzy
+msgid "Software Home Button"
 msgstr "Goyjinay šintin butoŋ"
 
 #: home-gesture
-msgid "Home gesture"
+#, fuzzy
+msgid "Home Gesture"
 msgstr "Šintin šilbay"
 
 #: continuous-transition
-msgid "Continuous transition"
+#, fuzzy
+msgid "Continuous Transition"
 msgstr "Bereyan duumante"
 
 #: debug-gaia-enabled
-msgid "Gaia debug traces"
+#, fuzzy
+msgid "Gaia Debug Traces"
 msgstr "Gaia hanse ceebandey"
 
 #: showScreenReaderSettings
-msgid "Show screen reader settings"
+#, fuzzy
+msgid "Show Screen Reader Settings"
 msgstr "Diji cawkaw kayandiyaney cebe"
 
 #: app-transition
-msgid "App transition"
+#, fuzzy
+msgid "App Transition"
 msgstr "Porogaram bereyan"
 
 #: app-suspending
-msgid "App suspending"
+#, fuzzy
+msgid "App Suspending"
 msgstr "Porogaram gagayyan"
 
 #: copypaste
-msgid "Copy/paste"
+#, fuzzy
+msgid "Copy/Paste"
 msgstr "Bere/dobu"
 
+#: multi-screen
+msgid "Multi-Screen"
+msgstr ""
+
 #: verbose-app-permissions
-msgid "Verbose app permissions"
+#, fuzzy
+msgid "Verbose App Permissions"
 msgstr "Porogaramize duɲeyan šenni boobo"
 
+#: pinning-the-web
+msgid "Enable Pinning the Web"
+msgstr ""
+
+#: view-source
+msgid "Enable View Source Gesture"
+msgstr ""
+
 #: window-management
-msgid "Window management"
+#, fuzzy
+msgid "Window Management"
 msgstr "Zanfun juwalyan"
+
+#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
+#. # full DevTools access.
+#: unlock-privileges
+msgid "Unlock Privileges"
+msgstr "Fondawey feeri"
+
+#: full-devtools
+msgid "Full DevTools"
+msgstr ""
+
+#: reset-devtools-warning-title
+msgctxt "reset-devtools-warning-title"
+msgid "CAUTION"
+msgstr "HAWGAY"
+
+#. # Device :: Developer :: Service Workers
+#: service-worker
+msgid "Service Workers"
+msgstr ""
+
+#: service-worker-scope
+msgid "Scope"
+msgstr ""
+
+#: service-worker-script-spec
+msgid "Script spec"
+msgstr ""
+
+#: service-worker-current-worker-url
+msgid "Current worker URL"
+msgstr ""
+
+#: service-worker-active-cache-name
+msgid "Active cache name"
+msgstr ""
+
+#: service-worker-waiting-cache-name
+msgid "Waiting cache name"
+msgstr ""
+
+#: service-worker-update
+msgid "Update"
+msgstr ""
+
+#: service-worker-unregister
+msgid "Unregister"
+msgstr ""
+
+#: service-worker-no-registrations
+msgid "No service workers found"
+msgstr ""
+
+#. # Device :: Full Developer Mode
+#: developer-menu-disabled-warning-title
+msgid "Developer menu not enabled"
+msgstr ""
+
+#: developer-menu-disabled-warning-msg-1
+msgid ""
+"Developer Mode can't be enabled without the developer menu first being "
+"enabled."
+msgstr ""
+
+#: developer-menu-disabled-warning-msg-2
+msgid ""
+"Please enable it from Settings > Device Information > More Information > "
+"Developer Menu."
+msgstr ""
+
+#: enable-full-dev-mode-first-warning-title
+msgid "Would you like to enable developer mode?"
+msgstr ""
+
+#: enable-full-dev-mode-first-warning-msg-1
+msgid "THIS WILL DELETE ALL YOUR DATA AND FACTORY RESET YOUR DEVICE."
+msgstr ""
+
+#: enable-full-dev-mode-first-warning-msg-2
+msgid "THIS WILL DISABLE ALL SECURITY MEASURES ON YOUR DEVICE."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-title
+msgid "Are you sure you want to enable developer mode?"
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg
+#, fuzzy
+msgid "{[ plural(count) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: enable-full-dev-mode-final-warning-msg[one]
+msgid "Tap 'Enable' {{count}} more time to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[two]
+msgctxt "enable-full-dev-mode-final-warning-msg[two]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[few]
+msgctxt "enable-full-dev-mode-final-warning-msg[few]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[many]
+msgctxt "enable-full-dev-mode-final-warning-msg[many]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[other]
+msgctxt "enable-full-dev-mode-final-warning-msg[other]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
 
 #. # Device :: Downloads
 #: downloads-edit
@@ -4127,6 +4560,8 @@ msgstr "Tuusu"
 
 #. # Device :: Battery
 #: battery
+#, fuzzy
+msgctxt "battery"
 msgid "Battery"
 msgstr "Baatiri"
 
@@ -4175,6 +4610,14 @@ msgstr "A ma tun nga boŋ se"
 
 #. # Device :: Accessibility
 #: accessibility
+#, fuzzy
+msgctxt "accessibility"
+msgid "Accessibility"
+msgstr "Duwandiyan"
+
+#: accessibility.ariaLabel
+#, fuzzy
+msgctxt "accessibility.ariaLabel"
 msgid "Accessibility"
 msgstr "Duwandiyan"
 
@@ -4282,6 +4725,12 @@ msgstr "Nkuway"
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
 msgctxt "improveBrowserOS"
+msgid "Improve {{brandShortName}}"
+msgstr "{{brandShortName}} boryandi"
+
+#: improveBrowserOS.ariaLabel
+#, fuzzy
+msgctxt "improveBrowserOS.ariaLabel"
 msgid "Improve {{brandShortName}}"
 msgstr "{{brandShortName}} boryandi"
 
@@ -4475,14 +4924,6 @@ msgstr ""
 "Alhaa naŋ, dabariɲaŋoo ši hin ka war honnandiroo sanba zama daara faaroo ga "
 "koonu. Kalimaɲaa kuru hantum ka ceeci koyne."
 
-#: feedback-errormessage-just-sent
-msgid ""
-"Sorry, the system can’t send your suggestion because you already sent us "
-"feedback. Please try our next software update and send again."
-msgstr ""
-"Alhaa naŋ, dabariɲaŋoo ši hin ka war honnandiroo sanba zama war zaabi ka "
-"ben. Ir hiino goyjinaa šii ka sanba koyne."
-
 #: feedback-complete-msg
 msgid ""
 "Thanks for the feedback! We use it to help create better experiences in "
@@ -4490,6 +4931,10 @@ msgid ""
 msgstr ""
 "Foo nda goy nda war zaaboo. A g'ir gaa ka goymisoo boryandi ka tonton hiino "
 "Firefox OS dumey se."
+
+#: feedback-errormessage-unknown-error
+msgid "Something went wrong. Please try again."
+msgstr ""
 
 #. # Device :: Help
 #: online-support
@@ -4627,8 +5072,14 @@ msgstr "Kanaara assariya zaa"
 msgid "End of the proactive session"
 msgstr "Goywaati dirante benandi"
 
+#: stkEntry.ariaLabel
+msgid "{{ title }}"
+msgstr ""
+
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
+#, fuzzy
+msgctxt "is-warning-storage-header"
 msgid "USB storage"
 msgstr "USB jišidoo"
 
@@ -4698,14 +5149,386 @@ msgstr "{{settings-dialog-confirm}}"
 msgid "{{settings-dialog-prompt}}"
 msgstr "{{settings-dialog-prompt}}"
 
+#: accessible-app-icon.ariaLabel
+msgid "Icon for {{ appName }} app"
+msgstr ""
+
+#. # Addongs settings
+#: addon
+msgid "Add-on"
+msgstr ""
+
+#: addons
+msgctxt "addons"
+msgid "Add-ons"
+msgstr ""
+
+#: addons.ariaLabel
+msgctxt "addons.ariaLabel"
+msgid "Add-ons"
+msgstr ""
+
+#: addons-header
+msgid "{{addons}}"
+msgstr ""
+
+#: addon-details-header1
+msgid "{{ appName }}"
+msgstr ""
+
+#: addon-enable
+msgid "Enable Add-on"
+msgstr ""
+
+#: addon-description-header
+#, fuzzy
+msgctxt "addon-description-header"
+msgid "Description"
+msgstr "Šilbayyan"
+
+#: addon-developer-name
+msgid "{{ developerName }}"
+msgstr ""
+
+#: addon-targets
+msgid "Affected Apps"
+msgstr ""
+
+#: addon-options
+#, fuzzy
+msgctxt "addon-options"
+msgid "Options"
+msgstr "Suubarey"
+
+#: addon-delete
+msgid "Delete Add-on"
+msgstr ""
+
+#: addon-share
+msgid "Share Add-on"
+msgstr ""
+
+#: addon-share-no-provider
+msgid "No sharing app available"
+msgstr ""
+
+#: addon-no-description
+msgid "This add-on does not include a description in its manifest file."
+msgstr ""
+
+#: addon-no-targets
+msgid "This add-on does not affect any installed apps."
+msgstr ""
+
+#: addon-restart-apps-to-disable
+msgid "Add-on disabled; restart affected apps."
+msgstr ""
+
+#: addon-reboot-required
+msgid ""
+"This add-on affected system apps; you must reboot your device to fully "
+"disable it."
+msgstr ""
+
+#: addon-rename
+msgid "Rename"
+msgstr ""
+
+#: addon-rename-input
+msgid "Enter add-on name"
+msgstr ""
+
+#: addon-rename-desc
+msgid "Change the name of your add-on"
+msgstr ""
+
+#: addon-obsolete
+msgid "This add-on is obsolete and does not work."
+msgstr ""
+
+#: addon-obsolete-can-delete
+msgid "This add-on is obsolete and does not work. Please delete it."
+msgstr ""
+
+#. # Achievements
+#: achievements
+msgid "Achievements"
+msgstr ""
+
+#: achievements.ariaLabel
+msgid "achievements"
+msgstr ""
+
+#: achievements-customize-champ-name
+msgid "Customize Champ"
+msgstr ""
+
+#: achievements-customize-champ-description
+msgid "Open Customizer in an app"
+msgstr ""
+
+#: achievements-add-on-all-star-name
+msgid "Add-on All-Star"
+msgstr ""
+
+#: achievements-add-on-all-star-description
+msgid "Use Customizer to create your own add-on"
+msgstr ""
+
+#: achievements-fab-finder-name
+msgid "Fab Finder"
+msgstr ""
+
+#: achievements-fab-finder-description
+msgid "Install an app or add-on from Hackerplace"
+msgstr ""
+
+#: achievements-content-commander-name
+msgid "Content Commander"
+msgstr ""
+
+#: achievements-content-commander-description
+msgid "Submit an app or add-on to Hackerplace"
+msgstr ""
+
+#: achievements-sharing-is-caring-name
+msgid "Sharing is Caring"
+msgstr ""
+
+#: achievements-sharing-is-caring-description
+msgid "Share your apps and add-ons with the Sharing app"
+msgstr ""
+
+#: achievements-creative-kind-name
+msgid "Creative Kind"
+msgstr ""
+
+#: achievements-creative-kind-description
+msgid "Use Theme Editor to create a new theme"
+msgstr ""
+
+#. # Service Workers
+#: service-workers-interception
+msgid "Intercept requests"
+msgstr ""
+
+#: service-workers-testing
+msgid "Allow over HTTP"
+msgstr ""
+
+#. # LOCALIZATION NOTE: The following strings are spoken by screen readers and not
+#. # shown on the screen.
+#: addButton.ariaLabel
+#, fuzzy
+msgctxt "addButton.ariaLabel"
+msgid "Add"
+msgstr "Tonton"
+
+#: closeButton.ariaLabel
+#, fuzzy
+msgctxt "closeButton.ariaLabel"
+msgid "Close"
+msgstr "Daabu"
+
+#: changeWallpaperButton.ariaLabel
+msgid "Change wallpaper"
+msgstr ""
+
+#: editButton.ariaLabel
+#, fuzzy
+msgctxt "editButton.ariaLabel"
+msgid "Edit"
+msgstr "Fasal"
+
+#: wifiSection.ariaLabel
+#, fuzzy
+msgctxt "wifiSection.ariaLabel"
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
+
+#: simManagerSection.ariaLabel
+#, fuzzy
+msgctxt "simManagerSection.ariaLabel"
+msgid "SIM Manager"
+msgstr "SIM juwalkaw"
+
+#: callSettingsSection.ariaLabel
+#, fuzzy
+msgctxt "callSettingsSection.ariaLabel"
+msgid "Call Settings"
+msgstr "Ciyari kayandiyaney"
+
+#: messagingSettingsSection.ariaLabel
+#, fuzzy
+msgctxt "messagingSettingsSection.ariaLabel"
+msgid "Messaging Settings"
+msgstr "Toonandiyan kayandiyaney"
+
+#: cellularAndDataSection.ariaLabel
+#, fuzzy
+msgctxt "cellularAndDataSection.ariaLabel"
+msgid "Cellular & Data"
+msgstr "Talfonyan nda bayhaya"
+
+#: bluetoothSection.ariaLabel
+#, fuzzy
+msgctxt "bluetoothSection.ariaLabel"
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: internetSharingSection.ariaLabel
+#, fuzzy
+msgctxt "internetSharingSection.ariaLabel"
+msgid "Internet Sharing"
+msgstr "Interneti žemnayan"
+
+#: dateAndTimeSection.ariaLabel
+#, fuzzy
+msgctxt "dateAndTimeSection.ariaLabel"
+msgid "Date & Time"
+msgstr "Han nda waati"
+
+#: languageSection.ariaLabel
+#, fuzzy
+msgctxt "languageSection.ariaLabel"
+msgid "Language"
+msgstr "Šenni"
+
+#: keyboardsSection.ariaLabel
+#, fuzzy
+msgctxt "keyboardsSection.ariaLabel"
+msgid "Keyboards"
+msgstr "Kufalwalhawey"
+
+#: fxa-accountsSection.ariaLabel
+#, fuzzy
+msgctxt "fxa-accountsSection.ariaLabel"
+msgid "Firefox Accounts"
+msgstr "Firefox kontey"
+
+#: findmydeviceSection.ariaLabel
+#, fuzzy
+msgctxt "findmydeviceSection.ariaLabel"
+msgid "Find My Device"
+msgstr "Ay jinaa guna"
+
+#: screenLockSection.ariaLabel
+#, fuzzy
+msgctxt "screenLockSection.ariaLabel"
+msgid "Screen Lock"
+msgstr "Diji kufal"
+
+#: simSecuritySection.ariaLabel
+#, fuzzy
+msgctxt "simSecuritySection.ariaLabel"
+msgid "SIM Security"
+msgstr "SIM saajaw"
+
+#: doNotTrackSection.ariaLabel
+#, fuzzy
+msgctxt "doNotTrackSection.ariaLabel"
+msgid "Do Not Track"
+msgstr "Ma ši ay gana"
+
+#: privacySection.ariaLabel
+#, fuzzy
+msgctxt "privacySection.ariaLabel"
+msgid "Privacy Controls"
+msgstr "Sutura dabarey"
+
+#: enableStorageSection.ariaLabel
+#, fuzzy
+msgctxt "enableStorageSection.ariaLabel"
+msgid "USB storage"
+msgstr "USB jišidoo"
+
+#: mediaStorageSection.ariaLabel
+#, fuzzy
+msgctxt "mediaStorageSection.ariaLabel"
+msgid "Media Storage"
+msgstr "Jišidoo beeri"
+
+#: appStorageSection.ariaLabel
+#, fuzzy
+msgctxt "appStorageSection.ariaLabel"
+msgid "Application Storage"
+msgstr "Porogaram jišidoo"
+
+#: batterySection.ariaLabel
+#, fuzzy
+msgctxt "batterySection.ariaLabel"
+msgid "Battery"
+msgstr "Baatiri"
+
+#~ msgid "Manage Cert."
+#~ msgstr "Tabatiyan-tiirawey juwal"
+
+#~ msgid "Call forwarding is disabled by FDN."
+#~ msgstr "FDN na ciyari bisandiyan kayandi."
+
+#~ msgid "&#x202a;Multimedia Messaging (MMS)&#x202c;"
+#~ msgstr "&#x202a;Hẽenandikaw boobo bataga-teeyan (MMS)&#x202c;"
+
+#~ msgctxt "operator-status-connecting"
+#~ msgid "Connecting…"
+#~ msgstr "Goo ma ciya…"
+
+#~ msgctxt "operator-status-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "Ciyaroo mongu"
+
+#~ msgctxt "operator-status-connected"
+#~ msgid "Connected"
+#~ msgstr "Goo ciyari ra"
+
+#~ msgid "Change the name of your device as it appears in your computer"
+#~ msgstr "Takaa kaŋ nda war jinaa maaɲoo ga fatta ordinateroo ra barmay"
+
+#~ msgid "The SSID cannot be empty"
+#~ msgstr "SSID ši hin ka tee koonu"
+
+#~ msgid "WPA (TKIP)"
+#~ msgstr "WPA (TKIP)"
+
+#~ msgid "WPA2 (AES)"
+#~ msgstr "WPA2 (AES)"
+
+#~ msgid "Resend"
+#~ msgstr "Sanba taaga"
+
+#~ msgid "B"
+#~ msgstr "B"
+
+#~ msgid "KB"
+#~ msgstr "KB"
+
+#~ msgid "MB"
+#~ msgstr "MB"
+
+#~ msgid "GB"
+#~ msgstr "GB"
+
+#~ msgid "TB"
+#~ msgstr "TB"
+
+#~ msgid "Developer tools"
+#~ msgstr "Cinakaw goyjinawey"
+
+#~ msgid "Reset and enable full DevTools"
+#~ msgstr "Yeeti nda cinakaw goyjinay timmantey tunandi"
+
+#~ msgid ""
+#~ "Sorry, the system can’t send your suggestion because you already sent us "
+#~ "feedback. Please try our next software update and send again."
+#~ msgstr ""
+#~ "Alhaa naŋ, dabariɲaŋoo ši hin ka war honnandiroo sanba zama war zaabi ka "
+#~ "ben. Ir hiino goyjinaa šii ka sanba koyne."
+
 #~ msgid "No imported certificate"
 #~ msgstr "Tabatiyan-tiira kul mana sanbundi"
 
 #~ msgid "Voice calls to {{number}}"
 #~ msgstr "Jinde bataga {{number}} here"
-
-#~ msgid "Multimedia Messaging (MMS)"
-#~ msgstr "Hẽenandikaw boobo alhabar (MMS)"
 
 #~ msgid "Do you want to proceed?"
 #~ msgstr "War ga boona ka koy jine?"
@@ -4737,10 +5560,6 @@ msgstr "{{settings-dialog-prompt}}"
 
 #~ msgid "Simple tiling"
 #~ msgstr "Ferawyan faalante"
-
-#~ msgctxt "is-warning-storage-header"
-#~ msgid "USB storage"
-#~ msgstr "USB jišidoo"
 
 #~ msgctxt "is-warning-tethering-header"
 #~ msgid "USB tethering"

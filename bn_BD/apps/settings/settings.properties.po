@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-27 18:45+0000\n"
+"POT-Creation-Date: 2015-09-07 14:45+0000\n"
 "PO-Revision-Date: 2015-06-27 17:42+0000\n"
 "Last-Translator: Zobayer Ahmed Khan <zobayer_mc@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1435426972.000000\n"
@@ -63,11 +63,17 @@ msgctxt "reset"
 msgid "Reset"
 msgstr "রিসেট"
 
+#: factory-reset
+msgid "Factory Reset"
+msgstr ""
+
 #: cancel
 msgid "Cancel"
 msgstr "বাতিল"
 
 #: close
+#, fuzzy
+msgctxt "close"
 msgid "Close"
 msgstr "বন্ধ"
 
@@ -88,6 +94,7 @@ msgid "Pair"
 msgstr "জুটিবদ্ধ"
 
 #: add
+msgctxt "add"
 msgid "Add"
 msgstr ""
 
@@ -149,10 +156,25 @@ msgstr "নেটওয়ার্ক ও সংযোগ"
 
 #: airplaneMode
 #, fuzzy
+msgctxt "airplaneMode"
+msgid "Airplane Mode"
+msgstr "বিমান মোড"
+
+#: airplaneMode.ariaLabel
+#, fuzzy
+msgctxt "airplaneMode.ariaLabel"
 msgid "Airplane Mode"
 msgstr "বিমান মোড"
 
 #: geolocation
+#, fuzzy
+msgctxt "geolocation"
+msgid "Geolocation"
+msgstr "ভৌগলিক অবস্থান"
+
+#: geolocation.ariaLabel
+#, fuzzy
+msgctxt "geolocation.ariaLabel"
 msgid "Geolocation"
 msgstr "ভৌগলিক অবস্থান"
 
@@ -258,7 +280,7 @@ msgstr ""
 
 #: wifi-sleep-description
 msgid ""
-"Enable to automatically turn off Wi-Fi during sleep to save battery power.  "
+"Enable to automatically turn off Wi-Fi during sleep to save battery power."
 msgstr ""
 
 #: manageNetworks
@@ -286,12 +308,19 @@ msgid "{{manageNetworks}}"
 msgstr "{{manageNetworks}}"
 
 #: manageCertificates
-msgid "Manage certificates"
+#, fuzzy
+msgid "Manage Certificates"
 msgstr "সার্টিফিকেটের ব্যবস্থাপনা"
 
-#: manageCert
-msgid "Manage Cert."
-msgstr "সার্টিফিকেটের ব্যবস্থাপনা।"
+#. # LOCALIZATION NOTE (manageCertificates-header): if you leave the original
+#. # en-US value "{{manageCertificates}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID
+#. # "manageCertificates".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: manageCertificates-header
+msgid "{{manageCertificates}}"
+msgstr ""
 
 #: joinHiddenNetwork
 #, fuzzy
@@ -449,6 +478,8 @@ msgid "No known networks"
 msgstr "পরিচিত কোনো নেটওয়ার্ক নেই"
 
 #: edit
+#, fuzzy
+msgctxt "edit"
 msgid "Edit"
 msgstr "সম্পাদনা"
 
@@ -462,15 +493,18 @@ msgid "No certificates imported"
 msgstr ""
 
 #: deleteCertificate
-msgid "Delete certificate"
+#, fuzzy
+msgid "Delete Certificate"
 msgstr "সার্টিফিকেট অপসারণ"
 
 #: importCertificate
-msgid "Import certificate"
+#, fuzzy
+msgid "Import Certificate"
 msgstr "সার্টিফিকেট ইম্পোর্ট"
 
 #: selectCertificateFile
-msgid "Select certificate file"
+#, fuzzy
+msgid "Select Certificate File"
 msgstr "সার্টিফিকেট ফাইল নির্বাচন করুন"
 
 #: enterCertificateNickname
@@ -582,6 +616,8 @@ msgstr "বাতিল করতে ব্যর্থ WPS [{{error}}]"
 
 #. # Connectivity :: Call
 #: callSettings
+#, fuzzy
+msgctxt "callSettings"
 msgid "Call Settings"
 msgstr "কল সেটিং"
 
@@ -695,7 +731,7 @@ msgstr "অনুপস্থিত থাকলে"
 msgid "When unreachable"
 msgstr "যখন অনুপস্থিত"
 
-#: callForwardingForwardingVoiceToNumber.innerHTML
+#: callForwardingForwardingVoiceToNumber
 msgid "Voice calls to <bdi>{{number}}</bdi>"
 msgstr ""
 
@@ -982,10 +1018,6 @@ msgstr ""
 msgid "The PIN2 code is incorrect."
 msgstr "পিন২ কোডটি সঠিক নয়।"
 
-#: fdn-enabled-warning
-msgid "Call forwarding is disabled by FDN."
-msgstr "FDN দ্বারা কল ফরওয়ার্ডিং নিষ্ক্রিয় হয়ে গেছে।"
-
 #: fdnContact-name
 msgid "name"
 msgstr "নাম"
@@ -1027,6 +1059,8 @@ msgstr ""
 
 #. # Connectivity :: Messaging
 #: messagingSettings
+#, fuzzy
+msgctxt "messagingSettings"
 msgid "Messaging Settings"
 msgstr "বার্তা সেটিং"
 
@@ -1062,13 +1096,10 @@ msgstr "রিপোর্ট পড়ুন"
 msgid "Request read report for each message sent"
 msgstr "প্রত্যেকটি প্রেরিত বার্তা পাঠের রিপোর্টের অনুরোধ করুন"
 
-#. # LOCALIZATION NOTE (mmsTitle): LRE (&#x202a;) and PDF (&#x202c;)
-#. # force the proper directionality of parentheses at the end of the string
-#. # regardless of the direction of the surrounding layout. Remove them only
-#. # if the translation puts them between other text.
-#: mmsTitle.innerHTML
-msgid "&#x202a;Multimedia Messaging (MMS)&#x202c;"
-msgstr ""
+#: mmsTitle
+#, fuzzy
+msgid "Multimedia Messaging (MMS)"
+msgstr "মাল্টিমিডিয়া বার্তা (MMS)"
 
 #: auto-retrieve
 #, fuzzy
@@ -1138,6 +1169,8 @@ msgstr ""
 
 #. # Connectivity :: Cellular & Data
 #: cellularAndData
+#, fuzzy
+msgctxt "cellularAndData"
 msgid "Cellular & Data"
 msgstr "সেলুলার ও ডাটা"
 
@@ -1247,6 +1280,11 @@ msgstr "WCDMA পছন্দনীয়"
 msgid "Auto (2G/3G)"
 msgstr "স্বয়ংক্রিয় (2G/3G)"
 
+#: operator-networkType-auto-3G-4G
+#, fuzzy
+msgid "Auto (3G/4G)"
+msgstr "স্বয়ংক্রিয় (2G/3G)"
+
 #: operator-networkType-auto-CDMA-EVDO
 msgid "Auto (CDMA/EVDO)"
 msgstr "স্বয়ংক্রিয় (CDMA/EVDO)"
@@ -1257,6 +1295,11 @@ msgstr "স্বয়ংক্রিয় (WCDMA/GSM)"
 
 #: operator-networkType-auto-LTE-WCDMA-GSM
 msgid "Auto (LTE/WCDMA/GSM)"
+msgstr "স্বয়ংক্রিয় (LTE/WCDMA/GSM)"
+
+#: operator-networkType-auto-LTE-WCDMA
+#, fuzzy
+msgid "Auto (LTE/WCDMA)"
 msgstr "স্বয়ংক্রিয় (LTE/WCDMA/GSM)"
 
 #: operator-networkType-auto-LTE-CDMA-EVDO
@@ -1285,20 +1328,47 @@ msgstr "স্বনির্ধারিত"
 msgid "Turn automatic selection off to view available network operators."
 msgstr "স্বয়ংক্রিয় নির্বাচন বন্ধ করুন যাতে উপস্থিত নেটওয়ার্ক অপারেটরদের দেখা যায়।"
 
-#: operator-status-connecting
-msgctxt "operator-status-connecting"
+#: operator-info-connecting
+#, fuzzy
+msgctxt "operator-info-connecting"
 msgid "Connecting…"
-msgstr "সংযুক্ত করা হচ্ছে..."
+msgstr "সংযুক্ত করা হচ্ছে…"
 
-#: operator-status-connectingfailed
-msgctxt "operator-status-connectingfailed"
+#: operator-info-failed
+#, fuzzy
+msgctxt "operator-info-failed"
 msgid "Connection failed"
-msgstr "সংযোগ বিছিন্ন"
+msgstr "সংযোগ স্থাপনে ব্যর্থ"
 
-#: operator-status-connected
-msgctxt "operator-status-connected"
+#: operator-info-connected
+#, fuzzy
+msgctxt "operator-info-connected"
 msgid "Connected"
-msgstr "সংযুক্ত হয়েছে"
+msgstr "সংযুক্ত"
+
+#: operator-info-available
+#, fuzzy
+msgctxt "operator-info-available"
+msgid "Available"
+msgstr "বিদ্যমান"
+
+#: operator-info-current
+#, fuzzy
+msgctxt "operator-info-current"
+msgid "Connected"
+msgstr "সংযুক্ত"
+
+#: operator-info-forbidden
+#, fuzzy
+msgctxt "operator-info-forbidden"
+msgid "Forbidden"
+msgstr "নিষিদ্ধ"
+
+#: operator-info-unknown
+#, fuzzy
+msgctxt "operator-info-unknown"
+msgid "Unknown state"
+msgstr "অজানা অবস্থা"
 
 #: operator-roamingPreference
 msgid "Roaming preference"
@@ -1404,6 +1474,20 @@ msgstr "IMS সেটিং"
 #: imsSettings-header2
 msgid "{{imsSettings}}"
 msgstr "{{imsSettings}}"
+
+#: fotaSettings
+msgid "FOTA Settings"
+msgstr ""
+
+#. # LOCALIZATION NOTE (fotaSettings-header): if you leave the original
+#. # en-US value "{{fotaSettings}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "fotaSettings".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: fotaSettings-header
+#, fuzzy
+msgid "{{fotaSettings}}"
+msgstr "{{dataSettings}}"
 
 #: apn-editor-header
 msgid "APN Editor"
@@ -1530,10 +1614,14 @@ msgid "This resets the settings to default values. This cannot be undone."
 msgstr ""
 
 #: state-unknown
+#, fuzzy
+msgctxt "state-unknown"
 msgid "Unknown state"
 msgstr "অজানা অবস্থা"
 
 #: state-available
+#, fuzzy
+msgctxt "state-available"
 msgid "Available"
 msgstr "বিদ্যমান"
 
@@ -1548,6 +1636,8 @@ msgid "Connected"
 msgstr "সংযুক্ত হয়েছে"
 
 #: state-forbidden
+#, fuzzy
+msgctxt "state-forbidden"
 msgid "Forbidden"
 msgstr "নিষিদ্ধ"
 
@@ -1576,6 +1666,8 @@ msgstr ""
 
 #. # Connectivity :: Bluetooth
 #: bluetooth
+#, fuzzy
+msgctxt "bluetooth"
 msgid "Bluetooth"
 msgstr "ব্লুটুথ"
 
@@ -1732,9 +1824,13 @@ msgstr "আমার ডিভাইসের নাম পরিবর্তন
 msgid "Unknown device"
 msgstr "অপরিচিত ডিভাইস"
 
-#: change-phone-name-desc
-msgid "Change the name of your device as it appears in your computer"
-msgstr "আপনার ডিভাইসটির নাম পরিবর্তন করুন যা আপনার কম্পিউটারে দেখাবে"
+#: change-btdevice-name
+msgid "Change device name"
+msgstr ""
+
+#: change-btdevice-name-desc
+msgid "This name will appear on your other Bluetooth devices"
+msgstr ""
 
 #: bluetooth-new-name
 msgid "New name"
@@ -1775,18 +1871,29 @@ msgid ""
 msgstr ""
 "বর্তমানে আপনি এই ডিভাইসে সংযুক্ত আছেন। আলাদা করা হলে এর থেকে বিচ্ছিন্ন হয়ে যাবে।"
 
+#: unpair-confirm
+msgid ""
+"{{unpair-title}}\n"
+"{{unpair-msg}}"
+msgstr ""
+
 #. # Connectivity :: NFC
 #: nfc
+#, fuzzy
+msgctxt "nfc"
+msgid "NFC"
+msgstr "NFC"
+
+#: nfc.ariaLabel
+#, fuzzy
+msgctxt "nfc.ariaLabel"
 msgid "NFC"
 msgstr "NFC"
 
 #. # Connectivity :: Internet Sharing
-#: SSIDCannotBeEmpty
-msgid "The SSID cannot be empty"
-msgstr "SSID খালি থাকতে পারে না"
-
 #: internetSharing
 #, fuzzy
+msgctxt "internetSharing"
 msgid "Internet Sharing"
 msgstr "ইন্টারনেট শেয়ারিং"
 
@@ -1871,7 +1978,7 @@ msgstr "{{hotspotSettings}}"
 msgid "SSID Network Name"
 msgstr "SSID নেটওয়ার্কের নাম"
 
-#: hotspot-open
+#: hotspot-security-open
 msgid "open"
 msgstr "উন্মুক্ত"
 
@@ -1882,8 +1989,8 @@ msgstr "উন্মুক্ত"
 #. # and PDF (&#x202c;) entities to these translations to force the correct direction.
 #. #
 #. # RTL locales should have a translation similar to this:
-#. # hotspot-wpa-psk.innerHTML= &#x202a;WPA (TKIP)&#x202c;
-#. # hotspot-wpa2-psk.innerHTML= &#x202a;WPA2 (AES)&#x202c;
+#. # hotspot-wpa-psk= &#x202a;WPA (TKIP)&#x202c;
+#. # hotspot-wpa2-psk= &#x202a;WPA2 (AES)&#x202c;
 #. #
 #. # [More details]
 #. #
@@ -1894,17 +2001,13 @@ msgstr "উন্মুক্ত"
 #. # automatically in a wrong way by browser. Because from engineering side,
 #. # we can only change settings.ar.properties, for localizers, please remember to
 #. # put them in the other RTL languages.
-#. #
-#. # Additionally, in order to make this hack work, we got some help from l10n.js
-#. # that we need to put these strings inside "KEY".innerHTML, so that's the
-#. # reason why these two strings below would be suffixed with ".innerHTML"
-#: hotspot-wpa-psk.innerHTML
-msgid "WPA (TKIP)"
-msgstr "WPA (TKIP)"
+#: hotspot-security-wpa-psk
+msgid "WPA"
+msgstr ""
 
-#: hotspot-wpa2-psk.innerHTML
-msgid "WPA2 (AES)"
-msgstr "WPA2 (AES)"
+#: hotspot-security-wpa2-psk
+msgid "WPA2"
+msgstr ""
 
 #: hotspot-password-desc
 msgid "The password must have at least 8 characters."
@@ -1919,6 +2022,14 @@ msgstr "ব্যাক্তিগতকরণ"
 
 #. # Personalization :: Sound
 #: sound
+#, fuzzy
+msgctxt "sound"
+msgid "Sound"
+msgstr "শব্দ"
+
+#: sound.ariaLabel
+#, fuzzy
+msgctxt "sound.ariaLabel"
 msgid "Sound"
 msgstr "শব্দ"
 
@@ -2008,6 +2119,14 @@ msgstr "রিংটোন ব্যবস্থাপনার জন্য আ
 
 #. # Personalization :: Display
 #: display
+#, fuzzy
+msgctxt "display"
+msgid "Display"
+msgstr "প্রদর্শন"
+
+#: display.ariaLabel
+#, fuzzy
+msgctxt "display.ariaLabel"
 msgid "Display"
 msgstr "প্রদর্শন"
 
@@ -2068,6 +2187,14 @@ msgstr "লকের স্থিতিবিন্যাস"
 
 #. # Personalization :: Navigation
 #: navigation
+#, fuzzy
+msgctxt "navigation"
+msgid "Navigation"
+msgstr "দিকনির্দেশ"
+
+#: navigation.ariaLabel
+#, fuzzy
+msgctxt "navigation.ariaLabel"
 msgid "Navigation"
 msgstr "দিকনির্দেশ"
 
@@ -2091,6 +2218,14 @@ msgstr "অ্যাপগুলোর মধ্যে যাওয়া আসা
 
 #. # Personalization :: Notifications
 #: notifications
+#, fuzzy
+msgctxt "notifications"
+msgid "Notifications"
+msgstr "বিজ্ঞপ্তি"
+
+#: notifications.ariaLabel
+#, fuzzy
+msgctxt "notifications.ariaLabel"
 msgid "Notifications"
 msgstr "বিজ্ঞপ্তি"
 
@@ -2113,6 +2248,8 @@ msgstr "পুনরায় চালুর পর দেখান"
 
 #. # Personalization :: Date & Time
 #: dateAndTime
+#, fuzzy
+msgctxt "dateAndTime"
 msgid "Date & Time"
 msgstr "তারিখ ও সময়"
 
@@ -2180,6 +2317,8 @@ msgid "Language & Region"
 msgstr "ভাষা ও অঞ্চল"
 
 #: language
+#, fuzzy
+msgctxt "language"
 msgid "Language"
 msgstr "ভাষা"
 
@@ -2218,6 +2357,7 @@ msgstr ""
 #. # Personalization :: Sim cards manager
 #: simManager
 #, fuzzy
+msgctxt "simManager"
 msgid "SIM Manager"
 msgstr "SIM ব্যবস্থাপক"
 
@@ -2297,6 +2437,12 @@ msgctxt "homescreen"
 msgid "Homescreen"
 msgstr "প্রধান স্ক্রিন"
 
+#: homescreen.ariaLabel
+#, fuzzy
+msgctxt "homescreen.ariaLabel"
+msgid "Homescreen"
+msgstr "প্রধান স্ক্রিন"
+
 #: vertical-homescreen-header
 msgctxt "vertical-homescreen-header"
 msgid "Homescreen"
@@ -2328,6 +2474,12 @@ msgctxt "search"
 msgid "Search"
 msgstr "অনুসন্ধান"
 
+#: search.ariaLabel
+#, fuzzy
+msgctxt "search.ariaLabel"
+msgid "Search"
+msgstr "অনুসন্ধান"
+
 #: search-header
 #, fuzzy
 msgctxt "search-header"
@@ -2354,6 +2506,14 @@ msgstr ""
 
 #. # Personalization :: Homescreens
 #: homescreens
+#, fuzzy
+msgctxt "homescreens"
+msgid "Homescreens"
+msgstr "প্রধান স্ক্রিন"
+
+#: homescreens.ariaLabel
+#, fuzzy
+msgctxt "homescreens.ariaLabel"
 msgid "Homescreens"
 msgstr "প্রধান স্ক্রিন"
 
@@ -2376,6 +2536,8 @@ msgid "Change"
 msgstr "পরিবর্তন"
 
 #: description
+#, fuzzy
+msgctxt "description"
 msgid "Description"
 msgstr "বিবরণ"
 
@@ -2389,6 +2551,8 @@ msgid "Selected Keyboards"
 msgstr "নির্বাচিত কীবোর্ড"
 
 #: keyboards
+#, fuzzy
+msgctxt "keyboards"
 msgid "Keyboards"
 msgstr "কীবোর্ড"
 
@@ -2453,6 +2617,12 @@ msgstr "{{appName}} {{layoutName}} পূর্বনির্ধারিত �
 
 #. # Personalization :: Themes
 #: themes
+msgctxt "themes"
+msgid "Themes"
+msgstr ""
+
+#: themes.ariaLabel
+msgctxt "themes.ariaLabel"
 msgid "Themes"
 msgstr ""
 
@@ -2521,16 +2691,10 @@ msgstr "অ্যাকাউন্ট নিশ্চতকরণ বাতি�
 msgid "A verification link has been sent to {{email}}."
 msgstr "{{email}}এ একটি ভেরিফিকেশন লিঙ্ক পাঠানো হয়েছে।"
 
-#. # LOCALIZATION NOTE (fxa-dont-see-email): the "{{resend}}" placeholder
-#. # will be replaced with a link containing the string with ID "fxa-resend":
-#. # "Don't see an email? <a>Resend</a>."
-#: fxa-dont-see-email
-msgid "Don’t see an email? {{resend}}."
+#: fxa-dont-see-email-resend
+#, fuzzy
+msgid "Don’t see an email? <a>Resend</a>."
 msgstr "কোনো ইমেইল দেখতে পারছেন না? {{resend}}।"
-
-#: fxa-resend
-msgid "Resend"
-msgstr "পুনরায় পাঠান"
 
 #. # Panel: logged in, verified
 #: fxa-about
@@ -2555,6 +2719,8 @@ msgid "Find My Device"
 msgstr "Find My Device"
 
 #: fxa-options
+#, fuzzy
+msgctxt "fxa-options"
 msgid "Options"
 msgstr "অপশন"
 
@@ -2637,6 +2803,7 @@ msgstr "পাসকোড: {{code}}"
 
 #: screenLock
 #, fuzzy
+msgctxt "screenLock"
 msgid "Screen Lock"
 msgstr "স্ক্রিন লক"
 
@@ -2649,8 +2816,17 @@ msgstr "স্ক্রিন লক"
 msgid "{{screenLock}}"
 msgstr "{{screenLock}}"
 
+#: screenLock-enabled-with-no-passcode
+msgid "Enabled with no passcode"
+msgstr ""
+
+#: screenLock-enabled-with-passcode
+msgid "Enabled with passcode"
+msgstr ""
+
 #: simSecurity
 #, fuzzy
+msgctxt "simSecurity"
 msgid "SIM Security"
 msgstr "সিম নিরাপত্তা"
 
@@ -2666,6 +2842,13 @@ msgstr "{{simSecurity}}"
 #. # Security :: App permissions
 #: appPermissions
 #, fuzzy
+msgctxt "appPermissions"
+msgid "App Permissions"
+msgstr "অ্যাপের অনুমতি"
+
+#: appPermissions.ariaLabel
+#, fuzzy
+msgctxt "appPermissions.ariaLabel"
 msgid "App Permissions"
 msgstr "অ্যাপের অনুমতি"
 
@@ -3112,6 +3295,8 @@ msgstr ""
 
 #. # Security :: Do Not Track
 #: doNotTrack
+#, fuzzy
+msgctxt "doNotTrack"
 msgid "Do Not Track"
 msgstr "ট্র্যাক করবেন না"
 
@@ -3162,6 +3347,12 @@ msgstr ""
 
 #. # Security :: Browsing Privacy
 #: browsingPrivacy
+msgctxt "browsingPrivacy"
+msgid "Browsing Privacy"
+msgstr ""
+
+#: browsingPrivacy.ariaLabel
+msgctxt "browsingPrivacy.ariaLabel"
 msgid "Browsing Privacy"
 msgstr ""
 
@@ -3202,11 +3393,12 @@ msgstr "পরিষ্কার"
 
 #. # Security :: Privacy Panel
 #: privacy-controls
+msgctxt "privacy-controls"
 msgid "Privacy Controls"
 msgstr ""
 
-#: no-privacy-panel
-msgid "No privacy panel app found"
+#: no-privacy-controls
+msgid "No privacy controls app found"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3228,6 +3420,7 @@ msgstr "নিষ্ক্রিয় করতে কেবল খুলুন"
 
 #: appStorage
 #, fuzzy
+msgctxt "appStorage"
 msgid "Application Storage"
 msgstr "অ্যাপ্লিকেশন সংগ্রহস্থল"
 
@@ -3239,26 +3432,6 @@ msgstr "অ্যাপ্লিকেশন সংগ্রহস্থল"
 #: appStorage-header
 msgid "{{appStorage}}"
 msgstr "{{appStorage}}"
-
-#: byteUnit-B
-msgid "B"
-msgstr "B"
-
-#: byteUnit-KB
-msgid "KB"
-msgstr "KB"
-
-#: byteUnit-MB
-msgid "MB"
-msgstr "MB"
-
-#: byteUnit-GB
-msgid "GB"
-msgstr "GB"
-
-#: byteUnit-TB
-msgid "TB"
-msgstr "টেরাবাইট"
 
 #: storageSize
 msgid "{{size}} {{unit}}"
@@ -3329,16 +3502,17 @@ msgid "Transfer Protocol"
 msgstr ""
 
 #: protocol-mtp
-msgid "Media transfer protocol (MTP)"
+msgid "Media Transfer Protocol (MTP)"
 msgstr ""
 
 #: protocol-ums
-msgid "USB mass Storage (UMS)"
+msgid "USB Mass Storage (UMS)"
 msgstr ""
 
 #. # Storage :: Media storage
 #: mediaStorage
 #, fuzzy
+msgctxt "mediaStorage"
 msgid "Media Storage"
 msgstr "মিডিয়া স্টোরেজ"
 
@@ -3508,6 +3682,23 @@ msgstr "ফরম্যাট"
 msgid "SD card unmounted"
 msgstr ""
 
+#: ums-partial-support-warning-title
+msgid "Warning: USB Mass Storage may not work"
+msgstr ""
+
+#: ums-partial-support-warning-msg-1
+msgid ""
+"USB Mass Storage will only work correctly with an external SD card. If you'd "
+"like to be able to access both your internal and external storage, you must "
+"use MTP."
+msgstr ""
+
+#: ums-partial-support-warning-msg-2
+msgid ""
+"Press \"OK\" to switch to USB Mass Storage, or \"Cancel\" to remain in MTP "
+"mode."
+msgstr ""
+
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Device
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3520,9 +3711,22 @@ msgctxt "help"
 msgid "Help"
 msgstr "সহায়তা"
 
+#: help.ariaLabel
+#, fuzzy
+msgctxt "help.ariaLabel"
+msgid "Help"
+msgstr "সহায়তা"
+
 #. # Device :: Information
 #: deviceInfo
 #, fuzzy
+msgctxt "deviceInfo"
+msgid "Device Information"
+msgstr "ডিভাইস সংক্রান্ত তথ্য"
+
+#: deviceInfo.ariaLabel
+#, fuzzy
+msgctxt "deviceInfo.ariaLabel"
 msgid "Device Information"
 msgstr "ডিভাইস সংক্রান্ত তথ্য"
 
@@ -3539,7 +3743,7 @@ msgstr "{{deviceInfo}}"
 msgid "IMEI"
 msgstr "IMEI"
 
-#: deviceInfo-IMEI-with-index.innerHTML
+#: deviceInfo-IMEI-with-index
 msgid "IMEI {{index}}: <bdi>{{imei}}</bdi>"
 msgstr ""
 
@@ -3547,7 +3751,7 @@ msgstr ""
 msgid "ICCID"
 msgstr "ICCID"
 
-#: deviceInfo-ICCID-with-index.innerHTML
+#: deviceInfo-ICCID-with-index
 msgid "SIM {{index}}: <bdi>{{iccid}}</bdi>"
 msgstr ""
 
@@ -3556,7 +3760,7 @@ msgstr ""
 msgid "Phone Number"
 msgstr "ফোন নম্বর"
 
-#: deviceInfo-MSISDN-with-index.innerHTML
+#: deviceInfo-MSISDN-with-index
 msgid "SIM {{index}}: <bdi>{{msisdn}}</bdi>"
 msgstr ""
 
@@ -3565,6 +3769,14 @@ msgid "SIM {{index}}: Not available"
 msgstr "SIM {{index}}: বিদ্যমান নেই"
 
 #: downloads
+#, fuzzy
+msgctxt "downloads"
+msgid "Downloads"
+msgstr "ডাউনলোড"
+
+#: downloads.ariaLabel
+#, fuzzy
+msgctxt "downloads.ariaLabel"
 msgid "Downloads"
 msgstr "ডাউনলোড"
 
@@ -3590,268 +3802,6 @@ msgstr "SIM {{index}}: অজ্ঞাত"
 msgid "Git Commit Info"
 msgstr "গিট কমিট তথ্য"
 
-#: developer
-msgid "Developer"
-msgstr "ডেভেলপার"
-
-#. # LOCALIZATION NOTE (developer-header): if you leave the original
-#. # en-US value "{{developer}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "developer".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: developer-header
-msgid "{{developer}}"
-msgstr "{{developer}}"
-
-#: hud-settings-button
-msgid "Developer HUD"
-msgstr "ডেভেলপার HUD"
-
-#. # LOCALIZATION NOTE (hud-settings-header): if you leave the original en-US value
-#. # "{{hud-settings-button}}" in the following string, the localization will be
-#. # automatically picked from the existing string with ID "hud-settings-button". If you
-#. # need to adapt your localizations to the available space in headers or
-#. # buttons, you can use different strings here.
-#: hud-settings-header
-msgid "{{hud-settings-button}}"
-msgstr ""
-
-#: hud-devtools
-#, fuzzy
-msgid "Developer tools"
-msgstr "ডেভেলপার টুল"
-
-#. # LOCALIZATION NOTE (hud-devtools-header): if you leave the original en-US
-#. # value "{{hud-devtools}}" in the following string, the localization will be
-#. # automatically picked from the existing string with ID "hud-devtools". If you
-#. # need to adapt your localizations to the available space in headers or
-#. # buttons, you can use different strings here.
-#: hud-devtools-header
-msgid "{{hud-devtools}}"
-msgstr ""
-
-#: hud-logging
-msgid "Log changes in ADB"
-msgstr "ADB তে লগ পরিবর্তন"
-
-#: hud-system
-msgid "Show system HUD"
-msgstr "সিস্টেম HUD দেখাও"
-
-#: hud-problems
-msgid "Problems"
-msgstr "সমস্যা"
-
-#: hud-warnings
-msgid "Warnings"
-msgstr "সতর্কীকরণ"
-
-#: hud-errors
-msgid "Errors"
-msgstr "ত্রুটি"
-
-#: hud-security
-msgid "Security issues"
-msgstr "সুরক্ষাজনিত সমস্যা"
-
-#: hud-performance
-msgid "Performance"
-msgstr "কর্মক্ষমতা"
-
-#: hud-reflows
-msgid "Reflows"
-msgstr "পুনঃপ্রবাহ"
-
-#: hud-jank
-msgid "Jank"
-msgstr "জাঙ্ক"
-
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Jank Threshold"
-
-#: hud-fps
-msgid "Frames per second"
-msgstr "প্রতি সেকেন্ডে ফ্রেমের সংখ্যা"
-
-#: hud-ttl
-msgid "Time to load"
-msgstr "লোডিং এর সময়"
-
-#: hud-memory
-msgid "Memory"
-msgstr "মেমোরী"
-
-#: hud-uss
-msgid "Unique Set Size"
-msgstr "সতন্ত্র সেট আকার"
-
-#: hud-appmemory
-msgid "App memory"
-msgstr "অ্যাপ মেমোরি"
-
-#: hud-jsobjects
-msgid "JS objects"
-msgstr "JS বস্তুসমূহ"
-
-#: hud-jsstrings
-msgid "JS strings"
-msgstr "JS স্ট্রিং"
-
-#: hud-jsother
-msgid "JS other"
-msgstr "JS অন্যান্য"
-
-#: hud-dom
-msgid "DOM"
-msgstr "DOM"
-
-#: hud-style
-msgid "Style"
-msgstr "বিন্যাস"
-
-#: hud-other
-msgctxt "hud-other"
-msgid "Other"
-msgstr "অন্যান্য"
-
-#: software
-msgid "Software"
-msgstr "সফটওয়্যার"
-
-#: devSettings
-#, fuzzy
-msgid "Developer Settings"
-msgstr "ডেভেলপার সেটিং"
-
-#: debug
-msgid "Debug"
-msgstr "ডিবাগ"
-
-#: developer-menu
-msgid "Developer Menu"
-msgstr "ডেভেলপার মেনু"
-
-#: developer-tools
-msgid "Developer Tools"
-msgstr "ডেভেলপার টুল"
-
-#: graphics
-msgid "Graphics"
-msgstr "গ্রাফিক্স"
-
-#: hardware-composer
-msgid "Hardware composer"
-msgstr "হার্ডওয়্যার কম্পোজার"
-
-#: paint-flashing
-msgid "Flash repainted area"
-msgstr "পুনরায় রং করা অংশ ফ্লাশ কর"
-
-#: dumps-layers
-msgid "Dump layers tree"
-msgstr "Dump layers tree"
-
-#: dumps-layerscope
-#, fuzzy
-msgid "Dump layerscope"
-msgstr "Dump layers tree"
-
-#: apz-overscroll
-msgid "Overscrolling"
-msgstr "Overscrolling"
-
-#: tiling
-msgid "Tiling"
-msgstr "Tiling"
-
-#: low-precision
-msgid "Low-precision painting"
-msgstr ""
-
-#: low-opacity
-msgid "Low-precision transparency"
-msgstr ""
-
-#: draw-tile-borders
-msgid "Draw tile borders"
-msgstr "এই সীমানা আঁকুন"
-
-#: draw-layer-borders
-msgid "Draw layer borders"
-msgstr "লেয়ারের বর্ডার আঁকুন"
-
-#: log-animations
-msgid "Log slow animations"
-msgstr "মন্থর এনিমেশনগুলো লগ করুন"
-
-#: remote-debugging-usb
-msgid "Debugging via USB"
-msgstr "USB দিয়ে ডিবাগিং"
-
-#: dev-tools-wifi
-msgid "DevTools via Wi-Fi"
-msgstr "ওয়াই-ফাই এর মাধ্যমে DevTools"
-
-#: dev-tools-qps
-msgid "Pseudo-localization"
-msgstr ""
-
-#: debugger-disabled
-msgctxt "debugger-disabled"
-msgid "Disabled"
-msgstr "নিষ্ক্রিয়কৃত"
-
-#: debugger-adb-only
-msgid "ADB only"
-msgstr "শুধু ADB"
-
-#: debugger-adb-and-devtools
-msgid "ADB and DevTools"
-msgstr "ADB এবং DevTools"
-
-#: wifi-debugging
-msgid "Wi-Fi output in ADB"
-msgstr "ADB তে ওয়াই-ফাই আউটপুট"
-
-#: bluetooth-debugging
-msgid "Bluetooth output in ADB"
-msgstr "ADB তে ব্লুটুথ এর আউটপুট"
-
-#: nfc-debugging
-#, fuzzy
-msgid "NFC output in ADB"
-msgstr "ADB তে ওয়াই-ফাই আউটপুট"
-
-#: ril-debugging
-#, fuzzy
-msgid "RIL output in ADB"
-msgstr "ADB তে ওয়াই-ফাই আউটপুট"
-
-#: console-enabled
-msgid "Console enabled"
-msgstr "কনসোল সক্রিয় করা আছে"
-
-#: cards-view-screenshots
-msgid "Cards View: Screenshots"
-msgstr "Cards View: Screenshots"
-
-#: geolocation-debugging-enabled
-msgid "Geolocation output in ADB"
-msgstr "ADB তে ভৌগলিক আউটপুট"
-
-#: geolocation-debugging-gps-locations-ignored
-msgid "Ignore GPS locations"
-msgstr ""
-
-#: use-reviewer-certs
-msgid "Use Marketplace reviewer certs"
-msgstr "মার্কেটপ্লেস রিভিউয়ার চার্ট ব্যবহার করুন"
-
-#: shake-to-log
-msgid "Shake to save system log"
-msgstr ""
-
 #: model-name
 msgid "Model"
 msgstr "মডেল"
@@ -3865,6 +3815,14 @@ msgstr "ওএস সংস্করণ"
 #, fuzzy
 msgid "Firmware Revision"
 msgstr "ফার্মওয়্যার পুনর্বিবেচনা"
+
+#: hardware_manufacturer
+msgid "Hardware Manufacturer"
+msgstr ""
+
+#: hardware_platform
+msgid "Hardware Platform"
+msgstr ""
 
 #: hardware_revision
 #, fuzzy
@@ -3991,22 +3949,6 @@ msgstr "রিসেট"
 #: reset-warning-title
 #, fuzzy
 msgctxt "reset-warning-title"
-msgid "CAUTION"
-msgstr "সতর্কতা"
-
-#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
-#. # full DevTools access.
-#: unlock-privileges
-msgid "Unlock Privileges"
-msgstr ""
-
-#: reset-devtools
-msgid "Reset and enable full DevTools"
-msgstr ""
-
-#: reset-devtools-warning-title
-#, fuzzy
-msgctxt "reset-devtools-warning-title"
 msgid "CAUTION"
 msgstr "সতর্কতা"
 
@@ -4173,6 +4115,333 @@ msgstr "মজিলা পাবলিক লাইসেন্স ২.০"
 msgid "Apache License 2.0"
 msgstr "অ্যাপাচি লাইসেন্স ২.০"
 
+#. # Device :: Developer
+#: developer
+#, fuzzy
+msgctxt "developer"
+msgid "Developer"
+msgstr "ডেভেলপার"
+
+#: developer.ariaLabel
+#, fuzzy
+msgctxt "developer.ariaLabel"
+msgid "Developer"
+msgstr "ডেভেলপার"
+
+#. # LOCALIZATION NOTE (developer-header): if you leave the original
+#. # en-US value "{{developer}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "developer".
+#. # If you need to adapt your localization to the reduced space available
+#. # in headers, you can use a shorter string here.
+#: developer-header
+msgid "{{developer}}"
+msgstr "{{developer}}"
+
+#: hud-settings-button
+msgid "Developer HUD"
+msgstr "ডেভেলপার HUD"
+
+#. # LOCALIZATION NOTE (hud-settings-header): if you leave the original en-US value
+#. # "{{hud-settings-button}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-settings-button". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-settings-header
+msgid "{{hud-settings-button}}"
+msgstr ""
+
+#: hud-devtools
+#, fuzzy
+msgctxt "hud-devtools"
+msgid "Developer Tools"
+msgstr "ডেভেলপার টুল"
+
+#. # LOCALIZATION NOTE (hud-devtools-header): if you leave the original en-US
+#. # value "{{hud-devtools}}" in the following string, the localization will be
+#. # automatically picked from the existing string with ID "hud-devtools". If you
+#. # need to adapt your localizations to the available space in headers or
+#. # buttons, you can use different strings here.
+#: hud-devtools-header
+msgid "{{hud-devtools}}"
+msgstr ""
+
+#: hud-hide
+msgid "Hide All HUD Elements"
+msgstr ""
+
+#: hud-logging
+#, fuzzy
+msgid "Log Changes in ADB"
+msgstr "ADB তে লগ পরিবর্তন"
+
+#: hud-system
+#, fuzzy
+msgid "Show System HUD"
+msgstr "সিস্টেম HUD দেখাও"
+
+#: hud-problems
+msgid "Problems"
+msgstr "সমস্যা"
+
+#: hud-warnings
+msgid "Warnings"
+msgstr "সতর্কীকরণ"
+
+#: hud-errors
+msgid "Errors"
+msgstr "ত্রুটি"
+
+#: hud-security
+#, fuzzy
+msgid "Security Issues"
+msgstr "সুরক্ষাজনিত সমস্যা"
+
+#: hud-performance
+msgid "Performance"
+msgstr "কর্মক্ষমতা"
+
+#: hud-reflows
+msgid "Reflows"
+msgstr "পুনঃপ্রবাহ"
+
+#: hud-jank
+msgid "Jank"
+msgstr "জাঙ্ক"
+
+#: jank-threshold
+msgid "Jank Threshold"
+msgstr "Jank Threshold"
+
+#: hud-fps
+#, fuzzy
+msgid "Frames per Second"
+msgstr "প্রতি সেকেন্ডে ফ্রেমের সংখ্যা"
+
+#: hud-ttl
+#, fuzzy
+msgid "Time to Load"
+msgstr "লোডিং এর সময়"
+
+#: hud-memory
+msgid "Memory"
+msgstr "মেমোরী"
+
+#: hud-uss
+msgid "Unique Set Size"
+msgstr "সতন্ত্র সেট আকার"
+
+#: hud-appmemory
+#, fuzzy
+msgid "App Memory"
+msgstr "অ্যাপ মেমোরি"
+
+#: hud-jsobjects
+#, fuzzy
+msgid "JS Objects"
+msgstr "JS বস্তুসমূহ"
+
+#: hud-jsstrings
+#, fuzzy
+msgid "JS Strings"
+msgstr "JS স্ট্রিং"
+
+#: hud-jsother
+#, fuzzy
+msgid "JS Other"
+msgstr "JS অন্যান্য"
+
+#: hud-dom
+msgid "DOM"
+msgstr "DOM"
+
+#: hud-style
+msgid "Style"
+msgstr "বিন্যাস"
+
+#: hud-other
+msgctxt "hud-other"
+msgid "Other"
+msgstr "অন্যান্য"
+
+#: hud-telemetry
+msgid "Telemetry"
+msgstr ""
+
+#: software
+msgid "Software"
+msgstr "সফটওয়্যার"
+
+#: devSettings
+#, fuzzy
+msgid "Developer Settings"
+msgstr "ডেভেলপার সেটিং"
+
+#: debug
+msgid "Debug"
+msgstr "ডিবাগ"
+
+#: developer-menu
+msgid "Developer Menu"
+msgstr "ডেভেলপার মেনু"
+
+#: developer-tools
+#, fuzzy
+msgctxt "developer-tools"
+msgid "Developer Tools"
+msgstr "ডেভেলপার টুল"
+
+#: graphics
+msgid "Graphics"
+msgstr "গ্রাফিক্স"
+
+#: hardware-composer
+#, fuzzy
+msgid "Hardware Composer"
+msgstr "হার্ডওয়্যার কম্পোজার"
+
+#: paint-flashing
+#, fuzzy
+msgid "Flash Repainted Area"
+msgstr "পুনরায় রং করা অংশ ফ্লাশ কর"
+
+#: dumps-layers
+#, fuzzy
+msgid "Dump Layers Tree"
+msgstr "Dump layers tree"
+
+#: dumps-display-list
+msgid "Dump Display List"
+msgstr ""
+
+#: dumps-layerscope
+#, fuzzy
+msgid "Dump LayerScope"
+msgstr "Dump layers tree"
+
+#: apz-overscroll
+msgid "Overscrolling"
+msgstr "Overscrolling"
+
+#: tiling
+msgid "Tiling"
+msgstr "Tiling"
+
+#: low-precision
+msgid "Low Precision Painting"
+msgstr ""
+
+#: low-opacity
+msgid "Low Precision Transparency"
+msgstr ""
+
+#: draw-tile-borders
+#, fuzzy
+msgid "Draw Tile Borders"
+msgstr "এই সীমানা আঁকুন"
+
+#: draw-layer-borders
+#, fuzzy
+msgid "Draw Layer Borders"
+msgstr "লেয়ারের বর্ডার আঁকুন"
+
+#: log-animations
+#, fuzzy
+msgid "Log Slow Animations"
+msgstr "মন্থর এনিমেশনগুলো লগ করুন"
+
+#: remote-debugging-usb
+msgid "Debugging via USB"
+msgstr "USB দিয়ে ডিবাগিং"
+
+#: devtools-wifi
+msgid "DevTools via Wi-Fi"
+msgstr "ওয়াই-ফাই এর মাধ্যমে DevTools"
+
+#: devtools-device-name
+msgid "DevTools Wi-Fi Device Name"
+msgstr ""
+
+#: devtools-qps
+msgid "Pseudo-Localization"
+msgstr ""
+
+#: debugger-disabled
+msgctxt "debugger-disabled"
+msgid "Disabled"
+msgstr "নিষ্ক্রিয়কৃত"
+
+#: debugger-adb-only
+msgid "ADB only"
+msgstr "শুধু ADB"
+
+#: debugger-adb-and-devtools
+msgid "ADB and DevTools"
+msgstr "ADB এবং DevTools"
+
+#: wifi-debugging
+#, fuzzy
+msgid "Wi-Fi Output in ADB"
+msgstr "ADB তে ওয়াই-ফাই আউটপুট"
+
+#: bluetooth-debugging
+#, fuzzy
+msgid "Bluetooth Output in ADB"
+msgstr "ADB তে ব্লুটুথ এর আউটপুট"
+
+#: bluetooth-snoop-debugging
+msgid "Bluetooth HCI Sniffing Logs to SD Card"
+msgstr ""
+
+#: nfc-debugging
+#, fuzzy
+msgid "NFC Output in ADB"
+msgstr "ADB তে ওয়াই-ফাই আউটপুট"
+
+#: ril-debugging
+#, fuzzy
+msgid "RIL Output in ADB"
+msgstr "ADB তে ওয়াই-ফাই আউটপুট"
+
+#: network-debugging
+msgid "Network Output in ADB"
+msgstr ""
+
+#: mms-debugging
+#, fuzzy
+msgid "MMS Output in ADB"
+msgstr "ADB তে ওয়াই-ফাই আউটপুট"
+
+#: console-enabled
+#, fuzzy
+msgid "Console Enabled"
+msgstr "কনসোল সক্রিয় করা আছে"
+
+#: cards-view-screenshots
+msgid "Cards View: Screenshots"
+msgstr "Cards View: Screenshots"
+
+#: geolocation-debugging-enabled
+#, fuzzy
+msgid "Geolocation Output in ADB"
+msgstr "ADB তে ভৌগলিক আউটপুট"
+
+#: geolocation-debugging-gps-locations-ignored
+msgid "Ignore GPS Locations"
+msgstr ""
+
+#: use-reviewer-certs
+#, fuzzy
+msgid "Use Marketplace Reviewer Certs"
+msgstr "মার্কেটপ্লেস রিভিউয়ার চার্ট ব্যবহার করুন"
+
+#: shake-to-log
+msgid "Shake to Save System Log"
+msgstr ""
+
+#: enable-logshake-qa
+msgid "Enable LogShake QA Mode"
+msgstr ""
+
 #: launch-ftu
 msgid "Launch First Time Use"
 msgstr "প্রথমবার ব্যবহারের মত করুন"
@@ -4182,44 +4451,178 @@ msgid "No first time use app found"
 msgstr "প্রথমবারের মত ব্যবহার করা কোন অ্যাপ পাওয়া যায়নি"
 
 #: software-home-button
-msgid "Software home button"
+#, fuzzy
+msgid "Software Home Button"
 msgstr "সফটওয়্যার হোম বাটন"
 
 #: home-gesture
-msgid "Home gesture"
+#, fuzzy
+msgid "Home Gesture"
 msgstr "Home gesture"
 
 #: continuous-transition
-msgid "Continuous transition"
+#, fuzzy
+msgid "Continuous Transition"
 msgstr "ক্রমাগত পরিবর্তন"
 
 #: debug-gaia-enabled
-msgid "Gaia debug traces"
+#, fuzzy
+msgid "Gaia Debug Traces"
 msgstr "গায়া ডিবাগ ট্রেসেস"
 
 #: showScreenReaderSettings
-msgid "Show screen reader settings"
+msgid "Show Screen Reader Settings"
 msgstr ""
 
 #: app-transition
-msgid "App transition"
+#, fuzzy
+msgid "App Transition"
 msgstr "App transition"
 
 #: app-suspending
-msgid "App suspending"
+#, fuzzy
+msgid "App Suspending"
 msgstr "অ্যাপ বন্ধ করা হচ্ছে"
 
 #: copypaste
-msgid "Copy/paste"
+msgid "Copy/Paste"
+msgstr ""
+
+#: multi-screen
+msgid "Multi-Screen"
 msgstr ""
 
 #: verbose-app-permissions
-msgid "Verbose app permissions"
+msgid "Verbose App Permissions"
+msgstr ""
+
+#: pinning-the-web
+msgid "Enable Pinning the Web"
+msgstr ""
+
+#: view-source
+msgid "Enable View Source Gesture"
 msgstr ""
 
 #: window-management
-msgid "Window management"
+#, fuzzy
+msgid "Window Management"
 msgstr "উইন্ডো ব্যবস্থাপনা"
+
+#. # LOCALIZATION NOTE: this string is in developer settings and reset also enables
+#. # full DevTools access.
+#: unlock-privileges
+msgid "Unlock Privileges"
+msgstr ""
+
+#: full-devtools
+msgid "Full DevTools"
+msgstr ""
+
+#: reset-devtools-warning-title
+#, fuzzy
+msgctxt "reset-devtools-warning-title"
+msgid "CAUTION"
+msgstr "সতর্কতা"
+
+#. # Device :: Developer :: Service Workers
+#: service-worker
+msgid "Service Workers"
+msgstr ""
+
+#: service-worker-scope
+msgid "Scope"
+msgstr ""
+
+#: service-worker-script-spec
+msgid "Script spec"
+msgstr ""
+
+#: service-worker-current-worker-url
+msgid "Current worker URL"
+msgstr ""
+
+#: service-worker-active-cache-name
+msgid "Active cache name"
+msgstr ""
+
+#: service-worker-waiting-cache-name
+msgid "Waiting cache name"
+msgstr ""
+
+#: service-worker-update
+msgid "Update"
+msgstr ""
+
+#: service-worker-unregister
+msgid "Unregister"
+msgstr ""
+
+#: service-worker-no-registrations
+msgid "No service workers found"
+msgstr ""
+
+#. # Device :: Full Developer Mode
+#: developer-menu-disabled-warning-title
+msgid "Developer menu not enabled"
+msgstr ""
+
+#: developer-menu-disabled-warning-msg-1
+msgid ""
+"Developer Mode can't be enabled without the developer menu first being "
+"enabled."
+msgstr ""
+
+#: developer-menu-disabled-warning-msg-2
+msgid ""
+"Please enable it from Settings > Device Information > More Information > "
+"Developer Menu."
+msgstr ""
+
+#: enable-full-dev-mode-first-warning-title
+msgid "Would you like to enable developer mode?"
+msgstr ""
+
+#: enable-full-dev-mode-first-warning-msg-1
+msgid "THIS WILL DELETE ALL YOUR DATA AND FACTORY RESET YOUR DEVICE."
+msgstr ""
+
+#: enable-full-dev-mode-first-warning-msg-2
+msgid "THIS WILL DISABLE ALL SECURITY MEASURES ON YOUR DEVICE."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-title
+msgid "Are you sure you want to enable developer mode?"
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg
+#, fuzzy
+msgid "{[ plural(count) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: enable-full-dev-mode-final-warning-msg[one]
+msgid "Tap 'Enable' {{count}} more time to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[two]
+msgctxt "enable-full-dev-mode-final-warning-msg[two]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[few]
+msgctxt "enable-full-dev-mode-final-warning-msg[few]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[many]
+msgctxt "enable-full-dev-mode-final-warning-msg[many]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
+
+#: enable-full-dev-mode-final-warning-msg[other]
+msgctxt "enable-full-dev-mode-final-warning-msg[other]"
+msgid "Tap 'Enable' {{count}} more times to continue."
+msgstr ""
 
 #. # Device :: Downloads
 #: downloads-edit
@@ -4242,6 +4645,8 @@ msgstr "অপসারণ"
 
 #. # Device :: Battery
 #: battery
+#, fuzzy
+msgctxt "battery"
 msgid "Battery"
 msgstr "ব্যাটারি"
 
@@ -4294,6 +4699,14 @@ msgstr "স্বয়ংক্রিয়ভবে চালু করুন"
 
 #. # Device :: Accessibility
 #: accessibility
+#, fuzzy
+msgctxt "accessibility"
+msgid "Accessibility"
+msgstr "প্রবেশযোগ্যতা"
+
+#: accessibility.ariaLabel
+#, fuzzy
+msgctxt "accessibility.ariaLabel"
 msgid "Accessibility"
 msgstr "প্রবেশযোগ্যতা"
 
@@ -4401,6 +4814,12 @@ msgstr ""
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
 msgctxt "improveBrowserOS"
+msgid "Improve {{brandShortName}}"
+msgstr "{{brandShortName}} উন্নয়ন"
+
+#: improveBrowserOS.ariaLabel
+#, fuzzy
+msgctxt "improveBrowserOS.ariaLabel"
 msgid "Improve {{brandShortName}}"
 msgstr "{{brandShortName}} উন্নয়ন"
 
@@ -4597,15 +5016,6 @@ msgstr ""
 "দুঃখিত, মতামত ফিল্ড খালি থাকার কারণে সিস্টেমটি আপনার মতামত প্রেরণ করতে পারছে না। "
 "দয়া করে কিছু টেক্সট প্রবেশ করিয়ে আবার চেষ্টা করুন।"
 
-#: feedback-errormessage-just-sent
-msgid ""
-"Sorry, the system can’t send your suggestion because you already sent us "
-"feedback. Please try our next software update and send again."
-msgstr ""
-"দুঃখিত, সিস্টেম আপনার পরামর্শ পাঠাতে পারছে না কারণ আপনি ইতিমধ্যে আপনার প্রতিক্রিয়া "
-"পাঠিয়েছেন। অনুগ্রহ করে আমাদের পরবর্তী সফটওয়্যার হালনাগাদের চেষ্টা করুন এবং পুনরায় "
-"পাঠান।"
-
 #: feedback-complete-msg
 msgid ""
 "Thanks for the feedback! We use it to help create better experiences in "
@@ -4613,6 +5023,10 @@ msgid ""
 msgstr ""
 "প্রতিক্রিয়ার জন্য ধন্যবাদ! আমরা এটি ব্যবহার করব এমনভাবে যাতে আমরা ফায়ারফক্স ওএস এর "
 "ভবিষ্যৎ ভার্সনগুলোতে আরও ভাল অভিজ্ঞতা সৃষ্টিতে সহায়তা পায়।"
+
+#: feedback-errormessage-unknown-error
+msgid "Something went wrong. Please try again."
+msgstr ""
 
 #. # Device :: Help
 #: online-support
@@ -4751,9 +5165,14 @@ msgstr "চ্যানেলের অবস্থা দেখুন"
 msgid "End of the proactive session"
 msgstr ""
 
+#: stkEntry.ariaLabel
+msgid "{{ title }}"
+msgstr ""
+
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
 #, fuzzy
+msgctxt "is-warning-storage-header"
 msgid "USB storage"
 msgstr "ইউএসবি স্টোরেজ"
 
@@ -4819,12 +5238,377 @@ msgstr ""
 msgid "{{settings-dialog-prompt}}"
 msgstr ""
 
-#~ msgid "No imported certificate"
-#~ msgstr "কোনো ইম্পোর্ট করা সার্টিফিকেট নেই"
+#: accessible-app-icon.ariaLabel
+msgid "Icon for {{ appName }} app"
+msgstr ""
+
+#. # Addongs settings
+#: addon
+msgid "Add-on"
+msgstr ""
+
+#: addons
+msgctxt "addons"
+msgid "Add-ons"
+msgstr ""
+
+#: addons.ariaLabel
+msgctxt "addons.ariaLabel"
+msgid "Add-ons"
+msgstr ""
+
+#: addons-header
+msgid "{{addons}}"
+msgstr ""
+
+#: addon-details-header1
+msgid "{{ appName }}"
+msgstr ""
+
+#: addon-enable
+msgid "Enable Add-on"
+msgstr ""
+
+#: addon-description-header
+#, fuzzy
+msgctxt "addon-description-header"
+msgid "Description"
+msgstr "বিবরণ"
+
+#: addon-developer-name
+msgid "{{ developerName }}"
+msgstr ""
+
+#: addon-targets
+msgid "Affected Apps"
+msgstr ""
+
+#: addon-options
+#, fuzzy
+msgctxt "addon-options"
+msgid "Options"
+msgstr "অপশন"
+
+#: addon-delete
+msgid "Delete Add-on"
+msgstr ""
+
+#: addon-share
+msgid "Share Add-on"
+msgstr ""
+
+#: addon-share-no-provider
+msgid "No sharing app available"
+msgstr ""
+
+#: addon-no-description
+msgid "This add-on does not include a description in its manifest file."
+msgstr ""
+
+#: addon-no-targets
+msgid "This add-on does not affect any installed apps."
+msgstr ""
+
+#: addon-restart-apps-to-disable
+msgid "Add-on disabled; restart affected apps."
+msgstr ""
+
+#: addon-reboot-required
+msgid ""
+"This add-on affected system apps; you must reboot your device to fully "
+"disable it."
+msgstr ""
+
+#: addon-rename
+msgid "Rename"
+msgstr ""
+
+#: addon-rename-input
+msgid "Enter add-on name"
+msgstr ""
+
+#: addon-rename-desc
+msgid "Change the name of your add-on"
+msgstr ""
+
+#: addon-obsolete
+msgid "This add-on is obsolete and does not work."
+msgstr ""
+
+#: addon-obsolete-can-delete
+msgid "This add-on is obsolete and does not work. Please delete it."
+msgstr ""
+
+#. # Achievements
+#: achievements
+msgid "Achievements"
+msgstr ""
+
+#: achievements.ariaLabel
+msgid "achievements"
+msgstr ""
+
+#: achievements-customize-champ-name
+msgid "Customize Champ"
+msgstr ""
+
+#: achievements-customize-champ-description
+msgid "Open Customizer in an app"
+msgstr ""
+
+#: achievements-add-on-all-star-name
+msgid "Add-on All-Star"
+msgstr ""
+
+#: achievements-add-on-all-star-description
+msgid "Use Customizer to create your own add-on"
+msgstr ""
+
+#: achievements-fab-finder-name
+msgid "Fab Finder"
+msgstr ""
+
+#: achievements-fab-finder-description
+msgid "Install an app or add-on from Hackerplace"
+msgstr ""
+
+#: achievements-content-commander-name
+msgid "Content Commander"
+msgstr ""
+
+#: achievements-content-commander-description
+msgid "Submit an app or add-on to Hackerplace"
+msgstr ""
+
+#: achievements-sharing-is-caring-name
+msgid "Sharing is Caring"
+msgstr ""
+
+#: achievements-sharing-is-caring-description
+msgid "Share your apps and add-ons with the Sharing app"
+msgstr ""
+
+#: achievements-creative-kind-name
+msgid "Creative Kind"
+msgstr ""
+
+#: achievements-creative-kind-description
+msgid "Use Theme Editor to create a new theme"
+msgstr ""
+
+#. # Service Workers
+#: service-workers-interception
+msgid "Intercept requests"
+msgstr ""
+
+#: service-workers-testing
+msgid "Allow over HTTP"
+msgstr ""
+
+#. # LOCALIZATION NOTE: The following strings are spoken by screen readers and not
+#. # shown on the screen.
+#: addButton.ariaLabel
+msgctxt "addButton.ariaLabel"
+msgid "Add"
+msgstr ""
+
+#: closeButton.ariaLabel
+#, fuzzy
+msgctxt "closeButton.ariaLabel"
+msgid "Close"
+msgstr "বন্ধ"
+
+#: changeWallpaperButton.ariaLabel
+msgid "Change wallpaper"
+msgstr ""
+
+#: editButton.ariaLabel
+#, fuzzy
+msgctxt "editButton.ariaLabel"
+msgid "Edit"
+msgstr "সম্পাদনা"
+
+#: wifiSection.ariaLabel
+#, fuzzy
+msgctxt "wifiSection.ariaLabel"
+msgid "Wi-Fi"
+msgstr "ওয়াই-ফাই"
+
+#: simManagerSection.ariaLabel
+#, fuzzy
+msgctxt "simManagerSection.ariaLabel"
+msgid "SIM Manager"
+msgstr "SIM ব্যবস্থাপক"
+
+#: callSettingsSection.ariaLabel
+#, fuzzy
+msgctxt "callSettingsSection.ariaLabel"
+msgid "Call Settings"
+msgstr "কল সেটিং"
+
+#: messagingSettingsSection.ariaLabel
+#, fuzzy
+msgctxt "messagingSettingsSection.ariaLabel"
+msgid "Messaging Settings"
+msgstr "বার্তা সেটিং"
+
+#: cellularAndDataSection.ariaLabel
+#, fuzzy
+msgctxt "cellularAndDataSection.ariaLabel"
+msgid "Cellular & Data"
+msgstr "সেলুলার ও ডাটা"
+
+#: bluetoothSection.ariaLabel
+#, fuzzy
+msgctxt "bluetoothSection.ariaLabel"
+msgid "Bluetooth"
+msgstr "ব্লুটুথ"
+
+#: internetSharingSection.ariaLabel
+#, fuzzy
+msgctxt "internetSharingSection.ariaLabel"
+msgid "Internet Sharing"
+msgstr "ইন্টারনেট শেয়ারিং"
+
+#: dateAndTimeSection.ariaLabel
+#, fuzzy
+msgctxt "dateAndTimeSection.ariaLabel"
+msgid "Date & Time"
+msgstr "তারিখ ও সময়"
+
+#: languageSection.ariaLabel
+#, fuzzy
+msgctxt "languageSection.ariaLabel"
+msgid "Language"
+msgstr "ভাষা"
+
+#: keyboardsSection.ariaLabel
+#, fuzzy
+msgctxt "keyboardsSection.ariaLabel"
+msgid "Keyboards"
+msgstr "কীবোর্ড"
+
+#: fxa-accountsSection.ariaLabel
+#, fuzzy
+msgctxt "fxa-accountsSection.ariaLabel"
+msgid "Firefox Accounts"
+msgstr "ফায়ারফক্স অ্যাকাউন্ট"
+
+#: findmydeviceSection.ariaLabel
+#, fuzzy
+msgctxt "findmydeviceSection.ariaLabel"
+msgid "Find My Device"
+msgstr "Find My Device"
+
+#: screenLockSection.ariaLabel
+#, fuzzy
+msgctxt "screenLockSection.ariaLabel"
+msgid "Screen Lock"
+msgstr "স্ক্রিন লক"
+
+#: simSecuritySection.ariaLabel
+#, fuzzy
+msgctxt "simSecuritySection.ariaLabel"
+msgid "SIM Security"
+msgstr "সিম নিরাপত্তা"
+
+#: doNotTrackSection.ariaLabel
+#, fuzzy
+msgctxt "doNotTrackSection.ariaLabel"
+msgid "Do Not Track"
+msgstr "ট্র্যাক করবেন না"
+
+#: privacySection.ariaLabel
+msgctxt "privacySection.ariaLabel"
+msgid "Privacy Controls"
+msgstr ""
+
+#: enableStorageSection.ariaLabel
+#, fuzzy
+msgctxt "enableStorageSection.ariaLabel"
+msgid "USB storage"
+msgstr "ইউএসবি স্টোরেজ"
+
+#: mediaStorageSection.ariaLabel
+#, fuzzy
+msgctxt "mediaStorageSection.ariaLabel"
+msgid "Media Storage"
+msgstr "মিডিয়া স্টোরেজ"
+
+#: appStorageSection.ariaLabel
+#, fuzzy
+msgctxt "appStorageSection.ariaLabel"
+msgid "Application Storage"
+msgstr "অ্যাপ্লিকেশন সংগ্রহস্থল"
+
+#: batterySection.ariaLabel
+#, fuzzy
+msgctxt "batterySection.ariaLabel"
+msgid "Battery"
+msgstr "ব্যাটারি"
+
+#~ msgid "Manage Cert."
+#~ msgstr "সার্টিফিকেটের ব্যবস্থাপনা।"
+
+#~ msgid "Call forwarding is disabled by FDN."
+#~ msgstr "FDN দ্বারা কল ফরওয়ার্ডিং নিষ্ক্রিয় হয়ে গেছে।"
+
+#~ msgctxt "operator-status-connecting"
+#~ msgid "Connecting…"
+#~ msgstr "সংযুক্ত করা হচ্ছে..."
+
+#~ msgctxt "operator-status-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "সংযোগ বিছিন্ন"
+
+#~ msgctxt "operator-status-connected"
+#~ msgid "Connected"
+#~ msgstr "সংযুক্ত হয়েছে"
+
+#~ msgid "Change the name of your device as it appears in your computer"
+#~ msgstr "আপনার ডিভাইসটির নাম পরিবর্তন করুন যা আপনার কম্পিউটারে দেখাবে"
+
+#~ msgid "The SSID cannot be empty"
+#~ msgstr "SSID খালি থাকতে পারে না"
+
+#~ msgid "WPA (TKIP)"
+#~ msgstr "WPA (TKIP)"
+
+#~ msgid "WPA2 (AES)"
+#~ msgstr "WPA2 (AES)"
+
+#~ msgid "Resend"
+#~ msgstr "পুনরায় পাঠান"
+
+#~ msgid "B"
+#~ msgstr "B"
+
+#~ msgid "KB"
+#~ msgstr "KB"
+
+#~ msgid "MB"
+#~ msgstr "MB"
+
+#~ msgid "GB"
+#~ msgstr "GB"
+
+#~ msgid "TB"
+#~ msgstr "টেরাবাইট"
 
 #, fuzzy
-#~ msgid "Multimedia Messaging (MMS)"
-#~ msgstr "মাল্টিমিডিয়া বার্তা (MMS)"
+#~ msgid "Developer tools"
+#~ msgstr "ডেভেলপার টুল"
+
+#~ msgid ""
+#~ "Sorry, the system can’t send your suggestion because you already sent us "
+#~ "feedback. Please try our next software update and send again."
+#~ msgstr ""
+#~ "দুঃখিত, সিস্টেম আপনার পরামর্শ পাঠাতে পারছে না কারণ আপনি ইতিমধ্যে আপনার "
+#~ "প্রতিক্রিয়া পাঠিয়েছেন। অনুগ্রহ করে আমাদের পরবর্তী সফটওয়্যার হালনাগাদের চেষ্টা "
+#~ "করুন এবং পুনরায় পাঠান।"
+
+#~ msgid "No imported certificate"
+#~ msgstr "কোনো ইম্পোর্ট করা সার্টিফিকেট নেই"
 
 #~ msgid "Async Pan/Zoom"
 #~ msgstr "Async Pan/Zoom"
@@ -4856,11 +5640,6 @@ msgstr ""
 
 #~ msgid "Simple tiling"
 #~ msgstr "Simple tiling"
-
-#, fuzzy
-#~ msgctxt "is-warning-storage-header"
-#~ msgid "USB storage"
-#~ msgstr "ইউএসবি স্টোরেজ"
 
 #, fuzzy
 #~ msgctxt "is-warning-tethering-header"

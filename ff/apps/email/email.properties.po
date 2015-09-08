@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-19 08:45+0000\n"
+"POT-Creation-Date: 2015-09-07 14:45+0000\n"
 "PO-Revision-Date: 2015-04-30 08:13+0000\n"
 "Last-Translator: Ibrahima SARR <ibrahima.sarr@pulaagu.com>\n"
 "Language-Team: FULAH LOCALIZATION\n"
@@ -12,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -37,11 +37,14 @@ msgstr "Uddu"
 msgid "Mail"
 msgstr "Iimeel"
 
-#: setup-empty-account-prompt
+#. # LOCALIZATION NOTE(setup-empty-account-message): Shown on the
+#. # setup_account_info page when the email app is launched from an activity, but
+#. # no account is set up yet.
+#: setup-empty-account-message
 msgid ""
-"You are not set up to send or receive email. Would you like to do that now?"
+"You are not set up to send or receive email. Set up an account to complete "
+"the action."
 msgstr ""
-"A teeltaaki tawo neldugol walla keɓgol iimeel. Aɗa yiɗi waɗde ɗum jooni?"
 
 #: setup-pick-service
 msgid "To send and receive email, you will need to set up an account."
@@ -489,7 +492,7 @@ msgstr "Danndu Siifannde"
 #. # button which discards changes when a user hits back in the signature
 #. # entry page.
 #: signature-discard-confirm
-msgctxt "signature-discard-confirm"
+#, fuzzy
 msgid "Discard"
 msgstr "Woppu"
 
@@ -1052,6 +1055,14 @@ msgctxt "compose-bcc"
 msgid "bcc"
 msgstr "bcc"
 
+#. # LOCALIZATION NOTE(compose-autocomplete-match): For the compose card
+#. # autocomplete matches when entering an email, the ariaLabel to use for each
+#. # match. The following string is spoken by screen readers and not shown on the
+#. # screen.
+#: compose-autocomplete-match.ariaLabel
+msgid "{{name}} {{address}}"
+msgstr ""
+
 #. # LOCALIZATION NOTE(compose-contact-add): For compose card, a label for an add
 #. # contact buttons rendered as a circled plus sign and used to add to, cc and bcc
 #. # recipients. The following string is spoken by screen readers and not shown on
@@ -1170,10 +1181,12 @@ msgstr "Tiitoonde"
 msgid "Save to Local Drafts"
 msgstr "Danndue Eɓɓitte Maa"
 
-#: compose-discard-confirm
-msgctxt "compose-discard-confirm"
-msgid "Discard"
-msgstr "Woppu"
+#. # LOCALIZATION NOTE(compose-delete-confirm): Wheh leaving the Compose card, the
+#. # user is prompted to save the draft or delete it. This is the delete button
+#. # text.
+#: compose-delete-confirm
+msgid "Delete the draft"
+msgstr ""
 
 #: compose-send-message-failed
 msgid "Sending email failed"
@@ -1242,6 +1255,8 @@ msgid "This file is too large to download."
 msgstr "Ndee fiilde ena teddi haa ɓurti saka aawtee."
 
 #: message-no-subject
+#, fuzzy
+msgctxt "message-no-subject"
 msgid "(no subject)"
 msgstr "(alaa toɓɓere)"
 
@@ -1971,6 +1986,14 @@ msgctxt "new-messages[other]"
 msgid "{{ n }} New Messages"
 msgstr "Ɓatakuuje kese {{ n }}"
 
+#. # LOCALIZATION NOTE(notification-no-subject): is used for notifications
+#. # if the new email doesn't have a subject
+#: notification-no-subject
+#, fuzzy
+msgctxt "notification-no-subject"
+msgid "(no subject)"
+msgstr "(alaa toɓɓere)"
+
 #. # new-emails-notify-one-account is used when a system notification is generated during
 #. # a periodic background sync with the server. Since this goes to the system's
 #. # notification area, and user has only one account configured with the email App.
@@ -2106,6 +2129,16 @@ msgstr "Caggal"
 #: message-reader-date-received.ariaLabel
 msgid "Received"
 msgstr "Heɓaa ko"
+
+#~ msgid ""
+#~ "You are not set up to send or receive email. Would you like to do that "
+#~ "now?"
+#~ msgstr ""
+#~ "A teeltaaki tawo neldugol walla keɓgol iimeel. Aɗa yiɗi waɗde ɗum jooni?"
+
+#~ msgctxt "compose-discard-confirm"
+#~ msgid "Discard"
+#~ msgstr "Woppu"
 
 #~ msgid "seconds"
 #~ msgstr "majaali"

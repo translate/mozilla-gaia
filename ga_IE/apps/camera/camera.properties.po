@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firefox\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-27 07:48+0000\n"
+"POT-Creation-Date: 2015-09-07 14:45+0000\n"
 "PO-Revision-Date: 2015-04-08 02:16+0000\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :"
 "(n>6 && n<11) ? 3 : 4;;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1428459391.000000\n"
@@ -174,14 +174,40 @@ msgid "The battery is too low to use the camera."
 msgstr "Tá an cadhnra ró-íseal chun an ceamara a úsáid."
 
 #: battery-critical-text
+#, fuzzy
+msgctxt "battery-critical-text"
 msgid "Critically low battery"
 msgstr "Cadhnra ar leaba an bháis"
 
 #: battery-verylow-text
+#, fuzzy
+msgctxt "battery-verylow-text"
 msgid "10% battery remaining"
 msgstr "Cadhnra: 10% fágtha"
 
 #: battery-low-text
+#, fuzzy
+msgctxt "battery-low-text"
+msgid "15% battery remaining"
+msgstr "Cadhnra: 15% fágtha"
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: battery-critical-text.ariaLabel
+#, fuzzy
+msgctxt "battery-critical-text.ariaLabel"
+msgid "Critically low battery"
+msgstr "Cadhnra ar leaba an bháis"
+
+#: battery-verylow-text.ariaLabel
+#, fuzzy
+msgctxt "battery-verylow-text.ariaLabel"
+msgid "10% battery remaining"
+msgstr "Cadhnra: 10% fágtha"
+
+#: battery-low-text.ariaLabel
+#, fuzzy
+msgctxt "battery-low-text.ariaLabel"
 msgid "15% battery remaining"
 msgstr "Cadhnra: 15% fágtha"
 
@@ -286,33 +312,34 @@ msgstr "Dún an roghchlár"
 msgid "Back"
 msgstr "Siar"
 
+#. # LOCALIZATION NOTE(setting-option.ariaLabel): Used to label an atomic
+#. # setting-option value in setting view. {{value}} is one of the following: On,
+#. # Off, 2 seconds, 5 seconds, 10 seconds. The localized value is taken from the
+#. # setting-option text content.
 #: setting-option.ariaLabel
 msgid "{{value}}"
 msgstr "{{value}}"
 
+#. # LOCALIZATION NOTE(setting-option-hdr.ariaLabel): {{value}} is one of the
+#. # following: On, Off. The localized value is taken from the setting-option text
+#. # content.
 #: setting-option-hdr.ariaLabel
 msgid "HDR {{value}}"
 msgstr "HDR {{value}}"
 
+#. # LOCALIZATION NOTE(setting-option-self-timer.ariaLabel): {{value}} is one of
+#. # the following: Off, 2 seconds, 5 seconds, 10 seconds. The localized value is
+#. # taken from the setting-option text content.
 #: setting-option-self-timer.ariaLabel
 msgid "Self-Timer {{value}}"
 msgstr "Féinamadóir {{value}}"
 
+#. # LOCALIZATION NOTE(setting-option-grid.ariaLabel): {{value}} is one of the
+#. # following: On, Off. The localized value is taken from the setting-option text
+#. # content.
 #: setting-option-grid.ariaLabel
 msgid "Grid Lines {{value}}"
 msgstr "Línte Greille {{value}}"
-
-#: setting-option-scene-mode.ariaLabel
-msgid "Scene Mode {{value}}"
-msgstr "Mód Radhairc {{value}}"
-
-#: setting-option-camera-resolution.ariaLabel
-msgid "Camera Resolution {{value}}"
-msgstr "Taifeach an Cheamara {{value}}"
-
-#: setting-option-video-resolution.ariaLabel
-msgid "Video Resolution {{value}}"
-msgstr "Taifeach Físe {{value}}"
 
 #: flash-on-button.ariaLabel
 msgid "Flash On"
@@ -366,6 +393,67 @@ msgid ""
 msgstr ""
 "Svaidhpeáil ar chlé le dhá mhéar le dul ar aghaidh, nó svaidhpeáil ar dheis "
 "le dul siar"
+
+#: capture-button.ariaLabel
+msgid "Capture"
+msgstr ""
+
+#: stop-capture-button.ariaLabel
+msgid "Stop capture"
+msgstr ""
+
+#. # LOCALIZATION NOTE(picture-mode-button): When button is in picture mode, label
+#. # indicates that activation will cause video mode to be set.
+#: picture-mode-button.ariaLabel
+msgid "Set Video Mode"
+msgstr ""
+
+#. # LOCALIZATION NOTE(video-mode-button): When button is in video mode, label
+#. # indicates that activation will cause picture mode to be set.
+#: video-mode-button.ariaLabel
+msgid "Set Photo Mode"
+msgstr ""
+
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: self-timer-indicator.ariaLabel
+msgid "Self-Timer enabled"
+msgstr ""
+
+#: hdr-indicator.ariaLabel
+msgid "HDR enabled"
+msgstr ""
+
+#: location-indicator.ariaLabel
+msgid "Geolocation enabled"
+msgstr ""
+
+#: battery-low-indicator.ariaLabel
+#, fuzzy
+msgctxt "battery-low-indicator.ariaLabel"
+msgid "15% battery remaining"
+msgstr "Cadhnra: 15% fágtha"
+
+#: battery-verylow-indicator.ariaLabel
+#, fuzzy
+msgctxt "battery-verylow-indicator.ariaLabel"
+msgid "10% battery remaining"
+msgstr "Cadhnra: 10% fágtha"
+
+#: battery-critical-indicator.ariaLabel
+#, fuzzy
+msgctxt "battery-critical-indicator.ariaLabel"
+msgid "Critically low battery"
+msgstr "Cadhnra ar leaba an bháis"
+
+#~ msgid "Scene Mode {{value}}"
+#~ msgstr "Mód Radhairc {{value}}"
+
+#~ msgid "Camera Resolution {{value}}"
+#~ msgstr "Taifeach an Cheamara {{value}}"
+
+#~ msgid "Video Resolution {{value}}"
+#~ msgstr "Taifeach Físe {{value}}"
 
 #~ msgctxt "close-button.ariaLabel"
 #~ msgid "Close"
