@@ -25,7 +25,7 @@ if [ $? -ne 0 ]; then
 	ttk-build
 	git add -A $(ttk-langs)
 	git commit -m "All: update against templates ($release_str)"
-	ttk-put --keep=$id
+	ttk-put
 fi
 git push
 rm_lock_file
