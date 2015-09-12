@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-09-12 07:49+0000\n"
 "PO-Revision-Date: 2015-09-09 21:24+0000\n"
 "Last-Translator: Kerim Kalamujic <kerim@mozilla.ba>\n"
 "Language-Team: none\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1441833889.000000\n"
@@ -155,11 +155,6 @@ msgstr "SIM {{id}}"
 #: statusbarOperator
 msgid "{{date}}, {{operator}}"
 msgstr "{{date}}, {{operator}}"
-
-#. # see http://pubs.opengroup.org/onlinepubs/007908799/xsh/strftime.html
-#: statusbarDateFormat
-msgid "%b %e"
-msgstr "%e. %b"
 
 #. # The following statusbar messages are for screen reader accessibility.
 #: statusbar.ariaLabel
@@ -1165,6 +1160,12 @@ msgstr "Prikaži prozore"
 #: add-to-home-screen
 msgid "Add to home screen"
 msgstr "Dodaj na početni ekran"
+
+#: pin-to-home-screen
+#, fuzzy
+msgctxt "pin-to-home-screen"
+msgid "Pin"
+msgstr "Zakači"
 
 #: share
 msgctxt "share"
@@ -2260,20 +2261,35 @@ msgstr "OK ({{n}})"
 #. # LOCALIZATION NOTE (pinning-pin): This string is used as
 #. # button label. "Pin" indicates the action to pin a website.
 #: pinning-pin
+#, fuzzy
+msgctxt "pinning-pin"
 msgid "Pin"
 msgstr "Zakači"
 
 #. # LOCALIZATION NOTE (pinning-pin-type): This string is used as
-#. # panel title. "Pin" indicates the action to pin a site or page.
+#. # panel title. "Pin" indicates the action to pin a site.{type}
+#. # will be replaced with the url to be pinned.
 #: pinning-pin-type
 msgid "Pin \"{{type}}\""
 msgstr "Zakači \"{{type}}\""
+
+#. # LOCALIZATION NOTE (pinning-pin-page): This string is used as
+#. # panel title. "Pin" indicates the action to pin a page.
+#: pinning-pin-page
+msgid "Pin Page"
+msgstr ""
 
 #. # LOCALIZATION NOTE (from): is followed (on a new line) by the URL source of
 #. # the pin. See also: https://bug1168948.bmoattachments.org/attachment.cgi?id=8639285
 #: from
 msgid "From"
 msgstr "Od"
+
+#. # LOCALIZATION NOTE: Message shown in a banner after successfully pinning a page
+#: pinned-to-home-screen-message
+#, fuzzy
+msgid "Added to home screen"
+msgstr "Dodaj na početni ekran"
 
 #. # Multi-Screen
 #: multiscreen-pick
@@ -2293,6 +2309,9 @@ msgstr ""
 #: viewSourceHeader
 msgid "View Source"
 msgstr "Prikaži izvor"
+
+#~ msgid "%b %e"
+#~ msgstr "%e. %b"
 
 #~ msgctxt "statusbarFlightMode.ariaLabel"
 #~ msgid "Airplane mode on"
