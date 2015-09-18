@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-09-18 17:45+0000\n"
 "PO-Revision-Date: 2015-09-08 14:46+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1441723572.000000\n"
@@ -1886,9 +1886,9 @@ msgstr "Wi-Fi"
 msgid "Wi-Fi Hotspot"
 msgstr "Bône d’ accès Wi-Fi"
 
-#: wifi-name
-msgid "Name"
-msgstr "No"
+#: wifi-hotspot-enabled-msg
+msgid "Hotspot \"{{hotspotSSID}}\" is enabled"
+msgstr ""
 
 #: wifi-password
 msgctxt "wifi-password"
@@ -2226,10 +2226,6 @@ msgstr "{{dateAndTime}}"
 msgid "Set Automatically"
 msgstr "Defini otomaticmint"
 
-#: setTimeManually
-msgid "Set Manually"
-msgstr "Defini al mwin"
-
 #: timezoneMessage
 msgid "Time Zone"
 msgstr "Coisse ås eures"
@@ -2258,6 +2254,10 @@ msgstr "Cogne"
 #: time-format-time
 msgid "Time Format"
 msgstr "Cogne di l’ eure"
+
+#: useDefaultTimeFormat
+msgid "Use Default"
+msgstr ""
 
 #: hour-12
 msgid "12-hour"
@@ -2386,22 +2386,18 @@ msgid "The current data transfer will be suspended. Continue anyway?"
 msgstr ""
 "Li berwetaedje di dnêyes do moumint serè djoké. Tcheryî pus lon cwand minme ?"
 
-#. # Personalization :: Homescreen
-#: homescreen
-msgctxt "homescreen"
-msgid "Homescreen"
-msgstr "Waitroûle d’ ascoye"
-
-#: homescreen.ariaLabel
+#. # Personalization :: Home Screens
+#: home-screens
 #, fuzzy
-msgctxt "homescreen.ariaLabel"
-msgid "Homescreen"
-msgstr "Waitroûle d’ ascoye"
+msgctxt "home-screens"
+msgid "Home Screens"
+msgstr "Waitroûles d’ ascoye"
 
-#: vertical-homescreen-header
-msgctxt "vertical-homescreen-header"
-msgid "Homescreen"
-msgstr "Waitroûle d’ ascoye"
+#: home-screens.ariaLabel
+#, fuzzy
+msgctxt "home-screens.ariaLabel"
+msgid "Home Screens"
+msgstr "Waitroûles d’ ascoye"
 
 #: vertical-homescreen-layout
 msgid "Layout"
@@ -2458,42 +2454,34 @@ msgstr ""
 "di cweraedje. Vos pôrîz esse facturés di costindjes di dnêyes di dpus cwand "
 "vs eployîz cisse fonccionålité ci."
 
-#. # Personalization :: Homescreens
-#: homescreens
+#: replaceable-home-screen
+msgid "Replaceable Home Screen"
+msgstr ""
+
+#. # Personalization :: Home Screens :: Home Screens List
+#: change-home-screen
 #, fuzzy
-msgctxt "homescreens"
-msgid "Homescreens"
-msgstr "Waitroûles d’ ascoye"
-
-#: homescreens.ariaLabel
-#, fuzzy
-msgctxt "homescreens.ariaLabel"
-msgid "Homescreens"
-msgstr "Waitroûles d’ ascoye"
-
-#. # LOCALIZATION NOTE (homescreens-header): if you leave the original
-#. # en-US value "{{homescreens}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "homescreens".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: homescreens-header
-msgid "{{homescreens}}"
-msgstr "{{homescreens}}"
-
-#: changeHomescreen
-msgid "Change homescreen"
+msgid "Change Home Screen"
 msgstr "Candjî waitroûle d’ ascoye"
 
-#: changeHomescreenButton
-msgctxt "changeHomescreenButton"
-msgid "Change"
-msgstr "Candjî"
+#: get-more-home-screens
+msgid "Get More Home Screens"
+msgstr ""
 
-#: description
+#: my-home-screens
+msgid "My Home Screens"
+msgstr ""
+
+#. # Personalization :: Home Screens :: Home Screens List :: Home Screen Details
+#: home-screen-description
 #, fuzzy
-msgctxt "description"
+msgctxt "home-screen-description"
 msgid "Description"
 msgstr "Discrijhaedje"
+
+#: delete-home-screen-button
+msgid "Delete Home Screen"
+msgstr ""
 
 #. # Personalization :: Keyboard
 #: keyboardSettings
@@ -2859,7 +2847,7 @@ msgid "Ring"
 msgstr "Xhîlter"
 
 #: change
-msgctxt "change"
+#, fuzzy
 msgid "Change"
 msgstr "Candjî"
 
@@ -3364,6 +3352,8 @@ msgid "Storage"
 msgstr "Stocaedje"
 
 #: enableUSBStorage1
+#, fuzzy
+msgctxt "enableUSBStorage1"
 msgid "USB Storage"
 msgstr "Stocaedje USB"
 
@@ -5105,7 +5095,6 @@ msgstr ""
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
 #, fuzzy
-msgctxt "is-warning-storage-header"
 msgid "USB storage"
 msgstr "Stocaedje USB"
 
@@ -5461,7 +5450,7 @@ msgstr "Cotrole del veye privêye"
 #: enableStorageSection.ariaLabel
 #, fuzzy
 msgctxt "enableStorageSection.ariaLabel"
-msgid "USB storage"
+msgid "USB Storage"
 msgstr "Stocaedje USB"
 
 #: mediaStorageSection.ariaLabel
@@ -5481,6 +5470,42 @@ msgstr "Stocaedje des aplicåcions"
 msgctxt "batterySection.ariaLabel"
 msgid "Battery"
 msgstr "Batreye"
+
+#~ msgid "Name"
+#~ msgstr "No"
+
+#~ msgid "Set Manually"
+#~ msgstr "Defini al mwin"
+
+#~ msgctxt "homescreen"
+#~ msgid "Homescreen"
+#~ msgstr "Waitroûle d’ ascoye"
+
+#, fuzzy
+#~ msgctxt "homescreen.ariaLabel"
+#~ msgid "Homescreen"
+#~ msgstr "Waitroûle d’ ascoye"
+
+#~ msgctxt "vertical-homescreen-header"
+#~ msgid "Homescreen"
+#~ msgstr "Waitroûle d’ ascoye"
+
+#, fuzzy
+#~ msgctxt "homescreens.ariaLabel"
+#~ msgid "Homescreens"
+#~ msgstr "Waitroûles d’ ascoye"
+
+#~ msgid "{{homescreens}}"
+#~ msgstr "{{homescreens}}"
+
+#~ msgctxt "change"
+#~ msgid "Change"
+#~ msgstr "Candjî"
+
+#, fuzzy
+#~ msgctxt "enableStorageSection.ariaLabel"
+#~ msgid "USB storage"
+#~ msgstr "Stocaedje USB"
 
 #~ msgid "Manage Cert."
 #~ msgstr "Manaedjî acert."

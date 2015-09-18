@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-09-18 17:45+0000\n"
 "PO-Revision-Date: 2015-09-14 14:22+0000\n"
 "Last-Translator: Kerim Kalamujic <kerim@mozilla.ba>\n"
 "Language-Team: none\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1442240524.000000\n"
@@ -1858,9 +1858,9 @@ msgstr "Wi-Fi"
 msgid "Wi-Fi Hotspot"
 msgstr "Wi-Fi hotspot"
 
-#: wifi-name
-msgid "Name"
-msgstr "Naziv"
+#: wifi-hotspot-enabled-msg
+msgid "Hotspot \"{{hotspotSSID}}\" is enabled"
+msgstr ""
 
 #: wifi-password
 msgctxt "wifi-password"
@@ -2188,10 +2188,6 @@ msgstr "{{dateAndTime}}"
 msgid "Set Automatically"
 msgstr "Postavi automatski"
 
-#: setTimeManually
-msgid "Set Manually"
-msgstr "Postavi ručno"
-
 #: timezoneMessage
 msgid "Time Zone"
 msgstr "Vremenska zona"
@@ -2220,6 +2216,10 @@ msgstr "Formatiraj"
 #: time-format-time
 msgid "Time Format"
 msgstr "Format vremena"
+
+#: useDefaultTimeFormat
+msgid "Use Default"
+msgstr ""
 
 #: hour-12
 msgid "12-hour"
@@ -2345,21 +2345,18 @@ msgstr ""
 msgid "The current data transfer will be suspended. Continue anyway?"
 msgstr "Trenutni prijenos podatak će biti prekinut. Želite li nastaviti?"
 
-#. # Personalization :: Homescreen
-#: homescreen
-msgctxt "homescreen"
-msgid "Homescreen"
-msgstr "Početni ekran"
+#. # Personalization :: Home Screens
+#: home-screens
+#, fuzzy
+msgctxt "home-screens"
+msgid "Home Screens"
+msgstr "Početni ekrani"
 
-#: homescreen.ariaLabel
-msgctxt "homescreen.ariaLabel"
-msgid "Homescreen"
-msgstr "Početni ekran"
-
-#: vertical-homescreen-header
-msgctxt "vertical-homescreen-header"
-msgid "Homescreen"
-msgstr "Početni ekran"
+#: home-screens.ariaLabel
+#, fuzzy
+msgctxt "home-screens.ariaLabel"
+msgid "Home Screens"
+msgstr "Početni ekrani"
 
 #: vertical-homescreen-layout
 msgid "Layout"
@@ -2414,39 +2411,34 @@ msgstr ""
 "će korišteni da vam se ponude prijedlozi pretraživanja. Dodatni troškovi su "
 "mogući ako se koristi ova mogućnost."
 
-#. # Personalization :: Homescreens
-#: homescreens
-msgctxt "homescreens"
-msgid "Homescreens"
-msgstr "Početni ekrani"
+#: replaceable-home-screen
+msgid "Replaceable Home Screen"
+msgstr ""
 
-#: homescreens.ariaLabel
-msgctxt "homescreens.ariaLabel"
-msgid "Homescreens"
-msgstr "Početni ekrani"
-
-#. # LOCALIZATION NOTE (homescreens-header): if you leave the original
-#. # en-US value "{{homescreens}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "homescreens".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: homescreens-header
-msgid "{{homescreens}}"
-msgstr "{{homescreens}}"
-
-#: changeHomescreen
-msgid "Change homescreen"
+#. # Personalization :: Home Screens :: Home Screens List
+#: change-home-screen
+#, fuzzy
+msgid "Change Home Screen"
 msgstr "Promijeni početni ekran"
 
-#: changeHomescreenButton
-msgctxt "changeHomescreenButton"
-msgid "Change"
-msgstr "Promijeni"
+#: get-more-home-screens
+msgid "Get More Home Screens"
+msgstr ""
 
-#: description
-msgctxt "description"
+#: my-home-screens
+msgid "My Home Screens"
+msgstr ""
+
+#. # Personalization :: Home Screens :: Home Screens List :: Home Screen Details
+#: home-screen-description
+#, fuzzy
+msgctxt "home-screen-description"
 msgid "Description"
 msgstr "Opis"
+
+#: delete-home-screen-button
+msgid "Delete Home Screen"
+msgstr ""
 
 #. # Personalization :: Keyboard
 #: keyboardSettings
@@ -2803,7 +2795,7 @@ msgid "Ring"
 msgstr "Zvono"
 
 #: change
-msgctxt "change"
+#, fuzzy
 msgid "Change"
 msgstr "Promijeni"
 
@@ -3303,6 +3295,8 @@ msgid "Storage"
 msgstr "Spremište"
 
 #: enableUSBStorage1
+#, fuzzy
+msgctxt "enableUSBStorage1"
 msgid "USB Storage"
 msgstr "USB spremište"
 
@@ -5009,7 +5003,7 @@ msgstr "{{ title }}"
 
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
-msgctxt "is-warning-storage-header"
+#, fuzzy
 msgid "USB storage"
 msgstr "USB spremište"
 
@@ -5346,8 +5340,9 @@ msgid "Privacy Controls"
 msgstr "Kontrole privatnosti"
 
 #: enableStorageSection.ariaLabel
+#, fuzzy
 msgctxt "enableStorageSection.ariaLabel"
-msgid "USB storage"
+msgid "USB Storage"
 msgstr "USB spremište"
 
 #: mediaStorageSection.ariaLabel
@@ -5364,6 +5359,39 @@ msgstr "Spremište aplikacija"
 msgctxt "batterySection.ariaLabel"
 msgid "Battery"
 msgstr "Baterija"
+
+#~ msgid "Name"
+#~ msgstr "Naziv"
+
+#~ msgid "Set Manually"
+#~ msgstr "Postavi ručno"
+
+#~ msgctxt "homescreen"
+#~ msgid "Homescreen"
+#~ msgstr "Početni ekran"
+
+#~ msgctxt "homescreen.ariaLabel"
+#~ msgid "Homescreen"
+#~ msgstr "Početni ekran"
+
+#~ msgctxt "vertical-homescreen-header"
+#~ msgid "Homescreen"
+#~ msgstr "Početni ekran"
+
+#~ msgctxt "homescreens.ariaLabel"
+#~ msgid "Homescreens"
+#~ msgstr "Početni ekrani"
+
+#~ msgid "{{homescreens}}"
+#~ msgstr "{{homescreens}}"
+
+#~ msgctxt "change"
+#~ msgid "Change"
+#~ msgstr "Promijeni"
+
+#~ msgctxt "enableStorageSection.ariaLabel"
+#~ msgid "USB storage"
+#~ msgstr "USB spremište"
 
 #~ msgid "Manage Cert."
 #~ msgstr "Upravljanje cert."

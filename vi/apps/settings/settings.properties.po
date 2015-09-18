@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-09-18 17:45+0000\n"
 "PO-Revision-Date: 2015-09-08 14:42+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1441723344.000000\n"
@@ -1926,9 +1926,9 @@ msgstr "Wi-Fi"
 msgid "Wi-Fi Hotspot"
 msgstr "Tạo điểm tr.cập Wi-Fi"
 
-#: wifi-name
-msgid "Name"
-msgstr "Tên"
+#: wifi-hotspot-enabled-msg
+msgid "Hotspot \"{{hotspotSSID}}\" is enabled"
+msgstr ""
 
 #: wifi-password
 msgctxt "wifi-password"
@@ -2272,11 +2272,6 @@ msgstr "{{dateAndTime}}"
 msgid "Set Automatically"
 msgstr "Tự động"
 
-#: setTimeManually
-#, fuzzy
-msgid "Set Manually"
-msgstr "Thủ công"
-
 #: timezoneMessage
 #, fuzzy
 msgid "Time Zone"
@@ -2305,6 +2300,10 @@ msgstr ""
 
 #: time-format-time
 msgid "Time Format"
+msgstr ""
+
+#: useDefaultTimeFormat
+msgid "Use Default"
 msgstr ""
 
 #: hour-12
@@ -2433,23 +2432,17 @@ msgstr ""
 msgid "The current data transfer will be suspended. Continue anyway?"
 msgstr "Dữ liệu đang truyền sẽ bị ngắt. Bạn vẫn muốn tiếp tục?"
 
-#. # Personalization :: Homescreen
-#: homescreen
+#. # Personalization :: Home Screens
+#: home-screens
 #, fuzzy
-msgctxt "homescreen"
-msgid "Homescreen"
+msgctxt "home-screens"
+msgid "Home Screens"
 msgstr "Màn hình chính"
 
-#: homescreen.ariaLabel
+#: home-screens.ariaLabel
 #, fuzzy
-msgctxt "homescreen.ariaLabel"
-msgid "Homescreen"
-msgstr "Màn hình chính"
-
-#: vertical-homescreen-header
-#, fuzzy
-msgctxt "vertical-homescreen-header"
-msgid "Homescreen"
+msgctxt "home-screens.ariaLabel"
+msgid "Home Screens"
 msgstr "Màn hình chính"
 
 #: vertical-homescreen-layout
@@ -2502,43 +2495,34 @@ msgid ""
 "charges may apply when using this feature."
 msgstr ""
 
-#. # Personalization :: Homescreens
-#: homescreens
-#, fuzzy
-msgctxt "homescreens"
-msgid "Homescreens"
-msgstr "Màn hình chính"
+#: replaceable-home-screen
+msgid "Replaceable Home Screen"
+msgstr ""
 
-#: homescreens.ariaLabel
+#. # Personalization :: Home Screens :: Home Screens List
+#: change-home-screen
 #, fuzzy
-msgctxt "homescreens.ariaLabel"
-msgid "Homescreens"
-msgstr "Màn hình chính"
-
-#. # LOCALIZATION NOTE (homescreens-header): if you leave the original
-#. # en-US value "{{homescreens}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "homescreens".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: homescreens-header
-#, fuzzy
-msgid "{{homescreens}}"
-msgstr "{{homescreen}}"
-
-#: changeHomescreen
-msgid "Change homescreen"
+msgid "Change Home Screen"
 msgstr "Thay đổi màn hình chính"
 
-#: changeHomescreenButton
-msgctxt "changeHomescreenButton"
-msgid "Change"
-msgstr "Thay đổi"
+#: get-more-home-screens
+msgid "Get More Home Screens"
+msgstr ""
 
-#: description
+#: my-home-screens
+msgid "My Home Screens"
+msgstr ""
+
+#. # Personalization :: Home Screens :: Home Screens List :: Home Screen Details
+#: home-screen-description
 #, fuzzy
-msgctxt "description"
+msgctxt "home-screen-description"
 msgid "Description"
 msgstr "Mô tả"
+
+#: delete-home-screen-button
+msgid "Delete Home Screen"
+msgstr ""
 
 #. # Personalization :: Keyboard
 #: keyboardSettings
@@ -2900,7 +2884,7 @@ msgid "Ring"
 msgstr "Chuông"
 
 #: change
-msgctxt "change"
+#, fuzzy
 msgid "Change"
 msgstr "Thay đổi"
 
@@ -3399,6 +3383,7 @@ msgstr "Lưu trữ"
 
 #: enableUSBStorage1
 #, fuzzy
+msgctxt "enableUSBStorage1"
 msgid "USB Storage"
 msgstr "Lưu trữ USB"
 
@@ -5142,7 +5127,6 @@ msgstr ""
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
 #, fuzzy
-msgctxt "is-warning-storage-header"
 msgid "USB storage"
 msgstr "Lưu trữ USB"
 
@@ -5493,7 +5477,7 @@ msgstr ""
 #: enableStorageSection.ariaLabel
 #, fuzzy
 msgctxt "enableStorageSection.ariaLabel"
-msgid "USB storage"
+msgid "USB Storage"
 msgstr "Lưu trữ USB"
 
 #: mediaStorageSection.ariaLabel
@@ -5513,6 +5497,46 @@ msgstr "Lưu trữ ứng dụng"
 msgctxt "batterySection.ariaLabel"
 msgid "Battery"
 msgstr "Pin"
+
+#~ msgid "Name"
+#~ msgstr "Tên"
+
+#, fuzzy
+#~ msgid "Set Manually"
+#~ msgstr "Thủ công"
+
+#, fuzzy
+#~ msgctxt "homescreen"
+#~ msgid "Homescreen"
+#~ msgstr "Màn hình chính"
+
+#, fuzzy
+#~ msgctxt "homescreen.ariaLabel"
+#~ msgid "Homescreen"
+#~ msgstr "Màn hình chính"
+
+#, fuzzy
+#~ msgctxt "vertical-homescreen-header"
+#~ msgid "Homescreen"
+#~ msgstr "Màn hình chính"
+
+#, fuzzy
+#~ msgctxt "homescreens.ariaLabel"
+#~ msgid "Homescreens"
+#~ msgstr "Màn hình chính"
+
+#, fuzzy
+#~ msgid "{{homescreens}}"
+#~ msgstr "{{homescreen}}"
+
+#~ msgctxt "change"
+#~ msgid "Change"
+#~ msgstr "Thay đổi"
+
+#, fuzzy
+#~ msgctxt "enableStorageSection.ariaLabel"
+#~ msgid "USB storage"
+#~ msgstr "Lưu trữ USB"
 
 #~ msgid "Manage Cert."
 #~ msgstr "Quản lý ch.chỉ"

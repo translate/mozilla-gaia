@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-09-18 17:45+0000\n"
 "PO-Revision-Date: 2015-09-16 23:04+0000\n"
 "Last-Translator: Cláudio Esperança <cesperanc@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1442444642.000000\n"
@@ -1868,9 +1868,9 @@ msgstr "Wi-Fi"
 msgid "Wi-Fi Hotspot"
 msgstr "Zona Wi-Fi portátil"
 
-#: wifi-name
-msgid "Name"
-msgstr "Nome"
+#: wifi-hotspot-enabled-msg
+msgid "Hotspot \"{{hotspotSSID}}\" is enabled"
+msgstr ""
 
 #: wifi-password
 msgctxt "wifi-password"
@@ -2198,10 +2198,6 @@ msgstr "{{dateAndTime}}"
 msgid "Set Automatically"
 msgstr "Definir automaticamente"
 
-#: setTimeManually
-msgid "Set Manually"
-msgstr "Definir manualmente"
-
 #: timezoneMessage
 msgid "Time Zone"
 msgstr "Fuso horário"
@@ -2230,6 +2226,10 @@ msgstr "Formato"
 #: time-format-time
 msgid "Time Format"
 msgstr "Formato da hora"
+
+#: useDefaultTimeFormat
+msgid "Use Default"
+msgstr ""
 
 #: hour-12
 msgid "12-hour"
@@ -2355,21 +2355,18 @@ msgstr ""
 msgid "The current data transfer will be suspended. Continue anyway?"
 msgstr "A descarga de dados atual será suspensa. Continuar mesmo assim?"
 
-#. # Personalization :: Homescreen
-#: homescreen
-msgctxt "homescreen"
-msgid "Homescreen"
-msgstr "Ecrã inicial"
+#. # Personalization :: Home Screens
+#: home-screens
+#, fuzzy
+msgctxt "home-screens"
+msgid "Home Screens"
+msgstr "Ecrãs iniciais"
 
-#: homescreen.ariaLabel
-msgctxt "homescreen.ariaLabel"
-msgid "Homescreen"
-msgstr "Ecrã inicial"
-
-#: vertical-homescreen-header
-msgctxt "vertical-homescreen-header"
-msgid "Homescreen"
-msgstr "Ecrã inicial"
+#: home-screens.ariaLabel
+#, fuzzy
+msgctxt "home-screens.ariaLabel"
+msgid "Home Screens"
+msgstr "Ecrãs iniciais"
 
 #: vertical-homescreen-layout
 msgid "Layout"
@@ -2425,39 +2422,34 @@ msgstr ""
 "Podem existir custos adicionais associados aos dados transferidos ao "
 "utilizar esta funcionalidade."
 
-#. # Personalization :: Homescreens
-#: homescreens
-msgctxt "homescreens"
-msgid "Homescreens"
-msgstr "Ecrãs iniciais"
+#: replaceable-home-screen
+msgid "Replaceable Home Screen"
+msgstr ""
 
-#: homescreens.ariaLabel
-msgctxt "homescreens.ariaLabel"
-msgid "Homescreens"
-msgstr "Ecrãs iniciais"
-
-#. # LOCALIZATION NOTE (homescreens-header): if you leave the original
-#. # en-US value "{{homescreens}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "homescreens".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: homescreens-header
-msgid "{{homescreens}}"
-msgstr "{{homescreens}}"
-
-#: changeHomescreen
-msgid "Change homescreen"
+#. # Personalization :: Home Screens :: Home Screens List
+#: change-home-screen
+#, fuzzy
+msgid "Change Home Screen"
 msgstr "Alterar ecrã inicial"
 
-#: changeHomescreenButton
-msgctxt "changeHomescreenButton"
-msgid "Change"
-msgstr "Alterar"
+#: get-more-home-screens
+msgid "Get More Home Screens"
+msgstr ""
 
-#: description
-msgctxt "description"
+#: my-home-screens
+msgid "My Home Screens"
+msgstr ""
+
+#. # Personalization :: Home Screens :: Home Screens List :: Home Screen Details
+#: home-screen-description
+#, fuzzy
+msgctxt "home-screen-description"
 msgid "Description"
 msgstr "Descrição"
+
+#: delete-home-screen-button
+msgid "Delete Home Screen"
+msgstr ""
 
 #. # Personalization :: Keyboard
 #: keyboardSettings
@@ -2819,7 +2811,7 @@ msgid "Ring"
 msgstr "Toque"
 
 #: change
-msgctxt "change"
+#, fuzzy
 msgid "Change"
 msgstr "Alterar"
 
@@ -3322,6 +3314,8 @@ msgid "Storage"
 msgstr "Armazenamento"
 
 #: enableUSBStorage1
+#, fuzzy
+msgctxt "enableUSBStorage1"
 msgid "USB Storage"
 msgstr "Armazenamento USB"
 
@@ -5039,7 +5033,7 @@ msgstr "{{ title }}"
 
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
-msgctxt "is-warning-storage-header"
+#, fuzzy
 msgid "USB storage"
 msgstr "Armazenamento USB"
 
@@ -5378,8 +5372,9 @@ msgid "Privacy Controls"
 msgstr "Controlos de privacidade"
 
 #: enableStorageSection.ariaLabel
+#, fuzzy
 msgctxt "enableStorageSection.ariaLabel"
-msgid "USB storage"
+msgid "USB Storage"
 msgstr "Armazenamento USB"
 
 # Foi removido o termo "media" devido a restrições de espaço do ecrã
@@ -5397,6 +5392,39 @@ msgstr "Aplicações"
 msgctxt "batterySection.ariaLabel"
 msgid "Battery"
 msgstr "Bateria"
+
+#~ msgid "Name"
+#~ msgstr "Nome"
+
+#~ msgid "Set Manually"
+#~ msgstr "Definir manualmente"
+
+#~ msgctxt "homescreen"
+#~ msgid "Homescreen"
+#~ msgstr "Ecrã inicial"
+
+#~ msgctxt "homescreen.ariaLabel"
+#~ msgid "Homescreen"
+#~ msgstr "Ecrã inicial"
+
+#~ msgctxt "vertical-homescreen-header"
+#~ msgid "Homescreen"
+#~ msgstr "Ecrã inicial"
+
+#~ msgctxt "homescreens.ariaLabel"
+#~ msgid "Homescreens"
+#~ msgstr "Ecrãs iniciais"
+
+#~ msgid "{{homescreens}}"
+#~ msgstr "{{homescreens}}"
+
+#~ msgctxt "change"
+#~ msgid "Change"
+#~ msgstr "Alterar"
+
+#~ msgctxt "enableStorageSection.ariaLabel"
+#~ msgid "USB storage"
+#~ msgstr "Armazenamento USB"
 
 #~ msgid "Manage Cert."
 #~ msgstr "Gerir Cert."

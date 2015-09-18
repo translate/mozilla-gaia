@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-09-18 17:45+0000\n"
 "PO-Revision-Date: 2015-09-08 15:01+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1441724483.000000\n"
@@ -1844,9 +1844,9 @@ msgstr "Wi-Fi"
 msgid "Wi-Fi Hotspot"
 msgstr "Tre xho Wi-Fi"
 
-#: wifi-name
-msgid "Name"
-msgstr "Xha mud lel"
+#: wifi-hotspot-enabled-msg
+msgid "Hotspot \"{{hotspotSSID}}\" is enabled"
+msgstr ""
 
 #: wifi-password
 msgctxt "wifi-password"
@@ -2181,10 +2181,6 @@ msgstr "{{dateAndTime}}"
 msgid "Set Automatically"
 msgstr "Tub ba thus kuey"
 
-#: setTimeManually
-msgid "Set Manually"
-msgstr "Lu liy"
-
 #: timezoneMessage
 msgid "Time Zone"
 msgstr "Re hor na men"
@@ -2213,6 +2209,10 @@ msgstr "Te dont na"
 #: time-format-time
 msgid "Time Format"
 msgstr "Xha niey"
+
+#: useDefaultTimeFormat
+msgid "Use Default"
+msgstr ""
 
 #: hour-12
 msgid "12-hour"
@@ -2337,21 +2337,17 @@ msgstr ""
 msgid "The current data transfer will be suspended. Continue anyway?"
 msgstr ""
 
-#. # Personalization :: Homescreen
-#: homescreen
-msgctxt "homescreen"
-msgid "Homescreen"
-msgstr "Loo"
-
-#: homescreen.ariaLabel
+#. # Personalization :: Home Screens
+#: home-screens
 #, fuzzy
-msgctxt "homescreen.ariaLabel"
-msgid "Homescreen"
+msgctxt "home-screens"
+msgid "Home Screens"
 msgstr "Loo"
 
-#: vertical-homescreen-header
-msgctxt "vertical-homescreen-header"
-msgid "Homescreen"
+#: home-screens.ariaLabel
+#, fuzzy
+msgctxt "home-screens.ariaLabel"
+msgid "Home Screens"
 msgstr "Loo"
 
 #: vertical-homescreen-layout
@@ -2405,42 +2401,34 @@ msgid ""
 "charges may apply when using this feature."
 msgstr ""
 
-#. # Personalization :: Homescreens
-#: homescreens
+#: replaceable-home-screen
+msgid "Replaceable Home Screen"
+msgstr ""
+
+#. # Personalization :: Home Screens :: Home Screens List
+#: change-home-screen
 #, fuzzy
-msgctxt "homescreens"
-msgid "Homescreens"
-msgstr "Loo"
-
-#: homescreens.ariaLabel
-#, fuzzy
-msgctxt "homescreens.ariaLabel"
-msgid "Homescreens"
-msgstr "Loo"
-
-#. # LOCALIZATION NOTE (homescreens-header): if you leave the original
-#. # en-US value "{{homescreens}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "homescreens".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: homescreens-header
-msgid "{{homescreens}}"
-msgstr "{{homescreens}}"
-
-#: changeHomescreen
-msgid "Change homescreen"
+msgid "Change Home Screen"
 msgstr "Xé loo"
 
-#: changeHomescreenButton
-msgctxt "changeHomescreenButton"
-msgid "Change"
-msgstr "Mxhey"
+#: get-more-home-screens
+msgid "Get More Home Screens"
+msgstr ""
 
-#: description
+#: my-home-screens
+msgid "My Home Screens"
+msgstr ""
+
+#. # Personalization :: Home Screens :: Home Screens List :: Home Screen Details
+#: home-screen-description
 #, fuzzy
-msgctxt "description"
+msgctxt "home-screen-description"
 msgid "Description"
 msgstr "Xha nak ah"
+
+#: delete-home-screen-button
+msgid "Delete Home Screen"
+msgstr ""
 
 #. # Personalization :: Keyboard
 #: keyboardSettings
@@ -2797,7 +2785,7 @@ msgid "Ring"
 msgstr "Xha dizh ah"
 
 #: change
-msgctxt "change"
+#, fuzzy
 msgid "Change"
 msgstr "Mcéy"
 
@@ -3256,6 +3244,7 @@ msgid "Storage"
 msgstr ""
 
 #: enableUSBStorage1
+msgctxt "enableUSBStorage1"
 msgid "USB Storage"
 msgstr ""
 
@@ -4910,7 +4899,6 @@ msgstr ""
 
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
-msgctxt "is-warning-storage-header"
 msgid "USB storage"
 msgstr ""
 
@@ -5262,7 +5250,7 @@ msgstr ""
 
 #: enableStorageSection.ariaLabel
 msgctxt "enableStorageSection.ariaLabel"
-msgid "USB storage"
+msgid "USB Storage"
 msgstr ""
 
 #: mediaStorageSection.ariaLabel
@@ -5281,6 +5269,37 @@ msgstr ""
 msgctxt "batterySection.ariaLabel"
 msgid "Battery"
 msgstr "Sni xhoy"
+
+#~ msgid "Name"
+#~ msgstr "Xha mud lel"
+
+#~ msgid "Set Manually"
+#~ msgstr "Lu liy"
+
+#~ msgctxt "homescreen"
+#~ msgid "Homescreen"
+#~ msgstr "Loo"
+
+#, fuzzy
+#~ msgctxt "homescreen.ariaLabel"
+#~ msgid "Homescreen"
+#~ msgstr "Loo"
+
+#~ msgctxt "vertical-homescreen-header"
+#~ msgid "Homescreen"
+#~ msgstr "Loo"
+
+#, fuzzy
+#~ msgctxt "homescreens.ariaLabel"
+#~ msgid "Homescreens"
+#~ msgstr "Loo"
+
+#~ msgid "{{homescreens}}"
+#~ msgstr "{{homescreens}}"
+
+#~ msgctxt "change"
+#~ msgid "Change"
+#~ msgstr "Mcéy"
 
 #~ msgid "Manage Cert."
 #~ msgstr "Thus kue cert."

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-09-18 17:45+0000\n"
 "PO-Revision-Date: 2015-09-08 14:35+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1441722908.000000\n"
@@ -1881,9 +1881,9 @@ msgstr "وائی فائی"
 msgid "Wi-Fi Hotspot"
 msgstr "وائی فائی ہاٹ سپاٹ"
 
-#: wifi-name
-msgid "Name"
-msgstr "نام"
+#: wifi-hotspot-enabled-msg
+msgid "Hotspot \"{{hotspotSSID}}\" is enabled"
+msgstr ""
 
 #: wifi-password
 msgctxt "wifi-password"
@@ -2221,10 +2221,6 @@ msgstr "{{dateAndTime}}"
 msgid "Set Automatically"
 msgstr "خود بخود سیٹ کریں"
 
-#: setTimeManually
-msgid "Set Manually"
-msgstr "دستی طور پر سیٹ کریں"
-
 #: timezoneMessage
 msgid "Time Zone"
 msgstr "ممنطقہ وقت"
@@ -2253,6 +2249,10 @@ msgstr "وضع کریں"
 #: time-format-time
 msgid "Time Format"
 msgstr "وقت کی شکل"
+
+#: useDefaultTimeFormat
+msgid "Use Default"
+msgstr ""
 
 #: hour-12
 msgid "12-hour"
@@ -2379,22 +2379,18 @@ msgstr ""
 msgid "The current data transfer will be suspended. Continue anyway?"
 msgstr "موجودہ کوائف منتقل معطل کردیا جائے گا۔ بہرصورت جاری رکھیں؟"
 
-#. # Personalization :: Homescreen
-#: homescreen
-msgctxt "homescreen"
-msgid "Homescreen"
-msgstr "گھرسکرین"
-
-#: homescreen.ariaLabel
+#. # Personalization :: Home Screens
+#: home-screens
 #, fuzzy
-msgctxt "homescreen.ariaLabel"
-msgid "Homescreen"
-msgstr "گھرسکرین"
+msgctxt "home-screens"
+msgid "Home Screens"
+msgstr "ہوم سکرین"
 
-#: vertical-homescreen-header
-msgctxt "vertical-homescreen-header"
-msgid "Homescreen"
-msgstr "ھوم سکرین"
+#: home-screens.ariaLabel
+#, fuzzy
+msgctxt "home-screens.ariaLabel"
+msgid "Home Screens"
+msgstr "ہوم سکرین"
 
 #: vertical-homescreen-layout
 msgid "Layout"
@@ -2450,42 +2446,34 @@ msgstr ""
 "پروآڈر کو بھیجے جاتے ہیں. یہ سہولت کا استعمال کرتے وقت مزید ڈیٹا چارجیس لگ "
 "سکتے ہیں۔"
 
-#. # Personalization :: Homescreens
-#: homescreens
+#: replaceable-home-screen
+msgid "Replaceable Home Screen"
+msgstr ""
+
+#. # Personalization :: Home Screens :: Home Screens List
+#: change-home-screen
 #, fuzzy
-msgctxt "homescreens"
-msgid "Homescreens"
-msgstr "ہوم سکرین"
-
-#: homescreens.ariaLabel
-#, fuzzy
-msgctxt "homescreens.ariaLabel"
-msgid "Homescreens"
-msgstr "ہوم سکرین"
-
-#. # LOCALIZATION NOTE (homescreens-header): if you leave the original
-#. # en-US value "{{homescreens}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "homescreens".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: homescreens-header
-msgid "{{homescreens}}"
-msgstr "{{homescreens}}"
-
-#: changeHomescreen
-msgid "Change homescreen"
+msgid "Change Home Screen"
 msgstr "ہوم سکرین تبدیل کریں"
 
-#: changeHomescreenButton
-msgctxt "changeHomescreenButton"
-msgid "Change"
-msgstr "تبدیل کریں"
+#: get-more-home-screens
+msgid "Get More Home Screens"
+msgstr ""
 
-#: description
+#: my-home-screens
+msgid "My Home Screens"
+msgstr ""
+
+#. # Personalization :: Home Screens :: Home Screens List :: Home Screen Details
+#: home-screen-description
 #, fuzzy
-msgctxt "description"
+msgctxt "home-screen-description"
 msgid "Description"
 msgstr "تصریح"
+
+#: delete-home-screen-button
+msgid "Delete Home Screen"
+msgstr ""
 
 #. # Personalization :: Keyboard
 #: keyboardSettings
@@ -2852,7 +2840,7 @@ msgid "Ring"
 msgstr "گھنٹی"
 
 #: change
-msgctxt "change"
+#, fuzzy
 msgid "Change"
 msgstr "تبدیل کریں"
 
@@ -3356,6 +3344,8 @@ msgid "Storage"
 msgstr "ذخیرہ"
 
 #: enableUSBStorage1
+#, fuzzy
+msgctxt "enableUSBStorage1"
 msgid "USB Storage"
 msgstr "USB ذخیرہ"
 
@@ -5100,7 +5090,6 @@ msgstr ""
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
 #, fuzzy
-msgctxt "is-warning-storage-header"
 msgid "USB storage"
 msgstr "USB ذخیرہ"
 
@@ -5460,7 +5449,7 @@ msgstr "نجی نوعیت کنٹرول"
 #: enableStorageSection.ariaLabel
 #, fuzzy
 msgctxt "enableStorageSection.ariaLabel"
-msgid "USB storage"
+msgid "USB Storage"
 msgstr "USB ذخیرہ"
 
 #: mediaStorageSection.ariaLabel
@@ -5480,6 +5469,42 @@ msgstr "ایپلی کیشن ذخیرہ"
 msgctxt "batterySection.ariaLabel"
 msgid "Battery"
 msgstr "بیٹری"
+
+#~ msgid "Name"
+#~ msgstr "نام"
+
+#~ msgid "Set Manually"
+#~ msgstr "دستی طور پر سیٹ کریں"
+
+#~ msgctxt "homescreen"
+#~ msgid "Homescreen"
+#~ msgstr "گھرسکرین"
+
+#, fuzzy
+#~ msgctxt "homescreen.ariaLabel"
+#~ msgid "Homescreen"
+#~ msgstr "گھرسکرین"
+
+#~ msgctxt "vertical-homescreen-header"
+#~ msgid "Homescreen"
+#~ msgstr "ھوم سکرین"
+
+#, fuzzy
+#~ msgctxt "homescreens.ariaLabel"
+#~ msgid "Homescreens"
+#~ msgstr "ہوم سکرین"
+
+#~ msgid "{{homescreens}}"
+#~ msgstr "{{homescreens}}"
+
+#~ msgctxt "change"
+#~ msgid "Change"
+#~ msgstr "تبدیل کریں"
+
+#, fuzzy
+#~ msgctxt "enableStorageSection.ariaLabel"
+#~ msgid "USB storage"
+#~ msgstr "USB ذخیرہ"
 
 #~ msgid "Manage Cert."
 #~ msgstr "تصدیق نامہ کا بندوبست کریں۔"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-09-18 17:45+0000\n"
 "PO-Revision-Date: 2015-09-13 20:46+0000\n"
 "Last-Translator: Mohomodou  Houssouba <mh@bollag-areal.ch>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1442177180.000000\n"
@@ -1863,9 +1863,9 @@ msgstr "Wi-Fi"
 msgid "Wi-Fi Hotspot"
 msgstr "Wi-Fi dookonno"
 
-#: wifi-name
-msgid "Name"
-msgstr "Maa"
+#: wifi-hotspot-enabled-msg
+msgid "Hotspot \"{{hotspotSSID}}\" is enabled"
+msgstr ""
 
 #: wifi-password
 msgctxt "wifi-password"
@@ -2200,10 +2200,6 @@ msgstr "{{dateAndTime}}"
 msgid "Set Automatically"
 msgstr "Kayandi nga boŋ se"
 
-#: setTimeManually
-msgid "Set Manually"
-msgstr "Kanbe kayandiyan"
-
 #: timezoneMessage
 msgid "Time Zone"
 msgstr "Waati ganda"
@@ -2232,6 +2228,10 @@ msgstr "Takari"
 #: time-format-time
 msgid "Time Format"
 msgstr "Waati takari"
+
+#: useDefaultTimeFormat
+msgid "Use Default"
+msgstr ""
 
 #: hour-12
 msgid "12-hour"
@@ -2358,22 +2358,18 @@ msgstr ""
 msgid "The current data transfer will be suspended. Continue anyway?"
 msgstr "Sohõ bayhaya berandiyanoo gagayandi. Bisa taka kaŋ no kul?"
 
-#. # Personalization :: Homescreen
-#: homescreen
-msgctxt "homescreen"
-msgid "Homescreen"
-msgstr "Šintin diji"
-
-#: homescreen.ariaLabel
+#. # Personalization :: Home Screens
+#: home-screens
 #, fuzzy
-msgctxt "homescreen.ariaLabel"
-msgid "Homescreen"
-msgstr "Šintin diji"
+msgctxt "home-screens"
+msgid "Home Screens"
+msgstr "Šintin dijey"
 
-#: vertical-homescreen-header
-msgctxt "vertical-homescreen-header"
-msgid "Homescreen"
-msgstr "Šintin diji"
+#: home-screens.ariaLabel
+#, fuzzy
+msgctxt "home-screens.ariaLabel"
+msgid "Home Screens"
+msgstr "Šintin dijey"
 
 #: vertical-homescreen-layout
 msgid "Layout"
@@ -2429,42 +2425,34 @@ msgstr ""
 "ceecikaw booboyaŋ do nd'i ga zaandi ka ceeciyan honnandiyaŋ sanba war se. A "
 "ga tee war ga bana ka tonton nda woo ga dira."
 
-#. # Personalization :: Homescreens
-#: homescreens
+#: replaceable-home-screen
+msgid "Replaceable Home Screen"
+msgstr ""
+
+#. # Personalization :: Home Screens :: Home Screens List
+#: change-home-screen
 #, fuzzy
-msgctxt "homescreens"
-msgid "Homescreens"
-msgstr "Šintin dijey"
-
-#: homescreens.ariaLabel
-#, fuzzy
-msgctxt "homescreens.ariaLabel"
-msgid "Homescreens"
-msgstr "Šintin dijey"
-
-#. # LOCALIZATION NOTE (homescreens-header): if you leave the original
-#. # en-US value "{{homescreens}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "homescreens".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: homescreens-header
-msgid "{{homescreens}}"
-msgstr "{{homescreens}}"
-
-#: changeHomescreen
-msgid "Change homescreen"
+msgid "Change Home Screen"
 msgstr "Šinitin diji barmay"
 
-#: changeHomescreenButton
-msgctxt "changeHomescreenButton"
-msgid "Change"
-msgstr "Barmay"
+#: get-more-home-screens
+msgid "Get More Home Screens"
+msgstr ""
 
-#: description
+#: my-home-screens
+msgid "My Home Screens"
+msgstr ""
+
+#. # Personalization :: Home Screens :: Home Screens List :: Home Screen Details
+#: home-screen-description
 #, fuzzy
-msgctxt "description"
+msgctxt "home-screen-description"
 msgid "Description"
 msgstr "Šilbayyan"
+
+#: delete-home-screen-button
+msgid "Delete Home Screen"
+msgstr ""
 
 #. # Personalization :: Keyboard
 #: keyboardSettings
@@ -2826,7 +2814,7 @@ msgid "Ring"
 msgstr "Hẽeni"
 
 #: change
-msgctxt "change"
+#, fuzzy
 msgid "Change"
 msgstr "Barmay"
 
@@ -3322,6 +3310,8 @@ msgid "Storage"
 msgstr "Jišidoo"
 
 #: enableUSBStorage1
+#, fuzzy
+msgctxt "enableUSBStorage1"
 msgid "USB Storage"
 msgstr "USB jišidoo"
 
@@ -5068,7 +5058,6 @@ msgstr ""
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
 #, fuzzy
-msgctxt "is-warning-storage-header"
 msgid "USB storage"
 msgstr "USB jišidoo"
 
@@ -5428,7 +5417,7 @@ msgstr "Sutura dabarey"
 #: enableStorageSection.ariaLabel
 #, fuzzy
 msgctxt "enableStorageSection.ariaLabel"
-msgid "USB storage"
+msgid "USB Storage"
 msgstr "USB jišidoo"
 
 #: mediaStorageSection.ariaLabel
@@ -5448,6 +5437,42 @@ msgstr "Porogaram jišidoo"
 msgctxt "batterySection.ariaLabel"
 msgid "Battery"
 msgstr "Baatiri"
+
+#~ msgid "Name"
+#~ msgstr "Maa"
+
+#~ msgid "Set Manually"
+#~ msgstr "Kanbe kayandiyan"
+
+#~ msgctxt "homescreen"
+#~ msgid "Homescreen"
+#~ msgstr "Šintin diji"
+
+#, fuzzy
+#~ msgctxt "homescreen.ariaLabel"
+#~ msgid "Homescreen"
+#~ msgstr "Šintin diji"
+
+#~ msgctxt "vertical-homescreen-header"
+#~ msgid "Homescreen"
+#~ msgstr "Šintin diji"
+
+#, fuzzy
+#~ msgctxt "homescreens.ariaLabel"
+#~ msgid "Homescreens"
+#~ msgstr "Šintin dijey"
+
+#~ msgid "{{homescreens}}"
+#~ msgstr "{{homescreens}}"
+
+#~ msgctxt "change"
+#~ msgid "Change"
+#~ msgstr "Barmay"
+
+#, fuzzy
+#~ msgctxt "enableStorageSection.ariaLabel"
+#~ msgid "USB storage"
+#~ msgstr "USB jišidoo"
 
 #~ msgid "Manage Cert."
 #~ msgstr "Tabatiyan-tiirawey juwal"

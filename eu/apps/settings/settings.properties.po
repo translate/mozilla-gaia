@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-09-18 17:45+0000\n"
 "PO-Revision-Date: 2015-09-08 11:24+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1441711470.000000\n"
@@ -1878,9 +1878,9 @@ msgstr "Wi-Fia"
 msgid "Wi-Fi Hotspot"
 msgstr "Wifigunea"
 
-#: wifi-name
-msgid "Name"
-msgstr "Izena"
+#: wifi-hotspot-enabled-msg
+msgid "Hotspot \"{{hotspotSSID}}\" is enabled"
+msgstr ""
 
 #: wifi-password
 msgctxt "wifi-password"
@@ -2217,10 +2217,6 @@ msgstr "{{dateAndTime}}"
 msgid "Set Automatically"
 msgstr "Ezarri automatikoki"
 
-#: setTimeManually
-msgid "Set Manually"
-msgstr "Ezarri eskuz"
-
 #: timezoneMessage
 msgid "Time Zone"
 msgstr "Ordu-zona"
@@ -2249,6 +2245,10 @@ msgstr "Formatua"
 #: time-format-time
 msgid "Time Format"
 msgstr "Ordu-formatua"
+
+#: useDefaultTimeFormat
+msgid "Use Default"
+msgstr ""
 
 #: hour-12
 msgid "12-hour"
@@ -2377,22 +2377,18 @@ msgid "The current data transfer will be suspended. Continue anyway?"
 msgstr ""
 "Uneko datu-transferentzia bertan behera geratuko da. Jarraitu hala ere?"
 
-#. # Personalization :: Homescreen
-#: homescreen
-msgctxt "homescreen"
-msgid "Homescreen"
-msgstr "Hasierako pantaila"
-
-#: homescreen.ariaLabel
+#. # Personalization :: Home Screens
+#: home-screens
 #, fuzzy
-msgctxt "homescreen.ariaLabel"
-msgid "Homescreen"
-msgstr "Hasierako pantaila"
+msgctxt "home-screens"
+msgid "Home Screens"
+msgstr "Hasierako pantailak"
 
-#: vertical-homescreen-header
-msgctxt "vertical-homescreen-header"
-msgid "Homescreen"
-msgstr "Hasierako pantaila"
+#: home-screens.ariaLabel
+#, fuzzy
+msgctxt "home-screens.ariaLabel"
+msgid "Home Screens"
+msgstr "Hasierako pantailak"
 
 #: vertical-homescreen-layout
 msgid "Layout"
@@ -2448,42 +2444,34 @@ msgstr ""
 "bidaltzen dira eta zuri bilaketa-iradokizunak egiteko erabiliko da. Datu-"
 "tarifa gehigarriak aplika daitezke aukera hau erabiltzean."
 
-#. # Personalization :: Homescreens
-#: homescreens
+#: replaceable-home-screen
+msgid "Replaceable Home Screen"
+msgstr ""
+
+#. # Personalization :: Home Screens :: Home Screens List
+#: change-home-screen
 #, fuzzy
-msgctxt "homescreens"
-msgid "Homescreens"
-msgstr "Hasierako pantailak"
-
-#: homescreens.ariaLabel
-#, fuzzy
-msgctxt "homescreens.ariaLabel"
-msgid "Homescreens"
-msgstr "Hasierako pantailak"
-
-#. # LOCALIZATION NOTE (homescreens-header): if you leave the original
-#. # en-US value "{{homescreens}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "homescreens".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: homescreens-header
-msgid "{{homescreens}}"
-msgstr "{{homescreens}}"
-
-#: changeHomescreen
-msgid "Change homescreen"
+msgid "Change Home Screen"
 msgstr "Aldatu hasierako pantaila"
 
-#: changeHomescreenButton
-msgctxt "changeHomescreenButton"
-msgid "Change"
-msgstr "Aldatu"
+#: get-more-home-screens
+msgid "Get More Home Screens"
+msgstr ""
 
-#: description
+#: my-home-screens
+msgid "My Home Screens"
+msgstr ""
+
+#. # Personalization :: Home Screens :: Home Screens List :: Home Screen Details
+#: home-screen-description
 #, fuzzy
-msgctxt "description"
+msgctxt "home-screen-description"
 msgid "Description"
 msgstr "Deskribapena"
+
+#: delete-home-screen-button
+msgid "Delete Home Screen"
+msgstr ""
 
 #. # Personalization :: Keyboard
 #: keyboardSettings
@@ -2848,7 +2836,7 @@ msgid "Ring"
 msgstr "Txirrina"
 
 #: change
-msgctxt "change"
+#, fuzzy
 msgid "Change"
 msgstr "Aldatu"
 
@@ -3348,6 +3336,8 @@ msgid "Storage"
 msgstr "Biltegiratzea"
 
 #: enableUSBStorage1
+#, fuzzy
+msgctxt "enableUSBStorage1"
 msgid "USB Storage"
 msgstr "USB biltegiratzea"
 
@@ -5107,7 +5097,6 @@ msgstr ""
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
 #, fuzzy
-msgctxt "is-warning-storage-header"
 msgid "USB storage"
 msgstr "USB biltegiratzea"
 
@@ -5466,7 +5455,7 @@ msgstr "Pribatutasun-kontrolak"
 #: enableStorageSection.ariaLabel
 #, fuzzy
 msgctxt "enableStorageSection.ariaLabel"
-msgid "USB storage"
+msgid "USB Storage"
 msgstr "USB biltegiratzea"
 
 #: mediaStorageSection.ariaLabel
@@ -5486,6 +5475,42 @@ msgstr "Aplikazioen biltegiratzea"
 msgctxt "batterySection.ariaLabel"
 msgid "Battery"
 msgstr "Bateria"
+
+#~ msgid "Name"
+#~ msgstr "Izena"
+
+#~ msgid "Set Manually"
+#~ msgstr "Ezarri eskuz"
+
+#~ msgctxt "homescreen"
+#~ msgid "Homescreen"
+#~ msgstr "Hasierako pantaila"
+
+#, fuzzy
+#~ msgctxt "homescreen.ariaLabel"
+#~ msgid "Homescreen"
+#~ msgstr "Hasierako pantaila"
+
+#~ msgctxt "vertical-homescreen-header"
+#~ msgid "Homescreen"
+#~ msgstr "Hasierako pantaila"
+
+#, fuzzy
+#~ msgctxt "homescreens.ariaLabel"
+#~ msgid "Homescreens"
+#~ msgstr "Hasierako pantailak"
+
+#~ msgid "{{homescreens}}"
+#~ msgstr "{{homescreens}}"
+
+#~ msgctxt "change"
+#~ msgid "Change"
+#~ msgstr "Aldatu"
+
+#, fuzzy
+#~ msgctxt "enableStorageSection.ariaLabel"
+#~ msgid "USB storage"
+#~ msgstr "USB biltegiratzea"
 
 #~ msgid "Manage Cert."
 #~ msgstr "Kudeatu ziurt."

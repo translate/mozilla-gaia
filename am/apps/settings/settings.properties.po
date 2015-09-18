@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-09-18 17:45+0000\n"
 "PO-Revision-Date: 2015-09-10 14:34+0000\n"
 "Last-Translator: samson <sambelet@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1825,9 +1825,9 @@ msgstr "ዋይ-ፋይ"
 msgid "Wi-Fi Hotspot"
 msgstr "ዋይ-ፋይ Hotspot"
 
-#: wifi-name
-msgid "Name"
-msgstr "ስም"
+#: wifi-hotspot-enabled-msg
+msgid "Hotspot \"{{hotspotSSID}}\" is enabled"
+msgstr ""
 
 #: wifi-password
 msgctxt "wifi-password"
@@ -2153,10 +2153,6 @@ msgstr "{{dateAndTime}}"
 msgid "Set Automatically"
 msgstr "ራሱ በራሱ ማሰናጃ"
 
-#: setTimeManually
-msgid "Set Manually"
-msgstr "በ እጅ ማሰናጃ"
-
 #: timezoneMessage
 msgid "Time Zone"
 msgstr "የ ሰአት ክልል"
@@ -2185,6 +2181,10 @@ msgstr "አቀራረብ"
 #: time-format-time
 msgid "Time Format"
 msgstr "የ ሰአት አቀራረብ"
+
+#: useDefaultTimeFormat
+msgid "Use Default"
+msgstr ""
 
 #: hour-12
 msgid "12-hour"
@@ -2309,20 +2309,17 @@ msgstr ""
 msgid "The current data transfer will be suspended. Continue anyway?"
 msgstr "የ አሁኑ ዳታ ማስተላለፍ ይታገዳል: ለማንኛውም መቀጠል ይፈልጋሉ?"
 
-#. # Personalization :: Homescreen
-#: homescreen
-msgctxt "homescreen"
-msgid "Homescreen"
+#. # Personalization :: Home Screens
+#: home-screens
+#, fuzzy
+msgctxt "home-screens"
+msgid "Home Screens"
 msgstr "የ ቤት መመልከቻ"
 
-#: homescreen.ariaLabel
-msgctxt "homescreen.ariaLabel"
-msgid "Homescreen"
-msgstr "የ ቤት መመልከቻ"
-
-#: vertical-homescreen-header
-msgctxt "vertical-homescreen-header"
-msgid "Homescreen"
+#: home-screens.ariaLabel
+#, fuzzy
+msgctxt "home-screens.ariaLabel"
+msgid "Home Screens"
 msgstr "የ ቤት መመልከቻ"
 
 #: vertical-homescreen-layout
@@ -2377,39 +2374,34 @@ msgstr ""
 "እርስዎ የጻፉትን ባህሪዎች ለመፈለግ በሚያስገቡ ጊዜ ለበርካታ መፈለጊያ አቅራቢዎች ይላካል እና የ ፍለጋው ውጤት ለ "
 "እርስዎ ይላካል: ይህን ገጽታ ከተጠቀሙ ተጨማሪ የ ዳታ ክፍያ ሊያስከትል ይችላል"
 
-#. # Personalization :: Homescreens
-#: homescreens
-msgctxt "homescreens"
-msgid "Homescreens"
-msgstr "የ ቤት መመልከቻ"
+#: replaceable-home-screen
+msgid "Replaceable Home Screen"
+msgstr ""
 
-#: homescreens.ariaLabel
-msgctxt "homescreens.ariaLabel"
-msgid "Homescreens"
-msgstr "የ ቤት መመልከቻ"
-
-#. # LOCALIZATION NOTE (homescreens-header): if you leave the original
-#. # en-US value "{{homescreens}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "homescreens".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: homescreens-header
-msgid "{{homescreens}}"
-msgstr "{{homescreens}}"
-
-#: changeHomescreen
-msgid "Change homescreen"
+#. # Personalization :: Home Screens :: Home Screens List
+#: change-home-screen
+#, fuzzy
+msgid "Change Home Screen"
 msgstr "የ ቤት መመልከቻ መቀየሪያ"
 
-#: changeHomescreenButton
-msgctxt "changeHomescreenButton"
-msgid "Change"
-msgstr "መቀየሪያ"
+#: get-more-home-screens
+msgid "Get More Home Screens"
+msgstr ""
 
-#: description
-msgctxt "description"
+#: my-home-screens
+msgid "My Home Screens"
+msgstr ""
+
+#. # Personalization :: Home Screens :: Home Screens List :: Home Screen Details
+#: home-screen-description
+#, fuzzy
+msgctxt "home-screen-description"
 msgid "Description"
 msgstr "መግለጫ"
+
+#: delete-home-screen-button
+msgid "Delete Home Screen"
+msgstr ""
 
 #. # Personalization :: Keyboard
 #: keyboardSettings
@@ -2763,7 +2755,7 @@ msgid "Ring"
 msgstr "መደወያ"
 
 #: change
-msgctxt "change"
+#, fuzzy
 msgid "Change"
 msgstr "መቀየሪያ"
 
@@ -3240,6 +3232,8 @@ msgid "Storage"
 msgstr "ማጠራቀሚያ"
 
 #: enableUSBStorage1
+#, fuzzy
+msgctxt "enableUSBStorage1"
 msgid "USB Storage"
 msgstr "ዩኤስቢ ማጠራቀሚያ"
 
@@ -4184,16 +4178,18 @@ msgid "NFC Output in ADB"
 msgstr "የ ዋይ-ፋይ ውጤት በ ADB"
 
 #: ril-debugging
+#, fuzzy
 msgid "RIL Output in ADB"
-msgstr ""
+msgstr "የ ዋይ-ፋይ ውጤት በ ADB"
 
 #: network-debugging
 msgid "Network Output in ADB"
 msgstr ""
 
 #: mms-debugging
+#, fuzzy
 msgid "MMS Output in ADB"
-msgstr ""
+msgstr "የ ዋይ-ፋይ ውጤት በ ADB"
 
 #: console-enabled
 msgid "Console Enabled"
@@ -4926,7 +4922,7 @@ msgstr "{{ title }}"
 
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
-msgctxt "is-warning-storage-header"
+#, fuzzy
 msgid "USB storage"
 msgstr "USB ማጠራቀሚያ"
 
@@ -5256,8 +5252,9 @@ msgid "Privacy Controls"
 msgstr "የ ግላዊነት መመሪያ መቆጣጠሪያዎች"
 
 #: enableStorageSection.ariaLabel
+#, fuzzy
 msgctxt "enableStorageSection.ariaLabel"
-msgid "USB storage"
+msgid "USB Storage"
 msgstr "ዩኤስቢ ማጠራቀሚያ"
 
 #: mediaStorageSection.ariaLabel
@@ -5274,6 +5271,39 @@ msgstr "የ መተግበሪያ ማጠራቀሚያ"
 msgctxt "batterySection.ariaLabel"
 msgid "Battery"
 msgstr "ባትሪ"
+
+#~ msgid "Name"
+#~ msgstr "ስም"
+
+#~ msgid "Set Manually"
+#~ msgstr "በ እጅ ማሰናጃ"
+
+#~ msgctxt "homescreen"
+#~ msgid "Homescreen"
+#~ msgstr "የ ቤት መመልከቻ"
+
+#~ msgctxt "homescreen.ariaLabel"
+#~ msgid "Homescreen"
+#~ msgstr "የ ቤት መመልከቻ"
+
+#~ msgctxt "vertical-homescreen-header"
+#~ msgid "Homescreen"
+#~ msgstr "የ ቤት መመልከቻ"
+
+#~ msgctxt "homescreens.ariaLabel"
+#~ msgid "Homescreens"
+#~ msgstr "የ ቤት መመልከቻ"
+
+#~ msgid "{{homescreens}}"
+#~ msgstr "{{homescreens}}"
+
+#~ msgctxt "change"
+#~ msgid "Change"
+#~ msgstr "መቀየሪያ"
+
+#~ msgctxt "enableStorageSection.ariaLabel"
+#~ msgid "USB storage"
+#~ msgstr "ዩኤስቢ ማጠራቀሚያ"
 
 #~ msgid "Manage Cert."
 #~ msgstr "የምስክር ወረቀቶች አስተዳዳሪ"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-09-18 17:45+0000\n"
 "PO-Revision-Date: 2015-09-08 13:49+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1441720178.000000\n"
@@ -1876,9 +1876,9 @@ msgstr "වයි-ෆයි"
 msgid "Wi-Fi Hotspot"
 msgstr "Wi-Fi  හොට්ස්පොට්"
 
-#: wifi-name
-msgid "Name"
-msgstr "නම"
+#: wifi-hotspot-enabled-msg
+msgid "Hotspot \"{{hotspotSSID}}\" is enabled"
+msgstr ""
 
 #: wifi-password
 msgctxt "wifi-password"
@@ -2213,10 +2213,6 @@ msgstr "{{dateAndTime}}"
 msgid "Set Automatically"
 msgstr "ස්වයංක්‍රීයව සකසන්න"
 
-#: setTimeManually
-msgid "Set Manually"
-msgstr "ශ්‍රමිකව සකසන්න"
-
 #: timezoneMessage
 msgid "Time Zone"
 msgstr "වේලා කළාපය"
@@ -2245,6 +2241,10 @@ msgstr "හැඩසවිය"
 #: time-format-time
 msgid "Time Format"
 msgstr "වේලා හැඩසවිය"
+
+#: useDefaultTimeFormat
+msgid "Use Default"
+msgstr ""
 
 #: hour-12
 msgid "12-hour"
@@ -2371,21 +2371,17 @@ msgstr ""
 msgid "The current data transfer will be suspended. Continue anyway?"
 msgstr "වත්මන් දත්ත හුවමාරුව අත්හිටුවනු ලැබේ. කෙසේ හෝ ඉදිරියට යනවා ද?"
 
-#. # Personalization :: Homescreen
-#: homescreen
-msgctxt "homescreen"
-msgid "Homescreen"
-msgstr "නිවෙස්තිරය"
-
-#: homescreen.ariaLabel
+#. # Personalization :: Home Screens
+#: home-screens
 #, fuzzy
-msgctxt "homescreen.ariaLabel"
-msgid "Homescreen"
+msgctxt "home-screens"
+msgid "Home Screens"
 msgstr "නිවෙස්තිරය"
 
-#: vertical-homescreen-header
-msgctxt "vertical-homescreen-header"
-msgid "Homescreen"
+#: home-screens.ariaLabel
+#, fuzzy
+msgctxt "home-screens.ariaLabel"
+msgid "Home Screens"
 msgstr "නිවෙස්තිරය"
 
 #: vertical-homescreen-layout
@@ -2441,42 +2437,34 @@ msgstr ""
 "ඔබ සෙවුමේදී ඇතුලත් කල අක්ෂරය බහුවිධ සෙවුම් සපයන්නන් හට යැවෙන අතර ඔබට සෙවුම් යෝජනා ගෙන ඒමට "
 "එය භාවිතා වේ. අමතර දත්ත ගාස්තු මෙහිදී වැයවනු ඇත."
 
-#. # Personalization :: Homescreens
-#: homescreens
+#: replaceable-home-screen
+msgid "Replaceable Home Screen"
+msgstr ""
+
+#. # Personalization :: Home Screens :: Home Screens List
+#: change-home-screen
 #, fuzzy
-msgctxt "homescreens"
-msgid "Homescreens"
-msgstr "නිවෙස්තිරය"
-
-#: homescreens.ariaLabel
-#, fuzzy
-msgctxt "homescreens.ariaLabel"
-msgid "Homescreens"
-msgstr "නිවෙස්තිරය"
-
-#. # LOCALIZATION NOTE (homescreens-header): if you leave the original
-#. # en-US value "{{homescreens}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "homescreens".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: homescreens-header
-msgid "{{homescreens}}"
-msgstr "{{homescreens}}"
-
-#: changeHomescreen
-msgid "Change homescreen"
+msgid "Change Home Screen"
 msgstr "නිවෙස්තිරය වෙනස් කරන්න"
 
-#: changeHomescreenButton
-msgctxt "changeHomescreenButton"
-msgid "Change"
-msgstr "වෙනස් කරන්න"
+#: get-more-home-screens
+msgid "Get More Home Screens"
+msgstr ""
 
-#: description
+#: my-home-screens
+msgid "My Home Screens"
+msgstr ""
+
+#. # Personalization :: Home Screens :: Home Screens List :: Home Screen Details
+#: home-screen-description
 #, fuzzy
-msgctxt "description"
+msgctxt "home-screen-description"
 msgid "Description"
 msgstr "විස්තරය"
+
+#: delete-home-screen-button
+msgid "Delete Home Screen"
+msgstr ""
 
 #. # Personalization :: Keyboard
 #: keyboardSettings
@@ -2840,7 +2828,7 @@ msgid "Ring"
 msgstr "හඬනාදය"
 
 #: change
-msgctxt "change"
+#, fuzzy
 msgid "Change"
 msgstr "වෙනස් කරන්න"
 
@@ -3332,6 +3320,8 @@ msgid "Storage"
 msgstr "ආචයනය"
 
 #: enableUSBStorage1
+#, fuzzy
+msgctxt "enableUSBStorage1"
 msgid "USB Storage"
 msgstr "USB ගබඩාව"
 
@@ -5071,7 +5061,6 @@ msgstr ""
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
 #, fuzzy
-msgctxt "is-warning-storage-header"
 msgid "USB storage"
 msgstr "USB ආචයනය"
 
@@ -5424,8 +5413,8 @@ msgstr ""
 #: enableStorageSection.ariaLabel
 #, fuzzy
 msgctxt "enableStorageSection.ariaLabel"
-msgid "USB storage"
-msgstr "USB ආචයනය"
+msgid "USB Storage"
+msgstr "USB ගබඩාව"
 
 #: mediaStorageSection.ariaLabel
 #, fuzzy
@@ -5444,6 +5433,42 @@ msgstr "යෙදුම් ආචයනය"
 msgctxt "batterySection.ariaLabel"
 msgid "Battery"
 msgstr "බැටරිය"
+
+#~ msgid "Name"
+#~ msgstr "නම"
+
+#~ msgid "Set Manually"
+#~ msgstr "ශ්‍රමිකව සකසන්න"
+
+#~ msgctxt "homescreen"
+#~ msgid "Homescreen"
+#~ msgstr "නිවෙස්තිරය"
+
+#, fuzzy
+#~ msgctxt "homescreen.ariaLabel"
+#~ msgid "Homescreen"
+#~ msgstr "නිවෙස්තිරය"
+
+#~ msgctxt "vertical-homescreen-header"
+#~ msgid "Homescreen"
+#~ msgstr "නිවෙස්තිරය"
+
+#, fuzzy
+#~ msgctxt "homescreens.ariaLabel"
+#~ msgid "Homescreens"
+#~ msgstr "නිවෙස්තිරය"
+
+#~ msgid "{{homescreens}}"
+#~ msgstr "{{homescreens}}"
+
+#~ msgctxt "change"
+#~ msgid "Change"
+#~ msgstr "වෙනස් කරන්න"
+
+#, fuzzy
+#~ msgctxt "enableStorageSection.ariaLabel"
+#~ msgid "USB storage"
+#~ msgstr "USB ආචයනය"
 
 #~ msgid "Manage Cert."
 #~ msgstr "සහතික කළමනා."

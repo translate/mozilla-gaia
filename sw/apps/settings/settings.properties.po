@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-09-18 17:45+0000\n"
 "PO-Revision-Date: 2015-09-08 14:04+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1441721072.000000\n"
@@ -1923,9 +1923,9 @@ msgstr "Wi-Fi"
 msgid "Wi-Fi Hotspot"
 msgstr "Eneo lenye Wi-Fi"
 
-#: wifi-name
-msgid "Name"
-msgstr "Jina"
+#: wifi-hotspot-enabled-msg
+msgid "Hotspot \"{{hotspotSSID}}\" is enabled"
+msgstr ""
 
 #: wifi-password
 msgctxt "wifi-password"
@@ -2272,11 +2272,6 @@ msgstr "{{dateAndTime}}"
 msgid "Set Automatically"
 msgstr "Weka kwa mashine"
 
-#: setTimeManually
-#, fuzzy
-msgid "Set Manually"
-msgstr "Weka kwa mkono"
-
 #: timezoneMessage
 #, fuzzy
 msgid "Time Zone"
@@ -2306,6 +2301,10 @@ msgstr "Fomati"
 
 #: time-format-time
 msgid "Time Format"
+msgstr ""
+
+#: useDefaultTimeFormat
+msgid "Use Default"
 msgstr ""
 
 #: hour-12
@@ -2437,21 +2436,17 @@ msgstr ""
 msgid "The current data transfer will be suspended. Continue anyway?"
 msgstr "Upeperushaji wa sasa wa data utahairishwa. Endelea tu?"
 
-#. # Personalization :: Homescreen
-#: homescreen
-msgctxt "homescreen"
-msgid "Homescreen"
-msgstr "Kioo cha ukurasa wa nyumbani"
-
-#: homescreen.ariaLabel
+#. # Personalization :: Home Screens
+#: home-screens
 #, fuzzy
-msgctxt "homescreen.ariaLabel"
-msgid "Homescreen"
+msgctxt "home-screens"
+msgid "Home Screens"
 msgstr "Kioo cha ukurasa wa nyumbani"
 
-#: vertical-homescreen-header
-msgctxt "vertical-homescreen-header"
-msgid "Homescreen"
+#: home-screens.ariaLabel
+#, fuzzy
+msgctxt "home-screens.ariaLabel"
+msgid "Home Screens"
 msgstr "Kioo cha ukurasa wa nyumbani"
 
 #: vertical-homescreen-layout
@@ -2507,42 +2502,34 @@ msgstr ""
 "wa utafutaji na zitatumiwa kukutumia mapendekezo ya utafutaji. Ada ya ziada "
 "ya data inaweza kutumika wakati wa kutumia kipengele hiki."
 
-#. # Personalization :: Homescreens
-#: homescreens
+#: replaceable-home-screen
+msgid "Replaceable Home Screen"
+msgstr ""
+
+#. # Personalization :: Home Screens :: Home Screens List
+#: change-home-screen
 #, fuzzy
-msgctxt "homescreens"
-msgid "Homescreens"
-msgstr "Kioo cha ukurasa wa nyumbani"
-
-#: homescreens.ariaLabel
-#, fuzzy
-msgctxt "homescreens.ariaLabel"
-msgid "Homescreens"
-msgstr "Kioo cha ukurasa wa nyumbani"
-
-#. # LOCALIZATION NOTE (homescreens-header): if you leave the original
-#. # en-US value "{{homescreens}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "homescreens".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: homescreens-header
-msgid "{{homescreens}}"
-msgstr "{{homescreen}}"
-
-#: changeHomescreen
-msgid "Change homescreen"
+msgid "Change Home Screen"
 msgstr "Badilisha kioo cha ukurasa wa nyumbani"
 
-#: changeHomescreenButton
-msgctxt "changeHomescreenButton"
-msgid "Change"
-msgstr "Badilisha"
+#: get-more-home-screens
+msgid "Get More Home Screens"
+msgstr ""
 
-#: description
+#: my-home-screens
+msgid "My Home Screens"
+msgstr ""
+
+#. # Personalization :: Home Screens :: Home Screens List :: Home Screen Details
+#: home-screen-description
 #, fuzzy
-msgctxt "description"
+msgctxt "home-screen-description"
 msgid "Description"
 msgstr "Maelezo"
+
+#: delete-home-screen-button
+msgid "Delete Home Screen"
+msgstr ""
 
 #. # Personalization :: Keyboard
 #: keyboardSettings
@@ -2915,7 +2902,7 @@ msgid "Ring"
 msgstr "Mlio"
 
 #: change
-msgctxt "change"
+#, fuzzy
 msgid "Change"
 msgstr "Badilisha"
 
@@ -3425,6 +3412,7 @@ msgstr "Hifadhi"
 
 #: enableUSBStorage1
 #, fuzzy
+msgctxt "enableUSBStorage1"
 msgid "USB Storage"
 msgstr "Hifadhi ya USB"
 
@@ -5195,7 +5183,6 @@ msgstr ""
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
 #, fuzzy
-msgctxt "is-warning-storage-header"
 msgid "USB storage"
 msgstr "Hifadhi ya USB"
 
@@ -5549,7 +5536,7 @@ msgstr ""
 #: enableStorageSection.ariaLabel
 #, fuzzy
 msgctxt "enableStorageSection.ariaLabel"
-msgid "USB storage"
+msgid "USB Storage"
 msgstr "Hifadhi ya USB"
 
 #: mediaStorageSection.ariaLabel
@@ -5569,6 +5556,43 @@ msgstr "Hifadhi ya programu"
 msgctxt "batterySection.ariaLabel"
 msgid "Battery"
 msgstr "Betri"
+
+#~ msgid "Name"
+#~ msgstr "Jina"
+
+#, fuzzy
+#~ msgid "Set Manually"
+#~ msgstr "Weka kwa mkono"
+
+#~ msgctxt "homescreen"
+#~ msgid "Homescreen"
+#~ msgstr "Kioo cha ukurasa wa nyumbani"
+
+#, fuzzy
+#~ msgctxt "homescreen.ariaLabel"
+#~ msgid "Homescreen"
+#~ msgstr "Kioo cha ukurasa wa nyumbani"
+
+#~ msgctxt "vertical-homescreen-header"
+#~ msgid "Homescreen"
+#~ msgstr "Kioo cha ukurasa wa nyumbani"
+
+#, fuzzy
+#~ msgctxt "homescreens.ariaLabel"
+#~ msgid "Homescreens"
+#~ msgstr "Kioo cha ukurasa wa nyumbani"
+
+#~ msgid "{{homescreens}}"
+#~ msgstr "{{homescreen}}"
+
+#~ msgctxt "change"
+#~ msgid "Change"
+#~ msgstr "Badilisha"
+
+#, fuzzy
+#~ msgctxt "enableStorageSection.ariaLabel"
+#~ msgid "USB storage"
+#~ msgstr "Hifadhi ya USB"
 
 #~ msgid "Manage Cert."
 #~ msgstr "Ongoza Cheti"

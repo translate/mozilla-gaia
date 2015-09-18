@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-09-18 17:45+0000\n"
 "PO-Revision-Date: 2015-09-09 14:28+0000\n"
 "Last-Translator: Jānis Marks Gailis <jm-gailis@fai-vianet.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1441808895.000000\n"
@@ -1897,9 +1897,9 @@ msgstr "Bezvadu internets"
 msgid "Wi-Fi Hotspot"
 msgstr "Bezvadu interneta tīklājs"
 
-#: wifi-name
-msgid "Name"
-msgstr "Nosaukums"
+#: wifi-hotspot-enabled-msg
+msgid "Hotspot \"{{hotspotSSID}}\" is enabled"
+msgstr ""
 
 #: wifi-password
 msgctxt "wifi-password"
@@ -2235,10 +2235,6 @@ msgstr "{{dateAndTime}}"
 msgid "Set Automatically"
 msgstr "Noteikt automātiski"
 
-#: setTimeManually
-msgid "Set Manually"
-msgstr "Uzstādīt pašrocīgi"
-
 #: timezoneMessage
 msgid "Time Zone"
 msgstr "Laika josla"
@@ -2267,6 +2263,10 @@ msgstr "Formāts"
 #: time-format-time
 msgid "Time Format"
 msgstr "Laika formāts"
+
+#: useDefaultTimeFormat
+msgid "Use Default"
+msgstr ""
 
 #: hour-12
 msgid "12-hour"
@@ -2391,22 +2391,18 @@ msgstr ""
 msgid "The current data transfer will be suspended. Continue anyway?"
 msgstr ""
 
-#. # Personalization :: Homescreen
-#: homescreen
-msgctxt "homescreen"
-msgid "Homescreen"
-msgstr "Sākuma ekrāns"
-
-#: homescreen.ariaLabel
+#. # Personalization :: Home Screens
+#: home-screens
 #, fuzzy
-msgctxt "homescreen.ariaLabel"
-msgid "Homescreen"
-msgstr "Sākuma ekrāns"
+msgctxt "home-screens"
+msgid "Home Screens"
+msgstr "Sākuma ekrāni"
 
-#: vertical-homescreen-header
-msgctxt "vertical-homescreen-header"
-msgid "Homescreen"
-msgstr "Sākuma ekrāns"
+#: home-screens.ariaLabel
+#, fuzzy
+msgctxt "home-screens.ariaLabel"
+msgid "Home Screens"
+msgstr "Sākuma ekrāni"
 
 #: vertical-homescreen-layout
 msgid "Layout"
@@ -2459,42 +2455,34 @@ msgid ""
 "charges may apply when using this feature."
 msgstr ""
 
-#. # Personalization :: Homescreens
-#: homescreens
+#: replaceable-home-screen
+msgid "Replaceable Home Screen"
+msgstr ""
+
+#. # Personalization :: Home Screens :: Home Screens List
+#: change-home-screen
 #, fuzzy
-msgctxt "homescreens"
-msgid "Homescreens"
-msgstr "Sākuma ekrāni"
-
-#: homescreens.ariaLabel
-#, fuzzy
-msgctxt "homescreens.ariaLabel"
-msgid "Homescreens"
-msgstr "Sākuma ekrāni"
-
-#. # LOCALIZATION NOTE (homescreens-header): if you leave the original
-#. # en-US value "{{homescreens}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "homescreens".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: homescreens-header
-msgid "{{homescreens}}"
-msgstr "{{homescreens}}"
-
-#: changeHomescreen
-msgid "Change homescreen"
+msgid "Change Home Screen"
 msgstr "Mainīt sākuma ekrānu"
 
-#: changeHomescreenButton
-msgctxt "changeHomescreenButton"
-msgid "Change"
-msgstr "Mainīt"
+#: get-more-home-screens
+msgid "Get More Home Screens"
+msgstr ""
 
-#: description
+#: my-home-screens
+msgid "My Home Screens"
+msgstr ""
+
+#. # Personalization :: Home Screens :: Home Screens List :: Home Screen Details
+#: home-screen-description
 #, fuzzy
-msgctxt "description"
+msgctxt "home-screen-description"
 msgid "Description"
 msgstr "Apraksts"
+
+#: delete-home-screen-button
+msgid "Delete Home Screen"
+msgstr ""
 
 #. # Personalization :: Keyboard
 #: keyboardSettings
@@ -2860,7 +2848,7 @@ msgid "Ring"
 msgstr ""
 
 #: change
-msgctxt "change"
+#, fuzzy
 msgid "Change"
 msgstr "Mainīt"
 
@@ -3338,6 +3326,8 @@ msgid "Storage"
 msgstr "Krātuve"
 
 #: enableUSBStorage1
+#, fuzzy
+msgctxt "enableUSBStorage1"
 msgid "USB Storage"
 msgstr "USB krātuve"
 
@@ -4997,7 +4987,6 @@ msgstr ""
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
 #, fuzzy
-msgctxt "is-warning-storage-header"
 msgid "USB storage"
 msgstr "USB krātuve"
 
@@ -5350,7 +5339,7 @@ msgstr "Privātuma kontroles"
 #: enableStorageSection.ariaLabel
 #, fuzzy
 msgctxt "enableStorageSection.ariaLabel"
-msgid "USB storage"
+msgid "USB Storage"
 msgstr "USB krātuve"
 
 #: mediaStorageSection.ariaLabel
@@ -5369,6 +5358,42 @@ msgstr "Lietotņu krātuve"
 msgctxt "batterySection.ariaLabel"
 msgid "Battery"
 msgstr "Baterija"
+
+#~ msgid "Name"
+#~ msgstr "Nosaukums"
+
+#~ msgid "Set Manually"
+#~ msgstr "Uzstādīt pašrocīgi"
+
+#~ msgctxt "homescreen"
+#~ msgid "Homescreen"
+#~ msgstr "Sākuma ekrāns"
+
+#, fuzzy
+#~ msgctxt "homescreen.ariaLabel"
+#~ msgid "Homescreen"
+#~ msgstr "Sākuma ekrāns"
+
+#~ msgctxt "vertical-homescreen-header"
+#~ msgid "Homescreen"
+#~ msgstr "Sākuma ekrāns"
+
+#, fuzzy
+#~ msgctxt "homescreens.ariaLabel"
+#~ msgid "Homescreens"
+#~ msgstr "Sākuma ekrāni"
+
+#~ msgid "{{homescreens}}"
+#~ msgstr "{{homescreens}}"
+
+#~ msgctxt "change"
+#~ msgid "Change"
+#~ msgstr "Mainīt"
+
+#, fuzzy
+#~ msgctxt "enableStorageSection.ariaLabel"
+#~ msgid "USB storage"
+#~ msgstr "USB krātuve"
 
 #~ msgid "Manage Cert."
 #~ msgstr "Pārvaldīt sertifikātus"

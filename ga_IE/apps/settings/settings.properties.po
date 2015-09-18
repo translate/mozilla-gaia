@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firefox\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-09-18 17:45+0000\n"
 "PO-Revision-Date: 2015-09-16 00:13+0000\n"
 "Last-Translator: Mícheál John Ó Meachair <michealomeachair@gmail.com>\n"
 "Language-Team: Irish\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :"
 "(n>6 && n<11) ? 3 : 4;;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1442362416.000000\n"
@@ -1866,9 +1866,9 @@ msgstr "Wi-Fi"
 msgid "Wi-Fi Hotspot"
 msgstr "Ball Te Wi-Fi"
 
-#: wifi-name
-msgid "Name"
-msgstr "Ainm"
+#: wifi-hotspot-enabled-msg
+msgid "Hotspot \"{{hotspotSSID}}\" is enabled"
+msgstr ""
 
 #: wifi-password
 msgctxt "wifi-password"
@@ -2202,10 +2202,6 @@ msgstr "{{dateAndTime}}"
 msgid "Set Automatically"
 msgstr "Uathoibríoch"
 
-#: setTimeManually
-msgid "Set Manually"
-msgstr "De Láimh"
-
 #: timezoneMessage
 msgid "Time Zone"
 msgstr "Crios Ama"
@@ -2235,6 +2231,10 @@ msgstr "Formáid"
 #: time-format-time
 msgid "Time Format"
 msgstr "Formáid Ama"
+
+#: useDefaultTimeFormat
+msgid "Use Default"
+msgstr ""
 
 #: hour-12
 msgid "12-hour"
@@ -2360,21 +2360,18 @@ msgstr ""
 msgid "The current data transfer will be suspended. Continue anyway?"
 msgstr "Cuirfear an t-aistriú sonraí ar fionraí. Lean ar aghaidh mar sin féin?"
 
-#. # Personalization :: Homescreen
-#: homescreen
-msgctxt "homescreen"
-msgid "Homescreen"
-msgstr "Scáileán Baile"
+#. # Personalization :: Home Screens
+#: home-screens
+#, fuzzy
+msgctxt "home-screens"
+msgid "Home Screens"
+msgstr "Scáileáin Bhaile"
 
-#: homescreen.ariaLabel
-msgctxt "homescreen.ariaLabel"
-msgid "Homescreen"
-msgstr "Scáileán Baile"
-
-#: vertical-homescreen-header
-msgctxt "vertical-homescreen-header"
-msgid "Homescreen"
-msgstr "Scáileán Baile"
+#: home-screens.ariaLabel
+#, fuzzy
+msgctxt "home-screens.ariaLabel"
+msgid "Home Screens"
+msgstr "Scáileáin Bhaile"
 
 #: vertical-homescreen-layout
 msgid "Layout"
@@ -2429,39 +2426,34 @@ msgstr ""
 "cuardaigh éagsúla agus úsáidfear iad chun moltaí a chur ar ais chugat. "
 "B'fhéidir go ngearrfar táille bhreise sonraí ort chun an ghné seo a úsáid."
 
-#. # Personalization :: Homescreens
-#: homescreens
-msgctxt "homescreens"
-msgid "Homescreens"
-msgstr "Scáileáin Bhaile"
+#: replaceable-home-screen
+msgid "Replaceable Home Screen"
+msgstr ""
 
-#: homescreens.ariaLabel
-msgctxt "homescreens.ariaLabel"
-msgid "Homescreens"
-msgstr "Scáileáin Bhaile"
-
-#. # LOCALIZATION NOTE (homescreens-header): if you leave the original
-#. # en-US value "{{homescreens}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "homescreens".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: homescreens-header
-msgid "{{homescreens}}"
-msgstr "{{homescreens}}"
-
-#: changeHomescreen
-msgid "Change homescreen"
+#. # Personalization :: Home Screens :: Home Screens List
+#: change-home-screen
+#, fuzzy
+msgid "Change Home Screen"
 msgstr "Athraigh an scáileán baile"
 
-#: changeHomescreenButton
-msgctxt "changeHomescreenButton"
-msgid "Change"
-msgstr "Athraigh"
+#: get-more-home-screens
+msgid "Get More Home Screens"
+msgstr ""
 
-#: description
-msgctxt "description"
+#: my-home-screens
+msgid "My Home Screens"
+msgstr ""
+
+#. # Personalization :: Home Screens :: Home Screens List :: Home Screen Details
+#: home-screen-description
+#, fuzzy
+msgctxt "home-screen-description"
 msgid "Description"
 msgstr "Cur Síos"
+
+#: delete-home-screen-button
+msgid "Delete Home Screen"
+msgstr ""
 
 #. # Personalization :: Keyboard
 #: keyboardSettings
@@ -2822,7 +2814,7 @@ msgid "Ring"
 msgstr "Cling"
 
 #: change
-msgctxt "change"
+#, fuzzy
 msgid "Change"
 msgstr "Athraigh"
 
@@ -3327,6 +3319,8 @@ msgid "Storage"
 msgstr "Stóras"
 
 #: enableUSBStorage1
+#, fuzzy
+msgctxt "enableUSBStorage1"
 msgid "USB Storage"
 msgstr "Stóras USB"
 
@@ -5038,7 +5032,7 @@ msgstr "{{ title }}"
 
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
-msgctxt "is-warning-storage-header"
+#, fuzzy
 msgid "USB storage"
 msgstr "Stóras USB"
 
@@ -5378,8 +5372,9 @@ msgid "Privacy Controls"
 msgstr "Rialtáin Phríobháideachais"
 
 #: enableStorageSection.ariaLabel
+#, fuzzy
 msgctxt "enableStorageSection.ariaLabel"
-msgid "USB storage"
+msgid "USB Storage"
 msgstr "Stóras USB"
 
 #: mediaStorageSection.ariaLabel
@@ -5396,6 +5391,39 @@ msgstr "Stóras Aipeanna"
 msgctxt "batterySection.ariaLabel"
 msgid "Battery"
 msgstr "Cadhnra"
+
+#~ msgid "Name"
+#~ msgstr "Ainm"
+
+#~ msgid "Set Manually"
+#~ msgstr "De Láimh"
+
+#~ msgctxt "homescreen"
+#~ msgid "Homescreen"
+#~ msgstr "Scáileán Baile"
+
+#~ msgctxt "homescreen.ariaLabel"
+#~ msgid "Homescreen"
+#~ msgstr "Scáileán Baile"
+
+#~ msgctxt "vertical-homescreen-header"
+#~ msgid "Homescreen"
+#~ msgstr "Scáileán Baile"
+
+#~ msgctxt "homescreens.ariaLabel"
+#~ msgid "Homescreens"
+#~ msgstr "Scáileáin Bhaile"
+
+#~ msgid "{{homescreens}}"
+#~ msgstr "{{homescreens}}"
+
+#~ msgctxt "change"
+#~ msgid "Change"
+#~ msgstr "Athraigh"
+
+#~ msgctxt "enableStorageSection.ariaLabel"
+#~ msgid "USB storage"
+#~ msgstr "Stóras USB"
 
 #~ msgid "Manage Cert."
 #~ msgstr "Bainistigh Teastais"

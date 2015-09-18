@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-09-18 17:45+0000\n"
 "PO-Revision-Date: 2015-09-08 12:04+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1441713852.000000\n"
@@ -1887,9 +1887,9 @@ msgstr "Wi-Fi"
 msgid "Wi-Fi Hotspot"
 msgstr "Hotspot Wi-Fi"
 
-#: wifi-name
-msgid "Name"
-msgstr "Nama"
+#: wifi-hotspot-enabled-msg
+msgid "Hotspot \"{{hotspotSSID}}\" is enabled"
+msgstr ""
 
 #: wifi-password
 msgctxt "wifi-password"
@@ -2226,10 +2226,6 @@ msgstr "{{dateAndTime}}"
 msgid "Set Automatically"
 msgstr "Setel Otomatis"
 
-#: setTimeManually
-msgid "Set Manually"
-msgstr "Setel Manual"
-
 #: timezoneMessage
 msgid "Time Zone"
 msgstr "Zona Waktu"
@@ -2258,6 +2254,10 @@ msgstr "Format"
 #: time-format-time
 msgid "Time Format"
 msgstr "Format Waktu"
+
+#: useDefaultTimeFormat
+msgid "Use Default"
+msgstr ""
 
 #: hour-12
 msgid "12-hour"
@@ -2385,21 +2385,17 @@ msgstr ""
 msgid "The current data transfer will be suspended. Continue anyway?"
 msgstr "Transfer data saat ini akan dijeda. Lanjutkan saja?"
 
-#. # Personalization :: Homescreen
-#: homescreen
-msgctxt "homescreen"
-msgid "Homescreen"
-msgstr "Layar Beranda"
-
-#: homescreen.ariaLabel
+#. # Personalization :: Home Screens
+#: home-screens
 #, fuzzy
-msgctxt "homescreen.ariaLabel"
-msgid "Homescreen"
+msgctxt "home-screens"
+msgid "Home Screens"
 msgstr "Layar Beranda"
 
-#: vertical-homescreen-header
-msgctxt "vertical-homescreen-header"
-msgid "Homescreen"
+#: home-screens.ariaLabel
+#, fuzzy
+msgctxt "home-screens.ariaLabel"
+msgid "Home Screens"
 msgstr "Layar Beranda"
 
 #: vertical-homescreen-layout
@@ -2456,42 +2452,34 @@ msgstr ""
 "pencarian dan hasilnya akan digunakan untuk menyediakan saran pencarian. "
 "Biaya data tambahan mungkin berlaku saat menggunakan fitur ini."
 
-#. # Personalization :: Homescreens
-#: homescreens
+#: replaceable-home-screen
+msgid "Replaceable Home Screen"
+msgstr ""
+
+#. # Personalization :: Home Screens :: Home Screens List
+#: change-home-screen
 #, fuzzy
-msgctxt "homescreens"
-msgid "Homescreens"
-msgstr "Layar Beranda"
-
-#: homescreens.ariaLabel
-#, fuzzy
-msgctxt "homescreens.ariaLabel"
-msgid "Homescreens"
-msgstr "Layar Beranda"
-
-#. # LOCALIZATION NOTE (homescreens-header): if you leave the original
-#. # en-US value "{{homescreens}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "homescreens".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: homescreens-header
-msgid "{{homescreens}}"
-msgstr "{{homescreens}}"
-
-#: changeHomescreen
-msgid "Change homescreen"
+msgid "Change Home Screen"
 msgstr "Ubah layar beranda"
 
-#: changeHomescreenButton
-msgctxt "changeHomescreenButton"
-msgid "Change"
-msgstr "Ubah"
+#: get-more-home-screens
+msgid "Get More Home Screens"
+msgstr ""
 
-#: description
+#: my-home-screens
+msgid "My Home Screens"
+msgstr ""
+
+#. # Personalization :: Home Screens :: Home Screens List :: Home Screen Details
+#: home-screen-description
 #, fuzzy
-msgctxt "description"
+msgctxt "home-screen-description"
 msgid "Description"
 msgstr "Deskripsi"
+
+#: delete-home-screen-button
+msgid "Delete Home Screen"
+msgstr ""
 
 #. # Personalization :: Keyboard
 #: keyboardSettings
@@ -2856,7 +2844,7 @@ msgid "Ring"
 msgstr "Dering"
 
 #: change
-msgctxt "change"
+#, fuzzy
 msgid "Change"
 msgstr "Ubah"
 
@@ -3367,6 +3355,8 @@ msgid "Storage"
 msgstr "Penyimpanan"
 
 #: enableUSBStorage1
+#, fuzzy
+msgctxt "enableUSBStorage1"
 msgid "USB Storage"
 msgstr "Penyimpanan USB"
 
@@ -5119,7 +5109,6 @@ msgstr ""
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
 #, fuzzy
-msgctxt "is-warning-storage-header"
 msgid "USB storage"
 msgstr "Penyimpanan USB"
 
@@ -5479,7 +5468,7 @@ msgstr "Kendali Privasi"
 #: enableStorageSection.ariaLabel
 #, fuzzy
 msgctxt "enableStorageSection.ariaLabel"
-msgid "USB storage"
+msgid "USB Storage"
 msgstr "Penyimpanan USB"
 
 #: mediaStorageSection.ariaLabel
@@ -5499,6 +5488,42 @@ msgstr "Penyimpanan Aplikasi"
 msgctxt "batterySection.ariaLabel"
 msgid "Battery"
 msgstr "Baterai"
+
+#~ msgid "Name"
+#~ msgstr "Nama"
+
+#~ msgid "Set Manually"
+#~ msgstr "Setel Manual"
+
+#~ msgctxt "homescreen"
+#~ msgid "Homescreen"
+#~ msgstr "Layar Beranda"
+
+#, fuzzy
+#~ msgctxt "homescreen.ariaLabel"
+#~ msgid "Homescreen"
+#~ msgstr "Layar Beranda"
+
+#~ msgctxt "vertical-homescreen-header"
+#~ msgid "Homescreen"
+#~ msgstr "Layar Beranda"
+
+#, fuzzy
+#~ msgctxt "homescreens.ariaLabel"
+#~ msgid "Homescreens"
+#~ msgstr "Layar Beranda"
+
+#~ msgid "{{homescreens}}"
+#~ msgstr "{{homescreens}}"
+
+#~ msgctxt "change"
+#~ msgid "Change"
+#~ msgstr "Ubah"
+
+#, fuzzy
+#~ msgctxt "enableStorageSection.ariaLabel"
+#~ msgid "USB storage"
+#~ msgstr "Penyimpanan USB"
 
 #~ msgid "Manage Cert."
 #~ msgstr "Kelola Sert."

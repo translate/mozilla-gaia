@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-09-18 17:45+0000\n"
 "PO-Revision-Date: 2015-09-16 18:32+0000\n"
 "Last-Translator: Belayet Hossain <bellayet@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1442428327.000000\n"
@@ -1840,9 +1840,9 @@ msgstr "ওয়াই-ফাই"
 msgid "Wi-Fi Hotspot"
 msgstr "ওয়াই-ফাই হটস্পট"
 
-#: wifi-name
-msgid "Name"
-msgstr "নাম"
+#: wifi-hotspot-enabled-msg
+msgid "Hotspot \"{{hotspotSSID}}\" is enabled"
+msgstr ""
 
 #: wifi-password
 msgctxt "wifi-password"
@@ -2168,10 +2168,6 @@ msgstr "{{dateAndTime}}"
 msgid "Set Automatically"
 msgstr "স্বয়ংক্রিয়ভাবে ঠিক করুন"
 
-#: setTimeManually
-msgid "Set Manually"
-msgstr "নিজ হাতে ঠিক করুন"
-
 #: timezoneMessage
 msgid "Time Zone"
 msgstr "সময় অঞ্চল"
@@ -2199,6 +2195,10 @@ msgstr "ফরম্যাট"
 
 #: time-format-time
 msgid "Time Format"
+msgstr ""
+
+#: useDefaultTimeFormat
+msgid "Use Default"
 msgstr ""
 
 #: hour-12
@@ -2324,21 +2324,18 @@ msgstr ""
 msgid "The current data transfer will be suspended. Continue anyway?"
 msgstr "চলমান ডাটা ট্রান্সফার বাতিল করা হবে। তারপরও এগিয়ে যাবেন?"
 
-#. # Personalization :: Homescreen
-#: homescreen
-msgctxt "homescreen"
-msgid "Homescreen"
-msgstr "প্রধান স্ক্রিন"
+#. # Personalization :: Home Screens
+#: home-screens
+#, fuzzy
+msgctxt "home-screens"
+msgid "Home Screens"
+msgstr "হোমস্ক্রিনসমূহ"
 
-#: homescreen.ariaLabel
-msgctxt "homescreen.ariaLabel"
-msgid "Homescreen"
-msgstr "হোমস্ক্রিন"
-
-#: vertical-homescreen-header
-msgctxt "vertical-homescreen-header"
-msgid "Homescreen"
-msgstr "প্রধান স্ক্রিন"
+#: home-screens.ariaLabel
+#, fuzzy
+msgctxt "home-screens.ariaLabel"
+msgid "Home Screens"
+msgstr "হোমস্ক্রিনসমূহ"
 
 #: vertical-homescreen-layout
 msgid "Layout"
@@ -2393,39 +2390,34 @@ msgstr ""
 "পাঠানো হয় এবং তারা আপনাকে অনুসন্ধান প্রস্তাবনা করে। এই ফিচারটি ব্যবহার করলে "
 "অতিরিক্ত ডাটা খরচ হতে পারে।"
 
-#. # Personalization :: Homescreens
-#: homescreens
-msgctxt "homescreens"
-msgid "Homescreens"
-msgstr "হোমস্ক্রিনসমূহ"
+#: replaceable-home-screen
+msgid "Replaceable Home Screen"
+msgstr ""
 
-#: homescreens.ariaLabel
-msgctxt "homescreens.ariaLabel"
-msgid "Homescreens"
-msgstr "হোমস্ক্রিনসমূহ"
-
-#. # LOCALIZATION NOTE (homescreens-header): if you leave the original
-#. # en-US value "{{homescreens}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "homescreens".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: homescreens-header
-msgid "{{homescreens}}"
-msgstr "{{homescreens}}"
-
-#: changeHomescreen
-msgid "Change homescreen"
+#. # Personalization :: Home Screens :: Home Screens List
+#: change-home-screen
+#, fuzzy
+msgid "Change Home Screen"
 msgstr "প্রধান স্ক্রিন পরিবর্তন"
 
-#: changeHomescreenButton
-msgctxt "changeHomescreenButton"
-msgid "Change"
-msgstr "পরিবর্তন"
+#: get-more-home-screens
+msgid "Get More Home Screens"
+msgstr ""
 
-#: description
-msgctxt "description"
+#: my-home-screens
+msgid "My Home Screens"
+msgstr ""
+
+#. # Personalization :: Home Screens :: Home Screens List :: Home Screen Details
+#: home-screen-description
+#, fuzzy
+msgctxt "home-screen-description"
 msgid "Description"
 msgstr "বর্ণনা"
+
+#: delete-home-screen-button
+msgid "Delete Home Screen"
+msgstr ""
 
 #. # Personalization :: Keyboard
 #: keyboardSettings
@@ -2783,7 +2775,7 @@ msgid "Ring"
 msgstr "রিং"
 
 #: change
-msgctxt "change"
+#, fuzzy
 msgid "Change"
 msgstr "পরিবর্তন"
 
@@ -3277,6 +3269,8 @@ msgid "Storage"
 msgstr "সংগ্রহস্থল"
 
 #: enableUSBStorage1
+#, fuzzy
+msgctxt "enableUSBStorage1"
 msgid "USB Storage"
 msgstr "ইউএসবি স্টোরেজ"
 
@@ -4961,7 +4955,7 @@ msgstr ""
 
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
-msgctxt "is-warning-storage-header"
+#, fuzzy
 msgid "USB storage"
 msgstr "ইউএসবি স্টোরেজ"
 
@@ -5191,9 +5185,10 @@ msgstr ""
 #. # LOCALIZATION NOTE: The following strings are spoken by screen readers and not
 #. # shown on the screen.
 #: addButton.ariaLabel
+#, fuzzy
 msgctxt "addButton.ariaLabel"
 msgid "Add"
-msgstr ""
+msgstr "যুক্ত"
 
 #: closeButton.ariaLabel
 msgctxt "closeButton.ariaLabel"
@@ -5290,8 +5285,9 @@ msgid "Privacy Controls"
 msgstr ""
 
 #: enableStorageSection.ariaLabel
+#, fuzzy
 msgctxt "enableStorageSection.ariaLabel"
-msgid "USB storage"
+msgid "USB Storage"
 msgstr "ইউএসবি স্টোরেজ"
 
 #: mediaStorageSection.ariaLabel
@@ -5308,6 +5304,39 @@ msgstr "অ্যাপ্লিকেশন সংগ্রহস্থল"
 msgctxt "batterySection.ariaLabel"
 msgid "Battery"
 msgstr "ব্যাটারি"
+
+#~ msgid "Name"
+#~ msgstr "নাম"
+
+#~ msgid "Set Manually"
+#~ msgstr "নিজ হাতে ঠিক করুন"
+
+#~ msgctxt "homescreen"
+#~ msgid "Homescreen"
+#~ msgstr "প্রধান স্ক্রিন"
+
+#~ msgctxt "homescreen.ariaLabel"
+#~ msgid "Homescreen"
+#~ msgstr "হোমস্ক্রিন"
+
+#~ msgctxt "vertical-homescreen-header"
+#~ msgid "Homescreen"
+#~ msgstr "প্রধান স্ক্রিন"
+
+#~ msgctxt "homescreens.ariaLabel"
+#~ msgid "Homescreens"
+#~ msgstr "হোমস্ক্রিনসমূহ"
+
+#~ msgid "{{homescreens}}"
+#~ msgstr "{{homescreens}}"
+
+#~ msgctxt "change"
+#~ msgid "Change"
+#~ msgstr "পরিবর্তন"
+
+#~ msgctxt "enableStorageSection.ariaLabel"
+#~ msgid "USB storage"
+#~ msgstr "ইউএসবি স্টোরেজ"
 
 #~ msgid "Manage Cert."
 #~ msgstr "সার্টিফিকেটের ব্যবস্থাপনা।"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 14:45+0000\n"
+"POT-Creation-Date: 2015-09-18 17:45+0000\n"
 "PO-Revision-Date: 2015-09-12 11:55+0000\n"
 "Last-Translator: Gwenn M <tornoz@laposte.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1442058929.000000\n"
@@ -1862,9 +1862,9 @@ msgstr "Wi-Fi"
 msgid "Wi-Fi Hotspot"
 msgstr "Poent haeziñ Wi-Fi"
 
-#: wifi-name
-msgid "Name"
-msgstr "Anv"
+#: wifi-hotspot-enabled-msg
+msgid "Hotspot \"{{hotspotSSID}}\" is enabled"
+msgstr ""
 
 #: wifi-password
 msgctxt "wifi-password"
@@ -2192,10 +2192,6 @@ msgstr "{{dateAndTime}}"
 msgid "Set Automatically"
 msgstr "Reizhañ emgefreek"
 
-#: setTimeManually
-msgid "Set Manually"
-msgstr "Arventennañ dre zorn"
-
 #: timezoneMessage
 msgid "Time Zone"
 msgstr "Gwerzhid-eur"
@@ -2224,6 +2220,10 @@ msgstr "Mentrezhañ"
 #: time-format-time
 msgid "Time Format"
 msgstr "Mentrezh an eur"
+
+#: useDefaultTimeFormat
+msgid "Use Default"
+msgstr ""
 
 #: hour-12
 msgid "12-hour"
@@ -2349,21 +2349,18 @@ msgstr ""
 msgid "The current data transfer will be suspended. Continue anyway?"
 msgstr "Arsavet e vo an treuzkas roadennoù bremanel. Kenderc'hel memes tra ?"
 
-#. # Personalization :: Homescreen
-#: homescreen
-msgctxt "homescreen"
-msgid "Homescreen"
-msgstr "Skramm degemer"
+#. # Personalization :: Home Screens
+#: home-screens
+#, fuzzy
+msgctxt "home-screens"
+msgid "Home Screens"
+msgstr "Skrammoù degemer"
 
-#: homescreen.ariaLabel
-msgctxt "homescreen.ariaLabel"
-msgid "Homescreen"
-msgstr "Skramm degemer"
-
-#: vertical-homescreen-header
-msgctxt "vertical-homescreen-header"
-msgid "Homescreen"
-msgstr "Skramm degemer"
+#: home-screens.ariaLabel
+#, fuzzy
+msgctxt "home-screens.ariaLabel"
+msgid "Home Screens"
+msgstr "Skrammoù degemer"
 
 #: vertical-homescreen-layout
 msgid "Layout"
@@ -2418,39 +2415,34 @@ msgstr ""
 "a geflusker enklask evit diskouez deoc'h kinnigoù enklask. Mizoù ouzhpenn a "
 "c'hall bezañ fakturennet deoc'h pa vez arveret ar c'heweriuster-mañ."
 
-#. # Personalization :: Homescreens
-#: homescreens
-msgctxt "homescreens"
-msgid "Homescreens"
-msgstr "Skrammoù degemer"
+#: replaceable-home-screen
+msgid "Replaceable Home Screen"
+msgstr ""
 
-#: homescreens.ariaLabel
-msgctxt "homescreens.ariaLabel"
-msgid "Homescreens"
-msgstr "Skrammoù degemer"
-
-#. # LOCALIZATION NOTE (homescreens-header): if you leave the original
-#. # en-US value "{{homescreens}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "homescreens".
-#. # If you need to adapt your localization to the reduced space available
-#. # in headers, you can use a shorter string here.
-#: homescreens-header
-msgid "{{homescreens}}"
-msgstr "{{homescreens}}"
-
-#: changeHomescreen
-msgid "Change homescreen"
+#. # Personalization :: Home Screens :: Home Screens List
+#: change-home-screen
+#, fuzzy
+msgid "Change Home Screen"
 msgstr "Kemmañ ar skramm degemer"
 
-#: changeHomescreenButton
-msgctxt "changeHomescreenButton"
-msgid "Change"
-msgstr "Kemmañ"
+#: get-more-home-screens
+msgid "Get More Home Screens"
+msgstr ""
 
-#: description
-msgctxt "description"
+#: my-home-screens
+msgid "My Home Screens"
+msgstr ""
+
+#. # Personalization :: Home Screens :: Home Screens List :: Home Screen Details
+#: home-screen-description
+#, fuzzy
+msgctxt "home-screen-description"
 msgid "Description"
 msgstr "Deskrivadur"
+
+#: delete-home-screen-button
+msgid "Delete Home Screen"
+msgstr ""
 
 #. # Personalization :: Keyboard
 #: keyboardSettings
@@ -2809,7 +2801,7 @@ msgid "Ring"
 msgstr "Soniri"
 
 #: change
-msgctxt "change"
+#, fuzzy
 msgid "Change"
 msgstr "Kemmañ"
 
@@ -3311,6 +3303,8 @@ msgid "Storage"
 msgstr "Kadaviñ"
 
 #: enableUSBStorage1
+#, fuzzy
+msgctxt "enableUSBStorage1"
 msgid "USB Storage"
 msgstr "Kadaviñ USB"
 
@@ -5024,7 +5018,7 @@ msgstr "{{ title }}"
 
 #. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
 #: is-warning-storage-header
-msgctxt "is-warning-storage-header"
+#, fuzzy
 msgid "USB storage"
 msgstr "Kadaviñ USB"
 
@@ -5386,7 +5380,7 @@ msgstr "Reolerezhioù ho puhez prevez"
 #: enableStorageSection.ariaLabel
 #, fuzzy
 msgctxt "enableStorageSection.ariaLabel"
-msgid "USB storage"
+msgid "USB Storage"
 msgstr "Kadaviñ USB"
 
 #: mediaStorageSection.ariaLabel
@@ -5406,6 +5400,40 @@ msgstr "Kadaviñ an arloadoù"
 msgctxt "batterySection.ariaLabel"
 msgid "Battery"
 msgstr "Batiri"
+
+#~ msgid "Name"
+#~ msgstr "Anv"
+
+#~ msgid "Set Manually"
+#~ msgstr "Arventennañ dre zorn"
+
+#~ msgctxt "homescreen"
+#~ msgid "Homescreen"
+#~ msgstr "Skramm degemer"
+
+#~ msgctxt "homescreen.ariaLabel"
+#~ msgid "Homescreen"
+#~ msgstr "Skramm degemer"
+
+#~ msgctxt "vertical-homescreen-header"
+#~ msgid "Homescreen"
+#~ msgstr "Skramm degemer"
+
+#~ msgctxt "homescreens.ariaLabel"
+#~ msgid "Homescreens"
+#~ msgstr "Skrammoù degemer"
+
+#~ msgid "{{homescreens}}"
+#~ msgstr "{{homescreens}}"
+
+#~ msgctxt "change"
+#~ msgid "Change"
+#~ msgstr "Kemmañ"
+
+#, fuzzy
+#~ msgctxt "enableStorageSection.ariaLabel"
+#~ msgid "USB storage"
+#~ msgstr "Kadaviñ USB"
 
 #~ msgid "Manage Cert."
 #~ msgstr "Ardeiñ test."
