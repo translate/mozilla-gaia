@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firefox\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-18 17:45+0000\n"
+"POT-Creation-Date: 2015-09-25 17:45+0000\n"
 "PO-Revision-Date: 2015-09-23 16:45+0000\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :"
 "(n>6 && n<11) ? 3 : 4;;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1443026729.000000\n"
@@ -1152,9 +1152,10 @@ msgstr "Ceallach agus Sonraí"
 msgid "{{cellularAndData}}"
 msgstr "{{cellularAndData}}"
 
-#: dataNetwork
-msgid "Carrier"
-msgstr "Iompróir"
+#: dataOperator
+msgctxt "dataOperator"
+msgid "Operator"
+msgstr ""
 
 #: dataConnectivity
 msgctxt "dataConnectivity"
@@ -1169,22 +1170,24 @@ msgstr "Ceangal Sonraí"
 msgid "Data Roaming"
 msgstr "Sonraí Fánaíochta"
 
-#: networkOperator
-msgid "Network Operator"
-msgstr "Oibreoir Líonra"
+#: netOperator
+msgctxt "netOperator"
+msgid "Operator"
+msgstr ""
 
-#. # LOCALIZATION NOTE (networkOperator-header): if you leave the original
-#. # en-US value "{{networkOperator}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "networkOperator".
+#. # LOCALIZATION NOTE (netOperator-header): if you leave the original
+#. # en-US value "{{netOperator}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "netOperator".
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
-#: networkOperator-header
-msgid "{{networkOperator}}"
+#: netOperator-header
+#, fuzzy
+msgid "{{netOperator}}"
 msgstr "{{networkOperator}}"
 
-#: availableOperators
-msgid "Network Operators In The Area"
-msgstr "Oibreoirí Líonra sa Cheantar"
+#: availableOp
+msgid "Operators In The Area"
+msgstr ""
 
 #: preferredNetworkTypeAlertTitle
 msgid "Preferred network type"
@@ -1285,8 +1288,9 @@ msgstr "Uathoibríoch"
 msgid "Manual"
 msgstr "De Láimh"
 
-#: operator-turnAutoSelectOff
-msgid "Turn automatic selection off to view available network operators."
+#: operator-turnAutoSelectionOff
+#, fuzzy
+msgid "Turn automatic selection off to view available operators."
 msgstr ""
 "Múch roghnú uathoibríoch chun na hoibreoirí líonra atá ar fáil a fheiceáil."
 
@@ -1520,6 +1524,10 @@ msgstr "IPv4/IPv6"
 #: apn-type
 msgid "APN Type"
 msgstr "Cineál APN"
+
+#: apn-mtu
+msgid "MTU"
+msgstr ""
 
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
@@ -3297,6 +3305,14 @@ msgstr ""
 msgid "Clear"
 msgstr "Glan"
 
+#: privateBrowsingDefault
+msgid "Browse privately by default"
+msgstr ""
+
+#: privateBrowsingDefaultDetails
+msgid "Open new browser windows as private windows"
+msgstr ""
+
 #. # Security :: Privacy Panel
 #: privacy-controls
 msgctxt "privacy-controls"
@@ -4602,6 +4618,22 @@ msgctxt "colorFilter-toggle"
 msgid "{{colorFilter}}"
 msgstr "{{colorFilter}}"
 
+#: accessibility-audio
+msgid "Audio"
+msgstr ""
+
+#: accessibility-audio-monoAudio
+msgid "Mono Audio"
+msgstr ""
+
+#: mono-enabled
+msgid "Mono enabled"
+msgstr ""
+
+#: mono-disabled
+msgid "Mono disabled"
+msgstr ""
+
 #. # Device :: Accessibility :: Screen reader
 #: screenReader-captions
 msgid "Display speech"
@@ -5385,6 +5417,15 @@ msgstr "Stóras Aipeanna"
 msgctxt "batterySection.ariaLabel"
 msgid "Battery"
 msgstr "Cadhnra"
+
+#~ msgid "Carrier"
+#~ msgstr "Iompróir"
+
+#~ msgid "Network Operator"
+#~ msgstr "Oibreoir Líonra"
+
+#~ msgid "Network Operators In The Area"
+#~ msgstr "Oibreoirí Líonra sa Cheantar"
 
 #~ msgid "Name"
 #~ msgstr "Ainm"

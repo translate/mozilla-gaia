@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-18 17:45+0000\n"
+"POT-Creation-Date: 2015-09-25 17:45+0000\n"
 "PO-Revision-Date: 2015-09-08 14:38+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1441723125.000000\n"
@@ -1142,9 +1142,10 @@ msgstr "Uyali tarmoq va ma’lumot"
 msgid "{{cellularAndData}}"
 msgstr "{{cellularAndData}}"
 
-#: dataNetwork
-msgid "Carrier"
-msgstr "Aloqa operatori"
+#: dataOperator
+msgctxt "dataOperator"
+msgid "Operator"
+msgstr ""
 
 #: dataConnectivity
 msgctxt "dataConnectivity"
@@ -1159,22 +1160,24 @@ msgstr "Internetga ulanish"
 msgid "Data Roaming"
 msgstr "Internet rouming"
 
-#: networkOperator
-msgid "Network Operator"
-msgstr "Tarmoq operatori"
+#: netOperator
+msgctxt "netOperator"
+msgid "Operator"
+msgstr ""
 
-#. # LOCALIZATION NOTE (networkOperator-header): if you leave the original
-#. # en-US value "{{networkOperator}}" in the following string, the localization
-#. # will be automatically picked from the existing string with ID "networkOperator".
+#. # LOCALIZATION NOTE (netOperator-header): if you leave the original
+#. # en-US value "{{netOperator}}" in the following string, the localization
+#. # will be automatically picked from the existing string with ID "netOperator".
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
-#: networkOperator-header
-msgid "{{networkOperator}}"
+#: netOperator-header
+#, fuzzy
+msgid "{{netOperator}}"
 msgstr "{{networkOperator}}"
 
-#: availableOperators
-msgid "Network Operators In The Area"
-msgstr "Hududdagi tarmoq operatorlari"
+#: availableOp
+msgid "Operators In The Area"
+msgstr ""
 
 #: preferredNetworkTypeAlertTitle
 msgid "Preferred network type"
@@ -1275,8 +1278,9 @@ msgstr "Avtomatik"
 msgid "Manual"
 msgstr "Qo‘lbola"
 
-#: operator-turnAutoSelectOff
-msgid "Turn automatic selection off to view available network operators."
+#: operator-turnAutoSelectionOff
+#, fuzzy
+msgid "Turn automatic selection off to view available operators."
 msgstr "Mavjud tarmoq operatorlarini ko‘rish uchun avtomatik tanlashni yoqish."
 
 #: operator-info-connecting
@@ -1509,6 +1513,10 @@ msgstr "IPv4/IPv6"
 #: apn-type
 msgid "APN Type"
 msgstr "APN turi"
+
+#: apn-mtu
+msgid "MTU"
+msgstr ""
 
 #: dataConnection-warning-head
 msgid "Turn ON data connection?"
@@ -2424,8 +2432,9 @@ msgid "Get More Home Screens"
 msgstr ""
 
 #: my-home-screens
+#, fuzzy
 msgid "My Home Screens"
-msgstr ""
+msgstr "Uylar ekranlari"
 
 #. # Personalization :: Home Screens :: Home Screens List :: Home Screen Details
 #: home-screen-description
@@ -3282,6 +3291,14 @@ msgstr ""
 #: clear
 msgid "Clear"
 msgstr "Tozalash"
+
+#: privateBrowsingDefault
+msgid "Browse privately by default"
+msgstr ""
+
+#: privateBrowsingDefaultDetails
+msgid "Open new browser windows as private windows"
+msgstr ""
 
 #. # Security :: Privacy Panel
 #: privacy-controls
@@ -4589,6 +4606,22 @@ msgctxt "colorFilter-toggle"
 msgid "{{colorFilter}}"
 msgstr "{{colorFilter}}"
 
+#: accessibility-audio
+msgid "Audio"
+msgstr ""
+
+#: accessibility-audio-monoAudio
+msgid "Mono Audio"
+msgstr ""
+
+#: mono-enabled
+msgid "Mono enabled"
+msgstr ""
+
+#: mono-disabled
+msgid "Mono disabled"
+msgstr ""
+
 #. # Device :: Accessibility :: Screen reader
 #: screenReader-captions
 msgid "Display speech"
@@ -5381,58 +5414,61 @@ msgctxt "batterySection.ariaLabel"
 msgid "Battery"
 msgstr "Batareya"
 
-msgid "Name"
-msgstr "Nomi"
+#~ msgid "Carrier"
+#~ msgstr "Aloqa operatori"
 
-msgid "Set Manually"
-msgstr "Qo‘lbola o‘rnatish"
+#~ msgid "Network Operator"
+#~ msgstr "Tarmoq operatori"
 
-msgctxt "homescreen"
-msgid "Homescreen"
-msgstr "Uy ekrani"
+#~ msgid "Network Operators In The Area"
+#~ msgstr "Hududdagi tarmoq operatorlari"
 
-msgctxt "homescreen.ariaLabel"
-msgid "Homescreen"
-msgstr "Uy ekrani"
+#~ msgid "Name"
+#~ msgstr "Nomi"
 
-msgctxt "vertical-homescreen-header"
-msgid "Homescreen"
-msgstr "Uy ekrani"
+#~ msgid "Set Manually"
+#~ msgstr "Qo‘lbola o‘rnatish"
 
-msgid "{{homescreens}}"
-msgstr "{{homescreens}}"
+#~ msgctxt "homescreen"
+#~ msgid "Homescreen"
+#~ msgstr "Uy ekrani"
 
-msgctxt "change"
-msgid "Change"
-msgstr "O‘zgartirish"
+#~ msgctxt "homescreen.ariaLabel"
+#~ msgid "Homescreen"
+#~ msgstr "Uy ekrani"
 
-msgctxt "enableStorageSection.ariaLabel"
-msgid "USB storage"
-msgstr "USB xotira"
+#~ msgctxt "vertical-homescreen-header"
+#~ msgid "Homescreen"
+#~ msgstr "Uy ekrani"
 
-#: changeHomescreen
-msgid "Change homescreen"
-msgstr "Uy ekranini almashtirish"
+#~ msgid "{{homescreens}}"
+#~ msgstr "{{homescreens}}"
 
-#: changeHomescreenButton
-msgctxt "changeHomescreenButton"
-msgid "Change"
-msgstr "O‘zgartirish"
+#~ msgctxt "change"
+#~ msgid "Change"
+#~ msgstr "O‘zgartirish"
 
-#: description
-msgctxt "description"
-msgid "Description"
-msgstr "Ta’rifi"
+#~ msgctxt "enableStorageSection.ariaLabel"
+#~ msgid "USB storage"
+#~ msgstr "USB xotira"
 
-#: enableUSBStorage1
-msgid "USB Storage"
-msgstr "USB xotira"
+#~ msgid "Change homescreen"
+#~ msgstr "Uy ekranini almashtirish"
 
-#. # Incompatible Settings :: USB Storage - USB Tethering - WiFi Tethering
-#: is-warning-storage-header
-msgctxt "is-warning-storage-header"
-msgid "USB storage"
-msgstr "USB xotira"
+#~ msgctxt "changeHomescreenButton"
+#~ msgid "Change"
+#~ msgstr "O‘zgartirish"
+
+#~ msgctxt "description"
+#~ msgid "Description"
+#~ msgstr "Ta’rifi"
+
+#~ msgid "USB Storage"
+#~ msgstr "USB xotira"
+
+#~ msgctxt "is-warning-storage-header"
+#~ msgid "USB storage"
+#~ msgstr "USB xotira"
 
 #, fuzzy
 #~ msgctxt "homescreens.ariaLabel"
