@@ -1,9 +1,9 @@
-#. extracted from build/locales/en-US/apps/email/email.properties, build/locales/hu/apps/email/email.properties
+#. extracted from ./apps/email/email.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-28 16:07+0000\n"
+"POT-Creation-Date: 2015-09-07 14:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -211,7 +211,8 @@ msgstr ""
 #. # server's software.
 #: setup-error-server-problem
 msgid "There is a problem with the server \"{{server}}\". Try again later."
-msgstr "Probléma van ezzel a kiszolgálóval: „{{server}}”. Próbálja újra később."
+msgstr ""
+"Probléma van ezzel a kiszolgálóval: „{{server}}”. Próbálja újra később."
 
 #. # The error for when we are trying to figure out the right server settings for
 #. # an account based on the e-mail address the user typed in during configuration,
@@ -609,7 +610,22 @@ msgctxt "settings-account-delete-confirm"
 msgid "Delete"
 msgstr "Törlés"
 
-#. # When dealing with an account that involves multiple types of# connections, such as IMAP and POP3 which both use SMTP for sending,# we augment the account name in the string with a label to help# clarify to the user which account type they are dealing with. For# most users, the same password will be used for the IMAP server and# the SMTP server, and they will only ever see the IMAP or POP3 label.# But some users with unusual server configurations will also see the# SMTP variant. These unusual users will probably have received# specific instructions from their ISP that involve use of the# protocol names. In general we expect that localizers will want to# leave the protocol names as-is since they are technical protocol# names, but it may make sense to place the name of the protocol# before the account type for certain languages.# Note that the account name is displayed as a string that is# displayed in its entirety, so you don't need to worry about clipping# or ellipses.
+#. # When dealing with an account that involves multiple types of
+#. # connections, such as IMAP and POP3 which both use SMTP for sending,
+#. # we augment the account name in the string with a label to help
+#. # clarify to the user which account type they are dealing with. For
+#. # most users, the same password will be used for the IMAP server and
+#. # the SMTP server, and they will only ever see the IMAP or POP3 label.
+#. # But some users with unusual server configurations will also see the
+#. # SMTP variant. These unusual users will probably have received
+#. # specific instructions from their ISP that involve use of the
+#. # protocol names. In general we expect that localizers will want to
+#. # leave the protocol names as-is since they are technical protocol
+#. # names, but it may make sense to place the name of the protocol
+#. # before the account type for certain languages.
+#. # Note that the account name is displayed as a string that is
+#. # displayed in its entirety, so you don't need to worry about clipping
+#. # or ellipses.
 #: settings-account-clarify-imap
 msgid "{{account-name}} (IMAP)"
 msgstr "{{account-name}} (IMAP)"
@@ -1972,9 +1988,10 @@ msgstr "{{ n }} új üzenet"
 #. # LOCALIZATION NOTE(notification-no-subject): is used for notifications
 #. # if the new email doesn't have a subject
 #: notification-no-subject
+#, fuzzy
 msgctxt "notification-no-subject"
 msgid "(no subject)"
-msgstr ""
+msgstr "(nincs tárgy)"
 
 #. # new-emails-notify-one-account is used when a system notification is generated during
 #. # a periodic background sync with the server. Since this goes to the system's
