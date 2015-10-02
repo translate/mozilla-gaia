@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-21 07:58+0100\n"
+"POT-Creation-Date: 2015-10-02 16:45+0000\n"
 "PO-Revision-Date: 2015-09-25 19:00+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1443207654.000000\n"
@@ -33,17 +33,9 @@ msgstr "Dừng lại"
 msgid "Cancel"
 msgstr "Thôi"
 
-#: hour
-msgid "Hour"
-msgstr "Giờ"
-
 #: hours
 msgid "Hours"
 msgstr "Giờ"
-
-#: minute
-msgid "Minute"
-msgstr "Phút"
 
 #: minutes
 msgid "Minutes"
@@ -188,302 +180,365 @@ msgstr "Tắt"
 msgid "+1 Min"
 msgstr "+1 phút"
 
-# Thứ hai, 23 Th.4
-#. # see http://www.cplusplus.com/reference/clibrary/ctime/strftime/
-#: dateFormat
-msgid "%A, %B %e"
-msgstr "%A, %e %B"
-
-#: countdown-lessThanAnHour
-msgid "The alarm is set for <strong>{{minutes}}</strong> from now."
+#: countdown_lessThanAnHour
+#, fuzzy
+msgid "The alarm is set for <strong>{{alarmMinutes}}</strong> from now."
 msgstr "Báo thức sau <strong>{{minutes}}</strong> kể từ bây giờ."
 
-#: countdown-moreThanAnHour
-msgid "The alarm is set for {{hours}} {{minutes}} from now."
+#: countdown_moreThanAnHour
+#, fuzzy
+msgid "The alarm is set for {{alarmHours}} and {{alarmMinutes}} from now."
 msgstr "Báo thức sau {{hours}} {{minutes}} kể từ bây giờ."
 
-#: countdown-moreThanADay
-msgid "The alarm is set for {{days}} {{hours}} from now."
-msgstr "Báo thức sau {{days}} {{hours}} kể từ bây giờ."
+#: countdown_moreThanADay
+msgid "The alarm is set for {{alarmDays}} and {{alarmHours}} from now."
+msgstr ""
 
-#: nMinutes
-msgctxt "nMinutes"
-msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
+#: alarmMinutes
+msgid "{[ plural(minutes) ]}"
+msgstr ""
 
-#: nMinutes[zero]
+#: alarmMinutes[zero]
 msgid "less than a minute"
 msgstr "Ít hơn một phút"
 
-#: nMinutes[one]
+#: alarmMinutes[one]
 #, fuzzy
-msgctxt "nMinutes[one]"
+msgctxt "alarmMinutes[one]"
 msgid "one minute"
 msgstr "một phút"
 
-#: nMinutes[two]
-msgctxt "nMinutes[two]"
-msgid "{{n}} minutes"
-msgstr "{{n}} phút"
+#: alarmMinutes[two]
+msgctxt "alarmMinutes[two]"
+msgid "{{minutes}} minutes"
+msgstr ""
 
-#: nMinutes[few]
-msgctxt "nMinutes[few]"
-msgid "{{n}} minutes"
-msgstr "{{n}} phút"
+#: alarmMinutes[few]
+msgctxt "alarmMinutes[few]"
+msgid "{{minutes}} minutes"
+msgstr ""
 
-#: nMinutes[many]
-msgctxt "nMinutes[many]"
-msgid "{{n}} minutes"
-msgstr "{{n}} phút"
+#: alarmMinutes[many]
+msgctxt "alarmMinutes[many]"
+msgid "{{minutes}} minutes"
+msgstr ""
 
-#: nMinutes[other]
-msgctxt "nMinutes[other]"
-msgid "{{n}} minutes"
-msgstr "{{n}} phút"
+#: alarmMinutes[other]
+msgctxt "alarmMinutes[other]"
+msgid "{{minutes}} minutes"
+msgstr ""
 
-#: nHours
-msgctxt "nHours"
-msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
+#: alarmHours
+msgid "{[ plural(hours) ]}"
+msgstr ""
 
-#: nHours[zero]
-msgctxt "nHours[zero]"
-msgid ""
-msgstr "0"
-
-#: nHours[one]
-msgid "<strong>{{n}} hour</strong>"
-msgstr "<strong>{{n}} giờ</strong>"
-
-#: nHours[two]
-msgctxt "nHours[two]"
-msgid "<strong>{{n}} hours</strong>"
-msgstr "<strong>{{n}} giờ</strong>"
-
-#: nHours[few]
-msgctxt "nHours[few]"
-msgid "<strong>{{n}} hours</strong>"
-msgstr "<strong>{{n}} giờ</strong>"
-
-#: nHours[many]
-msgctxt "nHours[many]"
-msgid "<strong>{{n}} hours</strong>"
-msgstr "<strong>{{n}} giờ</strong>"
-
-#: nHours[other]
-msgctxt "nHours[other]"
-msgid "<strong>{{n}} hours</strong>"
-msgstr "<strong>{{n}} giờ</strong>"
-
-#: nAndRemainHours
-msgctxt "nAndRemainHours"
-msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
-
-#: nAndRemainHours[zero]
-msgctxt "nAndRemainHours[zero]"
-msgid ""
-msgstr "0"
-
-#: nAndRemainHours[one]
-msgid "and <strong>{{n}} hour</strong>"
-msgstr "và <strong>{{n}} giờ</strong>"
-
-#: nAndRemainHours[two]
-msgctxt "nAndRemainHours[two]"
-msgid "and <strong>{{n}} hours</strong>"
-msgstr "và <strong>{{n}} giờ</strong>"
-
-#: nAndRemainHours[few]
-msgctxt "nAndRemainHours[few]"
-msgid "and <strong>{{n}} hours</strong>"
-msgstr "và <strong>{{n}} giờ</strong>"
-
-#: nAndRemainHours[many]
-msgctxt "nAndRemainHours[many]"
-msgid "and <strong>{{n}} hours</strong>"
-msgstr "và <strong>{{n}} giờ</strong>"
-
-#: nAndRemainHours[other]
-msgctxt "nAndRemainHours[other]"
-msgid "and <strong>{{n}} hours</strong>"
-msgstr "và <strong>{{n}} giờ</strong>"
-
-#: nRemainDays
-msgctxt "nRemainDays"
-msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
-
-#: nRemainDays[zero]
-msgctxt "nRemainDays[zero]"
-msgid ""
-msgstr "0"
-
-#: nRemainDays[one]
-msgid "<strong>{{n}} day</strong>"
-msgstr "<strong>{{n}} ngày</strong>"
-
-#: nRemainDays[two]
-msgctxt "nRemainDays[two]"
-msgid "<strong>{{n}} days</strong>"
-msgstr "<strong>{{n}} ngày</strong>"
-
-#: nRemainDays[few]
-msgctxt "nRemainDays[few]"
-msgid "<strong>{{n}} days</strong>"
-msgstr "<strong>{{n}} ngày</strong>"
-
-#: nRemainDays[many]
-msgctxt "nRemainDays[many]"
-msgid "<strong>{{n}} days</strong>"
-msgstr "<strong>{{n}} ngày</strong>"
-
-#: nRemainDays[other]
-msgctxt "nRemainDays[other]"
-msgid "<strong>{{n}} days</strong>"
-msgstr "<strong>{{n}} ngày</strong>"
-
-#: nRemainMinutes
-msgctxt "nRemainMinutes"
-msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
-
-#: nRemainMinutes[zero]
-msgctxt "nRemainMinutes[zero]"
-msgid ""
-msgstr "0"
-
-#: nRemainMinutes[one]
-msgid "and <strong>{{n}} minute</strong>"
-msgstr "và <strong>{{n}} phút</strong>"
-
-#: nRemainMinutes[two]
-msgctxt "nRemainMinutes[two]"
-msgid "and <strong>{{n}} minutes</strong>"
-msgstr "và <strong>{{n}} phút</strong>"
-
-#: nRemainMinutes[few]
-msgctxt "nRemainMinutes[few]"
-msgid "and <strong>{{n}} minutes</strong>"
-msgstr "và <strong>{{n}} phút</strong>"
-
-#: nRemainMinutes[many]
-msgctxt "nRemainMinutes[many]"
-msgid "and <strong>{{n}} minutes</strong>"
-msgstr "và <strong>{{n}} phút</strong>"
-
-#: nRemainMinutes[other]
-msgctxt "nRemainMinutes[other]"
-msgid "and <strong>{{n}} minutes</strong>"
-msgstr "và <strong>{{n}} phút</strong>"
-
-#: nSpinnerSeconds
+#: alarmHours[zero]
 #, fuzzy
-msgctxt "nSpinnerSeconds"
-msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
+msgctxt "alarmHours[zero]"
+msgid "<strong>{{hours}} hours</strong>"
+msgstr "<strong>{{n}} giờ</strong>"
 
-#: nSpinnerSeconds[zero]
-msgid "zero seconds"
-msgstr ""
-
-#: nSpinnerSeconds[one]
-msgid "one second"
-msgstr ""
-
-#: nSpinnerSeconds[two]
-msgctxt "nSpinnerSeconds[two]"
-msgid "{{n}} seconds"
-msgstr ""
-
-#: nSpinnerSeconds[few]
-msgctxt "nSpinnerSeconds[few]"
-msgid "{{n}} seconds"
-msgstr ""
-
-#: nSpinnerSeconds[many]
-msgctxt "nSpinnerSeconds[many]"
-msgid "{{n}} seconds"
-msgstr ""
-
-#: nSpinnerSeconds[other]
-msgctxt "nSpinnerSeconds[other]"
-msgid "{{n}} seconds"
-msgstr ""
-
-#: nSpinnerMinutes
+#: alarmHours[one]
 #, fuzzy
-msgctxt "nSpinnerMinutes"
+msgid "<strong>{{hours}} hour</strong>"
+msgstr "<strong>{{n}} giờ</strong>"
+
+#: alarmHours[two]
+#, fuzzy
+msgctxt "alarmHours[two]"
+msgid "<strong>{{hours}} hours</strong>"
+msgstr "<strong>{{n}} giờ</strong>"
+
+#: alarmHours[few]
+#, fuzzy
+msgctxt "alarmHours[few]"
+msgid "<strong>{{hours}} hours</strong>"
+msgstr "<strong>{{n}} giờ</strong>"
+
+#: alarmHours[many]
+#, fuzzy
+msgctxt "alarmHours[many]"
+msgid "<strong>{{hours}} hours</strong>"
+msgstr "<strong>{{n}} giờ</strong>"
+
+#: alarmHours[other]
+#, fuzzy
+msgctxt "alarmHours[other]"
+msgid "<strong>{{hours}} hours</strong>"
+msgstr "<strong>{{n}} giờ</strong>"
+
+#: alarmDays
+#, fuzzy
+msgid "{[ plural(days) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: alarmDays[zero]
+#, fuzzy
+msgctxt "alarmDays[zero]"
+msgid "<strong>{{days}} days</strong>"
+msgstr "<strong>{{n}} ngày</strong>"
+
+#: alarmDays[one]
+#, fuzzy
+msgid "<strong>{{days}} day</strong>"
+msgstr "<strong>{{n}} ngày</strong>"
+
+#: alarmDays[two]
+#, fuzzy
+msgctxt "alarmDays[two]"
+msgid "<strong>{{days}} days</strong>"
+msgstr "<strong>{{n}} ngày</strong>"
+
+#: alarmDays[few]
+#, fuzzy
+msgctxt "alarmDays[few]"
+msgid "<strong>{{days}} days</strong>"
+msgstr "<strong>{{n}} ngày</strong>"
+
+#: alarmDays[many]
+#, fuzzy
+msgctxt "alarmDays[many]"
+msgid "<strong>{{days}} days</strong>"
+msgstr "<strong>{{n}} ngày</strong>"
+
+#: alarmDays[other]
+#, fuzzy
+msgctxt "alarmDays[other]"
+msgid "<strong>{{days}} days</strong>"
+msgstr "<strong>{{n}} ngày</strong>"
+
+#: nSpinnerMinutes.ariaValuetext
+#, fuzzy
+msgctxt "nSpinnerMinutes.ariaValuetext"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: nSpinnerMinutes[zero]
+#: nSpinnerMinutes.ariaValuetext[zero]
 msgid "zero minutes"
 msgstr ""
 
-#: nSpinnerMinutes[one]
+#: nSpinnerMinutes.ariaValuetext[one]
 #, fuzzy
-msgctxt "nSpinnerMinutes[one]"
+msgctxt "nSpinnerMinutes.ariaValuetext[one]"
 msgid "one minute"
 msgstr "một phút"
 
-#: nSpinnerMinutes[two]
+#: nSpinnerMinutes.ariaValuetext[two]
 #, fuzzy
-msgctxt "nSpinnerMinutes[two]"
+msgctxt "nSpinnerMinutes.ariaValuetext[two]"
 msgid "{{n}} minutes"
 msgstr "{{n}} phút"
 
-#: nSpinnerMinutes[few]
+#: nSpinnerMinutes.ariaValuetext[few]
 #, fuzzy
-msgctxt "nSpinnerMinutes[few]"
+msgctxt "nSpinnerMinutes.ariaValuetext[few]"
 msgid "{{n}} minutes"
 msgstr "{{n}} phút"
 
-#: nSpinnerMinutes[many]
+#: nSpinnerMinutes.ariaValuetext[many]
 #, fuzzy
-msgctxt "nSpinnerMinutes[many]"
+msgctxt "nSpinnerMinutes.ariaValuetext[many]"
 msgid "{{n}} minutes"
 msgstr "{{n}} phút"
 
-#: nSpinnerMinutes[other]
+#: nSpinnerMinutes.ariaValuetext[other]
 #, fuzzy
-msgctxt "nSpinnerMinutes[other]"
+msgctxt "nSpinnerMinutes.ariaValuetext[other]"
 msgid "{{n}} minutes"
 msgstr "{{n}} phút"
 
-#: nSpinnerHours
+#: nSpinnerHours.ariaValuetext
 #, fuzzy
-msgctxt "nSpinnerHours"
+msgctxt "nSpinnerHours.ariaValuetext"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: nSpinnerHours[zero]
+#: nSpinnerHours.ariaValuetext[zero]
 msgid "zero hours"
 msgstr ""
 
-#: nSpinnerHours[one]
+#: nSpinnerHours.ariaValuetext[one]
 msgid "{{n}} hour"
 msgstr ""
 
-#: nSpinnerHours[two]
-msgctxt "nSpinnerHours[two]"
+#: nSpinnerHours.ariaValuetext[two]
+msgctxt "nSpinnerHours.ariaValuetext[two]"
 msgid "{{n}} hours"
 msgstr ""
 
-#: nSpinnerHours[few]
-msgctxt "nSpinnerHours[few]"
+#: nSpinnerHours.ariaValuetext[few]
+msgctxt "nSpinnerHours.ariaValuetext[few]"
 msgid "{{n}} hours"
 msgstr ""
 
-#: nSpinnerHours[many]
-msgctxt "nSpinnerHours[many]"
+#: nSpinnerHours.ariaValuetext[many]
+msgctxt "nSpinnerHours.ariaValuetext[many]"
 msgid "{{n}} hours"
 msgstr ""
 
-#: nSpinnerHours[other]
-msgctxt "nSpinnerHours[other]"
+#: nSpinnerHours.ariaValuetext[other]
+msgctxt "nSpinnerHours.ariaValuetext[other]"
 msgid "{{n}} hours"
 msgstr ""
+
+#~ msgid "Hour"
+#~ msgstr "Giờ"
+
+#~ msgid "Minute"
+#~ msgstr "Phút"
+
+# Thứ hai, 23 Th.4
+#~ msgid "%A, %B %e"
+#~ msgstr "%A, %e %B"
+
+#~ msgid "The alarm is set for {{days}} {{hours}} from now."
+#~ msgstr "Báo thức sau {{days}} {{hours}} kể từ bây giờ."
+
+#~ msgctxt "nMinutes[few]"
+#~ msgid "{{n}} minutes"
+#~ msgstr "{{n}} phút"
+
+#~ msgctxt "nMinutes[many]"
+#~ msgid "{{n}} minutes"
+#~ msgstr "{{n}} phút"
+
+#~ msgctxt "nMinutes[other]"
+#~ msgid "{{n}} minutes"
+#~ msgstr "{{n}} phút"
+
+#~ msgctxt "nHours"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "nHours[zero]"
+#~ msgid ""
+#~ msgstr "0"
+
+#~ msgctxt "nHours[few]"
+#~ msgid "<strong>{{n}} hours</strong>"
+#~ msgstr "<strong>{{n}} giờ</strong>"
+
+#~ msgctxt "nHours[many]"
+#~ msgid "<strong>{{n}} hours</strong>"
+#~ msgstr "<strong>{{n}} giờ</strong>"
+
+#~ msgctxt "nHours[other]"
+#~ msgid "<strong>{{n}} hours</strong>"
+#~ msgstr "<strong>{{n}} giờ</strong>"
+
+#~ msgctxt "nAndRemainHours"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "nAndRemainHours[zero]"
+#~ msgid ""
+#~ msgstr "0"
+
+#~ msgid "and <strong>{{n}} hour</strong>"
+#~ msgstr "và <strong>{{n}} giờ</strong>"
+
+#~ msgctxt "nAndRemainHours[two]"
+#~ msgid "and <strong>{{n}} hours</strong>"
+#~ msgstr "và <strong>{{n}} giờ</strong>"
+
+#~ msgctxt "nAndRemainHours[few]"
+#~ msgid "and <strong>{{n}} hours</strong>"
+#~ msgstr "và <strong>{{n}} giờ</strong>"
+
+#~ msgctxt "nAndRemainHours[many]"
+#~ msgid "and <strong>{{n}} hours</strong>"
+#~ msgstr "và <strong>{{n}} giờ</strong>"
+
+#~ msgctxt "nAndRemainHours[other]"
+#~ msgid "and <strong>{{n}} hours</strong>"
+#~ msgstr "và <strong>{{n}} giờ</strong>"
+
+#~ msgctxt "nRemainDays"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "nRemainDays[zero]"
+#~ msgid ""
+#~ msgstr "0"
+
+#~ msgctxt "nRemainDays[few]"
+#~ msgid "<strong>{{n}} days</strong>"
+#~ msgstr "<strong>{{n}} ngày</strong>"
+
+#~ msgctxt "nRemainDays[many]"
+#~ msgid "<strong>{{n}} days</strong>"
+#~ msgstr "<strong>{{n}} ngày</strong>"
+
+#~ msgctxt "nRemainDays[other]"
+#~ msgid "<strong>{{n}} days</strong>"
+#~ msgstr "<strong>{{n}} ngày</strong>"
+
+#~ msgctxt "nRemainMinutes"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#~ msgctxt "nRemainMinutes[zero]"
+#~ msgid ""
+#~ msgstr "0"
+
+#~ msgid "and <strong>{{n}} minute</strong>"
+#~ msgstr "và <strong>{{n}} phút</strong>"
+
+#~ msgctxt "nRemainMinutes[two]"
+#~ msgid "and <strong>{{n}} minutes</strong>"
+#~ msgstr "và <strong>{{n}} phút</strong>"
+
+#~ msgctxt "nRemainMinutes[few]"
+#~ msgid "and <strong>{{n}} minutes</strong>"
+#~ msgstr "và <strong>{{n}} phút</strong>"
+
+#~ msgctxt "nRemainMinutes[many]"
+#~ msgid "and <strong>{{n}} minutes</strong>"
+#~ msgstr "và <strong>{{n}} phút</strong>"
+
+#~ msgctxt "nRemainMinutes[other]"
+#~ msgid "and <strong>{{n}} minutes</strong>"
+#~ msgstr "và <strong>{{n}} phút</strong>"
+
+#, fuzzy
+#~ msgctxt "nSpinnerSeconds"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#, fuzzy
+#~ msgctxt "nSpinnerMinutes"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
+
+#, fuzzy
+#~ msgctxt "nSpinnerMinutes[one]"
+#~ msgid "one minute"
+#~ msgstr "một phút"
+
+#, fuzzy
+#~ msgctxt "nSpinnerMinutes[two]"
+#~ msgid "{{n}} minutes"
+#~ msgstr "{{n}} phút"
+
+#, fuzzy
+#~ msgctxt "nSpinnerMinutes[few]"
+#~ msgid "{{n}} minutes"
+#~ msgstr "{{n}} phút"
+
+#, fuzzy
+#~ msgctxt "nSpinnerMinutes[many]"
+#~ msgid "{{n}} minutes"
+#~ msgstr "{{n}} phút"
+
+#, fuzzy
+#~ msgctxt "nSpinnerMinutes[other]"
+#~ msgid "{{n}} minutes"
+#~ msgstr "{{n}} phút"
+
+#, fuzzy
+#~ msgctxt "nSpinnerHours"
+#~ msgid "{[ plural(n) ]}"
+#~ msgstr "{[ plural(n) ]}"
 
 #~ msgid "Enable"
 #~ msgstr "Bật"
