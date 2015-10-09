@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-05 20:44+0100\n"
-"PO-Revision-Date: 2015-10-07 20:10+0000\n"
-"Last-Translator: system user <>\n"
+"POT-Creation-Date: 2015-04-01 05:45+0000\n"
+"PO-Revision-Date: 2015-10-08 01:52+0000\n"
+"Last-Translator: mg-MG01_Gabriella <zafimamy@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: mg\n"
 "MIME-Version: 1.0\n"
@@ -15,11 +15,11 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1444248612.000000\n"
+"X-POOTLE-MTIME: 1444269121.000000\n"
 
 #. # Headers
 #: messages
-#, fuzzy
+msgctxt "messages"
 msgid "Messages"
 msgstr "Hafatra"
 
@@ -27,41 +27,9 @@ msgstr "Hafatra"
 msgid "Delete messages"
 msgstr "Hamafa hafatra"
 
-#. # Contact title
-#: thread-header-text
-#, fuzzy
-msgctxt "thread-header-text"
-msgid "{[ plural(n) ]}"
-msgstr "{[ plural(n) ]}"
-
-#: thread-header-text[zero]
-msgid "{{name}}"
-msgstr ""
-
-#: thread-header-text[one]
-msgctxt "thread-header-text[one]"
-msgid "{{name}} (+{{n}})"
-msgstr ""
-
-#: thread-header-text[two]
-msgctxt "thread-header-text[two]"
-msgid "{{name}} (+{{n}})"
-msgstr ""
-
-#: thread-header-text[few]
-msgctxt "thread-header-text[few]"
-msgid "{{name}} (+{{n}})"
-msgstr ""
-
-#: thread-header-text[many]
-msgctxt "thread-header-text[many]"
-msgid "{{name}} (+{{n}})"
-msgstr ""
-
-#: thread-header-text[other]
-msgctxt "thread-header-text[other]"
-msgid "{{name}} (+{{n}})"
-msgstr ""
+#: selectThreads-title
+msgid "Select"
+msgstr "Hifantina"
 
 #. # Edit Mode
 #: edit
@@ -74,7 +42,7 @@ msgid "Back"
 msgstr "Hiverina"
 
 #: cancel
-#, fuzzy
+msgctxt "cancel"
 msgid "Cancel"
 msgstr "Foanana"
 
@@ -102,52 +70,84 @@ msgstr "Fantenana daholo"
 msgid "Deselect all"
 msgstr "Tsy fantenana daholo"
 
-#: selected
-#, fuzzy
-msgctxt "selected"
+#: selected-threads
+msgctxt "selected-threads"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: selected[zero]
-#, fuzzy
+#: selected-threads[zero]
+msgctxt "selected-threads[zero]"
 msgid "none selected"
 msgstr "tsy misy voafantina"
 
-#: selected[one]
-#, fuzzy
-msgctxt "selected[one]"
+#: selected-threads[one]
+msgctxt "selected-threads[one]"
 msgid "{{n}} selected"
 msgstr "{{n}} voafantina"
 
-#: selected[two]
-#, fuzzy
-msgctxt "selected[two]"
+#: selected-threads[two]
+msgctxt "selected-threads[two]"
 msgid "{{n}} selected"
 msgstr "{{n}} voafantina"
 
-#: selected[few]
-#, fuzzy
-msgctxt "selected[few]"
+#: selected-threads[few]
+msgctxt "selected-threads[few]"
 msgid "{{n}} selected"
 msgstr "{{n}} voafantina"
 
-#: selected[many]
-#, fuzzy
-msgctxt "selected[many]"
+#: selected-threads[many]
+msgctxt "selected-threads[many]"
 msgid "{{n}} selected"
 msgstr "{{n}} voafantina"
 
-#: selected[other]
-#, fuzzy
-msgctxt "selected[other]"
+#: selected-threads[other]
+msgctxt "selected-threads[other]"
+msgid "{{n}} selected"
+msgstr "{{n}} voafantina"
+
+#: selected-messages
+msgctxt "selected-messages"
+msgid "{[ plural(n) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: selected-messages[zero]
+msgctxt "selected-messages[zero]"
+msgid "none selected"
+msgstr "tsy misy voafantina"
+
+#: selected-messages[one]
+msgctxt "selected-messages[one]"
+msgid "{{n}} selected"
+msgstr "{{n}} voafantina"
+
+#: selected-messages[two]
+msgctxt "selected-messages[two]"
+msgid "{{n}} selected"
+msgstr "{{n}} voafantina"
+
+#: selected-messages[few]
+msgctxt "selected-messages[few]"
+msgid "{{n}} selected"
+msgstr "{{n}} voafantina"
+
+#: selected-messages[many]
+msgctxt "selected-messages[many]"
+msgid "{{n}} selected"
+msgstr "{{n}} voafantina"
+
+#: selected-messages[other]
+msgctxt "selected-messages[other]"
 msgid "{{n}} selected"
 msgstr "{{n}} voafantina"
 
 #. # Options menu
-#: deleteMessages-label
-#, fuzzy
-msgid "Delete Messages"
-msgstr "Hamafa hafatra"
+#: selectThreads-label
+msgid "Select Threads"
+msgstr "Hifantina Tandahatra"
+
+#: selectMessages-label
+msgid "Select Messages"
+msgstr "Hifantina Hafatra"
 
 #: settings
 msgid "Settings"
@@ -165,10 +165,6 @@ msgstr "Hanala antony"
 #: to
 msgid "To:"
 msgstr "Ho an'i:"
-
-#: send
-msgid "Send"
-msgstr "Handefa"
 
 #: new
 msgid "New"
@@ -198,17 +194,22 @@ msgstr "Mamadika ho hafatra soratra."
 
 #: messages-max-length-text
 msgid "You’ve reached the maximum length."
-msgstr "Tonga amin'ny fetra farafahalava ianao."
+msgstr "Tonga @ fetra farafahalava ianao."
 
 #: messages-max-subject-length-text
 msgid "Maximum length of subject reached."
-msgstr "Tonga amin'ny fetra farafahalava."
+msgstr "Tonga @ fetra farafahalava."
 
-#: message-exceeded-max-length
+#. # LOCALIZATION NOTE(multimedia-message-exceeded-max-length): shown when size
+#. # of single multimedia message exceeds {{ mmsSize }}. The parameter {{ mmsSize }}
+#. # contains the maximum size for a MMS with the current carrier.
+#: multimedia-message-exceeded-max-length
 msgid ""
-"You’ve exceeded the maximum size. Remove attachments or shorten the message "
-"to send it."
+"You’ve exceeded the {{mmsSize}} KB size limit of a single multimedia "
+"message. Remove attachments or shorten the message to send it."
 msgstr ""
+"Nihoaranao ny habe {{mmsSize}} KB fetran'ny hafatra haino&jery tokana. Esory "
+"ireo rakipaingotra na afohezo ny hafatra raha handefa azy."
 
 #: newMessage
 msgid "New message"
@@ -217,6 +218,12 @@ msgstr "Hafatra vaovao"
 #: sendMessage
 msgid "Send message"
 msgstr "Handefa hafatra"
+
+#. # LOCALIZATION NOTE(sendMMSToEmail): shown when clicking on an e-mail inside
+#. # the body of a message to provide an option to send a multimedia message.
+#: sendMMSToEmail
+msgid "Send multimedia message"
+msgstr "Handefa hafatra haino&jery"
 
 #: no-recipient
 msgid "(No recipient)"
@@ -251,7 +258,11 @@ msgctxt "recipient[other]"
 msgid "{{n}} recipients"
 msgstr "Andefasana {{n}}"
 
-#: attachmentSize
+#: attachmentSizeB
+msgid "{{n}} B"
+msgstr "{{n}} B"
+
+#: attachmentSizeKB
 msgid "{{n}} KB"
 msgstr "{{n}} KB"
 
@@ -313,79 +324,77 @@ msgstr "Hafatra Maro haino&jery (MMS)"
 
 #: sms-report-description
 msgid "Your Text Message (SMS), was sent on {{datetime}}"
-msgstr "Ny Hafatra Soratrao (SMS), dia lasa tamin'ny {{datetime}}"
+msgstr "Ny Hafatra Soratrao (SMS), dia lasa t@ {{datetime}}"
 
 #: mms-report-description
 msgid ""
 "Your Multimedia Message (MMS), subject {{subject}}, was sent on {{datetime}}"
 msgstr ""
-"Ny Hafatra Marohaino&jerinao (MMS), antony {{subject}}, dia lasa tamin'ny "
+"Ny Hafatra Marohaino&jerinao (MMS), antony {{subject}}, dia lasa t@ "
 "{{datetime}}"
 
 #: mms-no-subject-report-description
 msgid "Your Multimedia Message (MMS), was sent on {{datetime}}"
-msgstr "Ny Hafatra Marohaino&jerinao (MMS), dia lasa tamin'ny {{datetime}}"
+msgstr "Ny Hafatra Marohaino&jerinao (MMS), dia lasa t@ {{datetime}}"
 
-#: message-status
-msgid "Status:"
-msgstr ""
+#: message-subject
+msgid "Subject:"
+msgstr "Antony:"
 
-#: message-status-sent
-msgid "sent"
-msgstr ""
+#: report-status-error
+msgid "Message could not be sent"
+msgstr "Tsy lasa ilay hafatra"
 
-#: message-status-received
-#, fuzzy
-msgid "received"
-msgstr "Voaray:"
-
-#: message-status-sending
-#, fuzzy
-msgid "sending"
-msgstr "Mandefa…"
-
-#: message-status-error
-#, fuzzy
-msgid "error"
-msgstr "Tsy fetezana"
-
-#: message-status-not-downloaded
+#: report-status-not-downloaded
 msgid "not downloaded"
 msgstr "tsy tafidina"
 
-#: message-delivered
+#: report-status-delivered
 msgid "Delivered:"
 msgstr "Tafita:"
 
-#: message-read-title
+#: report-status-read
 msgid "Read:"
 msgstr "Voavaky:"
 
-#: message-requested
-msgid "Requested"
-msgstr ""
+#: report-status-pending
+msgid "Report requested"
+msgstr "Nangatahina ny tatitra"
+
+#. # LOCALIZATION NOTE(report-status-rejected): used to describe the outgoing mms
+#. # could not be downloaded by receiver(might be an invalid number or the number
+#. # is not allowed to download mms)
+#: report-status-rejected
+msgid "Message rejected"
+msgstr "Nolavina ny hafatra"
 
 #: message-size-was
 msgid "Message size:"
 msgstr "Haben'ny hafatra:"
 
-#: report-dateTimeFormat
-#, fuzzy
-msgid "%e %B %Y, {{shortTimeFormat}}"
+#: report-dateTimeFormat12
+msgid "%e %B %Y, {{shortTimeFormat12}}"
 msgstr "%e %B %Y, {{shortTimeFormat12}}"
 
-#: report-recipients
-msgid "Recipients:"
-msgstr ""
+#: report-dateTimeFormat24
+msgid "%e %B %Y, {{shortTimeFormat24}}"
+msgstr "%e %B %Y, {{shortTimeFormat24}}"
 
-#: report-from
-#, fuzzy
-msgid "From:"
+#: report-to-title
+msgid "To"
+msgstr "Ho an'i"
+
+#: report-from-title
+msgid "From"
 msgstr "Avy amin'i"
 
 #: message-sent
 msgid "Sent:"
 msgstr "Nalefa:"
+
+#: message-sending
+msgid "{{message-delivery-status-sending}}"
+msgstr "{{message-delivery-status-sending}}"
 
 #: message-received
 msgid "Received:"
@@ -393,29 +402,44 @@ msgstr "Voaray:"
 
 #: message-via
 msgid "Via:"
-msgstr "Amin'ny alàlan'ny:"
+msgstr "@ alàlan'ny:"
+
+#: message-resend
+msgid "Resend"
+msgstr "Halefa indray"
 
 #. # Search functionality
 #: search
 msgid "Search"
 msgstr "Hikaroka"
 
-#: unknown-contact
-msgid "Unknown"
-msgstr ""
+#: unknown-contact-title
+msgid "Unknown Contact"
+msgstr "Kaontakita Tsy fantatra"
 
-#. # LOCALIZATION NOTE(thread-separator): used to separate type/carrier from
+#. # LOCALIZATION NOTE(phone-type-separator): used to separate phone type from
 #. # the number itself. It should be consistent with the characters used in
-#. # "thread- header", \u20 is a blank space (\u20|\u20 is equivalent to " | ").
-#: thread-separator
-msgid " | "
-msgstr ""
+#. # "thread- header", \u20 is a blank space (,\u20 is equivalent to ", "). It can
+#. # be used together with "phone-carrier-separator" if carrier is available.
+#. # Resulting example for en-US: "Mobile, +123456789" or if carrier is available
+#. # "Mobile, +123456789 Carrier".
+#: phone-type-separator
+msgctxt "phone-type-separator"
+msgid ", "
+msgstr ", "
 
-#. # LOCALIZATION NOTE(carrier-separator): used to separate carrier's name from
-#. # the number itself. \u20 is a blank space. Resulting example for en-US:
-#. # "Verizon, +123456789".
-#: carrier-separator
-#, fuzzy
+#. # LOCALIZATION NOTE(phone-carrier-separator): used to separate carrier's name
+#. # from the number itself. \u20 is a blank space.  Resulting example for en-US:
+#. # "+123456789 Verizon".
+#: phone-carrier-separator
+msgid " "
+msgstr " "
+
+#. # LOCALIZATION NOTE(thread-participant-separator): used to separate list of
+#. # contact names and phone numbers of any group message thread. Example for
+#. # en-US: "Bob, +123456789, Alice".
+#: thread-participant-separator
+msgctxt "thread-participant-separator"
 msgid ", "
 msgstr ", "
 
@@ -448,6 +472,10 @@ msgstr "Tsy lasa ilay hafatra. Hanandrana indray?"
 #: resend-message
 msgid "Resend this message"
 msgstr "Halefa indray ity hafatra ity"
+
+#: deleteMessage-confirmation
+msgid "Delete selected message?"
+msgstr "Hamafa ny hafatra voafantina?"
 
 #: deleteMessages-confirmation
 msgid "Delete selected messages?"
@@ -513,126 +541,139 @@ msgctxt "sendFlightModeBtnOk"
 msgid "OK"
 msgstr "OK"
 
-#: fdnBlocked2Title
+#: radioDisabledToDownloadTitle
+msgid "{{sendFlightModeTitle}}"
+msgstr "{{sendFlightModeTitle}}"
+
+#: radioDisabledToDownloadBody
+msgid "Turn off airplane mode to download attachments."
+msgstr "Vonoy ny Maody fiaramanidina raha hampidina rakipaingotra."
+
+#: radioDisabledToDownloadBtnOk
+msgid "{{sendFlightModeBtnOk}}"
+msgstr "{{sendFlightModeBtnOk}}"
+
+#: fdnErrorTitle
 msgid "FDN active"
 msgstr "Amperin'asa ny NFR"
 
-#. #LOCALIZATION NOTE (fdnBlocked2Body): the English translation does not need the
+#. # LOCALIZATION NOTE (sms-counter-notice-label): if typed message exceeds the
+#. # character limit, more segments (messages) will be sent. {{number}} is the
+#. # number of current segment.
+#. # Example: Limit 160 characters, toaster will show up when 161 characters
+#. # typed, and string in toaster will be 'Editing SMS 2' (editing 2nd segment).
+#: sms-counter-notice-label
+msgid "Editing SMS {{number}}"
+msgstr "Manitsy SMS {{number}}"
+
+#. #LOCALIZATION NOTE (fdnErrorBody): the English translation does not need the
 #. # actual number of phone numbers. If your translation needs it, you can still add it
 #. # using the parameter {{ n }}. Also take into account that you could add HTML so be
 #. # careful with the content, it may affect to the whole app.
-#: fdnBlocked2Body.innerHTML
-#, fuzzy
-msgctxt "fdnBlocked2Body.innerHTML"
+#: fdnErrorBody.innerHTML
+msgctxt "fdnErrorBody.innerHTML"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: fdnBlocked2Body.innerHTML[one]
-#, fuzzy
+#: fdnErrorBody.innerHTML[one]
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
-"following recipient are in your FDN list:<br />{{ numbers }}"
+"following recipient are in your FDN list:"
 msgstr ""
 "Novelomina ny NFR (Nomerao Fitendry Raikitra). Ataovy azo antoka fa ao "
 "anatin'ny lisitr'ireo NFR anao ny foiben'ny SMS sy ity andefasana manaraka "
 "ity:"
 
-#: fdnBlocked2Body.innerHTML[two]
-#, fuzzy
-msgctxt "fdnBlocked2Body.innerHTML[two]"
+#: fdnErrorBody.innerHTML[two]
+msgctxt "fdnErrorBody.innerHTML[two]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
-"following recipients are in your FDN list:<br />{{ numbers }}"
+"following recipients are in your FDN list:"
 msgstr ""
 "Novelomina ny NFR (Nomerao Fitendry Raikitra). Ataovy azo antoka fa ao "
 "anatin'ny lisitr'ireo NFR anao ny foiben'ny SMS sy ireto andefasana manaraka "
 "ireto:"
 
-#: fdnBlocked2Body.innerHTML[few]
-#, fuzzy
-msgctxt "fdnBlocked2Body.innerHTML[few]"
+#: fdnErrorBody.innerHTML[few]
+msgctxt "fdnErrorBody.innerHTML[few]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
-"following recipients are in your FDN list:<br />{{ numbers }}"
+"following recipients are in your FDN list:"
 msgstr ""
 "Novelomina ny NFR (Nomerao Fitendry Raikitra). Ataovy azo antoka fa ao "
 "anatin'ny lisitr'ireo NFR anao ny foiben'ny SMS sy ireto andefasana manaraka "
 "ireto:"
 
-#: fdnBlocked2Body.innerHTML[many]
-#, fuzzy
-msgctxt "fdnBlocked2Body.innerHTML[many]"
+#: fdnErrorBody.innerHTML[many]
+msgctxt "fdnErrorBody.innerHTML[many]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
-"following recipients are in your FDN list:<br />{{ numbers }}"
+"following recipients are in your FDN list:"
 msgstr ""
 "Novelomina ny NFR (Nomerao Fitendry Raikitra). Ataovy azo antoka fa ao "
 "anatin'ny lisitr'ireo NFR anao ny foiben'ny SMS sy ireto andefasana manaraka "
 "ireto:"
 
-#: fdnBlocked2Body.innerHTML[other]
-#, fuzzy
-msgctxt "fdnBlocked2Body.innerHTML[other]"
+#: fdnErrorBody.innerHTML[other]
+msgctxt "fdnErrorBody.innerHTML[other]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
-"following recipients are in your FDN list:<br />{{ numbers }}"
+"following recipients are in your FDN list:"
 msgstr ""
 "Novelomina ny NFR (Nomerao Fitendry Raikitra). Ataovy azo antoka fa ao "
 "anatin'ny lisitr'ireo NFR anao ny foiben'ny SMS sy ireto andefasana manaraka "
 "ireto:"
 
-#: fdnBlocked2BtnOk
-#, fuzzy
-msgctxt "fdnBlocked2BtnOk"
+#: fdnErrorBtnOk
+msgctxt "fdnErrorBtnOk"
 msgid "OK"
 msgstr "OK"
 
-#: nonActiveSimTitle
+#: switchSimToRetrieveTitle
 msgid "Switch data connection"
 msgstr "Hanova fifandraisana Data"
 
-#: nonActiveSimBody
-#, fuzzy
+#: switchSimToRetrieveBody
 msgid ""
-"Switch the data connection to {{ nonactive }} to retrieve the MMS. The "
-"current data transfer on {{ active }} will be suspended. Continue anyway?"
+"Switch the data connection to SIM {{ nonActiveSimId }} to retrieve the MMS. "
+"The current data transfer on SIM {{ activeSimId }} will be suspended. "
+"Continue anyway?"
 msgstr ""
 "Hanova ny fifandraisana data ho SIM {{ nonActiveSimId }} hakana ny MMS. "
-"Hahantona ny fampitana data ankehitriny ao amin'ny SIM {{ activeSimId }}. "
-"Hanohy na izany aza?"
+"Hahantona ny fampitana data ankehitriny ao @ SIM {{ activeSimId }}. Hanohy "
+"na izany aza?"
 
-#: nonActiveSimBtnOk
+#: switchSimToRetrieveBtnOk
 msgid "Later"
 msgstr "Rehefa avy eo"
 
-#: nonActiveSimConfirm
-#, fuzzy
-msgctxt "nonActiveSimConfirm"
+#: switchSimToRetrieveConfirm
+msgctxt "switchSimToRetrieveConfirm"
 msgid "OK"
 msgstr "OK"
 
 #. # no need to retranslate title and buttons if not necessary
-#: nonActiveSimToSendTitle
-msgid "{{nonActiveSimTitle}}"
-msgstr ""
+#: switchSimToSendTitle
+msgid "{{switchSimToRetrieveTitle}}"
+msgstr "{{switchSimToRetrieveTitle}}"
 
-#: nonActiveSimToSendBody
-#, fuzzy
+#: switchSimToSendBody
 msgid ""
-"Switch the data connection to {{ nonactive }} to send the MMS. The current "
-"data transfer on {{ active }} will be suspended. Continue anyway?"
+"Switch the data connection to SIM {{ nonActiveSimId }} to send the MMS. The "
+"current data transfer on SIM {{ activeSimId }} will be suspended. Continue "
+"anyway?"
 msgstr ""
 "Hanova ny fifandraisana data ho SIM {{ nonActiveSimId }} handefasana ny MMS. "
-"Hahantona ny fampitana data ankehitriny ao amin'ny SIM {{ activeSimId }}. "
-"Hanohy na izany aza?"
+"Hahantona ny fampitana data ankehitriny ao @ SIM {{ activeSimId }}. Hanohy "
+"na izany aza?"
 
-#: nonActiveSimToSendBtnOk
-msgid "{{nonActiveSimBtnOk}}"
-msgstr ""
+#: switchSimToSendBtnOk
+msgid "{{switchSimToRetrieveBtnOk}}"
+msgstr "{{switchSimToRetrieveBtnOk}}"
 
-#: nonActiveSimToSendConfirm
-msgid "{{nonActiveSimConfirm}}"
-msgstr ""
+#: switchSimToSendConfirm
+msgid "{{switchSimToRetrieveConfirm}}"
+msgstr "{{switchSimToRetrieveConfirm}}"
 
 #: sendNoSignalErrorTitle
 msgid "No network coverage"
@@ -670,6 +711,23 @@ msgstr "Ataovy azo antoka fa mety ilay nomeraon'ny finday andefasanao."
 
 #: sendInvalidAddressErrorBtnOk
 msgctxt "sendInvalidAddressErrorBtnOk"
+msgid "OK"
+msgstr "OK"
+
+#: simNotMatchedErrorTitle
+msgid "Unable to download"
+msgstr "Tsy afaka nampidina"
+
+#: simNotMatchedErrorBody
+msgid ""
+"Please make sure the SIM card inserted is the one used to receive this "
+"message."
+msgstr ""
+"Azafady, ataovy azo antoka fa ilay nampiasaina nandraisana an'ity hafatra "
+"ity io karatra SIM natsofoka io."
+
+#: simNotMatchedErrorBtnOk
+msgctxt "simNotMatchedErrorBtnOk"
 msgid "OK"
 msgstr "OK"
 
@@ -762,6 +820,10 @@ msgstr "Hampita"
 msgid "View message report"
 msgstr "Hijery tatitra momba hafatra"
 
+#: select-text
+msgid "Select text"
+msgstr "Hifantina soratra"
+
 #. # Labels for contact fields
 #: mobile
 msgid "Mobile"
@@ -842,18 +904,21 @@ msgstr "Hafatra MMS"
 msgid "Message is not downloaded yet."
 msgstr "Mbola tsy tafidina ilay hafatra."
 
-#. # LOCALIZATION NOTE (not-downloaded-attachment, expired-attachment):
+#. # LOCALIZATION NOTE (tobedownloaded-attachment, expired-attachment):
 #. # {{date}} is replaced at run-time with a date. The format used to display
 #. # this date is specified in the string with ID 'expiry-date-format'.
-#: not-downloaded-attachment
-msgid "Attachment can be downloaded until {{date}}."
+#: tobedownloaded-attachment
+msgid ""
+"You received a multimedia message. You can use the link below to download "
+"its content until {{date}}."
 msgstr ""
+"Nahazo hafatra haino&jery ianao. Afaka mampiasa ilay rohy eto ambany "
+"hampidinana ny atiny ianao h@ {{date}}."
 
 #: expired-attachment
 msgid "Sorry, the message expired on {{date}} and cannot be downloaded."
 msgstr ""
-"Miala tsiny fa lany daty tamin'ny {{date}} ilay hafatra ka tsy azo "
-"ampidinina."
+"Miala tsiny fa lany daty t@ {{date}} ilay hafatra ka tsy azo ampidinina."
 
 #: download-attachment
 msgid "Download"
@@ -867,44 +932,74 @@ msgstr "Mampidina…"
 msgid "untitled"
 msgstr "tsisy lohateny"
 
-#. # LOCALIZATION NOTE (files-too-large): the English translation does not need the
+#. # LOCALIZATION NOTE (mms-label): This label is used to identify MMS in message
+#. # composer (above the send button) and in the thread list for the thread with
+#. # MMS as the last message.
+#: mms-label
+msgid "MMS"
+msgstr "MMS"
+
+#. # LOCALIZATION NOTE (attached-files-too-large): the English translation does not need the
 #. # actual number of files. If your translation needs it, you can still add it
-#. # using the parameter {{ n }}.
-#: files-too-large
-#, fuzzy
-msgctxt "files-too-large"
+#. # using the parameter {{ n }}. The parameter {{ mmsSize }} contains the maximum size
+#. # for a MMS with the current carrier.
+#: attached-files-too-large
+msgctxt "attached-files-too-large"
 msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
-#: files-too-large[zero]
-msgctxt "files-too-large[zero]"
-msgid "The file you have selected is too large."
+#: attached-files-too-large[zero]
+msgctxt "attached-files-too-large[zero]"
+msgid ""
+"The files you have selected exceed the {{mmsSize}} KB size limit of a single "
+"multimedia message."
 msgstr ""
+"Mihoatra ny habe {{mmsSize}} KB fetran'ny hafatra haino&jery tokana ireo "
+"rakitra nofantenanao."
 
-#: files-too-large[one]
-msgctxt "files-too-large[one]"
-msgid "The file you have selected is too large."
+#: attached-files-too-large[one]
+msgid ""
+"The file you have selected exceeds the {{mmsSize}} KB size limit of a single "
+"multimedia message."
 msgstr ""
+"Mihoatra ny habe {{mmsSize}} KB fetran'ny hafatra haino&jery tokana ilay "
+"rakitra nofantenanao."
 
-#: files-too-large[two]
-msgctxt "files-too-large[two]"
-msgid "The files you have selected are too large."
+#: attached-files-too-large[two]
+msgctxt "attached-files-too-large[two]"
+msgid ""
+"The files you have selected exceed the {{mmsSize}} KB size limit of a single "
+"multimedia message."
 msgstr ""
+"Mihoatra ny habe {{mmsSize}} KB fetran'ny hafatra haino&jery tokana ireo "
+"rakitra nofantenanao."
 
-#: files-too-large[few]
-msgctxt "files-too-large[few]"
-msgid "The files you have selected are too large."
+#: attached-files-too-large[few]
+msgctxt "attached-files-too-large[few]"
+msgid ""
+"The files you have selected exceed the {{mmsSize}} KB size limit of a single "
+"multimedia message."
 msgstr ""
+"Mihoatra ny habe {{mmsSize}} KB fetran'ny hafatra haino&jery tokana ireo "
+"rakitra nofantenanao."
 
-#: files-too-large[many]
-msgctxt "files-too-large[many]"
-msgid "The files you have selected are too large."
+#: attached-files-too-large[many]
+msgctxt "attached-files-too-large[many]"
+msgid ""
+"The files you have selected exceed the {{mmsSize}} KB size limit of a single "
+"multimedia message."
 msgstr ""
+"Mihoatra ny habe {{mmsSize}} KB fetran'ny hafatra haino&jery tokana ireo "
+"rakitra nofantenanao."
 
-#: files-too-large[other]
-msgctxt "files-too-large[other]"
-msgid "The files you have selected are too large."
+#: attached-files-too-large[other]
+msgctxt "attached-files-too-large[other]"
+msgid ""
+"The files you have selected exceed the {{mmsSize}} KB size limit of a single "
+"multimedia message."
 msgstr ""
+"Mihoatra ny habe {{mmsSize}} KB fetran'ny hafatra haino&jery tokana ireo "
+"rakitra nofantenanao."
 
 #: resize-image
 msgid "Resizing the attached image"
@@ -920,14 +1015,33 @@ msgid "Message saved as draft"
 msgstr "Voatahiry ho vakiraoka ilay hafatra"
 
 #. # some DSDS related localizations
-#: sim-name
-#, fuzzy
-msgid "SIM{{id}}"
+#: sim-id-label
+msgid "SIM {{id}}"
 msgstr "SIM {{id}}"
+
+#: sim-detail
+msgid "SIM {{id}}, {{detailString}}"
+msgstr "SIM {{id}}, {{detailString}}"
 
 #: dsds-notification-title-with-sim
 msgid "({{sim}}) {{sender}}"
 msgstr "({{sim}}) {{sender}}"
+
+#. #LOCALIZATION NOTE (send-button): localize only the ariaLabel
+#: send-button.ariaLabel
+msgid "Send"
+msgstr "Handefa"
+
+#. # LOCALIZATION NOTE (send-button-sim-indication): don't localize the
+#. # sim-indication itself as we use it to show the SIM number only. Yet obviously,
+#. # the "ariaLabel" needs to be localized.
+#: send-button-sim-indication
+msgid "{{n}}"
+msgstr "{{n}}"
+
+#: send-button-sim-indication.ariaLabel
+msgid "using SIM {{n}}"
+msgstr "@ alàlan'ny SIM {{n}}"
 
 #. # Date formats specific for SMS app
 #. # LOCALIZATION NOTE (expiry-date-format): this is a date format.
@@ -939,285 +1053,58 @@ msgstr "({{sim}}) {{sender}}"
 msgid "%A, %b %e"
 msgstr "%A, %b %e"
 
-#~ msgid "Select"
-#~ msgstr "Hifantina"
-
-#~ msgctxt "selected-threads[two]"
-#~ msgid "{{n}} selected"
-#~ msgstr "{{n}} voafantina"
-
-#~ msgctxt "selected-threads[few]"
-#~ msgid "{{n}} selected"
-#~ msgstr "{{n}} voafantina"
-
-#~ msgctxt "selected-threads[many]"
-#~ msgid "{{n}} selected"
-#~ msgstr "{{n}} voafantina"
-
-#~ msgctxt "selected-threads[other]"
-#~ msgid "{{n}} selected"
-#~ msgstr "{{n}} voafantina"
-
-#~ msgctxt "selected-messages"
-#~ msgid "{[ plural(n) ]}"
-#~ msgstr "{[ plural(n) ]}"
-
-#~ msgctxt "selected-messages[zero]"
-#~ msgid "none selected"
-#~ msgstr "tsy misy voafantina"
-
-#~ msgctxt "selected-messages[one]"
-#~ msgid "{{n}} selected"
-#~ msgstr "{{n}} voafantina"
-
-#~ msgctxt "selected-messages[two]"
-#~ msgid "{{n}} selected"
-#~ msgstr "{{n}} voafantina"
-
-#~ msgctxt "selected-messages[few]"
-#~ msgid "{{n}} selected"
-#~ msgstr "{{n}} voafantina"
-
-#~ msgctxt "selected-messages[many]"
-#~ msgid "{{n}} selected"
-#~ msgstr "{{n}} voafantina"
-
-#~ msgctxt "selected-messages[other]"
-#~ msgid "{{n}} selected"
-#~ msgstr "{{n}} voafantina"
-
-#~ msgid "Select Threads"
-#~ msgstr "Hifantina Tandahatra"
-
-#~ msgid "Select Messages"
-#~ msgstr "Hifantina Hafatra"
-
-#~ msgid ""
-#~ "You’ve exceeded the {{mmsSize}} KB size limit of a single multimedia "
-#~ "message. Remove attachments or shorten the message to send it."
-#~ msgstr ""
-#~ "Nihoaranao ny habe {{mmsSize}} KB fetran'ny hafatra haino&jery tokana. "
-#~ "Esory ireo rakipaingotra na afohezo ny hafatra raha handefa azy."
-
-#~ msgid "Send multimedia message"
-#~ msgstr "Handefa hafatra haino&jery"
-
-#~ msgid "{{n}} B"
-#~ msgstr "{{n}} B"
-
-#~ msgid "Subject:"
-#~ msgstr "Antony:"
-
-#~ msgid "Message could not be sent"
-#~ msgstr "Tsy lasa ilay hafatra"
-
-#~ msgid "Report requested"
-#~ msgstr "Nangatahina ny tatitra"
-
-#~ msgid "Message rejected"
-#~ msgstr "Nolavina ny hafatra"
-
-#~ msgid "%e %B %Y, {{shortTimeFormat24}}"
-#~ msgstr "%e %B %Y, {{shortTimeFormat24}}"
-
-#~ msgid "To"
-#~ msgstr "Ho an'i"
-
-#~ msgid "{{message-delivery-status-sending}}"
-#~ msgstr "{{message-delivery-status-sending}}"
-
-#~ msgid "Resend"
-#~ msgstr "Halefa indray"
-
-#~ msgid "Unknown Contact"
-#~ msgstr "Kaontakita Tsy fantatra"
-
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgctxt "thread-participant-separator"
-#~ msgid ", "
-#~ msgstr ", "
-
-#~ msgid "Delete selected message?"
-#~ msgstr "Hamafa ny hafatra voafantina?"
-
-#~ msgid "{{sendFlightModeTitle}}"
-#~ msgstr "{{sendFlightModeTitle}}"
-
-#~ msgid "Turn off airplane mode to download attachments."
-#~ msgstr "Vonoy ny Maody fiaramanidina raha hampidina rakipaingotra."
-
-#~ msgid "{{sendFlightModeBtnOk}}"
-#~ msgstr "{{sendFlightModeBtnOk}}"
-
-#~ msgid "Editing SMS {{number}}"
-#~ msgstr "Manitsy SMS {{number}}"
-
-#~ msgctxt "fdnErrorBody.innerHTML"
-#~ msgid "{[ plural(n) ]}"
-#~ msgstr "{[ plural(n) ]}"
-
-#~ msgctxt "fdnErrorBody.innerHTML[few]"
-#~ msgid ""
-#~ "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and "
-#~ "the following recipients are in your FDN list:"
-#~ msgstr ""
-#~ "Novelomina ny NFR (Nomerao Fitendry Raikitra). Ataovy azo antoka fa ao "
-#~ "anatin'ny lisitr'ireo NFR anao ny foiben'ny SMS sy ireto andefasana "
-#~ "manaraka ireto:"
-
-#~ msgctxt "fdnErrorBody.innerHTML[many]"
-#~ msgid ""
-#~ "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and "
-#~ "the following recipients are in your FDN list:"
-#~ msgstr ""
-#~ "Novelomina ny NFR (Nomerao Fitendry Raikitra). Ataovy azo antoka fa ao "
-#~ "anatin'ny lisitr'ireo NFR anao ny foiben'ny SMS sy ireto andefasana "
-#~ "manaraka ireto:"
-
-#~ msgctxt "fdnErrorBody.innerHTML[other]"
-#~ msgid ""
-#~ "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and "
-#~ "the following recipients are in your FDN list:"
-#~ msgstr ""
-#~ "Novelomina ny NFR (Nomerao Fitendry Raikitra). Ataovy azo antoka fa ao "
-#~ "anatin'ny lisitr'ireo NFR anao ny foiben'ny SMS sy ireto andefasana "
-#~ "manaraka ireto:"
-
-#~ msgctxt "fdnErrorBtnOk"
-#~ msgid "OK"
-#~ msgstr "OK"
-
-#~ msgctxt "switchSimToRetrieveConfirm"
-#~ msgid "OK"
-#~ msgstr "OK"
-
-#~ msgid "{{switchSimToRetrieveTitle}}"
-#~ msgstr "{{switchSimToRetrieveTitle}}"
-
-#~ msgid "{{switchSimToRetrieveBtnOk}}"
-#~ msgstr "{{switchSimToRetrieveBtnOk}}"
-
-#~ msgid "{{switchSimToRetrieveConfirm}}"
-#~ msgstr "{{switchSimToRetrieveConfirm}}"
-
-#~ msgid "Unable to download"
-#~ msgstr "Tsy afaka nampidina"
-
-#~ msgid ""
-#~ "Please make sure the SIM card inserted is the one used to receive this "
-#~ "message."
-#~ msgstr ""
-#~ "Azafady, ataovy azo antoka fa ilay nampiasaina nandraisana an'ity hafatra "
-#~ "ity io karatra SIM natsofoka io."
-
-#~ msgctxt "simNotMatchedErrorBtnOk"
-#~ msgid "OK"
-#~ msgstr "OK"
-
-#~ msgid "Select text"
-#~ msgstr "Hifantina soratra"
-
-#~ msgid ""
-#~ "You received a multimedia message. You can use the link below to download "
-#~ "its content until {{date}}."
-#~ msgstr ""
-#~ "Nahazo hafatra haino&jery ianao. Afaka mampiasa ilay rohy eto ambany "
-#~ "hampidinana ny atiny ianao hatramin'ny {{date}}."
-
-#~ msgid "MMS"
-#~ msgstr "MMS"
-
-#~ msgctxt "attached-files-too-large"
-#~ msgid "{[ plural(n) ]}"
-#~ msgstr "{[ plural(n) ]}"
-
-#~ msgctxt "attached-files-too-large[zero]"
-#~ msgid ""
-#~ "The files you have selected exceed the {{mmsSize}} KB size limit of a "
-#~ "single multimedia message."
-#~ msgstr ""
-#~ "Mihoatra ny habe {{mmsSize}} KB fetran'ny hafatra haino&jery tokana ireo "
-#~ "rakitra nofantenanao."
-
-#~ msgid ""
-#~ "The file you have selected exceeds the {{mmsSize}} KB size limit of a "
-#~ "single multimedia message."
-#~ msgstr ""
-#~ "Mihoatra ny habe {{mmsSize}} KB fetran'ny hafatra haino&jery tokana ilay "
-#~ "rakitra nofantenanao."
-
-#~ msgctxt "attached-files-too-large[two]"
-#~ msgid ""
-#~ "The files you have selected exceed the {{mmsSize}} KB size limit of a "
-#~ "single multimedia message."
-#~ msgstr ""
-#~ "Mihoatra ny habe {{mmsSize}} KB fetran'ny hafatra haino&jery tokana ireo "
-#~ "rakitra nofantenanao."
-
-#~ msgctxt "attached-files-too-large[few]"
-#~ msgid ""
-#~ "The files you have selected exceed the {{mmsSize}} KB size limit of a "
-#~ "single multimedia message."
-#~ msgstr ""
-#~ "Mihoatra ny habe {{mmsSize}} KB fetran'ny hafatra haino&jery tokana ireo "
-#~ "rakitra nofantenanao."
-
-#~ msgctxt "attached-files-too-large[many]"
-#~ msgid ""
-#~ "The files you have selected exceed the {{mmsSize}} KB size limit of a "
-#~ "single multimedia message."
-#~ msgstr ""
-#~ "Mihoatra ny habe {{mmsSize}} KB fetran'ny hafatra haino&jery tokana ireo "
-#~ "rakitra nofantenanao."
-
-#~ msgctxt "attached-files-too-large[other]"
-#~ msgid ""
-#~ "The files you have selected exceed the {{mmsSize}} KB size limit of a "
-#~ "single multimedia message."
-#~ msgstr ""
-#~ "Mihoatra ny habe {{mmsSize}} KB fetran'ny hafatra haino&jery tokana ireo "
-#~ "rakitra nofantenanao."
-
-#~ msgid "SIM {{id}}, {{detailString}}"
-#~ msgstr "SIM {{id}}, {{detailString}}"
-
-#~ msgid "{{n}}"
-#~ msgstr "{{n}}"
-
-#~ msgid "using SIM {{n}}"
-#~ msgstr "amin'ny SIM {{n}}"
-
-#~ msgid "Add attachment"
-#~ msgstr "Hanampy rakipaingotra"
-
-#~ msgid "Contact photo"
-#~ msgstr "Sarin'ny kaontakita"
-
-#~ msgid "Unread"
-#~ msgstr "Tsy voavaky"
-
-#~ msgid "Has draft"
-#~ msgstr "Misy vakiraoka"
-
-#~ msgid "Draft"
-#~ msgstr "Vakiraoka"
-
-#~ msgid "Delivered"
-#~ msgstr "Tafita"
-
-#~ msgid "Read"
-#~ msgstr "Voavaky"
-
-#~ msgctxt "modal-dialog-ok-button"
-#~ msgid "OK"
-#~ msgstr "OK"
-
-#~ msgctxt "modal-dialog-cancel-button"
-#~ msgid "Cancel"
-#~ msgstr "Foanana"
-
-#~ msgctxt "modal-dialog-default-title"
-#~ msgid "Messages"
-#~ msgstr "Hafatra"
+#. # Labels for screen reader
+#: attach-button.ariaLabel
+msgid "Add attachment"
+msgstr "Hanampy rakipaingotra"
+
+#: contact-photo.ariaLabel
+msgid "Contact photo"
+msgstr "Sarin'ny kaontakita"
+
+#: unread-thread.ariaLabel
+msgid "Unread"
+msgstr "Tsy voavaky"
+
+#: has-draft.ariaLabel
+msgid "Has draft"
+msgstr "Misy vakiraoka"
+
+#: is-draft.ariaLabel
+msgid "Draft"
+msgstr "Vakiraoka"
+
+#. # Message statuses
+#: message-delivery-status-sending
+msgid "Sending…"
+msgstr "Mandefa…"
+
+#: message-delivery-status-delivered.ariaLabel
+msgid "Delivered"
+msgstr "Tafita"
+
+#: message-delivery-status-read.ariaLabel
+msgid "Read"
+msgstr "Voavaky"
+
+#: message-delivery-status-error.ariaLabel
+msgid "Error"
+msgstr "Tsy fetezana"
+
+#. # Modal dialog strings
+#: modal-dialog-ok-button
+msgctxt "modal-dialog-ok-button"
+msgid "OK"
+msgstr "OK"
+
+#: modal-dialog-cancel-button
+msgctxt "modal-dialog-cancel-button"
+msgid "Cancel"
+msgstr "Foanana"
+
+#. # LOCALIZATION NOTE (modal-dialog-default-title): Here we should have name of
+#. # the Messages app, the same as we have in app manifest.
+#: modal-dialog-default-title
+msgctxt "modal-dialog-default-title"
+msgid "Messages"
+msgstr "Hafatra"

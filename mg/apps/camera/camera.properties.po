@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-19 10:49+0100\n"
-"PO-Revision-Date: 2015-10-07 19:38+0000\n"
-"Last-Translator: system user <>\n"
+"POT-Creation-Date: 2015-03-27 07:48+0000\n"
+"PO-Revision-Date: 2015-10-08 12:14+0000\n"
+"Last-Translator: mg-MG01_Gabriella <zafimamy@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: mg\n"
 "MIME-Version: 1.0\n"
@@ -15,15 +15,15 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1444246705.000000\n"
+"X-POOTLE-MTIME: 1444306494.000000\n"
 
 #: nospace2-title
 msgid "Not enough space on memory card"
-msgstr "Tsy ampy ny toerana ao amin'ny karatra memoara"
+msgstr "Tsy ampy ny toerana ao @ karatra memoara"
 
 #: nospace2-text
 msgid "Try freeing up space by deleting media."
-msgstr "Andramo hahalahina ka mamafà haino&jery."
+msgstr "Andramo halalahina ka mamafà haino&jery."
 
 #: error-saving-title
 msgid "Picture not saved"
@@ -34,7 +34,7 @@ msgid "An error prevented Camera from saving the picture."
 msgstr "Nisy tsy fetezana nanakana ny Fakantsary tsy hitahiry ilay sary."
 
 #: error-recording-title
-#, fuzzy
+msgctxt "error-recording-title"
 msgid "Video not recorded"
 msgstr "Tsy voarakitra ny horonantsary"
 
@@ -42,6 +42,15 @@ msgstr "Tsy voarakitra ny horonantsary"
 msgid "An error prevented Camera from recording the video."
 msgstr ""
 "Nisy tsy fetezana nanakana ny Fakantsary tsy handrakitra ilay horonantsary."
+
+#: error-video-file-path-title
+msgctxt "error-video-file-path-title"
+msgid "Video not recorded"
+msgstr "Tsy voarakitra ny horonantsary"
+
+#: error-video-file-path-text
+msgid "Error creating video file path."
+msgstr "Tsy fetezan'ny famoronana làlan-drakitra horonantsary."
 
 #: nocard2-title
 msgid "No memory card found"
@@ -54,7 +63,7 @@ msgstr "Manatsofoha karatra memoara raha haka sary."
 #: pluggedin2-title
 msgid "Camera can not be used while phone is plugged in"
 msgstr ""
-"Tsy azo ampiasaina ny Fakantsary rehefa mitsatoka amin'ny pirizy ny telefaona"
+"Tsy azo ampiasaina ny Fakantsary rehefa mitsatoka @ pirizy ny telefaona"
 
 #: pluggedin2-text
 msgid "Unplug the phone to capture photos and videos"
@@ -66,8 +75,7 @@ msgstr "Lany ny toerana fitehirizanao haino&jery."
 
 #: activity-size-limit-reached
 msgid "You have reached the maximum file size for this attachment."
-msgstr ""
-"Efa amin'ny habe farafahaben'ny rakitra ho an'io rakipaingotra io ianao."
+msgstr "Tonga @ habe farafahaben'ny rakitra ho an'io rakipaingotra io ianao."
 
 #: retake-button
 msgid "Retake"
@@ -78,7 +86,7 @@ msgid "Select"
 msgstr "Hifantina"
 
 #: close-button
-#, fuzzy
+msgctxt "close-button"
 msgid "Close"
 msgstr "Akatona"
 
@@ -172,11 +180,19 @@ msgstr "Ambany mampanahy ny bateria"
 
 #: battery-verylow-text
 msgid "10% battery remaining"
-msgstr "10% amin'ny bateria sisa"
+msgstr "10% @ bateria sisa"
 
 #: battery-low-text
 msgid "15% battery remaining"
-msgstr "15% amin'ny bateria sisa"
+msgstr "15% bateria sisa"
+
+#: camera-unavailable-title
+msgid "Camera Unavailable"
+msgstr "Fakantsary tsy vonona"
+
+#: camera-unavailable-text
+msgid "The camera is in use by another app."
+msgstr "Ampiasain'ny app hafa ny fakantsary."
 
 #: hdr
 msgid "HDR"
@@ -240,6 +256,14 @@ msgstr "Hoazy"
 msgid "(Flash deactivated)"
 msgstr "(Flash novonoina)"
 
+#: Photo-Mode
+msgid "Photo Mode"
+msgstr "Maody Sary"
+
+#: Video-Mode
+msgid "Video Mode"
+msgstr "Maody Horonantsary"
+
 #: options
 msgid "Options"
 msgstr "Safidy"
@@ -249,94 +273,97 @@ msgid "Open Gallery"
 msgstr "Hanokatra Galeria"
 
 #: preview
-#, fuzzy
+msgctxt "preview"
 msgid "Preview"
 msgstr "Topy maso"
 
-#~ msgctxt "error-video-file-path-title"
-#~ msgid "Video not recorded"
-#~ msgstr "Tsy voarakitra ny horonantsary"
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: close-menu-button.ariaLabel
+msgid "Close menu"
+msgstr "Akatona menio"
 
-#~ msgid "Error creating video file path."
-#~ msgstr "Tsy fetezan'ny famoronana làlan-drakitra horonantsary."
+#: back-button.ariaLabel
+msgid "Back"
+msgstr "Hiverina"
 
-#~ msgid "Camera Unavailable"
-#~ msgstr "Fakantsary tsy vonona"
+#: setting-option.ariaLabel
+msgid "{{value}}"
+msgstr "{{value}}"
 
-#~ msgid "The camera is in use by another app."
-#~ msgstr "Ampiasain'ny app hafa ny fakantsary."
+#: setting-option-hdr.ariaLabel
+msgid "HDR {{value}}"
+msgstr "HDR {{value}}"
 
-#~ msgid "Photo Mode"
-#~ msgstr "Maody Sary"
+#: setting-option-self-timer.ariaLabel
+msgid "Self-Timer {{value}}"
+msgstr "Mpanatara {{value}}"
 
-#~ msgid "Video Mode"
-#~ msgstr "Maody Horonantsary"
+#: setting-option-grid.ariaLabel
+msgid "Grid Lines {{value}}"
+msgstr "Tsipiky ny harato {{value}}"
 
-#~ msgid "Close menu"
-#~ msgstr "Akatona menio"
+#: setting-option-scene-mode.ariaLabel
+msgid "Scene Mode {{value}}"
+msgstr "Maody Sehatra {{value}}"
 
-#~ msgid "Back"
-#~ msgstr "Hiverina"
+#: setting-option-camera-resolution.ariaLabel
+msgid "Camera Resolution {{value}}"
+msgstr "Fivelatry ny fakantsary {{value}}"
 
-#~ msgid "{{value}}"
-#~ msgstr "{{value}}"
+#: setting-option-video-resolution.ariaLabel
+msgid "Video Resolution {{value}}"
+msgstr "Fivelatry ny horonantsary {{value}}"
 
-#~ msgid "HDR {{value}}"
-#~ msgstr "HDR {{value}}"
+#: flash-on-button.ariaLabel
+msgid "Flash On"
+msgstr "Flash mandeha"
 
-#~ msgid "Self-Timer {{value}}"
-#~ msgstr "Mpanatara {{value}}"
+#: flash-off-button.ariaLabel
+msgid "Flash Off"
+msgstr "Flash maty"
 
-#~ msgid "Grid Lines {{value}}"
-#~ msgstr "Tsipiky ny harato {{value}}"
+#: flash-auto-button.ariaLabel
+msgid "Flash Auto"
+msgstr "Flash hoazy"
 
-#~ msgid "Scene Mode {{value}}"
-#~ msgstr "Maody Sehatra {{value}}"
+#: toggle-camera-rear-button.ariaLabel
+msgid "Rear camera"
+msgstr "Fakantsary aoriana"
 
-#~ msgid "Camera Resolution {{value}}"
-#~ msgstr "Fivelatry ny fakantsary {{value}}"
+#: toggle-camera-front-button.ariaLabel
+msgid "Front camera"
+msgstr "Fakantsary aloha"
 
-#~ msgid "Video Resolution {{value}}"
-#~ msgstr "Fivelatry ny horonantsary {{value}}"
+#: menu-button.ariaLabel
+msgid "Menu"
+msgstr "Menio"
 
-#~ msgid "Flash On"
-#~ msgstr "Flash mandeha"
+#: preview-button.ariaLabel
+msgctxt "preview-button.ariaLabel"
+msgid "Preview"
+msgstr "Topy maso"
 
-#~ msgid "Flash Off"
-#~ msgstr "Flash maty"
+#: controls-button-close.ariaLabel
+msgctxt "controls-button-close.ariaLabel"
+msgid "Close"
+msgstr "Akatona"
 
-#~ msgid "Flash Auto"
-#~ msgstr "Flash hoazy"
+#: share-button.ariaLabel
+msgid "Share"
+msgstr "Hizara"
 
-#~ msgid "Rear camera"
-#~ msgstr "Fakantsary aoriana"
+#: more-button.ariaLabel
+msgid "More"
+msgstr "Bebe kokoa"
 
-#~ msgid "Front camera"
-#~ msgstr "Fakantsary aloha"
+#: media-frame.ariaLabel
+msgid "Frame {{current}} of {{total}}"
+msgstr "Fefimerana {{current}} @ {{total}}"
 
-#~ msgid "Menu"
-#~ msgstr "Menio"
-
-#~ msgctxt "preview-button.ariaLabel"
-#~ msgid "Preview"
-#~ msgstr "Topy maso"
-
-#~ msgctxt "controls-button-close.ariaLabel"
-#~ msgid "Close"
-#~ msgstr "Akatona"
-
-#~ msgid "Share"
-#~ msgstr "Hizara"
-
-#~ msgid "More"
-#~ msgstr "Bebe kokoa"
-
-#~ msgid "Frame {{current}} of {{total}}"
-#~ msgstr "Fefimerana {{current}} amin'ny {{total}}"
-
-#~ msgid ""
-#~ "Swipe left with 2 fingers to jump to next, or swipe right to jump to "
-#~ "previous"
-#~ msgstr ""
-#~ "Asosao miankavia amin'ny rantsantànana 2 raha hitsambikina ho amin'ny "
-#~ "manaraka, na asosao miankavanana raha hitsambikina ho amin'ny eo aloha."
+#: media-frame.ariaMozHint
+msgid ""
+"Swipe left with 2 fingers to jump to next, or swipe right to jump to previous"
+msgstr ""
+"Asosao miankavia @ rantsantànana 2 raha hitsambikina ho @ manaraka, na "
+"asosao miankavanana raha hitsambikina ho @ eo aloha."

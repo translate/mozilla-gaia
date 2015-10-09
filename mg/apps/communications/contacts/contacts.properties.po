@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-24 11:19+0100\n"
-"PO-Revision-Date: 2015-10-07 19:41+0000\n"
-"Last-Translator: system user <>\n"
+"POT-Creation-Date: 2015-02-11 19:45+0000\n"
+"PO-Revision-Date: 2015-10-08 01:16+0000\n"
+"Last-Translator: mg-MG01_Gabriella <zafimamy@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: mg\n"
 "MIME-Version: 1.0\n"
@@ -15,19 +15,15 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1444246913.000000\n"
-
-#: add
-msgid "Add"
-msgstr "Hanampy"
+"X-POOTLE-MTIME: 1444266973.000000\n"
 
 #: call
-#, fuzzy
+msgctxt "call"
 msgid "Call"
 msgstr "Hiantso"
 
 #: edit
-#, fuzzy
+msgctxt "edit"
 msgid "Edit"
 msgstr "Hanitsy"
 
@@ -86,7 +82,7 @@ msgid "Delete contact?"
 msgstr "Hamafa kaontakita?"
 
 #: remove
-#, fuzzy
+msgctxt "remove"
 msgid "Remove"
 msgstr "Hanala"
 
@@ -107,6 +103,10 @@ msgstr "Tsy manana nomeraon-telefaona io kaontakita io"
 msgid "This contact does not have an email address"
 msgstr "Tsy manana adiresy mailaka io kaontakita io"
 
+#: no_contact_data
+msgid "This contact does not have a phone number and email address"
+msgstr "Tsy manana nomeraon-telefaona sy adiresy mailaka io kaontakita io"
+
 #: removePhotoConfirm
 msgid "Remove contact picture?"
 msgstr "Hanala sarin'ny kaontakita?"
@@ -115,11 +115,11 @@ msgstr "Hanala sarin'ny kaontakita?"
 msgid "Loading contacts…"
 msgstr "Mamatratra ireo kaontakita…"
 
-#. # LOCALIZATION NOTE(noContactsActivity): Shown when using the context menu to add
-#. # a number from your call list to a contact, and your contacts list is empty.
-#: noContactsActivity
-msgid "Cannot add to contact as your contact list is empty"
-msgstr ""
+#. # LOCALIZATION NOTE(noContactsActivity2): Shown when trying to pick a contact
+#. # there are no contacts in your Contacts list
+#: noContactsActivity2
+msgid "No contacts in your Contacts list"
+msgstr "Tsisy kaontakita ao @ lisitra Kaontakita anao"
 
 #. # Contact fields
 #: noName
@@ -135,7 +135,7 @@ msgid "Last name"
 msgstr "Anarana"
 
 #: tel.placeholder
-#, fuzzy
+msgctxt "tel.placeholder"
 msgid "Phone"
 msgstr "Telefaona"
 
@@ -186,10 +186,6 @@ msgstr "Hevitra"
 #: org.placeholder
 msgid "Company"
 msgstr "Orinasa"
-
-#: custom.placeholder
-msgid "Custom"
-msgstr ""
 
 #: date
 msgctxt "date"
@@ -256,72 +252,78 @@ msgstr "Hanampy ho Tiana"
 msgid "Remove as Favorite"
 msgstr "Hanala tsy ho Tiana"
 
-#. # Field labels
-#: label
-msgid "Label"
-msgstr ""
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: addButton.ariaLabel
+msgid "Add"
+msgstr "Hanampy"
 
-#: mobile
-msgid "Mobile"
-msgstr ""
+#: editButton.ariaLabel
+msgctxt "editButton.ariaLabel"
+msgid "Edit"
+msgstr "Hanitsy"
 
-#: home
-msgid "Home"
-msgstr ""
+#: settingsButton.ariaLabel
+msgid "Settings"
+msgstr "Tefy"
 
-#: work
-msgid "Work"
-msgstr ""
+#: phoneDetail.ariaLabel
+msgctxt "phoneDetail.ariaLabel"
+msgid "Phone"
+msgstr "Telefaona"
 
-#: personal
-msgid "Personal"
-msgstr ""
+#: emailDetail.ariaLabel
+msgctxt "emailDetail.ariaLabel"
+msgid "Email"
+msgstr "Mailaka"
 
-#: faxHome
-msgid "Fax home"
-msgstr ""
+#: addressDetail.ariaLabel
+msgctxt "addressDetail.ariaLabel"
+msgid "Address"
+msgstr "Adiresy"
 
-#: faxOffice
-msgid "Fax office"
-msgstr ""
+#: dateDetail.ariaLabel
+msgctxt "dateDetail.ariaLabel"
+msgid "Date"
+msgstr "Daty"
 
-#: faxOther
-msgid "Fax other"
-msgstr ""
+#: composeEmail.ariaLabel
+msgctxt "composeEmail.ariaLabel"
+msgid "Email"
+msgstr "Mailaka"
 
-#: another
-msgid "Another"
-msgstr ""
+#: makeCall.ariaLabel
+msgctxt "makeCall.ariaLabel"
+msgid "Call"
+msgstr "Hiantso"
 
-#: other
-msgid "Other"
-msgstr ""
+#: phones.ariaLabel
+msgid "Phones"
+msgstr "Telefaona"
 
-#: customTag.placeholder
-msgid "Custom tag"
-msgstr ""
+#: emails.ariaLabel
+msgid "Emails"
+msgstr "Mailaka"
 
-#. # Note: For localizers. This tag indicates the current address
-#: current
-msgid "Current"
-msgstr ""
+#: addresses.ariaLabel
+msgid "Addresses"
+msgstr "Adiresy"
 
-#. # LOCALIZATION NOTE(itemWithLabel): Parameters in this string will be replaced
-#. # at run-time: {{label}} is the label associated to phone number or email,
-#. # item is the number/email itself. Examples for English: "Home, +123456789" or
-#. # "Work, foo@example.com".
-#: itemWithLabel
-msgid "{{label}}, {{item}}"
-msgstr ""
+#: dates.ariaLabel
+msgid "Dates"
+msgstr "Daty"
 
-#. # Hidden information, for screen readers
+#: notes.ariaLabel
+msgid "Notes"
+msgstr "Fanamarihana"
+
 #: exit
 msgid "Exit"
 msgstr "Hivoaka"
 
 #: expand
 msgid "Expand"
-msgstr "Hanitatra"
+msgstr "Hamelatra"
 
 #: labelName
 msgid "Name:"
@@ -376,13 +378,9 @@ msgid "Email address"
 msgstr "Adiresy mailaka"
 
 #: legendAddress
-#, fuzzy
+msgctxt "legendAddress"
 msgid "Address"
 msgstr "Adiresy"
-
-#: settings
-msgid "Settings"
-msgstr "Tefy"
 
 #. # search related
 #: search-contact.placeholder
@@ -426,17 +424,16 @@ msgstr "Hanondrana"
 msgid "Export to SIM"
 msgstr "Aondrana mankao @ SIM"
 
-#: sdExport-title
-msgid "Export to SD Card"
-msgstr ""
+#: memoryCardExport-title
+msgid "Export to memory card"
+msgstr "Aondrana mankao @ karatra memoara"
 
 #: btExport-title
 msgid "Export to Bluetooth"
 msgstr "Aondrana mankao @ Bluetooth"
 
-#: sdUMSEnabled
-#, fuzzy
-msgid "Cannot use SD Card because USB storage is enabled"
+#: memoryCardUMSEnabled
+msgid "Cannot use memory card because USB storage is enabled"
 msgstr "Tsy afaka mampiasa karatra memoara satria mandeha ny fitehirizana USB"
 
 #: exportErrorTitle
@@ -483,7 +480,7 @@ msgstr "Nisy tsy fetezana nandritra ny fanondranana"
 #: exportError-SD-shared
 msgctxt "exportError-SD-shared"
 msgid "Can’t access memory card because it’s shared"
-msgstr "Tsy afaka miditra amin'ny karatra memoara satria iombanana io"
+msgstr "Tsy afaka miditra @ karatra memoara satria iombanana io"
 
 #: exportError-SD-unavailable
 msgctxt "exportError-SD-unavailable"
@@ -493,8 +490,7 @@ msgstr "Tsy vonona ny karatra memoara"
 #: exportError-SD-noSpace
 msgctxt "exportError-SD-noSpace"
 msgid "There’s not enough space on the memory card to export the contacts"
-msgstr ""
-"Tsy ampy hanondranana ireo kaontakita ny toerana ao amin'ny karatra memoara"
+msgstr "Tsy ampy hanondranana ireo kaontakita ny toerana ao @ karatra memoara"
 
 #: exportError-SIM-unavailable
 msgid "SIM card is not available"
@@ -503,7 +499,7 @@ msgstr "Tsy vonona ny karatra SIM"
 #: exportError-BT-shared
 msgctxt "exportError-BT-shared"
 msgid "Can’t access memory card because it’s shared"
-msgstr "Tsy afaka miditra amin'ny karatra memoara satria iombanana io"
+msgstr "Tsy afaka miditra @ karatra memoara satria iombanana io"
 
 #: exportError-BT-unavailable
 msgctxt "exportError-BT-unavailable"
@@ -513,8 +509,7 @@ msgstr "Tsy vonona ny karatra memoara"
 #: exportError-BT-noSpace
 msgctxt "exportError-BT-noSpace"
 msgid "There’s not enough space on the memory card to export the contacts"
-msgstr ""
-"Tsy ampy hanondranana ireo kaontakita ny toerana ao amin'ny karatra memoara"
+msgstr "Tsy ampy hanondranana ireo kaontakita ny toerana ao @ karatra memoara"
 
 #. # Social networks
 #: social-network
@@ -553,6 +548,10 @@ msgstr "Hafatra"
 msgid "Wall post"
 msgstr "Peta-drindrina"
 
+#: share-contact
+msgid "Share Contact"
+msgstr "Hizara Kaontakita"
+
 #: facebook-export-forbidden
 msgid "The contact cannot be shared due to Facebook constraint."
 msgstr "Tsy azo zaraina ilay kaontakita noho ny fameran'i Facebook."
@@ -573,6 +572,10 @@ msgstr "Hifantina finday"
 #: select_email
 msgid "Select email"
 msgstr "Hifantina mailaka"
+
+#: select_recipient
+msgid "Select recipient"
+msgstr "Hifantina andefasana"
 
 #. # Settings related
 #: contactsOrderBy
@@ -614,7 +617,7 @@ msgstr "Hanala data Facebook rehetra?"
 
 #: renewPwdMsg
 msgid "Your password in Facebook has changed. Please, update it."
-msgstr "Niova ny tenimiafinao amin'ny Facebook. Havaozy io, azafady."
+msgstr "Niova ny tenimiafinao @ Facebook. Havaozy io, azafady."
 
 #: notEnabledYet
 msgid "Not enabled yet"
@@ -622,8 +625,7 @@ msgstr "Mbola tsy novelomina"
 
 #: genericNoConnection
 msgid "To import contacts connect to Wi-Fi or data network"
-msgstr ""
-"Mifandraisa amin'ny Wi-Fi na tambajotran-data raha hanafatra kaontakita"
+msgstr "Mifandraisa @ Wi-Fi na tambajotran-data raha hanafatra kaontakita"
 
 #. # Used for export, just in case the strings will diverge on time
 #: simCard
@@ -635,20 +637,72 @@ msgstr "Karatra SIM"
 msgid "Memory card"
 msgstr "Karatra memoara"
 
-#: simNumber
-#, fuzzy
-msgid "SIM {{number}}"
+#: simNumberNoMSISDN
+msgid "SIM {{number}}:"
 msgstr "SIM {{number}}:"
 
+#: simNumberWithMSISDN
+msgid "SIM {{number}}: {{msisdn}}"
+msgstr "SIM {{number}}: {{msisdn}}"
+
+#. # ICE Contacts
+#: ICEContactsGroup
+msgctxt "ICEContactsGroup"
+msgid "ICE Contacts"
+msgstr "Kaontakita ICE"
+
+#: setICEButton
+msgid "Set ICE Contacts"
+msgstr "Hanefy Kaontakita ICE"
+
+#: ICESettingTitle
+msgctxt "ICESettingTitle"
+msgid "ICE Contacts"
+msgstr "Kaontakita ICE"
+
+#: ICEDescription
+msgid "Add two contacts for making “In Case of Emergency” calls."
+msgstr "Manampia kaontakita roa hanaovana antso \"Raha Misy Vonjy Taitra\"."
+
+#: ICEContact1
+msgid "ICE Contact 1"
+msgstr "Kaontakita ICE 1"
+
+#: ICESelectContact
+msgid "Select a contact"
+msgstr "Mifantena kaontakita iray"
+
+#: ICEContact2
+msgid "ICE Contact 2"
+msgstr "Kaontakita ICE 2"
+
+#: ICERepeatedContact
+msgid "This contact is already an existing ICE contact"
+msgstr "Efa kaontakita ICE misy io kaontakita io"
+
+#: ICEUnknownError
+msgid "There was an error setting the contact as ICE"
+msgstr "Nisy tsy fetezan'ny fanefena ny kaontakita ho ICE"
+
+#: ICEContactNoNumber
+msgid "This contact doesn't have a phone number"
+msgstr "Tsy manana nomeraon-telefaona io kaontakita io"
+
+#: ICEFacebookContactNotAllowed
+msgid "Facebook contacts cannot be set as ICE contacts"
+msgstr "Tsy azo tefena ho kaontakita ICE io kaontakita Facebook io"
+
+#: ICEContactDelTel
+msgid "Deleted phone numbers are removed from ICE Contact"
+msgstr "Nesorina tao @ Kaontakita ICE ireo nomeraon-telefaona voafafa"
+
+#: ICEContactDelTelAll
+msgid ""
+"All the numbers are deleted. This contact is removed from the ICE Contacts."
+msgstr ""
+"Voafafa daholo ireo nomerao. Nesorina tao @ Kaontakita ICE io kaontakita io."
+
 #. # No contacts
-#: create-new
-msgid "Create a new contact"
-msgstr ""
-
-#: import-now
-msgid "Import your contacts from SIM card or Facebook"
-msgstr ""
-
 #: no-contacts
 msgid "No contacts"
 msgstr "Tsisy kaontakita"
@@ -695,7 +749,7 @@ msgstr "Feno ny Karatra SIM"
 
 #: exportError-SIM-CannotAccessPhoneBook
 msgid "Cannot access SIM card’s phone book"
-msgstr "Tsy afaka miditra amin'ny Bokin-kaontakitan'ny karatra SIM"
+msgstr "Tsy afaka miditra @ Bokin-kaontakitan'ny karatra SIM"
 
 #: exportError-SIM-Unavailable
 msgid "No SIM detected"
@@ -846,137 +900,44 @@ msgstr "Horonantsary"
 msgid "Audio"
 msgstr "Rakipeo"
 
-#~ msgid "This contact does not have a phone number and email address"
-#~ msgstr "Tsy manana nomeraon-telefaona sy adiresy mailaka io kaontakita io"
+#. # Pick Destination
+#: pick_destination
+msgid "{{ destination }} {{ carrier }}"
+msgstr "{{ destination }} {{ carrier }}"
 
-#~ msgid "No contacts in your Contacts list"
-#~ msgstr "Tsisy kaontakita ao amin'ny lisitra Kaontakita anao"
+#. # The following strings are spoken by screen readers and not shown on the
+#. # screen.
+#: removeField.ariaLabel
+msgctxt "removeField.ariaLabel"
+msgid "Remove"
+msgstr "Hanala"
 
-#~ msgctxt "editButton.ariaLabel"
-#~ msgid "Edit"
-#~ msgstr "Hanitsy"
+#: undo.ariaLabel
+msgid "Undo"
+msgstr "Hanafoana"
 
-#~ msgctxt "phoneDetail.ariaLabel"
-#~ msgid "Phone"
-#~ msgstr "Telefaona"
+#: send-sms-button.ariaLabel
+msgid "SMS"
+msgstr "SMS"
 
-#~ msgctxt "emailDetail.ariaLabel"
-#~ msgid "Email"
-#~ msgstr "Mailaka"
+#. # In Case of Emergency contacts (ICE)
+#: ice_contacts
+msgctxt "ice_contacts"
+msgid "ICE Contacts"
+msgstr "Kaontakita ICE"
 
-#~ msgctxt "dateDetail.ariaLabel"
-#~ msgid "Date"
-#~ msgstr "Daty"
+#: edit-picture
+msgid "Edit Picture"
+msgstr "Hanitsy Sary"
 
-#~ msgctxt "composeEmail.ariaLabel"
-#~ msgid "Email"
-#~ msgstr "Mailaka"
+#: remove-photo
+msgid "Remove photo"
+msgstr "Hanala sary"
 
-#~ msgctxt "makeCall.ariaLabel"
-#~ msgid "Call"
-#~ msgstr "Hiantso"
+#: change-photo
+msgid "Change photo"
+msgstr "Hanova sary"
 
-#~ msgid "Phones"
-#~ msgstr "Telefaona"
-
-#~ msgid "Emails"
-#~ msgstr "Mailaka"
-
-#~ msgid "Addresses"
-#~ msgstr "Adiresy"
-
-#~ msgid "Dates"
-#~ msgstr "Daty"
-
-#~ msgid "Notes"
-#~ msgstr "Fanamarihana"
-
-#~ msgctxt "legendAddress"
-#~ msgid "Address"
-#~ msgstr "Adiresy"
-
-#~ msgid "Export to memory card"
-#~ msgstr "Aondrana mankao @ karatra memoara"
-
-#~ msgid "Share Contact"
-#~ msgstr "Hizara Kaontakita"
-
-#~ msgid "Select recipient"
-#~ msgstr "Hifantina andefasana"
-
-#~ msgid "SIM {{number}}: {{msisdn}}"
-#~ msgstr "SIM {{number}}: {{msisdn}}"
-
-#~ msgctxt "ICEContactsGroup"
-#~ msgid "ICE Contacts"
-#~ msgstr "Kaontakita ICE"
-
-#~ msgid "Set ICE Contacts"
-#~ msgstr "Hanefy Kaontakita ICE"
-
-#~ msgctxt "ICESettingTitle"
-#~ msgid "ICE Contacts"
-#~ msgstr "Kaontakita ICE"
-
-#~ msgid "Add two contacts for making “In Case of Emergency” calls."
-#~ msgstr "Manampia kaontakita roa hanaovana antso \"Raha Misy Vonjy Taitra\"."
-
-#~ msgid "ICE Contact 1"
-#~ msgstr "Kaontakita ICE 1"
-
-#~ msgid "Select a contact"
-#~ msgstr "Mifantena kaontakita iray"
-
-#~ msgid "ICE Contact 2"
-#~ msgstr "Kaontakita ICE 2"
-
-#~ msgid "This contact is already an existing ICE contact"
-#~ msgstr "Efa kaontakita ICE misy io kaontakita io"
-
-#~ msgid "There was an error setting the contact as ICE"
-#~ msgstr "Nisy tsy fetezan'ny fanefena ny kaontakita ho ICE"
-
-#~ msgid "This contact doesn't have a phone number"
-#~ msgstr "Tsy manana nomeraon-telefaona io kaontakita io"
-
-#~ msgid "Facebook contacts cannot be set as ICE contacts"
-#~ msgstr "Tsy azo tefena ho kaontakita ICE io kaontakita Facebook io"
-
-#~ msgid "Deleted phone numbers are removed from ICE Contact"
-#~ msgstr "Nesorina tao amin'ny Kaontakita ICE ireo nomeraon-telefaona voafafa"
-
-#~ msgid ""
-#~ "All the numbers are deleted. This contact is removed from the ICE "
-#~ "Contacts."
-#~ msgstr ""
-#~ "Voafafa daholo ireo nomerao. Nesorina tao amin'ny Kaontakita ICE io "
-#~ "kaontakita io."
-
-#~ msgid "{{ destination }} {{ carrier }}"
-#~ msgstr "{{ destination }} {{ carrier }}"
-
-#~ msgctxt "removeField.ariaLabel"
-#~ msgid "Remove"
-#~ msgstr "Hanala"
-
-#~ msgid "Undo"
-#~ msgstr "Hanafoana"
-
-#~ msgid "SMS"
-#~ msgstr "SMS"
-
-#~ msgctxt "ice_contacts"
-#~ msgid "ICE Contacts"
-#~ msgstr "Kaontakita ICE"
-
-#~ msgid "Edit Picture"
-#~ msgstr "Hanitsy Sary"
-
-#~ msgid "Remove photo"
-#~ msgstr "Hanala sary"
-
-#~ msgid "Change photo"
-#~ msgstr "Hanova sary"
-
-#~ msgid "Photo options"
-#~ msgstr "Safidy sary"
+#: photo-options
+msgid "Photo options"
+msgstr "Safidy sary"
