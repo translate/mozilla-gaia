@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-02 16:45+0000\n"
+"POT-Creation-Date: 2015-10-17 12:45+0000\n"
 "PO-Revision-Date: 2015-10-06 10:46+0000\n"
 "Last-Translator: Kerim Kalamujic <kerim@mozilla.ba>\n"
 "Language-Team: none\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1444128366.000000\n"
@@ -1992,10 +1992,14 @@ msgid "Audible touch tones"
 msgstr "Razgovjetni tonovi dodira"
 
 #: touch-tone-short
+#, fuzzy
+msgctxt "touch-tone-short"
 msgid "Short"
 msgstr "Kratko"
 
 #: touch-tone-long
+#, fuzzy
+msgctxt "touch-tone-long"
 msgid "Long"
 msgstr "Dugo"
 
@@ -2360,19 +2364,19 @@ msgctxt "home-screens.ariaLabel"
 msgid "Home Screens"
 msgstr "Početni ekrani"
 
-#: vertical-homescreen-layout
+#: homescreen-layout
 msgid "Layout"
 msgstr "Raspored"
 
-#: vertical-homescreen-icon-layout
+#: homescreen-icon-layout
 msgid "Icon Layout"
 msgstr "Raspored ikona"
 
-#: vertical-homescreen-three-columns
+#: homescreen-three-columns
 msgid "Three Columns"
 msgstr "Tri kolone"
 
-#: vertical-homescreen-four-columns
+#: homescreen-four-columns
 msgid "Four Columns"
 msgstr "Četiri kolone"
 
@@ -2715,6 +2719,10 @@ msgstr "Zadnja sinhronizacija {{when}}"
 #: fxsync-collections
 msgid "Collections"
 msgstr "Kolekcije"
+
+#: fxsync-collections-bookmarks
+msgid "Bookmarks"
+msgstr ""
 
 #: fxsync-collections-history
 msgid "History"
@@ -3334,23 +3342,22 @@ msgstr ""
 msgid "Clear"
 msgstr "Očisti"
 
-#: privateBrowsingDefault
-msgid "Browse privately by default"
+#: privateBrowsing
+msgid "Private Browsing"
 msgstr ""
 
-#: privateBrowsingDefaultDetails
-msgid "Open new browser windows as private windows"
-msgstr "Otvaraj nove prozore browsera kao privatne prozore"
+#: privateBrowsingDetails
+msgid "Open all external links in new private windows."
+msgstr ""
 
-#. # Security :: Privacy Panel
-#: privacy-controls
-msgctxt "privacy-controls"
-msgid "Privacy Controls"
-msgstr "Kontrole privatnosti"
+#: trackingProtection
+msgid "Tracking Protection"
+msgstr ""
 
-#: no-privacy-controls
-msgid "No privacy controls app found"
-msgstr "Nije pronađena aplikacija kontrole privatnosti"
+#: trackingProtectionDetails
+msgid ""
+"Protect your browsing activity against potential trackers in all new windows."
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Storage
@@ -4409,6 +4416,10 @@ msgstr "Omogući kaćenje weba"
 msgid "Enable View Source Gesture"
 msgstr "Omogući gestu za prikaz izvora"
 
+#: homescreen-paging
+msgid "Enable Home Screen Paging"
+msgstr ""
+
 #: window-management
 msgid "Window Management"
 msgstr "Upravljanje prozorima"
@@ -4725,6 +4736,35 @@ msgstr "Sivi tonovi"
 msgid "Contrast"
 msgstr "Kontrast"
 
+#. # Device :: Accessibility :: Input
+#: accessibility-input
+msgid "Input"
+msgstr ""
+
+#: accessibility-input-desc
+msgid "Touch and gesture adjustments"
+msgstr ""
+
+#: tap-hold-delay
+msgid "Tap & Hold Delay"
+msgstr ""
+
+#: short-hold-delay
+#, fuzzy
+msgctxt "short-hold-delay"
+msgid "Short"
+msgstr "Kratko"
+
+#: medium-hold-delay
+msgid "Medium"
+msgstr ""
+
+#: long-hold-delay
+#, fuzzy
+msgctxt "long-hold-delay"
+msgid "Long"
+msgstr "Dugo"
+
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
 msgctxt "improveBrowserOS"
@@ -4959,6 +4999,11 @@ msgid "Please contact your local provider for support."
 msgstr "Za podršku kontaktirajte svojeg lokalnog pružatelja usluge."
 
 #. # Device :: SIM toolkit
+#: simToolkit-header
+#, fuzzy
+msgid "SIM Toolkit"
+msgstr "Alati SIM kartice"
+
 #: operatorServices
 msgid "Operator Services"
 msgstr "Operaterske usluge"
@@ -4969,16 +5014,13 @@ msgid "Help"
 msgstr "Pomoć"
 
 #: operatorServices-helpmenu
-msgid "Help menu"
+#, fuzzy
+msgid "Help Menu"
 msgstr "Meni pomoći"
 
 #: stkAppsNotAvailable
 msgid "SIM card applications not available."
 msgstr "Aplikacije SIM kartice nisu dostupne."
-
-#: simToolkit
-msgid "SIM toolkit"
-msgstr "Alati SIM kartice"
 
 #. # Device :: SIM toolkit - NAI (Next Action Indicator)
 #: stkItemsNaiSetUpCall
@@ -5422,11 +5464,6 @@ msgctxt "doNotTrackSection.ariaLabel"
 msgid "Do Not Track"
 msgstr "Nemoj me pratiti"
 
-#: privacySection.ariaLabel
-msgctxt "privacySection.ariaLabel"
-msgid "Privacy Controls"
-msgstr "Kontrole privatnosti"
-
 #: enableStorageSection.ariaLabel
 msgctxt "enableStorageSection.ariaLabel"
 msgid "USB Storage"
@@ -5446,6 +5483,20 @@ msgstr "Spremište aplikacija"
 msgctxt "batterySection.ariaLabel"
 msgid "Battery"
 msgstr "Baterija"
+
+#~ msgid "Open new browser windows as private windows"
+#~ msgstr "Otvaraj nove prozore browsera kao privatne prozore"
+
+#~ msgctxt "privacy-controls"
+#~ msgid "Privacy Controls"
+#~ msgstr "Kontrole privatnosti"
+
+#~ msgid "No privacy controls app found"
+#~ msgstr "Nije pronađena aplikacija kontrole privatnosti"
+
+#~ msgctxt "privacySection.ariaLabel"
+#~ msgid "Privacy Controls"
+#~ msgstr "Kontrole privatnosti"
 
 #~ msgid "Carrier"
 #~ msgstr "Operater"

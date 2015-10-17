@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-02 16:45+0000\n"
+"POT-Creation-Date: 2015-10-17 12:45+0000\n"
 "PO-Revision-Date: 2015-10-05 20:37+0000\n"
 "Last-Translator: Jānis Marks Gailis <jm-gailis@fai-vianet.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1444077468.000000\n"
@@ -425,6 +425,10 @@ msgstr "Via:"
 msgid "Resend"
 msgstr "Pārsūtīt"
 
+#: message-lateness
+msgid "Lateness:"
+msgstr ""
+
 #. # Search functionality
 #: search
 msgid "Search"
@@ -637,38 +641,53 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: fdnErrorBody[one]
+#, fuzzy
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipient are in your FDN list:"
 msgstr ""
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipients are in your FDN list:<br />{{ numbers }}"
 
 #: fdnErrorBody[two]
+#, fuzzy
 msgctxt "fdnErrorBody[two]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipients are in your FDN list:"
 msgstr ""
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipients are in your FDN list:<br />{{ numbers }}"
 
 #: fdnErrorBody[few]
+#, fuzzy
 msgctxt "fdnErrorBody[few]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipients are in your FDN list:"
 msgstr ""
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipients are in your FDN list:<br />{{ numbers }}"
 
 #: fdnErrorBody[many]
+#, fuzzy
 msgctxt "fdnErrorBody[many]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipients are in your FDN list:"
 msgstr ""
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipients are in your FDN list:<br />{{ numbers }}"
 
 #: fdnErrorBody[other]
+#, fuzzy
 msgctxt "fdnErrorBody[other]"
 msgid ""
 "FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
 "following recipients are in your FDN list:"
 msgstr ""
+"FDN (Fixed Dialing Numbers) is activated. Make sure the SMS center and the "
+"following recipients are in your FDN list:<br />{{ numbers }}"
 
 #: fdnErrorBtnOk
 msgctxt "fdnErrorBtnOk"
@@ -1141,6 +1160,57 @@ msgstr "Izlasīts"
 #: message-delivery-status-error.ariaLabel
 msgid "Error"
 msgstr "Kļūda"
+
+#. # Late arrival notices
+#: late-notice-label.ariaLabel
+msgid "Late arrival"
+msgstr ""
+
+#: late-arrival-notice-in-months
+msgid "{[ plural(lateness) ]}"
+msgstr ""
+
+#: late-arrival-notice-in-months[zero]
+msgctxt "late-arrival-notice-in-months[zero]"
+msgid "{{ lateness }}mth late"
+msgstr ""
+
+#: late-arrival-notice-in-months[one]
+msgctxt "late-arrival-notice-in-months[one]"
+msgid "{{ lateness }}mth late"
+msgstr ""
+
+#: late-arrival-notice-in-months[two]
+msgctxt "late-arrival-notice-in-months[two]"
+msgid "{{ lateness }}mths late"
+msgstr ""
+
+#: late-arrival-notice-in-months[few]
+msgctxt "late-arrival-notice-in-months[few]"
+msgid "{{ lateness }}mths late"
+msgstr ""
+
+#: late-arrival-notice-in-months[many]
+msgctxt "late-arrival-notice-in-months[many]"
+msgid "{{ lateness }}mths late"
+msgstr ""
+
+#: late-arrival-notice-in-months[other]
+msgctxt "late-arrival-notice-in-months[other]"
+msgid "{{ lateness }}mths late"
+msgstr ""
+
+#: late-arrival-notice-in-days
+msgid "{{ lateness }}d late"
+msgstr ""
+
+#: late-arrival-notice-in-hours
+msgid "{{ lateness }}h late"
+msgstr ""
+
+#: late-arrival-notice-in-minutes
+msgid "{{ lateness }}m late"
+msgstr ""
 
 #. # Modal dialog strings
 #: modal-dialog-ok-button

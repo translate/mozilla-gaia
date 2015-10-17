@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firefox\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-02 16:45+0000\n"
+"POT-Creation-Date: 2015-10-17 12:45+0000\n"
 "PO-Revision-Date: 2015-10-01 21:56+0000\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish\n"
@@ -2004,10 +2004,14 @@ msgid "Audible touch tones"
 msgstr "Tadhalltoin inchloiste"
 
 #: touch-tone-short
+#, fuzzy
+msgctxt "touch-tone-short"
 msgid "Short"
 msgstr "Gearr"
 
 #: touch-tone-long
+#, fuzzy
+msgctxt "touch-tone-long"
 msgid "Long"
 msgstr "Fada"
 
@@ -2377,19 +2381,19 @@ msgctxt "home-screens.ariaLabel"
 msgid "Home Screens"
 msgstr "Scáileáin Bhaile"
 
-#: vertical-homescreen-layout
+#: homescreen-layout
 msgid "Layout"
 msgstr "Leagan Amach"
 
-#: vertical-homescreen-icon-layout
+#: homescreen-icon-layout
 msgid "Icon Layout"
 msgstr "Leagan Amach na nDeilbhíní"
 
-#: vertical-homescreen-three-columns
+#: homescreen-three-columns
 msgid "Three Columns"
 msgstr "Trí Cholún"
 
-#: vertical-homescreen-four-columns
+#: homescreen-four-columns
 msgid "Four Columns"
 msgstr "Ceithre Cholún"
 
@@ -2733,6 +2737,10 @@ msgstr ""
 
 #: fxsync-collections
 msgid "Collections"
+msgstr ""
+
+#: fxsync-collections-bookmarks
+msgid "Bookmarks"
 msgstr ""
 
 #: fxsync-collections-history
@@ -3363,23 +3371,22 @@ msgstr ""
 msgid "Clear"
 msgstr "Glan"
 
-#: privateBrowsingDefault
-msgid "Browse privately by default"
-msgstr "Brabhsáil phríobháideach de réir réamhshocraithe"
+#: privateBrowsing
+msgid "Private Browsing"
+msgstr ""
 
-#: privateBrowsingDefaultDetails
-msgid "Open new browser windows as private windows"
-msgstr "Oscail fuinneoga nua mar fhuinneoga príobháideacha"
+#: privateBrowsingDetails
+msgid "Open all external links in new private windows."
+msgstr ""
 
-#. # Security :: Privacy Panel
-#: privacy-controls
-msgctxt "privacy-controls"
-msgid "Privacy Controls"
-msgstr "Rialtáin Phríobháideachais"
+#: trackingProtection
+msgid "Tracking Protection"
+msgstr ""
 
-#: no-privacy-controls
-msgid "No privacy controls app found"
-msgstr "Níor aimsíodh aon aip do na rialtáin phríobháideachais"
+#: trackingProtectionDetails
+msgid ""
+"Protect your browsing activity against potential trackers in all new windows."
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Storage
@@ -4440,6 +4447,10 @@ msgstr "Cumasaigh Pionnáil an Ghréasáin"
 msgid "Enable View Source Gesture"
 msgstr "Cumasaigh Gotha \"Amharc ar Fhoinse\""
 
+#: homescreen-paging
+msgid "Enable Home Screen Paging"
+msgstr ""
+
 #: window-management
 msgid "Window Management"
 msgstr "Bainistiú Fuinneog"
@@ -4760,6 +4771,35 @@ msgstr "Liathscála"
 msgid "Contrast"
 msgstr "Codarsnacht"
 
+#. # Device :: Accessibility :: Input
+#: accessibility-input
+msgid "Input"
+msgstr ""
+
+#: accessibility-input-desc
+msgid "Touch and gesture adjustments"
+msgstr ""
+
+#: tap-hold-delay
+msgid "Tap & Hold Delay"
+msgstr ""
+
+#: short-hold-delay
+#, fuzzy
+msgctxt "short-hold-delay"
+msgid "Short"
+msgstr "Gearr"
+
+#: medium-hold-delay
+msgid "Medium"
+msgstr ""
+
+#: long-hold-delay
+#, fuzzy
+msgctxt "long-hold-delay"
+msgid "Long"
+msgstr "Fada"
+
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
 msgctxt "improveBrowserOS"
@@ -4995,6 +5035,11 @@ msgid "Please contact your local provider for support."
 msgstr "Téigh i dteagmháil le do sholáthraí áitiúil."
 
 #. # Device :: SIM toolkit
+#: simToolkit-header
+#, fuzzy
+msgid "SIM Toolkit"
+msgstr "Bosca uirlisí SIM"
+
 #: operatorServices
 msgid "Operator Services"
 msgstr "Seirbhísí Oibreora"
@@ -5005,16 +5050,13 @@ msgid "Help"
 msgstr "Cabhair"
 
 #: operatorServices-helpmenu
-msgid "Help menu"
+#, fuzzy
+msgid "Help Menu"
 msgstr "Roghchlár cabhrach"
 
 #: stkAppsNotAvailable
 msgid "SIM card applications not available."
 msgstr "Níl aipeanna ar chárta SIM ar fáil."
-
-#: simToolkit
-msgid "SIM toolkit"
-msgstr "Bosca uirlisí SIM"
 
 #. # Device :: SIM toolkit - NAI (Next Action Indicator)
 #: stkItemsNaiSetUpCall
@@ -5458,11 +5500,6 @@ msgctxt "doNotTrackSection.ariaLabel"
 msgid "Do Not Track"
 msgstr "Ná Lorgtar Mé"
 
-#: privacySection.ariaLabel
-msgctxt "privacySection.ariaLabel"
-msgid "Privacy Controls"
-msgstr "Rialtáin Phríobháideachais"
-
 #: enableStorageSection.ariaLabel
 msgctxt "enableStorageSection.ariaLabel"
 msgid "USB Storage"
@@ -5482,6 +5519,23 @@ msgstr "Stóras Aipeanna"
 msgctxt "batterySection.ariaLabel"
 msgid "Battery"
 msgstr "Cadhnra"
+
+#~ msgid "Browse privately by default"
+#~ msgstr "Brabhsáil phríobháideach de réir réamhshocraithe"
+
+#~ msgid "Open new browser windows as private windows"
+#~ msgstr "Oscail fuinneoga nua mar fhuinneoga príobháideacha"
+
+#~ msgctxt "privacy-controls"
+#~ msgid "Privacy Controls"
+#~ msgstr "Rialtáin Phríobháideachais"
+
+#~ msgid "No privacy controls app found"
+#~ msgstr "Níor aimsíodh aon aip do na rialtáin phríobháideachais"
+
+#~ msgctxt "privacySection.ariaLabel"
+#~ msgid "Privacy Controls"
+#~ msgstr "Rialtáin Phríobháideachais"
 
 #~ msgid "Carrier"
 #~ msgstr "Iompróir"

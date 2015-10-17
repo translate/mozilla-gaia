@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-02 16:45+0000\n"
+"POT-Creation-Date: 2015-10-17 12:45+0000\n"
 "PO-Revision-Date: 2015-10-14 16:53+0000\n"
 "Last-Translator: Lyubomir Popov <lyubo@lpopov.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1444841596.000000\n"
@@ -1983,10 +1983,14 @@ msgid "Audible touch tones"
 msgstr "Звук при докосване"
 
 #: touch-tone-short
+#, fuzzy
+msgctxt "touch-tone-short"
 msgid "Short"
 msgstr "Къс"
 
 #: touch-tone-long
+#, fuzzy
+msgctxt "touch-tone-long"
 msgid "Long"
 msgstr "Дълъг"
 
@@ -2351,19 +2355,19 @@ msgctxt "home-screens.ariaLabel"
 msgid "Home Screens"
 msgstr "Начални екрани"
 
-#: vertical-homescreen-layout
+#: homescreen-layout
 msgid "Layout"
 msgstr "Оформление"
 
-#: vertical-homescreen-icon-layout
+#: homescreen-icon-layout
 msgid "Icon Layout"
 msgstr "Групиране на пиктограми"
 
-#: vertical-homescreen-three-columns
+#: homescreen-three-columns
 msgid "Three Columns"
 msgstr "три колони"
 
-#: vertical-homescreen-four-columns
+#: homescreen-four-columns
 msgid "Four Columns"
 msgstr "четири колони"
 
@@ -2710,6 +2714,10 @@ msgstr "Последна синхронизация {{when}}"
 #: fxsync-collections
 msgid "Collections"
 msgstr "Колекции"
+
+#: fxsync-collections-bookmarks
+msgid "Bookmarks"
+msgstr ""
 
 #: fxsync-collections-history
 msgid "History"
@@ -3322,23 +3330,22 @@ msgstr "Изчистване на бисквитки и съхранени да�
 msgid "Clear"
 msgstr "Изчистване"
 
-#: privateBrowsingDefault
-msgid "Browse privately by default"
-msgstr "Поверително сърфиране по подразбиране"
+#: privateBrowsing
+msgid "Private Browsing"
+msgstr ""
 
-#: privateBrowsingDefaultDetails
-msgid "Open new browser windows as private windows"
-msgstr "Отваряне на нови прозорци на браузъра, като поверителни"
+#: privateBrowsingDetails
+msgid "Open all external links in new private windows."
+msgstr ""
 
-#. # Security :: Privacy Panel
-#: privacy-controls
-msgctxt "privacy-controls"
-msgid "Privacy Controls"
-msgstr "Достъп до лични данни"
+#: trackingProtection
+msgid "Tracking Protection"
+msgstr ""
 
-#: no-privacy-controls
-msgid "No privacy controls app found"
-msgstr "Няма приложение за достъп до лични данни"
+#: trackingProtectionDetails
+msgid ""
+"Protect your browsing activity against potential trackers in all new windows."
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Storage
@@ -4401,6 +4408,10 @@ msgstr ""
 msgid "Enable View Source Gesture"
 msgstr "Включване на жеста за преглед на изходния код"
 
+#: homescreen-paging
+msgid "Enable Home Screen Paging"
+msgstr ""
+
 #: window-management
 msgid "Window Management"
 msgstr "Управление на прозорци"
@@ -4717,6 +4728,35 @@ msgstr "Нива на сиво"
 msgid "Contrast"
 msgstr "Контраст"
 
+#. # Device :: Accessibility :: Input
+#: accessibility-input
+msgid "Input"
+msgstr ""
+
+#: accessibility-input-desc
+msgid "Touch and gesture adjustments"
+msgstr ""
+
+#: tap-hold-delay
+msgid "Tap & Hold Delay"
+msgstr ""
+
+#: short-hold-delay
+#, fuzzy
+msgctxt "short-hold-delay"
+msgid "Short"
+msgstr "Къс"
+
+#: medium-hold-delay
+msgid "Medium"
+msgstr ""
+
+#: long-hold-delay
+#, fuzzy
+msgctxt "long-hold-delay"
+msgid "Long"
+msgstr "Дълъг"
+
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
 msgctxt "improveBrowserOS"
@@ -4949,6 +4989,11 @@ msgid "Please contact your local provider for support."
 msgstr "Моля, за поддръжка се свържете с местния доставчик."
 
 #. # Device :: SIM toolkit
+#: simToolkit-header
+#, fuzzy
+msgid "SIM Toolkit"
+msgstr "SIM инструментариум"
+
 #: operatorServices
 msgid "Operator Services"
 msgstr "Услуги на мобилните оператори"
@@ -4959,16 +5004,13 @@ msgid "Help"
 msgstr "Помощ"
 
 #: operatorServices-helpmenu
-msgid "Help menu"
+#, fuzzy
+msgid "Help Menu"
 msgstr "Помощно меню"
 
 #: stkAppsNotAvailable
 msgid "SIM card applications not available."
 msgstr "Не са достъпни приложенията на SIM картата."
-
-#: simToolkit
-msgid "SIM toolkit"
-msgstr "SIM инструментариум"
 
 #. # Device :: SIM toolkit - NAI (Next Action Indicator)
 #: stkItemsNaiSetUpCall
@@ -5406,9 +5448,10 @@ msgid "Find My Device"
 msgstr "Изгубено устройство"
 
 #: fxsyncSection.ariaLabel
+#, fuzzy
 msgctxt "fxsyncSection.ariaLabel"
 msgid "Firefox Sync"
-msgstr ""
+msgstr "Firefox Sync"
 
 #: screenLockSection.ariaLabel
 #, fuzzy
@@ -5427,12 +5470,6 @@ msgstr "Защита на SIM"
 msgctxt "doNotTrackSection.ariaLabel"
 msgid "Do Not Track"
 msgstr "Без проследяване"
-
-#: privacySection.ariaLabel
-#, fuzzy
-msgctxt "privacySection.ariaLabel"
-msgid "Privacy Controls"
-msgstr "Достъп до лични данни"
 
 #: enableStorageSection.ariaLabel
 #, fuzzy
@@ -5457,6 +5494,24 @@ msgstr "Памет за приложения"
 msgctxt "batterySection.ariaLabel"
 msgid "Battery"
 msgstr "Батерия"
+
+#~ msgid "Browse privately by default"
+#~ msgstr "Поверително сърфиране по подразбиране"
+
+#~ msgid "Open new browser windows as private windows"
+#~ msgstr "Отваряне на нови прозорци на браузъра, като поверителни"
+
+#~ msgctxt "privacy-controls"
+#~ msgid "Privacy Controls"
+#~ msgstr "Достъп до лични данни"
+
+#~ msgid "No privacy controls app found"
+#~ msgstr "Няма приложение за достъп до лични данни"
+
+#, fuzzy
+#~ msgctxt "privacySection.ariaLabel"
+#~ msgid "Privacy Controls"
+#~ msgstr "Достъп до лични данни"
 
 #~ msgid "Carrier"
 #~ msgstr "Оператор"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-02 16:45+0000\n"
+"POT-Creation-Date: 2015-10-17 12:45+0000\n"
 "PO-Revision-Date: 2015-10-12 17:24+0000\n"
 "Last-Translator: zupe <zupeiza@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1444670677.000000\n"
@@ -1992,10 +1992,14 @@ msgid "Audible touch tones"
 msgstr "Tonos audibles de toque"
 
 #: touch-tone-short
+#, fuzzy
+msgctxt "touch-tone-short"
 msgid "Short"
 msgstr "Cortos"
 
 #: touch-tone-long
+#, fuzzy
+msgctxt "touch-tone-long"
 msgid "Long"
 msgstr "Largos"
 
@@ -2360,19 +2364,19 @@ msgctxt "home-screens.ariaLabel"
 msgid "Home Screens"
 msgstr "Pantallas de inicio"
 
-#: vertical-homescreen-layout
+#: homescreen-layout
 msgid "Layout"
 msgstr "Disposición"
 
-#: vertical-homescreen-icon-layout
+#: homescreen-icon-layout
 msgid "Icon Layout"
 msgstr "Disposición de iconos"
 
-#: vertical-homescreen-three-columns
+#: homescreen-three-columns
 msgid "Three Columns"
 msgstr "Tres columnas"
 
-#: vertical-homescreen-four-columns
+#: homescreen-four-columns
 msgid "Four Columns"
 msgstr "Cuatro columnas"
 
@@ -2718,6 +2722,10 @@ msgstr "Última vez sincronizado {{when}}"
 #: fxsync-collections
 msgid "Collections"
 msgstr "Colecciones"
+
+#: fxsync-collections-bookmarks
+msgid "Bookmarks"
+msgstr ""
 
 #: fxsync-collections-history
 msgid "History"
@@ -3344,23 +3352,22 @@ msgstr ""
 msgid "Clear"
 msgstr "Borrar"
 
-#: privateBrowsingDefault
-msgid "Browse privately by default"
-msgstr "Navegación privada predeterminada"
+#: privateBrowsing
+msgid "Private Browsing"
+msgstr ""
 
-#: privateBrowsingDefaultDetails
-msgid "Open new browser windows as private windows"
-msgstr "Abrir ventanas nuevas del navegador como privadas"
+#: privateBrowsingDetails
+msgid "Open all external links in new private windows."
+msgstr ""
 
-#. # Security :: Privacy Panel
-#: privacy-controls
-msgctxt "privacy-controls"
-msgid "Privacy Controls"
-msgstr "Controles de privacidad"
+#: trackingProtection
+msgid "Tracking Protection"
+msgstr ""
 
-#: no-privacy-controls
-msgid "No privacy controls app found"
-msgstr "Ninguna app de panel de privacidad"
+#: trackingProtectionDetails
+msgid ""
+"Protect your browsing activity against potential trackers in all new windows."
+msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #. # Storage
@@ -4423,6 +4430,10 @@ msgstr "Activar anclar la Web"
 msgid "Enable View Source Gesture"
 msgstr "Activar gesto para ver código fuente"
 
+#: homescreen-paging
+msgid "Enable Home Screen Paging"
+msgstr ""
+
 #: window-management
 msgid "Window Management"
 msgstr "Administración de ventanas"
@@ -4741,6 +4752,35 @@ msgstr "Escala grises"
 msgid "Contrast"
 msgstr "Contraste"
 
+#. # Device :: Accessibility :: Input
+#: accessibility-input
+msgid "Input"
+msgstr ""
+
+#: accessibility-input-desc
+msgid "Touch and gesture adjustments"
+msgstr ""
+
+#: tap-hold-delay
+msgid "Tap & Hold Delay"
+msgstr ""
+
+#: short-hold-delay
+#, fuzzy
+msgctxt "short-hold-delay"
+msgid "Short"
+msgstr "Cortos"
+
+#: medium-hold-delay
+msgid "Medium"
+msgstr ""
+
+#: long-hold-delay
+#, fuzzy
+msgctxt "long-hold-delay"
+msgid "Long"
+msgstr "Largos"
+
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
 msgctxt "improveBrowserOS"
@@ -4974,6 +5014,11 @@ msgid "Please contact your local provider for support."
 msgstr "Contacte con su operador local para obtener asistencia técnica."
 
 #. # Device :: SIM toolkit
+#: simToolkit-header
+#, fuzzy
+msgid "SIM Toolkit"
+msgstr "Herramientas SIM"
+
 #: operatorServices
 msgid "Operator Services"
 msgstr "Servicios de operador"
@@ -4984,16 +5029,13 @@ msgid "Help"
 msgstr "Ayuda"
 
 #: operatorServices-helpmenu
-msgid "Help menu"
+#, fuzzy
+msgid "Help Menu"
 msgstr "Menú de ayuda"
 
 #: stkAppsNotAvailable
 msgid "SIM card applications not available."
 msgstr "Las aplicaciones SIM no están disponibles."
-
-#: simToolkit
-msgid "SIM toolkit"
-msgstr "Herramientas SIM"
 
 #. # Device :: SIM toolkit - NAI (Next Action Indicator)
 #: stkItemsNaiSetUpCall
@@ -5436,11 +5478,6 @@ msgctxt "doNotTrackSection.ariaLabel"
 msgid "Do Not Track"
 msgstr "No quiero ser rastreado"
 
-#: privacySection.ariaLabel
-msgctxt "privacySection.ariaLabel"
-msgid "Privacy Controls"
-msgstr "Controles de privacidad"
-
 #: enableStorageSection.ariaLabel
 msgctxt "enableStorageSection.ariaLabel"
 msgid "USB Storage"
@@ -5460,6 +5497,23 @@ msgstr "Espacio para apps"
 msgctxt "batterySection.ariaLabel"
 msgid "Battery"
 msgstr "Batería"
+
+#~ msgid "Browse privately by default"
+#~ msgstr "Navegación privada predeterminada"
+
+#~ msgid "Open new browser windows as private windows"
+#~ msgstr "Abrir ventanas nuevas del navegador como privadas"
+
+#~ msgctxt "privacy-controls"
+#~ msgid "Privacy Controls"
+#~ msgstr "Controles de privacidad"
+
+#~ msgid "No privacy controls app found"
+#~ msgstr "Ninguna app de panel de privacidad"
+
+#~ msgctxt "privacySection.ariaLabel"
+#~ msgid "Privacy Controls"
+#~ msgstr "Controles de privacidad"
 
 #~ msgid "Carrier"
 #~ msgstr "Operador"
