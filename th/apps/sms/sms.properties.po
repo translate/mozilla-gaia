@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-17 12:45+0000\n"
-"PO-Revision-Date: 2015-10-17 16:59+0000\n"
+"PO-Revision-Date: 2015-10-18 10:20+0000\n"
 "Last-Translator: Teerapat Taechaiya <teerapatxtop@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: th\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1445101176.000000\n"
+"X-POOTLE-MTIME: 1445163642.000000\n"
 
 #. # Headers
 #: messages
@@ -59,7 +59,7 @@ msgstr "ลบ"
 
 #: delete-thread
 msgid "Delete thread"
-msgstr ""
+msgstr "ลบกระทู้"
 
 #: mark-as-read
 msgid "Mark as read"
@@ -154,7 +154,7 @@ msgstr "เลือกแล้ว {{n}}"
 #. # Options menu
 #: selectThreads-label
 msgid "Select Threads"
-msgstr ""
+msgstr "เลือกกระทู้"
 
 #: selectMessages-label
 msgid "Select Messages"
@@ -411,7 +411,7 @@ msgstr "ส่งใหม่"
 
 #: message-lateness
 msgid "Lateness:"
-msgstr ""
+msgstr "ความล่าช้า:"
 
 #. # Search functionality
 #: search
@@ -506,38 +506,32 @@ msgid "{[ plural(n) ]}"
 msgstr "{[ plural(n) ]}"
 
 #: deleteThreads-confirmation-message[zero]
-#, fuzzy
 msgid "Please select message threads to be deleted."
-msgstr "โปรดเลือกข้อความที่จะลบ"
+msgstr "โปรดเลือกกระทู้ข้อความที่จะลบ"
 
 #: deleteThreads-confirmation-message[one]
-#, fuzzy
 msgid "Delete selected message thread?"
-msgstr "ลบข้อความที่เลือก?"
+msgstr "ลบกระทู้ข้อความที่เลือก?"
 
 #: deleteThreads-confirmation-message[two]
-#, fuzzy
 msgctxt "deleteThreads-confirmation-message[two]"
 msgid "Delete {{n}} selected message threads?"
-msgstr "ลบ {{n}} ข้อความที่เลือก?"
+msgstr "ลบ {{n}} กระทู้ข้อความที่เลือก?"
 
 #: deleteThreads-confirmation-message[few]
-#, fuzzy
 msgctxt "deleteThreads-confirmation-message[few]"
 msgid "Delete {{n}} selected message threads?"
-msgstr "ลบ {{n}} ข้อความที่เลือก?"
+msgstr "ลบ {{n}} กระทู้ข้อความที่เลือก?"
 
 #: deleteThreads-confirmation-message[many]
-#, fuzzy
 msgctxt "deleteThreads-confirmation-message[many]"
 msgid "Delete {{n}} selected message threads?"
-msgstr "ลบ {{n}} ข้อความที่เลือก?"
+msgstr "ลบ {{n}} กระทู้ข้อความที่เลือก?"
 
 #: deleteThreads-confirmation-message[other]
-#, fuzzy
 msgctxt "deleteThreads-confirmation-message[other]"
 msgid "Delete {{n}} selected message threads?"
-msgstr "ลบ {{n}} ข้อความที่เลือก?"
+msgstr "ลบ {{n}} กระทู้ข้อความที่เลือก?"
 
 #: new-message-notice-text
 msgid "New message from"
@@ -561,7 +555,7 @@ msgstr "ข้อความไม่ถูกส่ง"
 
 #: sendDefaultErrorBody
 msgid "There was a problem sending the message. Please try again."
-msgstr ""
+msgstr "เกิดปัญหาในการส่งข้อความ โปรดลองอีกครั้ง"
 
 #: sendDefaultErrorBtnOk
 msgctxt "sendDefaultErrorBtnOk"
@@ -574,7 +568,7 @@ msgstr ""
 
 #: sendMissingSimCardBody
 msgid "Insert a valid SIM card to continue."
-msgstr ""
+msgstr "ใส่การ์ด SIM ที่ถูกต้องเพื่อดำเนินการต่อ"
 
 #: sendMissingSimCardBtnOk
 msgctxt "sendMissingSimCardBtnOk"
@@ -708,11 +702,11 @@ msgstr "{{switchSimToRetrieveConfirm}}"
 
 #: sendNoSignalErrorTitle
 msgid "No network coverage"
-msgstr ""
+msgstr "ไม่มีความครอบคลุมของเครือข่าย"
 
 #: sendNoSignalErrorBody
 msgid "Make sure you have a mobile signal and try again."
-msgstr ""
+msgstr "ตรวจสอบให้แน่ใจว่าคุณมีสัญญาณมือถือและลองอีกครั้ง"
 
 #: sendNoSignalErrorBtnOk
 msgctxt "sendNoSignalErrorBtnOk"
@@ -725,7 +719,7 @@ msgstr "ไม่พบข้อความ"
 
 #: sendNotFoundErrorBody
 msgid "The message you’re looking for is no longer available."
-msgstr ""
+msgstr "ข้อความที่คุณกำลังมองหาไม่มีอีกต่อไป"
 
 #: sendNotFoundErrorBtnOk
 msgctxt "sendNotFoundErrorBtnOk"
@@ -738,7 +732,7 @@ msgstr "หมายเลขไม่ถูกต้อง"
 
 #: sendInvalidAddressErrorBody
 msgid "Make sure the mobile number you’re sending to is valid."
-msgstr ""
+msgstr "ตรวจสอบให้แน่ใจว่าหมายเลขมือถือที่คุณกำลังส่งไปหานั้นถูกต้อง"
 
 #: sendInvalidAddressErrorBtnOk
 msgctxt "sendInvalidAddressErrorBtnOk"
@@ -750,10 +744,11 @@ msgid "Unable to download"
 msgstr "ไม่สามารถดาวน์โหลด"
 
 #: simNotMatchedErrorBody
+#, fuzzy
 msgid ""
 "Please make sure the SIM card inserted is the one used to receive this "
 "message."
-msgstr ""
+msgstr "โปรดตรวจสอบให้แน่ใจว่าการ์ด SIM ที่คุณใส่เป็นอันเดียวกันกับที่ใช้รับข้อความนี้"
 
 #: simNotMatchedErrorBtnOk
 msgctxt "simNotMatchedErrorBtnOk"
@@ -821,7 +816,7 @@ msgstr "ตัวเลือกข้อความ"
 
 #: thread-options
 msgid "Thread options"
-msgstr ""
+msgstr "ตัวเลือกกระทู้"
 
 #: forward
 msgid "Forward"
@@ -950,7 +945,7 @@ msgstr "ไม่มีชื่อ"
 #. # MMS as the last message.
 #: mms-label
 msgid "MMS"
-msgstr ""
+msgstr "MMS"
 
 #. # LOCALIZATION NOTE (attached-files-too-large): the English translation does not need the
 #. # actual number of files. If your translation needs it, you can still add it
@@ -1108,7 +1103,7 @@ msgstr "ข้อผิดพลาด"
 #. # Late arrival notices
 #: late-notice-label.ariaLabel
 msgid "Late arrival"
-msgstr ""
+msgstr "มาถึงล่าช้า"
 
 #: late-arrival-notice-in-months
 msgid "{[ plural(lateness) ]}"
@@ -1117,44 +1112,44 @@ msgstr "{[ plural(lateness) ]}"
 #: late-arrival-notice-in-months[zero]
 msgctxt "late-arrival-notice-in-months[zero]"
 msgid "{{ lateness }}mth late"
-msgstr ""
+msgstr "ช้าไป {{ lateness }} เดือน"
 
 #: late-arrival-notice-in-months[one]
 msgctxt "late-arrival-notice-in-months[one]"
 msgid "{{ lateness }}mth late"
-msgstr ""
+msgstr "ช้าไป {{ lateness }} เดือน"
 
 #: late-arrival-notice-in-months[two]
 msgctxt "late-arrival-notice-in-months[two]"
 msgid "{{ lateness }}mths late"
-msgstr ""
+msgstr "ช้าไป {{ lateness }} เดือน"
 
 #: late-arrival-notice-in-months[few]
 msgctxt "late-arrival-notice-in-months[few]"
 msgid "{{ lateness }}mths late"
-msgstr ""
+msgstr "ช้าไป {{ lateness }} เดือน"
 
 #: late-arrival-notice-in-months[many]
 msgctxt "late-arrival-notice-in-months[many]"
 msgid "{{ lateness }}mths late"
-msgstr ""
+msgstr "ช้าไป {{ lateness }} เดือน"
 
 #: late-arrival-notice-in-months[other]
 msgctxt "late-arrival-notice-in-months[other]"
 msgid "{{ lateness }}mths late"
-msgstr ""
+msgstr "ช้าไป {{ lateness }} เดือน"
 
 #: late-arrival-notice-in-days
 msgid "{{ lateness }}d late"
-msgstr ""
+msgstr "ช้าไป {{ lateness }} วัน"
 
 #: late-arrival-notice-in-hours
 msgid "{{ lateness }}h late"
-msgstr ""
+msgstr "ช้าไป {{ lateness }} ชั่วโมง"
 
 #: late-arrival-notice-in-minutes
 msgid "{{ lateness }}m late"
-msgstr ""
+msgstr "ช้าไป {{ lateness }} นาที"
 
 #. # Modal dialog strings
 #: modal-dialog-ok-button
