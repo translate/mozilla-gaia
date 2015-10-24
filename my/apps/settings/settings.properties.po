@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-17 12:45+0000\n"
+"POT-Creation-Date: 2015-10-24 15:46+0000\n"
 "PO-Revision-Date: 2015-09-26 19:48+0000\n"
 "Last-Translator: La Min Ko (လမင်းကို) <lminko.lmk@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,6 +65,12 @@ msgstr "ပြန်စမည်"
 #: factory-reset
 msgid "Factory Reset"
 msgstr ""
+
+#: delete
+#, fuzzy
+msgctxt "delete"
+msgid "Delete"
+msgstr "ဖျက်ရန်"
 
 #: cancel
 msgid "Cancel"
@@ -2756,6 +2762,7 @@ msgid "Bookmarks"
 msgstr ""
 
 #: fxsync-collections-history
+msgctxt "fxsync-collections-history"
 msgid "History"
 msgstr ""
 
@@ -2774,6 +2781,28 @@ msgstr ""
 
 #: fxsync-privacy
 msgid "Privacy Notice"
+msgstr ""
+
+#: fxsync-error-invalid-account
+msgid "This account is inactive"
+msgstr ""
+
+#: fxsync-error-invalid-account-explanation
+msgid ""
+"You need to activate Firefox Sync on Desktop or Android first and then try "
+"again"
+msgstr ""
+
+#: fxsync-error-offline
+msgid "No network connection"
+msgstr ""
+
+#: fxsync-error-offline-explanation
+msgid "You need to be online to use Firefox Sync"
+msgstr ""
+
+#: fxsync-error-unknown
+msgid "Unknown error"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -3339,26 +3368,23 @@ msgstr "အင်တာနက်သုံးဆွဲမှု လုံခြ�
 msgid "{{browsingPrivacy}}"
 msgstr "{{browsingPrivacy}}"
 
-#: confirm-clear-title
-msgctxt "confirm-clear-title"
-msgid "Confirmation"
-msgstr "အတည်ပြုချက်"
+#: confirm-clear-history-title
+msgid "Clear history"
+msgstr ""
 
-#: clear-browsing-history
-msgid "Clear browsing history"
-msgstr "အင်တာနက်သုံး မှတ်တမ်းအား ရှင်းမည်"
+#: confirm-clear-history-desc
+msgid ""
+"Are you sure you want to clear your history? When using your Firefox "
+"Account, synced history will also be cleared."
+msgstr ""
 
-#: confirm-clear-browsing-history
-msgid "Clear browsing history?"
-msgstr "အင်တာနက်သုံး မှတ်တမ်းအား ရှင်းမလား?"
+#: confirm-clear-cookies-cache-title
+msgid "Delete cookies & cache"
+msgstr ""
 
-#: clear-cookies-and-stored-data
-msgid "Clear cookies and stored data"
-msgstr "သိမ်းထားသော အချက်အလက်များ နှင့် ကွတ်ကီးများအားရှင်း"
-
-#: confirm-clear-cookies-and-stored-data
-msgid "Clear cookies and other data stored by sites on this device?"
-msgstr "ကွတ်ကီးများ နှင့် အခြားသိမ်းဆည်းထားသော အချက်အလက်များအား ယခု ဖုန်းမှ ဖျက်ပစ်မလား?"
+#: confirm-clear-cookies-cache-desc
+msgid "Are you sure you want to delete your cookies and cache?"
+msgstr ""
 
 #: clear
 msgid "Clear"
@@ -3379,6 +3405,35 @@ msgstr ""
 #: trackingProtectionDetails
 msgid ""
 "Protect your browsing activity against potential trackers in all new windows."
+msgstr ""
+
+#: browser-privacy-history-header
+msgctxt "browser-privacy-history-header"
+msgid "History"
+msgstr ""
+
+#: browser-privacy-history-desc
+msgid ""
+"Clear your browsing history from this device. When using your Firefox "
+"Account, synced history will also be cleared."
+msgstr ""
+
+#: browser-privacy-history-button
+msgid "Clear History"
+msgstr ""
+
+#: browser-privacy-cookies-cache-header
+msgid "Cookies & Cache"
+msgstr ""
+
+#: browser-privacy-cookies-cache-desc
+msgid ""
+"Delete stored data (such as cookies) from this device. Login information and "
+"preferences will no longer be remembered."
+msgstr ""
+
+#: browser-privacy-cookies-cache-button
+msgid "Delete Cookies & Cache"
 msgstr ""
 
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
@@ -4224,10 +4279,6 @@ msgstr "Style"
 msgctxt "hud-other"
 msgid "Other"
 msgstr "Other"
-
-#: hud-telemetry
-msgid "Telemetry"
-msgstr ""
 
 #: software
 msgid "Software"
@@ -5556,6 +5607,58 @@ msgstr "အက်ပလီကေးရှင်း သိမ်းရန်န�
 msgctxt "batterySection.ariaLabel"
 msgid "Battery"
 msgstr "ဘတ်ထရီ"
+
+#: helpImprove
+msgid ""
+"Help us improve our products and services by automatically sending analytics "
+"data. Data rates and charges may apply."
+msgstr ""
+
+#: learn-more-privacy
+msgid "Read our <a>Privacy Notice</a>"
+msgstr ""
+
+#: basicMetricsRadio
+msgid "Basic"
+msgstr ""
+
+#: enhancedMetricsRadio
+msgid "Enhanced"
+msgstr ""
+
+#: noneMetricsRadio
+#, fuzzy
+msgctxt "noneMetricsRadio"
+msgid "None"
+msgstr "ဘာမျှမဟုတ်"
+
+#: basicMetricsExplain
+msgid "Send app usage and error reports."
+msgstr ""
+
+#: enhancedMetricsExplain
+msgid "Send Basic report plus diagnostic information."
+msgstr ""
+
+#: noneMetricsExplain
+msgid "Do not send any data."
+msgstr ""
+
+#~ msgctxt "confirm-clear-title"
+#~ msgid "Confirmation"
+#~ msgstr "အတည်ပြုချက်"
+
+#~ msgid "Clear browsing history"
+#~ msgstr "အင်တာနက်သုံး မှတ်တမ်းအား ရှင်းမည်"
+
+#~ msgid "Clear browsing history?"
+#~ msgstr "အင်တာနက်သုံး မှတ်တမ်းအား ရှင်းမလား?"
+
+#~ msgid "Clear cookies and stored data"
+#~ msgstr "သိမ်းထားသော အချက်အလက်များ နှင့် ကွတ်ကီးများအားရှင်း"
+
+#~ msgid "Clear cookies and other data stored by sites on this device?"
+#~ msgstr "ကွတ်ကီးများ နှင့် အခြားသိမ်းဆည်းထားသော အချက်အလက်များအား ယခု ဖုန်းမှ ဖျက်ပစ်မလား?"
 
 #~ msgid "Carrier"
 #~ msgstr "ဆက်သွယ်ရေးဝန်ဆောင်မှု"
