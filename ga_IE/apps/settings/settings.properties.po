@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firefox\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-31 05:45+0000\n"
+"POT-Creation-Date: 2015-11-04 15:45+0000\n"
 "PO-Revision-Date: 2015-10-27 18:41+0000\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish\n"
@@ -353,7 +353,8 @@ msgid "Link speed"
 msgstr "Luas an naisc"
 
 #: linkSpeedMbs
-msgid "{{ linkSpeed }} Mbit/s"
+#, fuzzy
+msgid "{{linkSpeed}} Mbit/s"
 msgstr "{{ linkSpeed }} MGiotán/s"
 
 # "Neart an chomhartha" a bit too long
@@ -455,7 +456,8 @@ msgstr "Seoladh MAC"
 #. # os = OS version. For example: 2.0.
 #. # The whole string may look like this: "Firefox OS 2.0"
 #: deviceInfo_software
-msgid "{{ brandShortName }} {{ os }}"
+#, fuzzy
+msgid "{{brandShortName}} {{os}}"
 msgstr "{{ brandShortName }} {{ os }}"
 
 #: macUnavailable
@@ -865,6 +867,10 @@ msgstr "Ní mheaitseálann an cód faire"
 #: callBarring-update-item-error
 msgid "Error while updating the item: {{error}}."
 msgstr "Tharla earráid agus an mhír á nuashonrú: {{error}}"
+
+#: callBarring-update-generic-error
+msgid "Network or passcode error"
+msgstr ""
 
 #: callBarring-change-passcode-success
 msgid "Passcode changed."
@@ -1536,25 +1542,17 @@ msgstr "MTU"
 msgid "Turn ON data connection?"
 msgstr "Cuir ceangal sonraí AR SIÚL?"
 
-#: dataConnection-warning-message
-msgid ""
-"Applications will automatically fetch data via data connection when "
-"required. Additional data charges may apply."
+#: dataConnection-warning-message-short
+msgid "Automatically fetch mobile network data."
 msgstr ""
-"Íosluchtóidh aipeanna sonraí thar cheangal sonraí nuair is gá. Seans go "
-"ngearrfar táille bhreise ort."
 
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "Cuir sonraí fánaíochta AR SIÚL?"
 
-#: dataRoaming-warning-message
-msgid ""
-"Depending on your service agreement, extra charges may apply for data when "
-"you are in a roaming area."
+#: dataRoaming-warning-message-short
+msgid "Fetch data when roaming."
 msgstr ""
-"Seans go ngearrfar táille sa bhreis ort chun ceangal sonraí a úsáid i "
-"limistéar fánaíochta, ag brath ar an gconradh seirbhíse atá agat."
 
 #: change-apn-warning-message1
 msgid ""
@@ -2819,15 +2817,13 @@ msgstr "Cúlghair"
 msgid "Ask"
 msgstr "Fiafraigh i gcónaí"
 
-# better than a verb in context
-#: deny
-msgid "Deny"
-msgstr "Diúltaithe"
+#: block
+msgid "Block"
+msgstr ""
 
-# better than a verb in context
-#: allow
-msgid "Grant"
-msgstr "Ceadaithe"
+#: allow2
+msgid "Allow"
+msgstr ""
 
 #: uninstallApp
 msgid "Uninstall App"
@@ -5218,7 +5214,8 @@ msgid "{{settings-dialog-prompt}}"
 msgstr "{{settings-dialog-prompt}}"
 
 #: accessible-app-icon.ariaLabel
-msgid "Icon for {{ appName }} app"
+#, fuzzy
+msgid "Icon for {{appName}} app"
 msgstr "Deilbhín aip {{ appName }}"
 
 #. # Addongs settings
@@ -5241,7 +5238,8 @@ msgid "{{addons}}"
 msgstr "{{addons}}"
 
 #: addon-details-header1
-msgid "{{ appName }}"
+#, fuzzy
+msgid "{{appName}}"
 msgstr "{{ appName }}"
 
 #: addon-enable
@@ -5254,7 +5252,8 @@ msgid "Description"
 msgstr "Cur Síos"
 
 #: addon-developer-name
-msgid "{{ developerName }}"
+#, fuzzy
+msgid "{{developerName}}"
 msgstr "{{ developerName }}"
 
 #: addon-targets
@@ -5544,6 +5543,28 @@ msgstr ""
 #: noneMetricsExplain
 msgid "Do not send any data."
 msgstr "Ná seol aon sonraí."
+
+#~ msgid ""
+#~ "Applications will automatically fetch data via data connection when "
+#~ "required. Additional data charges may apply."
+#~ msgstr ""
+#~ "Íosluchtóidh aipeanna sonraí thar cheangal sonraí nuair is gá. Seans go "
+#~ "ngearrfar táille bhreise ort."
+
+#~ msgid ""
+#~ "Depending on your service agreement, extra charges may apply for data "
+#~ "when you are in a roaming area."
+#~ msgstr ""
+#~ "Seans go ngearrfar táille sa bhreis ort chun ceangal sonraí a úsáid i "
+#~ "limistéar fánaíochta, ag brath ar an gconradh seirbhíse atá agat."
+
+# better than a verb in context
+#~ msgid "Deny"
+#~ msgstr "Diúltaithe"
+
+# better than a verb in context
+#~ msgid "Grant"
+#~ msgstr "Ceadaithe"
 
 #~ msgid "Sync now"
 #~ msgstr "Sioncrónaigh anois"

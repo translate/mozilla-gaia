@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-31 05:45+0000\n"
+"POT-Creation-Date: 2015-11-04 15:45+0000\n"
 "PO-Revision-Date: 2015-10-21 20:04+0000\n"
 "Last-Translator: Omshivaprakash H L <omshivaprakash@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -359,7 +359,8 @@ msgid "Link speed"
 msgstr "ಕೊಂಡಿ ವೇಗ"
 
 #: linkSpeedMbs
-msgid "{{ linkSpeed }} Mbit/s"
+#, fuzzy
+msgid "{{linkSpeed}} Mbit/s"
 msgstr "{{ linkSpeed }} Mbit/s"
 
 #: signalStrength
@@ -459,7 +460,8 @@ msgstr "MAC ವಿಳಾಸ"
 #. # os = OS version. For example: 2.0.
 #. # The whole string may look like this: "Firefox OS 2.0"
 #: deviceInfo_software
-msgid "{{ brandShortName }} {{ os }}"
+#, fuzzy
+msgid "{{brandShortName}} {{os}}"
 msgstr "{{ brandShortName }} {{ os }}"
 
 #: macUnavailable
@@ -871,6 +873,10 @@ msgstr "ಗುಪ್ತಸಂಕೇತ ಹೊಂದುತ್ತಿಲ್ಲ."
 #: callBarring-update-item-error
 msgid "Error while updating the item: {{error}}."
 msgstr "ವಸ್ತುವನ್ನು ಅಪ್ಡೇಟ್ ಮಾಡುವಾಗ ದೋಷ ಕಂಡುಬಂದಿದೆ: {{error}}."
+
+#: callBarring-update-generic-error
+msgid "Network or passcode error"
+msgstr ""
 
 #: callBarring-change-passcode-success
 msgid "Passcode changed."
@@ -1547,25 +1553,17 @@ msgstr ""
 msgid "Turn ON data connection?"
 msgstr "ಡೇಟಾ ಸಂಪರ್ಕವನ್ನು ON ಮಾಡಬೇಕೆ?"
 
-#: dataConnection-warning-message
-msgid ""
-"Applications will automatically fetch data via data connection when "
-"required. Additional data charges may apply."
+#: dataConnection-warning-message-short
+msgid "Automatically fetch mobile network data."
 msgstr ""
-"ಅನ್ವಯಗಳು ತಾವಾಗಿಯೇ ಬೇಕಿದ್ದಾಗ ಡೇಟಾ ಸಂಪರ್ಕದ ಮೂಲಕ ಡೇಟಾ ಪಡೆಯಬೇಕಾಗಿದೆ. ಇದಕ್ಕೆ ಹೆಚ್ಚಿನ "
-"ಹಣ ತೆರಬೇಕಾಗಬಹುದು."
 
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "ಡೇಟಾ ರೋಮಿಂಗ್ ON ಮಾಡಬೇಕೆ?"
 
-#: dataRoaming-warning-message
-msgid ""
-"Depending on your service agreement, extra charges may apply for data when "
-"you are in a roaming area."
+#: dataRoaming-warning-message-short
+msgid "Fetch data when roaming."
 msgstr ""
-"ನಿಮ್ಮ ಸೇವಾ ಒಪ್ಪಂದದ ಪ್ರಕಾರ, ನೀವು roamingನಲ್ಲಿರುವಾಗ ಡೇಟಾಗಾಗಿ ಹೆಚ್ಚಿನ ಹಣ "
-"ತೆರಬೇಕಾಗಬಹುದು."
 
 #: change-apn-warning-message1
 msgid ""
@@ -2847,13 +2845,13 @@ msgstr "ರದ್ದುಮಾಡು"
 msgid "Ask"
 msgstr "ಕೋರು"
 
-#: deny
-msgid "Deny"
-msgstr "ನಿರಾಕರಿಸು"
+#: block
+msgid "Block"
+msgstr ""
 
-#: allow
-msgid "Grant"
-msgstr "ಅನುಮತಿಸು"
+#: allow2
+msgid "Allow"
+msgstr ""
 
 #: uninstallApp
 msgid "Uninstall App"
@@ -5272,7 +5270,7 @@ msgid "{{settings-dialog-prompt}}"
 msgstr "{{settings-dialog-prompt}}"
 
 #: accessible-app-icon.ariaLabel
-msgid "Icon for {{ appName }} app"
+msgid "Icon for {{appName}} app"
 msgstr ""
 
 #. # Addongs settings
@@ -5295,7 +5293,7 @@ msgid "{{addons}}"
 msgstr ""
 
 #: addon-details-header1
-msgid "{{ appName }}"
+msgid "{{appName}}"
 msgstr ""
 
 #: addon-enable
@@ -5309,8 +5307,9 @@ msgid "Description"
 msgstr "ವಿವರಣೆ"
 
 #: addon-developer-name
-msgid "{{ developerName }}"
-msgstr ""
+#, fuzzy
+msgid "{{developerName}}"
+msgstr "{{developer}}"
 
 #: addon-targets
 msgid "Affected Apps"
@@ -5617,6 +5616,26 @@ msgstr ""
 #: noneMetricsExplain
 msgid "Do not send any data."
 msgstr ""
+
+#~ msgid ""
+#~ "Applications will automatically fetch data via data connection when "
+#~ "required. Additional data charges may apply."
+#~ msgstr ""
+#~ "ಅನ್ವಯಗಳು ತಾವಾಗಿಯೇ ಬೇಕಿದ್ದಾಗ ಡೇಟಾ ಸಂಪರ್ಕದ ಮೂಲಕ ಡೇಟಾ ಪಡೆಯಬೇಕಾಗಿದೆ. ಇದಕ್ಕೆ "
+#~ "ಹೆಚ್ಚಿನ ಹಣ ತೆರಬೇಕಾಗಬಹುದು."
+
+#~ msgid ""
+#~ "Depending on your service agreement, extra charges may apply for data "
+#~ "when you are in a roaming area."
+#~ msgstr ""
+#~ "ನಿಮ್ಮ ಸೇವಾ ಒಪ್ಪಂದದ ಪ್ರಕಾರ, ನೀವು roamingನಲ್ಲಿರುವಾಗ ಡೇಟಾಗಾಗಿ ಹೆಚ್ಚಿನ ಹಣ "
+#~ "ತೆರಬೇಕಾಗಬಹುದು."
+
+#~ msgid "Deny"
+#~ msgstr "ನಿರಾಕರಿಸು"
+
+#~ msgid "Grant"
+#~ msgstr "ಅನುಮತಿಸು"
 
 #, fuzzy
 #~ msgid "Passwords"
