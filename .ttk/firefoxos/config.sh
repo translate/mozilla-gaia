@@ -8,4 +8,4 @@ manage_py_verbosity=0
 precommand=". /var/www/sites/$instance/env/bin/activate;"
 opt_verbose=0
 
-alt_src="fr ru"
+alt_src="es fr ru"
