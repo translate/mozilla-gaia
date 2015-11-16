@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-09-28 16:22+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -218,60 +218,63 @@ msgstr "Keresés…"
 msgid "Search Again"
 msgstr "Keresse újra"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "Előkészítés…"
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "Csatlakozás ehhez: {{ssid}}…"
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "IP-cím beszerzése…"
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "Csatlakozva ehhez: {{ssid}}."
 
-#: fullStatus-connectingfailed
+#: full-status-connectingfailed
 #, fuzzy
-msgctxt "fullStatus-connectingfailed"
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "A csatlakozás meghiúsult"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "Nincs csatlakozva"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
+#: short-status-connecting
 #, fuzzy
-msgctxt "shortStatus-connecting"
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "Csatlakozás…"
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "IP-cím beszerzése…"
 
-#: shortStatus-connected
+#: short-status-connected
 #, fuzzy
-msgctxt "shortStatus-connected"
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "Csatlakozva"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
-msgstr "A csatlakozás meghiúsult."
+msgstr "A csatlakozás meghiúsult"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "Nincs csatlakozva"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1536,6 +1539,14 @@ msgstr ""
 msgid "Turn ON data connection?"
 msgstr "Bekapcsolja az adatkapcsolatot?"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+"Az alkalmazások szükség esetén automatikusan az adatkapcsolaton keresztül "
+"töltik le az adatokat. További költségek felmerülhetnek."
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr ""
@@ -1543,6 +1554,14 @@ msgstr ""
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "Bekapcsolja az adatroamingot?"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr ""
+"Az előfizetési csomagtól függően többletköltségek merülhetnek fel az "
+"adatforgalom után a roaming területen."
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2620,19 +2639,6 @@ msgstr "Névjegy"
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
 msgstr "Bejelentkezve, mint: {{email}}"
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr "Bejelentkezve"
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr "Marketplace"
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
-msgstr "Eszközkereső"
 
 #: fxa-options
 msgctxt "fxa-options"
@@ -4151,9 +4157,13 @@ msgstr "Újrarajzolás"
 msgid "Jank"
 msgstr "Holtjáték"
 
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Holtjáték küszöbértéke"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
+msgstr ""
 
 #: hud-fps
 msgid "Frames per Second"
@@ -4382,10 +4392,6 @@ msgstr "Folytonos átmenet"
 #: debug-gaia-enabled
 msgid "Gaia Debug Traces"
 msgstr "Gaia hibakeresési nyomok"
-
-#: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
-msgstr "Képernyőolvasó beállításainak megjelenítése"
 
 #: app-transition
 msgid "App Transition"
@@ -5192,8 +5198,8 @@ msgstr "{{settings-dialog-confirm}}"
 msgid "{{settings-dialog-prompt}}"
 msgstr "{{settings-dialog-prompt}}"
 
-#: accessible-app-icon.ariaLabel
-msgid "Icon for {{appName}} app"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
 msgstr ""
 
 #. # Addongs settings
@@ -5539,19 +5545,33 @@ msgstr ""
 msgid "Do not send any data."
 msgstr ""
 
-#~ msgid ""
-#~ "Applications will automatically fetch data via data connection when "
-#~ "required. Additional data charges may apply."
-#~ msgstr ""
-#~ "Az alkalmazások szükség esetén automatikusan az adatkapcsolaton keresztül "
-#~ "töltik le az adatokat. További költségek felmerülhetnek."
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Nincs csatlakozva"
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr ""
-#~ "Az előfizetési csomagtól függően többletköltségek merülhetnek fel az "
-#~ "adatforgalom után a roaming területen."
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "IP-cím beszerzése…"
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "A csatlakozás meghiúsult."
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Nincs csatlakozva"
+
+#~ msgid "Signed In"
+#~ msgstr "Bejelentkezve"
+
+#~ msgid "Marketplace"
+#~ msgstr "Marketplace"
+
+#~ msgid "Jank Threshold"
+#~ msgstr "Holtjáték küszöbértéke"
+
+#~ msgid "Show Screen Reader Settings"
+#~ msgstr "Képernyőolvasó beállításainak megjelenítése"
 
 #~ msgid "Deny"
 #~ msgstr "Tiltás"

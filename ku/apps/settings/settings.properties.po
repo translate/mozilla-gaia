@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-09-30 09:29+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -227,57 +227,63 @@ msgstr "Digere…"
 msgid "Search Again"
 msgstr "Dîsa bigere"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "Tê destpêkirin…"
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "Bi {{ssid}}ê ve tê girêdan…"
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "Navnîşana IP tê standin…"
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "Bi {{ssid}}ê ve hat girêdan"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Girêdan bi ser neket"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "Negirêdayî"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "Tê girêdan..."
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "Navnîşana IP tê standin…"
 
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "Hat girêdan"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Girêdan bi ser neket"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "Negirêdayî"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1551,6 +1557,12 @@ msgstr ""
 msgid "Turn ON data connection?"
 msgstr "Girêdana daneyan VEKE?"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr ""
@@ -1558,6 +1570,12 @@ msgstr ""
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "Bila gera daneyan VEBE?"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr "Dibe ku li gorî peymana xizmetê, li herêma gerê lêçûnên zêde çêbin."
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2619,19 +2637,6 @@ msgstr ""
 
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
-msgstr ""
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr ""
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr ""
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
 msgstr ""
 
 #: fxa-options
@@ -4065,8 +4070,12 @@ msgstr ""
 msgid "Jank"
 msgstr ""
 
-#: jank-threshold
-msgid "Jank Threshold"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
 msgstr ""
 
 #: hud-fps
@@ -4295,10 +4304,6 @@ msgstr ""
 
 #: debug-gaia-enabled
 msgid "Gaia Debug Traces"
-msgstr ""
-
-#: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
 msgstr ""
 
 #: app-transition
@@ -5061,8 +5066,8 @@ msgstr ""
 msgid "{{settings-dialog-prompt}}"
 msgstr ""
 
-#: accessible-app-icon.ariaLabel
-msgid "Icon for {{appName}} app"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
 msgstr ""
 
 #. # Addongs settings
@@ -5391,10 +5396,21 @@ msgstr ""
 msgid "Do not send any data."
 msgstr ""
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr "Dibe ku li gorî peymana xizmetê, li herêma gerê lêçûnên zêde çêbin."
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Negirêdayî"
+
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "Navnîşana IP tê standin…"
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "Girêdan bi ser neket"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Negirêdayî"
 
 #, fuzzy
 #~ msgid "Passwords"

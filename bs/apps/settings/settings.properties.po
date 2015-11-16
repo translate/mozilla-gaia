@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-10-27 23:46+0000\n"
 "Last-Translator: Kerim Kalamujic <kerim@mozilla.ba>\n"
 "Language-Team: none\n"
@@ -216,57 +216,63 @@ msgstr "Tražim..."
 msgid "Search Again"
 msgstr "Traži ponovo"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "Inicijalizacija…"
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "Povezujem se na {{ssid}}..."
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "Dobavljam IP adresu…"
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "Povezan na {{ssid}}"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Veza nije uspjela"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "Offline"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "Povezivanje…"
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "Dobavljam IP adresu…"
 
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "Povezan"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Veza nije uspjela"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "Offline"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1533,6 +1539,14 @@ msgstr "MTU"
 msgid "Turn ON data connection?"
 msgstr "Uključiti podatkovnu vezu?"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+"Aplikacije će automatski dobavljati podatke preko mobilne veze kada je to "
+"potrebno. Mogući su dodatni troškovi."
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr ""
@@ -1540,6 +1554,14 @@ msgstr ""
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "Uključiti roaming za podatke?"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr ""
+"Ovisno od uslova vašeg ugovora, mogući su dodatni troškovi kada se nalazite "
+"u roaming području."
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2606,19 +2628,6 @@ msgstr "O nama"
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
 msgstr "Prijavljeni ste kao {{email}}"
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr "Prijavljeni ste"
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr "Marketplace"
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
-msgstr "Pronađi moj uređaj"
 
 #: fxa-options
 msgctxt "fxa-options"
@@ -4150,9 +4159,13 @@ msgstr "Preraspodjela"
 msgid "Jank"
 msgstr "Jank"
 
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Prag janka"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
+msgstr ""
 
 #: hud-fps
 msgid "Frames per Second"
@@ -4380,10 +4393,6 @@ msgstr "Kontinuirana tranzicija"
 #: debug-gaia-enabled
 msgid "Gaia Debug Traces"
 msgstr "Gaia debag tragovi"
-
-#: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
-msgstr "Prikaži postavke čitača ekrana"
 
 #: app-transition
 msgid "App Transition"
@@ -5187,10 +5196,9 @@ msgstr "{{settings-dialog-confirm}}"
 msgid "{{settings-dialog-prompt}}"
 msgstr "{{settings-dialog-prompt}}"
 
-#: accessible-app-icon.ariaLabel
-#, fuzzy
-msgid "Icon for {{appName}} app"
-msgstr "Ikona za {{ appName }} aplikaciju"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
+msgstr ""
 
 #. # Addongs settings
 #: addon
@@ -5517,19 +5525,37 @@ msgstr "Šalji osnovni izvještaj plus dijagnostičke informacije."
 msgid "Do not send any data."
 msgstr "Nemoj slati ikakve podatke."
 
-#~ msgid ""
-#~ "Applications will automatically fetch data via data connection when "
-#~ "required. Additional data charges may apply."
-#~ msgstr ""
-#~ "Aplikacije će automatski dobavljati podatke preko mobilne veze kada je to "
-#~ "potrebno. Mogući su dodatni troškovi."
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Offline"
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr ""
-#~ "Ovisno od uslova vašeg ugovora, mogući su dodatni troškovi kada se "
-#~ "nalazite u roaming području."
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "Dobavljam IP adresu…"
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "Veza nije uspjela"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Offline"
+
+#~ msgid "Signed In"
+#~ msgstr "Prijavljeni ste"
+
+#~ msgid "Marketplace"
+#~ msgstr "Marketplace"
+
+#~ msgid "Jank Threshold"
+#~ msgstr "Prag janka"
+
+#~ msgid "Show Screen Reader Settings"
+#~ msgstr "Prikaži postavke čitača ekrana"
+
+#, fuzzy
+#~ msgid "Icon for {{appName}} app"
+#~ msgstr "Ikona za {{ appName }} aplikaciju"
 
 #~ msgid "Deny"
 #~ msgstr "Odbij"

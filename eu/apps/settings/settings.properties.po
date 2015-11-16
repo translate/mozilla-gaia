@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-11-16 01:21+0000\n"
 "Last-Translator: Ibai Oihanguren Sala <ibai@oihanguren.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1447636894.000000\n"
@@ -214,57 +214,63 @@ msgstr "Bilatzen…"
 msgid "Search Again"
 msgstr "Bilatu berriro"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "Hasieratzen…"
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "{{ssid}} sarera konektatzen…"
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "IP helbidea eskuratzen…"
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "{{ssid}} sarera konektatuta"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Konexioak huts egin du"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "Lineaz kanpo"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "Konektatzen…"
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "IP helbidea eskuratzen…"
 
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "Konektatuta"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Konexioak huts egin du"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "Lineaz kanpo"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1523,6 +1529,14 @@ msgstr "MTU"
 msgid "Turn ON data connection?"
 msgstr "Gaitu datu-konexioa?"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+"Aplikazioek automatikoki atzituko dituzte datuak datu-konexioaren bidez, "
+"beharrezkoa denean. Datu-tarifa gehigarriak aplika daitezke."
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr "Atzitu sare mugikorreko datuak automatikoki."
@@ -1530,6 +1544,14 @@ msgstr "Atzitu sare mugikorreko datuak automatikoki."
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "Datu-ibiltaritza gaitu?"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr ""
+"Zure zerbitzu-baldintzen arabera, datu-tarifa gehigarriak aplika daitezke "
+"ibiltaritza-eskualde batean zaudenean."
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2595,19 +2617,6 @@ msgstr "Honi buruz"
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
 msgstr "{{email}} gisa saioa hasita"
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr "Saioa hasi da"
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr "Marketplace"
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
-msgstr "Bilatu nire gailua"
 
 #: fxa-options
 msgctxt "fxa-options"
@@ -4136,9 +4145,13 @@ msgstr "Egokitzeak"
 msgid "Jank"
 msgstr "Atzerapena"
 
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Atzerapenaren atalasea"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
+msgstr ""
 
 #: hud-fps
 msgid "Frames per Second"
@@ -4367,10 +4380,6 @@ msgstr "Etengabeko trantsizioa"
 #: debug-gaia-enabled
 msgid "Gaia Debug Traces"
 msgstr "Gaia arazketa-aztarnak"
-
-#: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
-msgstr "Erakutsi pantaila-irakurlearen ezarpenak"
 
 #: app-transition
 msgid "App Transition"
@@ -5174,9 +5183,9 @@ msgstr "{{settings-dialog-confirm}}"
 msgid "{{settings-dialog-prompt}}"
 msgstr "{{settings-dialog-prompt}}"
 
-#: accessible-app-icon.ariaLabel
-msgid "Icon for {{appName}} app"
-msgstr "{{appName}} aplikazioaren ikonoa"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
+msgstr ""
 
 #. # Addongs settings
 #: addon
@@ -5522,19 +5531,36 @@ msgstr ""
 msgid "Do not send any data."
 msgstr "Ez bidali inongo daturik."
 
-#~ msgid ""
-#~ "Applications will automatically fetch data via data connection when "
-#~ "required. Additional data charges may apply."
-#~ msgstr ""
-#~ "Aplikazioek automatikoki atzituko dituzte datuak datu-konexioaren bidez, "
-#~ "beharrezkoa denean. Datu-tarifa gehigarriak aplika daitezke."
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Lineaz kanpo"
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr ""
-#~ "Zure zerbitzu-baldintzen arabera, datu-tarifa gehigarriak aplika daitezke "
-#~ "ibiltaritza-eskualde batean zaudenean."
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "IP helbidea eskuratzen…"
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "Konexioak huts egin du"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Lineaz kanpo"
+
+#~ msgid "Signed In"
+#~ msgstr "Saioa hasi da"
+
+#~ msgid "Marketplace"
+#~ msgstr "Marketplace"
+
+#~ msgid "Jank Threshold"
+#~ msgstr "Atzerapenaren atalasea"
+
+#~ msgid "Show Screen Reader Settings"
+#~ msgstr "Erakutsi pantaila-irakurlearen ezarpenak"
+
+#~ msgid "Icon for {{appName}} app"
+#~ msgstr "{{appName}} aplikazioaren ikonoa"
 
 #~ msgid "Deny"
 #~ msgstr "Ukatu"

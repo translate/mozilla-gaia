@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-10-12 15:06+0000\n"
 "Last-Translator: Michael Bauer <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -219,57 +219,63 @@ msgstr "A’ lorg…"
 msgid "Search Again"
 msgstr "Lorg a-rithist"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "’Ga thòiseachadh…"
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "A’ ceangal ri {{ssid}}…"
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "A’ faighinn seòladh IP…"
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "Ceangailte ri {{ssid}}"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Dh’fhàillig an ceangal"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "Far loidhne"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "A’ dèanamh ceangal…"
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "A’ faighinn seòladh IP…"
 
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "Air ceangal a dhèanamh"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Dh’fhàillig an ceangal"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "Far loidhne"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1535,6 +1541,14 @@ msgstr "MTU"
 msgid "Turn ON data connection?"
 msgstr "A bheil thu airson an ceangal dàta a chur AIR?"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+"Gheibh aplacaidean dàta air ceangal dàta gu fèin-obrachail nuair a bhios "
+"feum. Dh'fhaoidte gun èirich cosgaisean a bharrachd."
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr ""
@@ -1542,6 +1556,14 @@ msgstr ""
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "A bheil thu airson dàta air fàrsan a chur AIR?"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr ""
+"A-rèir aonta na seirbheise agad, dh'fhaoidte gun èirich cosgaisean a "
+"bharrachd dhut ma chleachdas tu dàta air fàrsan."
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2617,19 +2639,6 @@ msgstr "Mu dhèidhinn"
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
 msgstr "Air clàradh a-steach mar {{email}}"
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr "Clàraichte a-staigh"
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr "A' mhargaid"
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
-msgstr "Lorg an t-uidheam agam"
 
 #: fxa-options
 msgctxt "fxa-options"
@@ -4167,9 +4176,13 @@ msgstr "Reflows"
 msgid "Jank"
 msgstr "Jank"
 
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Stairsneach Jank"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
+msgstr ""
 
 #: hud-fps
 msgid "Frames per Second"
@@ -4397,10 +4410,6 @@ msgstr "Tar-mhùthadh leantainneach"
 #: debug-gaia-enabled
 msgid "Gaia Debug Traces"
 msgstr "Gaia Debug Traces"
-
-#: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
-msgstr "Seall roghainnean leughadair na sgrìn"
 
 #: app-transition
 msgid "App Transition"
@@ -5226,10 +5235,9 @@ msgstr "{{settings-dialog-confirm}}"
 msgid "{{settings-dialog-prompt}}"
 msgstr "{{settings-dialog-prompt}}"
 
-#: accessible-app-icon.ariaLabel
-#, fuzzy
-msgid "Icon for {{appName}} app"
-msgstr "Ìomhaigheag na h-aplacaid {{ appName }}"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
+msgstr ""
 
 #. # Addongs settings
 #: addon
@@ -5560,19 +5568,37 @@ msgstr ""
 msgid "Do not send any data."
 msgstr ""
 
-#~ msgid ""
-#~ "Applications will automatically fetch data via data connection when "
-#~ "required. Additional data charges may apply."
-#~ msgstr ""
-#~ "Gheibh aplacaidean dàta air ceangal dàta gu fèin-obrachail nuair a bhios "
-#~ "feum. Dh'fhaoidte gun èirich cosgaisean a bharrachd."
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Far loidhne"
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr ""
-#~ "A-rèir aonta na seirbheise agad, dh'fhaoidte gun èirich cosgaisean a "
-#~ "bharrachd dhut ma chleachdas tu dàta air fàrsan."
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "A’ faighinn seòladh IP…"
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "Dh’fhàillig an ceangal"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Far loidhne"
+
+#~ msgid "Signed In"
+#~ msgstr "Clàraichte a-staigh"
+
+#~ msgid "Marketplace"
+#~ msgstr "A' mhargaid"
+
+#~ msgid "Jank Threshold"
+#~ msgstr "Stairsneach Jank"
+
+#~ msgid "Show Screen Reader Settings"
+#~ msgstr "Seall roghainnean leughadair na sgrìn"
+
+#, fuzzy
+#~ msgid "Icon for {{appName}} app"
+#~ msgstr "Ìomhaigheag na h-aplacaid {{ appName }}"
 
 #~ msgid "Deny"
 #~ msgstr "Diùlt"

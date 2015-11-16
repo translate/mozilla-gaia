@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firefox\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-11-15 19:07+0000\n"
 "Last-Translator: Mícheál John Ó Meachair <michealomeachair@gmail.com>\n"
 "Language-Team: Irish\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :"
 "(n>6 && n<11) ? 3 : 4;;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1447614454.000000\n"
@@ -215,57 +215,63 @@ msgstr "Ag Cuardach…"
 msgid "Search Again"
 msgstr "Cuardaigh Arís"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "Á thúsú…"
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "Ag ceangal le {{ssid}}…"
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "Seoladh IP á fháil…"
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "Ceangailte le {{ssid}}"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Theip ar cheangal"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "As Líne"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "Ag ceangal…"
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "Seoladh IP á fháil…"
 
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "Ceangailte"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Theip ar cheangal"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "As Líne"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1539,6 +1545,14 @@ msgstr "MTU"
 msgid "Turn ON data connection?"
 msgstr "Cuir ceangal sonraí AR SIÚL?"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+"Íosluchtóidh aipeanna sonraí thar cheangal sonraí nuair is gá. Seans go "
+"ngearrfar táille bhreise ort."
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr "Faigh sonraí líonra móibíleach go huathoibríoch."
@@ -1546,6 +1560,14 @@ msgstr "Faigh sonraí líonra móibíleach go huathoibríoch."
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "Cuir sonraí fánaíochta AR SIÚL?"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr ""
+"Seans go ngearrfar táille sa bhreis ort chun ceangal sonraí a úsáid i "
+"limistéar fánaíochta, ag brath ar an gconradh seirbhíse atá agat."
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2621,19 +2643,6 @@ msgstr "Maidir Leis"
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
 msgstr "Logáilte isteach mar {{email}}"
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr "Logáilte Isteach"
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr "An Margadh"
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
-msgstr "Aimsigh Mo Ghléas"
 
 #: fxa-options
 msgctxt "fxa-options"
@@ -4172,9 +4181,13 @@ msgstr "Atarraingthe"
 msgid "Jank"
 msgstr "Moill"
 
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Tairseach Moille"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
+msgstr ""
 
 # "soicind" firinscneach
 #: hud-fps
@@ -4403,10 +4416,6 @@ msgstr "Aistriú Leanúnach"
 #: debug-gaia-enabled
 msgid "Gaia Debug Traces"
 msgstr "Faisnéis Dífhabhtaithe Gaia"
-
-#: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
-msgstr "Socruithe an Léitheora Scáileáin"
 
 #: app-transition
 msgid "App Transition"
@@ -5215,9 +5224,9 @@ msgstr "{{settings-dialog-confirm}}"
 msgid "{{settings-dialog-prompt}}"
 msgstr "{{settings-dialog-prompt}}"
 
-#: accessible-app-icon.ariaLabel
-msgid "Icon for {{appName}} app"
-msgstr "Deilbhín aip {{appName}}"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
+msgstr ""
 
 #. # Addongs settings
 #: addon
@@ -5544,19 +5553,36 @@ msgstr "Seol an bhuntuairisc agus sonraí diagnóiseacha."
 msgid "Do not send any data."
 msgstr "Ná seol aon sonraí."
 
-#~ msgid ""
-#~ "Applications will automatically fetch data via data connection when "
-#~ "required. Additional data charges may apply."
-#~ msgstr ""
-#~ "Íosluchtóidh aipeanna sonraí thar cheangal sonraí nuair is gá. Seans go "
-#~ "ngearrfar táille bhreise ort."
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "As Líne"
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr ""
-#~ "Seans go ngearrfar táille sa bhreis ort chun ceangal sonraí a úsáid i "
-#~ "limistéar fánaíochta, ag brath ar an gconradh seirbhíse atá agat."
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "Seoladh IP á fháil…"
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "Theip ar cheangal"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "As Líne"
+
+#~ msgid "Signed In"
+#~ msgstr "Logáilte Isteach"
+
+#~ msgid "Marketplace"
+#~ msgstr "An Margadh"
+
+#~ msgid "Jank Threshold"
+#~ msgstr "Tairseach Moille"
+
+#~ msgid "Show Screen Reader Settings"
+#~ msgstr "Socruithe an Léitheora Scáileáin"
+
+#~ msgid "Icon for {{appName}} app"
+#~ msgstr "Deilbhín aip {{appName}}"
 
 # better than a verb in context
 #~ msgid "Deny"

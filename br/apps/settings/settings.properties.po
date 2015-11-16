@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-11-15 13:36+0000\n"
 "Last-Translator: Gwenn M <tornoz@laposte.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1447594566.000000\n"
@@ -214,57 +214,63 @@ msgstr "O klask…"
 msgid "Search Again"
 msgstr "Klask en-dro"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "O teraouekaat…"
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "O kennaskañ ouzh {{ssid}}…"
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "O kaout ur chomlec'h IP…"
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "Kennasket ouzh {{ssid}}"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "C'hwitadenn war ar c'hennaskañ"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "Ezlinenn"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "O kennaskañ…"
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "O kaout ur chomlec'h IP…"
 
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "Kennasket"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
 msgstr "C'hwitadenn war ar c'hennaskañ"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "Ezlinenn"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1530,6 +1536,14 @@ msgstr "MTU"
 msgid "Turn ON data connection?"
 msgstr "Gweredekaat ar c'hennask roadennoù ?"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+"An arloadoù a atoro roadennoù ent emgefreek gant ur c'hennask roadennoù pa "
+"vo ezhomm. An dra-se a c'hellfe koustañ deoc'h mizoù ouzhpenn."
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr "Kerc'hat ar roadennoù rouedadoù hezougell ent emgefreek."
@@ -1537,6 +1551,14 @@ msgstr "Kerc'hat ar roadennoù rouedadoù hezougell ent emgefreek."
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "Gweredekaat ar baleantañ evit ar roadennoù ?"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr ""
+"Hervez ho kevrat, e c'hello an dra-se koustañ deoc'h mizoù ouzhpenn pa viot "
+"e mod baleantañ."
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2605,19 +2627,6 @@ msgstr "A-zivout"
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
 msgstr "Kennasket evel {{email}}"
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr "Kennasket"
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr "Marketplace"
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
-msgstr "Kavout ma zrevnad"
 
 #: fxa-options
 msgctxt "fxa-options"
@@ -4151,9 +4160,13 @@ msgstr "Reflows"
 msgid "Jank"
 msgstr "Jank"
 
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Gwehin Jank"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
+msgstr ""
 
 # E galleg e vez lâret "images par secondes". Aesoc'h vefe kompren e mod-se, moarvat.
 #: hud-fps
@@ -4382,10 +4395,6 @@ msgstr "Ardreuzad dizehan"
 #: debug-gaia-enabled
 msgid "Gaia Debug Traces"
 msgstr "Roudoù diveugañ Gaia"
-
-#: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
-msgstr "Diskouez arventennoù al lenner skrammoù"
 
 #: app-transition
 msgid "App Transition"
@@ -5190,9 +5199,9 @@ msgstr "{{settings-dialog-confirm}}"
 msgid "{{settings-dialog-prompt}}"
 msgstr "{{settings-dialog-prompt}}"
 
-#: accessible-app-icon.ariaLabel
-msgid "Icon for {{appName}} app"
-msgstr "Arlun evit an arload {{appName}}"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
+msgstr ""
 
 #. # Addongs settings
 #: addon
@@ -5519,19 +5528,36 @@ msgstr "Kas danevelloù diazez ha titouroù deznaou."
 msgid "Do not send any data."
 msgstr "Na gas roadenn ebet."
 
-#~ msgid ""
-#~ "Applications will automatically fetch data via data connection when "
-#~ "required. Additional data charges may apply."
-#~ msgstr ""
-#~ "An arloadoù a atoro roadennoù ent emgefreek gant ur c'hennask roadennoù "
-#~ "pa vo ezhomm. An dra-se a c'hellfe koustañ deoc'h mizoù ouzhpenn."
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Ezlinenn"
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr ""
-#~ "Hervez ho kevrat, e c'hello an dra-se koustañ deoc'h mizoù ouzhpenn pa "
-#~ "viot e mod baleantañ."
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "O kaout ur chomlec'h IP…"
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "C'hwitadenn war ar c'hennaskañ"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Ezlinenn"
+
+#~ msgid "Signed In"
+#~ msgstr "Kennasket"
+
+#~ msgid "Marketplace"
+#~ msgstr "Marketplace"
+
+#~ msgid "Jank Threshold"
+#~ msgstr "Gwehin Jank"
+
+#~ msgid "Show Screen Reader Settings"
+#~ msgstr "Diskouez arventennoù al lenner skrammoù"
+
+#~ msgid "Icon for {{appName}} app"
+#~ msgstr "Arlun evit an arload {{appName}}"
 
 #~ msgid "Deny"
 #~ msgstr "Nac'hañ"

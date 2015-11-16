@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-10-21 14:54+0000\n"
 "Last-Translator: Rodrigo Pérez Ramírez <rodrigo_perez_r@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -220,57 +220,63 @@ msgstr "De kuan niy..."
 msgid "Search Again"
 msgstr "Kuan na"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "Te tob na kiy..."
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "Toob ba loo {{ssid}}..."
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "Güi cho IP duul..."
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "Toob ba loo {{ssid}}"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Naa gad güil kue"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "Naa genut luu señal"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "Dee toob no ki kue..."
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "Güi cho IP duul..."
 
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "Taak laa lii chel kue"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
-msgstr "Naa yent señal"
+msgstr "Naa gad güil kue"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "Naa yent señal"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1531,12 +1537,24 @@ msgstr ""
 msgid "Turn ON data connection?"
 msgstr ""
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr ""
 
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
+msgstr ""
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
 msgstr ""
 
 #: dataRoaming-warning-message-short
@@ -2608,19 +2626,6 @@ msgstr "Cho nak na"
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
 msgstr ""
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr "Gu lent"
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr ""
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
-msgstr "Kuan Yib na Ná"
 
 #: fxa-options
 #, fuzzy
@@ -4081,8 +4086,12 @@ msgstr ""
 msgid "Jank"
 msgstr ""
 
-#: jank-threshold
-msgid "Jank Threshold"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
 msgstr ""
 
 #: hud-fps
@@ -4310,10 +4319,6 @@ msgstr ""
 
 #: debug-gaia-enabled
 msgid "Gaia Debug Traces"
-msgstr ""
-
-#: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
 msgstr ""
 
 #: app-transition
@@ -5089,8 +5094,8 @@ msgstr ""
 msgid "{{settings-dialog-prompt}}"
 msgstr ""
 
-#: accessible-app-icon.ariaLabel
-msgid "Icon for {{appName}} app"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
 msgstr ""
 
 #. # Addongs settings
@@ -5431,6 +5436,25 @@ msgstr ""
 #: noneMetricsExplain
 msgid "Do not send any data."
 msgstr ""
+
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Naa genut luu señal"
+
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "Güi cho IP duul..."
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "Naa yent señal"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Naa yent señal"
+
+#~ msgid "Signed In"
+#~ msgstr "Gu lent"
 
 #~ msgid "Deny"
 #~ msgstr "Na lit luy"

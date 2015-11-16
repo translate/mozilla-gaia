@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-11-06 05:29+0000\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1446787744.000000\n"
@@ -215,57 +215,63 @@ msgstr "Іздеу..."
 msgid "Search Again"
 msgstr "Қайта іздеу"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "Іске қосу..."
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "Байланысты орнату: {{ssid}}"
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "IP адресін алу…"
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "Байланыс орнатылған: {{ssid}}"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Байланысу сәтсіз"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "Желіде емес"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "Байланысуда..."
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "IP адресін алу…"
 
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "Байланысқан"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Байланысу сәтсіз"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "Желіде емес"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1526,6 +1532,14 @@ msgstr ""
 msgid "Turn ON data connection?"
 msgstr "Деректер байланысын іске қосу керек пе?"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+"Қолданбалар керек кезде деректерді деректер байланысы арқылы автоматты түрде "
+"алатын болады. Қосымша ақша алынуы мүмкін."
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr ""
@@ -1533,6 +1547,14 @@ msgstr ""
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "Деректер байланыс роумингін іске қосу керек пе?"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr ""
+"Қызмет көрсету келісімшартына байланысты, роуминг аймағында болған кезде "
+"деректер үшін қосымша ақша алынуы мүмкін."
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2596,19 +2618,6 @@ msgstr "Осы туралы"
 
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
-msgstr ""
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr ""
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr ""
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
 msgstr ""
 
 #: fxa-options
@@ -4126,8 +4135,12 @@ msgstr "Қайма аймалаулар"
 msgid "Jank"
 msgstr ""
 
-#: jank-threshold
-msgid "Jank Threshold"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
 msgstr ""
 
 #: hud-fps
@@ -4362,10 +4375,6 @@ msgstr ""
 
 #: debug-gaia-enabled
 msgid "Gaia Debug Traces"
-msgstr ""
-
-#: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
 msgstr ""
 
 #: app-transition
@@ -5150,8 +5159,8 @@ msgstr ""
 msgid "{{settings-dialog-prompt}}"
 msgstr ""
 
-#: accessible-app-icon.ariaLabel
-msgid "Icon for {{appName}} app"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
 msgstr ""
 
 #. # Addongs settings
@@ -5484,19 +5493,21 @@ msgstr ""
 msgid "Do not send any data."
 msgstr ""
 
-#~ msgid ""
-#~ "Applications will automatically fetch data via data connection when "
-#~ "required. Additional data charges may apply."
-#~ msgstr ""
-#~ "Қолданбалар керек кезде деректерді деректер байланысы арқылы автоматты "
-#~ "түрде алатын болады. Қосымша ақша алынуы мүмкін."
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Желіде емес"
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr ""
-#~ "Қызмет көрсету келісімшартына байланысты, роуминг аймағында болған кезде "
-#~ "деректер үшін қосымша ақша алынуы мүмкін."
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "IP адресін алу…"
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "Байланысу сәтсіз"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Желіде емес"
 
 #~ msgid "Deny"
 #~ msgstr "Рұқсат етпеу"

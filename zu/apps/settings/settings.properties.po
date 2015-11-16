@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-09-25 19:03+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -228,57 +228,63 @@ msgstr "Isacinga…"
 msgid "Search Again"
 msgstr "Cinga futhi"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "Iyaqalisa…"
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "Isaxhumana ne-{{ssid}}…"
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "Isabheka ikheli le-IP…"
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "Ixhumekile ku-{{ssid}}"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Ukuxhuma akuphumelelanga"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "Ayikho emoyeni"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "Isaxhuma…"
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
-msgstr "Ukuthola ikheli le-IP…"
+msgstr "Isabheka ikheli le-IP…"
 
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "Ixhunyiwe"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Ukuxhuma akuphumelelanga"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "Ayikho emoyeni"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1601,6 +1607,14 @@ msgstr ""
 msgid "Turn ON data connection?"
 msgstr "VULA ukuxhumeka kwedatha?"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+"Ama-application azolanda idatha ngokuzenzekela esebenzisa ukuxhumeka "
+"kwedatha lapho kunesidingo. Izindleko ezengeziwe zedatha zingasebenza."
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr ""
@@ -1608,6 +1622,14 @@ msgstr ""
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "UVULA idatha yokucinga isiginali?"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr ""
+"Kuncike esivumelwaneni sakho sesevisi, kungabalwa izindleko ezengeziwe "
+"zedatha lapho usendaweni ecinga isiginali."
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2723,19 +2745,6 @@ msgstr "Mayelana"
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
 msgstr "Usayinele ukungena njengo-{{email}}"
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr "Usayinele Ukungena"
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr "Indawo yokuthengisa"
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
-msgstr "Thola Idivayisi Yami"
 
 #: fxa-options
 #, fuzzy
@@ -4312,9 +4321,13 @@ msgstr "Reflows"
 msgid "Jank"
 msgstr "I-Jank"
 
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "I-Jank threshold"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
+msgstr ""
 
 #: hud-fps
 #, fuzzy
@@ -4568,10 +4581,6 @@ msgstr "Izinguquko eziqhubekayo"
 #, fuzzy
 msgid "Gaia Debug Traces"
 msgstr "Izinsalela zokuqedwa komonakalo we-Gaia"
-
-#: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
-msgstr ""
 
 #: app-transition
 #, fuzzy
@@ -5390,8 +5399,8 @@ msgstr ""
 msgid "{{settings-dialog-prompt}}"
 msgstr ""
 
-#: accessible-app-icon.ariaLabel
-msgid "Icon for {{appName}} app"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
 msgstr ""
 
 #. # Addongs settings
@@ -5738,19 +5747,30 @@ msgstr ""
 msgid "Do not send any data."
 msgstr ""
 
-#~ msgid ""
-#~ "Applications will automatically fetch data via data connection when "
-#~ "required. Additional data charges may apply."
-#~ msgstr ""
-#~ "Ama-application azolanda idatha ngokuzenzekela esebenzisa ukuxhumeka "
-#~ "kwedatha lapho kunesidingo. Izindleko ezengeziwe zedatha zingasebenza."
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Ayikho emoyeni"
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr ""
-#~ "Kuncike esivumelwaneni sakho sesevisi, kungabalwa izindleko ezengeziwe "
-#~ "zedatha lapho usendaweni ecinga isiginali."
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "Ukuthola ikheli le-IP…"
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "Ukuxhuma akuphumelelanga"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Ayikho emoyeni"
+
+#~ msgid "Signed In"
+#~ msgstr "Usayinele Ukungena"
+
+#~ msgid "Marketplace"
+#~ msgstr "Indawo yokuthengisa"
+
+#~ msgid "Jank Threshold"
+#~ msgstr "I-Jank threshold"
 
 #~ msgid "Deny"
 #~ msgstr "Yenqaba"

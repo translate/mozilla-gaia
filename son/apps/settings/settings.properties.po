@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-11-06 00:34+0000\n"
 "Last-Translator: Mohomodou  Houssouba <mh@bollag-areal.ch>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1446770086.000000\n"
@@ -214,57 +214,63 @@ msgstr "Ceeciyan…"
 msgid "Search Again"
 msgstr "Ceeci koyne"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "Šintinyan…"
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "Ga dobu {{ssid}} ga…"
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "IP aderesu duuyan…"
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "Dobandi {{ssid}} ga"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Dobuyan kay"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "Ši ciya"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "Dobuyan…"
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "IP aderesu duuyan…"
 
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "Dobante"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
-msgstr "Dobuyan kaŋ"
+msgstr "Dobuyan kay"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "Ši ciya"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1520,6 +1526,14 @@ msgstr "MTU"
 msgid "Turn ON data connection?"
 msgstr "Bayhayey ciyari tunandi?"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+"Porogaramey ka bayhayey ceeci ngey boŋ se bayhayey dobuyan bande nd'a "
+"waažibi. Banari nooroo ga hin ka tonton."
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr "Ga diray sankay bayhaya ceeci nga boŋ se."
@@ -1527,6 +1541,14 @@ msgstr "Ga diray sankay bayhaya ceeci nga boŋ se."
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "Bayhaya naarumi tunandi?"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr ""
+"War goy waafakaa bande, banari tontoni ka hin ka huru bayhayey se nda war "
+"goo naarumi ganda ra."
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2585,19 +2607,6 @@ msgstr "Ga"
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
 msgstr "Huru sanda {{email}}"
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr "N' ka huru"
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr "Marketplace"
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
-msgstr "Ay jinaa guna"
 
 #: fxa-options
 msgctxt "fxa-options"
@@ -4112,9 +4121,13 @@ msgstr "Dandi koyne"
 msgid "Jank"
 msgstr "Daaye"
 
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Kayri šiifa"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
+msgstr ""
 
 #: hud-fps
 msgid "Frames per Second"
@@ -4342,10 +4355,6 @@ msgstr "Bereyan duumante"
 #: debug-gaia-enabled
 msgid "Gaia Debug Traces"
 msgstr "Gaia hanseyan ceebandey"
-
-#: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
-msgstr "Diji cawkaw kayandiyaney cebe"
 
 #: app-transition
 msgid "App Transition"
@@ -5145,9 +5154,9 @@ msgstr "{{settings-dialog-confirm}}"
 msgid "{{settings-dialog-prompt}}"
 msgstr "{{settings-dialog-prompt}}"
 
-#: accessible-app-icon.ariaLabel
-msgid "Icon for {{appName}} app"
-msgstr "Bii {{appName}} porogaram se"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
+msgstr ""
 
 #. # Addongs settings
 #: addon
@@ -5472,19 +5481,36 @@ msgstr "Bayrandi faala nda malal korošiyan alhabar sanba."
 msgid "Do not send any data."
 msgstr "Wa ši bayhaya kul sanba."
 
-#~ msgid ""
-#~ "Applications will automatically fetch data via data connection when "
-#~ "required. Additional data charges may apply."
-#~ msgstr ""
-#~ "Porogaramey ka bayhayey ceeci ngey boŋ se bayhayey dobuyan bande nd'a "
-#~ "waažibi. Banari nooroo ga hin ka tonton."
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Ši ciya"
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr ""
-#~ "War goy waafakaa bande, banari tontoni ka hin ka huru bayhayey se nda war "
-#~ "goo naarumi ganda ra."
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "IP aderesu duuyan…"
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "Dobuyan kaŋ"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Ši ciya"
+
+#~ msgid "Signed In"
+#~ msgstr "N' ka huru"
+
+#~ msgid "Marketplace"
+#~ msgstr "Marketplace"
+
+#~ msgid "Jank Threshold"
+#~ msgstr "Kayri šiifa"
+
+#~ msgid "Show Screen Reader Settings"
+#~ msgstr "Diji cawkaw kayandiyaney cebe"
+
+#~ msgid "Icon for {{appName}} app"
+#~ msgstr "Bii {{appName}} porogaram se"
 
 #~ msgid "Deny"
 #~ msgstr "Wanji"

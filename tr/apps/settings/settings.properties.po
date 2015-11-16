@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-11-01 18:12+0000\n"
 "Last-Translator: Ozan Şelte <ozanselte@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -221,57 +221,63 @@ msgstr "Aranıyor…"
 msgid "Search Again"
 msgstr "Tekrar ara"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "Başlatılıyor…"
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "{{ssid}} ağına bağlanılıyor…"
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "IP adresi alınıyor…"
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "{{ssid}} ağına bağlanıldı"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Bağlantı başarısız oldu"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "Çevrimdışı"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "Bağlanılıyor…"
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "IP adresi alınıyor…"
 
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "Bağlanıldı"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Bağlantı başarısız oldu"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "Çevrimdışı"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1556,6 +1562,14 @@ msgstr ""
 msgid "Turn ON data connection?"
 msgstr "Veri bağlantısı AÇILSIN mı?"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+"Uygulamalar gerektiğinde verileri otomatik olarak veri bağlantısı "
+"aracılığıyla alacak. Ek veri ücretlendirmeleri uygulanabilir."
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr ""
@@ -1563,6 +1577,14 @@ msgstr ""
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "Veri dolaşımı AÇILSIN mı?"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr ""
+"Hizmet sözleşmenize bağlı olarak, dolaşım bölgesinde olduğunuzda ekstra "
+"ücretlendirmeler uygulanabilir."
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2654,19 +2676,6 @@ msgstr "Hakkında"
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
 msgstr "Oturum sahibi: {{email}}"
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr "Oturum açıldı"
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr "Marketplace"
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
-msgstr "Cihazımı Bul"
 
 #: fxa-options
 #, fuzzy
@@ -4213,9 +4222,13 @@ msgstr "Yeniden akışlar"
 msgid "Jank"
 msgstr "Jank"
 
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Jank eşiği"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
+msgstr ""
 
 #: hud-fps
 #, fuzzy
@@ -4474,11 +4487,6 @@ msgstr "Sürekli geçiş"
 #, fuzzy
 msgid "Gaia Debug Traces"
 msgstr "Gaia hata ayıklama izleri"
-
-#: showScreenReaderSettings
-#, fuzzy
-msgid "Show Screen Reader Settings"
-msgstr "Ekran okuyucu ayarlarını göster"
 
 #: app-transition
 #, fuzzy
@@ -5290,8 +5298,8 @@ msgstr "{{settings-dialog-confirm}}"
 msgid "{{settings-dialog-prompt}}"
 msgstr "{{settings-dialog-prompt}}"
 
-#: accessible-app-icon.ariaLabel
-msgid "Icon for {{appName}} app"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
 msgstr ""
 
 #. # Addongs settings
@@ -5638,19 +5646,34 @@ msgstr ""
 msgid "Do not send any data."
 msgstr ""
 
-#~ msgid ""
-#~ "Applications will automatically fetch data via data connection when "
-#~ "required. Additional data charges may apply."
-#~ msgstr ""
-#~ "Uygulamalar gerektiğinde verileri otomatik olarak veri bağlantısı "
-#~ "aracılığıyla alacak. Ek veri ücretlendirmeleri uygulanabilir."
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Çevrimdışı"
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr ""
-#~ "Hizmet sözleşmenize bağlı olarak, dolaşım bölgesinde olduğunuzda ekstra "
-#~ "ücretlendirmeler uygulanabilir."
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "IP adresi alınıyor…"
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "Bağlantı başarısız oldu"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Çevrimdışı"
+
+#~ msgid "Signed In"
+#~ msgstr "Oturum açıldı"
+
+#~ msgid "Marketplace"
+#~ msgstr "Marketplace"
+
+#~ msgid "Jank Threshold"
+#~ msgstr "Jank eşiği"
+
+#, fuzzy
+#~ msgid "Show Screen Reader Settings"
+#~ msgstr "Ekran okuyucu ayarlarını göster"
 
 #~ msgid "Deny"
 #~ msgstr "Reddet"

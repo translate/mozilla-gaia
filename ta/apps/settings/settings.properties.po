@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-09-30 01:06+0000\n"
 "Last-Translator: Khaleel Jageer <jskcse4@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -222,57 +222,63 @@ msgstr "தேடுகிறது..."
 msgid "Search Again"
 msgstr "மீண்டும் தேடு"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "தயார்படுத்துகிறது..."
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "{{ssid}} க்கு இணைக்கிறது..."
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "ஐபி முகவரியை பெறுகிறது..."
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "{{ssid}} உடன் இணைந்தது"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "இணைப்பு தோல்வியுற்றது"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "இணைப்பற்று"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "இணைக்கிறது..."
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "ஐபி முகவரியை பெறுகிறது..."
 
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "இணைந்தது"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
-msgstr "இணைப்பு தோல்வி"
+msgstr "இணைப்பு தோல்வியுற்றது"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "இணையமற்று"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1557,6 +1563,14 @@ msgstr ""
 msgid "Turn ON data connection?"
 msgstr "தரவு இணைப்பை செயல்படுத்தவா?"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+"தேவையான போது பயன்பாடுகள் இணைப்புள்ள போது தானாகவே தரவை பதிவிறக்கிவிடும். கூடுதலான "
+"தரவுக்கு கட்டணம் செலுத்த வேண்டி இருக்கலாம்."
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr ""
@@ -1564,6 +1578,14 @@ msgstr ""
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "ரோமிங் தரவை செயற்படுத்தவா?"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr ""
+"உங்களுடைய ஒப்பந்த சேவையையை அடிப்படையாக வைத்து, ரோமிங்கில் இருக்கும்போது பயனபடுத்தும் "
+"தரவுக்காக கூடுதல் கட்டணம் செலுத்த வேண்டி இருக்கலாம்."
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2656,19 +2678,6 @@ msgstr "என்பதை பற்றி"
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
 msgstr "{{email}} ஆக உள்நுழைந்தது"
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr "உள்நுழைந்தது"
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr "சந்தை"
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
-msgstr "சாதனத்தை கண்டறி"
 
 #: fxa-options
 #, fuzzy
@@ -4208,9 +4217,13 @@ msgstr "மீளோடைகள்"
 msgid "Jank"
 msgstr "Jank"
 
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Jank இன் உச்சநிலை"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
+msgstr ""
 
 #: hud-fps
 #, fuzzy
@@ -4469,11 +4482,6 @@ msgstr "தொடர்ச்சியான மாற்றம்"
 #, fuzzy
 msgid "Gaia Debug Traces"
 msgstr "கெயா வழுநீக்க தடங்கள்"
-
-#: showScreenReaderSettings
-#, fuzzy
-msgid "Show Screen Reader Settings"
-msgstr "திரைப்படிப்பு அமைவுகளை காண்பி"
 
 #: app-transition
 #, fuzzy
@@ -5286,8 +5294,8 @@ msgstr ""
 msgid "{{settings-dialog-prompt}}"
 msgstr ""
 
-#: accessible-app-icon.ariaLabel
-msgid "Icon for {{appName}} app"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
 msgstr ""
 
 #. # Addongs settings
@@ -5634,19 +5642,34 @@ msgstr ""
 msgid "Do not send any data."
 msgstr ""
 
-#~ msgid ""
-#~ "Applications will automatically fetch data via data connection when "
-#~ "required. Additional data charges may apply."
-#~ msgstr ""
-#~ "தேவையான போது பயன்பாடுகள் இணைப்புள்ள போது தானாகவே தரவை பதிவிறக்கிவிடும். "
-#~ "கூடுதலான தரவுக்கு கட்டணம் செலுத்த வேண்டி இருக்கலாம்."
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "இணைப்பற்று"
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr ""
-#~ "உங்களுடைய ஒப்பந்த சேவையையை அடிப்படையாக வைத்து, ரோமிங்கில் இருக்கும்போது "
-#~ "பயனபடுத்தும் தரவுக்காக கூடுதல் கட்டணம் செலுத்த வேண்டி இருக்கலாம்."
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "ஐபி முகவரியை பெறுகிறது..."
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "இணைப்பு தோல்வி"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "இணையமற்று"
+
+#~ msgid "Signed In"
+#~ msgstr "உள்நுழைந்தது"
+
+#~ msgid "Marketplace"
+#~ msgstr "சந்தை"
+
+#~ msgid "Jank Threshold"
+#~ msgstr "Jank இன் உச்சநிலை"
+
+#, fuzzy
+#~ msgid "Show Screen Reader Settings"
+#~ msgstr "திரைப்படிப்பு அமைவுகளை காண்பி"
 
 #~ msgid "Deny"
 #~ msgstr "மறு"

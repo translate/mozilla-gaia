@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-09-30 09:29+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -227,57 +227,63 @@ msgstr "Na-achọ…"
 msgid "Search Again"
 msgstr "Chọọ ọzọ"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "Na-ebido…"
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "Na-ejikọ na {{ssid}}…"
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "Na-enweta adreesị IP…"
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "Ejikọrọ na {{ssid}}"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Njikọ agaghị"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "Anọghị n'ịntanetị"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "Na-ejikọ…"
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "Na-enweta adreesị IP…"
 
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "Ejikọrọ"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Njikọ agaghị"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "Anọghị n'ịntanetị"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1595,6 +1601,14 @@ msgstr ""
 msgid "Turn ON data connection?"
 msgstr "Gbanwuo njikọ data?"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+"Ngwa ga-eweta data na akpaghị aka site na njikọ data mgbe achọrọ. Ụgwọ data "
+"ndị ọzọ nwere ike ịdị."
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr ""
@@ -1602,6 +1616,14 @@ msgstr ""
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "Gbanwuo mbugharị data?"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr ""
+"Dabere na nkwekọrịta ọrụ gị, ụgwọ ndị ọzọ nwere ike ịdị maka data mgbe ị nọ "
+"na mpaghara a na eji netwọk ọzọ."
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2708,19 +2730,6 @@ msgstr "Gbasara"
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
 msgstr "Banyere dị ka {{email}}"
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr "Banyere"
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr "Ọdụ ahịa"
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
-msgstr "Chọta Ngwaọrụ M"
 
 #: fxa-options
 #, fuzzy
@@ -4270,9 +4279,13 @@ msgstr "Mkpojugharị"
 msgid "Jank"
 msgstr "Jank"
 
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Jank Treshold"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
+msgstr ""
 
 #: hud-fps
 #, fuzzy
@@ -4526,10 +4539,6 @@ msgstr "Mgbanwe na aga aga"
 #, fuzzy
 msgid "Gaia Debug Traces"
 msgstr "Nzọụkwụ nturi Gaia"
-
-#: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
-msgstr ""
 
 #: app-transition
 #, fuzzy
@@ -5342,8 +5351,8 @@ msgstr ""
 msgid "{{settings-dialog-prompt}}"
 msgstr ""
 
-#: accessible-app-icon.ariaLabel
-msgid "Icon for {{appName}} app"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
 msgstr ""
 
 #. # Addongs settings
@@ -5690,19 +5699,30 @@ msgstr ""
 msgid "Do not send any data."
 msgstr ""
 
-#~ msgid ""
-#~ "Applications will automatically fetch data via data connection when "
-#~ "required. Additional data charges may apply."
-#~ msgstr ""
-#~ "Ngwa ga-eweta data na akpaghị aka site na njikọ data mgbe achọrọ. Ụgwọ "
-#~ "data ndị ọzọ nwere ike ịdị."
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Anọghị n'ịntanetị"
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr ""
-#~ "Dabere na nkwekọrịta ọrụ gị, ụgwọ ndị ọzọ nwere ike ịdị maka data mgbe ị "
-#~ "nọ na mpaghara a na eji netwọk ọzọ."
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "Na-enweta adreesị IP…"
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "Njikọ agaghị"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Anọghị n'ịntanetị"
+
+#~ msgid "Signed In"
+#~ msgstr "Banyere"
+
+#~ msgid "Marketplace"
+#~ msgstr "Ọdụ ahịa"
+
+#~ msgid "Jank Threshold"
+#~ msgstr "Jank Treshold"
 
 #~ msgid "Deny"
 #~ msgstr "Jụ"

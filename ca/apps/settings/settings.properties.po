@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-11-08 22:28+0000\n"
 "Last-Translator: Jordi Serratosa <jordis@softcatala.cat>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1447021693.000000\n"
@@ -214,58 +214,64 @@ msgstr "S'està cercant…"
 msgid "Search Again"
 msgstr "Torna a cercar"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "S'està inicialitzant…"
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "S'està connectant a {{ssid}}…"
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "S'està obtenint una adreça IP…"
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "S'ha connectat a {{ssid}}"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Ha fallat la connexió"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "Sense connexió"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "S'està connectant…"
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "S'està obtenint una adreça IP…"
 
 # Femení perquè es refereix a una xarxa wi-fi - jordis
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "Connectada"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Ha fallat la connexió"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "Sense connexió"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1557,6 +1563,14 @@ msgstr "MTU"
 msgid "Turn ON data connection?"
 msgstr "Voleu activar la connexió de dades?"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+"Les aplicacions baixaran dades automàticament per la connexió de dades quan "
+"sigui necessari. Això pot comportar despeses addicionals."
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr "Baixa automàticament dades de la xarxa mòbil."
@@ -1564,6 +1578,14 @@ msgstr "Baixa automàticament dades de la xarxa mòbil."
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "Voleu activar la itinerància de dades?"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr ""
+"Depenent del vostre contracte de servei, poden aplicar-se càrrecs "
+"addicionals quan us trobeu en una àrea d'itinerància."
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2644,19 +2666,6 @@ msgstr "Quant a"
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
 msgstr "Connectat: {{email}}"
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr "Sessió iniciada"
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr "Marketplace"
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
-msgstr "Troba el meu aparell"
 
 #: fxa-options
 msgctxt "fxa-options"
@@ -4226,9 +4235,13 @@ msgstr "Reajustaments"
 msgid "Jank"
 msgstr "Jank"
 
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Llindar de Jank"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
+msgstr ""
 
 #: hud-fps
 msgid "Frames per Second"
@@ -4460,10 +4473,6 @@ msgstr "Transició contínua"
 #: debug-gaia-enabled
 msgid "Gaia Debug Traces"
 msgstr "Traces depuració del Gaia"
-
-#: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
-msgstr "Mostra els paràmetres del lector de pantalla"
 
 #: app-transition
 msgid "App Transition"
@@ -5270,9 +5279,9 @@ msgstr "{{settings-dialog-confirm}}"
 msgid "{{settings-dialog-prompt}}"
 msgstr "{{settings-dialog-prompt}}"
 
-#: accessible-app-icon.ariaLabel
-msgid "Icon for {{appName}} app"
-msgstr "Icona de l'aplicació {{appName}}"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
+msgstr ""
 
 #. # Addongs settings
 #: addon
@@ -5602,19 +5611,36 @@ msgstr "Envia informes bàsics i informació de diagnòstic."
 msgid "Do not send any data."
 msgstr "No enviïs cap informació."
 
-#~ msgid ""
-#~ "Applications will automatically fetch data via data connection when "
-#~ "required. Additional data charges may apply."
-#~ msgstr ""
-#~ "Les aplicacions baixaran dades automàticament per la connexió de dades "
-#~ "quan sigui necessari. Això pot comportar despeses addicionals."
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Sense connexió"
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr ""
-#~ "Depenent del vostre contracte de servei, poden aplicar-se càrrecs "
-#~ "addicionals quan us trobeu en una àrea d'itinerància."
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "S'està obtenint una adreça IP…"
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "Ha fallat la connexió"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Sense connexió"
+
+#~ msgid "Signed In"
+#~ msgstr "Sessió iniciada"
+
+#~ msgid "Marketplace"
+#~ msgstr "Marketplace"
+
+#~ msgid "Jank Threshold"
+#~ msgstr "Llindar de Jank"
+
+#~ msgid "Show Screen Reader Settings"
+#~ msgstr "Mostra els paràmetres del lector de pantalla"
+
+#~ msgid "Icon for {{appName}} app"
+#~ msgstr "Icona de l'aplicació {{appName}}"
 
 # Ara ja hi hauria de cabre. No cal en minúscules - jordis
 #~ msgid "Deny"

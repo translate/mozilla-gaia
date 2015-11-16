@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-09-30 09:31+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -215,57 +215,63 @@ msgstr "Qidirilmoqda…"
 msgid "Search Again"
 msgstr "Yana qidirish"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "Boshlanmoqda…"
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "{{ssid}}ga ulanmoqda…"
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "IP manzil olinmoqda…"
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "{{ssid}}ga ulandi"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Ulanmadi"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "Oflayn"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "Ulanmoqda…"
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "IP manzil olinmoqda…"
 
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "Ulandi"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Ulanmadi"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "Oflayn"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1534,6 +1540,14 @@ msgstr ""
 msgid "Turn ON data connection?"
 msgstr "Internetga ulanish yoqilsinmi?"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+"Ilova dasturlar internet ulanish orqali kerak bo‘lganda avtomatik "
+"ma’lumotlarni oladi. Qo‘shimcha to‘lovlar talab qilinishi mumkin."
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr ""
@@ -1541,6 +1555,14 @@ msgstr ""
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "Internet rouming yoqilsinmi?"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr ""
+"Xizmat shartlaringizga bog‘liq holda rouming hududida bo‘lganingizda "
+"internet uchun qo‘shimcha to‘lovlar olinishi mumkin."
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2616,19 +2638,6 @@ msgstr "Haqida"
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
 msgstr "{{email}} sifatida kirgan"
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr "Kirgan"
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr "Marketplace"
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
-msgstr "Qurilmamni topish"
 
 #: fxa-options
 msgctxt "fxa-options"
@@ -4162,9 +4171,13 @@ msgstr "Qayta oqish"
 msgid "Jank"
 msgstr "Yaroqsiz"
 
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Jank bo‘sag‘a"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
+msgstr ""
 
 #: hud-fps
 msgid "Frames per Second"
@@ -4392,10 +4405,6 @@ msgstr "Davomiy o‘tish"
 #: debug-gaia-enabled
 msgid "Gaia Debug Traces"
 msgstr "Gaia nosozlik izlari"
-
-#: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
-msgstr "Ekran o‘qigich sozlamalarini ko‘rsatish"
 
 #: app-transition
 msgid "App Transition"
@@ -5208,10 +5217,9 @@ msgstr "{{settings-dialog-confirm}}"
 msgid "{{settings-dialog-prompt}}"
 msgstr "{{settings-dialog-prompt}}"
 
-#: accessible-app-icon.ariaLabel
-#, fuzzy
-msgid "Icon for {{appName}} app"
-msgstr "{{ appName }} ilova dasturi uchun nishoncha"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
+msgstr ""
 
 #. # Addongs settings
 #: addon
@@ -5546,19 +5554,37 @@ msgstr ""
 msgid "Do not send any data."
 msgstr ""
 
-#~ msgid ""
-#~ "Applications will automatically fetch data via data connection when "
-#~ "required. Additional data charges may apply."
-#~ msgstr ""
-#~ "Ilova dasturlar internet ulanish orqali kerak bo‘lganda avtomatik "
-#~ "ma’lumotlarni oladi. Qo‘shimcha to‘lovlar talab qilinishi mumkin."
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Oflayn"
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr ""
-#~ "Xizmat shartlaringizga bog‘liq holda rouming hududida bo‘lganingizda "
-#~ "internet uchun qo‘shimcha to‘lovlar olinishi mumkin."
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "IP manzil olinmoqda…"
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "Ulanmadi"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Oflayn"
+
+#~ msgid "Signed In"
+#~ msgstr "Kirgan"
+
+#~ msgid "Marketplace"
+#~ msgstr "Marketplace"
+
+#~ msgid "Jank Threshold"
+#~ msgstr "Jank bo‘sag‘a"
+
+#~ msgid "Show Screen Reader Settings"
+#~ msgstr "Ekran o‘qigich sozlamalarini ko‘rsatish"
+
+#, fuzzy
+#~ msgid "Icon for {{appName}} app"
+#~ msgstr "{{ appName }} ilova dasturi uchun nishoncha"
 
 #~ msgid "Deny"
 #~ msgstr "Rad qilish"

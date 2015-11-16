@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-10-14 16:53+0000\n"
 "Last-Translator: Lyubomir Popov <lyubo@lpopov.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -217,57 +217,63 @@ msgstr "Търсене…"
 msgid "Search Again"
 msgstr "Опресняване"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "Инициализиране…"
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "Свързване към {{ssid}}…"
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "Получаване на IP адрес…"
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "Свързана към {{ssid}}"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Неуспешно свързване"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "Извън мрежа"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "Свързване…"
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "Получаване на IP адрес…"
 
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "Свързана"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Неуспешно свързване"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "Извън мрежа"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1527,6 +1533,14 @@ msgstr "MTU"
 msgid "Turn ON data connection?"
 msgstr "Да бъде ли включена връзката за данни?"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+"Приложенията при нужда автоматично ще теглят данни. Може да има допълнителни "
+"такси за данни."
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr ""
@@ -1534,6 +1548,12 @@ msgstr ""
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "Да бъдат ли включени данните в роуминг?"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr "Според договора, може да има допълнителни такси за данни в роуминг."
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2605,19 +2625,6 @@ msgstr "Относно"
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
 msgstr "Вписани сте като {{email}}"
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr "Вписани в"
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr "Marketplace"
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
-msgstr "Изгубено устройство"
 
 #: fxa-options
 msgctxt "fxa-options"
@@ -4131,9 +4138,13 @@ msgstr "Пренареждане"
 msgid "Jank"
 msgstr "Jank"
 
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Праг на jank"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
+msgstr ""
 
 #: hud-fps
 msgid "Frames per Second"
@@ -4370,10 +4381,6 @@ msgstr "Плавен преход"
 #: debug-gaia-enabled
 msgid "Gaia Debug Traces"
 msgstr "Gaia debug следи"
-
-#: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
-msgstr "Показване настройките на екранния четец"
 
 #: app-transition
 msgid "App Transition"
@@ -5179,10 +5186,9 @@ msgstr "{{settings-dialog-confirm}}"
 msgid "{{settings-dialog-prompt}}"
 msgstr "{{settings-dialog-prompt}}"
 
-#: accessible-app-icon.ariaLabel
-#, fuzzy
-msgid "Icon for {{appName}} app"
-msgstr "Икона за приложение {{ appName }}"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
+msgstr ""
 
 #. # Addongs settings
 #: addon
@@ -5530,17 +5536,37 @@ msgstr ""
 msgid "Do not send any data."
 msgstr ""
 
-#~ msgid ""
-#~ "Applications will automatically fetch data via data connection when "
-#~ "required. Additional data charges may apply."
-#~ msgstr ""
-#~ "Приложенията при нужда автоматично ще теглят данни. Може да има "
-#~ "допълнителни такси за данни."
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Извън мрежа"
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr "Според договора, може да има допълнителни такси за данни в роуминг."
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "Получаване на IP адрес…"
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "Неуспешно свързване"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Извън мрежа"
+
+#~ msgid "Signed In"
+#~ msgstr "Вписани в"
+
+#~ msgid "Marketplace"
+#~ msgstr "Marketplace"
+
+#~ msgid "Jank Threshold"
+#~ msgstr "Праг на jank"
+
+#~ msgid "Show Screen Reader Settings"
+#~ msgstr "Показване настройките на екранния четец"
+
+#, fuzzy
+#~ msgid "Icon for {{appName}} app"
+#~ msgstr "Икона за приложение {{ appName }}"
 
 #~ msgid "Deny"
 #~ msgstr "Отказ"

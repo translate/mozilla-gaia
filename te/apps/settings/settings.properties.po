@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-09-25 18:58+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -221,57 +221,63 @@ msgstr "వెతుకుతున్నాను..."
 msgid "Search Again"
 msgstr "మళ్ళీ వెతుకు"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "ఆరంభిస్తున్నాను..."
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "{{ssid}} కు అనుసంధానిస్తున్నాను..."
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "ఐపీ చిరునామాను పొందుతున్నాను..."
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "{{ssid}}కి అనుసంధానమయ్యింది"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "అనుసంధానం విఫలమైంది"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "ఆఫ్‌లైన్"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "అనుసంధానిస్తున్నాను..."
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "ఐపీ చిరునామాను పొందుతున్నాను..."
 
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "అనుసంధానమైంది"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
 msgstr "అనుసంధానం విఫలమైంది"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "ఆఫ్‌లైన్"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1578,6 +1584,14 @@ msgstr ""
 msgid "Turn ON data connection?"
 msgstr "దత్తాంశ అనుసంధానాన్ని చేతనించాలా?"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+"అవసరమైనప్పుడు అనువర్తనాలు దత్తాంశ అనుసంధానం ద్వారా దత్తాంశాన్ని స్వయంచాలకంగా తెచ్చుకుంటాయి. అదనపు "
+"దత్తాంశ ధరలు వర్తించవచ్చు."
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr ""
@@ -1585,6 +1599,13 @@ msgstr ""
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "దత్తాంశ రోమింగును ఆన్ చేయాలా?"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr ""
+"మీరు రోమింగు ప్రాంతంలో ఉన్నప్పుడు మీ సేవా ఒప్పందం ఆధారంగా దత్తాంశం కోసం అదనపు చార్జీలు వర్తించవచ్చు."
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2684,19 +2705,6 @@ msgstr "గురించి"
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
 msgstr "{{email}} వలె ప్రవేశించారు"
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr "ప్రవేశించారు"
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr "మార్కెట్‌ప్లేస్"
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
-msgstr "నా పరికరాన్ని కనిపెట్టు"
 
 #: fxa-options
 #, fuzzy
@@ -4227,9 +4235,13 @@ msgstr "రీఫ్లోస్"
 msgid "Jank"
 msgstr "చెత్త"
 
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "జంక్ థ్రెషోల్డ్"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
+msgstr ""
 
 #: hud-fps
 #, fuzzy
@@ -4484,10 +4496,6 @@ msgstr "నిరంతర పరివర్తనం"
 #, fuzzy
 msgid "Gaia Debug Traces"
 msgstr "గయా దోషవిశ్లేషణ జాడలు"
-
-#: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
-msgstr ""
 
 #: app-transition
 #, fuzzy
@@ -5300,8 +5308,8 @@ msgstr ""
 msgid "{{settings-dialog-prompt}}"
 msgstr ""
 
-#: accessible-app-icon.ariaLabel
-msgid "Icon for {{appName}} app"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
 msgstr ""
 
 #. # Addongs settings
@@ -5648,19 +5656,30 @@ msgstr ""
 msgid "Do not send any data."
 msgstr ""
 
-#~ msgid ""
-#~ "Applications will automatically fetch data via data connection when "
-#~ "required. Additional data charges may apply."
-#~ msgstr ""
-#~ "అవసరమైనప్పుడు అనువర్తనాలు దత్తాంశ అనుసంధానం ద్వారా దత్తాంశాన్ని స్వయంచాలకంగా తెచ్చుకుంటాయి. "
-#~ "అదనపు దత్తాంశ ధరలు వర్తించవచ్చు."
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "ఆఫ్‌లైన్"
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr ""
-#~ "మీరు రోమింగు ప్రాంతంలో ఉన్నప్పుడు మీ సేవా ఒప్పందం ఆధారంగా దత్తాంశం కోసం అదనపు చార్జీలు "
-#~ "వర్తించవచ్చు."
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "ఐపీ చిరునామాను పొందుతున్నాను..."
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "అనుసంధానం విఫలమైంది"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "ఆఫ్‌లైన్"
+
+#~ msgid "Signed In"
+#~ msgstr "ప్రవేశించారు"
+
+#~ msgid "Marketplace"
+#~ msgstr "మార్కెట్‌ప్లేస్"
+
+#~ msgid "Jank Threshold"
+#~ msgstr "జంక్ థ్రెషోల్డ్"
 
 #~ msgid "Deny"
 #~ msgstr "తిరస్కరించు"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-09-30 09:28+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -228,57 +228,63 @@ msgstr "Ya na nema…"
 msgid "Search Again"
 msgstr "Sake nema"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "Ya na farawa…"
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "Ya na haɗawa da {{ssid}}…"
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "Ya na neman adireshin IP…"
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "Ya haɗa da {{ssid}}"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Ya kasa haɗawa"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "Ba ya kan layi"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "Ya na haɗawa…"
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "Ya na neman adireshin IP…"
 
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "Ya haɗa"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Ya kasa haɗawa"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "Ba ya kan layi"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1596,6 +1602,14 @@ msgstr ""
 msgid "Turn ON data connection?"
 msgstr "Turn ON bayanin haɗi?"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+"Aikace-aikace za su nemo bayani kai tsaye ta hanyar haɗin bayanai lokacin da "
+"ake bukata. Za'a iya cajin ƙarin kuɗin bayani."
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr ""
@@ -1603,6 +1617,14 @@ msgstr ""
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "Turn ON bayanin yawatawa?"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr ""
+"Ya danganta da yarjejeniyar sabis ɗinka, za'a iya cajin ƙarin kuɗi na bayani "
+"lokacin da ka ke warin yawatawa."
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2713,19 +2735,6 @@ msgstr "Dangane da"
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
 msgstr "Ka shiga a matsayin {{email}}"
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr "Ka shiga"
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr "Wurin kasuwanci"
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
-msgstr "Nemo Na'urata"
 
 #: fxa-options
 #, fuzzy
@@ -4289,9 +4298,13 @@ msgstr "Sake gudana"
 msgid "Jank"
 msgstr "Horo"
 
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Mafarin Horo"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
+msgstr ""
 
 #: hud-fps
 #, fuzzy
@@ -4545,10 +4558,6 @@ msgstr "Ci gaban kawo sauyi"
 #, fuzzy
 msgid "Gaia Debug Traces"
 msgstr "Gurabun gyara na Gaia"
-
-#: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
-msgstr ""
 
 #: app-transition
 #, fuzzy
@@ -5365,8 +5374,8 @@ msgstr ""
 msgid "{{settings-dialog-prompt}}"
 msgstr ""
 
-#: accessible-app-icon.ariaLabel
-msgid "Icon for {{appName}} app"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
 msgstr ""
 
 #. # Addongs settings
@@ -5713,19 +5722,30 @@ msgstr ""
 msgid "Do not send any data."
 msgstr ""
 
-#~ msgid ""
-#~ "Applications will automatically fetch data via data connection when "
-#~ "required. Additional data charges may apply."
-#~ msgstr ""
-#~ "Aikace-aikace za su nemo bayani kai tsaye ta hanyar haɗin bayanai lokacin "
-#~ "da ake bukata. Za'a iya cajin ƙarin kuɗin bayani."
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Ba ya kan layi"
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr ""
-#~ "Ya danganta da yarjejeniyar sabis ɗinka, za'a iya cajin ƙarin kuɗi na "
-#~ "bayani lokacin da ka ke warin yawatawa."
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "Ya na neman adireshin IP…"
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "Ya kasa haɗawa"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Ba ya kan layi"
+
+#~ msgid "Signed In"
+#~ msgstr "Ka shiga"
+
+#~ msgid "Marketplace"
+#~ msgstr "Wurin kasuwanci"
+
+#~ msgid "Jank Threshold"
+#~ msgstr "Mafarin Horo"
 
 #~ msgid "Deny"
 #~ msgstr "Hana"

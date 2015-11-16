@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-11-09 17:42+0000\n"
 "Last-Translator: Ahmed Nefzaoui <nefzaoui.ahmed@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n>=3 && "
 "n<=10 ? 3 : n>=11 && n<=99 ? 4 : 5;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1447090930.000000\n"
@@ -215,57 +215,63 @@ msgstr "جارِ البحث..."
 msgid "Search Again"
 msgstr "البحث مرة أخرى"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "جارِ التهيئة..."
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "يتّصل بـ{{ssid}}…"
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "جارِ الحصول علي عنوان IP..."
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "تم الاتصال ب {{ssid}}"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "فشل الإتصال"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "غير متصل"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "جارِ الاتصال..."
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
-msgstr "جارِ الحصول على عنوان IP..."
+msgstr "جارِ الحصول علي عنوان IP..."
 
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "متصل"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
-msgstr "فشل في الاتصال"
+msgstr "فشل الإتصال"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "غير متصل"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1518,6 +1524,14 @@ msgstr "MTU"
 msgid "Turn ON data connection?"
 msgstr "هل تريد تفعيل اتصال البيانات؟"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+"ستقوم التطبيقات بشكل تلقائي بتنزيل بيانات من وصلة البيانات عند الحاجة. ربما "
+"سيترتب عليها رسوم اضافية."
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr "تنزيل بيانات شبكة الهاتف آليا."
@@ -1525,6 +1539,14 @@ msgstr "تنزيل بيانات شبكة الهاتف آليا."
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "هل تريد تفعيل خدمة التجوال؟"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr ""
+"اعتمادا على اتفاقية الخدمة الخاصة بك، قد تطبق رسوم إضافية للبيانات عندما "
+"تكون في منطقة التجوال."
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2582,19 +2604,6 @@ msgstr "حول"
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
 msgstr "تسجيل الدخول ب {{email}}"
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr "تم تسجيل الدخول"
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr "السوق"
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
-msgstr "إبحث عن جهازي"
 
 #: fxa-options
 msgctxt "fxa-options"
@@ -4093,9 +4102,13 @@ msgstr "التدفقات العائدة"
 msgid "Jank"
 msgstr "جانك"
 
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Jank Threshold"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
+msgstr ""
 
 #: hud-fps
 msgid "Frames per Second"
@@ -4323,10 +4336,6 @@ msgstr "التنقل المستمر"
 #: debug-gaia-enabled
 msgid "Gaia Debug Traces"
 msgstr "مسارات Gaia Debug"
-
-#: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
-msgstr "أظهر إعدادات قارئ الشاشة"
 
 #: app-transition
 msgid "App Transition"
@@ -5115,9 +5124,9 @@ msgstr "{{settings-dialog-confirm}}"
 msgid "{{settings-dialog-prompt}}"
 msgstr "{{settings-dialog-prompt}}"
 
-#: accessible-app-icon.ariaLabel
-msgid "Icon for {{appName}} app"
-msgstr "الأيقونة لتطبيق {{appName}}"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
+msgstr ""
 
 #. # Addongs settings
 #: addon
@@ -5442,19 +5451,36 @@ msgstr "قم بإرسال التقرير الأساسي بالإضافة إلى 
 msgid "Do not send any data."
 msgstr "لا ترسل أية بيانات."
 
-#~ msgid ""
-#~ "Applications will automatically fetch data via data connection when "
-#~ "required. Additional data charges may apply."
-#~ msgstr ""
-#~ "ستقوم التطبيقات بشكل تلقائي بتنزيل بيانات من وصلة البيانات عند الحاجة. "
-#~ "ربما سيترتب عليها رسوم اضافية."
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "غير متصل"
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr ""
-#~ "اعتمادا على اتفاقية الخدمة الخاصة بك، قد تطبق رسوم إضافية للبيانات عندما "
-#~ "تكون في منطقة التجوال."
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "جارِ الحصول على عنوان IP..."
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "فشل في الاتصال"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "غير متصل"
+
+#~ msgid "Signed In"
+#~ msgstr "تم تسجيل الدخول"
+
+#~ msgid "Marketplace"
+#~ msgstr "السوق"
+
+#~ msgid "Jank Threshold"
+#~ msgstr "Jank Threshold"
+
+#~ msgid "Show Screen Reader Settings"
+#~ msgstr "أظهر إعدادات قارئ الشاشة"
+
+#~ msgid "Icon for {{appName}} app"
+#~ msgstr "الأيقونة لتطبيق {{appName}}"
 
 #~ msgid "Deny"
 #~ msgstr "منع"

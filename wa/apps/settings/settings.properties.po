@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-09-25 19:01+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -222,57 +222,63 @@ msgstr "Dji cwir…"
 msgid "Search Again"
 msgstr "Co rcweri"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "Inicialijhaedje…"
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "Dji m’ raloye a {{ssid}}…"
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "Dji rçu ene adresse IP..."
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "Raloyî a {{ssid}}"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Li raloyaedje a fwait berwete"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "Disraloyî"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "Raloyaedje…"
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "Dji rçu ene adresse IP..."
 
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "Raloyî"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Li raloyaedje a fwait berwete"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "Disraloyî"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1560,6 +1566,14 @@ msgstr ""
 msgid "Turn ON data connection?"
 msgstr "Eclitchî li raloyaedje di dnêyes ?"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+"Les aplicåcions vont direk aler cweri des dnêyes via l’ raloyaedje di dnêyes "
+"cwand elle end åront dandjî. Vos pôrîz esse facturé dpus k’ sins çoula."
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr ""
@@ -1567,6 +1581,14 @@ msgstr ""
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "ECLITCHÎ pormoennance(roaming) di dnêyes"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr ""
+"Sorlon vosse contrat d’ siervice des costindjes di dpus vos pôrént esse "
+"facturés cwand vs estoz dins ene redjon di pormoennance."
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2664,19 +2686,6 @@ msgstr "Åd fwait"
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
 msgstr "Elodjî come {{email}}"
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr "Elodjî"
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr "Marketplace"
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
-msgstr "Ritrover mi éndjin"
 
 #: fxa-options
 #, fuzzy
@@ -4234,9 +4243,13 @@ msgstr "Reflows"
 msgid "Jank"
 msgstr "Blocaedjes"
 
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Soû di blocaedje"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
+msgstr ""
 
 #: hud-fps
 #, fuzzy
@@ -4479,10 +4492,6 @@ msgstr ""
 
 #: debug-gaia-enabled
 msgid "Gaia Debug Traces"
-msgstr ""
-
-#: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
 msgstr ""
 
 #: app-transition
@@ -5281,8 +5290,8 @@ msgstr ""
 msgid "{{settings-dialog-prompt}}"
 msgstr ""
 
-#: accessible-app-icon.ariaLabel
-msgid "Icon for {{appName}} app"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
 msgstr ""
 
 #. # Addongs settings
@@ -5629,20 +5638,30 @@ msgstr ""
 msgid "Do not send any data."
 msgstr ""
 
-#~ msgid ""
-#~ "Applications will automatically fetch data via data connection when "
-#~ "required. Additional data charges may apply."
-#~ msgstr ""
-#~ "Les aplicåcions vont direk aler cweri des dnêyes via l’ raloyaedje di "
-#~ "dnêyes cwand elle end åront dandjî. Vos pôrîz esse facturé dpus k’ sins "
-#~ "çoula."
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Disraloyî"
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr ""
-#~ "Sorlon vosse contrat d’ siervice des costindjes di dpus vos pôrént esse "
-#~ "facturés cwand vs estoz dins ene redjon di pormoennance."
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "Dji rçu ene adresse IP..."
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "Li raloyaedje a fwait berwete"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Disraloyî"
+
+#~ msgid "Signed In"
+#~ msgstr "Elodjî"
+
+#~ msgid "Marketplace"
+#~ msgstr "Marketplace"
+
+#~ msgid "Jank Threshold"
+#~ msgstr "Soû di blocaedje"
 
 #~ msgid "Deny"
 #~ msgstr "Rifuzer"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-10-31 09:04+0000\n"
 "Last-Translator: Jānis Marks Gailis <jm-gailis@fai-vianet.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -215,57 +215,63 @@ msgstr "Meklē…"
 msgid "Search Again"
 msgstr "Meklēt vēlreiz"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "Inicializē…"
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "Savienojas ar {{ssid}}..."
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "Iegūst IP adresi..."
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "Savienots ar {{ssid}}"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Neizdevās savienoties"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "Bezsaistē"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "Savienojas..."
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "Iegūst IP adresi..."
 
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "Savienots"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Neizdevās savienoties"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "Nesaistē"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1532,6 +1538,14 @@ msgstr "MTU"
 msgid "Turn ON data connection?"
 msgstr "Vai ieslēgt mobilo datu savienojumu?"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+"Lietotnes automātiskie saņems datus caur datu savienojumu kad nepieciešams. "
+"Papildus datu savienojuma izmaksas mēdz tikt pielietoti."
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr ""
@@ -1539,6 +1553,14 @@ msgstr ""
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "Vai ieslēgt datu viesabonēšanu?"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr ""
+"Atkarībā no jūsu līguma ar jūsu operatora, var rasties papildus izmaksas "
+"mobilo datu lietošanai ja jūs esat viesabonēšanā."
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2596,19 +2618,6 @@ msgstr "Par"
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
 msgstr "Iegājis kā {{email}}"
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr "Iegājis"
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr "Marketplace"
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
-msgstr "Atrast manu ierīci"
 
 #: fxa-options
 msgctxt "fxa-options"
@@ -4100,9 +4109,13 @@ msgstr "Pārzīmējumi"
 msgid "Jank"
 msgstr "Bloķējumi"
 
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Bloķēšanas slieksnis"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
+msgstr ""
 
 #: hud-fps
 msgid "Frames per Second"
@@ -4330,10 +4343,6 @@ msgstr ""
 #: debug-gaia-enabled
 msgid "Gaia Debug Traces"
 msgstr "Gaia atkļūdošanas pēdas"
-
-#: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
-msgstr "Rādīt ekrāna lasitāja iestatījumus"
 
 #: app-transition
 msgid "App Transition"
@@ -5101,8 +5110,8 @@ msgstr "{{settings-dialog-confirm}}"
 msgid "{{settings-dialog-prompt}}"
 msgstr "{{settings-dialog-prompt}}"
 
-#: accessible-app-icon.ariaLabel
-msgid "Icon for {{appName}} app"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
 msgstr ""
 
 #. # Addongs settings
@@ -5428,19 +5437,33 @@ msgstr ""
 msgid "Do not send any data."
 msgstr ""
 
-#~ msgid ""
-#~ "Applications will automatically fetch data via data connection when "
-#~ "required. Additional data charges may apply."
-#~ msgstr ""
-#~ "Lietotnes automātiskie saņems datus caur datu savienojumu kad "
-#~ "nepieciešams. Papildus datu savienojuma izmaksas mēdz tikt pielietoti."
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Bezsaistē"
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr ""
-#~ "Atkarībā no jūsu līguma ar jūsu operatora, var rasties papildus izmaksas "
-#~ "mobilo datu lietošanai ja jūs esat viesabonēšanā."
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "Iegūst IP adresi..."
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "Neizdevās savienoties"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Nesaistē"
+
+#~ msgid "Signed In"
+#~ msgstr "Iegājis"
+
+#~ msgid "Marketplace"
+#~ msgstr "Marketplace"
+
+#~ msgid "Jank Threshold"
+#~ msgstr "Bloķēšanas slieksnis"
+
+#~ msgid "Show Screen Reader Settings"
+#~ msgstr "Rādīt ekrāna lasitāja iestatījumus"
 
 #~ msgid "Deny"
 #~ msgstr "Liegt"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-11-04 20:52+0000\n"
 "Last-Translator: milupo <milupo@sorbzilla.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1446670371.000000\n"
@@ -215,57 +215,63 @@ msgstr "Pyta so…"
 msgid "Search Again"
 msgstr "Dale pytać"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "Inicializuje so…"
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "Zwjazuje so z {{ssid}}…"
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "IP-adresa so wotwołuje…"
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "Z {{ssid}} zwjazany"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Zwisk je so nimokulił"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "Offline"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "Zwjazuje…"
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "IP-adresa so wotwołuje…"
 
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "Zwjazany"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Zwisk je so nimokulił"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "Offline"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1532,6 +1538,14 @@ msgstr "MTU"
 msgid "Turn ON data connection?"
 msgstr "Datowy zwisk zmóžnić?"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+"Nałoženja budźe awtomatisce daty přez datowy zwisk wotwołować, jeli tjreba. "
+"Přidatne datowe kóšty móža nastać."
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr "Mobilne syćowe daty awtomatisce wobstarać."
@@ -1539,6 +1553,14 @@ msgstr "Mobilne syćowe daty awtomatisce wobstarać."
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "Datowy roaming zmóžnić?"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr ""
+"We wotwisnosći wot wašeho posłužbneho dojednanja, móža přidatne kóšty za "
+"daty nastać, hdyž sće w roamingowej kónčinje."
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2607,19 +2629,6 @@ msgstr "Wo"
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
 msgstr "Přizjewjeny jako {{email}}"
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr "Přizjewjeny"
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr "Torhošćo"
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
-msgstr "Mój grat namakać"
 
 #: fxa-options
 msgctxt "fxa-options"
@@ -4157,9 +4166,13 @@ msgstr "Nowowuličenja"
 msgid "Jank"
 msgstr "Dlijenje"
 
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Dlijenski próh"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
+msgstr ""
 
 #: hud-fps
 msgid "Frames per Second"
@@ -4387,10 +4400,6 @@ msgstr "Běžny přechad"
 #: debug-gaia-enabled
 msgid "Gaia Debug Traces"
 msgstr "Zmylkowe pytanja Gaia"
-
-#: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
-msgstr "Nastajenja čitaka wobrazowki pokazać"
 
 #: app-transition
 msgid "App Transition"
@@ -5192,9 +5201,9 @@ msgstr "{{settings-dialog-confirm}}"
 msgid "{{settings-dialog-prompt}}"
 msgstr "{{settings-dialog-prompt}}"
 
-#: accessible-app-icon.ariaLabel
-msgid "Icon for {{appName}} app"
-msgstr "Symbol za na nałoženje {{appName}}"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
+msgstr ""
 
 #. # Addongs settings
 #: addon
@@ -5520,19 +5529,36 @@ msgstr "Zakładnu rozprawu plus dignostiske informacije pósłać."
 msgid "Do not send any data."
 msgstr "Žane daty njesłać."
 
-#~ msgid ""
-#~ "Applications will automatically fetch data via data connection when "
-#~ "required. Additional data charges may apply."
-#~ msgstr ""
-#~ "Nałoženja budźe awtomatisce daty přez datowy zwisk wotwołować, jeli "
-#~ "tjreba. Přidatne datowe kóšty móža nastać."
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Offline"
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr ""
-#~ "We wotwisnosći wot wašeho posłužbneho dojednanja, móža přidatne kóšty za "
-#~ "daty nastać, hdyž sće w roamingowej kónčinje."
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "IP-adresa so wotwołuje…"
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "Zwisk je so nimokulił"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Offline"
+
+#~ msgid "Signed In"
+#~ msgstr "Přizjewjeny"
+
+#~ msgid "Marketplace"
+#~ msgstr "Torhošćo"
+
+#~ msgid "Jank Threshold"
+#~ msgstr "Dlijenski próh"
+
+#~ msgid "Show Screen Reader Settings"
+#~ msgstr "Nastajenja čitaka wobrazowki pokazać"
+
+#~ msgid "Icon for {{appName}} app"
+#~ msgstr "Symbol za na nałoženje {{appName}}"
 
 #~ msgid "Deny"
 #~ msgstr "Wotpokazać"

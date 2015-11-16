@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-09-25 18:31+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -228,57 +228,63 @@ msgstr "Soek tans…"
 msgid "Search Again"
 msgstr "Soek weer"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "Inisialiseer tans…"
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "Koppel tans aan {{ssid}}…"
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "Verkry tans ’n IP-adres…"
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "Gekoppel aan {{ssid}}"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Verbinding het misluk"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "Vanlyn"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "Koppel tans…"
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "Verkry tans ’n IP-adres…"
 
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "Gekoppel"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Verbinding het misluk"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "Vanlyn"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1599,6 +1605,14 @@ msgstr ""
 msgid "Turn ON data connection?"
 msgstr "Skakel dataverbinding AAN?"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+"Programme sal outomaties data via dataverbinding haal, indien vereis. Daar "
+"kan dalk ekstra datakoste wees."
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr ""
@@ -1606,6 +1620,14 @@ msgstr ""
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "Skakel dataswerwing AAN?"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr ""
+"Daar kan dalk ekstra koste wees as jy in ’n swerwingsarea is, afhangende van "
+"jou diensooreenkoms."
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2714,19 +2736,6 @@ msgstr "Meer oor"
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
 msgstr "Aangemeld as {{email}}"
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr "Aangemeld"
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr "Markplek"
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
-msgstr "Vind my toestel"
 
 #: fxa-options
 #, fuzzy
@@ -4296,9 +4305,13 @@ msgstr "Terugvloeiings"
 msgid "Jank"
 msgstr "Gagga"
 
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "Gaggadrempel"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
+msgstr ""
 
 #: hud-fps
 #, fuzzy
@@ -4552,10 +4565,6 @@ msgstr "Deurlopende oorgang"
 #, fuzzy
 msgid "Gaia Debug Traces"
 msgstr "Gaia-ontfoutspore"
-
-#: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
-msgstr ""
 
 #: app-transition
 #, fuzzy
@@ -5371,8 +5380,8 @@ msgstr ""
 msgid "{{settings-dialog-prompt}}"
 msgstr ""
 
-#: accessible-app-icon.ariaLabel
-msgid "Icon for {{appName}} app"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
 msgstr ""
 
 #. # Addongs settings
@@ -5719,19 +5728,30 @@ msgstr ""
 msgid "Do not send any data."
 msgstr ""
 
-#~ msgid ""
-#~ "Applications will automatically fetch data via data connection when "
-#~ "required. Additional data charges may apply."
-#~ msgstr ""
-#~ "Programme sal outomaties data via dataverbinding haal, indien vereis. "
-#~ "Daar kan dalk ekstra datakoste wees."
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Vanlyn"
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr ""
-#~ "Daar kan dalk ekstra koste wees as jy in ’n swerwingsarea is, afhangende "
-#~ "van jou diensooreenkoms."
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "Verkry tans ’n IP-adres…"
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "Verbinding het misluk"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Vanlyn"
+
+#~ msgid "Signed In"
+#~ msgstr "Aangemeld"
+
+#~ msgid "Marketplace"
+#~ msgstr "Markplek"
+
+#~ msgid "Jank Threshold"
+#~ msgstr "Gaggadrempel"
 
 #~ msgid "Deny"
 #~ msgstr "Weier"

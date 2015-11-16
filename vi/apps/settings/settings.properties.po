@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-09-25 19:01+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -231,57 +231,63 @@ msgstr "Đang tìm kiếm…"
 msgid "Search Again"
 msgstr "Tìm tiếp"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "Đang khởi tạo…"
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "Đang kết nối đến {{ssid}}…"
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "Đang nhận địa chỉ IP…"
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "Đã kết nối đến {{ssid}}"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Lỗi kết nối"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "Ngoại tuyến"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "Đang kết nối…"
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "Đang nhận địa chỉ IP…"
 
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "Đã kết nối"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
 msgstr "Lỗi kết nối"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "Ngoại tuyến"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1599,6 +1605,14 @@ msgstr ""
 msgid "Turn ON data connection?"
 msgstr "Bật kết nối dữ liệu?"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+"Các ứng dụng sẽ tự động tải dữ liệu từ kết nối này khi cần. Có thể có cước "
+"phí bổ sung."
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr ""
@@ -1606,6 +1620,14 @@ msgstr ""
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "Bật chuyển vùng dữ liệu?"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr ""
+"Phụ phí có thể phát sinh với dữ liệu tùy theo thỏa thuận dịch vụ khi bạn kết "
+"nối trong vùng không có sóng của nhà mạng đang dùng."
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2698,19 +2720,6 @@ msgstr ""
 
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
-msgstr ""
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr ""
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr ""
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
 msgstr ""
 
 #: fxa-options
@@ -4256,8 +4265,12 @@ msgstr ""
 msgid "Jank"
 msgstr ""
 
-#: jank-threshold
-msgid "Jank Threshold"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
 msgstr ""
 
 #: hud-fps
@@ -4493,10 +4506,6 @@ msgstr ""
 
 #: debug-gaia-enabled
 msgid "Gaia Debug Traces"
-msgstr ""
-
-#: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
 msgstr ""
 
 #: app-transition
@@ -5311,8 +5320,8 @@ msgstr ""
 msgid "{{settings-dialog-prompt}}"
 msgstr ""
 
-#: accessible-app-icon.ariaLabel
-msgid "Icon for {{appName}} app"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
 msgstr ""
 
 #. # Addongs settings
@@ -5656,19 +5665,21 @@ msgstr ""
 msgid "Do not send any data."
 msgstr ""
 
-#~ msgid ""
-#~ "Applications will automatically fetch data via data connection when "
-#~ "required. Additional data charges may apply."
-#~ msgstr ""
-#~ "Các ứng dụng sẽ tự động tải dữ liệu từ kết nối này khi cần. Có thể có "
-#~ "cước phí bổ sung."
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Ngoại tuyến"
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr ""
-#~ "Phụ phí có thể phát sinh với dữ liệu tùy theo thỏa thuận dịch vụ khi bạn "
-#~ "kết nối trong vùng không có sóng của nhà mạng đang dùng."
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "Đang nhận địa chỉ IP…"
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "Lỗi kết nối"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "Ngoại tuyến"
 
 #~ msgid "Deny"
 #~ msgstr "Từ chối"

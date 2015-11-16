@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-09-25 18:50+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -228,57 +228,63 @@ msgstr "खोजि रहल अछि…"
 msgid "Search Again"
 msgstr "फेर खोजू "
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "आरँभीकरण कए रहल अछि…"
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "{{ssid}} सँ कनेक्ट भए रहल…"
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "IP एड्रेस पाएल गेल…"
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "{{ssid}} सँ कनेक्ट भए रहल"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "कनेक्शन असफल"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "आफलाइन"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "कनेक्ट कए रहल अछि…"
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
-msgstr "एकटा IP पता प्राप्त कए रहल अछि…"
+msgstr "IP एड्रेस पाएल गेल…"
 
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "जुड़ल"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
 msgstr "कनेक्शन असफल"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "आफलाइन"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1577,6 +1583,14 @@ msgstr ""
 msgid "Turn ON data connection?"
 msgstr "डाटा कनेक्शन चालू करू?"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+"अनुप्रयोग जरूरत हए पर डाटा कनेक्शन क ज़रिये स्वचालित रूप सँ डाटा कनेक्शन करताह. बाइली "
+"डाटा शुल्क लागू भए सकैत अछि."
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr ""
@@ -1584,6 +1598,14 @@ msgstr ""
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "डाटा रोमिंग शुरू करू?"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr ""
+"अहाँक सेवा समझौता पर निर्भर करैत अछि, जखन अहाँ रोमिंग एरिया मे अछि तखन बाइली शुल्क "
+"लागू भ सकैत अछि"
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2687,19 +2709,6 @@ msgstr "परिचय"
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
 msgstr "साइन इन करू {{email}}"
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr "साइन इन"
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr "मार्केटप्लेस"
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
-msgstr "हमर डिवाइस खोजू"
 
 #: fxa-options
 #, fuzzy
@@ -4246,9 +4255,13 @@ msgstr "रीफ़्लो"
 msgid "Jank"
 msgstr "जैंक"
 
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "जैंक थ्रेसहोल्ड"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
+msgstr ""
 
 #: hud-fps
 #, fuzzy
@@ -4502,10 +4515,6 @@ msgstr "निरंतर संक्रमण"
 #, fuzzy
 msgid "Gaia Debug Traces"
 msgstr "गेइया डिबग निशान"
-
-#: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
-msgstr ""
 
 #: app-transition
 #, fuzzy
@@ -5321,8 +5330,8 @@ msgstr ""
 msgid "{{settings-dialog-prompt}}"
 msgstr ""
 
-#: accessible-app-icon.ariaLabel
-msgid "Icon for {{appName}} app"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
 msgstr ""
 
 #. # Addongs settings
@@ -5669,19 +5678,30 @@ msgstr ""
 msgid "Do not send any data."
 msgstr ""
 
-#~ msgid ""
-#~ "Applications will automatically fetch data via data connection when "
-#~ "required. Additional data charges may apply."
-#~ msgstr ""
-#~ "अनुप्रयोग जरूरत हए पर डाटा कनेक्शन क ज़रिये स्वचालित रूप सँ डाटा कनेक्शन करताह. बाइली "
-#~ "डाटा शुल्क लागू भए सकैत अछि."
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "आफलाइन"
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr ""
-#~ "अहाँक सेवा समझौता पर निर्भर करैत अछि, जखन अहाँ रोमिंग एरिया मे अछि तखन बाइली शुल्क "
-#~ "लागू भ सकैत अछि"
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "एकटा IP पता प्राप्त कए रहल अछि…"
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "कनेक्शन असफल"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "आफलाइन"
+
+#~ msgid "Signed In"
+#~ msgstr "साइन इन"
+
+#~ msgid "Marketplace"
+#~ msgstr "मार्केटप्लेस"
+
+#~ msgid "Jank Threshold"
+#~ msgstr "जैंक थ्रेसहोल्ड"
 
 #~ msgid "Deny"
 #~ msgstr "मना करू"

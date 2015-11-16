@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 15:45+0000\n"
+"POT-Creation-Date: 2015-11-16 15:45+0000\n"
 "PO-Revision-Date: 2015-10-31 08:21+0000\n"
 "Last-Translator: Umer Tanvir <um.qshi@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -214,57 +214,63 @@ msgstr "تلاش کر رہا ہے…"
 msgid "Search Again"
 msgstr "پھر تلاش کریں"
 
-#: fullStatus-initializing
+#: full-status-initializing
 msgid "Initializing…"
 msgstr "ابتدا کر رہا ہے…"
 
-#: fullStatus-connecting
+#: full-status-connecting
 msgid "Connecting to {{ssid}}…"
 msgstr "جوڑ رہا ہے بطرف {{ssid}}…"
 
-#: fullStatus-associated
-msgctxt "fullStatus-associated"
+#: full-status-associated
+#, fuzzy
+msgctxt "full-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "IP پتہ حاصل کر رہا ہے…"
 
-#: fullStatus-connected
+#: full-status-connected
 msgid "Connected to {{ssid}}"
 msgstr "جوڑ رہا ہے بطرف {{ssid}}"
 
-#: fullStatus-connectingfailed
-msgctxt "fullStatus-connectingfailed"
+#: full-status-connectingfailed
+#, fuzzy
+msgctxt "full-status-connectingfailed"
 msgid "Connection failed"
 msgstr "کنکشن ناکام"
 
-#: fullStatus-disconnected
-msgctxt "fullStatus-disconnected"
-msgid "Offline"
-msgstr "آف لائن"
+#: full-status-disconnected
+msgctxt "full-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
-#: shortStatus-connecting
-msgctxt "shortStatus-connecting"
+#: short-status-connecting
+#, fuzzy
+msgctxt "short-status-connecting"
 msgid "Connecting…"
 msgstr "جڑ رہا ہے…"
 
-#: shortStatus-associated
-msgctxt "shortStatus-associated"
+#: short-status-associated
+#, fuzzy
+msgctxt "short-status-associated"
 msgid "Obtaining an IP address…"
 msgstr "IP پتہ حاصل کر رہا ہے…"
 
-#: shortStatus-connected
-msgctxt "shortStatus-connected"
+#: short-status-connected
+#, fuzzy
+msgctxt "short-status-connected"
 msgid "Connected"
 msgstr "جڑا ہوا"
 
-#: shortStatus-connectingfailed
-msgctxt "shortStatus-connectingfailed"
+#: short-status-connectingfailed
+#, fuzzy
+msgctxt "short-status-connectingfailed"
 msgid "Connection failed"
 msgstr "کنکشن ناکام"
 
-#: shortStatus-disconnected
-msgctxt "shortStatus-disconnected"
-msgid "Offline"
-msgstr "آف لائن"
+#: short-status-disconnected
+msgctxt "short-status-disconnected"
+msgid "Not connected"
+msgstr ""
 
 #: wifi-sleep
 msgid "Wi-Fi Sleep"
@@ -1530,6 +1536,14 @@ msgstr "MTU"
 msgid "Turn ON data connection?"
 msgstr "کوائف کنکشن آن کر دیں؟"
 
+#: dataConnection-warning-message
+msgid ""
+"Applications will automatically fetch data via data connection when "
+"required. Additional data charges may apply."
+msgstr ""
+"جب کوائف مطلوب ہوں تب ایپلی کیشن کوائف کو بذریعہے کوائف کنکشن خود بخود لے "
+"گا۔ جس کے لیے مزید اخراجات لگائیں جایں گے۔"
+
 #: dataConnection-warning-message-short
 msgid "Automatically fetch mobile network data."
 msgstr ""
@@ -1537,6 +1551,14 @@ msgstr ""
 #: dataRoaming-warning-head
 msgid "Turn ON data roaming?"
 msgstr "کوائف رومنگ آن کر دیں؟"
+
+#: dataRoaming-warning-message
+msgid ""
+"Depending on your service agreement, extra charges may apply for data when "
+"you are in a roaming area."
+msgstr ""
+"آپ کے سروس معاہدہ کے لحاظ سے، آپکی رومنگ علاقہ میں موجودگی کے دوران مزید "
+"چارجیس لگاے جا سکتے ہیں۔"
 
 #: dataRoaming-warning-message-short
 msgid "Fetch data when roaming."
@@ -2602,19 +2624,6 @@ msgstr "متعلق"
 #: fxa-logged-in-text
 msgid "Signed in as {{email}}"
 msgstr "{{email}} کے بطور سائن ان"
-
-#: fxa-signed-in-header
-msgid "Signed In"
-msgstr "میں سآئنڈ اِن"
-
-#: fxa-marketplace-app
-msgid "Marketplace"
-msgstr "مارکیٹ پلیس"
-
-#: fxa-find-my-device-app
-msgctxt "fxa-find-my-device-app"
-msgid "Find My Device"
-msgstr "میرا آلہ ڈھونڈیں"
 
 #: fxa-options
 msgctxt "fxa-options"
@@ -4136,9 +4145,13 @@ msgstr "بازروانی"
 msgid "Jank"
 msgstr "جےنک"
 
-#: jank-threshold
-msgid "Jank Threshold"
-msgstr "جےنک حد"
+#: hud-jank-threshold
+msgid "Jank Threshold (ms)"
+msgstr ""
+
+#: hud-reflows-threshold
+msgid "Duration Threshold (ms)"
+msgstr ""
 
 #: hud-fps
 msgid "Frames per Second"
@@ -4366,10 +4379,6 @@ msgstr "جاری ترجمہ"
 #: debug-gaia-enabled
 msgid "Gaia Debug Traces"
 msgstr "گایا ڈبگ نشانات"
-
-#: showScreenReaderSettings
-msgid "Show Screen Reader Settings"
-msgstr "سکرین خواں سیٹکگیں دکھائیں"
 
 #: app-transition
 msgid "App Transition"
@@ -5170,10 +5179,9 @@ msgstr "{{settings-dialog-confirm}}"
 msgid "{{settings-dialog-prompt}}"
 msgstr "{{settings-dialog-prompt}}"
 
-#: accessible-app-icon.ariaLabel
-#, fuzzy
-msgid "Icon for {{appName}} app"
-msgstr "اپلی کیشن {{ appName }} کے لئے آئکن"
+#: accessibility-app-icon.ariaLabel
+msgid "{{appName}} app"
+msgstr ""
 
 #. # Addongs settings
 #: addon
@@ -5502,19 +5510,37 @@ msgstr "اساسی رپورٹس جمع تشخیصی معلومات ارسال ک
 msgid "Do not send any data."
 msgstr "کوئ بھی کوائف نہ بھیجیں۔"
 
-#~ msgid ""
-#~ "Applications will automatically fetch data via data connection when "
-#~ "required. Additional data charges may apply."
-#~ msgstr ""
-#~ "جب کوائف مطلوب ہوں تب ایپلی کیشن کوائف کو بذریعہے کوائف کنکشن خود بخود لے "
-#~ "گا۔ جس کے لیے مزید اخراجات لگائیں جایں گے۔"
+#~ msgctxt "fullStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "آف لائن"
 
-#~ msgid ""
-#~ "Depending on your service agreement, extra charges may apply for data "
-#~ "when you are in a roaming area."
-#~ msgstr ""
-#~ "آپ کے سروس معاہدہ کے لحاظ سے، آپکی رومنگ علاقہ میں موجودگی کے دوران مزید "
-#~ "چارجیس لگاے جا سکتے ہیں۔"
+#~ msgctxt "shortStatus-associated"
+#~ msgid "Obtaining an IP address…"
+#~ msgstr "IP پتہ حاصل کر رہا ہے…"
+
+#~ msgctxt "shortStatus-connectingfailed"
+#~ msgid "Connection failed"
+#~ msgstr "کنکشن ناکام"
+
+#~ msgctxt "shortStatus-disconnected"
+#~ msgid "Offline"
+#~ msgstr "آف لائن"
+
+#~ msgid "Signed In"
+#~ msgstr "میں سآئنڈ اِن"
+
+#~ msgid "Marketplace"
+#~ msgstr "مارکیٹ پلیس"
+
+#~ msgid "Jank Threshold"
+#~ msgstr "جےنک حد"
+
+#~ msgid "Show Screen Reader Settings"
+#~ msgstr "سکرین خواں سیٹکگیں دکھائیں"
+
+#, fuzzy
+#~ msgid "Icon for {{appName}} app"
+#~ msgstr "اپلی کیشن {{ appName }} کے لئے آئکن"
 
 #~ msgid "Deny"
 #~ msgstr "انکار کرنا"
