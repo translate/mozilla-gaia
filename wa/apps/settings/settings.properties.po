@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-28 10:45+0000\n"
+"POT-Creation-Date: 2016-02-01 05:45+0000\n"
 "PO-Revision-Date: 2015-09-25 19:01+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2189,7 +2189,6 @@ msgstr "10 munutes"
 
 #: screen-timeout-never
 #, fuzzy
-msgctxt "screen-timeout-never"
 msgid "never"
 msgstr "måy"
 
@@ -2614,6 +2613,12 @@ msgstr "limero"
 #: defaultKeyboardEnabled
 msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr "{{appName}} {{layoutName}}est defini come metôde d’ intrêye prémetowe"
+
+#. # LOCALIZATION NOTE (layout-emoji): Label for the layout "Emoji".
+#. # other layouts are always labeled in their own native scripts (in JS files)
+#: keyboard-layout-emoji
+msgid "Emoji"
+msgstr ""
 
 #. # Personalization :: Themes
 #: themes
@@ -3081,6 +3086,10 @@ msgstr "Tapez li côde PUK2"
 #: newpinTitle
 msgid "New PIN"
 msgstr "Novea PIN"
+
+#: pinErrorMsg
+msgid "The PIN was incorrect."
+msgstr "Li PIN esteut mwais."
 
 #: inputCodeRetriesLeft
 msgctxt "inputCodeRetriesLeft"
@@ -4708,22 +4717,113 @@ msgstr "Batreye"
 msgid "{{battery}}"
 msgstr ""
 
-#: batteryLevel
-#, fuzzy
-msgid "Current Level"
-msgstr "Livea do moumint"
-
-#: batteryLevel-percent-unplugged
+#: battery-level-percent
 msgid "{{level}}%"
 msgstr "{{level}}%"
 
-#: batteryLevel-percent-charging
-msgid "{{level}}% (charging)"
-msgstr "{{level}}% (ki tchedje)"
+#: battery-current-level
+msgid "Current Level ({{level}}%)"
+msgstr ""
 
-#: batteryLevel-percent-charged
-msgid "{{level}}% (charged)"
-msgstr "{{level}}% (tcherdjî)"
+#: battery-charging-calculating
+msgid "Calculating time required…"
+msgstr ""
+
+#: battery-discharging-calculating
+msgid "Calculating time remaining…"
+msgstr ""
+
+#: battery-charging-complete
+msgid "Fully charged"
+msgstr ""
+
+#: battery-discharging-complete
+msgid "Fully depleted"
+msgstr ""
+
+#: battery-time-hour
+#, fuzzy
+msgid "{[ plural(hours) ]}"
+msgstr "{[ plural(n) ]}"
+
+#: battery-time-hour[zero]
+msgctxt "battery-time-hour[zero]"
+msgid "{{ hours }} hours"
+msgstr ""
+
+#: battery-time-hour[one]
+msgid "{{ hours }} hour"
+msgstr ""
+
+#: battery-time-hour[two]
+msgctxt "battery-time-hour[two]"
+msgid "{{ hours }} hours"
+msgstr ""
+
+#: battery-time-hour[few]
+msgctxt "battery-time-hour[few]"
+msgid "{{ hours }} hours"
+msgstr ""
+
+#: battery-time-hour[many]
+msgctxt "battery-time-hour[many]"
+msgid "{{ hours }} hours"
+msgstr ""
+
+#: battery-time-hour[other]
+msgctxt "battery-time-hour[other]"
+msgid "{{ hours }} hours"
+msgstr ""
+
+#: battery-time-minute
+#, fuzzy
+msgid "{[ plural(minutes) ]}"
+msgstr "{[ plural(size) ]}"
+
+#: battery-time-minute[zero]
+msgctxt "battery-time-minute[zero]"
+msgid "{{ minutes }} minutes"
+msgstr ""
+
+#: battery-time-minute[one]
+msgid "{{ minutes }} minute"
+msgstr ""
+
+#: battery-time-minute[two]
+msgctxt "battery-time-minute[two]"
+msgid "{{ minutes }} minutes"
+msgstr ""
+
+#: battery-time-minute[few]
+msgctxt "battery-time-minute[few]"
+msgid "{{ minutes }} minutes"
+msgstr ""
+
+#: battery-time-minute[many]
+msgctxt "battery-time-minute[many]"
+msgid "{{ minutes }} minutes"
+msgstr ""
+
+#: battery-time-minute[other]
+msgctxt "battery-time-minute[other]"
+msgid "{{ minutes }} minutes"
+msgstr ""
+
+#: battery-charging-minutes
+msgid "{{ battery-time-minute }} until fully charged"
+msgstr ""
+
+#: battery-charging-hours
+msgid "{{ battery-time-hour }} {{ battery-time-minute }} until fully charged"
+msgstr ""
+
+#: battery-discharging-minutes
+msgid "{{ battery-time-minute }} remaining"
+msgstr ""
+
+#: battery-discharging-hours
+msgid "{{ battery-time-hour }} {{ battery-time-minute }} remaining"
+msgstr ""
 
 #: powerSaveModeTitle
 #, fuzzy
@@ -4743,8 +4843,7 @@ msgstr "co {{level}}% di batreye"
 
 #: powerSave-never
 #, fuzzy
-msgctxt "powerSave-never"
-msgid "never"
+msgid "Never"
 msgstr "måy"
 
 #: turnOnAuto
@@ -5676,6 +5775,21 @@ msgstr ""
 msgid "Do not send any data."
 msgstr ""
 
+#, fuzzy
+#~ msgid "Current Level"
+#~ msgstr "Livea do moumint"
+
+#~ msgid "{{level}}% (charging)"
+#~ msgstr "{{level}}% (ki tchedje)"
+
+#~ msgid "{{level}}% (charged)"
+#~ msgstr "{{level}}% (tcherdjî)"
+
+#, fuzzy
+#~ msgctxt "powerSave-never"
+#~ msgid "never"
+#~ msgstr "måy"
+
 #~ msgid "Outgoing calls"
 #~ msgstr "Houcaedjes rexhants"
 
@@ -6168,9 +6282,6 @@ msgstr ""
 
 #~ msgid "Phone lock"
 #~ msgstr "Eclawaedje do telefone"
-
-#~ msgid "The PIN was incorrect."
-#~ msgstr "Li PIN esteut mwais."
 
 #~ msgid "{{link1}} or {{link2}}"
 #~ msgstr "{{link1}} oudon-bén {{link2}}"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-28 10:45+0000\n"
+"POT-Creation-Date: 2016-02-01 05:45+0000\n"
 "PO-Revision-Date: 2016-01-31 17:31+0000\n"
 "Last-Translator: Rodrigo Pérez Ramírez <rodrigo_perez_r@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1454261471.000000\n"
@@ -2137,7 +2137,6 @@ msgstr "10 minut"
 
 #: screen-timeout-never
 #, fuzzy
-msgctxt "screen-timeout-never"
 msgid "never"
 msgstr "nent ta"
 
@@ -2551,6 +2550,12 @@ msgstr "lab men"
 
 #: defaultKeyboardEnabled
 msgid "{{appName}} {{layoutName}} is set as default input method"
+msgstr ""
+
+#. # LOCALIZATION NOTE (layout-emoji): Label for the layout "Emoji".
+#. # other layouts are always labeled in their own native scripts (in JS files)
+#: keyboard-layout-emoji
+msgid "Emoji"
 msgstr ""
 
 #. # Personalization :: Themes
@@ -3010,6 +3015,10 @@ msgstr "Mke código PUK2"
 #: newpinTitle
 msgid "New PIN"
 msgstr "PIN Kub"
+
+#: pinErrorMsg
+msgid "The PIN was incorrect."
+msgstr "Na li xhin PIN re."
 
 #: inputCodeRetriesLeft
 msgctxt "inputCodeRetriesLeft"
@@ -4521,21 +4530,113 @@ msgstr "Sni xhoy"
 msgid "{{battery}}"
 msgstr "{{battery}}"
 
-#: batteryLevel
-msgid "Current Level"
-msgstr ""
-
-#: batteryLevel-percent-unplugged
+#: battery-level-percent
 msgid "{{level}}%"
 msgstr "{{level}}%"
 
-#: batteryLevel-percent-charging
-msgid "{{level}}% (charging)"
-msgstr "{{level}}% (de gun carg ga)"
+#: battery-current-level
+msgid "Current Level ({{level}}%)"
+msgstr ""
 
-#: batteryLevel-percent-charged
-msgid "{{level}}% (charged)"
-msgstr "{{level}}% (xhol carg ga)"
+#: battery-charging-calculating
+msgid "Calculating time required…"
+msgstr ""
+
+#: battery-discharging-calculating
+msgid "Calculating time remaining…"
+msgstr ""
+
+#: battery-charging-complete
+msgid "Fully charged"
+msgstr ""
+
+#: battery-discharging-complete
+msgid "Fully depleted"
+msgstr ""
+
+#: battery-time-hour
+#, fuzzy
+msgid "{[ plural(hours) ]}"
+msgstr "{[ plural(count) ]}"
+
+#: battery-time-hour[zero]
+msgctxt "battery-time-hour[zero]"
+msgid "{{ hours }} hours"
+msgstr ""
+
+#: battery-time-hour[one]
+msgid "{{ hours }} hour"
+msgstr ""
+
+#: battery-time-hour[two]
+msgctxt "battery-time-hour[two]"
+msgid "{{ hours }} hours"
+msgstr ""
+
+#: battery-time-hour[few]
+msgctxt "battery-time-hour[few]"
+msgid "{{ hours }} hours"
+msgstr ""
+
+#: battery-time-hour[many]
+msgctxt "battery-time-hour[many]"
+msgid "{{ hours }} hours"
+msgstr ""
+
+#: battery-time-hour[other]
+msgctxt "battery-time-hour[other]"
+msgid "{{ hours }} hours"
+msgstr ""
+
+#: battery-time-minute
+#, fuzzy
+msgid "{[ plural(minutes) ]}"
+msgstr "{[ plural(size) ]}"
+
+#: battery-time-minute[zero]
+msgctxt "battery-time-minute[zero]"
+msgid "{{ minutes }} minutes"
+msgstr ""
+
+#: battery-time-minute[one]
+msgid "{{ minutes }} minute"
+msgstr ""
+
+#: battery-time-minute[two]
+msgctxt "battery-time-minute[two]"
+msgid "{{ minutes }} minutes"
+msgstr ""
+
+#: battery-time-minute[few]
+msgctxt "battery-time-minute[few]"
+msgid "{{ minutes }} minutes"
+msgstr ""
+
+#: battery-time-minute[many]
+msgctxt "battery-time-minute[many]"
+msgid "{{ minutes }} minutes"
+msgstr ""
+
+#: battery-time-minute[other]
+msgctxt "battery-time-minute[other]"
+msgid "{{ minutes }} minutes"
+msgstr ""
+
+#: battery-charging-minutes
+msgid "{{ battery-time-minute }} until fully charged"
+msgstr ""
+
+#: battery-charging-hours
+msgid "{{ battery-time-hour }} {{ battery-time-minute }} until fully charged"
+msgstr ""
+
+#: battery-discharging-minutes
+msgid "{{ battery-time-minute }} remaining"
+msgstr ""
+
+#: battery-discharging-hours
+msgid "{{ battery-time-hour }} {{ battery-time-minute }} remaining"
+msgstr ""
 
 #: powerSaveModeTitle
 msgctxt "powerSaveModeTitle"
@@ -4553,8 +4654,7 @@ msgstr ""
 
 #: powerSave-never
 #, fuzzy
-msgctxt "powerSave-never"
-msgid "never"
+msgid "Never"
 msgstr "nent ta"
 
 #: turnOnAuto
@@ -5459,6 +5559,17 @@ msgstr ""
 msgid "Do not send any data."
 msgstr ""
 
+#~ msgid "{{level}}% (charging)"
+#~ msgstr "{{level}}% (de gun carg ga)"
+
+#~ msgid "{{level}}% (charged)"
+#~ msgstr "{{level}}% (xhol carg ga)"
+
+#, fuzzy
+#~ msgctxt "powerSave-never"
+#~ msgid "never"
+#~ msgstr "nent ta"
+
 #~ msgid "Outgoing calls"
 #~ msgstr "Pá nil"
 
@@ -5673,9 +5784,6 @@ msgstr ""
 
 #~ msgid "English"
 #~ msgstr "dizh Inglés"
-
-#~ msgid "The PIN was incorrect."
-#~ msgstr "Na li xhin PIN re."
 
 #~ msgid "{{link1}} or {{link2}}"
 #~ msgstr "{{link1}} o {{link2}}"

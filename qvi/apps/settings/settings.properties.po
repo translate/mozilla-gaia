@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-28 10:45+0000\n"
+"POT-Creation-Date: 2016-02-01 05:45+0000\n"
 "PO-Revision-Date: 2016-01-12 20:23+0000\n"
 "Last-Translator: oscarachg <oscarachg@gmail.com>\n"
 "Language-Team: none\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1452630233.000000\n"
@@ -1026,8 +1026,9 @@ msgstr ""
 #. # If you need to adapt your localization to the reduced space available
 #. # in headers, you can use a shorter string here.
 #: messagingSettings-header
+#, fuzzy
 msgid "{{messagingSettings}}"
-msgstr ""
+msgstr "{{messageSettings}}"
 
 #: message-confirmation
 msgid "Message Confirmation"
@@ -1715,9 +1716,10 @@ msgid "Unpair"
 msgstr ""
 
 #: device-option-confirm
+#, fuzzy
 msgctxt "device-option-confirm"
 msgid "Confirm"
-msgstr ""
+msgstr "Allirikuna"
 
 #: device-option-unpair-confirmation
 msgctxt "device-option-unpair-confirmation"
@@ -2091,7 +2093,6 @@ msgid "10 minutes"
 msgstr ""
 
 #: screen-timeout-never
-msgctxt "screen-timeout-never"
 msgid "never"
 msgstr ""
 
@@ -2490,6 +2491,12 @@ msgstr ""
 msgid "{{appName}} {{layoutName}} is set as default input method"
 msgstr ""
 
+#. # LOCALIZATION NOTE (layout-emoji): Label for the layout "Emoji".
+#. # other layouts are always labeled in their own native scripts (in JS files)
+#: keyboard-layout-emoji
+msgid "Emoji"
+msgstr ""
+
 #. # Personalization :: Themes
 #: themes
 msgctxt "themes"
@@ -2509,18 +2516,20 @@ msgstr "{{themes}}"
 #. # Accounts
 #. #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 #: fxa
+#, fuzzy
 msgctxt "fxa"
 msgid "Firefox Accounts"
-msgstr ""
+msgstr "Cuentata Firefox"
 
 #: accounts
 msgid "Account Management"
 msgstr ""
 
 #: fxa-accounts
+#, fuzzy
 msgctxt "fxa-accounts"
 msgid "Firefox Accounts"
-msgstr ""
+msgstr "Cuentata Firefox"
 
 #. # LOCALIZATION NOTE (fxa-accounts-header): if you leave the original
 #. # en-US value "{{fxa-accounts}}" in the following string, the localization
@@ -2647,8 +2656,9 @@ msgid "Get started"
 msgstr ""
 
 #: fxsync-sync-user
+#, fuzzy
 msgid "Firefox Account"
-msgstr ""
+msgstr "Cuentata Firefox"
 
 #: fxsync-disable
 msgid "Disable Firefox Sync"
@@ -2879,8 +2889,9 @@ msgid "SIM PIN2"
 msgstr ""
 
 #: simPinWithIndex
+#, fuzzy
 msgid "SIM {{index}} PIN"
-msgstr ""
+msgstr "SIM {{index}}"
 
 #: pukCode
 msgid "PUK code"
@@ -2937,10 +2948,15 @@ msgstr ""
 msgid "New PIN"
 msgstr ""
 
+#: pinErrorMsg
+msgid "The PIN was incorrect."
+msgstr ""
+
 #: inputCodeRetriesLeft
+#, fuzzy
 msgctxt "inputCodeRetriesLeft"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: inputCodeRetriesLeft[one]
 msgid "Last try."
@@ -2967,9 +2983,10 @@ msgid "{{n}} tries left."
 msgstr ""
 
 #: pinAttemptMsg3
+#, fuzzy
 msgctxt "pinAttemptMsg3"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: pinAttemptMsg3[one]
 msgctxt "pinAttemptMsg3[one]"
@@ -3037,9 +3054,10 @@ msgid "The PUK code is incorrect."
 msgstr ""
 
 #: pukAttemptMsg3
+#, fuzzy
 msgctxt "pukAttemptMsg3"
 msgid "{[ plural(n) ]}"
-msgstr ""
+msgstr "{[ plural(n) ]}"
 
 #: pukAttemptMsg3[one]
 msgid ""
@@ -4426,20 +4444,112 @@ msgstr ""
 msgid "{{battery}}"
 msgstr "{{battery}}"
 
-#: batteryLevel
-msgid "Current Level"
-msgstr ""
-
-#: batteryLevel-percent-unplugged
+#: battery-level-percent
 msgid "{{level}}%"
 msgstr "{{level}}%"
 
-#: batteryLevel-percent-charging
-msgid "{{level}}% (charging)"
+#: battery-current-level
+msgid "Current Level ({{level}}%)"
 msgstr ""
 
-#: batteryLevel-percent-charged
-msgid "{{level}}% (charged)"
+#: battery-charging-calculating
+msgid "Calculating time required…"
+msgstr ""
+
+#: battery-discharging-calculating
+msgid "Calculating time remaining…"
+msgstr ""
+
+#: battery-charging-complete
+msgid "Fully charged"
+msgstr ""
+
+#: battery-discharging-complete
+msgid "Fully depleted"
+msgstr ""
+
+#: battery-time-hour
+#, fuzzy
+msgid "{[ plural(hours) ]}"
+msgstr "{[ plural(count) ]}"
+
+#: battery-time-hour[zero]
+msgctxt "battery-time-hour[zero]"
+msgid "{{ hours }} hours"
+msgstr ""
+
+#: battery-time-hour[one]
+msgid "{{ hours }} hour"
+msgstr ""
+
+#: battery-time-hour[two]
+msgctxt "battery-time-hour[two]"
+msgid "{{ hours }} hours"
+msgstr ""
+
+#: battery-time-hour[few]
+msgctxt "battery-time-hour[few]"
+msgid "{{ hours }} hours"
+msgstr ""
+
+#: battery-time-hour[many]
+msgctxt "battery-time-hour[many]"
+msgid "{{ hours }} hours"
+msgstr ""
+
+#: battery-time-hour[other]
+msgctxt "battery-time-hour[other]"
+msgid "{{ hours }} hours"
+msgstr ""
+
+#: battery-time-minute
+#, fuzzy
+msgid "{[ plural(minutes) ]}"
+msgstr "{[ plural(size) ]}"
+
+#: battery-time-minute[zero]
+msgctxt "battery-time-minute[zero]"
+msgid "{{ minutes }} minutes"
+msgstr ""
+
+#: battery-time-minute[one]
+msgid "{{ minutes }} minute"
+msgstr ""
+
+#: battery-time-minute[two]
+msgctxt "battery-time-minute[two]"
+msgid "{{ minutes }} minutes"
+msgstr ""
+
+#: battery-time-minute[few]
+msgctxt "battery-time-minute[few]"
+msgid "{{ minutes }} minutes"
+msgstr ""
+
+#: battery-time-minute[many]
+msgctxt "battery-time-minute[many]"
+msgid "{{ minutes }} minutes"
+msgstr ""
+
+#: battery-time-minute[other]
+msgctxt "battery-time-minute[other]"
+msgid "{{ minutes }} minutes"
+msgstr ""
+
+#: battery-charging-minutes
+msgid "{{ battery-time-minute }} until fully charged"
+msgstr ""
+
+#: battery-charging-hours
+msgid "{{ battery-time-hour }} {{ battery-time-minute }} until fully charged"
+msgstr ""
+
+#: battery-discharging-minutes
+msgid "{{ battery-time-minute }} remaining"
+msgstr ""
+
+#: battery-discharging-hours
+msgid "{{ battery-time-hour }} {{ battery-time-minute }} remaining"
 msgstr ""
 
 #: powerSaveModeTitle
@@ -4457,8 +4567,7 @@ msgid "{{level}}% battery left"
 msgstr ""
 
 #: powerSave-never
-msgctxt "powerSave-never"
-msgid "never"
+msgid "Never"
 msgstr ""
 
 #: turnOnAuto
@@ -4617,19 +4726,22 @@ msgstr ""
 
 #. # Device :: Improve Browser OS
 #: improveBrowserOS
+#, fuzzy
 msgctxt "improveBrowserOS"
 msgid "Improve {{brandShortName}}"
-msgstr ""
+msgstr "Suñuk {{brandShortName}}"
 
 #: improveBrowserOS.ariaLabel
+#, fuzzy
 msgctxt "improveBrowserOS.ariaLabel"
 msgid "Improve {{brandShortName}}"
-msgstr ""
+msgstr "Suñuk {{brandShortName}}"
 
 #: improveBrowserOSTitle
+#, fuzzy
 msgctxt "improveBrowserOSTitle"
 msgid "Improve {{brandShortName}}"
-msgstr ""
+msgstr "Suñuk {{brandShortName}}"
 
 #: sendMozillaFeedback
 msgid "Send Mozilla Feedback"
@@ -5046,8 +5158,9 @@ msgid "Description"
 msgstr ""
 
 #: addon-developer-name
+#, fuzzy
 msgid "{{developerName}}"
-msgstr ""
+msgstr "{{developer}}"
 
 #: addon-targets
 msgid "Affected Apps"
